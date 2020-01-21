@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "async_dot_nexttick"
-version := "0.5-dt-20190212Z-5b4de2"
+version := "0.5-dt-20190212Z-5485ee"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

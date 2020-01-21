@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("buddhist")
 trait buddhist_ extends js.Object {
   /**
     *

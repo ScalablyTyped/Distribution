@@ -45,25 +45,25 @@ import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
-import typings.react.Anon_Html
-import typings.react.reactMod.AnimationEventHandler
-import typings.react.reactMod.Booleanish
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ClipboardEventHandler
-import typings.react.reactMod.CompositionEventHandler
-import typings.react.reactMod.DragEventHandler
-import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.KeyboardEventHandler
-import typings.react.reactMod.MouseEventHandler
-import typings.react.reactMod.PointerEventHandler
-import typings.react.reactMod.ReactEventHandler
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.TouchEventHandler
-import typings.react.reactMod.TransitionEventHandler
-import typings.react.reactMod.UIEventHandler
-import typings.react.reactMod.Validator
-import typings.react.reactMod.WheelEventHandler
+import typings.react.AnonHtml
+import typings.react.mod.AnimationEventHandler
+import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
+import typings.react.mod.ClipboardEventHandler
+import typings.react.mod.CompositionEventHandler
+import typings.react.mod.DragEventHandler
+import typings.react.mod.FocusEventHandler
+import typings.react.mod.FormEventHandler
+import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactEventHandler
+import typings.react.mod.ReactNode
+import typings.react.mod.TouchEventHandler
+import typings.react.mod.TransitionEventHandler
+import typings.react.mod.UIEventHandler
+import typings.react.mod.Validator
+import typings.react.mod.WheelEventHandler
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -131,7 +131,7 @@ trait WeakValidationMapBasicProps extends js.Object {
   var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Anon_Html | Null]]] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[AnonHtml | Null]]] = js.undefined
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
@@ -313,7 +313,7 @@ object WeakValidationMapBasicProps {
     color: Validator[js.UndefOr[Null | String]] = null,
     contentEditable: Validator[js.UndefOr[inherit | Booleanish | Null]] = null,
     contextMenu: Validator[js.UndefOr[Null | String]] = null,
-    dangerouslySetInnerHTML: Validator[js.UndefOr[Anon_Html | Null]] = null,
+    dangerouslySetInnerHTML: Validator[js.UndefOr[AnonHtml | Null]] = null,
     datatype: Validator[js.UndefOr[Null | String]] = null,
     defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
     defaultValue: Validator[js.UndefOr[js.Array[String] | Double | Null | String]] = null,

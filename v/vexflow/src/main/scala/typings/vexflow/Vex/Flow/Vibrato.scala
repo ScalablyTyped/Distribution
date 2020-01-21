@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Leftshift
+import typings.vexflow.AnonLeftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ class Vibrato () extends Modifier {
 @js.native
 object Vibrato extends js.Object {
   val CATEGORY: String = js.native
-  def format(vibratos: js.Array[Vibrato], state: Anon_Leftshift, context: ModifierContext): Boolean = js.native
+  def format(vibratos: js.Array[Vibrato], state: AnonLeftshift, context: ModifierContext): Boolean = js.native
 }
 

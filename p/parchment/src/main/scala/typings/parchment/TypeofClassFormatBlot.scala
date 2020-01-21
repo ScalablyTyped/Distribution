@@ -1,7 +1,7 @@
 package typings.parchment
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.parchment.distSrcBlotAbstractFormatMod.default
+import typings.parchment.formatMod.default
 import typings.std.HTMLElement
 import typings.std.Node
 import scala.scalajs.js

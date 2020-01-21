@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FocusNavigationEvent extends Event {
+trait FocusNavigationEvent extends Event_ {
   val navigationReason: NavigationReason = js.native
   val originHeight: Double = js.native
   val originLeft: Double = js.native

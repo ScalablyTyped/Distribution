@@ -15,8 +15,8 @@ object queryMod extends js.Object {
     @JSName("exec")
     var exec_Original: ExecuteFilter = js.native
     def apply(hashKey: String, table: js.Any, serializer: js.Any): Unit = js.native
-    def addFilterCondition(condition: Anon_AttributeNames): Query = js.native
-    def addKeyCondition(condition: Anon_AttributeNames): Query = js.native
+    def addFilterCondition(condition: AnonAttributeNames): Query = js.native
+    def addKeyCondition(condition: AnonAttributeNames): Query = js.native
     def ascending(): Query = js.native
     def attributes(attrs: String): Query = js.native
     def attributes(attrs: js.Array[String]): Query = js.native

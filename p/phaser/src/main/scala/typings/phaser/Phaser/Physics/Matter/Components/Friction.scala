@@ -20,12 +20,16 @@ trait Friction extends js.Object {
   def setFriction(value: Double, air: Double): GameObject = js.native
   def setFriction(value: Double, air: Double, fstatic: Double): GameObject = js.native
   /**
-    * Sets a new air resistance for this Game Object's Matter Body. A value of 0 means the Body will never slow as it moves through space. The higher the value, the faster a Body slows when moving through space.
+    * Sets a new air resistance for this Game Object's Matter Body.
+    * A value of 0 means the Body will never slow as it moves through space.
+    * The higher the value, the faster a Body slows when moving through space.
     * @param value The new air resistance for the Body.
     */
   def setFrictionAir(value: Double): GameObject = js.native
   /**
-    * Sets a new static friction for this Game Object's Matter Body. A value of 0 means the Body will never "stick" when it is nearly stationary. The higher the value (e.g. 10), the more force it will take to initially get the Body moving when it is nearly stationary.
+    * Sets a new static friction for this Game Object's Matter Body.
+    * A value of 0 means the Body will never "stick" when it is nearly stationary.
+    * The higher the value (e.g. 10), the more force it will take to initially get the Body moving when it is nearly stationary.
     * @param value The new static friction for the Body.
     */
   def setFrictionStatic(value: Double): GameObject = js.native

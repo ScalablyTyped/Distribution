@@ -1,17 +1,12 @@
 package typings.dojo
 
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
-import typings.dojo.dojo.dnd.Selector
-import typings.std.HTMLElement
+import typings.dojo.dijit.tree.dndSelector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("dojo/dnd/Selector", JSImport.Namespace)
+@JSImport("dijit/tree/_dndSelector", JSImport.Namespace)
 @js.native
-object dndSelectorMod
-  extends TopLevel[
-      Instantiable2[/* node */ HTMLElement, js.UndefOr[/* params */ js.Object], Selector]
-    ]
+object dndSelectorMod extends TopLevel[dndSelector]
 

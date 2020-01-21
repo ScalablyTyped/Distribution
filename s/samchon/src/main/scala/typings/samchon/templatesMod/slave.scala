@@ -1,6 +1,6 @@
 package typings.samchon.templatesMod
 
-import typings.samchon.protocolInvokeInvokeMod.Invoke
+import typings.samchon.invokeMod.Invoke
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object slave extends js.Object {
     * Default Constructor.
     */
   class InvokeHistory ()
-    extends typings.samchon.templatesSlaveMod.InvokeHistory {
+    extends typings.samchon.slaveMod.InvokeHistory {
     /**
       * Construct from an {@link Invoke} message.
       *
@@ -24,7 +24,7 @@ object slave extends js.Object {
   
   @js.native
   class PInvoke protected ()
-    extends typings.samchon.templatesSlaveMod.PInvoke {
+    extends typings.samchon.slaveMod.PInvoke {
     /**
       * Initializer Constructor.
       *
@@ -34,8 +34,8 @@ object slave extends js.Object {
       */
     def this(
       invoke: Invoke,
-      history: typings.samchon.templatesSlaveInvokeHistoryMod.InvokeHistory,
-      slaveSystem: typings.samchon.templatesSlaveSlaveSystemMod.SlaveSystem
+      history: typings.samchon.invokeHistoryMod.InvokeHistory,
+      slaveSystem: typings.samchon.slaveSystemMod.SlaveSystem
     ) = this()
   }
   
@@ -44,21 +44,21 @@ object slave extends js.Object {
     * Default Constructor.
     */
   abstract class SlaveClient ()
-    extends typings.samchon.templatesSlaveMod.SlaveClient
+    extends typings.samchon.slaveMod.SlaveClient
   
   @js.native
   /**
     * Default Constructor.
     */
   abstract class SlaveServer ()
-    extends typings.samchon.templatesSlaveMod.SlaveServer
+    extends typings.samchon.slaveMod.SlaveServer
   
   @js.native
   /**
     * Default Constructor.
     */
   abstract class SlaveSystem ()
-    extends typings.samchon.templatesSlaveMod.SlaveSystem
+    extends typings.samchon.slaveMod.SlaveSystem
   
 }
 

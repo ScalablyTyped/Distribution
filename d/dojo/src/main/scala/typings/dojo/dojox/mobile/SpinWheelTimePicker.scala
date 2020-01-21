@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.date
 import typings.std.Date
 import typings.std.HTMLElement
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.mobile._TimePickerMixin because Inheritance from two classes. Inlined date, reset */ @JSGlobal("dojox.mobile.SpinWheelTimePicker")
+- typings.dojo.dojox.mobile.TimePickerMixin because Inheritance from two classes. Inlined date, reset */ @JSGlobal("dojox.mobile.SpinWheelTimePicker")
 @js.native
 class SpinWheelTimePicker () extends SpinWheel {
   def this(params: js.Object) = this()
@@ -42,6 +42,6 @@ class SpinWheelTimePicker () extends SpinWheel {
       /* newValue */ js.UndefOr[Date], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

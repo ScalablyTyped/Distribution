@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object androidui {
-  type AndroidUI = AndroidUI_
+  type AndroidUI = typings.androiduix.androidui.AndroidUI_
 }

@@ -1,6 +1,6 @@
 package typings.dojo.dojo
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.std.IArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,6 +62,6 @@ class Stateful () extends js.Object {
       /* newValue */ js.UndefOr[js.Any], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

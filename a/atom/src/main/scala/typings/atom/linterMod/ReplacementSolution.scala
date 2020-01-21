@@ -1,6 +1,6 @@
 package typings.atom.linterMod
 
-import typings.atom.atomMod.Range
+import typings.atom.mod.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

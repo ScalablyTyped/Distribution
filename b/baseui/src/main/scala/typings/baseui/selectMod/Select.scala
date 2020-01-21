@@ -1,15 +1,15 @@
 package typings.baseui.selectMod
 
-import typings.baseui.Anon_Clearable
-import typings.baseui.Anon_Item
-import typings.baseui.Anon_OptionOptionState
-import typings.baseui.Anon_Option_1721897024
-import typings.dateDashFns.Locale
-import typings.react.reactMod.Component
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.ReactNode
-import typings.std.Event
+import typings.baseui.AnonClearable
+import typings.baseui.AnonItem
+import typings.baseui.AnonOption1413309453
+import typings.baseui.AnonOptionOptionState
+import typings.dateFns.Locale
+import typings.react.mod.Component
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.ReactNode
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.KeyboardEvent
@@ -31,11 +31,11 @@ class Select ()
   def filterOption(): Value = js.native
   def filterOption(excludeOptions: Value): Value = js.native
   def focus(): Unit = js.native
-  def getOptionLabel(locale: Locale, hasOption: Anon_OptionOptionState): ReactNode = js.native
-  def getSharedProps(): Anon_Clearable = js.native
+  def getOptionLabel(locale: Locale, hasOption: AnonOptionOptionState): ReactNode = js.native
+  def getSharedProps(): AnonClearable = js.native
   def getValueArray(value: Value): js.Array[Option] = js.native
-  def getValueLabel(hasOption: Anon_Option_1721897024): ReactNode = js.native
-  def handleBlur(event: Event): Unit = js.native
+  def getValueLabel(hasOption: AnonOption1413309453): ReactNode = js.native
+  def handleBlur(event: Event_): Unit = js.native
   def handleClick(event: MouseEvent): Unit = js.native
   def handleClick(event: TouchEvent): Unit = js.native
   def handleClickOutside(event: MouseEvent): Unit = js.native
@@ -55,7 +55,7 @@ class Select ()
   def renderLoading(): ReactNode = js.native
   def renderSearch(): ReactNode = js.native
   def renderValue(valueArray: Value, isOpen: Boolean, locale: Locale): ReactNode = js.native
-  def selectValue(hasItem: Anon_Item): Unit = js.native
+  def selectValue(hasItem: AnonItem): Unit = js.native
   def setValue(value: Value, option: Option, `type`: ChangeAction): Unit = js.native
 }
 

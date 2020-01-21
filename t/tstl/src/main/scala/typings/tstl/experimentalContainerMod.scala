@@ -1,7 +1,12 @@
 package typings.tstl
 
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.utilityIPairMod.IPair
+import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.comparatorMod.Comparator
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.ipairMod.IPair
+import typings.tstl.itreemapMod.ITreeMap
+import typings.tstl.itreesetMod.ITreeSet
+import typings.tstl.tstlStrings.experimental
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +21,8 @@ object experimentalContainerMod extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatMap[Key, T] ()
-    extends typings.tstl.experimentalContainerFlatMapMod.FlatMap[Key, T] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    extends typings.tstl.flatMapMod.FlatMap[Key, T] {
+    def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.
       *
@@ -30,7 +35,7 @@ object experimentalContainerMod extends js.Object {
       *
       * @param obj Object to copy.
       */
-    def this(obj: typings.tstl.experimentalContainerFlatMapMod.FlatMap[Key, T]) = this()
+    def this(obj: typings.tstl.flatMapMod.FlatMap[Key, T]) = this()
     /**
       * Range Constructor.
       *
@@ -42,11 +47,11 @@ object experimentalContainerMod extends js.Object {
       first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
     ) = this()
-    def this(items: js.Array[IPair[Key, T]], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    def this(items: js.Array[IPair[Key, T]], comp: Comparator[Key, Key]) = this()
     def this(
       first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
+      comp: Comparator[Key, Key]
     ) = this()
   }
   
@@ -57,8 +62,8 @@ object experimentalContainerMod extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatMultiMap[Key, T] ()
-    extends typings.tstl.experimentalContainerFlatMultiMapMod.FlatMultiMap[Key, T] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    extends typings.tstl.flatMultiMapMod.FlatMultiMap[Key, T] {
+    def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.
       *
@@ -71,7 +76,7 @@ object experimentalContainerMod extends js.Object {
       *
       * @param obj Object to copy.
       */
-    def this(obj: typings.tstl.experimentalContainerFlatMultiMapMod.FlatMultiMap[Key, T]) = this()
+    def this(obj: typings.tstl.flatMultiMapMod.FlatMultiMap[Key, T]) = this()
     /**
       * Range Constructor.
       *
@@ -83,11 +88,11 @@ object experimentalContainerMod extends js.Object {
       first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
     ) = this()
-    def this(items: js.Array[IPair[Key, T]], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    def this(items: js.Array[IPair[Key, T]], comp: Comparator[Key, Key]) = this()
     def this(
       first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
       last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
+      comp: Comparator[Key, Key]
     ) = this()
   }
   
@@ -98,8 +103,8 @@ object experimentalContainerMod extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatMultiSet[Key] ()
-    extends typings.tstl.experimentalContainerFlatMultiSetMod.FlatMultiSet[Key] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    extends typings.tstl.flatMultiSetMod.FlatMultiSet[Key] {
+    def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.
       *
@@ -112,7 +117,7 @@ object experimentalContainerMod extends js.Object {
       *
       * @param obj Object to copy.
       */
-    def this(obj: typings.tstl.experimentalContainerFlatMultiSetMod.FlatMultiSet[Key]) = this()
+    def this(obj: typings.tstl.flatMultiSetMod.FlatMultiSet[Key]) = this()
     /**
       * Range Constructor.
       *
@@ -124,11 +129,11 @@ object experimentalContainerMod extends js.Object {
       first: IForwardIterator[Key, IForwardIterator[Key, _]],
       last: IForwardIterator[Key, IForwardIterator[Key, _]]
     ) = this()
-    def this(items: js.Array[Key], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    def this(items: js.Array[Key], comp: Comparator[Key, Key]) = this()
     def this(
       first: IForwardIterator[Key, IForwardIterator[Key, _]],
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
+      comp: Comparator[Key, Key]
     ) = this()
   }
   
@@ -139,8 +144,8 @@ object experimentalContainerMod extends js.Object {
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
   class FlatSet[Key] ()
-    extends typings.tstl.experimentalContainerFlatSetMod.FlatSet[Key] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    extends typings.tstl.flatSetMod.FlatSet[Key] {
+    def this(comp: Comparator[Key, Key]) = this()
     /**
       * Initializer Constructor.
       *
@@ -153,7 +158,7 @@ object experimentalContainerMod extends js.Object {
       *
       * @param obj Object to copy.
       */
-    def this(obj: typings.tstl.experimentalContainerFlatSetMod.FlatSet[Key]) = this()
+    def this(obj: typings.tstl.flatSetMod.FlatSet[Key]) = this()
     /**
       * Range Constructor.
       *
@@ -165,240 +170,216 @@ object experimentalContainerMod extends js.Object {
       first: IForwardIterator[Key, IForwardIterator[Key, _]],
       last: IForwardIterator[Key, IForwardIterator[Key, _]]
     ) = this()
-    def this(items: js.Array[Key], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+    def this(items: js.Array[Key], comp: Comparator[Key, Key]) = this()
     def this(
       first: IForwardIterator[Key, IForwardIterator[Key, _]],
       last: IForwardIterator[Key, IForwardIterator[Key, _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
-    ) = this()
-  }
-  
-  @js.native
-  /**
-    * Default Constructor.
-    *
-    * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-    */
-  class flat_map[Key, T] ()
-    extends typings.tstl.experimentalContainerFlatMapMod.flat_map[Key, T] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    /**
-      * Initializer Constructor.
-      *
-      * @param items Items to assign.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(items: js.Array[IPair[Key, T]]) = this()
-    /**
-      * Copy Constructor.
-      *
-      * @param obj Object to copy.
-      */
-    def this(obj: typings.tstl.experimentalContainerFlatMapMod.FlatMap[Key, T]) = this()
-    /**
-      * Range Constructor.
-      *
-      * @param first Input iterator of the first position.
-      * @param last Input iterator of the last position.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(
-      first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
-    ) = this()
-    def this(items: js.Array[IPair[Key, T]], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    def this(
-      first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
-    ) = this()
-  }
-  
-  @js.native
-  /**
-    * Default Constructor.
-    *
-    * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-    */
-  class flat_multimap[Key, T] ()
-    extends typings.tstl.experimentalContainerFlatMultiMapMod.flat_multimap[Key, T] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    /**
-      * Initializer Constructor.
-      *
-      * @param items Items to assign.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(items: js.Array[IPair[Key, T]]) = this()
-    /**
-      * Copy Constructor.
-      *
-      * @param obj Object to copy.
-      */
-    def this(obj: typings.tstl.experimentalContainerFlatMultiMapMod.FlatMultiMap[Key, T]) = this()
-    /**
-      * Range Constructor.
-      *
-      * @param first Input iterator of the first position.
-      * @param last Input iterator of the last position.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(
-      first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
-    ) = this()
-    def this(items: js.Array[IPair[Key, T]], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    def this(
-      first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
-    ) = this()
-  }
-  
-  @js.native
-  /**
-    * Default Constructor.
-    *
-    * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-    */
-  class flat_multiset[Key] ()
-    extends typings.tstl.experimentalContainerFlatMultiSetMod.flat_multiset[Key] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    /**
-      * Initializer Constructor.
-      *
-      * @param items Items to assign.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(items: js.Array[Key]) = this()
-    /**
-      * Copy Constructor.
-      *
-      * @param obj Object to copy.
-      */
-    def this(obj: typings.tstl.experimentalContainerFlatMultiSetMod.FlatMultiSet[Key]) = this()
-    /**
-      * Range Constructor.
-      *
-      * @param first Input iterator of the first position.
-      * @param last Input iterator of the last position.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(
-      first: IForwardIterator[Key, IForwardIterator[Key, _]],
-      last: IForwardIterator[Key, IForwardIterator[Key, _]]
-    ) = this()
-    def this(items: js.Array[Key], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    def this(
-      first: IForwardIterator[Key, IForwardIterator[Key, _]],
-      last: IForwardIterator[Key, IForwardIterator[Key, _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
-    ) = this()
-  }
-  
-  @js.native
-  /**
-    * Default Constructor.
-    *
-    * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-    */
-  class flat_set[Key] ()
-    extends typings.tstl.experimentalContainerFlatSetMod.flat_set[Key] {
-    def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    /**
-      * Initializer Constructor.
-      *
-      * @param items Items to assign.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(items: js.Array[Key]) = this()
-    /**
-      * Copy Constructor.
-      *
-      * @param obj Object to copy.
-      */
-    def this(obj: typings.tstl.experimentalContainerFlatSetMod.FlatSet[Key]) = this()
-    /**
-      * Range Constructor.
-      *
-      * @param first Input iterator of the first position.
-      * @param last Input iterator of the last position.
-      * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
-      */
-    def this(
-      first: IForwardIterator[Key, IForwardIterator[Key, _]],
-      last: IForwardIterator[Key, IForwardIterator[Key, _]]
-    ) = this()
-    def this(items: js.Array[Key], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-    def this(
-      first: IForwardIterator[Key, IForwardIterator[Key, _]],
-      last: IForwardIterator[Key, IForwardIterator[Key, _]],
-      comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
+      comp: Comparator[Key, Key]
     ) = this()
   }
   
   @js.native
   object FlatMap extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
+    val Iterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val ReverseIterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val __MODULE: experimental = js.native
   }
   
   @js.native
   object FlatMultiMap extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
+    val Iterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val ReverseIterator: Instantiable0[
+        typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+          js.Object, 
+          js.Object, 
+          Boolean, 
+          ITreeMap[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.mapElementVectorMod.MapElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.mapElementVectorMod.MapElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val __MODULE: experimental = js.native
   }
   
   @js.native
   object FlatMultiSet extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
+    val Iterator: Instantiable0[
+        typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+          js.Object, 
+          Boolean, 
+          ITreeSet[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val ReverseIterator: Instantiable0[
+        typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+          js.Object, 
+          Boolean, 
+          ITreeSet[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val __MODULE: experimental = js.native
   }
   
   @js.native
   object FlatSet extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
-  }
-  
-  @js.native
-  object flat_map extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
-  }
-  
-  @js.native
-  object flat_multimap extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementVector.ReverseIterator */ js.Any = js.native
-  }
-  
-  @js.native
-  object flat_multiset extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
-  }
-  
-  @js.native
-  object flat_set extends js.Object {
-    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
-    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.Iterator */ js.Any = js.native
-    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementVector.ReverseIterator */ js.Any = js.native
+    val Iterator: Instantiable0[
+        typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+          js.Object, 
+          Boolean, 
+          ITreeSet[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val ReverseIterator: Instantiable0[
+        typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+          js.Object, 
+          Boolean, 
+          ITreeSet[
+            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+            typings.tstl.setElementVectorMod.SetElementVector.Iterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ], 
+            typings.tstl.setElementVectorMod.SetElementVector.ReverseIterator[
+              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+            ]
+          ]
+        ]
+      ] = js.native
+    val __MODULE: experimental = js.native
   }
   
 }

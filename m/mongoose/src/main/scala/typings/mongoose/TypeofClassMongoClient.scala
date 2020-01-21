@@ -1,9 +1,9 @@
 package typings.mongoose
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mongodb.mongodbMod.MongoCallback
-import typings.mongodb.mongodbMod.MongoClient
-import typings.mongodb.mongodbMod.MongoClientOptions
+import typings.mongodb.mod.MongoCallback
+import typings.mongodb.mod.MongoClient
+import typings.mongodb.mod.MongoClientOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

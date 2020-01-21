@@ -1,6 +1,6 @@
 package typings.imagesloaded
 
-import typings.imagesloaded.ImagesLoaded.ImagesLoadedConstructor
+import typings.imagesloaded.ImagesLoaded_.ImagesLoadedConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

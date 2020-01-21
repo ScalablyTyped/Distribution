@@ -58,7 +58,9 @@ trait Transform extends js.Object {
   var y: Double = js.native
   /**
     * The z position of this Game Object.
-    * Note: Do not use this value to set the z-index, instead see the `depth` property.
+    * 
+    * Note: The z position does not control the rendering order of 2D Game Objects. Use
+    * {@link Phaser.GameObjects.Components.Depth#depth} instead.
     */
   var z: Double = js.native
   /**
@@ -150,6 +152,9 @@ trait Transform extends js.Object {
   def setY(value: Double): this.type = js.native
   /**
     * Sets the z position of this Game Object.
+    * 
+    * Note: The z position does not control the rendering order of 2D Game Objects. Use
+    * {@link Phaser.GameObjects.Components.Depth#setDepth} instead.
     * @param value The z position of this Game Object. Default 0.
     */
   def setZ(): this.type = js.native

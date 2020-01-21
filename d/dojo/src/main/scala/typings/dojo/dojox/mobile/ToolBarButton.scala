@@ -1,11 +1,11 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.arrow
 import typings.dojo.dojoStrings.defaultColor
 import typings.dojo.dojoStrings.light
 import typings.dojo.dojoStrings.selColor
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mobile.ToolBarButton")
 @js.native
-class ToolBarButton () extends _ItemBase {
+class ToolBarButton () extends ItemBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -75,7 +75,7 @@ class ToolBarButton () extends _ItemBase {
     *
     * @param e
     */
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event_): Unit = js.native
   @JSName("set")
   def set_arrow(property: arrow, value: String): Unit = js.native
   @JSName("set")
@@ -93,7 +93,7 @@ class ToolBarButton () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_defaultColor(
     property: defaultColor,
@@ -103,7 +103,7 @@ class ToolBarButton () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_light(
     property: light,
@@ -113,7 +113,7 @@ class ToolBarButton () extends _ItemBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selColor(
     property: selColor,
@@ -123,6 +123,6 @@ class ToolBarButton () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

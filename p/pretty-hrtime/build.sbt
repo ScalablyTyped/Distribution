@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pretty-hrtime"
-version := "1.0-dt-20190101Z-752272"
+version := "1.0-dt-20190101Z-1fa0c8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

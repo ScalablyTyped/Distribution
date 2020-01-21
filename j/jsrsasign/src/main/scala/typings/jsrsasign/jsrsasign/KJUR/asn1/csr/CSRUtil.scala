@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.csr
 
-import typings.jsrsasign.Anon_Ext
+import typings.jsrsasign.AnonExt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -88,6 +88,6 @@ object CSRUtil extends js.Object {
     * });
     */
   def newCSRPEM(): String = js.native
-  def newCSRPEM(param: Anon_Ext): String = js.native
+  def newCSRPEM(param: AnonExt): String = js.native
 }
 

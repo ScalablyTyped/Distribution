@@ -1,6 +1,6 @@
 package typings.geopattern
 
-import typings.geopattern.geopatternMod.GeneratorType
+import typings.geopattern.mod.GeneratorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

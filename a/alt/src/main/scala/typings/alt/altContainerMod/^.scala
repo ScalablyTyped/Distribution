@@ -1,8 +1,8 @@
 package typings.alt.altContainerMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

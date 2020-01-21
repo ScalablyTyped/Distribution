@@ -1,6 +1,6 @@
 package typings.sharp
 
-import typings.sharp.sharpMod.Channels
+import typings.sharp.mod.Channels
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

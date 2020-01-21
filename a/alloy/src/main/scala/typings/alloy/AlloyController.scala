@@ -1,7 +1,7 @@
 package typings.alloy
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.backbone.backboneMod.EventsMixin
+import typings.backbone.mod.EventsMixin
 import typings.std.Partial
 import typings.titanium.Titanium.Proxy
 import scala.scalajs.js

@@ -2,8 +2,8 @@ package typings.ol.pluggableMapMod
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.eventsMod.EventsKey
-import typings.ol.featureMod.FeatureLike
 import typings.ol.objectMod.ObjectEvent
+import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.olStrings.changeColonlayerGroup
 import typings.ol.olStrings.changeColonsize
 import typings.ol.olStrings.changeColontarget
@@ -21,7 +21,7 @@ import typings.ol.olStrings.rendercomplete
 import typings.ol.olStrings.singleclick
 import typings.ol.pixelMod.Pixel
 import typings.ol.sizeMod.Size
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.TouchEvent
 import typings.std.Uint8Array
@@ -37,9 +37,9 @@ trait PluggableMap
   var interactions: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = js.native
   def addControl(control: typings.ol.controlControlMod.default): Unit = js.native
   def addInteraction(interaction: typings.ol.interactionInteractionMod.default): Unit = js.native
-  def addLayer(layer: typings.ol.layerBaseMod.default): Unit = js.native
+  def addLayer(layer: typings.ol.baseMod.default): Unit = js.native
   def addOverlay(overlay: typings.ol.overlayMod.default): Unit = js.native
-  def createRenderer(): typings.ol.rendererMapMod.default = js.native
+  def createRenderer(): typings.ol.mapMod.default = js.native
   def forEachFeatureAtPixel[S, T](
     pixel: Pixel,
     callback: js.ThisFunction2[
@@ -81,15 +81,15 @@ trait PluggableMap
   def getControls(): typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
   def getCoordinateFromPixel(pixel: Pixel): Coordinate = js.native
   def getCoordinateFromPixelInternal(pixel: Pixel): Coordinate = js.native
-  def getEventCoordinate(event: Event): Coordinate = js.native
-  def getEventCoordinateInternal(event: Event): Coordinate = js.native
-  def getEventPixel(event: Event): Pixel = js.native
+  def getEventCoordinate(event: Event_): Coordinate = js.native
+  def getEventCoordinateInternal(event: Event_): Coordinate = js.native
+  def getEventPixel(event: Event_): Pixel = js.native
   def getEventPixel(event: TouchEvent): Pixel = js.native
   def getFeaturesAtPixel(pixel: Pixel): js.Array[FeatureLike] = js.native
   def getFeaturesAtPixel(pixel: Pixel, opt_options: AtPixelOptions): js.Array[FeatureLike] = js.native
   def getInteractions(): typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = js.native
-  def getLayerGroup(): typings.ol.layerGroupMod.default = js.native
-  def getLayers(): typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] = js.native
+  def getLayerGroup(): typings.ol.groupMod.default = js.native
+  def getLayers(): typings.ol.collectionMod.default[typings.ol.baseMod.default] = js.native
   def getLoading(): Boolean = js.native
   def getOverlayById(id: String): typings.ol.overlayMod.default = js.native
   def getOverlayById(id: Double): typings.ol.overlayMod.default = js.native
@@ -98,20 +98,20 @@ trait PluggableMap
   def getOverlays(): typings.ol.collectionMod.default[typings.ol.overlayMod.default] = js.native
   def getPixelFromCoordinate(coordinate: Coordinate): Pixel = js.native
   def getPixelFromCoordinateInternal(coordinate: Coordinate): Pixel = js.native
-  def getRenderer(): typings.ol.rendererMapMod.default = js.native
+  def getRenderer(): typings.ol.mapMod.default = js.native
   def getSize(): Size = js.native
   def getTarget(): HTMLElement | String = js.native
   def getTargetElement(): HTMLElement = js.native
   def getTilePriority(
-    tile: typings.ol.tileMod.default,
+    tile: typings.ol.olTileMod.default,
     tileSourceKey: String,
     tileCenter: Coordinate,
     tileResolution: Double
   ): Double = js.native
   def getView(): typings.ol.viewMod.default = js.native
   def getViewport(): HTMLElement = js.native
-  def handleBrowserEvent(browserEvent: Event): Unit = js.native
-  def handleBrowserEvent(browserEvent: Event, opt_type: String): Unit = js.native
+  def handleBrowserEvent(browserEvent: Event_): Unit = js.native
+  def handleBrowserEvent(browserEvent: Event_, opt_type: String): Unit = js.native
   def handleMapBrowserEvent(mapBrowserEvent: typings.ol.mapBrowserEventMod.default): Unit = js.native
   /* protected */ def handlePostRender(): Unit = js.native
   def hasFeatureAtPixel(pixel: Pixel): Boolean = js.native
@@ -180,11 +180,11 @@ trait PluggableMap
   def redrawText(): Unit = js.native
   def removeControl(control: typings.ol.controlControlMod.default): typings.ol.controlControlMod.default = js.native
   def removeInteraction(interaction: typings.ol.interactionInteractionMod.default): typings.ol.interactionInteractionMod.default = js.native
-  def removeLayer(layer: typings.ol.layerBaseMod.default): typings.ol.layerBaseMod.default = js.native
+  def removeLayer(layer: typings.ol.baseMod.default): typings.ol.baseMod.default = js.native
   def removeOverlay(overlay: typings.ol.overlayMod.default): typings.ol.overlayMod.default = js.native
   def render(): Unit = js.native
   def renderSync(): Unit = js.native
-  def setLayerGroup(layerGroup: typings.ol.layerGroupMod.default): Unit = js.native
+  def setLayerGroup(layerGroup: typings.ol.groupMod.default): Unit = js.native
   def setSize(): Unit = js.native
   def setSize(size: Size): Unit = js.native
   def setTarget(): Unit = js.native

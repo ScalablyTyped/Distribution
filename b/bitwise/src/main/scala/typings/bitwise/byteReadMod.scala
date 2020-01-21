@@ -1,7 +1,7 @@
 package typings.bitwise
 
-import typings.bitwise.typesMod.Bit
-import typings.bitwise.typesMod.UInt8
+import typings.bitwise.bitwiseTypesMod.Bit
+import typings.bitwise.bitwiseTypesMod.UInt8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

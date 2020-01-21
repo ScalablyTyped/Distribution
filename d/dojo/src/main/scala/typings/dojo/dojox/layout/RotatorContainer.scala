@@ -1,6 +1,6 @@
 package typings.dojo.dojox.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.layout.StackContainer
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.autoStart
@@ -43,10 +43,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @JSGlobal("dojox.layout.RotatorContainer")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @JSGlobal("dojox.layout.RotatorContainer")
 @js.native
 class RotatorContainer () extends StackContainer {
   def this(params: js.Object) = this()
@@ -227,7 +227,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_autoStart(
     property: autoStart,
@@ -237,7 +237,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_contextRequire(
     property: contextRequire,
@@ -247,7 +247,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cycles(
     property: cycles,
@@ -257,7 +257,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pagerClass(
     property: pagerClass,
@@ -267,7 +267,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pagerId(
     property: pagerId,
@@ -277,7 +277,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pauseOnManualChange(
     property: pauseOnManualChange,
@@ -287,7 +287,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_reverse(
     property: reverse,
@@ -297,7 +297,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -307,7 +307,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showTabs(
     property: showTabs,
@@ -317,7 +317,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_suspendOnHover(
     property: suspendOnHover,
@@ -327,7 +327,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -337,7 +337,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -347,7 +347,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_transition(
     property: transition,
@@ -357,7 +357,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_transitionDelay(
     property: transitionDelay,
@@ -367,7 +367,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_transitionDuration(
     property: transitionDuration,
@@ -377,7 +377,7 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_widgetsInTemplate(
     property: widgetsInTemplate,
@@ -387,6 +387,6 @@ class RotatorContainer () extends StackContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

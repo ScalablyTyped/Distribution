@@ -13,8 +13,8 @@ import typings.baseui.baseuiStrings.rightTop
 import typings.baseui.baseuiStrings.top
 import typings.baseui.baseuiStrings.topLeft
 import typings.baseui.baseuiStrings.topRight
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

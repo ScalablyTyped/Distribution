@@ -1,12 +1,12 @@
 package typings.escpos
 
-import typings.escpos.escposMod.BARCODE_TYPE
-import typings.escpos.escposMod.BITMAP_FORMAT_TYPE
-import typings.escpos.escposMod.FEED_CONTROL_TYPE
-import typings.escpos.escposMod.MIME_TYPE
-import typings.escpos.escposMod.QRCODE_LEVEL
-import typings.escpos.escposMod.TXT_ALIGN
-import typings.escpos.escposMod.TXT_STYLE
+import typings.escpos.mod.BARCODE_TYPE
+import typings.escpos.mod.BITMAP_FORMAT_TYPE
+import typings.escpos.mod.FEED_CONTROL_TYPE
+import typings.escpos.mod.MIME_TYPE
+import typings.escpos.mod.QRCODE_LEVEL
+import typings.escpos.mod.TXT_ALIGN
+import typings.escpos.mod.TXT_STYLE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

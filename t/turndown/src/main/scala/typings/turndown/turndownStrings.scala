@@ -1,6 +1,6 @@
 package typings.turndown
 
-import typings.turndown.turndownMod.TagName
+import typings.turndown.mod.TagName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

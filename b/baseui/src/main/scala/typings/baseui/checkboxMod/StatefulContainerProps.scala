@@ -1,15 +1,15 @@
 package typings.baseui.checkboxMod
 
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.MouseEventHandler
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.SyntheticEvent
-import typings.std.Event
+import typings.react.mod.FocusEvent
+import typings.react.mod.FocusEventHandler
+import typings.react.mod.FormEvent
+import typings.react.mod.FormEventHandler
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.std.Event_
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +40,7 @@ object StatefulContainerProps {
     onMouseEnter: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     overrides: CheckboxOverrides = null,
-    stateReducer: (/* stateType */ String, /* nextState */ CheckboxState, /* currentState */ CheckboxState, /* event */ SyntheticEvent[HTMLInputElement, Event]) => CheckboxState = null
+    stateReducer: (/* stateType */ String, /* nextState */ CheckboxState, /* currentState */ CheckboxState, /* event */ SyntheticEvent[HTMLInputElement, Event_]) => CheckboxState = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])

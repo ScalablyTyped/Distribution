@@ -1,8 +1,8 @@
 package typings.protobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.protobufjsMod.IOneOf
-import typings.protobufjs.protobufjsMod.OneOfDecorator
+import typings.protobufjs.mod.IOneOf
+import typings.protobufjs.mod.OneOfDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("protobufjs/minimal", "OneOf")
 @js.native
 class OneOf protected ()
-  extends typings.protobufjs.protobufjsMod.OneOf {
+  extends typings.protobufjs.mod.OneOf {
   /**
     * Constructs a new oneof instance.
     * @param name Oneof name
@@ -49,6 +49,6 @@ object OneOf extends js.Object {
     * @returns Created oneof
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IOneOf): typings.protobufjs.protobufjsMod.OneOf = js.native
+  def fromJSON(name: String, json: IOneOf): typings.protobufjs.mod.OneOf = js.native
 }
 

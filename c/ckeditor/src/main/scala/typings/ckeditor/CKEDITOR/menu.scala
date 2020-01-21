@@ -1,6 +1,6 @@
 package typings.ckeditor.CKEDITOR
 
-import typings.ckeditor.Anon_Element
+import typings.ckeditor.AnonElement
 import typings.ckeditor.CKEDITOR.dom.element
 import typings.ckeditor.CKEDITOR.dom.elementPath
 import typings.ckeditor.CKEDITOR.dom.selection
@@ -15,7 +15,7 @@ class menu () extends js.Object {
   def addListener(
     listenerFn: js.Function3[/* startElement */ element, /* selection */ selection, /* path */ elementPath, _]
   ): Unit = js.native
-  def findItemByCommandName(commandName: String): Anon_Element = js.native
+  def findItemByCommandName(commandName: String): AnonElement = js.native
   def hide(): Unit = js.native
   def hide(returnFocus: Boolean): Unit = js.native
   def removeAll(): Unit = js.native

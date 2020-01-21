@@ -13,9 +13,9 @@ trait EventSource extends EventTarget {
   val CLOSED: Double = js.native
   val CONNECTING: Double = js.native
   val OPEN: Double = js.native
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
-  var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onopen: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   /**
     * Returns the state of this EventSource object's connection. It can have the values described below.
     */
@@ -29,17 +29,17 @@ trait EventSource extends EventTarget {
     */
   val withCredentials: scala.Boolean = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -59,18 +59,18 @@ trait EventSource extends EventTarget {
   @JSName("addEventListener")
   def addEventListener_open(
     `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(
     `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(
     `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   /**
@@ -78,17 +78,17 @@ trait EventSource extends EventTarget {
     */
   def close(): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -108,18 +108,18 @@ trait EventSource extends EventTarget {
   @JSName("removeEventListener")
   def removeEventListener_open(
     `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_open(
     `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_open(
     `type`: typings.std.stdStrings.open,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
 }

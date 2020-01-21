@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "qunit"
-version := "v2.9.2-dt-20190429Z-9b431d"
+version := "v2.9.2-dt-20190429Z-37eb97"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,10 +1,10 @@
 package typings.node.http2Mod
 
-import typings.node.Anon_Origin
+import typings.node.AnonOrigin
 import typings.node.netMod.Socket
 import typings.node.nodeStrings.stream
 import typings.node.tlsMod.TLSSocket
-import typings.node.urlMod.URL
+import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ trait ServerHttp2Session extends Http2Session {
   def altsvc(alt: String, originOrStream: String): Unit = js.native
   def altsvc(alt: String, originOrStream: Double): Unit = js.native
   def altsvc(alt: String, originOrStream: AlternativeServiceOptions): Unit = js.native
-  def altsvc(alt: String, originOrStream: URL): Unit = js.native
+  def altsvc(alt: String, originOrStream: URL_): Unit = js.native
   @JSName("emit")
   def emit_connect(event: typings.node.nodeStrings.connect, session: ServerHttp2Session, socket: Socket): Boolean = js.native
   @JSName("emit")
@@ -67,7 +67,7 @@ trait ServerHttp2Session extends Http2Session {
       Unit
     ]
   ): this.type = js.native
-  def origin(args: (String | URL | Anon_Origin)*): Unit = js.native
+  def origin(args: (String | URL_ | AnonOrigin)*): Unit = js.native
   @JSName("prependListener")
   def prependListener_connect(
     event: typings.node.nodeStrings.connect,

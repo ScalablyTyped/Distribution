@@ -2,7 +2,7 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
-import typings.ol.projProjectionMod.default
+import typings.ol.projectionMod.default
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ object reprojMod extends js.Object {
     sourceExtent: Extent,
     targetResolution: Double,
     targetExtent: Extent,
-    triangulation: typings.ol.reprojTriangulationMod.default,
+    triangulation: typings.ol.triangulationMod.default,
     sources: js.Array[_],
     gutter: Double
   ): HTMLCanvasElement = js.native
@@ -32,7 +32,7 @@ object reprojMod extends js.Object {
     sourceExtent: Extent,
     targetResolution: Double,
     targetExtent: Extent,
-    triangulation: typings.ol.reprojTriangulationMod.default,
+    triangulation: typings.ol.triangulationMod.default,
     sources: js.Array[_],
     gutter: Double,
     opt_renderEdges: Boolean

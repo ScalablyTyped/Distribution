@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object blameMod {
-  type Blame = Blame_
+  type Blame = typings.nodegit.blameMod.Blame_
 }

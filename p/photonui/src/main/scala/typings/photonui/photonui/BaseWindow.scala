@@ -1,6 +1,6 @@
 package typings.photonui.photonui
 
-import typings.photonui.Anon_X
+import typings.photonui.AnonX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class BaseWindow () extends Container {
   var minHeight: Double = js.native
   var minWidth: Double = js.native
   var padding: Double = js.native
-  var position: Anon_X = js.native
+  var position: AnonX = js.native
   var width: Double = js.native
   var x: Double = js.native
   var y: Double = js.native

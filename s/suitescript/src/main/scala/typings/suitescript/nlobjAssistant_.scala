@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
   *
   * @since 2009.2
   */
-@JSName("nlobjAssistant")
 @js.native
 trait nlobjAssistant_
   extends /**

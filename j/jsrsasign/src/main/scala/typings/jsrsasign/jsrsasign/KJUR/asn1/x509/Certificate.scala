@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.Anon_Prvkeyobj
+import typings.jsrsasign.AnonPrvkeyobj
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.Certificate")
 @js.native
 class Certificate () extends ASN1Object {
-  def this(params: Anon_Prvkeyobj) = this()
+  def this(params: AnonPrvkeyobj) = this()
   /**
     * get PEM formatted certificate string after signed
     * @return PEM formatted string of certificate

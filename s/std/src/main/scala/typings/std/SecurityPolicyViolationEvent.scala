@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /** Inherits from Event, and represents the event object of an event sent on a document or worker when its content security policy is violated. */
 @js.native
-trait SecurityPolicyViolationEvent extends Event {
+trait SecurityPolicyViolationEvent extends Event_ {
   val blockedURI: java.lang.String = js.native
   val columnNumber: Double = js.native
   val documentURI: java.lang.String = js.native

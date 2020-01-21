@@ -1,6 +1,6 @@
 package typings.stampit
 
-import typings.stampit.stampitMod.stampit.IsADescriptor
+import typings.stampit.mod.stampit.IsADescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

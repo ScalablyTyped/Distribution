@@ -1,7 +1,7 @@
 package typings.parchment
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.parchment.distSrcAttributorStyleMod.default
+import typings.parchment.styleMod.default
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,22 +1,22 @@
 package typings.baseui.selectMod
 
-import typings.baseui.Anon_EventItem
-import typings.baseui.Anon_OptionOptionState
+import typings.baseui.AnonEventItem
+import typings.baseui.AnonOptionOptionState
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.search
 import typings.baseui.baseuiStrings.select
 import typings.baseui.menuMod.OnItemSelect
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DropdownProps extends js.Object {
   var error: js.UndefOr[Boolean] = js.undefined
-  var getOptionLabel: js.UndefOr[js.Function1[/* args */ Anon_OptionOptionState, ReactNode]] = js.undefined
+  var getOptionLabel: js.UndefOr[js.Function1[/* args */ AnonOptionOptionState, ReactNode]] = js.undefined
   var innerRef: js.UndefOr[Ref[_]] = js.undefined
   var isLoading: js.UndefOr[Boolean] = js.undefined
   var labelKey: js.UndefOr[String] = js.undefined
@@ -39,14 +39,14 @@ object DropdownProps {
   @scala.inline
   def apply(
     error: js.UndefOr[Boolean] = js.undefined,
-    getOptionLabel: /* args */ Anon_OptionOptionState => ReactNode = null,
+    getOptionLabel: /* args */ AnonOptionOptionState => ReactNode = null,
     innerRef: Ref[_] = null,
     isLoading: js.UndefOr[Boolean] = js.undefined,
     labelKey: String = null,
     maxDropdownHeight: String = null,
     multi: js.UndefOr[Boolean] = js.undefined,
     noResultsMsg: ReactNode = null,
-    onItemSelect: /* args */ Anon_EventItem => js.Any = null,
+    onItemSelect: /* args */ AnonEventItem => js.Any = null,
     options: Value = null,
     overrides: DropdownOverrides = null,
     required: js.UndefOr[Boolean] = js.undefined,

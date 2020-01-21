@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("bitwise/byte/write", JSImport.Namespace)
+@JSImport("bitwise/esm/byte/write", JSImport.Namespace)
 @js.native
 object byteWriteMod extends js.Object {
   def default(byte: js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit]): UInt8 = js.native

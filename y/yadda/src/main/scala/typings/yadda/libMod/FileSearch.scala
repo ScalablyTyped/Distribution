@@ -1,7 +1,7 @@
 package typings.yadda.libMod
 
 import typings.std.RegExp
-import typings.yadda.libFileSearchMod.^
+import typings.yadda.fileSearchMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

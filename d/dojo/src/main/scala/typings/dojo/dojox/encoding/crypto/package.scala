@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object crypto {
-  type _base = _base_
+  type base = typings.dojo.dojox.encoding.crypto.base_
 }

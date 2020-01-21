@@ -14,7 +14,7 @@ trait KnockoutVirtualElements extends js.Object {
   def insertAfter(container: KnockoutVirtualElement, nodeToInsert: Node, insertAfter: Node): Unit
   def nextSibling(node: KnockoutVirtualElement): Node
   def prepend(node: KnockoutVirtualElement, toInsert: Node): Unit
-  def setDomNodeChildren(node: KnockoutVirtualElement, newChildren: Anon_Index): Unit
+  def setDomNodeChildren(node: KnockoutVirtualElement, newChildren: AnonIndex): Unit
 }
 
 object KnockoutVirtualElements {
@@ -27,7 +27,7 @@ object KnockoutVirtualElements {
     insertAfter: (KnockoutVirtualElement, Node, Node) => Unit,
     nextSibling: KnockoutVirtualElement => Node,
     prepend: (KnockoutVirtualElement, Node) => Unit,
-    setDomNodeChildren: (KnockoutVirtualElement, Anon_Index) => Unit
+    setDomNodeChildren: (KnockoutVirtualElement, AnonIndex) => Unit
   ): KnockoutVirtualElements = {
     val __obj = js.Dynamic.literal(allowedBindings = allowedBindings.asInstanceOf[js.Any], childNodes = js.Any.fromFunction1(childNodes), emptyNode = js.Any.fromFunction1(emptyNode), firstChild = js.Any.fromFunction1(firstChild), insertAfter = js.Any.fromFunction3(insertAfter), nextSibling = js.Any.fromFunction1(nextSibling), prepend = js.Any.fromFunction2(prepend), setDomNodeChildren = js.Any.fromFunction2(setDomNodeChildren))
   

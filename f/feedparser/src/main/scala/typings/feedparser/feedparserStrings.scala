@@ -1,6 +1,6 @@
 package typings.feedparser
 
-import typings.feedparser.feedparserMod.Type
+import typings.feedparser.mod.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

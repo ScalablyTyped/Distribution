@@ -1,7 +1,7 @@
 package typings.geodesy
 
 import typings.geodesy.dmsMod.Precision
-import typings.geodesy.geodesyMod.Dp
+import typings.geodesy.mod.Dp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

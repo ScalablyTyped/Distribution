@@ -5,32 +5,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object otplib {
-  import typings.node.Buffer
-
-  type createHmacSecret = js.Function2[/* secret */ String, /* options */ HmacOptions, Buffer]
+  type createHmacSecret = js.Function2[
+    /* secret */ java.lang.String, 
+    /* options */ typings.otplib.HmacOptions, 
+    typings.node.Buffer
+  ]
   type hotpCheck = js.Function4[
-    /* token */ String, 
-    /* secret */ String, 
-    /* counter */ Double, 
-    /* options */ HotpOptionsInterface, 
-    Boolean
+    /* token */ java.lang.String, 
+    /* secret */ java.lang.String, 
+    /* counter */ scala.Double, 
+    /* options */ typings.otplib.HotpOptionsInterface, 
+    scala.Boolean
   ]
-  type hotpCounter = js.Function1[/* counter */ Double, String]
-  type hotpDigest = js.Function3[/* secret */ String, /* counter */ Double, /* options */ HotpOptionsInterface, String]
-  type hotpOptions = js.Function1[/* options */ js.Any, HotpOptionsInterface]
-  type hotpSecret = createHmacSecret
-  type hotpToken = js.Function3[/* secret */ String, /* counter */ Double, /* options */ HotpOptionsInterface, String]
-  type totpCheck = js.Function3[/* token */ String, /* secret */ String, /* options */ TotpOptionsInterface, Boolean]
+  type hotpCounter = js.Function1[/* counter */ scala.Double, java.lang.String]
+  type hotpDigest = js.Function3[
+    /* secret */ java.lang.String, 
+    /* counter */ scala.Double, 
+    /* options */ typings.otplib.HotpOptionsInterface, 
+    java.lang.String
+  ]
+  type hotpOptions = js.Function1[/* options */ js.Any, typings.otplib.HotpOptionsInterface]
+  type hotpSecret = typings.otplib.createHmacSecret
+  type hotpToken = js.Function3[
+    /* secret */ java.lang.String, 
+    /* counter */ scala.Double, 
+    /* options */ typings.otplib.HotpOptionsInterface, 
+    java.lang.String
+  ]
+  type totpCheck = js.Function3[
+    /* token */ java.lang.String, 
+    /* secret */ java.lang.String, 
+    /* options */ typings.otplib.TotpOptionsInterface, 
+    scala.Boolean
+  ]
   type totpCheckWithWindow = js.Function3[
-    /* token */ String, 
-    /* secret */ String, 
-    /* options */ TotpOptionsInterface, 
-    Double | Null
+    /* token */ java.lang.String, 
+    /* secret */ java.lang.String, 
+    /* options */ typings.otplib.TotpOptionsInterface, 
+    scala.Double | scala.Null
   ]
-  type totpCounter = js.Function2[/* epoch */ Double, /* step */ Double, Double]
-  type totpOptions = js.Function1[/* options */ js.Any, TotpOptionsInterface]
-  type totpSecret = createHmacSecret
-  type totpTimeRemaining = js.Function2[/* epoch */ Double, /* step */ Double, Double]
-  type totpTimeUsed = js.Function2[/* epoch */ Double, /* step */ Double, Double]
-  type totpToken = js.Function2[/* secret */ String, /* options */ TotpOptionsInterface, String]
+  type totpCounter = js.Function2[/* epoch */ scala.Double, /* step */ scala.Double, scala.Double]
+  type totpOptions = js.Function1[/* options */ js.Any, typings.otplib.TotpOptionsInterface]
+  type totpSecret = typings.otplib.createHmacSecret
+  type totpTimeRemaining = js.Function2[/* epoch */ scala.Double, /* step */ scala.Double, scala.Double]
+  type totpTimeUsed = js.Function2[/* epoch */ scala.Double, /* step */ scala.Double, scala.Double]
+  type totpToken = js.Function2[
+    /* secret */ java.lang.String, 
+    /* options */ typings.otplib.TotpOptionsInterface, 
+    java.lang.String
+  ]
 }

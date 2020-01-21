@@ -1,6 +1,6 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.VariableDeclarationList
+import typings.typescript.mod.VariableDeclarationList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

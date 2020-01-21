@@ -1,6 +1,6 @@
 package typings.yadda.libMod
 
-import typings.yadda.libFeatureFileSearchMod.^
+import typings.yadda.featureFileSearchMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

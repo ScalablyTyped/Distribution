@@ -1,55 +1,55 @@
 package typings.color
 
-import typings.colorDashConvert.Typeofansi16
-import typings.colorDashConvert.Typeofansi256
-import typings.colorDashConvert.Typeofapple
-import typings.colorDashConvert.Typeofcmyk
-import typings.colorDashConvert.Typeofgray
-import typings.colorDashConvert.Typeofhcg
-import typings.colorDashConvert.Typeofhex
-import typings.colorDashConvert.Typeofhsl
-import typings.colorDashConvert.Typeofhsv
-import typings.colorDashConvert.Typeofhwb
-import typings.colorDashConvert.Typeofkeyword
-import typings.colorDashConvert.Typeoflab
-import typings.colorDashConvert.Typeoflch
-import typings.colorDashConvert.Typeofrgb
-import typings.colorDashConvert.Typeofxyz
-import typings.colorDashConvert.routeMod.ansi16
-import typings.colorDashConvert.routeMod.ansi256
-import typings.colorDashConvert.routeMod.apple
-import typings.colorDashConvert.routeMod.cmyk
-import typings.colorDashConvert.routeMod.gray
-import typings.colorDashConvert.routeMod.hcg
-import typings.colorDashConvert.routeMod.hex
-import typings.colorDashConvert.routeMod.hsl
-import typings.colorDashConvert.routeMod.hsv
-import typings.colorDashConvert.routeMod.hwb
-import typings.colorDashConvert.routeMod.keyword
-import typings.colorDashConvert.routeMod.lab
-import typings.colorDashConvert.routeMod.lch
-import typings.colorDashConvert.routeMod.rgb
-import typings.colorDashConvert.routeMod.xyz
+import typings.colorConvert.Typeofansi16
+import typings.colorConvert.Typeofansi256
+import typings.colorConvert.Typeofapple
+import typings.colorConvert.Typeofcmyk
+import typings.colorConvert.Typeofgray
+import typings.colorConvert.Typeofhcg
+import typings.colorConvert.Typeofhex
+import typings.colorConvert.Typeofhsl
+import typings.colorConvert.Typeofhsv
+import typings.colorConvert.Typeofhwb
+import typings.colorConvert.Typeofkeyword
+import typings.colorConvert.Typeoflab
+import typings.colorConvert.Typeoflch
+import typings.colorConvert.Typeofrgb
+import typings.colorConvert.Typeofxyz
+import typings.colorConvert.routeMod.ansi16
+import typings.colorConvert.routeMod.ansi256
+import typings.colorConvert.routeMod.apple
+import typings.colorConvert.routeMod.cmyk
+import typings.colorConvert.routeMod.gray
+import typings.colorConvert.routeMod.hcg
+import typings.colorConvert.routeMod.hex
+import typings.colorConvert.routeMod.hsl
+import typings.colorConvert.routeMod.hsv
+import typings.colorConvert.routeMod.hwb
+import typings.colorConvert.routeMod.keyword
+import typings.colorConvert.routeMod.lab
+import typings.colorConvert.routeMod.lch
+import typings.colorConvert.routeMod.rgb
+import typings.colorConvert.routeMod.xyz
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofconvert extends js.Object {
-  val ansi16: Typeofansi16 with typings.colorDashConvert.routeMod.ansi16 with typings.color.colorStrings.Typeofconvert
-  val ansi256: Typeofansi256 with typings.colorDashConvert.routeMod.ansi256 with typings.color.colorStrings.Typeofconvert
-  val apple: Typeofapple with typings.colorDashConvert.routeMod.apple with typings.color.colorStrings.Typeofconvert
-  val cmyk: Typeofcmyk with typings.colorDashConvert.routeMod.cmyk with typings.color.colorStrings.Typeofconvert
-  val gray: Typeofgray with typings.colorDashConvert.routeMod.gray with typings.color.colorStrings.Typeofconvert
-  val hcg: Typeofhcg with typings.colorDashConvert.routeMod.hcg with typings.color.colorStrings.Typeofconvert
-  val hex: Typeofhex with typings.colorDashConvert.routeMod.hex with typings.color.colorStrings.Typeofconvert
-  val hsl: Typeofhsl with typings.colorDashConvert.routeMod.hsl with typings.color.colorStrings.Typeofconvert
-  val hsv: Typeofhsv with typings.colorDashConvert.routeMod.hsv with typings.color.colorStrings.Typeofconvert
-  val hwb: Typeofhwb with typings.colorDashConvert.routeMod.hwb with typings.color.colorStrings.Typeofconvert
-  val keyword: Typeofkeyword with typings.colorDashConvert.routeMod.keyword with typings.color.colorStrings.Typeofconvert
-  val lab: Typeoflab with typings.colorDashConvert.routeMod.lab with typings.color.colorStrings.Typeofconvert
-  val lch: Typeoflch with typings.colorDashConvert.routeMod.lch with typings.color.colorStrings.Typeofconvert
-  val rgb: Typeofrgb with typings.colorDashConvert.routeMod.rgb with typings.color.colorStrings.Typeofconvert
-  val xyz: Typeofxyz with typings.colorDashConvert.routeMod.xyz with typings.color.colorStrings.Typeofconvert
+  val ansi16: Typeofansi16 with typings.colorConvert.routeMod.ansi16 with typings.color.colorStrings.Typeofconvert
+  val ansi256: Typeofansi256 with typings.colorConvert.routeMod.ansi256 with typings.color.colorStrings.Typeofconvert
+  val apple: Typeofapple with typings.colorConvert.routeMod.apple with typings.color.colorStrings.Typeofconvert
+  val cmyk: Typeofcmyk with typings.colorConvert.routeMod.cmyk with typings.color.colorStrings.Typeofconvert
+  val gray: Typeofgray with typings.colorConvert.routeMod.gray with typings.color.colorStrings.Typeofconvert
+  val hcg: Typeofhcg with typings.colorConvert.routeMod.hcg with typings.color.colorStrings.Typeofconvert
+  val hex: Typeofhex with typings.colorConvert.routeMod.hex with typings.color.colorStrings.Typeofconvert
+  val hsl: Typeofhsl with typings.colorConvert.routeMod.hsl with typings.color.colorStrings.Typeofconvert
+  val hsv: Typeofhsv with typings.colorConvert.routeMod.hsv with typings.color.colorStrings.Typeofconvert
+  val hwb: Typeofhwb with typings.colorConvert.routeMod.hwb with typings.color.colorStrings.Typeofconvert
+  val keyword: Typeofkeyword with typings.colorConvert.routeMod.keyword with typings.color.colorStrings.Typeofconvert
+  val lab: Typeoflab with typings.colorConvert.routeMod.lab with typings.color.colorStrings.Typeofconvert
+  val lch: Typeoflch with typings.colorConvert.routeMod.lch with typings.color.colorStrings.Typeofconvert
+  val rgb: Typeofrgb with typings.colorConvert.routeMod.rgb with typings.color.colorStrings.Typeofconvert
+  val xyz: Typeofxyz with typings.colorConvert.routeMod.xyz with typings.color.colorStrings.Typeofconvert
 }
 
 object Typeofconvert {

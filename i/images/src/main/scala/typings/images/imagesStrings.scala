@@ -1,6 +1,6 @@
 package typings.images
 
-import typings.images.imagesMod.SupportType
+import typings.images.mod.SupportType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

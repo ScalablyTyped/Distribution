@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.aggregator
 import typings.dojo.dojoStrings.defaultOpen
 import typings.dojo.dojoStrings.expandoCell
@@ -155,7 +155,7 @@ class TreeGrid () extends DataGrid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_defaultOpen(
     property: defaultOpen,
@@ -165,7 +165,7 @@ class TreeGrid () extends DataGrid {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_expandoCell(
     property: expandoCell,
@@ -175,7 +175,7 @@ class TreeGrid () extends DataGrid {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_openAtLevels(
     property: openAtLevels,
@@ -185,7 +185,7 @@ class TreeGrid () extends DataGrid {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_sortChildItems(
     property: sortChildItems,
@@ -195,7 +195,7 @@ class TreeGrid () extends DataGrid {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_treeModel(
     property: treeModel,
@@ -205,6 +205,6 @@ class TreeGrid () extends DataGrid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

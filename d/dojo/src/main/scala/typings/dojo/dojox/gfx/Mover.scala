@@ -1,7 +1,7 @@
 package typings.dojo.dojox.gfx
 
 import typings.dojo.dojox.gfx.shape.Shape
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("dojox.gfx.Mover")
 @js.native
 class Mover protected () extends js.Object {
-  def this(shape: Shape, e: Event) = this()
-  def this(shape: Shape, e: Event, host: js.Object) = this()
+  def this(shape: Shape, e: Event_) = this()
+  def this(shape: Shape, e: Event_, host: js.Object) = this()
   /**
     * stops the move, deletes all references, so the object can be garbage-collected
     *
@@ -34,6 +34,6 @@ class Mover protected () extends js.Object {
     *
     * @param e mouse event
     */
-  def onMouseMove(e: Event): Unit = js.native
+  def onMouseMove(e: Event_): Unit = js.native
 }
 

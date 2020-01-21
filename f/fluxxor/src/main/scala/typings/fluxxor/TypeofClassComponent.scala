@@ -1,8 +1,8 @@
 package typings.fluxxor
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.react.reactMod.Component
-import typings.react.reactMod.Context
+import typings.react.mod.Component
+import typings.react.mod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

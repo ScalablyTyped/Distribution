@@ -1,6 +1,7 @@
 package typings.phaser.Phaser.Physics.Matter
 
-import typings.phaser.MatterJS.Body
+import typings.phaser.MatterJS.BodyType
+import typings.phaser.MatterJS.ConstraintType
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Input.Pointer
 import typings.phaser.Phaser.Math.Vector2
@@ -40,7 +41,7 @@ class PointerConstraint protected () extends js.Object {
   /**
     * The body that is currently being dragged, if any.
     */
-  var body: Body = js.native
+  var body: BodyType = js.native
   /**
     * The Camera the Pointer was interacting with when the input
     * down event was processed.
@@ -49,11 +50,11 @@ class PointerConstraint protected () extends js.Object {
   /**
     * The native Matter Constraint that is used to attach to bodies.
     */
-  var constraint: js.Object = js.native
+  var constraint: ConstraintType = js.native
   /**
     * The part of the body that was clicked on to start the drag.
     */
-  var part: Body = js.native
+  var part: BodyType = js.native
   /**
     * A reference to the Input Pointer that activated this Constraint.
     * This is set in the `onDown` handler.
@@ -89,16 +90,21 @@ class PointerConstraint protected () extends js.Object {
     * @param body The Matter Body to check.
     * @param position A translated hit test position.
     */
-  def hitTestBody(body: Body, position: Vector2): Boolean = js.native
+  def hitTestBody(body: BodyType, position: Vector2): Boolean = js.native
   /**
     * A Pointer has been pressed down onto the Scene.
     * 
-    * If this Constraint doesn't have an active Pointer then a hit test is
-    * run against all active bodies in the world. If one is found it is bound
-    * to this constraint and the drag begins.
+    * If this Constraint doesn't have an active Pointer then a hit test is set to
+    * run against all active bodies in the world during the _next_ call to `update`.
+    * If a body is found, it is bound to this constraint and the drag begins.
     * @param pointer A reference to the Pointer that was pressed.
     */
   def onDown(pointer: Pointer): Unit = js.native
+  /**
+    * A Pointer has been released from the Scene. If it was the one this constraint was using, it's cleared.
+    * @param pointer A reference to the Pointer that was pressed.
+    */
+  def onUp(pointer: Pointer): Unit = js.native
   /**
     * Stops the Pointer Constraint from dragging the body any further.
     * 

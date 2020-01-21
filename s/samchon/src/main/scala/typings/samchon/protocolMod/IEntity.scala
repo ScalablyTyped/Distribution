@@ -1,6 +1,6 @@
 package typings.samchon.protocolMod
 
-import typings.sxml.sxmlMod.XML
+import typings.sxml.mod.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/protocol", "IEntity")
 @js.native
 object IEntity extends js.Object {
-  def construct(entity: typings.samchon.protocolEntityIEntityMod.IEntity, xml: XML, prohibited_names: String*): Unit = js.native
-  def toXML(entity: typings.samchon.protocolEntityIEntityMod.IEntity, prohibited_names: String*): XML = js.native
+  def construct(entity: typings.samchon.ientityMod.IEntity, xml: XML, prohibited_names: String*): Unit = js.native
+  def toXML(entity: typings.samchon.ientityMod.IEntity, prohibited_names: String*): XML = js.native
 }
 

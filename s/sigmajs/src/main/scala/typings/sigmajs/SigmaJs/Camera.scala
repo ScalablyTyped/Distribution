@@ -1,7 +1,7 @@
 package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sigmajs.Anon_X
+import typings.sigmajs.AnonX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +12,9 @@ trait Camera extends js.Object {
   var readPrefix: String
   var x: Double
   var y: Double
-  def cameraPosition(x: Double, y: Double): Anon_X
+  def cameraPosition(x: Double, y: Double): AnonX
   def goTo(settings: StringDictionary[js.Any]): Unit
-  def graphPosition(x: Double, y: Double): Anon_X
+  def graphPosition(x: Double, y: Double): AnonX
   def settings(setting: String): js.Any
 }
 
@@ -22,9 +22,9 @@ object Camera {
   @scala.inline
   def apply(
     angle: Double,
-    cameraPosition: (Double, Double) => Anon_X,
+    cameraPosition: (Double, Double) => AnonX,
     goTo: StringDictionary[js.Any] => Unit,
-    graphPosition: (Double, Double) => Anon_X,
+    graphPosition: (Double, Double) => AnonX,
     ratio: Double,
     readPrefix: String,
     settings: String => js.Any,

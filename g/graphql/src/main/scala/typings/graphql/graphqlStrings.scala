@@ -1,9 +1,9 @@
 package typings.graphql
 
-import typings.graphql.languageAstMod.OperationTypeNode
-import typings.graphql.languageDirectiveLocationMod.DirectiveLocationEnum
-import typings.graphql.languageKindsMod.KindEnum
-import typings.graphql.languageTokenKindMod.TokenKindEnum
+import typings.graphql.astMod.OperationTypeNode
+import typings.graphql.directiveLocationMod.DirectiveLocationEnum
+import typings.graphql.kindsMod.KindEnum
+import typings.graphql.tokenKindMod.TokenKindEnum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.antd
 
-import typings.antd.libSkeletonAvatarMod.SkeletonAvatarProps
-import typings.antd.libSkeletonParagraphMod.SkeletonParagraphProps
-import typings.antd.libSkeletonTitleMod.SkeletonTitleProps
-import typings.react.reactMod.ReactNode
+import typings.antd.paragraphMod.SkeletonParagraphProps
+import typings.antd.skeletonAvatarMod.SkeletonAvatarProps
+import typings.antd.titleMod.SkeletonTitleProps
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

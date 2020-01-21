@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.browserfs.distNodeBackendHTML5FSMod.HTML5FS
-import typings.browserfs.distNodeBackendHTML5FSMod.HTML5FSOptions
-import typings.browserfs.distNodeBackendHTML5FSMod.default
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.fileSystemMod.BFSCallback
+import typings.browserfs.fileSystemMod.FileSystemOptions
+import typings.browserfs.html5fsMod.HTML5FS
+import typings.browserfs.html5fsMod.HTML5FSOptions
+import typings.browserfs.html5fsMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

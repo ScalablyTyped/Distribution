@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionDrawMod.Options
-import typings.ol.interactionDrawMod.default
+import typings.ol.drawMod.Options
+import typings.ol.drawMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

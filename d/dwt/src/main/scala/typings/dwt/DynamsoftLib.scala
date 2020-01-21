@@ -11,12 +11,12 @@ trait DynamsoftLib extends js.Object {
     addEventListener  ajax  all  appendMessage  appendRichMessage  aryControlLoadImage  attachAddon  attachProperty
     base64  bio  cancelFrome  clearMessage  closeAll  closeProgress  colorStrToInt  config  css  currentStyle
     debug*/
-  var detect: Anon_Ssl
+  var detect: AnonSsl
   /*ignored
     detectButton  dialog  dialogShowStatus  dlgProgress  dlgRef  drawBoxBorder  drawImageWithHermite
     each  empty  endsWith
     */
-  var env: Anon_BChrome
+  var env: AnonBChrome
   def NewOCRReadPara(): OCRReadPara
   def NewOCRZone(): OCRZone
   def NewRedaction(): Redaction
@@ -43,8 +43,8 @@ object DynamsoftLib {
     NewOCRReadPara: () => OCRReadPara,
     NewOCRZone: () => OCRZone,
     NewRedaction: () => Redaction,
-    detect: Anon_Ssl,
-    env: Anon_BChrome,
+    detect: AnonSsl,
+    env: AnonBChrome,
     getScript: (String, Boolean, js.Function0[Unit]) => Unit,
     hideMask: () => Unit,
     showMask: () => Unit

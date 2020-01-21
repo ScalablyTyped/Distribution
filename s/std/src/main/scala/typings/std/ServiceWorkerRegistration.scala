@@ -12,40 +12,40 @@ trait ServiceWorkerRegistration extends EventTarget {
   val active: ServiceWorker | Null = js.native
   val installing: ServiceWorker | Null = js.native
   val navigationPreload: NavigationPreloadManager = js.native
-  var onupdatefound: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onupdatefound: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   val pushManager: PushManager = js.native
   val scope: java.lang.String = js.native
   val sync: SyncManager = js.native
   val updateViaCache: ServiceWorkerUpdateViaCache = js.native
   val waiting: ServiceWorker | Null = js.native
   @JSName("addEventListener")
-  def addEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   def getNotifications(): js.Promise[js.Array[Notification]] = js.native
   def getNotifications(filter: GetNotificationOptions): js.Promise[js.Array[Notification]] = js.native
   @JSName("removeEventListener")
-  def removeEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_updatefound(`type`: updatefound, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_updatefound(
     `type`: updatefound,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   def showNotification(title: java.lang.String): js.Promise[Unit] = js.native

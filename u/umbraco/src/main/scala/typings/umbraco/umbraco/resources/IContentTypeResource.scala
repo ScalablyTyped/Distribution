@@ -1,6 +1,6 @@
 package typings.umbraco.umbraco.resources
 
-import typings.angular.angularMod.IPromise
+import typings.angular.mod.IPromise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

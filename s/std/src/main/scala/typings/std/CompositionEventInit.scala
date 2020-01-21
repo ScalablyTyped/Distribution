@@ -16,7 +16,7 @@ object CompositionEventInit {
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     data: java.lang.String = null,
     detail: Int | Double = null,
-    view: Window = null
+    view: Window_ = null
   ): CompositionEventInit = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])

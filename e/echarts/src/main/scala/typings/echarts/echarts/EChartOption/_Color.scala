@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_ColorOffset
+import typings.echarts.AnonColorOffset
 import typings.echarts.echartsStrings.`no-repeat`
 import typings.echarts.echartsStrings.`repeat-x`
 import typings.echarts.echartsStrings.`repeat-y`
@@ -17,8 +17,8 @@ trait _Color extends js.Object
 
 object _Color {
   @scala.inline
-  def Anon_ColorStopsGlobalLinear(
-    colorStops: js.Array[Anon_ColorOffset],
+  def AnonColorStopsGlobalLinear(
+    colorStops: js.Array[AnonColorOffset],
     `type`: linear,
     x: Double,
     x2: Double,
@@ -32,8 +32,8 @@ object _Color {
     __obj.asInstanceOf[_Color]
   }
   @scala.inline
-  def Anon_ColorStopsGlobalR(
-    colorStops: js.Array[Anon_ColorOffset],
+  def AnonColorStopsGlobalR(
+    colorStops: js.Array[AnonColorOffset],
     r: Double,
     `type`: radial,
     x: Double,
@@ -46,7 +46,7 @@ object _Color {
     __obj.asInstanceOf[_Color]
   }
   @scala.inline
-  def Anon_Image(
+  def AnonImage(
     image: HTMLImageElement | HTMLCanvasElement,
     repeat: repeat | `repeat-x` | `repeat-y` | `no-repeat` = null
   ): _Color = {

@@ -2,8 +2,8 @@ package typings.jsforce.queryMod
 
 import typings.jsforce.jsforceStrings.ASC
 import typings.jsforce.jsforceStrings.DESC
-import typings.jsforce.recordDashResultMod.RecordResult
-import typings.node.Anon_End
+import typings.jsforce.recordResultMod.RecordResult
+import typings.node.AnonEnd
 import typings.node.NodeJS.WritableStream
 import typings.node.streamMod.Readable
 import typings.std.Error
@@ -31,7 +31,7 @@ class Query[T] ()
   def destroy(`type`: String): js.Promise[js.Array[RecordResult]] = js.native
   def destroy(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
   @JSName("destroy")
-  def destroy_Unit(): Unit = js.native
+  def destroy_Promise(): js.Promise[js.Array[RecordResult]] = js.native
   def end(): Query[T] = js.native
   def exec(): Query[T] = js.native
   def exec(options: ExecuteOptions): Query[T] = js.native
@@ -51,7 +51,7 @@ class Query[T] ()
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
   def run(): Query[T] = js.native
   def run(options: ExecuteOptions): Query[T] = js.native
   def run(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native

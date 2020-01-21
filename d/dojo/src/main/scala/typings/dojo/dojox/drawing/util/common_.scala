@@ -1,6 +1,6 @@
 package typings.dojo.dojox.drawing.util
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
   * as this.util
   *
   */
-@JSName("common")
 trait common_ extends js.Object {
   /**
     *
@@ -32,7 +31,7 @@ trait common_ extends js.Object {
     * @param obj Manager.Mouse event.
     * @param snap               OptionalReturns nearest angle within snap limits
     */
-  def angle(obj: Event, snap: Double): js.Any
+  def angle(obj: Event_, snap: Double): js.Any
   /**
     * Attempts to determine in a Mouse Object
     * was passed or indiviual numbers. Returns
@@ -64,7 +63,7 @@ trait common_ extends js.Object {
     * @param min
     * @param max
     */
-  def constrainAngle(obj: Event, min: Double, max: Double): Event
+  def constrainAngle(obj: Event_, min: Double, max: Double): Event_
   /**
     * Convert the passed number to radians.
     *
@@ -89,7 +88,7 @@ trait common_ extends js.Object {
     *
     * @param o
     */
-  def length(o: Event): js.Any
+  def length(o: Event_): js.Any
   /**
     * Subtract an amount from a line
     * x1,y1,x2,y2 represents the Line. 'amt' represents the amount
@@ -136,7 +135,7 @@ trait common_ extends js.Object {
     *
     * @param o
     */
-  def radians(o: Event): js.Any
+  def radians(o: Event_): js.Any
   /**
     * Since util is the only Singleton in Drawing (besides
     * keys) it is used to help connect the Drawing object
@@ -160,7 +159,7 @@ trait common_ extends js.Object {
     * @param obj
     * @param ca A decimal number fraction of a half circle..5 would snap to 90 degrees.25  would snap to 45 degrees.125 would snap to 22.5 degrees, etc.
     */
-  def snapAngle(obj: Event, ca: Double): js.Any
+  def snapAngle(obj: Event_, ca: Double): js.Any
   /**
     * Creates a unique ID.
     *
@@ -173,25 +172,25 @@ object common_ {
   @scala.inline
   def apply(
     abbr: js.Any => Double,
-    angle: (Event, Double) => js.Any,
+    angle: (Event_, Double) => js.Any,
     argsToObj: () => js.Any,
     attr: (js.Object, String, js.Any, js.Any) => Boolean,
     byId: String => js.Any,
-    constrainAngle: (Event, Double, Double) => Event,
+    constrainAngle: (Event_, Double, Double) => Event_,
     degToRad: Double => Double,
     distance: () => js.Any,
     idSetStart: js.Any => Unit,
-    length: Event => js.Any,
+    length: Event_ => js.Any,
     lineSub: (Double, Double, Double, Double, Double) => js.Object,
     mixin: (js.Any, js.Any) => Unit,
     objects: js.Object,
     oppAngle: Double => Double,
     pointOnCircle: (Double, Double, Double, Double) => js.Object,
     radToDeg: Double => Double,
-    radians: Event => js.Any,
+    radians: Event_ => js.Any,
     register: js.Object => Unit,
     slope: (js.Object, js.Object) => Double,
-    snapAngle: (Event, Double) => js.Any,
+    snapAngle: (Event_, Double) => js.Any,
     uid: String => String
   ): common_ = {
     val __obj = js.Dynamic.literal(abbr = js.Any.fromFunction1(abbr), angle = js.Any.fromFunction2(angle), argsToObj = js.Any.fromFunction0(argsToObj), attr = js.Any.fromFunction4(attr), byId = js.Any.fromFunction1(byId), constrainAngle = js.Any.fromFunction3(constrainAngle), degToRad = js.Any.fromFunction1(degToRad), distance = js.Any.fromFunction0(distance), idSetStart = js.Any.fromFunction1(idSetStart), length = js.Any.fromFunction1(length), lineSub = js.Any.fromFunction5(lineSub), mixin = js.Any.fromFunction2(mixin), objects = objects.asInstanceOf[js.Any], oppAngle = js.Any.fromFunction1(oppAngle), pointOnCircle = js.Any.fromFunction4(pointOnCircle), radToDeg = js.Any.fromFunction1(radToDeg), radians = js.Any.fromFunction1(radians), register = js.Any.fromFunction1(register), slope = js.Any.fromFunction2(slope), snapAngle = js.Any.fromFunction2(snapAngle), uid = js.Any.fromFunction1(uid))

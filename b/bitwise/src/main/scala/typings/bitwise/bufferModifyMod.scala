@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("bitwise/buffer/modify", JSImport.Namespace)
+@JSImport("bitwise/esm/buffer/modify", JSImport.Namespace)
 @js.native
 object bufferModifyMod extends js.Object {
   def default(buffer: Buffer, bits: js.Array[Bit]): Unit = js.native

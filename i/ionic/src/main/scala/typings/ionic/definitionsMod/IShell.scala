@@ -1,9 +1,9 @@
 package typings.ionic.definitionsMod
 
-import typings.atIonicUtilsDashSubprocess.atIonicUtilsDashSubprocessMod.Subprocess
-import typings.atIonicUtilsDashSubprocess.atIonicUtilsDashSubprocessMod.SubprocessOptions
-import typings.atIonicUtilsDashSubprocess.atIonicUtilsDashSubprocessMod.WhichOptions
-import typings.node.childUnderscoreProcessMod.ChildProcess
+import typings.ionicUtilsSubprocess.mod.Subprocess
+import typings.ionicUtilsSubprocess.mod.SubprocessOptions
+import typings.ionicUtilsSubprocess.mod.WhichOptions
+import typings.node.childProcessMod.ChildProcess
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

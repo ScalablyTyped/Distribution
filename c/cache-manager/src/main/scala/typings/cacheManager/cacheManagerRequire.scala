@@ -1,0 +1,12 @@
+package typings.cacheManager
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("cache-manager", JSImport.Namespace)
+@js.native
+object cacheManagerRequire extends js.Object
+

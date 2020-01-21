@@ -1,11 +1,11 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.LoDashImplicitWrapper
-import typings.lodash.lodashMod.RightCurriedFunction2
-import typings.lodash.lodashMod.RightCurriedFunction3
-import typings.lodash.lodashMod.RightCurriedFunction4
-import typings.lodash.lodashMod.RightCurriedFunction5
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.LoDashImplicitWrapper
+import typings.lodash.mod.RightCurriedFunction2
+import typings.lodash.mod.RightCurriedFunction3
+import typings.lodash.mod.RightCurriedFunction4
+import typings.lodash.mod.RightCurriedFunction5
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

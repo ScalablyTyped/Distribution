@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_DistanceModel
+import typings.playcanvas.AnonDistanceModel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SoundInstance3d")
 @js.native
 class SoundInstance3d protected () extends SoundInstance {
-  def this(manager: SoundManager, sound: Sound, options: Anon_DistanceModel) = this()
+  def this(manager: SoundManager, sound: Sound, options: AnonDistanceModel) = this()
   /**
     * Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be one of {@link pc.DISTANCE_LINEAR}, {@link pc.DISTANCE_INVERSE} or {@link pc.DISTANCE_EXPONENTIAL}. Default is {@link pc.DISTANCE_LINEAR}.
     */

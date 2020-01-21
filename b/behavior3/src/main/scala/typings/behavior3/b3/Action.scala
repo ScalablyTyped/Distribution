@@ -1,7 +1,6 @@
 package typings.behavior3.b3
 
-import org.scalablytyped.runtime.TopLevel
-import typings.behavior3.Anon_Name
+import typings.behavior3.AnonName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,10 +26,6 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Action.
   */
 class Action () extends BaseNode {
-  def this(hasNameTitleProperties: Anon_Name) = this()
+  def this(hasNameTitleProperties: AnonName) = this()
 }
-
-@JSGlobal("b3.ACTION")
-@js.native
-object ACTION extends TopLevel[String]
 

@@ -1,6 +1,6 @@
 package typings.giraffe.Giraffe
 
-import typings.jquery.JQuery
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 - typings.giraffe.Giraffe.GiraffeObject because var conflicts: initialize. Inlined app, appEvents, dataEvents, defaultOptions, beforeInitialize, afterInitialize, dispose, beforeDispose, afterDispose */ @JSGlobal("Giraffe.View")
 @js.native
 class View[TModel /* <: Model */] ()
-  extends typings.backbone.backboneMod.View[TModel] {
+  extends typings.backbone.mod.View[TModel] {
   var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
-  var app: App = js.native
+  var app: App_ = js.native
   var appEvents: js.UndefOr[StringMap] = js.native
   var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
   var children: js.Array[View[TModel]] = js.native
   var dataEvents: js.UndefOr[StringMap] = js.native
-  var defaultOptions: js.UndefOr[DefaultOptions] = js.native
+  var defaultOptions: js.UndefOr[DefaultOptions_] = js.native
   var documentTitle: String = js.native
   var parent: View[TModel] = js.native
   var template: js.Any = js.native
@@ -66,10 +66,10 @@ object View extends js.Object {
   def setTemplateStrategy(strategy: js.Any): js.Any = js.native
   def setTemplateStrategy(strategy: js.Any, instance: js.Any): js.Any = js.native
   @JSName("to$El")
-  def to$El(el: js.Any): JQuery[HTMLElement] = js.native
+  def to$El(el: js.Any): JQuery_[HTMLElement] = js.native
   @JSName("to$El")
-  def to$El(el: js.Any, parent: js.Any): JQuery[HTMLElement] = js.native
+  def to$El(el: js.Any, parent: js.Any): JQuery_[HTMLElement] = js.native
   @JSName("to$El")
-  def to$El(el: js.Any, parent: js.Any, allowParentMatch: Boolean): JQuery[HTMLElement] = js.native
+  def to$El(el: js.Any, parent: js.Any, allowParentMatch: Boolean): JQuery_[HTMLElement] = js.native
 }
 

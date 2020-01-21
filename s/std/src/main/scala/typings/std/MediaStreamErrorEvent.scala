@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait MediaStreamErrorEvent extends Event {
+trait MediaStreamErrorEvent extends Event_ {
   val error: MediaStreamError | Null = js.native
 }
 

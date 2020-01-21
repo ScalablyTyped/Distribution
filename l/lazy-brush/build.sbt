@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lazy-brush"
-version := "1.0-dt-20200115Z-2551ad"
+version := "1.0-dt-20200115Z-b1257f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

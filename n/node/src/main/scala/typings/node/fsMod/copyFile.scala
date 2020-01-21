@@ -41,7 +41,9 @@ object copyFile extends js.Object {
     * The only supported flag is fs.constants.COPYFILE_EXCL,
     * which causes the copy operation to fail if dest already exists.
     */
-  def __promisify__(src: PathLike, dst: PathLike): js.Promise[Unit] = js.native
-  def __promisify__(src: PathLike, dst: PathLike, flags: Double): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(src: PathLike, dst: PathLike): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(src: PathLike, dst: PathLike, flags: Double): js.Promise[Unit] = js.native
 }
 

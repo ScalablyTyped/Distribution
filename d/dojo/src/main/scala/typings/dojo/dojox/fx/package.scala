@@ -14,5 +14,5 @@ package object fx {
     *
     * @param args offset: {x: int, y: int} this will be added to the target positionduration: Duration of the animation in milliseconds.win: a node or window object to scroll
     */
-  type scroll = js.Function1[/* args */ js.Object, Unit]
+  type scroll = js.Function1[/* args */ js.Object, scala.Unit]
 }

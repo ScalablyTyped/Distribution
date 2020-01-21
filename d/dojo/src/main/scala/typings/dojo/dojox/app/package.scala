@@ -12,5 +12,5 @@ package object app {
     * @param config
     * @param node
     */
-  type main = js.Function2[/* config */ js.Any, /* node */ js.Any, Unit]
+  type main = js.Function2[/* config */ js.Any, /* node */ js.Any, scala.Unit]
 }

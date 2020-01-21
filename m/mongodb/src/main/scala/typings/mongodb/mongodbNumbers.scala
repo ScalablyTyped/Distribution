@@ -1,6 +1,6 @@
 package typings.mongodb
 
-import typings.mongodb.mongodbMod.SortValues
+import typings.mongodb.mod.SortValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

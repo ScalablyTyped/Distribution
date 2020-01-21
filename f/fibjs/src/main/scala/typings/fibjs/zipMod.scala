@@ -17,14 +17,14 @@ object zipMod extends js.Object {
   val ZIP_DEFLATED: `1` = js.native
   val ZIP_STORED: `0` = js.native
   def isZipFile(filename: String): Boolean = js.native
-  def open(data: Class_Buffer): Class_ZipFile = js.native
-  def open(data: Class_Buffer, mod: String): Class_ZipFile = js.native
-  def open(data: Class_Buffer, mod: String, compress_type: Double): Class_ZipFile = js.native
-  def open(path: String): Class_ZipFile = js.native
-  def open(path: String, mod: String): Class_ZipFile = js.native
-  def open(path: String, mod: String, compress_type: Double): Class_ZipFile = js.native
-  def open(strm: Class_SeekableStream): Class_ZipFile = js.native
-  def open(strm: Class_SeekableStream, mod: String): Class_ZipFile = js.native
-  def open(strm: Class_SeekableStream, mod: String, compress_type: Double): Class_ZipFile = js.native
+  def open(data: ClassBuffer): ClassZipFile = js.native
+  def open(data: ClassBuffer, mod: String): ClassZipFile = js.native
+  def open(data: ClassBuffer, mod: String, compress_type: Double): ClassZipFile = js.native
+  def open(path: String): ClassZipFile = js.native
+  def open(path: String, mod: String): ClassZipFile = js.native
+  def open(path: String, mod: String, compress_type: Double): ClassZipFile = js.native
+  def open(strm: ClassSeekableStream): ClassZipFile = js.native
+  def open(strm: ClassSeekableStream, mod: String): ClassZipFile = js.native
+  def open(strm: ClassSeekableStream, mod: String, compress_type: Double): ClassZipFile = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.cols
 import typings.dojo.dojoStrings.rows
 import typings.dojo.dojoStrings.value
@@ -63,7 +63,7 @@ class SimpleTextarea () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_rows(
     property: rows,
@@ -73,6 +73,6 @@ class SimpleTextarea () extends TextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.dojo.dojox.layout
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
-import typings.dojo.dijit.layout._LayoutWidget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
+import typings.dojo.dijit.layout.LayoutWidget
 import typings.dojo.dojoStrings.ChildWidgetProperties
 import typings.dojo.dojoStrings.acceptTypes
 import typings.dojo.dojoStrings.attachScope
@@ -35,10 +35,10 @@ import scala.scalajs.js.annotation._
   * @param node
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.layout.GridContainerLite")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.layout.GridContainerLite")
 @js.native
-class GridContainerLite_ protected () extends _LayoutWidget {
+class GridContainerLite_ protected () extends LayoutWidget {
   def this(props: js.Object, node: HTMLElement) = this()
   /**
     * Properties set on children of a GridContainerLite
@@ -104,7 +104,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
     *
     */
   var templateString: String = js.native
-  def addChild(child: _WidgetBase, column: Double, p: Double): js.Any = js.native
+  def addChild(child: WidgetBase, column: Double, p: Double): js.Any = js.native
   /**
     *
     * @param child
@@ -214,7 +214,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_acceptTypes(
     property: acceptTypes,
@@ -224,7 +224,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_attachScope(
     property: attachScope,
@@ -234,7 +234,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_autoRefresh(
     property: autoRefresh,
@@ -244,7 +244,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_colWidths(
     property: colWidths,
@@ -254,7 +254,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_doLayout(
     property: doLayout,
@@ -264,7 +264,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dragHandleClass(
     property: dragHandleClass,
@@ -274,7 +274,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isAutoOrganized(
     property: isAutoOrganized,
@@ -284,7 +284,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_nbZones(
     property: nbZones,
@@ -294,7 +294,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -304,7 +304,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -314,7 +314,7 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -324,6 +324,6 @@ class GridContainerLite_ protected () extends _LayoutWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

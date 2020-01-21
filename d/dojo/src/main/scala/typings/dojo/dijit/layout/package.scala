@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object layout {
-  type BorderContainer = BorderContainer_
-  type LayoutContainer = LayoutContainer_
-  type SplitContainer = SplitContainer_
-  type StackContainer = StackContainer_
+  type AccordionContainer = typings.dojo.dijit.layout.AccordionContainer_
+  type BorderContainer = typings.dojo.dijit.layout.BorderContainer_
+  type LayoutContainer = typings.dojo.dijit.layout.LayoutContainer_
+  type SplitContainer = typings.dojo.dijit.layout.SplitContainer_
+  type StackContainer = typings.dojo.dijit.layout.StackContainer_
 }

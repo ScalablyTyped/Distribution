@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Leftshift
+import typings.vexflow.AnonLeftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ class FretHandFinger protected () extends Modifier {
 @js.native
 object FretHandFinger extends js.Object {
   val CATEGORY: String = js.native
-  def format(nums: js.Array[FretHandFinger], state: Anon_Leftshift): Unit = js.native
+  def format(nums: js.Array[FretHandFinger], state: AnonLeftshift): Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.openjscad.OpenJsCad
 
-import typings.three.threeMod.Object3D
+import typings.three.mod.Object3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

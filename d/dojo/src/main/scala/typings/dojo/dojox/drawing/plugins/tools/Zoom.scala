@@ -1,6 +1,6 @@
 package typings.dojo.dojox.drawing.plugins.tools
 
-import typings.dojo.dojox.drawing.plugins._Plugin
+import typings.dojo.dojox.drawing.plugins.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ object Zoom extends js.Object {
     * @param options
     */
   @js.native
-  class Zoom100 protected () extends _Plugin {
+  class Zoom100 protected () extends Plugin {
     def this(options: js.Any) = this()
     /**
       *
@@ -59,7 +59,7 @@ object Zoom extends js.Object {
     * @param options
     */
   @js.native
-  class ZoomIn protected () extends _Plugin {
+  class ZoomIn protected () extends Plugin {
     def this(options: js.Any) = this()
     /**
       *
@@ -83,7 +83,7 @@ object Zoom extends js.Object {
     * @param options
     */
   @js.native
-  class ZoomOut protected () extends _Plugin {
+  class ZoomOut protected () extends Plugin {
     def this(options: js.Any) = this()
     /**
       *

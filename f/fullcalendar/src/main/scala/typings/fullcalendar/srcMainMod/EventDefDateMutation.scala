@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "EventDefDateMutation")
 @js.native
 class EventDefDateMutation ()
-  extends typings.fullcalendar.srcExportsMod.EventDefDateMutation
+  extends typings.fullcalendar.exportsMod.EventDefDateMutation
 
 /* static members */
 @JSImport("fullcalendar/src/main", "EventDefDateMutation")

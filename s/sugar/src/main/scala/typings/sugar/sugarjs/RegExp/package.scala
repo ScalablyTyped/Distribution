@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object RegExp {
-  type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugar.sugarjs.Object.ChainableBase[RawValue]
+  type Chainable[RawValue] = typings.sugar.sugarjs.RegExp.ChainableBase[RawValue] with typings.sugar.sugarjs.Object.ChainableBase[RawValue]
 }

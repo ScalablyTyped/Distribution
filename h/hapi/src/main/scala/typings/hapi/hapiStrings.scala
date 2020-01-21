@@ -1,16 +1,16 @@
 package typings.hapi
 
-import typings.hapi.hapiMod.Lifecycle._FailAction
-import typings.hapi.hapiMod.PayloadOutput
-import typings.hapi.hapiMod.ReferrerPolicy
-import typings.hapi.hapiMod.RequestEventType
-import typings.hapi.hapiMod.RouteOptionsAccessEntity
-import typings.hapi.hapiMod.RouteRequestExtType
-import typings.hapi.hapiMod.ServerExtType
-import typings.hapi.hapiMod.ServerRequestExtType
-import typings.hapi.hapiMod.Util.HTTP_METHODS
-import typings.hapi.hapiMod.Util.HTTP_METHODS_PARTIAL
-import typings.hapi.hapiMod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
+import typings.hapi.mod.Lifecycle._FailAction
+import typings.hapi.mod.PayloadOutput
+import typings.hapi.mod.ReferrerPolicy
+import typings.hapi.mod.RequestEventType
+import typings.hapi.mod.RouteOptionsAccessEntity
+import typings.hapi.mod.RouteRequestExtType
+import typings.hapi.mod.ServerExtType
+import typings.hapi.mod.ServerRequestExtType
+import typings.hapi.mod.Util.HTTP_METHODS
+import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL
+import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

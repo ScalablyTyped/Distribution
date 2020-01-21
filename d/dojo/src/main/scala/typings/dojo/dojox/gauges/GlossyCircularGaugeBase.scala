@@ -1,6 +1,6 @@
 package typings.dojo.dojox.gauges
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.color
 import typings.dojo.dojoStrings.font
 import typings.dojo.dojoStrings.majorTicksColor
@@ -222,7 +222,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_font(
     property: font,
@@ -232,7 +232,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_majorTicksColor(
     property: majorTicksColor,
@@ -242,7 +242,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_majorTicksInterval(
     property: majorTicksInterval,
@@ -252,7 +252,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_majorTicksLabelPlacement(
     property: majorTicksLabelPlacement,
@@ -262,7 +262,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minorTicksColor(
     property: minorTicksColor,
@@ -272,7 +272,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minorTicksInterval(
     property: minorTicksInterval,
@@ -282,7 +282,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_needleColor(
     property: needleColor,
@@ -292,7 +292,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_noChange(
     property: noChange,
@@ -302,7 +302,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scalePrecision(
     property: scalePrecision,
@@ -312,7 +312,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_textIndicatorColor(
     property: textIndicatorColor,
@@ -322,7 +322,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_textIndicatorFont(
     property: textIndicatorFont,
@@ -332,7 +332,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_textIndicatorPrecision(
     property: textIndicatorPrecision,
@@ -342,7 +342,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_textIndicatorVisible(
     property: textIndicatorVisible,
@@ -352,7 +352,7 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -362,6 +362,6 @@ class GlossyCircularGaugeBase () extends AnalogGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

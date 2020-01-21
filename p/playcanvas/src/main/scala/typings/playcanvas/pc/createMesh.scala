@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Colors
+import typings.playcanvas.AnonColors
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,6 +35,6 @@ object createMesh extends js.Object {
     *     });
     */
   def apply(device: GraphicsDevice, positions: js.Array[Number]): Mesh = js.native
-  def apply(device: GraphicsDevice, positions: js.Array[Number], opts: Anon_Colors): Mesh = js.native
+  def apply(device: GraphicsDevice, positions: js.Array[Number], opts: AnonColors): Mesh = js.native
 }
 

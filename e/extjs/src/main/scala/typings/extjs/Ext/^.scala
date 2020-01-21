@@ -24,9 +24,12 @@ object ^ extends js.Object {
   var ieVersion: Double = js.native
   var isChrome: Boolean = js.native
   var isFF10: Boolean = js.native
-  var isFF3_0: Boolean = js.native
-  var isFF3_5: Boolean = js.native
-  var isFF3_6: Boolean = js.native
+  @JSName("isFF3_0")
+  var isFF30: Boolean = js.native
+  @JSName("isFF3_5")
+  var isFF35: Boolean = js.native
+  @JSName("isFF3_6")
+  var isFF36: Boolean = js.native
   var isFF4: Boolean = js.native
   var isFF5: Boolean = js.native
   var isGecko: Boolean = js.native
@@ -51,14 +54,16 @@ object ^ extends js.Object {
   var isLinux: Boolean = js.native
   var isMac: Boolean = js.native
   var isOpera: Boolean = js.native
-  var isOpera10_5: Boolean = js.native
+  @JSName("isOpera10_5")
+  var isOpera105: Boolean = js.native
   var isReady: Boolean = js.native
   var isSafari: Boolean = js.native
   var isSafari2: Boolean = js.native
   var isSafari3: Boolean = js.native
   var isSafari4: Boolean = js.native
   var isSafari5: Boolean = js.native
-  var isSafari5_0: Boolean = js.native
+  @JSName("isSafari5_0")
+  var isSafari50: Boolean = js.native
   var isSecure: Boolean = js.native
   var isWebKit: Boolean = js.native
   var isWindows: Boolean = js.native

@@ -1,6 +1,6 @@
 package typings.sharepoint.SP
 
-import typings.microsoftDashAjax.Sys.StringBuilder
+import typings.microsoftAjax.Sys.StringBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

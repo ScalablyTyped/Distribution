@@ -1,7 +1,7 @@
 package typings.dojo.dojox
 
 import typings.dojo.dojo.dnd.Selector
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -166,7 +166,7 @@ object mdnd extends js.Object {
       *
       * @param e
       */
-    def checkAutoScroll(e: Event): Unit = js.native
+    def checkAutoScroll(e: Event_): Unit = js.native
     /**
       *
       */
@@ -259,7 +259,7 @@ object mdnd extends js.Object {
       * @param e
       * @param draggedNode               Optional
       */
-    def startDrag(e: Event, draggedNode: HTMLElement): Unit = js.native
+    def startDrag(e: Event_, draggedNode: HTMLElement): Unit = js.native
   }
   
   /**
@@ -301,13 +301,13 @@ object mdnd extends js.Object {
       *
       * @param e A DOM event
       */
-    def initOffsetDrag(e: Event): Unit = js.native
+    def initOffsetDrag(e: Event_): Unit = js.native
     /**
       * identify the type of target node associated with a DOM event.
       *
       * @param e a DOM event
       */
-    def isFormElement(e: Event): js.Any = js.native
+    def isFormElement(e: Event_): js.Any = js.native
     /**
       * Stub function.
       * Notes : border box model for size value, margin box model for coordinates
@@ -342,7 +342,7 @@ object mdnd extends js.Object {
       *
       * @param e A DOM event
       */
-    def onFirstMove(e: Event): Unit = js.native
+    def onFirstMove(e: Event_): Unit = js.native
     /**
       * Occurs when the user clicks on the handle node.
       * Skip the drag action if a specific node is targeted.
@@ -350,21 +350,21 @@ object mdnd extends js.Object {
       *
       * @param e a DOM event
       */
-    def onMouseDown(e: Event): Unit = js.native
+    def onMouseDown(e: Event_): Unit = js.native
     /**
       * Occurs when the user releases the mouse
       * Calls the onDragEnd method.
       *
       * @param e a DOM event
       */
-    def onMouseUp(e: Event): Unit = js.native
+    def onMouseUp(e: Event_): Unit = js.native
     /**
       * Occurs when the user moves the mouse.
       * Calls the onDrag method.
       *
       * @param e a DOM event
       */
-    def onMove(e: Event): Unit = js.native
+    def onMove(e: Event_): Unit = js.native
   }
   
   /**
@@ -499,7 +499,7 @@ object mdnd extends js.Object {
         *
         * @param e the DOM event
         */
-      def onMouseMove(e: Event): Unit = js.native
+      def onMouseMove(e: Event_): Unit = js.native
       /**
         * Subscribe to somes topics of dojo drag and drop.
         *
@@ -533,26 +533,26 @@ object mdnd extends js.Object {
         *
         * @param e The current Javascript Event.
         */
-      def onDragEnter(e: Event): Unit = js.native
+      def onDragEnter(e: Event_): Unit = js.native
       /**
         * Call when the mouse exit of a registered dojo target.
         *
         * @param e current javscript event
         */
-      def onDragExit(e: Event): Unit = js.native
+      def onDragExit(e: Event_): Unit = js.native
       /**
         * Called when an onmouseup event is loaded on a registered target dojo.
         *
         * @param e Event object.
         */
-      def onDrop(e: Event): Unit = js.native
+      def onDrop(e: Event_): Unit = js.native
       /**
         * Call when the mouse moving after an onStartDrag of AreaManger.
         * Check if the coordinates of the mouse is in a dojo target.
         *
         * @param e Event object.
         */
-      def onMouseMove(e: Event): Unit = js.native
+      def onMouseMove(e: Event_): Unit = js.native
       /**
         * Refresh the coordinates of all registered dojo target.
         *

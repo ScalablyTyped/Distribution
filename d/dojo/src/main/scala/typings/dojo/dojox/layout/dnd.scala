@@ -1,7 +1,7 @@
 package typings.dojo.dojox.layout
 
 import typings.dojo.dojo.dnd.Source
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -109,7 +109,7 @@ object dnd extends js.Object {
       *
       * @param e
       */
-    def setIndicatorPosition(e: Event): Boolean = js.native
+    def setIndicatorPosition(e: Event_): Boolean = js.native
   }
   
 }

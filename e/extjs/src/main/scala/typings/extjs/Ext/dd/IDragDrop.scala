@@ -3,7 +3,7 @@ package typings.extjs.Ext.dd
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IClass
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,7 +54,7 @@ trait IDragDrop extends IBase {
   /** [Method] Called when we are done dragging the object
   		* @param e Event the mouseup event
   		*/
-  var endDrag: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
+  var endDrag: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], Unit]] = js.undefined
   /** [Method] Returns a reference to the actual element to drag
   		* @returns HTMLElement the html element
   		*/
@@ -125,39 +125,39 @@ trait IDragDrop extends IBase {
   /** [Method] Abstract method called during the onMouseMove event while dragging an object
   		* @param e Event the mousemove event
   		*/
-  var onDrag: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
+  var onDrag: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], Unit]] = js.undefined
   /** [Method] Abstract method called when this item is dropped on another DragDrop obj
   		* @param e Event the mouseup event
   		* @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this was dropped on. In INTERSECT mode, an array of dd items this was dropped on.
   		*/
-  var onDragDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Abstract method called when this element fist begins hovering over another DragDrop obj
   		* @param e Event the mousemove event
   		* @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this is hovering over. In INTERSECT mode, an array of one or more dragdrop items being hovered over.
   		*/
-  var onDragEnter: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragEnter: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Abstract method called when we are no longer hovering over an element
   		* @param e Event the mousemove event
   		* @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this was hovering over. In INTERSECT mode, an array of dd items that the mouse is no longer over.
   		*/
-  var onDragOut: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragOut: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Abstract method called when this element is hovering over another DragDrop obj
   		* @param e Event the mousemove event
   		* @param id String/Ext.dd.DragDrop[] In POINT mode, the element id this is hovering over. In INTERSECT mode, an array of dd items being hovered over.
   		*/
-  var onDragOver: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDragOver: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any], Unit]] = js.undefined
   /** [Method] Abstract method called when this item is dropped on an area with no drop target
   		* @param e Event the mouseup event
   		*/
-  var onInvalidDrop: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
+  var onInvalidDrop: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], Unit]] = js.undefined
   /** [Method] Called when a drag drop obj gets a mousedown
   		* @param e Event the mousedown event
   		*/
-  var onMouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
+  var onMouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], Unit]] = js.undefined
   /** [Method] Called when a drag drop obj gets a mouseup
   		* @param e Event the mouseup event
   		*/
-  var onMouseUp: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Unit]] = js.undefined
+  var onMouseUp: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], Unit]] = js.undefined
   /** [Property] (Number[]) */
   var padding: js.UndefOr[Array] = js.undefined
   /** [Property] (Boolean) */
@@ -282,7 +282,7 @@ object IDragDrop {
     constrainTo: (/* constrainTo */ js.UndefOr[js.Any], /* pad */ js.UndefOr[js.Any], /* inContent */ js.UndefOr[Boolean]) => Unit = null,
     defaultPadding: js.Any = null,
     destroy: () => Unit = null,
-    endDrag: /* e */ js.UndefOr[Event] => Unit = null,
+    endDrag: /* e */ js.UndefOr[Event_] => Unit = null,
     extend: String = null,
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
@@ -306,14 +306,14 @@ object IDragDrop {
     mixins: js.Any = null,
     moveOnly: js.UndefOr[Boolean] = js.undefined,
     onAvailable: () => Unit = null,
-    onDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOut: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOver: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
+    onDrag: /* e */ js.UndefOr[Event_] => Unit = null,
+    onDragDrop: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragEnter: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOut: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOver: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onInvalidDrop: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseDown: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseUp: /* e */ js.UndefOr[Event_] => Unit = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
     removeFromGroup: /* sGroup */ js.UndefOr[String] => Unit = null,

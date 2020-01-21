@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swe-validation"
-version := "1.0-dt-20180409Z-8b0b94"
+version := "1.0-dt-20180409Z-ba1945"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

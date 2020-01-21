@@ -1,6 +1,6 @@
 package typings.dojo.dojo.main
 
-import typings.dojo.dojo._base.fx.Animation
+import typings.dojo.dojo.base.fx.Animation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

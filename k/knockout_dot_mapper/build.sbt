@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout_dot_mapper"
-version := "0.0-unknown-dt-20190322Z-ca3685"
+version := "0.0-unknown-dt-20190322Z-6b8546"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

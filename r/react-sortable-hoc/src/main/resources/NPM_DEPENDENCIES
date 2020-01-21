@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-sortable-hoc" : "1.10.1"
+      "react-sortable-hoc" : "1.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-sortable-hoc" : "1.10.1"
+      "react-sortable-hoc" : "1.11.0"
     }
   ],
   "compile-devDependencies" : [

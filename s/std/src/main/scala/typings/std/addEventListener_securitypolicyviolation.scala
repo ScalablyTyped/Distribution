@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 object addEventListener_securitypolicyviolation extends js.Object {
   def apply(
     `type`: securitypolicyviolation,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ SecurityPolicyViolationEvent, _]
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ SecurityPolicyViolationEvent, _]
   ): Unit = js.native
   def apply(
     `type`: securitypolicyviolation,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ SecurityPolicyViolationEvent, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ SecurityPolicyViolationEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   def apply(
     `type`: securitypolicyviolation,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ SecurityPolicyViolationEvent, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ SecurityPolicyViolationEvent, _],
     options: AddEventListenerOptions
   ): Unit = js.native
 }

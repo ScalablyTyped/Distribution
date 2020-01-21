@@ -1,13 +1,13 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.closeButton
 import typings.dojo.dojoStrings.closeButtonClass
 import typings.dojo.dojoStrings.left
 import typings.dojo.dojoStrings.modal
 import typings.dojo.dojoStrings.tabIndex
 import typings.dojo.dojoStrings.top
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -104,7 +104,7 @@ class SimpleDialog () extends Pane {
     *
     * @param e
     */
-  def onCloseButtonClick(e: Event): Unit = js.native
+  def onCloseButtonClick(e: Event_): Unit = js.native
   /**
     * Refreshes the layout of the dialog.
     *
@@ -141,7 +141,7 @@ class SimpleDialog () extends Pane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_closeButtonClass(
     property: closeButtonClass,
@@ -151,7 +151,7 @@ class SimpleDialog () extends Pane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_left(
     property: left,
@@ -161,7 +161,7 @@ class SimpleDialog () extends Pane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_modal(
     property: modal,
@@ -171,7 +171,7 @@ class SimpleDialog () extends Pane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tabIndex(
     property: tabIndex,
@@ -181,7 +181,7 @@ class SimpleDialog () extends Pane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_top(
     property: top,
@@ -191,6 +191,6 @@ class SimpleDialog () extends Pane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

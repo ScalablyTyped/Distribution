@@ -1,7 +1,7 @@
 package typings.giraffe.Giraffe
 
-import typings.backbone.backboneMod.EventsMixin
-import typings.jquery.JQuery
+import typings.backbone.mod.EventsMixin
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ object Contrib extends js.Object {
     extends EventsMixin
        with GiraffeObject {
     /* CompleteClass */
-    override var app: App = js.native
+    override var app: App_ = js.native
     /**
       * Faulty overgeneralization of Backbone.Events.on, for historical
       * reasons.
@@ -48,8 +48,8 @@ object Contrib extends js.Object {
     var renderOnChange: Boolean = js.native
     def addAll(): View[TModel] = js.native
     def addOne(model: Model): View[TModel] = js.native
-    def findElByIndex(index: Double): JQuery[HTMLElement] = js.native
-    def findElByModel(model: Model): JQuery[HTMLElement] = js.native
+    def findElByIndex(index: Double): JQuery_[HTMLElement] = js.native
+    def findElByModel(model: Model): JQuery_[HTMLElement] = js.native
     def findModelByEl(el: js.Any): Model = js.native
     def modelSerialize(): js.Any = js.native
     def removeByIndex(index: Double): View[TModel] = js.native

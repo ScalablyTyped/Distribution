@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RTCSsrcConflictEvent extends Event {
+trait RTCSsrcConflictEvent extends Event_ {
   val ssrc: Double = js.native
 }
 

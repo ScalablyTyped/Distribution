@@ -1,6 +1,6 @@
 package typings.mathjs
 
-import typings.mathjs.mathjsMod.MathJsFunctionName
+import typings.mathjs.mod.MathJsFunctionName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

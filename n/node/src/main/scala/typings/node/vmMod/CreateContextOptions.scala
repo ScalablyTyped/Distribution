@@ -1,12 +1,12 @@
 package typings.node.vmMod
 
-import typings.node.Anon_Strings
+import typings.node.AnonStrings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateContextOptions extends js.Object {
-  var codeGeneration: js.UndefOr[Anon_Strings] = js.undefined
+  var codeGeneration: js.UndefOr[AnonStrings] = js.undefined
   /**
     * Human-readable name of the newly created context.
     * @default 'VM Context i' Where i is an ascending numerical index of the created context.
@@ -24,7 +24,7 @@ trait CreateContextOptions extends js.Object {
 
 object CreateContextOptions {
   @scala.inline
-  def apply(codeGeneration: Anon_Strings = null, name: String = null, origin: String = null): CreateContextOptions = {
+  def apply(codeGeneration: AnonStrings = null, name: String = null, origin: String = null): CreateContextOptions = {
     val __obj = js.Dynamic.literal()
     if (codeGeneration != null) __obj.updateDynamic("codeGeneration")(codeGeneration.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

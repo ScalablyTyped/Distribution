@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_App
+import typings.playcanvas.AnonApp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.ScriptType")
 @js.native
 class ScriptType protected () extends EventHandler {
-  def this(args: Anon_App) = this()
+  def this(args: AnonApp) = this()
   /**
     * The {@link pc.Application} that the instance of this type belongs to.
     */

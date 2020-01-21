@@ -1,6 +1,6 @@
 package typings.dygraphs.dygraphs
 
-import typings.dygraphs.Anon_Label
+import typings.dygraphs.AnonLabel
 import typings.dygraphs.Dygraph
 import typings.std.Date
 import scala.scalajs.js
@@ -142,7 +142,7 @@ trait PerAxisOptions extends js.Object {
       /* opts */ js.Function1[/* name */ String, _], 
       /* dygraph */ Dygraph, 
       /* vals */ js.Array[Double], 
-      js.Array[Anon_Label]
+      js.Array[AnonLabel]
     ]
   ] = js.undefined
   /**
@@ -193,7 +193,7 @@ object PerAxisOptions {
     maxNumberWidth: Int | Double = null,
     pixelsPerLabel: Int | Double = null,
     sigFigs: Int | Double = null,
-    ticker: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[Anon_Label] = null,
+    ticker: (/* min */ Double, /* max */ Double, /* pixels */ Double, /* opts */ js.Function1[/* name */ String, _], /* dygraph */ Dygraph, /* vals */ js.Array[Double]) => js.Array[AnonLabel] = null,
     valueFormatter: (/* v */ Double, /* opts */ js.Function1[/* name */ String, _], /* seriesName */ String, /* dygraph */ Dygraph, /* row */ Double, /* col */ Double) => _ = null,
     valueRange: js.Array[Double] = null
   ): PerAxisOptions = {

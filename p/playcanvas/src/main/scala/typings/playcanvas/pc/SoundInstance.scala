@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Duration
+import typings.playcanvas.AnonDuration
 import typings.std.AudioBufferSourceNode
 import typings.std.AudioNode
 import scala.scalajs.js
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SoundInstance")
 @js.native
 class SoundInstance protected () extends EventHandler {
-  def this(manager: SoundManager, sound: Sound, options: Anon_Duration) = this()
+  def this(manager: SoundManager, sound: Sound, options: AnonDuration) = this()
   /**
     * Gets or sets the current time of the sound that is playing. If the value provided is bigger than the duration of the instance it will wrap from the beginning.
     */

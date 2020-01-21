@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Filename
+import typings.playcanvas.AnonFilename
 import typings.playcanvas.pc.callbacks.AssetReady
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,7 +60,7 @@ class Asset protected () extends EventHandler {
   /**
     * The file details or null if no file
     */
-  var file: Anon_Filename = js.native
+  var file: AnonFilename = js.native
   /**
     * The asset id
     */

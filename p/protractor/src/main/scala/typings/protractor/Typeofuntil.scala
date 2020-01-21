@@ -1,13 +1,13 @@
 package typings.protractor
 
-import typings.seleniumDashWebdriver.libByMod.ByHash
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Alert
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.By
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Condition
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Locator
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebDriver
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebElement
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebElementCondition
+import typings.seleniumWebdriver.byMod.ByHash
+import typings.seleniumWebdriver.mod.Alert
+import typings.seleniumWebdriver.mod.By
+import typings.seleniumWebdriver.mod.Condition
+import typings.seleniumWebdriver.mod.Locator
+import typings.seleniumWebdriver.mod.WebDriver
+import typings.seleniumWebdriver.mod.WebElement
+import typings.seleniumWebdriver.mod.WebElementCondition
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

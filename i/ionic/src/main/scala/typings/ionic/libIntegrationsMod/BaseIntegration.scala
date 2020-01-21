@@ -3,10 +3,10 @@ package typings.ionic.libIntegrationsMod
 import typings.ionic.definitionsMod.IIntegration
 import typings.ionic.definitionsMod.IntegrationName
 import typings.ionic.definitionsMod.ProjectIntegration
+import typings.ionic.integrationsCapacitorMod.Integration
 import typings.ionic.ionicStrings.capacitor
 import typings.ionic.ionicStrings.cordova
 import typings.ionic.ionicStrings.enterprise
-import typings.ionic.libIntegrationsCapacitorMod.Integration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +27,8 @@ object BaseIntegration extends js.Object {
   @JSName("createFromName")
   def createFromName_capacitor(deps: IntegrationDeps, name: capacitor): js.Promise[Integration] = js.native
   @JSName("createFromName")
-  def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.libIntegrationsCordovaMod.Integration] = js.native
+  def createFromName_cordova(deps: IntegrationDeps, name: cordova): js.Promise[typings.ionic.integrationsCordovaMod.Integration] = js.native
   @JSName("createFromName")
-  def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.libIntegrationsEnterpriseMod.Integration] = js.native
+  def createFromName_enterprise(deps: IntegrationDeps, name: enterprise): js.Promise[typings.ionic.integrationsEnterpriseMod.Integration] = js.native
 }
 

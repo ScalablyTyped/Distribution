@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceImageWMSMod.Options
-import typings.ol.sourceImageWMSMod.default
+import typings.ol.imageWMSMod.Options
+import typings.ol.imageWMSMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

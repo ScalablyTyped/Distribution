@@ -2,11 +2,11 @@ package typings.browserfs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.browserfs.distNodeBackendDropboxMod.DropboxFileSystem
-import typings.browserfs.distNodeBackendDropboxMod.DropboxFileSystemOptions
-import typings.browserfs.distNodeBackendDropboxMod.default
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.dropboxMod.DropboxFileSystem
+import typings.browserfs.dropboxMod.DropboxFileSystemOptions
+import typings.browserfs.dropboxMod.default
+import typings.browserfs.fileSystemMod.BFSCallback
+import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.dropboxjs.Dropbox.Client
 import scala.scalajs.js
 import scala.scalajs.js.`|`

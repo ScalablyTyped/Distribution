@@ -1,6 +1,6 @@
 package typings.graphql.typeMod
 
-import typings.graphql.typeDefinitionMod.GraphQLNullableType
+import typings.graphql.definitionMod.GraphQLNullableType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

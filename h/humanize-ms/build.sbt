@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "humanize-ms"
-version := "1.2-dt-20190305Z-e89301"
+version := "1.2-dt-20190305Z-731197"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

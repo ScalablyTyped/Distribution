@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait State extends js.Object {
   var extent: js.UndefOr[Extent] = js.undefined
-  var layer: typings.ol.layerBaseMod.default
+  var layer: typings.ol.baseMod.default
   var managed: Boolean
   var maxResolution: Double
   var maxZoom: Double
   var minResolution: Double
   var minZoom: Double
   var opacity: Double
-  var sourceState: typings.ol.sourceStateMod.State
+  var sourceState: typings.ol.stateMod.State
   var visible: Boolean
   var zIndex: Double
 }
@@ -22,14 +22,14 @@ trait State extends js.Object {
 object State {
   @scala.inline
   def apply(
-    layer: typings.ol.layerBaseMod.default,
+    layer: typings.ol.baseMod.default,
     managed: Boolean,
     maxResolution: Double,
     maxZoom: Double,
     minResolution: Double,
     minZoom: Double,
     opacity: Double,
-    sourceState: typings.ol.sourceStateMod.State,
+    sourceState: typings.ol.stateMod.State,
     visible: Boolean,
     zIndex: Double,
     extent: Extent = null

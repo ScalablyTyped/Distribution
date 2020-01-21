@@ -18,7 +18,9 @@ object rmdir extends js.Object {
     * Asynchronous rmdir(2) - delete a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def __promisify__(path: PathLike): js.Promise[Unit] = js.native
-  def __promisify__(path: PathLike, options: RmDirAsyncOptions): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike, options: RmDirAsyncOptions): js.Promise[Unit] = js.native
 }
 

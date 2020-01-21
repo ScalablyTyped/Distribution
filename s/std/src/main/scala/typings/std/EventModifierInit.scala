@@ -42,7 +42,7 @@ object EventModifierInit {
     modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
     shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    view: Window = null
+    view: Window_ = null
   ): EventModifierInit = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])

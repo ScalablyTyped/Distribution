@@ -1,10 +1,10 @@
 package typings.echarts.echarts.EChartOption.SeriesFunnel
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_EmphasisLength
-import typings.echarts.Anon_ItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonEmphasisLength
+import typings.echarts.AnonItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
+    AnonItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
   ] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
@@ -23,7 +23,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * The label configuration of a single data item.
     *
@@ -31,12 +31,12 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.label
     */
   var label: js.UndefOr[
-    Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
+    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
   ] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.labelLine
     */
-  var labelLine: js.UndefOr[Anon_EmphasisLength] = js.undefined
+  var labelLine: js.UndefOr[AnonEmphasisLength] = js.undefined
   /**
     * the name of data item.
     *
@@ -50,7 +50,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-funnel.data.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * data value.
     *
@@ -63,12 +63,12 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: Anon_ItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle = null,
-    labelLine: Anon_EmphasisLength = null,
+    emphasis: AnonItemStyleLabelLabelLineAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle = null,
+    labelLine: AnonEmphasisLength = null,
     name: String = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

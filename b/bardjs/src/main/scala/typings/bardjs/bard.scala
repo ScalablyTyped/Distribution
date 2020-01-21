@@ -1,8 +1,8 @@
 package typings.bardjs
 
-import typings.chai.Chai.AssertionError
-import typings.mocha.Mocha.IHookCallbackContext
-import typings.mocha.Mocha.IRunner
+import typings.chai.Chai_.AssertionError
+import typings.mocha.Mocha_.IHookCallbackContext
+import typings.mocha.Mocha_.IRunner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,28 +13,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("bard")
 @js.native
 object bard extends js.Object {
-  /**
-    *  Replaces the ngMock'ed $httpBackend with the real one from ng thus
-    *  restoring the ability to issue AJAX calls to the backend with $http.
-    *
-    *  Note that $q remains ngMocked so you must flush $http calls ($rootScope.$digest).
-    *  Use $rootScope.$apply() for this purpose.
-    *
-    *  Could restore $q with $qReal in which case don't need to flush.
-    */
-  @JSName("$httpBackend")
-  def $httpBackend(
-    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
-  ): js.Any = js.native
-  /**
-    *  Replaces the ngMock'ed $q with the real one from ng thus
-    *  obviating the need to flush $http and $q queues
-    *  at the expense of ability to control $q timing.
-    */
-  @JSName("$q")
-  def $q(
-    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
-  ): js.Any = js.native
   /**
     * Add names of globals to list of OK globals for this mocha spec
     * NB: Call this method ONLY if you're using mocha!
@@ -105,6 +83,19 @@ object bard extends js.Object {
     $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
   ): Unit = js.native
   /**
+    *  Replaces the ngMock'ed $httpBackend with the real one from ng thus
+    *  restoring the ability to issue AJAX calls to the backend with $http.
+    *
+    *  Note that $q remains ngMocked so you must flush $http calls ($rootScope.$digest).
+    *  Use $rootScope.$apply() for this purpose.
+    *
+    *  Could restore $q with $qReal in which case don't need to flush.
+    */
+  @JSName("$httpBackend")
+  def httpBackend(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): js.Any = js.native
+  /**
     * Inject selected services into the windows object during test
     * then remove them when test ends with an `afterEach`.
     *
@@ -154,6 +145,15 @@ object bard extends js.Object {
     * add mocked function to the service using the config value
     */
   def mockService(service: js.Any, config: js.Any): js.Any = js.native
+  /**
+    *  Replaces the ngMock'ed $q with the real one from ng thus
+    *  obviating the need to flush $http and $q queues
+    *  at the expense of ability to control $q timing.
+    */
+  @JSName("$q")
+  def q(
+    $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
+  ): js.Any = js.native
   /**
     * Replaces the accented characters of many European languages w/ unaccented chars
     * Use it in JavaScript string sorts where such characters may be encountered

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_differenceby"
-version := "4.8-dt-20190214Z-603cbd"
+version := "4.8-dt-20190214Z-0ee00d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

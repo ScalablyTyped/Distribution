@@ -101,7 +101,7 @@ trait MenuItemConstructorOptions extends js.Object {
     * If false, the menu item will be greyed out and unclickable.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[NativeImage | String] = js.undefined
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   /**
     * Unique within a single menu. If defined then it can be used as a reference to
     * this item by the position attribute.
@@ -155,7 +155,7 @@ object MenuItemConstructorOptions {
     checked: js.UndefOr[Boolean] = js.undefined,
     click: (/* menuItem */ MenuItem, /* browserWindow */ BrowserWindow, /* event */ KeyboardEvent) => Unit = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
-    icon: NativeImage | String = null,
+    icon: NativeImage_ | String = null,
     id: String = null,
     label: String = null,
     registerAccelerator: js.UndefOr[Boolean] = js.undefined,

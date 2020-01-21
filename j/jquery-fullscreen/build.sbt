@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-fullscreen"
-version := "1.1.5-dt-20190322Z-6dd45b"
+version := "1.1.5-dt-20190322Z-b25d35"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

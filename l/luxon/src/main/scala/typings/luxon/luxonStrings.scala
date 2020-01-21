@@ -1,15 +1,15 @@
 package typings.luxon
 
-import typings.luxon.luxonMod.CalendarSystem
-import typings.luxon.luxonMod.ConversionAccuracy
-import typings.luxon.luxonMod.DurationUnit
-import typings.luxon.luxonMod.HourCycle
-import typings.luxon.luxonMod.NumberUnitLength
-import typings.luxon.luxonMod.NumberingSystem
-import typings.luxon.luxonMod.StringUnitLength
-import typings.luxon.luxonMod.ToRelativeUnit
-import typings.luxon.luxonMod.UnitLength
-import typings.luxon.luxonMod.ZoneOffsetFormat
+import typings.luxon.mod.CalendarSystem
+import typings.luxon.mod.ConversionAccuracy
+import typings.luxon.mod.DurationUnit
+import typings.luxon.mod.HourCycle
+import typings.luxon.mod.NumberUnitLength
+import typings.luxon.mod.NumberingSystem
+import typings.luxon.mod.StringUnitLength
+import typings.luxon.mod.ToRelativeUnit
+import typings.luxon.mod.UnitLength
+import typings.luxon.mod.ZoneOffsetFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

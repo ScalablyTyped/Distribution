@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dijit.form.TimeTextBox")
 @js.native
-class TimeTextBox () extends _DateTimeTextBox {
+class TimeTextBox () extends DateTimeTextBox {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

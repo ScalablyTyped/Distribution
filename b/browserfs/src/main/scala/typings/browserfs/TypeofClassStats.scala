@@ -5,9 +5,9 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
 import org.scalablytyped.runtime.Instantiable6
-import typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod.FileType
-import typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod.Stats
-import typings.browserfs.distNodeCoreNodeUnderscoreFsUnderscoreStatsMod.default
+import typings.browserfs.nodeFsStatsMod.FileType
+import typings.browserfs.nodeFsStatsMod.Stats
+import typings.browserfs.nodeFsStatsMod.default
 import typings.node.Buffer
 import typings.std.Date
 import scala.scalajs.js

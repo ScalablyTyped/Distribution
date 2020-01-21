@@ -13,21 +13,21 @@ trait MediaKeySession extends EventTarget {
   val closed: js.Promise[Unit] = js.native
   val expiration: Double = js.native
   val keyStatuses: MediaKeyStatusMap = js.native
-  var onkeystatuseschange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onkeystatuseschange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | Null = js.native
   val sessionId: java.lang.String = js.native
   @JSName("addEventListener")
-  def addEventListener_keystatuseschange(`type`: keystatuseschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_keystatuseschange(`type`: keystatuseschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keystatuseschange(
     `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_keystatuseschange(
     `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -49,17 +49,17 @@ trait MediaKeySession extends EventTarget {
   def load(sessionId: java.lang.String): js.Promise[scala.Boolean] = js.native
   def remove(): js.Promise[Unit] = js.native
   @JSName("removeEventListener")
-  def removeEventListener_keystatuseschange(`type`: keystatuseschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_keystatuseschange(`type`: keystatuseschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keystatuseschange(
     `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_keystatuseschange(
     `type`: keystatuseschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

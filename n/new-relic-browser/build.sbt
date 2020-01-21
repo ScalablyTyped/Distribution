@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "new-relic-browser"
-version := "0.1072-dt-20190213Z-ec13e2"
+version := "0.1072-dt-20190213Z-b13cd1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

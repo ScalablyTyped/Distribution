@@ -1,6 +1,6 @@
 package typings.sharepoint.SP
 
-import typings.sharepoint.Anon_FsObjType
+import typings.sharepoint.AnonFsObjType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object ListOperation extends js.Object {
   @js.native
   object Selection extends js.Object {
     def deselectAllListItems(iid: String): Unit = js.native
-    def getSelectedItems(): js.Array[Anon_FsObjType] = js.native
+    def getSelectedItems(): js.Array[AnonFsObjType] = js.native
     def getSelectedList(): String = js.native
     def getSelectedView(): String = js.native
     def navigateUp(viewId: String): Unit = js.native

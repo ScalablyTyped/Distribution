@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColor
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ColorCurvenessOpacityShadowBlur
-import typings.echarts.Anon_EmphasisLineStyle
-import typings.echarts.Anon_ItemStyleLabelLineStyle
+import typings.echarts.AnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonColorCurvenessOpacityShadowBlur
+import typings.echarts.AnonEmphasisLineStyle
+import typings.echarts.AnonItemStyleLabelLineStyle
 import typings.echarts.echarts.EChartOption.SeriesSankey.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,7 +43,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-sankey
   */
-@JSName("SeriesSankey")
 trait SeriesSankey_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -215,7 +214,7 @@ trait SeriesSankey_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-sankey.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelLineStyle] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleLabelLineStyle] = js.undefined
   /**
     * Support when mouse hovering over a node or an edge, the adjacent
     * nodes and edges are also highlighted.
@@ -262,14 +261,14 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * `label` describes the text label style in each rectangular node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * The iterations of layout, which is used to continuously optimize
     * the positions of nodes in graph, decreasing the overlapping between
@@ -312,7 +311,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonColorCurvenessOpacityShadowBlur] = js.undefined
   /**
     * The links between nodes.
     * **Notes: The Sankey diagram theoretically only supports Directed
@@ -324,7 +323,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.links
     */
-  var links: js.UndefOr[Anon_EmphasisLineStyle] = js.undefined
+  var links: js.UndefOr[AnonEmphasisLineStyle] = js.undefined
   /**
     * The gap between any two rectangles in each column from the graph.
     *
@@ -390,7 +389,7 @@ trait SeriesSankey_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * Distance between sankey component and the top side of the container.
     *
@@ -470,23 +469,23 @@ object SeriesSankey_ {
     data: js.Array[(js.Array[Double | DataObject]) | DataObject | Double] = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     edges: js.Array[_] = null,
-    emphasis: Anon_ItemStyleLabelLineStyle = null,
+    emphasis: AnonItemStyleLabelLineStyle = null,
     focusNodeAdjacency: Boolean | String = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColor = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColor = null,
     layoutIterations: Int | Double = null,
     left: Double | String = null,
-    lineStyle: Anon_ColorCurvenessOpacityShadowBlur = null,
-    links: Anon_EmphasisLineStyle = null,
+    lineStyle: AnonColorCurvenessOpacityShadowBlur = null,
+    links: AnonEmphasisLineStyle = null,
     nodeGap: Int | Double = null,
     nodeWidth: Int | Double = null,
     nodes: js.Array[_] = null,
     orient: String = null,
     right: Double | String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,

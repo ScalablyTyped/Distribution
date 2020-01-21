@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
 import typings.echarts.echarts.EChartOption.SeriesThemeRiver.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-themeRiver
   */
-@JSName("SeriesThemeRiver")
 trait SeriesThemeRiver_ extends js.Object {
   /**
     * Distance between thmemRiver component and the bottom side of
@@ -208,7 +207,7 @@ trait SeriesThemeRiver_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
+    AnonItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
   ] = js.undefined
   /**
     * Height of thmemRiver component.
@@ -236,7 +235,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * `label` describes style of text labels with which each ribbon-shape
     * river branch corresponds in theme river.
@@ -244,7 +243,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.label
     */
-  var label: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily] = js.undefined
+  var label: js.UndefOr[AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily] = js.undefined
   /**
     * Distance between thmemRiver component and the left side of the
     * container.
@@ -289,7 +288,7 @@ trait SeriesThemeRiver_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-themeRiver.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * Distance between thmemRiver component and the top side of the
     * container.
@@ -364,15 +363,15 @@ object SeriesThemeRiver_ {
     data: js.Array[
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ] = null,
-    emphasis: Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
+    emphasis: AnonItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
     left: Double | String = null,
     right: Double | String = null,
     singleAxisIndex: Int | Double = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,

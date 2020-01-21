@@ -1,6 +1,6 @@
 package typings.dojo.dijit.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.gutters
 import typings.dojo.dojoStrings.liveSplitters
 import typings.dojo.dojoStrings.persist
@@ -81,7 +81,7 @@ class BorderContainer_ () extends LayoutContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_liveSplitters(
     property: liveSplitters,
@@ -91,7 +91,7 @@ class BorderContainer_ () extends LayoutContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_persist(
     property: persist,
@@ -101,6 +101,6 @@ class BorderContainer_ () extends LayoutContainer {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

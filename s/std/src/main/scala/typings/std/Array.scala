@@ -28,7 +28,7 @@ trait Array[T] extends /* n */ NumberDictionary[T] {
     * when they will be absent when used in a 'with' statement.
     */
   @JSName(scala.scalajs.js.Symbol.unscopables)
-  var unscopables: js.Function0[Anon_CopyWithin] = js.native
+  var unscopables: js.Function0[AnonCopyWithin] = js.native
   /**
     * Combines two or more arrays.
     * @param items Additional items to add to the end of array1.

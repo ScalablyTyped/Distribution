@@ -2,14 +2,14 @@ package typings.mongoose
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
-import typings.mongodb.mongodbMod.ClientSession
-import typings.mongodb.mongodbMod.MongoError
-import typings.mongodb.mongodbMod.SessionOptions
-import typings.mongoose.mongooseMod.Connection
-import typings.mongoose.mongooseMod.ConnectionOptions
-import typings.mongoose.mongooseMod.Document
-import typings.mongoose.mongooseMod.Model
-import typings.mongoose.mongooseMod.Mongoose
+import typings.mongodb.mod.ClientSession
+import typings.mongodb.mod.MongoError
+import typings.mongodb.mod.SessionOptions
+import typings.mongoose.mod.ConnectionOptions
+import typings.mongoose.mod.Connection_
+import typings.mongoose.mod.Document
+import typings.mongoose.mod.Model_
+import typings.mongoose.mod.Mongoose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 trait Typeofmongoose extends js.Object {
   var DocumentProvider: js.Any = js.native
   val Error: js.Any = js.native
-  var Model: typings.mongoose.mongooseMod.Model[_, js.Object] = js.native
+  var Model: Model_[_, js.Object] = js.native
   var Mongoose: Instantiable1[
     /* args (repeated) */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: typeof mongoose */ js.Any
@@ -29,43 +29,33 @@ trait Typeofmongoose extends js.Object {
   // Interfaces specific to schema type options should be scoped in this namespace
   val SchemaTypeOpts: js.Any = js.native
   val Types: js.Any = js.native
-  var connection: Connection = js.native
-  var connections: js.Array[Connection] = js.native
-  var models: StringDictionary[Model[_, js.Object]] = js.native
+  var connection: Connection_ = js.native
+  var connections: js.Array[Connection_] = js.native
+  var models: StringDictionary[Model_[_, js.Object]] = js.native
   var version: String = js.native
   def connect(uris: String): js.Promise[Mongoose] = js.native
   def connect(uris: String, callback: js.Function1[/* err */ MongoError, Unit]): js.Promise[Mongoose] = js.native
   def connect(uris: String, options: ConnectionOptions): js.Promise[Mongoose] = js.native
   def connect(uris: String, options: ConnectionOptions, callback: js.Function1[/* err */ MongoError, Unit]): js.Promise[Mongoose] = js.native
-  def createConnection(): Connection = js.native
-  def createConnection(uri: String): Connection with Anon_Catch = js.native
-  def createConnection(uri: String, options: ConnectionOptions): Connection with Anon_Catch = js.native
+  def createConnection(): Connection_ = js.native
+  def createConnection(uri: String): Connection_ with AnonCatch = js.native
+  def createConnection(uri: String, options: ConnectionOptions): Connection_ with AnonCatch = js.native
   def disconnect(): js.Promise[Unit] = js.native
   def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def get(key: String): js.Any = js.native
-  def model[T /* <: Document */](name: String): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](name: String, schema: typings.mongoose.mongooseMod.Schema[_]): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](name: String, schema: typings.mongoose.mongooseMod.Schema[_], collection: String): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](
-    name: String,
-    schema: typings.mongoose.mongooseMod.Schema[_],
-    collection: String,
-    skipInit: Boolean
-  ): Model[T, js.Object] = js.native
+  def model[T /* <: Document */](name: String): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_]): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String): Model_[T, js.Object] = js.native
+  def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String, skipInit: Boolean): Model_[T, js.Object] = js.native
   def modelNames(): js.Array[String] = js.native
   @JSName("model")
-  def model_T_DocumentU_ModelTObject_U[T /* <: Document */, U /* <: Model[T, js.Object] */](name: String): U = js.native
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String): U = js.native
   @JSName("model")
-  def model_T_DocumentU_ModelTObject_U[T /* <: Document */, U /* <: Model[T, js.Object] */](name: String, schema: typings.mongoose.mongooseMod.Schema[_]): U = js.native
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: typings.mongoose.mod.Schema[_]): U = js.native
   @JSName("model")
-  def model_T_DocumentU_ModelTObject_U[T /* <: Document */, U /* <: Model[T, js.Object] */](name: String, schema: typings.mongoose.mongooseMod.Schema[_], collection: String): U = js.native
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String): U = js.native
   @JSName("model")
-  def model_T_DocumentU_ModelTObject_U[T /* <: Document */, U /* <: Model[T, js.Object] */](
-    name: String,
-    schema: typings.mongoose.mongooseMod.Schema[_],
-    collection: String,
-    skipInit: Boolean
-  ): U = js.native
+  def model_T_DocumentU_Model_TObject_U[T /* <: Document */, U /* <: Model_[T, js.Object] */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String, skipInit: Boolean): U = js.native
   def plugin(fn: js.Function): /* import warning: importer.ImportType#apply Failed type conversion: typeof mongoose */ js.Any = js.native
   def plugin[T](fn: js.Function, opts: T): /* import warning: importer.ImportType#apply Failed type conversion: typeof mongoose */ js.Any = js.native
   def pluralize(): js.Function1[/* str */ String, String] = js.native

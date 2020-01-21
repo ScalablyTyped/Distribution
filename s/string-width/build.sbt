@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "string-width"
-version := "4.2.0-12f758"
+version := "4.2.0-5cdb5d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

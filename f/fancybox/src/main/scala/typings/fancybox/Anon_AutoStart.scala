@@ -19,16 +19,3 @@ object Anon_AutoStart {
   }
 }
 
-trait Anon_Autostart extends js.Object {
-  var autostart: Boolean
-}
-
-object Anon_Autostart {
-  @scala.inline
-  def apply(autostart: Boolean): Anon_Autostart = {
-    val __obj = js.Dynamic.literal(autostart = autostart.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Anon_Autostart]
-  }
-}
-

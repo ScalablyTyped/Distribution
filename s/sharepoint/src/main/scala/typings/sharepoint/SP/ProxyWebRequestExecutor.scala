@@ -1,6 +1,6 @@
 package typings.sharepoint.SP
 
-import typings.microsoftDashAjax.Sys.Net.WebRequestExecutor
+import typings.microsoftAjax.Sys.Net.WebRequestExecutor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

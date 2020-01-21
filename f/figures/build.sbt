@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "figures"
-version := "3.1.0-ba7226"
+version := "3.1.0-bd528d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

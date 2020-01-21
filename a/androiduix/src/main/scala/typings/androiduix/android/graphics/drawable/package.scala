@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object drawable {
-  type Drawable = Drawable_
+  type Drawable = typings.androiduix.android.graphics.drawable.Drawable_
 }

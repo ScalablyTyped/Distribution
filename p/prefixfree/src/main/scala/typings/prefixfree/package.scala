@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object prefixfree {
-  type PrefixFree = PrefixFree_
+  type PrefixFree = typings.prefixfree.PrefixFree_
 }

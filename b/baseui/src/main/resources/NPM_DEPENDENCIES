@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "baseui" : "9.40.0"
+      "baseui" : "9.43.0"
     }
   ],
   "test-dependencies" : [
     {
-      "baseui" : "9.40.0"
+      "baseui" : "9.43.0"
     }
   ],
   "compile-devDependencies" : [

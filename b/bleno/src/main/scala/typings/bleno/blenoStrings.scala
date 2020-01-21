@@ -1,7 +1,7 @@
 package typings.bleno
 
-import typings.bleno.blenoMod.Property
-import typings.bleno.blenoMod.State
+import typings.bleno.mod.Property
+import typings.bleno.mod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

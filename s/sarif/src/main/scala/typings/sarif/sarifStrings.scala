@@ -1,13 +1,13 @@
 package typings.sarif
 
-import typings.sarif.sarifMod.Artifact.roles
-import typings.sarif.sarifMod.ReportingConfiguration.level
-import typings.sarif.sarifMod.Result.baselineState
-import typings.sarif.sarifMod.Run.columnKind
-import typings.sarif.sarifMod.Suppression.kind
-import typings.sarif.sarifMod.Suppression.state
-import typings.sarif.sarifMod.ThreadFlowLocation.importance
-import typings.sarif.sarifMod.ToolComponent.contents
+import typings.sarif.mod.Artifact.roles
+import typings.sarif.mod.ReportingConfiguration.level
+import typings.sarif.mod.Result.baselineState
+import typings.sarif.mod.Run.columnKind
+import typings.sarif.mod.Suppression.kind
+import typings.sarif.mod.Suppression.state
+import typings.sarif.mod.ThreadFlowLocation.importance
+import typings.sarif.mod.ToolComponent.contents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,8 +46,8 @@ object sarifStrings {
   @js.native
   sealed trait error
     extends level
-       with typings.sarif.sarifMod.Notification.level
-       with typings.sarif.sarifMod.Result.level
+       with typings.sarif.mod.Notification.level
+       with typings.sarif.mod.Result.level
   
   @js.native
   sealed trait essential extends importance
@@ -60,7 +60,7 @@ object sarifStrings {
   
   @js.native
   sealed trait fail
-    extends typings.sarif.sarifMod.Result.kind
+    extends typings.sarif.mod.Result.kind
   
   @js.native
   sealed trait important extends importance
@@ -70,7 +70,7 @@ object sarifStrings {
   
   @js.native
   sealed trait informational
-    extends typings.sarif.sarifMod.Result.kind
+    extends typings.sarif.mod.Result.kind
   
   @js.native
   sealed trait localizedData extends contents
@@ -90,26 +90,26 @@ object sarifStrings {
   @js.native
   sealed trait none
     extends level
-       with typings.sarif.sarifMod.Notification.level
-       with typings.sarif.sarifMod.Result.level
+       with typings.sarif.mod.Notification.level
+       with typings.sarif.mod.Result.level
   
   @js.native
   sealed trait notApplicable
-    extends typings.sarif.sarifMod.Result.kind
+    extends typings.sarif.mod.Result.kind
   
   @js.native
   sealed trait note
     extends level
-       with typings.sarif.sarifMod.Notification.level
-       with typings.sarif.sarifMod.Result.level
+       with typings.sarif.mod.Notification.level
+       with typings.sarif.mod.Result.level
   
   @js.native
   sealed trait open
-    extends typings.sarif.sarifMod.Result.kind
+    extends typings.sarif.mod.Result.kind
   
   @js.native
   sealed trait pass
-    extends typings.sarif.sarifMod.Result.kind
+    extends typings.sarif.mod.Result.kind
   
   @js.native
   sealed trait policy extends roles
@@ -131,7 +131,7 @@ object sarifStrings {
   
   @js.native
   sealed trait review
-    extends typings.sarif.sarifMod.Result.kind
+    extends typings.sarif.mod.Result.kind
   
   @js.native
   sealed trait standardStream extends roles
@@ -178,8 +178,8 @@ object sarifStrings {
   @js.native
   sealed trait warning
     extends level
-       with typings.sarif.sarifMod.Notification.level
-       with typings.sarif.sarifMod.Result.level
+       with typings.sarif.mod.Notification.level
+       with typings.sarif.mod.Result.level
   
   @scala.inline
   def `2Dot1Dot0`: `2Dot1Dot0` = "2.1.0".asInstanceOf[`2Dot1Dot0`]

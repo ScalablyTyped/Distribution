@@ -1,7 +1,7 @@
 package typings.valerie
 
 import org.scalablytyped.runtime.TopLevel
-import typings.valerie.Valerie.Static
+import typings.valerie.Valerie_.Static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

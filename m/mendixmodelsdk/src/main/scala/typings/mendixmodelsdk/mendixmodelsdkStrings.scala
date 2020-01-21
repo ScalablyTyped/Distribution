@@ -1,12 +1,12 @@
 package typings.mendixmodelsdk
 
-import typings.mendixmodelsdk.distSdkInternalDeltasTransactionManagerMod.TransactionType
-import typings.mendixmodelsdk.distSdkInternalStructuresMod.StructureState
-import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.CannotFixAppState
-import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.IUpdateAppJobStatus
-import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.LockType
-import typings.mendixmodelsdk.distSdkInternalTransportInterfacesMod.SuccessAppState
-import typings.mendixmodelsdk.distSdkInternalTransportationMod.RequestMethod
+import typings.mendixmodelsdk.structuresMod.StructureState
+import typings.mendixmodelsdk.transactionManagerMod.TransactionType
+import typings.mendixmodelsdk.transportInterfacesMod.CannotFixAppState
+import typings.mendixmodelsdk.transportInterfacesMod.IUpdateAppJobStatus
+import typings.mendixmodelsdk.transportInterfacesMod.LockType
+import typings.mendixmodelsdk.transportInterfacesMod.SuccessAppState
+import typings.mendixmodelsdk.transportationMod.RequestMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

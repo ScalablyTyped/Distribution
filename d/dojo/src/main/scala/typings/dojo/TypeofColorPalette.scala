@@ -1,7 +1,7 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.Instantiable4
-import typings.dojo.dijit.ColorPalette._Color
+import typings.dojo.dijit.ColorPalette.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,19 +18,13 @@ trait TypeofColorPalette extends js.Object {
     * @param col     
     * @param title Localized name of the color.     
     */
-  var _Color: Instantiable4[
-    /* alias */ String, 
-    /* row */ Double, 
-    /* col */ js.Any, 
-    /* title */ String, 
-    typings.dojo.dijit.ColorPalette._Color
-  ]
+  var _Color: Instantiable4[/* alias */ String, /* row */ Double, /* col */ js.Any, /* title */ String, Color]
 }
 
 object TypeofColorPalette {
   @scala.inline
   def apply(
-    _Color: Instantiable4[/* alias */ String, /* row */ Double, /* col */ js.Any, /* title */ String, _Color]
+    _Color: Instantiable4[/* alias */ String, /* row */ Double, /* col */ js.Any, /* title */ String, Color]
   ): TypeofColorPalette = {
     val __obj = js.Dynamic.literal(_Color = _Color.asInstanceOf[js.Any])
   

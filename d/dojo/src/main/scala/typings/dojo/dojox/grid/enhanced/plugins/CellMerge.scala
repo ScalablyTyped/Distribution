@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid.enhanced.plugins
 
-import typings.dojo.dojox.grid.enhanced._Plugin
+import typings.dojo.dojox.grid.enhanced.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.grid.enhanced.plugins.CellMerge")
 @js.native
-class CellMerge protected () extends _Plugin {
+class CellMerge protected () extends Plugin {
   def this(grid: js.Any, args: js.Any) = this()
   /**
     * Get all records of currently merged cells.

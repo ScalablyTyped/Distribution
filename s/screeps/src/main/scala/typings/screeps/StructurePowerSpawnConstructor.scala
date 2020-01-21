@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait StructurePowerSpawnConstructor extends _ConstructorById[StructurePowerSpawn]
+trait StructurePowerSpawnConstructor extends ConstructorById[StructurePowerSpawn]
 

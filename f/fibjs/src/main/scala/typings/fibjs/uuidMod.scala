@@ -21,10 +21,10 @@ object uuidMod extends js.Object {
   val URL: `1` = js.native
   val X509: `3` = js.native
   val hostID: Double = js.native
-  def md5(ns: Double, name: String): Class_Buffer = js.native
-  def node(): Class_Buffer = js.native
-  def random(): Class_Buffer = js.native
-  def sha1(ns: Double, name: String): Class_Buffer = js.native
-  def snowflake(): Class_Buffer = js.native
+  def md5(ns: Double, name: String): ClassBuffer = js.native
+  def node(): ClassBuffer = js.native
+  def random(): ClassBuffer = js.native
+  def sha1(ns: Double, name: String): ClassBuffer = js.native
+  def snowflake(): ClassBuffer = js.native
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   *
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.mobile._ExecScriptMixin because Inheritance from two classes. Inlined execScript */ @JSGlobal("dojox.mobile.dh.HtmlScriptContentHandler")
+- typings.dojo.dojox.mobile.ExecScriptMixin because Inheritance from two classes. Inlined execScript */ @JSGlobal("dojox.mobile.dh.HtmlScriptContentHandler")
 @js.native
 class HtmlScriptContentHandler () extends HtmlContentHandler {
   /**

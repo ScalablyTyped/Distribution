@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.allowNestedScrolls
 import typings.dojo.dojoStrings.appBars
 import typings.dojo.dojoStrings.constraint
@@ -22,7 +22,7 @@ import typings.dojo.dojoStrings.scrollableParams
 import typings.dojo.dojoStrings.threshold
 import typings.dojo.dojoStrings.touchNode
 import typings.dojo.dojoStrings.weight
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation._
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dojox.mobile.scrollable because Inheritance from two classes. Inlined 
-- typings.dojo.dojox.mobile._ScrollableMixin because Inheritance from two classes. Inlined allowNestedScrolls, appBars, constraint, dirLock, disableFlashScrollBar, fadeScrollBar, fixedFooter, fixedFooterHeight, fixedHeader, fixedHeaderHeight, height, isLocalFooter, propagatable, scrollableParams, scrollBar, scrollDir, scrollType, threshold, touchNode, weight, abort, addCover, adjustDestination, calcScrollBarPos, calcSpeed, checkFixedBar, cleanup, createMask, destroy, findAppBars, findDisp, flashScrollBar, getDim, getPos, getScreenSize, getSpeed, hideScrollBar, init, isFormElement, isTopLevel, makeTranslateStr, removeCover, resetScrollBar, resize, scrollIntoView, scrollScrollBarTo, scrollTo, setKeyframes, setSelectable, showScrollBar, slideScrollBarTo, slideTo, startup, stopAnimation, onAfterScroll, onBeforeScroll, onFlickAnimationEnd, onFlickAnimationStart, onTouchEnd, onTouchMove, onTouchStart */ @JSGlobal("dojox.mobile.ScrollableView")
+- typings.dojo.dojox.mobile.ScrollableMixin because Inheritance from two classes. Inlined allowNestedScrolls, appBars, constraint, dirLock, disableFlashScrollBar, fadeScrollBar, fixedFooter, fixedFooterHeight, fixedHeader, fixedHeaderHeight, height, isLocalFooter, propagatable, scrollableParams, scrollBar, scrollDir, scrollType, threshold, touchNode, weight, abort, addCover, adjustDestination, calcScrollBarPos, calcSpeed, checkFixedBar, cleanup, createMask, destroy, findAppBars, findDisp, flashScrollBar, getDim, getPos, getScreenSize, getSpeed, hideScrollBar, init, isFormElement, isTopLevel, makeTranslateStr, removeCover, resetScrollBar, resize, scrollIntoView, scrollScrollBarTo, scrollTo, setKeyframes, setSelectable, showScrollBar, slideScrollBarTo, slideTo, startup, stopAnimation, onAfterScroll, onBeforeScroll, onFlickAnimationEnd, onFlickAnimationStart, onTouchEnd, onTouchMove, onTouchStart */ @JSGlobal("dojox.mobile.ScrollableView")
 @js.native
 class ScrollableView () extends View {
   /**
@@ -177,7 +177,7 @@ class ScrollableView () extends View {
     *
     * @param widget
     */
-  def addFixedBar(widget: _WidgetBase): Unit = js.native
+  def addFixedBar(widget: WidgetBase): Unit = js.native
   /**
     * A stub function to be overridden by subclasses.
     * This function is called from onTouchEnd(). The purpose is to give its
@@ -341,7 +341,7 @@ class ScrollableView () extends View {
     *
     */
   def isTopLevel(): Boolean = js.native
-  def isTopLevel(e: Event): Boolean = js.native
+  def isTopLevel(e: Event_): Boolean = js.native
   /**
     * Constructs a string value that is passed to the -webkit-transform property.
     * Return value example: "translate3d(0px,-8px,0px)"
@@ -354,14 +354,14 @@ class ScrollableView () extends View {
     *
     * @param e the scroll event, that contains the following attributes:x (x coordinate of the scroll destination),y (y coordinate of the scroll destination),beforeTop (a boolean that is true if the scroll detination is before the top of the scrollable),beforeTopHeight (the number of pixels before the top of the scrollable for the scroll destination),afterBottom (a boolean that is true if the scroll destination is after the bottom of the scrollable),afterBottomHeight (the number of pixels after the bottom of the scrollable for the scroll destination)
     */
-  def onAfterScroll(e: Event): Unit = js.native
+  def onAfterScroll(e: Event_): Unit = js.native
   /**
     * called before a scroll is initiated. If this method returns false,
     * the scroll is canceled.
     *
     * @param e the scroll event, that contains the following attributes:x (x coordinate of the scroll destination),y (y coordinate of the scroll destination),beforeTop (a boolean that is true if the scroll detination is before the top of the scrollable),beforeTopHeight (the number of pixels before the top of the scrollable for the scroll destination),afterBottom (a boolean that is true if the scroll destination is after the bottom of the scrollable),afterBottomHeight (the number of pixels after the bottom of the scrollable for the scroll destination)
     */
-  def onBeforeScroll(e: Event): Boolean = js.native
+  def onBeforeScroll(e: Event_): Boolean = js.native
   /**
     *
     * @param e
@@ -377,7 +377,7 @@ class ScrollableView () extends View {
     *
     * @param e
     */
-  def onTouchEnd(e: Event): Unit = js.native
+  def onTouchEnd(e: Event_): Unit = js.native
   /**
     * User-defined function to handle touchMove events.
     *
@@ -537,7 +537,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_appBars(
     property: appBars,
@@ -547,7 +547,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_constraint(
     property: constraint,
@@ -557,7 +557,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dirLock(
     property: dirLock,
@@ -567,7 +567,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_disableFlashScrollBar(
     property: disableFlashScrollBar,
@@ -577,7 +577,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fadeScrollBar(
     property: fadeScrollBar,
@@ -587,7 +587,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedFooter(
     property: fixedFooter,
@@ -597,7 +597,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedFooterHeight(
     property: fixedFooterHeight,
@@ -607,7 +607,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedHeader(
     property: fixedHeader,
@@ -617,7 +617,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedHeaderHeight(
     property: fixedHeaderHeight,
@@ -627,7 +627,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_height(
     property: height,
@@ -637,7 +637,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isLocalFooter(
     property: isLocalFooter,
@@ -647,7 +647,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_propagatable(
     property: propagatable,
@@ -657,7 +657,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollBar(
     property: scrollBar,
@@ -667,7 +667,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollDir(
     property: scrollDir,
@@ -677,7 +677,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollType(
     property: scrollType,
@@ -687,7 +687,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollableParams(
     property: scrollableParams,
@@ -697,7 +697,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_threshold(
     property: threshold,
@@ -707,7 +707,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_touchNode(
     property: touchNode,
@@ -717,7 +717,7 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[HTMLElement], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_weight(
     property: weight,
@@ -727,6 +727,6 @@ class ScrollableView () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

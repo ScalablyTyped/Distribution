@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Data {
-  type OnPagingInfoChangedEventData = PagingOptions
+  type OnPagingInfoChangedEventData = typings.slickgrid.Slick.Data.PagingOptions
 }

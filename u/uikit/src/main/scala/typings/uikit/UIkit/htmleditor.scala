@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.htmleditor")
 @js.native
-object htmleditor extends TopLevel[HtmlEditor]
+object htmleditor extends TopLevel[HtmlEditor_]
 

@@ -1,7 +1,7 @@
 package typings.protractor
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Level
+import typings.seleniumWebdriver.mod.logging.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

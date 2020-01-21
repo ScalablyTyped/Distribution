@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/storage" : "0.3.23"
+      "@firebase/storage" : "0.3.24"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/storage" : "0.3.23"
+      "@firebase/storage" : "0.3.24"
     }
   ],
   "compile-devDependencies" : [

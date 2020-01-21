@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RTCIceCandidatePairChangedEvent extends Event {
+trait RTCIceCandidatePairChangedEvent extends Event_ {
   val pair: RTCIceCandidatePair = js.native
 }
 

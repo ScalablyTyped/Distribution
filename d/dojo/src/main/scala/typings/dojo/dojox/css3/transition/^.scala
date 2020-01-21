@@ -30,7 +30,8 @@ object ^ extends js.Object {
   /**
     *
     */
-  var in_ : Boolean = js.native
+  @JSName("in_")
+  var in: Boolean = js.native
   /**
     *
     */

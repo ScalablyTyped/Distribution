@@ -1,6 +1,6 @@
 package typings.roll
 
-import typings.roll.rollMod.RollTransformationKey
+import typings.roll.mod.RollTransformationKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

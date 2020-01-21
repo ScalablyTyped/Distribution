@@ -1,0 +1,26 @@
+package typings.awsSdkClientDynamodbNode.typesTableNotFoundExceptionMod
+
+import typings.awsSdkClientDynamodbNode.createBackupExceptionsUnionMod.CreateBackupExceptionsUnion
+import typings.awsSdkClientDynamodbNode.createGlobalTableExceptionsUnionMod.CreateGlobalTableExceptionsUnion
+import typings.awsSdkClientDynamodbNode.describeContinuousBackupsExceptionsUnionMod.DescribeContinuousBackupsExceptionsUnion
+import typings.awsSdkClientDynamodbNode.restoreTableToPointInTimeExceptionsUnionMod.RestoreTableToPointInTimeExceptionsUnion
+import typings.awsSdkClientDynamodbNode.updateContinuousBackupsExceptionsUnionMod.UpdateContinuousBackupsExceptionsUnion
+import typings.awsSdkClientDynamodbNode.updateGlobalTableExceptionsUnionMod.UpdateGlobalTableExceptionsUnion
+import typings.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TableNotFoundException
+  extends ServiceException[TableNotFoundExceptionDetails]
+     with CreateBackupExceptionsUnion
+     with CreateGlobalTableExceptionsUnion
+     with DescribeContinuousBackupsExceptionsUnion
+     with RestoreTableToPointInTimeExceptionsUnion
+     with UpdateContinuousBackupsExceptionsUnion
+     with UpdateGlobalTableExceptionsUnion {
+  @JSName("name")
+  var name_TableNotFoundException: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableNotFoundException = js.native
+}
+

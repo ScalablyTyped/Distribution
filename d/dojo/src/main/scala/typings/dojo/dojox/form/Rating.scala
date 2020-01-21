@@ -1,11 +1,11 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit.form._FormWidget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.form.FormWidget
 import typings.dojo.dojoStrings.numStars
 import typings.dojo.dojoStrings.required
 import typings.dojo.dojoStrings.value
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.form.Rating")
 @js.native
-class Rating () extends _FormWidget {
+class Rating () extends FormWidget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -51,7 +51,7 @@ class Rating () extends _FormWidget {
     *
     * @param evt
     */
-  def onStarClick(evt: Event): Unit = js.native
+  def onStarClick(evt: Event_): Unit = js.native
   /**
     * Deprecated.   Use set("value", ...) instead.
     *
@@ -74,7 +74,7 @@ class Rating () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_required(
     property: required,
@@ -84,6 +84,6 @@ class Rating () extends _FormWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

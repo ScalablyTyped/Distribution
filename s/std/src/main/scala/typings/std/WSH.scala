@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WSH")
 @js.native
 object WSH extends js.Object {
-  var Arguments: Anon_Item = js.native
+  var Arguments: AnonItem = js.native
   /**
     * The Windows Script Host build version number.
     */

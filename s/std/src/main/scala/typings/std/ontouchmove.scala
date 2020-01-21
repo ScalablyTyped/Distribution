@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ontouchmove")
 @js.native
 object ontouchmove
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ TouchEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ TouchEvent, js.Any]) | Null]
 

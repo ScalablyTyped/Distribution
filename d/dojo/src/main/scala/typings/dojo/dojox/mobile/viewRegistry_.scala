@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
   * A registry of existing views.
   *
   */
-@JSName("viewRegistry")
 trait viewRegistry_ extends js.Object {
   /**
     *

@@ -1,7 +1,7 @@
 package typings.primereact
 
-import typings.primereact.componentsChartChartMod.ChartProps
-import typings.react.reactMod.Component
+import typings.primereact.chartChartMod.ChartProps
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * An internationalization utility for applications based on dojox/mobile.
   *
   */
-@JSName("i18n")
 trait i18n_ extends js.Object {
   /**
     * These properties can be specified for any widget once the dojox/mobile/i18n module is loaded.

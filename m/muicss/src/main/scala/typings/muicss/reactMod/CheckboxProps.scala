@@ -1,25 +1,25 @@
 package typings.muicss.reactMod
 
-import typings.react.Anon_Html
-import typings.react.reactMod.AnimationEvent
-import typings.react.reactMod.Booleanish
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.CompositionEvent
-import typings.react.reactMod.DragEvent
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.HTMLAttributes
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.PointerEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.SyntheticEvent
-import typings.react.reactMod.TouchEvent
-import typings.react.reactMod.TransitionEvent
-import typings.react.reactMod.UIEvent
-import typings.react.reactMod.WheelEvent
+import typings.react.AnonHtml
+import typings.react.mod.AnimationEvent
+import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
+import typings.react.mod.ClipboardEvent
+import typings.react.mod.CompositionEvent
+import typings.react.mod.DragEvent
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TouchEvent
+import typings.react.mod.TransitionEvent
+import typings.react.mod.UIEvent
+import typings.react.mod.WheelEvent
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -65,7 +65,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -145,7 +145,7 @@ object CheckboxProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -166,15 +166,15 @@ object CheckboxProps {
     label: ReactNode = null,
     lang: String = null,
     name: String = null,
-    onAbort: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onAbort: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLDivElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLDivElement] => Unit = null,
     onBlur: FocusEvent[HTMLDivElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onChange: FormEvent[HTMLDivElement] => Unit = null,
     onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLDivElement] => Unit = null,
@@ -192,21 +192,21 @@ object CheckboxProps {
     onDragOver: DragEvent[HTMLDivElement] => Unit = null,
     onDragStart: DragEvent[HTMLDivElement] => Unit = null,
     onDrop: DragEvent[HTMLDivElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onEnded: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onError: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onFocus: FocusEvent[HTMLDivElement] => Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLDivElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLDivElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLDivElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onLoad: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onMouseDown: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
@@ -215,9 +215,9 @@ object CheckboxProps {
     onMouseOver: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLDivElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onPause: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onPointerCancel: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLDivElement] => Unit = null,
@@ -226,24 +226,24 @@ object CheckboxProps {
     onPointerOut: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLDivElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLDivElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onProgress: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLDivElement] => Unit = null,
     onScroll: UIEvent[HTMLDivElement] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onSelect: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onStalled: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onSubmit: FormEvent[HTMLDivElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onTouchCancel: TouchEvent[HTMLDivElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLDivElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLDivElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLDivElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLDivElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLDivElement, Event] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
     placeholder: String = null,
     prefix: String = null,

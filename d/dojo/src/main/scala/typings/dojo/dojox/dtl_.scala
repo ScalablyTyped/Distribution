@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("dtl")
 trait dtl_ extends js.Object
 

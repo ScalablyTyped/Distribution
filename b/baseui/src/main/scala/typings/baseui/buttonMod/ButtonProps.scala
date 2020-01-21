@@ -13,11 +13,11 @@ import typings.baseui.baseuiStrings.secondary
 import typings.baseui.baseuiStrings.square
 import typings.baseui.baseuiStrings.submit
 import typings.baseui.baseuiStrings.tertiary
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.ReactNode
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLButtonElement
-import typings.styletronDashReact.styletronDashReactMod.StyletronComponentInjectedProps
+import typings.styletronReact.mod.StyletronComponentInjectedProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

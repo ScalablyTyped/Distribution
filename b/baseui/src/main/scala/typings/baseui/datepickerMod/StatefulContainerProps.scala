@@ -1,6 +1,6 @@
 package typings.baseui.datepickerMod
 
-import typings.baseui.Anon_Date
+import typings.baseui.AnonDate
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.mouseLeave
 import typings.baseui.baseuiStrings.mouseOver
@@ -8,7 +8,7 @@ import typings.baseui.baseuiStrings.moveDown
 import typings.baseui.baseuiStrings.moveLeft
 import typings.baseui.baseuiStrings.moveRight
 import typings.baseui.baseuiStrings.moveUp
-import typings.react.reactMod.ReactNode
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object StatefulContainerProps {
   def apply[T](
     children: /* args */ T => ReactNode = null,
     initialState: ContainerState = null,
-    onChange: /* args */ Anon_Date => js.Any = null,
+    onChange: /* args */ AnonDate => js.Any = null,
     range: js.UndefOr[Boolean] = js.undefined,
     stateReducer: (/* stateType */ mouseLeave | moveRight | moveDown | moveUp | mouseOver | change_ | moveLeft, /* nextState */ ContainerState, /* currentState */ ContainerState) => ContainerState = null
   ): StatefulContainerProps[T] = {

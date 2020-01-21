@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.label
 import typings.dojo.dojoStrings.maximum
 import typings.dojo.dojoStrings.style
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mobile.ProgressBar")
 @js.native
-class ProgressBar () extends _WidgetBase {
+class ProgressBar () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -84,7 +84,7 @@ class ProgressBar () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maximum(
     property: maximum,
@@ -94,7 +94,7 @@ class ProgressBar () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -104,6 +104,6 @@ class ProgressBar () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

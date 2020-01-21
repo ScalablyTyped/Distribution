@@ -1,12 +1,12 @@
 package typings.lobibox.LobiboxModule
 
-import typings.lobibox.Anon_DEFAULTS
+import typings.lobibox.AnonDEFAULTS
+import typings.lobibox.AnonDEFAULTSOptions
+import typings.lobibox.AnonDEFAULTSOptionsConfirmOptions
+import typings.lobibox.AnonDEFAULTSOptionsMessageBoxesDefault
+import typings.lobibox.AnonDEFAULTSOptionsMessageBoxesDefaultT
+import typings.lobibox.AnonDEFAULTSOptionsType
 import typings.lobibox.Anon_DEFAULTSOPTIONS
-import typings.lobibox.Anon_DEFAULTSOptions
-import typings.lobibox.Anon_DEFAULTSOptionsConfirmOptions
-import typings.lobibox.Anon_DEFAULTSOptionsMessageBoxesDefault
-import typings.lobibox.Anon_DEFAULTSOptionsMessageBoxesDefaultT
-import typings.lobibox.Anon_DEFAULTSOptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,18 +14,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LobiboxStatic extends js.Object {
   @JSName("alert")
-  var alert_Original: Anon_DEFAULTSOptions = js.native
-  var base: Anon_DEFAULTS = js.native
+  var alert_Original: AnonDEFAULTSOptions = js.native
+  var base: AnonDEFAULTS = js.native
   @JSName("confirm")
-  var confirm_Original: Anon_DEFAULTSOptionsConfirmOptions = js.native
+  var confirm_Original: AnonDEFAULTSOptionsConfirmOptions = js.native
   @JSName("notify")
   var notify_Original: Anon_DEFAULTSOPTIONS = js.native
   @JSName("progress")
-  var progress_Original: Anon_DEFAULTSOptionsMessageBoxesDefault = js.native
+  var progress_Original: AnonDEFAULTSOptionsMessageBoxesDefault = js.native
   @JSName("prompt")
-  var prompt_Original: Anon_DEFAULTSOptionsType = js.native
+  var prompt_Original: AnonDEFAULTSOptionsType = js.native
   @JSName("window")
-  var window_Original: Anon_DEFAULTSOptionsMessageBoxesDefaultT = js.native
+  var window_Original: AnonDEFAULTSOptionsMessageBoxesDefaultT = js.native
   def alert[T /* <: MessageBoxesDefault */](`type`: String): LobiboxStatic = js.native
   def alert[T /* <: MessageBoxesDefault */](`type`: String, options: T): LobiboxStatic = js.native
   def confirm[T /* <: MessageBoxesDefault */](): T = js.native

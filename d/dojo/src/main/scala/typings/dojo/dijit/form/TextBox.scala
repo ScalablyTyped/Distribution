@@ -1,6 +1,6 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.displayedValue
 import typings.dojo.dojoStrings.lowercase
 import typings.dojo.dojoStrings.maxLength
@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._TextBoxMixin because Inheritance from two classes. Inlined displayedValue, lowercase, maxLength, placeHolder, propercase, selectOnClick, trim, uppercase, filter, format, parse, postCreate, reset, selectInputText, onInput */ @JSGlobal("dijit.form.TextBox")
+- typings.dojo.dijit.form.TextBoxMixin because Inheritance from two classes. Inlined displayedValue, lowercase, maxLength, placeHolder, propercase, selectOnClick, trim, uppercase, filter, format, parse, postCreate, reset, selectInputText, onInput */ @JSGlobal("dijit.form.TextBox")
 @js.native
-class TextBox () extends _FormValueWidget {
+class TextBox () extends FormValueWidget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -177,7 +177,7 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_lowercase(
     property: lowercase,
@@ -187,7 +187,7 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxLength(
     property: maxLength,
@@ -197,7 +197,7 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_placeHolder(
     property: placeHolder,
@@ -207,7 +207,7 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_propercase(
     property: propercase,
@@ -217,7 +217,7 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selectOnClick(
     property: selectOnClick,
@@ -227,7 +227,7 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_trim(
     property: trim,
@@ -237,7 +237,7 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_uppercase(
     property: uppercase,
@@ -247,6 +247,6 @@ class TextBox () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for serialport
 
-Typings are for version 7.0
+Typings are for version 8.0
 
 ## Library description:
 Node.js package to access serial ports. Linux, OSX and Windows. Welcome your robotic JavaScript overlords. Better yet, program them!

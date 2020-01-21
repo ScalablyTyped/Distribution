@@ -6,9 +6,9 @@ import typings.ember.emberStrings.created
 import typings.ember.emberStrings.error
 import typings.ember.emberStrings.fulfilled
 import typings.ember.emberStrings.rejected
-import typings.rsvp.rsvpMod.RSVP.InstrumentEvent
-import typings.rsvp.rsvpMod.RSVP.ObjectWithEventMixins
-import typings.rsvp.rsvpMod.default.EventTarget
+import typings.rsvp.mod.RSVP.InstrumentEvent
+import typings.rsvp.mod.RSVP.ObjectWithEventMixins
+import typings.rsvp.mod.default.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

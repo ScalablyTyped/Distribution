@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rpc {
-  type JsonRest = JsonRest_
+  type JsonRest = typings.dojo.dojox.rpc.JsonRest_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/rpc/Rest.html
     *
@@ -35,10 +35,10 @@ package object rpc {
     * @param getRequest       Optional
     */
   type Rest = js.Function4[
-    /* path */ String, 
-    /* isJson */ js.UndefOr[Boolean], 
+    /* path */ java.lang.String, 
+    /* isJson */ js.UndefOr[scala.Boolean], 
     /* schema */ js.UndefOr[js.Object], 
     /* getRequest */ js.UndefOr[js.Function], 
-    Unit
+    scala.Unit
   ]
 }

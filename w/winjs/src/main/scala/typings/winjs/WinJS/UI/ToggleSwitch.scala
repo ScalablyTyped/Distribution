@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -74,7 +74,7 @@ class ToggleSwitch () extends js.Object {
     * Occurs when the ToggleSwitch control is flipped to on (checked == true) or off (checked == false).
     * @param eventInfo An object that contains information about the event.
     **/
-  def onchange(eventInfo: Event): Unit = js.native
+  def onchange(eventInfo: Event_): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.

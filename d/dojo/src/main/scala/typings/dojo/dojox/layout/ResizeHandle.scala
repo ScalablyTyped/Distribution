@@ -1,7 +1,7 @@
 package typings.dojo.dojox.layout
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
 import typings.dojo.dojoStrings.activeResize
 import typings.dojo.dojoStrings.activeResizeClass
 import typings.dojo.dojoStrings.animateDuration
@@ -42,10 +42,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.layout.ResizeHandle")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.layout.ResizeHandle")
 @js.native
-class ResizeHandle () extends _Widget {
+class ResizeHandle () extends Widget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -286,7 +286,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_activeResizeClass(
     property: activeResizeClass,
@@ -296,7 +296,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_animateDuration(
     property: animateDuration,
@@ -306,7 +306,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_animateMethod(
     property: animateMethod,
@@ -316,7 +316,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_animateSizing(
     property: animateSizing,
@@ -326,7 +326,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_attachScope(
     property: attachScope,
@@ -336,7 +336,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_constrainMax(
     property: constrainMax,
@@ -346,7 +346,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_endTopic(
     property: endTopic,
@@ -356,7 +356,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedAspect(
     property: fixedAspect,
@@ -366,7 +366,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_intermediateChanges(
     property: intermediateChanges,
@@ -376,7 +376,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxHeight(
     property: maxHeight,
@@ -386,7 +386,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxWidth(
     property: maxWidth,
@@ -396,7 +396,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minHeight(
     property: minHeight,
@@ -406,7 +406,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minWidth(
     property: minWidth,
@@ -416,7 +416,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_resizeAxis(
     property: resizeAxis,
@@ -426,7 +426,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -436,7 +436,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_startTopic(
     property: startTopic,
@@ -446,7 +446,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_targetContainer(
     property: targetContainer,
@@ -456,7 +456,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[HTMLElement], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_targetId(
     property: targetId,
@@ -466,7 +466,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -476,7 +476,7 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -486,6 +486,6 @@ class ResizeHandle () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

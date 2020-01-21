@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clustering {
-  type Provider = Provider_
+  type Provider = typings.heremaps.H.clustering.Provider_
 }

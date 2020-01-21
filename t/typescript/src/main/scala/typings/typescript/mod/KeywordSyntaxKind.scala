@@ -1,0 +1,86 @@
+package typings.typescript.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.typescript.mod.SyntaxKind.AbstractKeyword
+  - typings.typescript.mod.SyntaxKind.AnyKeyword
+  - typings.typescript.mod.SyntaxKind.AsKeyword
+  - typings.typescript.mod.SyntaxKind.AssertsKeyword
+  - typings.typescript.mod.SyntaxKind.BigIntKeyword
+  - typings.typescript.mod.SyntaxKind.BooleanKeyword
+  - typings.typescript.mod.SyntaxKind.BreakKeyword
+  - typings.typescript.mod.SyntaxKind.CaseKeyword
+  - typings.typescript.mod.SyntaxKind.CatchKeyword
+  - typings.typescript.mod.SyntaxKind.ClassKeyword
+  - typings.typescript.mod.SyntaxKind.ContinueKeyword
+  - typings.typescript.mod.SyntaxKind.ConstKeyword
+  - typings.typescript.mod.SyntaxKind.ConstructorKeyword
+  - typings.typescript.mod.SyntaxKind.DebuggerKeyword
+  - typings.typescript.mod.SyntaxKind.DeclareKeyword
+  - typings.typescript.mod.SyntaxKind.DefaultKeyword
+  - typings.typescript.mod.SyntaxKind.DeleteKeyword
+  - typings.typescript.mod.SyntaxKind.DoKeyword
+  - typings.typescript.mod.SyntaxKind.ElseKeyword
+  - typings.typescript.mod.SyntaxKind.EnumKeyword
+  - typings.typescript.mod.SyntaxKind.ExportKeyword
+  - typings.typescript.mod.SyntaxKind.ExtendsKeyword
+  - typings.typescript.mod.SyntaxKind.FalseKeyword
+  - typings.typescript.mod.SyntaxKind.FinallyKeyword
+  - typings.typescript.mod.SyntaxKind.ForKeyword
+  - typings.typescript.mod.SyntaxKind.FromKeyword
+  - typings.typescript.mod.SyntaxKind.FunctionKeyword
+  - typings.typescript.mod.SyntaxKind.GetKeyword
+  - typings.typescript.mod.SyntaxKind.IfKeyword
+  - typings.typescript.mod.SyntaxKind.ImplementsKeyword
+  - typings.typescript.mod.SyntaxKind.ImportKeyword
+  - typings.typescript.mod.SyntaxKind.InKeyword
+  - typings.typescript.mod.SyntaxKind.InferKeyword
+  - typings.typescript.mod.SyntaxKind.InstanceOfKeyword
+  - typings.typescript.mod.SyntaxKind.InterfaceKeyword
+  - typings.typescript.mod.SyntaxKind.IsKeyword
+  - typings.typescript.mod.SyntaxKind.KeyOfKeyword
+  - typings.typescript.mod.SyntaxKind.LetKeyword
+  - typings.typescript.mod.SyntaxKind.ModuleKeyword
+  - typings.typescript.mod.SyntaxKind.NamespaceKeyword
+  - typings.typescript.mod.SyntaxKind.NeverKeyword
+  - typings.typescript.mod.SyntaxKind.NewKeyword
+  - typings.typescript.mod.SyntaxKind.NullKeyword
+  - typings.typescript.mod.SyntaxKind.NumberKeyword
+  - typings.typescript.mod.SyntaxKind.ObjectKeyword
+  - typings.typescript.mod.SyntaxKind.PackageKeyword
+  - typings.typescript.mod.SyntaxKind.PrivateKeyword
+  - typings.typescript.mod.SyntaxKind.ProtectedKeyword
+  - typings.typescript.mod.SyntaxKind.PublicKeyword
+  - typings.typescript.mod.SyntaxKind.ReadonlyKeyword
+  - typings.typescript.mod.SyntaxKind.RequireKeyword
+  - typings.typescript.mod.SyntaxKind.GlobalKeyword
+  - typings.typescript.mod.SyntaxKind.ReturnKeyword
+  - typings.typescript.mod.SyntaxKind.SetKeyword
+  - typings.typescript.mod.SyntaxKind.StaticKeyword
+  - typings.typescript.mod.SyntaxKind.StringKeyword
+  - typings.typescript.mod.SyntaxKind.SuperKeyword
+  - typings.typescript.mod.SyntaxKind.SwitchKeyword
+  - typings.typescript.mod.SyntaxKind.SymbolKeyword
+  - typings.typescript.mod.SyntaxKind.ThisKeyword
+  - typings.typescript.mod.SyntaxKind.ThrowKeyword
+  - typings.typescript.mod.SyntaxKind.TrueKeyword
+  - typings.typescript.mod.SyntaxKind.TryKeyword
+  - typings.typescript.mod.SyntaxKind.TypeKeyword
+  - typings.typescript.mod.SyntaxKind.TypeOfKeyword
+  - typings.typescript.mod.SyntaxKind.UndefinedKeyword
+  - typings.typescript.mod.SyntaxKind.UniqueKeyword
+  - typings.typescript.mod.SyntaxKind.UnknownKeyword
+  - typings.typescript.mod.SyntaxKind.VarKeyword
+  - typings.typescript.mod.SyntaxKind.VoidKeyword
+  - typings.typescript.mod.SyntaxKind.WhileKeyword
+  - typings.typescript.mod.SyntaxKind.WithKeyword
+  - typings.typescript.mod.SyntaxKind.YieldKeyword
+  - typings.typescript.mod.SyntaxKind.AsyncKeyword
+  - typings.typescript.mod.SyntaxKind.AwaitKeyword
+  - typings.typescript.mod.SyntaxKind.OfKeyword
+*/
+trait KeywordSyntaxKind extends JSDocSyntaxKind
+

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object credMod {
-  type Cred = Cred_
+  type Cred = typings.nodegit.credMod.Cred_
 }

@@ -1,7 +1,7 @@
 package typings.cypress
 
 import typings.std.Element
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\`.
   */
 @js.native
-trait BaseJQueryEventObject extends Event {
+trait BaseJQueryEventObject extends Event_ {
   /**
     * The current DOM element within the event bubbling phase.
     * @see \`{@link https://api.jquery.com/event.currentTarget/ }\`
@@ -41,7 +41,7 @@ trait BaseJQueryEventObject extends Event {
     * The browser's original Event object.
     * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
     */
-  var originalEvent: Event = js.native
+  var originalEvent: Event_ = js.native
   /**
     * The mouse position relative to the left edge of the document.
     * @see \`{@link https://api.jquery.com/event.pageX/ }\`

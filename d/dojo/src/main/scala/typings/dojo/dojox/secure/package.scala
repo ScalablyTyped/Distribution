@@ -11,7 +11,7 @@ package object secure {
     *
     * @param element
     */
-  type DOM = js.Function1[/* element */ js.Any, Unit]
+  type DOM = js.Function1[/* element */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/secure/sandbox.html
     *
@@ -24,5 +24,5 @@ package object secure {
     *
     * @param element The DOM element to use as the container for the sandbox
     */
-  type sandbox = js.Function1[/* element */ js.Any, Unit]
+  type sandbox = js.Function1[/* element */ js.Any, scala.Unit]
 }

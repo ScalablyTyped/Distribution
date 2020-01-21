@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.dijit.WidgetBase
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.Container")
+- typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.Container")
 @js.native
 class Container () extends Pane {
   def this(params: js.Object) = this()
@@ -30,7 +30,7 @@ class Container () extends Pane {
     * @param widget             
     * @param insertIndex               Optional            
     */
-  def addChild(widget: _WidgetBase): Unit = js.native
+  def addChild(widget: WidgetBase): Unit = js.native
   /**
     * Makes the given widget a child of this widget.
     * Inserts specified child widget's dom node as a child of this widget's
@@ -39,7 +39,7 @@ class Container () extends Pane {
     * @param widget
     * @param insertIndex               Optional
     */
-  def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+  def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
   /**
     * Gets the index of the child in this container or -1 if not found
     *
@@ -50,7 +50,7 @@ class Container () extends Pane {
     * 
     * @param child             
     */
-  def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+  def getIndexOfChild(child: WidgetBase): js.Any = js.native
   /**
     * Returns true if widget has child widgets, i.e. if this.containerNode contains widgets.
     *
@@ -89,6 +89,6 @@ class Container () extends Pane {
     * 
     * @param widget             
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
 }
 

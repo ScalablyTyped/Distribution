@@ -19,7 +19,6 @@ import scala.scalajs.js.annotation._
 /**
   * Interface for the Xrm.Navigation API
   */
-@JSName("Navigation")
 @js.native
 trait Navigation_ extends js.Object {
   /**

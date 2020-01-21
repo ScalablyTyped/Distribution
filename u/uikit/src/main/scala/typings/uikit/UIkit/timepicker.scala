@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.timepicker")
 @js.native
-object timepicker extends TopLevel[Timepicker]
+object timepicker extends TopLevel[Timepicker_]
 

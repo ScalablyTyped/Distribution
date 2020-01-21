@@ -21,5 +21,5 @@ package object NodeList {
     *
     * @param array
     */
-  type delegate = js.Function1[/* array */ js.Any, Unit]
+  type delegate = js.Function1[/* array */ js.Any, scala.Unit]
 }

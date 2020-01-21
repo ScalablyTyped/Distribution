@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tree {
-  import typings.extjs.Ext.view.IDragZone
-
-  type IViewDragZone = IDragZone
+  type IViewDragZone = typings.extjs.Ext.view.IDragZone
 }

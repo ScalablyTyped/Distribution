@@ -5,16 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WebMidi {
-  import typings.std.Map
-
   /**
     * This is a maplike interface whose value is a MIDIInput instance and key is its
     * ID.
     */
-  type MIDIInputMap = Map[String, MIDIInput]
+  type MIDIInputMap = typings.std.Map[java.lang.String, typings.webmidi.WebMidi.MIDIInput]
   /**
     * This is a maplike interface whose value is a MIDIOutput instance and key is its
     * ID.
     */
-  type MIDIOutputMap = Map[String, MIDIOutput]
+  type MIDIOutputMap = typings.std.Map[java.lang.String, typings.webmidi.WebMidi.MIDIOutput]
 }

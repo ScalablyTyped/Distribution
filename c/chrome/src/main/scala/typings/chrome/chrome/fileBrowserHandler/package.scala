@@ -5,9 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fileBrowserHandler {
-  import typings.chrome.chrome.events.Event
-
-  type FileBrowserHandlerExecuteEvent = Event[
-    js.Function2[/* id */ String, /* details */ FileHandlerExecuteEventDetails, Unit]
+  type FileBrowserHandlerExecuteEvent = typings.chrome.chrome.events.Event[
+    js.Function2[
+      /* id */ java.lang.String, 
+      /* details */ typings.chrome.chrome.fileBrowserHandler.FileHandlerExecuteEventDetails, 
+      scala.Unit
+    ]
   ]
 }

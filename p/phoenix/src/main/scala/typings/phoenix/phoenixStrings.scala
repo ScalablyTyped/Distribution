@@ -1,7 +1,7 @@
 package typings.phoenix
 
-import typings.phoenix.phoenixMod.BinaryType
-import typings.phoenix.phoenixMod.ConnectionState
+import typings.phoenix.mod.BinaryType
+import typings.phoenix.mod.ConnectionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

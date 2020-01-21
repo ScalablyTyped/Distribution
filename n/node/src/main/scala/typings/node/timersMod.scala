@@ -16,15 +16,19 @@ object timersMod extends js.Object {
   @js.native
   object setImmediate extends js.Object {
     def apply(callback: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): Immediate = js.native
-    def __promisify__(): js.Promise[Unit] = js.native
-    def __promisify__[T](value: T): js.Promise[T] = js.native
+    @JSName("__promisify__")
+    def promisify(): js.Promise[Unit] = js.native
+    @JSName("__promisify__")
+    def promisify[T](value: T): js.Promise[T] = js.native
   }
   
   @js.native
   object setTimeout extends js.Object {
     def apply(callback: js.Function1[/* repeated */ js.Any, Unit], ms: Double, args: js.Any*): Timeout = js.native
-    def __promisify__(ms: Double): js.Promise[Unit] = js.native
-    def __promisify__[T](ms: Double, value: T): js.Promise[T] = js.native
+    @JSName("__promisify__")
+    def promisify(ms: Double): js.Promise[Unit] = js.native
+    @JSName("__promisify__")
+    def promisify[T](ms: Double, value: T): js.Promise[T] = js.native
   }
   
 }

@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.Anon_CriticalBoolean
+import typings.jsrsasign.AnonCriticalBoolean
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import typings.jsrsasign.jsrsasignStrings.authorityinfoaccess
 import typings.jsrsasign.jsrsasignStrings.authoritykeyidentifier
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.Extension")
 @js.native
 class Extension () extends ASN1Object {
-  def this(params: Anon_CriticalBoolean) = this()
+  def this(params: AnonCriticalBoolean) = this()
 }
 
 /* static members */

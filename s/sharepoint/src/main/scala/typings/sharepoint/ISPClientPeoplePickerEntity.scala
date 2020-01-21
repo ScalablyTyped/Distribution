@@ -11,7 +11,7 @@ trait ISPClientPeoplePickerEntity
   var Description: js.UndefOr[String] = js.undefined
   var DisplayText: js.UndefOr[String] = js.undefined
   var DomainText: js.UndefOr[String] = js.undefined
-  var EntityData: js.UndefOr[Anon_Department] = js.undefined
+  var EntityData: js.UndefOr[AnonDepartment] = js.undefined
   var EntityType: js.UndefOr[String] = js.undefined
   var IsResolved: js.UndefOr[Boolean] = js.undefined
   var Key: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object ISPClientPeoplePickerEntity {
     Description: String = null,
     DisplayText: String = null,
     DomainText: String = null,
-    EntityData: Anon_Department = null,
+    EntityData: AnonDepartment = null,
     EntityType: String = null,
     IsResolved: js.UndefOr[Boolean] = js.undefined,
     Key: String = null,

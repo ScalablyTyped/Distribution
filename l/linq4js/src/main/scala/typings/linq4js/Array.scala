@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Array[T] extends js.Object {
-  var _linq4js_ : Anon_GroupValue = js.native
+  var _linq4js_ : AnonGroupValue = js.native
   /**
     * Adds an object to the array
     * @param object The object to add

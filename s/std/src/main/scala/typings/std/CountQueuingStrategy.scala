@@ -17,5 +17,5 @@ trait CountQueuingStrategy
 
 @JSGlobal("CountQueuingStrategy")
 @js.native
-object CountQueuingStrategy extends Instantiable1[/* options */ Anon_HighWaterMark, CountQueuingStrategy]
+object CountQueuingStrategy extends Instantiable1[/* options */ AnonHighWaterMark, CountQueuingStrategy]
 

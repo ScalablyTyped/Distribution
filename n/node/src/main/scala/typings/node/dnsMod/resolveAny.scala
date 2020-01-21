@@ -12,6 +12,7 @@ object resolveAny extends js.Object {
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[AnyRecord], Unit]
   ): Unit = js.native
-  def __promisify__(hostname: String): js.Promise[js.Array[AnyRecord]] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String): js.Promise[js.Array[AnyRecord]] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "escape-regexp"
-version := "0.0-dt-20180331Z-6521ea"
+version := "0.0-dt-20180331Z-f763f1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

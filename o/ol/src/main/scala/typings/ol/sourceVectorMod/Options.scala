@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var attributions: js.UndefOr[AttributionLike] = js.undefined
   var features: js.UndefOr[
-    js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] | typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]
+    js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] | typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
   ] = js.undefined
-  var format: js.UndefOr[typings.ol.formatFeatureMod.default] = js.undefined
+  var format: js.UndefOr[typings.ol.featureMod.default] = js.undefined
   var loader: js.UndefOr[FeatureLoader] = js.undefined
   var overlaps: js.UndefOr[Boolean] = js.undefined
   var strategy: js.UndefOr[LoadingStrategy] = js.undefined
@@ -26,8 +26,8 @@ object Options {
   @scala.inline
   def apply(
     attributions: AttributionLike = null,
-    features: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] | typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] = null,
-    format: typings.ol.formatFeatureMod.default = null,
+    features: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] | typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] = null,
+    format: typings.ol.featureMod.default = null,
     loader: FeatureLoader = null,
     overlaps: js.UndefOr[Boolean] = js.undefined,
     strategy: (/* p0 */ Extent, /* p1 */ Double) => js.Array[Extent] = null,

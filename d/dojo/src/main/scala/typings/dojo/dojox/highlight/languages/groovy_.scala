@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * Groovy highlight definitions
   *
   */
-@JSName("groovy")
 trait groovy_ extends js.Object {
   /**
     *

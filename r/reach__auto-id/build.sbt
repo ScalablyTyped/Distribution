@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reach__auto-id"
-version := "0.2-dt-20190628Z-9584ba"
+version := "0.2-dt-20190628Z-9f0009"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

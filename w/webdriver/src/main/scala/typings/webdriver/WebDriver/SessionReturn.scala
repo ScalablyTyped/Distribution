@@ -2,8 +2,8 @@ package typings.webdriver.WebDriver
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
-import typings.webdriver.Anon_Browser
-import typings.webdriver.Anon_BufferUsageReportingInterval
+import typings.webdriver.AnonBrowser
+import typings.webdriver.AnonBufferUsageReportingInterval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -130,7 +130,7 @@ object SessionReturn {
     locationServicesEnabled: js.UndefOr[Boolean] = js.undefined,
     logFile: String = null,
     logLevel: String = null,
-    loggingPrefs: Anon_Browser = null,
+    loggingPrefs: AnonBrowser = null,
     maxInstances: Int | Double = null,
     mobileEmulationEnabled: js.UndefOr[Boolean] = js.undefined,
     mozColonfirefoxOptions: FirefoxOptions = null,
@@ -152,7 +152,7 @@ object SessionReturn {
     otherApps: String = null,
     pageLoadStrategy: PageLoadingStrategy = null,
     pageLoadingStrategy: String = null,
-    perfLoggingPrefs: Anon_BufferUsageReportingInterval = null,
+    perfLoggingPrefs: AnonBufferUsageReportingInterval = null,
     platform: String = null,
     platformName: String = null,
     platformVersion: String = null,

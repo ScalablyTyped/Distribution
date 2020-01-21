@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mvc
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.children
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mvc.Generate")
 @js.native
-class Generate () extends _Container {
+class Generate () extends Container {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -41,6 +41,6 @@ class Generate () extends _Container {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

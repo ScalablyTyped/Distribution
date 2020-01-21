@@ -1,6 +1,6 @@
 package typings.nodegit.blameMod.Blame
 
-import typings.nodegit.blameDashOptionsMod.BlameOptions
+import typings.nodegit.blameOptionsMod.BlameOptions
 import typings.nodegit.repositoryMod.Repository
 import scala.scalajs.js
 import scala.scalajs.js.`|`

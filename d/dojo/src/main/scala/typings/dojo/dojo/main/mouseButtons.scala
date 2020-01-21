@@ -1,6 +1,6 @@
 package typings.dojo.dojo.main
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,25 +32,25 @@ trait mouseButtons extends js.Object {
     * @param e Event object to examine
     * @param button The button value (example: dojo.mouseButton.LEFT)
     */
-  def isButton(e: Event, button: Double): Boolean
+  def isButton(e: Event_, button: Double): Boolean
   /**
     * Checks an event object for the pressed left button
     *
     * @param e Event object to examine
     */
-  def isLeft(e: Event): Boolean
+  def isLeft(e: Event_): Boolean
   /**
     * Checks an event object for the pressed middle button
     *
     * @param e Event object to examine
     */
-  def isMiddle(e: Event): Boolean
+  def isMiddle(e: Event_): Boolean
   /**
     * Checks an event object for the pressed right button
     *
     * @param e Event object to examine
     */
-  def isRight(e: Event): Boolean
+  def isRight(e: Event_): Boolean
 }
 
 object mouseButtons {
@@ -59,10 +59,10 @@ object mouseButtons {
     LEFT: Double,
     MIDDLE: Double,
     RIGHT: Double,
-    isButton: (Event, Double) => Boolean,
-    isLeft: Event => Boolean,
-    isMiddle: Event => Boolean,
-    isRight: Event => Boolean
+    isButton: (Event_, Double) => Boolean,
+    isLeft: Event_ => Boolean,
+    isMiddle: Event_ => Boolean,
+    isRight: Event_ => Boolean
   ): mouseButtons = {
     val __obj = js.Dynamic.literal(LEFT = LEFT.asInstanceOf[js.Any], MIDDLE = MIDDLE.asInstanceOf[js.Any], RIGHT = RIGHT.asInstanceOf[js.Any], isButton = js.Any.fromFunction2(isButton), isLeft = js.Any.fromFunction1(isLeft), isMiddle = js.Any.fromFunction1(isMiddle), isRight = js.Any.fromFunction1(isRight))
   

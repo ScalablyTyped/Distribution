@@ -1,7 +1,7 @@
 package typings.pinkyswear
 
-import typings.pinkyswear.PinkySwear.GenericPromise
-import typings.pinkyswear.PinkySwear.Promise
+import typings.pinkyswear.PinkySwear_.GenericPromise
+import typings.pinkyswear.PinkySwear_.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

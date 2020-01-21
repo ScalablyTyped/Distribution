@@ -1,6 +1,6 @@
 package typings.heremaps.H.mapevents
 
-import typings.heremaps.H.Map
+import typings.heremaps.H.Map_
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.util.ContextItem
 import scala.scalajs.js
@@ -28,7 +28,7 @@ class ContextMenuEvent protected ()
     * @param target {(H.Map | H.map.Object)} - The event's target element
     * @param originalEvent {Event} - target of the event
     */
-  def this(viewportX: Double, viewportY: Double, target: Map, originalEvent: Event) = this()
+  def this(viewportX: Double, viewportY: Double, target: Map_, originalEvent: Event) = this()
   def this(viewportX: Double, viewportY: Double, target: Object, originalEvent: Event) = this()
   var originalEvent: Event = js.native
   var viewportX: js.Array[ContextItem] = js.native

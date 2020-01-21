@@ -1,0 +1,27 @@
+package typings.vsoNodeApi.workInterfacesMod
+
+import typings.std.Date
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DateRange extends js.Object {
+  /**
+    * End of the date range.
+    */
+  var end: Date
+  /**
+    * Start of the date range.
+    */
+  var start: Date
+}
+
+object DateRange {
+  @scala.inline
+  def apply(end: Date, start: Date): DateRange = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[DateRange]
+  }
+}
+

@@ -1,8 +1,8 @@
 package typings.prettier
 
-import typings.prettier.prettierMod.CursorOptions
-import typings.prettier.prettierMod.CursorResult
-import typings.prettier.prettierMod.Options
+import typings.prettier.mod.CursorOptions
+import typings.prettier.mod.CursorResult
+import typings.prettier.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

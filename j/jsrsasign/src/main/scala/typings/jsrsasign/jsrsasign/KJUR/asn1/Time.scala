@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
-import typings.jsrsasign.Anon_Gen
+import typings.jsrsasign.AnonGen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.Time")
 @js.native
 class Time () extends ASN1Object {
-  def this(params: StringParam with Anon_Gen) = this()
+  def this(params: StringParam with AnonGen) = this()
   def setTimeParams(timeParams: String): Unit = js.native
   def setTimeParams(timeParams: DateParam): Unit = js.native
   def setTimeParams(timeParams: HexParam): Unit = js.native

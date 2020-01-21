@@ -1,12 +1,12 @@
 package typings.dojo.dojox.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.adjustPaths
 import typings.dojo.dojoStrings.cleanContent
 import typings.dojo.dojoStrings.executeScripts
 import typings.dojo.dojoStrings.renderStyles
 import typings.dojo.dojoStrings.scriptHasHooks
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -82,7 +82,7 @@ class ContentPane ()
     *
     * @param e
     */
-  def onExecError(e: Event): Unit = js.native
+  def onExecError(e: Event_): Unit = js.native
   @JSName("set")
   def set_adjustPaths(property: adjustPaths, value: Boolean): Unit = js.native
   @JSName("set")
@@ -102,7 +102,7 @@ class ContentPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cleanContent(
     property: cleanContent,
@@ -112,7 +112,7 @@ class ContentPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_executeScripts(
     property: executeScripts,
@@ -122,7 +122,7 @@ class ContentPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_renderStyles(
     property: renderStyles,
@@ -132,7 +132,7 @@ class ContentPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scriptHasHooks(
     property: scriptHasHooks,
@@ -142,6 +142,6 @@ class ContentPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -18,17 +18,3 @@ object Anon_CA {
   }
 }
 
-trait Anon_Ca extends js.Object {
-  var ca: Boolean
-  var critical: Boolean
-}
-
-object Anon_Ca {
-  @scala.inline
-  def apply(ca: Boolean, critical: Boolean): Anon_Ca = {
-    val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Anon_Ca]
-  }
-}
-

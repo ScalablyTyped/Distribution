@@ -1,6 +1,6 @@
 package typings.jsoneditoronline
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,7 @@ class JSONEditorNode protected () extends js.Object {
   def insertBefore(node: JSONEditorNode, beforeNode: JSONEditorNode): Unit = js.native
   def moveBefore(node: JSONEditorNode, beforeNode: JSONEditorNode): Unit = js.native
   def moveTo(node: JSONEditorNode, index: Double): Unit = js.native
-  def onEvent(event: Event): Unit = js.native
+  def onEvent(event: Event_): Unit = js.native
   def removeChild(node: JSONEditorNode): JSONEditorNode = js.native
   def scrollTo(): Unit = js.native
   def search(text: String): js.Array[JSONEditorNode] = js.native

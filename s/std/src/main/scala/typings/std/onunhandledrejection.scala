@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onunhandledrejection
   extends TopLevel[
-      (js.ThisFunction1[/* this */ Window, /* ev */ PromiseRejectionEvent, js.Any]) | Null
+      (js.ThisFunction1[/* this */ Window_, /* ev */ PromiseRejectionEvent, js.Any]) | Null
     ]
 

@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object altContainerMod {
-  import typings.react.reactMod.ReactElement
-
-  type AltContainer = ReactElement
+  type AltContainer = typings.react.mod.ReactElement
 }

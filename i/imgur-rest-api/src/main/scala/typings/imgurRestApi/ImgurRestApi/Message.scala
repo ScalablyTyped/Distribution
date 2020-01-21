@@ -1,0 +1,33 @@
+package typings.imgurRestApi.ImgurRestApi
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Message extends js.Object {
+  var account_id: Double
+  var body: String
+  var conversation_id: Double
+  var datetime: Double
+  var from: String
+  var id: Double
+  var sender_id: Double
+}
+
+object Message {
+  @scala.inline
+  def apply(
+    account_id: Double,
+    body: String,
+    conversation_id: Double,
+    datetime: Double,
+    from: String,
+    id: Double,
+    sender_id: Double
+  ): Message = {
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], conversation_id = conversation_id.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sender_id = sender_id.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Message]
+  }
+}
+

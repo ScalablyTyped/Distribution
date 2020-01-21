@@ -8,26 +8,26 @@ package object Runtime {
   /**
     * Id of an execution context.
     */
-  type ExecutionContextId = Double
+  type ExecutionContextId = scala.Double
   /**
     * Unique object identifier.
     */
-  type RemoteObjectId = String
+  type RemoteObjectId = java.lang.String
   /**
     * Unique script identifier.
     */
-  type ScriptId = String
+  type ScriptId = java.lang.String
   /**
     * Number of milliseconds since epoch.
     */
-  type Timestamp = Double
+  type Timestamp = scala.Double
   /**
     * Unique identifier of current debugger.
     * @experimental
     */
-  type UniqueDebuggerId = String
+  type UniqueDebuggerId = java.lang.String
   /**
     * Primitive value which cannot be JSON-stringified.
     */
-  type UnserializableValue = String
+  type UnserializableValue = java.lang.String
 }

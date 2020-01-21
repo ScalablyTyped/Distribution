@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonnet"
-version := "0.0-unknown-dt-20190322Z-54997a"
+version := "0.0-unknown-dt-20190322Z-5a91a5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

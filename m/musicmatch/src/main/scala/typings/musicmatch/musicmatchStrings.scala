@@ -1,7 +1,7 @@
 package typings.musicmatch
 
-import typings.musicmatch.musicmatchMod.TFormat
-import typings.musicmatch.musicmatchMod.TSort
+import typings.musicmatch.mod.TFormat
+import typings.musicmatch.mod.TSort
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

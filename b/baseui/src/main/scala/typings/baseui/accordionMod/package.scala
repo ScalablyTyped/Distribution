@@ -5,12 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object accordionMod {
-  import typings.baseui.Anon_Children
-  import typings.baseui.Anon_ExpandedBooleanOptional
-  import typings.baseui.baseuiStrings.expand
-
-  type PanelProps = SharedPanelProps with Anon_ExpandedBooleanOptional
-  type StateReducer[T] = js.Function3[expand, /* nextState */ T, /* currentState */ T, T]
-  type StatefulPanelContainerProps = SharedStatefulPanelContainerProps with Anon_Children
-  type StatefulPanelProps = SharedPanelProps with SharedStatefulPanelContainerProps
+  type PanelProps = typings.baseui.accordionMod.SharedPanelProps with typings.baseui.AnonExpandedBooleanOptional
+  type StateReducer[T] = js.Function3[typings.baseui.baseuiStrings.expand, /* nextState */ T, /* currentState */ T, T]
+  type StatefulPanelContainerProps = typings.baseui.accordionMod.SharedStatefulPanelContainerProps with typings.baseui.AnonChildren
+  type StatefulPanelProps = typings.baseui.accordionMod.SharedPanelProps with typings.baseui.accordionMod.SharedStatefulPanelContainerProps
 }

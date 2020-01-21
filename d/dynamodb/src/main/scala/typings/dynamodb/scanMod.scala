@@ -14,7 +14,7 @@ object scanMod extends js.Object {
   trait Scan extends js.Object {
     @JSName("exec")
     var exec_Original: ExecuteFilter = js.native
-    def addFilterCondition(condition: Anon_AttributeNames): Scan = js.native
+    def addFilterCondition(condition: AnonAttributeNames): Scan = js.native
     def attributes(attrs: String): Scan = js.native
     def attributes(attrs: js.Array[String]): Scan = js.native
     def beginsWith(name: String): Scan = js.native

@@ -1,8 +1,8 @@
 package typings.protractor
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.seleniumDashWebdriver.chromeMod.Options
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Capabilities
+import typings.seleniumWebdriver.chromeMod.Options
+import typings.seleniumWebdriver.mod.Capabilities
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

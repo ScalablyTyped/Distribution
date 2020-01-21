@@ -1,6 +1,6 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.TitlePane
 import typings.dojo.dojoStrings.closable
 import typings.dojo.dojoStrings.dragRestriction
@@ -88,7 +88,7 @@ class Portlet () extends TitlePane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dragRestriction(
     property: dragRestriction,
@@ -98,7 +98,7 @@ class Portlet () extends TitlePane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_resizeChildren(
     property: resizeChildren,
@@ -108,6 +108,6 @@ class Portlet () extends TitlePane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

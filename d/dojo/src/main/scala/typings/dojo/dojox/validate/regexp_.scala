@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("regexp")
 trait regexp_ extends js.Object {
   /**
     *

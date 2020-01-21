@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var id: String = js.native
-  var lastError: js.UndefOr[LastError] = js.native
+  var lastError: js.UndefOr[LastError_] = js.native
   var onBrowserUpdateAvailable: RuntimeEvent = js.native
   var onConnect: ExtensionConnectEvent = js.native
   var onConnectExternal: ExtensionConnectEvent = js.native

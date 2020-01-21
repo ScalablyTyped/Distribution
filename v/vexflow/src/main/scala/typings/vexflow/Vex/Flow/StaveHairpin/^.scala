@@ -1,7 +1,7 @@
 package typings.vexflow.Vex.Flow.StaveHairpin
 
-import typings.vexflow.Anon_Firstnote
-import typings.vexflow.Anon_HeightLeftshiftticks
+import typings.vexflow.AnonFirstnote
+import typings.vexflow.AnonHeightLeftshiftticks
 import typings.vexflow.Vex.Flow.Formatter
 import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
@@ -15,17 +15,17 @@ object ^ extends js.Object {
   def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: Formatter,
-    notes: Anon_Firstnote,
+    notes: AnonFirstnote,
     `type`: `type`,
     position: Position
   ): Unit = js.native
   def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: Formatter,
-    notes: Anon_Firstnote,
+    notes: AnonFirstnote,
     `type`: `type`,
     position: Position,
-    options: Anon_HeightLeftshiftticks
+    options: AnonHeightLeftshiftticks
   ): Unit = js.native
 }
 

@@ -1,13 +1,13 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.sharepoint.Anon_Bottom
+import typings.sharepoint.AnonBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
 trait IEditActorCellContext extends js.Object {
-  var cellExpandSpace: Anon_Bottom
+  var cellExpandSpace: AnonBottom
   var column: ColumnInfo
   var field: GridField
   var fieldKey: String
@@ -21,7 +21,7 @@ object IEditActorCellContext {
   @scala.inline
   def apply(
     SetCurrentValue: js.Any => Unit,
-    cellExpandSpace: Anon_Bottom,
+    cellExpandSpace: AnonBottom,
     column: ColumnInfo,
     field: GridField,
     fieldKey: String,

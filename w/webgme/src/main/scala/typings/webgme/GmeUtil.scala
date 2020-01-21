@@ -13,7 +13,8 @@ object GmeUtil extends js.Object {
     def stringify(thing: js.Any): String = js.native
   }
   
-  var CANON: Canon = js.native
+  @JSName("CANON")
+  var CANON_ : Canon = js.native
   def ASSERT(condition: Boolean): scala.Nothing = js.native
 }
 

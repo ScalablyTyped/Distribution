@@ -1,6 +1,6 @@
 package typings.dojo.dojox.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.hasResizableColumns
 import typings.dojo.dojoStrings.isLeftFixed
 import typings.dojo.dojoStrings.isRightFixed
@@ -116,7 +116,7 @@ class GridContainer protected () extends GridContainerLite {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isLeftFixed(
     property: isLeftFixed,
@@ -126,7 +126,7 @@ class GridContainer protected () extends GridContainerLite {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isRightFixed(
     property: isRightFixed,
@@ -136,7 +136,7 @@ class GridContainer protected () extends GridContainerLite {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_liveResizeColumns(
     property: liveResizeColumns,
@@ -146,7 +146,7 @@ class GridContainer protected () extends GridContainerLite {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minChildWidth(
     property: minChildWidth,
@@ -156,7 +156,7 @@ class GridContainer protected () extends GridContainerLite {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minColWidth(
     property: minColWidth,
@@ -166,7 +166,7 @@ class GridContainer protected () extends GridContainerLite {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_mode(
     property: mode,
@@ -176,6 +176,6 @@ class GridContainer protected () extends GridContainerLite {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

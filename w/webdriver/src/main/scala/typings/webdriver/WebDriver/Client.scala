@@ -374,18 +374,18 @@ trait Client extends js.Object {
     */
   def getDisplayDensity(): js.Any = js.native
   /**
-    * [jsonwp]
-    * Get the value of an element's attribute.
-    * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidattributename
-    */
-  def getElementAttribute(elementId: String, name: String): String | Null = js.native
-  /**
     * [webdriver]
     * The Get Element Attribute command will return the attribute of a web element.
     * https://w3c.github.io/webdriver/#dfn-get-element-attribute
     */
+  def getElementAttribute(elementId: String, name: String): String = js.native
+  /**
+    * [jsonwp]
+    * Get the value of an element's attribute.
+    * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidattributename
+    */
   @JSName("getElementAttribute")
-  def getElementAttribute_String(elementId: String, name: String): String = js.native
+  def getElementAttribute_Union(elementId: String, name: String): String | Null = js.native
   /**
     * [webdriver]
     * The Get Element CSS Value command retrieves the computed value of the given CSS property of the given web element.

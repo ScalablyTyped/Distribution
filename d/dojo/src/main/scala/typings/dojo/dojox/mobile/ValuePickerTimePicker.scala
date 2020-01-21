@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.date
 import typings.dojo.dojoStrings.hourMinusBtnLabel
 import typings.dojo.dojoStrings.hourMinusBtnLabelRef
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.mobile._TimePickerMixin because Inheritance from two classes. Inlined date, reset */ @JSGlobal("dojox.mobile.ValuePickerTimePicker")
+- typings.dojo.dojox.mobile.TimePickerMixin because Inheritance from two classes. Inlined date, reset */ @JSGlobal("dojox.mobile.ValuePickerTimePicker")
 @js.native
 class ValuePickerTimePicker () extends ValuePicker {
   def this(params: js.Object) = this()
@@ -162,7 +162,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[Date], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hourMinusBtnLabel(
     property: hourMinusBtnLabel,
@@ -172,7 +172,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hourMinusBtnLabelRef(
     property: hourMinusBtnLabelRef,
@@ -182,7 +182,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hourPlusBtnLabel(
     property: hourPlusBtnLabel,
@@ -192,7 +192,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hourPlusBtnLabelRef(
     property: hourPlusBtnLabelRef,
@@ -202,7 +202,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_is24h(
     property: is24h,
@@ -212,7 +212,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minuteMinusBtnLabel(
     property: minuteMinusBtnLabel,
@@ -222,7 +222,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minuteMinusBtnLabelRef(
     property: minuteMinusBtnLabelRef,
@@ -232,7 +232,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minutePlusBtnLabel(
     property: minutePlusBtnLabel,
@@ -242,7 +242,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minutePlusBtnLabelRef(
     property: minutePlusBtnLabelRef,
@@ -252,7 +252,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_readOnly(
     property: readOnly,
@@ -262,7 +262,7 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_values12(
     property: values12,
@@ -272,6 +272,6 @@ class ValuePickerTimePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

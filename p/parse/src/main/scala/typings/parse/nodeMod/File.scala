@@ -1,8 +1,8 @@
 package typings.parse.nodeMod
 
-import typings.parse.Anon_Base64
-import typings.parse.Anon_Size
-import typings.parse.Anon_Uri
+import typings.parse.AnonBase64
+import typings.parse.AnonSize
+import typings.parse.AnonUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,14 +38,14 @@ import scala.scalajs.js.annotation._
 @JSImport("parse/node", "File")
 @js.native
 class File protected ()
-  extends typings.parse.parseMod.File {
+  extends typings.parse.mod.File {
   def this(name: String, data: js.Array[Double]) = this()
-  def this(name: String, data: Anon_Base64) = this()
-  def this(name: String, data: Anon_Size) = this()
-  def this(name: String, data: Anon_Uri) = this()
+  def this(name: String, data: AnonBase64) = this()
+  def this(name: String, data: AnonSize) = this()
+  def this(name: String, data: AnonUri) = this()
   def this(name: String, data: js.Array[Double], `type`: String) = this()
-  def this(name: String, data: Anon_Base64, `type`: String) = this()
-  def this(name: String, data: Anon_Size, `type`: String) = this()
-  def this(name: String, data: Anon_Uri, `type`: String) = this()
+  def this(name: String, data: AnonBase64, `type`: String) = this()
+  def this(name: String, data: AnonSize, `type`: String) = this()
+  def this(name: String, data: AnonUri, `type`: String) = this()
 }
 

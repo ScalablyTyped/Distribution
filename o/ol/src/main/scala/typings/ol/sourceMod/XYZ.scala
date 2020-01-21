@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceXYZMod.Options
-import typings.ol.sourceXYZMod.default
+import typings.ol.xyzMod.Options
+import typings.ol.xyzMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

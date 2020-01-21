@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.leftLabel
 import typings.dojo.dojoStrings.name
 import typings.dojo.dojoStrings.rightLabel
@@ -9,7 +9,7 @@ import typings.dojo.dojoStrings.shape
 import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.tabIndex
 import typings.dojo.dojoStrings.value
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,9 +27,9 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling */ @JSGlobal("dojox.mobile.Switch")
+- typings.dojo.dijit.Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling */ @JSGlobal("dojox.mobile.Switch")
 @js.native
-class Switch () extends _WidgetBase {
+class Switch () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -125,7 +125,7 @@ class Switch () extends _WidgetBase {
     *
     * @param e
     */
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event_): Unit = js.native
   /**
     * Stub function to connect to from your application.
     * Called when the state has been changed.
@@ -138,19 +138,19 @@ class Switch () extends _WidgetBase {
     *
     * @param e
     */
-  def onTouchEnd(e: Event): Unit = js.native
+  def onTouchEnd(e: Event_): Unit = js.native
   /**
     * Internal function to handle touchMove events.
     *
     * @param e
     */
-  def onTouchMove(e: Event): Unit = js.native
+  def onTouchMove(e: Event_): Unit = js.native
   /**
     * Internal function to handle touchStart events.
     *
     * @param e
     */
-  def onTouchStart(e: Event): Unit = js.native
+  def onTouchStart(e: Event_): Unit = js.native
   /**
     * Track specified handles and remove/destroy them when this instance is destroyed, unless they were
     * already removed/destroyed manually.
@@ -185,7 +185,7 @@ class Switch () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_name(
     property: name,
@@ -195,7 +195,7 @@ class Switch () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_rightLabel(
     property: rightLabel,
@@ -205,7 +205,7 @@ class Switch () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_shape(
     property: shape,
@@ -215,7 +215,7 @@ class Switch () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tabIndex(
     property: tabIndex,
@@ -225,7 +225,7 @@ class Switch () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -235,6 +235,6 @@ class Switch () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.parchment
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.parchment.distSrcBlotScrollMod.default
-import typings.parchment.distSrcRegistryMod.Scope
+import typings.parchment.registryMod.Scope
+import typings.parchment.scrollMod.default
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

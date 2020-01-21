@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mergeMod {
-  type Merge = Merge_
+  type Merge = typings.nodegit.mergeMod.Merge_
 }

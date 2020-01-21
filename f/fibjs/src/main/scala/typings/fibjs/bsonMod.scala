@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bson", JSImport.Namespace)
 @js.native
 object bsonMod extends js.Object {
-  def decode(data: Class_Buffer): js.Object = js.native
-  def encode(data: js.Object): Class_Buffer = js.native
+  def decode(data: ClassBuffer): js.Object = js.native
+  def encode(data: js.Object): ClassBuffer = js.native
 }
 

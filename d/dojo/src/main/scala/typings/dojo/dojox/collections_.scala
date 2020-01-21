@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("collections")
 trait collections_ extends js.Object
 

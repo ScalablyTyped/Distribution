@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SpeechSynthesis")
 @js.native
-class SpeechSynthesisCls () extends SpeechSynthesis
+class SpeechSynthesisCls () extends SpeechSynthesis_
 

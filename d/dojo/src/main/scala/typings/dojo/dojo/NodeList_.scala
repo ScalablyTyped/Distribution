@@ -1,8 +1,8 @@
 package typings.dojo.dojo
 
-import typings.dojo.Anon_Type
-import typings.dojo.dojox.dtl.__ObjectArgs
-import typings.dojo.dojox.dtl.__StringArgs
+import typings.dojo.AnonType
+import typings.dojo.dojox.dtl.ObjectArgs
+import typings.dojo.dojox.dtl.StringArgs
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +51,7 @@ class NodeList_ protected () extends js.Object {
     * @param cssClass
     * @param args
     */
-  def addClassFx(cssClass: js.Any, args: js.Any): Anon_Type = js.native
+  def addClassFx(cssClass: js.Any, args: js.Any): AnonType = js.native
   /**
     * add a node, NodeList or some HTML as a string to every item in the
     * list.  Returns the original list.
@@ -406,21 +406,21 @@ class NodeList_ protected () extends js.Object {
     * @param template The template string or location
     * @param context The context object or location
     */
-  def dtl(template: String, context: __ObjectArgs): js.Function = js.native
+  def dtl(template: String, context: ObjectArgs): js.Function = js.native
   /**
     * Renders the specified template in each of the NodeList entries.
     *
     * @param template The template string or location
     * @param context The context object or location
     */
-  def dtl(template: __StringArgs, context: js.Object): js.Function = js.native
+  def dtl(template: StringArgs, context: js.Object): js.Function = js.native
   /**
     * Renders the specified template in each of the NodeList entries.
     *
     * @param template The template string or location
     * @param context The context object or location
     */
-  def dtl(template: __StringArgs, context: __ObjectArgs): js.Function = js.native
+  def dtl(template: StringArgs, context: ObjectArgs): js.Function = js.native
   /**
     * clears all content from each node in the list. Effectively
     * equivalent to removing all child nodes from every item in
@@ -816,7 +816,7 @@ class NodeList_ protected () extends js.Object {
     * @param cssClass
     * @param args
     */
-  def removeClassFx(cssClass: js.Any, args: js.Any): Anon_Type = js.native
+  def removeClassFx(cssClass: js.Any, args: js.Any): AnonType = js.native
   /**
     * Remove the data associated with these nodes.
     *
@@ -973,7 +973,7 @@ class NodeList_ protected () extends js.Object {
     * @param force
     * @param args
     */
-  def toggleClassFx(cssClass: js.Any, force: js.Any, args: js.Any): Anon_Type = js.native
+  def toggleClassFx(cssClass: js.Any, force: js.Any, args: js.Any): AnonType = js.native
   /**
     * If a value is passed, allows seting the value property of form elements in this
     * NodeList, or properly selecting/checking the right value for radio/checkbox/select

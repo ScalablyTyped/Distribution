@@ -26,33 +26,54 @@ import scala.scalajs.js.annotation._
 @JSImport("profiler", JSImport.Namespace)
 @js.native
 object profilerMod extends js.Object {
-  val Edge_ContextVariable: `0` = js.native
-  val Edge_Element: `1` = js.native
-  val Edge_Hidden: `4` = js.native
-  val Edge_Internal: `3` = js.native
-  val Edge_Property: `2` = js.native
-  val Edge_Shortcut: `5` = js.native
-  val Edge_Weak: `6` = js.native
-  val Node_Array: `1` = js.native
-  val Node_Closure: `5` = js.native
-  val Node_Code: `4` = js.native
-  val Node_ConsString: `10` = js.native
-  val Node_HeapNumber: `7` = js.native
-  val Node_Hidden: `0` = js.native
-  val Node_Native: `8` = js.native
-  val Node_Object: `3` = js.native
-  val Node_RegExp: `6` = js.native
-  val Node_SimdValue: `13` = js.native
-  val Node_SlicedString: `11` = js.native
-  val Node_String: `2` = js.native
-  val Node_Symbol: `12` = js.native
-  val Node_Synthetic: `9` = js.native
+  @JSName("Edge_ContextVariable")
+  val EdgeContextVariable: `0` = js.native
+  @JSName("Edge_Element")
+  val EdgeElement: `1` = js.native
+  @JSName("Edge_Hidden")
+  val EdgeHidden: `4` = js.native
+  @JSName("Edge_Internal")
+  val EdgeInternal: `3` = js.native
+  @JSName("Edge_Property")
+  val EdgeProperty: `2` = js.native
+  @JSName("Edge_Shortcut")
+  val EdgeShortcut: `5` = js.native
+  @JSName("Edge_Weak")
+  val EdgeWeak: `6` = js.native
+  @JSName("Node_Array")
+  val NodeArray: `1` = js.native
+  @JSName("Node_Closure")
+  val NodeClosure: `5` = js.native
+  @JSName("Node_Code")
+  val NodeCode: `4` = js.native
+  @JSName("Node_ConsString")
+  val NodeConsString: `10` = js.native
+  @JSName("Node_HeapNumber")
+  val NodeHeapNumber: `7` = js.native
+  @JSName("Node_Hidden")
+  val NodeHidden: `0` = js.native
+  @JSName("Node_Native")
+  val NodeNative: `8` = js.native
+  @JSName("Node_Object")
+  val NodeObject: `3` = js.native
+  @JSName("Node_RegExp")
+  val NodeRegExp: `6` = js.native
+  @JSName("Node_SimdValue")
+  val NodeSimdValue: `13` = js.native
+  @JSName("Node_SlicedString")
+  val NodeSlicedString: `11` = js.native
+  @JSName("Node_String")
+  val NodeString: `2` = js.native
+  @JSName("Node_Symbol")
+  val NodeSymbol: `12` = js.native
+  @JSName("Node_Synthetic")
+  val NodeSynthetic: `9` = js.native
   def diff(test: js.Function): js.Object = js.native
-  def loadSnapshot(fname: String): Class_HeapSnapshot = js.native
+  def loadSnapshot(fname: String): ClassHeapSnapshot = js.native
   def saveSnapshot(fname: String): Unit = js.native
-  def start(fname: String): Class_Timer = js.native
-  def start(fname: String, time: Double): Class_Timer = js.native
-  def start(fname: String, time: Double, interval: Double): Class_Timer = js.native
-  def takeSnapshot(): Class_HeapSnapshot = js.native
+  def start(fname: String): ClassTimer = js.native
+  def start(fname: String, time: Double): ClassTimer = js.native
+  def start(fname: String, time: Double, interval: Double): ClassTimer = js.native
+  def takeSnapshot(): ClassHeapSnapshot = js.native
 }
 

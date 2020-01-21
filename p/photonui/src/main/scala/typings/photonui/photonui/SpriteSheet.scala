@@ -1,7 +1,7 @@
 package typings.photonui.photonui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.photonui.Anon_X
+import typings.photonui.AnonX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class SpriteSheet () extends Base {
   var size: String = js.native
   def addIcon(iconName: String, x: Double, y: Double): Unit = js.native
   def getIconCSS(iconName: String): String = js.native
-  def getIconPosition(iconName: String): Anon_X = js.native
+  def getIconPosition(iconName: String): AnonX = js.native
   def removeIcon(iconName: String): Unit = js.native
 }
 

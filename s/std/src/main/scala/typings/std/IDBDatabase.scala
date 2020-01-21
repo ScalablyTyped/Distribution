@@ -19,57 +19,57 @@ trait IDBDatabase extends EventTarget {
     * Returns a list of the names of object stores in the database.
     */
   val objectStoreNames: DOMStringList = js.native
-  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onabort: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onclose: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   var onversionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ IDBVersionChangeEvent, _]) | Null = js.native
   /**
     * Returns the version of the database.
     */
   val version: Double = js.native
   @JSName("addEventListener")
-  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -107,48 +107,48 @@ trait IDBDatabase extends EventTarget {
     */
   def deleteObjectStore(name: java.lang.String): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
     `type`: abort,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

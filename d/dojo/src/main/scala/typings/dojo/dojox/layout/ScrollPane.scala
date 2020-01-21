@@ -1,6 +1,6 @@
 package typings.dojo.dojox.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.autoHide
 import typings.dojo.dojoStrings.contextRequire
@@ -29,10 +29,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @JSGlobal("dojox.layout.ScrollPane")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @JSGlobal("dojox.layout.ScrollPane")
 @js.native
 class ScrollPane ()
   extends typings.dojo.dijit.layout.ContentPane {
@@ -137,7 +137,7 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_autoHide(
     property: autoHide,
@@ -147,7 +147,7 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_contextRequire(
     property: contextRequire,
@@ -157,7 +157,7 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_orientation(
     property: orientation,
@@ -167,7 +167,7 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -177,7 +177,7 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -187,7 +187,7 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -197,7 +197,7 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_widgetsInTemplate(
     property: widgetsInTemplate,
@@ -207,6 +207,6 @@ class ScrollPane ()
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

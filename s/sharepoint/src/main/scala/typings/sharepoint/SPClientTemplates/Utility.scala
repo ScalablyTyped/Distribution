@@ -25,7 +25,7 @@ object Utility extends js.Object {
   def ControlModeToString(mode: ClientControlMode): String = js.native
   def FileSystemObjectTypeToString(fileSystemObjectType: FileSystemObjectType): String = js.native
   def GetControlOptions(control: HTMLElement): js.Any = js.native
-  def GetFormContextForCurrentField(context: RenderContext_Form): ClientFormContext = js.native
+  def GetFormContextForCurrentField(context: RenderContextForm): ClientFormContext = js.native
   def GetPropertiesFromPageContextInfo(context: RenderContext): Unit = js.native
   /** Creates SP.ClientContext based on the specified Web URL. If the SP.Runtime.js script is not loaded, returns null */
   def InitContext(webUrl: String): ClientContext = js.native

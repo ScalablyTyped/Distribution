@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("android.view.MenuItem")
 @js.native
 class MenuItem_ protected () extends js.Object {
-  def this(menu: Menu, group: Double, id: Double, categoryOrder: Double, ordering: Double, title: String) = this()
+  def this(menu: Menu_, group: Double, id: Double, categoryOrder: Double, ordering: Double, title: String) = this()
   var mActionView: js.Any = js.native
   var mCategoryOrder: js.Any = js.native
   var mClickListener: js.Any = js.native

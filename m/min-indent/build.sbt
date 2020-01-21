@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "min-indent"
-version := "1.0-dt-20181217Z-6a8fea"
+version := "1.0-dt-20181217Z-a4ed43"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

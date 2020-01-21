@@ -1,6 +1,6 @@
 package typings.dojo.dojo.dnd
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -63,19 +63,19 @@ class Selector protected () extends Container {
     *
     * @param e mouse event
     */
-  def onMouseDown(e: Event): Unit = js.native
+  def onMouseDown(e: Event_): Unit = js.native
   /**
     * event processor for onmousemove
     *
     * @param e mouse event
     */
-  def onMouseMove(e: Event): Unit = js.native
+  def onMouseMove(e: Event_): Unit = js.native
   /**
     * event processor for onmouseup
     *
     * @param e mouse event
     */
-  def onMouseUp(e: Event): Unit = js.native
+  def onMouseUp(e: Event_): Unit = js.native
   /**
     * selects all items
     *

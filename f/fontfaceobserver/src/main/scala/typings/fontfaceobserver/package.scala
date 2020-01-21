@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fontfaceobserver {
-  type FontFaceObserver = FontFaceObserver_
+  type FontFaceObserver = typings.fontfaceobserver.FontFaceObserver_
 }

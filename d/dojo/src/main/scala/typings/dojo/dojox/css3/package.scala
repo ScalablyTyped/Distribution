@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object css3 {
-  import typings.std.HTMLElement
-
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/css3/transit.html
     *
@@ -22,10 +20,10 @@ package object css3 {
     * @param options       OptionalThe argument to specify the transit effect and direction.The effect can be specified in options.transition. Thevalid values are 'slide', 'flip', 'fade', 'none'.The direction can be specified in options.reverse. If itis true, the transit effects will be conducted in thereverse direction to the default direction. Finally the durationof the transition can be overridden by setting the duration property.
     */
   type transit = js.Function3[
-    /* from */ HTMLElement, 
-    /* to */ HTMLElement, 
+    /* from */ typings.std.HTMLElement, 
+    /* to */ typings.std.HTMLElement, 
     /* options */ js.UndefOr[js.Object], 
-    Unit
+    scala.Unit
   ]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/css3/transition.html
@@ -35,5 +33,5 @@ package object css3 {
     *
     * @param args       OptionalThe arguments which will be mixed into this transition object.
     */
-  type transition = js.Function1[/* args */ js.UndefOr[js.Object], Unit]
+  type transition = js.Function1[/* args */ js.UndefOr[js.Object], scala.Unit]
 }

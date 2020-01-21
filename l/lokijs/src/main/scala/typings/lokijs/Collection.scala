@@ -65,9 +65,9 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   /**
     * a collection of objects recording the changes applied through a commmitStage
     */
-  var commitLog: js.Array[Anon_Data] = js.native
-  var console: Anon_Args = js.native
-  var constraints: Anon_Exact[E] = js.native
+  var commitLog: js.Array[AnonData] = js.native
+  var console: AnonArgs = js.native
+  var constraints: AnonExact[E] = js.native
   var data: js.Array[E] = js.native
   var dirty: Boolean = js.native
   var disableChangesApi: Boolean = js.native
@@ -85,7 +85,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   var stages: StringDictionary[js.Any] = js.native
   var transactional: Boolean = js.native
   var transforms: StringDictionary[js.Array[Transform]] = js.native
-  var ttl: Anon_Age = js.native
+  var ttl: AnonAge = js.native
   var uniqueNames: js.Array[String] = js.native
   /**
     * Adaptively insert a selected item to the index.
@@ -154,17 +154,17 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @returns average of property in all docs in the collection
     */
   def avg(field: String): Double = js.native
-  def by(field: String): js.UndefOr[E | (js.Function1[/* value */ js.Any, js.UndefOr[E]])] = js.native
-  def by(field: String, value: js.Any): js.UndefOr[E] = js.native
-  def byExample(template: js.Object): Anon_AndAny = js.native
   /**
     * Retrieve doc by Unique index
     * @param field - name of uniquely indexed property to use when doing lookup
     * @param value - unique value to search for
     * @returns document matching the value passed
     */
+  def by(field: String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
+  def by(field: String, value: js.Any): js.UndefOr[E] = js.native
+  def byExample(template: js.Object): AnonAndAny = js.native
   @JSName("by")
-  def by_Function1(field: String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
+  def by_Union(field: String): js.UndefOr[E | (js.Function1[/* value */ js.Any, js.UndefOr[E]])] = js.native
   /**
     * Internal method used for indexed $between.  Given a prop (index name), and a value
     * (which may or may not yet exist) this will find the final position of that upper range value.
@@ -252,7 +252,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.removeIndices] - (default: false)
     */
   def clear(): Unit = js.native
-  def clear(options: Anon_RemoveIndices): Unit = js.native
+  def clear(options: AnonRemoveIndices): Unit = js.native
   /** commit the transation */
   def commit(): Unit = js.native
   /**
@@ -267,7 +267,7 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.adaptiveBinaryIndices] - collection indices will be actively rebuilt rather than lazily
     */
   def configureOptions(): Unit = js.native
-  def configureOptions(options: Anon_AdaptiveBinaryIndices): Unit = js.native
+  def configureOptions(options: AnonAdaptiveBinaryIndices): Unit = js.native
   /**
     * Quickly determine number of documents in collection (or query)
     * @param [query] - (optional) query object to count results of
@@ -633,19 +633,19 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     reduceFunction: js.Function1[/* ary */ js.Array[U], R]
   ): R = js.native
   def max(field: String): Double = js.native
-  def maxRecord(field: String): Anon_Index = js.native
+  def maxRecord(field: String): AnonIndex = js.native
   /**
     * @param field - property name
     */
   def median(field: String): Double = js.native
   def min(field: String): Double = js.native
-  def minRecord(field: String): Anon_Index = js.native
+  def minRecord(field: String): AnonIndex = js.native
   /**
     * @param field
     */
   def mode(field: String): js.UndefOr[String] = js.native
   def no_op(): Unit = js.native
-  def observerCallback(changes: js.Array[Anon_Object]): Unit = js.native
+  def observerCallback(changes: js.Array[AnonObject]): Unit = js.native
   /*----------------------------+
     | INDEXING                    |
     +----------------------------*/

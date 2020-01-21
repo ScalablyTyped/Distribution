@@ -1,6 +1,6 @@
 package typings.dynogels
 
-import typings.dynogels.dynogelsMod.LifeCycleAction
+import typings.dynogels.mod.LifeCycleAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

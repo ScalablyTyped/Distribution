@@ -1,7 +1,7 @@
 package typings.ionic.libStartMod
 
-import typings.atIonicCliDashFramework.definitionsMod.CommandLineOptions
-import typings.ionic.Anon_Log
+import typings.ionic.AnonLog
+import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/lib/start", "verifyOptions")
 @js.native
 object verifyOptions extends js.Object {
-  def apply(options: CommandLineOptions, hasLog: Anon_Log): Unit = js.native
+  def apply(options: CommandLineOptions, hasLog: AnonLog): Unit = js.native
 }
 

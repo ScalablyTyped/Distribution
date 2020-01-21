@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jpegtran-bin"
-version := "3.2-dt-20180420Z-3a7636"
+version := "3.2-dt-20180420Z-da7f57"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

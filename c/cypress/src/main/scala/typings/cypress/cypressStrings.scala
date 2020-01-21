@@ -1,18 +1,18 @@
 package typings.cypress
 
-import typings.cypress.Cypress.Encodings
-import typings.cypress.Cypress.HistoryDirection
-import typings.cypress.Cypress.PositionType
-import typings.cypress.Cypress.PrevSubject
-import typings.cypress.Cypress.ViewportOrientation
-import typings.cypress.Cypress.ViewportPreset
-import typings.cypress.JQuery.Ajax.ErrorTextStatus
-import typings.cypress.JQuery.Ajax.SuccessTextStatus
-import typings.cypress.JQuery.Ajax.TextStatus
-import typings.cypress.JQuery._Duration
-import typings.cypress.JQuery.__Falsy
-import typings.cypress.Mocha.Interface
-import typings.cypress.Mocha.Reporter
+import typings.cypress.JQuery_.Ajax.ErrorTextStatus
+import typings.cypress.JQuery_.Ajax.SuccessTextStatus
+import typings.cypress.JQuery_.Ajax.TextStatus
+import typings.cypress.JQuery_._Duration
+import typings.cypress.JQuery_._Falsy
+import typings.cypress.Mocha_.Interface
+import typings.cypress.Mocha_.Reporter
+import typings.cypress.cypressMod.Cypress.Encodings
+import typings.cypress.cypressMod.Cypress.HistoryDirection
+import typings.cypress.cypressMod.Cypress.PositionType
+import typings.cypress.cypressMod.Cypress.PrevSubject
+import typings.cypress.cypressMod.Cypress.ViewportOrientation
+import typings.cypress.cypressMod.Cypress.ViewportPreset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,7 +139,7 @@ object cypressStrings {
   sealed trait _TypeEventHandlers extends js.Object
   
   @js.native
-  sealed trait _empty extends __Falsy
+  sealed trait _empty extends _Falsy
   
   @js.native
   sealed trait a extends js.Object

@@ -13,7 +13,7 @@ package object digests {
     * @param data
     * @param outputType       Optional
     */
-  type MD5 = js.Function2[/* data */ String, /* outputType */ js.UndefOr[js.Object], Unit]
+  type MD5 = js.Function2[/* data */ java.lang.String, /* outputType */ js.UndefOr[js.Object], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/encoding/digests/SHA1.html
     *
@@ -22,7 +22,7 @@ package object digests {
     * @param data
     * @param outputType       Optional
     */
-  type SHA1 = js.Function2[/* data */ String, /* outputType */ js.UndefOr[js.Object], Unit]
+  type SHA1 = js.Function2[/* data */ java.lang.String, /* outputType */ js.UndefOr[js.Object], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/encoding/digests/SHA224.html
     *
@@ -30,7 +30,7 @@ package object digests {
     * @param data
     * @param outputType       Optional
     */
-  type SHA224 = js.Function2[/* data */ String, /* outputType */ js.UndefOr[Double], Unit]
+  type SHA224 = js.Function2[/* data */ java.lang.String, /* outputType */ js.UndefOr[scala.Double], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/encoding/digests/SHA256.html
     *
@@ -38,7 +38,7 @@ package object digests {
     * @param data
     * @param outputType       Optional
     */
-  type SHA256 = js.Function2[/* data */ String, /* outputType */ js.UndefOr[Double], Unit]
+  type SHA256 = js.Function2[/* data */ java.lang.String, /* outputType */ js.UndefOr[scala.Double], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/encoding/digests/SHA384.html
     *
@@ -46,7 +46,7 @@ package object digests {
     * @param data
     * @param outputType       Optional
     */
-  type SHA384 = js.Function2[/* data */ String, /* outputType */ js.UndefOr[Double], Unit]
+  type SHA384 = js.Function2[/* data */ java.lang.String, /* outputType */ js.UndefOr[scala.Double], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/encoding/digests/SHA512.html
     *
@@ -54,6 +54,6 @@ package object digests {
     * @param data
     * @param outputType       Optional
     */
-  type SHA512 = js.Function2[/* data */ String, /* outputType */ js.UndefOr[Double], Unit]
-  type _base = _base_
+  type SHA512 = js.Function2[/* data */ java.lang.String, /* outputType */ js.UndefOr[scala.Double], scala.Unit]
+  type base = typings.dojo.dojox.encoding.digests.base_
 }

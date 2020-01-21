@@ -3,8 +3,8 @@ package typings.ol.pluggableMapMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.extentMod.Extent
 import typings.ol.layerLayerMod.State
+import typings.ol.olMod.Transform
 import typings.ol.sizeMod.Size
-import typings.ol.transformMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

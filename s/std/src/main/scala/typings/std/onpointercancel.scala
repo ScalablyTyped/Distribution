@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("onpointercancel")
 @js.native
 object onpointercancel
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ PointerEvent, js.Any]) | Null]
 

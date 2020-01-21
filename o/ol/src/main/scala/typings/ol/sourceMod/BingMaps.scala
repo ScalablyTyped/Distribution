@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceBingMapsMod.Options
-import typings.ol.sourceBingMapsMod.default
+import typings.ol.bingMapsMod.Options
+import typings.ol.bingMapsMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onpageshow
   extends TopLevel[
-      (js.ThisFunction1[/* this */ Window, /* ev */ PageTransitionEvent, js.Any]) | Null
+      (js.ThisFunction1[/* this */ Window_, /* ev */ PageTransitionEvent, js.Any]) | Null
     ]
 

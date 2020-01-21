@@ -1,6 +1,6 @@
 package typings.naja
 
-import typings.naja.najaMod.RequestMethod
+import typings.naja.mod.RequestMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation._
 
 trait reactProps {
   @scala.inline
-  def FragmentProps: Anon_Children.type = typings.react.Anon_Children
-  type FragmentProps = Anon_Children
+  def FragmentProps: AnonChildren.type = typings.react.AnonChildren
+  type FragmentProps = AnonChildren
   @scala.inline
-  def ProfilerProps: typings.react.reactMod.ProfilerProps.type = typings.react.reactMod.ProfilerProps
-  type ProfilerProps = typings.react.reactMod.ProfilerProps
+  def ProfilerProps: typings.react.mod.ProfilerProps.type = typings.react.mod.ProfilerProps
+  type ProfilerProps = typings.react.mod.ProfilerProps
   @scala.inline
-  def StrictModeProps: Anon_Children.type = typings.react.Anon_Children
-  type StrictModeProps = Anon_Children
+  def StrictModeProps: AnonChildren.type = typings.react.AnonChildren
+  type StrictModeProps = AnonChildren
   @scala.inline
-  def SuspenseProps: typings.react.reactMod.SuspenseProps.type = typings.react.reactMod.SuspenseProps
-  type SuspenseProps = typings.react.reactMod.SuspenseProps
+  def SuspenseProps: typings.react.mod.SuspenseProps.type = typings.react.mod.SuspenseProps
+  type SuspenseProps = typings.react.mod.SuspenseProps
   @scala.inline
-  def SuspenseListProps: typings.react.experimentalMod.reactMod.SuspenseListProps.type = typings.react.experimentalMod.reactMod.SuspenseListProps
-  type SuspenseListProps = typings.react.experimentalMod.reactMod.SuspenseListProps
+  def SuspenseListProps: typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps.type = typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
+  type SuspenseListProps = typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
 }
 

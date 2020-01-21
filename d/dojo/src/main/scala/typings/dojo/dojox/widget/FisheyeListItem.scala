@@ -1,7 +1,7 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.iconSrc
 import typings.dojo.dojoStrings.label
@@ -9,7 +9,7 @@ import typings.dojo.dojoStrings.searchContainerNode
 import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.templatePath
 import typings.dojo.dojoStrings.templateString
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -26,11 +26,11 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.widget.FisheyeListItem")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.widget.FisheyeListItem")
 @js.native
-class FisheyeListItem () extends _WidgetBase {
+class FisheyeListItem () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -141,20 +141,20 @@ class FisheyeListItem () extends _WidgetBase {
     *
     * @param e
     */
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event_): Unit = js.native
   /**
     * callback when user moves mouse off of this menu item
     *
     * @param e
     */
-  def onMouseOut(e: Event): Unit = js.native
+  def onMouseOut(e: Event_): Unit = js.native
   /**
     * callback when user moves mouse over this menu item
     * in conservative mode, don't activate the menu until user mouses over an icon
     *
     * @param e
     */
-  def onMouseOver(e: Event): Unit = js.native
+  def onMouseOver(e: Event_): Unit = js.native
   /**
     * Track specified handles and remove/destroy them when this instance is destroyed, unless they were
     * already removed/destroyed manually.
@@ -184,7 +184,7 @@ class FisheyeListItem () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_iconSrc(
     property: iconSrc,
@@ -194,7 +194,7 @@ class FisheyeListItem () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_label(
     property: label,
@@ -204,7 +204,7 @@ class FisheyeListItem () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -214,7 +214,7 @@ class FisheyeListItem () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -224,7 +224,7 @@ class FisheyeListItem () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -234,6 +234,6 @@ class FisheyeListItem () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ethers", "errors")
+@JSImport("ethers/dist/types/ethers", "errors")
 @js.native
 object errors extends js.Object {
   val CALL_EXCEPTION: typings.ethers.ethersStrings.CALL_EXCEPTION = js.native

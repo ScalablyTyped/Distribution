@@ -1,6 +1,6 @@
 package typings.ionic.definitionsMod
 
-import typings.ionic.Anon_Req
+import typings.ionic.AnonReq
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait PaginatorDeps[T /* <: Response[js.Array[js.Object]] */, S] extends js.Obje
   val max: js.UndefOr[Double] = js.undefined
   val state: js.UndefOr[Partial[S]] = js.undefined
   def guard(res: APIResponseSuccess): /* is T */ Boolean
-  def reqgen(): js.Promise[Anon_Req]
+  def reqgen(): js.Promise[AnonReq]
 }
 
 object PaginatorDeps {
@@ -19,7 +19,7 @@ object PaginatorDeps {
   def apply[T /* <: Response[js.Array[js.Object]] */, S](
     client: IClient,
     guard: APIResponseSuccess => /* is T */ Boolean,
-    reqgen: () => js.Promise[Anon_Req],
+    reqgen: () => js.Promise[AnonReq],
     max: Int | Double = null,
     state: Partial[S] = null
   ): PaginatorDeps[T, S] = {

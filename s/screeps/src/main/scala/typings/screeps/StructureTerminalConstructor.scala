@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait StructureTerminalConstructor extends _ConstructorById[StructureTerminal]
+trait StructureTerminalConstructor extends ConstructorById[StructureTerminal]
 

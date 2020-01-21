@@ -1,6 +1,6 @@
 package typings.dojo.dijit
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.contextMenuForWindow
 import typings.dojo.dojoStrings.currentTarget
 import typings.dojo.dojoStrings.leftClickToOpen
@@ -126,7 +126,7 @@ class Menu () extends DropDownMenu {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_currentTarget(
     property: currentTarget,
@@ -136,7 +136,7 @@ class Menu () extends DropDownMenu {
       /* newValue */ js.UndefOr[HTMLElement], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_leftClickToOpen(
     property: leftClickToOpen,
@@ -146,7 +146,7 @@ class Menu () extends DropDownMenu {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_refocus(
     property: refocus,
@@ -156,7 +156,7 @@ class Menu () extends DropDownMenu {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selector(
     property: selector,
@@ -166,7 +166,7 @@ class Menu () extends DropDownMenu {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_targetNodeIds(
     property: targetNodeIds,
@@ -176,6 +176,6 @@ class Menu () extends DropDownMenu {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -134,7 +134,7 @@ trait FancyBoxOptions extends js.Object {
     * Error message template
     */
   var errorTpl: js.UndefOr[String] = js.undefined
-  var fullScreen: js.UndefOr[Anon_Autostart] = js.undefined
+  var fullScreen: js.UndefOr[AnonAutostart] = js.undefined
   /**
     * Horizontal space between slides
     */
@@ -299,7 +299,7 @@ object FancyBoxOptions {
     dblclickSlide: FancyBoxInteractions = null,
     defaultType: image | `inline` | ajax | iframe | html = null,
     errorTpl: String = null,
-    fullScreen: Anon_Autostart = null,
+    fullScreen: AnonAutostart = null,
     gutter: Int | Double = null,
     hash: js.Any = null,
     hideScrollbar: js.UndefOr[Boolean] = js.undefined,

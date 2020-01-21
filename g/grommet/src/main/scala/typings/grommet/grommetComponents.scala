@@ -1,53 +1,26 @@
 package typings.grommet
 
-import typings.grommet.componentsAccordionMod.AccordionProps
-import typings.grommet.componentsAccordionPanelMod.AccordionPanelProps
-import typings.grommet.componentsAnchorMod.AnchorProps
-import typings.grommet.componentsBoxMod.BoxProps
-import typings.grommet.componentsBoxMod.BoxTypes
-import typings.grommet.componentsButtonMod.ButtonProps
-import typings.grommet.componentsCalendarMod.CalendarProps
-import typings.grommet.componentsCarouselMod.CarouselProps
-import typings.grommet.componentsCheckBoxMod.CheckBoxProps
-import typings.grommet.componentsClockMod.ClockProps
-import typings.grommet.componentsCollapsibleMod.CollapsibleProps
-import typings.grommet.componentsDataTableMod.DataTableProps
-import typings.grommet.componentsDiagramMod.DiagramProps
-import typings.grommet.componentsDistributionMod.DistributionProps
-import typings.grommet.componentsDropButtonMod.DropButtonProps
-import typings.grommet.componentsDropMod.DropProps
-import typings.grommet.componentsFormFieldMod.FormFieldProps
-import typings.grommet.componentsFormMod.FormProps
-import typings.grommet.componentsGridMod.GridProps
-import typings.grommet.componentsGrommetMod.GrommetProps
-import typings.grommet.componentsHeadingMod.HeadingProps
-import typings.grommet.componentsImageMod.ImageProps
-import typings.grommet.componentsLayerMod.LayerProps
-import typings.grommet.componentsListMod.ListProps
-import typings.grommet.componentsMarkdownMod.MarkdownProps
-import typings.grommet.componentsMaskedInputMod.MaskedInputProps
-import typings.grommet.componentsMenuMod.MenuProps
-import typings.grommet.componentsParagraphMod.ParagraphProps
-import typings.grommet.componentsRadioButtonGroupMod.RadioButtonGroupProps
-import typings.grommet.componentsRadioButtonMod.RadioButtonProps
-import typings.grommet.componentsRangeInputMod.RangeInputProps
-import typings.grommet.componentsRangeSelectorMod.RangeSelectorProps
-import typings.grommet.componentsRoutedAnchorMod.RoutedAnchorProps
-import typings.grommet.componentsRoutedButtonMod.RoutedButtonProps
-import typings.grommet.componentsStackMod.StackProps
-import typings.grommet.componentsTabMod.TabProps
-import typings.grommet.componentsTableBodyMod.TableBodyProps
-import typings.grommet.componentsTableCellMod.TableCellProps
-import typings.grommet.componentsTableFooterMod.TableFooterProps
-import typings.grommet.componentsTableHeaderMod.TableHeaderProps
-import typings.grommet.componentsTableMod.TableProps
-import typings.grommet.componentsTableRowMod.TableRowProps
-import typings.grommet.componentsTabsMod.TabsProps
-import typings.grommet.componentsTextAreaMod.TextAreaProps
-import typings.grommet.componentsTextInputMod.TextInputProps
-import typings.grommet.componentsTextMod.TextProps
-import typings.grommet.componentsVideoMod.VideoProps
-import typings.grommet.componentsWorldMapMod.WorldMapProps
+import typings.grommet.accordionMod.AccordionProps
+import typings.grommet.accordionPanelMod.AccordionPanelProps
+import typings.grommet.anchorMod.AnchorProps
+import typings.grommet.boxMod.BoxProps
+import typings.grommet.boxMod.BoxTypes
+import typings.grommet.buttonMod.ButtonProps
+import typings.grommet.buttonMod.ButtonType
+import typings.grommet.calendarMod.CalendarProps
+import typings.grommet.carouselMod.CarouselProps
+import typings.grommet.checkBoxMod.CheckBoxProps
+import typings.grommet.clockMod.ClockProps
+import typings.grommet.collapsibleMod.CollapsibleProps
+import typings.grommet.dataTableMod.DataTableProps
+import typings.grommet.diagramMod.DiagramProps
+import typings.grommet.distributionMod.DistributionProps
+import typings.grommet.dropButtonMod.DropButtonProps
+import typings.grommet.dropMod.DropProps
+import typings.grommet.formFieldMod.FormFieldProps
+import typings.grommet.formMod.FormProps
+import typings.grommet.gridMod.GridProps
+import typings.grommet.grommetMod.GrommetProps
 import typings.grommet.grommetStrings.color
 import typings.grommet.grommetStrings.controls
 import typings.grommet.grommetStrings.href
@@ -60,20 +33,48 @@ import typings.grommet.grommetStrings.plain
 import typings.grommet.grommetStrings.size
 import typings.grommet.grommetStrings.title
 import typings.grommet.grommetStrings.value
+import typings.grommet.headingMod.HeadingProps
+import typings.grommet.imageMod.ImageProps
+import typings.grommet.layerMod.LayerProps
+import typings.grommet.listMod.ListProps
+import typings.grommet.markdownMod.MarkdownProps
+import typings.grommet.maskedInputMod.MaskedInputProps
+import typings.grommet.menuMod.MenuProps
+import typings.grommet.paragraphMod.ParagraphProps
+import typings.grommet.radioButtonGroupMod.RadioButtonGroupProps
+import typings.grommet.radioButtonMod.RadioButtonProps
+import typings.grommet.rangeInputMod.RangeInputProps
+import typings.grommet.rangeSelectorMod.RangeSelectorProps
+import typings.grommet.routedAnchorMod.RoutedAnchorProps
+import typings.grommet.routedButtonMod.RoutedButtonProps
+import typings.grommet.stackMod.StackProps
+import typings.grommet.tabMod.TabProps
+import typings.grommet.tableBodyMod.TableBodyProps
+import typings.grommet.tableCellMod.TableCellProps
+import typings.grommet.tableFooterMod.TableFooterProps
+import typings.grommet.tableHeaderMod.TableHeaderProps
+import typings.grommet.tableMod.TableProps
+import typings.grommet.tableRowMod.TableRowProps
+import typings.grommet.tabsMod.TabsProps
+import typings.grommet.textAreaMod.TextAreaProps
+import typings.grommet.textInputMod.TextInputProps
+import typings.grommet.textMod.TextProps
 import typings.grommet.utilsMod.Omit
-import typings.react.reactMod.AnchorHTMLAttributes
-import typings.react.reactMod.ButtonHTMLAttributes
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.DetailedHTMLProps
-import typings.react.reactMod.FormHTMLAttributes
-import typings.react.reactMod.HTMLAttributes
-import typings.react.reactMod.ImgHTMLAttributes
-import typings.react.reactMod.InputHTMLAttributes
-import typings.react.reactMod.SVGProps
-import typings.react.reactMod.TableHTMLAttributes
-import typings.react.reactMod.TdHTMLAttributes
-import typings.react.reactMod.TextareaHTMLAttributes
-import typings.react.reactMod.VideoHTMLAttributes
+import typings.grommet.videoMod.VideoProps
+import typings.grommet.worldMapMod.WorldMapProps
+import typings.react.mod.AnchorHTMLAttributes
+import typings.react.mod.ButtonHTMLAttributes
+import typings.react.mod.ComponentType
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FormHTMLAttributes
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.ImgHTMLAttributes
+import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.SVGProps
+import typings.react.mod.TableHTMLAttributes
+import typings.react.mod.TdHTMLAttributes
+import typings.react.mod.TextareaHTMLAttributes
+import typings.react.mod.VideoHTMLAttributes
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
@@ -99,17 +100,17 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Accordion: ComponentType[
     AccordionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = typings.grommet.grommetMod.Accordion.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsAccordionMod.AccordionProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = typings.grommet.mod.Accordion.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.accordionMod.AccordionProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
   def AccordionPanel: ComponentType[
     AccordionPanelProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.AccordionPanel].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsAccordionPanelMod.AccordionPanelProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.AccordionPanel].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.accordionPanelMod.AccordionPanelProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
@@ -118,10 +119,10 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
       color
     ])
-  ] = typings.grommet.grommetMod.Anchor.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsAnchorMod.AnchorProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.AnchorHTMLAttributes[typings.std.HTMLAnchorElement], 
+  ] = typings.grommet.mod.Anchor.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.anchorMod.AnchorProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.AnchorHTMLAttributes[typings.std.HTMLAnchorElement], 
       typings.std.HTMLAnchorElement
     ], 
     typings.grommet.grommetStrings.color
@@ -129,9 +130,9 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Box: ComponentType[
     BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = typings.grommet.grommetMod.Box.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsBoxMod.BoxProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = typings.grommet.mod.Box.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.boxMod.BoxProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
@@ -140,10 +141,10 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       color
     ])
-  ] = typings.grommet.grommetMod.Button.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsButtonMod.ButtonProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.ButtonHTMLAttributes[typings.std.HTMLButtonElement], 
+  ] = typings.grommet.mod.Button.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.buttonMod.ButtonProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.ButtonHTMLAttributes[typings.std.HTMLButtonElement], 
       typings.std.HTMLButtonElement
     ], 
     typings.grommet.grommetStrings.color
@@ -151,70 +152,70 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Calendar: ComponentType[
     CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Calendar].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsCalendarMod.CalendarProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Calendar].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.calendarMod.CalendarProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
   def Carousel: ComponentType[
     CarouselProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Carousel].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsCarouselMod.CarouselProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Carousel].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.carouselMod.CarouselProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
-  def Chart: ComponentType[ChartProps] = js.constructorOf[typings.grommet.grommetMod.Chart].asInstanceOf[typings.react.reactMod.ComponentType[ChartProps]]
+  def Chart: ComponentType[ChartProps] = js.constructorOf[typings.grommet.mod.Chart].asInstanceOf[typings.react.mod.ComponentType[ChartProps]]
   @scala.inline
   def CheckBox: ComponentType[
     CheckBoxProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
-  ] = typings.grommet.grommetMod.CheckBox.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsCheckBoxMod.CheckBoxProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement], 
+  ] = typings.grommet.mod.CheckBox.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.checkBoxMod.CheckBoxProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
     typings.std.HTMLInputElement
   ])]]
   @scala.inline
   def Clock: ComponentType[
     ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Clock].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsClockMod.ClockProps with ((typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Clock].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.clockMod.ClockProps with ((typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
-  ]) | typings.react.reactMod.SVGProps[typings.std.SVGSVGElement])]]
+  ]) | typings.react.mod.SVGProps[typings.std.SVGSVGElement])]]
   @scala.inline
   def Collapsible: ComponentType[
     CollapsibleProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Collapsible].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsCollapsibleMod.CollapsibleProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Collapsible].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.collapsibleMod.CollapsibleProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
   def DataTable: ComponentType[
     DataTableProps with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.DataTable].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsDataTableMod.DataTableProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.TableHTMLAttributes[typings.std.HTMLTableElement], 
+  ] = js.constructorOf[typings.grommet.mod.DataTable].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.dataTableMod.DataTableProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.TableHTMLAttributes[typings.std.HTMLTableElement], 
     typings.std.HTMLTableElement
   ])]]
   @scala.inline
-  def Diagram: ComponentType[DiagramProps with SVGProps[SVGSVGElement]] = typings.grommet.grommetMod.Diagram.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsDiagramMod.DiagramProps with typings.react.reactMod.SVGProps[typings.std.SVGSVGElement]]]
+  def Diagram: ComponentType[DiagramProps with SVGProps[SVGSVGElement]] = typings.grommet.mod.Diagram.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.diagramMod.DiagramProps with typings.react.mod.SVGProps[typings.std.SVGSVGElement]]]
   @scala.inline
   def Distribution: ComponentType[
     DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Distribution].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsDistributionMod.DistributionProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Distribution].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.distributionMod.DistributionProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
   def Drop: ComponentType[
     DropProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Drop].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsDropMod.DropProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Drop].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.dropMod.DropProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
@@ -223,22 +224,22 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       color
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.DropButton].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsDropButtonMod.DropButtonProps with typings.grommet.componentsButtonMod.ButtonProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.ButtonHTMLAttributes[typings.std.HTMLButtonElement], 
+  ] = js.constructorOf[typings.grommet.mod.DropButton].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.dropButtonMod.DropButtonProps with typings.grommet.buttonMod.ButtonProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.ButtonHTMLAttributes[typings.std.HTMLButtonElement], 
       typings.std.HTMLButtonElement
     ], 
     typings.grommet.grommetStrings.color
   ])]]
   @scala.inline
-  def Footer: ComponentType[FooterProps] = typings.grommet.grommetMod.Footer.asInstanceOf[typings.react.reactMod.ComponentType[FooterProps]]
+  def Footer: ComponentType[FooterProps] = typings.grommet.mod.Footer.asInstanceOf[typings.react.mod.ComponentType[FooterProps]]
   @scala.inline
   def Form: ComponentType[
     FormProps with (DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Form].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsFormMod.FormProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.FormHTMLAttributes[typings.std.HTMLFormElement], 
+  ] = js.constructorOf[typings.grommet.mod.Form].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.formMod.FormProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.FormHTMLAttributes[typings.std.HTMLFormElement], 
     typings.std.HTMLFormElement
   ])]]
   @scala.inline
@@ -247,10 +248,10 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       placeholder
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.FormField].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsFormFieldMod.FormFieldProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement], 
+  ] = js.constructorOf[typings.grommet.mod.FormField].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.formFieldMod.FormFieldProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
       typings.std.HTMLInputElement
     ], 
     typings.grommet.grommetStrings.placeholder
@@ -258,28 +259,28 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Grid: ComponentType[
     GridProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = typings.grommet.grommetMod.Grid.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsGridMod.GridProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = typings.grommet.mod.Grid.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.gridMod.GridProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
   def Grommet: ComponentType[
     GrommetProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Grommet].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsGrommetMod.GrommetProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Grommet_].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.grommetMod.GrommetProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
-  def Header: ComponentType[HeaderProps] = typings.grommet.grommetMod.Header.asInstanceOf[typings.react.reactMod.ComponentType[HeaderProps]]
+  def Header: ComponentType[HeaderProps] = typings.grommet.mod.Header.asInstanceOf[typings.react.mod.ComponentType[HeaderProps]]
   @scala.inline
   def Heading: ComponentType[
     HeadingProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement], color])
-  ] = typings.grommet.grommetMod.Heading.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsHeadingMod.HeadingProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.HTMLAttributes[typings.std.HTMLHeadingElement], 
+  ] = typings.grommet.mod.Heading.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.headingMod.HeadingProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.HTMLAttributes[typings.std.HTMLHeadingElement], 
       typings.std.HTMLHeadingElement
     ], 
     typings.grommet.grommetStrings.color
@@ -287,39 +288,39 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Image: ComponentType[
     ImageProps with (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
-  ] = typings.grommet.grommetMod.Image.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsImageMod.ImageProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.ImgHTMLAttributes[typings.std.HTMLImageElement], 
+  ] = typings.grommet.mod.Image.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.imageMod.ImageProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.ImgHTMLAttributes[typings.std.HTMLImageElement], 
     typings.std.HTMLImageElement
   ])]]
   @scala.inline
-  def InfiniteScroll: ComponentType[InfiniteScrollProps] = js.constructorOf[typings.grommet.grommetMod.InfiniteScroll].asInstanceOf[typings.react.reactMod.ComponentType[InfiniteScrollProps]]
+  def InfiniteScroll: ComponentType[InfiniteScrollProps] = js.constructorOf[typings.grommet.mod.InfiniteScroll].asInstanceOf[typings.react.mod.ComponentType[InfiniteScrollProps]]
   @scala.inline
-  def Keyboard: ComponentType[KeyboardProps] = typings.grommet.grommetMod.Keyboard.asInstanceOf[typings.react.reactMod.ComponentType[KeyboardProps]]
+  def Keyboard: ComponentType[KeyboardProps] = typings.grommet.mod.Keyboard.asInstanceOf[typings.react.mod.ComponentType[KeyboardProps]]
   @scala.inline
   def Layer: ComponentType[
     LayerProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Layer].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsLayerMod.LayerProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Layer].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.layerMod.LayerProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
   def List: ComponentType[
     ListProps with (DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.List].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsListMod.ListProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLUListElement], 
+  ] = js.constructorOf[typings.grommet.mod.List].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.listMod.ListProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLUListElement], 
     typings.std.HTMLUListElement
   ])]]
   @scala.inline
-  def Main: ComponentType[MainProps] = typings.grommet.grommetMod.Main.asInstanceOf[typings.react.reactMod.ComponentType[MainProps]]
+  def Main: ComponentType[MainProps] = typings.grommet.mod.Main.asInstanceOf[typings.react.mod.ComponentType[MainProps]]
   @scala.inline
   def Markdown: ComponentType[
     MarkdownProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Markdown].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsMarkdownMod.MarkdownProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.Markdown].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.markdownMod.MarkdownProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
@@ -328,34 +329,30 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       id | mask | name | plain | size | value
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.MaskedInput].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsMaskedInputMod.MaskedInputProps with (typings.std.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement], 
+  ] = js.constructorOf[typings.grommet.mod.MaskedInput].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.maskedInputMod.MaskedInputProps with (typings.std.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
       typings.std.HTMLInputElement
     ], 
     typings.grommet.grommetStrings.id | typings.grommet.grommetStrings.mask | typings.grommet.grommetStrings.name | typings.grommet.grommetStrings.plain | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.value
   ])]]
   @scala.inline
-  def Menu: ComponentType[
-    MenuProps with (DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.Menu].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsMenuMod.MenuProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.ButtonHTMLAttributes[typings.std.HTMLButtonElement], 
-    typings.std.HTMLButtonElement
-  ])]]
+  def Menu: ComponentType[MenuProps with ButtonType] = typings.grommet.mod.Menu.asInstanceOf[typings.react.mod.ComponentType[typings.grommet.menuMod.MenuProps with typings.grommet.buttonMod.ButtonType]]
   @scala.inline
-  def Meter: ComponentType[MeterProps] = js.constructorOf[typings.grommet.grommetMod.Meter].asInstanceOf[typings.react.reactMod.ComponentType[MeterProps]]
+  def Meter: ComponentType[MeterProps] = js.constructorOf[typings.grommet.mod.Meter].asInstanceOf[typings.react.mod.ComponentType[MeterProps]]
+  @scala.inline
+  def Nav: ComponentType[NavProps] = typings.grommet.mod.Nav.asInstanceOf[typings.react.mod.ComponentType[NavProps]]
   @scala.inline
   def Paragraph: ComponentType[
     ParagraphProps with (Omit[
       DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
       color
     ])
-  ] = typings.grommet.grommetMod.Paragraph.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsParagraphMod.ParagraphProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.HTMLAttributes[typings.std.HTMLParagraphElement], 
+  ] = typings.grommet.mod.Paragraph.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.paragraphMod.ParagraphProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.HTMLAttributes[typings.std.HTMLParagraphElement], 
       typings.std.HTMLParagraphElement
     ], 
     typings.grommet.grommetStrings.color
@@ -363,56 +360,53 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def RadioButton: ComponentType[
     RadioButtonProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
-  ] = js.constructorOf[typings.grommet.grommetMod.RadioButton].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsRadioButtonMod.RadioButtonProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement], 
+  ] = js.constructorOf[typings.grommet.mod.RadioButton].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.radioButtonMod.RadioButtonProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
     typings.std.HTMLInputElement
   ])]]
   @scala.inline
-  def RadioButtonGroup: ComponentType[RadioButtonGroupProps with BoxProps] = js.constructorOf[typings.grommet.grommetMod.RadioButtonGroup].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsRadioButtonGroupMod.RadioButtonGroupProps with typings.grommet.componentsBoxMod.BoxProps]]
+  def RadioButtonGroup: ComponentType[RadioButtonGroupProps with BoxProps] = js.constructorOf[typings.grommet.mod.RadioButtonGroup].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.radioButtonGroupMod.RadioButtonGroupProps with typings.grommet.boxMod.BoxProps]]
   @scala.inline
   def RangeInput: ComponentType[
     RangeInputProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement])
-  ] = typings.grommet.grommetMod.RangeInput.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsRangeInputMod.RangeInputProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement], 
+  ] = typings.grommet.mod.RangeInput.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.rangeInputMod.RangeInputProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
     typings.std.HTMLInputElement
   ])]]
   @scala.inline
   def RangeSelector: ComponentType[
     RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color])
-  ] = js.constructorOf[typings.grommet.grommetMod.RangeSelector].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsRangeSelectorMod.RangeSelectorProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = js.constructorOf[typings.grommet.mod.RangeSelector].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.rangeSelectorMod.RangeSelectorProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
       typings.std.HTMLDivElement
     ], 
     typings.grommet.grommetStrings.color
   ])]]
   @scala.inline
-  def RoutedAnchor: ComponentType[RoutedAnchorProps with (Omit[AnchorProps, href])] = js.constructorOf[typings.grommet.grommetMod.RoutedAnchor].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsRoutedAnchorMod.RoutedAnchorProps with (typings.grommet.utilsMod.Omit[
-    typings.grommet.componentsAnchorMod.AnchorProps, 
-    typings.grommet.grommetStrings.href
-  ])]]
+  def RoutedAnchor: ComponentType[RoutedAnchorProps with (Omit[AnchorProps, href])] = js.constructorOf[typings.grommet.mod.RoutedAnchor].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.routedAnchorMod.RoutedAnchorProps with (typings.grommet.utilsMod.Omit[typings.grommet.anchorMod.AnchorProps, typings.grommet.grommetStrings.href])]]
   @scala.inline
-  def RoutedButton: ComponentType[RoutedButtonProps with ButtonProps] = js.constructorOf[typings.grommet.grommetMod.RoutedButton].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsRoutedButtonMod.RoutedButtonProps with typings.grommet.componentsButtonMod.ButtonProps]]
+  def RoutedButton: ComponentType[RoutedButtonProps with ButtonProps] = js.constructorOf[typings.grommet.mod.RoutedButton].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.routedButtonMod.RoutedButtonProps with typings.grommet.buttonMod.ButtonProps]]
   @scala.inline
-  def Select: ComponentType[SelectProps] = js.constructorOf[typings.grommet.grommetMod.Select].asInstanceOf[typings.react.reactMod.ComponentType[SelectProps]]
+  def Select: ComponentType[SelectProps] = js.constructorOf[typings.grommet.mod.Select].asInstanceOf[typings.react.mod.ComponentType[SelectProps]]
   @scala.inline
-  def SkipLink: ComponentType[SkipLinkProps] = typings.grommet.grommetMod.SkipLink.asInstanceOf[typings.react.reactMod.ComponentType[SkipLinkProps]]
+  def SkipLink: ComponentType[SkipLinkProps] = typings.grommet.mod.SkipLink.asInstanceOf[typings.react.mod.ComponentType[SkipLinkProps]]
   @scala.inline
-  def SkipLinkTarget: ComponentType[SkipLinkTargetProps] = typings.grommet.grommetMod.SkipLinkTarget.asInstanceOf[typings.react.reactMod.ComponentType[SkipLinkTargetProps]]
+  def SkipLinkTarget: ComponentType[SkipLinkTargetProps] = typings.grommet.mod.SkipLinkTarget.asInstanceOf[typings.react.mod.ComponentType[SkipLinkTargetProps]]
   @scala.inline
-  def SkipLinks: ComponentType[SkipLinksProps] = typings.grommet.grommetMod.SkipLinks.asInstanceOf[typings.react.reactMod.ComponentType[SkipLinksProps]]
+  def SkipLinks: ComponentType[SkipLinksProps] = typings.grommet.mod.SkipLinks.asInstanceOf[typings.react.mod.ComponentType[SkipLinksProps]]
   @scala.inline
   def Stack: ComponentType[
     StackProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = typings.grommet.grommetMod.Stack.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsStackMod.StackProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = typings.grommet.mod.Stack.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.stackMod.StackProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
@@ -421,10 +415,10 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement], 
       title
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.Tab].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTabMod.TabProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.ButtonHTMLAttributes[typings.std.HTMLButtonElement], 
+  ] = js.constructorOf[typings.grommet.mod.Tab].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tabMod.TabProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.ButtonHTMLAttributes[typings.std.HTMLButtonElement], 
       typings.std.HTMLButtonElement
     ], 
     typings.grommet.grommetStrings.title
@@ -432,66 +426,66 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def Table: ComponentType[
     TableProps with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])
-  ] = typings.grommet.grommetMod.Table.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTableMod.TableProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.TableHTMLAttributes[typings.std.HTMLTableElement], 
+  ] = typings.grommet.mod.Table.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tableMod.TableProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.TableHTMLAttributes[typings.std.HTMLTableElement], 
     typings.std.HTMLTableElement
   ])]]
   @scala.inline
   def TableBody: ComponentType[
     TableBodyProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
-  ] = typings.grommet.grommetMod.TableBody.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTableBodyMod.TableBodyProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLTableSectionElement], 
+  ] = typings.grommet.mod.TableBody.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tableBodyMod.TableBodyProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLTableSectionElement], 
     typings.std.HTMLTableSectionElement
   ])]]
   @scala.inline
   def TableCell: ComponentType[
     TableCellProps with BoxTypes with (DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement])
-  ] = typings.grommet.grommetMod.TableCell.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTableCellMod.TableCellProps with typings.grommet.componentsBoxMod.BoxTypes with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.TdHTMLAttributes[typings.std.HTMLTableDataCellElement], 
+  ] = typings.grommet.mod.TableCell.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tableCellMod.TableCellProps with typings.grommet.boxMod.BoxTypes with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.TdHTMLAttributes[typings.std.HTMLTableDataCellElement], 
     typings.std.HTMLTableDataCellElement
   ])]]
   @scala.inline
   def TableFooter: ComponentType[
     TableFooterProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
-  ] = typings.grommet.grommetMod.TableFooter.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTableFooterMod.TableFooterProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLTableSectionElement], 
+  ] = typings.grommet.mod.TableFooter.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tableFooterMod.TableFooterProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLTableSectionElement], 
     typings.std.HTMLTableSectionElement
   ])]]
   @scala.inline
   def TableHeader: ComponentType[
     TableHeaderProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement])
-  ] = typings.grommet.grommetMod.TableHeader.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTableHeaderMod.TableHeaderProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLTableSectionElement], 
+  ] = typings.grommet.mod.TableHeader.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tableHeaderMod.TableHeaderProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLTableSectionElement], 
     typings.std.HTMLTableSectionElement
   ])]]
   @scala.inline
   def TableRow: ComponentType[
     TableRowProps with (DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement])
-  ] = typings.grommet.grommetMod.TableRow.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTableRowMod.TableRowProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLTableRowElement], 
+  ] = typings.grommet.mod.TableRow.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tableRowMod.TableRowProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLTableRowElement], 
     typings.std.HTMLTableRowElement
   ])]]
   @scala.inline
   def Tabs: ComponentType[
     TabsProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = typings.grommet.grommetMod.Tabs.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTabsMod.TabsProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.HTMLAttributes[typings.std.HTMLDivElement], 
+  ] = typings.grommet.mod.Tabs.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.tabsMod.TabsProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement], 
     typings.std.HTMLDivElement
   ])]]
   @scala.inline
   def Text: ComponentType[
     TextProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
-  ] = typings.grommet.grommetMod.Text.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTextMod.TextProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.HTMLAttributes[typings.std.HTMLSpanElement], 
+  ] = typings.grommet.mod.Text.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.textMod.TextProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.HTMLAttributes[typings.std.HTMLSpanElement], 
       typings.std.HTMLSpanElement
     ], 
     typings.grommet.grommetStrings.color
@@ -499,9 +493,9 @@ object grommetComponents extends grommetProps {
   @scala.inline
   def TextArea: ComponentType[
     TextAreaProps with (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement])
-  ] = typings.grommet.grommetMod.TextArea.asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTextAreaMod.TextAreaProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.TextareaHTMLAttributes[typings.std.HTMLTextAreaElement], 
+  ] = typings.grommet.mod.TextArea.asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.textAreaMod.TextAreaProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.TextareaHTMLAttributes[typings.std.HTMLTextAreaElement], 
     typings.std.HTMLTextAreaElement
   ])]]
   @scala.inline
@@ -510,10 +504,10 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
       onSelect | size | placeholder
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.TextInput].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsTextInputMod.TextInputProps with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.InputHTMLAttributes[typings.std.HTMLInputElement], 
+  ] = js.constructorOf[typings.grommet.mod.TextInput].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.textInputMod.TextInputProps with (typings.grommet.utilsMod.Omit[
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
       typings.std.HTMLInputElement
     ], 
     typings.grommet.grommetStrings.onSelect | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.placeholder
@@ -524,19 +518,19 @@ object grommetComponents extends grommetProps {
       DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
       controls
     ])
-  ] = js.constructorOf[typings.grommet.grommetMod.Video].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsVideoMod.VideoProps with (typings.react.reactMod.DetailedHTMLProps[
-    typings.react.reactMod.VideoHTMLAttributes[typings.std.HTMLVideoElement], 
+  ] = js.constructorOf[typings.grommet.mod.Video].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.videoMod.VideoProps with (typings.react.mod.DetailedHTMLProps[
+    typings.react.mod.VideoHTMLAttributes[typings.std.HTMLVideoElement], 
     typings.std.HTMLVideoElement
   ]) with (typings.grommet.utilsMod.Omit[
-    typings.react.reactMod.DetailedHTMLProps[
-      typings.react.reactMod.VideoHTMLAttributes[typings.std.HTMLVideoElement], 
+    typings.react.mod.DetailedHTMLProps[
+      typings.react.mod.VideoHTMLAttributes[typings.std.HTMLVideoElement], 
       typings.std.HTMLVideoElement
     ], 
     typings.grommet.grommetStrings.controls
   ])]]
   @scala.inline
-  def WorldMap: ComponentType[WorldMapProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommet.grommetMod.WorldMap].asInstanceOf[typings.react.reactMod.ComponentType[
-  typings.grommet.componentsWorldMapMod.WorldMapProps with typings.react.reactMod.SVGProps[typings.std.SVGSVGElement]]]
+  def WorldMap: ComponentType[WorldMapProps with SVGProps[SVGSVGElement]] = js.constructorOf[typings.grommet.mod.WorldMap].asInstanceOf[typings.react.mod.ComponentType[
+  typings.grommet.worldMapMod.WorldMapProps with typings.react.mod.SVGProps[typings.std.SVGSVGElement]]]
 }
 

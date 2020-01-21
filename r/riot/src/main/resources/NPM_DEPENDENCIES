@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "riot" : "4.8.6"
+      "riot" : "4.8.7"
     }
   ],
   "test-dependencies" : [
     {
-      "riot" : "4.8.6"
+      "riot" : "4.8.7"
     }
   ],
   "compile-devDependencies" : [

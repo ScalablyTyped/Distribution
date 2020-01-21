@@ -1,38 +1,38 @@
 package typings.graphql
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.errorGraphQLErrorMod.GraphQLError
-import typings.graphql.jsutilsPathMod.Path
-import typings.graphql.languageAstMod.ASTNode
-import typings.graphql.languageAstMod.DocumentNode
-import typings.graphql.languageAstMod.ListTypeNode
-import typings.graphql.languageAstMod.NamedTypeNode
-import typings.graphql.languageAstMod.NonNullTypeNode
-import typings.graphql.languageAstMod.OperationDefinitionNode
-import typings.graphql.languageAstMod.OperationTypeDefinitionNode
-import typings.graphql.languageAstMod.ValueNode
-import typings.graphql.languageParserMod.ParseOptions
-import typings.graphql.languageSourceMod.Source
-import typings.graphql.tsutilsMaybeMod.Maybe
-import typings.graphql.typeDefinitionMod.GraphQLCompositeType
-import typings.graphql.typeDefinitionMod.GraphQLInputType
-import typings.graphql.typeDefinitionMod.GraphQLList
-import typings.graphql.typeDefinitionMod.GraphQLNamedType
-import typings.graphql.typeDefinitionMod.GraphQLNonNull
-import typings.graphql.typeDefinitionMod.GraphQLObjectType
-import typings.graphql.typeDefinitionMod.GraphQLType
-import typings.graphql.typeSchemaMod.GraphQLSchema
-import typings.graphql.utilitiesBuildASTSchemaMod.BuildSchemaOptions
-import typings.graphql.utilitiesBuildClientSchemaMod.Options
-import typings.graphql.utilitiesCoerceInputValueMod.OnErrorCB
-import typings.graphql.utilitiesCoerceValueMod.CoercedValue
-import typings.graphql.utilitiesFindBreakingChangesMod.BreakingChange
-import typings.graphql.utilitiesFindBreakingChangesMod.DangerousChange
-import typings.graphql.utilitiesFindBreakingChangesMod._BreakingChangeType
-import typings.graphql.utilitiesFindBreakingChangesMod._DangerousChangeType
-import typings.graphql.utilitiesIntrospectionQueryMod.IntrospectionOptions
-import typings.graphql.utilitiesIntrospectionQueryMod.IntrospectionQuery
-import typings.graphql.utilitiesTypeInfoMod.getFieldDef
+import typings.graphql.astMod.ASTNode
+import typings.graphql.astMod.DocumentNode
+import typings.graphql.astMod.ListTypeNode
+import typings.graphql.astMod.NamedTypeNode
+import typings.graphql.astMod.NonNullTypeNode
+import typings.graphql.astMod.OperationDefinitionNode
+import typings.graphql.astMod.OperationTypeDefinitionNode
+import typings.graphql.astMod.ValueNode
+import typings.graphql.buildASTSchemaMod.BuildSchemaOptions
+import typings.graphql.buildClientSchemaMod.Options
+import typings.graphql.coerceInputValueMod.OnErrorCB
+import typings.graphql.coerceValueMod.CoercedValue
+import typings.graphql.definitionMod.GraphQLCompositeType
+import typings.graphql.definitionMod.GraphQLInputType
+import typings.graphql.definitionMod.GraphQLList
+import typings.graphql.definitionMod.GraphQLNamedType
+import typings.graphql.definitionMod.GraphQLNonNull
+import typings.graphql.definitionMod.GraphQLObjectType
+import typings.graphql.definitionMod.GraphQLType
+import typings.graphql.findBreakingChangesMod.BreakingChange
+import typings.graphql.findBreakingChangesMod.DangerousChange
+import typings.graphql.findBreakingChangesMod._BreakingChangeType
+import typings.graphql.findBreakingChangesMod._DangerousChangeType
+import typings.graphql.graphQLErrorMod.GraphQLError
+import typings.graphql.introspectionQueryMod.IntrospectionOptions
+import typings.graphql.introspectionQueryMod.IntrospectionQuery_
+import typings.graphql.maybeMod.Maybe
+import typings.graphql.parserMod.ParseOptions
+import typings.graphql.pathMod.Path
+import typings.graphql.schemaMod.GraphQLSchema
+import typings.graphql.sourceMod.Source
+import typings.graphql.typeInfoMod.getFieldDef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
 object utilitiesMod extends js.Object {
   @js.native
   class TypeInfo protected ()
-    extends typings.graphql.utilitiesTypeInfoMod.TypeInfo {
+    extends typings.graphql.typeInfoMod.TypeInfo {
     def this(schema: GraphQLSchema) = this()
     def this(
       schema: GraphQLSchema,
@@ -70,8 +70,8 @@ object utilitiesMod extends js.Object {
   def astFromValue(value: js.Any, `type`: GraphQLInputType): Maybe[ValueNode] = js.native
   def buildASTSchema(documentAST: DocumentNode): GraphQLSchema = js.native
   def buildASTSchema(documentAST: DocumentNode, options: BuildSchemaOptions): GraphQLSchema = js.native
-  def buildClientSchema(introspection: IntrospectionQuery): GraphQLSchema = js.native
-  def buildClientSchema(introspection: IntrospectionQuery, options: Options): GraphQLSchema = js.native
+  def buildClientSchema(introspection: IntrospectionQuery_): GraphQLSchema = js.native
+  def buildClientSchema(introspection: IntrospectionQuery_, options: Options): GraphQLSchema = js.native
   def buildSchema(source: String): GraphQLSchema = js.native
   def buildSchema(source: String, options: BuildSchemaOptions with ParseOptions): GraphQLSchema = js.native
   def buildSchema(source: Source): GraphQLSchema = js.native
@@ -84,22 +84,18 @@ object utilitiesMod extends js.Object {
   def concatAST(asts: js.Array[DocumentNode]): DocumentNode = js.native
   def doTypesOverlap(schema: GraphQLSchema, typeA: GraphQLCompositeType, typeB: GraphQLCompositeType): Boolean = js.native
   def extendSchema(schema: GraphQLSchema, documentAST: DocumentNode): GraphQLSchema = js.native
-  def extendSchema(
-    schema: GraphQLSchema,
-    documentAST: DocumentNode,
-    options: typings.graphql.utilitiesExtendSchemaMod.Options
-  ): GraphQLSchema = js.native
+  def extendSchema(schema: GraphQLSchema, documentAST: DocumentNode, options: typings.graphql.extendSchemaMod.Options): GraphQLSchema = js.native
   def findBreakingChanges(oldSchema: GraphQLSchema, newSchema: GraphQLSchema): js.Array[BreakingChange] = js.native
   def findDangerousChanges(oldSchema: GraphQLSchema, newSchema: GraphQLSchema): js.Array[DangerousChange] = js.native
   def findDeprecatedUsages(schema: GraphQLSchema, ast: DocumentNode): js.Array[GraphQLError] = js.native
-  def getDescription(node: Anon_Description, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
+  def getDescription(node: AnonDescription, options: Maybe[BuildSchemaOptions]): js.UndefOr[String] = js.native
   def getIntrospectionQuery(): String = js.native
   def getIntrospectionQuery(options: IntrospectionOptions): String = js.native
   def getOperationAST(documentAST: DocumentNode, operationName: Maybe[String]): Maybe[OperationDefinitionNode] = js.native
   def getOperationRootType(schema: GraphQLSchema, operation: OperationDefinitionNode): GraphQLObjectType[_, _, StringDictionary[_]] = js.native
   def getOperationRootType(schema: GraphQLSchema, operation: OperationTypeDefinitionNode): GraphQLObjectType[_, _, StringDictionary[_]] = js.native
-  def introspectionFromSchema(schema: GraphQLSchema): IntrospectionQuery = js.native
-  def introspectionFromSchema(schema: GraphQLSchema, options: IntrospectionOptions): IntrospectionQuery = js.native
+  def introspectionFromSchema(schema: GraphQLSchema): IntrospectionQuery_ = js.native
+  def introspectionFromSchema(schema: GraphQLSchema, options: IntrospectionOptions): IntrospectionQuery_ = js.native
   def isEqualType(typeA: GraphQLType, typeB: GraphQLType): Boolean = js.native
   def isTypeSubTypeOf(schema: GraphQLSchema, maybeSubType: GraphQLType, superType: GraphQLType): Boolean = js.native
   def isValidJSValue(value: js.Any, `type`: GraphQLInputType): js.Array[String] = js.native
@@ -108,11 +104,11 @@ object utilitiesMod extends js.Object {
   def isValidNameError(name: String, node: ASTNode): js.UndefOr[GraphQLError] = js.native
   def lexicographicSortSchema(schema: GraphQLSchema): GraphQLSchema = js.native
   def printIntrospectionSchema(schema: GraphQLSchema): String = js.native
-  def printIntrospectionSchema(schema: GraphQLSchema, options: typings.graphql.utilitiesSchemaPrinterMod.Options): String = js.native
+  def printIntrospectionSchema(schema: GraphQLSchema, options: typings.graphql.schemaPrinterMod.Options): String = js.native
   def printSchema(schema: GraphQLSchema): String = js.native
-  def printSchema(schema: GraphQLSchema, options: typings.graphql.utilitiesSchemaPrinterMod.Options): String = js.native
+  def printSchema(schema: GraphQLSchema, options: typings.graphql.schemaPrinterMod.Options): String = js.native
   def printType(`type`: GraphQLNamedType): String = js.native
-  def printType(`type`: GraphQLNamedType, options: typings.graphql.utilitiesSchemaPrinterMod.Options): String = js.native
+  def printType(`type`: GraphQLNamedType, options: typings.graphql.schemaPrinterMod.Options): String = js.native
   def separateOperations(documentAST: DocumentNode): StringDictionary[DocumentNode] = js.native
   def stripIgnoredCharacters(source: String): String = js.native
   def stripIgnoredCharacters(source: Source): String = js.native

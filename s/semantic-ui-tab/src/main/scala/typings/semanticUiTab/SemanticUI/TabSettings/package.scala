@@ -1,0 +1,17 @@
+package typings.semanticUiTab.SemanticUI
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object TabSettings {
+  type Param = (typings.std.Pick[
+    typings.semanticUiTab.SemanticUI.TabSettings.Impl, 
+    typings.semanticUiTab.semanticUiTabStrings.auto | typings.semanticUiTab.semanticUiTabStrings.deactivate | typings.semanticUiTab.semanticUiTabStrings.history | typings.semanticUiTab.semanticUiTabStrings.ignoreFirstLoad | typings.semanticUiTab.semanticUiTabStrings.evaluateScripts | typings.semanticUiTab.semanticUiTabStrings.alwaysRefresh | typings.semanticUiTab.semanticUiTabStrings.cacheType | typings.semanticUiTab.semanticUiTabStrings.cache | typings.semanticUiTab.semanticUiTabStrings.apiSettings | typings.semanticUiTab.semanticUiTabStrings.historyType | typings.semanticUiTab.semanticUiTabStrings.path | typings.semanticUiTab.semanticUiTabStrings.context | typings.semanticUiTab.semanticUiTabStrings.childrenOnly | typings.semanticUiTab.semanticUiTabStrings.maxDepth | typings.semanticUiTab.semanticUiTabStrings.loadOnce | typings.semanticUiTab.semanticUiTabStrings.onFirstLoad | typings.semanticUiTab.semanticUiTabStrings.onLoad | typings.semanticUiTab.semanticUiTabStrings.onRequest | typings.semanticUiTab.semanticUiTabStrings.onVisible | typings.semanticUiTab.semanticUiTabStrings.templates | typings.semanticUiTab.semanticUiTabStrings.selector | typings.semanticUiTab.semanticUiTabStrings.metadata | typings.semanticUiTab.semanticUiTabStrings.className | typings.semanticUiTab.semanticUiTabStrings.error | typings.semanticUiTab.semanticUiTabStrings.namespace | typings.semanticUiTab.semanticUiTabStrings.name | typings.semanticUiTab.semanticUiTabStrings.silent | typings.semanticUiTab.semanticUiTabStrings.debug | typings.semanticUiTab.semanticUiTabStrings.performance | typings.semanticUiTab.semanticUiTabStrings.verbose
+  ]) with (typings.std.Partial[
+    typings.std.Pick[
+      typings.semanticUiTab.SemanticUI.TabSettings.Impl, 
+      typings.semanticUiTab.semanticUiTabStrings.auto | typings.semanticUiTab.semanticUiTabStrings.deactivate | typings.semanticUiTab.semanticUiTabStrings.history | typings.semanticUiTab.semanticUiTabStrings.ignoreFirstLoad | typings.semanticUiTab.semanticUiTabStrings.evaluateScripts | typings.semanticUiTab.semanticUiTabStrings.alwaysRefresh | typings.semanticUiTab.semanticUiTabStrings.cacheType | typings.semanticUiTab.semanticUiTabStrings.cache | typings.semanticUiTab.semanticUiTabStrings.apiSettings | typings.semanticUiTab.semanticUiTabStrings.historyType | typings.semanticUiTab.semanticUiTabStrings.path | typings.semanticUiTab.semanticUiTabStrings.context | typings.semanticUiTab.semanticUiTabStrings.childrenOnly | typings.semanticUiTab.semanticUiTabStrings.maxDepth | typings.semanticUiTab.semanticUiTabStrings.loadOnce | typings.semanticUiTab.semanticUiTabStrings.templates | typings.semanticUiTab.semanticUiTabStrings.selector | typings.semanticUiTab.semanticUiTabStrings.metadata | typings.semanticUiTab.semanticUiTabStrings.className | typings.semanticUiTab.semanticUiTabStrings.error | typings.semanticUiTab.semanticUiTabStrings.namespace | typings.semanticUiTab.semanticUiTabStrings.name | typings.semanticUiTab.semanticUiTabStrings.silent | typings.semanticUiTab.semanticUiTabStrings.debug | typings.semanticUiTab.semanticUiTabStrings.performance | typings.semanticUiTab.semanticUiTabStrings.verbose
+    ]
+  ])
+}

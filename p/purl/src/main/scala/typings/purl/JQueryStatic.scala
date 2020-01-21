@@ -1,6 +1,6 @@
 package typings.purl
 
-import typings.purl.purlMod.Url
+import typings.purl.mod.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

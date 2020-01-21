@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object content {
-  type DialogInterface = DialogInterface_
+  type DialogInterface = typings.androiduix.android.content.DialogInterface_
 }

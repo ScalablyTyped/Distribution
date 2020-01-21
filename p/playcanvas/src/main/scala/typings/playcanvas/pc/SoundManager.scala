@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_ForceWebAudioApi
+import typings.playcanvas.AnonForceWebAudioApi
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SoundManager")
 @js.native
 class SoundManager () extends EventHandler {
-  def this(options: Anon_ForceWebAudioApi) = this()
+  def this(options: AnonForceWebAudioApi) = this()
   /**
     * Global volume for the manager. All {@link pc.SoundInstance}s will scale their volume with this volume. Valid between [0, 1].
     */

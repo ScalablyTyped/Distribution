@@ -1,7 +1,7 @@
 package typings.jpm.FFAddonSDK
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.jpm.Anon_ContentScriptContentScriptFileData
+import typings.jpm.AnonContentScriptContentScriptFileData
 import typings.jpm.jpmStrings.detach
 import typings.jpm.jpmStrings.error
 import typings.jpm.jpmStrings.message
@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ContentWorker extends Instantiable1[/* options */ Anon_ContentScriptContentScriptFileData, ContentWorker] {
+trait ContentWorker extends Instantiable1[/* options */ AnonContentScriptContentScriptFileData, ContentWorker] {
   var port: Port = js.native
   var tab: Tab = js.native
   var url: URL = js.native

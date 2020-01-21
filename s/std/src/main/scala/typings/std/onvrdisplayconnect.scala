@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("onvrdisplayconnect")
 @js.native
 object onvrdisplayconnect
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ Event_, js.Any]) | Null]
 

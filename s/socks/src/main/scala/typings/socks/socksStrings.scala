@@ -1,6 +1,6 @@
 package typings.socks
 
-import typings.socks.typingsCommonConstantsMod.SocksCommandOption
+import typings.socks.constantsMod.SocksCommandOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

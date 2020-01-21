@@ -1,7 +1,7 @@
 package typings.cypress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Document
+import typings.std.Document_
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Node
@@ -28,7 +28,7 @@ trait ChaiJQueryStatic extends js.Object {
   /**
     * Effects
     */
-  var fx: Anon_Interval = js.native
+  var fx: AnonInterval = js.native
     //TODO: Decide how we want to type this
   var isReady: Boolean = js.native
   /**
@@ -67,7 +67,7 @@ trait ChaiJQueryStatic extends js.Object {
     * @param attributes An object of attributes, events, and methods to call on the newly-created element.
     */
   def apply(html: String, attributes: Object): ChaiJQuery = js.native
-  def apply(html: String, ownerDocument: Document): ChaiJQuery = js.native
+  def apply(html: String, ownerDocument: Document_): ChaiJQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -79,7 +79,7 @@ trait ChaiJQueryStatic extends js.Object {
     *
     * @param object An existing jQuery object to clone.
     */
-  def apply(`object`: JQuery[HTMLElement]): ChaiJQuery = js.native
+  def apply(`object`: JQuery_[HTMLElement]): ChaiJQuery = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     *
@@ -93,7 +93,7 @@ trait ChaiJQueryStatic extends js.Object {
     * @param ownerDocument A document in which the new elements will be created.
     */
   def apply(selector: String): ChaiJQuery = js.native
-  def apply(selector: String, context: JQuery[HTMLElement]): ChaiJQuery = js.native
+  def apply(selector: String, context: JQuery_[HTMLElement]): ChaiJQuery = js.native
   def apply(selector: String, context: Element): ChaiJQuery = js.native
   /**
     * A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
@@ -132,8 +132,8 @@ trait ChaiJQueryStatic extends js.Object {
   jQuery( "body" ).trigger( e );
   ```
     */
-  def Event[T /* <: js.Object */](event: String): typings.cypress.JQuery.Event with T = js.native
-  def Event[T /* <: js.Object */](event: String, properties: T): typings.cypress.JQuery.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String): typings.cypress.JQuery_.Event with T = js.native
+  def Event[T /* <: js.Object */](event: String, properties: T): typings.cypress.JQuery_.Event with T = js.native
   /**
     * Perform an asynchronous HTTP (Ajax) request.
     *
@@ -465,8 +465,8 @@ trait ChaiJQueryStatic extends js.Object {
     * @param keepScripts A Boolean indicating whether to include scripts passed in the HTML string
     */
   def parseHTML(data: String): js.Array[_] = js.native
-  def parseHTML(data: String, context: Document): js.Array[_] = js.native
-  def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[_] = js.native
+  def parseHTML(data: String, context: Document_): js.Array[_] = js.native
+  def parseHTML(data: String, context: Document_, keepScripts: Boolean): js.Array[_] = js.native
   def parseHTML(data: String, context: HTMLElement): js.Array[_] = js.native
   def parseHTML(data: String, context: HTMLElement, keepScripts: Boolean): js.Array[_] = js.native
   /**

@@ -1,7 +1,7 @@
 package typings.flight
 
-import typings.flight.Flight.DebugStatic
-import typings.flight.Flight.FlightStatic
+import typings.flight.Flight_.DebugStatic
+import typings.flight.Flight_.FlightStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

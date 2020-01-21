@@ -1,6 +1,6 @@
 package typings.fxn
 
-import typings.fxn.fxnMod.HttpMethod
+import typings.fxn.mod.HttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

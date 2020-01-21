@@ -1,7 +1,7 @@
 package typings.klaw
 
-import typings.klaw.klawMod.Event
-import typings.klaw.klawMod.QueueMethod
+import typings.klaw.mod.Event
+import typings.klaw.mod.QueueMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

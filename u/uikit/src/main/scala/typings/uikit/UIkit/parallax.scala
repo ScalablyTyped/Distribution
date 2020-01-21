@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.parallax")
 @js.native
-object parallax extends TopLevel[Parallax]
+object parallax extends TopLevel[Parallax_]
 

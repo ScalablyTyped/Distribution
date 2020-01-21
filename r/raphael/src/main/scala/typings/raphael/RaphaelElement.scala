@@ -98,7 +98,7 @@ trait RaphaelElement extends js.Object {
   def getBBox(): BoundingBox = js.native
   def getBBox(isWithoutTransform: Boolean): BoundingBox = js.native
   def glow(): RaphaelSet = js.native
-  def glow(glow: Anon_Color): RaphaelSet = js.native
+  def glow(glow: AnonColor): RaphaelSet = js.native
   def hide(): RaphaelElement = js.native
   def hover(f_in: js.Function, f_out: js.Function): RaphaelElement = js.native
   def hover(f_in: js.Function, f_out: js.Function, icontext: js.Any): RaphaelElement = js.native
@@ -136,7 +136,7 @@ trait RaphaelElement extends js.Object {
   def setTime(anim: RaphaelAnimation): Unit = js.native
   def setTime(anim: RaphaelAnimation, value: Double): RaphaelElement = js.native
   def show(): RaphaelElement = js.native
-  def status(): js.Array[Anon_Anim] = js.native
+  def status(): js.Array[AnonAnim] = js.native
   def status(anim: RaphaelAnimation): Double = js.native
   def status(anim: RaphaelAnimation, value: Double): RaphaelElement = js.native
   def stop(): RaphaelElement = js.native

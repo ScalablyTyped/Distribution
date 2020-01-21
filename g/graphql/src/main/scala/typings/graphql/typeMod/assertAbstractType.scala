@@ -1,6 +1,6 @@
 package typings.graphql.typeMod
 
-import typings.graphql.typeDefinitionMod.GraphQLAbstractType
+import typings.graphql.definitionMod.GraphQLAbstractType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

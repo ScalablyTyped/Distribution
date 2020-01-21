@@ -1,6 +1,6 @@
 package typings.gatsby
 
-import typings.gatsby.gatsbyMod.GatsbyStages
+import typings.gatsby.mod.GatsbyStages
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

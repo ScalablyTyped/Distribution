@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tinycon"
-version := "0.6-dt-20190215Z-b81d68"
+version := "0.6-dt-20190215Z-ef406a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

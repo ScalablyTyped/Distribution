@@ -1,6 +1,6 @@
 package typings.loglevel
 
-import typings.loglevel.loglevelMod.LogLevelDesc
+import typings.loglevel.mod.LogLevelDesc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -72,7 +72,7 @@ class Rating () extends js.Object {
     * Raised when the user finishes interacting with the rating control without committing a tentative rating.
     * @param eventInfo An object that contains information about the event.
     **/
-  def oncancel(eventInfo: Event): Unit = js.native
+  def oncancel(eventInfo: Event_): Unit = js.native
   /**
     * Raised when the user commits a change to the userRating.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.tentativeRating.

@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_UseMouse
+import typings.playcanvas.AnonUseMouse
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ElementInput protected () extends js.Object {
   def this(domElement: Element) = this()
-  def this(domElement: Element, options: Anon_UseMouse) = this()
+  def this(domElement: Element, options: AnonUseMouse) = this()
   /**
     * @function
     * @name pc.ElementInput#addElement

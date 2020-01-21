@@ -1,6 +1,6 @@
 package typings.node.cryptoMod
 
-import typings.node.Anon_Chunk
+import typings.node.AnonChunk
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
 import typings.node.streamMod.TransformOptions
@@ -59,7 +59,7 @@ object CipherCCMOptions {
     ] = null,
     writev: js.ThisFunction2[
       /* this */ Transform, 
-      /* chunks */ js.Array[Anon_Chunk], 
+      /* chunks */ js.Array[AnonChunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
       Unit
     ] = null

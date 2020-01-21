@@ -1,0 +1,18 @@
+package typings.angularCompiler.publicApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/public_api", "PropertyWrite")
+@js.native
+class PropertyWrite protected ()
+  extends typings.angularCompiler.srcCompilerMod.PropertyWrite {
+  def this(
+    span: typings.angularCompiler.astMod.ParseSpan,
+    receiver: typings.angularCompiler.astMod.AST,
+    name: String,
+    value: typings.angularCompiler.astMod.AST
+  ) = this()
+}
+

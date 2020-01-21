@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vnu-jar"
-version := "17.11-dt-20180218Z-f92444"
+version := "17.11-dt-20180218Z-749670"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

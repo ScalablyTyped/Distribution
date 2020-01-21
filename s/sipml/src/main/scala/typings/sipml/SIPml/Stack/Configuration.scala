@@ -1,20 +1,20 @@
 package typings.sipml.SIPml.Stack
 
-import typings.sipml.Anon_Audio
-import typings.sipml.Anon_EEvents
-import typings.sipml.Anon_MaxHeight
+import typings.sipml.AnonAudio
+import typings.sipml.AnonEEvents
+import typings.sipml.AnonMaxHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Configuration extends js.Object {
-  var bandwidth: js.UndefOr[Anon_Audio] = js.undefined
+  var bandwidth: js.UndefOr[AnonAudio] = js.undefined
   var display_name: js.UndefOr[String] = js.undefined
   var enable_click2call: js.UndefOr[Boolean] = js.undefined
   var enable_early_ims: js.UndefOr[Boolean] = js.undefined
   var enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined
   var enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined
-  var events_listener: js.UndefOr[Anon_EEvents] = js.undefined
+  var events_listener: js.UndefOr[AnonEEvents] = js.undefined
   var ice_servers: js.UndefOr[js.Array[js.Object]] = js.undefined
   var impi: js.UndefOr[String] = js.undefined
   var impu: js.UndefOr[String] = js.undefined
@@ -22,20 +22,20 @@ trait Configuration extends js.Object {
   var password: js.UndefOr[String] = js.undefined
   var realm: js.UndefOr[String] = js.undefined
   var sip_headers: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var video_size: js.UndefOr[Anon_MaxHeight] = js.undefined
+  var video_size: js.UndefOr[AnonMaxHeight] = js.undefined
   var websocket_proxy_url: js.UndefOr[String] = js.undefined
 }
 
 object Configuration {
   @scala.inline
   def apply(
-    bandwidth: Anon_Audio = null,
+    bandwidth: AnonAudio = null,
     display_name: String = null,
     enable_click2call: js.UndefOr[Boolean] = js.undefined,
     enable_early_ims: js.UndefOr[Boolean] = js.undefined,
     enable_media_stream_cache: js.UndefOr[Boolean] = js.undefined,
     enable_rtcweb_breaker: js.UndefOr[Boolean] = js.undefined,
-    events_listener: Anon_EEvents = null,
+    events_listener: AnonEEvents = null,
     ice_servers: js.Array[js.Object] = null,
     impi: String = null,
     impu: String = null,
@@ -43,7 +43,7 @@ object Configuration {
     password: String = null,
     realm: String = null,
     sip_headers: js.Array[js.Object] = null,
-    video_size: Anon_MaxHeight = null,
+    video_size: AnonMaxHeight = null,
     websocket_proxy_url: String = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()

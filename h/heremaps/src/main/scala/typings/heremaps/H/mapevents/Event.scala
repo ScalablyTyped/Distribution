@@ -1,6 +1,6 @@
 package typings.heremaps.H.mapevents
 
-import typings.heremaps.H.Map
+import typings.heremaps.H.Map_
 import typings.heremaps.H.map.Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ class Event protected ()
     changedPointers: js.Array[Pointer],
     targetPointers: js.Array[Pointer],
     currentPointer: Pointer,
-    target: Map,
+    target: Map_,
     originalEvent: Event
   ) = this()
   def this(

@@ -17,6 +17,7 @@ object fdatasync extends js.Object {
     * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
     * @param fd A file descriptor.
     */
-  def __promisify__(fd: Double): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(fd: Double): js.Promise[Unit] = js.native
 }
 

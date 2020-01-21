@@ -20,8 +20,8 @@ class XSLTProcessorCls () extends XSLTProcessor {
   /* CompleteClass */
   override def setParameter(namespaceURI: java.lang.String, localName: java.lang.String, value: js.Any): Unit = js.native
   /* CompleteClass */
-  override def transformToDocument(source: Node): Document = js.native
+  override def transformToDocument(source: Node): Document_ = js.native
   /* CompleteClass */
-  override def transformToFragment(source: Node, document: Document): DocumentFragment = js.native
+  override def transformToFragment(source: Node, document: Document_): DocumentFragment = js.native
 }
 

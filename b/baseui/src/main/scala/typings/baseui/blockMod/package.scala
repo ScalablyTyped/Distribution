@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object blockMod {
-  import typings.baseui.baseuiNumbers.`0`
-
-  type Flex = Double | String
+  type Flex = scala.Double | java.lang.String
   type Responsive[T] = T | js.Array[T]
-  type Scale = `0` | String
+  type Scale = typings.baseui.baseuiNumbers.`0` | java.lang.String
 }

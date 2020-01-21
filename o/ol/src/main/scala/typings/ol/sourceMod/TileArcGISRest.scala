@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceTileArcGISRestMod.Options
-import typings.ol.sourceTileArcGISRestMod.default
+import typings.ol.tileArcGISRestMod.Options
+import typings.ol.tileArcGISRestMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

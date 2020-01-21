@@ -5,11 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object EChartOption {
-  import org.scalablytyped.runtime.StringDictionary
-  import typings.echarts.echarts.EChartOption.DataZoom.Inside
-  import typings.echarts.echarts.EChartOption.DataZoom.Slider
-
-  type Calendar = Calendar_
+  type Calendar = typings.echarts.echarts.EChartOption.Calendar_
   /**
     * Color type for itemStyle / areaStyle etc.
     * [Color](https://echarts.apache.org/zh/option.html#series-line.areaStyle)
@@ -19,11 +15,11 @@ package object EChartOption {
     */
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.echarts.Anon_ColorStopsGlobalLinear
-    - typings.echarts.Anon_ColorStopsGlobalR
-    - typings.echarts.Anon_Image
+    - typings.echarts.AnonColorStopsGlobalLinear
+    - typings.echarts.AnonColorStopsGlobalR
+    - typings.echarts.AnonImage
   */
-  type Color = _Color | String
+  type Color = typings.echarts.echarts.EChartOption._Color | java.lang.String
   /**
     * Data zoom component of inside type.
     * Refer to dataZoom for more information.
@@ -38,34 +34,34 @@ package object EChartOption {
     * @see https://echarts.apache.org/en/option.html#dataZoom-inside
     * @see https://echarts.apache.org/en/option.html#dataZoom-slider
     */
-  type DataZoom = Inside | Slider
-  type Dataset = Dataset_
-  type Legend = Legend_
+  type DataZoom = typings.echarts.echarts.EChartOption.DataZoom.Inside | typings.echarts.echarts.EChartOption.DataZoom.Slider
+  type Dataset = typings.echarts.echarts.EChartOption.Dataset_
+  type Legend = typings.echarts.echarts.EChartOption.Legend_
   /**
     * @see https://echarts.apache.org/en/tutorial.html#Rich%20Text
     */
-  type RichStyle = StringDictionary[TextStyle]
-  type Series = SeriesLine | SeriesBar | SeriesPie | SeriesScatter | SeriesEffectScatter | SeriesRadar | SeriesTree | SeriesTreemap | SeriesSunburst | SeriesBoxplot | SeriesCandlestick | SeriesHeatmap | SeriesMap | SeriesParallel | SeriesLines | SeriesGraph | SeriesSankey | SeriesFunnel | SeriesGauge | SeriesPictorialBar | SeriesThemeRiver | SeriesCustom
-  type SeriesBar = SeriesBar_
-  type SeriesBoxplot = SeriesBoxplot_
-  type SeriesCandlestick = SeriesCandlestick_
-  type SeriesCustom = SeriesCustom_
-  type SeriesEffectScatter = SeriesEffectScatter_
-  type SeriesFunnel = SeriesFunnel_
-  type SeriesGraph = SeriesGraph_
-  type SeriesHeatmap = SeriesHeatmap_
-  type SeriesLine = SeriesLine_
-  type SeriesLines = SeriesLines_
-  type SeriesMap = SeriesMap_
-  type SeriesParallel = SeriesParallel_
-  type SeriesPictorialBar = SeriesPictorialBar_
-  type SeriesPie = SeriesPie_
-  type SeriesRadar = SeriesRadar_
-  type SeriesSankey = SeriesSankey_
-  type SeriesScatter = SeriesScatter_
-  type SeriesSunburst = SeriesSunburst_
-  type SeriesThemeRiver = SeriesThemeRiver_
-  type SeriesTree = SeriesTree_
-  type SeriesTreemap = SeriesTreemap_
-  type Tooltip = Tooltip_
+  type RichStyle = org.scalablytyped.runtime.StringDictionary[typings.echarts.echarts.EChartOption.TextStyle]
+  type Series = typings.echarts.echarts.EChartOption.SeriesLine | typings.echarts.echarts.EChartOption.SeriesBar | typings.echarts.echarts.EChartOption.SeriesPie | typings.echarts.echarts.EChartOption.SeriesScatter | typings.echarts.echarts.EChartOption.SeriesEffectScatter | typings.echarts.echarts.EChartOption.SeriesRadar | typings.echarts.echarts.EChartOption.SeriesTree | typings.echarts.echarts.EChartOption.SeriesTreemap | typings.echarts.echarts.EChartOption.SeriesSunburst | typings.echarts.echarts.EChartOption.SeriesBoxplot | typings.echarts.echarts.EChartOption.SeriesCandlestick | typings.echarts.echarts.EChartOption.SeriesHeatmap | typings.echarts.echarts.EChartOption.SeriesMap | typings.echarts.echarts.EChartOption.SeriesParallel | typings.echarts.echarts.EChartOption.SeriesLines | typings.echarts.echarts.EChartOption.SeriesGraph | typings.echarts.echarts.EChartOption.SeriesSankey | typings.echarts.echarts.EChartOption.SeriesFunnel | typings.echarts.echarts.EChartOption.SeriesGauge | typings.echarts.echarts.EChartOption.SeriesPictorialBar | typings.echarts.echarts.EChartOption.SeriesThemeRiver | typings.echarts.echarts.EChartOption.SeriesCustom
+  type SeriesBar = typings.echarts.echarts.EChartOption.SeriesBar_
+  type SeriesBoxplot = typings.echarts.echarts.EChartOption.SeriesBoxplot_
+  type SeriesCandlestick = typings.echarts.echarts.EChartOption.SeriesCandlestick_
+  type SeriesCustom = typings.echarts.echarts.EChartOption.SeriesCustom_
+  type SeriesEffectScatter = typings.echarts.echarts.EChartOption.SeriesEffectScatter_
+  type SeriesFunnel = typings.echarts.echarts.EChartOption.SeriesFunnel_
+  type SeriesGraph = typings.echarts.echarts.EChartOption.SeriesGraph_
+  type SeriesHeatmap = typings.echarts.echarts.EChartOption.SeriesHeatmap_
+  type SeriesLine = typings.echarts.echarts.EChartOption.SeriesLine_
+  type SeriesLines = typings.echarts.echarts.EChartOption.SeriesLines_
+  type SeriesMap = typings.echarts.echarts.EChartOption.SeriesMap_
+  type SeriesParallel = typings.echarts.echarts.EChartOption.SeriesParallel_
+  type SeriesPictorialBar = typings.echarts.echarts.EChartOption.SeriesPictorialBar_
+  type SeriesPie = typings.echarts.echarts.EChartOption.SeriesPie_
+  type SeriesRadar = typings.echarts.echarts.EChartOption.SeriesRadar_
+  type SeriesSankey = typings.echarts.echarts.EChartOption.SeriesSankey_
+  type SeriesScatter = typings.echarts.echarts.EChartOption.SeriesScatter_
+  type SeriesSunburst = typings.echarts.echarts.EChartOption.SeriesSunburst_
+  type SeriesThemeRiver = typings.echarts.echarts.EChartOption.SeriesThemeRiver_
+  type SeriesTree = typings.echarts.echarts.EChartOption.SeriesTree_
+  type SeriesTreemap = typings.echarts.echarts.EChartOption.SeriesTreemap_
+  type Tooltip = typings.echarts.echarts.EChartOption.Tooltip_
 }

@@ -1,7 +1,7 @@
 package typings.dojo.dojox.charting
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.chartRef
 import typings.dojo.dojoStrings.horizontal
 import typings.dojo.dojoStrings.legendBody
@@ -29,7 +29,7 @@ object widget extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   @js.native
-  class Chart () extends _WidgetBase {
+  class Chart () extends WidgetBase {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -99,7 +99,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_theme(
       property: theme,
@@ -109,7 +109,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   /**
@@ -121,7 +121,7 @@ object widget extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   @js.native
-  class Chart2D () extends _WidgetBase {
+  class Chart2D () extends WidgetBase {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -191,7 +191,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_theme(
       property: theme,
@@ -201,7 +201,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   /**
@@ -224,7 +224,7 @@ object widget extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   @js.native
-  class Legend () extends _WidgetBase {
+  class Legend () extends WidgetBase {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -287,7 +287,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_horizontal(
       property: horizontal,
@@ -297,7 +297,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_legendBody(
       property: legendBody,
@@ -307,7 +307,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_swatchSize(
       property: swatchSize,
@@ -317,7 +317,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Double], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   /**
@@ -365,7 +365,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_transitionFill(
       property: transitionFill,
@@ -375,7 +375,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_transitionStroke(
       property: transitionStroke,
@@ -385,7 +385,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
 }

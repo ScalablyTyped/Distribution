@@ -1,6 +1,6 @@
 package typings.tsutils.utilUtilMod
 
-import typings.tsutils.utilConvertDashAstMod.NodeWrap
+import typings.tsutils.convertAstMod.NodeWrap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

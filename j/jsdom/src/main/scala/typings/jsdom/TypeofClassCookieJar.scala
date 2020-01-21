@@ -2,9 +2,9 @@ package typings.jsdom
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.std.Error
-import typings.toughDashCookie.toughDashCookieMod.CookieJar
-import typings.toughDashCookie.toughDashCookieMod.CookieJar.Serialized
-import typings.toughDashCookie.toughDashCookieMod.Store
+import typings.toughCookie.mod.CookieJar
+import typings.toughCookie.mod.CookieJar.Serialized
+import typings.toughCookie.mod.Store
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

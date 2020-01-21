@@ -1,0 +1,23 @@
+package typings.awsSdk.fsxMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait CreateBackupResponse extends js.Object {
+  /**
+    * A description of the backup.
+    */
+  var Backup: js.UndefOr[typings.awsSdk.fsxMod.Backup] = js.native
+}
+
+object CreateBackupResponse {
+  @scala.inline
+  def apply(Backup: Backup = null): CreateBackupResponse = {
+    val __obj = js.Dynamic.literal()
+    if (Backup != null) __obj.updateDynamic("Backup")(Backup.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateBackupResponse]
+  }
+}
+

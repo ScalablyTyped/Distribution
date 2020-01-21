@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesLines
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
-import typings.echarts.Anon_ColorCurvenessOpacity
-import typings.echarts.Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyAnonColorCurvenessOpacity
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
+import typings.echarts.AnonColorCurvenessOpacity
+import typings.echarts.AnonLabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyAnonColorCurvenessOpacity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,19 +24,19 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-lines.data.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyAnonColorCurvenessOpacity
+    AnonLabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyAnonColorCurvenessOpacity
   ] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.data.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * The line style of this data item.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.data.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacity] = js.undefined
+  var lineStyle: js.UndefOr[AnonColorCurvenessOpacity] = js.undefined
   /**
     * the name of data.
     *
@@ -50,9 +50,9 @@ object DataObject {
   @scala.inline
   def apply(
     coords: js.Array[_] = null,
-    emphasis: Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyAnonColorCurvenessOpacity = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
-    lineStyle: Anon_ColorCurvenessOpacity = null,
+    emphasis: AnonLabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyAnonColorCurvenessOpacity = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
+    lineStyle: AnonColorCurvenessOpacity = null,
     name: String = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

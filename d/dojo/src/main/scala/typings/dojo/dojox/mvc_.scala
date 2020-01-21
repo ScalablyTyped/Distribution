@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("mvc")
 trait mvc_ extends js.Object
 

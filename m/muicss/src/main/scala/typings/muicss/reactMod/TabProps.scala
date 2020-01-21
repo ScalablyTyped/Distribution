@@ -1,7 +1,7 @@
 package typings.muicss.reactMod
 
-import typings.muicss.libReactTabMod.default
-import typings.react.reactMod.ReactNode
+import typings.muicss.tabMod.default
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

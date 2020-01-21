@@ -5,9 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tabsMod {
-  import typings.baseui.Anon_InitialStateRenderAll
-  import typings.baseui.baseuiStrings.change_
-
-  type StateReducer = js.Function3[change_, /* nextState */ State, /* currentState */ State, State]
-  type StatefulTabsProps = TabsProps with Anon_InitialStateRenderAll
+  type StateReducer = js.Function3[
+    typings.baseui.baseuiStrings.change_, 
+    /* nextState */ typings.baseui.tabsMod.State, 
+    /* currentState */ typings.baseui.tabsMod.State, 
+    typings.baseui.tabsMod.State
+  ]
+  type StatefulTabsProps = typings.baseui.tabsMod.TabsProps with typings.baseui.AnonInitialStateRenderAll
 }

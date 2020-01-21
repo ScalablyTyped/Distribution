@@ -1,7 +1,7 @@
 package typings.angularfire
 
-import typings.angular.angularMod.IHttpPromise
-import typings.angular.angularMod.IPromise
+import typings.angular.mod.IHttpPromise
+import typings.angular.mod.IPromise
 import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Attributes
+import typings.playcanvas.AnonAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,9 +43,9 @@ class ScriptComponent protected () extends Component {
     * });
     */
   def create(name: String): ScriptType = js.native
-  def create(name: String, args: Anon_Attributes): ScriptType = js.native
+  def create(name: String, args: AnonAttributes): ScriptType = js.native
   def create(name: ScriptType): ScriptType = js.native
-  def create(name: ScriptType, args: Anon_Attributes): ScriptType = js.native
+  def create(name: ScriptType, args: AnonAttributes): ScriptType = js.native
   /**
     * @function
     * @name pc.ScriptComponent#destroy

@@ -1,0 +1,9 @@
+package typings.awsSdkClientDynamodbBrowser
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object typesAutoScalingTargetTrackingScalingPolicyConfigurationDescriptionMod {
+  type UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription = typings.awsSdkClientDynamodbBrowser.typesAutoScalingTargetTrackingScalingPolicyConfigurationDescriptionMod.AutoScalingTargetTrackingScalingPolicyConfigurationDescription
+}

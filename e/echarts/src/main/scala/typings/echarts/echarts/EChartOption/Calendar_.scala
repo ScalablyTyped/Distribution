@@ -1,7 +1,7 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_BorderColor
-import typings.echarts.Anon_LineStyle
+import typings.echarts.AnonBorderColor
+import typings.echarts.AnonLineStyle
 import typings.echarts.echarts.EChartOption.Calendar.DayLabel
 import typings.echarts.echarts.EChartOption.Calendar.MonthLabel
 import typings.echarts.echarts.EChartOption.Calendar.YearLabel
@@ -17,7 +17,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#calendar
   */
-@JSName("Calendar")
 trait Calendar_ extends js.Object {
   /**
     * Distance between calendar component and the bottom side of the container.
@@ -58,7 +57,7 @@ trait Calendar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#calendar.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColor] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColor] = js.undefined
   /**
     * Distance between calendar component and the left side of the container.
     * left value can be instant pixel value like 20;
@@ -104,7 +103,7 @@ trait Calendar_ extends js.Object {
   /**
     * Calendar coordinates splitLine style.
     */
-  var splitLine: js.UndefOr[Anon_LineStyle] = js.undefined
+  var splitLine: js.UndefOr[AnonLineStyle] = js.undefined
   /**
     * Distance between calendar component and the top side of the container.
     * top value can be instant pixel value like 20;
@@ -158,14 +157,14 @@ object Calendar_ {
     dayLabel: DayLabel = null,
     height: Double | String = null,
     id: String = null,
-    itemStyle: Anon_BorderColor = null,
+    itemStyle: AnonBorderColor = null,
     left: Double | String = null,
     monthLabel: MonthLabel = null,
     orient: horizontal | vertical = null,
     range: Double | String | (js.Array[Double | String]) = null,
     right: Double | String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    splitLine: Anon_LineStyle = null,
+    splitLine: AnonLineStyle = null,
     top: Double | String = null,
     width: Double | String = null,
     yearLabel: YearLabel = null,

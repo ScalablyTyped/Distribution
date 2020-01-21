@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * CSS Language definition file.
   *
   */
-@JSName("css")
 trait css_ extends js.Object {
   /**
     *

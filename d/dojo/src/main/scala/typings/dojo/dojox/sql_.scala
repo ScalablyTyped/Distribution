@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("sql")
 trait sql_ extends js.Object
 

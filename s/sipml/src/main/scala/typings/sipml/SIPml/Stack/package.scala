@@ -21,5 +21,5 @@ package object Stack {
     * "m_permission_accepted" |
     * "m_permission_refused";
     */
-  type EventSubscriptionType = String
+  type EventSubscriptionType = java.lang.String
 }

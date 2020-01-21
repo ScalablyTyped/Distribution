@@ -1,0 +1,12 @@
+package typings.feathersjsAuthenticationJwt
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object mod {
+  type JwtFromRequestFunction = js.Function1[
+    /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
+    java.lang.String | scala.Null
+  ]
+}

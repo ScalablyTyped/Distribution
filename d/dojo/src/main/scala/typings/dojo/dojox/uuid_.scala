@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("uuid")
 trait uuid_ extends js.Object
 

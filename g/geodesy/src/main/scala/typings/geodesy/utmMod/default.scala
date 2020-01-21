@@ -1,6 +1,6 @@
 package typings.geodesy.utmMod
 
-import typings.geodesy.geodesyMod.Datum
+import typings.geodesy.mod.Datum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

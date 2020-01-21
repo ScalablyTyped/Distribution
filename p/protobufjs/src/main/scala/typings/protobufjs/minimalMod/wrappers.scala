@@ -1,7 +1,7 @@
 package typings.protobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.protobufjsMod.IWrapper
+import typings.protobufjs.mod.IWrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

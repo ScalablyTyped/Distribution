@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait KnockoutStatic extends js.Object {
   var bindingHandlers: KnockoutBindingHandlers = js.native
   /////////////////////////////////
-  var bindingProvider: Anon_InstanceKnockoutBindingProvider = js.native
+  var bindingProvider: AnonInstanceKnockoutBindingProvider = js.native
   var components: KnockoutComponents = js.native
   /**
     * Get information about the current computed property during the execution of a computed observable’s evaluator function.
@@ -19,17 +19,17 @@ trait KnockoutStatic extends js.Object {
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
   var computed_Original: KnockoutComputedStatic = js.native
-  var expressionRewriting: Anon_AllBindings = js.native
+  var expressionRewriting: AnonAllBindings = js.native
   var extenders: KnockoutExtenders = js.native
   //////////////////////////////////
   // jqueryTmplTemplateEngine.js
   //////////////////////////////////
-  var jqueryTmplTemplateEngine: Anon_AddTemplate = js.native
+  var jqueryTmplTemplateEngine: AnonAddTemplate = js.native
   var memoization: KnockoutMemoization = js.native
   //////////////////////////////////
   // nativeTemplateEngine.js
   //////////////////////////////////
-  var nativeTemplateEngine: Anon_Instance = js.native
+  var nativeTemplateEngine: AnonInstance = js.native
   @JSName("observableArray")
   var observableArray_Original: KnockoutObservableArrayStatic = js.native
   @JSName("observable")
@@ -41,11 +41,11 @@ trait KnockoutStatic extends js.Object {
   /////////////////////////////////
   // options.js
   /////////////////////////////////
-  var options: Anon_DeferUpdates = js.native
+  var options: AnonDeferUpdates = js.native
   /////////////////////////////////
   // selectExtensions.js
   /////////////////////////////////
-  var selectExtensions: Anon_AllowUnset = js.native
+  var selectExtensions: AnonAllowUnset = js.native
   var subscribable: KnockoutSubscribableStatic = js.native
   /////////////////////////////////
   // tasks.js
@@ -54,11 +54,11 @@ trait KnockoutStatic extends js.Object {
   //////////////////////////////////
   // templateEngine.js
   //////////////////////////////////
-  var templateEngine: Anon_KnockoutTemplateEngine = js.native
+  var templateEngine: AnonKnockoutTemplateEngine = js.native
   //////////////////////////////////
   // templateRewriting.js
   //////////////////////////////////
-  var templateRewriting: Anon_ApplyMemoizedBindingsToNextSibling = js.native
+  var templateRewriting: AnonApplyMemoizedBindingsToNextSibling = js.native
   //////////////////////////////////
   // templateSources.js
   //////////////////////////////////

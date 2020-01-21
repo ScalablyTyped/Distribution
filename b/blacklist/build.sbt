@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blacklist"
-version := "1.1-dt-20180214Z-5734e4"
+version := "1.1-dt-20180214Z-871053"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

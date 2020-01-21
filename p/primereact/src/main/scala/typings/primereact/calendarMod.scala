@@ -1,7 +1,7 @@
 package typings.primereact
 
-import typings.primereact.componentsCalendarCalendarMod.CalendarProps
-import typings.react.reactMod.Component
+import typings.primereact.calendarCalendarMod.CalendarProps
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

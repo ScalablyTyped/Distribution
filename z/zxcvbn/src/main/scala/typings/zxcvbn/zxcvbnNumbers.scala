@@ -1,6 +1,6 @@
 package typings.zxcvbn
 
-import typings.zxcvbn.zxcvbnMod.ZXCVBNScore
+import typings.zxcvbn.mod.ZXCVBNScore
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.keepScrollPos
 import typings.dojo.dojoStrings.selected
 import typings.dojo.dojoStrings.style
@@ -31,10 +31,10 @@ import scala.scalajs.js.annotation._
   * @param node       OptionalThe DOM node. If none is specified, it is automatically created.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
-- typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.View")
+- typings.dojo.dijit.Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
+- typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.View")
 @js.native
-class View protected () extends _WidgetBase {
+class View protected () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, node: HTMLElement) = this()
   /**
@@ -66,7 +66,7 @@ class View protected () extends _WidgetBase {
     * @param widget             
     * @param insertIndex               Optional            
     */
-  def addChild(widget: _WidgetBase): Unit = js.native
+  def addChild(widget: WidgetBase): Unit = js.native
   /**
     * Makes the given widget a child of this widget.
     * Inserts specified child widget's dom node as a child of this widget's
@@ -75,7 +75,7 @@ class View protected () extends _WidgetBase {
     * @param widget
     * @param insertIndex               Optional
     */
-  def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+  def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
   /**
     *
     */
@@ -108,7 +108,7 @@ class View protected () extends _WidgetBase {
     * 
     * @param child             
     */
-  def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+  def getIndexOfChild(child: WidgetBase): js.Any = js.native
   /**
     * Returns null if this is the last child of the parent,
     * otherwise returns the next element sibling to the "right".
@@ -300,7 +300,7 @@ class View protected () extends _WidgetBase {
     * 
     * @param widget             
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
   /**
     * Calls resize() of each child widget.
     *
@@ -341,7 +341,7 @@ class View protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selected(
     property: selected,
@@ -351,7 +351,7 @@ class View protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tag(
     property: tag,
@@ -361,6 +361,6 @@ class View protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

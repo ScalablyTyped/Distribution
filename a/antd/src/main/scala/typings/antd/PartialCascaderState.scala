@@ -1,7 +1,7 @@
 package typings.antd
 
-import typings.antd.libCascaderMod.CascaderOptionType
-import typings.antd.libCascaderMod.CascaderProps
+import typings.antd.cascaderMod.CascaderOptionType
+import typings.antd.cascaderMod.CascaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

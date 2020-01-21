@@ -1,6 +1,6 @@
 package typings.ol
 
-import typings.ol.tileMod.UrlFunction
+import typings.ol.olTileMod.UrlFunction
 import typings.ol.tilecoordMod.TileCoord
 import typings.ol.tilegridTileGridMod.default
 import scala.scalajs.js
@@ -14,6 +14,6 @@ object tileurlfunctionMod extends js.Object {
   def createFromTemplates(templates: js.Array[String], tileGrid: default): UrlFunction = js.native
   def createFromTileUrlFunctions(tileUrlFunctions: js.Array[UrlFunction]): UrlFunction = js.native
   def expandUrl(url: String): js.Array[String] = js.native
-  def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typings.ol.projProjectionMod.default): String = js.native
+  def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typings.ol.projectionMod.default): String = js.native
 }
 

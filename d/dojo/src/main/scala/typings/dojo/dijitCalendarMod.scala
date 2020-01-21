@@ -1,53 +1,12 @@
 package typings.dojo
 
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
-import typings.dojo.dijit.Calendar
-import typings.std.HTMLElement
+import typings.dojo.dijit._Calendar
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("dijit/Calendar", JSImport.Namespace)
+@JSImport("dijit/_Calendar", JSImport.Namespace)
 @js.native
-object dijitCalendarMod
-  extends TopLevel[
-      TypeofCalendar with (Instantiable2[
-        js.UndefOr[/* params */ js.Object], 
-        js.UndefOr[/* srcNodeRef */ HTMLElement], 
-        Calendar
-      ])
-    ] {
-  /**
-    * Permalink: http://dojotoolkit.org/api/1.9/dijit/Calendar._MonthDropDown.html
-    *
-    * The list-of-months drop down from the MonthDropDownButton
-    * 
-    * @param params Hash of initialization parameters for widget, including scalar values (like title, duration etc.)and functions, typically callbacks like onClick.The hash can contain any of the widget's properties, excluding read-only properties.     
-    * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
-    */
-  @js.native
-  class _MonthDropDown ()
-    extends typings.dojo.dijit.Calendar._MonthDropDown {
-    def this(params: js.Object) = this()
-    def this(params: js.Object, srcNodeRef: HTMLElement) = this()
-  }
-  
-  /**
-    * Permalink: http://dojotoolkit.org/api/1.9/dijit/Calendar._MonthDropDownButton.html
-    *
-    * DropDownButton for the current month.    Displays name of current month
-    * and a list of month names in the drop down
-    * 
-    * @param params Hash of initialization parameters for widget, including scalar values (like title, duration etc.)and functions, typically callbacks like onClick.The hash can contain any of the widget's properties, excluding read-only properties.     
-    * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
-    */
-  @js.native
-  class _MonthDropDownButton ()
-    extends typings.dojo.dijit.Calendar._MonthDropDownButton {
-    def this(params: js.Object) = this()
-    def this(params: js.Object, srcNodeRef: HTMLElement) = this()
-  }
-  
-}
+object dijitCalendarMod extends TopLevel[_Calendar]
 

@@ -1,6 +1,6 @@
 package typings.urllib
 
-import typings.urllib.urllibMod.HttpMethod
+import typings.urllib.mod.HttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

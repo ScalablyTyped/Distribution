@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesScatter
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,18 +12,18 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-scatter.data.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * the style setting about single data point(bubble).
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-scatter.data.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * the name of data item.
     *
@@ -127,7 +127,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.data.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * the value of data item.
     *
@@ -140,16 +140,16 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
     name: String = null,
     symbol: String = null,
     symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     value: js.Array[_] = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

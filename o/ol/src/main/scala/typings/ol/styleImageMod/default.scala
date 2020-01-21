@@ -38,7 +38,7 @@ abstract class default protected () extends ImageStyle {
   /* CompleteClass */
   override def getSize(): Size = js.native
   /* CompleteClass */
-  override def listenImageChange[T](listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit]): Unit = js.native
+  override def listenImageChange[T](listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]): Unit = js.native
   /* CompleteClass */
   override def load(): Unit = js.native
   /* CompleteClass */
@@ -50,6 +50,6 @@ abstract class default protected () extends ImageStyle {
   /* CompleteClass */
   override def setScale(scale: Double): Unit = js.native
   /* CompleteClass */
-  override def unlistenImageChange[T](listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit]): Unit = js.native
+  override def unlistenImageChange[T](listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]): Unit = js.native
 }
 

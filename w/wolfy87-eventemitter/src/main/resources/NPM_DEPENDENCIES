@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "wolfy87-eventemitter" : "5.2.8"
+      "wolfy87-eventemitter" : "5.2.9"
     }
   ],
   "test-dependencies" : [
     {
-      "wolfy87-eventemitter" : "5.2.8"
+      "wolfy87-eventemitter" : "5.2.9"
     }
   ],
   "compile-devDependencies" : [

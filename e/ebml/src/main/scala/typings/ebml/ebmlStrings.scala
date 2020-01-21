@@ -1,6 +1,6 @@
 package typings.ebml
 
-import typings.ebml.ebmlMod.TagType
+import typings.ebml.mod.TagType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

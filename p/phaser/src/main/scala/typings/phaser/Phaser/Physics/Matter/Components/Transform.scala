@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Transform extends js.Object {
   /**
-    * Use `angle` to set or get rotation of the physics body associated to this GameObject. Unlike rotation, when using set the value can be in degrees, which will be converted to radians internally.
+    * Use `angle` to set or get rotation of the physics body associated to this GameObject.
+    * Unlike rotation, when using set the value can be in degrees, which will be converted to radians internally.
     */
   var angle: Double = js.native
   /**
-    * Use `rotation` to set or get the rotation of the physics body associated with this GameObject. The value when set must be in radians.
+    * Use `rotation` to set or get the rotation of the physics body associated with this GameObject.
+    * The value when set must be in radians.
     */
   var rotation: Double = js.native
   /**
@@ -35,17 +37,21 @@ trait Transform extends js.Object {
     */
   var y: Double = js.native
   /**
-    * [description]
-    * @param degrees [description] Default 0.
+    * Immediately sets the angle of the Body.
+    * Angular velocity, position, force etc. are unchanged.
+    * @param degrees The angle to set, in degrees. Default 0.
     */
   def setAngle(): this.type = js.native
   def setAngle(degrees: Double): this.type = js.native
   /**
-    * [description]
+    * Setting fixed rotation sets the Body inertia to Infinity, which stops it
+    * from being able to rotate when forces are applied to it.
     */
   def setFixedRotation(): this.type = js.native
   /**
-    * Sets the position of the physics body along x and y axes. Both the parameters to this function are optional and if not passed any they default to 0.
+    * Sets the position of the physics body along x and y axes.
+    * Both the parameters to this function are optional and if not passed any they default to 0.
+    * Velocity, angle, force etc. are unchanged.
     * @param x The horizontal position of the body. Default 0.
     * @param y The vertical position of the body. Default x.
     */
@@ -53,8 +59,9 @@ trait Transform extends js.Object {
   def setPosition(x: Double): this.type = js.native
   def setPosition(x: Double, y: Double): this.type = js.native
   /**
-    * [description]
-    * @param radians [description] Default 0.
+    * Immediately sets the angle of the Body.
+    * Angular velocity, position, force etc. are unchanged.
+    * @param radians The angle of the body, in radians. Default 0.
     */
   def setRotation(): this.type = js.native
   def setRotation(radians: Double): this.type = js.native

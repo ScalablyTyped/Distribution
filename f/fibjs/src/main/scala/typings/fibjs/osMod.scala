@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object osMod extends js.Object {
   @js.native
-  class Service () extends Class_Service
+  class Service () extends ClassService
   
   val EOL: String = js.native
   val execPath: String = js.native
@@ -30,7 +30,7 @@ object osMod extends js.Object {
   def loadavg(): js.Array[_] = js.native
   def memoryUsage(): js.Object = js.native
   def networkInterfaces(): js.Object = js.native
-  def openPrinter(name: String): Class_BufferedStream = js.native
+  def openPrinter(name: String): ClassBufferedStream = js.native
   def platform(): String = js.native
   def printerInfo(): js.Array[_] = js.native
   def release(): String = js.native

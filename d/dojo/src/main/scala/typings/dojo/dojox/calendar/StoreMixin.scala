@@ -1,6 +1,6 @@
 package typings.dojo.dojox.calendar
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojo.store.api.Store
 import typings.dojo.dojoStrings.allDayAttr
@@ -203,7 +203,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cssClassFunc(
     property: cssClassFunc,
@@ -213,7 +213,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_decodeDate(
     property: decodeDate,
@@ -223,7 +223,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_displayedItemsInvalidated(
     property: displayedItemsInvalidated,
@@ -233,7 +233,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_encodeDate(
     property: encodeDate,
@@ -243,7 +243,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_endTimeAttr(
     property: endTimeAttr,
@@ -253,7 +253,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_query(
     property: query,
@@ -263,7 +263,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_queryOptions(
     property: queryOptions,
@@ -273,7 +273,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_startTimeAttr(
     property: startTimeAttr,
@@ -283,7 +283,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_store(
     property: store,
@@ -293,7 +293,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_subColumnAttr(
     property: subColumnAttr,
@@ -303,7 +303,7 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_summaryAttr(
     property: summaryAttr,
@@ -313,6 +313,6 @@ class StoreMixin () extends Stateful {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

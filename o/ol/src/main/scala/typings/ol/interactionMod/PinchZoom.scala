@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionPinchZoomMod.Options
-import typings.ol.interactionPinchZoomMod.default
+import typings.ol.pinchZoomMod.Options
+import typings.ol.pinchZoomMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

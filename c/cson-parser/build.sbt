@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cson-parser"
-version := "4.0.3-b036ea"
+version := "4.0.3-d8d77b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

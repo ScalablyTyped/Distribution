@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mobile {
-  type Accordion = Accordion_
-  type Carousel = Carousel_
+  type Accordion = typings.dojo.dojox.mobile.Accordion_
+  type Carousel = typings.dojo.dojox.mobile.Carousel_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mobile/DatePicker.html
     *
@@ -16,8 +16,8 @@ package object mobile {
     * Returns SpinWheelDatePicker otherwise.
     *
     */
-  type DatePicker = js.Function0[Unit]
-  type ListItem = ListItem_
+  type DatePicker = js.Function0[scala.Unit]
+  type ListItem = typings.dojo.dojox.mobile.ListItem_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mobile/TimePicker.html
     *
@@ -26,14 +26,14 @@ package object mobile {
     * Returns SpinWheelTimePicker otherwise.
     *
     */
-  type TimePicker = js.Function0[Unit]
-  type i18n = i18n_
+  type TimePicker = js.Function0[scala.Unit]
+  type i18n = typings.dojo.dojox.mobile.i18n_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mobile/pageTurningUtils.html
     *
     * Utilities to provide page turning effects just like turning a real book.
     *
     */
-  type pageTurningUtils = js.Function0[Unit]
-  type viewRegistry = viewRegistry_
+  type pageTurningUtils = js.Function0[scala.Unit]
+  type viewRegistry = typings.dojo.dojox.mobile.viewRegistry_
 }

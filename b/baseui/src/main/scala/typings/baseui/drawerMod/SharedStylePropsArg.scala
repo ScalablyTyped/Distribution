@@ -7,7 +7,7 @@ import typings.baseui.baseuiStrings.full
 import typings.baseui.baseuiStrings.left
 import typings.baseui.baseuiStrings.right
 import typings.baseui.baseuiStrings.top
-import typings.react.reactMod.ReactNode
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

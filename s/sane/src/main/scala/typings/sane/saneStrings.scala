@@ -1,7 +1,7 @@
 package typings.sane
 
-import typings.sane.saneMod.AllEventType
-import typings.sane.saneMod.EventType
+import typings.sane.mod.AllEventType
+import typings.sane.mod.EventType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.three.srcExtrasCoreShapeMod.Shape
-import typings.three.srcGeometriesExtrudeGeometryMod.UVGenerator
-import typings.three.threeMod.ExtrudeBufferGeometry
+import typings.three.extrudeGeometryMod.UVGenerator
+import typings.three.mod.ExtrudeBufferGeometry
+import typings.three.shapeMod.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.androidWorkaroud
 import typings.dojo.dojoStrings.dirLock
 import typings.dojo.dojoStrings.disableFlashScrollBar
@@ -25,7 +25,7 @@ import typings.dojo.dojoStrings.touchNode
 import typings.dojo.dojoStrings.value
 import typings.dojo.dojoStrings.weight
 import typings.dojo.dojoStrings.zeroPad
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,9 +42,9 @@ import scala.scalajs.js.annotation._
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dojox.mobile.scrollable because Inheritance from two classes. Inlined constraint, dirLock, disableFlashScrollBar, fadeScrollBar, fixedFooterHeight, fixedHeaderHeight, height, isLocalFooter, propagatable, scrollBar, scrollDir, scrollType, threshold, touchNode, weight, abort, addCover, adjustDestination, calcScrollBarPos, calcSpeed, cleanup, createMask, findDisp, flashScrollBar, getDim, getPos, getScreenSize, getSpeed, hideScrollBar, init, isFormElement, isTopLevel, makeTranslateStr, removeCover, resetScrollBar, resize, scrollIntoView, scrollScrollBarTo, scrollTo, setKeyframes, setSelectable, showScrollBar, slideScrollBarTo, slideTo, stopAnimation
-- typings.dojo.dijit._Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling */ @JSGlobal("dojox.mobile.SpinWheelSlot")
+- typings.dojo.dijit.Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling */ @JSGlobal("dojox.mobile.SpinWheelSlot")
 @js.native
-class SpinWheelSlot () extends _WidgetBase {
+class SpinWheelSlot () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -429,14 +429,14 @@ class SpinWheelSlot () extends _WidgetBase {
     *
     * @param e the scroll event, that contains the following attributes:x (x coordinate of the scroll destination),y (y coordinate of the scroll destination),beforeTop (a boolean that is true if the scroll detination is before the top of the scrollable),beforeTopHeight (the number of pixels before the top of the scrollable for the scroll destination),afterBottom (a boolean that is true if the scroll destination is after the bottom of the scrollable),afterBottomHeight (the number of pixels after the bottom of the scrollable for the scroll destination)
     */
-  def onAfterScroll(e: Event): Unit = js.native
+  def onAfterScroll(e: Event_): Unit = js.native
   /**
     * called before a scroll is initiated. If this method returns false,
     * the scroll is canceled.
     *
     * @param e the scroll event, that contains the following attributes:x (x coordinate of the scroll destination),y (y coordinate of the scroll destination),beforeTop (a boolean that is true if the scroll detination is before the top of the scrollable),beforeTopHeight (the number of pixels before the top of the scrollable for the scroll destination),afterBottom (a boolean that is true if the scroll destination is after the bottom of the scrollable),afterBottomHeight (the number of pixels after the bottom of the scrollable for the scroll destination)
     */
-  def onBeforeScroll(e: Event): Boolean = js.native
+  def onBeforeScroll(e: Event_): Boolean = js.native
   /**
     * Overrides dojox/mobile/scrollable.onFlickAnimationEnd().
     *
@@ -454,7 +454,7 @@ class SpinWheelSlot () extends _WidgetBase {
     *
     * @param e
     */
-  def onTouchEnd(e: Event): Unit = js.native
+  def onTouchEnd(e: Event_): Unit = js.native
   /**
     * User-defined function to handle touchMove events.
     *
@@ -649,7 +649,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dirLock(
     property: dirLock,
@@ -659,7 +659,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_disableFlashScrollBar(
     property: disableFlashScrollBar,
@@ -669,7 +669,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fadeScrollBar(
     property: fadeScrollBar,
@@ -679,7 +679,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedFooterHeight(
     property: fixedFooterHeight,
@@ -689,7 +689,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedHeaderHeight(
     property: fixedHeaderHeight,
@@ -699,7 +699,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_height(
     property: height,
@@ -709,7 +709,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isLocalFooter(
     property: isLocalFooter,
@@ -719,7 +719,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_items(
     property: items,
@@ -729,7 +729,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelFrom(
     property: labelFrom,
@@ -739,7 +739,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelTo(
     property: labelTo,
@@ -749,7 +749,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labels(
     property: labels,
@@ -759,7 +759,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollBar(
     property: scrollBar,
@@ -769,7 +769,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollDir(
     property: scrollDir,
@@ -779,7 +779,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollType(
     property: scrollType,
@@ -789,7 +789,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_step(
     property: step,
@@ -799,7 +799,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tabIndex(
     property: tabIndex,
@@ -809,7 +809,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_threshold(
     property: threshold,
@@ -819,7 +819,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_touchNode(
     property: touchNode,
@@ -829,7 +829,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[HTMLElement], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -839,7 +839,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_weight(
     property: weight,
@@ -849,7 +849,7 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_zeroPad(
     property: zeroPad,
@@ -859,6 +859,6 @@ class SpinWheelSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

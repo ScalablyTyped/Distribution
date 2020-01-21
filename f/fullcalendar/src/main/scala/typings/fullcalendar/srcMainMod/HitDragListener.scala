@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "HitDragListener")
 @js.native
 class HitDragListener protected ()
-  extends typings.fullcalendar.srcExportsMod.HitDragListener {
+  extends typings.fullcalendar.exportsMod.HitDragListener {
   def this(component: js.Any, options: js.Any) = this()
 }
 

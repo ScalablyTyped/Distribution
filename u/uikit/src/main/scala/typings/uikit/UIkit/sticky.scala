@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.sticky")
 @js.native
-object sticky extends TopLevel[Sticky]
+object sticky extends TopLevel[Sticky_]
 

@@ -1,7 +1,7 @@
 package typings.recompose
 
-import typings.recompose.recomposeMod.InferableComponentEnhancer
-import typings.recompose.recomposeMod.ReactLifeCycleFunctions
+import typings.recompose.mod.InferableComponentEnhancer
+import typings.recompose.mod.ReactLifeCycleFunctions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

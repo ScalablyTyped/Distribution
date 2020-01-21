@@ -1,9 +1,9 @@
 package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.extentCornerMod.Corner
-import typings.ol.extentRelationshipMod.Relationship
+import typings.ol.cornerMod.Corner
 import typings.ol.projMod.TransformFunction
+import typings.ol.relationshipMod.Relationship
 import typings.ol.sizeMod.Size
 import scala.scalajs.js
 import scala.scalajs.js.`|`

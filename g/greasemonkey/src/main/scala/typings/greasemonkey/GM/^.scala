@@ -1,6 +1,6 @@
 package typings.greasemonkey.GM
 
-import typings.greasemonkey.Anon_Script
+import typings.greasemonkey.AnonScript
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object ^ extends js.Object {
     * Meta data about the running user script.
     * @see {@link https://wiki.greasespot.net/GM.info}
     */
-  var info: Anon_Script = js.native
+  var info: AnonScript = js.native
   /**
     * Deletes an existing name / value pair from storage.
     * @see {@link https://wiki.greasespot.net/GM.deleteValue}

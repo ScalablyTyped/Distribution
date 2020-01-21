@@ -1,16 +1,13 @@
 package typings.moment
 
-import typings.moment.momentMod.LongDateFormatKey
-import typings.moment.momentMod.RelativeTimeKey
-import typings.moment.momentMod._CalendarKey
-import typings.moment.momentMod.unitOfTime.All
-import typings.moment.momentMod.unitOfTime.Base
-import typings.moment.momentMod.unitOfTime.Diff
-import typings.moment.momentMod.unitOfTime.DurationConstructor
-import typings.moment.momentMod.unitOfTime.MomentConstructor
-import typings.moment.momentMod.unitOfTime._date
-import typings.moment.momentMod.unitOfTime._isoWeek
-import typings.moment.momentMod.unitOfTime._quarter
+import typings.moment.mod.LongDateFormatKey
+import typings.moment.mod.RelativeTimeKey
+import typings.moment.mod._CalendarKey
+import typings.moment.mod.unitOfTime.All
+import typings.moment.mod.unitOfTime.Base
+import typings.moment.mod.unitOfTime.Diff
+import typings.moment.mod.unitOfTime.DurationConstructor
+import typings.moment.mod.unitOfTime.MomentConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +15,7 @@ import scala.scalajs.js.annotation._
 object momentStrings {
   @js.native
   sealed trait D
-    extends _date
+    extends typings.moment.mod.unitOfTime.date
        with All
        with MomentConstructor
   
@@ -69,14 +66,14 @@ object momentStrings {
   
   @js.native
   sealed trait Q
-    extends _quarter
+    extends typings.moment.mod.unitOfTime.quarter
        with All
        with Diff
        with DurationConstructor
   
   @js.native
   sealed trait W
-    extends _isoWeek
+    extends typings.moment.mod.unitOfTime.isoWeek
        with All
   
   @js.native
@@ -96,13 +93,13 @@ object momentStrings {
   
   @js.native
   sealed trait date
-    extends _date
+    extends typings.moment.mod.unitOfTime.date
        with All
        with MomentConstructor
   
   @js.native
   sealed trait dates
-    extends _date
+    extends typings.moment.mod.unitOfTime.date
        with All
        with MomentConstructor
   
@@ -167,7 +164,7 @@ object momentStrings {
   
   @js.native
   sealed trait isoWeek
-    extends _isoWeek
+    extends typings.moment.mod.unitOfTime.isoWeek
        with All
   
   @js.native
@@ -184,7 +181,7 @@ object momentStrings {
   
   @js.native
   sealed trait isoWeeks
-    extends _isoWeek
+    extends typings.moment.mod.unitOfTime.isoWeek
        with All
   
   @js.native
@@ -287,14 +284,14 @@ object momentStrings {
   
   @js.native
   sealed trait quarter
-    extends _quarter
+    extends typings.moment.mod.unitOfTime.quarter
        with All
        with Diff
        with DurationConstructor
   
   @js.native
   sealed trait quarters
-    extends _quarter
+    extends typings.moment.mod.unitOfTime.quarter
        with All
        with Diff
        with DurationConstructor

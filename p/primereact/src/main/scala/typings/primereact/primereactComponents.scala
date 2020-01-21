@@ -1,194 +1,196 @@
 package typings.primereact
 
-import typings.react.reactMod.ComponentType
+import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object primereactComponents extends primereactProps {
   @scala.inline
-  def Accordion: ComponentType[AccordionProps] = js.constructorOf[typings.primereact.accordionMod.Accordion].asInstanceOf[typings.react.reactMod.ComponentType[AccordionProps]]
+  def Accordion: ComponentType[AccordionProps] = js.constructorOf[typings.primereact.mod.Accordion].asInstanceOf[typings.react.mod.ComponentType[AccordionProps]]
   @scala.inline
-  def AccordionTab: ComponentType[AccordionTabProps] = js.constructorOf[typings.primereact.accordionMod.AccordionTab].asInstanceOf[typings.react.reactMod.ComponentType[AccordionTabProps]]
+  def AccordionTab: ComponentType[AccordionTabProps] = js.constructorOf[typings.primereact.mod.AccordionTab].asInstanceOf[typings.react.mod.ComponentType[AccordionTabProps]]
   @scala.inline
-  def AutoComplete: ComponentType[AutoCompleteProps] = js.constructorOf[typings.primereact.autocompleteMod.AutoComplete].asInstanceOf[typings.react.reactMod.ComponentType[AutoCompleteProps]]
+  def AutoComplete: ComponentType[AutoCompleteProps] = js.constructorOf[typings.primereact.autocompleteMod.AutoComplete].asInstanceOf[typings.react.mod.ComponentType[AutoCompleteProps]]
   @scala.inline
-  def BodyCell: ComponentType[BodyCellProps] = js.constructorOf[typings.primereact.componentsDatatableBodyCellMod.BodyCell].asInstanceOf[typings.react.reactMod.ComponentType[BodyCellProps]]
+  def BodyCell: ComponentType[BodyCellProps] = js.constructorOf[typings.primereact.bodyCellMod.BodyCell].asInstanceOf[typings.react.mod.ComponentType[BodyCellProps]]
   @scala.inline
-  def BodyRow: ComponentType[BodyRowProps] = js.constructorOf[typings.primereact.componentsDatatableBodyRowMod.BodyRow].asInstanceOf[typings.react.reactMod.ComponentType[BodyRowProps]]
+  def BodyRow: ComponentType[BodyRowProps] = js.constructorOf[typings.primereact.bodyRowMod.BodyRow].asInstanceOf[typings.react.mod.ComponentType[BodyRowProps]]
   @scala.inline
-  def BreadCrumb: ComponentType[BreadCrumbProps] = js.constructorOf[typings.primereact.breadcrumbMod.BreadCrumb].asInstanceOf[typings.react.reactMod.ComponentType[BreadCrumbProps]]
+  def BreadCrumb: ComponentType[BreadCrumbProps] = js.constructorOf[typings.primereact.breadcrumbMod.BreadCrumb].asInstanceOf[typings.react.mod.ComponentType[BreadCrumbProps]]
   @scala.inline
-  def Button: ComponentType[ButtonProps] = js.constructorOf[typings.primereact.buttonMod.Button].asInstanceOf[typings.react.reactMod.ComponentType[ButtonProps]]
+  def Button: ComponentType[ButtonProps] = js.constructorOf[typings.primereact.buttonMod.Button].asInstanceOf[typings.react.mod.ComponentType[ButtonProps]]
   @scala.inline
-  def Calendar: ComponentType[CalendarProps] = js.constructorOf[typings.primereact.calendarMod.Calendar].asInstanceOf[typings.react.reactMod.ComponentType[CalendarProps]]
+  def Calendar: ComponentType[CalendarProps] = js.constructorOf[typings.primereact.calendarMod.Calendar].asInstanceOf[typings.react.mod.ComponentType[CalendarProps]]
   @scala.inline
-  def Captcha: ComponentType[CaptchaProps] = js.constructorOf[typings.primereact.captchaMod.Captcha].asInstanceOf[typings.react.reactMod.ComponentType[CaptchaProps]]
+  def Captcha: ComponentType[CaptchaProps] = js.constructorOf[typings.primereact.captchaMod.Captcha].asInstanceOf[typings.react.mod.ComponentType[CaptchaProps]]
   @scala.inline
-  def Card: ComponentType[CardProps] = js.constructorOf[typings.primereact.cardMod.Card].asInstanceOf[typings.react.reactMod.ComponentType[CardProps]]
+  def Card: ComponentType[CardProps] = js.constructorOf[typings.primereact.cardMod.Card].asInstanceOf[typings.react.mod.ComponentType[CardProps]]
   @scala.inline
-  def Carousel: ComponentType[CarouselProps] = js.constructorOf[typings.primereact.carouselMod.Carousel].asInstanceOf[typings.react.reactMod.ComponentType[CarouselProps]]
+  def Carousel: ComponentType[CarouselProps] = js.constructorOf[typings.primereact.carouselMod.Carousel].asInstanceOf[typings.react.mod.ComponentType[CarouselProps]]
   @scala.inline
-  def Chart: ComponentType[ChartProps] = js.constructorOf[typings.primereact.chartMod.Chart].asInstanceOf[typings.react.reactMod.ComponentType[ChartProps]]
+  def Chart: ComponentType[ChartProps] = js.constructorOf[typings.primereact.chartMod.Chart].asInstanceOf[typings.react.mod.ComponentType[ChartProps]]
   @scala.inline
-  def Checkbox: ComponentType[CheckboxProps] = js.constructorOf[typings.primereact.checkboxMod.Checkbox].asInstanceOf[typings.react.reactMod.ComponentType[CheckboxProps]]
+  def Checkbox: ComponentType[CheckboxProps] = js.constructorOf[typings.primereact.checkboxMod.Checkbox].asInstanceOf[typings.react.mod.ComponentType[CheckboxProps]]
   @scala.inline
-  def Chips: ComponentType[ChipsProps] = js.constructorOf[typings.primereact.chipsMod.Chips].asInstanceOf[typings.react.reactMod.ComponentType[ChipsProps]]
+  def Chips: ComponentType[ChipsProps] = js.constructorOf[typings.primereact.chipsMod.Chips].asInstanceOf[typings.react.mod.ComponentType[ChipsProps]]
   @scala.inline
-  def ColorPicker: ComponentType[ColorPickerProps] = js.constructorOf[typings.primereact.colorpickerMod.ColorPicker].asInstanceOf[typings.react.reactMod.ComponentType[ColorPickerProps]]
+  def ColorPicker: ComponentType[ColorPickerProps] = js.constructorOf[typings.primereact.colorpickerMod.ColorPicker].asInstanceOf[typings.react.mod.ComponentType[ColorPickerProps]]
   @scala.inline
-  def Column: ComponentType[ColumnProps] = js.constructorOf[typings.primereact.columnMod.Column].asInstanceOf[typings.react.reactMod.ComponentType[ColumnProps]]
+  def Column: ComponentType[ColumnProps] = js.constructorOf[typings.primereact.columnMod.Column].asInstanceOf[typings.react.mod.ComponentType[ColumnProps]]
   @scala.inline
-  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.primereact.columngroupMod.ColumnGroup].asInstanceOf[typings.react.reactMod.ComponentType[ColumnGroupProps]]
+  def ColumnGroup: ComponentType[ColumnGroupProps] = js.constructorOf[typings.primereact.columngroupMod.ColumnGroup].asInstanceOf[typings.react.mod.ComponentType[ColumnGroupProps]]
   @scala.inline
-  def ContextMenu: ComponentType[ContextMenuProps] = js.constructorOf[typings.primereact.contextmenuMod.ContextMenu].asInstanceOf[typings.react.reactMod.ComponentType[ContextMenuProps]]
+  def ContextMenu: ComponentType[ContextMenuProps] = js.constructorOf[typings.primereact.primereactMod.ContextMenu].asInstanceOf[typings.react.mod.ComponentType[ContextMenuProps]]
   @scala.inline
-  def DataScroller: ComponentType[DataScrollerProps] = js.constructorOf[typings.primereact.datascrollerMod.DataScroller].asInstanceOf[typings.react.reactMod.ComponentType[DataScrollerProps]]
+  def DataScroller: ComponentType[DataScrollerProps] = js.constructorOf[typings.primereact.primereactDatascrollerMod.DataScroller].asInstanceOf[typings.react.mod.ComponentType[DataScrollerProps]]
   @scala.inline
-  def DataTable: ComponentType[DataTableProps] = js.constructorOf[typings.primereact.datatableMod.DataTable].asInstanceOf[typings.react.reactMod.ComponentType[DataTableProps]]
+  def DataTable: ComponentType[DataTableProps] = js.constructorOf[typings.primereact.primereactDatatableMod.DataTable].asInstanceOf[typings.react.mod.ComponentType[DataTableProps]]
   @scala.inline
-  def DataView: ComponentType[DataViewProps] = js.constructorOf[typings.primereact.dataviewMod.DataView].asInstanceOf[typings.react.reactMod.ComponentType[DataViewProps]]
+  def DataView: ComponentType[DataViewProps] = js.constructorOf[typings.primereact.primereactDataviewMod.DataView].asInstanceOf[typings.react.mod.ComponentType[DataViewProps]]
   @scala.inline
-  def DataViewLayoutOptions: ComponentType[DataViewLayoutOptionsProps] = js.constructorOf[typings.primereact.dataviewMod.DataViewLayoutOptions].asInstanceOf[typings.react.reactMod.ComponentType[DataViewLayoutOptionsProps]]
+  def DataViewLayoutOptions: ComponentType[DataViewLayoutOptionsProps] = js.constructorOf[typings.primereact.primereactDataviewMod.DataViewLayoutOptions].asInstanceOf[typings.react.mod.ComponentType[DataViewLayoutOptionsProps]]
   @scala.inline
-  def DeferredContent: ComponentType[DeferredContentProps] = js.constructorOf[typings.primereact.deferredcontentMod.DeferredContent].asInstanceOf[typings.react.reactMod.ComponentType[DeferredContentProps]]
+  def DeferredContent: ComponentType[DeferredContentProps] = js.constructorOf[typings.primereact.primereactDeferredcontentMod.DeferredContent].asInstanceOf[typings.react.mod.ComponentType[DeferredContentProps]]
   @scala.inline
-  def Dialog: ComponentType[DialogProps] = js.constructorOf[typings.primereact.dialogMod.Dialog].asInstanceOf[typings.react.reactMod.ComponentType[DialogProps]]
+  def Dialog: ComponentType[DialogProps] = js.constructorOf[typings.primereact.primereactDialogMod.Dialog].asInstanceOf[typings.react.mod.ComponentType[DialogProps]]
   @scala.inline
-  def Dropdown: ComponentType[DropdownProps] = js.constructorOf[typings.primereact.dropdownMod.Dropdown].asInstanceOf[typings.react.reactMod.ComponentType[DropdownProps]]
+  def Dropdown: ComponentType[DropdownProps] = js.constructorOf[typings.primereact.primereactDropdownMod.Dropdown].asInstanceOf[typings.react.mod.ComponentType[DropdownProps]]
   @scala.inline
-  def DropdownItem: ComponentType[DropdownItemProps] = js.constructorOf[typings.primereact.componentsDropdownDropdownItemMod.DropdownItem].asInstanceOf[typings.react.reactMod.ComponentType[DropdownItemProps]]
+  def DropdownItem: ComponentType[DropdownItemProps] = js.constructorOf[typings.primereact.dropdownItemMod.DropdownItem].asInstanceOf[typings.react.mod.ComponentType[DropdownItemProps]]
   @scala.inline
-  def Editor: ComponentType[EditorProps] = js.constructorOf[typings.primereact.editorMod.Editor].asInstanceOf[typings.react.reactMod.ComponentType[EditorProps]]
+  def Editor: ComponentType[EditorProps] = js.constructorOf[typings.primereact.primereactEditorMod.Editor].asInstanceOf[typings.react.mod.ComponentType[EditorProps]]
   @scala.inline
-  def Fieldset: ComponentType[FieldsetProps] = js.constructorOf[typings.primereact.fieldsetMod.Fieldset].asInstanceOf[typings.react.reactMod.ComponentType[FieldsetProps]]
+  def Fieldset: ComponentType[FieldsetProps] = js.constructorOf[typings.primereact.primereactFieldsetMod.Fieldset].asInstanceOf[typings.react.mod.ComponentType[FieldsetProps]]
   @scala.inline
-  def FileUpload: ComponentType[FileUploadProps] = js.constructorOf[typings.primereact.fileuploadMod.FileUpload].asInstanceOf[typings.react.reactMod.ComponentType[FileUploadProps]]
+  def FileUpload: ComponentType[FileUploadProps] = js.constructorOf[typings.primereact.primereactFileuploadMod.FileUpload].asInstanceOf[typings.react.mod.ComponentType[FileUploadProps]]
   @scala.inline
-  def FooterCell: ComponentType[FooterCellProps] = js.constructorOf[typings.primereact.componentsDatatableFooterCellMod.FooterCell].asInstanceOf[typings.react.reactMod.ComponentType[FooterCellProps]]
+  def FooterCell: ComponentType[FooterCellProps] = js.constructorOf[typings.primereact.footerCellMod.FooterCell].asInstanceOf[typings.react.mod.ComponentType[FooterCellProps]]
   @scala.inline
-  def FullCalendar: ComponentType[FullCalendarProps] = js.constructorOf[typings.primereact.fullcalendarMod.FullCalendar].asInstanceOf[typings.react.reactMod.ComponentType[FullCalendarProps]]
+  def FullCalendar: ComponentType[FullCalendarProps] = js.constructorOf[typings.primereact.primereactFullcalendarMod.FullCalendar].asInstanceOf[typings.react.mod.ComponentType[FullCalendarProps]]
   @scala.inline
-  def GMap: ComponentType[GMapProps] = js.constructorOf[typings.primereact.gmapMod.GMap].asInstanceOf[typings.react.reactMod.ComponentType[GMapProps]]
+  def GMap: ComponentType[GMapProps] = js.constructorOf[typings.primereact.primereactGmapMod.GMap].asInstanceOf[typings.react.mod.ComponentType[GMapProps]]
   @scala.inline
-  def Growl: ComponentType[GrowlProps] = js.constructorOf[typings.primereact.growlMod.Growl].asInstanceOf[typings.react.reactMod.ComponentType[GrowlProps]]
+  def Growl: ComponentType[GrowlProps] = js.constructorOf[typings.primereact.primereactGrowlMod.Growl].asInstanceOf[typings.react.mod.ComponentType[GrowlProps]]
   @scala.inline
-  def HeaderCell: ComponentType[HeaderCellProps] = js.constructorOf[typings.primereact.componentsDatatableHeaderCellMod.HeaderCell].asInstanceOf[typings.react.reactMod.ComponentType[HeaderCellProps]]
+  def HeaderCell: ComponentType[HeaderCellProps] = js.constructorOf[typings.primereact.headerCellMod.HeaderCell].asInstanceOf[typings.react.mod.ComponentType[HeaderCellProps]]
   @scala.inline
-  def Inplace: ComponentType[InplaceProps] = js.constructorOf[typings.primereact.inplaceMod.Inplace].asInstanceOf[typings.react.reactMod.ComponentType[InplaceProps]]
+  def Inplace: ComponentType[InplaceProps] = js.constructorOf[typings.primereact.primereactInplaceMod.Inplace].asInstanceOf[typings.react.mod.ComponentType[InplaceProps]]
   @scala.inline
-  def InplaceContent: ComponentType[js.Object] = js.constructorOf[typings.primereact.inplaceMod.InplaceContent].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def InplaceContent: ComponentType[js.Object] = js.constructorOf[typings.primereact.primereactInplaceMod.InplaceContent].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def InplaceDisplay: ComponentType[js.Object] = js.constructorOf[typings.primereact.inplaceMod.InplaceDisplay].asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  def InplaceDisplay: ComponentType[js.Object] = js.constructorOf[typings.primereact.primereactInplaceMod.InplaceDisplay].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def InputMask: ComponentType[InputMaskProps] = js.constructorOf[typings.primereact.inputmaskMod.InputMask].asInstanceOf[typings.react.reactMod.ComponentType[InputMaskProps]]
+  def InputMask: ComponentType[InputMaskProps] = js.constructorOf[typings.primereact.primereactInputmaskMod.InputMask].asInstanceOf[typings.react.mod.ComponentType[InputMaskProps]]
   @scala.inline
-  def InputSwitch: ComponentType[InputSwitchProps] = js.constructorOf[typings.primereact.inputswitchMod.InputSwitch].asInstanceOf[typings.react.reactMod.ComponentType[InputSwitchProps]]
+  def InputSwitch: ComponentType[InputSwitchProps] = js.constructorOf[typings.primereact.primereactInputswitchMod.InputSwitch].asInstanceOf[typings.react.mod.ComponentType[InputSwitchProps]]
   @scala.inline
-  def InputText: ComponentType[InputTextProps] = js.constructorOf[typings.primereact.inputtextMod.InputText].asInstanceOf[typings.react.reactMod.ComponentType[InputTextProps]]
+  def InputText: ComponentType[InputTextProps] = js.constructorOf[typings.primereact.primereactInputtextMod.InputText].asInstanceOf[typings.react.mod.ComponentType[InputTextProps]]
   @scala.inline
-  def InputTextarea: ComponentType[InputTextareaProps] = js.constructorOf[typings.primereact.inputtextareaMod.InputTextarea].asInstanceOf[typings.react.reactMod.ComponentType[InputTextareaProps]]
+  def InputTextarea: ComponentType[InputTextareaProps] = js.constructorOf[typings.primereact.primereactInputtextareaMod.InputTextarea].asInstanceOf[typings.react.mod.ComponentType[InputTextareaProps]]
   @scala.inline
-  def Lightbox: ComponentType[LightboxProps] = js.constructorOf[typings.primereact.lightboxMod.Lightbox].asInstanceOf[typings.react.reactMod.ComponentType[LightboxProps]]
+  def Lightbox: ComponentType[LightboxProps] = js.constructorOf[typings.primereact.primereactLightboxMod.Lightbox].asInstanceOf[typings.react.mod.ComponentType[LightboxProps]]
   @scala.inline
-  def ListBox: ComponentType[ListBoxProps] = js.constructorOf[typings.primereact.listboxMod.ListBox].asInstanceOf[typings.react.reactMod.ComponentType[ListBoxProps]]
+  def ListBox: ComponentType[ListBoxProps] = js.constructorOf[typings.primereact.primereactListboxMod.ListBox].asInstanceOf[typings.react.mod.ComponentType[ListBoxProps]]
   @scala.inline
-  def ListBoxHeader: ComponentType[ListBoxHeaderProps] = js.constructorOf[typings.primereact.componentsListboxListBoxHeaderMod.ListBoxHeader].asInstanceOf[typings.react.reactMod.ComponentType[ListBoxHeaderProps]]
+  def ListBoxHeader: ComponentType[ListBoxHeaderProps] = js.constructorOf[typings.primereact.listBoxHeaderMod.ListBoxHeader].asInstanceOf[typings.react.mod.ComponentType[ListBoxHeaderProps]]
   @scala.inline
-  def ListBoxItem: ComponentType[ListBoxItemProps] = js.constructorOf[typings.primereact.componentsListboxListBoxItemMod.ListBoxItem].asInstanceOf[typings.react.reactMod.ComponentType[ListBoxItemProps]]
+  def ListBoxItem: ComponentType[ListBoxItemProps] = js.constructorOf[typings.primereact.listBoxItemMod.ListBoxItem].asInstanceOf[typings.react.mod.ComponentType[ListBoxItemProps]]
   @scala.inline
-  def MegaMenu: ComponentType[MegaMenuProps] = js.constructorOf[typings.primereact.megamenuMod.MegaMenu].asInstanceOf[typings.react.reactMod.ComponentType[MegaMenuProps]]
+  def MegaMenu: ComponentType[MegaMenuProps] = js.constructorOf[typings.primereact.primereactMegamenuMod.MegaMenu].asInstanceOf[typings.react.mod.ComponentType[MegaMenuProps]]
   @scala.inline
-  def Menu: ComponentType[MenuProps] = js.constructorOf[typings.primereact.menuMod.Menu].asInstanceOf[typings.react.reactMod.ComponentType[MenuProps]]
+  def Menu: ComponentType[MenuProps] = js.constructorOf[typings.primereact.primereactMenuMod.Menu].asInstanceOf[typings.react.mod.ComponentType[MenuProps]]
   @scala.inline
-  def Menubar: ComponentType[MenubarProps] = js.constructorOf[typings.primereact.menubarMod.Menubar].asInstanceOf[typings.react.reactMod.ComponentType[MenubarProps]]
+  def Menubar: ComponentType[MenubarProps] = js.constructorOf[typings.primereact.primereactMenubarMod.Menubar].asInstanceOf[typings.react.mod.ComponentType[MenubarProps]]
   @scala.inline
-  def Message: ComponentType[MessageProps] = js.constructorOf[typings.primereact.messageMod.Message].asInstanceOf[typings.react.reactMod.ComponentType[MessageProps]]
+  def Message: ComponentType[MessageProps] = js.constructorOf[typings.primereact.primereactMessageMod.Message].asInstanceOf[typings.react.mod.ComponentType[MessageProps]]
   @scala.inline
-  def Messages: ComponentType[MessagesProps] = js.constructorOf[typings.primereact.messagesMod.Messages].asInstanceOf[typings.react.reactMod.ComponentType[MessagesProps]]
+  def Messages: ComponentType[MessagesProps] = js.constructorOf[typings.primereact.primereactMessagesMod.Messages].asInstanceOf[typings.react.mod.ComponentType[MessagesProps]]
   @scala.inline
-  def MultiSelect: ComponentType[MultiSelectProps] = js.constructorOf[typings.primereact.multiselectMod.MultiSelect].asInstanceOf[typings.react.reactMod.ComponentType[MultiSelectProps]]
+  def MultiSelect: ComponentType[MultiSelectProps] = js.constructorOf[typings.primereact.primereactMultiselectMod.MultiSelect].asInstanceOf[typings.react.mod.ComponentType[MultiSelectProps]]
   @scala.inline
-  def NextPageLink: ComponentType[NextPageLinkProps] = js.constructorOf[typings.primereact.componentsPaginatorNextPageLinkMod.NextPageLink].asInstanceOf[typings.react.reactMod.ComponentType[NextPageLinkProps]]
+  def NextPageLink: ComponentType[NextPageLinkProps] = js.constructorOf[typings.primereact.nextPageLinkMod.NextPageLink].asInstanceOf[typings.react.mod.ComponentType[NextPageLinkProps]]
   @scala.inline
-  def OrderList: ComponentType[OrderListProps] = js.constructorOf[typings.primereact.orderlistMod.OrderList].asInstanceOf[typings.react.reactMod.ComponentType[OrderListProps]]
+  def OrderList: ComponentType[OrderListProps] = js.constructorOf[typings.primereact.primereactOrderlistMod.OrderList].asInstanceOf[typings.react.mod.ComponentType[OrderListProps]]
   @scala.inline
-  def OrganizationChart: ComponentType[OrganizationChartProps] = js.constructorOf[typings.primereact.organizationchartMod.OrganizationChart].asInstanceOf[typings.react.reactMod.ComponentType[OrganizationChartProps]]
+  def OrganizationChart: ComponentType[OrganizationChartProps] = js.constructorOf[typings.primereact.primereactOrganizationchartMod.OrganizationChart].asInstanceOf[typings.react.mod.ComponentType[OrganizationChartProps]]
   @scala.inline
-  def OverlayPanel: ComponentType[OverlayPanelProps] = js.constructorOf[typings.primereact.overlaypanelMod.OverlayPanel].asInstanceOf[typings.react.reactMod.ComponentType[OverlayPanelProps]]
+  def OverlayPanel: ComponentType[OverlayPanelProps] = js.constructorOf[typings.primereact.primereactOverlaypanelMod.OverlayPanel].asInstanceOf[typings.react.mod.ComponentType[OverlayPanelProps]]
   @scala.inline
-  def Paginator: ComponentType[PaginatorProps] = js.constructorOf[typings.primereact.paginatorMod.Paginator].asInstanceOf[typings.react.reactMod.ComponentType[PaginatorProps]]
+  def Paginator: ComponentType[PaginatorProps] = js.constructorOf[typings.primereact.primereactPaginatorMod.Paginator].asInstanceOf[typings.react.mod.ComponentType[PaginatorProps]]
   @scala.inline
-  def Panel: ComponentType[PanelProps] = js.constructorOf[typings.primereact.panelMod.Panel].asInstanceOf[typings.react.reactMod.ComponentType[PanelProps]]
+  def Panel: ComponentType[PanelProps] = js.constructorOf[typings.primereact.primereactPanelMod.Panel].asInstanceOf[typings.react.mod.ComponentType[PanelProps]]
   @scala.inline
-  def PanelMenu: ComponentType[PanelMenuProps] = js.constructorOf[typings.primereact.panelmenuMod.PanelMenu].asInstanceOf[typings.react.reactMod.ComponentType[PanelMenuProps]]
+  def PanelMenu: ComponentType[PanelMenuProps] = js.constructorOf[typings.primereact.primereactPanelmenuMod.PanelMenu].asInstanceOf[typings.react.mod.ComponentType[PanelMenuProps]]
   @scala.inline
-  def Password: ComponentType[PasswordProps] = js.constructorOf[typings.primereact.passwordMod.Password].asInstanceOf[typings.react.reactMod.ComponentType[PasswordProps]]
+  def Password: ComponentType[PasswordProps] = js.constructorOf[typings.primereact.primereactPasswordMod.Password].asInstanceOf[typings.react.mod.ComponentType[PasswordProps]]
   @scala.inline
-  def PickList: ComponentType[PickListProps] = js.constructorOf[typings.primereact.picklistMod.PickList].asInstanceOf[typings.react.reactMod.ComponentType[PickListProps]]
+  def PickList: ComponentType[PickListProps] = js.constructorOf[typings.primereact.primereactPicklistMod.PickList].asInstanceOf[typings.react.mod.ComponentType[PickListProps]]
   @scala.inline
-  def PickListControls: ComponentType[PickListControlsProps] = js.constructorOf[typings.primereact.componentsPicklistPickListControlsMod.PickListControls].asInstanceOf[typings.react.reactMod.ComponentType[PickListControlsProps]]
+  def PickListControls: ComponentType[PickListControlsProps] = js.constructorOf[typings.primereact.pickListControlsMod.PickListControls].asInstanceOf[typings.react.mod.ComponentType[PickListControlsProps]]
   @scala.inline
-  def PickListItem: ComponentType[PickListItemProps] = js.constructorOf[typings.primereact.componentsPicklistPickListItemMod.PickListItem].asInstanceOf[typings.react.reactMod.ComponentType[PickListItemProps]]
+  def PickListItem: ComponentType[PickListItemProps] = js.constructorOf[typings.primereact.pickListItemMod.PickListItem].asInstanceOf[typings.react.mod.ComponentType[PickListItemProps]]
   @scala.inline
-  def PickListSubList: ComponentType[PickListSubListProps] = js.constructorOf[typings.primereact.componentsPicklistPickListSubListMod.PickListSubList].asInstanceOf[typings.react.reactMod.ComponentType[PickListSubListProps]]
+  def PickListSubList: ComponentType[PickListSubListProps] = js.constructorOf[typings.primereact.pickListSubListMod.PickListSubList].asInstanceOf[typings.react.mod.ComponentType[PickListSubListProps]]
   @scala.inline
-  def PickListTransferControls: ComponentType[PickListTransferControlsProps] = js.constructorOf[typings.primereact.componentsPicklistPickListTransferControlsMod.PickListTransferControls].asInstanceOf[typings.react.reactMod.ComponentType[PickListTransferControlsProps]]
+  def PickListTransferControls: ComponentType[PickListTransferControlsProps] = js.constructorOf[typings.primereact.pickListTransferControlsMod.PickListTransferControls].asInstanceOf[typings.react.mod.ComponentType[PickListTransferControlsProps]]
   @scala.inline
-  def ProgressBar: ComponentType[ProgressBarProps] = js.constructorOf[typings.primereact.progressbarMod.ProgressBar].asInstanceOf[typings.react.reactMod.ComponentType[ProgressBarProps]]
+  def ProgressBar: ComponentType[ProgressBarProps] = js.constructorOf[typings.primereact.primereactProgressbarMod.ProgressBar].asInstanceOf[typings.react.mod.ComponentType[ProgressBarProps]]
   @scala.inline
-  def ProgressSpinner: ComponentType[ProgressSpinnerProps] = js.constructorOf[typings.primereact.progressspinnerMod.ProgressSpinner].asInstanceOf[typings.react.reactMod.ComponentType[ProgressSpinnerProps]]
+  def ProgressSpinner: ComponentType[ProgressSpinnerProps] = js.constructorOf[typings.primereact.primereactProgressspinnerMod.ProgressSpinner].asInstanceOf[typings.react.mod.ComponentType[ProgressSpinnerProps]]
   @scala.inline
-  def RadioButton: ComponentType[RadioButtonProps] = js.constructorOf[typings.primereact.radiobuttonMod.RadioButton].asInstanceOf[typings.react.reactMod.ComponentType[RadioButtonProps]]
+  def RadioButton: ComponentType[RadioButtonProps] = js.constructorOf[typings.primereact.primereactRadiobuttonMod.RadioButton].asInstanceOf[typings.react.mod.ComponentType[RadioButtonProps]]
   @scala.inline
-  def Rating: ComponentType[RatingProps] = js.constructorOf[typings.primereact.ratingMod.Rating].asInstanceOf[typings.react.reactMod.ComponentType[RatingProps]]
+  def Rating: ComponentType[RatingProps] = js.constructorOf[typings.primereact.primereactRatingMod.Rating].asInstanceOf[typings.react.mod.ComponentType[RatingProps]]
   @scala.inline
-  def Row: ComponentType[RowProps] = js.constructorOf[typings.primereact.rowMod.Row].asInstanceOf[typings.react.reactMod.ComponentType[RowProps]]
+  def Row: ComponentType[RowProps] = js.constructorOf[typings.primereact.primereactRowMod.Row].asInstanceOf[typings.react.mod.ComponentType[RowProps]]
   @scala.inline
-  def RowCheckbox: ComponentType[RowCheckboxProps] = js.constructorOf[typings.primereact.componentsDatatableRowCheckboxMod.RowCheckbox].asInstanceOf[typings.react.reactMod.ComponentType[RowCheckboxProps]]
+  def RowCheckbox: ComponentType[RowCheckboxProps] = js.constructorOf[typings.primereact.rowCheckboxMod.RowCheckbox].asInstanceOf[typings.react.mod.ComponentType[RowCheckboxProps]]
   @scala.inline
-  def RowRadioButton: ComponentType[RowRadioButtonProps] = js.constructorOf[typings.primereact.componentsDatatableRowRadioButtonMod.RowRadioButton].asInstanceOf[typings.react.reactMod.ComponentType[RowRadioButtonProps]]
+  def RowRadioButton: ComponentType[RowRadioButtonProps] = js.constructorOf[typings.primereact.rowRadioButtonMod.RowRadioButton].asInstanceOf[typings.react.mod.ComponentType[RowRadioButtonProps]]
   @scala.inline
-  def ScrollPanel: ComponentType[ScrollPanelProps] = js.constructorOf[typings.primereact.scrollpanelMod.ScrollPanel].asInstanceOf[typings.react.reactMod.ComponentType[ScrollPanelProps]]
+  def RowTogglerButton: ComponentType[RowTogglerButtonProps] = js.constructorOf[typings.primereact.rowTogglerButtonMod.RowTogglerButton].asInstanceOf[typings.react.mod.ComponentType[RowTogglerButtonProps]]
   @scala.inline
-  def ScrollableView: ComponentType[ScrollableViewProps] = js.constructorOf[typings.primereact.componentsDatatableScrollableViewMod.ScrollableView].asInstanceOf[typings.react.reactMod.ComponentType[ScrollableViewProps]]
+  def ScrollPanel: ComponentType[ScrollPanelProps] = js.constructorOf[typings.primereact.primereactScrollpanelMod.ScrollPanel].asInstanceOf[typings.react.mod.ComponentType[ScrollPanelProps]]
   @scala.inline
-  def SelectButton: ComponentType[SelectButtonProps] = js.constructorOf[typings.primereact.selectbuttonMod.SelectButton].asInstanceOf[typings.react.reactMod.ComponentType[SelectButtonProps]]
+  def ScrollableView: ComponentType[ScrollableViewProps] = js.constructorOf[typings.primereact.scrollableViewMod.ScrollableView].asInstanceOf[typings.react.mod.ComponentType[ScrollableViewProps]]
   @scala.inline
-  def Sidebar: ComponentType[SidebarProps] = js.constructorOf[typings.primereact.sidebarMod.Sidebar].asInstanceOf[typings.react.reactMod.ComponentType[SidebarProps]]
+  def SelectButton: ComponentType[SelectButtonProps] = js.constructorOf[typings.primereact.primereactSelectbuttonMod.SelectButton].asInstanceOf[typings.react.mod.ComponentType[SelectButtonProps]]
   @scala.inline
-  def SlideMenu: ComponentType[SlideMenuProps] = js.constructorOf[typings.primereact.slidemenuMod.SlideMenu].asInstanceOf[typings.react.reactMod.ComponentType[SlideMenuProps]]
+  def Sidebar: ComponentType[SidebarProps] = js.constructorOf[typings.primereact.primereactSidebarMod.Sidebar].asInstanceOf[typings.react.mod.ComponentType[SidebarProps]]
   @scala.inline
-  def Slider: ComponentType[SliderProps] = js.constructorOf[typings.primereact.sliderMod.Slider].asInstanceOf[typings.react.reactMod.ComponentType[SliderProps]]
+  def SlideMenu: ComponentType[SlideMenuProps] = js.constructorOf[typings.primereact.primereactSlidemenuMod.SlideMenu].asInstanceOf[typings.react.mod.ComponentType[SlideMenuProps]]
   @scala.inline
-  def Spinner: ComponentType[SpinnerProps] = js.constructorOf[typings.primereact.spinnerMod.Spinner].asInstanceOf[typings.react.reactMod.ComponentType[SpinnerProps]]
+  def Slider: ComponentType[SliderProps] = js.constructorOf[typings.primereact.primereactSliderMod.Slider].asInstanceOf[typings.react.mod.ComponentType[SliderProps]]
   @scala.inline
-  def SplitButton: ComponentType[SplitButtonProps] = js.constructorOf[typings.primereact.splitbuttonMod.SplitButton].asInstanceOf[typings.react.reactMod.ComponentType[SplitButtonProps]]
+  def Spinner: ComponentType[SpinnerProps] = js.constructorOf[typings.primereact.primereactSpinnerMod.Spinner].asInstanceOf[typings.react.mod.ComponentType[SpinnerProps]]
   @scala.inline
-  def Steps: ComponentType[StepsProps] = js.constructorOf[typings.primereact.stepsMod.Steps].asInstanceOf[typings.react.reactMod.ComponentType[StepsProps]]
+  def SplitButton: ComponentType[SplitButtonProps] = js.constructorOf[typings.primereact.primereactSplitbuttonMod.SplitButton].asInstanceOf[typings.react.mod.ComponentType[SplitButtonProps]]
   @scala.inline
-  def TabMenu: ComponentType[TabMenuProps] = js.constructorOf[typings.primereact.tabmenuMod.TabMenu].asInstanceOf[typings.react.reactMod.ComponentType[TabMenuProps]]
+  def Steps: ComponentType[StepsProps] = js.constructorOf[typings.primereact.primereactStepsMod.Steps].asInstanceOf[typings.react.mod.ComponentType[StepsProps]]
   @scala.inline
-  def TabPanel: ComponentType[TabPanelProps] = js.constructorOf[typings.primereact.tabviewMod.TabPanel].asInstanceOf[typings.react.reactMod.ComponentType[TabPanelProps]]
+  def TabMenu: ComponentType[TabMenuProps] = js.constructorOf[typings.primereact.primereactTabmenuMod.TabMenu].asInstanceOf[typings.react.mod.ComponentType[TabMenuProps]]
   @scala.inline
-  def TabView: ComponentType[TabViewProps] = js.constructorOf[typings.primereact.tabviewMod.TabView].asInstanceOf[typings.react.reactMod.ComponentType[TabViewProps]]
+  def TabPanel: ComponentType[TabPanelProps] = js.constructorOf[typings.primereact.primereactTabviewMod.TabPanel].asInstanceOf[typings.react.mod.ComponentType[TabPanelProps]]
   @scala.inline
-  def TableBody: ComponentType[TableBodyProps] = js.constructorOf[typings.primereact.componentsDatatableTableBodyMod.TableBody].asInstanceOf[typings.react.reactMod.ComponentType[TableBodyProps]]
+  def TabView: ComponentType[TabViewProps] = js.constructorOf[typings.primereact.primereactTabviewMod.TabView].asInstanceOf[typings.react.mod.ComponentType[TabViewProps]]
   @scala.inline
-  def TableFooter: ComponentType[TableFooterProps] = js.constructorOf[typings.primereact.componentsDatatableTableFooterMod.TableFooter].asInstanceOf[typings.react.reactMod.ComponentType[TableFooterProps]]
+  def TableBody: ComponentType[TableBodyProps] = js.constructorOf[typings.primereact.tableBodyMod.TableBody].asInstanceOf[typings.react.mod.ComponentType[TableBodyProps]]
   @scala.inline
-  def TableHeader: ComponentType[TableHeaderProps] = js.constructorOf[typings.primereact.componentsDatatableTableHeaderMod.TableHeader].asInstanceOf[typings.react.reactMod.ComponentType[TableHeaderProps]]
+  def TableFooter: ComponentType[TableFooterProps] = js.constructorOf[typings.primereact.tableFooterMod.TableFooter].asInstanceOf[typings.react.mod.ComponentType[TableFooterProps]]
   @scala.inline
-  def TieredMenu: ComponentType[TieredMenuProps] = js.constructorOf[typings.primereact.tieredmenuMod.TieredMenu].asInstanceOf[typings.react.reactMod.ComponentType[TieredMenuProps]]
+  def TableHeader: ComponentType[TableHeaderProps] = js.constructorOf[typings.primereact.tableHeaderMod.TableHeader].asInstanceOf[typings.react.mod.ComponentType[TableHeaderProps]]
   @scala.inline
-  def ToggleButton: ComponentType[ToggleButtonProps] = js.constructorOf[typings.primereact.togglebuttonMod.ToggleButton].asInstanceOf[typings.react.reactMod.ComponentType[ToggleButtonProps]]
+  def TieredMenu: ComponentType[TieredMenuProps] = js.constructorOf[typings.primereact.primereactTieredmenuMod.TieredMenu].asInstanceOf[typings.react.mod.ComponentType[TieredMenuProps]]
   @scala.inline
-  def Toolbar: ComponentType[ToolbarProps] = js.constructorOf[typings.primereact.toolbarMod.Toolbar].asInstanceOf[typings.react.reactMod.ComponentType[ToolbarProps]]
+  def ToggleButton: ComponentType[ToggleButtonProps] = js.constructorOf[typings.primereact.primereactTogglebuttonMod.ToggleButton].asInstanceOf[typings.react.mod.ComponentType[ToggleButtonProps]]
   @scala.inline
-  def Tree: ComponentType[TreeProps] = js.constructorOf[typings.primereact.treeMod.Tree].asInstanceOf[typings.react.reactMod.ComponentType[TreeProps]]
+  def Toolbar: ComponentType[ToolbarProps] = js.constructorOf[typings.primereact.primereactToolbarMod.Toolbar].asInstanceOf[typings.react.mod.ComponentType[ToolbarProps]]
   @scala.inline
-  def TreeTable: ComponentType[TreeTableProps] = js.constructorOf[typings.primereact.treetableMod.TreeTable].asInstanceOf[typings.react.reactMod.ComponentType[TreeTableProps]]
+  def Tree: ComponentType[TreeProps] = js.constructorOf[typings.primereact.primereactTreeMod.Tree].asInstanceOf[typings.react.mod.ComponentType[TreeProps]]
   @scala.inline
-  def TriStateCheckbox: ComponentType[TriStateCheckboxProps] = js.constructorOf[typings.primereact.tristatecheckboxMod.TriStateCheckbox].asInstanceOf[typings.react.reactMod.ComponentType[TriStateCheckboxProps]]
+  def TreeTable: ComponentType[TreeTableProps] = js.constructorOf[typings.primereact.primereactTreetableMod.TreeTable].asInstanceOf[typings.react.mod.ComponentType[TreeTableProps]]
+  @scala.inline
+  def TriStateCheckbox: ComponentType[TriStateCheckboxProps] = js.constructorOf[typings.primereact.primereactTristatecheckboxMod.TriStateCheckbox].asInstanceOf[typings.react.mod.ComponentType[TriStateCheckboxProps]]
 }
 

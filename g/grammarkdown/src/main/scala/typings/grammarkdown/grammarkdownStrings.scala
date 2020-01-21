@@ -1,6 +1,6 @@
 package typings.grammarkdown
 
-import typings.grammarkdown.distTypedObjectsMod.TypeHint
+import typings.grammarkdown.typedObjectsMod.TypeHint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

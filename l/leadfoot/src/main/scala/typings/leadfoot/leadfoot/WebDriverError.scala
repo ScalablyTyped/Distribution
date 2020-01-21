@@ -1,6 +1,6 @@
 package typings.leadfoot.leadfoot
 
-import typings.leadfoot.Anon_Method
+import typings.leadfoot.AnonMethod
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait WebDriverError extends Error {
   /**
   		 * The parameters for the request.
   		 */
-  var request: Anon_Method
+  var request: AnonMethod
   /**
   		 * The response object for the request.
   		 */
@@ -40,7 +40,7 @@ object WebDriverError {
     detail: js.Any,
     message: String,
     name: String,
-    request: Anon_Method,
+    request: AnonMethod,
     response: js.Any,
     stack: String,
     status: Double

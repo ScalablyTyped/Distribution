@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
   * Registry of existing widget on page, plus some utility methods.
   * 
   */
-@JSName("registry")
 @js.native
 trait registry_ extends js.Object {
   /**
@@ -24,21 +23,21 @@ trait registry_ extends js.Object {
     * 
     * @param widget Any dijit/_WidgetBase subclass.             
     */
-  def add(widget: _WidgetBase): Unit = js.native
+  def add(widget: WidgetBase): Unit = js.native
   /**
     * Find a widget by it's id.
     * If passed a widget then just returns the widget.
     * 
     * @param id             
     */
-  def byId(id: String): _WidgetBase = js.native
+  def byId(id: String): WidgetBase = js.native
   /**
     * Find a widget by it's id.
     * If passed a widget then just returns the widget.
     * 
     * @param id             
     */
-  def byId(id: _WidgetBase): _WidgetBase = js.native
+  def byId(id: WidgetBase): WidgetBase = js.native
   /**
     * Returns the widget corresponding to the given DOMNode
     * 

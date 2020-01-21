@@ -1,6 +1,6 @@
 package typings.breeze.breeze
 
-import typings.breeze.Anon_Name
+import typings.breeze.AnonName
 import typings.breeze.breeze.core.ErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,7 +48,7 @@ class MetadataStore () extends js.Object {
   ): Unit = js.native
   def setEntityTypeForResourceName(resourceName: String, entityTypeName: String): Unit = js.native
   def setEntityTypeForResourceName(resourceName: String, entityType: EntityType): Unit = js.native
-  def setProperties(config: Anon_Name): Unit = js.native
+  def setProperties(config: AnonName): Unit = js.native
   def trackUnmappedType(entityCtor: js.Function): Unit = js.native
   def trackUnmappedType(entityCtor: js.Function, interceptor: js.Function): Unit = js.native
 }

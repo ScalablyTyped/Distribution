@@ -62,7 +62,7 @@ trait Market extends js.Object {
     *
     * An order expires in 30 days after its creation, and the remaining market fee is returned.
     */
-  def createOrder(params: Anon_Price): ScreepsReturnCode = js.native
+  def createOrder(params: AnonPrice): ScreepsReturnCode = js.native
   /**
     * Execute a trade deal from your Terminal to another player's Terminal using the specified buy/sell order.
     *

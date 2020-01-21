@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
   * @return {nlobjForm}
   * @constructor
   */
-@JSName("nlobjForm")
 @js.native
 trait nlobjForm_ extends /**
   *

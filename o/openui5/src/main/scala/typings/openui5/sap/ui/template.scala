@@ -37,6 +37,6 @@ object template extends js.Object {
     * templates is returned
     */
   def apply(oTemplate: String): js.Any | js.Array[_] = js.native
-  def apply(oTemplate: js.Any): js.Any | js.Array[_] = js.native
+  def apply(oTemplate: js.Any): js.Any = js.native
 }
 

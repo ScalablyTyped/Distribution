@@ -1,13 +1,13 @@
 package typings.auth0
 
-import typings.auth0.auth0Mod.ClientAppType
-import typings.auth0.auth0Mod.DeleteDeleteMultifactorParamsProvider
-import typings.auth0.auth0Mod.Grant
-import typings.auth0.auth0Mod.JobFormat
-import typings.auth0.auth0Mod.JobStatus
-import typings.auth0.auth0Mod.SendType
-import typings.auth0.auth0Mod.Strategy
-import typings.auth0.auth0Mod.UnlinkAccountsParamsProvider
+import typings.auth0.mod.ClientAppType
+import typings.auth0.mod.DeleteDeleteMultifactorParamsProvider
+import typings.auth0.mod.Grant
+import typings.auth0.mod.JobFormat
+import typings.auth0.mod.JobStatus
+import typings.auth0.mod.SendType
+import typings.auth0.mod.Strategy
+import typings.auth0.mod.UnlinkAccountsParamsProvider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

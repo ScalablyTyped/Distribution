@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object GmeClasses {
-  import typings.std.Error
-
-  type ArtifactCallback = js.Function2[/* err */ Error, /* result */ Artifact, Unit]
+  type ArtifactCallback = js.Function2[
+    /* err */ typings.std.Error, 
+    /* result */ typings.webgme.GmeClasses.Artifact, 
+    scala.Unit
+  ]
 }

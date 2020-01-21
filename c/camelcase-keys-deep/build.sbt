@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "camelcase-keys-deep"
-version := "0.1-dt-20190515Z-8efa45"
+version := "0.1-dt-20190515Z-d6643b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

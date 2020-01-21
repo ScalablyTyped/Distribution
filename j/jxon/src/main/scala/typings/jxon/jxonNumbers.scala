@@ -1,6 +1,6 @@
 package typings.jxon
 
-import typings.jxon.jxonMod.VerbosityType
+import typings.jxon.mod.VerbosityType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

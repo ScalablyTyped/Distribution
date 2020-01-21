@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_BaseRadius
+import typings.playcanvas.AnonBaseRadius
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +27,6 @@ object createCone extends js.Object {
     * @returns {pc.Mesh} A new cone-shaped mesh.
     */
   def apply(device: GraphicsDevice): Mesh = js.native
-  def apply(device: GraphicsDevice, opts: Anon_BaseRadius): Mesh = js.native
+  def apply(device: GraphicsDevice, opts: AnonBaseRadius): Mesh = js.native
 }
 

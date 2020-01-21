@@ -10,5 +10,5 @@ package object file {
     *
     * {@link http://gruntjs.com/configuring-tasks#files}
     */
-  type IFilesArray = js.Array[IFilesConfig]
+  type IFilesArray = js.Array[typings.grunt.grunt.file.IFilesConfig]
 }

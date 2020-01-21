@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait MSMediaKeyMessageEvent extends Event {
+trait MSMediaKeyMessageEvent extends Event_ {
   val destinationURL: java.lang.String | Null = js.native
   val message: Uint8Array = js.native
 }

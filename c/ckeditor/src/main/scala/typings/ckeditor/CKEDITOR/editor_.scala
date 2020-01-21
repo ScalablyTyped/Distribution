@@ -1,8 +1,8 @@
 package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.Anon_Callback
-import typings.ckeditor.Anon_Title
+import typings.ckeditor.AnonCallback
+import typings.ckeditor.AnonTitle
 import typings.ckeditor.CKEDITOR.dom.documentFragment
 import typings.ckeditor.CKEDITOR.dom.node
 import typings.ckeditor.CKEDITOR.dom.range
@@ -105,7 +105,7 @@ class editor_ () extends event {
     callbackOrOptions: js.Function1[/* data */ js.Any, Unit],
     callback: js.Function1[/* data */ js.Any, Unit]
   ): Unit = js.native
-  def getClipboardData(callbackOrOptions: Anon_Title, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+  def getClipboardData(callbackOrOptions: AnonTitle, callback: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
   def getColorFromDialog(callback: js.Function1[/* color */ String, Unit]): Unit = js.native
   def getColorFromDialog(callback: js.Function1[/* color */ String, Unit], scope: StringDictionary[js.Any]): Unit = js.native
   def getCommand(commandName: String): command = js.native
@@ -170,7 +170,7 @@ class editor_ () extends event {
   def setActiveEnterMode(enterMode: Double, shiftEnterMode: Double): Unit = js.native
   def setActiveFilter(filter: typings.ckeditor.CKEDITOR.filter): Unit = js.native
   def setData(data: String): Unit = js.native
-  def setData(data: String, options: Anon_Callback): Unit = js.native
+  def setData(data: String, options: AnonCallback): Unit = js.native
   def setKeystroke(keystroke: js.Array[js.Tuple2[Double, String | Boolean]]): Unit = js.native
   def setKeystroke(keystroke: Double, behavior: String): Unit = js.native
   def setKeystroke(keystroke: Double, behavior: Boolean): Unit = js.native

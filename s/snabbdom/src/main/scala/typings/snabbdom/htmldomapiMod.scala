@@ -1,6 +1,6 @@
 package typings.snabbdom
 
-import typings.snabbdom.modulesAttributesMod._Global_.Element
+import typings.snabbdom.attributesMod._Global_.Element
 import typings.std.Comment
 import typings.std.HTMLElement
 import typings.std.Node

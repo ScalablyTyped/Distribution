@@ -1,9 +1,9 @@
 package typings.leadfoot.commandMod
 
 import typings.dojo.dojo.promise.Thenable
-import typings.dojo.promisePromiseMod.Promise
-import typings.leadfoot.Anon_Height
-import typings.leadfoot.Anon_X
+import typings.dojo.promiseMod.Promise
+import typings.leadfoot.AnonHeight
+import typings.leadfoot.AnonX
 import typings.leadfoot.leadfoot.Geolocation
 import typings.leadfoot.leadfoot.LogEntry
 import typings.leadfoot.leadfoot.WebDriverCookie
@@ -199,7 +199,7 @@ trait Command[T] extends Thenable[T] {
     errback: js.Function2[
       /* error */ Error, 
       /* setContext */ js.UndefOr[ContextSetter], 
-      typings.dojo.promiseThenableMod.Thenable[U] | U
+      typings.dojo.thenableMod.Thenable[U] | U
     ]
   ): Command[U] = js.native
   /**
@@ -349,7 +349,7 @@ trait Command[T] extends Thenable[T] {
     callback: js.Function2[
       /* valueOrError */ T | Error, 
       /* setContext */ js.UndefOr[ContextSetter], 
-      typings.dojo.promiseThenableMod.Thenable[U] | U
+      typings.dojo.thenableMod.Thenable[U] | U
     ]
   ): Command[U] = js.native
   /**
@@ -610,7 +610,7 @@ trait Command[T] extends Thenable[T] {
   		 * Gets the position of the element relative to the top-left corner of the document, taking into account
   		 * scrolling and CSS transformations (if they are supported).
   		 */
-  def getPosition(): Command[Anon_X] = js.native
+  def getPosition(): Command[AnonX] = js.native
   /**
   		 * Gets a property of the element.
   		 *
@@ -636,7 +636,7 @@ trait Command[T] extends Thenable[T] {
   /**
   		 * Gets the size of the element, taking into account CSS transformations (if they are supported).
   		 */
-  def getSize(): Command[Anon_Height] = js.native
+  def getSize(): Command[AnonHeight] = js.native
   /**
   		 * Gets a property or attribute of the element according to the WebDriver specification algorithm. Use of this
   		 * method is not recommended; instead, use {@link module:leadfoot/Element#getAttribute} to retrieve DOM attributes
@@ -692,8 +692,8 @@ trait Command[T] extends Thenable[T] {
   		 * primary monitor. If a secondary monitor exists above or to the left of the primary monitor, these values
   		 * will be negative.
   		 */
-  def getWindowPosition(): Command[Anon_X] = js.native
-  def getWindowPosition(windowHandle: String): Command[Anon_X] = js.native
+  def getWindowPosition(): Command[AnonX] = js.native
+  def getWindowPosition(windowHandle: String): Command[AnonX] = js.native
   /**
   		 * Gets the dimensions of a window.
   		 *
@@ -704,8 +704,8 @@ trait Command[T] extends Thenable[T] {
   		 * @returns
   		 * An object describing the width and height of the window, in CSS pixels.
   		 */
-  def getWindowSize(): Command[Anon_Height] = js.native
-  def getWindowSize(windowHandle: String): Command[Anon_Height] = js.native
+  def getWindowSize(): Command[AnonHeight] = js.native
+  def getWindowSize(windowHandle: String): Command[AnonHeight] = js.native
   /**
   		 * Navigates the focused window/frame back one page using the browser’s navigation history.
   		 */
@@ -994,19 +994,19 @@ trait Command[T] extends Thenable[T] {
     callback: js.Function2[
       /* value */ T, 
       /* setContext */ js.UndefOr[ContextSetter], 
-      typings.dojo.promiseThenableMod.Thenable[U] | U
+      typings.dojo.thenableMod.Thenable[U] | U
     ]
   ): Command[U] = js.native
   def `then`[U](
     callback: js.Function2[
       /* value */ T, 
       /* setContext */ js.UndefOr[ContextSetter], 
-      typings.dojo.promiseThenableMod.Thenable[U] | U
+      typings.dojo.thenableMod.Thenable[U] | U
     ],
     errback: js.Function2[
       /* error */ Error, 
       /* setContext */ js.UndefOr[ContextSetter], 
-      typings.dojo.promiseThenableMod.Thenable[U] | U
+      typings.dojo.thenableMod.Thenable[U] | U
     ]
   ): Command[U] = js.native
   /**

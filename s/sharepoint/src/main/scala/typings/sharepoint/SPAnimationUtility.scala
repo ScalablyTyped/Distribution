@@ -32,7 +32,7 @@ object SPAnimationUtility extends js.Object {
     def GetLeftOffset(element: HTMLElement): Double = js.native
     def GetRightOffset(element: HTMLElement): Double = js.native
     def GetTopOffset(element: HTMLElement): Double = js.native
-    def GetWindowScrollPosition(): Anon_X = js.native
+    def GetWindowScrollPosition(): AnonX = js.native
     def IsPositioned(element: HTMLElement): Boolean = js.native
     def Move(element: HTMLElement, posX: Double, posY: Double): Unit = js.native
     def Move(

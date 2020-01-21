@@ -1,59 +1,59 @@
 package typings.antd
 
-import typings.antd.libButtonButtonMod.ButtonHTMLType
-import typings.antd.libButtonButtonMod.ButtonShape
-import typings.antd.libButtonButtonMod.ButtonSize
-import typings.antd.libButtonButtonMod.ButtonType
-import typings.antd.libCalendarMod.CalendarMode
-import typings.antd.libCardMod.CardSize
-import typings.antd.libCarouselMod.CarouselEffect
-import typings.antd.libCarouselMod.DotPosition
-import typings.antd.libCascaderMod.CascaderExpandTrigger
-import typings.antd.libCollapseCollapseMod.ExpandIconPosition
-import typings.antd.libDateDashPickerInterfaceMod.DatePickerMode
-import typings.antd.libDateDashPickerWrapPickerMod.PickerType
-import typings.antd.libDrawerMod.placementType
-import typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
-import typings.antd.libDropdownDropdownMod.Placement
-import typings.antd.libFormFormItemMod.FormLabelAlign
-import typings.antd.libFormFormMod.FormLayout
-import typings.antd.libIconMod.ThemeType
-import typings.antd.libInputDashNumberMod.OmitAttrs
-import typings.antd.libLayoutSiderMod.CollapseType
-import typings.antd.libLayoutSiderMod.SiderTheme
-import typings.antd.libListMod.ColumnType
-import typings.antd.libListMod.ListItemLayout
-import typings.antd.libListMod.ListSize
-import typings.antd.libMentionMod.MentionPlacement
-import typings.antd.libMenuMenuContextMod.MenuTheme
-import typings.antd.libMenuMod.MenuMode
-import typings.antd.libMessageMod.NoticeType
-import typings.antd.libNotificationMod.IconType
-import typings.antd.libNotificationMod.NotificationPlacement
-import typings.antd.libProgressProgressMod.ProgressSize
-import typings.antd.libProgressProgressMod.ProgressType
-import typings.antd.libRadioInterfaceMod.RadioGroupButtonStyle
-import typings.antd.libSelectMod.ModeOption
-import typings.antd.libSpinMod.SpinSize
-import typings.antd.libStatisticUtilsMod._Formatter
-import typings.antd.libSwitchMod.SwitchSize
-import typings.antd.libTableInterfaceMod.RowSelectionType
-import typings.antd.libTableInterfaceMod.SortOrder
-import typings.antd.libTableInterfaceMod.TableSelectWay
-import typings.antd.libTableInterfaceMod.TableSize
-import typings.antd.libTabsMod.TabsPosition
-import typings.antd.libTabsMod.TabsType
-import typings.antd.libTooltipMod.TooltipPlacement
-import typings.antd.libTooltipMod.TooltipTrigger
-import typings.antd.libTransferMod.TransferDirection
-import typings.antd.libTransferRenderListBodyMod.OmitProp
-import typings.antd.libTreeDirectoryTreeMod.ExpandAction
-import typings.antd.libTypographyBaseMod.BaseType
-import typings.antd.libUnderscoreUtilColorsMod.PresetColorType
-import typings.antd.libUnderscoreUtilResponsiveObserveMod.Breakpoint
-import typings.antd.libUploadInterfaceMod.UploadFileStatus
-import typings.antd.libUploadInterfaceMod.UploadListType
-import typings.antd.libUploadInterfaceMod.UploadType
+import typings.antd.baseMod.BaseType
+import typings.antd.buttonButtonMod.ButtonHTMLType
+import typings.antd.buttonButtonMod.ButtonShape
+import typings.antd.buttonButtonMod.ButtonSize
+import typings.antd.buttonButtonMod.ButtonType
+import typings.antd.calendarMod.CalendarMode
+import typings.antd.cardMod.CardSize
+import typings.antd.carouselMod.CarouselEffect
+import typings.antd.carouselMod.DotPosition
+import typings.antd.cascaderMod.CascaderExpandTrigger
+import typings.antd.collapseCollapseMod.ExpandIconPosition
+import typings.antd.colorsMod.PresetColorType
+import typings.antd.directoryTreeMod.ExpandAction
+import typings.antd.drawerMod.placementType
+import typings.antd.dropdownButtonMod.DropdownButtonType
+import typings.antd.dropdownDropdownMod.Placement
+import typings.antd.formFormMod.FormLayout
+import typings.antd.formItemMod.FormLabelAlign
+import typings.antd.iconMod.ThemeType
+import typings.antd.inputNumberMod.OmitAttrs
+import typings.antd.interfaceMod.DatePickerMode
+import typings.antd.listMod.ColumnType
+import typings.antd.listMod.ListItemLayout
+import typings.antd.listMod.ListSize
+import typings.antd.mentionsMod.MentionPlacement
+import typings.antd.menuContextMod.MenuTheme
+import typings.antd.menuMod.MenuMode
+import typings.antd.messageMod.NoticeType
+import typings.antd.notificationMod.IconType
+import typings.antd.notificationMod.NotificationPlacement
+import typings.antd.progressProgressMod.ProgressSize
+import typings.antd.progressProgressMod.ProgressType
+import typings.antd.radioInterfaceMod.RadioGroupButtonStyle
+import typings.antd.renderListBodyMod.OmitProp
+import typings.antd.responsiveObserveMod.Breakpoint
+import typings.antd.selectMod.ModeOption
+import typings.antd.siderMod.CollapseType
+import typings.antd.siderMod.SiderTheme
+import typings.antd.spinMod.SpinSize
+import typings.antd.statisticUtilsMod._Formatter
+import typings.antd.switchMod.SwitchSize
+import typings.antd.tableInterfaceMod.RowSelectionType
+import typings.antd.tableInterfaceMod.SortOrder
+import typings.antd.tableInterfaceMod.TableSelectWay
+import typings.antd.tableInterfaceMod.TableSize
+import typings.antd.tabsMod.TabsPosition
+import typings.antd.tabsMod.TabsType
+import typings.antd.tooltipMod.TooltipPlacement
+import typings.antd.tooltipMod.TooltipTrigger
+import typings.antd.transferMod.TransferDirection
+import typings.antd.uploadInterfaceMod.UploadFileStatus
+import typings.antd.uploadInterfaceMod.UploadListType
+import typings.antd.uploadInterfaceMod.UploadType
+import typings.antd.wrapPickerMod.PickerType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -156,7 +156,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3Dot26Dot6` extends js.Object
+  sealed trait `3Dot26Dot7` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -321,7 +321,7 @@ object antdStrings {
   sealed trait bottom
     extends DotPosition
        with MentionPlacement
-       with typings.antd.libMentionsMod.MentionPlacement
+       with typings.antd.mentionMod.MentionPlacement
        with TabsPosition
        with TooltipPlacement
        with placementType
@@ -1719,7 +1719,7 @@ object antdStrings {
   sealed trait top
     extends DotPosition
        with MentionPlacement
-       with typings.antd.libMentionsMod.MentionPlacement
+       with typings.antd.mentionMod.MentionPlacement
        with TabsPosition
        with TooltipPlacement
        with placementType
@@ -1962,7 +1962,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3Dot26Dot6`: `3Dot26Dot6` = "3.26.6".asInstanceOf[`3Dot26Dot6`]
+  def `3Dot26Dot7`: `3Dot26Dot7` = "3.26.7".asInstanceOf[`3Dot26Dot7`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline

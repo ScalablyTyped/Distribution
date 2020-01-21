@@ -23,7 +23,7 @@ trait UploaderOption extends js.Object {
   var fileList: js.UndefOr[String] = js.undefined
   var fileTemplate: js.UndefOr[String] = js.undefined
   var file_data_name: js.UndefOr[String] = js.undefined
-  var filters: js.UndefOr[Anon_Maxfilesize] = js.undefined
+  var filters: js.UndefOr[AnonMaxfilesize] = js.undefined
   var flash_swf_url: js.UndefOr[String] = js.undefined
   var headers: js.UndefOr[js.Object] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
@@ -34,7 +34,7 @@ trait UploaderOption extends js.Object {
   var multipart_params: js.UndefOr[js.Object | CallBack] = js.undefined
   var onBeforeUpload: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
   var onChunkUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* error */ Anon_Error, Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ AnonError, Unit]] = js.undefined
   var onFileUploaded: js.UndefOr[js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, Unit]] = js.undefined
   var onFilesAdded: js.UndefOr[js.Function1[/* fiels */ js.Array[FileObj], Unit]] = js.undefined
   var onFilesRemoved: js.UndefOr[js.Function1[/* files */ js.Array[FileObj], Unit]] = js.undefined
@@ -45,20 +45,20 @@ trait UploaderOption extends js.Object {
   var onUploadFile: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
   var onUploadProgress: js.UndefOr[js.Function1[/* file */ FileObj, Unit]] = js.undefined
   var previewImageIcon: js.UndefOr[Boolean] = js.undefined
-  var previewImageSize: js.UndefOr[Anon_Height] = js.undefined
+  var previewImageSize: js.UndefOr[AnonHeight] = js.undefined
   var qiniu: js.UndefOr[js.Object] = js.undefined
   var removeUploaded: js.UndefOr[Boolean] = js.undefined
   var rename: js.UndefOr[Boolean] = js.undefined
   var renameActionOnDone: js.UndefOr[Boolean] = js.undefined
   var renameByClick: js.UndefOr[Boolean] = js.undefined
   var renameExtension: js.UndefOr[Boolean] = js.undefined
-  var resize: js.UndefOr[Anon_Crop] = js.undefined
+  var resize: js.UndefOr[AnonCrop] = js.undefined
   var responseHandler: js.UndefOr[Boolean | CallBack] = js.undefined
   var runtimes: js.UndefOr[String] = js.undefined
   var sendFileId: js.UndefOr[Boolean] = js.undefined
   var sendFileName: js.UndefOr[Boolean] = js.undefined
   var silverlight_xap_url: js.UndefOr[String] = js.undefined
-  var staticFiles: js.UndefOr[js.Array[Anon_Id]] = js.undefined
+  var staticFiles: js.UndefOr[js.Array[AnonId]] = js.undefined
   var statusCreator: js.UndefOr[
     js.Function3[/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader, Unit]
   ] = js.undefined
@@ -84,7 +84,7 @@ object UploaderOption {
     fileList: String = null,
     fileTemplate: String = null,
     file_data_name: String = null,
-    filters: Anon_Maxfilesize = null,
+    filters: AnonMaxfilesize = null,
     flash_swf_url: String = null,
     headers: js.Object = null,
     lang: String = null,
@@ -95,7 +95,7 @@ object UploaderOption {
     multipart_params: js.Object | CallBack = null,
     onBeforeUpload: /* file */ FileObj => Unit = null,
     onChunkUploaded: (/* file */ FileObj, /* responseObject */ ResponseObject) => Unit = null,
-    onError: /* error */ Anon_Error => Unit = null,
+    onError: /* error */ AnonError => Unit = null,
     onFileUploaded: (/* file */ FileObj, /* responseObject */ ResponseObject) => Unit = null,
     onFilesAdded: /* fiels */ js.Array[FileObj] => Unit = null,
     onFilesRemoved: /* files */ js.Array[FileObj] => Unit = null,
@@ -106,20 +106,20 @@ object UploaderOption {
     onUploadFile: /* file */ FileObj => Unit = null,
     onUploadProgress: /* file */ FileObj => Unit = null,
     previewImageIcon: js.UndefOr[Boolean] = js.undefined,
-    previewImageSize: Anon_Height = null,
+    previewImageSize: AnonHeight = null,
     qiniu: js.Object = null,
     removeUploaded: js.UndefOr[Boolean] = js.undefined,
     rename: js.UndefOr[Boolean] = js.undefined,
     renameActionOnDone: js.UndefOr[Boolean] = js.undefined,
     renameByClick: js.UndefOr[Boolean] = js.undefined,
     renameExtension: js.UndefOr[Boolean] = js.undefined,
-    resize: Anon_Crop = null,
+    resize: AnonCrop = null,
     responseHandler: Boolean | CallBack = null,
     runtimes: String = null,
     sendFileId: js.UndefOr[Boolean] = js.undefined,
     sendFileName: js.UndefOr[Boolean] = js.undefined,
     silverlight_xap_url: String = null,
-    staticFiles: js.Array[Anon_Id] = null,
+    staticFiles: js.Array[AnonId] = null,
     statusCreator: (/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader) => Unit = null,
     unique_names: js.UndefOr[Boolean] = js.undefined,
     uploadedMessage: js.UndefOr[Boolean] = js.undefined

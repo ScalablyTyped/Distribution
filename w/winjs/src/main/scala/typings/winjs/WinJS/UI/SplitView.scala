@@ -1,10 +1,10 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
-import typings.winjs.Anon_BottomLeft
-import typings.winjs.Anon_Inline
-import typings.winjs.Anon_InlineOverlay
+import typings.winjs.AnonBottomLeft
+import typings.winjs.AnonInline
+import typings.winjs.AnonInlineOverlay
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,22 +78,22 @@ class SplitView () extends js.Object {
     * Raised immediately after the pane is fully closed.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterclose(eventInfo: Event): Unit = js.native
+  def onafterclose(eventInfo: Event_): Unit = js.native
   /**
     * Raised immediately after the pane is fully open.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafteropen(eventInfo: Event): Unit = js.native
+  def onafteropen(eventInfo: Event_): Unit = js.native
   /**
     * Raised just before closing the pane. Call preventDefault on this event to stop the pane from closing.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeclose(eventInfo: Event): Unit = js.native
+  def onbeforeclose(eventInfo: Event_): Unit = js.native
   /**
     * Raised just before opening the pane. Call preventDefault on this event to stop the pane from opening.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeopen(eventInfo: Event): Unit = js.native
+  def onbeforeopen(eventInfo: Event_): Unit = js.native
   /**
     * Opens the SplitView's pane.
     **/
@@ -115,15 +115,15 @@ object SplitView extends js.Object {
   /**
     * Display options for a SplitView's pane when it is closed.
     **/
-  var ClosedDisplayMode: Anon_Inline = js.native
+  var ClosedDisplayMode: AnonInline = js.native
   /**
     * Display options for a SplitView's pane when it is open.
     **/
-  var OpenedDisplayMode: Anon_InlineOverlay = js.native
+  var OpenedDisplayMode: AnonInlineOverlay = js.native
   /**
     * Placement options for a SplitView's pane.
     **/
-  var PanePlacement: Anon_BottomLeft = js.native
+  var PanePlacement: AnonBottomLeft = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

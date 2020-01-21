@@ -2,12 +2,12 @@ package typings.browserfs
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.browserfs.distNodeBackendAsyncMirrorMod.AsyncMirror
-import typings.browserfs.distNodeBackendAsyncMirrorMod.AsyncMirrorOptions
-import typings.browserfs.distNodeBackendAsyncMirrorMod.default
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystem
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.asyncMirrorMod.AsyncMirror
+import typings.browserfs.asyncMirrorMod.AsyncMirrorOptions
+import typings.browserfs.asyncMirrorMod.default
+import typings.browserfs.fileSystemMod.BFSCallback
+import typings.browserfs.fileSystemMod.FileSystem
+import typings.browserfs.fileSystemMod.FileSystemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

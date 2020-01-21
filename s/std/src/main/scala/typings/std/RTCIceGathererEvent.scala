@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RTCIceGathererEvent extends Event {
+trait RTCIceGathererEvent extends Event_ {
   val candidate: RTCIceCandidateDictionary | RTCIceCandidateComplete = js.native
 }
 

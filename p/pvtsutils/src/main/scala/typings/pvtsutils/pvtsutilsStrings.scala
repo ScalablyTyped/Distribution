@@ -1,6 +1,6 @@
 package typings.pvtsutils
 
-import typings.pvtsutils.buildTypesConvertMod._BufferEncoding
+import typings.pvtsutils.convertMod._BufferEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var define: RequireDefine = js.native
-  var require: Require = js.native
+  var require: Require_ = js.native
   // Ambient declarations for 'require' and 'define'
-  var requirejs: Require = js.native
+  var requirejs: Require_ = js.native
 }
 

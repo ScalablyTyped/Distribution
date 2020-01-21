@@ -1,6 +1,6 @@
 package typings.busboy.busboy
 
-import typings.busboy.Anon_FieldNameSize
+import typings.busboy.AnonFieldNameSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait BusboyConfig extends js.Object {
   var fileHwm: js.UndefOr[Double] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var highWaterMark: js.UndefOr[Double] = js.undefined
-  var limits: js.UndefOr[Anon_FieldNameSize] = js.undefined
+  var limits: js.UndefOr[AnonFieldNameSize] = js.undefined
   var preservePath: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -21,7 +21,7 @@ object BusboyConfig {
     fileHwm: Int | Double = null,
     headers: js.Any = null,
     highWaterMark: Int | Double = null,
-    limits: Anon_FieldNameSize = null,
+    limits: AnonFieldNameSize = null,
     preservePath: js.UndefOr[Boolean] = js.undefined
   ): BusboyConfig = {
     val __obj = js.Dynamic.literal()

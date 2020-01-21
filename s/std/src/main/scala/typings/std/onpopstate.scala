@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("onpopstate")
 @js.native
 object onpopstate
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ PopStateEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ PopStateEvent, js.Any]) | Null]
 

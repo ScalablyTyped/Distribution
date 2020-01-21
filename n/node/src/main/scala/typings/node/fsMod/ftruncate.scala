@@ -26,7 +26,9 @@ object ftruncate extends js.Object {
     * @param fd A file descriptor.
     * @param len If not specified, defaults to `0`.
     */
-  def __promisify__(fd: Double): js.Promise[Unit] = js.native
-  def __promisify__(fd: Double, len: Double): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(fd: Double): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(fd: Double, len: Double): js.Promise[Unit] = js.native
 }
 

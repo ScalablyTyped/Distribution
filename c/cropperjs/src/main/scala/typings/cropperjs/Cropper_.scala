@@ -57,6 +57,6 @@ class Cropper_ protected () extends js.Object {
   def setDragMode(dragMode: DragMode): Cropper = js.native
   def zoom(ratio: Double): Cropper = js.native
   def zoomTo(ratio: Double): Cropper = js.native
-  def zoomTo(ratio: Double, pivot: Anon_X): Cropper = js.native
+  def zoomTo(ratio: Double, pivot: AnonX): Cropper = js.native
 }
 

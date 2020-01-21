@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColor
-import typings.echarts.Anon_AreaStyle
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColor
-import typings.echarts.Anon_ColorOpacity
-import typings.echarts.Anon_ColorOpacityShadowBlur
+import typings.echarts.AnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonAreaStyle
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderTypeBorderWidthColor
+import typings.echarts.AnonColorOpacity
+import typings.echarts.AnonColorOpacityShadowBlur
 import typings.echarts.echarts.EChartOption.SeriesRadar.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-radar
   */
-@JSName("SeriesRadar")
 trait SeriesRadar_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -131,7 +130,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.areaStyle
     */
-  var areaStyle: js.UndefOr[Anon_ColorOpacity] = js.undefined
+  var areaStyle: js.UndefOr[AnonColorOpacity] = js.undefined
   /**
     * The data in radar chart is multi-variable (dimension).
     * Here is an example:
@@ -150,7 +149,7 @@ trait SeriesRadar_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-radar.emphasis
     */
-  var emphasis: js.UndefOr[Anon_AreaStyle] = js.undefined
+  var emphasis: js.UndefOr[AnonAreaStyle] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -166,7 +165,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -178,14 +177,14 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Line style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -326,7 +325,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "radar"
@@ -379,13 +378,13 @@ object SeriesRadar_ {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    areaStyle: Anon_ColorOpacity = null,
+    areaStyle: AnonColorOpacity = null,
     data: js.Array[DataObject] = null,
-    emphasis: Anon_AreaStyle = null,
+    emphasis: AnonAreaStyle = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColor = null,
-    label: Anon_AlignBackgroundColorBorderColor = null,
-    lineStyle: Anon_ColorOpacityShadowBlur = null,
+    itemStyle: AnonBorderColorBorderTypeBorderWidthColor = null,
+    label: AnonAlignBackgroundColorBorderColor = null,
+    lineStyle: AnonColorOpacityShadowBlur = null,
     name: String = null,
     radarIndex: Int | Double = null,
     silent: js.UndefOr[Boolean] = js.undefined,
@@ -394,7 +393,7 @@ object SeriesRadar_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     `type`: String = null,
     z: Int | Double = null,
     zlevel: Int | Double = null

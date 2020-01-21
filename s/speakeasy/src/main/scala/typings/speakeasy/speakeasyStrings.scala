@@ -1,7 +1,7 @@
 package typings.speakeasy
 
-import typings.speakeasy.speakeasyMod.Algorithm
-import typings.speakeasy.speakeasyMod.Encoding
+import typings.speakeasy.mod.Algorithm
+import typings.speakeasy.mod.Encoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

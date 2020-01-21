@@ -2,7 +2,7 @@ package typings.extjs.Ext.dd
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -92,7 +92,7 @@ object IDD {
     constrainTo: (/* constrainTo */ js.UndefOr[js.Any], /* pad */ js.UndefOr[js.Any], /* inContent */ js.UndefOr[Boolean]) => Unit = null,
     defaultPadding: js.Any = null,
     destroy: () => Unit = null,
-    endDrag: /* e */ js.UndefOr[Event] => Unit = null,
+    endDrag: /* e */ js.UndefOr[Event_] => Unit = null,
     extend: String = null,
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
@@ -116,14 +116,14 @@ object IDD {
     mixins: js.Any = null,
     moveOnly: js.UndefOr[Boolean] = js.undefined,
     onAvailable: () => Unit = null,
-    onDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOut: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOver: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
+    onDrag: /* e */ js.UndefOr[Event_] => Unit = null,
+    onDragDrop: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragEnter: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOut: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOver: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onInvalidDrop: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseDown: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseUp: /* e */ js.UndefOr[Event_] => Unit = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
     removeFromGroup: /* sGroup */ js.UndefOr[String] => Unit = null,

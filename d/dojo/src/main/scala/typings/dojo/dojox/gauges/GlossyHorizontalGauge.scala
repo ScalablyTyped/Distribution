@@ -1,6 +1,6 @@
 package typings.dojo.dojox.gauges
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.color
 import typings.dojo.dojoStrings.font
 import typings.dojo.dojoStrings.majorTicksColor
@@ -155,7 +155,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_font(
     property: font,
@@ -165,7 +165,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_majorTicksColor(
     property: majorTicksColor,
@@ -175,7 +175,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_majorTicksInterval(
     property: majorTicksInterval,
@@ -185,7 +185,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_markerColor(
     property: markerColor,
@@ -195,7 +195,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minorTicksColor(
     property: minorTicksColor,
@@ -205,7 +205,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minorTicksInterval(
     property: minorTicksInterval,
@@ -215,7 +215,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_noChange(
     property: noChange,
@@ -225,7 +225,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scalePrecision(
     property: scalePrecision,
@@ -235,7 +235,7 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -245,6 +245,6 @@ class GlossyHorizontalGauge () extends BarGauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

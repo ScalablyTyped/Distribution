@@ -1,6 +1,6 @@
 package typings.samchon.protocolMod
 
-import typings.samchon.protocolServerIServerMod.IServer
+import typings.samchon.iserverMod.IServer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/protocol", "WebServerBase")
 @js.native
 class WebServerBase protected ()
-  extends typings.samchon.protocolServerBaseWebServerBaseMod.WebServerBase {
+  extends typings.samchon.webServerBaseMod.WebServerBase {
   /**
     * Construct from a *hooker*.
     *

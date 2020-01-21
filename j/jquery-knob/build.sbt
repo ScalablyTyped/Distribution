@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-knob"
-version := "1.2.13-dt-20190322Z-6085d1"
+version := "1.2.13-dt-20190322Z-65f049"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

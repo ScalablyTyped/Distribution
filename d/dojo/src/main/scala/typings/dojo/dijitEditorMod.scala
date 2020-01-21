@@ -1,15 +1,12 @@
 package typings.dojo
 
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
-import typings.dojo.dijit.Editor
-import typings.std.HTMLElement
+import typings.dojo.dojox.grid.cells.dijit.Editor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("dijit/Editor", JSImport.Namespace)
+@JSImport("dojox/grid/cells/dijit.Editor", JSImport.Namespace)
 @js.native
-object dijitEditorMod
-  extends TopLevel[Instantiable2[/* params */ js.Object, /* srcNodeRef */ HTMLElement, Editor]]
+object dijitEditorMod extends TopLevel[Editor]
 

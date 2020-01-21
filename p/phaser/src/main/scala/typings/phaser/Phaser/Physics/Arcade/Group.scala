@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Physics.Arcade
 
-import org.scalablytyped.runtime.TopLevel
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
@@ -85,11 +84,4 @@ class Group protected ()
   def setVelocityY(value: Double): Group = js.native
   def setVelocityY(value: Double, step: Double): Group = js.native
 }
-
-/**
-  * Arcade Physics Group containing Dynamic Bodies.
-  */
-@JSGlobal("Phaser.Physics.Arcade.GROUP")
-@js.native
-object GROUP extends TopLevel[Double]
 

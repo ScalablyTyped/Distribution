@@ -1,6 +1,6 @@
 package typings.ol.sphereMod
 
-import typings.ol.geomGeometryMod.default
+import typings.ol.geometryMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

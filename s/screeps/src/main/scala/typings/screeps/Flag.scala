@@ -43,7 +43,7 @@ trait Flag extends RoomObject {
     */
   def setColor(color: ColorConstant): OK | ERR_INVALID_ARGS = js.native
   def setColor(color: ColorConstant, secondaryColor: ColorConstant): OK | ERR_INVALID_ARGS = js.native
-  def setPosition(pos: Anon_Pos): OK | ERR_INVALID_ARGS = js.native
+  def setPosition(pos: AnonPos): OK | ERR_INVALID_ARGS = js.native
   /**
     * Set new position of the flag.
     * @param pos Can be a RoomPosition object or any object containing RoomPosition.

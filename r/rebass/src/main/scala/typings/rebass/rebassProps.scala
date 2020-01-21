@@ -1,34 +1,34 @@
 package typings.rebass
 
-import typings.rebass.rebassMod.BoxKnownProps
+import typings.rebass.mod.BoxKnownProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait rebassProps {
   @scala.inline
-  def BoxProps: typings.rebass.rebassMod.BoxProps.type = typings.rebass.rebassMod.BoxProps
-  type BoxProps = typings.rebass.rebassMod.BoxProps
+  def BoxProps: typings.rebass.mod.BoxProps.type = typings.rebass.mod.BoxProps
+  type BoxProps = typings.rebass.mod.BoxProps
   @scala.inline
-  def ButtonProps: typings.rebass.rebassMod.ButtonProps.type = typings.rebass.rebassMod.ButtonProps
-  type ButtonProps = typings.rebass.rebassMod.ButtonProps
+  def ButtonProps: typings.rebass.mod.ButtonProps.type = typings.rebass.mod.ButtonProps
+  type ButtonProps = typings.rebass.mod.ButtonProps
   @scala.inline
-  def CardProps: BoxKnownProps.type = typings.rebass.rebassMod.BoxKnownProps
+  def CardProps: BoxKnownProps.type = typings.rebass.mod.BoxKnownProps
   type CardProps = BoxKnownProps
   @scala.inline
-  def FlexProps: typings.rebass.rebassMod.FlexProps.type = typings.rebass.rebassMod.FlexProps
-  type FlexProps = typings.rebass.rebassMod.FlexProps
+  def FlexProps: typings.rebass.mod.FlexProps.type = typings.rebass.mod.FlexProps
+  type FlexProps = typings.rebass.mod.FlexProps
   @scala.inline
-  def HeadingProps: typings.rebass.rebassMod.HeadingProps.type = typings.rebass.rebassMod.HeadingProps
-  type HeadingProps = typings.rebass.rebassMod.HeadingProps
+  def HeadingProps: typings.rebass.mod.HeadingProps.type = typings.rebass.mod.HeadingProps
+  type HeadingProps = typings.rebass.mod.HeadingProps
   @scala.inline
-  def ImageProps: typings.rebass.rebassMod.ImageProps.type = typings.rebass.rebassMod.ImageProps
-  type ImageProps = typings.rebass.rebassMod.ImageProps
+  def ImageProps: typings.rebass.mod.ImageProps.type = typings.rebass.mod.ImageProps
+  type ImageProps = typings.rebass.mod.ImageProps
   @scala.inline
-  def LinkProps: typings.rebass.rebassMod.LinkProps.type = typings.rebass.rebassMod.LinkProps
-  type LinkProps = typings.rebass.rebassMod.LinkProps
+  def LinkProps: typings.rebass.mod.LinkProps.type = typings.rebass.mod.LinkProps
+  type LinkProps = typings.rebass.mod.LinkProps
   @scala.inline
-  def TextProps: typings.rebass.rebassMod.TextProps.type = typings.rebass.rebassMod.TextProps
-  type TextProps = typings.rebass.rebassMod.TextProps
+  def TextProps: typings.rebass.mod.TextProps.type = typings.rebass.mod.TextProps
+  type TextProps = typings.rebass.mod.TextProps
 }
 

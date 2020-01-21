@@ -5,22 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object httpMod {
-  import org.scalablytyped.runtime.StringDictionary
-  import typings.k6.Anon_Replace
-  import typings.k6.k6Mod.bytes
-
-  type ArrayBatchRequest = js.Tuple4[String, String, js.UndefOr[RequestBody | Null], js.UndefOr[Params | Null]]
-  type ArrayRefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = js.Tuple4[String, String, js.UndefOr[RequestBody | Null], js.UndefOr[RefinedParams[RT] | Null]]
-  type BatchRequest = String | ArrayBatchRequest | ObjectBatchRequest
-  type BatchRequests = js.Array[BatchRequest] | StringDictionary[BatchRequest]
+  type ArrayBatchRequest = js.Tuple4[
+    java.lang.String, 
+    java.lang.String, 
+    js.UndefOr[typings.k6.httpMod.RequestBody | scala.Null], 
+    js.UndefOr[typings.k6.httpMod.Params | scala.Null]
+  ]
+  type ArrayRefinedBatchRequest[RT /* <: js.UndefOr[typings.k6.httpMod.ResponseType] */] = js.Tuple4[
+    java.lang.String, 
+    java.lang.String, 
+    js.UndefOr[typings.k6.httpMod.RequestBody | scala.Null], 
+    js.UndefOr[typings.k6.httpMod.RefinedParams[RT] | scala.Null]
+  ]
+  type BatchRequest = java.lang.String | typings.k6.httpMod.ArrayBatchRequest | typings.k6.httpMod.ObjectBatchRequest
+  type BatchRequests = js.Array[typings.k6.httpMod.BatchRequest] | org.scalablytyped.runtime.StringDictionary[typings.k6.httpMod.BatchRequest]
   type BatchResponses[Q] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Q ]: Q[K] extends k6.k6/http.RefinedBatchRequest<infer RT>? k6.k6/http.RefinedResponse<any> : never}
     */ typings.k6.k6Strings.BatchResponses with Q
-  type CookieJarCookies = StringDictionary[js.Array[String]]
-  type ParamsCookieValue = String | Anon_Replace
-  type RefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = String | ArrayRefinedBatchRequest[RT] | ObjectRefinedBatchRequest[RT]
-  type RefinedResponseBody[RT /* <: js.UndefOr[ResponseType] */] = String | Null | bytes
-  type RequestBody = String | StructuredRequestBody
-  type ResponseBody = String | bytes | Null
-  type StructuredRequestBody = StringDictionary[String | FileData]
+  type CookieJarCookies = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  type ParamsCookieValue = java.lang.String | typings.k6.AnonReplace
+  type RefinedBatchRequest[RT /* <: js.UndefOr[typings.k6.httpMod.ResponseType] */] = java.lang.String | typings.k6.httpMod.ArrayRefinedBatchRequest[RT] | typings.k6.httpMod.ObjectRefinedBatchRequest[RT]
+  type RefinedResponseBody[RT /* <: js.UndefOr[typings.k6.httpMod.ResponseType] */] = java.lang.String | scala.Null | typings.k6.mod.bytes
+  type RequestBody = java.lang.String | typings.k6.httpMod.StructuredRequestBody
+  type ResponseBody = java.lang.String | typings.k6.mod.bytes | scala.Null
+  type StructuredRequestBody = org.scalablytyped.runtime.StringDictionary[java.lang.String | typings.k6.httpMod.FileData]
 }

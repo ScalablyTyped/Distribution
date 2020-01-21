@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
   * class from a content-type.
   *
   */
-@JSName("ContentTypeMap")
 trait ContentTypeMap_ extends js.Object {
   /**
     *

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("$")
-  var $: ChocolateChipStatic = js.native
+  var _empty: ChocolateChipStatic = js.native
   var chocolatechipjs: ChocolateChipStatic = js.native
 }
 

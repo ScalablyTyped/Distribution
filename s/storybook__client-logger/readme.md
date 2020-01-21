@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__client-logger
 
-Typings are for version 5.3.5
+Typings are for version 5.3.7
 
 ## Library description:
 Any client-side logging that is done through storybook should be done through this package.

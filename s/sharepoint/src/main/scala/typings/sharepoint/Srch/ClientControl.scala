@@ -1,8 +1,8 @@
 package typings.sharepoint.Srch
 
-import typings.microsoftDashAjax.Sys.UI.Control
+import typings.microsoftAjax.Sys.UI.Control
 import typings.std.Element
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class ClientControl protected () extends Control {
   var alternateRenderer: js.Any = js.native
   var loaded: Boolean = js.native
   var serverTemplateScriptsToLoad: js.Array[_] = js.native
-  def clickHandler(e: Event): js.Any = js.native
+  def clickHandler(e: Event_): js.Any = js.native
   def get_alternateErrorMessage(): String = js.native
   /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
   def get_delayLoadTemplateScripts(): Boolean = js.native

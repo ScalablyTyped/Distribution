@@ -1,0 +1,6780 @@
+package typings.fortawesomeFontawesomeCommonTypes.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`500px`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`accessible-icon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.accusoft
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`acquisitions-incorporated`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adobe
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adversal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.affiliatetheme
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.airbnb
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.algolia
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.alipay
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.amazon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`amazon-pay`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.amilia
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.android
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angellist
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angrycreative
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angular
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`app-store`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`app-store-ios`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.apper
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.apple
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-pay`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.artstation
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.asymmetrik
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.atlassian
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.audible
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.autoprefixer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.avianex
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.aviato
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.aws
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bandcamp
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battle-net`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.behance
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`behance-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bimobject
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bitbucket
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bitcoin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bity
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`black-tie`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blackberry
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blogger
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blogger-b`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bluetooth
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bluetooth-b`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bootstrap
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.btc
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.buffer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.buromobelexperte
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`buy-n-large`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.buysellads
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`canadian-maple-leaf`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-amazon-pay`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-amex`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-apple-pay`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-diners-club`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-discover`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-jcb`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-mastercard`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-paypal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-stripe`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-visa`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.centercode
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.centos
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chrome
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chromecast
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloudscale
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloudsmith
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloudversify
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.codepen
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.codiepie
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.confluence
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.connectdevelop
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.contao
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cotton-bureau`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cpanel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-by`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nc`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nc-eu`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nc-jp`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nd`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-pd`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-pd-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-remix`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-sa`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-sampling`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-sampling-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-share`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-zero`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`critical-role`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.css3
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`css3-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cuttlefish
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`d-and-d`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`d-and-d-beyond`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dashcube
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.delicious
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deploydog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deskpro
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dev
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deviantart
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dhl
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diaspora
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.digg
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`digital-ocean`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.discord
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.discourse
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dochub
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.docker
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.draft2digital
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dribbble
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dribbble-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dropbox
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drupal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dyalog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.earlybirds
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ebay
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.edge
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.elementor
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ello
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ember
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.empire
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.envira
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.erlang
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ethereum
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.etsy
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.evernote
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.expeditedssl
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.facebook
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`facebook-f`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`facebook-messenger`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`facebook-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fantasy-flight-games`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fedex
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fedora
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.figma
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.firefox
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`firefox-browser`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`first-order`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`first-order-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.firstdraft
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flickr
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flipboard
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fly
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome-flag`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome-logo-full`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fonticons
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fonticons-fi`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fort-awesome`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fort-awesome-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.forumbee
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.foursquare
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`free-code-camp`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.freebsd
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fulcrum
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`galactic-republic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`galactic-senate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`get-pocket`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gg
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gg-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.git
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`git-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`git-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.github
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`github-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`github-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gitkraken
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gitlab
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gitter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.glide
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glide-g`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gofore
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.goodreads
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`goodreads-g`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.google
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-drive`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-play`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-plus-g`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-plus-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-wallet`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gratipay
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grav
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gripfire
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grunt
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gulp
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hacker-news`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hacker-news-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hackerrank
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hips
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hire-a-helper`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hooli
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hornbill
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hotjar
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.houzz
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.html5
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hubspot
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ideal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.imdb
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.instagram
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.intercom
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`internet-explorer`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.invision
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ioxhost
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`itch-io`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.itunes
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`itunes-note`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.java_
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jedi-order`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jenkins
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jira
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joget
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joomla
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.js_
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`js-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jsfiddle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kaggle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keybase
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keycdn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kickstarter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kickstarter-k`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.korvue
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laravel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lastfm
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lastfm-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.leanpub
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.less
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.line
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.linkedin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`linkedin-in`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.linode
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.linux
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lyft
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magento
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mailchimp
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mandalorian
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.markdown
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mastodon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.maxcdn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mdb
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medapps
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medium
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`medium-m`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medrt
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meetup
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.megaport
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mendeley
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microblog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microsoft
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mix
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mixcloud
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mizuni
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.modx
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.monero
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.napster
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.neos
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.nimblr
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.node
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`node-js`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.npm
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ns8
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.nutritionix
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.odnoklassniki
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`odnoklassniki-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`old-republic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.opencart
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.openid
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.opera
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`optin-monster`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.orcid
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.osi
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.page4
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pagelines
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.palfed
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.patreon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paypal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`penny-arcade`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.periscope
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.phabricator
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phoenix-framework`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phoenix-squadron`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.php
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-hat`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-pp`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pinterest
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pinterest-p`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pinterest-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.playstation
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`product-hunt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pushed
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.python
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.qq
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quinscape
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quora
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`r-project`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`raspberry-pi`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ravelry
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.react
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.reacteurope
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.readme
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rebel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`red-river`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.reddit
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`reddit-alien`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`reddit-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.redhat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.renren
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.replyd
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.researchgate
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.resolving
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rev
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rocketchat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rockrms
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.safari
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.salesforce
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sass
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.schlix
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scribd
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.searchengin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sellcast
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sellsy
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.servicestack
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shirtsinbulk
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shopware
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.simplybuilt
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sistrix
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sith
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sketch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skyatlas
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skype
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.slack
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`slack-hash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.slideshare
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snapchat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`snapchat-ghost`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`snapchat-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.soundcloud
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sourcetree
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.speakap
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`speaker-deck`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spotify
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.squarespace
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stack-exchange`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stack-overflow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stackpath
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.staylinked
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.steam
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`steam-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`steam-symbol`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sticker-mule`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.strava
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stripe
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stripe-s`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.studiovinari
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stumbleupon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stumbleupon-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.superpowers
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.supple
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.suse
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swift
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.symfony
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.teamspeak
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.telegram
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`telegram-plane`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tencent-weibo`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`the-red-yeti`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.themeco
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.themeisle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`think-peaks`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trade-federation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trello
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tripadvisor
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tumblr
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tumblr-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.twitch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.twitter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`twitter-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.typo3
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.uber
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ubuntu
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.uikit
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.umbraco
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.uniregistry
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unity
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.untappd
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ups
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.usb
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.usps
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ussunnah
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vaadin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viacoin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viadeo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`viadeo-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viber
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vimeo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vimeo-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vimeo-v`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vine
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vk
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vnv
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vuejs
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.waze
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weebly
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weibo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weixin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whatsapp
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`whatsapp-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whmcs
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wikipedia-w`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.windows
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wix
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wizards-of-the-coast`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wolf-pack-battalion`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wordpress
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wordpress-simple`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpbeginner
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpexplorer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpforms
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpressr
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.xbox
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.xing
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`xing-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`y-combinator`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yahoo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yammer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yandex
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`yandex-international`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yarn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yelp
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yoast
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.youtube
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`youtube-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.zhihu
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.abacus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.acorn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ad
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`address-book`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`address-card`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adjust
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`air-conditioner`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`air-freshener`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-clock`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-snooze`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.album
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`album-collection`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.alicorn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.alien
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alien-monster`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-center`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-justify`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.allergies
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ambulance
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`american-sign-language-interpreting`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`amp-guitar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.analytics
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.anchor
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angry
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ankh
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-crate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.archive
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.archway
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-bottom`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-top`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-bottom`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-top`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-bottom`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-top`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-bottom`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-top`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.arrows
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-alt-h`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-alt-v`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-h`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-v`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`assistive-listening-systems`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.asterisk
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.at
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.atlas
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.atom
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`atom-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`audio-description`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.award
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.axe
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`axe-battle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.baby
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`baby-carriage`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backpack
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backspace
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backward
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.badge
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-percent`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-sheriff`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badger-honey`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bags-shopping`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bahai
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`balance-scale`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`balance-scale-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`balance-scale-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ball-pile`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ballot
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ballot-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ban
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`band-aid`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.banjo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.barcode
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`barcode-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`barcode-read`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`barcode-scan`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bars
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.baseball
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`baseball-ball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`basketball-ball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`basketball-hoop`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bath
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-bolt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-empty`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-full`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-half`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-quarter`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-three-quarters`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bed
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bed-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bed-bunk`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bed-empty`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.beer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bell
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-on`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-school`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-school-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bells
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.betamax
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bezier-curve`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bible
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bicycle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.biking
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`biking-mountain`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.binoculars
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.biohazard
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`birthday-cake`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blanket
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blender
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blender-phone`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blind
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blinds
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blinds-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blinds-raised`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bold
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bolt
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bomb
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bone-break`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bong
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.book
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-dead`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-reader`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-spells`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-user`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bookmark
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.books
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`books-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.boombox
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.boot
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`booth-curtain`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-all`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-bottom`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-center-h`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-center-v`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-inner`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-none`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-outer`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-style`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-style-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-top`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bow-arrow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bowling-ball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bowling-pins`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.box
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-ballot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-fragile`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-full`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-usd`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.boxes
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`boxes-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`boxing-glove`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.brackets
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`brackets-curly`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.braille
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.brain
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bread-loaf`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bread-slice`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.briefcase
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`briefcase-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bring-forward`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bring-front`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`broadcast-tower`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.broom
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.browser
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.brush
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bug
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.building
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bullhorn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bullseye
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bullseye-arrow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bullseye-pointer`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`burger-soda`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.burn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.burrito
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bus-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bus-school`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`business-time`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cabinet-filing`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cactus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.calculator
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calculator-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.calendar
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-day`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-edit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-star`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-week`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.camcorder
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.camera
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-home`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-movie`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-polaroid`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-retro`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.campfire
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.campground
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`candle-holder`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`candy-cane`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`candy-corn`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cannabis
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.capsules
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.car
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-battery`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-building`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-bump`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-bus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-crash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-garage`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-mechanic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-side`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-tilt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-wash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.caravan
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caravan-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.carrot
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cars
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cart-arrow-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cart-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cash-register`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cassette-tape`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cat-space`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cauldron
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cctv
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.certificate
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chair
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chair-office`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chalkboard
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chalkboard-teacher`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`charging-station`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-area`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-bar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-network`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-scatter`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.check
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`check-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`check-double`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`check-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cheese
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cheese-swiss`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cheeseburger
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chess
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-bishop`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-bishop-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-board`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-clock`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-clock-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-king`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-king-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-knight`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-knight-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-pawn`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-pawn-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-queen`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-queen-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-rook`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-rook-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.child
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chimney
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.church
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.circle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-notch`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.city
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clarinet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`claw-marks`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clinic-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clipboard
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-list`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-list-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-prescription`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-user`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clock
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`closed-captioning`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloud
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-download`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-download-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-drizzle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-hail`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-hail-mixed`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-meatball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-moon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-moon-rain`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-rain`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-rainbow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-showers`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-showers-heavy`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-sleet`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-snow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-sun`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-sun-rain`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-upload`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-upload-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clouds
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clouds-moon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clouds-sun`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.club
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cocktail
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.code
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`code-branch`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`code-commit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`code-merge`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coffee
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffee-pot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffee-togo`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coffin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cogs
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coins
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.columns
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.comet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.comment
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-dots`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-edit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-lines`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-smile`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-dots`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-edit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-lines`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-smile`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.comments
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comments-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comments-alt-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comments-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compact-disc`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.compass
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compass-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.compress
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compress-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compress-arrows-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compress-wide`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`computer-classic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`computer-speaker`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`concierge-bell`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.construction
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`container-storage`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cookie
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cookie-bite`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.copy
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.copyright
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.corn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.couch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cow
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cowbell
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cowbell-more`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`credit-card`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`credit-card-blank`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`credit-card-front`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cricket
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.croissant
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crop
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`crop-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cross
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crosshairs
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crow
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crown
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crutch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crutches
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cube
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cubes
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.curling
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cut
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dagger
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.database
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deaf
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.debug
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`deer-rudolph`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.democrat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.desktop
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`desktop-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dewpoint
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dharmachakra
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diagnoses
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diamond
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dice
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d10`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d12`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d20`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d4`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d6`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d8`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-five`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-four`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-one`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-six`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-three`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-two`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.digging
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`digital-tachograph`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diploma
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.directions
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`disc-drive`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.disease
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.divide
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dizzy
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dna
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`do-not-enter`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dog-leashed`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dollar-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dolly
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-empty`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-flatbed`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-flatbed-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-flatbed-empty`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.donate
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`door-closed`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`door-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dot-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dove
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.download
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drafting-compass`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dragon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`draw-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`draw-polygon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`draw-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dreidel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drone-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drum
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drum-steelpan`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drumstick
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drumstick-bite`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dryer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dryer-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.duck
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dumbbell
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dumpster
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dumpster-fire`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dungeon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ear
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ear-muffs`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eclipse
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eclipse-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.edit
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.egg
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`egg-fried`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eject
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.elephant
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-h`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-h-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-v`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-v-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`empty-set`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`engine-warning`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.envelope
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-open-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-open-text`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.equals
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eraser
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ethernet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`euro-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.exchange
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exchange-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.exclamation
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exclamation-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exclamation-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exclamation-triangle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.expand
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-arrows`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-arrows-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-wide`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link-square-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eye
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-dropper`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-evil`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fan
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fan-table`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.farm
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fast-backward`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fast-forward`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.faucet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`faucet-drip`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fax
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.feather
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`feather-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.female
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`field-hockey`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fighter-jet`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.file
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-archive`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-audio`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-certificate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-chart-line`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-chart-pie`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-code`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-contract`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-csv`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-download`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-edit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-excel`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-export`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-image`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-import`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-invoice`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-invoice-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-medical-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-pdf`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-powerpoint`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-prescription`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-search`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-signature`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-spreadsheet`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-upload`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-user`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-video`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-word`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`files-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fill
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fill-drip`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.film
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`film-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`film-canister`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.filter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fingerprint
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fire
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fire-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fire-extinguisher`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fire-smoke`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fireplace
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`first-aid`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fish
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fish-cooked`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fist-raised`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flag
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flag-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flag-checkered`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flag-usa`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flame
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flashlight
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flask
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-poison`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-potion`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flower
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flower-daffodil`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flower-tulip`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flushed
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flute
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flux-capacitor`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folder
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-tree`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folders
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.font
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-case`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`football-ball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`football-helmet`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.forklift
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.forward
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fragile
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`french-fries`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.frog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`frosty-head`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.frown
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`frown-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.function
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`funnel-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.futbol
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.galaxy
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`game-board`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`game-board-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`game-console-handheld`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gamepad
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gamepad-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.garage
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`garage-car`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`garage-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gas-pump`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gas-pump-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gavel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gem
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.genderless
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ghost
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gift
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gift-card`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gifts
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gingerbread-man`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.glass
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-champagne`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-cheers`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-citrus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-martini`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-martini-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-whiskey`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-whiskey-rocks`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.glasses
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glasses-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.globe
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-africa`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-americas`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-asia`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-europe`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-snow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-stand`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`golf-ball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`golf-club`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gopuram
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`graduation-cap`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gramophone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`greater-than`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`greater-than-equal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grimace
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-beam`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-beam-sweat`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-hearts`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-squint`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-squint-tears`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-stars`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tears`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tongue`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tongue-squint`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tongue-wink`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-wink`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-horizontal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-lines`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-lines-vertical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-vertical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.guitar
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`guitar-electric`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.guitars
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`h-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h1
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h2
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h3
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h4
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hamburger
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hammer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hammer-war`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hamsa
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-box`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-magic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-seedling`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-usd`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-water`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-lizard`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-middle-finger`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-paper`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-peace`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-pointer`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-receiving`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-rock`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-scissors`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-spock`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hands
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-helping`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-usd`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.handshake
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hanukiah
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hard-hat`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hashtag
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-chef`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-cowboy`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-cowboy-side`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-santa`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-winter`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-witch`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-wizard`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hdd
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-brain`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-headphones`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-vr`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heading
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.headphones
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`headphones-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.headset
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heart
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-broken`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-rate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heartbeat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.helicopter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`helmet-battle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hexagon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.highlighter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hiking
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hippo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.history
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hockey-mask`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hockey-puck`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hockey-sticks`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`holly-berry`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.home
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-lg`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-lg-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hood-cloak`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`horizontal-rule`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.horse
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`horse-head`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`horse-saddle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hospital
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hospital-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hospital-symbol`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hospital-user`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hospitals
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hot-tub`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hotdog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hotel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hourglass
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hourglass-end`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hourglass-half`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hourglass-start`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.house
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-damage`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-day`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-flood`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-leave`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-night`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-return`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-signal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hryvnia
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.humidity
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hurricane
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`i-cursor`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ice-cream`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ice-skate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.icicles
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.icons
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`icons-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`id-badge`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`id-card`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`id-card-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.igloo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.image
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`image-polaroid`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.images
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.inbox
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`inbox-in`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`inbox-out`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.indent
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.industry
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`industry-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.infinity
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.info
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`info-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`info-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.inhaler
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.integral
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.intersection
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.inventory
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`island-tropical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.italic
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jack-o-lantern`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jedi
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joint
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`journal-whills`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joystick
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jug
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kaaba
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kazoo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kerning
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.key
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`key-skeleton`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keyboard
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keynote
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.khanda
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kidneys
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kiss
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kiss-beam`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kiss-wink-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kite
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kiwi-bird`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`knife-kitchen`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lambda
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lamp
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lamp-desk`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lamp-floor`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.landmark
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`landmark-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.language
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laptop
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-code`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lasso
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laugh
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laugh-beam`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laugh-squint`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laugh-wink`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-group`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.leaf
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`leaf-heart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`leaf-maple`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`leaf-oak`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lemon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`less-than`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`less-than-equal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-down-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-up-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`life-ring`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-ceiling`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-switch`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-switch-off`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-switch-on`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lightbulb
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-on`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lights-holiday`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`line-columns`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`line-height`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.link
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lips
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lira-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.list
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-ol`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-ul`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.location
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`location-arrow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`location-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`location-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lock
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-open-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.loveseat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`low-vision`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.luchador
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`luggage-cart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lungs
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mace
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magic
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magnet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mail-bulk`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mailbox
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.male
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mandolin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.map
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marked`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marked-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-edit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-question`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-smile`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-pin`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-signs`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.marker
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mars
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-double`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-stroke`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-stroke-h`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-stroke-v`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mask
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medkit
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.megaphone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meh
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`meh-blank`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`meh-rolling-eyes`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.memory
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.menorah
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mercury
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meteor
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microchip
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microphone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-stand`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microscope
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microwave
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mind-share`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.minus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-hexagon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-octagon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mistletoe
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mitten
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mobile
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mobile-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mobile-android`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mobile-android-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill-wave`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill-wave-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check-edit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check-edit-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`monitor-heart-rate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.monkey
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.monument
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.moon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`moon-cloud`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`moon-stars`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mortar-pestle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mosque
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.motorcycle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mountain
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mountains
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mouse
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mouse-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mouse-pointer`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mp3-player`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mug
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mug-hot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mug-marshmallows`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mug-tea`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.music
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`music-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`music-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`music-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.narwhal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`network-wired`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.neuter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.newspaper
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`not-equal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`notes-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`object-group`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`object-ungroup`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.octagon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`oil-can`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`oil-temp`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.om
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.omega
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ornament
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.otter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.outdent
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.outlet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.oven
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.overline
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`page-break`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pager
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paint-brush`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paint-brush-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paint-roller`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.palette
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pallet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pallet-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paper-plane`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paperclip
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parachute-box`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paragraph
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paragraph-rtl`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.parking
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parking-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parking-circle-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parking-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.passport
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pastafarianism
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paste
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pause
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pause-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paw
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paw-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paw-claws`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.peace
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pegasus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pen
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-fancy`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-nib`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pencil
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-paintbrush`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-ruler`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pennant
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-carry`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pepper-hot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.percent
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.percentage
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-booth`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-carry`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-dolly`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-dolly-empty`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.phone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-laptop`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-office`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-rotary`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-square-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-volume`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`photo-video`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pi
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.piano
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`piano-keyboard`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pie
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pig
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`piggy-bank`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pills
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pizza
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pizza-slice`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`place-of-worship`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.plane
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-arrival`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-departure`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-moon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-ringed`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.play
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`play-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.plug
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.plus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-hexagon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-octagon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.podcast
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.podium
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`podium-star`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`police-box`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.poll
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`poll-h`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`poll-people`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.poo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`poo-storm`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.poop
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.popcorn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`portal-enter`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`portal-exit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.portrait
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pound-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`power-off`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pray
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`praying-hands`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.prescription
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`prescription-bottle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`prescription-bottle-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.presentation
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.print
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`print-search`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`print-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.procedures
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`project-diagram`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.projector
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pumpkin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`puzzle-piece`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.qrcode
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.question
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`question-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`question-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quidditch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`quote-left`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`quote-right`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quran
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rabbit
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rabbit-fast`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.racquet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.radar
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.radiation
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`radiation-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.radio
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`radio-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rainbow
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.raindrops
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ram
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ramp-loading`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.random
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.raygun
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.receipt
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`record-vinyl`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rectangle-landscape`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rectangle-portrait`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rectangle-wide`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.recycle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.redo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`redo-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.refrigerator
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.registered
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`remove-format`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.repeat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`repeat-1`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`repeat-1-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`repeat-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.reply
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`reply-all`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.republican
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.restroom
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.retweet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`retweet-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ribbon
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ring
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rings-wedding`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.road
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.robot
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rocket
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rocket-launch`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.route
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`route-highway`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`route-interstate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.router
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rss
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rss-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruble-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ruler
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-combined`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-horizontal`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-triangle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-vertical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.running
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rupee-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rv
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sack
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sack-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sad-cry`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sad-tear`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.salad
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sandwich
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.satellite
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`satellite-dish`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sausage
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.save
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sax-hot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.saxophone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scalpel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scalpel-path`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scanner
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scanner-image`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scanner-keyboard`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scanner-touchscreen`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scarecrow
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scarf
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.school
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.screwdriver
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scroll
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scroll-old`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scrubber
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scythe
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sd-card`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.search
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-dollar`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-location`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.seedling
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`send-back`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`send-backward`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sensor
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-alert`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-fire`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-on`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-smoke`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.server
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shapes
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.share
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-all`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-alt-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sheep
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shekel-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shield
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-cross`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ship
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shipping-fast`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shipping-timed`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shish-kebab`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shoe-prints`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shopping-bag`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shopping-basket`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shopping-cart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shovel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shovel-snow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shower
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shredder
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shuttle-van`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shuttlecock
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sickle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sigma
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sign
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-in`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-in-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-language`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-out`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-out-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.signal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-1`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-2`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-3`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-4`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-1`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-2`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-3`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-stream`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.signature
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sim-card`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.siren
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`siren-on`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sitemap
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skating
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skeleton
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ski-jump`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ski-lift`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skiing
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skiing-nordic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skull
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skull-cow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skull-crossbones`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.slash
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sledding
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sleigh
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-h`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-h-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-v`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-v-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smile
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smile-beam`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smile-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smile-wink`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smog
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smoke
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smoking
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smoking-ban`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sms
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snake
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snooze
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`snow-blowing`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowboarding
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowflake
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowflakes
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowman
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowmobile
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowplow
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.socks
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`solar-panel`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`solar-system`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sort
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-down-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-up-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-down-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-up-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-circle-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-circle-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-down-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-up-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-down-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-up-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-down-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-up-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.soup
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spa
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`space-shuttle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`space-station-moon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`space-station-moon-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spade
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sparkles
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.speaker
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.speakers
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spell-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spider
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spider-black-widow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spider-web`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spinner
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spinner-third`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.splotch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spray-can`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sprinkler
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.square
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-full`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-root`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-root-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.squirrel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.staff
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stamp
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.star
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-and-crescent`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-christmas`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-exclamation`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-half`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-half-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-of-david`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-of-life`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-shooting`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.starfighter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`starfighter-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stars
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.starship
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`starship-freighter`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.steak
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`steering-wheel`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`step-backward`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`step-forward`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stethoscope
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sticky-note`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stocking
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stomach
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stop
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stop-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stopwatch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.store
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stream
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`street-view`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stretcher
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.strikethrough
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stroopwafel
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.subscript
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.subway
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.suitcase
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`suitcase-rolling`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sun
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-cloud`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-dust`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-haze`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sunglasses
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sunrise
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sunset
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.superscript
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.surprise
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swatchbook
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swimmer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`swimming-pool`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sword
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sword-laser`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sword-laser-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swords
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`swords-laser`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.synagogue
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sync
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sync-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.syringe
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.table
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`table-tennis`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tablet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-android`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-android-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-rugged`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tablets
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tachometer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-average`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-fast`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-fastest`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-slow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-slowest`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-average`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-fast`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-fastest`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-slow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-slowest`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.taco
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tag
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tags
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tally
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tanakh
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tape
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tasks
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tasks-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.taxi
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.teeth
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`teeth-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.telescope
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-frigid`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-high`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-hot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-low`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tenge
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tennis-ball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.terminal
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.text
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`text-height`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`text-size`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`text-width`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.th
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`th-large`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`th-list`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`theater-masks`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.thermometer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-empty`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-full`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-half`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-quarter`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-three-quarters`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.theta
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thumbs-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thumbs-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.thumbtack
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.thunderstorm
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thunderstorm-moon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thunderstorm-sun`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ticket
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ticket-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tilde
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.times
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-hexagon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-octagon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tint
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tint-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tire
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tire-flat`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tire-pressure-warning`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tire-rugged`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tired
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toggle-off`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toggle-on`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toilet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tombstone
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tombstone-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toolbox
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tools
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tooth
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toothbrush
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.torah
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`torii-gate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tornado
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tractor
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trademark
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-cone`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light-go`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light-slow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light-stop`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trailer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.train
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tram
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.transgender
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transgender-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.transporter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-1`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-2`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-3`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-empty`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trash
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-restore`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-restore-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-undo`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-undo-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`treasure-chest`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tree
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-christmas`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-decorated`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-large`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-palm`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trees
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.triangle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`triangle-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trophy
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trophy-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.truck
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-container`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-couch`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-loading`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-monster`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-moving`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-pickup`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-plow`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-ramp`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trumpet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tshirt
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tty
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.turkey
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.turntable
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.turtle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tv
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tv-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tv-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tv-retro`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.typewriter
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ufo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ufo-beam`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.umbrella
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`umbrella-beach`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.underline
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.undo
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`undo-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unicorn
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.union
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`universal-access`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.university
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unlink
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unlock
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`unlock-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.upload
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`usb-drive`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`usd-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`usd-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.user
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-alien`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-alt-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-astronaut`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-chart`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-check`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-circle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-clock`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-cog`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-cowboy`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-crown`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-edit`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-friends`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-graduate`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-hard-hat`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-headset`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-injured`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-lock`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-md`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-md-chat`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-minus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-music`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-ninja`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-nurse`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-robot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-secret`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-shield`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-tag`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-tie`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-visor`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.users
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-class`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-cog`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-crown`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-medical`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-fork`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-knife`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-spoon`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.utensils
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensils-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vacuum
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vacuum-robot`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`value-absolute`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vector-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.venus
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`venus-double`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`venus-mars`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vhs
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vial
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vials
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.video
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`video-plus`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`video-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vihara
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.violin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.voicemail
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.volcano
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volleyball-ball`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.volume
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-down`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-mute`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-off`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-up`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vote-nay`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vote-yea`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vr-cardboard`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wagon-covered`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.walker
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`walkie-talkie`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.walking
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wallet
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wand
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wand-magic`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.warehouse
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`warehouse-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.washer
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.watch
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`watch-calculator`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`watch-fitness`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.water
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`water-lower`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`water-rise`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-sine`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-square`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-triangle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.waveform
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`waveform-path`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.webcam
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`webcam-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weight
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`weight-hanging`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whale
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wheat
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wheelchair
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whistle
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wifi
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wifi-1`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wifi-2`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wifi-slash`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wind
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wind-turbine`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wind-warning`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.window
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-close`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-frame`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-frame-open`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-maximize`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-minimize`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-restore`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.windsock
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wine-bottle`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wine-glass`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wine-glass-alt`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`won-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wreath
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wrench
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`x-ray`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`yen-sign`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`yin-yang`
+*/
+trait IconName extends js.Object
+
+object IconName {
+  @scala.inline
+  def `500px`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`500px` = this.cast("500px")
+  @scala.inline
+  def abacus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.abacus = this.cast("abacus")
+  @scala.inline
+  def `accessible-icon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`accessible-icon` = this.cast("accessible-icon")
+  @scala.inline
+  def accusoft: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.accusoft = this.cast("accusoft")
+  @scala.inline
+  def acorn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.acorn = this.cast("acorn")
+  @scala.inline
+  def `acquisitions-incorporated`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`acquisitions-incorporated` = this.cast("acquisitions-incorporated")
+  @scala.inline
+  def ad: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ad = this.cast("ad")
+  @scala.inline
+  def `address-book`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`address-book` = this.cast("address-book")
+  @scala.inline
+  def `address-card`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`address-card` = this.cast("address-card")
+  @scala.inline
+  def adjust: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adjust = this.cast("adjust")
+  @scala.inline
+  def adn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adn = this.cast("adn")
+  @scala.inline
+  def adobe: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adobe = this.cast("adobe")
+  @scala.inline
+  def adversal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.adversal = this.cast("adversal")
+  @scala.inline
+  def affiliatetheme: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.affiliatetheme = this.cast("affiliatetheme")
+  @scala.inline
+  def `air-conditioner`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`air-conditioner` = this.cast("air-conditioner")
+  @scala.inline
+  def `air-freshener`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`air-freshener` = this.cast("air-freshener")
+  @scala.inline
+  def airbnb: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.airbnb = this.cast("airbnb")
+  @scala.inline
+  def `alarm-clock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-clock` = this.cast("alarm-clock")
+  @scala.inline
+  def `alarm-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-exclamation` = this.cast("alarm-exclamation")
+  @scala.inline
+  def `alarm-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-plus` = this.cast("alarm-plus")
+  @scala.inline
+  def `alarm-snooze`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alarm-snooze` = this.cast("alarm-snooze")
+  @scala.inline
+  def album: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.album = this.cast("album")
+  @scala.inline
+  def `album-collection`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`album-collection` = this.cast("album-collection")
+  @scala.inline
+  def algolia: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.algolia = this.cast("algolia")
+  @scala.inline
+  def alicorn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.alicorn = this.cast("alicorn")
+  @scala.inline
+  def alien: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.alien = this.cast("alien")
+  @scala.inline
+  def `alien-monster`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`alien-monster` = this.cast("alien-monster")
+  @scala.inline
+  def `align-center`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-center` = this.cast("align-center")
+  @scala.inline
+  def `align-justify`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-justify` = this.cast("align-justify")
+  @scala.inline
+  def `align-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-left` = this.cast("align-left")
+  @scala.inline
+  def `align-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-right` = this.cast("align-right")
+  @scala.inline
+  def `align-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`align-slash` = this.cast("align-slash")
+  @scala.inline
+  def alipay: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.alipay = this.cast("alipay")
+  @scala.inline
+  def allergies: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.allergies = this.cast("allergies")
+  @scala.inline
+  def amazon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.amazon = this.cast("amazon")
+  @scala.inline
+  def `amazon-pay`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`amazon-pay` = this.cast("amazon-pay")
+  @scala.inline
+  def ambulance: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ambulance = this.cast("ambulance")
+  @scala.inline
+  def `american-sign-language-interpreting`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`american-sign-language-interpreting` = this.cast("american-sign-language-interpreting")
+  @scala.inline
+  def amilia: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.amilia = this.cast("amilia")
+  @scala.inline
+  def `amp-guitar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`amp-guitar` = this.cast("amp-guitar")
+  @scala.inline
+  def analytics: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.analytics = this.cast("analytics")
+  @scala.inline
+  def anchor: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.anchor = this.cast("anchor")
+  @scala.inline
+  def android: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.android = this.cast("android")
+  @scala.inline
+  def angel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angel = this.cast("angel")
+  @scala.inline
+  def angellist: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angellist = this.cast("angellist")
+  @scala.inline
+  def `angle-double-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-down` = this.cast("angle-double-down")
+  @scala.inline
+  def `angle-double-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-left` = this.cast("angle-double-left")
+  @scala.inline
+  def `angle-double-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-right` = this.cast("angle-double-right")
+  @scala.inline
+  def `angle-double-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-up` = this.cast("angle-double-up")
+  @scala.inline
+  def `angle-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-down` = this.cast("angle-down")
+  @scala.inline
+  def `angle-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-left` = this.cast("angle-left")
+  @scala.inline
+  def `angle-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-right` = this.cast("angle-right")
+  @scala.inline
+  def `angle-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-up` = this.cast("angle-up")
+  @scala.inline
+  def angry: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angry = this.cast("angry")
+  @scala.inline
+  def angrycreative: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angrycreative = this.cast("angrycreative")
+  @scala.inline
+  def angular: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.angular = this.cast("angular")
+  @scala.inline
+  def ankh: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ankh = this.cast("ankh")
+  @scala.inline
+  def `app-store`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`app-store` = this.cast("app-store")
+  @scala.inline
+  def `app-store-ios`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`app-store-ios` = this.cast("app-store-ios")
+  @scala.inline
+  def apper: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.apper = this.cast("apper")
+  @scala.inline
+  def apple: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.apple = this.cast("apple")
+  @scala.inline
+  def `apple-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-alt` = this.cast("apple-alt")
+  @scala.inline
+  def `apple-crate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-crate` = this.cast("apple-crate")
+  @scala.inline
+  def `apple-pay`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-pay` = this.cast("apple-pay")
+  @scala.inline
+  def archive: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.archive = this.cast("archive")
+  @scala.inline
+  def archway: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.archway = this.cast("archway")
+  @scala.inline
+  def `arrow-alt-circle-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-down` = this.cast("arrow-alt-circle-down")
+  @scala.inline
+  def `arrow-alt-circle-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-left` = this.cast("arrow-alt-circle-left")
+  @scala.inline
+  def `arrow-alt-circle-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-right` = this.cast("arrow-alt-circle-right")
+  @scala.inline
+  def `arrow-alt-circle-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-up` = this.cast("arrow-alt-circle-up")
+  @scala.inline
+  def `arrow-alt-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-down` = this.cast("arrow-alt-down")
+  @scala.inline
+  def `arrow-alt-from-bottom`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-bottom` = this.cast("arrow-alt-from-bottom")
+  @scala.inline
+  def `arrow-alt-from-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-left` = this.cast("arrow-alt-from-left")
+  @scala.inline
+  def `arrow-alt-from-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-right` = this.cast("arrow-alt-from-right")
+  @scala.inline
+  def `arrow-alt-from-top`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-top` = this.cast("arrow-alt-from-top")
+  @scala.inline
+  def `arrow-alt-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-left` = this.cast("arrow-alt-left")
+  @scala.inline
+  def `arrow-alt-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-right` = this.cast("arrow-alt-right")
+  @scala.inline
+  def `arrow-alt-square-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-down` = this.cast("arrow-alt-square-down")
+  @scala.inline
+  def `arrow-alt-square-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-left` = this.cast("arrow-alt-square-left")
+  @scala.inline
+  def `arrow-alt-square-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-right` = this.cast("arrow-alt-square-right")
+  @scala.inline
+  def `arrow-alt-square-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-square-up` = this.cast("arrow-alt-square-up")
+  @scala.inline
+  def `arrow-alt-to-bottom`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-bottom` = this.cast("arrow-alt-to-bottom")
+  @scala.inline
+  def `arrow-alt-to-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-left` = this.cast("arrow-alt-to-left")
+  @scala.inline
+  def `arrow-alt-to-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-right` = this.cast("arrow-alt-to-right")
+  @scala.inline
+  def `arrow-alt-to-top`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-to-top` = this.cast("arrow-alt-to-top")
+  @scala.inline
+  def `arrow-alt-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-up` = this.cast("arrow-alt-up")
+  @scala.inline
+  def `arrow-circle-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-down` = this.cast("arrow-circle-down")
+  @scala.inline
+  def `arrow-circle-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-left` = this.cast("arrow-circle-left")
+  @scala.inline
+  def `arrow-circle-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-right` = this.cast("arrow-circle-right")
+  @scala.inline
+  def `arrow-circle-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-circle-up` = this.cast("arrow-circle-up")
+  @scala.inline
+  def `arrow-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-down` = this.cast("arrow-down")
+  @scala.inline
+  def `arrow-from-bottom`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-bottom` = this.cast("arrow-from-bottom")
+  @scala.inline
+  def `arrow-from-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-left` = this.cast("arrow-from-left")
+  @scala.inline
+  def `arrow-from-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-right` = this.cast("arrow-from-right")
+  @scala.inline
+  def `arrow-from-top`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-from-top` = this.cast("arrow-from-top")
+  @scala.inline
+  def `arrow-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-left` = this.cast("arrow-left")
+  @scala.inline
+  def `arrow-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-right` = this.cast("arrow-right")
+  @scala.inline
+  def `arrow-square-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-down` = this.cast("arrow-square-down")
+  @scala.inline
+  def `arrow-square-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-left` = this.cast("arrow-square-left")
+  @scala.inline
+  def `arrow-square-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-right` = this.cast("arrow-square-right")
+  @scala.inline
+  def `arrow-square-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-square-up` = this.cast("arrow-square-up")
+  @scala.inline
+  def `arrow-to-bottom`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-bottom` = this.cast("arrow-to-bottom")
+  @scala.inline
+  def `arrow-to-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-left` = this.cast("arrow-to-left")
+  @scala.inline
+  def `arrow-to-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-right` = this.cast("arrow-to-right")
+  @scala.inline
+  def `arrow-to-top`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-to-top` = this.cast("arrow-to-top")
+  @scala.inline
+  def `arrow-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-up` = this.cast("arrow-up")
+  @scala.inline
+  def arrows: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.arrows = this.cast("arrows")
+  @scala.inline
+  def `arrows-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-alt` = this.cast("arrows-alt")
+  @scala.inline
+  def `arrows-alt-h`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-alt-h` = this.cast("arrows-alt-h")
+  @scala.inline
+  def `arrows-alt-v`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-alt-v` = this.cast("arrows-alt-v")
+  @scala.inline
+  def `arrows-h`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-h` = this.cast("arrows-h")
+  @scala.inline
+  def `arrows-v`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-v` = this.cast("arrows-v")
+  @scala.inline
+  def artstation: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.artstation = this.cast("artstation")
+  @scala.inline
+  def `assistive-listening-systems`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`assistive-listening-systems` = this.cast("assistive-listening-systems")
+  @scala.inline
+  def asterisk: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.asterisk = this.cast("asterisk")
+  @scala.inline
+  def asymmetrik: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.asymmetrik = this.cast("asymmetrik")
+  @scala.inline
+  def at: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.at = this.cast("at")
+  @scala.inline
+  def atlas: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.atlas = this.cast("atlas")
+  @scala.inline
+  def atlassian: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.atlassian = this.cast("atlassian")
+  @scala.inline
+  def atom: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.atom = this.cast("atom")
+  @scala.inline
+  def `atom-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`atom-alt` = this.cast("atom-alt")
+  @scala.inline
+  def audible: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.audible = this.cast("audible")
+  @scala.inline
+  def `audio-description`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`audio-description` = this.cast("audio-description")
+  @scala.inline
+  def autoprefixer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.autoprefixer = this.cast("autoprefixer")
+  @scala.inline
+  def avianex: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.avianex = this.cast("avianex")
+  @scala.inline
+  def aviato: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.aviato = this.cast("aviato")
+  @scala.inline
+  def award: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.award = this.cast("award")
+  @scala.inline
+  def aws: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.aws = this.cast("aws")
+  @scala.inline
+  def axe: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.axe = this.cast("axe")
+  @scala.inline
+  def `axe-battle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`axe-battle` = this.cast("axe-battle")
+  @scala.inline
+  def baby: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.baby = this.cast("baby")
+  @scala.inline
+  def `baby-carriage`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`baby-carriage` = this.cast("baby-carriage")
+  @scala.inline
+  def backpack: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backpack = this.cast("backpack")
+  @scala.inline
+  def backspace: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backspace = this.cast("backspace")
+  @scala.inline
+  def backward: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backward = this.cast("backward")
+  @scala.inline
+  def bacon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bacon = this.cast("bacon")
+  @scala.inline
+  def badge: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.badge = this.cast("badge")
+  @scala.inline
+  def `badge-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-check` = this.cast("badge-check")
+  @scala.inline
+  def `badge-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-dollar` = this.cast("badge-dollar")
+  @scala.inline
+  def `badge-percent`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-percent` = this.cast("badge-percent")
+  @scala.inline
+  def `badge-sheriff`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-sheriff` = this.cast("badge-sheriff")
+  @scala.inline
+  def `badger-honey`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badger-honey` = this.cast("badger-honey")
+  @scala.inline
+  def `bags-shopping`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bags-shopping` = this.cast("bags-shopping")
+  @scala.inline
+  def bahai: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bahai = this.cast("bahai")
+  @scala.inline
+  def `balance-scale`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`balance-scale` = this.cast("balance-scale")
+  @scala.inline
+  def `balance-scale-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`balance-scale-left` = this.cast("balance-scale-left")
+  @scala.inline
+  def `balance-scale-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`balance-scale-right` = this.cast("balance-scale-right")
+  @scala.inline
+  def `ball-pile`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ball-pile` = this.cast("ball-pile")
+  @scala.inline
+  def ballot: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ballot = this.cast("ballot")
+  @scala.inline
+  def `ballot-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ballot-check` = this.cast("ballot-check")
+  @scala.inline
+  def ban: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ban = this.cast("ban")
+  @scala.inline
+  def `band-aid`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`band-aid` = this.cast("band-aid")
+  @scala.inline
+  def bandcamp: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bandcamp = this.cast("bandcamp")
+  @scala.inline
+  def banjo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.banjo = this.cast("banjo")
+  @scala.inline
+  def barcode: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.barcode = this.cast("barcode")
+  @scala.inline
+  def `barcode-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`barcode-alt` = this.cast("barcode-alt")
+  @scala.inline
+  def `barcode-read`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`barcode-read` = this.cast("barcode-read")
+  @scala.inline
+  def `barcode-scan`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`barcode-scan` = this.cast("barcode-scan")
+  @scala.inline
+  def bars: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bars = this.cast("bars")
+  @scala.inline
+  def baseball: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.baseball = this.cast("baseball")
+  @scala.inline
+  def `baseball-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`baseball-ball` = this.cast("baseball-ball")
+  @scala.inline
+  def `basketball-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`basketball-ball` = this.cast("basketball-ball")
+  @scala.inline
+  def `basketball-hoop`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`basketball-hoop` = this.cast("basketball-hoop")
+  @scala.inline
+  def bat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bat = this.cast("bat")
+  @scala.inline
+  def bath: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bath = this.cast("bath")
+  @scala.inline
+  def `battery-bolt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-bolt` = this.cast("battery-bolt")
+  @scala.inline
+  def `battery-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-empty` = this.cast("battery-empty")
+  @scala.inline
+  def `battery-full`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-full` = this.cast("battery-full")
+  @scala.inline
+  def `battery-half`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-half` = this.cast("battery-half")
+  @scala.inline
+  def `battery-quarter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-quarter` = this.cast("battery-quarter")
+  @scala.inline
+  def `battery-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-slash` = this.cast("battery-slash")
+  @scala.inline
+  def `battery-three-quarters`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battery-three-quarters` = this.cast("battery-three-quarters")
+  @scala.inline
+  def `battle-net`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`battle-net` = this.cast("battle-net")
+  @scala.inline
+  def bed: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bed = this.cast("bed")
+  @scala.inline
+  def `bed-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bed-alt` = this.cast("bed-alt")
+  @scala.inline
+  def `bed-bunk`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bed-bunk` = this.cast("bed-bunk")
+  @scala.inline
+  def `bed-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bed-empty` = this.cast("bed-empty")
+  @scala.inline
+  def beer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.beer = this.cast("beer")
+  @scala.inline
+  def behance: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.behance = this.cast("behance")
+  @scala.inline
+  def `behance-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`behance-square` = this.cast("behance-square")
+  @scala.inline
+  def bell: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bell = this.cast("bell")
+  @scala.inline
+  def `bell-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-exclamation` = this.cast("bell-exclamation")
+  @scala.inline
+  def `bell-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-on` = this.cast("bell-on")
+  @scala.inline
+  def `bell-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-plus` = this.cast("bell-plus")
+  @scala.inline
+  def `bell-school`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-school` = this.cast("bell-school")
+  @scala.inline
+  def `bell-school-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-school-slash` = this.cast("bell-school-slash")
+  @scala.inline
+  def `bell-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bell-slash` = this.cast("bell-slash")
+  @scala.inline
+  def bells: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bells = this.cast("bells")
+  @scala.inline
+  def betamax: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.betamax = this.cast("betamax")
+  @scala.inline
+  def `bezier-curve`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bezier-curve` = this.cast("bezier-curve")
+  @scala.inline
+  def bible: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bible = this.cast("bible")
+  @scala.inline
+  def bicycle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bicycle = this.cast("bicycle")
+  @scala.inline
+  def biking: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.biking = this.cast("biking")
+  @scala.inline
+  def `biking-mountain`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`biking-mountain` = this.cast("biking-mountain")
+  @scala.inline
+  def bimobject: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bimobject = this.cast("bimobject")
+  @scala.inline
+  def binoculars: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.binoculars = this.cast("binoculars")
+  @scala.inline
+  def biohazard: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.biohazard = this.cast("biohazard")
+  @scala.inline
+  def `birthday-cake`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`birthday-cake` = this.cast("birthday-cake")
+  @scala.inline
+  def bitbucket: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bitbucket = this.cast("bitbucket")
+  @scala.inline
+  def bitcoin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bitcoin = this.cast("bitcoin")
+  @scala.inline
+  def bity: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bity = this.cast("bity")
+  @scala.inline
+  def `black-tie`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`black-tie` = this.cast("black-tie")
+  @scala.inline
+  def blackberry: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blackberry = this.cast("blackberry")
+  @scala.inline
+  def blanket: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blanket = this.cast("blanket")
+  @scala.inline
+  def blender: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blender = this.cast("blender")
+  @scala.inline
+  def `blender-phone`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blender-phone` = this.cast("blender-phone")
+  @scala.inline
+  def blind: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blind = this.cast("blind")
+  @scala.inline
+  def blinds: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blinds = this.cast("blinds")
+  @scala.inline
+  def `blinds-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blinds-open` = this.cast("blinds-open")
+  @scala.inline
+  def `blinds-raised`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blinds-raised` = this.cast("blinds-raised")
+  @scala.inline
+  def blog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blog = this.cast("blog")
+  @scala.inline
+  def blogger: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.blogger = this.cast("blogger")
+  @scala.inline
+  def `blogger-b`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blogger-b` = this.cast("blogger-b")
+  @scala.inline
+  def bluetooth: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bluetooth = this.cast("bluetooth")
+  @scala.inline
+  def `bluetooth-b`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bluetooth-b` = this.cast("bluetooth-b")
+  @scala.inline
+  def bold: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bold = this.cast("bold")
+  @scala.inline
+  def bolt: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bolt = this.cast("bolt")
+  @scala.inline
+  def bomb: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bomb = this.cast("bomb")
+  @scala.inline
+  def bone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bone = this.cast("bone")
+  @scala.inline
+  def `bone-break`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bone-break` = this.cast("bone-break")
+  @scala.inline
+  def bong: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bong = this.cast("bong")
+  @scala.inline
+  def book: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.book = this.cast("book")
+  @scala.inline
+  def `book-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-alt` = this.cast("book-alt")
+  @scala.inline
+  def `book-dead`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-dead` = this.cast("book-dead")
+  @scala.inline
+  def `book-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-heart` = this.cast("book-heart")
+  @scala.inline
+  def `book-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-medical` = this.cast("book-medical")
+  @scala.inline
+  def `book-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-open` = this.cast("book-open")
+  @scala.inline
+  def `book-reader`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-reader` = this.cast("book-reader")
+  @scala.inline
+  def `book-spells`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-spells` = this.cast("book-spells")
+  @scala.inline
+  def `book-user`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-user` = this.cast("book-user")
+  @scala.inline
+  def bookmark: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bookmark = this.cast("bookmark")
+  @scala.inline
+  def books: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.books = this.cast("books")
+  @scala.inline
+  def `books-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`books-medical` = this.cast("books-medical")
+  @scala.inline
+  def boombox: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.boombox = this.cast("boombox")
+  @scala.inline
+  def boot: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.boot = this.cast("boot")
+  @scala.inline
+  def `booth-curtain`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`booth-curtain` = this.cast("booth-curtain")
+  @scala.inline
+  def bootstrap: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bootstrap = this.cast("bootstrap")
+  @scala.inline
+  def `border-all`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-all` = this.cast("border-all")
+  @scala.inline
+  def `border-bottom`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-bottom` = this.cast("border-bottom")
+  @scala.inline
+  def `border-center-h`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-center-h` = this.cast("border-center-h")
+  @scala.inline
+  def `border-center-v`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-center-v` = this.cast("border-center-v")
+  @scala.inline
+  def `border-inner`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-inner` = this.cast("border-inner")
+  @scala.inline
+  def `border-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-left` = this.cast("border-left")
+  @scala.inline
+  def `border-none`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-none` = this.cast("border-none")
+  @scala.inline
+  def `border-outer`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-outer` = this.cast("border-outer")
+  @scala.inline
+  def `border-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-right` = this.cast("border-right")
+  @scala.inline
+  def `border-style`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-style` = this.cast("border-style")
+  @scala.inline
+  def `border-style-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-style-alt` = this.cast("border-style-alt")
+  @scala.inline
+  def `border-top`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`border-top` = this.cast("border-top")
+  @scala.inline
+  def `bow-arrow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bow-arrow` = this.cast("bow-arrow")
+  @scala.inline
+  def `bowling-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bowling-ball` = this.cast("bowling-ball")
+  @scala.inline
+  def `bowling-pins`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bowling-pins` = this.cast("bowling-pins")
+  @scala.inline
+  def box: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.box = this.cast("box")
+  @scala.inline
+  def `box-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-alt` = this.cast("box-alt")
+  @scala.inline
+  def `box-ballot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-ballot` = this.cast("box-ballot")
+  @scala.inline
+  def `box-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-check` = this.cast("box-check")
+  @scala.inline
+  def `box-fragile`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-fragile` = this.cast("box-fragile")
+  @scala.inline
+  def `box-full`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-full` = this.cast("box-full")
+  @scala.inline
+  def `box-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-heart` = this.cast("box-heart")
+  @scala.inline
+  def `box-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-open` = this.cast("box-open")
+  @scala.inline
+  def `box-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-up` = this.cast("box-up")
+  @scala.inline
+  def `box-usd`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-usd` = this.cast("box-usd")
+  @scala.inline
+  def boxes: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.boxes = this.cast("boxes")
+  @scala.inline
+  def `boxes-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`boxes-alt` = this.cast("boxes-alt")
+  @scala.inline
+  def `boxing-glove`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`boxing-glove` = this.cast("boxing-glove")
+  @scala.inline
+  def brackets: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.brackets = this.cast("brackets")
+  @scala.inline
+  def `brackets-curly`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`brackets-curly` = this.cast("brackets-curly")
+  @scala.inline
+  def braille: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.braille = this.cast("braille")
+  @scala.inline
+  def brain: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.brain = this.cast("brain")
+  @scala.inline
+  def `bread-loaf`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bread-loaf` = this.cast("bread-loaf")
+  @scala.inline
+  def `bread-slice`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bread-slice` = this.cast("bread-slice")
+  @scala.inline
+  def briefcase: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.briefcase = this.cast("briefcase")
+  @scala.inline
+  def `briefcase-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`briefcase-medical` = this.cast("briefcase-medical")
+  @scala.inline
+  def `bring-forward`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bring-forward` = this.cast("bring-forward")
+  @scala.inline
+  def `bring-front`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bring-front` = this.cast("bring-front")
+  @scala.inline
+  def `broadcast-tower`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`broadcast-tower` = this.cast("broadcast-tower")
+  @scala.inline
+  def broom: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.broom = this.cast("broom")
+  @scala.inline
+  def browser: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.browser = this.cast("browser")
+  @scala.inline
+  def brush: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.brush = this.cast("brush")
+  @scala.inline
+  def btc: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.btc = this.cast("btc")
+  @scala.inline
+  def buffer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.buffer = this.cast("buffer")
+  @scala.inline
+  def bug: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bug = this.cast("bug")
+  @scala.inline
+  def building: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.building = this.cast("building")
+  @scala.inline
+  def bullhorn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bullhorn = this.cast("bullhorn")
+  @scala.inline
+  def bullseye: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bullseye = this.cast("bullseye")
+  @scala.inline
+  def `bullseye-arrow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bullseye-arrow` = this.cast("bullseye-arrow")
+  @scala.inline
+  def `bullseye-pointer`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bullseye-pointer` = this.cast("bullseye-pointer")
+  @scala.inline
+  def `burger-soda`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`burger-soda` = this.cast("burger-soda")
+  @scala.inline
+  def burn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.burn = this.cast("burn")
+  @scala.inline
+  def buromobelexperte: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.buromobelexperte = this.cast("buromobelexperte")
+  @scala.inline
+  def burrito: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.burrito = this.cast("burrito")
+  @scala.inline
+  def bus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bus = this.cast("bus")
+  @scala.inline
+  def `bus-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bus-alt` = this.cast("bus-alt")
+  @scala.inline
+  def `bus-school`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bus-school` = this.cast("bus-school")
+  @scala.inline
+  def `business-time`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`business-time` = this.cast("business-time")
+  @scala.inline
+  def `buy-n-large`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`buy-n-large` = this.cast("buy-n-large")
+  @scala.inline
+  def buysellads: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.buysellads = this.cast("buysellads")
+  @scala.inline
+  def `cabinet-filing`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cabinet-filing` = this.cast("cabinet-filing")
+  @scala.inline
+  def cactus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cactus = this.cast("cactus")
+  @scala.inline
+  def calculator: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.calculator = this.cast("calculator")
+  @scala.inline
+  def `calculator-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calculator-alt` = this.cast("calculator-alt")
+  @scala.inline
+  def calendar: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.calendar = this.cast("calendar")
+  @scala.inline
+  def `calendar-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-alt` = this.cast("calendar-alt")
+  @scala.inline
+  def `calendar-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-check` = this.cast("calendar-check")
+  @scala.inline
+  def `calendar-day`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-day` = this.cast("calendar-day")
+  @scala.inline
+  def `calendar-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-edit` = this.cast("calendar-edit")
+  @scala.inline
+  def `calendar-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-exclamation` = this.cast("calendar-exclamation")
+  @scala.inline
+  def `calendar-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-minus` = this.cast("calendar-minus")
+  @scala.inline
+  def `calendar-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-plus` = this.cast("calendar-plus")
+  @scala.inline
+  def `calendar-star`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-star` = this.cast("calendar-star")
+  @scala.inline
+  def `calendar-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-times` = this.cast("calendar-times")
+  @scala.inline
+  def `calendar-week`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-week` = this.cast("calendar-week")
+  @scala.inline
+  def camcorder: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.camcorder = this.cast("camcorder")
+  @scala.inline
+  def camera: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.camera = this.cast("camera")
+  @scala.inline
+  def `camera-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-alt` = this.cast("camera-alt")
+  @scala.inline
+  def `camera-home`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-home` = this.cast("camera-home")
+  @scala.inline
+  def `camera-movie`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-movie` = this.cast("camera-movie")
+  @scala.inline
+  def `camera-polaroid`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-polaroid` = this.cast("camera-polaroid")
+  @scala.inline
+  def `camera-retro`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`camera-retro` = this.cast("camera-retro")
+  @scala.inline
+  def campfire: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.campfire = this.cast("campfire")
+  @scala.inline
+  def campground: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.campground = this.cast("campground")
+  @scala.inline
+  def `canadian-maple-leaf`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`canadian-maple-leaf` = this.cast("canadian-maple-leaf")
+  @scala.inline
+  def `candle-holder`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`candle-holder` = this.cast("candle-holder")
+  @scala.inline
+  def `candy-cane`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`candy-cane` = this.cast("candy-cane")
+  @scala.inline
+  def `candy-corn`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`candy-corn` = this.cast("candy-corn")
+  @scala.inline
+  def cannabis: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cannabis = this.cast("cannabis")
+  @scala.inline
+  def capsules: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.capsules = this.cast("capsules")
+  @scala.inline
+  def car: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.car = this.cast("car")
+  @scala.inline
+  def `car-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-alt` = this.cast("car-alt")
+  @scala.inline
+  def `car-battery`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-battery` = this.cast("car-battery")
+  @scala.inline
+  def `car-building`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-building` = this.cast("car-building")
+  @scala.inline
+  def `car-bump`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-bump` = this.cast("car-bump")
+  @scala.inline
+  def `car-bus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-bus` = this.cast("car-bus")
+  @scala.inline
+  def `car-crash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-crash` = this.cast("car-crash")
+  @scala.inline
+  def `car-garage`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-garage` = this.cast("car-garage")
+  @scala.inline
+  def `car-mechanic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-mechanic` = this.cast("car-mechanic")
+  @scala.inline
+  def `car-side`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-side` = this.cast("car-side")
+  @scala.inline
+  def `car-tilt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-tilt` = this.cast("car-tilt")
+  @scala.inline
+  def `car-wash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`car-wash` = this.cast("car-wash")
+  @scala.inline
+  def caravan: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.caravan = this.cast("caravan")
+  @scala.inline
+  def `caravan-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caravan-alt` = this.cast("caravan-alt")
+  @scala.inline
+  def `caret-circle-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-down` = this.cast("caret-circle-down")
+  @scala.inline
+  def `caret-circle-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-left` = this.cast("caret-circle-left")
+  @scala.inline
+  def `caret-circle-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-right` = this.cast("caret-circle-right")
+  @scala.inline
+  def `caret-circle-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-circle-up` = this.cast("caret-circle-up")
+  @scala.inline
+  def `caret-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-down` = this.cast("caret-down")
+  @scala.inline
+  def `caret-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-left` = this.cast("caret-left")
+  @scala.inline
+  def `caret-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-right` = this.cast("caret-right")
+  @scala.inline
+  def `caret-square-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-down` = this.cast("caret-square-down")
+  @scala.inline
+  def `caret-square-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-left` = this.cast("caret-square-left")
+  @scala.inline
+  def `caret-square-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-right` = this.cast("caret-square-right")
+  @scala.inline
+  def `caret-square-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-square-up` = this.cast("caret-square-up")
+  @scala.inline
+  def `caret-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caret-up` = this.cast("caret-up")
+  @scala.inline
+  def carrot: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.carrot = this.cast("carrot")
+  @scala.inline
+  def cars: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cars = this.cast("cars")
+  @scala.inline
+  def `cart-arrow-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cart-arrow-down` = this.cast("cart-arrow-down")
+  @scala.inline
+  def `cart-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cart-plus` = this.cast("cart-plus")
+  @scala.inline
+  def `cash-register`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cash-register` = this.cast("cash-register")
+  @scala.inline
+  def `cassette-tape`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cassette-tape` = this.cast("cassette-tape")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def cat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cat = this.cast("cat")
+  @scala.inline
+  def `cat-space`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cat-space` = this.cast("cat-space")
+  @scala.inline
+  def cauldron: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cauldron = this.cast("cauldron")
+  @scala.inline
+  def `cc-amazon-pay`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-amazon-pay` = this.cast("cc-amazon-pay")
+  @scala.inline
+  def `cc-amex`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-amex` = this.cast("cc-amex")
+  @scala.inline
+  def `cc-apple-pay`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-apple-pay` = this.cast("cc-apple-pay")
+  @scala.inline
+  def `cc-diners-club`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-diners-club` = this.cast("cc-diners-club")
+  @scala.inline
+  def `cc-discover`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-discover` = this.cast("cc-discover")
+  @scala.inline
+  def `cc-jcb`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-jcb` = this.cast("cc-jcb")
+  @scala.inline
+  def `cc-mastercard`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-mastercard` = this.cast("cc-mastercard")
+  @scala.inline
+  def `cc-paypal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-paypal` = this.cast("cc-paypal")
+  @scala.inline
+  def `cc-stripe`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-stripe` = this.cast("cc-stripe")
+  @scala.inline
+  def `cc-visa`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cc-visa` = this.cast("cc-visa")
+  @scala.inline
+  def cctv: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cctv = this.cast("cctv")
+  @scala.inline
+  def centercode: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.centercode = this.cast("centercode")
+  @scala.inline
+  def centos: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.centos = this.cast("centos")
+  @scala.inline
+  def certificate: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.certificate = this.cast("certificate")
+  @scala.inline
+  def chair: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chair = this.cast("chair")
+  @scala.inline
+  def `chair-office`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chair-office` = this.cast("chair-office")
+  @scala.inline
+  def chalkboard: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chalkboard = this.cast("chalkboard")
+  @scala.inline
+  def `chalkboard-teacher`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chalkboard-teacher` = this.cast("chalkboard-teacher")
+  @scala.inline
+  def `charging-station`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`charging-station` = this.cast("charging-station")
+  @scala.inline
+  def `chart-area`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-area` = this.cast("chart-area")
+  @scala.inline
+  def `chart-bar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-bar` = this.cast("chart-bar")
+  @scala.inline
+  def `chart-line`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line` = this.cast("chart-line")
+  @scala.inline
+  def `chart-line-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-down` = this.cast("chart-line-down")
+  @scala.inline
+  def `chart-network`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-network` = this.cast("chart-network")
+  @scala.inline
+  def `chart-pie`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie` = this.cast("chart-pie")
+  @scala.inline
+  def `chart-pie-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-alt` = this.cast("chart-pie-alt")
+  @scala.inline
+  def `chart-scatter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-scatter` = this.cast("chart-scatter")
+  @scala.inline
+  def check: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.check = this.cast("check")
+  @scala.inline
+  def `check-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`check-circle` = this.cast("check-circle")
+  @scala.inline
+  def `check-double`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`check-double` = this.cast("check-double")
+  @scala.inline
+  def `check-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`check-square` = this.cast("check-square")
+  @scala.inline
+  def cheese: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cheese = this.cast("cheese")
+  @scala.inline
+  def `cheese-swiss`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cheese-swiss` = this.cast("cheese-swiss")
+  @scala.inline
+  def cheeseburger: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cheeseburger = this.cast("cheeseburger")
+  @scala.inline
+  def chess: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chess = this.cast("chess")
+  @scala.inline
+  def `chess-bishop`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-bishop` = this.cast("chess-bishop")
+  @scala.inline
+  def `chess-bishop-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-bishop-alt` = this.cast("chess-bishop-alt")
+  @scala.inline
+  def `chess-board`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-board` = this.cast("chess-board")
+  @scala.inline
+  def `chess-clock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-clock` = this.cast("chess-clock")
+  @scala.inline
+  def `chess-clock-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-clock-alt` = this.cast("chess-clock-alt")
+  @scala.inline
+  def `chess-king`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-king` = this.cast("chess-king")
+  @scala.inline
+  def `chess-king-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-king-alt` = this.cast("chess-king-alt")
+  @scala.inline
+  def `chess-knight`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-knight` = this.cast("chess-knight")
+  @scala.inline
+  def `chess-knight-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-knight-alt` = this.cast("chess-knight-alt")
+  @scala.inline
+  def `chess-pawn`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-pawn` = this.cast("chess-pawn")
+  @scala.inline
+  def `chess-pawn-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-pawn-alt` = this.cast("chess-pawn-alt")
+  @scala.inline
+  def `chess-queen`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-queen` = this.cast("chess-queen")
+  @scala.inline
+  def `chess-queen-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-queen-alt` = this.cast("chess-queen-alt")
+  @scala.inline
+  def `chess-rook`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-rook` = this.cast("chess-rook")
+  @scala.inline
+  def `chess-rook-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-rook-alt` = this.cast("chess-rook-alt")
+  @scala.inline
+  def `chevron-circle-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-down` = this.cast("chevron-circle-down")
+  @scala.inline
+  def `chevron-circle-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-left` = this.cast("chevron-circle-left")
+  @scala.inline
+  def `chevron-circle-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-right` = this.cast("chevron-circle-right")
+  @scala.inline
+  def `chevron-circle-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-circle-up` = this.cast("chevron-circle-up")
+  @scala.inline
+  def `chevron-double-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-down` = this.cast("chevron-double-down")
+  @scala.inline
+  def `chevron-double-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-left` = this.cast("chevron-double-left")
+  @scala.inline
+  def `chevron-double-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-right` = this.cast("chevron-double-right")
+  @scala.inline
+  def `chevron-double-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-double-up` = this.cast("chevron-double-up")
+  @scala.inline
+  def `chevron-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-down` = this.cast("chevron-down")
+  @scala.inline
+  def `chevron-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-left` = this.cast("chevron-left")
+  @scala.inline
+  def `chevron-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-right` = this.cast("chevron-right")
+  @scala.inline
+  def `chevron-square-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-down` = this.cast("chevron-square-down")
+  @scala.inline
+  def `chevron-square-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-left` = this.cast("chevron-square-left")
+  @scala.inline
+  def `chevron-square-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-right` = this.cast("chevron-square-right")
+  @scala.inline
+  def `chevron-square-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-square-up` = this.cast("chevron-square-up")
+  @scala.inline
+  def `chevron-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevron-up` = this.cast("chevron-up")
+  @scala.inline
+  def child: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.child = this.cast("child")
+  @scala.inline
+  def chimney: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chimney = this.cast("chimney")
+  @scala.inline
+  def chrome: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chrome = this.cast("chrome")
+  @scala.inline
+  def chromecast: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.chromecast = this.cast("chromecast")
+  @scala.inline
+  def church: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.church = this.cast("church")
+  @scala.inline
+  def circle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.circle = this.cast("circle")
+  @scala.inline
+  def `circle-notch`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-notch` = this.cast("circle-notch")
+  @scala.inline
+  def city: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.city = this.cast("city")
+  @scala.inline
+  def clarinet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clarinet = this.cast("clarinet")
+  @scala.inline
+  def `claw-marks`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`claw-marks` = this.cast("claw-marks")
+  @scala.inline
+  def `clinic-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clinic-medical` = this.cast("clinic-medical")
+  @scala.inline
+  def clipboard: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clipboard = this.cast("clipboard")
+  @scala.inline
+  def `clipboard-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-check` = this.cast("clipboard-check")
+  @scala.inline
+  def `clipboard-list`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-list` = this.cast("clipboard-list")
+  @scala.inline
+  def `clipboard-list-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-list-check` = this.cast("clipboard-list-check")
+  @scala.inline
+  def `clipboard-prescription`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-prescription` = this.cast("clipboard-prescription")
+  @scala.inline
+  def `clipboard-user`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clipboard-user` = this.cast("clipboard-user")
+  @scala.inline
+  def clock: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clock = this.cast("clock")
+  @scala.inline
+  def `closed-captioning`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`closed-captioning` = this.cast("closed-captioning")
+  @scala.inline
+  def cloud: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloud = this.cast("cloud")
+  @scala.inline
+  def `cloud-download`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-download` = this.cast("cloud-download")
+  @scala.inline
+  def `cloud-download-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-download-alt` = this.cast("cloud-download-alt")
+  @scala.inline
+  def `cloud-drizzle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-drizzle` = this.cast("cloud-drizzle")
+  @scala.inline
+  def `cloud-hail`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-hail` = this.cast("cloud-hail")
+  @scala.inline
+  def `cloud-hail-mixed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-hail-mixed` = this.cast("cloud-hail-mixed")
+  @scala.inline
+  def `cloud-meatball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-meatball` = this.cast("cloud-meatball")
+  @scala.inline
+  def `cloud-moon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-moon` = this.cast("cloud-moon")
+  @scala.inline
+  def `cloud-moon-rain`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-moon-rain` = this.cast("cloud-moon-rain")
+  @scala.inline
+  def `cloud-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-music` = this.cast("cloud-music")
+  @scala.inline
+  def `cloud-rain`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-rain` = this.cast("cloud-rain")
+  @scala.inline
+  def `cloud-rainbow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-rainbow` = this.cast("cloud-rainbow")
+  @scala.inline
+  def `cloud-showers`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-showers` = this.cast("cloud-showers")
+  @scala.inline
+  def `cloud-showers-heavy`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-showers-heavy` = this.cast("cloud-showers-heavy")
+  @scala.inline
+  def `cloud-sleet`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-sleet` = this.cast("cloud-sleet")
+  @scala.inline
+  def `cloud-snow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-snow` = this.cast("cloud-snow")
+  @scala.inline
+  def `cloud-sun`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-sun` = this.cast("cloud-sun")
+  @scala.inline
+  def `cloud-sun-rain`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-sun-rain` = this.cast("cloud-sun-rain")
+  @scala.inline
+  def `cloud-upload`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-upload` = this.cast("cloud-upload")
+  @scala.inline
+  def `cloud-upload-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-upload-alt` = this.cast("cloud-upload-alt")
+  @scala.inline
+  def clouds: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.clouds = this.cast("clouds")
+  @scala.inline
+  def `clouds-moon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clouds-moon` = this.cast("clouds-moon")
+  @scala.inline
+  def `clouds-sun`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clouds-sun` = this.cast("clouds-sun")
+  @scala.inline
+  def cloudscale: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloudscale = this.cast("cloudscale")
+  @scala.inline
+  def cloudsmith: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloudsmith = this.cast("cloudsmith")
+  @scala.inline
+  def cloudversify: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cloudversify = this.cast("cloudversify")
+  @scala.inline
+  def club: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.club = this.cast("club")
+  @scala.inline
+  def cocktail: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cocktail = this.cast("cocktail")
+  @scala.inline
+  def code: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.code = this.cast("code")
+  @scala.inline
+  def `code-branch`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`code-branch` = this.cast("code-branch")
+  @scala.inline
+  def `code-commit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`code-commit` = this.cast("code-commit")
+  @scala.inline
+  def `code-merge`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`code-merge` = this.cast("code-merge")
+  @scala.inline
+  def codepen: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.codepen = this.cast("codepen")
+  @scala.inline
+  def codiepie: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.codiepie = this.cast("codiepie")
+  @scala.inline
+  def coffee: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coffee = this.cast("coffee")
+  @scala.inline
+  def `coffee-pot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffee-pot` = this.cast("coffee-pot")
+  @scala.inline
+  def `coffee-togo`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffee-togo` = this.cast("coffee-togo")
+  @scala.inline
+  def coffin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coffin = this.cast("coffin")
+  @scala.inline
+  def cog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cog = this.cast("cog")
+  @scala.inline
+  def cogs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cogs = this.cast("cogs")
+  @scala.inline
+  def coin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coin = this.cast("coin")
+  @scala.inline
+  def coins: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coins = this.cast("coins")
+  @scala.inline
+  def columns: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.columns = this.cast("columns")
+  @scala.inline
+  def comet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.comet = this.cast("comet")
+  @scala.inline
+  def comment: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.comment = this.cast("comment")
+  @scala.inline
+  def `comment-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt` = this.cast("comment-alt")
+  @scala.inline
+  def `comment-alt-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-check` = this.cast("comment-alt-check")
+  @scala.inline
+  def `comment-alt-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-dollar` = this.cast("comment-alt-dollar")
+  @scala.inline
+  def `comment-alt-dots`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-dots` = this.cast("comment-alt-dots")
+  @scala.inline
+  def `comment-alt-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-edit` = this.cast("comment-alt-edit")
+  @scala.inline
+  def `comment-alt-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-exclamation` = this.cast("comment-alt-exclamation")
+  @scala.inline
+  def `comment-alt-lines`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-lines` = this.cast("comment-alt-lines")
+  @scala.inline
+  def `comment-alt-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-medical` = this.cast("comment-alt-medical")
+  @scala.inline
+  def `comment-alt-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-minus` = this.cast("comment-alt-minus")
+  @scala.inline
+  def `comment-alt-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-music` = this.cast("comment-alt-music")
+  @scala.inline
+  def `comment-alt-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-plus` = this.cast("comment-alt-plus")
+  @scala.inline
+  def `comment-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-slash` = this.cast("comment-alt-slash")
+  @scala.inline
+  def `comment-alt-smile`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-smile` = this.cast("comment-alt-smile")
+  @scala.inline
+  def `comment-alt-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-times` = this.cast("comment-alt-times")
+  @scala.inline
+  def `comment-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-check` = this.cast("comment-check")
+  @scala.inline
+  def `comment-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-dollar` = this.cast("comment-dollar")
+  @scala.inline
+  def `comment-dots`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-dots` = this.cast("comment-dots")
+  @scala.inline
+  def `comment-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-edit` = this.cast("comment-edit")
+  @scala.inline
+  def `comment-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-exclamation` = this.cast("comment-exclamation")
+  @scala.inline
+  def `comment-lines`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-lines` = this.cast("comment-lines")
+  @scala.inline
+  def `comment-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-medical` = this.cast("comment-medical")
+  @scala.inline
+  def `comment-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-minus` = this.cast("comment-minus")
+  @scala.inline
+  def `comment-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-music` = this.cast("comment-music")
+  @scala.inline
+  def `comment-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-plus` = this.cast("comment-plus")
+  @scala.inline
+  def `comment-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-slash` = this.cast("comment-slash")
+  @scala.inline
+  def `comment-smile`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-smile` = this.cast("comment-smile")
+  @scala.inline
+  def `comment-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-times` = this.cast("comment-times")
+  @scala.inline
+  def comments: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.comments = this.cast("comments")
+  @scala.inline
+  def `comments-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comments-alt` = this.cast("comments-alt")
+  @scala.inline
+  def `comments-alt-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comments-alt-dollar` = this.cast("comments-alt-dollar")
+  @scala.inline
+  def `comments-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comments-dollar` = this.cast("comments-dollar")
+  @scala.inline
+  def `compact-disc`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compact-disc` = this.cast("compact-disc")
+  @scala.inline
+  def compass: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.compass = this.cast("compass")
+  @scala.inline
+  def `compass-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compass-slash` = this.cast("compass-slash")
+  @scala.inline
+  def compress: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.compress = this.cast("compress")
+  @scala.inline
+  def `compress-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compress-alt` = this.cast("compress-alt")
+  @scala.inline
+  def `compress-arrows-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compress-arrows-alt` = this.cast("compress-arrows-alt")
+  @scala.inline
+  def `compress-wide`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compress-wide` = this.cast("compress-wide")
+  @scala.inline
+  def `computer-classic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`computer-classic` = this.cast("computer-classic")
+  @scala.inline
+  def `computer-speaker`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`computer-speaker` = this.cast("computer-speaker")
+  @scala.inline
+  def `concierge-bell`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`concierge-bell` = this.cast("concierge-bell")
+  @scala.inline
+  def confluence: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.confluence = this.cast("confluence")
+  @scala.inline
+  def connectdevelop: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.connectdevelop = this.cast("connectdevelop")
+  @scala.inline
+  def construction: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.construction = this.cast("construction")
+  @scala.inline
+  def `container-storage`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`container-storage` = this.cast("container-storage")
+  @scala.inline
+  def contao: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.contao = this.cast("contao")
+  @scala.inline
+  def `conveyor-belt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt` = this.cast("conveyor-belt")
+  @scala.inline
+  def `conveyor-belt-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-alt` = this.cast("conveyor-belt-alt")
+  @scala.inline
+  def cookie: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cookie = this.cast("cookie")
+  @scala.inline
+  def `cookie-bite`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cookie-bite` = this.cast("cookie-bite")
+  @scala.inline
+  def copy: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.copy = this.cast("copy")
+  @scala.inline
+  def copyright: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.copyright = this.cast("copyright")
+  @scala.inline
+  def corn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.corn = this.cast("corn")
+  @scala.inline
+  def `cotton-bureau`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cotton-bureau` = this.cast("cotton-bureau")
+  @scala.inline
+  def couch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.couch = this.cast("couch")
+  @scala.inline
+  def cow: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cow = this.cast("cow")
+  @scala.inline
+  def cowbell: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cowbell = this.cast("cowbell")
+  @scala.inline
+  def `cowbell-more`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cowbell-more` = this.cast("cowbell-more")
+  @scala.inline
+  def cpanel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cpanel = this.cast("cpanel")
+  @scala.inline
+  def `creative-commons`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons` = this.cast("creative-commons")
+  @scala.inline
+  def `creative-commons-by`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-by` = this.cast("creative-commons-by")
+  @scala.inline
+  def `creative-commons-nc`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nc` = this.cast("creative-commons-nc")
+  @scala.inline
+  def `creative-commons-nc-eu`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nc-eu` = this.cast("creative-commons-nc-eu")
+  @scala.inline
+  def `creative-commons-nc-jp`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nc-jp` = this.cast("creative-commons-nc-jp")
+  @scala.inline
+  def `creative-commons-nd`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-nd` = this.cast("creative-commons-nd")
+  @scala.inline
+  def `creative-commons-pd`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-pd` = this.cast("creative-commons-pd")
+  @scala.inline
+  def `creative-commons-pd-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-pd-alt` = this.cast("creative-commons-pd-alt")
+  @scala.inline
+  def `creative-commons-remix`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-remix` = this.cast("creative-commons-remix")
+  @scala.inline
+  def `creative-commons-sa`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-sa` = this.cast("creative-commons-sa")
+  @scala.inline
+  def `creative-commons-sampling`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-sampling` = this.cast("creative-commons-sampling")
+  @scala.inline
+  def `creative-commons-sampling-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-sampling-plus` = this.cast("creative-commons-sampling-plus")
+  @scala.inline
+  def `creative-commons-share`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-share` = this.cast("creative-commons-share")
+  @scala.inline
+  def `creative-commons-zero`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`creative-commons-zero` = this.cast("creative-commons-zero")
+  @scala.inline
+  def `credit-card`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`credit-card` = this.cast("credit-card")
+  @scala.inline
+  def `credit-card-blank`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`credit-card-blank` = this.cast("credit-card-blank")
+  @scala.inline
+  def `credit-card-front`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`credit-card-front` = this.cast("credit-card-front")
+  @scala.inline
+  def cricket: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cricket = this.cast("cricket")
+  @scala.inline
+  def `critical-role`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`critical-role` = this.cast("critical-role")
+  @scala.inline
+  def croissant: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.croissant = this.cast("croissant")
+  @scala.inline
+  def crop: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crop = this.cast("crop")
+  @scala.inline
+  def `crop-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`crop-alt` = this.cast("crop-alt")
+  @scala.inline
+  def cross: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cross = this.cast("cross")
+  @scala.inline
+  def crosshairs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crosshairs = this.cast("crosshairs")
+  @scala.inline
+  def crow: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crow = this.cast("crow")
+  @scala.inline
+  def crown: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crown = this.cast("crown")
+  @scala.inline
+  def crutch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crutch = this.cast("crutch")
+  @scala.inline
+  def crutches: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crutches = this.cast("crutches")
+  @scala.inline
+  def css3: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.css3 = this.cast("css3")
+  @scala.inline
+  def `css3-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`css3-alt` = this.cast("css3-alt")
+  @scala.inline
+  def cube: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cube = this.cast("cube")
+  @scala.inline
+  def cubes: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cubes = this.cast("cubes")
+  @scala.inline
+  def curling: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.curling = this.cast("curling")
+  @scala.inline
+  def cut: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cut = this.cast("cut")
+  @scala.inline
+  def cuttlefish: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cuttlefish = this.cast("cuttlefish")
+  @scala.inline
+  def `d-and-d`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`d-and-d` = this.cast("d-and-d")
+  @scala.inline
+  def `d-and-d-beyond`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`d-and-d-beyond` = this.cast("d-and-d-beyond")
+  @scala.inline
+  def dagger: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dagger = this.cast("dagger")
+  @scala.inline
+  def dashcube: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dashcube = this.cast("dashcube")
+  @scala.inline
+  def database: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.database = this.cast("database")
+  @scala.inline
+  def deaf: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deaf = this.cast("deaf")
+  @scala.inline
+  def debug: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.debug = this.cast("debug")
+  @scala.inline
+  def deer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deer = this.cast("deer")
+  @scala.inline
+  def `deer-rudolph`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`deer-rudolph` = this.cast("deer-rudolph")
+  @scala.inline
+  def delicious: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.delicious = this.cast("delicious")
+  @scala.inline
+  def democrat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.democrat = this.cast("democrat")
+  @scala.inline
+  def deploydog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deploydog = this.cast("deploydog")
+  @scala.inline
+  def deskpro: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deskpro = this.cast("deskpro")
+  @scala.inline
+  def desktop: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.desktop = this.cast("desktop")
+  @scala.inline
+  def `desktop-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`desktop-alt` = this.cast("desktop-alt")
+  @scala.inline
+  def dev: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dev = this.cast("dev")
+  @scala.inline
+  def deviantart: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deviantart = this.cast("deviantart")
+  @scala.inline
+  def dewpoint: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dewpoint = this.cast("dewpoint")
+  @scala.inline
+  def dharmachakra: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dharmachakra = this.cast("dharmachakra")
+  @scala.inline
+  def dhl: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dhl = this.cast("dhl")
+  @scala.inline
+  def diagnoses: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diagnoses = this.cast("diagnoses")
+  @scala.inline
+  def diamond: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diamond = this.cast("diamond")
+  @scala.inline
+  def diaspora: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diaspora = this.cast("diaspora")
+  @scala.inline
+  def dice: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dice = this.cast("dice")
+  @scala.inline
+  def `dice-d10`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d10` = this.cast("dice-d10")
+  @scala.inline
+  def `dice-d12`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d12` = this.cast("dice-d12")
+  @scala.inline
+  def `dice-d20`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d20` = this.cast("dice-d20")
+  @scala.inline
+  def `dice-d4`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d4` = this.cast("dice-d4")
+  @scala.inline
+  def `dice-d6`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d6` = this.cast("dice-d6")
+  @scala.inline
+  def `dice-d8`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-d8` = this.cast("dice-d8")
+  @scala.inline
+  def `dice-five`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-five` = this.cast("dice-five")
+  @scala.inline
+  def `dice-four`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-four` = this.cast("dice-four")
+  @scala.inline
+  def `dice-one`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-one` = this.cast("dice-one")
+  @scala.inline
+  def `dice-six`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-six` = this.cast("dice-six")
+  @scala.inline
+  def `dice-three`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-three` = this.cast("dice-three")
+  @scala.inline
+  def `dice-two`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dice-two` = this.cast("dice-two")
+  @scala.inline
+  def digg: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.digg = this.cast("digg")
+  @scala.inline
+  def digging: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.digging = this.cast("digging")
+  @scala.inline
+  def `digital-ocean`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`digital-ocean` = this.cast("digital-ocean")
+  @scala.inline
+  def `digital-tachograph`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`digital-tachograph` = this.cast("digital-tachograph")
+  @scala.inline
+  def diploma: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diploma = this.cast("diploma")
+  @scala.inline
+  def directions: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.directions = this.cast("directions")
+  @scala.inline
+  def `disc-drive`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`disc-drive` = this.cast("disc-drive")
+  @scala.inline
+  def discord: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.discord = this.cast("discord")
+  @scala.inline
+  def discourse: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.discourse = this.cast("discourse")
+  @scala.inline
+  def disease: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.disease = this.cast("disease")
+  @scala.inline
+  def divide: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.divide = this.cast("divide")
+  @scala.inline
+  def dizzy: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dizzy = this.cast("dizzy")
+  @scala.inline
+  def dna: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dna = this.cast("dna")
+  @scala.inline
+  def `do-not-enter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`do-not-enter` = this.cast("do-not-enter")
+  @scala.inline
+  def dochub: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dochub = this.cast("dochub")
+  @scala.inline
+  def docker: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.docker = this.cast("docker")
+  @scala.inline
+  def dog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dog = this.cast("dog")
+  @scala.inline
+  def `dog-leashed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dog-leashed` = this.cast("dog-leashed")
+  @scala.inline
+  def `dollar-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dollar-sign` = this.cast("dollar-sign")
+  @scala.inline
+  def dolly: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dolly = this.cast("dolly")
+  @scala.inline
+  def `dolly-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-empty` = this.cast("dolly-empty")
+  @scala.inline
+  def `dolly-flatbed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-flatbed` = this.cast("dolly-flatbed")
+  @scala.inline
+  def `dolly-flatbed-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-flatbed-alt` = this.cast("dolly-flatbed-alt")
+  @scala.inline
+  def `dolly-flatbed-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dolly-flatbed-empty` = this.cast("dolly-flatbed-empty")
+  @scala.inline
+  def donate: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.donate = this.cast("donate")
+  @scala.inline
+  def `door-closed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`door-closed` = this.cast("door-closed")
+  @scala.inline
+  def `door-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`door-open` = this.cast("door-open")
+  @scala.inline
+  def `dot-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dot-circle` = this.cast("dot-circle")
+  @scala.inline
+  def dove: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dove = this.cast("dove")
+  @scala.inline
+  def download: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.download = this.cast("download")
+  @scala.inline
+  def draft2digital: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.draft2digital = this.cast("draft2digital")
+  @scala.inline
+  def `drafting-compass`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drafting-compass` = this.cast("drafting-compass")
+  @scala.inline
+  def dragon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dragon = this.cast("dragon")
+  @scala.inline
+  def `draw-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`draw-circle` = this.cast("draw-circle")
+  @scala.inline
+  def `draw-polygon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`draw-polygon` = this.cast("draw-polygon")
+  @scala.inline
+  def `draw-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`draw-square` = this.cast("draw-square")
+  @scala.inline
+  def dreidel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dreidel = this.cast("dreidel")
+  @scala.inline
+  def dribbble: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dribbble = this.cast("dribbble")
+  @scala.inline
+  def `dribbble-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dribbble-square` = this.cast("dribbble-square")
+  @scala.inline
+  def drone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drone = this.cast("drone")
+  @scala.inline
+  def `drone-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drone-alt` = this.cast("drone-alt")
+  @scala.inline
+  def dropbox: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dropbox = this.cast("dropbox")
+  @scala.inline
+  def drum: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drum = this.cast("drum")
+  @scala.inline
+  def `drum-steelpan`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drum-steelpan` = this.cast("drum-steelpan")
+  @scala.inline
+  def drumstick: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drumstick = this.cast("drumstick")
+  @scala.inline
+  def `drumstick-bite`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drumstick-bite` = this.cast("drumstick-bite")
+  @scala.inline
+  def drupal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.drupal = this.cast("drupal")
+  @scala.inline
+  def dryer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dryer = this.cast("dryer")
+  @scala.inline
+  def `dryer-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dryer-alt` = this.cast("dryer-alt")
+  @scala.inline
+  def duck: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.duck = this.cast("duck")
+  @scala.inline
+  def dumbbell: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dumbbell = this.cast("dumbbell")
+  @scala.inline
+  def dumpster: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dumpster = this.cast("dumpster")
+  @scala.inline
+  def `dumpster-fire`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`dumpster-fire` = this.cast("dumpster-fire")
+  @scala.inline
+  def dungeon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dungeon = this.cast("dungeon")
+  @scala.inline
+  def dyalog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dyalog = this.cast("dyalog")
+  @scala.inline
+  def ear: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ear = this.cast("ear")
+  @scala.inline
+  def `ear-muffs`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ear-muffs` = this.cast("ear-muffs")
+  @scala.inline
+  def earlybirds: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.earlybirds = this.cast("earlybirds")
+  @scala.inline
+  def ebay: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ebay = this.cast("ebay")
+  @scala.inline
+  def eclipse: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eclipse = this.cast("eclipse")
+  @scala.inline
+  def `eclipse-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eclipse-alt` = this.cast("eclipse-alt")
+  @scala.inline
+  def edge: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.edge = this.cast("edge")
+  @scala.inline
+  def edit: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.edit = this.cast("edit")
+  @scala.inline
+  def egg: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.egg = this.cast("egg")
+  @scala.inline
+  def `egg-fried`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`egg-fried` = this.cast("egg-fried")
+  @scala.inline
+  def eject: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eject = this.cast("eject")
+  @scala.inline
+  def elementor: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.elementor = this.cast("elementor")
+  @scala.inline
+  def elephant: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.elephant = this.cast("elephant")
+  @scala.inline
+  def `ellipsis-h`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-h` = this.cast("ellipsis-h")
+  @scala.inline
+  def `ellipsis-h-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-h-alt` = this.cast("ellipsis-h-alt")
+  @scala.inline
+  def `ellipsis-v`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-v` = this.cast("ellipsis-v")
+  @scala.inline
+  def `ellipsis-v-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-v-alt` = this.cast("ellipsis-v-alt")
+  @scala.inline
+  def ello: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ello = this.cast("ello")
+  @scala.inline
+  def ember: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ember = this.cast("ember")
+  @scala.inline
+  def empire: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.empire = this.cast("empire")
+  @scala.inline
+  def `empty-set`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`empty-set` = this.cast("empty-set")
+  @scala.inline
+  def `engine-warning`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`engine-warning` = this.cast("engine-warning")
+  @scala.inline
+  def envelope: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.envelope = this.cast("envelope")
+  @scala.inline
+  def `envelope-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-open` = this.cast("envelope-open")
+  @scala.inline
+  def `envelope-open-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-open-dollar` = this.cast("envelope-open-dollar")
+  @scala.inline
+  def `envelope-open-text`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-open-text` = this.cast("envelope-open-text")
+  @scala.inline
+  def `envelope-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-square` = this.cast("envelope-square")
+  @scala.inline
+  def envira: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.envira = this.cast("envira")
+  @scala.inline
+  def equals: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.equals = this.cast("equals")
+  @scala.inline
+  def eraser: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eraser = this.cast("eraser")
+  @scala.inline
+  def erlang: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.erlang = this.cast("erlang")
+  @scala.inline
+  def ethereum: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ethereum = this.cast("ethereum")
+  @scala.inline
+  def ethernet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ethernet = this.cast("ethernet")
+  @scala.inline
+  def etsy: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.etsy = this.cast("etsy")
+  @scala.inline
+  def `euro-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`euro-sign` = this.cast("euro-sign")
+  @scala.inline
+  def evernote: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.evernote = this.cast("evernote")
+  @scala.inline
+  def exchange: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.exchange = this.cast("exchange")
+  @scala.inline
+  def `exchange-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exchange-alt` = this.cast("exchange-alt")
+  @scala.inline
+  def exclamation: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.exclamation = this.cast("exclamation")
+  @scala.inline
+  def `exclamation-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exclamation-circle` = this.cast("exclamation-circle")
+  @scala.inline
+  def `exclamation-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exclamation-square` = this.cast("exclamation-square")
+  @scala.inline
+  def `exclamation-triangle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`exclamation-triangle` = this.cast("exclamation-triangle")
+  @scala.inline
+  def expand: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.expand = this.cast("expand")
+  @scala.inline
+  def `expand-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-alt` = this.cast("expand-alt")
+  @scala.inline
+  def `expand-arrows`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-arrows` = this.cast("expand-arrows")
+  @scala.inline
+  def `expand-arrows-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-arrows-alt` = this.cast("expand-arrows-alt")
+  @scala.inline
+  def `expand-wide`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-wide` = this.cast("expand-wide")
+  @scala.inline
+  def expeditedssl: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.expeditedssl = this.cast("expeditedssl")
+  @scala.inline
+  def `external-link`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link` = this.cast("external-link")
+  @scala.inline
+  def `external-link-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link-alt` = this.cast("external-link-alt")
+  @scala.inline
+  def `external-link-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link-square` = this.cast("external-link-square")
+  @scala.inline
+  def `external-link-square-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`external-link-square-alt` = this.cast("external-link-square-alt")
+  @scala.inline
+  def eye: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eye = this.cast("eye")
+  @scala.inline
+  def `eye-dropper`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-dropper` = this.cast("eye-dropper")
+  @scala.inline
+  def `eye-evil`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-evil` = this.cast("eye-evil")
+  @scala.inline
+  def `eye-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-slash` = this.cast("eye-slash")
+  @scala.inline
+  def facebook: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.facebook = this.cast("facebook")
+  @scala.inline
+  def `facebook-f`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`facebook-f` = this.cast("facebook-f")
+  @scala.inline
+  def `facebook-messenger`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`facebook-messenger` = this.cast("facebook-messenger")
+  @scala.inline
+  def `facebook-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`facebook-square` = this.cast("facebook-square")
+  @scala.inline
+  def fan: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fan = this.cast("fan")
+  @scala.inline
+  def `fan-table`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fan-table` = this.cast("fan-table")
+  @scala.inline
+  def `fantasy-flight-games`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fantasy-flight-games` = this.cast("fantasy-flight-games")
+  @scala.inline
+  def farm: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.farm = this.cast("farm")
+  @scala.inline
+  def `fast-backward`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fast-backward` = this.cast("fast-backward")
+  @scala.inline
+  def `fast-forward`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fast-forward` = this.cast("fast-forward")
+  @scala.inline
+  def faucet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.faucet = this.cast("faucet")
+  @scala.inline
+  def `faucet-drip`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`faucet-drip` = this.cast("faucet-drip")
+  @scala.inline
+  def fax: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fax = this.cast("fax")
+  @scala.inline
+  def feather: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.feather = this.cast("feather")
+  @scala.inline
+  def `feather-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`feather-alt` = this.cast("feather-alt")
+  @scala.inline
+  def fedex: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fedex = this.cast("fedex")
+  @scala.inline
+  def fedora: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fedora = this.cast("fedora")
+  @scala.inline
+  def female: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.female = this.cast("female")
+  @scala.inline
+  def `field-hockey`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`field-hockey` = this.cast("field-hockey")
+  @scala.inline
+  def `fighter-jet`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fighter-jet` = this.cast("fighter-jet")
+  @scala.inline
+  def figma: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.figma = this.cast("figma")
+  @scala.inline
+  def file: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.file = this.cast("file")
+  @scala.inline
+  def `file-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-alt` = this.cast("file-alt")
+  @scala.inline
+  def `file-archive`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-archive` = this.cast("file-archive")
+  @scala.inline
+  def `file-audio`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-audio` = this.cast("file-audio")
+  @scala.inline
+  def `file-certificate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-certificate` = this.cast("file-certificate")
+  @scala.inline
+  def `file-chart-line`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-chart-line` = this.cast("file-chart-line")
+  @scala.inline
+  def `file-chart-pie`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-chart-pie` = this.cast("file-chart-pie")
+  @scala.inline
+  def `file-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-check` = this.cast("file-check")
+  @scala.inline
+  def `file-code`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-code` = this.cast("file-code")
+  @scala.inline
+  def `file-contract`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-contract` = this.cast("file-contract")
+  @scala.inline
+  def `file-csv`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-csv` = this.cast("file-csv")
+  @scala.inline
+  def `file-download`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-download` = this.cast("file-download")
+  @scala.inline
+  def `file-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-edit` = this.cast("file-edit")
+  @scala.inline
+  def `file-excel`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-excel` = this.cast("file-excel")
+  @scala.inline
+  def `file-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-exclamation` = this.cast("file-exclamation")
+  @scala.inline
+  def `file-export`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-export` = this.cast("file-export")
+  @scala.inline
+  def `file-image`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-image` = this.cast("file-image")
+  @scala.inline
+  def `file-import`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-import` = this.cast("file-import")
+  @scala.inline
+  def `file-invoice`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-invoice` = this.cast("file-invoice")
+  @scala.inline
+  def `file-invoice-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-invoice-dollar` = this.cast("file-invoice-dollar")
+  @scala.inline
+  def `file-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-medical` = this.cast("file-medical")
+  @scala.inline
+  def `file-medical-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-medical-alt` = this.cast("file-medical-alt")
+  @scala.inline
+  def `file-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-minus` = this.cast("file-minus")
+  @scala.inline
+  def `file-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-music` = this.cast("file-music")
+  @scala.inline
+  def `file-pdf`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-pdf` = this.cast("file-pdf")
+  @scala.inline
+  def `file-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-plus` = this.cast("file-plus")
+  @scala.inline
+  def `file-powerpoint`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-powerpoint` = this.cast("file-powerpoint")
+  @scala.inline
+  def `file-prescription`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-prescription` = this.cast("file-prescription")
+  @scala.inline
+  def `file-search`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-search` = this.cast("file-search")
+  @scala.inline
+  def `file-signature`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-signature` = this.cast("file-signature")
+  @scala.inline
+  def `file-spreadsheet`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-spreadsheet` = this.cast("file-spreadsheet")
+  @scala.inline
+  def `file-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-times` = this.cast("file-times")
+  @scala.inline
+  def `file-upload`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-upload` = this.cast("file-upload")
+  @scala.inline
+  def `file-user`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-user` = this.cast("file-user")
+  @scala.inline
+  def `file-video`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-video` = this.cast("file-video")
+  @scala.inline
+  def `file-word`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-word` = this.cast("file-word")
+  @scala.inline
+  def `files-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`files-medical` = this.cast("files-medical")
+  @scala.inline
+  def fill: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fill = this.cast("fill")
+  @scala.inline
+  def `fill-drip`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fill-drip` = this.cast("fill-drip")
+  @scala.inline
+  def film: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.film = this.cast("film")
+  @scala.inline
+  def `film-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`film-alt` = this.cast("film-alt")
+  @scala.inline
+  def `film-canister`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`film-canister` = this.cast("film-canister")
+  @scala.inline
+  def filter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.filter = this.cast("filter")
+  @scala.inline
+  def fingerprint: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fingerprint = this.cast("fingerprint")
+  @scala.inline
+  def fire: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fire = this.cast("fire")
+  @scala.inline
+  def `fire-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fire-alt` = this.cast("fire-alt")
+  @scala.inline
+  def `fire-extinguisher`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fire-extinguisher` = this.cast("fire-extinguisher")
+  @scala.inline
+  def `fire-smoke`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fire-smoke` = this.cast("fire-smoke")
+  @scala.inline
+  def firefox: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.firefox = this.cast("firefox")
+  @scala.inline
+  def `firefox-browser`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`firefox-browser` = this.cast("firefox-browser")
+  @scala.inline
+  def fireplace: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fireplace = this.cast("fireplace")
+  @scala.inline
+  def `first-aid`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`first-aid` = this.cast("first-aid")
+  @scala.inline
+  def `first-order`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`first-order` = this.cast("first-order")
+  @scala.inline
+  def `first-order-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`first-order-alt` = this.cast("first-order-alt")
+  @scala.inline
+  def firstdraft: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.firstdraft = this.cast("firstdraft")
+  @scala.inline
+  def fish: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fish = this.cast("fish")
+  @scala.inline
+  def `fish-cooked`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fish-cooked` = this.cast("fish-cooked")
+  @scala.inline
+  def `fist-raised`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fist-raised` = this.cast("fist-raised")
+  @scala.inline
+  def flag: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flag = this.cast("flag")
+  @scala.inline
+  def `flag-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flag-alt` = this.cast("flag-alt")
+  @scala.inline
+  def `flag-checkered`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flag-checkered` = this.cast("flag-checkered")
+  @scala.inline
+  def `flag-usa`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flag-usa` = this.cast("flag-usa")
+  @scala.inline
+  def flame: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flame = this.cast("flame")
+  @scala.inline
+  def flashlight: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flashlight = this.cast("flashlight")
+  @scala.inline
+  def flask: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flask = this.cast("flask")
+  @scala.inline
+  def `flask-poison`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-poison` = this.cast("flask-poison")
+  @scala.inline
+  def `flask-potion`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-potion` = this.cast("flask-potion")
+  @scala.inline
+  def flickr: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flickr = this.cast("flickr")
+  @scala.inline
+  def flipboard: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flipboard = this.cast("flipboard")
+  @scala.inline
+  def flower: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flower = this.cast("flower")
+  @scala.inline
+  def `flower-daffodil`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flower-daffodil` = this.cast("flower-daffodil")
+  @scala.inline
+  def `flower-tulip`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flower-tulip` = this.cast("flower-tulip")
+  @scala.inline
+  def flushed: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flushed = this.cast("flushed")
+  @scala.inline
+  def flute: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flute = this.cast("flute")
+  @scala.inline
+  def `flux-capacitor`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flux-capacitor` = this.cast("flux-capacitor")
+  @scala.inline
+  def fly: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fly = this.cast("fly")
+  @scala.inline
+  def fog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fog = this.cast("fog")
+  @scala.inline
+  def folder: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folder = this.cast("folder")
+  @scala.inline
+  def `folder-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-minus` = this.cast("folder-minus")
+  @scala.inline
+  def `folder-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-open` = this.cast("folder-open")
+  @scala.inline
+  def `folder-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-plus` = this.cast("folder-plus")
+  @scala.inline
+  def `folder-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-times` = this.cast("folder-times")
+  @scala.inline
+  def `folder-tree`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-tree` = this.cast("folder-tree")
+  @scala.inline
+  def folders: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folders = this.cast("folders")
+  @scala.inline
+  def font: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.font = this.cast("font")
+  @scala.inline
+  def `font-awesome`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome` = this.cast("font-awesome")
+  @scala.inline
+  def `font-awesome-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome-alt` = this.cast("font-awesome-alt")
+  @scala.inline
+  def `font-awesome-flag`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome-flag` = this.cast("font-awesome-flag")
+  @scala.inline
+  def `font-awesome-logo-full`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-awesome-logo-full` = this.cast("font-awesome-logo-full")
+  @scala.inline
+  def `font-case`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-case` = this.cast("font-case")
+  @scala.inline
+  def fonticons: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fonticons = this.cast("fonticons")
+  @scala.inline
+  def `fonticons-fi`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fonticons-fi` = this.cast("fonticons-fi")
+  @scala.inline
+  def `football-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`football-ball` = this.cast("football-ball")
+  @scala.inline
+  def `football-helmet`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`football-helmet` = this.cast("football-helmet")
+  @scala.inline
+  def forklift: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.forklift = this.cast("forklift")
+  @scala.inline
+  def `fort-awesome`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fort-awesome` = this.cast("fort-awesome")
+  @scala.inline
+  def `fort-awesome-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`fort-awesome-alt` = this.cast("fort-awesome-alt")
+  @scala.inline
+  def forumbee: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.forumbee = this.cast("forumbee")
+  @scala.inline
+  def forward: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.forward = this.cast("forward")
+  @scala.inline
+  def foursquare: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.foursquare = this.cast("foursquare")
+  @scala.inline
+  def fragile: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fragile = this.cast("fragile")
+  @scala.inline
+  def `free-code-camp`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`free-code-camp` = this.cast("free-code-camp")
+  @scala.inline
+  def freebsd: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.freebsd = this.cast("freebsd")
+  @scala.inline
+  def `french-fries`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`french-fries` = this.cast("french-fries")
+  @scala.inline
+  def frog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.frog = this.cast("frog")
+  @scala.inline
+  def `frosty-head`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`frosty-head` = this.cast("frosty-head")
+  @scala.inline
+  def frown: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.frown = this.cast("frown")
+  @scala.inline
+  def `frown-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`frown-open` = this.cast("frown-open")
+  @scala.inline
+  def fulcrum: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fulcrum = this.cast("fulcrum")
+  @scala.inline
+  def function: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.function = this.cast("function")
+  @scala.inline
+  def `funnel-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`funnel-dollar` = this.cast("funnel-dollar")
+  @scala.inline
+  def futbol: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.futbol = this.cast("futbol")
+  @scala.inline
+  def `galactic-republic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`galactic-republic` = this.cast("galactic-republic")
+  @scala.inline
+  def `galactic-senate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`galactic-senate` = this.cast("galactic-senate")
+  @scala.inline
+  def galaxy: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.galaxy = this.cast("galaxy")
+  @scala.inline
+  def `game-board`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`game-board` = this.cast("game-board")
+  @scala.inline
+  def `game-board-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`game-board-alt` = this.cast("game-board-alt")
+  @scala.inline
+  def `game-console-handheld`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`game-console-handheld` = this.cast("game-console-handheld")
+  @scala.inline
+  def gamepad: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gamepad = this.cast("gamepad")
+  @scala.inline
+  def `gamepad-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gamepad-alt` = this.cast("gamepad-alt")
+  @scala.inline
+  def garage: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.garage = this.cast("garage")
+  @scala.inline
+  def `garage-car`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`garage-car` = this.cast("garage-car")
+  @scala.inline
+  def `garage-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`garage-open` = this.cast("garage-open")
+  @scala.inline
+  def `gas-pump`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gas-pump` = this.cast("gas-pump")
+  @scala.inline
+  def `gas-pump-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gas-pump-slash` = this.cast("gas-pump-slash")
+  @scala.inline
+  def gavel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gavel = this.cast("gavel")
+  @scala.inline
+  def gem: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gem = this.cast("gem")
+  @scala.inline
+  def genderless: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.genderless = this.cast("genderless")
+  @scala.inline
+  def `get-pocket`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`get-pocket` = this.cast("get-pocket")
+  @scala.inline
+  def gg: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gg = this.cast("gg")
+  @scala.inline
+  def `gg-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gg-circle` = this.cast("gg-circle")
+  @scala.inline
+  def ghost: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ghost = this.cast("ghost")
+  @scala.inline
+  def gift: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gift = this.cast("gift")
+  @scala.inline
+  def `gift-card`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gift-card` = this.cast("gift-card")
+  @scala.inline
+  def gifts: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gifts = this.cast("gifts")
+  @scala.inline
+  def `gingerbread-man`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gingerbread-man` = this.cast("gingerbread-man")
+  @scala.inline
+  def git: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.git = this.cast("git")
+  @scala.inline
+  def `git-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`git-alt` = this.cast("git-alt")
+  @scala.inline
+  def `git-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`git-square` = this.cast("git-square")
+  @scala.inline
+  def github: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.github = this.cast("github")
+  @scala.inline
+  def `github-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`github-alt` = this.cast("github-alt")
+  @scala.inline
+  def `github-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`github-square` = this.cast("github-square")
+  @scala.inline
+  def gitkraken: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gitkraken = this.cast("gitkraken")
+  @scala.inline
+  def gitlab: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gitlab = this.cast("gitlab")
+  @scala.inline
+  def gitter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gitter = this.cast("gitter")
+  @scala.inline
+  def glass: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.glass = this.cast("glass")
+  @scala.inline
+  def `glass-champagne`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-champagne` = this.cast("glass-champagne")
+  @scala.inline
+  def `glass-cheers`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-cheers` = this.cast("glass-cheers")
+  @scala.inline
+  def `glass-citrus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-citrus` = this.cast("glass-citrus")
+  @scala.inline
+  def `glass-martini`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-martini` = this.cast("glass-martini")
+  @scala.inline
+  def `glass-martini-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-martini-alt` = this.cast("glass-martini-alt")
+  @scala.inline
+  def `glass-whiskey`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-whiskey` = this.cast("glass-whiskey")
+  @scala.inline
+  def `glass-whiskey-rocks`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glass-whiskey-rocks` = this.cast("glass-whiskey-rocks")
+  @scala.inline
+  def glasses: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.glasses = this.cast("glasses")
+  @scala.inline
+  def `glasses-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glasses-alt` = this.cast("glasses-alt")
+  @scala.inline
+  def glide: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.glide = this.cast("glide")
+  @scala.inline
+  def `glide-g`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`glide-g` = this.cast("glide-g")
+  @scala.inline
+  def globe: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.globe = this.cast("globe")
+  @scala.inline
+  def `globe-africa`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-africa` = this.cast("globe-africa")
+  @scala.inline
+  def `globe-americas`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-americas` = this.cast("globe-americas")
+  @scala.inline
+  def `globe-asia`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-asia` = this.cast("globe-asia")
+  @scala.inline
+  def `globe-europe`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-europe` = this.cast("globe-europe")
+  @scala.inline
+  def `globe-snow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-snow` = this.cast("globe-snow")
+  @scala.inline
+  def `globe-stand`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`globe-stand` = this.cast("globe-stand")
+  @scala.inline
+  def gofore: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gofore = this.cast("gofore")
+  @scala.inline
+  def `golf-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`golf-ball` = this.cast("golf-ball")
+  @scala.inline
+  def `golf-club`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`golf-club` = this.cast("golf-club")
+  @scala.inline
+  def goodreads: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.goodreads = this.cast("goodreads")
+  @scala.inline
+  def `goodreads-g`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`goodreads-g` = this.cast("goodreads-g")
+  @scala.inline
+  def google: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.google = this.cast("google")
+  @scala.inline
+  def `google-drive`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-drive` = this.cast("google-drive")
+  @scala.inline
+  def `google-play`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-play` = this.cast("google-play")
+  @scala.inline
+  def `google-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-plus` = this.cast("google-plus")
+  @scala.inline
+  def `google-plus-g`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-plus-g` = this.cast("google-plus-g")
+  @scala.inline
+  def `google-plus-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-plus-square` = this.cast("google-plus-square")
+  @scala.inline
+  def `google-wallet`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`google-wallet` = this.cast("google-wallet")
+  @scala.inline
+  def gopuram: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gopuram = this.cast("gopuram")
+  @scala.inline
+  def `graduation-cap`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`graduation-cap` = this.cast("graduation-cap")
+  @scala.inline
+  def gramophone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gramophone = this.cast("gramophone")
+  @scala.inline
+  def gratipay: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gratipay = this.cast("gratipay")
+  @scala.inline
+  def grav: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grav = this.cast("grav")
+  @scala.inline
+  def `greater-than`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`greater-than` = this.cast("greater-than")
+  @scala.inline
+  def `greater-than-equal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`greater-than-equal` = this.cast("greater-than-equal")
+  @scala.inline
+  def grimace: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grimace = this.cast("grimace")
+  @scala.inline
+  def grin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grin = this.cast("grin")
+  @scala.inline
+  def `grin-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-alt` = this.cast("grin-alt")
+  @scala.inline
+  def `grin-beam`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-beam` = this.cast("grin-beam")
+  @scala.inline
+  def `grin-beam-sweat`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-beam-sweat` = this.cast("grin-beam-sweat")
+  @scala.inline
+  def `grin-hearts`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-hearts` = this.cast("grin-hearts")
+  @scala.inline
+  def `grin-squint`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-squint` = this.cast("grin-squint")
+  @scala.inline
+  def `grin-squint-tears`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-squint-tears` = this.cast("grin-squint-tears")
+  @scala.inline
+  def `grin-stars`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-stars` = this.cast("grin-stars")
+  @scala.inline
+  def `grin-tears`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tears` = this.cast("grin-tears")
+  @scala.inline
+  def `grin-tongue`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tongue` = this.cast("grin-tongue")
+  @scala.inline
+  def `grin-tongue-squint`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tongue-squint` = this.cast("grin-tongue-squint")
+  @scala.inline
+  def `grin-tongue-wink`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tongue-wink` = this.cast("grin-tongue-wink")
+  @scala.inline
+  def `grin-wink`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-wink` = this.cast("grin-wink")
+  @scala.inline
+  def `grip-horizontal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-horizontal` = this.cast("grip-horizontal")
+  @scala.inline
+  def `grip-lines`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-lines` = this.cast("grip-lines")
+  @scala.inline
+  def `grip-lines-vertical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-lines-vertical` = this.cast("grip-lines-vertical")
+  @scala.inline
+  def `grip-vertical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-vertical` = this.cast("grip-vertical")
+  @scala.inline
+  def gripfire: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gripfire = this.cast("gripfire")
+  @scala.inline
+  def grunt: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grunt = this.cast("grunt")
+  @scala.inline
+  def guitar: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.guitar = this.cast("guitar")
+  @scala.inline
+  def `guitar-electric`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`guitar-electric` = this.cast("guitar-electric")
+  @scala.inline
+  def guitars: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.guitars = this.cast("guitars")
+  @scala.inline
+  def gulp: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gulp = this.cast("gulp")
+  @scala.inline
+  def `h-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`h-square` = this.cast("h-square")
+  @scala.inline
+  def h1: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h1 = this.cast("h1")
+  @scala.inline
+  def h2: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h2 = this.cast("h2")
+  @scala.inline
+  def h3: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h3 = this.cast("h3")
+  @scala.inline
+  def h4: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.h4 = this.cast("h4")
+  @scala.inline
+  def `hacker-news`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hacker-news` = this.cast("hacker-news")
+  @scala.inline
+  def `hacker-news-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hacker-news-square` = this.cast("hacker-news-square")
+  @scala.inline
+  def hackerrank: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hackerrank = this.cast("hackerrank")
+  @scala.inline
+  def hamburger: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hamburger = this.cast("hamburger")
+  @scala.inline
+  def hammer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hammer = this.cast("hammer")
+  @scala.inline
+  def `hammer-war`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hammer-war` = this.cast("hammer-war")
+  @scala.inline
+  def hamsa: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hamsa = this.cast("hamsa")
+  @scala.inline
+  def `hand-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-heart` = this.cast("hand-heart")
+  @scala.inline
+  def `hand-holding`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding` = this.cast("hand-holding")
+  @scala.inline
+  def `hand-holding-box`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-box` = this.cast("hand-holding-box")
+  @scala.inline
+  def `hand-holding-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-heart` = this.cast("hand-holding-heart")
+  @scala.inline
+  def `hand-holding-magic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-magic` = this.cast("hand-holding-magic")
+  @scala.inline
+  def `hand-holding-seedling`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-seedling` = this.cast("hand-holding-seedling")
+  @scala.inline
+  def `hand-holding-usd`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-usd` = this.cast("hand-holding-usd")
+  @scala.inline
+  def `hand-holding-water`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-holding-water` = this.cast("hand-holding-water")
+  @scala.inline
+  def `hand-lizard`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-lizard` = this.cast("hand-lizard")
+  @scala.inline
+  def `hand-middle-finger`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-middle-finger` = this.cast("hand-middle-finger")
+  @scala.inline
+  def `hand-paper`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-paper` = this.cast("hand-paper")
+  @scala.inline
+  def `hand-peace`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-peace` = this.cast("hand-peace")
+  @scala.inline
+  def `hand-point-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-down` = this.cast("hand-point-down")
+  @scala.inline
+  def `hand-point-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-left` = this.cast("hand-point-left")
+  @scala.inline
+  def `hand-point-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-right` = this.cast("hand-point-right")
+  @scala.inline
+  def `hand-point-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-point-up` = this.cast("hand-point-up")
+  @scala.inline
+  def `hand-pointer`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-pointer` = this.cast("hand-pointer")
+  @scala.inline
+  def `hand-receiving`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-receiving` = this.cast("hand-receiving")
+  @scala.inline
+  def `hand-rock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-rock` = this.cast("hand-rock")
+  @scala.inline
+  def `hand-scissors`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-scissors` = this.cast("hand-scissors")
+  @scala.inline
+  def `hand-spock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-spock` = this.cast("hand-spock")
+  @scala.inline
+  def hands: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hands = this.cast("hands")
+  @scala.inline
+  def `hands-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-heart` = this.cast("hands-heart")
+  @scala.inline
+  def `hands-helping`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-helping` = this.cast("hands-helping")
+  @scala.inline
+  def `hands-usd`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hands-usd` = this.cast("hands-usd")
+  @scala.inline
+  def handshake: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.handshake = this.cast("handshake")
+  @scala.inline
+  def `handshake-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`handshake-alt` = this.cast("handshake-alt")
+  @scala.inline
+  def hanukiah: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hanukiah = this.cast("hanukiah")
+  @scala.inline
+  def `hard-hat`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hard-hat` = this.cast("hard-hat")
+  @scala.inline
+  def hashtag: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hashtag = this.cast("hashtag")
+  @scala.inline
+  def `hat-chef`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-chef` = this.cast("hat-chef")
+  @scala.inline
+  def `hat-cowboy`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-cowboy` = this.cast("hat-cowboy")
+  @scala.inline
+  def `hat-cowboy-side`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-cowboy-side` = this.cast("hat-cowboy-side")
+  @scala.inline
+  def `hat-santa`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-santa` = this.cast("hat-santa")
+  @scala.inline
+  def `hat-winter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-winter` = this.cast("hat-winter")
+  @scala.inline
+  def `hat-witch`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-witch` = this.cast("hat-witch")
+  @scala.inline
+  def `hat-wizard`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-wizard` = this.cast("hat-wizard")
+  @scala.inline
+  def hdd: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hdd = this.cast("hdd")
+  @scala.inline
+  def `head-side`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side` = this.cast("head-side")
+  @scala.inline
+  def `head-side-brain`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-brain` = this.cast("head-side-brain")
+  @scala.inline
+  def `head-side-headphones`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-headphones` = this.cast("head-side-headphones")
+  @scala.inline
+  def `head-side-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-side-medical` = this.cast("head-side-medical")
+  @scala.inline
+  def `head-vr`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`head-vr` = this.cast("head-vr")
+  @scala.inline
+  def heading: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heading = this.cast("heading")
+  @scala.inline
+  def headphones: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.headphones = this.cast("headphones")
+  @scala.inline
+  def `headphones-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`headphones-alt` = this.cast("headphones-alt")
+  @scala.inline
+  def headset: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.headset = this.cast("headset")
+  @scala.inline
+  def heart: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heart = this.cast("heart")
+  @scala.inline
+  def `heart-broken`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-broken` = this.cast("heart-broken")
+  @scala.inline
+  def `heart-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-circle` = this.cast("heart-circle")
+  @scala.inline
+  def `heart-rate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-rate` = this.cast("heart-rate")
+  @scala.inline
+  def `heart-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-square` = this.cast("heart-square")
+  @scala.inline
+  def heartbeat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heartbeat = this.cast("heartbeat")
+  @scala.inline
+  def heat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.heat = this.cast("heat")
+  @scala.inline
+  def helicopter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.helicopter = this.cast("helicopter")
+  @scala.inline
+  def `helmet-battle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`helmet-battle` = this.cast("helmet-battle")
+  @scala.inline
+  def hexagon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hexagon = this.cast("hexagon")
+  @scala.inline
+  def highlighter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.highlighter = this.cast("highlighter")
+  @scala.inline
+  def hiking: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hiking = this.cast("hiking")
+  @scala.inline
+  def hippo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hippo = this.cast("hippo")
+  @scala.inline
+  def hips: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hips = this.cast("hips")
+  @scala.inline
+  def `hire-a-helper`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hire-a-helper` = this.cast("hire-a-helper")
+  @scala.inline
+  def history: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.history = this.cast("history")
+  @scala.inline
+  def `hockey-mask`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hockey-mask` = this.cast("hockey-mask")
+  @scala.inline
+  def `hockey-puck`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hockey-puck` = this.cast("hockey-puck")
+  @scala.inline
+  def `hockey-sticks`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hockey-sticks` = this.cast("hockey-sticks")
+  @scala.inline
+  def `holly-berry`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`holly-berry` = this.cast("holly-berry")
+  @scala.inline
+  def home: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.home = this.cast("home")
+  @scala.inline
+  def `home-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-alt` = this.cast("home-alt")
+  @scala.inline
+  def `home-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-heart` = this.cast("home-heart")
+  @scala.inline
+  def `home-lg`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-lg` = this.cast("home-lg")
+  @scala.inline
+  def `home-lg-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`home-lg-alt` = this.cast("home-lg-alt")
+  @scala.inline
+  def `hood-cloak`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hood-cloak` = this.cast("hood-cloak")
+  @scala.inline
+  def hooli: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hooli = this.cast("hooli")
+  @scala.inline
+  def `horizontal-rule`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`horizontal-rule` = this.cast("horizontal-rule")
+  @scala.inline
+  def hornbill: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hornbill = this.cast("hornbill")
+  @scala.inline
+  def horse: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.horse = this.cast("horse")
+  @scala.inline
+  def `horse-head`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`horse-head` = this.cast("horse-head")
+  @scala.inline
+  def `horse-saddle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`horse-saddle` = this.cast("horse-saddle")
+  @scala.inline
+  def hospital: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hospital = this.cast("hospital")
+  @scala.inline
+  def `hospital-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hospital-alt` = this.cast("hospital-alt")
+  @scala.inline
+  def `hospital-symbol`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hospital-symbol` = this.cast("hospital-symbol")
+  @scala.inline
+  def `hospital-user`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hospital-user` = this.cast("hospital-user")
+  @scala.inline
+  def hospitals: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hospitals = this.cast("hospitals")
+  @scala.inline
+  def `hot-tub`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hot-tub` = this.cast("hot-tub")
+  @scala.inline
+  def hotdog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hotdog = this.cast("hotdog")
+  @scala.inline
+  def hotel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hotel = this.cast("hotel")
+  @scala.inline
+  def hotjar: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hotjar = this.cast("hotjar")
+  @scala.inline
+  def hourglass: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hourglass = this.cast("hourglass")
+  @scala.inline
+  def `hourglass-end`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hourglass-end` = this.cast("hourglass-end")
+  @scala.inline
+  def `hourglass-half`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hourglass-half` = this.cast("hourglass-half")
+  @scala.inline
+  def `hourglass-start`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hourglass-start` = this.cast("hourglass-start")
+  @scala.inline
+  def house: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.house = this.cast("house")
+  @scala.inline
+  def `house-damage`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-damage` = this.cast("house-damage")
+  @scala.inline
+  def `house-day`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-day` = this.cast("house-day")
+  @scala.inline
+  def `house-flood`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-flood` = this.cast("house-flood")
+  @scala.inline
+  def `house-leave`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-leave` = this.cast("house-leave")
+  @scala.inline
+  def `house-night`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-night` = this.cast("house-night")
+  @scala.inline
+  def `house-return`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-return` = this.cast("house-return")
+  @scala.inline
+  def `house-signal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-signal` = this.cast("house-signal")
+  @scala.inline
+  def houzz: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.houzz = this.cast("houzz")
+  @scala.inline
+  def hryvnia: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hryvnia = this.cast("hryvnia")
+  @scala.inline
+  def html5: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.html5 = this.cast("html5")
+  @scala.inline
+  def hubspot: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hubspot = this.cast("hubspot")
+  @scala.inline
+  def humidity: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.humidity = this.cast("humidity")
+  @scala.inline
+  def hurricane: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hurricane = this.cast("hurricane")
+  @scala.inline
+  def `i-cursor`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`i-cursor` = this.cast("i-cursor")
+  @scala.inline
+  def `ice-cream`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ice-cream` = this.cast("ice-cream")
+  @scala.inline
+  def `ice-skate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ice-skate` = this.cast("ice-skate")
+  @scala.inline
+  def icicles: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.icicles = this.cast("icicles")
+  @scala.inline
+  def icons: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.icons = this.cast("icons")
+  @scala.inline
+  def `icons-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`icons-alt` = this.cast("icons-alt")
+  @scala.inline
+  def `id-badge`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`id-badge` = this.cast("id-badge")
+  @scala.inline
+  def `id-card`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`id-card` = this.cast("id-card")
+  @scala.inline
+  def `id-card-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`id-card-alt` = this.cast("id-card-alt")
+  @scala.inline
+  def ideal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ideal = this.cast("ideal")
+  @scala.inline
+  def igloo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.igloo = this.cast("igloo")
+  @scala.inline
+  def image: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.image = this.cast("image")
+  @scala.inline
+  def `image-polaroid`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`image-polaroid` = this.cast("image-polaroid")
+  @scala.inline
+  def images: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.images = this.cast("images")
+  @scala.inline
+  def imdb: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.imdb = this.cast("imdb")
+  @scala.inline
+  def inbox: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.inbox = this.cast("inbox")
+  @scala.inline
+  def `inbox-in`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`inbox-in` = this.cast("inbox-in")
+  @scala.inline
+  def `inbox-out`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`inbox-out` = this.cast("inbox-out")
+  @scala.inline
+  def indent: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.indent = this.cast("indent")
+  @scala.inline
+  def industry: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.industry = this.cast("industry")
+  @scala.inline
+  def `industry-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`industry-alt` = this.cast("industry-alt")
+  @scala.inline
+  def infinity: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.infinity = this.cast("infinity")
+  @scala.inline
+  def info: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.info = this.cast("info")
+  @scala.inline
+  def `info-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`info-circle` = this.cast("info-circle")
+  @scala.inline
+  def `info-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`info-square` = this.cast("info-square")
+  @scala.inline
+  def inhaler: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.inhaler = this.cast("inhaler")
+  @scala.inline
+  def instagram: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.instagram = this.cast("instagram")
+  @scala.inline
+  def integral: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.integral = this.cast("integral")
+  @scala.inline
+  def intercom: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.intercom = this.cast("intercom")
+  @scala.inline
+  def `internet-explorer`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`internet-explorer` = this.cast("internet-explorer")
+  @scala.inline
+  def intersection: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.intersection = this.cast("intersection")
+  @scala.inline
+  def inventory: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.inventory = this.cast("inventory")
+  @scala.inline
+  def invision: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.invision = this.cast("invision")
+  @scala.inline
+  def ioxhost: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ioxhost = this.cast("ioxhost")
+  @scala.inline
+  def `island-tropical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`island-tropical` = this.cast("island-tropical")
+  @scala.inline
+  def italic: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.italic = this.cast("italic")
+  @scala.inline
+  def `itch-io`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`itch-io` = this.cast("itch-io")
+  @scala.inline
+  def itunes: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.itunes = this.cast("itunes")
+  @scala.inline
+  def `itunes-note`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`itunes-note` = this.cast("itunes-note")
+  @scala.inline
+  def `jack-o-lantern`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jack-o-lantern` = this.cast("jack-o-lantern")
+  @JSName("java")
+  @scala.inline
+  def java_ : typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.java_ = this.cast("java")
+  @scala.inline
+  def jedi: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jedi = this.cast("jedi")
+  @scala.inline
+  def `jedi-order`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jedi-order` = this.cast("jedi-order")
+  @scala.inline
+  def jenkins: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jenkins = this.cast("jenkins")
+  @scala.inline
+  def jira: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jira = this.cast("jira")
+  @scala.inline
+  def joget: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joget = this.cast("joget")
+  @scala.inline
+  def joint: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joint = this.cast("joint")
+  @scala.inline
+  def joomla: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joomla = this.cast("joomla")
+  @scala.inline
+  def `journal-whills`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`journal-whills` = this.cast("journal-whills")
+  @scala.inline
+  def joystick: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.joystick = this.cast("joystick")
+  @scala.inline
+  def `js-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`js-square` = this.cast("js-square")
+  @JSName("js")
+  @scala.inline
+  def js_ : typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.js_ = this.cast("js")
+  @scala.inline
+  def jsfiddle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jsfiddle = this.cast("jsfiddle")
+  @scala.inline
+  def jug: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jug = this.cast("jug")
+  @scala.inline
+  def kaaba: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kaaba = this.cast("kaaba")
+  @scala.inline
+  def kaggle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kaggle = this.cast("kaggle")
+  @scala.inline
+  def kazoo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kazoo = this.cast("kazoo")
+  @scala.inline
+  def kerning: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kerning = this.cast("kerning")
+  @scala.inline
+  def key: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.key = this.cast("key")
+  @scala.inline
+  def `key-skeleton`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`key-skeleton` = this.cast("key-skeleton")
+  @scala.inline
+  def keybase: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keybase = this.cast("keybase")
+  @scala.inline
+  def keyboard: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keyboard = this.cast("keyboard")
+  @scala.inline
+  def keycdn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keycdn = this.cast("keycdn")
+  @scala.inline
+  def keynote: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.keynote = this.cast("keynote")
+  @scala.inline
+  def khanda: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.khanda = this.cast("khanda")
+  @scala.inline
+  def kickstarter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kickstarter = this.cast("kickstarter")
+  @scala.inline
+  def `kickstarter-k`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kickstarter-k` = this.cast("kickstarter-k")
+  @scala.inline
+  def kidneys: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kidneys = this.cast("kidneys")
+  @scala.inline
+  def kiss: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kiss = this.cast("kiss")
+  @scala.inline
+  def `kiss-beam`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kiss-beam` = this.cast("kiss-beam")
+  @scala.inline
+  def `kiss-wink-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kiss-wink-heart` = this.cast("kiss-wink-heart")
+  @scala.inline
+  def kite: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kite = this.cast("kite")
+  @scala.inline
+  def `kiwi-bird`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kiwi-bird` = this.cast("kiwi-bird")
+  @scala.inline
+  def `knife-kitchen`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`knife-kitchen` = this.cast("knife-kitchen")
+  @scala.inline
+  def korvue: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.korvue = this.cast("korvue")
+  @scala.inline
+  def lambda: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lambda = this.cast("lambda")
+  @scala.inline
+  def lamp: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lamp = this.cast("lamp")
+  @scala.inline
+  def `lamp-desk`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lamp-desk` = this.cast("lamp-desk")
+  @scala.inline
+  def `lamp-floor`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lamp-floor` = this.cast("lamp-floor")
+  @scala.inline
+  def landmark: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.landmark = this.cast("landmark")
+  @scala.inline
+  def `landmark-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`landmark-alt` = this.cast("landmark-alt")
+  @scala.inline
+  def language: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.language = this.cast("language")
+  @scala.inline
+  def laptop: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laptop = this.cast("laptop")
+  @scala.inline
+  def `laptop-code`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-code` = this.cast("laptop-code")
+  @scala.inline
+  def `laptop-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-medical` = this.cast("laptop-medical")
+  @scala.inline
+  def laravel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laravel = this.cast("laravel")
+  @scala.inline
+  def lasso: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lasso = this.cast("lasso")
+  @scala.inline
+  def lastfm: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lastfm = this.cast("lastfm")
+  @scala.inline
+  def `lastfm-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lastfm-square` = this.cast("lastfm-square")
+  @scala.inline
+  def laugh: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laugh = this.cast("laugh")
+  @scala.inline
+  def `laugh-beam`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laugh-beam` = this.cast("laugh-beam")
+  @scala.inline
+  def `laugh-squint`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laugh-squint` = this.cast("laugh-squint")
+  @scala.inline
+  def `laugh-wink`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laugh-wink` = this.cast("laugh-wink")
+  @scala.inline
+  def `layer-group`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-group` = this.cast("layer-group")
+  @scala.inline
+  def `layer-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-minus` = this.cast("layer-minus")
+  @scala.inline
+  def `layer-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-plus` = this.cast("layer-plus")
+  @scala.inline
+  def leaf: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.leaf = this.cast("leaf")
+  @scala.inline
+  def `leaf-heart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`leaf-heart` = this.cast("leaf-heart")
+  @scala.inline
+  def `leaf-maple`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`leaf-maple` = this.cast("leaf-maple")
+  @scala.inline
+  def `leaf-oak`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`leaf-oak` = this.cast("leaf-oak")
+  @scala.inline
+  def leanpub: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.leanpub = this.cast("leanpub")
+  @scala.inline
+  def lemon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lemon = this.cast("lemon")
+  @scala.inline
+  def less: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.less = this.cast("less")
+  @scala.inline
+  def `less-than`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`less-than` = this.cast("less-than")
+  @scala.inline
+  def `less-than-equal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`less-than-equal` = this.cast("less-than-equal")
+  @scala.inline
+  def `level-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-down` = this.cast("level-down")
+  @scala.inline
+  def `level-down-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-down-alt` = this.cast("level-down-alt")
+  @scala.inline
+  def `level-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-up` = this.cast("level-up")
+  @scala.inline
+  def `level-up-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`level-up-alt` = this.cast("level-up-alt")
+  @scala.inline
+  def `life-ring`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`life-ring` = this.cast("life-ring")
+  @scala.inline
+  def `light-ceiling`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-ceiling` = this.cast("light-ceiling")
+  @scala.inline
+  def `light-switch`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-switch` = this.cast("light-switch")
+  @scala.inline
+  def `light-switch-off`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-switch-off` = this.cast("light-switch-off")
+  @scala.inline
+  def `light-switch-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`light-switch-on` = this.cast("light-switch-on")
+  @scala.inline
+  def lightbulb: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lightbulb = this.cast("lightbulb")
+  @scala.inline
+  def `lightbulb-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-dollar` = this.cast("lightbulb-dollar")
+  @scala.inline
+  def `lightbulb-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-exclamation` = this.cast("lightbulb-exclamation")
+  @scala.inline
+  def `lightbulb-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-on` = this.cast("lightbulb-on")
+  @scala.inline
+  def `lightbulb-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-slash` = this.cast("lightbulb-slash")
+  @scala.inline
+  def `lights-holiday`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lights-holiday` = this.cast("lights-holiday")
+  @scala.inline
+  def line: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.line = this.cast("line")
+  @scala.inline
+  def `line-columns`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`line-columns` = this.cast("line-columns")
+  @scala.inline
+  def `line-height`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`line-height` = this.cast("line-height")
+  @scala.inline
+  def link: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.link = this.cast("link")
+  @scala.inline
+  def linkedin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.linkedin = this.cast("linkedin")
+  @scala.inline
+  def `linkedin-in`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`linkedin-in` = this.cast("linkedin-in")
+  @scala.inline
+  def linode: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.linode = this.cast("linode")
+  @scala.inline
+  def linux: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.linux = this.cast("linux")
+  @scala.inline
+  def lips: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lips = this.cast("lips")
+  @scala.inline
+  def `lira-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lira-sign` = this.cast("lira-sign")
+  @scala.inline
+  def list: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.list = this.cast("list")
+  @scala.inline
+  def `list-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-alt` = this.cast("list-alt")
+  @scala.inline
+  def `list-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-music` = this.cast("list-music")
+  @scala.inline
+  def `list-ol`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-ol` = this.cast("list-ol")
+  @scala.inline
+  def `list-ul`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-ul` = this.cast("list-ul")
+  @scala.inline
+  def location: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.location = this.cast("location")
+  @scala.inline
+  def `location-arrow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`location-arrow` = this.cast("location-arrow")
+  @scala.inline
+  def `location-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`location-circle` = this.cast("location-circle")
+  @scala.inline
+  def `location-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`location-slash` = this.cast("location-slash")
+  @scala.inline
+  def lock: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lock = this.cast("lock")
+  @scala.inline
+  def `lock-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-alt` = this.cast("lock-alt")
+  @scala.inline
+  def `lock-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-open` = this.cast("lock-open")
+  @scala.inline
+  def `lock-open-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-open-alt` = this.cast("lock-open-alt")
+  @scala.inline
+  def `long-arrow-alt-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-down` = this.cast("long-arrow-alt-down")
+  @scala.inline
+  def `long-arrow-alt-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-left` = this.cast("long-arrow-alt-left")
+  @scala.inline
+  def `long-arrow-alt-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-right` = this.cast("long-arrow-alt-right")
+  @scala.inline
+  def `long-arrow-alt-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-up` = this.cast("long-arrow-alt-up")
+  @scala.inline
+  def `long-arrow-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-down` = this.cast("long-arrow-down")
+  @scala.inline
+  def `long-arrow-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-left` = this.cast("long-arrow-left")
+  @scala.inline
+  def `long-arrow-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-right` = this.cast("long-arrow-right")
+  @scala.inline
+  def `long-arrow-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-up` = this.cast("long-arrow-up")
+  @scala.inline
+  def loveseat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.loveseat = this.cast("loveseat")
+  @scala.inline
+  def `low-vision`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`low-vision` = this.cast("low-vision")
+  @scala.inline
+  def luchador: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.luchador = this.cast("luchador")
+  @scala.inline
+  def `luggage-cart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`luggage-cart` = this.cast("luggage-cart")
+  @scala.inline
+  def lungs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lungs = this.cast("lungs")
+  @scala.inline
+  def lyft: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lyft = this.cast("lyft")
+  @scala.inline
+  def mace: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mace = this.cast("mace")
+  @scala.inline
+  def magento: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magento = this.cast("magento")
+  @scala.inline
+  def magic: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magic = this.cast("magic")
+  @scala.inline
+  def magnet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.magnet = this.cast("magnet")
+  @scala.inline
+  def `mail-bulk`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mail-bulk` = this.cast("mail-bulk")
+  @scala.inline
+  def mailbox: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mailbox = this.cast("mailbox")
+  @scala.inline
+  def mailchimp: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mailchimp = this.cast("mailchimp")
+  @scala.inline
+  def male: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.male = this.cast("male")
+  @scala.inline
+  def mandalorian: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mandalorian = this.cast("mandalorian")
+  @scala.inline
+  def mandolin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mandolin = this.cast("mandolin")
+  @scala.inline
+  def map: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.map = this.cast("map")
+  @scala.inline
+  def `map-marked`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marked` = this.cast("map-marked")
+  @scala.inline
+  def `map-marked-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marked-alt` = this.cast("map-marked-alt")
+  @scala.inline
+  def `map-marker`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker` = this.cast("map-marker")
+  @scala.inline
+  def `map-marker-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-alt` = this.cast("map-marker-alt")
+  @scala.inline
+  def `map-marker-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-alt-slash` = this.cast("map-marker-alt-slash")
+  @scala.inline
+  def `map-marker-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-check` = this.cast("map-marker-check")
+  @scala.inline
+  def `map-marker-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-edit` = this.cast("map-marker-edit")
+  @scala.inline
+  def `map-marker-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-exclamation` = this.cast("map-marker-exclamation")
+  @scala.inline
+  def `map-marker-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-minus` = this.cast("map-marker-minus")
+  @scala.inline
+  def `map-marker-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-plus` = this.cast("map-marker-plus")
+  @scala.inline
+  def `map-marker-question`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-question` = this.cast("map-marker-question")
+  @scala.inline
+  def `map-marker-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-slash` = this.cast("map-marker-slash")
+  @scala.inline
+  def `map-marker-smile`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-smile` = this.cast("map-marker-smile")
+  @scala.inline
+  def `map-marker-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-times` = this.cast("map-marker-times")
+  @scala.inline
+  def `map-pin`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-pin` = this.cast("map-pin")
+  @scala.inline
+  def `map-signs`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-signs` = this.cast("map-signs")
+  @scala.inline
+  def markdown: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.markdown = this.cast("markdown")
+  @scala.inline
+  def marker: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.marker = this.cast("marker")
+  @scala.inline
+  def mars: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mars = this.cast("mars")
+  @scala.inline
+  def `mars-double`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-double` = this.cast("mars-double")
+  @scala.inline
+  def `mars-stroke`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-stroke` = this.cast("mars-stroke")
+  @scala.inline
+  def `mars-stroke-h`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-stroke-h` = this.cast("mars-stroke-h")
+  @scala.inline
+  def `mars-stroke-v`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-stroke-v` = this.cast("mars-stroke-v")
+  @scala.inline
+  def mask: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mask = this.cast("mask")
+  @scala.inline
+  def mastodon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mastodon = this.cast("mastodon")
+  @scala.inline
+  def maxcdn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.maxcdn = this.cast("maxcdn")
+  @scala.inline
+  def mdb: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mdb = this.cast("mdb")
+  @scala.inline
+  def meat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meat = this.cast("meat")
+  @scala.inline
+  def medal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medal = this.cast("medal")
+  @scala.inline
+  def medapps: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medapps = this.cast("medapps")
+  @scala.inline
+  def medium: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medium = this.cast("medium")
+  @scala.inline
+  def `medium-m`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`medium-m` = this.cast("medium-m")
+  @scala.inline
+  def medkit: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medkit = this.cast("medkit")
+  @scala.inline
+  def medrt: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.medrt = this.cast("medrt")
+  @scala.inline
+  def meetup: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meetup = this.cast("meetup")
+  @scala.inline
+  def megaphone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.megaphone = this.cast("megaphone")
+  @scala.inline
+  def megaport: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.megaport = this.cast("megaport")
+  @scala.inline
+  def meh: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meh = this.cast("meh")
+  @scala.inline
+  def `meh-blank`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`meh-blank` = this.cast("meh-blank")
+  @scala.inline
+  def `meh-rolling-eyes`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`meh-rolling-eyes` = this.cast("meh-rolling-eyes")
+  @scala.inline
+  def memory: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.memory = this.cast("memory")
+  @scala.inline
+  def mendeley: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mendeley = this.cast("mendeley")
+  @scala.inline
+  def menorah: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.menorah = this.cast("menorah")
+  @scala.inline
+  def mercury: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mercury = this.cast("mercury")
+  @scala.inline
+  def meteor: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.meteor = this.cast("meteor")
+  @scala.inline
+  def microblog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microblog = this.cast("microblog")
+  @scala.inline
+  def microchip: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microchip = this.cast("microchip")
+  @scala.inline
+  def microphone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microphone = this.cast("microphone")
+  @scala.inline
+  def `microphone-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-alt` = this.cast("microphone-alt")
+  @scala.inline
+  def `microphone-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-alt-slash` = this.cast("microphone-alt-slash")
+  @scala.inline
+  def `microphone-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-slash` = this.cast("microphone-slash")
+  @scala.inline
+  def `microphone-stand`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`microphone-stand` = this.cast("microphone-stand")
+  @scala.inline
+  def microscope: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microscope = this.cast("microscope")
+  @scala.inline
+  def microsoft: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microsoft = this.cast("microsoft")
+  @scala.inline
+  def microwave: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microwave = this.cast("microwave")
+  @scala.inline
+  def `mind-share`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mind-share` = this.cast("mind-share")
+  @scala.inline
+  def minus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.minus = this.cast("minus")
+  @scala.inline
+  def `minus-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-circle` = this.cast("minus-circle")
+  @scala.inline
+  def `minus-hexagon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-hexagon` = this.cast("minus-hexagon")
+  @scala.inline
+  def `minus-octagon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-octagon` = this.cast("minus-octagon")
+  @scala.inline
+  def `minus-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`minus-square` = this.cast("minus-square")
+  @scala.inline
+  def mistletoe: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mistletoe = this.cast("mistletoe")
+  @scala.inline
+  def mitten: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mitten = this.cast("mitten")
+  @scala.inline
+  def mix: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mix = this.cast("mix")
+  @scala.inline
+  def mixcloud: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mixcloud = this.cast("mixcloud")
+  @scala.inline
+  def mizuni: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mizuni = this.cast("mizuni")
+  @scala.inline
+  def mobile: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mobile = this.cast("mobile")
+  @scala.inline
+  def `mobile-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mobile-alt` = this.cast("mobile-alt")
+  @scala.inline
+  def `mobile-android`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mobile-android` = this.cast("mobile-android")
+  @scala.inline
+  def `mobile-android-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mobile-android-alt` = this.cast("mobile-android-alt")
+  @scala.inline
+  def modx: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.modx = this.cast("modx")
+  @scala.inline
+  def monero: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.monero = this.cast("monero")
+  @scala.inline
+  def `money-bill`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill` = this.cast("money-bill")
+  @scala.inline
+  def `money-bill-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill-alt` = this.cast("money-bill-alt")
+  @scala.inline
+  def `money-bill-wave`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill-wave` = this.cast("money-bill-wave")
+  @scala.inline
+  def `money-bill-wave-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-bill-wave-alt` = this.cast("money-bill-wave-alt")
+  @scala.inline
+  def `money-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check` = this.cast("money-check")
+  @scala.inline
+  def `money-check-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check-alt` = this.cast("money-check-alt")
+  @scala.inline
+  def `money-check-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check-edit` = this.cast("money-check-edit")
+  @scala.inline
+  def `money-check-edit-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`money-check-edit-alt` = this.cast("money-check-edit-alt")
+  @scala.inline
+  def `monitor-heart-rate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`monitor-heart-rate` = this.cast("monitor-heart-rate")
+  @scala.inline
+  def monkey: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.monkey = this.cast("monkey")
+  @scala.inline
+  def monument: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.monument = this.cast("monument")
+  @scala.inline
+  def moon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.moon = this.cast("moon")
+  @scala.inline
+  def `moon-cloud`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`moon-cloud` = this.cast("moon-cloud")
+  @scala.inline
+  def `moon-stars`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`moon-stars` = this.cast("moon-stars")
+  @scala.inline
+  def `mortar-pestle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mortar-pestle` = this.cast("mortar-pestle")
+  @scala.inline
+  def mosque: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mosque = this.cast("mosque")
+  @scala.inline
+  def motorcycle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.motorcycle = this.cast("motorcycle")
+  @scala.inline
+  def mountain: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mountain = this.cast("mountain")
+  @scala.inline
+  def mountains: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mountains = this.cast("mountains")
+  @scala.inline
+  def mouse: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mouse = this.cast("mouse")
+  @scala.inline
+  def `mouse-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mouse-alt` = this.cast("mouse-alt")
+  @scala.inline
+  def `mouse-pointer`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mouse-pointer` = this.cast("mouse-pointer")
+  @scala.inline
+  def `mp3-player`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mp3-player` = this.cast("mp3-player")
+  @scala.inline
+  def mug: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mug = this.cast("mug")
+  @scala.inline
+  def `mug-hot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mug-hot` = this.cast("mug-hot")
+  @scala.inline
+  def `mug-marshmallows`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mug-marshmallows` = this.cast("mug-marshmallows")
+  @scala.inline
+  def `mug-tea`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mug-tea` = this.cast("mug-tea")
+  @scala.inline
+  def music: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.music = this.cast("music")
+  @scala.inline
+  def `music-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`music-alt` = this.cast("music-alt")
+  @scala.inline
+  def `music-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`music-alt-slash` = this.cast("music-alt-slash")
+  @scala.inline
+  def `music-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`music-slash` = this.cast("music-slash")
+  @scala.inline
+  def napster: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.napster = this.cast("napster")
+  @scala.inline
+  def narwhal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.narwhal = this.cast("narwhal")
+  @scala.inline
+  def neos: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.neos = this.cast("neos")
+  @scala.inline
+  def `network-wired`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`network-wired` = this.cast("network-wired")
+  @scala.inline
+  def neuter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.neuter = this.cast("neuter")
+  @scala.inline
+  def newspaper: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.newspaper = this.cast("newspaper")
+  @scala.inline
+  def nimblr: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.nimblr = this.cast("nimblr")
+  @scala.inline
+  def node: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.node = this.cast("node")
+  @scala.inline
+  def `node-js`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`node-js` = this.cast("node-js")
+  @scala.inline
+  def `not-equal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`not-equal` = this.cast("not-equal")
+  @scala.inline
+  def `notes-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`notes-medical` = this.cast("notes-medical")
+  @scala.inline
+  def npm: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.npm = this.cast("npm")
+  @scala.inline
+  def ns8: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ns8 = this.cast("ns8")
+  @scala.inline
+  def nutritionix: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.nutritionix = this.cast("nutritionix")
+  @scala.inline
+  def `object-group`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`object-group` = this.cast("object-group")
+  @scala.inline
+  def `object-ungroup`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`object-ungroup` = this.cast("object-ungroup")
+  @scala.inline
+  def octagon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.octagon = this.cast("octagon")
+  @scala.inline
+  def odnoklassniki: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.odnoklassniki = this.cast("odnoklassniki")
+  @scala.inline
+  def `odnoklassniki-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`odnoklassniki-square` = this.cast("odnoklassniki-square")
+  @scala.inline
+  def `oil-can`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`oil-can` = this.cast("oil-can")
+  @scala.inline
+  def `oil-temp`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`oil-temp` = this.cast("oil-temp")
+  @scala.inline
+  def `old-republic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`old-republic` = this.cast("old-republic")
+  @scala.inline
+  def om: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.om = this.cast("om")
+  @scala.inline
+  def omega: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.omega = this.cast("omega")
+  @scala.inline
+  def opencart: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.opencart = this.cast("opencart")
+  @scala.inline
+  def openid: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.openid = this.cast("openid")
+  @scala.inline
+  def opera: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.opera = this.cast("opera")
+  @scala.inline
+  def `optin-monster`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`optin-monster` = this.cast("optin-monster")
+  @scala.inline
+  def orcid: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.orcid = this.cast("orcid")
+  @scala.inline
+  def ornament: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ornament = this.cast("ornament")
+  @scala.inline
+  def osi: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.osi = this.cast("osi")
+  @scala.inline
+  def otter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.otter = this.cast("otter")
+  @scala.inline
+  def outdent: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.outdent = this.cast("outdent")
+  @scala.inline
+  def outlet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.outlet = this.cast("outlet")
+  @scala.inline
+  def oven: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.oven = this.cast("oven")
+  @scala.inline
+  def overline: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.overline = this.cast("overline")
+  @scala.inline
+  def `page-break`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`page-break` = this.cast("page-break")
+  @scala.inline
+  def page4: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.page4 = this.cast("page4")
+  @scala.inline
+  def pagelines: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pagelines = this.cast("pagelines")
+  @scala.inline
+  def pager: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pager = this.cast("pager")
+  @scala.inline
+  def `paint-brush`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paint-brush` = this.cast("paint-brush")
+  @scala.inline
+  def `paint-brush-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paint-brush-alt` = this.cast("paint-brush-alt")
+  @scala.inline
+  def `paint-roller`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paint-roller` = this.cast("paint-roller")
+  @scala.inline
+  def palette: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.palette = this.cast("palette")
+  @scala.inline
+  def palfed: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.palfed = this.cast("palfed")
+  @scala.inline
+  def pallet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pallet = this.cast("pallet")
+  @scala.inline
+  def `pallet-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pallet-alt` = this.cast("pallet-alt")
+  @scala.inline
+  def `paper-plane`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paper-plane` = this.cast("paper-plane")
+  @scala.inline
+  def paperclip: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paperclip = this.cast("paperclip")
+  @scala.inline
+  def `parachute-box`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parachute-box` = this.cast("parachute-box")
+  @scala.inline
+  def paragraph: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paragraph = this.cast("paragraph")
+  @scala.inline
+  def `paragraph-rtl`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paragraph-rtl` = this.cast("paragraph-rtl")
+  @scala.inline
+  def parking: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.parking = this.cast("parking")
+  @scala.inline
+  def `parking-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parking-circle` = this.cast("parking-circle")
+  @scala.inline
+  def `parking-circle-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parking-circle-slash` = this.cast("parking-circle-slash")
+  @scala.inline
+  def `parking-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`parking-slash` = this.cast("parking-slash")
+  @scala.inline
+  def passport: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.passport = this.cast("passport")
+  @scala.inline
+  def pastafarianism: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pastafarianism = this.cast("pastafarianism")
+  @scala.inline
+  def paste: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paste = this.cast("paste")
+  @scala.inline
+  def patreon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.patreon = this.cast("patreon")
+  @scala.inline
+  def pause: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pause = this.cast("pause")
+  @scala.inline
+  def `pause-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pause-circle` = this.cast("pause-circle")
+  @scala.inline
+  def paw: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paw = this.cast("paw")
+  @scala.inline
+  def `paw-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paw-alt` = this.cast("paw-alt")
+  @scala.inline
+  def `paw-claws`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`paw-claws` = this.cast("paw-claws")
+  @scala.inline
+  def paypal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paypal = this.cast("paypal")
+  @scala.inline
+  def peace: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.peace = this.cast("peace")
+  @scala.inline
+  def pegasus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pegasus = this.cast("pegasus")
+  @scala.inline
+  def pen: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pen = this.cast("pen")
+  @scala.inline
+  def `pen-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-alt` = this.cast("pen-alt")
+  @scala.inline
+  def `pen-fancy`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-fancy` = this.cast("pen-fancy")
+  @scala.inline
+  def `pen-nib`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-nib` = this.cast("pen-nib")
+  @scala.inline
+  def `pen-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-square` = this.cast("pen-square")
+  @scala.inline
+  def pencil: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pencil = this.cast("pencil")
+  @scala.inline
+  def `pencil-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-alt` = this.cast("pencil-alt")
+  @scala.inline
+  def `pencil-paintbrush`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-paintbrush` = this.cast("pencil-paintbrush")
+  @scala.inline
+  def `pencil-ruler`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-ruler` = this.cast("pencil-ruler")
+  @scala.inline
+  def pennant: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pennant = this.cast("pennant")
+  @scala.inline
+  def `penny-arcade`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`penny-arcade` = this.cast("penny-arcade")
+  @scala.inline
+  def `people-carry`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-carry` = this.cast("people-carry")
+  @scala.inline
+  def `pepper-hot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pepper-hot` = this.cast("pepper-hot")
+  @scala.inline
+  def percent: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.percent = this.cast("percent")
+  @scala.inline
+  def percentage: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.percentage = this.cast("percentage")
+  @scala.inline
+  def periscope: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.periscope = this.cast("periscope")
+  @scala.inline
+  def `person-booth`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-booth` = this.cast("person-booth")
+  @scala.inline
+  def `person-carry`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-carry` = this.cast("person-carry")
+  @scala.inline
+  def `person-dolly`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-dolly` = this.cast("person-dolly")
+  @scala.inline
+  def `person-dolly-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-dolly-empty` = this.cast("person-dolly-empty")
+  @scala.inline
+  def `person-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-sign` = this.cast("person-sign")
+  @scala.inline
+  def phabricator: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.phabricator = this.cast("phabricator")
+  @scala.inline
+  def `phoenix-framework`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phoenix-framework` = this.cast("phoenix-framework")
+  @scala.inline
+  def `phoenix-squadron`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phoenix-squadron` = this.cast("phoenix-squadron")
+  @scala.inline
+  def phone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.phone = this.cast("phone")
+  @scala.inline
+  def `phone-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-alt` = this.cast("phone-alt")
+  @scala.inline
+  def `phone-laptop`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-laptop` = this.cast("phone-laptop")
+  @scala.inline
+  def `phone-office`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-office` = this.cast("phone-office")
+  @scala.inline
+  def `phone-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-plus` = this.cast("phone-plus")
+  @scala.inline
+  def `phone-rotary`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-rotary` = this.cast("phone-rotary")
+  @scala.inline
+  def `phone-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-slash` = this.cast("phone-slash")
+  @scala.inline
+  def `phone-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-square` = this.cast("phone-square")
+  @scala.inline
+  def `phone-square-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-square-alt` = this.cast("phone-square-alt")
+  @scala.inline
+  def `phone-volume`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-volume` = this.cast("phone-volume")
+  @scala.inline
+  def `photo-video`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`photo-video` = this.cast("photo-video")
+  @scala.inline
+  def php: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.php = this.cast("php")
+  @scala.inline
+  def pi: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pi = this.cast("pi")
+  @scala.inline
+  def piano: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.piano = this.cast("piano")
+  @scala.inline
+  def `piano-keyboard`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`piano-keyboard` = this.cast("piano-keyboard")
+  @scala.inline
+  def pie: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pie = this.cast("pie")
+  @scala.inline
+  def `pied-piper`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper` = this.cast("pied-piper")
+  @scala.inline
+  def `pied-piper-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-alt` = this.cast("pied-piper-alt")
+  @scala.inline
+  def `pied-piper-hat`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-hat` = this.cast("pied-piper-hat")
+  @scala.inline
+  def `pied-piper-pp`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-pp` = this.cast("pied-piper-pp")
+  @scala.inline
+  def `pied-piper-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pied-piper-square` = this.cast("pied-piper-square")
+  @scala.inline
+  def pig: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pig = this.cast("pig")
+  @scala.inline
+  def `piggy-bank`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`piggy-bank` = this.cast("piggy-bank")
+  @scala.inline
+  def pills: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pills = this.cast("pills")
+  @scala.inline
+  def pinterest: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pinterest = this.cast("pinterest")
+  @scala.inline
+  def `pinterest-p`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pinterest-p` = this.cast("pinterest-p")
+  @scala.inline
+  def `pinterest-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pinterest-square` = this.cast("pinterest-square")
+  @scala.inline
+  def pizza: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pizza = this.cast("pizza")
+  @scala.inline
+  def `pizza-slice`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pizza-slice` = this.cast("pizza-slice")
+  @scala.inline
+  def `place-of-worship`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`place-of-worship` = this.cast("place-of-worship")
+  @scala.inline
+  def plane: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.plane = this.cast("plane")
+  @scala.inline
+  def `plane-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-alt` = this.cast("plane-alt")
+  @scala.inline
+  def `plane-arrival`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-arrival` = this.cast("plane-arrival")
+  @scala.inline
+  def `plane-departure`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-departure` = this.cast("plane-departure")
+  @scala.inline
+  def `planet-moon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-moon` = this.cast("planet-moon")
+  @scala.inline
+  def `planet-ringed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`planet-ringed` = this.cast("planet-ringed")
+  @scala.inline
+  def play: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.play = this.cast("play")
+  @scala.inline
+  def `play-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`play-circle` = this.cast("play-circle")
+  @scala.inline
+  def playstation: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.playstation = this.cast("playstation")
+  @scala.inline
+  def plug: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.plug = this.cast("plug")
+  @scala.inline
+  def plus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.plus = this.cast("plus")
+  @scala.inline
+  def `plus-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-circle` = this.cast("plus-circle")
+  @scala.inline
+  def `plus-hexagon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-hexagon` = this.cast("plus-hexagon")
+  @scala.inline
+  def `plus-octagon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-octagon` = this.cast("plus-octagon")
+  @scala.inline
+  def `plus-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plus-square` = this.cast("plus-square")
+  @scala.inline
+  def podcast: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.podcast = this.cast("podcast")
+  @scala.inline
+  def podium: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.podium = this.cast("podium")
+  @scala.inline
+  def `podium-star`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`podium-star` = this.cast("podium-star")
+  @scala.inline
+  def `police-box`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`police-box` = this.cast("police-box")
+  @scala.inline
+  def poll: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.poll = this.cast("poll")
+  @scala.inline
+  def `poll-h`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`poll-h` = this.cast("poll-h")
+  @scala.inline
+  def `poll-people`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`poll-people` = this.cast("poll-people")
+  @scala.inline
+  def poo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.poo = this.cast("poo")
+  @scala.inline
+  def `poo-storm`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`poo-storm` = this.cast("poo-storm")
+  @scala.inline
+  def poop: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.poop = this.cast("poop")
+  @scala.inline
+  def popcorn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.popcorn = this.cast("popcorn")
+  @scala.inline
+  def `portal-enter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`portal-enter` = this.cast("portal-enter")
+  @scala.inline
+  def `portal-exit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`portal-exit` = this.cast("portal-exit")
+  @scala.inline
+  def portrait: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.portrait = this.cast("portrait")
+  @scala.inline
+  def `pound-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pound-sign` = this.cast("pound-sign")
+  @scala.inline
+  def `power-off`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`power-off` = this.cast("power-off")
+  @scala.inline
+  def pray: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pray = this.cast("pray")
+  @scala.inline
+  def `praying-hands`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`praying-hands` = this.cast("praying-hands")
+  @scala.inline
+  def prescription: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.prescription = this.cast("prescription")
+  @scala.inline
+  def `prescription-bottle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`prescription-bottle` = this.cast("prescription-bottle")
+  @scala.inline
+  def `prescription-bottle-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`prescription-bottle-alt` = this.cast("prescription-bottle-alt")
+  @scala.inline
+  def presentation: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.presentation = this.cast("presentation")
+  @scala.inline
+  def print: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.print = this.cast("print")
+  @scala.inline
+  def `print-search`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`print-search` = this.cast("print-search")
+  @scala.inline
+  def `print-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`print-slash` = this.cast("print-slash")
+  @scala.inline
+  def procedures: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.procedures = this.cast("procedures")
+  @scala.inline
+  def `product-hunt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`product-hunt` = this.cast("product-hunt")
+  @scala.inline
+  def `project-diagram`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`project-diagram` = this.cast("project-diagram")
+  @scala.inline
+  def projector: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.projector = this.cast("projector")
+  @scala.inline
+  def pumpkin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pumpkin = this.cast("pumpkin")
+  @scala.inline
+  def pushed: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pushed = this.cast("pushed")
+  @scala.inline
+  def `puzzle-piece`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`puzzle-piece` = this.cast("puzzle-piece")
+  @scala.inline
+  def python: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.python = this.cast("python")
+  @scala.inline
+  def qq: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.qq = this.cast("qq")
+  @scala.inline
+  def qrcode: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.qrcode = this.cast("qrcode")
+  @scala.inline
+  def question: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.question = this.cast("question")
+  @scala.inline
+  def `question-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`question-circle` = this.cast("question-circle")
+  @scala.inline
+  def `question-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`question-square` = this.cast("question-square")
+  @scala.inline
+  def quidditch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quidditch = this.cast("quidditch")
+  @scala.inline
+  def quinscape: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quinscape = this.cast("quinscape")
+  @scala.inline
+  def quora: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quora = this.cast("quora")
+  @scala.inline
+  def `quote-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`quote-left` = this.cast("quote-left")
+  @scala.inline
+  def `quote-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`quote-right` = this.cast("quote-right")
+  @scala.inline
+  def quran: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.quran = this.cast("quran")
+  @scala.inline
+  def `r-project`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`r-project` = this.cast("r-project")
+  @scala.inline
+  def rabbit: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rabbit = this.cast("rabbit")
+  @scala.inline
+  def `rabbit-fast`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rabbit-fast` = this.cast("rabbit-fast")
+  @scala.inline
+  def racquet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.racquet = this.cast("racquet")
+  @scala.inline
+  def radar: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.radar = this.cast("radar")
+  @scala.inline
+  def radiation: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.radiation = this.cast("radiation")
+  @scala.inline
+  def `radiation-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`radiation-alt` = this.cast("radiation-alt")
+  @scala.inline
+  def radio: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.radio = this.cast("radio")
+  @scala.inline
+  def `radio-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`radio-alt` = this.cast("radio-alt")
+  @scala.inline
+  def rainbow: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rainbow = this.cast("rainbow")
+  @scala.inline
+  def raindrops: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.raindrops = this.cast("raindrops")
+  @scala.inline
+  def ram: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ram = this.cast("ram")
+  @scala.inline
+  def `ramp-loading`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ramp-loading` = this.cast("ramp-loading")
+  @scala.inline
+  def random: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.random = this.cast("random")
+  @scala.inline
+  def `raspberry-pi`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`raspberry-pi` = this.cast("raspberry-pi")
+  @scala.inline
+  def ravelry: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ravelry = this.cast("ravelry")
+  @scala.inline
+  def raygun: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.raygun = this.cast("raygun")
+  @scala.inline
+  def react: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.react = this.cast("react")
+  @scala.inline
+  def reacteurope: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.reacteurope = this.cast("reacteurope")
+  @scala.inline
+  def readme: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.readme = this.cast("readme")
+  @scala.inline
+  def rebel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rebel = this.cast("rebel")
+  @scala.inline
+  def receipt: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.receipt = this.cast("receipt")
+  @scala.inline
+  def `record-vinyl`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`record-vinyl` = this.cast("record-vinyl")
+  @scala.inline
+  def `rectangle-landscape`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rectangle-landscape` = this.cast("rectangle-landscape")
+  @scala.inline
+  def `rectangle-portrait`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rectangle-portrait` = this.cast("rectangle-portrait")
+  @scala.inline
+  def `rectangle-wide`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rectangle-wide` = this.cast("rectangle-wide")
+  @scala.inline
+  def recycle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.recycle = this.cast("recycle")
+  @scala.inline
+  def `red-river`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`red-river` = this.cast("red-river")
+  @scala.inline
+  def reddit: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.reddit = this.cast("reddit")
+  @scala.inline
+  def `reddit-alien`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`reddit-alien` = this.cast("reddit-alien")
+  @scala.inline
+  def `reddit-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`reddit-square` = this.cast("reddit-square")
+  @scala.inline
+  def redhat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.redhat = this.cast("redhat")
+  @scala.inline
+  def redo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.redo = this.cast("redo")
+  @scala.inline
+  def `redo-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`redo-alt` = this.cast("redo-alt")
+  @scala.inline
+  def refrigerator: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.refrigerator = this.cast("refrigerator")
+  @scala.inline
+  def registered: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.registered = this.cast("registered")
+  @scala.inline
+  def `remove-format`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`remove-format` = this.cast("remove-format")
+  @scala.inline
+  def renren: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.renren = this.cast("renren")
+  @scala.inline
+  def repeat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.repeat = this.cast("repeat")
+  @scala.inline
+  def `repeat-1`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`repeat-1` = this.cast("repeat-1")
+  @scala.inline
+  def `repeat-1-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`repeat-1-alt` = this.cast("repeat-1-alt")
+  @scala.inline
+  def `repeat-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`repeat-alt` = this.cast("repeat-alt")
+  @scala.inline
+  def reply: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.reply = this.cast("reply")
+  @scala.inline
+  def `reply-all`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`reply-all` = this.cast("reply-all")
+  @scala.inline
+  def replyd: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.replyd = this.cast("replyd")
+  @scala.inline
+  def republican: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.republican = this.cast("republican")
+  @scala.inline
+  def researchgate: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.researchgate = this.cast("researchgate")
+  @scala.inline
+  def resolving: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.resolving = this.cast("resolving")
+  @scala.inline
+  def restroom: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.restroom = this.cast("restroom")
+  @scala.inline
+  def retweet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.retweet = this.cast("retweet")
+  @scala.inline
+  def `retweet-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`retweet-alt` = this.cast("retweet-alt")
+  @scala.inline
+  def rev: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rev = this.cast("rev")
+  @scala.inline
+  def ribbon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ribbon = this.cast("ribbon")
+  @scala.inline
+  def ring: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ring = this.cast("ring")
+  @scala.inline
+  def `rings-wedding`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rings-wedding` = this.cast("rings-wedding")
+  @scala.inline
+  def road: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.road = this.cast("road")
+  @scala.inline
+  def robot: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.robot = this.cast("robot")
+  @scala.inline
+  def rocket: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rocket = this.cast("rocket")
+  @scala.inline
+  def `rocket-launch`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rocket-launch` = this.cast("rocket-launch")
+  @scala.inline
+  def rocketchat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rocketchat = this.cast("rocketchat")
+  @scala.inline
+  def rockrms: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rockrms = this.cast("rockrms")
+  @scala.inline
+  def route: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.route = this.cast("route")
+  @scala.inline
+  def `route-highway`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`route-highway` = this.cast("route-highway")
+  @scala.inline
+  def `route-interstate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`route-interstate` = this.cast("route-interstate")
+  @scala.inline
+  def router: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.router = this.cast("router")
+  @scala.inline
+  def rss: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rss = this.cast("rss")
+  @scala.inline
+  def `rss-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rss-square` = this.cast("rss-square")
+  @scala.inline
+  def `ruble-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruble-sign` = this.cast("ruble-sign")
+  @scala.inline
+  def ruler: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ruler = this.cast("ruler")
+  @scala.inline
+  def `ruler-combined`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-combined` = this.cast("ruler-combined")
+  @scala.inline
+  def `ruler-horizontal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-horizontal` = this.cast("ruler-horizontal")
+  @scala.inline
+  def `ruler-triangle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-triangle` = this.cast("ruler-triangle")
+  @scala.inline
+  def `ruler-vertical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-vertical` = this.cast("ruler-vertical")
+  @scala.inline
+  def running: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.running = this.cast("running")
+  @scala.inline
+  def `rupee-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`rupee-sign` = this.cast("rupee-sign")
+  @scala.inline
+  def rv: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rv = this.cast("rv")
+  @scala.inline
+  def sack: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sack = this.cast("sack")
+  @scala.inline
+  def `sack-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sack-dollar` = this.cast("sack-dollar")
+  @scala.inline
+  def `sad-cry`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sad-cry` = this.cast("sad-cry")
+  @scala.inline
+  def `sad-tear`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sad-tear` = this.cast("sad-tear")
+  @scala.inline
+  def safari: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.safari = this.cast("safari")
+  @scala.inline
+  def salad: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.salad = this.cast("salad")
+  @scala.inline
+  def salesforce: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.salesforce = this.cast("salesforce")
+  @scala.inline
+  def sandwich: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sandwich = this.cast("sandwich")
+  @scala.inline
+  def sass: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sass = this.cast("sass")
+  @scala.inline
+  def satellite: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.satellite = this.cast("satellite")
+  @scala.inline
+  def `satellite-dish`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`satellite-dish` = this.cast("satellite-dish")
+  @scala.inline
+  def sausage: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sausage = this.cast("sausage")
+  @scala.inline
+  def save: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.save = this.cast("save")
+  @scala.inline
+  def `sax-hot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sax-hot` = this.cast("sax-hot")
+  @scala.inline
+  def saxophone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.saxophone = this.cast("saxophone")
+  @scala.inline
+  def scalpel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scalpel = this.cast("scalpel")
+  @scala.inline
+  def `scalpel-path`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scalpel-path` = this.cast("scalpel-path")
+  @scala.inline
+  def scanner: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scanner = this.cast("scanner")
+  @scala.inline
+  def `scanner-image`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scanner-image` = this.cast("scanner-image")
+  @scala.inline
+  def `scanner-keyboard`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scanner-keyboard` = this.cast("scanner-keyboard")
+  @scala.inline
+  def `scanner-touchscreen`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scanner-touchscreen` = this.cast("scanner-touchscreen")
+  @scala.inline
+  def scarecrow: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scarecrow = this.cast("scarecrow")
+  @scala.inline
+  def scarf: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scarf = this.cast("scarf")
+  @scala.inline
+  def schlix: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.schlix = this.cast("schlix")
+  @scala.inline
+  def school: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.school = this.cast("school")
+  @scala.inline
+  def screwdriver: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.screwdriver = this.cast("screwdriver")
+  @scala.inline
+  def scribd: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scribd = this.cast("scribd")
+  @scala.inline
+  def scroll: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scroll = this.cast("scroll")
+  @scala.inline
+  def `scroll-old`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scroll-old` = this.cast("scroll-old")
+  @scala.inline
+  def scrubber: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scrubber = this.cast("scrubber")
+  @scala.inline
+  def scythe: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scythe = this.cast("scythe")
+  @scala.inline
+  def `sd-card`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sd-card` = this.cast("sd-card")
+  @scala.inline
+  def search: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.search = this.cast("search")
+  @scala.inline
+  def `search-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-dollar` = this.cast("search-dollar")
+  @scala.inline
+  def `search-location`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-location` = this.cast("search-location")
+  @scala.inline
+  def `search-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-minus` = this.cast("search-minus")
+  @scala.inline
+  def `search-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-plus` = this.cast("search-plus")
+  @scala.inline
+  def searchengin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.searchengin = this.cast("searchengin")
+  @scala.inline
+  def seedling: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.seedling = this.cast("seedling")
+  @scala.inline
+  def sellcast: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sellcast = this.cast("sellcast")
+  @scala.inline
+  def sellsy: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sellsy = this.cast("sellsy")
+  @scala.inline
+  def `send-back`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`send-back` = this.cast("send-back")
+  @scala.inline
+  def `send-backward`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`send-backward` = this.cast("send-backward")
+  @scala.inline
+  def sensor: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sensor = this.cast("sensor")
+  @scala.inline
+  def `sensor-alert`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-alert` = this.cast("sensor-alert")
+  @scala.inline
+  def `sensor-fire`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-fire` = this.cast("sensor-fire")
+  @scala.inline
+  def `sensor-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-on` = this.cast("sensor-on")
+  @scala.inline
+  def `sensor-smoke`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sensor-smoke` = this.cast("sensor-smoke")
+  @scala.inline
+  def server: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.server = this.cast("server")
+  @scala.inline
+  def servicestack: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.servicestack = this.cast("servicestack")
+  @scala.inline
+  def shapes: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shapes = this.cast("shapes")
+  @scala.inline
+  def share: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.share = this.cast("share")
+  @scala.inline
+  def `share-all`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-all` = this.cast("share-all")
+  @scala.inline
+  def `share-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-alt` = this.cast("share-alt")
+  @scala.inline
+  def `share-alt-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-alt-square` = this.cast("share-alt-square")
+  @scala.inline
+  def `share-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-square` = this.cast("share-square")
+  @scala.inline
+  def sheep: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sheep = this.cast("sheep")
+  @scala.inline
+  def `shekel-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shekel-sign` = this.cast("shekel-sign")
+  @scala.inline
+  def shield: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shield = this.cast("shield")
+  @scala.inline
+  def `shield-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-alt` = this.cast("shield-alt")
+  @scala.inline
+  def `shield-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-check` = this.cast("shield-check")
+  @scala.inline
+  def `shield-cross`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shield-cross` = this.cast("shield-cross")
+  @scala.inline
+  def ship: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ship = this.cast("ship")
+  @scala.inline
+  def `shipping-fast`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shipping-fast` = this.cast("shipping-fast")
+  @scala.inline
+  def `shipping-timed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shipping-timed` = this.cast("shipping-timed")
+  @scala.inline
+  def shirtsinbulk: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shirtsinbulk = this.cast("shirtsinbulk")
+  @scala.inline
+  def `shish-kebab`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shish-kebab` = this.cast("shish-kebab")
+  @scala.inline
+  def `shoe-prints`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shoe-prints` = this.cast("shoe-prints")
+  @scala.inline
+  def `shopping-bag`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shopping-bag` = this.cast("shopping-bag")
+  @scala.inline
+  def `shopping-basket`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shopping-basket` = this.cast("shopping-basket")
+  @scala.inline
+  def `shopping-cart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shopping-cart` = this.cast("shopping-cart")
+  @scala.inline
+  def shopware: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shopware = this.cast("shopware")
+  @scala.inline
+  def shovel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shovel = this.cast("shovel")
+  @scala.inline
+  def `shovel-snow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shovel-snow` = this.cast("shovel-snow")
+  @scala.inline
+  def shower: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shower = this.cast("shower")
+  @scala.inline
+  def shredder: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shredder = this.cast("shredder")
+  @scala.inline
+  def `shuttle-van`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shuttle-van` = this.cast("shuttle-van")
+  @scala.inline
+  def shuttlecock: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shuttlecock = this.cast("shuttlecock")
+  @scala.inline
+  def sickle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sickle = this.cast("sickle")
+  @scala.inline
+  def sigma: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sigma = this.cast("sigma")
+  @scala.inline
+  def sign: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sign = this.cast("sign")
+  @scala.inline
+  def `sign-in`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-in` = this.cast("sign-in")
+  @scala.inline
+  def `sign-in-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-in-alt` = this.cast("sign-in-alt")
+  @scala.inline
+  def `sign-language`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-language` = this.cast("sign-language")
+  @scala.inline
+  def `sign-out`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-out` = this.cast("sign-out")
+  @scala.inline
+  def `sign-out-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sign-out-alt` = this.cast("sign-out-alt")
+  @scala.inline
+  def signal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.signal = this.cast("signal")
+  @scala.inline
+  def `signal-1`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-1` = this.cast("signal-1")
+  @scala.inline
+  def `signal-2`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-2` = this.cast("signal-2")
+  @scala.inline
+  def `signal-3`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-3` = this.cast("signal-3")
+  @scala.inline
+  def `signal-4`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-4` = this.cast("signal-4")
+  @scala.inline
+  def `signal-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt` = this.cast("signal-alt")
+  @scala.inline
+  def `signal-alt-1`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-1` = this.cast("signal-alt-1")
+  @scala.inline
+  def `signal-alt-2`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-2` = this.cast("signal-alt-2")
+  @scala.inline
+  def `signal-alt-3`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-3` = this.cast("signal-alt-3")
+  @scala.inline
+  def `signal-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt-slash` = this.cast("signal-alt-slash")
+  @scala.inline
+  def `signal-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-slash` = this.cast("signal-slash")
+  @scala.inline
+  def `signal-stream`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-stream` = this.cast("signal-stream")
+  @scala.inline
+  def signature: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.signature = this.cast("signature")
+  @scala.inline
+  def `sim-card`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sim-card` = this.cast("sim-card")
+  @scala.inline
+  def simplybuilt: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.simplybuilt = this.cast("simplybuilt")
+  @scala.inline
+  def siren: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.siren = this.cast("siren")
+  @scala.inline
+  def `siren-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`siren-on` = this.cast("siren-on")
+  @scala.inline
+  def sistrix: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sistrix = this.cast("sistrix")
+  @scala.inline
+  def sitemap: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sitemap = this.cast("sitemap")
+  @scala.inline
+  def sith: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sith = this.cast("sith")
+  @scala.inline
+  def skating: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skating = this.cast("skating")
+  @scala.inline
+  def skeleton: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skeleton = this.cast("skeleton")
+  @scala.inline
+  def sketch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sketch = this.cast("sketch")
+  @scala.inline
+  def `ski-jump`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ski-jump` = this.cast("ski-jump")
+  @scala.inline
+  def `ski-lift`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ski-lift` = this.cast("ski-lift")
+  @scala.inline
+  def skiing: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skiing = this.cast("skiing")
+  @scala.inline
+  def `skiing-nordic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skiing-nordic` = this.cast("skiing-nordic")
+  @scala.inline
+  def skull: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skull = this.cast("skull")
+  @scala.inline
+  def `skull-cow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skull-cow` = this.cast("skull-cow")
+  @scala.inline
+  def `skull-crossbones`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skull-crossbones` = this.cast("skull-crossbones")
+  @scala.inline
+  def skyatlas: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skyatlas = this.cast("skyatlas")
+  @scala.inline
+  def skype: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skype = this.cast("skype")
+  @scala.inline
+  def slack: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.slack = this.cast("slack")
+  @scala.inline
+  def `slack-hash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`slack-hash` = this.cast("slack-hash")
+  @scala.inline
+  def slash: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.slash = this.cast("slash")
+  @scala.inline
+  def sledding: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sledding = this.cast("sledding")
+  @scala.inline
+  def sleigh: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sleigh = this.cast("sleigh")
+  @scala.inline
+  def `sliders-h`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-h` = this.cast("sliders-h")
+  @scala.inline
+  def `sliders-h-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-h-square` = this.cast("sliders-h-square")
+  @scala.inline
+  def `sliders-v`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-v` = this.cast("sliders-v")
+  @scala.inline
+  def `sliders-v-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-v-square` = this.cast("sliders-v-square")
+  @scala.inline
+  def slideshare: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.slideshare = this.cast("slideshare")
+  @scala.inline
+  def smile: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smile = this.cast("smile")
+  @scala.inline
+  def `smile-beam`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smile-beam` = this.cast("smile-beam")
+  @scala.inline
+  def `smile-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smile-plus` = this.cast("smile-plus")
+  @scala.inline
+  def `smile-wink`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smile-wink` = this.cast("smile-wink")
+  @scala.inline
+  def smog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smog = this.cast("smog")
+  @scala.inline
+  def smoke: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smoke = this.cast("smoke")
+  @scala.inline
+  def smoking: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.smoking = this.cast("smoking")
+  @scala.inline
+  def `smoking-ban`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`smoking-ban` = this.cast("smoking-ban")
+  @scala.inline
+  def sms: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sms = this.cast("sms")
+  @scala.inline
+  def snake: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snake = this.cast("snake")
+  @scala.inline
+  def snapchat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snapchat = this.cast("snapchat")
+  @scala.inline
+  def `snapchat-ghost`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`snapchat-ghost` = this.cast("snapchat-ghost")
+  @scala.inline
+  def `snapchat-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`snapchat-square` = this.cast("snapchat-square")
+  @scala.inline
+  def snooze: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snooze = this.cast("snooze")
+  @scala.inline
+  def `snow-blowing`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`snow-blowing` = this.cast("snow-blowing")
+  @scala.inline
+  def snowboarding: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowboarding = this.cast("snowboarding")
+  @scala.inline
+  def snowflake: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowflake = this.cast("snowflake")
+  @scala.inline
+  def snowflakes: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowflakes = this.cast("snowflakes")
+  @scala.inline
+  def snowman: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowman = this.cast("snowman")
+  @scala.inline
+  def snowmobile: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowmobile = this.cast("snowmobile")
+  @scala.inline
+  def snowplow: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowplow = this.cast("snowplow")
+  @scala.inline
+  def socks: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.socks = this.cast("socks")
+  @scala.inline
+  def `solar-panel`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`solar-panel` = this.cast("solar-panel")
+  @scala.inline
+  def `solar-system`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`solar-system` = this.cast("solar-system")
+  @scala.inline
+  def sort: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sort = this.cast("sort")
+  @scala.inline
+  def `sort-alpha-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-down` = this.cast("sort-alpha-down")
+  @scala.inline
+  def `sort-alpha-down-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-down-alt` = this.cast("sort-alpha-down-alt")
+  @scala.inline
+  def `sort-alpha-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-up` = this.cast("sort-alpha-up")
+  @scala.inline
+  def `sort-alpha-up-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alpha-up-alt` = this.cast("sort-alpha-up-alt")
+  @scala.inline
+  def `sort-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-alt` = this.cast("sort-alt")
+  @scala.inline
+  def `sort-amount-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-down` = this.cast("sort-amount-down")
+  @scala.inline
+  def `sort-amount-down-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-down-alt` = this.cast("sort-amount-down-alt")
+  @scala.inline
+  def `sort-amount-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-up` = this.cast("sort-amount-up")
+  @scala.inline
+  def `sort-amount-up-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-up-alt` = this.cast("sort-amount-up-alt")
+  @scala.inline
+  def `sort-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-circle` = this.cast("sort-circle")
+  @scala.inline
+  def `sort-circle-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-circle-down` = this.cast("sort-circle-down")
+  @scala.inline
+  def `sort-circle-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-circle-up` = this.cast("sort-circle-up")
+  @scala.inline
+  def `sort-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-down` = this.cast("sort-down")
+  @scala.inline
+  def `sort-numeric-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-down` = this.cast("sort-numeric-down")
+  @scala.inline
+  def `sort-numeric-down-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-down-alt` = this.cast("sort-numeric-down-alt")
+  @scala.inline
+  def `sort-numeric-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-up` = this.cast("sort-numeric-up")
+  @scala.inline
+  def `sort-numeric-up-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-numeric-up-alt` = this.cast("sort-numeric-up-alt")
+  @scala.inline
+  def `sort-shapes-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-down` = this.cast("sort-shapes-down")
+  @scala.inline
+  def `sort-shapes-down-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-down-alt` = this.cast("sort-shapes-down-alt")
+  @scala.inline
+  def `sort-shapes-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-up` = this.cast("sort-shapes-up")
+  @scala.inline
+  def `sort-shapes-up-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-shapes-up-alt` = this.cast("sort-shapes-up-alt")
+  @scala.inline
+  def `sort-size-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-down` = this.cast("sort-size-down")
+  @scala.inline
+  def `sort-size-down-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-down-alt` = this.cast("sort-size-down-alt")
+  @scala.inline
+  def `sort-size-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-up` = this.cast("sort-size-up")
+  @scala.inline
+  def `sort-size-up-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-size-up-alt` = this.cast("sort-size-up-alt")
+  @scala.inline
+  def `sort-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-up` = this.cast("sort-up")
+  @scala.inline
+  def soundcloud: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.soundcloud = this.cast("soundcloud")
+  @scala.inline
+  def soup: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.soup = this.cast("soup")
+  @scala.inline
+  def sourcetree: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sourcetree = this.cast("sourcetree")
+  @scala.inline
+  def spa: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spa = this.cast("spa")
+  @scala.inline
+  def `space-shuttle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`space-shuttle` = this.cast("space-shuttle")
+  @scala.inline
+  def `space-station-moon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`space-station-moon` = this.cast("space-station-moon")
+  @scala.inline
+  def `space-station-moon-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`space-station-moon-alt` = this.cast("space-station-moon-alt")
+  @scala.inline
+  def spade: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spade = this.cast("spade")
+  @scala.inline
+  def sparkles: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sparkles = this.cast("sparkles")
+  @scala.inline
+  def speakap: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.speakap = this.cast("speakap")
+  @scala.inline
+  def speaker: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.speaker = this.cast("speaker")
+  @scala.inline
+  def `speaker-deck`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`speaker-deck` = this.cast("speaker-deck")
+  @scala.inline
+  def speakers: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.speakers = this.cast("speakers")
+  @scala.inline
+  def `spell-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spell-check` = this.cast("spell-check")
+  @scala.inline
+  def spider: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spider = this.cast("spider")
+  @scala.inline
+  def `spider-black-widow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spider-black-widow` = this.cast("spider-black-widow")
+  @scala.inline
+  def `spider-web`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spider-web` = this.cast("spider-web")
+  @scala.inline
+  def spinner: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spinner = this.cast("spinner")
+  @scala.inline
+  def `spinner-third`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spinner-third` = this.cast("spinner-third")
+  @scala.inline
+  def splotch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.splotch = this.cast("splotch")
+  @scala.inline
+  def spotify: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spotify = this.cast("spotify")
+  @scala.inline
+  def `spray-can`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spray-can` = this.cast("spray-can")
+  @scala.inline
+  def sprinkler: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sprinkler = this.cast("sprinkler")
+  @scala.inline
+  def square: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.square = this.cast("square")
+  @scala.inline
+  def `square-full`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-full` = this.cast("square-full")
+  @scala.inline
+  def `square-root`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-root` = this.cast("square-root")
+  @scala.inline
+  def `square-root-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-root-alt` = this.cast("square-root-alt")
+  @scala.inline
+  def squarespace: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.squarespace = this.cast("squarespace")
+  @scala.inline
+  def squirrel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.squirrel = this.cast("squirrel")
+  @scala.inline
+  def `stack-exchange`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stack-exchange` = this.cast("stack-exchange")
+  @scala.inline
+  def `stack-overflow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stack-overflow` = this.cast("stack-overflow")
+  @scala.inline
+  def stackpath: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stackpath = this.cast("stackpath")
+  @scala.inline
+  def staff: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.staff = this.cast("staff")
+  @scala.inline
+  def stamp: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stamp = this.cast("stamp")
+  @scala.inline
+  def star: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.star = this.cast("star")
+  @scala.inline
+  def `star-and-crescent`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-and-crescent` = this.cast("star-and-crescent")
+  @scala.inline
+  def `star-christmas`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-christmas` = this.cast("star-christmas")
+  @scala.inline
+  def `star-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-exclamation` = this.cast("star-exclamation")
+  @scala.inline
+  def `star-half`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-half` = this.cast("star-half")
+  @scala.inline
+  def `star-half-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-half-alt` = this.cast("star-half-alt")
+  @scala.inline
+  def `star-of-david`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-of-david` = this.cast("star-of-david")
+  @scala.inline
+  def `star-of-life`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-of-life` = this.cast("star-of-life")
+  @scala.inline
+  def `star-shooting`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`star-shooting` = this.cast("star-shooting")
+  @scala.inline
+  def starfighter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.starfighter = this.cast("starfighter")
+  @scala.inline
+  def `starfighter-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`starfighter-alt` = this.cast("starfighter-alt")
+  @scala.inline
+  def stars: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stars = this.cast("stars")
+  @scala.inline
+  def starship: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.starship = this.cast("starship")
+  @scala.inline
+  def `starship-freighter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`starship-freighter` = this.cast("starship-freighter")
+  @scala.inline
+  def staylinked: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.staylinked = this.cast("staylinked")
+  @scala.inline
+  def steak: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.steak = this.cast("steak")
+  @scala.inline
+  def steam: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.steam = this.cast("steam")
+  @scala.inline
+  def `steam-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`steam-square` = this.cast("steam-square")
+  @scala.inline
+  def `steam-symbol`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`steam-symbol` = this.cast("steam-symbol")
+  @scala.inline
+  def `steering-wheel`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`steering-wheel` = this.cast("steering-wheel")
+  @scala.inline
+  def `step-backward`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`step-backward` = this.cast("step-backward")
+  @scala.inline
+  def `step-forward`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`step-forward` = this.cast("step-forward")
+  @scala.inline
+  def stethoscope: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stethoscope = this.cast("stethoscope")
+  @scala.inline
+  def `sticker-mule`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sticker-mule` = this.cast("sticker-mule")
+  @scala.inline
+  def `sticky-note`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sticky-note` = this.cast("sticky-note")
+  @scala.inline
+  def stocking: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stocking = this.cast("stocking")
+  @scala.inline
+  def stomach: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stomach = this.cast("stomach")
+  @scala.inline
+  def stop: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stop = this.cast("stop")
+  @scala.inline
+  def `stop-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stop-circle` = this.cast("stop-circle")
+  @scala.inline
+  def stopwatch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stopwatch = this.cast("stopwatch")
+  @scala.inline
+  def store: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.store = this.cast("store")
+  @scala.inline
+  def `store-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-alt` = this.cast("store-alt")
+  @scala.inline
+  def strava: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.strava = this.cast("strava")
+  @scala.inline
+  def stream: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stream = this.cast("stream")
+  @scala.inline
+  def `street-view`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`street-view` = this.cast("street-view")
+  @scala.inline
+  def stretcher: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stretcher = this.cast("stretcher")
+  @scala.inline
+  def strikethrough: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.strikethrough = this.cast("strikethrough")
+  @scala.inline
+  def stripe: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stripe = this.cast("stripe")
+  @scala.inline
+  def `stripe-s`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stripe-s` = this.cast("stripe-s")
+  @scala.inline
+  def stroopwafel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stroopwafel = this.cast("stroopwafel")
+  @scala.inline
+  def studiovinari: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.studiovinari = this.cast("studiovinari")
+  @scala.inline
+  def stumbleupon: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stumbleupon = this.cast("stumbleupon")
+  @scala.inline
+  def `stumbleupon-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`stumbleupon-circle` = this.cast("stumbleupon-circle")
+  @scala.inline
+  def subscript: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.subscript = this.cast("subscript")
+  @scala.inline
+  def subway: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.subway = this.cast("subway")
+  @scala.inline
+  def suitcase: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.suitcase = this.cast("suitcase")
+  @scala.inline
+  def `suitcase-rolling`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`suitcase-rolling` = this.cast("suitcase-rolling")
+  @scala.inline
+  def sun: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sun = this.cast("sun")
+  @scala.inline
+  def `sun-cloud`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-cloud` = this.cast("sun-cloud")
+  @scala.inline
+  def `sun-dust`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-dust` = this.cast("sun-dust")
+  @scala.inline
+  def `sun-haze`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-haze` = this.cast("sun-haze")
+  @scala.inline
+  def sunglasses: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sunglasses = this.cast("sunglasses")
+  @scala.inline
+  def sunrise: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sunrise = this.cast("sunrise")
+  @scala.inline
+  def sunset: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sunset = this.cast("sunset")
+  @scala.inline
+  def superpowers: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.superpowers = this.cast("superpowers")
+  @scala.inline
+  def superscript: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.superscript = this.cast("superscript")
+  @scala.inline
+  def supple: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.supple = this.cast("supple")
+  @scala.inline
+  def surprise: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.surprise = this.cast("surprise")
+  @scala.inline
+  def suse: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.suse = this.cast("suse")
+  @scala.inline
+  def swatchbook: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swatchbook = this.cast("swatchbook")
+  @scala.inline
+  def swift: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swift = this.cast("swift")
+  @scala.inline
+  def swimmer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swimmer = this.cast("swimmer")
+  @scala.inline
+  def `swimming-pool`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`swimming-pool` = this.cast("swimming-pool")
+  @scala.inline
+  def sword: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sword = this.cast("sword")
+  @scala.inline
+  def `sword-laser`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sword-laser` = this.cast("sword-laser")
+  @scala.inline
+  def `sword-laser-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sword-laser-alt` = this.cast("sword-laser-alt")
+  @scala.inline
+  def swords: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.swords = this.cast("swords")
+  @scala.inline
+  def `swords-laser`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`swords-laser` = this.cast("swords-laser")
+  @scala.inline
+  def symfony: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.symfony = this.cast("symfony")
+  @scala.inline
+  def synagogue: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.synagogue = this.cast("synagogue")
+  @scala.inline
+  def sync: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sync = this.cast("sync")
+  @scala.inline
+  def `sync-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sync-alt` = this.cast("sync-alt")
+  @scala.inline
+  def syringe: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.syringe = this.cast("syringe")
+  @scala.inline
+  def table: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.table = this.cast("table")
+  @scala.inline
+  def `table-tennis`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`table-tennis` = this.cast("table-tennis")
+  @scala.inline
+  def tablet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tablet = this.cast("tablet")
+  @scala.inline
+  def `tablet-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-alt` = this.cast("tablet-alt")
+  @scala.inline
+  def `tablet-android`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-android` = this.cast("tablet-android")
+  @scala.inline
+  def `tablet-android-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-android-alt` = this.cast("tablet-android-alt")
+  @scala.inline
+  def `tablet-rugged`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tablet-rugged` = this.cast("tablet-rugged")
+  @scala.inline
+  def tablets: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tablets = this.cast("tablets")
+  @scala.inline
+  def tachometer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tachometer = this.cast("tachometer")
+  @scala.inline
+  def `tachometer-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt` = this.cast("tachometer-alt")
+  @scala.inline
+  def `tachometer-alt-average`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-average` = this.cast("tachometer-alt-average")
+  @scala.inline
+  def `tachometer-alt-fast`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-fast` = this.cast("tachometer-alt-fast")
+  @scala.inline
+  def `tachometer-alt-fastest`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-fastest` = this.cast("tachometer-alt-fastest")
+  @scala.inline
+  def `tachometer-alt-slow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-slow` = this.cast("tachometer-alt-slow")
+  @scala.inline
+  def `tachometer-alt-slowest`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-alt-slowest` = this.cast("tachometer-alt-slowest")
+  @scala.inline
+  def `tachometer-average`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-average` = this.cast("tachometer-average")
+  @scala.inline
+  def `tachometer-fast`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-fast` = this.cast("tachometer-fast")
+  @scala.inline
+  def `tachometer-fastest`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-fastest` = this.cast("tachometer-fastest")
+  @scala.inline
+  def `tachometer-slow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-slow` = this.cast("tachometer-slow")
+  @scala.inline
+  def `tachometer-slowest`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tachometer-slowest` = this.cast("tachometer-slowest")
+  @scala.inline
+  def taco: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.taco = this.cast("taco")
+  @scala.inline
+  def tag: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tag = this.cast("tag")
+  @scala.inline
+  def tags: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tags = this.cast("tags")
+  @scala.inline
+  def tally: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tally = this.cast("tally")
+  @scala.inline
+  def tanakh: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tanakh = this.cast("tanakh")
+  @scala.inline
+  def tape: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tape = this.cast("tape")
+  @scala.inline
+  def tasks: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tasks = this.cast("tasks")
+  @scala.inline
+  def `tasks-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tasks-alt` = this.cast("tasks-alt")
+  @scala.inline
+  def taxi: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.taxi = this.cast("taxi")
+  @scala.inline
+  def teamspeak: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.teamspeak = this.cast("teamspeak")
+  @scala.inline
+  def teeth: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.teeth = this.cast("teeth")
+  @scala.inline
+  def `teeth-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`teeth-open` = this.cast("teeth-open")
+  @scala.inline
+  def telegram: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.telegram = this.cast("telegram")
+  @scala.inline
+  def `telegram-plane`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`telegram-plane` = this.cast("telegram-plane")
+  @scala.inline
+  def telescope: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.telescope = this.cast("telescope")
+  @scala.inline
+  def `temperature-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-down` = this.cast("temperature-down")
+  @scala.inline
+  def `temperature-frigid`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-frigid` = this.cast("temperature-frigid")
+  @scala.inline
+  def `temperature-high`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-high` = this.cast("temperature-high")
+  @scala.inline
+  def `temperature-hot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-hot` = this.cast("temperature-hot")
+  @scala.inline
+  def `temperature-low`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-low` = this.cast("temperature-low")
+  @scala.inline
+  def `temperature-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-up` = this.cast("temperature-up")
+  @scala.inline
+  def `tencent-weibo`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tencent-weibo` = this.cast("tencent-weibo")
+  @scala.inline
+  def tenge: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tenge = this.cast("tenge")
+  @scala.inline
+  def `tennis-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tennis-ball` = this.cast("tennis-ball")
+  @scala.inline
+  def terminal: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.terminal = this.cast("terminal")
+  @scala.inline
+  def text: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.text = this.cast("text")
+  @scala.inline
+  def `text-height`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`text-height` = this.cast("text-height")
+  @scala.inline
+  def `text-size`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`text-size` = this.cast("text-size")
+  @scala.inline
+  def `text-width`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`text-width` = this.cast("text-width")
+  @scala.inline
+  def th: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.th = this.cast("th")
+  @scala.inline
+  def `th-large`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`th-large` = this.cast("th-large")
+  @scala.inline
+  def `th-list`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`th-list` = this.cast("th-list")
+  @scala.inline
+  def `the-red-yeti`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`the-red-yeti` = this.cast("the-red-yeti")
+  @scala.inline
+  def `theater-masks`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`theater-masks` = this.cast("theater-masks")
+  @scala.inline
+  def themeco: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.themeco = this.cast("themeco")
+  @scala.inline
+  def themeisle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.themeisle = this.cast("themeisle")
+  @scala.inline
+  def thermometer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.thermometer = this.cast("thermometer")
+  @scala.inline
+  def `thermometer-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-empty` = this.cast("thermometer-empty")
+  @scala.inline
+  def `thermometer-full`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-full` = this.cast("thermometer-full")
+  @scala.inline
+  def `thermometer-half`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-half` = this.cast("thermometer-half")
+  @scala.inline
+  def `thermometer-quarter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-quarter` = this.cast("thermometer-quarter")
+  @scala.inline
+  def `thermometer-three-quarters`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thermometer-three-quarters` = this.cast("thermometer-three-quarters")
+  @scala.inline
+  def theta: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.theta = this.cast("theta")
+  @scala.inline
+  def `think-peaks`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`think-peaks` = this.cast("think-peaks")
+  @scala.inline
+  def `thumbs-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thumbs-down` = this.cast("thumbs-down")
+  @scala.inline
+  def `thumbs-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thumbs-up` = this.cast("thumbs-up")
+  @scala.inline
+  def thumbtack: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.thumbtack = this.cast("thumbtack")
+  @scala.inline
+  def thunderstorm: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.thunderstorm = this.cast("thunderstorm")
+  @scala.inline
+  def `thunderstorm-moon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thunderstorm-moon` = this.cast("thunderstorm-moon")
+  @scala.inline
+  def `thunderstorm-sun`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thunderstorm-sun` = this.cast("thunderstorm-sun")
+  @scala.inline
+  def ticket: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ticket = this.cast("ticket")
+  @scala.inline
+  def `ticket-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ticket-alt` = this.cast("ticket-alt")
+  @scala.inline
+  def tilde: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tilde = this.cast("tilde")
+  @scala.inline
+  def times: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.times = this.cast("times")
+  @scala.inline
+  def `times-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-circle` = this.cast("times-circle")
+  @scala.inline
+  def `times-hexagon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-hexagon` = this.cast("times-hexagon")
+  @scala.inline
+  def `times-octagon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-octagon` = this.cast("times-octagon")
+  @scala.inline
+  def `times-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`times-square` = this.cast("times-square")
+  @scala.inline
+  def tint: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tint = this.cast("tint")
+  @scala.inline
+  def `tint-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tint-slash` = this.cast("tint-slash")
+  @scala.inline
+  def tire: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tire = this.cast("tire")
+  @scala.inline
+  def `tire-flat`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tire-flat` = this.cast("tire-flat")
+  @scala.inline
+  def `tire-pressure-warning`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tire-pressure-warning` = this.cast("tire-pressure-warning")
+  @scala.inline
+  def `tire-rugged`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tire-rugged` = this.cast("tire-rugged")
+  @scala.inline
+  def tired: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tired = this.cast("tired")
+  @scala.inline
+  def `toggle-off`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toggle-off` = this.cast("toggle-off")
+  @scala.inline
+  def `toggle-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toggle-on` = this.cast("toggle-on")
+  @scala.inline
+  def toilet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toilet = this.cast("toilet")
+  @scala.inline
+  def `toilet-paper`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper` = this.cast("toilet-paper")
+  @scala.inline
+  def `toilet-paper-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper-alt` = this.cast("toilet-paper-alt")
+  @scala.inline
+  def tombstone: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tombstone = this.cast("tombstone")
+  @scala.inline
+  def `tombstone-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tombstone-alt` = this.cast("tombstone-alt")
+  @scala.inline
+  def toolbox: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toolbox = this.cast("toolbox")
+  @scala.inline
+  def tools: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tools = this.cast("tools")
+  @scala.inline
+  def tooth: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tooth = this.cast("tooth")
+  @scala.inline
+  def toothbrush: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.toothbrush = this.cast("toothbrush")
+  @scala.inline
+  def torah: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.torah = this.cast("torah")
+  @scala.inline
+  def `torii-gate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`torii-gate` = this.cast("torii-gate")
+  @scala.inline
+  def tornado: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tornado = this.cast("tornado")
+  @scala.inline
+  def tractor: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tractor = this.cast("tractor")
+  @scala.inline
+  def `trade-federation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trade-federation` = this.cast("trade-federation")
+  @scala.inline
+  def trademark: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trademark = this.cast("trademark")
+  @scala.inline
+  def `traffic-cone`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-cone` = this.cast("traffic-cone")
+  @scala.inline
+  def `traffic-light`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light` = this.cast("traffic-light")
+  @scala.inline
+  def `traffic-light-go`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light-go` = this.cast("traffic-light-go")
+  @scala.inline
+  def `traffic-light-slow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light-slow` = this.cast("traffic-light-slow")
+  @scala.inline
+  def `traffic-light-stop`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`traffic-light-stop` = this.cast("traffic-light-stop")
+  @scala.inline
+  def trailer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trailer = this.cast("trailer")
+  @scala.inline
+  def train: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.train = this.cast("train")
+  @scala.inline
+  def tram: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tram = this.cast("tram")
+  @scala.inline
+  def transgender: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.transgender = this.cast("transgender")
+  @scala.inline
+  def `transgender-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transgender-alt` = this.cast("transgender-alt")
+  @scala.inline
+  def transporter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.transporter = this.cast("transporter")
+  @scala.inline
+  def `transporter-1`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-1` = this.cast("transporter-1")
+  @scala.inline
+  def `transporter-2`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-2` = this.cast("transporter-2")
+  @scala.inline
+  def `transporter-3`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-3` = this.cast("transporter-3")
+  @scala.inline
+  def `transporter-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-empty` = this.cast("transporter-empty")
+  @scala.inline
+  def trash: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trash = this.cast("trash")
+  @scala.inline
+  def `trash-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-alt` = this.cast("trash-alt")
+  @scala.inline
+  def `trash-restore`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-restore` = this.cast("trash-restore")
+  @scala.inline
+  def `trash-restore-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-restore-alt` = this.cast("trash-restore-alt")
+  @scala.inline
+  def `trash-undo`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-undo` = this.cast("trash-undo")
+  @scala.inline
+  def `trash-undo-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-undo-alt` = this.cast("trash-undo-alt")
+  @scala.inline
+  def `treasure-chest`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`treasure-chest` = this.cast("treasure-chest")
+  @scala.inline
+  def tree: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tree = this.cast("tree")
+  @scala.inline
+  def `tree-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-alt` = this.cast("tree-alt")
+  @scala.inline
+  def `tree-christmas`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-christmas` = this.cast("tree-christmas")
+  @scala.inline
+  def `tree-decorated`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-decorated` = this.cast("tree-decorated")
+  @scala.inline
+  def `tree-large`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-large` = this.cast("tree-large")
+  @scala.inline
+  def `tree-palm`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tree-palm` = this.cast("tree-palm")
+  @scala.inline
+  def trees: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trees = this.cast("trees")
+  @scala.inline
+  def trello: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trello = this.cast("trello")
+  @scala.inline
+  def triangle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.triangle = this.cast("triangle")
+  @scala.inline
+  def `triangle-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`triangle-music` = this.cast("triangle-music")
+  @scala.inline
+  def tripadvisor: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tripadvisor = this.cast("tripadvisor")
+  @scala.inline
+  def trophy: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trophy = this.cast("trophy")
+  @scala.inline
+  def `trophy-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trophy-alt` = this.cast("trophy-alt")
+  @scala.inline
+  def truck: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.truck = this.cast("truck")
+  @scala.inline
+  def `truck-container`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-container` = this.cast("truck-container")
+  @scala.inline
+  def `truck-couch`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-couch` = this.cast("truck-couch")
+  @scala.inline
+  def `truck-loading`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-loading` = this.cast("truck-loading")
+  @scala.inline
+  def `truck-monster`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-monster` = this.cast("truck-monster")
+  @scala.inline
+  def `truck-moving`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-moving` = this.cast("truck-moving")
+  @scala.inline
+  def `truck-pickup`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-pickup` = this.cast("truck-pickup")
+  @scala.inline
+  def `truck-plow`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-plow` = this.cast("truck-plow")
+  @scala.inline
+  def `truck-ramp`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-ramp` = this.cast("truck-ramp")
+  @scala.inline
+  def trumpet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.trumpet = this.cast("trumpet")
+  @scala.inline
+  def tshirt: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tshirt = this.cast("tshirt")
+  @scala.inline
+  def tty: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tty = this.cast("tty")
+  @scala.inline
+  def tumblr: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tumblr = this.cast("tumblr")
+  @scala.inline
+  def `tumblr-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tumblr-square` = this.cast("tumblr-square")
+  @scala.inline
+  def turkey: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.turkey = this.cast("turkey")
+  @scala.inline
+  def turntable: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.turntable = this.cast("turntable")
+  @scala.inline
+  def turtle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.turtle = this.cast("turtle")
+  @scala.inline
+  def tv: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tv = this.cast("tv")
+  @scala.inline
+  def `tv-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tv-alt` = this.cast("tv-alt")
+  @scala.inline
+  def `tv-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tv-music` = this.cast("tv-music")
+  @scala.inline
+  def `tv-retro`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tv-retro` = this.cast("tv-retro")
+  @scala.inline
+  def twitch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.twitch = this.cast("twitch")
+  @scala.inline
+  def twitter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.twitter = this.cast("twitter")
+  @scala.inline
+  def `twitter-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`twitter-square` = this.cast("twitter-square")
+  @scala.inline
+  def typewriter: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.typewriter = this.cast("typewriter")
+  @scala.inline
+  def typo3: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.typo3 = this.cast("typo3")
+  @scala.inline
+  def uber: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.uber = this.cast("uber")
+  @scala.inline
+  def ubuntu: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ubuntu = this.cast("ubuntu")
+  @scala.inline
+  def ufo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ufo = this.cast("ufo")
+  @scala.inline
+  def `ufo-beam`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ufo-beam` = this.cast("ufo-beam")
+  @scala.inline
+  def uikit: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.uikit = this.cast("uikit")
+  @scala.inline
+  def umbraco: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.umbraco = this.cast("umbraco")
+  @scala.inline
+  def umbrella: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.umbrella = this.cast("umbrella")
+  @scala.inline
+  def `umbrella-beach`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`umbrella-beach` = this.cast("umbrella-beach")
+  @scala.inline
+  def underline: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.underline = this.cast("underline")
+  @scala.inline
+  def undo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.undo = this.cast("undo")
+  @scala.inline
+  def `undo-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`undo-alt` = this.cast("undo-alt")
+  @scala.inline
+  def unicorn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unicorn = this.cast("unicorn")
+  @scala.inline
+  def union: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.union = this.cast("union")
+  @scala.inline
+  def uniregistry: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.uniregistry = this.cast("uniregistry")
+  @scala.inline
+  def unity: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unity = this.cast("unity")
+  @scala.inline
+  def `universal-access`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`universal-access` = this.cast("universal-access")
+  @scala.inline
+  def university: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.university = this.cast("university")
+  @scala.inline
+  def unlink: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unlink = this.cast("unlink")
+  @scala.inline
+  def unlock: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.unlock = this.cast("unlock")
+  @scala.inline
+  def `unlock-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`unlock-alt` = this.cast("unlock-alt")
+  @scala.inline
+  def untappd: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.untappd = this.cast("untappd")
+  @scala.inline
+  def upload: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.upload = this.cast("upload")
+  @scala.inline
+  def ups: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ups = this.cast("ups")
+  @scala.inline
+  def usb: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.usb = this.cast("usb")
+  @scala.inline
+  def `usb-drive`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`usb-drive` = this.cast("usb-drive")
+  @scala.inline
+  def `usd-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`usd-circle` = this.cast("usd-circle")
+  @scala.inline
+  def `usd-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`usd-square` = this.cast("usd-square")
+  @scala.inline
+  def user: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.user = this.cast("user")
+  @scala.inline
+  def `user-alien`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-alien` = this.cast("user-alien")
+  @scala.inline
+  def `user-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-alt` = this.cast("user-alt")
+  @scala.inline
+  def `user-alt-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-alt-slash` = this.cast("user-alt-slash")
+  @scala.inline
+  def `user-astronaut`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-astronaut` = this.cast("user-astronaut")
+  @scala.inline
+  def `user-chart`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-chart` = this.cast("user-chart")
+  @scala.inline
+  def `user-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-check` = this.cast("user-check")
+  @scala.inline
+  def `user-circle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-circle` = this.cast("user-circle")
+  @scala.inline
+  def `user-clock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-clock` = this.cast("user-clock")
+  @scala.inline
+  def `user-cog`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-cog` = this.cast("user-cog")
+  @scala.inline
+  def `user-cowboy`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-cowboy` = this.cast("user-cowboy")
+  @scala.inline
+  def `user-crown`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-crown` = this.cast("user-crown")
+  @scala.inline
+  def `user-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-edit` = this.cast("user-edit")
+  @scala.inline
+  def `user-friends`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-friends` = this.cast("user-friends")
+  @scala.inline
+  def `user-graduate`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-graduate` = this.cast("user-graduate")
+  @scala.inline
+  def `user-hard-hat`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-hard-hat` = this.cast("user-hard-hat")
+  @scala.inline
+  def `user-headset`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-headset` = this.cast("user-headset")
+  @scala.inline
+  def `user-injured`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-injured` = this.cast("user-injured")
+  @scala.inline
+  def `user-lock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-lock` = this.cast("user-lock")
+  @scala.inline
+  def `user-md`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-md` = this.cast("user-md")
+  @scala.inline
+  def `user-md-chat`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-md-chat` = this.cast("user-md-chat")
+  @scala.inline
+  def `user-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-minus` = this.cast("user-minus")
+  @scala.inline
+  def `user-music`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-music` = this.cast("user-music")
+  @scala.inline
+  def `user-ninja`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-ninja` = this.cast("user-ninja")
+  @scala.inline
+  def `user-nurse`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-nurse` = this.cast("user-nurse")
+  @scala.inline
+  def `user-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-plus` = this.cast("user-plus")
+  @scala.inline
+  def `user-robot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-robot` = this.cast("user-robot")
+  @scala.inline
+  def `user-secret`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-secret` = this.cast("user-secret")
+  @scala.inline
+  def `user-shield`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-shield` = this.cast("user-shield")
+  @scala.inline
+  def `user-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-slash` = this.cast("user-slash")
+  @scala.inline
+  def `user-tag`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-tag` = this.cast("user-tag")
+  @scala.inline
+  def `user-tie`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-tie` = this.cast("user-tie")
+  @scala.inline
+  def `user-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-times` = this.cast("user-times")
+  @scala.inline
+  def `user-visor`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-visor` = this.cast("user-visor")
+  @scala.inline
+  def users: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.users = this.cast("users")
+  @scala.inline
+  def `users-class`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-class` = this.cast("users-class")
+  @scala.inline
+  def `users-cog`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-cog` = this.cast("users-cog")
+  @scala.inline
+  def `users-crown`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-crown` = this.cast("users-crown")
+  @scala.inline
+  def `users-medical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-medical` = this.cast("users-medical")
+  @scala.inline
+  def usps: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.usps = this.cast("usps")
+  @scala.inline
+  def ussunnah: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ussunnah = this.cast("ussunnah")
+  @scala.inline
+  def `utensil-fork`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-fork` = this.cast("utensil-fork")
+  @scala.inline
+  def `utensil-knife`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-knife` = this.cast("utensil-knife")
+  @scala.inline
+  def `utensil-spoon`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-spoon` = this.cast("utensil-spoon")
+  @scala.inline
+  def utensils: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.utensils = this.cast("utensils")
+  @scala.inline
+  def `utensils-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensils-alt` = this.cast("utensils-alt")
+  @scala.inline
+  def vaadin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vaadin = this.cast("vaadin")
+  @scala.inline
+  def vacuum: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vacuum = this.cast("vacuum")
+  @scala.inline
+  def `vacuum-robot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vacuum-robot` = this.cast("vacuum-robot")
+  @scala.inline
+  def `value-absolute`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`value-absolute` = this.cast("value-absolute")
+  @scala.inline
+  def `vector-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vector-square` = this.cast("vector-square")
+  @scala.inline
+  def venus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.venus = this.cast("venus")
+  @scala.inline
+  def `venus-double`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`venus-double` = this.cast("venus-double")
+  @scala.inline
+  def `venus-mars`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`venus-mars` = this.cast("venus-mars")
+  @scala.inline
+  def vhs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vhs = this.cast("vhs")
+  @scala.inline
+  def viacoin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viacoin = this.cast("viacoin")
+  @scala.inline
+  def viadeo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viadeo = this.cast("viadeo")
+  @scala.inline
+  def `viadeo-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`viadeo-square` = this.cast("viadeo-square")
+  @scala.inline
+  def vial: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vial = this.cast("vial")
+  @scala.inline
+  def vials: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vials = this.cast("vials")
+  @scala.inline
+  def viber: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.viber = this.cast("viber")
+  @scala.inline
+  def video: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.video = this.cast("video")
+  @scala.inline
+  def `video-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`video-plus` = this.cast("video-plus")
+  @scala.inline
+  def `video-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`video-slash` = this.cast("video-slash")
+  @scala.inline
+  def vihara: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vihara = this.cast("vihara")
+  @scala.inline
+  def vimeo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vimeo = this.cast("vimeo")
+  @scala.inline
+  def `vimeo-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vimeo-square` = this.cast("vimeo-square")
+  @scala.inline
+  def `vimeo-v`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vimeo-v` = this.cast("vimeo-v")
+  @scala.inline
+  def vine: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vine = this.cast("vine")
+  @scala.inline
+  def violin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.violin = this.cast("violin")
+  @scala.inline
+  def vk: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vk = this.cast("vk")
+  @scala.inline
+  def vnv: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vnv = this.cast("vnv")
+  @scala.inline
+  def voicemail: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.voicemail = this.cast("voicemail")
+  @scala.inline
+  def volcano: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.volcano = this.cast("volcano")
+  @scala.inline
+  def `volleyball-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volleyball-ball` = this.cast("volleyball-ball")
+  @scala.inline
+  def volume: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.volume = this.cast("volume")
+  @scala.inline
+  def `volume-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-down` = this.cast("volume-down")
+  @scala.inline
+  def `volume-mute`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-mute` = this.cast("volume-mute")
+  @scala.inline
+  def `volume-off`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-off` = this.cast("volume-off")
+  @scala.inline
+  def `volume-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-slash` = this.cast("volume-slash")
+  @scala.inline
+  def `volume-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-up` = this.cast("volume-up")
+  @scala.inline
+  def `vote-nay`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vote-nay` = this.cast("vote-nay")
+  @scala.inline
+  def `vote-yea`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vote-yea` = this.cast("vote-yea")
+  @scala.inline
+  def `vr-cardboard`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vr-cardboard` = this.cast("vr-cardboard")
+  @scala.inline
+  def vuejs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vuejs = this.cast("vuejs")
+  @scala.inline
+  def `wagon-covered`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wagon-covered` = this.cast("wagon-covered")
+  @scala.inline
+  def walker: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.walker = this.cast("walker")
+  @scala.inline
+  def `walkie-talkie`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`walkie-talkie` = this.cast("walkie-talkie")
+  @scala.inline
+  def walking: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.walking = this.cast("walking")
+  @scala.inline
+  def wallet: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wallet = this.cast("wallet")
+  @scala.inline
+  def wand: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wand = this.cast("wand")
+  @scala.inline
+  def `wand-magic`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wand-magic` = this.cast("wand-magic")
+  @scala.inline
+  def warehouse: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.warehouse = this.cast("warehouse")
+  @scala.inline
+  def `warehouse-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`warehouse-alt` = this.cast("warehouse-alt")
+  @scala.inline
+  def washer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.washer = this.cast("washer")
+  @scala.inline
+  def watch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.watch = this.cast("watch")
+  @scala.inline
+  def `watch-calculator`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`watch-calculator` = this.cast("watch-calculator")
+  @scala.inline
+  def `watch-fitness`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`watch-fitness` = this.cast("watch-fitness")
+  @scala.inline
+  def water: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.water = this.cast("water")
+  @scala.inline
+  def `water-lower`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`water-lower` = this.cast("water-lower")
+  @scala.inline
+  def `water-rise`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`water-rise` = this.cast("water-rise")
+  @scala.inline
+  def `wave-sine`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-sine` = this.cast("wave-sine")
+  @scala.inline
+  def `wave-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-square` = this.cast("wave-square")
+  @scala.inline
+  def `wave-triangle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-triangle` = this.cast("wave-triangle")
+  @scala.inline
+  def waveform: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.waveform = this.cast("waveform")
+  @scala.inline
+  def `waveform-path`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`waveform-path` = this.cast("waveform-path")
+  @scala.inline
+  def waze: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.waze = this.cast("waze")
+  @scala.inline
+  def webcam: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.webcam = this.cast("webcam")
+  @scala.inline
+  def `webcam-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`webcam-slash` = this.cast("webcam-slash")
+  @scala.inline
+  def weebly: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weebly = this.cast("weebly")
+  @scala.inline
+  def weibo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weibo = this.cast("weibo")
+  @scala.inline
+  def weight: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weight = this.cast("weight")
+  @scala.inline
+  def `weight-hanging`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`weight-hanging` = this.cast("weight-hanging")
+  @scala.inline
+  def weixin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weixin = this.cast("weixin")
+  @scala.inline
+  def whale: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whale = this.cast("whale")
+  @scala.inline
+  def whatsapp: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whatsapp = this.cast("whatsapp")
+  @scala.inline
+  def `whatsapp-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`whatsapp-square` = this.cast("whatsapp-square")
+  @scala.inline
+  def wheat: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wheat = this.cast("wheat")
+  @scala.inline
+  def wheelchair: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wheelchair = this.cast("wheelchair")
+  @scala.inline
+  def whistle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whistle = this.cast("whistle")
+  @scala.inline
+  def whmcs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.whmcs = this.cast("whmcs")
+  @scala.inline
+  def wifi: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wifi = this.cast("wifi")
+  @scala.inline
+  def `wifi-1`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wifi-1` = this.cast("wifi-1")
+  @scala.inline
+  def `wifi-2`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wifi-2` = this.cast("wifi-2")
+  @scala.inline
+  def `wifi-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wifi-slash` = this.cast("wifi-slash")
+  @scala.inline
+  def `wikipedia-w`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wikipedia-w` = this.cast("wikipedia-w")
+  @scala.inline
+  def wind: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wind = this.cast("wind")
+  @scala.inline
+  def `wind-turbine`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wind-turbine` = this.cast("wind-turbine")
+  @scala.inline
+  def `wind-warning`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wind-warning` = this.cast("wind-warning")
+  @scala.inline
+  def window: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.window = this.cast("window")
+  @scala.inline
+  def `window-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-alt` = this.cast("window-alt")
+  @scala.inline
+  def `window-close`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-close` = this.cast("window-close")
+  @scala.inline
+  def `window-frame`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-frame` = this.cast("window-frame")
+  @scala.inline
+  def `window-frame-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-frame-open` = this.cast("window-frame-open")
+  @scala.inline
+  def `window-maximize`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-maximize` = this.cast("window-maximize")
+  @scala.inline
+  def `window-minimize`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-minimize` = this.cast("window-minimize")
+  @scala.inline
+  def `window-restore`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-restore` = this.cast("window-restore")
+  @scala.inline
+  def windows: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.windows = this.cast("windows")
+  @scala.inline
+  def windsock: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.windsock = this.cast("windsock")
+  @scala.inline
+  def `wine-bottle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wine-bottle` = this.cast("wine-bottle")
+  @scala.inline
+  def `wine-glass`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wine-glass` = this.cast("wine-glass")
+  @scala.inline
+  def `wine-glass-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wine-glass-alt` = this.cast("wine-glass-alt")
+  @scala.inline
+  def wix: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wix = this.cast("wix")
+  @scala.inline
+  def `wizards-of-the-coast`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wizards-of-the-coast` = this.cast("wizards-of-the-coast")
+  @scala.inline
+  def `wolf-pack-battalion`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wolf-pack-battalion` = this.cast("wolf-pack-battalion")
+  @scala.inline
+  def `won-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`won-sign` = this.cast("won-sign")
+  @scala.inline
+  def wordpress: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wordpress = this.cast("wordpress")
+  @scala.inline
+  def `wordpress-simple`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wordpress-simple` = this.cast("wordpress-simple")
+  @scala.inline
+  def wpbeginner: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpbeginner = this.cast("wpbeginner")
+  @scala.inline
+  def wpexplorer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpexplorer = this.cast("wpexplorer")
+  @scala.inline
+  def wpforms: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpforms = this.cast("wpforms")
+  @scala.inline
+  def wpressr: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wpressr = this.cast("wpressr")
+  @scala.inline
+  def wreath: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wreath = this.cast("wreath")
+  @scala.inline
+  def wrench: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wrench = this.cast("wrench")
+  @scala.inline
+  def `x-ray`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`x-ray` = this.cast("x-ray")
+  @scala.inline
+  def xbox: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.xbox = this.cast("xbox")
+  @scala.inline
+  def xing: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.xing = this.cast("xing")
+  @scala.inline
+  def `xing-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`xing-square` = this.cast("xing-square")
+  @scala.inline
+  def `y-combinator`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`y-combinator` = this.cast("y-combinator")
+  @scala.inline
+  def yahoo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yahoo = this.cast("yahoo")
+  @scala.inline
+  def yammer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yammer = this.cast("yammer")
+  @scala.inline
+  def yandex: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yandex = this.cast("yandex")
+  @scala.inline
+  def `yandex-international`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`yandex-international` = this.cast("yandex-international")
+  @scala.inline
+  def yarn: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yarn = this.cast("yarn")
+  @scala.inline
+  def yelp: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yelp = this.cast("yelp")
+  @scala.inline
+  def `yen-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`yen-sign` = this.cast("yen-sign")
+  @scala.inline
+  def `yin-yang`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`yin-yang` = this.cast("yin-yang")
+  @scala.inline
+  def yoast: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yoast = this.cast("yoast")
+  @scala.inline
+  def youtube: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.youtube = this.cast("youtube")
+  @scala.inline
+  def `youtube-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`youtube-square` = this.cast("youtube-square")
+  @scala.inline
+  def zhihu: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.zhihu = this.cast("zhihu")
+}
+

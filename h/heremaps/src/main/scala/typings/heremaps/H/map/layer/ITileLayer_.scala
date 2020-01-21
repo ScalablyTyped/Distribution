@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
   * This interface describes a layer which provides data partitioned in quad-tree tiles in an x, y, z fashion (where z describes the level within the tree and x and y describe the absolute
   * column and row indeces whithin the level).
   */
-@JSName("ITileLayer")
 trait ITileLayer_ extends js.Object {
   /**
     * This method cancels a previously requested tile.

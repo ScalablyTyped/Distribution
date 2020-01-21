@@ -1,11 +1,11 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojoStrings.selectedItem
 import typings.dojo.dojoStrings.selectedItems
 import typings.dojo.dojoStrings.selectionMode
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -49,7 +49,7 @@ class Selection () extends Stateful {
     * @param renderer The visual renderer of the selected/deselected item.
     * @param triggerEvent The event that lead to the selection of the item.
     */
-  def dispatchChange(oldSelectedItem: js.Object, newSelectedItem: js.Object, renderer: js.Object, triggerEvent: Event): Unit = js.native
+  def dispatchChange(oldSelectedItem: js.Object, newSelectedItem: js.Object, renderer: js.Object, triggerEvent: Event_): Unit = js.native
   /**
     * This function must be implemented to return the id of a item.
     *
@@ -81,7 +81,7 @@ class Selection () extends Stateful {
     * @param renderer The visual renderer of the selected/deselected item.
     * @param dispatch Whether an event must be dispatched or not.
     */
-  def selectFromEvent(e: Event, item: js.Object, renderer: js.Object, dispatch: Boolean): js.Any = js.native
+  def selectFromEvent(e: Event_, item: js.Object, renderer: js.Object, dispatch: Boolean): js.Any = js.native
   /**
     * Change the selection state of an item.
     *
@@ -104,7 +104,7 @@ class Selection () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selectedItems(
     property: selectedItems,
@@ -114,7 +114,7 @@ class Selection () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selectionMode(
     property: selectionMode,
@@ -124,6 +124,6 @@ class Selection () extends Stateful {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("scriptFrame")
 trait scriptFrame_ extends js.Object
 

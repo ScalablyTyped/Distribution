@@ -2,8 +2,8 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.Anon_Complete
-import typings.winjs.Anon_ContentTransition
+import typings.winjs.AnonComplete
+import typings.winjs.AnonContentTransition
 import typings.winjs.WinJS.Binding.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -126,11 +126,11 @@ object Hub extends js.Object {
   /**
     * Specifies whether the Hub animation is an entrance animation or a transition animation.
     **/
-  var AnimationType: Anon_ContentTransition = js.native
+  var AnimationType: AnonContentTransition = js.native
   /**
     * Gets the current loading state of the Hub.
     **/
-  var LoadingState: Anon_Complete = js.native
+  var LoadingState: AnonComplete = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

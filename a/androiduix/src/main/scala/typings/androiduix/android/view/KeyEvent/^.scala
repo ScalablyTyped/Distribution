@@ -1,6 +1,6 @@
 package typings.androiduix.android.view.KeyEvent
 
-import typings.androiduix.Anon_Alt
+import typings.androiduix.AnonAlt
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object ^ extends js.Object {
   var KEYCODE_Backquote: Double = js.native
   var KEYCODE_Backslash: Double = js.native
   var KEYCODE_Backspace: Double = js.native
-  var KEYCODE_CHANGE_ANDROID_CHROME: Anon_Alt = js.native
+  var KEYCODE_CHANGE_ANDROID_CHROME: AnonAlt = js.native
   var KEYCODE_Colon: Double = js.native
   var KEYCODE_Comma: Double = js.native
   var KEYCODE_DPAD_CENTER: Double = js.native

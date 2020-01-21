@@ -1,458 +1,424 @@
 package typings.antd
 
-import typings.antd.libCheckboxCheckboxMod.AbstractCheckboxProps
-import typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonProps
-import typings.antd.libDropdownDropdownMod.DropDownProps
-import typings.antd.libInputClearableLabeledInputMod.ClearableInputProps
-import typings.antd.libLayoutLayoutMod.BasicProps
-import typings.antd.libLayoutSiderMod.SiderProps
-import typings.antd.libListItemMod.ListItemMetaProps
-import typings.antd.libListItemMod.ListItemProps
-import typings.antd.libStepsMod.StepProps
-import typings.antd.libTableInterfaceMod.FilterMenuProps
-import typings.antd.libTimelineTimelineItemMod.TimeLineItemProps
-import typings.antd.libTransferRenderListBodyMod.TransferListBodyProps
-import typings.antd.libTreeDashSelectInterfaceMod.TreeNodeValue
-import typings.antd.libTreeTreeMod.AntTreeNodeProps
-import typings.antd.libTypographyBaseMod.BlockProps
-import typings.antd.libTypographyBaseMod.InternalBlockProps
-import typings.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
+import typings.antDesignCreateReactContext.mod.ConsumerProps
+import typings.antd.baseMod.BlockProps
+import typings.antd.baseMod.InternalBlockProps
+import typings.antd.checkboxCheckboxMod.AbstractCheckboxProps
+import typings.antd.clearableLabeledInputMod.ClearableInputProps
+import typings.antd.dropdownDropdownMod.DropDownProps
+import typings.antd.itemMod.ListItemMetaProps
+import typings.antd.itemMod.ListItemProps
+import typings.antd.layoutLayoutMod.BasicProps
+import typings.antd.renderListBodyMod.TransferListBodyProps
+import typings.antd.siderMod.SiderProps
+import typings.antd.stepsMod.StepProps
+import typings.antd.tableInterfaceMod.FilterMenuProps
+import typings.antd.timelineItemMod.TimeLineItemProps
+import typings.antd.treeSelectInterfaceMod.TreeNodeValue
+import typings.antd.treeTreeMod.AntTreeNodeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait antdProps {
   @scala.inline
-  def ActionButtonProps: typings.antd.libModalActionButtonMod.ActionButtonProps.type = typings.antd.libModalActionButtonMod.ActionButtonProps
-  type ActionButtonProps = typings.antd.libModalActionButtonMod.ActionButtonProps
+  def ActionButtonProps: typings.antd.actionButtonMod.ActionButtonProps.type = typings.antd.actionButtonMod.ActionButtonProps
+  type ActionButtonProps = typings.antd.actionButtonMod.ActionButtonProps
   @scala.inline
-  def AffixProps: typings.antd.libAffixMod.AffixProps.type = typings.antd.libAffixMod.AffixProps
-  type AffixProps = typings.antd.libAffixMod.AffixProps
+  def AffixProps: typings.antd.affixMod.AffixProps.type = typings.antd.affixMod.AffixProps
+  type AffixProps = typings.antd.affixMod.AffixProps
   @scala.inline
-  def AlertProps: typings.antd.libAlertMod.AlertProps.type = typings.antd.libAlertMod.AlertProps
-  type AlertProps = typings.antd.libAlertMod.AlertProps
+  def AlertProps: typings.antd.alertMod.AlertProps.type = typings.antd.alertMod.AlertProps
+  type AlertProps = typings.antd.alertMod.AlertProps
   @scala.inline
-  def AnchorProps: typings.antd.libAnchorAnchorMod.AnchorProps.type = typings.antd.libAnchorAnchorMod.AnchorProps
-  type AnchorProps = typings.antd.libAnchorAnchorMod.AnchorProps
+  def AnchorProps: typings.antd.anchorAnchorMod.AnchorProps.type = typings.antd.anchorAnchorMod.AnchorProps
+  type AnchorProps = typings.antd.anchorAnchorMod.AnchorProps
   @scala.inline
-  def AnchorLinkProps: typings.antd.libAnchorAnchorLinkMod.AnchorLinkProps.type = typings.antd.libAnchorAnchorLinkMod.AnchorLinkProps
-  type AnchorLinkProps = typings.antd.libAnchorAnchorLinkMod.AnchorLinkProps
+  def AnchorLinkProps: typings.antd.anchorLinkMod.AnchorLinkProps.type = typings.antd.anchorLinkMod.AnchorLinkProps
+  type AnchorLinkProps = typings.antd.anchorLinkMod.AnchorLinkProps
   @scala.inline
-  def AutoCompleteProps: typings.antd.libAutoDashCompleteMod.AutoCompleteProps.type = typings.antd.libAutoDashCompleteMod.AutoCompleteProps
-  type AutoCompleteProps = typings.antd.libAutoDashCompleteMod.AutoCompleteProps
+  def AutoCompleteProps: typings.antd.autoCompleteMod.AutoCompleteProps.type = typings.antd.autoCompleteMod.AutoCompleteProps
+  type AutoCompleteProps = typings.antd.autoCompleteMod.AutoCompleteProps
   @scala.inline
-  def AutoCompleteOptGroupProps: typings.antd.libSelectMod.OptGroupProps.type = typings.antd.libSelectMod.OptGroupProps
-  type AutoCompleteOptGroupProps = typings.antd.libSelectMod.OptGroupProps
+  def AutoCompleteOptGroupProps: typings.antd.selectMod.OptGroupProps.type = typings.antd.selectMod.OptGroupProps
+  type AutoCompleteOptGroupProps = typings.antd.selectMod.OptGroupProps
   @scala.inline
-  def AutoCompleteOptionProps: typings.antd.libSelectMod.OptionProps.type = typings.antd.libSelectMod.OptionProps
-  type AutoCompleteOptionProps = typings.antd.libSelectMod.OptionProps
+  def AutoCompleteOptionProps: typings.antd.selectMod.OptionProps.type = typings.antd.selectMod.OptionProps
+  type AutoCompleteOptionProps = typings.antd.selectMod.OptionProps
   @scala.inline
-  def AutoDashCompleteProps: typings.antd.libAutoDashCompleteMod.AutoCompleteProps.type = typings.antd.libAutoDashCompleteMod.AutoCompleteProps
-  type AutoDashCompleteProps = typings.antd.libAutoDashCompleteMod.AutoCompleteProps
+  def AvatarProps: typings.antd.avatarMod.AvatarProps.type = typings.antd.avatarMod.AvatarProps
+  type AvatarProps = typings.antd.avatarMod.AvatarProps
   @scala.inline
-  def AvatarProps: typings.antd.libAvatarMod.AvatarProps.type = typings.antd.libAvatarMod.AvatarProps
-  type AvatarProps = typings.antd.libAvatarMod.AvatarProps
+  def BackTopProps: typings.antd.backTopMod.BackTopProps.type = typings.antd.backTopMod.BackTopProps
+  type BackTopProps = typings.antd.backTopMod.BackTopProps
   @scala.inline
-  def BackDashTopProps: typings.antd.libBackDashTopMod.BackTopProps.type = typings.antd.libBackDashTopMod.BackTopProps
-  type BackDashTopProps = typings.antd.libBackDashTopMod.BackTopProps
+  def BadgeProps: typings.antd.badgeMod.BadgeProps.type = typings.antd.badgeMod.BadgeProps
+  type BadgeProps = typings.antd.badgeMod.BadgeProps
   @scala.inline
-  def BackTopProps: typings.antd.libBackDashTopMod.BackTopProps.type = typings.antd.libBackDashTopMod.BackTopProps
-  type BackTopProps = typings.antd.libBackDashTopMod.BackTopProps
-  @scala.inline
-  def BadgeProps: typings.antd.libBadgeMod.BadgeProps.type = typings.antd.libBadgeMod.BadgeProps
-  type BadgeProps = typings.antd.libBadgeMod.BadgeProps
-  @scala.inline
-  def BaseProps: InternalBlockProps.type = typings.antd.libTypographyBaseMod.InternalBlockProps
+  def BaseProps: InternalBlockProps.type = typings.antd.baseMod.InternalBlockProps
   type BaseProps = InternalBlockProps
   @scala.inline
-  def BreadcrumbProps: typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps.type = typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
-  type BreadcrumbProps = typings.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
+  def BreadcrumbProps: typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps.type = typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
+  type BreadcrumbProps = typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
   @scala.inline
-  def BreadcrumbItemProps: typings.antd.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps.type = typings.antd.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
-  type BreadcrumbItemProps = typings.antd.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
+  def BreadcrumbItemProps: typings.antd.breadcrumbItemMod.BreadcrumbItemProps.type = typings.antd.breadcrumbItemMod.BreadcrumbItemProps
+  type BreadcrumbItemProps = typings.antd.breadcrumbItemMod.BreadcrumbItemProps
   @scala.inline
-  def ButtonProps: typings.antd.libButtonButtonMod.ButtonProps.type = typings.antd.libButtonButtonMod.ButtonProps
-  type ButtonProps = typings.antd.libButtonButtonMod.ButtonProps
+  def ButtonProps: typings.antd.buttonButtonMod.ButtonProps.type = typings.antd.buttonButtonMod.ButtonProps
+  type ButtonProps = typings.antd.buttonButtonMod.ButtonProps
   @scala.inline
-  def ButtonDashGroupProps: typings.antd.libButtonButtonDashGroupMod.ButtonGroupProps.type = typings.antd.libButtonButtonDashGroupMod.ButtonGroupProps
-  type ButtonDashGroupProps = typings.antd.libButtonButtonDashGroupMod.ButtonGroupProps
+  def ButtonGroupProps: typings.antd.buttonGroupMod.ButtonGroupProps.type = typings.antd.buttonGroupMod.ButtonGroupProps
+  type ButtonGroupProps = typings.antd.buttonGroupMod.ButtonGroupProps
   @scala.inline
-  def ButtonGroupProps: typings.antd.libButtonButtonDashGroupMod.ButtonGroupProps.type = typings.antd.libButtonButtonDashGroupMod.ButtonGroupProps
-  type ButtonGroupProps = typings.antd.libButtonButtonDashGroupMod.ButtonGroupProps
+  def CalendarProps: typings.antd.calendarMod.CalendarProps.type = typings.antd.calendarMod.CalendarProps
+  type CalendarProps = typings.antd.calendarMod.CalendarProps
   @scala.inline
-  def CalendarProps: typings.antd.libCalendarMod.CalendarProps.type = typings.antd.libCalendarMod.CalendarProps
-  type CalendarProps = typings.antd.libCalendarMod.CalendarProps
+  def CardProps: typings.antd.cardMod.CardProps.type = typings.antd.cardMod.CardProps
+  type CardProps = typings.antd.cardMod.CardProps
   @scala.inline
-  def CardProps: typings.antd.libCardMod.CardProps.type = typings.antd.libCardMod.CardProps
-  type CardProps = typings.antd.libCardMod.CardProps
+  def CardGridProps: typings.antd.gridMod.CardGridProps.type = typings.antd.gridMod.CardGridProps
+  type CardGridProps = typings.antd.gridMod.CardGridProps
   @scala.inline
-  def CardGridProps: typings.antd.libCardGridMod.CardGridProps.type = typings.antd.libCardGridMod.CardGridProps
-  type CardGridProps = typings.antd.libCardGridMod.CardGridProps
+  def CardMetaProps: typings.antd.metaMod.CardMetaProps.type = typings.antd.metaMod.CardMetaProps
+  type CardMetaProps = typings.antd.metaMod.CardMetaProps
   @scala.inline
-  def CardMetaProps: typings.antd.libCardMetaMod.CardMetaProps.type = typings.antd.libCardMetaMod.CardMetaProps
-  type CardMetaProps = typings.antd.libCardMetaMod.CardMetaProps
+  def CarouselProps: typings.antd.carouselMod.CarouselProps.type = typings.antd.carouselMod.CarouselProps
+  type CarouselProps = typings.antd.carouselMod.CarouselProps
   @scala.inline
-  def CarouselProps: typings.antd.libCarouselMod.CarouselProps.type = typings.antd.libCarouselMod.CarouselProps
-  type CarouselProps = typings.antd.libCarouselMod.CarouselProps
+  def CascaderProps: typings.antd.cascaderMod.CascaderProps.type = typings.antd.cascaderMod.CascaderProps
+  type CascaderProps = typings.antd.cascaderMod.CascaderProps
   @scala.inline
-  def CascaderProps: typings.antd.libCascaderMod.CascaderProps.type = typings.antd.libCascaderMod.CascaderProps
-  type CascaderProps = typings.antd.libCascaderMod.CascaderProps
+  def CheckableTagProps: typings.antd.checkableTagMod.CheckableTagProps.type = typings.antd.checkableTagMod.CheckableTagProps
+  type CheckableTagProps = typings.antd.checkableTagMod.CheckableTagProps
   @scala.inline
-  def CheckableTagProps: typings.antd.libTagCheckableTagMod.CheckableTagProps.type = typings.antd.libTagCheckableTagMod.CheckableTagProps
-  type CheckableTagProps = typings.antd.libTagCheckableTagMod.CheckableTagProps
+  def CheckboxProps: typings.antd.checkboxCheckboxMod.CheckboxProps.type = typings.antd.checkboxCheckboxMod.CheckboxProps
+  type CheckboxProps = typings.antd.checkboxCheckboxMod.CheckboxProps
   @scala.inline
-  def CheckboxProps: typings.antd.libCheckboxCheckboxMod.CheckboxProps.type = typings.antd.libCheckboxCheckboxMod.CheckboxProps
-  type CheckboxProps = typings.antd.libCheckboxCheckboxMod.CheckboxProps
+  def CircleProps: typings.antd.circleMod.CircleProps.type = typings.antd.circleMod.CircleProps
+  type CircleProps = typings.antd.circleMod.CircleProps
   @scala.inline
-  def CircleProps: typings.antd.libProgressCircleMod.CircleProps.type = typings.antd.libProgressCircleMod.CircleProps
-  type CircleProps = typings.antd.libProgressCircleMod.CircleProps
-  @scala.inline
-  def ClearableLabeledInputProps: ClearableInputProps.type = typings.antd.libInputClearableLabeledInputMod.ClearableInputProps
+  def ClearableLabeledInputProps: ClearableInputProps.type = typings.antd.clearableLabeledInputMod.ClearableInputProps
   type ClearableLabeledInputProps = ClearableInputProps
   @scala.inline
-  def ColProps: typings.antd.libGridColMod.ColProps.type = typings.antd.libGridColMod.ColProps
-  type ColProps = typings.antd.libGridColMod.ColProps
+  def ColProps: typings.antd.gridColMod.ColProps.type = typings.antd.gridColMod.ColProps
+  type ColProps = typings.antd.gridColMod.ColProps
   @scala.inline
-  def CollapseProps: typings.antd.libCollapseCollapseMod.CollapseProps.type = typings.antd.libCollapseCollapseMod.CollapseProps
-  type CollapseProps = typings.antd.libCollapseCollapseMod.CollapseProps
+  def CollapseProps: typings.antd.collapseCollapseMod.CollapseProps.type = typings.antd.collapseCollapseMod.CollapseProps
+  type CollapseProps = typings.antd.collapseCollapseMod.CollapseProps
   @scala.inline
-  def CollapsePanelProps: typings.antd.libCollapseCollapsePanelMod.CollapsePanelProps.type = typings.antd.libCollapseCollapsePanelMod.CollapsePanelProps
-  type CollapsePanelProps = typings.antd.libCollapseCollapsePanelMod.CollapsePanelProps
+  def CollapsePanelProps: typings.antd.collapsePanelMod.CollapsePanelProps.type = typings.antd.collapsePanelMod.CollapsePanelProps
+  type CollapsePanelProps = typings.antd.collapsePanelMod.CollapsePanelProps
   @scala.inline
-  def ColumnProps: typings.antd.libTableInterfaceMod.ColumnProps.type = typings.antd.libTableInterfaceMod.ColumnProps
-  type ColumnProps[T] = typings.antd.libTableInterfaceMod.ColumnProps[T]
+  def ColumnProps: typings.antd.tableInterfaceMod.ColumnProps.type = typings.antd.tableInterfaceMod.ColumnProps
+  type ColumnProps[T] = typings.antd.tableInterfaceMod.ColumnProps[T]
   @scala.inline
-  def ColumnGroupProps: typings.antd.libTableColumnGroupMod.ColumnGroupProps.type = typings.antd.libTableColumnGroupMod.ColumnGroupProps
-  type ColumnGroupProps = typings.antd.libTableColumnGroupMod.ColumnGroupProps
+  def ColumnGroupProps: typings.antd.columnGroupMod.ColumnGroupProps.type = typings.antd.columnGroupMod.ColumnGroupProps
+  type ColumnGroupProps = typings.antd.columnGroupMod.ColumnGroupProps
   @scala.inline
-  def CommentProps: typings.antd.libCommentMod.CommentProps.type = typings.antd.libCommentMod.CommentProps
-  type CommentProps = typings.antd.libCommentMod.CommentProps
+  def CommentProps: typings.antd.commentMod.CommentProps.type = typings.antd.commentMod.CommentProps
+  type CommentProps = typings.antd.commentMod.CommentProps
   @scala.inline
-  def ConfigConsumerProps: ConsumerProps.type = typings.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
+  def ConfigConsumerProps: ConsumerProps.type = typings.antDesignCreateReactContext.mod.ConsumerProps
   type ConfigConsumerProps[T] = ConsumerProps[T]
   @scala.inline
-  def ConfigDashProviderProps: typings.antd.libConfigDashProviderMod.ConfigProviderProps.type = typings.antd.libConfigDashProviderMod.ConfigProviderProps
-  type ConfigDashProviderProps = typings.antd.libConfigDashProviderMod.ConfigProviderProps
+  def ConfigProviderProps: typings.antd.configProviderMod.ConfigProviderProps.type = typings.antd.configProviderMod.ConfigProviderProps
+  type ConfigProviderProps = typings.antd.configProviderMod.ConfigProviderProps
   @scala.inline
-  def ConfigProviderProps: typings.antd.libConfigDashProviderMod.ConfigProviderProps.type = typings.antd.libConfigDashProviderMod.ConfigProviderProps
-  type ConfigProviderProps = typings.antd.libConfigDashProviderMod.ConfigProviderProps
+  def CountdownProps: typings.antd.countdownMod.CountdownProps.type = typings.antd.countdownMod.CountdownProps
+  type CountdownProps = typings.antd.countdownMod.CountdownProps
   @scala.inline
-  def CountdownProps: typings.antd.libStatisticCountdownMod.CountdownProps.type = typings.antd.libStatisticCountdownMod.CountdownProps
-  type CountdownProps = typings.antd.libStatisticCountdownMod.CountdownProps
+  def DatePickerProps: typings.antd.interfaceMod.DatePickerProps.type = typings.antd.interfaceMod.DatePickerProps
+  type DatePickerProps = typings.antd.interfaceMod.DatePickerProps
   @scala.inline
-  def DateDashPickerProps: typings.antd.libDateDashPickerInterfaceMod.DatePickerProps.type = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
-  type DateDashPickerProps = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
+  def DescriptionsProps: typings.antd.descriptionsMod.DescriptionsProps.type = typings.antd.descriptionsMod.DescriptionsProps
+  type DescriptionsProps = typings.antd.descriptionsMod.DescriptionsProps
   @scala.inline
-  def `DateDashPickerDate-pickerProps`: typings.antd.libDateDashPickerInterfaceMod.DatePickerProps.type = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
-  type `DateDashPickerDate-pickerProps` = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
+  def DescriptionsItemProps: typings.antd.descriptionsMod.DescriptionsItemProps.type = typings.antd.descriptionsMod.DescriptionsItemProps
+  type DescriptionsItemProps = typings.antd.descriptionsMod.DescriptionsItemProps
   @scala.inline
-  def DatePickerProps: typings.antd.libDateDashPickerInterfaceMod.DatePickerProps.type = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
-  type DatePickerProps = typings.antd.libDateDashPickerInterfaceMod.DatePickerProps
+  def DirectoryTreeProps: typings.antd.directoryTreeMod.DirectoryTreeProps.type = typings.antd.directoryTreeMod.DirectoryTreeProps
+  type DirectoryTreeProps = typings.antd.directoryTreeMod.DirectoryTreeProps
   @scala.inline
-  def DescriptionsProps: typings.antd.libDescriptionsMod.DescriptionsProps.type = typings.antd.libDescriptionsMod.DescriptionsProps
-  type DescriptionsProps = typings.antd.libDescriptionsMod.DescriptionsProps
+  def DividerProps: typings.antd.dividerMod.DividerProps.type = typings.antd.dividerMod.DividerProps
+  type DividerProps = typings.antd.dividerMod.DividerProps
   @scala.inline
-  def DescriptionsItemProps: typings.antd.libDescriptionsMod.DescriptionsItemProps.type = typings.antd.libDescriptionsMod.DescriptionsItemProps
-  type DescriptionsItemProps = typings.antd.libDescriptionsMod.DescriptionsItemProps
+  def DraggerProps: typings.antd.draggerMod.DraggerProps.type = typings.antd.draggerMod.DraggerProps
+  type DraggerProps = typings.antd.draggerMod.DraggerProps
   @scala.inline
-  def DirectoryTreeProps: typings.antd.libTreeDirectoryTreeMod.DirectoryTreeProps.type = typings.antd.libTreeDirectoryTreeMod.DirectoryTreeProps
-  type DirectoryTreeProps = typings.antd.libTreeDirectoryTreeMod.DirectoryTreeProps
+  def DrawerProps: typings.antd.drawerMod.DrawerProps.type = typings.antd.drawerMod.DrawerProps
+  type DrawerProps = typings.antd.drawerMod.DrawerProps
   @scala.inline
-  def DividerProps: typings.antd.libDividerMod.DividerProps.type = typings.antd.libDividerMod.DividerProps
-  type DividerProps = typings.antd.libDividerMod.DividerProps
-  @scala.inline
-  def DraggerProps: typings.antd.libUploadDraggerMod.DraggerProps.type = typings.antd.libUploadDraggerMod.DraggerProps
-  type DraggerProps = typings.antd.libUploadDraggerMod.DraggerProps
-  @scala.inline
-  def DrawerProps: typings.antd.libDrawerMod.DrawerProps.type = typings.antd.libDrawerMod.DrawerProps
-  type DrawerProps = typings.antd.libDrawerMod.DrawerProps
-  @scala.inline
-  def DropdownProps: DropDownProps.type = typings.antd.libDropdownDropdownMod.DropDownProps
+  def DropdownProps: DropDownProps.type = typings.antd.dropdownDropdownMod.DropDownProps
   type DropdownProps = DropDownProps
   @scala.inline
-  def DropdownDashButtonProps: DropdownButtonProps.type = typings.antd.libDropdownDropdownDashButtonMod.DropdownButtonProps
-  type DropdownDashButtonProps = DropdownButtonProps
+  def DropdownButtonProps: typings.antd.dropdownButtonMod.DropdownButtonProps.type = typings.antd.dropdownButtonMod.DropdownButtonProps
+  type DropdownButtonProps = typings.antd.dropdownButtonMod.DropdownButtonProps
   @scala.inline
-  def EditableProps: typings.antd.libTypographyEditableMod.EditableProps.type = typings.antd.libTypographyEditableMod.EditableProps
-  type EditableProps = typings.antd.libTypographyEditableMod.EditableProps
+  def EditableProps: typings.antd.editableMod.EditableProps.type = typings.antd.editableMod.EditableProps
+  type EditableProps = typings.antd.editableMod.EditableProps
   @scala.inline
-  def EmptyProps: typings.antd.libEmptyMod.EmptyProps.type = typings.antd.libEmptyMod.EmptyProps
-  type EmptyProps = typings.antd.libEmptyMod.EmptyProps
+  def EmptyProps: typings.antd.emptyMod.EmptyProps.type = typings.antd.emptyMod.EmptyProps
+  type EmptyProps = typings.antd.emptyMod.EmptyProps
   @scala.inline
-  def FilterDropdownProps: FilterMenuProps.type = typings.antd.libTableInterfaceMod.FilterMenuProps
+  def FilterDropdownProps: FilterMenuProps.type = typings.antd.tableInterfaceMod.FilterMenuProps
   type FilterDropdownProps[T] = FilterMenuProps[T]
   @scala.inline
-  def FilterDropdownMenuWrapperProps: typings.antd.libTableFilterDropdownMenuWrapperMod.FilterDropdownMenuWrapperProps.type = typings.antd.libTableFilterDropdownMenuWrapperMod.FilterDropdownMenuWrapperProps
-  type FilterDropdownMenuWrapperProps = typings.antd.libTableFilterDropdownMenuWrapperMod.FilterDropdownMenuWrapperProps
+  def FilterDropdownMenuWrapperProps: typings.antd.filterDropdownMenuWrapperMod.FilterDropdownMenuWrapperProps.type = typings.antd.filterDropdownMenuWrapperMod.FilterDropdownMenuWrapperProps
+  type FilterDropdownMenuWrapperProps = typings.antd.filterDropdownMenuWrapperMod.FilterDropdownMenuWrapperProps
   @scala.inline
-  def FormProps: typings.antd.libFormFormMod.FormProps.type = typings.antd.libFormFormMod.FormProps
-  type FormProps = typings.antd.libFormFormMod.FormProps
+  def FormProps: typings.antd.formFormMod.FormProps.type = typings.antd.formFormMod.FormProps
+  type FormProps = typings.antd.formFormMod.FormProps
   @scala.inline
-  def FormItemProps: typings.antd.libFormFormItemMod.FormItemProps.type = typings.antd.libFormFormItemMod.FormItemProps
-  type FormItemProps = typings.antd.libFormFormItemMod.FormItemProps
+  def FormItemProps: typings.antd.formItemMod.FormItemProps.type = typings.antd.formItemMod.FormItemProps
+  type FormItemProps = typings.antd.formItemMod.FormItemProps
   @scala.inline
-  def GridProps: typings.antd.libCardGridMod.CardGridProps.type = typings.antd.libCardGridMod.CardGridProps
-  type GridProps = typings.antd.libCardGridMod.CardGridProps
+  def GridProps: typings.antd.gridMod.CardGridProps.type = typings.antd.gridMod.CardGridProps
+  type GridProps = typings.antd.gridMod.CardGridProps
   @scala.inline
-  def GroupProps: typings.antd.libInputGroupMod.GroupProps.type = typings.antd.libInputGroupMod.GroupProps
-  type GroupProps = typings.antd.libInputGroupMod.GroupProps
+  def GroupProps: typings.antd.inputGroupMod.GroupProps.type = typings.antd.inputGroupMod.GroupProps
+  type GroupProps = typings.antd.inputGroupMod.GroupProps
   @scala.inline
-  def HeaderProps: typings.antd.libCalendarHeaderMod.HeaderProps.type = typings.antd.libCalendarHeaderMod.HeaderProps
-  type HeaderProps = typings.antd.libCalendarHeaderMod.HeaderProps
+  def HeaderProps: typings.antd.headerMod.HeaderProps.type = typings.antd.headerMod.HeaderProps
+  type HeaderProps = typings.antd.headerMod.HeaderProps
   @scala.inline
-  def IconProps: typings.antd.libIconMod.IconProps.type = typings.antd.libIconMod.IconProps
-  type IconProps = typings.antd.libIconMod.IconProps
+  def IconProps: typings.antd.iconMod.IconProps.type = typings.antd.iconMod.IconProps
+  type IconProps = typings.antd.iconMod.IconProps
   @scala.inline
-  def InputProps: typings.antd.libInputInputMod.InputProps.type = typings.antd.libInputInputMod.InputProps
-  type InputProps = typings.antd.libInputInputMod.InputProps
+  def InputProps: typings.antd.inputInputMod.InputProps.type = typings.antd.inputInputMod.InputProps
+  type InputProps = typings.antd.inputInputMod.InputProps
   @scala.inline
-  def InputDashNumberProps: typings.antd.libInputDashNumberMod.InputNumberProps.type = typings.antd.libInputDashNumberMod.InputNumberProps
-  type InputDashNumberProps = typings.antd.libInputDashNumberMod.InputNumberProps
+  def InputElementProps: typings.antd.inputElementMod.InputElementProps.type = typings.antd.inputElementMod.InputElementProps
+  type InputElementProps = typings.antd.inputElementMod.InputElementProps
   @scala.inline
-  def InputElementProps: typings.antd.libAutoDashCompleteInputElementMod.InputElementProps.type = typings.antd.libAutoDashCompleteInputElementMod.InputElementProps
-  type InputElementProps = typings.antd.libAutoDashCompleteInputElementMod.InputElementProps
+  def InputGroupProps: typings.antd.inputGroupMod.GroupProps.type = typings.antd.inputGroupMod.GroupProps
+  type InputGroupProps = typings.antd.inputGroupMod.GroupProps
   @scala.inline
-  def InputGroupProps: typings.antd.libInputGroupMod.GroupProps.type = typings.antd.libInputGroupMod.GroupProps
-  type InputGroupProps = typings.antd.libInputGroupMod.GroupProps
+  def InputNumberProps: typings.antd.inputNumberMod.InputNumberProps.type = typings.antd.inputNumberMod.InputNumberProps
+  type InputNumberProps = typings.antd.inputNumberMod.InputNumberProps
   @scala.inline
-  def InputNumberProps: typings.antd.libInputDashNumberMod.InputNumberProps.type = typings.antd.libInputDashNumberMod.InputNumberProps
-  type InputNumberProps = typings.antd.libInputDashNumberMod.InputNumberProps
-  @scala.inline
-  def ItemProps: ListItemProps.type = typings.antd.libListItemMod.ListItemProps
+  def ItemProps: ListItemProps.type = typings.antd.itemMod.ListItemProps
   type ItemProps = ListItemProps
   @scala.inline
-  def ItemMetaProps: ListItemMetaProps.type = typings.antd.libListItemMod.ListItemMetaProps
+  def ItemMetaProps: ListItemMetaProps.type = typings.antd.itemMod.ListItemMetaProps
   type ItemMetaProps = /* props */ ListItemMetaProps
   @scala.inline
-  def LayoutProps: BasicProps.type = typings.antd.libLayoutLayoutMod.BasicProps
+  def LayoutProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
   type LayoutProps = BasicProps
   @scala.inline
-  def LayoutContentProps: BasicProps.type = typings.antd.libLayoutLayoutMod.BasicProps
+  def LayoutContentProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
   type LayoutContentProps = BasicProps
   @scala.inline
-  def LayoutFooterProps: BasicProps.type = typings.antd.libLayoutLayoutMod.BasicProps
+  def LayoutFooterProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
   type LayoutFooterProps = BasicProps
   @scala.inline
-  def LayoutHeaderProps: BasicProps.type = typings.antd.libLayoutLayoutMod.BasicProps
+  def LayoutHeaderProps: BasicProps.type = typings.antd.layoutLayoutMod.BasicProps
   type LayoutHeaderProps = BasicProps
   @scala.inline
-  def LayoutSiderProps: SiderProps.type = typings.antd.libLayoutSiderMod.SiderProps
+  def LayoutSiderProps: SiderProps.type = typings.antd.siderMod.SiderProps
   type LayoutSiderProps = SiderProps
   @scala.inline
-  def LineProps: typings.antd.libProgressLineMod.LineProps.type = typings.antd.libProgressLineMod.LineProps
-  type LineProps = typings.antd.libProgressLineMod.LineProps
+  def LineProps: typings.antd.lineMod.LineProps.type = typings.antd.lineMod.LineProps
+  type LineProps = typings.antd.lineMod.LineProps
   @scala.inline
-  def ListProps: typings.antd.libListMod.ListProps.type = typings.antd.libListMod.ListProps
-  type ListProps[T] = typings.antd.libListMod.ListProps[T]
+  def ListProps: typings.antd.listMod.ListProps.type = typings.antd.listMod.ListProps
+  type ListProps[T] = typings.antd.listMod.ListProps[T]
   @scala.inline
-  def LocaleDashProviderProps: typings.antd.libLocaleDashProviderMod.LocaleProviderProps.type = typings.antd.libLocaleDashProviderMod.LocaleProviderProps
-  type LocaleDashProviderProps = typings.antd.libLocaleDashProviderMod.LocaleProviderProps
+  def LocaleProviderProps: typings.antd.localeProviderMod.LocaleProviderProps.type = typings.antd.localeProviderMod.LocaleProviderProps
+  type LocaleProviderProps = typings.antd.localeProviderMod.LocaleProviderProps
+  type LocaleReceiverProps = typings.antd.localeReceiverMod.LocaleReceiverProps
   @scala.inline
-  def LocaleProviderProps: typings.antd.libLocaleDashProviderMod.LocaleProviderProps.type = typings.antd.libLocaleDashProviderMod.LocaleProviderProps
-  type LocaleProviderProps = typings.antd.libLocaleDashProviderMod.LocaleProviderProps
-  type LocaleReceiverProps = typings.antd.libLocaleDashProviderLocaleReceiverMod.LocaleReceiverProps
+  def MentionProps: typings.antd.mentionMod.MentionProps.type = typings.antd.mentionMod.MentionProps
+  type MentionProps = typings.antd.mentionMod.MentionProps
   @scala.inline
-  def MentionProps: typings.antd.libMentionMod.MentionProps.type = typings.antd.libMentionMod.MentionProps
-  type MentionProps = typings.antd.libMentionMod.MentionProps
+  def MentionsProps: typings.antd.mentionsMod.MentionProps.type = typings.antd.mentionsMod.MentionProps
+  type MentionsProps = typings.antd.mentionsMod.MentionProps
   @scala.inline
-  def MentionsProps: typings.antd.libMentionsMod.MentionProps.type = typings.antd.libMentionsMod.MentionProps
-  type MentionsProps = typings.antd.libMentionsMod.MentionProps
+  def MentionsOptionProps: typings.rcMentions.optionMod.OptionProps.type = typings.rcMentions.optionMod.OptionProps
+  type MentionsOptionProps = typings.rcMentions.optionMod.OptionProps
   @scala.inline
-  def MentionsOptionProps: typings.rcDashMentions.libOptionMod.OptionProps.type = typings.rcDashMentions.libOptionMod.OptionProps
-  type MentionsOptionProps = typings.rcDashMentions.libOptionMod.OptionProps
+  def MenuProps: typings.antd.menuMod.MenuProps.type = typings.antd.menuMod.MenuProps
+  type MenuProps = typings.antd.menuMod.MenuProps
   @scala.inline
-  def MenuProps: typings.antd.libMenuMod.MenuProps.type = typings.antd.libMenuMod.MenuProps
-  type MenuProps = typings.antd.libMenuMod.MenuProps
+  def MenuDividerProps: typings.rcMenu.dividerMod.DividerProps.type = typings.rcMenu.dividerMod.DividerProps
+  type MenuDividerProps = typings.rcMenu.dividerMod.DividerProps
   @scala.inline
-  def MenuDividerProps: typings.rcDashMenu.libDividerMod.DividerProps.type = typings.rcDashMenu.libDividerMod.DividerProps
-  type MenuDividerProps = typings.rcDashMenu.libDividerMod.DividerProps
+  def MenuItemProps: typings.antd.menuItemMod.MenuItemProps.type = typings.antd.menuItemMod.MenuItemProps
+  type MenuItemProps = typings.antd.menuItemMod.MenuItemProps
   @scala.inline
-  def MenuItemProps: typings.antd.libMenuMenuItemMod.MenuItemProps.type = typings.antd.libMenuMenuItemMod.MenuItemProps
-  type MenuItemProps = typings.antd.libMenuMenuItemMod.MenuItemProps
+  def MetaProps: typings.antd.metaMod.CardMetaProps.type = typings.antd.metaMod.CardMetaProps
+  type MetaProps = typings.antd.metaMod.CardMetaProps
   @scala.inline
-  def MetaProps: typings.antd.libCardMetaMod.CardMetaProps.type = typings.antd.libCardMetaMod.CardMetaProps
-  type MetaProps = typings.antd.libCardMetaMod.CardMetaProps
+  def MiniSelectOptionProps: typings.antd.selectMod.OptionProps.type = typings.antd.selectMod.OptionProps
+  type MiniSelectOptionProps = typings.antd.selectMod.OptionProps
   @scala.inline
-  def MiniSelectOptionProps: typings.antd.libSelectMod.OptionProps.type = typings.antd.libSelectMod.OptionProps
-  type MiniSelectOptionProps = typings.antd.libSelectMod.OptionProps
+  def ModalProps: typings.antd.modalModalMod.ModalProps.type = typings.antd.modalModalMod.ModalProps
+  type ModalProps = typings.antd.modalModalMod.ModalProps
   @scala.inline
-  def ModalProps: typings.antd.libModalModalMod.ModalProps.type = typings.antd.libModalModalMod.ModalProps
-  type ModalProps = typings.antd.libModalModalMod.ModalProps
+  def NumberProps: typings.antd.numberMod.NumberProps.type = typings.antd.numberMod.NumberProps
+  type NumberProps = typings.antd.numberMod.NumberProps
   @scala.inline
-  def NumberProps: typings.antd.libStatisticNumberMod.NumberProps.type = typings.antd.libStatisticNumberMod.NumberProps
-  type NumberProps = typings.antd.libStatisticNumberMod.NumberProps
+  def OperationProps: typings.antd.operationMod.TransferOperationProps.type = typings.antd.operationMod.TransferOperationProps
+  type OperationProps = typings.antd.operationMod.TransferOperationProps
   @scala.inline
-  def OperationProps: typings.antd.libTransferOperationMod.TransferOperationProps.type = typings.antd.libTransferOperationMod.TransferOperationProps
-  type OperationProps = typings.antd.libTransferOperationMod.TransferOperationProps
+  def OptGroupProps: typings.antd.selectMod.OptGroupProps.type = typings.antd.selectMod.OptGroupProps
+  type OptGroupProps = typings.antd.selectMod.OptGroupProps
   @scala.inline
-  def OptGroupProps: typings.antd.libSelectMod.OptGroupProps.type = typings.antd.libSelectMod.OptGroupProps
-  type OptGroupProps = typings.antd.libSelectMod.OptGroupProps
+  def OptionProps: typings.antd.selectMod.OptionProps.type = typings.antd.selectMod.OptionProps
+  type OptionProps = typings.antd.selectMod.OptionProps
   @scala.inline
-  def OptionProps: typings.antd.libSelectMod.OptionProps.type = typings.antd.libSelectMod.OptionProps
-  type OptionProps = typings.antd.libSelectMod.OptionProps
+  def PageHeaderProps: typings.antd.pageHeaderMod.PageHeaderProps.type = typings.antd.pageHeaderMod.PageHeaderProps
+  type PageHeaderProps = typings.antd.pageHeaderMod.PageHeaderProps
   @scala.inline
-  def PageDashHeaderProps: typings.antd.libPageDashHeaderMod.PageHeaderProps.type = typings.antd.libPageDashHeaderMod.PageHeaderProps
-  type PageDashHeaderProps = typings.antd.libPageDashHeaderMod.PageHeaderProps
+  def PaginationProps: typings.antd.paginationPaginationMod.PaginationProps.type = typings.antd.paginationPaginationMod.PaginationProps
+  type PaginationProps = typings.antd.paginationPaginationMod.PaginationProps
   @scala.inline
-  def PageHeaderProps: typings.antd.libPageDashHeaderMod.PageHeaderProps.type = typings.antd.libPageDashHeaderMod.PageHeaderProps
-  type PageHeaderProps = typings.antd.libPageDashHeaderMod.PageHeaderProps
+  def ParagraphProps: BlockProps.type = typings.antd.baseMod.BlockProps
+  type ParagraphProps = typings.antd.typographyParagraphMod.ParagraphProps
   @scala.inline
-  def PaginationProps: typings.antd.libPaginationPaginationMod.PaginationProps.type = typings.antd.libPaginationPaginationMod.PaginationProps
-  type PaginationProps = typings.antd.libPaginationPaginationMod.PaginationProps
+  def PasswordProps: typings.antd.passwordMod.PasswordProps.type = typings.antd.passwordMod.PasswordProps
+  type PasswordProps = typings.antd.passwordMod.PasswordProps
   @scala.inline
-  def ParagraphProps: BlockProps.type = typings.antd.libTypographyBaseMod.BlockProps
-  type ParagraphProps = typings.antd.libTypographyParagraphMod.ParagraphProps
+  def PopconfirmProps: typings.antd.popconfirmMod.PopconfirmProps.type = typings.antd.popconfirmMod.PopconfirmProps
+  type PopconfirmProps = typings.antd.popconfirmMod.PopconfirmProps
   @scala.inline
-  def PasswordProps: typings.antd.libInputPasswordMod.PasswordProps.type = typings.antd.libInputPasswordMod.PasswordProps
-  type PasswordProps = typings.antd.libInputPasswordMod.PasswordProps
+  def PopoverProps: typings.antd.popoverMod.PopoverProps.type = typings.antd.popoverMod.PopoverProps
+  type PopoverProps = typings.antd.popoverMod.PopoverProps
   @scala.inline
-  def PopconfirmProps: typings.antd.libPopconfirmMod.PopconfirmProps.type = typings.antd.libPopconfirmMod.PopconfirmProps
-  type PopconfirmProps = typings.antd.libPopconfirmMod.PopconfirmProps
+  def ProgressProps: typings.antd.progressProgressMod.ProgressProps.type = typings.antd.progressProgressMod.ProgressProps
+  type ProgressProps = typings.antd.progressProgressMod.ProgressProps
   @scala.inline
-  def PopoverProps: typings.antd.libPopoverMod.PopoverProps.type = typings.antd.libPopoverMod.PopoverProps
-  type PopoverProps = typings.antd.libPopoverMod.PopoverProps
+  def RadioProps: AbstractCheckboxProps.type = typings.antd.checkboxCheckboxMod.AbstractCheckboxProps
+  type RadioProps = typings.antd.radioInterfaceMod.RadioProps
   @scala.inline
-  def ProgressProps: typings.antd.libProgressProgressMod.ProgressProps.type = typings.antd.libProgressProgressMod.ProgressProps
-  type ProgressProps = typings.antd.libProgressProgressMod.ProgressProps
+  def RadioButtonProps: AbstractCheckboxProps.type = typings.antd.checkboxCheckboxMod.AbstractCheckboxProps
+  type RadioButtonProps = typings.antd.radioButtonMod.RadioButtonProps
   @scala.inline
-  def RadioProps: AbstractCheckboxProps.type = typings.antd.libCheckboxCheckboxMod.AbstractCheckboxProps
-  type RadioProps = typings.antd.libRadioInterfaceMod.RadioProps
+  def RangePickerProps: typings.antd.interfaceMod.RangePickerProps.type = typings.antd.interfaceMod.RangePickerProps
+  type RangePickerProps = typings.antd.interfaceMod.RangePickerProps
   @scala.inline
-  def RadioButtonProps: AbstractCheckboxProps.type = typings.antd.libCheckboxCheckboxMod.AbstractCheckboxProps
-  type RadioButtonProps = typings.antd.libRadioRadioButtonMod.RadioButtonProps
+  def RateProps: typings.antd.rateMod.RateProps.type = typings.antd.rateMod.RateProps
+  type RateProps = typings.antd.rateMod.RateProps
   @scala.inline
-  def RangePickerProps: typings.antd.libDateDashPickerInterfaceMod.RangePickerProps.type = typings.antd.libDateDashPickerInterfaceMod.RangePickerProps
-  type RangePickerProps = typings.antd.libDateDashPickerInterfaceMod.RangePickerProps
-  @scala.inline
-  def RateProps: typings.antd.libRateMod.RateProps.type = typings.antd.libRateMod.RateProps
-  type RateProps = typings.antd.libRateMod.RateProps
-  @scala.inline
-  def RenderListBodyProps: TransferListBodyProps.type = typings.antd.libTransferRenderListBodyMod.TransferListBodyProps
+  def RenderListBodyProps: TransferListBodyProps.type = typings.antd.renderListBodyMod.TransferListBodyProps
   type RenderListBodyProps = TransferListBodyProps
   @scala.inline
-  def ResizableTextAreaProps: typings.antd.libInputTextAreaMod.TextAreaProps.type = typings.antd.libInputTextAreaMod.TextAreaProps
-  type ResizableTextAreaProps = typings.antd.libInputTextAreaMod.TextAreaProps
+  def ResizableTextAreaProps: typings.antd.textAreaMod.TextAreaProps.type = typings.antd.textAreaMod.TextAreaProps
+  type ResizableTextAreaProps = typings.antd.textAreaMod.TextAreaProps
   @scala.inline
-  def ResultProps: typings.antd.libResultMod.ResultProps.type = typings.antd.libResultMod.ResultProps
-  type ResultProps = typings.antd.libResultMod.ResultProps
+  def ResultProps: typings.antd.resultMod.ResultProps.type = typings.antd.resultMod.ResultProps
+  type ResultProps = typings.antd.resultMod.ResultProps
   @scala.inline
-  def RowProps: typings.antd.libGridRowMod.RowProps.type = typings.antd.libGridRowMod.RowProps
-  type RowProps = typings.antd.libGridRowMod.RowProps
+  def RowProps: typings.antd.rowMod.RowProps.type = typings.antd.rowMod.RowProps
+  type RowProps = typings.antd.rowMod.RowProps
   @scala.inline
-  def ScrollNumberProps: typings.antd.libBadgeScrollNumberMod.ScrollNumberProps.type = typings.antd.libBadgeScrollNumberMod.ScrollNumberProps
-  type ScrollNumberProps = typings.antd.libBadgeScrollNumberMod.ScrollNumberProps
+  def ScrollNumberProps: typings.antd.scrollNumberMod.ScrollNumberProps.type = typings.antd.scrollNumberMod.ScrollNumberProps
+  type ScrollNumberProps = typings.antd.scrollNumberMod.ScrollNumberProps
   @scala.inline
-  def SearchProps: typings.antd.libInputSearchMod.SearchProps.type = typings.antd.libInputSearchMod.SearchProps
-  type SearchProps = typings.antd.libInputSearchMod.SearchProps
+  def SearchProps: typings.antd.searchMod.SearchProps.type = typings.antd.searchMod.SearchProps
+  type SearchProps = typings.antd.searchMod.SearchProps
   @scala.inline
-  def SelectProps: typings.antd.libSelectMod.SelectProps.type = typings.antd.libSelectMod.SelectProps
-  type SelectProps[T] = typings.antd.libSelectMod.SelectProps[T]
+  def SelectProps: typings.antd.selectMod.SelectProps.type = typings.antd.selectMod.SelectProps
+  type SelectProps[T] = typings.antd.selectMod.SelectProps[T]
   @scala.inline
-  def SelectOptGroupProps: typings.antd.libSelectMod.OptGroupProps.type = typings.antd.libSelectMod.OptGroupProps
-  type SelectOptGroupProps = typings.antd.libSelectMod.OptGroupProps
+  def SelectOptGroupProps: typings.antd.selectMod.OptGroupProps.type = typings.antd.selectMod.OptGroupProps
+  type SelectOptGroupProps = typings.antd.selectMod.OptGroupProps
   @scala.inline
-  def SelectOptionProps: typings.antd.libSelectMod.OptionProps.type = typings.antd.libSelectMod.OptionProps
-  type SelectOptionProps = typings.antd.libSelectMod.OptionProps
-  type SelectionBoxProps = typings.antd.libTableInterfaceMod.SelectionBoxProps
-  type SelectionCheckboxAllProps[T] = typings.antd.libTableInterfaceMod.SelectionCheckboxAllProps[T]
+  def SelectOptionProps: typings.antd.selectMod.OptionProps.type = typings.antd.selectMod.OptionProps
+  type SelectOptionProps = typings.antd.selectMod.OptionProps
+  type SelectionBoxProps = typings.antd.tableInterfaceMod.SelectionBoxProps
+  type SelectionCheckboxAllProps[T] = typings.antd.tableInterfaceMod.SelectionCheckboxAllProps[T]
   @scala.inline
-  def SkeletonProps: typings.antd.libSkeletonMod.SkeletonProps.type = typings.antd.libSkeletonMod.SkeletonProps
-  type SkeletonProps = typings.antd.libSkeletonMod.SkeletonProps
+  def SkeletonProps: typings.antd.skeletonMod.SkeletonProps.type = typings.antd.skeletonMod.SkeletonProps
+  type SkeletonProps = typings.antd.skeletonMod.SkeletonProps
   @scala.inline
-  def SliderProps: typings.antd.libSliderMod.SliderProps.type = typings.antd.libSliderMod.SliderProps
-  type SliderProps = typings.antd.libSliderMod.SliderProps
+  def SliderProps: typings.antd.sliderMod.SliderProps.type = typings.antd.sliderMod.SliderProps
+  type SliderProps = typings.antd.sliderMod.SliderProps
   @scala.inline
-  def SpinProps: typings.antd.libSpinMod.SpinProps.type = typings.antd.libSpinMod.SpinProps
-  type SpinProps = typings.antd.libSpinMod.SpinProps
+  def SpinProps: typings.antd.spinMod.SpinProps.type = typings.antd.spinMod.SpinProps
+  type SpinProps = typings.antd.spinMod.SpinProps
   @scala.inline
-  def StepsProps: typings.antd.libStepsMod.StepsProps.type = typings.antd.libStepsMod.StepsProps
-  type StepsProps = typings.antd.libStepsMod.StepsProps
+  def StepsProps: typings.antd.stepsMod.StepsProps.type = typings.antd.stepsMod.StepsProps
+  type StepsProps = typings.antd.stepsMod.StepsProps
   @scala.inline
-  def StepsStepProps: StepProps.type = typings.antd.libStepsMod.StepProps
+  def StepsStepProps: StepProps.type = typings.antd.stepsMod.StepProps
   type StepsStepProps = StepProps
   @scala.inline
-  def SubMenuProps: typings.antd.libMenuSubMenuMod.SubMenuProps.type = typings.antd.libMenuSubMenuMod.SubMenuProps
-  type SubMenuProps = typings.antd.libMenuSubMenuMod.SubMenuProps
+  def SubMenuProps: typings.antd.subMenuMod.SubMenuProps.type = typings.antd.subMenuMod.SubMenuProps
+  type SubMenuProps = typings.antd.subMenuMod.SubMenuProps
   @scala.inline
-  def SwitchProps: typings.antd.libSwitchMod.SwitchProps.type = typings.antd.libSwitchMod.SwitchProps
-  type SwitchProps = typings.antd.libSwitchMod.SwitchProps
+  def SwitchProps: typings.antd.switchMod.SwitchProps.type = typings.antd.switchMod.SwitchProps
+  type SwitchProps = typings.antd.switchMod.SwitchProps
   @scala.inline
-  def TabBarProps: typings.antd.libTabsMod.TabsProps.type = typings.antd.libTabsMod.TabsProps
-  type TabBarProps = typings.antd.libTabsMod.TabsProps
+  def TabBarProps: typings.antd.tabsMod.TabsProps.type = typings.antd.tabsMod.TabsProps
+  type TabBarProps = typings.antd.tabsMod.TabsProps
   @scala.inline
-  def TabPaneProps: typings.antd.libTabsMod.TabPaneProps.type = typings.antd.libTabsMod.TabPaneProps
-  type TabPaneProps = typings.antd.libTabsMod.TabPaneProps
+  def TabPaneProps: typings.antd.tabsMod.TabPaneProps.type = typings.antd.tabsMod.TabPaneProps
+  type TabPaneProps = typings.antd.tabsMod.TabPaneProps
   @scala.inline
-  def TableProps: typings.antd.libTableInterfaceMod.TableProps.type = typings.antd.libTableInterfaceMod.TableProps
-  type TableProps[T] = typings.antd.libTableInterfaceMod.TableProps[T]
+  def TableProps: typings.antd.tableInterfaceMod.TableProps.type = typings.antd.tableInterfaceMod.TableProps
+  type TableProps[T] = typings.antd.tableInterfaceMod.TableProps[T]
   @scala.inline
-  def TabsProps: typings.antd.libTabsMod.TabsProps.type = typings.antd.libTabsMod.TabsProps
-  type TabsProps = typings.antd.libTabsMod.TabsProps
+  def TabsProps: typings.antd.tabsMod.TabsProps.type = typings.antd.tabsMod.TabsProps
+  type TabsProps = typings.antd.tabsMod.TabsProps
   @scala.inline
-  def TabsTabPaneProps: typings.antd.libTabsMod.TabPaneProps.type = typings.antd.libTabsMod.TabPaneProps
-  type TabsTabPaneProps = typings.antd.libTabsMod.TabPaneProps
+  def TabsTabPaneProps: typings.antd.tabsMod.TabPaneProps.type = typings.antd.tabsMod.TabPaneProps
+  type TabsTabPaneProps = typings.antd.tabsMod.TabPaneProps
   @scala.inline
-  def TagProps: typings.antd.libTagMod.TagProps.type = typings.antd.libTagMod.TagProps
-  type TagProps = typings.antd.libTagMod.TagProps
+  def TagProps: typings.antd.tagMod.TagProps.type = typings.antd.tagMod.TagProps
+  type TagProps = typings.antd.tagMod.TagProps
   @scala.inline
-  def TextProps: typings.antd.libTypographyTextMod.TextProps.type = typings.antd.libTypographyTextMod.TextProps
-  type TextProps = typings.antd.libTypographyTextMod.TextProps
+  def TextProps: typings.antd.textMod.TextProps.type = typings.antd.textMod.TextProps
+  type TextProps = typings.antd.textMod.TextProps
   @scala.inline
-  def TextAreaProps: typings.antd.libInputTextAreaMod.TextAreaProps.type = typings.antd.libInputTextAreaMod.TextAreaProps
-  type TextAreaProps = typings.antd.libInputTextAreaMod.TextAreaProps
+  def TextAreaProps: typings.antd.textAreaMod.TextAreaProps.type = typings.antd.textAreaMod.TextAreaProps
+  type TextAreaProps = typings.antd.textAreaMod.TextAreaProps
   @scala.inline
-  def TimeDashPickerProps: typings.antd.libTimeDashPickerMod.TimePickerProps.type = typings.antd.libTimeDashPickerMod.TimePickerProps
-  type TimeDashPickerProps = typings.antd.libTimeDashPickerMod.TimePickerProps
+  def TimePickerProps: typings.antd.timePickerMod.TimePickerProps.type = typings.antd.timePickerMod.TimePickerProps
+  type TimePickerProps = typings.antd.timePickerMod.TimePickerProps
   @scala.inline
-  def TimePickerProps: typings.antd.libTimeDashPickerMod.TimePickerProps.type = typings.antd.libTimeDashPickerMod.TimePickerProps
-  type TimePickerProps = typings.antd.libTimeDashPickerMod.TimePickerProps
+  def TimelineProps: typings.antd.timelineTimelineMod.TimelineProps.type = typings.antd.timelineTimelineMod.TimelineProps
+  type TimelineProps = typings.antd.timelineTimelineMod.TimelineProps
   @scala.inline
-  def TimelineProps: typings.antd.libTimelineTimelineMod.TimelineProps.type = typings.antd.libTimelineTimelineMod.TimelineProps
-  type TimelineProps = typings.antd.libTimelineTimelineMod.TimelineProps
-  @scala.inline
-  def TimelineItemProps: TimeLineItemProps.type = typings.antd.libTimelineTimelineItemMod.TimeLineItemProps
+  def TimelineItemProps: TimeLineItemProps.type = typings.antd.timelineItemMod.TimeLineItemProps
   type TimelineItemProps = TimeLineItemProps
   @scala.inline
-  def TitleProps: typings.antd.libTypographyTitleMod.TitleProps.type = typings.antd.libTypographyTitleMod.TitleProps
-  type TitleProps = typings.antd.libTypographyTitleMod.TitleProps
+  def TitleProps: typings.antd.typographyTitleMod.TitleProps.type = typings.antd.typographyTitleMod.TitleProps
+  type TitleProps = typings.antd.typographyTitleMod.TitleProps
   @scala.inline
-  def TooltipProps: typings.antd.libTooltipMod.TooltipProps.type = typings.antd.libTooltipMod.TooltipProps
-  type TooltipProps = typings.antd.libTooltipMod.TooltipProps
+  def TooltipProps: typings.antd.tooltipMod.TooltipProps.type = typings.antd.tooltipMod.TooltipProps
+  type TooltipProps = typings.antd.tooltipMod.TooltipProps
   @scala.inline
-  def TransButtonProps: typings.antd.libUnderscoreUtilTransButtonMod.TransButtonProps.type = typings.antd.libUnderscoreUtilTransButtonMod.TransButtonProps
-  type TransButtonProps = typings.antd.libUnderscoreUtilTransButtonMod.TransButtonProps
+  def TransButtonProps: typings.antd.transButtonMod.TransButtonProps.type = typings.antd.transButtonMod.TransButtonProps
+  type TransButtonProps = typings.antd.transButtonMod.TransButtonProps
   @scala.inline
-  def TransferProps: typings.antd.libTransferMod.TransferProps.type = typings.antd.libTransferMod.TransferProps
-  type TransferProps = typings.antd.libTransferMod.TransferProps
+  def TransferProps: typings.antd.transferMod.TransferProps.type = typings.antd.transferMod.TransferProps
+  type TransferProps = typings.antd.transferMod.TransferProps
   @scala.inline
-  def TransferOperationProps: typings.antd.libTransferOperationMod.TransferOperationProps.type = typings.antd.libTransferOperationMod.TransferOperationProps
-  type TransferOperationProps = typings.antd.libTransferOperationMod.TransferOperationProps
+  def TransferOperationProps: typings.antd.operationMod.TransferOperationProps.type = typings.antd.operationMod.TransferOperationProps
+  type TransferOperationProps = typings.antd.operationMod.TransferOperationProps
   @scala.inline
-  def TreeProps: typings.antd.libTreeTreeMod.TreeProps.type = typings.antd.libTreeTreeMod.TreeProps
-  type TreeProps = typings.antd.libTreeTreeMod.TreeProps
+  def TreeProps: typings.antd.treeTreeMod.TreeProps.type = typings.antd.treeTreeMod.TreeProps
+  type TreeProps = typings.antd.treeTreeMod.TreeProps
   @scala.inline
-  def TreeDashSelectProps: typings.antd.libTreeDashSelectInterfaceMod.TreeSelectProps.type = typings.antd.libTreeDashSelectInterfaceMod.TreeSelectProps
-  type TreeDashSelectProps[T /* <: TreeNodeValue */] = typings.antd.libTreeDashSelectInterfaceMod.TreeSelectProps[T]
-  @scala.inline
-  def TreeNodeProps: AntTreeNodeProps.type = typings.antd.libTreeTreeMod.AntTreeNodeProps
+  def TreeNodeProps: AntTreeNodeProps.type = typings.antd.treeTreeMod.AntTreeNodeProps
   type TreeNodeProps = AntTreeNodeProps
   @scala.inline
-  def TreeSelectProps: typings.antd.libTreeDashSelectInterfaceMod.TreeSelectProps.type = typings.antd.libTreeDashSelectInterfaceMod.TreeSelectProps
-  type TreeSelectProps[T /* <: TreeNodeValue */] = typings.antd.libTreeDashSelectInterfaceMod.TreeSelectProps[T]
+  def TreeSelectProps: typings.antd.treeSelectInterfaceMod.TreeSelectProps.type = typings.antd.treeSelectInterfaceMod.TreeSelectProps
+  type TreeSelectProps[T /* <: TreeNodeValue */] = typings.antd.treeSelectInterfaceMod.TreeSelectProps[T]
   @scala.inline
-  def TreeTreeNodeProps: AntTreeNodeProps.type = typings.antd.libTreeTreeMod.AntTreeNodeProps
+  def TreeTreeNodeProps: AntTreeNodeProps.type = typings.antd.treeTreeMod.AntTreeNodeProps
   type TreeTreeNodeProps = AntTreeNodeProps
   @scala.inline
-  def TypographyProps: typings.antd.libTypographyTypographyMod.TypographyProps.type = typings.antd.libTypographyTypographyMod.TypographyProps
-  type TypographyProps = typings.antd.libTypographyTypographyMod.TypographyProps
+  def TypographyProps: typings.antd.typographyTypographyMod.TypographyProps.type = typings.antd.typographyTypographyMod.TypographyProps
+  type TypographyProps = typings.antd.typographyTypographyMod.TypographyProps
   @scala.inline
-  def UploadProps: typings.antd.libUploadInterfaceMod.UploadProps.type = typings.antd.libUploadInterfaceMod.UploadProps
-  type UploadProps = typings.antd.libUploadInterfaceMod.UploadProps
+  def UploadProps: typings.antd.uploadInterfaceMod.UploadProps.type = typings.antd.uploadInterfaceMod.UploadProps
+  type UploadProps = typings.antd.uploadInterfaceMod.UploadProps
   @scala.inline
-  def UploadListProps: typings.antd.libUploadInterfaceMod.UploadListProps.type = typings.antd.libUploadInterfaceMod.UploadListProps
-  type UploadListProps = typings.antd.libUploadInterfaceMod.UploadListProps
+  def UploadListProps: typings.antd.uploadInterfaceMod.UploadListProps.type = typings.antd.uploadInterfaceMod.UploadListProps
+  type UploadListProps = typings.antd.uploadInterfaceMod.UploadListProps
   @scala.inline
-  def WaveProps: Anon_InsertExtraNode.type = typings.antd.Anon_InsertExtraNode
-  type WaveProps = Anon_InsertExtraNode
+  def WaveProps: AnonInsertExtraNode.type = typings.antd.AnonInsertExtraNode
+  type WaveProps = AnonInsertExtraNode
 }
 

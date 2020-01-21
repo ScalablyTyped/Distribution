@@ -8,5 +8,5 @@ package object services {
   /**
     * Search media
     */
-  type ISearchMedia = ISearchContent
+  type ISearchMedia = typings.umbraco.umbraco.services.ISearchContent
 }

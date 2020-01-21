@@ -1,0 +1,40 @@
+package typings.googleGax.mod
+
+import typings.googleGax.gaxMod.BackoffSettings
+import typings.googleGax.gaxMod.CallOptions
+import typings.googleGax.longRunningDescriptorMod.LongRunningDescriptor
+import typings.googleGax.longrunningMod.LROOperation
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("google-gax", "Operation")
+@js.native
+class Operation_ protected ()
+  extends typings.googleGax.longrunningMod.Operation_ {
+  /**
+    * Wrapper for a google.longrunnung.Operation.
+    *
+    * @constructor
+    *
+    * @param {google.longrunning.Operation} grpcOp - The operation to be wrapped.
+    * @param {LongRunningDescriptor} longrunningDescriptor - This defines the
+    * operations service client and unpacking mechanisms for the operation.
+    * @param {BackoffSettings} backoffSettings - The backoff settings used in
+    * in polling the operation.
+    * @param {CallOptions} callOptions - CallOptions used in making get operation
+    * requests.
+    */
+  def this(
+    grpcOp: LROOperation,
+    longrunningDescriptor: LongRunningDescriptor,
+    backoffSettings: BackoffSettings
+  ) = this()
+  def this(
+    grpcOp: LROOperation,
+    longrunningDescriptor: LongRunningDescriptor,
+    backoffSettings: BackoffSettings,
+    callOptions: CallOptions
+  ) = this()
+}
+

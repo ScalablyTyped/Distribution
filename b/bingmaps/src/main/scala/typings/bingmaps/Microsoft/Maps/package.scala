@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Maps {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type DrawingTools = DrawingTools_
-  type IDictionary[T] = StringDictionary[T]
+  type DrawingTools = typings.bingmaps.Microsoft.Maps.DrawingTools_
+  type IDictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
 }

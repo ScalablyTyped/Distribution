@@ -1,6 +1,6 @@
 package typings.dojo.dojox.dgauges
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.endAngle
 import typings.dojo.dojoStrings.orientation
 import typings.dojo.dojoStrings.originX
@@ -90,7 +90,7 @@ class CircularScale () extends ScaleBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_orientation(
     property: orientation,
@@ -100,7 +100,7 @@ class CircularScale () extends ScaleBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_originX(
     property: originX,
@@ -110,7 +110,7 @@ class CircularScale () extends ScaleBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_originY(
     property: originY,
@@ -120,7 +120,7 @@ class CircularScale () extends ScaleBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_radius(
     property: radius,
@@ -130,7 +130,7 @@ class CircularScale () extends ScaleBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_startAngle(
     property: startAngle,
@@ -140,6 +140,6 @@ class CircularScale () extends ScaleBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

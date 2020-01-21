@@ -1,7 +1,7 @@
 package typings.dojo.dojox.calendar
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.arrowPadding
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.edited
@@ -34,11 +34,11 @@ import scala.scalajs.js.annotation._
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dojo.Stateful because Already inherited
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dojox.calendar._RendererMixin because Inheritance from two classes. Inlined edited, set_edited, get_edited, watch_edited, set_focused, get_focused, watch_focused, hovered, set_hovered, get_hovered, watch_hovered, item, set_item, get_item, watch_item, moveEnabled, set_moveEnabled, get_moveEnabled, watch_moveEnabled, owner, set_owner, get_owner, watch_owner, resizeEnabled, set_resizeEnabled, get_resizeEnabled, watch_resizeEnabled, selected, set_selected, get_selected, watch_selected, storeState, set_storeState, get_storeState, watch_storeState, visibilityLimits, set_visibilityLimits, get_visibilityLimits, watch_visibilityLimits, get, getDisplayValue, postscript, set, updateRendering, watch
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.calendar.MobileHorizontalRenderer")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dojox.calendar.RendererMixin because Inheritance from two classes. Inlined edited, set_edited, get_edited, watch_edited, set_focused, get_focused, watch_focused, hovered, set_hovered, get_hovered, watch_hovered, item, set_item, get_item, watch_item, moveEnabled, set_moveEnabled, get_moveEnabled, watch_moveEnabled, owner, set_owner, get_owner, watch_owner, resizeEnabled, set_resizeEnabled, get_resizeEnabled, watch_resizeEnabled, selected, set_selected, get_selected, watch_selected, storeState, set_storeState, get_storeState, watch_storeState, visibilityLimits, set_visibilityLimits, get_visibilityLimits, watch_visibilityLimits, get, getDisplayValue, postscript, set, updateRendering, watch
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.calendar.MobileHorizontalRenderer")
 @js.native
-class MobileHorizontalRenderer () extends _WidgetBase {
+class MobileHorizontalRenderer () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -224,7 +224,7 @@ class MobileHorizontalRenderer () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_attachScope(
     property: attachScope,
@@ -234,22 +234,22 @@ class MobileHorizontalRenderer () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_edited(
     property: edited,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hovered(
     property: hovered,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_item(
     property: item,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_mobile(
     property: mobile,
@@ -259,22 +259,22 @@ class MobileHorizontalRenderer () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_moveEnabled(
     property: moveEnabled,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_owner(
     property: owner,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_resizeEnabled(
     property: resizeEnabled,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -284,17 +284,17 @@ class MobileHorizontalRenderer () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selected(
     property: selected,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_storeState(
     property: storeState,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -304,7 +304,7 @@ class MobileHorizontalRenderer () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -314,11 +314,11 @@ class MobileHorizontalRenderer () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_visibilityLimits(
     property: visibilityLimits,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

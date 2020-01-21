@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object widget {
-  type nestedEditable = nestedEditable_
+  type nestedEditable = typings.ckeditor.CKEDITOR.plugins.widget.nestedEditable_
 }

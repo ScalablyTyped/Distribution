@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "office-ui-fabric-react"
-version := "7.82.2-5e7157"
+version := "7.83.2-7f4703"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191203Z-7bc3ab",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20191207Z-6a9d9d",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
-  "org.scalablytyped" %%% "react-dom" % "16.9-dt-20191126Z-d1c1ac",
-  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-ab599b",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "uifabric__foundation" % "7.5.1-1c101c",
-  "org.scalablytyped" %%% "uifabric__icons" % "7.3.0-fc4d17",
-  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.8.1-5fdce2",
-  "org.scalablytyped" %%% "uifabric__styling" % "7.10.0-fb3daf",
-  "org.scalablytyped" %%% "uifabric__utilities" % "7.10.0-e66990")
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191203Z-3cc78b",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-dcd929",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20191207Z-b62cb8",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-78233f",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-0e1ae9",
+  "org.scalablytyped" %%% "react-dom" % "16.9-dt-20191126Z-2f7310",
+  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-513128",
+  "org.scalablytyped" %%% "std" % "3.7-96076c",
+  "org.scalablytyped" %%% "uifabric__foundation" % "7.5.2-52b3c6",
+  "org.scalablytyped" %%% "uifabric__icons" % "7.3.1-199184",
+  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.8.2-1aa0d5",
+  "org.scalablytyped" %%% "uifabric__styling" % "7.10.1-ea1214",
+  "org.scalablytyped" %%% "uifabric__utilities" % "7.11.2-baa7d4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

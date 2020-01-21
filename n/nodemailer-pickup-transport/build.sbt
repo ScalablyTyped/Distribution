@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "nodemailer-pickup-transport"
-version := "v0.1.1-dt-20190322Z-632ff4"
+version := "v0.1.1-dt-20190322Z-10aa99"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20191218Z-271e2e",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20191218Z-a5da1d",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

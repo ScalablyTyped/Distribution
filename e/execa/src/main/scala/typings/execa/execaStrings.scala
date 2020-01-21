@@ -1,6 +1,6 @@
 package typings.execa
 
-import typings.execa.execaMod._StdioOption
+import typings.execa.mod._StdioOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

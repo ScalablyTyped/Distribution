@@ -5,33 +5,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object printerProvider {
-  import typings.chrome.chrome.events.Event
-
-  type CapabilityRequestedEvent = Event[
+  type CapabilityRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
-      /* printerId */ String, 
-      /* resultCallback */ js.Function1[/* capabilities */ PrinterCapabilities, Unit], 
-      Unit
+      /* printerId */ java.lang.String, 
+      /* resultCallback */ js.Function1[
+        /* capabilities */ typings.chrome.chrome.printerProvider.PrinterCapabilities, 
+        scala.Unit
+      ], 
+      scala.Unit
     ]
   ]
-  type PrintRequestedEvent = Event[
+  type PrintRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
-      /* printJob */ PrintJob, 
-      /* resultCallback */ js.Function1[/* result */ String, Unit], 
-      Unit
+      /* printJob */ typings.chrome.chrome.printerProvider.PrintJob, 
+      /* resultCallback */ js.Function1[/* result */ java.lang.String, scala.Unit], 
+      scala.Unit
     ]
   ]
-  type PrinterInfoRequestedEvent = Event[
+  type PrinterInfoRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function2[
       /* device */ js.Any, 
-      /* resultCallback */ js.Function1[/* printerInfo */ js.UndefOr[PrinterInfo], Unit], 
-      Unit
+      /* resultCallback */ js.Function1[
+        /* printerInfo */ js.UndefOr[typings.chrome.chrome.printerProvider.PrinterInfo], 
+        scala.Unit
+      ], 
+      scala.Unit
     ]
   ]
-  type PrinterRequestedEvent = Event[
+  type PrinterRequestedEvent = typings.chrome.chrome.events.Event[
     js.Function1[
-      /* resultCallback */ js.Function1[/* printerInfo */ js.Array[PrinterInfo], Unit], 
-      Unit
+      /* resultCallback */ js.Function1[
+        /* printerInfo */ js.Array[typings.chrome.chrome.printerProvider.PrinterInfo], 
+        scala.Unit
+      ], 
+      scala.Unit
     ]
   ]
 }

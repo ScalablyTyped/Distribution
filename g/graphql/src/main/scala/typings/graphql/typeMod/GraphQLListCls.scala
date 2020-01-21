@@ -1,6 +1,6 @@
 package typings.graphql.typeMod
 
-import typings.graphql.typeDefinitionMod.GraphQLType
+import typings.graphql.definitionMod.GraphQLType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/type", "GraphQLList")
 @js.native
 class GraphQLListCls protected ()
-  extends typings.graphql.typeDefinitionMod.GraphQLList[GraphQLType] {
+  extends typings.graphql.definitionMod.GraphQLList[GraphQLType] {
   def this(`type`: GraphQLType) = this()
   /* CompleteClass */
   override val ofType: GraphQLType = js.native

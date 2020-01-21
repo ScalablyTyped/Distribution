@@ -1,0 +1,49 @@
+package typings.instagramPrivateApi
+
+import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastPhotoOptions
+import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastPhotoStoryOptions
+import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastVideoOptions
+import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastVideoStoryOptions
+import typings.instagramPrivateApi.directThreadBroadcastReelOptionsMod.DirectThreadBroadcastReelOptions
+import typings.instagramPrivateApi.directThreadRepositoryAddUserResponseMod.DirectThreadRepositoryAddUserResponseRootObject
+import typings.instagramPrivateApi.directThreadRepositoryBroadcastResponseMod.DirectThreadRepositoryBroadcastResponsePayload
+import typings.instagramPrivateApi.directThreadRepositoryUpdateTitleResponseMod.DirectThreadRepositoryUpdateTitleResponseRootObject
+import typings.instagramPrivateApi.repositoryMod.Repository
+import typings.instagramPrivateApi.statusResponseMod.StatusResponse
+import typings.node.Buffer
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("instagram-private-api/dist/entities/direct-thread.entity", JSImport.Namespace)
+@js.native
+object directThreadEntityMod extends js.Object {
+  @js.native
+  class DirectThreadEntity () extends Repository {
+    var broadcast: js.Any = js.native
+    var threadId: String = js.native
+    var userIds: js.Array[String] = js.native
+    def addUser(userIds: js.Array[Double | String]): js.Promise[DirectThreadRepositoryAddUserResponseRootObject] = js.native
+    def broadcastLink(link_text: String, link_urls: js.Array[String]): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastPhoto(options: DirectThreadBroadcastPhotoOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastProfile(id: String): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastProfile(id: Double): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastReel(options: DirectThreadBroadcastReelOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastStory(input: DirectThreadBroadcastPhotoStoryOptions): js.Promise[_] = js.native
+    def broadcastStory(input: DirectThreadBroadcastVideoStoryOptions): js.Promise[_] = js.native
+    def broadcastStory(input: Buffer): js.Promise[_] = js.native
+    def broadcastText(text: String): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastUserStory(options: DirectThreadBroadcastReelOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastVideo(options: DirectThreadBroadcastVideoOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def deleteItem(itemId: String): js.Promise[StatusResponse] = js.native
+    def deleteItem(itemId: Double): js.Promise[StatusResponse] = js.native
+    def hide(): js.Promise[StatusResponse] = js.native
+    def leave(): js.Promise[StatusResponse] = js.native
+    def markItemSeen(threadItemId: String): js.Promise[StatusResponse] = js.native
+    def mute(): js.Promise[StatusResponse] = js.native
+    def unmute(): js.Promise[StatusResponse] = js.native
+    def updateTitle(title: String): js.Promise[DirectThreadRepositoryUpdateTitleResponseRootObject] = js.native
+  }
+  
+}
+

@@ -1,7 +1,7 @@
 package typings.ionic.libIntegrationsMod
 
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.BaseConfig
 import typings.ionic.definitionsMod.ProjectIntegration
+import typings.ionicCliFramework.mod.BaseConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

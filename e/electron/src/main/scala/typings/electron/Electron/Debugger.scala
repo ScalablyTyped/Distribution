@@ -56,21 +56,21 @@ class Debugger () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
   ): this.type = js.native
   /**
-    * Send given command to the debugging target.
+    * Send given command to the debugging target. Deprecated Soon
     */
-  def sendCommand(method: String): js.Promise[_] = js.native
-  def sendCommand(method: String, commandParams: js.Any): js.Promise[_] = js.native
+  def sendCommand(method: String): Unit = js.native
+  def sendCommand(method: String, commandParams: js.Any): Unit = js.native
   def sendCommand(
     method: String,
     commandParams: js.Any,
     callback: js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
   ): Unit = js.native
   /**
-    * Send given command to the debugging target. Deprecated Soon
+    * Send given command to the debugging target.
     */
   @JSName("sendCommand")
-  def sendCommand_Unit(method: String): Unit = js.native
+  def sendCommand_Promise(method: String): js.Promise[_] = js.native
   @JSName("sendCommand")
-  def sendCommand_Unit(method: String, commandParams: js.Any): Unit = js.native
+  def sendCommand_Promise(method: String, commandParams: js.Any): js.Promise[_] = js.native
 }
 

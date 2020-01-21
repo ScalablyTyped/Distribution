@@ -5,12 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Controls {
-  import typings.xrm.xrmStrings.quickform
-
   /**
     * Control type for formContext.ui.quickForms.getControlType().
     */
-  type ControlQuickFormType = quickform
+  type ControlQuickFormType = typings.xrm.xrmStrings.quickform
   /**
     * Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
     * @see {@link XrmEnum.StandardControlType}
@@ -28,6 +26,6 @@ package object Controls {
     - typings.xrm.xrmStrings.timelinewall
     - typings.xrm.Xrm.Controls.ControlQuickFormType
   */
-  type ControlType = _ControlType | ControlQuickFormType
-  type Grid = Grid_
+  type ControlType = typings.xrm.Xrm.Controls._ControlType | typings.xrm.Xrm.Controls.ControlQuickFormType
+  type Grid = typings.xrm.Xrm.Controls.Grid_
 }

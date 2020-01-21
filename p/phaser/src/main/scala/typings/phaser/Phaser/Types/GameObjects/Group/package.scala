@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Group {
-  import typings.phaser.Phaser.GameObjects.GameObject
-
-  type GroupCallback = js.Function1[/* item */ GameObject, Unit]
-  type GroupMultipleCreateCallback = js.Function1[/* items */ js.Array[GameObject], Unit]
+  type GroupCallback = js.Function1[/* item */ typings.phaser.Phaser.GameObjects.GameObject, scala.Unit]
+  type GroupMultipleCreateCallback = js.Function1[/* items */ js.Array[typings.phaser.Phaser.GameObjects.GameObject], scala.Unit]
 }

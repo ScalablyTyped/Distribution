@@ -1,12 +1,5 @@
 package typings.ionic.libProjectMod
 
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptModule
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptQuestionCheckbox
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptQuestionConfirm
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptQuestionOther
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptValueCheckbox
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptValueConfirm
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptValueOther
 import typings.ionic.definitionsMod.IClient
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.definitionsMod.ILogger
@@ -14,6 +7,13 @@ import typings.ionic.definitionsMod.ISession
 import typings.ionic.definitionsMod.IShell
 import typings.ionic.definitionsMod.IonicContext
 import typings.ionic.definitionsMod.IonicEnvironmentFlags
+import typings.ionicCliFrameworkPrompts.mod.PromptModule
+import typings.ionicCliFrameworkPrompts.mod.PromptQuestionCheckbox
+import typings.ionicCliFrameworkPrompts.mod.PromptQuestionConfirm
+import typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther
+import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
+import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
+import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

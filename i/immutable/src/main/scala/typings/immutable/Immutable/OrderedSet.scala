@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OrderedSet[T] extends Set[T] {
+trait OrderedSet[T] extends Set_[T] {
   /**
     * Returns a new OrderedSet with only the values for which the `predicate`
     * function returns true.

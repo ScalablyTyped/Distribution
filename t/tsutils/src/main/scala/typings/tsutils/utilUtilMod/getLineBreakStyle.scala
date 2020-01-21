@@ -2,7 +2,7 @@ package typings.tsutils.utilUtilMod
 
 import typings.tsutils.tsutilsStrings.CarriagereturnLinefeed
 import typings.tsutils.tsutilsStrings.Linefeed
-import typings.typescript.typescriptMod.SourceFile
+import typings.typescript.mod.SourceFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

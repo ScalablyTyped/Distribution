@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 object addEventListener_loadend extends js.Object {
   def apply(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _]
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ ProgressEvent[EventTarget], _]
   ): Unit = js.native
   def apply(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ ProgressEvent[EventTarget], _],
     options: scala.Boolean
   ): Unit = js.native
   def apply(
     `type`: loadend,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ ProgressEvent[EventTarget], _],
     options: AddEventListenerOptions
   ): Unit = js.native
 }

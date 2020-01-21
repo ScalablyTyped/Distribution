@@ -1,7 +1,7 @@
 package typings.oauth2orize
 
-import typings.oauth2orize.oauth2orizeMod.AuthorizationErrorCode
-import typings.oauth2orize.oauth2orizeMod.TokenErrorCode
+import typings.oauth2orize.mod.AuthorizationErrorCode
+import typings.oauth2orize.mod.TokenErrorCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

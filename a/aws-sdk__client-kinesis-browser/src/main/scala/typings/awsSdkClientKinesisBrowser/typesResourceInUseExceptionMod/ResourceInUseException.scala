@@ -1,0 +1,46 @@
+package typings.awsSdkClientKinesisBrowser.typesResourceInUseExceptionMod
+
+import typings.awsSdkClientKinesisBrowser.addTagsToStreamExceptionsUnionMod.AddTagsToStreamExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.createStreamExceptionsUnionMod.CreateStreamExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.decreaseStreamRetentionPeriodExceptionsUnionMod.DecreaseStreamRetentionPeriodExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.deleteStreamExceptionsUnionMod.DeleteStreamExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.disableEnhancedMonitoringExceptionsUnionMod.DisableEnhancedMonitoringExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.enableEnhancedMonitoringExceptionsUnionMod.EnableEnhancedMonitoringExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.increaseStreamRetentionPeriodExceptionsUnionMod.IncreaseStreamRetentionPeriodExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.listShardsExceptionsUnionMod.ListShardsExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.listStreamConsumersExceptionsUnionMod.ListStreamConsumersExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.mergeShardsExceptionsUnionMod.MergeShardsExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.registerStreamConsumerExceptionsUnionMod.RegisterStreamConsumerExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.removeTagsFromStreamExceptionsUnionMod.RemoveTagsFromStreamExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.splitShardExceptionsUnionMod.SplitShardExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.startStreamEncryptionExceptionsUnionMod.StartStreamEncryptionExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.stopStreamEncryptionExceptionsUnionMod.StopStreamEncryptionExceptionsUnion
+import typings.awsSdkClientKinesisBrowser.updateShardCountExceptionsUnionMod.UpdateShardCountExceptionsUnion
+import typings.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ResourceInUseException
+  extends ServiceException[ResourceInUseExceptionDetails]
+     with AddTagsToStreamExceptionsUnion
+     with CreateStreamExceptionsUnion
+     with DecreaseStreamRetentionPeriodExceptionsUnion
+     with DeleteStreamExceptionsUnion
+     with DisableEnhancedMonitoringExceptionsUnion
+     with EnableEnhancedMonitoringExceptionsUnion
+     with IncreaseStreamRetentionPeriodExceptionsUnion
+     with ListShardsExceptionsUnion
+     with ListStreamConsumersExceptionsUnion
+     with MergeShardsExceptionsUnion
+     with RegisterStreamConsumerExceptionsUnion
+     with RemoveTagsFromStreamExceptionsUnion
+     with SplitShardExceptionsUnion
+     with StartStreamEncryptionExceptionsUnion
+     with StopStreamEncryptionExceptionsUnion
+     with UpdateShardCountExceptionsUnion {
+  @JSName("name")
+  var name_ResourceInUseException: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ResourceInUseException = js.native
+}
+

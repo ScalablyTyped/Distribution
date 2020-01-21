@@ -1,7 +1,7 @@
 package typings.lightpick
 
-import typings.lightpick.lightpickMod.Options.Orientation
-import typings.lightpick.lightpickMod.Options.WeekdayStyle
+import typings.lightpick.mod.Options.Orientation
+import typings.lightpick.mod.Options.WeekdayStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

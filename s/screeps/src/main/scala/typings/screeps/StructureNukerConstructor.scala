@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait StructureNukerConstructor extends _ConstructorById[StructureNuker]
+trait StructureNukerConstructor extends ConstructorById[StructureNuker]
 

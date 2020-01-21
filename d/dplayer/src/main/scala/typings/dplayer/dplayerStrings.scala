@@ -1,11 +1,11 @@
 package typings.dplayer
 
-import typings.dplayer.dplayerMod.DirectionType
-import typings.dplayer.dplayerMod.FullScreenType
-import typings.dplayer.dplayerMod.Lang
-import typings.dplayer.dplayerMod.Preload
-import typings.dplayer.dplayerMod.SubTitleType
-import typings.dplayer.dplayerMod.VideoType
+import typings.dplayer.mod.DirectionType
+import typings.dplayer.mod.FullScreenType
+import typings.dplayer.mod.Lang
+import typings.dplayer.mod.Preload
+import typings.dplayer.mod.SubTitleType
+import typings.dplayer.mod.VideoType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

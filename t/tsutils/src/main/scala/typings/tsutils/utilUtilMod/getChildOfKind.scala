@@ -1,9 +1,9 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.Node
-import typings.typescript.typescriptMod.SourceFile
-import typings.typescript.typescriptMod.SyntaxKind
-import typings.typescript.typescriptMod.Token
+import typings.typescript.mod.Node
+import typings.typescript.mod.SourceFile
+import typings.typescript.mod.SyntaxKind
+import typings.typescript.mod.Token
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

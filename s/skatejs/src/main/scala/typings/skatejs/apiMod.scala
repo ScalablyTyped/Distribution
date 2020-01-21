@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 @JSImport("skatejs/api", JSImport.Namespace)
 @js.native
 object apiMod extends js.Object {
-  val props: Anon_Any = js.native
+  val props: AnonAny = js.native
   def define[T /* <: HTMLElementClass */](ctor: T): T = js.native
   def emit(elem: HTMLElementClass, eventName: String): Boolean = js.native
   def emit(elem: HTMLElementClass, eventName: String, eventOptions: EventOptions): Boolean = js.native

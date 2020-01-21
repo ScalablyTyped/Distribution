@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ungap__global-this"
-version := "0.3-dt-20191202Z-c2cc35"
+version := "0.3-dt-20191202Z-0c6518"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

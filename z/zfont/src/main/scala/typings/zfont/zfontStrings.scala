@@ -1,7 +1,7 @@
 package typings.zfont
 
-import typings.zfont.zfontMod.zdogMod.TextAlign
-import typings.zfont.zfontMod.zdogMod.TextBaseline
+import typings.zfont.mod.zdogAugmentingMod.TextAlign
+import typings.zfont.mod.zdogAugmentingMod.TextBaseline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

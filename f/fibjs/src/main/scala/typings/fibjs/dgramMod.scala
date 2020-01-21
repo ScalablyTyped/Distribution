@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object dgramMod extends js.Object {
   @js.native
-  class Socket () extends Class_DgramSocket
+  class Socket () extends ClassDgramSocket
   
-  def createSocket(opts: js.Object): Class_DgramSocket = js.native
-  def createSocket(opts: js.Object, callback: js.Function): Class_DgramSocket = js.native
-  def createSocket(`type`: String): Class_DgramSocket = js.native
-  def createSocket(`type`: String, callback: js.Function): Class_DgramSocket = js.native
+  def createSocket(opts: js.Object): ClassDgramSocket = js.native
+  def createSocket(opts: js.Object, callback: js.Function): ClassDgramSocket = js.native
+  def createSocket(`type`: String): ClassDgramSocket = js.native
+  def createSocket(`type`: String, callback: js.Function): ClassDgramSocket = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.inputmask
 
-import typings.inputmask.inputmaskMod.Casing
-import typings.inputmask.inputmaskMod.InputMode
-import typings.inputmask.inputmaskMod.PositionCaretOnClick
+import typings.inputmask.mod.Casing
+import typings.inputmask.mod.InputMode
+import typings.inputmask.mod.PositionCaretOnClick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

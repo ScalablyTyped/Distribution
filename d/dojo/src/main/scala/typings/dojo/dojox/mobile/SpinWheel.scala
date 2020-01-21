@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mobile.SpinWheel")
 @js.native
-class SpinWheel () extends _PickerBase {
+class SpinWheel () extends PickerBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

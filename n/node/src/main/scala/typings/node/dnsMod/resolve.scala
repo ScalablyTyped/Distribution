@@ -88,31 +88,33 @@ object resolve extends js.Object {
     rrtype: TXT,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[js.Array[String]], Unit]
   ): Unit = js.native
-  def __promisify__(hostname: String): js.Promise[js.Array[String]] = js.native
-  def __promisify__(hostname: String, rrtype: String): js.Promise[
+  @JSName("__promisify__")
+  def promisify(hostname: String): js.Promise[js.Array[String]] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String, rrtype: String): js.Promise[
     (js.Array[AnyRecord | js.Array[String] | MxRecord | NaptrRecord | SrvRecord | String]) | SoaRecord
   ] = js.native
   @JSName("__promisify__")
-  def __promisify___A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = js.native
+  def promisify_A(hostname: String, rrtype: A): js.Promise[js.Array[String]] = js.native
   @JSName("__promisify__")
-  def __promisify___AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = js.native
+  def promisify_AAAA(hostname: String, rrtype: AAAA): js.Promise[js.Array[String]] = js.native
   @JSName("__promisify__")
-  def __promisify___ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = js.native
+  def promisify_ANY(hostname: String, rrtype: ANY): js.Promise[js.Array[AnyRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = js.native
+  def promisify_CNAME(hostname: String, rrtype: CNAME): js.Promise[js.Array[String]] = js.native
   @JSName("__promisify__")
-  def __promisify___MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = js.native
+  def promisify_MX(hostname: String, rrtype: MX): js.Promise[js.Array[MxRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = js.native
+  def promisify_NAPTR(hostname: String, rrtype: NAPTR): js.Promise[js.Array[NaptrRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = js.native
+  def promisify_NS(hostname: String, rrtype: NS): js.Promise[js.Array[String]] = js.native
   @JSName("__promisify__")
-  def __promisify___PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = js.native
+  def promisify_PTR(hostname: String, rrtype: PTR): js.Promise[js.Array[String]] = js.native
   @JSName("__promisify__")
-  def __promisify___SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = js.native
+  def promisify_SOA(hostname: String, rrtype: SOA): js.Promise[SoaRecord] = js.native
   @JSName("__promisify__")
-  def __promisify___SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = js.native
+  def promisify_SRV(hostname: String, rrtype: SRV): js.Promise[js.Array[SrvRecord]] = js.native
   @JSName("__promisify__")
-  def __promisify___TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = js.native
+  def promisify_TXT(hostname: String, rrtype: TXT): js.Promise[js.Array[js.Array[String]]] = js.native
 }
 

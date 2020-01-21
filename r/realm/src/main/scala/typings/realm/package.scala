@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object realm {
-  type Realm = Realm_
+  type Realm = typings.realm.Realm_
 }

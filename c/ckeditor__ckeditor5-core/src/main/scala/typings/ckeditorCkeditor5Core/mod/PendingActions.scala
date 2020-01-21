@@ -1,0 +1,27 @@
+package typings.ckeditorCkeditor5Core.mod
+
+import typings.ckeditorCkeditor5Core.AnonMessage
+import typings.ckeditorCkeditor5Utils.mod.Observable
+import typings.std.Iterator
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@ckeditor/ckeditor5-core", "PendingActions")
+@js.native
+class PendingActions () extends Plugin[Unit] {
+  var first: Null | (Observable with AnonMessage) = js.native
+  val hasAny: Boolean = js.native
+  @JSName(scala.scalajs.js.Symbol.iterator)
+  var iterator: js.Function0[Iterator[Observable with AnonMessage, _, js.UndefOr[scala.Nothing]]] = js.native
+  def add(message: String): Observable with AnonMessage = js.native
+  def remove(action: Observable with AnonMessage): Unit = js.native
+}
+
+/* static members */
+@JSImport("@ckeditor/ckeditor5-core", "PendingActions")
+@js.native
+object PendingActions extends js.Object {
+  val pluginName: typings.ckeditorCkeditor5Core.ckeditorCkeditor5CoreStrings.PendingActions = js.native
+}
+

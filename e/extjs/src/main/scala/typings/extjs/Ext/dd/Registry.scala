@@ -2,7 +2,7 @@ package typings.extjs.Ext.dd
 
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IClass
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ object Registry extends js.Object {
   		* @returns Object handle The custom handle data
   		*/
   def getHandleFromEvent(): js.Any = js.native
-  def getHandleFromEvent(e: Event): js.Any = js.native
+  def getHandleFromEvent(e: Event_): js.Any = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
   		* @param name String Name of the config option to return.
   		* @returns Object/Mixed The full config object or a single config value when name parameter specified.
@@ -64,7 +64,7 @@ object Registry extends js.Object {
   		* @returns Object data The custom data
   		*/
   def getTargetFromEvent(): js.Any = js.native
-  def getTargetFromEvent(e: Event): js.Any = js.native
+  def getTargetFromEvent(e: Event_): js.Any = js.native
   /** [Method] Initialize configuration for this class
   		* @param config Object
   		* @returns Ext.Base this

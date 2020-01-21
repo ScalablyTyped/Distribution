@@ -1,17 +1,17 @@
 package typings.tstl.tstlMod
 
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
+import typings.tstl.iforwarditeratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl", "ForwardList")
+@JSImport("tstl/container", "ForwardList")
 @js.native
 /**
   * Default Constructor.
   */
 class ForwardList[T] ()
-  extends typings.tstl.containerMod.ForwardList[T] {
+  extends typings.tstl.forwardListMod.ForwardList[T] {
   /**
     * Initializer Constructor.
     *
@@ -23,7 +23,7 @@ class ForwardList[T] ()
     *
     * @param obj Object to copy.
     */
-  def this(obj: typings.tstl.containerForwardListMod.ForwardList[T]) = this()
+  def this(obj: typings.tstl.forwardListMod.ForwardList[T]) = this()
   /**
     * Range Constructor.
     *
@@ -43,20 +43,17 @@ class ForwardList[T] ()
   def this(n: Double, `val`: T) = this()
 }
 
-@JSImport("tstl", "ForwardList")
+@JSImport("tstl/container", "ForwardList")
 @js.native
 object ForwardList extends js.Object {
   /**
-    * Iterator of the ForwardList.
+    * Iterator of {@link ForwardList}
     *
-    * @author Jeongho Nam <http://samchon.org>
+    * @author Jeongho Nam - https://github.com/samchon
     */
   @js.native
-  /**
-    * @hidden
-    */
   class Iterator[T] protected ()
-    extends typings.tstl.containerMod.ForwardList.Iterator[T]
+    extends typings.tstl.forwardListMod.ForwardList.Iterator[T]
   
 }
 

@@ -1,8 +1,8 @@
 package typings.node.NodeJS
 
-import typings.node.Console
-import typings.node.Fn_Radix
-import typings.node.Fn_UriComponent
+import typings.node.Console_
+import typings.node.FnRadix
+import typings.node.FnUriComponent
 import typings.node.TypeofClassBuffer
 import typings.node.TypeofIntl
 import typings.std.ArrayBufferConstructor
@@ -96,13 +96,13 @@ trait Global extends js.Object {
   var Uint8ClampedArray: Uint8ClampedArrayConstructor = js.native
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
-  var console: Console = js.native
+  var console: Console_ = js.native
   @JSName("decodeURIComponent")
   var decodeURIComponent_Original: js.Function1[/* encodedURIComponent */ String, String] = js.native
   @JSName("decodeURI")
   var decodeURI_Original: js.Function1[/* encodedURI */ String, String] = js.native
   @JSName("encodeURIComponent")
-  var encodeURIComponent_Original: Fn_UriComponent = js.native
+  var encodeURIComponent_Original: FnUriComponent = js.native
   @JSName("encodeURI")
   var encodeURI_Original: js.Function1[/* uri */ String, String] = js.native
   @JSName("eval")
@@ -115,7 +115,7 @@ trait Global extends js.Object {
   @JSName("parseFloat")
   var parseFloat_Original: js.Function1[/* string */ String, Double] = js.native
   @JSName("parseInt")
-  var parseInt_Original: Fn_Radix = js.native
+  var parseInt_Original: FnRadix = js.native
   var process: Process = js.native
   @JSName("queueMicrotask")
   var queueMicrotask_Original: js.Function1[/* callback */ js.Function0[Unit], Unit] = js.native

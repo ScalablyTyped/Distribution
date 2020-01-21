@@ -1,6 +1,6 @@
 package typings.grasp
 
-import typings.grasp.graspMod.QueryEngineType
+import typings.grasp.mod.QueryEngineType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.doublearray.doublearray
 
-import typings.doublearray.Anon_All
+import typings.doublearray.AnonAll
 import typings.std.Int16Array
 import typings.std.Int32Array
 import typings.std.Int8Array
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BaseAndCheck extends js.Object {
-  def calc(): Anon_All = js.native
+  def calc(): AnonAll = js.native
   def dump(): String = js.native
   def getBase(): Double = js.native
   def getBaseBuffer(): js.Any = js.native

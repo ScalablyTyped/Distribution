@@ -1,10 +1,10 @@
 package typings.jsrsasign.jsrsasign
 
-import typings.jsrsasign.Anon_Algoid
-import typings.jsrsasign.Anon_AlgoidAlgparam
-import typings.jsrsasign.Anon_E
-import typings.jsrsasign.Anon_EN
-import typings.jsrsasign.Anon_P8pubkeyhex
+import typings.jsrsasign.AnonAlgoid
+import typings.jsrsasign.AnonAlgoidAlgparam
+import typings.jsrsasign.AnonE
+import typings.jsrsasign.AnonEN
+import typings.jsrsasign.AnonP8pubkeyhex
 import typings.jsrsasign.Anon_PrvKeyObj
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
@@ -231,7 +231,7 @@ class KEYUTIL () extends js.Object {
     * - keyidx - string starting index of key in pkcs8PrvHex
     *
     */
-  def parsePlainPrivatePKCS8Hex(pkcs8PrvHex: String): Anon_Algoid = js.native
+  def parsePlainPrivatePKCS8Hex(pkcs8PrvHex: String): AnonAlgoid = js.native
   /**
     * parse hexadecimal string of PKCS#8 RSA/EC/DSA public key
     * @param pkcs8PubHex hexadecimal string of PKCS#8 public key
@@ -244,7 +244,7 @@ class KEYUTIL () extends js.Object {
     * - key - hexadecimal string of public key
     *
     */
-  def parsePublicPKCS8Hex(pkcs8PubHex: String): Anon_AlgoidAlgparam = js.native
+  def parsePublicPKCS8Hex(pkcs8PubHex: String): AnonAlgoidAlgparam = js.native
   /**
     * parse hexadecimal string of plain PKCS#8 private key
     * @param pubRawRSAHex hexadecimal string of ASN.1 encoded PKCS#8 public key
@@ -256,7 +256,7 @@ class KEYUTIL () extends js.Object {
     * - e - hexadecimal string of public exponent
     *
     */
-  def parsePublicRawRSAKeyHex(pubRawRSAHex: String): Anon_EN = js.native
+  def parsePublicRawRSAKeyHex(pubRawRSAHex: String): AnonEN = js.native
 }
 
 /* static members */
@@ -320,10 +320,10 @@ object KEYUTIL extends js.Object {
   def getKey(param: String, passcode: String): RSAKey | DSA | ECDSA = js.native
   def getKey(param: String, passcode: String, hextype: String): RSAKey | DSA | ECDSA = js.native
   def getKey(param: String, passcode: Null, hextype: String): RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E): RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E, passcode: String): RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E, passcode: String, hextype: String): RSAKey | DSA | ECDSA = js.native
-  def getKey(param: Anon_E, passcode: Null, hextype: String): RSAKey | DSA | ECDSA = js.native
+  def getKey(param: AnonE): RSAKey | DSA | ECDSA = js.native
+  def getKey(param: AnonE, passcode: String): RSAKey | DSA | ECDSA = js.native
+  def getKey(param: AnonE, passcode: String, hextype: String): RSAKey | DSA | ECDSA = js.native
+  def getKey(param: AnonE, passcode: Null, hextype: String): RSAKey | DSA | ECDSA = js.native
   def getKey(param: ECCPrivateKey): RSAKey | DSA | ECDSA = js.native
   def getKey(param: ECCPrivateKey, passcode: String): RSAKey | DSA | ECDSA = js.native
   def getKey(param: ECCPrivateKey, passcode: String, hextype: String): RSAKey | DSA | ECDSA = js.native
@@ -513,6 +513,6 @@ object KEYUTIL extends js.Object {
     * - p8pubkeyhex - hexadecimal string of subject public key in PKCS#8
     *
     */
-  def parseCSRHex(csrHex: String): Anon_P8pubkeyhex = js.native
+  def parseCSRHex(csrHex: String): AnonP8pubkeyhex = js.native
 }
 

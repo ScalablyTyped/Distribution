@@ -1,0 +1,125 @@
+package typings.googleapis.youtubeV3Mod.youtubeV3
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Basic details about a comment, such as its author and text.
+  */
+@js.native
+trait SchemaCommentSnippet extends js.Object {
+  /**
+    * The id of the author&#39;s YouTube channel, if any.
+    */
+  var authorChannelId: js.UndefOr[js.Any] = js.native
+  /**
+    * Link to the author&#39;s YouTube channel, if any.
+    */
+  var authorChannelUrl: js.UndefOr[String] = js.native
+  /**
+    * The name of the user who posted the comment.
+    */
+  var authorDisplayName: js.UndefOr[String] = js.native
+  /**
+    * The URL for the avatar of the user who posted the comment.
+    */
+  var authorProfileImageUrl: js.UndefOr[String] = js.native
+  /**
+    * Whether the current viewer can rate this comment.
+    */
+  var canRate: js.UndefOr[Boolean] = js.native
+  /**
+    * The id of the corresponding YouTube channel. In case of a channel comment
+    * this is the channel the comment refers to. In case of a video comment
+    * it&#39;s the video&#39;s channel.
+    */
+  var channelId: js.UndefOr[String] = js.native
+  /**
+    * The total number of likes this comment has received.
+    */
+  var likeCount: js.UndefOr[Double] = js.native
+  /**
+    * The comment&#39;s moderation status. Will not be set if the comments were
+    * requested through the id filter.
+    */
+  var moderationStatus: js.UndefOr[String] = js.native
+  /**
+    * The unique id of the parent comment, only set for replies.
+    */
+  var parentId: js.UndefOr[String] = js.native
+  /**
+    * The date and time when the comment was orignally published. The value is
+    * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+    */
+  var publishedAt: js.UndefOr[String] = js.native
+  /**
+    * The comment&#39;s text. The format is either plain text or HTML dependent
+    * on what has been requested. Even the plain text representation may differ
+    * from the text originally posted in that it may replace video links with
+    * video titles etc.
+    */
+  var textDisplay: js.UndefOr[String] = js.native
+  /**
+    * The comment&#39;s original raw text as initially posted or last updated.
+    * The original text will only be returned if it is accessible to the
+    * viewer, which is only guaranteed if the viewer is the comment&#39;s
+    * author.
+    */
+  var textOriginal: js.UndefOr[String] = js.native
+  /**
+    * The date and time when was last updated . The value is specified in ISO
+    * 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+    */
+  var updatedAt: js.UndefOr[String] = js.native
+  /**
+    * The ID of the video the comment refers to, if any.
+    */
+  var videoId: js.UndefOr[String] = js.native
+  /**
+    * The rating the viewer has given to this comment. For the time being this
+    * will never return RATE_TYPE_DISLIKE and instead return RATE_TYPE_NONE.
+    * This may change in the future.
+    */
+  var viewerRating: js.UndefOr[String] = js.native
+}
+
+object SchemaCommentSnippet {
+  @scala.inline
+  def apply(
+    authorChannelId: js.Any = null,
+    authorChannelUrl: String = null,
+    authorDisplayName: String = null,
+    authorProfileImageUrl: String = null,
+    canRate: js.UndefOr[Boolean] = js.undefined,
+    channelId: String = null,
+    likeCount: Int | Double = null,
+    moderationStatus: String = null,
+    parentId: String = null,
+    publishedAt: String = null,
+    textDisplay: String = null,
+    textOriginal: String = null,
+    updatedAt: String = null,
+    videoId: String = null,
+    viewerRating: String = null
+  ): SchemaCommentSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (authorChannelId != null) __obj.updateDynamic("authorChannelId")(authorChannelId.asInstanceOf[js.Any])
+    if (authorChannelUrl != null) __obj.updateDynamic("authorChannelUrl")(authorChannelUrl.asInstanceOf[js.Any])
+    if (authorDisplayName != null) __obj.updateDynamic("authorDisplayName")(authorDisplayName.asInstanceOf[js.Any])
+    if (authorProfileImageUrl != null) __obj.updateDynamic("authorProfileImageUrl")(authorProfileImageUrl.asInstanceOf[js.Any])
+    if (!js.isUndefined(canRate)) __obj.updateDynamic("canRate")(canRate.asInstanceOf[js.Any])
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
+    if (likeCount != null) __obj.updateDynamic("likeCount")(likeCount.asInstanceOf[js.Any])
+    if (moderationStatus != null) __obj.updateDynamic("moderationStatus")(moderationStatus.asInstanceOf[js.Any])
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
+    if (textDisplay != null) __obj.updateDynamic("textDisplay")(textDisplay.asInstanceOf[js.Any])
+    if (textOriginal != null) __obj.updateDynamic("textOriginal")(textOriginal.asInstanceOf[js.Any])
+    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
+    if (viewerRating != null) __obj.updateDynamic("viewerRating")(viewerRating.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SchemaCommentSnippet]
+  }
+}
+

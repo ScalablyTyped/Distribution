@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("mobile")
 trait mobile_ extends js.Object
 

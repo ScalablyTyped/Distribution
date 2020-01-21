@@ -1,7 +1,7 @@
 package typings.dojo.dojox.drawing.plugins
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
 import typings.dojo.dojoStrings.active
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.cellClass
@@ -51,11 +51,11 @@ object drawing extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.dojo.dijit._CssStateMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._PaletteMixin because Inheritance from two classes. Inlined active, cellClass, cssStateNodes, defaultTimeout, dyeClass, hovering, tabIndex, timeoutChangeRate, value, focus, postCreate, onChange
-  - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @js.native
-  class GreekPalette () extends _Widget {
+  - typings.dojo.dijit.CssStateMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.PaletteMixin because Inheritance from two classes. Inlined active, cellClass, cssStateNodes, defaultTimeout, dyeClass, hovering, tabIndex, timeoutChangeRate, value, focus, postCreate, onChange
+  - typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @js.native
+  class GreekPalette () extends Widget {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -272,7 +272,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_attachScope(
       property: attachScope,
@@ -282,7 +282,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_cellClass(
       property: cellClass,
@@ -292,7 +292,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_cssStateNodes(
       property: cssStateNodes,
@@ -302,7 +302,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_defaultTimeout(
       property: defaultTimeout,
@@ -312,7 +312,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[Double], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_hovering(
       property: hovering,
@@ -322,7 +322,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_paletteClass(
       property: paletteClass,
@@ -332,7 +332,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_searchContainerNode(
       property: searchContainerNode,
@@ -342,7 +342,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_showPreview(
       property: showPreview,
@@ -352,7 +352,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_tabIndex(
       property: tabIndex,
@@ -362,7 +362,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templatePath(
       property: templatePath,
@@ -372,7 +372,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templateString(
       property: templateString,
@@ -382,7 +382,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_timeoutChangeRate(
       property: timeoutChangeRate,
@@ -392,7 +392,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[Double], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_value(
       property: value,
@@ -402,7 +402,7 @@ object drawing extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   /**
@@ -413,7 +413,7 @@ object drawing extends js.Object {
     * @param options
     */
   @js.native
-  class Grid protected () extends _Plugin {
+  class Grid protected () extends Plugin {
     def this(options: js.Any) = this()
     /**
       * How far apart to set the grid lines

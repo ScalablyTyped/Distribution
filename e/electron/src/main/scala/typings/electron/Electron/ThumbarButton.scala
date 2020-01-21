@@ -15,7 +15,7 @@ trait ThumbarButton extends js.Object {
   /**
     * The icon showing in thumbnail toolbar.
     */
-  var icon: NativeImage
+  var icon: NativeImage_
   /**
     * The text of the button's tooltip.
     */
@@ -24,7 +24,7 @@ trait ThumbarButton extends js.Object {
 
 object ThumbarButton {
   @scala.inline
-  def apply(click: js.Function, icon: NativeImage, flags: js.Array[String] = null, tooltip: String = null): ThumbarButton = {
+  def apply(click: js.Function, icon: NativeImage_, flags: js.Array[String] = null, tooltip: String = null): ThumbarButton = {
     val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
     if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])

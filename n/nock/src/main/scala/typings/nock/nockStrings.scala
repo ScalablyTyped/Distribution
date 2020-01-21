@@ -1,6 +1,6 @@
 package typings.nock
 
-import typings.nock.nockMod.BackMode
+import typings.nock.mod.BackMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var milliseconds: Milliseconds = js.native
+  var milliseconds: Milliseconds_ = js.native
 }
 

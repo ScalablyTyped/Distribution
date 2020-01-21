@@ -1,6 +1,6 @@
 package typings.ol
 
-import typings.ol.geomCircleMod.default
+import typings.ol.circleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

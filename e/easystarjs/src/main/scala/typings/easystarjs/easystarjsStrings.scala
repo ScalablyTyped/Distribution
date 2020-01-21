@@ -1,6 +1,6 @@
 package typings.easystarjs
 
-import typings.easystarjs.easystarjsMod.Direction
+import typings.easystarjs.mod.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

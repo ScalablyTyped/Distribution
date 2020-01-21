@@ -1,9 +1,9 @@
 package typings.tsutils.utilUtilMod
 
-import typings.tsutils.Anon_Name
-import typings.typescript.typescriptMod.BindingElement
-import typings.typescript.typescriptMod.VariableDeclaration
-import typings.typescript.typescriptMod.VariableDeclarationList
+import typings.tsutils.AnonName
+import typings.typescript.mod.BindingElement
+import typings.typescript.mod.VariableDeclaration
+import typings.typescript.mod.VariableDeclarationList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object forEachDeclaredVariable extends js.Object {
   def apply[T](
     declarationList: VariableDeclarationList,
-    cb: js.Function1[/* element */ (VariableDeclaration | BindingElement) with Anon_Name, T]
+    cb: js.Function1[/* element */ (VariableDeclaration | BindingElement) with AnonName, T]
   ): js.UndefOr[T] = js.native
 }
 

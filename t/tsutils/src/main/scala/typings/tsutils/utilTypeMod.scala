@@ -1,14 +1,14 @@
 package typings.tsutils
 
 import typings.tsutils.utilUtilMod.PropertyName
-import typings.typescript.typescriptMod.ClassLikeDeclaration
-import typings.typescript.typescriptMod.Expression
-import typings.typescript.typescriptMod.Node
-import typings.typescript.typescriptMod.Signature
-import typings.typescript.typescriptMod.Symbol
-import typings.typescript.typescriptMod.Type
-import typings.typescript.typescriptMod.TypeChecker
-import typings.typescript.typescriptMod.__String
+import typings.typescript.mod.ClassLikeDeclaration
+import typings.typescript.mod.Expression
+import typings.typescript.mod.Node
+import typings.typescript.mod.Signature
+import typings.typescript.mod.String
+import typings.typescript.mod.Symbol
+import typings.typescript.mod.Type
+import typings.typescript.mod.TypeChecker
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,12 +21,12 @@ object utilTypeMod extends js.Object {
   def getInstanceTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = js.native
   def getIteratorYieldResultFromIteratorResult(`type`: Type, node: Node, checker: TypeChecker): Type = js.native
   def getPropertyNameFromType(`type`: Type): js.UndefOr[PropertyName] = js.native
-  def getPropertyOfType(`type`: Type, name: __String): js.UndefOr[Symbol] = js.native
+  def getPropertyOfType(`type`: Type, name: String): js.UndefOr[Symbol] = js.native
   def intersectionTypeParts(`type`: Type): js.Array[Type] = js.native
   def isBooleanLiteralType(`type`: Type, literal: Boolean): Boolean = js.native
   def isEmptyObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = js.native
   def isFalsyType(`type`: Type): Boolean = js.native
-  def isPropertyReadonlyInType(`type`: Type, name: __String, checker: TypeChecker): Boolean = js.native
+  def isPropertyReadonlyInType(`type`: Type, name: String, checker: TypeChecker): Boolean = js.native
   def isThenableType(checker: TypeChecker, node: Expression): Boolean = js.native
   def isThenableType(checker: TypeChecker, node: Expression, `type`: Type): Boolean = js.native
   def isThenableType(checker: TypeChecker, node: Node, `type`: Type): Boolean = js.native

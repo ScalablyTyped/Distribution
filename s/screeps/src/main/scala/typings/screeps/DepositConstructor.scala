@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait DepositConstructor extends _ConstructorById[Deposit]
+trait DepositConstructor extends ConstructorById[Deposit]
 

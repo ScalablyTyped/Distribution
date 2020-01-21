@@ -16,7 +16,7 @@ trait IJqGridJsonReader extends js.Object {
     * @param obj 
     * @returns {} 
     */
-  var records: String | (js.Function1[/* obj */ Anon_Data, Double])
+  var records: String | (js.Function1[/* obj */ AnonData, Double])
   /**
     * tells jqGrid that the information for the data in the row is repeatable - i.e. the elements have the same tag cell described in cell element. Setting this option to false instructs jqGrid to search elements in the json data by name.
     * This is the name from colModel or the name described with the jsonmap option in colModel
@@ -40,7 +40,7 @@ object IJqGridJsonReader {
   @scala.inline
   def apply(
     page: String | (js.Function1[/* obj */ js.Any, Double]),
-    records: String | (js.Function1[/* obj */ Anon_Data, Double]),
+    records: String | (js.Function1[/* obj */ AnonData, Double]),
     repeatitems: Boolean,
     root: String | (js.Function1[/* obj */ js.Any, _]),
     total: String | (js.Function1[/* obj */ js.Any, Double])

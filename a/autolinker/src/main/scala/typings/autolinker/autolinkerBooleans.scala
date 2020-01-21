@@ -1,7 +1,7 @@
 package typings.autolinker
 
-import typings.autolinker.distCommonjsAutolinkerMod.HashtagConfig
-import typings.autolinker.distCommonjsAutolinkerMod.MentionConfig
+import typings.autolinker.autolinkerMod.HashtagConfig
+import typings.autolinker.autolinkerMod.MentionConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlOverviewMapMod.Options
-import typings.ol.controlOverviewMapMod.default
+import typings.ol.overviewMapMod.Options
+import typings.ol.overviewMapMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

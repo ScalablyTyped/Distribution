@@ -1,7 +1,7 @@
 package typings.node.cryptoMod
 
-import typings.node.Anon_FormatSpki
-import typings.node.Anon_Pkcs8
+import typings.node.AnonFormatSpki
+import typings.node.AnonPkcs8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +15,8 @@ trait DSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
     * Key size in bits
     */
   var modulusLength: Double
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8
-  var publicKeyEncoding: Anon_FormatSpki[PubF]
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonPkcs8
+  var publicKeyEncoding: AnonFormatSpki[PubF]
 }
 
 object DSAKeyPairOptions {
@@ -24,8 +24,8 @@ object DSAKeyPairOptions {
   def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
     divisorLength: Double,
     modulusLength: Double,
-    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8,
-    publicKeyEncoding: Anon_FormatSpki[PubF]
+    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with AnonPkcs8,
+    publicKeyEncoding: AnonFormatSpki[PubF]
   ): DSAKeyPairOptions[PubF, PrivF] = {
     val __obj = js.Dynamic.literal(divisorLength = divisorLength.asInstanceOf[js.Any], modulusLength = modulusLength.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
   

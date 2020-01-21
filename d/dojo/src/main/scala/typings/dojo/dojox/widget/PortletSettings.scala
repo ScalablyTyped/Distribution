@@ -1,6 +1,6 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.layout.ContentPane
 import typings.dojo.dojoStrings.portletIconClass
 import typings.dojo.dojoStrings.portletIconHoverClass
@@ -60,7 +60,7 @@ class PortletSettings () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_portletIconHoverClass(
     property: portletIconHoverClass,
@@ -70,6 +70,6 @@ class PortletSettings () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

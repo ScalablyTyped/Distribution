@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "Popover")
 @js.native
 class Popover protected ()
-  extends typings.fullcalendar.srcExportsMod.Popover {
+  extends typings.fullcalendar.exportsMod.Popover {
   def this(options: js.Any) = this()
 }
 

@@ -1,0 +1,22 @@
+package typings.git.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("git", "Blame")
+@js.native
+class Blame protected () extends js.Object {
+  def this(repo: Repo, file: String, callback: js.Function2[/* err */ js.Any, /* blame */ Blame, Unit]) = this()
+  def this(
+    repo: Repo,
+    file: String,
+    commit: String,
+    callback: js.Function2[/* err */ js.Any, /* blame */ Blame, Unit]
+  ) = this()
+  var commit: String = js.native
+  var file: String = js.native
+  var lines: js.Array[BlameLine] = js.native
+  var repo: Repo = js.native
+}
+

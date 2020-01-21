@@ -14,5 +14,5 @@ package object places {
     - typings.googlemaps.google.maps.CircleLiteral
     - java.lang.String
   */
-  type LocationBias = _LocationBias | String
+  type LocationBias = typings.googlemaps.google.maps.places._LocationBias | java.lang.String
 }

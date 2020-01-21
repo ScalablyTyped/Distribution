@@ -17,7 +17,7 @@ object RefinedParams {
     compression: String = null,
     cookies: StringDictionary[ParamsCookieValue] = null,
     headers: StringDictionary[String] = null,
-    jar: CookieJar = null,
+    jar: CookieJar_ = null,
     redirects: Int | Double = null,
     responseType: RT = null,
     tags: StringDictionary[String] = null,

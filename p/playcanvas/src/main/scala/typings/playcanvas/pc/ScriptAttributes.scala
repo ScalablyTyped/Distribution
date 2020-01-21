@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Array
+import typings.playcanvas.AnonArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,7 +61,7 @@ class ScriptAttributes protected () extends js.Object {
     *     ]
     * });
     */
-  def add(name: String, args: Anon_Array): Unit = js.native
+  def add(name: String, args: AnonArray): Unit = js.native
   /**
     * @function
     * @name pc.ScriptAttributes#get

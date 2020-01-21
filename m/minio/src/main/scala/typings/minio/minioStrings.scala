@@ -1,6 +1,6 @@
 package typings.minio
 
-import typings.minio.minioMod._Region
+import typings.minio.mod._Region
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

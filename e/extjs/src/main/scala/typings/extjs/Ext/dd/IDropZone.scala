@@ -2,7 +2,7 @@ package typings.extjs.Ext.dd
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ trait IDropZone extends IDropTarget {
   		* @param e Event The event
   		* @returns Object data The custom data
   		*/
-  var getTargetFromEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], _]] = js.undefined
+  var getTargetFromEvent: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event_], _]] = js.undefined
   /** [Method] Called when the DropZone determines that a Ext dd DragSource has been dropped on it but not on any of its registered
   		* @param source Ext.dd.DragSource The drag source that was dragged over this drop zone
   		* @param e Event The event
@@ -23,7 +23,7 @@ trait IDropZone extends IDropTarget {
   var onContainerDrop: js.UndefOr[
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* data */ js.UndefOr[js.Any], 
       Boolean
     ]
@@ -37,7 +37,7 @@ trait IDropZone extends IDropTarget {
   var onContainerOver: js.UndefOr[
     js.Function3[
       /* source */ js.UndefOr[IDragSource], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* data */ js.UndefOr[js.Any], 
       String
     ]
@@ -53,7 +53,7 @@ trait IDropZone extends IDropTarget {
     js.Function4[
       /* nodeData */ js.UndefOr[js.Any], 
       /* source */ js.UndefOr[IDragSource], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* data */ js.UndefOr[js.Any], 
       Boolean
     ]
@@ -68,7 +68,7 @@ trait IDropZone extends IDropTarget {
     js.Function4[
       /* nodeData */ js.UndefOr[js.Any], 
       /* source */ js.UndefOr[IDragSource], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* data */ js.UndefOr[js.Any], 
       Unit
     ]
@@ -83,7 +83,7 @@ trait IDropZone extends IDropTarget {
     js.Function4[
       /* nodeData */ js.UndefOr[js.Any], 
       /* source */ js.UndefOr[IDragSource], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* data */ js.UndefOr[js.Any], 
       Unit
     ]
@@ -99,7 +99,7 @@ trait IDropZone extends IDropTarget {
     js.Function4[
       /* nodeData */ js.UndefOr[js.Any], 
       /* source */ js.UndefOr[IDragSource], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* data */ js.UndefOr[js.Any], 
       String
     ]
@@ -129,12 +129,12 @@ object IDropZone {
     destroy: () => Unit = null,
     dropAllowed: String = null,
     dropNotAllowed: String = null,
-    endDrag: /* e */ js.UndefOr[Event] => Unit = null,
+    endDrag: /* e */ js.UndefOr[Event_] => Unit = null,
     extend: String = null,
     getDragEl: () => HTMLElement = null,
     getEl: () => HTMLElement = null,
     getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getTargetFromEvent: /* e */ js.UndefOr[Event] => _ = null,
+    getTargetFromEvent: /* e */ js.UndefOr[Event_] => _ = null,
     groups: js.Any = null,
     hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
@@ -153,25 +153,25 @@ object IDropZone {
     maintainOffset: js.UndefOr[Boolean] = js.undefined,
     mixins: js.Any = null,
     moveOnly: js.UndefOr[Boolean] = js.undefined,
-    notifyDrop: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
-    notifyEnter: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String = null,
-    notifyOut: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
-    notifyOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String = null,
+    notifyDrop: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => Boolean = null,
+    notifyEnter: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => String = null,
+    notifyOut: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => Unit = null,
+    notifyOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => String = null,
     onAvailable: () => Unit = null,
-    onContainerDrop: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
-    onContainerOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String = null,
-    onDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOut: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOver: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
-    onNodeDrop: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Boolean = null,
-    onNodeEnter: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onNodeOut: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => Unit = null,
-    onNodeOver: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event], /* data */ js.UndefOr[js.Any]) => String = null,
+    onContainerDrop: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => Boolean = null,
+    onContainerOver: (/* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => String = null,
+    onDrag: /* e */ js.UndefOr[Event_] => Unit = null,
+    onDragDrop: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragEnter: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOut: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOver: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onInvalidDrop: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseDown: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseUp: /* e */ js.UndefOr[Event_] => Unit = null,
+    onNodeDrop: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => Boolean = null,
+    onNodeEnter: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onNodeOut: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => Unit = null,
+    onNodeOver: (/* nodeData */ js.UndefOr[js.Any], /* source */ js.UndefOr[IDragSource], /* e */ js.UndefOr[Event_], /* data */ js.UndefOr[js.Any]) => String = null,
     overClass: String = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,

@@ -21,7 +21,7 @@ object fsMod extends js.Object {
   val constants: js.Object = js.native
   def access(path: String): Unit = js.native
   def access(path: String, mode: Double): Unit = js.native
-  def appendFile(fname: String, data: Class_Buffer): Unit = js.native
+  def appendFile(fname: String, data: ClassBuffer): Unit = js.native
   def chmod(path: String, mode: Double): Unit = js.native
   def chown(path: String, uid: Double, gid: Double): Unit = js.native
   def clearZipFS(): Unit = js.native
@@ -36,20 +36,20 @@ object fsMod extends js.Object {
   def lchmod(path: String, mode: Double): Unit = js.native
   def lchown(path: String, uid: Double, gid: Double): Unit = js.native
   def link(oldPath: String, newPath: String): Unit = js.native
-  def lstat(path: String): Class_Stat = js.native
+  def lstat(path: String): ClassStat = js.native
   def mkdir(path: String): Unit = js.native
   def mkdir(path: String, mode: Double): Unit = js.native
   def open(fname: String): Double = js.native
   def open(fname: String, flags: String): Double = js.native
   def open(fname: String, flags: String, mode: Double): Double = js.native
-  def openFile(fname: String): Class_SeekableStream = js.native
-  def openFile(fname: String, flags: String): Class_SeekableStream = js.native
-  def openTextStream(fname: String): Class_BufferedStream = js.native
-  def openTextStream(fname: String, flags: String): Class_BufferedStream = js.native
-  def read(fd: Double, buffer: Class_Buffer): Double = js.native
-  def read(fd: Double, buffer: Class_Buffer, offset: Double): Double = js.native
-  def read(fd: Double, buffer: Class_Buffer, offset: Double, length: Double): Double = js.native
-  def read(fd: Double, buffer: Class_Buffer, offset: Double, length: Double, position: Double): Double = js.native
+  def openFile(fname: String): ClassSeekableStream = js.native
+  def openFile(fname: String, flags: String): ClassSeekableStream = js.native
+  def openTextStream(fname: String): ClassBufferedStream = js.native
+  def openTextStream(fname: String, flags: String): ClassBufferedStream = js.native
+  def read(fd: Double, buffer: ClassBuffer): Double = js.native
+  def read(fd: Double, buffer: ClassBuffer, offset: Double): Double = js.native
+  def read(fd: Double, buffer: ClassBuffer, offset: Double, length: Double): Double = js.native
+  def read(fd: Double, buffer: ClassBuffer, offset: Double, length: Double, position: Double): Double = js.native
   def readFile(fname: String): js.Any = js.native
   def readFile(fname: String, encoding: String): js.Any = js.native
   def readLines(fname: String): js.Array[_] = js.native
@@ -60,13 +60,13 @@ object fsMod extends js.Object {
   def realpath(path: String): String = js.native
   def rename(from: String, to: String): Unit = js.native
   def rmdir(path: String): Unit = js.native
-  def setZipFS(fname: String, data: Class_Buffer): Unit = js.native
-  def stat(path: String): Class_Stat = js.native
+  def setZipFS(fname: String, data: ClassBuffer): Unit = js.native
+  def stat(path: String): ClassStat = js.native
   def symlink(target: String, linkpath: String): Unit = js.native
   def symlink(target: String, linkpath: String, `type`: String): Unit = js.native
   def truncate(path: String, len: Double): Unit = js.native
   def unlink(path: String): Unit = js.native
-  def writeFile(fname: String, data: Class_Buffer): Unit = js.native
+  def writeFile(fname: String, data: ClassBuffer): Unit = js.native
   def writeTextFile(fname: String, txt: String): Unit = js.native
 }
 

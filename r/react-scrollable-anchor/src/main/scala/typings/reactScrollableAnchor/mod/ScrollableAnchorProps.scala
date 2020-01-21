@@ -1,0 +1,21 @@
+package typings.reactScrollableAnchor.mod
+
+import typings.react.mod.ReactNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ScrollableAnchorProps extends js.Object {
+  var children: js.UndefOr[ReactNode] = js.undefined
+  var id: String
+}
+
+object ScrollableAnchorProps {
+  @scala.inline
+  def apply(id: String, children: ReactNode = null): ScrollableAnchorProps = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrollableAnchorProps]
+  }
+}
+

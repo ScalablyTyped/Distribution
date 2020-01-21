@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KnockoutStatic extends js.Object {
-  var stringTemplateEngine: Anon_Instance
+  var stringTemplateEngine: AnonInstance
 }
 
 object KnockoutStatic {
   @scala.inline
-  def apply(stringTemplateEngine: Anon_Instance): KnockoutStatic = {
+  def apply(stringTemplateEngine: AnonInstance): KnockoutStatic = {
     val __obj = js.Dynamic.literal(stringTemplateEngine = stringTemplateEngine.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutStatic]

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("scheduler")
 trait scheduler_ extends js.Object {
   /**
     *

@@ -1,9 +1,9 @@
 package typings.baseui.blockMod
 
-import typings.react.reactMod.ElementType
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
-import typings.styletronDashReact.styletronDashReactMod.$StyleProp
+import typings.react.mod.ElementType
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.styletronReact.mod.StyleProp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BlockProps extends js.Object {
   @JSName("$style")
-  var $style: js.UndefOr[$StyleProp[BlockProps]] = js.native
+  var $style: js.UndefOr[StyleProp[BlockProps]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content */
   var alignContent: js.UndefOr[Responsive[AlignContent]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */

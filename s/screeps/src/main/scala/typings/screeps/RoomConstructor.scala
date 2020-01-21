@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RoomConstructor
-  extends _Constructor[Room]
+  extends Constructor[Room]
      with Instantiable1[/* id */ String, Room] {
   var Terrain: RoomTerrainConstructor = js.native
   /**

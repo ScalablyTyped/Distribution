@@ -16,7 +16,7 @@ package object utils {
     * @param parent The parent of this view or the app itself, so that models from the parent will be available to the view.
     * @param app
     */
-  type model = js.Function3[/* config */ js.Object, /* parent */ js.Object, /* app */ js.Object, Unit]
+  type model = js.Function3[/* config */ js.Object, /* parent */ js.Object, /* app */ js.Object, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/app/utils/mvcModel.html
     *
@@ -29,7 +29,12 @@ package object utils {
     * @param params The params set into the config for this model.
     * @param item The String with the name of this model
     */
-  type mvcModel = js.Function3[/* config */ js.Object, /* params */ js.Object, /* item */ String, Unit]
+  type mvcModel = js.Function3[
+    /* config */ js.Object, 
+    /* params */ js.Object, 
+    /* item */ java.lang.String, 
+    scala.Unit
+  ]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/app/utils/nls.html
     *
@@ -38,7 +43,7 @@ package object utils {
     * @param config The section of the config for this view or for the app.
     * @param parent The parent of this view or the app itself, so that models from the parent will beavailable to the view.
     */
-  type nls = js.Function2[/* config */ js.Object, /* parent */ js.Object, Unit]
+  type nls = js.Function2[/* config */ js.Object, /* parent */ js.Object, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/app/utils/simpleModel.html
     *
@@ -52,5 +57,10 @@ package object utils {
     * @param params The params set into the config for this model.
     * @param item The String with the name of this model
     */
-  type simpleModel = js.Function3[/* config */ js.Object, /* params */ js.Object, /* item */ String, Unit]
+  type simpleModel = js.Function3[
+    /* config */ js.Object, 
+    /* params */ js.Object, 
+    /* item */ java.lang.String, 
+    scala.Unit
+  ]
 }

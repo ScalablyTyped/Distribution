@@ -25,5 +25,5 @@ package object Session {
     * "message_error" |
     * "webrtc_error" |
     */
-  type EventSubscriptionType = String
+  type EventSubscriptionType = java.lang.String
 }

@@ -1,6 +1,6 @@
 package typings.bytes
 
-import typings.bytes.bytesMod.Unit
+import typings.bytes.mod.Unit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

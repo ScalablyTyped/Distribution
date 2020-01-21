@@ -134,7 +134,7 @@ class Buffer protected ()
   def swap16(): Buffer = js.native
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native
-  def toJSON(): Anon_BufferData = js.native
+  def toJSON(): AnonBufferData = js.native
   def toString(encoding: java.lang.String): java.lang.String = js.native
   def toString(encoding: java.lang.String, start: Double): java.lang.String = js.native
   def toString(encoding: java.lang.String, start: Double, end: Double): java.lang.String = js.native

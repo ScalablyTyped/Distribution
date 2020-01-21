@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("common")
 trait common_ extends js.Object {
   /**
     *

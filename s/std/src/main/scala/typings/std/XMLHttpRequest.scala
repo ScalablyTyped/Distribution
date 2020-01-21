@@ -14,7 +14,7 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
   val LOADING: Double = js.native
   val OPENED: Double = js.native
   val UNSENT: Double = js.native
-  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onreadystatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   /**
     * Returns client's state.
     */
@@ -47,7 +47,7 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     * 
     * Throws an "InvalidStateError" DOMException if responseType is not the empty string or "document".
     */
-  val responseXML: Document | Null = js.native
+  val responseXML: Document_ | Null = js.native
   val status: Double = js.native
   val statusText: java.lang.String = js.native
   /**
@@ -71,17 +71,17 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     */
   def abort(): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   def getAllResponseHeaders(): java.lang.String = js.native
@@ -119,17 +119,17 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     */
   def overrideMimeType(mime: java.lang.String): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   /**
@@ -139,7 +139,7 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     */
   def send(): Unit = js.native
   def send(body: BodyInit): Unit = js.native
-  def send(body: Document): Unit = js.native
+  def send(body: Document_): Unit = js.native
   /**
     * Combines a header in author request headers.
     * 

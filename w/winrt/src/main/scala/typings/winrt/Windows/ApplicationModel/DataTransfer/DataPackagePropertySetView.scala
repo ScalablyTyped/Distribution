@@ -1,6 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.DataTransfer
 
-import typings.winrt.Anon_First
+import typings.winrt.AnonFirst
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.Collections.IVectorView
@@ -34,6 +34,6 @@ class DataPackagePropertySetView () extends IDataPackagePropertySetView {
   /* CompleteClass */
   override def lookup(key: String): js.Any = js.native
   /* CompleteClass */
-  override def split(): Anon_First[String, js.Any] = js.native
+  override def split(): AnonFirst[String, js.Any] = js.native
 }
 

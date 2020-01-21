@@ -27,7 +27,7 @@ object jsview extends js.Object {
     */
   def apply(sId: String, vView: String): JSView | js.Any = js.native
   def apply(sId: String, vView: String, bAsync: Boolean): JSView | js.Any = js.native
-  def apply(sId: String, vView: js.Any): JSView | js.Any = js.native
+  def apply(sId: String, vView: js.Any): JSView = js.native
   def apply(sId: String, vView: js.Any, bAsync: Boolean): JSView | js.Any = js.native
   //  Defines or creates an instance of a JavaScript view.
   def apply(vView: js.Any): JSView = js.native

@@ -17,6 +17,7 @@ object unlink extends js.Object {
     * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def __promisify__(path: PathLike): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike): js.Promise[Unit] = js.native
 }
 

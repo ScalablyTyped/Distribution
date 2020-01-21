@@ -1,19 +1,19 @@
 package typings.baseui.selectMod
 
-import typings.baseui.Anon_LabelKey
-import typings.baseui.Anon_Option
-import typings.baseui.Anon_Option_1721897024
+import typings.baseui.AnonLabelKey
+import typings.baseui.AnonOption
+import typings.baseui.AnonOption1413309453
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.search
 import typings.baseui.baseuiStrings.select
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FocusEventHandler
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.ReactNode
-import typings.std.Event
+import typings.react.mod.FocusEvent
+import typings.react.mod.FocusEventHandler
+import typings.react.mod.FormEvent
+import typings.react.mod.FormEventHandler
+import typings.react.mod.ReactNode
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -38,13 +38,13 @@ trait SelectProps extends js.Object {
       /* options */ Value, 
       /* filterValue */ String, 
       /* excludeOptions */ js.UndefOr[Value], 
-      /* newProps */ js.UndefOr[Anon_LabelKey], 
+      /* newProps */ js.UndefOr[AnonLabelKey], 
       Value
     ]
   ] = js.undefined
   var filterOutSelected: js.UndefOr[Boolean] = js.undefined
-  var getOptionLabel: js.UndefOr[js.Function1[/* args */ Anon_Option, ReactNode]] = js.undefined
-  var getValueLabel: js.UndefOr[js.Function1[/* args */ Anon_Option_1721897024, ReactNode]] = js.undefined
+  var getOptionLabel: js.UndefOr[js.Function1[/* args */ AnonOption, ReactNode]] = js.undefined
+  var getValueLabel: js.UndefOr[js.Function1[/* args */ AnonOption1413309453, ReactNode]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var isLoading: js.UndefOr[Boolean] = js.undefined
   var labelKey: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait SelectProps extends js.Object {
   var mountNode: js.UndefOr[HTMLElement] = js.undefined
   var multi: js.UndefOr[Boolean] = js.undefined
   var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* e */ Event, _]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ Event_, _]] = js.undefined
   var onBlurResetsInput: js.UndefOr[Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* params */ OnChangeParams, _]] = js.undefined
   var onClose: js.UndefOr[js.Function0[_]] = js.undefined
@@ -90,10 +90,10 @@ object SelectProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     escapeClearsValue: js.UndefOr[Boolean] = js.undefined,
-    filterOptions: (/* options */ Value, /* filterValue */ String, /* excludeOptions */ js.UndefOr[Value], /* newProps */ js.UndefOr[Anon_LabelKey]) => Value = null,
+    filterOptions: (/* options */ Value, /* filterValue */ String, /* excludeOptions */ js.UndefOr[Value], /* newProps */ js.UndefOr[AnonLabelKey]) => Value = null,
     filterOutSelected: js.UndefOr[Boolean] = js.undefined,
-    getOptionLabel: /* args */ Anon_Option => ReactNode = null,
-    getValueLabel: /* args */ Anon_Option_1721897024 => ReactNode = null,
+    getOptionLabel: /* args */ AnonOption => ReactNode = null,
+    getValueLabel: /* args */ AnonOption1413309453 => ReactNode = null,
     id: String = null,
     isLoading: js.UndefOr[Boolean] = js.undefined,
     labelKey: String = null,
@@ -101,7 +101,7 @@ object SelectProps {
     mountNode: HTMLElement = null,
     multi: js.UndefOr[Boolean] = js.undefined,
     noResultsMsg: ReactNode = null,
-    onBlur: /* e */ Event => _ = null,
+    onBlur: /* e */ Event_ => _ = null,
     onBlurResetsInput: js.UndefOr[Boolean] = js.undefined,
     onChange: /* params */ OnChangeParams => _ = null,
     onClose: () => _ = null,

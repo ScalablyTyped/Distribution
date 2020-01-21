@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("robotx")
 @js.native
 trait robotx_ extends js.Object {
   /**

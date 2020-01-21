@@ -1,10 +1,10 @@
 package typings.recompose
 
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ReactNode
-import typings.recompose.recomposeMod.ObservableConfig
-import typings.recompose.recomposeMod.Subscribable
-import typings.recompose.recomposeMod.mapper
+import typings.react.mod.ComponentType
+import typings.react.mod.ReactNode
+import typings.recompose.mod.ObservableConfig
+import typings.recompose.mod.Subscribable
+import typings.recompose.mod.mapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

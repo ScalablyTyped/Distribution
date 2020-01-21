@@ -1,6 +1,6 @@
 package typings.dojo.dijit.main
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -101,7 +101,7 @@ trait typematic extends js.Object {
     * @param minDelay               Optionalthe maximum delay in milliseconds for event to fire, default=10ms             
     */
   def trigger(
-    evt: Event,
+    evt: Event_,
     _this: js.Object,
     node: HTMLElement,
     callback: js.Function,
@@ -119,7 +119,7 @@ object typematic {
     addListener: (HTMLElement, HTMLElement, js.Object, js.Object, js.Function, Double, Double, Double) => js.Any,
     addMouseListener: (HTMLElement, js.Object, js.Function, Double, Double, Double) => js.Any,
     stop: () => Unit,
-    trigger: (Event, js.Object, HTMLElement, js.Function, js.Object, Double, Double, Double) => Unit
+    trigger: (Event_, js.Object, HTMLElement, js.Function, js.Object, Double, Double, Double) => Unit
   ): typematic = {
     val __obj = js.Dynamic.literal(addKeyListener = js.Any.fromFunction7(addKeyListener), addListener = js.Any.fromFunction8(addListener), addMouseListener = js.Any.fromFunction6(addMouseListener), stop = js.Any.fromFunction0(stop), trigger = js.Any.fromFunction8(trigger))
   

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chalk-animation"
-version := "1.6-dt-20181212Z-dd1c7d"
+version := "1.6-dt-20181212Z-10d95b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

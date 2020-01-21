@@ -15,5 +15,5 @@ trait ByteLengthQueuingStrategy extends QueuingStrategy[ArrayBufferView] {
 
 @JSGlobal("ByteLengthQueuingStrategy")
 @js.native
-object ByteLengthQueuingStrategy extends Instantiable1[/* options */ Anon_HighWaterMark, ByteLengthQueuingStrategy]
+object ByteLengthQueuingStrategy extends Instantiable1[/* options */ AnonHighWaterMark, ByteLengthQueuingStrategy]
 

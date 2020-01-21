@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object gfx {
-  import typings.dojo.dojox.gfx.matrix.Matrix2D
-
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/gfx/decompose.html
     *
@@ -19,7 +17,7 @@ package object gfx {
     *
     * @param matrix a 2D matrix-like object
     */
-  type decompose = js.Function1[/* matrix */ Matrix2D, Unit]
-  type svg_attach = svg_attach_
-  type vml_attach = vml_attach_
+  type decompose = js.Function1[/* matrix */ typings.dojo.dojox.gfx.matrix.Matrix2D, scala.Unit]
+  type svgAttach = typings.dojo.dojox.gfx.svgAttach_
+  type vmlAttach = typings.dojo.dojox.gfx.vmlAttach_
 }

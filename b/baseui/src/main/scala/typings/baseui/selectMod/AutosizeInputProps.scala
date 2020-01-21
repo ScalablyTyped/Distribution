@@ -3,7 +3,7 @@ package typings.baseui.selectMod
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
-import typings.react.reactMod.Ref
+import typings.react.mod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

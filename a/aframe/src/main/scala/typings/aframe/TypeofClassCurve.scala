@@ -1,8 +1,8 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.three.srcMathVector2Mod.Vector
-import typings.three.threeMod.Curve
+import typings.three.mod.Curve
+import typings.three.vector2Mod.Vector
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

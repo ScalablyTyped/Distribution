@@ -1,6 +1,6 @@
 package typings.nodegit.cloneMod.Clone
 
-import typings.nodegit.cloneDashOptionsMod.CloneOptions
+import typings.nodegit.cloneOptionsMod.CloneOptions
 import typings.nodegit.repositoryMod.Repository
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -21,19 +21,19 @@ object styleMod extends js.Object {
   
   @js.native
   class Fill ()
-    extends typings.ol.styleFillMod.default {
-    def this(opt_options: typings.ol.styleFillMod.Options) = this()
+    extends typings.ol.fillMod.default {
+    def this(opt_options: typings.ol.fillMod.Options) = this()
   }
   
   @js.native
   class Icon ()
-    extends typings.ol.styleIconMod.default {
-    def this(opt_options: typings.ol.styleIconMod.Options) = this()
+    extends typings.ol.iconMod.default {
+    def this(opt_options: typings.ol.iconMod.Options) = this()
   }
   
   @js.native
   class IconImage protected ()
-    extends typings.ol.styleIconImageMod.default {
+    extends typings.ol.iconImageMod.default {
     def this(
       image: HTMLCanvasElement,
       src: js.UndefOr[scala.Nothing],
@@ -76,14 +76,14 @@ object styleMod extends js.Object {
   
   @js.native
   class RegularShape protected ()
-    extends typings.ol.styleRegularShapeMod.default {
-    def this(options: typings.ol.styleRegularShapeMod.Options) = this()
+    extends typings.ol.regularShapeMod.default {
+    def this(options: typings.ol.regularShapeMod.Options) = this()
   }
   
   @js.native
   class Stroke ()
-    extends typings.ol.styleStrokeMod.default {
-    def this(opt_options: typings.ol.styleStrokeMod.Options) = this()
+    extends typings.ol.strokeMod.default {
+    def this(opt_options: typings.ol.strokeMod.Options) = this()
   }
   
   @js.native
@@ -94,8 +94,8 @@ object styleMod extends js.Object {
   
   @js.native
   class Text ()
-    extends typings.ol.styleTextMod.default {
-    def this(opt_options: typings.ol.styleTextMod.Options) = this()
+    extends typings.ol.textMod.default {
+    def this(opt_options: typings.ol.textMod.Options) = this()
   }
   
 }

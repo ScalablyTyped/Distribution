@@ -2,7 +2,7 @@ package typings.ionic.commandsMod
 
 import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.IonicEnvironment
-import typings.ionic.libNamespaceMod.Namespace
+import typings.ionic.namespaceMod.Namespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,10 +18,10 @@ class IonicNamespace protected () extends Namespace {
   @JSName("env")
   def env_MIonicNamespace(env: IonicEnvironment): js.Any = js.native
   @JSName("project")
-  def project_Any(): js.Any = js.native
-  @JSName("project")
-  def project_MIonicNamespace(): js.UndefOr[IProject] = js.native
+  def project_MIonicNamespace(): js.Any = js.native
   @JSName("project")
   def project_MIonicNamespace(p: IProject): js.Any = js.native
+  @JSName("project")
+  def project_Union(): js.UndefOr[IProject] = js.native
 }
 

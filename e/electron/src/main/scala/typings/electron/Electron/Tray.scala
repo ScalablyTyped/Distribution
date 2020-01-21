@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tray protected () extends EventEmitter {
   def this(image: String) = this()
-  def this(image: NativeImage) = this()
+  def this(image: NativeImage_) = this()
   @JSName("addListener")
   def addListener_balloonclick(event: `balloon-click`, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -303,12 +303,12 @@ class Tray protected () extends EventEmitter {
   /**
     * Sets the image associated with this tray icon.
     */
-  def setImage(image: NativeImage): Unit = js.native
+  def setImage(image: NativeImage_): Unit = js.native
   def setPressedImage(image: String): Unit = js.native
   /**
     * Sets the image associated with this tray icon when pressed on macOS.
     */
-  def setPressedImage(image: NativeImage): Unit = js.native
+  def setPressedImage(image: NativeImage_): Unit = js.native
   /**
     * Sets the title displayed next to the tray icon in the status bar (Support ANSI
     * colors).

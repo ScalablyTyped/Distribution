@@ -16,7 +16,7 @@ trait KnockoutBindingHandler[E /* <: Node */, V, VM]
       /* allBindingsAccessor */ KnockoutAllBindingsAccessor, 
       /* viewModel */ VM, 
       /* bindingContext */ KnockoutBindingContext, 
-      Unit | Anon_ControlsDescendantBindings
+      Unit | AnonControlsDescendantBindings
     ]
   ] = js.undefined
   var options: js.UndefOr[js.Any] = js.undefined
@@ -45,7 +45,7 @@ object KnockoutBindingHandler {
   def apply[E /* <: Node */, V, VM](
     StringDictionary: /* s */ StringDictionary[js.Any] = null,
     after: js.Array[String] = null,
-    init: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit | Anon_ControlsDescendantBindings = null,
+    init: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit | AnonControlsDescendantBindings = null,
     options: js.Any = null,
     preprocess: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String = null,
     update: (/* element */ E, /* valueAccessor */ js.Function0[V], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ VM, /* bindingContext */ KnockoutBindingContext) => Unit = null

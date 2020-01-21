@@ -1,15 +1,15 @@
 package typings.geodesy
 
 import typings.geodesy.dmsMod.Precision
-import typings.geodesy.geodesyMod.Datum
-import typings.geodesy.geodesyMod.Dp
-import typings.geodesy.geodesyMod.Format
 import typings.geodesy.geodesyNumbers.`10`
 import typings.geodesy.geodesyNumbers.`2`
 import typings.geodesy.geodesyNumbers.`4`
 import typings.geodesy.geodesyNumbers.`6`
 import typings.geodesy.geodesyNumbers.`8`
-import typings.geodesy.utmMod.LatLon_Utm
+import typings.geodesy.mod.Datum
+import typings.geodesy.mod.Dp
+import typings.geodesy.mod.Format
+import typings.geodesy.utmMod.LatLonUtm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,10 +23,10 @@ object mgrsMod extends js.Object {
     extends typings.geodesy.utmMod.Dms
   
   @js.native
-  class LatLon () extends Latlon_Utm_Mgrs
+  class LatLon () extends LatlonUtmMgrs
   
   @js.native
-  trait Latlon_Utm_Mgrs extends LatLon_Utm
+  trait LatlonUtmMgrs extends LatLonUtm
   
   @js.native
   trait Mgrs extends js.Object {
@@ -47,14 +47,14 @@ object mgrsMod extends js.Object {
     def toString_6(digits: `6`): String = js.native
     @JSName("toString")
     def toString_8(digits: `8`): String = js.native
-    def toUtm(): Utm_Mgrs = js.native
+    def toUtm(): UtmMgrs = js.native
   }
   
   @js.native
-  class Utm () extends Utm_Mgrs
+  class Utm () extends UtmMgrs
   
   @js.native
-  trait Utm_Mgrs
+  trait UtmMgrs
     extends typings.geodesy.utmMod.default {
     def toMgrs(): Mgrs = js.native
   }

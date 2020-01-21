@@ -1,7 +1,7 @@
 package typings.consolidate
 
-import typings.consolidate.consolidateMod.Requires
-import typings.consolidate.consolidateMod.SupportedTemplateEngines
+import typings.consolidate.mod.Requires
+import typings.consolidate.mod.SupportedTemplateEngines
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

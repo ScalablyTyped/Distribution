@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Social {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type Clients = StringDictionary[ClientState]
-  type Users = StringDictionary[UserProfile]
+  type Clients = org.scalablytyped.runtime.StringDictionary[typings.freedom.freedom.Social.ClientState]
+  type Users = org.scalablytyped.runtime.StringDictionary[typings.freedom.freedom.Social.UserProfile]
 }

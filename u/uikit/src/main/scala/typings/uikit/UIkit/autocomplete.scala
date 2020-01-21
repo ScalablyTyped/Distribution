@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.autocomplete")
 @js.native
-object autocomplete extends TopLevel[AutoComplete]
+object autocomplete extends TopLevel[AutoComplete_]
 

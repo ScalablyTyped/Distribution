@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object ioMod extends js.Object {
   @js.native
-  class BufferedStream () extends Class_BufferedStream
+  class BufferedStream () extends ClassBufferedStream
   
   @js.native
-  class MemoryStream () extends Class_MemoryStream
+  class MemoryStream () extends ClassMemoryStream
   
-  def bridge(stm1: Class_Stream, stm2: Class_Stream): Unit = js.native
-  def copyStream(from: Class_Stream, to: Class_Stream): Double = js.native
-  def copyStream(from: Class_Stream, to: Class_Stream, bytes: Double): Double = js.native
+  def bridge(stm1: ClassStream, stm2: ClassStream): Unit = js.native
+  def copyStream(from: ClassStream, to: ClassStream): Double = js.native
+  def copyStream(from: ClassStream, to: ClassStream, bytes: Double): Double = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Add
+import typings.playcanvas.AnonAdd
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +32,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.AssetReference")
 @js.native
 class AssetReference protected () extends js.Object {
-  def this(propertyName: String, parent: js.Any, registry: AssetRegistry, callbacks: Anon_Add) = this()
-  def this(propertyName: String, parent: Asset, registry: AssetRegistry, callbacks: Anon_Add) = this()
-  def this(propertyName: String, parent: js.Any, registry: AssetRegistry, callbacks: Anon_Add, scope: js.Any) = this()
-  def this(propertyName: String, parent: Asset, registry: AssetRegistry, callbacks: Anon_Add, scope: js.Any) = this()
+  def this(propertyName: String, parent: js.Any, registry: AssetRegistry, callbacks: AnonAdd) = this()
+  def this(propertyName: String, parent: Asset, registry: AssetRegistry, callbacks: AnonAdd) = this()
+  def this(propertyName: String, parent: js.Any, registry: AssetRegistry, callbacks: AnonAdd, scope: js.Any) = this()
+  def this(propertyName: String, parent: Asset, registry: AssetRegistry, callbacks: AnonAdd, scope: js.Any) = this()
   /**
     * Get or set the asset id which this references. One of either id or url must be set to initialize an asset reference.
     */

@@ -1,6 +1,6 @@
 package typings.heremaps.H.mapevents
 
-import typings.heremaps.H.Map
+import typings.heremaps.H.Map_
 import typings.heremaps.H.util.Disposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ class MapEvents protected () extends Disposable {
     * Constructor
     * @param map {H.Map} - map instance which is used for firing events
     */
-  def this(map: Map) = this()
+  def this(map: Map_) = this()
   /**
     * This method destroys the MapEvents by removing all handlers from the map object. After calling this function mapEvents and map objects will not trigger any events. This object will be
     * disposed automatically if the corresponding map object is disposed.
@@ -28,6 +28,6 @@ class MapEvents protected () extends Disposable {
     * This method returns map into which events are attached
     * @returns {H.Map}
     */
-  def getAttachedMap(): Map = js.native
+  def getAttachedMap(): Map_ = js.native
 }
 

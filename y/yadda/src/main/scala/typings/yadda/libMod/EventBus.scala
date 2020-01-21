@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation._
 object EventBus extends js.Object {
   @js.native
   class EventBus ()
-    extends typings.yadda.libEventBusMod.EventBus
+    extends typings.yadda.eventBusMod.EventBus
   
   val ON_DEFINE: __ON_DEFINE__ = js.native
   val ON_EXECUTE: __ON_EXECUTE__ = js.native
   val ON_SCENARIO: __ON_SCENARIO__ = js.native
   val ON_STEP: __ON_STEP__ = js.native
-  def instance(): typings.yadda.libEventBusMod.EventBus = js.native
+  def instance(): typings.yadda.eventBusMod.EventBus = js.native
 }
 

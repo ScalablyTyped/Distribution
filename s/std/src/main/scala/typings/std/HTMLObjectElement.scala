@@ -35,7 +35,7 @@ trait HTMLObjectElement extends HTMLElement {
   /**
     * Retrieves the document object of the page or frame.
     */
-  val contentDocument: Document | Null = js.native
+  val contentDocument: Document_ | Null = js.native
   val contentWindow: WindowProxy | Null = js.native
   /**
     * Sets or retrieves the URL that references the data of the object.
@@ -92,7 +92,7 @@ trait HTMLObjectElement extends HTMLElement {
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
-  def getSVGDocument(): Document | Null = js.native
+  def getSVGDocument(): Document_ | Null = js.native
   def reportValidity(): scala.Boolean = js.native
   /**
     * Sets a custom error message that is displayed when a form is submitted.

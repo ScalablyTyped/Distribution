@@ -2,13 +2,13 @@ package typings.nodegit.remoteMod
 
 import typings.nodegit.bufMod.Buf
 import typings.nodegit.enumsMod.Enums.DIRECTION
-import typings.nodegit.fetchDashOptionsMod.FetchOptions
-import typings.nodegit.pushDashOptionsMod.PushOptions
-import typings.nodegit.refDashSpecMod.Refspec
-import typings.nodegit.remoteDashCallbacksMod.RemoteCallbacks
+import typings.nodegit.fetchOptionsMod.FetchOptions
+import typings.nodegit.pushOptionsMod.PushOptions
+import typings.nodegit.refSpecMod.Refspec
+import typings.nodegit.remoteCallbacksMod.RemoteCallbacks
 import typings.nodegit.repositoryMod.Repository
-import typings.nodegit.strDashArrayMod.Strarray
-import typings.nodegit.transferDashProgressMod.TransferProgress
+import typings.nodegit.strArrayMod.Strarray
+import typings.nodegit.transferProgressMod.TransferProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

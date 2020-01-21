@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/type", "GraphQLID")
 @js.native
 object GraphQLID
-  extends TopLevel[typings.graphql.typeDefinitionMod.GraphQLScalarType]
+  extends TopLevel[typings.graphql.definitionMod.GraphQLScalarType]
 

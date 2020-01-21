@@ -1,10 +1,10 @@
 package typings.linkifyjs.elementMod
 
-import typings.linkifyjs.linkifyjsMod.LinkEntityType
 import typings.linkifyjs.linkifyjsStrings.ftp
 import typings.linkifyjs.linkifyjsStrings.ftps
 import typings.linkifyjs.linkifyjsStrings.http
 import typings.linkifyjs.linkifyjsStrings.https
+import typings.linkifyjs.mod.LinkEntityType
 import typings.std.GlobalEventHandlers
 import typings.std.Partial
 import typings.std.Record
@@ -13,7 +13,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options
-  extends typings.linkifyjs.linkifyjsMod.Options {
+  extends typings.linkifyjs.mod.Options {
   /**
     * Add event listeners to newly created link elements.
     * Takes a hash where each key is an standard event name and the value is an event handler.

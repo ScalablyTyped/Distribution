@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "base64topdf"
-version := "1.1-dt-20180222Z-6ccc5a"
+version := "1.1-dt-20180222Z-0483f1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

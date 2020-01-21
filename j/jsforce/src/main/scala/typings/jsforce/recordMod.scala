@@ -1,8 +1,8 @@
 package typings.jsforce
 
 import typings.jsforce.connectionMod.Connection
-import typings.jsforce.recordDashResultMod.RecordResult
-import typings.jsforce.salesforceDashIdMod.SalesforceId
+import typings.jsforce.recordResultMod.RecordResult
+import typings.jsforce.salesforceIdMod.SalesforceId
 import typings.node.streamMod.Stream
 import typings.std.Error
 import typings.std.Partial
@@ -38,6 +38,6 @@ object recordMod extends js.Object {
     ): js.Promise[RecordResult] = js.native
   }
   
-  type Record[T] = Anon_Id with T
+  type Record[T] = AnonId with T
 }
 

@@ -1,12 +1,12 @@
 package typings.validator
 
-import typings.validator.validatorMod.validator.AlphaLocale
-import typings.validator.validatorMod.validator.AlphanumericLocale
-import typings.validator.validatorMod.validator.FloatLocale
-import typings.validator.validatorMod.validator.HashAlgorithm
-import typings.validator.validatorMod.validator.IdentityCardLocale
-import typings.validator.validatorMod.validator.MobilePhoneLocale
-import typings.validator.validatorMod.validator.PostalCodeLocale
+import typings.validator.mod.validator.AlphaLocale
+import typings.validator.mod.validator.AlphanumericLocale
+import typings.validator.mod.validator.FloatLocale
+import typings.validator.mod.validator.HashAlgorithm
+import typings.validator.mod.validator.IdentityCardLocale
+import typings.validator.mod.validator.MobilePhoneLocale
+import typings.validator.mod.validator.PostalCodeLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

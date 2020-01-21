@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** The beforeunload event is fired when the window, the document and its resources are about to be unloaded. */
 @js.native
-trait BeforeUnloadEvent extends Event
+trait BeforeUnloadEvent extends Event_
 
 @JSGlobal("BeforeUnloadEvent")
 @js.native

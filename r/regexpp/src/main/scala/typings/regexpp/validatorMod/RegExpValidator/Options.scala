@@ -1,6 +1,6 @@
 package typings.regexpp.validatorMod.RegExpValidator
 
-import typings.regexpp.ecmaDashVersionsMod.EcmaVersion
+import typings.regexpp.ecmaVersionsMod.EcmaVersion
 import typings.regexpp.regexppStrings.any
 import typings.regexpp.regexppStrings.digit
 import typings.regexpp.regexppStrings.end

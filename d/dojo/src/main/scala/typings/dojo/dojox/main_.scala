@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
   * Apps should require modules from the dojox packages directly, rather than loading this module.
   *
   */
-@JSName("main")
 trait main_ extends js.Object {
   /**
     *

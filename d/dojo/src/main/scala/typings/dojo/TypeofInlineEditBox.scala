@@ -1,7 +1,7 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.dojo.dijit.InlineEditBox._InlineEditor
+import typings.dojo.dijit.InlineEditBox.InlineEditor
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +23,7 @@ trait TypeofInlineEditBox extends js.Object {
   var _InlineEditor: Instantiable2[
     js.UndefOr[/* params */ js.Object], 
     js.UndefOr[/* srcNodeRef */ HTMLElement], 
-    typings.dojo.dijit.InlineEditBox._InlineEditor
+    InlineEditor
   ]
 }
 
@@ -33,7 +33,7 @@ object TypeofInlineEditBox {
     _InlineEditor: Instantiable2[
       js.UndefOr[/* params */ js.Object], 
       js.UndefOr[/* srcNodeRef */ HTMLElement], 
-      _InlineEditor
+      InlineEditor
     ]
   ): TypeofInlineEditBox = {
     val __obj = js.Dynamic.literal(_InlineEditor = _InlineEditor.asInstanceOf[js.Any])

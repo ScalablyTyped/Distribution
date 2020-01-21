@@ -1,7 +1,7 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit.form._FormValueWidget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.form.FormValueWidget
 import typings.dojo.dojoStrings.constraints
 import typings.dojo.dojoStrings.delimiter
 import typings.dojo.dojoStrings.duration
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.form.ListInput")
 @js.native
-class ListInput () extends _FormValueWidget {
+class ListInput () extends FormValueWidget {
   /**
     * user-defined object needed to pass parameters to the validator functions
     *
@@ -251,7 +251,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_delimiter(
     property: delimiter,
@@ -261,7 +261,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_duration(
     property: duration,
@@ -271,7 +271,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_easingIn(
     property: easingIn,
@@ -281,7 +281,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_easingOut(
     property: easingOut,
@@ -291,7 +291,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_inputClass(
     property: inputClass,
@@ -301,7 +301,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_inputHandler(
     property: inputHandler,
@@ -311,7 +311,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_inputProperties(
     property: inputProperties,
@@ -321,7 +321,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxItems(
     property: maxItems,
@@ -331,7 +331,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_readOnlyInput(
     property: readOnlyInput,
@@ -341,7 +341,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_readOnlyItem(
     property: readOnlyItem,
@@ -351,7 +351,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_regExp(
     property: regExp,
@@ -361,7 +361,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showCloseButtonWhenInvalid(
     property: showCloseButtonWhenInvalid,
@@ -371,7 +371,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showCloseButtonWhenValid(
     property: showCloseButtonWhenValid,
@@ -381,7 +381,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_submitOnlyValidValue(
     property: submitOnlyValidValue,
@@ -391,7 +391,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useAnim(
     property: useAnim,
@@ -401,7 +401,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useArrowForEdit(
     property: useArrowForEdit,
@@ -411,7 +411,7 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useOnBlur(
     property: useOnBlur,
@@ -421,6 +421,6 @@ class ListInput () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

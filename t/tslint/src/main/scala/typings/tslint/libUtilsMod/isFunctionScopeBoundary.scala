@@ -1,6 +1,6 @@
 package typings.tslint.libUtilsMod
 
-import typings.typescript.typescriptMod.Node
+import typings.typescript.mod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

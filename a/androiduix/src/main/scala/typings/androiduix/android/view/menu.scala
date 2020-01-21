@@ -20,8 +20,8 @@ object menu extends js.Object {
        with OnKeyListener
        with OnGlobalLayoutListener
        with OnDismissListener {
-    def this(context: Context, menu: Menu) = this()
-    def this(context: Context, menu: Menu, anchorView: View) = this()
+    def this(context: Context, menu: Menu_) = this()
+    def this(context: Context, menu: Menu_, anchorView: View) = this()
     var mAdapter: js.Any = js.native
     var mAnchorView: js.Any = js.native
     var mContext: js.Any = js.native
@@ -52,7 +52,7 @@ object menu extends js.Object {
   object MenuPopupHelper extends js.Object {
     @js.native
     class MenuAdapter protected () extends BaseAdapter {
-      def this(menu: Menu, arg: MenuPopupHelper) = this()
+      def this(menu: Menu_, arg: MenuPopupHelper) = this()
       var _MenuPopupHelper_this: MenuPopupHelper = js.native
       var mAdapterMenu: js.Any = js.native
     }

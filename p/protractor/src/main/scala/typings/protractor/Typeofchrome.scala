@@ -1,8 +1,8 @@
 package typings.protractor
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.seleniumDashWebdriver.chromeMod.ServiceBuilder
-import typings.seleniumDashWebdriver.remoteMod.DriverService
+import typings.seleniumWebdriver.chromeMod.ServiceBuilder
+import typings.seleniumWebdriver.remoteMod.DriverService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait Typeofchrome extends js.Object {
   var Driver: TypeofClassDriverCreateSession
   var Options: TypeofClassOptions
-  var ServiceBuilder: Instantiable0[typings.seleniumDashWebdriver.chromeMod.ServiceBuilder]
+  var ServiceBuilder: Instantiable0[typings.seleniumWebdriver.chromeMod.ServiceBuilder]
   def getDefaultService(): DriverService
   def setDefaultService(service: DriverService): Unit
 }

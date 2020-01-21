@@ -1,6 +1,6 @@
 package typings.knockback.Knockback
 
-import typings.backbone.backboneMod.ModelBase
+import typings.backbone.mod.ModelBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

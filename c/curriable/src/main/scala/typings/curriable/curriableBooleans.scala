@@ -1,6 +1,6 @@
 package typings.curriable
 
-import typings.curriable.curriableMod.HasTail
+import typings.curriable.mod.HasTail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

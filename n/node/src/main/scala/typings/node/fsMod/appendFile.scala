@@ -31,8 +31,10 @@ object appendFile extends js.Object {
     * If `flag` is not supplied, the default of `'a'` is used.
     */
   def apply(file: PathLike, data: js.Any, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
-  def __promisify__(file: Double, data: js.Any): js.Promise[Unit] = js.native
-  def __promisify__(file: Double, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(file: Double, data: js.Any): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(file: Double, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
   /**
     * Asynchronously append data to a file, creating the file if it does not exist.
     * @param file A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -45,7 +47,9 @@ object appendFile extends js.Object {
     * If `mode` is a string, it is parsed as an octal integer.
     * If `flag` is not supplied, the default of `'a'` is used.
     */
-  def __promisify__(file: PathLike, data: js.Any): js.Promise[Unit] = js.native
-  def __promisify__(file: PathLike, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(file: PathLike, data: js.Any): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(file: PathLike, data: js.Any, options: WriteFileOptions): js.Promise[Unit] = js.native
 }
 

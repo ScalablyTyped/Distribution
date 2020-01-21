@@ -5,19 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Tampermonkey {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type NotificationOnClick = js.ThisFunction0[/* this */ NotificationThis, Unit]
+  type NotificationOnClick = js.ThisFunction0[/* this */ typings.tampermonkey.Tampermonkey.NotificationThis, scala.Unit]
   /** `clicked` is `true` when `text` was set */
-  type NotificationOnDone = js.ThisFunction1[/* this */ NotificationThis, /* clicked */ Boolean, Unit]
-  type RequestEventListener[TResponse] = js.ThisFunction1[/* this */ TResponse, /* response */ TResponse, Unit]
+  type NotificationOnDone = js.ThisFunction1[
+    /* this */ typings.tampermonkey.Tampermonkey.NotificationThis, 
+    /* clicked */ scala.Boolean, 
+    scala.Unit
+  ]
+  type RequestEventListener[TResponse] = js.ThisFunction1[/* this */ TResponse, /* response */ TResponse, scala.Unit]
   // Request
-  type RequestHeaders = StringDictionary[String]
+  type RequestHeaders = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type ValueChangeListener = js.Function4[
-    /* name */ String, 
+    /* name */ java.lang.String, 
     /* oldValue */ js.Any, 
     /* newValue */ js.Any, 
-    /* remote */ Boolean, 
-    Unit
+    /* remote */ scala.Boolean, 
+    scala.Unit
   ]
 }

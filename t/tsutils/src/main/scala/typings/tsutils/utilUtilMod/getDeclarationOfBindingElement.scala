@@ -1,8 +1,8 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.BindingElement
-import typings.typescript.typescriptMod.ParameterDeclaration
-import typings.typescript.typescriptMod.VariableDeclaration
+import typings.typescript.mod.BindingElement
+import typings.typescript.mod.ParameterDeclaration
+import typings.typescript.mod.VariableDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

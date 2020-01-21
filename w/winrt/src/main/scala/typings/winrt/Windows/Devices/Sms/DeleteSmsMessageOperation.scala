@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Devices.Sms
 
-import typings.winrt.Anon_CompletedGetResultsAny
+import typings.winrt.AnonCompletedGetResultsAny
 import typings.winrt.Windows.Foundation.AsyncStatus
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IPromise
@@ -15,7 +15,7 @@ class DeleteSmsMessageOperation () extends IAsyncAction {
   override var errorCode: Double = js.native
   /* CompleteClass */
   override var id: Double = js.native
-  var operation: Anon_CompletedGetResultsAny = js.native
+  var operation: AnonCompletedGetResultsAny = js.native
   /* CompleteClass */
   override var status: AsyncStatus = js.native
   /* CompleteClass */

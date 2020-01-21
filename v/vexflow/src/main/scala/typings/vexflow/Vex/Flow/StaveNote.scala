@@ -1,11 +1,11 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Accidental
-import typings.vexflow.Anon_AutostemClef
+import typings.vexflow.AnonAccidental
+import typings.vexflow.AnonAutostemClef
+import typings.vexflow.AnonHighestline
+import typings.vexflow.AnonLeftshift
+import typings.vexflow.AnonX
 import typings.vexflow.Anon_FillStyle
-import typings.vexflow.Anon_Highestline
-import typings.vexflow.Anon_Leftshift
-import typings.vexflow.Anon_X
 import typings.vexflow.Vex.Flow.Modifier.Position
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.StaveNote")
 @js.native
 class StaveNote protected () extends StemmableNote {
-  def this(note_struct: Anon_AutostemClef) = this()
+  def this(note_struct: AnonAutostemClef) = this()
   var x_shift: Double = js.native
   def addAccidental(index: Double, accidental: Accidental): StaveNote = js.native
   def addAnnotation(index: Double, annotation: Annotation): StaveNote = js.native
@@ -28,8 +28,9 @@ class StaveNote protected () extends StemmableNote {
   def autoStem(): Unit = js.native
    //inconsistent type: void -> StaveNote
   def buildNoteHeads(): Unit = js.native
+  //TODO remove the following lines once TypeScript allows subclass overrides with type changes and/or inconsistencies mentioned below are fixed
   @JSName("buildStem")
-  def buildStem_Unit(): Unit = js.native
+  def buildStem_StemmableNote(): StemmableNote = js.native
   def calcExtraPx(): Unit = js.native
   def calculateKeyProps(): Unit = js.native
   def draw(): Unit = js.native
@@ -39,13 +40,13 @@ class StaveNote protected () extends StemmableNote {
   def drawNoteHeads(): Unit = js.native
   def getAccidentals(): js.Array[Accidental] = js.native
   @JSName("getDots")
-  def getDots_Double(): Double = js.native
+  def getDots_Array(): js.Array[Dot] = js.native
   def getKeyLine(index: Double): Double = js.native
-  def getKeyProps(): js.Array[Anon_Accidental] = js.native
+  def getKeyProps(): js.Array[AnonAccidental] = js.native
   def getKeys(): js.Array[String] = js.native
-  def getModifierStartXY(position: Position, index: Double): Anon_X = js.native
+  def getModifierStartXY(position: Position, index: Double): AnonX = js.native
   def getNoteHeadBeginX(): Double = js.native
-  def getNoteHeadBounds(): Anon_Highestline = js.native
+  def getNoteHeadBounds(): AnonHighestline = js.native
   def getNoteHeadEndX(): Double = js.native
   def getTieLeftX(): Double = js.native
   def getTieRightX(): Double = js.native
@@ -70,8 +71,8 @@ object StaveNote extends js.Object {
   var DEBUG: Boolean = js.native
   val STEM_DOWN: Double = js.native
   val STEM_UP: Double = js.native
-  def format(notes: js.Array[StaveNote], state: Anon_Leftshift): Boolean = js.native
-  def formatByY(notes: js.Array[StaveNote], state: Anon_Leftshift): Unit = js.native
+  def format(notes: js.Array[StaveNote], state: AnonLeftshift): Boolean = js.native
+  def formatByY(notes: js.Array[StaveNote], state: AnonLeftshift): Unit = js.native
   def postFormat(notes: js.Array[StaveNote]): Boolean = js.native
 }
 

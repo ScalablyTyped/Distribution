@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("highlight")
 trait highlight_ extends js.Object
 

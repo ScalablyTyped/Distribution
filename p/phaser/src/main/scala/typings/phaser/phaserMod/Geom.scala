@@ -2,6 +2,7 @@ package typings.phaser.phaserMod
 
 import typings.phaser.CenterFunction
 import typings.phaser.Phaser.Math.Vector2
+import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -161,31 +162,38 @@ object Geom extends js.Object {
   /**
     * A Circle Geometry object type.
     */
-  var CIRCLE: integer = js.native
+  @JSName("CIRCLE")
+  var CIRCLE_ : integer = js.native
   /**
     * An Ellipse Geometry object type.
     */
-  var ELLIPSE: integer = js.native
+  @JSName("ELLIPSE")
+  var ELLIPSE_ : integer = js.native
   /**
     * A Line Geometry object type.
     */
-  var LINE: integer = js.native
+  @JSName("LINE")
+  var LINE_ : integer = js.native
   /**
     * A Point Geometry object type.
     */
-  var POINT: integer = js.native
+  @JSName("POINT")
+  var POINT_ : integer = js.native
   /**
     * A Polygon Geometry object type.
     */
-  var POLYGON: integer = js.native
+  @JSName("POLYGON")
+  var POLYGON_ : integer = js.native
   /**
     * A Rectangle Geometry object type.
     */
-  var RECTANGLE: integer = js.native
+  @JSName("RECTANGLE")
+  var RECTANGLE_ : integer = js.native
   /**
     * A Triangle Geometry object type.
     */
-  var TRIANGLE: integer = js.native
+  @JSName("TRIANGLE")
+  var TRIANGLE_ : integer = js.native
   /* static members */
   @js.native
   object Circle extends js.Object {
@@ -710,9 +718,9 @@ object Geom extends js.Object {
       * @param stepRate The optional step rate for the points on the line. Default 1.
       * @param results An optional array to push the resulting coordinates into.
       */
-    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line): js.Array[js.Object] = js.native
-    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer): js.Array[js.Object] = js.native
-    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer, results: js.Array[_]): js.Array[js.Object] = js.native
+    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line): js.Array[Vector2Like] = js.native
+    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer): js.Array[Vector2Like] = js.native
+    def BresenhamPoints(line: typings.phaser.Phaser.Geom.Line, stepRate: integer, results: js.Array[Vector2Like]): js.Array[Vector2Like] = js.native
     /**
       * Center a line on the given coordinates.
       * @param line The line to center.

@@ -1,6 +1,6 @@
 package typings.bell
 
-import typings.bell.bellMod.Provider
+import typings.bell.mod.Provider
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

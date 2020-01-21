@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ffprobe-static"
-version := "2.0-dt-20200113Z-5f4285"
+version := "2.0-dt-20200113Z-ab428e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

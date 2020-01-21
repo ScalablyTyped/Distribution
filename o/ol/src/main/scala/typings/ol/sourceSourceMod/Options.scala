@@ -1,7 +1,7 @@
 package typings.ol.sourceSourceMod
 
 import typings.ol.projMod.ProjectionLike
-import typings.ol.sourceStateMod.State
+import typings.ol.stateMod.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

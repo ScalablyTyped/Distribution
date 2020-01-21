@@ -20,7 +20,9 @@ object lchmod extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
     */
-  def __promisify__(path: PathLike, mode: String): js.Promise[Unit] = js.native
-  def __promisify__(path: PathLike, mode: Double): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike, mode: String): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike, mode: Double): js.Promise[Unit] = js.native
 }
 

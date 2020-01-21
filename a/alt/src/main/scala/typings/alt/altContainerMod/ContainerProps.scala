@@ -3,8 +3,8 @@ package typings.alt.altContainerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.alt.AltJS.Alt
 import typings.alt.AltJS.AltStore
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactElement
+import typings.react.mod.Component
+import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

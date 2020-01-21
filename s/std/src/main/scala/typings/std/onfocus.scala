@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("onfocus")
 @js.native
 object onfocus
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ FocusEvent, js.Any]) | Null]
 

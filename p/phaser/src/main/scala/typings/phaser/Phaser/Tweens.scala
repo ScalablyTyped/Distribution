@@ -725,6 +725,7 @@ object Tweens extends js.Object {
       * We need to kill and reset all internal properties as well as stop listening to Scene events.
       */
     def shutdown(): Unit = js.native
+    def stagger(value: js.Array[Double], config: StaggerConfig): js.Function = js.native
     /**
       * Creates a Stagger function to be used by a Tween property.
       * 
@@ -757,9 +758,10 @@ object Tweens extends js.Object {
       *     delay: this.tweens.stagger(500, { grid: [ 10, 6 ], from: 'center', ease: 'cubic.out' })
       * });
       * ```
+      * @param value The amount to stagger by, or an array containing two elements representing the min and max values to stagger between.
       * @param config The configuration object for the Stagger function.
       */
-    def stagger(config: StaggerConfig): js.Function = js.native
+    def stagger(value: Double, config: StaggerConfig): js.Function = js.native
     /**
       * Create a Tween Timeline and add it to the active Tween list/
       * @param config The configuration object for the Timeline and its Tweens.

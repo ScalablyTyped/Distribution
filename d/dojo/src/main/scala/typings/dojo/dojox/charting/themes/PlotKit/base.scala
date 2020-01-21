@@ -1,6 +1,6 @@
 package typings.dojo.dojox.charting.themes.PlotKit
 
-import typings.dojo.dojo._base.Color
+import typings.dojo.dojo.base.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

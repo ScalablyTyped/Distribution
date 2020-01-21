@@ -5,17 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object hammerjs {
-  type HammerListener = js.Function1[/* event */ HammerInput, Unit]
-  type PanRecognizer = AttrRecognizer
-  type PinchRecognizer = AttrRecognizer
-  type PressRecognizer = AttrRecognizer
-  type RecognizerTuple = js.Array[RecognizerStatic] | (js.Tuple2[RecognizerStatic, RecognizerOptions]) | (js.Tuple3[RecognizerStatic, RecognizerOptions, String | js.Array[String]]) | (js.Tuple4[
-    RecognizerStatic, 
-    RecognizerOptions, 
-    String | js.Array[String], 
-    String | Recognizer | (js.Array[String | Recognizer])
+  type HammerListener = js.Function1[/* event */ typings.hammerjs.HammerInput, scala.Unit]
+  type PanRecognizer = typings.hammerjs.AttrRecognizer
+  type PinchRecognizer = typings.hammerjs.AttrRecognizer
+  type PressRecognizer = typings.hammerjs.AttrRecognizer
+  type RecognizerTuple = js.Array[typings.hammerjs.RecognizerStatic] | (js.Tuple2[typings.hammerjs.RecognizerStatic, typings.hammerjs.RecognizerOptions]) | (js.Tuple3[
+    typings.hammerjs.RecognizerStatic, 
+    typings.hammerjs.RecognizerOptions, 
+    java.lang.String | js.Array[java.lang.String]
+  ]) | (js.Tuple4[
+    typings.hammerjs.RecognizerStatic, 
+    typings.hammerjs.RecognizerOptions, 
+    java.lang.String | js.Array[java.lang.String], 
+    java.lang.String | typings.hammerjs.Recognizer | (js.Array[java.lang.String | typings.hammerjs.Recognizer])
   ])
-  type RotateRecognizer = AttrRecognizer
-  type SwipeRecognizer = AttrRecognizer
-  type TapRecognizer = AttrRecognizer
+  type RotateRecognizer = typings.hammerjs.AttrRecognizer
+  type SwipeRecognizer = typings.hammerjs.AttrRecognizer
+  type TapRecognizer = typings.hammerjs.AttrRecognizer
 }

@@ -1,17 +1,17 @@
 package typings.bluebird
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.bluebird.bluebirdMod.Bluebird
-import typings.bluebird.bluebirdMod.ConcurrencyOption
-import typings.bluebird.bluebirdMod.CoroutineOptions
-import typings.bluebird.bluebirdMod.Disposer
-import typings.bluebird.bluebirdMod.FromNodeOptions
-import typings.bluebird.bluebirdMod.IterateFunction
-import typings.bluebird.bluebirdMod.PromisifyAllOptions
-import typings.bluebird.bluebirdMod.PromisifyOptions
-import typings.bluebird.bluebirdMod.Resolvable
-import typings.bluebird.bluebirdMod.ResolvableProps
-import typings.bluebird.bluebirdMod.Resolver
+import typings.bluebird.mod.Bluebird
+import typings.bluebird.mod.ConcurrencyOption
+import typings.bluebird.mod.CoroutineOptions
+import typings.bluebird.mod.Disposer
+import typings.bluebird.mod.FromNodeOptions
+import typings.bluebird.mod.IterateFunction
+import typings.bluebird.mod.PromisifyAllOptions
+import typings.bluebird.mod.PromisifyOptions
+import typings.bluebird.mod.Resolvable
+import typings.bluebird.mod.ResolvableProps
+import typings.bluebird.mod.Resolver
 import typings.std.Error
 import typings.std.Iterable
 import typings.std.IterableIterator
@@ -75,7 +75,7 @@ trait TypeofClassBluebird
     * Note that even though false is the default here, a development environment might be detected which automatically
     *  enables long stack traces and warnings.
     */
-  def config(options: Anon_Cancellation): Unit = js.native
+  def config(options: AnonCancellation): Unit = js.native
   /**
     * Returns a function that can use `yield` to run asynchronous code synchronously.
     *

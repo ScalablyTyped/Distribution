@@ -1,9 +1,9 @@
 package typings.dojo.dojo
 
-import typings.dojo.dojo._base.Color
-import typings.dojo.dojo._base.declare.__DeclareCreatedObject
+import typings.dojo.dojo.base.Color
+import typings.dojo.dojo.base.declare.DeclareCreatedObject
 import typings.dojo.dojo.promise.Promise
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
   * This module is the foundational module of the dojo boot sequence; it defines the dojo object.
   *
   */
-@JSName("main")
 @js.native
 trait main_ extends js.Object {
   /**
@@ -1202,7 +1201,7 @@ trait main_ extends js.Object {
     * @param superclass May be null, a Function, or an Array of Functions. This argumentspecifies a list of bases (the left-most one is the most deepestbase).
     * @param props An object whose properties are copied to the created prototype.Add an instance-initialization function by making it a propertynamed "constructor".
     */
-  def declare(className: String, superclass: js.Array[js.Function], props: js.Object): __DeclareCreatedObject = js.native
+  def declare(className: String, superclass: js.Array[js.Function], props: js.Object): DeclareCreatedObject = js.native
   /**
     * Create a feature-rich constructor from compact notation.
     * Create a constructor using a compact notation for inheritance and
@@ -1275,7 +1274,7 @@ trait main_ extends js.Object {
     * @param superclass May be null, a Function, or an Array of Functions. This argumentspecifies a list of bases (the left-most one is the most deepestbase).
     * @param props An object whose properties are copied to the created prototype.Add an instance-initialization function by making it a propertynamed "constructor".
     */
-  def declare(className: String, superclass: js.Function, props: js.Object): __DeclareCreatedObject = js.native
+  def declare(className: String, superclass: js.Function, props: js.Object): DeclareCreatedObject = js.native
   /**
     * Log a debug message to indicate that a behavior has been
     * deprecated.
@@ -1481,7 +1480,7 @@ trait main_ extends js.Object {
     * @param evt native event object
     * @param sender node to treat as "currentTarget"
     */
-  def fixEvent(evt: Event, sender: HTMLElement): Event = js.native
+  def fixEvent(evt: Event_, sender: HTMLElement): Event_ = js.native
   /**
     * In RTL direction, scrollLeft should be a negative value, but IE
     * returns a positive one. All codes using documentElement.scrollLeft
@@ -2829,7 +2828,7 @@ trait main_ extends js.Object {
     *
     * @param evt The event object. If omitted, window.event is used on IE.
     */
-  def stopEvent(evt: Event): Unit = js.native
+  def stopEvent(evt: Event_): Unit = js.native
   /**
     * Accesses styles on a node. If 2 arguments are
     * passed, acts as a getter. If 3 arguments are passed, acts

@@ -5,12 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Foxx {
-  import typings.arangodb.Anon_End
-  import typings.arangodb.Anon_Type
-
-  type Handler = js.Function2[/* req */ Request, /* res */ Response, Unit]
-  type Middleware = SimpleMiddleware | DelegateMiddleware
-  type NextFunction = js.Function0[Unit]
-  type Ranges = js.Array[Anon_End] with Anon_Type
-  type SimpleMiddleware = js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, Unit]
+  type Handler = js.Function2[
+    /* req */ typings.arangodb.Foxx.Request, 
+    /* res */ typings.arangodb.Foxx.Response, 
+    scala.Unit
+  ]
+  type Middleware = typings.arangodb.Foxx.SimpleMiddleware | typings.arangodb.Foxx.DelegateMiddleware
+  type NextFunction = js.Function0[scala.Unit]
+  type Ranges = js.Array[typings.arangodb.AnonEnd] with typings.arangodb.AnonType
+  type SimpleMiddleware = js.Function3[
+    /* req */ typings.arangodb.Foxx.Request, 
+    /* res */ typings.arangodb.Foxx.Response, 
+    /* next */ typings.arangodb.Foxx.NextFunction, 
+    scala.Unit
+  ]
 }

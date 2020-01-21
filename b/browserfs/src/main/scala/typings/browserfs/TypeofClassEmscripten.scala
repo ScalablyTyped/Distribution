@@ -1,11 +1,11 @@
 package typings.browserfs
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.browserfs.distNodeBackendEmscriptenMod.EmscriptenFileSystem
-import typings.browserfs.distNodeBackendEmscriptenMod.EmscriptenFileSystemOptions
-import typings.browserfs.distNodeBackendEmscriptenMod.default
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.emscriptenMod.EmscriptenFileSystem
+import typings.browserfs.emscriptenMod.EmscriptenFileSystemOptions
+import typings.browserfs.emscriptenMod.default
+import typings.browserfs.fileSystemMod.BFSCallback
+import typings.browserfs.fileSystemMod.FileSystemOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

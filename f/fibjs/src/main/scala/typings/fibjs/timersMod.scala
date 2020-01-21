@@ -17,10 +17,10 @@ object timersMod extends js.Object {
   def clearImmediate(t: js.Any): Unit = js.native
   def clearInterval(t: js.Any): Unit = js.native
   def clearTimeout(t: js.Any): Unit = js.native
-  def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): Class_Timer = js.native
-  def setImmediate(callback: js.Function, args: js.Any*): Class_Timer = js.native
-  def setInterval(callback: js.Function, timeout: Double, args: js.Any*): Class_Timer = js.native
-  def setTimeout(callback: js.Function): Class_Timer = js.native
-  def setTimeout(callback: js.Function, timeout: Double, args: js.Any*): Class_Timer = js.native
+  def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
+  def setImmediate(callback: js.Function, args: js.Any*): ClassTimer = js.native
+  def setInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
+  def setTimeout(callback: js.Function): ClassTimer = js.native
+  def setTimeout(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
 }
 

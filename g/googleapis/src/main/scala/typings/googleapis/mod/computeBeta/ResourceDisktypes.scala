@@ -1,0 +1,14 @@
+package typings.googleapis.mod.computeBeta
+
+import typings.googleapisCommon.apiMod.APIRequestContext
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("googleapis", "compute_beta.Resource$Disktypes")
+@js.native
+class ResourceDisktypes protected ()
+  extends typings.googleapis.betaMod.computeBeta.ResourceDisktypes {
+  def this(context: APIRequestContext) = this()
+}
+

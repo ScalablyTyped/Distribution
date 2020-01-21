@@ -5,6 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object metaInfo {
-  type Service = Service_
-  type TileProvider = TileProvider_
+  type Service = typings.heremaps.H.service.metaInfo.Service_
+  type TileProvider = typings.heremaps.H.service.metaInfo.TileProvider_
 }

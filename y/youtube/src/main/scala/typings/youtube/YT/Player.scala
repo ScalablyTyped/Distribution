@@ -2,7 +2,7 @@ package typings.youtube.YT
 
 import typings.std.HTMLElement
 import typings.std.HTMLIFrameElement
-import typings.youtube.Anon_EndSeconds
+import typings.youtube.AnonEndSeconds
 import typings.youtube.youtubeStrings.onApiChange
 import typings.youtube.youtubeStrings.onError
 import typings.youtube.youtubeStrings.onPlaybackQualityChange
@@ -219,7 +219,7 @@ class Player protected () extends js.Object {
   		 *
   		 * @param args   Settings to play the video.
   		 */
-  def loadVideoByUrl(args: Anon_EndSeconds): Unit = js.native
+  def loadVideoByUrl(args: AnonEndSeconds): Unit = js.native
   /**
   		 * Loads a video by media content URL.
   		 *

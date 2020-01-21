@@ -2,7 +2,7 @@ package typings.extjs.Ext.dd
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IClass
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ trait IDragSource extends IDDProxy {
   var afterDragDrop: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
@@ -30,7 +30,7 @@ trait IDragSource extends IDDProxy {
   var afterDragEnter: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
@@ -43,7 +43,7 @@ trait IDragSource extends IDDProxy {
   var afterDragOut: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
@@ -56,7 +56,7 @@ trait IDragSource extends IDDProxy {
   var afterDragOver: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
@@ -65,7 +65,7 @@ trait IDragSource extends IDDProxy {
   		* @param e Event The event object
   		* @param id String The id of the dropped element
   		*/
-  var afterInvalidDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String], Unit]] = js.undefined
+  var afterInvalidDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String], Unit]] = js.undefined
   /** [Method] An empty function by default but provided so that you can perform a custom action after a valid drop has occurred by
   		* @param target Object The target DD
   		* @param e Event The event object
@@ -74,7 +74,7 @@ trait IDragSource extends IDDProxy {
   var afterValidDrop: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
@@ -93,7 +93,7 @@ trait IDragSource extends IDDProxy {
   var beforeDragDrop: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
@@ -107,7 +107,7 @@ trait IDragSource extends IDDProxy {
   var beforeDragEnter: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
@@ -121,7 +121,7 @@ trait IDragSource extends IDDProxy {
   var beforeDragOut: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
@@ -135,7 +135,7 @@ trait IDragSource extends IDDProxy {
   var beforeDragOver: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
@@ -149,7 +149,7 @@ trait IDragSource extends IDDProxy {
   var beforeInvalidDrop: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event], 
+      /* e */ js.UndefOr[Event_], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
@@ -178,7 +178,7 @@ trait IDragSource extends IDDProxy {
   		* @param e Event The event object
   		* @returns Boolean isValid True if the drag event is valid, else false to cancel
   		*/
-  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event], Boolean]] = js.undefined
+  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event_], Boolean]] = js.undefined
   /** [Method] An empty function by default but provided so that you can perform a custom action once the initial drag event has be
   		* @param x Number The x position of the click on the dragged object
   		* @param y Number The y position of the click on the dragged object
@@ -195,12 +195,12 @@ object IDragSource {
     addInvalidHandleId: /* id */ js.UndefOr[String] => Unit = null,
     addInvalidHandleType: /* tagName */ js.UndefOr[String] => Unit = null,
     addToGroup: /* sGroup */ js.UndefOr[String] => Unit = null,
-    afterDragDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit = null,
-    afterDragEnter: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit = null,
-    afterDragOut: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit = null,
-    afterDragOver: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit = null,
-    afterInvalidDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit = null,
-    afterValidDrop: (/* target */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit = null,
+    afterDragDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Unit = null,
+    afterDragEnter: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Unit = null,
+    afterDragOut: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Unit = null,
+    afterDragOver: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Unit = null,
+    afterInvalidDrop: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Unit = null,
+    afterValidDrop: (/* target */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Unit = null,
     alias: Array = null,
     alignElWithMouse: () => Unit = null,
     alternateClassName: js.Any = null,
@@ -210,11 +210,11 @@ object IDragSource {
     available: js.UndefOr[Boolean] = js.undefined,
     b4Drag: /* e */ js.UndefOr[js.Any] => Unit = null,
     b4MouseDown: /* e */ js.UndefOr[js.Any] => Unit = null,
-    beforeDragDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean = null,
-    beforeDragEnter: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean = null,
-    beforeDragOut: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean = null,
-    beforeDragOver: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean = null,
-    beforeInvalidDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean = null,
+    beforeDragDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Boolean = null,
+    beforeDragEnter: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Boolean = null,
+    beforeDragOut: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Boolean = null,
+    beforeDragOver: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Boolean = null,
+    beforeInvalidDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Boolean = null,
     cachePosition: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Unit = null,
     callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
     callParent: /* args */ js.UndefOr[js.Any] => _ = null,
@@ -260,15 +260,15 @@ object IDragSource {
     mixins: js.Any = null,
     moveOnly: js.UndefOr[Boolean] = js.undefined,
     onAvailable: () => Unit = null,
-    onBeforeDrag: (/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event]) => Boolean = null,
-    onDrag: /* e */ js.UndefOr[Event] => Unit = null,
-    onDragDrop: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragEnter: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOut: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onDragOver: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[js.Any]) => Unit = null,
-    onInvalidDrop: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseDown: /* e */ js.UndefOr[Event] => Unit = null,
-    onMouseUp: /* e */ js.UndefOr[Event] => Unit = null,
+    onBeforeDrag: (/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event_]) => Boolean = null,
+    onDrag: /* e */ js.UndefOr[Event_] => Unit = null,
+    onDragDrop: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragEnter: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOut: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onDragOver: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Unit = null,
+    onInvalidDrop: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseDown: /* e */ js.UndefOr[Event_] => Unit = null,
+    onMouseUp: /* e */ js.UndefOr[Event_] => Unit = null,
     onStartDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Unit = null,
     padding: Array = null,
     primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,

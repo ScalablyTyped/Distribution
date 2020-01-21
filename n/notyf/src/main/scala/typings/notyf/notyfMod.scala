@@ -1,43 +1,36 @@
 package typings.notyf
 
-import typings.notyf.notyfDotOptionsMod.DeepPartial
-import typings.notyf.notyfDotOptionsMod.INotyfNotificationOptions
-import typings.notyf.notyfDotOptionsMod.INotyfOptions
-import typings.notyf.notyfNotyfMod.default
+import typings.notyf.notyfModelsMod.NotyfArray
+import typings.notyf.notyfModelsMod.NotyfNotification
+import typings.notyf.notyfOptionsMod.DeepPartial
+import typings.notyf.notyfOptionsMod.INotyfNotificationOptions
+import typings.notyf.notyfOptionsMod.INotyfOptions
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("notyf", JSImport.Namespace)
+@JSImport("notyf/notyf", JSImport.Namespace)
 @js.native
 object notyfMod extends js.Object {
   @js.native
-  class Notyf () extends default {
+  trait Notyf extends js.Object {
+    var _pushNotification: js.Any = js.native
+    var normalizeOptions: js.Any = js.native
+    var notifications: NotyfArray[NotyfNotification] = js.native
+    var options: INotyfOptions = js.native
+    var registerTypes: js.Any = js.native
+    var view: js.Any = js.native
+    def error(payload: String): Unit = js.native
+    def error(payload: Partial[INotyfNotificationOptions]): Unit = js.native
+    def open(options: DeepPartial[INotyfNotificationOptions]): Unit = js.native
+    def success(payload: String): Unit = js.native
+    def success(payload: Partial[INotyfNotificationOptions]): Unit = js.native
+  }
+  
+  @js.native
+  class default () extends Notyf {
     def this(opts: Partial[INotyfOptions]) = this()
-  }
-  
-  @js.native
-  class NotyfArray[T] ()
-    extends typings.notyf.notyfDotModelsMod.NotyfArray[T]
-  
-  @js.native
-  class NotyfNotification protected ()
-    extends typings.notyf.notyfDotModelsMod.NotyfNotification {
-    def this(options: DeepPartial[INotyfNotificationOptions]) = this()
-  }
-  
-  @js.native
-  class NotyfView ()
-    extends typings.notyf.notyfDotViewMod.NotyfView
-  
-  val DEFAULT_OPTIONS: INotyfOptions = js.native
-  @js.native
-  object NotyfArrayEvent extends js.Object {
-    /* 0 */ val Add: typings.notyf.notyfDotModelsMod.NotyfArrayEvent.Add with Double = js.native
-    /* 1 */ val Remove: typings.notyf.notyfDotModelsMod.NotyfArrayEvent.Remove with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.notyf.notyfDotModelsMod.NotyfArrayEvent with Double] = js.native
   }
   
 }

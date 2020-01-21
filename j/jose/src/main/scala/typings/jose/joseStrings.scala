@@ -1,12 +1,13 @@
 package typings.jose
 
-import typings.jose.joseMod.ECCurve
-import typings.jose.joseMod.OKPCurve
-import typings.jose.joseMod.asymmetricKeyObjectTypes
-import typings.jose.joseMod.keyObjectTypes
-import typings.jose.joseMod.keyOperation
-import typings.jose.joseMod.keyType
-import typings.jose.joseMod.use
+import typings.jose.mod.ECCurve
+import typings.jose.mod.JWTProfiles
+import typings.jose.mod.OKPCurve
+import typings.jose.mod.asymmetricKeyObjectTypes
+import typings.jose.mod.keyObjectTypes
+import typings.jose.mod.keyOperation
+import typings.jose.mod.keyType
+import typings.jose.mod.use
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,6 +44,9 @@ object joseStrings {
   sealed trait X448 extends OKPCurve
   
   @js.native
+  sealed trait atPlussignJWT extends JWTProfiles
+  
+  @js.native
   sealed trait compact extends js.Object
   
   @js.native
@@ -64,7 +68,10 @@ object joseStrings {
   sealed trait general extends js.Object
   
   @js.native
-  sealed trait id_token extends js.Object
+  sealed trait id_token extends JWTProfiles
+  
+  @js.native
+  sealed trait logout_token extends JWTProfiles
   
   @js.native
   sealed trait oct extends keyType
@@ -121,6 +128,8 @@ object joseStrings {
   @scala.inline
   def X448: X448 = "X448".asInstanceOf[X448]
   @scala.inline
+  def atPlussignJWT: atPlussignJWT = "at+JWT".asInstanceOf[atPlussignJWT]
+  @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]
   @scala.inline
   def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
@@ -136,6 +145,8 @@ object joseStrings {
   def general: general = "general".asInstanceOf[general]
   @scala.inline
   def id_token: id_token = "id_token".asInstanceOf[id_token]
+  @scala.inline
+  def logout_token: logout_token = "logout_token".asInstanceOf[logout_token]
   @scala.inline
   def oct: oct = "oct".asInstanceOf[oct]
   @scala.inline

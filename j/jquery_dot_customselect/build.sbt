@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_customselect"
-version := "0.5.1-dt-20190322Z-aaf7e1"
+version := "0.5.1-dt-20190322Z-5ed52e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

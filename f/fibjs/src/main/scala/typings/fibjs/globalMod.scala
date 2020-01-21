@@ -23,15 +23,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object globalMod extends js.Object {
   @js.native
-  class Buffer () extends Class_Buffer
+  class Buffer () extends ClassBuffer
   
   @js.native
-  class Int64 () extends Class_Int64
+  class Int64 () extends ClassInt64
   
-  val Master: Class_Worker = js.native
-  val __dirname: String = js.native
-  val __filename: String = js.native
+  val Master: ClassWorker = js.native
   val argv: js.Array[js.Any] = js.native
+  @JSName("__dirname")
+  val dirname: String = js.native
+  @JSName("__filename")
+  val filename: String = js.native
   val global: js.Object = js.native
   def GC(): Unit = js.native
   def clearHrInterval(t: js.Any): Unit = js.native
@@ -40,16 +42,16 @@ object globalMod extends js.Object {
   def clearTimeout(t: js.Any): Unit = js.native
   def repl(): Unit = js.native
   def repl(cmds: js.Array[_]): Unit = js.native
-  def repl(out: Class_Stream): Unit = js.native
-  def repl(out: Class_Stream, cmds: js.Array[_]): Unit = js.native
+  def repl(out: ClassStream): Unit = js.native
+  def repl(out: ClassStream, cmds: js.Array[_]): Unit = js.native
   def require(id: String): js.Any = js.native
   def run(fname: String): Unit = js.native
   def run(fname: String, argv: js.Array[_]): Unit = js.native
-  def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): Class_Timer = js.native
-  def setImmediate(callback: js.Function, args: js.Any*): Class_Timer = js.native
-  def setInterval(callback: js.Function, timeout: Double, args: js.Any*): Class_Timer = js.native
-  def setTimeout(callback: js.Function): Class_Timer = js.native
-  def setTimeout(callback: js.Function, timeout: Double, args: js.Any*): Class_Timer = js.native
+  def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
+  def setImmediate(callback: js.Function, args: js.Any*): ClassTimer = js.native
+  def setInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
+  def setTimeout(callback: js.Function): ClassTimer = js.native
+  def setTimeout(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = js.native
   @js.native
   object console extends js.Object {
     val ALERT: `1` = js.native
@@ -130,9 +132,9 @@ object globalMod extends js.Object {
     val execPath: String = js.native
     val exitCode: Double = js.native
     val platform: String = js.native
-    val stderr: Class_File = js.native
-    val stdin: Class_File = js.native
-    val stdout: Class_File = js.native
+    val stderr: ClassFile = js.native
+    val stdin: ClassFile = js.native
+    val stdout: ClassFile = js.native
     val version: String = js.native
     val versions: js.Object = js.native
     def chdir(directory: String): Unit = js.native
@@ -143,18 +145,18 @@ object globalMod extends js.Object {
     def hrtime(diff: js.Array[_]): js.Array[_] = js.native
     def memoryUsage(): js.Object = js.native
     def nextTick(func: js.Function, args: js.Any*): Unit = js.native
-    def open(command: String): Class_SubProcess = js.native
-    def open(command: String, args: js.Array[_]): Class_SubProcess = js.native
-    def open(command: String, args: js.Array[_], opts: js.Object): Class_SubProcess = js.native
-    def open(command: String, opts: js.Object): Class_SubProcess = js.native
+    def open(command: String): ClassSubProcess = js.native
+    def open(command: String, args: js.Array[_]): ClassSubProcess = js.native
+    def open(command: String, args: js.Array[_], opts: js.Object): ClassSubProcess = js.native
+    def open(command: String, opts: js.Object): ClassSubProcess = js.native
     def run(command: String): Double = js.native
     def run(command: String, args: js.Array[_]): Double = js.native
     def run(command: String, args: js.Array[_], opts: js.Object): Double = js.native
     def run(command: String, opts: js.Object): Double = js.native
-    def start(command: String): Class_SubProcess = js.native
-    def start(command: String, args: js.Array[_]): Class_SubProcess = js.native
-    def start(command: String, args: js.Array[_], opts: js.Object): Class_SubProcess = js.native
-    def start(command: String, opts: js.Object): Class_SubProcess = js.native
+    def start(command: String): ClassSubProcess = js.native
+    def start(command: String, args: js.Array[_]): ClassSubProcess = js.native
+    def start(command: String, args: js.Array[_], opts: js.Object): ClassSubProcess = js.native
+    def start(command: String, opts: js.Object): ClassSubProcess = js.native
     def umask(): Double = js.native
     def umask(mask: String): Double = js.native
     def umask(mask: Double): Double = js.native

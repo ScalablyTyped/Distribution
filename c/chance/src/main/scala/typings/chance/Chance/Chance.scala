@@ -1,8 +1,8 @@
 package typings.chance.Chance
 
-import typings.chance.Anon_4
-import typings.chance.Anon_Likelihood
-import typings.chance.Anon_Region
+import typings.chance.Anon4
+import typings.chance.AnonLikelihood
+import typings.chance.AnonRegion
 import typings.chance.AtLeastOneKey
 import typings.chance.chanceStrings.Friday
 import typings.chance.chanceStrings.Monday
@@ -51,13 +51,13 @@ trait Chance extends Seeded {
   def avatar(): String = js.native
   def avatar(opts: Options): String = js.native
   def bb_pin(): String = js.native
-  def birthday(): Date | String = js.native
+  def birthday(): Date = js.native
   def birthday(opts: Options): Date | String = js.native
   @JSName("birthday")
-  def birthday_Date(): Date = js.native
+  def birthday_Union(): Date | String = js.native
   // Basics
   def bool(): Boolean = js.native
-  def bool(opts: Anon_Likelihood): Boolean = js.native
+  def bool(opts: AnonLikelihood): Boolean = js.native
   // Helpers
   def capitalize(str: String): String = js.native
   // Finance
@@ -141,7 +141,7 @@ trait Chance extends Seeded {
   def geohash(opts: Options): String = js.native
   def google_analytics(): String = js.native
   def guid(): String = js.native
-  def guid(options: Anon_4): String = js.native
+  def guid(options: Anon4): String = js.native
   def hammertime(): Double = js.native
   def hash(): String = js.native
   def hash(opts: Options): String = js.native
@@ -167,9 +167,9 @@ trait Chance extends Seeded {
   def letter(): String = js.native
   def letter(opts: Options): String = js.native
   def locale(): String = js.native
-  def locale(opts: Anon_Region): String = js.native
+  def locale(opts: AnonRegion): String = js.native
   def locales(): js.Array[String] = js.native
-  def locales(opts: Anon_Region): js.Array[String] = js.native
+  def locales(opts: AnonRegion): js.Array[String] = js.native
   def longitude(): Double = js.native
   def longitude(opts: Options): Double = js.native
   def mersenne_twister(): js.Any = js.native

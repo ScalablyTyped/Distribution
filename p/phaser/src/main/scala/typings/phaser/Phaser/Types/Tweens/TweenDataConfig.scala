@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TweenDataConfig extends js.Object {
   /**
-    * Ease value data.
+    * The current propety value.
     */
   var current: js.UndefOr[Double] = js.native
   /**
@@ -29,7 +29,7 @@ trait TweenDataConfig extends js.Object {
     */
   var elapsed: js.UndefOr[Double] = js.native
   /**
-    * Ease value data.
+    * The property value at the end of the ease.
     */
   var end: js.UndefOr[Double] = js.native
   /**
@@ -72,6 +72,10 @@ trait TweenDataConfig extends js.Object {
     */
   var key: String = js.native
   /**
+    * The previous property value.
+    */
+  var previous: js.UndefOr[Double] = js.native
+  /**
     * Between 0 and 1 showing completion of this TweenData.
     */
   var progress: js.UndefOr[Double] = js.native
@@ -88,7 +92,7 @@ trait TweenDataConfig extends js.Object {
     */
   var repeatDelay: js.UndefOr[Double] = js.native
   /**
-    * Ease value data.
+    * The property value at the start of the ease.
     */
   var start: js.UndefOr[Double] = js.native
   /**

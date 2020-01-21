@@ -1,13 +1,13 @@
 package typings.ol.sourceVectorTileMod
 
 import typings.ol.extentMod.Extent
+import typings.ol.olTileMod.LoadFunction
+import typings.ol.olTileMod.Tile
+import typings.ol.olTileMod.UrlFunction
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
 import typings.ol.sourceSourceMod.AttributionLike
-import typings.ol.sourceStateMod.State
-import typings.ol.tileMod.LoadFunction
-import typings.ol.tileMod.Tile
-import typings.ol.tileMod.UrlFunction
+import typings.ol.stateMod.State
 import typings.ol.tilecoordMod.TileCoord
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,13 +18,13 @@ trait Options extends js.Object {
   var attributionsCollapsible: js.UndefOr[Boolean] = js.undefined
   var cacheSize: js.UndefOr[Double] = js.undefined
   var extent: js.UndefOr[Extent] = js.undefined
-  var format: js.UndefOr[typings.ol.formatFeatureMod.default] = js.undefined
+  var format: js.UndefOr[typings.ol.featureMod.default] = js.undefined
   var maxZoom: js.UndefOr[Double] = js.undefined
   var minZoom: js.UndefOr[Double] = js.undefined
   var overlaps: js.UndefOr[Boolean] = js.undefined
   var projection: js.UndefOr[ProjectionLike] = js.undefined
   var state: js.UndefOr[State] = js.undefined
-  var tileClass: js.UndefOr[typings.ol.vectorTileMod.default] = js.undefined
+  var tileClass: js.UndefOr[typings.ol.olVectorTileMod.default] = js.undefined
   var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.undefined
   var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
   var tileSize: js.UndefOr[Double | Size] = js.undefined
@@ -43,17 +43,17 @@ object Options {
     attributionsCollapsible: js.UndefOr[Boolean] = js.undefined,
     cacheSize: Int | Double = null,
     extent: Extent = null,
-    format: typings.ol.formatFeatureMod.default = null,
+    format: typings.ol.featureMod.default = null,
     maxZoom: Int | Double = null,
     minZoom: Int | Double = null,
     overlaps: js.UndefOr[Boolean] = js.undefined,
     projection: ProjectionLike = null,
     state: State = null,
-    tileClass: typings.ol.vectorTileMod.default = null,
+    tileClass: typings.ol.olVectorTileMod.default = null,
     tileGrid: typings.ol.tilegridTileGridMod.default = null,
     tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     tileSize: Double | Size = null,
-    tileUrlFunction: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => String = null,
+    tileUrlFunction: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projectionMod.default) => String = null,
     transition: Int | Double = null,
     url: String = null,
     urls: js.Array[String] = null,

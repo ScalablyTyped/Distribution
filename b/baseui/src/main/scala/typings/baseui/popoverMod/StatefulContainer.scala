@@ -2,7 +2,7 @@ package typings.baseui.popoverMod
 
 import typings.baseui.baseuiStrings.close
 import typings.baseui.baseuiStrings.open
-import typings.react.reactMod.Component
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

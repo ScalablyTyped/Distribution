@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   *
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.widget._CalendarMonthYear because Inheritance from two classes. Inlined  */ @JSGlobal("dojox.widget.MonthAndYearlyCalendar")
+- typings.dojo.dojox.widget.CalendarMonthYear because Inheritance from two classes. Inlined  */ @JSGlobal("dojox.widget.MonthAndYearlyCalendar")
 @js.native
-class MonthAndYearlyCalendar () extends _CalendarBase
+class MonthAndYearlyCalendar () extends CalendarBase
 

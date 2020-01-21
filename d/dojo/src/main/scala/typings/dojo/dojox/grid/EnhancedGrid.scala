@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.pluginMgr
 import typings.dojo.dojoStrings.plugins
 import typings.std.HTMLElement
@@ -80,7 +80,7 @@ class EnhancedGrid () extends DataGrid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_plugins(
     property: plugins,
@@ -90,6 +90,6 @@ class EnhancedGrid () extends DataGrid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

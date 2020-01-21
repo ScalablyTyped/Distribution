@@ -20,6 +20,16 @@ object path extends js.Object {
   val delimiter: String = js.native
   /**
     * @function
+    * @name pc.path.extractPath
+    * @description Return the path without file name. if path is relative path, start with period.
+    * @param {String} s The full path to process.
+    * @returns {String} The path without a last element from list split by slash.
+    * @example
+    * pc.path.extractPath("path/to/file.txt"); // returns "./path/to"
+    */
+  def extractPath(s: String): String = js.native
+  /**
+    * @function
     * @name pc.path.getBasename
     * @description Return the basename of the path. That is the second element of the pair returned by
     * passing path into {@link pc.path.split}.
@@ -38,6 +48,33 @@ object path extends js.Object {
     * @returns {String} The directory part of the path.
     */
   def getDirectory(path: String): String = js.native
+  /**
+    * @function
+    * @name pc.path.getExtension
+    * @description Return the extension of the path. Pop the last value of a list after path is split by question mark and comma.
+    * @param {String} path The path to process.
+    * @returns {String} The extension.
+    * @example
+    * pc.path.getExtension("/path/to/file.txt"); // returns ".txt"
+    * pc.path.getExtension("/path/to/file.jpg"); // returns ".jpg"
+    * pc.path.getExtension("/path/to/file.txt?function=getExtension"); // returns ".txt"
+    */
+  def getExtension(path: String): String = js.native
+  /**
+    * @function
+    * @name pc.path.isRelativePath
+    * @description Check if a string s is relative path.
+    * @param {String} s The path to process.
+    * @returns {Boolean} True if s doesn't start with slash and doesn't include colon and double slash.
+    * @example
+    * pc.path.isRelativePath("file.txt"); // returns true
+    * pc.path.isRelativePath("path/to/file.txt"); // returns true
+    * pc.path.isRelativePath("./path/to/file.txt"); // returns true
+    * pc.path.isRelativePath("../path/to/file.jpg"); // returns true
+    * pc.path.isRelativePath("/path/to/file.jpg"); // returns false
+    * pc.path.isRelativePath("http://path/to/file.jpg"); // returns false
+    */
+  def isRelativePath(s: String): Boolean = js.native
   /**
     * @function
     * @name pc.path.join

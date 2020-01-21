@@ -13,7 +13,7 @@ import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
 import typings.node.tlsMod.TlsOptions
-import typings.node.urlMod.URL
+import typings.node.urlMod.URL_
 import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -43,7 +43,7 @@ object SecureServerSessionOptions {
     cert: String | Buffer | (js.Array[String | Buffer]) = null,
     ciphers: String = null,
     clientCertEngine: String = null,
-    createConnection: (/* authority */ URL, SecureServerSessionOptions) => Duplex = null,
+    createConnection: (/* authority */ URL_, SecureServerSessionOptions) => Duplex = null,
     crl: String | Buffer | (js.Array[String | Buffer]) = null,
     dhparam: String | Buffer = null,
     ecdhCurve: String = null,

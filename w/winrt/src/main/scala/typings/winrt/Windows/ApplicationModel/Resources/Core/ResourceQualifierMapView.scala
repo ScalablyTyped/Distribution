@@ -1,6 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Resources.Core
 
-import typings.winrt.Anon_First
+import typings.winrt.AnonFirst
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrt.Windows.Foundation.Collections.IMapView
@@ -20,6 +20,6 @@ class ResourceQualifierMapView () extends IMapView[String, String] {
   /* CompleteClass */
   override def lookup(key: String): String = js.native
   /* CompleteClass */
-  override def split(): Anon_First[String, String] = js.native
+  override def split(): AnonFirst[String, String] = js.native
 }
 

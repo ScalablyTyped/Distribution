@@ -1,10 +1,10 @@
 package typings.cypress
 
-import typings.cypress.Mocha.HookFunction
-import typings.cypress.Mocha.PendingSuiteFunction
-import typings.cypress.Mocha.PendingTestFunction
-import typings.cypress.Mocha.SuiteFunction
-import typings.cypress.Mocha.TestFunction
+import typings.cypress.Mocha_.HookFunction
+import typings.cypress.Mocha_.PendingSuiteFunction
+import typings.cypress.Mocha_.PendingTestFunction
+import typings.cypress.Mocha_.SuiteFunction
+import typings.cypress.Mocha_.TestFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

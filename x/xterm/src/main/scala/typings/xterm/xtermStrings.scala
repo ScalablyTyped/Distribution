@@ -1,8 +1,8 @@
 package typings.xterm
 
-import typings.xterm.xtermMod.FontWeight
-import typings.xterm.xtermMod.LogLevel
-import typings.xterm.xtermMod.RendererType
+import typings.xterm.mod.FontWeight
+import typings.xterm.mod.LogLevel
+import typings.xterm.mod.RendererType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

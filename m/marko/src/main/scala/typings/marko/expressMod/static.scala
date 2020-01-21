@@ -1,8 +1,8 @@
 package typings.marko.expressMod
 
 import typings.express.Typeofm
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Handler
-import typings.serveDashStatic.serveDashStaticMod.ServeStaticOptions
+import typings.expressServeStaticCore.mod.Handler
+import typings.serveStatic.mod.ServeStaticOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

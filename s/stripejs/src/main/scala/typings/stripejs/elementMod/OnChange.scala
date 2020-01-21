@@ -1,6 +1,6 @@
 package typings.stripejs.elementMod
 
-import typings.stripejs.stripejsMod.StripeError
+import typings.stripejs.mod.StripeError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

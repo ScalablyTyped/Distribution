@@ -11,5 +11,5 @@ package object compression {
     *
     * @param n
     */
-  type splay = js.Function1[/* n */ js.Any, Unit]
+  type splay = js.Function1[/* n */ js.Any, scala.Unit]
 }

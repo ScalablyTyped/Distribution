@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jodata {
-  type jo = jo_
+  type jo = typings.jodata.jo_
 }

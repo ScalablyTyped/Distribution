@@ -1,7 +1,7 @@
 package typings.wepy.pageMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.wepy.Anon_Delta
+import typings.wepy.AnonDelta
 import typings.wepy.componentMod.component
 import typings.wepy.wepyStrings.navigateTo
 import typings.wepy.wepyStrings.redirectTo
@@ -17,7 +17,7 @@ trait page extends component {
   @JSName("$back")
   def $back(delta: Double): js.Any = js.native
   @JSName("$back")
-  def $back(delta: Anon_Delta): js.Any = js.native
+  def $back(delta: AnonDelta): js.Any = js.native
   @JSName("$init")
   def $init(wxpage: js.Any, $parent: js.Any): js.Any = js.native
   @JSName("$preload")

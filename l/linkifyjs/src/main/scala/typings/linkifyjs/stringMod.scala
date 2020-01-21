@@ -1,6 +1,6 @@
 package typings.linkifyjs
 
-import typings.linkifyjs.linkifyjsMod.Options
+import typings.linkifyjs.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

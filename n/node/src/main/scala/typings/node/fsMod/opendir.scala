@@ -14,7 +14,9 @@ object opendir extends js.Object {
     options: OpenDirOptions,
     cb: js.Function2[/* err */ ErrnoException | Null, /* dir */ Dir, Unit]
   ): Unit = js.native
-  def __promisify__(path: String): js.Promise[Dir] = js.native
-  def __promisify__(path: String, options: OpenDirOptions): js.Promise[Dir] = js.native
+  @JSName("__promisify__")
+  def promisify(path: String): js.Promise[Dir] = js.native
+  @JSName("__promisify__")
+  def promisify(path: String, options: OpenDirOptions): js.Promise[Dir] = js.native
 }
 

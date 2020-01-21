@@ -1,9 +1,9 @@
 package typings.nblas
 
-import typings.nblas.builtTypesMod.MatrixLeftRight
-import typings.nblas.builtTypesMod.MatrixTrans
-import typings.nblas.builtTypesMod.MatrixUnit
-import typings.nblas.builtTypesMod.MatrixUpperLower
+import typings.nblas.typesMod.MatrixLeftRight
+import typings.nblas.typesMod.MatrixTrans
+import typings.nblas.typesMod.MatrixUnit
+import typings.nblas.typesMod.MatrixUpperLower
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

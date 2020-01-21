@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait StructureExtractorConstructor extends _ConstructorById[StructureExtractor]
+trait StructureExtractorConstructor extends ConstructorById[StructureExtractor]
 

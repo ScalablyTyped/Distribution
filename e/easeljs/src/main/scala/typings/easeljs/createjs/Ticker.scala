@@ -1,8 +1,8 @@
 package typings.easeljs.createjs
 
-import typings.createjsDashLib.createjs.Event
-import typings.easeljs.Anon_EventObj
-import typings.easeljs.Anon_EventObjHandleEvent
+import typings.createjsLib.createjs.Event
+import typings.easeljs.AnonEventObj
+import typings.easeljs.AnonEventObjHandleEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,10 +34,10 @@ object Ticker extends js.Object {
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     useCapture: Boolean
   ): js.Function = js.native
-  def addEventListener(`type`: String, listener: Anon_EventObj): js.Object = js.native
-  def addEventListener(`type`: String, listener: Anon_EventObjHandleEvent): js.Object = js.native
-  def addEventListener(`type`: String, listener: Anon_EventObjHandleEvent, useCapture: Boolean): js.Object = js.native
-  def addEventListener(`type`: String, listener: Anon_EventObj, useCapture: Boolean): js.Object = js.native
+  def addEventListener(`type`: String, listener: AnonEventObj): js.Object = js.native
+  def addEventListener(`type`: String, listener: AnonEventObjHandleEvent): js.Object = js.native
+  def addEventListener(`type`: String, listener: AnonEventObjHandleEvent, useCapture: Boolean): js.Object = js.native
+  def addEventListener(`type`: String, listener: AnonEventObj, useCapture: Boolean): js.Object = js.native
   // EventDispatcher mixins
   def addEventListener(`type`: String, listener: Stage): Stage = js.native
   def addEventListener(`type`: String, listener: Stage, useCapture: Boolean): Stage = js.native
@@ -80,10 +80,10 @@ object Ticker extends js.Object {
     useCapture: Boolean
   ): Unit = js.native
   def off(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-  def off(`type`: String, listener: Anon_EventObj): Unit = js.native
-  def off(`type`: String, listener: Anon_EventObjHandleEvent): Unit = js.native
-  def off(`type`: String, listener: Anon_EventObjHandleEvent, useCapture: Boolean): Unit = js.native
-  def off(`type`: String, listener: Anon_EventObj, useCapture: Boolean): Unit = js.native
+  def off(`type`: String, listener: AnonEventObj): Unit = js.native
+  def off(`type`: String, listener: AnonEventObjHandleEvent): Unit = js.native
+  def off(`type`: String, listener: AnonEventObjHandleEvent, useCapture: Boolean): Unit = js.native
+  def off(`type`: String, listener: AnonEventObj, useCapture: Boolean): Unit = js.native
    // It is necessary for "arguments.callee"
   def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
   def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = js.native
@@ -108,25 +108,25 @@ object Ticker extends js.Object {
     data: js.Any,
     useCapture: Boolean
   ): js.Function = js.native
-  def on(`type`: String, listener: Anon_EventObj): js.Object = js.native
-  def on(`type`: String, listener: Anon_EventObjHandleEvent): js.Object = js.native
-  def on(`type`: String, listener: Anon_EventObjHandleEvent, scope: js.Object): js.Object = js.native
-  def on(`type`: String, listener: Anon_EventObjHandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
-  def on(`type`: String, listener: Anon_EventObjHandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObj): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObjHandleEvent): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObjHandleEvent, scope: js.Object): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObjHandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObjHandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
   def on(
     `type`: String,
-    listener: Anon_EventObjHandleEvent,
+    listener: AnonEventObjHandleEvent,
     scope: js.Object,
     once: Boolean,
     data: js.Any,
     useCapture: Boolean
   ): js.Object = js.native
-  def on(`type`: String, listener: Anon_EventObj, scope: js.Object): js.Object = js.native
-  def on(`type`: String, listener: Anon_EventObj, scope: js.Object, once: Boolean): js.Object = js.native
-  def on(`type`: String, listener: Anon_EventObj, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObj, scope: js.Object): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObj, scope: js.Object, once: Boolean): js.Object = js.native
+  def on(`type`: String, listener: AnonEventObj, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
   def on(
     `type`: String,
-    listener: Anon_EventObj,
+    listener: AnonEventObj,
     scope: js.Object,
     once: Boolean,
     data: js.Any,
@@ -142,10 +142,10 @@ object Ticker extends js.Object {
     useCapture: Boolean
   ): Unit = js.native
   def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = js.native
-  def removeEventListener(`type`: String, listener: Anon_EventObj): Unit = js.native
-  def removeEventListener(`type`: String, listener: Anon_EventObjHandleEvent): Unit = js.native
-  def removeEventListener(`type`: String, listener: Anon_EventObjHandleEvent, useCapture: Boolean): Unit = js.native
-  def removeEventListener(`type`: String, listener: Anon_EventObj, useCapture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: AnonEventObj): Unit = js.native
+  def removeEventListener(`type`: String, listener: AnonEventObjHandleEvent): Unit = js.native
+  def removeEventListener(`type`: String, listener: AnonEventObjHandleEvent, useCapture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: AnonEventObj, useCapture: Boolean): Unit = js.native
   def reset(): Unit = js.native
   /**
     * @deprecated - use the 'framerate' property instead

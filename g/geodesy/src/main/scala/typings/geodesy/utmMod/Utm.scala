@@ -1,6 +1,6 @@
 package typings.geodesy.utmMod
 
-import typings.geodesy.geodesyMod.Datum
+import typings.geodesy.mod.Datum
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait Utm extends js.Object {
   var northing: Double = js.native
   var scale: Double | Null = js.native
   var zone: Double = js.native
-  def toLatLon(): LatLon_Utm = js.native
+  def toLatLon(): LatLonUtm = js.native
   def toString(digits: Double): String = js.native
 }
 

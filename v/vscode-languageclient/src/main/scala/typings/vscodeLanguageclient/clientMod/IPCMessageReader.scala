@@ -1,0 +1,16 @@
+package typings.vscodeLanguageclient.clientMod
+
+import typings.node.NodeJS.Process
+import typings.node.childProcessMod.ChildProcess
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("vscode-languageclient/lib/client", "IPCMessageReader")
+@js.native
+class IPCMessageReader protected ()
+  extends typings.vscodeLanguageserverProtocol.mod.IPCMessageReader {
+  def this(process: Process) = this()
+  def this(process: ChildProcess) = this()
+}
+

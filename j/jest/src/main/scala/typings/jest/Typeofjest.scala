@@ -1,14 +1,14 @@
 package typings.jest
 
-import typings.jest.jestMod.jasmine.CustomMatcherFactories
-import typings.jest.jestMod.jest.ArgsType
-import typings.jest.jestMod.jest.FunctionPropertyNames
-import typings.jest.jestMod.jest.Mock
-import typings.jest.jestMod.jest.MockOptions
-import typings.jest.jestMod.jest.NonFunctionPropertyNames
-import typings.jest.jestMod.jest.SpyInstance
 import typings.jest.jestStrings.get
 import typings.jest.jestStrings.set
+import typings.jest.mod.jasmine.CustomMatcherFactories
+import typings.jest.mod.jest.ArgsType
+import typings.jest.mod.jest.FunctionPropertyNames
+import typings.jest.mod.jest.MockOptions
+import typings.jest.mod.jest.Mock_
+import typings.jest.mod.jest.NonFunctionPropertyNames
+import typings.jest.mod.jest.SpyInstance
 import typings.std.Required
 import typings.std.ReturnType
 import scala.scalajs.js
@@ -80,13 +80,13 @@ trait Typeofjest extends js.Object {
   /**
     * Creates a mock function. Optionally takes a mock implementation.
     */
-  def fn(): Mock[_, _] = js.native
-  def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
+  def fn(): Mock_[_, _] = js.native
+  def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): Mock_[T, Y] = js.native
   /**
     * Creates a mock function. Optionally takes a mock implementation.
     */
   @JSName("fn")
-  def fn_TY_ArrayWildcard[T, Y /* <: js.Array[_] */](): Mock[T, Y] = js.native
+  def fn_TY_ArrayWildcard[T, Y /* <: js.Array[_] */](): Mock_[T, Y] = js.native
   /**
     * Use the automatic mocking system to generate a mocked version of the given module.
     */

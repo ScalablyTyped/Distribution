@@ -1,6 +1,6 @@
 package typings.pacote
 
-import typings.pacote.pacoteMod.Options
+import typings.pacote.mod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

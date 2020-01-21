@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.tileMod.LoadFunction
-import typings.ol.tileMod.Options
+import typings.ol.olTileMod.LoadFunction
+import typings.ol.olTileMod.Options
 import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import typings.std.HTMLCanvasElement
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object imageTileMod extends js.Object {
   @js.native
   trait ImageTile
-    extends typings.ol.tileMod.default {
+    extends typings.ol.olTileMod.default {
     def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
   }
   

@@ -1,10 +1,10 @@
 package typings.leaflet
 
-import typings.leaflet.leafletMod.ControlPosition
-import typings.leaflet.leafletMod.Direction
-import typings.leaflet.leafletMod.FillRule
-import typings.leaflet.leafletMod.LineCapShape
-import typings.leaflet.leafletMod.LineJoinShape
+import typings.leaflet.mod.ControlPosition
+import typings.leaflet.mod.Direction
+import typings.leaflet.mod.FillRule
+import typings.leaflet.mod.LineCapShape
+import typings.leaflet.mod.LineJoinShape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

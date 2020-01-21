@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "global-modules"
-version := "2.0-dt-20181225Z-14ca5d"
+version := "2.0-dt-20181225Z-1d1511"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

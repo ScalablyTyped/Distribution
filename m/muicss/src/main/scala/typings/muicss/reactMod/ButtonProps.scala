@@ -1,25 +1,25 @@
 package typings.muicss.reactMod
 
-import typings.react.Anon_Html
-import typings.react.reactMod.AnimationEvent
-import typings.react.reactMod.Booleanish
-import typings.react.reactMod.ButtonHTMLAttributes
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.CompositionEvent
-import typings.react.reactMod.DragEvent
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.PointerEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.SyntheticEvent
-import typings.react.reactMod.TouchEvent
-import typings.react.reactMod.TransitionEvent
-import typings.react.reactMod.UIEvent
-import typings.react.reactMod.WheelEvent
+import typings.react.AnonHtml
+import typings.react.mod.AnimationEvent
+import typings.react.mod.Booleanish
+import typings.react.mod.ButtonHTMLAttributes
+import typings.react.mod.CSSProperties
+import typings.react.mod.ClipboardEvent
+import typings.react.mod.CompositionEvent
+import typings.react.mod.DragEvent
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TouchEvent
+import typings.react.mod.TransitionEvent
+import typings.react.mod.UIEvent
+import typings.react.mod.WheelEvent
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -68,7 +68,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -141,7 +141,7 @@ object ButtonProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -166,15 +166,15 @@ object ButtonProps {
     itemType: String = null,
     lang: String = null,
     name: String = null,
-    onAbort: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onAbort: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLButtonElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLButtonElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLButtonElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLButtonElement] => Unit = null,
     onBlur: FocusEvent[HTMLButtonElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onChange: FormEvent[HTMLButtonElement] => Unit = null,
     onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLButtonElement] => Unit = null,
@@ -192,21 +192,21 @@ object ButtonProps {
     onDragOver: DragEvent[HTMLButtonElement] => Unit = null,
     onDragStart: DragEvent[HTMLButtonElement] => Unit = null,
     onDrop: DragEvent[HTMLButtonElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onEnded: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onError: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onFocus: FocusEvent[HTMLButtonElement] => Unit = null,
     onInput: FormEvent[HTMLButtonElement] => Unit = null,
     onInvalid: FormEvent[HTMLButtonElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLButtonElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLButtonElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLButtonElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onLoad: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onMouseDown: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
@@ -215,9 +215,9 @@ object ButtonProps {
     onMouseOver: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLButtonElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onPause: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onPlay: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onPointerCancel: PointerEvent[HTMLButtonElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLButtonElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLButtonElement] => Unit = null,
@@ -226,24 +226,24 @@ object ButtonProps {
     onPointerOut: PointerEvent[HTMLButtonElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLButtonElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLButtonElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onProgress: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLButtonElement] => Unit = null,
     onScroll: UIEvent[HTMLButtonElement] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onSelect: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onStalled: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onSubmit: FormEvent[HTMLButtonElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onTouchCancel: TouchEvent[HTMLButtonElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLButtonElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLButtonElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLButtonElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLButtonElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLButtonElement, Event] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLButtonElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLButtonElement] => Unit = null,
     placeholder: String = null,
     prefix: String = null,

@@ -2,68 +2,68 @@ package typings.fluxxor
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.fluxxor.fluxxorStrings.input
-import typings.react.Anon_Children
-import typings.react.Anon_Default
-import typings.react.experimentalMod.reactMod.SuspenseConfig
-import typings.react.experimentalMod.reactMod.SuspenseListProps
-import typings.react.experimentalMod.reactMod.TimeoutConfig
-import typings.react.experimentalMod.reactMod.TransitionStartFunction
-import typings.react.reactMod.Attributes
-import typings.react.reactMod.CElement
-import typings.react.reactMod.CFactory
-import typings.react.reactMod.ClassAttributes
-import typings.react.reactMod.ClassType
-import typings.react.reactMod.ClassicComponent
-import typings.react.reactMod.ClassicComponentClass
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentProps
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.Context
-import typings.react.reactMod.DOMAttributes
-import typings.react.reactMod.DOMElement
-import typings.react.reactMod.DOMFactory
-import typings.react.reactMod.DependencyList
-import typings.react.reactMod.DetailedReactHTMLElement
-import typings.react.reactMod.Dispatch
-import typings.react.reactMod.DispatchWithoutAction
-import typings.react.reactMod.EffectCallback
-import typings.react.reactMod.ExoticComponent
-import typings.react.reactMod.Factory
-import typings.react.reactMod.ForwardRefExoticComponent
-import typings.react.reactMod.FunctionComponent
-import typings.react.reactMod.FunctionComponentElement
-import typings.react.reactMod.FunctionComponentFactory
-import typings.react.reactMod.HTMLAttributes
-import typings.react.reactMod.HTMLFactory
-import typings.react.reactMod.InputHTMLAttributes
-import typings.react.reactMod.LazyExoticComponent
-import typings.react.reactMod.MemoExoticComponent
-import typings.react.reactMod.MutableRefObject
-import typings.react.reactMod.NamedExoticComponent
-import typings.react.reactMod.ProfilerProps
-import typings.react.reactMod.PropsWithChildren
-import typings.react.reactMod.PropsWithoutRef
-import typings.react.reactMod.ReactChildren
-import typings.react.reactMod.ReactElement
-import typings.react.reactMod.ReactHTMLElement
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.ReactSVGElement
-import typings.react.reactMod.Reducer
-import typings.react.reactMod.ReducerAction
-import typings.react.reactMod.ReducerState
-import typings.react.reactMod.ReducerStateWithoutAction
-import typings.react.reactMod.ReducerWithoutAction
-import typings.react.reactMod.Ref
-import typings.react.reactMod.RefAttributes
-import typings.react.reactMod.RefForwardingComponent
-import typings.react.reactMod.RefObject
-import typings.react.reactMod.SFC
-import typings.react.reactMod.SVGAttributes
-import typings.react.reactMod.SVGFactory
-import typings.react.reactMod.SetStateAction
-import typings.react.reactMod.SuspenseProps
+import typings.react.AnonChildren
+import typings.react.AnonDefault
+import typings.react.experimentalMod.reactAugmentingMod.SuspenseConfig
+import typings.react.experimentalMod.reactAugmentingMod.SuspenseListProps
+import typings.react.experimentalMod.reactAugmentingMod.TimeoutConfig
+import typings.react.experimentalMod.reactAugmentingMod.TransitionStartFunction
+import typings.react.mod.Attributes
+import typings.react.mod.CElement
+import typings.react.mod.CFactory
+import typings.react.mod.ClassAttributes
+import typings.react.mod.ClassType
+import typings.react.mod.ClassicComponent
+import typings.react.mod.ClassicComponentClass
+import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentProps
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
+import typings.react.mod.Context
+import typings.react.mod.DOMAttributes
+import typings.react.mod.DOMElement
+import typings.react.mod.DOMFactory
+import typings.react.mod.DependencyList
+import typings.react.mod.DetailedReactHTMLElement
+import typings.react.mod.Dispatch
+import typings.react.mod.DispatchWithoutAction
+import typings.react.mod.EffectCallback
+import typings.react.mod.ExoticComponent
+import typings.react.mod.Factory
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.FunctionComponent
+import typings.react.mod.FunctionComponentElement
+import typings.react.mod.FunctionComponentFactory
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.HTMLFactory
+import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.LazyExoticComponent
+import typings.react.mod.MemoExoticComponent
+import typings.react.mod.MutableRefObject
+import typings.react.mod.NamedExoticComponent
+import typings.react.mod.ProfilerProps
+import typings.react.mod.PropsWithChildren
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.ReactChildren
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactHTMLElement
+import typings.react.mod.ReactNode
+import typings.react.mod.ReactSVGElement
+import typings.react.mod.Reducer
+import typings.react.mod.ReducerAction
+import typings.react.mod.ReducerState
+import typings.react.mod.ReducerStateWithoutAction
+import typings.react.mod.ReducerWithoutAction
+import typings.react.mod.Ref
+import typings.react.mod.RefAttributes
+import typings.react.mod.RefForwardingComponent
+import typings.react.mod.RefObject
+import typings.react.mod.SFC
+import typings.react.mod.SVGAttributes
+import typings.react.mod.SVGFactory
+import typings.react.mod.SetStateAction
+import typings.react.mod.SuspenseProps
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -79,10 +79,10 @@ trait TypeofReact extends js.Object {
   // Base component for plain JS classes
   // tslint:disable-next-line:no-empty-interface
   var Component: TypeofClassComponent = js.native
-  val Fragment: ExoticComponent[Anon_Children] = js.native
+  val Fragment: ExoticComponent[AnonChildren] = js.native
   val Profiler: ExoticComponent[ProfilerProps] = js.native
-  var PureComponent: Instantiable0[typings.react.reactMod.PureComponent[js.Object, js.Object, js.Object]] = js.native
-  val StrictMode: ExoticComponent[Anon_Children] = js.native
+  var PureComponent: Instantiable0[typings.react.mod.PureComponent[js.Object, js.Object, js.Object]] = js.native
+  val StrictMode: ExoticComponent[AnonChildren] = js.native
   /**
     * This feature is not yet available for server-side rendering.
     * Suspense support will be added in a later release.
@@ -100,18 +100,18 @@ trait TypeofReact extends js.Object {
   // DOM Element (has to be the last, because type checking stops at first overload that fits)
   def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T]): DOMElement[P, T] = js.native
   def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-  // ReactHTMLElement, less specific
-  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T]): ReactHTMLElement[T] = js.native
-  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
+  // DOM Elements
+  // ReactHTMLElement
+  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T]): DetailedReactHTMLElement[P, T] = js.native
+  def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
   // SVGElement
   def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement): ReactSVGElement = js.native
   def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: P, children: ReactNode*): ReactSVGElement = js.native
-  // DOM Elements
-  // ReactHTMLElement
+  // ReactHTMLElement, less specific
   @JSName("cloneElement")
-  def cloneElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T]): DetailedReactHTMLElement[P, T] = js.native
+  def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T]): ReactHTMLElement[T] = js.native
   @JSName("cloneElement")
-  def cloneElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
+  def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
   def createContext[T](
     // If you thought this should be optional, see
   // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
@@ -209,7 +209,7 @@ trait TypeofReact extends js.Object {
   def forwardRef[T, P](Component: RefForwardingComponent[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
   def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native
   def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = js.native
-  def `lazy`[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[Anon_Default[T]]]): LazyExoticComponent[T] = js.native
+  def `lazy`[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[AnonDefault[T]]]): LazyExoticComponent[T] = js.native
   def memo[T /* <: ComponentType[_] */](Component: T): MemoExoticComponent[T] = js.native
   def memo[T /* <: ComponentType[_] */](
     Component: T,
@@ -326,8 +326,30 @@ trait TypeofReact extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
+  // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
+  // The Flow types do have an overload for 3-ary invocation with undefined initializer.
+  // NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
+  // supertype between the reducer's return type and the initialState (or the initializer's return type),
+  // which would prevent autocompletion from ever working.
+  // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
+  // in older versions, or a regression in newer versions of the typescript completion service.
+  def useReducer[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+  /**
+    * An alternative to `useState`.
+    *
+    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
+    * multiple sub-values. It also lets you optimize performance for components that trigger deep
+    * updates because you can pass `dispatch` down instead of callbacks.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+    */
   // overload where dispatch could accept 0 arguments.
-  def useReducer[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  def useReducer[R /* <: ReducerWithoutAction[_] */, I](
+    reducer: R,
+    initializerArg: I,
+    initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
+  ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
   /**
     * An alternative to `useState`.
     *
@@ -342,7 +364,8 @@ trait TypeofReact extends js.Object {
   // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be ommitted.
   // the last overload effectively behaves as if the identity function (x => x) is the initializer.
   // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
-  def useReducer[R /* <: Reducer[_, _] */, I](
+  @JSName("useReducer")
+  def useReducer_R_ReducerWildcardWildcardI[R /* <: Reducer[_, _] */, I](
     reducer: R,
     initializerArg: (I with ReducerState[R]) | I,
     initializer: js.Function1[(/* arg */ I with ReducerState[R]) | (/* arg */ I), ReducerState[R]]
@@ -357,32 +380,9 @@ trait TypeofReact extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
-  // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
-  // The Flow types do have an overload for 3-ary invocation with undefined initializer.
-  // NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
-  // supertype between the reducer's return type and the initialState (or the initializer's return type),
-  // which would prevent autocompletion from ever working.
-  // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
-  // in older versions, or a regression in newer versions of the typescript completion service.
-  @JSName("useReducer")
-  def useReducer_R_ReducerWildcardWildcard[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
-  /**
-    * An alternative to `useState`.
-    *
-    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
-    * multiple sub-values. It also lets you optimize performance for components that trigger deep
-    * updates because you can pass `dispatch` down instead of callbacks.
-    *
-    * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
-    */
   // overload where dispatch could accept 0 arguments.
   @JSName("useReducer")
-  def useReducer_R_ReducerWithoutActionWildcardI[R /* <: ReducerWithoutAction[_] */, I](
-    reducer: R,
-    initializerArg: I,
-    initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
-  ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+  def useReducer_R_ReducerWithoutActionWildcard[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
   def useRef[T](): RefObject[T] = js.native
   // convenience overload for refs given as a ref prop as they typically start with a null value
   /**

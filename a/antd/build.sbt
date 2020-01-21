@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.26.7-9c0035"
+version := "3.26.7-9387a3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.5-ce13bd",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
-  "org.scalablytyped" %%% "moment" % "2.24.0-d25a29",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
-  "org.scalablytyped" %%% "rc-mentions" % "0.4.2-7ea273",
-  "org.scalablytyped" %%% "rc-menu" % "7.5.4-0c24f9",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
-  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190503Z-462bed",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "ant-design__create-react-context" % "0.2.5-4b0379",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-dcd929",
+  "org.scalablytyped" %%% "moment" % "2.24.0-73a0d6",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-78233f",
+  "org.scalablytyped" %%% "rc-mentions" % "0.4.2-e4d644",
+  "org.scalablytyped" %%% "rc-menu" % "7.5.4-1001c6",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-0e1ae9",
+  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190503Z-b12674",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

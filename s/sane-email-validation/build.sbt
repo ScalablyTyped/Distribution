@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sane-email-validation"
-version := "1.1-dt-20180731Z-abc0b3"
+version := "1.1-dt-20180731Z-15683b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

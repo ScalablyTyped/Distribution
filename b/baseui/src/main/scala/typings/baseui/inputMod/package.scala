@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inputMod {
-  import typings.baseui.Anon_ClearIcon
-
-  type InputOverrides = BaseInputOverrides[SharedProps] with Anon_ClearIcon
-  type StatefulInputProps = InputProps with StatefulContainerProps with js.Object
+  type InputOverrides = typings.baseui.inputMod.BaseInputOverrides[typings.baseui.inputMod.SharedProps] with typings.baseui.AnonClearIcon
+  type StatefulInputProps = typings.baseui.inputMod.InputProps with typings.baseui.inputMod.StatefulContainerProps with js.Object
 }

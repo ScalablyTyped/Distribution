@@ -1,6 +1,6 @@
 package typings.graphql.typeMod
 
-import typings.graphql.typeDefinitionMod.GraphQLWrappingType
+import typings.graphql.definitionMod.GraphQLWrappingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

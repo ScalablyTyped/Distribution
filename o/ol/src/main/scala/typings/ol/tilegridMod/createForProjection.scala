@@ -1,6 +1,6 @@
 package typings.ol.tilegridMod
 
-import typings.ol.extentCornerMod.Corner
+import typings.ol.cornerMod.Corner
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sizeMod.Size
 import typings.ol.tilegridTileGridMod.default

@@ -1,6 +1,6 @@
 package typings.canvasjs
 
-import typings.canvasjs.canvasjsMod.DashType
+import typings.canvasjs.mod.DashType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

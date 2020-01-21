@@ -6,16 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [description]
+  * Enables a Matter-enabled Game Object to be a sensor. Should be used as a mixin and not directly.
   */
 trait Sensor extends js.Object {
   /**
-    * [description]
+    * Is the body belonging to this Game Object a sensor or not?
     */
   def isSensor(): Boolean
   /**
-    * [description]
-    * @param value [description]
+    * Set the body belonging to this Game Object to be a sensor.
+    * Sensors trigger collision events, but don't react with colliding body physically.
+    * @param value `true` to set the body as a sensor, or `false` to disable it.
     */
   def setSensor(value: Boolean): GameObject
 }

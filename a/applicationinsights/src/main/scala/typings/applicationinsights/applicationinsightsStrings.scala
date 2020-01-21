@@ -1,10 +1,10 @@
 package typings.applicationinsights
 
-import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseDocumentType
-import typings.applicationinsights.outDeclarationsConstantsMod.QuickPulseType
-import typings.applicationinsights.outDeclarationsContractsConstantsMod.ConnectionStringKey
-import typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeKeys
-import typings.applicationinsights.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues
+import typings.applicationinsights.constantsMod.QuickPulseDocumentType
+import typings.applicationinsights.constantsMod.QuickPulseType
+import typings.applicationinsights.contractsConstantsMod.ConnectionStringKey
+import typings.applicationinsights.telemetryTypeMod.TelemetryTypeKeys
+import typings.applicationinsights.telemetryTypeMod.TelemetryTypeValues
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

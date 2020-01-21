@@ -1,7 +1,7 @@
 package typings.mongoose
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mongodb.mongodbMod.Binary
+import typings.mongodb.mod.Binary
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -18,6 +18,7 @@ object stat extends js.Object {
     * Asynchronous stat(2) - Get file status.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def __promisify__(path: PathLike): js.Promise[Stats] = js.native
+  @JSName("__promisify__")
+  def promisify(path: PathLike): js.Promise[Stats] = js.native
 }
 

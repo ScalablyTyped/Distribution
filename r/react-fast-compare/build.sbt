@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-fast-compare"
-version := "2.0.4-35622a"
+version := "2.0.4-18d210"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

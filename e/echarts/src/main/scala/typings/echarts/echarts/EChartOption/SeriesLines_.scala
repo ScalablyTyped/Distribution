@@ -1,12 +1,12 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
-import typings.echarts.Anon_ColorConstantSpeed
-import typings.echarts.Anon_ColorCurvenessOpacity
-import typings.echarts.Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
+import typings.echarts.AnonColorConstantSpeed
+import typings.echarts.AnonColorCurvenessOpacity
+import typings.echarts.AnonLabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
 import typings.echarts.echarts.EChartOption.SeriesLines.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,7 +30,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-lines
   */
-@JSName("SeriesLines")
 trait SeriesLines_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -176,7 +175,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.effect
     */
-  var effect: js.UndefOr[Anon_ColorConstantSpeed] = js.undefined
+  var effect: js.UndefOr[AnonColorConstantSpeed] = js.undefined
   /**
     * Emphasis style.
     *
@@ -184,7 +183,7 @@ trait SeriesLines_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-lines.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
+    AnonLabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
   ] = js.undefined
   /**
     * Index of
@@ -213,7 +212,7 @@ trait SeriesLines_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-lines.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily] = js.undefined
   /**
     * Whether to enable the optimization of large-scale lines graph.
     * It could be enabled when there is a particularly large number
@@ -244,7 +243,7 @@ trait SeriesLines_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-lines.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessOpacity] = js.undefined
+  var lineStyle: js.UndefOr[AnonColorCurvenessOpacity] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -253,7 +252,7 @@ trait SeriesLines_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-lines.markArea
     */
   var markArea: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
   ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
@@ -262,7 +261,7 @@ trait SeriesLines_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-lines.markLine
     */
   var markLine: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -271,7 +270,7 @@ trait SeriesLines_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-lines.markPoint
     */
   var markPoint: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
   ] = js.undefined
   /**
     * Series name used for displaying in
@@ -433,17 +432,17 @@ object SeriesLines_ {
     animationThreshold: Int | Double = null,
     coordinateSystem: String = null,
     data: js.Array[DataObject] = null,
-    effect: Anon_ColorConstantSpeed = null,
-    emphasis: Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
+    effect: AnonColorConstantSpeed = null,
+    emphasis: AnonLabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     geoIndex: Int | Double = null,
     id: String = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     large: js.UndefOr[Boolean] = js.undefined,
     largeThreshold: Int | Double = null,
-    lineStyle: Anon_ColorCurvenessOpacity = null,
-    markArea: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
-    markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
+    lineStyle: AnonColorCurvenessOpacity = null,
+    markArea: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    markLine: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     name: String = null,
     polyline: js.UndefOr[Boolean] = js.undefined,
     progressive: Int | Double = null,

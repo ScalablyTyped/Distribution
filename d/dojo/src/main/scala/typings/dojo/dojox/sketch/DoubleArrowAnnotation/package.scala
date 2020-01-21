@@ -9,40 +9,40 @@ package object DoubleArrowAnnotation {
     *
     * @param obj
     */
-  type apply = js.Function1[/* obj */ js.Any, Unit]
+  type apply = js.Function1[/* obj */ js.Any, scala.Unit]
   /**
     *
     */
-  type destroy = js.Function0[Unit]
-  /**
-    *
-    * @param obj
-    */
-  type draw = js.Function1[/* obj */ js.Any, Unit]
-  /**
-    *
-    */
-  type getBBox = js.Function0[Unit]
-  /**
-    *
-    */
-  type getType = js.Function0[Unit]
+  type destroy = js.Function0[scala.Unit]
   /**
     *
     * @param obj
     */
-  type initialize = js.Function1[/* obj */ js.Any, Unit]
+  type draw = js.Function1[/* obj */ js.Any, scala.Unit]
   /**
     *
     */
-  type serialize = js.Function0[Unit]
+  type getBBox = js.Function0[scala.Unit]
   /**
     *
     */
-  type `type` = js.Function0[Unit]
+  type getType = js.Function0[scala.Unit]
+  /**
+    *
+    * @param obj
+    */
+  type initialize = js.Function1[/* obj */ js.Any, scala.Unit]
+  /**
+    *
+    */
+  type serialize = js.Function0[scala.Unit]
+  /**
+    *
+    */
+  type `type` = js.Function0[scala.Unit]
   /**
     *
     * @param pct
     */
-  type zoom = js.Function1[/* pct */ js.Any, Unit]
+  type zoom = js.Function1[/* pct */ js.Any, scala.Unit]
 }

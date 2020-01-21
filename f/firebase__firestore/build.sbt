@@ -1,19 +1,20 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore"
-version := "1.9.2-e6003a"
+version := "1.9.3-6041d4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.5.0-367dda",
-  "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.1-2eb978",
-  "org.scalablytyped" %%% "firebase__component" % "0.1.2-159b27",
-  "org.scalablytyped" %%% "firebase__firestore-types" % "1.9.0-e04567",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.37-94372a",
-  "org.scalablytyped" %%% "grpc" % "1.21.1-fb81fc",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-2c34cf",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "firebase__app-types" % "0.5.0-cf5c8a",
+  "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.1-6b1f24",
+  "org.scalablytyped" %%% "firebase__component" % "0.1.2-e5feb3",
+  "org.scalablytyped" %%% "firebase__firestore-types" % "1.9.0-fd0802",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.37-3b40cf",
+  "org.scalablytyped" %%% "grpc" % "1.21.1-97a911",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-d8aa30",
+  "org.scalablytyped" %%% "std" % "3.7-96076c",
+  "org.scalablytyped" %%% "typescript" % "3.7.5-6c2ac7")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

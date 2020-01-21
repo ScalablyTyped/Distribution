@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait KoLiteActivity extends js.Object {
   var defaults: KoLiteActivityOptions = js.native
   def apply(options: KoLiteActivityOptions): JQuery = js.native
-  def getOpacity(options: Anon_Opacity, i: Double): Double = js.native
+  def getOpacity(options: AnonOpacity, i: Double): Double = js.native
 }
 

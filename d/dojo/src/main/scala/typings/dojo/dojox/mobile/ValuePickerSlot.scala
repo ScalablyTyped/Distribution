@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.items
 import typings.dojo.dojoStrings.key
 import typings.dojo.dojoStrings.labelFrom
@@ -17,7 +17,7 @@ import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.tabIndex
 import typings.dojo.dojoStrings.value
 import typings.dojo.dojoStrings.zeroPad
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +33,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mobile.ValuePickerSlot")
 @js.native
-class ValuePickerSlot () extends _WidgetBase {
+class ValuePickerSlot () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -157,13 +157,13 @@ class ValuePickerSlot () extends _WidgetBase {
     *
     * @param e
     */
-  def onChange(e: Event): Unit = js.native
+  def onChange(e: Event_): Unit = js.native
   /**
     * User defined function to handle clicks
     *
     * @param e
     */
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event_): Unit = js.native
   /**
     * Track specified handles and remove/destroy them when this instance is destroyed, unless they were
     * already removed/destroyed manually.
@@ -225,7 +225,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_key(
     property: key,
@@ -235,7 +235,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelFrom(
     property: labelFrom,
@@ -245,7 +245,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelTo(
     property: labelTo,
@@ -255,7 +255,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labels(
     property: labels,
@@ -265,7 +265,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minusBtnLabel(
     property: minusBtnLabel,
@@ -275,7 +275,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minusBtnLabelRef(
     property: minusBtnLabelRef,
@@ -285,7 +285,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_plusBtnLabel(
     property: plusBtnLabel,
@@ -295,7 +295,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_plusBtnLabelRef(
     property: plusBtnLabelRef,
@@ -305,7 +305,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_readOnly(
     property: readOnly,
@@ -315,7 +315,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_step(
     property: step,
@@ -325,7 +325,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tabIndex(
     property: tabIndex,
@@ -335,7 +335,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -345,7 +345,7 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_zeroPad(
     property: zeroPad,
@@ -355,6 +355,6 @@ class ValuePickerSlot () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

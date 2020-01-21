@@ -1,6 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.sharepoint.Anon_Cell
+import typings.sharepoint.AnonCell
 import typings.std.HTMLElement
 import typings.std.HTMLTableCellElement
 import scala.scalajs.js
@@ -15,7 +15,7 @@ class Style () extends js.Object
 @JSGlobal("SP.JsGrid.Style")
 @js.native
 object Style extends js.Object {
-  var Type: Anon_Cell = js.native
+  var Type: AnonCell = js.native
   def ApplyCellStyle(td: HTMLTableCellElement, style: js.Any): Unit = js.native
   def ApplyColumnContextMenuStyle(domObj: HTMLElement, style: js.Any): Unit = js.native
   def ApplyCornerHeaderBorderStyle(domObj: HTMLElement, colStyle: js.Any, rowStyle: js.Any): Unit = js.native

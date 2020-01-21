@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Document")
 @js.native
-class DocumentCls () extends Document {
+class DocumentCls () extends Document_ {
   /* CompleteClass */
   override val activeElement: Element | Null = js.native
   /**

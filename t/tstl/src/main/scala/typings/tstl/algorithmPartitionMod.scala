@@ -1,41 +1,33 @@
 package typings.tstl
 
-import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.utilityPairMod.Pair
+import typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer
+import typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer.IteratorType
+import typings.tstl.iforwardcontainerMod.IForwardContainer
+import typings.tstl.iforwardcontainerMod.IForwardContainer.ValueType
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.pairMod.Pair
+import typings.tstl.unaryPredicatorMod.UnaryPredicator
+import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl/algorithm/partition", JSImport.Namespace)
+@JSImport("tstl/ranges/algorithm/partition", JSImport.Namespace)
 @js.native
 object algorithmPartitionMod extends js.Object {
-  def is_partitioned[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](
-    first: ForwardIterator,
-    last: ForwardIterator,
-    pred: js.Function1[/* x */ ValueType[ForwardIterator], Boolean]
-  ): Boolean = js.native
-  def partition[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](
-    first: BidirectionalIterator,
-    last: BidirectionalIterator,
-    pred: js.Function1[/* x */ ValueType[BidirectionalIterator], Boolean]
-  ): BidirectionalIterator = js.native
-  def partition_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator1 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator1>> */ js.Any */, OutputIterator2 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator2>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
+  @JSName("is_partitioned")
+  def isPartitioned[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): Boolean = js.native
+  def partition[Range /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */](range: Range, pred: UnaryPredicator[ValueType[Range]]): IteratorType[Range] = js.native
+  @JSName("partition_copy")
+  def partitionCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator1 /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator1]] */, OutputIterator2 /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator2]] */](
+    range: Range,
     output_true: OutputIterator1,
     output_false: OutputIterator2,
-    pred: js.Function1[/* val */ ValueType[InputIterator], ValueType[InputIterator]]
+    pred: UnaryPredicator[ValueType[Range]]
   ): Pair[OutputIterator1, OutputIterator2] = js.native
-  def partition_point[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](
-    first: ForwardIterator,
-    last: ForwardIterator,
-    pred: js.Function1[/* x */ ValueType[ForwardIterator], Boolean]
-  ): ForwardIterator = js.native
-  def stable_partition[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](
-    first: BidirectionalIterator,
-    last: BidirectionalIterator,
-    pred: js.Function1[/* x */ ValueType[BidirectionalIterator], Boolean]
-  ): BidirectionalIterator = js.native
+  @JSName("partition_point")
+  def partitionPoint[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): typings.tstl.iforwardcontainerMod.IForwardContainer.IteratorType[Range] = js.native
+  @JSName("stable_partition")
+  def stablePartition[Range /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */](range: Range, pred: UnaryPredicator[ValueType[Range]]): IteratorType[Range] = js.native
 }
 

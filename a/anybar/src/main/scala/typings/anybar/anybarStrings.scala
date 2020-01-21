@@ -1,6 +1,6 @@
 package typings.anybar
 
-import typings.anybar.anybarMod.AnybarStatus
+import typings.anybar.mod.AnybarStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

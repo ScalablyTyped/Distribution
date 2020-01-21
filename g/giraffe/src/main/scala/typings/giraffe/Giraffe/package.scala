@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Giraffe {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type AppMap = StringDictionary[App]
-  type StringMap = StringDictionary[String]
-  type ViewMap[TModel /* <: Model */] = StringDictionary[View[TModel]]
+  type AppMap = org.scalablytyped.runtime.StringDictionary[typings.giraffe.Giraffe.App_]
+  type StringMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type ViewMap[TModel /* <: typings.giraffe.Giraffe.Model */] = org.scalablytyped.runtime.StringDictionary[typings.giraffe.Giraffe.View[TModel]]
 }

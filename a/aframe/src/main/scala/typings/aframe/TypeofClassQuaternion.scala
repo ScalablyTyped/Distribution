@@ -1,7 +1,7 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.three.threeMod.Quaternion
+import typings.three.mod.Quaternion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,11 +12,11 @@ trait TypeofClassQuaternion extends Instantiable0[Quaternion] {
   	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
   	 */
   def slerp(
-    qa: typings.three.srcMathQuaternionMod.Quaternion,
-    qb: typings.three.srcMathQuaternionMod.Quaternion,
-    qm: typings.three.srcMathQuaternionMod.Quaternion,
+    qa: typings.three.quaternionMod.Quaternion,
+    qb: typings.three.quaternionMod.Quaternion,
+    qm: typings.three.quaternionMod.Quaternion,
     t: Double
-  ): typings.three.srcMathQuaternionMod.Quaternion = js.native
+  ): typings.three.quaternionMod.Quaternion = js.native
   def slerpFlat(
     dst: js.Array[Double],
     dstOffset: Double,
@@ -25,6 +25,6 @@ trait TypeofClassQuaternion extends Instantiable0[Quaternion] {
     src1: js.Array[Double],
     stcOffset1: Double,
     t: Double
-  ): typings.three.srcMathQuaternionMod.Quaternion = js.native
+  ): typings.three.quaternionMod.Quaternion = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-next-id"
-version := "1.0-dt-20180507Z-a9236d"
+version := "1.0-dt-20180507Z-b12ab7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

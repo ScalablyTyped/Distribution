@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlZoomToExtentMod.Options
-import typings.ol.controlZoomToExtentMod.default
+import typings.ol.zoomToExtentMod.Options
+import typings.ol.zoomToExtentMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

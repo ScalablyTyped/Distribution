@@ -22,16 +22,24 @@ import scala.scalajs.js.annotation._
 @JSImport("console", JSImport.Namespace)
 @js.native
 object consoleMod extends js.Object {
-  val ALERT: `1` = js.native
-  val CRIT: `2` = js.native
-  val DEBUG: `7` = js.native
-  val ERROR: `3` = js.native
+  @JSName("ALERT")
+  val ALERT_ : `1` = js.native
+  @JSName("CRIT")
+  val CRIT_ : `2` = js.native
+  @JSName("DEBUG")
+  val DEBUG_ : `7` = js.native
+  @JSName("ERROR")
+  val ERROR_ : `3` = js.native
   val FATAL: `0` = js.native
-  val INFO: `6` = js.native
-  val NOTICE: `5` = js.native
+  @JSName("INFO")
+  val INFO_ : `6` = js.native
+  @JSName("NOTICE")
+  val NOTICE_ : `5` = js.native
   val NOTSET: `10` = js.native
-  val PRINT: `9` = js.native
-  val WARN: `4` = js.native
+  @JSName("PRINT")
+  val PRINT_ : `9` = js.native
+  @JSName("WARN")
+  val WARN_ : `4` = js.native
   val height: Double = js.native
   val loglevel: Double = js.native
   val width: Double = js.native

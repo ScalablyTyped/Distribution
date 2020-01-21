@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("History")
 @js.native
-class HistoryCls () extends History
+class HistoryCls () extends History_
 

@@ -1,7 +1,7 @@
 package typings.saslmechanisms
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.saslmechanisms.saslmechanismsMod.Factory
+import typings.saslmechanisms.mod.Factory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.flot.jquery.flot
 
-import typings.jquery.JQuery
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait legendOptions extends js.Object {
          //null or color
   var backgroundOpacity: js.UndefOr[Double] = js.undefined
     // between 0 and 1
-  var container: js.UndefOr[JQuery[HTMLElement]] = js.undefined
+  var container: js.UndefOr[JQuery_[HTMLElement]] = js.undefined
    //  null or (fn: string, series object -> string)
   var labelBoxBorderColor: js.UndefOr[js.Any] = js.undefined
   var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ js.Any, String]] = js.undefined
@@ -31,7 +31,7 @@ object legendOptions {
   def apply(
     backgroundColor: js.Any = null,
     backgroundOpacity: Int | Double = null,
-    container: JQuery[HTMLElement] = null,
+    container: JQuery_[HTMLElement] = null,
     labelBoxBorderColor: js.Any = null,
     labelFormatter: (/* label */ String, /* series */ js.Any) => String = null,
     margin: js.Any = null,

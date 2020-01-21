@@ -1,10 +1,10 @@
 package typings.marko.expressMod
 
-import typings.express.expressMod.Application
-import typings.express.expressMod.Request
-import typings.express.expressMod.Response
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Express
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.ParamsDictionary
+import typings.express.mod.Application_
+import typings.express.mod.Request_
+import typings.express.mod.Response_
+import typings.expressServeStaticCore.mod.Express
+import typings.expressServeStaticCore.mod.ParamsDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ object ^ extends js.Object {
   /**
     * These are the exposed prototypes.
     */
-  var application: Application = js.native
-  var request: Request[ParamsDictionary] = js.native
-  var response: Response = js.native
+  var application: Application_ = js.native
+  var request: Request_[ParamsDictionary] = js.native
+  var response: Response_ = js.native
   /**
     * Creates an Express application. The express() function is a top-level function exported by the express module.
     */

@@ -1,7 +1,7 @@
 package typings.ioredis
 
-import typings.ioredis.ioredisMod.NodeRole
-import typings.ioredis.ioredisMod.SecureVersion
+import typings.ioredis.mod.NodeRole
+import typings.ioredis.mod.SecureVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

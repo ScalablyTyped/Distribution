@@ -1,6 +1,6 @@
 package typings.typedoc
 
-import typings.typedoc.distLibCliMod.ExitCode
+import typings.typedoc.cliMod.ExitCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

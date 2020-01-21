@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shebang-command"
-version := "1.2-dt-20181231Z-dea198"
+version := "1.2-dt-20181231Z-37a01e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

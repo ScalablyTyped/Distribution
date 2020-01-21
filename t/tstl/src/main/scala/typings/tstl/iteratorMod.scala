@@ -1,13 +1,20 @@
 package typings.tstl
 
-import typings.tstl.containerVectorMod.Vector
-import typings.tstl.containerVectorMod.Vector.Iterator
-import typings.tstl.containerVectorMod.Vector.ReverseIterator
-import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIBidirectionalIteratorMod.IBidirectionalIterator
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.iteratorIReverseIteratorMod.IReversableIterator
-import typings.tstl.iteratorIReverseIteratorMod.IReverseIterator
+import typings.tstl.backInsertIteratorMod.BackInsertIterator.SourceType
+import typings.tstl.backInsertIteratorMod.BackInsertIterator.ValueType
+import typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer
+import typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer.ReverseIteratorType
+import typings.tstl.ibidirectionaliteratorMod.IBidirectionalIterator
+import typings.tstl.iemptyMod.IEmpty
+import typings.tstl.iforwardcontainerMod.IForwardContainer
+import typings.tstl.iforwardcontainerMod.IForwardContainer.IteratorType
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.iinsertMod.IInsert
+import typings.tstl.ipushbackMod.IPushBack
+import typings.tstl.ipushfrontMod.IPushFront
+import typings.tstl.ireversableiteratorMod.IReversableIterator
+import typings.tstl.ireverseiteratorMod.IReverseIterator
+import typings.tstl.isizeMod.ISize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +23,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object iteratorMod extends js.Object {
   @js.native
-  class BackInsertIterator[T, Source /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IPushBack<T> */ js.Any */] protected ()
-    extends typings.tstl.iteratorBackInsertIteratorMod.BackInsertIterator[T, Source] {
+  class BackInsertIterator[Source /* <: IPushBack[ValueType[Source]] */] protected ()
+    extends typings.tstl.backInsertIteratorMod.BackInsertIterator[Source] {
     /**
       * Initializer Constructor.
       *
@@ -27,8 +34,8 @@ object iteratorMod extends js.Object {
   }
   
   @js.native
-  class FrontInsertIterator[T, Source /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IPushFront<T> */ js.Any */] protected ()
-    extends typings.tstl.iteratorFrontInsertIteratorMod.FrontInsertIterator[T, Source] {
+  class FrontInsertIterator[Source /* <: IPushFront[typings.tstl.frontInsertIteratorMod.FrontInsertIterator.ValueType[Source]] */] protected ()
+    extends typings.tstl.frontInsertIteratorMod.FrontInsertIterator[Source] {
     /**
       * Initializer Constructor.
       *
@@ -38,8 +45,8 @@ object iteratorMod extends js.Object {
   }
   
   @js.native
-  class InsertIterator[Container /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IInsert<Iterator> */ js.Any */, Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */] protected ()
-    extends typings.tstl.iteratorInsertIteratorMod.InsertIterator[Container, Iterator] {
+  class InsertIterator[Container /* <: IInsert[Iterator] */, Iterator /* <: IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[Iterator], Iterator] */] protected ()
+    extends typings.tstl.insertIteratorMod.InsertIterator[Container, Iterator] {
     /**
       * Initializer Constructor.
       *
@@ -49,41 +56,32 @@ object iteratorMod extends js.Object {
     def this(container: Container, it: Iterator) = this()
   }
   
-  def advance[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](it: InputIterator, n: Double): InputIterator = js.native
-  def back_inserter[T](source: js.Array[T]): typings.tstl.iteratorBackInsertIteratorMod.BackInsertIterator[T, Vector[T]] = js.native
-  def back_inserter[T, Source /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IPushBack<T> */ js.Any */](source: Source): typings.tstl.iteratorBackInsertIteratorMod.BackInsertIterator[T, Source] = js.native
-  def begin[Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */](
-    container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IForwardContainer<Iterator> */ js.Any
-  ): Iterator = js.native
-  def begin[T](container: js.Array[T]): Iterator[T] = js.native
-  def distance[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator): Double = js.native
-  def empty(
-    source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IEmpty */ js.Any
-  ): Boolean = js.native
-  def empty[T](source: js.Array[T]): Boolean = js.native
-  def end[Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */](
-    container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IForwardContainer<Iterator> */ js.Any
-  ): Iterator = js.native
-  def end[T](container: js.Array[T]): Iterator[T] = js.native
-  def front_inserter[T, Source /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IPushFront<T> */ js.Any */](source: Source): typings.tstl.iteratorFrontInsertIteratorMod.FrontInsertIterator[T, Source] = js.native
-  def inserter[T](container: js.Array[T], it: Iterator[T]): typings.tstl.iteratorInsertIteratorMod.InsertIterator[Vector[T], Iterator[T]] = js.native
-  def inserter[Container /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IInsert<Iterator> */ js.Any */, Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */](container: Container, it: Iterator): typings.tstl.iteratorInsertIteratorMod.InsertIterator[Container, Iterator] = js.native
-  def make_reverse_iterator[IteratorT /* <: IReversableIterator[ValueType[IteratorT], IteratorT, ReverseT] */, ReverseT /* <: IReverseIterator[ValueType[IteratorT], IteratorT, ReverseT] */](it: IteratorT): ReverseT = js.native
-  def next[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](it: ForwardIterator): ForwardIterator = js.native
-  def next[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](it: ForwardIterator, n: Double): ForwardIterator = js.native
-  def prev[BidirectionalIterator /* <: IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator] */](it: BidirectionalIterator): BidirectionalIterator = js.native
-  def prev[BidirectionalIterator /* <: IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator] */](it: BidirectionalIterator, n: Double): BidirectionalIterator = js.native
-  def rbegin[T](container: js.Array[T]): ReverseIterator[T] = js.native
-  def rbegin[Iterator /* <: IReversableIterator[ValueType[Iterator], Iterator, ReverseIterator] */, ReverseIterator /* <: IReverseIterator[ValueType[Iterator], Iterator, ReverseIterator] */](
-    container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBidirectionalContainer<Iterator, ReverseIterator> */ js.Any
-  ): ReverseIterator = js.native
-  def rend[T](container: js.Array[T]): ReverseIterator[T] = js.native
-  def rend[Iterator /* <: IReversableIterator[ValueType[Iterator], Iterator, ReverseIterator] */, ReverseIterator /* <: IReverseIterator[ValueType[Iterator], Iterator, ReverseIterator] */](
-    container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBidirectionalContainer<Iterator, ReverseIterator> */ js.Any
-  ): ReverseIterator = js.native
-  def size(
-    source: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISize */ js.Any
-  ): Double = js.native
-  def size[T](source: js.Array[T]): Double = js.native
+  def advance[InputIterator /* <: IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[InputIterator], InputIterator] */](it: InputIterator, n: Double): InputIterator = js.native
+  @JSName("back_inserter")
+  def backInserter[Source /* <: js.Array[_] | IPushBack[_] */](source: Source): typings.tstl.backInsertIteratorMod.BackInsertIterator[SourceType[Source]] = js.native
+  def begin[Container /* <: js.Array[_] | IForwardContainer[_] */](container: Container): IteratorType[Container] = js.native
+  def distance[InputIterator /* <: IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator): Double = js.native
+  def empty(source: js.Array[_]): Boolean = js.native
+  def empty(source: IEmpty): Boolean = js.native
+  def end[Container /* <: js.Array[_] | IForwardContainer[_] */](container: Container): IteratorType[Container] = js.native
+  @JSName("front_inserter")
+  def frontInserter[Source /* <: IPushFront[typings.tstl.frontInsertIteratorMod.FrontInsertIterator.ValueType[Source]] */](source: Source): typings.tstl.frontInsertIteratorMod.FrontInsertIterator[Source] = js.native
+  def inserter[Container /* <: IInsert[Iterator] */, Iterator /* <: IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[Iterator], Iterator] */](container: Container, it: Iterator): typings.tstl.insertIteratorMod.InsertIterator[Container, Iterator] = js.native
+  @JSName("make_reverse_iterator")
+  def makeReverseIterator[IteratorT /* <: IReversableIterator[typings.tstl.ipointerMod.IPointer.ValueType[IteratorT], IteratorT, ReverseT] */, ReverseT /* <: IReverseIterator[typings.tstl.ipointerMod.IPointer.ValueType[IteratorT], IteratorT, ReverseT] */](it: IteratorT): ReverseT = js.native
+  def next[ForwardIterator /* <: IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[ForwardIterator], ForwardIterator] */](it: ForwardIterator): ForwardIterator = js.native
+  def next[ForwardIterator /* <: IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[ForwardIterator], ForwardIterator] */](it: ForwardIterator, n: Double): ForwardIterator = js.native
+  def prev[BidirectionalIterator /* <: IBidirectionalIterator[
+    typings.tstl.ipointerMod.IPointer.ValueType[BidirectionalIterator], 
+    BidirectionalIterator
+  ] */](it: BidirectionalIterator): BidirectionalIterator = js.native
+  def prev[BidirectionalIterator /* <: IBidirectionalIterator[
+    typings.tstl.ipointerMod.IPointer.ValueType[BidirectionalIterator], 
+    BidirectionalIterator
+  ] */](it: BidirectionalIterator, n: Double): BidirectionalIterator = js.native
+  def rbegin[Container /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */](container: Container): ReverseIteratorType[Container] = js.native
+  def rend[Container /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */](container: Container): ReverseIteratorType[Container] = js.native
+  def size(source: js.Array[_]): Double = js.native
+  def size(source: ISize): Double = js.native
 }
 

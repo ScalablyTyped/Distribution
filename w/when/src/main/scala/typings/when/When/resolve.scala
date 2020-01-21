@@ -14,9 +14,9 @@ object resolve extends js.Object {
     *    - fulfilled with promiseOrValue's value after it is fulfilled
     *    - rejected with promiseOrValue's reason after it is rejected
     */
-  def apply(): Promise[Unit] = js.native
-  def apply[T](promiseOrValue: T): Promise[T] = js.native
-  def apply[T](promiseOrValue: Promise[T]): Promise[T] = js.native
-  def apply[T](promiseOrValue: Thenable[T]): Promise[T] = js.native
+  def apply(): Promise_[Unit] = js.native
+  def apply[T](promiseOrValue: T): Promise_[T] = js.native
+  def apply[T](promiseOrValue: Promise_[T]): Promise_[T] = js.native
+  def apply[T](promiseOrValue: Thenable[T]): Promise_[T] = js.native
 }
 

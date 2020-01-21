@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dijit.DropDownMenu")
 @js.native
-class DropDownMenu () extends _MenuBase {
+class DropDownMenu () extends MenuBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
 }

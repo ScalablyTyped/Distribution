@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow.Annotation
 
-import typings.vexflow.Anon_Leftshift
+import typings.vexflow.AnonLeftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var DEBUG: Boolean = js.native
-  def format(annotations: js.Array[typings.vexflow.Vex.Flow.Annotation], state: Anon_Leftshift): Boolean = js.native
+  def format(annotations: js.Array[typings.vexflow.Vex.Flow.Annotation], state: AnonLeftshift): Boolean = js.native
 }
 

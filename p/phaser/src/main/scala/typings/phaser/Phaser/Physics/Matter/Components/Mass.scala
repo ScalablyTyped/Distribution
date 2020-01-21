@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
 trait Mass extends js.Object {
   /**
     * The body's center of mass.
+    * 
+    * Calling this creates a new `Vector2 each time to avoid mutation.
+    * 
+    * If you only need to read the value and won't change it, you can get it from `GameObject.body.centerOfMass`.
     */
   val centerOfMass: Vector2
   /**

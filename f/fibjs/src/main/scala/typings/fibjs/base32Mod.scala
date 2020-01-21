@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("base32", JSImport.Namespace)
 @js.native
 object base32Mod extends js.Object {
-  def decode(data: String): Class_Buffer = js.native
-  def encode(data: Class_Buffer): String = js.native
+  def decode(data: String): ClassBuffer = js.native
+  def encode(data: ClassBuffer): String = js.native
 }
 

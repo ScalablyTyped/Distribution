@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Electron.nativeImage")
 @js.native
-class nativeImageCls () extends NativeImage
+class nativeImageCls () extends NativeImage_
 

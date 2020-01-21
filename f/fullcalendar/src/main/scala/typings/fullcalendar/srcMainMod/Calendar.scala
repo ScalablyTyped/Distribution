@@ -1,7 +1,7 @@
 package typings.fullcalendar.srcMainMod
 
-import typings.fullcalendar.srcTypesInputDashTypesMod.OptionsInput
-import typings.fullcalendar.srcTypesJqueryDashHooksMod._Global_.JQuery
+import typings.fullcalendar.inputTypesMod.OptionsInput
+import typings.fullcalendar.jqueryHooksMod._Global_.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "Calendar")
 @js.native
 class Calendar protected ()
-  extends typings.fullcalendar.srcExportsMod.Calendar {
+  extends typings.fullcalendar.exportsMod.Calendar {
   def this(el: JQuery, overrides: OptionsInput) = this()
 }
 

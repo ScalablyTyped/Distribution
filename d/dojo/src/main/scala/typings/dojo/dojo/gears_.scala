@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * TODOC
   *
   */
-@JSName("gears")
 trait gears_ extends js.Object {
   /**
     * True if client is using Google Gears

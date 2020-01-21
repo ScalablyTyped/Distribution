@@ -1,7 +1,7 @@
 package typings.mongoose
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.mongodb.mongodbMod.ObjectId
+import typings.mongodb.mod.ObjectId
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,13 +16,13 @@ trait TypeofClassObjectIdCacheHexString extends Instantiable0[ObjectId] {
     * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
     * @return {ObjectId} return the created ObjectId
     */
-  def createFromHexString(hexString: String): typings.bson.bsonMod.ObjectId = js.native
+  def createFromHexString(hexString: String): typings.bson.mod.ObjectId = js.native
   /**
     * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
     * @param {number} time an integer number representing a number of seconds.
     * @return {ObjectId} return the created ObjectId
     */
-  def createFromTime(time: Double): typings.bson.bsonMod.ObjectId = js.native
+  def createFromTime(time: Double): typings.bson.mod.ObjectId = js.native
   /**
     * Generate a 12 byte id string used in ObjectId's
     * @param {number} time optional parameter allowing to pass in a second based timestamp.
@@ -37,6 +37,6 @@ trait TypeofClassObjectIdCacheHexString extends Instantiable0[ObjectId] {
     */
   def isValid(id: String): Boolean = js.native
   def isValid(id: Double): Boolean = js.native
-  def isValid(id: typings.bson.bsonMod.ObjectId): Boolean = js.native
+  def isValid(id: typings.bson.mod.ObjectId): Boolean = js.native
 }
 

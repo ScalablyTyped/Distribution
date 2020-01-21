@@ -1,8 +1,8 @@
 package typings.dojo.dijit.layout
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.content
 import typings.dojo.dojoStrings.doLayout
 import typings.dojo.dojoStrings.errorMessage
@@ -51,10 +51,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.layout._ContentPaneResizeMixin because Inheritance from two classes. Inlined doLayout, isLayoutContainer, resize, startup
-- typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dijit.layout.ContentPane")
+- typings.dojo.dijit.layout.ContentPaneResizeMixin because Inheritance from two classes. Inlined doLayout, isLayoutContainer, resize, startup
+- typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dijit.layout.ContentPane")
 @js.native
-class ContentPane () extends _Widget {
+class ContentPane () extends Widget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -183,8 +183,8 @@ class ContentPane () extends _Widget {
     * @param widget             
     * @param insertIndex               Optional            
     */
-  def addChild(widget: _WidgetBase): Unit = js.native
-  def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+  def addChild(widget: WidgetBase): Unit = js.native
+  def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
   /**
     * Cancels an in-flight download of content
     * 
@@ -206,7 +206,7 @@ class ContentPane () extends _Widget {
     * 
     * @param child             
     */
-  def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+  def getIndexOfChild(child: WidgetBase): js.Any = js.native
   @JSName("get")
   def get_content(property: content): String = js.native
   @JSName("get")
@@ -346,7 +346,7 @@ class ContentPane () extends _Widget {
     * 
     * @param widget             
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
   /**
     * See dijit/layout/_LayoutWidget.resize() for description.
     * Although ContentPane doesn't extend _LayoutWidget, it does implement
@@ -429,7 +429,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_doLayout(
     property: doLayout,
@@ -439,7 +439,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_errorMessage(
     property: errorMessage,
@@ -449,7 +449,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_extractContent(
     property: extractContent,
@@ -459,7 +459,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_href(
     property: href,
@@ -469,7 +469,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_ioArgs(
     property: ioArgs,
@@ -479,7 +479,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isLayoutContainer(
     property: isLayoutContainer,
@@ -489,7 +489,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isLoaded(
     property: isLoaded,
@@ -499,7 +499,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_loadingMessage(
     property: loadingMessage,
@@ -509,7 +509,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_onLoadDeferred(
     property: onLoadDeferred,
@@ -519,7 +519,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_parseOnLoad(
     property: parseOnLoad,
@@ -529,7 +529,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_parserScope(
     property: parserScope,
@@ -539,7 +539,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_preload(
     property: preload,
@@ -549,7 +549,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_preventCache(
     property: preventCache,
@@ -559,7 +559,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_refreshOnShow(
     property: refreshOnShow,
@@ -569,7 +569,7 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_stopParser(
     property: stopParser,
@@ -579,6 +579,6 @@ class ContentPane () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

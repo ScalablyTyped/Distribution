@@ -1,6 +1,6 @@
 package typings.dojo.dojox.drawing.manager
 
-import typings.dojo.dojox.drawing.stencil._Base
+import typings.dojo.dojox.drawing.stencil.Base
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ class Anchors protected () extends js.Object {
     *
     * @param item
     */
-  def add(item: _Base): Unit = js.native
+  def add(item: Base): Unit = js.native
   /**
     * Event fires when anchor is created
     *
@@ -63,7 +63,7 @@ class Anchors protected () extends js.Object {
     *
     * @param stencil
     */
-  def onReset(stencil: _Base): Unit = js.native
+  def onReset(stencil: Base): Unit = js.native
   /**
     * Event fired on anchor drag
     *
@@ -75,6 +75,6 @@ class Anchors protected () extends js.Object {
     *
     * @param item
     */
-  def remove(item: _Base): Unit = js.native
+  def remove(item: Base): Unit = js.native
 }
 

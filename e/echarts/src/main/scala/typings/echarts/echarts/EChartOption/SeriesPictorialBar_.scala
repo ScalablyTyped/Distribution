@@ -1,14 +1,14 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColor
-import typings.echarts.Anon_AnimationAnimationDelay
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdate
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean
-import typings.echarts.Anon_AnimationDelay
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonAnimationAnimationDelay
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdate
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean
+import typings.echarts.AnonAnimationDelay
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColor
 import typings.echarts.echarts.EChartOption.SeriesPictorialBar.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -95,7 +95,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-pictorialBar
   */
-@JSName("SeriesPictorialBar")
 trait SeriesPictorialBar_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -150,7 +149,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[Anon_AnimationDelay] = js.undefined
+  var animationEasingUpdate: js.UndefOr[AnonAnimationDelay] = js.undefined
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -452,7 +451,7 @@ trait SeriesPictorialBar_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -510,7 +509,7 @@ trait SeriesPictorialBar_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.hoverAnimation
     */
   var hoverAnimation: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean
   ] = js.undefined
   /**
     * Component ID, not specified by default.
@@ -528,7 +527,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -540,7 +539,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -559,21 +558,21 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markArea
     */
-  var markArea: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markLine
     */
-  var markLine: js.UndefOr[Anon_AnimationAnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnonAnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.markPoint
     */
-  var markPoint: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -1130,7 +1129,7 @@ trait SeriesPictorialBar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pictorialBar.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "pictorialBar"
@@ -1197,7 +1196,7 @@ object SeriesPictorialBar_ {
     animationDuration: js.Function | Double = null,
     animationDurationUpdate: js.Function | Double = null,
     animationEasing: String = null,
-    animationEasingUpdate: Anon_AnimationDelay = null,
+    animationEasingUpdate: AnonAnimationDelay = null,
     animationThreshold: Int | Double = null,
     barCategoryGap: String = null,
     barGap: String = null,
@@ -1210,16 +1209,16 @@ object SeriesPictorialBar_ {
       (js.Array[Unit | Double | String | DataObject]) | DataObject | Double | String | Unit
     ] = null,
     dimensions: js.Array[_] = null,
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
+    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
     encode: js.Object = null,
-    hoverAnimation: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean = null,
+    hoverAnimation: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColor = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColor = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
-    markLine: Anon_AnimationAnimationDelay = null,
-    markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    markArea: AnonAnimationAnimationDelayAnimationDelayUpdate = null,
+    markLine: AnonAnimationAnimationDelay = null,
+    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
     name: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
     symbol: String = null,
@@ -1233,7 +1232,7 @@ object SeriesPictorialBar_ {
     symbolRepeatDirection: String = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | Double = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     `type`: String = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

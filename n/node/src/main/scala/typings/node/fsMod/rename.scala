@@ -23,6 +23,7 @@ object rename extends js.Object {
     * @param newPath A path to a file. If a URL is provided, it must use the `file:` protocol.
     * URL support is _experimental_.
     */
-  def __promisify__(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(oldPath: PathLike, newPath: PathLike): js.Promise[Unit] = js.native
 }
 

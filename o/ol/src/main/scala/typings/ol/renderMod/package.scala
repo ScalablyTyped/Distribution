@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object renderMod {
-  import typings.ol.featureMod.FeatureLike
-
-  type OrderFunction = js.Function2[/* p0 */ FeatureLike, /* p1 */ FeatureLike, Double]
+  type OrderFunction = js.Function2[
+    /* p0 */ typings.ol.olFeatureMod.FeatureLike, 
+    /* p1 */ typings.ol.olFeatureMod.FeatureLike, 
+    scala.Double
+  ]
 }

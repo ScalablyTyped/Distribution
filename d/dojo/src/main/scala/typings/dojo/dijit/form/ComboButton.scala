@@ -1,6 +1,6 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.optionsTitle
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -41,6 +41,6 @@ class ComboButton () extends DropDownButton {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

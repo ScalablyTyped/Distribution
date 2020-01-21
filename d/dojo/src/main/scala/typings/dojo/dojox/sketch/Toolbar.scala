@@ -1,6 +1,6 @@
 package typings.dojo.dojox.sketch
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.figure
 import typings.dojo.dojoStrings.plugins
 import typings.std.HTMLElement
@@ -34,7 +34,7 @@ class Toolbar ()
     * @param item
     * @param group
     */
-  def addGroupItem(item: _Plugin, group: js.Any): Unit = js.native
+  def addGroupItem(item: Plugin, group: js.Any): Unit = js.native
   @JSName("get")
   def get_figure(property: figure): js.Object = js.native
   @JSName("get")
@@ -61,7 +61,7 @@ class Toolbar ()
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_plugins(
     property: plugins,
@@ -71,6 +71,6 @@ class Toolbar ()
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

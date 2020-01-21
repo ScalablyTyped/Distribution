@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object animation {
-  type Animation = Animation_
+  type Animation = typings.androiduix.android.view.animation.Animation_
 }

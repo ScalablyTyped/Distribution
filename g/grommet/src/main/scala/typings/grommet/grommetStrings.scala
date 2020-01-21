@@ -1,9 +1,9 @@
 package typings.grommet
 
-import typings.grommet.componentsListMod.SideType
-import typings.grommet.componentsListMod._PadSizeType
-import typings.grommet.componentsListMod._SizeType
-import typings.grommet.contextsAnnounceContextMod.AnnounceMode
+import typings.grommet.announceContextMod.AnnounceMode
+import typings.grommet.listMod.SideType
+import typings.grommet.listMod._PadSizeType
+import typings.grommet.listMod._SizeType
 import typings.grommet.utilsMod.AlignContentType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BoxSideType

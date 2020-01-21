@@ -1,7 +1,7 @@
 package typings.shelljs.makeMod._Global_
 
 import org.scalablytyped.runtime.TopLevel
-import typings.shelljs.shelljsMod.MoveFunction
+import typings.shelljs.mod.MoveFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

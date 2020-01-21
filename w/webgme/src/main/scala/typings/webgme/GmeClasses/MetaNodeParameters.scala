@@ -1,6 +1,6 @@
 package typings.webgme.GmeClasses
 
-import typings.webgme.Anon_Children
+import typings.webgme.AnonChildren
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ trait MetaNodeParameters extends js.Object {
     */
   var multiplicity: js.UndefOr[Boolean] = js.undefined
   /** the input parameters of the query. */
-  var `object`: Anon_Children
+  var `object`: AnonChildren
   /** 
     * if true, the query filters out the 
     * abstract and connection-like nodes 
@@ -33,7 +33,7 @@ trait MetaNodeParameters extends js.Object {
 object MetaNodeParameters {
   @scala.inline
   def apply(
-    `object`: Anon_Children,
+    `object`: AnonChildren,
     aspect: String = null,
     multiplicity: js.UndefOr[Boolean] = js.undefined,
     sensitive: js.UndefOr[Boolean] = js.undefined

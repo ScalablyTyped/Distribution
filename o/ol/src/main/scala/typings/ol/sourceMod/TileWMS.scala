@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceTileWMSMod.Options
-import typings.ol.sourceTileWMSMod.default
+import typings.ol.tileWMSMod.Options
+import typings.ol.tileWMSMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

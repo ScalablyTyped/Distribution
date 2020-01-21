@@ -1,6 +1,6 @@
 package typings.ckeditor.CKEDITOR.dom
 
-import typings.ckeditor.Anon_EndNode
+import typings.ckeditor.AnonEndNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +39,7 @@ class range protected () extends js.Object {
   def extractContents(mergeThen: Boolean): documentFragment = js.native
   def extractContents(mergeThen: Boolean, cloneId: Boolean): documentFragment = js.native
   def fixBlock(isStart: Boolean, blockTag: String): element = js.native
-  def getBoundaryNodes(): Anon_EndNode = js.native
+  def getBoundaryNodes(): AnonEndNode = js.native
   def getCommonAncestor(): element = js.native
   def getCommonAncestor(includeSelf: Boolean): element = js.native
   def getCommonAncestor(includeSelf: Boolean, ignoreTextNode: Boolean): element = js.native

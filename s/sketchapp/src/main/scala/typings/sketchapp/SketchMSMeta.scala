@@ -11,7 +11,7 @@ trait SketchMSMeta extends js.Object {
   var build: Double
   var commit: String
   var compatibilityVersion: Double
-  var created: Anon_App
+  var created: AnonApp
   var fonts: js.Array[String]
   var pagesAndArtboards: SketchMSPagesAndArtboards
   var saveHistory: js.Array[String]
@@ -28,7 +28,7 @@ object SketchMSMeta {
     build: Double,
     commit: String,
     compatibilityVersion: Double,
-    created: Anon_App,
+    created: AnonApp,
     fonts: js.Array[String],
     pagesAndArtboards: SketchMSPagesAndArtboards,
     saveHistory: js.Array[String],

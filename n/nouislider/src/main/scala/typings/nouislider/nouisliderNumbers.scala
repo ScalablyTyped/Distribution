@@ -1,6 +1,6 @@
 package typings.nouislider
 
-import typings.nouislider.nouisliderMod.PipFilterResult
+import typings.nouislider.mod.PipFilterResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

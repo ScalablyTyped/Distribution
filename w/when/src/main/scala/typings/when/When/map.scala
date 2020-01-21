@@ -15,6 +15,6 @@ object map extends js.Object {
     * @returns a promise that will fulfill with an array of mapped values
     *  or reject if any input promise rejects.
     */
-  def apply[T](promisesOrValues: js.Array[_], mapFunc: js.Function2[/* value */ js.Any, /* index */ Double, _]): Promise[T] = js.native
+  def apply[T](promisesOrValues: js.Array[_], mapFunc: js.Function2[/* value */ js.Any, /* index */ Double, _]): Promise_[T] = js.native
 }
 

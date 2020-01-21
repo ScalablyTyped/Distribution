@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mobile.ValuePicker")
 @js.native
-class ValuePicker () extends _PickerBase {
+class ValuePicker () extends PickerBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

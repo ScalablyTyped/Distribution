@@ -1,6 +1,6 @@
 package typings.jws
 
-import typings.jws.jwsMod.Algorithm
+import typings.jws.mod.Algorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

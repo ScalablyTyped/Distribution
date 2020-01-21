@@ -2,7 +2,7 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ trait KanbanView extends js.Object {
   var $skin_Original: WebixCallback = js.native
   var on_context: StringDictionary[js.Any] = js.native
   @JSName("$dragCreate")
-  def $dragCreate(source: HTMLElement, event: Event): HTMLElement = js.native
+  def $dragCreate(source: HTMLElement, event: Event_): HTMLElement = js.native
   @JSName("$dragPos")
   def $dragPos(args: js.Any*): js.Any = js.native
   @JSName("$dropHTML")

@@ -1,6 +1,6 @@
 package typings.foundation.Foundation
 
-import typings.foundation.Anon_Close
+import typings.foundation.AnonClose
 import typings.foundation.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait RevealOptions extends js.Object {
   var close: js.UndefOr[js.Function0[_]] = js.undefined
   var close_on_background_click: js.UndefOr[Boolean] = js.undefined
   var closed: js.UndefOr[js.Function0[_]] = js.undefined
-  var css: js.UndefOr[Anon_Close] = js.undefined
+  var css: js.UndefOr[AnonClose] = js.undefined
   var dismiss_modal_class: js.UndefOr[String] = js.undefined
   var multiple_opened: js.UndefOr[Boolean] = js.undefined
   var on_ajax_error: js.UndefOr[js.Function0[_]] = js.undefined
@@ -33,7 +33,7 @@ object RevealOptions {
     close: () => _ = null,
     close_on_background_click: js.UndefOr[Boolean] = js.undefined,
     closed: () => _ = null,
-    css: Anon_Close = null,
+    css: AnonClose = null,
     dismiss_modal_class: String = null,
     multiple_opened: js.UndefOr[Boolean] = js.undefined,
     on_ajax_error: () => _ = null,

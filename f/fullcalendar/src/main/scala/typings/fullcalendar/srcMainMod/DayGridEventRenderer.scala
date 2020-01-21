@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "DayGridEventRenderer")
 @js.native
 class DayGridEventRenderer protected ()
-  extends typings.fullcalendar.srcExportsMod.DayGridEventRenderer {
+  extends typings.fullcalendar.exportsMod.DayGridEventRenderer {
   def this(dayGrid: js.Any, fillRenderer: js.Any) = this()
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "math-trunc"
-version := "1.0-dt-20190402Z-1aa7c5"
+version := "1.0-dt-20190402Z-72547e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

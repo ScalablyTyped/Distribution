@@ -1,10 +1,10 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.Anon_Curve
-import typings.jsrsasign.Anon_Ecprvhex
-import typings.jsrsasign.Anon_I
-import typings.jsrsasign.Anon_R
-import typings.jsrsasign.Anon_X
+import typings.jsrsasign.AnonCurve
+import typings.jsrsasign.AnonEcprvhex
+import typings.jsrsasign.AnonI
+import typings.jsrsasign.AnonR
+import typings.jsrsasign.AnonX
 import typings.jsrsasign.jsrsasign.BigInteger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.ECDSA")
 @js.native
 class ECDSA () extends js.Object {
-  def this(publicKey: Anon_Curve) = this()
+  def this(publicKey: AnonCurve) = this()
   /**
     * generate a EC key pair
     * @return associative array of hexadecimal string of private and public key
@@ -37,7 +37,7 @@ class ECDSA () extends js.Object {
     * var pubhex = keypair.ecpubhex; // hexadecimal string of EC public key
     * var prvhex = keypair.ecprvhex; // hexadecimal string of EC private key (=d)
     */
-  def generateKeyPairHex(): Anon_Ecprvhex = js.native
+  def generateKeyPairHex(): AnonEcprvhex = js.native
   def getBigRandom(limit: Double): BigInteger = js.native
   /**
     * get X and Y hexadecimal string value of public key
@@ -46,7 +46,7 @@ class ECDSA () extends js.Object {
     * ec = new KJUR.crypto.ECDSA({'curve': 'secp256r1', 'pub': pubHex});
     * ec.getPublicKeyXYHex() → { x: '01bacf...', y: 'c3bc22...' }
     */
-  def getPublicKeyXYHex(): Anon_X = js.native
+  def getPublicKeyXYHex(): AnonX = js.native
   /**
     * get NIST curve short name such as "P-256" or "P-384"
     * @return short NIST P curve name such as "P-256" or "P-384" if it's NIST P curve otherwise null;
@@ -66,8 +66,8 @@ class ECDSA () extends js.Object {
     * }
     * ```
     */
-  def parseSig(sig: String): Anon_R = js.native
-  def parseSigCompact(sig: String): Anon_I = js.native
+  def parseSig(sig: String): AnonR = js.native
+  def parseSigCompact(sig: String): AnonI = js.native
   /**
     * parse ASN.1 DER encoded ECDSA signature
     * @param sigHex hexadecimal string of ECDSA signature value
@@ -78,7 +78,7 @@ class ECDSA () extends js.Object {
     * var biR = sig.r; // BigInteger object for 'r' field of signature.
     * var biS = sig.s; // BigInteger object for 's' field of signature.
     */
-  def parseSigHex(sigHex: String): Anon_R = js.native
+  def parseSigHex(sigHex: String): AnonR = js.native
   /**
     * parse ASN.1 DER encoded ECDSA signature
     * @param sigHex hexadecimal string of ECDSA signature value
@@ -89,7 +89,7 @@ class ECDSA () extends js.Object {
     * var hR = sig.r; // hexadecimal string for 'r' field of signature.
     * var hS = sig.s; // hexadecimal string for 's' field of signature.
     */
-  def parseSigHexInHexRS(sigHex: String): Anon_R = js.native
+  def parseSigHexInHexRS(sigHex: String): AnonR = js.native
   /**
     * read an ASN.1 hexadecimal string of X.509 ECC public key certificate
     * @param h hexadecimal string of X.509 ECC public key certificate

@@ -1,7 +1,7 @@
 package typings.yadda.libMod
 
-import typings.yadda.libPluginsMod.MochaPlugin
-import typings.yadda.libYaddaMod.^
+import typings.yadda.pluginsMod.MochaPlugin
+import typings.yadda.yaddaMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

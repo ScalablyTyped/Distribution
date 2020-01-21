@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceClusterMod.Options
-import typings.ol.sourceClusterMod.default
+import typings.ol.clusterMod.Options
+import typings.ol.clusterMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

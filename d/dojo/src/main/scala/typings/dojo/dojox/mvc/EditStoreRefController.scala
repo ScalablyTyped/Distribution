@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mvc
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.getPlainValueOptions
 import typings.dojo.dojoStrings.holdModelUntilCommit
 import typings.dojo.dojoStrings.originalModel
@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation._
   *
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.mvc._atBindingMixin because Already inherited
+- typings.dojo.dojox.mvc.atBindingMixin because Already inherited
 - typings.dojo.dojo.Stateful because Already inherited
-- typings.dojo.dojox.mvc._Controller because Already inherited
+- typings.dojo.dojox.mvc.Controller because Already inherited
 - typings.dojo.dojox.mvc.ModelRefController because Already inherited
 - typings.dojo.dojox.mvc.EditModelRefController because Inheritance from two classes. Inlined set_datamvcbindings, get_datamvcbindings, watch_datamvcbindings, set_dataBindAttr, get_dataBindAttr, watch_dataBindAttr, getPlainValueOptions, set_getPlainValueOptions, get_getPlainValueOptions, watch_getPlainValueOptions, set_getStatefulOptions, get_getStatefulOptions, watch_getStatefulOptions, holdModelUntilCommit, set_holdModelUntilCommit, get_holdModelUntilCommit, watch_holdModelUntilCommit, set_model, get_model, watch_model, originalModel, set_originalModel, get_originalModel, watch_originalModel, set_ownProps, get_ownProps, watch_ownProps, sourceModel, set_sourceModel, get_sourceModel, watch_sourceModel, cloneModel, commit, destroy, get, hasControllerProperty, postscript, postscript, reset, set, startup, watch */ @JSGlobal("dojox.mvc.EditStoreRefController")
 @js.native
@@ -81,21 +81,21 @@ class EditStoreRefController () extends StoreRefController {
   def watch_getPlainValueOptions(
     property: getPlainValueOptions,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_holdModelUntilCommit(
     property: holdModelUntilCommit,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_originalModel(
     property: originalModel,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_sourceModel(
     property: sourceModel,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -35,14 +35,14 @@ trait PDF extends js.Object {
     * @return {boolean}
     */
   def IsTextBasedPDF(localFile: String): Boolean = js.native
-  def SetConvertMode(convertMode: EnumDWT_ConverMode): Boolean = js.native
+  def SetConvertMode(convertMode: EnumDWTConverMode): Boolean = js.native
   /**
     *  Set the image convert mode for PDF Rasterizer in Dynamic Web TWAIN.
     * @method Dynamsoft.WebTwain#SetConvertMode
     * @param {EnumDWT_ConvertMode | EnumDWT_ConverMode} convertMode Specifies the image convert mode.
     * @return {boolean}
     */
-  def SetConvertMode(convertMode: EnumDWT_ConvertMode): Boolean = js.native
+  def SetConvertMode(convertMode: EnumDWTConvertMode): Boolean = js.native
   /**
     *  Input the password to decrypt PDF files using PDF Rasterizer add-on.
     * @method Dynamsoft.WebTwain#SetPassword

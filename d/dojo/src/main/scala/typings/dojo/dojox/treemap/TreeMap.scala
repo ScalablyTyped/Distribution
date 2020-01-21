@@ -1,7 +1,7 @@
 package typings.dojo.dojox.treemap
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojo.store.api.Store
 import typings.dojo.dojoStrings.areaAttr
 import typings.dojo.dojoStrings.colorAttr
@@ -22,7 +22,7 @@ import typings.dojo.dojoStrings.selectionMode
 import typings.dojo.dojoStrings.store
 import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.tooltipAttr
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,9 +37,9 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dojo.Stateful because Already inherited
 - typings.dojo.dojox.widget.Selection because Inheritance from two classes. Inlined selectedItem, set_selectedItem, get_selectedItem, watch_selectedItem, selectedItems, set_selectedItems, get_selectedItems, watch_selectedItems, selectionMode, set_selectionMode, get_selectionMode, watch_selectionMode, dispatchChange, getIdentity, isItemSelected, selectFromEvent, setItemSelected, onChange
-- typings.dojo.dojox.widget._Invalidating because Inheritance from two classes. Inlined invalidatingProperties, set_invalidatingProperties, get_invalidatingProperties, watch_invalidatingProperties, invalidRendering, set_invalidRendering, get_invalidRendering, watch_invalidRendering, addInvalidatingProperties, get, invalidateRendering, postscript, refreshRendering, set, validateRendering, watch */ @JSGlobal("dojox.treemap.TreeMap")
+- typings.dojo.dojox.widget.Invalidating because Inheritance from two classes. Inlined invalidatingProperties, set_invalidatingProperties, get_invalidatingProperties, watch_invalidatingProperties, invalidRendering, set_invalidRendering, get_invalidRendering, watch_invalidRendering, addInvalidatingProperties, get, invalidateRendering, postscript, refreshRendering, set, validateRendering, watch */ @JSGlobal("dojox.treemap.TreeMap")
 @js.native
-class TreeMap () extends _WidgetBase {
+class TreeMap () extends WidgetBase {
   /**
     * The attribute of the store item that contains the data used to compute the area of a treemap cell.Default is "".
     *
@@ -191,7 +191,7 @@ class TreeMap () extends _WidgetBase {
     * @param renderer The visual renderer of the selected/deselected item.
     * @param triggerEvent The event that lead to the selection of the item.
     */
-  def dispatchChange(oldSelectedItem: js.Object, newSelectedItem: js.Object, renderer: js.Object, triggerEvent: Event): Unit = js.native
+  def dispatchChange(oldSelectedItem: js.Object, newSelectedItem: js.Object, renderer: js.Object, triggerEvent: Event_): Unit = js.native
   /**
     * Returns the color for a given item. This either use the colorModel if not null
     * or just the result of the colorFunc.
@@ -329,7 +329,7 @@ class TreeMap () extends _WidgetBase {
     * @param renderer The visual renderer of the selected/deselected item.
     * @param dispatch Whether an event must be dispatched or not.
     */
-  def selectFromEvent(e: Event, item: js.Object, renderer: js.Object, dispatch: Boolean): js.Any = js.native
+  def selectFromEvent(e: Event_, item: js.Object, renderer: js.Object, dispatch: Boolean): js.Any = js.native
   /**
     * Change the selection state of an item.
     *
@@ -413,7 +413,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_colorAttr(
     property: colorAttr,
@@ -423,7 +423,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_colorModel(
     property: colorModel,
@@ -433,7 +433,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_groupAttrs(
     property: groupAttrs,
@@ -443,7 +443,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_groupFuncs(
     property: groupFuncs,
@@ -453,17 +453,17 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_invalidRendering(
     property: invalidRendering,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_invalidatingProperties(
     property: invalidatingProperties,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_itemToRenderer(
     property: itemToRenderer,
@@ -473,7 +473,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelAttr(
     property: labelAttr,
@@ -483,7 +483,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelThreshold(
     property: labelThreshold,
@@ -493,7 +493,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_query(
     property: query,
@@ -503,7 +503,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_queryOptions(
     property: queryOptions,
@@ -513,7 +513,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_rootItem(
     property: rootItem,
@@ -523,22 +523,22 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selectedItem(
     property: selectedItem,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selectedItems(
     property: selectedItems,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selectionMode(
     property: selectionMode,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[String], js.UndefOr[String], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_store(
     property: store,
@@ -548,7 +548,7 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tooltipAttr(
     property: tooltipAttr,
@@ -558,6 +558,6 @@ class TreeMap () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.tilebelt.tilebelt
 
-import typings.geojson.geojsonMod.Feature
-import typings.geojson.geojsonMod.GeoJsonProperties
-import typings.geojson.geojsonMod.Polygon
+import typings.geojson.mod.Feature
+import typings.geojson.mod.GeoJsonProperties
+import typings.geojson.mod.Polygon
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

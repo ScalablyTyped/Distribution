@@ -1,8 +1,8 @@
 package typings.bleno
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.bleno.blenoMod.Characteristic
-import typings.bleno.blenoMod.CharacteristicOptions
+import typings.bleno.mod.Characteristic
+import typings.bleno.mod.CharacteristicOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ensure-posix-path"
-version := "1.0-dt-20181224Z-b066d3"
+version := "1.0-dt-20181224Z-281e0a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

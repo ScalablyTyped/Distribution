@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#dataset
   */
-@JSName("Dataset")
 trait Dataset_ extends js.Object {
   /**
     * dimensions can be used to define dimension info for series.data or dataset.source.

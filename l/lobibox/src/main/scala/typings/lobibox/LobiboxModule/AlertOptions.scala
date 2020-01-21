@@ -1,17 +1,17 @@
 package typings.lobibox.LobiboxModule
 
-import typings.lobibox.Anon_Cancel
-import typings.lobibox.Anon_Confirm
-import typings.lobibox.Anon_IconClass
+import typings.lobibox.AnonCancel
+import typings.lobibox.AnonConfirm
+import typings.lobibox.AnonIconClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AlertOptions extends MessageBoxesOptions {
-  var error: js.UndefOr[Anon_IconClass] = js.undefined
-  var info: js.UndefOr[Anon_IconClass] = js.undefined
-  var success: js.UndefOr[Anon_IconClass] = js.undefined
-  var warning: js.UndefOr[Anon_IconClass] = js.undefined
+  var error: js.UndefOr[AnonIconClass] = js.undefined
+  var info: js.UndefOr[AnonIconClass] = js.undefined
+  var success: js.UndefOr[AnonIconClass] = js.undefined
+  var warning: js.UndefOr[AnonIconClass] = js.undefined
 }
 
 object AlertOptions {
@@ -20,7 +20,7 @@ object AlertOptions {
     baseClass: String = null,
     beforeClose: /* lobibox */ js.Any => Unit = null,
     bodyClass: String = null,
-    buttons: Anon_Cancel | js.Any = null,
+    buttons: AnonCancel | js.Any = null,
     buttonsAlign: js.Any = null,
     callback: (/* lobibox */ js.Any, /* type */ js.UndefOr[String], /* ev */ js.UndefOr[js.Any]) => Unit = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
@@ -30,15 +30,15 @@ object AlertOptions {
     debug: js.UndefOr[Boolean] = js.undefined,
     delayToRemove: Int | Double = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
-    error: Anon_IconClass = null,
+    error: AnonIconClass = null,
     getTitle: () => String = null,
     height: String = null,
     hide: () => AlertOptions = null,
     hideClass: String = null,
     horizontalOffset: Int | Double = null,
-    info: Anon_IconClass = null,
+    info: AnonIconClass = null,
     modal: js.UndefOr[Boolean] = js.undefined,
-    modalClasses: Anon_Confirm = null,
+    modalClasses: AnonConfirm = null,
     msg: String = null,
     onShow: /* lobibox */ js.Any => Unit = null,
     setHeight: /* height */ js.UndefOr[Double] => AlertOptions = null,
@@ -49,9 +49,9 @@ object AlertOptions {
     show: () => AlertOptions = null,
     showClass: String = null,
     shown: /* lobibox */ js.Any => Unit = null,
-    success: Anon_IconClass = null,
+    success: AnonIconClass = null,
     title: String = null,
-    warning: Anon_IconClass = null,
+    warning: AnonIconClass = null,
     width: Int | Double = null
   ): AlertOptions = {
     val __obj = js.Dynamic.literal()

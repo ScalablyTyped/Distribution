@@ -1,7 +1,7 @@
 package typings.pkgcloud
 
-import typings.pkgcloud.pkgcloudMod.Providers
-import typings.pkgcloud.pkgcloudMod.RackspaceRegions
+import typings.pkgcloud.mod.Providers
+import typings.pkgcloud.mod.RackspaceRegions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

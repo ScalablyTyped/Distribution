@@ -1,8 +1,8 @@
 package typings.mongoose
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mongodb.mongodbMod.Logger
-import typings.mongodb.mongodbMod.log
+import typings.mongodb.mod.Logger
+import typings.mongodb.mod.log
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

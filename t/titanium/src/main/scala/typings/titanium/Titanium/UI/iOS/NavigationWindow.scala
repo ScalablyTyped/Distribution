@@ -1,6 +1,6 @@
 package typings.titanium.Titanium.UI.iOS
 
-import typings.titanium.AnimationOption
+import typings.titanium.AnimationOption_
 import typings.titanium.Dimension
 import typings.titanium.Gradient
 import typings.titanium.Point
@@ -568,7 +568,7 @@ trait NavigationWindow extends Proxy {
   				 * Hides this view.
   				 */
   def hide(): Unit = js.native
-  def hide(options: AnimationOption): Unit = js.native
+  def hide(options: AnimationOption_): Unit = js.native
   /**
   				 * Hides the navigation bar.
   				 */
@@ -860,7 +860,7 @@ trait NavigationWindow extends Proxy {
   				 * Makes this view visible.
   				 */
   def show(): Unit = js.native
-  def show(options: AnimationOption): Unit = js.native
+  def show(options: AnimationOption_): Unit = js.native
   /**
   				 * Makes the navigation bar visible.
   				 */

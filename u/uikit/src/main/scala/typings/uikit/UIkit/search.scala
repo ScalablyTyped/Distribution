@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.search")
 @js.native
-object search extends TopLevel[Search]
+object search extends TopLevel[Search_]
 

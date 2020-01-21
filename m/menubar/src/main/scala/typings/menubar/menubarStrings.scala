@@ -1,14 +1,14 @@
 package typings.menubar
 
-import typings.menubar.libUtilGetWindowPositionMod.TaskbarLocation
-import typings.menubar.libUtilGetWindowPositionMod.WindowPosition
+import typings.menubar.getWindowPositionMod.TaskbarLocation_
+import typings.menubar.getWindowPositionMod.WindowPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object menubarStrings {
   @js.native
-  sealed trait bottom extends TaskbarLocation
+  sealed trait bottom extends TaskbarLocation_
   
   @js.native
   sealed trait bottomCenter extends js.Object
@@ -35,10 +35,13 @@ object menubarStrings {
   sealed trait index extends js.Object
   
   @js.native
-  sealed trait left extends TaskbarLocation
+  sealed trait left extends TaskbarLocation_
   
   @js.native
   sealed trait leftCenter extends js.Object
+  
+  @js.native
+  sealed trait loadUrlOptions extends js.Object
   
   @js.native
   sealed trait mockDotappDotgetAppPath extends js.Object
@@ -47,7 +50,7 @@ object menubarStrings {
   sealed trait preloadWindow extends js.Object
   
   @js.native
-  sealed trait right extends TaskbarLocation
+  sealed trait right extends TaskbarLocation_
   
   @js.native
   sealed trait rightCenter extends js.Object
@@ -65,7 +68,7 @@ object menubarStrings {
   sealed trait tooltip extends js.Object
   
   @js.native
-  sealed trait top extends TaskbarLocation
+  sealed trait top extends TaskbarLocation_
   
   @js.native
   sealed trait topCenter extends js.Object
@@ -122,6 +125,8 @@ object menubarStrings {
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def leftCenter: leftCenter = "leftCenter".asInstanceOf[leftCenter]
+  @scala.inline
+  def loadUrlOptions: loadUrlOptions = "loadUrlOptions".asInstanceOf[loadUrlOptions]
   @scala.inline
   def mockDotappDotgetAppPath: mockDotappDotgetAppPath = "mock.app.getAppPath".asInstanceOf[mockDotappDotgetAppPath]
   @scala.inline

@@ -1,7 +1,7 @@
 package typings.websequencediagrams
 
-import typings.websequencediagrams.websequencediagramsMod.OutputType
-import typings.websequencediagrams.websequencediagramsMod.Style
+import typings.websequencediagrams.mod.OutputType
+import typings.websequencediagrams.mod.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

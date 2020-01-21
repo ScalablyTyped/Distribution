@@ -1,7 +1,7 @@
 package typings.dojo.dojox.drawing.plugins.tools
 
-import typings.dojo.dojox.drawing.plugins._Plugin
-import typings.std.Event
+import typings.dojo.dojox.drawing.plugins.Plugin
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.drawing.plugins.tools.Pan")
 @js.native
-class Pan_ protected () extends _Plugin {
+class Pan_ protected () extends Plugin {
   def this(options: js.Any) = this()
   /**
     *
@@ -75,7 +75,7 @@ class Pan_ protected () extends _Plugin {
     *
     * @param bool
     */
-  def onSetPan(bool: Event): Unit = js.native
+  def onSetPan(bool: Event_): Unit = js.native
   /**
     *
     * @param obj

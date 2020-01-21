@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ebongarde-root"
-version := "1.7-dt-20180214Z-a075d4"
+version := "1.7-dt-20180214Z-561fdb"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

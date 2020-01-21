@@ -1,0 +1,20 @@
+package typings.fabric
+
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import typings.fabric.fabricImplMod.IBrightnessFilter
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait AnonFromObjectObjectOptions
+  extends Instantiable0[IBrightnessFilter]
+     with Instantiable1[/* options */ AnonBrightness, IBrightnessFilter] {
+  /**
+  		 * Returns filter instance from an object representation
+  		 * @param object Object to create an instance from
+  		 */
+  def fromObject(`object`: js.Any): IBrightnessFilter = js.native
+}
+

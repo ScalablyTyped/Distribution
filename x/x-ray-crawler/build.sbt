@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "x-ray-crawler"
-version := "2.0-dt-20180214Z-5b92d7"
+version := "2.0-dt-20180214Z-13ea69"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-b3e120",
-  "org.scalablytyped" %%% "http-context" % "1.1-dt-20180214Z-3d3063",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-6c767c",
+  "org.scalablytyped" %%% "http-context" % "1.1-dt-20180214Z-deac7e",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

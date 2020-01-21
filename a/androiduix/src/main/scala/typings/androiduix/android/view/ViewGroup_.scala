@@ -815,7 +815,7 @@ abstract class ViewGroup_ protected ()
   /* InferMemberOverrides */
   /* private */ override def requestFocusNoSearch(direction: js.Any, previouslyFocusedRect: js.Any): js.Any = js.native
   /* InferMemberOverrides */
-  override def requestLayout(): Unit with js.Any = js.native
+  override def requestLayout(): js.Any with Unit = js.native
   /* InferMemberOverrides */
   override def requestRectangleOnScreen(rectangle: Rect): Boolean = js.native
   /* InferMemberOverrides */

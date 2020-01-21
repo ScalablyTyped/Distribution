@@ -20,10 +20,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object wsMod extends js.Object {
   @js.native
-  class Message () extends Class_WebSocketMessage
+  class Message () extends ClassWebSocketMessage
   
   @js.native
-  class Socket () extends Class_WebSocket
+  class Socket () extends ClassWebSocket
   
   val BINARY: `2` = js.native
   val CLOSE: `8` = js.native
@@ -35,6 +35,6 @@ object wsMod extends js.Object {
   val PING: `9` = js.native
   val PONG: `10` = js.native
   val TEXT: `1` = js.native
-  def upgrade(accept: js.Function): Class_Handler = js.native
+  def upgrade(accept: js.Function): ClassHandler = js.native
 }
 

@@ -10,7 +10,7 @@ trait Data extends js.Object {
     */
   var bookmark: js.UndefOr[String] = js.undefined
   var html: js.UndefOr[String] = js.undefined
-  var image: js.UndefOr[NativeImage] = js.undefined
+  var image: js.UndefOr[NativeImage_] = js.undefined
   var rtf: js.UndefOr[String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
 }
@@ -20,7 +20,7 @@ object Data {
   def apply(
     bookmark: String = null,
     html: String = null,
-    image: NativeImage = null,
+    image: NativeImage_ = null,
     rtf: String = null,
     text: String = null
   ): Data = {

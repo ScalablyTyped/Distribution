@@ -1,12 +1,12 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dojo.dojo.date
+import typings.dojo.dojox.date.buddhist.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("dojo/date", JSImport.Namespace)
+@JSImport("dojox/date/buddhist/Date", JSImport.Namespace)
 @js.native
-object dateMod extends TopLevel[date]
+object dateMod extends TopLevel[Date]
 

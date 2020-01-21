@@ -1,7 +1,7 @@
 package typings.graphql.typeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.typeDefinitionMod.GraphQLNullableType
+import typings.graphql.definitionMod.GraphQLNullableType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object getNullableType extends js.Object {
   def apply(`type`: Unit): js.UndefOr[scala.Nothing] = js.native
-  def apply(`type`: typings.graphql.typeDefinitionMod.GraphQLEnumType): typings.graphql.typeDefinitionMod.GraphQLEnumType = js.native
-  def apply(`type`: typings.graphql.typeDefinitionMod.GraphQLInputObjectType): typings.graphql.typeDefinitionMod.GraphQLInputObjectType = js.native
-  def apply(`type`: typings.graphql.typeDefinitionMod.GraphQLInterfaceType): typings.graphql.typeDefinitionMod.GraphQLInterfaceType = js.native
-  def apply(`type`: typings.graphql.typeDefinitionMod.GraphQLScalarType): typings.graphql.typeDefinitionMod.GraphQLScalarType = js.native
-  def apply(`type`: typings.graphql.typeDefinitionMod.GraphQLUnionType): typings.graphql.typeDefinitionMod.GraphQLUnionType = js.native
-  def apply[T /* <: (typings.graphql.typeDefinitionMod.GraphQLObjectType[_, _, StringDictionary[_]]) | typings.graphql.typeDefinitionMod.GraphQLList[_] */](`type`: T): T = js.native
-  def apply[T /* <: GraphQLNullableType */](`type`: typings.graphql.typeDefinitionMod.GraphQLNonNull[T]): T = js.native
+  def apply(`type`: typings.graphql.definitionMod.GraphQLEnumType): typings.graphql.definitionMod.GraphQLEnumType = js.native
+  def apply(`type`: typings.graphql.definitionMod.GraphQLInputObjectType): typings.graphql.definitionMod.GraphQLInputObjectType = js.native
+  def apply(`type`: typings.graphql.definitionMod.GraphQLInterfaceType): typings.graphql.definitionMod.GraphQLInterfaceType = js.native
+  def apply(`type`: typings.graphql.definitionMod.GraphQLScalarType): typings.graphql.definitionMod.GraphQLScalarType = js.native
+  def apply(`type`: typings.graphql.definitionMod.GraphQLUnionType): typings.graphql.definitionMod.GraphQLUnionType = js.native
+  def apply[T /* <: (typings.graphql.definitionMod.GraphQLObjectType[_, _, StringDictionary[_]]) | typings.graphql.definitionMod.GraphQLList[_] */](`type`: T): T = js.native
+  def apply[T /* <: GraphQLNullableType */](`type`: typings.graphql.definitionMod.GraphQLNonNull[T]): T = js.native
 }
 

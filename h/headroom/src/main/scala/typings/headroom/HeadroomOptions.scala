@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait HeadroomOptions extends js.Object {
-  var classes: js.UndefOr[Anon_Initial] = js.undefined
+  var classes: js.UndefOr[AnonInitial] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var onBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -21,7 +21,7 @@ trait HeadroomOptions extends js.Object {
 object HeadroomOptions {
   @scala.inline
   def apply(
-    classes: Anon_Initial = null,
+    classes: AnonInitial = null,
     offset: Int | Double = null,
     onBottom: () => Unit = null,
     onNotBottom: () => Unit = null,

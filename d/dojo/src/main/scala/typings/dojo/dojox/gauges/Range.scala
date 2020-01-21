@@ -1,7 +1,7 @@
 package typings.dojo.dojox.gauges
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
 import typings.dojo.dojoStrings.color
 import typings.dojo.dojoStrings.high
 import typings.dojo.dojoStrings.hover
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.gauges.Range")
 @js.native
-class Range () extends _Widget {
+class Range () extends Widget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -93,7 +93,7 @@ class Range () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_high(
     property: high,
@@ -103,7 +103,7 @@ class Range () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hover(
     property: hover,
@@ -113,7 +113,7 @@ class Range () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_low(
     property: low,
@@ -123,7 +123,7 @@ class Range () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_size(
     property: size,
@@ -133,6 +133,6 @@ class Range () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

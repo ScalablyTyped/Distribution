@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSGlobal("removeEventListener")
 @js.native
 object removeEventListener_MSPointerOut extends js.Object {
-  def apply(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]): Unit = js.native
+  def apply(`type`: MSPointerOut, listener: js.ThisFunction1[/* this */ Window_, /* ev */ Event_, _]): Unit = js.native
   def apply(
     `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   def apply(
     `type`: MSPointerOut,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
 }

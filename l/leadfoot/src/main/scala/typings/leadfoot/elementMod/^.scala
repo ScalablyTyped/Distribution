@@ -1,6 +1,6 @@
 package typings.leadfoot.elementMod
 
-import typings.leadfoot.Anon_ELEMENT
+import typings.leadfoot.AnonELEMENT
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends Element {
   def this(elementId: String, session: typings.leadfoot.sessionMod.^) = this()
-  def this(elementId: Anon_ELEMENT, session: typings.leadfoot.sessionMod.^) = this()
+  def this(elementId: AnonELEMENT, session: typings.leadfoot.sessionMod.^) = this()
   def this(elementId: Element, session: typings.leadfoot.sessionMod.^) = this()
 }
 

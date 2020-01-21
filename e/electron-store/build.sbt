@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "electron-store"
-version := "5.1.0-6396c4"
+version := "5.1.0-a89d06"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "conf" % "6.2.0-b70603",
-  "org.scalablytyped" %%% "json-schema-typed" % "7.0.2-125fed",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "conf" % "6.2.0-5cbab0",
+  "org.scalablytyped" %%% "json-schema-typed" % "7.0.2-33dab5",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

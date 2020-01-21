@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Utility {
-  import org.scalablytyped.runtime.StringDictionary
-
   /**
     * Interface use to provide parameters when opening new entiy forms
     */
@@ -16,5 +14,5 @@ package object Utility {
     * to provide default field values for the form, or pass data to custom
     * parameters that have been customized for the form.
     */
-  StringDictionary[js.UndefOr[String]]
+  org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 }

@@ -1,7 +1,7 @@
 package typings.walk
 
-import typings.walk.walkMod.WalkStatArrayEvent
-import typings.walk.walkMod.WalkStatEvent
+import typings.walk.mod.WalkStatArrayEvent
+import typings.walk.mod.WalkStatEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

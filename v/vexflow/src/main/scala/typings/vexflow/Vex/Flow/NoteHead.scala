@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Customglyphcode
+import typings.vexflow.AnonCustomglyphcode
 import typings.vexflow.Anon_FillStyle
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.NoteHead")
 @js.native
 class NoteHead protected () extends Note {
-  def this(head_options: Anon_Customglyphcode) = this()
+  def this(head_options: AnonCustomglyphcode) = this()
   def applyStyle(context: IRenderContext): NoteHead = js.native
   def draw(): Unit = js.native
   def getLine(): Double = js.native

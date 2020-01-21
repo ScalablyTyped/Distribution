@@ -1,6 +1,6 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.dijit.form._Spinner
+import typings.dojo.dijit.form.Spinner
 import typings.std.Date
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.form.TimeSpinner")
 @js.native
-class TimeSpinner () extends _Spinner {
+class TimeSpinner () extends Spinner {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

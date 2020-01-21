@@ -1,7 +1,7 @@
 package typings.k6.optionsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.k6.Anon_Max
+import typings.k6.AnonMax
 import typings.k6.httpMod.CipherSuite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -65,7 +65,7 @@ trait Options extends js.Object {
   /** Allowed TLS cipher suites. */
   var tlsCipherSuites: js.Array[CipherSuite]
   /** Allowed TLS version. Use `http.SSL_*` `http.TLS_*` constants. */
-  var tlsVersion: String | Anon_Max
+  var tlsVersion: String | AnonMax
   /** User agent string to include in HTTP requests. */
   var userAgent: String
   /** Number of VUs to run concurrently. */
@@ -105,7 +105,7 @@ object Options {
     `throw`: Boolean,
     tlsAuth: js.Array[Certificate],
     tlsCipherSuites: js.Array[CipherSuite],
-    tlsVersion: String | Anon_Max,
+    tlsVersion: String | AnonMax,
     userAgent: String,
     vus: Double,
     vusMax: Double

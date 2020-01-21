@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * Functions for registering and running automated tests.
   *
   */
-@JSName("main")
 @js.native
 trait main_ extends js.Object {
   /**

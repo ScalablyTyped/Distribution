@@ -1,6 +1,6 @@
 package typings.dojo.dojo
 
-import typings.dojo.Anon_Remove
+import typings.dojo.AnonRemove
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,8 +41,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait on extends js.Object {
-  def apply(target: js.Object, `type`: String, listener: js.Function): Anon_Remove = js.native
-  def apply(target: js.Object, `type`: String, listener: js.Function, dontFix: js.Any): Anon_Remove = js.native
+  def apply(target: js.Object, `type`: String, listener: js.Function): AnonRemove = js.native
+  def apply(target: js.Object, `type`: String, listener: js.Function, dontFix: js.Any): Unit = js.native
   def apply(target: HTMLElement, `type`: String, listener: js.Function, dontFix: js.Any): Unit = js.native
   def apply(target: HTMLElement, `type`: js.Function, listener: js.Function, dontFix: js.Any): Unit = js.native
   /**

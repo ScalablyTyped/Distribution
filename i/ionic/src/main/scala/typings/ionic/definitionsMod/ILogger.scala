@@ -1,12 +1,12 @@
 package typings.ionic.definitionsMod
 
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.Logger
+import typings.ionicCliFramework.mod.Logger_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ILogger extends Logger {
+trait ILogger extends Logger_ {
   @JSName("ok")
   var ok_Original: LogFn = js.native
   @JSName("rawmsg")

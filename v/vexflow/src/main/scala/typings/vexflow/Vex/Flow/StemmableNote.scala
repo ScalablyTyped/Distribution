@@ -1,9 +1,9 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_BaseY
-import typings.vexflow.Anon_DotsDurationType
+import typings.vexflow.AnonBaseY
+import typings.vexflow.AnonDotsDurationType
+import typings.vexflow.AnonStemdirection
 import typings.vexflow.Anon_FillStyle
-import typings.vexflow.Anon_Stemdirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.StemmableNote")
 @js.native
 class StemmableNote protected () extends Note {
-  def this(note_struct: Anon_DotsDurationType) = this()
+  def this(note_struct: AnonDotsDurationType) = this()
   var flag: Glyph = js.native
   def buildStem(): StemmableNote = js.native
-  def drawStem(stem_struct: Anon_Stemdirection): Unit = js.native
+  def drawStem(stem_struct: AnonStemdirection): Unit = js.native
   def getAttribute(attr: String): js.Any = js.native
   def getBeamCount(): Double = js.native
   def getCenterGlyphX(): Double = js.native
@@ -22,7 +22,7 @@ class StemmableNote protected () extends Note {
    //inconsistent name: getStemMinumumLength -> getStemMinimumLength
   def getStemDirection(): Double = js.native
   def getStemExtension(): Double = js.native
-  def getStemExtents(): Anon_BaseY = js.native
+  def getStemExtents(): AnonBaseY = js.native
   def getStemLength(): Double = js.native
   def getStemMinumumLength(): Double = js.native
   def getStemX(): Double = js.native

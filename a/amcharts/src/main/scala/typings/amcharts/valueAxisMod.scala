@@ -33,7 +33,7 @@ object valueAxisMod extends js.Object {
       * hour, minute and second.
       * {DD:"d. ", hh:":", mm:":",ss:""}
       */
-    var durationUnits: Anon_DD = js.native
+    var durationUnits: AnonDD = js.native
     /**
       * Radar chart only. Possible values are: "polygons" and "circles". Set "circles" for polar charts.
       * @default "polygons"
@@ -191,7 +191,7 @@ object valueAxisMod extends js.Object {
       * @param type One of "axisChanged", "axisZoomed", "logarithmicAxisFailed".
       * @param handler The event handler.
       */
-    def addListener(`type`: String, handler: js.Function1[/* e */ Anon_ChartEndValue, Unit]): Unit = js.native
+    def addListener(`type`: String, handler: js.Function1[/* e */ AnonChartEndValue, Unit]): Unit = js.native
     /**
       * Number, - value of coordinate. Returns value of the coordinate.  coordinate - y or x coordinate, in pixels.
       */

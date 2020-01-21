@@ -1,21 +1,21 @@
 package typings.node.http2Mod
 
 import typings.node.streamMod.Duplex
-import typings.node.urlMod.URL
+import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientSessionOptions extends SessionOptions {
   @JSName("createConnection")
-  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL, /* option */ SessionOptions, Duplex]] = js.undefined
+  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ SessionOptions, Duplex]] = js.undefined
   var maxReservedRemoteStreams: js.UndefOr[Double] = js.undefined
 }
 
 object ClientSessionOptions {
   @scala.inline
   def apply(
-    createConnection: (/* authority */ URL, /* option */ SessionOptions) => Duplex = null,
+    createConnection: (/* authority */ URL_, /* option */ SessionOptions) => Duplex = null,
     maxDeflateDynamicTableSize: Int | Double = null,
     maxHeaderListPairs: Int | Double = null,
     maxOutstandingPings: Int | Double = null,

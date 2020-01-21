@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesSankey
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType
   ] = js.undefined
   /**
     * The style of this node.
@@ -21,14 +21,14 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * The lable style of this node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * The name of data item.
     *
@@ -42,7 +42,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sankey.data.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * The value of data item.
     *
@@ -55,11 +55,11 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorBorderType = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidth = null,
     name: String = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     value: js.Array[_] | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

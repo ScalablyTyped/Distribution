@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "koa-redis"
-version := "4.0-dt-20191127Z-4918ab"
+version := "4.0-dt-20191127Z-fdc76d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-b3e120",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-f1cf1e",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-0a9c38",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-1e22ed",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-b0737f",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191220Z-941e8c",
-  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20191226Z-e35051",
-  "org.scalablytyped" %%% "koa" % "2.11.0-dt-20191127Z-9993df",
-  "org.scalablytyped" %%% "koa-session" % "5.10-dt-20191126Z-292964",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e32d86",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-166e61",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190926Z-cbcbf8",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-949d85",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-6c767c",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-1b4f69",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-b60015",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20191002Z-4aabca",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-56f2e3",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191220Z-8b81e3",
+  "org.scalablytyped" %%% "keygrip" % "1.0-dt-20191226Z-98d69d",
+  "org.scalablytyped" %%% "koa" % "2.11.0-dt-20191127Z-f05fe3",
+  "org.scalablytyped" %%% "koa-session" % "5.10-dt-20191126Z-466977",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-03061a",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b58a9e",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190926Z-e726d3",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-314389",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

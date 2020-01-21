@@ -1,8 +1,8 @@
 package typings.parchment
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.parchment.distSrcBlotTextMod.default
-import typings.parchment.distSrcRegistryMod.Scope
+import typings.parchment.registryMod.Scope
+import typings.parchment.textMod.default
 import typings.std.Node
 import typings.std.Text
 import scala.scalajs.js

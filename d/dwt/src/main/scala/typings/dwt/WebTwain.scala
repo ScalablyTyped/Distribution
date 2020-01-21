@@ -79,7 +79,7 @@ trait WebTwain extends js.Object {
     * [Deprecated.] Returns or sets the border style.
     * @type {EnumDWT_BorderStyle}
     */
-  var BorderStyle: EnumDWT_BorderStyle = js.native
+  var BorderStyle: EnumDWTBorderStyle = js.native
   /**
     * Returns or sets the brightness values available within the Source. This is a runtime property.
     * @type {number}
@@ -144,7 +144,7 @@ trait WebTwain extends js.Object {
     * Sets or returns the type of capability container used to exchange capability information between application and source. This is a runtime property.
     * @type {EnumDWT_CapType}
     */
-  var CapType: EnumDWT_CapType = js.native
+  var CapType: EnumDWTCapType = js.native
   /**
     * Returns or sets the value of the capability specified by Capability property when the value of the CapType property is TWON_ONEVALUE. This is a runtime property.
     * @type {number}
@@ -164,7 +164,7 @@ trait WebTwain extends js.Object {
     * Specifies the capabiltiy to be negotiated. This is a runtime property.
     * @type {EnumDWT_Cap}
     */
-  var Capability: EnumDWT_Cap = js.native
+  var Capability: EnumDWTCap = js.native
   /**
     * Returns or sets the contrast values available within the Source. This is a runtime property.
     * @type {number}
@@ -194,7 +194,7 @@ trait WebTwain extends js.Object {
     * Returns whether the source supports duplex. If so, it further returns the level of duplex the Source supports (one pass or two pass duplex). This is a runtime, read-only property.
     * @type {EnumDWT_DUPLEX}
     */
-  val Duplex: EnumDWT_DUPLEX = js.native
+  val Duplex: EnumDWTDUPLEX = js.native
   /**
     * [Deprecated.] Returns or sets whether the user can zoom image using hot key.
     * @type {boolean}
@@ -229,7 +229,7 @@ trait WebTwain extends js.Object {
     * Returns or sets whether to resize the image to fit the image to the width or height of the window. To use the property, the view mode should be set to -1 by -1. You can use SetViewMode method to set the view mode.
     * @type {EnumDWT_FitWindowType}
     */
-  var FitWindowType: EnumDWT_FitWindowType = js.native
+  var FitWindowType: EnumDWTFitWindowType = js.native
   /**
     * [Deprecated.] Sets or returns the password used to log into the HTTP server.
     * @type {string}
@@ -504,7 +504,7 @@ trait WebTwain extends js.Object {
     * Returns the pixel type of the current image. This is a runtime, read-only property. Please note the property is only valid in OnPreTransfer and OnPostTransfer event.
     * @type {EnumDWT_PixelType}
     */
-  val ImagePixelType: EnumDWT_PixelType = js.native
+  val ImagePixelType: EnumDWTPixelType = js.native
   /**
     * [Deprecated.] Returns how width, in pixels, the image is. This is a runtime, read-only property.
     * @type {number}
@@ -584,7 +584,7 @@ trait WebTwain extends js.Object {
     * Returns or sets the compression type of PDF files. This is a runtime property.
     * @type {EnumDWT_PDFCompressionType}
     */
-  var PDFCompressionType: EnumDWT_PDFCompressionType = js.native
+  var PDFCompressionType: EnumDWTPDFCompressionType = js.native
   /**
     * Returns or sets the date when the PDF document is created.
     * @type {string}
@@ -629,7 +629,7 @@ trait WebTwain extends js.Object {
     * Returns or sets the page size(s) the Source can/should use to acquire image data. This is a runtime property.
     * @type {EnumDWT_CapSupportedSizes}
     */
-  var PageSize: EnumDWT_CapSupportedSizes = js.native
+  var PageSize: EnumDWTCapSupportedSizes = js.native
   /**
     * Returns the number of transfers the Source is ready to supply, upon demand. This is a runtime, read-only property.
     * @type {number}
@@ -644,7 +644,7 @@ trait WebTwain extends js.Object {
     * Returns or sets the pixel type of current data source. This is a runtime property. Using this property after calling OpenSource() method and before calling AcquireImage().
     * @type {EnumDWT_PixelType}
     */
-  var PixelType: EnumDWT_PixelType = js.native
+  var PixelType: EnumDWTPixelType = js.native
   /**
     * Sets or returns the product family string for the application identity.
     * @type {string}
@@ -699,17 +699,17 @@ trait WebTwain extends js.Object {
     * Returns or sets the compression type of TIFF files. This is a runtime property.
     * @type {EnumDWT_TIFFCompressionType}
     */
-  var TIFFCompressionType: EnumDWT_TIFFCompressionType = js.native
+  var TIFFCompressionType: EnumDWTTIFFCompressionType = js.native
   /**
     * Sets or returns the transfer mode.
     * @type {EnumDWT_TransferMode}
     */
-  var TransferMode: EnumDWT_TransferMode = js.native
+  var TransferMode: EnumDWTTransferMode = js.native
   /**
     * Returns or sets the unit of measure. This is a runtime property.
     * @type {EnumDWT_UnitType}
     */
-  var Unit: EnumDWT_UnitType = js.native
+  var Unit: EnumDWTUnitType = js.native
   /**
     * Specifies whether to show the vertical scroll bar
     * @type {boolean}
@@ -859,7 +859,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_MessageType} messageType specifies the type of capability operation.
     * @return {boolean}
     */
-  def CapIfSupported(messageType: EnumDWT_MessageType): Boolean = js.native
+  def CapIfSupported(messageType: EnumDWTMessageType): Boolean = js.native
   /**
     * Changes the Current Value of the capability specified by Capability property back to its power-on value.
     * @method WebTwain#CapReset
@@ -901,7 +901,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_InterpolationMethod} newVal specifies the method to do interpolation.
     * @return {boolean}
     */
-  def ChangeImageSize(sImageIndex: Double, iNewWidth: Double, iNewHeight: Double, newVal: EnumDWT_InterpolationMethod): Boolean = js.native
+  def ChangeImageSize(sImageIndex: Double, iNewWidth: Double, iNewHeight: Double, newVal: EnumDWTInterpolationMethod): Boolean = js.native
   /**
     * Clears all the web forms which are used for image uploading.
     * @method WebTwain#ClearAllHTTPFormField
@@ -953,7 +953,7 @@ trait WebTwain extends js.Object {
     */
   def ConvertToBase64(
     indices: js.Array[Double],
-    enumImageType: EnumDWT_ImageType,
+    enumImageType: EnumDWTImageType,
     asyncSuccessFunc: js.Function1[/* result */ Base64Result, Unit],
     asyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -964,7 +964,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_ImageType} enumImageType the image format in which the images are to be converted to base64.
     * @return {Blob}
     */
-  def ConvertToBlob(indices: js.Array[Double], enumImageType: EnumDWT_ImageType): Blob = js.native
+  def ConvertToBlob(indices: js.Array[Double], enumImageType: EnumDWTImageType): Blob = js.native
   /**
     * Converts the images specified by the indices to blob asynchronously.
     * @method WebTwain#ConvertToBlob
@@ -976,7 +976,7 @@ trait WebTwain extends js.Object {
     */
   def ConvertToBlob(
     indices: js.Array[Double],
-    enumImageType: EnumDWT_ImageType,
+    enumImageType: EnumDWTImageType,
     asyncSuccessFunc: js.Function1[/* result */ js.Any, Unit],
     asyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -1143,17 +1143,17 @@ trait WebTwain extends js.Object {
     * @param {function} optionalAsyncFailureFunc optional. The function to call when the download fails. Please refer to the function prototype OnFailure.
     * @return {boolean}
     */
-  def FTPDownloadEx(FTPServer: String, FTPRemoteFile: String, lImageType: EnumDWT_ImageType): Boolean = js.native
+  def FTPDownloadEx(FTPServer: String, FTPRemoteFile: String, lImageType: EnumDWTImageType): Boolean = js.native
   def FTPDownloadEx(
     FTPServer: String,
     FTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit]
   ): Boolean = js.native
   def FTPDownloadEx(
     FTPServer: String,
     FTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -1284,19 +1284,19 @@ trait WebTwain extends js.Object {
     * @param {function} optionalAsyncFailureFunc optional. The function to call when the upload fails. Please refer to the function prototype OnFailure.
     * @return {boolean}
     */
-  def FTPUploadEx(FTPServer: String, sImageIndex: Double, FTPRemoteFile: String, lImageType: EnumDWT_ImageType): Boolean = js.native
+  def FTPUploadEx(FTPServer: String, sImageIndex: Double, FTPRemoteFile: String, lImageType: EnumDWTImageType): Boolean = js.native
   def FTPUploadEx(
     FTPServer: String,
     sImageIndex: Double,
     FTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit]
   ): Boolean = js.native
   def FTPUploadEx(
     FTPServer: String,
     sImageIndex: Double,
     FTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -1397,7 +1397,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_ImageType} sImageType specifies the type of an image file..
     * @return {number}
     */
-  def GetImageSizeWithSpecifiedType(sImageIndex: Double, sImageType: EnumDWT_ImageType): Double = js.native
+  def GetImageSizeWithSpecifiedType(sImageIndex: Double, sImageType: EnumDWTImageType): Double = js.native
   /**
     * Returns the direct URL of an image specified by index, if iWidth or iHeight is set to -1, you get the original image, otherwise you get the image with specified iWidth or iHeight while keeping the same aspect ratio.
     * @method WebTwain#GetImageURL
@@ -1432,7 +1432,7 @@ trait WebTwain extends js.Object {
     * Return the runtime license info.
     * @method WebTwain#GetLicenseInfo
     */
-  def GetLicenseInfo(): Anon_Detail = js.native
+  def GetLicenseInfo(): AnonDetail = js.native
   /**
     * Returns the index of the selected image.
     * @method WebTwain#GetSelectedImageIndex
@@ -1446,7 +1446,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_ImageType} iImageType specifies the type of an image file.
     * @return {number}
     */
-  def GetSelectedImagesSize(iImageType: EnumDWT_ImageType): Double = js.native
+  def GetSelectedImagesSize(iImageType: EnumDWTImageType): Double = js.native
   /**
     * Check the skew angle of an image by its index in buffer.
     * @method WebTwain#GetSkewAngle
@@ -1528,17 +1528,17 @@ trait WebTwain extends js.Object {
     * @param {function} optionalAsyncFailureFunc optional. The function to call when the download fails. Please refer to the function prototype OnFailure.
     * @return {boolean}
     */
-  def HTTPDownloadEx(HTTPServer: String, HTTPRemoteFile: String, lImageType: EnumDWT_ImageType): Boolean = js.native
+  def HTTPDownloadEx(HTTPServer: String, HTTPRemoteFile: String, lImageType: EnumDWTImageType): Boolean = js.native
   def HTTPDownloadEx(
     HTTPServer: String,
     HTTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit]
   ): Boolean = js.native
   def HTTPDownloadEx(
     HTTPServer: String,
     HTTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -1556,17 +1556,17 @@ trait WebTwain extends js.Object {
     * @param {function} optionalAsyncFailureFunc optional. The function to call when the download fails. Please refer to the function prototype OnFailure.
     * @return {boolean}
     */
-  def HTTPDownloadThroughPost(HTTPServer: String, HTTPRemoteFile: String, lImageType: EnumDWT_ImageType): Boolean = js.native
+  def HTTPDownloadThroughPost(HTTPServer: String, HTTPRemoteFile: String, lImageType: EnumDWTImageType): Boolean = js.native
   def HTTPDownloadThroughPost(
     HTTPServer: String,
     HTTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit]
   ): Boolean = js.native
   def HTTPDownloadThroughPost(
     HTTPServer: String,
     HTTPRemoteFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function3[
       /* errorCode */ Double, 
@@ -1607,8 +1607,8 @@ trait WebTwain extends js.Object {
   def HTTPUpload(
     url: String,
     indices: js.Array[Double],
-    enumImageType: EnumDWT_ImageType,
-    dataFormat: EnumDWT_UploadDataFormat,
+    enumImageType: EnumDWTImageType,
+    dataFormat: EnumDWTUploadDataFormat,
     asyncSuccessFunc: js.Function1[/* httppostresponsestring */ String, Unit],
     asyncFailureFunc: js.Function3[
       /* errorCode */ Double, 
@@ -1851,14 +1851,14 @@ trait WebTwain extends js.Object {
     sImageIndex: Double,
     ActionPage: String,
     fileName: String,
-    lImageType: EnumDWT_ImageType
+    lImageType: EnumDWTImageType
   ): Boolean = js.native
   def HTTPUploadThroughPostEx(
     HTTPServer: String,
     sImageIndex: Double,
     ActionPage: String,
     fileName: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit]
   ): Boolean = js.native
   def HTTPUploadThroughPostEx(
@@ -1866,7 +1866,7 @@ trait WebTwain extends js.Object {
     sImageIndex: Double,
     ActionPage: String,
     fileName: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function3[
       /* errorCode */ Double, 
@@ -1968,19 +1968,19 @@ trait WebTwain extends js.Object {
     * @param {function} optionalAsyncFailureFunc optional. The function to call when the upload fails. Please refer to the function prototype OnFailure.
     * @return {boolean}
     */
-  def HTTPUploadThroughPutEx(HTTPServer: String, sImageIndex: Double, RemoteFileName: String, lImageType: EnumDWT_ImageType): Boolean = js.native
+  def HTTPUploadThroughPutEx(HTTPServer: String, sImageIndex: Double, RemoteFileName: String, lImageType: EnumDWTImageType): Boolean = js.native
   def HTTPUploadThroughPutEx(
     HTTPServer: String,
     sImageIndex: Double,
     RemoteFileName: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit]
   ): Boolean = js.native
   def HTTPUploadThroughPutEx(
     HTTPServer: String,
     sImageIndex: Double,
     RemoteFileName: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -2070,11 +2070,11 @@ trait WebTwain extends js.Object {
     * @param {function} optionalAsyncFailureFunc optional. The function to call when the loading fails. Please refer to the function prototype OnFailure.
     * @return {boolean}
     */
-  def LoadImageEx(localFile: String, lImageType: EnumDWT_ImageType): Boolean = js.native
-  def LoadImageEx(localFile: String, lImageType: EnumDWT_ImageType, optionalAsyncSuccessFunc: js.Function0[Unit]): Boolean = js.native
+  def LoadImageEx(localFile: String, lImageType: EnumDWTImageType): Boolean = js.native
+  def LoadImageEx(localFile: String, lImageType: EnumDWTImageType, optionalAsyncSuccessFunc: js.Function0[Unit]): Boolean = js.native
   def LoadImageEx(
     localFile: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -2085,11 +2085,11 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_ImageType} lImageType specifies the file format.
     * @return {boolean}
     */
-  def LoadImageFromBase64Binary(bry: String, lImageType: EnumDWT_ImageType): Boolean = js.native
-  def LoadImageFromBase64Binary(bry: String, lImageType: EnumDWT_ImageType, optionalAsyncSuccessFunc: js.Function0[Unit]): Boolean = js.native
+  def LoadImageFromBase64Binary(bry: String, lImageType: EnumDWTImageType): Boolean = js.native
+  def LoadImageFromBase64Binary(bry: String, lImageType: EnumDWTImageType, optionalAsyncSuccessFunc: js.Function0[Unit]): Boolean = js.native
   def LoadImageFromBase64Binary(
     bry: String,
-    lImageType: EnumDWT_ImageType,
+    lImageType: EnumDWTImageType,
     optionalAsyncSuccessFunc: js.Function0[Unit],
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
@@ -2101,7 +2101,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_ImageType} lImageType Specifies the file format.
     * @return {boolean}
     */
-  def LoadImageFromBytes(lBufferSize: Double, buffer: js.Array[Double], lImageType: EnumDWT_ImageType): Boolean = js.native
+  def LoadImageFromBytes(lBufferSize: Double, buffer: js.Array[Double], lImageType: EnumDWTImageType): Boolean = js.native
   /**
     * Mirrors the image of a specified index in buffer.
     * @method WebTwain#Mirror
@@ -2220,7 +2220,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_InterpolationMethod} newVal specifies the method to do interpolation.
     * @return {boolean}
     */
-  def RotateEx(sImageIndex: Double, fAngle: Double, bKeepSize: Boolean, newVal: EnumDWT_InterpolationMethod): Boolean = js.native
+  def RotateEx(sImageIndex: Double, fAngle: Double, bKeepSize: Boolean, newVal: EnumDWTInterpolationMethod): Boolean = js.native
   /**
     * Rotates the image of a specified index in buffer by 90 degrees counter-clockwise.
     * @method WebTwain#RotateLeft
@@ -2465,7 +2465,7 @@ trait WebTwain extends js.Object {
     xResolution: Double,
     yResolution: Double,
     bResampleImage: Boolean,
-    newVal: EnumDWT_InterpolationMethod
+    newVal: EnumDWTInterpolationMethod
   ): Boolean = js.native
   def SetDefaultTag(tagName: String): Boolean = js.native
   /**
@@ -2475,7 +2475,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_FileFormat} fileFormat an enumerated value indicates the format of the image.
     * @return {boolean}
     */
-  def SetFileXferInfo(fileName: String, fileFormat: EnumDWT_FileFormat): Boolean = js.native
+  def SetFileXferInfo(fileName: String, fileFormat: EnumDWTFileFormat): Boolean = js.native
   /**
     * Sets a text parameter as a filed in a web form. This form is maintained by the component itself (meaning it's not on the page). All fields in this form will be passed to the server when uploading images.
     * @method WebTwain#SetHTTPFormField
@@ -2526,7 +2526,7 @@ trait WebTwain extends js.Object {
     * @param {EnumDWT_Language} language  specify the language
     * @return {boolean}
     */
-  def SetLanguage(language: EnumDWT_Language): Boolean = js.native
+  def SetLanguage(language: EnumDWTLanguage): Boolean = js.native
   /**
     * Sets the time-out used to open a specified Data Source.
     * @method WebTwain#SetOpenSourceTimeout

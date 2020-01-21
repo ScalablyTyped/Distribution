@@ -11,7 +11,7 @@ trait HTMLFrameElement extends HTMLElement {
     * Retrieves the document object of the page or frame.
     */
   /** @deprecated */
-  val contentDocument: Document | Null = js.native
+  val contentDocument: Document_ | Null = js.native
   /**
     * Retrieves the object of the specified.
     */

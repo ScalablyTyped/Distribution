@@ -16,24 +16,24 @@ import scala.scalajs.js.annotation._
 @js.native
 object netMod extends js.Object {
   @js.native
-  class Smtp () extends Class_Smtp
+  class Smtp () extends ClassSmtp
   
   @js.native
-  class Socket () extends Class_Socket
+  class Socket () extends ClassSocket
   
   @js.native
-  class TcpServer () extends Class_TcpServer
+  class TcpServer () extends ClassTcpServer
   
   @js.native
-  class Url () extends Class_UrlObject
+  class Url () extends ClassUrlObject
   
   val AF_INET: `2` = js.native
   val AF_INET6: `10` = js.native
   val SOCK_DGRAM: `2` = js.native
   val SOCK_STREAM: `1` = js.native
   def backend(): String = js.native
-  def connect(url: String): Class_Stream = js.native
-  def connect(url: String, timeout: Double): Class_Stream = js.native
+  def connect(url: String): ClassStream = js.native
+  def connect(url: String, timeout: Double): ClassStream = js.native
   def info(): js.Object = js.native
   def ip(name: String): String = js.native
   def ipv6(name: String): String = js.native
@@ -43,8 +43,8 @@ object netMod extends js.Object {
   def isIPv4(ip: String): Boolean = js.native
   def isIPv6(): Boolean = js.native
   def isIPv6(ip: String): Boolean = js.native
-  def openSmtp(url: String): Class_Smtp = js.native
-  def openSmtp(url: String, timeout: Double): Class_Smtp = js.native
+  def openSmtp(url: String): ClassSmtp = js.native
+  def openSmtp(url: String, timeout: Double): ClassSmtp = js.native
   def resolve(name: String): String = js.native
   def resolve(name: String, family: Double): String = js.native
 }

@@ -38,7 +38,7 @@ object KeyboardEventInit {
     modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
     repeat: js.UndefOr[scala.Boolean] = js.undefined,
     shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    view: Window = null
+    view: Window_ = null
   ): KeyboardEventInit = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])

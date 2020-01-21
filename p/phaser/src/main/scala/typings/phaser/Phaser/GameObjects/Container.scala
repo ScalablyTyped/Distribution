@@ -1,6 +1,6 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.Phaser.GameObjects.Components.Alpha
+import typings.phaser.Phaser.GameObjects.Components.AlphaSingle
 import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.ComputedSize
 import typings.phaser.Phaser.GameObjects.Components.Depth
@@ -55,7 +55,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Container protected ()
   extends GameObject
-     with Alpha
+     with AlphaSingle
      with BlendMode
      with ComputedSize
      with Depth

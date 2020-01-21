@@ -1,6 +1,6 @@
 package typings.photonui.photonui
 
-import typings.photonui.Anon_X
+import typings.photonui.AnonX
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 object Helpers extends js.Object {
   def cleanNode(node: HTMLElement): Unit = js.native
   def escapeHtml(string: String): Unit = js.native
-  def getAbsolutePosition(element: String): Anon_X = js.native
-  def getAbsolutePosition(element: HTMLElement): Anon_X = js.native
+  def getAbsolutePosition(element: String): AnonX = js.native
+  def getAbsolutePosition(element: HTMLElement): AnonX = js.native
   def numberToCssSize(value: Double): String = js.native
   def numberToCssSize(value: Double, defaultValue: Double): String = js.native
   def numberToCssSize(value: Double, defaultValue: Double, nullValue: String): String = js.native

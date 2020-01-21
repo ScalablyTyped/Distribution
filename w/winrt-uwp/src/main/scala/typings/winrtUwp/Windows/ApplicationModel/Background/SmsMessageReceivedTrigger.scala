@@ -1,0 +1,18 @@
+package typings.winrtUwp.Windows.ApplicationModel.Background
+
+import typings.winrtUwp.Windows.Devices.Sms.SmsFilterRules
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Represents a trigger that is raised when an SMS message has arrived. */
+@JSGlobal("Windows.ApplicationModel.Background.SmsMessageReceivedTrigger")
+@js.native
+class SmsMessageReceivedTrigger protected () extends js.Object {
+  /**
+    * Initializes a new instance of an SMS message received trigger.
+    * @param filterRules Filter rules to be applied to incoming SMS messages. Only messages that pass through the filter rules raise the trigger.
+    */
+  def this(filterRules: SmsFilterRules) = this()
+}
+

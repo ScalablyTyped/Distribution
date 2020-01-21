@@ -1,8 +1,8 @@
 package typings.jsdom
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.toughDashCookie.toughDashCookieMod.Cookie
-import typings.toughDashCookie.toughDashCookieMod.Cookie.ParseOptions
+import typings.toughCookie.mod.Cookie
+import typings.toughCookie.mod.Cookie.ParseOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

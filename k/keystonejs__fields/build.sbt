@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keystonejs__fields"
-version := "5.1-dt-20191115Z-7ad2af"
+version := "5.1-dt-20191115Z-9eb6d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

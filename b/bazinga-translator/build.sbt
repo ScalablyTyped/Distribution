@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bazinga-translator"
-version := "0.0-unknown-dt-20190722Z-a156fc"
+version := "0.0-unknown-dt-20190722Z-2363f4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

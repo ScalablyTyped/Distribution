@@ -1,6 +1,6 @@
 package typings.sharepoint.SP.UI.ApplicationPages
 
-import typings.microsoftDashAjax.Sys.Component
+import typings.microsoftAjax.Sys.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

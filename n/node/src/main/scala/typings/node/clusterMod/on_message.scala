@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object on_message extends js.Object {
   def apply(
     event: message,
-    listener: js.Function3[/* worker */ Worker, /* message */ js.Any, /* handle */ Socket | Server, Unit]
+    listener: js.Function3[/* worker */ Worker_, /* message */ js.Any, /* handle */ Socket | Server, Unit]
   ): Cluster = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -53,7 +53,7 @@ class SplitViewPaneToggle () extends js.Object {
     * Raised when the SplitViewPaneToggle is invoked.
     * @param eventInfo An object that contains information about the event.
     **/
-  def oninvoked(eventInfo: Event): Unit = js.native
+  def oninvoked(eventInfo: Event_): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.

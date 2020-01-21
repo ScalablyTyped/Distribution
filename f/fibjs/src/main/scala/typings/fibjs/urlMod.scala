@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object urlMod extends js.Object {
   def format(args: js.Object): String = js.native
-  def parse(url: String): Class_UrlObject = js.native
-  def parse(url: String, parseQueryString: Boolean): Class_UrlObject = js.native
-  def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Class_UrlObject = js.native
+  def parse(url: String): ClassUrlObject = js.native
+  def parse(url: String, parseQueryString: Boolean): ClassUrlObject = js.native
+  def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): ClassUrlObject = js.native
 }
 

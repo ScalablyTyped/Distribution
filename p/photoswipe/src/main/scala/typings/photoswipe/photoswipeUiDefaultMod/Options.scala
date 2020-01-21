@@ -1,0 +1,327 @@
+package typings.photoswipe.photoswipeUiDefaultMod
+
+import typings.photoswipe.AnonBottom
+import typings.photoswipe.AnonW
+import typings.std.HTMLElement
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options
+  extends typings.photoswipe.mod.Options {
+  /**
+    * Function to build caption markup. The function takes three parameters:
+    *
+    * item      - slide object
+    * captionEl - caption DOM element
+    * isFake    - true when content is added to fake caption container
+    *             (used to get size of next or previous caption)
+    *
+    * Return whether to show the caption or not.
+    *
+    * Default is:
+    *
+    * function(item, captionEl, isFake) {
+    *     if(!item.title) {
+    *         captionEl.children[0].innerHTML = '';
+    *         return false;
+    *     }
+    *     captionEl.children[0].innerHTML = item.title;
+    *     return true;
+    * }
+    *
+    */
+  var addCaptionHTMLFn: js.UndefOr[
+    js.Function3[/* item */ Item, /* captionEl */ HTMLElement, /* isFake */ Boolean, Boolean]
+  ] = js.undefined
+  /**
+    * Whether to show the left/right directional arrows.
+    *
+    * Default true.
+    */
+  var arrowEl: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Size of top & bottom bars in pixels. "bottom" parameter can be 'auto' (will calculate height of caption).
+    * Option applies only when mouse is used, or when width of screen is more than 1200px.
+    * Also look at `parseVerticalMargin` event.
+    *
+    * Default {top: 44, bottom: "auto"}.
+    */
+  var barsSize: js.UndefOr[AnonBottom] = js.undefined
+  /**
+    * Whether to show the caption.
+    *
+    * Default true.
+    */
+  var captionEl: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Mouse click on image should close the gallery, only when image is smaller than size of the viewport.
+    *
+    * Default true.
+    */
+  var clickToCloseNonZoomable: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Whether to show the close button.
+    *
+    * Default true.
+    */
+  var closeEl: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Element classes that should close PhotoSwipe when clicked on.
+    * In HTML markup, class should always start with "pswp__", e.g.: "pswp__item", "pswp__caption".
+    *
+    * "pswp__ui--over-close" class will be added to root element of UI when mouse is over one of these elements
+    * By default it's used to highlight the close button.
+    *
+    * Default ['item', 'caption', 'zoom-wrap', 'ui', 'top-bar'].
+    */
+  var closeElClasses: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * Whether to show the current image's index in the gallery (located in top-left corner by default).
+    *
+    * Default true.
+    */
+  var counterEl: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Whether to show the fullscreen button.
+    *
+    * Default true.
+    */
+  var fullscreenEl: js.UndefOr[Boolean] = js.undefined
+  /**
+    * A callback that should return the URL for the currently selected image. The callback is passed
+    * the shareButtonData entry that was clicked on.
+    *
+    * Default is:
+    *
+    * function( shareButtonData ) {
+    *     // `shareButtonData` - object from shareButtons array
+    *     //
+    *     // `pswp` is the gallery instance object,
+    *     // you should define it by yourself
+    *     //
+    *     return pswp.currItem.src || '';
+    * }
+    *
+    */
+  var getImageURLForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.undefined
+  /**
+    * A callback that should return the "Page" associated with the selected image. (e.g. on Facebook, the shared
+    * content will be associated with the returned page). The callback is passed the shareButtonData entry that
+    * was clicked on.
+    *
+    * Default is:
+    *
+    * function( shareButtonData ) {
+    *     return window.location.href;
+    * }
+    *
+    */
+  var getPageURLForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.undefined
+  /**
+    * A callback that should return the Text associated with the selected image. The callback is passed
+    * the shareButtonData entry that was clicked on.
+    *
+    * Default is:
+    *
+    * function( shareButtonData ) {
+    *     return pswp.currItem.title || '';
+    * }
+    *
+    */
+  var getTextForShare: js.UndefOr[js.Function1[/* shareButtonData */ ShareButtonData, String]] = js.undefined
+  /**
+    * Separator for "1 of X" counter.
+    *
+    * Default ' / '.
+    */
+  var indexIndicatorSep: js.UndefOr[String] = js.undefined
+  /**
+    * Delay in milliseconds until loading indicator is displayed.
+    *
+    * Default 1000.
+    */
+  var loadingIndicatorDelay: js.UndefOr[Double] = js.undefined
+  /**
+    * A final output callback that you can use to further modify the share button's HTML. The callback is passed
+    * (1) the shareButtonData entry being generated, and (2) the default HTML generated by PhotoSwipUI_Default.
+    *
+    * Default is:
+    *
+    * function(shareButtonData, shareButtonOut) {
+    *     return shareButtonOut;
+    * }
+    *
+    */
+  var parseShareButtonOut: js.UndefOr[
+    js.Function2[/* shareButtonData */ ShareButtonData, /* shareButtonOut */ String, String]
+  ] = js.undefined
+  /**
+    * Whether to show the preloader element.
+    *
+    * Default true.
+    */
+  var preloaderEl: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The entries that show up when you click the Share button.
+    *
+    * Default is:
+    *
+    * [
+    *     {id:'facebook', label:'Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u='},
+    *     {id:'twitter', label:'Tweet', url:'https://twitter.com/intent/tweet?text=&url='},
+    *     {id:'pinterest', label:'Pin it', url:'http://www.pinterest.com/pin/create/button/?url=&media=&description='},
+    *     {id:'download', label:'Download image', url:'', download:true}
+    * ]
+    *
+    */
+  var shareButtons: js.UndefOr[js.Array[ShareButtonData]] = js.undefined
+  /**
+    * Whether to show the share button.
+    *
+    * Default true.
+    */
+  var shareEl: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Tap on sliding area should close gallery.
+    *
+    * Default false.
+    */
+  var tapToClose: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Tap should toggle visibility of controls.
+    *
+    * Default true.
+    */
+  var tapToToggleControls: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Adds class pswp__ui--idle to pswp__ui element when mouse isn't moving for timeToIdle milliseconds.
+    *
+    * Default 4000.
+    */
+  var timeToIdle: js.UndefOr[Double] = js.undefined
+  /**
+    * Adds class pswp__ui--idle to pswp__ui element when mouse leaves the window for timeToIdleOutside milliseconds.
+    *
+    * Default 1000.
+    */
+  var timeToIdleOutside: js.UndefOr[Double] = js.undefined
+  /**
+    * Whether to show the zoom button.
+    *
+    * Default true.
+    */
+  var zoomEl: js.UndefOr[Boolean] = js.undefined
+}
+
+object Options {
+  @scala.inline
+  def apply(
+    addCaptionHTMLFn: (/* item */ Item, /* captionEl */ HTMLElement, /* isFake */ Boolean) => Boolean = null,
+    allowNoPanText: js.UndefOr[Boolean] = js.undefined,
+    arrowEl: js.UndefOr[Boolean] = js.undefined,
+    arrowKeys: js.UndefOr[Boolean] = js.undefined,
+    barsSize: AnonBottom = null,
+    bgOpacity: Int | Double = null,
+    captionEl: js.UndefOr[Boolean] = js.undefined,
+    clickToCloseNonZoomable: js.UndefOr[Boolean] = js.undefined,
+    closeEl: js.UndefOr[Boolean] = js.undefined,
+    closeElClasses: js.Array[String] = null,
+    closeOnScroll: js.UndefOr[Boolean] = js.undefined,
+    closeOnVerticalDrag: js.UndefOr[Boolean] = js.undefined,
+    counterEl: js.UndefOr[Boolean] = js.undefined,
+    errorMsg: String = null,
+    escKey: js.UndefOr[Boolean] = js.undefined,
+    focus: js.UndefOr[Boolean] = js.undefined,
+    fullscreenEl: js.UndefOr[Boolean] = js.undefined,
+    galleryUID: Int | Double = null,
+    getDoubleTapZoom: (/* isMouseClick */ Boolean, /* item */ typings.photoswipe.mod.Item) => Double = null,
+    getImageURLForShare: /* shareButtonData */ ShareButtonData => String = null,
+    getNumItemsFn: () => Double = null,
+    getPageURLForShare: /* shareButtonData */ ShareButtonData => String = null,
+    getTextForShare: /* shareButtonData */ ShareButtonData => String = null,
+    getThumbBoundsFn: /* index */ Double => AnonW = null,
+    hideAnimationDuration: Int | Double = null,
+    history: js.UndefOr[Boolean] = js.undefined,
+    index: Int | Double = null,
+    indexIndicatorSep: String = null,
+    isClickableElement: /* el */ HTMLElement => Boolean = null,
+    loadingIndicatorDelay: Int | Double = null,
+    loop: js.UndefOr[Boolean] = js.undefined,
+    mainClass: String = null,
+    mainScrollEndFriction: Int | Double = null,
+    maxSpreadZoom: Int | Double = null,
+    modal: js.UndefOr[Boolean] = js.undefined,
+    mouseUsed: js.UndefOr[Boolean] = js.undefined,
+    panEndFriction: Int | Double = null,
+    parseShareButtonOut: (/* shareButtonData */ ShareButtonData, /* shareButtonOut */ String) => String = null,
+    pinchToClose: js.UndefOr[Boolean] = js.undefined,
+    preload: js.Array[Double] = null,
+    preloaderEl: js.UndefOr[Boolean] = js.undefined,
+    shareButtons: js.Array[ShareButtonData] = null,
+    shareEl: js.UndefOr[Boolean] = js.undefined,
+    showAnimationDuration: Int | Double = null,
+    showHideOpacity: js.UndefOr[Boolean] = js.undefined,
+    spacing: Int | Double = null,
+    tapToClose: js.UndefOr[Boolean] = js.undefined,
+    tapToToggleControls: js.UndefOr[Boolean] = js.undefined,
+    timeToIdle: Int | Double = null,
+    timeToIdleOutside: Int | Double = null,
+    zoomEl: js.UndefOr[Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (addCaptionHTMLFn != null) __obj.updateDynamic("addCaptionHTMLFn")(js.Any.fromFunction3(addCaptionHTMLFn))
+    if (!js.isUndefined(allowNoPanText)) __obj.updateDynamic("allowNoPanText")(allowNoPanText.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowEl)) __obj.updateDynamic("arrowEl")(arrowEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowKeys)) __obj.updateDynamic("arrowKeys")(arrowKeys.asInstanceOf[js.Any])
+    if (barsSize != null) __obj.updateDynamic("barsSize")(barsSize.asInstanceOf[js.Any])
+    if (bgOpacity != null) __obj.updateDynamic("bgOpacity")(bgOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(captionEl)) __obj.updateDynamic("captionEl")(captionEl.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToCloseNonZoomable)) __obj.updateDynamic("clickToCloseNonZoomable")(clickToCloseNonZoomable.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeEl)) __obj.updateDynamic("closeEl")(closeEl.asInstanceOf[js.Any])
+    if (closeElClasses != null) __obj.updateDynamic("closeElClasses")(closeElClasses.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnScroll)) __obj.updateDynamic("closeOnScroll")(closeOnScroll.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnVerticalDrag)) __obj.updateDynamic("closeOnVerticalDrag")(closeOnVerticalDrag.asInstanceOf[js.Any])
+    if (!js.isUndefined(counterEl)) __obj.updateDynamic("counterEl")(counterEl.asInstanceOf[js.Any])
+    if (errorMsg != null) __obj.updateDynamic("errorMsg")(errorMsg.asInstanceOf[js.Any])
+    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullscreenEl)) __obj.updateDynamic("fullscreenEl")(fullscreenEl.asInstanceOf[js.Any])
+    if (galleryUID != null) __obj.updateDynamic("galleryUID")(galleryUID.asInstanceOf[js.Any])
+    if (getDoubleTapZoom != null) __obj.updateDynamic("getDoubleTapZoom")(js.Any.fromFunction2(getDoubleTapZoom))
+    if (getImageURLForShare != null) __obj.updateDynamic("getImageURLForShare")(js.Any.fromFunction1(getImageURLForShare))
+    if (getNumItemsFn != null) __obj.updateDynamic("getNumItemsFn")(js.Any.fromFunction0(getNumItemsFn))
+    if (getPageURLForShare != null) __obj.updateDynamic("getPageURLForShare")(js.Any.fromFunction1(getPageURLForShare))
+    if (getTextForShare != null) __obj.updateDynamic("getTextForShare")(js.Any.fromFunction1(getTextForShare))
+    if (getThumbBoundsFn != null) __obj.updateDynamic("getThumbBoundsFn")(js.Any.fromFunction1(getThumbBoundsFn))
+    if (hideAnimationDuration != null) __obj.updateDynamic("hideAnimationDuration")(hideAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(history)) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (indexIndicatorSep != null) __obj.updateDynamic("indexIndicatorSep")(indexIndicatorSep.asInstanceOf[js.Any])
+    if (isClickableElement != null) __obj.updateDynamic("isClickableElement")(js.Any.fromFunction1(isClickableElement))
+    if (loadingIndicatorDelay != null) __obj.updateDynamic("loadingIndicatorDelay")(loadingIndicatorDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
+    if (mainScrollEndFriction != null) __obj.updateDynamic("mainScrollEndFriction")(mainScrollEndFriction.asInstanceOf[js.Any])
+    if (maxSpreadZoom != null) __obj.updateDynamic("maxSpreadZoom")(maxSpreadZoom.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (!js.isUndefined(mouseUsed)) __obj.updateDynamic("mouseUsed")(mouseUsed.asInstanceOf[js.Any])
+    if (panEndFriction != null) __obj.updateDynamic("panEndFriction")(panEndFriction.asInstanceOf[js.Any])
+    if (parseShareButtonOut != null) __obj.updateDynamic("parseShareButtonOut")(js.Any.fromFunction2(parseShareButtonOut))
+    if (!js.isUndefined(pinchToClose)) __obj.updateDynamic("pinchToClose")(pinchToClose.asInstanceOf[js.Any])
+    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (!js.isUndefined(preloaderEl)) __obj.updateDynamic("preloaderEl")(preloaderEl.asInstanceOf[js.Any])
+    if (shareButtons != null) __obj.updateDynamic("shareButtons")(shareButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(shareEl)) __obj.updateDynamic("shareEl")(shareEl.asInstanceOf[js.Any])
+    if (showAnimationDuration != null) __obj.updateDynamic("showAnimationDuration")(showAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(showHideOpacity)) __obj.updateDynamic("showHideOpacity")(showHideOpacity.asInstanceOf[js.Any])
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToClose)) __obj.updateDynamic("tapToClose")(tapToClose.asInstanceOf[js.Any])
+    if (!js.isUndefined(tapToToggleControls)) __obj.updateDynamic("tapToToggleControls")(tapToToggleControls.asInstanceOf[js.Any])
+    if (timeToIdle != null) __obj.updateDynamic("timeToIdle")(timeToIdle.asInstanceOf[js.Any])
+    if (timeToIdleOutside != null) __obj.updateDynamic("timeToIdleOutside")(timeToIdleOutside.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomEl)) __obj.updateDynamic("zoomEl")(zoomEl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -71,7 +71,7 @@ trait JQueryJqGridColumn extends js.Object {
     * @returns {} the formatted value
     */
   var formatter: js.UndefOr[
-    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ Anon_ColModel, /* rowObject */ js.Any, _])
+    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ AnonColModel, /* rowObject */ js.Any, _])
   ] = js.undefined
   /**
     * Defines if this column is hidden at initialization.
@@ -121,7 +121,7 @@ object JQueryJqGridColumn {
     classes: String = null,
     datefmt: String = null,
     editable: js.UndefOr[Boolean] = js.undefined,
-    formatter: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ Anon_ColModel, /* rowObject */ js.Any, _]) = null,
+    formatter: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ AnonColModel, /* rowObject */ js.Any, _]) = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     index: String = null,
     key: js.UndefOr[Boolean] = js.undefined,

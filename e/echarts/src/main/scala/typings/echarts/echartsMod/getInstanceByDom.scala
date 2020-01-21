@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("echarts", "getInstanceByDom")
+@JSImport("echarts/lib/echarts", "getInstanceByDom")
 @js.native
 object getInstanceByDom extends js.Object {
   def apply(target: HTMLCanvasElement): ECharts = js.native

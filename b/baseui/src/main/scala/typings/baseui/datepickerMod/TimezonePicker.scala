@@ -1,6 +1,6 @@
 package typings.baseui.datepickerMod
 
-import typings.react.reactMod.Component
+import typings.react.mod.Component
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`

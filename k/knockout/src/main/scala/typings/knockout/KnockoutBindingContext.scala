@@ -40,7 +40,7 @@ trait KnockoutBindingContext extends js.Object {
     dataItemOrAccessor: js.Any,
     dataItemAlias: String,
     extendCallback: js.Function,
-    options: Anon_ExportDependencies
+    options: AnonExportDependencies
   ): js.Any = js.native
   def extend(properties: js.Function0[StringDictionary[_]]): KnockoutBindingContext = js.native
   /**

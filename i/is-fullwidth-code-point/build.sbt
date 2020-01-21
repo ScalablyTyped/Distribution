@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-fullwidth-code-point"
-version := "3.0.0-03944c"
+version := "3.0.0-3b0f38"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object statusMod {
-  type Status = Status_
+  type Status = typings.nodegit.statusMod.Status_
 }

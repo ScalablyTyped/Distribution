@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object delegate {
-  import typings.dojo.Anon_Type
-
   /**
     * Animate the effects of adding a class to all nodes in this list.
     * see dojox.fx.addClass
@@ -14,7 +12,7 @@ package object delegate {
     * @param cssClass
     * @param args
     */
-  type addClassFx = js.Function2[/* cssClass */ js.Any, /* args */ js.Any, Anon_Type]
+  type addClassFx = js.Function2[/* cssClass */ js.Any, /* args */ js.Any, typings.dojo.AnonType]
   /**
     * Adds the nodes from the previous dojo/NodeList to the current dojo/NodeList.
     * .end() can be used on the returned dojo/NodeList to get back to the
@@ -35,10 +33,10 @@ package object delegate {
     */
   type anim = js.Function5[
     /* properties */ js.Object, 
-    /* duration */ Double, 
+    /* duration */ scala.Double, 
     /* easing */ js.Function, 
     /* onEnd */ js.Function, 
-    /* delay */ Double, 
+    /* delay */ scala.Double, 
     js.Any
   ]
   /**
@@ -57,14 +55,14 @@ package object delegate {
     *
     * @param query
     */
-  type appendTo = js.Function1[/* query */ String, js.Any]
+  type appendTo = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns a new NodeList comprised of items in this NodeList
     * at the given index or indices.
     *
     * @param index One or more 0-based indices of items in the currentNodeList. A negative index will start at the end of thelist and go backwards.
     */
-  type at = js.Function1[/* index */ js.Array[Double], js.Any]
+  type at = js.Function1[/* index */ js.Array[scala.Double], js.Any]
   /**
     * gets or sets the DOM attribute for every element in the
     * NodeList. See also dojo/dom-attr
@@ -72,7 +70,7 @@ package object delegate {
     * @param property the attribute to get/set
     * @param value               Optionaloptional. The value to set the property to
     */
-  type attr = js.Function2[/* property */ String, /* value */ String, js.Any]
+  type attr = js.Function2[/* property */ java.lang.String, /* value */ java.lang.String, js.Any]
   /**
     * Returns all immediate child elements for nodes in this dojo/NodeList.
     * Optionally takes a query to filter the child elements.
@@ -81,7 +79,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type children = js.Function1[/* query */ String, js.Any]
+  type children = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Clones all the nodes in this NodeList and returns them as a new NodeList.
     * Only the DOM nodes are cloned, not any attached event handlers.
@@ -107,7 +105,7 @@ package object delegate {
     * the node passed is each node in this list.
     *
     */
-  type coords = js.Function0[Unit]
+  type coords = js.Function0[scala.Unit]
   /**
     * Monitor nodes in this NodeList for [bubbled] events on nodes that match selector.
     * Calls fn(evt) for those events, where (inside of fn()), this == the node
@@ -127,14 +125,19 @@ package object delegate {
     * @param eventName Standard event name used as an argument to dojo.connect, like "onclick".
     * @param fn Callback function passed the event object, and where this == the node that matches the selector.That means that for example, after setting up a handler viadojo.query("body").delegate("fieldset", "onclick", ...)clicking on a fieldset or any nodes inside of a fieldset will be reportedas a click on the fieldset itself.
     */
-  type delegate = js.Function3[/* selector */ String, /* eventName */ String, /* fn */ js.Function, js.Any]
+  type delegate = js.Function3[
+    /* selector */ java.lang.String, 
+    /* eventName */ java.lang.String, 
+    /* fn */ js.Function, 
+    js.Any
+  ]
   /**
     * Renders the specified template in each of the NodeList entries.
     *
     * @param template The template string or location
     * @param context The context object or location
     */
-  type dtl = js.Function2[/* template */ String, /* context */ js.Object, js.Function]
+  type dtl = js.Function2[/* template */ java.lang.String, /* context */ js.Object, js.Function]
   /**
     * clears all content from each node in the list. Effectively
     * equivalent to removing all child nodes from every item in
@@ -206,7 +209,7 @@ package object delegate {
     * @param value The value to search for.
     * @param fromIndex               OptionalThe location to start searching from. Optional. Defaults to 0.
     */
-  type indexOf = js.Function2[/* value */ js.Object, /* fromIndex */ Double, js.Any]
+  type indexOf = js.Function2[/* value */ js.Object, /* fromIndex */ scala.Double, js.Any]
   /**
     * The nodes in this NodeList will be placed after the nodes
     * matched by the query passed to insertAfter.
@@ -216,7 +219,7 @@ package object delegate {
     *
     * @param query
     */
-  type insertAfter = js.Function1[/* query */ String, js.Any]
+  type insertAfter = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * The nodes in this NodeList will be placed after the nodes
     * matched by the query passed to insertAfter.
@@ -226,7 +229,7 @@ package object delegate {
     *
     * @param query
     */
-  type insertBefore = js.Function1[/* query */ String, js.Any]
+  type insertBefore = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns the last node in this dojo/NodeList as a dojo/NodeList.
     * .end() can be used on the returned dojo/NodeList to get back to the
@@ -244,7 +247,7 @@ package object delegate {
     * @param value The value to search for.
     * @param fromIndex               OptionalThe location to start searching from. Optional. Defaults to 0.
     */
-  type lastIndexOf = js.Function2[/* value */ js.Object, /* fromIndex */ Double, js.Any]
+  type lastIndexOf = js.Function2[/* value */ js.Object, /* fromIndex */ scala.Double, js.Any]
   /**
     * see dojo/_base/array.map(). The primary difference is that the acted-on
     * array is implicitly this NodeList and the return is a
@@ -258,7 +261,7 @@ package object delegate {
     * Returns margin-box size of nodes
     *
     */
-  type marginBox = js.Function0[Unit]
+  type marginBox = js.Function0[scala.Unit]
   /**
     * Returns the next element for nodes in this dojo/NodeList.
     * Optionally takes a query to filter the next elements.
@@ -267,7 +270,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type next = js.Function1[/* query */ String, js.Any]
+  type next = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns all sibling elements that come after the nodes in this dojo/NodeList.
     * Optionally takes a query to filter the sibling elements.
@@ -276,7 +279,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type nextAll = js.Function1[/* query */ String, js.Any]
+  type nextAll = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns the odd nodes in this dojo/NodeList as a dojo/NodeList.
     * .end() can be used on the returned dojo/NodeList to get back to the
@@ -297,7 +300,7 @@ package object delegate {
     *
     * @param filter               OptionalCSS selector like ".foo" or "div > span"
     */
-  type orphan = js.Function1[/* filter */ String, js.Any]
+  type orphan = js.Function1[/* filter */ java.lang.String, js.Any]
   /**
     * Returns immediate parent elements for nodes in this dojo/NodeList.
     * Optionally takes a query to filter the parent elements.
@@ -306,7 +309,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type parent = js.Function1[/* query */ String, js.Any]
+  type parent = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns all parent elements for nodes in this dojo/NodeList.
     * Optionally takes a query to filter the child elements.
@@ -315,7 +318,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type parents = js.Function1[/* query */ String, js.Any]
+  type parents = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns border-box objects (x/y/w/h) of all elements in a node list
     * as an Array (not a NodeList). Acts like dojo/dom-geometry-position, though
@@ -332,7 +335,7 @@ package object delegate {
     *
     * @param query
     */
-  type prependTo = js.Function1[/* query */ String, js.Any]
+  type prependTo = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns the previous element for nodes in this dojo/NodeList.
     * Optionally takes a query to filter the previous elements.
@@ -341,7 +344,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type prev = js.Function1[/* query */ String, js.Any]
+  type prev = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns all sibling elements that come before the nodes in this dojo/NodeList.
     * Optionally takes a query to filter the sibling elements.
@@ -352,7 +355,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type prevAll = js.Function1[/* query */ String, js.Any]
+  type prevAll = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns a new list whose members match the passed query,
     * assuming elements of the current NodeList as the root for
@@ -360,20 +363,20 @@ package object delegate {
     *
     * @param queryStr
     */
-  type query = js.Function1[/* queryStr */ String, js.Any]
+  type query = js.Function1[/* queryStr */ java.lang.String, js.Any]
   /**
     * removes elements in this list that match the filter
     * from their parents and returns them as a new NodeList.
     *
     * @param filter               OptionalCSS selector like ".foo" or "div > span"
     */
-  type remove = js.Function1[/* filter */ String, js.Any]
+  type remove = js.Function1[/* filter */ java.lang.String, js.Any]
   /**
     * Removes an attribute from each node in the list.
     *
     * @param name the name of the attribute to remove
     */
-  type removeAttr = js.Function1[/* name */ String, Unit]
+  type removeAttr = js.Function1[/* name */ java.lang.String, scala.Unit]
   /**
     * Animate the effect of removing a class to all nodes in this list.
     * see dojox.fx.removeClass
@@ -381,13 +384,13 @@ package object delegate {
     * @param cssClass
     * @param args
     */
-  type removeClassFx = js.Function2[/* cssClass */ js.Any, /* args */ js.Any, Anon_Type]
+  type removeClassFx = js.Function2[/* cssClass */ js.Any, /* args */ js.Any, typings.dojo.AnonType]
   /**
     * Remove the data associated with these nodes.
     *
     * @param key               OptionalIf omitted, clean all data for this node.If passed, remove the data item found at key
     */
-  type removeData = js.Function1[/* key */ String, Unit]
+  type removeData = js.Function1[/* key */ java.lang.String, scala.Unit]
   /**
     * replaces nodes matched by the query passed to replaceAll with the nodes
     * in this NodeList.
@@ -397,7 +400,7 @@ package object delegate {
     *
     * @param query
     */
-  type replaceAll = js.Function1[/* query */ String, js.Any]
+  type replaceAll = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns all sibling elements for nodes in this dojo/NodeList.
     * Optionally takes a query to filter the sibling elements.
@@ -406,7 +409,7 @@ package object delegate {
     *
     * @param query               Optionala CSS selector.
     */
-  type siblings = js.Function1[/* query */ String, js.Any]
+  type siblings = js.Function1[/* query */ java.lang.String, js.Any]
   /**
     * Returns a new NodeList, maintaining this one in place
     * This method behaves exactly like the Array.slice method
@@ -417,7 +420,7 @@ package object delegate {
     * @param begin Can be a positive or negative integer, with positiveintegers noting the offset to begin at, and negativeintegers denoting an offset from the end (i.e., to the leftof the end)
     * @param end               OptionalOptional parameter to describe what position relative tothe NodeList's zero index to end the slice at. Like begin,can be positive or negative.
     */
-  type slice = js.Function2[/* begin */ Double, /* end */ Double, js.Any]
+  type slice = js.Function2[/* begin */ scala.Double, /* end */ scala.Double, js.Any]
   /**
     * slide all elements of the node list to the specified place via dojo/fx.slideTo()
     *
@@ -450,14 +453,19 @@ package object delegate {
     * @param howmany               OptionalOptional parameter to describe what position relative tothe NodeList's zero index to end the slice at. Like begin,can be positive or negative.
     * @param item               OptionalAny number of optional parameters may be passed in to bespliced into the NodeList
     */
-  type splice = js.Function3[/* index */ Double, /* howmany */ Double, /* item */ js.Array[js.Object], js.Any]
+  type splice = js.Function3[
+    /* index */ scala.Double, 
+    /* howmany */ scala.Double, 
+    /* item */ js.Array[js.Object], 
+    js.Any
+  ]
   /**
     * gets or sets the CSS property for every element in the NodeList
     *
     * @param property the CSS property to get/set, in JavaScript notation("lineHieght" instead of "line-height")
     * @param value               Optionaloptional. The value to set the property to
     */
-  type style = js.Function2[/* property */ String, /* value */ String, js.Any]
+  type style = js.Function2[/* property */ java.lang.String, /* value */ java.lang.String, js.Any]
   /**
     * allows setting the text value of each node in the NodeList,
     * if there is a value passed in, otherwise, returns the text value for all the
@@ -465,7 +473,7 @@ package object delegate {
     *
     * @param value
     */
-  type text = js.Function1[/* value */ String, js.Any]
+  type text = js.Function1[/* value */ java.lang.String, js.Any]
   /**
     *
     */
@@ -477,7 +485,7 @@ package object delegate {
     * @param className the CSS class to add
     * @param condition               OptionalIf passed, true means to add the class, false means to remove.
     */
-  type toggleClass = js.Function2[/* className */ String, /* condition */ Boolean, Unit]
+  type toggleClass = js.Function2[/* className */ java.lang.String, /* condition */ scala.Boolean, scala.Unit]
   /**
     * Animate the effect of adding or removing a class to all nodes in this list.
     * see dojox.fx.toggleClass
@@ -486,7 +494,7 @@ package object delegate {
     * @param force
     * @param args
     */
-  type toggleClassFx = js.Function3[/* cssClass */ js.Any, /* force */ js.Any, /* args */ js.Any, Anon_Type]
+  type toggleClassFx = js.Function3[/* cssClass */ js.Any, /* force */ js.Any, /* args */ js.Any, typings.dojo.AnonType]
   /**
     * wipe in all elements of this NodeList via dojo/fx.wipeIn()
     *

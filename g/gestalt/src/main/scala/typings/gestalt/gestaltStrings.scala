@@ -1,6 +1,6 @@
 package typings.gestalt
 
-import typings.gestalt.gestaltMod.Icons
+import typings.gestalt.mod.Icons
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.hasha
 
-import typings.hasha.hashaMod.HashaEncoding
-import typings.hasha.hashaMod.ToStringEncoding
+import typings.hasha.mod.HashaEncoding
+import typings.hasha.mod.ToStringEncoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

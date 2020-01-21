@@ -1,0 +1,23 @@
+package typings.ionicAngular.mod
+
+import typings.angularCore.mod.ComponentFactoryResolver
+import typings.angularCore.mod.ElementRef
+import typings.angularCore.mod.Injector
+import typings.angularCore.mod.ViewContainerRef
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@ionic/angular", "NavDelegate")
+@js.native
+class NavDelegate protected ()
+  extends typings.ionicAngular.distMod.NavDelegate {
+  def this(
+    ref: ElementRef[_],
+    resolver: ComponentFactoryResolver,
+    injector: Injector,
+    angularDelegate: typings.ionicAngular.angularDelegateMod.AngularDelegate,
+    location: ViewContainerRef
+  ) = this()
+}
+

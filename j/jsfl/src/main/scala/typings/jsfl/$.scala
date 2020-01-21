@@ -4,11 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("$")
+@JSGlobal("$$")
 @js.native
 object $ extends js.Object {
-  // http://www.xjsfl.com/support/guides/working-with-flash/introduction-to-selectors
-  // http://www.xjsfl.com/support/api/elements/ElementSelector
-  def apply(selector: String): ElementCollection = js.native
+  // http://www.xjsfl.com/support/api/elements/ItemSelector
+  def apply(selector: String): ItemCollection = js.native
 }
 

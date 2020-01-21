@@ -1,6 +1,6 @@
 package typings.npmlog
 
-import typings.npmlog.npmlogMod.LogLevels
+import typings.npmlog.mod.LogLevels
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.dojo.dijit.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.ChildWidgetProperties
 import typings.dojo.dojoStrings.design
 import typings.std.HTMLElement
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dijit.layout.LayoutContainer")
 @js.native
-class LayoutContainer_ () extends _LayoutWidget {
+class LayoutContainer_ () extends LayoutWidget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -72,7 +72,7 @@ class LayoutContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_design(
     property: design,
@@ -82,6 +82,6 @@ class LayoutContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

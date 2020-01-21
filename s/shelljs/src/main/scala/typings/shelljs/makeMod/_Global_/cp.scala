@@ -1,7 +1,7 @@
 package typings.shelljs.makeMod._Global_
 
 import org.scalablytyped.runtime.TopLevel
-import typings.shelljs.shelljsMod.CopyFunction
+import typings.shelljs.mod.CopyFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

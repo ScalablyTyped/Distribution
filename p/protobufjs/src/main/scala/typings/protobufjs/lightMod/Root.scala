@@ -1,7 +1,7 @@
 package typings.protobufjs.lightMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.protobufjsMod.INamespace
+import typings.protobufjs.mod.INamespace
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param [options] Top level options
   */
 class Root ()
-  extends typings.protobufjs.protobufjsMod.Root {
+  extends typings.protobufjs.mod.Root {
   def this(options: StringDictionary[js.Any]) = this()
 }
 
@@ -27,7 +27,7 @@ object Root extends js.Object {
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
-  def fromJSON(json: INamespace): typings.protobufjs.protobufjsMod.Root = js.native
-  def fromJSON(json: INamespace, root: typings.protobufjs.protobufjsMod.Root): typings.protobufjs.protobufjsMod.Root = js.native
+  def fromJSON(json: INamespace): typings.protobufjs.mod.Root = js.native
+  def fromJSON(json: INamespace, root: typings.protobufjs.mod.Root): typings.protobufjs.mod.Root = js.native
 }
 

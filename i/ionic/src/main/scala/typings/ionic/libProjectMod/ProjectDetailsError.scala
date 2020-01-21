@@ -1,6 +1,6 @@
 package typings.ionic.libProjectMod
 
-import typings.ionic.libErrorsMod.BaseException
+import typings.ionic.errorsMod.BaseException
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

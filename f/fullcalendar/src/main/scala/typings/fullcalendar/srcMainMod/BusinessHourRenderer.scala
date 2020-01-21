@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "BusinessHourRenderer")
 @js.native
 class BusinessHourRenderer protected ()
-  extends typings.fullcalendar.srcExportsMod.BusinessHourRenderer {
+  extends typings.fullcalendar.exportsMod.BusinessHourRenderer {
   def this(component: js.Any, fillRenderer: js.Any) = this()
 }
 

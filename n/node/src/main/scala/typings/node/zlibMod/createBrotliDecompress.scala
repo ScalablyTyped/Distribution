@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("zlib", "createBrotliDecompress")
 @js.native
 object createBrotliDecompress extends js.Object {
-  def apply(): BrotliDecompress = js.native
-  def apply(options: BrotliOptions): BrotliDecompress = js.native
+  def apply(): BrotliDecompress_ = js.native
+  def apply(options: BrotliOptions): BrotliDecompress_ = js.native
 }
 

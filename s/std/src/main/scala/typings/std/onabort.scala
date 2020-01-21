@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("onabort")
 @js.native
 object onabort
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ UIEvent, js.Any]) | Null]
 

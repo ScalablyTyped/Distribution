@@ -20,7 +20,7 @@ package object html5plus {
     - typings.html5plus.html5plusNumbers.`5`
     - typings.html5plus.html5plusNumbers.`-1`
   */
-  type PlusDownloaderDownloadState = js.UndefOr[_PlusDownloaderDownloadState]
+  type PlusDownloaderDownloadState = js.UndefOr[typings.html5plus._PlusDownloaderDownloadState]
   /**
     * 本地路径URL
     * 可在html页面中直接访问本地资源，以“file:///”开头，后面跟随系统的绝对路径。
@@ -60,5 +60,5 @@ package object html5plus {
     - typings.html5plus.html5plusNumbers.`5`
     - typings.html5plus.html5plusNumbers.`-1`
   */
-  type PlusUploaderUploadState = js.UndefOr[_PlusUploaderUploadState]
+  type PlusUploaderUploadState = js.UndefOr[typings.html5plus._PlusUploaderUploadState]
 }

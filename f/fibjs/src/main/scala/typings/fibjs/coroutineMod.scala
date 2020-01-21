@@ -13,25 +13,25 @@ import scala.scalajs.js.annotation._
 @js.native
 object coroutineMod extends js.Object {
   @js.native
-  class Condition () extends Class_Condition
+  class Condition () extends ClassCondition
   
   @js.native
-  class Event () extends Class_Event
+  class Event () extends ClassEvent
   
   @js.native
-  class Lock () extends Class_Lock
+  class Lock () extends ClassLock
   
   @js.native
-  class Semaphore () extends Class_Semaphore
+  class Semaphore () extends ClassSemaphore
   
   @js.native
-  class Worker () extends Class_Worker
+  class Worker () extends ClassWorker
   
   val fibers: js.Array[js.Any] = js.native
   val loglevel: Double = js.native
   val spareFibers: Double = js.native
   val vmid: Double = js.native
-  def current(): Class_Fiber = js.native
+  def current(): ClassFiber = js.native
   def parallel(datas: js.Array[_], func: js.Function): js.Array[_] = js.native
   def parallel(datas: js.Array[_], func: js.Function, fibers: Double): js.Array[_] = js.native
   def parallel(func: js.Function, num: Double): js.Array[_] = js.native
@@ -41,6 +41,6 @@ object coroutineMod extends js.Object {
   def parallel(funcs: js.Array[_], fibers: Double): js.Array[_] = js.native
   def sleep(): Unit = js.native
   def sleep(ms: Double): Unit = js.native
-  def start(func: js.Function, args: js.Any*): Class_Fiber = js.native
+  def start(func: js.Function, args: js.Any*): ClassFiber = js.native
 }
 

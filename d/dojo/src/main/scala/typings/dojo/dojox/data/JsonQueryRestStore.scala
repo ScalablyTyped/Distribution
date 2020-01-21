@@ -35,11 +35,12 @@ class JsonQueryRestStore () extends JsonRestStore {
     */
   def clientSideFetch(request: js.Object, baseResults: js.Array[_]): js.Any = js.native
   /**
+    * See dojo/data/api/Read.fetch
     *
-    * @param args
+    * @param args The queryOptions.cache parameterIf true, indicates that the query result should be cached for future use. This is only availableif dojox.data.ClientFilter has been loaded before the ServiceStoreThe syncMode parameterIndicates that the call should be fetch synchronously if possible (this is not always possible)The clientFetch parameterThis is a fetch keyword argument for explicitly doing client side filtering, querying, and paging
     */
   @JSName("fetch")
-  def fetch_Any(args: js.Any): js.Any = js.native
+  def fetch_String(args: js.Any): String = js.native
   /**
     *
     */

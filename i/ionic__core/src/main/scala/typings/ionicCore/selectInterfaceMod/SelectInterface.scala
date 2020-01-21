@@ -1,0 +1,24 @@
+package typings.ionicCore.selectInterfaceMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.ionicCore.ionicCoreStrings.`action-sheet`
+  - typings.ionicCore.ionicCoreStrings.popover
+  - typings.ionicCore.ionicCoreStrings.alert
+*/
+trait SelectInterface extends js.Object
+
+object SelectInterface {
+  @scala.inline
+  def `action-sheet`: typings.ionicCore.ionicCoreStrings.`action-sheet` = this.cast("action-sheet")
+  @scala.inline
+  def alert: typings.ionicCore.ionicCoreStrings.alert = this.cast("alert")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def popover: typings.ionicCore.ionicCoreStrings.popover = this.cast("popover")
+}
+

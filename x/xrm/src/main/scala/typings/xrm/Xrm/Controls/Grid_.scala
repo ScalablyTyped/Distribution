@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * Interface for a grid.  Use Grid methods to access information about data in the grid. Grid is returned by the
   * GridControl.getGrid method.
   */
-@JSName("Grid")
 trait Grid_ extends js.Object {
   /**
     * Returns a collection of every GridRow in the Grid.

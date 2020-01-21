@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "Iterator")
 @js.native
 class Iterator protected ()
-  extends typings.fullcalendar.srcExportsMod.Iterator {
+  extends typings.fullcalendar.exportsMod.Iterator {
   def this(items: js.Any) = this()
 }
 

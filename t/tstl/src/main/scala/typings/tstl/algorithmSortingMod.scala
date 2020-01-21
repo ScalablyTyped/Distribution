@@ -1,80 +1,56 @@
 package typings.tstl
 
-import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
+import typings.tstl.comparatorMod.Comparator
+import typings.tstl.iforwardcontainerMod.IForwardContainer
+import typings.tstl.iforwardcontainerMod.IForwardContainer.IteratorType
+import typings.tstl.iforwardcontainerMod.IForwardContainer.ValueType
+import typings.tstl.irandomaccesscontainerMod.IRandomAccessContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl/algorithm/sorting", JSImport.Namespace)
+@JSImport("tstl/ranges/algorithm/sorting", JSImport.Namespace)
 @js.native
 object algorithmSortingMod extends js.Object {
-  def is_sorted[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator): Boolean = js.native
-  def is_sorted[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    comp: js.Function2[/* x */ ValueType[InputIterator], /* y */ ValueType[InputIterator], Boolean]
-  ): Boolean = js.native
-  def is_sorted_until[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator): InputIterator = js.native
-  def is_sorted_until[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    comp: js.Function2[/* x */ ValueType[InputIterator], /* y */ ValueType[InputIterator], Boolean]
-  ): InputIterator = js.native
-  def nth_element[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, nth: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def nth_element[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
-    first: RandomAccessIterator,
-    nth: RandomAccessIterator,
-    last: RandomAccessIterator,
-    comp: js.Function2[
-      /* x */ ValueType[RandomAccessIterator], 
-      /* y */ ValueType[RandomAccessIterator], 
-      Boolean
-    ]
+  @JSName("is_sorted")
+  def isSorted[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range): Boolean = js.native
+  @JSName("is_sorted")
+  def isSorted[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, comp: Comparator[ValueType[Range], ValueType[Range]]): Boolean = js.native
+  @JSName("is_sorted_until")
+  def isSortedUntil[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range): IteratorType[Range] = js.native
+  @JSName("is_sorted_until")
+  def isSortedUntil[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, comp: Comparator[ValueType[Range], ValueType[Range]]): IteratorType[Range] = js.native
+  @JSName("nth_element")
+  def nthElement[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](
+    range: Range,
+    nth: typings.tstl.irandomaccesscontainerMod.IRandomAccessContainer.IteratorType[Range]
   ): Unit = js.native
-  def partial_sort[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, middle: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def partial_sort[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
-    first: RandomAccessIterator,
-    middle: RandomAccessIterator,
-    last: RandomAccessIterator,
-    comp: js.Function2[
-      /* x */ ValueType[RandomAccessIterator], 
-      /* y */ ValueType[RandomAccessIterator], 
-      Boolean
-    ]
+  @JSName("nth_element")
+  def nthElement[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](
+    range: Range,
+    nth: typings.tstl.irandomaccesscontainerMod.IRandomAccessContainer.IteratorType[Range],
+    comp: Comparator[ValueType[Range], ValueType[Range]]
   ): Unit = js.native
-  def partial_sort_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, RandomAccessIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    output_first: RandomAccessIterator,
-    output_last: RandomAccessIterator
-  ): RandomAccessIterator = js.native
-  def partial_sort_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, RandomAccessIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    output_first: RandomAccessIterator,
-    output_last: RandomAccessIterator,
-    comp: js.Function2[/* x */ ValueType[InputIterator], /* y */ ValueType[InputIterator], Boolean]
-  ): RandomAccessIterator = js.native
-  def sort[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def sort[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
-    first: RandomAccessIterator,
-    last: RandomAccessIterator,
-    comp: js.Function2[
-      /* x */ ValueType[RandomAccessIterator], 
-      /* y */ ValueType[RandomAccessIterator], 
-      Boolean
-    ]
+  @JSName("partial_sort")
+  def partialSort[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](
+    range: Range,
+    middle: typings.tstl.irandomaccesscontainerMod.IRandomAccessContainer.IteratorType[Range]
   ): Unit = js.native
-  def stable_sort[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def stable_sort[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
-    first: RandomAccessIterator,
-    last: RandomAccessIterator,
-    comp: js.Function2[
-      /* x */ ValueType[RandomAccessIterator], 
-      /* y */ ValueType[RandomAccessIterator], 
-      Boolean
-    ]
+  @JSName("partial_sort")
+  def partialSort[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](
+    range: Range,
+    middle: typings.tstl.irandomaccesscontainerMod.IRandomAccessContainer.IteratorType[Range],
+    comp: Comparator[ValueType[Range], ValueType[Range]]
   ): Unit = js.native
+  @JSName("partial_sort_copy")
+  def partialSortCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, Output /* <: js.Array[_] | IForwardContainer[_] */](range: Range, output: Output): IteratorType[Output] = js.native
+  @JSName("partial_sort_copy")
+  def partialSortCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, Output /* <: js.Array[_] | IForwardContainer[_] */](range: Range, output: Output, comp: Comparator[ValueType[Range], ValueType[Range]]): IteratorType[Output] = js.native
+  def sort[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](range: Range): Unit = js.native
+  def sort[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](range: Range, comp: Comparator[ValueType[Range], ValueType[Range]]): Unit = js.native
+  @JSName("stable_sort")
+  def stableSort[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](range: Range): Unit = js.native
+  @JSName("stable_sort")
+  def stableSort[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](range: Range, comp: Comparator[ValueType[Range], ValueType[Range]]): Unit = js.native
 }
 

@@ -1,8 +1,8 @@
 package typings.sharepoint.SP.Application.UI
 
-import typings.microsoftDashAjax.Sys.EventArgs
-import typings.microsoftDashAjax.Sys.UI.Control
-import typings.microsoftDashAjax.Sys.UI.DomEvent
+import typings.microsoftAjax.Sys.EventArgs
+import typings.microsoftAjax.Sys.UI.Control
+import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

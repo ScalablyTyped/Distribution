@@ -1,12 +1,12 @@
 package typings.graphql
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.executionExecuteMod.ExecutionResult
-import typings.graphql.languageAstMod.DocumentNode
-import typings.graphql.subscriptionSubscribeMod.SubscriptionArgs
-import typings.graphql.tsutilsMaybeMod.Maybe
-import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
-import typings.graphql.typeSchemaMod.GraphQLSchema
+import typings.graphql.astMod.DocumentNode
+import typings.graphql.definitionMod.GraphQLFieldResolver
+import typings.graphql.executeMod.ExecutionResult
+import typings.graphql.maybeMod.Maybe
+import typings.graphql.schemaMod.GraphQLSchema
+import typings.graphql.subscribeMod.SubscriptionArgs
 import typings.std.AsyncIterable
 import typings.std.AsyncIterableIterator
 import scala.scalajs.js

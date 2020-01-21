@@ -1,6 +1,6 @@
 package typings.chrome.chrome.cast
 
-import typings.chrome.Anon_Name
+import typings.chrome.AnonName
 import typings.chrome.chrome.cast.media.LoadRequest
 import typings.chrome.chrome.cast.media.Media
 import typings.chrome.chrome.cast.media.QueueLoadRequest
@@ -31,7 +31,7 @@ class Session protected () extends js.Object {
   var appImages: js.Array[Image] = js.native
   var displayName: String = js.native
   var media: js.Array[Media] = js.native
-  var namespaces: js.Array[Anon_Name] = js.native
+  var namespaces: js.Array[AnonName] = js.native
   var receiver: Receiver = js.native
   var senderApps: js.Array[SenderApplication] = js.native
   var sessionId: String = js.native

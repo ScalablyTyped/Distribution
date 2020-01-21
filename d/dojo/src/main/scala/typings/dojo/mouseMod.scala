@@ -1,12 +1,12 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dojo.dojo.mouse
+import typings.dojo.dojox.calendar.Mouse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("dojo/mouse", JSImport.Namespace)
+@JSImport("dojox/calendar/Mouse", JSImport.Namespace)
 @js.native
-object mouseMod extends TopLevel[mouse]
+object mouseMod extends TopLevel[Mouse]
 

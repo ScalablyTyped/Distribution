@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Extent
-  extends typings.ol.interactionPointerMod.default {
+  extends typings.ol.pointerMod.default {
   def getExtent(): typings.ol.extentMod.Extent = js.native
   def getExtentInternal(): typings.ol.extentMod.Extent = js.native
   @JSName("on")

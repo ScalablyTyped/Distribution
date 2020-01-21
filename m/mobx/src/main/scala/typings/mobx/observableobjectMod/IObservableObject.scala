@@ -1,0 +1,19 @@
+package typings.mobx.observableobjectMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait IObservableObject extends js.Object {
+  var `observable-object`: IObservableObject
+}
+
+object IObservableObject {
+  @scala.inline
+  def apply(`observable-object`: IObservableObject): IObservableObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("observable-object")(`observable-object`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IObservableObject]
+  }
+}
+

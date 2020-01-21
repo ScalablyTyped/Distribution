@@ -1,6 +1,6 @@
 package typings.baseui.layerMod
 
-import typings.react.reactMod.ReactNode
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -19,15 +19,15 @@ object encodingMod extends js.Object {
   def jsstr(str: String, json: Boolean): String = js.native
   @js.native
   object base32 extends js.Object {
-    def decode(data: String): Class_Buffer = js.native
-    def encode(data: Class_Buffer): String = js.native
+    def decode(data: String): ClassBuffer = js.native
+    def encode(data: ClassBuffer): String = js.native
   }
   
   @js.native
   object base64 extends js.Object {
-    def decode(data: String): Class_Buffer = js.native
-    def encode(data: Class_Buffer): String = js.native
-    def encode(data: Class_Buffer, url: Boolean): String = js.native
+    def decode(data: String): ClassBuffer = js.native
+    def encode(data: ClassBuffer): String = js.native
+    def encode(data: ClassBuffer, url: Boolean): String = js.native
   }
   
   @js.native
@@ -39,20 +39,20 @@ object encodingMod extends js.Object {
   
   @js.native
   object bson extends js.Object {
-    def decode(data: Class_Buffer): js.Object = js.native
-    def encode(data: js.Object): Class_Buffer = js.native
+    def decode(data: ClassBuffer): js.Object = js.native
+    def encode(data: js.Object): ClassBuffer = js.native
   }
   
   @js.native
   object hex extends js.Object {
-    def decode(data: String): Class_Buffer = js.native
-    def encode(data: Class_Buffer): String = js.native
+    def decode(data: String): ClassBuffer = js.native
+    def encode(data: ClassBuffer): String = js.native
   }
   
   @js.native
   object iconv extends js.Object {
-    def decode(charset: String, data: Class_Buffer): String = js.native
-    def encode(charset: String, data: String): Class_Buffer = js.native
+    def decode(charset: String, data: ClassBuffer): String = js.native
+    def encode(charset: String, data: String): ClassBuffer = js.native
     def isEncoding(charset: String): Boolean = js.native
   }
   

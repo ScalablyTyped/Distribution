@@ -1,6 +1,6 @@
 package typings.heremaps.H.map
 
-import typings.heremaps.H.Map
+import typings.heremaps.H.Map_
 import typings.heremaps.H.map.Imprint.Options
 import typings.std.CSSStyleDeclaration
 import typings.std.HTMLCanvasElement
@@ -19,8 +19,8 @@ class Imprint_ protected () extends js.Object {
     * @param map {H.Map} - The map where the imprint is attached to
     * @param opt_options {H.map.Imprint.Options=} - The options to style the imprint
     */
-  def this(map: Map) = this()
-  def this(map: Map, opt_options: Options) = this()
+  def this(map: Map_) = this()
+  def this(map: Map_, opt_options: Options) = this()
   /**
     * Method adds a callback which will be triggered when the object is disposed
     * @param callback {Function}

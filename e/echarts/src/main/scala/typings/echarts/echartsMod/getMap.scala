@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("echarts", "getMap")
+@JSImport("echarts/lib/echarts", "getMap")
 @js.native
 object getMap extends js.Object {
   /**

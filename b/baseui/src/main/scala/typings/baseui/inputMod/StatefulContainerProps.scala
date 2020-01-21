@@ -1,9 +1,9 @@
 package typings.baseui.inputMod
 
 import typings.baseui.baseuiStrings.change_
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.FormEventHandler
-import typings.react.reactMod.ReactNode
+import typings.react.mod.FormEvent
+import typings.react.mod.FormEventHandler
+import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

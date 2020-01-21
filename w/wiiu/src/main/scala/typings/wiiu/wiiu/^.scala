@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var gamepad: WiiuGamePad = js.native
-  var imageview: ImageView = js.native
-  var videoplayer: VideoPlayer = js.native
+  var imageview: ImageView_ = js.native
+  var videoplayer: VideoPlayer_ = js.native
 }
 

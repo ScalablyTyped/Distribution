@@ -1,7 +1,7 @@
 package typings.breeze.breeze
 
-import typings.breeze.Anon_Any
-import typings.breeze.Anon_Entities
+import typings.breeze.AnonAny
+import typings.breeze.AnonEntities
 import typings.breeze.breeze.core.ErrorCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -59,14 +59,14 @@ class EntityManager () extends js.Object {
     errorCallback: ExecuteQueryErrorCallback
   ): js.Promise[QueryResult] = js.native
   def executeQueryLocally(query: EntityQuery): js.Array[Entity] = js.native
-  def exportEntities(): String = js.native
-  def exportEntities(entities: js.Array[Entity]): String = js.native
+  def exportEntities(): js.Any = js.native
+  def exportEntities(entities: js.Array[Entity]): js.Any = js.native
   def exportEntities(entities: js.Array[Entity], includeMetadata: Boolean): String = js.native
   def exportEntities(entities: js.Array[Entity], options: ExportEntitiesOptions): js.Any = js.native
   @JSName("exportEntities")
-  def exportEntities_Any(): js.Any = js.native
+  def exportEntities_String(): String = js.native
   @JSName("exportEntities")
-  def exportEntities_Any(entities: js.Array[Entity]): js.Any = js.native
+  def exportEntities_String(entities: js.Array[Entity]): String = js.native
   def fetchEntityByKey(entityKey: EntityKey): js.Promise[EntityByKeyResult] = js.native
    // string | Object
   def fetchEntityByKey(typeName: String, keyValue: js.Any): js.Promise[EntityByKeyResult] = js.native
@@ -98,10 +98,10 @@ class EntityManager () extends js.Object {
   def hasChanges(entityTypeName: String): Boolean = js.native
   def hasChanges(entityTypeNames: js.Array[EntityType | String]): Boolean = js.native
   def hasChanges(entityType: EntityType): Boolean = js.native
-  def importEntities(exportedData: js.Object): Anon_Entities = js.native
-  def importEntities(exportedData: js.Object, config: Anon_Any): Anon_Entities = js.native
-  def importEntities(exportedString: String): Anon_Entities = js.native
-  def importEntities(exportedString: String, config: Anon_Any): Anon_Entities = js.native
+  def importEntities(exportedData: js.Object): AnonEntities = js.native
+  def importEntities(exportedData: js.Object, config: AnonAny): AnonEntities = js.native
+  def importEntities(exportedString: String): AnonEntities = js.native
+  def importEntities(exportedString: String, config: AnonAny): AnonEntities = js.native
   def rejectChanges(): js.Array[Entity] = js.native
   def saveChanges(): js.Promise[SaveResult] = js.native
   def saveChanges(entities: js.Array[Entity]): js.Promise[SaveResult] = js.native
@@ -121,8 +121,8 @@ class EntityManager () extends js.Object {
 @js.native
 object EntityManager extends js.Object {
   def importEntities(exportedData: js.Object): EntityManager = js.native
-  def importEntities(exportedData: js.Object, config: Anon_Any): EntityManager = js.native
+  def importEntities(exportedData: js.Object, config: AnonAny): EntityManager = js.native
   def importEntities(exportedString: String): EntityManager = js.native
-  def importEntities(exportedString: String, config: Anon_Any): EntityManager = js.native
+  def importEntities(exportedString: String, config: AnonAny): EntityManager = js.native
 }
 

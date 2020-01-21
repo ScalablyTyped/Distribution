@@ -17,12 +17,12 @@ object dbMod extends js.Object {
   def format(sql: String, args: js.Any*): String = js.native
   def formatMSSQL(sql: String, args: js.Any*): String = js.native
   def formatMySQL(sql: String, args: js.Any*): String = js.native
-  def open(connString: String): Class__object = js.native
-  def openLevelDB(connString: String): Class_LevelDB = js.native
-  def openMSSQL(connString: String): Class_MSSQL = js.native
-  def openMongoDB(connString: String): Class_MongoDB = js.native
-  def openMySQL(connString: String): Class_MySQL = js.native
-  def openRedis(connString: String): Class_Redis = js.native
-  def openSQLite(connString: String): Class_SQLite = js.native
+  def open(connString: String): ClassObject = js.native
+  def openLevelDB(connString: String): ClassLevelDB = js.native
+  def openMSSQL(connString: String): ClassMSSQL = js.native
+  def openMongoDB(connString: String): ClassMongoDB = js.native
+  def openMySQL(connString: String): ClassMySQL = js.native
+  def openRedis(connString: String): ClassRedis = js.native
+  def openSQLite(connString: String): ClassSQLite = js.native
 }
 

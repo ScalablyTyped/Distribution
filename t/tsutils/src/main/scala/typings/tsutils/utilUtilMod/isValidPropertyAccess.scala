@@ -1,6 +1,6 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.ScriptTarget
+import typings.typescript.mod.ScriptTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

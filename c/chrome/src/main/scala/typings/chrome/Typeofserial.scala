@@ -9,9 +9,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofserial extends js.Object {
-  val DataBits: Anon_EIGHT
-  val ParityBit: Anon_EVEN
-  val StopBits: Anon_ONE
+  val DataBits: AnonEIGHT
+  val ParityBit: AnonEVEN
+  val StopBits: AnonONE
   val onReceive: TypeofonReceive
   val onReceiveError: TypeofonReceiveError
   def clearBreak(connectionId: Double, callback: js.Function1[/* result */ Boolean, Unit]): Unit
@@ -40,9 +40,9 @@ trait Typeofserial extends js.Object {
 object Typeofserial {
   @scala.inline
   def apply(
-    DataBits: Anon_EIGHT,
-    ParityBit: Anon_EVEN,
-    StopBits: Anon_ONE,
+    DataBits: AnonEIGHT,
+    ParityBit: AnonEVEN,
+    StopBits: AnonONE,
     clearBreak: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit,
     connect: (String, ConnectionOptions, js.Function1[/* connectionInfo */ ConnectionInfo, Unit]) => Unit,
     disconnect: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit,

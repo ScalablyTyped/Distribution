@@ -1,6 +1,6 @@
 package typings.signale
 
-import typings.signale.signaleMod.DefaultMethods
+import typings.signale.mod.DefaultMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

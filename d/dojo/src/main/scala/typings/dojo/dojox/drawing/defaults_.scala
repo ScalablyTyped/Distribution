@@ -17,7 +17,6 @@ import scala.scalajs.js.annotation._
   * See: Drawing.changeDefaults
   *
   */
-@JSName("defaults")
 trait defaults_ extends js.Object {
   /**
     * Style for the anchor resize-points

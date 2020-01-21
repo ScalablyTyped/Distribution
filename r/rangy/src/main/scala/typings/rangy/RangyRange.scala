@@ -1,6 +1,6 @@
 package typings.rangy
 
-import typings.std.Document
+import typings.std.Document_
 import typings.std.Node
 import typings.std.Range
 import scala.scalajs.js
@@ -19,9 +19,9 @@ trait RangyRange extends Range {
   def containsNodeText(node: Node): Boolean = js.native
   def containsRange(range: RangyRange): Boolean = js.native
   def equals(range: RangyRange): Boolean = js.native
-  def getBookmark(): Anon_End = js.native
-  def getBookmark(containerNode: Node): Anon_End = js.native
-  def getDocument(): Document = js.native
+  def getBookmark(): AnonEnd = js.native
+  def getBookmark(containerNode: Node): AnonEnd = js.native
+  def getDocument(): Document_ = js.native
   def getNodes(): js.Array[Node] = js.native
   def getNodes(nodeTypes: js.Array[_]): js.Array[Node] = js.native
   def getNodes(nodeTypes: js.Array[_], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
@@ -39,8 +39,8 @@ trait RangyRange extends Range {
   def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node, endOffset: Double): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double, endOffset: Double): js.Any = js.native
   def splitBoundaries(): js.Any = js.native
-  def toCharacterRange(containerNode: Node): Anon_End = js.native
-  def toCharacterRange(containerNode: Node, opts: js.Any): Anon_End = js.native
+  def toCharacterRange(containerNode: Node): AnonEnd = js.native
+  def toCharacterRange(containerNode: Node, opts: js.Any): AnonEnd = js.native
   def toHtml(): String = js.native
   def union(range: RangyRange): RangyRange = js.native
 }

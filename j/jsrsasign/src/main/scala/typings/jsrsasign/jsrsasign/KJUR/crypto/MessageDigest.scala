@@ -1,7 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.Anon_AlgProv
-import typings.jsrsasign.Anon_Md5
+import typings.jsrsasign.AnonAlgProv
+import typings.jsrsasign.AnonMd5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.MessageDigest")
 @js.native
 class MessageDigest protected () extends js.Object {
-  def this(params: Anon_AlgProv) = this()
+  def this(params: AnonAlgProv) = this()
   /**
     * completes hash calculation and returns hash result
     * @description
@@ -109,7 +109,7 @@ class MessageDigest protected () extends js.Object {
 @js.native
 object MessageDigest extends js.Object {
   /** static Array of resulted byte length of hash (ex. HASHLENGTH["sha1"] == 20) */
-  val HASHLENGTH: Anon_Md5 = js.native
+  val HASHLENGTH: AnonMd5 = js.native
   /**
     * get canonical hash algorithm name
     * @param alg hash algorithm name (ex. MD5, SHA-1, SHA1, SHA512 et.al.)

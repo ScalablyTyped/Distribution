@@ -1,8 +1,8 @@
 package typings.typescript
 
-import typings.typescript.typescriptMod.CompletionsTriggerCharacter
-import typings.typescript.typescriptMod.SignatureHelpRetriggerCharacter
-import typings.typescript.typescriptMod.SignatureHelpTriggerCharacter
+import typings.typescript.mod.CompletionsTriggerCharacter
+import typings.typescript.mod.SignatureHelpRetriggerCharacter
+import typings.typescript.mod.SignatureHelpTriggerCharacter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

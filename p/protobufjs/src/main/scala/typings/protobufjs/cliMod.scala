@@ -1,7 +1,7 @@
 package typings.protobufjs
 
-import typings.protobufjs.cliPbjsMod.pbjsCallback
-import typings.protobufjs.cliPbtsMod.pbtsCallback
+import typings.protobufjs.pbjsMod.pbjsCallback
+import typings.protobufjs.pbtsMod.pbtsCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

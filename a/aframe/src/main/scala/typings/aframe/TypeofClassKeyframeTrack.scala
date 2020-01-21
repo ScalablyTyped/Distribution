@@ -1,7 +1,7 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.three.threeMod.KeyframeTrack
+import typings.three.mod.KeyframeTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait TypeofClassKeyframeTrack
       /* values */ js.Array[js.Any], 
       KeyframeTrack
     ] {
-  def parse(json: js.Any): typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack = js.native
-  def toJSON(track: typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack): js.Any = js.native
+  def parse(json: js.Any): typings.three.keyframeTrackMod.KeyframeTrack = js.native
+  def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): js.Any = js.native
 }
 

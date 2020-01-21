@@ -1,7 +1,7 @@
 package typings.stripejs.elementMod
 
-import typings.stripejs.Anon_BaseCompleteEmpty
-import typings.stripejs.Anon_BaseCompleteEmptyInvalid
+import typings.stripejs.AnonBaseCompleteEmpty
+import typings.stripejs.AnonBaseCompleteEmptyInvalid
 import typings.stripejs.stripejsStrings.default
 import typings.stripejs.stripejsStrings.solid
 import scala.scalajs.js
@@ -37,13 +37,13 @@ trait CardElementOptions extends BaseOptions {
 object CardElementOptions {
   @scala.inline
   def apply(
-    classes: Anon_BaseCompleteEmpty = null,
+    classes: AnonBaseCompleteEmpty = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hideIcon: js.UndefOr[Boolean] = js.undefined,
     hidePostalCode: js.UndefOr[Boolean] = js.undefined,
     iconStyle: solid | default = null,
     placeholder: String = null,
-    style: Anon_BaseCompleteEmptyInvalid = null,
+    style: AnonBaseCompleteEmptyInvalid = null,
     value: js.Any = null
   ): CardElementOptions = {
     val __obj = js.Dynamic.literal()

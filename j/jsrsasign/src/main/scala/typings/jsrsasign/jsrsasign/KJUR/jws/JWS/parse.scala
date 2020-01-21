@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.jws.JWS
 
-import typings.jsrsasign.Anon_HeaderObj
+import typings.jsrsasign.AnonHeaderObj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,6 +41,6 @@ object parse extends js.Object {
     *   sigHex: "91f3cd..."
     * }
     */
-  def apply(sJWS: String): Anon_HeaderObj = js.native
+  def apply(sJWS: String): AnonHeaderObj = js.native
 }
 

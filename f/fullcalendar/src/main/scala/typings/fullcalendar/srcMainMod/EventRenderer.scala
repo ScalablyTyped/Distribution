@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "EventRenderer")
 @js.native
 class EventRenderer protected ()
-  extends typings.fullcalendar.srcExportsMod.EventRenderer {
+  extends typings.fullcalendar.exportsMod.EventRenderer {
   def this(component: js.Any, fillRenderer: js.Any) = this()
 }
 

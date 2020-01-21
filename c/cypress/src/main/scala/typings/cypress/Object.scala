@@ -1,6 +1,6 @@
 package typings.cypress
 
-import typings.cypress.Chai.Assertion
+import typings.cypress.Chai_.Assertion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

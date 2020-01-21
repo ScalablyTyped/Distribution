@@ -1,0 +1,42 @@
+package typings.uniApp
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait RemoveTabBarBadgeOptions extends js.Object {
+  /**
+    * 接口调用结束的回调函数（调用成功、失败都会执行）
+    */
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
+    * 接口调用失败的回调函数
+    */
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
+    * tabBar的哪一项，从左边算起，索引从0开始
+    */
+  var index: js.UndefOr[Double] = js.undefined
+  /**
+    * 接口调用成功的回调函数
+    */
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+}
+
+object RemoveTabBarBadgeOptions {
+  @scala.inline
+  def apply(
+    complete: () => Unit = null,
+    fail: () => Unit = null,
+    index: Int | Double = null,
+    success: () => Unit = null
+  ): RemoveTabBarBadgeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction0(fail))
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
+    __obj.asInstanceOf[RemoveTabBarBadgeOptions]
+  }
+}
+

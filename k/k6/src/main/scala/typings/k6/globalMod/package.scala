@@ -9,5 +9,5 @@ package object globalMod {
     * Log message procedure.
     * @public
     */
-  type Logger = js.Function2[/* msg */ js.Any, /* repeated */ js.Any, Unit]
+  type Logger = js.Function2[/* msg */ js.Any, /* repeated */ js.Any, scala.Unit]
 }

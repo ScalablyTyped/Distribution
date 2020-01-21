@@ -1,7 +1,7 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit.form._FormValueWidget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.form.FormValueWidget
 import typings.dojo.dojoStrings.oldName
 import typings.dojo.dojoStrings.required
 import typings.dojo.dojoStrings.value
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.form.PasswordValidator")
 @js.native
-class PasswordValidator () extends _FormValueWidget {
+class PasswordValidator () extends FormValueWidget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -99,7 +99,7 @@ class PasswordValidator () extends _FormValueWidget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_required(
     property: required,
@@ -109,6 +109,6 @@ class PasswordValidator () extends _FormValueWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

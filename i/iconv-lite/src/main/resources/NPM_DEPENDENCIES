@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "iconv-lite" : "0.5.0"
+      "iconv-lite" : "0.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "iconv-lite" : "0.5.0"
+      "iconv-lite" : "0.5.1"
     }
   ],
   "compile-devDependencies" : [

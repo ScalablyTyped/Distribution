@@ -12,14 +12,14 @@ package object dtl {
     *
     * @param dict
     */
-  type Context = js.Function1[/* dict */ js.Object, Unit]
+  type Context = js.Function1[/* dict */ js.Object, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/dtl/_DomTemplated.html
     *
     * The base class for DOM-based templating.
     *
     */
-  type _DomTemplated = js.Function0[Unit]
-  type _base = _base_
-  type dom = dom_
+  type DomTemplated = js.Function0[scala.Unit]
+  type base = typings.dojo.dojox.dtl.base_
+  type dom = typings.dojo.dojox.dtl.dom_
 }

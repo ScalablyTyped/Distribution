@@ -1,0 +1,14 @@
+package typings.googleapis.mod.computeV1
+
+import typings.googleapisCommon.apiMod.APIRequestContext
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("googleapis", "compute_v1.Resource$Images")
+@js.native
+class ResourceImages protected ()
+  extends typings.googleapis.computeV1Mod.computeV1.ResourceImages {
+  def this(context: APIRequestContext) = this()
+}
+

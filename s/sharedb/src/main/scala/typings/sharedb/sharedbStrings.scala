@@ -1,10 +1,10 @@
 package typings.sharedb
 
-import typings.sharedb.libSharedbMod.DocEvent
-import typings.sharedb.libSharedbMod.OTType
-import typings.sharedb.libSharedbMod.QueryEvent
-import typings.sharedb.libSharedbMod.RequestAction
-import typings.sharedb.sharedbMod.middleware.SnapshotType
+import typings.sharedb.mod.middleware.SnapshotType
+import typings.sharedb.sharedbMod.DocEvent
+import typings.sharedb.sharedbMod.OTType
+import typings.sharedb.sharedbMod.QueryEvent
+import typings.sharedb.sharedbMod.RequestAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

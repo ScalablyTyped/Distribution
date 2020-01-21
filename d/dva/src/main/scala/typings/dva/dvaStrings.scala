@@ -1,6 +1,6 @@
 package typings.dva
 
-import typings.dva.dvaMod.EffectType
+import typings.dva.mod.EffectType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

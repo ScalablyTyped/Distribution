@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param kwArgs       OptionalAn optional keyword arguments object to help define the plot.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.charting.plot2d._PlotEvents because Inheritance from two classes. Inlined connect, connect, destroy, events, fireEvent, plotEvent, raiseEvent, resetEvents */ @JSGlobal("dojox.charting.plot2d.Columns")
+- typings.dojo.dojox.charting.plot2d.PlotEvents because Inheritance from two classes. Inlined connect, connect, destroy, events, fireEvent, plotEvent, raiseEvent, resetEvents */ @JSGlobal("dojox.charting.plot2d.Columns")
 @js.native
 class Columns protected () extends CartesianBase {
   def this(chart: Chart) = this()

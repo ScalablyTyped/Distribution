@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** Provides event properties that are specific to modifications to the Document Object Model (DOM) hierarchy and nodes. */
 @js.native
-trait MutationEvent extends Event {
+trait MutationEvent extends Event_ {
   val ADDITION: Double = js.native
   val MODIFICATION: Double = js.native
   val REMOVAL: Double = js.native

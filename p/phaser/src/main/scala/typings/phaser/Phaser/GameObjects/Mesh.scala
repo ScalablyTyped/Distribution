@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.Depth
-import typings.phaser.Phaser.GameObjects.Components.GetBounds
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
@@ -28,7 +27,6 @@ class Mesh protected ()
   extends GameObject
      with BlendMode
      with Depth
-     with GetBounds
      with Mask
      with Pipeline
      with Size

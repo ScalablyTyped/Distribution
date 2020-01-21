@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ondragend")
 @js.native
 object ondragend
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ DragEvent, js.Any]) | Null]
 

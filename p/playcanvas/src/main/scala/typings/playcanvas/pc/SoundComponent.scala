@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Asset
+import typings.playcanvas.AnonAsset
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,7 +85,7 @@ class SoundComponent protected () extends Component {
     * this.entity.sound.play('beep');
     */
   def addSlot(name: String): SoundSlot = js.native
-  def addSlot(name: String, options: Anon_Asset): SoundSlot = js.native
+  def addSlot(name: String, options: AnonAsset): SoundSlot = js.native
   /**
     * @function
     * @name pc.SoundComponent#pause

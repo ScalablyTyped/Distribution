@@ -11,7 +11,7 @@ trait DesktopCapturerSource extends js.Object {
     * a type screen. The size of the icon is not known in advance and depends on what
     * the the application provides.
     */
-  var appIcon: NativeImage
+  var appIcon: NativeImage_
   /**
     * A unique identifier that will correspond to the id of the matching returned by
     * the . On some platforms, this is equivalent to the XX portion of the id field
@@ -36,12 +36,12 @@ trait DesktopCapturerSource extends js.Object {
     * desktopCapturer.getSources. The actual size depends on the scale of the screen
     * or window.
     */
-  var thumbnail: NativeImage
+  var thumbnail: NativeImage_
 }
 
 object DesktopCapturerSource {
   @scala.inline
-  def apply(appIcon: NativeImage, display_id: String, id: String, name: String, thumbnail: NativeImage): DesktopCapturerSource = {
+  def apply(appIcon: NativeImage_, display_id: String, id: String, name: String, thumbnail: NativeImage_): DesktopCapturerSource = {
     val __obj = js.Dynamic.literal(appIcon = appIcon.asInstanceOf[js.Any], display_id = display_id.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DesktopCapturerSource]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jmespath"
-version := "0.15-dt-20180214Z-40a274"
+version := "0.15-dt-20180214Z-9cc92c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

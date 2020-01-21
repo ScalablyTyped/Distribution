@@ -1,0 +1,9 @@
+package typings.pngjs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object mod {
+  type PNGOptions = typings.pngjs.mod.BaseOptions with typings.pngjs.mod.ParserOptions with typings.pngjs.mod.PackerOptions
+}

@@ -1,0 +1,15 @@
+package typings.googleapis
+
+import typings.googleapis.googleapisStrings.v1b3
+import typings.googleapis.v1b3Mod.dataflowV1b3.Dataflow
+import typings.googleapis.v1b3Mod.dataflowV1b3.Options
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait FnOptionsV1b3 extends js.Object {
+  def apply(options: Options): Dataflow = js.native
+  def apply(version: v1b3): Dataflow = js.native
+}
+

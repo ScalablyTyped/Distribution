@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dustjs-linkedin"
-version := "1.2.1-dt-20190322Z-7ae016"
+version := "1.2.1-dt-20190322Z-6175e9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

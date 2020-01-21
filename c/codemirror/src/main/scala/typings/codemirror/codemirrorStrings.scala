@@ -1,8 +1,8 @@
 package typings.codemirror
 
-import typings.codemirror.codemirrorMod.CoordsMode
-import typings.codemirror.codemirrorMod.DOMEvent
-import typings.codemirror.codemirrorMod.InputStyle
+import typings.codemirror.mod.CoordsMode
+import typings.codemirror.mod.DOMEvent
+import typings.codemirror.mod.InputStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

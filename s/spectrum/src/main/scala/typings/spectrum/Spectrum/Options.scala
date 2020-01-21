@@ -1,6 +1,6 @@
 package typings.spectrum.Spectrum
 
-import typings.tinycolor2.tinycolor2Mod.Instance
+import typings.tinycolor2.mod.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

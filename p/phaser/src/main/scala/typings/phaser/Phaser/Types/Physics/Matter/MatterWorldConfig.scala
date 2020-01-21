@@ -19,65 +19,9 @@ trait MatterWorldConfig extends js.Object {
     */
   var correction: js.UndefOr[Double] = js.undefined
   /**
-    * Sets if Matter will render to the debug Graphic overlay. Do not enable this in production.
+    * Controls the Matter Debug Rendering options. If a boolean it will use the default values, otherwise, specify a Debug Config object.
     */
-  var debug: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The color that dynamic body debug outlines are drawn in.
-    */
-  var debugBodyColor: js.UndefOr[Double] = js.undefined
-  /**
-    * The color that dynamic body debug fills are drawn in.
-    */
-  var debugBodyFillColor: js.UndefOr[Double] = js.undefined
-  /**
-    * The color that the debug convex hulls are drawn in, if enabled.
-    */
-  var debugConvexHullColor: js.UndefOr[Double] = js.undefined
-  /**
-    * The color that the debug joints are drawn in.
-    */
-  var debugJointColor: js.UndefOr[Double] = js.undefined
-  /**
-    * Should dynamic bodies be drawn to the debug graphic?
-    */
-  var debugShowBody: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Render convex hulls to the debug.
-    */
-  var debugShowConvexHulls: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Render internal edges to the debug.
-    */
-  var debugShowInternalEdges: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Render joints to the debug graphic.
-    */
-  var debugShowJoint: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Render sleeping bodies the debug.
-    */
-  var debugShowSleeping: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Should static bodies be drawn to the debug graphic?
-    */
-  var debugShowStaticBody: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Should the velocity vector be drawn to the debug graphic?
-    */
-  var debugShowVelocity: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The color that static body debug outlines are drawn in.
-    */
-  var debugStaticBodyColor: js.UndefOr[Double] = js.undefined
-  /**
-    * The color that the debug velocity vector lines are drawn in.
-    */
-  var debugVelocityColor: js.UndefOr[Double] = js.undefined
-  /**
-    * Render the debug output as wireframes.
-    */
-  var debugWireframes: js.UndefOr[Boolean] = js.undefined
+  var debug: js.UndefOr[Boolean | MatterDebugConfig] = js.undefined
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module. Sleeping can improve stability and performance, but often at the expense of accuracy.
     */
@@ -87,17 +31,56 @@ trait MatterWorldConfig extends js.Object {
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   /**
+    * Sets the Resolver friction normal multiplier property.
+    */
+  var frictionNormalMultiplier: js.UndefOr[Double] = js.undefined
+  /**
     * This function is called every time the core game loop steps, which is bound to the Request Animation Frame frequency unless otherwise modified.
     */
   var getDelta: js.UndefOr[js.Function] = js.undefined
   /**
-    * Sets {@link Phaser.Physics.Matter.World#gravity}.
+    * Sets {@link Phaser.Physics.Matter.World#gravity}. If `false` Gravity will be set to zero.
     */
-  var gravity: js.UndefOr[Vector2Like] = js.undefined
+  var gravity: js.UndefOr[Vector2Like | Boolean] = js.undefined
+  /**
+    * Should the Matter Attractor Plugin be enabled? An attractors plugin that makes it easy to apply continual forces on bodies. It's possible to simulate effects such as wind, gravity and magnetism.
+    */
+  @JSName("plugins.attractors")
+  var pluginsDotattractors: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Should the Matter Collision Events Plugin be enabled?
+    */
+  @JSName("plugins.collisionevents")
+  var pluginsDotcollisionevents: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Should the Matter Wrap Plugin be enabled? A coordinate wrapping plugin that automatically wraps the position of bodies such that they always stay within the given bounds. Upon crossing a boundary the body will appear on the opposite side of the bounds, while maintaining its velocity.
+    */
+  @JSName("plugins.wrap")
+  var pluginsDotwrap: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Sets the Resolver position dampen property.
+    */
+  var positionDampen: js.UndefOr[Double] = js.undefined
   /**
     * The number of position iterations to perform each update. The higher the value, the higher quality the simulation will be at the expense of performance.
     */
   var positionIterations: js.UndefOr[Double] = js.undefined
+  /**
+    * Sets the Resolver position warming property.
+    */
+  var positionWarming: js.UndefOr[Double] = js.undefined
+  /**
+    * Sets the Resolver resting threshold property.
+    */
+  var restingThresh: js.UndefOr[Double] = js.undefined
+  /**
+    * Sets the Resolver resting threshold tangent property.
+    */
+  var restingThreshTangent: js.UndefOr[Double] = js.undefined
+  /**
+    * Sets the Matter Runner options.
+    */
+  var runner: js.UndefOr[MatterRunnerConfig] = js.undefined
   /**
     * Should the world have bounds enabled by default?
     */
@@ -169,26 +152,21 @@ object MatterWorldConfig {
     autoUpdate: js.UndefOr[Boolean] = js.undefined,
     constraintIterations: Int | Double = null,
     correction: Int | Double = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    debugBodyColor: Int | Double = null,
-    debugBodyFillColor: Int | Double = null,
-    debugConvexHullColor: Int | Double = null,
-    debugJointColor: Int | Double = null,
-    debugShowBody: js.UndefOr[Boolean] = js.undefined,
-    debugShowConvexHulls: js.UndefOr[Boolean] = js.undefined,
-    debugShowInternalEdges: js.UndefOr[Boolean] = js.undefined,
-    debugShowJoint: js.UndefOr[Boolean] = js.undefined,
-    debugShowSleeping: js.UndefOr[Boolean] = js.undefined,
-    debugShowStaticBody: js.UndefOr[Boolean] = js.undefined,
-    debugShowVelocity: js.UndefOr[Boolean] = js.undefined,
-    debugStaticBodyColor: Int | Double = null,
-    debugVelocityColor: Int | Double = null,
-    debugWireframes: js.UndefOr[Boolean] = js.undefined,
+    debug: Boolean | MatterDebugConfig = null,
     enableSleeping: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
+    frictionNormalMultiplier: Int | Double = null,
     getDelta: js.Function = null,
-    gravity: Vector2Like = null,
+    gravity: Vector2Like | Boolean = null,
+    pluginsDotattractors: js.UndefOr[Boolean] = js.undefined,
+    pluginsDotcollisionevents: js.UndefOr[Boolean] = js.undefined,
+    pluginsDotwrap: js.UndefOr[Boolean] = js.undefined,
+    positionDampen: Int | Double = null,
     positionIterations: Int | Double = null,
+    positionWarming: Int | Double = null,
+    restingThresh: Int | Double = null,
+    restingThreshTangent: Int | Double = null,
+    runner: MatterRunnerConfig = null,
     setBounds: js.Object | Boolean = null,
     setBoundsDotbottom: js.UndefOr[Boolean] = js.undefined,
     setBoundsDotheight: Int | Double = null,
@@ -207,26 +185,21 @@ object MatterWorldConfig {
     if (!js.isUndefined(autoUpdate)) __obj.updateDynamic("autoUpdate")(autoUpdate.asInstanceOf[js.Any])
     if (constraintIterations != null) __obj.updateDynamic("constraintIterations")(constraintIterations.asInstanceOf[js.Any])
     if (correction != null) __obj.updateDynamic("correction")(correction.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (debugBodyColor != null) __obj.updateDynamic("debugBodyColor")(debugBodyColor.asInstanceOf[js.Any])
-    if (debugBodyFillColor != null) __obj.updateDynamic("debugBodyFillColor")(debugBodyFillColor.asInstanceOf[js.Any])
-    if (debugConvexHullColor != null) __obj.updateDynamic("debugConvexHullColor")(debugConvexHullColor.asInstanceOf[js.Any])
-    if (debugJointColor != null) __obj.updateDynamic("debugJointColor")(debugJointColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowBody)) __obj.updateDynamic("debugShowBody")(debugShowBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowConvexHulls)) __obj.updateDynamic("debugShowConvexHulls")(debugShowConvexHulls.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowInternalEdges)) __obj.updateDynamic("debugShowInternalEdges")(debugShowInternalEdges.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowJoint)) __obj.updateDynamic("debugShowJoint")(debugShowJoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowSleeping)) __obj.updateDynamic("debugShowSleeping")(debugShowSleeping.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowStaticBody)) __obj.updateDynamic("debugShowStaticBody")(debugShowStaticBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugShowVelocity)) __obj.updateDynamic("debugShowVelocity")(debugShowVelocity.asInstanceOf[js.Any])
-    if (debugStaticBodyColor != null) __obj.updateDynamic("debugStaticBodyColor")(debugStaticBodyColor.asInstanceOf[js.Any])
-    if (debugVelocityColor != null) __obj.updateDynamic("debugVelocityColor")(debugVelocityColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugWireframes)) __obj.updateDynamic("debugWireframes")(debugWireframes.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (frictionNormalMultiplier != null) __obj.updateDynamic("frictionNormalMultiplier")(frictionNormalMultiplier.asInstanceOf[js.Any])
     if (getDelta != null) __obj.updateDynamic("getDelta")(getDelta.asInstanceOf[js.Any])
     if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginsDotattractors)) __obj.updateDynamic("plugins.attractors")(pluginsDotattractors.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginsDotcollisionevents)) __obj.updateDynamic("plugins.collisionevents")(pluginsDotcollisionevents.asInstanceOf[js.Any])
+    if (!js.isUndefined(pluginsDotwrap)) __obj.updateDynamic("plugins.wrap")(pluginsDotwrap.asInstanceOf[js.Any])
+    if (positionDampen != null) __obj.updateDynamic("positionDampen")(positionDampen.asInstanceOf[js.Any])
     if (positionIterations != null) __obj.updateDynamic("positionIterations")(positionIterations.asInstanceOf[js.Any])
+    if (positionWarming != null) __obj.updateDynamic("positionWarming")(positionWarming.asInstanceOf[js.Any])
+    if (restingThresh != null) __obj.updateDynamic("restingThresh")(restingThresh.asInstanceOf[js.Any])
+    if (restingThreshTangent != null) __obj.updateDynamic("restingThreshTangent")(restingThreshTangent.asInstanceOf[js.Any])
+    if (runner != null) __obj.updateDynamic("runner")(runner.asInstanceOf[js.Any])
     if (setBounds != null) __obj.updateDynamic("setBounds")(setBounds.asInstanceOf[js.Any])
     if (!js.isUndefined(setBoundsDotbottom)) __obj.updateDynamic("setBounds.bottom")(setBoundsDotbottom.asInstanceOf[js.Any])
     if (setBoundsDotheight != null) __obj.updateDynamic("setBounds.height")(setBoundsDotheight.asInstanceOf[js.Any])

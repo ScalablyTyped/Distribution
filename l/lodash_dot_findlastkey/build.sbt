@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_findlastkey"
-version := "4.7-dt-20190214Z-285ed4"
+version := "4.7-dt-20190214Z-4360d1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

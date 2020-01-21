@@ -1,6 +1,6 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.dimensions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,6 +37,6 @@ class PortletDialogSettings protected () extends PortletSettings {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

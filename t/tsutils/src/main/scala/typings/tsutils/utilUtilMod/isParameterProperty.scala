@@ -1,6 +1,6 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.ParameterDeclaration
+import typings.typescript.mod.ParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

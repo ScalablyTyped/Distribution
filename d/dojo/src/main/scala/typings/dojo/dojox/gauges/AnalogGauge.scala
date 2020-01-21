@@ -1,6 +1,6 @@
 package typings.dojo.dojox.gauges
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.cx
 import typings.dojo.dojoStrings.cy
 import typings.dojo.dojoStrings.endAngle
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.gauges.AnalogGauge")
 @js.native
-class AnalogGauge () extends _Gauge {
+class AnalogGauge () extends Gauge {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -105,7 +105,7 @@ class AnalogGauge () extends _Gauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cy(
     property: cy,
@@ -115,7 +115,7 @@ class AnalogGauge () extends _Gauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_endAngle(
     property: endAngle,
@@ -125,7 +125,7 @@ class AnalogGauge () extends _Gauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_orientation(
     property: orientation,
@@ -135,7 +135,7 @@ class AnalogGauge () extends _Gauge {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_radius(
     property: radius,
@@ -145,7 +145,7 @@ class AnalogGauge () extends _Gauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_startAngle(
     property: startAngle,
@@ -155,6 +155,6 @@ class AnalogGauge () extends _Gauge {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

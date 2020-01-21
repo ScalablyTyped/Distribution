@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Layer[SourceType /* <: typings.ol.sourceSourceMod.default */]
-  extends typings.ol.layerBaseMod.default {
+  extends typings.ol.baseMod.default {
   /* protected */ def createRenderer(): typings.ol.rendererLayerMod.default[Layer[typings.ol.sourceSourceMod.default]] = js.native
-  def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]] = js.native
+  def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]] = js.native
   def getRenderer(): typings.ol.rendererLayerMod.default[Layer[typings.ol.sourceSourceMod.default]] = js.native
   def getSource(): SourceType = js.native
   def hasRenderer(): Boolean = js.native

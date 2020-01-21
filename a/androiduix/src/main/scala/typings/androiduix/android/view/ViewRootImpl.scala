@@ -5,7 +5,7 @@ import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.os.Handler
 import typings.androiduix.android.view.View.AttachInfo.InvalidateInfo
 import typings.androiduix.java.lang.Runnable
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -67,7 +67,7 @@ class ViewRootImpl () extends ViewParent {
   /* private */ def deliverInputEvent(event: js.Any): js.Any = js.native
   def dispatchInputEvent(event: KeyEvent): Boolean = js.native
   def dispatchInputEvent(event: MotionEvent): Boolean = js.native
-  def dispatchInputEvent(event: Event): Boolean = js.native
+  def dispatchInputEvent(event: Event_): Boolean = js.native
   def dispatchInvalidateDelayed(view: View, delayMilliseconds: Double): Unit = js.native
   def dispatchInvalidateOnAnimation(view: View): Unit = js.native
   def dispatchInvalidateRectDelayed(info: InvalidateInfo, delayMilliseconds: Double): Unit = js.native

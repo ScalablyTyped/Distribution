@@ -1,6 +1,6 @@
 package typings.showdown
 
-import typings.showdown.showdownMod.Flavor
+import typings.showdown.mod.Flavor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

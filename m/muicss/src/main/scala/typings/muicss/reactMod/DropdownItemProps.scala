@@ -1,25 +1,25 @@
 package typings.muicss.reactMod
 
-import typings.react.Anon_Html
-import typings.react.reactMod.AnimationEvent
-import typings.react.reactMod.Booleanish
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.CompositionEvent
-import typings.react.reactMod.DragEvent
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.LiHTMLAttributes
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.PointerEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.SyntheticEvent
-import typings.react.reactMod.TouchEvent
-import typings.react.reactMod.TransitionEvent
-import typings.react.reactMod.UIEvent
-import typings.react.reactMod.WheelEvent
+import typings.react.AnonHtml
+import typings.react.mod.AnimationEvent
+import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
+import typings.react.mod.ClipboardEvent
+import typings.react.mod.CompositionEvent
+import typings.react.mod.DragEvent
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.LiHTMLAttributes
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TouchEvent
+import typings.react.mod.TransitionEvent
+import typings.react.mod.UIEvent
+import typings.react.mod.WheelEvent
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -65,7 +65,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -137,7 +137,7 @@ object DropdownItemProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -155,15 +155,15 @@ object DropdownItemProps {
     itemType: String = null,
     lang: String = null,
     link: String = null,
-    onAbort: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onAbort: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLLIElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLLIElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLLIElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLLIElement] => Unit = null,
     onBlur: FocusEvent[HTMLLIElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onChange: FormEvent[HTMLLIElement] => Unit = null,
     onClick: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLLIElement] => Unit = null,
@@ -181,21 +181,21 @@ object DropdownItemProps {
     onDragOver: DragEvent[HTMLLIElement] => Unit = null,
     onDragStart: DragEvent[HTMLLIElement] => Unit = null,
     onDrop: DragEvent[HTMLLIElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onEnded: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onError: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onFocus: FocusEvent[HTMLLIElement] => Unit = null,
     onInput: FormEvent[HTMLLIElement] => Unit = null,
     onInvalid: FormEvent[HTMLLIElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLLIElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLLIElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLLIElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onLoad: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onMouseDown: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit = null,
@@ -204,9 +204,9 @@ object DropdownItemProps {
     onMouseOver: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLLIElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLLIElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onPause: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onPlay: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onPointerCancel: PointerEvent[HTMLLIElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLLIElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLLIElement] => Unit = null,
@@ -215,24 +215,24 @@ object DropdownItemProps {
     onPointerOut: PointerEvent[HTMLLIElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLLIElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLLIElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onProgress: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLLIElement] => Unit = null,
     onScroll: UIEvent[HTMLLIElement] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onSelect: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onStalled: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onSubmit: FormEvent[HTMLLIElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onTouchCancel: TouchEvent[HTMLLIElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLLIElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLLIElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLLIElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLLIElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLLIElement, Event] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLLIElement] => Unit = null,
     placeholder: String = null,
     prefix: String = null,

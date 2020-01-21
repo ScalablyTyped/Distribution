@@ -73,11 +73,11 @@ object Curves extends js.Object {
   class Curve protected () extends js.Object {
     /**
       * 
-      * @param type [description]
+      * @param type The curve type.
       */
     def this(`type`: String) = this()
     /**
-      * [description]
+      * For a curve on a Path, `false` means the Path will ignore this curve.
       */
     var active: Boolean = js.native
     /**
@@ -128,7 +128,7 @@ object Curves extends js.Object {
       */
     def getDistancePoints(distance: integer): js.Array[Point] = js.native
     /**
-      * [description]
+      * Get a point at the end of the curve.
       * @param out Optional Vector object to store the result in.
       */
     def getEndPoint(): Vector2 = js.native
@@ -138,41 +138,67 @@ object Curves extends js.Object {
       */
     def getLength(): Double = js.native
     /**
-      * Get list of cumulative segment lengths
-      * @param divisions [description]
+      * Get a list of cumulative segment lengths.
+      * 
+      * These lengths are
+      * 
+      * - [0] 0
+      * - [1] The first segment
+      * - [2] The first and second segment
+      * - ...
+      * - [divisions] All segments
+      * @param divisions The number of divisions or segments.
       */
     def getLengths(): js.Array[Double] = js.native
     def getLengths(divisions: integer): js.Array[Double] = js.native
     /**
-      * [description]
-      * @param u [description]
-      * @param out [description]
+      * Get a point at a relative position on the curve, by arc length.
+      * @param u The relative position, [0..1].
+      * @param out A point to store the result in.
       */
     def getPointAt[O /* <: Vector2 */](u: Double): O = js.native
     def getPointAt[O /* <: Vector2 */](u: Double, out: O): O = js.native
     /**
-      * [description]
-      * @param divisions The number of evenly spaced points from the curve to return. If falsy, step param will be used to calculate the number of points.
-      * @param step Step between points. Used to calculate the number of points to return when divisions is falsy. Ignored if divisions is positive.
+      * Get a sequence of evenly spaced points from the curve.
+      * 
+      * You can pass `divisions`, `stepRate`, or neither.
+      * 
+      * The number of divisions will be
+      * 
+      * 1. `divisions`, if `divisions` > 0; or
+      * 2. `this.getLength / stepRate`, if `stepRate` > 0; or
+      * 3. `this.defaultDivisions`
+      * 
+      * `1 + divisions` points will be returned.
+      * @param divisions The number of divisions to make.
+      * @param stepRate The curve distance between points, implying `divisions`.
       * @param out An optional array to store the points in.
       */
-    def getPoints(divisions: integer, step: Double): js.Array[_ | Vector2] = js.native
-    def getPoints(divisions: integer, step: Double, out: js.Array[_ | Vector2]): js.Array[_ | Vector2] = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double, out: O): O = js.native
     /**
-      * [description]
-      * @param out [description]
+      * Get a random point from the curve.
+      * @param out A point object to store the result in.
       */
     def getRandomPoint[O /* <: Vector2 */](): O = js.native
     def getRandomPoint[O /* <: Vector2 */](out: O): O = js.native
     /**
-      * [description]
-      * @param divisions [description]
+      * Get a sequence of equally spaced points (by arc distance) from the curve.
+      * 
+      * `1 + divisions` points will be returned.
+      * @param divisions The number of divisions to make. Default this.defaultDivisions.
+      * @param stepRate Step between points. Used to calculate the number of points to return when divisions is falsy. Ignored if divisions is positive.
+      * @param out An optional array to store the points in.
       */
     def getSpacedPoints(): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: integer): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: integer, stepRate: Double): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: integer, stepRate: Double, out: js.Array[_ | Vector2]): js.Array[Vector2] = js.native
     /**
-      * [description]
-      * @param out [description]
+      * Get a point at the start of the curve.
+      * @param out A point to store the result in.
       */
     def getStartPoint[O /* <: Vector2 */](): O = js.native
     def getStartPoint[O /* <: Vector2 */](out: O): O = js.native
@@ -184,19 +210,19 @@ object Curves extends js.Object {
     def getTFromDistance(distance: integer): Double = js.native
     def getTFromDistance(distance: integer, divisions: integer): Double = js.native
     /**
-      * Returns a unit vector tangent at t
+      * Get a unit vector tangent at a relative position on the curve.
       * In case any sub curve does not implement its tangent derivation,
       * 2 points a small delta apart will be used to find its gradient
       * which seems to give a reasonable approximation
-      * @param t [description]
-      * @param out [description]
+      * @param t The relative position on the curve, [0..1].
+      * @param out A vector to store the result in.
       */
     def getTangent[O /* <: Vector2 */](t: Double): O = js.native
     def getTangent[O /* <: Vector2 */](t: Double, out: O): O = js.native
     /**
-      * [description]
-      * @param u [description]
-      * @param out [description]
+      * Get a unit vector tangent at a relative position on the curve, by arc length.
+      * @param u The relative position on the curve, [0..1].
+      * @param out A vector to store the result in.
       */
     def getTangentAt[O /* <: Vector2 */](u: Double): O = js.native
     def getTangentAt[O /* <: Vector2 */](u: Double, out: O): O = js.native
@@ -209,7 +235,7 @@ object Curves extends js.Object {
     def getUtoTmapping(u: Double, distance: integer): Double = js.native
     def getUtoTmapping(u: Double, distance: integer, divisions: integer): Double = js.native
     /**
-      * [description]
+      * Calculate and cache the arc lengths.
       */
     def updateArcLengths(): Unit = js.native
   }
@@ -501,12 +527,12 @@ object Curves extends js.Object {
     def closePath(): Path = js.native
     /**
       * Creates a cubic bezier curve starting at the previous end point and ending at p3, using p1 and p2 as control points.
-      * @param x The x coordinate of the end point. Or, if a Vec2, the p1 value.
-      * @param y The y coordinate of the end point. Or, if a Vec2, the p2 value.
-      * @param control1X The x coordinate of the first control point. Or, if a Vec2, the p3 value.
-      * @param control1Y The y coordinate of the first control point. Not used if vec2s are provided as the first 3 arguments.
-      * @param control2X The x coordinate of the second control point. Not used if vec2s are provided as the first 3 arguments.
-      * @param control2Y The y coordinate of the second control point. Not used if vec2s are provided as the first 3 arguments.
+      * @param x The x coordinate of the end point. Or, if a Vector2, the p1 value.
+      * @param y The y coordinate of the end point. Or, if a Vector2, the p2 value.
+      * @param control1X The x coordinate of the first control point. Or, if a Vector2, the p3 value.
+      * @param control1Y The y coordinate of the first control point. Not used if Vector2s are provided as the first 3 arguments.
+      * @param control2X The x coordinate of the second control point. Not used if Vector2s are provided as the first 3 arguments.
+      * @param control2Y The y coordinate of the second control point. Not used if Vector2s are provided as the first 3 arguments.
       */
     def cubicBezierTo(x: Double, y: Double, control1X: Double): Path = js.native
     def cubicBezierTo(x: Double, y: Double, control1X: Double, control1Y: Double): Path = js.native
@@ -618,10 +644,8 @@ object Curves extends js.Object {
     def getPoint[O /* <: Vector2 */](t: Double): O = js.native
     def getPoint[O /* <: Vector2 */](t: Double, out: O): O = js.native
     /**
-      * Returns the defined starting point of the Path.
-      * 
-      * This is not necessarily equal to the starting point of the first Curve if it differs from {@link startPoint}.
-      * @param divisions The number of points to divide the path in to. Default 12.
+      * Get a sequence of points on the path.
+      * @param divisions The number of divisions per resolution per curve. Default 12.
       */
     def getPoints(): js.Array[Vector2] = js.native
     def getPoints(divisions: integer): js.Array[Vector2] = js.native
@@ -739,28 +763,28 @@ object Curves extends js.Object {
   }
   
   /**
-    * [description]
+    * Create a smooth 2d spline curve from a series of points.
     */
   @js.native
   /**
     * 
-    * @param points [description]
+    * @param points The points that configure the curve.
     */
   class Spline () extends Curve {
-    def this(points: js.Array[Vector2]) = this()
+    def this(points: js.Array[js.Array[Double] | Double | Vector2]) = this()
     /**
-      * [description]
+      * The Vector2 points that configure the curve.
       */
     var points: js.Array[Vector2] = js.native
     /**
-      * [description]
-      * @param x [description]
-      * @param y [description]
+      * Add a point to the current list of Vector2 points of the curve.
+      * @param x The x coordinate of this curve
+      * @param y The y coordinate of this curve
       */
     def addPoint(x: Double, y: Double): Vector2 = js.native
     /**
-      * [description]
-      * @param points [description]
+      * Add a list of points to the current list of Vector2 points of the curve.
+      * @param points The points that configure the curve.
       */
     def addPoints(points: js.Array[js.Array[Double] | Double | Vector2]): Spline = js.native
     /**
@@ -776,7 +800,7 @@ object Curves extends js.Object {
       */
     def getResolution(divisions: Double): Double = js.native
     /**
-      * [description]
+      * Exports a JSON object containing this curve data.
       */
     def toJSON(): JSONCurve = js.native
   }
@@ -825,7 +849,7 @@ object Curves extends js.Object {
   @js.native
   object Spline extends js.Object {
     /**
-      * [description]
+      * Imports a JSON object containing this curve data.
       * @param data The JSON object containing this curve data.
       */
     def fromJSON(data: JSONCurve): Spline = js.native

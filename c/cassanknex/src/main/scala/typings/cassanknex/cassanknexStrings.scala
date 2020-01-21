@@ -1,7 +1,7 @@
 package typings.cassanknex
 
-import typings.cassanknex.cassanknexMod.ComparisonRestriction
-import typings.cassanknex.cassanknexMod.InRestriction
+import typings.cassanknex.mod.ComparisonRestriction
+import typings.cassanknex.mod.InRestriction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.`aria-label`
 import typings.dojo.dojoStrings.`type`
 import typings.dojo.dojoStrings.alt
@@ -33,10 +33,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._FormWidgetMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit.form._FormValueMixin because Inheritance from two classes. Inlined alt, `aria-label`, disabled, intermediateChanges, name, readOnly, scrollOnFocus, tabIndex, `type`, value, compare, create, destroy, focus, isFocusable, postCreate, reset, undo, onChange */ @JSGlobal("dojox.mobile.Slider")
+- typings.dojo.dijit.form.FormWidgetMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.form.FormValueMixin because Inheritance from two classes. Inlined alt, `aria-label`, disabled, intermediateChanges, name, readOnly, scrollOnFocus, tabIndex, `type`, value, compare, create, destroy, focus, isFocusable, postCreate, reset, undo, onChange */ @JSGlobal("dojox.mobile.Slider")
 @js.native
-class Slider () extends _WidgetBase {
+class Slider () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -273,7 +273,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_arialabel(
     property: `aria-label`,
@@ -283,7 +283,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_disabled(
     property: disabled,
@@ -293,7 +293,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_flip(
     property: flip,
@@ -303,7 +303,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_halo(
     property: halo,
@@ -313,7 +313,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_intermediateChanges(
     property: intermediateChanges,
@@ -323,7 +323,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_max(
     property: max,
@@ -333,7 +333,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_min(
     property: min,
@@ -343,7 +343,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_name(
     property: name,
@@ -353,7 +353,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_orientation(
     property: orientation,
@@ -363,7 +363,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_readOnly(
     property: readOnly,
@@ -373,7 +373,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollOnFocus(
     property: scrollOnFocus,
@@ -383,7 +383,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_step(
     property: step,
@@ -393,7 +393,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tabIndex(
     property: tabIndex,
@@ -403,7 +403,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_type(
     property: `type`,
@@ -413,7 +413,7 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -423,6 +423,6 @@ class Slider () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

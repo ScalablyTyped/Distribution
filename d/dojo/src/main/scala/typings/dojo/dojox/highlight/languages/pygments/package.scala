@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object pygments {
-  type css = css_
-  type html = html_
-  type javascript = javascript_
-  type xml = xml_
+  type css = typings.dojo.dojox.highlight.languages.pygments.css_
+  type html = typings.dojo.dojox.highlight.languages.pygments.html_
+  type javascript = typings.dojo.dojox.highlight.languages.pygments.javascript_
+  type xml = typings.dojo.dojox.highlight.languages.pygments.xml_
 }

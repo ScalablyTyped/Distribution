@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Devices.Sms
 
-import typings.winrt.Anon_CompletedGetResultsProgress
+import typings.winrt.AnonCompletedGetResultsProgress
 import typings.winrt.Windows.Foundation.AsyncOperationProgressHandler
 import typings.winrt.Windows.Foundation.AsyncOperationWithProgressCompletedHandler
 import typings.winrt.Windows.Foundation.AsyncStatus
@@ -23,7 +23,7 @@ class GetSmsMessagesOperation ()
   /* CompleteClass */
   override var id: Double = js.native
   @JSName("operation")
-  var operation_GetSmsMessagesOperation: Anon_CompletedGetResultsProgress = js.native
+  var operation_GetSmsMessagesOperation: AnonCompletedGetResultsProgress = js.native
   @JSName("progress")
   var progress_Original: AsyncOperationProgressHandler[IVectorView[ISmsMessage], Double] = js.native
   /* CompleteClass */

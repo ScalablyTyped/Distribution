@@ -1,8 +1,8 @@
 package typings.zeroclipboard.ZC
 
-import typings.zeroclipboard.Anon_Aftercopy
-import typings.zeroclipboard.Anon_AftercopyBeforecopy
-import typings.zeroclipboard.Anon_Name
+import typings.zeroclipboard.AnonAftercopy
+import typings.zeroclipboard.AnonAftercopyBeforecopy
+import typings.zeroclipboard.AnonName
 import typings.zeroclipboard.zeroclipboardStrings.aftercopy
 import typings.zeroclipboard.zeroclipboardStrings.beforecopy
 import typings.zeroclipboard.zeroclipboardStrings.copy
@@ -30,7 +30,7 @@ trait ZeroClipboardCommon extends js.Object {
     * @param  {string} name
     * @return {any}
     */
-  def emit(data: Anon_Name): js.Any = js.native
+  def emit(data: AnonName): js.Any = js.native
   /**
     * Dispatch an event to all registered listeners. The emission of some types of events will result in side effects.
     * @param  {string} eventType
@@ -66,7 +66,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Retrieves a copy of the map of registered listener functions/objects for ALL event types.
     * @return {Object}
     */
-  def handlers(): Anon_AftercopyBeforecopy = js.native
+  def handlers(): AnonAftercopyBeforecopy = js.native
   /**
     * Retrieves a copy of the registered listener functions/objects for the given eventType.
     * @param  {string} eventType
@@ -95,7 +95,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Remove a set of eventType to listener function/object mappings.
     * @param {EventListener<ZeroClipboardErrorEvent>} listenerObj
     */
-  def off(listenerObj: Anon_Aftercopy): Unit = js.native
+  def off(listenerObj: AnonAftercopy): Unit = js.native
   @JSName("off")
   def off_aftercopy(eventType: aftercopy): Unit = js.native
   @JSName("off")
@@ -138,7 +138,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Add a set of eventType to listener function/object mappings.
     * @param {EventListener<ZeroClipboardErrorEvent>} listenerObj
     */
-  def on(listenerObj: Anon_Aftercopy): Unit = js.native
+  def on(listenerObj: AnonAftercopy): Unit = js.native
   /**
     * The aftercopy event is fired when the text is copied [or failed to copy] to the clipboard.
     * @param {"aftercopy"} eventType

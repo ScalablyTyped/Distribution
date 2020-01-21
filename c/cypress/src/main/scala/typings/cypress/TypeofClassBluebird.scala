@@ -1,17 +1,17 @@
 package typings.cypress
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.cypress.typesBluebirdMod.Bluebird
-import typings.cypress.typesBluebirdMod.ConcurrencyOption
-import typings.cypress.typesBluebirdMod.CoroutineOptions
-import typings.cypress.typesBluebirdMod.Disposer
-import typings.cypress.typesBluebirdMod.FromNodeOptions
-import typings.cypress.typesBluebirdMod.IterateFunction
-import typings.cypress.typesBluebirdMod.PromisifyAllOptions
-import typings.cypress.typesBluebirdMod.PromisifyOptions
-import typings.cypress.typesBluebirdMod.Resolvable
-import typings.cypress.typesBluebirdMod.ResolvableProps
-import typings.cypress.typesBluebirdMod.Resolver
+import typings.cypress.bluebirdMod.Bluebird
+import typings.cypress.bluebirdMod.ConcurrencyOption
+import typings.cypress.bluebirdMod.CoroutineOptions
+import typings.cypress.bluebirdMod.Disposer
+import typings.cypress.bluebirdMod.FromNodeOptions
+import typings.cypress.bluebirdMod.IterateFunction
+import typings.cypress.bluebirdMod.PromisifyAllOptions
+import typings.cypress.bluebirdMod.PromisifyOptions
+import typings.cypress.bluebirdMod.Resolvable
+import typings.cypress.bluebirdMod.ResolvableProps
+import typings.cypress.bluebirdMod.Resolver
 import typings.std.Error
 import typings.std.Iterable
 import typings.std.IterableIterator
@@ -75,7 +75,7 @@ trait TypeofClassBluebird
     * Note that even though false is the default here, a development environment might be detected which automatically
     *  enables long stack traces and warnings.
     */
-  def config(options: Anon_Cancellation): Unit = js.native
+  def config(options: AnonCancellation): Unit = js.native
   /**
     * Returns a function that can use `yield` to run asynchronous code synchronously.
     *

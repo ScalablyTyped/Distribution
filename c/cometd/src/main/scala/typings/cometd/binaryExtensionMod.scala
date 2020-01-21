@@ -1,8 +1,8 @@
 package typings.cometd
 
-import typings.cometd.cometdMod.Extension
-import typings.cometd.cometdMod.Listener
-import typings.cometd.cometdMod.Message
+import typings.cometd.mod.Extension
+import typings.cometd.mod.Listener
+import typings.cometd.mod.Message
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

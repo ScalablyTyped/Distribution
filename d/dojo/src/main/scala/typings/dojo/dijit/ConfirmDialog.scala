@@ -1,6 +1,6 @@
 package typings.dojo.dijit
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.form.Button
 import typings.dojo.dojoStrings.actionBarTemplate
 import typings.dojo.dojoStrings.buttonCancel
@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._ConfirmDialogMixin because Inheritance from two classes. Inlined actionBarTemplate, buttonCancel, buttonOk, contextRequire, widgetsInTemplate, startup */ @JSGlobal("dijit.ConfirmDialog")
+- typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.ConfirmDialogMixin because Inheritance from two classes. Inlined actionBarTemplate, buttonCancel, buttonOk, contextRequire, widgetsInTemplate, startup */ @JSGlobal("dijit.ConfirmDialog")
 @js.native
 class ConfirmDialog protected () extends Dialog {
   def this(params: js.Object) = this()
@@ -93,7 +93,7 @@ class ConfirmDialog protected () extends Dialog {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_buttonCancel(
     property: buttonCancel,
@@ -103,7 +103,7 @@ class ConfirmDialog protected () extends Dialog {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_buttonOk(
     property: buttonOk,
@@ -113,7 +113,7 @@ class ConfirmDialog protected () extends Dialog {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_contextRequire(
     property: contextRequire,
@@ -123,7 +123,7 @@ class ConfirmDialog protected () extends Dialog {
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_widgetsInTemplate(
     property: widgetsInTemplate,
@@ -133,6 +133,6 @@ class ConfirmDialog protected () extends Dialog {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

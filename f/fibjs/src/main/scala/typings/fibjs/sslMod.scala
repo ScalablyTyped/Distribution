@@ -19,13 +19,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object sslMod extends js.Object {
   @js.native
-  class Handler () extends Class_SslHandler
+  class Handler () extends ClassSslHandler
   
   @js.native
-  class Server () extends Class_SslServer
+  class Server () extends ClassSslServer
   
   @js.native
-  class Socket () extends Class_SslSocket
+  class Socket () extends ClassSslSocket
   
   val BADCERT_CN_MISMATCH: `4` = js.native
   val BADCERT_EXPIRED: `1` = js.native
@@ -34,19 +34,23 @@ object sslMod extends js.Object {
   val VERIFY_NONE: `0` = js.native
   val VERIFY_OPTIONAL: `1` = js.native
   val VERIFY_REQUIRED: `2` = js.native
-  val ca: Class_X509Cert = js.native
-  val max_version: Double = js.native
-  val min_version: Double = js.native
+  val ca: ClassX509Cert = js.native
+  @JSName("max_version")
+  val maxVersion: Double = js.native
+  @JSName("min_version")
+  val minVersion: Double = js.native
   val ssl3: `0` = js.native
   val tls1: `1` = js.native
-  val tls1_1: `2` = js.native
-  val tls1_2: `3` = js.native
+  @JSName("tls1_1")
+  val tls11: `2` = js.native
+  @JSName("tls1_2")
+  val tls12: `3` = js.native
   val verification: Double = js.native
-  def connect(url: String): Class_Stream = js.native
-  def connect(url: String, timeout: Double): Class_Stream = js.native
+  def connect(url: String): ClassStream = js.native
+  def connect(url: String, timeout: Double): ClassStream = js.native
   def loadClientCertFile(crtFile: String, keyFile: String): Unit = js.native
   def loadClientCertFile(crtFile: String, keyFile: String, password: String): Unit = js.native
   def loadRootCerts(): Unit = js.native
-  def setClientCert(crt: Class_X509Cert, key: Class_PKey): Unit = js.native
+  def setClientCert(crt: ClassX509Cert, key: ClassPKey): Unit = js.native
 }
 

@@ -1,28 +1,28 @@
 package typings.muicss.reactMod
 
-import typings.react.Anon_Html
-import typings.react.reactMod.AnimationEvent
-import typings.react.reactMod.Booleanish
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ChangeEvent
-import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.CompositionEvent
-import typings.react.reactMod.DragEvent
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.InputHTMLAttributes
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.MouseEventHandler
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.PointerEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
-import typings.react.reactMod.SyntheticEvent
-import typings.react.reactMod.TouchEvent
-import typings.react.reactMod.TransitionEvent
-import typings.react.reactMod.UIEvent
-import typings.react.reactMod.WheelEvent
+import typings.react.AnonHtml
+import typings.react.mod.AnimationEvent
+import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
+import typings.react.mod.ChangeEvent
+import typings.react.mod.ClipboardEvent
+import typings.react.mod.CompositionEvent
+import typings.react.mod.DragEvent
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TouchEvent
+import typings.react.mod.TransitionEvent
+import typings.react.mod.UIEvent
+import typings.react.mod.WheelEvent
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -68,7 +68,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -151,7 +151,7 @@ object InputProps {
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     crossOrigin: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -188,15 +188,15 @@ object InputProps {
     minLength: Int | Double = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
-    onAbort: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onAbort: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLInputElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLInputElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLInputElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLInputElement] => Unit = null,
     onBlur: FocusEvent[HTMLInputElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onChange: ChangeEvent[HTMLInputElement] => Unit = null,
     onClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLInputElement] => Unit = null,
@@ -214,11 +214,11 @@ object InputProps {
     onDragOver: DragEvent[HTMLInputElement] => Unit = null,
     onDragStart: DragEvent[HTMLInputElement] => Unit = null,
     onDrop: DragEvent[HTMLInputElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onEnded: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onError: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onFocus: FocusEvent[HTMLInputElement] => Unit = null,
     onInput: FormEvent[HTMLInputElement] => Unit = null,
     onInvalid: FormEvent[HTMLInputElement] => Unit = null,
@@ -226,10 +226,10 @@ object InputProps {
     onKeyPress: KeyboardEvent[HTMLInputElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLInputElement] => Unit = null,
     onLabelClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onLoad: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onLoad: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onMouseDown: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
@@ -238,9 +238,9 @@ object InputProps {
     onMouseOver: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLInputElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onPause: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onPlay: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onPointerCancel: PointerEvent[HTMLInputElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLInputElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLInputElement] => Unit = null,
@@ -249,24 +249,24 @@ object InputProps {
     onPointerOut: PointerEvent[HTMLInputElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLInputElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLInputElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onProgress: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLInputElement] => Unit = null,
     onScroll: UIEvent[HTMLInputElement] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onSelect: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onStalled: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onSubmit: FormEvent[HTMLInputElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onTouchCancel: TouchEvent[HTMLInputElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLInputElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLInputElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLInputElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLInputElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLInputElement, Event] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLInputElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLInputElement] => Unit = null,
     pattern: String = null,
     placeholder: String = null,

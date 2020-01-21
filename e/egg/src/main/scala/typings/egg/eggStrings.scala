@@ -1,6 +1,6 @@
 package typings.egg
 
-import typings.egg.eggMod._EggEnvType
+import typings.egg.mod._EggEnvType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

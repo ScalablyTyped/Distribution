@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("lodash/parseInt", JSImport.Namespace)
+@JSImport("lodash/fp/parseInt", JSImport.Namespace)
 @js.native
 object parseIntMod extends js.Object {
   /**

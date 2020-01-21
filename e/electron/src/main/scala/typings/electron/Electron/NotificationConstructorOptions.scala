@@ -27,7 +27,7 @@ trait NotificationConstructorOptions extends js.Object {
   /**
     * An icon to use in the notification.
     */
-  var icon: js.UndefOr[String | NativeImage] = js.undefined
+  var icon: js.UndefOr[String | NativeImage_] = js.undefined
   /**
     * The placeholder to write in the inline reply input field.
     */
@@ -59,7 +59,7 @@ object NotificationConstructorOptions {
     actions: js.Array[NotificationAction] = null,
     closeButtonText: String = null,
     hasReply: js.UndefOr[Boolean] = js.undefined,
-    icon: String | NativeImage = null,
+    icon: String | NativeImage_ = null,
     replyPlaceholder: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
     sound: String = null,

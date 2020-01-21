@@ -14,32 +14,32 @@ package object RawDataProvider {
     * Geographic coordinates
     * A geographic coordinates pair [lat, lng]
     */
-  type GeoCoordinates = js.Tuple2[Double, Double]
+  type GeoCoordinates = js.Tuple2[scala.Double, scala.Double]
   /**
     * Latitude coordinate
     * The latitude in the geographic coordinates pair
     */
-  type Latitude = Double
+  type Latitude = scala.Double
   /**
     * Longitude coordinate
     * The longitude in the geographic coordinates pair
     */
-  type Longitude = Double
+  type Longitude = scala.Double
   /**
     * Pixel coordinate in the x direction
     * The x coordinate of the pixel coordinates pair [px, py]
     */
-  type PX = Double
+  type PX = scala.Double
   /**
     * Pixel coordinate in the y direction
     * The y coordinate of the pixel coordinates pair [px, py]
     */
-  type PY = Double
+  type PY = scala.Double
   /**
     * Pixel coordinates
     * Pixel coordinates [px, py] pair
     */
-  type PixelCoordinates = js.Tuple2[Double, Double]
+  type PixelCoordinates = js.Tuple2[scala.Double, scala.Double]
   /**
     * Tile size
     * The tile size in pixels.

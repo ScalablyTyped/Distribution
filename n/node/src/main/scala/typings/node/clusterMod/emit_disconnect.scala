@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cluster", "emit")
 @js.native
 object emit_disconnect extends js.Object {
-  def apply(event: typings.node.nodeStrings.disconnect, worker: Worker): Boolean = js.native
+  def apply(event: typings.node.nodeStrings.disconnect, worker: Worker_): Boolean = js.native
 }
 

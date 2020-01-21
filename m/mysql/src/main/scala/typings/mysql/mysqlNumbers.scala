@@ -1,6 +1,6 @@
 package typings.mysql
 
-import typings.mysql.mysqlMod.Types
+import typings.mysql.mod.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

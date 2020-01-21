@@ -1,33 +1,20 @@
 package typings.rxjs
 
+import typings.rxjs.internalObservableMod.Observable
+import typings.rxjs.typesMod.MonoTypeOperatorFunction
+import typings.rxjs.typesMod.OperatorFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rxjs/operators/race", JSImport.Namespace)
+@JSImport("rxjs/internal/operators/race", JSImport.Namespace)
 @js.native
 object operatorsRaceMod extends js.Object {
-  def race[T](
-    observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ js.Any) | (js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
-    ]))*
-  ): js.Any = js.native
-  def race[T](
-    observables: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
-    ]
-  ): js.Any = js.native
+  def race[T](observables: (Observable[T] | js.Array[Observable[T]])*): MonoTypeOperatorFunction[T] = js.native
+  def race[T](observables: js.Array[Observable[T]]): MonoTypeOperatorFunction[T] = js.native
   @JSName("race")
-  def race_TR[T, R](
-    observables: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any) | (js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
-    ]))*
-  ): js.Any = js.native
+  def race_TR_OperatorFunction[T, R](observables: (Observable[_] | js.Array[Observable[_]])*): OperatorFunction[T, R] = js.native
   @JSName("race")
-  def race_TR[T, R](
-    observables: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> */ _
-    ]
-  ): js.Any = js.native
+  def race_TR_OperatorFunction[T, R](observables: js.Array[Observable[T]]): OperatorFunction[T, R] = js.native
 }
 

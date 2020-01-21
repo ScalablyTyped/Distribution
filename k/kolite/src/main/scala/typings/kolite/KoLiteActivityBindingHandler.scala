@@ -1,6 +1,6 @@
 package typings.kolite
 
-import typings.knockout.Anon_ControlsDescendantBindings
+import typings.knockout.AnonControlsDescendantBindings
 import typings.knockout.KnockoutAllBindingsAccessor
 import typings.knockout.KnockoutBindingContext
 import typings.knockout.KnockoutBindingHandler
@@ -18,7 +18,7 @@ object KoLiteActivityBindingHandler {
   def apply(
     defaultOptions: KoLiteActivityDefaultOptions,
     after: js.Array[String] = null,
-    init: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ KnockoutBindingContext) => Unit | Anon_ControlsDescendantBindings = null,
+    init: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ KnockoutBindingContext) => Unit | AnonControlsDescendantBindings = null,
     options: js.Any = null,
     preprocess: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String = null,
     update: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ KnockoutBindingContext) => Unit = null

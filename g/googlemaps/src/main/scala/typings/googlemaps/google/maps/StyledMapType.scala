@@ -1,6 +1,6 @@
 package typings.googlemaps.google.maps
 
-import typings.std.Document
+import typings.std.Document_
 import typings.std.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,7 +28,7 @@ class StyledMapType protected ()
   @JSName("tileSize")
   var tileSize_StyledMapType: Size = js.native
   /* CompleteClass */
-  override def getTile(tileCoord: Point, zoom: Double, ownerDocument: Document): Element = js.native
+  override def getTile(tileCoord: Point, zoom: Double, ownerDocument: Document_): Element = js.native
   /* CompleteClass */
   override def releaseTile(tile: Element): Unit = js.native
 }

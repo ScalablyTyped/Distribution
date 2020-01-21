@@ -1,12 +1,12 @@
 package typings.ionic.definitionsMod
 
-import typings.ionic.Anon_IdNumber
+import typings.ionic.AnonIdNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ISession extends js.Object {
-  def getUser(): Anon_IdNumber
+  def getUser(): AnonIdNumber
   def getUserToken(): String
   def isLoggedIn(): Boolean
   def login(email: String, password: String): js.Promise[Unit]
@@ -18,7 +18,7 @@ trait ISession extends js.Object {
 object ISession {
   @scala.inline
   def apply(
-    getUser: () => Anon_IdNumber,
+    getUser: () => AnonIdNumber,
     getUserToken: () => String,
     isLoggedIn: () => Boolean,
     login: (String, String) => js.Promise[Unit],

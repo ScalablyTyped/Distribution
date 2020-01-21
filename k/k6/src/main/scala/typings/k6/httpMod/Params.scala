@@ -15,7 +15,7 @@ trait Params extends js.Object {
   /** Request headers. */
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   /** Cookie jar to override default VU cookie jar with. */
-  var jar: js.UndefOr[CookieJar] = js.undefined
+  var jar: js.UndefOr[CookieJar_] = js.undefined
   /** Maximum redirects to follow. */
   var redirects: js.UndefOr[Double] = js.undefined
   /** Response type. */
@@ -33,7 +33,7 @@ object Params {
     compression: String = null,
     cookies: StringDictionary[ParamsCookieValue] = null,
     headers: StringDictionary[String] = null,
-    jar: CookieJar = null,
+    jar: CookieJar_ = null,
     redirects: Int | Double = null,
     responseType: ResponseType = null,
     tags: StringDictionary[String] = null,

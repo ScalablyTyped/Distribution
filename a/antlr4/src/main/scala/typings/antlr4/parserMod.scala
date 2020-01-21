@@ -1,13 +1,13 @@
 package typings.antlr4
 
 import typings.antlr4.commonTokenStreamMod.CommonTokenStream
-import typings.antlr4.errorErrorStrategyMod.ErrorStrategy
+import typings.antlr4.errorStrategyMod.ErrorStrategy
 import typings.antlr4.inputStreamMod.InputStream
 import typings.antlr4.lexerMod.Lexer
 import typings.antlr4.parserRuleContextMod.ParserRuleContext
 import typings.antlr4.recognizerMod.Recognizer
 import typings.antlr4.tokenMod.Token
-import typings.antlr4.treeTreeMod.ParseTreeListener
+import typings.antlr4.treeMod.ParseTreeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

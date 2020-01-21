@@ -1,7 +1,7 @@
 package typings.dojo.dojox.drawing.tools
 
 import typings.dojo.dojox.drawing.stencil.Text
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -144,6 +144,6 @@ class TextBlock_ protected () extends Text {
     *
     * @param obj
     */
-  def showParent(obj: Event): Unit = js.native
+  def showParent(obj: Event_): Unit = js.native
 }
 

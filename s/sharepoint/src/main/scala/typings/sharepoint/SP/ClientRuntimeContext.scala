@@ -1,6 +1,6 @@
 package typings.sharepoint.SP
 
-import typings.microsoftDashAjax.Sys.IDisposable
+import typings.microsoftAjax.Sys.IDisposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

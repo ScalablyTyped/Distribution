@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.columns
 import typings.dojo.dojoStrings.rightAlign
 import typings.std.HTMLElement
@@ -68,7 +68,7 @@ class FormLayout () extends Container {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_rightAlign(
     property: rightAlign,
@@ -78,6 +78,6 @@ class FormLayout () extends Container {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

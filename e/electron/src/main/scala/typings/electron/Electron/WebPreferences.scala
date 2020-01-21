@@ -191,7 +191,7 @@ trait WebPreferences extends js.Object {
     * a partition string. When both session and partition are provided, session will
     * be preferred. Default is the default session.
     */
-  var session: js.UndefOr[Session] = js.undefined
+  var session: js.UndefOr[Session_] = js.undefined
   /**
     * Make TextArea elements resizable. Default is true.
     */
@@ -255,7 +255,7 @@ object WebPreferences {
     safeDialogsMessage: String = null,
     sandbox: js.UndefOr[Boolean] = js.undefined,
     scrollBounce: js.UndefOr[Boolean] = js.undefined,
-    session: Session = null,
+    session: Session_ = null,
     textAreasAreResizable: js.UndefOr[Boolean] = js.undefined,
     webSecurity: js.UndefOr[Boolean] = js.undefined,
     webgl: js.UndefOr[Boolean] = js.undefined,

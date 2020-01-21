@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var viewporter: Viewporter = js.native
+  var viewporter: Viewporter_ = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.samchon
 
-import typings.tstl.tstlMod.Pair
+import typings.tstl.mod.Pair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libraryMod extends js.Object {
   @js.native
   class CartesianProduct protected ()
-    extends typings.samchon.libraryCaseUnderscoreGeneratorsCartesianProductMod.CartesianProduct {
+    extends typings.samchon.cartesianProductMod.CartesianProduct {
     /**
       * Initializer Constructor.
       *
@@ -21,7 +21,7 @@ object libraryMod extends js.Object {
   
   @js.native
   class Factorial protected ()
-    extends typings.samchon.libraryCaseUnderscoreGeneratorsFactorialMod.Factorial {
+    extends typings.samchon.factorialMod.Factorial {
     /**
       * Construct from factorial size N.
       *
@@ -32,7 +32,7 @@ object libraryMod extends js.Object {
   
   @js.native
   class Permutation protected ()
-    extends typings.samchon.libraryCaseUnderscoreGeneratorsPermutationMod.Permutation {
+    extends typings.samchon.permutationMod.Permutation {
     /**
       * Construct from size of N and R.
       *
@@ -44,7 +44,7 @@ object libraryMod extends js.Object {
   
   @js.native
   class RepeatedPermutation protected ()
-    extends typings.samchon.libraryCaseUnderscoreGeneratorsRepeatedPermutationMod.RepeatedPermutation {
+    extends typings.samchon.repeatedPermutationMod.RepeatedPermutation {
     /**
       * Construct from size of N and R.
       *
@@ -56,7 +56,7 @@ object libraryMod extends js.Object {
   
   @js.native
   class StringUtil ()
-    extends typings.samchon.libraryUtilsStringUtilMod.StringUtil
+    extends typings.samchon.stringUtilMod.StringUtil
   
   /**
     * URLVariables class is for representing variables of HTTP.
@@ -74,7 +74,7 @@ object libraryMod extends js.Object {
     * Default Constructor.
     */
   class URLVariables ()
-    extends typings.samchon.libraryURLVariablesMod.URLVariables {
+    extends typings.samchon.urlvariablesMod.URLVariables {
     /**
       * Construct from a URL-encoded string.
       *
@@ -87,14 +87,14 @@ object libraryMod extends js.Object {
   
   @js.native
   class XML ()
-    extends typings.samchon.libraryXMLMod.XML {
+    extends typings.samchon.xmlMod.XML {
     def this(str: String) = this()
-    def this(xml: typings.sxml.libXMLMod.XML) = this()
+    def this(xml: typings.sxml.xmlMod.XML) = this()
   }
   
   @js.native
   class XMLList ()
-    extends typings.sxml.libXMLListMod.XMLList
+    extends typings.sxml.xmllistMod.XMLList
   
   /* static members */
   @js.native
@@ -280,10 +280,14 @@ object libraryMod extends js.Object {
       * @hidden
       */
     var _Repeat: js.Any = js.native
-    def decode_property(str: String): String = js.native
-    def decode_value(str: String): String = js.native
-    def encode_property(str: String): String = js.native
-    def encode_value(str: String): String = js.native
+    @JSName("decode_property")
+    def decodeProperty(str: String): String = js.native
+    @JSName("decode_value")
+    def decodeValue(str: String): String = js.native
+    @JSName("encode_property")
+    def encodeProperty(str: String): String = js.native
+    @JSName("encode_value")
+    def encodeValue(str: String): String = js.native
     def head(): String = js.native
     def head(encoding: String): String = js.native
   }

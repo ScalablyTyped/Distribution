@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dom {
-  type ICompositeElement = ICompositeElementLite
+  type ICompositeElement = typings.extjs.Ext.dom.ICompositeElementLite
 }

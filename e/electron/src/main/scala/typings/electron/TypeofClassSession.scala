@@ -2,17 +2,17 @@ package typings.electron
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.electron.Electron.FromPartitionOptions
-import typings.electron.Electron.Session
+import typings.electron.Electron.Session_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TypeofClassSession extends Instantiable0[Session] {
+trait TypeofClassSession extends Instantiable0[Session_] {
   /**
     * A Session object, the default session object of the app.
     */
-  var defaultSession: js.UndefOr[Session] = js.native
+  var defaultSession: js.UndefOr[Session_] = js.native
   // Docs: http://electronjs.org/docs/api/session
   /**
     * If partition starts with persist:, the page will use a persistent session
@@ -22,7 +22,7 @@ trait TypeofClassSession extends Instantiable0[Session] {
     * options, you have to ensure the Session with the partition has never been used
     * before. There is no way to change the options of an existing Session object.
     */
-  def fromPartition(partition: String): Session = js.native
-  def fromPartition(partition: String, options: FromPartitionOptions): Session = js.native
+  def fromPartition(partition: String): Session_ = js.native
+  def fromPartition(partition: String, options: FromPartitionOptions): Session_ = js.native
 }
 

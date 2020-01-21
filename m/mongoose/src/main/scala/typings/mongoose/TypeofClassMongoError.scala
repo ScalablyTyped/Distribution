@@ -1,7 +1,7 @@
 package typings.mongoose
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.mongodb.mongodbMod.MongoError
+import typings.mongodb.mod.MongoError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

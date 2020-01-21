@@ -1,0 +1,12 @@
+package typings.neffosJs.mod
+
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Error
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("neffos.js", "ErrBadNamespace")
+@js.native
+object ErrBadNamespace extends TopLevel[Error]
+

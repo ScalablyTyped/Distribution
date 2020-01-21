@@ -14,7 +14,7 @@ package object oo {
     * @param target target to receive new/updated properties
     * @param source source of properties, more than one source is allowed
     */
-  type mixin = js.Function2[/* target */ js.Object, /* source */ js.Array[js.Object], Unit]
+  type mixin = js.Function2[/* target */ js.Object, /* source */ js.Array[js.Object], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/lang/oo/rearrange.html
     *
@@ -25,5 +25,5 @@ package object oo {
     * @param bag the object to be processed
     * @param map the dictionary for renaming (false value indicates removal of the named property)
     */
-  type rearrange = js.Function2[/* bag */ js.Object, /* map */ js.Object, Unit]
+  type rearrange = js.Function2[/* bag */ js.Object, /* map */ js.Object, scala.Unit]
 }

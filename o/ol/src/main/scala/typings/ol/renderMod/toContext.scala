@@ -1,6 +1,6 @@
 package typings.ol.renderMod
 
-import typings.ol.renderCanvasImmediateMod.default
+import typings.ol.immediateMod.default
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`

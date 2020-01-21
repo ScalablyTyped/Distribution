@@ -1,0 +1,21 @@
+package typings.ckeditor
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AnonColorStyle extends js.Object {
+  var color: String
+  var style: String
+  var width: String
+}
+
+object AnonColorStyle {
+  @scala.inline
+  def apply(color: String, style: String, width: String): AnonColorStyle = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonColorStyle]
+  }
+}
+

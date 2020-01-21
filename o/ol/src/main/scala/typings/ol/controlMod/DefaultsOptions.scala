@@ -1,6 +1,6 @@
 package typings.ol.controlMod
 
-import typings.ol.controlAttributionMod.Options
+import typings.ol.attributionMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,9 +9,9 @@ trait DefaultsOptions extends js.Object {
   var attribution: js.UndefOr[Boolean] = js.undefined
   var attributionOptions: js.UndefOr[Options] = js.undefined
   var rotate: js.UndefOr[Boolean] = js.undefined
-  var rotateOptions: js.UndefOr[typings.ol.controlRotateMod.Options] = js.undefined
+  var rotateOptions: js.UndefOr[typings.ol.rotateMod.Options] = js.undefined
   var zoom: js.UndefOr[Boolean] = js.undefined
-  var zoomOptions: js.UndefOr[typings.ol.controlZoomMod.Options] = js.undefined
+  var zoomOptions: js.UndefOr[typings.ol.zoomMod.Options] = js.undefined
 }
 
 object DefaultsOptions {
@@ -20,9 +20,9 @@ object DefaultsOptions {
     attribution: js.UndefOr[Boolean] = js.undefined,
     attributionOptions: Options = null,
     rotate: js.UndefOr[Boolean] = js.undefined,
-    rotateOptions: typings.ol.controlRotateMod.Options = null,
+    rotateOptions: typings.ol.rotateMod.Options = null,
     zoom: js.UndefOr[Boolean] = js.undefined,
-    zoomOptions: typings.ol.controlZoomMod.Options = null
+    zoomOptions: typings.ol.zoomMod.Options = null
   ): DefaultsOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(attribution)) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])

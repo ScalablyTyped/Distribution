@@ -1,6 +1,6 @@
 package typings.slideout
 
-import typings.slideout.slideoutMod.Events
+import typings.slideout.mod.Events
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

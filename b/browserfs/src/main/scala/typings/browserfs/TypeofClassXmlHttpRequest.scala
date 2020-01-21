@@ -3,11 +3,11 @@ package typings.browserfs
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.browserfs.distNodeBackendXmlHttpRequestMod.XmlHttpRequest
-import typings.browserfs.distNodeBackendXmlHttpRequestMod.XmlHttpRequestOptions
-import typings.browserfs.distNodeBackendXmlHttpRequestMod.default
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.fileSystemMod.BFSCallback
+import typings.browserfs.fileSystemMod.FileSystemOptions
+import typings.browserfs.xmlHttpRequestMod.XmlHttpRequest
+import typings.browserfs.xmlHttpRequestMod.XmlHttpRequestOptions
+import typings.browserfs.xmlHttpRequestMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

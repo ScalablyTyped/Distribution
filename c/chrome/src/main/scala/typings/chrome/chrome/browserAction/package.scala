@@ -5,9 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object browserAction {
-  import typings.chrome.chrome.events.Event
-  import typings.chrome.chrome.tabs.Tab
-
-  type BrowserClickedEvent = Event[js.Function1[/* tab */ Tab, Unit]]
-  type ColorArray = js.Tuple4[Double, Double, Double, Double]
+  type BrowserClickedEvent = typings.chrome.chrome.events.Event[js.Function1[/* tab */ typings.chrome.chrome.tabs.Tab, scala.Unit]]
+  type ColorArray = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
 }

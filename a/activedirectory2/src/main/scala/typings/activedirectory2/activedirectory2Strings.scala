@@ -1,8 +1,8 @@
 package typings.activedirectory2
 
-import typings.activedirectory2.activedirectory2Mod.GroupAttributes
-import typings.activedirectory2.activedirectory2Mod.MembershipType
-import typings.activedirectory2.activedirectory2Mod.UserAttributes
+import typings.activedirectory2.mod.GroupAttributes
+import typings.activedirectory2.mod.MembershipType
+import typings.activedirectory2.mod.UserAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

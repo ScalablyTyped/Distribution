@@ -17,6 +17,7 @@ object fchown extends js.Object {
     * Asynchronous fchown(2) - Change ownership of a file.
     * @param fd A file descriptor.
     */
-  def __promisify__(fd: Double, uid: Double, gid: Double): js.Promise[Unit] = js.native
+  @JSName("__promisify__")
+  def promisify(fd: Double, uid: Double, gid: Double): js.Promise[Unit] = js.native
 }
 

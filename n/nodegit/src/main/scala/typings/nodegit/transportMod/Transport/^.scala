@@ -1,7 +1,7 @@
 package typings.nodegit.transportMod.Transport
 
 import typings.nodegit.remoteMod.Remote
-import typings.nodegit.strDashArrayMod.Strarray
+import typings.nodegit.strArrayMod.Strarray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

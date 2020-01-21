@@ -1,8 +1,8 @@
 package typings.nodemailer
 
-import typings.nodemailer.libMailerMod.TextEncoding
-import typings.nodemailer.libSharedMod.LoggerLevel
-import typings.nodemailer.libSmtpDashConnectionMod.DSNOption
+import typings.nodemailer.mailerMod.TextEncoding
+import typings.nodemailer.sharedMod.LoggerLevel
+import typings.nodemailer.smtpConnectionMod.DSNOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -19,7 +19,7 @@ class WidgetSet () extends js.Object {
     * 
     * @param widget Any dijit/_WidgetBase subclass.             
     */
-  def add(widget: _WidgetBase): Unit = js.native
+  def add(widget: WidgetBase): Unit = js.native
   /**
     * Reduce this widgetset to a new WidgetSet of a particular declaredClass
     * 
@@ -31,7 +31,7 @@ class WidgetSet () extends js.Object {
     * 
     * @param id             
     */
-  def byId(id: String): _WidgetBase = js.native
+  def byId(id: String): WidgetBase = js.native
   /**
     * A synthetic clone of array.every acting explicitly on this WidgetSet
     * 

@@ -32,9 +32,9 @@ package object Tooltip {
     * }
     */
   type Formatter = js.Function3[
-    /* params */ Format | js.Array[Format], 
-    /* ticket */ String, 
-    /* callback */ js.Function2[/* ticket */ String, /* html */ String, Unit], 
-    String
+    /* params */ typings.echarts.echarts.EChartOption.Tooltip.Format | js.Array[typings.echarts.echarts.EChartOption.Tooltip.Format], 
+    /* ticket */ java.lang.String, 
+    /* callback */ js.Function2[/* ticket */ java.lang.String, /* html */ java.lang.String, scala.Unit], 
+    java.lang.String
   ]
 }

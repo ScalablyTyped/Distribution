@@ -1,7 +1,7 @@
 package typings.shelljs.makeMod._Global_
 
 import org.scalablytyped.runtime.TopLevel
-import typings.shelljs.shelljsMod.LinkFunction
+import typings.shelljs.mod.LinkFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

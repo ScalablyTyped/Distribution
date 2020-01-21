@@ -50,8 +50,7 @@ class GameObjectCreator protected () extends js.Object {
   /**
     * A reference to the Scene Update List.
     */
-  @JSName("updateList;")
-  var updateListSemicolon: UpdateList = js.native
+  var updateList: UpdateList = js.native
   /**
     * Creates a new Bitmap Text Game Object and returns it.
     * 

@@ -23,21 +23,29 @@ trait Force extends js.Object {
   def applyForceFrom(position: Vector2, force: Vector2): GameObject
   /**
     * Apply thrust to the forward position of the body.
+    * 
+    * Use very small values, such as 0.1, depending on the mass and required speed.
     * @param speed A speed value to be applied to a directional force.
     */
   def thrust(speed: Double): GameObject
   /**
     * Apply thrust to the back position of the body.
+    * 
+    * Use very small values, such as 0.1, depending on the mass and required speed.
     * @param speed A speed value to be applied to a directional force.
     */
   def thrustBack(speed: Double): GameObject
   /**
     * Apply thrust to the left position of the body.
+    * 
+    * Use very small values, such as 0.1, depending on the mass and required speed.
     * @param speed A speed value to be applied to a directional force.
     */
   def thrustLeft(speed: Double): GameObject
   /**
     * Apply thrust to the right position of the body.
+    * 
+    * Use very small values, such as 0.1, depending on the mass and required speed.
     * @param speed A speed value to be applied to a directional force.
     */
   def thrustRight(speed: Double): GameObject

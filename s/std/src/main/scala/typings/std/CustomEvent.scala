@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CustomEvent[T] extends Event {
+trait CustomEvent[T] extends Event_ {
   /**
     * Returns any custom data event was created with. Typically used for synthetic events.
     */

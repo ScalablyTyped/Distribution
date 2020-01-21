@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlFullScreenMod.Options
-import typings.ol.controlFullScreenMod.default
+import typings.ol.fullScreenMod.Options
+import typings.ol.fullScreenMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

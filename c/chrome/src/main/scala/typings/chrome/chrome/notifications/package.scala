@@ -5,11 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object notifications {
-  import typings.chrome.chrome.events.Event
-
-  type NotificationButtonClickedEvent = Event[js.Function2[/* notificationId */ String, /* buttonIndex */ Double, Unit]]
-  type NotificationClickedEvent = Event[js.Function1[/* notificationId */ String, Unit]]
-  type NotificationClosedEvent = Event[js.Function2[/* notificationId */ String, /* byUser */ Boolean, Unit]]
-  type NotificationPermissionLevelChangedEvent = Event[js.Function1[/* level */ String, Unit]]
-  type NotificationShowSettingsEvent = Event[js.Function0[Unit]]
+  type NotificationButtonClickedEvent = typings.chrome.chrome.events.Event[
+    js.Function2[/* notificationId */ java.lang.String, /* buttonIndex */ scala.Double, scala.Unit]
+  ]
+  type NotificationClickedEvent = typings.chrome.chrome.events.Event[js.Function1[/* notificationId */ java.lang.String, scala.Unit]]
+  type NotificationClosedEvent = typings.chrome.chrome.events.Event[
+    js.Function2[/* notificationId */ java.lang.String, /* byUser */ scala.Boolean, scala.Unit]
+  ]
+  type NotificationPermissionLevelChangedEvent = typings.chrome.chrome.events.Event[js.Function1[/* level */ java.lang.String, scala.Unit]]
+  type NotificationShowSettingsEvent = typings.chrome.chrome.events.Event[js.Function0[scala.Unit]]
 }

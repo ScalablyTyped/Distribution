@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** Events that occurs in relation to a MediaStream. Two events of this type can be thrown: addstream and removestream. */
 @js.native
-trait MediaStreamEvent extends Event {
+trait MediaStreamEvent extends Event_ {
   val stream: MediaStream | Null = js.native
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Handlebars.registerPartial")
 @js.native
 object registerPartial extends js.Object {
-  def apply(name: String, fn: Template[_]): Unit = js.native
+  def apply(name: String, fn: Template_[_]): Unit = js.native
   def apply(spec: StringDictionary[HandlebarsTemplateDelegate[_]]): Unit = js.native
 }
 

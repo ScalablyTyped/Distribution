@@ -5,8 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inspectedWindow {
-  import typings.chrome.chrome.events.Event
-
-  type ResourceAddedEvent = Event[js.Function1[/* resource */ Resource, Unit]]
-  type ResourceContentCommittedEvent = Event[js.Function2[/* resource */ Resource, /* content */ String, Unit]]
+  type ResourceAddedEvent = typings.chrome.chrome.events.Event[
+    js.Function1[/* resource */ typings.chrome.chrome.devtools.inspectedWindow.Resource, scala.Unit]
+  ]
+  type ResourceContentCommittedEvent = typings.chrome.chrome.events.Event[
+    js.Function2[
+      /* resource */ typings.chrome.chrome.devtools.inspectedWindow.Resource, 
+      /* content */ java.lang.String, 
+      scala.Unit
+    ]
+  ]
 }

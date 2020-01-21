@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * Delphi highlight definitions
   *
   */
-@JSName("delphi")
 trait delphi_ extends js.Object {
   /**
     *

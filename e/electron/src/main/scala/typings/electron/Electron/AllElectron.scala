@@ -26,12 +26,12 @@ import scala.scalajs.js.annotation._
 - typings.electron.Electron.CommonInterface because Already inherited
 - typings.electron.Electron.RendererInterface because var conflicts: clipboard, crashReporter, nativeImage, shell. Inlined BrowserWindowProxy, contextBridge, desktopCapturer, ipcRenderer, remote, webFrame, webviewTag */ trait AllElectron extends MainInterface {
   var BrowserWindowProxy: Instantiable0[typings.electron.Electron.BrowserWindowProxy]
-  var contextBridge: ContextBridge
-  var desktopCapturer: DesktopCapturer
-  var ipcRenderer: IpcRenderer
-  var remote: Remote
-  var webFrame: WebFrame
-  var webviewTag: WebviewTag
+  var contextBridge: ContextBridge_
+  var desktopCapturer: DesktopCapturer_
+  var ipcRenderer: IpcRenderer_
+  var remote: Remote_
+  var webFrame: WebFrame_
+  var webviewTag: WebviewTag_
 }
 
 object AllElectron {
@@ -52,34 +52,34 @@ object AllElectron {
     MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
     Notification: TypeofClassNotification,
     TouchBar: TypeofClassTouchBar,
-    Tray: Instantiable1[/* image */ NativeImage | String, Tray],
+    Tray: Instantiable1[/* image */ NativeImage_ | String, Tray],
     WebRequest: Instantiable0[WebRequest],
-    app: App,
-    autoUpdater: AutoUpdater,
-    clipboard: Clipboard,
-    contentTracing: ContentTracing,
-    contextBridge: ContextBridge,
-    crashReporter: CrashReporter,
-    desktopCapturer: DesktopCapturer,
-    dialog: Dialog,
-    globalShortcut: GlobalShortcut,
-    inAppPurchase: InAppPurchase,
-    ipcMain: IpcMain,
-    ipcRenderer: IpcRenderer,
+    app: App_,
+    autoUpdater: AutoUpdater_,
+    clipboard: Clipboard_,
+    contentTracing: ContentTracing_,
+    contextBridge: ContextBridge_,
+    crashReporter: CrashReporter_,
+    desktopCapturer: DesktopCapturer_,
+    dialog: Dialog_,
+    globalShortcut: GlobalShortcut_,
+    inAppPurchase: InAppPurchase_,
+    ipcMain: IpcMain_,
+    ipcRenderer: IpcRenderer_,
     nativeImage: TypeofClassNativeImage,
-    net: Net,
-    netLog: NetLog,
-    powerMonitor: PowerMonitor,
-    powerSaveBlocker: PowerSaveBlocker,
-    protocol: Protocol,
-    remote: Remote,
-    screen: Screen,
+    net: Net_,
+    netLog: NetLog_,
+    powerMonitor: PowerMonitor_,
+    powerSaveBlocker: PowerSaveBlocker_,
+    protocol: Protocol_,
+    remote: Remote_,
+    screen: Screen_,
     session: TypeofClassSession,
-    shell: Shell,
-    systemPreferences: SystemPreferences,
+    shell: Shell_,
+    systemPreferences: SystemPreferences_,
     webContents: TypeofClassWebContents,
-    webFrame: WebFrame,
-    webviewTag: WebviewTag
+    webFrame: WebFrame_,
+    webviewTag: WebviewTag_
   ): AllElectron = {
     val __obj = js.Dynamic.literal(BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], BrowserWindowProxy = BrowserWindowProxy.asInstanceOf[js.Any], ClientRequest = ClientRequest.asInstanceOf[js.Any], Cookies = Cookies.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], DownloadItem = DownloadItem.asInstanceOf[js.Any], IncomingMessage = IncomingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], WebRequest = WebRequest.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], contextBridge = contextBridge.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], nativeImage = nativeImage.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any], webviewTag = webviewTag.asInstanceOf[js.Any])
   

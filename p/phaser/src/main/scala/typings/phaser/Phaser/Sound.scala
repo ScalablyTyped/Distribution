@@ -208,8 +208,9 @@ object Sound extends js.Object {
       */
     def pauseAll(): Unit = js.native
     /**
-      * Enables playing sound on the fly without the need to keep a reference to it.
-      * Sound will auto destroy once its playback ends.
+      * Adds a new sound to the sound manager and plays it.
+      * The sound will be automatically removed (destroyed) once playback ends.
+      * This lets you play a new sound on the fly without the need to keep a reference to it.
       * @param key Asset key for the sound.
       * @param extra An optional additional object containing settings to be applied to the sound. It could be either config or marker object.
       */
@@ -589,7 +590,7 @@ object Sound extends js.Object {
     * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
     * @param game Reference to the current game instance.
     */
-  def SoundManagerCreator(game: Game): Unit = js.native
+  def SoundManagerCreator(game: Game): HTML5AudioSoundManager | WebAudioSoundManager | NoAudioSoundManager = js.native
   @js.native
   object Events extends js.Object {
     /**

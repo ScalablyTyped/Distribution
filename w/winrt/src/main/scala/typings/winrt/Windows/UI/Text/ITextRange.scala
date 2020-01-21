@@ -1,6 +1,6 @@
 package typings.winrt.Windows.UI.Text
 
-import typings.winrt.Anon_Hit
+import typings.winrt.AnonHit
 import typings.winrt.Windows.Foundation.Point
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import scala.scalajs.js
@@ -36,7 +36,7 @@ trait ITextRange extends js.Object {
     verticalAlign: VerticalCharacterAlignment,
     options: PointOptions
   ): Point
-  def getRect(options: PointOptions): Anon_Hit
+  def getRect(options: PointOptions): AnonHit
   def getText(options: TextGetOptions): String
   def getTextViaStream(options: TextGetOptions, value: IRandomAccessStream): Unit
   def inRange(range: ITextRange): Boolean
@@ -84,7 +84,7 @@ object ITextRange {
     getClone: () => ITextRange,
     getIndex: TextRangeUnit => Double,
     getPoint: (HorizontalCharacterAlignment, VerticalCharacterAlignment, PointOptions) => Point,
-    getRect: PointOptions => Anon_Hit,
+    getRect: PointOptions => AnonHit,
     getText: TextGetOptions => String,
     getTextViaStream: (TextGetOptions, IRandomAccessStream) => Unit,
     gravity: RangeGravity,

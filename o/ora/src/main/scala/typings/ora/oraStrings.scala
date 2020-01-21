@@ -1,6 +1,6 @@
 package typings.ora
 
-import typings.ora.oraMod.Color
+import typings.ora.mod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

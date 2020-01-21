@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object doh {
-  type _browserRunner = _browserRunner_
-  type main = main_
-  type robot = robot_
-  type runner = runner_
+  type browserRunner = typings.dojo.doh.browserRunner_
+  type main = typings.dojo.doh.main_
+  type robot = typings.dojo.doh.robot_
+  type runner = typings.dojo.doh.runner_
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-ip"
-version := "3.1.0-a29d30"
+version := "3.1.0-19e553"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

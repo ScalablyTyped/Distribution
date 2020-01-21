@@ -1,0 +1,41 @@
+package typings.gapiClientCompute.gapi.client.compute
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait HTTPSHealthCheck_ extends js.Object {
+  /**
+    * The value of the host header in the HTTPS health check request. If left empty (default value), the IP on behalf of which this health check is performed
+    * will be used.
+    */
+  var host: js.UndefOr[String] = js.undefined
+  /** The TCP port number for the health check request. The default value is 443. Valid values are 1 through 65535. */
+  var port: js.UndefOr[Double] = js.undefined
+  /** Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence. */
+  var portName: js.UndefOr[String] = js.undefined
+  /** Specifies the type of proxy header to append before sending data to the backend, either NONE or PROXY_V1. The default is NONE. */
+  var proxyHeader: js.UndefOr[String] = js.undefined
+  /** The request path of the HTTPS health check request. The default value is /. */
+  var requestPath: js.UndefOr[String] = js.undefined
+}
+
+object HTTPSHealthCheck_ {
+  @scala.inline
+  def apply(
+    host: String = null,
+    port: Int | Double = null,
+    portName: String = null,
+    proxyHeader: String = null,
+    requestPath: String = null
+  ): HTTPSHealthCheck_ = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
+    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader.asInstanceOf[js.Any])
+    if (requestPath != null) __obj.updateDynamic("requestPath")(requestPath.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HTTPSHealthCheck_]
+  }
+}
+

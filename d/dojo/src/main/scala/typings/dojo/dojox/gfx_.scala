@@ -1,6 +1,6 @@
 package typings.dojo.dojox
 
-import typings.dojo.dojo._base.Color
+import typings.dojo.dojo.base.Color
 import typings.dojo.dojox.gfx.Surface
 import typings.dojo.dojox.gfx.matrix.Matrix2D
 import typings.std.HTMLElement
@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("gfx")
 @js.native
 trait gfx_ extends js.Object {
   /**

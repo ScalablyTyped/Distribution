@@ -1,10 +1,10 @@
 package typings.lasso
 
-import typings.lasso.libLassoMod.LassoConfig
-import typings.lasso.libLassoMod.LassoPage
-import typings.lasso.libLassoMod.LassoResource
-import typings.lasso.libLassoMod.default
-import typings.lasso.libWritersMod.Writer
+import typings.lasso.lassoMod.LassoConfig
+import typings.lasso.lassoMod.LassoPage
+import typings.lasso.lassoMod.LassoResource
+import typings.lasso.lassoMod.default
+import typings.lasso.writersMod.Writer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,7 +46,7 @@ object libMod extends js.Object {
   object transforms extends js.Object {
     def createTransformer(
       unfilteredTransforms: js.Array[_],
-      lassoContext: typings.lasso.libLassoContextMod.default,
+      lassoContext: typings.lasso.lassoContextMod.default,
       callback: js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], _]
     ): Unit = js.native
   }

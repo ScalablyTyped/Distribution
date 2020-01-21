@@ -1,6 +1,6 @@
 package typings.dojo.dijit
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.checked
 import typings.dojo.dojoStrings.checkedChar
 import typings.dojo.dojoStrings.role
@@ -63,7 +63,7 @@ class CheckedMenuItem () extends MenuItem {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_checkedChar(
     property: checkedChar,
@@ -73,7 +73,7 @@ class CheckedMenuItem () extends MenuItem {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_role(
     property: role,
@@ -83,6 +83,6 @@ class CheckedMenuItem () extends MenuItem {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

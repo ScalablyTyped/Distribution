@@ -1,8 +1,8 @@
 package typings.slickgrid.Slick
 
-import typings.jquery.JQuery
-import typings.slickgrid.Anon_CancelCurrentEdit
-import typings.slickgrid.Anon_ColumnId
+import typings.jquery.JQuery_
+import typings.slickgrid.AnonCancelCurrentEdit
+import typings.slickgrid.AnonColumnId
 import typings.slickgrid.DOMEvent
 import typings.slickgrid.Slick.Editors.Editor
 import typings.std.HTMLCanvasElement
@@ -24,13 +24,13 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   def this(container: String, data: js.Array[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
   def this(container: String, data: DataProvider[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
   def this(
-    container: JQuery[HTMLElement],
+    container: JQuery_[HTMLElement],
     data: js.Array[T],
     columns: js.Array[Column[T]],
     options: GridOptions[T]
   ) = this()
   def this(
-    container: JQuery[HTMLElement],
+    container: JQuery_[HTMLElement],
     data: DataProvider[T],
     columns: js.Array[Column[T]],
     options: GridOptions[T]
@@ -227,7 +227,7 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* @return
   		**/
   def getDataLength(): Double = js.native
-  def getEditController(): Anon_CancelCurrentEdit = js.native
+  def getEditController(): AnonCancelCurrentEdit = js.native
   // #endregion Rendering
   // #region Editors
   def getEditorLock(): EditorLock[_] = js.native
@@ -269,7 +269,7 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* todo: no docs or comments available
   		* @return
   		**/
-  def getSortColumns(): js.Array[Anon_ColumnId] = js.native
+  def getSortColumns(): js.Array[AnonColumnId] = js.native
   /**
   		* todo: no docs
   		* @return
@@ -408,7 +408,7 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* Accepts an array of objects in the form [ { columnId: [string], sortAsc: [boolean] }, ... ]. When called, this will apply a sort glyph in either ascending or descending form to the header of each column specified in the array. Note that this does not actually sort the column. It only adds the sort glyph to the header
   		* @param cols
   		**/
-  def setSortColumns(cols: js.Array[Anon_ColumnId]): Unit = js.native
+  def setSortColumns(cols: js.Array[AnonColumnId]): Unit = js.native
   /**
   		* todo: no docs
   		* @param visible

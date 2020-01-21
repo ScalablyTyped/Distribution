@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.accordion")
 @js.native
-object accordion extends TopLevel[Accordion]
+object accordion extends TopLevel[Accordion_]
 

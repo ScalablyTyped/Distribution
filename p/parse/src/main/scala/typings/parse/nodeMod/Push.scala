@@ -1,7 +1,7 @@
 package typings.parse.nodeMod
 
-import typings.parse.parseMod._Global_.Parse.Push.PushData
-import typings.parse.parseMod._Global_.Parse.Push.SendOptions
+import typings.parse.mod._Global_.Parse.Push.PushData
+import typings.parse.mod._Global_.Parse.Push.SendOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

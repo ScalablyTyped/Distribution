@@ -22,7 +22,6 @@ import scala.scalajs.js.annotation._
 /**
   * @see https://echarts.apache.org/en/option.html#legend
   */
-@JSName("Legend")
 trait Legend_ extends js.Object {
   /**
     * Legend mrker and text aligning. By default,

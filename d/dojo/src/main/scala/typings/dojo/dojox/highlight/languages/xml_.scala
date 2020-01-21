@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("xml")
 trait xml_ extends js.Object {
   /**
     *

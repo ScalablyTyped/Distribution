@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var inIncognitoContext: Boolean = js.native
-  var lastError: LastError = js.native
+  var lastError: LastError_ = js.native
   var onRequest: OnRequestEvent = js.native
   var onRequestExternal: OnRequestEvent = js.native
 }

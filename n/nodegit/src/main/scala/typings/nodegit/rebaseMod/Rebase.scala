@@ -1,9 +1,9 @@
 package typings.nodegit.rebaseMod
 
-import typings.nodegit.annotatedDashCommitMod.AnnotatedCommit
-import typings.nodegit.nodegitMod.Index
+import typings.nodegit.annotatedCommitMod.AnnotatedCommit
+import typings.nodegit.mod.Index
 import typings.nodegit.oidMod.Oid
-import typings.nodegit.rebaseDashOperationMod.RebaseOperation
+import typings.nodegit.rebaseOperationMod.RebaseOperation
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
 import scala.scalajs.js

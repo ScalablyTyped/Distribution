@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("echarts", "dispose")
+@JSImport("echarts/lib/echarts", "dispose")
 @js.native
 object dispose extends js.Object {
   /**

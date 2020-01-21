@@ -19,6 +19,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object Actions extends js.Object {
   /**
+    * Takes an array of Game Objects, or any objects that have public `x` and `y` properties, and aligns them next to each other.
+    * 
+    * The first item isn't moved. The second item is aligned next to the first, then the third next to the second, and so on.
+    * @param items The array of items to be updated by this action.
+    * @param position The position to align the items with. This is an align constant, such as `Phaser.Display.Align.LEFT_CENTER`.
+    * @param offsetX Optional horizontal offset from the position. Default 0.
+    * @param offsetY Optional vertical offset from the position. Default 0.
+    */
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer): G = js.native
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double): G = js.native
+  def AlignTo[G /* <: js.Array[GameObject] */](items: G, position: integer, offsetX: Double, offsetY: Double): G = js.native
+  /**
     * Takes an array of Game Objects, or any objects that have a public `angle` property,
     * and then adds the given value to each of their `angle` properties.
     * 

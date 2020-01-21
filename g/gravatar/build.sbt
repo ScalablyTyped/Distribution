@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gravatar"
-version := "v1.8.0-dt-20190322Z-434315"
+version := "v1.8.0-dt-20190322Z-1ae1c4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

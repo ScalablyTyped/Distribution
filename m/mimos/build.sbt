@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mimos"
-version := "3.0-dt-20190322Z-3bdf23"
+version := "3.0-dt-20190322Z-f2b7ca"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-55b31a",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-cef82e",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

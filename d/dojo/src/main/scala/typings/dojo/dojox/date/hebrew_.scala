@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("hebrew")
 trait hebrew_ extends js.Object {
   /**
     *

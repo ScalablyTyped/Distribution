@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait StructureConstructor extends _ConstructorById[Structure[StructureConstant]]
+trait StructureConstructor extends ConstructorById[Structure[StructureConstant]]
 

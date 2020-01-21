@@ -5,14 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Sound {
-  import typings.phaser.Phaser.Sound.BaseSound
-  import typings.phaser.Phaser.Sound.BaseSoundManager
-
   type EachActiveSoundCallback = js.Function4[
-    /* manager */ BaseSoundManager, 
-    /* sound */ BaseSound, 
-    /* index */ Double, 
-    /* sounds */ js.Array[BaseSound], 
-    Unit
+    /* manager */ typings.phaser.Phaser.Sound.BaseSoundManager, 
+    /* sound */ typings.phaser.Phaser.Sound.BaseSound, 
+    /* index */ scala.Double, 
+    /* sounds */ js.Array[typings.phaser.Phaser.Sound.BaseSound], 
+    scala.Unit
   ]
 }

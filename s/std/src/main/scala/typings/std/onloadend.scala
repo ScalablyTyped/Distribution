@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onloadend
   extends TopLevel[
-      (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null
+      (js.ThisFunction1[/* this */ Window_, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null
     ]
 

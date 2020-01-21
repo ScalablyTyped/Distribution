@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("sketch")
 trait sketch_ extends js.Object
 

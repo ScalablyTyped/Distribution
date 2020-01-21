@@ -1,12 +1,12 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dojo.dojo.number_
+import typings.dojo.dojo.number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("dojo/number", JSImport.Namespace)
 @js.native
-object numberMod extends TopLevel[number_]
+object numberMod extends TopLevel[number]
 

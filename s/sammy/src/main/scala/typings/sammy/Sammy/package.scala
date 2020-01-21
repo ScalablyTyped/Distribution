@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Sammy {
-  type Haml = EventContext
-  type Handlebars = EventContext
-  type Hogan = EventContext
-  type JSON = EventContext
-  type Mustache = EventContext
+  type Haml = typings.sammy.Sammy.EventContext
+  type Handlebars = typings.sammy.Sammy.EventContext
+  type Hogan = typings.sammy.Sammy.EventContext
+  type JSON = typings.sammy.Sammy.EventContext
+  type Mustache = typings.sammy.Sammy.EventContext
 }

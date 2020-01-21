@@ -1,6 +1,6 @@
 package typings.vcf
 
-import typings.vcf.vcfMod.CardVersion
+import typings.vcf.mod.CardVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

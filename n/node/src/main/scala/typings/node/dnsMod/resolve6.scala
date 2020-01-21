@@ -27,8 +27,11 @@ object resolve6 extends js.Object {
     options: ResolveWithTtlOptions,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[RecordWithTtl], Unit]
   ): Unit = js.native
-  def __promisify__(hostname: String): js.Promise[js.Array[String]] = js.native
-  def __promisify__(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = js.native
-  def __promisify__(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String): js.Promise[js.Array[String]] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String, options: ResolveOptions): js.Promise[js.Array[RecordWithTtl | String]] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String, options: ResolveWithTtlOptions): js.Promise[js.Array[RecordWithTtl]] = js.native
 }
 

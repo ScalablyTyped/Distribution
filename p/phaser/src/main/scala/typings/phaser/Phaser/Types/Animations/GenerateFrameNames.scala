@@ -13,7 +13,7 @@ trait GenerateFrameNames extends js.Object {
   /**
     * If provided as an array, the range defined by `start` and `end` will be ignored and these frame numbers will be used.
     */
-  var frames: js.UndefOr[Boolean] = js.undefined
+  var frames: js.UndefOr[Boolean | js.Array[integer]] = js.undefined
   /**
     * The array to append the created configuration objects to.
     */
@@ -40,7 +40,7 @@ object GenerateFrameNames {
   @scala.inline
   def apply(
     end: Int | Double = null,
-    frames: js.UndefOr[Boolean] = js.undefined,
+    frames: Boolean | js.Array[integer] = null,
     outputArray: js.Array[AnimationFrame] = null,
     prefix: String = null,
     start: Int | Double = null,
@@ -49,7 +49,7 @@ object GenerateFrameNames {
   ): GenerateFrameNames = {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(frames)) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
+    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
     if (outputArray != null) __obj.updateDynamic("outputArray")(outputArray.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])

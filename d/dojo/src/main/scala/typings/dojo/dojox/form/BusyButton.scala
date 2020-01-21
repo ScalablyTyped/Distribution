@@ -1,6 +1,6 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.form.Button
 import typings.dojo.dojoStrings.busyLabel
 import typings.dojo.dojoStrings.isBusy
@@ -88,7 +88,7 @@ class BusyButton () extends Button {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isBusy(
     property: isBusy,
@@ -98,7 +98,7 @@ class BusyButton () extends Button {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_timeout(
     property: timeout,
@@ -108,7 +108,7 @@ class BusyButton () extends Button {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useIcon(
     property: useIcon,
@@ -118,6 +118,6 @@ class BusyButton () extends Button {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

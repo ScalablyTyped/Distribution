@@ -1,6 +1,6 @@
 package typings.ecol
 
-import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
+import typings.ecol.collectionEventMod.CollectionEvent.Type
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

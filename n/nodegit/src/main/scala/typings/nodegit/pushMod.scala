@@ -1,6 +1,6 @@
 package typings.nodegit
 
-import typings.nodegit.pushDashOptionsMod.PushOptions
+import typings.nodegit.pushOptionsMod.PushOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

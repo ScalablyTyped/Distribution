@@ -1,9 +1,9 @@
 package typings.protractor
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.seleniumDashWebdriver.httpMod.Executor
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.Session
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.WebDriver
+import typings.seleniumWebdriver.httpMod.Executor
+import typings.seleniumWebdriver.mod.Session
+import typings.seleniumWebdriver.mod.WebDriver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

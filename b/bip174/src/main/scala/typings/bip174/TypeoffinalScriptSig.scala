@@ -1,8 +1,8 @@
 package typings.bip174
 
 import typings.bip174.bip174Strings.Buffer
-import typings.bip174.srcLibInterfacesMod.FinalScriptSig
-import typings.bip174.srcLibInterfacesMod.KeyValue
+import typings.bip174.interfacesMod.FinalScriptSig
+import typings.bip174.interfacesMod.KeyValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

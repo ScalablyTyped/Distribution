@@ -2,9 +2,9 @@ package typings.stripejs
 
 import typings.stripejs.customerMod.checkStatus
 import typings.stripejs.elementMod.ElementType
+import typings.stripejs.mod.errorType
 import typings.stripejs.paymentMod.completeStatus
 import typings.stripejs.sourceMod.paymentOptions
-import typings.stripejs.stripejsMod.errorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

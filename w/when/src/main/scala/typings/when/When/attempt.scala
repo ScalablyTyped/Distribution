@@ -13,50 +13,50 @@ import scala.scalajs.js.annotation._
 @JSGlobal("When.attempt")
 @js.native
 object attempt extends js.Object {
-  def apply[T](f: Fn0[T]): Promise[T] = js.native
-  def apply[A1, T](f: Fn1[A1, T], arg1: A1): Promise[T] = js.native
-  def apply[A1, T](f: Fn1[A1, T], arg1: Promise[A1]): Promise[T] = js.native
-  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: A2): Promise[T] = js.native
-  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: Promise[A2]): Promise[T] = js.native
-  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise[A1], arg2: A2): Promise[T] = js.native
-  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise[A1], arg2: Promise[A2]): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: A3): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: Promise[A3]): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: A3): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: A3): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3]): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3): Promise[T] = js.native
-  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise[A2], arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: A4): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: A4): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: A2, arg3: Promise[A3], arg4: Promise[A4]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: A4): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: A3, arg4: Promise[A4]): Promise[T] = js.native
-  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise[A1], arg2: Promise[A2], arg3: Promise[A3], arg4: A4): Promise[T] = js.native
+  def apply[T](f: Fn0[T]): Promise_[T] = js.native
+  def apply[A1, T](f: Fn1[A1, T], arg1: A1): Promise_[T] = js.native
+  def apply[A1, T](f: Fn1[A1, T], arg1: Promise_[A1]): Promise_[T] = js.native
+  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: A2): Promise_[T] = js.native
+  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: A1, arg2: Promise_[A2]): Promise_[T] = js.native
+  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise_[A1], arg2: A2): Promise_[T] = js.native
+  def apply[A1, A2, T](f: Fn2[A1, A2, T], arg1: Promise_[A1], arg2: Promise_[A2]): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: A3): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: A2, arg3: Promise_[A3]): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise_[A2], arg3: A3): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: A1, arg2: Promise_[A2], arg3: Promise_[A3]): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise_[A1], arg2: A2, arg3: A3): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise_[A1], arg2: A2, arg3: Promise_[A3]): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise_[A1], arg2: Promise_[A2], arg3: A3): Promise_[T] = js.native
+  def apply[A1, A2, A3, T](f: Fn3[A1, A2, A3, T], arg1: Promise_[A1], arg2: Promise_[A2], arg3: Promise_[A3]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: A4): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: A3, arg4: Promise_[A4]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise_[A3], arg4: A4): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: A2, arg3: Promise_[A3], arg4: Promise_[A4]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise_[A2], arg3: A3, arg4: A4): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise_[A2], arg3: A3, arg4: Promise_[A4]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise_[A2], arg3: Promise_[A3], arg4: A4): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: A1, arg2: Promise_[A2], arg3: Promise_[A3], arg4: Promise_[A4]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise_[A1], arg2: A2, arg3: A3, arg4: A4): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise_[A1], arg2: A2, arg3: A3, arg4: Promise_[A4]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise_[A1], arg2: A2, arg3: Promise_[A3], arg4: A4): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise_[A1], arg2: A2, arg3: Promise_[A3], arg4: Promise_[A4]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise_[A1], arg2: Promise_[A2], arg3: A3, arg4: A4): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise_[A1], arg2: Promise_[A2], arg3: A3, arg4: Promise_[A4]): Promise_[T] = js.native
+  def apply[A1, A2, A3, A4, T](f: Fn4[A1, A2, A3, A4, T], arg1: Promise_[A1], arg2: Promise_[A2], arg3: Promise_[A3], arg4: A4): Promise_[T] = js.native
   def apply[A1, A2, A3, A4, T](
     f: Fn4[A1, A2, A3, A4, T],
-    arg1: Promise[A1],
-    arg2: Promise[A2],
-    arg3: Promise[A3],
-    arg4: Promise[A4]
-  ): Promise[T] = js.native
+    arg1: Promise_[A1],
+    arg2: Promise_[A2],
+    arg3: Promise_[A3],
+    arg4: Promise_[A4]
+  ): Promise_[T] = js.native
   def apply[A1, A2, A3, A4, A5, T](
     f: Fn5[A1, A2, A3, A4, A5, T],
-    arg1: A1 | Promise[A1],
-    arg2: A2 | Promise[A2],
-    arg3: A3 | Promise[A3],
-    arg4: A4 | Promise[A4],
-    arg5: A5 | Promise[A5]
-  ): Promise[T] = js.native
+    arg1: A1 | Promise_[A1],
+    arg2: A2 | Promise_[A2],
+    arg3: A3 | Promise_[A3],
+    arg4: A4 | Promise_[A4],
+    arg5: A5 | Promise_[A5]
+  ): Promise_[T] = js.native
 }
 

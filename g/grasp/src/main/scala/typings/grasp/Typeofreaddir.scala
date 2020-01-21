@@ -1,10 +1,10 @@
 package typings.grasp
 
 import typings.grasp.graspStrings.buffer
-import typings.node.Anon_BufferEncodingFalse
-import typings.node.Anon_EncodingFalse
-import typings.node.Anon_EncodingFalseWithFileTypes
-import typings.node.Anon_EncodingTrue
+import typings.node.AnonBufferEncodingFalse
+import typings.node.AnonEncodingFalse
+import typings.node.AnonEncodingFalseWithFileTypes
+import typings.node.AnonEncodingTrue
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ErrnoException
@@ -51,7 +51,7 @@ trait Typeofreaddir extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: Anon_BufferEncodingFalse,
+    options: AnonBufferEncodingFalse,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
   ): Unit = js.native
   /**
@@ -61,7 +61,7 @@ trait Typeofreaddir extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: Anon_EncodingFalseWithFileTypes,
+    options: AnonEncodingFalseWithFileTypes,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
   ): Unit = js.native
   /**
@@ -71,7 +71,7 @@ trait Typeofreaddir extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: Anon_EncodingFalse,
+    options: AnonEncodingFalse,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
   ): Unit = js.native
   /**
@@ -81,7 +81,7 @@ trait Typeofreaddir extends js.Object {
     */
   def apply(
     path: PathLike,
-    options: Anon_EncodingTrue,
+    options: AnonEncodingTrue,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Dirent], Unit]
   ): Unit = js.native
   def apply(
@@ -96,15 +96,15 @@ trait Typeofreaddir extends js.Object {
     */
   def __promisify__(path: PathLike): js.Promise[js.Array[String]] = js.native
   def __promisify__(path: PathLike, options: String): js.Promise[js.Array[Buffer | String]] = js.native
-  def __promisify__(path: PathLike, options: Anon_BufferEncodingFalse): js.Promise[js.Array[Buffer]] = js.native
-  def __promisify__(path: PathLike, options: Anon_EncodingFalse): js.Promise[js.Array[String]] = js.native
-  def __promisify__(path: PathLike, options: Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[Buffer | String]] = js.native
+  def __promisify__(path: PathLike, options: AnonBufferEncodingFalse): js.Promise[js.Array[Buffer]] = js.native
+  def __promisify__(path: PathLike, options: AnonEncodingFalse): js.Promise[js.Array[String]] = js.native
+  def __promisify__(path: PathLike, options: AnonEncodingFalseWithFileTypes): js.Promise[js.Array[Buffer | String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent
     */
-  def __promisify__(path: PathLike, options: Anon_EncodingTrue): js.Promise[js.Array[Dirent]] = js.native
+  def __promisify__(path: PathLike, options: AnonEncodingTrue): js.Promise[js.Array[Dirent]] = js.native
   def __promisify__(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.

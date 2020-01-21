@@ -1,6 +1,6 @@
 package typings.easeljs.createjs
 
-import typings.easeljs.Anon_Rotation
+import typings.easeljs.AnonRotation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +57,7 @@ class Matrix2D protected () extends js.Object {
     regY: Double
   ): Matrix2D = js.native
   def copy(matrix: Matrix2D): Matrix2D = js.native
-  def decompose(): Anon_Rotation = js.native
+  def decompose(): AnonRotation = js.native
   def decompose(target: js.Object): Matrix2D = js.native
   def equals(matrix: Matrix2D): Boolean = js.native
   def identity(): Matrix2D = js.native

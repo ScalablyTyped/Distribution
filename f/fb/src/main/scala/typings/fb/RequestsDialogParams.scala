@@ -10,7 +10,7 @@ trait RequestsDialogParams extends js.Object {
   var app_id: js.UndefOr[String] = js.undefined
   var data: js.UndefOr[String] = js.undefined
   var exclude_ids: js.UndefOr[js.Array[String]] = js.undefined
-  var filters: js.Array[String] | Anon_Name
+  var filters: js.Array[String] | AnonName
   var max_recipients: js.UndefOr[Double] = js.undefined
   var message: String
   var method: String
@@ -25,7 +25,7 @@ trait RequestsDialogParams extends js.Object {
 object RequestsDialogParams {
   @scala.inline
   def apply(
-    filters: js.Array[String] | Anon_Name,
+    filters: js.Array[String] | AnonName,
     message: String,
     method: String,
     action_type: String = null,

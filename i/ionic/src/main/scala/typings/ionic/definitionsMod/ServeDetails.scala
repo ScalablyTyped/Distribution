@@ -1,6 +1,6 @@
 package typings.ionic.definitionsMod
 
-import typings.atIonicUtilsDashNetwork.atIonicUtilsDashNetworkMod.NetworkInterface
+import typings.ionicUtilsNetwork.mod.NetworkInterface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

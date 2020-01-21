@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mvc
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.cursor
 import typings.dojo.dojoStrings.cursorId
 import typings.dojo.dojoStrings.cursorIndex
@@ -64,7 +64,7 @@ class ListController () extends ModelRefController {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cursorId(
     property: cursorId,
@@ -74,7 +74,7 @@ class ListController () extends ModelRefController {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cursorIndex(
     property: cursorIndex,
@@ -84,7 +84,7 @@ class ListController () extends ModelRefController {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_idProperty(
     property: idProperty,
@@ -94,6 +94,6 @@ class ListController () extends ModelRefController {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

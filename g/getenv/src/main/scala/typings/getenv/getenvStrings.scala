@@ -1,6 +1,6 @@
 package typings.getenv
 
-import typings.getenv.getenvMod.ParseTypes
+import typings.getenv.mod.ParseTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

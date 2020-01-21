@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.`lazy`
 import typings.dojo.dojoStrings.badge
 import typings.dojo.dojoStrings.badgeClass
@@ -10,7 +10,7 @@ import typings.dojo.dojoStrings.deleteIcon
 import typings.dojo.dojoStrings.requires
 import typings.dojo.dojoStrings.tag
 import typings.dojo.dojoStrings.timeout
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mobile.IconItem")
 @js.native
-class IconItem () extends _ItemBase {
+class IconItem () extends ItemBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -104,7 +104,7 @@ class IconItem () extends _ItemBase {
     *
     * @param e
     */
-  def closeIconClicked(e: Event): Unit = js.native
+  def closeIconClicked(e: Event_): Unit = js.native
   @JSName("get")
   def get_badge(property: badge): String = js.native
   @JSName("get")
@@ -140,7 +140,7 @@ class IconItem () extends _ItemBase {
     *
     * @param e
     */
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event_): Unit = js.native
   /**
     * Stub method to allow the application to connect.
     *
@@ -195,7 +195,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_badgeClass(
     property: badgeClass,
@@ -205,7 +205,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_content(
     property: content,
@@ -215,7 +215,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_deletable(
     property: deletable,
@@ -225,7 +225,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_deleteIcon(
     property: deleteIcon,
@@ -235,7 +235,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_lazy(
     property: `lazy`,
@@ -245,7 +245,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_requires(
     property: requires,
@@ -255,7 +255,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tag(
     property: tag,
@@ -265,7 +265,7 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_timeout(
     property: timeout,
@@ -275,6 +275,6 @@ class IconItem () extends _ItemBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

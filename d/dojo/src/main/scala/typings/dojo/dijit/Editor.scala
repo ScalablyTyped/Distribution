@@ -1,6 +1,6 @@
 package typings.dojo.dijit
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit._editor.RichText
 import typings.dojo.dojoStrings.customUndo
 import typings.dojo.dojoStrings.editActionInterval
@@ -162,7 +162,7 @@ class Editor protected () extends RichText {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_editActionInterval(
     property: editActionInterval,
@@ -172,7 +172,7 @@ class Editor protected () extends RichText {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_extraPlugins(
     property: extraPlugins,
@@ -182,7 +182,7 @@ class Editor protected () extends RichText {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_plugins(
     property: plugins,
@@ -192,6 +192,6 @@ class Editor protected () extends RichText {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

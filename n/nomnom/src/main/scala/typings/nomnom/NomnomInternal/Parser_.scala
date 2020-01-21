@@ -7,7 +7,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("Parser")
 @js.native
 trait Parser_ extends js.Object {
   /**

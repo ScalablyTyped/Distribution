@@ -8,7 +8,7 @@ trait TouchBarPopoverConstructorOptions extends js.Object {
   /**
     * Popover button icon.
     */
-  var icon: js.UndefOr[NativeImage] = js.undefined
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   /**
     * Items to display in the popover.
     */
@@ -27,7 +27,7 @@ trait TouchBarPopoverConstructorOptions extends js.Object {
 object TouchBarPopoverConstructorOptions {
   @scala.inline
   def apply(
-    icon: NativeImage = null,
+    icon: NativeImage_ = null,
     items: TouchBar = null,
     label: String = null,
     showCloseButton: js.UndefOr[Boolean] = js.undefined

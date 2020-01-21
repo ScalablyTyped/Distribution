@@ -1,6 +1,6 @@
 package typings.winrt.Windows.ApplicationModel.Resources.Core
 
-import typings.winrt.Anon_First
+import typings.winrt.AnonFirst
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
 import scala.scalajs.js
@@ -19,6 +19,6 @@ class ResourceMap () extends IResourceMap {
   /* CompleteClass */
   override def lookup(key: String): NamedResource = js.native
   /* CompleteClass */
-  override def split(): Anon_First[String, NamedResource] = js.native
+  override def split(): AnonFirst[String, NamedResource] = js.native
 }
 

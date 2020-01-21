@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
   * Usage of XHR IFrame Proxying does not work from local disk in Safari.
   *
   */
-@JSName("xip")
 trait xip_ extends js.Object {
   /**
     *

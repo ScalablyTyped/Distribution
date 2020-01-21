@@ -1,9 +1,9 @@
 package typings.history
 
-import typings.history.historyMod.Location
-import typings.history.historyMod.LocationDescriptorObject
-import typings.history.historyMod.LocationState
-import typings.history.historyMod.Path
+import typings.history.mod.Location
+import typings.history.mod.LocationDescriptorObject
+import typings.history.mod.LocationState
+import typings.history.mod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

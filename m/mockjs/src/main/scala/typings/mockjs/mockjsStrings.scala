@@ -1,8 +1,8 @@
 package typings.mockjs
 
-import typings.mockjs.mockjsMod.RandomDateUtilString
-import typings.mockjs.mockjsMod.RandomImageFormatString
-import typings.mockjs.mockjsMod.RandomWebProtocal
+import typings.mockjs.mod.RandomDateUtilString
+import typings.mockjs.mod.RandomImageFormatString
+import typings.mockjs.mod.RandomWebProtocal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

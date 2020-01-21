@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nslog"
-version := "3.0-dt-20180214Z-fc1217"
+version := "3.0-dt-20180214Z-e7b6aa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

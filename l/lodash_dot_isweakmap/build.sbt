@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_isweakmap"
-version := "4.4-dt-20190214Z-2693ad"
+version := "4.4-dt-20190214Z-a4a899"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.toastMod.ToastProps
-import typings.react.reactMod.Component
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.dojo.dijit.tree
 
-import typings.dojo.dijit.tree.dndSource.__Item
+import typings.dojo.dijit.tree.dndSource.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,7 +59,7 @@ class ForestStoreModel protected () extends TreeStoreModel {
     * @param parent             
     * @param insertIndex               Optional            
     */
-  def newItem(args: __Item, parent: js.Any, insertIndex: Double): js.Any = js.native
+  def newItem(args: Item, parent: js.Any, insertIndex: Double): js.Any = js.native
   /**
     * Called when item added to root of tree; user must override this method
     * to modify the item so that it matches the query for top level items
@@ -80,7 +80,7 @@ class ForestStoreModel protected () extends TreeStoreModel {
     * 
     * @param args             
     */
-  def onNewRootItem(args: __Item): Unit = js.native
+  def onNewRootItem(args: Item): Unit = js.native
   /**
     * Updates the tree view according to changes to an item in the data store.
     * Developers should override this method to be more efficient based on their app/data.

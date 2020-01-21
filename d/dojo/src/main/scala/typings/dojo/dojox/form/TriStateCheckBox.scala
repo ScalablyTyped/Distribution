@@ -1,6 +1,6 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.form.Button
 import typings.dojo.dojoStrings.checked
 import typings.dojo.dojoStrings.readOnly
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   *
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._ToggleButtonMixin because Inheritance from two classes. Inlined checked, postCreate, reset */ @JSGlobal("dojox.form.TriStateCheckBox")
+- typings.dojo.dijit.form.ToggleButtonMixin because Inheritance from two classes. Inlined checked, postCreate, reset */ @JSGlobal("dojox.form.TriStateCheckBox")
 @js.native
 class TriStateCheckBox () extends Button {
   /**
@@ -99,7 +99,7 @@ class TriStateCheckBox () extends Button {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_readOnly(
     property: readOnly,
@@ -109,7 +109,7 @@ class TriStateCheckBox () extends Button {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_stateValue(
     property: stateValue,
@@ -119,7 +119,7 @@ class TriStateCheckBox () extends Button {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_states(
     property: states,
@@ -129,6 +129,6 @@ class TriStateCheckBox () extends Button {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

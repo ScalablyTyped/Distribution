@@ -1,6 +1,6 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.__
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

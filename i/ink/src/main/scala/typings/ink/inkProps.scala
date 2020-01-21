@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 trait inkProps {
   @scala.inline
-  def BoxProps: typings.ink.inkMod.BoxProps.type = typings.ink.inkMod.BoxProps
-  type BoxProps = typings.ink.inkMod.BoxProps
+  def BoxProps: typings.ink.mod.BoxProps.type = typings.ink.mod.BoxProps
+  type BoxProps = typings.ink.mod.BoxProps
   @scala.inline
-  def ColorProps: typings.ink.inkMod.ColorProps.type = typings.ink.inkMod.ColorProps
-  type ColorProps = typings.ink.inkMod.ColorProps
+  def ColorProps: typings.ink.mod.ColorProps.type = typings.ink.mod.ColorProps
+  type ColorProps = typings.ink.mod.ColorProps
   @scala.inline
-  def StaticProps: Anon_Children.type = typings.ink.Anon_Children
-  type StaticProps = Anon_Children
+  def StaticProps: AnonChildren.type = typings.ink.AnonChildren
+  type StaticProps = AnonChildren
   @scala.inline
-  def TextProps: typings.ink.inkMod.TextProps.type = typings.ink.inkMod.TextProps
-  type TextProps = typings.ink.inkMod.TextProps
+  def TextProps: typings.ink.mod.TextProps.type = typings.ink.mod.TextProps
+  type TextProps = typings.ink.mod.TextProps
 }
 

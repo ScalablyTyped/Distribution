@@ -1,8 +1,8 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_AssetPrefix
-import typings.playcanvas.Anon_Layer
-import typings.playcanvas.Anon_Physics
+import typings.playcanvas.AnonAssetPrefix
+import typings.playcanvas.AnonLayer
+import typings.playcanvas.AnonPhysics
 import typings.playcanvas.pc.callbacks.ConfigureApp
 import typings.playcanvas.pc.callbacks.LoadHierarchy
 import typings.playcanvas.pc.callbacks.LoadSettings
@@ -57,7 +57,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.Application")
 @js.native
 class Application protected () extends EventHandler {
-  def this(canvas: Element, options: Anon_AssetPrefix) = this()
+  def this(canvas: Element, options: AnonAssetPrefix) = this()
   /**
     * @name pc.Application#assets
     * @type {pc.AssetRegistry}
@@ -300,7 +300,7 @@ class Application protected () extends EventHandler {
     * };
     * app.applySceneSettings(settings);
     */
-  def applySceneSettings(settings: Anon_Physics): Unit = js.native
+  def applySceneSettings(settings: AnonPhysics): Unit = js.native
   /**
     * @function
     * @name pc.Application#configure
@@ -447,7 +447,7 @@ class Application protected () extends EventHandler {
     */
   def renderLine(start: Vec3, end: Vec3, color: Color): Unit = js.native
   def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Color): Unit = js.native
-  def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Color, options: Anon_Layer): Unit = js.native
+  def renderLine(start: Vec3, end: Vec3, color: Color, endColor: Color, options: AnonLayer): Unit = js.native
   /**
     * @function
     * @name pc.Application#renderLines
@@ -462,7 +462,7 @@ class Application protected () extends EventHandler {
     * app.renderLines(points, colors);
     */
   def renderLines(position: js.Array[Vec3], color: js.Array[Color]): Unit = js.native
-  def renderLines(position: js.Array[Vec3], color: js.Array[Color], options: Anon_Layer): Unit = js.native
+  def renderLines(position: js.Array[Vec3], color: js.Array[Color], options: AnonLayer): Unit = js.native
   /**
     * @function
     * @name pc.Application#resizeCanvas

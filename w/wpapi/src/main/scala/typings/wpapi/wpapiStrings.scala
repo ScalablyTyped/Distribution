@@ -1,7 +1,7 @@
 package typings.wpapi
 
-import typings.wpapi.wpapiMod.HTTPArgumentType
-import typings.wpapi.wpapiMod.HTTPMethod
+import typings.wpapi.mod.HTTPArgumentType
+import typings.wpapi.mod.HTTPMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

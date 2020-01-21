@@ -20,10 +20,10 @@ object zrender extends js.Object {
           js.UndefOr[/* y2 */ Y2], 
           js.UndefOr[/* colorStops */ ColorStops], 
           js.UndefOr[/* globalCoord */ GlobalCoords], 
-          Anon_AddColorStop
+          AnonAddColorStop
         ]
   
-  type ColorStops = js.Array[Anon_Color]
+  type ColorStops = js.Array[AnonColor]
   type GlobalCoords = Boolean
   type X = Double
   type X2 = Double

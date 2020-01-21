@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object vmMod extends js.Object {
   @js.native
-  class SandBox () extends Class_SandBox
+  class SandBox () extends ClassSandBox
   
 }
 

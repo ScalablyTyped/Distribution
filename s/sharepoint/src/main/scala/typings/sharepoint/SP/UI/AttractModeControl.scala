@@ -1,6 +1,6 @@
 package typings.sharepoint.SP.UI
 
-import typings.microsoftDashAjax.Sys.UI.Control
+import typings.microsoftAjax.Sys.UI.Control
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

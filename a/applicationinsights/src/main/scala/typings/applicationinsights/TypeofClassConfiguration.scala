@@ -1,9 +1,9 @@
 package typings.applicationinsights
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.applicationinsights.applicationinsightsMod.Configuration
-import typings.applicationinsights.applicationinsightsMod.DistributedTracingModes
-import typings.applicationinsights.outAutoCollectionNativePerformanceMod.IDisabledExtendedMetrics
+import typings.applicationinsights.mod.Configuration
+import typings.applicationinsights.mod.DistributedTracingModes
+import typings.applicationinsights.nativePerformanceMod.IDisabledExtendedMetrics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

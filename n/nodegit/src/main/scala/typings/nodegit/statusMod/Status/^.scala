@@ -1,9 +1,9 @@
 package typings.nodegit.statusMod.Status
 
 import typings.nodegit.repositoryMod.Repository
-import typings.nodegit.statusDashEntryMod.StatusEntry
-import typings.nodegit.statusDashListMod.StatusList
-import typings.nodegit.statusDashOptionsMod.StatusOptions
+import typings.nodegit.statusEntryMod.StatusEntry
+import typings.nodegit.statusListMod.StatusList
+import typings.nodegit.statusOptionsMod.StatusOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.dojo.dojox.dtl
 
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.dijit.WidgetBase
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -476,7 +476,7 @@ class Inline protected () extends js.Object {
     * @param reference Widget, DOMNode, or id of widget or DOMNode
     * @param position               OptionalIf reference is a widget (or id of widget), and that widget has an ".addChild" method,it will be called passing this widget instance into that method, supplying the optionalposition index passed.  In this case position (if specified) should be an integer.If reference is a DOMNode (or id matching a DOMNode but not a widget),the position argument can be a numeric index or a string"first", "last", "before", or "after", same as dojo/dom-construct::place().
     */
-  def placeAt(reference: _WidgetBase, position: String): js.Any = js.native
+  def placeAt(reference: WidgetBase, position: String): js.Any = js.native
   /**
     * Place this widget somewhere in the DOM based
     * on standard domConstruct.place() conventions.
@@ -487,7 +487,7 @@ class Inline protected () extends js.Object {
     * @param reference Widget, DOMNode, or id of widget or DOMNode
     * @param position               OptionalIf reference is a widget (or id of widget), and that widget has an ".addChild" method,it will be called passing this widget instance into that method, supplying the optionalposition index passed.  In this case position (if specified) should be an integer.If reference is a DOMNode (or id matching a DOMNode but not a widget),the position argument can be a numeric index or a string"first", "last", "before", or "after", same as dojo/dom-construct::place().
     */
-  def placeAt(reference: _WidgetBase, position: Double): js.Any = js.native
+  def placeAt(reference: WidgetBase, position: Double): js.Any = js.native
   /**
     * Place this widget somewhere in the DOM based
     * on standard domConstruct.place() conventions.

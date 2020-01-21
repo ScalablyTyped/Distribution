@@ -1,14 +1,14 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColor
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdate
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacity
-import typings.echarts.Anon_ColorOpacityOrigin
-import typings.echarts.Anon_ColorOpacityShadowBlur
-import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdate
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderTypeBorderWidthColorOpacity
+import typings.echarts.AnonColorOpacityOrigin
+import typings.echarts.AnonColorOpacityShadowBlur
+import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColor
 import typings.echarts.echarts.EChartOption.SeriesLine.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +40,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-line
   */
-@JSName("SeriesLine")
 trait SeriesLine_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -145,7 +144,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.areaStyle
     */
-  var areaStyle: js.UndefOr[Anon_ColorOpacityOrigin] = js.undefined
+  var areaStyle: js.UndefOr[AnonColorOpacityOrigin] = js.undefined
   /**
     * Whether to clip the overflowing part, which defaults to clip.
     *
@@ -399,7 +398,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -461,7 +460,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -473,7 +472,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -491,7 +490,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonColorOpacityShadowBlur] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -499,7 +498,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.markArea
     */
-  var markArea: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
@@ -507,7 +506,7 @@ trait SeriesLine_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-line.markLine
     */
   var markLine: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -515,7 +514,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.markPoint
     */
-  var markPoint: js.UndefOr[Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -814,7 +813,7 @@ trait SeriesLine_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-line.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "line"
@@ -885,7 +884,7 @@ object SeriesLine_ {
     animationEasing: String = null,
     animationEasingUpdate: String = null,
     animationThreshold: Int | Double = null,
-    areaStyle: Anon_ColorOpacityOrigin = null,
+    areaStyle: AnonColorOpacityOrigin = null,
     clipOverflow: js.UndefOr[Boolean] = js.undefined,
     connectNulls: js.UndefOr[Boolean] = js.undefined,
     coordinateSystem: String = null,
@@ -895,17 +894,17 @@ object SeriesLine_ {
     ] = null,
     datasetIndex: Int | Double = null,
     dimensions: js.Array[_] = null,
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
+    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
     encode: js.Object = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacity = null,
-    label: Anon_AlignBackgroundColorBorderColor = null,
+    itemStyle: AnonBorderColorBorderTypeBorderWidthColorOpacity = null,
+    label: AnonAlignBackgroundColorBorderColor = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    lineStyle: Anon_ColorOpacityShadowBlur = null,
-    markArea: Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
-    markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold = null,
-    markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    lineStyle: AnonColorOpacityShadowBlur = null,
+    markArea: AnonAnimationAnimationDelayAnimationDelayUpdate = null,
+    markLine: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThreshold = null,
+    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
     name: String = null,
     polarIndex: Int | Double = null,
     sampling: String = null,
@@ -922,7 +921,7 @@ object SeriesLine_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     `type`: String = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

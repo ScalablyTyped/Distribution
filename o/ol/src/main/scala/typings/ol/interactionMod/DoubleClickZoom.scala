@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionDoubleClickZoomMod.Options
-import typings.ol.interactionDoubleClickZoomMod.default
+import typings.ol.doubleClickZoomMod.Options
+import typings.ol.doubleClickZoomMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

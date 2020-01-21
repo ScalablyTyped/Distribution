@@ -1,10 +1,10 @@
 package typings.graphql
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.errorFormatErrorMod.GraphQLFormattedError
-import typings.graphql.languageAstMod.ASTNode
-import typings.graphql.languageSourceMod.Source
-import typings.graphql.tsutilsMaybeMod.Maybe
+import typings.graphql.astMod.ASTNode
+import typings.graphql.formatErrorMod.GraphQLFormattedError
+import typings.graphql.maybeMod.Maybe
+import typings.graphql.sourceMod.Source
 import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object errorMod extends js.Object {
   @js.native
   class GraphQLError protected ()
-    extends typings.graphql.errorGraphQLErrorMod.GraphQLError {
+    extends typings.graphql.graphQLErrorMod.GraphQLError {
     def this(
       message: String,
       nodes: js.UndefOr[ASTNode | js.Array[ASTNode]],
@@ -28,14 +28,14 @@ object errorMod extends js.Object {
     ) = this()
   }
   
-  def formatError(error: typings.graphql.errorGraphQLErrorMod.GraphQLError): GraphQLFormattedError[Record[String, _]] = js.native
+  def formatError(error: typings.graphql.graphQLErrorMod.GraphQLError): GraphQLFormattedError[Record[String, _]] = js.native
   def locatedError(
-    originalError: typings.graphql.errorGraphQLErrorMod.GraphQLError,
+    originalError: typings.graphql.graphQLErrorMod.GraphQLError,
     nodes: js.Array[ASTNode],
     path: js.Array[String | Double]
-  ): typings.graphql.errorGraphQLErrorMod.GraphQLError = js.native
-  def locatedError(originalError: Error, nodes: js.Array[ASTNode], path: js.Array[String | Double]): typings.graphql.errorGraphQLErrorMod.GraphQLError = js.native
-  def printError(error: typings.graphql.errorGraphQLErrorMod.GraphQLError): String = js.native
-  def syntaxError(source: Source, position: Double, description: String): typings.graphql.errorGraphQLErrorMod.GraphQLError = js.native
+  ): typings.graphql.graphQLErrorMod.GraphQLError = js.native
+  def locatedError(originalError: Error, nodes: js.Array[ASTNode], path: js.Array[String | Double]): typings.graphql.graphQLErrorMod.GraphQLError = js.native
+  def printError(error: typings.graphql.graphQLErrorMod.GraphQLError): String = js.native
+  def syntaxError(source: Source, position: Double, description: String): typings.graphql.graphQLErrorMod.GraphQLError = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.chalk
 
-import typings.chalk.chalkMod.Level
+import typings.chalk.mod.Level
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

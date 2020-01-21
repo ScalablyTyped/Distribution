@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object-diff"
-version := "v0.0-dt-20190322Z-26bc3a"
+version := "v0.0-dt-20190322Z-7c21d8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

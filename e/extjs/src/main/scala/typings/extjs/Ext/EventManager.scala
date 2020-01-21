@@ -1,6 +1,6 @@
 package typings.extjs.Ext
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -115,7 +115,7 @@ object EventManager extends js.Object {
   		* @param event Event The event to prevent the default
   		*/
   def preventDefault(): Unit = js.native
-  def preventDefault(event: Event): Unit = js.native
+  def preventDefault(event: Event_): Unit = js.native
   /** [Method] Recursively removes all previous added listeners from an element and its children
   		* @param el String/Ext.Element/HTMLElement/Window The id or html element from which to remove all event handlers.
   		* @param eventName String The name of the event.
@@ -157,12 +157,12 @@ object EventManager extends js.Object {
   		* @param event Event The event to stop
   		*/
   def stopEvent(): Unit = js.native
-  def stopEvent(event: Event): Unit = js.native
+  def stopEvent(event: Event_): Unit = js.native
   /** [Method] Cancels bubbling of the event
   		* @param event Event The event to stop bubbling.
   		*/
   def stopPropagation(): Unit = js.native
-  def stopPropagation(event: Event): Unit = js.native
+  def stopPropagation(event: Event_): Unit = js.native
   /** [Method] Removes an event handler from an element
   		* @param el String/Ext.Element/HTMLElement/Window The id or html element from which to remove the listener.
   		* @param eventName String The name of the event.

@@ -1,7 +1,7 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_AddressU
-import typings.playcanvas.Anon_Face
+import typings.playcanvas.AnonAddressU
+import typings.playcanvas.AnonFace
 import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
@@ -61,6 +61,9 @@ import scala.scalajs.js.annotation._
   * @param {Boolean} [options.cubemap] Specifies whether the texture is to be a cubemap. Defaults to false.
   * @param {Boolean} [options.volume] Specifies whether the texture is to be a 3D volume (WebGL2 only). Defaults to false.
   * @param {Boolean} [options.rgbm] Specifies whether the texture contains RGBM-encoded HDR data. Defaults to false.
+  * @param {Boolean} [options.swizzleGGGR] Specifies whether the texture contains swizzled GGGR data for use with tangent space normal
+  * maps. The R component is stored in alpha and G is stored in RGB. This packing can result in higher quality when the texture data
+  * is compressed. Defaults to false.
   * @param {Boolean} [options.fixCubemapSeams] Specifies whether this cubemap texture requires special
   * seam fixing shader code to look right. Defaults to false.
   * @param {Boolean} [options.flipY] Specifies whether the texture should be flipped in the Y-direction. Only affects textures
@@ -106,7 +109,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Texture protected () extends js.Object {
   def this(graphicsDevice: GraphicsDevice) = this()
-  def this(graphicsDevice: GraphicsDevice, options: Anon_AddressU) = this()
+  def this(graphicsDevice: GraphicsDevice, options: AnonAddressU) = this()
   /**
     * @name pc.Texture#addressU
     * @type Number
@@ -313,7 +316,7 @@ class Texture protected () extends js.Object {
     * @returns {Uint8Array|Uint16Array|Float32Array} A typed array containing the pixel data of the locked mip level.
     */
   def lock(): Uint8Array | Uint16Array | Float32Array = js.native
-  def lock(options: Anon_Face): Uint8Array | Uint16Array | Float32Array = js.native
+  def lock(options: AnonFace): Uint8Array | Uint16Array | Float32Array = js.native
   def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement]): Unit = js.native
   def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement], mipLevel: Double): Unit = js.native
   /**

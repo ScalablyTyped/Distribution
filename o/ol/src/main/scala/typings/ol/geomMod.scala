@@ -1,8 +1,8 @@
 package typings.ol
 
+import typings.ol.circleMod.default
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.geomCircleMod.default
-import typings.ol.geomGeometryLayoutMod.GeometryLayout
+import typings.ol.geometryLayoutMod.GeometryLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,38 +19,38 @@ object geomMod extends js.Object {
   
   @js.native
   abstract class Geometry ()
-    extends typings.ol.geomGeometryMod.default
+    extends typings.ol.geometryMod.default
   
   @js.native
   class GeometryCollection ()
-    extends typings.ol.geomGeometryCollectionMod.default {
-    def this(opt_geometries: js.Array[typings.ol.geomGeometryMod.default]) = this()
+    extends typings.ol.geometryCollectionMod.default {
+    def this(opt_geometries: js.Array[typings.ol.geometryMod.default]) = this()
   }
   
   @js.native
   class LineString protected ()
-    extends typings.ol.geomLineStringMod.default {
+    extends typings.ol.lineStringMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
   
   @js.native
   class LinearRing protected ()
-    extends typings.ol.geomLinearRingMod.default {
+    extends typings.ol.linearRingMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
   
   @js.native
   class MultiLineString protected ()
-    extends typings.ol.geomMultiLineStringMod.default {
-    def this(coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.geomLineStringMod.default]) = this()
+    extends typings.ol.multiLineStringMod.default {
+    def this(coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default]) = this()
     def this(
-      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.geomLineStringMod.default],
+      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
       opt_layout: GeometryLayout
     ) = this()
     def this(
-      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.geomLineStringMod.default],
+      coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
       opt_layout: GeometryLayout,
       opt_ends: js.Array[Double]
     ) = this()
@@ -58,21 +58,21 @@ object geomMod extends js.Object {
   
   @js.native
   class MultiPoint protected ()
-    extends typings.ol.geomMultiPointMod.default {
+    extends typings.ol.multiPointMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }
   
   @js.native
   class MultiPolygon protected ()
-    extends typings.ol.geomMultiPolygonMod.default {
-    def this(coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.geomPolygonMod.default]) = this()
+    extends typings.ol.multiPolygonMod.default {
+    def this(coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default]) = this()
     def this(
-      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.geomPolygonMod.default],
+      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
       opt_layout: GeometryLayout
     ) = this()
     def this(
-      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.geomPolygonMod.default],
+      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
       opt_layout: GeometryLayout,
       opt_endss: js.Array[js.Array[Double]]
     ) = this()
@@ -80,14 +80,14 @@ object geomMod extends js.Object {
   
   @js.native
   class Point protected ()
-    extends typings.ol.geomPointMod.default {
+    extends typings.ol.pointMod.default {
     def this(coordinates: Coordinate) = this()
     def this(coordinates: Coordinate, opt_layout: GeometryLayout) = this()
   }
   
   @js.native
   class Polygon protected ()
-    extends typings.ol.geomPolygonMod.default {
+    extends typings.ol.polygonMod.default {
     def this(coordinates: js.Array[js.Array[Coordinate] | Double]) = this()
     def this(coordinates: js.Array[js.Array[Coordinate] | Double], opt_layout: GeometryLayout) = this()
     def this(

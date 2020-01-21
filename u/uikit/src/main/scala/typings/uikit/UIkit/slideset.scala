@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.slideset")
 @js.native
-object slideset extends TopLevel[SlideSet]
+object slideset extends TopLevel[SlideSet_]
 

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("top")
 @js.native
-object top extends TopLevel[Window]
+object top extends TopLevel[Window_]
 

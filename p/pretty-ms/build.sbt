@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pretty-ms"
-version := "5.1.0-f40a5e"
+version := "5.1.0-91f982"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

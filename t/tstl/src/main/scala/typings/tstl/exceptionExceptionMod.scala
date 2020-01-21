@@ -1,6 +1,5 @@
 package typings.tstl
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object exceptionExceptionMod extends js.Object {
   @js.native
-  /**
-    * Default Constructor.
-    */
-  class Exception () extends Error {
+  class Exception protected () extends Error {
     /**
       * Initializer Constructor.
       *
@@ -45,7 +41,5 @@ object exceptionExceptionMod extends js.Object {
     def what(): String = js.native
   }
   
-  val exception: Instantiable0[Exception] = js.native
-  type exception = Exception
 }
 

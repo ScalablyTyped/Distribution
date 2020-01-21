@@ -17,7 +17,7 @@ object TourDefinition {
     arrowWidth: Int | Double = null,
     bubbleWidth: Int | Double = null,
     buddleHeight: Int | Double = null,
-    i18n: Anon_CloseTooltip = null,
+    i18n: AnonCloseTooltip = null,
     nextOnTargetClick: js.UndefOr[Boolean] = js.undefined,
     onClose: CallbackNameNamesOrDefinition = null,
     onEnd: CallbackNameNamesOrDefinition = null,

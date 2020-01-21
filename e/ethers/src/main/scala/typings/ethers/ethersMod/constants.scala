@@ -1,11 +1,11 @@
 package typings.ethers.ethersMod
 
-import typings.ethers.distTypesUtilsMod.types.BigNumber
+import typings.ethers.utilsMod.types.BigNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ethers", "constants")
+@JSImport("ethers/dist/types/ethers", "constants")
 @js.native
 object constants extends js.Object {
   var AddressZero: String = js.native

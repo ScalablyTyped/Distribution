@@ -1,6 +1,6 @@
 package typings.sharepoint.SP.UI
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object UIUtility extends js.Object {
   def calculateOffsetLeft(elem: HTMLElement): Double = js.native
   def calculateOffsetTop(elem: HTMLElement): Double = js.native
-  def cancelEvent(evt: Event): Unit = js.native
+  def cancelEvent(evt: Event_): Unit = js.native
   def clearChildNodes(elem: HTMLElement): Unit = js.native
   def createHtmlInputCheck(isChecked: Boolean): HTMLInputElement = js.native
   def createHtmlInputText(text: String): HTMLInputElement = js.native

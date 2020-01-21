@@ -1,7 +1,7 @@
 package typings.knockback.Knockback
 
-import typings.backbone.backboneMod.Collection
-import typings.backbone.backboneMod.Model
+import typings.backbone.mod.Collection
+import typings.backbone.mod.Model
 import typings.knockout.KnockoutObservableArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`

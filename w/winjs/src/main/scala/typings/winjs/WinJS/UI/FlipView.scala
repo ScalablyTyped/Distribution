@@ -1,7 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Promise
 import scala.scalajs.js
@@ -90,7 +90,7 @@ class FlipView[T] () extends js.Object {
     * Occurs when the datasource count changes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: source.
     **/
-  def ondatasourcecountchanged(eventInfo: Event): Unit = js.native
+  def ondatasourcecountchanged(eventInfo: Event_): Unit = js.native
   /**
     * Raised when the FlipView flips to a page and its renderer function completes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source.

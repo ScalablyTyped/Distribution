@@ -1,6 +1,6 @@
 package typings.swipeview
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ class SwipeView protected () extends js.Object {
   var wrapperHeight: Double = js.native
   def destroy(): Unit = js.native
   def goToPage(p: Double): Unit = js.native
-  def handleEvent(e: Event): Unit = js.native
+  def handleEvent(e: Event_): Unit = js.native
   def next(): Unit = js.native
   def onFlip(fn: js.Function): Unit = js.native
   def onMoveIn(fn: js.Function): Unit = js.native

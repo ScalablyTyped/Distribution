@@ -1,7 +1,7 @@
 package typings.hellojs
 
-import typings.hellojs.hellojsMod.HelloJSDisplayType
-import typings.hellojs.hellojsMod.HelloJSTokenResponseType
+import typings.hellojs.mod.HelloJSDisplayType
+import typings.hellojs.mod.HelloJSTokenResponseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

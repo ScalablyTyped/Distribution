@@ -1,6 +1,6 @@
 package typings.swig
 
-import typings.swig.swigMod.TemplateLoader
+import typings.swig.mod.TemplateLoader
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

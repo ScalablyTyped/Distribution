@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object calq {
-  type Calq = Calq_
+  type Calq_ = typings.calq.Calq__
 }

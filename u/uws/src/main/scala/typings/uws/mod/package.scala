@@ -1,0 +1,14 @@
+package typings.uws
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object mod {
+  type VerifyClientCallbackAsync = js.Function2[
+    /* info */ typings.uws.AnonOrigin, 
+    /* callback */ js.Function1[/* res */ scala.Boolean, scala.Unit], 
+    scala.Unit
+  ]
+  type VerifyClientCallbackSync = js.Function1[/* info */ typings.uws.AnonOrigin, scala.Boolean]
+}

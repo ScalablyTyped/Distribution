@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("functional")
 @js.native
 trait functional_ extends js.Object {
   /**

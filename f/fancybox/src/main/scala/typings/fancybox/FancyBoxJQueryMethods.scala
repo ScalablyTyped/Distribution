@@ -36,7 +36,7 @@ trait FancyBoxJQueryMethods extends js.Object {
   def open(items: JQuery): FancyBoxInstance = js.native
   def open(items: JQuery, opts: FancyBoxOptions): FancyBoxInstance = js.native
   def open(items: JQuery, opts: FancyBoxOptions, index: Double): FancyBoxInstance = js.native
-  def setTranslate($el: JQuery, props: Anon_Left): Unit = js.native
+  def setTranslate($el: JQuery, props: AnonLeft): Unit = js.native
   def stop($el: JQuery, callCallback: Boolean): Unit = js.native
 }
 

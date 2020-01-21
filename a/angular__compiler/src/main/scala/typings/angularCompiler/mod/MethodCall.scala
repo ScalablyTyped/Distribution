@@ -1,0 +1,18 @@
+package typings.angularCompiler.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler", "MethodCall")
+@js.native
+class MethodCall protected ()
+  extends typings.angularCompiler.publicApiMod.MethodCall {
+  def this(
+    span: typings.angularCompiler.astMod.ParseSpan,
+    receiver: typings.angularCompiler.astMod.AST,
+    name: String,
+    args: js.Array[_]
+  ) = this()
+}
+

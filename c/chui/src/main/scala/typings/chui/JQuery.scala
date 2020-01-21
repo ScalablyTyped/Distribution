@@ -20,7 +20,7 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UIBusy(): Unit = js.native
-  def UIBusy(options: Anon_Color): Unit = js.native
+  def UIBusy(options: AnonColor): Unit = js.native
   /**
     * Center an element to the screen.
     *
@@ -34,7 +34,7 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UIEditList(): Unit = js.native
-  def UIEditList(options: Anon_CallbackDeletable): Unit = js.native
+  def UIEditList(options: AnonCallbackDeletable): Unit = js.native
   /**
     * This method allows the user to use a segmented control to toggle a set of panels. It is executed on the segmented control.
     * The options id is the contain of the panels. The options callback is to execute when the user toggles a panel.
@@ -60,7 +60,7 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UISegmented(): Unit = js.native
-  def UISegmented(options: Anon_CallbackSelected): Unit = js.native
+  def UISegmented(options: AnonCallbackSelected): Unit = js.native
   /**
     * Convert a simple list into a selection list. This converts the list into a radio button group, meaning only one can be selected at any time.
     * You can name the radios buttons using the options name. Options: {name: "selectedNamesGroup", selected: 2, callback: function() {alert('hi');}}
@@ -68,13 +68,13 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UISelectList(): Unit = js.native
-  def UISelectList(options: Anon_CallbackName): Unit = js.native
+  def UISelectList(options: AnonCallbackName): Unit = js.native
   /**
     * Create a stepper control by executing it on a span with the class "stepper". Possible options: {start: 0, end: 10, defaultValue: 3}.
     *
     * @return void
     */
-  def UIStepper(options: Anon_DefaultValue): Unit = js.native
+  def UIStepper(options: AnonDefaultValue): Unit = js.native
   /**
     * Initialize any existing switch controls: $('.switch').UISwitch();
     *

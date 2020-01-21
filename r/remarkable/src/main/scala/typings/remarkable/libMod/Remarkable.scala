@@ -1,18 +1,18 @@
 package typings.remarkable.libMod
 
-import typings.remarkable.Anon_Ruler
-import typings.remarkable.Anon_RulerBlockParsingRule
-import typings.remarkable.Anon_RulerCoreParsingRule
+import typings.remarkable.AnonRuler
+import typings.remarkable.AnonRulerBlockParsingRule
+import typings.remarkable.AnonRulerCoreParsingRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Remarkable extends js.Object {
-  var block: Anon_RulerBlockParsingRule = js.native
-  var core: Anon_RulerCoreParsingRule = js.native
-  var `inline`: Anon_Ruler = js.native
-  var renderer: typings.remarkable.libRendererMod.^ = js.native
+  var block: AnonRulerBlockParsingRule = js.native
+  var core: AnonRulerCoreParsingRule = js.native
+  var `inline`: AnonRuler = js.native
+  var renderer: typings.remarkable.rendererMod.^ = js.native
   /**
     * Batch loader for components rules states, and options.
     */

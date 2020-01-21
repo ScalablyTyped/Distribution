@@ -1,0 +1,17 @@
+package typings.angularCompiler.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler", "SafePropertyRead")
+@js.native
+class SafePropertyRead protected ()
+  extends typings.angularCompiler.publicApiMod.SafePropertyRead {
+  def this(
+    span: typings.angularCompiler.astMod.ParseSpan,
+    receiver: typings.angularCompiler.astMod.AST,
+    name: String
+  ) = this()
+}
+

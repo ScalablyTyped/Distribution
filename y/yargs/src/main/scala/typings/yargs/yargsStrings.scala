@@ -1,6 +1,6 @@
 package typings.yargs
 
-import typings.yargs.yargsMod.PositionalOptionsType
+import typings.yargs.mod.PositionalOptionsType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

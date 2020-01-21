@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("sap.ui.model.SimpleType")
 @js.native
-abstract class SimpleType protected () extends Type {
+abstract class SimpleType protected () extends Type_ {
   /**
     * Constructor for a new SimpleType.
     * @param oFormatOptions options as provided by concrete subclasses

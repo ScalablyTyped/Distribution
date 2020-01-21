@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RoomPositionConstructor
-  extends _Constructor[RoomPosition]
+  extends Constructor[RoomPosition]
      with /**
   * You can create new RoomPosition object using its constructor.
   * @param x X position in the room.

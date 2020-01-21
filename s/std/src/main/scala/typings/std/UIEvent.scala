@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 
 /** Simple user interface events. */
 @js.native
-trait UIEvent extends Event {
+trait UIEvent extends Event_ {
   val detail: Double = js.native
-  val view: Window | Null = js.native
+  val view: Window_ | Null = js.native
   /** @deprecated */
   val which: Double = js.native
 }

@@ -10,8 +10,8 @@ trait SketchMSImageDataReference extends js.Object {
   var _class: jSONOriginalDataReference
   var _ref: String
   var _ref_class: imageData
-  var data: Anon_Data
-  var sha1: Anon_Data
+  var data: AnonData
+  var sha1: AnonData
 }
 
 object SketchMSImageDataReference {
@@ -20,8 +20,8 @@ object SketchMSImageDataReference {
     _class: jSONOriginalDataReference,
     _ref: String,
     _ref_class: imageData,
-    data: Anon_Data,
-    sha1: Anon_Data
+    data: AnonData,
+    sha1: AnonData
   ): SketchMSImageDataReference = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], _ref = _ref.asInstanceOf[js.Any], _ref_class = _ref_class.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], sha1 = sha1.asInstanceOf[js.Any])
   

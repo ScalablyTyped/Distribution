@@ -13,21 +13,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object mqMod extends js.Object {
   @js.native
-  class Chain () extends Class_Chain
+  class Chain () extends ClassChain
   
   @js.native
-  class Handler () extends Class_Handler
+  class Handler () extends ClassHandler
   
   @js.native
-  class HttpHandler () extends Class_HttpHandler
+  class HttpHandler () extends ClassHttpHandler
   
   @js.native
-  class Message () extends Class_Message
+  class Message () extends ClassMessage
   
   @js.native
-  class Routing () extends Class_Routing
+  class Routing () extends ClassRouting
   
-  def invoke(hdlr: Class_Handler, v: Class__object): Unit = js.native
-  def nullHandler(): Class_Handler = js.native
+  def invoke(hdlr: ClassHandler, v: ClassObject): Unit = js.native
+  def nullHandler(): ClassHandler = js.native
 }
 

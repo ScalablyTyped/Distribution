@@ -1,6 +1,6 @@
 package typings.musicmatch
 
-import typings.musicmatch.musicmatchMod.TBoolean
+import typings.musicmatch.mod.TBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.baseui.radioMod
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
+import typings.react.mod.Component
+import typings.react.mod.FocusEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

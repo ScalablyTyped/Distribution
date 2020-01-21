@@ -1,14 +1,14 @@
 package typings.simplecrawler.crawlerMod
 
 import typings.node.httpMod.Agent
-import typings.simplecrawler.Anon_Accept
+import typings.simplecrawler.AnonAccept
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestOptions extends js.Object {
   var agent: Agent | typings.node.httpsMod.Agent
-  var headers: Anon_Accept
+  var headers: AnonAccept
   var host: String
   var method: HTTPMethods
   var port: js.UndefOr[Double] = js.undefined
@@ -18,7 +18,7 @@ object RequestOptions {
   @scala.inline
   def apply(
     agent: Agent | typings.node.httpsMod.Agent,
-    headers: Anon_Accept,
+    headers: AnonAccept,
     host: String,
     method: HTTPMethods,
     port: Int | Double = null

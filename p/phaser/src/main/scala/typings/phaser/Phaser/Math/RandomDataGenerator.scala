@@ -68,7 +68,7 @@ class RandomDataGenerator () extends js.Object {
     * Returns a random element from within the given array.
     * @param array The array to pick a random element from.
     */
-  def pick(array: js.Array[_]): js.Any = js.native
+  def pick[T](array: js.Array[T]): T = js.native
   /**
     * Returns a random real number between 0 and 2^32.
     */
@@ -87,8 +87,8 @@ class RandomDataGenerator () extends js.Object {
     * Shuffles the given array, using the current seed.
     * @param array The array to be shuffled.
     */
-  def shuffle(): js.Array[_] = js.native
-  def shuffle(array: js.Array[_]): js.Array[_] = js.native
+  def shuffle[T](): js.Array[T] = js.native
+  def shuffle[T](array: js.Array[T]): js.Array[T] = js.native
   /**
     * Returns a sign to be used with multiplication operator.
     */
@@ -130,6 +130,6 @@ class RandomDataGenerator () extends js.Object {
     * Returns a random element from within the given array, favoring the earlier entries.
     * @param array The array to pick a random element from.
     */
-  def weightedPick(array: js.Array[_]): js.Any = js.native
+  def weightedPick[T](array: js.Array[T]): T = js.native
 }
 

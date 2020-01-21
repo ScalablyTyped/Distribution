@@ -1,6 +1,6 @@
 package typings.appletvjs.AppleTVJS
 
-import typings.std.Document
+import typings.std.Document_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class Player () extends js.Object {
   /** The next media item in the playlist. */
   var nextMediaItem: MediaItem = js.native
   /** The annotations for a video created by placing a DOM document over the video. */
-  var overlayDocument: Document = js.native
+  var overlayDocument: Document_ = js.native
   /**
   		 * The current state of the player.
   		 *

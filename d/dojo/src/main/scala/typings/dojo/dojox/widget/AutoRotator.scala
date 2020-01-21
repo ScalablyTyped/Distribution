@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.widget.AutoRotator")
 @js.native
-class AutoRotator () extends Rotator {
+class AutoRotator () extends Rotator_ {
   /**
     * Starts the timer to transition children upon creation.
     *

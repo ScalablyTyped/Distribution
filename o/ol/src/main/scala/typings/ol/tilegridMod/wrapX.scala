@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ol/tilegrid", "wrapX")
 @js.native
 object wrapX extends js.Object {
-  def apply(tileGrid: default, tileCoord: TileCoord, projection: typings.ol.projProjectionMod.default): TileCoord = js.native
+  def apply(tileGrid: default, tileCoord: TileCoord, projection: typings.ol.projectionMod.default): TileCoord = js.native
 }
 

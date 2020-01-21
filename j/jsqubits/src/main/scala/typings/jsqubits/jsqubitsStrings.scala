@@ -1,6 +1,6 @@
 package typings.jsqubits
 
-import typings.jsqubits.jsqubitsMod._SingleQubitOperatorTargetQubits
+import typings.jsqubits.mod._SingleQubitOperatorTargetQubits
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

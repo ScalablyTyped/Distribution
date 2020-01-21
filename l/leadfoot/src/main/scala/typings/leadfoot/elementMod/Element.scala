@@ -1,9 +1,9 @@
 package typings.leadfoot.elementMod
 
-import typings.dojo.promisePromiseMod.Promise
-import typings.leadfoot.Anon_ELEMENT
-import typings.leadfoot.Anon_Height
-import typings.leadfoot.Anon_X
+import typings.dojo.promiseMod.Promise
+import typings.leadfoot.AnonELEMENT
+import typings.leadfoot.AnonHeight
+import typings.leadfoot.AnonX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -201,7 +201,7 @@ trait Element extends js.Object {
   		 * Gets the position of the element relative to the top-left corner of the document, taking into account
   		 * scrolling and CSS transformations (if they are supported).
   		 */
-  def getPosition(): Promise[Anon_X] = js.native
+  def getPosition(): Promise[AnonX] = js.native
   /**
   		 * Gets a property of the element.
   		 *
@@ -213,7 +213,7 @@ trait Element extends js.Object {
   /**
   		 * Gets the size of the element, taking into account CSS transformations (if they are supported).
   		 */
-  def getSize(): Promise[Anon_Height] = js.native
+  def getSize(): Promise[AnonHeight] = js.native
   /**
   		 * Gets a property or attribute of the element according to the WebDriver specification algorithm. Use of this
   		 * method is not recommended; instead, use {@link module:leadfoot/Element#getAttribute} to retrieve DOM attributes
@@ -274,7 +274,7 @@ trait Element extends js.Object {
   		 * Submits the element, if it is a form, or the form belonging to the element, if it is a form element.
   		 */
   def submit(): Promise[Unit] = js.native
-  def toJSON(): Anon_ELEMENT = js.native
+  def toJSON(): AnonELEMENT = js.native
   /**
   		 * Types into the element. This method works the same as the {@link module:leadfoot/Session#pressKeys} method
   		 * except that any modifier keys are automatically released at the end of the command.

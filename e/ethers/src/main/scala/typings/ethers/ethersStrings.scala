@@ -1,6 +1,6 @@
 package typings.ethers
 
-import typings.ethers.distTypesUtilsTypesMod.SupportedAlgorithms
+import typings.ethers.typesMod.SupportedAlgorithms
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

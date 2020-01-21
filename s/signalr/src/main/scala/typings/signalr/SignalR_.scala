@@ -11,7 +11,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("SignalR")
 @js.native
 trait SignalR_ extends js.Object {
   var ajaxDefaults: AjaxDefaults = js.native

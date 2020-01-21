@@ -1,7 +1,7 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.ModifierFlags
-import typings.typescript.typescriptMod.Node
+import typings.typescript.mod.ModifierFlags
+import typings.typescript.mod.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

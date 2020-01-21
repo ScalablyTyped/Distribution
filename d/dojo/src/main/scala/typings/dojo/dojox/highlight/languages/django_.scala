@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("django")
 trait django_ extends js.Object {
   /**
     *

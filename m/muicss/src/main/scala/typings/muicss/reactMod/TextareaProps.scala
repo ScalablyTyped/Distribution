@@ -1,28 +1,28 @@
 package typings.muicss.reactMod
 
-import typings.react.Anon_Html
-import typings.react.reactMod.AnimationEvent
-import typings.react.reactMod.Booleanish
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ChangeEvent
-import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.CompositionEvent
-import typings.react.reactMod.DragEvent
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.MouseEventHandler
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.PointerEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
-import typings.react.reactMod.SyntheticEvent
-import typings.react.reactMod.TextareaHTMLAttributes
-import typings.react.reactMod.TouchEvent
-import typings.react.reactMod.TransitionEvent
-import typings.react.reactMod.UIEvent
-import typings.react.reactMod.WheelEvent
+import typings.react.AnonHtml
+import typings.react.mod.AnimationEvent
+import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
+import typings.react.mod.ChangeEvent
+import typings.react.mod.ClipboardEvent
+import typings.react.mod.CompositionEvent
+import typings.react.mod.DragEvent
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TextareaHTMLAttributes
+import typings.react.mod.TouchEvent
+import typings.react.mod.TransitionEvent
+import typings.react.mod.UIEvent
+import typings.react.mod.WheelEvent
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -68,7 +68,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
@@ -148,7 +148,7 @@ object TextareaProps {
     cols: Int | Double = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -176,15 +176,15 @@ object TextareaProps {
     maxLength: Int | Double = null,
     minLength: Int | Double = null,
     name: String = null,
-    onAbort: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onAbort: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLTextAreaElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLTextAreaElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLTextAreaElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLTextAreaElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLTextAreaElement] => Unit = null,
     onBlur: FocusEvent[HTMLTextAreaElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onChange: ChangeEvent[HTMLTextAreaElement] => Unit = null,
     onClick: MouseEvent[HTMLTextAreaElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLTextAreaElement] => Unit = null,
@@ -202,11 +202,11 @@ object TextareaProps {
     onDragOver: DragEvent[HTMLTextAreaElement] => Unit = null,
     onDragStart: DragEvent[HTMLTextAreaElement] => Unit = null,
     onDrop: DragEvent[HTMLTextAreaElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onEnded: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onError: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onFocus: FocusEvent[HTMLTextAreaElement] => Unit = null,
     onInput: FormEvent[HTMLTextAreaElement] => Unit = null,
     onInvalid: FormEvent[HTMLTextAreaElement] => Unit = null,
@@ -214,10 +214,10 @@ object TextareaProps {
     onKeyPress: KeyboardEvent[HTMLTextAreaElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLTextAreaElement] => Unit = null,
     onLabelClick: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onLoad: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onLoad: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onMouseDown: MouseEvent[HTMLTextAreaElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLTextAreaElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLTextAreaElement, NativeMouseEvent] => Unit = null,
@@ -226,9 +226,9 @@ object TextareaProps {
     onMouseOver: MouseEvent[HTMLTextAreaElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLTextAreaElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLTextAreaElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onPause: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onPlay: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onPointerCancel: PointerEvent[HTMLTextAreaElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLTextAreaElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLTextAreaElement] => Unit = null,
@@ -237,24 +237,24 @@ object TextareaProps {
     onPointerOut: PointerEvent[HTMLTextAreaElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLTextAreaElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLTextAreaElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onProgress: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLTextAreaElement] => Unit = null,
     onScroll: UIEvent[HTMLTextAreaElement] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onSelect: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onStalled: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onSubmit: FormEvent[HTMLTextAreaElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onTouchCancel: TouchEvent[HTMLTextAreaElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLTextAreaElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLTextAreaElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLTextAreaElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLTextAreaElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLTextAreaElement, Event] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLTextAreaElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLTextAreaElement] => Unit = null,
     placeholder: String = null,
     prefix: String = null,

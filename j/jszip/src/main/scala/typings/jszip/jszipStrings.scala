@@ -1,8 +1,8 @@
 package typings.jszip
 
-import typings.jszip.jszipMod.Compression
-import typings.jszip.jszipMod.InputType
-import typings.jszip.jszipMod.OutputType
+import typings.jszip.mod.Compression
+import typings.jszip.mod.InputType
+import typings.jszip.mod.OutputType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

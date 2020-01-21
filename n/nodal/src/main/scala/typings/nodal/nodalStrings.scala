@@ -1,6 +1,6 @@
 package typings.nodal
 
-import typings.nodal.nodalMod.DataType
+import typings.nodal.mod.DataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

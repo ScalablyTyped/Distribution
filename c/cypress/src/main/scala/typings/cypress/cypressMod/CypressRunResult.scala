@@ -41,6 +41,11 @@ trait CypressRunResult extends js.Object {
   var message: js.UndefOr[String] = js.undefined
   var osName: String
   var osVersion: String
+  /**
+    * If Cypress test run is being recorded, full url will be provided.
+    * @see https://on.cypress.io/dashboard-introduction
+    */
+  var runUrl: js.UndefOr[String] = js.undefined
   var runs: js.Array[RunResult]
   var startedTestsAt: dateTimeISO
   var totalDuration: ms
@@ -73,11 +78,13 @@ object CypressRunResult {
     totalSuites: Double,
     totalTests: Double,
     failures: Int | Double = null,
-    message: String = null
+    message: String = null,
+    runUrl: String = null
   ): CypressRunResult = {
     val __obj = js.Dynamic.literal(browserName = browserName.asInstanceOf[js.Any], browserPath = browserPath.asInstanceOf[js.Any], browserVersion = browserVersion.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], cypressVersion = cypressVersion.asInstanceOf[js.Any], endedTestsAt = endedTestsAt.asInstanceOf[js.Any], osName = osName.asInstanceOf[js.Any], osVersion = osVersion.asInstanceOf[js.Any], runs = runs.asInstanceOf[js.Any], startedTestsAt = startedTestsAt.asInstanceOf[js.Any], totalDuration = totalDuration.asInstanceOf[js.Any], totalFailed = totalFailed.asInstanceOf[js.Any], totalPassed = totalPassed.asInstanceOf[js.Any], totalPending = totalPending.asInstanceOf[js.Any], totalSkipped = totalSkipped.asInstanceOf[js.Any], totalSuites = totalSuites.asInstanceOf[js.Any], totalTests = totalTests.asInstanceOf[js.Any])
     if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (runUrl != null) __obj.updateDynamic("runUrl")(runUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CypressRunResult]
   }
 }

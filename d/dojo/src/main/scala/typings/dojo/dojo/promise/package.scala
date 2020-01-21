@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object promise {
-  type Callback[T, U] = js.Function1[/* arg */ T, U | Thenable[U]]
+  type Callback[T, U] = js.Function1[/* arg */ T, U | typings.dojo.dojo.promise.Thenable[U]]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/promise/instrumentation.html
     *
@@ -22,5 +22,5 @@ package object promise {
     *
     * @param Deferred
     */
-  type instrumentation = js.Function1[/* Deferred */ js.Any, Unit]
+  type instrumentation = js.Function1[/* Deferred */ js.Any, scala.Unit]
 }

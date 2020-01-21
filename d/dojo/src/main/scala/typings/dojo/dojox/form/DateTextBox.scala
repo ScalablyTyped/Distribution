@@ -1,6 +1,6 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.dijit.form._DateTimeTextBox
+import typings.dojo.dijit.form.DateTimeTextBox
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.form.DateTextBox")
 @js.native
-class DateTextBox () extends _DateTimeTextBox {
+class DateTextBox () extends DateTimeTextBox {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

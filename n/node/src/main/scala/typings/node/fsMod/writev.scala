@@ -37,7 +37,9 @@ object writev extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def __promisify__(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[WriteVResult] = js.native
-  def __promisify__(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WriteVResult] = js.native
+  @JSName("__promisify__")
+  def promisify(fd: Double, buffers: js.Array[ArrayBufferView]): js.Promise[WriteVResult] = js.native
+  @JSName("__promisify__")
+  def promisify(fd: Double, buffers: js.Array[ArrayBufferView], position: Double): js.Promise[WriteVResult] = js.native
 }
 

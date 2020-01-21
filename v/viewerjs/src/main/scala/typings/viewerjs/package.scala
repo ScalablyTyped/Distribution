@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object viewerjs {
-  type Viewer = Viewer_
+  type Viewer = typings.viewerjs.Viewer_
 }

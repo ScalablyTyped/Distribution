@@ -1,6 +1,6 @@
 package typings.rollup
 
-import typings.rollup.rollupMod._ResolveIdResult
+import typings.rollup.mod._ResolveIdResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

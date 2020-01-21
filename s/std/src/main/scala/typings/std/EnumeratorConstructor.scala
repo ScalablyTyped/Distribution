@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EnumeratorConstructor
   extends Instantiable1[
-      (/* collection */ Anon_Index[js.Object]) | (/* collection */ js.Any) | (/* safearray */ SafeArray[js.Object]), 
+      (/* collection */ AnonIndex[js.Object]) | (/* collection */ js.Any) | (/* safearray */ SafeArray[js.Object]), 
       Enumerator[js.Object]
     ]
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Navigator")
 @js.native
-class NavigatorCls () extends Navigator {
+class NavigatorCls () extends Navigator_ {
   /* CompleteClass */
   override val appCodeName: java.lang.String = js.native
   /* CompleteClass */

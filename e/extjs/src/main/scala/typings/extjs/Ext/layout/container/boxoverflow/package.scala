@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object boxoverflow {
-  import typings.extjs.Ext.IBase
-
-  type INone = IBase
+  type INone = typings.extjs.Ext.IBase
 }

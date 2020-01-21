@@ -10,23 +10,23 @@ package object Scale {
     * 
     * To find out what each mode does please see [Phaser.Scale.Center]{@link Phaser.Scale.Center}.
     */
-  type CenterType = Center
+  type CenterType = typings.phaser.Phaser.Scale.Center
   /**
     * Phaser Scale Manager constants for orientation.
     * 
     * To find out what each mode does please see [Phaser.Scale.Orientation]{@link Phaser.Scale.Orientation}.
     */
-  type OrientationType = Orientation
+  type OrientationType = typings.phaser.Phaser.Scale.Orientation
   /**
     * Phaser Scale Manager constants for the different scale modes available.
     * 
     * To find out what each mode does please see [Phaser.Scale.ScaleModes]{@link Phaser.Scale.ScaleModes}.
     */
-  type ScaleModeType = ScaleModes
+  type ScaleModeType = typings.phaser.Phaser.Scale.ScaleModes
   /**
     * Phaser Scale Manager constants for zoom modes.
     * 
     * To find out what each mode does please see [Phaser.Scale.Zoom]{@link Phaser.Scale.Zoom}.
     */
-  type ZoomType = Zoom
+  type ZoomType = typings.phaser.Phaser.Scale.Zoom
 }

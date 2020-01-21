@@ -103,7 +103,7 @@ trait Node extends EventTarget {
   /**
     * Returns the node document. Returns null for documents.
     */
-  val ownerDocument: Document | Null = js.native
+  val ownerDocument: Document_ | Null = js.native
   /**
     * Returns the parent element.
     */

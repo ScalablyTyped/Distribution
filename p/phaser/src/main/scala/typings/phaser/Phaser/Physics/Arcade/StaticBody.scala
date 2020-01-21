@@ -249,7 +249,6 @@ class StaticBody protected () extends js.Object {
   def postUpdate(): Unit = js.native
   /**
     * Resets this Body to the given coordinates. Also positions its parent Game Object to the same coordinates.
-    * Similar to `updateFromGameObject`, but doesn't modify the Body's dimensions.
     * @param x The x coordinate to reset the body to. If not given will use the parent Game Object's coordinate.
     * @param y The y coordinate to reset the body to. If not given will use the parent Game Object's coordinate.
     */
@@ -305,8 +304,7 @@ class StaticBody protected () extends js.Object {
     */
   def updateCenter(): Unit = js.native
   /**
-    * Updates this Static Body so that its position and dimensions are updated
-    * based on the current Game Object it is bound to.
+    * Syncs the Body's position and size with its parent Game Object.
     */
   def updateFromGameObject(): StaticBody = js.native
   /**

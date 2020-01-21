@@ -1,6 +1,6 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.form.ValidationTextBox
 import typings.dojo.dojoStrings.autoComplete
 import typings.dojo.dojoStrings.autoWidth
@@ -37,10 +37,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified, replace srcNodeRef with my generated DOM tree.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._SearchMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._FocusMixin because Already inherited
-- typings.dojo.dijit.form._AutoCompleterMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._HasDropDown because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.form.SearchMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.FocusMixin because Already inherited
+- typings.dojo.dijit.form.AutoCompleterMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.HasDropDown because Inheritance from two classes. Inlined 
 - typings.dojo.dijit.form.ComboBoxMixin because Inheritance from two classes. Inlined autoComplete, autoWidth, dropDown, dropDownPosition, fetchProperties, forceWidth, hasDownArrow, highlightMatch, ignoreCase, item, labelAttr, labelType, maxHeight, pageSize, query, queryExpr, searchAttr, searchDelay, store, buildRendering, closeDropDown, closeDropDown, destroy, doHighlight, dropDownClass, isLoaded, loadAndOpenDropDown, loadDropDown, openDropDown, postCreate, postMixInProperties, reset, toggleDropDown, onSearch */ @JSGlobal("dojox.form.MultiComboBox")
 @js.native
 class MultiComboBox () extends ValidationTextBox {
@@ -420,7 +420,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_autoWidth(
     property: autoWidth,
@@ -430,7 +430,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_delimiter(
     property: delimiter,
@@ -440,7 +440,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dropDown(
     property: dropDown,
@@ -450,7 +450,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dropDownPosition(
     property: dropDownPosition,
@@ -460,7 +460,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fetchProperties(
     property: fetchProperties,
@@ -470,7 +470,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_forceWidth(
     property: forceWidth,
@@ -480,7 +480,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hasDownArrow(
     property: hasDownArrow,
@@ -490,7 +490,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_highlightMatch(
     property: highlightMatch,
@@ -500,7 +500,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_ignoreCase(
     property: ignoreCase,
@@ -510,7 +510,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_item(
     property: item,
@@ -520,7 +520,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelAttr(
     property: labelAttr,
@@ -530,7 +530,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelType(
     property: labelType,
@@ -540,7 +540,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxHeight(
     property: maxHeight,
@@ -550,7 +550,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pageSize(
     property: pageSize,
@@ -560,7 +560,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_query(
     property: query,
@@ -570,7 +570,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_queryExpr(
     property: queryExpr,
@@ -580,7 +580,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchAttr(
     property: searchAttr,
@@ -590,7 +590,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchDelay(
     property: searchDelay,
@@ -600,7 +600,7 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_store(
     property: store,
@@ -610,6 +610,6 @@ class MultiComboBox () extends ValidationTextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

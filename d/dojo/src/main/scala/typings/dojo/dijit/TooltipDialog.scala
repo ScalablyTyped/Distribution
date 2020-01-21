@@ -1,6 +1,6 @@
 package typings.dojo.dijit
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.layout.ContentPane
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.autofocus_
@@ -23,10 +23,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._DialogMixin because Inheritance from two classes. Inlined execute, onCancel, onExecute
-- typings.dojo.dijit.form._FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, reset, setValues, startup, validate, onValidStateChange
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dijit.TooltipDialog")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.DialogMixin because Inheritance from two classes. Inlined execute, onCancel, onExecute
+- typings.dojo.dijit.form.FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, reset, setValues, startup, validate, onValidStateChange
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dijit.TooltipDialog")
 @js.native
 class TooltipDialog () extends ContentPane {
   def this(params: js.Object) = this()
@@ -253,7 +253,7 @@ class TooltipDialog () extends ContentPane {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_autofocus(
     property: autofocus_,
@@ -263,7 +263,7 @@ class TooltipDialog () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -273,7 +273,7 @@ class TooltipDialog () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_state(
     property: state,
@@ -283,7 +283,7 @@ class TooltipDialog () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -293,7 +293,7 @@ class TooltipDialog () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -303,6 +303,6 @@ class TooltipDialog () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

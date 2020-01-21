@@ -10,7 +10,7 @@ trait IpcRendererEvent extends Event {
   /**
     * The IpcRenderer instance that emitted the event originally
     */
-  var sender: IpcRenderer = js.native
+  var sender: IpcRenderer_ = js.native
   /**
     * The webContents.id that sent the message, you can call
     * event.sender.sendTo(event.senderId, ...) to reply to the message, see for more

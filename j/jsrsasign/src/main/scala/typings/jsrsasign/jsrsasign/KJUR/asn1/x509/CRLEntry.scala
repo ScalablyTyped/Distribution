@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.Anon_Sn
+import typings.jsrsasign.AnonSn
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.CRLEntry")
 @js.native
 class CRLEntry () extends ASN1Object {
-  def this(params: Anon_Sn) = this()
+  def this(params: AnonSn) = this()
   /**
     * set DERInteger parameter for serial number of revoked certificate
     * @param intParam DERInteger parameter for certificate serial number

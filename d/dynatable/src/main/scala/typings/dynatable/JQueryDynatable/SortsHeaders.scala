@@ -2,7 +2,7 @@ package typings.dynatable.JQueryDynatable
 
 import typings.dynatable.JQuery
 import typings.std.Element
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -82,7 +82,7 @@ trait SortsHeaders extends js.Object {
     * @param $link The header link
     * @param column The Column object to be sorted
     */
-  def toggleSort(e: Event, $link: JQuery, column: Column): Unit
+  def toggleSort(e: Event_, $link: JQuery, column: Column): Unit
 }
 
 object SortsHeaders {
@@ -101,7 +101,7 @@ object SortsHeaders {
     removeOne: Element => Unit,
     sortedByColumn: (JQuery, Column) => Boolean,
     sortedByColumnValue: Column => Double,
-    toggleSort: (Event, JQuery, Column) => Unit
+    toggleSort: (Event_, JQuery, Column) => Unit
   ): SortsHeaders = {
     val __obj = js.Dynamic.literal(appendArrowDown = js.Any.fromFunction1(appendArrowDown), appendArrowUp = js.Any.fromFunction1(appendArrowUp), attach = js.Any.fromFunction0(attach), attachOne = js.Any.fromFunction1(attachOne), create = js.Any.fromFunction1(create), init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad), removeAll = js.Any.fromFunction0(removeAll), removeAllArrows = js.Any.fromFunction0(removeAllArrows), removeArrow = js.Any.fromFunction1(removeArrow), removeOne = js.Any.fromFunction1(removeOne), sortedByColumn = js.Any.fromFunction2(sortedByColumn), sortedByColumnValue = js.Any.fromFunction1(sortedByColumnValue), toggleSort = js.Any.fromFunction3(toggleSort))
   

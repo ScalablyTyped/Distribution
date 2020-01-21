@@ -5,27 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object utilUtilMod {
-  import typings.tsutils.Anon_Arguments
-  import typings.tsutils.Anon_ModuleReference
-  import typings.tsutils.Anon_ModuleSpecifier
-  import typings.typescript.typescriptMod.CallExpression
-  import typings.typescript.typescriptMod.CommentRange
-  import typings.typescript.typescriptMod.ExportDeclaration
-  import typings.typescript.typescriptMod.ImportDeclaration
-  import typings.typescript.typescriptMod.ImportEqualsDeclaration
-  import typings.typescript.typescriptMod.ImportTypeNode
-  import typings.typescript.typescriptMod.Node
-  import typings.typescript.typescriptMod.SyntaxKind
-  import typings.typescript.typescriptMod.TextRange
-
   type BooleanCompilerOptions = js.Any
-  type ForEachCommentCallback = js.Function2[/* fullText */ String, /* comment */ CommentRange, Unit]
-  type ForEachTokenCallback = js.Function4[
-    /* fullText */ String, 
-    /* kind */ SyntaxKind, 
-    /* range */ TextRange, 
-    /* parent */ Node, 
-    Unit
+  type ForEachCommentCallback = js.Function2[
+    /* fullText */ java.lang.String, 
+    /* comment */ typings.typescript.mod.CommentRange, 
+    scala.Unit
   ]
-  type ImportLike = ImportDeclaration | (ImportEqualsDeclaration with Anon_ModuleReference) | (ExportDeclaration with Anon_ModuleSpecifier) | (CallExpression with Anon_Arguments) | ImportTypeNode
+  type ForEachTokenCallback = js.Function4[
+    /* fullText */ java.lang.String, 
+    /* kind */ typings.typescript.mod.SyntaxKind, 
+    /* range */ typings.typescript.mod.TextRange, 
+    /* parent */ typings.typescript.mod.Node, 
+    scala.Unit
+  ]
+  type ImportLike = typings.typescript.mod.ImportDeclaration | (typings.typescript.mod.ImportEqualsDeclaration with typings.tsutils.AnonModuleReference) | (typings.typescript.mod.ExportDeclaration with typings.tsutils.AnonModuleSpecifier) | (typings.typescript.mod.CallExpression with typings.tsutils.AnonArguments) | typings.typescript.mod.ImportTypeNode
 }

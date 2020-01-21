@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.dayMinusBtnLabel
 import typings.dojo.dojoStrings.dayMinusBtnLabelRef
 import typings.dojo.dojoStrings.dayPattern
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.mobile._DatePickerMixin because Inheritance from two classes. Inlined dayPattern, monthPattern, value, yearPattern, initSlots, reorderSlots, reset, onDaySet, onMonthSet, onYearSet */ @JSGlobal("dojox.mobile.ValuePickerDatePicker")
+- typings.dojo.dojox.mobile.DatePickerMixin because Inheritance from two classes. Inlined dayPattern, monthPattern, value, yearPattern, initSlots, reorderSlots, reset, onDaySet, onMonthSet, onYearSet */ @JSGlobal("dojox.mobile.ValuePickerDatePicker")
 @js.native
 class ValuePickerDatePicker () extends ValuePicker {
   def this(params: js.Object) = this()
@@ -241,7 +241,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dayMinusBtnLabelRef(
     property: dayMinusBtnLabelRef,
@@ -251,7 +251,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dayPattern(
     property: dayPattern,
@@ -261,7 +261,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dayPlusBtnLabel(
     property: dayPlusBtnLabel,
@@ -271,7 +271,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dayPlusBtnLabelRef(
     property: dayPlusBtnLabelRef,
@@ -281,7 +281,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_monthMinusBtnLabel(
     property: monthMinusBtnLabel,
@@ -291,7 +291,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_monthMinusBtnLabelRef(
     property: monthMinusBtnLabelRef,
@@ -301,7 +301,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_monthPattern(
     property: monthPattern,
@@ -311,7 +311,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_monthPlusBtnLabel(
     property: monthPlusBtnLabel,
@@ -321,7 +321,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_monthPlusBtnLabelRef(
     property: monthPlusBtnLabelRef,
@@ -331,7 +331,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_readOnly(
     property: readOnly,
@@ -341,7 +341,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -351,7 +351,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_yearMinusBtnLabel(
     property: yearMinusBtnLabel,
@@ -361,7 +361,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_yearMinusBtnLabelRef(
     property: yearMinusBtnLabelRef,
@@ -371,7 +371,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_yearPattern(
     property: yearPattern,
@@ -381,7 +381,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_yearPlusBtnLabel(
     property: yearPlusBtnLabel,
@@ -391,7 +391,7 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_yearPlusBtnLabelRef(
     property: yearPlusBtnLabelRef,
@@ -401,6 +401,6 @@ class ValuePickerDatePicker () extends ValuePicker {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

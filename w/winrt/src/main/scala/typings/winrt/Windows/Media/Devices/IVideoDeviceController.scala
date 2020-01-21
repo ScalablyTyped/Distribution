@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Media.Devices
 
-import typings.winrt.Anon_Succeeded
+import typings.winrt.AnonSucceeded
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Media.Capture.MediaStreamType
@@ -22,7 +22,7 @@ trait IVideoDeviceController extends IMediaDeviceController {
   var tilt: MediaDeviceControl
   var whiteBalance: MediaDeviceControl
   var zoom: MediaDeviceControl
-  def tryGetPowerlineFrequency(): Anon_Succeeded
+  def tryGetPowerlineFrequency(): AnonSucceeded
   def trySetPowerlineFrequency(value: PowerlineFrequency): Boolean
 }
 
@@ -41,7 +41,7 @@ object IVideoDeviceController {
     roll: MediaDeviceControl,
     setMediaStreamPropertiesAsync: (MediaStreamType, IMediaEncodingProperties) => IAsyncAction,
     tilt: MediaDeviceControl,
-    tryGetPowerlineFrequency: () => Anon_Succeeded,
+    tryGetPowerlineFrequency: () => AnonSucceeded,
     trySetPowerlineFrequency: PowerlineFrequency => Boolean,
     whiteBalance: MediaDeviceControl,
     zoom: MediaDeviceControl

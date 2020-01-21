@@ -3,7 +3,7 @@ package typings.ol
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.featureMod.FeatureLike
+import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
 import typings.std.HTMLElement
@@ -21,8 +21,8 @@ object rendererLayerMod extends js.Object {
     extends typings.ol.observableMod.default {
     /* protected */ def createLoadedTileFinder(
       source: typings.ol.sourceTileMod.default,
-      projection: typings.ol.projProjectionMod.default,
-      tiles: NumberDictionary[StringDictionary[typings.ol.tileMod.default]]
+      projection: typings.ol.projectionMod.default,
+      tiles: NumberDictionary[StringDictionary[typings.ol.olTileMod.default]]
     ): js.Function2[/* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean] = js.native
     def forEachFeatureAtCoordinate[T](
       coordinate: Coordinate,
@@ -36,14 +36,14 @@ object rendererLayerMod extends js.Object {
       declutteredFeatures: js.Array[FeatureLike]
     ): T | Unit = js.native
     def getDataAtPixel(pixel: Pixel, frameState: FrameState, hitTolerance: Double): Uint8ClampedArray | Uint8Array = js.native
-    def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]] = js.native
+    def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]] = js.native
     def getLayer(): LayerType = js.native
     def handleFontsChanged(): Unit = js.native
     /* protected */ def loadImage(image: typings.ol.imageBaseMod.default): Boolean = js.native
     def loadedTileCallback(
-      tiles: NumberDictionary[StringDictionary[typings.ol.tileMod.default]],
+      tiles: NumberDictionary[StringDictionary[typings.ol.olTileMod.default]],
       zoom: Double,
-      tile: typings.ol.tileMod.default
+      tile: typings.ol.olTileMod.default
     ): Unit = js.native
     def prepareFrame(frameState: FrameState): Boolean = js.native
     def renderFrame(frameState: FrameState, target: HTMLElement): HTMLElement = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "truncate-middle"
-version := "1.0-dt-20200103Z-fb7d6b"
+version := "1.0-dt-20200103Z-fa13a1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

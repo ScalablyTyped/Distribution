@@ -38,10 +38,15 @@ object lookup extends js.Object {
       Unit
     ]
   ): Unit = js.native
-  def __promisify__(hostname: String): js.Promise[LookupAddress] = js.native
-  def __promisify__(hostname: String, options: Double): js.Promise[LookupAddress] = js.native
-  def __promisify__(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = js.native
-  def __promisify__(hostname: String, options: LookupOneOptions): js.Promise[LookupAddress] = js.native
-  def __promisify__(hostname: String, options: LookupOptions): js.Promise[LookupAddress | js.Array[LookupAddress]] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String): js.Promise[LookupAddress] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String, options: Double): js.Promise[LookupAddress] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String, options: LookupAllOptions): js.Promise[js.Array[LookupAddress]] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String, options: LookupOneOptions): js.Promise[LookupAddress] = js.native
+  @JSName("__promisify__")
+  def promisify(hostname: String, options: LookupOptions): js.Promise[LookupAddress | js.Array[LookupAddress]] = js.native
 }
 

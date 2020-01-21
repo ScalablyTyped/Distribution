@@ -6,7 +6,7 @@ import typings.bootbox.bootboxStrings.lg
 import typings.bootbox.bootboxStrings.sm
 import typings.bootbox.bootboxStrings.small
 import typings.bootbox.bootboxStrings.xl
-import typings.jquery.JQuery
+import typings.jquery.JQuery_
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
@@ -18,14 +18,14 @@ import scala.scalajs.js.annotation._
 /** Bootbox options available for custom modals */
 trait BootboxDialogOptions[T] extends BootboxBaseOptions[T] {
   var centerVertical: js.UndefOr[Boolean] = js.undefined
-  var message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+  var message: JQuery_[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery_[HTMLElement]])
   var swapButtonOrder: js.UndefOr[Boolean] = js.undefined
 }
 
 object BootboxDialogOptions {
   @scala.inline
   def apply[T](
-    message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]]),
+    message: JQuery_[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery_[HTMLElement]]),
     animate: js.UndefOr[Boolean] = js.undefined,
     backdrop: js.UndefOr[Boolean] = js.undefined,
     buttons: BootboxButtonMap = null,

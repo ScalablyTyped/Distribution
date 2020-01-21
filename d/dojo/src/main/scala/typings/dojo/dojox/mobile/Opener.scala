@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.`lazy`
 import typings.dojo.dojoStrings.requires
 import typings.std.HTMLElement
@@ -74,7 +74,7 @@ class Opener () extends Tooltip {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_requires(
     property: requires,
@@ -84,6 +84,6 @@ class Opener () extends Tooltip {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

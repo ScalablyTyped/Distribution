@@ -328,7 +328,8 @@ object Arcade extends js.Object {
   /**
     * Arcade Physics Group containing Dynamic Bodies.
     */
-  var GROUP: Double = js.native
+  @JSName("GROUP")
+  var GROUP_ : Double = js.native
   /**
     * Static Body.
     */

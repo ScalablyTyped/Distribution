@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "setasap"
-version := "2.0-dt-20181107Z-1a3a0e"
+version := "2.0-dt-20181107Z-9d3afd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

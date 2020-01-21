@@ -1,6 +1,6 @@
 package typings.dojo.dijit
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.layout.ContentPane
 import typings.dojo.dojoStrings.active
 import typings.dojo.dojoStrings.attachScope
@@ -35,11 +35,11 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._CssStateMixin because Inheritance from two classes. Inlined active, cssStateNodes, hovering
-- typings.dojo.dijit._DialogMixin because Inheritance from two classes. Inlined execute, onCancel, onExecute
-- typings.dojo.dijit.form._FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, reset, setValues, startup, validate, onValidStateChange
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dijit.Dialog")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.CssStateMixin because Inheritance from two classes. Inlined active, cssStateNodes, hovering
+- typings.dojo.dijit.DialogMixin because Inheritance from two classes. Inlined execute, onCancel, onExecute
+- typings.dojo.dijit.form.FormMixin because Inheritance from two classes. Inlined state, connectChildren, destroy, disconnectChildren, getValues, reset, setValues, startup, validate, onValidStateChange
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dijit.Dialog")
 @js.native
 class Dialog_ () extends ContentPane {
   def this(params: js.Object) = this()
@@ -342,7 +342,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_attachScope(
     property: attachScope,
@@ -352,7 +352,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_autofocus(
     property: autofocus_,
@@ -362,7 +362,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_closable(
     property: closable,
@@ -372,7 +372,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cssStateNodes(
     property: cssStateNodes,
@@ -382,7 +382,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_draggable(
     property: draggable,
@@ -392,7 +392,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_duration(
     property: duration,
@@ -402,7 +402,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hovering(
     property: hovering,
@@ -412,7 +412,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxRatio(
     property: maxRatio,
@@ -422,7 +422,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_open(
     property: open,
@@ -432,7 +432,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_refocus(
     property: refocus,
@@ -442,7 +442,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -452,7 +452,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_state(
     property: state,
@@ -462,7 +462,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -472,7 +472,7 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -482,6 +482,6 @@ class Dialog_ () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

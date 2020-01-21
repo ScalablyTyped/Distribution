@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object treeMod {
-  type Tree = Tree_
+  type Tree = typings.nodegit.treeMod.Tree_
 }

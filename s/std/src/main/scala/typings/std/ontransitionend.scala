@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ontransitionend")
 @js.native
 object ontransitionend
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ TransitionEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ TransitionEvent, js.Any]) | Null]
 

@@ -11,7 +11,7 @@ trait Navigator extends js.Object {
   var compass: Compass
   var connection: Connection
   var contacts: Contacts
-  var device: Device
+  var device: Device_
   var globalization: Globalization
   var notification: PhonegapNotification
   var splashscreen: Splashscreen
@@ -26,7 +26,7 @@ object Navigator {
     compass: Compass,
     connection: Connection,
     contacts: Contacts,
-    device: Device,
+    device: Device_,
     globalization: Globalization,
     notification: PhonegapNotification,
     splashscreen: Splashscreen

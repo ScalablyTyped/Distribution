@@ -91,7 +91,7 @@ trait ToastrOptions extends js.Object {
   /**
   	 * If specified, you must provide all classes.
   	 */
-  var iconClasses: js.UndefOr[Anon_Error] = js.undefined
+  var iconClasses: js.UndefOr[AnonError] = js.undefined
   /**
   	 * CSS class the message element will be given.
   	 * @default toast-message
@@ -215,7 +215,7 @@ object ToastrOptions {
     hideEasing: String = null,
     hideMethod: String = null,
     iconClass: String = null,
-    iconClasses: Anon_Error = null,
+    iconClasses: AnonError = null,
     messageClass: String = null,
     newestOnTop: js.UndefOr[Boolean] = js.undefined,
     onCloseClick: /* ev */ JQueryMouseEventObject => Unit = null,

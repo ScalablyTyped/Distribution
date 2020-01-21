@@ -1,7 +1,7 @@
 package typings.yadda.libMod
 
-import typings.yadda.libContextMod.Properties
-import typings.yadda.libYaddaMod.^
+import typings.yadda.contextMod.Properties
+import typings.yadda.yaddaMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object createInstance extends js.Object {
   def apply(): ^ = js.native
-  def apply(libraries: js.Array[typings.yadda.libLocalisationLanguageMod.Library]): ^ = js.native
-  def apply(libraries: js.Array[typings.yadda.libLocalisationLanguageMod.Library], context: Properties): ^ = js.native
-  def apply(libraries: typings.yadda.libLocalisationLanguageMod.Library): ^ = js.native
-  def apply(libraries: typings.yadda.libLocalisationLanguageMod.Library, context: Properties): ^ = js.native
+  def apply(libraries: js.Array[typings.yadda.languageMod.Library]): ^ = js.native
+  def apply(libraries: js.Array[typings.yadda.languageMod.Library], context: Properties): ^ = js.native
+  def apply(libraries: typings.yadda.languageMod.Library): ^ = js.native
+  def apply(libraries: typings.yadda.languageMod.Library, context: Properties): ^ = js.native
 }
 

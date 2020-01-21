@@ -39,14 +39,14 @@ trait Stack[T] extends Indexed[T] {
     * not filtering out any values.
     */
   @JSName("filter")
-  def filter_F_T_Set[F /* <: T */](
+  def filter_F_T_Set_[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean]
-  ): Set[F] = js.native
+  ): Set_[F] = js.native
   @JSName("filter")
-  def filter_F_T_Set[F /* <: T */](
+  def filter_F_T_Set_[F /* <: T */](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* iter */ this.type, /* is F */ Boolean],
     context: js.Any
-  ): Set[F] = js.native
+  ): Set_[F] = js.native
   // Reading values
   /**
     * Alias for `Stack.first()`.

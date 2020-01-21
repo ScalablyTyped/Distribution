@@ -1,872 +1,872 @@
 package typings.figlet
 
-import typings.figlet.figletMod.Fonts
-import typings.figlet.figletMod.KerningMethods
+import typings.figlet.mod.Fonts_
+import typings.figlet.mod.KerningMethods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object figletStrings {
   @js.native
-  sealed trait `1Row` extends Fonts
+  sealed trait `1Row` extends Fonts_
   
   @js.native
-  sealed trait `3-D` extends Fonts
+  sealed trait `3-D` extends Fonts_
   
   @js.native
-  sealed trait `3D Diagonal` extends Fonts
+  sealed trait `3D Diagonal` extends Fonts_
   
   @js.native
-  sealed trait `3D-ASCII` extends Fonts
+  sealed trait `3D-ASCII` extends Fonts_
   
   @js.native
-  sealed trait `3x5` extends Fonts
+  sealed trait `3x5` extends Fonts_
   
   @js.native
-  sealed trait `4Max` extends Fonts
+  sealed trait `4Max` extends Fonts_
   
   @js.native
-  sealed trait `5 Line Oblique` extends Fonts
+  sealed trait `5 Line Oblique` extends Fonts_
   
   @js.native
-  sealed trait `AMC 3 Line` extends Fonts
+  sealed trait `AMC 3 Line` extends Fonts_
   
   @js.native
-  sealed trait `AMC 3 Liv1` extends Fonts
+  sealed trait `AMC 3 Liv1` extends Fonts_
   
   @js.native
-  sealed trait `AMC AAA01` extends Fonts
+  sealed trait `AMC AAA01` extends Fonts_
   
   @js.native
-  sealed trait `AMC Neko` extends Fonts
+  sealed trait `AMC Neko` extends Fonts_
   
   @js.native
-  sealed trait `AMC Razor` extends Fonts
+  sealed trait `AMC Razor` extends Fonts_
   
   @js.native
-  sealed trait `AMC Razor2` extends Fonts
+  sealed trait `AMC Razor2` extends Fonts_
   
   @js.native
-  sealed trait `AMC Slash` extends Fonts
+  sealed trait `AMC Slash` extends Fonts_
   
   @js.native
-  sealed trait `AMC Slider` extends Fonts
+  sealed trait `AMC Slider` extends Fonts_
   
   @js.native
-  sealed trait `AMC Thin` extends Fonts
+  sealed trait `AMC Thin` extends Fonts_
   
   @js.native
-  sealed trait `AMC Tubes` extends Fonts
+  sealed trait `AMC Tubes` extends Fonts_
   
   @js.native
-  sealed trait `AMC Untitled` extends Fonts
+  sealed trait `AMC Untitled` extends Fonts_
   
   @js.native
-  sealed trait `ANSI Shadow` extends Fonts
+  sealed trait `ANSI Shadow` extends Fonts_
   
   @js.native
-  sealed trait `ASCII New Roman` extends Fonts
+  sealed trait `ASCII New Roman` extends Fonts_
   
   @js.native
-  sealed trait Acrobatic extends Fonts
+  sealed trait Acrobatic extends Fonts_
   
   @js.native
-  sealed trait Alligator extends Fonts
+  sealed trait Alligator extends Fonts_
   
   @js.native
-  sealed trait Alligator2 extends Fonts
+  sealed trait Alligator2 extends Fonts_
   
   @js.native
-  sealed trait Alpha extends Fonts
+  sealed trait Alpha extends Fonts_
   
   @js.native
-  sealed trait Alphabet extends Fonts
+  sealed trait Alphabet extends Fonts_
   
   @js.native
-  sealed trait Arrows extends Fonts
+  sealed trait Arrows extends Fonts_
   
   @js.native
-  sealed trait Avatar extends Fonts
+  sealed trait Avatar extends Fonts_
   
   @js.native
-  sealed trait B1FF extends Fonts
+  sealed trait B1FF extends Fonts_
   
   @js.native
-  sealed trait Banner extends Fonts
+  sealed trait Banner extends Fonts_
   
   @js.native
-  sealed trait Banner3 extends Fonts
+  sealed trait Banner3 extends Fonts_
   
   @js.native
-  sealed trait `Banner3-D` extends Fonts
+  sealed trait `Banner3-D` extends Fonts_
   
   @js.native
-  sealed trait Banner4 extends Fonts
+  sealed trait Banner4 extends Fonts_
   
   @js.native
-  sealed trait Barbwire extends Fonts
+  sealed trait Barbwire extends Fonts_
   
   @js.native
-  sealed trait Basic extends Fonts
+  sealed trait Basic extends Fonts_
   
   @js.native
-  sealed trait Bear extends Fonts
+  sealed trait Bear extends Fonts_
   
   @js.native
-  sealed trait Bell extends Fonts
+  sealed trait Bell extends Fonts_
   
   @js.native
-  sealed trait Benjamin extends Fonts
+  sealed trait Benjamin extends Fonts_
   
   @js.native
-  sealed trait Big extends Fonts
+  sealed trait Big extends Fonts_
   
   @js.native
-  sealed trait `Big Chief` extends Fonts
+  sealed trait `Big Chief` extends Fonts_
   
   @js.native
-  sealed trait `Big Money-ne` extends Fonts
+  sealed trait `Big Money-ne` extends Fonts_
   
   @js.native
-  sealed trait `Big Money-nw` extends Fonts
+  sealed trait `Big Money-nw` extends Fonts_
   
   @js.native
-  sealed trait `Big Money-se` extends Fonts
+  sealed trait `Big Money-se` extends Fonts_
   
   @js.native
-  sealed trait `Big Money-sw` extends Fonts
+  sealed trait `Big Money-sw` extends Fonts_
   
   @js.native
-  sealed trait Bigfig extends Fonts
+  sealed trait Bigfig extends Fonts_
   
   @js.native
-  sealed trait Binary extends Fonts
+  sealed trait Binary extends Fonts_
   
   @js.native
-  sealed trait Block extends Fonts
+  sealed trait Block extends Fonts_
   
   @js.native
-  sealed trait Blocks extends Fonts
+  sealed trait Blocks extends Fonts_
   
   @js.native
-  sealed trait Bloody extends Fonts
+  sealed trait Bloody extends Fonts_
   
   @js.native
-  sealed trait Bolger extends Fonts
+  sealed trait Bolger extends Fonts_
   
   @js.native
-  sealed trait Braced extends Fonts
+  sealed trait Braced extends Fonts_
   
   @js.native
-  sealed trait Bright extends Fonts
+  sealed trait Bright extends Fonts_
   
   @js.native
-  sealed trait Broadway extends Fonts
+  sealed trait Broadway extends Fonts_
   
   @js.native
-  sealed trait `Broadway KB` extends Fonts
+  sealed trait `Broadway KB` extends Fonts_
   
   @js.native
-  sealed trait Bubble extends Fonts
+  sealed trait Bubble extends Fonts_
   
   @js.native
-  sealed trait Bulbhead extends Fonts
+  sealed trait Bulbhead extends Fonts_
   
   @js.native
-  sealed trait Caligraphy extends Fonts
+  sealed trait Caligraphy extends Fonts_
   
   @js.native
-  sealed trait Caligraphy2 extends Fonts
+  sealed trait Caligraphy2 extends Fonts_
   
   @js.native
-  sealed trait `Calvin S` extends Fonts
+  sealed trait `Calvin S` extends Fonts_
   
   @js.native
-  sealed trait Cards extends Fonts
+  sealed trait Cards extends Fonts_
   
   @js.native
-  sealed trait Catwalk extends Fonts
+  sealed trait Catwalk extends Fonts_
   
   @js.native
-  sealed trait Chiseled extends Fonts
+  sealed trait Chiseled extends Fonts_
   
   @js.native
-  sealed trait Chunky extends Fonts
+  sealed trait Chunky extends Fonts_
   
   @js.native
-  sealed trait Coinstak extends Fonts
+  sealed trait Coinstak extends Fonts_
   
   @js.native
-  sealed trait Cola extends Fonts
+  sealed trait Cola extends Fonts_
   
   @js.native
-  sealed trait Colossal extends Fonts
+  sealed trait Colossal extends Fonts_
   
   @js.native
-  sealed trait Computer extends Fonts
+  sealed trait Computer extends Fonts_
   
   @js.native
-  sealed trait Contessa extends Fonts
+  sealed trait Contessa extends Fonts_
   
   @js.native
-  sealed trait Contrast extends Fonts
+  sealed trait Contrast extends Fonts_
   
   @js.native
-  sealed trait Cosmike extends Fonts
+  sealed trait Cosmike extends Fonts_
   
   @js.native
-  sealed trait Crawford extends Fonts
+  sealed trait Crawford extends Fonts_
   
   @js.native
-  sealed trait Crawford2 extends Fonts
+  sealed trait Crawford2 extends Fonts_
   
   @js.native
-  sealed trait Crazy extends Fonts
+  sealed trait Crazy extends Fonts_
   
   @js.native
-  sealed trait Cricket extends Fonts
+  sealed trait Cricket extends Fonts_
   
   @js.native
-  sealed trait Cursive extends Fonts
+  sealed trait Cursive extends Fonts_
   
   @js.native
-  sealed trait Cyberlarge extends Fonts
+  sealed trait Cyberlarge extends Fonts_
   
   @js.native
-  sealed trait Cybermedium extends Fonts
+  sealed trait Cybermedium extends Fonts_
   
   @js.native
-  sealed trait Cybersmall extends Fonts
+  sealed trait Cybersmall extends Fonts_
   
   @js.native
-  sealed trait Cygnet extends Fonts
+  sealed trait Cygnet extends Fonts_
   
   @js.native
-  sealed trait DANC4 extends Fonts
+  sealed trait DANC4 extends Fonts_
   
   @js.native
-  sealed trait `DOS Rebel` extends Fonts
+  sealed trait `DOS Rebel` extends Fonts_
   
   @js.native
-  sealed trait DWhistled extends Fonts
+  sealed trait DWhistled extends Fonts_
   
   @js.native
-  sealed trait `Dancing Font` extends Fonts
+  sealed trait `Dancing Font` extends Fonts_
   
   @js.native
-  sealed trait Decimal extends Fonts
+  sealed trait Decimal extends Fonts_
   
   @js.native
-  sealed trait `Def Leppard` extends Fonts
+  sealed trait `Def Leppard` extends Fonts_
   
   @js.native
-  sealed trait `Delta Corps Priest 1` extends Fonts
+  sealed trait `Delta Corps Priest 1` extends Fonts_
   
   @js.native
-  sealed trait Diamond extends Fonts
+  sealed trait Diamond extends Fonts_
   
   @js.native
-  sealed trait `Diet Cola` extends Fonts
+  sealed trait `Diet Cola` extends Fonts_
   
   @js.native
-  sealed trait Digital extends Fonts
+  sealed trait Digital extends Fonts_
   
   @js.native
-  sealed trait Doh extends Fonts
+  sealed trait Doh extends Fonts_
   
   @js.native
-  sealed trait Doom extends Fonts
+  sealed trait Doom extends Fonts_
   
   @js.native
-  sealed trait `Dot Matrix` extends Fonts
+  sealed trait `Dot Matrix` extends Fonts_
   
   @js.native
-  sealed trait Double extends Fonts
+  sealed trait Double extends Fonts_
   
   @js.native
-  sealed trait `Double Shorts` extends Fonts
+  sealed trait `Double Shorts` extends Fonts_
   
   @js.native
-  sealed trait `Dr Pepper` extends Fonts
+  sealed trait `Dr Pepper` extends Fonts_
   
   @js.native
-  sealed trait `Efti Chess` extends Fonts
+  sealed trait `Efti Chess` extends Fonts_
   
   @js.native
-  sealed trait `Efti Font` extends Fonts
+  sealed trait `Efti Font` extends Fonts_
   
   @js.native
-  sealed trait `Efti Italic` extends Fonts
+  sealed trait `Efti Italic` extends Fonts_
   
   @js.native
-  sealed trait `Efti Piti` extends Fonts
+  sealed trait `Efti Piti` extends Fonts_
   
   @js.native
-  sealed trait `Efti Robot` extends Fonts
+  sealed trait `Efti Robot` extends Fonts_
   
   @js.native
-  sealed trait `Efti Wall` extends Fonts
+  sealed trait `Efti Wall` extends Fonts_
   
   @js.native
-  sealed trait `Efti Water` extends Fonts
+  sealed trait `Efti Water` extends Fonts_
   
   @js.native
-  sealed trait Electronic extends Fonts
+  sealed trait Electronic extends Fonts_
   
   @js.native
-  sealed trait Elite extends Fonts
+  sealed trait Elite extends Fonts_
   
   @js.native
-  sealed trait Epic extends Fonts
+  sealed trait Epic extends Fonts_
   
   @js.native
-  sealed trait Fender extends Fonts
+  sealed trait Fender extends Fonts_
   
   @js.native
-  sealed trait Filter extends Fonts
+  sealed trait Filter extends Fonts_
   
   @js.native
-  sealed trait `Fire Font-k` extends Fonts
+  sealed trait `Fire Font-k` extends Fonts_
   
   @js.native
-  sealed trait `Fire Font-s` extends Fonts
+  sealed trait `Fire Font-s` extends Fonts_
   
   @js.native
-  sealed trait Flipped extends Fonts
+  sealed trait Flipped extends Fonts_
   
   @js.native
-  sealed trait `Flower Power` extends Fonts
+  sealed trait `Flower Power` extends Fonts_
   
   @js.native
-  sealed trait `Four Tops` extends Fonts
+  sealed trait `Four Tops` extends Fonts_
   
   @js.native
-  sealed trait Fraktur extends Fonts
+  sealed trait Fraktur extends Fonts_
   
   @js.native
-  sealed trait `Fun Face` extends Fonts
+  sealed trait `Fun Face` extends Fonts_
   
   @js.native
-  sealed trait `Fun Faces` extends Fonts
+  sealed trait `Fun Faces` extends Fonts_
   
   @js.native
-  sealed trait Fuzzy extends Fonts
+  sealed trait Fuzzy extends Fonts_
   
   @js.native
-  sealed trait Georgi16 extends Fonts
+  sealed trait Georgi16 extends Fonts_
   
   @js.native
-  sealed trait Georgia11 extends Fonts
+  sealed trait Georgia11 extends Fonts_
   
   @js.native
-  sealed trait Ghost extends Fonts
+  sealed trait Ghost extends Fonts_
   
   @js.native
-  sealed trait Ghoulish extends Fonts
+  sealed trait Ghoulish extends Fonts_
   
   @js.native
-  sealed trait Glenyn extends Fonts
+  sealed trait Glenyn extends Fonts_
   
   @js.native
-  sealed trait Goofy extends Fonts
+  sealed trait Goofy extends Fonts_
   
   @js.native
-  sealed trait Gothic extends Fonts
+  sealed trait Gothic extends Fonts_
   
   @js.native
-  sealed trait Graceful extends Fonts
+  sealed trait Graceful extends Fonts_
   
   @js.native
-  sealed trait Gradient extends Fonts
+  sealed trait Gradient extends Fonts_
   
   @js.native
-  sealed trait Graffiti extends Fonts
+  sealed trait Graffiti extends Fonts_
   
   @js.native
-  sealed trait Greek extends Fonts
+  sealed trait Greek extends Fonts_
   
   @js.native
-  sealed trait `Heart Left` extends Fonts
+  sealed trait `Heart Left` extends Fonts_
   
   @js.native
-  sealed trait `Heart Right` extends Fonts
+  sealed trait `Heart Right` extends Fonts_
   
   @js.native
-  sealed trait `Henry 3D` extends Fonts
+  sealed trait `Henry 3D` extends Fonts_
   
   @js.native
-  sealed trait Hex extends Fonts
+  sealed trait Hex extends Fonts_
   
   @js.native
-  sealed trait Hieroglyphs extends Fonts
+  sealed trait Hieroglyphs extends Fonts_
   
   @js.native
-  sealed trait Hollywood extends Fonts
+  sealed trait Hollywood extends Fonts_
   
   @js.native
-  sealed trait `Horizontal Left` extends Fonts
+  sealed trait `Horizontal Left` extends Fonts_
   
   @js.native
-  sealed trait `Horizontal Right` extends Fonts
+  sealed trait `Horizontal Right` extends Fonts_
   
   @js.native
-  sealed trait `ICL-1900` extends Fonts
+  sealed trait `ICL-1900` extends Fonts_
   
   @js.native
-  sealed trait Impossible extends Fonts
+  sealed trait Impossible extends Fonts_
   
   @js.native
-  sealed trait Invita extends Fonts
+  sealed trait Invita extends Fonts_
   
   @js.native
-  sealed trait Isometric1 extends Fonts
+  sealed trait Isometric1 extends Fonts_
   
   @js.native
-  sealed trait Isometric2 extends Fonts
+  sealed trait Isometric2 extends Fonts_
   
   @js.native
-  sealed trait Isometric3 extends Fonts
+  sealed trait Isometric3 extends Fonts_
   
   @js.native
-  sealed trait Isometric4 extends Fonts
+  sealed trait Isometric4 extends Fonts_
   
   @js.native
-  sealed trait Italic extends Fonts
+  sealed trait Italic extends Fonts_
   
   @js.native
-  sealed trait Ivrit extends Fonts
+  sealed trait Ivrit extends Fonts_
   
   @js.native
-  sealed trait `JS Block Letters` extends Fonts
+  sealed trait `JS Block Letters` extends Fonts_
   
   @js.native
-  sealed trait `JS Bracket Letters` extends Fonts
+  sealed trait `JS Bracket Letters` extends Fonts_
   
   @js.native
-  sealed trait `JS Capital Curves` extends Fonts
+  sealed trait `JS Capital Curves` extends Fonts_
   
   @js.native
-  sealed trait `JS Cursive` extends Fonts
+  sealed trait `JS Cursive` extends Fonts_
   
   @js.native
-  sealed trait `JS Stick Letters` extends Fonts
+  sealed trait `JS Stick Letters` extends Fonts_
   
   @js.native
-  sealed trait Jacky extends Fonts
+  sealed trait Jacky extends Fonts_
   
   @js.native
-  sealed trait Jazmine extends Fonts
+  sealed trait Jazmine extends Fonts_
   
   @js.native
-  sealed trait Jerusalem extends Fonts
+  sealed trait Jerusalem extends Fonts_
   
   @js.native
-  sealed trait Katakana extends Fonts
+  sealed trait Katakana extends Fonts_
   
   @js.native
-  sealed trait Kban extends Fonts
+  sealed trait Kban extends Fonts_
   
   @js.native
-  sealed trait Keyboard extends Fonts
+  sealed trait Keyboard extends Fonts_
   
   @js.native
-  sealed trait Knob extends Fonts
+  sealed trait Knob extends Fonts_
   
   @js.native
-  sealed trait Konto extends Fonts
+  sealed trait Konto extends Fonts_
   
   @js.native
-  sealed trait `Konto Slant` extends Fonts
+  sealed trait `Konto Slant` extends Fonts_
   
   @js.native
-  sealed trait LCD extends Fonts
+  sealed trait LCD extends Fonts_
   
   @js.native
-  sealed trait `Larry 3D` extends Fonts
+  sealed trait `Larry 3D` extends Fonts_
   
   @js.native
-  sealed trait `Larry 3D 2` extends Fonts
+  sealed trait `Larry 3D 2` extends Fonts_
   
   @js.native
-  sealed trait Lean extends Fonts
+  sealed trait Lean extends Fonts_
   
   @js.native
-  sealed trait Letters extends Fonts
+  sealed trait Letters extends Fonts_
   
   @js.native
-  sealed trait `Lil Devil` extends Fonts
+  sealed trait `Lil Devil` extends Fonts_
   
   @js.native
-  sealed trait `Line Blocks` extends Fonts
+  sealed trait `Line Blocks` extends Fonts_
   
   @js.native
-  sealed trait Linux extends Fonts
+  sealed trait Linux extends Fonts_
   
   @js.native
-  sealed trait Lockergnome extends Fonts
+  sealed trait Lockergnome extends Fonts_
   
   @js.native
-  sealed trait Madrid extends Fonts
+  sealed trait Madrid extends Fonts_
   
   @js.native
-  sealed trait Marquee extends Fonts
+  sealed trait Marquee extends Fonts_
   
   @js.native
-  sealed trait Maxfour extends Fonts
+  sealed trait Maxfour extends Fonts_
   
   @js.native
-  sealed trait Merlin1 extends Fonts
+  sealed trait Merlin1 extends Fonts_
   
   @js.native
-  sealed trait Merlin2 extends Fonts
+  sealed trait Merlin2 extends Fonts_
   
   @js.native
-  sealed trait Mike extends Fonts
+  sealed trait Mike extends Fonts_
   
   @js.native
-  sealed trait Mini extends Fonts
+  sealed trait Mini extends Fonts_
   
   @js.native
-  sealed trait Mirror extends Fonts
+  sealed trait Mirror extends Fonts_
   
   @js.native
-  sealed trait Mnemonic extends Fonts
+  sealed trait Mnemonic extends Fonts_
   
   @js.native
-  sealed trait Modular extends Fonts
+  sealed trait Modular extends Fonts_
   
   @js.native
-  sealed trait Morse extends Fonts
+  sealed trait Morse extends Fonts_
   
   @js.native
-  sealed trait Morse2 extends Fonts
+  sealed trait Morse2 extends Fonts_
   
   @js.native
-  sealed trait Moscow extends Fonts
+  sealed trait Moscow extends Fonts_
   
   @js.native
-  sealed trait Mshebrew210 extends Fonts
+  sealed trait Mshebrew210 extends Fonts_
   
   @js.native
-  sealed trait Muzzle extends Fonts
+  sealed trait Muzzle extends Fonts_
   
   @js.native
-  sealed trait NScript extends Fonts
+  sealed trait NScript extends Fonts_
   
   @js.native
-  sealed trait `NT Greek` extends Fonts
+  sealed trait `NT Greek` extends Fonts_
   
   @js.native
-  sealed trait `NV Script` extends Fonts
+  sealed trait `NV Script` extends Fonts_
   
   @js.native
-  sealed trait Nancyj extends Fonts
+  sealed trait Nancyj extends Fonts_
   
   @js.native
-  sealed trait `Nancyj-Fancy` extends Fonts
+  sealed trait `Nancyj-Fancy` extends Fonts_
   
   @js.native
-  sealed trait `Nancyj-Improved` extends Fonts
+  sealed trait `Nancyj-Improved` extends Fonts_
   
   @js.native
-  sealed trait `Nancyj-Underlined` extends Fonts
+  sealed trait `Nancyj-Underlined` extends Fonts_
   
   @js.native
-  sealed trait Nipples extends Fonts
+  sealed trait Nipples extends Fonts_
   
   @js.native
-  sealed trait O8 extends Fonts
+  sealed trait O8 extends Fonts_
   
   @js.native
-  sealed trait OS2 extends Fonts
+  sealed trait OS2 extends Fonts_
   
   @js.native
-  sealed trait Octal extends Fonts
+  sealed trait Octal extends Fonts_
   
   @js.native
-  sealed trait Ogre extends Fonts
+  sealed trait Ogre extends Fonts_
   
   @js.native
-  sealed trait `Old Banner` extends Fonts
+  sealed trait `Old Banner` extends Fonts_
   
   @js.native
-  sealed trait `Patorjk-HeX` extends Fonts
+  sealed trait `Patorjk-HeX` extends Fonts_
   
   @js.native
-  sealed trait `PatorjkApostrophes Cheese` extends Fonts
+  sealed trait `PatorjkApostrophes Cheese` extends Fonts_
   
   @js.native
-  sealed trait Pawp extends Fonts
+  sealed trait Pawp extends Fonts_
   
   @js.native
-  sealed trait Peaks extends Fonts
+  sealed trait Peaks extends Fonts_
   
   @js.native
-  sealed trait `Peaks Slant` extends Fonts
+  sealed trait `Peaks Slant` extends Fonts_
   
   @js.native
-  sealed trait Pebbles extends Fonts
+  sealed trait Pebbles extends Fonts_
   
   @js.native
-  sealed trait Pepper extends Fonts
+  sealed trait Pepper extends Fonts_
   
   @js.native
-  sealed trait Poison extends Fonts
+  sealed trait Poison extends Fonts_
   
   @js.native
-  sealed trait Puffy extends Fonts
+  sealed trait Puffy extends Fonts_
   
   @js.native
-  sealed trait Puzzle extends Fonts
+  sealed trait Puzzle extends Fonts_
   
   @js.native
-  sealed trait Pyramid extends Fonts
+  sealed trait Pyramid extends Fonts_
   
   @js.native
-  sealed trait Rammstein extends Fonts
+  sealed trait Rammstein extends Fonts_
   
   @js.native
-  sealed trait Rectangles extends Fonts
+  sealed trait Rectangles extends Fonts_
   
   @js.native
-  sealed trait `Red Phoenix` extends Fonts
+  sealed trait `Red Phoenix` extends Fonts_
   
   @js.native
-  sealed trait Relief extends Fonts
+  sealed trait Relief extends Fonts_
   
   @js.native
-  sealed trait Relief2 extends Fonts
+  sealed trait Relief2 extends Fonts_
   
   @js.native
-  sealed trait Reverse extends Fonts
+  sealed trait Reverse extends Fonts_
   
   @js.native
-  sealed trait Roman extends Fonts
+  sealed trait Roman extends Fonts_
   
   @js.native
-  sealed trait Rot13 extends Fonts
+  sealed trait Rot13 extends Fonts_
   
   @js.native
-  sealed trait Rotated extends Fonts
+  sealed trait Rotated extends Fonts_
   
   @js.native
-  sealed trait Rounded extends Fonts
+  sealed trait Rounded extends Fonts_
   
   @js.native
-  sealed trait `Rowan Cap` extends Fonts
+  sealed trait `Rowan Cap` extends Fonts_
   
   @js.native
-  sealed trait Rozzo extends Fonts
+  sealed trait Rozzo extends Fonts_
   
   @js.native
-  sealed trait Runic extends Fonts
+  sealed trait Runic extends Fonts_
   
   @js.native
-  sealed trait Runyc extends Fonts
+  sealed trait Runyc extends Fonts_
   
   @js.native
-  sealed trait `S Blood` extends Fonts
+  sealed trait `S Blood` extends Fonts_
   
   @js.native
-  sealed trait `SL Script` extends Fonts
+  sealed trait `SL Script` extends Fonts_
   
   @js.native
-  sealed trait `Santa Clara` extends Fonts
+  sealed trait `Santa Clara` extends Fonts_
   
   @js.native
-  sealed trait Script extends Fonts
+  sealed trait Script extends Fonts_
   
   @js.native
-  sealed trait Serifcap extends Fonts
+  sealed trait Serifcap extends Fonts_
   
   @js.native
-  sealed trait Shadow extends Fonts
+  sealed trait Shadow extends Fonts_
   
   @js.native
-  sealed trait Shimrod extends Fonts
+  sealed trait Shimrod extends Fonts_
   
   @js.native
-  sealed trait Short extends Fonts
+  sealed trait Short extends Fonts_
   
   @js.native
-  sealed trait Slant extends Fonts
+  sealed trait Slant extends Fonts_
   
   @js.native
-  sealed trait `Slant Relief` extends Fonts
+  sealed trait `Slant Relief` extends Fonts_
   
   @js.native
-  sealed trait Slide extends Fonts
+  sealed trait Slide extends Fonts_
   
   @js.native
-  sealed trait Small extends Fonts
+  sealed trait Small extends Fonts_
   
   @js.native
-  sealed trait `Small Caps` extends Fonts
+  sealed trait `Small Caps` extends Fonts_
   
   @js.native
-  sealed trait `Small Isometric1` extends Fonts
+  sealed trait `Small Isometric1` extends Fonts_
   
   @js.native
-  sealed trait `Small Keyboard` extends Fonts
+  sealed trait `Small Keyboard` extends Fonts_
   
   @js.native
-  sealed trait `Small Poison` extends Fonts
+  sealed trait `Small Poison` extends Fonts_
   
   @js.native
-  sealed trait `Small Script` extends Fonts
+  sealed trait `Small Script` extends Fonts_
   
   @js.native
-  sealed trait `Small Shadow` extends Fonts
+  sealed trait `Small Shadow` extends Fonts_
   
   @js.native
-  sealed trait `Small Slant` extends Fonts
+  sealed trait `Small Slant` extends Fonts_
   
   @js.native
-  sealed trait `Small Tengwar` extends Fonts
+  sealed trait `Small Tengwar` extends Fonts_
   
   @js.native
-  sealed trait Soft extends Fonts
+  sealed trait Soft extends Fonts_
   
   @js.native
-  sealed trait Speed extends Fonts
+  sealed trait Speed extends Fonts_
   
   @js.native
-  sealed trait Spliff extends Fonts
+  sealed trait Spliff extends Fonts_
   
   @js.native
-  sealed trait Stacey extends Fonts
+  sealed trait Stacey extends Fonts_
   
   @js.native
-  sealed trait Stampate extends Fonts
+  sealed trait Stampate extends Fonts_
   
   @js.native
-  sealed trait Stampatello extends Fonts
+  sealed trait Stampatello extends Fonts_
   
   @js.native
-  sealed trait Standard extends Fonts
+  sealed trait Standard extends Fonts_
   
   @js.native
-  sealed trait `Star Strips` extends Fonts
+  sealed trait `Star Strips` extends Fonts_
   
   @js.native
-  sealed trait `Star Wars` extends Fonts
+  sealed trait `Star Wars` extends Fonts_
   
   @js.native
-  sealed trait Stellar extends Fonts
+  sealed trait Stellar extends Fonts_
   
   @js.native
-  sealed trait Stforek extends Fonts
+  sealed trait Stforek extends Fonts_
   
   @js.native
-  sealed trait `Stick Letters` extends Fonts
+  sealed trait `Stick Letters` extends Fonts_
   
   @js.native
-  sealed trait Stop extends Fonts
+  sealed trait Stop extends Fonts_
   
   @js.native
-  sealed trait Straight extends Fonts
+  sealed trait Straight extends Fonts_
   
   @js.native
-  sealed trait `Stronger Than All` extends Fonts
+  sealed trait `Stronger Than All` extends Fonts_
   
   @js.native
-  sealed trait `Sub-Zero` extends Fonts
+  sealed trait `Sub-Zero` extends Fonts_
   
   @js.native
-  sealed trait `Swamp Land` extends Fonts
+  sealed trait `Swamp Land` extends Fonts_
   
   @js.native
-  sealed trait Swan extends Fonts
+  sealed trait Swan extends Fonts_
   
   @js.native
-  sealed trait Sweet extends Fonts
+  sealed trait Sweet extends Fonts_
   
   @js.native
-  sealed trait THIS extends Fonts
+  sealed trait THIS extends Fonts_
   
   @js.native
-  sealed trait Tanja extends Fonts
+  sealed trait Tanja extends Fonts_
   
   @js.native
-  sealed trait Tengwar extends Fonts
+  sealed trait Tengwar extends Fonts_
   
   @js.native
-  sealed trait Term extends Fonts
+  sealed trait Term extends Fonts_
   
   @js.native
-  sealed trait Test1 extends Fonts
+  sealed trait Test1 extends Fonts_
   
   @js.native
-  sealed trait `The Edge` extends Fonts
+  sealed trait `The Edge` extends Fonts_
   
   @js.native
-  sealed trait Thick extends Fonts
+  sealed trait Thick extends Fonts_
   
   @js.native
-  sealed trait Thin extends Fonts
+  sealed trait Thin extends Fonts_
   
   @js.native
-  sealed trait Thorned extends Fonts
+  sealed trait Thorned extends Fonts_
   
   @js.native
-  sealed trait `Three Point` extends Fonts
+  sealed trait `Three Point` extends Fonts_
   
   @js.native
-  sealed trait Ticks extends Fonts
+  sealed trait Ticks extends Fonts_
   
   @js.native
-  sealed trait `Ticks Slant` extends Fonts
+  sealed trait `Ticks Slant` extends Fonts_
   
   @js.native
-  sealed trait Tiles extends Fonts
+  sealed trait Tiles extends Fonts_
   
   @js.native
-  sealed trait `Tinker-Toy` extends Fonts
+  sealed trait `Tinker-Toy` extends Fonts_
   
   @js.native
-  sealed trait Tombstone extends Fonts
+  sealed trait Tombstone extends Fonts_
   
   @js.native
-  sealed trait Train extends Fonts
+  sealed trait Train extends Fonts_
   
   @js.native
-  sealed trait Trek extends Fonts
+  sealed trait Trek extends Fonts_
   
   @js.native
-  sealed trait Tsalagi extends Fonts
+  sealed trait Tsalagi extends Fonts_
   
   @js.native
-  sealed trait Tubular extends Fonts
+  sealed trait Tubular extends Fonts_
   
   @js.native
-  sealed trait Twisted extends Fonts
+  sealed trait Twisted extends Fonts_
   
   @js.native
-  sealed trait `Two Point` extends Fonts
+  sealed trait `Two Point` extends Fonts_
   
   @js.native
-  sealed trait `USA Flag` extends Fonts
+  sealed trait `USA Flag` extends Fonts_
   
   @js.native
-  sealed trait Univers extends Fonts
+  sealed trait Univers extends Fonts_
   
   @js.native
-  sealed trait Varsity extends Fonts
+  sealed trait Varsity extends Fonts_
   
   @js.native
-  sealed trait Wavy extends Fonts
+  sealed trait Wavy extends Fonts_
   
   @js.native
-  sealed trait Weird extends Fonts
+  sealed trait Weird extends Fonts_
   
   @js.native
-  sealed trait `Wet Letter` extends Fonts
+  sealed trait `Wet Letter` extends Fonts_
   
   @js.native
-  sealed trait Whimsy extends Fonts
+  sealed trait Whimsy extends Fonts_
   
   @js.native
-  sealed trait Wow extends Fonts
+  sealed trait Wow extends Fonts_
   
   @js.native
   sealed trait `controlled smushing` extends KerningMethods

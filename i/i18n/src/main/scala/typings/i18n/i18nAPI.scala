@@ -89,18 +89,18 @@ trait i18nAPI extends js.Object {
     */
   def __n(singular: String, plural: String, count: Double): String = js.native
   /**
-    * Get the current global catalog
-    * @returns The current global catalog
-    */
-  def getCatalog(): GlobalCatalog = js.native
-  def getCatalog(locale: String): LocaleCatalog = js.native
-  /**
     * Get the catalog for the given locale
     * @param locale - The locale to get catalog for
     * @returns The specified locale catalog
     */
+  def getCatalog(): LocaleCatalog = js.native
+  def getCatalog(locale: String): LocaleCatalog = js.native
+  /**
+    * Get the current global catalog
+    * @returns The current global catalog
+    */
   @JSName("getCatalog")
-  def getCatalog_LocaleCatalog(): LocaleCatalog = js.native
+  def getCatalog_GlobalCatalog(): GlobalCatalog = js.native
   //#endregion
   /**
     * Get the current active locale

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tabCapture {
-  import typings.chrome.chrome.events.Event
-
-  type CaptureStatusChangedEvent = Event[js.Function1[/* info */ CaptureInfo, Unit]]
+  type CaptureStatusChangedEvent = typings.chrome.chrome.events.Event[
+    js.Function1[/* info */ typings.chrome.chrome.tabCapture.CaptureInfo, scala.Unit]
+  ]
 }

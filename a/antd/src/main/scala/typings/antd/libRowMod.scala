@@ -14,8 +14,8 @@ object libRowMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var defaultProps: Anon_Gutter = js.native
-    var propTypes: Anon_Align = js.native
+    var defaultProps: AnonGutter = js.native
+    var propTypes: AnonAlign = js.native
   }
   
 }

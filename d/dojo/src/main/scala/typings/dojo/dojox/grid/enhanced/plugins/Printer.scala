@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid.enhanced.plugins
 
-import typings.dojo.dojox.grid.enhanced._Plugin
+import typings.dojo.dojox.grid.enhanced.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.grid.enhanced.plugins.Printer")
 @js.native
-class Printer protected () extends _Plugin {
+class Printer protected () extends Plugin {
   def this(grid: js.Any) = this()
   /**
     * Export selected rows to HTML string, but do NOT print.

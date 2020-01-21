@@ -1,7 +1,7 @@
 package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.arangodb.Anon_SegmentThresholdThreshold
+import typings.arangodb.AnonSegmentThresholdThreshold
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ArangoSearchViewPropertiesOptions extends js.Object {
   var cleanupIntervalStep: js.UndefOr[Double] = js.undefined
   var consolidationIntervalMsec: js.UndefOr[Double] = js.undefined
-  var consolidationPolicy: js.UndefOr[Anon_SegmentThresholdThreshold] = js.undefined
+  var consolidationPolicy: js.UndefOr[AnonSegmentThresholdThreshold] = js.undefined
   var links: js.UndefOr[StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object ArangoSearchViewPropertiesOptions {
   def apply(
     cleanupIntervalStep: Int | Double = null,
     consolidationIntervalMsec: Int | Double = null,
-    consolidationPolicy: Anon_SegmentThresholdThreshold = null,
+    consolidationPolicy: AnonSegmentThresholdThreshold = null,
     links: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]] = null
   ): ArangoSearchViewPropertiesOptions = {
     val __obj = js.Dynamic.literal()

@@ -15,19 +15,19 @@ package object io {
     * @param partial       OptionalA true value indicates that the stream may not be finished, it may end arbitrarily in mid stream.The last XHR object will have a special property _lastIndex that indicates the how far alongthe httpStream could be successfully parsed into HTTP messages.
     */
   type httpParse = js.Function3[
-    /* httpStream */ String, 
-    /* topHeaders */ js.UndefOr[String], 
-    /* partial */ js.UndefOr[Boolean], 
-    Unit
+    /* httpStream */ java.lang.String, 
+    /* topHeaders */ js.UndefOr[java.lang.String], 
+    /* partial */ js.UndefOr[scala.Boolean], 
+    scala.Unit
   ]
-  type scriptFrame = scriptFrame_
+  type scriptFrame = typings.dojo.dojox.io.scriptFrame_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/io/xhrMultiPart.html
     *
     *
     * @param args
     */
-  type xhrMultiPart = js.Function1[/* args */ js.Object, Unit]
+  type xhrMultiPart = js.Function1[/* args */ js.Object, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/io/xhrScriptPlugin.html
     *
@@ -41,10 +41,10 @@ package object io {
     * @param httpAdapter       OptionalThis allows for adapting HTTP requests that could not otherwise besent with JSONP, so you can use a convention for headers and PUT/DELETE methods.
     */
   type xhrScriptPlugin = js.Function3[
-    /* url */ String, 
-    /* callbackParamName */ String, 
+    /* url */ java.lang.String, 
+    /* callbackParamName */ java.lang.String, 
     /* httpAdapter */ js.UndefOr[js.Function], 
-    Unit
+    scala.Unit
   ]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/io/xhrWindowNamePlugin.html
@@ -57,9 +57,9 @@ package object io {
     * @param trusted       Optional
     */
   type xhrWindowNamePlugin = js.Function3[
-    /* url */ String, 
+    /* url */ java.lang.String, 
     /* httpAdapter */ js.UndefOr[js.Function], 
-    /* trusted */ js.UndefOr[Boolean], 
-    Unit
+    /* trusted */ js.UndefOr[scala.Boolean], 
+    scala.Unit
   ]
 }

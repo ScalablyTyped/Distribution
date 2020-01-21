@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "roman-numerals"
-version := "0.3-dt-20181202Z-577fac"
+version := "0.3-dt-20181202Z-d51d17"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

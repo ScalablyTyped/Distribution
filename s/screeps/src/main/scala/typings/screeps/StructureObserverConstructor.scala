@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait StructureObserverConstructor extends _ConstructorById[StructureObserver]
+trait StructureObserverConstructor extends ConstructorById[StructureObserver]
 

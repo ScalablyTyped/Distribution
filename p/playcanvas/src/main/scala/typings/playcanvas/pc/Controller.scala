@@ -1,7 +1,7 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Gamepads
-import typings.playcanvas.Anon_Pad
+import typings.playcanvas.AnonGamepads
+import typings.playcanvas.AnonPad
 import typings.std.Element
 import typings.std.Number
 import scala.scalajs.js
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Controller () extends js.Object {
   def this(element: Element) = this()
-  def this(element: Element, options: Anon_Gamepads) = this()
+  def this(element: Element, options: AnonGamepads) = this()
   /**
     * @function
     * @name pc.Controller#attach
@@ -70,7 +70,7 @@ class Controller () extends js.Object {
     * @param {Object} [options.pad] The index of the game pad to register for (use pc.PAD_1, etc)
     */
   def registerAxis(): Unit = js.native
-  def registerAxis(options: Anon_Pad): Unit = js.native
+  def registerAxis(options: AnonPad): Unit = js.native
   /**
     * @function
     * @name pc.Controller#registerKeys

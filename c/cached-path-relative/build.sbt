@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cached-path-relative"
-version := "1.0-dt-20181124Z-f1c7e1"
+version := "1.0-dt-20181124Z-1244d2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

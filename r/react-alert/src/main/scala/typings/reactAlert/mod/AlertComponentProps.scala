@@ -1,0 +1,23 @@
+package typings.reactAlert.mod
+
+import typings.react.mod.ReactNode
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AlertComponentProps extends js.Object {
+  var id: String
+  var message: ReactNode
+  var options: AlertCustomOptionsWithType
+  def close(): Unit
+}
+
+object AlertComponentProps {
+  @scala.inline
+  def apply(close: () => Unit, id: String, options: AlertCustomOptionsWithType, message: ReactNode = null): AlertComponentProps = {
+    val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlertComponentProps]
+  }
+}
+

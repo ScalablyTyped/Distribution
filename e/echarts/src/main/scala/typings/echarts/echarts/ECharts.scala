@@ -1,8 +1,8 @@
 package typings.echarts.echarts
 
-import typings.echarts.Anon_BackgroundColor
-import typings.echarts.Anon_BackgroundColorExcludeComponents
-import typings.echarts.Anon_Data
+import typings.echarts.AnonBackgroundColor
+import typings.echarts.AnonBackgroundColorExcludeComponents
+import typings.echarts.AnonData
 import typings.echarts.echarts.EChartOption.Series
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
@@ -26,7 +26,7 @@ trait ECharts extends js.Object {
     *
     * @param opts Data options.
     */
-  def appendData(opts: Anon_Data): Unit = js.native
+  def appendData(opts: AnonData): Unit = js.native
   /**
     * Clears current instance; removes all components and charts in
     *     current instance.
@@ -88,14 +88,14 @@ trait ECharts extends js.Object {
     *
     * @param opts Options.
     */
-  def getConnectedDataURL(opts: Anon_BackgroundColorExcludeComponents): String = js.native
+  def getConnectedDataURL(opts: AnonBackgroundColorExcludeComponents): String = js.native
   /**
     * Exports chart image; returns a base64 URL; can be set to `src` of
     *      `Image`.
     *
     * @param opts Options.
     */
-  def getDataURL(opts: Anon_BackgroundColor): String = js.native
+  def getDataURL(opts: AnonBackgroundColor): String = js.native
   /**
     * Gets DOM element of ECharts instance container.
     *

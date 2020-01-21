@@ -1,6 +1,6 @@
 package typings.node.streamMod
 
-import typings.node.childUnderscoreProcessMod.StdioNull
+import typings.node.childProcessMod.StdioNull
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

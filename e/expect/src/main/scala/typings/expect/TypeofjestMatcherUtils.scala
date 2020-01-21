@@ -1,7 +1,7 @@
 package typings.expect
 
-import typings.chalk.chalkMod.Chalk
-import typings.jestDashMatcherDashUtils.Anon_IsDirectExpectCall
+import typings.chalk.mod.Chalk
+import typings.jestMatcherUtils.AnonIsDirectExpectCall
 import typings.std.TemplateStringsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ trait TypeofjestMatcherUtils extends js.Object {
   def matcherHint(matcherName: String): String = js.native
   def matcherHint(matcherName: String, received: String): String = js.native
   def matcherHint(matcherName: String, received: String, expected: String): String = js.native
-  def matcherHint(matcherName: String, received: String, expected: String, options: Anon_IsDirectExpectCall): String = js.native
+  def matcherHint(matcherName: String, received: String, expected: String, options: AnonIsDirectExpectCall): String = js.native
   def pluralize(word: String, count: Double): String = js.native
   def printExpected(value: js.Any): String = js.native
   def printReceived(`object`: js.Any): String = js.native

@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid.enhanced.plugins
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.refNode
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -37,6 +37,6 @@ class Dialog ()
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

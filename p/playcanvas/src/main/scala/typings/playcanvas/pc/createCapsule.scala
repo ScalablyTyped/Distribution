@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Height
+import typings.playcanvas.AnonHeight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,6 @@ object createCapsule extends js.Object {
     * @returns {pc.Mesh} A new cylinder-shaped mesh.
     */
   def apply(device: GraphicsDevice): Mesh = js.native
-  def apply(device: GraphicsDevice, opts: Anon_Height): Mesh = js.native
+  def apply(device: GraphicsDevice, opts: AnonHeight): Mesh = js.native
 }
 

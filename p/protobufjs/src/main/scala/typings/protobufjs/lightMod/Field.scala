@@ -1,11 +1,11 @@
 package typings.protobufjs.lightMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.protobufjsMod.Buffer
-import typings.protobufjs.protobufjsMod.Constructor
-import typings.protobufjs.protobufjsMod.FieldDecorator
-import typings.protobufjs.protobufjsMod.IField
-import typings.protobufjs.protobufjsMod.Long
+import typings.protobufjs.mod.Buffer
+import typings.protobufjs.mod.Constructor
+import typings.protobufjs.mod.FieldDecorator
+import typings.protobufjs.mod.IField
+import typings.protobufjs.mod.Long
 import typings.protobufjs.protobufjsStrings.bool
 import typings.protobufjs.protobufjsStrings.bytes
 import typings.protobufjs.protobufjsStrings.double
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
 @JSImport("protobufjs/light", "Field")
 @js.native
 class Field protected ()
-  extends typings.protobufjs.protobufjsMod.Field {
+  extends typings.protobufjs.mod.Field {
   /**
     * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
     * @param name Unique name within its namespace
@@ -228,7 +228,7 @@ object Field extends js.Object {
     fieldRule: required,
     defaultValue: Uint8Array
   ): FieldDecorator = js.native
-  def d[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = js.native
+  def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = js.native
   /**
     * Field decorator (TypeScript).
     * @param fieldId Field id
@@ -236,19 +236,19 @@ object Field extends js.Object {
     * @param [fieldRule="optional"] Field rule
     * @returns Decorator function
     */
-  def d[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: Constructor[T]): FieldDecorator = js.native
+  def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T]): FieldDecorator = js.native
   @JSName("d")
-  def d_optional[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional): FieldDecorator = js.native
+  def d_optional[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional): FieldDecorator = js.native
   @JSName("d")
-  def d_optional[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional): FieldDecorator = js.native
+  def d_optional[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional): FieldDecorator = js.native
   @JSName("d")
-  def d_repeated[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: repeated): FieldDecorator = js.native
+  def d_repeated[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: repeated): FieldDecorator = js.native
   @JSName("d")
-  def d_repeated[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: repeated): FieldDecorator = js.native
+  def d_repeated[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: repeated): FieldDecorator = js.native
   @JSName("d")
-  def d_required[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: required): FieldDecorator = js.native
+  def d_required[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: required): FieldDecorator = js.native
   @JSName("d")
-  def d_required[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: required): FieldDecorator = js.native
+  def d_required[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: required): FieldDecorator = js.native
   /**
     * Constructs a field from a field descriptor.
     * @param name Field name
@@ -256,6 +256,6 @@ object Field extends js.Object {
     * @returns Created field
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IField): typings.protobufjs.protobufjsMod.Field = js.native
+  def fromJSON(name: String, json: IField): typings.protobufjs.mod.Field = js.native
 }
 

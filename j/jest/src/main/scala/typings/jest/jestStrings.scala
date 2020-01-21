@@ -1,8 +1,8 @@
 package typings.jest
 
-import typings.jest.jestMod.jest.LogType
-import typings.jest.jestMod.jest.SnapshotUpdateState
-import typings.jest.jestMod.jest.Status
+import typings.jest.mod.jest.LogType
+import typings.jest.mod.jest.SnapshotUpdateState
+import typings.jest.mod.jest.Status
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

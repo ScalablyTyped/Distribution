@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait RuntimeOptions extends js.Object {
   var allowCallsToHelperMissing: js.UndefOr[Boolean] = js.undefined
+  var allowProtoMethodsByDefault: js.UndefOr[Boolean] = js.undefined
+  var allowProtoPropertiesByDefault: js.UndefOr[Boolean] = js.undefined
+  var allowedProtoMethods: js.UndefOr[StringDictionary[Boolean]] = js.undefined
+  var allowedProtoProperties: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   var blockParams: js.UndefOr[js.Array[_]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
   var decorators: js.UndefOr[StringDictionary[js.Function]] = js.undefined
@@ -21,6 +25,10 @@ object RuntimeOptions {
   @scala.inline
   def apply(
     allowCallsToHelperMissing: js.UndefOr[Boolean] = js.undefined,
+    allowProtoMethodsByDefault: js.UndefOr[Boolean] = js.undefined,
+    allowProtoPropertiesByDefault: js.UndefOr[Boolean] = js.undefined,
+    allowedProtoMethods: StringDictionary[Boolean] = null,
+    allowedProtoProperties: StringDictionary[Boolean] = null,
     blockParams: js.Array[_] = null,
     data: js.Any = null,
     decorators: StringDictionary[js.Function] = null,
@@ -31,6 +39,10 @@ object RuntimeOptions {
   ): RuntimeOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowCallsToHelperMissing)) __obj.updateDynamic("allowCallsToHelperMissing")(allowCallsToHelperMissing.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowProtoMethodsByDefault)) __obj.updateDynamic("allowProtoMethodsByDefault")(allowProtoMethodsByDefault.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowProtoPropertiesByDefault)) __obj.updateDynamic("allowProtoPropertiesByDefault")(allowProtoPropertiesByDefault.asInstanceOf[js.Any])
+    if (allowedProtoMethods != null) __obj.updateDynamic("allowedProtoMethods")(allowedProtoMethods.asInstanceOf[js.Any])
+    if (allowedProtoProperties != null) __obj.updateDynamic("allowedProtoProperties")(allowedProtoProperties.asInstanceOf[js.Any])
     if (blockParams != null) __obj.updateDynamic("blockParams")(blockParams.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])

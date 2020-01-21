@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait UIEventInit extends EventInit {
   var detail: js.UndefOr[Double] = js.undefined
-  var view: js.UndefOr[Window | Null] = js.undefined
+  var view: js.UndefOr[Window_ | Null] = js.undefined
 }
 
 object UIEventInit {
@@ -16,7 +16,7 @@ object UIEventInit {
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     detail: Int | Double = null,
-    view: Window = null
+    view: Window_ = null
   ): UIEventInit = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])

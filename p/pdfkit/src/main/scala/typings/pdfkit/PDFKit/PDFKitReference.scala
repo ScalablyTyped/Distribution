@@ -1,6 +1,6 @@
 package typings.pdfkit.PDFKit
 
-import typings.pdfkit.Anon_Annots
+import typings.pdfkit.AnonAnnots
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ class PDFKitReference protected () extends js.Object {
   def this(document: PDFDocument, id: Double, data: js.Object) = this()
   var chunks: js.Array[_] = js.native
   var compress: Boolean = js.native
-  var data: Anon_Annots = js.native
+  var data: AnonAnnots = js.native
   var deflate: js.Any = js.native
   var document: PDFDocument = js.native
   var gen: Double = js.native

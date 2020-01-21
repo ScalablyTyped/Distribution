@@ -12,67 +12,73 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PaymentRequest extends EventTarget {
   val id: java.lang.String = js.native
-  var onshippingaddresschange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
-  var onshippingoptionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onshippingaddresschange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  var onshippingoptionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
   val shippingAddress: PaymentAddress | Null = js.native
   val shippingOption: java.lang.String | Null = js.native
   val shippingType: PaymentShippingType | Null = js.native
   def abort(): js.Promise[Unit] = js.native
   @JSName("addEventListener")
-  def addEventListener_shippingaddresschange(`type`: shippingaddresschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_shippingaddresschange(
+    `type`: shippingaddresschange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_shippingaddresschange(
     `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_shippingaddresschange(
     `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_shippingoptionchange(`type`: shippingoptionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_shippingoptionchange(`type`: shippingoptionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_shippingoptionchange(
     `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_shippingoptionchange(
     `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
   def canMakePayment(): js.Promise[scala.Boolean] = js.native
   @JSName("removeEventListener")
-  def removeEventListener_shippingaddresschange(`type`: shippingaddresschange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_shippingaddresschange(
+    `type`: shippingaddresschange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_shippingaddresschange(
     `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_shippingaddresschange(
     `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_shippingoptionchange(`type`: shippingoptionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_shippingoptionchange(`type`: shippingoptionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_shippingoptionchange(
     `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_shippingoptionchange(
     `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
     options: EventListenerOptions
   ): Unit = js.native
   def show(): js.Promise[PaymentResponse] = js.native

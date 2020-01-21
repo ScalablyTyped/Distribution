@@ -1,12 +1,15 @@
 package typings.tstl.tstlMod
 
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.utilityIPairMod.IPair
+import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.comparatorMod.Comparator
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.ipairMod.IPair
+import typings.tstl.mapContainerMod.MapContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl", "TreeMap")
+@JSImport("tstl/container", "TreeMap")
 @js.native
 /**
   * Default Constructor.
@@ -14,8 +17,8 @@ import scala.scalajs.js.annotation._
   * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
   */
 class TreeMap[Key, T] ()
-  extends typings.tstl.containerMod.TreeMap[Key, T] {
-  def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+  extends typings.tstl.treeMapMod.TreeMap[Key, T] {
+  def this(comp: Comparator[Key, Key]) = this()
   /**
     * Initializer Constructor.
     *
@@ -28,7 +31,7 @@ class TreeMap[Key, T] ()
     *
     * @param obj Object to copy.
     */
-  def this(obj: typings.tstl.containerTreeMapMod.TreeMap[Key, T]) = this()
+  def this(obj: typings.tstl.treeMapMod.TreeMap[Key, T]) = this()
   /**
     * Range Constructor.
     *
@@ -40,20 +43,66 @@ class TreeMap[Key, T] ()
     first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
   ) = this()
-  def this(items: js.Array[IPair[Key, T]], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+  def this(items: js.Array[IPair[Key, T]], comp: Comparator[Key, Key]) = this()
   def this(
     first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-    comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
+    comp: Comparator[Key, Key]
   ) = this()
 }
 
-@JSImport("tstl", "TreeMap")
+@JSImport("tstl/container", "TreeMap")
 @js.native
 object TreeMap extends js.Object {
-  val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
-  val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
-  val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
-  val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
+  val Iterator: Instantiable0[
+    typings.tstl.mapElementListMod.MapElementList.Iterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.mapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.mapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
 }
 

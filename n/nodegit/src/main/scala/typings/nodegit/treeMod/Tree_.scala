@@ -1,14 +1,14 @@
 package typings.nodegit.treeMod
 
 import typings.node.NodeJS.EventEmitter
-import typings.nodegit.Anon_Start
-import typings.nodegit.diffDashFileMod.DiffFile
+import typings.nodegit.AnonStart
+import typings.nodegit.diffFileMod.DiffFile
 import typings.nodegit.objectMod.Object
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
-import typings.nodegit.treeDashBuilderMod.Treebuilder
-import typings.nodegit.treeDashEntryMod.TreeEntry
-import typings.nodegit.treeDashUpdateMod.TreeUpdate
+import typings.nodegit.treeBuilderMod.Treebuilder
+import typings.nodegit.treeEntryMod.TreeEntry
+import typings.nodegit.treeUpdateMod.TreeUpdate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,7 +66,7 @@ class Tree_ () extends js.Object {
   /**
     * Recursively walk the tree in breadth-first order. Fires an event for each entry.
     */
-  def walk(): EventEmitter with Anon_Start = js.native
-  def walk(blobsOnly: Boolean): EventEmitter with Anon_Start = js.native
+  def walk(): EventEmitter with AnonStart = js.native
+  def walk(blobsOnly: Boolean): EventEmitter with AnonStart = js.native
 }
 

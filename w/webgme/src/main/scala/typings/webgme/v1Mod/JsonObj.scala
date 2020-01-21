@@ -1,6 +1,6 @@
 package typings.webgme.v1Mod
 
-import typings.webgme.Anon_Guid
+import typings.webgme.AnonGuid
 import typings.webgme.GmeCommon.RelId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait JsonObj extends js.Object {
    //
   var nodes: js.Any
   var relids: js.Array[RelId]
-  var root: Anon_Guid
+  var root: AnonGuid
 }
 
 object JsonObj {
@@ -25,7 +25,7 @@ object JsonObj {
     metaSheets: js.Any,
     nodes: js.Any,
     relids: js.Array[RelId],
-    root: Anon_Guid
+    root: AnonGuid
   ): JsonObj = {
     val __obj = js.Dynamic.literal(bases = bases.asInstanceOf[js.Any], containment = containment.asInstanceOf[js.Any], metaSheets = metaSheets.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], relids = relids.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
   

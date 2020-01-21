@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
   * @return {nlobjPortlet}
   * @constructor
   */
-@JSName("nlobjPortlet")
 @js.native
 trait nlobjPortlet_
   extends /**

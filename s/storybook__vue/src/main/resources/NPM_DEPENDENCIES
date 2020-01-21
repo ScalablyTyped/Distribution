@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/vue" : "5.3.4"
+      "@storybook/vue" : "5.3.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/vue" : "5.3.4"
+      "@storybook/vue" : "5.3.7"
     }
   ],
   "compile-devDependencies" : [

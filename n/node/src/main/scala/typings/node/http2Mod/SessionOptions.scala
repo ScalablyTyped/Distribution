@@ -1,13 +1,13 @@
 package typings.node.http2Mod
 
 import typings.node.streamMod.Duplex
-import typings.node.urlMod.URL
+import typings.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SessionOptions extends js.Object {
-  var createConnection: js.UndefOr[js.Function2[/* authority */ URL, /* option */ this.type, Duplex]] = js.undefined
+  var createConnection: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ this.type, Duplex]] = js.undefined
   var maxDeflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   var maxHeaderListPairs: js.UndefOr[Double] = js.undefined
   var maxOutstandingPings: js.UndefOr[Double] = js.undefined
@@ -22,7 +22,7 @@ trait SessionOptions extends js.Object {
 object SessionOptions {
   @scala.inline
   def apply(
-    createConnection: (/* authority */ URL, SessionOptions) => Duplex = null,
+    createConnection: (/* authority */ URL_, SessionOptions) => Duplex = null,
     maxDeflateDynamicTableSize: Int | Double = null,
     maxHeaderListPairs: Int | Double = null,
     maxOutstandingPings: Int | Double = null,

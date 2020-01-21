@@ -1,7 +1,7 @@
 package typings.synaptic
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.synaptic.synapticMod.Layer.LayerConnection
+import typings.synaptic.mod.Layer.LayerConnection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

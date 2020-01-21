@@ -1,6 +1,6 @@
 package typings.parse5
 
-import typings.parse5.parse5Mod.DocumentMode
+import typings.parse5.mod.DocumentMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

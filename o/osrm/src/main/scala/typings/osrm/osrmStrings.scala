@@ -1,9 +1,9 @@
 package typings.osrm
 
-import typings.osrm.osrmMod.GeometriesTypes
-import typings.osrm.osrmMod.Indication
-import typings.osrm.osrmMod.OverviewTypes
-import typings.osrm.osrmMod.StepManeuverTypes
+import typings.osrm.mod.GeometriesTypes
+import typings.osrm.mod.Indication
+import typings.osrm.mod.OverviewTypes
+import typings.osrm.mod.StepManeuverTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

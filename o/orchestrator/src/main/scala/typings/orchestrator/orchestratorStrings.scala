@@ -1,6 +1,6 @@
 package typings.orchestrator
 
-import typings.orchestrator.orchestratorMod.EventNames
+import typings.orchestrator.mod.EventNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

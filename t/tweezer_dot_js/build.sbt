@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tweezer_dot_js"
-version := "1.4-dt-20180214Z-936104"
+version := "1.4-dt-20180214Z-47a490"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

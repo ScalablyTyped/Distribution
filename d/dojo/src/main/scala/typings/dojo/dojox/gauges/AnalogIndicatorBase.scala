@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.gauges.AnalogIndicatorBase")
 @js.native
-class AnalogIndicatorBase () extends _Indicator {
+class AnalogIndicatorBase () extends Indicator {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

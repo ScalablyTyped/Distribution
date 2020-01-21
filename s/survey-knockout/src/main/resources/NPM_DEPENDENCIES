@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "survey-knockout" : "1.1.32"
+      "survey-knockout" : "1.1.33"
     }
   ],
   "test-dependencies" : [
     {
-      "survey-knockout" : "1.1.32"
+      "survey-knockout" : "1.1.33"
     }
   ],
   "compile-devDependencies" : [

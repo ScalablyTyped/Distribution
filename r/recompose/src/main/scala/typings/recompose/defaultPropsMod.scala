@@ -1,6 +1,6 @@
 package typings.recompose
 
-import typings.recompose.recomposeMod.DefaultingInferableComponentEnhancer
+import typings.recompose.mod.DefaultingInferableComponentEnhancer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

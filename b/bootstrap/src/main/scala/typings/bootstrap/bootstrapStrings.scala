@@ -1,16 +1,16 @@
 package typings.bootstrap
 
-import typings.bootstrap.bootstrapMod.AlertEvent
-import typings.bootstrap.bootstrapMod.CarouselEvent
-import typings.bootstrap.bootstrapMod.CollapseEvent
-import typings.bootstrap.bootstrapMod.DropdownEvent
-import typings.bootstrap.bootstrapMod.ModalEvent
-import typings.bootstrap.bootstrapMod.Placement
-import typings.bootstrap.bootstrapMod.PopoverEvent
-import typings.bootstrap.bootstrapMod.TapEvent
-import typings.bootstrap.bootstrapMod.ToastEvent
-import typings.bootstrap.bootstrapMod.TooltipEvent
-import typings.bootstrap.bootstrapMod.Trigger
+import typings.bootstrap.mod.AlertEvent
+import typings.bootstrap.mod.CarouselEvent
+import typings.bootstrap.mod.CollapseEvent
+import typings.bootstrap.mod.DropdownEvent
+import typings.bootstrap.mod.ModalEvent
+import typings.bootstrap.mod.Placement
+import typings.bootstrap.mod.PopoverEvent
+import typings.bootstrap.mod.TapEvent
+import typings.bootstrap.mod.ToastEvent
+import typings.bootstrap.mod.TooltipEvent
+import typings.bootstrap.mod.Trigger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

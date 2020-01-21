@@ -12,5 +12,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("onmouseover")
 @js.native
 object onmouseover
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ MouseEvent, js.Any]) | Null]
 

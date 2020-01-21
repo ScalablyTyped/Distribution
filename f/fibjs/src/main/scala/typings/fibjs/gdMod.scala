@@ -53,15 +53,15 @@ object gdMod extends js.Object {
   val VERTICAL: `2` = js.native
   val WEBP: `6` = js.native
   def color(color: String): Double = js.native
-  def create(width: Double, height: Double): Class_Image = js.native
-  def create(width: Double, height: Double, color: Double): Class_Image = js.native
+  def create(width: Double, height: Double): ClassImage = js.native
+  def create(width: Double, height: Double, color: Double): ClassImage = js.native
   def hsb(hue: Double, saturation: Double, brightness: Double): Double = js.native
   def hsba(hue: Double, saturation: Double, brightness: Double, alpha: Double): Double = js.native
   def hsl(hue: Double, saturation: Double, lightness: Double): Double = js.native
   def hsla(hue: Double, saturation: Double, lightness: Double, alpha: Double): Double = js.native
-  def load(data: Class_Buffer): Class_Image = js.native
-  def load(fname: String): Class_Image = js.native
-  def load(stm: Class_SeekableStream): Class_Image = js.native
+  def load(data: ClassBuffer): ClassImage = js.native
+  def load(fname: String): ClassImage = js.native
+  def load(stm: ClassSeekableStream): ClassImage = js.native
   def rgb(red: Double, green: Double, blue: Double): Double = js.native
   def rgba(red: Double, green: Double, blue: Double, alpha: Double): Double = js.native
 }

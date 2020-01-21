@@ -1,7 +1,7 @@
 package typings.rrule
 
-import typings.rrule.distEsmSrcCacheMod.CacheKeys
-import typings.rrule.distEsmSrcWeekdayMod.WeekdayStr
+import typings.rrule.cacheMod.CacheKeys
+import typings.rrule.weekdayMod.WeekdayStr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

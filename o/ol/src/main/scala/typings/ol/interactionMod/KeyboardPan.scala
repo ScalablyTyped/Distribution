@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionKeyboardPanMod.Options
-import typings.ol.interactionKeyboardPanMod.default
+import typings.ol.keyboardPanMod.Options
+import typings.ol.keyboardPanMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object FFAddonSDK {
-  import typings.jpm.Anon_16
-
-  type Icon = String | Anon_16
+  type Icon = java.lang.String | typings.jpm.Anon16
 }

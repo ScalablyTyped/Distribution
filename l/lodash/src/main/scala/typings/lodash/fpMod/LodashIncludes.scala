@@ -1,16 +1,16 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.Dictionary
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.NumericDictionary
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.Dictionary
+import typings.lodash.mod.List
+import typings.lodash.mod.NumericDictionary
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashIncludes extends js.Object {
-  def apply[T](target: T): LodashIncludes1x1[T] = js.native
+  def apply[T](target: T): Boolean = js.native
   def apply[T](target: T, collection: Dictionary[T]): Boolean = js.native
   def apply[T](target: T, collection: List[T]): Boolean = js.native
   def apply[T](target: T, collection: NumericDictionary[T]): Boolean = js.native

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.nestable")
 @js.native
-object nestable extends TopLevel[Nestable]
+object nestable extends TopLevel[Nestable_]
 

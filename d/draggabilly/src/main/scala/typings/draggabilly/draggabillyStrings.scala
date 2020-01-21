@@ -1,7 +1,7 @@
 package typings.draggabilly
 
-import typings.draggabilly.draggabillyMod.DraggabillyClickEventName
-import typings.draggabilly.draggabillyMod.DraggabillyMoveEventName
+import typings.draggabilly.mod.DraggabillyClickEventName
+import typings.draggabilly.mod.DraggabillyMoveEventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

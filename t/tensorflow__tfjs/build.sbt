@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "tensorflow__tfjs"
-version := "1.5.1-17daff"
+version := "1.5.1-cf1b2b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "1.5.1-5a3771",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.5.1-1a4184",
-  "org.scalablytyped" %%% "tensorflow__tfjs-data" % "1.5.1-489c83",
-  "org.scalablytyped" %%% "tensorflow__tfjs-layers" % "1.5.1-1f82e6")
+  "org.scalablytyped" %%% "std" % "3.7-96076c",
+  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "1.5.1-7425e3",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.5.1-4d8ae4",
+  "org.scalablytyped" %%% "tensorflow__tfjs-data" % "1.5.1-3070ab",
+  "org.scalablytyped" %%% "tensorflow__tfjs-layers" % "1.5.1-38f617")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

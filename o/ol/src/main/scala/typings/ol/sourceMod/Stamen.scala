@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceStamenMod.Options
-import typings.ol.sourceStamenMod.default
+import typings.ol.stamenMod.Options
+import typings.ol.stamenMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

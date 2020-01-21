@@ -1,8 +1,8 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.Function2
-import typings.lodash.lodashMod.Function3
-import typings.lodash.lodashMod.Function4
+import typings.lodash.mod.Function2
+import typings.lodash.mod.Function3
+import typings.lodash.mod.Function4
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

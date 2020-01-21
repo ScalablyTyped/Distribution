@@ -1,8 +1,8 @@
 package typings.nodegit.revertMod
 
 import typings.nodegit.commitMod.Commit
-import typings.nodegit.mergeDashOptionsMod.MergeOptions
-import typings.nodegit.nodegitMod.Index
+import typings.nodegit.mergeOptionsMod.MergeOptions
+import typings.nodegit.mod.Index
 import typings.nodegit.repositoryMod.Repository
 import scala.scalajs.js
 import scala.scalajs.js.`|`

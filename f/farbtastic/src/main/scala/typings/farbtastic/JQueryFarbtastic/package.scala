@@ -5,10 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JQueryFarbtastic {
-  import typings.farbtastic.JQuery
-  import typings.std.Element
-
-  type Callback = CallbackFunction | Placeholder
-  type CallbackFunction = js.Function1[/* color */ String, js.Any]
-  type Placeholder = String | Element | JQuery
+  type Callback = typings.farbtastic.JQueryFarbtastic.CallbackFunction | typings.farbtastic.JQueryFarbtastic.Placeholder
+  type CallbackFunction = js.Function1[/* color */ java.lang.String, js.Any]
+  type Placeholder = java.lang.String | typings.std.Element | typings.farbtastic.JQuery
 }

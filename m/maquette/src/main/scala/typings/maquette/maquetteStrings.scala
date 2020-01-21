@@ -1,6 +1,6 @@
 package typings.maquette
 
-import typings.maquette.distInterfacesMod.PerformanceLoggerEvent
+import typings.maquette.interfacesMod.PerformanceLoggerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

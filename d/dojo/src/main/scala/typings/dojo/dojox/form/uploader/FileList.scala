@@ -1,6 +1,6 @@
 package typings.dojo.dojox.form.uploader
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.headerFilename
 import typings.dojo.dojoStrings.headerFilesize
 import typings.dojo.dojoStrings.headerIndex
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.form.uploader.FileList")
 @js.native
-class FileList () extends _Base {
+class FileList () extends Base {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -122,7 +122,7 @@ class FileList () extends _Base {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_headerFilesize(
     property: headerFilesize,
@@ -132,7 +132,7 @@ class FileList () extends _Base {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_headerIndex(
     property: headerIndex,
@@ -142,7 +142,7 @@ class FileList () extends _Base {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_headerType(
     property: headerType,
@@ -152,7 +152,7 @@ class FileList () extends _Base {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_rowAmt(
     property: rowAmt,
@@ -162,7 +162,7 @@ class FileList () extends _Base {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_uploader(
     property: typings.dojo.dojoStrings.uploader,
@@ -172,7 +172,7 @@ class FileList () extends _Base {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_uploaderId(
     property: uploaderId,
@@ -182,6 +182,6 @@ class FileList () extends _Base {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

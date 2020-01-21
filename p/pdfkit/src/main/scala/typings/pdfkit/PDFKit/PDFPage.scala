@@ -1,6 +1,6 @@
 package typings.pdfkit.PDFKit
 
-import typings.pdfkit.Anon_Bottom
+import typings.pdfkit.AnonBottom
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ trait PDFPage extends js.Object {
   var fonts: js.Any
   var height: Double
   var layout: String
-  var margins: Anon_Bottom
+  var margins: AnonBottom
   var patterns: js.Any
   var size: String
   var width: Double
@@ -42,7 +42,7 @@ object PDFPage {
     fonts: js.Any,
     height: Double,
     layout: String,
-    margins: Anon_Bottom,
+    margins: AnonBottom,
     maxY: () => Double,
     patterns: js.Any,
     size: String,

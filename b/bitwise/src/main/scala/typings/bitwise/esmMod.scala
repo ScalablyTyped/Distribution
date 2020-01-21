@@ -1,8 +1,8 @@
 package typings.bitwise
 
-import typings.bitwise.esmTypesMod.Bit
-import typings.bitwise.esmTypesMod.UInt4
-import typings.bitwise.esmTypesMod.UInt8
+import typings.bitwise.typesMod.Bit
+import typings.bitwise.typesMod.UInt4
+import typings.bitwise.typesMod.UInt8
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -69,12 +69,12 @@ object esmMod extends js.Object {
   
   @js.native
   object default extends js.Object {
-    var bits: Anon_And = js.native
-    var buffer: Anon_A = js.native
-    var byte: Anon_Byte = js.native
-    var integer: Anon_GetBit = js.native
-    var nibble: Anon_Nibble = js.native
-    var string: Anon_String = js.native
+    var bits: AnonAnd = js.native
+    var buffer: AnonA = js.native
+    var byte: AnonByte = js.native
+    var integer: AnonGetBit = js.native
+    var nibble: AnonNibble = js.native
+    var string: AnonString = js.native
   }
   
   @js.native

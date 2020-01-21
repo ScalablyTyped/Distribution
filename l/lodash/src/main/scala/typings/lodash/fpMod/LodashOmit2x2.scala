@@ -1,8 +1,8 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.Many
-import typings.lodash.lodashMod.PartialObject
-import typings.lodash.lodashMod.PropertyName
+import typings.lodash.mod.Many
+import typings.lodash.mod.PartialObject
+import typings.lodash.mod.PropertyName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

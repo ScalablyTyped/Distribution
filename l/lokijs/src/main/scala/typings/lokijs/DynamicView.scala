@@ -34,7 +34,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
   def this(collection: Collection[E], name: String, options: Partial[DynamicViewOptions]) = this()
   var cachedresultset: Resultset[E] | Null = js.native
   var collection: Collection[E] = js.native
-  var filterPipeline: js.Array[Anon_Find] = js.native
+  var filterPipeline: js.Array[AnonFind] = js.native
   var name: String = js.native
   var options: Partial[DynamicViewOptions] = js.native
   var rebuildPending: Boolean = js.native
@@ -50,7 +50,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     *
     * @param filter - The filter object. Refer to applyFilter() for extra details.
     */
-  def _addFilter(filter: Anon_Find): Unit = js.native
+  def _addFilter(filter: AnonFind): Unit = js.native
   /**
     * Implementation detail.
     * _indexOfFilterWithId() - Find the index of a filter in the pipeline, by that filter's ID.
@@ -68,7 +68,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     *    The object is in the format { 'type': filter_type, 'val', filter_param, 'uid', optional_filter_id }
     * @returns this DynamicView object, for further chain ops.
     */
-  def applyFilter(filter: Anon_Find): this.type = js.native
+  def applyFilter(filter: AnonFind): this.type = js.native
   /**
     * applyFind() - Adds or updates a mongo-style query option in the DynamicView filter pipeline
     *
@@ -197,7 +197,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * performSortPhase() - invoked synchronously or asynchronously to perform final sort phase (if needed)
     */
   def performSortPhase(): Unit = js.native
-  def performSortPhase(options: Anon_Persistent): Unit = js.native
+  def performSortPhase(options: AnonPersistent): Unit = js.native
   /**
     * queueRebuildEvent() - When the view is not sorted we may still wish to be notified of rebuild events.
     *     This event will throttle and queue a single rebuild event when batches of updates affect the view.
@@ -226,7 +226,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @fires DynamicView.rebuild
     */
   def rematerialize(): this.type = js.native
-  def rematerialize(options: Anon_RemoveWhereFilters): this.type = js.native
+  def rematerialize(options: AnonRemoveWhereFilters): this.type = js.native
   def removeDocument(objIndex: String): Unit = js.native
   /**
     * removeDocument() - internal function called on collection.delete()
@@ -247,7 +247,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [options.queueSortPhase] - (default: false) if true we will async rebuild view (maybe set default to true in future?)
     */
   def removeFilters(): Unit = js.native
-  def removeFilters(options: Anon_QueueSortPhase): Unit = js.native
+  def removeFilters(options: AnonQueueSortPhase): Unit = js.native
   /**
     * rollback() - rolls back a transaction.
     *

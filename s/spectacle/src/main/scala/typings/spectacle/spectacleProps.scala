@@ -1,103 +1,103 @@
 package typings.spectacle
 
-import typings.spectacle.spectacleMod.BaseProps
+import typings.spectacle.mod.BaseProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait spectacleProps {
   @scala.inline
-  def AnimProps: typings.spectacle.spectacleMod.AnimProps.type = typings.spectacle.spectacleMod.AnimProps
-  type AnimProps = typings.spectacle.spectacleMod.AnimProps
+  def AnimProps: typings.spectacle.mod.AnimProps.type = typings.spectacle.mod.AnimProps
+  type AnimProps = typings.spectacle.mod.AnimProps
   @scala.inline
-  def AppearProps: typings.spectacle.spectacleMod.AppearProps.type = typings.spectacle.spectacleMod.AppearProps
-  type AppearProps = typings.spectacle.spectacleMod.AppearProps
+  def AppearProps: typings.spectacle.mod.AppearProps.type = typings.spectacle.mod.AppearProps
+  type AppearProps = typings.spectacle.mod.AppearProps
   @scala.inline
-  def BlockQuoteProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def BlockQuoteProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type BlockQuoteProps = BaseProps
   @scala.inline
-  def CiteProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def CiteProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type CiteProps = BaseProps
   @scala.inline
-  def CodeProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def CodeProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type CodeProps = BaseProps
   @scala.inline
-  def CodePaneProps: typings.spectacle.spectacleMod.CodePaneProps.type = typings.spectacle.spectacleMod.CodePaneProps
-  type CodePaneProps = typings.spectacle.spectacleMod.CodePaneProps
+  def CodePaneProps: typings.spectacle.mod.CodePaneProps.type = typings.spectacle.mod.CodePaneProps
+  type CodePaneProps = typings.spectacle.mod.CodePaneProps
   @scala.inline
-  def ComponentPlaygroundProps: typings.spectacle.spectacleMod.ComponentPlaygroundProps.type = typings.spectacle.spectacleMod.ComponentPlaygroundProps
-  type ComponentPlaygroundProps = typings.spectacle.spectacleMod.ComponentPlaygroundProps
+  def ComponentPlaygroundProps: typings.spectacle.mod.ComponentPlaygroundProps.type = typings.spectacle.mod.ComponentPlaygroundProps
+  type ComponentPlaygroundProps = typings.spectacle.mod.ComponentPlaygroundProps
   @scala.inline
-  def DeckProps: typings.spectacle.spectacleMod.DeckProps.type = typings.spectacle.spectacleMod.DeckProps
-  type DeckProps = typings.spectacle.spectacleMod.DeckProps
+  def DeckProps: typings.spectacle.mod.DeckProps.type = typings.spectacle.mod.DeckProps
+  type DeckProps = typings.spectacle.mod.DeckProps
   @scala.inline
-  def FillProps: typings.spectacle.spectacleMod.FillProps.type = typings.spectacle.spectacleMod.FillProps
-  type FillProps = typings.spectacle.spectacleMod.FillProps
+  def FillProps: typings.spectacle.mod.FillProps.type = typings.spectacle.mod.FillProps
+  type FillProps = typings.spectacle.mod.FillProps
   @scala.inline
-  def FitProps: typings.spectacle.spectacleMod.FillProps.type = typings.spectacle.spectacleMod.FillProps
-  type FitProps = typings.spectacle.spectacleMod.FitProps
+  def FitProps: typings.spectacle.mod.FillProps.type = typings.spectacle.mod.FillProps
+  type FitProps = typings.spectacle.mod.FitProps
   @scala.inline
-  def GoToActionProps: typings.spectacle.spectacleMod.GoToActionProps.type = typings.spectacle.spectacleMod.GoToActionProps
-  type GoToActionProps = typings.spectacle.spectacleMod.GoToActionProps
+  def GoToActionProps: typings.spectacle.mod.GoToActionProps.type = typings.spectacle.mod.GoToActionProps
+  type GoToActionProps = typings.spectacle.mod.GoToActionProps
   @scala.inline
-  def HeadingProps: typings.spectacle.spectacleMod.HeadingProps.type = typings.spectacle.spectacleMod.HeadingProps
-  type HeadingProps = typings.spectacle.spectacleMod.HeadingProps
+  def HeadingProps: typings.spectacle.mod.HeadingProps.type = typings.spectacle.mod.HeadingProps
+  type HeadingProps = typings.spectacle.mod.HeadingProps
   @scala.inline
-  def ImageProps: typings.spectacle.spectacleMod.ImageProps.type = typings.spectacle.spectacleMod.ImageProps
-  type ImageProps = typings.spectacle.spectacleMod.ImageProps
+  def ImageProps: typings.spectacle.mod.ImageProps.type = typings.spectacle.mod.ImageProps
+  type ImageProps = typings.spectacle.mod.ImageProps
   @scala.inline
-  def LayoutProps: typings.spectacle.spectacleMod.LayoutProps.type = typings.spectacle.spectacleMod.LayoutProps
-  type LayoutProps = typings.spectacle.spectacleMod.LayoutProps
+  def LayoutProps: typings.spectacle.mod.LayoutProps.type = typings.spectacle.mod.LayoutProps
+  type LayoutProps = typings.spectacle.mod.LayoutProps
   @scala.inline
-  def LinkProps: typings.spectacle.spectacleMod.LinkProps.type = typings.spectacle.spectacleMod.LinkProps
-  type LinkProps = typings.spectacle.spectacleMod.LinkProps
+  def LinkProps: typings.spectacle.mod.LinkProps.type = typings.spectacle.mod.LinkProps
+  type LinkProps = typings.spectacle.mod.LinkProps
   @scala.inline
-  def ListProps: typings.spectacle.spectacleMod.ListProps.type = typings.spectacle.spectacleMod.ListProps
-  type ListProps = typings.spectacle.spectacleMod.ListProps
+  def ListProps: typings.spectacle.mod.ListProps.type = typings.spectacle.mod.ListProps
+  type ListProps = typings.spectacle.mod.ListProps
   @scala.inline
-  def ListItemProps: typings.spectacle.spectacleMod.ListProps.type = typings.spectacle.spectacleMod.ListProps
-  type ListItemProps = typings.spectacle.spectacleMod.ListProps
+  def ListItemProps: typings.spectacle.mod.ListProps.type = typings.spectacle.mod.ListProps
+  type ListItemProps = typings.spectacle.mod.ListProps
   @scala.inline
-  def MarkdownProps: typings.spectacle.spectacleMod.MarkdownProps.type = typings.spectacle.spectacleMod.MarkdownProps
-  type MarkdownProps = typings.spectacle.spectacleMod.MarkdownProps
+  def MarkdownProps: typings.spectacle.mod.MarkdownProps.type = typings.spectacle.mod.MarkdownProps
+  type MarkdownProps = typings.spectacle.mod.MarkdownProps
   @scala.inline
-  def NotesProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def NotesProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type NotesProps = BaseProps
   @scala.inline
-  def QuoteProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def QuoteProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type QuoteProps = BaseProps
   @scala.inline
-  def SProps: typings.spectacle.spectacleMod.SProps.type = typings.spectacle.spectacleMod.SProps
-  type SProps = typings.spectacle.spectacleMod.SProps
+  def SProps: typings.spectacle.mod.SProps.type = typings.spectacle.mod.SProps
+  type SProps = typings.spectacle.mod.SProps
   @scala.inline
-  def SlideProps: typings.spectacle.spectacleMod.SlideProps.type = typings.spectacle.spectacleMod.SlideProps
-  type SlideProps = typings.spectacle.spectacleMod.SlideProps
+  def SlideProps: typings.spectacle.mod.SlideProps.type = typings.spectacle.mod.SlideProps
+  type SlideProps = typings.spectacle.mod.SlideProps
   @scala.inline
-  def SlideSetProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def SlideSetProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type SlideSetProps = BaseProps
   @scala.inline
-  def TableProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def TableProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type TableProps = BaseProps
   @scala.inline
-  def TableBodyProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def TableBodyProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type TableBodyProps = BaseProps
   @scala.inline
-  def TableHeaderProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def TableHeaderProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type TableHeaderProps = BaseProps
   @scala.inline
-  def TableHeaderItemProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def TableHeaderItemProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type TableHeaderItemProps = BaseProps
   @scala.inline
-  def TableItemProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def TableItemProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type TableItemProps = BaseProps
   @scala.inline
-  def TableRowProps: BaseProps.type = typings.spectacle.spectacleMod.BaseProps
+  def TableRowProps: BaseProps.type = typings.spectacle.mod.BaseProps
   type TableRowProps = BaseProps
   @scala.inline
-  def TextProps: typings.spectacle.spectacleMod.TextProps.type = typings.spectacle.spectacleMod.TextProps
-  type TextProps = typings.spectacle.spectacleMod.TextProps
+  def TextProps: typings.spectacle.mod.TextProps.type = typings.spectacle.mod.TextProps
+  type TextProps = typings.spectacle.mod.TextProps
   @scala.inline
-  def UnfitTextProps: typings.spectacle.spectacleMod.TextProps.type = typings.spectacle.spectacleMod.TextProps
-  type UnfitTextProps = typings.spectacle.spectacleMod.TextProps
+  def UnfitTextProps: typings.spectacle.mod.TextProps.type = typings.spectacle.mod.TextProps
+  type UnfitTextProps = typings.spectacle.mod.TextProps
 }
 

@@ -1,6 +1,6 @@
 package typings.dojo.dojox.dgauges
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.endThickness
 import typings.dojo.dojoStrings.fill
 import typings.dojo.dojoStrings.paddingBottom
@@ -147,7 +147,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fill(
     property: fill,
@@ -157,7 +157,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_paddingBottom(
     property: paddingBottom,
@@ -167,7 +167,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_paddingLeft(
     property: paddingLeft,
@@ -177,7 +177,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_paddingRight(
     property: paddingRight,
@@ -187,7 +187,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_paddingTop(
     property: paddingTop,
@@ -197,7 +197,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_ranges(
     property: ranges,
@@ -207,7 +207,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[js.Array[_]], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_rounded(
     property: rounded,
@@ -217,7 +217,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_segmentSpacing(
     property: segmentSpacing,
@@ -227,7 +227,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_segments(
     property: segments,
@@ -237,7 +237,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_start(
     property: start,
@@ -247,7 +247,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_startThickness(
     property: startThickness,
@@ -257,7 +257,7 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_stroke(
     property: stroke,
@@ -267,6 +267,6 @@ class RectangularSegmentedRangeIndicator () extends IndicatorBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation._
 class BrowserWindow () extends EventEmitter {
   def this(options: BrowserWindowConstructorOptions) = this()
   var id: Double = js.native
-  var webContents: WebContents = js.native
+  var webContents: WebContents_ = js.native
   /**
     * Replacement API for setBrowserView supporting work with multi browser views.
     */
@@ -151,22 +151,22 @@ class BrowserWindow () extends EventEmitter {
     * Captures a snapshot of the page within rect. Omitting rect will capture the
     * whole visible page.
     */
-  def capturePage(): js.Promise[NativeImage] = js.native
+  def capturePage(): js.Promise[NativeImage_] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
     * data of the snapshot. Omitting rect will capture the whole visible page.
     * Deprecated Soon
     */
-  def capturePage(callback: js.Function1[/* image */ NativeImage, Unit]): Unit = js.native
-  def capturePage(rect: Rectangle): js.Promise[NativeImage] = js.native
+  def capturePage(callback: js.Function1[/* image */ NativeImage_, Unit]): Unit = js.native
+  def capturePage(rect: Rectangle): js.Promise[NativeImage_] = js.native
   /**
     * Captures a snapshot of the page within rect. Upon completion callback will be
     * called with callback(image). The image is an instance of NativeImage that stores
     * data of the snapshot. Omitting rect will capture the whole visible page.
     * Deprecated Soon
     */
-  def capturePage(rect: Rectangle, callback: js.Function1[/* image */ NativeImage, Unit]): Unit = js.native
+  def capturePage(rect: Rectangle, callback: js.Function1[/* image */ NativeImage_, Unit]): Unit = js.native
   /**
     * Moves window to the center of the screen.
     */
@@ -818,7 +818,7 @@ class BrowserWindow () extends EventEmitter {
   /**
     * Changes window icon.
     */
-  def setIcon(icon: NativeImage): Unit = js.native
+  def setIcon(icon: NativeImage_): Unit = js.native
   /**
     * Makes the window ignore all mouse events. All mouse events happened in this
     * window will be passed to the window below this window, but if this window has
@@ -871,7 +871,7 @@ class BrowserWindow () extends EventEmitter {
     * Sets a 16 x 16 pixel overlay onto the current taskbar icon, usually used to
     * convey some sort of application status or to passively notify the user.
     */
-  def setOverlayIcon(overlay: NativeImage, description: String): Unit = js.native
+  def setOverlayIcon(overlay: NativeImage_, description: String): Unit = js.native
   /**
     * Sets parent as current window's parent window, passing null will turn current
     * window into a top-level window.
@@ -1038,7 +1038,7 @@ object BrowserWindow extends js.Object {
   def addExtension(path: String): Unit = js.native
   def fromBrowserView(browserView: BrowserView): BrowserWindow | Null = js.native
   def fromId(id: Double): BrowserWindow = js.native
-  def fromWebContents(webContents: WebContents): BrowserWindow = js.native
+  def fromWebContents(webContents: WebContents_): BrowserWindow = js.native
   def getAllWindows(): js.Array[BrowserWindow] = js.native
   /**
     * To check if a DevTools extension is installed you can run the following: Note:

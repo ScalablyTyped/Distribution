@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
   * the pattern of the URL.
   *
   */
-@JSName("PatternFileTypeMap")
 trait PatternFileTypeMap_ extends js.Object {
   /**
     *

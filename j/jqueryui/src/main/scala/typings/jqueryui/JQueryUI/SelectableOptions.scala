@@ -1,10 +1,10 @@
 package typings.jqueryui.JQueryUI
 
 import typings.jquery.JQueryEventObject
-import typings.jqueryui.Anon_Selected
-import typings.jqueryui.Anon_Selecting
-import typings.jqueryui.Anon_Unselected
-import typings.jqueryui.Anon_Unselecting
+import typings.jqueryui.AnonSelected
+import typings.jqueryui.AnonSelecting
+import typings.jqueryui.AnonUnselected
+import typings.jqueryui.AnonUnselecting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,13 +29,13 @@ object SelectableOptions {
     disabled: js.UndefOr[Boolean] = js.undefined,
     distance: Int | Double = null,
     filter: String = null,
-    selected: (/* event */ JQueryEventObject, /* ui */ Anon_Selected) => Unit = null,
-    selecting: (/* event */ JQueryEventObject, /* ui */ Anon_Selecting) => Unit = null,
+    selected: (/* event */ JQueryEventObject, /* ui */ AnonSelected) => Unit = null,
+    selecting: (/* event */ JQueryEventObject, /* ui */ AnonSelecting) => Unit = null,
     start: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
     stop: (/* event */ JQueryEventObject, /* ui */ js.Any) => Unit = null,
     tolerance: String = null,
-    unselected: (/* event */ JQueryEventObject, /* ui */ Anon_Unselected) => Unit = null,
-    unselecting: (/* event */ JQueryEventObject, /* ui */ Anon_Unselecting) => Unit = null
+    unselected: (/* event */ JQueryEventObject, /* ui */ AnonUnselected) => Unit = null,
+    unselecting: (/* event */ JQueryEventObject, /* ui */ AnonUnselecting) => Unit = null
   ): SelectableOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])

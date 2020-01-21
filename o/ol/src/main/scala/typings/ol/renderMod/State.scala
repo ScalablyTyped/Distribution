@@ -1,7 +1,7 @@
 package typings.ol.renderMod
 
-import typings.ol.featureMod.FeatureLike
-import typings.ol.geomSimpleGeometryMod.default
+import typings.ol.olFeatureMod.FeatureLike
+import typings.ol.simpleGeometryMod.default
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`

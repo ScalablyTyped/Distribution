@@ -1,8 +1,8 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.sharepoint.Anon_BDelayInit
-import typings.sharepoint.Anon_BLimitToList
-import typings.sharepoint.Anon_DataValue
+import typings.sharepoint.AnonBDelayInit
+import typings.sharepoint.AnonBLimitToList
+import typings.sharepoint.AnonDataValue
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ object PropertyType extends js.Object {
       fieldKey: java.lang.String,
       newValue: js.Any,
       bIsLocalized: Boolean,
-      fnCallback: js.Function1[/* args */ Anon_DataValue, Unit],
+      fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
       fnError: js.Any
     ): Unit = js.native
     def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
@@ -43,7 +43,7 @@ object PropertyType extends js.Object {
       fieldKey: java.lang.String,
       newValue: js.Any,
       bIsLocalized: Boolean,
-      fnCallback: js.Function1[/* args */ Anon_DataValue, Unit],
+      fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
       fnError: js.Any
     ): Unit = js.native
     def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
@@ -61,7 +61,7 @@ object PropertyType extends js.Object {
       fieldKey: java.lang.String,
       newValue: js.Any,
       bIsLocalized: Boolean,
-      fnCallback: js.Function1[/* args */ Anon_DataValue, Unit],
+      fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
       fnError: js.Any
     ): Unit = js.native
     def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
@@ -81,7 +81,7 @@ object PropertyType extends js.Object {
       fieldKey: java.lang.String,
       newValue: js.Any,
       bIsLocalized: Boolean,
-      fnCallback: js.Function1[/* args */ Anon_DataValue, Unit],
+      fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
       fnError: js.Any
     ): Unit = js.native
     /* CompleteClass */
@@ -93,7 +93,7 @@ object PropertyType extends js.Object {
     /* CompleteClass */
     override def GetItems(fnCallback: js.Any): Unit = js.native
     /* CompleteClass */
-    override def GetSerializableLookupPropType(): Anon_BLimitToList = js.native
+    override def GetSerializableLookupPropType(): AnonBLimitToList = js.native
     /* CompleteClass */
     override def GetStyleId(dataValue: js.Any): java.lang.String = js.native
     /* CompleteClass */
@@ -116,11 +116,11 @@ object PropertyType extends js.Object {
       fieldKey: java.lang.String,
       newValue: js.Any,
       bIsLocalized: Boolean,
-      fnCallback: js.Function1[/* args */ Anon_DataValue, Unit],
+      fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
       fnError: js.Any
     ): Unit = js.native
     /* CompleteClass */
-    override def GetSerializableMultiValuePropType(): Anon_BDelayInit = js.native
+    override def GetSerializableMultiValuePropType(): AnonBDelayInit = js.native
     /* CompleteClass */
     override def InitSingleValuePropType(): Unit = js.native
     /* CompleteClass */
@@ -139,7 +139,7 @@ object PropertyType extends js.Object {
       fieldKey: java.lang.String,
       newValue: js.Any,
       bIsLocalized: Boolean,
-      fnCallback: js.Function1[/* args */ Anon_DataValue, Unit],
+      fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
       fnError: js.Any
     ): Unit = js.native
   }

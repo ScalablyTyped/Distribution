@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 /**
   *
   */
-@JSName("GetSubListRet")
 trait GetSubListRet_ extends js.Object
 

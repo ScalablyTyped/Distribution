@@ -22,20 +22,20 @@ object unfold extends js.Object {
   def apply[T, U](
     unspool: js.Function1[
       /* seed */ U, 
-      (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
+      (js.Tuple2[T | Promise_[T], U | Promise_[U]]) | (Promise_[js.Tuple2[T | Promise_[T], U | Promise_[U]]])
     ],
-    predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
-    handler: js.Function1[/* value */ T, Promise[_] | Unit],
+    predicate: js.Function1[/* value */ U, Boolean | Promise_[Boolean]],
+    handler: js.Function1[/* value */ T, Promise_[_] | Unit],
     seed: U
-  ): Promise[Unit] = js.native
+  ): Promise_[Unit] = js.native
   def apply[T, U](
     unspool: js.Function1[
       /* seed */ U, 
-      (js.Tuple2[T | Promise[T], U | Promise[U]]) | (Promise[js.Tuple2[T | Promise[T], U | Promise[U]]])
+      (js.Tuple2[T | Promise_[T], U | Promise_[U]]) | (Promise_[js.Tuple2[T | Promise_[T], U | Promise_[U]]])
     ],
-    predicate: js.Function1[/* value */ U, Boolean | Promise[Boolean]],
-    handler: js.Function1[/* value */ T, Promise[_] | Unit],
-    seed: Promise[U]
-  ): Promise[Unit] = js.native
+    predicate: js.Function1[/* value */ U, Boolean | Promise_[Boolean]],
+    handler: js.Function1[/* value */ T, Promise_[_] | Unit],
+    seed: Promise_[U]
+  ): Promise_[Unit] = js.native
 }
 

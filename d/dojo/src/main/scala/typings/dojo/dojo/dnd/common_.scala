@@ -1,6 +1,6 @@
 package typings.dojo.dojo.dnd
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
   * TODOC
   *
   */
-@JSName("common")
 trait common_ extends js.Object {
   /**
     *
@@ -28,7 +27,7 @@ trait common_ extends js.Object {
     *
     * @param e
     */
-  def isFormElement(e: Event): Unit
+  def isFormElement(e: Event_): Unit
   /**
     * Returns the current DnD manager.  Creates one if it is not created yet.
     *
@@ -41,7 +40,7 @@ object common_ {
   def apply(
     getCopyKeyState: js.Any => js.Any,
     getUniqueId: () => String,
-    isFormElement: Event => Unit,
+    isFormElement: Event_ => Unit,
     manager: () => js.Any
   ): common_ = {
     val __obj = js.Dynamic.literal(getCopyKeyState = js.Any.fromFunction1(getCopyKeyState), getUniqueId = js.Any.fromFunction0(getUniqueId), isFormElement = js.Any.fromFunction1(isFormElement), manager = js.Any.fromFunction0(manager))

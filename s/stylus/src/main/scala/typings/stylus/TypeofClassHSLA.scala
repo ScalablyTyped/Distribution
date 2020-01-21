@@ -1,8 +1,8 @@
 package typings.stylus
 
 import org.scalablytyped.runtime.Instantiable4
-import typings.stylus.stylusMod.Stylus.Nodes.HSLA
-import typings.stylus.stylusMod.Stylus.Nodes.RGBA
+import typings.stylus.mod.Stylus.Nodes.HSLA
+import typings.stylus.mod.Stylus.Nodes.RGBA
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

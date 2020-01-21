@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.datepicker")
 @js.native
-object datepicker extends TopLevel[DatePicker]
+object datepicker extends TopLevel[DatePicker_]
 

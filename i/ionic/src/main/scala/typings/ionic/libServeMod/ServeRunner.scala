@@ -1,14 +1,14 @@
 package typings.ionic.libServeMod
 
-import typings.atIonicCliDashFramework.definitionsMod.CommandLineInputs
-import typings.atIonicCliDashFramework.definitionsMod.CommandLineOptions
-import typings.atIonicUtilsDashNetwork.atIonicUtilsDashNetworkMod.NetworkInterface
 import typings.ionic.definitionsMod.CommandMetadata
 import typings.ionic.definitionsMod.DevAppDetails
 import typings.ionic.definitionsMod.LabServeDetails
 import typings.ionic.definitionsMod.Runner
 import typings.ionic.definitionsMod.ServeDetails
 import typings.ionic.definitionsMod.ServeOptions
+import typings.ionicCliFramework.definitionsMod.CommandLineInputs
+import typings.ionicCliFramework.definitionsMod.CommandLineOptions
+import typings.ionicUtilsNetwork.mod.NetworkInterface
 import typings.std.Partial
 import typings.std.Set
 import scala.scalajs.js

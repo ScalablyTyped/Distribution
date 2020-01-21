@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("echarts", "registerTheme")
+@JSImport("echarts/lib/echarts", "registerTheme")
 @js.native
 object registerTheme extends js.Object {
   /**

@@ -44,7 +44,7 @@ trait Dock extends js.Object {
   /**
     * Sets the image associated with this dock icon.
     */
-  def setIcon(image: NativeImage): Unit = js.native
+  def setIcon(image: NativeImage_): Unit = js.native
   /**
     * Sets the application's dock menu.
     */

@@ -37,7 +37,7 @@ class PropertyBinding protected () extends Binding {
     * Returns the type if any for the binding.
     * @returns the binding type
     */
-  def getType(): Type = js.native
+  def getType(): Type_ = js.native
   /**
     * Returns the current value of the bound target
     * @returns the current value of the bound target
@@ -67,7 +67,7 @@ class PropertyBinding protected () extends Binding {
     * @param oType the type for the binding
     * @param sInternalType the internal type of the element property which this binding is bound against.
     */
-  def setType(oType: Type, sInternalType: String): Unit = js.native
+  def setType(oType: Type_, sInternalType: String): Unit = js.native
   /**
     * Sets the value for this binding. A model implementation should check if the current default binding
     * mode permitssetting the binding value and if so set the new value also in the model.

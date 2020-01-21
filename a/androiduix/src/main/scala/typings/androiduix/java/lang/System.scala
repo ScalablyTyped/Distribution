@@ -1,6 +1,6 @@
 package typings.androiduix.java.lang
 
-import typings.androiduix.Anon_Any
+import typings.androiduix.AnonAny
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ class System () extends js.Object
 @JSGlobal("java.lang.System")
 @js.native
 object System extends js.Object {
-  var out: Anon_Any = js.native
+  var out: AnonAny = js.native
   def arraycopy(src: js.Array[_], srcPos: Double, dest: js.Array[_], destPos: Double, length: Double): Unit = js.native
   def currentTimeMillis(): Double = js.native
 }

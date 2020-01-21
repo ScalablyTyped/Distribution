@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides the ability to control and obtain details about how a particular MediaStreamTrack is encoded and sent to a remote peer. */
 @js.native
 trait RTCRtpSender extends js.Object {
-  val dtmf: RTCDTMFSender | Null = js.native
+  val dtmf: RTCDTMFSender_ | Null = js.native
   val rtcpTransport: RTCDtlsTransport | Null = js.native
   val track: MediaStreamTrack | Null = js.native
   val transport: RTCDtlsTransport | Null = js.native

@@ -1,8 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.antd.libTableInterfaceMod.FilterMenuProps
-import typings.react.reactMod.Key
+import typings.antd.tableInterfaceMod.FilterMenuProps
+import typings.react.mod.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rolling-rate-limiter"
-version := "0.1-dt-20180510Z-06fc3a"
+version := "0.1-dt-20180510Z-845399"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

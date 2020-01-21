@@ -1,8 +1,8 @@
 package typings.xlsx
 
-import typings.xlsx.xlsxMod.BookType
-import typings.xlsx.xlsxMod.ExcelDataType
-import typings.xlsx.xlsxMod.SheetType
+import typings.xlsx.mod.BookType
+import typings.xlsx.mod.ExcelDataType
+import typings.xlsx.mod.SheetType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

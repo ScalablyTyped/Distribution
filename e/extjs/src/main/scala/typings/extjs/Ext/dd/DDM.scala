@@ -4,7 +4,7 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IClass
 import typings.extjs.Ext.util.IRegion
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -174,7 +174,7 @@ object DDM extends js.Object {
   		* @param e Event the event as returned by this.getEvent()
   		*/
   def stopEvent(): Unit = js.native
-  def stopEvent(e: Event): Unit = js.native
+  def stopEvent(e: Event_): Unit = js.native
   /** [Method] Unlock all drag and drop functionality */
   def unlock(): Unit = js.native
   /** [Method] This checks to make sure an element exists and is in the DOM

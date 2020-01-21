@@ -1,8 +1,8 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.NumericDictionary
-import typings.lodash.lodashMod.PropertyPath
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.NumericDictionary
+import typings.lodash.mod.PropertyPath
+import typings.lodash.mod.__
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashPropOr1x1[TDefault] extends js.Object {
   def apply(path: Double): LodashPropOr5x3[TDefault] = js.native
-  def apply(path: PropertyPath): LodashPropOr6x3[TDefault] = js.native
+  def apply(path: PropertyPath): TDefault = js.native
   def apply(path: __): LodashPropOr6x5[TDefault] = js.native
   def apply[T](path: Double, `object`: NumericDictionary[T]): T | TDefault = js.native
   def apply[TObject /* <: js.Object */](path: __, `object`: TObject): LodashPropOr1x5[TObject, TDefault] = js.native

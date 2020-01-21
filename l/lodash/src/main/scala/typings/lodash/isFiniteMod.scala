@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("lodash/isFinite", JSImport.Namespace)
+@JSImport("lodash/fp/isFinite", JSImport.Namespace)
 @js.native
 object isFiniteMod extends js.Object {
   /**

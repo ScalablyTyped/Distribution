@@ -1,6 +1,6 @@
 package typings.sharepoint.SP.JsGrid
 
-import typings.microsoftDashAjax.Sys.UI.DomEvent
+import typings.microsoftAjax.Sys.UI.DomEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

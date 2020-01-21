@@ -1,14 +1,14 @@
 package typings.baseui.menuMod
 
-import typings.baseui.Anon_EventItem
+import typings.baseui.AnonEventItem
 import typings.baseui.baseuiStrings.click
 import typings.baseui.baseuiStrings.focus
 import typings.baseui.baseuiStrings.mouseEnter
 import typings.baseui.baseuiStrings.moveDown
 import typings.baseui.baseuiStrings.moveUp
 import typings.baseui.baseuiStrings.reset
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,7 @@ object StatefulContainerProps {
     getParentMenu: /* ref */ Ref[HTMLElement] => Unit = null,
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,
     initialState: StatefulContainerState = null,
-    onItemSelect: /* args */ Anon_EventItem => js.Any = null,
+    onItemSelect: /* args */ AnonEventItem => js.Any = null,
     removeMenuFromNesting: /* ref */ Ref[HTMLElement] => Unit = null,
     rootRef: Ref[_] = null,
     stateReducer: (/* changeType */ moveDown | moveUp | reset | click | focus | mouseEnter, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => StatefulContainerState = null

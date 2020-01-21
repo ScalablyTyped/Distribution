@@ -1,10 +1,10 @@
 package typings.q
 
-import typings.q.qMod.Deferred
-import typings.q.qMod.IPromise
-import typings.q.qMod.IWhenable
-import typings.q.qMod.Promise
-import typings.q.qMod.PromiseState
+import typings.q.mod.Deferred
+import typings.q.mod.IPromise
+import typings.q.mod.IWhenable
+import typings.q.mod.Promise
+import typings.q.mod.PromiseState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ trait Typeofq extends js.Object {
       /* notify */ js.Function1[/* progress */ js.Any, Unit], 
       Unit
     ]
-  ): typings.q.qMod.Promise[T] = js.native
+  ): typings.q.mod.Promise[T] = js.native
   def all[T](promises: IWhenable[js.Array[IWhenable[T]]]): Promise[js.Array[T]] = js.native
   def allResolved[T](promises: IWhenable[js.Array[IWhenable[T]]]): Promise[js.Array[Promise[T]]] = js.native
   def allSettled[T](promises: IWhenable[js.Array[IWhenable[T]]]): Promise[js.Array[PromiseState[T]]] = js.native

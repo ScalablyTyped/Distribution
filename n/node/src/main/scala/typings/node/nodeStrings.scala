@@ -4,9 +4,9 @@ import typings.node.NodeJS.MultipleResolveType
 import typings.node.NodeJS.Platform
 import typings.node.NodeJS.Signals
 import typings.node.bufferMod.TranscodeEncoding
-import typings.node.childUnderscoreProcessMod.SerializationType
-import typings.node.childUnderscoreProcessMod.StdioNull
-import typings.node.childUnderscoreProcessMod._StdioOptions
+import typings.node.childProcessMod.SerializationType
+import typings.node.childProcessMod.StdioNull
+import typings.node.childProcessMod._StdioOptions
 import typings.node.cryptoMod.CipherCCMTypes
 import typings.node.cryptoMod.CipherGCMTypes
 import typings.node.cryptoMod.ECDHKeyFormat

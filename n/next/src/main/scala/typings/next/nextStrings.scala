@@ -1,6 +1,6 @@
 package typings.next
 
-import typings.next.distLibCheckDashCustomDashRoutesMod.RouteType
+import typings.next.checkCustomRoutesMod.RouteType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

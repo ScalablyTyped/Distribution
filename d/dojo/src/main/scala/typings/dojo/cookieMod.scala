@@ -1,12 +1,12 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.TopLevel
-import typings.dojo.dojo.cookie
+import typings.dojo.dojox.grid.enhanced.plugins.Cookie
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("dojo/cookie", JSImport.Namespace)
+@JSImport("dojox/grid/enhanced/plugins/Cookie", JSImport.Namespace)
 @js.native
-object cookieMod extends TopLevel[cookie]
+object cookieMod extends TopLevel[Cookie]
 

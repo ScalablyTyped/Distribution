@@ -21,6 +21,6 @@ trait IpcMainEvent extends Event {
   /**
     * Returns the webContents that sent the message
     */
-  var sender: WebContents = js.native
+  var sender: WebContents_ = js.native
 }
 

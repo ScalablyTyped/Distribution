@@ -1,6 +1,6 @@
 package typings.bent
 
-import typings.bent.bentMod.HttpMethod
+import typings.bent.mod.HttpMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

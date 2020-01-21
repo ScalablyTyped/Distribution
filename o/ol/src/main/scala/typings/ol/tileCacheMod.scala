@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object tileCacheMod extends js.Object {
   @js.native
   trait TileCache
-    extends typings.ol.structsLRUCacheMod.default[js.Any] {
+    extends typings.ol.lrucacheMod.default[js.Any] {
     def expireCache(usedTiles: StringDictionary[typings.ol.tileRangeMod.default]): Unit = js.native
     def pruneExceptNewestZ(): Unit = js.native
   }

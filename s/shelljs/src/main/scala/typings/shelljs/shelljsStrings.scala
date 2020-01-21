@@ -1,7 +1,7 @@
 package typings.shelljs
 
-import typings.shelljs.shelljsMod.TestOptions
-import typings.shelljs.shelljsMod.TouchOptionsLiteral
+import typings.shelljs.mod.TestOptions
+import typings.shelljs.mod.TouchOptionsLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

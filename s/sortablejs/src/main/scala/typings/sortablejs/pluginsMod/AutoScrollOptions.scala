@@ -1,8 +1,8 @@
 package typings.sortablejs.pluginsMod
 
-import typings.sortablejs.sortablejsMod.^
+import typings.sortablejs.mod.^
 import typings.sortablejs.sortablejsStrings.continue
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.TouchEvent
 import scala.scalajs.js
@@ -26,7 +26,7 @@ trait AutoScrollOptions extends js.Object {
       /* this */ ^, 
       /* offsetX */ Double, 
       /* offsetY */ Double, 
-      /* originalEvent */ Event, 
+      /* originalEvent */ Event_, 
       /* touchEvt */ TouchEvent, 
       /* hoverTargetEl */ HTMLElement, 
       continue | Unit
@@ -51,7 +51,7 @@ object AutoScrollOptions {
       /* this */ ^, 
       /* offsetX */ Double, 
       /* offsetY */ Double, 
-      /* originalEvent */ Event, 
+      /* originalEvent */ Event_, 
       /* touchEvt */ TouchEvent, 
       /* hoverTargetEl */ HTMLElement, 
       continue | Unit

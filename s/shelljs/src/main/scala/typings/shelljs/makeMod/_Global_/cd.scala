@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("cd")
 @js.native
 object cd
-  extends TopLevel[
-      js.Function1[/* dir */ js.UndefOr[String], typings.shelljs.shelljsMod.ShellString]
-    ]
+  extends TopLevel[js.Function1[/* dir */ js.UndefOr[String], typings.shelljs.mod.ShellString]]
 

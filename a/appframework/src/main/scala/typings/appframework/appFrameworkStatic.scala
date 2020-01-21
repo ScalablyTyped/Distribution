@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait appFrameworkStatic extends js.Object {
   /* AJAX settings */
   var ajaxSettings: appFrameworkAjaxSettings = js.native
-  var feat: Anon_CssPrefix = js.native
+  var feat: AnonCssPrefix = js.native
   /**
     * Prototype for afm object.  Also extens $.fn
     */
@@ -33,7 +33,7 @@ trait appFrameworkStatic extends js.Object {
     * .feat.nativetouchScroll
     * @api private
     */
-  var os: Anon_Android = js.native
+  var os: AnonAndroid = js.native
   def apply(collection: appFrameworkCollection): appFrameworkCollection = js.native
   def apply(element: HTMLElement): appFrameworkCollection = js.native
   def apply(`object`: js.Any): appFrameworkCollection = js.native

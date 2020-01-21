@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var URI: URIStatic = js.native
   var URITemplate: URITemplateStatic = js.native
+  @JSName("URI")
+  var URI_ : URIStatic = js.native
 }
 

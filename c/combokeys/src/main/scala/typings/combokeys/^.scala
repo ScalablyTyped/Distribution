@@ -1,6 +1,6 @@
 package typings.combokeys
 
-import typings.combokeys.Combokeys.CombokeysStatic
+import typings.combokeys.Combokeys_.CombokeysStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

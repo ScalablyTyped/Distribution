@@ -1,11 +1,11 @@
 package typings.ethers.ethersMod
 
-import typings.ethers.distTypesWordlistsWordlistMod.Wordlist
+import typings.ethers.wordlistMod.Wordlist
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ethers", "wordlists")
+@JSImport("ethers/dist/types/ethers", "wordlists")
 @js.native
 object wordlists extends js.Object {
   val en: Wordlist = js.native
@@ -13,7 +13,9 @@ object wordlists extends js.Object {
   val ja: Wordlist = js.native
   val ko: Wordlist = js.native
   val zh: Wordlist = js.native
-  val zh_cn: Wordlist = js.native
-  val zh_tw: Wordlist = js.native
+  @JSName("zh_cn")
+  val zhCn: Wordlist = js.native
+  @JSName("zh_tw")
+  val zhTw: Wordlist = js.native
 }
 

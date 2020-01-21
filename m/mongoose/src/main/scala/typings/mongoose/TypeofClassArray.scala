@@ -3,8 +3,8 @@ package typings.mongoose
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.mongoose.mongooseMod.Schema.Types.Array
-import typings.mongoose.mongooseMod.SchemaType
+import typings.mongoose.mod.Schema.Types.Array
+import typings.mongoose.mod.SchemaType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

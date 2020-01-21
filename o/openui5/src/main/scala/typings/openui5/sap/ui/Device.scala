@@ -33,7 +33,8 @@ object Device extends js.Object {
     /**
       * If this flag is set to <code>true</code>, the Microsoft Internet Explorer browser is used.
       */
-    var internet_explorer: Boolean = js.native
+    @JSName("internet_explorer")
+    var internetExplorer: Boolean = js.native
     /**
       * If this flag is set to <code>true</code>, the mobile variant of the browser is used.<b>Note:</b>
       * This information might not be available for all browsers.
@@ -361,7 +362,8 @@ object Device extends js.Object {
     /**
       * If this flag is set to <code>true</code>, a Windows Phone operating system is used.
       */
-    var windows_phone: Boolean = js.native
+    @JSName("windows_phone")
+    var windowsPhone: Boolean = js.native
     @js.native
     object OS extends js.Object {
       /**

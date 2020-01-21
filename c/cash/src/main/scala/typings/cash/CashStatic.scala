@@ -16,14 +16,14 @@ trait CashStatic extends js.Object {
     * @type property
     */
   var fn: js.Any = js.native
-  def apply(elementArray: js.Array[Element]): Cash = js.native
-  def apply(element: Element): Cash = js.native
+  def apply(elementArray: js.Array[Element]): Cash_ = js.native
+  def apply(element: Element): Cash_ = js.native
   /**
     * selector declaration for Cash to use $(<argument>)
     */
-  def apply(selector: String): Cash = js.native
-  def apply(selector: String, context: Cash): Cash = js.native
-  def apply(selector: String, context: Element): Cash = js.native
+  def apply(selector: String): Cash_ = js.native
+  def apply(selector: String, context: Cash_): Cash_ = js.native
+  def apply(selector: String, context: Element): Cash_ = js.native
   /**
     * each
     * Iterates through a collection and calls the callback method on each.
@@ -79,7 +79,7 @@ trait CashStatic extends js.Object {
     * @argument element Cash, selector string
     * @return boolean
     */
-  def matches(element: Cash, selector: String): Boolean = js.native
+  def matches(element: Cash_, selector: String): Boolean = js.native
   /**
     * parseHTML
     * Returns a collection from an HTML string.
@@ -87,6 +87,6 @@ trait CashStatic extends js.Object {
     * @argument htmlString string
     * @return Cash
     */
-  def parseHTML(htmlString: String): Cash = js.native
+  def parseHTML(htmlString: String): Cash_ = js.native
 }
 

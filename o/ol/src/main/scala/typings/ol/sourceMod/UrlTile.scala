@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceUrlTileMod.Options
-import typings.ol.sourceUrlTileMod.default
+import typings.ol.urlTileMod.Options
+import typings.ol.urlTileMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

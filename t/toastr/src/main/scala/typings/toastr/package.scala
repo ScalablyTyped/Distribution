@@ -5,13 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object toastr {
-  import typings.jquery.JQuery
-  import typings.std.HTMLElement
-
   type ToastrDisplayMethod = js.Function3[
-    /* message */ String, 
-    /* title */ js.UndefOr[String], 
-    /* overrides */ js.UndefOr[ToastrOptions], 
-    JQuery[HTMLElement]
+    /* message */ java.lang.String, 
+    /* title */ js.UndefOr[java.lang.String], 
+    /* overrides */ js.UndefOr[typings.toastr.ToastrOptions], 
+    typings.jquery.JQuery_[typings.std.HTMLElement]
   ]
 }

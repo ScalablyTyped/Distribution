@@ -1,8 +1,8 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.three.srcPolyfillsMod.TypedArray
-import typings.three.threeMod.LoaderUtils
+import typings.three.mod.LoaderUtils
+import typings.three.polyfillsMod.TypedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-toastmessage-plugin"
-version := "0.2-dt-20190213Z-5f82cd"
+version := "0.2-dt-20190213Z-6968f6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

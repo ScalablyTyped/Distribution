@@ -1,10 +1,10 @@
 package typings.swiper
 
-import typings.swiper.swiperMod.AutoplayEvent
-import typings.swiper.swiperMod.CommonEvent
-import typings.swiper.swiperMod.LazyLoadingEvent
-import typings.swiper.swiperMod.PaginationEvent
-import typings.swiper.swiperMod.SwiperEvent
+import typings.swiper.mod.AutoplayEvent
+import typings.swiper.mod.CommonEvent
+import typings.swiper.mod.LazyLoadingEvent
+import typings.swiper.mod.PaginationEvent
+import typings.swiper.mod.SwiperEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

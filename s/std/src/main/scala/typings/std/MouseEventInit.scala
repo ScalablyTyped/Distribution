@@ -46,7 +46,7 @@ object MouseEventInit {
     screenX: Int | Double = null,
     screenY: Int | Double = null,
     shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    view: Window = null
+    view: Window_ = null
   ): MouseEventInit = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])

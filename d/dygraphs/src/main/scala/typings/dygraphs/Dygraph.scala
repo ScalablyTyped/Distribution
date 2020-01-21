@@ -383,7 +383,7 @@ object Dygraph extends js.Object {
   var MINUTELY: Double = js.native
   var MONTHLY: Double = js.native
   var NUM_GRANULARITIES: Double = js.native
-  var Plotters: Anon_ErrorPlotter = js.native
+  var Plotters: AnonErrorPlotter = js.native
   var QUARTERLY: Double = js.native
   // Tick granularities (passed to ticker).
   var SECONDLY: Double = js.native

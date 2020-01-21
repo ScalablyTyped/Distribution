@@ -1161,7 +1161,7 @@ object Tilemaps extends js.Object {
     /**
       * An array of the tile indexes
       */
-    var data: js.Array[Double] = js.native
+    var data: js.Array[js.Array[Tile]] = js.native
     /**
       * The height in tiles of the layer.
       */
@@ -3375,7 +3375,7 @@ object Tilemaps extends js.Object {
     /**
       * Return a list of all valid tilelayer names loaded in this Tilemap.
       */
-    def getTileLayerNames(): js.Any = js.native
+    def getTileLayerNames(): js.Array[String] = js.native
     /**
       * Gets the tiles in the given rectangular area (in tile coordinates) of the layer.
       * If no layer specified, the maps current layer is used.

@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HammerManager extends js.Object {
-  def add(recogniser: js.Array[Recognizer]): HammerManager = js.native
-  def add(recogniser: Recognizer): HammerManager = js.native
+  def add(recogniser: js.Array[Recognizer]): Recognizer = js.native
+  def add(recogniser: Recognizer): Recognizer = js.native
   @JSName("add")
-  def add_Recognizer(recogniser: js.Array[Recognizer]): Recognizer = js.native
+  def add_HammerManager(recogniser: js.Array[Recognizer]): HammerManager = js.native
   @JSName("add")
-  def add_Recognizer(recogniser: Recognizer): Recognizer = js.native
+  def add_HammerManager(recogniser: Recognizer): HammerManager = js.native
   def destroy(): Unit = js.native
   def emit(event: String, data: js.Any): Unit = js.native
   def get(recogniser: String): Recognizer = js.native

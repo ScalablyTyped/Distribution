@@ -1,10 +1,10 @@
 package typings.loopback
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.loopback.loopbackMod.AccessToken
-import typings.loopback.loopbackMod.Application
-import typings.loopback.loopbackMod.Model
-import typings.loopback.loopbackMod.RemoteMethodOptions
+import typings.loopback.mod.AccessToken
+import typings.loopback.mod.Application
+import typings.loopback.mod.Model
+import typings.loopback.mod.RemoteMethodOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

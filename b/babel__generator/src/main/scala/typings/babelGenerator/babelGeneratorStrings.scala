@@ -1,0 +1,49 @@
+package typings.babelGenerator
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object babelGeneratorStrings {
+  @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait backtick extends js.Object
+  
+  @js.native
+  sealed trait binary extends js.Object
+  
+  @js.native
+  sealed trait decimal extends js.Object
+  
+  @js.native
+  sealed trait double extends js.Object
+  
+  @js.native
+  sealed trait hexadecimal extends js.Object
+  
+  @js.native
+  sealed trait octal extends js.Object
+  
+  @js.native
+  sealed trait single extends js.Object
+  
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def backtick: backtick = "backtick".asInstanceOf[backtick]
+  @scala.inline
+  def binary: binary = "binary".asInstanceOf[binary]
+  @scala.inline
+  def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  @scala.inline
+  def hexadecimal: hexadecimal = "hexadecimal".asInstanceOf[hexadecimal]
+  @scala.inline
+  def octal: octal = "octal".asInstanceOf[octal]
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+}
+

@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object plot2d {
-  type common = common_
+  type common = typings.dojo.dojox.charting.plot2d.common_
 }

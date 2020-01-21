@@ -1,7 +1,7 @@
 package typings.mithril
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mithril.mithrilMod.Route
+import typings.mithril.mod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

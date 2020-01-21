@@ -1,6 +1,6 @@
 package typings.graphql.typeMod
 
-import typings.graphql.typeDefinitionMod.GraphQLObjectTypeConfig
+import typings.graphql.definitionMod.GraphQLObjectTypeConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/type", "GraphQLObjectType")
 @js.native
 class GraphQLObjectType[TSource, TContext, TArgs] protected ()
-  extends typings.graphql.typeDefinitionMod.GraphQLObjectType[TSource, TContext, TArgs] {
+  extends typings.graphql.definitionMod.GraphQLObjectType[TSource, TContext, TArgs] {
   def this(config: GraphQLObjectTypeConfig[TSource, TContext, TArgs]) = this()
 }
 

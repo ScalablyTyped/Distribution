@@ -1,20 +1,20 @@
 package typings.cypress
 
-import typings.cypress.Mocha.Interface
+import typings.cypress.Mocha_.Interface
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BrowserMocha extends Mocha {
+trait BrowserMocha extends Mocha_ {
   /**
     * Setup mocha with the given settings options.
     *
     * - _Only supported in the browser._
     */
   def setup(): this.type = js.native
-  def setup(opts: Interface): this.type = js.native
   def setup(opts: MochaSetupOptions): this.type = js.native
+  def setup(opts: Interface): this.type = js.native
   /**
     * Function to allow assertion libraries to throw errors directly into mocha.
     * This is useful when running tests in a browser because window.onerror will

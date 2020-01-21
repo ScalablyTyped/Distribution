@@ -1,5 +1,6 @@
 package typings.zepto
 
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import scala.scalajs.js
@@ -25,7 +26,7 @@ trait ZeptoStatic extends js.Object {
   /**
   	* The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
   	**/
-  var browser: Anon_Chrome = js.native
+  var browser: AnonChrome = js.native
   /**
   	* Zepto.fn is an object that holds all of the methods that are available on Zepto collections, such as addClass(), attr(), and other. Adding a function to this object makes that method available on every Zepto collection.
   	**/
@@ -43,7 +44,7 @@ trait ZeptoStatic extends js.Object {
   /**
   	* The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
   	**/
-  var os: Anon_Android = js.native
+  var os: AnonAndroid = js.native
   /**
   	* @see ZeptoStatic();
   	* @param collection
@@ -88,7 +89,7 @@ trait ZeptoStatic extends js.Object {
   	* @param properties
   	* @return
   	**/
-  def Event(`type`: String, properties: js.Any): typings.std.Event = js.native
+  def Event(`type`: String, properties: js.Any): Event_ = js.native
   /**
   	* Ajax
   	**/

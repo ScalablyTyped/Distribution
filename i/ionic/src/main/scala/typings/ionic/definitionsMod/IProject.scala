@@ -1,11 +1,11 @@
 package typings.ionic.definitionsMod
 
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.BaseConfig
-import typings.atIonicCliDashFramework.definitionsMod.PackageJson
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libGenerateMod.GenerateRunner
 import typings.ionic.libProjectMod.ProjectDetailsResult
 import typings.ionic.libServeMod.ServeRunner
+import typings.ionicCliFramework.definitionsMod.PackageJson
+import typings.ionicCliFramework.mod.BaseConfig
 import typings.std.Required
 import scala.scalajs.js
 import scala.scalajs.js.`|`

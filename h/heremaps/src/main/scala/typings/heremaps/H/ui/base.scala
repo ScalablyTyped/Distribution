@@ -1,7 +1,7 @@
 package typings.heremaps.H.ui
 
 import typings.heremaps.H.util.EventTarget
-import typings.std.Document
+import typings.std.Document_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,7 +79,7 @@ object base extends js.Object {
       * @param element {Element} - this UI element's HTML representation
       * @param doc {Document} - the HTML document into which the element is currently being rendered
       */
-    def renderInternal(element: ES6Element, doc: Document): Unit = js.native
+    def renderInternal(element: ES6Element, doc: Document_): Unit = js.native
     /**
       * This method stores arbitrary data with this UI element.
       * @param data {*} - the data to be stored
@@ -148,7 +148,7 @@ object base extends js.Object {
       * @param element {Element} - this UI element's HTML representation
       * @param doc {Document} - the HTML document into which the element is currently being rendered
       */
-    def renderInternal(element: ES6Element, doc: Document): Unit = js.native
+    def renderInternal(element: ES6Element, doc: Document_): Unit = js.native
     /**
       * This method stores arbitrary data with this UI element.
       * @param data {*} - the data to be stored

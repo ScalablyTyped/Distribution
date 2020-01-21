@@ -3,15 +3,15 @@ package typings.nodal
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.nodal.nodalMod.Composer
-import typings.nodal.nodalMod.Database
-import typings.nodal.nodalMod.IAnyObject
-import typings.nodal.nodalMod.IColumn
-import typings.nodal.nodalMod.IExtendedError
-import typings.nodal.nodalMod.Model
-import typings.nodal.nodalMod.RelationshipEdge
-import typings.nodal.nodalMod.RelationshipNode
-import typings.nodal.nodalMod.RelationshipPath
+import typings.nodal.mod.Composer
+import typings.nodal.mod.Database
+import typings.nodal.mod.IAnyObject
+import typings.nodal.mod.IColumn
+import typings.nodal.mod.IExtendedError
+import typings.nodal.mod.Model
+import typings.nodal.mod.RelationshipEdge
+import typings.nodal.mod.RelationshipNode
+import typings.nodal.mod.RelationshipPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -107,7 +107,7 @@ trait TypeofClassModel
     */
   def joinsTo(
     modelClass: /* import warning: importer.ImportType#apply Failed type conversion: typeof Model */ js.Any,
-    options: Anon_As
+    options: AnonAs
   ): RelationshipEdge | Null = js.native
   /**
     * Creates a new Composer (ORM) instance to begin a new query.
@@ -133,7 +133,7 @@ trait TypeofClassModel
     * Set the schema to be used for this model
     * @param {Object} schema
     */
-  def setSchema(schema: Anon_Columns): Unit = js.native
+  def setSchema(schema: AnonColumns): Unit = js.native
   /**
     * Get the model's table name
     * @return {string}

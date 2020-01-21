@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RuinConstructor extends _ConstructorById[Ruin]
+trait RuinConstructor extends ConstructorById[Ruin]
 

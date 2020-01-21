@@ -1,7 +1,7 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.autoWidth
 import typings.dojo.dojoStrings.dropDown
 import typings.dojo.dojoStrings.dropDownPosition
@@ -21,9 +21,9 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._FocusMixin because Already inherited
-- typings.dojo.dijit._HasDropDown because Inheritance from two classes. Inlined autoWidth, dropDown, dropDownPosition, forceWidth, maxHeight, closeDropDown, destroy, isLoaded, loadAndOpenDropDown, loadDropDown, openDropDown, postCreate, toggleDropDown
-- typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dijit.form.DropDownButton")
+- typings.dojo.dijit.FocusMixin because Already inherited
+- typings.dojo.dijit.HasDropDown because Inheritance from two classes. Inlined autoWidth, dropDown, dropDownPosition, forceWidth, maxHeight, closeDropDown, destroy, isLoaded, loadAndOpenDropDown, loadDropDown, openDropDown, postCreate, toggleDropDown
+- typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dijit.form.DropDownButton")
 @js.native
 class DropDownButton () extends Button {
   def this(params: js.Object) = this()
@@ -85,8 +85,8 @@ class DropDownButton () extends Button {
     * @param widget             
     * @param insertIndex               Optional            
     */
-  def addChild(widget: _WidgetBase): Unit = js.native
-  def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+  def addChild(widget: WidgetBase): Unit = js.native
+  def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
   /**
     * Closes the drop down on this widget
     * 
@@ -108,7 +108,7 @@ class DropDownButton () extends Button {
     * 
     * @param child             
     */
-  def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+  def getIndexOfChild(child: WidgetBase): js.Any = js.native
   @JSName("get")
   def get_autoWidth(property: autoWidth): Boolean = js.native
   @JSName("get")
@@ -204,7 +204,7 @@ class DropDownButton () extends Button {
     * 
     * @param widget             
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
   @JSName("set")
   def set_autoWidth(property: autoWidth, value: Boolean): Unit = js.native
   @JSName("set")
@@ -237,7 +237,7 @@ class DropDownButton () extends Button {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dropDown(
     property: dropDown,
@@ -247,7 +247,7 @@ class DropDownButton () extends Button {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dropDownPosition(
     property: dropDownPosition,
@@ -257,7 +257,7 @@ class DropDownButton () extends Button {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_forceWidth(
     property: forceWidth,
@@ -267,7 +267,7 @@ class DropDownButton () extends Button {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxHeight(
     property: maxHeight,
@@ -277,6 +277,6 @@ class DropDownButton () extends Button {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

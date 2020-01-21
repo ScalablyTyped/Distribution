@@ -1,18 +1,22 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.Dictionary
-import typings.lodash.lodashMod.NumericDictionary
-import typings.lodash.lodashMod.PartialObject
-import typings.lodash.lodashMod.ValueKeyIteratee
-import typings.lodash.lodashMod.ValueKeyIterateeTypeGuard
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.Dictionary
+import typings.lodash.mod.NumericDictionary
+import typings.lodash.mod.PartialObject
+import typings.lodash.mod.ValueKeyIteratee
+import typings.lodash.mod.ValueKeyIterateeTypeGuard
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashPickBy extends js.Object {
-  def apply[T](predicate: ValueKeyIteratee[T]): LodashPickBy3x1[T] = js.native
+  def apply[T /* <: js.Object */](
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): PartialObject[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

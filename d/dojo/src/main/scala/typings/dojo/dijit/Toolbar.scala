@@ -1,6 +1,6 @@
 package typings.dojo.dijit
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojo.keys
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.focusedChild
@@ -10,7 +10,7 @@ import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.tabIndex
 import typings.dojo.dojoStrings.templatePath
 import typings.dojo.dojoStrings.templateString
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -26,14 +26,14 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._FocusMixin because Already inherited
-- typings.dojo.dijit._Container because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._KeyNavMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._KeyNavContainer because Inheritance from two classes. Inlined focusedChild, multiCharSearchDuration, tabIndex, addChild, addChild, childSelector, connectKeyNavHandlers, focus, focusChild, focusFirstChild, focusLastChild, focusNext, focusPrev, getIndexOfChild, hasChildren, postCreate, removeChild, removeChild, startup, startupKeyNavChildren, onKeyboardSearch
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dijit.Toolbar")
+- typings.dojo.dijit.FocusMixin because Already inherited
+- typings.dojo.dijit.Container because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.KeyNavMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.KeyNavContainer because Inheritance from two classes. Inlined focusedChild, multiCharSearchDuration, tabIndex, addChild, addChild, childSelector, connectKeyNavHandlers, focus, focusChild, focusFirstChild, focusLastChild, focusNext, focusPrev, getIndexOfChild, hasChildren, postCreate, removeChild, removeChild, startup, startupKeyNavChildren, onKeyboardSearch
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dijit.Toolbar")
 @js.native
-class Toolbar () extends _Widget {
+class Toolbar () extends Widget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -89,8 +89,8 @@ class Toolbar () extends _Widget {
     * @param widget             
     * @param insertIndex               Optional            
     */
-  def addChild(widget: _WidgetBase): Unit = js.native
-  def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+  def addChild(widget: WidgetBase): Unit = js.native
+  def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
   /**
     * 
     * @param node             
@@ -116,7 +116,7 @@ class Toolbar () extends _Widget {
     * @param widget Reference to container's child widget             
     * @param last If true and if widget has multiple focusable nodes, focus thelast one instead of the first one             
     */
-  def focusChild(widget: _WidgetBase, last: Boolean): Unit = js.native
+  def focusChild(widget: WidgetBase, last: Boolean): Unit = js.native
   /**
     * Focus the first focusable child in the container.
     * 
@@ -158,7 +158,7 @@ class Toolbar () extends _Widget {
     * 
     * @param child             
     */
-  def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+  def getIndexOfChild(child: WidgetBase): js.Any = js.native
   @JSName("get")
   def get_attachScope(property: attachScope): js.Object = js.native
   @JSName("get")
@@ -187,7 +187,7 @@ class Toolbar () extends _Widget {
     * @param searchString             
     * @param numMatches             
     */
-  def onKeyboardSearch(item: _WidgetBase, evt: Event, searchString: String, numMatches: Double): Unit = js.native
+  def onKeyboardSearch(item: WidgetBase, evt: Event_, searchString: String, numMatches: Double): Unit = js.native
   /**
     * Removes the passed widget instance from this widget but does
     * not destroy it.  You can also pass in an integer indicating
@@ -203,7 +203,7 @@ class Toolbar () extends _Widget {
     * 
     * @param widget             
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
   @JSName("set")
   def set_attachScope(property: attachScope, value: js.Object): Unit = js.native
   @JSName("set")
@@ -233,7 +233,7 @@ class Toolbar () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_focusedChild(
     property: focusedChild,
@@ -243,7 +243,7 @@ class Toolbar () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_multiCharSearchDuration(
     property: multiCharSearchDuration,
@@ -253,7 +253,7 @@ class Toolbar () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -263,7 +263,7 @@ class Toolbar () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tabIndex(
     property: tabIndex,
@@ -273,7 +273,7 @@ class Toolbar () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -283,7 +283,7 @@ class Toolbar () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -293,6 +293,6 @@ class Toolbar () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

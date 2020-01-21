@@ -1,0 +1,16 @@
+package typings.awsSdkClientCognitoIdentityBrowser.typesDeveloperUserAlreadyRegisteredExceptionMod
+
+import typings.awsSdkClientCognitoIdentityBrowser.getOpenIdTokenForDeveloperIdentityExceptionsUnionMod.GetOpenIdTokenForDeveloperIdentityExceptionsUnion
+import typings.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait DeveloperUserAlreadyRegisteredException
+  extends ServiceException[DeveloperUserAlreadyRegisteredExceptionDetails]
+     with GetOpenIdTokenForDeveloperIdentityExceptionsUnion {
+  @JSName("name")
+  var name_DeveloperUserAlreadyRegisteredException: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.DeveloperUserAlreadyRegisteredException = js.native
+}
+

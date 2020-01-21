@@ -1,6 +1,6 @@
 package typings.grammarkdown
 
-import typings.grammarkdown.distTokensMod.CharacterCodes
+import typings.grammarkdown.tokensMod.CharacterCodes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

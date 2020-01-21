@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("geodesy/utm", "LatLon")
 @js.native
-class LatLon () extends LatLon_Utm
+class LatLon () extends LatLonUtm
 

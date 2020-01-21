@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionDragRotateAndZoomMod.Options
-import typings.ol.interactionDragRotateAndZoomMod.default
+import typings.ol.dragRotateAndZoomMod.Options
+import typings.ol.dragRotateAndZoomMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

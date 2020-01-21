@@ -22,7 +22,7 @@ trait TextEvent extends UIEvent {
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
     cancelableArg: scala.Boolean,
-    viewArg: Window,
+    viewArg: Window_,
     dataArg: java.lang.String,
     inputMethod: Double,
     locale: java.lang.String

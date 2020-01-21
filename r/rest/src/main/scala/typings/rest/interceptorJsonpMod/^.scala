@@ -1,7 +1,7 @@
 package typings.rest.interceptorJsonpMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.rest.restMod.Interceptor
+import typings.rest.mod.Interceptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

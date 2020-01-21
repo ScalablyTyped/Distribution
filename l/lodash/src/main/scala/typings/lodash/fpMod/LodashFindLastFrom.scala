@@ -1,9 +1,9 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.ValueIterateeCustom
-import typings.lodash.lodashMod.ValueIteratorTypeGuard
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.List
+import typings.lodash.mod.ValueIterateeCustom
+import typings.lodash.mod.ValueIteratorTypeGuard
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait LodashFindLastFrom extends js.Object {
   def apply(predicate: __, fromIndex: Double): LodashFindLastFrom1x2 = js.native
   def apply[T](predicate: ValueIterateeCustom[T, Boolean]): LodashFindLastFrom2x1[T] = js.native
-  def apply[T](predicate: ValueIterateeCustom[T, Boolean], fromIndex: Double): LodashFindLastFrom2x3[T] = js.native
+  def apply[T](predicate: ValueIterateeCustom[T, Boolean], fromIndex: Double): js.UndefOr[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueIterateeCustom[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -39,19 +39,8 @@ trait LodashFindLastFrom extends js.Object {
   def apply[T](predicate: __, fromIndex: __): LodashFindLastFrom1x4[T] = js.native
   def apply[T /* <: js.Object */](predicate: __, fromIndex: __, collection: T): LodashFindLastFrom3x4[T] = js.native
   def apply[T](predicate: __, fromIndex: __, collection: List[T]): LodashFindLastFrom1x4[T] = js.native
-  def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
-    predicate: ValueIteratorTypeGuard[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      S
-    ]
-  ): LodashFindLastFrom3x1[T, S] = js.native
-  def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
-    predicate: ValueIteratorTypeGuard[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      S
-    ],
-    fromIndex: Double
-  ): LodashFindLastFrom3x3[T, S] = js.native
+  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S]): LodashFindLastFrom1x1[T, S] = js.native
+  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S], fromIndex: Double): LodashFindLastFrom1x3[T, S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: ValueIteratorTypeGuard[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

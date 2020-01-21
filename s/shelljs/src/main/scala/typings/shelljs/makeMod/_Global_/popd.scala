@@ -1,7 +1,7 @@
 package typings.shelljs.makeMod._Global_
 
 import org.scalablytyped.runtime.TopLevel
-import typings.shelljs.shelljsMod.PopDirFunction
+import typings.shelljs.mod.PopDirFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

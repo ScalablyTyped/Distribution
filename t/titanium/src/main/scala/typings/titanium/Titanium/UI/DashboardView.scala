@@ -1,6 +1,6 @@
 package typings.titanium.Titanium.UI
 
-import typings.titanium.AnimationOption
+import typings.titanium.AnimationOption_
 import typings.titanium.Dimension
 import typings.titanium.Gradient
 import typings.titanium.Point
@@ -409,7 +409,7 @@ trait DashboardView extends Proxy {
   			 * Hides this view.
   			 */
   def hide(): Unit = js.native
-  def hide(options: AnimationOption): Unit = js.native
+  def hide(options: AnimationOption_): Unit = js.native
   /**
   			 * Inserts a view at the specified position in the [children](Titanium.UI.View.children) array.
   			 */
@@ -614,7 +614,7 @@ trait DashboardView extends Proxy {
   			 * Makes this view visible.
   			 */
   def show(): Unit = js.native
-  def show(options: AnimationOption): Unit = js.native
+  def show(options: AnimationOption_): Unit = js.native
   /**
   			 * Enable edit mode.
   			 */

@@ -5,21 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Dropbox {
-  import org.scalablytyped.runtime.StringDictionary
-  import typings.dropboxjs.Dropbox.File.Stat
-  import typings.dropboxjs.Dropbox.Http.RangeInfo
-  import typings.dropboxjs.Dropbox.Http.UploadCursor
-
   type ClientFileReadCallback = js.Function4[
-    /* err */ ApiError, 
-    /* fileContents */ String, 
-    /* stat */ Stat, 
-    /* rangeInfo */ RangeInfo, 
-    Unit
+    /* err */ typings.dropboxjs.Dropbox.ApiError, 
+    /* fileContents */ java.lang.String, 
+    /* stat */ typings.dropboxjs.Dropbox.File.Stat, 
+    /* rangeInfo */ typings.dropboxjs.Dropbox.Http.RangeInfo, 
+    scala.Unit
   ]
-  type ClientFileWriteCallback = js.Function2[/* err */ ApiError, /* stat */ Stat, Unit]
-  type FileStatCallback = js.Function2[/* err */ ApiError, /* stat */ Stat, Unit]
-  type QueryParams = StringDictionary[js.Any]
-  type QueryParamsCallback = js.Function1[/* queryParams */ QueryParams, Unit]
-  type ResumableUploadStepCallback = js.Function2[/* err */ ApiError, /* uploadCursor */ UploadCursor, Unit]
+  type ClientFileWriteCallback = js.Function2[
+    /* err */ typings.dropboxjs.Dropbox.ApiError, 
+    /* stat */ typings.dropboxjs.Dropbox.File.Stat, 
+    scala.Unit
+  ]
+  type FileStatCallback = js.Function2[
+    /* err */ typings.dropboxjs.Dropbox.ApiError, 
+    /* stat */ typings.dropboxjs.Dropbox.File.Stat, 
+    scala.Unit
+  ]
+  type QueryParams = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type QueryParamsCallback = js.Function1[/* queryParams */ typings.dropboxjs.Dropbox.QueryParams, scala.Unit]
+  type ResumableUploadStepCallback = js.Function2[
+    /* err */ typings.dropboxjs.Dropbox.ApiError, 
+    /* uploadCursor */ typings.dropboxjs.Dropbox.Http.UploadCursor, 
+    scala.Unit
+  ]
 }

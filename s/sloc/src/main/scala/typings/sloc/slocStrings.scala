@@ -1,7 +1,7 @@
 package typings.sloc
 
-import typings.sloc.slocMod.Extension
-import typings.sloc.slocMod.Key
+import typings.sloc.mod.Extension
+import typings.sloc.mod.Key
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

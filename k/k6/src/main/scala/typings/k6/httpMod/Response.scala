@@ -1,13 +1,13 @@
 package typings.k6.httpMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.k6.Anon_Blocked
-import typings.k6.Anon_Body
-import typings.k6.Anon_Fields
-import typings.k6.Anon_Nextupdate
-import typings.k6.Anon_Params
+import typings.k6.AnonBlocked
+import typings.k6.AnonBody
+import typings.k6.AnonFields
+import typings.k6.AnonNextupdate
+import typings.k6.AnonParams
 import typings.k6.htmlMod.Selection
-import typings.k6.k6Mod.JSONValue
+import typings.k6.mod.JSONValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ trait Response extends js.Object {
   /** Response headers. */
   var headers: StringDictionary[String] = js.native
   /** Online Certificate Status Protocol response. */
-  var ocsp: Anon_Nextupdate = js.native
+  var ocsp: AnonNextupdate = js.native
   /** Protocol used to perform the transfer. */
   var proto: Protocol = js.native
   /** Server IP address. */
@@ -33,11 +33,11 @@ trait Response extends js.Object {
   /** Remote port connected to. */
   var remote_port: Double = js.native
   /** Inciting request details. */
-  var request: Anon_Body = js.native
+  var request: AnonBody = js.native
   /** HTTP status code. */
   var status: Double = js.native
   /** Performance timing information. */
-  var timings: Anon_Blocked = js.native
+  var timings: AnonBlocked = js.native
   /** TLS cipher suite used. */
   var tls_cipher_suite: CipherSuite = js.native
   /** TLS/SSL version used. One of `TLS_*` `SSL_*` constants. */
@@ -52,7 +52,7 @@ trait Response extends js.Object {
     * @returns Link click response.
     */
   def clickLink[RT /* <: js.UndefOr[ResponseType] */](): RefinedResponse[RT] = js.native
-  def clickLink[RT /* <: js.UndefOr[ResponseType] */](args: Anon_Params[RT]): RefinedResponse[RT] = js.native
+  def clickLink[RT /* <: js.UndefOr[ResponseType] */](args: AnonParams[RT]): RefinedResponse[RT] = js.native
   /**
     * Parse body as HTML. Optionally filter by selector.
     * https://docs.k6.io/docs/response-k6http
@@ -79,6 +79,6 @@ trait Response extends js.Object {
     * @returns Form submission response.
     */
   def submitForm[RT /* <: js.UndefOr[ResponseType] */](): RefinedResponse[RT] = js.native
-  def submitForm[RT /* <: js.UndefOr[ResponseType] */](args: Anon_Fields[RT]): RefinedResponse[RT] = js.native
+  def submitForm[RT /* <: js.UndefOr[ResponseType] */](args: AnonFields[RT]): RefinedResponse[RT] = js.native
 }
 

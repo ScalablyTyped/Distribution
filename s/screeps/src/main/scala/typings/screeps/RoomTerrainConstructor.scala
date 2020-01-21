@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RoomTerrainConstructor
-  extends _Constructor[RoomTerrain]
+  extends Constructor[RoomTerrain]
      with /**
   * Get room terrain for the specified room. This method works for any room in the world even if you have no access to it.
   * @param roomName String name of the room.

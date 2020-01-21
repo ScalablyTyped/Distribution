@@ -1,9 +1,9 @@
 package typings.jsforce
 
 import typings.jsforce.bulkMod.BulkLoadOperation
-import typings.jsforce.describeDashResultMod.ExtraTypeInfo
-import typings.jsforce.describeDashResultMod.FieldType
-import typings.jsforce.describeDashResultMod.SOAPType
+import typings.jsforce.describeResultMod.ExtraTypeInfo
+import typings.jsforce.describeResultMod.FieldType
+import typings.jsforce.describeResultMod.SOAPType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

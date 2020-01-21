@@ -1,6 +1,6 @@
 package typings.nodegit.branchMod.Branch
 
-import typings.nodegit.annotatedDashCommitMod.AnnotatedCommit
+import typings.nodegit.annotatedCommitMod.AnnotatedCommit
 import typings.nodegit.commitMod.Commit
 import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository

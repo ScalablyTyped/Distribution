@@ -1,7 +1,7 @@
 package typings.geodesy.dmsMod
 
-import typings.geodesy.geodesyMod.Dp
-import typings.geodesy.geodesyMod.Format
+import typings.geodesy.mod.Dp
+import typings.geodesy.mod.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

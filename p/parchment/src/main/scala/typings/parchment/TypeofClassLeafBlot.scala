@@ -1,8 +1,8 @@
 package typings.parchment
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.parchment.distSrcBlotAbstractLeafMod.default
-import typings.parchment.distSrcRegistryMod.Scope
+import typings.parchment.leafMod.default
+import typings.parchment.registryMod.Scope
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`

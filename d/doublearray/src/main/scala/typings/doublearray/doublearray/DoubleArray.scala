@@ -1,13 +1,13 @@
 package typings.doublearray.doublearray
 
-import typings.doublearray.Anon_All
+import typings.doublearray.AnonAll
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DoubleArray extends js.Object {
   var bc: BaseAndCheck
-  def calc(): Anon_All
+  def calc(): AnonAll
   def commonPrefixSearch(key: String): KeyValue
   def contain(key: String): Boolean
   def dump(): String
@@ -20,7 +20,7 @@ object DoubleArray {
   @scala.inline
   def apply(
     bc: BaseAndCheck,
-    calc: () => Anon_All,
+    calc: () => AnonAll,
     commonPrefixSearch: String => KeyValue,
     contain: String => Boolean,
     dump: () => String,

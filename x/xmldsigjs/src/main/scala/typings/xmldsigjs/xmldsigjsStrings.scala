@@ -1,8 +1,8 @@
 package typings.xmldsigjs
 
-import typings.xmldsigjs.buildTypesPkiX509Mod._DigestAlgorithm
-import typings.xmldsigjs.buildTypesSignedUnderscoreXmlMod.OptionsSignTransform
-import typings.xmldsigjs.buildTypesXmlKeyUnderscoreInfosEcdsaUnderscoreKeyMod._NamedCurveType
+import typings.xmldsigjs.ecdsaKeyMod._NamedCurveType
+import typings.xmldsigjs.signedXmlMod.OptionsSignTransform
+import typings.xmldsigjs.x509Mod._DigestAlgorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

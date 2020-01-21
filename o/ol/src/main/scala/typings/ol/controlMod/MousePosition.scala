@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlMousePositionMod.Options
-import typings.ol.controlMousePositionMod.default
+import typings.ol.mousePositionMod.Options
+import typings.ol.mousePositionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

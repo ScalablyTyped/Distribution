@@ -1,8 +1,8 @@
 package typings.leadfoot.sessionMod
 
-import typings.dojo.promisePromiseMod.Promise
-import typings.leadfoot.Anon_Height
-import typings.leadfoot.Anon_X
+import typings.dojo.promiseMod.Promise
+import typings.leadfoot.AnonHeight
+import typings.leadfoot.AnonX
 import typings.leadfoot.leadfoot.Capabilities
 import typings.leadfoot.leadfoot.Geolocation
 import typings.leadfoot.leadfoot.LogEntry
@@ -472,8 +472,8 @@ trait Session extends js.Object {
   		 * primary monitor. If a secondary monitor exists above or to the left of the primary monitor, these values
   		 * will be negative.
   		 */
-  def getWindowPosition(): Promise[Anon_X] = js.native
-  def getWindowPosition(windowHandle: String): Promise[Anon_X] = js.native
+  def getWindowPosition(): Promise[AnonX] = js.native
+  def getWindowPosition(windowHandle: String): Promise[AnonX] = js.native
   /**
   		 * Gets the dimensions of a window.
   		 *
@@ -484,8 +484,8 @@ trait Session extends js.Object {
   		 * @returns
   		 * An object describing the width and height of the window, in CSS pixels.
   		 */
-  def getWindowSize(): Promise[Anon_Height] = js.native
-  def getWindowSize(windowHandle: String): Promise[Anon_Height] = js.native
+  def getWindowSize(): Promise[AnonHeight] = js.native
+  def getWindowSize(windowHandle: String): Promise[AnonHeight] = js.native
   /**
   		 * Navigates the focused window/frame back one page using the browser’s navigation history.
   		 */

@@ -1,7 +1,7 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.List
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object uri {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type URITemplateCallback = js.Function1[/* keyName */ String, URITemplateValue]
-  type URITemplateInput = (StringDictionary[URITemplateValue | URITemplateCallback]) | URITemplateCallback
-  type URITemplateLiteral = String
-  type URITemplatePart = URITemplateLiteral | URITemplateExpression
-  type URITemplateValue = js.UndefOr[String | js.Array[String] | StringDictionary[String] | Null]
+  type URITemplateCallback = js.Function1[/* keyName */ java.lang.String, typings.urijs.uri.URITemplateValue]
+  type URITemplateInput = (org.scalablytyped.runtime.StringDictionary[typings.urijs.uri.URITemplateValue | typings.urijs.uri.URITemplateCallback]) | typings.urijs.uri.URITemplateCallback
+  type URITemplateLiteral = java.lang.String
+  type URITemplatePart = typings.urijs.uri.URITemplateLiteral | typings.urijs.uri.URITemplateExpression
+  type URITemplateValue = js.UndefOr[
+    java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null
+  ]
 }

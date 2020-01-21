@@ -1,7 +1,7 @@
 package typings.browserfs
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.browserfs.distNodeCoreFSMod.FS
+import typings.browserfs.fSMod.FS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

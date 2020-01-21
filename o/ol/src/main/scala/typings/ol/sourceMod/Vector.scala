@@ -1,6 +1,6 @@
 package typings.ol.sourceMod
 
-import typings.ol.geomGeometryMod.default
+import typings.ol.geometryMod.default
 import typings.ol.sourceVectorMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`

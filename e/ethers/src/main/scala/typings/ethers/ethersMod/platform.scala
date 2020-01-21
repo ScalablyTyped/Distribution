@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ethers", "platform")
+@JSImport("ethers/dist/types/ethers", "platform")
 @js.native
 object platform extends TopLevel[node]
 

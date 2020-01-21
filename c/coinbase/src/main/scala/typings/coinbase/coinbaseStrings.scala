@@ -1,14 +1,14 @@
 package typings.coinbase
 
-import typings.coinbase.coinbaseMod.AccountType
-import typings.coinbase.coinbaseMod.BuyStatus
-import typings.coinbase.coinbaseMod.DepositStatus
-import typings.coinbase.coinbaseMod.PaymentMethodType
-import typings.coinbase.coinbaseMod.ResourceType
-import typings.coinbase.coinbaseMod.SellStatus
-import typings.coinbase.coinbaseMod.TransactionStatus
-import typings.coinbase.coinbaseMod.TransactionType
-import typings.coinbase.coinbaseMod.WithdrawalStatus
+import typings.coinbase.mod.AccountType
+import typings.coinbase.mod.BuyStatus
+import typings.coinbase.mod.DepositStatus
+import typings.coinbase.mod.PaymentMethodType
+import typings.coinbase.mod.ResourceType
+import typings.coinbase.mod.SellStatus
+import typings.coinbase.mod.TransactionStatus
+import typings.coinbase.mod.TransactionType
+import typings.coinbase.mod.WithdrawalStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

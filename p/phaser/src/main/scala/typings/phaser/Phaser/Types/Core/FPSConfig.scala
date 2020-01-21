@@ -23,6 +23,10 @@ trait FPSConfig extends js.Object {
     */
   var panicMax: js.UndefOr[integer] = js.undefined
   /**
+    * Apply delta smoothing during the game update to help avoid spikes?
+    */
+  var smoothStep: js.UndefOr[Boolean] = js.undefined
+  /**
     * The optimum rendering rate, in frames per second.
     */
   var target: js.UndefOr[integer] = js.undefined
@@ -35,6 +39,7 @@ object FPSConfig {
     forceSetTimeOut: js.UndefOr[Boolean] = js.undefined,
     min: Int | Double = null,
     panicMax: Int | Double = null,
+    smoothStep: js.UndefOr[Boolean] = js.undefined,
     target: Int | Double = null
   ): FPSConfig = {
     val __obj = js.Dynamic.literal()
@@ -42,6 +47,7 @@ object FPSConfig {
     if (!js.isUndefined(forceSetTimeOut)) __obj.updateDynamic("forceSetTimeOut")(forceSetTimeOut.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (panicMax != null) __obj.updateDynamic("panicMax")(panicMax.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothStep)) __obj.updateDynamic("smoothStep")(smoothStep.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[FPSConfig]
   }

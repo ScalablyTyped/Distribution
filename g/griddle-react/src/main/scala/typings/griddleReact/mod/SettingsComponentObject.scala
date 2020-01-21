@@ -1,0 +1,20 @@
+package typings.griddleReact.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait SettingsComponentObject extends js.Object {
+  var component: js.UndefOr[GriddleComponent[_]] = js.undefined
+  var order: Double
+}
+
+object SettingsComponentObject {
+  @scala.inline
+  def apply(order: Double, component: GriddleComponent[_] = null): SettingsComponentObject = {
+    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SettingsComponentObject]
+  }
+}
+

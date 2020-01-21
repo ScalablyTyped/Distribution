@@ -1,8 +1,8 @@
 package typings.recompose
 
-import typings.react.reactMod.ValidationMap
-import typings.recompose.recomposeMod.InferableComponentEnhancer
-import typings.recompose.recomposeMod.mapper
+import typings.react.mod.ValidationMap
+import typings.recompose.mod.InferableComponentEnhancer
+import typings.recompose.mod.mapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

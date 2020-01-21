@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mvc
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.exprchar
 import typings.dojo.dojoStrings.style
 import typings.std.HTMLElement
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mvc.Output")
 @js.native
-class Output () extends _WidgetBase {
+class Output () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -75,6 +75,6 @@ class Output () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

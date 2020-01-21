@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "Model")
 @js.native
 class Model ()
-  extends typings.fullcalendar.srcExportsMod.Model
+  extends typings.fullcalendar.exportsMod.Model
 
 /* static members */
 @JSImport("fullcalendar/src/main", "Model")

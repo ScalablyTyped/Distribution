@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Leftshift
+import typings.vexflow.AnonLeftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +21,6 @@ object Accidental extends js.Object {
   var DEBUG: Boolean = js.native
   def applyAccidentals(voices: js.Array[Voice]): Unit = js.native
   def applyAccidentals(voices: js.Array[Voice], keySignature: String): Unit = js.native
-  def format(accidentals: js.Array[Accidental], state: Anon_Leftshift): Unit = js.native
+  def format(accidentals: js.Array[Accidental], state: AnonLeftshift): Unit = js.native
 }
 

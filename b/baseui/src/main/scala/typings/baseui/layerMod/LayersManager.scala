@@ -1,7 +1,7 @@
 package typings.baseui.layerMod
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.Ref
+import typings.react.mod.Component
+import typings.react.mod.Ref
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

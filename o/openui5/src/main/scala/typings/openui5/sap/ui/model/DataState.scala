@@ -1,7 +1,7 @@
 package typings.openui5.sap.ui.model
 
 import typings.openui5.sap.ui.base.Object
-import typings.openui5.sap.ui.core.Message
+import typings.openui5.sap.ui.core.Message_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,8 +30,8 @@ class DataState () extends Object {
     * @returns the array of messages of the control or null if no {link:sap.ui.core.messages.ModelManager
     * ModelManager} is used.
     */
-  def getControlMessages(): DataState | js.Array[Message] = js.native
-  def getControlMessages(the: js.Array[Message]): DataState | js.Array[Message] = js.native
+  def getControlMessages(): DataState | js.Array[Message_] = js.native
+  def getControlMessages(the: js.Array[Message_]): DataState | js.Array[Message_] = js.native
   /**
     * Returns the dirty value of a binding that was rejected by a type validation.This value was of an
     * incorrect type and could not be applied to the model. If thevalue was not rejected it will return
@@ -44,13 +44,13 @@ class DataState () extends Object {
     * @returns the array of all messages or null if no {link:sap.ui.core.messages.ModelManager
     * ModelManager} is used.
     */
-  def getMessages(): js.Array[Message] = js.native
+  def getMessages(): js.Array[Message_] = js.native
   /**
     * Returns the array of state messages of the model or undefined
     * @returns the array of messages of the model or null if no {link:sap.ui.core.messages.ModelManager
     * ModelManager} is used.
     */
-  def getModelMessages(): js.Array[Message] = js.native
+  def getModelMessages(): js.Array[Message_] = js.native
   /**
     * Returns the formatted original value of the data.The original value is the last confirmed value.
     * @returns the original confirmed value of the server
@@ -84,7 +84,7 @@ class DataState () extends Object {
     * @param the control messages
     * @returns <code>this</code> to allow method chaining
     */
-  def setControlMessages(the: js.Array[Message]): DataState = js.native
+  def setControlMessages(the: js.Array[Message_]): DataState = js.native
   /**
     * Sets the dirty value that was rejected by the type validation.
     * @param vInvalidValue the value that was rejected by the type validation or null if the value was

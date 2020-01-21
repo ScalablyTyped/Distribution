@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object self
   extends TopLevel[
-      Window with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any)
+      Window_ with (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any)
     ]
 

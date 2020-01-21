@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mvc
 
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.style
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mvc.Element")
 @js.native
-class Element () extends _WidgetBase {
+class Element () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

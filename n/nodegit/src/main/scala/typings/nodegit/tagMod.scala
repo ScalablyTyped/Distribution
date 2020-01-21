@@ -4,7 +4,7 @@ import typings.nodegit.objectMod.Object
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
-import typings.nodegit.strDashArrayMod.Strarray
+import typings.nodegit.strArrayMod.Strarray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

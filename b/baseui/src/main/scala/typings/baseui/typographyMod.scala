@@ -1,7 +1,7 @@
 package typings.baseui
 
 import typings.baseui.blockMod.BlockProps
-import typings.react.reactMod.FC
+import typings.react.mod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PortControl {
-  import org.scalablytyped.runtime.StringDictionary
-
   // A collection of Mappings
-  type ActiveMappings = StringDictionary[Mapping]
+  type ActiveMappings = org.scalablytyped.runtime.StringDictionary[typings.freedom.freedom.PortControl.Mapping]
 }

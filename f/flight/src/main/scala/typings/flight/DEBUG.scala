@@ -1,7 +1,7 @@
 package typings.flight
 
 import org.scalablytyped.runtime.TopLevel
-import typings.flight.Flight.DebugStatic
+import typings.flight.Flight_.DebugStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

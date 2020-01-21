@@ -154,14 +154,14 @@ trait OCR extends js.Object {
     * @param {EnumDWT_OCROutputFormat} value Specifies the OCR result format.
     * @return {boolean}
     */
-  def SetOutputFormat(value: EnumDWT_OCROutputFormat): Unit = js.native
+  def SetOutputFormat(value: EnumDWTOCROutputFormat): Unit = js.native
   /**
     *  Sets the mode for OCR page layout analysis. Determines how pages are determined when processing OCR.
     * @method Dynamsoft.WebTwain#SetPageSetMode 
     * @param {EnumDWT_OCRPageSetMode} value Specifies the OCR Page layout analysis mode. 
     * @return {boolean}
     */
-  def SetPageSetMode(value: EnumDWT_OCRPageSetMode): Unit = js.native
+  def SetPageSetMode(value: EnumDWTOCRPageSetMode): Unit = js.native
   /**
     *  Specifies a font to be used by OCR when Addon.OCR.SetIfUseDetectedFont is set to false.  
     * @method Dynamsoft.WebTwain#SetUnicodeFontName 

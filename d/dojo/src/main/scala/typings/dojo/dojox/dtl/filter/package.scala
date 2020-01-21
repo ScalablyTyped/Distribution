@@ -5,6 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object filter {
-  type misc = misc_
-  type strings = strings_
+  type misc = typings.dojo.dojox.dtl.filter.misc_
+  type strings = typings.dojo.dojox.dtl.filter.strings_
 }

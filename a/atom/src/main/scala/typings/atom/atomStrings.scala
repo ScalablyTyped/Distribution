@@ -1,7 +1,7 @@
 package typings.atom
 
-import typings.atom.atomMod.FileEncoding
-import typings.atom.atomMod.TooltipPlacement
+import typings.atom.mod.FileEncoding
+import typings.atom.mod.TooltipPlacement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

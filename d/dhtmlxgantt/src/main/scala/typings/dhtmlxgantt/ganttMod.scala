@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("Gantt", JSImport.Namespace)
 @js.native
-object ganttMod extends TopLevel[GanttEnterprise | GanttStatic]
+object ganttMod extends TopLevel[GanttEnterprise]
 

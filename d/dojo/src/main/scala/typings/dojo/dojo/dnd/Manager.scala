@@ -1,7 +1,7 @@
 package typings.dojo.dojo.dnd
 
 import typings.dojo.dojo.Evented
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,25 +57,25 @@ class Manager () extends Evented {
     *
     * @param e keyboard event
     */
-  def onKeyDown(e: Event): Unit = js.native
+  def onKeyDown(e: Event_): Unit = js.native
   /**
     * event processor for onkeyup, watching for CTRL for copy/move status
     *
     * @param e keyboard event
     */
-  def onKeyUp(e: Event): Unit = js.native
+  def onKeyUp(e: Event_): Unit = js.native
   /**
     * event processor for onmousemove
     *
     * @param e mouse event
     */
-  def onMouseMove(e: Event): Unit = js.native
+  def onMouseMove(e: Event_): Unit = js.native
   /**
     * event processor for onmouseup
     *
     * @param e mouse event
     */
-  def onMouseUp(e: Event): Unit = js.native
+  def onMouseUp(e: Event_): Unit = js.native
   /**
     * called when a source detected a mouse-out condition
     *

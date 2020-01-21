@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeofdisplay extends js.Object {
-  val DisplayPosition: Anon_BOTTOM = js.native
-  val MirrorMode: Anon_MIXED = js.native
+  val DisplayPosition: AnonBOTTOM = js.native
+  val MirrorMode: AnonMIXED = js.native
   val onDisplayChanged: Event[js.Function0[Unit]] = js.native
   def clearTouchCalibration(id: String): Unit = js.native
   def completeCustomTouchCalibration(pairs: TouchCalibrationPairs, bounds: Bounds): Unit = js.native

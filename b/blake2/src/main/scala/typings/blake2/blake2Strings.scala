@@ -1,6 +1,6 @@
 package typings.blake2
 
-import typings.blake2.blake2Mod.Blake2Algorithm
+import typings.blake2.mod.Blake2Algorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

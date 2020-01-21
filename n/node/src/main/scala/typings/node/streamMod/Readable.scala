@@ -1,6 +1,6 @@
 package typings.node.streamMod
 
-import typings.node.Anon_End
+import typings.node.AnonEnd
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
@@ -83,7 +83,7 @@ class Readable ()
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")

@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid.enhanced.plugins
 
-import typings.dojo.dojox.grid.enhanced._Plugin
+import typings.dojo.dojox.grid.enhanced.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.grid.enhanced.plugins.AutoScroll")
 @js.native
-class AutoScroll protected () extends _Plugin {
+class AutoScroll protected () extends Plugin {
   def this(grid: js.Any, args: js.Any) = this()
   /**
     * The time interval (in miliseconds) between 2 scrolling.

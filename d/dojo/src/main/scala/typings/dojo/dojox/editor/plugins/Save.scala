@@ -1,6 +1,6 @@
 package typings.dojo.dojox.editor.plugins
 
-import typings.dojo.dijit._editor._Plugin
+import typings.dojo.dijit._editor.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.editor.plugins.Save")
 @js.native
-class Save () extends _Plugin {
+class Save () extends Plugin {
   def this(args: js.Object) = this()
   /**
     * Boolean flag to indicate that the default action for save and

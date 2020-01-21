@@ -21,12 +21,12 @@ class Scroller_ protected () extends js.Object {
   ): Unit = js.native
   def doMouseZoom(wheelData: Double, timeStamp: Double, pageX: Double, pageY: Double): Unit = js.native
   def doTouchEnd(timeStamp: Double): Unit = js.native
-  def doTouchMove(touches: js.Array[Anon_PageX], timeStamp: Double): Unit = js.native
-  def doTouchMove(touches: js.Array[Anon_PageX], timeStamp: Double, scale: Double): Unit = js.native
-  def doTouchStart(touches: js.Array[Anon_PageX], timeStamp: Double): Unit = js.native
+  def doTouchMove(touches: js.Array[AnonPageX], timeStamp: Double): Unit = js.native
+  def doTouchMove(touches: js.Array[AnonPageX], timeStamp: Double, scale: Double): Unit = js.native
+  def doTouchStart(touches: js.Array[AnonPageX], timeStamp: Double): Unit = js.native
   def finishPullToRefresh(): Unit = js.native
-  def getScrollMax(): Anon_LeftTop = js.native
-  def getValues(): Anon_Left = js.native
+  def getScrollMax(): AnonLeftTop = js.native
+  def getValues(): AnonLeft = js.native
   def scrollBy(leftOffset: Double, topOffset: Double): Unit = js.native
   def scrollBy(leftOffset: Double, topOffset: Double, animate: Boolean): Unit = js.native
   def scrollTo(left: Double, top: Double): Unit = js.native

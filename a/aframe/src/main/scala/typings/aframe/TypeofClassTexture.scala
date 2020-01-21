@@ -2,13 +2,13 @@ package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable10
 import typings.std.HTMLImageElement
-import typings.three.srcConstantsMod.Mapping
-import typings.three.srcConstantsMod.PixelFormat
-import typings.three.srcConstantsMod.TextureDataType
-import typings.three.srcConstantsMod.TextureEncoding
-import typings.three.srcConstantsMod.TextureFilter
-import typings.three.srcConstantsMod.Wrapping
-import typings.three.threeMod.Texture
+import typings.three.constantsMod.Mapping
+import typings.three.constantsMod.PixelFormat
+import typings.three.constantsMod.TextureDataType
+import typings.three.constantsMod.TextureEncoding
+import typings.three.constantsMod.TextureFilter
+import typings.three.constantsMod.Wrapping
+import typings.three.mod.Texture
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

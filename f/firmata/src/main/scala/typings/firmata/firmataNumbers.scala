@@ -1,16 +1,16 @@
 package typings.firmata
 
-import typings.firmata.firmataMod.I2C_MODE
-import typings.firmata.firmataMod.PIN_MODE
-import typings.firmata.firmataMod.PIN_STATE
-import typings.firmata.firmataMod.PULLUP_STATE
-import typings.firmata.firmataMod.REPORTING
-import typings.firmata.firmataMod.SERIAL_MODE
-import typings.firmata.firmataMod.SERIAL_PIN_TYPE
-import typings.firmata.firmataMod.SERIAL_PORT_ID
-import typings.firmata.firmataMod.STEPPER_DIRECTION
-import typings.firmata.firmataMod.STEPPER_RUN_STATE
-import typings.firmata.firmataMod.STEPPER_TYPE
+import typings.firmata.mod.I2C_MODE
+import typings.firmata.mod.PIN_MODE
+import typings.firmata.mod.PIN_STATE
+import typings.firmata.mod.PULLUP_STATE
+import typings.firmata.mod.REPORTING
+import typings.firmata.mod.SERIAL_MODE
+import typings.firmata.mod.SERIAL_PIN_TYPE
+import typings.firmata.mod.SERIAL_PORT_ID
+import typings.firmata.mod.STEPPER_DIRECTION
+import typings.firmata.mod.STEPPER_RUN_STATE
+import typings.firmata.mod.STEPPER_TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

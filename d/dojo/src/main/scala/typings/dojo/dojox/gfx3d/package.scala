@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object gfx3d {
-  import typings.dojo.dojox.gfx3d.lighting.Model
-
-  type _base = _base_
+  type base = typings.dojo.dojox.gfx3d.base_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/gfx3d/gradient.html
     *
@@ -22,15 +20,15 @@ package object gfx3d {
     * @param matrix the cumulative transformation matrix
     */
   type gradient = js.Function7[
-    /* model */ Model, 
+    /* model */ typings.dojo.dojox.gfx3d.lighting.Model, 
     /* material */ js.Object, 
     /* center */ js.Object, 
-    /* radius */ Double, 
-    /* from */ Double, 
-    /* to */ Double, 
+    /* radius */ scala.Double, 
+    /* from */ scala.Double, 
+    /* to */ scala.Double, 
     /* matrix */ js.Object, 
-    Unit
+    scala.Unit
   ]
-  type lighting = lighting_
-  type scheduler = scheduler_
+  type lighting = typings.dojo.dojox.gfx3d.lighting_
+  type scheduler = typings.dojo.dojox.gfx3d.scheduler_
 }

@@ -5,7 +5,7 @@ import typings.greasemonkey.greasemonkeyNumbers.`1`
 import typings.greasemonkey.greasemonkeyNumbers.`2`
 import typings.greasemonkey.greasemonkeyNumbers.`3`
 import typings.greasemonkey.greasemonkeyNumbers.`4`
-import typings.std.Document
+import typings.std.Document_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait Response[TContext] extends js.Object {
   val response: js.Any
   val responseHeaders: String
   val responseText: String
-  val responseXML: Document | `false`
+  val responseXML: Document_ | `false`
   val status: Double
   val statusText: String
 }
@@ -31,7 +31,7 @@ object Response {
     response: js.Any,
     responseHeaders: String,
     responseText: String,
-    responseXML: Document | `false`,
+    responseXML: Document_ | `false`,
     status: Double,
     statusText: String,
     context: TContext = null

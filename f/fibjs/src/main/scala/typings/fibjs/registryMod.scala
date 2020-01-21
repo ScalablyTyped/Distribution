@@ -37,6 +37,6 @@ object registryMod extends js.Object {
   def set(root: Double, key: String, value: js.Array[_]): Unit = js.native
   def set(root: Double, key: String, value: Double): Unit = js.native
   def set(root: Double, key: String, value: Double, `type`: Double): Unit = js.native
-  def set(root: Double, key: String, value: Class_Buffer): Unit = js.native
+  def set(root: Double, key: String, value: ClassBuffer): Unit = js.native
 }
 

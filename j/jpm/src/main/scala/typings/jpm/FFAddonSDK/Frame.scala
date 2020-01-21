@@ -5,7 +5,7 @@ import typings.jpm.jpmStrings.detach
 import typings.jpm.jpmStrings.load
 import typings.jpm.jpmStrings.message
 import typings.jpm.jpmStrings.ready
-import typings.jpm.sdkUiToolbarMod.ToolbarItem
+import typings.jpm.toolbarMod.ToolbarItem
 import typings.std.URL
 import scala.scalajs.js
 import scala.scalajs.js.`|`

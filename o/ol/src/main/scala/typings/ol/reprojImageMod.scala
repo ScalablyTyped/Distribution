@@ -11,14 +11,14 @@ object reprojImageMod extends js.Object {
   @js.native
   trait ReprojImage
     extends typings.ol.imageBaseMod.default {
-    def getProjection(): typings.ol.projProjectionMod.default = js.native
+    def getProjection(): typings.ol.projectionMod.default = js.native
   }
   
   @js.native
   class default protected () extends ReprojImage {
     def this(
-      sourceProj: typings.ol.projProjectionMod.default,
-      targetProj: typings.ol.projProjectionMod.default,
+      sourceProj: typings.ol.projectionMod.default,
+      targetProj: typings.ol.projectionMod.default,
       targetExtent: Extent,
       targetResolution: Double,
       pixelRatio: Double,

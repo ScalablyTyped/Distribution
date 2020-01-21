@@ -1,7 +1,7 @@
 package typings.ionic
 
+import typings.ionic.ailmentsBaseMod.AilmentDeps
 import typings.ionic.definitionsMod.IAilment
-import typings.ionic.libDoctorAilmentsBaseMod.AilmentDeps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,49 +11,49 @@ import scala.scalajs.js.annotation._
 object libDoctorMod extends js.Object {
   @js.native
   abstract class Ailment protected ()
-    extends typings.ionic.libDoctorAilmentsMod.Ailment {
+    extends typings.ionic.ailmentsMod.Ailment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
   }
   
   @js.native
   class AilmentRegistry ()
-    extends typings.ionic.libDoctorAilmentsBaseMod.AilmentRegistry
+    extends typings.ionic.ailmentsBaseMod.AilmentRegistry
   
   @js.native
   class CordovaPlatformsCommitted ()
-    extends typings.ionic.libDoctorAilmentsMod.CordovaPlatformsCommitted
+    extends typings.ionic.ailmentsMod.CordovaPlatformsCommitted
   
   @js.native
   class DefaultCordovaBundleIdUsed ()
-    extends typings.ionic.libDoctorAilmentsMod.DefaultCordovaBundleIdUsed
+    extends typings.ionic.ailmentsMod.DefaultCordovaBundleIdUsed
   
   @js.native
   class GitConfigInvalid ()
-    extends typings.ionic.libDoctorAilmentsMod.GitConfigInvalid
+    extends typings.ionic.ailmentsMod.GitConfigInvalid
   
   @js.native
   class GitNotUsed ()
-    extends typings.ionic.libDoctorAilmentsMod.GitNotUsed
+    extends typings.ionic.ailmentsMod.GitNotUsed
   
   @js.native
   class IonicCLIInstalledLocally ()
-    extends typings.ionic.libDoctorAilmentsMod.IonicCLIInstalledLocally
+    extends typings.ionic.ailmentsMod.IonicCLIInstalledLocally
   
   @js.native
   class IonicNativeOldVersionInstalled ()
-    extends typings.ionic.libDoctorAilmentsMod.IonicNativeOldVersionInstalled
+    extends typings.ionic.ailmentsMod.IonicNativeOldVersionInstalled
   
   @js.native
   class NpmInstalledLocally ()
-    extends typings.ionic.libDoctorAilmentsMod.NpmInstalledLocally
+    extends typings.ionic.ailmentsMod.NpmInstalledLocally
   
   @js.native
   class UnsavedCordovaPlatforms ()
-    extends typings.ionic.libDoctorAilmentsMod.UnsavedCordovaPlatforms
+    extends typings.ionic.ailmentsMod.UnsavedCordovaPlatforms
   
   @js.native
   class ViewportFitNotSet ()
-    extends typings.ionic.libDoctorAilmentsMod.ViewportFitNotSet
+    extends typings.ionic.ailmentsMod.ViewportFitNotSet
   
   def formatAilmentMessage(ailment: IAilment): js.Promise[String] = js.native
 }

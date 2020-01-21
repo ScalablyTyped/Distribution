@@ -1,7 +1,7 @@
 package typings.dojo.dojox.dgauges
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.font
 import typings.dojo.dojoStrings.invalidRendering
 import typings.dojo.dojoStrings.invalidatingProperties
@@ -35,9 +35,9 @@ import scala.scalajs.js.annotation._
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dojo.Stateful because Already inherited
-- typings.dojo.dojox.widget._Invalidating because Inheritance from two classes. Inlined invalidatingProperties, set_invalidatingProperties, get_invalidatingProperties, watch_invalidatingProperties, invalidRendering, set_invalidRendering, get_invalidRendering, watch_invalidRendering, addInvalidatingProperties, get, invalidateRendering, postscript, refreshRendering, set, validateRendering, watch */ @JSGlobal("dojox.dgauges.GaugeBase")
+- typings.dojo.dojox.widget.Invalidating because Inheritance from two classes. Inlined invalidatingProperties, set_invalidatingProperties, get_invalidatingProperties, watch_invalidatingProperties, invalidRendering, set_invalidRendering, get_invalidRendering, watch_invalidRendering, addInvalidatingProperties, get, invalidateRendering, postscript, refreshRendering, set, validateRendering, watch */ @JSGlobal("dojox.dgauges.GaugeBase")
 @js.native
-class GaugeBase protected () extends _WidgetBase {
+class GaugeBase protected () extends WidgetBase {
   def this(args: js.Object, node: HTMLElement) = this()
   /**
     * The font of the gauge used by elements if not overridden.
@@ -183,17 +183,17 @@ class GaugeBase protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_invalidRendering(
     property: invalidRendering,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[Boolean], js.UndefOr[Boolean], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_invalidatingProperties(
     property: invalidatingProperties,
     callback: js.Function3[js.UndefOr[String], js.UndefOr[js.Object], js.UndefOr[js.Object], Unit]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -203,6 +203,6 @@ class GaugeBase protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

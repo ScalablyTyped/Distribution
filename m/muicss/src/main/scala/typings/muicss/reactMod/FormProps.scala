@@ -1,25 +1,25 @@
 package typings.muicss.reactMod
 
-import typings.react.Anon_Html
-import typings.react.reactMod.AnimationEvent
-import typings.react.reactMod.Booleanish
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.CompositionEvent
-import typings.react.reactMod.DragEvent
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.FormHTMLAttributes
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.PointerEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.SyntheticEvent
-import typings.react.reactMod.TouchEvent
-import typings.react.reactMod.TransitionEvent
-import typings.react.reactMod.UIEvent
-import typings.react.reactMod.WheelEvent
+import typings.react.AnonHtml
+import typings.react.mod.AnimationEvent
+import typings.react.mod.Booleanish
+import typings.react.mod.CSSProperties
+import typings.react.mod.ClipboardEvent
+import typings.react.mod.CompositionEvent
+import typings.react.mod.DragEvent
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.FormHTMLAttributes
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TouchEvent
+import typings.react.mod.TransitionEvent
+import typings.react.mod.UIEvent
+import typings.react.mod.WheelEvent
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
 import typings.react.reactStrings.additions
@@ -65,7 +65,7 @@ import typings.react.reactStrings.tree
 import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLFormElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -139,7 +139,7 @@ object FormProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -161,15 +161,15 @@ object FormProps {
     method: String = null,
     name: String = null,
     noValidate: js.UndefOr[Boolean] = js.undefined,
-    onAbort: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onAbort: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLFormElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLFormElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLFormElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLFormElement, NativeMouseEvent] => Unit = null,
     onBeforeInput: FormEvent[HTMLFormElement] => Unit = null,
     onBlur: FocusEvent[HTMLFormElement] => Unit = null,
-    onCanPlay: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onCanPlay: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onCanPlayThrough: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onChange: FormEvent[HTMLFormElement] => Unit = null,
     onClick: MouseEvent[HTMLFormElement, NativeMouseEvent] => Unit = null,
     onCompositionEnd: CompositionEvent[HTMLFormElement] => Unit = null,
@@ -187,21 +187,21 @@ object FormProps {
     onDragOver: DragEvent[HTMLFormElement] => Unit = null,
     onDragStart: DragEvent[HTMLFormElement] => Unit = null,
     onDrop: DragEvent[HTMLFormElement] => Unit = null,
-    onDurationChange: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onEmptied: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onEnded: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onError: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onDurationChange: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onEmptied: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onEncrypted: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onEnded: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onError: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onFocus: FocusEvent[HTMLFormElement] => Unit = null,
     onInput: FormEvent[HTMLFormElement] => Unit = null,
     onInvalid: FormEvent[HTMLFormElement] => Unit = null,
     onKeyDown: KeyboardEvent[HTMLFormElement] => Unit = null,
     onKeyPress: KeyboardEvent[HTMLFormElement] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLFormElement] => Unit = null,
-    onLoad: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onLoad: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onLoadStart: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onLoadedData: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onLoadedMetadata: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onMouseDown: MouseEvent[HTMLFormElement, NativeMouseEvent] => Unit = null,
     onMouseEnter: MouseEvent[HTMLFormElement, NativeMouseEvent] => Unit = null,
     onMouseLeave: MouseEvent[HTMLFormElement, NativeMouseEvent] => Unit = null,
@@ -210,9 +210,9 @@ object FormProps {
     onMouseOver: MouseEvent[HTMLFormElement, NativeMouseEvent] => Unit = null,
     onMouseUp: MouseEvent[HTMLFormElement, NativeMouseEvent] => Unit = null,
     onPaste: ClipboardEvent[HTMLFormElement] => Unit = null,
-    onPause: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onPlay: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onPlaying: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onPause: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onPlay: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onPlaying: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onPointerCancel: PointerEvent[HTMLFormElement] => Unit = null,
     onPointerDown: PointerEvent[HTMLFormElement] => Unit = null,
     onPointerEnter: PointerEvent[HTMLFormElement] => Unit = null,
@@ -221,24 +221,24 @@ object FormProps {
     onPointerOut: PointerEvent[HTMLFormElement] => Unit = null,
     onPointerOver: PointerEvent[HTMLFormElement] => Unit = null,
     onPointerUp: PointerEvent[HTMLFormElement] => Unit = null,
-    onProgress: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onRateChange: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onProgress: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onRateChange: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onReset: FormEvent[HTMLFormElement] => Unit = null,
     onScroll: UIEvent[HTMLFormElement] => Unit = null,
-    onSeeked: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onSeeking: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onSelect: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onStalled: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onSeeked: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onSeeking: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onSelect: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onStalled: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onSubmit: FormEvent[HTMLFormElement] => Unit = null,
-    onSuspend: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onSuspend: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onTimeUpdate: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onTouchCancel: TouchEvent[HTMLFormElement] => Unit = null,
     onTouchEnd: TouchEvent[HTMLFormElement] => Unit = null,
     onTouchMove: TouchEvent[HTMLFormElement] => Unit = null,
     onTouchStart: TouchEvent[HTMLFormElement] => Unit = null,
     onTransitionEnd: TransitionEvent[HTMLFormElement] => Unit = null,
-    onVolumeChange: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
-    onWaiting: SyntheticEvent[HTMLFormElement, Event] => Unit = null,
+    onVolumeChange: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
+    onWaiting: SyntheticEvent[HTMLFormElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLFormElement] => Unit = null,
     placeholder: String = null,
     prefix: String = null,

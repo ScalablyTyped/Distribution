@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojo.data.api.Read
 import typings.dojo.dojo.data.api.Request
 import typings.dojo.dojoStrings.append
@@ -24,8 +24,8 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.mobile._DataMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dojox.mobile._DataListMixin because Inheritance from two classes. Inlined append, itemMap, query, queryOptions, store, buildRendering, createListItem, generateList, itemRenderer, refresh, setQuery, setQuery, setStore, setStore, onComplete, onDelete, onError, onNew, onSet, onSet, onSet, onSet, onStoreClose */ @JSGlobal("dojox.mobile.EdgeToEdgeDataList")
+- typings.dojo.dojox.mobile.DataMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dojox.mobile.DataListMixin because Inheritance from two classes. Inlined append, itemMap, query, queryOptions, store, buildRendering, createListItem, generateList, itemRenderer, refresh, setQuery, setQuery, setStore, setStore, onComplete, onDelete, onError, onNew, onSet, onSet, onSet, onSet, onStoreClose */ @JSGlobal("dojox.mobile.EdgeToEdgeDataList")
 @js.native
 class EdgeToEdgeDataList () extends EdgeToEdgeList {
   def this(params: js.Object) = this()
@@ -206,7 +206,7 @@ class EdgeToEdgeDataList () extends EdgeToEdgeList {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_itemMap(
     property: itemMap,
@@ -216,7 +216,7 @@ class EdgeToEdgeDataList () extends EdgeToEdgeList {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_query(
     property: query,
@@ -226,7 +226,7 @@ class EdgeToEdgeDataList () extends EdgeToEdgeList {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_queryOptions(
     property: queryOptions,
@@ -236,7 +236,7 @@ class EdgeToEdgeDataList () extends EdgeToEdgeList {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_store(
     property: store,
@@ -246,6 +246,6 @@ class EdgeToEdgeDataList () extends EdgeToEdgeList {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

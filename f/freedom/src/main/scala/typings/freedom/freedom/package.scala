@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object freedom {
   // Common on/emit for message passing interfaces.
-  type EventDispatchFn[T] = js.Function2[/* eventType */ String, /* value */ js.UndefOr[T], Unit]
-  type EventHandlerFn[T] = js.Function2[/* eventType */ String, /* handler */ js.Function1[/* eventData */ T, Unit], Unit]
+  type EventDispatchFn[T] = js.Function2[/* eventType */ java.lang.String, /* value */ js.UndefOr[T], scala.Unit]
+  type EventHandlerFn[T] = js.Function2[
+    /* eventType */ java.lang.String, 
+    /* handler */ js.Function1[/* eventData */ T, scala.Unit], 
+    scala.Unit
+  ]
 }

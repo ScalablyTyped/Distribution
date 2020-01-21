@@ -1,0 +1,21 @@
+package typings.grommet
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AnonSide extends js.Object {
+  var side: js.UndefOr[String] = js.undefined
+  var size: js.UndefOr[String] = js.undefined
+}
+
+object AnonSide {
+  @scala.inline
+  def apply(side: String = null, size: String = null): AnonSide = {
+    val __obj = js.Dynamic.literal()
+    if (side != null) __obj.updateDynamic("side")(side.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnonSide]
+  }
+}
+

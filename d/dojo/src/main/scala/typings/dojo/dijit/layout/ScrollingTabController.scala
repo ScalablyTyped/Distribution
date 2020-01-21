@@ -1,13 +1,13 @@
 package typings.dojo.dijit.layout
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.contextRequire
 import typings.dojo.dojoStrings.tabStripClass
 import typings.dojo.dojoStrings.useMenu
 import typings.dojo.dojoStrings.useSlider
 import typings.dojo.dojoStrings.widgetsInTemplate
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined contextRequire, widgetsInTemplate, startup */ @JSGlobal("dijit.layout.ScrollingTabController")
+- typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined contextRequire, widgetsInTemplate, startup */ @JSGlobal("dijit.layout.ScrollingTabController")
 @js.native
 class ScrollingTabController () extends TabController {
   def this(params: js.Object) = this()
@@ -81,13 +81,13 @@ class ScrollingTabController () extends TabController {
     * 
     * @param e The mouse click event.             
     */
-  def doSlideLeft(e: Event): Unit = js.native
+  def doSlideLeft(e: Event_): Unit = js.native
   /**
     * Scrolls the menu to the right.
     * 
     * @param e The mouse click event.             
     */
-  def doSlideRight(e: Event): Unit = js.native
+  def doSlideRight(e: Event_): Unit = js.native
   @JSName("get")
   def get_contextRequire(property: contextRequire): js.Function = js.native
   @JSName("get")
@@ -115,7 +115,7 @@ class ScrollingTabController () extends TabController {
     * 
     * @param page             
     */
-  def onSelectChild(page: _WidgetBase): Unit = js.native
+  def onSelectChild(page: WidgetBase): Unit = js.native
   /**
     * 
     */
@@ -146,7 +146,7 @@ class ScrollingTabController () extends TabController {
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tabStripClass(
     property: tabStripClass,
@@ -156,7 +156,7 @@ class ScrollingTabController () extends TabController {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useMenu(
     property: useMenu,
@@ -166,7 +166,7 @@ class ScrollingTabController () extends TabController {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useSlider(
     property: useSlider,
@@ -176,7 +176,7 @@ class ScrollingTabController () extends TabController {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_widgetsInTemplate(
     property: widgetsInTemplate,
@@ -186,6 +186,6 @@ class ScrollingTabController () extends TabController {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

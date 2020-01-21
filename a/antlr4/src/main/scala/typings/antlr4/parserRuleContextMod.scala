@@ -1,10 +1,10 @@
 package typings.antlr4
 
-import typings.antlr4.errorErrorsMod.RecognitionException
+import typings.antlr4.errorsMod.RecognitionException
 import typings.antlr4.ruleContextMod.RuleContext
 import typings.antlr4.tokenMod.Token
-import typings.antlr4.treeTreeMod.ErrorNode
-import typings.antlr4.treeTreeMod.ParseTreeListener
+import typings.antlr4.treeMod.ErrorNode
+import typings.antlr4.treeMod.ParseTreeListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

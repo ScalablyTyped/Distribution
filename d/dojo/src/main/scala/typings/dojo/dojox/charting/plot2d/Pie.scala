@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * @param kwArgs
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.charting.plot2d._PlotEvents because Inheritance from two classes. Inlined connect, connect, destroy, events, fireEvent, plotEvent, raiseEvent, resetEvents */ @JSGlobal("dojox.charting.plot2d.Pie")
+- typings.dojo.dojox.charting.plot2d.PlotEvents because Inheritance from two classes. Inlined connect, connect, destroy, events, fireEvent, plotEvent, raiseEvent, resetEvents */ @JSGlobal("dojox.charting.plot2d.Pie")
 @js.native
 class Pie protected () extends Base {
   def this(chart: js.Any, kwArgs: js.Any) = this()

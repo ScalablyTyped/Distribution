@@ -1,13 +1,13 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
-import typings.echarts.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderTypeBorderWidthColorOpacity
-import typings.echarts.Anon_EmphasisLengthLength2
-import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+import typings.echarts.AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderTypeBorderWidthColorOpacity
+import typings.echarts.AnonEmphasisLengthLength2
+import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize
 import typings.echarts.echarts.EChartOption.SeriesPie.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-pie
   */
-@JSName("SeriesPie")
 trait SeriesPie_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -252,7 +251,7 @@ trait SeriesPie_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-pie.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize
   ] = js.undefined
   /**
     * Whether to enable the zoom animation effects when hovering sectors.
@@ -288,7 +287,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderTypeBorderWidthColorOpacity] = js.undefined
   /**
     * Text label of pie chart, to explain some data information about
     * graphic item like value, name and so on.
@@ -301,7 +300,7 @@ trait SeriesPie_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-pie.label
     */
   var label: js.UndefOr[
-    Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
+    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
   ] = js.undefined
   /**
     * The style of visual guide line. Will show when
@@ -313,7 +312,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.labelLine
     */
-  var labelLine: js.UndefOr[Anon_EmphasisLengthLength2] = js.undefined
+  var labelLine: js.UndefOr[AnonEmphasisLengthLength2] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -333,7 +332,7 @@ trait SeriesPie_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-pie.markArea
     */
   var markArea: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate
   ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
@@ -342,7 +341,7 @@ trait SeriesPie_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-pie.markLine
     */
   var markLine: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
   ] = js.undefined
   /**
     * Mark point in a chart.
@@ -351,7 +350,7 @@ trait SeriesPie_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-pie.markPoint
     */
   var markPoint: js.UndefOr[
-    Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+    AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
   ] = js.undefined
   /**
     * The minimum angle of sector (0 ~ 360).
@@ -488,7 +487,7 @@ trait SeriesPie_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-pie.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "pie"
@@ -548,17 +547,17 @@ object SeriesPie_ {
     cursor: String = null,
     data: js.Array[js.Array[Double] | DataObject | Double] = null,
     datasetIndex: Int | Double = null,
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize = null,
+    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize = null,
     hoverAnimation: js.UndefOr[Boolean] = js.undefined,
     hoverOffset: Int | Double = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderTypeBorderWidthColorOpacity = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter = null,
-    labelLine: Anon_EmphasisLengthLength2 = null,
+    itemStyle: AnonBorderColorBorderTypeBorderWidthColorOpacity = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter = null,
+    labelLine: AnonEmphasisLengthLength2 = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    markArea: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
-    markLine: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
-    markPoint: Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
+    markArea: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdate = null,
+    markLine: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markPoint: AnonAnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
     minAngle: Int | Double = null,
     minShowLabelAngle: Int | Double = null,
     name: String = null,
@@ -570,7 +569,7 @@ object SeriesPie_ {
     silent: js.UndefOr[Boolean] = js.undefined,
     startAngle: Int | Double = null,
     stillShowZeroSum: js.UndefOr[Boolean] = js.undefined,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     `type`: String = null,
     z: Int | Double = null,
     zlevel: Int | Double = null

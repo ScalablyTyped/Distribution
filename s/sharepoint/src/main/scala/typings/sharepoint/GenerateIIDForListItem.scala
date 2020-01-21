@@ -1,7 +1,7 @@
 package typings.sharepoint
 
 import typings.sharepoint.SPClientTemplates.Item
-import typings.sharepoint.SPClientTemplates.RenderContext_InView
+import typings.sharepoint.SPClientTemplates.RenderContextInView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GenerateIIDForListItem")
 @js.native
 object GenerateIIDForListItem extends js.Object {
-  def apply(renderCtx: RenderContext_InView, listItem: Item): String = js.native
+  def apply(renderCtx: RenderContextInView, listItem: Item): String = js.native
 }
 

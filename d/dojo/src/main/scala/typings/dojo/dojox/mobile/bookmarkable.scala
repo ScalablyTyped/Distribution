@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.dijit.WidgetBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait bookmarkable extends js.Object {
     *
     * @param toView
     */
-  def setFragIds(toView: _WidgetBase): Unit
+  def setFragIds(toView: WidgetBase): Unit
 }
 
 object bookmarkable {
@@ -64,7 +64,7 @@ object bookmarkable {
     findTransitionViews: String => js.Array[_],
     getTransitionInfo: (String, String) => js.Any,
     handleFragIds: String => js.Object,
-    setFragIds: _WidgetBase => Unit,
+    setFragIds: WidgetBase => Unit,
     transitionInfo: js.Array[_]
   ): bookmarkable = {
     val __obj = js.Dynamic.literal(addTransitionInfo = js.Any.fromFunction3(addTransitionInfo), findTransitionViews = js.Any.fromFunction1(findTransitionViews), getTransitionInfo = js.Any.fromFunction2(getTransitionInfo), handleFragIds = js.Any.fromFunction1(handleFragIds), setFragIds = js.Any.fromFunction1(setFragIds), transitionInfo = transitionInfo.asInstanceOf[js.Any])

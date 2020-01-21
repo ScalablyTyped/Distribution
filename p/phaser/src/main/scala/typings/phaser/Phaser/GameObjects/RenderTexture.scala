@@ -4,6 +4,7 @@ import typings.phaser.Phaser.Cameras.Scene2D.BaseCamera
 import typings.phaser.Phaser.GameObjects.Components.Alpha
 import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.ComputedSize
+import typings.phaser.Phaser.GameObjects.Components.Crop
 import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.Flip
 import typings.phaser.Phaser.GameObjects.Components.GetBounds
@@ -17,7 +18,6 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Renderer.Snapshot.SnapshotCallback
@@ -50,6 +50,7 @@ class RenderTexture protected ()
      with Alpha
      with BlendMode
      with ComputedSize
+     with Crop
      with Depth
      with Flip
      with GetBounds
@@ -141,10 +142,6 @@ class RenderTexture protected ()
   /* CompleteClass */
   override var flipY: Boolean = js.native
   /**
-    * The Frame corresponding to this Render Texture.
-    */
-  var frame: Frame = js.native
-  /**
     * A reference to the GL Frame Buffer this Render Texture is drawing to.
     * This is only set if Phaser is running with the WebGL Renderer.
     */
@@ -179,13 +176,14 @@ class RenderTexture protected ()
     */
   var renderer: CanvasRenderer | WebGLRenderer = js.native
   /**
-    * The Texture corresponding to this Render Texture.
-    */
-  var texture: Texture = js.native
-  /**
     * A reference to the Texture Manager.
     */
   var textureManager: TextureManager = js.native
+  /**
+    * The Texture corresponding to this Render Texture.
+    */
+  @JSName("texture")
+  var texture_RenderTexture: Texture = js.native
   /**
     * The visible state of the Game Object.
     * 

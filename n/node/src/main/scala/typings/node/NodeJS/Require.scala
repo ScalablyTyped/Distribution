@@ -1,6 +1,6 @@
 package typings.node.NodeJS
 
-import typings.node.Anon_Paths
+import typings.node.AnonPaths
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,6 @@ trait Require extends js.Object {
   /* tslint:disable-next-line:callable-types */
   def apply(id: String): js.Any = js.native
   def resolve(id: String): String = js.native
-  def resolve(id: String, options: Anon_Paths): String = js.native
+  def resolve(id: String, options: AnonPaths): String = js.native
 }
 

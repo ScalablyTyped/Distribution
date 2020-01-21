@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.sketch.Slider")
 @js.native
-class Slider () extends _Plugin {
+class Slider () extends Plugin {
   def this(args: js.Object) = this()
   /**
     *

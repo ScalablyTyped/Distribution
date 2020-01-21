@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object mapEventMod extends js.Object {
   @js.native
   trait MapEvent
-    extends typings.ol.eventsEventMod.default {
+    extends typings.ol.eventMod.default {
     var frameState: FrameState = js.native
     var map: typings.ol.pluggableMapMod.default = js.native
   }

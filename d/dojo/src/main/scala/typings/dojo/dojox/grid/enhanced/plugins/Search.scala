@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid.enhanced.plugins
 
-import typings.dojo.dojox.grid.enhanced._Plugin
+import typings.dojo.dojox.grid.enhanced.Plugin
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.grid.enhanced.plugins.Search")
 @js.native
-class Search protected () extends _Plugin {
+class Search protected () extends Plugin {
   def this(grid: js.Any, args: js.Any) = this()
   /**
     *

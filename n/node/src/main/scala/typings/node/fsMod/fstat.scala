@@ -18,6 +18,7 @@ object fstat extends js.Object {
     * Asynchronous fstat(2) - Get file status.
     * @param fd A file descriptor.
     */
-  def __promisify__(fd: Double): js.Promise[Stats] = js.native
+  @JSName("__promisify__")
+  def promisify(fd: Double): js.Promise[Stats] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Leftshift
+import typings.vexflow.AnonLeftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +19,6 @@ class Dot () extends Modifier {
 @js.native
 object Dot extends js.Object {
   val CATEGORY: String = js.native
-  def format(dots: Double, state: Anon_Leftshift): Unit = js.native
+  def format(dots: Double, state: AnonLeftshift): Unit = js.native
 }
 

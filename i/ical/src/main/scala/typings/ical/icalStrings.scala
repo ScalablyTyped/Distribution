@@ -1,7 +1,7 @@
 package typings.ical
 
-import typings.ical.icalMod.CalendarComponentType
-import typings.ical.icalMod.FreeBusyType
+import typings.ical.mod.CalendarComponentType
+import typings.ical.mod.FreeBusyType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

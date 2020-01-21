@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ontouchcancel")
 @js.native
 object ontouchcancel
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ TouchEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ TouchEvent, js.Any]) | Null]
 

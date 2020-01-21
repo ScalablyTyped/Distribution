@@ -1,6 +1,6 @@
 package typings.baseui.menuMod
 
-import typings.react.reactMod.Ref
+import typings.react.mod.Ref
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.node.netMod
 
-import typings.node.Anon_AllowHalfOpen
-import typings.node.childUnderscoreProcessMod.SendHandle
+import typings.node.AnonAllowHalfOpen
+import typings.node.childProcessMod.SendHandle
 import typings.node.eventsMod.EventEmitter
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.connection
@@ -19,8 +19,8 @@ class Server ()
   extends EventEmitter
      with SendHandle {
   def this(connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
-  def this(options: Anon_AllowHalfOpen) = this()
-  def this(options: Anon_AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
+  def this(options: AnonAllowHalfOpen) = this()
+  def this(options: AnonAllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
   var connections: Double = js.native
   var listening: Boolean = js.native
   var maxConnections: Double = js.native

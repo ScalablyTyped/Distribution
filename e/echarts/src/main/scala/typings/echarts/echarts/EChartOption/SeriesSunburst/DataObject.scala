@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesSunburst
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.downplay
     */
   var downplay: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering. See
@@ -38,7 +38,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
@@ -49,7 +49,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.highlight
     */
   var highlight: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Style of Sunburst sectors.
@@ -86,7 +86,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -108,7 +108,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.data.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
   /**
     * Link address that redirects to when this sector is clicked.
     * Only useful when
@@ -157,11 +157,11 @@ object DataObject {
   @scala.inline
   def apply(
     children: js.Array[DataObject] = null,
-    downplay: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    downplay: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    highlight: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
     link: String = null,
     name: String = null,
     target: String = null,

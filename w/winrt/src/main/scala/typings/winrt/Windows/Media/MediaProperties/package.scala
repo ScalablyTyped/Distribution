@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MediaProperties {
-  type IContainerEncodingProperties = IMediaEncodingProperties
+  type IContainerEncodingProperties = typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
 }

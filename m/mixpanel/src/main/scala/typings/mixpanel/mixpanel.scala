@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("mixpanel")
 @js.native
-object mixpanel extends TopLevel[Mixpanel]
+object mixpanel extends TopLevel[Mixpanel_]
 

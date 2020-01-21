@@ -1,12 +1,12 @@
 package typings.documentdb
 
-import typings.documentdb.documentdbMod.ConsistencyLevel
-import typings.documentdb.documentdbMod.IndexKind
-import typings.documentdb.documentdbMod.IndexingMode
-import typings.documentdb.documentdbMod.MediaReadMode
-import typings.documentdb.documentdbMod.PermissionMode
-import typings.documentdb.documentdbMod.TriggerOperation
-import typings.documentdb.documentdbMod.TriggerType
+import typings.documentdb.mod.ConsistencyLevel
+import typings.documentdb.mod.IndexKind
+import typings.documentdb.mod.IndexingMode
+import typings.documentdb.mod.MediaReadMode
+import typings.documentdb.mod.PermissionMode
+import typings.documentdb.mod.TriggerOperation
+import typings.documentdb.mod.TriggerType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

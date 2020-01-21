@@ -1,7 +1,7 @@
 package typings.cypress
 
-import typings.cypress.Mocha.Interface
-import typings.cypress.Mocha.MochaOptions
+import typings.cypress.Mocha_.Interface
+import typings.cypress.Mocha_.MochaOptions
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ object MochaSetupOptions {
     ignoreLeaks: js.UndefOr[Boolean] = js.undefined,
     inlineDiffs: js.UndefOr[Boolean] = js.undefined,
     noHighlighting: js.UndefOr[Boolean] = js.undefined,
-    reporter: String | typings.cypress.Mocha.ReporterConstructor = null,
+    reporter: String | typings.cypress.Mocha_.ReporterConstructor = null,
     reporterOptions: js.Any = null,
     require: js.Array[String] = null,
     retries: Int | Double = null,

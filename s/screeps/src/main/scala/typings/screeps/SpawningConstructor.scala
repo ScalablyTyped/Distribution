@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SpawningConstructor extends _ConstructorById[Spawning]
+trait SpawningConstructor extends ConstructorById[Spawning]
 

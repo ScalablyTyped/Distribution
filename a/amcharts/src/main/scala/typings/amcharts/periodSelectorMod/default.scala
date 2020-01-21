@@ -1,6 +1,6 @@
 package typings.amcharts.periodSelectorMod
 
-import typings.amcharts.Anon_Count
+import typings.amcharts.AnonCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -86,7 +86,7 @@ class default () extends PeriodSelector {
     * user clicks on one of the predefined period buttons.
     */
   /* CompleteClass */
-  override def addListener(`type`: String, handler: js.Function1[/* e */ Anon_Count, Unit]): Unit = js.native
+  override def addListener(`type`: String, handler: js.Function1[/* e */ AnonCount, Unit]): Unit = js.native
   /**
     * Removes event listener from chart object.
     */

@@ -1,6 +1,6 @@
 package typings.poi
 
-import typings.poi.poiMod.Mode
+import typings.poi.mod.Mode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

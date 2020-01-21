@@ -100,7 +100,7 @@ trait BrowserWindowConstructorOptions extends js.Object {
     * visual effects, you can also leave it undefined so the executable's icon will be
     * used.
     */
-  var icon: js.UndefOr[NativeImage | String] = js.undefined
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   /**
     * The kiosk mode. Default is false.
     */
@@ -258,7 +258,7 @@ object BrowserWindowConstructorOptions {
     fullscreenable: js.UndefOr[Boolean] = js.undefined,
     hasShadow: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
-    icon: NativeImage | String = null,
+    icon: NativeImage_ | String = null,
     kiosk: js.UndefOr[Boolean] = js.undefined,
     maxHeight: Int | Double = null,
     maxWidth: Int | Double = null,

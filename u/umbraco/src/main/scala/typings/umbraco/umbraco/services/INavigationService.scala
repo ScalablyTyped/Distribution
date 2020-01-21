@@ -1,6 +1,6 @@
 package typings.umbraco.umbraco.services
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -154,7 +154,7 @@ trait INavigationService extends js.Object {
     *
     * @param {Event} event the click event triggering the method, passed from the DOM element
     */
-  def showMenu(event: Event, args: js.Any*): Unit
+  def showMenu(event: Event_, args: js.Any*): Unit
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#showSearch
@@ -227,7 +227,7 @@ object INavigationService {
     setupTreeEvents: js.Any => Unit,
     showDialog: IShowDialogArgs => Unit,
     showHelpDialog: () => Unit,
-    showMenu: (Event, /* repeated */ js.Any) => Unit,
+    showMenu: (Event_, /* repeated */ js.Any) => Unit,
     showSearch: () => Unit,
     showTray: () => Unit,
     showTree: (String, ISyncTreeArgs) => Unit,

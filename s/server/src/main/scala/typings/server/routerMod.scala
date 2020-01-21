@@ -1,7 +1,7 @@
 package typings.server
 
-import typings.server.typingsCommonMod.Middleware
-import typings.server.typingsCommonMod.Middlewares
+import typings.server.commonMod.Middleware
+import typings.server.commonMod.Middlewares
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

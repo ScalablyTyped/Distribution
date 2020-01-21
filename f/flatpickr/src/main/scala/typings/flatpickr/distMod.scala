@@ -1,6 +1,6 @@
 package typings.flatpickr
 
-import typings.flatpickr.distTypesInstanceMod.FlatpickrFn
+import typings.flatpickr.instanceMod.FlatpickrFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

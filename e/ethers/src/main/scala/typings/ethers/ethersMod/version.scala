@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ethers", "version")
+@JSImport("ethers/dist/types/ethers", "version")
 @js.native
 object version extends TopLevel[`4Dot0Dot0-betaDot3`]
 

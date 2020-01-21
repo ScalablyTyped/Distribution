@@ -1,9 +1,9 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.winjs.Anon_X
+import typings.winjs.AnonX
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,22 +80,22 @@ class Flyout () extends js.Object {
     * Raised immediately after a flyout is fully hidden.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterhide(eventInfo: Event): Unit = js.native
+  def onafterhide(eventInfo: Event_): Unit = js.native
   /**
     * Raised immediately after a flyout is fully shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onaftershow(eventInfo: Event): Unit = js.native
+  def onaftershow(eventInfo: Event_): Unit = js.native
   /**
     * Raised just before hiding a flyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforehide(eventInfo: Event): Unit = js.native
+  def onbeforehide(eventInfo: Event_): Unit = js.native
   /**
     * Raised just before showing a flyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeshow(eventInfo: Event): Unit = js.native
+  def onbeforeshow(eventInfo: Event_): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param type The event type to unregister. It must be beforeshow, beforehide, aftershow, or afterhide.
@@ -118,7 +118,7 @@ class Flyout () extends js.Object {
     * Shows the Flyout, if hidden, regardless of other states, top and left aligned at the specified coordinates,
     * @param coordinates Required. The point where the top left corner of the flyout will appear, relative to the top and left edge of the visual viewport.
     **/
-  def showAt(coordinates: Anon_X): Unit = js.native
+  def showAt(coordinates: AnonX): Unit = js.native
   /**
     * Shows the Flyout, if hidden, regardless of other states, top and left aligned at the location of the mouse event object,
     * @param mouseEventObj Required. The MouseEvent Object specifying where to show the Flyout.

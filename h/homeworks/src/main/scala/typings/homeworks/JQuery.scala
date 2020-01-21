@@ -15,7 +15,7 @@ import typings.homeworks.homeworks.TabMoveEventType
 import typings.homeworks.homeworks.TabOptions
 import typings.homeworks.homeworks.ToggleOptions
 import typings.homeworks.homeworks.UploadOptions
-import typings.jquery.JQuery.EventHandlerBase
+import typings.jquery.JQuery_.EventHandlerBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

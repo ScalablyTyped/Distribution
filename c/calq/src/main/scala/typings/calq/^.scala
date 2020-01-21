@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var calq: Calq = js.native
+  var calq: Calq_ = js.native
 }
 

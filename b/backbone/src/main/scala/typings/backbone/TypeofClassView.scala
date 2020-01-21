@@ -2,9 +2,9 @@ package typings.backbone
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.backbone.backboneMod.Model
-import typings.backbone.backboneMod.View
-import typings.backbone.backboneMod.ViewOptions
+import typings.backbone.mod.Model
+import typings.backbone.mod.View
+import typings.backbone.mod.ViewOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

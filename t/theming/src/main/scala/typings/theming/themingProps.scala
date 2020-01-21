@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait themingProps {
   @scala.inline
-  def ThemeProviderProps: typings.theming.themingMod.ThemeProviderProps.type = typings.theming.themingMod.ThemeProviderProps
-  type ThemeProviderProps[Theme] = typings.theming.themingMod.ThemeProviderProps[Theme]
+  def ThemeProviderProps: typings.theming.mod.ThemeProviderProps.type = typings.theming.mod.ThemeProviderProps
+  type ThemeProviderProps[Theme] = typings.theming.mod.ThemeProviderProps[Theme]
 }
 

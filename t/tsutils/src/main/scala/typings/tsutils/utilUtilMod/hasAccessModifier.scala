@@ -1,7 +1,7 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.ClassElement
-import typings.typescript.typescriptMod.ParameterDeclaration
+import typings.typescript.mod.ClassElement
+import typings.typescript.mod.ParameterDeclaration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

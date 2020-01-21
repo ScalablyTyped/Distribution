@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
   * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\`.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.std.Event because Already inherited
+- typings.std.Event_ because Already inherited
 - typings.cypress.BaseJQueryEventObject because Already inherited
 - typings.cypress.JQueryInputEventObject because Already inherited
 - typings.cypress.JQueryKeyEventObject because var conflicts: altKey, cancelBubble, ctrlKey, currentTarget, data, delegateTarget, metaKey, namespace, originalEvent, pageX, pageY, relatedTarget, result, returnValue, shiftKey, target, which. Inlined char, charCode, key, keyCode */ @js.native

@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Leftshift
+import typings.vexflow.AnonLeftshift
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ class GraceNoteGroup protected () extends Modifier {
   def beamNotes(): GraceNoteGroup = js.native
   def preFormat(): Unit = js.native
   def setNote(note: StaveNote): Modifier = js.native
-   //inconsistent type: void -> GraceNoteGroup
+  //TODO remove the following lines once TypeScript allows subclass overrides with type changes or type inconsistencies mentioned below are fixed
   @JSName("setWidth")
-  def setWidth_Unit(width: Double): Unit = js.native
+  def setWidth_Modifier(width: Double): Modifier = js.native
 }
 
 /* static members */
@@ -25,6 +25,6 @@ object GraceNoteGroup extends js.Object {
   val CATEGORY: String = js.native
    //inconsistent name: 'show_slur' is called 'config', suggesting object (is boolean)
   var DEBUG: Boolean = js.native
-  def format(gracenote_groups: js.Array[GraceNoteGroup], state: Anon_Leftshift): Boolean = js.native
+  def format(gracenote_groups: js.Array[GraceNoteGroup], state: AnonLeftshift): Boolean = js.native
 }
 

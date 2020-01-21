@@ -1,10 +1,10 @@
 package typings.baseui.radioMod
 
-import typings.react.reactMod.ChangeEvent
-import typings.react.reactMod.ChangeEventHandler
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.SyntheticEvent
-import typings.std.Event
+import typings.react.mod.ChangeEvent
+import typings.react.mod.ChangeEventHandler
+import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.std.Event_
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +22,7 @@ trait StatefulContainerProps extends js.Object {
 object StatefulContainerProps {
   @scala.inline
   def apply(
-    stateReducer: (/* stateType */ String, /* nextState */ State, /* currentState */ State, /* event */ SyntheticEvent[HTMLInputElement, Event]) => State,
+    stateReducer: (/* stateType */ String, /* nextState */ State, /* currentState */ State, /* event */ SyntheticEvent[HTMLInputElement, Event_]) => State,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     initialState: State = null,

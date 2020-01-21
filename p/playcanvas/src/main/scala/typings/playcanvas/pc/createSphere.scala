@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Radius
+import typings.playcanvas.AnonRadius
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +24,6 @@ object createSphere extends js.Object {
     * @returns {pc.Mesh} A new sphere-shaped mesh.
     */
   def apply(device: GraphicsDevice): Mesh = js.native
-  def apply(device: GraphicsDevice, opts: Anon_Radius): Mesh = js.native
+  def apply(device: GraphicsDevice, opts: AnonRadius): Mesh = js.native
 }
 

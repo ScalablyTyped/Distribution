@@ -1,13 +1,13 @@
 package typings.servicenow.servicenow
 
-import typings.servicenow.Anon_Get
+import typings.servicenow.AnonGet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RESTResponseV2 extends js.Object {
   def getBody(): String
-  def getCookies(): Anon_Get
+  def getCookies(): AnonGet
   def getErrorCode(): Double
   def getErrorMessage(): String
   def getHeader(name: String): String
@@ -23,7 +23,7 @@ object RESTResponseV2 {
   @scala.inline
   def apply(
     getBody: () => String,
-    getCookies: () => Anon_Get,
+    getCookies: () => AnonGet,
     getErrorCode: () => Double,
     getErrorMessage: () => String,
     getHeader: String => String,

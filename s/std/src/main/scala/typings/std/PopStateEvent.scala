@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /** PopStateEvent is an event handler for the popstate event on the window. */
 @js.native
-trait PopStateEvent extends Event {
+trait PopStateEvent extends Event_ {
   val state: js.Any = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.samchon.protocolMod
 
 import typings.std.Uint8Array
-import typings.sxml.sxmlMod.XML
+import typings.sxml.mod.XML
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class Invoke ()
-  extends typings.samchon.protocolInvokeInvokeMod.Invoke {
+  extends typings.samchon.invokeMod.Invoke {
   /**
     * Copy Constructor.
     *
     * @param invoke
     */
-  def this(invoke: typings.samchon.protocolInvokeInvokeMod.Invoke) = this()
+  def this(invoke: typings.samchon.invokeMod.Invoke) = this()
   def this(listener: String) = this()
   /**
     * Construct from listener and parametric values.

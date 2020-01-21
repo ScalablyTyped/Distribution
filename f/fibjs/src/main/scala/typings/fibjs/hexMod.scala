@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hex", JSImport.Namespace)
 @js.native
 object hexMod extends js.Object {
-  def decode(data: String): Class_Buffer = js.native
-  def encode(data: Class_Buffer): String = js.native
+  def decode(data: String): ClassBuffer = js.native
+  def encode(data: ClassBuffer): String = js.native
 }
 

@@ -1,25 +1,25 @@
 package typings.mirrorx
 
-import typings.mirrorx.mirrorxMod.ConnectedRouterProps
+import typings.mirrorx.mod.ConnectedRouterProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait mirrorxProps {
   @scala.inline
-  def LinkProps: typings.mirrorx.mirrorxMod.LinkProps.type = typings.mirrorx.mirrorxMod.LinkProps
-  type LinkProps = typings.mirrorx.mirrorxMod.LinkProps
+  def LinkProps: typings.mirrorx.mod.LinkProps.type = typings.mirrorx.mod.LinkProps
+  type LinkProps = typings.mirrorx.mod.LinkProps
   @scala.inline
-  def NavLinkProps: typings.mirrorx.mirrorxMod.NavLinkProps.type = typings.mirrorx.mirrorxMod.NavLinkProps
-  type NavLinkProps = typings.mirrorx.mirrorxMod.NavLinkProps
+  def NavLinkProps: typings.mirrorx.mod.NavLinkProps.type = typings.mirrorx.mod.NavLinkProps
+  type NavLinkProps = typings.mirrorx.mod.NavLinkProps
   @scala.inline
-  def PromptProps: typings.mirrorx.mirrorxMod.PromptProps.type = typings.mirrorx.mirrorxMod.PromptProps
-  type PromptProps = typings.mirrorx.mirrorxMod.PromptProps
+  def PromptProps: typings.mirrorx.mod.PromptProps.type = typings.mirrorx.mod.PromptProps
+  type PromptProps = typings.mirrorx.mod.PromptProps
   @scala.inline
-  def RedirectProps: typings.mirrorx.mirrorxMod.RedirectProps.type = typings.mirrorx.mirrorxMod.RedirectProps
-  type RedirectProps = typings.mirrorx.mirrorxMod.RedirectProps
+  def RedirectProps: typings.mirrorx.mod.RedirectProps.type = typings.mirrorx.mod.RedirectProps
+  type RedirectProps = typings.mirrorx.mod.RedirectProps
   @scala.inline
-  def RouterProps: ConnectedRouterProps.type = typings.mirrorx.mirrorxMod.ConnectedRouterProps
+  def RouterProps: ConnectedRouterProps.type = typings.mirrorx.mod.ConnectedRouterProps
   type RouterProps[State] = ConnectedRouterProps[State]
 }
 

@@ -1,6 +1,6 @@
 package typings.archiver
 
-import typings.archiver.archiverMod.Format
+import typings.archiver.mod.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

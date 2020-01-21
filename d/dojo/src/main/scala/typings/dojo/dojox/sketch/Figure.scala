@@ -80,7 +80,7 @@ object Figure extends js.Object {
     *
     * @param t
     */
-  type setTool = js.Function1[/* t */ _Plugin, Unit]
+  type setTool = js.Function1[/* t */ Plugin, Unit]
   /**
     *
     * @param text

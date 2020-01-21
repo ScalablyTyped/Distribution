@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("samchon/protocol", "EntityList")
 @js.native
-abstract class EntityList[T /* <: typings.samchon.protocolEntityIEntityMod.IEntity */] ()
-  extends typings.samchon.protocolEntityEntityArrayMod.EntityList[T]
+abstract class EntityList[T /* <: typings.samchon.ientityMod.IEntity */] ()
+  extends typings.samchon.entityArrayMod.EntityList[T]
 

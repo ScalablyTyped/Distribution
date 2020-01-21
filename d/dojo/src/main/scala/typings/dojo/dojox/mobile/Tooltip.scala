@@ -1,8 +1,8 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.style
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mobile.Tooltip")
 @js.native
-class Tooltip () extends _WidgetBase {
+class Tooltip () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -32,7 +32,7 @@ class Tooltip () extends _WidgetBase {
     *
     */
   def hide(): Unit = js.native
-  def onBlur(e: Event): Boolean = js.native
+  def onBlur(e: Event_): Boolean = js.native
   /**
     * Track specified handles and remove/destroy them when this instance is destroyed, unless they were
     * already removed/destroyed manually.

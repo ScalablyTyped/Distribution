@@ -1,7 +1,7 @@
 package typings.winjs.WinJS.Utilities
 
 import typings.std.HTMLElement
-import typings.winjs.Anon_ScrollLeft
+import typings.winjs.AnonScrollLeft
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,6 +14,6 @@ object getScrollPosition extends js.Object {
     * @param element The element.
     * @returns An object with two properties: scrollLeft and scrollTop
     **/
-  def apply(element: HTMLElement): Anon_ScrollLeft = js.native
+  def apply(element: HTMLElement): AnonScrollLeft = js.native
 }
 

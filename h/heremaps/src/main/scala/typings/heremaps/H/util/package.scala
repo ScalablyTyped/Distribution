@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object util {
-  type ContextItem = ContextItem_
+  type ContextItem = typings.heremaps.H.util.ContextItem_
 }

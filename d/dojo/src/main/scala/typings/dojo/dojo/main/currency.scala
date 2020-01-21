@@ -1,6 +1,6 @@
 package typings.dojo.dojo.main
 
-import typings.dojo.dojo.currency.__FormatOptions
+import typings.dojo.dojo.currency.FormatOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,7 +31,7 @@ trait currency extends js.Object {
     * @param options               Optional
     */
   def format(value: Double): js.Any = js.native
-  def format(value: Double, options: __FormatOptions): js.Any = js.native
+  def format(value: Double, options: FormatOptions): js.Any = js.native
   /**
     *
     * @param expression

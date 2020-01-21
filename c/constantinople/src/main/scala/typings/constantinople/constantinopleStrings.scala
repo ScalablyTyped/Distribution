@@ -1,6 +1,6 @@
 package typings.constantinople
 
-import typings.constantinople.libBinaryOperationMod.Operator
+import typings.constantinople.binaryOperationMod.Operator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

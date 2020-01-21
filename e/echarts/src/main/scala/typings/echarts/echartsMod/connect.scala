@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("echarts", "connect")
+@JSImport("echarts/lib/echarts", "connect")
 @js.native
 object connect extends js.Object {
   /**

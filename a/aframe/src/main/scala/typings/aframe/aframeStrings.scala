@@ -1,7 +1,7 @@
 package typings.aframe
 
-import typings.aframe.aframeMod.PropertyTypes
-import typings.aframe.aframeMod.SceneEvents
+import typings.aframe.mod.PropertyTypes
+import typings.aframe.mod.SceneEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

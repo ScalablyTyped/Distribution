@@ -1,6 +1,6 @@
 package typings.ol.styleStyleMod
 
-import typings.ol.featureMod.FeatureLike
+import typings.ol.olFeatureMod.FeatureLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

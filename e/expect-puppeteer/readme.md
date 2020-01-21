@@ -1,7 +1,7 @@
 
 # Scala.js typings for expect-puppeteer
 
-Typings are for version 3.3
+Typings are for version 4.4
 
 ## Library description:
 Assertion toolkit for Puppeteer.

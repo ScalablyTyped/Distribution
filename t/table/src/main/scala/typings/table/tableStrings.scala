@@ -1,6 +1,6 @@
 package typings.table
 
-import typings.table.tableMod.BorderType
+import typings.table.mod.BorderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

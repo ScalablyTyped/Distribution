@@ -1,7 +1,7 @@
 package typings.dojo.dojox.fx
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
 import typings.dojo.dojoStrings.animate
 import typings.dojo.dojoStrings.node
 import typings.dojo.dojoStrings.opacity
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.fx.Shadow")
 @js.native
-class Shadow () extends _Widget {
+class Shadow () extends Widget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -116,7 +116,7 @@ class Shadow () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_node(
     property: node,
@@ -126,7 +126,7 @@ class Shadow () extends _Widget {
       /* newValue */ js.UndefOr[HTMLElement], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_opacity(
     property: opacity,
@@ -136,7 +136,7 @@ class Shadow () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_shadowOffset(
     property: shadowOffset,
@@ -146,7 +146,7 @@ class Shadow () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_shadowPng(
     property: shadowPng,
@@ -156,7 +156,7 @@ class Shadow () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_shadowThickness(
     property: shadowThickness,
@@ -166,6 +166,6 @@ class Shadow () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

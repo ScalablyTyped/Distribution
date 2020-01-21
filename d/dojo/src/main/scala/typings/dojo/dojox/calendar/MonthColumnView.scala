@@ -1,6 +1,6 @@
 package typings.dojo.dojox.calendar
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.columnCount
 import typings.dojo.dojoStrings.columnHeaderFormatLength
@@ -34,8 +34,8 @@ import scala.scalajs.js.annotation._
   *
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.calendar.MonthColumnView")
+- typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined attachScope, searchContainerNode, templatePath, templateString, buildRendering, destroyRendering, getCachedTemplate, getCachedTemplate */ @JSGlobal("dojox.calendar.MonthColumnView")
 @js.native
 class MonthColumnView () extends ViewBase {
   /**
@@ -291,7 +291,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_columnCount(
     property: columnCount,
@@ -301,7 +301,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_columnHeaderFormatLength(
     property: columnHeaderFormatLength,
@@ -311,7 +311,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_daySize(
     property: daySize,
@@ -321,7 +321,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_gridCellDatePattern(
     property: gridCellDatePattern,
@@ -331,7 +331,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_horizontalGap(
     property: horizontalGap,
@@ -341,7 +341,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_percentOverlap(
     property: percentOverlap,
@@ -351,7 +351,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_renderData(
     property: renderData,
@@ -361,7 +361,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_roundToDay(
     property: roundToDay,
@@ -371,7 +371,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollBarRTLPosition(
     property: scrollBarRTLPosition,
@@ -381,7 +381,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollPosition(
     property: scrollPosition,
@@ -391,7 +391,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchContainerNode(
     property: searchContainerNode,
@@ -401,7 +401,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showCellLabel(
     property: showCellLabel,
@@ -411,7 +411,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showHiddenItems(
     property: showHiddenItems,
@@ -421,7 +421,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_startDate(
     property: startDate,
@@ -431,7 +431,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[Date], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_styleGridCellFunc(
     property: styleGridCellFunc,
@@ -441,7 +441,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[js.Function], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templatePath(
     property: templatePath,
@@ -451,7 +451,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_templateString(
     property: templateString,
@@ -461,7 +461,7 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_verticalRenderer(
     property: verticalRenderer,
@@ -471,6 +471,6 @@ class MonthColumnView () extends ViewBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

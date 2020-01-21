@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlZoomSliderMod.Options
-import typings.ol.controlZoomSliderMod.default
+import typings.ol.zoomSliderMod.Options
+import typings.ol.zoomSliderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.react
 
-import typings.react.experimentalMod.reactMod.SuspenseListRevealOrder
-import typings.react.experimentalMod.reactMod.SuspenseListTailMode
+import typings.react.mod.SuspenseListRevealOrder
+import typings.react.mod.SuspenseListTailMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -91,7 +91,7 @@ object reactStrings {
   @js.native
   sealed trait backwards
     extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   
   @js.native
   sealed trait base extends js.Object
@@ -171,7 +171,7 @@ object reactStrings {
   @js.native
   sealed trait collapsed
     extends SuspenseListTailMode
-       with typings.react.reactMod.SuspenseListTailMode
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode
   
   @js.native
   sealed trait copy extends js.Object
@@ -338,7 +338,7 @@ object reactStrings {
   @js.native
   sealed trait forwards
     extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   
   @js.native
   sealed trait g extends js.Object
@@ -382,7 +382,7 @@ object reactStrings {
   @js.native
   sealed trait hidden
     extends SuspenseListTailMode
-       with typings.react.reactMod.SuspenseListTailMode
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -771,7 +771,7 @@ object reactStrings {
   @js.native
   sealed trait together
     extends SuspenseListRevealOrder
-       with typings.react.reactMod.SuspenseListRevealOrder
+       with typings.react.experimentalMod.reactAugmentingMod.SuspenseListRevealOrder
   
   @js.native
   sealed trait top extends js.Object

@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,7 +78,7 @@ class ScreenSizeAware () extends js.Object {
     *
     * @param e
     */
-  def leftItemSelected(e: Event): Unit = js.native
+  def leftItemSelected(e: Event_): Unit = js.native
   /**
     * Places the list widget. If the current mode is "phone", it
     * places the list widget in the right pane, otherwise in the left pane.

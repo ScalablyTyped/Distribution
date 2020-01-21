@@ -1,11 +1,11 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColor
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ColorCurvenessShadowBlur
-import typings.echarts.Anon_EmphasisItemStyleLabel
-import typings.echarts.Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonAlignBackgroundColorBorderColor
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonColorCurvenessShadowBlur
+import typings.echarts.AnonEmphasisItemStyleLabel
+import typings.echarts.AnonItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor
 import typings.echarts.echarts.EChartOption.SeriesTree.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +33,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-tree
   */
-@JSName("SeriesTree")
 trait SeriesTree_ extends js.Object {
   /**
     * Distance between tree component and the bottom side of the container.
@@ -60,7 +59,7 @@ trait SeriesTree_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-tree.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Subtree collapses and expands interaction, `default true`.
     * As the drawing area is limited, and usually the nodes of a tree
@@ -130,7 +129,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * `label` describes the style of the text corresponding to each
     * node.
@@ -138,7 +137,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColor] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * The layout of the tree, which can be `orthogonal` and `radial`
     * 。Here the `orthogonal` layout is what we usually refer to the
@@ -169,7 +168,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.leaves
     */
-  var leaves: js.UndefOr[Anon_EmphasisItemStyleLabel] = js.undefined
+  var leaves: js.UndefOr[AnonEmphasisItemStyleLabel] = js.undefined
   /**
     * Distance between tree component and the left side of the container.
     *
@@ -192,7 +191,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ColorCurvenessShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[AnonColorCurvenessShadowBlur] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -354,7 +353,7 @@ trait SeriesTree_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-tree.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * Distance between tree component and the top side of the container.
     *
@@ -424,17 +423,17 @@ object SeriesTree_ {
   def apply(
     bottom: Double | String = null,
     data: js.Array[DataObject] = null,
-    emphasis: Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor = null,
+    emphasis: AnonItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor = null,
     expandAndCollapse: js.UndefOr[Boolean] = js.undefined,
     height: Double | String = null,
     id: String = null,
     initialTreeDepth: Int | Double = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColor = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColor = null,
     layout: String = null,
-    leaves: Anon_EmphasisItemStyleLabel = null,
+    leaves: AnonEmphasisItemStyleLabel = null,
     left: Double | String = null,
-    lineStyle: Anon_ColorCurvenessShadowBlur = null,
+    lineStyle: AnonColorCurvenessShadowBlur = null,
     name: String = null,
     orient: String = null,
     right: Double | String = null,
@@ -444,7 +443,7 @@ object SeriesTree_ {
     symbolOffset: js.Array[_] = null,
     symbolRotate: Int | Double = null,
     symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     top: Double | String = null,
     `type`: String = null,
     width: Double | String = null,

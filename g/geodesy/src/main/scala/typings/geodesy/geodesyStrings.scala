@@ -1,6 +1,6 @@
 package typings.geodesy
 
-import typings.geodesy.geodesyMod.Format
+import typings.geodesy.mod.Format
 import typings.geodesy.utmMod.Hemisphere
 import scala.scalajs.js
 import scala.scalajs.js.`|`

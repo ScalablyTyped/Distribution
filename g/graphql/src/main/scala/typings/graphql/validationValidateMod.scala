@@ -1,12 +1,12 @@
 package typings.graphql
 
-import typings.graphql.errorGraphQLErrorMod.GraphQLError
-import typings.graphql.languageAstMod.DocumentNode
-import typings.graphql.tsutilsMaybeMod.Maybe
-import typings.graphql.typeSchemaMod.GraphQLSchema
-import typings.graphql.utilitiesTypeInfoMod.TypeInfo
-import typings.graphql.validationValidationContextMod.SDLValidationRule
-import typings.graphql.validationValidationContextMod.ValidationRule
+import typings.graphql.astMod.DocumentNode
+import typings.graphql.graphQLErrorMod.GraphQLError
+import typings.graphql.maybeMod.Maybe
+import typings.graphql.schemaMod.GraphQLSchema
+import typings.graphql.typeInfoMod.TypeInfo
+import typings.graphql.validationContextMod.SDLValidationRule
+import typings.graphql.validationContextMod.ValidationRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ object validationValidateMod extends js.Object {
     documentAST: DocumentNode,
     rules: js.Array[ValidationRule],
     typeInfo: TypeInfo,
-    options: Anon_MaxErrors
+    options: AnonMaxErrors
   ): js.Array[GraphQLError] = js.native
   def validateSDL(documentAST: DocumentNode): js.Array[GraphQLError] = js.native
   def validateSDL(documentAST: DocumentNode, schemaToExtend: Maybe[GraphQLSchema]): js.Array[GraphQLError] = js.native

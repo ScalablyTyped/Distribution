@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("async")
 trait async_ extends js.Object {
   /**
     * Executes functions in parallel. As soon as one of them finishes

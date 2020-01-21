@@ -1,5 +1,6 @@
 package typings.phaser.Phaser.Physics.Matter.Events
 
+import typings.phaser.Phaser.Types.Physics.Matter.MatterCollisionData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +13,7 @@ trait CollisionEndEvent extends js.Object {
   /**
     * A list of all affected pairs in the collision.
     */
-  var pairs: js.Array[_]
+  var pairs: js.Array[MatterCollisionData]
   /**
     * The source object of the event.
     */
@@ -25,7 +26,7 @@ trait CollisionEndEvent extends js.Object {
 
 object CollisionEndEvent {
   @scala.inline
-  def apply(name: String, pairs: js.Array[_], source: js.Any, timestamp: Double): CollisionEndEvent = {
+  def apply(name: String, pairs: js.Array[MatterCollisionData], source: js.Any, timestamp: Double): CollisionEndEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pairs = pairs.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CollisionEndEvent]

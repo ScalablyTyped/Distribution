@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object lang {
-  type async = async_
-  type functional = functional_
+  type async = typings.dojo.dojox.lang.async_
+  type functional = typings.dojo.dojox.lang.functional_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/lang/observable.html
     *
@@ -25,6 +25,6 @@ package object lang {
     /* onRead */ js.Function, 
     /* onWrite */ js.Function, 
     /* onInvoke */ js.Function, 
-    Unit
+    scala.Unit
   ]
 }

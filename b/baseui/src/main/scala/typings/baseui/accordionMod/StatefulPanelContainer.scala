@@ -1,7 +1,7 @@
 package typings.baseui.accordionMod
 
 import typings.baseui.baseuiStrings.expand
-import typings.react.reactMod.Component
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

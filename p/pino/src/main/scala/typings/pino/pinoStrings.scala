@@ -1,7 +1,7 @@
 package typings.pino
 
-import typings.pino.pinoMod.Level
-import typings.pino.pinoMod.LevelWithSilent
+import typings.pino.mod.Level
+import typings.pino.mod.LevelWithSilent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

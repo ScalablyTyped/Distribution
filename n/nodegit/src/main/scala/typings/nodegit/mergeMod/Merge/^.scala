@@ -1,12 +1,12 @@
 package typings.nodegit.mergeMod.Merge
 
-import typings.nodegit.annotatedDashCommitMod.AnnotatedCommit
-import typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
+import typings.nodegit.annotatedCommitMod.AnnotatedCommit
+import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.commitMod.Commit
-import typings.nodegit.mergeDashFileDashInputMod.MergeFileInput
-import typings.nodegit.mergeDashOptionsMod.MergeOptions
-import typings.nodegit.nodegitMod.Index
-import typings.nodegit.oidDashArrayMod.Oidarray
+import typings.nodegit.mergeFileInputMod.MergeFileInput
+import typings.nodegit.mergeOptionsMod.MergeOptions
+import typings.nodegit.mod.Index
+import typings.nodegit.oidArrayMod.Oidarray
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeMod.Tree

@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
   * Interface for Xrm.Device API
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-device External Link: Xrm.Device (Client API reference)}
   */
-@JSName("Device")
 @js.native
 trait Device_ extends js.Object {
   /**

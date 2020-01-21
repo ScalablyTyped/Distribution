@@ -1,6 +1,6 @@
 package typings.behavior3.b3
 
-import typings.behavior3.Anon_ChildrenArray
+import typings.behavior3.AnonChildrenArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Sequence.
   */
 class Sequence () extends Composite {
-  def this(hasChildren: Anon_ChildrenArray) = this()
+  def this(hasChildren: AnonChildrenArray) = this()
 }
 

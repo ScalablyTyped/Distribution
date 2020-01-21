@@ -20,7 +20,7 @@ object InputEventInit {
     detail: Int | Double = null,
     inputType: java.lang.String = null,
     isComposing: js.UndefOr[scala.Boolean] = js.undefined,
-    view: Window = null
+    view: Window_ = null
   ): InputEventInit = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])

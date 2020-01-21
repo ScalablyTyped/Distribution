@@ -1,7 +1,7 @@
 package typings.cypress.mochaMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cypress.Mocha.PendingTestFunction
+import typings.cypress.Mocha_.PendingTestFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

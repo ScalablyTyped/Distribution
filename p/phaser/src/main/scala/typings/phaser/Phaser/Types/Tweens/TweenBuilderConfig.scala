@@ -18,7 +18,7 @@ trait TweenBuilderConfig extends js.Object {
   /**
     * The number of milliseconds to delay before the tween will start.
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double | js.Function] = js.undefined
   /**
     * The duration of the tween in milliseconds.
     */
@@ -175,7 +175,7 @@ object TweenBuilderConfig {
     targets: js.Any,
     callbackScope: js.Any = null,
     completeDelay: Double | js.Function | js.Object | js.Array[_] = null,
-    delay: Int | Double = null,
+    delay: Double | js.Function = null,
     duration: Int | Double = null,
     ease: String | js.Function = null,
     easeParams: js.Array[_] = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "use-set-timeout"
-version := "1.0-dt-20190208Z-f28a92"
+version := "1.0-dt-20190208Z-268f69"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

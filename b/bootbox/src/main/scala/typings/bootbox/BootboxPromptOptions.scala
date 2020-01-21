@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 trait BootboxPromptOptions extends BootboxBaseOptions[String] {
   @JSName("buttons")
   var buttons_BootboxPromptOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.undefined
-  var inputOptions: js.UndefOr[js.Array[Anon_Group]] = js.undefined
+  var inputOptions: js.UndefOr[js.Array[AnonGroup]] = js.undefined
   var inputType: js.UndefOr[
     text | textarea | email | select | checkbox | date | time | number | password | radio | range
   ] = js.undefined
@@ -46,7 +46,7 @@ object BootboxPromptOptions {
     buttons: BootboxConfirmPromptButtonMap = null,
     className: String = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
-    inputOptions: js.Array[Anon_Group] = null,
+    inputOptions: js.Array[AnonGroup] = null,
     inputType: text | textarea | email | select | checkbox | date | time | number | password | radio | range = null,
     locale: String = null,
     onEscape: js.Function0[_] | Boolean = null,

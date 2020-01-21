@@ -1,6 +1,6 @@
 package typings.dojo.dijit.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.form.ToggleButton
 import typings.dojo.dojoStrings.closeButton
 import typings.dojo.dojoStrings.tabPosition
@@ -49,7 +49,7 @@ class TabController () extends StackController {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 
 @JSGlobal("dijit.layout.TabController")
@@ -84,7 +84,7 @@ object TabController extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
 }

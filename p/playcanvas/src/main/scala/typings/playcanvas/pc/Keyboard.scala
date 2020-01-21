@@ -1,8 +1,8 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_PreventDefault
+import typings.playcanvas.AnonPreventDefault
 import typings.std.Element
-import typings.std.Window
+import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,9 +26,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Keyboard () extends EventHandler {
   def this(element: Element) = this()
-  def this(element: Window) = this()
-  def this(element: Element, options: Anon_PreventDefault) = this()
-  def this(element: Window, options: Anon_PreventDefault) = this()
+  def this(element: Window_) = this()
+  def this(element: Element, options: AnonPreventDefault) = this()
+  def this(element: Window_, options: AnonPreventDefault) = this()
   /**
     * @function
     * @name pc.Keyboard#attach

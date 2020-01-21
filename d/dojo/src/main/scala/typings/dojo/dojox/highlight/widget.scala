@@ -1,7 +1,7 @@
 package typings.dojo.dojox.highlight
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.contextRequire
 import typings.dojo.dojoStrings.listType
@@ -30,11 +30,11 @@ object widget extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
-  class Code () extends _Widget {
+  - typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
+  class Code () extends Widget {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -148,7 +148,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_contextRequire(
       property: contextRequire,
@@ -158,7 +158,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Function], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_listType(
       property: listType,
@@ -168,7 +168,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_range(
       property: range,
@@ -178,7 +178,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_searchContainerNode(
       property: searchContainerNode,
@@ -188,7 +188,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templatePath(
       property: templatePath,
@@ -198,7 +198,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templateString(
       property: templateString,
@@ -208,7 +208,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_url(
       property: url,
@@ -218,7 +218,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_widgetsInTemplate(
       property: widgetsInTemplate,
@@ -228,7 +228,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
 }

@@ -1,7 +1,7 @@
 package typings.joi
 
-import typings.joi.joiMod.GuidVersions
-import typings.joi.joiMod.Types
+import typings.joi.mod.GuidVersions
+import typings.joi.mod.Types
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

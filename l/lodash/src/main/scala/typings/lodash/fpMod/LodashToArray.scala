@@ -1,8 +1,8 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.Dictionary
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.NumericDictionary
+import typings.lodash.mod.Dictionary
+import typings.lodash.mod.List
+import typings.lodash.mod.NumericDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

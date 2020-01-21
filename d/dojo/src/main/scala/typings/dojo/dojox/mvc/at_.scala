@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   * @param target dojo/Stateful to be synchronized.
   * @param targetProp The property name in target to be synchronized.
   */
-@JSName("at")
 @js.native
 trait at_ extends js.Object {
   def apply(target: String, targetProp: String): Unit = js.native

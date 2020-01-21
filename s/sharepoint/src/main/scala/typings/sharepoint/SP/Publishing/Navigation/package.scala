@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Navigation {
-  import typings.sharepoint.SP.ClientObjectCollection
-
-  type NavigationTermCollection = ClientObjectCollection[NavigationTerm]
+  type NavigationTermCollection = typings.sharepoint.SP.ClientObjectCollection[typings.sharepoint.SP.Publishing.Navigation.NavigationTerm]
 }

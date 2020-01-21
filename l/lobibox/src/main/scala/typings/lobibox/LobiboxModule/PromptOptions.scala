@@ -1,7 +1,7 @@
 package typings.lobibox.LobiboxModule
 
-import typings.lobibox.Anon_Cancel
-import typings.lobibox.Anon_Confirm
+import typings.lobibox.AnonCancel
+import typings.lobibox.AnonConfirm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ object PromptOptions {
     baseClass: String = null,
     beforeClose: /* lobibox */ js.Any => Unit = null,
     bodyClass: String = null,
-    buttons: Anon_Cancel | js.Any = null,
+    buttons: AnonCancel | js.Any = null,
     buttonsAlign: js.Any = null,
     callback: (/* lobibox */ js.Any, /* type */ js.UndefOr[String], /* ev */ js.UndefOr[js.Any]) => Unit = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
@@ -48,7 +48,7 @@ object PromptOptions {
     label: String = null,
     lines: Int | Double = null,
     modal: js.UndefOr[Boolean] = js.undefined,
-    modalClasses: Anon_Confirm = null,
+    modalClasses: AnonConfirm = null,
     msg: String = null,
     multiline: js.UndefOr[Boolean] = js.undefined,
     onShow: /* lobibox */ js.Any => Unit = null,

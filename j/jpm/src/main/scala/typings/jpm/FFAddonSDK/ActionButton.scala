@@ -1,10 +1,10 @@
 package typings.jpm.FFAddonSDK
 
-import typings.jpm.Anon_Disabled
+import typings.jpm.AnonDisabled
 import typings.jpm.jpmStrings.click
 import typings.jpm.jpmStrings.tab
 import typings.jpm.jpmStrings.window
-import typings.jpm.sdkUiToolbarMod.ToolbarItem
+import typings.jpm.toolbarMod.ToolbarItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,19 +22,19 @@ trait ActionButton
   @JSName("removeListener")
   def removeListener_click(event: click, handler: js.Function): Unit = js.native
   def state(target: ActionButton): ActionButtonState = js.native
-  def state(target: ActionButton, state: Anon_Disabled): ActionButtonState = js.native
+  def state(target: ActionButton, state: AnonDisabled): ActionButtonState = js.native
   // there's a compromise here by always returning ActionButtonState. It will return undefined if no options are passed
   def state(target: BrowserWindow): ActionButtonState = js.native
-  def state(target: BrowserWindow, state: Anon_Disabled): ActionButtonState = js.native
+  def state(target: BrowserWindow, state: AnonDisabled): ActionButtonState = js.native
   def state(target: Tab): ActionButtonState = js.native
-  def state(target: Tab, state: Anon_Disabled): ActionButtonState = js.native
+  def state(target: Tab, state: AnonDisabled): ActionButtonState = js.native
   @JSName("state")
   def state_tab(target: tab): ActionButtonState = js.native
   @JSName("state")
-  def state_tab(target: tab, state: Anon_Disabled): ActionButtonState = js.native
+  def state_tab(target: tab, state: AnonDisabled): ActionButtonState = js.native
   @JSName("state")
   def state_window(target: window): ActionButtonState = js.native
   @JSName("state")
-  def state_window(target: window, state: Anon_Disabled): ActionButtonState = js.native
+  def state_window(target: window, state: AnonDisabled): ActionButtonState = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.breeze.breeze
 
 import org.scalablytyped.runtime.TopLevel
-import typings.breeze.Anon_NextNumber
+import typings.breeze.AnonNextNumber
 import typings.breeze.breeze.core.IEnum
 import typings.std.Date
 import scala.scalajs.js
@@ -25,7 +25,7 @@ trait DataType extends IEnum {
   var String: DataTypeSymbol = js.native
   var Time: DataTypeSymbol = js.native
   var Undefined: DataTypeSymbol = js.native
-  var constants: Anon_NextNumber = js.native
+  var constants: AnonNextNumber = js.native
   def fromEdmDataType(typeName: String): DataTypeSymbol = js.native
   def fromValue(`val`: js.Any): DataTypeSymbol = js.native
   def getComparableFn(dataType: DataTypeSymbol): js.Function1[/* value */ js.Any, _] = js.native

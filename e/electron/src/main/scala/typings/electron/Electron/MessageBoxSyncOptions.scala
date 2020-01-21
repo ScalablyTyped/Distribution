@@ -35,7 +35,7 @@ trait MessageBoxSyncOptions extends js.Object {
     * Extra information of the message.
     */
   var detail: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[NativeImage | String] = js.undefined
+  var icon: js.UndefOr[NativeImage_ | String] = js.undefined
   /**
     * Content of the message box.
     */
@@ -79,7 +79,7 @@ object MessageBoxSyncOptions {
     checkboxLabel: String = null,
     defaultId: Int | Double = null,
     detail: String = null,
-    icon: NativeImage | String = null,
+    icon: NativeImage_ | String = null,
     noLink: js.UndefOr[Boolean] = js.undefined,
     normalizeAccessKeys: js.UndefOr[Boolean] = js.undefined,
     title: String = null,

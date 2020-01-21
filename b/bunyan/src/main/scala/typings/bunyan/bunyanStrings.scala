@@ -1,6 +1,6 @@
 package typings.bunyan
 
-import typings.bunyan.bunyanMod.LogLevelString
+import typings.bunyan.mod.LogLevelString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

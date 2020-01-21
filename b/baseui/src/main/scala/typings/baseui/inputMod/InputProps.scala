@@ -7,11 +7,11 @@ import typings.baseui.baseuiStrings.large_
 import typings.baseui.baseuiStrings.left
 import typings.baseui.baseuiStrings.none
 import typings.baseui.baseuiStrings.right
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

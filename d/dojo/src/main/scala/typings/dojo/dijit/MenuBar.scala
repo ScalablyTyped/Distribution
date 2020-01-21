@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dijit.MenuBar")
 @js.native
-class MenuBar () extends _MenuBase {
+class MenuBar () extends MenuBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

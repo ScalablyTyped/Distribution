@@ -1,6 +1,6 @@
 package typings.baseui.datepickerMod
 
-import typings.baseui.Anon_Date
+import typings.baseui.AnonDate
 import typings.baseui.baseuiStrings.change_
 import typings.baseui.baseuiStrings.mouseLeave
 import typings.baseui.baseuiStrings.mouseOver
@@ -8,7 +8,7 @@ import typings.baseui.baseuiStrings.moveDown
 import typings.baseui.baseuiStrings.moveLeft
 import typings.baseui.baseuiStrings.moveRight
 import typings.baseui.baseuiStrings.moveUp
-import typings.react.reactMod.Component
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,6 +31,6 @@ class StatefulContainer ()
   def internalSetState_moveRight(`type`: moveRight, changes: ContainerState): Unit = js.native
   @JSName("internalSetState")
   def internalSetState_moveUp(`type`: moveUp, changes: ContainerState): Unit = js.native
-  def onChange(data: Anon_Date): Unit = js.native
+  def onChange(data: AnonDate): Unit = js.native
 }
 

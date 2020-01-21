@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "typed-github-api"
-version := "1.2.6-a2387c"
+version := "1.2.6-7ae7ac"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-f1cf1e",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-0a9c38",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-b0737f",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191220Z-941e8c",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-e32d86",
-  "org.scalablytyped" %%% "moment" % "2.24.0-d25a29",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-166e61",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-949d85",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "typescript-event-handler" % "1.0.0-14c1e5")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20190819Z-1b4f69",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-b60015",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20191101Z-56f2e3",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.17-dt-20191220Z-8b81e3",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20191126Z-03061a",
+  "org.scalablytyped" %%% "moment" % "2.24.0-73a0d6",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-b58a9e",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190819Z-314389",
+  "org.scalablytyped" %%% "std" % "3.7-96076c",
+  "org.scalablytyped" %%% "typescript-event-handler" % "1.0.0-2cb66f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

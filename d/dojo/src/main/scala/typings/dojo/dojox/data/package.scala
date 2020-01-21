@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object data {
-  type css = css_
+  type css = typings.dojo.dojox.data.css_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/data/restListener.html
     *
@@ -13,5 +13,5 @@ package object data {
     *
     * @param message
     */
-  type restListener = js.Function1[/* message */ js.Any, Unit]
+  type restListener = js.Function1[/* message */ js.Any, scala.Unit]
 }

@@ -1,6 +1,6 @@
 package typings.giraffe.Giraffe
 
-import typings.backbone.backboneMod.Events
+import typings.backbone.mod.Events
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

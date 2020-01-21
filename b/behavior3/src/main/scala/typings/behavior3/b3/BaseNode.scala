@@ -1,6 +1,6 @@
 package typings.behavior3.b3
 
-import typings.behavior3.Anon_Category
+import typings.behavior3.AnonCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
   * Initialization method.
   */
 class BaseNode () extends js.Object {
-  def this(hasCategoryNameTitleDescriptionProperties: Anon_Category) = this()
+  def this(hasCategoryNameTitleDescriptionProperties: AnonCategory) = this()
   /**
     * Wrapper for close method.
     */

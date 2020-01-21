@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object AceAjax {
-  import typings.std.Error
-
-  type CompletionCallback = js.Function2[/* error */ Error, /* results */ js.Array[Completion], Unit]
+  type CompletionCallback = js.Function2[
+    /* error */ typings.std.Error, 
+    /* results */ js.Array[typings.ace.AceAjax.Completion], 
+    scala.Unit
+  ]
 }

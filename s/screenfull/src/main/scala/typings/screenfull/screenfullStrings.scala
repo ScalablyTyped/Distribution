@@ -1,6 +1,6 @@
 package typings.screenfull
 
-import typings.screenfull.screenfullMod.EventName
+import typings.screenfull.mod.EventName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

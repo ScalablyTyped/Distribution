@@ -32,7 +32,7 @@ trait Bounce extends js.Object {
   /**
     * Sets whether this Body collides with the world boundary.
     * 
-    * Optionally also sets the World Bounce values. If the `Body.worldBounce` is null, it's set to a new Vec2 first.
+    * Optionally also sets the World Bounce values. If the `Body.worldBounce` is null, it's set to a new Phaser.Math.Vector2 first.
     * @param value `true` if this body should collide with the world bounds, otherwise `false`. Default true.
     * @param bounceX If given this will be replace the `worldBounce.x` value.
     * @param bounceY If given this will be replace the `worldBounce.y` value.

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * Python highlight definitions
   *
   */
-@JSName("python")
 trait python_ extends js.Object {
   /**
     *

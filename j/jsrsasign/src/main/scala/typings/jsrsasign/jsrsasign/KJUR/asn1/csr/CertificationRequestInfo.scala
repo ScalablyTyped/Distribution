@@ -1,10 +1,10 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.csr
 
-import typings.jsrsasign.Anon_AccessLocation
-import typings.jsrsasign.Anon_Ca
-import typings.jsrsasign.Anon_E
-import typings.jsrsasign.Anon_Kid
-import typings.jsrsasign.Anon_Name
+import typings.jsrsasign.AnonAccessLocation
+import typings.jsrsasign.AnonCa
+import typings.jsrsasign.AnonE
+import typings.jsrsasign.AnonKid
+import typings.jsrsasign.AnonName
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.BinParam
@@ -54,9 +54,9 @@ class CertificationRequestInfo () extends ASN1Object {
     * o.appendExtensionByName('AuthorityKeyIdentifier', {kid: '1234ab..'});
     * o.appendExtensionByName('AuthorityInfoAccess', {array: [{accessMethod:{oid:...},accessLocation:{uri:...}}]});
     */
-  def appendExtensionByName(name: String, extParams: Anon_Ca): Unit = js.native
-  def appendExtensionByName(name: String, extParams: Anon_Kid): Unit = js.native
-  def appendExtensionByName(name: String, extParams: ArrayParam[Anon_AccessLocation | Anon_Name]): Unit = js.native
+  def appendExtensionByName(name: String, extParams: AnonCa): Unit = js.native
+  def appendExtensionByName(name: String, extParams: AnonKid): Unit = js.native
+  def appendExtensionByName(name: String, extParams: ArrayParam[AnonAccessLocation | AnonName]): Unit = js.native
   def appendExtensionByName(name: String, extParams: BinParam): Unit = js.native
   def appendExtensionByName(name: String, extParams: UriParam): Unit = js.native
   /**
@@ -69,7 +69,7 @@ class CertificationRequestInfo () extends ASN1Object {
     */
   def setSubjectByParam(x500NameParam: StringParam): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: String): Unit = js.native
-  def setSubjectPublicKeyByGetKey(keyParam: Anon_E): Unit = js.native
+  def setSubjectPublicKeyByGetKey(keyParam: AnonE): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: DSA): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: ECDSA): Unit = js.native
   def setSubjectPublicKeyByGetKey(keyParam: JsonWebKey): Unit = js.native

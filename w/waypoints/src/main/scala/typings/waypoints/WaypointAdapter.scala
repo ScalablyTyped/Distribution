@@ -12,7 +12,7 @@ class WaypointAdapter protected () extends js.Object {
   def innerHeight(): Double = js.native
   def innerWidth(): Double = js.native
   def off(event: String): js.UndefOr[scala.Nothing] = js.native
-  def offset(): Anon_Left = js.native
+  def offset(): AnonLeft = js.native
   def on(event: String, handler: js.Function0[Unit]): js.UndefOr[scala.Nothing] = js.native
   def outerHeight(includeMargin: Boolean): Double = js.native
   def outerWidth(includeMargin: Boolean): Double = js.native

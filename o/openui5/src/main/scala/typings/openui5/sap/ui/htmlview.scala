@@ -21,7 +21,7 @@ object htmlview extends js.Object {
     * @returns the created HTMLView instance in the creation case, otherwise undefined
     */
   def apply(sId: String, vView: String): HTMLView | js.Any = js.native
-  def apply(sId: String, vView: js.Any): HTMLView | js.Any = js.native
+  def apply(sId: String, vView: js.Any): HTMLView = js.native
   //  Defines or creates an instance of a declarative HTML view.
   def apply(vView: js.Any): HTMLView = js.native
 }

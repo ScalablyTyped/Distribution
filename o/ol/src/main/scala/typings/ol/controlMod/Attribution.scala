@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlAttributionMod.Options
-import typings.ol.controlAttributionMod.default
+import typings.ol.attributionMod.Options
+import typings.ol.attributionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

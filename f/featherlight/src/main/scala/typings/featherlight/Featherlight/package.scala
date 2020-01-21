@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Featherlight {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type ContentFilters = StringDictionary[ContentFilter]
+  type ContentFilters = org.scalablytyped.runtime.StringDictionary[typings.featherlight.Featherlight.ContentFilter]
 }

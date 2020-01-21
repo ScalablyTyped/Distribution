@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__client-api
 
-Typings are for version 5.3.4
+Typings are for version 5.3.7
 
 ## Library description:
 Storybook Client API

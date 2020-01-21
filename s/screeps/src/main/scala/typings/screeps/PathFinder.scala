@@ -15,10 +15,10 @@ trait PathFinder extends js.Object {
     * Container for custom navigation cost data.
     */
   var CostMatrix: typings.screeps.CostMatrix = js.native
-  def search(origin: RoomPosition, goal: js.Array[RoomPosition | Anon_PosRange]): PathFinderPath = js.native
-  def search(origin: RoomPosition, goal: js.Array[RoomPosition | Anon_PosRange], opts: PathFinderOpts): PathFinderPath = js.native
-  def search(origin: RoomPosition, goal: Anon_PosRange): PathFinderPath = js.native
-  def search(origin: RoomPosition, goal: Anon_PosRange, opts: PathFinderOpts): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: js.Array[RoomPosition | AnonPosRange]): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: js.Array[RoomPosition | AnonPosRange], opts: PathFinderOpts): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: AnonPosRange): PathFinderPath = js.native
+  def search(origin: RoomPosition, goal: AnonPosRange, opts: PathFinderOpts): PathFinderPath = js.native
   /**
     * Find an optimal path between origin and goal.
     *

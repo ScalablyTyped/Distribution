@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Screen")
 @js.native
-class ScreenCls () extends Screen {
+class ScreenCls () extends Screen_ {
   /* CompleteClass */
   override val availHeight: Double = js.native
   /* CompleteClass */

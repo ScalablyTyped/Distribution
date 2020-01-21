@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("dom")
 trait dom_ extends js.Object {
   /**
     *

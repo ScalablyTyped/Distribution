@@ -1,6 +1,6 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait LodashForOwnRight extends js.Object {
       _
     ],
     `object`: T
-  ): T = js.native
+  ): js.UndefOr[T | Null] = js.native
   def apply[T](iteratee: __): LodashForOwnRight2x2[T] = js.native
   def apply[T](iteratee: __, `object`: T): LodashForOwnRight2x2[T] = js.native
 }

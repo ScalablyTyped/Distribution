@@ -1,6 +1,6 @@
 package typings.dojo.dijit.tree
 
-import typings.dojo.dijit.Tree
+import typings.dojo.dijit.Tree_
 import typings.dojo.dojo.dnd.Source
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dijit.tree.dndSource")
 @js.native
-class dndSource_ protected () extends _dndSelector {
-  def this(tree: Tree, params: dndSource) = this()
+class dndSource_ protected () extends dndSelector {
+  def this(tree: Tree_, params: dndSource) = this()
   /**
     * List of accepted types (text strings) for the Tree; defaults to
     * ["text"]

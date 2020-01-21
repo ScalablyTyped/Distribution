@@ -1,7 +1,7 @@
 package typings.dojo.dojox.widget
 
 import typings.dojo.dijit.TitlePane
-import typings.dojo.dijit._Widget
+import typings.dojo.dijit.Widget
 import typings.dojo.dojoStrings.style
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.widget.TitleGroup")
 @js.native
-class TitleGroup () extends _Widget {
+class TitleGroup () extends Widget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

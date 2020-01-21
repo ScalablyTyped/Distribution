@@ -10,6 +10,6 @@ object getDisplayCaps extends js.Object {
   /**
   		 * Gets the value of the <Titanium.Platform.displayCaps> property.
   		 */
-  def apply(): DisplayCaps = js.native
+  def apply(): DisplayCaps_ = js.native
 }
 

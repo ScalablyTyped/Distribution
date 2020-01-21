@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("bitwise/integer", JSImport.Namespace)
+@JSImport("bitwise/esm/integer", JSImport.Namespace)
 @js.native
 object integerMod extends js.Object {
   def getBit(int32: Double, position: Double): Bit = js.native

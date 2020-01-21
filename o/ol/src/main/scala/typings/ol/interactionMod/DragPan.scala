@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionDragPanMod.Options
-import typings.ol.interactionDragPanMod.default
+import typings.ol.dragPanMod.Options
+import typings.ol.dragPanMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

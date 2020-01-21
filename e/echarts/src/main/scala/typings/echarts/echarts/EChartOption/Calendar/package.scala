@@ -5,6 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Calendar {
-  type MonthLabelFormatter = js.Function1[/* params */ MonthLabelFormatterParams, String]
-  type YearLabelFormatter = js.Function1[/* params */ YearLabelFormatterParams, String]
+  type MonthLabelFormatter = js.Function1[
+    /* params */ typings.echarts.echarts.EChartOption.Calendar.MonthLabelFormatterParams, 
+    java.lang.String
+  ]
+  type YearLabelFormatter = js.Function1[
+    /* params */ typings.echarts.echarts.EChartOption.Calendar.YearLabelFormatterParams, 
+    java.lang.String
+  ]
 }

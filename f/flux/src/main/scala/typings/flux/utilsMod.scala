@@ -1,11 +1,11 @@
 package typings.flux
 
-import typings.flux.libFluxContainerMod.Component
-import typings.flux.libFluxContainerMod.RealOptions
-import typings.flux.libFluxMixinLegacyMod.Options
-import typings.flux.libFluxReduceStoreMod.FluxReduceStore
-import typings.flux.libFluxStoreMod.^
-import typings.react.reactMod.ReactElement
+import typings.flux.fluxContainerMod.Component
+import typings.flux.fluxContainerMod.RealOptions
+import typings.flux.fluxMixinLegacyMod.Options
+import typings.flux.fluxReduceStoreMod.FluxReduceStore
+import typings.flux.fluxStoreMod.^
+import typings.react.mod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ object utilsMod extends js.Object {
     /**
       * Constructs and registers an instance of this store with the given dispatcher.
       */
-    def this(dispatcher: typings.flux.libDispatcherMod.^[TPayload]) = this()
+    def this(dispatcher: typings.flux.dispatcherMod.^[TPayload]) = this()
   }
   
   @js.native

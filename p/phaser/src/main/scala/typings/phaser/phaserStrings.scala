@@ -45,15 +45,6 @@ object phaserStrings {
   sealed trait collisionStart extends js.Object
   
   @js.native
-  sealed trait mousedown extends js.Object
-  
-  @js.native
-  sealed trait mousemove extends js.Object
-  
-  @js.native
-  sealed trait mouseup extends js.Object
-  
-  @js.native
   sealed trait sleepEnd extends js.Object
   
   @js.native
@@ -88,12 +79,6 @@ object phaserStrings {
   def collisionEnd: collisionEnd = "collisionEnd".asInstanceOf[collisionEnd]
   @scala.inline
   def collisionStart: collisionStart = "collisionStart".asInstanceOf[collisionStart]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
   def sleepEnd: sleepEnd = "sleepEnd".asInstanceOf[sleepEnd]
   @scala.inline

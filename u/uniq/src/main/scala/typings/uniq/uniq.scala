@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("uniq")
 @js.native
-object uniq extends TopLevel[Uniq]
+object uniq extends TopLevel[Uniq_]
 

@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("base64", JSImport.Namespace)
 @js.native
 object base64Mod extends js.Object {
-  def decode(data: String): Class_Buffer = js.native
-  def encode(data: Class_Buffer): String = js.native
-  def encode(data: Class_Buffer, url: Boolean): String = js.native
+  def decode(data: String): ClassBuffer = js.native
+  def encode(data: ClassBuffer): String = js.native
+  def encode(data: ClassBuffer, url: Boolean): String = js.native
 }
 

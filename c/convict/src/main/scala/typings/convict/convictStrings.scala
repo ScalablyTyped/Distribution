@@ -1,7 +1,7 @@
 package typings.convict
 
-import typings.convict.convictMod.ValidationMethod
-import typings.convict.convictMod._PredefinedFormat
+import typings.convict.mod.ValidationMethod
+import typings.convict.mod._PredefinedFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

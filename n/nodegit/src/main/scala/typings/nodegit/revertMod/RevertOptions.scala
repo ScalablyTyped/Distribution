@@ -1,8 +1,8 @@
 package typings.nodegit.revertMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
-import typings.nodegit.mergeDashOptionsMod.MergeOptions
+import typings.nodegit.checkoutOptionsMod.CheckoutOptions
+import typings.nodegit.mergeOptionsMod.MergeOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

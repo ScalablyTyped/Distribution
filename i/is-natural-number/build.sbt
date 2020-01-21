@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-natural-number"
-version := "4.0-dt-20190223Z-72904d"
+version := "4.0-dt-20190223Z-992bcf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

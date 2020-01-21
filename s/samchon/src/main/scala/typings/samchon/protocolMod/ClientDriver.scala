@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/protocol", "ClientDriver")
 @js.native
 class ClientDriver protected ()
-  extends typings.samchon.protocolCommunicatorClientUnderscoreDriverClientDriverMod.ClientDriver {
+  extends typings.samchon.clientDriverMod.ClientDriver {
   /**
     * Construct from a socket.
     */

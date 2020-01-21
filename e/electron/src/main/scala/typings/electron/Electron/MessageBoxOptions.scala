@@ -35,7 +35,7 @@ trait MessageBoxOptions extends js.Object {
     * Extra information of the message.
     */
   var detail: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[NativeImage] = js.undefined
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   /**
     * Content of the message box.
     */
@@ -79,7 +79,7 @@ object MessageBoxOptions {
     checkboxLabel: String = null,
     defaultId: Int | Double = null,
     detail: String = null,
-    icon: NativeImage = null,
+    icon: NativeImage_ = null,
     noLink: js.UndefOr[Boolean] = js.undefined,
     normalizeAccessKeys: js.UndefOr[Boolean] = js.undefined,
     title: String = null,

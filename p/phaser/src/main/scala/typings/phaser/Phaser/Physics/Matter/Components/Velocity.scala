@@ -6,13 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [description]
+  * Contains methods for changing the velocity of a Matter Body. Should be used as a mixin and not called directly.
   */
 @js.native
 trait Velocity extends js.Object {
   /**
-    * [description]
-    * @param value [description]
+    * Sets the angular velocity of the body instantly.
+    * Position, angle, force etc. are unchanged.
+    * @param value The angular velocity.
     */
   def setAngularVelocity(value: Double): GameObject = js.native
   /**

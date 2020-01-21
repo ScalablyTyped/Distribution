@@ -1,6 +1,6 @@
 package typings.grommet
 
-import typings.grommet.themesBaseMod.ThemeType
+import typings.grommet.baseMod.ThemeType
 import typings.grommet.utilsMod.DeepReadonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`

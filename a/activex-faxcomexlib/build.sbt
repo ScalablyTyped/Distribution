@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "activex-faxcomexlib"
-version := "1.0-dt-20190213Z-c25174"
+version := "1.0-dt-20190213Z-4e4a15"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-4daa0d",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "activex-stdole" % "2.0-dt-20190213Z-8d2820",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

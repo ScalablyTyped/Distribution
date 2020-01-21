@@ -18,10 +18,10 @@ trait FieldTemplateOverrides extends js.Object {
 object FieldTemplateOverrides {
   @scala.inline
   def apply(
-    DisplayForm: /* renderContext */ RenderContext_FieldInForm => String = null,
-    EditForm: /* renderContext */ RenderContext_FieldInForm => String = null,
-    NewForm: /* renderContext */ RenderContext_FieldInForm => String = null,
-    View: /* renderContext */ RenderContext_FieldInView => String = null
+    DisplayForm: /* renderContext */ RenderContextFieldInForm => String = null,
+    EditForm: /* renderContext */ RenderContextFieldInForm => String = null,
+    NewForm: /* renderContext */ RenderContextFieldInForm => String = null,
+    View: /* renderContext */ RenderContextFieldInView => String = null
   ): FieldTemplateOverrides = {
     val __obj = js.Dynamic.literal()
     if (DisplayForm != null) __obj.updateDynamic("DisplayForm")(js.Any.fromFunction1(DisplayForm))

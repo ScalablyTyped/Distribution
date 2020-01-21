@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PowerCreepConstructor extends _ConstructorById[PowerCreep] {
+trait PowerCreepConstructor extends ConstructorById[PowerCreep] {
   /**
     * A static method to create new Power Creep instance in your account. It will be added in an unspawned state,
     * use spawn method to spawn it in the world.

@@ -125,7 +125,7 @@ class CalendarTimeInterval protected () extends Control {
     * @param oDate JavaScript date object for displayed item.
     * @returns <code>this</code> to allow method chaining
     */
-  def displayDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
+  def displayDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
@@ -150,7 +150,7 @@ class CalendarTimeInterval protected () extends Control {
     * @param oDate JavaScript date object for focused item.
     * @returns <code>this</code> to allow method chaining
     */
-  def focusDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
+  def focusDate(oDate: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Calendar_] = js.native
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var uniq: Uniq = js.native
+  var uniq: Uniq_ = js.native
 }
 

@@ -44,14 +44,14 @@ trait Webcam extends js.Object {
     * @param {EnumDWT_CameraControlProperty} property The property.
     * @return {class CameraControlPropertyMoreSetting}
     */
-  def GetCameraControlPropertyMoreSetting(property: EnumDWT_CameraControlProperty): CameraControlMoreSetting = js.native
+  def GetCameraControlPropertyMoreSetting(property: EnumDWTCameraControlProperty): CameraControlMoreSetting = js.native
   /**
     *  Gets the current setting of a camera property. 
     * @method Dynamsoft.WebTwain#GetCameraControlPropertySetting 
     * @param {EnumDWT_CameraControlProperty} property The property.
     * @return {class CameraControlPropertySetting}
     */
-  def GetCameraControlPropertySetting(property: EnumDWT_CameraControlProperty): CameraControlSetting = js.native
+  def GetCameraControlPropertySetting(property: EnumDWTCameraControlProperty): CameraControlSetting = js.native
   def GetFramePartURL(): String = js.native
   /**
     *  Returns the frame rate for a camera. 
@@ -84,14 +84,14 @@ trait Webcam extends js.Object {
     * @param {EnumDWT_VideoProperty} property The property.
     * @return {class VideoPropertyMoreSetting}
     */
-  def GetVideoPropertyMoreSetting(property: EnumDWT_VideoProperty): VideoPropertyMoreSetting = js.native
+  def GetVideoPropertyMoreSetting(property: EnumDWTVideoProperty): VideoPropertyMoreSetting = js.native
   /**
     *  Gets the current setting of a video property. 
     * @method Dynamsoft.WebTwain#GetVideoPropertySetting 
     * @param {EnumDWT_VideoProperty} property The property.
     * @return {class VideoPropertySetting}
     */
-  def GetVideoPropertySetting(property: EnumDWT_VideoProperty): VideoPropertySetting = js.native
+  def GetVideoPropertySetting(property: EnumDWTVideoProperty): VideoPropertySetting = js.native
   def IsModuleInstalled(): Boolean = js.native
   /**
     *  Show video stream in a specified container
@@ -117,7 +117,7 @@ trait Webcam extends js.Object {
     * @param {boolean} auto The desired control setting, whether the setting is controlled manually or automatically.
     * @return {boolean}
     */
-  def SetCameraControlPropertySetting(property: EnumDWT_CameraControlProperty, value: Double, auto: Boolean): Boolean = js.native
+  def SetCameraControlPropertySetting(property: EnumDWTCameraControlProperty, value: Double, auto: Boolean): Boolean = js.native
   /**
     *  Set current frame rate. 
     * @method Dynamsoft.WebTwain#SetFrameRate 
@@ -147,14 +147,14 @@ trait Webcam extends js.Object {
     * @param {boolean} auto The desired control setting, whether the setting is controlled manually or automatically.
     * @return {boolean}
     */
-  def SetVideoPropertySetting(property: EnumDWT_VideoProperty, value: Double, auto: Boolean): Boolean = js.native
+  def SetVideoPropertySetting(property: EnumDWTVideoProperty, value: Double, auto: Boolean): Boolean = js.native
   /**
     *  Sets video rotate mode.
     * @method Dynamsoft.WebTwain#SetVideoRotateMode 
     * @param {EnumDWT_VideoRotateMode} enumAngle The rotate angle.
     * @return {boolean}
     */
-  def SetVideoRotateMode(enumAngle: EnumDWT_VideoRotateMode): Boolean = js.native
+  def SetVideoRotateMode(enumAngle: EnumDWTVideoRotateMode): Boolean = js.native
   /**
     *  Stop the video stream in the specified container
     * @method Dynamsoft.WebTwain#StopVideo 

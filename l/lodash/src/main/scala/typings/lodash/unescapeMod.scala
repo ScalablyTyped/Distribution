@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("lodash/unescape", JSImport.Namespace)
+@JSImport("lodash/fp/unescape", JSImport.Namespace)
 @js.native
 object unescapeMod extends js.Object {
   /**

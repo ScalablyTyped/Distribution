@@ -1,6 +1,6 @@
 package typings.yaml
 
-import typings.yaml.yamlMod.ast.PairConstructor
+import typings.yaml.mod.ast.PairConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

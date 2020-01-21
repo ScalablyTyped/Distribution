@@ -359,7 +359,18 @@ object Core extends js.Object {
   }
   
   /**
-    * [description]
+    * The core runner class that Phaser uses to handle the game loop. It can use either Request Animation Frame,
+    * or SetTimeout, based on browser support and config settings, to create a continuous loop within the browser.
+    * 
+    * Each time the loop fires, `TimeStep.step` is called and this is then passed onto the core Game update loop,
+    * it is the core heartbeat of your game. It will fire as often as Request Animation Frame is capable of handling
+    * on the target device.
+    * 
+    * Note that there are lots of situations where a browser will stop updating your game. Such as if the player
+    * switches tabs, or covers up the browser window with another application. In these cases, the 'heartbeat'
+    * of your game will pause, and only resume when focus is returned to it by the player. There is no way to avoid
+    * this situation, all you can do is use the visibility events the browser, and Phaser, provide to detect when
+    * it has happened and then gracefully recover.
     */
   @js.native
   class TimeStep protected () extends js.Object {
@@ -427,7 +438,8 @@ object Core extends js.Object {
       */
     var minFps: integer = js.native
     /**
-      * [description]
+      * The time at which the next fps rate update will take place.
+      * When an fps update happens, the `framesThisSecond` value is reset.
       */
     val nextFpsUpdate: integer = js.native
     /**
@@ -443,7 +455,7 @@ object Core extends js.Object {
       */
     var panicMax: integer = js.native
     /**
-      * [description]
+      * The Request Animation Frame DOM Event handler.
       */
     val raf: RequestAnimationFrame = js.native
     /**
@@ -460,6 +472,17 @@ object Core extends js.Object {
       * the TimeStep is actually stopped, not just paused.
       */
     val running: Boolean = js.native
+    /**
+      * Apply smoothing to the delta value used within Phasers internal calculations?
+      * 
+      * This can be changed in the Game Config via the `fps.smoothStep` property. The default is `true`.
+      * 
+      * Smoothing helps settle down the delta values after browser tab switches, or other situations
+      * which could cause significant delta spikes or dips. By default it has been enabled in Phaser 3
+      * since the first version, but is now exposed under this property (and the corresponding game config
+      * `smoothStep` value), to allow you to easily disable it, should you require.
+      */
+    var smoothStep: Boolean = js.native
     /**
       * The time at which the game started running. This value is adjusted if the game is then
       * paused and resumes.
@@ -538,7 +561,7 @@ object Core extends js.Object {
     /**
       * Stops the TimeStep running.
       */
-    def stop(): TimeStep = js.native
+    def stop(): this.type = js.native
     /**
       * Manually calls `TimeStep.step`.
       */

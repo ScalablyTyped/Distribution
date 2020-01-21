@@ -1,17 +1,17 @@
 package typings.snabbdom.thunkMod
 
-import typings.snabbdom.helpersAttachtoMod.AttachData
+import typings.snabbdom.attachtoMod.AttachData
+import typings.snabbdom.attributesMod.Attrs
+import typings.snabbdom.classMod.Classes
+import typings.snabbdom.datasetMod.Dataset
+import typings.snabbdom.eventlistenersMod.On
+import typings.snabbdom.heroMod.Hero
 import typings.snabbdom.hooksMod.Hooks
-import typings.snabbdom.modulesAttributesMod.Attrs
-import typings.snabbdom.modulesClassMod.Classes
-import typings.snabbdom.modulesDatasetMod.Dataset
-import typings.snabbdom.modulesEventlistenersMod.On
-import typings.snabbdom.modulesHeroMod.Hero
-import typings.snabbdom.modulesPropsMod.Props
-import typings.snabbdom.modulesStyleMod.VNodeStyle
+import typings.snabbdom.propsMod.Props
+import typings.snabbdom.styleMod.VNodeStyle
 import typings.snabbdom.vnodeMod.Key
-import typings.snabbdom.vnodeMod.VNode
 import typings.snabbdom.vnodeMod.VNodeData
+import typings.snabbdom.vnodeMod.VNode_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,14 +20,14 @@ trait ThunkData extends VNodeData {
   @JSName("args")
   var args_ThunkData: js.Array[_]
   @JSName("fn")
-  def fn_MThunkData(): VNode
+  def fn_MThunkData(): VNode_
 }
 
 object ThunkData {
   @scala.inline
   def apply(
     args: js.Array[_],
-    fn: () => VNode,
+    fn: () => VNode_,
     attachData: AttachData = null,
     attrs: Attrs = null,
     `class`: Classes = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hjson"
-version := "2.4-dt-20190212Z-e2893c"
+version := "2.4-dt-20190212Z-ebea6c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

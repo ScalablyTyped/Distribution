@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tern", "version")
+@JSImport("tern/lib/tern", "version")
 @js.native
 object version extends TopLevel[String]
 

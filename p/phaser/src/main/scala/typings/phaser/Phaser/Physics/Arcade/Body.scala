@@ -60,7 +60,8 @@ class Body protected () extends js.Object {
     */
   var angularVelocity: Double = js.native
   /**
-    * Whether this Body is colliding with a tile or the world boundary.
+    * Whether this Body is colliding with a Static Body, a tile, or the world boundary.
+    * In a collision with a Static Body, if this Body has zero velocity then `embedded` will be set instead.
     */
   var blocked: ArcadeBodyCollision = js.native
   /**
@@ -133,7 +134,7 @@ class Body protected () extends js.Object {
     */
   var drag: Vector2 | Double = js.native
   /**
-    * Whether this Body is overlapped with another and both are not moving.
+    * Whether this Body is overlapped with another and both are not moving, on at least one axis.
     */
   var embedded: Boolean = js.native
   /**
@@ -147,9 +148,9 @@ class Body protected () extends js.Object {
   var facing: integer = js.native
   /**
     * If this Body is `immovable` and in motion, `friction` is the proportion of this Body's motion received by the riding Body on each axis, relative to 1.
-    * The default value (1, 0) moves the riding Body horizontally in equal proportion to this Body and vertically not at all.
     * The horizontal component (x) is applied only when two colliding Bodies are separated vertically.
     * The vertical component (y) is applied only when two colliding Bodies are separated horizontally.
+    * The default value (1, 0) moves the riding Body horizontally in equal proportion to this Body and vertically not at all.
     */
   var friction: Vector2 = js.native
   /**
@@ -170,10 +171,11 @@ class Body protected () extends js.Object {
     */
   var halfWidth: Double = js.native
   /**
-    * The height of the Body's boundary, in pixels.
-    * If the Body is circular, this is also the Body's diameter.
+    * The height of the Body boundary, in pixels.
+    * If the Body is circular, this is also the diameter.
+    * If you wish to change the height use the `Body.setSize` method.
     */
-  var height: Double = js.native
+  val height: Double = js.native
   /**
     * Whether this Body can be moved by collisions with another Body.
     */
@@ -196,11 +198,11 @@ class Body protected () extends js.Object {
     */
   var maxAngular: Double = js.native
   /**
-    * The maximum speed this Body is allowed to reach.
+    * The maximum speed this Body is allowed to reach, in pixels per second.
     * 
     * If not negative it limits the scalar value of speed.
     * 
-    * Any negative value means no maximum is being applied.
+    * Any negative value means no maximum is being applied (the default).
     */
   var maxSpeed: Double = js.native
   /**
@@ -213,7 +215,9 @@ class Body protected () extends js.Object {
     */
   var moves: Boolean = js.native
   /**
-    * The Body's calculated velocity, in pixels per second, at the last step.
+    * The Body's change in position (due to velocity) at the last step, in pixels.
+    * 
+    * The size of this value depends on the simulation's step rate.
     */
   val newVelocity: Vector2 = js.native
   /**
@@ -253,7 +257,7 @@ class Body protected () extends js.Object {
     */
   var position: Vector2 = js.native
   /**
-    * The Body's rotation, in degrees, during the previous step.
+    * The Body rotation, in degrees, during the previous step.
     */
   var preRotation: Double = js.native
   /**
@@ -302,7 +306,8 @@ class Body protected () extends js.Object {
     */
   val top: Double = js.native
   /**
-    * Whether this Body is colliding with another and in which direction.
+    * Whether this Body is colliding with a Body or Static Body and in which direction.
+    * In a collision where both bodies have zero velocity, `embedded` will be set instead.
     */
   var touching: ArcadeBodyCollision = js.native
   /**
@@ -326,14 +331,15 @@ class Body protected () extends js.Object {
     */
   var velocity: Vector2 = js.native
   /**
-    * Whether this Body was colliding with another during the last step, and in which direction.
+    * This Body's `touching` value during the previous step.
     */
   var wasTouching: ArcadeBodyCollision = js.native
   /**
-    * The width of the Body's boundary, in pixels.
-    * If the Body is circular, this is also the Body's diameter.
+    * The width of the Body boundary, in pixels.
+    * If the Body is circular, this is also the diameter.
+    * If you wish to change the width use the `Body.setSize` method.
     */
-  var width: Double = js.native
+  val width: Double = js.native
   /**
     * The Arcade Physics simulation this Body belongs to.
     */
@@ -366,13 +372,43 @@ class Body protected () extends js.Object {
   /**
     * The change in this Body's horizontal position from the previous step.
     * This value is set during the Body's update phase.
+    * 
+    * As a Body can update multiple times per step this may not hold the final
+    * delta value for the Body. In this case, please see the `deltaXFinal` method.
     */
   def deltaX(): Double = js.native
   /**
+    * The change in this Body's horizontal position from the previous game update.
+    * 
+    * This value is set during the `postUpdate` phase and takes into account the
+    * `deltaMax` and final position of the Body.
+    * 
+    * Because this value is not calculated until `postUpdate`, you must listen for it
+    * during a Scene `POST_UPDATE` or `RENDER` event, and not in `update`, as it will
+    * not be calculated by that point. If you _do_ use these values in `update` they
+    * will represent the delta from the _previous_ game frame.
+    */
+  def deltaXFinal(): Double = js.native
+  /**
     * The change in this Body's vertical position from the previous step.
     * This value is set during the Body's update phase.
+    * 
+    * As a Body can update multiple times per step this may not hold the final
+    * delta value for the Body. In this case, please see the `deltaYFinal` method.
     */
   def deltaY(): Double = js.native
+  /**
+    * The change in this Body's vertical position from the previous game update.
+    * 
+    * This value is set during the `postUpdate` phase and takes into account the
+    * `deltaMax` and final position of the Body.
+    * 
+    * Because this value is not calculated until `postUpdate`, you must listen for it
+    * during a Scene `POST_UPDATE` or `RENDER` event, and not in `update`, as it will
+    * not be calculated by that point. If you _do_ use these values in `update` they
+    * will represent the delta from the _previous_ game frame.
+    */
+  def deltaYFinal(): Double = js.native
   /**
     * The change in this Body's rotation from the previous step, in degrees.
     */
@@ -520,7 +556,7 @@ class Body protected () extends js.Object {
   /**
     * Sets whether this Body collides with the world boundary.
     * 
-    * Optionally also sets the World Bounce values. If the `Body.worldBounce` is null, it's set to a new Vec2 first.
+    * Optionally also sets the World Bounce values. If the `Body.worldBounce` is null, it's set to a new Phaser.Math.Vector2 first.
     * @param value `true` if this body should collide with the world bounds, otherwise `false`. Default true.
     * @param bounceX If given this will be replace the `worldBounce.x` value.
     * @param bounceY If given this will be replace the `worldBounce.y` value.

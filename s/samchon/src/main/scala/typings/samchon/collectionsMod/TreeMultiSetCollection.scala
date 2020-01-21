@@ -1,7 +1,9 @@
 package typings.samchon.collectionsMod
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.tstlMod.base.Container
+import typings.tstl.mod.base.Container
+import typings.tstl.setContainerMod.SetContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/collections", "TreeMultiSetCollection")
 @js.native
 class TreeMultiSetCollection[T] ()
-  extends typings.ecol.libSetsTreeMultiSetCollectionMod.TreeMultiSetCollection[T]
+  extends typings.ecol.treeMultiSetCollectionMod.TreeMultiSetCollection[T]
 
 @JSImport("samchon/collections", "TreeMultiSetCollection")
 @js.native
@@ -18,7 +20,7 @@ object TreeMultiSetCollection extends js.Object {
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
-    typings.ecol.libBasicCollectionEventMod.CollectionEvent[
+    typings.ecol.collectionEventMod.CollectionEvent[
       js.Object, 
       Container[
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
@@ -35,7 +37,47 @@ object TreeMultiSetCollection extends js.Object {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any
     ]
   ] = js.native
-  val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.Iterator */ js.Any = js.native
-  val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.ReverseIterator */ js.Any = js.native
+  val Iterator: Instantiable0[
+    typings.tstl.setElementListMod.SetElementList.Iterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.setElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.setElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
 }
 

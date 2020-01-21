@@ -1,12 +1,12 @@
 package typings.baseui.popoverMod
 
-import typings.baseui.Anon_ArrowOffset
-import typings.baseui.Anon_ChildrenReactNode
+import typings.baseui.AnonArrowOffset
+import typings.baseui.AnonChildrenReactNode
 import typings.baseui.layerMod.NormalizedOffsets
 import typings.baseui.layerMod.PopperDataObject
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactNode
-import typings.std.Event
+import typings.react.mod.Component
+import typings.react.mod.ReactNode
+import typings.std.Event_
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import scala.scalajs.js
@@ -24,16 +24,16 @@ class Popover ()
   def getAnchorFromChildren(): ReactNode = js.native
   def getAnchorIdAttr(): String | Null = js.native
   def getAnchorProps(): js.Object = js.native
-  def getDefaultState(props: PopoverProps): Anon_ArrowOffset = js.native
+  def getDefaultState(props: PopoverProps): AnonArrowOffset = js.native
   def getPopoverBodyProps(): js.Object = js.native
   def getPopoverIdAttr(): String | Null = js.native
-  def getSharedProps(): SharedStylePropsArg with Anon_ChildrenReactNode = js.native
+  def getSharedProps(): SharedStylePropsArg with AnonChildrenReactNode = js.native
   def init(prevProps: PopoverProps, prevState: PopoverPrivateState): Unit = js.native
   def isAccessibilityTypeMenu(): Boolean = js.native
   def isAccessibilityTypeTooltip(): Boolean = js.native
   def isClickTrigger(): Boolean = js.native
   def isHoverTrigger(): Boolean = js.native
-  def onAnchorClick(e: Event): Unit = js.native
+  def onAnchorClick(e: Event_): Unit = js.native
   def onAnchorMouseEnter(): Unit = js.native
   def onAnchorMouseLeave(): Unit = js.native
   def onDocumentClick(evt: MouseEvent): Unit = js.native

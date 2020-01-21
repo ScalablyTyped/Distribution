@@ -1,8 +1,8 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.dojo.dijit.Calendar._MonthDropDown
-import typings.dojo.dijit.Calendar._MonthDropDownButton
+import typings.dojo.dijit.Calendar.MonthDropDown
+import typings.dojo.dijit.Calendar.MonthDropDownButton
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait TypeofCalendar extends js.Object {
   var _MonthDropDown: Instantiable2[
     js.UndefOr[/* params */ js.Object], 
     js.UndefOr[/* srcNodeRef */ HTMLElement], 
-    typings.dojo.dijit.Calendar._MonthDropDown
+    MonthDropDown
   ]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dijit/Calendar._MonthDropDownButton.html
@@ -34,7 +34,7 @@ trait TypeofCalendar extends js.Object {
   var _MonthDropDownButton: Instantiable2[
     js.UndefOr[/* params */ js.Object], 
     js.UndefOr[/* srcNodeRef */ HTMLElement], 
-    typings.dojo.dijit.Calendar._MonthDropDownButton
+    MonthDropDownButton
   ]
 }
 
@@ -44,12 +44,12 @@ object TypeofCalendar {
     _MonthDropDown: Instantiable2[
       js.UndefOr[/* params */ js.Object], 
       js.UndefOr[/* srcNodeRef */ HTMLElement], 
-      _MonthDropDown
+      MonthDropDown
     ],
     _MonthDropDownButton: Instantiable2[
       js.UndefOr[/* params */ js.Object], 
       js.UndefOr[/* srcNodeRef */ HTMLElement], 
-      _MonthDropDownButton
+      MonthDropDownButton
     ]
   ): TypeofCalendar = {
     val __obj = js.Dynamic.literal(_MonthDropDown = _MonthDropDown.asInstanceOf[js.Any], _MonthDropDownButton = _MonthDropDownButton.asInstanceOf[js.Any])

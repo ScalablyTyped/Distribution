@@ -1,6 +1,6 @@
 package typings.ol
 
-import typings.ol.featureMod.FeatureLike
+import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.renderMod.OrderFunction
 import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
@@ -29,7 +29,7 @@ object vectorRenderTileMod extends js.Object {
   
   @js.native
   trait VectorRenderTile
-    extends typings.ol.tileMod.default {
+    extends typings.ol.olTileMod.default {
     def getContext(layer: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]): CanvasRenderingContext2D = js.native
     def getImage(layer: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]): HTMLCanvasElement = js.native
     def getReplayState(layer: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]): ReplayState = js.native
@@ -43,7 +43,7 @@ object vectorRenderTileMod extends js.Object {
       state: TileState,
       urlTileCoord: TileCoord,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      getSourceTiles: js.Function1[/* p0 */ VectorRenderTile, js.Array[typings.ol.vectorTileMod.default]],
+      getSourceTiles: js.Function1[/* p0 */ VectorRenderTile, js.Array[typings.ol.olVectorTileMod.default]],
       removeSourceTiles: js.Function1[/* p0 */ VectorRenderTile, Unit]
     ) = this()
   }

@@ -5,6 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object venues {
-  type Service = Service_
-  type TileProvider = TileProvider_
+  type Service = typings.heremaps.H.service.venues.Service_
+  type TileProvider = typings.heremaps.H.service.venues.TileProvider_
 }

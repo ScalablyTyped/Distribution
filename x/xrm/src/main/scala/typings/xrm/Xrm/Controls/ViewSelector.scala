@@ -1,5 +1,6 @@
 package typings.xrm.Xrm.Controls
 
+import typings.xrm.Xrm.LookupValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait ViewSelector extends js.Object {
     * Use this method to get a reference to the current view.
     * @returns The current view.
     */
-  def getCurrentView(): ViewSelectorItem
+  def getCurrentView(): LookupValue
   /**
     * Use this method to determine whether the view selector is visible.
     * @returns true if visible, false if not.
@@ -23,16 +24,12 @@ trait ViewSelector extends js.Object {
     * Use this method to set the current view.
     * @param viewSelectorItem The view selector item.
     */
-  def setCurrentView(viewSelectorItem: ViewSelectorItem): Unit
+  def setCurrentView(viewSelectorItem: LookupValue): Unit
 }
 
 object ViewSelector {
   @scala.inline
-  def apply(
-    getCurrentView: () => ViewSelectorItem,
-    isVisible: () => Boolean,
-    setCurrentView: ViewSelectorItem => Unit
-  ): ViewSelector = {
+  def apply(getCurrentView: () => LookupValue, isVisible: () => Boolean, setCurrentView: LookupValue => Unit): ViewSelector = {
     val __obj = js.Dynamic.literal(getCurrentView = js.Any.fromFunction0(getCurrentView), isVisible = js.Any.fromFunction0(isVisible), setCurrentView = js.Any.fromFunction1(setCurrentView))
   
     __obj.asInstanceOf[ViewSelector]

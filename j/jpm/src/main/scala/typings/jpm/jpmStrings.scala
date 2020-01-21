@@ -1,6 +1,6 @@
 package typings.jpm
 
-import typings.jpm.sdkPageDashModMod.attachmentMode
+import typings.jpm.pageModMod.attachmentMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

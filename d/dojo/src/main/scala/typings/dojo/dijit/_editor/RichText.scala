@@ -1,8 +1,8 @@
 package typings.dojo.dijit._editor
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
-import typings.dojo.dojo._base.url
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
+import typings.dojo.dojo.base.url
 import typings.dojo.dojoStrings.active
 import typings.dojo.dojoStrings.captureEvents
 import typings.dojo.dojoStrings.cssStateNodes
@@ -21,7 +21,7 @@ import typings.dojo.dojoStrings.onLoadDeferred
 import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.styleSheets
 import typings.dojo.dojoStrings.updateInterval
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,9 +43,9 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef The widget replaces the specified DOMNode.     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._CssStateMixin because Inheritance from two classes. Inlined active, cssStateNodes, hovering */ @JSGlobal("dijit._editor.RichText")
+- typings.dojo.dijit.CssStateMixin because Inheritance from two classes. Inlined active, cssStateNodes, hovering */ @JSGlobal("dijit._editor.RichText")
 @js.native
-class RichText protected () extends _Widget {
+class RichText protected () extends Widget {
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
     * True if mouse was pressed while over this widget, and hasn't been released yet
@@ -268,7 +268,7 @@ class RichText protected () extends _Widget {
     * 
     * @param e             
     */
-  def onKeyDown(e: Event): Boolean = js.native
+  def onKeyDown(e: Event_): Boolean = js.native
   /**
     * Handler after the iframe finishes loading.
     * 
@@ -375,7 +375,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_captureEvents(
     property: captureEvents,
@@ -385,7 +385,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cssStateNodes(
     property: cssStateNodes,
@@ -395,7 +395,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_disableSpellCheck(
     property: disableSpellCheck,
@@ -405,7 +405,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_disabled(
     property: disabled,
@@ -415,7 +415,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_focusOnLoad(
     property: focusOnLoad,
@@ -425,7 +425,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_height(
     property: height,
@@ -435,7 +435,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_hovering(
     property: hovering,
@@ -445,7 +445,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_inheritWidth(
     property: inheritWidth,
@@ -455,7 +455,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isClosed(
     property: isClosed,
@@ -465,7 +465,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isLoaded(
     property: isLoaded,
@@ -475,7 +475,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isTabIndent(
     property: isTabIndent,
@@ -485,7 +485,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minHeight(
     property: minHeight,
@@ -495,7 +495,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_name(
     property: name,
@@ -505,7 +505,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_onLoadDeferred(
     property: onLoadDeferred,
@@ -515,7 +515,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_styleSheets(
     property: styleSheets,
@@ -525,7 +525,7 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_updateInterval(
     property: updateInterval,
@@ -535,6 +535,6 @@ class RichText protected () extends _Widget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

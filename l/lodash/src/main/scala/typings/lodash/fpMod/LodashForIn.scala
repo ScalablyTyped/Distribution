@@ -1,20 +1,25 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashForIn extends js.Object {
-  def apply[T](iteratee: js.Function1[/* value */ T, _]): LodashForIn1x1[T] = js.native
+  def apply[T](
+    iteratee: js.Function1[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      _
+    ]
+  ): js.UndefOr[T | Null] = js.native
   def apply[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
-  ): T = js.native
+  ): js.UndefOr[T | Null] = js.native
   def apply[T](iteratee: __): LodashForIn2x2[T] = js.native
   def apply[T](iteratee: __, `object`: T): LodashForIn2x2[T] = js.native
 }

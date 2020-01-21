@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_InRange
+import typings.echarts.AnonInRange
 import typings.echarts.echarts.VisualMap.PiecesObject
 import typings.echarts.echarts.VisualMap.RangeObject
 import typings.echarts.echartsStrings.auto
@@ -34,7 +34,7 @@ object VisualMap {
     bottom: Double | String = null,
     calculable: js.UndefOr[Boolean] = js.undefined,
     color: js.Array[String] = null,
-    controller: Anon_InRange = null,
+    controller: AnonInRange = null,
     dimension: String | Double = null,
     formatter: String | js.Function = null,
     hoverLink: js.UndefOr[Boolean] = js.undefined,
@@ -110,7 +110,7 @@ object VisualMap {
     bottom: Double | String = null,
     categories: js.Array[String] = null,
     color: js.Array[String] = null,
-    controller: Anon_InRange = null,
+    controller: AnonInRange = null,
     dimension: String | Double = null,
     formatter: String | js.Function = null,
     hoverLink: js.UndefOr[Boolean] = js.undefined,

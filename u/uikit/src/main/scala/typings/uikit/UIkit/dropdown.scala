@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.dropdown")
 @js.native
-object dropdown extends TopLevel[Dropdown]
+object dropdown extends TopLevel[Dropdown_]
 

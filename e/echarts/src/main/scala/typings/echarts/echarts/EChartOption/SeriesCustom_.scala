@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_Arguments
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ItemStyleAnonBorderColorBorderType
+import typings.echarts.AnonArguments
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonItemStyleAnonBorderColorBorderType
 import typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -142,7 +142,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-custom
   */
-@JSName("SeriesCustom")
 trait SeriesCustom_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -489,7 +488,7 @@ trait SeriesCustom_ extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-custom.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderType] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderType] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -553,7 +552,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -648,7 +647,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem
     */
-  var renderItem: js.UndefOr[Anon_Arguments] = js.undefined
+  var renderItem: js.UndefOr[AnonArguments] = js.undefined
   /**
     * When
     * [dataset](https://echarts.apache.org/en/option.html#dataset)
@@ -686,7 +685,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "custom"
@@ -764,18 +763,18 @@ object SeriesCustom_ {
     ] = null,
     datasetIndex: Int | Double = null,
     dimensions: js.Array[_] = null,
-    emphasis: Anon_ItemStyleAnonBorderColorBorderType = null,
+    emphasis: AnonItemStyleAnonBorderColorBorderType = null,
     encode: js.Object = null,
     geoIndex: Int | Double = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderType = null,
+    itemStyle: AnonBorderColorBorderType = null,
     legendHoverLink: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     polarIndex: Int | Double = null,
-    renderItem: Anon_Arguments = null,
+    renderItem: AnonArguments = null,
     seriesLayoutBy: String = null,
     silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     `type`: String = null,
     xAxisIndex: Int | Double = null,
     yAxisIndex: Int | Double = null,

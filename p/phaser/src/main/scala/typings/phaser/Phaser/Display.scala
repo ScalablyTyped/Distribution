@@ -455,6 +455,18 @@ object Display extends js.Object {
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double): G = js.native
       def LeftTop[G /* <: GameObject */](gameObject: G, alignTo: GameObject, offsetX: Double, offsetY: Double): G = js.native
       /**
+        * Takes a Game Object and aligns it next to another, at the given position.
+        * The alignment used is based on the `position` argument, which is a `Phaser.Display.Align` property such as `LEFT_CENTER` or `TOP_RIGHT`.
+        * @param child The Game Object that will be positioned.
+        * @param alignTo The Game Object to base the alignment position on.
+        * @param position The position to align the Game Object with. This is an align constant, such as `Phaser.Display.Align.LEFT_CENTER`.
+        * @param offsetX Optional horizontal offset from the position. Default 0.
+        * @param offsetY Optional vertical offset from the position. Default 0.
+        */
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer): G = js.native
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double): G = js.native
+      def QuickSet[G /* <: GameObject */](child: G, alignTo: GameObject, position: integer, offsetX: Double, offsetY: Double): G = js.native
+      /**
         * Takes given Game Object and aligns it so that it is positioned next to the right bottom position of the other.
         * @param gameObject The Game Object that will be positioned.
         * @param alignTo The Game Object to base the alignment position on.

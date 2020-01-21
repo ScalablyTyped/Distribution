@@ -1,7 +1,7 @@
 package typings.pacote
 
-import typings.pacote.pacoteMod.Options
-import typings.pacote.pacoteMod.Packument
+import typings.pacote.mod.Options
+import typings.pacote.mod.Packument_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object packumentMod extends js.Object {
     * present. For example, packages from `registry.npmjs.org` have additional
     * metadata appended by the registry.
     */
-  def apply(spec: String): js.Promise[Packument] = js.native
-  def apply(spec: String, opts: Options): js.Promise[Packument] = js.native
+  def apply(spec: String): js.Promise[Packument_] = js.native
+  def apply(spec: String, opts: Options): js.Promise[Packument_] = js.native
 }
 

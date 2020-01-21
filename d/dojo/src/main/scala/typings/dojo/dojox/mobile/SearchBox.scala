@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.fetchProperties
 import typings.dojo.dojoStrings.ignoreCase
 import typings.dojo.dojoStrings.incremental
@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._SearchMixin because Inheritance from two classes. Inlined fetchProperties, ignoreCase, pageSize, query, queryExpr, searchAttr, searchDelay, store, postMixInProperties, onSearch */ @JSGlobal("dojox.mobile.SearchBox")
+- typings.dojo.dijit.form.SearchMixin because Inheritance from two classes. Inlined fetchProperties, ignoreCase, pageSize, query, queryExpr, searchAttr, searchDelay, store, postMixInProperties, onSearch */ @JSGlobal("dojox.mobile.SearchBox")
 @js.native
 class SearchBox () extends TextBox {
   def this(params: js.Object) = this()
@@ -158,7 +158,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_ignoreCase(
     property: ignoreCase,
@@ -168,7 +168,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_incremental(
     property: incremental,
@@ -178,7 +178,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pageSize(
     property: pageSize,
@@ -188,7 +188,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_query(
     property: query,
@@ -198,7 +198,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_queryExpr(
     property: queryExpr,
@@ -208,7 +208,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchAttr(
     property: searchAttr,
@@ -218,7 +218,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchDelay(
     property: searchDelay,
@@ -228,7 +228,7 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_store(
     property: store,
@@ -238,6 +238,6 @@ class SearchBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

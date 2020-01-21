@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-expect-message"
-version := "1.0-dt-20191025Z-ec5cc5"
+version := "1.0-dt-20191025Z-2b484f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

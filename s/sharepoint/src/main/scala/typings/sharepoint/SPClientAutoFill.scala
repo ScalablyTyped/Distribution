@@ -47,7 +47,7 @@ object SPClientAutoFill extends js.Object {
    // = 'AutoFillKey';
   var DisplayTextProperty: String = js.native
   var KeyProperty: String = js.native
-  var MenuOptionType: Anon_Footer = js.native
+  var MenuOptionType: AnonFooter = js.native
    // = 'AutoFillTitleText';
   var MenuOptionTypeProperty: String = js.native
    // = 'AutoFillDisplayText';

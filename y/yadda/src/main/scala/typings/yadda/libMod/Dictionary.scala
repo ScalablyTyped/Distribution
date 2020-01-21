@@ -1,6 +1,6 @@
 package typings.yadda.libMod
 
-import typings.yadda.libDictionaryMod.^
+import typings.yadda.dictionaryMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

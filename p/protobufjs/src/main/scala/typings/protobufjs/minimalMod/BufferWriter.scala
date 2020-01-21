@@ -1,6 +1,6 @@
 package typings.protobufjs.minimalMod
 
-import typings.protobufjs.protobufjsMod.Buffer
+import typings.protobufjs.mod.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Constructs a new buffer writer instance. */
 class BufferWriter ()
-  extends typings.protobufjs.protobufjsMod.BufferWriter
+  extends typings.protobufjs.mod.BufferWriter
 
 /* static members */
 @JSImport("protobufjs/minimal", "BufferWriter")

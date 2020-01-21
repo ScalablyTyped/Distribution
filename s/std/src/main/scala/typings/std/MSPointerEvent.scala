@@ -26,7 +26,7 @@ trait MSPointerEvent extends MouseEvent {
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
     cancelableArg: scala.Boolean,
-    viewArg: Window,
+    viewArg: Window_,
     detailArg: Double,
     screenXArg: Double,
     screenYArg: Double,

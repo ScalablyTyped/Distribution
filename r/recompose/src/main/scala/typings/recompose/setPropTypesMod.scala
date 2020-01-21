@@ -1,7 +1,7 @@
 package typings.recompose
 
-import typings.react.reactMod.ComponentType
-import typings.react.reactMod.ValidationMap
+import typings.react.mod.ComponentType
+import typings.react.mod.ValidationMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

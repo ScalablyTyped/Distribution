@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.Anon_Asn1params
+import typings.jsrsasign.AnonAsn1params
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,6 +33,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.AlgorithmIdentifier")
 @js.native
 class AlgorithmIdentifier () extends ASN1Object {
-  def this(params: Anon_Asn1params) = this()
+  def this(params: AnonAsn1params) = this()
 }
 

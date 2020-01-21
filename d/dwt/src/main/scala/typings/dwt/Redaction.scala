@@ -1,7 +1,7 @@
 package typings.dwt
 
-import typings.dwt.EnumDWT_OCRFindTextAction.OCRFT_MARKFORREDACT
-import typings.dwt.EnumDWT_OCRFindTextFlags.OCRFT_WHOLEWORD
+import typings.dwt.EnumDWTOCRFindTextAction.OCRFT_MARKFORREDACT
+import typings.dwt.EnumDWTOCRFindTextFlags.OCRFT_WHOLEWORD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

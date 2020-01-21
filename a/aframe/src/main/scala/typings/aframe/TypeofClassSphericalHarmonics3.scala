@@ -1,8 +1,8 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.three.srcMathVector3Mod.Vector3
-import typings.three.threeMod.SphericalHarmonics3
+import typings.three.mod.SphericalHarmonics3
+import typings.three.vector3Mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

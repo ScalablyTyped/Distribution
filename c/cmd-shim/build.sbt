@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cmd-shim"
-version := "2.0-dt-20180214Z-eac32a"
+version := "2.0-dt-20180214Z-0081da"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

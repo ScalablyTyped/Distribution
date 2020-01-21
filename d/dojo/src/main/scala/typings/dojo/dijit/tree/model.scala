@@ -1,6 +1,5 @@
 package typings.dojo.dijit.tree
 
-import typings.dojo.dijit.tree.dndSource.__Item
 import typings.dojo.dojo.data.api.Item
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -77,7 +76,7 @@ class model () extends js.Object {
     * @param insertIndex               OptionalAllows to insert the new item as the n'th child of parent.             
     * @param before               OptionalInsert the new item as the previous sibling of this item.  before must be a child of parent.             
     */
-  def newItem(args: __Item, parent: js.Any, insertIndex: Double, before: js.Any): Unit = js.native
+  def newItem(args: typings.dojo.dijit.tree.dndSource.Item, parent: js.Any, insertIndex: Double, before: js.Any): Unit = js.native
   /**
     * Callback whenever an item has changed, so that Tree
     * can update the label, icon, etc.   Note that changes

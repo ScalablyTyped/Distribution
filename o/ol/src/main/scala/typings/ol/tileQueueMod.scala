@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object tileQueueMod extends js.Object {
   @js.native
   trait TileQueue
-    extends typings.ol.structsPriorityQueueMod.default[js.Any] {
+    extends typings.ol.priorityQueueMod.default[js.Any] {
     def getTilesLoading(): Double = js.native
-    /* protected */ def handleTileChange(event: typings.ol.eventsEventMod.default): Unit = js.native
+    /* protected */ def handleTileChange(event: typings.ol.eventMod.default): Unit = js.native
     def loadMoreTiles(maxTotalLoading: Double, maxNewLoads: Double): Unit = js.native
   }
   
@@ -22,7 +22,7 @@ object tileQueueMod extends js.Object {
   }
   
   type PriorityFunction = js.Function4[
-    /* p0 */ typings.ol.tileMod.default, 
+    /* p0 */ typings.ol.olTileMod.default, 
     /* p1 */ String, 
     /* p2 */ Coordinate, 
     /* p3 */ Double, 

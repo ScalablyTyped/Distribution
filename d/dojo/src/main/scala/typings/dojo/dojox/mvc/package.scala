@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mvc {
-  import typings.dojo.dijit._WidgetBase
-  import typings.dojo.dojo.Stateful
-
+  type Bind = typings.dojo.dojox.mvc.Bind_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mvc/StatefulArray.html
     *
@@ -29,10 +27,9 @@ package object mvc {
     *
     * @param a
     */
-  type StatefulArray = js.Function1[/* a */ js.Array[js.Any], Unit]
-  type StatefulModel = StatefulModel_
-  type _atBindingMixin = _atBindingMixin_
-  type at = at_
+  type StatefulArray = js.Function1[/* a */ js.Array[js.Any], scala.Unit]
+  type StatefulModel = typings.dojo.dojox.mvc.StatefulModel_
+  type at = typings.dojo.dojox.mvc.at_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mvc/atBindingExtension.html
     *
@@ -40,7 +37,9 @@ package object mvc {
     *
     * @param w The widget.
     */
-  type atBindingExtension = js.Function1[/* w */ js.Array[_WidgetBase], Unit]
+  type atBindingExtension = js.Function1[/* w */ js.Array[typings.dojo.dijit.WidgetBase], scala.Unit]
+  type atBindingMixin = typings.dojo.dojox.mvc.atBindingMixin_
+  type base = typings.dojo.dojox.mvc.base_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mvc/equals.html
     *
@@ -51,7 +50,7 @@ package object mvc {
     * @param src The stateful value to compare with.
     * @param options The object that defines how two stateful values are compared.
     */
-  type equals = js.Function3[/* dst */ js.Any, /* src */ js.Any, /* options */ js.Object, Unit]
+  type equals = js.Function3[/* dst */ js.Any, /* src */ js.Any, /* options */ js.Object, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mvc/getPlainValue.html
     *
@@ -61,7 +60,7 @@ package object mvc {
     * @param value The stateful value.
     * @param options The object that defines how plain value should be created from stateful value.
     */
-  type getPlainValue = js.Function2[/* value */ js.Any, /* options */ js.Object, Unit]
+  type getPlainValue = js.Function2[/* value */ js.Any, /* options */ js.Object, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mvc/getStateful.html
     *
@@ -71,7 +70,7 @@ package object mvc {
     * @param value The raw value.
     * @param options The object that defines how model object should be created from plain object hierarchy.
     */
-  type getStateful = js.Function2[/* value */ js.Any, /* options */ js.Object, Unit]
+  type getStateful = js.Function2[/* value */ js.Any, /* options */ js.Object, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/mvc/sync.html
     *
@@ -85,11 +84,11 @@ package object mvc {
     * @param options Data binding options.
     */
   type sync = js.Function5[
-    /* source */ Stateful, 
-    /* sourceProp */ String, 
-    /* target */ Stateful, 
-    /* targetProp */ String, 
+    /* source */ typings.dojo.dojo.Stateful, 
+    /* sourceProp */ java.lang.String, 
+    /* target */ typings.dojo.dojo.Stateful, 
+    /* targetProp */ java.lang.String, 
     /* options */ js.Object, 
-    Unit
+    scala.Unit
   ]
 }

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("persian")
 trait persian_ extends js.Object {
   /**
     *

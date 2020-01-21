@@ -1,6 +1,6 @@
 package typings.quill
 
-import typings.quill.quillMod.Sources
+import typings.quill.mod.Sources
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

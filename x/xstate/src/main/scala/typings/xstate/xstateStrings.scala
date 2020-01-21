@@ -1,6 +1,6 @@
 package typings.xstate
 
-import typings.xstate.libTypesMod._StateTypes
+import typings.xstate.typesMod._StateTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

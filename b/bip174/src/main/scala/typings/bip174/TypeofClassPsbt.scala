@@ -1,9 +1,9 @@
 package typings.bip174
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.bip174.bip174Mod.Psbt
-import typings.bip174.srcLibInterfacesMod.Transaction
-import typings.bip174.srcLibInterfacesMod.TransactionFromBuffer
+import typings.bip174.interfacesMod.Transaction
+import typings.bip174.interfacesMod.TransactionFromBuffer
+import typings.bip174.mod.Psbt
 import typings.node.Buffer
 import typings.std.InstanceType
 import scala.scalajs.js

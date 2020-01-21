@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object hopscotch {
-  type CallbackNameNamesOrDefinition = String | js.Array[String] | js.Function0[Unit]
+  type CallbackNameNamesOrDefinition = java.lang.String | js.Array[java.lang.String] | js.Function0[scala.Unit]
 }

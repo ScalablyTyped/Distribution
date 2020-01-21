@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object config {
-  import typings.chrome.chrome.events.Event
-
-  type CaptivePorttalDetectedEvent = Event[js.Function1[/* networkInfo */ NetworkInfo, Unit]]
+  type CaptivePorttalDetectedEvent = typings.chrome.chrome.events.Event[
+    js.Function1[/* networkInfo */ typings.chrome.chrome.networking.config.NetworkInfo, scala.Unit]
+  ]
 }

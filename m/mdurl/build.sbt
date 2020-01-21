@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mdurl"
-version := "1.0-dt-20181017Z-95c8ce"
+version := "1.0-dt-20181017Z-21a2e0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

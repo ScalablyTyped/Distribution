@@ -1,8 +1,8 @@
 package typings.uikit.UIkit
 
-import typings.jquery.JQuery
+import typings.jquery.JQuery_
 import typings.std.HTMLElement
-import typings.std.Window
+import typings.std.Window_
 import typings.uikit.uikitBooleans.`false`
 import typings.uikit.uikitStrings.click
 import typings.uikit.uikitStrings.hover
@@ -17,7 +17,7 @@ trait DropdownOptions extends js.Object {
     * Referenced element to keep dropdowns visibilty
     * @default window
     */
-  var boundary: js.UndefOr[String | JQuery[HTMLElement] | Window] = js.undefined
+  var boundary: js.UndefOr[String | JQuery_[HTMLElement] | Window_] = js.undefined
   /**
     * Delay time in hover mode before a dropdown is shown in ms
     * @default 0
@@ -27,7 +27,7 @@ trait DropdownOptions extends js.Object {
     * Dropdown selector
     * @default '.uk-dropdown,.uk-dropdown-blank'
     */
-  var dropdownSelector: js.UndefOr[String | JQuery[HTMLElement]] = js.undefined
+  var dropdownSelector: js.UndefOr[String | JQuery_[HTMLElement]] = js.undefined
   /**
     * Is added to the delay time when hovering from one active dropdown to another dropdown (in ms)
     * @default 250
@@ -37,7 +37,7 @@ trait DropdownOptions extends js.Object {
     * Stretch dropdown width to a specified element
     * @default false
     */
-  var justify: js.UndefOr[String | JQuery[HTMLElement] | `false`] = js.undefined
+  var justify: js.UndefOr[String | JQuery_[HTMLElement] | `false`] = js.undefined
   /**
     * Dropdown trigger behaviour
     * @default 'hover'
@@ -64,11 +64,11 @@ trait DropdownOptions extends js.Object {
 object DropdownOptions {
   @scala.inline
   def apply(
-    boundary: String | JQuery[HTMLElement] | Window = null,
+    boundary: String | JQuery_[HTMLElement] | Window_ = null,
     delay: Int | Double = null,
-    dropdownSelector: String | JQuery[HTMLElement] = null,
+    dropdownSelector: String | JQuery_[HTMLElement] = null,
     hoverDelayIdle: Int | Double = null,
-    justify: String | JQuery[HTMLElement] | `false` = null,
+    justify: String | JQuery_[HTMLElement] | `false` = null,
     mode: hover | click = null,
     pos: DropdownPosition = null,
     preventflip: x | y | Boolean = null,

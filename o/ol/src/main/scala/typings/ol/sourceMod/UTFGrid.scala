@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceUTFGridMod.Options
-import typings.ol.sourceUTFGridMod.default
+import typings.ol.utfgridMod.Options
+import typings.ol.utfgridMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

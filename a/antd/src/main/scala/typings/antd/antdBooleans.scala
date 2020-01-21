@@ -1,7 +1,7 @@
 package typings.antd
 
-import typings.antd.libStatisticUtilsMod._Formatter
-import typings.antd.libTreeDirectoryTreeMod.ExpandAction
+import typings.antd.directoryTreeMod.ExpandAction
+import typings.antd.statisticUtilsMod._Formatter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

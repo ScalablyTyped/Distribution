@@ -1,8 +1,8 @@
 package typings.sipml.SIPml.Session
 
-import typings.sipml.Anon_Audio
-import typings.sipml.Anon_E
-import typings.sipml.Anon_MaxHeight
+import typings.sipml.AnonAudio
+import typings.sipml.AnonE
+import typings.sipml.AnonMaxHeight
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,30 +10,30 @@ import scala.scalajs.js.annotation._
 
 trait Configuration extends js.Object {
   var audio_remote: js.UndefOr[HTMLElement] = js.undefined
-  var bandwidth: js.UndefOr[Anon_Audio] = js.undefined
-  var events_listener: js.UndefOr[Anon_E] = js.undefined
+  var bandwidth: js.UndefOr[AnonAudio] = js.undefined
+  var events_listener: js.UndefOr[AnonE] = js.undefined
   var expires: js.UndefOr[Double] = js.undefined
   var from: js.UndefOr[String] = js.undefined
   var sip_caps: js.UndefOr[js.Array[js.Object]] = js.undefined
   var sip_headers: js.UndefOr[js.Array[js.Object]] = js.undefined
   var video_local: js.UndefOr[HTMLElement] = js.undefined
   var video_remote: js.UndefOr[HTMLElement] = js.undefined
-  var video_size: js.UndefOr[Anon_MaxHeight] = js.undefined
+  var video_size: js.UndefOr[AnonMaxHeight] = js.undefined
 }
 
 object Configuration {
   @scala.inline
   def apply(
     audio_remote: HTMLElement = null,
-    bandwidth: Anon_Audio = null,
-    events_listener: Anon_E = null,
+    bandwidth: AnonAudio = null,
+    events_listener: AnonE = null,
     expires: Int | Double = null,
     from: String = null,
     sip_caps: js.Array[js.Object] = null,
     sip_headers: js.Array[js.Object] = null,
     video_local: HTMLElement = null,
     video_remote: HTMLElement = null,
-    video_size: Anon_MaxHeight = null
+    video_size: AnonMaxHeight = null
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     if (audio_remote != null) __obj.updateDynamic("audio_remote")(audio_remote.asInstanceOf[js.Any])

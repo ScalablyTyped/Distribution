@@ -1,7 +1,7 @@
 
 # Scala.js typings for sharp
 
-Typings are for version 0.23
+Typings are for version 0.24
 
 ## Library description:
 High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP and TIFF images

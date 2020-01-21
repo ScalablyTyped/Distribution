@@ -1,6 +1,6 @@
 package typings.fullcalendar
 
-import typings.fullcalendar.srcTypesInputDashTypesMod.ConstraintInput
+import typings.fullcalendar.inputTypesMod.ConstraintInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

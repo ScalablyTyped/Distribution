@@ -1,6 +1,6 @@
 package typings.autobahn
 
-import typings.autobahn.autobahnMod.DefaultTransportType
+import typings.autobahn.mod.DefaultTransportType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

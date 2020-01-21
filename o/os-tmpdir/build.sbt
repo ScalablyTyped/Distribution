@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "os-tmpdir"
-version := "1.0-dt-20180214Z-39b765"
+version := "1.0-dt-20180214Z-0d11bf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

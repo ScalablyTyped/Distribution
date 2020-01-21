@@ -1,7 +1,7 @@
 package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.Anon_Path
+import typings.ckeditor.AnonPath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation._
 object skin extends js.Object {
   // tslint:disable-next-line:no-duplicate-variable
   var name: String = js.native
-  var ua_dialog: String = js.native
-  var ua_editor: String = js.native
+  @JSName("ua_dialog")
+  var uaDialog: String = js.native
+  @JSName("ua_editor")
+  var uaEditor: String = js.native
   def addIcon(name: String, path: String): Unit = js.native
   def addIcon(name: String, path: String, offset: Double): Unit = js.native
   def addIcon(name: String, path: String, offset: Double, bgsize: String): Unit = js.native
@@ -25,7 +27,7 @@ object skin extends js.Object {
   def loadPart(part: String, fn: js.Function0[Unit]): Unit = js.native
   def path(): String = js.native
   @js.native
-  object icons extends /* name */ StringDictionary[Anon_Path]
+  object icons extends /* name */ StringDictionary[AnonPath]
   
   @js.native
   object ua

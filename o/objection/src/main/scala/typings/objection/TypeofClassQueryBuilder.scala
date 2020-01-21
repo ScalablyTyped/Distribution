@@ -1,9 +1,9 @@
 package typings.objection
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.objection.objectionMod.Model
-import typings.objection.objectionMod.ModelClass
-import typings.objection.objectionMod.QueryBuilder
+import typings.objection.mod.Model
+import typings.objection.mod.ModelClass
+import typings.objection.mod.QueryBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

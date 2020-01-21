@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RTCIceTransportStateChangedEvent extends Event {
+trait RTCIceTransportStateChangedEvent extends Event_ {
   val state: RTCIceTransportState = js.native
 }
 

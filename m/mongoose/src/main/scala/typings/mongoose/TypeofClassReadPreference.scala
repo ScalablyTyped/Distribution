@@ -1,8 +1,8 @@
 package typings.mongoose
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.mongodb.mongodbMod.ReadPreference
-import typings.mongodb.mongodbMod.ReadPreferenceMode
+import typings.mongodb.mod.ReadPreference
+import typings.mongodb.mod.ReadPreferenceMode
 import typings.mongoose.mongooseStrings.nearest
 import typings.mongoose.mongooseStrings.primary
 import typings.mongoose.mongooseStrings.primaryPreferred

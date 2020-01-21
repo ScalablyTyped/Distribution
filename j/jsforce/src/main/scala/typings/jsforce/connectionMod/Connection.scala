@@ -1,14 +1,14 @@
 package typings.jsforce.connectionMod
 
-import typings.jsforce.apiAnalyticsMod.Analytics
-import typings.jsforce.apiApexMod.Apex
-import typings.jsforce.apiChatterMod.Chatter
-import typings.jsforce.apiMetadataMod.Metadata
+import typings.jsforce.analyticsMod.Analytics
+import typings.jsforce.apexMod.Apex
 import typings.jsforce.bulkMod.Bulk
 import typings.jsforce.cacheMod.Cache
-import typings.jsforce.jsforceMod.OAuth2
-import typings.jsforce.jsforceMod.Streaming
-import typings.jsforce.limitsDashInfoMod.LimitsInfo
+import typings.jsforce.chatterMod.Chatter
+import typings.jsforce.limitsInfoMod.LimitsInfo
+import typings.jsforce.metadataMod.Metadata
+import typings.jsforce.mod.OAuth2
+import typings.jsforce.mod.Streaming
 import typings.jsforce.queryMod.Query
 import typings.jsforce.queryMod.QueryResult
 import typings.std.Error

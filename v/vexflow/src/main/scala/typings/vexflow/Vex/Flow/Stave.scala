@@ -1,10 +1,10 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Bpm
-import typings.vexflow.Anon_Fillstyle
-import typings.vexflow.Anon_FillstyleGlyphspacingpx
-import typings.vexflow.Anon_Justification
-import typings.vexflow.Anon_Visible
+import typings.vexflow.AnonBpm
+import typings.vexflow.AnonFillstyle
+import typings.vexflow.AnonFillstyleGlyphspacingpx
+import typings.vexflow.AnonJustification
+import typings.vexflow.AnonVisible
 import typings.vexflow.Vex.Flow.Barline.`type`
 import typings.vexflow.Vex.Flow.StaveModifier.Position
 import typings.vexflow.Vex.IRenderContext
@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Stave protected () extends js.Object {
   def this(x: Double, y: Double, width: Double) = this()
-  def this(x: Double, y: Double, width: Double, options: Anon_Fillstyle) = this()
-  var options: Anon_FillstyleGlyphspacingpx = js.native
+  def this(x: Double, y: Double, width: Double, options: AnonFillstyle) = this()
+  var options: AnonFillstyleGlyphspacingpx = js.native
   def addClef(clef: String): Stave = js.native
   def addClef(clef: String, size: String): Stave = js.native
   def addClef(clef: String, size: String, annotation: String): Stave = js.native
@@ -43,7 +43,7 @@ class Stave protected () extends js.Object {
   def getBottomLineY(): Double = js.native
   def getBottomY(): Double = js.native
   def getBoundingBix(): BoundingBox = js.native
-  def getConfigForLines(): js.Array[Anon_Visible] = js.native
+  def getConfigForLines(): js.Array[AnonVisible] = js.native
   def getContext(): IRenderContext = js.native
   def getHeight(): Double = js.native
   def getModifierXShift(index: Double): Double = js.native
@@ -68,8 +68,8 @@ class Stave protected () extends js.Object {
   def getYForTopText(line: Double): Double = js.native
   def resetLines(): Unit = js.native
   def setBegBarType(`type`: `type`): Stave = js.native
-  def setConfigForLine(line_number: Double, line_config: Anon_Visible): Stave = js.native
-  def setConfigForLines(lines_configuration: js.Array[Anon_Visible]): Stave = js.native
+  def setConfigForLine(line_number: Double, line_config: AnonVisible): Stave = js.native
+  def setConfigForLines(lines_configuration: js.Array[AnonVisible]): Stave = js.native
   def setContext(context: IRenderContext): Stave = js.native
   def setEndBarType(`type`: `type`): Stave = js.native
   def setEndClef(clef: String): Stave = js.native
@@ -82,9 +82,9 @@ class Stave protected () extends js.Object {
   def setRepetitionTypeLeft(`type`: typings.vexflow.Vex.Flow.Repetition.`type`, y: Double): Stave = js.native
   def setRepetitionTypeRight(`type`: typings.vexflow.Vex.Flow.Repetition.`type`, y: Double): Stave = js.native
   def setSection(section: String, y: Double): Stave = js.native
-  def setTempo(tempo: Anon_Bpm, y: Double): Stave = js.native
+  def setTempo(tempo: AnonBpm, y: Double): Stave = js.native
   def setText(text: String, position: typings.vexflow.Vex.Flow.Modifier.Position): Stave = js.native
-  def setText(text: String, position: typings.vexflow.Vex.Flow.Modifier.Position, options: Anon_Justification): Stave = js.native
+  def setText(text: String, position: typings.vexflow.Vex.Flow.Modifier.Position, options: AnonJustification): Stave = js.native
   def setVoltaType(`type`: typings.vexflow.Vex.Flow.Volta.`type`, number_t: Double, y: Double): Stave = js.native
   def setWidth(width: Double): Stave = js.native
   def setX(x: Double): Stave = js.native

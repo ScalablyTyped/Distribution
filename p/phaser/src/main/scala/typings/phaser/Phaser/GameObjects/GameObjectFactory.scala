@@ -49,8 +49,7 @@ class GameObjectFactory protected () extends js.Object {
   /**
     * A reference to the Scene Update List.
     */
-  @JSName("updateList;")
-  var updateListSemicolon: UpdateList = js.native
+  var updateList: UpdateList = js.native
   /**
     * Creates a new Arc Shape Game Object and adds it to the Scene.
     * 
@@ -357,6 +356,7 @@ class GameObjectFactory protected () extends js.Object {
     * @param child The child to be added to this Scene.
     */
   def existing(child: GameObject): GameObject = js.native
+  def existing(child: Group): GameObject = js.native
   /**
     * Creates a new Extern Game Object and adds it to the Scene.
     * 
@@ -642,7 +642,7 @@ class GameObjectFactory protected () extends js.Object {
     * The Polygon Shape is created by providing a list of points, which are then used to create an
     * internal Polygon geometry object. The points can be set from a variety of formats:
     * 
-    * - An array of Point or Vector2 objects: `[new Phaser.Math.Vec2(x1, y1), ...]`
+    * - An array of Point or Vector2 objects: `[new Phaser.Math.Vector2(x1, y1), ...]`
     * - An array of objects with public x/y properties: `[obj1, obj2, ...]`
     * - An array of paired numbers that represent point coordinates: `[x1,y1, x2,y2, ...]`
     * - An array of arrays with two elements representing x/y coordinates: `[[x1, y1], [x2, y2], ...]`
@@ -949,5 +949,27 @@ class GameObjectFactory protected () extends js.Object {
     * @param height The height of the Game Object.
     */
   def zone(x: Double, y: Double, width: Double, height: Double): Zone = js.native
+}
+
+/* static members */
+@JSGlobal("Phaser.GameObjects.GameObjectFactory")
+@js.native
+object GameObjectFactory extends js.Object {
+  /**
+    * Static method called directly by the Game Object factory functions.
+    * With this method you can register a custom GameObject factory in the GameObjectFactory,
+    * providing a name (`factoryType`) and the constructor (`factoryFunction`) in order
+    * to be called when you call to Phaser.Scene.add[ factoryType ] method.
+    * @param factoryType The key of the factory that you will use to call to Phaser.Scene.add[ factoryType ] method.
+    * @param factoryFunction The constructor function to be called when you invoke to the Phaser.Scene.add method.
+    */
+  def register(factoryType: String, factoryFunction: js.Function): Unit = js.native
+  /**
+    * Static method called directly by the Game Object factory functions.
+    * With this method you can remove a custom GameObject factory registered in the GameObjectFactory,
+    * providing a its `factoryType`.
+    * @param factoryType The key of the factory that you want to remove from the GameObjectFactory.
+    */
+  def remove(factoryType: String): Unit = js.native
 }
 

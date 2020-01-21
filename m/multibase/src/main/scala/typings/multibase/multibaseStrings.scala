@@ -1,7 +1,7 @@
 package typings.multibase
 
-import typings.multibase.multibaseMod.code
-import typings.multibase.multibaseMod.name
+import typings.multibase.mod.code
+import typings.multibase.mod.name
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

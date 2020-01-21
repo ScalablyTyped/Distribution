@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.allowNestedScrolls
 import typings.dojo.dojoStrings.appBars
 import typings.dojo.dojoStrings.constraint
@@ -22,7 +22,7 @@ import typings.dojo.dojoStrings.scrollableParams
 import typings.dojo.dojoStrings.threshold
 import typings.dojo.dojoStrings.touchNode
 import typings.dojo.dojoStrings.weight
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +45,7 @@ import scala.scalajs.js.annotation._
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dojox.mobile.scrollable because Inheritance from two classes. Inlined 
-- typings.dojo.dojox.mobile._ScrollableMixin because Inheritance from two classes. Inlined allowNestedScrolls, appBars, constraint, dirLock, disableFlashScrollBar, fadeScrollBar, fixedFooter, fixedFooterHeight, fixedHeader, fixedHeaderHeight, height, isLocalFooter, propagatable, scrollableParams, scrollBar, scrollDir, scrollType, threshold, touchNode, weight, abort, addCover, adjustDestination, calcScrollBarPos, calcSpeed, checkFixedBar, cleanup, createMask, destroy, findAppBars, findDisp, flashScrollBar, getDim, getPos, getScreenSize, getSpeed, hideScrollBar, init, isFormElement, isTopLevel, makeTranslateStr, removeCover, resetScrollBar, resize, scrollIntoView, scrollScrollBarTo, scrollTo, setKeyframes, setSelectable, showScrollBar, slideScrollBarTo, slideTo, startup, stopAnimation, onAfterScroll, onBeforeScroll, onFlickAnimationEnd, onFlickAnimationStart, onTouchEnd, onTouchMove, onTouchStart */ @JSGlobal("dojox.mobile.SwapView")
+- typings.dojo.dojox.mobile.ScrollableMixin because Inheritance from two classes. Inlined allowNestedScrolls, appBars, constraint, dirLock, disableFlashScrollBar, fadeScrollBar, fixedFooter, fixedFooterHeight, fixedHeader, fixedHeaderHeight, height, isLocalFooter, propagatable, scrollableParams, scrollBar, scrollDir, scrollType, threshold, touchNode, weight, abort, addCover, adjustDestination, calcScrollBarPos, calcSpeed, checkFixedBar, cleanup, createMask, destroy, findAppBars, findDisp, flashScrollBar, getDim, getPos, getScreenSize, getSpeed, hideScrollBar, init, isFormElement, isTopLevel, makeTranslateStr, removeCover, resetScrollBar, resize, scrollIntoView, scrollScrollBarTo, scrollTo, setKeyframes, setSelectable, showScrollBar, slideScrollBarTo, slideTo, startup, stopAnimation, onAfterScroll, onBeforeScroll, onFlickAnimationEnd, onFlickAnimationStart, onTouchEnd, onTouchMove, onTouchStart */ @JSGlobal("dojox.mobile.SwapView")
 @js.native
 class SwapView protected () extends View {
   def this(params: js.Object) = this()
@@ -319,13 +319,13 @@ class SwapView protected () extends View {
     *
     * @param w
     */
-  def handleNextPage(w: _WidgetBase): Unit = js.native
+  def handleNextPage(w: WidgetBase): Unit = js.native
   /**
     * Called when the "/dojox/mobile/prevPage" topic is published.
     *
     * @param w
     */
-  def handlePrevPage(w: _WidgetBase): Unit = js.native
+  def handlePrevPage(w: WidgetBase): Unit = js.native
   /**
     * Hides the scroll bar.
     * If the fadeScrollBar property is true, hides the scroll bar with
@@ -379,20 +379,20 @@ class SwapView protected () extends View {
     *
     * @param e the scroll event, that contains the following attributes:x (x coordinate of the scroll destination),y (y coordinate of the scroll destination),beforeTop (a boolean that is true if the scroll detination is before the top of the scrollable),beforeTopHeight (the number of pixels before the top of the scrollable for the scroll destination),afterBottom (a boolean that is true if the scroll destination is after the bottom of the scrollable),afterBottomHeight (the number of pixels after the bottom of the scrollable for the scroll destination)
     */
-  def onAfterScroll(e: Event): Unit = js.native
+  def onAfterScroll(e: Event_): Unit = js.native
   /**
     * Overrides dojox/mobile/View.onAnimationEnd().
     *
     * @param e
     */
-  def onAnimationEnd(e: Event): Unit = js.native
+  def onAnimationEnd(e: Event_): Unit = js.native
   /**
     * called before a scroll is initiated. If this method returns false,
     * the scroll is canceled.
     *
     * @param e the scroll event, that contains the following attributes:x (x coordinate of the scroll destination),y (y coordinate of the scroll destination),beforeTop (a boolean that is true if the scroll detination is before the top of the scrollable),beforeTopHeight (the number of pixels before the top of the scrollable for the scroll destination),afterBottom (a boolean that is true if the scroll destination is after the bottom of the scrollable),afterBottomHeight (the number of pixels after the bottom of the scrollable for the scroll destination)
     */
-  def onBeforeScroll(e: Event): Boolean = js.native
+  def onBeforeScroll(e: Event_): Boolean = js.native
   /**
     *
     * @param e
@@ -402,7 +402,7 @@ class SwapView protected () extends View {
     *
     * @param e
     */
-  def onFlickAnimationEnd(e: Event): Unit = js.native
+  def onFlickAnimationEnd(e: Event_): Unit = js.native
   /**
     *
     * @param e
@@ -417,7 +417,7 @@ class SwapView protected () extends View {
     *
     * @param e
     */
-  def onTouchEnd(e: Event): Unit = js.native
+  def onTouchEnd(e: Event_): Unit = js.native
   /**
     * User-defined function to handle touchMove events.
     *
@@ -435,7 +435,7 @@ class SwapView protected () extends View {
     *
     * @param e
     */
-  def onTouchStart(e: Event): Unit = js.native
+  def onTouchStart(e: Event_): Unit = js.native
   /**
     * Returns the previous view.
     *
@@ -598,7 +598,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_appBars(
     property: appBars,
@@ -608,7 +608,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_constraint(
     property: constraint,
@@ -618,7 +618,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dirLock(
     property: dirLock,
@@ -628,7 +628,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_disableFlashScrollBar(
     property: disableFlashScrollBar,
@@ -638,7 +638,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fadeScrollBar(
     property: fadeScrollBar,
@@ -648,7 +648,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedFooter(
     property: fixedFooter,
@@ -658,7 +658,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedFooterHeight(
     property: fixedFooterHeight,
@@ -668,7 +668,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedHeader(
     property: fixedHeader,
@@ -678,7 +678,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedHeaderHeight(
     property: fixedHeaderHeight,
@@ -688,7 +688,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_height(
     property: height,
@@ -698,7 +698,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isLocalFooter(
     property: isLocalFooter,
@@ -708,7 +708,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_propagatable(
     property: propagatable,
@@ -718,7 +718,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollBar(
     property: scrollBar,
@@ -728,7 +728,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollDir(
     property: scrollDir,
@@ -738,7 +738,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollType(
     property: scrollType,
@@ -748,7 +748,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_scrollableParams(
     property: scrollableParams,
@@ -758,7 +758,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_threshold(
     property: threshold,
@@ -768,7 +768,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_touchNode(
     property: touchNode,
@@ -778,7 +778,7 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[HTMLElement], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_weight(
     property: weight,
@@ -788,6 +788,6 @@ class SwapView protected () extends View {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

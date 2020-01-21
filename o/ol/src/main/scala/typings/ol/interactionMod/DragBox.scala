@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionDragBoxMod.Options
-import typings.ol.interactionDragBoxMod.default
+import typings.ol.dragBoxMod.Options
+import typings.ol.dragBoxMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

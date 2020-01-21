@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-timecodes"
-version := "2.5-dt-20190628Z-7d0cbe"
+version := "2.5-dt-20190628Z-4edba0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

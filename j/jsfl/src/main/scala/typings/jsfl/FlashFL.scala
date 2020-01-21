@@ -66,7 +66,7 @@ trait FlashFL extends js.Object {
   def fileExists(fileURI: String): Boolean = js.native
   def findDocumentDOM(id: Double): FlashDocument = js.native
   def findDocumentIndex(name: String): js.Array[Double] = js.native
-  def findObjectInDocByName(instanceName: String, document: FlashDocument): js.Array[Anon_Keyframe] = js.native
+  def findObjectInDocByName(instanceName: String, document: FlashDocument): js.Array[AnonKeyframe] = js.native
   /** elementType = "shape", "text", "instance", or "shapeObj". */
   def findObjectInDocByType(elementType: String, document: FlashDocument): js.Array[_] = js.native
   def getAppMemoryInfo(memType: Double): js.Any = js.native

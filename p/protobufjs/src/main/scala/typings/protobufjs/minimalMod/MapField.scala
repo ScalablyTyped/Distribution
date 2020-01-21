@@ -1,11 +1,11 @@
 package typings.protobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.protobufjsMod.Buffer
-import typings.protobufjs.protobufjsMod.Constructor
-import typings.protobufjs.protobufjsMod.FieldDecorator
-import typings.protobufjs.protobufjsMod.IMapField
-import typings.protobufjs.protobufjsMod.Long
+import typings.protobufjs.mod.Buffer
+import typings.protobufjs.mod.Constructor
+import typings.protobufjs.mod.FieldDecorator
+import typings.protobufjs.mod.IMapField
+import typings.protobufjs.mod.Long
 import typings.protobufjs.protobufjsStrings.bool
 import typings.protobufjs.protobufjsStrings.bytes
 import typings.protobufjs.protobufjsStrings.double
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
 @JSImport("protobufjs/minimal", "MapField")
 @js.native
 class MapField protected ()
-  extends typings.protobufjs.protobufjsMod.MapField {
+  extends typings.protobufjs.mod.MapField {
   /**
     * Constructs a new map field instance.
     * @param name Unique name within its namespace
@@ -63,7 +63,7 @@ object MapField extends js.Object {
     * @returns Decorator function
     */
   def d[T /* <: StringDictionary[
-    Double | Long | String | Boolean | Uint8Array | Buffer | js.Array[Double] | typings.protobufjs.protobufjsMod.Message[js.Object]
+    Double | Long | String | Boolean | Uint8Array | Buffer | js.Array[Double] | typings.protobufjs.mod.Message[js.Object]
   ] */](
     fieldId: Double,
     fieldKeyType: int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string,
@@ -76,6 +76,6 @@ object MapField extends js.Object {
     * @returns Created map field
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IMapField): typings.protobufjs.protobufjsMod.MapField = js.native
+  def fromJSON(name: String, json: IMapField): typings.protobufjs.mod.MapField = js.native
 }
 

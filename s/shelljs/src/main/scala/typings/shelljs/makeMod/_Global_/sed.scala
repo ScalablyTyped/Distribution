@@ -1,7 +1,7 @@
 package typings.shelljs.makeMod._Global_
 
 import org.scalablytyped.runtime.TopLevel
-import typings.shelljs.shelljsMod.SedFunction
+import typings.shelljs.mod.SedFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

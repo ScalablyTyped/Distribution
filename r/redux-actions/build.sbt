@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-actions"
-version := "2.6-dt-20190508Z-2ae4bc"
+version := "2.6-dt-20190508Z-e5cbb1"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

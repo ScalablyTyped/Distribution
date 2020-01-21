@@ -1,7 +1,7 @@
 package typings.dojo
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.dojo.dijit.form.RangeBoundTextBox.__Constraints
+import typings.dojo.dijit.form.RangeBoundTextBox.Constraints
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +12,12 @@ trait TypeofRangeBoundTextBox extends js.Object {
     *
     * 
     */
-  var __Constraints: Instantiable0[typings.dojo.dijit.form.RangeBoundTextBox.__Constraints]
+  var __Constraints: Instantiable0[Constraints]
 }
 
 object TypeofRangeBoundTextBox {
   @scala.inline
-  def apply(__Constraints: Instantiable0[__Constraints]): TypeofRangeBoundTextBox = {
+  def apply(__Constraints: Instantiable0[Constraints]): TypeofRangeBoundTextBox = {
     val __obj = js.Dynamic.literal(__Constraints = __Constraints.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofRangeBoundTextBox]

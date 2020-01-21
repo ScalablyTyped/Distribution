@@ -1,105 +1,103 @@
 package typings.tstl
 
-import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIBidirectionalIteratorMod.IBidirectionalIterator
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
+import typings.tstl.binaryPredicatorMod.BinaryPredicator
+import typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer
+import typings.tstl.ibidirectionaliteratorMod.IBidirectionalIterator
+import typings.tstl.iforwardcontainerMod.IForwardContainer
+import typings.tstl.iforwardcontainerMod.IForwardContainer.IteratorType
+import typings.tstl.iforwardcontainerMod.IForwardContainer.ValueType
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.irandomaccesscontainerMod.IRandomAccessContainer
+import typings.tstl.unaryPredicatorMod.UnaryPredicator
+import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl/algorithm/modifiers", JSImport.Namespace)
+@JSImport("tstl/ranges/algorithm/modifiers", JSImport.Namespace)
 @js.native
 object algorithmModifiersMod extends js.Object {
-  def copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def copy_backward[InputIterator /* <: IBidirectionalIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IBidirectionalIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def copy_if[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    output: OutputIterator,
-    pred: js.Function1[/* x */ ValueType[InputIterator], Boolean]
-  ): OutputIterator = js.native
-  def copy_n[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](first: InputIterator, n: Double, output: OutputIterator): OutputIterator = js.native
-  def fill[ForwardIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<ForwardIterator>, ForwardIterator>> */ js.Any */](first: ForwardIterator, last: ForwardIterator, `val`: ValueType[ForwardIterator]): Unit = js.native
-  def fill_n[OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<OutputIterator>, OutputIterator>> */ js.Any */](first: OutputIterator, n: Double, `val`: ValueType[OutputIterator]): OutputIterator = js.native
-  def generate[ForwardIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<ForwardIterator>, ForwardIterator>> */ js.Any */](first: ForwardIterator, last: ForwardIterator, gen: js.Function0[ValueType[ForwardIterator]]): Unit = js.native
-  def generate_n[ForwardIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<ForwardIterator>, ForwardIterator>> */ js.Any */](first: ForwardIterator, n: Double, gen: js.Function0[ValueType[ForwardIterator]]): ForwardIterator = js.native
-  def iter_swap[ForwardIterator1 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<ForwardIterator1>, ForwardIterator1>> */ js.Any */, ForwardIterator2 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<ForwardIterator1>, ForwardIterator2>> */ js.Any */](x: ForwardIterator1, y: ForwardIterator2): Unit = js.native
-  def remove[InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, InputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, `val`: ValueType[InputIterator]): InputIterator = js.native
-  def remove_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator, `val`: ValueType[InputIterator]): OutputIterator = js.native
-  def remove_copy_if[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    output: OutputIterator,
-    pred: js.Function1[/* x */ ValueType[InputIterator], Boolean]
-  ): OutputIterator = js.native
-  def remove_if[InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, InputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean]
-  ): InputIterator = js.native
-  def replace[InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, InputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    old_val: ValueType[InputIterator],
-    new_val: ValueType[InputIterator]
-  ): Unit = js.native
-  def replace_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    output: OutputIterator,
-    old_val: ValueType[InputIterator],
-    new_val: ValueType[InputIterator]
-  ): OutputIterator = js.native
-  def replace_copy_if[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    result: OutputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean],
-    new_val: ValueType[InputIterator]
-  ): OutputIterator = js.native
-  def replace_if[InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, InputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean],
-    new_val: ValueType[InputIterator]
-  ): Unit = js.native
-  def reverse[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](first: BidirectionalIterator, last: BidirectionalIterator): Unit = js.native
-  def reverse_copy[BidirectionalIterator /* <: IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<BidirectionalIterator>, OutputIterator>> */ js.Any */](first: BidirectionalIterator, last: BidirectionalIterator, output: OutputIterator): OutputIterator = js.native
-  def rotate[InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, InputIterator>> */ js.Any */](first: InputIterator, middle: InputIterator, last: InputIterator): InputIterator = js.native
-  def rotate_copy[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<ForwardIterator>, OutputIterator>> */ js.Any */](first: ForwardIterator, middle: ForwardIterator, last: ForwardIterator, output: OutputIterator): OutputIterator = js.native
-  def shift_left[ForwardIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<ForwardIterator>, ForwardIterator>> */ js.Any */](first: ForwardIterator, last: ForwardIterator, n: Double): ForwardIterator = js.native
-  def shift_right[ForwardIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<ForwardIterator>, ForwardIterator>> */ js.Any */](first: ForwardIterator, last: ForwardIterator, n: Double): ForwardIterator = js.native
-  def shuffle[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def swap_ranges[ForwardIterator1 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<ForwardIterator1>, ForwardIterator1>> */ js.Any */, ForwardIterator2 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<ForwardIterator1>, ForwardIterator2>> */ js.Any */](first1: ForwardIterator1, last1: ForwardIterator1, first2: ForwardIterator2): ForwardIterator2 = js.native
-  def transform[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<OutputIterator>, OutputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    result: OutputIterator,
-    op: js.Function1[/* val */ ValueType[InputIterator], ValueType[OutputIterator]]
-  ): OutputIterator = js.native
-  def transform[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator2], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<OutputIterator>, OutputIterator>> */ js.Any */](
-    first1: InputIterator1,
-    last1: InputIterator1,
-    first2: InputIterator2,
-    result: OutputIterator,
-    binary_op: js.Function2[
-      /* x */ ValueType[InputIterator1], 
-      /* y */ ValueType[InputIterator2], 
-      ValueType[OutputIterator]
+  def copy[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator): OutputIterator = js.native
+  @JSName("copy_backward")
+  def copyBackward[Range /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */, OutputIterator /* <: Writeonly[
+    IBidirectionalIterator[
+      typings.tstl.ibidirectionalcontainerMod.IBidirectionalContainer.ValueType[Range], 
+      OutputIterator
     ]
-  ): OutputIterator = js.native
-  def unique[InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, InputIterator>> */ js.Any */](first: InputIterator, last: InputIterator): InputIterator = js.native
-  def unique[InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<IPointer.ValueType<InputIterator>, InputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function2[/* x */ ValueType[InputIterator], /* y */ ValueType[InputIterator], Boolean]
-  ): InputIterator = js.native
-  def unique_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def unique_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](
-    first: InputIterator,
-    last: InputIterator,
+  ] */](range: Range, output: OutputIterator): OutputIterator = js.native
+  @JSName("copy_if")
+  def copyIf[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator, pred: UnaryPredicator[ValueType[Range]]): OutputIterator = js.native
+  @JSName("copy_n")
+  def copyN[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, n: Double, output: OutputIterator): OutputIterator = js.native
+  def fill[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, value: ValueType[Range]): Unit = js.native
+  @JSName("fill_n")
+  def fillN[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, n: Double, value: ValueType[Range]): IteratorType[Range] = js.native
+  def generate[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, gen: js.Function0[ValueType[Range]]): Unit = js.native
+  @JSName("generate_n")
+  def generateN[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, n: Double, gen: js.Function0[ValueType[Range]]): IteratorType[Range] = js.native
+  def remove[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, `val`: ValueType[Range]): IteratorType[Range] = js.native
+  @JSName("remove_copy")
+  def removeCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator, `val`: ValueType[Range]): OutputIterator = js.native
+  @JSName("remove_copy_if")
+  def removeCopyIf[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator, pred: UnaryPredicator[ValueType[Range]]): OutputIterator = js.native
+  @JSName("remove_if")
+  def removeIf[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): IteratorType[Range] = js.native
+  def replace[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, old_val: ValueType[Range], new_val: ValueType[Range]): Unit = js.native
+  @JSName("replace_copy")
+  def replaceCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator, old_val: ValueType[Range], new_val: ValueType[Range]): OutputIterator = js.native
+  @JSName("replace_copy_if")
+  def replaceCopyIf[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](
+    range: Range,
     output: OutputIterator,
-    pred: js.Function2[/* x */ ValueType[InputIterator], /* y */ ValueType[InputIterator], Boolean]
+    pred: UnaryPredicator[ValueType[Range]],
+    new_val: ValueType[Range]
   ): OutputIterator = js.native
+  @JSName("replace_if")
+  def replaceIf[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]], new_val: ValueType[Range]): Unit = js.native
+  def reverse[Range /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */](range: Range): Unit = js.native
+  @JSName("reverse_copy")
+  def reverseCopy[Range /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator): OutputIterator = js.native
+  def rotate[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, middle: IteratorType[Range]): IteratorType[Range] = js.native
+  @JSName("rotate_copy")
+  def rotateCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, middle: IteratorType[Range], output: OutputIterator): OutputIterator = js.native
+  @JSName("shift_left")
+  def shiftLeft[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, n: Double): Unit = js.native
+  @JSName("shift_right")
+  def shiftRight[Range /* <: js.Array[_] | (IBidirectionalContainer[_, _]) */](range: Range, n: Double): Unit = js.native
+  def shuffle[Range /* <: js.Array[_] | IRandomAccessContainer[_] */](range: Range): Unit = js.native
+  @JSName("swap_ranges")
+  def swapRanges[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: js.Array[ValueType[Range1]]): IteratorType[js.Array[ValueType[Range1]]] = js.native
+  @JSName("swap_ranges")
+  def swapRanges[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]]): IteratorType[IForwardContainer[IForwardIterator[ValueType[Range1], _]]] = js.native
+  def transform[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[
+    IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[OutputIterator], OutputIterator]
+  ] */](range: Range, result: OutputIterator, op: UnaryOperatorInferrer[Range, OutputIterator]): OutputIterator = js.native
+  def transform[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[
+    IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[OutputIterator], OutputIterator]
+  ] */](
+    range: Range1,
+    first: Range2,
+    result: OutputIterator,
+    op: BinaryOperatorInferrer[Range1, Range2, OutputIterator]
+  ): OutputIterator = js.native
+  def unique[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range): IteratorType[Range] = js.native
+  def unique[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: BinaryPredicator[ValueType[Range], ValueType[Range]]): IteratorType[Range] = js.native
+  @JSName("unique_copy")
+  def uniqueCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator): OutputIterator = js.native
+  @JSName("unique_copy")
+  def uniqueCopy[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[Range], OutputIterator]] */](range: Range, output: OutputIterator, pred: BinaryPredicator[ValueType[Range], ValueType[Range]]): OutputIterator = js.native
+  type BinaryOperatorInferrer[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[
+    IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[OutputIterator], OutputIterator]
+  ] */] = js.Function2[
+    /* x */ ValueType[Range1], 
+    /* y */ ValueType[Range2], 
+    typings.tstl.ipointerMod.IPointer.ValueType[OutputIterator]
+  ]
+  type UnaryOperatorInferrer[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[
+    IForwardIterator[typings.tstl.ipointerMod.IPointer.ValueType[OutputIterator], OutputIterator]
+  ] */] = js.Function1[
+    /* val */ ValueType[Range], 
+    typings.tstl.ipointerMod.IPointer.ValueType[OutputIterator]
+  ]
 }
 

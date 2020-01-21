@@ -1,7 +1,7 @@
 package typings.axios
 
-import typings.axios.axiosMod.Method
-import typings.axios.axiosMod.ResponseType
+import typings.axios.mod.Method
+import typings.axios.mod.ResponseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,9 @@ object axiosStrings {
   sealed trait HEAD extends Method
   
   @js.native
+  sealed trait LINK extends Method
+  
+  @js.native
   sealed trait OPTIONS extends Method
   
   @js.native
@@ -27,6 +30,9 @@ object axiosStrings {
   
   @js.native
   sealed trait PUT extends Method
+  
+  @js.native
+  sealed trait UNLINK extends Method
   
   @js.native
   sealed trait arraybuffer extends ResponseType
@@ -50,6 +56,9 @@ object axiosStrings {
   sealed trait json extends ResponseType
   
   @js.native
+  sealed trait link_ extends Method
+  
+  @js.native
   sealed trait options_ extends Method
   
   @js.native
@@ -67,12 +76,17 @@ object axiosStrings {
   @js.native
   sealed trait text extends ResponseType
   
+  @js.native
+  sealed trait unlink_ extends Method
+  
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
+  def LINK: LINK = "LINK".asInstanceOf[LINK]
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   @scala.inline
@@ -81,6 +95,8 @@ object axiosStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
+  def UNLINK: UNLINK = "UNLINK".asInstanceOf[UNLINK]
   @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   @scala.inline
@@ -96,6 +112,8 @@ object axiosStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
+  def link_ : link_ = "link".asInstanceOf[link_]
+  @scala.inline
   def options_ : options_ = "options".asInstanceOf[options_]
   @scala.inline
   def patch_ : patch_ = "patch".asInstanceOf[patch_]
@@ -107,5 +125,7 @@ object axiosStrings {
   def stream: stream = "stream".asInstanceOf[stream]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def unlink_ : unlink_ = "unlink".asInstanceOf[unlink_]
 }
 

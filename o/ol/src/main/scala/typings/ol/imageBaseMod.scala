@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 object imageBaseMod extends js.Object {
   @js.native
   trait ImageBase
-    extends typings.ol.eventsTargetMod.default {
+    extends typings.ol.targetMod.default {
     var extent: Extent = js.native
     var resolution: Double = js.native
     var state: ImageState = js.native

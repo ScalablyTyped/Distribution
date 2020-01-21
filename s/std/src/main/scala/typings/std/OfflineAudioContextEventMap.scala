@@ -10,7 +10,7 @@ trait OfflineAudioContextEventMap extends BaseAudioContextEventMap {
 
 object OfflineAudioContextEventMap {
   @scala.inline
-  def apply(complete: OfflineAudioCompletionEvent, statechange: Event): OfflineAudioContextEventMap = {
+  def apply(complete: OfflineAudioCompletionEvent, statechange: Event_): OfflineAudioContextEventMap = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], statechange = statechange.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OfflineAudioContextEventMap]

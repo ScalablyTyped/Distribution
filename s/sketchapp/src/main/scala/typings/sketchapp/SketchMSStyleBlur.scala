@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SketchMSStyleBlur extends js.Object {
   var _class: styleBlur
-  var center: Anon_X
+  var center: AnonX
   var isEnabled: Double
   var motionAngle: Double
   var radius: Double
@@ -18,7 +18,7 @@ object SketchMSStyleBlur {
   @scala.inline
   def apply(
     _class: styleBlur,
-    center: Anon_X,
+    center: AnonX,
     isEnabled: Double,
     motionAngle: Double,
     radius: Double,

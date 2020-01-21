@@ -10,10 +10,10 @@ import typings.baseui.baseuiStrings.right
 import typings.baseui.inputMod.BaseInputOverrides
 import typings.baseui.inputMod.BaseInputProps
 import typings.baseui.inputMod.SharedProps
-import typings.react.reactMod.FocusEvent
-import typings.react.reactMod.FormEvent
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.Ref
+import typings.react.mod.FocusEvent
+import typings.react.mod.FormEvent
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.Ref
 import typings.std.HTMLTextAreaElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

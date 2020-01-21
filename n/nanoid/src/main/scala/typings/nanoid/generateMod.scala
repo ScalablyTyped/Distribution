@@ -4,9 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("nanoid/generate", JSImport.Namespace)
+@JSImport("nanoid/async/generate", JSImport.Namespace)
 @js.native
 object generateMod extends js.Object {
-  def apply(alphabet: String, size: Double): String = js.native
+  def apply(alphabet: String, size: Double): js.Promise[String] = js.native
 }
 

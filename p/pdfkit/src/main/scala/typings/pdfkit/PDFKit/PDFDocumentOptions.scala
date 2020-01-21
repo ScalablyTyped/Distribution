@@ -1,6 +1,6 @@
 package typings.pdfkit.PDFKit
 
-import typings.pdfkit.Anon_Bottom
+import typings.pdfkit.AnonBottom
 import typings.pdfkit.pdfkitStrings.`1Dot3`
 import typings.pdfkit.pdfkitStrings.`1Dot4`
 import typings.pdfkit.pdfkitStrings.`1Dot5`
@@ -20,7 +20,7 @@ trait PDFDocumentOptions extends js.Object {
   var info: js.UndefOr[DocumentInfo] = js.undefined
   var layout: js.UndefOr[portrait | landscape] = js.undefined
   var margin: js.UndefOr[Double] = js.undefined
-  var margins: js.UndefOr[Anon_Bottom] = js.undefined
+  var margins: js.UndefOr[AnonBottom] = js.undefined
   var ownerPassword: js.UndefOr[String] = js.undefined
   var pdfVersion: js.UndefOr[`1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3`] = js.undefined
   var permissions: js.UndefOr[DocumentPermissions] = js.undefined
@@ -37,7 +37,7 @@ object PDFDocumentOptions {
     info: DocumentInfo = null,
     layout: portrait | landscape = null,
     margin: Int | Double = null,
-    margins: Anon_Bottom = null,
+    margins: AnonBottom = null,
     ownerPassword: String = null,
     pdfVersion: `1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3` = null,
     permissions: DocumentPermissions = null,

@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * [description]
+  * Provides methods used for getting and setting the static state of a physics body.
   */
 trait Static extends js.Object {
   /**
-    * [description]
+    * Returns `true` if the body is static, otherwise `false` for a dynamic body.
     */
   def isStatic(): Boolean
   /**
-    * [description]
-    * @param value [description]
+    * Changes the physics body to be either static `true` or dynamic `false`.
+    * @param value `true` to set the body as being static, or `false` to make it dynamic.
     */
   def setStatic(value: Boolean): GameObject
 }

@@ -19,8 +19,8 @@ object reduce extends js.Object {
     */
   def apply[T](
     promisesOrValues: js.Array[_],
-    reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise[T]],
+    reduceFunc: js.Function3[/* reduction */ T, /* value */ js.Any, /* index */ Double, T | Promise_[T]],
     initialValue: T
-  ): Promise[T] = js.native
+  ): Promise_[T] = js.native
 }
 

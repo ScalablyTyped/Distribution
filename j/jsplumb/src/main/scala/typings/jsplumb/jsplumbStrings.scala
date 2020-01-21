@@ -1,9 +1,9 @@
 package typings.jsplumb
 
-import typings.jsplumb.jsplumbMod.AnchorId
-import typings.jsplumb.jsplumbMod.OverlayId
-import typings.jsplumb.jsplumbMod._ConnectorId
-import typings.jsplumb.jsplumbMod._EndpointId
+import typings.jsplumb.mod.AnchorId
+import typings.jsplumb.mod.OverlayId
+import typings.jsplumb.mod._ConnectorId
+import typings.jsplumb.mod._EndpointId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

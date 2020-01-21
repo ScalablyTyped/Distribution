@@ -1,6 +1,6 @@
 package typings.dojo.dojox.editor.plugins
 
-import typings.dojo.dijit._editor._Plugin
+import typings.dojo.dijit._editor.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.editor.plugins.AutoUrlLink")
 @js.native
-class AutoUrlLink () extends _Plugin {
+class AutoUrlLink () extends Plugin {
   def this(args: js.Object) = this()
 }
 

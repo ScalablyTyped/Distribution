@@ -1,7 +1,7 @@
 package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.Anon_Groups
+import typings.ckeditor.AnonGroups
 import typings.ckeditor.CKEDITOR.config.styleObject
 import typings.ckeditor.CKEDITOR.dom.element
 import typings.ckeditor.CKEDITOR.editor.eventObject
@@ -15,7 +15,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://docs.com/ckeditor4/latest/api/CKEDITOR_config.html
-@JSName("config")
 trait config_ extends js.Object {
   var allowedContent: js.UndefOr[Boolean | allowedContentRules] = js.undefined
   var autoEmbed_widget: js.UndefOr[String | (js.Function1[/* url */ String, String])] = js.undefined
@@ -256,7 +255,7 @@ trait config_ extends js.Object {
   var templates_files: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var templates_replaceContent: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[String | Boolean] = js.undefined
-  var toolbar: js.UndefOr[String | (js.Array[String | js.Array[String] | Anon_Groups]) | Null] = js.undefined
+  var toolbar: js.UndefOr[String | (js.Array[String | js.Array[String] | AnonGroups]) | Null] = js.undefined
   var toolbarCanCollapse: js.UndefOr[Boolean] = js.undefined
   var toolbarGroupCycling: js.UndefOr[Boolean] = js.undefined
   var toolbarGroups: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.toolbarGroups | String]] = js.undefined
@@ -511,7 +510,7 @@ object config_ {
     templates_files: StringDictionary[js.Any] = null,
     templates_replaceContent: js.UndefOr[Boolean] = js.undefined,
     title: String | Boolean = null,
-    toolbar: String | (js.Array[String | js.Array[String] | Anon_Groups]) = null,
+    toolbar: String | (js.Array[String | js.Array[String] | AnonGroups]) = null,
     toolbarCanCollapse: js.UndefOr[Boolean] = js.undefined,
     toolbarGroupCycling: js.UndefOr[Boolean] = js.undefined,
     toolbarGroups: js.Array[toolbarGroups | String] = null,

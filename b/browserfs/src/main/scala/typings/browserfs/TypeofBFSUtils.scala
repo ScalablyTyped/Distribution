@@ -1,9 +1,9 @@
 package typings.browserfs
 
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSOneArgCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystem
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemConstructor
-import typings.browserfs.distNodeCoreUtilMod.Arrayish
+import typings.browserfs.fileSystemMod.BFSOneArgCallback
+import typings.browserfs.fileSystemMod.FileSystem
+import typings.browserfs.fileSystemMod.FileSystemConstructor
+import typings.browserfs.utilMod.Arrayish
 import typings.node.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array

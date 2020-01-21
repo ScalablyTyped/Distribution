@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.dijit._Widget
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.dijit.Widget
+import typings.dojo.dijit.WidgetBase
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +46,7 @@ class LongListMixin () extends js.Object {
     * @param widget
     * @param insertIndex               Optional
     */
-  def addChild(widget: _Widget, insertIndex: Double): Unit = js.native
+  def addChild(widget: Widget, insertIndex: Double): Unit = js.native
   /**
     * Overrides dojox.mobile._StoreListMixin when the list is a store list.
     *
@@ -66,7 +66,7 @@ class LongListMixin () extends js.Object {
     *
     * @param widget
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
   /**
     *
     */

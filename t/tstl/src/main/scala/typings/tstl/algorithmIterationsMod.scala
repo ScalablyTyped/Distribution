@@ -1,113 +1,93 @@
 package typings.tstl
 
-import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.utilityPairMod.Pair
+import typings.tstl.binaryPredicatorMod.BinaryPredicator
+import typings.tstl.comparatorMod.Comparator
+import typings.tstl.iforwardcontainerMod.IForwardContainer
+import typings.tstl.iforwardcontainerMod.IForwardContainer.IteratorType
+import typings.tstl.iforwardcontainerMod.IForwardContainer.ValueType
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.pairMod.Pair
+import typings.tstl.unaryPredicatorMod.UnaryPredicator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl/algorithm/iterations", JSImport.Namespace)
+@JSImport("tstl/ranges/algorithm/iterations", JSImport.Namespace)
 @js.native
 object algorithmIterationsMod extends js.Object {
-  def adjacent_find[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator): InputIterator = js.native
-  def adjacent_find[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function2[/* x */ ValueType[InputIterator], /* y */ ValueType[InputIterator], Boolean]
-  ): InputIterator = js.native
-  def all_of[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean]
+  @JSName("adjacent_find")
+  def adjacentFind[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range): IteratorType[Range] = js.native
+  @JSName("adjacent_find")
+  def adjacentFind[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: Comparator[ValueType[Range], ValueType[Range]]): IteratorType[Range] = js.native
+  @JSName("all_of")
+  def allOf[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): Boolean = js.native
+  @JSName("any_of")
+  def anyOf[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): Boolean = js.native
+  def count[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, `val`: ValueType[Range]): Double = js.native
+  @JSName("count_if")
+  def countIf[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): Double = js.native
+  def equal[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: js.Array[ValueType[Range1]]): Boolean = js.native
+  def equal[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]]): Boolean = js.native
+  def equal[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: Range2, pred: BinaryPredicatorInferrer[Range1, Range2]): Boolean = js.native
+  def find[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, `val`: ValueType[Range]): IteratorType[Range] = js.native
+  @JSName("find_end")
+  def findEnd[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: js.Array[ValueType[Range1]]): IteratorType[Range1] = js.native
+  @JSName("find_end")
+  def findEnd[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]]): IteratorType[Range1] = js.native
+  @JSName("find_end")
+  def findEnd[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: Range2, pred: BinaryPredicatorInferrer[Range1, Range2]): IteratorType[Range1] = js.native
+  @JSName("find_first_of")
+  def findFirstOf[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: js.Array[ValueType[Range1]]): IteratorType[Range1] = js.native
+  @JSName("find_first_of")
+  def findFirstOf[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]]): IteratorType[Range1] = js.native
+  @JSName("find_first_of")
+  def findFirstOf[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: Range2, pred: BinaryPredicatorInferrer[Range1, Range2]): IteratorType[Range1] = js.native
+  @JSName("find_if")
+  def findIf[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): IteratorType[Range] = js.native
+  @JSName("find_if_not")
+  def findIfNot[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): IteratorType[Range] = js.native
+  @JSName("for_each")
+  def forEach[Range /* <: js.Array[_] | IForwardContainer[_] */, Func /* <: js.Function1[/* val */ ValueType[Range], _] */](range: Range, fn: Func): Func = js.native
+  @JSName("for_each_n")
+  def forEachN[Range /* <: js.Array[_] | IForwardContainer[_] */, Func /* <: js.Function1[/* val */ ValueType[Range], _] */](range: Range, n: Double, fn: Func): IteratorType[Range] = js.native
+  @JSName("lexicographical_compare")
+  def lexicographicalCompare[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: js.Array[ValueType[Range1]]): Boolean = js.native
+  @JSName("lexicographical_compare")
+  def lexicographicalCompare[Range1 /* <: js.Array[_] | IForwardContainer[_] */](
+    range1: Range1,
+    range2: js.Array[ValueType[Range1]],
+    comp: BinaryPredicatorInferrer[Range1, Range1]
   ): Boolean = js.native
-  def any_of[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean]
+  @JSName("lexicographical_compare")
+  def lexicographicalCompare[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]]): Boolean = js.native
+  @JSName("lexicographical_compare")
+  def lexicographicalCompare[Range1 /* <: js.Array[_] | IForwardContainer[_] */](
+    range1: Range1,
+    range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]],
+    comp: BinaryPredicatorInferrer[Range1, Range1]
   ): Boolean = js.native
-  def count[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator, `val`: ValueType[InputIterator]): Double = js.native
-  def count_if[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean]
-  ): Double = js.native
-  def equal[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */](first1: InputIterator1, last1: InputIterator1, first2: InputIterator2): Boolean = js.native
-  def equal[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator2], InputIterator2] */](
-    first1: InputIterator1,
-    last1: InputIterator1,
-    first2: InputIterator2,
-    pred: js.Function2[/* x */ ValueType[InputIterator1], /* y */ ValueType[InputIterator2], Boolean]
-  ): Boolean = js.native
-  def find[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](first: InputIterator, last: InputIterator, `val`: ValueType[InputIterator]): InputIterator = js.native
-  def find_end[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator1], Iterator2] */](first1: Iterator1, last1: Iterator1, first2: Iterator2, last2: Iterator2): Iterator1 = js.native
-  def find_end[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator2], Iterator2] */](
-    first1: Iterator1,
-    last1: Iterator1,
-    first2: Iterator2,
-    last2: Iterator2,
-    pred: js.Function2[/* x */ ValueType[Iterator1], /* y */ ValueType[Iterator2], Boolean]
-  ): Iterator1 = js.native
-  def find_first_of[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator1], Iterator2] */](first1: Iterator1, last1: Iterator1, first2: Iterator2, last2: Iterator2): Iterator1 = js.native
-  def find_first_of[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator2], Iterator2] */](
-    first1: Iterator1,
-    last1: Iterator1,
-    first2: Iterator2,
-    last2: Iterator2,
-    pred: js.Function2[/* x */ ValueType[Iterator1], /* y */ ValueType[Iterator2], Boolean]
-  ): Iterator1 = js.native
-  def find_if[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean]
-  ): InputIterator = js.native
-  def find_if_not[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean]
-  ): InputIterator = js.native
-  def for_each[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, Func /* <: js.Function1[/* val */ ValueType[InputIterator], _] */](first: InputIterator, last: InputIterator, fn: Func): Func = js.native
-  def for_each_n[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, Func /* <: js.Function1[/* val */ ValueType[InputIterator], _] */](first: InputIterator, n: Double, fn: Func): InputIterator = js.native
-  def lexicographical_compare[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator1], Iterator2] */](first1: Iterator1, last1: Iterator1, first2: Iterator2, last2: Iterator2): Boolean = js.native
-  def lexicographical_compare[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator1], Iterator2] */](
-    first1: Iterator1,
-    last1: Iterator1,
-    first2: Iterator2,
-    last2: Iterator2,
-    comp: js.Function2[/* x */ ValueType[Iterator1], /* y */ ValueType[Iterator1], Boolean]
-  ): Boolean = js.native
-  def mismatch[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator1], Iterator2] */](first1: Iterator1, last1: Iterator1, first2: Iterator2): Pair[Iterator1, Iterator2] = js.native
-  def mismatch[Iterator1 /* <: IForwardIterator[ValueType[Iterator1], Iterator1] */, Iterator2 /* <: IForwardIterator[ValueType[Iterator2], Iterator2] */](
-    first1: Iterator1,
-    last1: Iterator1,
-    first2: Iterator2,
-    pred: js.Function2[/* x */ ValueType[Iterator1], /* y */ ValueType[Iterator2], Boolean]
-  ): Pair[Iterator1, Iterator2] = js.native
-  def none_of[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */](
-    first: InputIterator,
-    last: InputIterator,
-    pred: js.Function1[/* val */ ValueType[InputIterator], Boolean]
-  ): Boolean = js.native
-  def search[ForwardIterator1 /* <: IForwardIterator[ValueType[ForwardIterator1], ForwardIterator1] */, ForwardIterator2 /* <: IForwardIterator[ValueType[ForwardIterator1], ForwardIterator2] */](
-    first1: ForwardIterator1,
-    last1: ForwardIterator1,
-    first2: ForwardIterator2,
-    last2: ForwardIterator2
-  ): ForwardIterator1 = js.native
-  def search[ForwardIterator1 /* <: IForwardIterator[ValueType[ForwardIterator1], ForwardIterator1] */, ForwardIterator2 /* <: IForwardIterator[ValueType[ForwardIterator2], ForwardIterator2] */](
-    first1: ForwardIterator1,
-    last1: ForwardIterator1,
-    first2: ForwardIterator2,
-    last2: ForwardIterator2,
-    pred: js.Function2[/* x */ ValueType[ForwardIterator1], /* y */ ValueType[ForwardIterator2], Boolean]
-  ): ForwardIterator1 = js.native
-  def search_n[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](first: ForwardIterator, last: ForwardIterator, count: Double, `val`: ValueType[ForwardIterator]): ForwardIterator = js.native
-  def search_n[ForwardIterator /* <: IForwardIterator[ValueType[ForwardIterator], ForwardIterator] */](
-    first: ForwardIterator,
-    last: ForwardIterator,
+  def mismatch[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: js.Array[ValueType[Range1]]): Pair[IteratorType[Range1], IteratorType[js.Array[ValueType[Range1]]]] = js.native
+  def mismatch[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]]): Pair[
+    IteratorType[Range1], 
+    IteratorType[IForwardContainer[IForwardIterator[ValueType[Range1], _]]]
+  ] = js.native
+  def mismatch[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] */](range1: Range1, range2: Range2): Pair[IteratorType[Range1], IteratorType[Range2]] = js.native
+  def mismatch[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: Range2, pred: BinaryPredicatorInferrer[Range1, Range2]): Pair[IteratorType[Range1], IteratorType[Range2]] = js.native
+  @JSName("none_of")
+  def noneOf[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, pred: UnaryPredicator[ValueType[Range]]): Boolean = js.native
+  def search[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: js.Array[ValueType[Range1]]): IteratorType[Range1] = js.native
+  def search[Range1 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: IForwardContainer[IForwardIterator[ValueType[Range1], _]]): IteratorType[Range1] = js.native
+  def search[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] */](range1: Range1, range2: Range2): IteratorType[Range1] = js.native
+  def search[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */](range1: Range1, range2: Range2, pred: BinaryPredicatorInferrer[Range1, Range2]): IteratorType[Range1] = js.native
+  @JSName("search_n")
+  def searchN[Range /* <: js.Array[_] | IForwardContainer[_] */](range: Range, count: Double, `val`: ValueType[Range]): IteratorType[Range] = js.native
+  @JSName("search_n")
+  def searchN[Range /* <: js.Array[_] | IForwardContainer[_] */](
+    range: Range,
     count: Double,
-    `val`: ValueType[ForwardIterator],
-    pred: js.Function2[/* x */ ValueType[ForwardIterator], /* y */ ValueType[ForwardIterator], Boolean]
-  ): ForwardIterator = js.native
+    `val`: ValueType[Range],
+    pred: Comparator[ValueType[Range], ValueType[Range]]
+  ): IteratorType[Range] = js.native
+  type BinaryPredicatorInferrer[Range1 /* <: js.Array[_] | IForwardContainer[_] */, Range2 /* <: js.Array[_] | IForwardContainer[_] */] = BinaryPredicator[ValueType[Range1], ValueType[Range2]]
 }
 

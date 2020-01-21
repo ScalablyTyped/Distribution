@@ -1,7 +1,7 @@
 package typings.ionic.definitionsMod
 
-import typings.atIonicCliDashFramework.definitionsMod.CommandLineInputs
-import typings.atIonicCliDashFramework.definitionsMod.CommandLineOptions
+import typings.ionicCliFramework.definitionsMod.CommandLineInputs
+import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

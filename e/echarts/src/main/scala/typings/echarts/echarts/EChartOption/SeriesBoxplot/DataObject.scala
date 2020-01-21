@@ -1,8 +1,8 @@
 package typings.echarts.echarts.EChartOption.SeriesBoxplot
 
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_ItemStyleAnonBorderColorBorderType
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonItemStyleAnonBorderColorBorderType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,11 +11,11 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-boxplot.data.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleAnonBorderColorBorderType] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleAnonBorderColorBorderType] = js.undefined
   /**
     * @see https://echarts.apache.org/en/option.html#series-boxplot.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * Name of data item.
     *
@@ -29,7 +29,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-boxplot.data.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * Value of data item.
     *
@@ -47,10 +47,10 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: Anon_ItemStyleAnonBorderColorBorderType = null,
-    itemStyle: Anon_BorderColorBorderType = null,
+    emphasis: AnonItemStyleAnonBorderColorBorderType = null,
+    itemStyle: AnonBorderColorBorderType = null,
     name: String = null,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     value: js.Array[_] = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

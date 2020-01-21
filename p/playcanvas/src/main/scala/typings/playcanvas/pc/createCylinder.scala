@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_CapSegments
+import typings.playcanvas.AnonCapSegments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,6 @@ object createCylinder extends js.Object {
     * @returns {pc.Mesh} A new cylinder-shaped mesh.
     */
   def apply(device: GraphicsDevice): Mesh = js.native
-  def apply(device: GraphicsDevice, opts: Anon_CapSegments): Mesh = js.native
+  def apply(device: GraphicsDevice, opts: AnonCapSegments): Mesh = js.native
 }
 

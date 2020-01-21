@@ -1,13 +1,13 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.durationIn
 import typings.dojo.dojoStrings.durationOut
 import typings.dojo.dojoStrings.properties
 import typings.dojo.dojoStrings.style
 import typings.dojo.dojoStrings.units
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.widget.FisheyeLite")
 @js.native
-class FisheyeLite protected () extends _WidgetBase {
+class FisheyeLite protected () extends WidgetBase {
   def this(props: js.Any, node: js.Any) = this()
   /**
     * The time (in ms) the run the show animation
@@ -105,7 +105,7 @@ class FisheyeLite protected () extends _WidgetBase {
     *
     * @param e
     */
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event_): Unit = js.native
   /**
     * stub function fired when Fisheye Item is fully visible and
     * hovered. connect or override use.
@@ -143,7 +143,7 @@ class FisheyeLite protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_durationOut(
     property: durationOut,
@@ -153,7 +153,7 @@ class FisheyeLite protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_properties(
     property: properties,
@@ -163,7 +163,7 @@ class FisheyeLite protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_units(
     property: units,
@@ -173,6 +173,6 @@ class FisheyeLite protected () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

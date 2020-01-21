@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object checkoutMod {
-  type Checkout = Checkout_
+  type Checkout = typings.nodegit.checkoutMod.Checkout_
 }

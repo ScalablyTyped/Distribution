@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "protractor"
-version := "5.4.2-21db52"
+version := "5.4.2-85080d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-6b4ddf",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
-  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-e03f45",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20191216Z-952b88",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "webdriver-js-extender" % "2.1.0-700e9c")
+  "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-0f7276",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-890e43",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20191216Z-2aefb6",
+  "org.scalablytyped" %%% "std" % "3.7-96076c",
+  "org.scalablytyped" %%% "webdriver-js-extender" % "2.1.0-cbbdf7")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

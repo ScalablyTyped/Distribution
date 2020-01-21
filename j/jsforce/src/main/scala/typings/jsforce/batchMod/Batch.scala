@@ -1,7 +1,7 @@
 package typings.jsforce.batchMod
 
-import typings.jsforce.recordDashResultMod.RecordResult
 import typings.jsforce.recordMod.Record
+import typings.jsforce.recordResultMod.RecordResult
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import typings.std.Error

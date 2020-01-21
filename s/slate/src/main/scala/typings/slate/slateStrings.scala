@@ -1,6 +1,6 @@
 package typings.slate
 
-import typings.slate.slateMod.ErrorCode
+import typings.slate.mod.ErrorCode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

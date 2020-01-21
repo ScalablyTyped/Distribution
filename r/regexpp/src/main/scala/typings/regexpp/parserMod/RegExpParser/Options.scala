@@ -1,6 +1,6 @@
 package typings.regexpp.parserMod.RegExpParser
 
-import typings.regexpp.ecmaDashVersionsMod.EcmaVersion
+import typings.regexpp.ecmaVersionsMod.EcmaVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

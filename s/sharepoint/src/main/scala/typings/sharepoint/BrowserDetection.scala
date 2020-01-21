@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("BrowserDetection")
 @js.native
 object BrowserDetection extends js.Object {
-  val browseris: Browseris = js.native
+  val browseris: Browseris_ = js.native
 }
 

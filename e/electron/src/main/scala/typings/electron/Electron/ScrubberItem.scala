@@ -9,7 +9,7 @@ trait ScrubberItem extends js.Object {
   /**
     * The image to appear in this item.
     */
-  var icon: js.UndefOr[NativeImage] = js.undefined
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   /**
     * The text to appear in this item.
     */
@@ -18,7 +18,7 @@ trait ScrubberItem extends js.Object {
 
 object ScrubberItem {
   @scala.inline
-  def apply(icon: NativeImage = null, label: String = null): ScrubberItem = {
+  def apply(icon: NativeImage_ = null, label: String = null): ScrubberItem = {
     val __obj = js.Dynamic.literal()
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])

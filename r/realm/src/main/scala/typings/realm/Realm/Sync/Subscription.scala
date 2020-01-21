@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 class Subscription () extends js.Object {
   val error: String = js.native
   val state: SubscriptionState = js.native
-  def addListener(subscruptionCallback: SubscriptionNotificationCallback): Unit = js.native
+  def addListener(subscriptionCallback: SubscriptionNotificationCallback): Unit = js.native
   def removeAllListeners(): Unit = js.native
-  def removeListener(subscruptionCallback: SubscriptionNotificationCallback): Unit = js.native
+  def removeListener(subscriptionCallback: SubscriptionNotificationCallback): Unit = js.native
   def unsubscribe(): Unit = js.native
 }
 

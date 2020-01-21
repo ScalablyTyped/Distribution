@@ -1,7 +1,7 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.three.threeMod.PropertyBinding.Composite
+import typings.three.mod.PropertyBinding.Composite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ trait TypeofPropertyBinding extends js.Object {
   var Composite: Instantiable2[
     /* targetGroup */ js.Any, 
     /* path */ js.Any, 
-    typings.three.threeMod.PropertyBinding.Composite
+    typings.three.mod.PropertyBinding.Composite
   ]
 }
 

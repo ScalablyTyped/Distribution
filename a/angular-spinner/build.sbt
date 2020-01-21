@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-spinner"
-version := "0.5.1-dt-20190322Z-d499cb"
+version := "0.5.1-dt-20190322Z-d34794"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Atlas
+import typings.playcanvas.AnonAtlas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Sprite protected () extends EventHandler {
   def this(device: GraphicsDevice) = this()
-  def this(device: GraphicsDevice, options: Anon_Atlas) = this()
+  def this(device: GraphicsDevice, options: AnonAtlas) = this()
   /**
     * The texture atlas.
     */

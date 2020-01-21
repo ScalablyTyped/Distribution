@@ -1,6 +1,6 @@
 package typings.qtip2.QTip2
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,15 +23,15 @@ trait Events extends js.Object {
 object Events {
   @scala.inline
   def apply(
-    blur: (/* event */ Event, /* api */ Api) => Unit = null,
-    focus: (/* event */ Event, /* api */ Api) => Unit = null,
-    hidden: (/* event */ Event, /* api */ Api) => Unit = null,
-    hide: (/* event */ Event, /* api */ Api) => Unit = null,
-    move: (/* event */ Event, /* api */ Api) => Unit = null,
-    render: (/* event */ Event, /* api */ Api) => Unit = null,
-    show: (/* event */ Event, /* api */ Api) => Unit = null,
-    toggle: (/* event */ Event, /* api */ Api) => Unit = null,
-    visible: (/* event */ Event, /* api */ Api) => Unit = null
+    blur: (/* event */ Event_, /* api */ Api) => Unit = null,
+    focus: (/* event */ Event_, /* api */ Api) => Unit = null,
+    hidden: (/* event */ Event_, /* api */ Api) => Unit = null,
+    hide: (/* event */ Event_, /* api */ Api) => Unit = null,
+    move: (/* event */ Event_, /* api */ Api) => Unit = null,
+    render: (/* event */ Event_, /* api */ Api) => Unit = null,
+    show: (/* event */ Event_, /* api */ Api) => Unit = null,
+    toggle: (/* event */ Event_, /* api */ Api) => Unit = null,
+    visible: (/* event */ Event_, /* api */ Api) => Unit = null
   ): Events = {
     val __obj = js.Dynamic.literal()
     if (blur != null) __obj.updateDynamic("blur")(js.Any.fromFunction2(blur))

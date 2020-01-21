@@ -6,265 +6,265 @@ import scala.scalajs.js.annotation._
 
 trait reactstrapProps {
   @scala.inline
-  def AlertProps: typings.reactstrap.libAlertMod.AlertProps.type = typings.reactstrap.libAlertMod.AlertProps
-  type AlertProps = typings.reactstrap.libAlertMod.AlertProps
+  def AlertProps: typings.reactstrap.alertMod.AlertProps.type = typings.reactstrap.alertMod.AlertProps
+  type AlertProps = typings.reactstrap.alertMod.AlertProps
   @scala.inline
-  def BadgeProps: typings.reactstrap.libBadgeMod.BadgeProps.type = typings.reactstrap.libBadgeMod.BadgeProps
-  type BadgeProps = typings.reactstrap.libBadgeMod.BadgeProps
+  def BadgeProps: typings.reactstrap.badgeMod.BadgeProps.type = typings.reactstrap.badgeMod.BadgeProps
+  type BadgeProps = typings.reactstrap.badgeMod.BadgeProps
   @scala.inline
-  def BreadcrumbProps: typings.reactstrap.libBreadcrumbMod.BreadcrumbProps.type = typings.reactstrap.libBreadcrumbMod.BreadcrumbProps
-  type BreadcrumbProps = typings.reactstrap.libBreadcrumbMod.BreadcrumbProps
+  def BreadcrumbProps: typings.reactstrap.breadcrumbMod.BreadcrumbProps.type = typings.reactstrap.breadcrumbMod.BreadcrumbProps
+  type BreadcrumbProps = typings.reactstrap.breadcrumbMod.BreadcrumbProps
   @scala.inline
-  def BreadcrumbItemProps: typings.reactstrap.libBreadcrumbItemMod.BreadcrumbItemProps.type = typings.reactstrap.libBreadcrumbItemMod.BreadcrumbItemProps
-  type BreadcrumbItemProps = typings.reactstrap.libBreadcrumbItemMod.BreadcrumbItemProps
+  def BreadcrumbItemProps: typings.reactstrap.breadcrumbItemMod.BreadcrumbItemProps.type = typings.reactstrap.breadcrumbItemMod.BreadcrumbItemProps
+  type BreadcrumbItemProps = typings.reactstrap.breadcrumbItemMod.BreadcrumbItemProps
   @scala.inline
-  def ButtonProps: typings.reactstrap.libButtonMod.ButtonProps.type = typings.reactstrap.libButtonMod.ButtonProps
-  type ButtonProps = typings.reactstrap.libButtonMod.ButtonProps
+  def ButtonProps: typings.reactstrap.buttonMod.ButtonProps.type = typings.reactstrap.buttonMod.ButtonProps
+  type ButtonProps = typings.reactstrap.buttonMod.ButtonProps
   @scala.inline
-  def ButtonDropdownProps: typings.reactstrap.libDropdownMod.DropdownProps.type = typings.reactstrap.libDropdownMod.DropdownProps
-  type ButtonDropdownProps = typings.reactstrap.libDropdownMod.DropdownProps
+  def ButtonDropdownProps: typings.reactstrap.dropdownMod.DropdownProps.type = typings.reactstrap.dropdownMod.DropdownProps
+  type ButtonDropdownProps = typings.reactstrap.dropdownMod.DropdownProps
   @scala.inline
-  def ButtonGroupProps: typings.reactstrap.libButtonGroupMod.ButtonGroupProps.type = typings.reactstrap.libButtonGroupMod.ButtonGroupProps
-  type ButtonGroupProps = typings.reactstrap.libButtonGroupMod.ButtonGroupProps
+  def ButtonGroupProps: typings.reactstrap.buttonGroupMod.ButtonGroupProps.type = typings.reactstrap.buttonGroupMod.ButtonGroupProps
+  type ButtonGroupProps = typings.reactstrap.buttonGroupMod.ButtonGroupProps
   @scala.inline
-  def ButtonToggleProps: typings.reactstrap.libButtonToggleMod.ButtonToggleProps.type = typings.reactstrap.libButtonToggleMod.ButtonToggleProps
-  type ButtonToggleProps = typings.reactstrap.libButtonToggleMod.ButtonToggleProps
+  def ButtonToggleProps: typings.reactstrap.buttonToggleMod.ButtonToggleProps.type = typings.reactstrap.buttonToggleMod.ButtonToggleProps
+  type ButtonToggleProps = typings.reactstrap.buttonToggleMod.ButtonToggleProps
   @scala.inline
-  def ButtonToolbarProps: typings.reactstrap.libButtonToolbarMod.ButtonToolbarProps.type = typings.reactstrap.libButtonToolbarMod.ButtonToolbarProps
-  type ButtonToolbarProps = typings.reactstrap.libButtonToolbarMod.ButtonToolbarProps
+  def ButtonToolbarProps: typings.reactstrap.buttonToolbarMod.ButtonToolbarProps.type = typings.reactstrap.buttonToolbarMod.ButtonToolbarProps
+  type ButtonToolbarProps = typings.reactstrap.buttonToolbarMod.ButtonToolbarProps
   @scala.inline
-  def CardProps: typings.reactstrap.libCardMod.CardProps.type = typings.reactstrap.libCardMod.CardProps
-  type CardProps = typings.reactstrap.libCardMod.CardProps
+  def CardProps: typings.reactstrap.cardMod.CardProps.type = typings.reactstrap.cardMod.CardProps
+  type CardProps = typings.reactstrap.cardMod.CardProps
   @scala.inline
-  def CardBodyProps: typings.reactstrap.libCardBodyMod.CardBodyProps.type = typings.reactstrap.libCardBodyMod.CardBodyProps
-  type CardBodyProps = typings.reactstrap.libCardBodyMod.CardBodyProps
+  def CardBodyProps: typings.reactstrap.cardBodyMod.CardBodyProps.type = typings.reactstrap.cardBodyMod.CardBodyProps
+  type CardBodyProps = typings.reactstrap.cardBodyMod.CardBodyProps
   @scala.inline
-  def CardColumnsProps: typings.reactstrap.libCardColumnsMod.CardColumnsProps.type = typings.reactstrap.libCardColumnsMod.CardColumnsProps
-  type CardColumnsProps = typings.reactstrap.libCardColumnsMod.CardColumnsProps
+  def CardColumnsProps: typings.reactstrap.cardColumnsMod.CardColumnsProps.type = typings.reactstrap.cardColumnsMod.CardColumnsProps
+  type CardColumnsProps = typings.reactstrap.cardColumnsMod.CardColumnsProps
   @scala.inline
-  def CardDeckProps: typings.reactstrap.libCardDeckMod.CardDeckProps.type = typings.reactstrap.libCardDeckMod.CardDeckProps
-  type CardDeckProps = typings.reactstrap.libCardDeckMod.CardDeckProps
+  def CardDeckProps: typings.reactstrap.cardDeckMod.CardDeckProps.type = typings.reactstrap.cardDeckMod.CardDeckProps
+  type CardDeckProps = typings.reactstrap.cardDeckMod.CardDeckProps
   @scala.inline
-  def CardFooterProps: typings.reactstrap.libCardFooterMod.CardFooterProps.type = typings.reactstrap.libCardFooterMod.CardFooterProps
-  type CardFooterProps = typings.reactstrap.libCardFooterMod.CardFooterProps
+  def CardFooterProps: typings.reactstrap.cardFooterMod.CardFooterProps.type = typings.reactstrap.cardFooterMod.CardFooterProps
+  type CardFooterProps = typings.reactstrap.cardFooterMod.CardFooterProps
   @scala.inline
-  def CardGroupProps: typings.reactstrap.libCardGroupMod.CardGroupProps.type = typings.reactstrap.libCardGroupMod.CardGroupProps
-  type CardGroupProps = typings.reactstrap.libCardGroupMod.CardGroupProps
+  def CardGroupProps: typings.reactstrap.cardGroupMod.CardGroupProps.type = typings.reactstrap.cardGroupMod.CardGroupProps
+  type CardGroupProps = typings.reactstrap.cardGroupMod.CardGroupProps
   @scala.inline
-  def CardHeaderProps: typings.reactstrap.libCardHeaderMod.CardHeaderProps.type = typings.reactstrap.libCardHeaderMod.CardHeaderProps
-  type CardHeaderProps = typings.reactstrap.libCardHeaderMod.CardHeaderProps
+  def CardHeaderProps: typings.reactstrap.cardHeaderMod.CardHeaderProps.type = typings.reactstrap.cardHeaderMod.CardHeaderProps
+  type CardHeaderProps = typings.reactstrap.cardHeaderMod.CardHeaderProps
   @scala.inline
-  def CardImgProps: typings.reactstrap.libCardImgMod.CardImgProps.type = typings.reactstrap.libCardImgMod.CardImgProps
-  type CardImgProps = typings.reactstrap.libCardImgMod.CardImgProps
+  def CardImgProps: typings.reactstrap.cardImgMod.CardImgProps.type = typings.reactstrap.cardImgMod.CardImgProps
+  type CardImgProps = typings.reactstrap.cardImgMod.CardImgProps
   @scala.inline
-  def CardImgOverlayProps: typings.reactstrap.libCardImgOverlayMod.CardImgOverlayProps.type = typings.reactstrap.libCardImgOverlayMod.CardImgOverlayProps
-  type CardImgOverlayProps = typings.reactstrap.libCardImgOverlayMod.CardImgOverlayProps
+  def CardImgOverlayProps: typings.reactstrap.cardImgOverlayMod.CardImgOverlayProps.type = typings.reactstrap.cardImgOverlayMod.CardImgOverlayProps
+  type CardImgOverlayProps = typings.reactstrap.cardImgOverlayMod.CardImgOverlayProps
   @scala.inline
-  def CardLinkProps: typings.reactstrap.libCardLinkMod.CardLinkProps.type = typings.reactstrap.libCardLinkMod.CardLinkProps
-  type CardLinkProps = typings.reactstrap.libCardLinkMod.CardLinkProps
+  def CardLinkProps: typings.reactstrap.cardLinkMod.CardLinkProps.type = typings.reactstrap.cardLinkMod.CardLinkProps
+  type CardLinkProps = typings.reactstrap.cardLinkMod.CardLinkProps
   @scala.inline
-  def CardSubtitleProps: typings.reactstrap.libCardSubtitleMod.CardSubtitleProps.type = typings.reactstrap.libCardSubtitleMod.CardSubtitleProps
-  type CardSubtitleProps = typings.reactstrap.libCardSubtitleMod.CardSubtitleProps
+  def CardSubtitleProps: typings.reactstrap.cardSubtitleMod.CardSubtitleProps.type = typings.reactstrap.cardSubtitleMod.CardSubtitleProps
+  type CardSubtitleProps = typings.reactstrap.cardSubtitleMod.CardSubtitleProps
   @scala.inline
-  def CardTextProps: typings.reactstrap.libCardTextMod.CardTextProps.type = typings.reactstrap.libCardTextMod.CardTextProps
-  type CardTextProps = typings.reactstrap.libCardTextMod.CardTextProps
+  def CardTextProps: typings.reactstrap.cardTextMod.CardTextProps.type = typings.reactstrap.cardTextMod.CardTextProps
+  type CardTextProps = typings.reactstrap.cardTextMod.CardTextProps
   @scala.inline
-  def CardTitleProps: typings.reactstrap.libCardTitleMod.CardTitleProps.type = typings.reactstrap.libCardTitleMod.CardTitleProps
-  type CardTitleProps = typings.reactstrap.libCardTitleMod.CardTitleProps
+  def CardTitleProps: typings.reactstrap.cardTitleMod.CardTitleProps.type = typings.reactstrap.cardTitleMod.CardTitleProps
+  type CardTitleProps = typings.reactstrap.cardTitleMod.CardTitleProps
   @scala.inline
-  def CarouselProps: typings.reactstrap.libCarouselMod.CarouselProps.type = typings.reactstrap.libCarouselMod.CarouselProps
-  type CarouselProps = typings.reactstrap.libCarouselMod.CarouselProps
+  def CarouselProps: typings.reactstrap.carouselMod.CarouselProps.type = typings.reactstrap.carouselMod.CarouselProps
+  type CarouselProps = typings.reactstrap.carouselMod.CarouselProps
   @scala.inline
-  def CarouselCaptionProps: typings.reactstrap.libCarouselCaptionMod.CarouselCaptionProps.type = typings.reactstrap.libCarouselCaptionMod.CarouselCaptionProps
-  type CarouselCaptionProps = typings.reactstrap.libCarouselCaptionMod.CarouselCaptionProps
+  def CarouselCaptionProps: typings.reactstrap.carouselCaptionMod.CarouselCaptionProps.type = typings.reactstrap.carouselCaptionMod.CarouselCaptionProps
+  type CarouselCaptionProps = typings.reactstrap.carouselCaptionMod.CarouselCaptionProps
   @scala.inline
-  def CarouselControlProps: typings.reactstrap.libCarouselControlMod.CarouselControlProps.type = typings.reactstrap.libCarouselControlMod.CarouselControlProps
-  type CarouselControlProps = typings.reactstrap.libCarouselControlMod.CarouselControlProps
+  def CarouselControlProps: typings.reactstrap.carouselControlMod.CarouselControlProps.type = typings.reactstrap.carouselControlMod.CarouselControlProps
+  type CarouselControlProps = typings.reactstrap.carouselControlMod.CarouselControlProps
   @scala.inline
-  def CarouselIndicatorsProps: typings.reactstrap.libCarouselIndicatorsMod.CarouselIndicatorsProps.type = typings.reactstrap.libCarouselIndicatorsMod.CarouselIndicatorsProps
-  type CarouselIndicatorsProps = typings.reactstrap.libCarouselIndicatorsMod.CarouselIndicatorsProps
+  def CarouselIndicatorsProps: typings.reactstrap.carouselIndicatorsMod.CarouselIndicatorsProps.type = typings.reactstrap.carouselIndicatorsMod.CarouselIndicatorsProps
+  type CarouselIndicatorsProps = typings.reactstrap.carouselIndicatorsMod.CarouselIndicatorsProps
   @scala.inline
-  def CarouselItemProps: typings.reactstrap.libCarouselItemMod.CarouselItemProps.type = typings.reactstrap.libCarouselItemMod.CarouselItemProps
-  type CarouselItemProps = typings.reactstrap.libCarouselItemMod.CarouselItemProps
+  def CarouselItemProps: typings.reactstrap.carouselItemMod.CarouselItemProps.type = typings.reactstrap.carouselItemMod.CarouselItemProps
+  type CarouselItemProps = typings.reactstrap.carouselItemMod.CarouselItemProps
   @scala.inline
-  def ColProps: typings.reactstrap.libColMod.ColProps.type = typings.reactstrap.libColMod.ColProps
-  type ColProps = typings.reactstrap.libColMod.ColProps
+  def ColProps: typings.reactstrap.colMod.ColProps.type = typings.reactstrap.colMod.ColProps
+  type ColProps = typings.reactstrap.colMod.ColProps
   @scala.inline
-  def CollapseProps: typings.reactstrap.libCollapseMod.CollapseProps.type = typings.reactstrap.libCollapseMod.CollapseProps
-  type CollapseProps = typings.reactstrap.libCollapseMod.CollapseProps
+  def CollapseProps: typings.reactstrap.collapseMod.CollapseProps.type = typings.reactstrap.collapseMod.CollapseProps
+  type CollapseProps = typings.reactstrap.collapseMod.CollapseProps
   @scala.inline
-  def ContainerProps: typings.reactstrap.libContainerMod.ContainerProps.type = typings.reactstrap.libContainerMod.ContainerProps
-  type ContainerProps = typings.reactstrap.libContainerMod.ContainerProps
+  def ContainerProps: typings.reactstrap.containerMod.ContainerProps.type = typings.reactstrap.containerMod.ContainerProps
+  type ContainerProps = typings.reactstrap.containerMod.ContainerProps
   @scala.inline
-  def CustomInputProps: typings.reactstrap.libCustomInputMod.CustomInputProps.type = typings.reactstrap.libCustomInputMod.CustomInputProps
-  type CustomInputProps = typings.reactstrap.libCustomInputMod.CustomInputProps
+  def CustomInputProps: typings.reactstrap.customInputMod.CustomInputProps.type = typings.reactstrap.customInputMod.CustomInputProps
+  type CustomInputProps = typings.reactstrap.customInputMod.CustomInputProps
   @scala.inline
-  def DropdownProps: typings.reactstrap.libDropdownMod.DropdownProps.type = typings.reactstrap.libDropdownMod.DropdownProps
-  type DropdownProps = typings.reactstrap.libDropdownMod.DropdownProps
+  def DropdownProps: typings.reactstrap.dropdownMod.DropdownProps.type = typings.reactstrap.dropdownMod.DropdownProps
+  type DropdownProps = typings.reactstrap.dropdownMod.DropdownProps
   @scala.inline
-  def DropdownItemProps: typings.reactstrap.libDropdownItemMod.DropdownItemProps.type = typings.reactstrap.libDropdownItemMod.DropdownItemProps
-  type DropdownItemProps = typings.reactstrap.libDropdownItemMod.DropdownItemProps
+  def DropdownItemProps: typings.reactstrap.dropdownItemMod.DropdownItemProps.type = typings.reactstrap.dropdownItemMod.DropdownItemProps
+  type DropdownItemProps = typings.reactstrap.dropdownItemMod.DropdownItemProps
   @scala.inline
-  def DropdownMenuProps: typings.reactstrap.libDropdownMenuMod.DropdownMenuProps.type = typings.reactstrap.libDropdownMenuMod.DropdownMenuProps
-  type DropdownMenuProps = typings.reactstrap.libDropdownMenuMod.DropdownMenuProps
+  def DropdownMenuProps: typings.reactstrap.dropdownMenuMod.DropdownMenuProps.type = typings.reactstrap.dropdownMenuMod.DropdownMenuProps
+  type DropdownMenuProps = typings.reactstrap.dropdownMenuMod.DropdownMenuProps
   @scala.inline
-  def DropdownToggleProps: typings.reactstrap.libDropdownToggleMod.DropdownToggleProps.type = typings.reactstrap.libDropdownToggleMod.DropdownToggleProps
-  type DropdownToggleProps = typings.reactstrap.libDropdownToggleMod.DropdownToggleProps
+  def DropdownToggleProps: typings.reactstrap.dropdownToggleMod.DropdownToggleProps.type = typings.reactstrap.dropdownToggleMod.DropdownToggleProps
+  type DropdownToggleProps = typings.reactstrap.dropdownToggleMod.DropdownToggleProps
   @scala.inline
-  def FadeProps: typings.reactstrap.libFadeMod.FadeProps.type = typings.reactstrap.libFadeMod.FadeProps
-  type FadeProps = typings.reactstrap.libFadeMod.FadeProps
+  def FadeProps: typings.reactstrap.fadeMod.FadeProps.type = typings.reactstrap.fadeMod.FadeProps
+  type FadeProps = typings.reactstrap.fadeMod.FadeProps
   @scala.inline
-  def FormProps: typings.reactstrap.libFormMod.FormProps.type = typings.reactstrap.libFormMod.FormProps
-  type FormProps = typings.reactstrap.libFormMod.FormProps
+  def FormProps: typings.reactstrap.formMod.FormProps.type = typings.reactstrap.formMod.FormProps
+  type FormProps = typings.reactstrap.formMod.FormProps
   @scala.inline
-  def FormFeedbackProps: typings.reactstrap.libFormFeedbackMod.FormFeedbackProps.type = typings.reactstrap.libFormFeedbackMod.FormFeedbackProps
-  type FormFeedbackProps = typings.reactstrap.libFormFeedbackMod.FormFeedbackProps
+  def FormFeedbackProps: typings.reactstrap.formFeedbackMod.FormFeedbackProps.type = typings.reactstrap.formFeedbackMod.FormFeedbackProps
+  type FormFeedbackProps = typings.reactstrap.formFeedbackMod.FormFeedbackProps
   @scala.inline
-  def FormGroupProps: typings.reactstrap.libFormGroupMod.FormGroupProps.type = typings.reactstrap.libFormGroupMod.FormGroupProps
-  type FormGroupProps = typings.reactstrap.libFormGroupMod.FormGroupProps
+  def FormGroupProps: typings.reactstrap.formGroupMod.FormGroupProps.type = typings.reactstrap.formGroupMod.FormGroupProps
+  type FormGroupProps = typings.reactstrap.formGroupMod.FormGroupProps
   @scala.inline
-  def FormTextProps: typings.reactstrap.libFormTextMod.FormTextProps.type = typings.reactstrap.libFormTextMod.FormTextProps
-  type FormTextProps = typings.reactstrap.libFormTextMod.FormTextProps
+  def FormTextProps: typings.reactstrap.formTextMod.FormTextProps.type = typings.reactstrap.formTextMod.FormTextProps
+  type FormTextProps = typings.reactstrap.formTextMod.FormTextProps
   @scala.inline
-  def InputProps: typings.reactstrap.libInputMod.InputProps.type = typings.reactstrap.libInputMod.InputProps
-  type InputProps = typings.reactstrap.libInputMod.InputProps
+  def InputProps: typings.reactstrap.inputMod.InputProps.type = typings.reactstrap.inputMod.InputProps
+  type InputProps = typings.reactstrap.inputMod.InputProps
   @scala.inline
-  def InputGroupProps: typings.reactstrap.libInputGroupMod.InputGroupProps.type = typings.reactstrap.libInputGroupMod.InputGroupProps
-  type InputGroupProps = typings.reactstrap.libInputGroupMod.InputGroupProps
+  def InputGroupProps: typings.reactstrap.inputGroupMod.InputGroupProps.type = typings.reactstrap.inputGroupMod.InputGroupProps
+  type InputGroupProps = typings.reactstrap.inputGroupMod.InputGroupProps
   @scala.inline
-  def InputGroupAddonProps: typings.reactstrap.libInputGroupAddonMod.InputGroupAddonProps.type = typings.reactstrap.libInputGroupAddonMod.InputGroupAddonProps
-  type InputGroupAddonProps = typings.reactstrap.libInputGroupAddonMod.InputGroupAddonProps
+  def InputGroupAddonProps: typings.reactstrap.inputGroupAddonMod.InputGroupAddonProps.type = typings.reactstrap.inputGroupAddonMod.InputGroupAddonProps
+  type InputGroupAddonProps = typings.reactstrap.inputGroupAddonMod.InputGroupAddonProps
   @scala.inline
-  def InputGroupButtonDropdownProps: typings.reactstrap.libInputGroupButtonDropdownMod.InputGroupButtonDropdownProps.type = typings.reactstrap.libInputGroupButtonDropdownMod.InputGroupButtonDropdownProps
-  type InputGroupButtonDropdownProps = typings.reactstrap.libInputGroupButtonDropdownMod.InputGroupButtonDropdownProps
+  def InputGroupButtonDropdownProps: typings.reactstrap.inputGroupButtonDropdownMod.InputGroupButtonDropdownProps.type = typings.reactstrap.inputGroupButtonDropdownMod.InputGroupButtonDropdownProps
+  type InputGroupButtonDropdownProps = typings.reactstrap.inputGroupButtonDropdownMod.InputGroupButtonDropdownProps
   @scala.inline
-  def InputGroupTextProps: typings.reactstrap.libInputGroupTextMod.InputGroupTextProps.type = typings.reactstrap.libInputGroupTextMod.InputGroupTextProps
-  type InputGroupTextProps = typings.reactstrap.libInputGroupTextMod.InputGroupTextProps
+  def InputGroupTextProps: typings.reactstrap.inputGroupTextMod.InputGroupTextProps.type = typings.reactstrap.inputGroupTextMod.InputGroupTextProps
+  type InputGroupTextProps = typings.reactstrap.inputGroupTextMod.InputGroupTextProps
   @scala.inline
-  def JumbotronProps: typings.reactstrap.libJumbotronMod.JumbotronProps.type = typings.reactstrap.libJumbotronMod.JumbotronProps
-  type JumbotronProps = typings.reactstrap.libJumbotronMod.JumbotronProps
+  def JumbotronProps: typings.reactstrap.jumbotronMod.JumbotronProps.type = typings.reactstrap.jumbotronMod.JumbotronProps
+  type JumbotronProps = typings.reactstrap.jumbotronMod.JumbotronProps
   @scala.inline
-  def LabelProps: typings.reactstrap.libLabelMod.LabelProps.type = typings.reactstrap.libLabelMod.LabelProps
-  type LabelProps = typings.reactstrap.libLabelMod.LabelProps
+  def LabelProps: typings.reactstrap.labelMod.LabelProps.type = typings.reactstrap.labelMod.LabelProps
+  type LabelProps = typings.reactstrap.labelMod.LabelProps
   @scala.inline
-  def ListGroupProps: typings.reactstrap.libListGroupMod.ListGroupProps.type = typings.reactstrap.libListGroupMod.ListGroupProps
-  type ListGroupProps = typings.reactstrap.libListGroupMod.ListGroupProps
+  def ListGroupProps: typings.reactstrap.listGroupMod.ListGroupProps.type = typings.reactstrap.listGroupMod.ListGroupProps
+  type ListGroupProps = typings.reactstrap.listGroupMod.ListGroupProps
   @scala.inline
-  def ListGroupItemProps: typings.reactstrap.libListGroupItemMod.ListGroupItemProps.type = typings.reactstrap.libListGroupItemMod.ListGroupItemProps
-  type ListGroupItemProps = typings.reactstrap.libListGroupItemMod.ListGroupItemProps
+  def ListGroupItemProps: typings.reactstrap.listGroupItemMod.ListGroupItemProps.type = typings.reactstrap.listGroupItemMod.ListGroupItemProps
+  type ListGroupItemProps = typings.reactstrap.listGroupItemMod.ListGroupItemProps
   @scala.inline
-  def ListGroupItemHeadingProps: typings.reactstrap.libListGroupItemHeadingMod.ListGroupItemHeadingProps.type = typings.reactstrap.libListGroupItemHeadingMod.ListGroupItemHeadingProps
-  type ListGroupItemHeadingProps = typings.reactstrap.libListGroupItemHeadingMod.ListGroupItemHeadingProps
+  def ListGroupItemHeadingProps: typings.reactstrap.listGroupItemHeadingMod.ListGroupItemHeadingProps.type = typings.reactstrap.listGroupItemHeadingMod.ListGroupItemHeadingProps
+  type ListGroupItemHeadingProps = typings.reactstrap.listGroupItemHeadingMod.ListGroupItemHeadingProps
   @scala.inline
-  def ListGroupItemTextProps: typings.reactstrap.libListGroupItemTextMod.ListGroupItemTextProps.type = typings.reactstrap.libListGroupItemTextMod.ListGroupItemTextProps
-  type ListGroupItemTextProps = typings.reactstrap.libListGroupItemTextMod.ListGroupItemTextProps
+  def ListGroupItemTextProps: typings.reactstrap.listGroupItemTextMod.ListGroupItemTextProps.type = typings.reactstrap.listGroupItemTextMod.ListGroupItemTextProps
+  type ListGroupItemTextProps = typings.reactstrap.listGroupItemTextMod.ListGroupItemTextProps
   @scala.inline
-  def MediaProps: typings.reactstrap.libMediaMod.MediaProps.type = typings.reactstrap.libMediaMod.MediaProps
-  type MediaProps = typings.reactstrap.libMediaMod.MediaProps
+  def MediaProps: typings.reactstrap.mediaMod.MediaProps.type = typings.reactstrap.mediaMod.MediaProps
+  type MediaProps = typings.reactstrap.mediaMod.MediaProps
   @scala.inline
-  def ModalProps: typings.reactstrap.libModalMod.ModalProps.type = typings.reactstrap.libModalMod.ModalProps
-  type ModalProps = typings.reactstrap.libModalMod.ModalProps
+  def ModalProps: typings.reactstrap.modalMod.ModalProps.type = typings.reactstrap.modalMod.ModalProps
+  type ModalProps = typings.reactstrap.modalMod.ModalProps
   @scala.inline
-  def ModalBodyProps: typings.reactstrap.libModalBodyMod.ModalBodyProps.type = typings.reactstrap.libModalBodyMod.ModalBodyProps
-  type ModalBodyProps = typings.reactstrap.libModalBodyMod.ModalBodyProps
+  def ModalBodyProps: typings.reactstrap.modalBodyMod.ModalBodyProps.type = typings.reactstrap.modalBodyMod.ModalBodyProps
+  type ModalBodyProps = typings.reactstrap.modalBodyMod.ModalBodyProps
   @scala.inline
-  def ModalFooterProps: typings.reactstrap.libModalFooterMod.ModalFooterProps.type = typings.reactstrap.libModalFooterMod.ModalFooterProps
-  type ModalFooterProps = typings.reactstrap.libModalFooterMod.ModalFooterProps
+  def ModalFooterProps: typings.reactstrap.modalFooterMod.ModalFooterProps.type = typings.reactstrap.modalFooterMod.ModalFooterProps
+  type ModalFooterProps = typings.reactstrap.modalFooterMod.ModalFooterProps
   @scala.inline
-  def ModalHeaderProps: typings.reactstrap.libModalHeaderMod.ModalHeaderProps.type = typings.reactstrap.libModalHeaderMod.ModalHeaderProps
-  type ModalHeaderProps = typings.reactstrap.libModalHeaderMod.ModalHeaderProps
+  def ModalHeaderProps: typings.reactstrap.modalHeaderMod.ModalHeaderProps.type = typings.reactstrap.modalHeaderMod.ModalHeaderProps
+  type ModalHeaderProps = typings.reactstrap.modalHeaderMod.ModalHeaderProps
   @scala.inline
-  def NavProps: typings.reactstrap.libNavMod.NavProps.type = typings.reactstrap.libNavMod.NavProps
-  type NavProps = typings.reactstrap.libNavMod.NavProps
+  def NavProps: typings.reactstrap.navMod.NavProps.type = typings.reactstrap.navMod.NavProps
+  type NavProps = typings.reactstrap.navMod.NavProps
   @scala.inline
-  def NavItemProps: typings.reactstrap.libNavItemMod.NavItemProps.type = typings.reactstrap.libNavItemMod.NavItemProps
-  type NavItemProps = typings.reactstrap.libNavItemMod.NavItemProps
+  def NavItemProps: typings.reactstrap.navItemMod.NavItemProps.type = typings.reactstrap.navItemMod.NavItemProps
+  type NavItemProps = typings.reactstrap.navItemMod.NavItemProps
   @scala.inline
-  def NavLinkProps: typings.reactstrap.libNavLinkMod.NavLinkProps.type = typings.reactstrap.libNavLinkMod.NavLinkProps
-  type NavLinkProps = typings.reactstrap.libNavLinkMod.NavLinkProps
+  def NavLinkProps: typings.reactstrap.navLinkMod.NavLinkProps.type = typings.reactstrap.navLinkMod.NavLinkProps
+  type NavLinkProps = typings.reactstrap.navLinkMod.NavLinkProps
   @scala.inline
-  def NavbarProps: typings.reactstrap.libNavbarMod.NavbarProps.type = typings.reactstrap.libNavbarMod.NavbarProps
-  type NavbarProps = typings.reactstrap.libNavbarMod.NavbarProps
+  def NavbarProps: typings.reactstrap.navbarMod.NavbarProps.type = typings.reactstrap.navbarMod.NavbarProps
+  type NavbarProps = typings.reactstrap.navbarMod.NavbarProps
   @scala.inline
-  def NavbarBrandProps: typings.reactstrap.libNavbarBrandMod.NavbarBrandProps.type = typings.reactstrap.libNavbarBrandMod.NavbarBrandProps
-  type NavbarBrandProps = typings.reactstrap.libNavbarBrandMod.NavbarBrandProps
+  def NavbarBrandProps: typings.reactstrap.navbarBrandMod.NavbarBrandProps.type = typings.reactstrap.navbarBrandMod.NavbarBrandProps
+  type NavbarBrandProps = typings.reactstrap.navbarBrandMod.NavbarBrandProps
   @scala.inline
-  def NavbarTextProps: typings.reactstrap.libNavbarTextMod.NavbarTextProps.type = typings.reactstrap.libNavbarTextMod.NavbarTextProps
-  type NavbarTextProps = typings.reactstrap.libNavbarTextMod.NavbarTextProps
+  def NavbarTextProps: typings.reactstrap.navbarTextMod.NavbarTextProps.type = typings.reactstrap.navbarTextMod.NavbarTextProps
+  type NavbarTextProps = typings.reactstrap.navbarTextMod.NavbarTextProps
   @scala.inline
-  def NavbarTogglerProps: typings.reactstrap.libNavbarTogglerMod.NavbarTogglerProps.type = typings.reactstrap.libNavbarTogglerMod.NavbarTogglerProps
-  type NavbarTogglerProps = typings.reactstrap.libNavbarTogglerMod.NavbarTogglerProps
+  def NavbarTogglerProps: typings.reactstrap.navbarTogglerMod.NavbarTogglerProps.type = typings.reactstrap.navbarTogglerMod.NavbarTogglerProps
+  type NavbarTogglerProps = typings.reactstrap.navbarTogglerMod.NavbarTogglerProps
   @scala.inline
-  def PaginationProps: typings.reactstrap.libPaginationMod.PaginationProps.type = typings.reactstrap.libPaginationMod.PaginationProps
-  type PaginationProps = typings.reactstrap.libPaginationMod.PaginationProps
+  def PaginationProps: typings.reactstrap.paginationMod.PaginationProps.type = typings.reactstrap.paginationMod.PaginationProps
+  type PaginationProps = typings.reactstrap.paginationMod.PaginationProps
   @scala.inline
-  def PaginationItemProps: typings.reactstrap.libPaginationItemMod.PaginationItemProps.type = typings.reactstrap.libPaginationItemMod.PaginationItemProps
-  type PaginationItemProps = typings.reactstrap.libPaginationItemMod.PaginationItemProps
+  def PaginationItemProps: typings.reactstrap.paginationItemMod.PaginationItemProps.type = typings.reactstrap.paginationItemMod.PaginationItemProps
+  type PaginationItemProps = typings.reactstrap.paginationItemMod.PaginationItemProps
   @scala.inline
-  def PaginationLinkProps: typings.reactstrap.libPaginationLinkMod.PaginationLinkProps.type = typings.reactstrap.libPaginationLinkMod.PaginationLinkProps
-  type PaginationLinkProps = typings.reactstrap.libPaginationLinkMod.PaginationLinkProps
+  def PaginationLinkProps: typings.reactstrap.paginationLinkMod.PaginationLinkProps.type = typings.reactstrap.paginationLinkMod.PaginationLinkProps
+  type PaginationLinkProps = typings.reactstrap.paginationLinkMod.PaginationLinkProps
   @scala.inline
-  def PopoverProps: typings.reactstrap.libPopoverMod.PopoverProps.type = typings.reactstrap.libPopoverMod.PopoverProps
-  type PopoverProps = typings.reactstrap.libPopoverMod.PopoverProps
+  def PopoverProps: typings.reactstrap.popoverMod.PopoverProps.type = typings.reactstrap.popoverMod.PopoverProps
+  type PopoverProps = typings.reactstrap.popoverMod.PopoverProps
   @scala.inline
-  def PopoverBodyProps: typings.reactstrap.libPopoverBodyMod.PopoverBodyProps.type = typings.reactstrap.libPopoverBodyMod.PopoverBodyProps
-  type PopoverBodyProps = typings.reactstrap.libPopoverBodyMod.PopoverBodyProps
+  def PopoverBodyProps: typings.reactstrap.popoverBodyMod.PopoverBodyProps.type = typings.reactstrap.popoverBodyMod.PopoverBodyProps
+  type PopoverBodyProps = typings.reactstrap.popoverBodyMod.PopoverBodyProps
   @scala.inline
-  def PopoverHeaderProps: typings.reactstrap.libPopoverHeaderMod.PopoverHeaderProps.type = typings.reactstrap.libPopoverHeaderMod.PopoverHeaderProps
-  type PopoverHeaderProps = typings.reactstrap.libPopoverHeaderMod.PopoverHeaderProps
+  def PopoverHeaderProps: typings.reactstrap.popoverHeaderMod.PopoverHeaderProps.type = typings.reactstrap.popoverHeaderMod.PopoverHeaderProps
+  type PopoverHeaderProps = typings.reactstrap.popoverHeaderMod.PopoverHeaderProps
   @scala.inline
-  def ProgressProps: typings.reactstrap.libProgressMod.ProgressProps.type = typings.reactstrap.libProgressMod.ProgressProps
-  type ProgressProps = typings.reactstrap.libProgressMod.ProgressProps
+  def ProgressProps: typings.reactstrap.progressMod.ProgressProps.type = typings.reactstrap.progressMod.ProgressProps
+  type ProgressProps = typings.reactstrap.progressMod.ProgressProps
   @scala.inline
-  def RowProps: typings.reactstrap.libRowMod.RowProps.type = typings.reactstrap.libRowMod.RowProps
-  type RowProps = typings.reactstrap.libRowMod.RowProps
+  def RowProps: typings.reactstrap.rowMod.RowProps.type = typings.reactstrap.rowMod.RowProps
+  type RowProps = typings.reactstrap.rowMod.RowProps
   @scala.inline
-  def SpinnerProps: typings.reactstrap.libSpinnerMod.SpinnerProps.type = typings.reactstrap.libSpinnerMod.SpinnerProps
-  type SpinnerProps = typings.reactstrap.libSpinnerMod.SpinnerProps
+  def SpinnerProps: typings.reactstrap.spinnerMod.SpinnerProps.type = typings.reactstrap.spinnerMod.SpinnerProps
+  type SpinnerProps = typings.reactstrap.spinnerMod.SpinnerProps
   @scala.inline
-  def TabContentProps: typings.reactstrap.libTabContentMod.TabContentProps.type = typings.reactstrap.libTabContentMod.TabContentProps
-  type TabContentProps = typings.reactstrap.libTabContentMod.TabContentProps
+  def TabContentProps: typings.reactstrap.tabContentMod.TabContentProps.type = typings.reactstrap.tabContentMod.TabContentProps
+  type TabContentProps = typings.reactstrap.tabContentMod.TabContentProps
   @scala.inline
-  def TabPaneProps: typings.reactstrap.libTabPaneMod.TabPaneProps.type = typings.reactstrap.libTabPaneMod.TabPaneProps
-  type TabPaneProps = typings.reactstrap.libTabPaneMod.TabPaneProps
+  def TabPaneProps: typings.reactstrap.tabPaneMod.TabPaneProps.type = typings.reactstrap.tabPaneMod.TabPaneProps
+  type TabPaneProps = typings.reactstrap.tabPaneMod.TabPaneProps
   @scala.inline
-  def TableProps: typings.reactstrap.libTableMod.TableProps.type = typings.reactstrap.libTableMod.TableProps
-  type TableProps = typings.reactstrap.libTableMod.TableProps
+  def TableProps: typings.reactstrap.tableMod.TableProps.type = typings.reactstrap.tableMod.TableProps
+  type TableProps = typings.reactstrap.tableMod.TableProps
   @scala.inline
-  def TagProps: typings.reactstrap.libTagMod.TagProps.type = typings.reactstrap.libTagMod.TagProps
-  type TagProps = typings.reactstrap.libTagMod.TagProps
+  def TagProps: typings.reactstrap.tagMod.TagProps.type = typings.reactstrap.tagMod.TagProps
+  type TagProps = typings.reactstrap.tagMod.TagProps
   @scala.inline
-  def ToastProps: typings.reactstrap.libToastMod.ToastProps.type = typings.reactstrap.libToastMod.ToastProps
-  type ToastProps = typings.reactstrap.libToastMod.ToastProps
+  def ToastProps: typings.reactstrap.toastMod.ToastProps.type = typings.reactstrap.toastMod.ToastProps
+  type ToastProps = typings.reactstrap.toastMod.ToastProps
   @scala.inline
-  def ToastBodyProps: typings.reactstrap.libToastBodyMod.ToastBodyProps.type = typings.reactstrap.libToastBodyMod.ToastBodyProps
-  type ToastBodyProps = typings.reactstrap.libToastBodyMod.ToastBodyProps
+  def ToastBodyProps: typings.reactstrap.toastBodyMod.ToastBodyProps.type = typings.reactstrap.toastBodyMod.ToastBodyProps
+  type ToastBodyProps = typings.reactstrap.toastBodyMod.ToastBodyProps
   @scala.inline
-  def ToastHeaderProps: typings.reactstrap.libToastHeaderMod.ToastHeaderProps.type = typings.reactstrap.libToastHeaderMod.ToastHeaderProps
-  type ToastHeaderProps = typings.reactstrap.libToastHeaderMod.ToastHeaderProps
+  def ToastHeaderProps: typings.reactstrap.toastHeaderMod.ToastHeaderProps.type = typings.reactstrap.toastHeaderMod.ToastHeaderProps
+  type ToastHeaderProps = typings.reactstrap.toastHeaderMod.ToastHeaderProps
   @scala.inline
-  def TooltipProps: typings.reactstrap.libTooltipMod.TooltipProps.type = typings.reactstrap.libTooltipMod.TooltipProps
-  type TooltipProps = typings.reactstrap.libTooltipMod.TooltipProps
+  def TooltipProps: typings.reactstrap.tooltipMod.TooltipProps.type = typings.reactstrap.tooltipMod.TooltipProps
+  type TooltipProps = typings.reactstrap.tooltipMod.TooltipProps
   @scala.inline
-  def UncontrolledAlertProps: typings.reactstrap.libAlertMod.UncontrolledAlertProps.type = typings.reactstrap.libAlertMod.UncontrolledAlertProps
-  type UncontrolledAlertProps = typings.reactstrap.libAlertMod.UncontrolledAlertProps
+  def UncontrolledAlertProps: typings.reactstrap.alertMod.UncontrolledAlertProps.type = typings.reactstrap.alertMod.UncontrolledAlertProps
+  type UncontrolledAlertProps = typings.reactstrap.alertMod.UncontrolledAlertProps
   @scala.inline
-  def UncontrolledButtonDropdownProps: typings.reactstrap.libDropdownMod.UncontrolledDropdownProps.type = typings.reactstrap.libDropdownMod.UncontrolledDropdownProps
-  type UncontrolledButtonDropdownProps = typings.reactstrap.libDropdownMod.UncontrolledDropdownProps
+  def UncontrolledButtonDropdownProps: typings.reactstrap.dropdownMod.UncontrolledDropdownProps.type = typings.reactstrap.dropdownMod.UncontrolledDropdownProps
+  type UncontrolledButtonDropdownProps = typings.reactstrap.dropdownMod.UncontrolledDropdownProps
   @scala.inline
-  def UncontrolledCarouselProps: typings.reactstrap.libCarouselMod.UncontrolledCarouselProps.type = typings.reactstrap.libCarouselMod.UncontrolledCarouselProps
-  type UncontrolledCarouselProps = typings.reactstrap.libCarouselMod.UncontrolledCarouselProps
+  def UncontrolledCarouselProps: typings.reactstrap.carouselMod.UncontrolledCarouselProps.type = typings.reactstrap.carouselMod.UncontrolledCarouselProps
+  type UncontrolledCarouselProps = typings.reactstrap.carouselMod.UncontrolledCarouselProps
   @scala.inline
-  def UncontrolledCollapseProps: typings.reactstrap.libCollapseMod.UncontrolledCollapseProps.type = typings.reactstrap.libCollapseMod.UncontrolledCollapseProps
-  type UncontrolledCollapseProps = typings.reactstrap.libCollapseMod.UncontrolledCollapseProps
+  def UncontrolledCollapseProps: typings.reactstrap.collapseMod.UncontrolledCollapseProps.type = typings.reactstrap.collapseMod.UncontrolledCollapseProps
+  type UncontrolledCollapseProps = typings.reactstrap.collapseMod.UncontrolledCollapseProps
   @scala.inline
-  def UncontrolledDropdownProps: typings.reactstrap.libDropdownMod.UncontrolledDropdownProps.type = typings.reactstrap.libDropdownMod.UncontrolledDropdownProps
-  type UncontrolledDropdownProps = typings.reactstrap.libDropdownMod.UncontrolledDropdownProps
+  def UncontrolledDropdownProps: typings.reactstrap.dropdownMod.UncontrolledDropdownProps.type = typings.reactstrap.dropdownMod.UncontrolledDropdownProps
+  type UncontrolledDropdownProps = typings.reactstrap.dropdownMod.UncontrolledDropdownProps
   @scala.inline
-  def UncontrolledPopoverProps: typings.reactstrap.libPopoverMod.UncontrolledPopoverProps.type = typings.reactstrap.libPopoverMod.UncontrolledPopoverProps
-  type UncontrolledPopoverProps = typings.reactstrap.libPopoverMod.UncontrolledPopoverProps
+  def UncontrolledPopoverProps: typings.reactstrap.popoverMod.UncontrolledPopoverProps.type = typings.reactstrap.popoverMod.UncontrolledPopoverProps
+  type UncontrolledPopoverProps = typings.reactstrap.popoverMod.UncontrolledPopoverProps
   @scala.inline
-  def UncontrolledTooltipProps: typings.reactstrap.libTooltipMod.UncontrolledTooltipProps.type = typings.reactstrap.libTooltipMod.UncontrolledTooltipProps
-  type UncontrolledTooltipProps = typings.reactstrap.libTooltipMod.UncontrolledTooltipProps
+  def UncontrolledTooltipProps: typings.reactstrap.tooltipMod.UncontrolledTooltipProps.type = typings.reactstrap.tooltipMod.UncontrolledTooltipProps
+  type UncontrolledTooltipProps = typings.reactstrap.tooltipMod.UncontrolledTooltipProps
 }
 

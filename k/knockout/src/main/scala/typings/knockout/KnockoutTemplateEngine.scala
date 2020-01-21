@@ -1,6 +1,6 @@
 package typings.knockout
 
-import typings.std.Document
+import typings.std.Document_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KnockoutTemplateEngine extends js.Object {
   def createJavaScriptEvaluatorBlock(script: String): String = js.native
-  def isTemplateRewritten(template: js.Any, templateDocument: Document): Boolean = js.native
+  def isTemplateRewritten(template: js.Any, templateDocument: Document_): Boolean = js.native
   def makeTemplateSource(template: js.Any): js.Any = js.native
-  def makeTemplateSource(template: js.Any, templateDocument: Document): js.Any = js.native
+  def makeTemplateSource(template: js.Any, templateDocument: Document_): js.Any = js.native
   def renderTemplate(
     template: js.Any,
     bindingContext: KnockoutBindingContext,
     options: js.Object,
-    templateDocument: Document
+    templateDocument: Document_
   ): js.Any = js.native
-  def rewriteTemplate(template: js.Any, rewriterCallback: js.Function, templateDocument: Document): Unit = js.native
+  def rewriteTemplate(template: js.Any, rewriterCallback: js.Function, templateDocument: Document_): Unit = js.native
 }
 

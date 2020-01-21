@@ -2,7 +2,7 @@ package typings.inquirer
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.inquirer.libObjectsSeparatorMod.^
+import typings.inquirer.separatorMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

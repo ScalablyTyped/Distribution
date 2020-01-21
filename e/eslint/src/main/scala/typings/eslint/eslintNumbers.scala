@@ -1,7 +1,7 @@
 package typings.eslint
 
-import typings.eslint.eslintMod.Linter.RuleLevel
-import typings.eslint.eslintMod.Linter.Severity
+import typings.eslint.mod.Linter.RuleLevel
+import typings.eslint.mod.Linter.Severity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

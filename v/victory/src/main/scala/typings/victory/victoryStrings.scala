@@ -1,14 +1,14 @@
 package typings.victory
 
-import typings.victory.victoryMod.AnimationEasing
-import typings.victory.victoryMod.ContainerType
-import typings.victory.victoryMod.InterpolationPropType
-import typings.victory.victoryMod.OrientationTypes
-import typings.victory.victoryMod.ScalePropType
-import typings.victory.victoryMod.ScatterSymbolType
-import typings.victory.victoryMod.TextAnchorType
-import typings.victory.victoryMod.VerticalAnchorType
-import typings.victory.victoryMod._ColorScalePropType
+import typings.victory.mod.AnimationEasing
+import typings.victory.mod.ContainerType
+import typings.victory.mod.InterpolationPropType
+import typings.victory.mod.OrientationTypes
+import typings.victory.mod.ScalePropType
+import typings.victory.mod.ScatterSymbolType
+import typings.victory.mod.TextAnchorType
+import typings.victory.mod.VerticalAnchorType
+import typings.victory.mod._ColorScalePropType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -108,6 +108,9 @@ object victoryStrings {
   
   @js.native
   sealed trait cool extends _ColorScalePropType
+  
+  @js.native
+  sealed trait cornerRadius extends js.Object
   
   @js.native
   sealed trait cubic extends AnimationEasing
@@ -225,6 +228,9 @@ object victoryStrings {
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait padAngle extends js.Object
+  
+  @js.native
   sealed trait parallel extends js.Object
   
   @js.native
@@ -267,6 +273,9 @@ object victoryStrings {
   sealed trait radial extends InterpolationPropType
   
   @js.native
+  sealed trait radius extends js.Object
+  
+  @js.native
   sealed trait red extends _ColorScalePropType
   
   @js.native
@@ -286,6 +295,12 @@ object victoryStrings {
   
   @js.native
   sealed trait sinOut extends AnimationEasing
+  
+  @js.native
+  sealed trait sliceEndAngle extends js.Object
+  
+  @js.native
+  sealed trait sliceStartAngle extends js.Object
   
   @js.native
   sealed trait sqrt extends ScalePropType
@@ -409,6 +424,8 @@ object victoryStrings {
   @scala.inline
   def cool: cool = "cool".asInstanceOf[cool]
   @scala.inline
+  def cornerRadius: cornerRadius = "cornerRadius".asInstanceOf[cornerRadius]
+  @scala.inline
   def cubic: cubic = "cubic".asInstanceOf[cubic]
   @scala.inline
   def cubicIn: cubicIn = "cubicIn".asInstanceOf[cubicIn]
@@ -481,6 +498,8 @@ object victoryStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def padAngle: padAngle = "padAngle".asInstanceOf[padAngle]
+  @scala.inline
   def parallel: parallel = "parallel".asInstanceOf[parallel]
   @scala.inline
   def parent: parent = "parent".asInstanceOf[parent]
@@ -509,6 +528,8 @@ object victoryStrings {
   @scala.inline
   def radial: radial = "radial".asInstanceOf[radial]
   @scala.inline
+  def radius: radius = "radius".asInstanceOf[radius]
+  @scala.inline
   def red: red = "red".asInstanceOf[red]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
@@ -522,6 +543,10 @@ object victoryStrings {
   def sinInOut: sinInOut = "sinInOut".asInstanceOf[sinInOut]
   @scala.inline
   def sinOut: sinOut = "sinOut".asInstanceOf[sinOut]
+  @scala.inline
+  def sliceEndAngle: sliceEndAngle = "sliceEndAngle".asInstanceOf[sliceEndAngle]
+  @scala.inline
+  def sliceStartAngle: sliceStartAngle = "sliceStartAngle".asInstanceOf[sliceStartAngle]
   @scala.inline
   def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
   @scala.inline

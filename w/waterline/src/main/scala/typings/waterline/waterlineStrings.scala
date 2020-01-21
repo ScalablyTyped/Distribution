@@ -1,6 +1,6 @@
 package typings.waterline
 
-import typings.waterline.waterlineMod.AttributeType
+import typings.waterline.mod.AttributeType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

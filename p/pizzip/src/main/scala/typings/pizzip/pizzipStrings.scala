@@ -1,6 +1,6 @@
 package typings.pizzip
 
-import typings.pizzip.pizzipMod.Compression
+import typings.pizzip.mod.Compression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

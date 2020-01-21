@@ -23,12 +23,12 @@ import scala.scalajs.js.annotation._
 trait Geolocation
   extends typings.ol.objectMod.default {
   def getAccuracy(): Double = js.native
-  def getAccuracyGeometry(): typings.ol.geomPolygonMod.default = js.native
+  def getAccuracyGeometry(): typings.ol.polygonMod.default = js.native
   def getAltitude(): Double = js.native
   def getAltitudeAccuracy(): Double = js.native
   def getHeading(): Double = js.native
   def getPosition(): Coordinate = js.native
-  def getProjection(): typings.ol.projProjectionMod.default = js.native
+  def getProjection(): typings.ol.projectionMod.default = js.native
   def getSpeed(): Double = js.native
   def getTracking(): Boolean = js.native
   def getTrackingOptions(): PositionOptions = js.native

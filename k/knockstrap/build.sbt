@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "knockstrap"
-version := "0.0-unknown-dt-20190322Z-782399"
+version := "0.0-unknown-dt-20190322Z-c2f7d5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-325be5",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-f91bf5",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

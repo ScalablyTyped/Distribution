@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object embed {
-  import typings.std.HTMLElement
-
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/embed/Flash.html
     *
@@ -26,7 +24,7 @@ package object embed {
     * @param kwArgs The various arguments that will be used to help define the Flash movie.
     * @param node The node where the embed object will be placed
     */
-  type Flash = js.Function2[/* kwArgs */ js.Object, /* node */ HTMLElement, Unit]
+  type Flash = js.Function2[/* kwArgs */ js.Object, /* node */ typings.std.HTMLElement, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/embed/Quicktime.html
     *
@@ -39,5 +37,5 @@ package object embed {
     * @param kwArgs
     * @param node
     */
-  type Quicktime = js.Function2[/* kwArgs */ js.Object, /* node */ HTMLElement, Unit]
+  type Quicktime = js.Function2[/* kwArgs */ js.Object, /* node */ typings.std.HTMLElement, scala.Unit]
 }

@@ -1,7 +1,7 @@
 package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -75,22 +75,22 @@ class SettingsFlyout () extends js.Object {
     * Raised immediately after the SettingsFlyout is completely hidden.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onafterhide(eventInfo: Event): Unit = js.native
+  def onafterhide(eventInfo: Event_): Unit = js.native
   /**
     * Raised immediately after a SettingsFlyout is fully shown.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onaftershow(eventInfo: Event): Unit = js.native
+  def onaftershow(eventInfo: Event_): Unit = js.native
   /**
     * Raised just before hiding a SettingsFlyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforehide(eventInfo: Event): Unit = js.native
+  def onbeforehide(eventInfo: Event_): Unit = js.native
   /**
     * Raised just before showing a SettingsFlyout.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onbeforeshow(eventInfo: Event): Unit = js.native
+  def onbeforeshow(eventInfo: Event_): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param type The event type to unregister. It must be beforeshow, beforehide, aftershow, or afterhide.

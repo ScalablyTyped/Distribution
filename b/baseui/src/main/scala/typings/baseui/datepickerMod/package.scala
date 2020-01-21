@@ -5,24 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object datepickerMod {
-  import typings.baseui.Anon_Args
-  import typings.baseui.Anon_Ariadescribedby
-  import typings.baseui.Anon_Date
-  import typings.baseui.baseuiStrings.change_
-  import typings.baseui.baseuiStrings.mouseLeave
-  import typings.baseui.baseuiStrings.mouseOver
-  import typings.baseui.baseuiStrings.moveDown
-  import typings.baseui.baseuiStrings.moveLeft
-  import typings.baseui.baseuiStrings.moveRight
-  import typings.baseui.baseuiStrings.moveUp
-
-  type DatepickerProps = CalendarProps with Anon_Ariadescribedby
+  type DatepickerProps = typings.baseui.datepickerMod.CalendarProps with typings.baseui.AnonAriadescribedby
   type StateReducer = js.Function3[
-    /* stateType */ mouseLeave | moveRight | moveDown | moveUp | mouseOver | change_ | moveLeft, 
-    /* nextState */ ContainerState, 
-    /* currentState */ ContainerState, 
-    ContainerState
+    /* stateType */ typings.baseui.baseuiStrings.mouseLeave | typings.baseui.baseuiStrings.moveRight | typings.baseui.baseuiStrings.moveDown | typings.baseui.baseuiStrings.moveUp | typings.baseui.baseuiStrings.mouseOver | typings.baseui.baseuiStrings.change_ | typings.baseui.baseuiStrings.moveLeft, 
+    /* nextState */ typings.baseui.datepickerMod.ContainerState, 
+    /* currentState */ typings.baseui.datepickerMod.ContainerState, 
+    typings.baseui.datepickerMod.ContainerState
   ]
-  type StatefulDatepickerProps[T] = T with StatefulContainerProps[T] with Anon_Args[T]
-  type onChange = js.Function1[/* args */ Anon_Date, js.Any]
+  type StatefulDatepickerProps[T] = T with typings.baseui.datepickerMod.StatefulContainerProps[T] with typings.baseui.AnonArgs[T]
+  type onChange = js.Function1[/* args */ typings.baseui.AnonDate, js.Any]
 }

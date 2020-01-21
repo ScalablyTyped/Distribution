@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress-image-snapshot"
-version := "3.1-dt-20191227Z-90826c"
+version := "3.1-dt-20191227Z-99e836"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

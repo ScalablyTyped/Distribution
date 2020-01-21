@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CKEDITOR {
-  type config = config_
-  type dialog = dialog_
-  type editor = editor_
-  type style = style_
-  type ui = ui_
+  type config = typings.ckeditor.CKEDITOR.config_
+  type dialog = typings.ckeditor.CKEDITOR.dialog_
+  type editor = typings.ckeditor.CKEDITOR.editor_
+  type style = typings.ckeditor.CKEDITOR.style_
+  type ui = typings.ckeditor.CKEDITOR.ui_
 }

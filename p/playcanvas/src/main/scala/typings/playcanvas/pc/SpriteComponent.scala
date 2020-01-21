@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Fps
+import typings.playcanvas.AnonFps
 import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -123,7 +123,7 @@ class SpriteComponent protected () extends Component {
     * @param {Number} [data.spriteAsset] The id of the sprite asset that this clip will play.
     * @returns {pc.SpriteAnimationClip} The new clip that was added.
     */
-  def addClip(data: Anon_Fps): SpriteAnimationClip = js.native
+  def addClip(data: AnonFps): SpriteAnimationClip = js.native
   /**
     * @function
     * @name pc.SpriteComponent#clip

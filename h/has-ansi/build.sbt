@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "has-ansi"
-version := "3.0-dt-20180214Z-276c93"
+version := "3.0-dt-20180214Z-66f559"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

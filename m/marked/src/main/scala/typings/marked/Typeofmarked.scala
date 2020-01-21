@@ -2,8 +2,8 @@ package typings.marked
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.marked.markedMod.MarkedOptions
-import typings.marked.markedMod.TokensList
+import typings.marked.mod.MarkedOptions
+import typings.marked.mod.TokensList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +13,9 @@ trait Typeofmarked extends js.Object {
   var InlineLexer: TypeofClassInlineLexer = js.native
   var Lexer: TypeofClassLexer = js.native
   var Parser: TypeofClassParser = js.native
-  var Renderer: Instantiable1[js.UndefOr[/* options */ MarkedOptions], typings.marked.markedMod.Renderer] = js.native
-  var Slugger: Instantiable0[typings.marked.markedMod.Slugger] = js.native
-  var TextRenderer: Instantiable0[typings.marked.markedMod.TextRenderer] = js.native
+  var Renderer: Instantiable1[js.UndefOr[/* options */ MarkedOptions], typings.marked.mod.Renderer] = js.native
+  var Slugger: Instantiable0[typings.marked.mod.Slugger] = js.native
+  var TextRenderer: Instantiable0[typings.marked.mod.TextRenderer] = js.native
   val Tokens: js.Any = js.native
   val defaults: MarkedOptions = js.native
   /**

@@ -1,7 +1,7 @@
 package typings.sharepoint.Microsoft.SharePoint.Client.Search
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sharepoint.Anon_High
+import typings.sharepoint.AnonHigh
 import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.JsonObjectResult
@@ -19,7 +19,7 @@ object Administration extends js.Object {
     def this(context: ClientContext, site: Site) = this()
     def getCrawledUrls(
       getCountOnly: Boolean,
-      maxRows: Anon_High,
+      maxRows: AnonHigh,
       queryString: String,
       isLike: Boolean,
       contentSourceID: Double,

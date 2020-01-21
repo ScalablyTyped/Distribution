@@ -1,9 +1,9 @@
 package typings.exceljs
 
-import typings.exceljs.exceljsMod.BorderStyle
-import typings.exceljs.exceljsMod.DataValidationOperator
-import typings.exceljs.exceljsMod.FillPatterns
-import typings.exceljs.exceljsMod.WorksheetState
+import typings.exceljs.mod.BorderStyle
+import typings.exceljs.mod.DataValidationOperator
+import typings.exceljs.mod.FillPatterns
+import typings.exceljs.mod.WorksheetState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

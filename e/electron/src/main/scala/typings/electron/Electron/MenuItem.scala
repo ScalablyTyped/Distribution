@@ -14,7 +14,7 @@ class MenuItem protected () extends js.Object {
   var click: js.Function = js.native
   var commandId: Double = js.native
   var enabled: Boolean = js.native
-  var icon: NativeImage = js.native
+  var icon: NativeImage_ = js.native
   var id: String = js.native
   var label: String = js.native
   var menu: Menu = js.native

@@ -1,8 +1,8 @@
 package typings.dojo.dojox.atom
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.alertsEnabled
 import typings.dojo.dojoStrings.attachScope
 import typings.dojo.dojoStrings.contextRequire
@@ -101,7 +101,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_entryNewButton(
       property: entryNewButton,
@@ -111,7 +111,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   /**
@@ -123,12 +123,12 @@ object widget extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, getIndexOfChild, hasChildren, removeChild, removeChild
-  - typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
-  class FeedEntryViewer () extends _Widget {
+  - typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, getIndexOfChild, hasChildren, removeChild, removeChild
+  - typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
+  class FeedEntryViewer () extends Widget {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -197,7 +197,7 @@ object widget extends js.Object {
       * @param widget             
       * @param insertIndex               Optional            
       */
-    def addChild(widget: _WidgetBase): Unit = js.native
+    def addChild(widget: WidgetBase): Unit = js.native
     /**
       * Makes the given widget a child of this widget.
       * Inserts specified child widget's dom node as a child of this widget's
@@ -206,7 +206,7 @@ object widget extends js.Object {
       * @param widget
       * @param insertIndex               Optional
       */
-    def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+    def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
     /**
       * Function to clear the state of the widget.
       *
@@ -244,7 +244,7 @@ object widget extends js.Object {
       * 
       * @param child             
       */
-    def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+    def getIndexOfChild(child: WidgetBase): js.Any = js.native
     @JSName("get")
     def get_attachScope(property: attachScope): js.Object = js.native
     @JSName("get")
@@ -309,7 +309,7 @@ object widget extends js.Object {
       * 
       * @param widget             
       */
-    def removeChild(widget: _WidgetBase): Unit = js.native
+    def removeChild(widget: WidgetBase): Unit = js.native
     /**
       * Function to set the contents of the author node in the template to some value from the entry.
       * Function to set the contents of the author node in the template to some value from the entry.
@@ -498,7 +498,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_contextRequire(
       property: contextRequire,
@@ -508,7 +508,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Function], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_displayEntrySections(
       property: displayEntrySections,
@@ -518,7 +518,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableMenu(
       property: enableMenu,
@@ -528,7 +528,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableMenuFade(
       property: enableMenuFade,
@@ -538,7 +538,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_entrySelectionTopic(
       property: entrySelectionTopic,
@@ -548,7 +548,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_searchContainerNode(
       property: searchContainerNode,
@@ -558,7 +558,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templatePath(
       property: templatePath,
@@ -568,7 +568,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templateString(
       property: templateString,
@@ -578,7 +578,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_widgetsInTemplate(
       property: widgetsInTemplate,
@@ -588,7 +588,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   /**
@@ -600,12 +600,12 @@ object widget extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-  - typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, getIndexOfChild, hasChildren, removeChild, removeChild
-  - typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
-  class FeedViewer () extends _Widget {
+  - typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+  - typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, getIndexOfChild, hasChildren, removeChild, removeChild
+  - typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
+  class FeedViewer () extends Widget {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -704,7 +704,7 @@ object widget extends js.Object {
       * @param widget             
       * @param insertIndex               Optional            
       */
-    def addChild(widget: _WidgetBase): Unit = js.native
+    def addChild(widget: WidgetBase): Unit = js.native
     /**
       * Makes the given widget a child of this widget.
       * Inserts specified child widget's dom node as a child of this widget's
@@ -713,7 +713,7 @@ object widget extends js.Object {
       * @param widget
       * @param insertIndex               Optional
       */
-    def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+    def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
     /**
       * Function for appending an entry to the feed view.
       *
@@ -756,7 +756,7 @@ object widget extends js.Object {
       * 
       * @param child             
       */
-    def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+    def getIndexOfChild(child: WidgetBase): js.Any = js.native
     @JSName("get")
     def get_alertsEnabled(property: alertsEnabled): Boolean = js.native
     @JSName("get")
@@ -834,7 +834,7 @@ object widget extends js.Object {
       * 
       * @param widget             
       */
-    def removeChild(widget: _WidgetBase): Unit = js.native
+    def removeChild(widget: WidgetBase): Unit = js.native
     /**
       * Function setting the dojox.atom.io.model.Feed data into the view.
       *
@@ -884,7 +884,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_attachScope(
       property: attachScope,
@@ -894,7 +894,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_contextRequire(
       property: contextRequire,
@@ -904,7 +904,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Function], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_entrySelectionTopic(
       property: entrySelectionTopic,
@@ -914,7 +914,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_feedViewerTable(
       property: feedViewerTable,
@@ -924,7 +924,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_feedViewerTableBody(
       property: feedViewerTableBody,
@@ -934,7 +934,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_localSaveOnly(
       property: localSaveOnly,
@@ -944,7 +944,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_searchContainerNode(
       property: searchContainerNode,
@@ -954,7 +954,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templatePath(
       property: templatePath,
@@ -964,7 +964,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_templateString(
       property: templateString,
@@ -974,7 +974,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_url(
       property: url,
@@ -984,7 +984,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_widgetsInTemplate(
       property: widgetsInTemplate,
@@ -994,7 +994,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_xmethod(
       property: xmethod,
@@ -1004,7 +1004,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   @js.native
@@ -1018,12 +1018,12 @@ object widget extends js.Object {
       * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
       */
     /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, getIndexOfChild, hasChildren, removeChild, removeChild
-    - typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
-    class EntryHeader () extends _Widget {
+    - typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, getIndexOfChild, hasChildren, removeChild, removeChild
+    - typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
+    class EntryHeader () extends Widget {
       def this(params: js.Object) = this()
       def this(params: js.Object, srcNodeRef: HTMLElement) = this()
       /**
@@ -1072,7 +1072,7 @@ object widget extends js.Object {
         * @param widget             
         * @param insertIndex               Optional            
         */
-      def addChild(widget: _WidgetBase): Unit = js.native
+      def addChild(widget: WidgetBase): Unit = js.native
       /**
         * Makes the given widget a child of this widget.
         * Inserts specified child widget's dom node as a child of this widget's
@@ -1081,7 +1081,7 @@ object widget extends js.Object {
         * @param widget
         * @param insertIndex               Optional
         */
-      def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+      def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
       /**
         *
         */
@@ -1105,7 +1105,7 @@ object widget extends js.Object {
         * 
         * @param child             
         */
-      def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+      def getIndexOfChild(child: WidgetBase): js.Any = js.native
       @JSName("get")
       def get_attachScope(property: attachScope): js.Object = js.native
       @JSName("get")
@@ -1156,7 +1156,7 @@ object widget extends js.Object {
         * 
         * @param widget             
         */
-      def removeChild(widget: _WidgetBase): Unit = js.native
+      def removeChild(widget: WidgetBase): Unit = js.native
       /**
         *
         * @param title
@@ -1185,7 +1185,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_contextRequire(
         property: contextRequire,
@@ -1195,7 +1195,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Function], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_searchContainerNode(
         property: searchContainerNode,
@@ -1205,7 +1205,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[Boolean], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_templatePath(
         property: templatePath,
@@ -1215,7 +1215,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[String], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_templateString(
         property: templateString,
@@ -1225,7 +1225,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[String], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_widgetsInTemplate(
         property: widgetsInTemplate,
@@ -1235,7 +1235,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[Boolean], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
     }
     
   }
@@ -1296,11 +1296,11 @@ object widget extends js.Object {
       * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
       */
     /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
-    class FeedViewerEntry () extends _Widget {
+    - typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
+    class FeedViewerEntry () extends Widget {
       def this(params: js.Object) = this()
       def this(params: js.Object, srcNodeRef: HTMLElement) = this()
       /**
@@ -1459,7 +1459,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_contextRequire(
         property: contextRequire,
@@ -1469,7 +1469,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Function], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_deleteButton(
         property: deleteButton,
@@ -1479,7 +1479,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_entry(
         property: entry,
@@ -1489,7 +1489,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_entryNode(
         property: entryNode,
@@ -1499,7 +1499,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_feed(
         property: feed,
@@ -1509,7 +1509,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_searchContainerNode(
         property: searchContainerNode,
@@ -1519,7 +1519,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[Boolean], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_templatePath(
         property: templatePath,
@@ -1529,7 +1529,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[String], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_templateString(
         property: templateString,
@@ -1539,7 +1539,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[String], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_timeNode(
         property: timeNode,
@@ -1549,7 +1549,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_widgetsInTemplate(
         property: widgetsInTemplate,
@@ -1559,7 +1559,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[Boolean], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
     }
     
     /**
@@ -1571,11 +1571,11 @@ object widget extends js.Object {
       * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
       */
     /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-    - typings.dojo.dijit._AttachMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._TemplatedMixin because Inheritance from two classes. Inlined 
-    - typings.dojo.dijit._Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
-    class FeedViewerGrouping () extends _Widget {
+    - typings.dojo.dijit.AttachMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.TemplatedMixin because Inheritance from two classes. Inlined 
+    - typings.dojo.dijit.Templated because Inheritance from two classes. Inlined attachScope, contextRequire, searchContainerNode, templatePath, templateString, widgetsInTemplate, buildRendering, destroyRendering, startup, getCachedTemplate */ @js.native
+    class FeedViewerGrouping () extends Widget {
       def this(params: js.Object) = this()
       def this(params: js.Object, srcNodeRef: HTMLElement) = this()
       /**
@@ -1682,7 +1682,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_contextRequire(
         property: contextRequire,
@@ -1692,7 +1692,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Function], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_groupingNode(
         property: groupingNode,
@@ -1702,7 +1702,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_searchContainerNode(
         property: searchContainerNode,
@@ -1712,7 +1712,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[Boolean], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_templatePath(
         property: templatePath,
@@ -1722,7 +1722,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[String], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_templateString(
         property: templateString,
@@ -1732,7 +1732,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[String], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_titleNode(
         property: titleNode,
@@ -1742,7 +1742,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[js.Object], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
       @JSName("watch")
       def watch_widgetsInTemplate(
         property: widgetsInTemplate,
@@ -1752,7 +1752,7 @@ object widget extends js.Object {
               /* newValue */ js.UndefOr[Boolean], 
               Unit
             ]
-      ): Anon_Unwatch = js.native
+      ): AnonUnwatch = js.native
     }
     
   }

@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("LokiMemoryAdapter")
 @js.native
 class LokiMemoryAdapter () extends LokiPersistenceAdapter {
-  def this(options: Anon_AsyncResponses) = this()
-  var hashStore: StringDictionary[Anon_Lastsave] = js.native
-  var options: Anon_AsyncResponses = js.native
+  def this(options: AnonAsyncResponses) = this()
+  var hashStore: StringDictionary[AnonLastsave] = js.native
+  var options: AnonAsyncResponses = js.native
   /**
     * Deletes a database from its in-memory store.
     *

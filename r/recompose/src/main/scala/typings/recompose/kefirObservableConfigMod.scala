@@ -1,6 +1,6 @@
 package typings.recompose
 
-import typings.recompose.recomposeMod.ObservableConfig
+import typings.recompose.mod.ObservableConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

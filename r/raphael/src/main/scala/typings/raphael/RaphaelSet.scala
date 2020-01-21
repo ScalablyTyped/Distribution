@@ -102,7 +102,7 @@ trait RaphaelSet extends /* key */ NumberDictionary[RaphaelElement] {
   def getBBox(): BoundingBox = js.native
   def getBBox(isWithoutTransform: Boolean): BoundingBox = js.native
   def glow(): RaphaelSet = js.native
-  def glow(glow: Anon_Color): RaphaelSet = js.native
+  def glow(glow: AnonColor): RaphaelSet = js.native
   def hide(): RaphaelSet = js.native
   def hover(f_in: js.Function, f_out: js.Function): RaphaelSet = js.native
   def hover(f_in: js.Function, f_out: js.Function, icontext: js.Any): RaphaelSet = js.native
@@ -141,7 +141,7 @@ trait RaphaelSet extends /* key */ NumberDictionary[RaphaelElement] {
   def show(): RaphaelSet = js.native
   def splice(index: Double, count: Double): RaphaelSet = js.native
   def splice(index: Double, count: Double, insertion: RaphaelElement*): RaphaelSet = js.native
-  def status(): js.Array[Anon_Anim] = js.native
+  def status(): js.Array[AnonAnim] = js.native
   def status(anim: RaphaelAnimation): Double = js.native
   def status(anim: RaphaelAnimation, value: Double): RaphaelSet = js.native
   def stop(): RaphaelSet = js.native

@@ -1,7 +1,6 @@
 package typings.behavior3.b3
 
-import org.scalablytyped.runtime.TopLevel
-import typings.behavior3.Anon_Child
+import typings.behavior3.AnonChild
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,10 +47,6 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Decorator.
   */
 class Decorator () extends BaseNode {
-  def this(hasChildNameTitleProperties: Anon_Child) = this()
+  def this(hasChildNameTitleProperties: AnonChild) = this()
 }
-
-@JSGlobal("b3.DECORATOR")
-@js.native
-object DECORATOR extends TopLevel[String]
 

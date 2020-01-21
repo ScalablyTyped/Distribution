@@ -1,6 +1,6 @@
 package typings.valdr.valdr
 
-import typings.valdr.Anon_Invalid
+import typings.valdr.AnonInvalid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ trait Valdr extends js.Object {
     * Sets custom classes on the surrounding elements.
     * @param newClasses the new classes.
     */
-  def setClasses(newClasses: Anon_Invalid): Unit = js.native
+  def setClasses(newClasses: AnonInvalid): Unit = js.native
   /**
     * Validates the value of the given type with the constraints for the given field name.
     * @param typeName the type name.

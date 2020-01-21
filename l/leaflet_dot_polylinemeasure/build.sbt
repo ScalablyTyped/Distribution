@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_polylinemeasure"
-version := "1.0-dt-20180214Z-35929f"
+version := "1.0-dt-20180214Z-471ce3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-871c5b",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20191217Z-2e8b3a",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-718f2b",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20200117Z-296d64",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

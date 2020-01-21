@@ -1,6 +1,6 @@
 package typings.dojo.dojox.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.selector
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -78,6 +78,6 @@ class MonthTextBox () extends DateTextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

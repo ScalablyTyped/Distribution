@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("lodash/isNaN", JSImport.Namespace)
+@JSImport("lodash/fp/isNaN", JSImport.Namespace)
 @js.native
 object isNaNMod extends js.Object {
   /**

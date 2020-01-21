@@ -1,6 +1,6 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.constraints
 import typings.dojo.dojoStrings.invalidMessage
 import typings.dojo.dojoStrings.isValid
@@ -185,7 +185,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_invalidMessage(
     property: invalidMessage,
@@ -195,7 +195,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_isValid(
     property: isValid,
@@ -205,7 +205,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Any], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_message(
     property: message,
@@ -215,7 +215,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_missingMessage(
     property: missingMessage,
@@ -225,7 +225,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pattern(
     property: pattern,
@@ -235,7 +235,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_promptMessage(
     property: promptMessage,
@@ -245,7 +245,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_regExp(
     property: regExp,
@@ -255,7 +255,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_required(
     property: required,
@@ -265,7 +265,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_state(
     property: state,
@@ -275,7 +275,7 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_tooltipPosition(
     property: tooltipPosition,
@@ -285,6 +285,6 @@ class ValidationTextBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

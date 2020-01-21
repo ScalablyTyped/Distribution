@@ -1,0 +1,12 @@
+package typings.locutus.mod.php.datetime
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("locutus", "php.datetime.gmmktime")
+@js.native
+object gmmktime extends js.Object {
+  def apply(args: js.Any*): js.Any = js.native
+}
+

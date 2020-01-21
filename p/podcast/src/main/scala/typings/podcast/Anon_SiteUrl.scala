@@ -17,16 +17,3 @@ object Anon_SiteUrl {
   }
 }
 
-trait Anon_Siteurl extends js.Object {
-  var site_url: String
-}
-
-object Anon_Siteurl {
-  @scala.inline
-  def apply(site_url: String): Anon_Siteurl = {
-    val __obj = js.Dynamic.literal(site_url = site_url.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Anon_Siteurl]
-  }
-}
-

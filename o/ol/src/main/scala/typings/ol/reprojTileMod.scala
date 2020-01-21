@@ -11,16 +11,16 @@ import scala.scalajs.js.annotation._
 object reprojTileMod extends js.Object {
   @js.native
   trait ReprojTile
-    extends typings.ol.tileMod.default {
+    extends typings.ol.olTileMod.default {
     def getImage(): HTMLCanvasElement = js.native
   }
   
   @js.native
   class default protected () extends ReprojTile {
     def this(
-      sourceProj: typings.ol.projProjectionMod.default,
+      sourceProj: typings.ol.projectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projProjectionMod.default,
+      targetProj: typings.ol.projectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -29,9 +29,9 @@ object reprojTileMod extends js.Object {
       getTileFunction: FunctionType
     ) = this()
     def this(
-      sourceProj: typings.ol.projProjectionMod.default,
+      sourceProj: typings.ol.projectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projProjectionMod.default,
+      targetProj: typings.ol.projectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -41,9 +41,9 @@ object reprojTileMod extends js.Object {
       opt_errorThreshold: Double
     ) = this()
     def this(
-      sourceProj: typings.ol.projProjectionMod.default,
+      sourceProj: typings.ol.projectionMod.default,
       sourceTileGrid: typings.ol.tilegridTileGridMod.default,
-      targetProj: typings.ol.projProjectionMod.default,
+      targetProj: typings.ol.projectionMod.default,
       targetTileGrid: typings.ol.tilegridTileGridMod.default,
       tileCoord: TileCoord,
       wrappedTileCoord: TileCoord,
@@ -60,7 +60,7 @@ object reprojTileMod extends js.Object {
     /* p1 */ Double, 
     /* p2 */ Double, 
     /* p3 */ Double, 
-    typings.ol.tileMod.default
+    typings.ol.olTileMod.default
   ]
 }
 

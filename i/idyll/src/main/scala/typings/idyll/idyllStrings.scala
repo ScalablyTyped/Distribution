@@ -1,7 +1,7 @@
 package typings.idyll
 
-import typings.idyll.idyllMod.ComponentFiles
-import typings.idyll.idyllMod.PredefinedFile
+import typings.idyll.mod.ComponentFiles
+import typings.idyll.mod.PredefinedFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

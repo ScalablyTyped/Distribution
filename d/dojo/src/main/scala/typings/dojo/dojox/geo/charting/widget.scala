@@ -1,7 +1,7 @@
 package typings.dojo.dojox.geo.charting
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._Widget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.Widget
 import typings.dojo.dojoStrings.adjustMapCenterOnResize
 import typings.dojo.dojoStrings.adjustMapScaleOnResize
 import typings.dojo.dojoStrings.animateOnResize
@@ -46,7 +46,7 @@ object widget extends js.Object {
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
     */
   @js.native
-  class Legend () extends _Widget {
+  class Legend () extends Widget {
     def this(params: js.Object) = this()
     def this(params: js.Object, srcNodeRef: HTMLElement) = this()
     /**
@@ -103,7 +103,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_legendBody(
       property: legendBody,
@@ -113,7 +113,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_map(
       property: map,
@@ -123,7 +123,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_swatchSize(
       property: swatchSize,
@@ -133,7 +133,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Double], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
   /**
@@ -158,7 +158,7 @@ object widget extends js.Object {
     * @param div
     */
   @js.native
-  class Map protected () extends _Widget {
+  class Map protected () extends Widget {
     def this(options: js.Object, div: HTMLElement) = this()
     /**
       *
@@ -371,7 +371,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_adjustMapScaleOnResize(
       property: adjustMapScaleOnResize,
@@ -381,7 +381,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_animateOnResize(
       property: animateOnResize,
@@ -391,7 +391,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_colorAnimationDuration(
       property: colorAnimationDuration,
@@ -401,7 +401,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Double], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_dataBindingAttribute(
       property: dataBindingAttribute,
@@ -411,7 +411,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_dataBindingValueFunction(
       property: dataBindingValueFunction,
@@ -421,7 +421,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_dataStore(
       property: dataStore,
@@ -431,7 +431,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableFeatureZoom(
       property: enableFeatureZoom,
@@ -441,7 +441,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableKeyboardSupport(
       property: enableKeyboardSupport,
@@ -451,7 +451,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableMousePan(
       property: enableMousePan,
@@ -461,7 +461,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableMouseSupport(
       property: enableMouseSupport,
@@ -471,7 +471,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableMouseZoom(
       property: enableMouseZoom,
@@ -481,7 +481,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_enableTouchSupport(
       property: enableTouchSupport,
@@ -491,7 +491,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_markerData(
       property: markerData,
@@ -501,7 +501,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_mouseClickThreshold(
       property: mouseClickThreshold,
@@ -511,7 +511,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Double], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_onFeatureClick(
       property: onFeatureClick,
@@ -521,7 +521,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_onFeatureOver(
       property: onFeatureOver,
@@ -531,7 +531,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[js.Object], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_series(
       property: series,
@@ -541,7 +541,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_shapeData(
       property: shapeData,
@@ -551,7 +551,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[String], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
     @JSName("watch")
     def watch_showTooltips(
       property: showTooltips,
@@ -561,7 +561,7 @@ object widget extends js.Object {
           /* newValue */ js.UndefOr[Boolean], 
           Unit
         ]
-    ): Anon_Unwatch = js.native
+    ): AnonUnwatch = js.native
   }
   
 }

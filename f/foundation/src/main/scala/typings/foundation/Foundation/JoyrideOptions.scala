@@ -1,7 +1,7 @@
 package typings.foundation.Foundation
 
-import typings.foundation.Anon_Bottom
-import typings.foundation.Anon_Button
+import typings.foundation.AnonBottom
+import typings.foundation.AnonButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,13 +30,13 @@ trait JoyrideOptions extends js.Object {
   var scroll_speed: js.UndefOr[Double] = js.undefined
   var start_offset: js.UndefOr[Double] = js.undefined
   var start_timer_on_click: js.UndefOr[Boolean] = js.undefined
-  var template: js.UndefOr[Anon_Button] = js.undefined
+  var template: js.UndefOr[AnonButton] = js.undefined
   var timer: js.UndefOr[Double] = js.undefined
   var tip_animation: js.UndefOr[String] = js.undefined
   var tip_animation_fade_speed: js.UndefOr[Double] = js.undefined
   var tip_container: js.UndefOr[String] = js.undefined
   var tip_location: js.UndefOr[String] = js.undefined
-  var tip_location_patterns: js.UndefOr[Anon_Bottom] = js.undefined
+  var tip_location_patterns: js.UndefOr[AnonBottom] = js.undefined
 }
 
 object JoyrideOptions {
@@ -64,13 +64,13 @@ object JoyrideOptions {
     scroll_speed: Int | Double = null,
     start_offset: Int | Double = null,
     start_timer_on_click: js.UndefOr[Boolean] = js.undefined,
-    template: Anon_Button = null,
+    template: AnonButton = null,
     timer: Int | Double = null,
     tip_animation: String = null,
     tip_animation_fade_speed: Int | Double = null,
     tip_container: String = null,
     tip_location: String = null,
-    tip_location_patterns: Anon_Bottom = null
+    tip_location_patterns: AnonBottom = null
   ): JoyrideOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cookie_domain)) __obj.updateDynamic("cookie_domain")(cookie_domain.asInstanceOf[js.Any])

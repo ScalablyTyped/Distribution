@@ -1,7 +1,10 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
+import typings.phaser.Phaser.Textures.Frame
+import typings.phaser.Phaser.Types.GameObjects.BitmapText.BitmapFontData
 import typings.phaser.integer
+import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,11 +81,42 @@ object BitmapText extends js.Object {
     * Parse an XML Bitmap Font from an Atlas.
     * 
     * Adds the parsed Bitmap Font data to the cache with the `fontName` key.
+    * @param scene The Scene to parse the Bitmap Font for.
+    * @param fontName The key of the font to add to the Bitmap Font cache.
+    * @param textureKey The key of the BitmapFont's texture.
+    * @param frameKey The key of the BitmapFont texture's frame.
+    * @param xmlKey The key of the XML data of the font to parse.
+    * @param xSpacing The x-axis spacing to add between each letter.
+    * @param ySpacing The y-axis spacing to add to the line height.
     */
-  var ParseFromAtlas: js.Function = js.native
+  def ParseFromAtlas(scene: Scene, fontName: String, textureKey: String, frameKey: String, xmlKey: String): Boolean = js.native
+  def ParseFromAtlas(
+    scene: Scene,
+    fontName: String,
+    textureKey: String,
+    frameKey: String,
+    xmlKey: String,
+    xSpacing: integer
+  ): Boolean = js.native
+  def ParseFromAtlas(
+    scene: Scene,
+    fontName: String,
+    textureKey: String,
+    frameKey: String,
+    xmlKey: String,
+    xSpacing: integer,
+    ySpacing: integer
+  ): Boolean = js.native
   /**
     * Parse an XML font to Bitmap Font data for the Bitmap Font cache.
+    * @param xml The XML Document to parse the font from.
+    * @param xSpacing The x-axis spacing to add between each letter. Default 0.
+    * @param ySpacing The y-axis spacing to add to the line height. Default 0.
+    * @param frame The texture frame to take into account while parsing.
     */
-  var ParseXMLBitmapFont: js.Function = js.native
+  def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = js.native
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = js.native
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = js.native
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.server
 
-import typings.server.typingsCommonMod.LogLevel
+import typings.server.commonMod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsontoxml"
-version := "1.0-dt-20190212Z-8f14b7"
+version := "1.0-dt-20190212Z-575e69"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.jpm.FFAddonSDK
 
-import typings.jpm.sdkPanelMod.PanelPosition
+import typings.jpm.panelMod.PanelPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

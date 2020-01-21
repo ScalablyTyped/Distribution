@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
   * allows foreign AMD loaders to be used without their plugins.
   *
   */
-@JSName("i18n")
 trait i18n_ extends js.Object {
   /**
     *

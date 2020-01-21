@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RTCErrorEvent extends Event {
+trait RTCErrorEvent extends Event_ {
   val error: RTCError | Null = js.native
 }
 

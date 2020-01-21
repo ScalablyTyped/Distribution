@@ -4,8 +4,8 @@ import typings.jsforce.batchMod.Batch
 import typings.jsforce.batchMod.BatchResultInfo
 import typings.jsforce.connectionMod.Connection
 import typings.jsforce.jobMod.Job
-import typings.jsforce.recordDashResultMod.RecordResult
 import typings.jsforce.recordMod.Record
+import typings.jsforce.recordResultMod.RecordResult
 import typings.node.streamMod.Stream
 import typings.std.Error
 import scala.scalajs.js

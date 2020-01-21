@@ -13,7 +13,7 @@ import typings.jqgrid.jqgridStrings.jsonstring
 import typings.jqgrid.jqgridStrings.local
 import typings.jqgrid.jqgridStrings.xml
 import typings.jqgrid.jqgridStrings.xmlstring
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -119,7 +119,7 @@ trait JQueryJqGridOptions extends js.Object {
     * @returns {} 
     */
   var onRightClickRow: js.UndefOr[
-    js.Function4[/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event, Unit]
+    js.Function4[/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event_, Unit]
   ] = js.undefined
   /**
     * Raised immediately after row was clicked.
@@ -128,7 +128,7 @@ trait JQueryJqGridOptions extends js.Object {
     * @param e  is the event object. Can be used when multiselect is set to true. true if the row is selected, false if the row is deselected.
     * @returns {} 
     */
-  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event, Unit]] = js.undefined
+  var onSelectRow: js.UndefOr[js.Function3[/* id */ String, /* status */ js.Any, /* e */ Event_, Unit]] = js.undefined
   /**
     * Defines that we want to use a pager bar to navigate through the records.
     * This must be a valid HTML element; in our example we gave the div the id of "pager", but any name is acceptable.
@@ -213,8 +213,8 @@ object JQueryJqGridOptions {
     mtype: GET | POST = null,
     multiboxonly: js.UndefOr[Boolean] = js.undefined,
     multiselect: js.UndefOr[Boolean] = js.undefined,
-    onRightClickRow: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event) => Unit = null,
-    onSelectRow: (/* id */ String, /* status */ js.Any, /* e */ Event) => Unit = null,
+    onRightClickRow: (/* rowid */ js.Any, /* iRow */ Double, /* iCol */ Double, /* e */ Event_) => Unit = null,
+    onSelectRow: (/* id */ String, /* status */ js.Any, /* e */ Event_) => Unit = null,
     pager: String = null,
     rowList: js.Array[Double] = null,
     rowNum: Int | Double = null,

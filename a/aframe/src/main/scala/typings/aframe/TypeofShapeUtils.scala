@@ -1,6 +1,6 @@
 package typings.aframe
 
-import typings.three.srcExtrasShapeUtilsMod.Vec2
+import typings.three.shapeUtilsMod.Vec2
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

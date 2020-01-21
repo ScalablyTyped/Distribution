@@ -1,6 +1,6 @@
 package typings.ionic.libProjectMod
 
-import typings.minimist.minimistMod.ParsedArgs
+import typings.minimist.mod.ParsedArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,9 +1,9 @@
 package typings.slonik
 
-import typings.slonik.slonikMod.ComparisonOperatorType
-import typings.slonik.slonikMod.ConnectionTypeType
-import typings.slonik.slonikMod.LogicalBooleanOperatorType
-import typings.slonik.slonikMod.TypeNameIdentifierType
+import typings.slonik.mod.ComparisonOperatorType
+import typings.slonik.mod.ConnectionTypeType
+import typings.slonik.mod.LogicalBooleanOperatorType
+import typings.slonik.mod.TypeNameIdentifierType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

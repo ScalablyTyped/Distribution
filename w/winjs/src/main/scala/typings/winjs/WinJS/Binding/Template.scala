@@ -1,7 +1,7 @@
 package typings.winjs.WinJS.Binding
 
 import typings.std.HTMLElement
-import typings.winjs.Anon_Element
+import typings.winjs.AnonElement
 import typings.winjs.WinJS.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,7 +62,7 @@ class Template protected () extends js.Object {
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
-  def renderItem[T](item: Promise[T], recyled: HTMLElement): Anon_Element = js.native
+  def renderItem[T](item: Promise[T], recyled: HTMLElement): AnonElement = js.native
 }
 
 /* static members */

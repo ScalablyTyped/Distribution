@@ -1,7 +1,7 @@
 package typings.bagpipes
 
-import typings.bagpipes.bagpipesMod.Affinity
-import typings.bagpipes.bagpipesMod._FittingType
+import typings.bagpipes.mod.Affinity
+import typings.bagpipes.mod._FittingType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

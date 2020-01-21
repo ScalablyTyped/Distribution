@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "level-codec"
-version := "9.0-dt-20180828Z-9e364d"
+version := "9.0-dt-20180828Z-fc7e5e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("onauxclick")
 @js.native
 object onauxclick
-  extends TopLevel[(js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | Null]
+  extends TopLevel[(js.ThisFunction1[/* this */ Window_, /* ev */ MouseEvent, js.Any]) | Null]
 

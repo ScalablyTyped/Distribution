@@ -34,6 +34,10 @@ trait MultiAtlasFileConfig extends js.Object {
     * Extra XHR Settings specifically for the texture files.
     */
   var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
+  /**
+    * An alias for 'atlasURL'. If given, it overrides anything set in 'atlasURL'.
+    */
+  var url: js.UndefOr[String] = js.undefined
 }
 
 object MultiAtlasFileConfig {
@@ -45,7 +49,8 @@ object MultiAtlasFileConfig {
     atlasXhrSettings: XHRSettingsObject = null,
     baseURL: String = null,
     path: String = null,
-    textureXhrSettings: XHRSettingsObject = null
+    textureXhrSettings: XHRSettingsObject = null,
+    url: String = null
   ): MultiAtlasFileConfig = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (atlasExtension != null) __obj.updateDynamic("atlasExtension")(atlasExtension.asInstanceOf[js.Any])
@@ -54,6 +59,7 @@ object MultiAtlasFileConfig {
     if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (textureXhrSettings != null) __obj.updateDynamic("textureXhrSettings")(textureXhrSettings.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiAtlasFileConfig]
   }
 }

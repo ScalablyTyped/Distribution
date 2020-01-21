@@ -1,9 +1,9 @@
 package typings.baseui.tableMod
 
-import typings.baseui.Anon_HeadCell
+import typings.baseui.AnonHeadCell
 import typings.baseui.baseuiStrings.ASC
 import typings.baseui.baseuiStrings.DESC
-import typings.react.reactMod.ReactNode
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ trait SortableHeadCellProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var fillClickTarget: js.UndefOr[Boolean] = js.undefined
   var onSort: js.UndefOr[js.Function0[_]] = js.undefined
-  var overrides: js.UndefOr[Anon_HeadCell] = js.undefined
+  var overrides: js.UndefOr[AnonHeadCell] = js.undefined
   var title: String
 }
 
@@ -27,7 +27,7 @@ object SortableHeadCellProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     fillClickTarget: js.UndefOr[Boolean] = js.undefined,
     onSort: () => _ = null,
-    overrides: Anon_HeadCell = null
+    overrides: AnonHeadCell = null
   ): SortableHeadCellProps = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

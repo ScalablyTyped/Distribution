@@ -1,9 +1,9 @@
 package typings.recompose
 
-import typings.recompose.recomposeMod.InferableComponentEnhancerWithProps
-import typings.recompose.recomposeMod.mapper
-import typings.recompose.recomposeMod.reducer
-import typings.recompose.recomposeMod.reducerProps
+import typings.recompose.mod.InferableComponentEnhancerWithProps
+import typings.recompose.mod.mapper
+import typings.recompose.mod.reducer
+import typings.recompose.mod.reducerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

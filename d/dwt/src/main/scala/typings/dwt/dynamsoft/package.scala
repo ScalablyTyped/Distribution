@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dynamsoft {
-  type BarcodeReader = BarcodeReader_
+  type BarcodeReader = typings.dwt.dynamsoft.BarcodeReader_
 }

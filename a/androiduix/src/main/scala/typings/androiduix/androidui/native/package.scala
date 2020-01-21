@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object native {
-  type NativeApi = NativeApi_
+  type NativeApi = typings.androiduix.androidui.native.NativeApi_
 }

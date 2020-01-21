@@ -1,6 +1,6 @@
 package typings.gdal
 
-import typings.gdal.gdalMod.Resampling
+import typings.gdal.mod.Resampling
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

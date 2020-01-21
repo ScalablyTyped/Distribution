@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesTreemap
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
-import typings.echarts.Anon_BorderColorBorderColorSaturation
-import typings.echarts.Anon_ItemStyleLabelUpperLabel
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
+import typings.echarts.AnonBorderColorBorderColorSaturation
+import typings.echarts.AnonItemStyleLabelUpperLabel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -202,7 +202,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelUpperLabel] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleLabelUpperLabel] = js.undefined
   /**
     * `id` is not mandatory.
     * But if using API, id is used to locate node.
@@ -232,7 +232,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderColorSaturation] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -255,7 +255,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
   /**
     * Show the description text in rectangle.
     *
@@ -310,7 +310,7 @@ trait DataObject extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.upperLabel
     */
   var upperLabel: js.UndefOr[
-    Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
+    AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily
   ] = js.undefined
   /**
     * The value of this node, indicating the area size.
@@ -432,12 +432,12 @@ object DataObject {
     colorAlpha: js.Array[_] = null,
     colorMappingBy: String = null,
     colorSaturation: Int | Double = null,
-    emphasis: Anon_ItemStyleLabelUpperLabel = null,
+    emphasis: AnonItemStyleLabelUpperLabel = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderColorSaturation = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
+    itemStyle: AnonBorderColorBorderColorSaturation = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
     name: String = null,
-    upperLabel: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily = null,
+    upperLabel: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamily = null,
     value: js.Array[_] | Double = null,
     visibleMin: Int | Double = null,
     visualDimension: Int | Double = null,

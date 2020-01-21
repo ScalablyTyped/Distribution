@@ -1,8 +1,8 @@
 package typings.yayson
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.yayson.yaysonMod.JsonOptions
-import typings.yayson.yaysonMod.Presenter
+import typings.yayson.mod.JsonOptions
+import typings.yayson.mod.Presenter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.node.netMod
 
-import typings.node.Anon_AllowHalfOpen
+import typings.node.AnonAllowHalfOpen
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object createServer extends js.Object {
   def apply(): Server = js.native
   def apply(connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
-  def apply(options: Anon_AllowHalfOpen): Server = js.native
-  def apply(options: Anon_AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
+  def apply(options: AnonAllowHalfOpen): Server = js.native
+  def apply(options: AnonAllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
 }
 

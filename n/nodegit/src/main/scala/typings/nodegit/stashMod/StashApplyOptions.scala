@@ -1,6 +1,6 @@
 package typings.nodegit.stashMod
 
-import typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
+import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -2,9 +2,9 @@ package typings.baseui.radioMod
 
 import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
-import typings.react.reactMod.ChangeEvent
-import typings.react.reactMod.ChangeEventHandler
-import typings.react.reactMod.ReactNode
+import typings.react.mod.ChangeEvent
+import typings.react.mod.ChangeEventHandler
+import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

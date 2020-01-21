@@ -1,0 +1,12 @@
+package typings.monthDays
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("month-days", JSImport.Namespace)
+@js.native
+object monthDaysRequire extends js.Object
+

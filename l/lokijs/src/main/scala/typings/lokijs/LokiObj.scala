@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait LokiObj extends js.Object {
   @JSName("$loki")
   var $loki: Double = js.native
-  var meta: Anon_Created = js.native
+  var meta: AnonCreated = js.native
 }
 

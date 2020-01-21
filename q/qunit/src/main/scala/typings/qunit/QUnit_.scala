@@ -10,7 +10,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("QUnit")
 @js.native
 trait QUnit_ extends js.Object {
   /**
@@ -45,7 +44,7 @@ trait QUnit_ extends js.Object {
     * Note: This method used to be in QUnit.jsDump, which was changed to
     * QUnit.dump. The old property will be removed in QUnit 3.0.
     */
-  var dump: Anon_Data = js.native
+  var dump: AnonData = js.native
   /**
     * Are the test running from the server or not.
     */
@@ -287,7 +286,7 @@ trait QUnit_ extends js.Object {
     *
     * @param callback Callback to execute
     */
-  def testDone(callback: js.Function1[/* details */ Anon_Failed, Unit]): Unit = js.native
+  def testDone(callback: js.Function1[/* details */ AnonFailed, Unit]): Unit = js.native
   /**
     * Register a callback to fire whenever a test begins.
     *

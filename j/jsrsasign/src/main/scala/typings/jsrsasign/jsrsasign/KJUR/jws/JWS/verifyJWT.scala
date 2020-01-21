@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.jws.JWS
 
-import typings.jsrsasign.Anon_AlgAud
+import typings.jsrsasign.AnonAlgAud
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -89,6 +89,6 @@ object verifyJWT extends js.Object {
     * });
     */
   def apply(sJWT: String, key: String): Boolean = js.native
-  def apply(sJWT: String, key: String, acceptField: Anon_AlgAud): Boolean = js.native
+  def apply(sJWT: String, key: String, acceptField: AnonAlgAud): Boolean = js.native
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object plupload extends js.Object {
   @js.native
   class Uploader protected () extends js.Object {
-    def this(settings: plupload_settings) = this()
+    def this(settings: pluploadSettings) = this()
     /**
     		 * Map of features that are available for the uploader runtime. Features will be filled
     		 * before the init event is called, these features can then be used to alter the UI for the end user.
@@ -64,7 +64,7 @@ object plupload extends js.Object {
     		 * @property total
     		 * @type plupload.QueueProgress
     		 */
-    var total: plupload_queue_progress = js.native
+    var total: pluploadQueueProgress = js.native
     /**
     		 * Adds file to the queue programmatically. Can be native file, instance of Plupload.File,
     		 * instance of mOxie.File, input[type="file"] element, or array of these. Fires FilesAdded,

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._RadioButtonMixin because Inheritance from two classes. Inlined  */ @JSGlobal("dijit.form.RadioButton")
+- typings.dojo.dijit.form.RadioButtonMixin because Inheritance from two classes. Inlined  */ @JSGlobal("dijit.form.RadioButton")
 @js.native
 class RadioButton () extends CheckBox {
   def this(params: js.Object) = this()

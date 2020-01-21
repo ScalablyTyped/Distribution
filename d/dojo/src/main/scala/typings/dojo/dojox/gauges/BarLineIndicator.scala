@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.gauges.BarLineIndicator")
 @js.native
-class BarLineIndicator () extends _Indicator {
+class BarLineIndicator () extends Indicator {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**

@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_AutoResolve
+import typings.playcanvas.AnonAutoResolve
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,7 +48,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.RenderTarget")
 @js.native
 class RenderTarget protected () extends js.Object {
-  def this(options: Anon_AutoResolve) = this()
+  def this(options: AnonAutoResolve) = this()
   /**
     * @readonly
     * @name pc.RenderTarget#colorBuffer

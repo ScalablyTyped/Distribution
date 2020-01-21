@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-jade"
-version := "0.0-unknown-dt-20190322Z-60c294"
+version := "0.0-unknown-dt-20190322Z-df264b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

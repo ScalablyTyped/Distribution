@@ -10,9 +10,9 @@ trait Transaction extends js.Object {
   var description: String
   var from: String
   var order: js.UndefOr[TransactionOrder] = js.undefined
-  var recipient: js.UndefOr[Anon_Username] = js.undefined
+  var recipient: js.UndefOr[AnonUsername] = js.undefined
   var resourceType: MarketResourceConstant
-  var sender: js.UndefOr[Anon_Username] = js.undefined
+  var sender: js.UndefOr[AnonUsername] = js.undefined
   var time: Double
   var to: String
   var transactionId: String
@@ -29,8 +29,8 @@ object Transaction {
     to: String,
     transactionId: String,
     order: TransactionOrder = null,
-    recipient: Anon_Username = null,
-    sender: Anon_Username = null
+    recipient: AnonUsername = null,
+    sender: AnonUsername = null
   ): Transaction = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionId = transactionId.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])

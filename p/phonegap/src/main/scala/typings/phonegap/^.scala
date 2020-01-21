@@ -11,7 +11,7 @@ object ^ extends js.Object {
   var Keyboard: typings.phonegap.Keyboard = js.native
   var LocalFileSystem: typings.phonegap.LocalFileSystem = js.native
   var StatusBar: typings.phonegap.StatusBar = js.native
-  var device: Device = js.native
+  var device: Device_ = js.native
   var phoneGapNavigator: Navigator = js.native
 }
 

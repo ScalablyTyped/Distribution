@@ -5,15 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ESTree {
-  import typings.std.Node
-
-  type AnyTypeAnnotation = FlowBaseTypeAnnotation
-  type BooleanTypeAnnotation = FlowBaseTypeAnnotation
-  type FlowBaseTypeAnnotation = FlowTypeAnnotation
+  type AnyTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+  type BooleanTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+  type FlowBaseTypeAnnotation = typings.estree.ESTree.FlowTypeAnnotation
   type FlowDeclaration = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Declaration */ js.Any
-  type FlowTypeAnnotation = Node
-  type MixedTypeAnnotation = FlowBaseTypeAnnotation
-  type NumberTypeAnnotation = FlowBaseTypeAnnotation
-  type StringTypeAnnotation = FlowBaseTypeAnnotation
-  type VoidTypeAnnotation = FlowBaseTypeAnnotation
+  type FlowTypeAnnotation = typings.std.Node
+  type MixedTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+  type NumberTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+  type StringTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
+  type VoidTypeAnnotation = typings.estree.ESTree.FlowBaseTypeAnnotation
 }

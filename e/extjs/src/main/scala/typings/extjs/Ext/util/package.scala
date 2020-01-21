@@ -5,11 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object util {
-  import typings.extjs.Ext.IBase
-
-  type ICSS = IBase
-  type ICookies = IBase
-  type IInflector = IBase
-  type IOffset = IBase
-  type ITaskManager = ITaskRunner
+  type ICSS = typings.extjs.Ext.IBase
+  type ICookies = typings.extjs.Ext.IBase
+  type IInflector = typings.extjs.Ext.IBase
+  type IOffset = typings.extjs.Ext.IBase
+  type ITaskManager = typings.extjs.Ext.util.ITaskRunner
 }

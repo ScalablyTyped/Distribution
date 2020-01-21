@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Beatvalue
+import typings.vexflow.AnonBeatvalue
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.Voice")
 @js.native
 class Voice_ protected () extends js.Object {
-  def this(time: Anon_Beatvalue) = this()
+  def this(time: AnonBeatvalue) = this()
   def addTickable(tickable: Tickable): Voice = js.native
   def addTickables(tickables: js.Array[Tickable]): Voice = js.native
   def draw(context: IRenderContext): Unit = js.native

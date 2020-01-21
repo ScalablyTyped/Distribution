@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object optionsMod {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type CollectorOptions = StringDictionary[js.Any]
-  type Threshold = String | ObjectThreshold
+  type CollectorOptions = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type Threshold = java.lang.String | typings.k6.optionsMod.ObjectThreshold
 }

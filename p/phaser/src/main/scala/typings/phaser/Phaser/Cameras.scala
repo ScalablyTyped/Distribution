@@ -574,7 +574,7 @@ object Cameras extends js.Object {
         * the Camera there. The results are clamped based on the Camera bounds, if set.
         * @param x The horizontal coordinate to center on.
         * @param y The vertical coordinate to center on.
-        * @param out A Vec2 to store the values in. If not given a new Vec2 is created.
+        * @param out A Vector2 to store the values in. If not given a new Vector2 is created.
         */
       def getScroll(x: Double, y: Double): Vector2 = js.native
       def getScroll(x: Double, y: Double, out: Vector2): Vector2 = js.native

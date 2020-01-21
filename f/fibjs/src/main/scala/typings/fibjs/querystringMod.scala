@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object querystringMod extends js.Object {
   def escape(str: String): String = js.native
-  def parse(str: String): Class_HttpCollection = js.native
-  def parse(str: String, sep: String): Class_HttpCollection = js.native
-  def parse(str: String, sep: String, eq: String): Class_HttpCollection = js.native
-  def parse(str: String, sep: String, eq: String, opt: js.Object): Class_HttpCollection = js.native
+  def parse(str: String): ClassHttpCollection = js.native
+  def parse(str: String, sep: String): ClassHttpCollection = js.native
+  def parse(str: String, sep: String, eq: String): ClassHttpCollection = js.native
+  def parse(str: String, sep: String, eq: String, opt: js.Object): ClassHttpCollection = js.native
   def stringify(obj: js.Object): String = js.native
   def stringify(obj: js.Object, sep: String): String = js.native
   def stringify(obj: js.Object, sep: String, eq: String): String = js.native

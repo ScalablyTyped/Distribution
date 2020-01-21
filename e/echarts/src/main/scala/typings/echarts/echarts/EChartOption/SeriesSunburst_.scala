@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-import typings.echarts.Anon_BorderColorBorderType
-import typings.echarts.Anon_Downplay
-import typings.echarts.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+import typings.echarts.AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+import typings.echarts.AnonBorderColorBorderType
+import typings.echarts.AnonDownplay
+import typings.echarts.AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
 import typings.echarts.echarts.EChartOption.SeriesSunburst.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -37,7 +37,6 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-sunburst
   */
-@JSName("SeriesSunburst")
 trait SeriesSunburst_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -174,7 +173,7 @@ trait SeriesSunburst_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sunburst.downplay
     */
   var downplay: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering. See
@@ -185,7 +184,7 @@ trait SeriesSunburst_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sunburst.emphasis
     */
   var emphasis: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
@@ -196,7 +195,7 @@ trait SeriesSunburst_ extends js.Object {
     * @see https://echarts.apache.org/en/option.html#series-sunburst.highlight
     */
   var highlight: js.UndefOr[
-    Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+    AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
   ] = js.undefined
   /**
     * When mouse hovers a sector, the sector is emphasized.
@@ -274,7 +273,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_BorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonBorderColorBorderType] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -296,7 +295,7 @@ trait SeriesSunburst_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.label
     */
-  var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
+  var label: js.UndefOr[AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
   /**
     * **Multiple levels**
     *
@@ -318,7 +317,7 @@ trait SeriesSunburst_ extends js.Object {
     * []
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels
     */
-  var levels: js.UndefOr[Anon_Downplay] = js.undefined
+  var levels: js.UndefOr[AnonDownplay] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -440,14 +439,14 @@ object SeriesSunburst_ {
     animationThreshold: Int | Double = null,
     center: js.Array[_] = null,
     data: js.Array[DataObject] = null,
-    downplay: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    emphasis: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    highlight: Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    downplay: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    emphasis: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    highlight: AnonItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
     highlightPolicy: String = null,
     id: String = null,
-    itemStyle: Anon_BorderColorBorderType = null,
-    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
-    levels: Anon_Downplay = null,
+    itemStyle: AnonBorderColorBorderType = null,
+    label: AnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    levels: AnonDownplay = null,
     name: String = null,
     nodeClick: Boolean | String = null,
     radius: js.Array[_] | Double | String = null,

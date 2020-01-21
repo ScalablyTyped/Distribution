@@ -14,9 +14,9 @@ trait ReadableStream[R] extends js.Object {
   def cancel(): js.Promise[Unit] = js.native
   def cancel(reason: js.Any): js.Promise[Unit] = js.native
   def getReader(): ReadableStreamDefaultReader[R] = js.native
-  def getReader(options: Anon_Byob): ReadableStreamBYOBReader = js.native
-  def pipeThrough[T](hasWritableReadable: Anon_Readable[R, T]): ReadableStream[T] = js.native
-  def pipeThrough[T](hasWritableReadable: Anon_Readable[R, T], options: PipeOptions): ReadableStream[T] = js.native
+  def getReader(options: AnonByob): ReadableStreamBYOBReader = js.native
+  def pipeThrough[T](hasWritableReadable: AnonReadable[R, T]): ReadableStream[T] = js.native
+  def pipeThrough[T](hasWritableReadable: AnonReadable[R, T], options: PipeOptions): ReadableStream[T] = js.native
   def pipeTo(dest: WritableStream[R]): js.Promise[Unit] = js.native
   def pipeTo(dest: WritableStream[R], options: PipeOptions): js.Promise[Unit] = js.native
   def tee(): js.Tuple2[ReadableStream[R], ReadableStream[R]] = js.native
@@ -32,7 +32,7 @@ object ReadableStream
     ]
      with Instantiable2[
       (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      (/* strategy */ Anon_HighWaterMarkSize) | (/* strategy */ QueuingStrategy[js.Object]), 
+      (/* strategy */ AnonHighWaterMarkSize) | (/* strategy */ QueuingStrategy[js.Object]), 
       ReadableStream[js.Object | Uint8Array]
     ]
 

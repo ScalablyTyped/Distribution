@@ -1,11 +1,14 @@
 package typings.tstl.tstlMod
 
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
+import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.comparatorMod.Comparator
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.setContainerMod.SetContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl", "TreeSet")
+@JSImport("tstl/container", "TreeSet")
 @js.native
 /**
   * Default Constructor.
@@ -13,14 +16,14 @@ import scala.scalajs.js.annotation._
   * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
   */
 class TreeSet[Key] ()
-  extends typings.tstl.containerMod.TreeSet[Key] {
-  def this(comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+  extends typings.tstl.treeSetMod.TreeSet[Key] {
+  def this(comp: Comparator[Key, Key]) = this()
   /**
     * Copy Constructor.
     *
     * @param obj Object to copy.
     */
-  def this(container: typings.tstl.containerTreeSetMod.TreeSet[Key]) = this()
+  def this(container: typings.tstl.treeSetMod.TreeSet[Key]) = this()
   /**
     * Initializer Constructor.
     *
@@ -39,20 +42,58 @@ class TreeSet[Key] ()
     first: IForwardIterator[Key, IForwardIterator[Key, _]],
     last: IForwardIterator[Key, IForwardIterator[Key, _]]
   ) = this()
-  def this(items: js.Array[Key], comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
+  def this(items: js.Array[Key], comp: Comparator[Key, Key]) = this()
   def this(
     first: IForwardIterator[Key, IForwardIterator[Key, _]],
     last: IForwardIterator[Key, IForwardIterator[Key, _]],
-    comp: js.Function2[/* x */ Key, /* y */ Key, Boolean]
+    comp: Comparator[Key, Key]
   ) = this()
 }
 
-@JSImport("tstl", "TreeSet")
+@JSImport("tstl/container", "TreeSet")
 @js.native
 object TreeSet extends js.Object {
-  val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.Iterator */ js.Any = js.native
-  val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.ReverseIterator */ js.Any = js.native
-  val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.Iterator */ js.Any = js.native
-  val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.ReverseIterator */ js.Any = js.native
+  val Iterator: Instantiable0[
+    typings.tstl.setElementListMod.SetElementList.Iterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.setElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+      js.Object, 
+      Boolean, 
+      SetContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.setElementListMod.SetElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.setElementListMod.SetElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
 }
 

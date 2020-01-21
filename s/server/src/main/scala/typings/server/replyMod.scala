@@ -1,6 +1,6 @@
 package typings.server
 
-import typings.express.expressMod.CookieOptions
+import typings.express.mod.CookieOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object replyMod extends js.Object {
   @js.native
-  trait Redirect extends js.Object {
+  trait Redirect_ extends js.Object {
     def apply(path: String): Reply = js.native
     def apply(status: Double, path: String): Reply = js.native
   }
@@ -27,7 +27,7 @@ object replyMod extends js.Object {
     @JSName("jsonp")
     var jsonp_Original: jsonpType = js.native
     @JSName("redirect")
-    var redirect_Original: Redirect = js.native
+    var redirect_Original: Redirect_ = js.native
     @JSName("render")
     var render_Original: renderType = js.native
     @JSName("send")
@@ -61,7 +61,7 @@ object replyMod extends js.Object {
   val header: headerType = js.native
   val json: jsonType = js.native
   val jsonp: jsonpType = js.native
-  val redirect: Redirect = js.native
+  val redirect: Redirect_ = js.native
   val render: renderType = js.native
   val send: sendType = js.native
   val status: statusType = js.native

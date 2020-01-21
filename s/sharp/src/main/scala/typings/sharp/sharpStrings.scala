@@ -1,7 +1,7 @@
 package typings.sharp
 
-import typings.sharp.sharpMod.Blend
-import typings.sharp.sharpMod.TileLayout
+import typings.sharp.mod.Blend
+import typings.sharp.mod.TileLayout
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,0 +1,23 @@
+package typings.awsSdkClientKmsNode
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-kms-node/types/EncryptExceptionsUnion", JSImport.Namespace)
+@js.native
+object encryptExceptionsUnionMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException
+    - typings.awsSdkClientKmsNode.typesDisabledExceptionMod.DisabledException
+    - typings.awsSdkClientKmsNode.typesKeyUnavailableExceptionMod.KeyUnavailableException
+    - typings.awsSdkClientKmsNode.typesDependencyTimeoutExceptionMod.DependencyTimeoutException
+    - typings.awsSdkClientKmsNode.typesInvalidKeyUsageExceptionMod.InvalidKeyUsageException
+    - typings.awsSdkClientKmsNode.typesInvalidGrantTokenExceptionMod.InvalidGrantTokenException
+    - typings.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException
+    - typings.awsSdkClientKmsNode.typesKmsinvalidstateexceptionMod.KMSInvalidStateException
+  */
+  trait EncryptExceptionsUnion extends js.Object
+  
+}
+

@@ -1,9 +1,9 @@
 package typings.schwifty
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.joi.joiMod.Schema
-import typings.schwifty.schwiftyMod.Model
-import typings.schwifty.schwiftyMod.ModelClass
+import typings.joi.mod.Schema
+import typings.schwifty.mod.Model
+import typings.schwifty.mod.ModelClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

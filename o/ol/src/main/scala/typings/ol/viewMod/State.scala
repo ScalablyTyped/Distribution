@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait State extends js.Object {
   var center: Coordinate
-  var projection: typings.ol.projProjectionMod.default
+  var projection: typings.ol.projectionMod.default
   var resolution: Double
   var rotation: Double
   var zoom: Double
@@ -17,7 +17,7 @@ object State {
   @scala.inline
   def apply(
     center: Coordinate,
-    projection: typings.ol.projProjectionMod.default,
+    projection: typings.ol.projectionMod.default,
     resolution: Double,
     rotation: Double,
     zoom: Double

@@ -5,15 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object tracingMod {
-  import typings.scheduler.Anon_Cancel
-
   /* Rewritten from type alias, can be one of: 
     - `js.undefined`
     - typings.scheduler.schedulerBooleans.`true`
     - typings.scheduler.schedulerBooleans.`false`
   */
-  type EnableSchedulerTracing = js.UndefOr[_EnableSchedulerTracing]
-  type IfSchedulerTracing[WhenTrue, WhenFalse] = TypeByBuildFlag[EnableSchedulerTracing, WhenTrue, WhenFalse]
-  type TypeByBuildFlag[Flag /* <: js.UndefOr[Boolean] */, WhenTrue, WhenFalse] = WhenFalse | WhenTrue
-  type WrappedFunction[T /* <: js.Function1[/* repeated */ js.Any, _] */] = T with Anon_Cancel
+  type EnableSchedulerTracing = js.UndefOr[typings.scheduler.tracingMod._EnableSchedulerTracing]
+  type IfSchedulerTracing[WhenTrue, WhenFalse] = typings.scheduler.tracingMod.TypeByBuildFlag[typings.scheduler.tracingMod.EnableSchedulerTracing, WhenTrue, WhenFalse]
+  type TypeByBuildFlag[Flag /* <: js.UndefOr[scala.Boolean] */, WhenTrue, WhenFalse] = WhenFalse | WhenTrue
+  type WrappedFunction[T /* <: js.Function1[/* repeated */ js.Any, _] */] = T with typings.scheduler.AnonCancel
 }

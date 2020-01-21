@@ -1,6 +1,6 @@
 package typings.openjscad.CSG
 
-import typings.openjscad.Anon_Back
+import typings.openjscad.AnonBack
 import typings.openjscad.CxG
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,7 +21,7 @@ class Plane protected () extends CxG {
   def mirrorPoint(point3d: Vector3D): Vector3D = js.native
   def signedDistanceToPoint(point: Vector3D): Double = js.native
   def splitLineBetweenPoints(p1: Vector3D, p2: Vector3D): Vector3D = js.native
-  def splitPolygon(polygon: Polygon): Anon_Back = js.native
+  def splitPolygon(polygon: Polygon): AnonBack = js.native
 }
 
 /* static members */

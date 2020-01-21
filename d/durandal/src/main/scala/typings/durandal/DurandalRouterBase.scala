@@ -37,7 +37,7 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
   /**
     * The route handlers that are registered. Each handler consists of a `routePattern` and a `callback`.
     */
-  var handlers: js.Array[Anon_Callback] = js.native
+  var handlers: js.Array[AnonCallback] = js.native
   /**
     * Indicates that the router (or a child router) is currently in the process of navigating.
     */

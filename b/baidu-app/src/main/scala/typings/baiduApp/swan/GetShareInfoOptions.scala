@@ -1,0 +1,30 @@
+package typings.baiduApp.swan
+
+import typings.baiduApp.AnonEncryptedData
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetShareInfoOptions
+  extends BaseOptions[js.Any, js.Any] {
+  /** shareTicket */
+  var shareTicket: String
+  @JSName("success")
+  def success_MGetShareInfoOptions(res: AnonEncryptedData): Unit
+}
+
+object GetShareInfoOptions {
+  @scala.inline
+  def apply(
+    shareTicket: String,
+    success: AnonEncryptedData => Unit,
+    complete: /* res */ js.Any => Unit = null,
+    fail: js.Any => Unit = null
+  ): GetShareInfoOptions = {
+    val __obj = js.Dynamic.literal(shareTicket = shareTicket.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
+    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
+    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
+    __obj.asInstanceOf[GetShareInfoOptions]
+  }
+}
+

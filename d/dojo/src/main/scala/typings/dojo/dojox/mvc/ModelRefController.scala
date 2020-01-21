@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mvc
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.model
 import typings.dojo.dojoStrings.ownProps
 import scala.scalajs.js
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.mvc.ModelRefController")
 @js.native
-class ModelRefController () extends _Controller {
+class ModelRefController () extends Controller {
   /**
     * The data model.
     *
@@ -59,7 +59,7 @@ class ModelRefController () extends _Controller {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_ownProps(
     property: ownProps,
@@ -69,6 +69,6 @@ class ModelRefController () extends _Controller {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

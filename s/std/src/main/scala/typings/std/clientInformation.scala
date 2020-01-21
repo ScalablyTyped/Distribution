@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("clientInformation")
 @js.native
-object clientInformation extends TopLevel[Navigator]
+object clientInformation extends TopLevel[Navigator_]
 

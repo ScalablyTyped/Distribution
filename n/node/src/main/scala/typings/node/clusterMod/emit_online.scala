@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cluster", "emit")
 @js.native
 object emit_online extends js.Object {
-  def apply(event: online, worker: Worker): Boolean = js.native
+  def apply(event: online, worker: Worker_): Boolean = js.native
 }
 

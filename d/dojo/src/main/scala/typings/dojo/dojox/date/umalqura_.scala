@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("umalqura")
 trait umalqura_ extends js.Object {
   /**
     *

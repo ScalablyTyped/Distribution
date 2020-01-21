@@ -1,29 +1,29 @@
 package typings.nodegit.repositoryMod
 
 import typings.node.Buffer
-import typings.nodegit.annotatedDashCommitMod.AnnotatedCommit
+import typings.nodegit.annotatedCommitMod.AnnotatedCommit
 import typings.nodegit.blobMod.Blob
 import typings.nodegit.bufMod.Buf
-import typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
+import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.commitMod.Commit
 import typings.nodegit.configMod.Config
-import typings.nodegit.diffDashLineMod.DiffLine
-import typings.nodegit.fetchDashOptionsMod.FetchOptions
-import typings.nodegit.indexUnderscoreMod.Index
-import typings.nodegit.mergeDashOptionsMod.MergeOptions
+import typings.nodegit.diffLineMod.DiffLine
+import typings.nodegit.fetchOptionsMod.FetchOptions
+import typings.nodegit.indexMod.Index
 import typings.nodegit.mergeMod.Merge.PREFERENCE
+import typings.nodegit.mergeOptionsMod.MergeOptions
 import typings.nodegit.odbMod.Odb
 import typings.nodegit.oidMod.Oid
-import typings.nodegit.refDashDbMod.Refdb
+import typings.nodegit.refDbMod.Refdb
 import typings.nodegit.referenceMod.Reference
 import typings.nodegit.referenceMod.Reference.TYPE
 import typings.nodegit.remoteMod.Remote
-import typings.nodegit.revDashWalkMod.Revwalk
+import typings.nodegit.revWalkMod.Revwalk
 import typings.nodegit.signatureMod.Signature
-import typings.nodegit.statusDashFileMod.StatusFile
-import typings.nodegit.statusDashOptionsMod.StatusOptions
+import typings.nodegit.statusFileMod.StatusFile
+import typings.nodegit.statusOptionsMod.StatusOptions
 import typings.nodegit.tagMod.Tag
-import typings.nodegit.treeDashBuilderMod.Treebuilder
+import typings.nodegit.treeBuilderMod.Treebuilder
 import typings.nodegit.treeMod.Tree
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -205,7 +205,7 @@ class Repository () extends js.Object {
   /**
     * Lookup references for a repository.
     */
-  def getReferences(`type`: TYPE): js.Promise[js.Array[Reference]] = js.native
+  def getReferences(): js.Promise[js.Array[Reference]] = js.native
   /**
     * Gets a remote from the repo
     */

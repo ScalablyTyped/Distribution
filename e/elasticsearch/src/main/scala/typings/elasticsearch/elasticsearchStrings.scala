@@ -1,11 +1,11 @@
 package typings.elasticsearch
 
-import typings.elasticsearch.elasticsearchMod.CatBytes
-import typings.elasticsearch.elasticsearchMod.Conflicts
-import typings.elasticsearch.elasticsearchMod.DefaultOperator
-import typings.elasticsearch.elasticsearchMod.ExpandWildcards
-import typings.elasticsearch.elasticsearchMod.VersionType
-import typings.elasticsearch.elasticsearchMod._Refresh
+import typings.elasticsearch.mod.CatBytes
+import typings.elasticsearch.mod.Conflicts
+import typings.elasticsearch.mod.DefaultOperator
+import typings.elasticsearch.mod.ExpandWildcards
+import typings.elasticsearch.mod.VersionType
+import typings.elasticsearch.mod._Refresh
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

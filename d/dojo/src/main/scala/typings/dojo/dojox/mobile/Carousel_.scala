@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.ChildSwapViewProperties
 import typings.dojo.dojoStrings.height
 import typings.dojo.dojoStrings.itemWidth
@@ -10,7 +10,7 @@ import typings.dojo.dojoStrings.numVisible
 import typings.dojo.dojoStrings.pageIndicator
 import typings.dojo.dojoStrings.selectable
 import typings.dojo.dojoStrings.style
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,10 +42,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
-- typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.Carousel")
+- typings.dojo.dijit.Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
+- typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.Carousel")
 @js.native
-class Carousel_ () extends _WidgetBase {
+class Carousel_ () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -110,7 +110,7 @@ class Carousel_ () extends _WidgetBase {
     * @param widget             
     * @param insertIndex               Optional            
     */
-  def addChild(widget: _WidgetBase): Unit = js.native
+  def addChild(widget: WidgetBase): Unit = js.native
   /**
     * Makes the given widget a child of this widget.
     * Inserts specified child widget's dom node as a child of this widget's
@@ -119,7 +119,7 @@ class Carousel_ () extends _WidgetBase {
     * @param widget
     * @param insertIndex               Optional
     */
-  def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+  def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
   /**
     *
     */
@@ -129,7 +129,7 @@ class Carousel_ () extends _WidgetBase {
     *
     * @param w
     */
-  def getIndexByItemWidget(w: _WidgetBase): Double = js.native
+  def getIndexByItemWidget(w: WidgetBase): Double = js.native
   /**
     * Returns the index of this widget within its container parent.
     * It returns -1 if the parent does not exist, or if the parent
@@ -153,7 +153,7 @@ class Carousel_ () extends _WidgetBase {
     * 
     * @param child             
     */
-  def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+  def getIndexOfChild(child: WidgetBase): js.Any = js.native
   /**
     * Returns the index of an item widget at a given index.
     *
@@ -228,7 +228,7 @@ class Carousel_ () extends _WidgetBase {
     *
     * @param e
     */
-  def onClick(e: Event): Unit = js.native
+  def onClick(e: Event_): Unit = js.native
   /**
     * A handler that is called after the fetch completes.
     *
@@ -259,13 +259,13 @@ class Carousel_ () extends _WidgetBase {
     *
     * @param e
     */
-  def onNextBtnClick(e: Event): Unit = js.native
+  def onNextBtnClick(e: Event_): Unit = js.native
   /**
     * Called when the "previous" button is clicked.
     *
     * @param e
     */
-  def onPrevBtnClick(e: Event): Unit = js.native
+  def onPrevBtnClick(e: Event_): Unit = js.native
   /**
     *
     * @param item
@@ -322,7 +322,7 @@ class Carousel_ () extends _WidgetBase {
     * 
     * @param widget             
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
   /**
     *
     */
@@ -343,7 +343,7 @@ class Carousel_ () extends _WidgetBase {
     *
     * @param itemWidget
     */
-  def select(itemWidget: _WidgetBase): Unit = js.native
+  def select(itemWidget: WidgetBase): Unit = js.native
   @JSName("set")
   def set_ChildSwapViewProperties(property: ChildSwapViewProperties, value: js.Object): Unit = js.native
   @JSName("set")
@@ -369,7 +369,7 @@ class Carousel_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_height(
     property: height,
@@ -379,7 +379,7 @@ class Carousel_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_itemWidth(
     property: itemWidth,
@@ -389,7 +389,7 @@ class Carousel_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_navButton(
     property: navButton,
@@ -399,7 +399,7 @@ class Carousel_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_numVisible(
     property: numVisible,
@@ -409,7 +409,7 @@ class Carousel_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pageIndicator(
     property: pageIndicator,
@@ -419,7 +419,7 @@ class Carousel_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_selectable(
     property: selectable,
@@ -429,6 +429,6 @@ class Carousel_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

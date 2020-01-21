@@ -1,11 +1,11 @@
 package typings.protractor
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.seleniumDashWebdriver.chromeMod.Driver
-import typings.seleniumDashWebdriver.chromeMod.Options
-import typings.seleniumDashWebdriver.httpMod.Executor
-import typings.seleniumDashWebdriver.remoteMod.DriverService
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.CreateSessionCapabilities
+import typings.seleniumWebdriver.chromeMod.Driver
+import typings.seleniumWebdriver.chromeMod.Options
+import typings.seleniumWebdriver.httpMod.Executor
+import typings.seleniumWebdriver.mod.CreateSessionCapabilities
+import typings.seleniumWebdriver.remoteMod.DriverService
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

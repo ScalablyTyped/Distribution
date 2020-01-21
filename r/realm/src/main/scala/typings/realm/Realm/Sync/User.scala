@@ -1,7 +1,7 @@
 package typings.realm.Realm.Sync
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.realm.Anon_Provider
+import typings.realm.AnonProvider
 import typings.realm.Realm.Configuration
 import typings.realm.Realm.PartialConfiguration
 import typings.realm.realmStrings.any
@@ -49,7 +49,7 @@ class User () extends js.Object {
 @js.native
 object User extends js.Object {
   val all: StringDictionary[User] = js.native
-  val current: User = js.native
+  val current: js.UndefOr[User] = js.native
   // Deprecated
   /** @deprecated, to be removed in future versions */
   def adminUser(adminToken: String): User = js.native
@@ -67,7 +67,7 @@ object User extends js.Object {
   /** @deprecated, to be removed in future versions */
   def register(server: String, username: String, password: String): js.Promise[User] = js.native
   /** @deprecated, to be removed in future versions */
-  def registerWithProvider(server: String, options: Anon_Provider): js.Promise[User] = js.native
+  def registerWithProvider(server: String, options: AnonProvider): js.Promise[User] = js.native
   def requestEmailConfirmation(server: String, email: String): js.Promise[Unit] = js.native
   def requestPasswordReset(server: String, email: String): js.Promise[Unit] = js.native
 }

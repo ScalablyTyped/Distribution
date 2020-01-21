@@ -1,12 +1,12 @@
 package typings.baseui.ratingMod
 
-import typings.baseui.Anon_ValueNumber
+import typings.baseui.AnonValueNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EmoticonRatingProps extends js.Object {
-  var onChange: js.UndefOr[js.Function1[/* args */ Anon_ValueNumber, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* args */ AnonValueNumber, _]] = js.undefined
   var overrides: js.UndefOr[RatingOverrides] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
 }
@@ -14,7 +14,7 @@ trait EmoticonRatingProps extends js.Object {
 object EmoticonRatingProps {
   @scala.inline
   def apply(
-    onChange: /* args */ Anon_ValueNumber => _ = null,
+    onChange: /* args */ AnonValueNumber => _ = null,
     overrides: RatingOverrides = null,
     value: Int | Double = null
   ): EmoticonRatingProps = {

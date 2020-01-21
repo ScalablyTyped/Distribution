@@ -5,5 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Core {
-  type SignalHandler = js.Function2[/* signalNotifier */ SignalNotifier, /* timedOut */ Boolean, Unit]
+  type SignalHandler = js.Function2[
+    /* signalNotifier */ typings.winrt.Windows.System.Threading.Core.SignalNotifier, 
+    /* timedOut */ scala.Boolean, 
+    scala.Unit
+  ]
 }

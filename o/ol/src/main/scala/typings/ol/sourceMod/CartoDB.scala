@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceCartoDBMod.Options
-import typings.ol.sourceCartoDBMod.default
+import typings.ol.cartoDBMod.Options
+import typings.ol.cartoDBMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

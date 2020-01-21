@@ -1,6 +1,6 @@
 package typings.strange
 
-import typings.strange.strangeMod.Bounds
+import typings.strange.mod.Bounds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

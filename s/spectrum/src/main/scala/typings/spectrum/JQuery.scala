@@ -15,7 +15,7 @@ import typings.spectrum.spectrumStrings.reflow
 import typings.spectrum.spectrumStrings.set
 import typings.spectrum.spectrumStrings.show
 import typings.spectrum.spectrumStrings.toggle
-import typings.tinycolor2.tinycolor2Mod.Instance
+import typings.tinycolor2.mod.Instance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

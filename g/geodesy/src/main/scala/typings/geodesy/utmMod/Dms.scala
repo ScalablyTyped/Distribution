@@ -1,8 +1,8 @@
 package typings.geodesy.utmMod
 
 import typings.geodesy.dmsMod.Precision
-import typings.geodesy.geodesyMod.Dp
-import typings.geodesy.geodesyMod.Format
+import typings.geodesy.mod.Dp
+import typings.geodesy.mod.Format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("geodesy/utm", "Dms")
 @js.native
 class Dms ()
-  extends typings.geodesy.latlonDashEllipsoidalDashDatumMod.Dms
+  extends typings.geodesy.latlonEllipsoidalDatumMod.Dms
 
 /* static members */
 @JSImport("geodesy/utm", "Dms")

@@ -1,6 +1,6 @@
 package typings.webix.webix.ui
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import scala.scalajs.js
@@ -48,7 +48,7 @@ class text () extends baseview {
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
   @JSName("$tooltipMove")
-  def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
+  def $tooltipMove(t: HTMLElement, e: Event_, text: String): Unit = js.native
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   def attachEvent(`type`: textEventName, functor: WebixCallback): String | Double = js.native

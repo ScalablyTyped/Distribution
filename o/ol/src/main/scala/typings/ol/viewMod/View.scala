@@ -52,10 +52,10 @@ trait View
   def endInteractionInternal(opt_duration: Double, opt_resolutionDirection: Double, opt_anchor: Coordinate): Unit = js.native
   def fit(geometryOrExtent: Extent): Unit = js.native
   def fit(geometryOrExtent: Extent, opt_options: FitOptions): Unit = js.native
-  def fit(geometryOrExtent: typings.ol.geomSimpleGeometryMod.default): Unit = js.native
-  def fit(geometryOrExtent: typings.ol.geomSimpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
-  def fitInternal(geometry: typings.ol.geomSimpleGeometryMod.default): Unit = js.native
-  def fitInternal(geometry: typings.ol.geomSimpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
+  def fit(geometryOrExtent: typings.ol.simpleGeometryMod.default): Unit = js.native
+  def fit(geometryOrExtent: typings.ol.simpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
+  def fitInternal(geometry: typings.ol.simpleGeometryMod.default): Unit = js.native
+  def fitInternal(geometry: typings.ol.simpleGeometryMod.default, opt_options: FitOptions): Unit = js.native
   def getAnimating(): Boolean = js.native
   def getCenter(): Coordinate = js.native
   def getCenterInternal(): Coordinate = js.native
@@ -79,7 +79,7 @@ trait View
   def getMaxZoom(): Double = js.native
   def getMinResolution(): Double = js.native
   def getMinZoom(): Double = js.native
-  def getProjection(): typings.ol.projProjectionMod.default = js.native
+  def getProjection(): typings.ol.projectionMod.default = js.native
   def getResolution(): Double = js.native
   def getResolutionForExtent(extent: Extent): Double = js.native
   def getResolutionForExtent(extent: Extent, opt_size: Size): Double = js.native

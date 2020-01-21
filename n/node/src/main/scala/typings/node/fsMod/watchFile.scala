@@ -1,6 +1,6 @@
 package typings.node.fsMod
 
-import typings.node.Anon_Interval
+import typings.node.AnonInterval
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object watchFile extends js.Object {
     */
   def apply(
     filename: PathLike,
-    options: Anon_Interval,
+    options: AnonInterval,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
   ): Unit = js.native
 }

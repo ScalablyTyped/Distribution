@@ -1,6 +1,6 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.CloneWithCustomizer
+import typings.lodash.mod.CloneWithCustomizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

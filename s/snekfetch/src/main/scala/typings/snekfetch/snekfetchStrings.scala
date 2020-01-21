@@ -1,6 +1,6 @@
 package typings.snekfetch
 
-import typings.snekfetch.snekfetchMod.methods
+import typings.snekfetch.mod.methods
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

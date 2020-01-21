@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * C++ highlight definitions
   *
   */
-@JSName("cpp")
 trait cpp_ extends js.Object {
   /**
     *

@@ -1,6 +1,6 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dijit.layout.ContentPane
 import typings.dojo.dojoStrings.canGoBack
 import typings.dojo.dojoStrings.doneFunction
@@ -69,7 +69,7 @@ class WizardPane () extends ContentPane {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_doneFunction(
     property: doneFunction,
@@ -79,7 +79,7 @@ class WizardPane () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_passFunction(
     property: passFunction,
@@ -89,6 +89,6 @@ class WizardPane () extends ContentPane {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

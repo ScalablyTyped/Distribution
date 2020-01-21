@@ -9,6 +9,9 @@ object tstlStrings {
   sealed trait divides extends js.Object
   
   @js.native
+  sealed trait experimental extends js.Object
+  
+  @js.native
   sealed trait lock extends js.Object
   
   @js.native
@@ -52,6 +55,8 @@ object tstlStrings {
   
   @scala.inline
   def divides: divides = "divides".asInstanceOf[divides]
+  @scala.inline
+  def experimental: experimental = "experimental".asInstanceOf[experimental]
   @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
   @scala.inline

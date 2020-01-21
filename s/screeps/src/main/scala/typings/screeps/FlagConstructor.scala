@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FlagConstructor
-  extends _Constructor[Flag]
+  extends Constructor[Flag]
      with Instantiable6[
       /* name */ String, 
       /* color */ ColorConstant, 

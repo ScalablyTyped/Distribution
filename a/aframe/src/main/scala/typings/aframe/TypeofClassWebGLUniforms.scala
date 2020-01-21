@@ -1,9 +1,9 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.three.srcRenderersWebglWebGLProgramMod.WebGLProgram
-import typings.three.srcRenderersWebglWebGLTexturesMod.WebGLTextures
-import typings.three.threeMod.WebGLUniforms
+import typings.three.mod.WebGLUniforms
+import typings.three.webGLProgramMod.WebGLProgram
+import typings.three.webGLTexturesMod.WebGLTextures
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

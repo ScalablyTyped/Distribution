@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 /**
   * This interface describes a layer which provides marker objects to the renderer.
   */
-@JSName("IMarkerLayer")
 trait IMarkerLayer_ extends js.Object {
   /**
     * This method requests dom marker objects for provided bounding rectangle.

@@ -13,16 +13,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object utilMod extends js.Object {
   @js.native
-  class LruCache () extends Class_LruCache
+  class LruCache () extends ClassLruCache
   
   @js.native
-  class Stats () extends Class_Stats
+  class Stats () extends ClassStats
   
   def _extend(v: js.Any, objs: js.Any*): js.Any = js.native
   def buildInfo(): js.Object = js.native
   def clone(v: js.Any): js.Any = js.native
-  def compile(srcname: String, script: String): Class_Buffer = js.native
-  def compile(srcname: String, script: String, mode: Double): Class_Buffer = js.native
+  def compile(srcname: String, script: String): ClassBuffer = js.native
+  def compile(srcname: String, script: String, mode: Double): ClassBuffer = js.native
   def deepFreeze(v: js.Any): Unit = js.native
   def difference(list: js.Array[_], arrs: js.Any*): js.Array[_] = js.native
   def each(list: js.Any, iterator: js.Function): js.Any = js.native

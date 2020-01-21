@@ -1,17 +1,17 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
-import typings.jsrsasign.Anon_Array
-import typings.jsrsasign.Anon_CertString
-import typings.jsrsasign.Anon_Certs
-import typings.jsrsasign.Anon_Cms
-import typings.jsrsasign.Anon_E
-import typings.jsrsasign.Anon_EciObj
-import typings.jsrsasign.Anon_Hex
-import typings.jsrsasign.Anon_IsValid
-import typings.jsrsasign.Anon_Issuer
-import typings.jsrsasign.Anon_Name
-import typings.jsrsasign.Anon_Oid
-import typings.jsrsasign.Anon_Sorted
+import typings.jsrsasign.AnonArray
+import typings.jsrsasign.AnonCertString
+import typings.jsrsasign.AnonCerts
+import typings.jsrsasign.AnonCms
+import typings.jsrsasign.AnonE
+import typings.jsrsasign.AnonEciObj
+import typings.jsrsasign.AnonHex
+import typings.jsrsasign.AnonIsValid
+import typings.jsrsasign.AnonIssuer
+import typings.jsrsasign.AnonName
+import typings.jsrsasign.AnonOid
+import typings.jsrsasign.AnonSorted
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
@@ -89,7 +89,7 @@ object cms extends js.Object {
     */
   @js.native
   class AttributeList () extends ASN1Object {
-    def this(params: Anon_Sorted) = this()
+    def this(params: AnonSorted) = this()
     def add(item: Attribute): Unit = js.native
     def clear(): Unit = js.native
     def length(): Double = js.native
@@ -135,8 +135,8 @@ object cms extends js.Object {
     */
   @js.native
   class ContentType () extends Attribute {
-    def this(params: Anon_Name) = this()
-    def this(params: Anon_Oid) = this()
+    def this(params: AnonName) = this()
+    def this(params: AnonOid) = this()
   }
   
   /**
@@ -189,8 +189,8 @@ object cms extends js.Object {
   @js.native
   class IssuerAndSerialNumber () extends ASN1Object {
     def this(params: String) = this()
-    def this(params: Anon_CertString) = this()
-    def this(params: Anon_Issuer) = this()
+    def this(params: AnonCertString) = this()
+    def this(params: AnonIssuer) = this()
     def setByCertPEM(certPEM: String): Unit = js.native
   }
   
@@ -210,7 +210,7 @@ object cms extends js.Object {
     */
   @js.native
   class MessageDigest () extends Attribute {
-    def this(params: Anon_Hex) = this()
+    def this(params: AnonHex) = this()
   }
   
   /**
@@ -302,10 +302,10 @@ object cms extends js.Object {
       *                                  eciObj: sd.dEncapContentInfo,
       *                                  hashAlg: 'sha256'});
       */
-    def setForContentAndHash(params: Anon_EciObj): Unit = js.native
+    def setForContentAndHash(params: AnonEciObj): Unit = js.native
     def setSignerIdentifier(params: String): Unit = js.native
     def sign(keyParam: String, sigAlg: String): Unit = js.native
-    def sign(keyParam: Anon_E, sigAlg: String): Unit = js.native
+    def sign(keyParam: AnonE, sigAlg: String): Unit = js.native
     def sign(keyParam: DSA, sigAlg: String): Unit = js.native
     def sign(keyParam: ECDSA, sigAlg: String): Unit = js.native
     def sign(keyParam: JsonWebKey, sigAlg: String): Unit = js.native
@@ -371,7 +371,7 @@ object cms extends js.Object {
     */
   @js.native
   class SigningCertificateV2 () extends Attribute {
-    def this(params: Anon_Array) = this()
+    def this(params: AnonArray) = this()
     def this(params: ArrayParam[String]) = this()
     def setCerts(listPEM: js.Array[String], hashAlg: String): Unit = js.native
   }
@@ -428,7 +428,7 @@ object cms extends js.Object {
       * });
       */
     def SignedData(): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
-    def SignedData(param: Anon_Certs): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
+    def SignedData(param: AnonCerts): typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
     /**
       * verify SignedData specified by JSON parameters
       *
@@ -453,8 +453,8 @@ object cms extends js.Object {
       *   ]
       * }
       */
-    def verifySignedData(): Anon_IsValid = js.native
-    def verifySignedData(param: Anon_Cms): Anon_IsValid = js.native
+    def verifySignedData(): AnonIsValid = js.native
+    def verifySignedData(param: AnonCms): AnonIsValid = js.native
   }
   
 }

@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlScaleLineMod.Options
-import typings.ol.controlScaleLineMod.default
+import typings.ol.scaleLineMod.Options
+import typings.ol.scaleLineMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

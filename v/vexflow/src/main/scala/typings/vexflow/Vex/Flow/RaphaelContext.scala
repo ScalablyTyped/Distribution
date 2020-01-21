@@ -1,6 +1,7 @@
 package typings.vexflow.Vex.Flow
 
 import typings.std.HTMLElement
+import typings.vexflow.AnonColor
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,10 +12,11 @@ import scala.scalajs.js.annotation._
 class RaphaelContext protected () extends IRenderContext {
   def this(element: HTMLElement) = this()
   @JSName("glow")
-  def glow_RaphaelContext(): RaphaelContext = js.native
+  def glow_AnonColor(): AnonColor = js.native
   def rect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  //TODO remove the following lines once TypeScript allows subclass overrides with type changes or type inconsistencies mentioned below are fixed
   @JSName("setLineWidth")
-  def setLineWidth_Unit(width: Double): Unit = js.native
+  def setLineWidth_RaphaelContext(width: Double): RaphaelContext = js.native
   def setViewBox(viewBox: String): Unit = js.native
 }
 

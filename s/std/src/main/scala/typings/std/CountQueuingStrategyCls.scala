@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CountQueuingStrategy")
 @js.native
 class CountQueuingStrategyCls protected () extends CountQueuingStrategy {
-  def this(options: Anon_HighWaterMark) = this()
+  def this(options: AnonHighWaterMark) = this()
   /* CompleteClass */
   @JSName("highWaterMark")
   override var highWaterMark_CountQueuingStrategy: Double = js.native

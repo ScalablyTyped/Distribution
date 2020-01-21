@@ -1,7 +1,7 @@
 package typings.ol
 
-import typings.ol.layerGroupMod.Options
-import typings.ol.layerGroupMod.default
+import typings.ol.groupMod.Options
+import typings.ol.groupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,14 +16,14 @@ object layerMod extends js.Object {
   
   @js.native
   class Heatmap ()
-    extends typings.ol.layerHeatmapMod.default {
-    def this(opt_options: typings.ol.layerHeatmapMod.Options) = this()
+    extends typings.ol.heatmapMod.default {
+    def this(opt_options: typings.ol.heatmapMod.Options) = this()
   }
   
   @js.native
   class Image ()
-    extends typings.ol.layerImageMod.default {
-    def this(opt_options: typings.ol.layerBaseImageMod.Options) = this()
+    extends typings.ol.imageMod.default {
+    def this(opt_options: typings.ol.baseImageMod.Options) = this()
   }
   
   @js.native
@@ -34,26 +34,26 @@ object layerMod extends js.Object {
   
   @js.native
   class Tile ()
-    extends typings.ol.layerTileMod.default {
-    def this(opt_options: typings.ol.layerBaseTileMod.Options) = this()
+    extends typings.ol.tileMod.default {
+    def this(opt_options: typings.ol.baseTileMod.Options) = this()
   }
   
   @js.native
   class Vector ()
-    extends typings.ol.layerVectorMod.default {
-    def this(opt_options: typings.ol.layerBaseVectorMod.Options) = this()
+    extends typings.ol.vectorMod.default {
+    def this(opt_options: typings.ol.baseVectorMod.Options) = this()
   }
   
   @js.native
   class VectorImage ()
-    extends typings.ol.layerVectorImageMod.default {
-    def this(opt_options: typings.ol.layerVectorImageMod.Options) = this()
+    extends typings.ol.vectorImageMod.default {
+    def this(opt_options: typings.ol.vectorImageMod.Options) = this()
   }
   
   @js.native
   class VectorTile ()
-    extends typings.ol.layerVectorTileMod.default {
-    def this(opt_options: typings.ol.layerVectorTileMod.Options) = this()
+    extends typings.ol.vectorTileMod.default {
+    def this(opt_options: typings.ol.vectorTileMod.Options) = this()
   }
   
 }

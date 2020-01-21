@@ -9,7 +9,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("PrefixFree")
 @js.native
 trait PrefixFree_ extends js.Object {
   /**

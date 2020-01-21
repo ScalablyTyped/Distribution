@@ -1,10 +1,10 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.Dictionary
-import typings.lodash.lodashMod.NumericDictionary
-import typings.lodash.lodashMod.PartialObject
-import typings.lodash.lodashMod.ValueKeyIteratee
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.Dictionary
+import typings.lodash.mod.NumericDictionary
+import typings.lodash.mod.PartialObject
+import typings.lodash.mod.ValueKeyIteratee
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

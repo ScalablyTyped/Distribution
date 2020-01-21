@@ -1,7 +1,7 @@
 package typings.winrt.Windows.Foundation.Collections
 
-import typings.winrt.Anon_Index
-import typings.winrt.Anon_Items
+import typings.winrt.AnonIndex
+import typings.winrt.AnonItems
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +27,8 @@ trait IVectorView[T] extends IIterable[T] {
     thisArg: js.Any
   ): Unit = js.native
   def getAt(index: Double): T = js.native
-  def getMany(startIndex: Double): Anon_Items[T] = js.native
-  def indexOf(value: T): Anon_Index = js.native
+  def getMany(startIndex: Double): AnonItems[T] = js.native
+  def indexOf(value: T): AnonIndex = js.native
   def join(seperator: String): String = js.native
   def lastIndexOf(searchElement: T): Double = js.native
   def lastIndexOf(searchElement: T, fromIndex: Double): Double = js.native

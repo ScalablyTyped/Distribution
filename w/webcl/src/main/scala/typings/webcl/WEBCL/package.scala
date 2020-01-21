@@ -5,13 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WEBCL {
-  import typings.webcl.webclNumbers.`0x1081`
-  import typings.webcl.webclNumbers.`0x1`
-
   /* cl_context_info  */
-  type ContextInfo = `0x1081`
+  type ContextInfo = typings.webcl.webclNumbers.`0x1081`
   /* cl_device_exec_capabilities - bitfield */
-  type DeviceExecCapabilitiesBits = `0x1`
+  type DeviceExecCapabilitiesBits = typings.webcl.webclNumbers.`0x1`
   //2.5
-  type WebCLCallback = js.Function1[/* event */ WebCLEvent, Unit]
+  type WebCLCallback = js.Function1[/* event */ typings.webcl.WEBCL.WebCLEvent, scala.Unit]
 }

@@ -1,0 +1,12 @@
+package typings.naverWhale.whale.ttsEngine
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("chrome.ttsEngine.onSpeak")
+@js.native
+object onSpeak
+  extends TopLevel[typings.chrome.chrome.ttsEngine.TtsEngineSpeakEvent]
+

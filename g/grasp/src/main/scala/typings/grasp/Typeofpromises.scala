@@ -1,20 +1,20 @@
 package typings.grasp
 
 import typings.grasp.graspStrings.buffer
-import typings.node.Anon_BufferBytesReadNumberTBuffer
-import typings.node.Anon_BufferBytesWrittenNumberString
-import typings.node.Anon_BufferBytesWrittenNumberTBuffer
-import typings.node.Anon_BufferEncoding
-import typings.node.Anon_BufferEncodingFalse
-import typings.node.Anon_EncodingBufferEncoding
-import typings.node.Anon_EncodingFalseWithFileTypes
-import typings.node.Anon_EncodingFalseWithFileTypesBufferEncoding
-import typings.node.Anon_EncodingFlagBufferEncoding
-import typings.node.Anon_EncodingFlagModeNull
-import typings.node.Anon_EncodingFlagNullNumber
-import typings.node.Anon_EncodingFlagNullNumberString
-import typings.node.Anon_EncodingNull
-import typings.node.Anon_EncodingTrue
+import typings.node.AnonBufferBytesReadNumberTBuffer
+import typings.node.AnonBufferBytesWrittenNumberString
+import typings.node.AnonBufferBytesWrittenNumberTBuffer
+import typings.node.AnonBufferEncoding
+import typings.node.AnonBufferEncodingFalse
+import typings.node.AnonEncodingBufferEncoding
+import typings.node.AnonEncodingFalseWithFileTypes
+import typings.node.AnonEncodingFalseWithFileTypesBufferEncoding
+import typings.node.AnonEncodingFlagBufferEncoding
+import typings.node.AnonEncodingFlagModeNull
+import typings.node.AnonEncodingFlagNullNumber
+import typings.node.AnonEncodingFlagNullNumberString
+import typings.node.AnonEncodingNull
+import typings.node.AnonEncodingTrue
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.fsMod.Dir
@@ -54,10 +54,10 @@ trait Typeofpromises extends js.Object {
     */
   def appendFile(path: PathLike, data: js.Any): js.Promise[Unit] = js.native
   def appendFile(path: PathLike, data: js.Any, options: String): js.Promise[Unit] = js.native
-  def appendFile(path: PathLike, data: js.Any, options: Anon_EncodingFlagModeNull): js.Promise[Unit] = js.native
+  def appendFile(path: PathLike, data: js.Any, options: AnonEncodingFlagModeNull): js.Promise[Unit] = js.native
   def appendFile(path: FileHandle, data: js.Any): js.Promise[Unit] = js.native
   def appendFile(path: FileHandle, data: js.Any, options: String): js.Promise[Unit] = js.native
-  def appendFile(path: FileHandle, data: js.Any, options: Anon_EncodingFlagModeNull): js.Promise[Unit] = js.native
+  def appendFile(path: FileHandle, data: js.Any, options: AnonEncodingFlagModeNull): js.Promise[Unit] = js.native
   /**
     * Asynchronous chmod(2) - Change permissions of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -177,9 +177,9 @@ trait Typeofpromises extends js.Object {
     * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def mkdtemp(prefix: String, options: Anon_BufferEncoding): js.Promise[Buffer] = js.native
-  def mkdtemp(prefix: String, options: Anon_EncodingBufferEncoding): js.Promise[String] = js.native
-  def mkdtemp(prefix: String, options: Anon_EncodingNull): js.Promise[String | Buffer] = js.native
+  def mkdtemp(prefix: String, options: AnonBufferEncoding): js.Promise[Buffer] = js.native
+  def mkdtemp(prefix: String, options: AnonEncodingBufferEncoding): js.Promise[String] = js.native
+  def mkdtemp(prefix: String, options: AnonEncodingNull): js.Promise[String | Buffer] = js.native
   def mkdtemp(prefix: String, options: BufferEncoding): js.Promise[String] = js.native
   @JSName("mkdtemp")
   def mkdtemp_buffer(prefix: String, options: buffer): js.Promise[Buffer] = js.native
@@ -206,14 +206,14 @@ trait Typeofpromises extends js.Object {
     * @param position The offset from the beginning of the file from which data should be read. If
     * `null`, data will be read from the current position.
     */
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
-  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[Anon_BufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
+  def read[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[AnonBufferBytesReadNumberTBuffer[TBuffer]] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -230,15 +230,15 @@ trait Typeofpromises extends js.Object {
     * @param options An object that may contain an optional flag.
     * If a flag is not provided, it defaults to `'r'`.
     */
-  def readFile(path: PathLike, options: Anon_EncodingFlagBufferEncoding): js.Promise[String] = js.native
-  def readFile(path: PathLike, options: Anon_EncodingFlagNullNumber): js.Promise[Buffer] = js.native
-  def readFile(path: PathLike, options: Anon_EncodingFlagNullNumberString): js.Promise[String | Buffer] = js.native
+  def readFile(path: PathLike, options: AnonEncodingFlagBufferEncoding): js.Promise[String] = js.native
+  def readFile(path: PathLike, options: AnonEncodingFlagNullNumber): js.Promise[Buffer] = js.native
+  def readFile(path: PathLike, options: AnonEncodingFlagNullNumberString): js.Promise[String | Buffer] = js.native
   def readFile(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   def readFile(path: FileHandle): js.Promise[Buffer] = js.native
   def readFile(path: FileHandle, options: String): js.Promise[String | Buffer] = js.native
-  def readFile(path: FileHandle, options: Anon_EncodingFlagBufferEncoding): js.Promise[String] = js.native
-  def readFile(path: FileHandle, options: Anon_EncodingFlagNullNumber): js.Promise[Buffer] = js.native
-  def readFile(path: FileHandle, options: Anon_EncodingFlagNullNumberString): js.Promise[String | Buffer] = js.native
+  def readFile(path: FileHandle, options: AnonEncodingFlagBufferEncoding): js.Promise[String] = js.native
+  def readFile(path: FileHandle, options: AnonEncodingFlagNullNumber): js.Promise[Buffer] = js.native
+  def readFile(path: FileHandle, options: AnonEncodingFlagNullNumberString): js.Promise[String | Buffer] = js.native
   def readFile(path: FileHandle, options: BufferEncoding): js.Promise[String] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
@@ -252,15 +252,15 @@ trait Typeofpromises extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdir(path: PathLike, options: Anon_BufferEncodingFalse): js.Promise[js.Array[Buffer]] = js.native
-  def readdir(path: PathLike, options: Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[Buffer | String]] = js.native
-  def readdir(path: PathLike, options: Anon_EncodingFalseWithFileTypesBufferEncoding): js.Promise[js.Array[String]] = js.native
+  def readdir(path: PathLike, options: AnonBufferEncodingFalse): js.Promise[js.Array[Buffer]] = js.native
+  def readdir(path: PathLike, options: AnonEncodingFalseWithFileTypes): js.Promise[js.Array[Buffer | String]] = js.native
+  def readdir(path: PathLike, options: AnonEncodingFalseWithFileTypesBufferEncoding): js.Promise[js.Array[String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
-  def readdir(path: PathLike, options: Anon_EncodingTrue): js.Promise[js.Array[Dirent]] = js.native
+  def readdir(path: PathLike, options: AnonEncodingTrue): js.Promise[js.Array[Dirent]] = js.native
   def readdir(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
   @JSName("readdir")
   def readdir_buffer(path: PathLike, options: buffer): js.Promise[js.Array[Buffer]] = js.native
@@ -276,9 +276,9 @@ trait Typeofpromises extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlink(path: PathLike, options: Anon_BufferEncoding): js.Promise[Buffer] = js.native
-  def readlink(path: PathLike, options: Anon_EncodingBufferEncoding): js.Promise[String] = js.native
-  def readlink(path: PathLike, options: Anon_EncodingNull): js.Promise[String | Buffer] = js.native
+  def readlink(path: PathLike, options: AnonBufferEncoding): js.Promise[Buffer] = js.native
+  def readlink(path: PathLike, options: AnonEncodingBufferEncoding): js.Promise[String] = js.native
+  def readlink(path: PathLike, options: AnonEncodingNull): js.Promise[String | Buffer] = js.native
   def readlink(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   @JSName("readlink")
   def readlink_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
@@ -294,9 +294,9 @@ trait Typeofpromises extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpath(path: PathLike, options: Anon_BufferEncoding): js.Promise[Buffer] = js.native
-  def realpath(path: PathLike, options: Anon_EncodingBufferEncoding): js.Promise[String] = js.native
-  def realpath(path: PathLike, options: Anon_EncodingNull): js.Promise[String | Buffer] = js.native
+  def realpath(path: PathLike, options: AnonBufferEncoding): js.Promise[Buffer] = js.native
+  def realpath(path: PathLike, options: AnonEncodingBufferEncoding): js.Promise[String] = js.native
+  def realpath(path: PathLike, options: AnonEncodingNull): js.Promise[String | Buffer] = js.native
   def realpath(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
   @JSName("realpath")
   def realpath_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
@@ -364,10 +364,10 @@ trait Typeofpromises extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     * @param encoding The expected string encoding.
     */
-  def write(handle: FileHandle, string: js.Any): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
-  def write(handle: FileHandle, string: js.Any, position: Double): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
-  def write(handle: FileHandle, string: js.Any, position: Double, encoding: String): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
-  def write(handle: FileHandle, string: js.Any, position: Null, encoding: String): js.Promise[Anon_BufferBytesWrittenNumberString] = js.native
+  def write(handle: FileHandle, string: js.Any): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
+  def write(handle: FileHandle, string: js.Any, position: Double): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
+  def write(handle: FileHandle, string: js.Any, position: Double, encoding: String): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
+  def write(handle: FileHandle, string: js.Any, position: Null, encoding: String): js.Promise[AnonBufferBytesWrittenNumberString] = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
     * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
@@ -378,14 +378,14 @@ trait Typeofpromises extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
-  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Double, length: Null, position: Double): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Double, position: Double): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: Null, length: Null, position: Double): js.Promise[AnonBufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
     * It is unsafe to call `fsPromises.writeFile()` multiple times on the same file without waiting for the `Promise` to be resolved (or rejected).
@@ -401,9 +401,9 @@ trait Typeofpromises extends js.Object {
     */
   def writeFile(path: PathLike, data: js.Any): js.Promise[Unit] = js.native
   def writeFile(path: PathLike, data: js.Any, options: String): js.Promise[Unit] = js.native
-  def writeFile(path: PathLike, data: js.Any, options: Anon_EncodingFlagModeNull): js.Promise[Unit] = js.native
+  def writeFile(path: PathLike, data: js.Any, options: AnonEncodingFlagModeNull): js.Promise[Unit] = js.native
   def writeFile(path: FileHandle, data: js.Any): js.Promise[Unit] = js.native
   def writeFile(path: FileHandle, data: js.Any, options: String): js.Promise[Unit] = js.native
-  def writeFile(path: FileHandle, data: js.Any, options: Anon_EncodingFlagModeNull): js.Promise[Unit] = js.native
+  def writeFile(path: FileHandle, data: js.Any, options: AnonEncodingFlagModeNull): js.Promise[Unit] = js.native
 }
 

@@ -1,36 +1,36 @@
 package typings.ethers.ethersMod
 
-import typings.ethers.Anon_From
-import typings.ethers.distTypesUtilsTypesMod.Arrayish
-import typings.ethers.distTypesUtilsTypesMod.BigNumber
-import typings.ethers.distTypesUtilsTypesMod.BigNumberish
-import typings.ethers.distTypesUtilsTypesMod.CoerceFunc
-import typings.ethers.distTypesUtilsTypesMod.ConnectionInfo
-import typings.ethers.distTypesUtilsTypesMod.EventFragment
-import typings.ethers.distTypesUtilsTypesMod.FunctionFragment
-import typings.ethers.distTypesUtilsTypesMod.Network
-import typings.ethers.distTypesUtilsTypesMod.Networkish
-import typings.ethers.distTypesUtilsTypesMod.ParamType
-import typings.ethers.distTypesUtilsTypesMod.Signature
-import typings.ethers.distTypesUtilsTypesMod.Transaction
-import typings.ethers.distTypesUtilsTypesMod.UnsignedTransaction
-import typings.ethers.distTypesUtilsUtf8Mod.UnicodeNormalizationForm
+import typings.ethers.AnonFrom
 import typings.ethers.ethersStrings.Ξ
+import typings.ethers.typesMod.Arrayish
+import typings.ethers.typesMod.BigNumber
+import typings.ethers.typesMod.BigNumberish
+import typings.ethers.typesMod.CoerceFunc
+import typings.ethers.typesMod.ConnectionInfo
+import typings.ethers.typesMod.EventFragment
+import typings.ethers.typesMod.FunctionFragment
+import typings.ethers.typesMod.Network
+import typings.ethers.typesMod.Networkish
+import typings.ethers.typesMod.ParamType
+import typings.ethers.typesMod.Signature
+import typings.ethers.typesMod.Transaction
+import typings.ethers.typesMod.UnsignedTransaction
+import typings.ethers.utf8Mod.UnicodeNormalizationForm
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ethers", "utils")
+@JSImport("ethers/dist/types/ethers", "utils")
 @js.native
 object utils extends js.Object {
   @js.native
   class AbiCoder ()
-    extends typings.ethers.distTypesEthersMod.utils.AbiCoder {
+    extends typings.ethers.utilsMod.AbiCoder {
     def this(coerceFunc: CoerceFunc) = this()
   }
   
-  val defaultAbiCoder: typings.ethers.distTypesUtilsAbiDashCoderMod.AbiCoder = js.native
+  val defaultAbiCoder: typings.ethers.abiCoderMod.AbiCoder = js.native
   val etherSymbol: Ξ = js.native
   def arrayify(value: Arrayish): Uint8Array = js.native
   def arrayify(value: BigNumber): Uint8Array = js.native
@@ -53,7 +53,7 @@ object utils extends js.Object {
   def formatUnits(value: BigNumberish, unitType: Double): String = js.native
   def formatUnits(value: BigNumberish, unitType: Double, options: js.Any): String = js.native
   def getAddress(address: String): String = js.native
-  def getContractAddress(transaction: Anon_From): String = js.native
+  def getContractAddress(transaction: AnonFrom): String = js.native
   def getIcapAddress(address: String): String = js.native
   def getJsonWalletAddress(json: String): String = js.native
   def getNetwork(network: Networkish): Network = js.native
@@ -145,23 +145,23 @@ object utils extends js.Object {
   object types extends js.Object {
     @js.native
     abstract class BigNumber ()
-      extends typings.ethers.distTypesUtilsTypesMod.BigNumber
+      extends typings.ethers.typesMod.BigNumber
     
     @js.native
     abstract class HDNode ()
-      extends typings.ethers.distTypesUtilsTypesMod.HDNode
+      extends typings.ethers.typesMod.HDNode
     
     @js.native
     abstract class Indexed ()
-      extends typings.ethers.distTypesUtilsTypesMod.Indexed
+      extends typings.ethers.typesMod.Indexed
     
     @js.native
     abstract class MinimalProvider ()
-      extends typings.ethers.distTypesUtilsTypesMod.MinimalProvider
+      extends typings.ethers.typesMod.MinimalProvider
     
     @js.native
     abstract class Signer ()
-      extends typings.ethers.distTypesUtilsTypesMod.Signer
+      extends typings.ethers.typesMod.Signer
     
   }
   

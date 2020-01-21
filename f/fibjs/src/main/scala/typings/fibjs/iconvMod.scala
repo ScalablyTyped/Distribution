@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 @JSImport("iconv", JSImport.Namespace)
 @js.native
 object iconvMod extends js.Object {
-  def decode(charset: String, data: Class_Buffer): String = js.native
-  def encode(charset: String, data: String): Class_Buffer = js.native
+  def decode(charset: String, data: ClassBuffer): String = js.native
+  def encode(charset: String, data: String): ClassBuffer = js.native
   def isEncoding(charset: String): Boolean = js.native
 }
 

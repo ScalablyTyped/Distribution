@@ -1,9 +1,9 @@
 package typings.baseui.toastMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.react.reactMod.Key
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
+import typings.react.mod.Key
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /** A message received by a target object. */
 @js.native
-trait MessageEvent extends Event {
+trait MessageEvent extends Event_ {
   /**
     * Returns the data of the message.
     */

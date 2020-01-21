@@ -40,6 +40,16 @@ object constants extends js.Object {
   val RSA_PSS_SALTLEN_MAX_SIGN: Double = js.native
   val RSA_SSLV23_PADDING: Double = js.native
   val RSA_X931_PADDING: Double = js.native
+  @JSName("SSL_OP_NO_SSLv2")
+  val SSLOPNOSSLv2: Double = js.native
+  @JSName("SSL_OP_NO_SSLv3")
+  val SSLOPNOSSLv3: Double = js.native
+  @JSName("SSL_OP_NO_TLSv1")
+  val SSLOPNOTLSv1: Double = js.native
+  @JSName("SSL_OP_NO_TLSv1_1")
+  val SSLOPNOTLSv11: Double = js.native
+  @JSName("SSL_OP_NO_TLSv1_2")
+  val SSLOPNOTLSv12: Double = js.native
   /** Applies multiple bug workarounds within OpenSSL. See https://www.openssl.org/docs/man1.0.2/ssl/SSL_CTX_set_options.html for detail. */
   val SSL_OP_ALL: Double = js.native
   /** Allows legacy insecure renegotiation between OpenSSL and unpatched clients or servers. See https://www.openssl.org/docs/man1.0.2/ssl/SSL_CTX_set_options.html. */
@@ -71,12 +81,7 @@ object constants extends js.Object {
   val SSL_OP_NO_QUERY_MTU: Double = js.native
   /** Instructs OpenSSL to always start a new session when performing renegotiation. */
   val SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: Double = js.native
-  val SSL_OP_NO_SSLv2: Double = js.native
-  val SSL_OP_NO_SSLv3: Double = js.native
   val SSL_OP_NO_TICKET: Double = js.native
-  val SSL_OP_NO_TLSv1: Double = js.native
-  val SSL_OP_NO_TLSv1_1: Double = js.native
-  val SSL_OP_NO_TLSv1_2: Double = js.native
   val SSL_OP_PKCS1_CHECK_1: Double = js.native
   val SSL_OP_PKCS1_CHECK_2: Double = js.native
   /** Instructs OpenSSL to always create a new key when using temporary/ephemeral DH parameters. */

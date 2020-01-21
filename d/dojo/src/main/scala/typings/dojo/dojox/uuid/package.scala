@@ -13,7 +13,7 @@ package object uuid {
     *
     * @param input       Optional
     */
-  type Uuid = js.Function1[/* input */ js.UndefOr[String], Unit]
+  type Uuid = js.Function1[/* input */ js.UndefOr[java.lang.String], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/uuid/generateRandomUuid.html
     *
@@ -38,7 +38,7 @@ package object uuid {
     * of randomness, which may or may not provide much randomness.
     *
     */
-  type generateRandomUuid = js.Function0[Unit]
+  type generateRandomUuid = js.Function0[scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/uuid/generateTimeBasedUuid.html
     *
@@ -52,5 +52,5 @@ package object uuid {
     *
     * @param node       OptionalA 12-character hex string representing either a pseudo-node orhardware-node (an IEEE 802.3 network node).  A hardware-nodewill be something like "017bf397618a", always with the first bitbeing 0.  A pseudo-node will be something like "f17bf397618a",always with the first bit being 1.
     */
-  type generateTimeBasedUuid = js.Function1[/* node */ js.UndefOr[String], Unit]
+  type generateTimeBasedUuid = js.Function1[/* node */ js.UndefOr[java.lang.String], scala.Unit]
 }

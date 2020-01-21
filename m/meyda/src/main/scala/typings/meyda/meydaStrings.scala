@@ -1,7 +1,7 @@
 package typings.meyda
 
-import typings.meyda.meydaMod.MeydaAudioFeature
-import typings.meyda.meydaMod.MeydaWindowingFunction
+import typings.meyda.mod.MeydaAudioFeature
+import typings.meyda.mod.MeydaWindowingFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.baseui.menuMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.styletronDashReact.styletronDashReactMod.StyletronComponent
+import typings.styletronReact.mod.StyletronComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

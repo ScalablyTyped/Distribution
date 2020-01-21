@@ -1,6 +1,6 @@
 package typings.prompts
 
-import typings.prompts.promptsMod.PromptType
+import typings.prompts.mod.PromptType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

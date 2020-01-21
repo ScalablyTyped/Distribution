@@ -1,10 +1,10 @@
 package typings.jquery
 
-import typings.jquery.JQuery.Ajax.ErrorTextStatus
-import typings.jquery.JQuery.Ajax.SuccessTextStatus
-import typings.jquery.JQuery.Ajax.TextStatus
-import typings.jquery.JQuery._Duration
-import typings.jquery.JQuery.__Falsy
+import typings.jquery.JQuery_.Ajax.ErrorTextStatus
+import typings.jquery.JQuery_.Ajax.SuccessTextStatus
+import typings.jquery.JQuery_.Ajax.TextStatus
+import typings.jquery.JQuery_._Duration
+import typings.jquery.JQuery_._Falsy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object jqueryStrings {
   sealed trait _TypeEventHandlers extends js.Object
   
   @js.native
-  sealed trait _empty extends __Falsy
+  sealed trait _empty extends _Falsy
   
   @js.native
   sealed trait abort

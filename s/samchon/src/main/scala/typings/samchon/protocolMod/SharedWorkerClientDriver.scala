@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/protocol", "SharedWorkerClientDriver")
 @js.native
 class SharedWorkerClientDriver protected ()
-  extends typings.samchon.protocolCommunicatorClientUnderscoreDriverSharedWorkerClientDriverMod.SharedWorkerClientDriver {
+  extends typings.samchon.sharedWorkerClientDriverMod.SharedWorkerClientDriver {
   /**
     * Construct from a MessagePort object.
     */

@@ -1,10 +1,10 @@
 package typings.rangy
 
-import typings.std.Document
+import typings.std.Document_
 import typings.std.HTMLIFrameElement
 import typings.std.Range
 import typings.std.Selection
-import typings.std.Window
+import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,23 +20,23 @@ trait RangyStatic extends js.Object {
   def createClassApplier(theClass: String, options: RangyClassApplierOptions, tagNames: js.Array[String]): RangyClassApplier = js.native
   def createMissingNativeApi(): js.Any = js.native
   def createNativeRange(): Range = js.native
-  def createNativeRange(doc: Document): Range = js.native
+  def createNativeRange(doc: Document_): Range = js.native
   def createNativeRange(doc: HTMLIFrameElement): Range = js.native
-  def createNativeRange(doc: Window): Range = js.native
+  def createNativeRange(doc: Window_): Range = js.native
   def createRange(): RangyRange = js.native
-  def createRange(doc: Document): RangyRange = js.native
+  def createRange(doc: Document_): RangyRange = js.native
   def createRange(doc: HTMLIFrameElement): RangyRange = js.native
-  def createRange(doc: Window): RangyRange = js.native
+  def createRange(doc: Window_): RangyRange = js.native
   def createRangyRange(): RangyRange = js.native
-  def createRangyRange(doc: Document): RangyRange = js.native
+  def createRangyRange(doc: Document_): RangyRange = js.native
   def createRangyRange(doc: HTMLIFrameElement): RangyRange = js.native
-  def createRangyRange(doc: Window): RangyRange = js.native
+  def createRangyRange(doc: Window_): RangyRange = js.native
   def getNativeSelection(): Selection = js.native
-  def getNativeSelection(win: Window): Selection = js.native
+  def getNativeSelection(win: Window_): Selection = js.native
   def getSelection(): RangySelection = js.native
-  def getSelection(doc: Document): RangySelection = js.native
+  def getSelection(doc: Document_): RangySelection = js.native
   def getSelection(doc: HTMLIFrameElement): RangySelection = js.native
-  def getSelection(doc: Window): RangySelection = js.native
+  def getSelection(doc: Window_): RangySelection = js.native
   def shim(): js.Any = js.native
 }
 

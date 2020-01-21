@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceTileDebugMod.Options
-import typings.ol.sourceTileDebugMod.default
+import typings.ol.tileDebugMod.Options
+import typings.ol.tileDebugMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

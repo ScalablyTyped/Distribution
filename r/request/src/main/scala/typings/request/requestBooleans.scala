@@ -1,6 +1,6 @@
 package typings.request
 
-import typings.request.requestMod._PoolOptions
+import typings.request.mod._PoolOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

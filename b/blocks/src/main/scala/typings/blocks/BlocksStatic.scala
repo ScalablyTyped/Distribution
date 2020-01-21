@@ -12,7 +12,7 @@ trait BlocksStatic extends js.Object {
   	* Use blocks.Application and its MVC(Model-View-Collection) structure to create better architecture and maintainability for your application.
   	*/
   def Application(): App = js.native
-  def Application(options: Anon_History): App = js.native
+  def Application(options: AnonHistory): App = js.native
   /**
   	 * Changes the this binding to a function and optionally passes additional parameters to the function.
   	 * Returns the newly created function having the new this binding and optional arguments.
@@ -187,11 +187,11 @@ trait BlocksStatic extends js.Object {
   /**
   	 * Creates the server which will automatically handle server-side rendering.
   	 */
-  def server(): Anon_Express = js.native
+  def server(): AnonExpress = js.native
   /**
   	 * @param options Overrides default jsblocks options
   	 */
-  def server(options: Server): Anon_Express = js.native
+  def server(options: Server): AnonExpress = js.native
   /**
   	 * Converts a value to an array. Arguments object is converted to array and primitive values
   	 * are wrapped in an array.

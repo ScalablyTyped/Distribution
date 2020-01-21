@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mapevents {
-  type Behavior = Behavior_
+  type Behavior = typings.heremaps.H.mapevents.Behavior_
 }

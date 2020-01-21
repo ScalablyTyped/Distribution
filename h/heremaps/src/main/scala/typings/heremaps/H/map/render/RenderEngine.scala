@@ -7,7 +7,7 @@ import typings.heremaps.H.map.ViewModel
 import typings.heremaps.H.map.ViewPort
 import typings.heremaps.H.map.render.RenderEngine.Options
 import typings.heremaps.H.util.EventTarget
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,11 +37,11 @@ class RenderEngine protected () extends EventTarget {
     * @param opt_capture {boolean=} - true indicates that the method should listen in the capture phase (bubble otherwise)
     * @param opt_scope {Object=} - An object defining the scope for the handler function
     */
-  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
-  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
+  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit]): Unit = js.native
+  def addEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit], opt_capture: Boolean): Unit = js.native
   def addEventListener(
     `type`: String,
-    handler: js.Function1[/* evt */ Event, Unit],
+    handler: js.Function1[/* evt */ Event_, Unit],
     opt_capture: Boolean,
     opt_scope: js.Object
   ): Unit = js.native
@@ -53,11 +53,11 @@ class RenderEngine protected () extends EventTarget {
     * @param opt_capture {boolean=} - true indicates that the method should listen in the capture phase (bubble otherwise)
     * @param opt_scope {Object=} - An object defining the scope for the handler function
     */
-  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit]): Unit = js.native
-  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event, Unit], opt_capture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit]): Unit = js.native
+  def removeEventListener(`type`: String, handler: js.Function1[/* evt */ Event_, Unit], opt_capture: Boolean): Unit = js.native
   def removeEventListener(
     `type`: String,
-    handler: js.Function1[/* evt */ Event, Unit],
+    handler: js.Function1[/* evt */ Event_, Unit],
     opt_capture: Boolean,
     opt_scope: js.Object
   ): Unit = js.native

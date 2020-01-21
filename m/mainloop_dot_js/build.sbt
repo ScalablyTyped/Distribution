@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mainloop_dot_js"
-version := "v1.0.3-dt-20190322Z-5f85fa"
+version := "v1.0.3-dt-20190322Z-bca6f0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

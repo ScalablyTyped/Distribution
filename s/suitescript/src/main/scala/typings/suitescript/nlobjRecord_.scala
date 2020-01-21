@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
   *
   * @since 2008.2
   */
-@JSName("nlobjRecord")
 @js.native
 trait nlobjRecord_
   extends /**

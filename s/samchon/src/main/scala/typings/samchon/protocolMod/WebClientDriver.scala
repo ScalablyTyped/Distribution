@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/protocol", "WebClientDriver")
 @js.native
 class WebClientDriver protected ()
-  extends typings.samchon.protocolCommunicatorClientUnderscoreDriverWebClientDriverMod.WebClientDriver {
+  extends typings.samchon.webClientDriverMod.WebClientDriver {
   /**
     * Initialization Constructor.
     *

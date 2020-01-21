@@ -1,7 +1,7 @@
 package typings.winrt.Windows.Networking.NetworkOperators
 
 import typings.std.Uint8Array
-import typings.winrt.Anon_Context
+import typings.winrt.AnonContext
 import typings.winrt.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
@@ -36,6 +36,6 @@ class HotspotAuthenticationContext () extends IHotspotAuthenticationContext {
 @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
 @js.native
 object HotspotAuthenticationContext extends js.Object {
-  def tryGetAuthenticationContext(evenToken: String): Anon_Context = js.native
+  def tryGetAuthenticationContext(evenToken: String): AnonContext = js.native
 }
 

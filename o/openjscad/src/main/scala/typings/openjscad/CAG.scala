@@ -34,7 +34,7 @@ class CAG ()
   def contract(radius: Double, resolution: Double): CAG = js.native
   def expand(radius: Double, resolution: Double): CAG = js.native
   def expandedShell(radius: Double, resolution: Double): CAG = js.native
-  def extrude(options: CAG_extrude_options): CSG = js.native
+  def extrude(options: CAGExtrudeOptions): CSG = js.native
   def extrudeInOrthonormalBasis(orthonormalbasis: OrthoNormalBasis, depth: Double): CSG = js.native
   def extrudeInOrthonormalBasis(orthonormalbasis: OrthoNormalBasis, depth: Double, options: js.Any): CSG = js.native
   def extrudeInPlane(axis1: js.Any, axis2: js.Any, depth: js.Any, options: js.Any): CSG = js.native
@@ -47,7 +47,7 @@ class CAG ()
   def rotateExtrude(options: js.Any): CSG = js.native
   def subtract(cag: js.Array[CAG]): CAG = js.native
   def subtract(cag: CAG): CAG = js.native
-  def toCompactBinary(): Anon_ClassSideVertexIndices = js.native
+  def toCompactBinary(): AnonClassSideVertexIndices = js.native
   def toDxf(): Blob = js.native
   def union(cag: js.Array[CAG]): CAG = js.native
   def union(cag: CAG): CAG = js.native

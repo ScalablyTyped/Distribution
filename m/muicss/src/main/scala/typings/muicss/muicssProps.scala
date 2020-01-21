@@ -1,15 +1,15 @@
 package typings.muicss
 
 import typings.muicss.reactMod.DivProps
-import typings.react.reactMod.HTMLAttributes
-import typings.react.reactMod.OptionHTMLAttributes
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.OptionHTMLAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait muicssProps {
   @scala.inline
-  def AppbarProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
+  def AppbarProps: HTMLAttributes.type = typings.react.mod.HTMLAttributes
   type AppbarProps = DivProps
   @scala.inline
   def ButtonProps: typings.muicss.reactMod.ButtonProps.type = typings.muicss.reactMod.ButtonProps
@@ -24,14 +24,11 @@ trait muicssProps {
   def ContainerProps: typings.muicss.reactMod.ContainerProps.type = typings.muicss.reactMod.ContainerProps
   type ContainerProps = typings.muicss.reactMod.ContainerProps
   @scala.inline
-  def DividerProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
+  def DividerProps: HTMLAttributes.type = typings.react.mod.HTMLAttributes
   type DividerProps = typings.muicss.reactMod.DividerProps
   @scala.inline
   def DropdownProps: typings.muicss.reactMod.DropdownProps.type = typings.muicss.reactMod.DropdownProps
   type DropdownProps = typings.muicss.reactMod.DropdownProps
-  @scala.inline
-  def DropdownDashItemProps: typings.muicss.reactMod.DropdownItemProps.type = typings.muicss.reactMod.DropdownItemProps
-  type DropdownDashItemProps = typings.muicss.reactMod.DropdownItemProps
   @scala.inline
   def DropdownItemProps: typings.muicss.reactMod.DropdownItemProps.type = typings.muicss.reactMod.DropdownItemProps
   type DropdownItemProps = typings.muicss.reactMod.DropdownItemProps
@@ -42,10 +39,10 @@ trait muicssProps {
   def InputProps: typings.muicss.reactMod.InputProps.type = typings.muicss.reactMod.InputProps
   type InputProps = typings.muicss.reactMod.InputProps
   @scala.inline
-  def OptionProps: OptionHTMLAttributes.type = typings.react.reactMod.OptionHTMLAttributes
+  def OptionProps: OptionHTMLAttributes.type = typings.react.mod.OptionHTMLAttributes
   type OptionProps = typings.muicss.reactMod.OptionProps
   @scala.inline
-  def PanelProps: HTMLAttributes.type = typings.react.reactMod.HTMLAttributes
+  def PanelProps: HTMLAttributes.type = typings.react.mod.HTMLAttributes
   type PanelProps = typings.muicss.reactMod.PanelProps
   @scala.inline
   def RadioProps: typings.muicss.reactMod.CheckboxProps.type = typings.muicss.reactMod.CheckboxProps

@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 object addEventListener_close extends js.Object {
   def apply(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ Event_, _]
   ): Unit = js.native
   def apply(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ Event_, _],
     options: scala.Boolean
   ): Unit = js.native
   def apply(
     `type`: typings.std.stdStrings.close,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ Event_, _],
     options: AddEventListenerOptions
   ): Unit = js.native
 }

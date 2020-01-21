@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
   * Interface for the Xrm.Utility API
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility External Link: Xrm.Utility (Client API reference)}
   */
-@JSName("Utility")
 @js.native
 trait Utility_ extends js.Object {
   /**

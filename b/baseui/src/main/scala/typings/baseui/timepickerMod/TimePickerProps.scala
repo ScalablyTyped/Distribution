@@ -1,8 +1,11 @@
 package typings.baseui.timepickerMod
 
-import typings.baseui.Anon_Select
+import typings.baseui.AnonSelect
 import typings.baseui.baseuiStrings.`12`
 import typings.baseui.baseuiStrings.`24`
+import typings.baseui.baseuiStrings.compact
+import typings.baseui.baseuiStrings.default_
+import typings.baseui.baseuiStrings.large_
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,9 +18,10 @@ trait TimePickerProps extends js.Object {
   var format: js.UndefOr[`12` | `24`] = js.undefined
   var nullable: js.UndefOr[Boolean] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* args */ Date, _]] = js.undefined
-  var overrides: js.UndefOr[Anon_Select] = js.undefined
+  var overrides: js.UndefOr[AnonSelect] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var positive: js.UndefOr[Boolean] = js.undefined
+  var size: js.UndefOr[default_ | compact | large_] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var value: js.UndefOr[Date | Null] = js.undefined
 }
@@ -31,9 +35,10 @@ object TimePickerProps {
     format: `12` | `24` = null,
     nullable: js.UndefOr[Boolean] = js.undefined,
     onChange: /* args */ Date => _ = null,
-    overrides: Anon_Select = null,
+    overrides: AnonSelect = null,
     placeholder: String = null,
     positive: js.UndefOr[Boolean] = js.undefined,
+    size: default_ | compact | large_ = null,
     step: Int | Double = null,
     value: Date = null
   ): TimePickerProps = {
@@ -47,6 +52,7 @@ object TimePickerProps {
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimePickerProps]

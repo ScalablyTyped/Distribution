@@ -1,8 +1,8 @@
 package typings.dojo.dojox.dgauges
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.value
-import typings.dojo.dojox.widget._Invalidating
+import typings.dojo.dojox.widget.Invalidating
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.dgauges.IndicatorBase")
 @js.native
-class IndicatorBase () extends _Invalidating {
+class IndicatorBase () extends Invalidating {
   /**
     * The value of this indicator.
     *
@@ -34,6 +34,6 @@ class IndicatorBase () extends _Invalidating {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

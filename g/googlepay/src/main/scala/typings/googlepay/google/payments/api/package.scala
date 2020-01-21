@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object api {
-  import typings.googlepay.googlepayStrings.CARD
-
-  type AllowedPaymentMethodType = CARD
-  type PaymentMethod = CardPaymentMethod
-  type PaymentMethodData = CardPaymentMethodData
+  type AllowedPaymentMethodType = typings.googlepay.googlepayStrings.CARD
+  type PaymentMethod = typings.googlepay.google.payments.api.CardPaymentMethod
+  type PaymentMethodData = typings.googlepay.google.payments.api.CardPaymentMethodData
 }

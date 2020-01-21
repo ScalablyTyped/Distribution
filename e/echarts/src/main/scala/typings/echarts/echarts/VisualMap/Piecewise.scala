@@ -1,6 +1,6 @@
 package typings.echarts.echarts.VisualMap
 
-import typings.echarts.Anon_InRange
+import typings.echarts.AnonInRange
 import typings.echarts.echarts.EChartOption.TextStyle
 import typings.echarts.echartsStrings.auto
 import typings.echarts.echartsStrings.horizontal
@@ -23,7 +23,7 @@ trait Piecewise
   var bottom: js.UndefOr[Double | String] = js.undefined
   var categories: js.UndefOr[js.Array[String]] = js.undefined
   var color: js.UndefOr[js.Array[String]] = js.undefined
-  var controller: js.UndefOr[Anon_InRange] = js.undefined
+  var controller: js.UndefOr[AnonInRange] = js.undefined
   var dimension: js.UndefOr[String | Double] = js.undefined
   var formatter: js.UndefOr[String | js.Function] = js.undefined
   var hoverLink: js.UndefOr[Boolean] = js.undefined
@@ -69,7 +69,7 @@ object Piecewise {
     bottom: Double | String = null,
     categories: js.Array[String] = null,
     color: js.Array[String] = null,
-    controller: Anon_InRange = null,
+    controller: AnonInRange = null,
     dimension: String | Double = null,
     formatter: String | js.Function = null,
     hoverLink: js.UndefOr[Boolean] = js.undefined,

@@ -1,6 +1,6 @@
 package typings.leadfoot.commandMod
 
-import typings.dojo.promiseThenableMod.Thenable
+import typings.dojo.thenableMod.Thenable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

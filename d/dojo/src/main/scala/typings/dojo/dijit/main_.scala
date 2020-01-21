@@ -1,9 +1,9 @@
 package typings.dojo.dijit
 
-import typings.dojo.dijit.place.__Position
+import typings.dojo.dijit.place.Position
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
-import typings.std.Window
+import typings.std.Window_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,6 @@ import scala.scalajs.js.annotation._
   * Deprecated.   Users should access individual modules (ex: dijit/registry) directly.
   * 
   */
-@JSName("main")
 @js.native
 trait main_ extends js.Object {
   /**
@@ -109,7 +108,7 @@ trait main_ extends js.Object {
     * @param menu               OptionalThe button that was just pressed.  If focus has disappeared or movedto this button, returns the previous focus.  In this case the bookmarkinformation is already lost, and null is returned.             
     * @param openedForWindow               Optionaliframe in which menu was opened             
     */
-  def getFocus(menu: _WidgetBase, openedForWindow: Window): js.Any = js.native
+  def getFocus(menu: WidgetBase, openedForWindow: Window_): js.Any = js.native
   /**
     * Finds the descendant of the specified root node
     * that is last in the tabbing order
@@ -218,13 +217,7 @@ trait main_ extends js.Object {
     * @param padding               OptionalOptional param to set padding, to put some buffer around the element you want to position.Defaults to zero.             
     * @param layoutNode For things like tooltip, they are displayed differently (and have different dimensions)based on their orientation relative to the parent.  This adjusts the popup based on orientation.             
     */
-  def placeOnScreen(
-    node: HTMLElement,
-    pos: __Position,
-    corners: js.Array[String],
-    padding: __Position,
-    layoutNode: js.Any
-  ): js.Any = js.native
+  def placeOnScreen(node: HTMLElement, pos: Position, corners: js.Array[String], padding: Position, layoutNode: js.Any): js.Any = js.native
   /**
     * Like dijit.placeOnScreenAroundNode(), except it accepts an arbitrary object
     * for the "around" argument and finds a proper processor to place a node.
@@ -277,7 +270,7 @@ trait main_ extends js.Object {
     * @param targetWindow               OptionalIf specified this is the window associated with the iframe,i.e. iframe.contentWindow.             
     * @param effectiveNode               OptionalIf specified, report any focus events inside targetWindow asan event on effectiveNode, rather than on evt.target.             
     */
-  def registerWin(targetWindow: Window, effectiveNode: HTMLElement): js.Any = js.native
+  def registerWin(targetWindow: Window_, effectiveNode: HTMLElement): js.Any = js.native
   /**
     * Removes the specified role from an element.
     * Removes role attribute if no specific role provided (for backwards compat.)

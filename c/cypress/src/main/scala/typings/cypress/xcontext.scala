@@ -1,7 +1,7 @@
 package typings.cypress
 
 import org.scalablytyped.runtime.TopLevel
-import typings.cypress.Mocha.PendingSuiteFunction
+import typings.cypress.Mocha_.PendingSuiteFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Media.Devices
 
-import typings.winrt.Anon_Succeeded
+import typings.winrt.AnonSucceeded
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Media.Capture.MediaStreamType
@@ -48,7 +48,7 @@ class VideoDeviceController ()
   /* CompleteClass */
   override def setMediaStreamPropertiesAsync(mediaStreamType: MediaStreamType, mediaEncodingProperties: IMediaEncodingProperties): IAsyncAction = js.native
   /* CompleteClass */
-  override def tryGetPowerlineFrequency(): Anon_Succeeded = js.native
+  override def tryGetPowerlineFrequency(): AnonSucceeded = js.native
   /* CompleteClass */
   override def trySetPowerlineFrequency(value: PowerlineFrequency): Boolean = js.native
 }

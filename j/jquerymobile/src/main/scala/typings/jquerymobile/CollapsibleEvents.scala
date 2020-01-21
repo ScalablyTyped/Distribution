@@ -1,6 +1,6 @@
 package typings.jquerymobile
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,9 +14,9 @@ trait CollapsibleEvents extends js.Object {
 object CollapsibleEvents {
   @scala.inline
   def apply(
-    collapse: (/* event */ Event, /* ui */ js.Any) => Unit = null,
-    create: (/* event */ Event, /* ui */ js.Any) => Unit = null,
-    expand: (/* event */ Event, /* ui */ js.Any) => Unit = null
+    collapse: (/* event */ Event_, /* ui */ js.Any) => Unit = null,
+    create: (/* event */ Event_, /* ui */ js.Any) => Unit = null,
+    expand: (/* event */ Event_, /* ui */ js.Any) => Unit = null
   ): CollapsibleEvents = {
     val __obj = js.Dynamic.literal()
     if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction2(collapse))

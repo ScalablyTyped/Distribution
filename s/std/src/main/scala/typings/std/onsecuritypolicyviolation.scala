@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object onsecuritypolicyviolation
   extends TopLevel[
-      (js.ThisFunction1[/* this */ Window, /* ev */ SecurityPolicyViolationEvent, js.Any]) | Null
+      (js.ThisFunction1[/* this */ Window_, /* ev */ SecurityPolicyViolationEvent, js.Any]) | Null
     ]
 

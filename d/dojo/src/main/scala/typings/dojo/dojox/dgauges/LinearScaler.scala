@@ -1,6 +1,6 @@
 package typings.dojo.dojox.dgauges
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojo.Stateful
 import typings.dojo.dojoStrings.majorTickInterval
 import typings.dojo.dojoStrings.majorTicks
@@ -137,7 +137,7 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_majorTicks(
     property: majorTicks,
@@ -147,7 +147,7 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maximum(
     property: maximum,
@@ -157,7 +157,7 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minimum(
     property: minimum,
@@ -167,7 +167,7 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minorTickInterval(
     property: minorTickInterval,
@@ -177,7 +177,7 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minorTicks(
     property: minorTicks,
@@ -187,7 +187,7 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_minorTicksEnabled(
     property: minorTicksEnabled,
@@ -197,7 +197,7 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_snapInterval(
     property: snapInterval,
@@ -207,6 +207,6 @@ class LinearScaler () extends Stateful {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

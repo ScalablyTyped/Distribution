@@ -1,6 +1,6 @@
 package typings.reactable
 
-import typings.reactable.reactableMod.SortDirection
+import typings.reactable.mod.SortDirection
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

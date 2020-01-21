@@ -1,15 +1,16 @@
 package typings.tstl
 
-import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
+import typings.tstl.iforwardcontainerMod.IForwardContainer
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.ipointerMod.IPointer.ValueType
+import typings.tstl.writeonlyMod.Writeonly
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl/algorithm/random", JSImport.Namespace)
+@JSImport("tstl/ranges/algorithm/random", JSImport.Namespace)
 @js.native
 object algorithmRandomMod extends js.Object {
-  def randint(x: Double, y: Double): Double = js.native
-  def sample[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator, n: Double): OutputIterator = js.native
+  def sample[Range /* <: js.Array[_] | IForwardContainer[_] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[OutputIterator], OutputIterator]] */](range: Range, first: OutputIterator, n: Double): OutputIterator = js.native
 }
 

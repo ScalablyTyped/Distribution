@@ -1,10 +1,10 @@
 package typings.dropboxjs.Dropbox
 
-import typings.dropboxjs.Anon_Port
-import typings.dropboxjs.Anon_ReceiverPath
-import typings.dropboxjs.Anon_RedirectFile
-import typings.dropboxjs.Anon_RememberUser
-import typings.dropboxjs.Anon_Scope
+import typings.dropboxjs.AnonPort
+import typings.dropboxjs.AnonReceiverPath
+import typings.dropboxjs.AnonRedirectFile
+import typings.dropboxjs.AnonRememberUser
+import typings.dropboxjs.AnonScope
 import typings.std.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ class AuthDriver () extends js.Object {
 object AuthDriver extends js.Object {
   @js.native
   class BrowserBase protected () extends js.Object {
-    def this(options: Anon_RememberUser) = this()
+    def this(options: AnonRememberUser) = this()
     def authType(): String = js.native
     def locationStateParam(url: String): String = js.native
     def onAuthStepChange(client: Client, callback: js.Function0[Unit]): Unit = js.native
@@ -34,17 +34,17 @@ object AuthDriver extends js.Object {
   
   @js.native
   class ChromeApp () extends IAuthDriver {
-    def this(options: Anon_Scope) = this()
+    def this(options: AnonScope) = this()
   }
   
   @js.native
   class ChromeExtension () extends IAuthDriver {
-    def this(options: Anon_ReceiverPath) = this()
+    def this(options: AnonReceiverPath) = this()
   }
   
   @js.native
   class Cordova () extends IAuthDriver {
-    def this(options: Anon_ReceiverPath) = this()
+    def this(options: AnonReceiverPath) = this()
     def url(): String = js.native
   }
   
@@ -57,7 +57,7 @@ object AuthDriver extends js.Object {
   
   @js.native
   class NodeServer () extends IAuthDriver {
-    def this(options: Anon_Port) = this()
+    def this(options: AnonPort) = this()
     def authType(): String = js.native
     def closeBrowser(response: js.Any): Unit = js.native
     def closeServer(): Unit = js.native
@@ -76,7 +76,7 @@ object AuthDriver extends js.Object {
   
   @js.native
   class Redirect () extends js.Object {
-    def this(options: Anon_RedirectFile) = this()
+    def this(options: AnonRedirectFile) = this()
     def doAuthorize(authUrl: String, stateParam: String, client: Client): Unit = js.native
     def resumeAuthorize(stateParam: String, client: Client, callback: QueryParamsCallback): Unit = js.native
     def url(): String = js.native

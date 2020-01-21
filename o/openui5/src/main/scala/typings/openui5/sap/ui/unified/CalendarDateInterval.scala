@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("sap.ui.unified.CalendarDateInterval")
 @js.native
-class CalendarDateInterval protected () extends Calendar {
+class CalendarDateInterval protected () extends Calendar_ {
   /**
     * Constructor for a new <code>CalendarDateInterval</code>.Accepts an object literal
     * <code>mSettings</code> that defines initialproperty values, aggregated and associated objects as

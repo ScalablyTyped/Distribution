@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("protobufjs/minimal", "FieldBase")
 @js.native
 class FieldBase protected ()
-  extends typings.protobufjs.protobufjsMod.FieldBase {
+  extends typings.protobufjs.mod.FieldBase {
   /**
     * Not an actual constructor. Use {@link Field} instead.
     * @param name Unique name within its namespace

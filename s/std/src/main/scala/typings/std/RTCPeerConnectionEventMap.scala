@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RTCPeerConnectionEventMap extends js.Object {
-  var connectionstatechange: Event
+  var connectionstatechange: Event_
   var datachannel: RTCDataChannelEvent
   var icecandidate: RTCPeerConnectionIceEvent
   var icecandidateerror: RTCPeerConnectionIceErrorEvent
-  var iceconnectionstatechange: Event
-  var icegatheringstatechange: Event
-  var negotiationneeded: Event
-  var signalingstatechange: Event
+  var iceconnectionstatechange: Event_
+  var icegatheringstatechange: Event_
+  var negotiationneeded: Event_
+  var signalingstatechange: Event_
   var statsended: RTCStatsEvent
   var track: RTCTrackEvent
 }
@@ -20,14 +20,14 @@ trait RTCPeerConnectionEventMap extends js.Object {
 object RTCPeerConnectionEventMap {
   @scala.inline
   def apply(
-    connectionstatechange: Event,
+    connectionstatechange: Event_,
     datachannel: RTCDataChannelEvent,
     icecandidate: RTCPeerConnectionIceEvent,
     icecandidateerror: RTCPeerConnectionIceErrorEvent,
-    iceconnectionstatechange: Event,
-    icegatheringstatechange: Event,
-    negotiationneeded: Event,
-    signalingstatechange: Event,
+    iceconnectionstatechange: Event_,
+    icegatheringstatechange: Event_,
+    negotiationneeded: Event_,
+    signalingstatechange: Event_,
     statsended: RTCStatsEvent,
     track: RTCTrackEvent
   ): RTCPeerConnectionEventMap = {

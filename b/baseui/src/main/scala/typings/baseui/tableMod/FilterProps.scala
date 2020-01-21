@@ -1,7 +1,7 @@
 package typings.baseui.tableMod
 
-import typings.baseui.Anon_Content
-import typings.react.reactMod.ReactNode
+import typings.baseui.AnonContent
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait FilterProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var onReset: js.UndefOr[js.Function0[_]] = js.undefined
   var onSelectAll: js.UndefOr[js.Function0[_]] = js.undefined
-  var overrides: js.UndefOr[Anon_Content] = js.undefined
+  var overrides: js.UndefOr[AnonContent] = js.undefined
 }
 
 object FilterProps {
@@ -23,7 +23,7 @@ object FilterProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     onReset: () => _ = null,
     onSelectAll: () => _ = null,
-    overrides: Anon_Content = null
+    overrides: AnonContent = null
   ): FilterProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])

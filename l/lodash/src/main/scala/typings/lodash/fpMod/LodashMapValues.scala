@@ -1,8 +1,8 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.Dictionary
-import typings.lodash.lodashMod.NumericDictionary
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.Dictionary
+import typings.lodash.mod.NumericDictionary
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,14 +25,7 @@ trait LodashMapValues extends js.Object {
     */ typings.lodash.lodashStrings.LodashMapValues with js.Any = js.native
   def apply[T](iteratee: js.Object, obj: Dictionary[T]): Dictionary[Boolean] = js.native
   def apply[T](iteratee: js.Object, obj: NumericDictionary[T]): Dictionary[Boolean] = js.native
-  def apply[T /* <: js.Object */, TResult](
-    callback: js.Function1[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      TResult
-    ]
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.LodashMapValues with js.Any = js.native
+  def apply[T, TResult](callback: js.Function1[/* value */ T, TResult]): LodashMapValues1x1[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 

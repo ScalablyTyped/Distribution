@@ -1,6 +1,6 @@
 package typings.ngmap.angular.map
 
-import typings.angular.angularMod.IPromise
+import typings.angular.mod.IPromise
 import typings.googlemaps.google.maps.LatLng
 import typings.googlemaps.google.maps.Map
 import typings.std.Element

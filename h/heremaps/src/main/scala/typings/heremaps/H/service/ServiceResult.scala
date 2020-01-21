@@ -1,10 +1,10 @@
 package typings.heremaps.H.service
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.heremaps.Anon_Context
-import typings.heremaps.Anon_Isolines
-import typings.heremaps.Anon_Items
-import typings.heremaps.Anon_Language
+import typings.heremaps.AnonContext
+import typings.heremaps.AnonIsolines
+import typings.heremaps.AnonItems
+import typings.heremaps.AnonLanguage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,20 +14,20 @@ import scala.scalajs.js.annotation._
   */
 trait ServiceResult
   extends /* key */ StringDictionary[js.Any] {
-  var Response: js.UndefOr[Anon_Isolines] = js.undefined
-  var response: js.UndefOr[Anon_Language] = js.undefined
-  var results: js.UndefOr[Anon_Items] = js.undefined
-  var search: js.UndefOr[Anon_Context] = js.undefined
+  var Response: js.UndefOr[AnonIsolines] = js.undefined
+  var response: js.UndefOr[AnonLanguage] = js.undefined
+  var results: js.UndefOr[AnonItems] = js.undefined
+  var search: js.UndefOr[AnonContext] = js.undefined
 }
 
 object ServiceResult {
   @scala.inline
   def apply(
-    Response: Anon_Isolines = null,
+    Response: AnonIsolines = null,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    response: Anon_Language = null,
-    results: Anon_Items = null,
-    search: Anon_Context = null
+    response: AnonLanguage = null,
+    results: AnonItems = null,
+    search: AnonContext = null
   ): ServiceResult = {
     val __obj = js.Dynamic.literal()
     if (Response != null) __obj.updateDynamic("Response")(Response.asInstanceOf[js.Any])

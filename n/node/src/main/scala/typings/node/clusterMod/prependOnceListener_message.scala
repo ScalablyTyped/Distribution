@@ -13,7 +13,7 @@ object prependOnceListener_message extends js.Object {
   // the handle is a net.Socket or net.Server object, or undefined.
   def apply(
     event: message,
-    listener: js.Function3[/* worker */ Worker, /* message */ js.Any, /* handle */ Socket | Server, Unit]
+    listener: js.Function3[/* worker */ Worker_, /* message */ js.Any, /* handle */ Socket | Server, Unit]
   ): Cluster = js.native
 }
 

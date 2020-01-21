@@ -1,7 +1,7 @@
 
 # Scala.js typings for reactstrap
 
-Typings are for version 8.2
+Typings are for version 8.4
 
 ## Library description:
 React Bootstrap 4 components

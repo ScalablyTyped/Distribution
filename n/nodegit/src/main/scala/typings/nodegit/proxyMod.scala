@@ -1,6 +1,6 @@
 package typings.nodegit
 
-import typings.nodegit.proxyDashOptionsMod.ProxyOptions
+import typings.nodegit.proxyOptionsMod.ProxyOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

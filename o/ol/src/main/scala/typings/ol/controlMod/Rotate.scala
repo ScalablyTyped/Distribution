@@ -1,7 +1,7 @@
 package typings.ol.controlMod
 
-import typings.ol.controlRotateMod.Options
-import typings.ol.controlRotateMod.default
+import typings.ol.rotateMod.Options
+import typings.ol.rotateMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

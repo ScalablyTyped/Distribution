@@ -1,19 +1,17 @@
 package typings.grommet.grommetMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.grommet.componentsGrommetMod.GrommetProps
-import typings.grommet.themesBaseMod.ThemeType
-import typings.react.reactMod.Component
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.DetailedHTMLProps
-import typings.react.reactMod.HTMLAttributes
+import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Grommet")
+@JSImport("grommet/components/Grommet", "Grommet")
 @js.native
 class Grommet protected ()
   extends Component[
@@ -28,7 +26,7 @@ class Grommet protected ()
   ) = this()
 }
 
-@JSImport("grommet", "Grommet")
+@JSImport("grommet/components/Grommet", "Grommet")
 @js.native
 object Grommet extends TopLevel[
       ComponentClass[
@@ -36,8 +34,4 @@ object Grommet extends TopLevel[
         ComponentState
       ]
     ]
-
-@JSImport("grommet", "grommet")
-@js.native
-object grommet extends TopLevel[ThemeType]
 

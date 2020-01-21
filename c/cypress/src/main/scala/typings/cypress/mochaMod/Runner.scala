@@ -1,6 +1,6 @@
 package typings.cypress.mochaMod
 
-import typings.cypress.Mocha.ISuite
+import typings.cypress.Mocha_.ISuite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,10 +38,10 @@ import scala.scalajs.js.annotation._
 @JSImport("mocha", "Runner")
 @js.native
 class Runner protected ()
-  extends typings.cypress.Mocha.Runner {
+  extends typings.cypress.Mocha_.Runner {
   /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
   def this(suite: ISuite, delay: Boolean) = this()
-  def this(suite: typings.cypress.Mocha.Suite, delay: Boolean) = this()
+  def this(suite: typings.cypress.Mocha_.Suite_, delay: Boolean) = this()
 }
 
 /* static members */

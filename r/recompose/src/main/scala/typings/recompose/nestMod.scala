@@ -1,8 +1,8 @@
 package typings.recompose
 
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
-import typings.react.reactMod.ComponentType
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

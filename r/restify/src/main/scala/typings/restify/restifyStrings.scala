@@ -1,6 +1,6 @@
 package typings.restify
 
-import typings.restify.restifyMod.plugins._TMetricsCallback
+import typings.restify.mod.plugins._TMetricsCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

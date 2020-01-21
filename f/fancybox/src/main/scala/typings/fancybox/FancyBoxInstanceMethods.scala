@@ -1,6 +1,6 @@
 package typings.fancybox
 
-import typings.jquery.JQuery.Event
+import typings.jquery.JQuery_.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

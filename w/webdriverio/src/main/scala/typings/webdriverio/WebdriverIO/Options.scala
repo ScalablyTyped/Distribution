@@ -1,7 +1,7 @@
 package typings.webdriverio.WebdriverIO
 
 import typings.webdriver.WebDriver.DesiredCapabilities
-import typings.webdriverio.Anon_SpecFiltering
+import typings.webdriverio.AnonSpecFiltering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var capabilities: js.UndefOr[js.Array[DesiredCapabilities] | MultiRemoteCapabilities] = js.undefined
   var exclude: js.UndefOr[js.Array[String]] = js.undefined
   var execArgv: js.UndefOr[js.Array[String]] = js.undefined
-  var featureFlags: js.UndefOr[Anon_SpecFiltering] = js.undefined
+  var featureFlags: js.UndefOr[AnonSpecFiltering] = js.undefined
   var framework: js.UndefOr[String] = js.undefined
   var jasmineNodeOpts: js.UndefOr[js.Object] = js.undefined
   var maxInstances: js.UndefOr[Double] = js.undefined
@@ -38,7 +38,7 @@ object Options {
     capabilities: js.Array[DesiredCapabilities] | MultiRemoteCapabilities = null,
     exclude: js.Array[String] = null,
     execArgv: js.Array[String] = null,
-    featureFlags: Anon_SpecFiltering = null,
+    featureFlags: AnonSpecFiltering = null,
     framework: String = null,
     jasmineNodeOpts: js.Object = null,
     maxInstances: Int | Double = null,

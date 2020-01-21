@@ -1,6 +1,6 @@
 package typings.evaporate
 
-import typings.evaporate.evaporateMod.ImmutableOptionKeys
+import typings.evaporate.mod.ImmutableOptionKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

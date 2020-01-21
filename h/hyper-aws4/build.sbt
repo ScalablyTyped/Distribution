@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hyper-aws4"
-version := "1.1-dt-20181125Z-79e9d1"
+version := "1.1-dt-20181125Z-1a6ffa"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

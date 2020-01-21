@@ -1,9 +1,9 @@
 package typings.dockerode
 
-import typings.dockerode.dockerodeMod.LoggingDriverType
-import typings.dockerode.dockerodeMod.MountConsistency
-import typings.dockerode.dockerodeMod.MountPropagation
-import typings.dockerode.dockerodeMod.MountType
+import typings.dockerode.mod.LoggingDriverType
+import typings.dockerode.mod.MountConsistency
+import typings.dockerode.mod.MountPropagation
+import typings.dockerode.mod.MountType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

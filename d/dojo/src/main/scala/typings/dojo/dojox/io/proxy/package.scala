@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object proxy {
-  type xip = xip_
+  type xip = typings.dojo.dojox.io.proxy.xip_
 }

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 
 object webdriverioStrings {
   @js.native
+  sealed trait $ extends js.Object
+  
+  @js.native
   sealed trait BrowserAsync extends js.Object
   
   @js.native
-  sealed trait DOLLAR extends js.Object
-  
-  @js.native
-  sealed trait DOLLARDOLLAR extends js.Object
+  sealed trait DollarDollar extends js.Object
   
   @js.native
   sealed trait ELEMENT extends js.Object
@@ -60,6 +60,9 @@ object webdriverioStrings {
   sealed trait height extends SizeParam
   
   @js.native
+  sealed trait index extends js.Object
+  
+  @js.native
   sealed trait longPress extends ActionTypes
   
   @js.native
@@ -76,6 +79,9 @@ object webdriverioStrings {
   
   @js.native
   sealed trait overwriteCommand extends js.Object
+  
+  @js.native
+  sealed trait parent extends js.Object
   
   @js.native
   sealed trait press extends ActionTypes
@@ -105,11 +111,11 @@ object webdriverioStrings {
   sealed trait y extends LocationParam
   
   @scala.inline
+  def $: $ = "$".asInstanceOf[$]
+  @scala.inline
   def BrowserAsync: BrowserAsync = "BrowserAsync".asInstanceOf[BrowserAsync]
   @scala.inline
-  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
-  @scala.inline
-  def DOLLARDOLLAR: DOLLARDOLLAR = "$$".asInstanceOf[DOLLARDOLLAR]
+  def DollarDollar: DollarDollar = "$$".asInstanceOf[DollarDollar]
   @scala.inline
   def ELEMENT: ELEMENT = "ELEMENT".asInstanceOf[ELEMENT]
   @scala.inline
@@ -139,6 +145,8 @@ object webdriverioStrings {
   @scala.inline
   def height: height = "height".asInstanceOf[height]
   @scala.inline
+  def index: index = "index".asInstanceOf[index]
+  @scala.inline
   def longPress: longPress = "longPress".asInstanceOf[longPress]
   @scala.inline
   def moveTo: moveTo = "moveTo".asInstanceOf[moveTo]
@@ -150,6 +158,8 @@ object webdriverioStrings {
   def options: options = "options".asInstanceOf[options]
   @scala.inline
   def overwriteCommand: overwriteCommand = "overwriteCommand".asInstanceOf[overwriteCommand]
+  @scala.inline
+  def parent: parent = "parent".asInstanceOf[parent]
   @scala.inline
   def press: press = "press".asInstanceOf[press]
   @scala.inline

@@ -15,11 +15,11 @@ trait KnockoutUtils extends js.Object {
   //////////////////////////////////
   // utils.domData.js
   //////////////////////////////////
-  var domData: Anon_Clear = js.native
+  var domData: AnonClear = js.native
   //////////////////////////////////
   // utils.domNodeDisposal.js
   //////////////////////////////////
-  var domNodeDisposal: Anon_AddDisposeCallback = js.native
+  var domNodeDisposal: AnonAddDisposeCallback = js.native
   var fieldsIncludedWithJsonPost: js.Array[_] = js.native
   def addOrRemoveItem[T](array: js.Array[T], value: T, included: T): Unit = js.native
   def addOrRemoveItem[T](array: KnockoutObservable[T], value: T, included: T): Unit = js.native

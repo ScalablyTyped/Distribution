@@ -1,9 +1,9 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.ValueIterateeCustom
-import typings.lodash.lodashMod.ValueIteratorTypeGuard
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.List
+import typings.lodash.mod.ValueIterateeCustom
+import typings.lodash.mod.ValueIteratorTypeGuard
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait LodashFilter extends js.Object {
   def apply[T](predicate: __): LodashFilter1x2[T] = js.native
   def apply[T /* <: js.Object */](predicate: __, collection: T): LodashFilter3x2[T] = js.native
   def apply[T](predicate: __, collection: List[T]): LodashFilter1x2[T] = js.native
-  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S]): js.Array[S] = js.native
+  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S]): LodashFilter1x1[T, S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: ValueIteratorTypeGuard[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

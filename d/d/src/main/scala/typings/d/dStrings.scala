@@ -1,7 +1,7 @@
 package typings.d
 
-import typings.d.dMod.Flags
-import typings.d.dMod.GetSetFlags
+import typings.d.mod.Flags
+import typings.d.mod.GetSetFlags
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

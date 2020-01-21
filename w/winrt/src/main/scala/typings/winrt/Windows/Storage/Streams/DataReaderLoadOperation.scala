@@ -1,6 +1,6 @@
 package typings.winrt.Windows.Storage.Streams
 
-import typings.winrt.Anon_CompletedGetResultsAsyncOperationCompletedHandlerNumber
+import typings.winrt.AnonCompletedGetResultsAsyncOperationCompletedHandlerNumber
 import typings.winrt.Windows.Foundation.AsyncOperationCompletedHandler
 import typings.winrt.Windows.Foundation.AsyncStatus
 import typings.winrt.Windows.Foundation.IAsyncInfo
@@ -21,7 +21,7 @@ class DataReaderLoadOperation ()
   /* CompleteClass */
   override var id: Double = js.native
   @JSName("operation")
-  var operation_DataReaderLoadOperation: Anon_CompletedGetResultsAsyncOperationCompletedHandlerNumber = js.native
+  var operation_DataReaderLoadOperation: AnonCompletedGetResultsAsyncOperationCompletedHandlerNumber = js.native
   /* CompleteClass */
   override var status: AsyncStatus = js.native
   /* InferMemberOverrides */

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object GetSpeed extends js.Object {
   /**
-    * Calculate the speed required to cover a distance in the time given.
-    * @param distance The distance to travel in pixels.
-    * @param time The time, in ms, to cover the distance in.
+    * Calculate a per-ms speed from a distance and time (given in seconds).
+    * @param distance The distance.
+    * @param time The time, in seconds.
     */
   def apply(distance: Double, time: integer): Double = js.native
 }

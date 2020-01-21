@@ -1,7 +1,7 @@
 package typings.audiosprite
 
-import typings.audiosprite.audiospriteMod.LogLevel
-import typings.audiosprite.audiospriteMod._ExportType
+import typings.audiosprite.mod.LogLevel
+import typings.audiosprite.mod._ExportType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

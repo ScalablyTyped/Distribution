@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "htmlescape"
-version := "1.1-dt-20190322Z-076791"
+version := "1.1-dt-20190322Z-61ef37"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

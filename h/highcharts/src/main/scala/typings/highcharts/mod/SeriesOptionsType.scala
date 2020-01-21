@@ -1,0 +1,106 @@
+package typings.highcharts.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.highcharts.mod.SeriesAbandsOptions
+  - typings.highcharts.mod.SeriesAdOptions
+  - typings.highcharts.mod.SeriesAoOptions
+  - typings.highcharts.mod.SeriesApoOptions
+  - typings.highcharts.mod.SeriesAreaOptions
+  - typings.highcharts.mod.SeriesArearangeOptions
+  - typings.highcharts.mod.SeriesAreasplineOptions
+  - typings.highcharts.mod.SeriesAreasplinerangeOptions
+  - typings.highcharts.mod.SeriesAroonOptions
+  - typings.highcharts.mod.SeriesAroonoscillatorOptions
+  - typings.highcharts.mod.SeriesAtrOptions
+  - typings.highcharts.mod.SeriesBarOptions
+  - typings.highcharts.mod.SeriesBbOptions
+  - typings.highcharts.mod.SeriesBellcurveOptions
+  - typings.highcharts.mod.SeriesBoxplotOptions
+  - typings.highcharts.mod.SeriesBubbleOptions
+  - typings.highcharts.mod.SeriesBulletOptions
+  - typings.highcharts.mod.SeriesCandlestickOptions
+  - typings.highcharts.mod.SeriesCciOptions
+  - typings.highcharts.mod.SeriesChaikinOptions
+  - typings.highcharts.mod.SeriesCmfOptions
+  - typings.highcharts.mod.SeriesColumnOptions
+  - typings.highcharts.mod.SeriesColumnpyramidOptions
+  - typings.highcharts.mod.SeriesColumnrangeOptions
+  - typings.highcharts.mod.SeriesCylinderOptions
+  - typings.highcharts.mod.SeriesDemaOptions
+  - typings.highcharts.mod.SeriesDependencywheelOptions
+  - typings.highcharts.mod.SeriesDpoOptions
+  - typings.highcharts.mod.SeriesEmaOptions
+  - typings.highcharts.mod.SeriesErrorbarOptions
+  - typings.highcharts.mod.SeriesFlagsOptions
+  - typings.highcharts.mod.SeriesFunnel3dOptions
+  - typings.highcharts.mod.SeriesFunnelOptions
+  - typings.highcharts.mod.SeriesGanttOptions
+  - typings.highcharts.mod.SeriesGaugeOptions
+  - typings.highcharts.mod.SeriesHeatmapOptions
+  - typings.highcharts.mod.SeriesHistogramOptions
+  - typings.highcharts.mod.SeriesIkhOptions
+  - typings.highcharts.mod.SeriesItemOptions
+  - typings.highcharts.mod.SeriesKeltnerchannelsOptions
+  - typings.highcharts.mod.SeriesLinearregressionangleOptions
+  - typings.highcharts.mod.SeriesLinearregressioninterceptOptions
+  - typings.highcharts.mod.SeriesLinearregressionOptions
+  - typings.highcharts.mod.SeriesLinearregressionslopeOptions
+  - typings.highcharts.mod.SeriesLineOptions
+  - typings.highcharts.mod.SeriesMacdOptions
+  - typings.highcharts.mod.SeriesMapbubbleOptions
+  - typings.highcharts.mod.SeriesMaplineOptions
+  - typings.highcharts.mod.SeriesMapOptions
+  - typings.highcharts.mod.SeriesMappointOptions
+  - typings.highcharts.mod.SeriesMfiOptions
+  - typings.highcharts.mod.SeriesMomentumOptions
+  - typings.highcharts.mod.SeriesNatrOptions
+  - typings.highcharts.mod.SeriesNetworkgraphOptions
+  - typings.highcharts.mod.SeriesOhlcOptions
+  - typings.highcharts.mod.SeriesOrganizationOptions
+  - typings.highcharts.mod.SeriesPackedbubbleOptions
+  - typings.highcharts.mod.SeriesParetoOptions
+  - typings.highcharts.mod.SeriesPcOptions
+  - typings.highcharts.mod.SeriesPieOptions
+  - typings.highcharts.mod.SeriesPivotpointsOptions
+  - typings.highcharts.mod.SeriesPolygonOptions
+  - typings.highcharts.mod.SeriesPpoOptions
+  - typings.highcharts.mod.SeriesPriceenvelopesOptions
+  - typings.highcharts.mod.SeriesPsarOptions
+  - typings.highcharts.mod.SeriesPyramid3dOptions
+  - typings.highcharts.mod.SeriesPyramidOptions
+  - typings.highcharts.mod.SeriesRocOptions
+  - typings.highcharts.mod.SeriesRsiOptions
+  - typings.highcharts.mod.SeriesSankeyOptions
+  - typings.highcharts.mod.SeriesScatter3dOptions
+  - typings.highcharts.mod.SeriesScatterOptions
+  - typings.highcharts.mod.SeriesSmaOptions
+  - typings.highcharts.mod.SeriesSolidgaugeOptions
+  - typings.highcharts.mod.SeriesSplineOptions
+  - typings.highcharts.mod.SeriesStochasticOptions
+  - typings.highcharts.mod.SeriesStreamgraphOptions
+  - typings.highcharts.mod.SeriesSunburstOptions
+  - typings.highcharts.mod.SeriesSupertrendOptions
+  - typings.highcharts.mod.SeriesTemaOptions
+  - typings.highcharts.mod.SeriesTilemapOptions
+  - typings.highcharts.mod.SeriesTimelineOptions
+  - typings.highcharts.mod.SeriesTrendlineOptions
+  - typings.highcharts.mod.SeriesTrixOptions
+  - typings.highcharts.mod.SeriesVariablepieOptions
+  - typings.highcharts.mod.SeriesVariwideOptions
+  - typings.highcharts.mod.SeriesVbpOptions
+  - typings.highcharts.mod.SeriesVectorOptions
+  - typings.highcharts.mod.SeriesVennOptions
+  - typings.highcharts.mod.SeriesVwapOptions
+  - typings.highcharts.mod.SeriesWaterfallOptions
+  - typings.highcharts.mod.SeriesWilliamsrOptions
+  - typings.highcharts.mod.SeriesWmaOptions
+  - typings.highcharts.mod.SeriesWordcloudOptions
+  - typings.highcharts.mod.SeriesXrangeOptions
+  - typings.highcharts.mod.SeriesZigzagOptions
+*/
+trait SeriesOptionsType extends js.Object
+

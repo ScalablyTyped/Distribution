@@ -29,6 +29,6 @@ object ^ extends js.Object {
     * Set this to a lower value to speed up pretty printing if you have large objects.
     */
   var MAX_PRETTY_PRINT_DEPTH: Double = js.native
-  var matchersUtil: MatchersUtil = js.native
+  var matchersUtil: MatchersUtil_ = js.native
 }
 

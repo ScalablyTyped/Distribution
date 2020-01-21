@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("ApplicationCache")
 @js.native
-class ApplicationCacheCls () extends ApplicationCache
+class ApplicationCacheCls () extends ApplicationCache_
 

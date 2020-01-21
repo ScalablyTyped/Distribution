@@ -1,6 +1,6 @@
 package typings.dojo.dijit.layout
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.controllerWidget
 import typings.dojo.dojoStrings.useMenu
 import typings.dojo.dojoStrings.useSlider
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dijit.layout.TabContainer")
 @js.native
-class TabContainer () extends _TabContainerBase {
+class TabContainer () extends TabContainerBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -66,7 +66,7 @@ class TabContainer () extends _TabContainerBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useMenu(
     property: useMenu,
@@ -76,7 +76,7 @@ class TabContainer () extends _TabContainerBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_useSlider(
     property: useSlider,
@@ -86,6 +86,6 @@ class TabContainer () extends _TabContainerBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -1,7 +1,7 @@
 package typings.webdriverio.WebdriverIO
 
 import typings.webdriver.WebDriver.DesiredCapabilities
-import typings.webdriverio.Anon_SpecFiltering
+import typings.webdriverio.AnonSpecFiltering
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object Config {
     capabilities: js.Array[DesiredCapabilities] | MultiRemoteCapabilities = null,
     exclude: js.Array[String] = null,
     execArgv: js.Array[String] = null,
-    featureFlags: Anon_SpecFiltering = null,
+    featureFlags: AnonSpecFiltering = null,
     framework: String = null,
     jasmineNodeOpts: js.Object = null,
     maxInstances: Int | Double = null,

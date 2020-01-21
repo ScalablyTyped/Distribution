@@ -1,9 +1,9 @@
 package typings.baseui.accordionMod
 
-import typings.baseui.Anon_ExpandedBoolean
-import typings.react.reactMod.Key
-import typings.react.reactMod.ReactNode
-import typings.std.Event
+import typings.baseui.AnonExpandedBoolean
+import typings.react.mod.Key
+import typings.react.mod.ReactNode
+import typings.std.Event_
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,8 +13,8 @@ trait SharedPanelProps extends js.Object {
   var children: ReactNode
   var disabled: js.UndefOr[Boolean] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* args */ Anon_ExpandedBoolean, _]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* e */ Event, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* args */ AnonExpandedBoolean, _]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* e */ Event_, _]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function1[/* e */ KeyboardEvent, _]] = js.undefined
   var overrides: js.UndefOr[PanelOverrides[SharedProps]] = js.undefined
   var renderAll: js.UndefOr[Boolean] = js.undefined
@@ -28,8 +28,8 @@ object SharedPanelProps {
     children: ReactNode = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     key: Key = null,
-    onChange: /* args */ Anon_ExpandedBoolean => _ = null,
-    onClick: /* e */ Event => _ = null,
+    onChange: /* args */ AnonExpandedBoolean => _ = null,
+    onClick: /* e */ Event_ => _ = null,
     onKeyDown: /* e */ KeyboardEvent => _ = null,
     overrides: PanelOverrides[SharedProps] = null,
     renderAll: js.UndefOr[Boolean] = js.undefined,

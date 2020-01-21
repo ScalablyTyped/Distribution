@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "Mixin")
 @js.native
 class Mixin ()
-  extends typings.fullcalendar.srcExportsMod.Mixin
+  extends typings.fullcalendar.exportsMod.Mixin
 
 /* static members */
 @JSImport("fullcalendar/src/main", "Mixin")

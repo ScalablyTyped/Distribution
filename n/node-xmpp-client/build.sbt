@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-xmpp-client"
-version := "3.1-dt-20190212Z-d802a6"
+version := "3.1-dt-20190212Z-cd6bde"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

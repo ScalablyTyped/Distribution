@@ -1,6 +1,6 @@
 package typings.dojo.dojox.drawing.manager
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,7 +89,7 @@ class Stencil protected () extends js.Object {
     *
     * @param obj
     */
-  def onBeginDrag(obj: Event): Unit = js.native
+  def onBeginDrag(obj: Event_): Unit = js.native
   /**
     * Event fired on deletion of a stencil
     *
@@ -108,20 +108,20 @@ class Stencil protected () extends js.Object {
     *
     * @param obj
     */
-  def onDown(obj: Event): Unit = js.native
+  def onDown(obj: Event_): Unit = js.native
   /**
     * Event fired at the end of a stencil drag
     *
     * @param obj
     */
-  def onDragEnd(obj: Event): Unit = js.native
+  def onDragEnd(obj: Event_): Unit = js.native
   /**
     * Event to connect a textbox to
     * for label edits
     *
     * @param obj
     */
-  def onLabelDoubleClick(obj: Event): Unit = js.native
+  def onLabelDoubleClick(obj: Event_): Unit = js.native
   /**
     * Event fired on mousedown of a stencil's label
     * Because it's an annotation the id will be the
@@ -130,17 +130,17 @@ class Stencil protected () extends js.Object {
     * @param obj
     * @param evt
     */
-  def onLabelDown(obj: Event, evt: js.Any): Unit = js.native
+  def onLabelDown(obj: Event_, evt: js.Any): Unit = js.native
   /**
     *
     * @param obj
     */
-  def onLabelDrag(obj: Event): Unit = js.native
+  def onLabelDrag(obj: Event_): Unit = js.native
   /**
     *
     * @param obj
     */
-  def onLabelUp(obj: Event): Unit = js.native
+  def onLabelUp(obj: Event_): Unit = js.native
   /**
     * Event fired on selection of a stencil
     *
@@ -152,20 +152,20 @@ class Stencil protected () extends js.Object {
     *
     * @param obj
     */
-  def onStencilDoubleClick(obj: Event): Unit = js.native
+  def onStencilDoubleClick(obj: Event_): Unit = js.native
   /**
     * Event fired on mousedown on a stencil
     *
     * @param obj
     * @param evt
     */
-  def onStencilDown(obj: Event, evt: js.Any): Unit = js.native
+  def onStencilDown(obj: Event_, evt: js.Any): Unit = js.native
   /**
     * Event fired on every mousemove of a stencil drag
     *
     * @param obj
     */
-  def onStencilDrag(obj: Event): Unit = js.native
+  def onStencilDrag(obj: Event_): Unit = js.native
   /**
     * This restores the cursor.
     *
@@ -184,7 +184,7 @@ class Stencil protected () extends js.Object {
     *
     * @param obj
     */
-  def onStencilUp(obj: Event): Unit = js.native
+  def onStencilUp(obj: Event_): Unit = js.native
   /**
     * Key method for adding Stencils. Stencils
     * can be added to the canvas without adding

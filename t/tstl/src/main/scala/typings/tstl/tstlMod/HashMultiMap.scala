@@ -1,12 +1,16 @@
 package typings.tstl.tstlMod
 
-import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.utilityIPairMod.IPair
+import org.scalablytyped.runtime.Instantiable0
+import typings.tstl.binaryPredicatorMod.BinaryPredicator
+import typings.tstl.hasherMod.Hasher
+import typings.tstl.iforwarditeratorMod.IForwardIterator
+import typings.tstl.ipairMod.IPair
+import typings.tstl.mapContainerMod.MapContainer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl", "HashMultiMap")
+@JSImport("tstl/container", "HashMultiMap")
 @js.native
 /**
   * Default Constructor.
@@ -15,8 +19,8 @@ import scala.scalajs.js.annotation._
   * @param equal A binary function predicates two arguments are equal. Default is {@link equal_to}.
   */
 class HashMultiMap[Key, T] ()
-  extends typings.tstl.containerMod.HashMultiMap[Key, T] {
-  def this(hash: js.Function1[/* key */ Key, Double]) = this()
+  extends typings.tstl.hashMultiMapMod.HashMultiMap[Key, T] {
+  def this(hash: Hasher[Key]) = this()
   /**
     * Initializer Constructor.
     *
@@ -30,7 +34,7 @@ class HashMultiMap[Key, T] ()
     *
     * @param obj Object to copy.
     */
-  def this(obj: typings.tstl.containerHashMultiMapMod.HashMultiMap[Key, T]) = this()
+  def this(obj: typings.tstl.hashMultiMapMod.HashMultiMap[Key, T]) = this()
   /**
     * Range Constructor.
     *
@@ -43,32 +47,74 @@ class HashMultiMap[Key, T] ()
     first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]]
   ) = this()
-  def this(hash: js.Function1[/* key */ Key, Double], equal: js.Function2[/* x */ Key, /* y */ Key, Boolean]) = this()
-  def this(items: js.Array[IPair[Key, T]], hash: js.Function1[/* key */ Key, Double]) = this()
+  def this(hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
+  def this(items: js.Array[IPair[Key, T]], hash: Hasher[Key]) = this()
   def this(
     first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-    hash: js.Function1[/* key */ Key, Double]
+    hash: Hasher[Key]
   ) = this()
-  def this(
-    items: js.Array[IPair[Key, T]],
-    hash: js.Function1[/* key */ Key, Double],
-    equal: js.Function2[/* x */ Key, /* y */ Key, Boolean]
-  ) = this()
+  def this(items: js.Array[IPair[Key, T]], hash: Hasher[Key], equal: BinaryPredicator[Key, Key]) = this()
   def this(
     first: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
     last: IForwardIterator[IPair[Key, T], IForwardIterator[IPair[Key, T], _]],
-    hash: js.Function1[/* key */ Key, Double],
-    equal: js.Function2[/* x */ Key, /* y */ Key, Boolean]
+    hash: Hasher[Key],
+    equal: BinaryPredicator[Key, Key]
   ) = this()
 }
 
-@JSImport("tstl", "HashMultiMap")
+@JSImport("tstl/container", "HashMultiMap")
 @js.native
 object HashMultiMap extends js.Object {
-  val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
-  val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
-  val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
-  val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
+  val Iterator: Instantiable0[
+    typings.tstl.mapElementListMod.MapElementList.Iterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.mapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
+  val ReverseIterator: Instantiable0[
+    typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        typings.tstl.mapElementListMod.MapElementList.Iterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ], 
+        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
 }
 

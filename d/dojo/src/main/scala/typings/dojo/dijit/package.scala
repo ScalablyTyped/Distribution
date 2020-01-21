@@ -5,8 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dijit {
-  import typings.std.HTMLElement
-
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dijit/BackgroundIframe.html
     *
@@ -18,8 +16,7 @@ package object dijit {
     * 
     * @param node     
     */
-  type BackgroundIframe = js.Function1[/* node */ HTMLElement, Unit]
-  type Dialog = Dialog_
+  type BackgroundIframe = js.Function1[/* node */ typings.std.HTMLElement, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dijit/_BidiSupport.html
     *
@@ -27,10 +24,20 @@ package object dijit {
     * has("dojo-bidi") to return true, rather than manually requiring this module.
     * 
     */
-  type _BidiSupport = js.Function0[Unit]
-  type _OnDijitClickMixin = _OnDijitClickMixin_
-  type _TemplatedMixin = _TemplatedMixin_
-  type _base = _base_
+  type BidiSupport = js.Function0[scala.Unit]
+  type Calendar = typings.dojo.dijit.Calendar_
+  type CalendarLite = typings.dojo.dijit.CalendarLite_
+  type ColorPalette = typings.dojo.dijit.ColorPalette_
+  type Dialog = typings.dojo.dijit.Dialog_
+  type InlineEditBox = typings.dojo.dijit.InlineEditBox_
+  type MenuBarItem = typings.dojo.dijit.MenuBarItem_
+  type OnDijitClickMixin = typings.dojo.dijit.OnDijitClickMixin_
+  type PaletteMixin = typings.dojo.dijit.PaletteMixin_
+  type TemplatedMixin = typings.dojo.dijit.TemplatedMixin_
+  type TimePicker = typings.dojo.dijit.TimePicker_
+  type Tooltip = typings.dojo.dijit.Tooltip_
+  type Tree_ = typings.dojo.dijit.Tree__
+  type base = typings.dojo.dijit.base_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dijit/hccss.html
     *
@@ -38,8 +45,8 @@ package object dijit {
     * Deprecated, use dojo/hccss instead.
     * 
     */
-  type hccss = js.Function0[Unit]
-  type main = main_
-  type place = place_
-  type registry = registry_
+  type hccss = js.Function0[scala.Unit]
+  type main = typings.dojo.dijit.main_
+  type place = typings.dojo.dijit.place_
+  type registry = typings.dojo.dijit.registry_
 }

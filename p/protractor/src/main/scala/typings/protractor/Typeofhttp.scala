@@ -3,26 +3,22 @@ package typings.protractor
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.seleniumDashWebdriver.httpMod.HttpClient
-import typings.seleniumDashWebdriver.httpMod.Response
+import typings.seleniumWebdriver.httpMod.HttpClient
+import typings.seleniumWebdriver.httpMod.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Typeofhttp extends js.Object {
-  var Executor: Instantiable1[/* client */ HttpClient, typings.seleniumDashWebdriver.httpMod.Executor] = js.native
-  var HttpClient: Instantiable1[/* serverUrl */ String, typings.seleniumDashWebdriver.httpMod.HttpClient] = js.native
-  var Request: Instantiable2[
-    /* method */ String, 
-    /* path */ String, 
-    typings.seleniumDashWebdriver.httpMod.Request
-  ] = js.native
+  var Executor: Instantiable1[/* client */ HttpClient, typings.seleniumWebdriver.httpMod.Executor] = js.native
+  var HttpClient: Instantiable1[/* serverUrl */ String, typings.seleniumWebdriver.httpMod.HttpClient] = js.native
+  var Request: Instantiable2[/* method */ String, /* path */ String, typings.seleniumWebdriver.httpMod.Request] = js.native
   var Response: Instantiable3[
     /* status */ Double, 
     /* headers */ js.Object, 
     /* body */ String, 
-    typings.seleniumDashWebdriver.httpMod.Response
+    typings.seleniumWebdriver.httpMod.Response
   ] = js.native
   def buildPath(path: String, parameters: js.Object): String = js.native
   def del(path: String): js.Any = js.native

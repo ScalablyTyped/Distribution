@@ -24,8 +24,8 @@ object guiMod extends js.Object {
   val IE7: `7000` = js.native
   val IE8: `8000` = js.native
   val IE9: `9000` = js.native
-  def open(url: String): Class_WebView = js.native
-  def open(url: String, opt: js.Object): Class_WebView = js.native
+  def open(url: String): ClassWebView = js.native
+  def open(url: String, opt: js.Object): ClassWebView = js.native
   def setVersion(ver: Double): Unit = js.native
 }
 

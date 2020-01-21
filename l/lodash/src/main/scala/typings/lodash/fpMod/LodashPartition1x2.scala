@@ -1,7 +1,7 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.ValueIteratee
-import typings.lodash.lodashMod.ValueIteratorTypeGuard
+import typings.lodash.mod.ValueIteratee
+import typings.lodash.mod.ValueIteratorTypeGuard
 import typings.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`

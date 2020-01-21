@@ -1,6 +1,6 @@
 package typings.zdog
 
-import typings.zdog.zdogMod.QuartersValue
+import typings.zdog.mod.QuartersValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

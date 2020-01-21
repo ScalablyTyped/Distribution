@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.UI.Animation
 
-import typings.winjs.Anon_Entrance
+import typings.winjs.AnonEntrance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,6 @@ object createPageNavigationAnimations extends js.Object {
     * @param movingBackwards Boolean value for whether the navigation is moving backwards.
     * @returns an object containing the exit and entrance animations to play based on the parameters given.
     **/
-  def apply(currentPreferredAnimation: String, nextPreferredAnimation: String, movingBackwards: Boolean): Anon_Entrance = js.native
+  def apply(currentPreferredAnimation: String, nextPreferredAnimation: String, movingBackwards: Boolean): AnonEntrance = js.native
 }
 

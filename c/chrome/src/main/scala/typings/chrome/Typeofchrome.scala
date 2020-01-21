@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Typeofchrome extends js.Object {
-  val _debugger: Typeof_debugger
+  val _debugger: TypeofDebugger
   ////////////////////
   // Accessibility Features
   ////////////////////
@@ -490,7 +490,7 @@ trait Typeofchrome extends js.Object {
 object Typeofchrome {
   @scala.inline
   def apply(
-    _debugger: Typeof_debugger,
+    _debugger: TypeofDebugger,
     accessibilityFeatures: TypeofaccessibilityFeatures,
     alarms: Typeofalarms,
     bookmarks: Typeofbookmarks,

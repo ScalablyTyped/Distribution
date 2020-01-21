@@ -1,6 +1,6 @@
 package typings.sortablejs.pluginsMod
 
-import typings.sortablejs.sortablejsMod.SortableEvent
+import typings.sortablejs.mod.SortableEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

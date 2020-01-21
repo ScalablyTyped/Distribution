@@ -1,6 +1,6 @@
 package typings.bitwise
 
-import typings.bitwise.esmTypesMod.Bit
+import typings.bitwise.typesMod.Bit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

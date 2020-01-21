@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.autoComplete
 import typings.dojo.dojoStrings.dropDown
 import typings.dojo.dojoStrings.dropDownClass
@@ -32,8 +32,8 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._SearchMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit.form._AutoCompleterMixin because Inheritance from two classes. Inlined autoComplete, fetchProperties, highlightMatch, ignoreCase, item, labelAttr, labelType, maxHeight, pageSize, query, queryExpr, searchAttr, searchDelay, store, closeDropDown, doHighlight, isLoaded, loadDropDown, postCreate, postMixInProperties, reset, onSearch */ @JSGlobal("dojox.mobile.ComboBox")
+- typings.dojo.dijit.form.SearchMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.form.AutoCompleterMixin because Inheritance from two classes. Inlined autoComplete, fetchProperties, highlightMatch, ignoreCase, item, labelAttr, labelType, maxHeight, pageSize, query, queryExpr, searchAttr, searchDelay, store, closeDropDown, doHighlight, isLoaded, loadDropDown, postCreate, postMixInProperties, reset, onSearch */ @JSGlobal("dojox.mobile.ComboBox")
 @js.native
 class ComboBox () extends TextBox {
   def this(params: js.Object) = this()
@@ -310,7 +310,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dropDown(
     property: dropDown,
@@ -320,7 +320,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dropDownClass(
     property: dropDownClass,
@@ -330,7 +330,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_dropDownPosition(
     property: dropDownPosition,
@@ -340,7 +340,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fetchProperties(
     property: fetchProperties,
@@ -350,7 +350,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_highlightMatch(
     property: highlightMatch,
@@ -360,7 +360,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_ignoreCase(
     property: ignoreCase,
@@ -370,7 +370,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_item(
     property: item,
@@ -380,7 +380,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelAttr(
     property: labelAttr,
@@ -390,7 +390,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelType(
     property: labelType,
@@ -400,7 +400,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_maxHeight(
     property: maxHeight,
@@ -410,7 +410,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_pageSize(
     property: pageSize,
@@ -420,7 +420,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_query(
     property: query,
@@ -430,7 +430,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_queryExpr(
     property: queryExpr,
@@ -440,7 +440,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchAttr(
     property: searchAttr,
@@ -450,7 +450,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_searchDelay(
     property: searchDelay,
@@ -460,7 +460,7 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_store(
     property: store,
@@ -470,6 +470,6 @@ class ComboBox () extends TextBox {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

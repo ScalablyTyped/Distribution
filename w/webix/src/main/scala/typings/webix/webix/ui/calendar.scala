@@ -1,7 +1,7 @@
 package typings.webix.webix.ui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event
+import typings.std.Event_
 import typings.webix.webix.Date
 import typings.webix.webix.WebixCallback
 import scala.scalajs.js
@@ -31,7 +31,7 @@ class calendar () extends baseview {
   def getValue(): js.Any = js.native
   def getVisibleDate(): js.Any = js.native
   def hasEvent(name: String): Boolean = js.native
-  def locate(e: Event): String | Double = js.native
+  def locate(e: Event_): String | Double = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def moveSelection(direction: String): Unit = js.native
   def on_click(args: js.Any*): js.Any = js.native

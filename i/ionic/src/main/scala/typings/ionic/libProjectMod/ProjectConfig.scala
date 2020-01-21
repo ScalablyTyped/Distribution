@@ -1,8 +1,8 @@
 package typings.ionic.libProjectMod
 
-import typings.atIonicCliDashFramework.atIonicCliDashFrameworkMod.BaseConfig
 import typings.ionic.definitionsMod.IProjectConfig
 import typings.ionic.definitionsMod.ProjectType
+import typings.ionicCliFramework.mod.BaseConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

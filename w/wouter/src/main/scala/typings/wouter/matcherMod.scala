@@ -1,7 +1,7 @@
 package typings.wouter
 
 import typings.std.RegExp
-import typings.wouter.wouterMod.MatcherFn
+import typings.wouter.mod.MatcherFn
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object matcherMod extends js.Object {
   def default(): MatcherFn = js.native
   def default(
-    makeRegexpFn: js.Function2[/* pattern */ String, /* keys */ js.UndefOr[js.Array[Anon_Name]], RegExp]
+    makeRegexpFn: js.Function2[/* pattern */ String, /* keys */ js.UndefOr[js.Array[AnonName]], RegExp]
   ): MatcherFn = js.native
 }
 

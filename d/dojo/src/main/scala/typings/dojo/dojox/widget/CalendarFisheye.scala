@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   *
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.widget._FisheyeFX because Inheritance from two classes. Inlined addFx */ @JSGlobal("dojox.widget.CalendarFisheye")
+- typings.dojo.dojox.widget.FisheyeFX because Inheritance from two classes. Inlined addFx */ @JSGlobal("dojox.widget.CalendarFisheye")
 @js.native
 class CalendarFisheye () extends Calendar
 

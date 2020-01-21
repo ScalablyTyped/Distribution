@@ -1,6 +1,6 @@
 package typings.gitlab
 
-import typings.gitlab.distTypesCoreTemplatesResourceAccessRequestsMod.AccessLevel
+import typings.gitlab.resourceAccessRequestsMod.AccessLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +9,12 @@ object gitlabNumbers {
   @js.native
   sealed trait `10`
     extends AccessLevel
-       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
+       with typings.gitlab.servicesMod.AccessLevel
   
   @js.native
   sealed trait `20`
     extends AccessLevel
-       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
+       with typings.gitlab.servicesMod.AccessLevel
   
   @js.native
   sealed trait `3` extends js.Object
@@ -22,7 +22,7 @@ object gitlabNumbers {
   @js.native
   sealed trait `30`
     extends AccessLevel
-       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
+       with typings.gitlab.servicesMod.AccessLevel
   
   @js.native
   sealed trait `4` extends js.Object
@@ -30,12 +30,12 @@ object gitlabNumbers {
   @js.native
   sealed trait `40`
     extends AccessLevel
-       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
+       with typings.gitlab.servicesMod.AccessLevel
   
   @js.native
   sealed trait `50`
     extends AccessLevel
-       with typings.gitlab.distTypesCoreServicesMod.AccessLevel
+       with typings.gitlab.servicesMod.AccessLevel
   
   @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]

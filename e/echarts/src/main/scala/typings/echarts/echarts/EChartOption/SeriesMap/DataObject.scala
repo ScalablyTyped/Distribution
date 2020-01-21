@@ -1,9 +1,9 @@
 package typings.echarts.echarts.EChartOption.SeriesMap
 
-import typings.echarts.Anon_AreaColorAnonBorderColorBorderType
-import typings.echarts.Anon_BackgroundColorBorderColor
-import typings.echarts.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
-import typings.echarts.Anon_ItemStyleLabelAnonAreaColor
+import typings.echarts.AnonAreaColorAnonBorderColorBorderType
+import typings.echarts.AnonBackgroundColorBorderColor
+import typings.echarts.AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance
+import typings.echarts.AnonItemStyleLabelAnonAreaColor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,14 +12,14 @@ trait DataObject extends js.Object {
   /**
     * @see https://echarts.apache.org/en/option.html#series-map.data.emphasis
     */
-  var emphasis: js.UndefOr[Anon_ItemStyleLabelAnonAreaColor] = js.undefined
+  var emphasis: js.UndefOr[AnonItemStyleLabelAnonAreaColor] = js.undefined
   /**
     * Style of item polygon
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-map.data.itemStyle
     */
-  var itemStyle: js.UndefOr[Anon_AreaColorAnonBorderColorBorderType] = js.undefined
+  var itemStyle: js.UndefOr[AnonAreaColorAnonBorderColorBorderType] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -31,7 +31,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.data.label
     */
-  var label: js.UndefOr[Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
+  var label: js.UndefOr[AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
   /**
     * The name of the map area where the data belongs to, such
     * as `'China'` or `'United Kingdom'` .
@@ -53,7 +53,7 @@ trait DataObject extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-map.data.tooltip
     */
-  var tooltip: js.UndefOr[Anon_BackgroundColorBorderColor] = js.undefined
+  var tooltip: js.UndefOr[AnonBackgroundColorBorderColor] = js.undefined
   /**
     * The numerical value of this area.
     *
@@ -66,12 +66,12 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    emphasis: Anon_ItemStyleLabelAnonAreaColor = null,
-    itemStyle: Anon_AreaColorAnonBorderColorBorderType = null,
-    label: Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
+    emphasis: AnonItemStyleLabelAnonAreaColor = null,
+    itemStyle: AnonAreaColorAnonBorderColorBorderType = null,
+    label: AnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistance = null,
     name: String = null,
     selected: js.UndefOr[Boolean] = js.undefined,
-    tooltip: Anon_BackgroundColorBorderColor = null,
+    tooltip: AnonBackgroundColorBorderColor = null,
     value: Int | Double = null
   ): DataObject = {
     val __obj = js.Dynamic.literal()

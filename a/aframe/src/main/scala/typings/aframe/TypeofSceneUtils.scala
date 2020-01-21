@@ -1,9 +1,9 @@
 package typings.aframe
 
-import typings.three.srcCoreGeometryMod.Geometry
-import typings.three.srcCoreObject3DMod.Object3D
-import typings.three.srcMaterialsMaterialMod.Material
-import typings.three.srcScenesSceneMod.Scene
+import typings.three.geometryMod.Geometry
+import typings.three.materialMod.Material
+import typings.three.object3DMod.Object3D
+import typings.three.sceneMod.Scene
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ trait SegmentedControlSegment extends js.Object {
   /**
     * The image to appear in this segment.
     */
-  var icon: js.UndefOr[NativeImage] = js.undefined
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   /**
     * The text to appear in this segment.
     */
@@ -22,7 +22,7 @@ trait SegmentedControlSegment extends js.Object {
 
 object SegmentedControlSegment {
   @scala.inline
-  def apply(enabled: js.UndefOr[Boolean] = js.undefined, icon: NativeImage = null, label: String = null): SegmentedControlSegment = {
+  def apply(enabled: js.UndefOr[Boolean] = js.undefined, icon: NativeImage_ = null, label: String = null): SegmentedControlSegment = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

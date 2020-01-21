@@ -1,8 +1,8 @@
 package typings.sauronjs
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.sauronjs.srcCoreComponentMod.ComponentParameters
-import typings.sauronjs.srcCoreComponentMod.^
+import typings.sauronjs.componentMod.ComponentParameters
+import typings.sauronjs.componentMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

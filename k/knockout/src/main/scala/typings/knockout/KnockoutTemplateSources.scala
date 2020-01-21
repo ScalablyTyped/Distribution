@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KnockoutTemplateSources extends js.Object {
-  var anonymousTemplate: Anon_ElementKnockoutTemplateAnonymous
-  var domElement: Anon_Element
+  var anonymousTemplate: AnonElementKnockoutTemplateAnonymous
+  var domElement: AnonElement
 }
 
 object KnockoutTemplateSources {
   @scala.inline
-  def apply(anonymousTemplate: Anon_ElementKnockoutTemplateAnonymous, domElement: Anon_Element): KnockoutTemplateSources = {
+  def apply(anonymousTemplate: AnonElementKnockoutTemplateAnonymous, domElement: AnonElement): KnockoutTemplateSources = {
     val __obj = js.Dynamic.literal(anonymousTemplate = anonymousTemplate.asInstanceOf[js.Any], domElement = domElement.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[KnockoutTemplateSources]

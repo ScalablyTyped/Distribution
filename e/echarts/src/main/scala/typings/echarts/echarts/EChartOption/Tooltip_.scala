@@ -13,7 +13,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("Tooltip")
 trait Tooltip_ extends js.Object {
   /**
     * Whether to show tooltip content all the time.

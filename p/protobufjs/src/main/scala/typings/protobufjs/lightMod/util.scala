@@ -2,16 +2,16 @@ package typings.protobufjs.lightMod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.protobufjs.protobufjsMod.Codegen
-import typings.protobufjs.protobufjsMod.Constructor
-import typings.protobufjs.protobufjsMod.FetchCallback
-import typings.protobufjs.protobufjsMod.IConversionOptions
-import typings.protobufjs.protobufjsMod.IFetchOptions
-import typings.protobufjs.protobufjsMod.OneOfGetter
-import typings.protobufjs.protobufjsMod.OneOfSetter
-import typings.protobufjs.protobufjsMod.PoolAllocator
-import typings.protobufjs.protobufjsMod.PoolSlicer
-import typings.protobufjs.protobufjsMod.asPromiseCallback
+import typings.protobufjs.mod.Codegen
+import typings.protobufjs.mod.Constructor
+import typings.protobufjs.mod.FetchCallback
+import typings.protobufjs.mod.IConversionOptions
+import typings.protobufjs.mod.IFetchOptions
+import typings.protobufjs.mod.OneOfGetter
+import typings.protobufjs.mod.OneOfSetter
+import typings.protobufjs.mod.PoolAllocator
+import typings.protobufjs.mod.PoolSlicer
+import typings.protobufjs.mod.asPromiseCallback
 import typings.std.Error
 import typings.std.RegExp
 import typings.std.Uint8Array
@@ -36,11 +36,11 @@ object util extends js.Object {
   @js.native
   /** Constructs a new event emitter instance. */
   class EventEmitter ()
-    extends typings.protobufjs.protobufjsMod.util.EventEmitter
+    extends typings.protobufjs.mod.util.EventEmitter
   
   @js.native
   class Long protected ()
-    extends typings.protobufjs.protobufjsMod.Long {
+    extends typings.protobufjs.mod.Long {
     def this(params: js.Any*) = this()
     /** High bits */
     /* CompleteClass */
@@ -56,7 +56,7 @@ object util extends js.Object {
   /** Helper class for working with the low and high bits of a 64 bit value. */
   @js.native
   class LongBits protected ()
-    extends typings.protobufjs.protobufjsMod.util.LongBits {
+    extends typings.protobufjs.mod.util.LongBits {
     /**
       * Constructs new long bits.
       * @param lo Low 32 bits, unsigned
@@ -67,8 +67,8 @@ object util extends js.Object {
   
   /** Error subclass indicating a protocol specifc error. */
   @js.native
-  class ProtocolError[T /* <: typings.protobufjs.protobufjsMod.Message[T] */] protected ()
-    extends typings.protobufjs.protobufjsMod.util.ProtocolError[T] {
+  class ProtocolError[T /* <: typings.protobufjs.mod.Message[T] */] protected ()
+    extends typings.protobufjs.mod.util.ProtocolError[T] {
     /**
       * Constructs a new protocol error.
       * @param message Error message
@@ -79,7 +79,7 @@ object util extends js.Object {
   }
   
   /** Decorator root (TypeScript). */
-  var decorateRoot: typings.protobufjs.protobufjsMod.Root = js.native
+  var decorateRoot: typings.protobufjs.mod.Root = js.native
   /** An immuable empty array. */
   val emptyArray: js.Array[js.Any] = js.native
   /** An immutable empty object. */
@@ -128,21 +128,21 @@ object util extends js.Object {
     * @param b Second field
     * @returns Comparison value
     */
-  def compareFieldsById(a: typings.protobufjs.protobufjsMod.Field, b: typings.protobufjs.protobufjsMod.Field): Double = js.native
+  def compareFieldsById(a: typings.protobufjs.mod.Field, b: typings.protobufjs.mod.Field): Double = js.native
   /**
     * Decorator helper for enums (TypeScript).
     * @param object Enum object
     * @returns Reflected enum
     */
-  def decorateEnum(`object`: js.Object): typings.protobufjs.protobufjsMod.Enum = js.native
+  def decorateEnum(`object`: js.Object): typings.protobufjs.mod.Enum = js.native
   /**
     * Decorator helper for types (TypeScript).
     * @param ctor Constructor function
     * @param [typeName] Type name, defaults to the constructor's name
     * @returns Reflected type
     */
-  def decorateType[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](ctor: Constructor[T]): typings.protobufjs.protobufjsMod.Type = js.native
-  def decorateType[T /* <: typings.protobufjs.protobufjsMod.Message[T] */](ctor: Constructor[T], typeName: String): typings.protobufjs.protobufjsMod.Type = js.native
+  def decorateType[T /* <: typings.protobufjs.mod.Message[T] */](ctor: Constructor[T]): typings.protobufjs.mod.Type = js.native
+  def decorateType[T /* <: typings.protobufjs.mod.Message[T] */](ctor: Constructor[T], typeName: String): typings.protobufjs.mod.Type = js.native
   /**
     * Fetches the contents of a file.
     * @param filename File path or url
@@ -194,7 +194,8 @@ object util extends js.Object {
     * @param prop Property name
     * @returns `true` if considered to be present, otherwise `false`
     */
-  def isSet(obj: js.Object, prop: String): Boolean = js.native
+  @JSName("isSet")
+  def isSet_(obj: js.Object, prop: String): Boolean = js.native
   /**
     * Tests if the specified value is a string.
     * @param value Value to test
@@ -221,15 +222,15 @@ object util extends js.Object {
     * @param [unsigned=false] Whether unsigned or not
     * @returns Original value
     */
-  def longFromHash(hash: String): typings.protobufjs.protobufjsMod.Long | Double = js.native
-  def longFromHash(hash: String, unsigned: Boolean): typings.protobufjs.protobufjsMod.Long | Double = js.native
+  def longFromHash(hash: String): typings.protobufjs.mod.Long | Double = js.native
+  def longFromHash(hash: String, unsigned: Boolean): typings.protobufjs.mod.Long | Double = js.native
   def longToHash(value: Double): String = js.native
   /**
     * Converts a number or long to an 8 characters long hash string.
     * @param value Value to convert
     * @returns Hash
     */
-  def longToHash(value: typings.protobufjs.protobufjsMod.Long): String = js.native
+  def longToHash(value: typings.protobufjs.mod.Long): String = js.native
   /**
     * Merges the properties of the source object into the destination object.
     * @param dst Destination object
@@ -244,9 +245,9 @@ object util extends js.Object {
     * @param [sizeOrArray=0] Buffer size or number array
     * @returns Buffer
     */
-  def newBuffer(): Uint8Array | typings.protobufjs.protobufjsMod.Buffer = js.native
-  def newBuffer(sizeOrArray: js.Array[Double]): Uint8Array | typings.protobufjs.protobufjsMod.Buffer = js.native
-  def newBuffer(sizeOrArray: Double): Uint8Array | typings.protobufjs.protobufjsMod.Buffer = js.native
+  def newBuffer(): Uint8Array | typings.protobufjs.mod.Buffer = js.native
+  def newBuffer(sizeOrArray: js.Array[Double]): Uint8Array | typings.protobufjs.mod.Buffer = js.native
+  def newBuffer(sizeOrArray: Double): Uint8Array | typings.protobufjs.mod.Buffer = js.native
   /**
     * Creates a custom error constructor.
     * @param name Error name
@@ -305,40 +306,40 @@ object util extends js.Object {
   /** Node's Buffer class if available. */
   @js.native
   object Buffer
-    extends TopLevel[Constructor[typings.protobufjs.protobufjsMod.Buffer]]
+    extends TopLevel[Constructor[typings.protobufjs.mod.Buffer]]
   
   /** Long.js's Long class if available. */
   @js.native
   object Long
-    extends TopLevel[Constructor[typings.protobufjs.protobufjsMod.Long]]
+    extends TopLevel[Constructor[typings.protobufjs.mod.Long]]
   
   /* static members */
   @js.native
   object LongBits extends js.Object {
     /** Zero bits. */
-    var zero: typings.protobufjs.protobufjsMod.util.LongBits = js.native
+    var zero: typings.protobufjs.mod.util.LongBits = js.native
     /** Zero hash. */
     var zeroHash: String = js.native
-    def from(value: String): typings.protobufjs.protobufjsMod.util.LongBits = js.native
-    def from(value: Double): typings.protobufjs.protobufjsMod.util.LongBits = js.native
+    def from(value: String): typings.protobufjs.mod.util.LongBits = js.native
+    def from(value: Double): typings.protobufjs.mod.util.LongBits = js.native
     /**
       * Constructs new long bits from a number, long or string.
       * @param value Value
       * @returns Instance
       */
-    def from(value: typings.protobufjs.protobufjsMod.Long): typings.protobufjs.protobufjsMod.util.LongBits = js.native
+    def from(value: typings.protobufjs.mod.Long): typings.protobufjs.mod.util.LongBits = js.native
     /**
       * Constructs new long bits from the specified 8 characters long hash.
       * @param hash Hash
       * @returns Bits
       */
-    def fromHash(hash: String): typings.protobufjs.protobufjsMod.util.LongBits = js.native
+    def fromHash(hash: String): typings.protobufjs.mod.util.LongBits = js.native
     /**
       * Constructs new long bits from the specified number.
       * @param value Value
       * @returns Instance
       */
-    def fromNumber(value: Double): typings.protobufjs.protobufjsMod.util.LongBits = js.native
+    def fromNumber(value: Double): typings.protobufjs.mod.util.LongBits = js.native
   }
   
   /** A minimal base64 implementation for number arrays. */

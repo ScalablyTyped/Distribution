@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-table"
-version := "1.15.5-a8979f"
+version := "1.15.5-0d1fa5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

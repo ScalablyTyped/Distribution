@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object xmlMod extends js.Object {
   @js.native
-  class Document () extends Class_XmlDocument
+  class Document () extends ClassXmlDocument
   
   val ATTRIBUTE_NODE: `2` = js.native
   val CDATA_SECTION_NODE: `4` = js.native
@@ -31,10 +31,10 @@ object xmlMod extends js.Object {
   val ELEMENT_NODE: `1` = js.native
   val PROCESSING_INSTRUCTION_NODE: `7` = js.native
   val TEXT_NODE: `3` = js.native
-  def parse(source: String): Class_XmlDocument = js.native
-  def parse(source: String, `type`: String): Class_XmlDocument = js.native
-  def parse(source: Class_Buffer): Class_XmlDocument = js.native
-  def parse(source: Class_Buffer, `type`: String): Class_XmlDocument = js.native
-  def serialize(node: Class_XmlNode): String = js.native
+  def parse(source: String): ClassXmlDocument = js.native
+  def parse(source: String, `type`: String): ClassXmlDocument = js.native
+  def parse(source: ClassBuffer): ClassXmlDocument = js.native
+  def parse(source: ClassBuffer, `type`: String): ClassXmlDocument = js.native
+  def serialize(node: ClassXmlNode): String = js.native
 }
 

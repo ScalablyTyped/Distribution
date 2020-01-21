@@ -1,6 +1,6 @@
 package typings.ol.pluggableMapMod
 
-import typings.std.Document
+import typings.std.Document_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,9 +13,9 @@ trait MapOptions extends js.Object {
   var interactions: js.UndefOr[
     typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] | js.Array[typings.ol.interactionInteractionMod.default]
   ] = js.undefined
-  var keyboardEventTarget: js.UndefOr[HTMLElement | Document | String] = js.undefined
+  var keyboardEventTarget: js.UndefOr[HTMLElement | Document_ | String] = js.undefined
   var layers: js.UndefOr[
-    js.Array[typings.ol.layerBaseMod.default] | typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] | typings.ol.layerGroupMod.default
+    js.Array[typings.ol.baseMod.default] | typings.ol.collectionMod.default[typings.ol.baseMod.default] | typings.ol.groupMod.default
   ] = js.undefined
   var maxTilesLoading: js.UndefOr[Double] = js.undefined
   var moveTolerance: js.UndefOr[Double] = js.undefined
@@ -32,8 +32,8 @@ object MapOptions {
   def apply(
     controls: typings.ol.collectionMod.default[typings.ol.controlControlMod.default] | js.Array[typings.ol.controlControlMod.default] = null,
     interactions: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] | js.Array[typings.ol.interactionInteractionMod.default] = null,
-    keyboardEventTarget: HTMLElement | Document | String = null,
-    layers: js.Array[typings.ol.layerBaseMod.default] | typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] | typings.ol.layerGroupMod.default = null,
+    keyboardEventTarget: HTMLElement | Document_ | String = null,
+    layers: js.Array[typings.ol.baseMod.default] | typings.ol.collectionMod.default[typings.ol.baseMod.default] | typings.ol.groupMod.default = null,
     maxTilesLoading: Int | Double = null,
     moveTolerance: Int | Double = null,
     overlays: typings.ol.collectionMod.default[typings.ol.overlayMod.default] | js.Array[typings.ol.overlayMod.default] = null,

@@ -13,6 +13,6 @@ object fileURLToPath extends js.Object {
     * @param url The file URL string or URL object to convert to a path.
     */
   def apply(url: String): String = js.native
-  def apply(url: URL): String = js.native
+  def apply(url: URL_): String = js.native
 }
 

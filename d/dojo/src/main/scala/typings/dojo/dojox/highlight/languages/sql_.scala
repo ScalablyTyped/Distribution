@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   * SQL highlight definitions
   *
   */
-@JSName("sql")
 trait sql_ extends js.Object {
   /**
     *

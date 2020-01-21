@@ -5,19 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object styleStyleMod {
-  import typings.ol.coordinateMod.Coordinate
-  import typings.ol.featureMod.FeatureLike
-  import typings.ol.renderMod.State
-
   type GeometryFunction = js.Function1[
-    /* p0 */ FeatureLike, 
-    typings.ol.geomGeometryMod.default | typings.ol.renderFeatureMod.default
+    /* p0 */ typings.ol.olFeatureMod.FeatureLike, 
+    typings.ol.geometryMod.default | typings.ol.renderFeatureMod.default
   ]
   type RenderFunction = js.Function2[
-    /* p0 */ Coordinate | (js.Array[js.Array[Coordinate] | Coordinate]), 
-    /* p1 */ State, 
-    Unit
+    /* p0 */ typings.ol.coordinateMod.Coordinate | (js.Array[
+      js.Array[typings.ol.coordinateMod.Coordinate] | typings.ol.coordinateMod.Coordinate
+    ]), 
+    /* p1 */ typings.ol.renderMod.State, 
+    scala.Unit
   ]
-  type StyleFunction = js.Function2[/* p0 */ FeatureLike, /* p1 */ Double, Style | js.Array[Style]]
-  type StyleLike = Style | js.Array[Style] | StyleFunction
+  type StyleFunction = js.Function2[
+    /* p0 */ typings.ol.olFeatureMod.FeatureLike, 
+    /* p1 */ scala.Double, 
+    typings.ol.styleStyleMod.Style | js.Array[typings.ol.styleStyleMod.Style]
+  ]
+  type StyleLike = typings.ol.styleStyleMod.Style | js.Array[typings.ol.styleStyleMod.Style] | typings.ol.styleStyleMod.StyleFunction
 }

@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.Anon_AlgString
+import typings.jsrsasign.AnonAlgString
 import typings.jsrsasign.jsrsasign.ECCPrivateKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import typings.jsrsasign.jsrsasignStrings.SIGN
@@ -76,7 +76,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.Signature")
 @js.native
 class Signature () extends js.Object {
-  def this(params: Anon_AlgString) = this()
+  def this(params: AnonAlgString) = this()
   /**
     * Initialize this object for signing or verifying depends on key
     * @param key specifying public or private key as plain/encrypted PKCS#5/8 PEM file, certificate PEM or `RSAKey`, `KJUR.crypto.DSA` or `KJUR.crypto.ECDSA` object

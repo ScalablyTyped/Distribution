@@ -1,7 +1,7 @@
 package typings.tracking.tracking
 
 import typings.std.HTMLElement
-import typings.tracking.Anon_Audio
+import typings.tracking.AnonAudio
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object track extends js.Object {
   def apply(element: String, tracker: Tracker): TrackerTask = js.native
-  def apply(element: String, tracker: Tracker, options: Anon_Audio): TrackerTask = js.native
+  def apply(element: String, tracker: Tracker, options: AnonAudio): TrackerTask = js.native
   /**
     * Tracks a canvas, image or video element based on the specified `tracker`
     * instance. This method extract the pixel information of the input element
@@ -23,6 +23,6 @@ object track extends js.Object {
     * @param options Optional tracker configuration.
     */
   def apply(element: HTMLElement, tracker: Tracker): TrackerTask = js.native
-  def apply(element: HTMLElement, tracker: Tracker, options: Anon_Audio): TrackerTask = js.native
+  def apply(element: HTMLElement, tracker: Tracker, options: AnonAudio): TrackerTask = js.native
 }
 

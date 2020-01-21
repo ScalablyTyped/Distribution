@@ -1,7 +1,7 @@
 package typings.aframe
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.three.threeMod.Euler
+import typings.three.mod.Euler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

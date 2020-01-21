@@ -12,12 +12,12 @@ trait Item extends js.Object {
   /**
     * The image must be non-empty on macOS.
     */
-  var icon: NativeImage
+  var icon: NativeImage_
 }
 
 object Item {
   @scala.inline
-  def apply(file: String, icon: NativeImage): Item = {
+  def apply(file: String, icon: NativeImage_): Item = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Item]

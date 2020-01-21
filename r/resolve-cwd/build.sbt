@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resolve-cwd"
-version := "3.0.0-361f39"
+version := "3.0.0-81af5b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

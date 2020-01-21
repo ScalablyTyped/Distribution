@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-responsive-dimensions"
-version := "3.0-dt-20200103Z-b0a02d"
+version := "3.0-dt-20200103Z-444512"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

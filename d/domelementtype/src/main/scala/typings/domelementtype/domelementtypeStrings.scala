@@ -1,6 +1,6 @@
 package typings.domelementtype
 
-import typings.domelementtype.domelementtypeMod.ElementType
+import typings.domelementtype.mod.ElementType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

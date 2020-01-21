@@ -1,6 +1,6 @@
 package typings.direction
 
-import typings.direction.directionMod.Direction
+import typings.direction.mod.Direction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

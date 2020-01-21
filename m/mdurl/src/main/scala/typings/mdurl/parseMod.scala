@@ -1,6 +1,6 @@
 package typings.mdurl
 
-import typings.mdurl.mdurlMod.Url
+import typings.mdurl.mod.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

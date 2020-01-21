@@ -1,9 +1,9 @@
 package typings.highland
 
-import typings.highland.Highland.MappingHint
-import typings.highland.Highland.Nil
-import typings.highland.Highland.OnFinished
-import typings.highland.Highland.Stream
+import typings.highland.Highland_.MappingHint
+import typings.highland.Highland_.Nil
+import typings.highland.Highland_.OnFinished
+import typings.highland.Highland_.Stream
 import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadableStream
 import typings.std.Error

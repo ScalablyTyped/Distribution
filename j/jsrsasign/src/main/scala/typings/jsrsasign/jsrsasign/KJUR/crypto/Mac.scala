@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.crypto
 
-import typings.jsrsasign.Anon_AlgPass
+import typings.jsrsasign.AnonAlgPass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.crypto.Mac")
 @js.native
 class Mac protected () extends js.Object {
-  def this(params: Anon_AlgPass) = this()
+  def this(params: AnonAlgPass) = this()
   /**
     * completes hash calculation and returns hash result
     * @example

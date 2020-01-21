@@ -1,6 +1,6 @@
 package typings.behavior3.b3
 
-import typings.behavior3.Anon_ChildMaxLoop
+import typings.behavior3.AnonChildMaxLoop
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +23,6 @@ import scala.scalajs.js.annotation._
   *
   */
 class Limiter () extends Decorator {
-  def this(hasChildMaxLoop: Anon_ChildMaxLoop) = this()
+  def this(hasChildMaxLoop: AnonChildMaxLoop) = this()
 }
 

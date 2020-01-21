@@ -1,10 +1,10 @@
 package typings.browserfs
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.browserfs.distNodeBackendLocalStorageMod.LocalStorageFileSystem
-import typings.browserfs.distNodeBackendLocalStorageMod.default
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.fileSystemMod.BFSCallback
+import typings.browserfs.fileSystemMod.FileSystemOptions
+import typings.browserfs.localStorageMod.LocalStorageFileSystem
+import typings.browserfs.localStorageMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

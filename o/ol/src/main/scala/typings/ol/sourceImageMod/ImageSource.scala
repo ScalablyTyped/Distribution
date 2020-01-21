@@ -17,15 +17,15 @@ trait ImageSource
     extent: Extent,
     resolution: Double,
     pixelRatio: Double,
-    projection: typings.ol.projProjectionMod.default
+    projection: typings.ol.projectionMod.default
   ): typings.ol.imageBaseMod.default = js.native
   /* protected */ def getImageInternal(
     extent: Extent,
     resolution: Double,
     pixelRatio: Double,
-    projection: typings.ol.projProjectionMod.default
+    projection: typings.ol.projectionMod.default
   ): typings.ol.imageBaseMod.default = js.native
-  /* protected */ def handleImageChange(event: typings.ol.eventsEventMod.default): Unit = js.native
+  /* protected */ def handleImageChange(event: typings.ol.eventMod.default): Unit = js.native
   @JSName("on")
   def on_imageloadend(`type`: imageloadend, listener: js.Function1[/* evt */ ImageSourceEvent, Unit]): EventsKey = js.native
   @JSName("on")

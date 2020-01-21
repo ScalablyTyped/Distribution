@@ -23,7 +23,18 @@ object Core extends js.Object {
   }
   
   /**
-    * [description]
+    * The core runner class that Phaser uses to handle the game loop. It can use either Request Animation Frame,
+    * or SetTimeout, based on browser support and config settings, to create a continuous loop within the browser.
+    * 
+    * Each time the loop fires, `TimeStep.step` is called and this is then passed onto the core Game update loop,
+    * it is the core heartbeat of your game. It will fire as often as Request Animation Frame is capable of handling
+    * on the target device.
+    * 
+    * Note that there are lots of situations where a browser will stop updating your game. Such as if the player
+    * switches tabs, or covers up the browser window with another application. In these cases, the 'heartbeat'
+    * of your game will pause, and only resume when focus is returned to it by the player. There is no way to avoid
+    * this situation, all you can do is use the visibility events the browser, and Phaser, provide to detect when
+    * it has happened and then gracefully recover.
     */
   @js.native
   class TimeStep protected ()

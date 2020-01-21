@@ -2,10 +2,10 @@ package typings.verror
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.std.Error
-import typings.verror.verrorMod.Info
-import typings.verror.verrorMod.MultiError
-import typings.verror.verrorMod.Options
-import typings.verror.verrorMod.VError
+import typings.verror.mod.Info
+import typings.verror.mod.MultiError
+import typings.verror.mod.Options
+import typings.verror.mod.VError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

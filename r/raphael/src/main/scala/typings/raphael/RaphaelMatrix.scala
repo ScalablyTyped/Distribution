@@ -13,7 +13,7 @@ trait RaphaelMatrix extends js.Object {
   def scale(x: Double, y: Double): Unit = js.native
   def scale(x: Double, y: Double, cx: Double): Unit = js.native
   def scale(x: Double, y: Double, cx: Double, cy: Double): Unit = js.native
-  def split(): Anon_Dx = js.native
+  def split(): AnonDx = js.native
   def toTransformString(): String = js.native
   def translate(x: Double, y: Double): Unit = js.native
   def x(x: Double, y: Double): Double = js.native

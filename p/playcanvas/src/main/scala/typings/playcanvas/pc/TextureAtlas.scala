@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Border
+import typings.playcanvas.AnonBorder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -74,6 +74,6 @@ class TextureAtlas () extends EventHandler {
     *    border: new pc.Vec4(5, 5, 5, 5)
     * });
     */
-  def setFrame(key: String, data: Anon_Border): Unit = js.native
+  def setFrame(key: String, data: AnonBorder): Unit = js.native
 }
 

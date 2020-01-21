@@ -1,7 +1,7 @@
 package typings.baseui.selectMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.reactMod.ReactNode
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

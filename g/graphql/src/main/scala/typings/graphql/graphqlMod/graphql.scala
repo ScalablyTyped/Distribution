@@ -1,21 +1,22 @@
 package typings.graphql.graphqlMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.graphql.executionExecuteMod.ExecutionResult
-import typings.graphql.graphqlGraphqlMod.GraphQLArgs
-import typings.graphql.tsutilsMaybeMod.Maybe
-import typings.graphql.typeDefinitionMod.GraphQLFieldResolver
-import typings.graphql.typeDefinitionMod.GraphQLTypeResolver
+import typings.graphql.definitionMod.GraphQLFieldResolver
+import typings.graphql.definitionMod.GraphQLTypeResolver
+import typings.graphql.executeMod.ExecutionResult
+import typings.graphql.maybeMod.Maybe
+import typings.graphql.schemaMod.GraphQLSchema
+import typings.graphql.sourceMod.Source
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("graphql", "graphql")
+@JSImport("graphql/graphql", "graphql")
 @js.native
 object graphql extends js.Object {
   def apply[TData](args: GraphQLArgs): js.Promise[ExecutionResult[TData]] = js.native
   def apply[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
+    schema: GraphQLSchema,
     source: String,
     rootValue: js.UndefOr[js.Any],
     contextValue: js.UndefOr[js.Any],
@@ -25,8 +26,8 @@ object graphql extends js.Object {
     typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
   ): js.Promise[ExecutionResult[TData]] = js.native
   def apply[TData](
-    schema: typings.graphql.typeSchemaMod.GraphQLSchema,
-    source: typings.graphql.languageSourceMod.Source,
+    schema: GraphQLSchema,
+    source: Source,
     rootValue: js.UndefOr[js.Any],
     contextValue: js.UndefOr[js.Any],
     variableValues: js.UndefOr[Maybe[StringDictionary[_]]],

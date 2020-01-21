@@ -2,8 +2,8 @@ package typings.dojo
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable2
-import typings.dojo.dijit.layout.BorderContainer._Gutter
-import typings.dojo.dijit.layout.BorderContainer._Splitter
+import typings.dojo.dijit.layout.BorderContainer.Gutter
+import typings.dojo.dijit.layout.BorderContainer.Splitter
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,11 +21,7 @@ trait TypeofBorderContainer extends js.Object {
     * @param params Hash of initialization parameters for widget, including scalar values (like title, duration etc.)and functions, typically callbacks like onClick.The hash can contain any of the widget's properties, excluding read-only properties.     
     * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
     */
-  var _Gutter: Instantiable2[
-    js.UndefOr[/* params */ js.Object], 
-    js.UndefOr[/* srcNodeRef */ HTMLElement], 
-    typings.dojo.dijit.layout.BorderContainer._Gutter
-  ]
+  var _Gutter: Instantiable2[js.UndefOr[/* params */ js.Object], js.UndefOr[/* srcNodeRef */ HTMLElement], Gutter]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dijit/layout/BorderContainer._Splitter.html
     *
@@ -34,18 +30,14 @@ trait TypeofBorderContainer extends js.Object {
     * create it directly.
     * 
     */
-  var _Splitter: Instantiable0[typings.dojo.dijit.layout.BorderContainer._Splitter]
+  var _Splitter: Instantiable0[Splitter]
 }
 
 object TypeofBorderContainer {
   @scala.inline
   def apply(
-    _Gutter: Instantiable2[
-      js.UndefOr[/* params */ js.Object], 
-      js.UndefOr[/* srcNodeRef */ HTMLElement], 
-      _Gutter
-    ],
-    _Splitter: Instantiable0[_Splitter]
+    _Gutter: Instantiable2[js.UndefOr[/* params */ js.Object], js.UndefOr[/* srcNodeRef */ HTMLElement], Gutter],
+    _Splitter: Instantiable0[Splitter]
   ): TypeofBorderContainer = {
     val __obj = js.Dynamic.literal(_Gutter = _Gutter.asInstanceOf[js.Any], _Splitter = _Splitter.asInstanceOf[js.Any])
   

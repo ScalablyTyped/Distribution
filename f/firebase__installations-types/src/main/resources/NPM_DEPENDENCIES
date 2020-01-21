@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/installations-types" : "0.2.4"
+      "@firebase/installations-types" : "0.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/installations-types" : "0.2.4"
+      "@firebase/installations-types" : "0.3.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 package typings.dojo.dojox.grid
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.fetchText
 import typings.dojo.dojoStrings.items
 import typings.dojo.dojoStrings.keepSelection
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.grid.DataGrid")
 @js.native
-class DataGrid () extends _Grid {
+class DataGrid () extends Grid {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -181,7 +181,7 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_items(
     property: items,
@@ -191,7 +191,7 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_keepSelection(
     property: keepSelection,
@@ -201,7 +201,7 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_query(
     property: query,
@@ -211,7 +211,7 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_queryOptions(
     property: queryOptions,
@@ -221,7 +221,7 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_sortFields(
     property: sortFields,
@@ -231,7 +231,7 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_store(
     property: store,
@@ -241,7 +241,7 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_updateDelay(
     property: updateDelay,
@@ -251,6 +251,6 @@ class DataGrid () extends _Grid {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

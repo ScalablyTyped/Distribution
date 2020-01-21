@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("misc")
 trait misc_ extends js.Object {
   /**
     * Format the value like a 'human-readable' file size (i.e. 13 KB, 4.1 MB, 102bytes, etc).

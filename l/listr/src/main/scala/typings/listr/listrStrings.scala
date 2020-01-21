@@ -1,6 +1,6 @@
 package typings.listr
 
-import typings.listr.listrMod.ListrRendererValue
+import typings.listr.mod.ListrRendererValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typings.heremaps.H.ui
 
-import typings.heremaps.H.Map
-import typings.heremaps.H.Map.EngineType
+import typings.heremaps.H.Map_
+import typings.heremaps.H.Map_.EngineType
 import typings.heremaps.H.ui.base.Container
 import typings.heremaps.H.ui.i18n.Localization
 import scala.scalajs.js
@@ -28,7 +28,7 @@ class Control () extends Container {
     * This method returns the map to which this control is attached.
     * @returns {?H.Map} - return the map
     */
-  def getMap(): Map = js.native
+  def getMap(): Map_ = js.native
   /**
     * This abstract method can be overridden by deriving classes to be invoked when the underlying map engine changes.
     * @param engineType {H.Map.EngineType} - the engine type the map currently uses

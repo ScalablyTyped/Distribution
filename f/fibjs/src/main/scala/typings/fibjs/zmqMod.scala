@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object zmqMod extends js.Object {
   @js.native
-  class Socket () extends Class_ZmqSocket
+  class Socket () extends ClassZmqSocket
   
   val DEALER: `5` = js.native
   val PAIR: `0` = js.native

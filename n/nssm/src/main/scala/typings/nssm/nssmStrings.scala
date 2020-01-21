@@ -1,6 +1,6 @@
 package typings.nssm
 
-import typings.nssm.nssmMod.Command
+import typings.nssm.mod.Command
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

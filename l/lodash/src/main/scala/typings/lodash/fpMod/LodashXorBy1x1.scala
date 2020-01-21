@@ -1,17 +1,17 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.List
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashXorBy1x1[T] extends js.Object {
-  def apply(): js.Array[T] = js.native
+  def apply(): LodashXorBy1x3[T] = js.native
   def apply(arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def apply(arrays: Null, arrays2: List[T]): js.Array[T] = js.native
-  def apply(arrays: List[T]): js.Array[T] = js.native
+  def apply(arrays: List[T]): LodashXorBy1x3[T] = js.native
   def apply(arrays: List[T], arrays2: List[T]): js.Array[T] = js.native
   def apply(arrays: __): LodashXorBy1x5[T] = js.native
   def apply(arrays: __, arrays2: List[T]): LodashXorBy1x5[T] = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PermissionRequestedEvent extends Event {
+trait PermissionRequestedEvent extends Event_ {
   val permissionRequest: PermissionRequest = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.heremaps.H.ui
 
-import typings.heremaps.H.Map
+import typings.heremaps.H.Map_
 import typings.heremaps.H.ui.UI.Options
 import typings.heremaps.H.util.ICapturable
 import typings.std.Element
@@ -19,8 +19,8 @@ class UI_ protected () extends ICapturable {
     * @param map {H.Map}
     * @param opt_options {H.ui.UI.Options=}
     */
-  def this(map: Map) = this()
-  def this(map: Map, opt_options: Options) = this()
+  def this(map: Map_) = this()
+  def this(map: Map_, opt_options: Options) = this()
   /**
     * This method adds an info bubble to the UI.
     * @param bubble {H.ui.InfoBubble} - the info bubble to be added
@@ -52,7 +52,7 @@ class UI_ protected () extends ICapturable {
     * Returns the map instance to which this UI was added.
     * @returns {H.Map}
     */
-  def getMap(): Map = js.native
+  def getMap(): Map_ = js.native
   /**
     * This method returns this UI object's current unit system.
     * @returns {H.ui.UnitSystem} - the current unit system

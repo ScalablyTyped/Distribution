@@ -2,7 +2,7 @@ package typings.winjs.WinJS.UI
 
 import typings.std.CustomEvent
 import typings.std.HTMLElement
-import typings.winjs.Anon_CompactFull
+import typings.winjs.AnonCompactFull
 import typings.winjs.WinJS.Binding.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -117,7 +117,7 @@ object ToolBar extends js.Object {
   /**
     * Display options for the closed ToolBar.
     **/
-  var ClosedDisplayMode: Anon_CompactFull = js.native
+  var ClosedDisplayMode: AnonCompactFull = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

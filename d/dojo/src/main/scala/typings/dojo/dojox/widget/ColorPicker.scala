@@ -1,7 +1,7 @@
 package typings.dojo.dojox.widget
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit.form._FormWidget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.form.FormWidget
 import typings.dojo.dojoStrings.PICKER_HUE_H
 import typings.dojo.dojoStrings.PICKER_HUE_SELECTOR_H
 import typings.dojo.dojoStrings.PICKER_SAT_SELECTOR_H
@@ -35,7 +35,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.widget.ColorPicker")
 @js.native
-class ColorPicker () extends _FormWidget {
+class ColorPicker () extends FormWidget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -186,7 +186,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_PICKERHUESELECTORH(
     property: PICKER_HUE_SELECTOR_H,
@@ -196,7 +196,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_PICKERSATSELECTORH(
     property: PICKER_SAT_SELECTOR_H,
@@ -206,7 +206,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_PICKERSATSELECTORW(
     property: PICKER_SAT_SELECTOR_W,
@@ -216,7 +216,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_PICKERSATVALH(
     property: PICKER_SAT_VAL_H,
@@ -226,7 +226,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_PICKERSATVALW(
     property: PICKER_SAT_VAL_W,
@@ -236,7 +236,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_animatePoint(
     property: animatePoint,
@@ -246,7 +246,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_liveUpdate(
     property: liveUpdate,
@@ -256,7 +256,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showHex(
     property: showHex,
@@ -266,7 +266,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showHsv(
     property: showHsv,
@@ -276,7 +276,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showRgb(
     property: showRgb,
@@ -286,7 +286,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_slideDuration(
     property: slideDuration,
@@ -296,7 +296,7 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_webSafe(
     property: webSafe,
@@ -306,6 +306,6 @@ class ColorPicker () extends _FormWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

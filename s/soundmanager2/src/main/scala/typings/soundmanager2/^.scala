@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object ^ extends js.Object {
-  var soundManager: SoundManager = js.native
+  @JSName("soundManager")
+  var soundManager_ : SoundManager = js.native
 }
 

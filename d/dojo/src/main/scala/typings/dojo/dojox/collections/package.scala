@@ -12,14 +12,14 @@ package object collections {
     *
     * @param arr       Optional
     */
-  type ArrayList = js.Function1[/* arr */ js.UndefOr[js.Array[js.Any]], Unit]
+  type ArrayList = js.Function1[/* arr */ js.UndefOr[js.Array[js.Any]], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/collections/BinaryTree.html
     *
     *
     * @param data
     */
-  type BinaryTree = js.Function1[/* data */ js.Any, Unit]
+  type BinaryTree = js.Function1[/* data */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/collections/Queue.html
     *
@@ -27,7 +27,7 @@ package object collections {
     *
     * @param arr       Optional
     */
-  type Queue = js.Function1[/* arr */ js.UndefOr[js.Array[js.Any]], Unit]
+  type Queue = js.Function1[/* arr */ js.UndefOr[js.Array[js.Any]], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/collections/SortedList.html
     *
@@ -36,7 +36,7 @@ package object collections {
     *
     * @param dictionary       Optional
     */
-  type SortedList = js.Function1[/* dictionary */ js.UndefOr[js.Object], Unit]
+  type SortedList = js.Function1[/* dictionary */ js.UndefOr[js.Object], scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/collections/Stack.html
     *
@@ -44,5 +44,5 @@ package object collections {
     *
     * @param arr       Optional
     */
-  type Stack = js.Function1[/* arr */ js.UndefOr[js.Array[js.Any]], Unit]
+  type Stack = js.Function1[/* arr */ js.UndefOr[js.Array[js.Any]], scala.Unit]
 }

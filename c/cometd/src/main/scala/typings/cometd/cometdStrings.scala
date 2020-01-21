@@ -1,7 +1,7 @@
 package typings.cometd
 
-import typings.cometd.cometdMod.ConnectionType
-import typings.cometd.cometdMod.ReconnectAdvice
+import typings.cometd.mod.ConnectionType
+import typings.cometd.mod.ReconnectAdvice
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

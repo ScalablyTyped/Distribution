@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object direct {
-  type IExceptionEvent = IRemotingEvent
+  type IExceptionEvent = typings.extjs.Ext.direct.IRemotingEvent
 }

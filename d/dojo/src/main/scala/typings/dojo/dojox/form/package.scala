@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object form {
-  type _FormSelectWidget = _FormSelectWidget_
+  type DropDownSelect = typings.dojo.dojox.form.DropDownSelect_
+  type FormSelectWidget = typings.dojo.dojox.form.FormSelectWidget_
 }

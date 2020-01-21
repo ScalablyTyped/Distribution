@@ -1,8 +1,8 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.ArrowFunction
-import typings.typescript.typescriptMod.CallExpression
-import typings.typescript.typescriptMod.FunctionExpression
+import typings.typescript.mod.ArrowFunction
+import typings.typescript.mod.CallExpression
+import typings.typescript.mod.FunctionExpression
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

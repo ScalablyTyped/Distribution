@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EnumeratorCls[T] protected () extends Enumerator[T] {
   def this(collection: js.Any) = this()
-  def this(collection: Anon_Index[T]) = this()
+  def this(collection: AnonIndex[T]) = this()
   def this(safearray: SafeArray[T]) = this()
   /**
     * Returns true if the current item is the last one in the collection, or the collection is empty,

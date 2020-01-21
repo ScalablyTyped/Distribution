@@ -1,9 +1,9 @@
 package typings.breeze.breeze
 
-import typings.breeze.Anon_Expression
-import typings.breeze.Anon_MaxLength
-import typings.breeze.Anon_MaxLengthMessageTemplate
-import typings.breeze.Anon_MessageTemplate
+import typings.breeze.AnonExpression
+import typings.breeze.AnonMaxLength
+import typings.breeze.AnonMaxLengthMessageTemplate
+import typings.breeze.AnonMessageTemplate
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,58 +35,58 @@ object Validator extends js.Object {
   def bool(): Validator = js.native
   /** integer between 0 and 255 inclusive */
   def byte(): Validator = js.native
-  def byte(context: Anon_MessageTemplate): Validator = js.native
+  def byte(context: AnonMessageTemplate): Validator = js.native
   /** Returns a credit card number validator that performs a Luhn algorithm checksum test for plausability */
   def creditCard(): Validator = js.native
-  def creditCard(context: Anon_MessageTemplate): Validator = js.native
+  def creditCard(context: AnonMessageTemplate): Validator = js.native
   def date(): Validator = js.native
   /** Validators number, double, and single are all the same */
   def double(): Validator = js.native
-  def double(context: Anon_MessageTemplate): Validator = js.native
+  def double(context: AnonMessageTemplate): Validator = js.native
   /** Returns a ISO 8601 duration string Validator. */
   def duration(): Validator = js.native
   /** Returns the email address validator */
   def emailAddress(): Validator = js.native
-  def emailAddress(context: Anon_MessageTemplate): Validator = js.native
+  def emailAddress(context: AnonMessageTemplate): Validator = js.native
   /** Creates a validator instance from a JSON object or an array of instances from an array of JSON objects. */
   def fromJSON(json: String): Validator = js.native
   def guid(): Validator = js.native
   def int16(): Validator = js.native
-  def int16(context: Anon_MessageTemplate): Validator = js.native
+  def int16(context: AnonMessageTemplate): Validator = js.native
   def int32(): Validator = js.native
-  def int32(context: Anon_MessageTemplate): Validator = js.native
+  def int32(context: AnonMessageTemplate): Validator = js.native
   def int64(): Validator = js.native
-  def int64(context: Anon_MessageTemplate): Validator = js.native
+  def int64(context: AnonMessageTemplate): Validator = js.native
   /** Same as int64 */
   def integer(): Validator = js.native
-  def integer(context: Anon_MessageTemplate): Validator = js.native
+  def integer(context: AnonMessageTemplate): Validator = js.native
   /** Creates a regular expression validator with a fixed expression. */
   def makeRegExpValidator(validatorName: String, expression: RegExp, defaultMessage: String): Validator = js.native
   def makeRegExpValidator(validatorName: String, expression: RegExp, defaultMessage: String, context: js.Any): Validator = js.native
-  def maxLength(context: Anon_MaxLength): Validator = js.native
+  def maxLength(context: AnonMaxLength): Validator = js.native
   /** Always returns true */
   def none(): Validator = js.native
   /** Validators number, double, and single are all the same */
   def number(): Validator = js.native
-  def number(context: Anon_MessageTemplate): Validator = js.native
+  def number(context: AnonMessageTemplate): Validator = js.native
   /** Returns the phone validator, which handles prefix, country code, area code, and local number, with [-/. ] break characters. */
   def phone(): Validator = js.native
-  def phone(context: Anon_MessageTemplate): Validator = js.native
+  def phone(context: AnonMessageTemplate): Validator = js.native
   /** Register a validator instance so that any deserialized metadata can reference it. */
   def register(validator: Validator): Unit = js.native
   /** Register a validator factory so that any deserialized metadata can reference it.  */
   def registerFactory(fn: js.Function0[this.type], name: String): Unit = js.native
   /** Returns a regular expression validator; the expression must be specified in the context parameter */
-  def regularExpression(context: Anon_Expression): Validator = js.native
+  def regularExpression(context: AnonExpression): Validator = js.native
   def required(): Validator = js.native
-  def required(context: Anon_MessageTemplate): Validator = js.native
+  def required(context: AnonMessageTemplate): Validator = js.native
   /** Validators number, double, and single are all the same */
   def single(): Validator = js.native
-  def single(context: Anon_MessageTemplate): Validator = js.native
+  def single(context: AnonMessageTemplate): Validator = js.native
   def string(): Validator = js.native
-  def stringLength(context: Anon_MaxLengthMessageTemplate): Validator = js.native
+  def stringLength(context: AnonMaxLengthMessageTemplate): Validator = js.native
   /** Returns the URL (protocol required) validator */
   def url(): Validator = js.native
-  def url(context: Anon_MessageTemplate): Validator = js.native
+  def url(context: AnonMessageTemplate): Validator = js.native
 }
 

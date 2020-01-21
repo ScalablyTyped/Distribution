@@ -25,7 +25,7 @@ trait OffscreenCanvas extends EventTarget {
   var height: Double = js.native
   var width: Double = js.native
   def convertToBlob(): js.Promise[Blob] = js.native
-  def convertToBlob(options: Anon_Quality): js.Promise[Blob] = js.native
+  def convertToBlob(options: AnonQuality): js.Promise[Blob] = js.native
   @JSName("getContext")
   def getContext_2d(contextId: `2d`): OffscreenCanvasRenderingContext2D | Null = js.native
   @JSName("getContext")

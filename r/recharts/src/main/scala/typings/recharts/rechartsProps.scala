@@ -6,129 +6,129 @@ import scala.scalajs.js.annotation._
 
 trait rechartsProps {
   @scala.inline
-  def AreaProps: typings.recharts.rechartsMod.AreaProps.type = typings.recharts.rechartsMod.AreaProps
-  type AreaProps = typings.recharts.rechartsMod.AreaProps
-  type AreaChartProps = typings.recharts.rechartsMod.AreaChartProps
+  def AreaProps: typings.recharts.mod.AreaProps.type = typings.recharts.mod.AreaProps
+  type AreaProps = typings.recharts.mod.AreaProps
+  type AreaChartProps = typings.recharts.mod.AreaChartProps
   @scala.inline
-  def BarProps: typings.recharts.rechartsMod.BarProps.type = typings.recharts.rechartsMod.BarProps
-  type BarProps = typings.recharts.rechartsMod.BarProps
-  type BarChartProps = typings.recharts.rechartsMod.BarChartProps
+  def BarProps: typings.recharts.mod.BarProps.type = typings.recharts.mod.BarProps
+  type BarProps = typings.recharts.mod.BarProps
+  type BarChartProps = typings.recharts.mod.BarChartProps
   @scala.inline
-  def BrushProps: typings.recharts.rechartsMod.BrushProps.type = typings.recharts.rechartsMod.BrushProps
-  type BrushProps = typings.recharts.rechartsMod.BrushProps
+  def BrushProps: typings.recharts.mod.BrushProps.type = typings.recharts.mod.BrushProps
+  type BrushProps = typings.recharts.mod.BrushProps
   @scala.inline
-  def CartesianAxisProps: typings.recharts.rechartsMod.CartesianAxisProps.type = typings.recharts.rechartsMod.CartesianAxisProps
-  type CartesianAxisProps = typings.recharts.rechartsMod.CartesianAxisProps
+  def CartesianAxisProps: typings.recharts.mod.CartesianAxisProps.type = typings.recharts.mod.CartesianAxisProps
+  type CartesianAxisProps = typings.recharts.mod.CartesianAxisProps
   @scala.inline
-  def CartesianGridProps: typings.recharts.rechartsMod.CartesianGridProps.type = typings.recharts.rechartsMod.CartesianGridProps
-  type CartesianGridProps = typings.recharts.rechartsMod.CartesianGridProps
+  def CartesianGridProps: typings.recharts.mod.CartesianGridProps.type = typings.recharts.mod.CartesianGridProps
+  type CartesianGridProps = typings.recharts.mod.CartesianGridProps
   @scala.inline
-  def CellProps: typings.recharts.rechartsMod.CellProps.type = typings.recharts.rechartsMod.CellProps
-  type CellProps = typings.recharts.rechartsMod.CellProps
-  type ComposedChartProps = typings.recharts.rechartsMod.ComposedChartProps
+  def CellProps: typings.recharts.mod.CellProps.type = typings.recharts.mod.CellProps
+  type CellProps = typings.recharts.mod.CellProps
+  type ComposedChartProps = typings.recharts.mod.ComposedChartProps
   @scala.inline
-  def CrossProps: typings.recharts.rechartsMod.CrossProps.type = typings.recharts.rechartsMod.CrossProps
-  type CrossProps = typings.recharts.rechartsMod.CrossProps
+  def CrossProps: typings.recharts.mod.CrossProps.type = typings.recharts.mod.CrossProps
+  type CrossProps = typings.recharts.mod.CrossProps
   @scala.inline
-  def CurveProps: typings.recharts.rechartsMod.CurveProps.type = typings.recharts.rechartsMod.CurveProps
-  type CurveProps = typings.recharts.rechartsMod.CurveProps
+  def CurveProps: typings.recharts.mod.CurveProps.type = typings.recharts.mod.CurveProps
+  type CurveProps = typings.recharts.mod.CurveProps
   @scala.inline
-  def CustomizedProps: typings.recharts.rechartsMod.CustomizedProps.type = typings.recharts.rechartsMod.CustomizedProps
-  type CustomizedProps = typings.recharts.rechartsMod.CustomizedProps
+  def CustomizedProps: typings.recharts.mod.CustomizedProps.type = typings.recharts.mod.CustomizedProps
+  type CustomizedProps = typings.recharts.mod.CustomizedProps
   @scala.inline
-  def DotProps: typings.recharts.rechartsMod.DotProps.type = typings.recharts.rechartsMod.DotProps
-  type DotProps = typings.recharts.rechartsMod.DotProps
+  def DotProps: typings.recharts.mod.DotProps.type = typings.recharts.mod.DotProps
+  type DotProps = typings.recharts.mod.DotProps
   @scala.inline
-  def ErrorBarProps: typings.recharts.rechartsMod.ErrorBarProps.type = typings.recharts.rechartsMod.ErrorBarProps
-  type ErrorBarProps = typings.recharts.rechartsMod.ErrorBarProps
+  def ErrorBarProps: typings.recharts.mod.ErrorBarProps.type = typings.recharts.mod.ErrorBarProps
+  type ErrorBarProps = typings.recharts.mod.ErrorBarProps
   @scala.inline
-  def LabelProps: typings.recharts.rechartsMod.LabelProps.type = typings.recharts.rechartsMod.LabelProps
-  type LabelProps = typings.recharts.rechartsMod.LabelProps
+  def LabelProps: typings.recharts.mod.LabelProps.type = typings.recharts.mod.LabelProps
+  type LabelProps = typings.recharts.mod.LabelProps
   @scala.inline
-  def LabelListProps: typings.recharts.rechartsMod.LabelListProps.type = typings.recharts.rechartsMod.LabelListProps
-  type LabelListProps = typings.recharts.rechartsMod.LabelListProps
+  def LabelListProps: typings.recharts.mod.LabelListProps.type = typings.recharts.mod.LabelListProps
+  type LabelListProps = typings.recharts.mod.LabelListProps
   @scala.inline
-  def LegendProps: typings.recharts.rechartsMod.LegendProps.type = typings.recharts.rechartsMod.LegendProps
-  type LegendProps = typings.recharts.rechartsMod.LegendProps
+  def LegendProps: typings.recharts.mod.LegendProps.type = typings.recharts.mod.LegendProps
+  type LegendProps = typings.recharts.mod.LegendProps
   @scala.inline
-  def LineProps: typings.recharts.rechartsMod.LineProps.type = typings.recharts.rechartsMod.LineProps
-  type LineProps = typings.recharts.rechartsMod.LineProps
-  type LineChartProps = typings.recharts.rechartsMod.LineChartProps
+  def LineProps: typings.recharts.mod.LineProps.type = typings.recharts.mod.LineProps
+  type LineProps = typings.recharts.mod.LineProps
+  type LineChartProps = typings.recharts.mod.LineChartProps
   @scala.inline
-  def PieProps: typings.recharts.rechartsMod.PieProps.type = typings.recharts.rechartsMod.PieProps
-  type PieProps = typings.recharts.rechartsMod.PieProps
+  def PieProps: typings.recharts.mod.PieProps.type = typings.recharts.mod.PieProps
+  type PieProps = typings.recharts.mod.PieProps
   @scala.inline
-  def PieChartProps: typings.recharts.rechartsMod.PieChartProps.type = typings.recharts.rechartsMod.PieChartProps
-  type PieChartProps = typings.recharts.rechartsMod.PieChartProps
+  def PieChartProps: typings.recharts.mod.PieChartProps.type = typings.recharts.mod.PieChartProps
+  type PieChartProps = typings.recharts.mod.PieChartProps
   @scala.inline
-  def PolarAngleAxisProps: typings.recharts.rechartsMod.PolarAngleAxisProps.type = typings.recharts.rechartsMod.PolarAngleAxisProps
-  type PolarAngleAxisProps = typings.recharts.rechartsMod.PolarAngleAxisProps
+  def PolarAngleAxisProps: typings.recharts.mod.PolarAngleAxisProps.type = typings.recharts.mod.PolarAngleAxisProps
+  type PolarAngleAxisProps = typings.recharts.mod.PolarAngleAxisProps
   @scala.inline
-  def PolarGridProps: typings.recharts.rechartsMod.PolarGridProps.type = typings.recharts.rechartsMod.PolarGridProps
-  type PolarGridProps = typings.recharts.rechartsMod.PolarGridProps
+  def PolarGridProps: typings.recharts.mod.PolarGridProps.type = typings.recharts.mod.PolarGridProps
+  type PolarGridProps = typings.recharts.mod.PolarGridProps
   @scala.inline
-  def PolarRadiusAxisProps: typings.recharts.rechartsMod.PolarRadiusAxisProps.type = typings.recharts.rechartsMod.PolarRadiusAxisProps
-  type PolarRadiusAxisProps = typings.recharts.rechartsMod.PolarRadiusAxisProps
+  def PolarRadiusAxisProps: typings.recharts.mod.PolarRadiusAxisProps.type = typings.recharts.mod.PolarRadiusAxisProps
+  type PolarRadiusAxisProps = typings.recharts.mod.PolarRadiusAxisProps
   @scala.inline
-  def PolygonProps: typings.recharts.rechartsMod.PolygonProps.type = typings.recharts.rechartsMod.PolygonProps
-  type PolygonProps = typings.recharts.rechartsMod.PolygonProps
+  def PolygonProps: typings.recharts.mod.PolygonProps.type = typings.recharts.mod.PolygonProps
+  type PolygonProps = typings.recharts.mod.PolygonProps
   @scala.inline
-  def RadarProps: typings.recharts.rechartsMod.RadarProps.type = typings.recharts.rechartsMod.RadarProps
-  type RadarProps = typings.recharts.rechartsMod.RadarProps
+  def RadarProps: typings.recharts.mod.RadarProps.type = typings.recharts.mod.RadarProps
+  type RadarProps = typings.recharts.mod.RadarProps
   @scala.inline
-  def RadarChartProps: typings.recharts.rechartsMod.RadarChartProps.type = typings.recharts.rechartsMod.RadarChartProps
-  type RadarChartProps = typings.recharts.rechartsMod.RadarChartProps
+  def RadarChartProps: typings.recharts.mod.RadarChartProps.type = typings.recharts.mod.RadarChartProps
+  type RadarChartProps = typings.recharts.mod.RadarChartProps
   @scala.inline
-  def RadialBarProps: typings.recharts.rechartsMod.RadialBarProps.type = typings.recharts.rechartsMod.RadialBarProps
-  type RadialBarProps = typings.recharts.rechartsMod.RadialBarProps
+  def RadialBarProps: typings.recharts.mod.RadialBarProps.type = typings.recharts.mod.RadialBarProps
+  type RadialBarProps = typings.recharts.mod.RadialBarProps
   @scala.inline
-  def RadialBarChartProps: typings.recharts.rechartsMod.RadialBarChartProps.type = typings.recharts.rechartsMod.RadialBarChartProps
-  type RadialBarChartProps = typings.recharts.rechartsMod.RadialBarChartProps
+  def RadialBarChartProps: typings.recharts.mod.RadialBarChartProps.type = typings.recharts.mod.RadialBarChartProps
+  type RadialBarChartProps = typings.recharts.mod.RadialBarChartProps
   @scala.inline
-  def RectangleProps: typings.recharts.rechartsMod.RectangleProps.type = typings.recharts.rechartsMod.RectangleProps
-  type RectangleProps = typings.recharts.rechartsMod.RectangleProps
+  def RectangleProps: typings.recharts.mod.RectangleProps.type = typings.recharts.mod.RectangleProps
+  type RectangleProps = typings.recharts.mod.RectangleProps
   @scala.inline
-  def ReferenceAreaProps: typings.recharts.rechartsMod.ReferenceAreaProps.type = typings.recharts.rechartsMod.ReferenceAreaProps
-  type ReferenceAreaProps = typings.recharts.rechartsMod.ReferenceAreaProps
+  def ReferenceAreaProps: typings.recharts.mod.ReferenceAreaProps.type = typings.recharts.mod.ReferenceAreaProps
+  type ReferenceAreaProps = typings.recharts.mod.ReferenceAreaProps
   @scala.inline
-  def ReferenceDotProps: typings.recharts.rechartsMod.ReferenceDotProps.type = typings.recharts.rechartsMod.ReferenceDotProps
-  type ReferenceDotProps = typings.recharts.rechartsMod.ReferenceDotProps
+  def ReferenceDotProps: typings.recharts.mod.ReferenceDotProps.type = typings.recharts.mod.ReferenceDotProps
+  type ReferenceDotProps = typings.recharts.mod.ReferenceDotProps
   @scala.inline
-  def ReferenceLineProps: typings.recharts.rechartsMod.ReferenceLineProps.type = typings.recharts.rechartsMod.ReferenceLineProps
-  type ReferenceLineProps = typings.recharts.rechartsMod.ReferenceLineProps
+  def ReferenceLineProps: typings.recharts.mod.ReferenceLineProps.type = typings.recharts.mod.ReferenceLineProps
+  type ReferenceLineProps = typings.recharts.mod.ReferenceLineProps
   @scala.inline
-  def ResponsiveContainerProps: typings.recharts.rechartsMod.ResponsiveContainerProps.type = typings.recharts.rechartsMod.ResponsiveContainerProps
-  type ResponsiveContainerProps = typings.recharts.rechartsMod.ResponsiveContainerProps
+  def ResponsiveContainerProps: typings.recharts.mod.ResponsiveContainerProps.type = typings.recharts.mod.ResponsiveContainerProps
+  type ResponsiveContainerProps = typings.recharts.mod.ResponsiveContainerProps
   @scala.inline
-  def ScatterProps: typings.recharts.rechartsMod.ScatterProps.type = typings.recharts.rechartsMod.ScatterProps
-  type ScatterProps = typings.recharts.rechartsMod.ScatterProps
-  type ScatterChartProps = typings.recharts.rechartsMod.ScatterChartProps
+  def ScatterProps: typings.recharts.mod.ScatterProps.type = typings.recharts.mod.ScatterProps
+  type ScatterProps = typings.recharts.mod.ScatterProps
+  type ScatterChartProps = typings.recharts.mod.ScatterChartProps
   @scala.inline
-  def SectorProps: typings.recharts.rechartsMod.SectorProps.type = typings.recharts.rechartsMod.SectorProps
-  type SectorProps = typings.recharts.rechartsMod.SectorProps
+  def SectorProps: typings.recharts.mod.SectorProps.type = typings.recharts.mod.SectorProps
+  type SectorProps = typings.recharts.mod.SectorProps
   @scala.inline
-  def SurfaceProps: typings.recharts.rechartsMod.SurfaceProps.type = typings.recharts.rechartsMod.SurfaceProps
-  type SurfaceProps = typings.recharts.rechartsMod.SurfaceProps
+  def SurfaceProps: typings.recharts.mod.SurfaceProps.type = typings.recharts.mod.SurfaceProps
+  type SurfaceProps = typings.recharts.mod.SurfaceProps
   @scala.inline
-  def SymbolsProps: typings.recharts.rechartsMod.SymbolsProps.type = typings.recharts.rechartsMod.SymbolsProps
-  type SymbolsProps = typings.recharts.rechartsMod.SymbolsProps
+  def SymbolsProps: typings.recharts.mod.SymbolsProps.type = typings.recharts.mod.SymbolsProps
+  type SymbolsProps = typings.recharts.mod.SymbolsProps
   @scala.inline
-  def TextProps: typings.recharts.rechartsMod.TextProps.type = typings.recharts.rechartsMod.TextProps
-  type TextProps = typings.recharts.rechartsMod.TextProps
+  def TextProps: typings.recharts.mod.TextProps.type = typings.recharts.mod.TextProps
+  type TextProps = typings.recharts.mod.TextProps
   @scala.inline
-  def TooltipProps: typings.recharts.rechartsMod.TooltipProps.type = typings.recharts.rechartsMod.TooltipProps
-  type TooltipProps = typings.recharts.rechartsMod.TooltipProps
+  def TooltipProps: typings.recharts.mod.TooltipProps.type = typings.recharts.mod.TooltipProps
+  type TooltipProps = typings.recharts.mod.TooltipProps
   @scala.inline
-  def TreemapProps: typings.recharts.rechartsMod.TreemapProps.type = typings.recharts.rechartsMod.TreemapProps
-  type TreemapProps = typings.recharts.rechartsMod.TreemapProps
+  def TreemapProps: typings.recharts.mod.TreemapProps.type = typings.recharts.mod.TreemapProps
+  type TreemapProps = typings.recharts.mod.TreemapProps
   @scala.inline
-  def XAxisProps: typings.recharts.rechartsMod.XAxisProps.type = typings.recharts.rechartsMod.XAxisProps
-  type XAxisProps = typings.recharts.rechartsMod.XAxisProps
+  def XAxisProps: typings.recharts.mod.XAxisProps.type = typings.recharts.mod.XAxisProps
+  type XAxisProps = typings.recharts.mod.XAxisProps
   @scala.inline
-  def YAxisProps: typings.recharts.rechartsMod.YAxisProps.type = typings.recharts.rechartsMod.YAxisProps
-  type YAxisProps = typings.recharts.rechartsMod.YAxisProps
+  def YAxisProps: typings.recharts.mod.YAxisProps.type = typings.recharts.mod.YAxisProps
+  type YAxisProps = typings.recharts.mod.YAxisProps
   @scala.inline
-  def ZAxisProps: typings.recharts.rechartsMod.ZAxisProps.type = typings.recharts.rechartsMod.ZAxisProps
-  type ZAxisProps = typings.recharts.rechartsMod.ZAxisProps
+  def ZAxisProps: typings.recharts.mod.ZAxisProps.type = typings.recharts.mod.ZAxisProps
+  type ZAxisProps = typings.recharts.mod.ZAxisProps
 }
 

@@ -1,0 +1,18 @@
+package typings.arcgisJsApi.esri.symbols
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.arcgisJsApi.esri.ExtrudeSymbol3DLayer
+  - typings.arcgisJsApi.esri.FillSymbol3DLayer
+  - typings.arcgisJsApi.esri.WaterSymbol3DLayer
+  - typings.arcgisJsApi.esri.IconSymbol3DLayer
+  - typings.arcgisJsApi.esri.LineSymbol3DLayer
+  - typings.arcgisJsApi.esri.ObjectSymbol3DLayer
+  - typings.arcgisJsApi.esri.PathSymbol3DLayer
+  - typings.arcgisJsApi.esri.TextSymbol3DLayer
+*/
+trait Symbol3DLayer extends js.Object
+

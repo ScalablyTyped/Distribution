@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation._
 
 trait reactourProps {
   @scala.inline
-  def ArrowProps: typings.reactour.reactourMod.ArrowProps.type = typings.reactour.reactourMod.ArrowProps
-  type ArrowProps = typings.reactour.reactourMod.ArrowProps
+  def ArrowProps: typings.reactour.mod.ArrowProps.type = typings.reactour.mod.ArrowProps
+  type ArrowProps = typings.reactour.mod.ArrowProps
   @scala.inline
-  def BadgeProps: typings.reactour.reactourMod.BadgeProps.type = typings.reactour.reactourMod.BadgeProps
-  type BadgeProps = typings.reactour.reactourMod.BadgeProps
+  def BadgeProps: typings.reactour.mod.BadgeProps.type = typings.reactour.mod.BadgeProps
+  type BadgeProps = typings.reactour.mod.BadgeProps
   @scala.inline
-  def CloseProps: typings.reactour.reactourMod.CloseProps.type = typings.reactour.reactourMod.CloseProps
-  type CloseProps = typings.reactour.reactourMod.CloseProps
-  type ControlsProps = typings.reactour.reactourMod.ControlsProps
+  def CloseProps: typings.reactour.mod.CloseProps.type = typings.reactour.mod.CloseProps
+  type CloseProps = typings.reactour.mod.CloseProps
+  type ControlsProps = typings.reactour.mod.ControlsProps
   @scala.inline
-  def DotProps: typings.reactour.reactourMod.DotProps.type = typings.reactour.reactourMod.DotProps
-  type DotProps = typings.reactour.reactourMod.DotProps
-  type NavigationProps = typings.reactour.reactourMod.NavigationProps
+  def DotProps: typings.reactour.mod.DotProps.type = typings.reactour.mod.DotProps
+  type DotProps = typings.reactour.mod.DotProps
+  type NavigationProps = typings.reactour.mod.NavigationProps
   @scala.inline
-  def ReactourProps: typings.reactour.reactourMod.ReactourProps.type = typings.reactour.reactourMod.ReactourProps
-  type ReactourProps = typings.reactour.reactourMod.ReactourProps
+  def ReactourProps: typings.reactour.mod.ReactourProps.type = typings.reactour.mod.ReactourProps
+  type ReactourProps = typings.reactour.mod.ReactourProps
 }
 

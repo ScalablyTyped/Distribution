@@ -1,6 +1,6 @@
 package typings.reactour
 
-import typings.reactour.reactourMod.ReactourStepPosition
+import typings.reactour.mod.ReactourStepPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

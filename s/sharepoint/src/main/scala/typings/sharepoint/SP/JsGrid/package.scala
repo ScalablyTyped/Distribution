@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JsGrid {
-  type IStyleType = IStyleType_
+  type IStyleType = typings.sharepoint.SP.JsGrid.IStyleType_
 }

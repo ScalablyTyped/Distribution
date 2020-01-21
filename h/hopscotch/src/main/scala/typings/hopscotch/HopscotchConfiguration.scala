@@ -8,7 +8,7 @@ trait HopscotchConfiguration extends js.Object {
   var arrowWidth: js.UndefOr[Double] = js.undefined
   var bubbleWidth: js.UndefOr[Double] = js.undefined
   var buddleHeight: js.UndefOr[Double] = js.undefined
-  var i18n: js.UndefOr[Anon_CloseTooltip] = js.undefined
+  var i18n: js.UndefOr[AnonCloseTooltip] = js.undefined
   var nextOnTargetClick: js.UndefOr[Boolean] = js.undefined
   var onClose: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   var onEnd: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
@@ -32,7 +32,7 @@ object HopscotchConfiguration {
     arrowWidth: Int | Double = null,
     bubbleWidth: Int | Double = null,
     buddleHeight: Int | Double = null,
-    i18n: Anon_CloseTooltip = null,
+    i18n: AnonCloseTooltip = null,
     nextOnTargetClick: js.UndefOr[Boolean] = js.undefined,
     onClose: CallbackNameNamesOrDefinition = null,
     onEnd: CallbackNameNamesOrDefinition = null,

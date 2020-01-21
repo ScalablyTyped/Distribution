@@ -5,24 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Realm {
-  import org.scalablytyped.runtime.StringDictionary
-  import typings.std.Partial
-
-  type CollectionChangeCallback[T] = js.Function2[/* collection */ Collection[T], /* change */ CollectionChangeSet, Unit]
+  type CollectionChangeCallback[T] = js.Function2[
+    /* collection */ typings.realm.Realm.Collection[T], 
+    /* change */ typings.realm.Realm.CollectionChangeSet, 
+    scala.Unit
+  ]
   /**
     * A function which can be called to migrate a Realm from one version of the schema to another.
     */
-  type MigrationCallback = js.Function2[/* oldRealm */ typings.realm.Realm, /* newRealm */ typings.realm.Realm, Unit]
-  type ObjectChangeCallback = js.Function2[/* object */ Object, /* changes */ ObjectChangeSet, Unit]
+  type MigrationCallback = js.Function2[/* oldRealm */ typings.realm.Realm, /* newRealm */ typings.realm.Realm, scala.Unit]
+  type ObjectChangeCallback = js.Function2[
+    /* object */ typings.realm.Realm.Object, 
+    /* changes */ typings.realm.Realm.ObjectChangeSet, 
+    scala.Unit
+  ]
   // object props type
-  type ObjectPropsType = StringDictionary[js.Any]
+  type ObjectPropsType = org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
     * realm configuration used for overriding default configuration values.
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
     */
-  type PartialConfiguration = Partial[Configuration]
+  type PartialConfiguration = typings.std.Partial[typings.realm.Realm.Configuration]
   // properties types
-  type PropertiesTypes = StringDictionary[PropertyType | ObjectSchemaProperty]
+  type PropertiesTypes = org.scalablytyped.runtime.StringDictionary[typings.realm.Realm.PropertyType | typings.realm.Realm.ObjectSchemaProperty]
   /**
     * PropertyType
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~PropertyType }
@@ -39,10 +44,10 @@ package object Realm {
     - typings.realm.realmStrings.list
     - typings.realm.realmStrings.linkingObjects
   */
-  type PropertyType = _PropertyType | String
+  type PropertyType = typings.realm.Realm._PropertyType | java.lang.String
   /**
     * SortDescriptor
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Collection.html#~SortDescriptor }
     */
-  type SortDescriptor = js.Array[String] | (js.Tuple2[String, Boolean])
+  type SortDescriptor = js.Array[java.lang.String] | (js.Tuple2[java.lang.String, scala.Boolean])
 }

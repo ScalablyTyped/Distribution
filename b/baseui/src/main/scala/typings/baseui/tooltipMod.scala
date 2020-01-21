@@ -3,9 +3,9 @@ package typings.baseui
 import typings.baseui.popoverMod.PopoverProps
 import typings.baseui.popoverMod.StatefulPopoverContainerProps
 import typings.baseui.popoverMod.StatefulPopoverProps
-import typings.react.reactMod.Component
-import typings.react.reactMod.FC
-import typings.styletronDashReact.styletronDashReactMod.StyletronComponent
+import typings.react.mod.Component
+import typings.react.mod.FC
+import typings.styletronReact.mod.StyletronComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -23,19 +23,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object cryptoMod extends js.Object {
   @js.native
-  class Cipher () extends Class_Cipher
+  class Cipher () extends ClassCipher
   
   @js.native
-  class PKey () extends Class_PKey
+  class PKey () extends ClassPKey
   
   @js.native
-  class X509Cert () extends Class_X509Cert
+  class X509Cert () extends ClassX509Cert
   
   @js.native
-  class X509Crl () extends Class_X509Crl
+  class X509Crl () extends ClassX509Crl
   
   @js.native
-  class X509Req () extends Class_X509Req
+  class X509Req () extends ClassX509Req
   
   val AES: `1` = js.native
   val ARC4: `7` = js.native
@@ -58,21 +58,21 @@ object cryptoMod extends js.Object {
   val STREAM: `8` = js.native
   val ZEROS: `3` = js.native
   val ZEROS_AND_LEN: `2` = js.native
-  def createHash(algo: String): Class_Digest = js.native
-  def createHmac(algo: String, key: Class_Buffer): Class_Digest = js.native
-  def loadCert(filename: String): Class_X509Cert = js.native
-  def loadCrl(filename: String): Class_X509Crl = js.native
-  def loadPKey(filename: String): Class_PKey = js.native
-  def loadPKey(filename: String, password: String): Class_PKey = js.native
-  def loadReq(filename: String): Class_X509Req = js.native
-  def pbkdf1(password: Class_Buffer, salt: Class_Buffer, iterations: Double, size: Double, algoName: String): Class_Buffer = js.native
-  def pbkdf1(password: Class_Buffer, salt: Class_Buffer, iterations: Double, size: Double, algo: Double): Class_Buffer = js.native
-  def pbkdf2(password: Class_Buffer, salt: Class_Buffer, iterations: Double, size: Double, algoName: String): Class_Buffer = js.native
-  def pbkdf2(password: Class_Buffer, salt: Class_Buffer, iterations: Double, size: Double, algo: Double): Class_Buffer = js.native
-  def pseudoRandomBytes(size: Double): Class_Buffer = js.native
-  def randomArt(data: Class_Buffer, title: String): String = js.native
-  def randomArt(data: Class_Buffer, title: String, size: Double): String = js.native
-  def randomBytes(size: Double): Class_Buffer = js.native
-  def simpleRandomBytes(size: Double): Class_Buffer = js.native
+  def createHash(algo: String): ClassDigest = js.native
+  def createHmac(algo: String, key: ClassBuffer): ClassDigest = js.native
+  def loadCert(filename: String): ClassX509Cert = js.native
+  def loadCrl(filename: String): ClassX509Crl = js.native
+  def loadPKey(filename: String): ClassPKey = js.native
+  def loadPKey(filename: String, password: String): ClassPKey = js.native
+  def loadReq(filename: String): ClassX509Req = js.native
+  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = js.native
+  def pbkdf1(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = js.native
+  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algoName: String): ClassBuffer = js.native
+  def pbkdf2(password: ClassBuffer, salt: ClassBuffer, iterations: Double, size: Double, algo: Double): ClassBuffer = js.native
+  def pseudoRandomBytes(size: Double): ClassBuffer = js.native
+  def randomArt(data: ClassBuffer, title: String): String = js.native
+  def randomArt(data: ClassBuffer, title: String, size: Double): String = js.native
+  def randomBytes(size: Double): ClassBuffer = js.native
+  def simpleRandomBytes(size: Double): ClassBuffer = js.native
 }
 

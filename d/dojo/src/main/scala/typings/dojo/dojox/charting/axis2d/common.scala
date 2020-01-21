@@ -1,6 +1,6 @@
 package typings.dojo.dojox.charting.axis2d
 
-import typings.dojo.dojo._base.Color
+import typings.dojo.dojo.base.Color
 import typings.dojo.dojox.charting.Chart
 import typings.dojo.dojox.gfx.Text
 import typings.std.HTMLElement

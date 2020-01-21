@@ -1,6 +1,6 @@
 package typings.dojo.dojox.app
 
-import typings.dojo.dijit._TemplatedMixin
+import typings.dojo.dijit.TemplatedMixin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.dojo.dojox.app.ViewBase because Inheritance from two classes. Inlined afterActivate, afterDeactivate, beforeActivate, beforeDeactivate, init, load, start
 - typings.dojo.dijit.Destroyable because Inheritance from two classes. Inlined destroy, destroy, own
-- typings.dojo.dijit._WidgetsInTemplateMixin because Inheritance from two classes. Inlined contextRequire, widgetsInTemplate, startup */ @JSGlobal("dojox.app.View")
+- typings.dojo.dijit.WidgetsInTemplateMixin because Inheritance from two classes. Inlined contextRequire, widgetsInTemplate, startup */ @JSGlobal("dojox.app.View")
 @js.native
-class View protected () extends _TemplatedMixin {
+class View protected () extends TemplatedMixin {
   def this(params: js.Any) = this()
   /**
     * Used to provide a context require to the dojo/parser in order to be

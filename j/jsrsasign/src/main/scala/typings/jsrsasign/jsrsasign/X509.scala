@@ -1,10 +1,10 @@
 package typings.jsrsasign.jsrsasign
 
+import typings.jsrsasign.AnonCaissuer
+import typings.jsrsasign.AnonCps
+import typings.jsrsasign.AnonCriticalOid
+import typings.jsrsasign.AnonKid
 import typings.jsrsasign.Anon_CA
-import typings.jsrsasign.Anon_Caissuer
-import typings.jsrsasign.Anon_Cps
-import typings.jsrsasign.Anon_CriticalOid
-import typings.jsrsasign.Anon_Kid
 import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import scala.scalajs.js
@@ -33,7 +33,7 @@ class X509 () extends js.Object {
     * { ocsp:     ["http://ocsp.foo.com"],
     *   caissuer: ["http://rep.foo.com/aaa.p8m"] }
     */
-  def getExtAIAInfo(): js.UndefOr[Anon_Caissuer] = js.native
+  def getExtAIAInfo(): js.UndefOr[AnonCaissuer] = js.native
   /**
     * get authorityKeyIdentifier value as JSON object in the certificate
     * @return JSON object of authority key identifier or null
@@ -50,7 +50,7 @@ class X509 () extends js.Object {
     * x.readCertPEM(sCertPEM); // parseExt() will also be called internally.
     * x.getExtAuthorityKeyIdentifier() → { kid: "1234abcd..." }
     */
-  def getExtAuthorityKeyIdentifier(): Anon_Kid | Null = js.native
+  def getExtAuthorityKeyIdentifier(): AnonKid | Null = js.native
   /**
     * get BasicConstraints extension value as object in the certificate
     * @return associative array which may have "cA" and "pathLen" parameters
@@ -111,7 +111,7 @@ class X509 () extends js.Object {
     *    cps: "http://example.com/cps",
     *    unotice: "explicit text" }]
     */
-  def getExtCertificatePolicies(): js.UndefOr[Anon_Cps] = js.native
+  def getExtCertificatePolicies(): js.UndefOr[AnonCps] = js.native
   /**
     * get extKeyUsage value as array of name string in the certificate
     * @return array of extended key usage ID name or oid
@@ -416,7 +416,7 @@ class X509 () extends js.Object {
     * x.aExtInfo →
     * [ { oid: "2.5.29,19", critical: true, vidx: 2504 }, ... ]
     */
-  def parseExt(params: Anon_CriticalOid): Unit = js.native
+  def parseExt(params: AnonCriticalOid): Unit = js.native
   /**
     * read a hexadecimal string of X.509 certificate
     * @param sCertHex hexadecimal string of X.509 certificate

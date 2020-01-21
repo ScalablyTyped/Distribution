@@ -5,13 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object netMod {
-  import typings.node.NodeJS.ErrnoException
-  import typings.node.dnsMod.LookupOneOptions
-
   type LookupFunction = js.Function3[
-    /* hostname */ String, 
-    /* options */ LookupOneOptions, 
-    /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit], 
-    Unit
+    /* hostname */ java.lang.String, 
+    /* options */ typings.node.dnsMod.LookupOneOptions, 
+    /* callback */ js.Function3[
+      /* err */ typings.node.NodeJS.ErrnoException | scala.Null, 
+      /* address */ java.lang.String, 
+      /* family */ scala.Double, 
+      scala.Unit
+    ], 
+    scala.Unit
   ]
 }

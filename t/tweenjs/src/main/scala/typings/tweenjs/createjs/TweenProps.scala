@@ -1,6 +1,6 @@
 package typings.tweenjs.createjs
 
-import typings.createjsDashLib.createjs.Event
+import typings.createjsLib.createjs.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,9 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object UIkit {
-  import typings.jquery.JQuery
-  import typings.std.HTMLElement
-
   /**
     * Create a list of items, allowing each item's content to be expanded and collapsed by clicking its header.
     * Documentation {@link http://getuikit.org/docs/accordion.html}
@@ -25,7 +22,11 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type Accordion = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ AccordionOptions, js.Any]
+  type Accordion_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.AccordionOptions, 
+    js.Any
+  ]
   /**
     * Create inputs that allow users to choose from a list of pre-generated values while typing
     * Documentation {@link http://getuikit.org/docs/autocomplete.html}
@@ -48,12 +49,12 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type AutoComplete = js.Function2[
-    /* element */ String | JQuery[HTMLElement], 
-    /* options */ js.UndefOr[AutoCompleteOptions], 
+  type AutoComplete_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ js.UndefOr[typings.uikit.UIkit.AutoCompleteOptions], 
     js.Any
   ]
-  type CallbackAutoComplete = js.Function0[String]
+  type CallbackAutoComplete = js.Function0[java.lang.String]
   /**
     * Create a toggleable dropdown with an datepicker
     * Documentation {@link http://getuikit.org/docs/datepicker.html}
@@ -81,9 +82,9 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type DatePicker = js.Function2[
-    /* element */ String | JQuery[HTMLElement], 
-    /* options */ js.UndefOr[DatePickerOptions], 
+  type DatePicker_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ js.UndefOr[typings.uikit.UIkit.DatePickerOptions], 
     js.Any
   ]
   /**
@@ -96,18 +97,18 @@ package object UIkit {
     * hide.uk.dropdown   Triggered on dropdown hide
     * stack.uk.dropdown  Triggered when a dropdown stacks to fit into screen
     */
-  type Dropdown = js.Function2[
-    /* selector */ String | JQuery[HTMLElement], 
-    /* options */ js.UndefOr[DropdownOptions], 
-    DropdownElement
+  type Dropdown_ = js.Function2[
+    /* selector */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ js.UndefOr[typings.uikit.UIkit.DropdownOptions], 
+    typings.uikit.UIkit.DropdownElement
   ]
   /**
     * Create a rich HTML or markdown editor with an immediate preview and syntax highlighting
     * Documentation {@link http://getuikit.org/docs/htmleditor.html}
     */
-  type HtmlEditor = js.Function2[
-    /* element */ String | JQuery[HTMLElement], 
-    /* options */ js.UndefOr[HtmlEditorOptions], 
+  type HtmlEditor_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ js.UndefOr[typings.uikit.UIkit.HtmlEditorOptions], 
     js.Any
   ]
   /**
@@ -142,17 +143,29 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type Nestable = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ NestableOptions, js.Any]
+  type Nestable_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.NestableOptions, 
+    js.Any
+  ]
   /**
     * Animate CSS properties depending on the scroll position of the document.
     * Documentation {@link http://getuikit.org/docs/parallax.html}
     */
-  type Parallax = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ ParallaxOptions, js.Any]
+  type Parallax_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.ParallaxOptions, 
+    js.Any
+  ]
   /**
     * Easily create a nicely looking search.
     * Documentation {@link http://getuikit.org/docs/search.html}
     */
-  type Search = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ SearchOptions, js.Any]
+  type Search_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.SearchOptions, 
+    js.Any
+  ]
   /**
     * Create sets and groups of items, allowing to loop through the sets.
     * Documentation {@link http://getuikit.org/docs/slideset.html}
@@ -170,9 +183,9 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type SlideSet = js.Function2[
-    /* element */ String | JQuery[HTMLElement], 
-    /* options */ js.UndefOr[SlideSetOptions], 
+  type SlideSet_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ js.UndefOr[typings.uikit.UIkit.SlideSetOptions], 
     js.Any
   ]
   /**
@@ -192,7 +205,11 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type SlideShow = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ SlideShowOptions, js.Any]
+  type SlideShow_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.SlideShowOptions, 
+    js.Any
+  ]
   /**
     * Create a list of items to use as a responsive carousel slider
     * Documentation {@link http://getuikit.org/docs/slider.html}
@@ -210,9 +227,9 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type Slider = js.Function2[
-    /* element */ String | JQuery[HTMLElement], 
-    /* options */ js.UndefOr[SliderOptions], 
+  type Slider_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ js.UndefOr[typings.uikit.UIkit.SliderOptions], 
     js.Any
   ]
   /**
@@ -247,7 +264,11 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type Sortable = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ SortableOptions, js.Any]
+  type Sortable_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.SortableOptions, 
+    js.Any
+  ]
   /**
     * Make elements remain at the top of the viewport, like a sticky navbar.
     * Documentation {@link http://getuikit.org/docs/sticky.html}
@@ -270,17 +291,29 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type Sticky = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ StickyOptions, js.Any]
+  type Sticky_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.StickyOptions, 
+    js.Any
+  ]
   /**
     * Create a timepicker which can easily be used by selecting a time value from a pre filled dropdown.
     * Documentation {@link http://getuikit.org/docs/timepicker.html}
     */
-  type Timepicker = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ TimepickerOptions, js.Any]
+  type Timepicker_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.TimepickerOptions, 
+    js.Any
+  ]
   /**
     * Easily create a nicely looking tooltip.
     * Documentation {@link http://getuikit.org/docs/tooltip.html}
     */
-  type Tooltip = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ TooltipOptions, js.Any]
+  type Tooltip_ = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.TooltipOptions, 
+    js.Any
+  ]
   /**
     * Allow users to upload files through a file input form element or a placeholder area.
     * Documentation {@link http://getuikit.org/docs/upload.html}
@@ -344,5 +377,9 @@ package object UIkit {
     * </tr>
     * </table>
     */
-  type Upload = js.Function2[/* element */ String | JQuery[HTMLElement], /* options */ UploadOptions, js.Any]
+  type Upload = js.Function2[
+    /* element */ java.lang.String | typings.jquery.JQuery_[typings.std.HTMLElement], 
+    /* options */ typings.uikit.UIkit.UploadOptions, 
+    js.Any
+  ]
 }

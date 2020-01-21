@@ -7,7 +7,7 @@ import typings.electron.Electron.BrowserWindow
 import typings.electron.Electron.BrowserWindowConstructorOptions
 import typings.electron.Electron.DevToolsExtensions
 import typings.electron.Electron.Extensions
-import typings.electron.Electron.WebContents
+import typings.electron.Electron.WebContents_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,7 +34,7 @@ trait TypeofClassBrowserWindow
   def addExtension(path: String): Unit = js.native
   def fromBrowserView(browserView: BrowserView): BrowserWindow | Null = js.native
   def fromId(id: Double): BrowserWindow = js.native
-  def fromWebContents(webContents: WebContents): BrowserWindow = js.native
+  def fromWebContents(webContents: WebContents_): BrowserWindow = js.native
   def getAllWindows(): js.Array[BrowserWindow] = js.native
   /**
     * To check if a DevTools extension is installed you can run the following: Note:

@@ -1,8 +1,8 @@
 package typings.atom.linterMod
 
-import typings.atom.atomMod.TextEditor
 import typings.atom.atomStrings.file
 import typings.atom.atomStrings.project
+import typings.atom.mod.TextEditor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

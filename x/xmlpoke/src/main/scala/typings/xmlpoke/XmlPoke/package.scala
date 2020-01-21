@@ -14,5 +14,5 @@ package object XmlPoke {
     - typings.xmlpoke.XmlPoke.PathToValueMap
     - typings.xmlpoke.XmlPoke.Transform
   */
-  type Value = _Value | String | Boolean | Double
+  type Value = typings.xmlpoke.XmlPoke._Value | java.lang.String | scala.Boolean | scala.Double
 }

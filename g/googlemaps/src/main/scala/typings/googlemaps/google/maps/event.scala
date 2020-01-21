@@ -1,6 +1,6 @@
 package typings.googlemaps.google.maps
 
-import typings.std.Event
+import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,22 +13,22 @@ object event extends js.Object {
     * calling removeListener(handle) for the handle that is returned by this
     * function.
     */
-  def addDomListener(instance: js.Object, eventName: String, handler: js.Function1[/* event */ Event, Unit]): MapsEventListener = js.native
+  def addDomListener(instance: js.Object, eventName: String, handler: js.Function1[/* event */ Event_, Unit]): MapsEventListener = js.native
   def addDomListener(
     instance: js.Object,
     eventName: String,
-    handler: js.Function1[/* event */ Event, Unit],
+    handler: js.Function1[/* event */ Event_, Unit],
     capture: Boolean
   ): MapsEventListener = js.native
   /**
     * Wrapper around addDomListener that removes the listener after the first
     * event.
     */
-  def addDomListenerOnce(instance: js.Object, eventName: String, handler: js.Function1[/* event */ Event, Unit]): MapsEventListener = js.native
+  def addDomListenerOnce(instance: js.Object, eventName: String, handler: js.Function1[/* event */ Event_, Unit]): MapsEventListener = js.native
   def addDomListenerOnce(
     instance: js.Object,
     eventName: String,
-    handler: js.Function1[/* event */ Event, Unit],
+    handler: js.Function1[/* event */ Event_, Unit],
     capture: Boolean
   ): MapsEventListener = js.native
   /**

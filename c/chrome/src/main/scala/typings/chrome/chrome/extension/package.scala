@@ -5,19 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object extension {
-  import typings.chrome.chrome.events.Event
-  import typings.chrome.chrome.runtime.MessageSender
-
-  type OnRequestEvent = Event[
+  type OnRequestEvent = typings.chrome.chrome.events.Event[
     (js.Function3[
       /* request */ js.Any, 
-      /* sender */ MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.Any, Unit], 
-      Unit
+      /* sender */ typings.chrome.chrome.runtime.MessageSender, 
+      /* sendResponse */ js.Function1[/* response */ js.Any, scala.Unit], 
+      scala.Unit
     ]) | (js.Function2[
-      /* sender */ MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.Any, Unit], 
-      Unit
+      /* sender */ typings.chrome.chrome.runtime.MessageSender, 
+      /* sendResponse */ js.Function1[/* response */ js.Any, scala.Unit], 
+      scala.Unit
     ])
   ]
 }

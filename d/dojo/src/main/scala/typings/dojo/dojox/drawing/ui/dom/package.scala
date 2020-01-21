@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dom {
-  type Pan = Pan_
+  type Pan = typings.dojo.dojox.drawing.ui.dom.Pan_
 }

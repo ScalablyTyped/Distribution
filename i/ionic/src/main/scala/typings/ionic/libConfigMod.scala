@@ -1,10 +1,10 @@
 package typings.ionic
 
-import typings.atIonicCliDashFramework.libConfigMod.BaseConfigOptions
 import typings.ionic.definitionsMod.CommandMetadataOption
 import typings.ionic.definitionsMod.IConfig
 import typings.ionic.ionicStrings.configDotjson
-import typings.minimist.minimistMod.ParsedArgs
+import typings.ionicCliFramework.configMod.BaseConfigOptions
+import typings.minimist.mod.ParsedArgs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

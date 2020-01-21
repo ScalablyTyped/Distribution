@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("frames")
 @js.native
-object frames extends TopLevel[Window]
+object frames extends TopLevel[Window_]
 

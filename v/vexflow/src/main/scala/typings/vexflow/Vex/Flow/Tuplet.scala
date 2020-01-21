@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Bracketed
+import typings.vexflow.AnonBracketed
 import typings.vexflow.Vex.IRenderContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tuplet protected () extends js.Object {
   def this(notes: js.Array[StaveNote]) = this()
-  def this(notes: js.Array[StaveNote], options: Anon_Bracketed) = this()
+  def this(notes: js.Array[StaveNote], options: AnonBracketed) = this()
   def attach(): Unit = js.native
   def detach(): Unit = js.native
   def draw(): Unit = js.native

@@ -1,7 +1,7 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit._WidgetBase
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.WidgetBase
 import typings.dojo.dojoStrings.ChildWidgetProperties
 import typings.dojo.dojoStrings.animation
 import typings.dojo.dojoStrings.duration
@@ -30,10 +30,10 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit._Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
-- typings.dojo.dijit._Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.Accordion")
+- typings.dojo.dijit.Contained because Inheritance from two classes. Inlined getIndexInParent, getNextSibling, getPreviousSibling
+- typings.dojo.dijit.Container because Inheritance from two classes. Inlined addChild, addChild, buildRendering, getIndexOfChild, hasChildren, removeChild, removeChild */ @JSGlobal("dojox.mobile.Accordion")
 @js.native
-class Accordion_ () extends _WidgetBase {
+class Accordion_ () extends WidgetBase {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -94,33 +94,33 @@ class Accordion_ () extends _WidgetBase {
     * @param widget             
     * @param insertIndex               Optional            
     */
-  def addChild(widget: _WidgetBase): Unit = js.native
+  def addChild(widget: WidgetBase): Unit = js.native
   /**
     *
     * @param widget
     * @param insertIndex               Optional
     */
-  def addChild(widget: _WidgetBase, insertIndex: Double): Unit = js.native
+  def addChild(widget: WidgetBase, insertIndex: Double): Unit = js.native
   /**
     * Collapses the given pane to close it.
     *
     * @param pane A pane widget to collapse.
     * @param noAnimation If true, the pane collapses immediately without animation effect.
     */
-  def collapse(pane: _WidgetBase, noAnimation: Boolean): Unit = js.native
+  def collapse(pane: WidgetBase, noAnimation: Boolean): Unit = js.native
   /**
     * Unhighlights the title bar of the given pane.
     *
     * @param pane A pane widget to unhighlight.
     */
-  def deselect(pane: _WidgetBase): Unit = js.native
+  def deselect(pane: WidgetBase): Unit = js.native
   /**
     * Expands the given pane to make it visible.
     *
     * @param pane A pane widget to expand.
     * @param noAnimation If true, the pane expands immediately without animation effect.
     */
-  def expand(pane: _WidgetBase, noAnimation: Boolean): Unit = js.native
+  def expand(pane: WidgetBase, noAnimation: Boolean): Unit = js.native
   /**
     * Returns the index of this widget within its container parent.
     * It returns -1 if the parent does not exist, or if the parent
@@ -144,7 +144,7 @@ class Accordion_ () extends _WidgetBase {
     * 
     * @param child             
     */
-  def getIndexOfChild(child: _WidgetBase): js.Any = js.native
+  def getIndexOfChild(child: WidgetBase): js.Any = js.native
   /**
     * Returns null if this is the last child of the parent,
     * otherwise returns the next element sibling to the "right".
@@ -225,7 +225,7 @@ class Accordion_ () extends _WidgetBase {
     * 
     * @param widget             
     */
-  def removeChild(widget: _WidgetBase): Unit = js.native
+  def removeChild(widget: WidgetBase): Unit = js.native
   /**
     *
     */
@@ -235,7 +235,7 @@ class Accordion_ () extends _WidgetBase {
     *
     * @param pane A pane widget to highlight.
     */
-  def select(pane: _WidgetBase): Unit = js.native
+  def select(pane: WidgetBase): Unit = js.native
   @JSName("set")
   def set_ChildWidgetProperties(property: ChildWidgetProperties, value: js.Object): Unit = js.native
   @JSName("set")
@@ -263,7 +263,7 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_animation(
     property: animation,
@@ -273,7 +273,7 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_duration(
     property: duration,
@@ -283,7 +283,7 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_fixedHeight(
     property: fixedHeight,
@@ -293,7 +293,7 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_iconBase(
     property: iconBase,
@@ -303,7 +303,7 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_iconPos(
     property: iconPos,
@@ -313,7 +313,7 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_roundRect(
     property: roundRect,
@@ -323,7 +323,7 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_singleOpen(
     property: singleOpen,
@@ -333,6 +333,6 @@ class Accordion_ () extends _WidgetBase {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

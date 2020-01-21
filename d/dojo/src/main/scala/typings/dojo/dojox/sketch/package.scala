@@ -13,7 +13,7 @@ package object sketch {
     * @param id
     * @param isControl
     */
-  type Anchor = js.Function3[/* an */ js.Any, /* id */ js.Any, /* isControl */ js.Any, Unit]
+  type Anchor = js.Function3[/* an */ js.Any, /* id */ js.Any, /* isControl */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/sketch/Annotation.html
     *
@@ -21,7 +21,7 @@ package object sketch {
     * @param figure
     * @param id
     */
-  type Annotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, Unit]
+  type Annotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/sketch/DoubleArrowAnnotation.html
     *
@@ -29,14 +29,14 @@ package object sketch {
     * @param figure
     * @param id
     */
-  type DoubleArrowAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, Unit]
+  type DoubleArrowAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/sketch/Figure.html
     *
     *
     * @param mixin
     */
-  type Figure = js.Function1[/* mixin */ js.Any, Unit]
+  type Figure = js.Function1[/* mixin */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/sketch/LeadAnnotation.html
     *
@@ -44,7 +44,7 @@ package object sketch {
     * @param figure
     * @param id
     */
-  type LeadAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, Unit]
+  type LeadAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/sketch/PreexistingAnnotation.html
     *
@@ -52,7 +52,7 @@ package object sketch {
     * @param figure
     * @param id
     */
-  type PreexistingAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, Unit]
+  type PreexistingAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/sketch/SingleArrowAnnotation.html
     *
@@ -60,7 +60,7 @@ package object sketch {
     * @param figure
     * @param id
     */
-  type SingleArrowAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, Unit]
+  type SingleArrowAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojox/sketch/UnderlineAnnotation.html
     *
@@ -68,5 +68,5 @@ package object sketch {
     * @param figure
     * @param id
     */
-  type UnderlineAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, Unit]
+  type UnderlineAnnotation = js.Function2[/* figure */ js.Any, /* id */ js.Any, scala.Unit]
 }

@@ -1,12 +1,12 @@
 package typings.baseui.modalMod
 
-import typings.baseui.Anon_Backdrop
+import typings.baseui.AnonBackdrop
 import typings.baseui.baseuiStrings.alertdialog
 import typings.baseui.baseuiStrings.auto
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.dialog
 import typings.baseui.baseuiStrings.full
-import typings.react.reactMod.ReactNode
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +20,7 @@ trait ModalProps extends js.Object {
   var closeable: js.UndefOr[Boolean] = js.undefined
   var isOpen: js.UndefOr[Boolean] = js.undefined
   var mountNode: js.UndefOr[HTMLElement] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* args */ Anon_Backdrop, _]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* args */ AnonBackdrop, _]] = js.undefined
   var overrides: js.UndefOr[ModalOverrides] = js.undefined
   var role: js.UndefOr[dialog | alertdialog] = js.undefined
   var size: js.UndefOr[default_ | full | auto] = js.undefined
@@ -37,7 +37,7 @@ object ModalProps {
     closeable: js.UndefOr[Boolean] = js.undefined,
     isOpen: js.UndefOr[Boolean] = js.undefined,
     mountNode: HTMLElement = null,
-    onClose: /* args */ Anon_Backdrop => _ = null,
+    onClose: /* args */ AnonBackdrop => _ = null,
     overrides: ModalOverrides = null,
     role: dialog | alertdialog = null,
     size: default_ | full | auto = null,

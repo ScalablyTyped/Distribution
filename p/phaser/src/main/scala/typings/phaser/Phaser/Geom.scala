@@ -2,6 +2,7 @@ package typings.phaser.Phaser
 
 import typings.phaser.CenterFunction
 import typings.phaser.Phaser.Math.Vector2
+import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.integer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -212,9 +213,9 @@ object Geom extends js.Object {
       * @param stepRate Sets the quantity by getting the circumference of the ellipse and dividing it by the stepRate.
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
-    def getPoints(quantity: integer): js.Array[Point] = js.native
-    def getPoints(quantity: integer, stepRate: Double): js.Array[Point] = js.native
-    def getPoints(quantity: integer, stepRate: Double, output: js.Array[_]): js.Array[Point] = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
     /**
       * Returns a uniformly distributed random point from anywhere within the given Ellipse.
       * @param point A Point or point-like object to set the random `x` and `y` values in.
@@ -337,9 +338,9 @@ object Geom extends js.Object {
       * @param stepRate The distance between each point on the line. When set, `quantity` is implied and should be set to `0`.
       * @param output An optional array of Points, or point-like objects, to store the coordinates of the points on the line.
       */
-    def getPoints[O /* <: Point */](quantity: integer): O = js.native
-    def getPoints[O /* <: Point */](quantity: integer, stepRate: integer): O = js.native
-    def getPoints[O /* <: Point */](quantity: integer, stepRate: integer, output: O): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: integer, output: O): O = js.native
     /**
       * Get a random Point on the Line.
       * @param point An instance of a Point to be modified.
@@ -446,9 +447,9 @@ object Geom extends js.Object {
       * @param stepRate Sets the quantity by getting the perimeter of the Polygon and dividing it by the stepRate.
       * @param output An array to insert the points in to. If not provided a new array will be created.
       */
-    def getPoints(quantity: integer): js.Array[Point] = js.native
-    def getPoints(quantity: integer, stepRate: Double): js.Array[Point] = js.native
-    def getPoints(quantity: integer, stepRate: Double, output: js.Array[_]): js.Array[Point] = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double): O = js.native
+    def getPoints[O /* <: js.Array[Point] */](quantity: integer, stepRate: Double, output: O): O = js.native
     /**
       * Sets this Polygon to the given points.
       * 
@@ -756,31 +757,38 @@ object Geom extends js.Object {
   /**
     * A Circle Geometry object type.
     */
-  var CIRCLE: integer = js.native
+  @JSName("CIRCLE")
+  var CIRCLE_ : integer = js.native
   /**
     * An Ellipse Geometry object type.
     */
-  var ELLIPSE: integer = js.native
+  @JSName("ELLIPSE")
+  var ELLIPSE_ : integer = js.native
   /**
     * A Line Geometry object type.
     */
-  var LINE: integer = js.native
+  @JSName("LINE")
+  var LINE_ : integer = js.native
   /**
     * A Point Geometry object type.
     */
-  var POINT: integer = js.native
+  @JSName("POINT")
+  var POINT_ : integer = js.native
   /**
     * A Polygon Geometry object type.
     */
-  var POLYGON: integer = js.native
+  @JSName("POLYGON")
+  var POLYGON_ : integer = js.native
   /**
     * A Rectangle Geometry object type.
     */
-  var RECTANGLE: integer = js.native
+  @JSName("RECTANGLE")
+  var RECTANGLE_ : integer = js.native
   /**
     * A Triangle Geometry object type.
     */
-  var TRIANGLE: integer = js.native
+  @JSName("TRIANGLE")
+  var TRIANGLE_ : integer = js.native
   /* static members */
   @js.native
   object Circle extends js.Object {
@@ -1239,9 +1247,9 @@ object Geom extends js.Object {
       * @param stepRate The optional step rate for the points on the line. Default 1.
       * @param results An optional array to push the resulting coordinates into.
       */
-    def BresenhamPoints(line: Line): js.Array[js.Object] = js.native
-    def BresenhamPoints(line: Line, stepRate: integer): js.Array[js.Object] = js.native
-    def BresenhamPoints(line: Line, stepRate: integer, results: js.Array[_]): js.Array[js.Object] = js.native
+    def BresenhamPoints(line: Line): js.Array[Vector2Like] = js.native
+    def BresenhamPoints(line: Line, stepRate: integer): js.Array[Vector2Like] = js.native
+    def BresenhamPoints(line: Line, stepRate: integer, results: js.Array[Vector2Like]): js.Array[Vector2Like] = js.native
     /**
       * Center a line on the given coordinates.
       * @param line The line to center.

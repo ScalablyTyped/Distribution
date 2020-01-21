@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("br")
 @js.native
 trait br_ extends js.Object {
   /**

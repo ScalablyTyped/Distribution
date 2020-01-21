@@ -108,7 +108,7 @@ trait String
     * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
     * @param matcher An object that supports being matched against.
     */
-  def `match`(matcher: Anon_String): RegExpMatchArray | Null = js.native
+  def `match`(matcher: AnonString): RegExpMatchArray | Null = js.native
   /**
     * Matches a string with a regular expression, and returns an array containing the results of that search.
     * @param regexp A variable name or string literal containing the regular expression pattern and flags.
@@ -196,7 +196,7 @@ trait String
     * @param replacer A function that returns the replacement text.
     */
   def replace(
-    searchValue: Anon_Args,
+    searchValue: AnonArgs,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
   /**
@@ -204,7 +204,7 @@ trait String
     * @param searchValue A object can search for and replace matches within a string.
     * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
     */
-  def replace(searchValue: Anon_ReplaceValue, replaceValue: java.lang.String): java.lang.String = js.native
+  def replace(searchValue: AnonReplaceValue, replaceValue: java.lang.String): java.lang.String = js.native
   def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
   def replace(
     searchValue: RegExp,
@@ -220,7 +220,7 @@ trait String
     * Finds the first substring match in a regular expression search.
     * @param searcher An object which supports searching within a string.
     */
-  def search(searcher: Anon_StringSymbol): Double = js.native
+  def search(searcher: AnonStringSymbol): Double = js.native
   /**
     * Returns a section of a string.
     * @param start The index to the beginning of the specified portion of stringObj.
@@ -246,8 +246,8 @@ trait String
     * @param splitter An object that can split a string.
     * @param limit A value used to limit the number of elements returned in the array.
     */
-  def split(splitter: Anon_Limit): js.Array[java.lang.String] = js.native
-  def split(splitter: Anon_Limit, limit: Double): js.Array[java.lang.String] = js.native
+  def split(splitter: AnonLimit): js.Array[java.lang.String] = js.native
+  def split(splitter: AnonLimit, limit: Double): js.Array[java.lang.String] = js.native
   /**
     * Returns true if the sequence of elements of searchString converted to a String is the
     * same as the corresponding elements of this object (converted to a String) starting at

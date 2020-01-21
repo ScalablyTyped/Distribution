@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceTileJSONMod.Options
-import typings.ol.sourceTileJSONMod.default
+import typings.ol.tileJSONMod.Options
+import typings.ol.tileJSONMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

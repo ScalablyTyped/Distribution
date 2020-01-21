@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Asset
+import typings.playcanvas.AnonAsset
 import typings.std.AudioNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SoundSlot")
 @js.native
 class SoundSlot protected () extends EventHandler {
-  def this(component: SoundComponent, name: String, options: Anon_Asset) = this()
+  def this(component: SoundComponent, name: String, options: AnonAsset) = this()
   /**
     * The asset id
     */

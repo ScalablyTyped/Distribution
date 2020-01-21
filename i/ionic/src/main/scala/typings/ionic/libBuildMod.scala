@@ -1,14 +1,5 @@
 package typings.ionic
 
-import typings.atIonicCliDashFramework.definitionsMod.CommandLineInputs
-import typings.atIonicCliDashFramework.definitionsMod.CommandLineOptions
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptModule
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptQuestionCheckbox
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptQuestionConfirm
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptQuestionOther
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptValueCheckbox
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptValueConfirm
-import typings.atIonicCliDashFrameworkDashPrompts.atIonicCliDashFrameworkDashPromptsMod.PromptValueOther
 import typings.ionic.definitionsMod.BaseBuildOptions
 import typings.ionic.definitionsMod.BuildOptions
 import typings.ionic.definitionsMod.CommandMetadata
@@ -25,6 +16,15 @@ import typings.ionic.ionicStrings.`npm CLI`
 import typings.ionic.ionicStrings.ionicColonbuild
 import typings.ionic.ionicStrings.npm
 import typings.ionic.ionicStrings.yarn_
+import typings.ionicCliFramework.definitionsMod.CommandLineInputs
+import typings.ionicCliFramework.definitionsMod.CommandLineOptions
+import typings.ionicCliFrameworkPrompts.mod.PromptModule
+import typings.ionicCliFrameworkPrompts.mod.PromptQuestionCheckbox
+import typings.ionicCliFrameworkPrompts.mod.PromptQuestionConfirm
+import typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther
+import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
+import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
+import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import typings.node.NodeJS.ProcessEnv
 import typings.std.Partial
 import scala.scalajs.js

@@ -1,6 +1,6 @@
 package typings.dbus
 
-import typings.dbus.dbusMod.busType
+import typings.dbus.mod.busType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geopattern"
-version := "1.2-dt-20190212Z-3fa67b"
+version := "1.2-dt-20190212Z-a2f91a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

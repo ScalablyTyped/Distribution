@@ -1,7 +1,7 @@
 package typings.ol.sourceMod
 
-import typings.ol.sourceImageCanvasMod.Options
-import typings.ol.sourceImageCanvasMod.default
+import typings.ol.imageCanvasMod.Options
+import typings.ol.imageCanvasMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

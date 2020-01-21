@@ -1,8 +1,8 @@
 package typings.ky
 
-import typings.ky.kyMod.Input
-import typings.ky.kyMod.Options
-import typings.ky.kyMod.ResponsePromise
+import typings.ky.mod.Input
+import typings.ky.mod.Options
+import typings.ky.mod.ResponsePromise
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
 object umdMod extends js.Object {
   @js.native
   class HTTPError protected ()
-    extends typings.ky.kyMod.HTTPError {
+    extends typings.ky.mod.HTTPError {
     def this(response: Response) = this()
   }
   
   @js.native
   class TimeoutError ()
-    extends typings.ky.kyMod.TimeoutError
+    extends typings.ky.mod.TimeoutError
   
   @js.native
   object default extends js.Object {
@@ -66,7 +66,7 @@ object umdMod extends js.Object {
     	Create a new Ky instance with complete new defaults.
     	@returns A new Ky instance.
     	*/
-    def create(defaultOptions: Options): Anon_Create = js.native
+    def create(defaultOptions: Options): AnonCreate = js.native
     /**
     	Fetch the given `url` using the option `{method: 'delete'}`.
     	@param url - `Request` object, `URL` object, or URL string.
@@ -79,7 +79,7 @@ object umdMod extends js.Object {
     	In contrast to `ky.create()`, `ky.extend()` inherits defaults from its parent.
     	@returns A new Ky instance.
     	*/
-    def extend(defaultOptions: Options): Anon_Create = js.native
+    def extend(defaultOptions: Options): AnonCreate = js.native
     /**
     	Fetch the given `url` using the option `{method: 'get'}`.
     	@param url - `Request` object, `URL` object, or URL string.

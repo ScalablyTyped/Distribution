@@ -1,7 +1,7 @@
 package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.OAuth2Client
+import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.googleapisStrings.httpsColonSlashSlashoauth2DotgoogleapisDotcomSlashtokeninfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`

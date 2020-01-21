@@ -67,6 +67,9 @@ trait Room extends js.Object {
     * A RoomVisual object for this room. You can use this object to draw simple shapes (lines, circles, text labels) in the room.
     */
   var visual: RoomVisual = js.native
+  def createConstructionSite(pos: HasRoomPosition, structureType: STRUCTURE_SPAWN): ScreepsReturnCode = js.native
+  def createConstructionSite(pos: HasRoomPosition, structureType: STRUCTURE_SPAWN, name: String): ScreepsReturnCode = js.native
+  def createConstructionSite(pos: HasRoomPosition, structureType: StructureConstant): ScreepsReturnCode = js.native
   /**
     * Create new ConstructionSite at the specified location.
     * @param pos Can be a RoomPosition object or any object containing RoomPosition.
@@ -83,9 +86,6 @@ trait Room extends js.Object {
     * @returns Result Code: OK, ERR_INVALID_TARGET, ERR_INVALID_ARGS, ERR_RCL_NOT_ENOUGH
     */
   def createConstructionSite(pos: RoomPosition, structureType: StructureConstant): ScreepsReturnCode = js.native
-  def createConstructionSite(pos: _HasRoomPosition, structureType: STRUCTURE_SPAWN): ScreepsReturnCode = js.native
-  def createConstructionSite(pos: _HasRoomPosition, structureType: STRUCTURE_SPAWN, name: String): ScreepsReturnCode = js.native
-  def createConstructionSite(pos: _HasRoomPosition, structureType: StructureConstant): ScreepsReturnCode = js.native
   /**
     * Create new ConstructionSite at the specified location.
     * @param x The X position.
@@ -104,10 +104,10 @@ trait Room extends js.Object {
     */
   def createConstructionSite(x: Double, y: Double, structureType: STRUCTURE_SPAWN): ScreepsReturnCode = js.native
   def createConstructionSite(x: Double, y: Double, structureType: STRUCTURE_SPAWN, name: String): ScreepsReturnCode = js.native
-  def createFlag(pos: Anon_Pos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: Anon_Pos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: Anon_Pos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(pos: Anon_Pos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: AnonPos): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: AnonPos, name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: AnonPos, name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(pos: AnonPos, name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   /**
     * Create new Flag at the specified location.
     * @param pos Can be a RoomPosition object or any object containing RoomPosition.
@@ -215,7 +215,7 @@ trait Room extends js.Object {
     * This method works for any room in the world even if you have no access to it.
     */
   def getTerrain(): RoomTerrain = js.native
-  def lookAt(target: Anon_Pos): js.Array[LookAtResult[LookConstant]] = js.native
+  def lookAt(target: AnonPos): js.Array[LookAtResult[LookConstant]] = js.native
   /**
     * Get the list of objects at the specified room position.
     * @param target Can be a RoomPosition object or any object containing RoomPosition.
@@ -346,6 +346,8 @@ trait Room extends js.Object {
   def lookForAtArea_terrain(`type`: terrain, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Terrain, terrain] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_tombstone(`type`: tombstone, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Tombstone, tombstone] = js.native
+  @JSName("lookForAt")
+  def lookForAt_constructionSite(`type`: constructionSite, target: HasRoomPosition): js.Array[ConstructionSite[BuildableStructureConstant]] = js.native
   /**
     * Get the objects at the given RoomPosition.
     * @param type One of the LOOK_* constants.
@@ -354,8 +356,6 @@ trait Room extends js.Object {
     */
   @JSName("lookForAt")
   def lookForAt_constructionSite(`type`: constructionSite, target: RoomPosition): js.Array[ConstructionSite[BuildableStructureConstant]] = js.native
-  @JSName("lookForAt")
-  def lookForAt_constructionSite(`type`: constructionSite, target: _HasRoomPosition): js.Array[ConstructionSite[BuildableStructureConstant]] = js.native
   /**
     * Get the objects at the given position.
     * @param type One of the LOOK_* constants.
@@ -366,87 +366,87 @@ trait Room extends js.Object {
   @JSName("lookForAt")
   def lookForAt_constructionSite(`type`: constructionSite, x: Double, y: Double): js.Array[ConstructionSite[BuildableStructureConstant]] = js.native
   @JSName("lookForAt")
-  def lookForAt_creep(`type`: creep, target: RoomPosition): js.Array[Creep] = js.native
+  def lookForAt_creep(`type`: creep, target: HasRoomPosition): js.Array[Creep] = js.native
   @JSName("lookForAt")
-  def lookForAt_creep(`type`: creep, target: _HasRoomPosition): js.Array[Creep] = js.native
+  def lookForAt_creep(`type`: creep, target: RoomPosition): js.Array[Creep] = js.native
   @JSName("lookForAt")
   def lookForAt_creep(`type`: creep, x: Double, y: Double): js.Array[Creep] = js.native
   @JSName("lookForAt")
-  def lookForAt_deposit(`type`: deposit, target: RoomPosition): js.Array[Deposit] = js.native
+  def lookForAt_deposit(`type`: deposit, target: HasRoomPosition): js.Array[Deposit] = js.native
   @JSName("lookForAt")
-  def lookForAt_deposit(`type`: deposit, target: _HasRoomPosition): js.Array[Deposit] = js.native
+  def lookForAt_deposit(`type`: deposit, target: RoomPosition): js.Array[Deposit] = js.native
   @JSName("lookForAt")
   def lookForAt_deposit(`type`: deposit, x: Double, y: Double): js.Array[Deposit] = js.native
   @JSName("lookForAt")
-  def lookForAt_energy(`type`: energy, target: RoomPosition): js.Array[Resource[RESOURCE_ENERGY]] = js.native
+  def lookForAt_energy(`type`: energy, target: HasRoomPosition): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
-  def lookForAt_energy(`type`: energy, target: _HasRoomPosition): js.Array[Resource[RESOURCE_ENERGY]] = js.native
+  def lookForAt_energy(`type`: energy, target: RoomPosition): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
   def lookForAt_energy(`type`: energy, x: Double, y: Double): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, target: HasRoomPosition): js.Array[_] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: _HasRoomPosition): js.Array[_] = js.native
+  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[_] = js.native
   @JSName("lookForAt")
   def lookForAt_exit(`type`: exit, x: Double, y: Double): js.Array[_] = js.native
   @JSName("lookForAt")
-  def lookForAt_flag(`type`: flag, target: RoomPosition): js.Array[Flag] = js.native
+  def lookForAt_flag(`type`: flag, target: HasRoomPosition): js.Array[Flag] = js.native
   @JSName("lookForAt")
-  def lookForAt_flag(`type`: flag, target: _HasRoomPosition): js.Array[Flag] = js.native
+  def lookForAt_flag(`type`: flag, target: RoomPosition): js.Array[Flag] = js.native
   @JSName("lookForAt")
   def lookForAt_flag(`type`: flag, x: Double, y: Double): js.Array[Flag] = js.native
   @JSName("lookForAt")
-  def lookForAt_mineral(`type`: mineral, target: RoomPosition): js.Array[Mineral[MineralConstant]] = js.native
+  def lookForAt_mineral(`type`: mineral, target: HasRoomPosition): js.Array[Mineral[MineralConstant]] = js.native
   @JSName("lookForAt")
-  def lookForAt_mineral(`type`: mineral, target: _HasRoomPosition): js.Array[Mineral[MineralConstant]] = js.native
+  def lookForAt_mineral(`type`: mineral, target: RoomPosition): js.Array[Mineral[MineralConstant]] = js.native
   @JSName("lookForAt")
   def lookForAt_mineral(`type`: mineral, x: Double, y: Double): js.Array[Mineral[MineralConstant]] = js.native
   @JSName("lookForAt")
-  def lookForAt_nuke(`type`: nuke, target: RoomPosition): js.Array[Nuke] = js.native
+  def lookForAt_nuke(`type`: nuke, target: HasRoomPosition): js.Array[Nuke] = js.native
   @JSName("lookForAt")
-  def lookForAt_nuke(`type`: nuke, target: _HasRoomPosition): js.Array[Nuke] = js.native
+  def lookForAt_nuke(`type`: nuke, target: RoomPosition): js.Array[Nuke] = js.native
   @JSName("lookForAt")
   def lookForAt_nuke(`type`: nuke, x: Double, y: Double): js.Array[Nuke] = js.native
   @JSName("lookForAt")
-  def lookForAt_powerCreep(`type`: powerCreep, target: RoomPosition): js.Array[PowerCreep] = js.native
+  def lookForAt_powerCreep(`type`: powerCreep, target: HasRoomPosition): js.Array[PowerCreep] = js.native
   @JSName("lookForAt")
-  def lookForAt_powerCreep(`type`: powerCreep, target: _HasRoomPosition): js.Array[PowerCreep] = js.native
+  def lookForAt_powerCreep(`type`: powerCreep, target: RoomPosition): js.Array[PowerCreep] = js.native
   @JSName("lookForAt")
   def lookForAt_powerCreep(`type`: powerCreep, x: Double, y: Double): js.Array[PowerCreep] = js.native
   @JSName("lookForAt")
-  def lookForAt_resource(`type`: resource, target: RoomPosition): js.Array[Resource[ResourceConstant]] = js.native
+  def lookForAt_resource(`type`: resource, target: HasRoomPosition): js.Array[Resource[ResourceConstant]] = js.native
   @JSName("lookForAt")
-  def lookForAt_resource(`type`: resource, target: _HasRoomPosition): js.Array[Resource[ResourceConstant]] = js.native
+  def lookForAt_resource(`type`: resource, target: RoomPosition): js.Array[Resource[ResourceConstant]] = js.native
   @JSName("lookForAt")
   def lookForAt_resource(`type`: resource, x: Double, y: Double): js.Array[Resource[ResourceConstant]] = js.native
   @JSName("lookForAt")
-  def lookForAt_ruin(`type`: ruin, target: RoomPosition): js.Array[Ruin] = js.native
+  def lookForAt_ruin(`type`: ruin, target: HasRoomPosition): js.Array[Ruin] = js.native
   @JSName("lookForAt")
-  def lookForAt_ruin(`type`: ruin, target: _HasRoomPosition): js.Array[Ruin] = js.native
+  def lookForAt_ruin(`type`: ruin, target: RoomPosition): js.Array[Ruin] = js.native
   @JSName("lookForAt")
   def lookForAt_ruin(`type`: ruin, x: Double, y: Double): js.Array[Ruin] = js.native
   @JSName("lookForAt")
-  def lookForAt_source(`type`: source, target: RoomPosition): js.Array[Source] = js.native
+  def lookForAt_source(`type`: source, target: HasRoomPosition): js.Array[Source] = js.native
   @JSName("lookForAt")
-  def lookForAt_source(`type`: source, target: _HasRoomPosition): js.Array[Source] = js.native
+  def lookForAt_source(`type`: source, target: RoomPosition): js.Array[Source] = js.native
   @JSName("lookForAt")
   def lookForAt_source(`type`: source, x: Double, y: Double): js.Array[Source] = js.native
   @JSName("lookForAt")
-  def lookForAt_structure(`type`: structure, target: RoomPosition): js.Array[Structure[StructureConstant]] = js.native
+  def lookForAt_structure(`type`: structure, target: HasRoomPosition): js.Array[Structure[StructureConstant]] = js.native
   @JSName("lookForAt")
-  def lookForAt_structure(`type`: structure, target: _HasRoomPosition): js.Array[Structure[StructureConstant]] = js.native
+  def lookForAt_structure(`type`: structure, target: RoomPosition): js.Array[Structure[StructureConstant]] = js.native
   @JSName("lookForAt")
   def lookForAt_structure(`type`: structure, x: Double, y: Double): js.Array[Structure[StructureConstant]] = js.native
   @JSName("lookForAt")
-  def lookForAt_terrain(`type`: terrain, target: RoomPosition): js.Array[Terrain] = js.native
+  def lookForAt_terrain(`type`: terrain, target: HasRoomPosition): js.Array[Terrain] = js.native
   @JSName("lookForAt")
-  def lookForAt_terrain(`type`: terrain, target: _HasRoomPosition): js.Array[Terrain] = js.native
+  def lookForAt_terrain(`type`: terrain, target: RoomPosition): js.Array[Terrain] = js.native
   @JSName("lookForAt")
   def lookForAt_terrain(`type`: terrain, x: Double, y: Double): js.Array[Terrain] = js.native
   @JSName("lookForAt")
-  def lookForAt_tombstone(`type`: tombstone, target: RoomPosition): js.Array[Tombstone] = js.native
+  def lookForAt_tombstone(`type`: tombstone, target: HasRoomPosition): js.Array[Tombstone] = js.native
   @JSName("lookForAt")
-  def lookForAt_tombstone(`type`: tombstone, target: _HasRoomPosition): js.Array[Tombstone] = js.native
+  def lookForAt_tombstone(`type`: tombstone, target: RoomPosition): js.Array[Tombstone] = js.native
   @JSName("lookForAt")
   def lookForAt_tombstone(`type`: tombstone, x: Double, y: Double): js.Array[Tombstone] = js.native
 }

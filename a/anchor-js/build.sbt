@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "anchor-js"
-version := "4.2-dt-20200115Z-8d00fa"
+version := "4.2-dt-20200115Z-a339b7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

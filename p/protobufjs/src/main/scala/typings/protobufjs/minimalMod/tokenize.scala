@@ -1,6 +1,6 @@
 package typings.protobufjs.minimalMod
 
-import typings.protobufjs.protobufjsMod.ITokenizerHandle
+import typings.protobufjs.mod.ITokenizerHandle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

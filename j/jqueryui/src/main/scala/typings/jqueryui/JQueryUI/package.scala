@@ -5,20 +5,66 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object JQueryUI {
-  import typings.jquery.JQueryEventObject
-
-  type AccordionEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ AccordionUIParams, Unit]
-  type AutocompleteEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams, Unit]
-  type DialogEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ DialogUIParams, Unit]
-  type DraggableEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams, Unit]
-  type DroppableEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam, Unit]
-  type MenuEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ MenuUIParams, Unit]
-  type ProgressbarEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams, Unit]
-  type ResizableEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ ResizableUIParams, Unit]
-  type SelectMenuEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams, Unit]
-  type SliderEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ SliderUIParams, Unit]
-  type SortableEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ SortableUIParams, Unit]
-  type SpinnerEvent[T] = js.Function2[/* event */ JQueryEventObject, /* ui */ T, Unit]
-  type TabsEvent[UI] = js.Function2[/* event */ JQueryEventObject, /* ui */ UI, Unit]
-  type TooltipEvent = js.Function2[/* event */ JQueryEventObject, /* ui */ TooltipUIParams, Unit]
+  type AccordionEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.AccordionUIParams, 
+    scala.Unit
+  ]
+  type AutocompleteEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.AutocompleteUIParams, 
+    scala.Unit
+  ]
+  type DialogEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.DialogUIParams, 
+    scala.Unit
+  ]
+  type DraggableEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.DraggableEventUIParams, 
+    scala.Unit
+  ]
+  type DroppableEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.DroppableEventUIParam, 
+    scala.Unit
+  ]
+  type MenuEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.MenuUIParams, 
+    scala.Unit
+  ]
+  type ProgressbarEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.ProgressbarUIParams, 
+    scala.Unit
+  ]
+  type ResizableEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.ResizableUIParams, 
+    scala.Unit
+  ]
+  type SelectMenuEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.SelectMenuUIParams, 
+    scala.Unit
+  ]
+  type SliderEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.SliderUIParams, 
+    scala.Unit
+  ]
+  type SortableEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.SortableUIParams, 
+    scala.Unit
+  ]
+  type SpinnerEvent[T] = js.Function2[/* event */ typings.jquery.JQueryEventObject, /* ui */ T, scala.Unit]
+  type TabsEvent[UI] = js.Function2[/* event */ typings.jquery.JQueryEventObject, /* ui */ UI, scala.Unit]
+  type TooltipEvent = js.Function2[
+    /* event */ typings.jquery.JQueryEventObject, 
+    /* ui */ typings.jqueryui.JQueryUI.TooltipUIParams, 
+    scala.Unit
+  ]
 }

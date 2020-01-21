@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_Firstindices
+import typings.vexflow.AnonFirstindices
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.TabSlide")
 @js.native
 class TabSlide protected () extends TabTie {
-  def this(notes: Anon_Firstindices) = this()
-  def this(notes: Anon_Firstindices, direction: Double) = this()
+  def this(notes: AnonFirstindices) = this()
+  def this(notes: AnonFirstindices, direction: Double) = this()
 }
 
 /* static members */
@@ -18,7 +18,7 @@ class TabSlide protected () extends TabTie {
 object TabSlide extends js.Object {
   val SLIDE_DOWN: Double = js.native
   val SLIDE_UP: Double = js.native
-  def createSlideDown(notes: Anon_Firstindices): TabSlide = js.native
-  def createSlideUp(notes: Anon_Firstindices): TabSlide = js.native
+  def createSlideDown(notes: AnonFirstindices): TabSlide = js.native
+  def createSlideUp(notes: AnonFirstindices): TabSlide = js.native
 }
 

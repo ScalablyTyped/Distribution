@@ -1,8 +1,8 @@
 package typings.ol
 
+import typings.ol.olMod.Transform
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderEventTypeMod.EventType
-import typings.ol.transformMod.Transform
 import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object renderEventMod extends js.Object {
   @js.native
   trait RenderEvent
-    extends typings.ol.eventsEventMod.default {
+    extends typings.ol.eventMod.default {
     var context: CanvasRenderingContext2D = js.native
     var frameState: FrameState = js.native
     var inversePixelTransform: Transform = js.native

@@ -11,7 +11,7 @@ import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
-import typings.node.urlMod.URL
+import typings.node.urlMod.URL_
 import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -32,7 +32,7 @@ object SecureClientSessionOptions {
     checkServerIdentity: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error] = null,
     ciphers: String = null,
     clientCertEngine: String = null,
-    createConnection: (/* authority */ URL, /* option */ SessionOptions) => Duplex = null,
+    createConnection: (/* authority */ URL_, /* option */ SessionOptions) => Duplex = null,
     crl: String | Buffer | (js.Array[String | Buffer]) = null,
     dhparam: String | Buffer = null,
     ecdhCurve: String = null,

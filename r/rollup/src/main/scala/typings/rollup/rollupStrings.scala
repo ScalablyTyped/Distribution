@@ -1,11 +1,26 @@
 package typings.rollup
 
-import typings.rollup.rollupMod.ModuleFormat
+import typings.rollup.mod.ModuleFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object rollupStrings {
+  @js.native
+  sealed trait BUNDLE_END extends js.Object
+  
+  @js.native
+  sealed trait BUNDLE_START extends js.Object
+  
+  @js.native
+  sealed trait END extends js.Object
+  
+  @js.native
+  sealed trait ERROR extends js.Object
+  
+  @js.native
+  sealed trait START extends js.Object
+  
   @js.native
   sealed trait _empty extends js.Object
   
@@ -66,6 +81,16 @@ object rollupStrings {
   @js.native
   sealed trait umd extends ModuleFormat
   
+  @scala.inline
+  def BUNDLE_END: BUNDLE_END = "BUNDLE_END".asInstanceOf[BUNDLE_END]
+  @scala.inline
+  def BUNDLE_START: BUNDLE_START = "BUNDLE_START".asInstanceOf[BUNDLE_START]
+  @scala.inline
+  def END: END = "END".asInstanceOf[END]
+  @scala.inline
+  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  @scala.inline
+  def START: START = "START".asInstanceOf[START]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline

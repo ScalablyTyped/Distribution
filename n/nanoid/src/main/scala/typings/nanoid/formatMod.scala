@@ -4,9 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("nanoid/format", JSImport.Namespace)
+@JSImport("nanoid/async/format", JSImport.Namespace)
 @js.native
 object formatMod extends js.Object {
-  def apply(random: js.Function1[/* bytes */ Double, js.Array[Double]], alphabet: String, size: Double): String = js.native
+  def apply(
+    random: js.Function1[/* bytes */ Double, js.Promise[js.Array[Double]]],
+    alphabet: String,
+    size: Double
+  ): js.Promise[String] = js.native
 }
 

@@ -1,6 +1,6 @@
 package typings.arangodb.ArangoDB
 
-import typings.arangodb.Anon_AllowUserKeys
+import typings.arangodb.AnonAllowUserKeys
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ trait CreateCollectionOptions extends js.Object {
   var isSystem: js.UndefOr[Boolean] = js.undefined
   var isVolatile: js.UndefOr[Boolean] = js.undefined
   var journalSize: js.UndefOr[Double] = js.undefined
-  var keyOptions: js.UndefOr[Anon_AllowUserKeys] = js.undefined
+  var keyOptions: js.UndefOr[AnonAllowUserKeys] = js.undefined
   var numberOfShards: js.UndefOr[Double] = js.undefined
   var replicationFactor: js.UndefOr[Double] = js.undefined
   var shardKeys: js.UndefOr[js.Array[String]] = js.undefined
@@ -22,7 +22,7 @@ object CreateCollectionOptions {
     isSystem: js.UndefOr[Boolean] = js.undefined,
     isVolatile: js.UndefOr[Boolean] = js.undefined,
     journalSize: Int | Double = null,
-    keyOptions: Anon_AllowUserKeys = null,
+    keyOptions: AnonAllowUserKeys = null,
     numberOfShards: Int | Double = null,
     replicationFactor: Int | Double = null,
     shardKeys: js.Array[String] = null,

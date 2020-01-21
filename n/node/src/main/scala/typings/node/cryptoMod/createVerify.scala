@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto", "createVerify")
 @js.native
 object createVerify extends js.Object {
-  def apply(algorithm: String): Verify = js.native
-  def apply(algorithm: String, options: WritableOptions): Verify = js.native
+  def apply(algorithm: String): Verify_ = js.native
+  def apply(algorithm: String, options: WritableOptions): Verify_ = js.native
 }
 

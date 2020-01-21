@@ -1,6 +1,6 @@
 package typings.snabbdom.hooksMod
 
-import typings.snabbdom.vnodeMod.VNode
+import typings.snabbdom.vnodeMod.VNode_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,16 +21,16 @@ trait Hooks extends js.Object {
 object Hooks {
   @scala.inline
   def apply(
-    create: (/* emptyVNode */ VNode, /* vNode */ VNode) => js.Any = null,
-    destroy: /* vNode */ VNode => js.Any = null,
-    init: /* vNode */ VNode => js.Any = null,
-    insert: /* vNode */ VNode => js.Any = null,
+    create: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => js.Any = null,
+    destroy: /* vNode */ VNode_ => js.Any = null,
+    init: /* vNode */ VNode_ => js.Any = null,
+    insert: /* vNode */ VNode_ => js.Any = null,
     post: () => js.Any = null,
-    postpatch: (/* oldVNode */ VNode, /* vNode */ VNode) => js.Any = null,
+    postpatch: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any = null,
     pre: () => js.Any = null,
-    prepatch: (/* oldVNode */ VNode, /* vNode */ VNode) => js.Any = null,
-    remove: (/* vNode */ VNode, /* removeCallback */ js.Function0[Unit]) => js.Any = null,
-    update: (/* oldVNode */ VNode, /* vNode */ VNode) => js.Any = null
+    prepatch: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any = null,
+    remove: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => js.Any = null,
+    update: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any = null
   ): Hooks = {
     val __obj = js.Dynamic.literal()
     if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))

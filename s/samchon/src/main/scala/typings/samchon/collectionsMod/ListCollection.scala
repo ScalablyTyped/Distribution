@@ -1,7 +1,7 @@
 package typings.samchon.collectionsMod
 
 import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.tstlMod.base.Container
+import typings.tstl.mod.base.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,39 +9,34 @@ import scala.scalajs.js.annotation._
 @JSImport("samchon/collections", "ListCollection")
 @js.native
 class ListCollection[T] ()
-  extends typings.ecol.libLinearListCollectionMod.ListCollection[T]
+  extends typings.ecol.listCollectionMod.ListCollection[T]
 
 @JSImport("samchon/collections", "ListCollection")
 @js.native
 object ListCollection extends js.Object {
   /**
-    * Iterator of the List.
+    * Iterator of {@link List}
     *
-    * @author Jeongho Nam <http://samchon.org>
+    * @author Jeongho Nam - https://github.com/samchon
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListIterator<T, List<T>, Iterator<T>, ReverseIterator<T>, T> * / any */ @js.native
-  /**
-    * @hidden
-    */
+  @js.native
   class Iterator[T] protected ()
-    extends typings.ecol.ecolMod.ListCollection.Iterator[T]
+    extends typings.ecol.mod.ListCollection.Iterator[T]
   
   /**
-    * Reverse iterator of the List.
+    * Reverse iterator of {@link List}
     *
-    * @author Jeongho Nam <http://samchon.org>
+    * @author Jeongho Nam - https://github.com/samchon
     */
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReverseIteratorBase<T, List<T>, Iterator<T>, ReverseIterator<T>, T> * / any */ @js.native
+  @js.native
   class ReverseIterator[T] ()
-    extends typings.ecol.libLinearListCollectionMod.ListCollection.ReverseIterator[T]
+    extends typings.ecol.listCollectionMod.ListCollection.ReverseIterator[T]
   
   val Event: Instantiable3[
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
-    typings.ecol.libBasicCollectionEventMod.CollectionEvent[
+    typings.ecol.collectionEventMod.CollectionEvent[
       js.Object, 
       Container[
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 

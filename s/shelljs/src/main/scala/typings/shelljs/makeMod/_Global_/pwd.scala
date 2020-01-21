@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pwd")
 @js.native
 object pwd
-  extends TopLevel[js.Function0[typings.shelljs.shelljsMod.ShellString]]
+  extends TopLevel[js.Function0[typings.shelljs.mod.ShellString]]
 

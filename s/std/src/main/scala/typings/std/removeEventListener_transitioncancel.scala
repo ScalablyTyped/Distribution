@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 object removeEventListener_transitioncancel extends js.Object {
   def apply(
     `type`: transitioncancel,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ TransitionEvent, _]
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ TransitionEvent, _]
   ): Unit = js.native
   def apply(
     `type`: transitioncancel,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ TransitionEvent, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ TransitionEvent, _],
     options: scala.Boolean
   ): Unit = js.native
   def apply(
     `type`: transitioncancel,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ TransitionEvent, _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ TransitionEvent, _],
     options: EventListenerOptions
   ): Unit = js.native
 }

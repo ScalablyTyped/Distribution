@@ -16,16 +16,16 @@ object iterate extends js.Object {
     * @param seed initial value provided to the handler, and first f invocation. May be a promise.
     */
   def apply[U](
-    f: js.Function1[/* seed */ U, U | Promise[U]],
+    f: js.Function1[/* seed */ U, U | Promise_[U]],
     predicate: js.Function1[/* value */ U, Boolean],
-    handler: js.Function1[/* value */ U, Promise[_] | Unit],
+    handler: js.Function1[/* value */ U, Promise_[_] | Unit],
     seed: U
-  ): Promise[U] = js.native
+  ): Promise_[U] = js.native
   def apply[U](
-    f: js.Function1[/* seed */ U, U | Promise[U]],
+    f: js.Function1[/* seed */ U, U | Promise_[U]],
     predicate: js.Function1[/* value */ U, Boolean],
-    handler: js.Function1[/* value */ U, Promise[_] | Unit],
-    seed: Promise[U]
-  ): Promise[U] = js.native
+    handler: js.Function1[/* value */ U, Promise_[_] | Unit],
+    seed: Promise_[U]
+  ): Promise_[U] = js.native
 }
 

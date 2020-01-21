@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object scroller {
-  type Scroller = Scroller_
+  type Scroller = typings.scroller.Scroller_
 }

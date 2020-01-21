@@ -1,6 +1,6 @@
 package typings.jsoneditor
 
-import typings.jsoneditor.jsoneditorMod.JSONEditorMode
+import typings.jsoneditor.mod.JSONEditorMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

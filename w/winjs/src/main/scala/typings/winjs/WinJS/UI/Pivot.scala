@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.UI
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.winjs.WinJS.Binding.List
 import scala.scalajs.js
@@ -88,17 +88,17 @@ class Pivot () extends js.Object {
     * Raised when a PivotItem control's animation ends.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onitemanimationend(eventInfo: Event): Unit = js.native
+  def onitemanimationend(eventInfo: Event_): Unit = js.native
   /**
     * Raised when a PivotItem control's animation starts.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onitemanimationstart(eventInfo: Event): Unit = js.native
+  def onitemanimationstart(eventInfo: Event_): Unit = js.native
   /**
     * Raised when the user navigates to a different PivotItem.
     * @param eventInfo An object that contains information about the event.
     **/
-  def onselectionchanged(eventInfo: Event): Unit = js.native
+  def onselectionchanged(eventInfo: Event_): Unit = js.native
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for.

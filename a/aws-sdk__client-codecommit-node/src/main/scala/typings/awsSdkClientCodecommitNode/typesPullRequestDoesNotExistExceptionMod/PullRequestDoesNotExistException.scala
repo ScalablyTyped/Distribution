@@ -1,0 +1,30 @@
+package typings.awsSdkClientCodecommitNode.typesPullRequestDoesNotExistExceptionMod
+
+import typings.awsSdkClientCodecommitNode.describePullRequestEventsExceptionsUnionMod.DescribePullRequestEventsExceptionsUnion
+import typings.awsSdkClientCodecommitNode.getCommentsForPullRequestExceptionsUnionMod.GetCommentsForPullRequestExceptionsUnion
+import typings.awsSdkClientCodecommitNode.getPullRequestExceptionsUnionMod.GetPullRequestExceptionsUnion
+import typings.awsSdkClientCodecommitNode.mergePullRequestByFastForwardExceptionsUnionMod.MergePullRequestByFastForwardExceptionsUnion
+import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
+import typings.awsSdkClientCodecommitNode.updatePullRequestDescriptionExceptionsUnionMod.UpdatePullRequestDescriptionExceptionsUnion
+import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnionMod.UpdatePullRequestStatusExceptionsUnion
+import typings.awsSdkClientCodecommitNode.updatePullRequestTitleExceptionsUnionMod.UpdatePullRequestTitleExceptionsUnion
+import typings.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait PullRequestDoesNotExistException
+  extends ServiceException[PullRequestDoesNotExistExceptionDetails]
+     with DescribePullRequestEventsExceptionsUnion
+     with GetCommentsForPullRequestExceptionsUnion
+     with GetPullRequestExceptionsUnion
+     with MergePullRequestByFastForwardExceptionsUnion
+     with PostCommentForPullRequestExceptionsUnion
+     with UpdatePullRequestDescriptionExceptionsUnion
+     with UpdatePullRequestStatusExceptionsUnion
+     with UpdatePullRequestTitleExceptionsUnion {
+  @JSName("name")
+  var name_PullRequestDoesNotExistException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestDoesNotExistException = js.native
+}
+

@@ -4,7 +4,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("DialogInterface")
 trait DialogInterface_ extends js.Object {
   def cancel(): Unit
   def dismiss(): Unit

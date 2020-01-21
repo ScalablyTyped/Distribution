@@ -1,6 +1,6 @@
 package typings.ol.tilegridMod
 
-import typings.ol.projProjectionMod.default
+import typings.ol.projectionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("xquery")
 trait xquery_ extends js.Object {
   /**
     *

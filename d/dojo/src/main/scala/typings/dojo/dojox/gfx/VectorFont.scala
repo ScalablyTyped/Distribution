@@ -1,6 +1,6 @@
 package typings.dojo.dojox.gfx
 
-import typings.dojo.dojo._base.url
+import typings.dojo.dojo.base.url
 import typings.dojo.dojox.gfx.shape.Container
 import scala.scalajs.js
 import scala.scalajs.js.`|`

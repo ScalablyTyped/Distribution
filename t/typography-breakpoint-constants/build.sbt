@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typography-breakpoint-constants"
-version := "0.16-dt-20190927Z-9e9853"
+version := "0.16-dt-20190927Z-bbee03"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

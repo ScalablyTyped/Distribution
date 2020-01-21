@@ -1,6 +1,6 @@
 package typings.protobufjs.minimalMod
 
-import typings.protobufjs.protobufjsMod.RPCImpl
+import typings.protobufjs.mod.RPCImpl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ object rpc extends js.Object {
   /** An RPC service as returned by {@link Service#create}. */
   @js.native
   class Service protected ()
-    extends typings.protobufjs.protobufjsMod.rpc.Service {
+    extends typings.protobufjs.mod.rpc.Service {
     /**
       * Constructs a new RPC service instance.
       * @param rpcImpl RPC implementation

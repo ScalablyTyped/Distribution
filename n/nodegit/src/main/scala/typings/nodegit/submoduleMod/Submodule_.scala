@@ -2,7 +2,7 @@ package typings.nodegit.submoduleMod
 
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
-import typings.nodegit.submoduleDashUpdateDashOptionsMod.SubmoduleUpdateOptions
+import typings.nodegit.submoduleUpdateOptionsMod.SubmoduleUpdateOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

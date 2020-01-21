@@ -1,0 +1,11 @@
+package typings.angularCompiler.publicApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/public_api", "Serializer")
+@js.native
+abstract class Serializer ()
+  extends typings.angularCompiler.serializerMod.Serializer
+

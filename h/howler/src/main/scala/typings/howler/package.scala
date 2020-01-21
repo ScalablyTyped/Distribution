@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object howler {
-  import org.scalablytyped.runtime.StringDictionary
-
-  type IHowlSoundSpriteDefinition = StringDictionary[(js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Boolean])]
+  type IHowlSoundSpriteDefinition = org.scalablytyped.runtime.StringDictionary[
+    (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Boolean])
+  ]
 }

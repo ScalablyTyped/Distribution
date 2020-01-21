@@ -1,6 +1,6 @@
 package typings.dojo.dojox.calendar
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.headerPadding
 import typings.dojo.dojoStrings.secondarySheetProps
 import scala.scalajs.js
@@ -77,7 +77,7 @@ class ColumnView () extends SimpleColumnView {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_secondarySheetProps(
     property: secondarySheetProps,
@@ -87,6 +87,6 @@ class ColumnView () extends SimpleColumnView {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -1,9 +1,9 @@
 package typings.history
 
-import typings.history.historyMod.Action
-import typings.history.historyMod.Location
-import typings.history.historyMod.LocationListener
-import typings.history.historyMod.UnregisterCallback
+import typings.history.mod.Action
+import typings.history.mod.Location
+import typings.history.mod.LocationListener
+import typings.history.mod.UnregisterCallback
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

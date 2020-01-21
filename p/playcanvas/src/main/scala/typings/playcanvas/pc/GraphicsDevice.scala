@@ -1,7 +1,7 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_Base
-import typings.playcanvas.Anon_Color
+import typings.playcanvas.AnonBase
+import typings.playcanvas.AnonColor
 import typings.std.HTMLCanvasElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -143,7 +143,7 @@ class GraphicsDevice protected () extends EventHandler {
     *     flags: pc.CLEARFLAG_COLOR | pc.CLEARFLAG_DEPTH
     * });
     */
-  def clear(options: Anon_Color): Unit = js.native
+  def clear(options: AnonColor): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#clearShaderCache
@@ -178,8 +178,8 @@ class GraphicsDevice protected () extends EventHandler {
     *     indexed: false
     * )};
     */
-  def draw(primitive: Anon_Base): Unit = js.native
-  def draw(primitive: Anon_Base, numInstances: Double): Unit = js.native
+  def draw(primitive: AnonBase): Unit = js.native
+  def draw(primitive: AnonBase, numInstances: Double): Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#getBlending

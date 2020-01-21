@@ -15,8 +15,8 @@ trait RevealStatic extends js.Object {
   def down(): Unit = js.native
   def getConfig(): RevealOptions = js.native
   def getCurrentSlide(): Element = js.native
-  def getIndices(): Anon_H = js.native
-  def getIndices(slide: Element): Anon_H = js.native
+  def getIndices(): AnonH = js.native
+  def getIndices(slide: Element): AnonH = js.native
   // Retrieves the previous and current slide elements
   def getPreviousSlide(): Element = js.native
   def getProgress(): Double = js.native

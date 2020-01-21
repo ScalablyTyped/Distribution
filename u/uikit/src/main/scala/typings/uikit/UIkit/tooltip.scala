@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("UIkit.tooltip")
 @js.native
-object tooltip extends TopLevel[Tooltip]
+object tooltip extends TopLevel[Tooltip_]
 

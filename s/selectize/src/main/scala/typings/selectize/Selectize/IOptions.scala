@@ -1,7 +1,7 @@
 package typings.selectize.Selectize
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.selectize.Anon_Asc
+import typings.selectize.AnonAsc
 import typings.selectize.JQuery
 import typings.selectize.selectizeStrings.focus
 import scala.scalajs.js
@@ -323,7 +323,7 @@ trait IOptions[T, U] extends js.Object {
     *
     * Default: "$order"
     */
-  var sortField: js.UndefOr[String | js.Array[Anon_Asc]] = js.undefined
+  var sortField: js.UndefOr[String | js.Array[AnonAsc]] = js.undefined
   /**
     * The name of the property to use as the "value" when an item is selected.
     *
@@ -387,7 +387,7 @@ object IOptions {
     searchConjunction: String = null,
     searchField: String | js.Array[String] = null,
     selectOnTab: js.UndefOr[Boolean] = js.undefined,
-    sortField: String | js.Array[Anon_Asc] = null,
+    sortField: String | js.Array[AnonAsc] = null,
     valueField: String = null
   ): IOptions[T, U] = {
     val __obj = js.Dynamic.literal()

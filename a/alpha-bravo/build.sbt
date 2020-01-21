@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "alpha-bravo"
-version := "2.0-dt-20191223Z-00c059"
+version := "2.0-dt-20191223Z-46bba6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

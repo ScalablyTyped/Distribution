@@ -1,6 +1,6 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typings.jsrsasign.Anon_ArrayHexParam
+import typings.jsrsasign.AnonArrayHexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.NameParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ObjectIdentifierParam
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.x509.ExtKeyUsage")
 @js.native
 class ExtKeyUsage () extends Extension {
-  def this(params: Anon_ArrayHexParam) = this()
+  def this(params: AnonArrayHexParam) = this()
   def getExtnValueHex(): String = js.native
   def setPurposeArray(purposeArray: js.Array[ObjectIdentifierParam | HexParam | NameParam]): Unit = js.native
 }

@@ -1,14 +1,14 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.List
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.List
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashFindLastFrom2x1[T] extends js.Object {
-  def apply(fromIndex: Double): js.UndefOr[T] = js.native
+  def apply(fromIndex: Double): LodashFindLastFrom2x3[T] = js.native
   def apply(fromIndex: Double, collection: js.Object): js.UndefOr[T] = js.native
   def apply(fromIndex: Double, collection: List[T]): js.UndefOr[T] = js.native
   def apply(fromIndex: __): LodashFindLastFrom2x5[T] = js.native

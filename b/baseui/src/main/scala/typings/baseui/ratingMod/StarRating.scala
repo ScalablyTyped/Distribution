@@ -1,7 +1,7 @@
 package typings.baseui.ratingMod
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.ReactNode
+import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

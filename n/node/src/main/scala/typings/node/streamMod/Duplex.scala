@@ -1,6 +1,6 @@
 package typings.node.streamMod
 
-import typings.node.Anon_Chunk
+import typings.node.AnonChunk
 import typings.node.nodeStrings.drain
 import typings.node.nodeStrings.finish
 import typings.node.nodeStrings.pipe
@@ -22,7 +22,7 @@ class Duplex () extends Readable {
   def this(opts: DuplexOptions) = this()
   var _writev: js.UndefOr[
     js.Function2[
-      /* chunks */ js.Array[Anon_Chunk], 
+      /* chunks */ js.Array[AnonChunk], 
       /* callback */ js.Function1[js.UndefOr[Error | Null], Unit], 
       Unit
     ]

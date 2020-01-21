@@ -1,6 +1,6 @@
 package typings.adhan
 
-import typings.adhan.adhanMod.TimeMode
+import typings.adhan.mod.TimeMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

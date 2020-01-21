@@ -8,14 +8,14 @@ trait EpicEditorOptions extends js.Object {
   var basePath: js.UndefOr[String] = js.undefined
   var clientSideStorage: js.UndefOr[Boolean] = js.undefined
   var container: js.UndefOr[js.Any] = js.undefined
-  var file: js.UndefOr[Anon_AutoSave] = js.undefined
+  var file: js.UndefOr[AnonAutoSave] = js.undefined
   var focusOnLoad: js.UndefOr[Boolean] = js.undefined
   var localStorageName: js.UndefOr[String] = js.undefined
   var parser: js.UndefOr[js.Any] = js.undefined
-  var shortcut: js.UndefOr[Anon_Fullscreen] = js.undefined
-  var string: js.UndefOr[Anon_ToggleEdit] = js.undefined
+  var shortcut: js.UndefOr[AnonFullscreen] = js.undefined
+  var string: js.UndefOr[AnonToggleEdit] = js.undefined
   var textarea: js.UndefOr[js.Any] = js.undefined
-  var theme: js.UndefOr[Anon_Base] = js.undefined
+  var theme: js.UndefOr[AnonBase] = js.undefined
   var useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -25,14 +25,14 @@ object EpicEditorOptions {
     basePath: String = null,
     clientSideStorage: js.UndefOr[Boolean] = js.undefined,
     container: js.Any = null,
-    file: Anon_AutoSave = null,
+    file: AnonAutoSave = null,
     focusOnLoad: js.UndefOr[Boolean] = js.undefined,
     localStorageName: String = null,
     parser: js.Any = null,
-    shortcut: Anon_Fullscreen = null,
-    string: Anon_ToggleEdit = null,
+    shortcut: AnonFullscreen = null,
+    string: AnonToggleEdit = null,
     textarea: js.Any = null,
-    theme: Anon_Base = null,
+    theme: AnonBase = null,
     useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
   ): EpicEditorOptions = {
     val __obj = js.Dynamic.literal()

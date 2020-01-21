@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "app-root-path"
-version := "1.2.1-dt-20190322Z-43ba60"
+version := "1.2.1-dt-20190322Z-947745"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("yadda/lib", "Platform")
 @js.native
 class Platform ()
-  extends typings.yadda.libPlatformMod.Platform {
+  extends typings.yadda.platformMod.Platform {
   /* CompleteClass */
   override def get_container(): js.Any = js.native
   /* CompleteClass */

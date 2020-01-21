@@ -1,6 +1,6 @@
 package typings.playcanvas.pc
 
-import typings.playcanvas.Anon_RingRadius
+import typings.playcanvas.AnonRingRadius
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,6 +26,6 @@ object createTorus extends js.Object {
     * @returns {pc.Mesh} A new torus-shaped mesh.
     */
   def apply(device: GraphicsDevice): Mesh = js.native
-  def apply(device: GraphicsDevice, opts: Anon_RingRadius): Mesh = js.native
+  def apply(device: GraphicsDevice, opts: AnonRingRadius): Mesh = js.native
 }
 

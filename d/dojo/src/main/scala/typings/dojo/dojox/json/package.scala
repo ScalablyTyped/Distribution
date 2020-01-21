@@ -75,5 +75,5 @@ package object json {
     * @param query Query string
     * @param obj       OptionalTarget of the JSONQuery
     */
-  type query = js.Function2[/* query */ String, /* obj */ js.UndefOr[js.Object], Unit]
+  type query = js.Function2[/* query */ java.lang.String, /* obj */ js.UndefOr[js.Object], scala.Unit]
 }

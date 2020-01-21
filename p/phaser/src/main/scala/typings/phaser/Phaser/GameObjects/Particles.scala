@@ -810,6 +810,10 @@ object Particles extends js.Object {
       */
     def preUpdate(time: integer, delta: Double): Unit = js.native
     /**
+      * Removes the emitter from its manager and the scene.
+      */
+    def remove(): ParticleEmitter = js.native
+    /**
       * Creates inactive particles and adds them to this emitter's pool.
       * @param particleCount The number of particles to create.
       */
@@ -960,6 +964,11 @@ object Particles extends js.Object {
       * @param value The speed, in pixels per second.
       */
     def setSpeedY(value: EmitterOpOnEmitType): ParticleEmitter = js.native
+    /**
+      * Sets the color tint of emitted particles.
+      * @param value A value between 0 and 0xffffff.
+      */
+    def setTint(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): ParticleEmitter = js.native
     /**
       * Sets the visibility of this Game Object.
       * 
@@ -1133,6 +1142,10 @@ object Particles extends js.Object {
       * @param delta The delta time, in ms, elapsed since the last frame.
       */
     def preUpdate(time: integer, delta: Double): Unit = js.native
+    /**
+      * Removes a Particle Emitter from this Emitter Manager, if the Emitter belongs to this Manager.
+      */
+    def removeEmitter(emitter: ParticleEmitter): ParticleEmitter = js.native
     /**
       * Resumes this Emitter Manager, should it have been previously paused.
       */

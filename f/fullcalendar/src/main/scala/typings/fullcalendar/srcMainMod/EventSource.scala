@@ -1,6 +1,6 @@
 package typings.fullcalendar.srcMainMod
 
-import typings.fullcalendar.eventSourceMod.Default
+import typings.fullcalendar.eventSourceMod.Default_
 import typings.fullcalendar.fullcalendarBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "EventSource")
 @js.native
 class EventSource protected ()
-  extends typings.fullcalendar.srcExportsMod.EventSource {
+  extends typings.fullcalendar.exportsMod.EventSource {
   def this(calendar: js.Any) = this()
 }
 
@@ -21,6 +21,6 @@ object EventSource extends js.Object {
   var defineStandardProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParsableModelMixin.defineStandardProps */ js.Any = js.native
   var uuid: Double = js.native
   def normalizeId(id: js.Any): String = js.native
-  def parse(rawInput: js.Any, calendar: js.Any): `false` | Default = js.native
+  def parse(rawInput: js.Any, calendar: js.Any): `false` | Default_ = js.native
 }
 

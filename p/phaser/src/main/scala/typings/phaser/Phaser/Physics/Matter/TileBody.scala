@@ -1,6 +1,6 @@
 package typings.phaser.Phaser.Physics.Matter
 
-import typings.phaser.MatterJS.Body
+import typings.phaser.MatterJS.BodyType
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Physics.Matter.Components.Bounce
@@ -12,6 +12,7 @@ import typings.phaser.Phaser.Physics.Matter.Components.Sensor
 import typings.phaser.Phaser.Physics.Matter.Components.Sleep
 import typings.phaser.Phaser.Physics.Matter.Components.Static
 import typings.phaser.Phaser.Tilemaps.Tile
+import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyTileOptions
 import typings.phaser.Phaser.Types.Physics.Matter.MatterTileOptions
 import scala.scalajs.js
@@ -40,10 +41,11 @@ class TileBody protected ()
      with Mass
      with Sensor
      with Sleep
-     with Static {
+     with Static
+     with MatterBody {
   /**
     * 
-    * @param world [description]
+    * @param world The Matter world instance this body belongs to.
     * @param tile The target tile that should have a Matter body.
     * @param options Options to be used when creating the Matter body.
     */
@@ -51,6 +53,10 @@ class TileBody protected ()
   def this(world: World, tile: Tile, options: MatterTileOptions) = this()
   /**
     * The body's center of mass.
+    * 
+    * Calling this creates a new `Vector2 each time to avoid mutation.
+    * 
+    * If you only need to read the value and won't change it, you can get it from `GameObject.body.centerOfMass`.
     */
   /* CompleteClass */
   override val centerOfMass: Vector2 = js.native
@@ -67,12 +73,12 @@ class TileBody protected ()
     */
   def destroy(): TileBody = js.native
   /**
-    * [description]
+    * Is the body belonging to this Game Object a sensor or not?
     */
   /* CompleteClass */
   override def isSensor(): Boolean = js.native
   /**
-    * [description]
+    * Returns `true` if the body is static, otherwise `false` for a dynamic body.
     */
   /* CompleteClass */
   override def isStatic(): Boolean = js.native
@@ -86,8 +92,8 @@ class TileBody protected ()
     * @param body The new Matter body to use.
     * @param addToWorld Whether or not to add the body to the Matter world. Default true.
     */
-  def setBody(body: Body): TileBody = js.native
-  def setBody(body: Body, addToWorld: Boolean): TileBody = js.native
+  def setBody(body: BodyType): TileBody = js.native
+  def setBody(body: BodyType, addToWorld: Boolean): TileBody = js.native
   /**
     * Sets the restitution on the physics object.
     * @param value A Number that defines the restitution (elasticity) of the body. The value is always positive and is in the range (0, 1). A value of 0 means collisions may be perfectly inelastic and no bouncing may occur. A value of 0.8 means the body may bounce back with approximately 80% of its kinetic energy. Note that collision response is based on pairs of bodies, and that restitution values are combined with the following formula: `Math.max(bodyA.restitution, bodyB.restitution)`
@@ -133,14 +139,15 @@ class TileBody protected ()
   /* CompleteClass */
   override def setMass(value: Double): GameObject = js.native
   /**
-    * [description]
-    * @param value [description]
+    * Set the body belonging to this Game Object to be a sensor.
+    * Sensors trigger collision events, but don't react with colliding body physically.
+    * @param value `true` to set the body as a sensor, or `false` to disable it.
     */
   /* CompleteClass */
   override def setSensor(value: Boolean): GameObject = js.native
   /**
-    * [description]
-    * @param value [description]
+    * Changes the physics body to be either static `true` or dynamic `false`.
+    * @param value `true` to set the body as being static, or `false` to make it dynamic.
     */
   /* CompleteClass */
   override def setStatic(value: Boolean): GameObject = js.native

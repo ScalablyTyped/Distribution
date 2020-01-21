@@ -1,6 +1,6 @@
 package typings.jsonwebtoken
 
-import typings.jsonwebtoken.jsonwebtokenMod.Algorithm
+import typings.jsonwebtoken.mod.Algorithm
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

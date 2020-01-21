@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Electron.session")
 @js.native
-class sessionCls () extends Session
+class sessionCls () extends Session_
 

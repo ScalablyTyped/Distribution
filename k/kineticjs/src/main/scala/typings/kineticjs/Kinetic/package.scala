@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Kinetic {
-  type IGroup = IContainer
+  type IGroup = typings.kineticjs.Kinetic.IContainer
 }

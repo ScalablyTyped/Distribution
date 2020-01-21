@@ -5,16 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object downloads {
-  import typings.chrome.chrome.events.Event
-
-  type DownloadChangedEvent = Event[js.Function1[/* downloadDelta */ DownloadDelta, Unit]]
-  type DownloadCreatedEvent = Event[js.Function1[/* downloadItem */ DownloadItem, Unit]]
-  type DownloadDeterminingFilenameEvent = Event[
+  type DownloadChangedEvent = typings.chrome.chrome.events.Event[
+    js.Function1[/* downloadDelta */ typings.chrome.chrome.downloads.DownloadDelta, scala.Unit]
+  ]
+  type DownloadCreatedEvent = typings.chrome.chrome.events.Event[
+    js.Function1[/* downloadItem */ typings.chrome.chrome.downloads.DownloadItem, scala.Unit]
+  ]
+  type DownloadDeterminingFilenameEvent = typings.chrome.chrome.events.Event[
     js.Function2[
-      /* downloadItem */ DownloadItem, 
-      /* suggest */ js.Function1[/* suggestion */ js.UndefOr[DownloadFilenameSuggestion], Unit], 
-      Unit
+      /* downloadItem */ typings.chrome.chrome.downloads.DownloadItem, 
+      /* suggest */ js.Function1[
+        /* suggestion */ js.UndefOr[typings.chrome.chrome.downloads.DownloadFilenameSuggestion], 
+        scala.Unit
+      ], 
+      scala.Unit
     ]
   ]
-  type DownloadErasedEvent = Event[js.Function1[/* downloadId */ Double, Unit]]
+  type DownloadErasedEvent = typings.chrome.chrome.events.Event[js.Function1[/* downloadId */ scala.Double, scala.Unit]]
 }

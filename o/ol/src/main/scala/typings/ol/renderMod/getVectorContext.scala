@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ol/render", "getVectorContext")
 @js.native
 object getVectorContext extends js.Object {
-  def apply(event: default): typings.ol.renderCanvasImmediateMod.default = js.native
+  def apply(event: default): typings.ol.immediateMod.default = js.native
 }
 

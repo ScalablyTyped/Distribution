@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   * this module.
   *
   */
-@JSName("analytics")
 trait analytics_ extends js.Object
 

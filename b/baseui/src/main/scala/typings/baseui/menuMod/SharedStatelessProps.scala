@@ -1,7 +1,7 @@
 package typings.baseui.menuMod
 
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Ref
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
@@ -17,8 +17,8 @@ trait SharedStatelessProps extends js.Object {
   var highlightedIndex: js.UndefOr[Double] = js.undefined
   var items: ItemsT
   var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ typings.react.reactMod.FocusEvent[HTMLElement], _]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ typings.react.reactMod.FocusEvent[HTMLElement], _]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.undefined
   var rootRef: js.UndefOr[Ref[_]] = js.undefined
   var unfocusMenu: js.UndefOr[js.Function0[_]] = js.undefined
 }
@@ -32,8 +32,8 @@ object SharedStatelessProps {
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,
     highlightedIndex: Int | Double = null,
     noResultsMsg: ReactNode = null,
-    onBlur: /* event */ typings.react.reactMod.FocusEvent[HTMLElement] => _ = null,
-    onFocus: /* event */ typings.react.reactMod.FocusEvent[HTMLElement] => _ = null,
+    onBlur: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _ = null,
+    onFocus: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _ = null,
     rootRef: Ref[_] = null,
     unfocusMenu: () => _ = null
   ): SharedStatelessProps = {

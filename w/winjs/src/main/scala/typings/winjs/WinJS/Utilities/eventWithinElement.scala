@@ -1,6 +1,6 @@
 package typings.winjs.WinJS.Utilities
 
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +15,6 @@ object eventWithinElement extends js.Object {
     * @param event The event.
     * @returns true if the event occurred within the element; otherwise, false.
     **/
-  def apply(element: HTMLElement, event: Event): Boolean = js.native
+  def apply(element: HTMLElement, event: Event_): Boolean = js.native
 }
 

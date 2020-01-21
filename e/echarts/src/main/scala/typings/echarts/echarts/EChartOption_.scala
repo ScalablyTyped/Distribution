@@ -15,7 +15,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("EChartOption")
 trait EChartOption_[TSeries] extends js.Object {
   /**
     * The angle axis in Polar Coordinate.

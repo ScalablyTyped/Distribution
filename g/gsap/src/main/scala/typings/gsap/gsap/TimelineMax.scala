@@ -1,6 +1,6 @@
 package typings.gsap.gsap
 
-import typings.gsap.Anon_Name
+import typings.gsap.AnonName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ class TimelineMax () extends TimelineLite {
   def getActive(nested: Boolean, tweens: Boolean, timelines: Boolean): Tween | js.Array[Timeline] = js.native
   def getLabelAfter(time: Double): String = js.native
   def getLabelBefore(time: Double): String = js.native
-  def getLabelsArray(): js.Array[Anon_Name] = js.native
+  def getLabelsArray(): js.Array[AnonName] = js.native
   def removeCallback(callback: js.Function1[/* repeated */ js.Any, Unit]): TimelineMax = js.native
   def removeCallback(callback: js.Function1[/* repeated */ js.Any, Unit], timeOrLabel: js.Any): TimelineMax = js.native
   def removePause(position: js.Any): TimelineMax = js.native

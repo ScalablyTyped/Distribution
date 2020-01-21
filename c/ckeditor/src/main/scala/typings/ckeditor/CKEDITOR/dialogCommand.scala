@@ -1,6 +1,6 @@
 package typings.ckeditor.CKEDITOR
 
-import typings.ckeditor.Anon_TabId
+import typings.ckeditor.AnonTabId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class dialogCommand protected () extends js.Object {
   def this(dialogName: String) = this()
-  def this(dialogName: String, ext: Anon_TabId) = this()
+  def this(dialogName: String, ext: AnonTabId) = this()
   var value: js.Any = js.native
 }
 

@@ -1,26 +1,26 @@
 package typings.arangodb.ArangoDB
 
-import typings.arangodb.Anon_BytesRead
-import typings.arangodb.Anon_Count
-import typings.arangodb.Anon_CountDeletion
-import typings.arangodb.Anon_CountFileSize
+import typings.arangodb.AnonBytesRead
+import typings.arangodb.AnonCount
+import typings.arangodb.AnonCountDeletion
+import typings.arangodb.AnonCountFileSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CollectionFigures extends js.Object {
-  var alive: Anon_Count
-  var attributes: Anon_Count
-  var compactionStatus: Anon_BytesRead
-  var compactors: Anon_CountFileSize
-  var datafiles: Anon_CountFileSize
-  var dead: Anon_CountDeletion
+  var alive: AnonCount
+  var attributes: AnonCount
+  var compactionStatus: AnonBytesRead
+  var compactors: AnonCountFileSize
+  var datafiles: AnonCountFileSize
+  var dead: AnonCountDeletion
   var documentReferences: Double
-  var indexes: Anon_Count
-  var journals: Anon_CountFileSize
+  var indexes: AnonCount
+  var journals: AnonCountFileSize
   var lastTick: Double
-  var shapefiles: Anon_CountFileSize
-  var shapes: Anon_Count
+  var shapefiles: AnonCountFileSize
+  var shapes: AnonCount
   var uncollectedLogfileEntries: Double
   var waitingFor: String
 }
@@ -28,18 +28,18 @@ trait CollectionFigures extends js.Object {
 object CollectionFigures {
   @scala.inline
   def apply(
-    alive: Anon_Count,
-    attributes: Anon_Count,
-    compactionStatus: Anon_BytesRead,
-    compactors: Anon_CountFileSize,
-    datafiles: Anon_CountFileSize,
-    dead: Anon_CountDeletion,
+    alive: AnonCount,
+    attributes: AnonCount,
+    compactionStatus: AnonBytesRead,
+    compactors: AnonCountFileSize,
+    datafiles: AnonCountFileSize,
+    dead: AnonCountDeletion,
     documentReferences: Double,
-    indexes: Anon_Count,
-    journals: Anon_CountFileSize,
+    indexes: AnonCount,
+    journals: AnonCountFileSize,
     lastTick: Double,
-    shapefiles: Anon_CountFileSize,
-    shapes: Anon_Count,
+    shapefiles: AnonCountFileSize,
+    shapes: AnonCount,
     uncollectedLogfileEntries: Double,
     waitingFor: String
   ): CollectionFigures = {

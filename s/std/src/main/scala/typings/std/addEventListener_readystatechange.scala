@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 object addEventListener_readystatechange extends js.Object {
   def apply(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _]
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ ProgressEvent[Window_], _]
   ): Unit = js.native
   def apply(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ ProgressEvent[Window_], _],
     options: scala.Boolean
   ): Unit = js.native
   def apply(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent[Window], _],
+    listener: js.ThisFunction1[/* this */ Window_, /* ev */ ProgressEvent[Window_], _],
     options: AddEventListenerOptions
   ): Unit = js.native
 }

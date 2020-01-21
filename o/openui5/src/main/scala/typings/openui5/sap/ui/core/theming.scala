@@ -10,12 +10,6 @@ object theming extends js.Object {
   @js.native
   object Parameters extends js.Object {
     /**
-      * Returns the scopes from current theming parameters.
-      * @param bAvoidLoading Whether loading of parameters should be avoided
-      * @returns Scope names
-      */
-    def _getScopes(bAvoidLoading: Boolean): js.Array[_] = js.native
-    /**
       * Returns the current value for one or more theming parameters, depending on the given
       * arguments.<ul><li>If no parameter is given a key-value map containing all parameters is
       * returned</li><li>If a <code>string</code> is given as first parameter the value is returned as a
@@ -41,6 +35,13 @@ object theming extends js.Object {
       * @returns Two dimensional array with scopes in bottom up order
       */
     def getActiveScopesFor(oElement: js.Any): js.Array[js.Array[String]] = js.native
+    /**
+      * Returns the scopes from current theming parameters.
+      * @param bAvoidLoading Whether loading of parameters should be avoided
+      * @returns Scope names
+      */
+    @JSName("_getScopes")
+    def getScopes(bAvoidLoading: Boolean): js.Array[_] = js.native
     /**
       * Resets the CSS parameters which finally will reload the parametersthe next time they are queried via
       * the method <code>get</code>.

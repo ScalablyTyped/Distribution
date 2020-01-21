@@ -11,38 +11,38 @@ package object transition {
     * cleared.
     *
     */
-  type beforeClear = js.Function0[Unit]
+  type beforeClear = js.Function0[scala.Unit]
   /**
     * The callback which will be called right before the start
     * of the transition effect.
     *
     */
-  type beforeStart = js.Function0[Unit]
+  type beforeStart = js.Function0[scala.Unit]
   /**
     * The method which plays multiple transitions one by one.
     *
     * @param args The array of transition objects which will be played in a chain.
     */
-  type chainedPlay = js.Function1[/* args */ js.Array[js.Any], Unit]
+  type chainedPlay = js.Function1[/* args */ js.Array[js.Any], scala.Unit]
   /**
     * Method to clear the state after a transition.
     *
     */
-  type clear = js.Function0[Unit]
+  type clear = js.Function0[scala.Unit]
   /**
     * Method which is used to create the transition object of fade effect.
     *
     * @param node The node that the fade transition effect will be applied on.
     * @param config The cofig arguments which will be mixed into this transition object.
     */
-  type fade = js.Function2[/* node */ js.Any, /* config */ js.Any, Unit]
+  type fade = js.Function2[/* node */ js.Any, /* config */ js.Any, scala.Unit]
   /**
     * Method which is used to create the transition object of flip effect.
     *
     * @param node The node that the flip transition effect will be applied on.
     * @param config The cofig arguments which will be mixed into this transition object.
     */
-  type flip = js.Function2[/* node */ js.Any, /* config */ js.Any, Unit]
+  type flip = js.Function2[/* node */ js.Any, /* config */ js.Any, scala.Unit]
   /**
     *
     * @param nodes
@@ -59,22 +59,22 @@ package object transition {
     * Method to initialize the state for a transition.
     *
     */
-  type initState = js.Function0[Unit]
+  type initState = js.Function0[scala.Unit]
   /**
     * Plays the transition effect defined by this transition object.
     *
     */
-  type play = js.Function0[Unit]
+  type play = js.Function0[scala.Unit]
   /**
     * Method which is used to create the transition object of a slide effect.
     *
     * @param node The node that the slide transition effect will be applied on.
     * @param config The cofig arguments which will be mixed into this transition object.
     */
-  type slide = js.Function2[/* node */ js.Any, /* config */ js.Any, Unit]
+  type slide = js.Function2[/* node */ js.Any, /* config */ js.Any, scala.Unit]
   /**
     * Method to start the transition.
     *
     */
-  type start = js.Function0[Unit]
+  type start = js.Function0[scala.Unit]
 }

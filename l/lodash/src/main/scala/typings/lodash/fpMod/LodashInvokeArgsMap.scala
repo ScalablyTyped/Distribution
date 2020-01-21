@@ -1,13 +1,13 @@
 package typings.lodash.fpMod
 
-import typings.lodash.lodashMod.__
+import typings.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashInvokeArgsMap extends js.Object {
-  def apply(methodNameOrMethod: __, args: js.Array[_]): LodashInvokeArgsMap1x2 = js.native
+  def apply(methodNameOrMethod: __, args: js.Array[_]): LodashInvokeArgsMap1x6 = js.native
   def apply(methodNameOrMethod: __, args: js.Array[_], collection: js.Object): LodashInvokeArgsMap1x6 = js.native
   def apply(methodNameOrMethod: __, args: __): LodashInvokeArgsMap1x4 = js.native
   def apply(methodNameOrMethod: __, args: __, collection: js.Object): LodashInvokeArgsMap1x4 = js.native

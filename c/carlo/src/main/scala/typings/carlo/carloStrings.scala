@@ -1,6 +1,6 @@
 package typings.carlo
 
-import typings.carlo.carloMod.AppEvent
+import typings.carlo.mod.AppEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

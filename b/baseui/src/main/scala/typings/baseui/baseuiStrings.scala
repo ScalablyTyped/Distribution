@@ -11,9 +11,9 @@ import typings.baseui.blockMod.JustifyItems
 import typings.baseui.blockMod.JustifySelf
 import typings.baseui.blockMod.Overflow
 import typings.baseui.blockMod.Position
-import typings.baseui.dataDashTableMod._SortDirectionsT
+import typings.baseui.dataTableMod._SortDirectionsT
 import typings.baseui.listMod.ArtworkSizesT
-import typings.baseui.phoneDashInputMod.StateChange
+import typings.baseui.phoneInputMod.StateChange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

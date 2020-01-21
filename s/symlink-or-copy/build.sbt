@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "symlink-or-copy"
-version := "1.2-dt-20181231Z-3fe120"
+version := "1.2-dt-20181231Z-bb1507"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

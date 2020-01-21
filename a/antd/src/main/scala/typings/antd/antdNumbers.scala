@@ -1,6 +1,6 @@
 package typings.antd
 
-import typings.antd.libListMod.ColumnCount
+import typings.antd.listMod.ColumnCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

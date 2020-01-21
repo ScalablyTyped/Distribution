@@ -1,8 +1,8 @@
 package typings.nodegit.checkoutMod.Checkout
 
-import typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
+import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.commitMod.Commit
-import typings.nodegit.nodegitMod.Index
+import typings.nodegit.mod.Index
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository

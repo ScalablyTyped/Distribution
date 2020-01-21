@@ -2,8 +2,8 @@ package typings.backbone
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.backbone.backboneMod.Router
-import typings.backbone.backboneMod.RouterOptions
+import typings.backbone.mod.Router
+import typings.backbone.mod.RouterOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

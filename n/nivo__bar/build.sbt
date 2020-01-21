@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "nivo__bar"
-version := "0.59.2-9b71fb"
+version := "0.59.2-264fe8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
-  "org.scalablytyped" %%% "nivo__colors" % "0.59.0-69921c",
-  "org.scalablytyped" %%% "nivo__core" % "0.59.1-3512f1",
-  "org.scalablytyped" %%% "nivo__legends" % "0.59.1-a3e99a",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
-  "org.scalablytyped" %%% "std" % "3.7-b6d959")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-dcd929",
+  "org.scalablytyped" %%% "nivo__colors" % "0.59.0-66c0b8",
+  "org.scalablytyped" %%% "nivo__core" % "0.59.1-6ae9da",
+  "org.scalablytyped" %%% "nivo__legends" % "0.59.1-b4e4e5",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-78233f",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-0e1ae9",
+  "org.scalablytyped" %%% "std" % "3.7-96076c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

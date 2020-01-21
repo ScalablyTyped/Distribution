@@ -1,7 +1,7 @@
 package typings.baseui.datepickerMod
 
-import typings.baseui.Anon_Date
-import typings.react.reactMod.Component
+import typings.baseui.AnonDate
+import typings.react.mod.Component
 import typings.std.Date
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -21,7 +21,7 @@ class Datepicker ()
   def handleEsc(): Unit = js.native
   def handleInputBlur(): Unit = js.native
   def handleKeyDown(event: KeyboardEvent): Unit = js.native
-  def onChange(data: Anon_Date): Unit = js.native
+  def onChange(data: AnonDate): Unit = js.native
   def open(): Unit = js.native
 }
 

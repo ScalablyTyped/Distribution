@@ -19,7 +19,7 @@ trait ViewPrototype
   	 */
   var isActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var navigateTo: js.UndefOr[js.Function] = js.undefined
-  var options: js.UndefOr[Anon_Route] = js.undefined
+  var options: js.UndefOr[AnonRoute] = js.undefined
   var parentView: js.UndefOr[js.Any] = js.undefined
   /**
     * Override the ready method to perform actions when the DOM is ready and
@@ -45,7 +45,7 @@ object ViewPrototype {
     init: js.Function = null,
     isActive: () => Boolean = null,
     navigateTo: js.Function = null,
-    options: Anon_Route = null,
+    options: AnonRoute = null,
     parentView: js.Any = null,
     ready: js.Function = null,
     route: /* name */ String => ViewPrototype = null,

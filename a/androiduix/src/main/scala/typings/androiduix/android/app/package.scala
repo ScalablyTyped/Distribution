@@ -5,6 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object app {
-  type AlertController = AlertController_
-  type Application = Application_
+  type AlertController = typings.androiduix.android.app.AlertController_
+  type Application = typings.androiduix.android.app.Application_
 }

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree     
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._ExpandingTextAreaMixin because Inheritance from two classes. Inlined postCreate, resize, startup */ @JSGlobal("dijit.form.Textarea")
+- typings.dojo.dijit.form.ExpandingTextAreaMixin because Inheritance from two classes. Inlined postCreate, resize, startup */ @JSGlobal("dijit.form.Textarea")
 @js.native
 class Textarea () extends SimpleTextarea {
   def this(params: js.Object) = this()

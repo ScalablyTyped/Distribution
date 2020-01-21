@@ -5,11 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Core {
-  import org.scalablytyped.runtime.StringDictionary
-
   type DataObject = js.Any
-  type GUID = String
-  type ObjectHash = String
-  type RelationRule = RelationRuleDetail with RelationRuleDictionary
-  type RelationRuleDictionary = StringDictionary[RelationRuleDetail]
+  type GUID = java.lang.String
+  type ObjectHash = java.lang.String
+  type RelationRule = typings.webgme.Core.RelationRuleDetail with typings.webgme.Core.RelationRuleDictionary
+  type RelationRuleDictionary = org.scalablytyped.runtime.StringDictionary[typings.webgme.Core.RelationRuleDetail]
 }

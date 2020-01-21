@@ -2,7 +2,7 @@ package typings.jsmediatags
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.jsmediatags.build2MediaFileReaderMod.default
+import typings.jsmediatags.mediaFileReaderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

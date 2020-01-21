@@ -1,6 +1,6 @@
 package typings.dojo.dijit.form
 
-import typings.dojo.dijit._HasDropDown
+import typings.dojo.dijit.HasDropDown
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
   * 
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._SearchMixin because Inheritance from two classes. Inlined 
-- typings.dojo.dijit.form._AutoCompleterMixin because Inheritance from two classes. Inlined autoComplete, fetchProperties, highlightMatch, ignoreCase, item, labelAttr, labelType, pageSize, query, queryExpr, searchAttr, searchDelay, store, closeDropDown, doHighlight, isLoaded, loadDropDown, postCreate, postMixInProperties, reset, onSearch */ @JSGlobal("dijit.form.ComboBoxMixin")
+- typings.dojo.dijit.form.SearchMixin because Inheritance from two classes. Inlined 
+- typings.dojo.dijit.form.AutoCompleterMixin because Inheritance from two classes. Inlined autoComplete, fetchProperties, highlightMatch, ignoreCase, item, labelAttr, labelType, pageSize, query, queryExpr, searchAttr, searchDelay, store, closeDropDown, doHighlight, isLoaded, loadDropDown, postCreate, postMixInProperties, reset, onSearch */ @JSGlobal("dijit.form.ComboBoxMixin")
 @js.native
-class ComboBoxMixin () extends _HasDropDown {
+class ComboBoxMixin () extends HasDropDown {
   /**
     * If user types in a partial string, and then tab out of the <input> box,
     * automatically copy the first entry displayed in the drop down list to

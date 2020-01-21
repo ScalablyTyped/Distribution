@@ -5,27 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object menuMod {
-  import typings.baseui.Anon_EventItem
-  import typings.baseui.Anon_GetRequiredItemProps
-  import typings.baseui.baseuiStrings.click
-  import typings.baseui.baseuiStrings.focus
-  import typings.baseui.baseuiStrings.mouseEnter
-  import typings.baseui.baseuiStrings.moveDown
-  import typings.baseui.baseuiStrings.moveUp
-  import typings.baseui.baseuiStrings.reset
-
-  type ArrayItemsT = js.Array[ItemT]
-  type GetRequiredItemProps = js.Function2[/* item */ js.Any, /* index */ Double, RenderItemProps]
+  type ArrayItemsT = js.Array[typings.baseui.menuMod.ItemT]
+  type GetRequiredItemProps = js.Function2[/* item */ js.Any, /* index */ scala.Double, typings.baseui.menuMod.RenderItemProps]
   type ItemT = js.Any
-  type ItemsT = ArrayItemsT | GroupedItemsT
-  type OnItemSelect = js.Function1[/* args */ Anon_EventItem, js.Any]
-  type RenderProps = StatefulContainerState with Anon_GetRequiredItemProps
+  type ItemsT = typings.baseui.menuMod.ArrayItemsT | typings.baseui.menuMod.GroupedItemsT
+  type OnItemSelect = js.Function1[/* args */ typings.baseui.AnonEventItem, js.Any]
+  type RenderProps = typings.baseui.menuMod.StatefulContainerState with typings.baseui.AnonGetRequiredItemProps
   type StateReducer = js.Function3[
-    /* changeType */ moveDown | moveUp | reset | click | focus | mouseEnter, 
-    /* changes */ StatefulContainerState, 
-    /* currentState */ StatefulContainerState, 
-    StatefulContainerState
+    /* changeType */ typings.baseui.baseuiStrings.moveDown | typings.baseui.baseuiStrings.moveUp | typings.baseui.baseuiStrings.reset | typings.baseui.baseuiStrings.click | typings.baseui.baseuiStrings.focus | typings.baseui.baseuiStrings.mouseEnter, 
+    /* changes */ typings.baseui.menuMod.StatefulContainerState, 
+    /* currentState */ typings.baseui.menuMod.StatefulContainerState, 
+    typings.baseui.menuMod.StatefulContainerState
   ]
-  type StatefulMenuProps = StatefulContainerProps with MenuProps
-  type StatelessMenuProps = SharedStatelessProps with MenuProps
+  type StatefulMenuProps = typings.baseui.menuMod.StatefulContainerProps with typings.baseui.menuMod.MenuProps
+  type StatelessMenuProps = typings.baseui.menuMod.SharedStatelessProps with typings.baseui.menuMod.MenuProps
 }

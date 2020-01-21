@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("JsonRest")
 @js.native
 trait JsonRest_ extends js.Object {
   /**

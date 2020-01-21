@@ -1,8 +1,8 @@
 package typings.ionic.definitionsMod
 
 import typings.node.NodeJS.ProcessEnv
-import typings.node.childUnderscoreProcessMod.SerializationType
-import typings.node.childUnderscoreProcessMod.StdioOptions
+import typings.node.childProcessMod.SerializationType
+import typings.node.childProcessMod.StdioOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

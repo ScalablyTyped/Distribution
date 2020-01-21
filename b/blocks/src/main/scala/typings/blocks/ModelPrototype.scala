@@ -21,7 +21,7 @@ trait ModelPrototype
   	 * 
   	 */
   var isNew: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var options: js.UndefOr[Anon_BaseUrl] = js.undefined
+  var options: js.UndefOr[AnonBaseUrl] = js.undefined
   /**
   	 * Applies new properties to the Model by providing an Object
   	 * 
@@ -41,7 +41,7 @@ object ModelPrototype {
     dataItem: () => js.Object = null,
     init: js.Function = null,
     isNew: () => Boolean = null,
-    options: Anon_BaseUrl = null,
+    options: AnonBaseUrl = null,
     reset: ModelPrototype => ModelPrototype = null,
     validate: () => Boolean = null
   ): ModelPrototype = {

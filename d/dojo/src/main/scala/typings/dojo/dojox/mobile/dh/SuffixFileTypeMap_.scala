@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
   * the suffix of the URL.
   *
   */
-@JSName("SuffixFileTypeMap")
 trait SuffixFileTypeMap_ extends js.Object {
   /**
     *

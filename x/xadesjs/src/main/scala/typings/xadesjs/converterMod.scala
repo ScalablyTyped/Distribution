@@ -1,0 +1,14 @@
+package typings.xadesjs
+
+import typings.std.Date
+import typings.xmlCore.mod.IConverter
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("xadesjs/build/types/xml/converter", JSImport.Namespace)
+@js.native
+object converterMod extends js.Object {
+  val XmlDateTimeConverter: IConverter[Date] = js.native
+}
+

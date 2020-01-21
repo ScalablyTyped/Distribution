@@ -1,6 +1,6 @@
 package typings.vexflow.Vex.Flow
 
-import typings.vexflow.Anon_GetContext
+import typings.vexflow.AnonGetContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ class StaveModifier_ () extends js.Object {
   def getPadding(index: Double): Double = js.native
   def getPosition(): Double = js.native
   def getWidth(): Double = js.native
-  def makeSpacer(padding: Double): Anon_GetContext = js.native
+  def makeSpacer(padding: Double): AnonGetContext = js.native
   def placeGlyphOnLine(glyph: Glyph, stave: Stave, line: Double): Unit = js.native
   def setPadding(padding: Double): Unit = js.native
 }

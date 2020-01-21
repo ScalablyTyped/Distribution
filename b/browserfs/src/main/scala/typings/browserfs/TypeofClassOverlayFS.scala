@@ -2,12 +2,12 @@ package typings.browserfs
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
-import typings.browserfs.distNodeBackendOverlayFSMod.OverlayFS
-import typings.browserfs.distNodeBackendOverlayFSMod.OverlayFSOptions
-import typings.browserfs.distNodeBackendOverlayFSMod.default
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.BFSCallback
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystem
-import typings.browserfs.distNodeCoreFileUnderscoreSystemMod.FileSystemOptions
+import typings.browserfs.fileSystemMod.BFSCallback
+import typings.browserfs.fileSystemMod.FileSystem
+import typings.browserfs.fileSystemMod.FileSystemOptions
+import typings.browserfs.overlayFSMod.OverlayFS
+import typings.browserfs.overlayFSMod.OverlayFSOptions
+import typings.browserfs.overlayFSMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

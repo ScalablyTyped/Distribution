@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
   * these Stencil objects.
   *
   */
-@JSName("icons")
 trait icons_ extends js.Object {
   /**
     *

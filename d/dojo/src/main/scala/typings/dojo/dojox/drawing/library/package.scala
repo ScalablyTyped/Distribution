@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object library {
-  type icons = icons_
+  type icons = typings.dojo.dojox.drawing.library.icons_
 }

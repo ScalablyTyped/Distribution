@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imul"
-version := "1.0-dt-20190331Z-3f6131"
+version := "1.0-dt-20190331Z-e43b02"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

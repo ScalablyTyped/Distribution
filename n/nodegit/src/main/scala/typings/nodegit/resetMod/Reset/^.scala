@@ -1,10 +1,10 @@
 package typings.nodegit.resetMod.Reset
 
-import typings.nodegit.annotatedDashCommitMod.AnnotatedCommit
-import typings.nodegit.checkoutDashOptionsMod.CheckoutOptions
+import typings.nodegit.annotatedCommitMod.AnnotatedCommit
+import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.commitMod.Commit
 import typings.nodegit.repositoryMod.Repository
-import typings.nodegit.strDashArrayMod.Strarray
+import typings.nodegit.strArrayMod.Strarray
 import typings.nodegit.tagMod.Tag
 import scala.scalajs.js
 import scala.scalajs.js.`|`

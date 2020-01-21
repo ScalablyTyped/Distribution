@@ -1,6 +1,6 @@
 package typings.nodegit.remoteMod.Remote
 
-import typings.nodegit.remoteDashCallbacksMod.RemoteCallbacks
+import typings.nodegit.remoteCallbacksMod.RemoteCallbacks
 import typings.nodegit.repositoryMod.Repository
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,7 +1,7 @@
 package typings.baseui.inputMod
 
-import typings.react.reactMod.Component
-import typings.react.reactMod.FocusEvent
+import typings.react.mod.Component
+import typings.react.mod.FocusEvent
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

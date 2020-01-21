@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param kwArgs       OptionalAn optional keyword arguments object to help define this plot's parameters.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.charting.plot2d._PlotEvents because Inheritance from two classes. Inlined connect, connect, destroy, events, fireEvent, plotEvent, raiseEvent, resetEvents */ @JSGlobal("dojox.charting.plot2d.Spider")
+- typings.dojo.dojox.charting.plot2d.PlotEvents because Inheritance from two classes. Inlined connect, connect, destroy, events, fireEvent, plotEvent, raiseEvent, resetEvents */ @JSGlobal("dojox.charting.plot2d.Spider")
 @js.native
 class Spider protected () extends Base {
   def this(chart: Chart) = this()

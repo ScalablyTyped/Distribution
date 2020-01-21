@@ -1,7 +1,7 @@
 package typings.ol.interactionMod
 
-import typings.ol.interactionMouseWheelZoomMod.Options
-import typings.ol.interactionMouseWheelZoomMod.default
+import typings.ol.mouseWheelZoomMod.Options
+import typings.ol.mouseWheelZoomMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

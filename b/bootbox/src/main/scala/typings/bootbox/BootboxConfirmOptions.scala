@@ -6,7 +6,7 @@ import typings.bootbox.bootboxStrings.lg
 import typings.bootbox.bootboxStrings.sm
 import typings.bootbox.bootboxStrings.small
 import typings.bootbox.bootboxStrings.xl
-import typings.jquery.JQuery
+import typings.jquery.JQuery_
 import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.HTMLElement
@@ -27,7 +27,7 @@ object BootboxConfirmOptions {
   @scala.inline
   def apply(
     callback: Boolean => js.Any,
-    message: JQuery[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]]),
+    message: JQuery_[HTMLElement] | js.Array[_] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery_[HTMLElement]]),
     animate: js.UndefOr[Boolean] = js.undefined,
     backdrop: js.UndefOr[Boolean] = js.undefined,
     buttons: BootboxConfirmPromptButtonMap = null,

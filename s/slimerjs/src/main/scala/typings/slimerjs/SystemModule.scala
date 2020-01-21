@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SystemModule extends js.Object {
   var args: js.Array[String]
   var env: StringDictionary[String]
-  var os: Anon_Architecture
+  var os: AnonArchitecture
   var pid: Double
   var platform: String
   var standarderr: Std
@@ -24,7 +24,7 @@ object SystemModule {
   def apply(
     args: js.Array[String],
     env: StringDictionary[String],
-    os: Anon_Architecture,
+    os: AnonArchitecture,
     pid: Double,
     platform: String,
     standarderr: Std,

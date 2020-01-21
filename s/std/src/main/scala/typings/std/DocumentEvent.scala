@@ -1,5 +1,6 @@
 package typings.std
 
+import typings.std.stdStrings.Event
 import typings.std.stdStrings.Events
 import typings.std.stdStrings.MouseEvents
 import typings.std.stdStrings.MutationEvents
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DocumentEvent extends js.Object {
-  def createEvent(eventInterface: java.lang.String): Event = js.native
+  def createEvent(eventInterface: java.lang.String): Event_ = js.native
   @JSName("createEvent")
   def createEvent_AnimationEvent(eventInterface: typings.std.stdStrings.AnimationEvent): AnimationEvent = js.native
   @JSName("createEvent")
@@ -40,9 +41,9 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_ErrorEvent(eventInterface: typings.std.stdStrings.ErrorEvent): ErrorEvent = js.native
   @JSName("createEvent")
-  def createEvent_Event(eventInterface: typings.std.stdStrings.Event): Event = js.native
+  def createEvent_Event(eventInterface: Event): Event_ = js.native
   @JSName("createEvent")
-  def createEvent_Events(eventInterface: Events): Event = js.native
+  def createEvent_Events(eventInterface: Events): Event_ = js.native
   @JSName("createEvent")
   def createEvent_FocusEvent(eventInterface: typings.std.stdStrings.FocusEvent): FocusEvent = js.native
   @JSName("createEvent")

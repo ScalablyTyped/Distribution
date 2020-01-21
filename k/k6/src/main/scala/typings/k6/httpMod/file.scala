@@ -1,6 +1,6 @@
 package typings.k6.httpMod
 
-import typings.k6.k6Mod.bytes
+import typings.k6.mod.bytes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

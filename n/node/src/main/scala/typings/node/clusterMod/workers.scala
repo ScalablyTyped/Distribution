@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("cluster", "workers")
 @js.native
 object workers
-  extends /* index */ StringDictionary[js.UndefOr[Worker]]
+  extends /* index */ StringDictionary[js.UndefOr[Worker_]]
 

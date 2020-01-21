@@ -1,10 +1,10 @@
 package typings.mcustomscrollbar.MCustomScrollbar
 
-import typings.mcustomscrollbar.Anon_AlwaysTriggerOffsets
-import typings.mcustomscrollbar.Anon_Auto
-import typings.mcustomscrollbar.Anon_AutoAutoExpandHorizontalScroll
-import typings.mcustomscrollbar.Anon_AutoEnable
-import typings.mcustomscrollbar.Anon_AutoEnableScrollAmount
+import typings.mcustomscrollbar.AnonAlwaysTriggerOffsets
+import typings.mcustomscrollbar.AnonAuto
+import typings.mcustomscrollbar.AnonAutoAutoExpandHorizontalScroll
+import typings.mcustomscrollbar.AnonAutoEnable
+import typings.mcustomscrollbar.AnonAutoEnableScrollAmount
 import typings.mcustomscrollbar.mcustomscrollbarStrings.inside
 import typings.mcustomscrollbar.mcustomscrollbarStrings.outside
 import typings.mcustomscrollbar.mcustomscrollbarStrings.x
@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomScrollbarOptions extends js.Object {
-  var advanced: js.UndefOr[Anon_AutoAutoExpandHorizontalScroll] = js.undefined
+  var advanced: js.UndefOr[AnonAutoAutoExpandHorizontalScroll] = js.undefined
   /**
     * Always keep scrollbar(s) visible, even when there’s nothing to scroll.
     * 0 – disable (default)
@@ -43,7 +43,7 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * All of the following callbacks option have examples in the callback demo - http://manos.malihu.gr/tuts/custom-scrollbar-plugin/callbacks_example.html
     */
-  var callbacks: js.UndefOr[Anon_AlwaysTriggerOffsets] = js.undefined
+  var callbacks: js.UndefOr[AnonAlwaysTriggerOffsets] = js.undefined
   /**
     * Enable or disable content touch-swipe scrolling for touch-enabled devices.
     * To completely disable, set contentTouchScroll: false.
@@ -57,7 +57,7 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Keyboard support 
     */
-  var keyboard: js.UndefOr[Anon_AutoEnable] = js.undefined
+  var keyboard: js.UndefOr[AnonAutoEnable] = js.undefined
   /**
     * Enable or disable applying scrollbar(s) on all elements matching the current selector, now and in the future.
     * Set live: true when you need to add scrollbar(s) on elements that do not yet exist in the page. 
@@ -73,12 +73,12 @@ trait CustomScrollbarOptions extends js.Object {
   /**
     * Mouse wheel support
     */
-  var mouseWheel: js.UndefOr[Anon_Auto] = js.undefined
+  var mouseWheel: js.UndefOr[AnonAuto] = js.undefined
   /**
     * Mouse wheel scrolling pixels amount, value in pixels (integer) or "auto" (script calculates and sets pixels amount according to content length)
     */
   var mouseWheelPixels: js.UndefOr[js.Any] = js.undefined
-  var scrollButtons: js.UndefOr[Anon_AutoEnableScrollAmount] = js.undefined
+  var scrollButtons: js.UndefOr[AnonAutoEnableScrollAmount] = js.undefined
   /**
     * Scrolling inertia (easing), value in milliseconds (0 for no scrolling inertia)
     */
@@ -131,21 +131,21 @@ trait CustomScrollbarOptions extends js.Object {
 object CustomScrollbarOptions {
   @scala.inline
   def apply(
-    advanced: Anon_AutoAutoExpandHorizontalScroll = null,
+    advanced: AnonAutoAutoExpandHorizontalScroll = null,
     alwaysShowScrollbar: Int | Double = null,
     autoDraggerLength: js.UndefOr[Boolean] = js.undefined,
     autoExpandScrollbar: js.UndefOr[Boolean] = js.undefined,
     autoHideScrollbar: js.UndefOr[Boolean] = js.undefined,
     axis: x | y | yx = null,
-    callbacks: Anon_AlwaysTriggerOffsets = null,
+    callbacks: AnonAlwaysTriggerOffsets = null,
     contentTouchScroll: Boolean | Double = null,
     documentTouchScroll: js.UndefOr[Boolean] = js.undefined,
-    keyboard: Anon_AutoEnable = null,
+    keyboard: AnonAutoEnable = null,
     live: String | Boolean = null,
     liveSelector: String = null,
-    mouseWheel: Anon_Auto = null,
+    mouseWheel: AnonAuto = null,
     mouseWheelPixels: js.Any = null,
-    scrollButtons: Anon_AutoEnableScrollAmount = null,
+    scrollButtons: AnonAutoEnableScrollAmount = null,
     scrollInertia: Int | Double = null,
     scrollbarPosition: inside | outside = null,
     setHeight: Boolean | Double | String = null,

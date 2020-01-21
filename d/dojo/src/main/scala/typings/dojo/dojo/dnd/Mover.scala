@@ -1,7 +1,7 @@
 package typings.dojo.dojo.dnd
 
 import typings.dojo.dojo.Evented
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +20,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("dojo.dnd.Mover")
 @js.native
 class Mover protected () extends Evented {
-  def this(node: HTMLElement, e: Event) = this()
-  def this(node: HTMLElement, e: Event, host: js.Object) = this()
+  def this(node: HTMLElement, e: Event_) = this()
+  def this(node: HTMLElement, e: Event_, host: js.Object) = this()
   /**
     * stops the move, deletes all references, so the object can be garbage-collected
     *
@@ -51,7 +51,7 @@ class Mover protected () extends Evented {
     *
     * @param e mouse/touch event
     */
-  def onMouseMove(e: Event): Unit = js.native
+  def onMouseMove(e: Event_): Unit = js.native
   /**
     *
     * @param e

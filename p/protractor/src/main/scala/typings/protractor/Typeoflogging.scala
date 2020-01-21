@@ -3,9 +3,9 @@ package typings.protractor
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.IType
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Level
-import typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Logger
+import typings.seleniumWebdriver.mod.logging.IType
+import typings.seleniumWebdriver.mod.logging.Level
+import typings.seleniumWebdriver.mod.logging.Logger
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +15,7 @@ trait Typeoflogging extends js.Object {
   /**
     * A single log entry.
     */
-  var Entry: Instantiable2[
-    /* level */ Level, 
-    /* message */ String, 
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Entry
-  ] = js.native
+  var Entry: Instantiable2[/* level */ Level, /* message */ String, typings.seleniumWebdriver.mod.logging.Entry] = js.native
   /**
     * Defines a message level that may be used to control logging output.
     *
@@ -31,7 +27,7 @@ trait Typeoflogging extends js.Object {
     *
     * @final
     */
-  var LogManager: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.LogManager] = js.native
+  var LogManager: Instantiable0[typings.seleniumWebdriver.mod.logging.LogManager] = js.native
   /**
     * An object used to log debugging messages. Loggers use a hierarchical,
     * dot-separated naming scheme. For instance, 'foo' is considered the parent of
@@ -48,15 +44,12 @@ trait Typeoflogging extends js.Object {
     *
     * @final
     */
-  var Logger: Instantiable1[
-    /* name */ String, 
-    typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Logger
-  ] = js.native
+  var Logger: Instantiable1[/* name */ String, typings.seleniumWebdriver.mod.logging.Logger] = js.native
   /**
     * A hash describing log preferences.
     * @typedef {Object.<logging.Type, logging.LevelName>}
     */
-  var Preferences: Instantiable0[typings.seleniumDashWebdriver.seleniumDashWebdriverMod.logging.Preferences] = js.native
+  var Preferences: Instantiable0[typings.seleniumWebdriver.mod.logging.Preferences] = js.native
   /**
     * Common log types.
     * @enum {string}

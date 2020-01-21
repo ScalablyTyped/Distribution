@@ -7,7 +7,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("LeadingMarginSpan")
 trait LeadingMarginSpan_ extends ParagraphStyle {
   def drawLeadingMargin(
     c: Canvas,

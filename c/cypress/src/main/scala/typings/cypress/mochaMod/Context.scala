@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mocha", "Context")
 @js.native
 class Context ()
-  extends typings.cypress.Mocha.Context
+  extends typings.cypress.Mocha_.Context
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RaphaelPath extends RaphaelElement {
-  def getPointAtLength(length: Double): Anon_Alpha = js.native
+  def getPointAtLength(length: Double): AnonAlpha = js.native
   def getSubpath(from: Double, to: Double): String = js.native
   def getTotalLength(): Double = js.native
 }

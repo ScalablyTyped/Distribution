@@ -1,7 +1,7 @@
 package typings.nodegit
 
 import typings.nodegit.oidMod.Oid
-import typings.nodegit.transferDashProgressMod.TransferProgress
+import typings.nodegit.transferProgressMod.TransferProgress
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar/src/main", "DateClicking")
 @js.native
 class DateClicking protected ()
-  extends typings.fullcalendar.srcExportsMod.DateClicking {
+  extends typings.fullcalendar.exportsMod.DateClicking {
   def this(component: js.Any) = this()
 }
 

@@ -39,7 +39,7 @@ object Curves extends js.Object {
     extends typings.phaser.Phaser.Curves.Curve {
     /**
       * 
-      * @param type [description]
+      * @param type The curve type.
       */
     def this(`type`: String) = this()
   }
@@ -143,16 +143,16 @@ object Curves extends js.Object {
   }
   
   /**
-    * [description]
+    * Create a smooth 2d spline curve from a series of points.
     */
   @js.native
   /**
     * 
-    * @param points [description]
+    * @param points The points that configure the curve.
     */
   class Spline ()
     extends typings.phaser.Phaser.Curves.Spline {
-    def this(points: js.Array[Vector2]) = this()
+    def this(points: js.Array[js.Array[Double] | Double | Vector2]) = this()
   }
   
   /* static members */
@@ -199,7 +199,7 @@ object Curves extends js.Object {
   @js.native
   object Spline extends js.Object {
     /**
-      * [description]
+      * Imports a JSON object containing this curve data.
       * @param data The JSON object containing this curve data.
       */
     def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Spline = js.native

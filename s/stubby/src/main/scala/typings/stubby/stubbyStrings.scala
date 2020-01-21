@@ -1,6 +1,6 @@
 package typings.stubby
 
-import typings.stubby.stubbyMod.StubbyMethod
+import typings.stubby.mod.StubbyMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("POWER_INFO")
 @js.native
-object POWER_INFO extends /* powerID */ NumberDictionary[Anon_ClassName]
+object POWER_INFO extends /* powerID */ NumberDictionary[AnonClassName]
 

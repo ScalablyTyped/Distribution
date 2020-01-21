@@ -1,7 +1,7 @@
 package typings.dojo.dojox.layout
 
-import typings.dojo.Anon_Unwatch
-import typings.dojo.dijit.layout._LayoutWidget
+import typings.dojo.AnonUnwatch
+import typings.dojo.dijit.layout.LayoutWidget
 import typings.dojo.dojoStrings.ChildWidgetProperties
 import typings.dojo.dojoStrings.cols
 import typings.dojo.dojoStrings.customClass
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("dojox.layout.TableContainer")
 @js.native
-class TableContainer_ () extends _LayoutWidget {
+class TableContainer_ () extends LayoutWidget {
   def this(params: js.Object) = this()
   def this(params: js.Object, srcNodeRef: HTMLElement) = this()
   /**
@@ -117,7 +117,7 @@ class TableContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[js.Object], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_cols(
     property: cols,
@@ -127,7 +127,7 @@ class TableContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_customClass(
     property: customClass,
@@ -137,7 +137,7 @@ class TableContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_labelWidth(
     property: labelWidth,
@@ -147,7 +147,7 @@ class TableContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_orientation(
     property: orientation,
@@ -157,7 +157,7 @@ class TableContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_showLabels(
     property: showLabels,
@@ -167,7 +167,7 @@ class TableContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_spacing(
     property: spacing,
@@ -177,6 +177,6 @@ class TableContainer_ () extends _LayoutWidget {
       /* newValue */ js.UndefOr[Double], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

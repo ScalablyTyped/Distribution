@@ -1,7 +1,7 @@
 package typings.mocha
 
 import org.scalablytyped.runtime.TopLevel
-import typings.mocha.Mocha.PendingSuiteFunction
+import typings.mocha.Mocha_.PendingSuiteFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

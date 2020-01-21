@@ -401,6 +401,8 @@ object Scenes extends js.Object {
     def isVisible(key: String): Boolean = js.native
     /**
       * Launch the given Scene and run it in parallel with this one.
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * @param key The Scene to launch.
       * @param data The Scene data.
       */
@@ -438,6 +440,8 @@ object Scenes extends js.Object {
     def moveUp(key: String): ScenePlugin = js.native
     /**
       * Pause the Scene - this stops the update step from happening but it still renders.
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * @param key The Scene to pause.
       * @param data An optional data object that will be passed to the Scene and emitted in its pause event.
       */
@@ -450,7 +454,7 @@ object Scenes extends js.Object {
       * The Scene is removed from the local scenes array, it's key is cleared from the keys
       * cache and Scene.Systems.destroy is then called on it.
       * 
-      * If the SceneManager is processing the Scenes when this method is called it wil
+      * If the SceneManager is processing the Scenes when this method is called it will
       * queue the operation for the next update sequence.
       * @param key The Scene to be removed.
       */
@@ -459,12 +463,16 @@ object Scenes extends js.Object {
     def remove(key: Scene): SceneManager = js.native
     /**
       * Restarts this Scene.
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * @param data The Scene data.
       */
     def restart(): ScenePlugin = js.native
     def restart(data: js.Object): ScenePlugin = js.native
     /**
       * Resume the Scene - starts the update loop again.
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * @param key The Scene to resume.
       * @param data An optional data object that will be passed to the Scene and emitted in its resume event.
       */
@@ -473,6 +481,8 @@ object Scenes extends js.Object {
     def resume(key: String, data: js.Object): ScenePlugin = js.native
     /**
       * Runs the given Scene, but does not change the state of this Scene.
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * 
       * If the given Scene is paused, it will resume it. If sleeping, it will wake it.
       * If not running at all, it will be started.
@@ -510,6 +520,8 @@ object Scenes extends js.Object {
     def setVisible(value: Boolean, key: String): ScenePlugin = js.native
     /**
       * Makes the Scene sleep (no update, no render) but doesn't shutdown.
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * @param key The Scene to put to sleep.
       * @param data An optional data object that will be passed to the Scene and emitted in its sleep event.
       */
@@ -518,6 +530,8 @@ object Scenes extends js.Object {
     def sleep(key: String, data: js.Object): ScenePlugin = js.native
     /**
       * Shutdown this Scene and run the given one.
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * @param key The Scene to start.
       * @param data The Scene data.
       */
@@ -526,6 +540,8 @@ object Scenes extends js.Object {
     def start(key: String, data: js.Object): ScenePlugin = js.native
     /**
       * Shutdown the Scene, clearing display list, timers, etc.
+      * 
+      * This happens at the next Scene Manager update, not immediately.
       * @param key The Scene to stop.
       * @param data Optional data object to pass to Scene.Systems.shutdown.
       */
@@ -544,10 +560,7 @@ object Scenes extends js.Object {
     /**
       * Makes this Scene sleep then starts the Scene given.
       * 
-      * No checks are made to see if an instance of the given Scene is already running.
-      * Because Scenes in Phaser are non-exclusive, you are allowed to run multiple
-      * instances of them _at the same time_. This means, calling this function
-      * may launch another instance of the requested Scene if it's already running.
+      * This will happen at the next Scene Manager update, not immediately.
       * @param key The Scene to start.
       */
     def switch(key: String): ScenePlugin = js.native
@@ -585,6 +598,8 @@ object Scenes extends js.Object {
     def transition(config: SceneTransitionConfig): Boolean = js.native
     /**
       * Makes the Scene wake-up (starts update and render)
+      * 
+      * This will happen at the next Scene Manager update, not immediately.
       * @param key The Scene to wake up.
       * @param data An optional data object that will be passed to the Scene and emitted in its wake event.
       */
@@ -752,6 +767,13 @@ object Scenes extends js.Object {
       */
     def depthSort(): Unit = js.native
     /**
+      * Returns any data that was sent to this Scene by another Scene.
+      * 
+      * The data is also passed to `Scene.init` and in various Scene events, but
+      * you can access it at any point via this method.
+      */
+    def getData(): js.Any = js.native
+    /**
       * This method is called only once by the Scene Manager when the Scene is instantiated.
       * It is responsible for setting up all of the Scene plugins and references.
       * It should never be called directly.
@@ -838,8 +860,8 @@ object Scenes extends js.Object {
     /**
       * Send this Scene to sleep.
       * 
-      * A sleeping Scene doesn't run it's update step or render anything, but it also isn't shut down
-      * or have any of its systems or children removed, meaning it can be re-activated at any point and
+      * A sleeping Scene doesn't run its update step or render anything, but it also isn't shut down
+      * or has any of its systems or children removed, meaning it can be re-activated at any point and
       * will carry on from where it left off. It also keeps everything in memory and events and callbacks
       * from other Scenes may still invoke changes within it, so be careful what is left active.
       * @param data A data object that will be passed in the 'sleep' event.

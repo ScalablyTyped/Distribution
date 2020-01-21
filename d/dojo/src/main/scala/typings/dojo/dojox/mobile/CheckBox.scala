@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.readOnly
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dijit.form._CheckBoxMixin because Inheritance from two classes. Inlined readOnly, reset */ @JSGlobal("dojox.mobile.CheckBox")
+- typings.dojo.dijit.form.CheckBoxMixin because Inheritance from two classes. Inlined readOnly, reset */ @JSGlobal("dojox.mobile.CheckBox")
 @js.native
 class CheckBox () extends ToggleButton {
   def this(params: js.Object) = this()
@@ -42,6 +42,6 @@ class CheckBox () extends ToggleButton {
       /* newValue */ js.UndefOr[Boolean], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

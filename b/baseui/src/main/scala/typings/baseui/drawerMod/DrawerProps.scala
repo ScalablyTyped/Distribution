@@ -1,6 +1,6 @@
 package typings.baseui.drawerMod
 
-import typings.baseui.Anon_Backdrop
+import typings.baseui.AnonBackdrop
 import typings.baseui.baseuiStrings.auto
 import typings.baseui.baseuiStrings.bottom
 import typings.baseui.baseuiStrings.default_
@@ -8,10 +8,10 @@ import typings.baseui.baseuiStrings.full
 import typings.baseui.baseuiStrings.left
 import typings.baseui.baseuiStrings.right
 import typings.baseui.baseuiStrings.top
-import typings.react.reactMod.KeyboardEvent
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
-import typings.react.reactMod.ReactNode
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +26,7 @@ trait DrawerProps extends js.Object {
   var isOpen: js.UndefOr[Boolean] = js.undefined
   var mountNode: js.UndefOr[HTMLElement] = js.undefined
   var onBackdropClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], _]] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* args */ Anon_Backdrop, _]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* args */ AnonBackdrop, _]] = js.undefined
   var onEscapeKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLElement], _]] = js.undefined
   var overrides: js.UndefOr[DrawerOverrides] = js.undefined
   var showBackdrop: js.UndefOr[Boolean] = js.undefined
@@ -44,7 +44,7 @@ object DrawerProps {
     isOpen: js.UndefOr[Boolean] = js.undefined,
     mountNode: HTMLElement = null,
     onBackdropClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => _ = null,
-    onClose: /* args */ Anon_Backdrop => _ = null,
+    onClose: /* args */ AnonBackdrop => _ = null,
     onEscapeKeyDown: /* event */ KeyboardEvent[HTMLElement] => _ = null,
     overrides: DrawerOverrides = null,
     showBackdrop: js.UndefOr[Boolean] = js.undefined,

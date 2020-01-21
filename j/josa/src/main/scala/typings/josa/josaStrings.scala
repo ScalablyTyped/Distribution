@@ -1,11 +1,11 @@
 package typings.josa
 
-import typings.josa.josaMod.Conjunction
-import typings.josa.josaMod.Josa
-import typings.josa.josaMod.Means
-import typings.josa.josaMod.Objective
-import typings.josa.josaMod.Subject
-import typings.josa.josaMod.Topic
+import typings.josa.mod.Conjunction
+import typings.josa.mod.Josa_
+import typings.josa.mod.Means
+import typings.josa.mod.Objective
+import typings.josa.mod.Subject
+import typings.josa.mod.Topic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,52 +13,52 @@ import scala.scalajs.js.annotation._
 object josaStrings {
   @js.native
   sealed trait 가
-    extends Josa
+    extends Josa_
        with Subject
   
   @js.native
   sealed trait 과
     extends Conjunction
-       with Josa
+       with Josa_
   
   @js.native
   sealed trait 는
-    extends Josa
+    extends Josa_
        with Topic
   
   @js.native
   sealed trait 로
-    extends Josa
+    extends Josa_
        with Means
   
   @js.native
   sealed trait 를
-    extends Josa
+    extends Josa_
        with Objective
   
   @js.native
   sealed trait 와
     extends Conjunction
-       with Josa
+       with Josa_
   
   @js.native
   sealed trait 으로
-    extends Josa
+    extends Josa_
        with Means
   
   @js.native
   sealed trait 은
-    extends Josa
+    extends Josa_
        with Topic
   
   @js.native
   sealed trait 을
-    extends Josa
+    extends Josa_
        with Objective
   
   @js.native
   sealed trait 이
-    extends Josa
+    extends Josa_
        with Subject
   
   @scala.inline

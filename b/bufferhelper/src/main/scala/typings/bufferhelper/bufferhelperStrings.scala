@@ -1,6 +1,6 @@
 package typings.bufferhelper
 
-import typings.bufferhelper.bufferhelperMod.encoding
+import typings.bufferhelper.mod.encoding
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

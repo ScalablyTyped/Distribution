@@ -1,6 +1,6 @@
 package typings.flickity
 
-import typings.flickity.flickityMod.FlickityEvents
+import typings.flickity.mod.FlickityEvents
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

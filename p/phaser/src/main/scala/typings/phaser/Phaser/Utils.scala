@@ -431,7 +431,7 @@ object Utils extends js.Object {
       * The original array is modified directly and returned.
       * @param array The array to shuffle. This array is modified in place.
       */
-    def Shuffle(array: js.Array[_]): js.Array[_] = js.native
+    def Shuffle[T](array: js.Array[T]): js.Array[T] = js.native
     /**
       * Removes a single item from an array and returns it without creating gc, like the native splice does.
       * Based on code by Mike Reinstein.

@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Threading {
-  import typings.winrt.Windows.Foundation.IAsyncAction
-
-  type TimerDestroyedHandler = js.Function1[/* timer */ ThreadPoolTimer, Unit]
-  type TimerElapsedHandler = js.Function1[/* timer */ ThreadPoolTimer, Unit]
-  type WorkItemHandler = js.Function1[/* operation */ IAsyncAction, Unit]
+  type TimerDestroyedHandler = js.Function1[/* timer */ typings.winrt.Windows.System.Threading.ThreadPoolTimer, scala.Unit]
+  type TimerElapsedHandler = js.Function1[/* timer */ typings.winrt.Windows.System.Threading.ThreadPoolTimer, scala.Unit]
+  type WorkItemHandler = js.Function1[/* operation */ typings.winrt.Windows.Foundation.IAsyncAction, scala.Unit]
 }

@@ -1,7 +1,7 @@
 package typings.tweenjs.createjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.createjsDashLib.createjs.EventDispatcher
+import typings.createjsLib.createjs.EventDispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WaitMe {
-  import typings.waitme.JQuery
-  import typings.waitme.waitmeStrings.hide
-
-  type WaitMeStatic = js.Function1[/* options */ js.UndefOr[WaitMeOptions | hide], JQuery]
+  type WaitMeStatic = js.Function1[
+    /* options */ js.UndefOr[typings.waitme.WaitMe.WaitMeOptions | typings.waitme.waitmeStrings.hide], 
+    typings.waitme.JQuery
+  ]
 }

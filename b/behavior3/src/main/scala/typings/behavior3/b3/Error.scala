@@ -1,6 +1,5 @@
 package typings.behavior3.b3
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,4 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Error.
   */
 class Error () extends Action
-
-@JSGlobal("b3.ERROR")
-@js.native
-object ERROR extends TopLevel[Double]
 

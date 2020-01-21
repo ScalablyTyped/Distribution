@@ -1,7 +1,7 @@
 package typings.greasemonkey.GM
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.greasemonkey.Anon_Onabort
+import typings.greasemonkey.AnonOnabort
 import typings.greasemonkey.greasemonkeyStrings.CONNECT
 import typings.greasemonkey.greasemonkeyStrings.DELETE
 import typings.greasemonkey.greasemonkeyStrings.GET
@@ -73,7 +73,7 @@ trait Request[TContext] extends js.Object {
     * Object containing optional function callbacks to monitor the upload
     * of data.
     */
-  var upload: js.UndefOr[Anon_Onabort[TContext]] = js.undefined
+  var upload: js.UndefOr[AnonOnabort[TContext]] = js.undefined
   // Fields
   /**
     * The URL to make the request to. Must be an absolute URL, beginning
@@ -103,7 +103,7 @@ object Request {
     password: String = null,
     synchronous: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
-    upload: Anon_Onabort[TContext] = null,
+    upload: AnonOnabort[TContext] = null,
     user: String = null
   ): Request[TContext] = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])

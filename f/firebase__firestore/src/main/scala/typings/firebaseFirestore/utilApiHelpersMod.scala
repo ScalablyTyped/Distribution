@@ -1,0 +1,37 @@
+package typings.firebaseFirestore
+
+import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseFirestore.apiDatabaseMod.CollectionReference
+import typings.firebaseFirestore.apiDatabaseMod.DocumentReference
+import typings.firebaseFirestore.apiDatabaseMod.DocumentSnapshot
+import typings.firebaseFirestore.apiDatabaseMod.Firestore
+import typings.firebaseFirestore.apiDatabaseMod.Query
+import typings.firebaseFirestore.apiDatabaseMod.QuerySnapshot
+import typings.firebaseFirestore.modelCollectionsMod.DocumentKeySet_
+import typings.firebaseFirestore.srcModelFieldValueMod.JsonObject
+import typings.firebaseFirestoreTypes.mod.DocumentData
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@firebase/firestore/dist/test/util/api_helpers", JSImport.Namespace)
+@js.native
+object utilApiHelpersMod extends js.Object {
+  @JSName("FIRESTORE")
+  val FIRESTORE_ : Firestore = js.native
+  def collectionReference(path: String): CollectionReference[DocumentData] = js.native
+  def documentReference(path: String): DocumentReference[DocumentData] = js.native
+  def documentSnapshot(path: String, data: Null, fromCache: Boolean): DocumentSnapshot[DocumentData] = js.native
+  def documentSnapshot(path: String, data: JsonObject[_], fromCache: Boolean): DocumentSnapshot[DocumentData] = js.native
+  def firestore(): Firestore = js.native
+  def query(path: String): Query[DocumentData] = js.native
+  def querySnapshot(
+    path: String,
+    oldDocs: StringDictionary[JsonObject[_]],
+    docsToAdd: StringDictionary[JsonObject[_]],
+    mutatedKeys: DocumentKeySet_,
+    fromCache: Boolean,
+    syncStateChanged: Boolean
+  ): QuerySnapshot[DocumentData] = js.native
+}
+

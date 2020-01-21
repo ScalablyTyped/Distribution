@@ -1,6 +1,6 @@
 package typings.dojo.dojox.mobile
 
-import typings.dojo.Anon_Unwatch
+import typings.dojo.AnonUnwatch
 import typings.dojo.dojoStrings.dayPattern
 import typings.dojo.dojoStrings.monthPattern
 import typings.dojo.dojoStrings.value
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   * @param srcNodeRef       OptionalIf a srcNodeRef (DOM node) is specified:use srcNodeRef.innerHTML as my contentsif this is a behavioral widget then apply behavior to that srcNodeRefotherwise, replace srcNodeRef with my generated DOM tree
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.dojo.dojox.mobile._DatePickerMixin because Inheritance from two classes. Inlined dayPattern, monthPattern, value, yearPattern, initSlots, reorderSlots, reset, onDaySet, onMonthSet, onYearSet */ @JSGlobal("dojox.mobile.SpinWheelDatePicker")
+- typings.dojo.dojox.mobile.DatePickerMixin because Inheritance from two classes. Inlined dayPattern, monthPattern, value, yearPattern, initSlots, reorderSlots, reset, onDaySet, onMonthSet, onYearSet */ @JSGlobal("dojox.mobile.SpinWheelDatePicker")
 @js.native
 class SpinWheelDatePicker () extends SpinWheel {
   def this(params: js.Object) = this()
@@ -110,7 +110,7 @@ class SpinWheelDatePicker () extends SpinWheel {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_monthPattern(
     property: monthPattern,
@@ -120,7 +120,7 @@ class SpinWheelDatePicker () extends SpinWheel {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_value(
     property: value,
@@ -130,7 +130,7 @@ class SpinWheelDatePicker () extends SpinWheel {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
   @JSName("watch")
   def watch_yearPattern(
     property: yearPattern,
@@ -140,6 +140,6 @@ class SpinWheelDatePicker () extends SpinWheel {
       /* newValue */ js.UndefOr[String], 
       Unit
     ]
-  ): Anon_Unwatch = js.native
+  ): AnonUnwatch = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ByteLengthQueuingStrategy")
 @js.native
 class ByteLengthQueuingStrategyCls protected () extends ByteLengthQueuingStrategy {
-  def this(options: Anon_HighWaterMark) = this()
+  def this(options: AnonHighWaterMark) = this()
   /* CompleteClass */
   @JSName("highWaterMark")
   override var highWaterMark_ByteLengthQueuingStrategy: Double = js.native

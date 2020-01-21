@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("model")
 trait model_ extends js.Object {
   /**
     *

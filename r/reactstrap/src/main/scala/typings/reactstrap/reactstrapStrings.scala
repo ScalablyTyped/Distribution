@@ -1,8 +1,8 @@
 package typings.reactstrap
 
-import typings.reactstrap.libCustomInputMod.CustomInputType
-import typings.reactstrap.libDropdownMod.Direction
-import typings.reactstrap.libInputMod.InputType
+import typings.reactstrap.customInputMod.CustomInputType
+import typings.reactstrap.dropdownMod.Direction
+import typings.reactstrap.inputMod.InputType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

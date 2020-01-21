@@ -1,7 +1,7 @@
 package typings.webix.webix.ui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Event
+import typings.std.Event_
 import typings.std.HTMLElement
 import typings.webix.webix.DataStore
 import typings.webix.webix.WebixCallback
@@ -39,17 +39,17 @@ class menu () extends baseview {
   @JSName("$customPrint")
   def $customPrint(args: js.Any*): js.Any = js.native
   @JSName("$drag")
-  def $drag(source: HTMLElement, ev: Event): String = js.native
+  def $drag(source: HTMLElement, ev: Event_): String = js.native
   @JSName("$dragHTML")
   def $dragHTML(args: js.Any*): js.Any = js.native
   @JSName("$dragIn")
-  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event): HTMLElement = js.native
+  def $dragIn(source: HTMLElement, target: HTMLElement, ev: Event_): HTMLElement = js.native
   @JSName("$dragMark")
-  def $dragMark(context: js.Any, ev: Event): Boolean = js.native
+  def $dragMark(context: js.Any, ev: Event_): Boolean = js.native
   @JSName("$dragOut")
-  def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event): Unit = js.native
+  def $dragOut(source: HTMLElement, old_target: HTMLElement, new_target: HTMLElement, ev: Event_): Unit = js.native
   @JSName("$drop")
-  def $drop(source: HTMLElement, target: HTMLElement, ev: Event): Unit = js.native
+  def $drop(source: HTMLElement, target: HTMLElement, ev: Event_): Unit = js.native
   @JSName("$dropAllow")
   def $dropAllow(args: js.Any*): js.Any = js.native
   @JSName("$dropHTML")
@@ -57,7 +57,7 @@ class menu () extends baseview {
   @JSName("$tooltipIn")
   def $tooltipIn(node: HTMLElement): HTMLElement = js.native
   @JSName("$tooltipMove")
-  def $tooltipMove(t: HTMLElement, e: Event, text: String): Unit = js.native
+  def $tooltipMove(t: HTMLElement, e: Event_, text: String): Unit = js.native
   @JSName("$tooltipOut")
   def $tooltipOut(): Unit = js.native
   def add(obj: js.Any): String | Double = js.native
@@ -137,7 +137,7 @@ class menu () extends baseview {
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
-  def locate(e: Event): String | Double = js.native
+  def locate(e: Event_): String | Double = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def move(sid: String, tindex: Double): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native

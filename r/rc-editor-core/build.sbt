@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-editor-core"
-version := "0.8.10-293078"
+version := "0.8.10-ddf916"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

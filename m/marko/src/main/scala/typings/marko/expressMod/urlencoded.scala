@@ -1,7 +1,7 @@
 package typings.marko.expressMod
 
-import typings.bodyDashParser.bodyDashParserMod.OptionsUrlencoded
-import typings.connect.connectMod.NextHandleFunction
+import typings.bodyParser.mod.OptionsUrlencoded
+import typings.connect.mod.NextHandleFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

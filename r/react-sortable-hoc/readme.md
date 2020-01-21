@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-sortable-hoc
 
-Typings are for version 1.10.1
+Typings are for version 1.11.0
 
 ## Library description:
 Set of higher-order components to turn any list into a sortable, touch-friendly, animated list

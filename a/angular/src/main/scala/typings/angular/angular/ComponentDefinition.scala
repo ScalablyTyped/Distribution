@@ -1,6 +1,6 @@
 package typings.angular.angular
 
-import typings.angular.angularMod._Global_.Function
+import typings.angular.mod._Global_.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

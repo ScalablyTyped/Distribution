@@ -1,8 +1,8 @@
 package typings.tsutils.utilUtilMod
 
-import typings.typescript.typescriptMod.NoSubstitutionTemplateLiteral
-import typings.typescript.typescriptMod.SourceFile
-import typings.typescript.typescriptMod.StringLiteral
+import typings.typescript.mod.NoSubstitutionTemplateLiteral
+import typings.typescript.mod.SourceFile
+import typings.typescript.mod.StringLiteral
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

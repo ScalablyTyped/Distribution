@@ -1,13 +1,13 @@
 package typings.baseui.spinnerMod
 
-import typings.baseui.Anon_ActivePath
+import typings.baseui.AnonActivePath
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SpinnerProps extends js.Object {
   var color: js.UndefOr[String] = js.undefined
-  var overrides: js.UndefOr[Anon_ActivePath] = js.undefined
+  var overrides: js.UndefOr[AnonActivePath] = js.undefined
   var size: js.UndefOr[Double | String] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
@@ -16,7 +16,7 @@ object SpinnerProps {
   @scala.inline
   def apply(
     color: String = null,
-    overrides: Anon_ActivePath = null,
+    overrides: AnonActivePath = null,
     size: Double | String = null,
     title: String = null
   ): SpinnerProps = {

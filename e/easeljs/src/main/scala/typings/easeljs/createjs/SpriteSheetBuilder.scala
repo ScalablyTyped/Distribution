@@ -1,6 +1,6 @@
 package typings.easeljs.createjs
 
-import typings.createjsDashLib.createjs.EventDispatcher
+import typings.createjsLib.createjs.EventDispatcher
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

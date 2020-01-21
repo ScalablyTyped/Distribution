@@ -5,20 +5,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object angular {
-  import org.scalablytyped.runtime.StringDictionary
-  import typings.std.ArrayLike
-  import typings.std.Document
-  import typings.std.Element
-  import typings.std.Window
-
-  type JQLiteCssProperties = StringDictionary[String | Double | cssPropertySetter]
+  type JQLiteCssProperties = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | typings.angular.cssPropertySetter]
   type JQueryStatic = js.Function1[
-    /* element */ String | Element | Document | Window | JQuery | ArrayLike[Element] | js.Function0[Unit], 
-    JQLite
+    /* element */ java.lang.String | typings.std.Element | typings.std.Document_ | typings.std.Window_ | typings.angular.JQuery | typings.std.ArrayLike[typings.std.Element] | js.Function0[scala.Unit], 
+    typings.angular.JQLite
   ]
   /**
     * The interface used to specify the properties parameter in css()
     */
   // tslint:disable-next-line:class-name
-  type cssPropertySetter = js.Function2[/* index */ Double, /* value */ js.UndefOr[String], String | Double]
+  type cssPropertySetter = js.Function2[
+    /* index */ scala.Double, 
+    /* value */ js.UndefOr[java.lang.String], 
+    java.lang.String | scala.Double
+  ]
 }

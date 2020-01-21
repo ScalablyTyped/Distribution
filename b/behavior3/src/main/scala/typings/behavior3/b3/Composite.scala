@@ -1,7 +1,6 @@
 package typings.behavior3.b3
 
-import org.scalablytyped.runtime.TopLevel
-import typings.behavior3.Anon_Children
+import typings.behavior3.AnonChildren
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,10 +47,6 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Composite.
   */
 class Composite () extends BaseNode {
-  def this(hasChildrenNameTitleProperties: Anon_Children) = this()
+  def this(hasChildrenNameTitleProperties: AnonChildren) = this()
 }
-
-@JSGlobal("b3.COMPOSITE")
-@js.native
-object COMPOSITE extends TopLevel[String]
 

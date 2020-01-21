@@ -5,7 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object container {
-  import typings.extjs.Ext.IBase
-
-  type IMonitor = IBase
+  type IMonitor = typings.extjs.Ext.IBase
 }

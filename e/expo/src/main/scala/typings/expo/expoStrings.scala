@@ -1,6 +1,6 @@
 package typings.expo
 
-import typings.expo.buildLogsRemoteLoggingMod.LogLevel
+import typings.expo.remoteLoggingMod.LogLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

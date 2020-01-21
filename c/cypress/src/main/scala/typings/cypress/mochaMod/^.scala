@@ -1,18 +1,18 @@
 package typings.cypress.mochaMod
 
-import typings.cypress.Mocha
-import typings.cypress.Mocha.HookFunction
-import typings.cypress.Mocha.MochaOptions
-import typings.cypress.Mocha.PendingTestFunction
-import typings.cypress.Mocha.SuiteFunction
-import typings.cypress.Mocha.TestFunction
+import typings.cypress.Mocha_
+import typings.cypress.Mocha_.HookFunction
+import typings.cypress.Mocha_.MochaOptions
+import typings.cypress.Mocha_.PendingTestFunction
+import typings.cypress.Mocha_.SuiteFunction
+import typings.cypress.Mocha_.TestFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("mocha", JSImport.Namespace)
 @js.native
-class ^ () extends Mocha {
+class ^ () extends Mocha_ {
   def this(options: MochaOptions) = this()
 }
 

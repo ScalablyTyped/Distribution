@@ -1,10 +1,10 @@
 package typings.antd
 
-import typings.antd.libStatisticUtilsMod.Formatter
-import typings.antd.libStatisticUtilsMod.valueType
-import typings.react.reactMod.CSSProperties
-import typings.react.reactMod.ReactNode
-import typings.react.reactMod.Validator
+import typings.antd.statisticUtilsMod.Formatter
+import typings.antd.statisticUtilsMod.valueType
+import typings.react.mod.CSSProperties
+import typings.react.mod.ReactNode
+import typings.react.mod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

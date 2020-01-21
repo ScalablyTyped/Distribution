@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
   *
   *
   */
-@JSName("strings")
 trait strings_ extends js.Object {
   /**
     * Adds slashes - useful for passing strings to JavaScript, for example.

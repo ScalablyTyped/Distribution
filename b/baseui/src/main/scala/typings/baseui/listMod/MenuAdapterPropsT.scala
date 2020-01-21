@@ -1,7 +1,7 @@
 package typings.baseui.listMod
 
-import typings.react.reactMod.MouseEvent
-import typings.react.reactMod.NativeMouseEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLLIElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`

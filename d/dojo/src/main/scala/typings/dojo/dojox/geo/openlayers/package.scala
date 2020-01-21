@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object openlayers {
-  type _base = _base_
+  type base = typings.dojo.dojox.geo.openlayers.base_
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /** A StorageEvent is sent to a window when a storage area it has access to is changed within the context of another document. */
 @js.native
-trait StorageEvent extends Event {
+trait StorageEvent extends Event_ {
   /**
     * Returns the key of the storage item being changed.
     */

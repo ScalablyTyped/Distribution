@@ -1,6 +1,6 @@
 package typings.yadda.libMod
 
-import typings.yadda.libContextMod.Properties
+import typings.yadda.contextMod.Properties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

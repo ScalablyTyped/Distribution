@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RoomObjectConstructor
-  extends _Constructor[RoomObject]
+  extends Constructor[RoomObject]
      with Instantiable3[/* x */ Double, /* y */ Double, /* roomName */ String, RoomObject] {
   def apply(x: Double, y: Double, roomName: String): RoomObject = js.native
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-deduplicator"
-version := "2.0-dt-20180425Z-1400cf"
+version := "2.0-dt-20180425Z-a0a91f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

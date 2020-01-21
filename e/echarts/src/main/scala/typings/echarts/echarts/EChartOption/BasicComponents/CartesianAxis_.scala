@@ -1,6 +1,6 @@
 package typings.echarts.echarts.EChartOption.BasicComponents
 
-import typings.echarts.Anon_Max
+import typings.echarts.AnonMax
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.DataObject
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Label
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Pointer
@@ -16,7 +16,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSName("CartesianAxis")
 trait CartesianAxis_ extends js.Object {
   /**
     * Settings related to axis label.
@@ -147,7 +146,7 @@ trait CartesianAxis_ extends js.Object {
     * @default null
     * @see https://echarts.apache.org/option.html#yAxis.max
     */
-  var max: js.UndefOr[Double | String | (js.Function1[/* value */ Anon_Max, Double])] = js.undefined
+  var max: js.UndefOr[Double | String | (js.Function1[/* value */ AnonMax, Double])] = js.undefined
   /**
     * The minimun value of axis.
     * It can be set to a special value `'dataMin'` so that
@@ -163,7 +162,7 @@ trait CartesianAxis_ extends js.Object {
     * @default null
     * @see https://echarts.apache.org/option.html#yAxis.min
     */
-  var min: js.UndefOr[Double | String | (js.Function1[/* value */ Anon_Max, Double])] = js.undefined
+  var min: js.UndefOr[Double | String | (js.Function1[/* value */ AnonMax, Double])] = js.undefined
   /**
     * Maximum gap between split lines.
     * For example, in time axis (type is `'time'`),
@@ -322,8 +321,8 @@ object CartesianAxis_ {
     interval: Int | Double = null,
     inverse: js.UndefOr[Boolean] = js.undefined,
     logBase: Int | Double = null,
-    max: Double | String | (js.Function1[/* value */ Anon_Max, Double]) = null,
-    min: Double | String | (js.Function1[/* value */ Anon_Max, Double]) = null,
+    max: Double | String | (js.Function1[/* value */ AnonMax, Double]) = null,
+    min: Double | String | (js.Function1[/* value */ AnonMax, Double]) = null,
     minInterval: js.Any = null,
     name: String = null,
     nameGap: Int | Double = null,

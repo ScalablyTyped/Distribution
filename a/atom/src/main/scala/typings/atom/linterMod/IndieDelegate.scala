@@ -1,6 +1,6 @@
 package typings.atom.linterMod
 
-import typings.atom.atomMod.Disposable
+import typings.atom.mod.Disposable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

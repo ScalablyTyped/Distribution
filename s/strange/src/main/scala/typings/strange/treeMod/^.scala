@@ -1,7 +1,7 @@
 package typings.strange.treeMod
 
 import typings.std.Date
-import typings.strange.strangeMod.Range
+import typings.strange.mod.Range
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -3,28 +3,28 @@ package typings.pg
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.pg.pgMod.Client
-import typings.pg.pgMod.ClientBase
-import typings.pg.pgMod.ClientConfig
-import typings.pg.pgMod.Connection
-import typings.pg.pgMod.ConnectionConfig
-import typings.pg.pgMod.Defaults
-import typings.pg.pgMod.Events
-import typings.pg.pgMod.Pool
-import typings.pg.pgMod.PoolConfig
-import typings.pg.pgMod.Query
-import typings.pg.pgMod.QueryConfig
-import typings.pg.pgMod.QueryResultRow
+import typings.pg.mod.Client
+import typings.pg.mod.ClientBase
+import typings.pg.mod.ClientConfig
+import typings.pg.mod.Connection
+import typings.pg.mod.ConnectionConfig
+import typings.pg.mod.Defaults_
+import typings.pg.mod.Events
+import typings.pg.mod.Pool
+import typings.pg.mod.PoolConfig
+import typings.pg.mod.Query
+import typings.pg.mod.QueryConfig
+import typings.pg.mod.QueryResultRow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TypeofPg extends js.Object {
-  var Client: Instantiable1[js.UndefOr[String | ClientConfig], typings.pg.pgMod.Client]
-  var ClientBase: Instantiable1[js.UndefOr[String | ClientConfig], typings.pg.pgMod.ClientBase]
-  var Connection: Instantiable1[js.UndefOr[/* config */ ConnectionConfig], typings.pg.pgMod.Connection]
-  var Events: Instantiable0[typings.pg.pgMod.Events]
-  var Pool: Instantiable1[js.UndefOr[/* config */ PoolConfig], typings.pg.pgMod.Pool]
+  var Client: Instantiable1[js.UndefOr[String | ClientConfig], typings.pg.mod.Client]
+  var ClientBase: Instantiable1[js.UndefOr[String | ClientConfig], typings.pg.mod.ClientBase]
+  var Connection: Instantiable1[js.UndefOr[/* config */ ConnectionConfig], typings.pg.mod.Connection]
+  var Events: Instantiable0[typings.pg.mod.Events]
+  var Pool: Instantiable1[js.UndefOr[/* config */ PoolConfig], typings.pg.mod.Pool]
   var Query: Instantiable2[
     js.UndefOr[
       String | (QueryConfig[/* import warning: RewrittenClass.unapply cls was tparam I */ js.Any])
@@ -32,9 +32,9 @@ trait TypeofPg extends js.Object {
     js.UndefOr[
       /* import warning: RewrittenClass.unapply cls was tparam I */ /* values */ js.Any
     ], 
-    typings.pg.pgMod.Query[QueryResultRow, js.Array[js.Any]]
+    typings.pg.mod.Query[QueryResultRow, js.Array[js.Any]]
   ]
-  val defaults: Defaults with ClientConfig
+  val defaults: Defaults_ with ClientConfig
   val native: (/* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any) | Null
 }
 
@@ -55,7 +55,7 @@ object TypeofPg {
       ], 
       Query[QueryResultRow, js.Array[js.Any]]
     ],
-    defaults: Defaults with ClientConfig,
+    defaults: Defaults_ with ClientConfig,
     native: /* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any = null
   ): TypeofPg = {
     val __obj = js.Dynamic.literal(Client = Client.asInstanceOf[js.Any], ClientBase = ClientBase.asInstanceOf[js.Any], Connection = Connection.asInstanceOf[js.Any], Events = Events.asInstanceOf[js.Any], Pool = Pool.asInstanceOf[js.Any], Query = Query.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])

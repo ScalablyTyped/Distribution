@@ -1,7 +1,7 @@
 package typings.primereact
 
-import typings.primereact.componentsChipsChipsMod.ChipsProps
-import typings.react.reactMod.Component
+import typings.primereact.chipsChipsMod.ChipsProps
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

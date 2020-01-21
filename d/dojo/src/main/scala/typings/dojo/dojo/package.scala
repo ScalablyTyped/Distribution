@@ -5,32 +5,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dojo {
-  import typings.dojo.dojo.promise.Callback
-  import typings.dojo.dojo.promise.Promise
-  import typings.dojo.dojo.router.RouterBase
-
-  type NodeList = NodeList_
+  type NodeList = typings.dojo.dojo.NodeList_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/NodeList-data.html
     *
     * Adds data() and removeData() methods to NodeList, and returns NodeList constructor.
     *
     */
-  type NodeList_data = js.Function0[Unit]
+  type NodeListData = js.Function0[scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/NodeList-dom.html
     *
     * Adds DOM related methods to NodeList, and returns NodeList constructor.
     *
     */
-  type NodeList_dom = js.Function0[Unit]
+  type NodeListDom = js.Function0[scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/NodeList-html.html
     *
     * Adds a chainable html method to dojo/query() / NodeList instances for setting/replacing node content
     *
     */
-  type NodeList_html = js.Function0[Unit]
+  type NodeListHtml = js.Function0[scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/NodeList-manipulate.html
     *
@@ -38,16 +34,18 @@ package object dojo {
     * and DOM nodes and their properties.
     *
     */
-  type NodeList_manipulate = js.Function0[Unit]
+  type NodeListManipulate = js.Function0[scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/NodeList-traverse.html
     *
     * Adds chainable methods to dojo/query() / NodeList instances for traversing the DOM
     *
     */
-  type NodeList_traverse = js.Function0[Unit]
-  type dom_prop = dom_prop_
-  type gears = gears_
+  type NodeListTraverse = js.Function0[scala.Unit]
+  type currency = typings.dojo.dojo.currency_
+  type date = typings.dojo.dojo.date_
+  type domProp = typings.dojo.dojo.domProp_
+  type gears = typings.dojo.dojo.gears_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/hash.html
     *
@@ -60,7 +58,11 @@ package object dojo {
     * @param hash       Optionalthe hash is set - #string.
     * @param replace       OptionalIf true, updates the hash value in the current historystate instead of creating a new history state.
     */
-  type hash = js.Function2[/* hash */ js.UndefOr[String], /* replace */ js.UndefOr[Boolean], Unit]
+  type hash = js.Function2[
+    /* hash */ js.UndefOr[java.lang.String], 
+    /* replace */ js.UndefOr[scala.Boolean], 
+    scala.Unit
+  ]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/hccss.html
     *
@@ -69,9 +71,11 @@ package object dojo {
     * Returns has() method;
     *
     */
-  type hccss = js.Function0[Unit]
-  type i18n = i18n_
-  type main = main_
+  type hccss = js.Function0[scala.Unit]
+  type html = typings.dojo.dojo.html_
+  type i18n = typings.dojo.dojo.i18n_
+  type main = typings.dojo.dojo.main_
+  type number = typings.dojo.dojo.number_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/ready.html
     *
@@ -86,14 +90,14 @@ package object dojo {
     * @param callback       OptionalThe function to execute.
     */
   type ready = js.Function3[
-    /* priority */ js.UndefOr[Double], 
+    /* priority */ js.UndefOr[scala.Double], 
     /* context */ js.UndefOr[js.Any], 
     /* callback */ js.UndefOr[js.Function], 
-    Unit
+    scala.Unit
   ]
-  type request = request_
-  type robot = robot_
-  type robotx = robotx_
+  type request = typings.dojo.dojo.request_
+  type robot = typings.dojo.dojo.robot_
+  type robotx = typings.dojo.dojo.robotx_
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/router.html
     *
@@ -101,7 +105,7 @@ package object dojo {
     * module for specifics.
     *
     */
-  type router = RouterBase
+  type router = typings.dojo.dojo.router.RouterBase
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/sniff.html
     *
@@ -109,7 +113,7 @@ package object dojo {
     * It returns the has() function.
     *
     */
-  type sniff = js.Function0[Unit]
+  type sniff = js.Function0[scala.Unit]
   /**
     * Permalink: http://dojotoolkit.org/api/1.9/dojo/when.html
     *
@@ -129,10 +133,10 @@ package object dojo {
     * @param progback       OptionalCallback to be invoked when the promise emits a progress update.
     */
   type when = js.Function4[
-    /* value */ js.Any | Promise[js.Any], 
-    /* callback */ Callback[js.Any, js.Any], 
+    /* value */ js.Any | typings.dojo.dojo.promise.Promise[js.Any], 
+    /* callback */ typings.dojo.dojo.promise.Callback[js.Any, js.Any], 
     /* errback */ js.UndefOr[js.Any], 
     /* progback */ js.UndefOr[js.Any], 
-    js.Any | Promise[js.Any]
+    js.Any | typings.dojo.dojo.promise.Promise[js.Any]
   ]
 }
