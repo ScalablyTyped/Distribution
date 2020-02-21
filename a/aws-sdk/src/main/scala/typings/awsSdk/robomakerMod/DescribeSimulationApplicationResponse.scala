@@ -27,7 +27,7 @@ trait DescribeSimulationApplicationResponse extends js.Object {
     */
   var revisionId: js.UndefOr[RevisionId] = js.native
   /**
-    * Information about the robot software suite.
+    * Information about the robot software suite (ROS distribution).
     */
   var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.native
   /**

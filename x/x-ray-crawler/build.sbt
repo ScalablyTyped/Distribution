@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "x-ray-crawler"
-version := "2.0-dt-20180214Z-13ea69"
-scalaVersion := "2.12.10"
+version := "2.0-dt-20180214Z-77e0a4"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-6c767c",
-  "org.scalablytyped" %%% "http-context" % "1.1-dt-20180214Z-deac7e",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-7c16b9",
+  "org.scalablytyped" %%% "http-context" % "1.1-dt-20180214Z-7d4a4b",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

@@ -14,7 +14,6 @@ trait AnonColors extends js.Object {
   var followSurface: js.UndefOr[Boolean] = js.undefined
   var granularity: js.UndefOr[Double] = js.undefined
   var positions: js.Array[Cartesian3]
-  var width: js.UndefOr[Double] = js.undefined
 }
 
 object AnonColors {
@@ -25,8 +24,7 @@ object AnonColors {
     colorsPerVertex: js.UndefOr[Boolean] = js.undefined,
     ellipsoid: Ellipsoid = null,
     followSurface: js.UndefOr[Boolean] = js.undefined,
-    granularity: Int | Double = null,
-    width: Int | Double = null
+    granularity: Int | Double = null
   ): AnonColors = {
     val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
@@ -34,7 +32,6 @@ object AnonColors {
     if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
     if (!js.isUndefined(followSurface)) __obj.updateDynamic("followSurface")(followSurface.asInstanceOf[js.Any])
     if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonColors]
   }
 }

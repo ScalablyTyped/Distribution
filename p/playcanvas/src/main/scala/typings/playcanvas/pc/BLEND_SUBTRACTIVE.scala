@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLEND_SUBTRACTIVE
+  * @type {number}
   * @description Subtract the color of the source fragment from the destination fragment
   * and write the result to the frame buffer.
   */

@@ -18,6 +18,9 @@ object ramdaStrings {
   sealed trait Evolve extends js.Object
   
   @js.native
+  sealed trait Evolver extends js.Object
+  
+  @js.native
   sealed trait Function extends js.Object
   
   @js.native
@@ -64,6 +67,8 @@ object ramdaStrings {
   def Evolvable: Evolvable = "Evolvable".asInstanceOf[Evolvable]
   @scala.inline
   def Evolve: Evolve = "Evolve".asInstanceOf[Evolve]
+  @scala.inline
+  def Evolver: Evolver = "Evolver".asInstanceOf[Evolver]
   @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
   @scala.inline

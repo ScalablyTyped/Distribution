@@ -1,18 +1,18 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.stackItemTypesMod.IStackItemProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonItem extends js.Object {
-  var Item: StatelessComponent[IStackItemProps]
+  var Item: FunctionComponent[IStackItemProps]
 }
 
 object AnonItem {
   @scala.inline
-  def apply(Item: StatelessComponent[IStackItemProps]): AnonItem = {
+  def apply(Item: FunctionComponent[IStackItemProps]): AnonItem = {
     val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonItem]

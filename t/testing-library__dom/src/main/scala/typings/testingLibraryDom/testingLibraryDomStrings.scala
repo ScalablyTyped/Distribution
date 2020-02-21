@@ -205,6 +205,9 @@ object testingLibraryDomStrings {
   sealed trait pointerUp extends EventType
   
   @js.native
+  sealed trait popState extends EventType
+  
+  @js.native
   sealed trait progress extends EventType
   
   @js.native
@@ -393,6 +396,8 @@ object testingLibraryDomStrings {
   def pointerOver: pointerOver = "pointerOver".asInstanceOf[pointerOver]
   @scala.inline
   def pointerUp: pointerUp = "pointerUp".asInstanceOf[pointerUp]
+  @scala.inline
+  def popState: popState = "popState".asInstanceOf[popState]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline

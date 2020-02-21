@@ -28,6 +28,7 @@ object validationMod extends js.Object {
   }
   
   val specifiedRules: js.Array[ValidationRule] = js.native
+  def ExecutableDefinitionsRule(context: ASTValidationContext): ASTVisitor = js.native
   def FieldsOnCorrectTypeRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def FragmentsOnCompositeTypesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def KnownArgumentNamesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
@@ -36,20 +37,27 @@ object validationMod extends js.Object {
   def KnownFragmentNamesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def KnownTypeNamesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def LoneAnonymousOperationRule(context: ASTValidationContext): ASTVisitor = js.native
+  def LoneSchemaDefinitionRule(context: SDLValidationContext): ASTVisitor = js.native
   def NoFragmentCyclesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def NoUndefinedVariablesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def NoUnusedFragmentsRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def NoUnusedVariablesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def OverlappingFieldsCanBeMergedRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def PossibleFragmentSpreadsRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
+  def PossibleTypeExtensionsRule(context: SDLValidationContext): ASTVisitor = js.native
   def ProvidedRequiredArgumentsRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def ScalarLeafsRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def SingleFieldSubscriptionsRule(context: ASTValidationContext): ASTVisitor = js.native
   def UniqueArgumentNamesRule(context: ASTValidationContext): ASTVisitor = js.native
+  def UniqueDirectiveNamesRule(context: SDLValidationContext): ASTVisitor = js.native
   def UniqueDirectivesPerLocationRule(context: ASTValidationContext): ASTVisitor = js.native
+  def UniqueEnumValueNamesRule(context: SDLValidationContext): ASTVisitor = js.native
+  def UniqueFieldDefinitionNamesRule(context: SDLValidationContext): ASTVisitor = js.native
   def UniqueFragmentNamesRule(context: ASTValidationContext): ASTVisitor = js.native
   def UniqueInputFieldNamesRule(context: ASTValidationContext): ASTVisitor = js.native
   def UniqueOperationNamesRule(context: ASTValidationContext): ASTVisitor = js.native
+  def UniqueOperationTypesRule(context: SDLValidationContext): ASTVisitor = js.native
+  def UniqueTypeNamesRule(context: SDLValidationContext): ASTVisitor = js.native
   def UniqueVariableNamesRule(context: ASTValidationContext): ASTVisitor = js.native
   def ValuesOfCorrectTypeRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native
   def VariablesAreInputTypesRule(context: typings.graphql.validationContextMod.ValidationContext): ASTVisitor = js.native

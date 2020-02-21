@@ -1,6 +1,6 @@
 package typings.relayCompiler
 
-import typings.relayCompiler.graphQLCompilerContextMod.GraphQLCompilerContext
+import typings.relayCompiler.compilerContextMod.CompilerContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object maskTransformMod extends js.Object {
     * A transform that inlines fragment spreads with the @relay(mask: false)
     * directive.
     */
-  def transform(context: GraphQLCompilerContext): GraphQLCompilerContext = js.native
+  def transform(context: CompilerContext): CompilerContext = js.native
 }
 

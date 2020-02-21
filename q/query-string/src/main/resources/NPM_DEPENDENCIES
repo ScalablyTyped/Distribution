@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "query-string" : "6.10.1"
+      "query-string" : "6.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "query-string" : "6.10.1"
+      "query-string" : "6.11.0"
     }
   ],
   "compile-devDependencies" : [

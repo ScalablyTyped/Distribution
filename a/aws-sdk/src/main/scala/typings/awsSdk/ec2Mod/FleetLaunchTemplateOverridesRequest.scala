@@ -27,7 +27,7 @@ trait FleetLaunchTemplateOverridesRequest extends js.Object {
     */
   var Priority: js.UndefOr[Double] = js.native
   /**
-    * The ID of the subnet in which to launch the instances.
+    * The IDs of the subnets in which to launch the instances. Separate multiple subnet IDs using commas (for example, subnet-1234abcdeexample1, subnet-0987cdef6example2). A request of type instant can have only one subnet ID.
     */
   var SubnetId: js.UndefOr[String] = js.native
   /**

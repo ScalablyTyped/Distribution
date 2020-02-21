@@ -100,12 +100,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateAttendeeResponse, Unit]
   ): Request[BatchCreateAttendeeResponse, AWSError] = js.native
   /**
-    * Adds up to 50 members to a chat room. Members can be either users or bots. The member role designates whether the member is a chat room administrator or a general chat room member.
+    * Adds up to 50 members to a chat room in an Amazon Chime Enterprise account. Members can be either users or bots. The member role designates whether the member is a chat room administrator or a general chat room member.
     */
   def batchCreateRoomMembership(): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
   def batchCreateRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateRoomMembershipResponse, Unit]): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
   /**
-    * Adds up to 50 members to a chat room. Members can be either users or bots. The member role designates whether the member is a chat room administrator or a general chat room member.
+    * Adds up to 50 members to a chat room in an Amazon Chime Enterprise account. Members can be either users or bots. The member role designates whether the member is a chat room administrator or a general chat room member.
     */
   def batchCreateRoomMembership(params: BatchCreateRoomMembershipRequest): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
   def batchCreateRoomMembership(
@@ -243,12 +243,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePhoneNumberOrderResponse, Unit]
   ): Request[CreatePhoneNumberOrderResponse, AWSError] = js.native
   /**
-    * Creates a chat room for the specified Amazon Chime account.
+    * Creates a chat room for the specified Amazon Chime Enterprise account.
     */
   def createRoom(): Request[CreateRoomResponse, AWSError] = js.native
   def createRoom(callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomResponse, Unit]): Request[CreateRoomResponse, AWSError] = js.native
   /**
-    * Creates a chat room for the specified Amazon Chime account.
+    * Creates a chat room for the specified Amazon Chime Enterprise account.
     */
   def createRoom(params: CreateRoomRequest): Request[CreateRoomResponse, AWSError] = js.native
   def createRoom(
@@ -256,12 +256,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomResponse, Unit]
   ): Request[CreateRoomResponse, AWSError] = js.native
   /**
-    * Adds a member to a chat room. A member can be either a user or a bot. The member role designates whether the member is a chat room administrator or a general chat room member.
+    * Adds a member to a chat room in an Amazon Chime Enterprise account. A member can be either a user or a bot. The member role designates whether the member is a chat room administrator or a general chat room member.
     */
   def createRoomMembership(): Request[CreateRoomMembershipResponse, AWSError] = js.native
   def createRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomMembershipResponse, Unit]): Request[CreateRoomMembershipResponse, AWSError] = js.native
   /**
-    * Adds a member to a chat room. A member can be either a user or a bot. The member role designates whether the member is a chat room administrator or a general chat room member.
+    * Adds a member to a chat room in an Amazon Chime Enterprise account. A member can be either a user or a bot. The member role designates whether the member is a chat room administrator or a general chat room member.
     */
   def createRoomMembership(params: CreateRoomMembershipRequest): Request[CreateRoomMembershipResponse, AWSError] = js.native
   def createRoomMembership(
@@ -295,12 +295,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorResponse, Unit]
   ): Request[CreateVoiceConnectorResponse, AWSError] = js.native
   /**
-    * Creates an Amazon Chime Voice Connector group under the administrator's AWS account. You can associate up to three existing Amazon Chime Voice Connectors with the Amazon Chime Voice Connector group by including VoiceConnectorItems in the request. You can include Amazon Chime Voice Connectors from different AWS Regions in your group. This creates a fault tolerant mechanism for fallback in case of availability events.
+    * Creates an Amazon Chime Voice Connector group under the administrator's AWS account. You can associate Amazon Chime Voice Connectors with the Amazon Chime Voice Connector group by including VoiceConnectorItems in the request. You can include Amazon Chime Voice Connectors from different AWS Regions in your group. This creates a fault tolerant mechanism for fallback in case of availability events.
     */
   def createVoiceConnectorGroup(): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
   def createVoiceConnectorGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorGroupResponse, Unit]): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
   /**
-    * Creates an Amazon Chime Voice Connector group under the administrator's AWS account. You can associate up to three existing Amazon Chime Voice Connectors with the Amazon Chime Voice Connector group by including VoiceConnectorItems in the request. You can include Amazon Chime Voice Connectors from different AWS Regions in your group. This creates a fault tolerant mechanism for fallback in case of availability events.
+    * Creates an Amazon Chime Voice Connector group under the administrator's AWS account. You can associate Amazon Chime Voice Connectors with the Amazon Chime Voice Connector group by including VoiceConnectorItems in the request. You can include Amazon Chime Voice Connectors from different AWS Regions in your group. This creates a fault tolerant mechanism for fallback in case of availability events.
     */
   def createVoiceConnectorGroup(params: CreateVoiceConnectorGroupRequest): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
   def createVoiceConnectorGroup(
@@ -373,22 +373,22 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a chat room.
+    * Deletes a chat room in an Amazon Chime Enterprise account.
     */
   def deleteRoom(): Request[js.Object, AWSError] = js.native
   def deleteRoom(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a chat room.
+    * Deletes a chat room in an Amazon Chime Enterprise account.
     */
   def deleteRoom(params: DeleteRoomRequest): Request[js.Object, AWSError] = js.native
   def deleteRoom(params: DeleteRoomRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes a member from a chat room.
+    * Removes a member from a chat room in an Amazon Chime Enterprise account.
     */
   def deleteRoomMembership(): Request[js.Object, AWSError] = js.native
   def deleteRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes a member from a chat room.
+    * Removes a member from a chat room in an Amazon Chime Enterprise account.
     */
   def deleteRoomMembership(params: DeleteRoomMembershipRequest): Request[js.Object, AWSError] = js.native
   def deleteRoomMembership(
@@ -669,12 +669,12 @@ trait Chime extends Service {
   def getPhoneNumberSettings(): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
   def getPhoneNumberSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetPhoneNumberSettingsResponse, Unit]): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
   /**
-    * Retrieves room details, such as the room name.
+    * Retrieves room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
   def getRoom(): Request[GetRoomResponse, AWSError] = js.native
   def getRoom(callback: js.Function2[/* err */ AWSError, /* data */ GetRoomResponse, Unit]): Request[GetRoomResponse, AWSError] = js.native
   /**
-    * Retrieves room details, such as the room name.
+    * Retrieves room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
   def getRoom(params: GetRoomRequest): Request[GetRoomResponse, AWSError] = js.native
   def getRoom(
@@ -896,12 +896,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumbersResponse, Unit]
   ): Request[ListPhoneNumbersResponse, AWSError] = js.native
   /**
-    * Lists the membership details for the specified room, such as the members' IDs, email addresses, and names.
+    * Lists the membership details for the specified room in an Amazon Chime Enterprise account, such as the members' IDs, email addresses, and names.
     */
   def listRoomMemberships(): Request[ListRoomMembershipsResponse, AWSError] = js.native
   def listRoomMemberships(callback: js.Function2[/* err */ AWSError, /* data */ ListRoomMembershipsResponse, Unit]): Request[ListRoomMembershipsResponse, AWSError] = js.native
   /**
-    * Lists the membership details for the specified room, such as the members' IDs, email addresses, and names.
+    * Lists the membership details for the specified room in an Amazon Chime Enterprise account, such as the members' IDs, email addresses, and names.
     */
   def listRoomMemberships(params: ListRoomMembershipsRequest): Request[ListRoomMembershipsResponse, AWSError] = js.native
   def listRoomMemberships(
@@ -909,12 +909,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListRoomMembershipsResponse, Unit]
   ): Request[ListRoomMembershipsResponse, AWSError] = js.native
   /**
-    * Lists the room details for the specified Amazon Chime account. Optionally, filter the results by a member ID (user ID or bot ID) to see a list of rooms that the member belongs to.
+    * Lists the room details for the specified Amazon Chime Enterprise account. Optionally, filter the results by a member ID (user ID or bot ID) to see a list of rooms that the member belongs to.
     */
   def listRooms(): Request[ListRoomsResponse, AWSError] = js.native
   def listRooms(callback: js.Function2[/* err */ AWSError, /* data */ ListRoomsResponse, Unit]): Request[ListRoomsResponse, AWSError] = js.native
   /**
-    * Lists the room details for the specified Amazon Chime account. Optionally, filter the results by a member ID (user ID or bot ID) to see a list of rooms that the member belongs to.
+    * Lists the room details for the specified Amazon Chime Enterprise account. Optionally, filter the results by a member ID (user ID or bot ID) to see a list of rooms that the member belongs to.
     */
   def listRooms(params: ListRoomsRequest): Request[ListRoomsResponse, AWSError] = js.native
   def listRooms(
@@ -1209,12 +1209,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Updates room details, such as the room name.
+    * Updates room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
   def updateRoom(): Request[UpdateRoomResponse, AWSError] = js.native
   def updateRoom(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomResponse, Unit]): Request[UpdateRoomResponse, AWSError] = js.native
   /**
-    * Updates room details, such as the room name.
+    * Updates room details, such as the room name, for a room in an Amazon Chime Enterprise account.
     */
   def updateRoom(params: UpdateRoomRequest): Request[UpdateRoomResponse, AWSError] = js.native
   def updateRoom(
@@ -1222,12 +1222,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomResponse, Unit]
   ): Request[UpdateRoomResponse, AWSError] = js.native
   /**
-    * Updates room membership details, such as the member role. The member role designates whether the member is a chat room administrator or a general chat room member. The member role can be updated only for user IDs.
+    * Updates room membership details, such as the member role, for a room in an Amazon Chime Enterprise account. The member role designates whether the member is a chat room administrator or a general chat room member. The member role can be updated only for user IDs.
     */
   def updateRoomMembership(): Request[UpdateRoomMembershipResponse, AWSError] = js.native
   def updateRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomMembershipResponse, Unit]): Request[UpdateRoomMembershipResponse, AWSError] = js.native
   /**
-    * Updates room membership details, such as the member role. The member role designates whether the member is a chat room administrator or a general chat room member. The member role can be updated only for user IDs.
+    * Updates room membership details, such as the member role, for a room in an Amazon Chime Enterprise account. The member role designates whether the member is a chat room administrator or a general chat room member. The member role can be updated only for user IDs.
     */
   def updateRoomMembership(params: UpdateRoomMembershipRequest): Request[UpdateRoomMembershipResponse, AWSError] = js.native
   def updateRoomMembership(

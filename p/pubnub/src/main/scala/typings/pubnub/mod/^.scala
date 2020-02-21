@@ -16,5 +16,6 @@ object ^ extends js.Object {
   var CATEGORIES: Categories = js.native
   var OPERATIONS: Operations = js.native
   def generateUUID(): String = js.native
+  def notificationPayload(title: String, body: String): NotificationsPayload = js.native
 }
 

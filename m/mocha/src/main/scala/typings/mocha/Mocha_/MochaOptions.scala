@@ -43,8 +43,8 @@ trait MochaOptions extends js.Object {
   var retries: js.UndefOr[Double] = js.undefined
   /** milliseconds to wait before considering a test slow. */
   var slow: js.UndefOr[Double] = js.undefined
-  /** timeout in milliseconds. */
-  var timeout: js.UndefOr[Double] = js.undefined
+  /** timeout in milliseconds or time string like '1s'. */
+  var timeout: js.UndefOr[Double | String] = js.undefined
   /** Test interfaces ("bdd", "tdd", "exports", etc.). */
   var ui: js.UndefOr[Interface] = js.undefined
   /** Emit color output. */
@@ -73,7 +73,7 @@ object MochaOptions {
     reporterOptions: js.Any = null,
     retries: Int | Double = null,
     slow: Int | Double = null,
-    timeout: Int | Double = null,
+    timeout: Double | String = null,
     ui: Interface = null,
     useColors: js.UndefOr[Boolean] = js.undefined
   ): MochaOptions = {

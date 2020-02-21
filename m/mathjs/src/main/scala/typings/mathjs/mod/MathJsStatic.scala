@@ -1,5 +1,6 @@
 package typings.mathjs.mod
 
+import typings.decimalJs.mod.Decimal
 import typings.mathjs.AnonCoefficients
 import typings.mathjs.AnonL
 import typings.mathjs.AnonLR
@@ -273,6 +274,10 @@ trait MathJsStatic extends FactoryDependencies {
   def bignumber(x: Fraction): BigNumber = js.native
   def bignumber(x: MathArray): BigNumber = js.native
   def bignumber(x: Matrix): BigNumber = js.native
+  def bitAnd(x: js.Array[js.Array[Double] | Double], y: Double): NoLiteralType[js.Array[Double]] = js.native
+  def bitAnd(x: js.Array[js.Array[Double] | Double], y: BigNumber): NoLiteralType[js.Array[Double]] = js.native
+  def bitAnd(x: js.Array[js.Array[Double] | Double], y: MathArray): NoLiteralType[js.Array[Double]] = js.native
+  def bitAnd(x: js.Array[js.Array[Double] | Double], y: Matrix): NoLiteralType[js.Array[Double]] = js.native
   /*************************************************************************
     * Bitwise functions
     ************************************************************************/
@@ -283,22 +288,18 @@ trait MathJsStatic extends FactoryDependencies {
     * @param y Second value to and
     * @returns AND of x and y
     */
-  def bitAnd(x: Double, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: Double, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: Double, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: Double, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: BigNumber, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: BigNumber, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: BigNumber, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: BigNumber, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: MathArray, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: MathArray, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: MathArray, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: MathArray, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: Matrix, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: Matrix, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: Matrix, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitAnd(x: Matrix, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
+  def bitAnd(x: Double, y: Double): NoLiteralType[Double] = js.native
+  def bitAnd(x: Double, y: BigNumber): NoLiteralType[Double] = js.native
+  def bitAnd(x: Double, y: MathArray): NoLiteralType[Double] = js.native
+  def bitAnd(x: Double, y: Matrix): NoLiteralType[Double] = js.native
+  def bitAnd(x: Decimal, y: Double): NoLiteralType[Decimal] = js.native
+  def bitAnd(x: Decimal, y: BigNumber): NoLiteralType[Decimal] = js.native
+  def bitAnd(x: Decimal, y: MathArray): NoLiteralType[Decimal] = js.native
+  def bitAnd(x: Decimal, y: Matrix): NoLiteralType[Decimal] = js.native
+  def bitAnd(x: Matrix, y: Double): NoLiteralType[Matrix] = js.native
+  def bitAnd(x: Matrix, y: BigNumber): NoLiteralType[Matrix] = js.native
+  def bitAnd(x: Matrix, y: MathArray): NoLiteralType[Matrix] = js.native
+  def bitAnd(x: Matrix, y: Matrix): NoLiteralType[Matrix] = js.native
   /**
     * Bitwise NOT value, ~x. For matrices, the function is evaluated
     * element wise. For units, the function is evaluated on the best prefix
@@ -322,6 +323,10 @@ trait MathJsStatic extends FactoryDependencies {
   def bitOr(x: BigNumber, y: BigNumber): BigNumber = js.native
   def bitOr(x: MathArray, y: MathArray): MathArray = js.native
   def bitOr(x: Matrix, y: Matrix): Matrix = js.native
+  def bitXor(x: js.Array[js.Array[Double] | Double], y: Double): NoLiteralType[js.Array[Double]] = js.native
+  def bitXor(x: js.Array[js.Array[Double] | Double], y: BigNumber): NoLiteralType[js.Array[Double]] = js.native
+  def bitXor(x: js.Array[js.Array[Double] | Double], y: MathArray): NoLiteralType[js.Array[Double]] = js.native
+  def bitXor(x: js.Array[js.Array[Double] | Double], y: Matrix): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Bitwise XOR two values, x ^ y. For matrices, the function is
     * evaluated element wise.
@@ -329,22 +334,18 @@ trait MathJsStatic extends FactoryDependencies {
     * @param y Second value to xor
     * @returns XOR of x and y
     */
-  def bitXor(x: Double, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: Double, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: Double, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: Double, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: BigNumber, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: BigNumber, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: BigNumber, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: BigNumber, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: MathArray, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: MathArray, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: MathArray, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: MathArray, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: Matrix, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: Matrix, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: Matrix, y: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def bitXor(x: Matrix, y: Matrix): Double | BigNumber | MathArray | Matrix = js.native
+  def bitXor(x: Double, y: Double): NoLiteralType[Double] = js.native
+  def bitXor(x: Double, y: BigNumber): NoLiteralType[Double] = js.native
+  def bitXor(x: Double, y: MathArray): NoLiteralType[Double] = js.native
+  def bitXor(x: Double, y: Matrix): NoLiteralType[Double] = js.native
+  def bitXor(x: Decimal, y: Double): NoLiteralType[Decimal] = js.native
+  def bitXor(x: Decimal, y: BigNumber): NoLiteralType[Decimal] = js.native
+  def bitXor(x: Decimal, y: MathArray): NoLiteralType[Decimal] = js.native
+  def bitXor(x: Decimal, y: Matrix): NoLiteralType[Decimal] = js.native
+  def bitXor(x: Matrix, y: Double): NoLiteralType[Matrix] = js.native
+  def bitXor(x: Matrix, y: BigNumber): NoLiteralType[Matrix] = js.native
+  def bitXor(x: Matrix, y: MathArray): NoLiteralType[Matrix] = js.native
+  def bitXor(x: Matrix, y: Matrix): NoLiteralType[Matrix] = js.native
   def boolean(): Boolean | MathArray | Matrix = js.native
   /**
     * Create a boolean or convert a string or number to a boolean. In case
@@ -440,10 +441,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param k Number of objects in the subset
     * @returns Number of possible combinations
     */
-  def combinations(n: Double, k: Double): Double | BigNumber = js.native
-  def combinations(n: Double, k: BigNumber): Double | BigNumber = js.native
-  def combinations(n: BigNumber, k: Double): Double | BigNumber = js.native
-  def combinations(n: BigNumber, k: BigNumber): Double | BigNumber = js.native
+  def combinations(n: Double, k: Double): NoLiteralType[Double] = js.native
+  def combinations(n: Double, k: BigNumber): NoLiteralType[Double] = js.native
+  def combinations(n: Decimal, k: Double): NoLiteralType[Decimal] = js.native
+  def combinations(n: Decimal, k: BigNumber): NoLiteralType[Decimal] = js.native
   def compare(x: String, y: String): Double | BigNumber | Fraction | MathArray | Matrix = js.native
   def compare(x: String, y: MathType): Double | BigNumber | Fraction | MathArray | Matrix = js.native
   def compare(x: MathType, y: String): Double | BigNumber | Fraction | MathArray | Matrix = js.native
@@ -534,10 +535,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param k Number of objects in the subset
     * @returns Returns the composition counts of n into k parts.
     */
-  def composition(n: Double, k: Double): Double | BigNumber = js.native
-  def composition(n: Double, k: BigNumber): Double | BigNumber = js.native
-  def composition(n: BigNumber, k: Double): Double | BigNumber = js.native
-  def composition(n: BigNumber, k: BigNumber): Double | BigNumber = js.native
+  def composition(n: Double, k: Double): NoLiteralType[Double] = js.native
+  def composition(n: Double, k: BigNumber): NoLiteralType[Double] = js.native
+  def composition(n: Decimal, k: Double): NoLiteralType[Decimal] = js.native
+  def composition(n: Decimal, k: BigNumber): NoLiteralType[Decimal] = js.native
   /*************************************************************************
     * Matrix functions
     ************************************************************************/
@@ -567,6 +568,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns the current configuration
     */
   def config(options: ConfigOptions): ConfigOptions = js.native
+  def conj(x: js.Array[js.Array[Double] | Double]): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Compute the complex conjugate of a complex value. If x = a+bi, the
     * complex conjugate of x is a - bi. For matrices, the function is
@@ -574,11 +576,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param x A complex number or array with complex numbers
     * @returns The complex conjugate of x
     */
-  def conj(x: Double): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def conj(x: BigNumber): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def conj(x: Complex): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def conj(x: MathArray): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def conj(x: Matrix): Double | BigNumber | Complex | MathArray | Matrix = js.native
+  def conj(x: Double): NoLiteralType[Double] = js.native
+  def conj(x: Decimal): NoLiteralType[Decimal] = js.native
+  def conj(x: Complex): NoLiteralType[Complex] = js.native
+  def conj(x: Matrix): NoLiteralType[Matrix] = js.native
   /**
     * Calculate the cosine of a value. For matrices, the function is
     * evaluated element wise.
@@ -865,6 +866,7 @@ trait MathJsStatic extends FactoryDependencies {
   def equalText(x: Matrix, y: String): Double | MathArray | Matrix = js.native
   def equalText(x: Matrix, y: MathArray): Double | MathArray | Matrix = js.native
   def equalText(x: Matrix, y: Matrix): Double | MathArray | Matrix = js.native
+  def erf(x: js.Array[js.Array[Double] | Double]): NoLiteralType[js.Array[Double]] = js.native
   /*************************************************************************
     * Special functions
     ************************************************************************/
@@ -874,9 +876,8 @@ trait MathJsStatic extends FactoryDependencies {
     * @param x A real number
     * @returns The erf of x
     */
-  def erf(x: Double): Double | MathArray | Matrix = js.native
-  def erf(x: MathArray): Double | MathArray | Matrix = js.native
-  def erf(x: Matrix): Double | MathArray | Matrix = js.native
+  def erf(x: Double): NoLiteralType[Double] = js.native
+  def erf(x: Matrix): NoLiteralType[Matrix] = js.native
   def evaluate(expr: js.Array[MathExpression]): js.Any = js.native
   def evaluate(expr: js.Array[MathExpression], scope: js.Object): js.Any = js.native
   /**
@@ -921,6 +922,7 @@ trait MathJsStatic extends FactoryDependencies {
   def expm1(x: Complex): Complex = js.native
   def expm1(x: MathArray): MathArray = js.native
   def expm1(x: Matrix): Matrix = js.native
+  def factorial(n: js.Array[js.Array[Double] | Double]): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Compute the factorial of a value Factorial only supports an integer
     * value as argument. For matrices, the function is evaluated element
@@ -928,10 +930,9 @@ trait MathJsStatic extends FactoryDependencies {
     * @param n An integer number
     * @returns The factorial of n
     */
-  def factorial(n: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def factorial(n: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def factorial(n: MathArray): Double | BigNumber | MathArray | Matrix = js.native
-  def factorial(n: Matrix): Double | BigNumber | MathArray | Matrix = js.native
+  def factorial(n: Double): NoLiteralType[Double] = js.native
+  def factorial(n: Decimal): NoLiteralType[Decimal] = js.native
+  def factorial(n: Matrix): NoLiteralType[Matrix] = js.native
   def filter(
     x: js.Array[String] | MathArray,
     test: js.Function3[/* value */ js.Any, /* index */ js.Any, js.Array[String] | MathArray | Matrix, Boolean]
@@ -973,8 +974,8 @@ trait MathJsStatic extends FactoryDependencies {
     * @param x Matrix to be flattened
     * @returns Returns the flattened matrix
     */
-  def flatten(x: MathArray): MathArray | Matrix = js.native
-  def flatten(x: Matrix): MathArray | Matrix = js.native
+  def flatten(x: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def flatten(x: Matrix): Matrix = js.native
   /**
     * Round a value towards minus infinity. For matrices, the function is
     * evaluated element wise.
@@ -988,8 +989,13 @@ trait MathJsStatic extends FactoryDependencies {
   def floor(x: MathArray): MathArray = js.native
   def floor(x: Matrix): Matrix = js.native
   def forEach(
-    x: MathArray,
-    callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* matrix */ Matrix | MathArray, scala.Unit]
+    x: js.Array[js.Array[Double] | Double],
+    callback: js.Function3[
+      /* value */ js.Any, 
+      /* index */ js.Any, 
+      /* matrix */ js.Array[js.Array[Double] | Double], 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   /**
     * Iterate over all elements of a matrix/array, and executes the given
@@ -1001,7 +1007,7 @@ trait MathJsStatic extends FactoryDependencies {
     */
   def forEach(
     x: Matrix,
-    callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* matrix */ Matrix | MathArray, scala.Unit]
+    callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* matrix */ Matrix, scala.Unit]
   ): scala.Unit = js.native
   /*************************************************************************
     * String functions
@@ -1197,15 +1203,15 @@ trait MathJsStatic extends FactoryDependencies {
   def intersect(w: Matrix, x: Matrix, y: MathArray, z: Matrix): MathArray = js.native
   def intersect(w: Matrix, x: Matrix, y: Matrix, z: MathArray): MathArray = js.native
   def intersect(w: Matrix, x: Matrix, y: Matrix, z: Matrix): MathArray = js.native
+  def inv(x: js.Array[js.Array[Double] | Double]): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Calculate the inverse of a square matrix.
     * @param x Matrix to be inversed
     * @returns The inverse of x
     */
-  def inv(x: Double): Double | Complex | MathArray | Matrix = js.native
-  def inv(x: Complex): Double | Complex | MathArray | Matrix = js.native
-  def inv(x: MathArray): Double | Complex | MathArray | Matrix = js.native
-  def inv(x: Matrix): Double | Complex | MathArray | Matrix = js.native
+  def inv(x: Double): NoLiteralType[Double] = js.native
+  def inv(x: Complex): NoLiteralType[Complex] = js.native
+  def inv(x: Matrix): NoLiteralType[Matrix] = js.native
   /**
     * Test whether a value is an integer number. The function supports
     * number, BigNumber, and Fraction. The function is evaluated
@@ -1359,6 +1365,8 @@ trait MathJsStatic extends FactoryDependencies {
   def lcm(a: BigNumber, b: BigNumber): BigNumber = js.native
   def lcm(a: MathArray, b: MathArray): MathArray = js.native
   def lcm(a: Matrix, b: Matrix): Matrix = js.native
+  def leftShift(x: js.Array[js.Array[Double] | Double], y: Double): NoLiteralType[js.Array[Double]] = js.native
+  def leftShift(x: js.Array[js.Array[Double] | Double], y: BigNumber): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Bitwise left logical shift of a value x by y number of bits, x << y.
     * For matrices, the function is evaluated element wise. For units, the
@@ -1367,14 +1375,16 @@ trait MathJsStatic extends FactoryDependencies {
     * @param y Amount of shifts
     * @returns x shifted left y times
     */
-  def leftShift(x: Double, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def leftShift(x: Double, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def leftShift(x: BigNumber, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def leftShift(x: BigNumber, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def leftShift(x: MathArray, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def leftShift(x: MathArray, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def leftShift(x: Matrix, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def leftShift(x: Matrix, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
+  def leftShift(x: Double, y: Double): NoLiteralType[Double] = js.native
+  def leftShift(x: Double, y: BigNumber): NoLiteralType[Double] = js.native
+  def leftShift(x: Decimal, y: Double): NoLiteralType[Decimal] = js.native
+  def leftShift(x: Decimal, y: BigNumber): NoLiteralType[Decimal] = js.native
+  def leftShift(x: Matrix, y: Double): NoLiteralType[Matrix] = js.native
+  def leftShift(x: Matrix, y: BigNumber): NoLiteralType[Matrix] = js.native
+  def log(x: js.Array[js.Array[Double] | Double]): NoLiteralType[js.Array[Double]] = js.native
+  def log(x: js.Array[js.Array[Double] | Double], base: Double): NoLiteralType[js.Array[Double]] = js.native
+  def log(x: js.Array[js.Array[Double] | Double], base: BigNumber): NoLiteralType[js.Array[Double]] = js.native
+  def log(x: js.Array[js.Array[Double] | Double], base: Complex): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Calculate the logarithm of a value. For matrices, the function is
     * evaluated element wise.
@@ -1383,26 +1393,22 @@ trait MathJsStatic extends FactoryDependencies {
     * natural logarithm of x is calculated. Default value: e.
     * @returns Returns the logarithm of x
     */
-  def log(x: Double): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Double, base: Double): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Double, base: BigNumber): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Double, base: Complex): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: BigNumber): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: BigNumber, base: Double): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: BigNumber, base: BigNumber): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: BigNumber, base: Complex): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Complex): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Complex, base: Double): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Complex, base: BigNumber): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Complex, base: Complex): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: MathArray): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: MathArray, base: Double): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: MathArray, base: BigNumber): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: MathArray, base: Complex): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Matrix): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Matrix, base: Double): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Matrix, base: BigNumber): Double | BigNumber | Complex | MathArray | Matrix = js.native
-  def log(x: Matrix, base: Complex): Double | BigNumber | Complex | MathArray | Matrix = js.native
+  def log(x: Double): NoLiteralType[Double] = js.native
+  def log(x: Double, base: Double): NoLiteralType[Double] = js.native
+  def log(x: Double, base: BigNumber): NoLiteralType[Double] = js.native
+  def log(x: Double, base: Complex): NoLiteralType[Double] = js.native
+  def log(x: Decimal): NoLiteralType[Decimal] = js.native
+  def log(x: Decimal, base: Double): NoLiteralType[Decimal] = js.native
+  def log(x: Decimal, base: BigNumber): NoLiteralType[Decimal] = js.native
+  def log(x: Decimal, base: Complex): NoLiteralType[Decimal] = js.native
+  def log(x: Complex): NoLiteralType[Complex] = js.native
+  def log(x: Complex, base: Double): NoLiteralType[Complex] = js.native
+  def log(x: Complex, base: BigNumber): NoLiteralType[Complex] = js.native
+  def log(x: Complex, base: Complex): NoLiteralType[Complex] = js.native
+  def log(x: Matrix): NoLiteralType[Matrix] = js.native
+  def log(x: Matrix, base: Double): NoLiteralType[Matrix] = js.native
+  def log(x: Matrix, base: BigNumber): NoLiteralType[Matrix] = js.native
+  def log(x: Matrix, base: Complex): NoLiteralType[Matrix] = js.native
   /**
     * Calculate the 10-base of a value. This is the same as calculating
     * log(x, 10). For matrices, the function is evaluated element wise.
@@ -1517,14 +1523,14 @@ trait MathJsStatic extends FactoryDependencies {
   def mad(array: MathArray): js.Any = js.native
   def mad(array: Matrix): js.Any = js.native
   def map(
-    x: MathArray,
+    x: js.Array[js.Array[Double] | Double],
     callback: js.Function3[
       /* value */ js.Any, 
       /* index */ js.Any, 
-      /* matrix */ Matrix | MathArray, 
+      /* matrix */ js.Array[js.Array[Double] | Double], 
       MathType | String
     ]
-  ): Matrix | MathArray = js.native
+  ): js.Array[Double] = js.native
   /**
     * Iterate over all elements of a matrix/array, and executes the given
     * callback function.
@@ -1536,13 +1542,8 @@ trait MathJsStatic extends FactoryDependencies {
     */
   def map(
     x: Matrix,
-    callback: js.Function3[
-      /* value */ js.Any, 
-      /* index */ js.Any, 
-      /* matrix */ Matrix | MathArray, 
-      MathType | String
-    ]
-  ): Matrix | MathArray = js.native
+    callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* matrix */ Matrix, MathType | String]
+  ): Matrix = js.native
   /**
     * Create a Matrix. The function creates a new math.type.Matrix object
     * from an Array. A Matrix has utility functions to manipulate the data
@@ -1645,6 +1646,11 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The minimum value
     */
   def min(args: MathType*): js.Any = js.native
+  def mod(x: js.Array[js.Array[Double] | Double], y: Double): NoLiteralType[js.Array[Double]] = js.native
+  def mod(x: js.Array[js.Array[Double] | Double], y: BigNumber): NoLiteralType[js.Array[Double]] = js.native
+  def mod(x: js.Array[js.Array[Double] | Double], y: Fraction): NoLiteralType[js.Array[Double]] = js.native
+  def mod(x: js.Array[js.Array[Double] | Double], y: MathArray): NoLiteralType[js.Array[Double]] = js.native
+  def mod(x: js.Array[js.Array[Double] | Double], y: Matrix): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Calculates the modulus, the remainder of an integer division. For
     * matrices, the function is evaluated element wise. The modulus is
@@ -1654,10 +1660,26 @@ trait MathJsStatic extends FactoryDependencies {
     * @param y Divisor
     * @returns Returns the remainder of x divided by y
     */
-  def mod(
-    x: Double | BigNumber | Fraction | MathArray | Matrix,
-    y: Double | BigNumber | Fraction | MathArray | Matrix
-  ): Double | BigNumber | Fraction | MathArray | Matrix = js.native
+  def mod(x: Double, y: Double): NoLiteralType[Double] = js.native
+  def mod(x: Double, y: BigNumber): NoLiteralType[Double] = js.native
+  def mod(x: Double, y: Fraction): NoLiteralType[Double] = js.native
+  def mod(x: Double, y: MathArray): NoLiteralType[Double] = js.native
+  def mod(x: Double, y: Matrix): NoLiteralType[Double] = js.native
+  def mod(x: Decimal, y: Double): NoLiteralType[Decimal] = js.native
+  def mod(x: Decimal, y: BigNumber): NoLiteralType[Decimal] = js.native
+  def mod(x: Decimal, y: Fraction): NoLiteralType[Decimal] = js.native
+  def mod(x: Decimal, y: MathArray): NoLiteralType[Decimal] = js.native
+  def mod(x: Decimal, y: Matrix): NoLiteralType[Decimal] = js.native
+  def mod(x: Fraction, y: Double): NoLiteralType[Fraction] = js.native
+  def mod(x: Fraction, y: BigNumber): NoLiteralType[Fraction] = js.native
+  def mod(x: Fraction, y: Fraction): NoLiteralType[Fraction] = js.native
+  def mod(x: Fraction, y: MathArray): NoLiteralType[Fraction] = js.native
+  def mod(x: Fraction, y: Matrix): NoLiteralType[Fraction] = js.native
+  def mod(x: Matrix, y: Double): NoLiteralType[Matrix] = js.native
+  def mod(x: Matrix, y: BigNumber): NoLiteralType[Matrix] = js.native
+  def mod(x: Matrix, y: Fraction): NoLiteralType[Matrix] = js.native
+  def mod(x: Matrix, y: MathArray): NoLiteralType[Matrix] = js.native
+  def mod(x: Matrix, y: Matrix): NoLiteralType[Matrix] = js.native
   /**
     * Computes the mode of a set of numbers or a list with values(numbers
     * or characters). If there are more than one modes, it returns a list
@@ -1674,9 +1696,9 @@ trait MathJsStatic extends FactoryDependencies {
     * @param a Integer number of objects in the subset
     * @returns multinomial coefficent
     */
-  def multinomial(a: js.Array[BigNumber | Double]): Double | BigNumber = js.native
+  def multinomial[T /* <: Double | BigNumber */](a: js.Array[T]): NoLiteralType[T] = js.native
+  def multiply(x: js.Array[js.Array[Double] | Double], y: MathType): js.Array[Double] = js.native
   def multiply(x: Double, y: Double): Double = js.native
-  def multiply(x: MathArray, y: MathType): Matrix | MathArray = js.native
   def multiply(x: MathType, y: MathType): MathType = js.native
   /**
     * Multiply two values, x * y. The result is squeezed. For matrices, the
@@ -1685,7 +1707,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @param y The second value to multiply
     * @returns Multiplication of x and y
     */
-  def multiply(x: Matrix, y: MathType): Matrix | MathArray = js.native
+  def multiply(x: Matrix, y: MathType): Matrix = js.native
   def multiply(x: Unit, y: Unit): Unit = js.native
   /**
     * Calculate the norm of a number, vector or matrix. The second
@@ -1858,12 +1880,12 @@ trait MathJsStatic extends FactoryDependencies {
     * @param k The number of objects in the subset
     * @returns The number of permutations
     */
-  def permutations(n: Double): Double | BigNumber = js.native
-  def permutations(n: Double, k: Double): Double | BigNumber = js.native
-  def permutations(n: Double, k: BigNumber): Double | BigNumber = js.native
-  def permutations(n: BigNumber): Double | BigNumber = js.native
-  def permutations(n: BigNumber, k: Double): Double | BigNumber = js.native
-  def permutations(n: BigNumber, k: BigNumber): Double | BigNumber = js.native
+  def permutations(n: Double): NoLiteralType[Double] = js.native
+  def permutations(n: Double, k: Double): NoLiteralType[Double] = js.native
+  def permutations(n: Double, k: BigNumber): NoLiteralType[Double] = js.native
+  def permutations(n: Decimal): NoLiteralType[Decimal] = js.native
+  def permutations(n: Decimal, k: Double): NoLiteralType[Decimal] = js.native
+  def permutations(n: Decimal, k: BigNumber): NoLiteralType[Decimal] = js.native
   /**
     * Random pick a value from a one dimensional array. Array element is
     * picked using a random function with uniform distribution.
@@ -1958,12 +1980,12 @@ trait MathJsStatic extends FactoryDependencies {
   def random(): Double = js.native
   def random(min: Double): Double = js.native
   def random(min: Double, max: Double): Double = js.native
-  def random(size: MathArray): MathArray | Matrix = js.native
-  def random(size: MathArray, min: Double): MathArray | Matrix = js.native
-  def random(size: MathArray, min: Double, max: Double): MathArray | Matrix = js.native
-  def random(size: Matrix): MathArray | Matrix = js.native
-  def random(size: Matrix, min: Double): MathArray | Matrix = js.native
-  def random(size: Matrix, min: Double, max: Double): MathArray | Matrix = js.native
+  def random(size: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def random(size: js.Array[js.Array[Double] | Double], min: Double): js.Array[Double] = js.native
+  def random(size: js.Array[js.Array[Double] | Double], min: Double, max: Double): js.Array[Double] = js.native
+  def random(size: Matrix): Matrix = js.native
+  def random(size: Matrix, min: Double): Matrix = js.native
+  def random(size: Matrix, min: Double, max: Double): Matrix = js.native
   /**
     * Return a random integer number larger or equal to min and smaller
     * than max using a uniform distribution.
@@ -1975,12 +1997,12 @@ trait MathJsStatic extends FactoryDependencies {
     */
   def randomInt(min: Double): Double = js.native
   def randomInt(min: Double, max: Double): Double = js.native
-  def randomInt(size: MathArray): MathArray | Matrix = js.native
-  def randomInt(size: MathArray, min: Double): MathArray | Matrix = js.native
-  def randomInt(size: MathArray, min: Double, max: Double): MathArray | Matrix = js.native
-  def randomInt(size: Matrix): MathArray | Matrix = js.native
-  def randomInt(size: Matrix, min: Double): MathArray | Matrix = js.native
-  def randomInt(size: Matrix, min: Double, max: Double): MathArray | Matrix = js.native
+  def randomInt(size: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def randomInt(size: js.Array[js.Array[Double] | Double], min: Double): js.Array[Double] = js.native
+  def randomInt(size: js.Array[js.Array[Double] | Double], min: Double, max: Double): js.Array[Double] = js.native
+  def randomInt(size: Matrix): Matrix = js.native
+  def randomInt(size: Matrix, min: Double): Matrix = js.native
+  def randomInt(size: Matrix, min: Double, max: Double): Matrix = js.native
   def range(start: Double, end: Double): Matrix = js.native
   def range(start: Double, end: Double, includeEnd: Boolean): Matrix = js.native
   def range(start: Double, end: Double, step: Double): Matrix = js.native
@@ -2085,8 +2107,8 @@ trait MathJsStatic extends FactoryDependencies {
     * dimension
     * @returns A reshaped clone of matrix x
     */
-  def reshape(x: MathArray, sizes: js.Array[Double]): MathArray | Matrix = js.native
-  def reshape(x: Matrix, sizes: js.Array[Double]): MathArray | Matrix = js.native
+  def reshape(x: js.Array[js.Array[Double] | Double], sizes: js.Array[Double]): js.Array[Double] = js.native
+  def reshape(x: Matrix, sizes: js.Array[Double]): Matrix = js.native
   /**
     * Resize a matrix
     * @param x Matrix to be resized
@@ -2095,18 +2117,20 @@ trait MathJsStatic extends FactoryDependencies {
     * that case defaultValue = ' ' Default value: 0.
     * @returns A resized clone of matrix x
     */
-  def resize(x: MathArray, size: MathArray): MathArray | Matrix = js.native
-  def resize(x: MathArray, size: MathArray, defaultValue: String): MathArray | Matrix = js.native
-  def resize(x: MathArray, size: MathArray, defaultValue: Double): MathArray | Matrix = js.native
-  def resize(x: MathArray, size: Matrix): MathArray | Matrix = js.native
-  def resize(x: MathArray, size: Matrix, defaultValue: String): MathArray | Matrix = js.native
-  def resize(x: MathArray, size: Matrix, defaultValue: Double): MathArray | Matrix = js.native
-  def resize(x: Matrix, size: MathArray): MathArray | Matrix = js.native
-  def resize(x: Matrix, size: MathArray, defaultValue: String): MathArray | Matrix = js.native
-  def resize(x: Matrix, size: MathArray, defaultValue: Double): MathArray | Matrix = js.native
-  def resize(x: Matrix, size: Matrix): MathArray | Matrix = js.native
-  def resize(x: Matrix, size: Matrix, defaultValue: String): MathArray | Matrix = js.native
-  def resize(x: Matrix, size: Matrix, defaultValue: Double): MathArray | Matrix = js.native
+  def resize(x: js.Array[js.Array[Double] | Double], size: MathArray): js.Array[Double] = js.native
+  def resize(x: js.Array[js.Array[Double] | Double], size: MathArray, defaultValue: String): js.Array[Double] = js.native
+  def resize(x: js.Array[js.Array[Double] | Double], size: MathArray, defaultValue: Double): js.Array[Double] = js.native
+  def resize(x: js.Array[js.Array[Double] | Double], size: Matrix): js.Array[Double] = js.native
+  def resize(x: js.Array[js.Array[Double] | Double], size: Matrix, defaultValue: String): js.Array[Double] = js.native
+  def resize(x: js.Array[js.Array[Double] | Double], size: Matrix, defaultValue: Double): js.Array[Double] = js.native
+  def resize(x: Matrix, size: MathArray): Matrix = js.native
+  def resize(x: Matrix, size: MathArray, defaultValue: String): Matrix = js.native
+  def resize(x: Matrix, size: MathArray, defaultValue: Double): Matrix = js.native
+  def resize(x: Matrix, size: Matrix): Matrix = js.native
+  def resize(x: Matrix, size: Matrix, defaultValue: String): Matrix = js.native
+  def resize(x: Matrix, size: Matrix, defaultValue: Double): Matrix = js.native
+  def rightArithShift(x: js.Array[js.Array[Double] | Double], y: Double): NoLiteralType[js.Array[Double]] = js.native
+  def rightArithShift(x: js.Array[js.Array[Double] | Double], y: BigNumber): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Bitwise right arithmetic shift of a value x by y number of bits, x >>
     * y. For matrices, the function is evaluated element wise. For units,
@@ -2115,14 +2139,13 @@ trait MathJsStatic extends FactoryDependencies {
     * @param y Amount of shifts
     * @returns x sign-filled shifted right y times
     */
-  def rightArithShift(x: Double, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def rightArithShift(x: Double, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def rightArithShift(x: BigNumber, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def rightArithShift(x: BigNumber, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def rightArithShift(x: MathArray, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def rightArithShift(x: MathArray, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
-  def rightArithShift(x: Matrix, y: Double): Double | BigNumber | MathArray | Matrix = js.native
-  def rightArithShift(x: Matrix, y: BigNumber): Double | BigNumber | MathArray | Matrix = js.native
+  def rightArithShift(x: Double, y: Double): NoLiteralType[Double] = js.native
+  def rightArithShift(x: Double, y: BigNumber): NoLiteralType[Double] = js.native
+  def rightArithShift(x: Decimal, y: Double): NoLiteralType[Decimal] = js.native
+  def rightArithShift(x: Decimal, y: BigNumber): NoLiteralType[Decimal] = js.native
+  def rightArithShift(x: Matrix, y: Double): NoLiteralType[Matrix] = js.native
+  def rightArithShift(x: Matrix, y: BigNumber): NoLiteralType[Matrix] = js.native
+  def rightLogShift(x: js.Array[js.Array[Double] | Double], y: Double): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Bitwise right logical shift of value x by y number of bits, x >>> y.
     * For matrices, the function is evaluated element wise. For units, the
@@ -2131,9 +2154,12 @@ trait MathJsStatic extends FactoryDependencies {
     * @param y Amount of shifts
     * @returns x zero-filled shifted right y times
     */
-  def rightLogShift(x: Double, y: Double): Double | MathArray | Matrix = js.native
-  def rightLogShift(x: MathArray, y: Double): Double | MathArray | Matrix = js.native
-  def rightLogShift(x: Matrix, y: Double): Double | MathArray | Matrix = js.native
+  def rightLogShift(x: Double, y: Double): NoLiteralType[Double] = js.native
+  def rightLogShift(x: Matrix, y: Double): NoLiteralType[Matrix] = js.native
+  def round(x: js.Array[js.Array[Double] | Double]): NoLiteralType[js.Array[Double]] = js.native
+  def round(x: js.Array[js.Array[Double] | Double], n: Double): NoLiteralType[js.Array[Double]] = js.native
+  def round(x: js.Array[js.Array[Double] | Double], n: BigNumber): NoLiteralType[js.Array[Double]] = js.native
+  def round(x: js.Array[js.Array[Double] | Double], n: MathArray): NoLiteralType[js.Array[Double]] = js.native
   /**
     * Round a value towards the nearest integer. For matrices, the function
     * is evaluated element wise.
@@ -2141,30 +2167,26 @@ trait MathJsStatic extends FactoryDependencies {
     * @param n Number of decimals Default value: 0.
     * @returns Rounded value of x
     */
-  def round(x: Double): Double = js.native
-  def round(x: Double, n: Double): Double = js.native
-  def round(x: Double, n: BigNumber): Double = js.native
-  def round(x: Double, n: MathArray): Double = js.native
-  def round(x: BigNumber): BigNumber = js.native
-  def round(x: BigNumber, n: Double): BigNumber = js.native
-  def round(x: BigNumber, n: BigNumber): BigNumber = js.native
-  def round(x: BigNumber, n: MathArray): BigNumber = js.native
-  def round(x: Complex): Complex = js.native
-  def round(x: Complex, n: Double): Complex = js.native
-  def round(x: Complex, n: BigNumber): Complex = js.native
-  def round(x: Complex, n: MathArray): Complex = js.native
-  def round(x: Fraction): Fraction = js.native
-  def round(x: Fraction, n: Double): Fraction = js.native
-  def round(x: Fraction, n: BigNumber): Fraction = js.native
-  def round(x: Fraction, n: MathArray): Fraction = js.native
-  def round(x: MathArray): MathArray = js.native
-  def round(x: MathArray, n: Double): MathArray = js.native
-  def round(x: MathArray, n: BigNumber): MathArray = js.native
-  def round(x: MathArray, n: MathArray): MathArray = js.native
-  def round(x: Matrix): Matrix = js.native
-  def round(x: Matrix, n: Double): Matrix = js.native
-  def round(x: Matrix, n: BigNumber): Matrix = js.native
-  def round(x: Matrix, n: MathArray): Matrix = js.native
+  def round(x: Double): NoLiteralType[Double] = js.native
+  def round(x: Double, n: Double): NoLiteralType[Double] = js.native
+  def round(x: Double, n: BigNumber): NoLiteralType[Double] = js.native
+  def round(x: Double, n: MathArray): NoLiteralType[Double] = js.native
+  def round(x: Decimal): NoLiteralType[Decimal] = js.native
+  def round(x: Decimal, n: Double): NoLiteralType[Decimal] = js.native
+  def round(x: Decimal, n: BigNumber): NoLiteralType[Decimal] = js.native
+  def round(x: Decimal, n: MathArray): NoLiteralType[Decimal] = js.native
+  def round(x: Complex): NoLiteralType[Complex] = js.native
+  def round(x: Complex, n: Double): NoLiteralType[Complex] = js.native
+  def round(x: Complex, n: BigNumber): NoLiteralType[Complex] = js.native
+  def round(x: Complex, n: MathArray): NoLiteralType[Complex] = js.native
+  def round(x: Fraction): NoLiteralType[Fraction] = js.native
+  def round(x: Fraction, n: Double): NoLiteralType[Fraction] = js.native
+  def round(x: Fraction, n: BigNumber): NoLiteralType[Fraction] = js.native
+  def round(x: Fraction, n: MathArray): NoLiteralType[Fraction] = js.native
+  def round(x: Matrix): NoLiteralType[Matrix] = js.native
+  def round(x: Matrix, n: Double): NoLiteralType[Matrix] = js.native
+  def round(x: Matrix, n: BigNumber): NoLiteralType[Matrix] = js.native
+  def round(x: Matrix, n: MathArray): NoLiteralType[Matrix] = js.native
   /**
     * Calculate the secant of a value, defined as sec(x) = 1/cos(x). For
     * matrices, the function is evaluated element wise.
@@ -2198,10 +2220,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param a2 A (multi)set
     * @returns The cartesian product of two (multi)sets
     */
-  def setCartesian(a1: MathArray, a2: MathArray): MathArray | Matrix = js.native
-  def setCartesian(a1: MathArray, a2: Matrix): MathArray | Matrix = js.native
-  def setCartesian(a1: Matrix, a2: MathArray): MathArray | Matrix = js.native
-  def setCartesian(a1: Matrix, a2: Matrix): MathArray | Matrix = js.native
+  def setCartesian(a1: js.Array[js.Array[Double] | Double], a2: MathArray): js.Array[Double] = js.native
+  def setCartesian(a1: js.Array[js.Array[Double] | Double], a2: Matrix): js.Array[Double] = js.native
+  def setCartesian(a1: Matrix, a2: MathArray): Matrix = js.native
+  def setCartesian(a1: Matrix, a2: Matrix): Matrix = js.native
   /**
     * Create the difference of two (multi)sets: every element of set1, that
     * is not the element of set2. Multi-dimension arrays will be converted
@@ -2210,18 +2232,18 @@ trait MathJsStatic extends FactoryDependencies {
     * @param a2 A (multi)set
     * @returns The difference of two (multi)sets
     */
-  def setDifference(a1: MathArray, a2: MathArray): MathArray | Matrix = js.native
-  def setDifference(a1: MathArray, a2: Matrix): MathArray | Matrix = js.native
-  def setDifference(a1: Matrix, a2: MathArray): MathArray | Matrix = js.native
-  def setDifference(a1: Matrix, a2: Matrix): MathArray | Matrix = js.native
+  def setDifference(a1: js.Array[js.Array[Double] | Double], a2: MathArray): js.Array[Double] = js.native
+  def setDifference(a1: js.Array[js.Array[Double] | Double], a2: Matrix): js.Array[Double] = js.native
+  def setDifference(a1: Matrix, a2: MathArray): Matrix = js.native
+  def setDifference(a1: Matrix, a2: Matrix): Matrix = js.native
   /**
     * Collect the distinct elements of a multiset. A multi-dimension array
     * will be converted to a single-dimension array before the operation.
     * @param a A multiset
     * @returns A set containing the distinct elements of the multiset
     */
-  def setDistinct(a: MathArray): MathArray | Matrix = js.native
-  def setDistinct(a: Matrix): MathArray | Matrix = js.native
+  def setDistinct(a: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def setDistinct(a: Matrix): Matrix = js.native
   /**
     * Create the intersection of two (multi)sets. Multi-dimension arrays
     * will be converted to single-dimension arrays before the operation.
@@ -2229,10 +2251,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param a2 A (multi)set
     * @returns The intersection of two (multi)sets
     */
-  def setIntersect(a1: MathArray, a2: MathArray): MathArray | Matrix = js.native
-  def setIntersect(a1: MathArray, a2: Matrix): MathArray | Matrix = js.native
-  def setIntersect(a1: Matrix, a2: MathArray): MathArray | Matrix = js.native
-  def setIntersect(a1: Matrix, a2: Matrix): MathArray | Matrix = js.native
+  def setIntersect(a1: js.Array[js.Array[Double] | Double], a2: MathArray): js.Array[Double] = js.native
+  def setIntersect(a1: js.Array[js.Array[Double] | Double], a2: Matrix): js.Array[Double] = js.native
+  def setIntersect(a1: Matrix, a2: MathArray): Matrix = js.native
+  def setIntersect(a1: Matrix, a2: Matrix): Matrix = js.native
   /**
     * Check whether a (multi)set is a subset of another (multi)set. (Every
     * element of set1 is the element of set2.) Multi-dimension arrays will
@@ -2269,8 +2291,8 @@ trait MathJsStatic extends FactoryDependencies {
     * @param a A multiset
     * @returns The powerset of the (multi)set
     */
-  def setPowerset(a: MathArray): MathArray | Matrix = js.native
-  def setPowerset(a: Matrix): MathArray | Matrix = js.native
+  def setPowerset(a: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def setPowerset(a: Matrix): Matrix = js.native
   /**
     * Count the number of elements of a (multi)set. When a second parameter
     * is ‘true’, count only the unique values. A multi-dimension array will
@@ -2288,10 +2310,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param a2 A (multi)set
     * @returns The symmetric difference of two (multi)sets
     */
-  def setSymDifference(a1: MathArray, a2: MathArray): MathArray | Matrix = js.native
-  def setSymDifference(a1: MathArray, a2: Matrix): MathArray | Matrix = js.native
-  def setSymDifference(a1: Matrix, a2: MathArray): MathArray | Matrix = js.native
-  def setSymDifference(a1: Matrix, a2: Matrix): MathArray | Matrix = js.native
+  def setSymDifference(a1: js.Array[js.Array[Double] | Double], a2: MathArray): js.Array[Double] = js.native
+  def setSymDifference(a1: js.Array[js.Array[Double] | Double], a2: Matrix): js.Array[Double] = js.native
+  def setSymDifference(a1: Matrix, a2: MathArray): Matrix = js.native
+  def setSymDifference(a1: Matrix, a2: Matrix): Matrix = js.native
   /**
     * Create the union of two (multi)sets. Multi-dimension arrays will be
     * converted to single-dimension arrays before the operation.
@@ -2299,10 +2321,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param a2 A (multi)set
     * @returns The union of two (multi)sets
     */
-  def setUnion(a1: MathArray, a2: MathArray): MathArray | Matrix = js.native
-  def setUnion(a1: MathArray, a2: Matrix): MathArray | Matrix = js.native
-  def setUnion(a1: Matrix, a2: MathArray): MathArray | Matrix = js.native
-  def setUnion(a1: Matrix, a2: Matrix): MathArray | Matrix = js.native
+  def setUnion(a1: js.Array[js.Array[Double] | Double], a2: MathArray): js.Array[Double] = js.native
+  def setUnion(a1: js.Array[js.Array[Double] | Double], a2: Matrix): js.Array[Double] = js.native
+  def setUnion(a1: Matrix, a2: MathArray): Matrix = js.native
+  def setUnion(a1: Matrix, a2: Matrix): Matrix = js.native
   /**
     * Compute the sign of a value. The sign of a value x is: 1 when x > 1
     * -1 when x < 0 0 when x == 0 For matrices, the function is evaluated
@@ -2427,7 +2449,10 @@ trait MathJsStatic extends FactoryDependencies {
     * returns false
     */
   def smallerEq(x: MathType, y: MathType): Boolean | MathArray | Matrix = js.native
-  def sort(x: MathArray, compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): Matrix | MathArray = js.native
+  def sort(
+    x: js.Array[js.Array[Double] | Double],
+    compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
+  ): js.Array[Double] = js.native
   /**
     * Sort the items in a matrix
     * @param x A one dimensional matrix or array to sort
@@ -2436,19 +2461,19 @@ trait MathJsStatic extends FactoryDependencies {
     * b, and 0 when a == b. Default value: ‘asc’
     * @returns Returns the sorted matrix
     */
-  def sort(x: Matrix, compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): Matrix | MathArray = js.native
+  def sort(x: Matrix, compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): Matrix = js.native
   @JSName("sort")
-  def sort_asc(x: MathArray, compare: asc): Matrix | MathArray = js.native
+  def sort_asc(x: js.Array[js.Array[Double] | Double], compare: asc): js.Array[Double] = js.native
   @JSName("sort")
-  def sort_asc(x: Matrix, compare: asc): Matrix | MathArray = js.native
+  def sort_asc(x: Matrix, compare: asc): Matrix = js.native
   @JSName("sort")
-  def sort_desc(x: MathArray, compare: desc): Matrix | MathArray = js.native
+  def sort_desc(x: js.Array[js.Array[Double] | Double], compare: desc): js.Array[Double] = js.native
   @JSName("sort")
-  def sort_desc(x: Matrix, compare: desc): Matrix | MathArray = js.native
+  def sort_desc(x: Matrix, compare: desc): Matrix = js.native
   @JSName("sort")
-  def sort_natural(x: MathArray, compare: natural): Matrix | MathArray = js.native
+  def sort_natural(x: js.Array[js.Array[Double] | Double], compare: natural): js.Array[Double] = js.native
   @JSName("sort")
-  def sort_natural(x: Matrix, compare: natural): Matrix | MathArray = js.native
+  def sort_natural(x: Matrix, compare: natural): Matrix = js.native
   /**
     * Create a Sparse Matrix. The function creates a new math.type.Matrix
     * object from an Array. A Matrix has utility functions to manipulate
@@ -2489,8 +2514,8 @@ trait MathJsStatic extends FactoryDependencies {
     * @param A The square matrix A
     * @returns The principal square root of matrix A
     */
-  def sqrtm(A: MathArray): MathArray | Matrix = js.native
-  def sqrtm(A: Matrix): MathArray | Matrix = js.native
+  def sqrtm(A: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def sqrtm(A: Matrix): Matrix = js.native
   /**
     * Compute the square of a value, x * x. For matrices, the function is
     * evaluated element wise.
@@ -2510,8 +2535,8 @@ trait MathJsStatic extends FactoryDependencies {
     * @param x Matrix to be squeezed
     * @returns Squeezed matrix
     */
-  def squeeze(x: MathArray): Matrix | MathArray = js.native
-  def squeeze(x: Matrix): Matrix | MathArray = js.native
+  def squeeze(x: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def squeeze(x: Matrix): Matrix = js.native
   /**
     * Compute the standard deviation of a matrix or a list with values. The
     * standard deviations is defined as the square root of the variance:
@@ -2552,10 +2577,10 @@ trait MathJsStatic extends FactoryDependencies {
     * @param k Number of objects in the subset
     * @returns S(n,k)
     */
-  def stirlingS2(n: Double, k: Double): Double | BigNumber = js.native
-  def stirlingS2(n: Double, k: BigNumber): Double | BigNumber = js.native
-  def stirlingS2(n: BigNumber, k: Double): Double | BigNumber = js.native
-  def stirlingS2(n: BigNumber, k: BigNumber): Double | BigNumber = js.native
+  def stirlingS2(n: Double, k: Double): NoLiteralType[Double] = js.native
+  def stirlingS2(n: Double, k: BigNumber): NoLiteralType[Double] = js.native
+  def stirlingS2(n: Decimal, k: Double): NoLiteralType[Decimal] = js.native
+  def stirlingS2(n: Decimal, k: BigNumber): NoLiteralType[Decimal] = js.native
   def string(): String | MathArray | Matrix = js.native
   /**
     * Create a string or convert any object into a string. Elements of
@@ -2564,9 +2589,9 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The created string
     */
   def string(value: MathType): String | MathArray | Matrix = js.native
-  def subset(value: String, index: Index): MathArray | Matrix | String = js.native
-  def subset(value: String, index: Index, replacement: js.Any): MathArray | Matrix | String = js.native
-  def subset(value: String, index: Index, replacement: js.Any, defaultValue: js.Any): MathArray | Matrix | String = js.native
+  def subset(value: String, index: Index): String = js.native
+  def subset(value: String, index: Index, replacement: js.Any): String = js.native
+  def subset(value: String, index: Index, replacement: js.Any, defaultValue: js.Any): String = js.native
   /**
     * Get or set a subset of a matrix or string.
     * @param value An array, matrix, or string
@@ -2579,12 +2604,17 @@ trait MathJsStatic extends FactoryDependencies {
     * undefined. Default value: undefined.
     * @returns Either the retrieved subset or the updated matrix
     */
-  def subset(value: MathArray, index: Index): MathArray | Matrix | String = js.native
-  def subset(value: MathArray, index: Index, replacement: js.Any): MathArray | Matrix | String = js.native
-  def subset(value: MathArray, index: Index, replacement: js.Any, defaultValue: js.Any): MathArray | Matrix | String = js.native
-  def subset(value: Matrix, index: Index): MathArray | Matrix | String = js.native
-  def subset(value: Matrix, index: Index, replacement: js.Any): MathArray | Matrix | String = js.native
-  def subset(value: Matrix, index: Index, replacement: js.Any, defaultValue: js.Any): MathArray | Matrix | String = js.native
+  def subset(value: js.Array[js.Array[Double] | Double], index: Index): js.Array[Double] = js.native
+  def subset(value: js.Array[js.Array[Double] | Double], index: Index, replacement: js.Any): js.Array[Double] = js.native
+  def subset(
+    value: js.Array[js.Array[Double] | Double],
+    index: Index,
+    replacement: js.Any,
+    defaultValue: js.Any
+  ): js.Array[Double] = js.native
+  def subset(value: Matrix, index: Index): Matrix = js.native
+  def subset(value: Matrix, index: Index, replacement: js.Any): Matrix = js.native
+  def subset(value: Matrix, index: Index, replacement: js.Any, defaultValue: js.Any): Matrix = js.native
   /**
     * Subtract two values, x - y. For matrices, the function is evaluated
     * element wise.
@@ -2663,8 +2693,8 @@ trait MathJsStatic extends FactoryDependencies {
     * @param x Matrix to be transposed
     * @returns The transposed matrix
     */
-  def transpose(x: MathArray): MathArray | Matrix = js.native
-  def transpose(x: Matrix): MathArray | Matrix = js.native
+  def transpose(x: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def transpose(x: Matrix): Matrix = js.native
   /**
     * Determine the type of a variable.
     * @param x The variable for which to test the type

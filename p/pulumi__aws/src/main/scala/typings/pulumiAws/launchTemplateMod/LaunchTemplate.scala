@@ -3,6 +3,7 @@ package typings.pulumiAws.launchTemplateMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateBlockDeviceMapping
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateCapacityReservationSpecification
+import typings.pulumiAws.outputMod.ec2.LaunchTemplateCpuOptions
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateCreditSpecification
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateElasticGpuSpecification
 import typings.pulumiAws.outputMod.ec2.LaunchTemplateElasticInferenceAccelerator
@@ -48,6 +49,10 @@ class LaunchTemplate protected () extends CustomResource {
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
   val capacityReservationSpecification: Output_[js.UndefOr[LaunchTemplateCapacityReservationSpecification]] = js.native
+  /**
+    * The CPU options for the instance. See CPU Options below for more details.
+    */
+  val cpuOptions: Output_[js.UndefOr[LaunchTemplateCpuOptions]] = js.native
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.

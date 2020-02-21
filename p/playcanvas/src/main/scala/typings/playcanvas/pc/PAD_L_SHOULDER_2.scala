@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_L_SHOULDER_2
-  * @description The second shoulder button on the left
+  * @description The second shoulder button on the left.
   */
 @JSGlobal("pc.PAD_L_SHOULDER_2")
 @js.native

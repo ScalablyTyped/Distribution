@@ -1466,6 +1466,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait coffin extends IconName
   
   @js.native
+  sealed trait `coffin-cross` extends IconName
+  
+  @js.native
   sealed trait cog extends IconName
   
   @js.native
@@ -1776,6 +1779,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait dagger extends IconName
+  
+  @js.native
+  sealed trait dailymotion extends IconName
   
   @js.native
   sealed trait dashcube extends IconName
@@ -2522,6 +2528,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait folder extends IconName
   
   @js.native
+  sealed trait `folder-download` extends IconName
+  
+  @js.native
   sealed trait `folder-minus` extends IconName
   
   @js.native
@@ -2535,6 +2544,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `folder-tree` extends IconName
+  
+  @js.native
+  sealed trait `folder-upload` extends IconName
   
   @js.native
   sealed trait folders extends IconName
@@ -3344,6 +3356,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   sealed trait instagram extends IconName
   
   @js.native
+  sealed trait `instagram-square` extends IconName
+  
+  @js.native
   sealed trait integral extends IconName
   
   @js.native
@@ -3960,6 +3975,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait mixcloud extends IconName
+  
+  @js.native
+  sealed trait mixer extends IconName
   
   @js.native
   sealed trait mizuni extends IconName
@@ -5049,6 +5067,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `shoe-prints` extends IconName
+  
+  @js.native
+  sealed trait shopify extends IconName
   
   @js.native
   sealed trait `shopping-bag` extends IconName
@@ -6372,6 +6393,9 @@ object fortawesomeFontawesomeCommonTypesStrings {
   
   @js.native
   sealed trait `user-times` extends IconName
+  
+  @js.native
+  sealed trait `user-unlock` extends IconName
   
   @js.native
   sealed trait `user-visor` extends IconName
@@ -7758,6 +7782,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def coffin: coffin = "coffin".asInstanceOf[coffin]
   @scala.inline
+  def `coffin-cross`: `coffin-cross` = "coffin-cross".asInstanceOf[`coffin-cross`]
+  @scala.inline
   def cog: cog = "cog".asInstanceOf[cog]
   @scala.inline
   def cogs: cogs = "cogs".asInstanceOf[cogs]
@@ -7965,6 +7991,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `d-and-d-beyond`: `d-and-d-beyond` = "d-and-d-beyond".asInstanceOf[`d-and-d-beyond`]
   @scala.inline
   def dagger: dagger = "dagger".asInstanceOf[dagger]
+  @scala.inline
+  def dailymotion: dailymotion = "dailymotion".asInstanceOf[dailymotion]
   @scala.inline
   def dashcube: dashcube = "dashcube".asInstanceOf[dashcube]
   @scala.inline
@@ -8462,6 +8490,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def folder: folder = "folder".asInstanceOf[folder]
   @scala.inline
+  def `folder-download`: `folder-download` = "folder-download".asInstanceOf[`folder-download`]
+  @scala.inline
   def `folder-minus`: `folder-minus` = "folder-minus".asInstanceOf[`folder-minus`]
   @scala.inline
   def `folder-open`: `folder-open` = "folder-open".asInstanceOf[`folder-open`]
@@ -8471,6 +8501,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `folder-times`: `folder-times` = "folder-times".asInstanceOf[`folder-times`]
   @scala.inline
   def `folder-tree`: `folder-tree` = "folder-tree".asInstanceOf[`folder-tree`]
+  @scala.inline
+  def `folder-upload`: `folder-upload` = "folder-upload".asInstanceOf[`folder-upload`]
   @scala.inline
   def folders: folders = "folders".asInstanceOf[folders]
   @scala.inline
@@ -9010,6 +9042,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   @scala.inline
   def instagram: instagram = "instagram".asInstanceOf[instagram]
   @scala.inline
+  def `instagram-square`: `instagram-square` = "instagram-square".asInstanceOf[`instagram-square`]
+  @scala.inline
   def integral: integral = "integral".asInstanceOf[integral]
   @scala.inline
   def intercom: intercom = "intercom".asInstanceOf[intercom]
@@ -9421,6 +9455,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def mix: mix = "mix".asInstanceOf[mix]
   @scala.inline
   def mixcloud: mixcloud = "mixcloud".asInstanceOf[mixcloud]
+  @scala.inline
+  def mixer: mixer = "mixer".asInstanceOf[mixer]
   @scala.inline
   def mizuni: mizuni = "mizuni".asInstanceOf[mizuni]
   @scala.inline
@@ -10147,6 +10183,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `shish-kebab`: `shish-kebab` = "shish-kebab".asInstanceOf[`shish-kebab`]
   @scala.inline
   def `shoe-prints`: `shoe-prints` = "shoe-prints".asInstanceOf[`shoe-prints`]
+  @scala.inline
+  def shopify: shopify = "shopify".asInstanceOf[shopify]
   @scala.inline
   def `shopping-bag`: `shopping-bag` = "shopping-bag".asInstanceOf[`shopping-bag`]
   @scala.inline
@@ -11029,6 +11067,8 @@ object fortawesomeFontawesomeCommonTypesStrings {
   def `user-tie`: `user-tie` = "user-tie".asInstanceOf[`user-tie`]
   @scala.inline
   def `user-times`: `user-times` = "user-times".asInstanceOf[`user-times`]
+  @scala.inline
+  def `user-unlock`: `user-unlock` = "user-unlock".asInstanceOf[`user-unlock`]
   @scala.inline
   def `user-visor`: `user-visor` = "user-visor".asInstanceOf[`user-visor`]
   @scala.inline

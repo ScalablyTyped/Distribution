@@ -1,8 +1,8 @@
 package typings.antDesignReactNative
 
-import org.scalablytyped.runtime.Instantiable0
+import typings.react.mod.ComponentType
 import typings.reactNative.mod.Picker
-import typings.reactNative.mod.PickerItem
+import typings.reactNative.mod.PickerItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object nativePickerIosMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Item: Instantiable0[PickerItem] = js.native
+    var Item: ComponentType[PickerItemProps] = js.native
     /**
       * On Android, display the options in a dialog.
       */

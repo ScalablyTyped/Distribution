@@ -1,7 +1,7 @@
 
 # Scala.js typings for jpeg-js
 
-Typings are for version 0.3.6
+Typings are for version 0.3.7
 
 ## Library description:
 A pure javascript JPEG encoder and decoder

@@ -42,7 +42,7 @@ trait Options[TKeys, TState] extends js.Object {
     * The name of the state key or a selector function to specify where in your Redux state tree
     * Redux First Router should expect your page location reducer to be attached to.
     */
-  var location: js.UndefOr[String | (SelectLocationState[TKeys, TState])] = js.undefined
+  var location: js.UndefOr[String | (SelectLocationState_[TKeys, TState])] = js.undefined
   /**
     * A map of of your Redux state keys to _React Navigation_ navigators.
     */
@@ -114,7 +114,7 @@ object Options {
     extra: js.Any = null,
     initialDispatch: js.UndefOr[Boolean] = js.undefined,
     initialEntries: HistoryEntries = null,
-    location: String | (SelectLocationState[TKeys, TState]) = null,
+    location: String | (SelectLocationState_[TKeys, TState]) = null,
     navigators: NavigatorsConfig[TKeys, TState] = null,
     notFoundPath: String = null,
     onAfterChange: (/* dispatch */ Dispatch[_], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit = null,

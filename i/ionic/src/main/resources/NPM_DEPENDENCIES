@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ionic" : "5.4.15"
+      "ionic" : "5.4.16"
     }
   ],
   "test-dependencies" : [
     {
-      "ionic" : "5.4.15"
+      "ionic" : "5.4.16"
     }
   ],
   "compile-devDependencies" : [

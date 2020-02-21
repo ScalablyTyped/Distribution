@@ -24,6 +24,8 @@ class PanelBase protected ()
   var _classNames: js.Any = js.native
   var _clearExistingAnimationTimer: js.Any = js.native
   var _dismissOnOuterClick: js.Any = js.native
+  var _hasCustomNavigation: js.Any = js.native
+  var _headerTextId: js.Any = js.native
   var _onPanelClick: js.Any = js.native
   var _onRenderBody: js.Any = js.native
   var _onRenderFooter: js.Any = js.native

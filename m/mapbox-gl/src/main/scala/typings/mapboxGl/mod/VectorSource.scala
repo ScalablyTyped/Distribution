@@ -15,6 +15,7 @@ trait VectorSource
   var bounds: js.UndefOr[js.Array[Double]] = js.undefined
   var maxzoom: js.UndefOr[Double] = js.undefined
   var minzoom: js.UndefOr[Double] = js.undefined
+  var promoteId: js.UndefOr[PromoteIdSpecification] = js.undefined
   var scheme: js.UndefOr[xyz | tms] = js.undefined
   var tiles: js.UndefOr[js.Array[String]] = js.undefined
   @JSName("type")
@@ -30,6 +31,7 @@ object VectorSource {
     bounds: js.Array[Double] = null,
     maxzoom: Int | Double = null,
     minzoom: Int | Double = null,
+    promoteId: PromoteIdSpecification = null,
     scheme: xyz | tms = null,
     tiles: js.Array[String] = null,
     url: String = null
@@ -40,6 +42,7 @@ object VectorSource {
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
     if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
+    if (promoteId != null) __obj.updateDynamic("promoteId")(promoteId.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

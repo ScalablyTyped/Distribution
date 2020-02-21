@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-core
 
-Typings are for version 1.2.4
+Typings are for version 1.2.6
 
 ## Library description:
 Web3 core tools for sub packages. This is an internal package.

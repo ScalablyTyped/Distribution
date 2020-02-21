@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "zipkin-transport-http" : "0.19.1"
+      "zipkin-transport-http" : "0.19.2"
     }
   ],
   "test-dependencies" : [
     {
-      "zipkin-transport-http" : "0.19.1"
+      "zipkin-transport-http" : "0.19.2"
     }
   ],
   "compile-devDependencies" : [

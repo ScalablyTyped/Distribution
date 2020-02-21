@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.ELEMENTTYPE_IMAGE
   * @description A {@link pc.ElementComponent} that displays an image.
   */

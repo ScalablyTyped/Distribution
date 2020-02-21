@@ -1,11 +1,10 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.LineHeightProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LineHeightProps[TLength] extends js.Object {
+trait LineHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
   /**
     * The line-height CSS property sets the amount of space used for lines, such as in text. On block-level elements,
     * it specifies the minimum height of line boxes within the element.
@@ -14,15 +13,15 @@ trait LineHeightProps[TLength] extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
     */
-  var lineHeight: js.UndefOr[ResponsiveValue[LineHeightProperty[TLength]]] = js.undefined
+  var lineHeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 
 object LineHeightProps {
   @scala.inline
-  def apply[TLength](lineHeight: ResponsiveValue[LineHeightProperty[TLength]] = null): LineHeightProps[TLength] = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](lineHeight: ResponsiveValue[TVal, ThemeType] = null): LineHeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LineHeightProps[TLength]]
+    __obj.asInstanceOf[LineHeightProps[ThemeType, TVal]]
   }
 }
 

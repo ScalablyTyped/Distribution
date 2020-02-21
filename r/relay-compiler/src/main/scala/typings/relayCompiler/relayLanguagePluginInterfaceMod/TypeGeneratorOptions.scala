@@ -1,6 +1,6 @@
 package typings.relayCompiler.relayLanguagePluginInterfaceMod
 
-import typings.relayCompiler.graphQLIRMod.Root
+import typings.relayCompiler.iRMod.Root
 import typings.relayCompiler.relayFlowTypeTransformersMod.ScalarTypeMapping
 import typings.std.Set
 import scala.scalajs.js

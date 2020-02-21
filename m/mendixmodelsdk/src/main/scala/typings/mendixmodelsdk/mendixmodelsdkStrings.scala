@@ -127,6 +127,9 @@ object mendixmodelsdkStrings {
   sealed trait deleted extends StructureState
   
   @js.native
+  sealed trait deltas extends js.Object
+  
+  @js.native
   sealed trait detached extends StructureState
   
   @js.native
@@ -143,6 +146,9 @@ object mendixmodelsdkStrings {
   
   @js.native
   sealed trait fast extends js.Object
+  
+  @js.native
+  sealed trait fileChanges extends js.Object
   
   @js.native
   sealed trait full extends js.Object
@@ -266,6 +272,8 @@ object mendixmodelsdkStrings {
   @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
   @scala.inline
+  def deltas: deltas = "deltas".asInstanceOf[deltas]
+  @scala.inline
   def detached: detached = "detached".asInstanceOf[detached]
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
@@ -277,6 +285,8 @@ object mendixmodelsdkStrings {
   def failed_ : failed_ = "failed".asInstanceOf[failed_]
   @scala.inline
   def fast: fast = "fast".asInstanceOf[fast]
+  @scala.inline
+  def fileChanges: fileChanges = "fileChanges".asInstanceOf[fileChanges]
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   @scala.inline

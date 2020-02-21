@@ -30,6 +30,11 @@ class StaticImageViewer protected () extends ConditionallyVisibleWidget {
   ) = this()
   @JSName("model")
   var model_FStaticImageViewer: IModel = js.native
+  /**
+    * In version 8.6.0: introduced
+    */
+  def alternativeText(): ClientTemplate = js.native
+  def alternativeText(newValue: ClientTemplate): js.Any = js.native
   def clickAction(): ClientAction = js.native
   def clickAction(newValue: ClientAction): js.Any = js.native
   def height(): Double = js.native

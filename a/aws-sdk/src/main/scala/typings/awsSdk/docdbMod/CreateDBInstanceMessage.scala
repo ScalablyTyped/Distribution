@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateDBInstanceMessage extends js.Object {
   /**
-    * Indicates that minor engine upgrades are applied automatically to the DB instance during the maintenance window. Default: true 
+    * Indicates that minor engine upgrades are applied automatically to the instance during the maintenance window. Default: true 
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.native
   /**
-    *  The Amazon EC2 Availability Zone that the DB instance is created in. Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.  Example: us-east-1d   Constraint: The AvailabilityZone parameter can't be specified if the MultiAZ parameter is set to true. The specified Availability Zone must be in the same AWS Region as the current endpoint. 
+    *  The Amazon EC2 Availability Zone that the instance is created in. Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.  Example: us-east-1d   Constraint: The AvailabilityZone parameter can't be specified if the MultiAZ parameter is set to true. The specified Availability Zone must be in the same AWS Region as the current endpoint. 
     */
   var AvailabilityZone: js.UndefOr[String] = js.native
   /**
-    * The identifier of the DB cluster that the instance will belong to.
+    * The identifier of the cluster that the instance will belong to.
     */
   var DBClusterIdentifier: String = js.native
   /**
-    * The compute and memory capacity of the DB instance; for example, db.r5.large. 
+    * The compute and memory capacity of the instance; for example, db.r5.large. 
     */
   var DBInstanceClass: String = js.native
   /**
-    * The DB instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: mydbinstance 
+    * The instance identifier. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: mydbinstance 
     */
   var DBInstanceIdentifier: String = js.native
   /**
@@ -39,7 +39,7 @@ trait CreateDBInstanceMessage extends js.Object {
     */
   var PromotionTier: js.UndefOr[IntegerOptional] = js.native
   /**
-    * The tags to be assigned to the DB instance. You can assign up to 10 tags to an instance.
+    * The tags to be assigned to the instance. You can assign up to 10 tags to an instance.
     */
   var Tags: js.UndefOr[TagList] = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LambdaAction extends js.Object {
   /**
-    * The ARN of the AWS Lambda function which is executed.
+    * The ARN of the Lambda function that is executed.
     */
   var functionArn: AmazonResourceName = js.native
 }

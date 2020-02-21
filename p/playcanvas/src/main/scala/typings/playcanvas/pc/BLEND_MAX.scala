@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLEND_MAX
+  * @type {number}
   * @description Maximum color. Check app.graphicsDevice.extBlendMinmax for support.
   */
 @JSGlobal("pc.BLEND_MAX")

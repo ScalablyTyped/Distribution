@@ -22,12 +22,16 @@ trait OrganizationNonMasterAccount extends js.Object {
     * The name of the policy type
     */
   var name: String = js.native
+  /**
+    * The status of the policy type as it relates to the associated root
+    */
+  var status: String = js.native
 }
 
 object OrganizationNonMasterAccount {
   @scala.inline
-  def apply(arn: String, email: String, id: String, name: String): OrganizationNonMasterAccount = {
-    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(arn: String, email: String, id: String, name: String, status: String): OrganizationNonMasterAccount = {
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OrganizationNonMasterAccount]
   }

@@ -10,6 +10,7 @@ import typings.binaryParser.mod.Parser.Options
 import typings.binaryParser.mod.Parser.Parsed
 import typings.binaryParser.mod.Parser.StringOptions
 import typings.node.Buffer
+import typings.std.BigInt
 import typings.std.Error
 import typings.std.ObjectConstructor
 import scala.scalajs.js
@@ -113,6 +114,12 @@ trait Parser_[O /* <: js.UndefOr[js.Object] */] extends js.Object {
   def int32be[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
   def int32le[N /* <: String */](name: N): Next[O, N, Double] = js.native
   def int32le[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
+  def int64[N /* <: String */](name: N): Next[O, N, BigInt] = js.native
+  def int64[N /* <: String */](name: N, options: Options): Next[O, N, BigInt] = js.native
+  def int64be[N /* <: String */](name: N): Next[O, N, BigInt] = js.native
+  def int64be[N /* <: String */](name: N, options: Options): Next[O, N, BigInt] = js.native
+  def int64le[N /* <: String */](name: N): Next[O, N, BigInt] = js.native
+  def int64le[N /* <: String */](name: N, options: Options): Next[O, N, BigInt] = js.native
   def int8[N /* <: String */](name: N): Next[O, N, Double] = js.native
   def int8[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
      /* [sic] */ def namely(alias: String): Parser[O] = js.native
@@ -122,6 +129,7 @@ trait Parser_[O /* <: js.UndefOr[js.Object] */] extends js.Object {
     buffer: Buffer,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]
   ): Parsed[O] = js.native
+  def seek(length: Double): Parser[O] = js.native
   def skip(length: Double): Parser[O] = js.native
   def string[N /* <: String */](name: N): Next[O, N, String] = js.native
   def string[N /* <: String */](name: N, options: StringOptions): Next[O, N, String] = js.native
@@ -137,6 +145,12 @@ trait Parser_[O /* <: js.UndefOr[js.Object] */] extends js.Object {
   def uint32be[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
   def uint32le[N /* <: String */](name: N): Next[O, N, Double] = js.native
   def uint32le[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
+  def uint64[N /* <: String */](name: N): Next[O, N, BigInt] = js.native
+  def uint64[N /* <: String */](name: N, options: Options): Next[O, N, BigInt] = js.native
+  def uint64be[N /* <: String */](name: N): Next[O, N, BigInt] = js.native
+  def uint64be[N /* <: String */](name: N, options: Options): Next[O, N, BigInt] = js.native
+  def uint64le[N /* <: String */](name: N): Next[O, N, BigInt] = js.native
+  def uint64le[N /* <: String */](name: N, options: Options): Next[O, N, BigInt] = js.native
   def uint8[N /* <: String */](name: N): Next[O, N, Double] = js.native
   def uint8[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
 }

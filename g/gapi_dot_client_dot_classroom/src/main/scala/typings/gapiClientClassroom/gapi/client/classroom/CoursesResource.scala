@@ -1,20 +1,25 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackCourseStates
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsId
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsIdKey
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseStates
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFields
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsIdKey
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsIdKeyOauthtoken
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsIdKeyOauthtokenPrettyPrint
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CoursesResource extends js.Object {
-  var aliases: AliasesResource
-  var announcements: AnnouncementsResource
-  var courseWork: CourseWorkResource
-  var students: StudentsResource
-  var teachers: TeachersResource
+  var aliases: AliasesResource = js.native
+  var announcements: AnnouncementsResource = js.native
+  var courseWork: CourseWorkResource = js.native
+  var students: StudentsResource = js.native
+  var teachers: TeachersResource = js.native
+  var topics: TopicsResource = js.native
   /**
     * Creates a course.
     *
@@ -32,7 +37,8 @@ trait CoursesResource extends js.Object {
     * &#42; `ALREADY_EXISTS` if an alias was specified in the `id` and
     * already exists.
     */
-  def create(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Course]
+  def create(request: AnonAccesstokenAltCallbackFields): Request_[Course] = js.native
+  def create(request: AnonAccesstokenAltCallbackFieldsKey, body: Course): Request_[Course] = js.native
   /**
     * Deletes a course.
     *
@@ -42,7 +48,7 @@ trait CoursesResource extends js.Object {
     * requested course or for access errors.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def delete(request: AnonAccesstokenAltBearertokenCallbackFieldsId): Request_[js.Object]
+  def delete(request: AnonAccesstokenAltCallbackFieldsId): Request_[js.Object] = js.native
   /**
     * Returns a course.
     *
@@ -52,7 +58,7 @@ trait CoursesResource extends js.Object {
     * requested course or for access errors.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsId): Request_[Course]
+  def get(request: AnonAccesstokenAltCallbackFieldsId): Request_[Course] = js.native
   /**
     * Returns a list of courses that the requesting user is permitted to view,
     * restricted to those that match the request. Returned courses are ordered by
@@ -64,7 +70,7 @@ trait CoursesResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the query argument is malformed.
     * &#42; `NOT_FOUND` if any users specified in the query arguments do not exist.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackCourseStates): Request_[ListCoursesResponse]
+  def list(request: AnonAccesstokenAltCallbackCourseStates): Request_[ListCoursesResponse] = js.native
   /**
     * Updates one or more fields in a course.
     *
@@ -78,7 +84,8 @@ trait CoursesResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request errors:
     * &#42; CourseNotModifiable
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFieldsIdKey): Request_[Course]
+  def patch(request: AnonAccesstokenAltCallbackFieldsIdKey): Request_[Course] = js.native
+  def patch(request: AnonAccesstokenAltCallbackFieldsIdKeyOauthtoken, body: Course): Request_[Course] = js.native
   /**
     * Updates a course.
     *
@@ -90,27 +97,7 @@ trait CoursesResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request errors:
     * &#42; CourseNotModifiable
     */
-  def update(request: AnonAccesstokenAltBearertokenCallbackFieldsId): Request_[Course]
-}
-
-object CoursesResource {
-  @scala.inline
-  def apply(
-    aliases: AliasesResource,
-    announcements: AnnouncementsResource,
-    courseWork: CourseWorkResource,
-    create: AnonAccesstokenAltBearertokenCallbackFields => Request_[Course],
-    delete: AnonAccesstokenAltBearertokenCallbackFieldsId => Request_[js.Object],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsId => Request_[Course],
-    list: AnonAccesstokenAltBearertokenCallbackCourseStates => Request_[ListCoursesResponse],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsIdKey => Request_[Course],
-    students: StudentsResource,
-    teachers: TeachersResource,
-    update: AnonAccesstokenAltBearertokenCallbackFieldsId => Request_[Course]
-  ): CoursesResource = {
-    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], announcements = announcements.asInstanceOf[js.Any], courseWork = courseWork.asInstanceOf[js.Any], create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch), students = students.asInstanceOf[js.Any], teachers = teachers.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
-  
-    __obj.asInstanceOf[CoursesResource]
-  }
+  def update(request: AnonAccesstokenAltCallbackFieldsIdKeyOauthtokenPrettyPrint): Request_[Course] = js.native
+  def update(request: AnonAccesstokenAltCallbackFieldsId, body: Course): Request_[Course] = js.native
 }
 

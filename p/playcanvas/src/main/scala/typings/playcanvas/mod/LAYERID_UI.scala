@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.LAYERID_UI
+  * @type {number}
   * @description The UI layer.
   */
 @JSImport("playcanvas", "LAYERID_UI")

@@ -30,7 +30,7 @@ trait RepositoryState extends js.Object {
     */
   val registryId: js.UndefOr[Input[String]] = js.native
   /**
-    * The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`
+    * The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`).
     */
   val repositoryUrl: js.UndefOr[Input[String]] = js.native
   /**

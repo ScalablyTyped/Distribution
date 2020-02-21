@@ -19,13 +19,13 @@ object Util extends js.Object {
   def isVariable(): Boolean = js.native
   def isVariable(value: typings.rdfJs.mod.Term): Boolean = js.native
   def prefix(iri: String): PrefixedToIri = js.native
-  def prefix(iri: String, factory: typings.rdfJs.mod.DataFactory): PrefixedToIri = js.native
+  def prefix(iri: String, factory: typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad]): PrefixedToIri = js.native
   def prefix(iri: typings.rdfJs.mod.NamedNode): PrefixedToIri = js.native
-  def prefix(iri: typings.rdfJs.mod.NamedNode, factory: typings.rdfJs.mod.DataFactory): PrefixedToIri = js.native
+  def prefix(iri: typings.rdfJs.mod.NamedNode, factory: typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad]): PrefixedToIri = js.native
   def prefixes(defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode | String]): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
   def prefixes(
     defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode | String],
-    factory: typings.rdfJs.mod.DataFactory
+    factory: typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad]
   ): js.Function1[/* prefix */ String, PrefixedToIri] = js.native
 }
 

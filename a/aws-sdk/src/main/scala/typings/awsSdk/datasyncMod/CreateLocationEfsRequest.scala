@@ -17,7 +17,7 @@ trait CreateLocationEfsRequest extends js.Object {
   /**
     * A subdirectory in the location’s path. This subdirectory in the EFS file system is used to read data from the EFS source location or write data to the EFS destination. By default, AWS DataSync uses the root directory.   Subdirectory must be specified with forward slashes. For example /path/to/folder. 
     */
-  var Subdirectory: js.UndefOr[typings.awsSdk.datasyncMod.Subdirectory] = js.native
+  var Subdirectory: js.UndefOr[EfsSubdirectory] = js.native
   /**
     * The key-value pair that represents a tag that you want to add to the resource. The value can be an empty string. This value helps you manage, filter, and search for your resources. We recommend that you create a name tag for your location.
     */
@@ -29,7 +29,7 @@ object CreateLocationEfsRequest {
   def apply(
     Ec2Config: Ec2Config,
     EfsFilesystemArn: EfsFilesystemArn,
-    Subdirectory: Subdirectory = null,
+    Subdirectory: EfsSubdirectory = null,
     Tags: TagList = null
   ): CreateLocationEfsRequest = {
     val __obj = js.Dynamic.literal(Ec2Config = Ec2Config.asInstanceOf[js.Any], EfsFilesystemArn = EfsFilesystemArn.asInstanceOf[js.Any])

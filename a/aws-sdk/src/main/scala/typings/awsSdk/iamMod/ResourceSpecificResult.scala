@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceSpecificResult extends js.Object {
   /**
-    * Additional details about the results of the evaluation decision. When there are both IAM policies and resource policies, this parameter explains how each set of policies contributes to the final evaluation decision. When simulating cross-account access to a resource, both the resource-based policy and the caller's IAM policy must grant access.
+    * Additional details about the results of the evaluation decision on a single resource. This parameter is returned only for cross-account simulations. This parameter explains how each policy type contributes to the resource-specific evaluation decision.
     */
   var EvalDecisionDetails: js.UndefOr[EvalDecisionDetailsType] = js.native
   /**
@@ -26,6 +26,10 @@ trait ResourceSpecificResult extends js.Object {
     * A list of context keys that are required by the included input policies but that were not provided by one of the input parameters. This list is used when a list of ARNs is included in the ResourceArns parameter instead of "*". If you do not specify individual resources, by setting ResourceArns to "*" or by not including the ResourceArns parameter, then any missing context values are instead included under the EvaluationResults section. To discover the context keys used by a set of policies, you can call GetContextKeysForCustomPolicy or GetContextKeysForPrincipalPolicy.
     */
   var MissingContextValues: js.UndefOr[ContextKeyNamesResultListType] = js.native
+  /**
+    * Contains information about the effect that a permissions boundary has on a policy simulation when that boundary is applied to an IAM entity.
+    */
+  var PermissionsBoundaryDecisionDetail: js.UndefOr[typings.awsSdk.iamMod.PermissionsBoundaryDecisionDetail] = js.native
 }
 
 object ResourceSpecificResult {
@@ -35,12 +39,14 @@ object ResourceSpecificResult {
     EvalResourceName: ResourceNameType,
     EvalDecisionDetails: EvalDecisionDetailsType = null,
     MatchedStatements: StatementListType = null,
-    MissingContextValues: ContextKeyNamesResultListType = null
+    MissingContextValues: ContextKeyNamesResultListType = null,
+    PermissionsBoundaryDecisionDetail: PermissionsBoundaryDecisionDetail = null
   ): ResourceSpecificResult = {
     val __obj = js.Dynamic.literal(EvalResourceDecision = EvalResourceDecision.asInstanceOf[js.Any], EvalResourceName = EvalResourceName.asInstanceOf[js.Any])
     if (EvalDecisionDetails != null) __obj.updateDynamic("EvalDecisionDetails")(EvalDecisionDetails.asInstanceOf[js.Any])
     if (MatchedStatements != null) __obj.updateDynamic("MatchedStatements")(MatchedStatements.asInstanceOf[js.Any])
     if (MissingContextValues != null) __obj.updateDynamic("MissingContextValues")(MissingContextValues.asInstanceOf[js.Any])
+    if (PermissionsBoundaryDecisionDetail != null) __obj.updateDynamic("PermissionsBoundaryDecisionDetail")(PermissionsBoundaryDecisionDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceSpecificResult]
   }
 }

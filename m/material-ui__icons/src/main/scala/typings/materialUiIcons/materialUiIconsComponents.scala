@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Dropped 2036 components to please scalac */
+/* Dropped 2046 components to please scalac */
 object materialUiIconsComponents extends materialUiIconsProps {
   @scala.inline
   def AcUnit: ComponentType[AcUnitProps] = js.constructorOf[typings.materialUiIcons.acUnitMod.default].asInstanceOf[typings.react.mod.ComponentType[AcUnitProps]]
@@ -219,6 +219,16 @@ object materialUiIconsComponents extends materialUiIconsProps {
   def AddCommentSharp: ComponentType[AddCommentSharpProps] = js.constructorOf[typings.materialUiIcons.addCommentSharpMod.default].asInstanceOf[typings.react.mod.ComponentType[AddCommentSharpProps]]
   @scala.inline
   def AddCommentTwoTone: ComponentType[AddCommentTwoToneProps] = js.constructorOf[typings.materialUiIcons.addCommentTwoToneMod.default].asInstanceOf[typings.react.mod.ComponentType[AddCommentTwoToneProps]]
+  @scala.inline
+  def AddIcCall: ComponentType[AddIcCallProps] = js.constructorOf[typings.materialUiIcons.addIcCallMod.default].asInstanceOf[typings.react.mod.ComponentType[AddIcCallProps]]
+  @scala.inline
+  def AddIcCallOutlined: ComponentType[AddIcCallOutlinedProps] = js.constructorOf[typings.materialUiIcons.addIcCallOutlinedMod.default].asInstanceOf[typings.react.mod.ComponentType[AddIcCallOutlinedProps]]
+  @scala.inline
+  def AddIcCallRounded: ComponentType[AddIcCallRoundedProps] = js.constructorOf[typings.materialUiIcons.addIcCallRoundedMod.default].asInstanceOf[typings.react.mod.ComponentType[AddIcCallRoundedProps]]
+  @scala.inline
+  def AddIcCallSharp: ComponentType[AddIcCallSharpProps] = js.constructorOf[typings.materialUiIcons.addIcCallSharpMod.default].asInstanceOf[typings.react.mod.ComponentType[AddIcCallSharpProps]]
+  @scala.inline
+  def AddIcCallTwoTone: ComponentType[AddIcCallTwoToneProps] = js.constructorOf[typings.materialUiIcons.addIcCallTwoToneMod.default].asInstanceOf[typings.react.mod.ComponentType[AddIcCallTwoToneProps]]
   @scala.inline
   def AddLocation: ComponentType[AddLocationProps] = js.constructorOf[typings.materialUiIcons.addLocationMod.default].asInstanceOf[typings.react.mod.ComponentType[AddLocationProps]]
   @scala.inline
@@ -5348,6 +5358,16 @@ object materialUiIconsComponents extends materialUiIconsProps {
   @scala.inline
   def LibraryAdd: ComponentType[LibraryAddProps] = js.constructorOf[typings.materialUiIcons.libraryAddMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddProps]]
   @scala.inline
+  def LibraryAddCheck: ComponentType[LibraryAddCheckProps] = js.constructorOf[typings.materialUiIcons.libraryAddCheckMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddCheckProps]]
+  @scala.inline
+  def LibraryAddCheckOutlined: ComponentType[LibraryAddCheckOutlinedProps] = js.constructorOf[typings.materialUiIcons.libraryAddCheckOutlinedMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddCheckOutlinedProps]]
+  @scala.inline
+  def LibraryAddCheckRounded: ComponentType[LibraryAddCheckRoundedProps] = js.constructorOf[typings.materialUiIcons.libraryAddCheckRoundedMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddCheckRoundedProps]]
+  @scala.inline
+  def LibraryAddCheckSharp: ComponentType[LibraryAddCheckSharpProps] = js.constructorOf[typings.materialUiIcons.libraryAddCheckSharpMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddCheckSharpProps]]
+  @scala.inline
+  def LibraryAddCheckTwoTone: ComponentType[LibraryAddCheckTwoToneProps] = js.constructorOf[typings.materialUiIcons.libraryAddCheckTwoToneMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddCheckTwoToneProps]]
+  @scala.inline
   def LibraryAddOutlined: ComponentType[LibraryAddOutlinedProps] = js.constructorOf[typings.materialUiIcons.libraryAddOutlinedMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddOutlinedProps]]
   @scala.inline
   def LibraryAddRounded: ComponentType[LibraryAddRoundedProps] = js.constructorOf[typings.materialUiIcons.libraryAddRoundedMod.default].asInstanceOf[typings.react.mod.ComponentType[LibraryAddRoundedProps]]
@@ -6987,25 +7007,5 @@ object materialUiIconsComponents extends materialUiIconsProps {
   def PermIdentitySharp: ComponentType[PermIdentitySharpProps] = js.constructorOf[typings.materialUiIcons.permIdentitySharpMod.default].asInstanceOf[typings.react.mod.ComponentType[PermIdentitySharpProps]]
   @scala.inline
   def PermIdentityTwoTone: ComponentType[PermIdentityTwoToneProps] = js.constructorOf[typings.materialUiIcons.permIdentityTwoToneMod.default].asInstanceOf[typings.react.mod.ComponentType[PermIdentityTwoToneProps]]
-  @scala.inline
-  def PermMedia: ComponentType[PermMediaProps] = js.constructorOf[typings.materialUiIcons.permMediaMod.default].asInstanceOf[typings.react.mod.ComponentType[PermMediaProps]]
-  @scala.inline
-  def PermMediaOutlined: ComponentType[PermMediaOutlinedProps] = js.constructorOf[typings.materialUiIcons.permMediaOutlinedMod.default].asInstanceOf[typings.react.mod.ComponentType[PermMediaOutlinedProps]]
-  @scala.inline
-  def PermMediaRounded: ComponentType[PermMediaRoundedProps] = js.constructorOf[typings.materialUiIcons.permMediaRoundedMod.default].asInstanceOf[typings.react.mod.ComponentType[PermMediaRoundedProps]]
-  @scala.inline
-  def PermMediaSharp: ComponentType[PermMediaSharpProps] = js.constructorOf[typings.materialUiIcons.permMediaSharpMod.default].asInstanceOf[typings.react.mod.ComponentType[PermMediaSharpProps]]
-  @scala.inline
-  def PermMediaTwoTone: ComponentType[PermMediaTwoToneProps] = js.constructorOf[typings.materialUiIcons.permMediaTwoToneMod.default].asInstanceOf[typings.react.mod.ComponentType[PermMediaTwoToneProps]]
-  @scala.inline
-  def PermPhoneMsg: ComponentType[PermPhoneMsgProps] = js.constructorOf[typings.materialUiIcons.permPhoneMsgMod.default].asInstanceOf[typings.react.mod.ComponentType[PermPhoneMsgProps]]
-  @scala.inline
-  def PermPhoneMsgOutlined: ComponentType[PermPhoneMsgOutlinedProps] = js.constructorOf[typings.materialUiIcons.permPhoneMsgOutlinedMod.default].asInstanceOf[typings.react.mod.ComponentType[PermPhoneMsgOutlinedProps]]
-  @scala.inline
-  def PermPhoneMsgRounded: ComponentType[PermPhoneMsgRoundedProps] = js.constructorOf[typings.materialUiIcons.permPhoneMsgRoundedMod.default].asInstanceOf[typings.react.mod.ComponentType[PermPhoneMsgRoundedProps]]
-  @scala.inline
-  def PermPhoneMsgSharp: ComponentType[PermPhoneMsgSharpProps] = js.constructorOf[typings.materialUiIcons.permPhoneMsgSharpMod.default].asInstanceOf[typings.react.mod.ComponentType[PermPhoneMsgSharpProps]]
-  @scala.inline
-  def PermPhoneMsgTwoTone: ComponentType[PermPhoneMsgTwoToneProps] = js.constructorOf[typings.materialUiIcons.permPhoneMsgTwoToneMod.default].asInstanceOf[typings.react.mod.ComponentType[PermPhoneMsgTwoToneProps]]
 }
 

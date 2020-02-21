@@ -1,13 +1,13 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.CodesOfConductGetConductCodeParams
-import typings.octokitRest.mod.CodesOfConductGetConductCodeResponse
-import typings.octokitRest.mod.CodesOfConductGetForRepoParams
-import typings.octokitRest.mod.CodesOfConductGetForRepoResponse
-import typings.octokitRest.mod.CodesOfConductListConductCodesResponse
-import typings.octokitRest.mod.EmptyParams
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.CodesOfConductGetConductCodeParams
+import typings.octokitRest.mod.Octokit.CodesOfConductGetConductCodeResponse
+import typings.octokitRest.mod.Octokit.CodesOfConductGetForRepoParams
+import typings.octokitRest.mod.Octokit.CodesOfConductGetForRepoResponse
+import typings.octokitRest.mod.Octokit.CodesOfConductListConductCodesResponse
+import typings.octokitRest.mod.Octokit.EmptyParams
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

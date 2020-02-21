@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.navTypesMod.INavProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object navMod extends js.Object {
     def this(props: INavProps) = this()
   }
   
-  val Nav: StatelessComponent[INavProps] = js.native
+  val Nav: FunctionComponent[INavProps] = js.native
   def isRelativeUrl(url: String): Boolean = js.native
   /* static members */
   @js.native

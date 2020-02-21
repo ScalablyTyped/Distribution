@@ -35,6 +35,9 @@ object mod extends js.Object {
   def deepStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def deepStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def deepStrictEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native
+  def doesNotMatch(value: java.lang.String, regExp: RegExp): Unit = js.native
+  def doesNotMatch(value: java.lang.String, regExp: RegExp, message: java.lang.String): Unit = js.native
+  def doesNotMatch(value: java.lang.String, regExp: RegExp, message: Error): Unit = js.native
   def doesNotReject(block: js.Function0[js.Promise[_]]): js.Promise[Unit] = js.native
   def doesNotReject(block: js.Function0[js.Promise[_]], error: js.Function): js.Promise[Unit] = js.native
   def doesNotReject(block: js.Function0[js.Promise[_]], error: js.Function, message: java.lang.String): js.Promise[Unit] = js.native
@@ -89,6 +92,9 @@ object mod extends js.Object {
   def fail(message: java.lang.String): scala.Nothing = js.native
   def fail(message: Error): scala.Nothing = js.native
   def ifError(value: js.Any): Unit = js.native
+  def `match`(value: java.lang.String, regExp: RegExp): Unit = js.native
+  def `match`(value: java.lang.String, regExp: RegExp, message: java.lang.String): Unit = js.native
+  def `match`(value: java.lang.String, regExp: RegExp, message: Error): Unit = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any): Unit = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): Unit = js.native
   def notDeepEqual(actual: js.Any, expected: js.Any, message: Error): Unit = js.native

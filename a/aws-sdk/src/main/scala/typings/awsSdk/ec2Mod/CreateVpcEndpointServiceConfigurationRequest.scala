@@ -26,6 +26,10 @@ trait CreateVpcEndpointServiceConfigurationRequest extends js.Object {
     * The private DNS name to assign to the VPC endpoint service.
     */
   var PrivateDnsName: js.UndefOr[String] = js.native
+  /**
+    * The tags to associate with the service.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
 }
 
 object CreateVpcEndpointServiceConfigurationRequest {
@@ -35,13 +39,15 @@ object CreateVpcEndpointServiceConfigurationRequest {
     AcceptanceRequired: js.UndefOr[scala.Boolean] = js.undefined,
     ClientToken: String = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    PrivateDnsName: String = null
+    PrivateDnsName: String = null,
+    TagSpecifications: TagSpecificationList = null
   ): CreateVpcEndpointServiceConfigurationRequest = {
     val __obj = js.Dynamic.literal(NetworkLoadBalancerArns = NetworkLoadBalancerArns.asInstanceOf[js.Any])
     if (!js.isUndefined(AcceptanceRequired)) __obj.updateDynamic("AcceptanceRequired")(AcceptanceRequired.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcEndpointServiceConfigurationRequest]
   }
 }

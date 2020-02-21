@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/html" : "5.3.7"
+      "@storybook/html" : "5.3.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/html" : "5.3.7"
+      "@storybook/html" : "5.3.13"
     }
   ],
   "compile-devDependencies" : [

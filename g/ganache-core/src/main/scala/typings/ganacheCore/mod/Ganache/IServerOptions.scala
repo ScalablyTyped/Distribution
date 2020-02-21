@@ -4,6 +4,7 @@ import typings.ganacheCore.AnonLog
 import typings.ganacheCore.ganacheCoreStrings.byzantium
 import typings.ganacheCore.ganacheCoreStrings.constantinople
 import typings.ganacheCore.ganacheCoreStrings.istanbul
+import typings.ganacheCore.ganacheCoreStrings.muirGlacier
 import typings.ganacheCore.ganacheCoreStrings.petersburg
 import typings.std.Date
 import scala.scalajs.js
@@ -28,7 +29,7 @@ object IServerOptions {
     fork_block_number: String | Double = null,
     gasLimit: String | Double = null,
     gasPrice: String = null,
-    hardfork: byzantium | constantinople | petersburg | istanbul = null,
+    hardfork: byzantium | constantinople | petersburg | istanbul | muirGlacier = null,
     hd_path: String = null,
     keepAliveTimeout: Int | Double = null,
     locked: js.UndefOr[Boolean] = js.undefined,

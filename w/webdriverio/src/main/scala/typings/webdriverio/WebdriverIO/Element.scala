@@ -133,14 +133,14 @@ trait Element extends js.Object {
     * Click on an element.
     */
   def click(): Unit = js.native
-  def click(options: js.Object): Unit = js.native
+  def click(options: ClickOptions): Unit = js.native
   /**
     * Click on an element.
     */
   @JSName("click")
   def click_Promise(): js.Promise[Unit] = js.native
   @JSName("click")
-  def click_Promise(options: js.Object): js.Promise[Unit] = js.native
+  def click_Promise(options: ClickOptions): js.Promise[Unit] = js.native
   /**
     * The `custom$` allows you to use a custom strategy declared by using `browser.addLocatorStrategy`
     */

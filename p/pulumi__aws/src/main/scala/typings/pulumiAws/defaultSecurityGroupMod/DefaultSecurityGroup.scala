@@ -27,6 +27,10 @@ class DefaultSecurityGroup protected () extends CustomResource {
   def this(name: String, args: DefaultSecurityGroupArgs, opts: CustomResourceOptions) = this()
   val arn: Output_[String] = js.native
   /**
+    * The description of the security group
+    */
+  val description: Output_[String] = js.native
+  /**
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
     */

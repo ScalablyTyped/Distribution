@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object createStackNavigatorMod extends js.Object {
   def default(
-    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _]]
+    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _], _]
   ): js.Any = js.native
   def default(
-    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _]],
+    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _], _],
     stackConfig: CreateNavigatorConfigNavigationStackConfigNavigati
   ): js.Any = js.native
 }

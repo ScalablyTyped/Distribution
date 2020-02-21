@@ -1,6 +1,6 @@
 package typings.relayCompiler
 
-import typings.relayCompiler.graphQLCompilerContextMod.GraphQLCompilerContext
+import typings.relayCompiler.compilerContextMod.CompilerContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,6 +24,6 @@ object refetchableFragmentTransformMod extends js.Object {
     * 3. Building the refetch queries, a straightforward copying transform from
     *    Fragment to Root IR nodes.
     */
-  def transform(context: GraphQLCompilerContext): GraphQLCompilerContext = js.native
+  def transform(context: CompilerContext): CompilerContext = js.native
 }
 

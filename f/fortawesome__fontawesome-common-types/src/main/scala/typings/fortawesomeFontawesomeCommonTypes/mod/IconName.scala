@@ -101,6 +101,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cuttlefish
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`d-and-d`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`d-and-d-beyond`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dailymotion
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dashcube
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.delicious
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.deploydog
@@ -208,6 +209,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ideal
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.imdb
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.instagram
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`instagram-square`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.intercom
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`internet-explorer`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.invision
@@ -259,6 +261,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microsoft
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mix
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mixcloud
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mixer
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mizuni
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.modx
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.monero
@@ -334,6 +337,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sellsy
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.servicestack
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shirtsinbulk
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shopify
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shopware
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.simplybuilt
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sistrix
@@ -859,6 +863,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffee-pot`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffee-togo`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coffin
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffin-cross`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cog
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cogs
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coin
@@ -1132,11 +1137,13 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flux-capacitor`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fog
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folder
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-download`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-minus`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-open`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-plus`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-times`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-tree`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-upload`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folders
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.font
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`font-case`
@@ -2168,6 +2175,7 @@ import scala.scalajs.js.annotation._
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-tag`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-tie`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-times`
+  - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-unlock`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-visor`
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.users
   - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`users-class`
@@ -3237,6 +3245,8 @@ object IconName {
   @scala.inline
   def coffin: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.coffin = this.cast("coffin")
   @scala.inline
+  def `coffin-cross`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffin-cross` = this.cast("coffin-cross")
+  @scala.inline
   def cog: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cog = this.cast("cog")
   @scala.inline
   def cogs: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cogs = this.cast("cogs")
@@ -3444,6 +3454,8 @@ object IconName {
   def `d-and-d-beyond`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`d-and-d-beyond` = this.cast("d-and-d-beyond")
   @scala.inline
   def dagger: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dagger = this.cast("dagger")
+  @scala.inline
+  def dailymotion: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dailymotion = this.cast("dailymotion")
   @scala.inline
   def dashcube: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dashcube = this.cast("dashcube")
   @scala.inline
@@ -3931,6 +3943,8 @@ object IconName {
   @scala.inline
   def folder: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folder = this.cast("folder")
   @scala.inline
+  def `folder-download`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-download` = this.cast("folder-download")
+  @scala.inline
   def `folder-minus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-minus` = this.cast("folder-minus")
   @scala.inline
   def `folder-open`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-open` = this.cast("folder-open")
@@ -3940,6 +3954,8 @@ object IconName {
   def `folder-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-times` = this.cast("folder-times")
   @scala.inline
   def `folder-tree`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-tree` = this.cast("folder-tree")
+  @scala.inline
+  def `folder-upload`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`folder-upload` = this.cast("folder-upload")
   @scala.inline
   def folders: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.folders = this.cast("folders")
   @scala.inline
@@ -4479,6 +4495,8 @@ object IconName {
   @scala.inline
   def instagram: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.instagram = this.cast("instagram")
   @scala.inline
+  def `instagram-square`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`instagram-square` = this.cast("instagram-square")
+  @scala.inline
   def integral: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.integral = this.cast("integral")
   @scala.inline
   def intercom: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.intercom = this.cast("intercom")
@@ -4892,6 +4910,8 @@ object IconName {
   def mix: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mix = this.cast("mix")
   @scala.inline
   def mixcloud: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mixcloud = this.cast("mixcloud")
+  @scala.inline
+  def mixer: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mixer = this.cast("mixer")
   @scala.inline
   def mizuni: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mizuni = this.cast("mizuni")
   @scala.inline
@@ -5618,6 +5638,8 @@ object IconName {
   def `shish-kebab`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shish-kebab` = this.cast("shish-kebab")
   @scala.inline
   def `shoe-prints`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shoe-prints` = this.cast("shoe-prints")
+  @scala.inline
+  def shopify: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shopify = this.cast("shopify")
   @scala.inline
   def `shopping-bag`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shopping-bag` = this.cast("shopping-bag")
   @scala.inline
@@ -6500,6 +6522,8 @@ object IconName {
   def `user-tie`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-tie` = this.cast("user-tie")
   @scala.inline
   def `user-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-times` = this.cast("user-times")
+  @scala.inline
+  def `user-unlock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-unlock` = this.cast("user-unlock")
   @scala.inline
   def `user-visor`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-visor` = this.cast("user-visor")
   @scala.inline

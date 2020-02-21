@@ -79,5 +79,11 @@ object stateMod extends js.Object {
     def webUserAgent(): String = js.native
   }
   
+  /* static members */
+  @js.native
+  object State extends js.Object {
+    var stateDebug: js.Any = js.native
+  }
+  
 }
 

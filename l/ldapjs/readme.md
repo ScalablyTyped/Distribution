@@ -1,6 +1,7 @@
 
 # Scala.js typings for ldapjs
 
+Typings are for version 1.0
 
 ## Library description:
 LDAP client and server APIs

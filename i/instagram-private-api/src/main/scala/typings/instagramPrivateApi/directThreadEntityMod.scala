@@ -4,9 +4,11 @@ import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectTh
 import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastPhotoStoryOptions
 import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastVideoOptions
 import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastVideoStoryOptions
+import typings.instagramPrivateApi.directThreadBroadcastMediaOptionsMod.DirectThreadBroadcastVoiceOptions
 import typings.instagramPrivateApi.directThreadBroadcastReelOptionsMod.DirectThreadBroadcastReelOptions
 import typings.instagramPrivateApi.directThreadRepositoryAddUserResponseMod.DirectThreadRepositoryAddUserResponseRootObject
 import typings.instagramPrivateApi.directThreadRepositoryBroadcastResponseMod.DirectThreadRepositoryBroadcastResponsePayload
+import typings.instagramPrivateApi.directThreadRepositoryBroadcastResponseMod.DirectThreadRepositoryBroadcastResponseRootObject
 import typings.instagramPrivateApi.directThreadRepositoryUpdateTitleResponseMod.DirectThreadRepositoryUpdateTitleResponseRootObject
 import typings.instagramPrivateApi.repositoryMod.Repository
 import typings.instagramPrivateApi.statusResponseMod.StatusResponse
@@ -24,17 +26,36 @@ object directThreadEntityMod extends js.Object {
     var threadId: String = js.native
     var userIds: js.Array[String] = js.native
     def addUser(userIds: js.Array[Double | String]): js.Promise[DirectThreadRepositoryAddUserResponseRootObject] = js.native
-    def broadcastLink(link_text: String, link_urls: js.Array[String]): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
-    def broadcastPhoto(options: DirectThreadBroadcastPhotoOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
-    def broadcastProfile(id: String): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
-    def broadcastProfile(id: Double): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
-    def broadcastReel(options: DirectThreadBroadcastReelOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastLink(link_text: String, link_urls: js.Array[String]): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
+    def broadcastPhoto(options: DirectThreadBroadcastPhotoOptions): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
+    def broadcastProfile(id: String): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
+    def broadcastProfile(id: Double): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
+    def broadcastReel(options: DirectThreadBroadcastReelOptions): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
     def broadcastStory(input: DirectThreadBroadcastPhotoStoryOptions): js.Promise[_] = js.native
     def broadcastStory(input: DirectThreadBroadcastVideoStoryOptions): js.Promise[_] = js.native
     def broadcastStory(input: Buffer): js.Promise[_] = js.native
-    def broadcastText(text: String): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
-    def broadcastUserStory(options: DirectThreadBroadcastReelOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
-    def broadcastVideo(options: DirectThreadBroadcastVideoOptions): js.Promise[DirectThreadRepositoryBroadcastResponsePayload] = js.native
+    def broadcastText(text: String): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
+    def broadcastUserStory(options: DirectThreadBroadcastReelOptions): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
+    def broadcastVideo(options: DirectThreadBroadcastVideoOptions): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
+    def broadcastVoice(options: DirectThreadBroadcastVoiceOptions): js.Promise[
+        DirectThreadRepositoryBroadcastResponseRootObject | DirectThreadRepositoryBroadcastResponsePayload
+      ] = js.native
     def deleteItem(itemId: String): js.Promise[StatusResponse] = js.native
     def deleteItem(itemId: Double): js.Promise[StatusResponse] = js.native
     def hide(): js.Promise[StatusResponse] = js.native

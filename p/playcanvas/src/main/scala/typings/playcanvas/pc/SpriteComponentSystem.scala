@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.SpriteComponentSystem
-  * @extends pc.ComponentSystem
+  * @augments pc.ComponentSystem
   * @classdesc Manages creation of {@link pc.SpriteComponent}s.
-  * @param {pc.Application} app The application
+  * @param {pc.Application} app - The application.
   */
 @JSGlobal("pc.SpriteComponentSystem")
 @js.native

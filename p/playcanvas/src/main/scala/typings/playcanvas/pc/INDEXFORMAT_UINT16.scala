@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.INDEXFORMAT_UINT16
+  * @type {number}
   * @description 16-bit unsigned vertex indices.
   */
 @JSGlobal("pc.INDEXFORMAT_UINT16")

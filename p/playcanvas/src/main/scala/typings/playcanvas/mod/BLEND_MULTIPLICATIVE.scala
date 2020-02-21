@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLEND_MULTIPLICATIVE
+  * @type {number}
   * @description Multiply the color of the source fragment by the color of the destination
   * fragment and write the result to the frame buffer.
   */

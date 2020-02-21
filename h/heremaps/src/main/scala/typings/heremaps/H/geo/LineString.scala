@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @param opt_ctx {H.geo.AltitudeContext=} - An optional altitude context for all altitudes contained in this LineString.
   * @throws {H.lang.InvalidArgumentError} - in case of invalid lat, lng, alt values
   */
-class LineString () extends js.Object {
+class LineString () extends AbstractGeometry {
   def this(opt_latLngAlts: js.Array[Double]) = this()
   def this(opt_latLngAlts: js.Array[Double], opt_ctx: AltitudeContext) = this()
   /**
@@ -33,13 +33,6 @@ class LineString () extends js.Object {
     opt_start: Double,
     opt_end: Double
   ): Unit = js.native
-  /**
-    * Checks whether the geometry is equal to the geometry supplied by the caller.
-    * Two geometries are considered as equal if they represent the same geometry type and have equal coordinate values.
-    * @param other {any} - The geometry to check against
-    * @return {boolean} - true if the two geometries are equal, otherwise false
-    */
-  def equals(other: js.Any): Boolean = js.native
   /**
     * This method extracts a H.geo.Point from this LineString at the virtual point index.
     * If the extracted point has an alt value, the LineString's altitude context will be supplied to the point.

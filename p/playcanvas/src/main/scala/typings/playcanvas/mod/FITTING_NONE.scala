@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.FITTING_NONE
   * @description Disable all fitting logic.
   */

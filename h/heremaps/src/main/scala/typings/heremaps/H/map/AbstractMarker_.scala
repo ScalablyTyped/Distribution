@@ -1,6 +1,7 @@
 package typings.heremaps.H.map
 
 import typings.heremaps.H.geo.IPoint
+import typings.heremaps.H.geo.MultiPoint
 import typings.heremaps.H.geo.Point
 import typings.heremaps.H.map.AbstractMarker.Options
 import scala.scalajs.js
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("H.map.AbstractMarker")
 @js.native
-class AbstractMarker_ protected () extends Object {
+abstract class AbstractMarker_ protected () extends Object {
   /**
     * Constructor
     * @param position {H.geo.IPoint} - The location of this marker
@@ -26,15 +27,22 @@ class AbstractMarker_ protected () extends Object {
     */
   var draggable: js.UndefOr[Boolean] = js.native
   /**
+    * This method returns this marker's current position.
+    * @returns {H.geo.Point} - current marker geo position
+    */
+  def getGeometry(): Point | MultiPoint = js.native
+  /**
     * Returns this marker's current icon.
     * @returns {!(H.map.Icon | H.map.DomIcon)}
     */
   def getIcon(): Icon | DomIcon = js.native
   /**
-    * This method returns this marker's current position.
-    * @returns {H.geo.Point} - current marker geo position
+    * This method sets the marker's current position.
+    * @param position {H.geo.IPoint}
+    * @returns {H.map.AbstractMarker} - the marker itself
     */
-  def getPosition(): Point = js.native
+  def setGeometry(position: IPoint): AbstractMarker = js.native
+  def setGeometry(position: MultiPoint): AbstractMarker = js.native
   def setIcon(icon: DomIcon): AbstractMarker = js.native
   /**
     * Sets the marker's current icon.
@@ -42,11 +50,5 @@ class AbstractMarker_ protected () extends Object {
     * @returns {H.map.AbstractMarker} - the marker itself
     */
   def setIcon(icon: Icon): AbstractMarker = js.native
-  /**
-    * This method sets the marker's current position.
-    * @param position {H.geo.IPoint}
-    * @returns {H.map.AbstractMarker} - the marker itself
-    */
-  def setPosition(position: IPoint): AbstractMarker = js.native
 }
 

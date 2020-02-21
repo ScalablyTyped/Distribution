@@ -45,6 +45,9 @@ object plaidLinkStrings {
   sealed trait MFA extends ViewName
   
   @js.native
+  sealed trait NUMBERS extends ViewName
+  
+  @js.native
   sealed trait OPEN extends EventName
   
   @js.native
@@ -160,6 +163,8 @@ object plaidLinkStrings {
   def LOADING: LOADING = "LOADING".asInstanceOf[LOADING]
   @scala.inline
   def MFA: MFA = "MFA".asInstanceOf[MFA]
+  @scala.inline
+  def NUMBERS: NUMBERS = "NUMBERS".asInstanceOf[NUMBERS]
   @scala.inline
   def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
   @scala.inline

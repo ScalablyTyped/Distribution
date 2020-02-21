@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "gulp-responsive-images"
-version := "0.0-dt-20180411Z-d47eed"
-scalaVersion := "2.12.10"
+version := "0.0-dt-20180411Z-3e1635"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "gm" % "1.18-dt-20191226Z-a09794",
-  "org.scalablytyped" %%% "gulp-rename" % "0.0-unknown-dt-20190322Z-ebeaf6",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "gm" % "1.18-dt-20191226Z-e21f86",
+  "org.scalablytyped" %%% "gulp-rename" % "0.0-unknown-dt-20190322Z-50e979",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

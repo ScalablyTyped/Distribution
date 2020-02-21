@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@octokit/plugin-paginate-rest" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@octokit/plugin-paginate-rest" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

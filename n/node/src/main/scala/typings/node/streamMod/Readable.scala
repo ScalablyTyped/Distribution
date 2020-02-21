@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stream", "Readable")
 @js.native
 class Readable ()
-  extends internal
+  extends Stream
      with ReadableStream {
   def this(opts: ReadableOptions) = this()
   var destroyed: Boolean = js.native

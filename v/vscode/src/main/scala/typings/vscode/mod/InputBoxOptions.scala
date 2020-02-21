@@ -15,7 +15,7 @@ trait InputBoxOptions extends js.Object {
   		 */
   var password: js.UndefOr[Boolean] = js.undefined
   /**
-  		 * An optional string to show as place holder in the input box to guide the user what to type.
+  		 * An optional string to show as placeholder in the input box to guide the user what to type.
   		 */
   var placeHolder: js.UndefOr[String] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait InputBoxOptions extends js.Object {
   		 * to the user.
   		 *
   		 * @param value The current value of the input box.
-  		 * @return A human readable string which is presented as diagnostic message.
+  		 * @return A human-readable string which is presented as diagnostic message.
   		 * Return `undefined`, `null`, or the empty string when 'value' is valid.
   		 */
   var validateInput: js.UndefOr[

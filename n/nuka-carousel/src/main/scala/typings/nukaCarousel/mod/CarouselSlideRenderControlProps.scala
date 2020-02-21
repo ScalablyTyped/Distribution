@@ -32,7 +32,7 @@ trait CarouselSlideRenderControlProps extends js.Object {
   /**
     * Slides to scroll at once
     */
-  var slidesToScroll: Double
+  var slidesToScroll: CarouselSlidesToScrollProp
   /**
     * Slides to show at once
     */
@@ -68,7 +68,7 @@ object CarouselSlideRenderControlProps {
     previousSlide: () => Unit,
     slideCount: Double,
     slideWidth: Double,
-    slidesToScroll: Double,
+    slidesToScroll: CarouselSlidesToScrollProp,
     slidesToShow: Double,
     wrapAround: Boolean
   ): CarouselSlideRenderControlProps = {

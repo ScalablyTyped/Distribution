@@ -3,6 +3,7 @@ package typings.pulumiAws.domainMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.elasticsearch.DomainClusterConfig
 import typings.pulumiAws.outputMod.elasticsearch.DomainCognitoOptions
+import typings.pulumiAws.outputMod.elasticsearch.DomainDomainEndpointOptions
 import typings.pulumiAws.outputMod.elasticsearch.DomainEbsOptions
 import typings.pulumiAws.outputMod.elasticsearch.DomainEncryptAtRest
 import typings.pulumiAws.outputMod.elasticsearch.DomainLogPublishingOption
@@ -51,6 +52,10 @@ class Domain protected () extends CustomResource {
     */
   val clusterConfig: Output_[DomainClusterConfig] = js.native
   val cognitoOptions: Output_[js.UndefOr[DomainCognitoOptions]] = js.native
+  /**
+    * Domain endpoint HTTP(S) related options. See below.
+    */
+  val domainEndpointOptions: Output_[DomainDomainEndpointOptions] = js.native
   /**
     * Unique identifier for the domain.
     */

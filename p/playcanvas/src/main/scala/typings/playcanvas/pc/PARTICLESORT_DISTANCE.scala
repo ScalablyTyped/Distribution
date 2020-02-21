@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PARTICLESORT_DISTANCE
+  * @type {number}
   * @description Sorting based on distance to the camera. CPU only.
   */
 @JSGlobal("pc.PARTICLESORT_DISTANCE")

@@ -59,14 +59,14 @@ class Query[T] protected () extends js.Object {
     *
     * @return A Promise that will be resolved with the results of the Query.
     */
-  def get(): js.Promise[QuerySnapshot[DocumentData]] = js.native
+  def get(): js.Promise[QuerySnapshot[T]] = js.native
   /**
     * Returns true if this `Query` is equal to the provided one.
     *
     * @param other The `Query` to compare against.
     * @return true if this `Query` is equal to the provided one.
     */
-  def isEqual(other: Query[DocumentData]): Boolean = js.native
+  def isEqual(other: Query[T]): Boolean = js.native
   /**
     * Creates and returns a new Query that's additionally limited to only
     * return up to the specified number of documents.
@@ -98,9 +98,9 @@ class Query[T] protected () extends js.Object {
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
-  def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot[DocumentData], Unit]): js.Function0[Unit] = js.native
+  def onSnapshot(onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit]): js.Function0[Unit] = js.native
   def onSnapshot(
-    onNext: js.Function1[/* snapshot */ QuerySnapshot[DocumentData], Unit],
+    onNext: js.Function1[/* snapshot */ QuerySnapshot[T], Unit],
     onError: js.Function1[/* error */ Error, Unit]
   ): js.Function0[Unit] = js.native
   /**

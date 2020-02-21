@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLUR_GAUSSIAN
+  * @type {number}
   * @description Gaussian filter. May look smoother than box, but requires more samples.
   */
 @JSGlobal("pc.BLUR_GAUSSIAN")

@@ -20,6 +20,7 @@ import typings.node.cryptoMod.Utf8AsciiLatin1Encoding
 import typings.node.dgramMod.SocketType
 import typings.node.fsMod.symlink.Type
 import typings.node.tlsMod.SecureVersion
+import typings.node.utilMod.Style
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -582,11 +583,17 @@ object nodeStrings {
   sealed trait beforeExit extends js.Object
   
   @js.native
+  sealed trait bigint extends Style
+  
+  @js.native
   sealed trait binary
     extends BufferEncoding
        with HexBase64BinaryEncoding
        with TranscodeEncoding
        with Utf8AsciiBinaryEncoding
+  
+  @js.native
+  sealed trait boolean extends Style
   
   @js.native
   sealed trait buffer_ extends js.Object
@@ -623,6 +630,9 @@ object nodeStrings {
   
   @js.native
   sealed trait data extends js.Object
+  
+  @js.native
+  sealed trait date extends Style
   
   @js.native
   sealed trait der extends KeyFormat
@@ -682,6 +692,12 @@ object nodeStrings {
        with HexBase64Latin1Encoding
   
   @js.native
+  sealed trait httpColon extends js.Object
+  
+  @js.native
+  sealed trait httpsColon extends js.Object
+  
+  @js.native
   sealed trait hybrid extends ECDHKeyFormat
   
   @js.native
@@ -738,6 +754,9 @@ object nodeStrings {
   sealed trait message extends js.Object
   
   @js.native
+  sealed trait module extends Style
+  
+  @js.native
   sealed trait multipleResolves extends js.Object
   
   @js.native
@@ -748,6 +767,12 @@ object nodeStrings {
   
   @js.native
   sealed trait newSession extends js.Object
+  
+  @js.native
+  sealed trait `null` extends Style
+  
+  @js.native
+  sealed trait number extends Style
   
   @js.native
   sealed trait online extends js.Object
@@ -790,6 +815,9 @@ object nodeStrings {
   
   @js.native
   sealed trait readable extends js.Object
+  
+  @js.native
+  sealed trait regexp extends Style
   
   @js.native
   sealed trait reject extends MultipleResolveType
@@ -855,6 +883,9 @@ object nodeStrings {
   sealed trait socket extends js.Object
   
   @js.native
+  sealed trait special extends Style
+  
+  @js.native
   sealed trait spki extends js.Object
   
   @js.native
@@ -864,7 +895,13 @@ object nodeStrings {
   sealed trait streamClosed extends js.Object
   
   @js.native
+  sealed trait string extends Style
+  
+  @js.native
   sealed trait sunos extends Platform
+  
+  @js.native
+  sealed trait symbol extends Style
   
   @js.native
   sealed trait timeout extends js.Object
@@ -894,6 +931,9 @@ object nodeStrings {
   
   @js.native
   sealed trait uncompressed extends ECDHKeyFormat
+  
+  @js.native
+  sealed trait undefined extends Style
   
   @js.native
   sealed trait unhandledRejection extends js.Object
@@ -1298,7 +1338,11 @@ object nodeStrings {
   @scala.inline
   def beforeExit: beforeExit = "beforeExit".asInstanceOf[beforeExit]
   @scala.inline
+  def bigint: bigint = "bigint".asInstanceOf[bigint]
+  @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def buffer_ : buffer_ = "buffer".asInstanceOf[buffer_]
   @scala.inline
@@ -1323,6 +1367,8 @@ object nodeStrings {
   def darwin: darwin = "darwin".asInstanceOf[darwin]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
   def der: der = "der".asInstanceOf[der]
   @scala.inline
@@ -1360,6 +1406,10 @@ object nodeStrings {
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
+  def httpColon: httpColon = "http:".asInstanceOf[httpColon]
+  @scala.inline
+  def httpsColon: httpsColon = "https:".asInstanceOf[httpsColon]
+  @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
@@ -1392,6 +1442,8 @@ object nodeStrings {
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
+  def module: module = "module".asInstanceOf[module]
+  @scala.inline
   def multipleResolves: multipleResolves = "multipleResolves".asInstanceOf[multipleResolves]
   @scala.inline
   def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
@@ -1399,6 +1451,10 @@ object nodeStrings {
   def newListener: newListener = "newListener".asInstanceOf[newListener]
   @scala.inline
   def newSession: newSession = "newSession".asInstanceOf[newSession]
+  @scala.inline
+  def `null`: `null` = "null".asInstanceOf[`null`]
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
   @scala.inline
   def online: online = "online".asInstanceOf[online]
   @scala.inline
@@ -1427,6 +1483,8 @@ object nodeStrings {
   def push: push = "push".asInstanceOf[push]
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
+  def regexp: regexp = "regexp".asInstanceOf[regexp]
   @scala.inline
   def reject: reject = "reject".asInstanceOf[reject]
   @scala.inline
@@ -1470,13 +1528,19 @@ object nodeStrings {
   @scala.inline
   def socket: socket = "socket".asInstanceOf[socket]
   @scala.inline
+  def special: special = "special".asInstanceOf[special]
+  @scala.inline
   def spki: spki = "spki".asInstanceOf[spki]
   @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
   @scala.inline
   def streamClosed: streamClosed = "streamClosed".asInstanceOf[streamClosed]
   @scala.inline
+  def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def sunos: sunos = "sunos".asInstanceOf[sunos]
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline
@@ -1495,6 +1559,8 @@ object nodeStrings {
   def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
   @scala.inline
   def uncompressed: uncompressed = "uncompressed".asInstanceOf[uncompressed]
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
   @scala.inline
   def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
   @scala.inline

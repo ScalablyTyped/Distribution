@@ -4,7 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UrlPayload extends js.Object {
+trait UrlPayload
+  extends MessagePayload
+     with SendMessagePayload {
   var `type`: String
   var url: String
 }

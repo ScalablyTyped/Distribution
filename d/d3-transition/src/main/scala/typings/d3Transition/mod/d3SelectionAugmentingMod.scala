@@ -29,8 +29,8 @@ object d3SelectionAugmentingMod extends js.Object {
       *
       * @param name Name of the transition.
       */
-    def interrupt(): Transition_[GElement, Datum, PElement, PDatum] = js.native
-    def interrupt(name: String): Transition_[GElement, Datum, PElement, PDatum] = js.native
+    def interrupt(): this.type = js.native
+    def interrupt(name: String): this.type = js.native
     /**
       * Returns a new transition on the given selection with the specified name. If a name is not specified, null is used.
       * The new transition is only exclusive with other transitions of the same name.

@@ -8,9 +8,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated storage/v1beta1/CSINode is deprecated by storage/v1beta1/CSINode and not
-  * supported by Kubernetes v<nil>+ clusters.
-  *
   * CSINode holds information about all CSI drivers installed on a node. CSI drivers do not need
   * to create the CSINode object directly. As long as they use the node-driver-registrar sidecar
   * container, the kubelet will automatically populate the CSINode object for the CSI driver as
@@ -18,6 +15,8 @@ import scala.scalajs.js.annotation._
   * missing, it means either there are no CSI Drivers available on the node, or the Kubelet
   * version is low enough that it doesn't create this object. CSINode has an OwnerReference that
   * points to the corresponding node object.
+  *
+  * @deprecated storage/v1beta1/CSINode is deprecated by storage/v1/CSINode.
   */
 trait CSINode extends js.Object {
   /**

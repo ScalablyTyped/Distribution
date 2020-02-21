@@ -17,9 +17,12 @@ object duplexMockMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.node.NodeJS.EventEmitter because Already inherited
   - typings.node.eventsMod.EventEmitter because Already inherited
+  - typings.node.NodeJS.EventEmitter because Already inherited
+  - typings.node.childProcessMod.StdioNull because Already inherited
+  - typings.node.streamMod.internal because Already inherited
   - typings.node.NodeJS.ReadableStream because Already inherited
   - typings.node.NodeJS.WritableStream because var conflicts: writable. Inlined 
-  - typings.node.streamMod.internal because Already inherited
+  - typings.node.streamMod.Stream because Already inherited
   - typings.node.streamMod.Readable because Already inherited
   - typings.node.streamMod.Writable because Inheritance from two classes. Inlined _destroy, _destroy, _final, _write, addListener_close, addListener_drain, addListener_error, addListener_finish, addListener_pipe, addListener_unpipe, cork, destroy, destroy, emit_close, emit_drain, emit_error, emit_finish, emit_pipe, emit_unpipe, end, end, end, end, on_close, on_drain, on_error, on_finish, on_pipe, on_unpipe, once_close, once_drain, once_error, once_finish, once_pipe, once_unpipe, prependListener_close, prependListener_drain, prependListener_error, prependListener_finish, prependListener_pipe, prependListener_unpipe, prependOnceListener_close, prependOnceListener_drain, prependOnceListener_error, prependOnceListener_finish, prependOnceListener_pipe, prependOnceListener_unpipe, removeListener_close, removeListener_drain, removeListener_error, removeListener_finish, removeListener_pipe, removeListener_unpipe, setDefaultEncoding, uncork, write, write, write, write
   - typings.streamMock.ireadablemockMod.IReadableMock because var conflicts: destroyed, readable. Inlined it

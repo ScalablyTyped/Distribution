@@ -30,6 +30,7 @@ object GeoJSONSourceRaw {
     generateId: js.UndefOr[Boolean] = js.undefined,
     lineMetrics: js.UndefOr[Boolean] = js.undefined,
     maxzoom: Int | Double = null,
+    promoteId: PromoteIdSpecification = null,
     tolerance: Int | Double = null
   ): GeoJSONSourceRaw = {
     val __obj = js.Dynamic.literal()
@@ -43,6 +44,7 @@ object GeoJSONSourceRaw {
     if (!js.isUndefined(generateId)) __obj.updateDynamic("generateId")(generateId.asInstanceOf[js.Any])
     if (!js.isUndefined(lineMetrics)) __obj.updateDynamic("lineMetrics")(lineMetrics.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
+    if (promoteId != null) __obj.updateDynamic("promoteId")(promoteId.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONSourceRaw]
   }

@@ -12,9 +12,9 @@ trait ChartYAxisItemLabels extends js.Object {
   var dateFormats: js.UndefOr[ChartYAxisItemLabelsDateFormats] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartYAxisItemLabelsMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartYAxisItemLabelsMargin] = js.undefined
   var mirror: js.UndefOr[Boolean] = js.undefined
-  var padding: js.UndefOr[ChartYAxisItemLabelsPadding] = js.undefined
+  var padding: js.UndefOr[Double | ChartYAxisItemLabelsPadding] = js.undefined
   var rotation: js.UndefOr[Double | ChartYAxisItemLabelsRotation] = js.undefined
   var skip: js.UndefOr[Double] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
@@ -33,9 +33,9 @@ object ChartYAxisItemLabels {
     dateFormats: ChartYAxisItemLabelsDateFormats = null,
     font: String = null,
     format: String = null,
-    margin: ChartYAxisItemLabelsMargin = null,
+    margin: Double | ChartYAxisItemLabelsMargin = null,
     mirror: js.UndefOr[Boolean] = js.undefined,
-    padding: ChartYAxisItemLabelsPadding = null,
+    padding: Double | ChartYAxisItemLabelsPadding = null,
     rotation: Double | ChartYAxisItemLabelsRotation = null,
     skip: Int | Double = null,
     step: Int | Double = null,

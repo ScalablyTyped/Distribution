@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PolicyArgs extends js.Object {
-  val alarms: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the policy.
     */
@@ -46,14 +45,12 @@ object PolicyArgs {
     resourceId: Input[String],
     scalableDimension: Input[String],
     serviceNamespace: Input[String],
-    alarms: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
     policyType: Input[String] = null,
     stepScalingPolicyConfiguration: Input[PolicyStepScalingPolicyConfiguration] = null,
     targetTrackingScalingPolicyConfiguration: Input[PolicyTargetTrackingScalingPolicyConfiguration] = null
   ): PolicyArgs = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], scalableDimension = scalableDimension.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
-    if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (policyType != null) __obj.updateDynamic("policyType")(policyType.asInstanceOf[js.Any])
     if (stepScalingPolicyConfiguration != null) __obj.updateDynamic("stepScalingPolicyConfiguration")(stepScalingPolicyConfiguration.asInstanceOf[js.Any])

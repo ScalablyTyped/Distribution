@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TextShadowProps extends js.Object {
+trait TextShadowProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   /**
     * The `text-shadow` CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied
     * to the text and any of its `decorations`. Each shadow is described by some combination of X and Y offsets from
@@ -13,15 +13,15 @@ trait TextShadowProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
     */
-  var textShadow: js.UndefOr[ResponsiveValue[TextShadowProperty | Double]] = js.undefined
+  var textShadow: js.UndefOr[ResponsiveValue[TextShadowProperty | Double, ThemeType]] = js.undefined
 }
 
 object TextShadowProps {
   @scala.inline
-  def apply(textShadow: ResponsiveValue[TextShadowProperty | Double] = null): TextShadowProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](textShadow: ResponsiveValue[TextShadowProperty | Double, ThemeType] = null): TextShadowProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (textShadow != null) __obj.updateDynamic("textShadow")(textShadow.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TextShadowProps]
+    __obj.asInstanceOf[TextShadowProps[ThemeType]]
   }
 }
 

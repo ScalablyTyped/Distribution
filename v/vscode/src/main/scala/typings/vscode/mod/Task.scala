@@ -316,8 +316,8 @@ class Task protected () extends js.Object {
   		 */
   val scope: js.UndefOr[Global | Workspace | WorkspaceFolder] = js.native
   /**
-  		 * A human-readable string describing the source of this
-  		 * shell task, e.g. 'gulp' or 'npm'.
+  		 * A human-readable string describing the source of this shell task, e.g. 'gulp'
+  		 * or 'npm'. Supports rendering of [theme icons](#ThemeIcon) via the `$(<name>)`-syntax.
   		 */
   var source: String = js.native
 }

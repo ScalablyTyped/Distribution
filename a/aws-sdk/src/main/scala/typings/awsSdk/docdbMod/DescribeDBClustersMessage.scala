@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeDBClustersMessage extends js.Object {
   /**
-    * The user-provided DB cluster identifier. If this parameter is specified, information from only the specific DB cluster is returned. This parameter isn't case sensitive. Constraints:   If provided, must match an existing DBClusterIdentifier.  
+    * The user-provided cluster identifier. If this parameter is specified, information from only the specific cluster is returned. This parameter isn't case sensitive. Constraints:   If provided, must match an existing DBClusterIdentifier.  
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.native
   /**
-    * A filter that specifies one or more DB clusters to describe. Supported filters:    db-cluster-id - Accepts DB cluster identifiers and DB cluster Amazon Resource Names (ARNs). The results list only includes information about the DB clusters identified by these ARNs.  
+    * A filter that specifies one or more clusters to describe. Supported filters:    db-cluster-id - Accepts cluster identifiers and cluster Amazon Resource Names (ARNs). The results list only includes information about the clusters identified by these ARNs.  
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**

@@ -19,6 +19,7 @@ trait PagerOptions extends js.Object {
   var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
   var previousNext: js.UndefOr[Boolean] = js.undefined
   var refresh: js.UndefOr[Boolean] = js.undefined
+  var responsive: js.UndefOr[Boolean] = js.undefined
   var selectTemplate: js.UndefOr[String] = js.undefined
 }
 
@@ -38,6 +39,7 @@ object PagerOptions {
     pageSizes: Boolean | js.Any = null,
     previousNext: js.UndefOr[Boolean] = js.undefined,
     refresh: js.UndefOr[Boolean] = js.undefined,
+    responsive: js.UndefOr[Boolean] = js.undefined,
     selectTemplate: String = null
   ): PagerOptions = {
     val __obj = js.Dynamic.literal()
@@ -54,6 +56,7 @@ object PagerOptions {
     if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
     if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext.asInstanceOf[js.Any])
     if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (selectTemplate != null) __obj.updateDynamic("selectTemplate")(selectTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerOptions]
   }

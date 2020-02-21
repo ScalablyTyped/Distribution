@@ -11,7 +11,7 @@ trait CancelImageCreationRequest extends js.Object {
     */
   var clientToken: ClientToken = js.native
   /**
-    * The Amazon Resource Name (ARN) of the image whose creation you wish to cancel.
+    * The Amazon Resource Name (ARN) of the image whose creation you want to cancel.
     */
   var imageBuildVersionArn: ImageBuildVersionArn = js.native
 }

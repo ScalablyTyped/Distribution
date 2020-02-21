@@ -1,6 +1,7 @@
 
 # Scala.js typings for karma-jasmine
 
+Typings are for version 3.1
 
 ## Library description:
 A Karma plugin - adapter for Jasmine testing framework.

@@ -50,6 +50,11 @@ object remoteDocumentCacheMod extends js.Object {
       */
     def getEntry(transaction: PersistenceTransaction, documentKey: DocumentKey): PersistencePromise[MaybeDocument | Null] = js.native
     /**
+      * Returns the read time of the most recently read document in the cache, or
+      * SnapshotVersion.MIN if not available.
+      */
+    def getLastReadTime(transaction: PersistenceTransaction): PersistencePromise[SnapshotVersion] = js.native
+    /**
       * Returns the set of documents that have changed since the specified read
       * time.
       */

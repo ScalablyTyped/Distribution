@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ParserOptions extends js.Object {
   var baseIRI: js.UndefOr[String] = js.undefined
-  var factory: js.UndefOr[typings.rdfJs.mod.DataFactory] = js.undefined
+  var factory: js.UndefOr[typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad]] = js.undefined
   var format: js.UndefOr[String] = js.undefined
   var prefixes: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -15,7 +15,7 @@ object ParserOptions {
   @scala.inline
   def apply(
     baseIRI: String = null,
-    factory: typings.rdfJs.mod.DataFactory = null,
+    factory: typings.rdfJs.mod.DataFactory[typings.rdfJs.mod.Quad] = null,
     format: String = null,
     prefixes: js.Array[String] = null
   ): ParserOptions = {

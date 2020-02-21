@@ -49,9 +49,9 @@ trait Pubnub extends js.Object {
     userId: String,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ DeleteUserResponse, Unit]
   ): Unit = js.native
-  def encrypt(data: String): js.Any = js.native
-  def encrypt(data: String, customCipherKey: String): js.Any = js.native
-  def encrypt(data: String, customCipherKey: String, options: CryptoParameters): js.Any = js.native
+  def encrypt(data: String): String = js.native
+  def encrypt(data: String, customCipherKey: String): String = js.native
+  def encrypt(data: String, customCipherKey: String, options: CryptoParameters): String = js.native
   def fetchMessages(params: FetchMessagesParameters): js.Promise[FetchMessagesResponse] = js.native
   def fetchMessages(
     params: FetchMessagesParameters,
@@ -167,6 +167,7 @@ trait Pubnub extends js.Object {
   def stop(): Unit = js.native
   def subscribe(params: SubscribeParameters): Unit = js.native
   def time(): js.Promise[FetchTimeResponse] = js.native
+  def time(callback: js.Function2[/* status */ PubnubStatus, /* response */ FetchTimeResponse, Unit]): Unit = js.native
   def unsubscribe(params: UnsubscribeParameters): Unit = js.native
   def unsubscribeAll(): Unit = js.native
   def updateMembers(params: MembersInputParameters): js.Promise[GetMembersResponse] = js.native

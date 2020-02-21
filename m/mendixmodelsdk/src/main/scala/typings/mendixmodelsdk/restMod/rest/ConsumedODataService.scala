@@ -65,8 +65,17 @@ class ConsumedODataService protected () extends RemoteEntitySourceDocument {
   def httpConfiguration(newValue: HttpConfiguration): js.Any = js.native
   def metadata(): String = js.native
   def metadata(newValue: String): js.Any = js.native
+  /**
+    * In version 8.6.0: introduced
+    */
+  def metadataReferences(): IList[MetadataReference] = js.native
   def metadataUrl(): String = js.native
   def metadataUrl(newValue: String): js.Any = js.native
+  /**
+    * In version 8.6.0: introduced
+    */
+  def oDataVersion(): ODataVersion = js.native
+  def oDataVersion(newValue: ODataVersion): js.Any = js.native
   def proxyHost(): js.Any = js.native
   def proxyHost(newValue: IConstant): js.Any = js.native
   def proxyHostQualifiedName(): String | Null = js.native

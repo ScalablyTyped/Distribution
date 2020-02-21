@@ -1,12 +1,12 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.Endpoint
-import typings.octokitRest.mod.EndpointOptions
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
-import typings.octokitRest.mod.TeamsUpdateLegacyParams
-import typings.octokitRest.mod.TeamsUpdateLegacyParamsDeprecatedPermission
-import typings.octokitRest.mod.TeamsUpdateLegacyResponse
+import typings.octokitRest.mod.Octokit.Endpoint
+import typings.octokitRest.mod.Octokit.EndpointOptions
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
+import typings.octokitRest.mod.Octokit.TeamsUpdateLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateLegacyParamsDeprecatedPermission
+import typings.octokitRest.mod.Octokit.TeamsUpdateLegacyResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

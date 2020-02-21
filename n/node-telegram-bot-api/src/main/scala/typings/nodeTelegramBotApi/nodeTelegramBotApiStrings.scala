@@ -19,6 +19,9 @@ object nodeTelegramBotApiStrings {
   sealed trait Markdown extends ParseMode
   
   @js.native
+  sealed trait MarkdownV2 extends ParseMode
+  
+  @js.native
   sealed trait administrator extends ChatMemberStatus
   
   @js.native
@@ -259,6 +262,8 @@ object nodeTelegramBotApiStrings {
   def HTML: HTML = "HTML".asInstanceOf[HTML]
   @scala.inline
   def Markdown: Markdown = "Markdown".asInstanceOf[Markdown]
+  @scala.inline
+  def MarkdownV2: MarkdownV2 = "MarkdownV2".asInstanceOf[MarkdownV2]
   @scala.inline
   def administrator: administrator = "administrator".asInstanceOf[administrator]
   @scala.inline

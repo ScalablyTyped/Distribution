@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.MaterialHandler
   * @implements {pc.ResourceHandler}
-  * @classdesc Resource handler used for loading {@link pc.Material} resources
-  * @param {pc.Application} app The running {@link pc.Application}
+  * @classdesc Resource handler used for loading {@link pc.Material} resources.
+  * @param {pc.Application} app - The running {@link pc.Application}.
   */
 @JSImport("playcanvas", "MaterialHandler")
 @js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tabtab", "completionItem")
 @js.native
 object completionItem extends js.Object {
-  def apply(item: CompleteItemOrString): CompleteItem = js.native
+  def apply(item: String): CompletionItem_ = js.native
+  def apply(item: CompletionItem_): CompletionItem_ = js.native
 }
 

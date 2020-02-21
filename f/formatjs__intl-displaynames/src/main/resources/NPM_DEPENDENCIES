@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@formatjs/intl-displaynames" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@formatjs/intl-displaynames" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

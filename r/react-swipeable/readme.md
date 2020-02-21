@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-swipeable
 
-Typings are for version 5.5.0
+Typings are for version 5.5.1
 
 ## Library description:
 React Swipe event handler component & hook

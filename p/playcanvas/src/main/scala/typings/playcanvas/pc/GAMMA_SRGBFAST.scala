@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * @deprecated
   * @constant
-  * @type {Number}
   * @name pc.GAMMA_SRGBFAST
+  * @type {number}
   * @description Apply sRGB (fast) gamma correction.
   */
 @JSGlobal("pc.GAMMA_SRGBFAST")

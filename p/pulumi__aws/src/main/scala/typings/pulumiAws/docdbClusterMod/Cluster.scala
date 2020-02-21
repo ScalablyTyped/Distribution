@@ -68,7 +68,7 @@ class Cluster protected () extends CustomResource {
   val dbSubnetGroupName: Output_[String] = js.native
   /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
-    * The following log types are supported: `audit`.
+    * The following log types are supported: `audit`, `profiler`.
     */
   val enabledCloudwatchLogsExports: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**

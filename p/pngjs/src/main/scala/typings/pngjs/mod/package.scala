@@ -6,4 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type PNGOptions = typings.pngjs.mod.BaseOptions with typings.pngjs.mod.ParserOptions with typings.pngjs.mod.PackerOptions
+  type PNGWithMetadata = typings.pngjs.mod.PNG with typings.pngjs.mod.Metadata
 }

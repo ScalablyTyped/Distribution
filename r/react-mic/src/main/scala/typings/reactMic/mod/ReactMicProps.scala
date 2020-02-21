@@ -14,7 +14,7 @@ trait ReactMicProps extends js.Object {
   /** Callback that is executed when chunk of audio is available */
   var onData: js.UndefOr[js.Function1[/* recordedData */ Blob, Unit]] = js.undefined
   /** Callback that is executed when audio stops recording */
-  var onStop: js.UndefOr[js.Function1[/* recordedData */ Blob, Unit]] = js.undefined
+  var onStop: js.UndefOr[js.Function1[/* recordedData */ ReactMicStopEvent, Unit]] = js.undefined
   /** Available in React-Mic-Plus upgrade only */
   var pause: js.UndefOr[Boolean] = js.undefined
   /** Set to true to begin recording */
@@ -30,7 +30,7 @@ object ReactMicProps {
     backgroundColor: String = null,
     className: String = null,
     onData: /* recordedData */ Blob => Unit = null,
-    onStop: /* recordedData */ Blob => Unit = null,
+    onStop: /* recordedData */ ReactMicStopEvent => Unit = null,
     pause: js.UndefOr[Boolean] = js.undefined,
     record: js.UndefOr[Boolean] = js.undefined,
     strokeColor: String = null,

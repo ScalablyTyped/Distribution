@@ -34,6 +34,10 @@ trait CreateGraphqlApiRequest extends js.Object {
     * The Amazon Cognito user pool configuration.
     */
   var userPoolConfig: js.UndefOr[UserPoolConfig] = js.native
+  /**
+    * A flag indicating whether to enable X-Ray tracing for the GraphqlApi.
+    */
+  var xrayEnabled: js.UndefOr[Boolean] = js.native
 }
 
 object CreateGraphqlApiRequest {
@@ -45,7 +49,8 @@ object CreateGraphqlApiRequest {
     logConfig: LogConfig = null,
     openIDConnectConfig: OpenIDConnectConfig = null,
     tags: TagMap = null,
-    userPoolConfig: UserPoolConfig = null
+    userPoolConfig: UserPoolConfig = null,
+    xrayEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateGraphqlApiRequest = {
     val __obj = js.Dynamic.literal(authenticationType = authenticationType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders.asInstanceOf[js.Any])
@@ -53,6 +58,7 @@ object CreateGraphqlApiRequest {
     if (openIDConnectConfig != null) __obj.updateDynamic("openIDConnectConfig")(openIDConnectConfig.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(xrayEnabled)) __obj.updateDynamic("xrayEnabled")(xrayEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGraphqlApiRequest]
   }
 }

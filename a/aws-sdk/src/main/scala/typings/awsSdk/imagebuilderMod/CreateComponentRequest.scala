@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateComponentRequest extends js.Object {
   /**
-    * CThe change description of the component. Describes what change has been made in this version. In other words what makes this version different from other versions of this component.
+    * The change description of the component. Describes what change has been made in this version, or what makes this version different from other versions of this component.
     */
   var changeDescription: js.UndefOr[NonEmptyString] = js.native
   /**
-    * CThe idempotency token of the component.
+    * The idempotency token of the component.
     */
   var clientToken: ClientToken = js.native
   /**
-    * CThe data of the component.
+    * The data of the component. Used to specify the data inline. Either data or uri can be used to specify the data within the component.
     */
   var data: js.UndefOr[InlineComponentData] = js.native
   /**
-    * CThe description of the component. Describes the contents of the component.
+    * The description of the component. Describes the contents of the component.
     */
   var description: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -31,19 +31,19 @@ trait CreateComponentRequest extends js.Object {
     */
   var name: ResourceName = js.native
   /**
-    * CThe platform of the component.
+    * The platform of the component.
     */
   var platform: Platform = js.native
   /**
-    * The semantic version of the component. This version to follow the semantic version syntax. i.e. major.minor.patch. This could be versioned like software 2.0.1 or date like 2019.12.01.
+    * The semantic version of the component. This version follows the semantic version syntax. For example, major.minor.patch. This could be versioned like software (2.0.1) or like a date (2019.12.01).
     */
   var semanticVersion: VersionNumber = js.native
   /**
-    * CThe tags of the component.
+    * The tags of the component.
     */
   var tags: js.UndefOr[TagMap] = js.native
   /**
-    * CThe uri of the component.
+    * The uri of the component. Must be an S3 URL and the requester must have permission to access the S3 bucket. If you use S3, you can specify component content up to your service quota. Either data or uri can be used to specify the data within the component.
     */
   var uri: js.UndefOr[Uri] = js.native
 }

@@ -1,16 +1,15 @@
 organization := "org.scalablytyped"
 name := "markdown-it-anchor"
-version := "4.0-dt-20181102Z-55fefc"
-scalaVersion := "2.12.10"
+version := "4.0-dt-20181102Z-035c67"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "linkify-it" % "2.1.0-dt-20190326Z-83d9f6",
-  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20190925Z-dc90f6",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "linkify-it" % "2.1.0-dt-20190326Z-d6cda9",
+  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20190925Z-14f2ed",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

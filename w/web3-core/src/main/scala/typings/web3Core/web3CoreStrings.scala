@@ -30,6 +30,9 @@ object web3CoreStrings {
   sealed trait error extends js.Object
   
   @js.native
+  sealed trait genesis extends _BlockNumber
+  
+  @js.native
   sealed trait goerli extends chain
   
   @js.native
@@ -85,6 +88,8 @@ object web3CoreStrings {
   def earliest: earliest = "earliest".asInstanceOf[earliest]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def genesis: genesis = "genesis".asInstanceOf[genesis]
   @scala.inline
   def goerli: goerli = "goerli".asInstanceOf[goerli]
   @scala.inline

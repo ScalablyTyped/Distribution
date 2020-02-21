@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GroundStationData extends js.Object {
   /**
-    * ID of a ground station.
+    * UUID of a ground station.
     */
   var groundStationId: js.UndefOr[String] = js.native
   /**

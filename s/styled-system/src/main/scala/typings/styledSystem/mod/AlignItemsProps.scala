@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AlignItemsProps extends js.Object {
+trait AlignItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   /**
     * The CSS align-items property sets the align-self value on all direct children as a group. The align-self
     * property sets the alignment of an item within its containing block.
@@ -15,15 +15,15 @@ trait AlignItemsProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
     */
-  var alignItems: js.UndefOr[ResponsiveValue[AlignItemsProperty]] = js.undefined
+  var alignItems: js.UndefOr[ResponsiveValue[AlignItemsProperty, ThemeType]] = js.undefined
 }
 
 object AlignItemsProps {
   @scala.inline
-  def apply(alignItems: ResponsiveValue[AlignItemsProperty] = null): AlignItemsProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](alignItems: ResponsiveValue[AlignItemsProperty, ThemeType] = null): AlignItemsProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AlignItemsProps]
+    __obj.asInstanceOf[AlignItemsProps[ThemeType]]
   }
 }
 

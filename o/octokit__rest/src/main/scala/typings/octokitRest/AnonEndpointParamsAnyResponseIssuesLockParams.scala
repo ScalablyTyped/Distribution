@@ -1,11 +1,11 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.Endpoint
-import typings.octokitRest.mod.EndpointOptions
-import typings.octokitRest.mod.IssuesLockParams
-import typings.octokitRest.mod.IssuesLockParamsDeprecatedNumber
-import typings.octokitRest.mod.RequestOptions
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.Endpoint
+import typings.octokitRest.mod.Octokit.EndpointOptions
+import typings.octokitRest.mod.Octokit.IssuesLockParams
+import typings.octokitRest.mod.Octokit.IssuesLockParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

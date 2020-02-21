@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-tag
 
-Typings are for version 2.10.1
+Typings are for version 2.10.3
 
 ## Library description:
 A JavaScript template literal tag that parses GraphQL queries

@@ -1,15 +1,14 @@
 organization := "org.scalablytyped"
 name := "underscore-ko"
-version := "1.4-dt-20190619Z-923051"
-scalaVersion := "2.12.10"
+version := "1.4-dt-20190619Z-64b3b3"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "underscore" % "1.9-dt-20191118Z-b623f2")
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "underscore" % "1.9-dt-20191118Z-831b48")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

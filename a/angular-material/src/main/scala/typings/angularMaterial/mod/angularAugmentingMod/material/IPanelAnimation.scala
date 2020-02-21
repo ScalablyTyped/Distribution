@@ -1,6 +1,7 @@
 package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import typings.angularMaterial.AnonClose
+import typings.angularMaterial.AnonCloseOpen
 import typings.angularMaterial.AnonLeft
 import typings.std.Element
 import typings.std.Event_
@@ -13,6 +14,8 @@ trait IPanelAnimation extends js.Object {
   def closeTo(to: String): IPanelAnimation = js.native
   def closeTo(to: AnonLeft): IPanelAnimation = js.native
   def closeTo(to: Element): IPanelAnimation = js.native
+  def duration(duration: Double): IPanelAnimation = js.native
+  def duration(duration: AnonCloseOpen): IPanelAnimation = js.native
   def openFrom(from: String): IPanelAnimation = js.native
   def openFrom(from: AnonLeft): IPanelAnimation = js.native
   def openFrom(from: Element): IPanelAnimation = js.native

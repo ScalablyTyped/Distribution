@@ -45,6 +45,7 @@ trait Server extends js.Object {
   var onErrorMiddleware: js.UndefOr[js.Any] = js.native
   var pagesDir: js.UndefOr[String] = js.native
   var pagesManifest: js.UndefOr[StringDictionary[String]] = js.native
+  var prepareServerlessUrl: js.Any = js.native
   var publicDir: String = js.native
   var quiet: Boolean = js.native
   var renderOpts: AnonAssetPrefix = js.native

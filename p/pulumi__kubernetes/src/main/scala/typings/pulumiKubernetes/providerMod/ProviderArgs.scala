@@ -37,6 +37,17 @@ trait ProviderArgs extends js.Object {
     */
   val namespace: js.UndefOr[Input[String]] = js.undefined
   /**
+    * BETA FEATURE - If present, render resource manifests to this directory. In this mode, resources will not
+    * be created on a Kubernetes cluster, but the rendered manifests will be kept in sync with changes
+    * to the Pulumi program. This feature is in developer preview, and is disabled by default.
+    *
+    * Note that some computed Outputs such as status fields will not be populated
+    * since the resources are not created on a Kubernetes cluster. These Output values will remain undefined,
+    * and may result in an error if they are referenced by other resources. Also note that any secret values
+    * used in these resources will be rendered in plaintext to the resulting YAML.
+    */
+  val renderYamlToDirectory: js.UndefOr[Input[String]] = js.undefined
+  /**
     * If present and set to true, suppress apiVersion deprecation warnings from the CLI.
     *
     * This config can be specified in the following ways, using this precedence:
@@ -54,6 +65,7 @@ object ProviderArgs {
     enableDryRun: Input[Boolean] = null,
     kubeconfig: Input[String] = null,
     namespace: Input[String] = null,
+    renderYamlToDirectory: Input[String] = null,
     suppressDeprecationWarnings: Input[Boolean] = null
   ): ProviderArgs = {
     val __obj = js.Dynamic.literal()
@@ -62,6 +74,7 @@ object ProviderArgs {
     if (enableDryRun != null) __obj.updateDynamic("enableDryRun")(enableDryRun.asInstanceOf[js.Any])
     if (kubeconfig != null) __obj.updateDynamic("kubeconfig")(kubeconfig.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (renderYamlToDirectory != null) __obj.updateDynamic("renderYamlToDirectory")(renderYamlToDirectory.asInstanceOf[js.Any])
     if (suppressDeprecationWarnings != null) __obj.updateDynamic("suppressDeprecationWarnings")(suppressDeprecationWarnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderArgs]
   }

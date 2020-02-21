@@ -10,6 +10,10 @@ trait ToStringOptionsObject
      with _ToStringOptions {
   /** `webpack --colors` equivalent */
   var colors: js.UndefOr[Boolean | String] = js.undefined
+  /**
+    * preset for the default values
+    */
+  var preset: js.UndefOr[Preset] = js.undefined
 }
 
 object ToStringOptionsObject {
@@ -42,6 +46,7 @@ object ToStringOptionsObject {
     modules: js.UndefOr[Boolean] = js.undefined,
     modulesSort: String = null,
     performance: js.UndefOr[Boolean] = js.undefined,
+    preset: Preset = null,
     providedExports: js.UndefOr[Boolean] = js.undefined,
     publicPath: js.UndefOr[Boolean] = js.undefined,
     reasons: js.UndefOr[Boolean] = js.undefined,
@@ -80,6 +85,7 @@ object ToStringOptionsObject {
     if (!js.isUndefined(modules)) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
     if (modulesSort != null) __obj.updateDynamic("modulesSort")(modulesSort.asInstanceOf[js.Any])
     if (!js.isUndefined(performance)) __obj.updateDynamic("performance")(performance.asInstanceOf[js.Any])
+    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
     if (!js.isUndefined(providedExports)) __obj.updateDynamic("providedExports")(providedExports.asInstanceOf[js.Any])
     if (!js.isUndefined(publicPath)) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
     if (!js.isUndefined(reasons)) __obj.updateDynamic("reasons")(reasons.asInstanceOf[js.Any])

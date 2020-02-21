@@ -7,43 +7,43 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBCluster extends js.Object {
   /**
-    * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the DB cluster. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other AWS services on your behalf.
+    * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the cluster. IAM roles that are associated with a cluster grant permission for the cluster to access other AWS services on your behalf.
     */
   var AssociatedRoles: js.UndefOr[DBClusterRoles] = js.native
   /**
-    * Provides the list of Amazon EC2 Availability Zones that instances in the DB cluster can be created in.
+    * Provides the list of Amazon EC2 Availability Zones that instances in the cluster can be created in.
     */
   var AvailabilityZones: js.UndefOr[typings.awsSdk.docdbMod.AvailabilityZones] = js.native
   /**
-    * Specifies the number of days for which automatic DB snapshots are retained.
+    * Specifies the number of days for which automatic snapshots are retained.
     */
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
   /**
-    * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
+    * Specifies the time when the cluster was created, in Universal Coordinated Time (UTC).
     */
   var ClusterCreateTime: js.UndefOr[TStamp] = js.native
   /**
-    * The Amazon Resource Name (ARN) for the DB cluster.
+    * The Amazon Resource Name (ARN) for the cluster.
     */
   var DBClusterArn: js.UndefOr[String] = js.native
   /**
-    * Contains a user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster.
+    * Contains a user-supplied cluster identifier. This identifier is the unique key that identifies a cluster.
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.native
   /**
-    * Provides the list of instances that make up the DB cluster.
+    * Provides the list of instances that make up the cluster.
     */
   var DBClusterMembers: js.UndefOr[DBClusterMemberList] = js.native
   /**
-    * Specifies the name of the DB cluster parameter group for the DB cluster.
+    * Specifies the name of the cluster parameter group for the cluster.
     */
   var DBClusterParameterGroup: js.UndefOr[String] = js.native
   /**
-    * Specifies information on the subnet group that is associated with the DB cluster, including the name, description, and subnets in the subnet group.
+    * Specifies information on the subnet group that is associated with the cluster, including the name, description, and subnets in the subnet group.
     */
   var DBSubnetGroup: js.UndefOr[String] = js.native
   /**
-    * The AWS Region-unique, immutable identifier for the DB cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed.
+    * The AWS Region-unique, immutable identifier for the cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the cluster is accessed.
     */
   var DbClusterResourceId: js.UndefOr[String] = js.native
   /**
@@ -55,15 +55,15 @@ trait DBCluster extends js.Object {
     */
   var EarliestRestorableTime: js.UndefOr[TStamp] = js.native
   /**
-    * A list of log types that this DB cluster is configured to export to Amazon CloudWatch Logs.
+    * A list of log types that this cluster is configured to export to Amazon CloudWatch Logs.
     */
   var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.native
   /**
-    * Specifies the connection endpoint for the primary instance of the DB cluster.
+    * Specifies the connection endpoint for the primary instance of the cluster.
     */
   var Endpoint: js.UndefOr[String] = js.native
   /**
-    * Provides the name of the database engine to be used for this DB cluster.
+    * Provides the name of the database engine to be used for this cluster.
     */
   var Engine: js.UndefOr[String] = js.native
   /**
@@ -75,7 +75,7 @@ trait DBCluster extends js.Object {
     */
   var HostedZoneId: js.UndefOr[String] = js.native
   /**
-    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster.
+    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
@@ -83,11 +83,11 @@ trait DBCluster extends js.Object {
     */
   var LatestRestorableTime: js.UndefOr[TStamp] = js.native
   /**
-    * Contains the master user name for the DB cluster.
+    * Contains the master user name for the cluster.
     */
   var MasterUsername: js.UndefOr[String] = js.native
   /**
-    * Specifies whether the DB cluster has instances in multiple Availability Zones.
+    * Specifies whether the cluster has instances in multiple Availability Zones.
     */
   var MultiAZ: js.UndefOr[Boolean] = js.native
   /**
@@ -107,19 +107,19 @@ trait DBCluster extends js.Object {
     */
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.native
   /**
-    * The reader endpoint for the DB cluster. The reader endpoint for a DB cluster load balances connections across the Amazon DocumentDB replicas that are available in a DB cluster. As clients request new connections to the reader endpoint, Amazon DocumentDB distributes the connection requests among the Amazon DocumentDB replicas in the DB cluster. This functionality can help balance your read workload across multiple Amazon DocumentDB replicas in your DB cluster.  If a failover occurs, and the Amazon DocumentDB replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Amazon DocumentDB replicas in the cluster, you can then reconnect to the reader endpoint.
+    * The reader endpoint for the cluster. The reader endpoint for a cluster load balances connections across the Amazon DocumentDB replicas that are available in a cluster. As clients request new connections to the reader endpoint, Amazon DocumentDB distributes the connection requests among the Amazon DocumentDB replicas in the cluster. This functionality can help balance your read workload across multiple Amazon DocumentDB replicas in your cluster.  If a failover occurs, and the Amazon DocumentDB replica that you are connected to is promoted to be the primary instance, your connection is dropped. To continue sending your read workload to other Amazon DocumentDB replicas in the cluster, you can then reconnect to the reader endpoint.
     */
   var ReaderEndpoint: js.UndefOr[String] = js.native
   /**
-    * Specifies the current state of this DB cluster.
+    * Specifies the current state of this cluster.
     */
   var Status: js.UndefOr[String] = js.native
   /**
-    * Specifies whether the DB cluster is encrypted.
+    * Specifies whether the cluster is encrypted.
     */
   var StorageEncrypted: js.UndefOr[Boolean] = js.native
   /**
-    * Provides a list of virtual private cloud (VPC) security groups that the DB cluster belongs to.
+    * Provides a list of virtual private cloud (VPC) security groups that the cluster belongs to.
     */
   var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.native
 }

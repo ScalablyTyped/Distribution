@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.VIEW_CENTER
+  * @type {number}
   * @description Center of view.
   */
 @JSImport("playcanvas", "VIEW_CENTER")

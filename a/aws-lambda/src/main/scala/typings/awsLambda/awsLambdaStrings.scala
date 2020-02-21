@@ -1,12 +1,12 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.CodePipelineActionCategory
-import typings.awsLambda.mod.CodePipelineActionState
-import typings.awsLambda.mod.CodePipelineStageState
-import typings.awsLambda.mod.CodePipelineState
-import typings.awsLambda.mod.FirehoseRecordTransformationStatus
-import typings.awsLambda.mod.S3BatchResultResultCode
-import typings.awsLambda.mod._SQSMessageAttributeDataType
+import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionCategory
+import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionState
+import typings.awsLambda.codepipelineCloudwatchPipelineMod.CodePipelineState
+import typings.awsLambda.codepipelineCloudwatchStageMod.CodePipelineStageState
+import typings.awsLambda.kinesisFirehoseTransformationMod.FirehoseRecordTransformationStatus
+import typings.awsLambda.s3BatchMod.S3BatchResultResultCode
+import typings.awsLambda.sqsMod._SQSMessageAttributeDataType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

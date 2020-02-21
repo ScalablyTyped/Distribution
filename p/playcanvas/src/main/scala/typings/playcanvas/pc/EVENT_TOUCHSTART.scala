@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_TOUCHSTART
   * @description Name of event fired when a new touch occurs. For example, a finger is placed on the device.
   */

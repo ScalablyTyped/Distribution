@@ -19,7 +19,7 @@ trait AwsCloudFrontDistributionLogging extends js.Object {
     */
   var IncludeCookies: js.UndefOr[Boolean] = js.native
   /**
-    * An optional string that you want CloudFront to prefix to the access log filenames for this distribution.
+    * An optional string that you want CloudFront to use as a prefix to the access log filenames for this distribution.
     */
   var Prefix: js.UndefOr[NonEmptyString] = js.native
 }

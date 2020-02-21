@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.personaTypesMod.IPersonaPresenceProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ object personaPresenceMod extends js.Object {
     def this(props: IPersonaPresenceProps) = this()
   }
   
-  val PersonaPresence: StatelessComponent[IPersonaPresenceProps] = js.native
+  val PersonaPresence: FunctionComponent[IPersonaPresenceProps] = js.native
 }
 

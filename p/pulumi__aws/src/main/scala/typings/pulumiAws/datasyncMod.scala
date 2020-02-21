@@ -4,6 +4,8 @@ import typings.pulumiAws.agentMod.AgentArgs
 import typings.pulumiAws.agentMod.AgentState
 import typings.pulumiAws.efsLocationMod.EfsLocationArgs
 import typings.pulumiAws.efsLocationMod.EfsLocationState
+import typings.pulumiAws.locationSmbMod.LocationSmbArgs
+import typings.pulumiAws.locationSmbMod.LocationSmbState
 import typings.pulumiAws.nfsLocationMod.NfsLocationArgs
 import typings.pulumiAws.nfsLocationMod.NfsLocationState
 import typings.pulumiAws.s3LocationMod.S3LocationArgs
@@ -47,6 +49,20 @@ object datasyncMod extends js.Object {
       */
     def this(name: String, args: EfsLocationArgs) = this()
     def this(name: String, args: EfsLocationArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class LocationSmb protected ()
+    extends typings.pulumiAws.locationSmbMod.LocationSmb {
+    /**
+      * Create a LocationSmb resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: LocationSmbArgs) = this()
+    def this(name: String, args: LocationSmbArgs, opts: CustomResourceOptions) = this()
   }
   
   @js.native
@@ -131,6 +147,27 @@ object datasyncMod extends js.Object {
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object LocationSmb extends js.Object {
+    /**
+      * Get an existing LocationSmb resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
+    def get(name: String, id: Input[ID], state: LocationSmbState): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
+    def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): typings.pulumiAws.locationSmbMod.LocationSmb = js.native
+    /**
+      * Returns true if the given object is an instance of LocationSmb.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean = js.native
   }
   
   /* static members */

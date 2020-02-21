@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ChartLegendLabels extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartLegendLabelsMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartLegendLabelsMargin] = js.undefined
   var padding: js.UndefOr[ChartLegendLabelsPadding] = js.undefined
   var template: js.UndefOr[String | js.Function] = js.undefined
 }
@@ -17,7 +17,7 @@ object ChartLegendLabels {
   def apply(
     color: String = null,
     font: String = null,
-    margin: ChartLegendLabelsMargin = null,
+    margin: Double | ChartLegendLabelsMargin = null,
     padding: ChartLegendLabelsPadding = null,
     template: String | js.Function = null
   ): ChartLegendLabels = {

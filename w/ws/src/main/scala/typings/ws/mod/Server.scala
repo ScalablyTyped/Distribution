@@ -46,30 +46,30 @@ class Server () extends EventEmitter {
     upgradeHead: Buffer,
     callback: js.Function1[/* client */ WebSocket, Unit]
   ): Unit = js.native
-  def on(event: String, listener: js.ThisFunction1[/* this */ WebSocket, /* repeated */ js.Any, Unit]): this.type = js.native
-  def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ WebSocket, /* repeated */ js.Any, Unit]): this.type = js.native
+  def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
+  def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
-  def on_close(event: close, cb: js.ThisFunction0[/* this */ WebSocket, Unit]): this.type = js.native
+  def on_close(event: close, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
   // Events
   @JSName("on")
   def on_connection(
     event: connection,
-    cb: js.ThisFunction2[/* this */ WebSocket, /* socket */ WebSocket, /* request */ IncomingMessage, Unit]
+    cb: js.ThisFunction2[/* this */ this.type, /* socket */ WebSocket, /* request */ IncomingMessage, Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_error(event: error, cb: js.ThisFunction1[/* this */ WebSocket, /* error */ Error, Unit]): this.type = js.native
+  def on_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
   @JSName("on")
   def on_headers(
     event: headers,
     cb: js.ThisFunction2[
-      /* this */ WebSocket, 
+      /* this */ this.type, 
       /* headers */ js.Array[String], 
       /* request */ IncomingMessage, 
       Unit
     ]
   ): this.type = js.native
   @JSName("on")
-  def on_listening(event: listening, cb: js.ThisFunction0[/* this */ WebSocket, Unit]): this.type = js.native
+  def on_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
   def shouldHandle(request: IncomingMessage): Boolean = js.native
 }
 

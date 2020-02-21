@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.announcedTypesMod.IAnnouncedProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ object announcedMod extends js.Object {
   class AnnouncedBase ()
     extends typings.officeUiFabricReact.announcedBaseMod.AnnouncedBase
   
-  val Announced: StatelessComponent[IAnnouncedProps] = js.native
+  val Announced: FunctionComponent[IAnnouncedProps] = js.native
   /* static members */
   @js.native
   object AnnouncedBase extends js.Object {

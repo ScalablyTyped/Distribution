@@ -10,4 +10,5 @@ package object mod {
   /** @deprecated use MinifyOptions */
   type MinifyConfig = typings.htmlWebpackPlugin.mod.MinifyOptions
   type MinifyOptions = typings.htmlMinifier.mod.Options
+  type TemplateFunction = js.Function1[/* param */ js.Object, java.lang.String]
 }

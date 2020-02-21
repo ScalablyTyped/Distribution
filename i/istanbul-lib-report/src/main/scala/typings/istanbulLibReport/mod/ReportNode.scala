@@ -13,6 +13,13 @@ trait ReportNode extends Node {
   var path: String
   def addChild(child: ReportNode): Unit
   def asRelative(p: String): String
+  def getChildren(): js.Array[Node]
+  def getCoverageSummary(filesOnly: Boolean): CoverageSummary
+  def getFileCoverage(): FileCoverage
+  def getParent(): Node
+  def getQualifiedName(): String
+  def getRelativeName(): String
+  def isSummary(): Boolean
 }
 
 object ReportNode {

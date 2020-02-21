@@ -364,6 +364,9 @@ trait baseuiProps {
   type ToasterContainerProps = ToasterProps
   type TooltipProps = typings.baseui.tooltipMod.TooltipProps
   @scala.inline
+  def TreeLabelProps: typings.baseui.treeViewMod.TreeLabelProps.type = typings.baseui.treeViewMod.TreeLabelProps
+  type TreeLabelProps = typings.baseui.treeViewMod.TreeLabelProps
+  @scala.inline
   def TriangleDownProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type TriangleDownProps = typings.baseui.iconMod.IconProps
   @scala.inline

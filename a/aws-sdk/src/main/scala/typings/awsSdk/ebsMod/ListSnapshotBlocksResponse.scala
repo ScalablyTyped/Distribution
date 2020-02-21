@@ -15,7 +15,7 @@ trait ListSnapshotBlocksResponse extends js.Object {
     */
   var Blocks: js.UndefOr[typings.awsSdk.ebsMod.Blocks] = js.native
   /**
-    * The time when the block token expires.
+    * The time when the BlockToken expires.
     */
   var ExpiryTime: js.UndefOr[TimeStamp] = js.native
   /**

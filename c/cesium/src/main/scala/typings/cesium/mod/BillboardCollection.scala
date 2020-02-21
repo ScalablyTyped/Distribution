@@ -14,7 +14,7 @@ class BillboardCollection () extends js.Object {
   var length: Double = js.native
   var modelMatrix: Matrix4 = js.native
   def add(): Billboard = js.native
-  def add(billboard: js.Any): Billboard = js.native
+  def add(billboard: BillboardOptions): Billboard = js.native
   def contains(): Boolean = js.native
   def contains(billboard: Billboard): Boolean = js.native
   def destroy(): Unit = js.native

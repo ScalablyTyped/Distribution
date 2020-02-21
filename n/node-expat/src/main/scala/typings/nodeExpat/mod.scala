@@ -1,7 +1,7 @@
 package typings.nodeExpat
 
 import typings.node.Buffer
-import typings.node.streamMod.internal
+import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class Parser () extends internal {
+  class Parser () extends Stream {
     def this(encoding: String) = this()
     var readable: Boolean = js.native
     // encoding: string;

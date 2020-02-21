@@ -1,6 +1,7 @@
 package typings.cookieSession.CookieSessionInterfaces
 
 import typings.cookieSession.cookieSessionStrings.lax
+import typings.cookieSession.cookieSessionStrings.none
 import typings.cookieSession.cookieSessionStrings.strict
 import typings.keygrip.mod.Keygrip
 import typings.std.Date
@@ -42,9 +43,9 @@ trait CookieSessionOptions extends js.Object {
     */
   var path: js.UndefOr[String] = js.undefined
   /**
-    * a boolean or string indicating whether the cookie is a "same site" cookie (false by default). This can be set to 'strict', 'lax', or true (which maps to 'strict').
+    * a boolean or string indicating whether the cookie is a "same site" cookie (false by default). This can be set to 'strict', 'lax', 'none', or true (which maps to 'strict').
     */
-  var sameSite: js.UndefOr[strict | lax | Boolean] = js.undefined
+  var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.undefined
   /**
     * A string which will be used as single key if keys is not provided.
     */
@@ -75,7 +76,7 @@ object CookieSessionOptions {
     name: String = null,
     overwrite: js.UndefOr[Boolean] = js.undefined,
     path: String = null,
-    sameSite: strict | lax | Boolean = null,
+    sameSite: strict | lax | none | Boolean = null,
     secret: String = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     secureProxy: js.UndefOr[Boolean] = js.undefined,

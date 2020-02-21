@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.fabricTypesMod.IFabricProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ object fabricMod extends js.Object {
     def this(props: IFabricProps) = this()
   }
   
-  val Fabric: StatelessComponent[IFabricProps] = js.native
+  val Fabric: FunctionComponent[IFabricProps] = js.native
 }
 

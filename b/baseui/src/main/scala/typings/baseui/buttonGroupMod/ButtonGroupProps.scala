@@ -4,6 +4,7 @@ import typings.baseui.baseuiStrings.checkbox
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.minimal
 import typings.baseui.baseuiStrings.pill
 import typings.baseui.baseuiStrings.primary
@@ -32,7 +33,7 @@ trait ButtonGroupProps extends js.Object {
   var overrides: js.UndefOr[ButtonGroupOverrides] = js.undefined
   var selected: js.UndefOr[Double | js.Array[Double]] = js.undefined
   var shape: js.UndefOr[default_ | pill | round | square] = js.undefined
-  var size: js.UndefOr[compact | default_ | large_] = js.undefined
+  var size: js.UndefOr[compact | default_ | large_ | mini] = js.undefined
 }
 
 object ButtonGroupProps {
@@ -47,7 +48,7 @@ object ButtonGroupProps {
     overrides: ButtonGroupOverrides = null,
     selected: Double | js.Array[Double] = null,
     shape: default_ | pill | round | square = null,
-    size: compact | default_ | large_ = null
+    size: compact | default_ | large_ | mini = null
   ): ButtonGroupProps = {
     val __obj = js.Dynamic.literal()
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])

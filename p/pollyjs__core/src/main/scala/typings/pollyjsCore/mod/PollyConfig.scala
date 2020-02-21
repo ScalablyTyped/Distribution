@@ -23,8 +23,6 @@ trait PollyConfig extends js.Object {
   var persister: js.UndefOr[String | TypeofClassPersister] = js.undefined
   var persisterOptions: js.UndefOr[AnonFs] = js.undefined
   var recordFailedRequests: js.UndefOr[Boolean] = js.undefined
-  /** @deprecated use expiryStrategy */
-  var recordIfExpired: js.UndefOr[Boolean] = js.undefined
   var recordIfMissing: js.UndefOr[Boolean] = js.undefined
   var timing: js.UndefOr[
     (js.Function1[/* ms */ Double, js.Promise[Unit]]) | js.Function0[js.Promise[Unit]]
@@ -46,7 +44,6 @@ object PollyConfig {
     persister: String | TypeofClassPersister = null,
     persisterOptions: AnonFs = null,
     recordFailedRequests: js.UndefOr[Boolean] = js.undefined,
-    recordIfExpired: js.UndefOr[Boolean] = js.undefined,
     recordIfMissing: js.UndefOr[Boolean] = js.undefined,
     timing: (js.Function1[/* ms */ Double, js.Promise[Unit]]) | js.Function0[js.Promise[Unit]] = null
   ): PollyConfig = {
@@ -61,7 +58,6 @@ object PollyConfig {
     if (persister != null) __obj.updateDynamic("persister")(persister.asInstanceOf[js.Any])
     if (persisterOptions != null) __obj.updateDynamic("persisterOptions")(persisterOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(recordFailedRequests)) __obj.updateDynamic("recordFailedRequests")(recordFailedRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(recordIfExpired)) __obj.updateDynamic("recordIfExpired")(recordIfExpired.asInstanceOf[js.Any])
     if (!js.isUndefined(recordIfMissing)) __obj.updateDynamic("recordIfMissing")(recordIfMissing.asInstanceOf[js.Any])
     if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[PollyConfig]

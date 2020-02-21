@@ -23,6 +23,7 @@ class Media protected () extends js.Object {
   var customData: js.Object = js.native
   var idleReason: IdleReason = js.native
   var items: js.Array[QueueItem] = js.native
+  var liveSeekableRange: js.UndefOr[LiveSeekableRange] = js.native
   var loadingItemId: Double = js.native
   var media: MediaInfo = js.native
   var mediaSessionId: Double = js.native

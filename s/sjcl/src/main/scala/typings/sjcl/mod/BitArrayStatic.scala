@@ -16,6 +16,8 @@ trait BitArrayStatic extends js.Object {
   def bitLength(a: BitArray_): Double = js.native
   /// Array slices in units of bits.
   def bitSlice(a: BitArray_, bstart: Double, bend: Double): BitArray_ = js.native
+  /// byteswap a word array inplace. (does not handle partial words)
+  def byteswapM(a: BitArray_): BitArray_ = js.native
   /// Truncate an array.
   def clamp(a: BitArray_, len: Double): BitArray_ = js.native
   /// Concatenate two bit arrays.
@@ -23,7 +25,7 @@ trait BitArrayStatic extends js.Object {
   /// Compare two arrays for equality in a predictable amount of time.
   def equal(a: BitArray_, b: BitArray_): Boolean = js.native
   /// Extract a number packed into a bit array.
-  def extract(a: BitArray_, bstart: Double, blenth: Double): Double = js.native
+  def extract(a: BitArray_, bstart: Double, blength: Double): Double = js.native
   /// Get the number of bits used by a partial word.
   def getPartial(x: Double): Double = js.native
   /// Make a partial word for a bit array.

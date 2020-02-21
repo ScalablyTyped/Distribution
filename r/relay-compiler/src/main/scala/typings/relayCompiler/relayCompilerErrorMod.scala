@@ -2,7 +2,7 @@ package typings.relayCompiler
 
 import typings.graphql.astMod.ASTNode
 import typings.graphql.mod.GraphQLError
-import typings.relayCompiler.graphQLIRMod.Location
+import typings.relayCompiler.iRMod.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

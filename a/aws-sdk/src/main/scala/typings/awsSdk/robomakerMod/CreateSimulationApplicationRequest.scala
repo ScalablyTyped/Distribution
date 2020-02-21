@@ -15,7 +15,7 @@ trait CreateSimulationApplicationRequest extends js.Object {
     */
   var renderingEngine: js.UndefOr[RenderingEngine] = js.native
   /**
-    * The robot software suite of the simulation application.
+    * The robot software suite (ROS distribution) used by the simulation application.
     */
   var robotSoftwareSuite: RobotSoftwareSuite = js.native
   /**

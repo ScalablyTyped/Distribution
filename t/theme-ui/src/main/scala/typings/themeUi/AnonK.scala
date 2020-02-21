@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AnonK extends js.Object {
   /**
     * Nested color modes can provide overrides when used in conjunction with
-    * `Theme.initialColorMode and `useColorMode()`
+    * `Theme.initialColorModeName and `useColorMode()`
     */
   var modes: js.UndefOr[StringDictionary[ColorMode]] = js.undefined
 }

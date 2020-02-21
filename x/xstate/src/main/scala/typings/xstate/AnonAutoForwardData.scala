@@ -48,13 +48,13 @@ trait AnonAutoForwardData[TContext, TEvent /* <: EventObject */] extends js.Obje
   /**
     * The source of the machine to be invoked, or the machine itself.
     */
-  var src: String | (StateMachine[_, _, _, _]) | (InvokeCreator[_, _])
+  var src: String | (StateMachine[_, _, _, _]) | (InvokeCreator[TContext, TEvent, _])
 }
 
 object AnonAutoForwardData {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
-    src: String | (StateMachine[_, _, _, _]) | (InvokeCreator[_, _]),
+    src: String | (StateMachine[_, _, _, _]) | (InvokeCreator[TContext, TEvent, _]),
     autoForward: js.UndefOr[Boolean] = js.undefined,
     data: (Mapper[TContext, TEvent]) | (PropertyMapper[TContext, TEvent]) = null,
     forward: js.UndefOr[Boolean] = js.undefined,

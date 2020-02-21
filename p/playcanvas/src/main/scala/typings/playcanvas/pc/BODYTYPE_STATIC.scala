@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.BODYTYPE_STATIC
   * @description Rigid body has infinite mass and cannot move.
   */

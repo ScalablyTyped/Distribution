@@ -32,6 +32,10 @@ class Gateway protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group to use to monitor and log events in the gateway.
+    */
+  val cloudwatchLogGroupArn: Output_[js.UndefOr[String]] = js.native
+  /**
     * Identifier of the gateway.
     */
   val gatewayId: Output_[String] = js.native

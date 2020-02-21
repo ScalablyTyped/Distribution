@@ -32,7 +32,7 @@ trait CompilerHooks extends js.Object {
   var failed: SyncHook[Error, _, _]
   var invalid: SyncHook[String, Date, _]
   var make: AsyncParallelHook[Compilation, _, _]
-  var normalModuleFactory: SyncHook[NormalModuleFactory, _, _]
+  var normalModuleFactory: SyncHook[NormalModuleFactory_, _, _]
   var run: AsyncSeriesHook[Compiler_, _, _]
   var shouldEmit: SyncBailHook[Compilation, _, _, _]
   var thisCompilation: SyncHook[Compilation, AnonNormalModuleFactory, _]
@@ -61,7 +61,7 @@ object CompilerHooks {
     failed: SyncHook[Error, _, _],
     invalid: SyncHook[String, Date, _],
     make: AsyncParallelHook[Compilation, _, _],
-    normalModuleFactory: SyncHook[NormalModuleFactory, _, _],
+    normalModuleFactory: SyncHook[NormalModuleFactory_, _, _],
     run: AsyncSeriesHook[Compiler_, _, _],
     shouldEmit: SyncBailHook[Compilation, _, _, _],
     thisCompilation: SyncHook[Compilation, AnonNormalModuleFactory, _],

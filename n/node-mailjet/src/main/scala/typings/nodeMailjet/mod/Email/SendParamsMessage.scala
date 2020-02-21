@@ -1,14 +1,12 @@
 package typings.nodeMailjet.mod.Email
 
-import typings.nodeMailjet.AnonBase64Content
-import typings.nodeMailjet.AnonBase64ContentContentID
 import typings.nodeMailjet.AnonEmail
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SendParamsMessage extends js.Object {
-  var Attachments: js.UndefOr[js.Array[AnonBase64Content]] = js.undefined
+  var Attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
   var Bcc: js.UndefOr[js.Array[SendParamsRecipient]] = js.undefined
   var Cc: js.UndefOr[js.Array[SendParamsRecipient]] = js.undefined
   var CustomCampaign: js.UndefOr[String] = js.undefined
@@ -18,8 +16,10 @@ trait SendParamsMessage extends js.Object {
   var From: AnonEmail
   var HTMLPart: js.UndefOr[String] = js.undefined
   var Headers: js.UndefOr[js.Object] = js.undefined
-  var InlinedAttachments: js.UndefOr[js.Array[AnonBase64ContentContentID]] = js.undefined
+  var InlinedAttachments: js.UndefOr[js.Array[InlinedAttachment]] = js.undefined
   var MonitoringCategory: js.UndefOr[String] = js.undefined
+  var ReplyTo: js.UndefOr[SendParamsRecipient] = js.undefined
+  var Sender: js.UndefOr[AnonEmail] = js.undefined
   var Subject: String
   var TemplateID: js.UndefOr[Double] = js.undefined
   var TemplateLanguage: js.UndefOr[Boolean] = js.undefined
@@ -35,7 +35,7 @@ object SendParamsMessage {
     From: AnonEmail,
     Subject: String,
     To: js.Array[SendParamsRecipient],
-    Attachments: js.Array[AnonBase64Content] = null,
+    Attachments: js.Array[Attachment] = null,
     Bcc: js.Array[SendParamsRecipient] = null,
     Cc: js.Array[SendParamsRecipient] = null,
     CustomCampaign: String = null,
@@ -44,8 +44,10 @@ object SendParamsMessage {
     EventPayload: String = null,
     HTMLPart: String = null,
     Headers: js.Object = null,
-    InlinedAttachments: js.Array[AnonBase64ContentContentID] = null,
+    InlinedAttachments: js.Array[InlinedAttachment] = null,
     MonitoringCategory: String = null,
+    ReplyTo: SendParamsRecipient = null,
+    Sender: AnonEmail = null,
     TemplateID: Int | Double = null,
     TemplateLanguage: js.UndefOr[Boolean] = js.undefined,
     TextPart: String = null,
@@ -64,6 +66,8 @@ object SendParamsMessage {
     if (Headers != null) __obj.updateDynamic("Headers")(Headers.asInstanceOf[js.Any])
     if (InlinedAttachments != null) __obj.updateDynamic("InlinedAttachments")(InlinedAttachments.asInstanceOf[js.Any])
     if (MonitoringCategory != null) __obj.updateDynamic("MonitoringCategory")(MonitoringCategory.asInstanceOf[js.Any])
+    if (ReplyTo != null) __obj.updateDynamic("ReplyTo")(ReplyTo.asInstanceOf[js.Any])
+    if (Sender != null) __obj.updateDynamic("Sender")(Sender.asInstanceOf[js.Any])
     if (TemplateID != null) __obj.updateDynamic("TemplateID")(TemplateID.asInstanceOf[js.Any])
     if (!js.isUndefined(TemplateLanguage)) __obj.updateDynamic("TemplateLanguage")(TemplateLanguage.asInstanceOf[js.Any])
     if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart.asInstanceOf[js.Any])

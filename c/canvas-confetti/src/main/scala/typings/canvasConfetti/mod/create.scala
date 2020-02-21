@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("canvas-confetti", "create")
 @js.native
 object create extends js.Object {
-  def apply(canvas: HTMLCanvasElement): js.Function1[/* options */ js.UndefOr[Options], js.Promise[Null] | Null] = js.native
-  def apply(canvas: HTMLCanvasElement, options: GlobalOptions): js.Function1[/* options */ js.UndefOr[Options], js.Promise[Null] | Null] = js.native
+  /**
+    * This method creates an instance of the confetti function that uses a custom canvas.
+    */
+  def apply(canvas: HTMLCanvasElement): CreateTypes = js.native
+  def apply(canvas: HTMLCanvasElement, options: GlobalOptions): CreateTypes = js.native
 }
 

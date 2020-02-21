@@ -1,5 +1,6 @@
 package typings.clownface.mod
 
+import typings.clownface.contextMod.Context
 import typings.rdfJs.mod.BlankNode
 import typings.rdfJs.mod.DatasetCore
 import typings.rdfJs.mod.Literal
@@ -12,8 +13,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Clownface[D /* <: DatasetCore[Quad] */, T /* <: Term */] extends js.Object {
-  val _context: js.Any = js.native
+trait Clownface[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] extends js.Object {
+  val _context: js.Array[Context[D, T]] = js.native
   val dataset: D = js.native
   val datasets: js.Array[D] = js.native
   val term: js.UndefOr[T] = js.native
@@ -56,6 +57,7 @@ trait Clownface[D /* <: DatasetCore[Quad] */, T /* <: Term */] extends js.Object
   def has[X /* <: Term */](predicates: SingleOrArrayOfTerms): SafeClownface[D, X] = js.native
   def has[X /* <: Term */](predicates: SingleOrArrayOfTerms, objects: SingleOrArrayOfTermsOrLiterals): SafeClownface[D, X] = js.native
   // tslint:disable:no-unnecessary-generics
+  def in[X /* <: Term */](): SafeClownface[D, X] = js.native
   def in[X /* <: Term */](predicates: SingleOrArrayOfTerms): SafeClownface[D, X] = js.native
   def list(): Iterable[SingleContextClownface[D, Term]] = js.native
   def literal(values: js.Array[Boolean | String | Double | Term | Null]): SafeClownface[D, Literal] = js.native
@@ -91,6 +93,7 @@ trait Clownface[D /* <: DatasetCore[Quad] */, T /* <: Term */] extends js.Object
   def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X]): SingleContextClownface[D, X] = js.native
   @JSName("node")
   def node_X_Term[X /* <: Term */](value: SingleOrOneElementArray[X], options: NodeOptions): SingleContextClownface[D, X] = js.native
+  def out[X /* <: Term */](): SafeClownface[D, X] = js.native
   def out[X /* <: Term */](predicates: SingleOrArrayOfTerms): SafeClownface[D, X] = js.native
   def toArray(): js.Array[Clownface[D, T]] = js.native
 }

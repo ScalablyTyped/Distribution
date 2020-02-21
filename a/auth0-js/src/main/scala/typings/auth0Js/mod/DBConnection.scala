@@ -15,10 +15,9 @@ class DBConnection protected () extends js.Object {
     */
   def changePassword(options: ChangePasswordOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
   /**
-    * Signup a new user
-    *
-    * @param options: https://auth0.com/docs/api/authentication#!#post--dbconnections-signup
+    * Creates a new user in a Auth0 Database connection
+    * @param options https://auth0.com/docs/api/authentication#signup
     */
-  def signup(options: DbSignUpOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def signup(options: DbSignUpOptions, callback: Auth0Callback[DbSignUpResults, Auth0Error]): Unit = js.native
 }
 

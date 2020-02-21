@@ -9,7 +9,11 @@ trait PatchRule extends js.Object {
   /**
     * The number of days after the release date of each patch matched by the rule that the patch is marked as approved in the patch baseline. For example, a value of 7 means that patches are approved seven days after they are released. 
     */
-  var ApproveAfterDays: typings.awsSdk.ssmMod.ApproveAfterDays = js.native
+  var ApproveAfterDays: js.UndefOr[typings.awsSdk.ssmMod.ApproveAfterDays] = js.native
+  /**
+    * The cutoff date for auto approval of released patches. Any patches released on or before this date will be installed automatically
+    */
+  var ApproveUntilDate: js.UndefOr[PatchStringDate] = js.native
   /**
     * A compliance severity level for all approved patches in a patch baseline. Valid compliance severity levels include the following: Unspecified, Critical, High, Medium, Low, and Informational.
     */
@@ -27,12 +31,15 @@ trait PatchRule extends js.Object {
 object PatchRule {
   @scala.inline
   def apply(
-    ApproveAfterDays: ApproveAfterDays,
     PatchFilterGroup: PatchFilterGroup,
+    ApproveAfterDays: Int | Double = null,
+    ApproveUntilDate: PatchStringDate = null,
     ComplianceLevel: PatchComplianceLevel = null,
     EnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
   ): PatchRule = {
-    val __obj = js.Dynamic.literal(ApproveAfterDays = ApproveAfterDays.asInstanceOf[js.Any], PatchFilterGroup = PatchFilterGroup.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(PatchFilterGroup = PatchFilterGroup.asInstanceOf[js.Any])
+    if (ApproveAfterDays != null) __obj.updateDynamic("ApproveAfterDays")(ApproveAfterDays.asInstanceOf[js.Any])
+    if (ApproveUntilDate != null) __obj.updateDynamic("ApproveUntilDate")(ApproveUntilDate.asInstanceOf[js.Any])
     if (ComplianceLevel != null) __obj.updateDynamic("ComplianceLevel")(ComplianceLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(EnableNonSecurity)) __obj.updateDynamic("EnableNonSecurity")(EnableNonSecurity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchRule]

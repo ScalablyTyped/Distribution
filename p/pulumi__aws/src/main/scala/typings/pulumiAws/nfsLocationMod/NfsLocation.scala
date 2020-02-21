@@ -42,7 +42,7 @@ class NfsLocation protected () extends CustomResource {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   val uri: Output_[String] = js.native
 }
 

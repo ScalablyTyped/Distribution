@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Endpoint extends js.Object {
   /**
-    * Specifies the DNS address of the DB instance.
+    * Specifies the DNS address of the instance.
     */
   var Address: js.UndefOr[String] = js.native
   /**

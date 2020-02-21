@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.awsLambdaStrings.Confirmed_
 import typings.awsLambda.awsLambdaStrings.Denied
 import typings.awsLambda.awsLambdaStrings.None
-import typings.awsLambda.mod.LexSlotDetails
+import typings.awsLambda.lexMod.LexSlotDetails
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

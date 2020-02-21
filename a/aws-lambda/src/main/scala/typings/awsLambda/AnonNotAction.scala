@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.StatementAction
+import typings.awsLambda.apiGatewayAuthorizerMod.StatementAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

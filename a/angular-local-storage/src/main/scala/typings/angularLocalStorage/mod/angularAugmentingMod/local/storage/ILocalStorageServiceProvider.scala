@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// tslint:disable-next-line interface-name
 @js.native
 trait ILocalStorageServiceProvider extends IServiceProvider {
   /**
     * If localStorage is not supported, the library will default to cookies instead. This behavior can be disabled
-    * @param shouldDefault default: true
+    * default: true
     */
   def setDefaultToCookie(shouldDefault: Boolean): ILocalStorageServiceProvider = js.native
   /**
@@ -37,13 +38,16 @@ trait ILocalStorageServiceProvider extends IServiceProvider {
     */
   def setStorageCookie(exp: Double, path: String, secure: Boolean): ILocalStorageServiceProvider = js.native
   /**
-    * Set the cookie domain, since this runs inside a the config() block, only providers and constants can be injected. As a result, $location service can't be used here, use a hardcoded string or window.location.
+    * Set the cookie domain, since this runs inside a the config() block,
+    * only providers and constants can be injected.
+    * As a result, $location service can't be used here,
+    * use a hardcoded string or window.location.
     * No default value
     */
   def setStorageCookieDomain(domain: String): ILocalStorageServiceProvider = js.native
   /**
     * Setter for the storageType
-    * @param storageType localstorage or sessionStorage. default: localStorage
+    * localstorage or sessionStorage. default: localStorage
     */
   def setStorageType(storageType: String): ILocalStorageServiceProvider = js.native
 }

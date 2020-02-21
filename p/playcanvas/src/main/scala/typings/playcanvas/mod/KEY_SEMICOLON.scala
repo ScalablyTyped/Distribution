@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.KEY_SEMICOLON
   */
 @JSImport("playcanvas", "KEY_SEMICOLON")

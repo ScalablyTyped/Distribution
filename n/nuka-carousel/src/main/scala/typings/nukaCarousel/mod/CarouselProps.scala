@@ -1,5 +1,6 @@
 package typings.nukaCarousel.mod
 
+import typings.nukaCarousel.AnonContainerClassName
 import typings.nukaCarousel.nukaCarouselStrings.zoom
 import typings.react.mod.ReactNode
 import scala.scalajs.js
@@ -56,6 +57,10 @@ trait CarouselProps extends js.Object {
     */
   var className: js.UndefOr[String] = js.undefined
   /**
+    * This prop lets you apply custom classes and styles to the default Next, Previous, and Paging Dots controls
+    */
+  var defaultControlsConfig: js.UndefOr[AnonContainerClassName] = js.undefined
+  /**
     * Disable slides animation
     * @default false
     */
@@ -96,6 +101,10 @@ trait CarouselProps extends js.Object {
     * @example '500px'
     */
   var framePadding: js.UndefOr[String] = js.undefined
+  /**
+    * Optional callback to apply styles to the container of a control.
+    */
+  var getControlContainerStyle: js.UndefOr[js.Function1[/* key */ CarouselControlContainerProp, CSSProperties]] = js.undefined
   /**
     * Used to hardcode the slider height
     * @example '80%'
@@ -139,7 +148,9 @@ trait CarouselProps extends js.Object {
   /**
     * Function for rendering aria-live announcement messages
     */
-  var renderAnnounceSlideMessage: js.UndefOr[js.Function1[/* hasCurrentSlideSlideCount */ js.Any, String]] = js.undefined
+  var renderAnnounceSlideMessage: js.UndefOr[
+    js.Function1[/* hasCurrentSlideSlideCount */ CarouselSlideRenderControlProps, String]
+  ] = js.undefined
   /**
     * Function for rendering bottom center control
     */
@@ -246,6 +257,7 @@ object CarouselProps {
     cellAlign: CarouselCellAlignProp = null,
     cellSpacing: Int | Double = null,
     className: String = null,
+    defaultControlsConfig: AnonContainerClassName = null,
     disableAnimation: js.UndefOr[Boolean] = js.undefined,
     disableEdgeSwiping: js.UndefOr[Boolean] = js.undefined,
     dragging: js.UndefOr[Boolean] = js.undefined,
@@ -254,6 +266,7 @@ object CarouselProps {
     enableKeyboardControls: js.UndefOr[Boolean] = js.undefined,
     frameOverflow: String = null,
     framePadding: String = null,
+    getControlContainerStyle: /* key */ CarouselControlContainerProp => CSSProperties = null,
     height: String = null,
     heightMode: CarouselHeightModeProp = null,
     initialSlideHeight: Int | Double = null,
@@ -264,7 +277,7 @@ object CarouselProps {
     onDragStart: () => Unit = null,
     onResize: () => Unit = null,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
-    renderAnnounceSlideMessage: /* hasCurrentSlideSlideCount */ js.Any => String = null,
+    renderAnnounceSlideMessage: /* hasCurrentSlideSlideCount */ CarouselSlideRenderControlProps => String = null,
     renderBottomCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
     renderBottomLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
     renderBottomRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
@@ -298,6 +311,7 @@ object CarouselProps {
     if (cellAlign != null) __obj.updateDynamic("cellAlign")(cellAlign.asInstanceOf[js.Any])
     if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (defaultControlsConfig != null) __obj.updateDynamic("defaultControlsConfig")(defaultControlsConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.asInstanceOf[js.Any])
     if (!js.isUndefined(disableEdgeSwiping)) __obj.updateDynamic("disableEdgeSwiping")(disableEdgeSwiping.asInstanceOf[js.Any])
     if (!js.isUndefined(dragging)) __obj.updateDynamic("dragging")(dragging.asInstanceOf[js.Any])
@@ -306,6 +320,7 @@ object CarouselProps {
     if (!js.isUndefined(enableKeyboardControls)) __obj.updateDynamic("enableKeyboardControls")(enableKeyboardControls.asInstanceOf[js.Any])
     if (frameOverflow != null) __obj.updateDynamic("frameOverflow")(frameOverflow.asInstanceOf[js.Any])
     if (framePadding != null) __obj.updateDynamic("framePadding")(framePadding.asInstanceOf[js.Any])
+    if (getControlContainerStyle != null) __obj.updateDynamic("getControlContainerStyle")(js.Any.fromFunction1(getControlContainerStyle))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode.asInstanceOf[js.Any])
     if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])

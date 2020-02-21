@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.AnonColors
+import typings.cesium.AnonArcType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "PolylineGeometry")
 @js.native
 class PolylineGeometry protected () extends Packable {
-  def this(options: AnonColors) = this()
+  def this(options: AnonArcType) = this()
 }
 
 /* static members */

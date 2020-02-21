@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
   * @name pc.SEMANTIC_NORMAL
+  * @type {string}
   * @description Vertex attribute to be treated as a normal.
   */
 @JSGlobal("pc.SEMANTIC_NORMAL")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sc-broker
 
-Typings are for version 5.1
+Typings are for version 8.0
 
 ## Library description:
 sc-broker key-value and message broker

@@ -1,6 +1,7 @@
 package typings.bytebuffer.mod
 
 import typings.bytebuffer.AnonLength
+import typings.long.mod.Long
 import typings.node.Buffer
 import typings.std.ArrayBuffer
 import typings.std.DataView
@@ -232,8 +233,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit signed integer.
     */
-  def readInt64(): typings.long.mod.^ = js.native
-  def readInt64(offset: Double): typings.long.mod.^ = js.native
+  def readInt64(): Long = js.native
+  def readInt64(offset: Double): Long = js.native
   /**
     * Reads an 8bit signed integer.
     */
@@ -242,8 +243,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit signed integer. This is an alias of ByteBuffer#readInt64.
     */
-  def readLong(): typings.long.mod.^ = js.native
-  def readLong(offset: Double): typings.long.mod.^ = js.native
+  def readLong(): Long = js.native
+  def readLong(offset: Double): Long = js.native
   /**
     * Reads a 16bit signed integer. This is an alias of ByteBuffer#readInt16.
     */
@@ -274,8 +275,8 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit unsigned integer.
     */
-  def readUint64(): typings.long.mod.^ = js.native
-  def readUint64(offset: Double): typings.long.mod.^ = js.native
+  def readUint64(): Long = js.native
+  def readUint64(offset: Double): Long = js.native
   /**
     * Reads an 8bit unsigned integer.
     */
@@ -299,13 +300,13 @@ trait ByteBuffer extends js.Object {
   /**
     * Reads a 64bit base 128 variable-length integer. Requires Long.js.
     */
-  def readVarint64(): typings.long.mod.^ = js.native
-  def readVarint64(offset: Double): typings.long.mod.^ = js.native
+  def readVarint64(): Long = js.native
+  def readVarint64(offset: Double): Long = js.native
   /**
     * Reads a zig-zag encoded 64bit base 128 variable-length integer. Requires Long.js.
     */
-  def readVarint64ZigZag(): typings.long.mod.^ = js.native
-  def readVarint64ZigZag(offset: Double): typings.long.mod.^ = js.native
+  def readVarint64ZigZag(): Long = js.native
+  def readVarint64ZigZag(offset: Double): Long = js.native
   /**
     * Gets the number of remaining readable bytes. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit, so this returns limit - offset.
     */
@@ -462,8 +463,8 @@ trait ByteBuffer extends js.Object {
     */
   def writeInt64(value: Double): ByteBuffer = js.native
   def writeInt64(value: Double, offset: Double): ByteBuffer = js.native
-  def writeInt64(value: typings.long.mod.^): ByteBuffer = js.native
-  def writeInt64(value: typings.long.mod.^, offset: Double): ByteBuffer = js.native
+  def writeInt64(value: Long): ByteBuffer = js.native
+  def writeInt64(value: Long, offset: Double): ByteBuffer = js.native
   /**
     * Writes an 8bit signed integer.
     */
@@ -474,8 +475,8 @@ trait ByteBuffer extends js.Object {
     */
   def writeLong(value: Double): ByteBuffer = js.native
   def writeLong(value: Double, offset: Double): ByteBuffer = js.native
-  def writeLong(value: typings.long.mod.^): ByteBuffer = js.native
-  def writeLong(value: typings.long.mod.^, offset: Double): ByteBuffer = js.native
+  def writeLong(value: Long): ByteBuffer = js.native
+  def writeLong(value: Long, offset: Double): ByteBuffer = js.native
   /**
     * Writes a 16bit signed integer. This is an alias of ByteBuffer#writeInt16.
     */
@@ -506,8 +507,8 @@ trait ByteBuffer extends js.Object {
     */
   def writeUint64(value: Double): ByteBuffer = js.native
   def writeUint64(value: Double, offset: Double): ByteBuffer = js.native
-  def writeUint64(value: typings.long.mod.^): ByteBuffer = js.native
-  def writeUint64(value: typings.long.mod.^, offset: Double): ByteBuffer = js.native
+  def writeUint64(value: Long): ByteBuffer = js.native
+  def writeUint64(value: Long, offset: Double): ByteBuffer = js.native
   /**
     * Writes an 8bit unsigned integer.
     */
@@ -533,14 +534,14 @@ trait ByteBuffer extends js.Object {
     */
   def writeVarint64(value: Double): ByteBuffer = js.native
   def writeVarint64(value: Double, offset: Double): ByteBuffer = js.native
-  def writeVarint64(value: typings.long.mod.^): ByteBuffer = js.native
-  def writeVarint64(value: typings.long.mod.^, offset: Double): ByteBuffer = js.native
+  def writeVarint64(value: Long): ByteBuffer = js.native
+  def writeVarint64(value: Long, offset: Double): ByteBuffer = js.native
   /**
     * Writes a zig-zag encoded 64bit base 128 variable-length integer.
     */
   def writeVarint64ZigZag(value: Double): ByteBuffer | Double = js.native
   def writeVarint64ZigZag(value: Double, offset: Double): ByteBuffer | Double = js.native
-  def writeVarint64ZigZag(value: typings.long.mod.^): ByteBuffer | Double = js.native
-  def writeVarint64ZigZag(value: typings.long.mod.^, offset: Double): ByteBuffer | Double = js.native
+  def writeVarint64ZigZag(value: Long): ByteBuffer | Double = js.native
+  def writeVarint64ZigZag(value: Long, offset: Double): ByteBuffer | Double = js.native
 }
 

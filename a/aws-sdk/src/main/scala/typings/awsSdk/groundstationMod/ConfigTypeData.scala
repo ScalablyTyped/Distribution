@@ -27,8 +27,7 @@ trait ConfigTypeData extends js.Object {
     */
   var trackingConfig: js.UndefOr[TrackingConfig] = js.native
   /**
-    * Information about an uplink echo Config.
-    Parameters from the AntennaUplinkConfig, corresponding to the specified AntennaUplinkConfigArn, are used when this UplinkEchoConfig is used in a contact.
+    * Information about an uplink echo Config. Parameters from the AntennaUplinkConfig, corresponding to the specified AntennaUplinkConfigArn, are used when this UplinkEchoConfig is used in a contact.
     */
   var uplinkEchoConfig: js.UndefOr[UplinkEchoConfig] = js.native
 }

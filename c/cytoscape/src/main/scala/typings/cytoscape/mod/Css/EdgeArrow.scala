@@ -20,6 +20,8 @@ import scala.scalajs.js.annotation._
   * http://js.cytoscape.org/#style/edge-arrow
   */
 trait EdgeArrow extends js.Object {
+  /** The size of the arrow. */
+  var `arrow-scale`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   /** The colour of the edge’s "mid-source" arrow. */
   var `mid-source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
   /** The fill state of the edge’s mid-source arrow. */
@@ -49,6 +51,7 @@ trait EdgeArrow extends js.Object {
 object EdgeArrow {
   @scala.inline
   def apply(
+    `arrow-scale`: PropertyValueEdge[Double] = null,
     `mid-source-arrow-color`: PropertyValueEdge[Colour] = null,
     `mid-source-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
     `mid-source-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
@@ -63,6 +66,7 @@ object EdgeArrow {
     `target-arrow-shape`: PropertyValueEdge[ArrowShape] = null
   ): EdgeArrow = {
     val __obj = js.Dynamic.literal()
+    if (`arrow-scale` != null) __obj.updateDynamic("arrow-scale")(`arrow-scale`.asInstanceOf[js.Any])
     if (`mid-source-arrow-color` != null) __obj.updateDynamic("mid-source-arrow-color")(`mid-source-arrow-color`.asInstanceOf[js.Any])
     if (`mid-source-arrow-fill` != null) __obj.updateDynamic("mid-source-arrow-fill")(`mid-source-arrow-fill`.asInstanceOf[js.Any])
     if (`mid-source-arrow-shape` != null) __obj.updateDynamic("mid-source-arrow-shape")(`mid-source-arrow-shape`.asInstanceOf[js.Any])

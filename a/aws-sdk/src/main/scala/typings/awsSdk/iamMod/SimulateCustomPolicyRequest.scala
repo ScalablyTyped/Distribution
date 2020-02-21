@@ -27,6 +27,10 @@ trait SimulateCustomPolicyRequest extends js.Object {
     */
   var MaxItems: js.UndefOr[maxItemsType] = js.native
   /**
+    * The IAM permissions boundary policy to simulate. The permissions boundary sets the maximum permissions that an IAM entity can have. You can input only one permissions boundary when you pass a policy to this operation. For more information about permissions boundaries, see Permissions Boundaries for IAM Entities in the IAM User Guide. The policy input is specified as a string that contains the complete, valid JSON text of a permissions boundary policy. The regex pattern used to validate this parameter is a string of characters consisting of the following:   Any printable ASCII character ranging from the space character (\\u0020) through the end of the ASCII character range   The printable characters in the Basic Latin and Latin-1 Supplement character set (through \\u00FF)   The special characters tab (\\u0009), line feed (\\u000A), and carriage return (\\u000D)  
+    */
+  var PermissionsBoundaryPolicyInputList: js.UndefOr[SimulationPolicyListType] = js.native
+  /**
     * A list of policy documents to include in the simulation. Each document is specified as a string containing the complete, valid JSON text of an IAM policy. Do not include any resource-based policies in this parameter. Any resource-based policy must be submitted with the ResourcePolicy parameter. The policies cannot be "scope-down" policies, such as you could include in a call to GetFederationToken or one of the AssumeRole API operations. In other words, do not use policies designed to restrict what a user can do while using the temporary credentials. The regex pattern used to validate this parameter is a string of characters consisting of the following:   Any printable ASCII character ranging from the space character (\\u0020) through the end of the ASCII character range   The printable characters in the Basic Latin and Latin-1 Supplement character set (through \\u00FF)   The special characters tab (\\u0009), line feed (\\u000A), and carriage return (\\u000D)  
     */
   var PolicyInputList: SimulationPolicyListType = js.native
@@ -57,6 +61,7 @@ object SimulateCustomPolicyRequest {
     ContextEntries: ContextEntryListType = null,
     Marker: markerType = null,
     MaxItems: Int | Double = null,
+    PermissionsBoundaryPolicyInputList: SimulationPolicyListType = null,
     ResourceArns: ResourceNameListType = null,
     ResourceHandlingOption: ResourceHandlingOptionType = null,
     ResourceOwner: ResourceNameType = null,
@@ -67,6 +72,7 @@ object SimulateCustomPolicyRequest {
     if (ContextEntries != null) __obj.updateDynamic("ContextEntries")(ContextEntries.asInstanceOf[js.Any])
     if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
+    if (PermissionsBoundaryPolicyInputList != null) __obj.updateDynamic("PermissionsBoundaryPolicyInputList")(PermissionsBoundaryPolicyInputList.asInstanceOf[js.Any])
     if (ResourceArns != null) __obj.updateDynamic("ResourceArns")(ResourceArns.asInstanceOf[js.Any])
     if (ResourceHandlingOption != null) __obj.updateDynamic("ResourceHandlingOption")(ResourceHandlingOption.asInstanceOf[js.Any])
     if (ResourceOwner != null) __obj.updateDynamic("ResourceOwner")(ResourceOwner.asInstanceOf[js.Any])

@@ -14,14 +14,19 @@ trait ListGroundStationsRequest extends js.Object {
     * Next token that can be supplied in the next call to get the next page of ground stations.
     */
   var nextToken: js.UndefOr[String] = js.native
+  /**
+    * Satellite ID to retrieve on-boarded ground stations.
+    */
+  var satelliteId: js.UndefOr[String] = js.native
 }
 
 object ListGroundStationsRequest {
   @scala.inline
-  def apply(maxResults: Int | scala.Double = null, nextToken: String = null): ListGroundStationsRequest = {
+  def apply(maxResults: Int | scala.Double = null, nextToken: String = null, satelliteId: String = null): ListGroundStationsRequest = {
     val __obj = js.Dynamic.literal()
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
+    if (satelliteId != null) __obj.updateDynamic("satelliteId")(satelliteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroundStationsRequest]
   }
 }

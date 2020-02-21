@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListComponentBuildVersionsRequest extends js.Object {
   /**
-    *  The component version arn whose versions you wish to list. 
+    *  The component version Amazon Resource Name (ARN) whose versions you want to list. 
     */
   var componentVersionArn: ComponentVersionArn = js.native
   /**

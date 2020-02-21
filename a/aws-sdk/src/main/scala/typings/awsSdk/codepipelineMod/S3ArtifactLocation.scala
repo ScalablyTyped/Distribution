@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait S3ArtifactLocation extends js.Object {
   /**
-    * The name of the Amazon S3 bucket.
+    * The name of the S3 bucket.
     */
   var bucketName: S3BucketName = js.native
   /**
-    * The key of the object in the Amazon S3 bucket, which uniquely identifies the object in the bucket.
+    * The key of the object in the S3 bucket, which uniquely identifies the object in the bucket.
     */
   var objectKey: S3ObjectKey = js.native
 }

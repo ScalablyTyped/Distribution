@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AmiDistributionConfiguration extends js.Object {
   /**
-    *  The tags to apply to AMIs distributed to this region. 
+    *  The tags to apply to AMIs distributed to this Region. 
     */
   var amiTags: js.UndefOr[TagMap] = js.native
   /**
@@ -21,7 +21,7 @@ trait AmiDistributionConfiguration extends js.Object {
   /**
     *  The name of the distribution configuration. 
     */
-  var name: js.UndefOr[NonEmptyString] = js.native
+  var name: js.UndefOr[AmiNameString] = js.native
 }
 
 object AmiDistributionConfiguration {
@@ -30,7 +30,7 @@ object AmiDistributionConfiguration {
     amiTags: TagMap = null,
     description: NonEmptyString = null,
     launchPermission: LaunchPermissionConfiguration = null,
-    name: NonEmptyString = null
+    name: AmiNameString = null
   ): AmiDistributionConfiguration = {
     val __obj = js.Dynamic.literal()
     if (amiTags != null) __obj.updateDynamic("amiTags")(amiTags.asInstanceOf[js.Any])

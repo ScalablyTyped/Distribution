@@ -9,6 +9,7 @@ trait GetKeyResult extends js.Object {
   val arn: String = js.native
   val awsAccountId: String = js.native
   val creationDate: String = js.native
+  val customerMasterKeySpec: String = js.native
   val deletionDate: String = js.native
   val description: String = js.native
   val enabled: Boolean = js.native
@@ -32,6 +33,7 @@ object GetKeyResult {
     arn: String,
     awsAccountId: String,
     creationDate: String,
+    customerMasterKeySpec: String,
     deletionDate: String,
     description: String,
     enabled: Boolean,
@@ -45,7 +47,7 @@ object GetKeyResult {
     validTo: String,
     grantTokens: js.Array[String] = null
   ): GetKeyResult = {
-    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], awsAccountId = awsAccountId.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], deletionDate = deletionDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], expirationModel = expirationModel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], keyManager = keyManager.asInstanceOf[js.Any], keyState = keyState.asInstanceOf[js.Any], keyUsage = keyUsage.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], validTo = validTo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], awsAccountId = awsAccountId.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], customerMasterKeySpec = customerMasterKeySpec.asInstanceOf[js.Any], deletionDate = deletionDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], expirationModel = expirationModel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], keyManager = keyManager.asInstanceOf[js.Any], keyState = keyState.asInstanceOf[js.Any], keyUsage = keyUsage.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], validTo = validTo.asInstanceOf[js.Any])
     if (grantTokens != null) __obj.updateDynamic("grantTokens")(grantTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyResult]
   }

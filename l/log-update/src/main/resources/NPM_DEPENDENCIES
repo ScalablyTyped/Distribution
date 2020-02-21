@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "log-update" : "3.3.0"
+      "log-update" : "3.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "log-update" : "3.3.0"
+      "log-update" : "3.4.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBClusterMessage extends js.Object {
   /**
-    * A list of DB clusters.
+    * A list of clusters.
     */
   var DBClusters: js.UndefOr[DBClusterList] = js.native
   /**

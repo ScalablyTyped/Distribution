@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SchedulerView extends js.Object {
+  var adaptiveSlotHeight: js.UndefOr[Boolean] = js.undefined
   var allDayEventTemplate: js.UndefOr[String | js.Function] = js.undefined
   var allDaySlot: js.UndefOr[Boolean] = js.undefined
   var allDaySlotTemplate: js.UndefOr[String | js.Function] = js.undefined
@@ -14,9 +15,11 @@ trait SchedulerView extends js.Object {
   var dayTemplate: js.UndefOr[String | js.Function] = js.undefined
   var editable: js.UndefOr[Boolean | SchedulerViewEditable] = js.undefined
   var endTime: js.UndefOr[Date] = js.undefined
-  var eventHeight: js.UndefOr[Double] = js.undefined
+  var eventHeight: js.UndefOr[Double | String] = js.undefined
+  var eventSpacing: js.UndefOr[Double] = js.undefined
   var eventTemplate: js.UndefOr[String | js.Function] = js.undefined
   var eventTimeTemplate: js.UndefOr[String | js.Function] = js.undefined
+  var eventsPerDay: js.UndefOr[Double] = js.undefined
   var group: js.UndefOr[SchedulerViewGroup] = js.undefined
   var majorTick: js.UndefOr[Double] = js.undefined
   var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
@@ -38,6 +41,7 @@ trait SchedulerView extends js.Object {
 object SchedulerView {
   @scala.inline
   def apply(
+    adaptiveSlotHeight: js.UndefOr[Boolean] = js.undefined,
     allDayEventTemplate: String | js.Function = null,
     allDaySlot: js.UndefOr[Boolean] = js.undefined,
     allDaySlotTemplate: String | js.Function = null,
@@ -46,9 +50,11 @@ object SchedulerView {
     dayTemplate: String | js.Function = null,
     editable: Boolean | SchedulerViewEditable = null,
     endTime: Date = null,
-    eventHeight: Int | Double = null,
+    eventHeight: Double | String = null,
+    eventSpacing: Int | Double = null,
     eventTemplate: String | js.Function = null,
     eventTimeTemplate: String | js.Function = null,
+    eventsPerDay: Int | Double = null,
     group: SchedulerViewGroup = null,
     majorTick: Int | Double = null,
     majorTimeHeaderTemplate: String | js.Function = null,
@@ -67,6 +73,7 @@ object SchedulerView {
     workWeekStart: Int | Double = null
   ): SchedulerView = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(adaptiveSlotHeight)) __obj.updateDynamic("adaptiveSlotHeight")(adaptiveSlotHeight.asInstanceOf[js.Any])
     if (allDayEventTemplate != null) __obj.updateDynamic("allDayEventTemplate")(allDayEventTemplate.asInstanceOf[js.Any])
     if (!js.isUndefined(allDaySlot)) __obj.updateDynamic("allDaySlot")(allDaySlot.asInstanceOf[js.Any])
     if (allDaySlotTemplate != null) __obj.updateDynamic("allDaySlotTemplate")(allDaySlotTemplate.asInstanceOf[js.Any])
@@ -76,8 +83,10 @@ object SchedulerView {
     if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (eventHeight != null) __obj.updateDynamic("eventHeight")(eventHeight.asInstanceOf[js.Any])
+    if (eventSpacing != null) __obj.updateDynamic("eventSpacing")(eventSpacing.asInstanceOf[js.Any])
     if (eventTemplate != null) __obj.updateDynamic("eventTemplate")(eventTemplate.asInstanceOf[js.Any])
     if (eventTimeTemplate != null) __obj.updateDynamic("eventTimeTemplate")(eventTimeTemplate.asInstanceOf[js.Any])
+    if (eventsPerDay != null) __obj.updateDynamic("eventsPerDay")(eventsPerDay.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (majorTick != null) __obj.updateDynamic("majorTick")(majorTick.asInstanceOf[js.Any])
     if (majorTimeHeaderTemplate != null) __obj.updateDynamic("majorTimeHeaderTemplate")(majorTimeHeaderTemplate.asInstanceOf[js.Any])

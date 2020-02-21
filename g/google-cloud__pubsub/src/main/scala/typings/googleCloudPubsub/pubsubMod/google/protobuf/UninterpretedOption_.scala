@@ -2,7 +2,7 @@ package typings.googleCloudPubsub.pubsubMod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.pubsubMod.google.protobuf.UninterpretedOption.INamePart
-import typings.long.mod.^
+import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,10 +31,10 @@ class UninterpretedOption_ () extends IUninterpretedOption {
   var name_UninterpretedOption_ : js.Array[INamePart] = js.native
   /** UninterpretedOption negativeIntValue. */
   @JSName("negativeIntValue")
-  var negativeIntValue_UninterpretedOption_ : Double | ^  = js.native
+  var negativeIntValue_UninterpretedOption_ : Double | Long = js.native
   /** UninterpretedOption positiveIntValue. */
   @JSName("positiveIntValue")
-  var positiveIntValue_UninterpretedOption_ : Double | ^  = js.native
+  var positiveIntValue_UninterpretedOption_ : Double | Long = js.native
   /** UninterpretedOption stringValue. */
   @JSName("stringValue")
   var stringValue_UninterpretedOption_ : Uint8Array = js.native

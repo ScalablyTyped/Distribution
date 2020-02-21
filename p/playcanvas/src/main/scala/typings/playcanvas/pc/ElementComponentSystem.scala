@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.ElementComponentSystem
-  * @extends pc.ComponentSystem
+  * @augments pc.ComponentSystem
   * @classdesc Manages creation of {@link pc.ElementComponent}s.
-  * @param {pc.Application} app The application
+  * @param {pc.Application} app - The application.
   */
 @JSGlobal("pc.ElementComponentSystem")
 @js.native

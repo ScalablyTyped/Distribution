@@ -9,8 +9,8 @@ trait StockChartNavigatorCategoryAxisTitle extends js.Object {
   var border: js.UndefOr[StockChartNavigatorCategoryAxisTitleBorder] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[StockChartNavigatorCategoryAxisTitleMargin] = js.undefined
-  var padding: js.UndefOr[StockChartNavigatorCategoryAxisTitlePadding] = js.undefined
+  var margin: js.UndefOr[Double | StockChartNavigatorCategoryAxisTitleMargin] = js.undefined
+  var padding: js.UndefOr[Double | StockChartNavigatorCategoryAxisTitlePadding] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
   var text: js.UndefOr[String] = js.undefined
@@ -24,8 +24,8 @@ object StockChartNavigatorCategoryAxisTitle {
     border: StockChartNavigatorCategoryAxisTitleBorder = null,
     color: String = null,
     font: String = null,
-    margin: StockChartNavigatorCategoryAxisTitleMargin = null,
-    padding: StockChartNavigatorCategoryAxisTitlePadding = null,
+    margin: Double | StockChartNavigatorCategoryAxisTitleMargin = null,
+    padding: Double | StockChartNavigatorCategoryAxisTitlePadding = null,
     position: String = null,
     rotation: Int | Double = null,
     text: String = null,

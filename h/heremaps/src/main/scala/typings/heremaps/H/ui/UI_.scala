@@ -45,7 +45,7 @@ class UI_ protected () extends ICapturable {
   def getControl(name: String): Control = js.native
   /**
     * This method returns this ui's root element.
-    * @returns {ELement} - the root element
+    * @returns {Element} - the root element
     */
   def getElement(): Element = js.native
   /**

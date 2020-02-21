@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.STENCILOP_INCREMENT
+  * @type {number}
   * @description Increment the value.
   */
 @JSImport("playcanvas", "STENCILOP_INCREMENT")

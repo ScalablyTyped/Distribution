@@ -41,5 +41,10 @@ object WebSocket
       (/* protocols */ js.Array[String]) | (/* protocols */ Null) | (/* protocols */ String), 
       /* options */ AnonHeaderName, 
       WebSocket
-    ]
+    ] {
+  val CLOSED: Double = js.native
+  val CLOSING: Double = js.native
+  val CONNECTING: Double = js.native
+  val OPEN: Double = js.native
+}
 

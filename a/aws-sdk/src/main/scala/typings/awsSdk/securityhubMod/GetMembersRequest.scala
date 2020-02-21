@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetMembersRequest extends js.Object {
   /**
-    * A list of account IDs for the Security Hub member accounts that you want to return the details for. 
+    * The list of account IDs for the Security Hub member accounts to return the details for. 
     */
   var AccountIds: AccountIdList = js.native
 }

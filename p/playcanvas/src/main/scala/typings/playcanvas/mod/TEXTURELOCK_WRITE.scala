@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TEXTURELOCK_WRITE
+  * @type {number}
   * @description Write only. The contents of the specified mip level will be entirely replaced.
   */
 @JSImport("playcanvas", "TEXTURELOCK_WRITE")

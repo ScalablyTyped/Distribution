@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDEQUATION_MAX
+  * @type {number}
   * @description Use the largest value. Check app.graphicsDevice.extBlendMinmax for support.
   */
 @JSImport("playcanvas", "BLENDEQUATION_MAX")

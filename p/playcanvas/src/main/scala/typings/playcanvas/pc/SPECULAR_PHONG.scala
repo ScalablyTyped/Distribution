@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.SPECULAR_PHONG
+  * @type {number}
   * @description Phong without energy conservation. You should only use it as a backwards compatibility with older projects.
   */
 @JSGlobal("pc.SPECULAR_PHONG")

@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SCExchange protected () extends AbstractDataClient {
   def this(privateClientCluster: ClientCluster, publicClientCluster: ClientCluster, ioClusterClient: Client) = this()
-  def channel(channelName: String): SCChannel = js.native
+  def channel(channelName: String): SCChannel[
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _
+  ] = js.native
   def destroy(): Unit = js.native
   def destroyChannel(channelName: String): Unit = js.native
   def getMapper(): mapperFunction = js.native
@@ -32,7 +34,9 @@ class SCExchange protected () extends AbstractDataClient {
   def send(data: js.Any, mapIndex: Double, callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
   def send(data: js.Any, mapIndex: Null, callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
   def setMapper(mapper: mapperFunction): Unit = js.native
-  def subscribe(channelName: String): SCChannel = js.native
+  def subscribe(channelName: String): SCChannel[
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _
+  ] = js.native
   def subscriptions(): js.Array[String] = js.native
   def subscriptions(includePending: Boolean): js.Array[String] = js.native
   def unsubscribe(channelName: String): Unit = js.native

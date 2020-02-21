@@ -21,6 +21,7 @@ import typings.antDesignReactNative.switchMod.AntmSwitchProps
 import typings.antDesignReactNative.tabBarMod.TabBarNativeProps
 import typings.antDesignReactNative.tagMod.TagNativeProps
 import typings.antDesignReactNative.toastContainerMod.ToastProps
+import typings.reactNative.mod.PickerItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -143,6 +144,9 @@ trait antDesignReactNativeProps {
   @scala.inline
   def NativePickerDotiosProps: typings.reactNative.mod.PickerProps.type = typings.reactNative.mod.PickerProps
   type NativePickerDotiosProps = typings.reactNative.mod.PickerProps
+  @scala.inline
+  def NativePickerDotiosItemProps: PickerItemProps.type = typings.reactNative.mod.PickerItemProps
+  type NativePickerDotiosItemProps = PickerItemProps
   @scala.inline
   def NoticeBarProps: NoticeNativeProps.type = typings.antDesignReactNative.noticeBarMod.NoticeNativeProps
   type NoticeBarProps = NoticeNativeProps

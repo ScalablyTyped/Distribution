@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.CodePipelineActionState
+import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

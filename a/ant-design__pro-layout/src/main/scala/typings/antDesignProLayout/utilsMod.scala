@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 object utilsMod extends js.Object {
   def debounce(func: js.Function, wait: Double): js.Function0[_] = js.native
   def debounce(func: js.Function, wait: Double, immediate: Boolean): js.Function0[_] = js.native
+  def genStringToTheme(): String = js.native
+  def genStringToTheme(`val`: String): String = js.native
   def genThemeToString(): String = js.native
   def genThemeToString(`val`: String): String = js.native
   def getKeyByPath(item: MenuDataItem): String = js.native

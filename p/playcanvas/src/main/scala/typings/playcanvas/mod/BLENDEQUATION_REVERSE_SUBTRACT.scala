@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDEQUATION_REVERSE_SUBTRACT
+  * @type {number}
   * @description Reverse and subtract the results of the source and destination fragment multiplies.
   */
 @JSImport("playcanvas", "BLENDEQUATION_REVERSE_SUBTRACT")

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("async", "timesLimit")
 @js.native
 object timesLimit extends js.Object {
+  def apply[T, E](n: Double, limit: Double, iterator: AsyncResultIterator[Double, T, E]): js.Promise[T] = js.native
   def apply[T, E](
     n: Double,
     limit: Double,

@@ -108,10 +108,9 @@ object _NavigationAction {
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
-  def NavigationSetParamsAction(key: String, `type`: NavigationSlashSET_PARAMS, params: NavigationParams = null): _NavigationAction = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  def NavigationSetParamsAction(key: String, params: NavigationParams, `type`: NavigationSlashSET_PARAMS): _NavigationAction = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[_NavigationAction]
   }
   @scala.inline
@@ -167,7 +166,7 @@ object _NavigationAction {
     key: String,
     routeName: String,
     `type`: NavigationSlashREPLACE,
-    action: NavigationNavigateAction = null,
+    action: NavigationAction = null,
     params: NavigationParams = null
   ): _NavigationAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])

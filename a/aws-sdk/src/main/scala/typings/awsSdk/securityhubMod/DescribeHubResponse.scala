@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeHubResponse extends js.Object {
   /**
-    * The ARN of the Hub resource retrieved.
+    * The ARN of the Hub resource that was retrieved.
     */
   var HubArn: js.UndefOr[NonEmptyString] = js.native
   /**

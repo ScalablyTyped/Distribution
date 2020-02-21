@@ -62,6 +62,9 @@ package object lambdaMod {
     - typings.awsSdk.awsSdkStrings.InsufficientRolePermissions
     - typings.awsSdk.awsSdkStrings.InvalidConfiguration
     - typings.awsSdk.awsSdkStrings.InternalError
+    - typings.awsSdk.awsSdkStrings.SubnetOutOfIPAddresses
+    - typings.awsSdk.awsSdkStrings.InvalidSubnet
+    - typings.awsSdk.awsSdkStrings.InvalidSecurityGroup
     - java.lang.String
   */
   type LastUpdateStatusReasonCode = typings.awsSdk.lambdaMod._LastUpdateStatusReasonCode | java.lang.String
@@ -162,6 +165,8 @@ package object lambdaMod {
     - typings.awsSdk.awsSdkStrings.InvalidConfiguration
     - typings.awsSdk.awsSdkStrings.InternalError
     - typings.awsSdk.awsSdkStrings.SubnetOutOfIPAddresses
+    - typings.awsSdk.awsSdkStrings.InvalidSubnet
+    - typings.awsSdk.awsSdkStrings.InvalidSecurityGroup
     - java.lang.String
   */
   type StateReasonCode = typings.awsSdk.lambdaMod._StateReasonCode | java.lang.String

@@ -6,6 +6,7 @@ import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions
 import typings.node.tlsMod.KeyObject
+import typings.node.tlsMod.PSKCallbackNegotation
 import typings.node.tlsMod.PeerCertificate
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
@@ -62,6 +63,7 @@ object SslConnectOptions {
     port: Int | Double = null,
     privateKeyEngine: String = null,
     privateKeyIdentifier: String = null,
+    pskCallback: /* hint */ String | Null => PSKCallbackNegotation | Null = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     resetDisconnect: js.UndefOr[Boolean] = js.undefined,
@@ -108,6 +110,7 @@ object SslConnectOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
     if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
+    if (pskCallback != null) __obj.updateDynamic("pskCallback")(js.Any.fromFunction1(pskCallback))
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (!js.isUndefined(resetDisconnect)) __obj.updateDynamic("resetDisconnect")(resetDisconnect.asInstanceOf[js.Any])

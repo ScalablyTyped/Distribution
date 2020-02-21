@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PIXELFORMAT_L8
+  * @type {number}
   * @description 8-bit luminance.
   */
 @JSImport("playcanvas", "PIXELFORMAT_L8")

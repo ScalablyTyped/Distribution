@@ -37,7 +37,9 @@ import scala.scalajs.js.annotation._
   - typings.expressValidator.expressValidatorStrings.`en-ZA`
   - typings.expressValidator.expressValidatorStrings.`en-ZM`
   - typings.expressValidator.expressValidatorStrings.`es-ES`
+  - typings.expressValidator.expressValidatorStrings.`fa-IR`
   - typings.expressValidator.expressValidatorStrings.`fr-FR`
+  - typings.expressValidator.expressValidatorStrings.he
   - typings.expressValidator.expressValidatorStrings.`hu-HU`
   - typings.expressValidator.expressValidatorStrings.`it-IT`
   - typings.expressValidator.expressValidatorStrings.`ku-IQ`
@@ -126,7 +128,11 @@ object AlphaLocale {
   @scala.inline
   def `es-ES`: typings.expressValidator.expressValidatorStrings.`es-ES` = this.cast("es-ES")
   @scala.inline
+  def `fa-IR`: typings.expressValidator.expressValidatorStrings.`fa-IR` = this.cast("fa-IR")
+  @scala.inline
   def `fr-FR`: typings.expressValidator.expressValidatorStrings.`fr-FR` = this.cast("fr-FR")
+  @scala.inline
+  def he: typings.expressValidator.expressValidatorStrings.he = this.cast("he")
   @scala.inline
   def `hu-HU`: typings.expressValidator.expressValidatorStrings.`hu-HU` = this.cast("hu-HU")
   @scala.inline

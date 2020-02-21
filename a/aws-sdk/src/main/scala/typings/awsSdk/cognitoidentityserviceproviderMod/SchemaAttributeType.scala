@@ -11,7 +11,7 @@ trait SchemaAttributeType extends js.Object {
     */
   var AttributeDataType: js.UndefOr[typings.awsSdk.cognitoidentityserviceproviderMod.AttributeDataType] = js.native
   /**
-    * Specifies whether the attribute type is developer only.
+    *  We recommend that you use WriteAttributes in the user pool client to control how attributes can be mutated for new use cases instead of using DeveloperOnlyAttribute.  Specifies whether the attribute type is developer only. This attribute can only be modified by an administrator. Users will not be able to modify this attribute using their access token. For example, DeveloperOnlyAttribute can be modified using the API but cannot be updated using the API.
     */
   var DeveloperOnlyAttribute: js.UndefOr[BooleanType] = js.native
   /**

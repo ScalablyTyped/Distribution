@@ -15,6 +15,10 @@ trait AssociationArgs extends js.Object {
     */
   val associationName: js.UndefOr[Input[String]] = js.native
   /**
+    * Specify the target for the association. This target is required for associations that use an `Automation` document and target resources by using rate controls.
+    */
+  val automationTargetParameterName: js.UndefOr[Input[String]] = js.native
+  /**
     * The compliance severity for the association. Can be one of the following: `UNSPECIFIED`, `LOW`, `MEDIUM`, `HIGH` or `CRITICAL`
     */
   val complianceSeverity: js.UndefOr[Input[String]] = js.native
@@ -60,6 +64,7 @@ object AssociationArgs {
   @scala.inline
   def apply(
     associationName: Input[String] = null,
+    automationTargetParameterName: Input[String] = null,
     complianceSeverity: Input[String] = null,
     documentVersion: Input[String] = null,
     instanceId: Input[String] = null,
@@ -73,6 +78,7 @@ object AssociationArgs {
   ): AssociationArgs = {
     val __obj = js.Dynamic.literal()
     if (associationName != null) __obj.updateDynamic("associationName")(associationName.asInstanceOf[js.Any])
+    if (automationTargetParameterName != null) __obj.updateDynamic("automationTargetParameterName")(automationTargetParameterName.asInstanceOf[js.Any])
     if (complianceSeverity != null) __obj.updateDynamic("complianceSeverity")(complianceSeverity.asInstanceOf[js.Any])
     if (documentVersion != null) __obj.updateDynamic("documentVersion")(documentVersion.asInstanceOf[js.Any])
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])

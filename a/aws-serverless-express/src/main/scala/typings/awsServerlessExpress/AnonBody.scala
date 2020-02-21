@@ -1,7 +1,7 @@
 package typings.awsServerlessExpress
 
-import typings.awsLambda.mod.APIGatewayProxyEvent
-import typings.awsLambda.mod.Context
+import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEvent
+import typings.awsLambda.handerMod.Context
 import typings.awsServerlessExpress.awsServerlessExpressStrings.body
 import typings.awsServerlessExpress.middlewareMod.NonFunctionProperties
 import typings.std.Omit

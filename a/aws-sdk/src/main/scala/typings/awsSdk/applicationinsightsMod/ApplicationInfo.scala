@@ -19,7 +19,7 @@ trait ApplicationInfo extends js.Object {
     */
   var OpsItemSNSTopicArn: js.UndefOr[typings.awsSdk.applicationinsightsMod.OpsItemSNSTopicArn] = js.native
   /**
-    * The issues on the user side that block Application Insights from successfully monitoring an application.
+    * The issues on the user side that block Application Insights from successfully monitoring an application. Example remarks include:   “Configuring application, detected 1 Errors, 3 Warnings”   “Configuring application, detected 1 Unconfigured Components”  
     */
   var Remarks: js.UndefOr[typings.awsSdk.applicationinsightsMod.Remarks] = js.native
   /**

@@ -31,6 +31,10 @@ class MaintenanceWindow protected () extends CustomResource {
     */
   val cutoff: Output_[Double] = js.native
   /**
+    * A description for the maintenance window.
+    */
+  val description: Output_[js.UndefOr[String]] = js.native
+  /**
     * The duration of the Maintenance Window in hours.
     */
   val duration: Output_[Double] = js.native

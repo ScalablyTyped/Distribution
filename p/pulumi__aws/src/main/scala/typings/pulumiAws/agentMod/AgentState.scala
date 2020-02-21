@@ -27,7 +27,7 @@ trait AgentState extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Agent.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object AgentState {
@@ -37,7 +37,7 @@ object AgentState {
     arn: Input[String] = null,
     ipAddress: Input[String] = null,
     name: Input[String] = null,
-    tags: Input[StringDictionary[Input[String]]] = null
+    tags: Input[StringDictionary[_]] = null
   ): AgentState = {
     val __obj = js.Dynamic.literal()
     if (activationKey != null) __obj.updateDynamic("activationKey")(activationKey.asInstanceOf[js.Any])

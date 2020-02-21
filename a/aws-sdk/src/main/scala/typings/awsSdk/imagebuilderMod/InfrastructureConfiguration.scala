@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InfrastructureConfiguration extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the infrastruction configuration.
+    * The Amazon Resource Name (ARN) of the infrastructure configuration.
     */
   var arn: js.UndefOr[ImageBuilderArn] = js.native
   /**
@@ -19,47 +19,47 @@ trait InfrastructureConfiguration extends js.Object {
     */
   var dateUpdated: js.UndefOr[DateTime] = js.native
   /**
-    * The description of the infrastruction configuration.
+    * The description of the infrastructure configuration.
     */
   var description: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The instance profile of the infrastruction configuration.
+    * The instance profile of the infrastructure configuration.
     */
   var instanceProfileName: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The instance types of the infrastruction configuration.
+    * The instance types of the infrastructure configuration.
     */
   var instanceTypes: js.UndefOr[InstanceTypeList] = js.native
   /**
-    * The EC2 key pair of the infrastruction configuration.
+    * The EC2 key pair of the infrastructure configuration.
     */
   var keyPair: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The logging configuration of the infrastruction configuration.
+    * The logging configuration of the infrastructure configuration.
     */
   var logging: js.UndefOr[Logging] = js.native
   /**
-    * The name of the infrastruction configuration.
+    * The name of the infrastructure configuration.
     */
   var name: js.UndefOr[ResourceName] = js.native
   /**
-    * The security group IDs of the infrastruction configuration.
+    * The security group IDs of the infrastructure configuration.
     */
   var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.native
   /**
-    * The SNS Topic Amazon Resource Name (ARN) of the infrastruction configuration.
+    * The SNS topic Amazon Resource Name (ARN) of the infrastructure configuration.
     */
   var snsTopicArn: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The subnet ID of the infrastruction configuration.
+    * The subnet ID of the infrastructure configuration.
     */
   var subnetId: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The tags of the infrastruction configuration.
+    * The tags of the infrastructure configuration.
     */
   var tags: js.UndefOr[TagMap] = js.native
   /**
-    * The terminate instance on failure configuration of the infrastruction configuration.
+    * The terminate instance on failure configuration of the infrastructure configuration.
     */
   var terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.native
 }

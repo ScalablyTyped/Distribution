@@ -23,6 +23,8 @@ object special extends js.Object {
   var `gulp-load-plugins_Original`: Parser_ = js.native
   @JSName("husky")
   var husky_Original: Parser_ = js.native
+  @JSName("istanbul")
+  var istanbul_Original: Parser_ = js.native
   @JSName("jest")
   var jest_Original: Parser_ = js.native
   @JSName("karma")
@@ -47,6 +49,7 @@ object special extends js.Object {
   def gatsby(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def `gulp-load-plugins`(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def husky(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
+  def istanbul(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def jest(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def karma(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native
   def `lint-staged`(content: String, filePath: String, deps: js.Array[String], rootDir: String): Node = js.native

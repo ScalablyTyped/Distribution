@@ -12,46 +12,46 @@ trait TypeofClassLevel extends Instantiable2[/* name */ String, /* level */ Doub
     * Indicates all log messages should be recorded.
     * @const
     */
-  var ALL: Level = js.native
+  var ALL: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Log messages with a level of `700` or higher.
     * @const
     */
-  var DEBUG: Level = js.native
+  var DEBUG: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Log messages with a level of `500` or higher.
     * @const
     */
-  var FINE: Level = js.native
+  var FINE: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Log messages with a level of `400` or higher.
     * @const
     */
-  var FINER: Level = js.native
+  var FINER: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Log messages with a level of `300` or higher.
     * @const
     */
-  var FINEST: Level = js.native
+  var FINEST: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Log messages with a level of `800` or higher.
     * @const
     */
-  var INFO: Level = js.native
+  var INFO: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Indicates no log messages should be recorded.
     * @const
     */
-  var OFF: Level = js.native
+  var OFF: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Log messages with a level of `1000` or higher.
     * @const
     */
-  var SEVERE: Level = js.native
+  var SEVERE: typings.seleniumWebdriver.loggingMod.Level = js.native
   /**
     * Log messages with a level of `900` or higher.
     * @const
     */
-  var WARNING: Level = js.native
+  var WARNING: typings.seleniumWebdriver.loggingMod.Level = js.native
 }
 

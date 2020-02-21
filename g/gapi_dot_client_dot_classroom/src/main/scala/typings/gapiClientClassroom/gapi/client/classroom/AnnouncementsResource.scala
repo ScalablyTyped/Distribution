@@ -1,14 +1,18 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstoken
+import typings.gapiClientClassroom.AnonAccesstokenAlt
 import typings.gapiClientClassroom.AnonAccesstokenAltAnnouncementStates
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertoken
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallback
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFields
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsIdKey
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsIdKeyOauthtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnnouncementsResource extends js.Object {
   /**
     * Creates an announcement.
@@ -23,7 +27,8 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request error:
     * &#42; AttachmentNotVisible
     */
-  def create(request: AnonAccesstoken): Request_[Announcement]
+  def create(request: AnonAccesstokenAltCallbackCourseId): Request_[Announcement] = js.native
+  def create(request: AnonAccesstokenAlt, body: Announcement): Request_[Announcement] = js.native
   /**
     * Deletes an announcement.
     *
@@ -40,7 +45,7 @@ trait AnnouncementsResource extends js.Object {
     * deleted.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def delete(request: AnonAccesstokenAltBearertoken): Request_[js.Object]
+  def delete(request: AnonAccesstokenAltCallbackCourseIdFields): Request_[js.Object] = js.native
   /**
     * Returns an announcement.
     *
@@ -51,7 +56,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or announcement does not exist.
     */
-  def get(request: AnonAccesstokenAltBearertoken): Request_[Announcement]
+  def get(request: AnonAccesstokenAltCallbackCourseIdFields): Request_[Announcement] = js.native
   /**
     * Returns a list of announcements that the requester is permitted to view.
     *
@@ -65,7 +70,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course does not exist.
     */
-  def list(request: AnonAccesstokenAltAnnouncementStates): Request_[ListAnnouncementsResponse]
+  def list(request: AnonAccesstokenAltAnnouncementStates): Request_[ListAnnouncementsResponse] = js.native
   /**
     * Modifies assignee mode and options of an announcement.
     *
@@ -79,7 +84,8 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or course work does not exist.
     */
-  def modifyAssignees(request: AnonAccesstokenAltBearertoken): Request_[Announcement]
+  def modifyAssignees(request: AnonAccesstokenAltCallbackCourseIdFieldsId): Request_[Announcement] = js.native
+  def modifyAssignees(request: AnonAccesstokenAltCallbackCourseIdFields, body: ModifyAnnouncementAssigneesRequest): Request_[Announcement] = js.native
   /**
     * Updates one or more fields of an announcement.
     *
@@ -92,22 +98,7 @@ trait AnnouncementsResource extends js.Object {
     * deleted.
     * &#42; `NOT_FOUND` if the requested course or announcement does not exist
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallback): Request_[Announcement]
-}
-
-object AnnouncementsResource {
-  @scala.inline
-  def apply(
-    create: AnonAccesstoken => Request_[Announcement],
-    delete: AnonAccesstokenAltBearertoken => Request_[js.Object],
-    get: AnonAccesstokenAltBearertoken => Request_[Announcement],
-    list: AnonAccesstokenAltAnnouncementStates => Request_[ListAnnouncementsResponse],
-    modifyAssignees: AnonAccesstokenAltBearertoken => Request_[Announcement],
-    patch: AnonAccesstokenAltBearertokenCallback => Request_[Announcement]
-  ): AnnouncementsResource = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modifyAssignees = js.Any.fromFunction1(modifyAssignees), patch = js.Any.fromFunction1(patch))
-  
-    __obj.asInstanceOf[AnnouncementsResource]
-  }
+  def patch(request: AnonAccesstokenAltCallbackCourseIdFieldsIdKey): Request_[Announcement] = js.native
+  def patch(request: AnonAccesstokenAltCallbackCourseIdFieldsIdKeyOauthtoken, body: Announcement): Request_[Announcement] = js.native
 }
 

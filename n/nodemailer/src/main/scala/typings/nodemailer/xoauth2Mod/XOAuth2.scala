@@ -3,7 +3,7 @@ package typings.nodemailer.xoauth2Mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import typings.node.streamMod.Readable
-import typings.node.streamMod.internal
+import typings.node.streamMod.Stream
 import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerStrings.end
 import typings.nodemailer.nodemailerStrings.error
@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait XOAuth2 extends internal {
+trait XOAuth2 extends Stream {
   var accessToken: String | `false` = js.native
   var expires: Double = js.native
   var logger: Logger = js.native

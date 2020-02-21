@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.GamePads
   * @classdesc Input handler for accessing GamePad input.
   */

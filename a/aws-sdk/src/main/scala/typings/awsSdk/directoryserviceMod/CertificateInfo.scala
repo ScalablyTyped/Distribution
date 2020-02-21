@@ -15,6 +15,10 @@ trait CertificateInfo extends js.Object {
     */
   var CommonName: js.UndefOr[CertificateCN] = js.native
   /**
+    * The date and time when the certificate will expire.
+    */
+  var ExpiryDateTime: js.UndefOr[CertificateExpiryDateTime] = js.native
+  /**
     * The state of the certificate.
     */
   var State: js.UndefOr[CertificateState] = js.native
@@ -25,11 +29,13 @@ object CertificateInfo {
   def apply(
     CertificateId: CertificateId = null,
     CommonName: CertificateCN = null,
+    ExpiryDateTime: CertificateExpiryDateTime = null,
     State: CertificateState = null
   ): CertificateInfo = {
     val __obj = js.Dynamic.literal()
     if (CertificateId != null) __obj.updateDynamic("CertificateId")(CertificateId.asInstanceOf[js.Any])
     if (CommonName != null) __obj.updateDynamic("CommonName")(CommonName.asInstanceOf[js.Any])
+    if (ExpiryDateTime != null) __obj.updateDynamic("ExpiryDateTime")(ExpiryDateTime.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateInfo]
   }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.SHADER_FORWARDHDR
+  * @type {number}
   * @description Render shaded materials without gamma correction and tonemapping.
   */
 @JSImport("playcanvas", "SHADER_FORWARDHDR")

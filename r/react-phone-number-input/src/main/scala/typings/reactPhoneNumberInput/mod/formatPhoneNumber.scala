@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatPhoneNumber extends js.Object {
   def apply(value: String): String = js.native
-  def apply(value: String, format: NumberFormat): String = js.native
 }
 

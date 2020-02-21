@@ -27,15 +27,19 @@ trait CreateVolumeRequest extends js.Object {
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.native
   /**
+    * Specifies whether to enable Amazon EBS Multi-Attach. If you enable Multi-Attach, you can attach the volume to up to 16 Nitro-based instances in the same Availability Zone. For more information, see  Amazon EBS Multi-Attach in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var MultiAttachEnabled: js.UndefOr[Boolean] = js.native
+  /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
   var OutpostArn: js.UndefOr[String] = js.native
   /**
-    * The size of the volume, in GiBs. Constraints: 1-16,384 for gp2, 4-16,384 for io1, 500-16,384 for st1, 500-16,384 for sc1, and 1-1,024 for standard. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.  At least one of Size or SnapshotId is required. 
+    * The size of the volume, in GiBs. You must specify either a snapshot ID or a volume size. Constraints: 1-16,384 for gp2, 4-16,384 for io1, 500-16,384 for st1, 500-16,384 for sc1, and 1-1,024 for standard. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
     */
   var Size: js.UndefOr[Integer] = js.native
   /**
-    * The snapshot from which to create the volume.  At least one of Size or SnapshotId are required. 
+    * The snapshot from which to create the volume. You must specify either a snapshot ID or a volume size.
     */
   var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.native
   /**
@@ -56,6 +60,7 @@ object CreateVolumeRequest {
     Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Iops: Int | scala.Double = null,
     KmsKeyId: KmsKeyId = null,
+    MultiAttachEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     OutpostArn: String = null,
     Size: Int | scala.Double = null,
     SnapshotId: SnapshotId = null,
@@ -67,6 +72,7 @@ object CreateVolumeRequest {
     if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.asInstanceOf[js.Any])
     if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAttachEnabled)) __obj.updateDynamic("MultiAttachEnabled")(MultiAttachEnabled.asInstanceOf[js.Any])
     if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
     if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])

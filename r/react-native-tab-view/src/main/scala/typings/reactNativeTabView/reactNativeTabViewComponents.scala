@@ -1,6 +1,7 @@
 package typings.reactNativeTabView
 
 import typings.react.mod.ComponentType
+import typings.reactNativeTabView.pagerMod.Props
 import typings.reactNativeTabView.typesMod.Route
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,6 +12,9 @@ object reactNativeTabViewComponents extends reactNativeTabViewProps {
   def Pager[T /* <: Route */]: ComponentType[PagerProps[T]] = js.constructorOf[typings.reactNativeTabView.pagerMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[PagerProps[T]]]
   @scala.inline
   def SceneView[T /* <: Route */]: ComponentType[SceneViewProps[T]] = js.constructorOf[typings.reactNativeTabView.sceneViewMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[SceneViewProps[T]]]
+  @scala.inline
+  def ScrollPager[T /* <: Route */]: ComponentType[Props[T] with AnonOverscroll] = js.constructorOf[typings.reactNativeTabView.scrollPagerMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[
+  typings.reactNativeTabView.pagerMod.Props[T] with typings.reactNativeTabView.AnonOverscroll]]
   @scala.inline
   def TabBar[T /* <: Route */]: ComponentType[TabBarProps[T]] = js.constructorOf[typings.reactNativeTabView.tabBarMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[TabBarProps[T]]]
   @scala.inline

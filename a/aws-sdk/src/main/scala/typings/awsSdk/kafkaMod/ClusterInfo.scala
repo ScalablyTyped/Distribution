@@ -84,6 +84,7 @@ trait ClusterInfo extends js.Object {
     
     */
   var State: js.UndefOr[ClusterState] = js.native
+  var StateInfo: js.UndefOr[typings.awsSdk.kafkaMod.StateInfo] = js.native
   /**
     * 
     Tags attached to the cluster.
@@ -114,6 +115,7 @@ object ClusterInfo {
     NumberOfBrokerNodes: Int | Double = null,
     OpenMonitoring: OpenMonitoring = null,
     State: ClusterState = null,
+    StateInfo: StateInfo = null,
     Tags: mapOfString = null,
     ZookeeperConnectString: string = null
   ): ClusterInfo = {
@@ -131,6 +133,7 @@ object ClusterInfo {
     if (NumberOfBrokerNodes != null) __obj.updateDynamic("NumberOfBrokerNodes")(NumberOfBrokerNodes.asInstanceOf[js.Any])
     if (OpenMonitoring != null) __obj.updateDynamic("OpenMonitoring")(OpenMonitoring.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
+    if (StateInfo != null) __obj.updateDynamic("StateInfo")(StateInfo.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (ZookeeperConnectString != null) __obj.updateDynamic("ZookeeperConnectString")(ZookeeperConnectString.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterInfo]

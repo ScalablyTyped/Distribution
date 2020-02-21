@@ -1,6 +1,6 @@
 package typings.exceljs.mod.stream.xlsx
 
-import typings.exceljs.mod.Stream_
+import typings.node.streamMod.Stream
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object WorkbookStreamWriterOptions {
   @scala.inline
   def apply(
     filename: String,
-    stream: Stream_,
+    stream: Stream,
     useSharedStrings: Boolean,
     useStyles: Boolean,
     zip: Partial[ArchiverZipOptions]

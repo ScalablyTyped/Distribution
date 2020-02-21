@@ -9,7 +9,7 @@ trait SCBrokerServerOptions extends js.Object {
   var brokerControllerPath: js.UndefOr[String] = js.undefined
   var brokerOptions: js.UndefOr[SCBrokerOptions] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
-  var downgradeToUser: Double | String
+  var downgradeToUser: js.UndefOr[Double | String] = js.undefined
   var expiryAccuracy: js.UndefOr[Double] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inspect: js.UndefOr[Boolean] = js.undefined
@@ -24,10 +24,10 @@ trait SCBrokerServerOptions extends js.Object {
 object SCBrokerServerOptions {
   @scala.inline
   def apply(
-    downgradeToUser: Double | String,
     brokerControllerPath: String = null,
     brokerOptions: SCBrokerOptions = null,
     debug: js.UndefOr[Boolean] = js.undefined,
+    downgradeToUser: Double | String = null,
     expiryAccuracy: Int | Double = null,
     id: String = null,
     inspect: js.UndefOr[Boolean] = js.undefined,
@@ -38,10 +38,11 @@ object SCBrokerServerOptions {
     secretKey: String = null,
     socketPath: String = null
   ): SCBrokerServerOptions = {
-    val __obj = js.Dynamic.literal(downgradeToUser = downgradeToUser.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (brokerControllerPath != null) __obj.updateDynamic("brokerControllerPath")(brokerControllerPath.asInstanceOf[js.Any])
     if (brokerOptions != null) __obj.updateDynamic("brokerOptions")(brokerOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
+    if (downgradeToUser != null) __obj.updateDynamic("downgradeToUser")(downgradeToUser.asInstanceOf[js.Any])
     if (expiryAccuracy != null) __obj.updateDynamic("expiryAccuracy")(expiryAccuracy.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(inspect)) __obj.updateDynamic("inspect")(inspect.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ trait Termination extends js.Object {
     */
   var CidrAllowedList: js.UndefOr[StringList] = js.native
   /**
-    * The limit on calls per second. Max value based on account service limit. Default value of 1.
+    * The limit on calls per second. Max value based on account service quota. Default value of 1.
     */
   var CpsLimit: js.UndefOr[typings.awsSdk.chimeMod.CpsLimit] = js.native
   /**

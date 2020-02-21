@@ -47,6 +47,10 @@ trait JobUpdate extends js.Object {
     */
   var MaxRetries: js.UndefOr[typings.awsSdk.glueMod.MaxRetries] = js.native
   /**
+    * Non-overridable arguments for this job, specified as name-value pairs.
+    */
+  var NonOverridableArguments: js.UndefOr[GenericMap] = js.native
+  /**
     * Specifies the configuration properties of a job notification.
     */
   var NotificationProperty: js.UndefOr[typings.awsSdk.glueMod.NotificationProperty] = js.native
@@ -85,6 +89,7 @@ object JobUpdate {
     LogUri: UriString = null,
     MaxCapacity: Int | Double = null,
     MaxRetries: Int | Double = null,
+    NonOverridableArguments: GenericMap = null,
     NotificationProperty: NotificationProperty = null,
     NumberOfWorkers: Int | Double = null,
     Role: RoleString = null,
@@ -103,6 +108,7 @@ object JobUpdate {
     if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
     if (MaxCapacity != null) __obj.updateDynamic("MaxCapacity")(MaxCapacity.asInstanceOf[js.Any])
     if (MaxRetries != null) __obj.updateDynamic("MaxRetries")(MaxRetries.asInstanceOf[js.Any])
+    if (NonOverridableArguments != null) __obj.updateDynamic("NonOverridableArguments")(NonOverridableArguments.asInstanceOf[js.Any])
     if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
     if (NumberOfWorkers != null) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.asInstanceOf[js.Any])
     if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])

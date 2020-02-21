@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait TextDocument extends js.Object {
+trait TextDocument extends ConfigurationScope {
   /**
   		 * The [end of line](#EndOfLine) sequence that is predominately
   		 * used in this document.

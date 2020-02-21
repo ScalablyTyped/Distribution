@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TimeLineItemProps extends js.Object {
+  var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var dot: js.UndefOr[ReactNode] = js.undefined
@@ -19,6 +20,7 @@ trait TimeLineItemProps extends js.Object {
 object TimeLineItemProps {
   @scala.inline
   def apply(
+    children: ReactNode = null,
     className: String = null,
     color: String = null,
     dot: ReactNode = null,
@@ -28,6 +30,7 @@ object TimeLineItemProps {
     style: CSSProperties = null
   ): TimeLineItemProps = {
     val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])

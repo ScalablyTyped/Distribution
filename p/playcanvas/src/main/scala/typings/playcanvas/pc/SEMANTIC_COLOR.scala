@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
   * @name pc.SEMANTIC_COLOR
+  * @type {string}
   * @description Vertex attribute to be treated as a color.
   */
 @JSGlobal("pc.SEMANTIC_COLOR")

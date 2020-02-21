@@ -21,6 +21,7 @@ object rangeMod extends js.Object {
     extends Component[IProps, js.Object, js.Any] {
     @JSName("state")
     var state_Range: AnonDraggedThumbIndex = js.native
+    var thumbRefs: js.Array[RefObject[HTMLElement]] = js.native
     var trackRef: RefObject[HTMLElement] = js.native
     def addMouseEvents(e: MouseEvent): Unit = js.native
     def addTouchEvents(e: TouchEvent): Unit = js.native

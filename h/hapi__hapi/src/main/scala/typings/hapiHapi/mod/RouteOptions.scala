@@ -14,11 +14,6 @@ import scala.scalajs.js.annotation._
 
 trait RouteOptions extends CommonRouteProperties {
   /**
-    * Application-specific route configuration state. Should not be used by plugins which should use options.plugins[name] instead.
-    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsapp)
-    */
-  var app: js.UndefOr[RouteOptionsApp] = js.undefined
-  /**
     * Route authentication configuration. Value can be:
     * false to disable authentication if a default strategy is set.
     * a string with the name of an authentication strategy registered with server.auth.strategy(). The strategy will be set to 'required' mode.

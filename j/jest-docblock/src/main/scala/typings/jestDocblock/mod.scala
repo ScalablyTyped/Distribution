@@ -1,14 +1,18 @@
 package typings.jestDocblock
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-docblock", JSImport.Namespace)
+@JSImport("jest-docblock/build", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def extract(code: String): String = js.native
-  def parse(docblock: String): StringDictionary[String] = js.native
+  def extract(contents: String): String = js.native
+  def parse(docblock: String): Pragmas = js.native
+  def parseWithComments(docblock: String): AnonComments = js.native
+  def print(hasCommentsPragmas: AnonCommentsPragmas): String = js.native
+  def strip(contents: String): String = js.native
+  type Pragmas = Record[String, String | js.Array[String]]
 }
 

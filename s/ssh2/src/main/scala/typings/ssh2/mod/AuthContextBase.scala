@@ -2,7 +2,6 @@ package typings.ssh2.mod
 
 import typings.node.eventsMod.EventEmitter
 import typings.ssh2.ssh2Strings.abort
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +24,7 @@ trait AuthContextBase extends EventEmitter {
     * Emitted when the client aborts the authentication request.
     */
   @JSName("on")
-  def on_abort(event: abort, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def on_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
   /**
     * Rejects the authentication request.
     */

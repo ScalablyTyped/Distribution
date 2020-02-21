@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.STENCILOP_INCREMENTWRAP
+  * @type {number}
   * @description Increment the value, but wrap it to zero when it's larger than a maximum representable value.
   */
 @JSGlobal("pc.STENCILOP_INCREMENTWRAP")

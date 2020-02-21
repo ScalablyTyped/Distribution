@@ -1,15 +1,14 @@
 organization := "org.scalablytyped"
 name := "clui"
-version := "0.3-dt-20190319Z-4bca8a"
-scalaVersion := "2.12.10"
+version := "0.3-dt-20190319Z-a7a7e7"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cli-color" % "2.0-dt-20200110Z-555ab8",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "cli-color" % "2.0-dt-20200110Z-c978ce",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

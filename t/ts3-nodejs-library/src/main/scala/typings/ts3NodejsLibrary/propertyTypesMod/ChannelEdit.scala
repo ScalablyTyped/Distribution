@@ -9,7 +9,6 @@ trait ChannelEdit extends js.Object {
   var channel_codec: js.UndefOr[Codec] = js.undefined
   var channel_codec_is_unencrypted: js.UndefOr[Double] = js.undefined
   var channel_codec_quality: js.UndefOr[Double] = js.undefined
-  var channel_cpid: js.UndefOr[Double] = js.undefined
   var channel_description: js.UndefOr[String] = js.undefined
   var channel_flag_default: js.UndefOr[Double] = js.undefined
   var channel_flag_maxclients_unlimited: js.UndefOr[Double] = js.undefined
@@ -26,6 +25,7 @@ trait ChannelEdit extends js.Object {
   var channel_password: js.UndefOr[String] = js.undefined
   var channel_topic: js.UndefOr[String] = js.undefined
   var cid: js.UndefOr[Double] = js.undefined
+  var cpid: js.UndefOr[Double] = js.undefined
 }
 
 object ChannelEdit {
@@ -34,7 +34,6 @@ object ChannelEdit {
     channel_codec: Codec = null,
     channel_codec_is_unencrypted: Int | Double = null,
     channel_codec_quality: Int | Double = null,
-    channel_cpid: Int | Double = null,
     channel_description: String = null,
     channel_flag_default: Int | Double = null,
     channel_flag_maxclients_unlimited: Int | Double = null,
@@ -50,13 +49,13 @@ object ChannelEdit {
     channel_order: Int | Double = null,
     channel_password: String = null,
     channel_topic: String = null,
-    cid: Int | Double = null
+    cid: Int | Double = null,
+    cpid: Int | Double = null
   ): ChannelEdit = {
     val __obj = js.Dynamic.literal()
     if (channel_codec != null) __obj.updateDynamic("channel_codec")(channel_codec.asInstanceOf[js.Any])
     if (channel_codec_is_unencrypted != null) __obj.updateDynamic("channel_codec_is_unencrypted")(channel_codec_is_unencrypted.asInstanceOf[js.Any])
     if (channel_codec_quality != null) __obj.updateDynamic("channel_codec_quality")(channel_codec_quality.asInstanceOf[js.Any])
-    if (channel_cpid != null) __obj.updateDynamic("channel_cpid")(channel_cpid.asInstanceOf[js.Any])
     if (channel_description != null) __obj.updateDynamic("channel_description")(channel_description.asInstanceOf[js.Any])
     if (channel_flag_default != null) __obj.updateDynamic("channel_flag_default")(channel_flag_default.asInstanceOf[js.Any])
     if (channel_flag_maxclients_unlimited != null) __obj.updateDynamic("channel_flag_maxclients_unlimited")(channel_flag_maxclients_unlimited.asInstanceOf[js.Any])
@@ -73,6 +72,7 @@ object ChannelEdit {
     if (channel_password != null) __obj.updateDynamic("channel_password")(channel_password.asInstanceOf[js.Any])
     if (channel_topic != null) __obj.updateDynamic("channel_topic")(channel_topic.asInstanceOf[js.Any])
     if (cid != null) __obj.updateDynamic("cid")(cid.asInstanceOf[js.Any])
+    if (cpid != null) __obj.updateDynamic("cpid")(cpid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelEdit]
   }
 }

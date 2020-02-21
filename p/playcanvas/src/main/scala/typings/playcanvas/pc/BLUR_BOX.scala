@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLUR_BOX
+  * @type {number}
   * @description Box filter.
   */
 @JSGlobal("pc.BLUR_BOX")

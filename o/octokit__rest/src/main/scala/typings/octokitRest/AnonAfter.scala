@@ -1,8 +1,8 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.HookError
-import typings.octokitRest.mod.HookOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.HookError
+import typings.octokitRest.mod.Octokit.HookOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

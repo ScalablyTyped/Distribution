@@ -11,7 +11,7 @@ trait UseSortByColumnProps[D /* <: js.Object */] extends js.Object {
   var isSorted: Boolean = js.native
   var isSortedDesc: js.UndefOr[Boolean] = js.native
   var sortedIndex: Double = js.native
-  def clearSorting(): Unit = js.native
+  def clearSortBy(): Unit = js.native
   def getSortByToggleProps(): TableSortByToggleProps = js.native
   def getSortByToggleProps(props: Partial[TableSortByToggleProps]): TableSortByToggleProps = js.native
   def toggleSortBy(descending: Boolean, multi: Boolean): Unit = js.native

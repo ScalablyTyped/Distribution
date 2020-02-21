@@ -79,7 +79,7 @@ trait DBInstance extends js.Object {
     */
   var DbiResourceId: js.UndefOr[String] = js.native
   /**
-    * Indicates if the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. 
+    * Indicates whether or not the DB instance has deletion protection enabled. The instance can't be deleted when deletion protection is enabled. See Deleting a DB Instance.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
   /**

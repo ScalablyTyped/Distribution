@@ -15,8 +15,7 @@ trait GetMissionProfileResponse extends js.Object {
     */
   var contactPrePassDurationSeconds: js.UndefOr[DurationInSeconds] = js.native
   /**
-    * A list of lists of ARNs. Each list of ARNs is an edge, with a from Config and a to 
-    Config.
+    * A list of lists of ARNs. Each list of ARNs is an edge, with a from Config and a to Config.
     */
   var dataflowEdges: js.UndefOr[DataflowEdgeList] = js.native
   /**
@@ -28,7 +27,7 @@ trait GetMissionProfileResponse extends js.Object {
     */
   var missionProfileArn: js.UndefOr[MissionProfileArn] = js.native
   /**
-    * ID of a mission profile.
+    * UUID of a mission profile.
     */
   var missionProfileId: js.UndefOr[String] = js.native
   /**

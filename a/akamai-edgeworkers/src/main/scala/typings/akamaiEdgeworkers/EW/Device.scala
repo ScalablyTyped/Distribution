@@ -13,81 +13,81 @@ trait Device extends js.Object {
   /**
     * Indicates if the browser accepts third party cookies.
     */
-  var acceptsThirdPartyCookie: js.UndefOr[Boolean] = js.undefined
+  val acceptsThirdPartyCookie: js.UndefOr[Boolean] = js.undefined
   /**
     * Brand name of the device.
     */
-  var brandName: js.UndefOr[String] = js.undefined
+  val brandName: js.UndefOr[String] = js.undefined
   /**
     * Indicates if the device supports all of the following
     * JavaScript functions: "alert confirm access form elements
     * setTimeout setInterval and document.location"
     */
-  var hasAjaxSupport: js.UndefOr[Boolean] = js.undefined
+  val hasAjaxSupport: js.UndefOr[Boolean] = js.undefined
   /**
     * Indicates if the browser supports cookies.
     */
-  var hasCookieSupport: js.UndefOr[Boolean] = js.undefined
+  val hasCookieSupport: js.UndefOr[Boolean] = js.undefined
   /**
     * Indicates if the browser supports Flash.
     */
-  var hasFlashSupport: js.UndefOr[Boolean] = js.undefined
+  val hasFlashSupport: js.UndefOr[Boolean] = js.undefined
   /**
     * Indicates if the device is a mobile device.
     */
-  var isMobile: js.UndefOr[Boolean] = js.undefined
+  val isMobile: js.UndefOr[Boolean] = js.undefined
   /**
     * Indicates if the device is a tablet.
     */
-  var isTablet: js.UndefOr[Boolean] = js.undefined
+  val isTablet: js.UndefOr[Boolean] = js.undefined
   /**
     * Indicates if the device is a wireless device.
     */
-  var isWireless: js.UndefOr[Boolean] = js.undefined
+  val isWireless: js.UndefOr[Boolean] = js.undefined
   /**
     * Marketing name of the device.
     */
-  var marketingName: js.UndefOr[String] = js.undefined
+  val marketingName: js.UndefOr[String] = js.undefined
   /**
     * The mobile browser name.
     */
-  var mobileBrowser: js.UndefOr[String] = js.undefined
+  val mobileBrowser: js.UndefOr[String] = js.undefined
   /**
     * The mobile browser version.
     */
-  var mobileBrowserVersion: js.UndefOr[String] = js.undefined
+  val mobileBrowserVersion: js.UndefOr[String] = js.undefined
   /**
     * Model name of the device.
     */
-  var modelName: js.UndefOr[String] = js.undefined
+  val modelName: js.UndefOr[String] = js.undefined
   /**
     * The device operation system.
     */
-  var os: js.UndefOr[String] = js.undefined
+  val os: js.UndefOr[String] = js.undefined
   /**
     * The device operating system version.
     */
-  var osVersion: js.UndefOr[String] = js.undefined
+  val osVersion: js.UndefOr[String] = js.undefined
   /**
     * The physical screen height, in millimeters.
     */
-  var physicalScreenHeight: js.UndefOr[Double] = js.undefined
+  val physicalScreenHeight: js.UndefOr[Double] = js.undefined
   /**
     * The physical screen width, in millimeters.
     */
-  var physicalScreenWidth: js.UndefOr[Double] = js.undefined
+  val physicalScreenWidth: js.UndefOr[Double] = js.undefined
   /**
     * The screen resolution height, in pixels.
     */
-  var resolutionHeight: js.UndefOr[Double] = js.undefined
+  val resolutionHeight: js.UndefOr[Double] = js.undefined
   /**
     * The screen resolution width, in pixels.
     */
-  var resolutionWidth: js.UndefOr[Double] = js.undefined
+  val resolutionWidth: js.UndefOr[Double] = js.undefined
   /**
     * Indicates the level of support for XHTML.
     */
-  var xhtmlSupportLevel: js.UndefOr[Double] = js.undefined
+  val xhtmlSupportLevel: js.UndefOr[Double] = js.undefined
 }
 
 object Device {

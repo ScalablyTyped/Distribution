@@ -3,7 +3,7 @@
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
 [![Join the chat at https://gitter.im/ScalablyTyped/community](https://badges.gitter.im/ScalablyTyped/community.svg)](https://gitter.im/ScalablyTyped/community)
-[![Checkout the demos at https://github.com/oyvindberg/ScalablyTypedDemos/](https://img.shields.io/badge/Checkout-Demo-success.svg)](https://github.com/oyvindberg/ScalablyTypedDemos/)
+[![Checkout the demos at https://github.com/ScalablyTyped/ScalablyTypedDemos/](https://img.shields.io/badge/Checkout-Demo-success.svg)](https://github.com/oyvindberg/ScalablyTypedDemos/)
 [![All libraries by name](https://img.shields.io/badge/List%20of%20libraries-by%20name-green.svg)](./libraries_by_name.md)
 [![All libraries by dependents](https://img.shields.io/badge/List%20of%20libraries-by%20dependents-green.svg)](./libraries_by_dependents.md)
 [![All libraries by score](https://img.shields.io/badge/List%20of%20libraries-by%20score-green.svg)](./libraries_by_score.md)
@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **8315** Javascript libraries,
+This is the home of Scala.js typings for **8416** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               363490     15397190      1519385      3698612     10179193
- Markdown              8480       302043       100268            0       201775
+ Scala               369800     15621080      1547412      3720654     10353014
+ Markdown              8588       305672       101558            0       204114
  JSON                     9           90            0            0           90
  Makefile                 5           69           16            0           53
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               371985     15699398      1619669      3698612     10381117
+ Total               378403     15926917      1648986      3720654     10557277
 --------------------------------------------------------------------------------
 
 ```
@@ -88,7 +88,7 @@ We recommend using sbt with [scalajs-bundler](https://scalacenter.github.io/scal
 and the ScalablyTyped plugin to easily keep versions in sync (more on versions below).
 
 To see full examples head over and check out the
-[demos](https://github.com/oyvindberg/ScalablyTypedDemos)!
+[demos](https://github.com/ScalablyTyped/ScalablyTypedDemos)!
 
 There are demos both for frontend and backend javascript libraries,
  so feel free to check it out to see how it all fits together!
@@ -100,6 +100,8 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202002201029")
+  If you're still on 2.12, this is the last distribution release.
   addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202001240947")
 ```
 
@@ -779,6 +781,6 @@ The converter has some internal support for detecting this,
 but we haven't experimented with outputting anything yet.
 That means that you have to detect this yourself and cast.
 Have a look at the `jquery`/`jquery-ui`
-[demo](https://github.com/oyvindberg/ScalablyTypedDemos/blob/master/jquery/src/main/scala/demo/JQueryDemo.scala)
+[demo](https://github.com/ScalablyTyped/ScalablyTypedDemos/blob/master/jquery/src/main/scala/demo/JQueryDemo.scala)
 to see how it's done.
 

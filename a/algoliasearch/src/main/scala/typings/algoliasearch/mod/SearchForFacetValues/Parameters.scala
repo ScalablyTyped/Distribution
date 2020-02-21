@@ -97,7 +97,7 @@ object Parameters {
     sortFacetValuesBy: count | alpha = null,
     sumOrFiltersScores: js.UndefOr[Boolean] = js.undefined,
     synonyms: js.UndefOr[Boolean] = js.undefined,
-    tagFilters: js.Array[String] = null,
+    tagFilters: js.Array[String | js.Array[String]] = null,
     typoTolerance: Boolean | min | strict = null,
     userData: String | js.Object = null,
     userToken: String = null

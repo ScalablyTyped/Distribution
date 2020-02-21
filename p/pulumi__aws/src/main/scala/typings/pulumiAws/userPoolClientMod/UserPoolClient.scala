@@ -46,7 +46,7 @@ class UserPoolClient protected () extends CustomResource {
     */
   val defaultRedirectUri: Output_[js.UndefOr[String]] = js.native
   /**
-    * List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY, USER_PASSWORD_AUTH).
+    * List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY,  USER_PASSWORD_AUTH, ALLOW_ADMIN_USER_PASSWORD_AUTH, ALLOW_CUSTOM_AUTH, ALLOW_USER_PASSWORD_AUTH, ALLOW_USER_SRP_AUTH, ALLOW_REFRESH_TOKEN_AUTH).
     */
   val explicitAuthFlows: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**

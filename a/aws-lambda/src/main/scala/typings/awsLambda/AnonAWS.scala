@@ -3,7 +3,7 @@ package typings.awsLambda
 import typings.awsLambda.awsLambdaStrings.AWS
 import typings.awsLambda.awsLambdaStrings.Custom
 import typings.awsLambda.awsLambdaStrings.ThirdParty
-import typings.awsLambda.mod.CodePipelineActionCategory
+import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

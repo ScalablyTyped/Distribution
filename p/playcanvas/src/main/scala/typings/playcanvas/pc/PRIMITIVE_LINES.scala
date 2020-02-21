@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PRIMITIVE_LINES
+  * @type {number}
   * @description Discrete list of line segments.
   */
 @JSGlobal("pc.PRIMITIVE_LINES")

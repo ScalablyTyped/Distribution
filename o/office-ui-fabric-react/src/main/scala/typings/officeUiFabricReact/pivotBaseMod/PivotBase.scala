@@ -1,14 +1,15 @@
 package typings.officeUiFabricReact.pivotBaseMod
 
 import typings.officeUiFabricReact.pivotTypesMod.IPivotProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/Pivot/Pivot.base", "PivotBase")
 @js.native
-class PivotBase protected () extends BaseComponent[IPivotProps, IPivotState] {
+class PivotBase protected ()
+  extends Component[IPivotProps, IPivotState, js.Any] {
   def this(props: IPivotProps) = this()
   var _classNames: js.Any = js.native
   var _focusZone: js.Any = js.native

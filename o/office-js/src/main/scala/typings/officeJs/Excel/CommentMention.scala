@@ -20,7 +20,7 @@ trait CommentMention extends js.Object {
   var email: String
   /**
     *
-    * Gets or sets the id of the entity. This matches one of the ids in `CommentRichContent.richContent`.
+    * Gets or sets the id of the entity. The id matches one of the ids in `CommentRichContent.richContent`.
     *
     * [Api set: ExcelApiOnline 1.1]
     */

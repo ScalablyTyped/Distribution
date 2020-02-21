@@ -121,6 +121,7 @@ class jsPlumbInstance () extends js.Object {
   def getTargetScope(element: String): String = js.native
   def getTargetScope(element: Element): String = js.native
   def getType(id: String, typeDescriptor: String): js.Object = js.native
+  def getZoom(): Double = js.native
   def hide(el: Selector | String): jsPlumbInstance = js.native
   def hide(el: Selector | String, changeEndpoints: Boolean): jsPlumbInstance = js.native
   def hide(el: Element): jsPlumbInstance = js.native
@@ -266,6 +267,8 @@ class jsPlumbInstance () extends js.Object {
   def setTargetScope(el: String, scope: String, connectionType: String): Unit = js.native
   def setTargetScope(el: Element, scope: String): Unit = js.native
   def setTargetScope(el: Element, scope: String, connectionType: String): Unit = js.native
+  def setZoom(`val`: Double): Boolean = js.native
+  def setZoom(`val`: Double, repaintEverything: Boolean): Boolean = js.native
   def show(el: Selector | String): jsPlumbInstance = js.native
   def show(el: Selector | String, changeEndpoints: Boolean): jsPlumbInstance = js.native
   def show(el: Element): jsPlumbInstance = js.native

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 trait ChartPlotArea extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var border: js.UndefOr[ChartPlotAreaBorder] = js.undefined
-  var margin: js.UndefOr[ChartPlotAreaMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartPlotAreaMargin] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
-  var padding: js.UndefOr[ChartPlotAreaPadding] = js.undefined
+  var padding: js.UndefOr[Double | ChartPlotAreaPadding] = js.undefined
 }
 
 object ChartPlotArea {
@@ -17,9 +17,9 @@ object ChartPlotArea {
   def apply(
     background: String = null,
     border: ChartPlotAreaBorder = null,
-    margin: ChartPlotAreaMargin = null,
+    margin: Double | ChartPlotAreaMargin = null,
     opacity: Int | Double = null,
-    padding: ChartPlotAreaPadding = null
+    padding: Double | ChartPlotAreaPadding = null
   ): ChartPlotArea = {
     val __obj = js.Dynamic.literal()
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])

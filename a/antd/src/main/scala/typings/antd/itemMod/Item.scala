@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait Item
   extends Component[ListItemProps, js.Any, js.Any] {
   def isFlexMode(): Boolean = js.native
-  def isItemContainsTextNode(): js.UndefOr[scala.Nothing] = js.native
+  def isItemContainsTextNodeAndNotSingular(): js.UndefOr[scala.Nothing] = js.native
   def renderItem(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
 }
 

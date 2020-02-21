@@ -5,6 +5,8 @@ import typings.queryString.queryStringStrings.bracket
 import typings.queryString.queryStringStrings.comma
 import typings.queryString.queryStringStrings.index
 import typings.queryString.queryStringStrings.none
+import typings.queryString.queryStringStrings.separator
+import typings.queryString.queryStringStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,6 +32,12 @@ trait StringifyOptions extends js.Object {
   		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
   		//=> 'foo=1,2,3'
   		```
+    - `separator`: Serialize arrays by separating elements with character:
+  		```
+  		import queryString = require('query-string');
+  		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'separator', arrayFormatSeparator: '|'});
+  		//=> 'foo=1|2|3'
+  		```
   	- `none`: Serialize arrays by using duplicate keys:
   		```
   		import queryString = require('query-string');
@@ -37,7 +45,12 @@ trait StringifyOptions extends js.Object {
   		//=> 'foo=1&foo=2&foo=3'
   		```
   	*/
-  val arrayFormat: js.UndefOr[bracket | index | comma | none] = js.undefined
+  val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
+  /**
+  	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
+  	@default ,
+  	*/
+  val arrayFormatSeparator: js.UndefOr[string] = js.undefined
   /**
   	[URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
   	@default true
@@ -92,7 +105,8 @@ trait StringifyOptions extends js.Object {
 object StringifyOptions {
   @scala.inline
   def apply(
-    arrayFormat: bracket | index | comma | none = null,
+    arrayFormat: bracket | index | comma | separator | none = null,
+    arrayFormatSeparator: string = null,
     encode: js.UndefOr[Boolean] = js.undefined,
     skipNull: js.UndefOr[Boolean] = js.undefined,
     sort: (js.Function2[/* itemLeft */ String, /* itemRight */ String, Double]) | `false` = null,
@@ -100,6 +114,7 @@ object StringifyOptions {
   ): StringifyOptions = {
     val __obj = js.Dynamic.literal()
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
+    if (arrayFormatSeparator != null) __obj.updateDynamic("arrayFormatSeparator")(arrayFormatSeparator.asInstanceOf[js.Any])
     if (!js.isUndefined(encode)) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
     if (!js.isUndefined(skipNull)) __obj.updateDynamic("skipNull")(skipNull.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])

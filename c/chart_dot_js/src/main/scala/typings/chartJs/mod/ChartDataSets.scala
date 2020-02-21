@@ -44,6 +44,7 @@ trait ChartDataSets extends js.Object {
   var lineTension: js.UndefOr[Double] = js.undefined
   var maxBarThickness: js.UndefOr[Double] = js.undefined
   var minBarLength: js.UndefOr[Double] = js.undefined
+  var order: js.UndefOr[Double] = js.undefined
   var pointBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   var pointBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   var pointBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
@@ -98,6 +99,7 @@ object ChartDataSets {
     lineTension: Int | Double = null,
     maxBarThickness: Int | Double = null,
     minBarLength: Int | Double = null,
+    order: Int | Double = null,
     pointBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     pointBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     pointBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
@@ -147,6 +149,7 @@ object ChartDataSets {
     if (lineTension != null) __obj.updateDynamic("lineTension")(lineTension.asInstanceOf[js.Any])
     if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])
     if (minBarLength != null) __obj.updateDynamic("minBarLength")(minBarLength.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     if (pointBackgroundColor != null) __obj.updateDynamic("pointBackgroundColor")(pointBackgroundColor.asInstanceOf[js.Any])
     if (pointBorderColor != null) __obj.updateDynamic("pointBorderColor")(pointBorderColor.asInstanceOf[js.Any])
     if (pointBorderWidth != null) __obj.updateDynamic("pointBorderWidth")(pointBorderWidth.asInstanceOf[js.Any])

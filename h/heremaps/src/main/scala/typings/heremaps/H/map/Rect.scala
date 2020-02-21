@@ -13,15 +13,15 @@ import scala.scalajs.js.annotation._
 class Rect protected () extends Polygon {
   /**
     * Constructor
-    * @param bounds {H.geo.Rect} - The geographical bounding box for this rectangle
+    * @param boundingBox {H.geo.Rect} - The geographical bounding box for this rectangle
     * @param opt_options {H.map.Spatial.Options=}
     */
-  def this(bounds: typings.heremaps.H.geo.Rect) = this()
-  def this(bounds: typings.heremaps.H.geo.Rect, opt_options: Options) = this()
+  def this(boundingBox: typings.heremaps.H.geo.Rect) = this()
+  def this(boundingBox: typings.heremaps.H.geo.Rect, opt_options: Options) = this()
   /**
     * To set the bounds of this rectangle.
     * @param bounds {H.geo.Rect}
     */
-  def setBounds(bounds: typings.heremaps.H.geo.Rect): Unit = js.native
+  def setBoundingBox(bounds: typings.heremaps.H.geo.Rect): Unit = js.native
 }
 

@@ -11,13 +11,15 @@ object createSwitchNavigator extends js.Object {
   def apply(
     routeConfigMap: NavigationRouteConfigMap[
       js.Object, 
-      NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams]
+      NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
+      _
     ]
   ): NavigationNavigator[js.Object, NavigationProp[NavigationState]] = js.native
   def apply(
     routeConfigMap: NavigationRouteConfigMap[
       js.Object, 
-      NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams]
+      NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
+      _
     ],
     switchConfig: CreateNavigatorConfigNavigationSwitchRouterConfigN
   ): NavigationNavigator[js.Object, NavigationProp[NavigationState]] = js.native

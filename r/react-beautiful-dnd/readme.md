@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-beautiful-dnd
 
-Typings are for version 11.0
+Typings are for version 12.1
 
 ## Library description:
 Beautiful and accessible drag and drop for lists with React

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @JSImport("stream", "Writable")
 @js.native
 class Writable ()
-  extends internal
+  extends Stream
      with WritableStream {
   def this(opts: WritableOptions) = this()
   var _writev: js.UndefOr[

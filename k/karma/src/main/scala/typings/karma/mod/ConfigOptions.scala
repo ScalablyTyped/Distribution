@@ -237,6 +237,12 @@ trait ConfigOptions extends js.Object {
     */
   var reporters: js.UndefOr[js.Array[String]] = js.undefined
   /**
+    * When Karma is watching the files for changes, it will delay a new run
+    * until the current run is finished. Enabling this setting
+    * will cancel the current run and start a new run immediately when a change is detected.
+    */
+  var restartOnFileChange: js.UndefOr[Boolean] = js.undefined
+  /**
     * @default false
     * @description Continuous Integration mode.
     * If true, Karma will start and capture all configured browsers, run tests and then exit with an exit code of 0 or 1 depending
@@ -291,6 +297,7 @@ object ConfigOptions {
     proxyValidateSSL: js.UndefOr[Boolean] = js.undefined,
     reportSlowerThan: Int | Double = null,
     reporters: js.Array[String] = null,
+    restartOnFileChange: js.UndefOr[Boolean] = js.undefined,
     singleRun: js.UndefOr[Boolean] = js.undefined,
     transports: js.Array[String] = null,
     urlRoot: String = null
@@ -325,6 +332,7 @@ object ConfigOptions {
     if (!js.isUndefined(proxyValidateSSL)) __obj.updateDynamic("proxyValidateSSL")(proxyValidateSSL.asInstanceOf[js.Any])
     if (reportSlowerThan != null) __obj.updateDynamic("reportSlowerThan")(reportSlowerThan.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
+    if (!js.isUndefined(restartOnFileChange)) __obj.updateDynamic("restartOnFileChange")(restartOnFileChange.asInstanceOf[js.Any])
     if (!js.isUndefined(singleRun)) __obj.updateDynamic("singleRun")(singleRun.asInstanceOf[js.Any])
     if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
     if (urlRoot != null) __obj.updateDynamic("urlRoot")(urlRoot.asInstanceOf[js.Any])

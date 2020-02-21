@@ -1,6 +1,6 @@
 package typings.secp256k1.mod
 
-import typings.node.Buffer
+import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +11,16 @@ trait SignOptions extends js.Object {
     *
     * By default is `null`.
     */
-  var data: js.UndefOr[Buffer] = js.undefined
+  var data: js.UndefOr[Uint8Array] = js.undefined
   /** Nonce generator. By default it is rfc6979 */
   var noncefn: js.UndefOr[
     js.Function5[
-      /* message */ Buffer, 
-      /* privateKey */ Buffer, 
-      /* algo */ Buffer | Null, 
-      /* data */ Buffer | Null, 
+      /* message */ Uint8Array, 
+      /* privateKey */ Uint8Array, 
+      /* algo */ Uint8Array | Null, 
+      /* data */ Uint8Array | Null, 
       /* attempt */ Double, 
-      Buffer
+      Uint8Array
     ]
   ] = js.undefined
 }
@@ -28,8 +28,8 @@ trait SignOptions extends js.Object {
 object SignOptions {
   @scala.inline
   def apply(
-    data: Buffer = null,
-    noncefn: (/* message */ Buffer, /* privateKey */ Buffer, /* algo */ Buffer | Null, /* data */ Buffer | Null, /* attempt */ Double) => Buffer = null
+    data: Uint8Array = null,
+    noncefn: (/* message */ Uint8Array, /* privateKey */ Uint8Array, /* algo */ Uint8Array | Null, /* data */ Uint8Array | Null, /* attempt */ Double) => Uint8Array = null
   ): SignOptions = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])

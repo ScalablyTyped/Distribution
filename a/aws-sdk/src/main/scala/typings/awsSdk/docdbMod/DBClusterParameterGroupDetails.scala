@@ -11,7 +11,7 @@ trait DBClusterParameterGroupDetails extends js.Object {
     */
   var Marker: js.UndefOr[String] = js.native
   /**
-    * Provides a list of parameters for the DB cluster parameter group.
+    * Provides a list of parameters for the cluster parameter group.
     */
   var Parameters: js.UndefOr[ParametersList] = js.native
 }

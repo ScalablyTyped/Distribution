@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait OutputResources extends js.Object {
   /**
-    *  The EC2 AMIs created by this image. 
+    * The EC2 AMIs created by this image. 
     */
   var amis: js.UndefOr[AmiList] = js.native
 }

@@ -1,6 +1,6 @@
 package typings.relayCompiler
 
-import typings.relayCompiler.graphQLCompilerContextMod.GraphQLCompilerContext
+import typings.relayCompiler.compilerContextMod.CompilerContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object matchTransformMod extends js.Object {
     * This transform rewrites LinkedField nodes with @match and rewrites them
     * into `LinkedField` nodes with a `supported` argument.
     */
-  def transform(context: GraphQLCompilerContext): GraphQLCompilerContext = js.native
+  def transform(context: CompilerContext): CompilerContext = js.native
 }
 

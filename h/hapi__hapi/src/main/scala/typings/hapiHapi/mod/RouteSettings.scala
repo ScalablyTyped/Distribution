@@ -19,6 +19,7 @@ trait RouteSettings extends CommonRouteProperties {
 object RouteSettings {
   @scala.inline
   def apply(
+    app: RouteOptionsApp = null,
     auth: AuthSettings = null,
     bind: js.Object = null,
     cache: `false` | RouteOptionsCache = null,
@@ -47,6 +48,7 @@ object RouteSettings {
     validate: RouteOptionsValidate = null
   ): RouteSettings = {
     val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
     if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])

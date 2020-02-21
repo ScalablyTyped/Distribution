@@ -4,6 +4,7 @@ import typings.react.mod.ReactElement
 import typings.victory.AnonActive
 import typings.victory.AnonDataEndAngle
 import typings.victory.AnonXY
+import typings.victory.AnonXYBoolean
 import typings.victory.AnonXYD3ScaleScalePropType
 import typings.victory.victoryStrings.cornerRadius
 import typings.victory.victoryStrings.padAngle
@@ -101,6 +102,7 @@ object VictorySliceProps {
     pathFunction: /* props */ VictorySliceProps => String = null,
     radius: SliceNumberOrCallback[VictorySliceProps, radius] = null,
     scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
+    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
     sliceEndAngle: SliceNumberOrCallback[VictorySliceProps, sliceEndAngle] = null,
     sliceStartAngle: SliceNumberOrCallback[VictorySliceProps, sliceStartAngle] = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
@@ -125,6 +127,7 @@ object VictorySliceProps {
     if (pathFunction != null) __obj.updateDynamic("pathFunction")(js.Any.fromFunction1(pathFunction))
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
     if (sliceEndAngle != null) __obj.updateDynamic("sliceEndAngle")(sliceEndAngle.asInstanceOf[js.Any])
     if (sliceStartAngle != null) __obj.updateDynamic("sliceStartAngle")(sliceStartAngle.asInstanceOf[js.Any])
     if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])

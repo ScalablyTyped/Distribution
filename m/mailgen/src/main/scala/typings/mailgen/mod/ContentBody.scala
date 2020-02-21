@@ -13,7 +13,7 @@ trait ContentBody extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var outro: js.UndefOr[String | js.Array[String]] = js.undefined
   var signature: js.UndefOr[String] = js.undefined
-  var table: js.UndefOr[Table] = js.undefined
+  var table: js.UndefOr[Table | js.Array[Table]] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
 
@@ -28,7 +28,7 @@ object ContentBody {
     name: String = null,
     outro: String | js.Array[String] = null,
     signature: String = null,
-    table: Table = null,
+    table: Table | js.Array[Table] = null,
     title: String = null
   ): ContentBody = {
     val __obj = js.Dynamic.literal()

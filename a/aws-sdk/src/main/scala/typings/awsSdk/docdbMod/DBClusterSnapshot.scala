@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBClusterSnapshot extends js.Object {
   /**
-    * Provides the list of Amazon EC2 Availability Zones that instances in the DB cluster snapshot can be restored in.
+    * Provides the list of Amazon EC2 Availability Zones that instances in the cluster snapshot can be restored in.
     */
   var AvailabilityZones: js.UndefOr[typings.awsSdk.docdbMod.AvailabilityZones] = js.native
   /**
-    * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
+    * Specifies the time when the cluster was created, in Universal Coordinated Time (UTC).
     */
   var ClusterCreateTime: js.UndefOr[TStamp] = js.native
   /**
-    * Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from.
+    * Specifies the cluster identifier of the cluster that this cluster snapshot was created from.
     */
   var DBClusterIdentifier: js.UndefOr[String] = js.native
   /**
-    * The Amazon Resource Name (ARN) for the DB cluster snapshot.
+    * The Amazon Resource Name (ARN) for the cluster snapshot.
     */
   var DBClusterSnapshotArn: js.UndefOr[String] = js.native
   /**
-    * Specifies the identifier for the DB cluster snapshot.
+    * Specifies the identifier for the cluster snapshot.
     */
   var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.native
   /**
@@ -31,15 +31,15 @@ trait DBClusterSnapshot extends js.Object {
     */
   var Engine: js.UndefOr[String] = js.native
   /**
-    * Provides the version of the database engine for this DB cluster snapshot.
+    * Provides the version of the database engine for this cluster snapshot.
     */
   var EngineVersion: js.UndefOr[String] = js.native
   /**
-    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
+    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted cluster snapshot.
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
-    * Provides the master user name for the DB cluster snapshot.
+    * Provides the master user name for the cluster snapshot.
     */
   var MasterUsername: js.UndefOr[String] = js.native
   /**
@@ -47,7 +47,7 @@ trait DBClusterSnapshot extends js.Object {
     */
   var PercentProgress: js.UndefOr[Integer] = js.native
   /**
-    * Specifies the port that the DB cluster was listening on at the time of the snapshot.
+    * Specifies the port that the cluster was listening on at the time of the snapshot.
     */
   var Port: js.UndefOr[Integer] = js.native
   /**
@@ -55,23 +55,23 @@ trait DBClusterSnapshot extends js.Object {
     */
   var SnapshotCreateTime: js.UndefOr[TStamp] = js.native
   /**
-    * Provides the type of the DB cluster snapshot.
+    * Provides the type of the cluster snapshot.
     */
   var SnapshotType: js.UndefOr[String] = js.native
   /**
-    * If the DB cluster snapshot was copied from a source DB cluster snapshot, the ARN for the source DB cluster snapshot; otherwise, a null value.
+    * If the cluster snapshot was copied from a source cluster snapshot, the ARN for the source cluster snapshot; otherwise, a null value.
     */
   var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.native
   /**
-    * Specifies the status of this DB cluster snapshot.
+    * Specifies the status of this cluster snapshot.
     */
   var Status: js.UndefOr[String] = js.native
   /**
-    * Specifies whether the DB cluster snapshot is encrypted.
+    * Specifies whether the cluster snapshot is encrypted.
     */
   var StorageEncrypted: js.UndefOr[Boolean] = js.native
   /**
-    * Provides the virtual private cloud (VPC) ID that is associated with the DB cluster snapshot.
+    * Provides the virtual private cloud (VPC) ID that is associated with the cluster snapshot.
     */
   var VpcId: js.UndefOr[String] = js.native
 }

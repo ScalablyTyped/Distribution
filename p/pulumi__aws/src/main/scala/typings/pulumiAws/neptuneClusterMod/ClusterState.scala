@@ -40,6 +40,11 @@ trait ClusterState extends js.Object {
     * The Neptune Cluster Resource ID
     */
   val clusterResourceId: js.UndefOr[Input[String]] = js.native
+  val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * A list of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports `audit`.
+    */
+  val enableCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The DNS address of the Neptune instance
     */
@@ -133,6 +138,8 @@ object ClusterState {
     clusterIdentifierPrefix: Input[String] = null,
     clusterMembers: Input[js.Array[Input[String]]] = null,
     clusterResourceId: Input[String] = null,
+    deletionProtection: Input[Boolean] = null,
+    enableCloudwatchLogsExports: Input[js.Array[Input[String]]] = null,
     endpoint: Input[String] = null,
     engine: Input[String] = null,
     engineVersion: Input[String] = null,
@@ -163,6 +170,8 @@ object ClusterState {
     if (clusterIdentifierPrefix != null) __obj.updateDynamic("clusterIdentifierPrefix")(clusterIdentifierPrefix.asInstanceOf[js.Any])
     if (clusterMembers != null) __obj.updateDynamic("clusterMembers")(clusterMembers.asInstanceOf[js.Any])
     if (clusterResourceId != null) __obj.updateDynamic("clusterResourceId")(clusterResourceId.asInstanceOf[js.Any])
+    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
+    if (enableCloudwatchLogsExports != null) __obj.updateDynamic("enableCloudwatchLogsExports")(enableCloudwatchLogsExports.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
     if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])

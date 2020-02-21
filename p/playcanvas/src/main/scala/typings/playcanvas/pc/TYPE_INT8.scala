@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TYPE_INT8
+  * @type {number}
   * @description Signed byte vertex element type.
   */
 @JSGlobal("pc.TYPE_INT8")

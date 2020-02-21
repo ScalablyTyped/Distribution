@@ -15,7 +15,7 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var CompanyName: js.UndefOr[StringFilterList] = js.native
   /**
-    * Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard (for example, CIS AWS Foundations). Contains compliance-related finding details.
+    * Exclusive to findings that are generated as the result of a check run against a specific rule in a supported standard, such as CIS AWS Foundations. Contains compliance-related finding details.
     */
   var ComplianceStatus: js.UndefOr[StringFilterList] = js.native
   /**
@@ -199,7 +199,7 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var ResourceAwsEc2InstanceKeyName: js.UndefOr[StringFilterList] = js.native
   /**
-    * The date/time the instance was launched.
+    * The date and time the instance was launched.
     */
   var ResourceAwsEc2InstanceLaunchedAt: js.UndefOr[DateFilterList] = js.native
   /**
@@ -291,27 +291,27 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var SourceUrl: js.UndefOr[StringFilterList] = js.native
   /**
-    * The category of a threat intel indicator.
+    * The category of a threat intelligence indicator.
     */
   var ThreatIntelIndicatorCategory: js.UndefOr[StringFilterList] = js.native
   /**
-    * The date/time of the last observation of a threat intel indicator.
+    * The date/time of the last observation of a threat intelligence indicator.
     */
   var ThreatIntelIndicatorLastObservedAt: js.UndefOr[DateFilterList] = js.native
   /**
-    * The source of the threat intel.
+    * The source of the threat intelligence.
     */
   var ThreatIntelIndicatorSource: js.UndefOr[StringFilterList] = js.native
   /**
-    * The URL for more details from the source of the threat intel.
+    * The URL for more details from the source of the threat intelligence.
     */
   var ThreatIntelIndicatorSourceUrl: js.UndefOr[StringFilterList] = js.native
   /**
-    * The type of a threat intel indicator.
+    * The type of a threat intelligence indicator.
     */
   var ThreatIntelIndicatorType: js.UndefOr[StringFilterList] = js.native
   /**
-    * The value of a threat intel indicator.
+    * The value of a threat intelligence indicator.
     */
   var ThreatIntelIndicatorValue: js.UndefOr[StringFilterList] = js.native
   /**

@@ -1,14 +1,14 @@
 package typings.send.mod
 
 import typings.node.fsMod.Stats
-import typings.node.streamMod.internal
+import typings.node.streamMod.Stream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SendStream extends internal {
+trait SendStream extends Stream {
   /**
     * Emit error with `status`.
     * @private

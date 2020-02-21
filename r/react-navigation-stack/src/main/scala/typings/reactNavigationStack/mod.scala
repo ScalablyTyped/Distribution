@@ -84,10 +84,10 @@ object mod extends js.Object {
   ): js.Array[Scene] = js.native
   def createPointerEventsContainer[Props /* <: InjectedPropsInputProps */](Component: ComponentType[Props]): ComponentType[Pick[Props, Exclude[String, String]]] = js.native
   def createStackNavigator(
-    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _]]
+    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _], _]
   ): js.Any = js.native
   def createStackNavigator(
-    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _]],
+    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _], _],
     stackConfig: CreateNavigatorConfigNavigationStackConfigNavigati
   ): js.Any = js.native
   @js.native

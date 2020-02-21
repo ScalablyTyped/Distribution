@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PARTICLESORT_NONE
+  * @type {number}
   * @description No sorting, particles are drawn in arbitary order. Can be simulated on GPU.
   */
 @JSImport("playcanvas", "PARTICLESORT_NONE")

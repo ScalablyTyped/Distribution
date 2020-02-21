@@ -10,9 +10,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * Interfaces and instance classes for types from the Mendix sub meta model `Settings`.
-  */
 @JSImport("mendixmodelsdk/dist/gen/settings", "settings.Certificate")
 @js.native
 class Certificate protected () extends Element {

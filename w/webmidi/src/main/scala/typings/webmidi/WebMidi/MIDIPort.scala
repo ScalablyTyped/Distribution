@@ -1,6 +1,8 @@
 package typings.webmidi.WebMidi
 
+import typings.std.AddEventListenerOptions
 import typings.std.EventTarget
+import typings.webmidi.webmidiStrings.statechange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,6 +39,23 @@ trait MIDIPort extends EventTarget {
     * The version of the port.
     */
   var version: js.UndefOr[String] = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   /**
     * Makes the MIDI device corresponding to the MIDIPort
     * explicitly unavailable (subsequently changing the state from "open" to

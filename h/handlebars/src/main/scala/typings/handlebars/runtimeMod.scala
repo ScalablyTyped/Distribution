@@ -32,6 +32,7 @@ object runtimeMod extends js.Object {
   class Visitor ()
     extends typings.handlebars.Handlebars.Visitor
   
+  val VERSION: String = js.native
   val escapeExpression: js.Function1[/* str */ String, String] = js.native
   val logger: Logger = js.native
   val templates: HandlebarsTemplates = js.native

@@ -238,7 +238,8 @@ trait Request[P /* <: Params */, ResBody, ReqBody]
     *      req.is('html');
     *      // => false
     */
-  def is(`type`: String): String | `false` = js.native
+  def is(`type`: String): String | `false` | Null = js.native
+  def is(`type`: js.Array[String]): String | `false` | Null = js.native
   /**
     * @deprecated since 4.11 Use either req.params, req.body or req.query, as applicable.
     *

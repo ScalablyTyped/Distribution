@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.STENCILOP_KEEP
+  * @type {number}
   * @description Don't change the stencil buffer value.
   */
 @JSGlobal("pc.STENCILOP_KEEP")

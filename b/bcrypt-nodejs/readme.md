@@ -1,6 +1,7 @@
 
 # Scala.js typings for bcrypt-nodejs
 
+Typings are for version 0.0
 
 ## Library description:
 A native JS bcrypt library for NodeJS.

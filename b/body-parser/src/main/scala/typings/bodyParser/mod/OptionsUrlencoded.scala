@@ -8,7 +8,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OptionsUrlencoded extends Options {
+  /**
+    * The extended option allows to choose between parsing the URL-encoded data
+    * with the querystring library (when `false`) or the qs library (when `true`).
+    */
   var extended: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The parameterLimit option controls the maximum number of parameters
+    * that are allowed in the URL-encoded data. If a request contains more parameters than this value,
+    * a 413 will be returned to the client. Defaults to 1000.
+    */
   var parameterLimit: js.UndefOr[Double] = js.undefined
 }
 

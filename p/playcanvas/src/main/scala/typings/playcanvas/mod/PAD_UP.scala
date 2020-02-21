@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_UP
-  * @description Direction pad up
+  * @description Direction pad up.
   */
 @JSImport("playcanvas", "PAD_UP")
 @js.native

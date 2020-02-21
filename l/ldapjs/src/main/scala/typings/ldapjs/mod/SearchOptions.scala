@@ -1,17 +1,25 @@
 package typings.ldapjs.mod
 
 import typings.ldapjs.AnonPagePause
+import typings.ldapjs.ldapjsStrings.base
+import typings.ldapjs.ldapjsStrings.one
+import typings.ldapjs.ldapjsStrings.sub
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SearchOptions extends js.Object {
+  /** Defaults to the empty set, which means all attributes */
   var attributes: js.UndefOr[String | js.Array[String]] = js.undefined
   var derefAliases: js.UndefOr[Double] = js.undefined
+  /**  Defaults to (objectclass=*) */
   var filter: js.UndefOr[String | Filter] = js.undefined
   var paged: js.UndefOr[Boolean | AnonPagePause] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
+  /** Defaults to base */
+  var scope: js.UndefOr[base | one | sub] = js.undefined
+  /** Defaults to 0 (unlimited) */
   var sizeLimit: js.UndefOr[Double] = js.undefined
+  /** Timeout in seconds. Defaults to 10. Lots of servers will ignore this! */
   var timeLimit: js.UndefOr[Double] = js.undefined
   var typesOnly: js.UndefOr[Boolean] = js.undefined
 }
@@ -23,7 +31,7 @@ object SearchOptions {
     derefAliases: Int | Double = null,
     filter: String | Filter = null,
     paged: Boolean | AnonPagePause = null,
-    scope: String = null,
+    scope: base | one | sub = null,
     sizeLimit: Int | Double = null,
     timeLimit: Int | Double = null,
     typesOnly: js.UndefOr[Boolean] = js.undefined

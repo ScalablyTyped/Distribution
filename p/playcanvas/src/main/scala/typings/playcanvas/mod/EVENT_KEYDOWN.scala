@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_KEYDOWN
-  * @description Name of event fired when a key is pressed
+  * @description Name of event fired when a key is pressed.
   */
 @JSImport("playcanvas", "EVENT_KEYDOWN")
 @js.native

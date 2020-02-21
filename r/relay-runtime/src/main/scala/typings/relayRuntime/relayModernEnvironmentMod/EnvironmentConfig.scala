@@ -3,7 +3,8 @@ package typings.relayRuntime.relayModernEnvironmentMod
 import typings.relayRuntime.relayDefaultHandlerProviderMod.HandlerProvider
 import typings.relayRuntime.relayModernQueryExecutorMod.TaskScheduler
 import typings.relayRuntime.relayNetworkTypesMod.Network
-import typings.relayRuntime.relayStoreTypesMod.LoggerProvider
+import typings.relayRuntime.relayStoreTypesMod.LogEvent
+import typings.relayRuntime.relayStoreTypesMod.LogFunction
 import typings.relayRuntime.relayStoreTypesMod.MissingFieldHandler
 import typings.relayRuntime.relayStoreTypesMod.OperationLoader
 import typings.relayRuntime.relayStoreTypesMod.OperationTracker
@@ -15,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait EnvironmentConfig extends js.Object {
   val configName: js.UndefOr[String] = js.undefined
   val handlerProvider: js.UndefOr[HandlerProvider | Null] = js.undefined
-  val loggerProvider: js.UndefOr[LoggerProvider | Null] = js.undefined
+  val log: js.UndefOr[LogFunction | Null] = js.undefined
   val missingFieldHandlers: js.UndefOr[js.Array[MissingFieldHandler] | Null] = js.undefined
   val network: Network
   val operationLoader: js.UndefOr[OperationLoader | Null] = js.undefined
@@ -31,7 +32,7 @@ object EnvironmentConfig {
     store: Store,
     configName: String = null,
     handlerProvider: /* handle */ String => js.Any = null,
-    loggerProvider: LoggerProvider = null,
+    log: /* logEvent */ LogEvent => Unit = null,
     missingFieldHandlers: js.Array[MissingFieldHandler] = null,
     operationLoader: OperationLoader = null,
     operationTracker: OperationTracker = null,
@@ -40,7 +41,7 @@ object EnvironmentConfig {
     val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
     if (configName != null) __obj.updateDynamic("configName")(configName.asInstanceOf[js.Any])
     if (handlerProvider != null) __obj.updateDynamic("handlerProvider")(js.Any.fromFunction1(handlerProvider))
-    if (loggerProvider != null) __obj.updateDynamic("loggerProvider")(loggerProvider.asInstanceOf[js.Any])
+    if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
     if (missingFieldHandlers != null) __obj.updateDynamic("missingFieldHandlers")(missingFieldHandlers.asInstanceOf[js.Any])
     if (operationLoader != null) __obj.updateDynamic("operationLoader")(operationLoader.asInstanceOf[js.Any])
     if (operationTracker != null) __obj.updateDynamic("operationTracker")(operationTracker.asInstanceOf[js.Any])

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3-net" : "1.2.4"
+      "web3-net" : "1.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "web3-net" : "1.2.4"
+      "web3-net" : "1.2.6"
     }
   ],
   "compile-devDependencies" : [

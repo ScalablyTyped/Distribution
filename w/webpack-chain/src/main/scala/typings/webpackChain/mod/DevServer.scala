@@ -2,6 +2,7 @@ package typings.webpackChain.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpsMod.ServerOptions
+import typings.webpack.mod.Compiler_
 import typings.webpack.mod.Options.Stats
 import typings.webpackChain.AnonErrors
 import typings.webpackChain.webpackChainStrings.error
@@ -18,6 +19,8 @@ class DevServer ()
   extends typings.webpackChain.mod._Config.TypedChainedMap[Config, js.Any] {
   var allowedHosts: TypedChainedSet[this.type, String] = js.native
   def apply(value: String): this.type = js.native
+  def after(value: js.Function3[/* app */ js.Any, /* server */ js.Any, /* compiler */ Compiler_, Unit]): this.type = js.native
+  def before(value: js.Function3[/* app */ js.Any, /* server */ js.Any, /* compiler */ Compiler_, Unit]): this.type = js.native
   def bonjour(value: Boolean): this.type = js.native
   @JSName("clientLogLevel")
   def clientLogLevel_error(value: error): this.type = js.native
@@ -42,13 +45,18 @@ class DevServer ()
   def host(value: String): this.type = js.native
   def hot(value: Boolean): this.type = js.native
   def hotOnly(value: Boolean): this.type = js.native
+  def http2(value: Boolean): this.type = js.native
   def https(value: Boolean): this.type = js.native
   def https(value: ServerOptions): this.type = js.native
+  def index(value: String): this.type = js.native
   def info(value: Boolean): this.type = js.native
   def `inline`(value: Boolean): this.type = js.native
   def `lazy`(value: Boolean): this.type = js.native
+  def mimeTypes(value: js.Object): this.type = js.native
   def noInfo(value: Boolean): this.type = js.native
   def open(value: Boolean): this.type = js.native
+  def openPage(value: String): this.type = js.native
+  def openPage(value: js.Array[String]): this.type = js.native
   def overlay(value: Boolean): this.type = js.native
   def overlay(value: AnonErrors): this.type = js.native
   def pfx(value: String): this.type = js.native
@@ -59,6 +67,9 @@ class DevServer ()
   def publicPath(publicPath: String): this.type = js.native
   def quiet(value: Boolean): this.type = js.native
   def setup(value: js.Function1[/* expressApp */ js.Any, Unit]): this.type = js.native
+  def sockHost(value: String): this.type = js.native
+  def sockPath(value: String): this.type = js.native
+  def sockPort(value: Double): this.type = js.native
   def socket(value: String): this.type = js.native
   def staticOptions(value: js.Any): this.type = js.native
   def stats(value: Stats): this.type = js.native
@@ -66,5 +77,6 @@ class DevServer ()
   def useLocalIp(value: Boolean): this.type = js.native
   def watchContentBase(value: Boolean): this.type = js.native
   def watchOptions(value: js.Any): this.type = js.native
+  def writeToDisk(value: Boolean): this.type = js.native
 }
 

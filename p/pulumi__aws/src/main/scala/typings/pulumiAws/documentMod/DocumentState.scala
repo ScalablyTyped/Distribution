@@ -1,6 +1,7 @@
 package typings.pulumiAws.documentMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.inputMod.ssm.DocumentAttachmentsSource
 import typings.pulumiAws.inputMod.ssm.DocumentParameter
 import typings.pulumiAws.inputMod.ssm.DocumentPermissions
 import typings.pulumiPulumi.outputMod.Input
@@ -11,6 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DocumentState extends js.Object {
   val arn: js.UndefOr[Input[String]] = js.native
+  /**
+    * One or more configuration blocks describing attachments sources to a version of a document. Defined below.
+    */
+  val attachmentsSources: js.UndefOr[Input[js.Array[Input[DocumentAttachmentsSource]]]] = js.native
   /**
     * The JSON or YAML content of the document.
     */
@@ -32,7 +37,7 @@ trait DocumentState extends js.Object {
     */
   val documentFormat: js.UndefOr[Input[String]] = js.native
   /**
-    * The type of the document. Valid document types include: `Command`, `Policy`, `Automation` and `Session`
+    * The type of the document. Valid document types include: `Automation`, `Command`, `Package`, `Policy`, and `Session`
     */
   val documentType: js.UndefOr[Input[String]] = js.native
   /**
@@ -79,12 +84,17 @@ trait DocumentState extends js.Object {
     * A mapping of tags to assign to the object.
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  /**
+    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference (http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+    */
+  val targetType: js.UndefOr[Input[String]] = js.native
 }
 
 object DocumentState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
+    attachmentsSources: Input[js.Array[Input[DocumentAttachmentsSource]]] = null,
     content: Input[String] = null,
     createdDate: Input[String] = null,
     defaultVersion: Input[String] = null,
@@ -101,10 +111,12 @@ object DocumentState {
     platformTypes: Input[js.Array[Input[String]]] = null,
     schemaVersion: Input[String] = null,
     status: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
+    tags: Input[StringDictionary[_]] = null,
+    targetType: Input[String] = null
   ): DocumentState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (attachmentsSources != null) __obj.updateDynamic("attachmentsSources")(attachmentsSources.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
     if (defaultVersion != null) __obj.updateDynamic("defaultVersion")(defaultVersion.asInstanceOf[js.Any])
@@ -122,6 +134,7 @@ object DocumentState {
     if (schemaVersion != null) __obj.updateDynamic("schemaVersion")(schemaVersion.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentState]
   }
 }

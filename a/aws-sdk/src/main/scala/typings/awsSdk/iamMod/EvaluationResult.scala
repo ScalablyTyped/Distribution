@@ -15,7 +15,7 @@ trait EvaluationResult extends js.Object {
     */
   var EvalDecision: PolicyEvaluationDecisionType = js.native
   /**
-    * Additional details about the results of the evaluation decision. When there are both IAM policies and resource policies, this parameter explains how each set of policies contributes to the final evaluation decision. When simulating cross-account access to a resource, both the resource-based policy and the caller's IAM policy must grant access. See How IAM Roles Differ from Resource-based Policies 
+    * Additional details about the results of the cross-account evaluation decision. This parameter is populated for only cross-account simulations. It contains a brief summary of how each policy type contributes to the final evaluation decision. If the simulation evaluates policies within the same account and includes a resource ARN, then the parameter is present but the response is empty. If the simulation evaluates policies within the same account and specifies all resources (*), then the parameter is not returned. When you make a cross-account request, AWS evaluates the request in the trusting account and the trusted account. The request is allowed only if both evaluations return true. For more information about how policies are evaluated, see Evaluating Policies Within a Single Account. If an AWS Organizations SCP included in the evaluation denies access, the simulation ends. In this case, policy evaluation does not proceed any further and this parameter is not returned.
     */
   var EvalDecisionDetails: js.UndefOr[EvalDecisionDetailsType] = js.native
   /**
@@ -35,6 +35,10 @@ trait EvaluationResult extends js.Object {
     */
   var OrganizationsDecisionDetail: js.UndefOr[typings.awsSdk.iamMod.OrganizationsDecisionDetail] = js.native
   /**
+    * Contains information about the effect that a permissions boundary has on a policy simulation when the boundary is applied to an IAM entity.
+    */
+  var PermissionsBoundaryDecisionDetail: js.UndefOr[typings.awsSdk.iamMod.PermissionsBoundaryDecisionDetail] = js.native
+  /**
     * The individual results of the simulation of the API operation specified in EvalActionName on each resource.
     */
   var ResourceSpecificResults: js.UndefOr[ResourceSpecificResultListType] = js.native
@@ -50,6 +54,7 @@ object EvaluationResult {
     MatchedStatements: StatementListType = null,
     MissingContextValues: ContextKeyNamesResultListType = null,
     OrganizationsDecisionDetail: OrganizationsDecisionDetail = null,
+    PermissionsBoundaryDecisionDetail: PermissionsBoundaryDecisionDetail = null,
     ResourceSpecificResults: ResourceSpecificResultListType = null
   ): EvaluationResult = {
     val __obj = js.Dynamic.literal(EvalActionName = EvalActionName.asInstanceOf[js.Any], EvalDecision = EvalDecision.asInstanceOf[js.Any])
@@ -58,6 +63,7 @@ object EvaluationResult {
     if (MatchedStatements != null) __obj.updateDynamic("MatchedStatements")(MatchedStatements.asInstanceOf[js.Any])
     if (MissingContextValues != null) __obj.updateDynamic("MissingContextValues")(MissingContextValues.asInstanceOf[js.Any])
     if (OrganizationsDecisionDetail != null) __obj.updateDynamic("OrganizationsDecisionDetail")(OrganizationsDecisionDetail.asInstanceOf[js.Any])
+    if (PermissionsBoundaryDecisionDetail != null) __obj.updateDynamic("PermissionsBoundaryDecisionDetail")(PermissionsBoundaryDecisionDetail.asInstanceOf[js.Any])
     if (ResourceSpecificResults != null) __obj.updateDynamic("ResourceSpecificResults")(ResourceSpecificResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }

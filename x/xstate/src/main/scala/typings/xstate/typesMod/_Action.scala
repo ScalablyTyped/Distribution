@@ -2,7 +2,6 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.xstate.actorMod.Actor
-import typings.xstate.typesMod.ActionTypes.Raise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,15 +35,6 @@ object _Action {
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(js.Any.fromFunction3(exec))
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Action[TContext, TEvent]]
-  }
-  @scala.inline
-  def RaiseAction[TContext, TEvent /* <: EventObject */](
-    event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
-    `type`: Raise
-  ): _Action[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Action[TContext, TEvent]]
   }
 }

@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Method extends js.Object {
+  var abiCoder: js.UndefOr[js.Any] = js.undefined
   var call: String
   var defaultAccount: js.UndefOr[String | Null] = js.undefined
   var defaultBlock: js.UndefOr[String] = js.undefined
@@ -21,6 +22,7 @@ object Method {
   def apply(
     call: String,
     name: String,
+    abiCoder: js.Any = null,
     defaultAccount: String = null,
     defaultBlock: String = null,
     extraFormatters: js.Any = null,
@@ -30,6 +32,7 @@ object Method {
     transformPayload: () => Unit = null
   ): Method = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    if (abiCoder != null) __obj.updateDynamic("abiCoder")(abiCoder.asInstanceOf[js.Any])
     if (defaultAccount != null) __obj.updateDynamic("defaultAccount")(defaultAccount.asInstanceOf[js.Any])
     if (defaultBlock != null) __obj.updateDynamic("defaultBlock")(defaultBlock.asInstanceOf[js.Any])
     if (extraFormatters != null) __obj.updateDynamic("extraFormatters")(extraFormatters.asInstanceOf[js.Any])

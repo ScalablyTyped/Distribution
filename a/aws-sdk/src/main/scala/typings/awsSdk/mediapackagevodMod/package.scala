@@ -19,13 +19,27 @@ package object mediapackagevodMod {
     - java.lang.String
   */
   type EncryptionMethod = typings.awsSdk.mediapackagevodMod._EncryptionMethod | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.FULL
+    - typings.awsSdk.awsSdkStrings.COMPACT
+    - java.lang.String
+  */
+  type ManifestLayout = typings.awsSdk.mediapackagevodMod._ManifestLayout | java.lang.String
   type MaxResults = scala.Double
+  type PeriodTriggersElement = typings.awsSdk.awsSdkStrings.ADS | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NONE
     - typings.awsSdk.awsSdkStrings.HBBTV_1_5
     - java.lang.String
   */
   type Profile = typings.awsSdk.mediapackagevodMod._Profile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NUMBER_WITH_TIMELINE
+    - typings.awsSdk.awsSdkStrings.TIME_WITH_TIMELINE
+    - typings.awsSdk.awsSdkStrings.NUMBER_WITH_DURATION
+    - java.lang.String
+  */
+  type SegmentTemplateFormat = typings.awsSdk.mediapackagevodMod._SegmentTemplateFormat | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ORIGINAL
     - typings.awsSdk.awsSdkStrings.VIDEO_BITRATE_ASCENDING
@@ -48,6 +62,7 @@ package object mediapackagevodMod {
   type listOfMssManifest = js.Array[typings.awsSdk.mediapackagevodMod.MssManifest]
   type listOfPackagingConfiguration = js.Array[typings.awsSdk.mediapackagevodMod.PackagingConfiguration]
   type listOfPackagingGroup = js.Array[typings.awsSdk.mediapackagevodMod.PackagingGroup]
+  type listOfPeriodTriggersElement = js.Array[typings.awsSdk.mediapackagevodMod.PeriodTriggersElement]
   type listOfString = js.Array[typings.awsSdk.mediapackagevodMod.string]
   type string = java.lang.String
 }

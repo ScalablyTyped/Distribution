@@ -1913,7 +1913,7 @@ trait Commands[R] extends js.Object {
     args: (String | Double | (Callback[js.Array[String | (js.Tuple2[String, String | (js.Tuple2[String, String])])]]))*
   ): R = js.native
   def GET(key: String): R = js.native
-  def GET(key: String, cb: Callback[String]): R = js.native
+  def GET(key: String, cb: Callback[String | Null]): R = js.native
   def GETBIT(key: String, offset: Double): R = js.native
   def GETBIT(key: String, offset: Double, cb: Callback[Double]): R = js.native
   def GETRANGE(key: String, start: Double, end: Double): R = js.native
@@ -6064,7 +6064,7 @@ trait Commands[R] extends js.Object {
     * Get the value of a key.
     */
   def get(key: String): R = js.native
-  def get(key: String, cb: Callback[String]): R = js.native
+  def get(key: String, cb: Callback[String | Null]): R = js.native
   /**
     * Returns the bit value at offset in the string value stored at key.
     */

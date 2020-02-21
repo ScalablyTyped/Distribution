@@ -54,7 +54,9 @@ object WritingOptions {
     cellStyles: js.UndefOr[Boolean] = js.undefined,
     compression: js.UndefOr[Boolean] = js.undefined,
     ignoreEC: js.UndefOr[Boolean] = js.undefined,
+    password: String = null,
     sheet: String = null,
+    sheetStubs: js.UndefOr[Boolean] = js.undefined,
     `type`: base64 | binary | buffer | file | array | string = null
   ): WritingOptions = {
     val __obj = js.Dynamic.literal()
@@ -67,7 +69,9 @@ object WritingOptions {
     if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreEC)) __obj.updateDynamic("ignoreEC")(ignoreEC.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritingOptions]
   }

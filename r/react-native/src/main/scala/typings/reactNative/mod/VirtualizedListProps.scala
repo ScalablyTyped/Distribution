@@ -38,13 +38,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VirtualizedListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[ItemT] {
-  var renderItem: ListRenderItem[ItemT]
+  var renderItem: js.UndefOr[ListRenderItem[ItemT] | Null] = js.undefined
 }
 
 object VirtualizedListProps {
   @scala.inline
   def apply[ItemT](
-    renderItem: /* info */ ListRenderItemInfo[ItemT] => ReactElement | Null,
     ListEmptyComponent: ComponentType[_] | ReactElement = null,
     ListFooterComponent: ComponentType[_] | ReactElement = null,
     ListHeaderComponent: ComponentType[_] | ReactElement = null,
@@ -130,6 +129,7 @@ object VirtualizedListProps {
     onScrollBeginDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onScrollEndDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onScrollToIndexFailed: /* info */ AnonAverageItemLength => Unit = null,
+    onScrollToTop: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
     onTouchCancel: /* event */ GestureResponderEvent => Unit = null,
@@ -146,12 +146,14 @@ object VirtualizedListProps {
     refreshControl: ReactElement = null,
     refreshing: js.UndefOr[Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
+    renderItem: /* info */ ListRenderItemInfo[ItemT] => ReactElement | Null = null,
     renderScrollComponent: /* props */ ScrollViewProps => ReactElement = null,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     scrollEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollEventThrottle: Int | Double = null,
     scrollIndicatorInsets: Insets = null,
     scrollPerfTag: String = null,
+    scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollsToTop: js.UndefOr[Boolean] = js.undefined,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
     showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
@@ -175,7 +177,7 @@ object VirtualizedListProps {
     windowSize: Int | Double = null,
     zoomScale: Int | Double = null
   ): VirtualizedListProps[ItemT] = {
-    val __obj = js.Dynamic.literal(renderItem = js.Any.fromFunction1(renderItem))
+    val __obj = js.Dynamic.literal()
     if (ListEmptyComponent != null) __obj.updateDynamic("ListEmptyComponent")(ListEmptyComponent.asInstanceOf[js.Any])
     if (ListFooterComponent != null) __obj.updateDynamic("ListFooterComponent")(ListFooterComponent.asInstanceOf[js.Any])
     if (ListHeaderComponent != null) __obj.updateDynamic("ListHeaderComponent")(ListHeaderComponent.asInstanceOf[js.Any])
@@ -261,6 +263,7 @@ object VirtualizedListProps {
     if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction1(onScrollBeginDrag))
     if (onScrollEndDrag != null) __obj.updateDynamic("onScrollEndDrag")(js.Any.fromFunction1(onScrollEndDrag))
     if (onScrollToIndexFailed != null) __obj.updateDynamic("onScrollToIndexFailed")(js.Any.fromFunction1(onScrollToIndexFailed))
+    if (onScrollToTop != null) __obj.updateDynamic("onScrollToTop")(js.Any.fromFunction1(onScrollToTop))
     if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
     if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
     if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
@@ -277,12 +280,14 @@ object VirtualizedListProps {
     if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl.asInstanceOf[js.Any])
     if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
+    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1(renderItem))
     if (renderScrollComponent != null) __obj.updateDynamic("renderScrollComponent")(js.Any.fromFunction1(renderScrollComponent))
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.asInstanceOf[js.Any])
     if (scrollEventThrottle != null) __obj.updateDynamic("scrollEventThrottle")(scrollEventThrottle.asInstanceOf[js.Any])
     if (scrollIndicatorInsets != null) __obj.updateDynamic("scrollIndicatorInsets")(scrollIndicatorInsets.asInstanceOf[js.Any])
     if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToOverflowEnabled)) __obj.updateDynamic("scrollToOverflowEnabled")(scrollToOverflowEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop.asInstanceOf[js.Any])
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
     if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.asInstanceOf[js.Any])

@@ -27,11 +27,11 @@ trait DetectorModelConfiguration extends js.Object {
     */
   var detectorModelVersion: js.UndefOr[DetectorModelVersion] = js.native
   /**
-    * When set to SERIAL, variables are updated and event conditions evaluated in the order that the events are defined. When set to BATCH, variables are updated and events performed only after all event conditions are evaluated.
+    * Information about the order in which events are evaluated and how actions are executed. 
     */
   var evaluationMethod: js.UndefOr[EvaluationMethod] = js.native
   /**
-    * The input attribute key used to identify a device or system to create a detector (an instance of the detector model) and then to route each input received to the appropriate detector (instance). This parameter uses a JSON-path expression to specify the attribute-value pair in the message payload of each input that is used to identify the device associated with the input.
+    * The input attribute key used to identify a device or system in order to create a detector (an instance of the detector model) and then to route each input received to the appropriate detector (instance). This parameter uses a JSON-path expression to specify the attribute-value pair in the message payload of each input that is used to identify the device associated with the input.
     */
   var key: js.UndefOr[AttributeJsonPath] = js.native
   /**

@@ -79,6 +79,14 @@ trait Parser extends js.Object {
     */
   def is(anything: js.Any): Boolean = js.native
   /**
+    * Check if the browser name equals the passed string
+    * @param browserName The string to compare with the browser name
+    * @param [includingAlias=false] The flag showing whether alias will be included into comparison
+    * @returns {boolean}
+    */
+  def isBrowser(browserName: String): Boolean = js.native
+  def isBrowser(browserName: String, includingAlias: Boolean): Boolean = js.native
+  /**
     * Parse full information about the browser
     */
   def parse(): Unit = js.native

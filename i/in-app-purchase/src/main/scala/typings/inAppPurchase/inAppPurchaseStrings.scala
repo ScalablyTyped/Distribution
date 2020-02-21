@@ -13,6 +13,9 @@ object inAppPurchaseStrings {
   sealed trait apple extends Service
   
   @js.native
+  sealed trait facebook extends Service
+  
+  @js.native
   sealed trait google extends Service
   
   @js.native
@@ -28,6 +31,8 @@ object inAppPurchaseStrings {
   def amazon: amazon = "amazon".asInstanceOf[amazon]
   @scala.inline
   def apple: apple = "apple".asInstanceOf[apple]
+  @scala.inline
+  def facebook: facebook = "facebook".asInstanceOf[facebook]
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   @scala.inline

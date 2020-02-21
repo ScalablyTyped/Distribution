@@ -4,6 +4,7 @@ import typings.ganacheCore.AnonLog
 import typings.ganacheCore.ganacheCoreStrings.byzantium
 import typings.ganacheCore.ganacheCoreStrings.constantinople
 import typings.ganacheCore.ganacheCoreStrings.istanbul
+import typings.ganacheCore.ganacheCoreStrings.muirGlacier
 import typings.ganacheCore.ganacheCoreStrings.petersburg
 import typings.std.Date
 import scala.scalajs.js
@@ -22,7 +23,7 @@ trait IProviderOptions extends js.Object {
   var fork_block_number: js.UndefOr[String | Double] = js.undefined
   var gasLimit: js.UndefOr[String | Double] = js.undefined
   var gasPrice: js.UndefOr[String] = js.undefined
-  var hardfork: js.UndefOr[byzantium | constantinople | petersburg | istanbul] = js.undefined
+  var hardfork: js.UndefOr[byzantium | constantinople | petersburg | istanbul | muirGlacier] = js.undefined
   var hd_path: js.UndefOr[String] = js.undefined
   var locked: js.UndefOr[Boolean] = js.undefined
   var logger: js.UndefOr[AnonLog] = js.undefined
@@ -53,7 +54,7 @@ object IProviderOptions {
     fork_block_number: String | Double = null,
     gasLimit: String | Double = null,
     gasPrice: String = null,
-    hardfork: byzantium | constantinople | petersburg | istanbul = null,
+    hardfork: byzantium | constantinople | petersburg | istanbul | muirGlacier = null,
     hd_path: String = null,
     locked: js.UndefOr[Boolean] = js.undefined,
     logger: AnonLog = null,

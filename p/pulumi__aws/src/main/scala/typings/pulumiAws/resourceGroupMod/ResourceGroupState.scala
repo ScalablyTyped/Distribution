@@ -13,7 +13,7 @@ trait ResourceGroupState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
-    * The tags on your EC2 Instance.
+    * Key-value map of tags that are used to select the EC2 instances to be included in an [Amazon Inspector assessment target](https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target.html).
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }

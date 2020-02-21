@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBClusterSnapshotAttributesResult extends js.Object {
   /**
-    * The list of attributes and values for the DB cluster snapshot.
+    * The list of attributes and values for the cluster snapshot.
     */
   var DBClusterSnapshotAttributes: js.UndefOr[DBClusterSnapshotAttributeList] = js.native
   /**
-    * The identifier of the DB cluster snapshot that the attributes apply to.
+    * The identifier of the cluster snapshot that the attributes apply to.
     */
   var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.native
 }

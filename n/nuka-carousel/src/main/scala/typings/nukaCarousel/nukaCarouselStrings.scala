@@ -1,6 +1,7 @@
 package typings.nukaCarousel
 
 import typings.nukaCarousel.mod.CarouselCellAlignProp
+import typings.nukaCarousel.mod.CarouselControlContainerProp
 import typings.nukaCarousel.mod.CarouselHeightModeProp
 import typings.nukaCarousel.mod.CarouselSlideActions
 import typings.nukaCarousel.mod.CarouselTransitionModeProp
@@ -10,7 +11,34 @@ import scala.scalajs.js.annotation._
 
 object nukaCarouselStrings {
   @js.native
+  sealed trait BottomCenter extends CarouselControlContainerProp
+  
+  @js.native
+  sealed trait BottomLeft extends CarouselControlContainerProp
+  
+  @js.native
+  sealed trait BottomRight extends CarouselControlContainerProp
+  
+  @js.native
   sealed trait CarouselProps extends js.Object
+  
+  @js.native
+  sealed trait CenterCenter extends CarouselControlContainerProp
+  
+  @js.native
+  sealed trait CenterLeft extends CarouselControlContainerProp
+  
+  @js.native
+  sealed trait CenterRight extends CarouselControlContainerProp
+  
+  @js.native
+  sealed trait TopCenter extends CarouselControlContainerProp
+  
+  @js.native
+  sealed trait TopLeft extends CarouselControlContainerProp
+  
+  @js.native
+  sealed trait TopRight extends CarouselControlContainerProp
   
   @js.native
   sealed trait auto extends js.Object
@@ -61,7 +89,25 @@ object nukaCarouselStrings {
   sealed trait zoom extends js.Object
   
   @scala.inline
+  def BottomCenter: BottomCenter = "BottomCenter".asInstanceOf[BottomCenter]
+  @scala.inline
+  def BottomLeft: BottomLeft = "BottomLeft".asInstanceOf[BottomLeft]
+  @scala.inline
+  def BottomRight: BottomRight = "BottomRight".asInstanceOf[BottomRight]
+  @scala.inline
   def CarouselProps: CarouselProps = "CarouselProps".asInstanceOf[CarouselProps]
+  @scala.inline
+  def CenterCenter: CenterCenter = "CenterCenter".asInstanceOf[CenterCenter]
+  @scala.inline
+  def CenterLeft: CenterLeft = "CenterLeft".asInstanceOf[CenterLeft]
+  @scala.inline
+  def CenterRight: CenterRight = "CenterRight".asInstanceOf[CenterRight]
+  @scala.inline
+  def TopCenter: TopCenter = "TopCenter".asInstanceOf[TopCenter]
+  @scala.inline
+  def TopLeft: TopLeft = "TopLeft".asInstanceOf[TopLeft]
+  @scala.inline
+  def TopRight: TopRight = "TopRight".asInstanceOf[TopRight]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline

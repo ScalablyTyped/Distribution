@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait mjmlReactProps {
   @scala.inline
-  def ExtensionsMjmlCommentProps: AnonChildren.type = typings.mjmlReact.AnonChildren
-  type ExtensionsMjmlCommentProps = AnonChildren
-  @scala.inline
-  def ExtensionsMjmlConditionalCommentProps: AnonChildrenCondition.type = typings.mjmlReact.AnonChildrenCondition
-  type ExtensionsMjmlConditionalCommentProps = AnonChildrenCondition
-  @scala.inline
-  def ExtensionsMjmlTrackingPixelProps: AnonSrc.type = typings.mjmlReact.AnonSrc
-  type ExtensionsMjmlTrackingPixelProps = AnonSrc
-  @scala.inline
-  def ExtensionsMjmlYahooStyleProps: AnonChildren.type = typings.mjmlReact.AnonChildren
-  type ExtensionsMjmlYahooStyleProps = AnonChildren
-  @scala.inline
   def MjmlAllProps: AnonChildrenKey.type = typings.mjmlReact.AnonChildrenKey
   type MjmlAllProps = AnonChildrenKey
   @scala.inline
@@ -30,6 +18,12 @@ trait mjmlReactProps {
   @scala.inline
   def MjmlClassProps: AnonChildrenKeyName.type = typings.mjmlReact.AnonChildrenKeyName
   type MjmlClassProps = AnonChildrenKeyName
+  @scala.inline
+  def MjmlCommentProps: AnonChildren.type = typings.mjmlReact.AnonChildren
+  type MjmlCommentProps = AnonChildren
+  @scala.inline
+  def MjmlConditionalCommentProps: AnonChildrenCondition.type = typings.mjmlReact.AnonChildrenCondition
+  type MjmlConditionalCommentProps = AnonChildrenCondition
   @scala.inline
   def MjmlFontProps: typings.mjmlReact.mod.MjmlFontProps.type = typings.mjmlReact.mod.MjmlFontProps
   type MjmlFontProps = typings.mjmlReact.mod.MjmlFontProps
@@ -48,5 +42,11 @@ trait mjmlReactProps {
   @scala.inline
   def MjmlTitleProps: AnonChildren.type = typings.mjmlReact.AnonChildren
   type MjmlTitleProps = AnonChildren
+  @scala.inline
+  def MjmlTrackingPixelProps: AnonSrc.type = typings.mjmlReact.AnonSrc
+  type MjmlTrackingPixelProps = AnonSrc
+  @scala.inline
+  def MjmlYahooStyleProps: AnonChildren.type = typings.mjmlReact.AnonChildren
+  type MjmlYahooStyleProps = AnonChildren
 }
 

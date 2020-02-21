@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_START
-  * @description The start button
+  * @description The start button.
   */
 @JSGlobal("pc.PAD_START")
 @js.native

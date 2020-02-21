@@ -132,6 +132,7 @@ package object lexmodelbuildingserviceMod {
   */
   type ProcessBehavior = typings.awsSdk.lexmodelbuildingserviceMod._ProcessBehavior | java.lang.String
   type PromptMaxAttempts = scala.Double
+  type RegexPattern = java.lang.String
   type ResourceArn = java.lang.String
   type ResourcePrefix = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -151,6 +152,7 @@ package object lexmodelbuildingserviceMod {
   type SlotConstraint = typings.awsSdk.lexmodelbuildingserviceMod._SlotConstraint | java.lang.String
   type SlotList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.Slot]
   type SlotName = java.lang.String
+  type SlotTypeConfigurations = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.SlotTypeConfiguration]
   type SlotTypeMetadataList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.SlotTypeMetadata]
   type SlotTypeName = java.lang.String
   type SlotUtteranceList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.Utterance]

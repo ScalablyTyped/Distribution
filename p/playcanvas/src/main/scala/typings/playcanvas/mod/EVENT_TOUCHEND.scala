@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_TOUCHEND
   * @description Name of event fired when touch ends. For example, a finger is lifted off the device.
   */

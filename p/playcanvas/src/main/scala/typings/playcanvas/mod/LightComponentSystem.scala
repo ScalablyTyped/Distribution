@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.LightComponentSystem
-  * @extends pc.ComponentSystem
+  * @augments pc.ComponentSystem
   * @classdesc A Light Component is used to dynamically light the scene.
   * @description Create a new LightComponentSystem.
-  * @param {pc.Application} app The application.
+  * @param {pc.Application} app - The application.
   */
 @JSImport("playcanvas", "LightComponentSystem")
 @js.native

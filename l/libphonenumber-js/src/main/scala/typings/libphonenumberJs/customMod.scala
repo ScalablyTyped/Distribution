@@ -22,6 +22,7 @@ object customMod extends js.Object {
   @js.native
   class AsYouType protected () extends js.Object {
     def this(defaultCountryCode: js.UndefOr[scala.Nothing], metadata: Metadata) = this()
+    def this(defaultCountryCode: AnonDefaultCallingCode, metadata: Metadata) = this()
     def this(defaultCountryCode: CountryCode, metadata: Metadata) = this()
     var country: js.UndefOr[CountryCode] = js.native
     def getNationalNumber(): String = js.native
@@ -68,6 +69,9 @@ object customMod extends js.Object {
   def findParsedNumbers(text: String, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
   def findParsedNumbers(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
   def findParsedNumbers(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
+  def findPhoneNumbersInText(text: String, metadata: Metadata): js.Array[NumberFound] = js.native
+  def findPhoneNumbersInText(text: String, options: AnonDefaultCallingCode, metadata: Metadata): js.Array[NumberFound] = js.native
+  def findPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = js.native
   def format(parsedNumber: ParsedNumber, format: NumberFormat, metadata: Metadata): String = js.native
   def format(phone: NationalNumber, country: CountryCode, format: NumberFormat, metadata: Metadata): String = js.native
   def format(phone: NationalNumber, format: NumberFormat, metadata: Metadata): String = js.native
@@ -112,12 +116,13 @@ object customMod extends js.Object {
   def parse(text: String, options: CountryCode, metadata: Metadata): ParsedNumber = js.native
   def parseDigits(character: String): String = js.native
   def parseIncompletePhoneNumber(text: String): String = js.native
-  def parseNumber(text: String, metadata: Metadata): ParsedNumber = js.native
-  def parseNumber(text: String, options: ParseNumberOptions, metadata: Metadata): ParsedNumber = js.native
-  def parseNumber(text: String, options: CountryCode, metadata: Metadata): ParsedNumber = js.native
+  def parseNumber(text: String, metadata: Metadata): ParsedNumber | js.Object = js.native
+  def parseNumber(text: String, options: ParseNumberOptions, metadata: Metadata): ParsedNumber | js.Object = js.native
+  def parseNumber(text: String, options: CountryCode, metadata: Metadata): ParsedNumber | js.Object = js.native
   def parsePhoneNumber(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumber(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumberCharacter(character: String): String = js.native
+  def parsePhoneNumberFromString(text: String, defaultCountry: AnonDefaultCallingCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumberFromString(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def parsePhoneNumberFromString(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
   def searchNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
@@ -126,5 +131,8 @@ object customMod extends js.Object {
   def searchParsedNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
   def searchParsedNumbers(text: String, options: AnonDefaultCountryCountryCode, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
   def searchParsedNumbers(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
+  def searchPhoneNumbersInText(text: String, metadata: Metadata): IterableIterator[NumberFound] = js.native
+  def searchPhoneNumbersInText(text: String, options: AnonDefaultCallingCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
+  def searchPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
 }
 

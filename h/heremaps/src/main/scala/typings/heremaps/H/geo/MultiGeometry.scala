@@ -14,6 +14,11 @@ class MultiGeometry[T] protected () extends AbstractGeometry {
     */
   def this(geometries: js.Array[T]) = this()
   /**
+    * Returns the bounding rectangle of the geometry.
+    * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
+    */
+  def getBounds(): Rect = js.native
+  /**
     * Returns the aggregated geometries of the multi-geometry. The returned geometries must be treated as read-only to not violate the integrity of the multi-geometry.
     * @return {T[]} - An array of geometries
     */

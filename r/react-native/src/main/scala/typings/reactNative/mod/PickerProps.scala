@@ -61,6 +61,8 @@ import scala.scalajs.js.annotation._
     * Can be a string or an integer.
     */
   var selectedValue: js.UndefOr[js.Any] = js.undefined
+  @JSName("style")
+  var style_PickerProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   /**
     * Used to locate this view in end-to-end tests.
     */
@@ -121,7 +123,7 @@ object PickerProps {
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     selectedValue: js.Any = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
+    style: StyleProp[TextStyle] = null,
     testID: String = null,
     testId: String = null,
     tvParallaxMagnification: Int | Double = null,

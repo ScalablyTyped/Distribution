@@ -14,6 +14,9 @@ trait GridProps extends js.Object {
   var gridGutters: js.UndefOr[Responsive[Double]] = js.undefined
   var gridMargins: js.UndefOr[Responsive[Double]] = js.undefined
   var gridMaxWidth: js.UndefOr[Double] = js.undefined
+  var gridUnit: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
+  ] = js.undefined
 }
 
 object GridProps {
@@ -26,7 +29,8 @@ object GridProps {
     gridGaps: Responsive[Double] = null,
     gridGutters: Responsive[Double] = null,
     gridMargins: Responsive[Double] = null,
-    gridMaxWidth: Int | Double = null
+    gridMaxWidth: Int | Double = null,
+    gridUnit: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any = null
   ): GridProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
@@ -36,6 +40,7 @@ object GridProps {
     if (gridGutters != null) __obj.updateDynamic("gridGutters")(gridGutters.asInstanceOf[js.Any])
     if (gridMargins != null) __obj.updateDynamic("gridMargins")(gridMargins.asInstanceOf[js.Any])
     if (gridMaxWidth != null) __obj.updateDynamic("gridMaxWidth")(gridMaxWidth.asInstanceOf[js.Any])
+    if (gridUnit != null) __obj.updateDynamic("gridUnit")(gridUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
 }

@@ -2,7 +2,6 @@ package typings.jestHasteMap.mod
 
 import typings.jestHasteMap.moduleMapMod.default
 import typings.jestHasteMap.typesMod.InternalHasteMap
-import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -85,38 +84,38 @@ import scala.scalajs.js.annotation._
   *     Worker processes can directly access the cache through `HasteMap.read()`.
   *
   */
-@js.native
-trait HasteMap extends EventEmitter {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventEmitter * / any */ trait HasteMap extends js.Object {
   /**
     * 2. crawl the file system.
     */
-  var _buildFileMap: js.Any = js.native
-  var _buildHasteMap: js.Any = js.native
-  var _buildPromise: js.Any = js.native
-  var _cachePath: js.Any = js.native
-  var _changeInterval: js.UndefOr[js.Any] = js.native
-  var _cleanup: js.Any = js.native
-  var _console: js.Any = js.native
-  var _crawl: js.Any = js.native
-  var _createEmptyMap: js.Any = js.native
+  var _buildFileMap: js.Any
+  var _buildHasteMap: js.Any
+  var _buildPromise: js.Any
+  var _cachePath: js.Any
+  var _changeInterval: js.UndefOr[js.Any] = js.undefined
+  var _cleanup: js.Any
+  var _console: js.Any
+  var _crawl: js.Any
+  var _createEmptyMap: js.Any
   /**
     * Creates workers or parses files and extracts metadata in-process.
     */
-  var _getWorker: js.Any = js.native
+  var _getWorker: js.Any
   /**
     * Helpers
     */
-  var _ignore: js.Any = js.native
-  var _isNodeModulesDir: js.Any = js.native
-  var _options: js.Any = js.native
+  var _ignore: js.Any
+  var _isNodeModulesDir: js.Any
+  var _options: js.Any
   /**
     * 4. serialize the new `HasteMap` in a cache file.
     */
-  var _persist: js.Any = js.native
+  var _persist: js.Any
   /**
     * 3. parse and extract metadata from changed files.
     */
-  var _processFile: js.Any = js.native
+  var _processFile: js.Any
   /**
     * This function should be called when the file under `filePath` is removed
     * or changed. When that happens, we want to figure out if that file was
@@ -125,21 +124,56 @@ trait HasteMap extends EventEmitter {
     * remaining in the group, then we want to restore that single file as the
     * correct resolution for its ID, and cleanup the duplicates index.
     */
-  var _recoverDuplicates: js.Any = js.native
+  var _recoverDuplicates: js.Any
   /**
     * Watch mode
     */
-  var _watch: js.Any = js.native
-  var _watchers: js.Any = js.native
-  var _whitelist: js.Any = js.native
-  var _worker: js.Any = js.native
-  def build(): js.Promise[typings.jestHasteMap.typesMod.HasteMap] = js.native
-  def end(): js.Promise[Unit] = js.native
-  def getCacheFilePath(): String = js.native
+  var _watch: js.Any
+  var _watchers: js.Any
+  var _whitelist: js.Any
+  var _worker: js.Any
+  def build(): js.Promise[typings.jestHasteMap.typesMod.HasteMap]
+  def end(): js.Promise[Unit]
+  def getCacheFilePath(): String
   /**
     * 1. read data from the cache or create an empty structure.
     */
-  def read(): InternalHasteMap = js.native
-  def readModuleMap(): default = js.native
+  def read(): InternalHasteMap
+  def readModuleMap(): default
+}
+
+object HasteMap {
+  @scala.inline
+  def apply(
+    _buildFileMap: js.Any,
+    _buildHasteMap: js.Any,
+    _buildPromise: js.Any,
+    _cachePath: js.Any,
+    _cleanup: js.Any,
+    _console: js.Any,
+    _crawl: js.Any,
+    _createEmptyMap: js.Any,
+    _getWorker: js.Any,
+    _ignore: js.Any,
+    _isNodeModulesDir: js.Any,
+    _options: js.Any,
+    _persist: js.Any,
+    _processFile: js.Any,
+    _recoverDuplicates: js.Any,
+    _watch: js.Any,
+    _watchers: js.Any,
+    _whitelist: js.Any,
+    _worker: js.Any,
+    build: () => js.Promise[typings.jestHasteMap.typesMod.HasteMap],
+    end: () => js.Promise[Unit],
+    getCacheFilePath: () => String,
+    read: () => InternalHasteMap,
+    readModuleMap: () => default,
+    _changeInterval: js.Any = null
+  ): HasteMap = {
+    val __obj = js.Dynamic.literal(_buildFileMap = _buildFileMap.asInstanceOf[js.Any], _buildHasteMap = _buildHasteMap.asInstanceOf[js.Any], _buildPromise = _buildPromise.asInstanceOf[js.Any], _cachePath = _cachePath.asInstanceOf[js.Any], _cleanup = _cleanup.asInstanceOf[js.Any], _console = _console.asInstanceOf[js.Any], _crawl = _crawl.asInstanceOf[js.Any], _createEmptyMap = _createEmptyMap.asInstanceOf[js.Any], _getWorker = _getWorker.asInstanceOf[js.Any], _ignore = _ignore.asInstanceOf[js.Any], _isNodeModulesDir = _isNodeModulesDir.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _persist = _persist.asInstanceOf[js.Any], _processFile = _processFile.asInstanceOf[js.Any], _recoverDuplicates = _recoverDuplicates.asInstanceOf[js.Any], _watch = _watch.asInstanceOf[js.Any], _watchers = _watchers.asInstanceOf[js.Any], _whitelist = _whitelist.asInstanceOf[js.Any], _worker = _worker.asInstanceOf[js.Any], build = js.Any.fromFunction0(build), end = js.Any.fromFunction0(end), getCacheFilePath = js.Any.fromFunction0(getCacheFilePath), read = js.Any.fromFunction0(read), readModuleMap = js.Any.fromFunction0(readModuleMap))
+    if (_changeInterval != null) __obj.updateDynamic("_changeInterval")(_changeInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HasteMap]
+  }
 }
 

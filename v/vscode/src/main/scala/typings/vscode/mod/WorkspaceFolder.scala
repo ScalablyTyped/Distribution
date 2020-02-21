@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WorkspaceFolder extends js.Object {
+trait WorkspaceFolder extends ConfigurationScope {
   /**
   		 * The ordinal number of this workspace folder.
   		 */

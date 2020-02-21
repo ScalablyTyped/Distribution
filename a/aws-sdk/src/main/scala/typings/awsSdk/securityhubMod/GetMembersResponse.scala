@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetMembersResponse extends js.Object {
   /**
-    * A list of details about the Security Hub member accounts.
+    * The list of details about the Security Hub member accounts.
     */
   var Members: js.UndefOr[MemberList] = js.native
   /**
-    * A list of account ID and email address pairs of the AWS accounts that couldn't be processed.
+    * The list of AWS accounts that could not be processed. For each account, the list includes the account ID and the email address.
     */
   var UnprocessedAccounts: js.UndefOr[ResultList] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.firebird.mod
 
 import typings.node.Buffer
-import typings.node.streamMod.internal
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,7 +18,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("firebird", "Stream")
 @js.native
-class Stream protected () extends internal {
+class Stream protected ()
+  extends typings.node.streamMod.Stream {
   def this(blob: FBBlob) = this()
   /* NodeJS.ReadStream */
   var readable: Boolean = js.native

@@ -29,7 +29,7 @@ class PivotTableCollection () extends ClientObject {
   def add(name: String, source: Range, destination: String): PivotTable = js.native
   /**
     *
-    * Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.
+    * Add a PivotTable based on the specified source data and insert it at the top-left cell of the destination range.
     *
     * [Api set: ExcelApi 1.8]
     *

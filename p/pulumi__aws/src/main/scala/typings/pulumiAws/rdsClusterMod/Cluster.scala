@@ -86,6 +86,10 @@ class Cluster protected () extends CustomResource {
     */
   val deletionProtection: Output_[js.UndefOr[Boolean]] = js.native
   /**
+    * Enable HTTP endpoint (data API). Only valid when `engineMode` is set to `serverless`.
+    */
+  val enableHttpEndpoint: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
     * The following log types are supported: `audit`, `error`, `general`, `slowquery`, `postgresql` (PostgreSQL).
     */

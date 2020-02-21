@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PIXELFORMAT_ATC_RGB
+  * @type {number}
   * @description ATC compressed format with no alpha channel.
   */
 @JSGlobal("pc.PIXELFORMAT_ATC_RGB")

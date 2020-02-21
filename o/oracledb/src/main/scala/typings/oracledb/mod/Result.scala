@@ -17,6 +17,13 @@ trait Result[T] extends js.Object {
     */
   var implicitResults: js.UndefOr[js.Array[js.Array[T] | ResultSet[T]]] = js.undefined
   /**
+    * ROWID of a row affected by an INSERT, UPDATE, DELETE or MERGE statement. For other statements,
+    * or if no row was affected, it is not set. If more than one row was affected, only the ROWID of the last row is returned.
+    * 
+    * @since 4.2
+    */
+  val lastRowid: js.UndefOr[String] = js.undefined
+  /**
     * For SELECT statements, this contains an array of objects describing details of columns for the select list.
     * For non queries, this property is undefined.
     *
@@ -63,6 +70,7 @@ object Result {
   @scala.inline
   def apply[T](
     implicitResults: js.Array[js.Array[T] | ResultSet[T]] = null,
+    lastRowid: String = null,
     metaData: js.Array[Metadata] = null,
     outBinds: T = null,
     resultSet: ResultSet[T] = null,
@@ -71,6 +79,7 @@ object Result {
   ): Result[T] = {
     val __obj = js.Dynamic.literal()
     if (implicitResults != null) __obj.updateDynamic("implicitResults")(implicitResults.asInstanceOf[js.Any])
+    if (lastRowid != null) __obj.updateDynamic("lastRowid")(lastRowid.asInstanceOf[js.Any])
     if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
     if (outBinds != null) __obj.updateDynamic("outBinds")(outBinds.asInstanceOf[js.Any])
     if (resultSet != null) __obj.updateDynamic("resultSet")(resultSet.asInstanceOf[js.Any])

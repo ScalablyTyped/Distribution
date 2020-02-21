@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
   * @name pc.FOG_NONE
+  * @type {string}
   * @description No fog is applied to the scene.
   */
 @JSGlobal("pc.FOG_NONE")

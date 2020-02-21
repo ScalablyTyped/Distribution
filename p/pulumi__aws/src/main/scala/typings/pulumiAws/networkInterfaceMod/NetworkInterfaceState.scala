@@ -17,6 +17,13 @@ trait NetworkInterfaceState extends js.Object {
     * A description for the network interface.
     */
   val description: js.UndefOr[Input[String]] = js.native
+  /**
+    * The MAC address of the network interface.
+    */
+  val macAddress: js.UndefOr[Input[String]] = js.native
+  /**
+    * The private DNS name of the network interface (IPv4).
+    */
   val privateDnsName: js.UndefOr[Input[String]] = js.native
   val privateIp: js.UndefOr[Input[String]] = js.native
   /**
@@ -50,6 +57,7 @@ object NetworkInterfaceState {
   def apply(
     attachments: Input[js.Array[Input[NetworkInterfaceAttachment]]] = null,
     description: Input[String] = null,
+    macAddress: Input[String] = null,
     privateDnsName: Input[String] = null,
     privateIp: Input[String] = null,
     privateIps: Input[js.Array[Input[String]]] = null,
@@ -62,6 +70,7 @@ object NetworkInterfaceState {
     val __obj = js.Dynamic.literal()
     if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (macAddress != null) __obj.updateDynamic("macAddress")(macAddress.asInstanceOf[js.Any])
     if (privateDnsName != null) __obj.updateDynamic("privateDnsName")(privateDnsName.asInstanceOf[js.Any])
     if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
     if (privateIps != null) __obj.updateDynamic("privateIps")(privateIps.asInstanceOf[js.Any])

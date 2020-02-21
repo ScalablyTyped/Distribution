@@ -1,9 +1,9 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.MarkdownRenderParams
-import typings.octokitRest.mod.MarkdownRenderRawParams
-import typings.octokitRest.mod.RequestOptions
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.MarkdownRenderParams
+import typings.octokitRest.mod.Octokit.MarkdownRenderRawParams
+import typings.octokitRest.mod.Octokit.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

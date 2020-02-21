@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.colorPickerGridCellTypesMod.IColorPickerGridCellProps
 import typings.officeUiFabricReact.swatchColorPickerTypesMod.ISwatchColorPickerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +21,8 @@ object swatchColorPickerMod extends js.Object {
     def this(props: ISwatchColorPickerProps) = this()
   }
   
-  val ColorPickerGridCell: StatelessComponent[IColorPickerGridCellProps] = js.native
-  val SwatchColorPicker: StatelessComponent[ISwatchColorPickerProps] = js.native
+  val ColorPickerGridCell: FunctionComponent[IColorPickerGridCellProps] = js.native
+  val SwatchColorPicker: FunctionComponent[ISwatchColorPickerProps] = js.native
   /* static members */
   @js.native
   object ColorPickerGridCellBase extends js.Object {

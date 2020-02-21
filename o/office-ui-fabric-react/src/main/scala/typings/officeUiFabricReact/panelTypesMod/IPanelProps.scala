@@ -71,6 +71,7 @@ import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.std.Event_
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
@@ -140,6 +141,10 @@ trait IPanelProps extends HTMLAttributes[PanelBase] {
     * @defaultvalue ""
     */
   var headerText: js.UndefOr[String] = js.undefined
+  /**
+    * The props for header text container.
+    */
+  var headerTextProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
   /**
     * Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.
     * Deprecated, use `focusTrapZoneProps`.
@@ -328,6 +333,7 @@ object IPanelProps {
     hasCloseButton: js.UndefOr[Boolean] = js.undefined,
     headerClassName: String = null,
     headerText: String = null,
+    headerTextProps: HTMLAttributes[HTMLDivElement] = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined,
@@ -538,6 +544,7 @@ object IPanelProps {
     if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.asInstanceOf[js.Any])
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName.asInstanceOf[js.Any])
     if (headerText != null) __obj.updateDynamic("headerText")(headerText.asInstanceOf[js.Any])
+    if (headerTextProps != null) __obj.updateDynamic("headerTextProps")(headerTextProps.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreExternalFocusing)) __obj.updateDynamic("ignoreExternalFocusing")(ignoreExternalFocusing.asInstanceOf[js.Any])

@@ -16,7 +16,7 @@ object ValidateOpts {
   @scala.inline
   def apply(
     isAsync: `false` = null,
-    message: String = null,
+    message: String | ValidatorMessageFn = null,
     msg: String = null,
     `type`: String = null,
     validator: RegExp | ValidateFn[_] = null

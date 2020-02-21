@@ -16,7 +16,7 @@ import typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
 import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,8 +35,8 @@ object libTooltipMod extends js.Object {
     def this(props: ITooltipHostProps) = this()
   }
   
-  val Tooltip: StatelessComponent[ITooltipProps] = js.native
-  val TooltipHost: StatelessComponent[ITooltipHostProps] = js.native
+  val Tooltip: FunctionComponent[ITooltipProps] = js.native
+  val TooltipHost: FunctionComponent[ITooltipHostProps] = js.native
   @js.native
   object DirectionalHint extends js.Object {
     /**

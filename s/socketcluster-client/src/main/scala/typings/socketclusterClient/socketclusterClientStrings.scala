@@ -1,7 +1,7 @@
 package typings.socketclusterClient
 
-import typings.socketclusterClient.scclientsocketMod.AuthStates
-import typings.socketclusterClient.scclientsocketMod.States
+import typings.socketclusterClient.clientsocketMod.AuthStates
+import typings.socketclusterClient.clientsocketMod.States
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,16 +44,10 @@ object socketclusterClientStrings {
   sealed trait kickOut extends js.Object
   
   @js.native
-  sealed trait message extends js.Object
-  
-  @js.native
   sealed trait open extends States
   
   @js.native
   sealed trait pending extends js.Object
-  
-  @js.native
-  sealed trait raw extends js.Object
   
   @js.native
   sealed trait removeAuthToken extends js.Object
@@ -71,10 +65,16 @@ object socketclusterClientStrings {
   sealed trait subscribeStateChange extends js.Object
   
   @js.native
+  sealed trait subscribed extends js.Object
+  
+  @js.native
   sealed trait unauthenticated extends AuthStates
   
   @js.native
   sealed trait unsubscribe extends js.Object
+  
+  @js.native
+  sealed trait unsubscribed extends js.Object
   
   @scala.inline
   def authStateChange: authStateChange = "authStateChange".asInstanceOf[authStateChange]
@@ -101,13 +101,9 @@ object socketclusterClientStrings {
   @scala.inline
   def kickOut: kickOut = "kickOut".asInstanceOf[kickOut]
   @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
   def removeAuthToken: removeAuthToken = "removeAuthToken".asInstanceOf[removeAuthToken]
   @scala.inline
@@ -119,8 +115,12 @@ object socketclusterClientStrings {
   @scala.inline
   def subscribeStateChange: subscribeStateChange = "subscribeStateChange".asInstanceOf[subscribeStateChange]
   @scala.inline
+  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
+  @scala.inline
   def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
   @scala.inline
   def unsubscribe: unsubscribe = "unsubscribe".asInstanceOf[unsubscribe]
+  @scala.inline
+  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
 }
 

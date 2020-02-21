@@ -61,6 +61,7 @@ trait Lob extends Duplex {
     *
     * Once a Lob is closed, it cannot be bound.
     *
+    * @deprecated since 4.2, lob.destroy() should be used instead.
     * @see https://oracle.github.io/node-oracledb/doc/api.html#closinglobs
     */
   def close(): js.Promise[Unit] = js.native

@@ -1,5 +1,6 @@
 package typings.nodeHid.mod
 
+import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +19,9 @@ class HID protected () extends EventEmitter {
   def readTimeout(time_out: Double): js.Array[Double] = js.native
   def resume(): Unit = js.native
   def sendFeatureReport(data: js.Array[Double]): Double = js.native
+  def sendFeatureReport(data: Buffer): Double = js.native
   def setNonBlocking(no_block: Boolean): Unit = js.native
   def write(values: js.Array[Double]): Double = js.native
+  def write(values: Buffer): Double = js.native
 }
 

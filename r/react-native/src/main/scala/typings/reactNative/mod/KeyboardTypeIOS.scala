@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.reactNative.reactNativeStrings.`ascii-capable`
   - typings.reactNative.reactNativeStrings.`numbers-and-punctuation`
   - typings.reactNative.reactNativeStrings.url_
-  - typings.reactNative.reactNativeStrings.`number-pad`
   - typings.reactNative.reactNativeStrings.`name-phone-pad`
-  - typings.reactNative.reactNativeStrings.`decimal-pad`
   - typings.reactNative.reactNativeStrings.twitter
   - typings.reactNative.reactNativeStrings.`web-search`
 */
@@ -23,11 +21,7 @@ object KeyboardTypeIOS {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def `decimal-pad`: typings.reactNative.reactNativeStrings.`decimal-pad` = this.cast("decimal-pad")
-  @scala.inline
   def `name-phone-pad`: typings.reactNative.reactNativeStrings.`name-phone-pad` = this.cast("name-phone-pad")
-  @scala.inline
-  def `number-pad`: typings.reactNative.reactNativeStrings.`number-pad` = this.cast("number-pad")
   @scala.inline
   def `numbers-and-punctuation`: typings.reactNative.reactNativeStrings.`numbers-and-punctuation` = this.cast("numbers-and-punctuation")
   @scala.inline

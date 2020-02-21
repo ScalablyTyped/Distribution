@@ -50,6 +50,10 @@ trait ITerminalOptions extends js.Object {
     */
   var cursorStyle: js.UndefOr[block | underline | bar] = js.undefined
   /**
+    * The width of the cursor in CSS pixels when `cursorStyle` is set to 'bar'.
+    */
+  var cursorWidth: js.UndefOr[Double] = js.undefined
+  /**
     * Whether input should be disabled.
     */
   var disableStdin: js.UndefOr[Boolean] = js.undefined
@@ -166,6 +170,11 @@ trait ITerminalOptions extends js.Object {
     */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
+    * Enable various window manipulation and report features.
+    * All features are disabled by default for security reasons.
+    */
+  var windowOptions: js.UndefOr[IWindowOptions] = js.undefined
+  /**
     * Whether "Windows mode" is enabled. Because Windows backends winpty and
     * conpty operate by doing line wrapping on their side, xterm.js does not
     * have access to wrapped lines. When Windows mode is enabled the following
@@ -193,6 +202,7 @@ object ITerminalOptions {
     convertEol: js.UndefOr[Boolean] = js.undefined,
     cursorBlink: js.UndefOr[Boolean] = js.undefined,
     cursorStyle: block | underline | bar = null,
+    cursorWidth: Int | Double = null,
     disableStdin: js.UndefOr[Boolean] = js.undefined,
     drawBoldTextInBrightColors: js.UndefOr[Boolean] = js.undefined,
     fastScrollModifier: alt | ctrl | shift = null,
@@ -215,6 +225,7 @@ object ITerminalOptions {
     scrollback: Int | Double = null,
     tabStopWidth: Int | Double = null,
     theme: ITheme = null,
+    windowOptions: IWindowOptions = null,
     windowsMode: js.UndefOr[Boolean] = js.undefined,
     wordSeparator: String = null
   ): ITerminalOptions = {
@@ -226,6 +237,7 @@ object ITerminalOptions {
     if (!js.isUndefined(convertEol)) __obj.updateDynamic("convertEol")(convertEol.asInstanceOf[js.Any])
     if (!js.isUndefined(cursorBlink)) __obj.updateDynamic("cursorBlink")(cursorBlink.asInstanceOf[js.Any])
     if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
+    if (cursorWidth != null) __obj.updateDynamic("cursorWidth")(cursorWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStdin)) __obj.updateDynamic("disableStdin")(disableStdin.asInstanceOf[js.Any])
     if (!js.isUndefined(drawBoldTextInBrightColors)) __obj.updateDynamic("drawBoldTextInBrightColors")(drawBoldTextInBrightColors.asInstanceOf[js.Any])
     if (fastScrollModifier != null) __obj.updateDynamic("fastScrollModifier")(fastScrollModifier.asInstanceOf[js.Any])
@@ -248,6 +260,7 @@ object ITerminalOptions {
     if (scrollback != null) __obj.updateDynamic("scrollback")(scrollback.asInstanceOf[js.Any])
     if (tabStopWidth != null) __obj.updateDynamic("tabStopWidth")(tabStopWidth.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (windowOptions != null) __obj.updateDynamic("windowOptions")(windowOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(windowsMode)) __obj.updateDynamic("windowsMode")(windowsMode.asInstanceOf[js.Any])
     if (wordSeparator != null) __obj.updateDynamic("wordSeparator")(wordSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITerminalOptions]

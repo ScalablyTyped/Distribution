@@ -8,7 +8,7 @@ trait ChartChartArea extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var border: js.UndefOr[ChartChartAreaBorder] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[ChartChartAreaMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartChartAreaMargin] = js.undefined
   var opacity: js.UndefOr[Double] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -19,7 +19,7 @@ object ChartChartArea {
     background: String = null,
     border: ChartChartAreaBorder = null,
     height: Int | Double = null,
-    margin: ChartChartAreaMargin = null,
+    margin: Double | ChartChartAreaMargin = null,
     opacity: Int | Double = null,
     width: Int | Double = null
   ): ChartChartArea = {

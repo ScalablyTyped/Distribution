@@ -1,7 +1,7 @@
 
 # Scala.js typings for in-app-purchase
 
-Typings are for version 1.10
+Typings are for version 1.11
 
 ## Library description:
 In-App-Purchase validation and subscription management for iOS, Android, Amazon, and Windows

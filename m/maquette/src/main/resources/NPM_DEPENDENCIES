@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "maquette" : "3.3.4"
+      "maquette" : "3.3.6"
     }
   ],
   "test-dependencies" : [
     {
-      "maquette" : "3.3.4"
+      "maquette" : "3.3.6"
     }
   ],
   "compile-devDependencies" : [

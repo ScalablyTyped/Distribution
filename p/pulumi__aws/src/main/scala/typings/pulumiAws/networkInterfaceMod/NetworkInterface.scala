@@ -31,6 +31,13 @@ class NetworkInterface protected () extends CustomResource {
     * A description for the network interface.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  /**
+    * The MAC address of the network interface.
+    */
+  val macAddress: Output_[String] = js.native
+  /**
+    * The private DNS name of the network interface (IPv4).
+    */
   val privateDnsName: Output_[String] = js.native
   val privateIp: Output_[String] = js.native
   /**

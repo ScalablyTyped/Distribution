@@ -35,6 +35,10 @@ trait CreateFlowLogsRequest extends js.Object {
     */
   var LogGroupName: js.UndefOr[String] = js.native
   /**
+    * The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. You can specify 60 seconds (1 minute) or 600 seconds (10 minutes). When a network interface is attached to a Nitro-based instance, the aggregation interval is always 60 seconds or less, regardless of the value that you specify. Default: 600
+    */
+  var MaxAggregationInterval: js.UndefOr[Integer] = js.native
+  /**
     * The ID of the subnet, network interface, or VPC for which you want to create a flow log. Constraints: Maximum of 1000 resources
     */
   var ResourceIds: ValueStringList = js.native
@@ -60,7 +64,8 @@ object CreateFlowLogsRequest {
     LogDestination: String = null,
     LogDestinationType: LogDestinationType = null,
     LogFormat: String = null,
-    LogGroupName: String = null
+    LogGroupName: String = null,
+    MaxAggregationInterval: Int | scala.Double = null
   ): CreateFlowLogsRequest = {
     val __obj = js.Dynamic.literal(ResourceIds = ResourceIds.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], TrafficType = TrafficType.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
@@ -70,6 +75,7 @@ object CreateFlowLogsRequest {
     if (LogDestinationType != null) __obj.updateDynamic("LogDestinationType")(LogDestinationType.asInstanceOf[js.Any])
     if (LogFormat != null) __obj.updateDynamic("LogFormat")(LogFormat.asInstanceOf[js.Any])
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
+    if (MaxAggregationInterval != null) __obj.updateDynamic("MaxAggregationInterval")(MaxAggregationInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowLogsRequest]
   }
 }

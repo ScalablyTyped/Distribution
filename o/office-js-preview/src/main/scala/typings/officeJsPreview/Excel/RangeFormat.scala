@@ -157,7 +157,7 @@ class RangeFormat () extends ClientObject {
   var wrapText: Boolean = js.native
   /**
     *
-    * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters..
+    * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
     *
     * [Api set: ExcelApiOnline 1.1]
     *

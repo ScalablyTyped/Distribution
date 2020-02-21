@@ -15,13 +15,13 @@ trait UpdateDistributionConfigurationRequest extends js.Object {
     */
   var description: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the distribution configuration that you wish to update. 
+    *  The Amazon Resource Name (ARN) of the distribution configuration that you want to update. 
     */
   var distributionConfigurationArn: DistributionConfigurationArn = js.native
   /**
     *  The distributions of the distribution configuration. 
     */
-  var distributions: js.UndefOr[DistributionList] = js.native
+  var distributions: DistributionList = js.native
 }
 
 object UpdateDistributionConfigurationRequest {
@@ -29,12 +29,11 @@ object UpdateDistributionConfigurationRequest {
   def apply(
     clientToken: ClientToken,
     distributionConfigurationArn: DistributionConfigurationArn,
-    description: NonEmptyString = null,
-    distributions: DistributionList = null
+    distributions: DistributionList,
+    description: NonEmptyString = null
   ): UpdateDistributionConfigurationRequest = {
-    val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], distributionConfigurationArn = distributionConfigurationArn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], distributionConfigurationArn = distributionConfigurationArn.asInstanceOf[js.Any], distributions = distributions.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (distributions != null) __obj.updateDynamic("distributions")(distributions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDistributionConfigurationRequest]
   }
 }

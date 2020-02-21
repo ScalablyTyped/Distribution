@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tensorflow/tfjs" : "1.5.1"
+      "@tensorflow/tfjs" : "1.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@tensorflow/tfjs" : "1.5.1"
+      "@tensorflow/tfjs" : "1.5.2"
     }
   ],
   "compile-devDependencies" : [

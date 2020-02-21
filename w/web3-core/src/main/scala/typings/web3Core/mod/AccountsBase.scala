@@ -1,6 +1,7 @@
 package typings.web3Core.mod
 
 import typings.node.netMod.Socket
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,6 +29,10 @@ class AccountsBase () extends js.Object {
   def setProvider(provider: provider): Boolean = js.native
   def sign(data: String, privateKey: String): Sign = js.native
   def signTransaction(transactionConfig: TransactionConfig, privateKey: String): js.Promise[SignedTransaction] = js.native
-  def signTransaction(transactionConfig: TransactionConfig, privateKey: String, callback: js.Function0[Unit]): js.Promise[SignedTransaction] = js.native
+  def signTransaction(
+    transactionConfig: TransactionConfig,
+    privateKey: String,
+    callback: js.Function2[/* error */ Error, /* signedTransaction */ SignedTransaction, Unit]
+  ): js.Promise[SignedTransaction] = js.native
 }
 

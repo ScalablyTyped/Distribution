@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.LayoutChildComponentSystem
-  * @extends pc.ComponentSystem
-  * @description Create a new LayoutChildComponentSystem
+  * @augments pc.ComponentSystem
+  * @description Create a new LayoutChildComponentSystem.
   * @classdesc Manages creation of {@link pc.LayoutChildComponent}s.
-  * @param {pc.Application} app The application
+  * @param {pc.Application} app - The application.
   */
 @JSGlobal("pc.LayoutChildComponentSystem")
 @js.native

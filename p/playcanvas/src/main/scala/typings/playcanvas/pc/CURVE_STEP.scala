@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.CURVE_STEP
   * @description A stepped interpolater, free from the shackles of blending.
   */

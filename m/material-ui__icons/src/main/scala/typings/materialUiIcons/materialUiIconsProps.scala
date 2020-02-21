@@ -325,6 +325,21 @@ trait materialUiIconsProps {
   def AddCommentTwoToneProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
   type AddCommentTwoToneProps = SvgIconProps
   @scala.inline
+  def AddIcCallProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type AddIcCallProps = SvgIconProps
+  @scala.inline
+  def AddIcCallOutlinedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type AddIcCallOutlinedProps = SvgIconProps
+  @scala.inline
+  def AddIcCallRoundedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type AddIcCallRoundedProps = SvgIconProps
+  @scala.inline
+  def AddIcCallSharpProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type AddIcCallSharpProps = SvgIconProps
+  @scala.inline
+  def AddIcCallTwoToneProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type AddIcCallTwoToneProps = SvgIconProps
+  @scala.inline
   def AddLocationProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
   type AddLocationProps = SvgIconProps
   @scala.inline
@@ -8017,6 +8032,21 @@ trait materialUiIconsProps {
   def LibraryAddProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
   type LibraryAddProps = SvgIconProps
   @scala.inline
+  def LibraryAddCheckProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type LibraryAddCheckProps = SvgIconProps
+  @scala.inline
+  def LibraryAddCheckOutlinedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type LibraryAddCheckOutlinedProps = SvgIconProps
+  @scala.inline
+  def LibraryAddCheckRoundedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type LibraryAddCheckRoundedProps = SvgIconProps
+  @scala.inline
+  def LibraryAddCheckSharpProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type LibraryAddCheckSharpProps = SvgIconProps
+  @scala.inline
+  def LibraryAddCheckTwoToneProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
+  type LibraryAddCheckTwoToneProps = SvgIconProps
+  @scala.inline
   def LibraryAddOutlinedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
   type LibraryAddOutlinedProps = SvgIconProps
   @scala.inline
@@ -10476,35 +10506,5 @@ trait materialUiIconsProps {
   @scala.inline
   def PermIdentityTwoToneProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
   type PermIdentityTwoToneProps = SvgIconProps
-  @scala.inline
-  def PermMediaProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermMediaProps = SvgIconProps
-  @scala.inline
-  def PermMediaOutlinedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermMediaOutlinedProps = SvgIconProps
-  @scala.inline
-  def PermMediaRoundedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermMediaRoundedProps = SvgIconProps
-  @scala.inline
-  def PermMediaSharpProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermMediaSharpProps = SvgIconProps
-  @scala.inline
-  def PermMediaTwoToneProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermMediaTwoToneProps = SvgIconProps
-  @scala.inline
-  def PermPhoneMsgProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermPhoneMsgProps = SvgIconProps
-  @scala.inline
-  def PermPhoneMsgOutlinedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermPhoneMsgOutlinedProps = SvgIconProps
-  @scala.inline
-  def PermPhoneMsgRoundedProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermPhoneMsgRoundedProps = SvgIconProps
-  @scala.inline
-  def PermPhoneMsgSharpProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermPhoneMsgSharpProps = SvgIconProps
-  @scala.inline
-  def PermPhoneMsgTwoToneProps: SvgIconProps.type = typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-  type PermPhoneMsgTwoToneProps = SvgIconProps
 }
 

@@ -9,12 +9,12 @@ trait ComponentConfiguration extends js.Object {
   /**
     *  The Amazon Resource Name (ARN) of the component. 
     */
-  var componentArn: ComponentBuildVersionArn = js.native
+  var componentArn: ComponentVersionArnOrBuildVersionArn = js.native
 }
 
 object ComponentConfiguration {
   @scala.inline
-  def apply(componentArn: ComponentBuildVersionArn): ComponentConfiguration = {
+  def apply(componentArn: ComponentVersionArnOrBuildVersionArn): ComponentConfiguration = {
     val __obj = js.Dynamic.literal(componentArn = componentArn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ComponentConfiguration]

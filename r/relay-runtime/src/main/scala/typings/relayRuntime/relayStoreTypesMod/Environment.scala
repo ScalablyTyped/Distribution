@@ -3,7 +3,6 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.AnonCacheConfig
 import typings.relayRuntime.AnonKey
 import typings.relayRuntime.AnonOperation
-import typings.relayRuntime.relayNetworkLoggerTransactionMod.LoggerTransactionConfig
 import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
 import typings.relayRuntime.relayNetworkTypesMod.Network
 import typings.relayRuntime.relayNetworkTypesMod.PayloadData
@@ -14,17 +13,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Environment extends js.Object {
   /**
     * Apply an optimistic mutation response and/or updater. The mutation can be
     * reverted by calling `dispose()` on the returned value.
     */
-  def applyMutation(optimisticConfig: OptimisticResponseConfig): Disposable
+  def applyMutation(optimisticConfig: OptimisticResponseConfig): Disposable = js.native
   /**
     * Apply an optimistic update to the environment. The mutation can be reverted
     * by calling `dispose()` on the returned value.
     */
-  def applyUpdate(optimisticUpdate: OptimisticUpdateFunction): Disposable
+  def applyUpdate(optimisticUpdate: OptimisticUpdateFunction): Disposable = js.native
   /**
     * Determine if the operation can be resolved with data in the store (i.e. no
     * fields are missing).
@@ -33,17 +33,18 @@ trait Environment extends js.Object {
     * cache and therefore takes time proportional to the size/complexity of the
     * selector.
     */
-  def check(operation: OperationDescriptor): Boolean
+  def check(operation: OperationDescriptor): OperationAvailability = js.native
+  def check(operation: OperationDescriptor, options: CheckOptions): OperationAvailability = js.native
   /**
     * Commit a payload to the environment using the given operation selector.
     */
-  def commitPayload(operationDescriptor: OperationDescriptor, payload: PayloadData): Unit
+  def commitPayload(operationDescriptor: OperationDescriptor, payload: PayloadData): Unit = js.native
   /**
     * Commit an updater to the environment. This mutation cannot be reverted and
     * should therefore not be used for optimistic updates. This is mainly
     * intended for updating fields from client schema extensions.
     */
-  def commitUpdate(updater: StoreUpdater): Unit
+  def commitUpdate(updater: StoreUpdater): Unit = js.native
   /**
     * Send a query to the server with Observer semantics: one or more
     * responses may be returned (via `next`) over time followed by either
@@ -55,7 +56,7 @@ trait Environment extends js.Object {
     * Note: Observables are lazy, so calling this method will do nothing until
     * the result is subscribed to: environment.execute({...}).subscribe({...}).
     */
-  def execute(config: AnonCacheConfig): RelayObservable[GraphQLResponse]
+  def execute(config: AnonCacheConfig): RelayObservable[GraphQLResponse] = js.native
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Mutation operation, the result of which is then normalized and
@@ -66,7 +67,7 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeMutation({...}).subscribe({...}).
     */
-  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: AnonKey): RelayObservable[GraphQLResponse]
+  def executeMutation(hasOperationOptimisticUpdaterOptimisticResponseUpdaterUploadables: AnonKey): RelayObservable[GraphQLResponse] = js.native
   /**
     * Returns an Observable of GraphQLResponse resulting from executing the
     * provided Query or Subscription operation responses, the result of which is
@@ -76,65 +77,36 @@ trait Environment extends js.Object {
     * the result is subscribed to:
     * environment.executeWithSource({...}).subscribe({...}).
     */
-  def executeWithSource(hasOperationSource: AnonOperation): RelayObservable[GraphQLResponse]
-  /**
-    * Get an instance of a logger
-    */
-  def getLogger(config: LoggerTransactionConfig): js.UndefOr[Logger | Null]
+  def executeWithSource(hasOperationSource: AnonOperation): RelayObservable[GraphQLResponse] = js.native
   /**
     * Get the environment's internal Network.
     */
-  def getNetwork(): Network
+  def getNetwork(): Network = js.native
   /**
     * Returns the environment specific OperationTracker.
     */
-  def getOperationTracker(): RelayOperationTracker
+  def getOperationTracker(): RelayOperationTracker = js.native
   /**
     * Get the environment's internal Store.
     */
-  def getStore(): Store
+  def getStore(): Store = js.native
   /**
     * Read the results of a selector from in-memory records in the store.
     * Optionally takes an owner, corresponding to the operation that
     * owns this selector (fragment).
     */
-  def lookup(selector: SingularReaderSelector): Snapshot
+  def lookup(selector: SingularReaderSelector): Snapshot = js.native
   /**
     * Ensure that all the records necessary to fulfill the given operation are
     * retained in-memory. The records will not be eligible for garbage collection
     * until the returned reference is disposed.
     */
-  def retain(operation: OperationDescriptor): Disposable
+  def retain(operation: OperationDescriptor): Disposable = js.native
   /**
     * Subscribe to changes to the results of a selector. The callback is called
     * when data has been committed to the store that would cause the results of
     * the snapshot's selector to change.
     */
-  def subscribe(snapshot: Snapshot, callback: js.Function1[/* snapshot */ Snapshot, Unit]): Disposable
-}
-
-object Environment {
-  @scala.inline
-  def apply(
-    applyMutation: OptimisticResponseConfig => Disposable,
-    applyUpdate: OptimisticUpdateFunction => Disposable,
-    check: OperationDescriptor => Boolean,
-    commitPayload: (OperationDescriptor, PayloadData) => Unit,
-    commitUpdate: StoreUpdater => Unit,
-    execute: AnonCacheConfig => RelayObservable[GraphQLResponse],
-    executeMutation: AnonKey => RelayObservable[GraphQLResponse],
-    executeWithSource: AnonOperation => RelayObservable[GraphQLResponse],
-    getLogger: LoggerTransactionConfig => js.UndefOr[Logger | Null],
-    getNetwork: () => Network,
-    getOperationTracker: () => RelayOperationTracker,
-    getStore: () => Store,
-    lookup: SingularReaderSelector => Snapshot,
-    retain: OperationDescriptor => Disposable,
-    subscribe: (Snapshot, js.Function1[/* snapshot */ Snapshot, Unit]) => Disposable
-  ): Environment = {
-    val __obj = js.Dynamic.literal(applyMutation = js.Any.fromFunction1(applyMutation), applyUpdate = js.Any.fromFunction1(applyUpdate), check = js.Any.fromFunction1(check), commitPayload = js.Any.fromFunction2(commitPayload), commitUpdate = js.Any.fromFunction1(commitUpdate), execute = js.Any.fromFunction1(execute), executeMutation = js.Any.fromFunction1(executeMutation), executeWithSource = js.Any.fromFunction1(executeWithSource), getLogger = js.Any.fromFunction1(getLogger), getNetwork = js.Any.fromFunction0(getNetwork), getOperationTracker = js.Any.fromFunction0(getOperationTracker), getStore = js.Any.fromFunction0(getStore), lookup = js.Any.fromFunction1(lookup), retain = js.Any.fromFunction1(retain), subscribe = js.Any.fromFunction2(subscribe))
-  
-    __obj.asInstanceOf[Environment]
-  }
+  def subscribe(snapshot: Snapshot, callback: js.Function1[/* snapshot */ Snapshot, Unit]): Disposable = js.native
 }
 

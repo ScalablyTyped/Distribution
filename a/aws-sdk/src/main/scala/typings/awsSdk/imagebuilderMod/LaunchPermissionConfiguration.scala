@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LaunchPermissionConfiguration extends js.Object {
   /**
-    *  
+    * The name of the group. 
     */
   var userGroups: js.UndefOr[StringList] = js.native
   /**
-    *  
+    *  The AWS account ID. 
     */
   var userIds: js.UndefOr[AccountList] = js.native
 }

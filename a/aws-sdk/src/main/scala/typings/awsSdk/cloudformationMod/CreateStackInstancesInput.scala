@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateStackInstancesInput extends js.Object {
   /**
-    * The names of one or more AWS accounts that you want to create stack instances in the specified region(s) for.
+    * [Self-managed permissions] The names of one or more AWS accounts that you want to create stack instances in the specified region(s) for. You can specify Accounts or DeploymentTargets, but not both.
     */
-  var Accounts: AccountList = js.native
+  var Accounts: js.UndefOr[AccountList] = js.native
+  /**
+    * [Service-managed permissions] The AWS Organizations accounts for which to create stack instances in the specified Regions. You can specify Accounts or DeploymentTargets, but not both.
+    */
+  var DeploymentTargets: js.UndefOr[typings.awsSdk.cloudformationMod.DeploymentTargets] = js.native
   /**
     * The unique identifier for this stack set operation.  The operation ID also functions as an idempotency token, to ensure that AWS CloudFormation performs the stack set operation only once, even if you retry the request multiple times. You might retry stack set operation requests to ensure that AWS CloudFormation successfully received them. If you don't specify an operation ID, the SDK generates one automatically.  Repeating this stack set operation with a new operation ID retries all stack instances whose status is OUTDATED. 
     */
@@ -35,14 +39,17 @@ trait CreateStackInstancesInput extends js.Object {
 object CreateStackInstancesInput {
   @scala.inline
   def apply(
-    Accounts: AccountList,
     Regions: RegionList,
     StackSetName: StackSetName,
+    Accounts: AccountList = null,
+    DeploymentTargets: DeploymentTargets = null,
     OperationId: ClientRequestToken = null,
     OperationPreferences: StackSetOperationPreferences = null,
     ParameterOverrides: Parameters = null
   ): CreateStackInstancesInput = {
-    val __obj = js.Dynamic.literal(Accounts = Accounts.asInstanceOf[js.Any], Regions = Regions.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Regions = Regions.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
+    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
+    if (DeploymentTargets != null) __obj.updateDynamic("DeploymentTargets")(DeploymentTargets.asInstanceOf[js.Any])
     if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
     if (OperationPreferences != null) __obj.updateDynamic("OperationPreferences")(OperationPreferences.asInstanceOf[js.Any])
     if (ParameterOverrides != null) __obj.updateDynamic("ParameterOverrides")(ParameterOverrides.asInstanceOf[js.Any])

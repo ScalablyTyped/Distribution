@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object personaBaseMod extends js.Object {
   @js.native
   class PersonaBase protected ()
-    extends BaseComponent[IPersonaProps, js.Object] {
+    extends Component[IPersonaProps, js.Object, js.Any] {
     def this(props: IPersonaProps) = this()
     /**
       * Deprecation helper for getting text.

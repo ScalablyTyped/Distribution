@@ -24,6 +24,10 @@ trait ClientRequestArgs extends js.Object {
   var host: js.UndefOr[String | Null] = js.undefined
   var hostname: js.UndefOr[String | Null] = js.undefined
   var localAddress: js.UndefOr[String] = js.undefined
+  /**
+    * @default 8192
+    */
+  var maxHeaderSize: js.UndefOr[Double] = js.undefined
   var method: js.UndefOr[String] = js.undefined
   var path: js.UndefOr[String | Null] = js.undefined
   var port: js.UndefOr[Double | String | Null] = js.undefined
@@ -46,6 +50,7 @@ object ClientRequestArgs {
     host: String = null,
     hostname: String = null,
     localAddress: String = null,
+    maxHeaderSize: Int | Double = null,
     method: String = null,
     path: String = null,
     port: Double | String = null,
@@ -65,6 +70,7 @@ object ClientRequestArgs {
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (maxHeaderSize != null) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

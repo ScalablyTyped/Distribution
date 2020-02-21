@@ -108,6 +108,11 @@ trait ScrollViewPropsIOS extends js.Object {
     */
   var onScrollAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
+    * Fires when the scroll view scrolls to top after the status bar has been tapped
+    * @platform ios
+    */
+  var onScrollToTop: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
+  /**
     * When true, ScrollView allows use of pinch gestures to zoom in and out.
     * The default value is true.
     */
@@ -127,6 +132,12 @@ trait ScrollViewPropsIOS extends js.Object {
     */
   var scrollIndicatorInsets: js.UndefOr[Insets] = js.undefined
    //zeroes
+  /**
+    * When true, the scroll view can be programmatically scrolled beyond its
+    * content size. The default value is false.
+    * @platform ios
+    */
+  var scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined
   /**
     * When true the scroll view scrolls to top when the status bar is tapped.
     * The default value is true.
@@ -165,9 +176,11 @@ object ScrollViewPropsIOS {
     maximumZoomScale: Int | Double = null,
     minimumZoomScale: Int | Double = null,
     onScrollAnimationEnd: () => Unit = null,
+    onScrollToTop: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     pinchGestureEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollEventThrottle: Int | Double = null,
     scrollIndicatorInsets: Insets = null,
+    scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollsToTop: js.UndefOr[Boolean] = js.undefined,
     stickyHeaderIndices: js.Array[Double] = null,
     zoomScale: Int | Double = null
@@ -189,9 +202,11 @@ object ScrollViewPropsIOS {
     if (maximumZoomScale != null) __obj.updateDynamic("maximumZoomScale")(maximumZoomScale.asInstanceOf[js.Any])
     if (minimumZoomScale != null) __obj.updateDynamic("minimumZoomScale")(minimumZoomScale.asInstanceOf[js.Any])
     if (onScrollAnimationEnd != null) __obj.updateDynamic("onScrollAnimationEnd")(js.Any.fromFunction0(onScrollAnimationEnd))
+    if (onScrollToTop != null) __obj.updateDynamic("onScrollToTop")(js.Any.fromFunction1(onScrollToTop))
     if (!js.isUndefined(pinchGestureEnabled)) __obj.updateDynamic("pinchGestureEnabled")(pinchGestureEnabled.asInstanceOf[js.Any])
     if (scrollEventThrottle != null) __obj.updateDynamic("scrollEventThrottle")(scrollEventThrottle.asInstanceOf[js.Any])
     if (scrollIndicatorInsets != null) __obj.updateDynamic("scrollIndicatorInsets")(scrollIndicatorInsets.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToOverflowEnabled)) __obj.updateDynamic("scrollToOverflowEnabled")(scrollToOverflowEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop.asInstanceOf[js.Any])
     if (stickyHeaderIndices != null) __obj.updateDynamic("stickyHeaderIndices")(stickyHeaderIndices.asInstanceOf[js.Any])
     if (zoomScale != null) __obj.updateDynamic("zoomScale")(zoomScale.asInstanceOf[js.Any])

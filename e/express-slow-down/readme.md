@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-slow-down
 
-Typings are for version 1.1
+Typings are for version 1.3
 
 ## Library description:
 Basic IP rate-limiting middleware for Express that slows down responses rather than blocking the user.

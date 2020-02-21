@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stellar-base" : "2.1.3"
+      "stellar-base" : "2.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "stellar-base" : "2.1.3"
+      "stellar-base" : "2.1.4"
     }
   ],
   "compile-devDependencies" : [

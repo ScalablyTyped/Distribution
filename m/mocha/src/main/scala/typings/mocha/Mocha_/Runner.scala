@@ -398,6 +398,7 @@ class Runner protected () extends EventEmitter {
 @JSGlobal("Mocha.Runner")
 @js.native
 object Runner extends js.Object {
+  val constants: RunnerConstants = js.native
   /**
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */

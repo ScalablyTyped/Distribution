@@ -1,13 +1,13 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.Endpoint
-import typings.octokitRest.mod.EndpointOptions
-import typings.octokitRest.mod.ReposGetCommitParams
-import typings.octokitRest.mod.ReposGetCommitParamsDeprecatedCommitSha
-import typings.octokitRest.mod.ReposGetCommitParamsDeprecatedSha
-import typings.octokitRest.mod.ReposGetCommitResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.Endpoint
+import typings.octokitRest.mod.Octokit.EndpointOptions
+import typings.octokitRest.mod.Octokit.ReposGetCommitParams
+import typings.octokitRest.mod.Octokit.ReposGetCommitParamsDeprecatedCommitSha
+import typings.octokitRest.mod.Octokit.ReposGetCommitParamsDeprecatedSha
+import typings.octokitRest.mod.Octokit.ReposGetCommitResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

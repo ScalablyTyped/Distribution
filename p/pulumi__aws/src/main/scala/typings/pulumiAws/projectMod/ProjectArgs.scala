@@ -73,6 +73,10 @@ trait ProjectArgs extends js.Object {
     */
   val source: Input[ProjectSource] = js.native
   /**
+    * A version of the build input to be built for this project. If not specified, the latest version is used.
+    */
+  val sourceVersion: js.UndefOr[Input[String]] = js.native
+  /**
     * A mapping of tags to assign to the resource.
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
@@ -99,6 +103,7 @@ object ProjectArgs {
     queuedTimeout: Input[Double] = null,
     secondaryArtifacts: Input[js.Array[Input[ProjectSecondaryArtifact]]] = null,
     secondarySources: Input[js.Array[Input[ProjectSecondarySource]]] = null,
+    sourceVersion: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     vpcConfig: Input[ProjectVpcConfig] = null
   ): ProjectArgs = {
@@ -113,6 +118,7 @@ object ProjectArgs {
     if (queuedTimeout != null) __obj.updateDynamic("queuedTimeout")(queuedTimeout.asInstanceOf[js.Any])
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
     if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])
+    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectArgs]

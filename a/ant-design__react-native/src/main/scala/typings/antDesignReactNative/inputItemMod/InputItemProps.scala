@@ -48,6 +48,7 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.never
 import typings.antDesignReactNative.antDesignReactNativeStrings.newPassword
 import typings.antDesignReactNative.antDesignReactNativeStrings.nickname
 import typings.antDesignReactNative.antDesignReactNativeStrings.no
+import typings.antDesignReactNative.antDesignReactNativeStrings.noExcludeDescendants
 import typings.antDesignReactNative.antDesignReactNativeStrings.none
 import typings.antDesignReactNative.antDesignReactNativeStrings.number
 import typings.antDesignReactNative.antDesignReactNativeStrings.off
@@ -71,6 +72,7 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.top
 import typings.antDesignReactNative.antDesignReactNativeStrings.username
 import typings.antDesignReactNative.antDesignReactNativeStrings.words
 import typings.antDesignReactNative.antDesignReactNativeStrings.yes
+import typings.antDesignReactNative.antDesignReactNativeStrings.yesExcludeDescendants
 import typings.antDesignReactNative.inputItemPropsTypeMod.InputEventHandler
 import typings.react.mod.ReactNode
 import typings.reactNative.AnonEndStart
@@ -143,6 +145,7 @@ trait InputItemProps extends js.Object {
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   var hitSlop: js.UndefOr[Insets] = js.undefined
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  var importantForAutofill: js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants] = js.undefined
   var inlineImageLeft: js.UndefOr[String] = js.undefined
   var inlineImagePadding: js.UndefOr[Double] = js.undefined
   var inputAccessoryViewID: js.UndefOr[String] = js.undefined
@@ -200,9 +203,11 @@ trait InputItemProps extends js.Object {
   var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   var onVirtualKeyboardConfirm: js.UndefOr[InputEventHandler] = js.undefined
+  var passwordRules: js.UndefOr[String] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var placeholderTextColor: js.UndefOr[String] = js.undefined
   var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  var rejectResponderTermination: js.UndefOr[Boolean] = js.undefined
   var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   var returnKeyLabel: js.UndefOr[String] = js.undefined
@@ -274,6 +279,7 @@ object InputItemProps {
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
+    importantForAutofill: auto | no | noExcludeDescendants | yes | yesExcludeDescendants = null,
     inlineImageLeft: String = null,
     inlineImagePadding: Int | Double = null,
     inputAccessoryViewID: String = null,
@@ -325,9 +331,11 @@ object InputItemProps {
     onTouchMove: /* event */ GestureResponderEvent => Unit = null,
     onTouchStart: /* event */ GestureResponderEvent => Unit = null,
     onVirtualKeyboardConfirm: /* value */ js.UndefOr[String] => Unit = null,
+    passwordRules: String = null,
     placeholder: String = null,
     placeholderTextColor: String = null,
     pointerEvents: `box-none` | none | `box-only` | auto = null,
+    rejectResponderTermination: js.UndefOr[Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     returnKeyLabel: String = null,
@@ -394,6 +402,7 @@ object InputItemProps {
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (importantForAutofill != null) __obj.updateDynamic("importantForAutofill")(importantForAutofill.asInstanceOf[js.Any])
     if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft.asInstanceOf[js.Any])
     if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
     if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID.asInstanceOf[js.Any])
@@ -445,9 +454,11 @@ object InputItemProps {
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (onVirtualKeyboardConfirm != null) __obj.updateDynamic("onVirtualKeyboardConfirm")(js.Any.fromFunction1(onVirtualKeyboardConfirm))
+    if (passwordRules != null) __obj.updateDynamic("passwordRules")(passwordRules.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectResponderTermination)) __obj.updateDynamic("rejectResponderTermination")(rejectResponderTermination.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
     if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel.asInstanceOf[js.Any])

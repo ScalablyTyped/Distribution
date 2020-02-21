@@ -7,35 +7,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.SoundSlot
-  * @extends pc.EventHandler
+  * @augments pc.EventHandler
   * @classdesc The SoundSlot controls playback of an audio asset.
-  * @description Create a new SoundSlot
-  * @param {pc.SoundComponent} component The Component that created this slot.
-  * @param {String} name The name of the slot.
-  * @param {Object} options Settings for the slot
-  * @param {Number} [options.volume=1] The playback volume, between 0 and 1.
-  * @param {Number} [options.pitch=1] The relative pitch, default of 1, plays at normal pitch.
-  * @param {Boolean} [options.loop=false] If true the sound will restart when it reaches the end.
-  * @param {Number} [options.startTime=0] The start time from which the sound will start playing.
-  * @param {Number} [options.duration=null] The duration of the sound that the slot will play starting from startTime.
-  * @param {Boolean} [options.overlap=false] If true then sounds played from slot will be played independently of each other. Otherwise the slot will first stop the current sound before starting the new one.
-  * @param {Boolean} [options.autoPlay=false] If true the slot will start playing as soon as its audio asset is loaded.
-  * @param {Number} [options.asset=null] The asset id of the audio asset that is going to be played by this slot.
-  * @property {String} name The name of the slot
-  * @property {String} asset The asset id
-  * @property {Boolean} autoPlay If true the slot will begin playing as soon as it is loaded
-  * @property {Number} volume The volume modifier to play the sound with. In range 0-1.
-  * @property {Number} pitch The pitch modifier to play the sound with. Must be larger than 0.01
-  * @property {Number} startTime The start time from which the sound will start playing.
-  * @property {Number} duration The duration of the sound that the slot will play starting from startTime.
-  * @property {Boolean} loop If true the slot will restart when it finishes playing
-  * @property {Boolean} overlap If true then sounds played from slot will be played independently of each other. Otherwise the slot will first stop the current sound before starting the new one.
-  * @property {Boolean} isLoaded Returns true if the asset of the slot is loaded.
-  * @property {Boolean} isPlaying Returns true if the slot is currently playing.
-  * @property {Boolean} isPaused Returns true if the slot is currently paused.
-  * @property {Boolean} isStopped Returns true if the slot is currently stopped.
+  * @description Create a new SoundSlot.
+  * @param {pc.SoundComponent} component - The Component that created this slot.
+  * @param {string} name - The name of the slot.
+  * @param {object} options - Settings for the slot.
+  * @param {number} [options.volume=1] - The playback volume, between 0 and 1.
+  * @param {number} [options.pitch=1] - The relative pitch, default of 1, plays at normal pitch.
+  * @param {boolean} [options.loop=false] - If true the sound will restart when it reaches the end.
+  * @param {number} [options.startTime=0] - The start time from which the sound will start playing.
+  * @param {number} [options.duration=null] - The duration of the sound that the slot will play starting from startTime.
+  * @param {boolean} [options.overlap=false] - If true then sounds played from slot will be played independently of each other. Otherwise the slot will first stop the current sound before starting the new one.
+  * @param {boolean} [options.autoPlay=false] - If true the slot will start playing as soon as its audio asset is loaded.
+  * @param {number} [options.asset=null] - The asset id of the audio asset that is going to be played by this slot.
+  * @property {string} name The name of the slot.
+  * @property {string} asset The asset id.
+  * @property {boolean} autoPlay If true the slot will begin playing as soon as it is loaded.
+  * @property {number} volume The volume modifier to play the sound with. In range 0-1.
+  * @property {number} pitch The pitch modifier to play the sound with. Must be larger than 0.01.
+  * @property {number} startTime The start time from which the sound will start playing.
+  * @property {number} duration The duration of the sound that the slot will play starting from startTime.
+  * @property {boolean} loop If true the slot will restart when it finishes playing.
+  * @property {boolean} overlap If true then sounds played from slot will be played independently of each other. Otherwise the slot will first stop the current sound before starting the new one.
+  * @property {boolean} isLoaded Returns true if the asset of the slot is loaded.
+  * @property {boolean} isPlaying Returns true if the slot is currently playing.
+  * @property {boolean} isPaused Returns true if the slot is currently paused.
+  * @property {boolean} isStopped Returns true if the slot is currently stopped.
   * @property {pc.SoundInstance[]} instances An array that contains all the {@link pc.SoundInstance}s currently being played by the slot.
   */
 @JSGlobal("pc.SoundSlot")
@@ -43,11 +43,11 @@ import scala.scalajs.js.annotation._
 class SoundSlot protected () extends EventHandler {
   def this(component: SoundComponent, name: String, options: AnonAsset) = this()
   /**
-    * The asset id
+    * The asset id.
     */
   var asset: String = js.native
   /**
-    * If true the slot will begin playing as soon as it is loaded
+    * If true the slot will begin playing as soon as it is loaded.
     */
   var autoPlay: Boolean = js.native
   /**
@@ -75,11 +75,11 @@ class SoundSlot protected () extends EventHandler {
     */
   var isStopped: Boolean = js.native
   /**
-    * If true the slot will restart when it finishes playing
+    * If true the slot will restart when it finishes playing.
     */
   var loop: Boolean = js.native
   /**
-    * The name of the slot
+    * The name of the slot.
     */
   var name: String = js.native
   /**
@@ -87,7 +87,7 @@ class SoundSlot protected () extends EventHandler {
     */
   var overlap: Boolean = js.native
   /**
-    * The pitch modifier to play the sound with. Must be larger than 0.01
+    * The pitch modifier to play the sound with. Must be larger than 0.01.
     */
   var pitch: Double = js.native
   /**
@@ -121,7 +121,7 @@ class SoundSlot protected () extends EventHandler {
     * @function
     * @name pc.SoundSlot#pause
     * @description Pauses all sound instances. To continue playback call {@link pc.SoundSlot#resume}.
-    * @returns {Boolean} true if the sound instances paused successfully, false otherwise.
+    * @returns {boolean} True if the sound instances paused successfully, false otherwise.
     */
   def pause(): Boolean = js.native
   /**
@@ -129,14 +129,14 @@ class SoundSlot protected () extends EventHandler {
     * @description Plays a sound. If {@link pc.SoundSlot#overlap} is true the new sound
     * instance will be played independently of any other instances already playing.
     * Otherwise existing sound instances will stop before playing the new sound.
-    * @returns {pc.SoundInstance} The new sound instance
+    * @returns {pc.SoundInstance} The new sound instance.
     */
   def play(): SoundInstance = js.native
   /**
     * @function
     * @name pc.SoundSlot#resume
     * @description Resumes playback of all paused sound instances.
-    * @returns {Boolean} True if any instances were resumed.
+    * @returns {boolean} True if any instances were resumed.
     */
   def resume(): Boolean = js.native
   /**
@@ -146,8 +146,8 @@ class SoundSlot protected () extends EventHandler {
     * automatically attach the specified nodes to the source that plays the sound. You need to pass
     * the first node of the node graph that you created externally and the last node of that graph. The first
     * node will be connected to the audio source and the last node will be connected to the destination of the AudioContext (e.g. speakers).
-    * @param {AudioNode} firstNode The first node that will be connected to the audio source of sound instances.
-    * @param {AudioNode} [lastNode] The last node that will be connected to the destination of the AudioContext.
+    * @param {AudioNode} firstNode - The first node that will be connected to the audio source of sound instances.
+    * @param {AudioNode} [lastNode] - The last node that will be connected to the destination of the AudioContext.
     * If unspecified then the firstNode will be connected to the destination instead.
     * @example
     * var context = app.systems.sound.context;
@@ -164,7 +164,7 @@ class SoundSlot protected () extends EventHandler {
     * @function
     * @name pc.SoundSlot#stop
     * @description Stops playback of all sound instances.
-    * @returns {Boolean} True if any instances were stopped.
+    * @returns {boolean} True if any instances were stopped.
     */
   def stop(): Boolean = js.native
 }

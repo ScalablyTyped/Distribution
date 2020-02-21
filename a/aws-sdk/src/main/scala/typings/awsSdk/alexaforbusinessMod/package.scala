@@ -88,6 +88,7 @@ package object alexaforbusinessMod {
     - java.lang.String
   */
   type ConnectionStatus = typings.awsSdk.alexaforbusinessMod._ConnectionStatus | java.lang.String
+  type ConnectionStatusUpdatedTime = typings.std.Date
   type ContactDataList = js.Array[typings.awsSdk.alexaforbusinessMod.ContactData]
   type ContactName = java.lang.String
   type CountryCode = java.lang.String
@@ -95,6 +96,7 @@ package object alexaforbusinessMod {
   type CustomerS3BucketName = java.lang.String
   type Date = java.lang.String
   type DeveloperName = java.lang.String
+  type DeviceDataCreatedTime = typings.std.Date
   type DeviceDataList = js.Array[typings.awsSdk.alexaforbusinessMod.DeviceData]
   type DeviceEventList = js.Array[typings.awsSdk.alexaforbusinessMod.DeviceEvent]
   type DeviceEventTime = typings.std.Date

@@ -1,5 +1,6 @@
 package typings.pulumiAws.gameSessionQueueMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.gamelift.GameSessionQueuePlayerLatencyPolicy
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -39,6 +40,10 @@ class GameSessionQueue protected () extends CustomResource {
     * One or more policies used to choose fleet based on player latency. See below.
     */
   val playerLatencyPolicies: Output_[js.UndefOr[js.Array[GameSessionQueuePlayerLatencyPolicy]]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Maximum time a game session request can remain in the queue.
     */

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModifyDBSubnetGroupMessage extends js.Object {
   /**
-    * The description for the DB subnet group.
+    * The description for the subnet group.
     */
   var DBSubnetGroupDescription: js.UndefOr[String] = js.native
   /**
-    * The name for the DB subnet group. This value is stored as a lowercase string. You can't modify the default subnet group.  Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
+    * The name for the subnet group. This value is stored as a lowercase string. You can't modify the default subnet group.  Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
     */
   var DBSubnetGroupName: String = js.native
   /**
-    * The Amazon EC2 subnet IDs for the DB subnet group.
+    * The Amazon EC2 subnet IDs for the subnet group.
     */
   var SubnetIds: SubnetIdentifierList = js.native
 }

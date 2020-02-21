@@ -14,11 +14,13 @@ package object robomakerMod {
   type Architecture = typings.awsSdk.robomakerMod._Architecture | java.lang.String
   type Arn = java.lang.String
   type Arns = js.Array[typings.awsSdk.robomakerMod.Arn]
+  type BatchTimeoutInSeconds = scala.Double
   type Boolean = scala.Boolean
   type BoxedBoolean = scala.Boolean
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.robomakerMod.ClientApiVersions
   type ClientRequestToken = java.lang.String
   type Command = java.lang.String
+  type CreateSimulationJobRequests = js.Array[typings.awsSdk.robomakerMod.SimulationJobRequest]
   type CreatedAt = typings.std.Date
   type DataSourceConfigs = js.Array[typings.awsSdk.robomakerMod.DataSourceConfig]
   type DataSourceNames = js.Array[typings.awsSdk.robomakerMod.Name]
@@ -62,6 +64,8 @@ package object robomakerMod {
   type EnvironmentVariableKey = java.lang.String
   type EnvironmentVariableMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.robomakerMod.EnvironmentVariableValue]
   type EnvironmentVariableValue = java.lang.String
+  type FailedAt = typings.std.Date
+  type FailedCreateSimulationJobRequests = js.Array[typings.awsSdk.robomakerMod.FailedCreateSimulationJobRequest]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Fail_
     - typings.awsSdk.awsSdkStrings.Continue_
@@ -75,9 +79,11 @@ package object robomakerMod {
   type GenericString = java.lang.String
   type IamRole = java.lang.String
   type Id = java.lang.String
+  type Integer = scala.Double
   type JobDuration = scala.Double
   type LastStartedAt = typings.std.Date
   type LastUpdatedAt = typings.std.Date
+  type MaxConcurrency = scala.Double
   type MaxResults = scala.Double
   type Name = java.lang.String
   type NonEmptyString = java.lang.String
@@ -140,6 +146,21 @@ package object robomakerMod {
   type SimulationApplicationConfigs = js.Array[typings.awsSdk.robomakerMod.SimulationApplicationConfig]
   type SimulationApplicationNames = js.Array[typings.awsSdk.robomakerMod.Name]
   type SimulationApplicationSummaries = js.Array[typings.awsSdk.robomakerMod.SimulationApplicationSummary]
+  type SimulationJobBatchErrorCode = typings.awsSdk.awsSdkStrings.InternalServiceError | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.Pending_
+    - typings.awsSdk.awsSdkStrings.InProgress_
+    - typings.awsSdk.awsSdkStrings.Failed_
+    - typings.awsSdk.awsSdkStrings.Completed_
+    - typings.awsSdk.awsSdkStrings.Canceled_
+    - typings.awsSdk.awsSdkStrings.Canceling_
+    - typings.awsSdk.awsSdkStrings.Completing_
+    - typings.awsSdk.awsSdkStrings.TimingOut
+    - typings.awsSdk.awsSdkStrings.TimedOut_
+    - java.lang.String
+  */
+  type SimulationJobBatchStatus = typings.awsSdk.robomakerMod._SimulationJobBatchStatus | java.lang.String
+  type SimulationJobBatchSummaries = js.Array[typings.awsSdk.robomakerMod.SimulationJobBatchSummary]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.InternalServiceError
     - typings.awsSdk.awsSdkStrings.RobotApplicationCrash
@@ -155,10 +176,14 @@ package object robomakerMod {
     - typings.awsSdk.awsSdkStrings.InvalidBundleRobotApplication
     - typings.awsSdk.awsSdkStrings.InvalidBundleSimulationApplication
     - typings.awsSdk.awsSdkStrings.InvalidS3Resource
+    - typings.awsSdk.awsSdkStrings.LimitExceeded
     - typings.awsSdk.awsSdkStrings.MismatchedEtag
     - typings.awsSdk.awsSdkStrings.RobotApplicationVersionMismatchedEtag
     - typings.awsSdk.awsSdkStrings.SimulationApplicationVersionMismatchedEtag
     - typings.awsSdk.awsSdkStrings.ResourceNotFound
+    - typings.awsSdk.awsSdkStrings.RequestThrottled
+    - typings.awsSdk.awsSdkStrings.BatchTimedOut
+    - typings.awsSdk.awsSdkStrings.BatchCanceled
     - typings.awsSdk.awsSdkStrings.InvalidInput
     - typings.awsSdk.awsSdkStrings.WrongRegionS3Bucket
     - typings.awsSdk.awsSdkStrings.WrongRegionS3Output

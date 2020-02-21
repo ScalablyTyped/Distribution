@@ -9,7 +9,7 @@ trait CellObject extends js.Object {
   /** Range of enclosing array if formula is array formula (if applicable) */
   var F: js.UndefOr[String] = js.undefined
   /** Comments associated with the cell */
-  var c: js.UndefOr[js.Array[Comment]] = js.undefined
+  var c: js.UndefOr[Comments] = js.undefined
   /** Cell formula (if applicable) */
   var f: js.UndefOr[String] = js.undefined
   /** HTML rendering of the rich text (if applicable) */
@@ -38,7 +38,7 @@ object CellObject {
   def apply(
     t: ExcelDataType,
     F: String = null,
-    c: js.Array[Comment] = null,
+    c: Comments = null,
     f: String = null,
     h: String = null,
     l: Hyperlink = null,

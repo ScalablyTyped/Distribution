@@ -1,7 +1,7 @@
 
 # Scala.js typings for socketcluster-client
 
-Typings are for version 13.0
+Typings are for version 15.1
 
 ## Library description:
 SocketCluster JavaScript client

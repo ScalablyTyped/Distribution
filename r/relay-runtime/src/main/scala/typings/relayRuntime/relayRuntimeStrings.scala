@@ -3,6 +3,7 @@ package typings.relayRuntime
 import typings.relayRuntime.relayDeclarativeMutationConfigMod.MutationTypes
 import typings.relayRuntime.relayDeclarativeMutationConfigMod.RangeOperations
 import typings.relayRuntime.relayRecordStateMod.RecordState
+import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -114,6 +115,9 @@ object relayRuntimeStrings {
   sealed trait append extends RangeOperations
   
   @js.native
+  sealed trait available extends OperationAvailability
+  
+  @js.native
   sealed trait clientMutationId extends js.Object
   
   @js.native
@@ -135,6 +139,24 @@ object relayRuntimeStrings {
   sealed trait error_ extends js.Object
   
   @js.native
+  sealed trait executeDotcomplete extends js.Object
+  
+  @js.native
+  sealed trait executeDoterror extends js.Object
+  
+  @js.native
+  sealed trait executeDotinfo extends js.Object
+  
+  @js.native
+  sealed trait executeDotnext extends js.Object
+  
+  @js.native
+  sealed trait executeDotstart extends js.Object
+  
+  @js.native
+  sealed trait executeDotunsubscribe extends js.Object
+  
+  @js.native
   sealed trait fetch extends js.Object
   
   @js.native
@@ -150,7 +172,7 @@ object relayRuntimeStrings {
   sealed trait linked extends js.Object
   
   @js.native
-  sealed trait missing extends js.Object
+  sealed trait missing extends OperationAvailability
   
   @js.native
   sealed trait node extends js.Object
@@ -165,7 +187,13 @@ object relayRuntimeStrings {
   sealed trait prepend extends RangeOperations
   
   @js.native
+  sealed trait queryresourceDotfetch extends js.Object
+  
+  @js.native
   sealed trait scalar extends js.Object
+  
+  @js.native
+  sealed trait stale extends OperationAvailability
   
   @js.native
   sealed trait startCursor extends js.Object
@@ -247,6 +275,8 @@ object relayRuntimeStrings {
   @scala.inline
   def append: append = "append".asInstanceOf[append]
   @scala.inline
+  def available: available = "available".asInstanceOf[available]
+  @scala.inline
   def clientMutationId: clientMutationId = "clientMutationId".asInstanceOf[clientMutationId]
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
@@ -260,6 +290,18 @@ object relayRuntimeStrings {
   def endCursor: endCursor = "endCursor".asInstanceOf[endCursor]
   @scala.inline
   def error_ : error_ = "error".asInstanceOf[error_]
+  @scala.inline
+  def executeDotcomplete: executeDotcomplete = "execute.complete".asInstanceOf[executeDotcomplete]
+  @scala.inline
+  def executeDoterror: executeDoterror = "execute.error".asInstanceOf[executeDoterror]
+  @scala.inline
+  def executeDotinfo: executeDotinfo = "execute.info".asInstanceOf[executeDotinfo]
+  @scala.inline
+  def executeDotnext: executeDotnext = "execute.next".asInstanceOf[executeDotnext]
+  @scala.inline
+  def executeDotstart: executeDotstart = "execute.start".asInstanceOf[executeDotstart]
+  @scala.inline
+  def executeDotunsubscribe: executeDotunsubscribe = "execute.unsubscribe".asInstanceOf[executeDotunsubscribe]
   @scala.inline
   def fetch: fetch = "fetch".asInstanceOf[fetch]
   @scala.inline
@@ -281,7 +323,11 @@ object relayRuntimeStrings {
   @scala.inline
   def prepend: prepend = "prepend".asInstanceOf[prepend]
   @scala.inline
+  def queryresourceDotfetch: queryresourceDotfetch = "queryresource.fetch".asInstanceOf[queryresourceDotfetch]
+  @scala.inline
   def scalar: scalar = "scalar".asInstanceOf[scalar]
+  @scala.inline
+  def stale: stale = "stale".asInstanceOf[stale]
   @scala.inline
   def startCursor: startCursor = "startCursor".asInstanceOf[startCursor]
   @scala.inline

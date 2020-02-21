@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SjclElGamalSecretKey () extends SjclECCSecretKey {
   def dh(pk: SjclECCPublicKey): BitArray_ = js.native
+  def dhJavaEc(pk: SjclECCPublicKey): BitArray_ = js.native
   def unkem(tag: BitArray_): BitArray_ = js.native
 }
 

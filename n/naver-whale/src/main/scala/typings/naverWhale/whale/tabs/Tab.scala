@@ -63,6 +63,12 @@ trait Tab extends js.Object {
     */
   var openerTabId: js.UndefOr[Double] = js.undefined
   /**
+    * The URL the tab is navigating to, before it has committed.
+    * This property is only present if the extension's manifest includes the "tabs" permission and there is a pending navigation.
+    * @since Chrome 79.
+    */
+  var pendingUrl: js.UndefOr[String] = js.undefined
+  /**
     * Whether the tab is pinned.
     * @since Chrome 9.
     */
@@ -119,6 +125,7 @@ object Tab {
     id: Int | Double = null,
     mutedInfo: typings.chrome.chrome.tabs.MutedInfo = null,
     openerTabId: Int | Double = null,
+    pendingUrl: String = null,
     sessionId: String = null,
     status: String = null,
     title: String = null,
@@ -132,6 +139,7 @@ object Tab {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mutedInfo != null) __obj.updateDynamic("mutedInfo")(mutedInfo.asInstanceOf[js.Any])
     if (openerTabId != null) __obj.updateDynamic("openerTabId")(openerTabId.asInstanceOf[js.Any])
+    if (pendingUrl != null) __obj.updateDynamic("pendingUrl")(pendingUrl.asInstanceOf[js.Any])
     if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

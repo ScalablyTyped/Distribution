@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.ratingTypesMod.IRatingProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object ratingMod extends js.Object {
     def this(props: IRatingProps) = this()
   }
   
-  val Rating: StatelessComponent[IRatingProps] = js.native
+  val Rating: FunctionComponent[IRatingProps] = js.native
   /* static members */
   @js.native
   object RatingBase extends js.Object {

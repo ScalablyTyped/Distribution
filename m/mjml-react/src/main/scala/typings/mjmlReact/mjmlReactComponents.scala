@@ -34,14 +34,6 @@ import scala.scalajs.js.annotation._
 
 object mjmlReactComponents extends mjmlReactProps {
   @scala.inline
-  def ExtensionsMjmlComment: ComponentType[ExtensionsMjmlCommentProps] = js.constructorOf[typings.mjmlReact.mod.extensions.MjmlComment].asInstanceOf[typings.react.mod.ComponentType[ExtensionsMjmlCommentProps]]
-  @scala.inline
-  def ExtensionsMjmlConditionalComment: ComponentType[ExtensionsMjmlConditionalCommentProps] = js.constructorOf[typings.mjmlReact.mod.extensions.MjmlConditionalComment].asInstanceOf[typings.react.mod.ComponentType[ExtensionsMjmlConditionalCommentProps]]
-  @scala.inline
-  def ExtensionsMjmlTrackingPixel: ComponentType[ExtensionsMjmlTrackingPixelProps] = js.constructorOf[typings.mjmlReact.mod.extensions.MjmlTrackingPixel].asInstanceOf[typings.react.mod.ComponentType[ExtensionsMjmlTrackingPixelProps]]
-  @scala.inline
-  def ExtensionsMjmlYahooStyle: ComponentType[ExtensionsMjmlYahooStyleProps] = js.constructorOf[typings.mjmlReact.mod.extensions.MjmlYahooStyle].asInstanceOf[typings.react.mod.ComponentType[ExtensionsMjmlYahooStyleProps]]
-  @scala.inline
   def Mjml: ComponentType[MjmlProps with RequiredChildrenProps] = js.constructorOf[typings.mjmlReact.mod.Mjml].asInstanceOf[typings.react.mod.ComponentType[typings.mjmlReact.mod.MjmlProps with typings.mjmlReact.mod.RequiredChildrenProps]]
   @scala.inline
   def MjmlAccordion: ComponentType[RequiredChildrenProps with MjmlAccordionElementProps] = js.constructorOf[typings.mjmlReact.mod.MjmlAccordion].asInstanceOf[typings.react.mod.ComponentType[
@@ -86,6 +78,10 @@ object mjmlReactComponents extends mjmlReactProps {
     RequiredChildrenProps with MjmlColumnProps with PaddingProps with ClassNameProps with BorderProps
   ] = js.constructorOf[typings.mjmlReact.mod.MjmlColumn].asInstanceOf[typings.react.mod.ComponentType[
   typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.MjmlColumnProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.BorderProps]]
+  @scala.inline
+  def MjmlComment: ComponentType[MjmlCommentProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlComment].asInstanceOf[typings.react.mod.ComponentType[MjmlCommentProps]]
+  @scala.inline
+  def MjmlConditionalComment: ComponentType[MjmlConditionalCommentProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlConditionalComment].asInstanceOf[typings.react.mod.ComponentType[MjmlConditionalCommentProps]]
   @scala.inline
   def MjmlDivider: ComponentType[MjmlDividerProps with ClassNameProps with PaddingProps] = js.constructorOf[typings.mjmlReact.mod.MjmlDivider].asInstanceOf[typings.react.mod.ComponentType[
   typings.mjmlReact.mod.MjmlDividerProps with typings.mjmlReact.mod.ClassNameProps with typings.mjmlReact.mod.PaddingProps]]
@@ -138,9 +134,13 @@ object mjmlReactComponents extends mjmlReactProps {
   @scala.inline
   def MjmlTitle: ComponentType[MjmlTitleProps] = js.constructorOf[typings.mjmlReact.mod.MjmlTitle].asInstanceOf[typings.react.mod.ComponentType[MjmlTitleProps]]
   @scala.inline
+  def MjmlTrackingPixel: ComponentType[MjmlTrackingPixelProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlTrackingPixel].asInstanceOf[typings.react.mod.ComponentType[MjmlTrackingPixelProps]]
+  @scala.inline
   def MjmlWrapper: ComponentType[
     MjmlWrapperProps with RequiredChildrenProps with BorderProps with PaddingProps with ClassNameProps
   ] = js.constructorOf[typings.mjmlReact.mod.MjmlWrapper].asInstanceOf[typings.react.mod.ComponentType[
   typings.mjmlReact.mod.MjmlWrapperProps with typings.mjmlReact.mod.RequiredChildrenProps with typings.mjmlReact.mod.BorderProps with typings.mjmlReact.mod.PaddingProps with typings.mjmlReact.mod.ClassNameProps]]
+  @scala.inline
+  def MjmlYahooStyle: ComponentType[MjmlYahooStyleProps] = js.constructorOf[typings.mjmlReact.extensionsMod.MjmlYahooStyle].asInstanceOf[typings.react.mod.ComponentType[MjmlYahooStyleProps]]
 }
 

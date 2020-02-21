@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceGroupArgs extends js.Object {
   /**
-    * The tags on your EC2 Instance.
+    * Key-value map of tags that are used to select the EC2 instances to be included in an [Amazon Inspector assessment target](https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target.html).
     */
   val tags: Input[StringDictionary[_]] = js.native
 }

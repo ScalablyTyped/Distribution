@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.checkboxBaseMod.ICheckboxState
 import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object checkboxMod extends js.Object {
     def this(props: ICheckboxProps, context: js.Any) = this()
   }
   
-  val Checkbox: StatelessComponent[ICheckboxProps] = js.native
+  val Checkbox: FunctionComponent[ICheckboxProps] = js.native
   /* static members */
   @js.native
   object CheckboxBase extends js.Object {

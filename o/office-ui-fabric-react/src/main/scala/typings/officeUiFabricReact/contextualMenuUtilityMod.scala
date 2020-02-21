@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object contextualMenuUtilityMod extends js.Object {
   def getIsChecked(item: IContextualMenuItem): Boolean | Null = js.native
+  def getMenuItemAriaRole(item: IContextualMenuItem): String = js.native
   def hasSubmenu(item: IContextualMenuItem): Boolean = js.native
   def isItemDisabled(item: IContextualMenuItem): Boolean = js.native
 }

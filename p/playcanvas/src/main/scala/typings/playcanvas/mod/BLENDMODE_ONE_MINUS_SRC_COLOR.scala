@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDMODE_ONE_MINUS_SRC_COLOR
+  * @type {number}
   * @description Multiply all fragment components by one minus the components of the source fragment.
   */
 @JSImport("playcanvas", "BLENDMODE_ONE_MINUS_SRC_COLOR")

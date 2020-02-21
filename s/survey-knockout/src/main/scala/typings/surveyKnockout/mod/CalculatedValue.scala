@@ -23,7 +23,9 @@ class CalculatedValue () extends Base {
     */
   var name: String = js.native
   val value: js.Any = js.native
+  def doCalculation(calculatedValues: js.Array[CalculatedValue], values: HashTable[_], properties: HashTable[_]): Unit = js.native
   def locCalculation(): Unit = js.native
+  def resetCalculation(): Unit = js.native
   def runExpression(values: HashTable[_], properties: HashTable[_]): Unit = js.native
   def setOwner(data: ISurveyData): Unit = js.native
   /* protected */ def setValue(`val`: js.Any): Unit = js.native

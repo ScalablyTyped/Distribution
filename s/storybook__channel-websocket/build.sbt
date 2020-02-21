@@ -1,15 +1,14 @@
 organization := "org.scalablytyped"
 name := "storybook__channel-websocket"
-version := "5.3.7-2360ea"
-scalaVersion := "2.12.10"
+version := "5.3.13-e5cd6f"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "storybook__channels" % "5.3.7-784868")
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "storybook__channels" % "5.3.13-58513c")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

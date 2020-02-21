@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.MOUSEBUTTON_MIDDLE
-  * @description The middle mouse button
+  * @description The middle mouse button.
   */
 @JSGlobal("pc.MOUSEBUTTON_MIDDLE")
 @js.native

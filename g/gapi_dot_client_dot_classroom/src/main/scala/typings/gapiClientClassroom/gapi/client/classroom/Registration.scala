@@ -15,7 +15,7 @@ trait Registration extends js.Object {
   var expiryTime: js.UndefOr[String] = js.undefined
   /**
     * Specification for the class of notifications that Classroom should deliver
-    * to the `destination`.
+    * to the destination.
     */
   var feed: js.UndefOr[Feed] = js.undefined
   /**

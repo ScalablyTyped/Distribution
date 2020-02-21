@@ -1,12 +1,15 @@
 package typings.webmidi.WebMidi
 
 import typings.std.Uint8Array
+import typings.webmidi.webmidiStrings.output
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait MIDIOutput extends MIDIPort {
+  @JSName("type")
+  var type_MIDIOutput: output = js.native
   /**
     * Clears any pending send data that has not yet been sent from the MIDIOutput 's
     * queue. The implementation will need to ensure the MIDI stream is left in a good

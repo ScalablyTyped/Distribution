@@ -4,6 +4,7 @@ import typings.baseui.baseuiStrings.checkbox
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.minimal
 import typings.baseui.baseuiStrings.pill
 import typings.baseui.baseuiStrings.primary
@@ -45,7 +46,7 @@ object StatefulButtonGroupProps {
     overrides: ButtonGroupOverrides = null,
     selected: Double | js.Array[Double] = null,
     shape: default_ | pill | round | square = null,
-    size: compact | default_ | large_ = null,
+    size: compact | default_ | large_ | mini = null,
     stateReducer: (/* stateType */ STATE_CHANGE_TYPE, /* nextState */ State, /* currentState */ State) => State = null
   ): StatefulButtonGroupProps = {
     val __obj = js.Dynamic.literal()

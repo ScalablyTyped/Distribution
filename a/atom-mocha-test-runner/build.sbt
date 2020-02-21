@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "atom-mocha-test-runner"
-version := "1.0-dt-20180214Z-97d261"
-scalaVersion := "2.12.10"
+version := "1.0-dt-20180214Z-d4e94b"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "atom" % "1.36-dt-20191126Z-64db9d",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190530Z-2c0f65",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "atom" % "1.36-dt-20200208Z-e60099",
+  "org.scalablytyped" %%% "mocha" % "7.0-dt-20200129Z-cd8b74",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

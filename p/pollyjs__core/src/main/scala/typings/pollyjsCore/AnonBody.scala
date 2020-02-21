@@ -11,7 +11,7 @@ trait AnonBody extends js.Object {
   var headers: js.UndefOr[Boolean | AnonExclude | (MatchBy[Headers, Headers])] = js.undefined
   var method: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
   var order: js.UndefOr[Boolean] = js.undefined
-  var url: js.UndefOr[AnonHash] = js.undefined
+  var url: js.UndefOr[Boolean | (MatchBy[String, String]) | AnonHash] = js.undefined
 }
 
 object AnonBody {
@@ -21,7 +21,7 @@ object AnonBody {
     headers: Boolean | AnonExclude | (MatchBy[Headers, Headers]) = null,
     method: Boolean | (MatchBy[String, String]) = null,
     order: js.UndefOr[Boolean] = js.undefined,
-    url: AnonHash = null
+    url: Boolean | (MatchBy[String, String]) | AnonHash = null
   ): AnonBody = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])

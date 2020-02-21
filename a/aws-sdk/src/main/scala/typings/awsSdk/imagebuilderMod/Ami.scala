@@ -19,7 +19,7 @@ trait Ami extends js.Object {
     */
   var name: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The region of the EC2 AMI. 
+    *  The AWS Region of the EC2 AMI. 
     */
   var region: js.UndefOr[NonEmptyString] = js.native
   var state: js.UndefOr[ImageState] = js.native

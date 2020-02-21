@@ -46,6 +46,10 @@ trait GraphqlApi extends js.Object {
     * The Amazon Cognito user pool configuration.
     */
   var userPoolConfig: js.UndefOr[UserPoolConfig] = js.native
+  /**
+    * A flag representing whether X-Ray tracing is enabled for this GraphqlApi.
+    */
+  var xrayEnabled: js.UndefOr[Boolean] = js.native
 }
 
 object GraphqlApi {
@@ -60,7 +64,8 @@ object GraphqlApi {
     openIDConnectConfig: OpenIDConnectConfig = null,
     tags: TagMap = null,
     uris: MapOfStringToString = null,
-    userPoolConfig: UserPoolConfig = null
+    userPoolConfig: UserPoolConfig = null,
+    xrayEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): GraphqlApi = {
     val __obj = js.Dynamic.literal()
     if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders.asInstanceOf[js.Any])
@@ -73,6 +78,7 @@ object GraphqlApi {
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(xrayEnabled)) __obj.updateDynamic("xrayEnabled")(xrayEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphqlApi]
   }
 }

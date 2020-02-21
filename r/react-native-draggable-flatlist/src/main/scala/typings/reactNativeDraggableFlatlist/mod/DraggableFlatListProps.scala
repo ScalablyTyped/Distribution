@@ -172,6 +172,7 @@ object DraggableFlatListProps {
     onScrollBeginDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onScrollEndDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onScrollToIndexFailed: /* info */ AnonAverageItemLength => Unit = null,
+    onScrollToTop: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
     onTouchCancel: /* event */ GestureResponderEvent => Unit = null,
@@ -195,6 +196,7 @@ object DraggableFlatListProps {
     scrollIndicatorInsets: Insets = null,
     scrollPercent: Int | Double = null,
     scrollPerfTag: String = null,
+    scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollsToTop: js.UndefOr[Boolean] = js.undefined,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
     showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
@@ -306,6 +308,7 @@ object DraggableFlatListProps {
     if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction1(onScrollBeginDrag))
     if (onScrollEndDrag != null) __obj.updateDynamic("onScrollEndDrag")(js.Any.fromFunction1(onScrollEndDrag))
     if (onScrollToIndexFailed != null) __obj.updateDynamic("onScrollToIndexFailed")(js.Any.fromFunction1(onScrollToIndexFailed))
+    if (onScrollToTop != null) __obj.updateDynamic("onScrollToTop")(js.Any.fromFunction1(onScrollToTop))
     if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
     if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
     if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
@@ -329,6 +332,7 @@ object DraggableFlatListProps {
     if (scrollIndicatorInsets != null) __obj.updateDynamic("scrollIndicatorInsets")(scrollIndicatorInsets.asInstanceOf[js.Any])
     if (scrollPercent != null) __obj.updateDynamic("scrollPercent")(scrollPercent.asInstanceOf[js.Any])
     if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToOverflowEnabled)) __obj.updateDynamic("scrollToOverflowEnabled")(scrollToOverflowEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop.asInstanceOf[js.Any])
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
     if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.asInstanceOf[js.Any])

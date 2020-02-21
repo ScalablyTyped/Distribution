@@ -20,7 +20,7 @@ trait UmzugOptions extends js.Object {
   /**
     * Options for defined migration
     */
-  var migrations: js.UndefOr[MigrationOptions] = js.undefined
+  var migrations: js.UndefOr[MigrationOptions | js.Array[Migration]] = js.undefined
   /**
     * The storage.
     */
@@ -40,7 +40,7 @@ object UmzugOptions {
   def apply(
     downName: String = null,
     logging: Boolean | js.Function = null,
-    migrations: MigrationOptions = null,
+    migrations: MigrationOptions | js.Array[Migration] = null,
     storage: json | sequelize | mongodb | Storage = null,
     storageOptions: JSONStorageOptions | SequelizeStorageOptions | MongoDBStorageOptions | js.Object = null,
     upName: String = null

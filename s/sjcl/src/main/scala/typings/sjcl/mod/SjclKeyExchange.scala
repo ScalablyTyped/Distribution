@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 // ________________________________________________________________________
 trait SjclKeyExchange extends js.Object {
-  var srp: SecureRemotePassword
+  var srp: SjclSecureRemotePassword
 }
 
 object SjclKeyExchange {
   @scala.inline
-  def apply(srp: SecureRemotePassword): SjclKeyExchange = {
+  def apply(srp: SjclSecureRemotePassword): SjclKeyExchange = {
     val __obj = js.Dynamic.literal(srp = srp.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SjclKeyExchange]

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.SPECOCC_GLOSSDEPENDENT
+  * @type {number}
   * @description Modify AO based on material glossiness/view angle to occlude specular.
   */
 @JSGlobal("pc.SPECOCC_GLOSSDEPENDENT")

@@ -52,6 +52,19 @@ trait RoboMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CancelSimulationJobResponse, Unit]
   ): Request[CancelSimulationJobResponse, AWSError] = js.native
   /**
+    * Cancels a simulation job batch. When you cancel a simulation job batch, you are also cancelling all of the active simulation jobs created as part of the batch. 
+    */
+  def cancelSimulationJobBatch(): Request[CancelSimulationJobBatchResponse, AWSError] = js.native
+  def cancelSimulationJobBatch(callback: js.Function2[/* err */ AWSError, /* data */ CancelSimulationJobBatchResponse, Unit]): Request[CancelSimulationJobBatchResponse, AWSError] = js.native
+  /**
+    * Cancels a simulation job batch. When you cancel a simulation job batch, you are also cancelling all of the active simulation jobs created as part of the batch. 
+    */
+  def cancelSimulationJobBatch(params: CancelSimulationJobBatchRequest): Request[CancelSimulationJobBatchResponse, AWSError] = js.native
+  def cancelSimulationJobBatch(
+    params: CancelSimulationJobBatchRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelSimulationJobBatchResponse, Unit]
+  ): Request[CancelSimulationJobBatchResponse, AWSError] = js.native
+  /**
     * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
     */
   def createDeploymentJob(): Request[CreateDeploymentJobResponse, AWSError] = js.native
@@ -301,12 +314,25 @@ trait RoboMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSimulationJobResponse, Unit]
   ): Request[DescribeSimulationJobResponse, AWSError] = js.native
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
+    * Describes a simulation job batch.
+    */
+  def describeSimulationJobBatch(): Request[DescribeSimulationJobBatchResponse, AWSError] = js.native
+  def describeSimulationJobBatch(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSimulationJobBatchResponse, Unit]): Request[DescribeSimulationJobBatchResponse, AWSError] = js.native
+  /**
+    * Describes a simulation job batch.
+    */
+  def describeSimulationJobBatch(params: DescribeSimulationJobBatchRequest): Request[DescribeSimulationJobBatchResponse, AWSError] = js.native
+  def describeSimulationJobBatch(
+    params: DescribeSimulationJobBatchRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSimulationJobBatchResponse, Unit]
+  ): Request[DescribeSimulationJobBatchResponse, AWSError] = js.native
+  /**
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs. 
     */
   def listDeploymentJobs(): Request[ListDeploymentJobsResponse, AWSError] = js.native
   def listDeploymentJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListDeploymentJobsResponse, Unit]): Request[ListDeploymentJobsResponse, AWSError] = js.native
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs. 
     */
   def listDeploymentJobs(params: ListDeploymentJobsRequest): Request[ListDeploymentJobsResponse, AWSError] = js.native
   def listDeploymentJobs(
@@ -366,6 +392,19 @@ trait RoboMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListSimulationApplicationsResponse, Unit]
   ): Request[ListSimulationApplicationsResponse, AWSError] = js.native
   /**
+    * Returns a list simulation job batches. You can optionally provide filters to retrieve specific simulation batch jobs. 
+    */
+  def listSimulationJobBatches(): Request[ListSimulationJobBatchesResponse, AWSError] = js.native
+  def listSimulationJobBatches(callback: js.Function2[/* err */ AWSError, /* data */ ListSimulationJobBatchesResponse, Unit]): Request[ListSimulationJobBatchesResponse, AWSError] = js.native
+  /**
+    * Returns a list simulation job batches. You can optionally provide filters to retrieve specific simulation batch jobs. 
+    */
+  def listSimulationJobBatches(params: ListSimulationJobBatchesRequest): Request[ListSimulationJobBatchesResponse, AWSError] = js.native
+  def listSimulationJobBatches(
+    params: ListSimulationJobBatchesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSimulationJobBatchesResponse, Unit]
+  ): Request[ListSimulationJobBatchesResponse, AWSError] = js.native
+  /**
     * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs. 
     */
   def listSimulationJobs(): Request[ListSimulationJobsResponse, AWSError] = js.native
@@ -417,6 +456,19 @@ trait RoboMaker extends Service {
     params: RestartSimulationJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RestartSimulationJobResponse, Unit]
   ): Request[RestartSimulationJobResponse, AWSError] = js.native
+  /**
+    * Starts a new simulation job batch. The batch is defined using one or more SimulationJobRequest objects. 
+    */
+  def startSimulationJobBatch(): Request[StartSimulationJobBatchResponse, AWSError] = js.native
+  def startSimulationJobBatch(callback: js.Function2[/* err */ AWSError, /* data */ StartSimulationJobBatchResponse, Unit]): Request[StartSimulationJobBatchResponse, AWSError] = js.native
+  /**
+    * Starts a new simulation job batch. The batch is defined using one or more SimulationJobRequest objects. 
+    */
+  def startSimulationJobBatch(params: StartSimulationJobBatchRequest): Request[StartSimulationJobBatchResponse, AWSError] = js.native
+  def startSimulationJobBatch(
+    params: StartSimulationJobBatchRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartSimulationJobBatchResponse, Unit]
+  ): Request[StartSimulationJobBatchResponse, AWSError] = js.native
   /**
     * Syncrhonizes robots in a fleet to the latest deployment. This is helpful if robots were added after a deployment.
     */

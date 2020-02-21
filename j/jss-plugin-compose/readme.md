@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-compose
 
-Typings are for version 10.0.3
+Typings are for version 10.0.4
 
 ## Library description:
 JSS plugin for classes composition

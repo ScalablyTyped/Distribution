@@ -1,8 +1,7 @@
 package typings.socketclusterClient
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.socketclusterClient.scclientsocketMod.ClientOptions
-import typings.socketclusterClient.scclientsocketMod.^
+import typings.socketclusterClient.clientsocketMod.ClientOptions
+import typings.socketclusterClient.clientsocketMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,18 +10,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class SCClientSocket protected () extends ^ {
+  class AGClientSocket protected () extends ^ {
     def this(opts: ClientOptions) = this()
   }
   
   val version: String = js.native
-  def connect(): SCClientSocket = js.native
-  def connect(options: ClientOptions): SCClientSocket = js.native
-  def create(): SCClientSocket = js.native
-  def create(options: ClientOptions): SCClientSocket = js.native
-  def destroy(socket: SCClientSocket): Unit = js.native
+  def create(): AGClientSocket = js.native
+  def create(options: ClientOptions): AGClientSocket = js.native
   @js.native
-  object clients extends /* id */ StringDictionary[SCClientSocket]
+  object factory extends js.Object {
+    def create(): ^ = js.native
+    def create(options: ClientOptions): ^ = js.native
+  }
   
 }
 

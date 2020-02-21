@@ -57,6 +57,7 @@ class PanelModel () extends PanelModelBase {
     * The Panel width.
     */
   var width: String = js.native
+  def clearOnDeletingContainer(): Unit = js.native
   /**
     * Collapse the Panel
     * @see state

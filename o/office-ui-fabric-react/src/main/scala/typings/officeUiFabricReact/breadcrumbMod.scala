@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.breadcrumbTypesMod.IBreadcrumbProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object breadcrumbMod extends js.Object {
     def this(props: IBreadcrumbProps) = this()
   }
   
-  val Breadcrumb: StatelessComponent[IBreadcrumbProps] = js.native
+  val Breadcrumb: FunctionComponent[IBreadcrumbProps] = js.native
   /* static members */
   @js.native
   object BreadcrumbBase extends js.Object {

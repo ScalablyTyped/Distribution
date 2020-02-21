@@ -2,7 +2,6 @@ package typings.heremaps.H.map
 
 import typings.heremaps.H.geo.LineString
 import typings.heremaps.H.geo.MultiLineString
-import typings.heremaps.H.geo.Strip
 import typings.heremaps.H.map.Polyline.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,17 +13,15 @@ import scala.scalajs.js.annotation._
 @JSGlobal("H.map.Polyline")
 @js.native
 class Polyline_ protected () extends GeoShape {
-  def this(geometry: LineString) = this()
-  def this(geometry: MultiLineString) = this()
   /**
     * Constructor
-    * @param geometry {H.geo.Strip | H.geo.LineString | H.geo.MultiLineString} - The geometry that defines the line segments of the polyline
+    * @param geometry {H.geo.LineString | H.geo.MultiLineString} - The geometry that defines the line segments of the polyline
     * @param opt_options {H.map.Polyline.Options=} - optional initialization parameters
     */
-  def this(geometry: Strip) = this()
+  def this(geometry: LineString) = this()
+  def this(geometry: MultiLineString) = this()
   def this(geometry: LineString, opt_options: Options) = this()
   def this(geometry: MultiLineString, opt_options: Options) = this()
-  def this(geometry: Strip, opt_options: Options) = this()
   /**
     * This method adds a listener for a specific event.
     * Note that to prevent potential memory leaks, you must either call removeEventListener or dispose on the given object when you no longer need it.
@@ -50,6 +47,11 @@ class Polyline_ protected () extends GeoShape {
     * A value greater than 0, indicates that the given object has a higher z-order.
     */
   def compareZOrder(other: Object): Double = js.native
+  /**
+    * Returns the smallest rectangle which encloses the whole geometry of the GeoShape.
+    * @return {H.geo.Rect}
+    */
+  def getBounds(): typings.heremaps.H.geo.Rect = js.native
   /**
     * To obtain the polyline's geometry. If you modify the obtained geometry, you must call setGeometry(geometry) afterwards to not violate the integrity of the polyline.
     * @return {H.geo.LineString | H.geo.MultiLineString}

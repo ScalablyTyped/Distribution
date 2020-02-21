@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabtab
 
-Typings are for version 3.0.2
+Typings are for version 3.0
 
 ## Library description:
 tab completion helpers, for node cli programs. Inspired by npm completion.

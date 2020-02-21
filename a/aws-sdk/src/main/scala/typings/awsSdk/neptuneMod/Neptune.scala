@@ -83,12 +83,12 @@ trait Neptune extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CopyDBClusterParameterGroupResult, Unit]
   ): Request[CopyDBClusterParameterGroupResult, AWSError] = js.native
   /**
-    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can't copy from one AWS Region to another.
+    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot.
     */
   def copyDBClusterSnapshot(): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   def copyDBClusterSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CopyDBClusterSnapshotResult, Unit]): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   /**
-    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can't copy from one AWS Region to another.
+    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot.
     */
   def copyDBClusterSnapshot(params: CopyDBClusterSnapshotMessage): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   def copyDBClusterSnapshot(
@@ -109,12 +109,12 @@ trait Neptune extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CopyDBParameterGroupResult, Unit]
   ): Request[CopyDBParameterGroupResult, AWSError] = js.native
   /**
-    * Creates a new Amazon Neptune DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon Neptune DB instance.
+    * Creates a new Amazon Neptune DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon Neptune DB instance. Note that when you create a new cluster using CreateDBCluster directly, deletion protection is disabled by default (when you create a new production cluster in the console, deletion protection is enabled by default). You can only delete a DB cluster if its DeletionProtection field is set to false.
     */
   def createDBCluster(): Request[CreateDBClusterResult, AWSError] = js.native
   def createDBCluster(callback: js.Function2[/* err */ AWSError, /* data */ CreateDBClusterResult, Unit]): Request[CreateDBClusterResult, AWSError] = js.native
   /**
-    * Creates a new Amazon Neptune DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon Neptune DB instance.
+    * Creates a new Amazon Neptune DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon Neptune DB instance. Note that when you create a new cluster using CreateDBCluster directly, deletion protection is disabled by default (when you create a new production cluster in the console, deletion protection is enabled by default). You can only delete a DB cluster if its DeletionProtection field is set to false.
     */
   def createDBCluster(params: CreateDBClusterMessage): Request[CreateDBClusterResult, AWSError] = js.native
   def createDBCluster(
@@ -200,12 +200,12 @@ trait Neptune extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]
   ): Request[CreateEventSubscriptionResult, AWSError] = js.native
   /**
-    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.
+    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted. Note that the DB Cluster cannot be deleted if deletion protection is enabled. To delete it, you must first set its DeletionProtection field to False.
     */
   def deleteDBCluster(): Request[DeleteDBClusterResult, AWSError] = js.native
   def deleteDBCluster(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDBClusterResult, Unit]): Request[DeleteDBClusterResult, AWSError] = js.native
   /**
-    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.
+    * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted. Note that the DB Cluster cannot be deleted if deletion protection is enabled. To delete it, you must first set its DeletionProtection field to False.
     */
   def deleteDBCluster(params: DeleteDBClusterMessage): Request[DeleteDBClusterResult, AWSError] = js.native
   def deleteDBCluster(
@@ -239,12 +239,12 @@ trait Neptune extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDBClusterSnapshotResult, Unit]
   ): Request[DeleteDBClusterSnapshotResult, AWSError] = js.native
   /**
-    * The DeleteDBInstance action deletes a previously provisioned DB instance. When you delete a DB instance, all automated backups for that instance are deleted and can't be recovered. Manual DB snapshots of the DB instance to be deleted by DeleteDBInstance are not deleted.  If you request a final DB snapshot the status of the Amazon Neptune DB instance is deleting until the DB snapshot is created. The API action DescribeDBInstance is used to monitor the status of this operation. The action can't be canceled or reverted once submitted. Note that when a DB instance is in a failure state and has a status of failed, incompatible-restore, or incompatible-network, you can only delete it when the SkipFinalSnapshot parameter is set to true. You can't delete a DB instance if it is the only instance in the DB cluster.
+    * The DeleteDBInstance action deletes a previously provisioned DB instance. When you delete a DB instance, all automated backups for that instance are deleted and can't be recovered. Manual DB snapshots of the DB instance to be deleted by DeleteDBInstance are not deleted.  If you request a final DB snapshot the status of the Amazon Neptune DB instance is deleting until the DB snapshot is created. The API action DescribeDBInstance is used to monitor the status of this operation. The action can't be canceled or reverted once submitted. Note that when a DB instance is in a failure state and has a status of failed, incompatible-restore, or incompatible-network, you can only delete it when the SkipFinalSnapshot parameter is set to true. You can't delete a DB instance if it is the only instance in the DB cluster, or if it has deletion protection enabled.
     */
   def deleteDBInstance(): Request[DeleteDBInstanceResult, AWSError] = js.native
   def deleteDBInstance(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDBInstanceResult, Unit]): Request[DeleteDBInstanceResult, AWSError] = js.native
   /**
-    * The DeleteDBInstance action deletes a previously provisioned DB instance. When you delete a DB instance, all automated backups for that instance are deleted and can't be recovered. Manual DB snapshots of the DB instance to be deleted by DeleteDBInstance are not deleted.  If you request a final DB snapshot the status of the Amazon Neptune DB instance is deleting until the DB snapshot is created. The API action DescribeDBInstance is used to monitor the status of this operation. The action can't be canceled or reverted once submitted. Note that when a DB instance is in a failure state and has a status of failed, incompatible-restore, or incompatible-network, you can only delete it when the SkipFinalSnapshot parameter is set to true. You can't delete a DB instance if it is the only instance in the DB cluster.
+    * The DeleteDBInstance action deletes a previously provisioned DB instance. When you delete a DB instance, all automated backups for that instance are deleted and can't be recovered. Manual DB snapshots of the DB instance to be deleted by DeleteDBInstance are not deleted.  If you request a final DB snapshot the status of the Amazon Neptune DB instance is deleting until the DB snapshot is created. The API action DescribeDBInstance is used to monitor the status of this operation. The action can't be canceled or reverted once submitted. Note that when a DB instance is in a failure state and has a status of failed, incompatible-restore, or incompatible-network, you can only delete it when the SkipFinalSnapshot parameter is set to true. You can't delete a DB instance if it is the only instance in the DB cluster, or if it has deletion protection enabled.
     */
   def deleteDBInstance(params: DeleteDBInstanceMessage): Request[DeleteDBInstanceResult, AWSError] = js.native
   def deleteDBInstance(
@@ -345,12 +345,12 @@ trait Neptune extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBClusterSnapshotMessage, Unit]
   ): Request[DBClusterSnapshotMessage, AWSError] = js.native
   /**
-    * Returns information about provisioned DB clusters. This API supports pagination.
+    * Returns information about provisioned DB clusters, and supports pagination.  This operation can also return information for Amazon RDS clusters and Amazon DocDB clusters. 
     */
   def describeDBClusters(): Request[DBClusterMessage, AWSError] = js.native
   def describeDBClusters(callback: js.Function2[/* err */ AWSError, /* data */ DBClusterMessage, Unit]): Request[DBClusterMessage, AWSError] = js.native
   /**
-    * Returns information about provisioned DB clusters. This API supports pagination.
+    * Returns information about provisioned DB clusters, and supports pagination.  This operation can also return information for Amazon RDS clusters and Amazon DocDB clusters. 
     */
   def describeDBClusters(params: DescribeDBClustersMessage): Request[DBClusterMessage, AWSError] = js.native
   def describeDBClusters(
@@ -371,12 +371,12 @@ trait Neptune extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBEngineVersionMessage, Unit]
   ): Request[DBEngineVersionMessage, AWSError] = js.native
   /**
-    * Returns information about provisioned instances. This API supports pagination.
+    * Returns information about provisioned instances, and supports pagination.  This operation can also return information for Amazon RDS instances and Amazon DocDB instances. 
     */
   def describeDBInstances(): Request[DBInstanceMessage, AWSError] = js.native
   def describeDBInstances(callback: js.Function2[/* err */ AWSError, /* data */ DBInstanceMessage, Unit]): Request[DBInstanceMessage, AWSError] = js.native
   /**
-    * Returns information about provisioned instances. This API supports pagination.
+    * Returns information about provisioned instances, and supports pagination.  This operation can also return information for Amazon RDS instances and Amazon DocDB instances. 
     */
   def describeDBInstances(params: DescribeDBInstancesMessage): Request[DBInstanceMessage, AWSError] = js.native
   def describeDBInstances(
@@ -768,6 +768,32 @@ trait Neptune extends Service {
     params: RestoreDBClusterToPointInTimeMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RestoreDBClusterToPointInTimeResult, Unit]
   ): Request[RestoreDBClusterToPointInTimeResult, AWSError] = js.native
+  /**
+    * Starts an Amazon Neptune DB cluster that was stopped using the AWS console, the AWS CLI stop-db-cluster command, or the StopDBCluster API.
+    */
+  def startDBCluster(): Request[StartDBClusterResult, AWSError] = js.native
+  def startDBCluster(callback: js.Function2[/* err */ AWSError, /* data */ StartDBClusterResult, Unit]): Request[StartDBClusterResult, AWSError] = js.native
+  /**
+    * Starts an Amazon Neptune DB cluster that was stopped using the AWS console, the AWS CLI stop-db-cluster command, or the StopDBCluster API.
+    */
+  def startDBCluster(params: StartDBClusterMessage): Request[StartDBClusterResult, AWSError] = js.native
+  def startDBCluster(
+    params: StartDBClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartDBClusterResult, Unit]
+  ): Request[StartDBClusterResult, AWSError] = js.native
+  /**
+    * Stops an Amazon Neptune DB cluster. When you stop a DB cluster, Neptune retains the DB cluster's metadata, including its endpoints and DB parameter groups. Neptune also retains the transaction logs so you can do a point-in-time restore if necessary.
+    */
+  def stopDBCluster(): Request[StopDBClusterResult, AWSError] = js.native
+  def stopDBCluster(callback: js.Function2[/* err */ AWSError, /* data */ StopDBClusterResult, Unit]): Request[StopDBClusterResult, AWSError] = js.native
+  /**
+    * Stops an Amazon Neptune DB cluster. When you stop a DB cluster, Neptune retains the DB cluster's metadata, including its endpoints and DB parameter groups. Neptune also retains the transaction logs so you can do a point-in-time restore if necessary.
+    */
+  def stopDBCluster(params: StopDBClusterMessage): Request[StopDBClusterResult, AWSError] = js.native
+  def stopDBCluster(
+    params: StopDBClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopDBClusterResult, Unit]
+  ): Request[StopDBClusterResult, AWSError] = js.native
   /**
     * Waits for the dBInstanceAvailable state by periodically calling the underlying Neptune.describeDBInstancesoperation every 30 seconds (at most 60 times).
     */

@@ -95,6 +95,9 @@ object expressValidatorStrings {
   sealed trait IN extends PostalCodeLocale
   
   @js.native
+  sealed trait IR extends PostalCodeLocale
+  
+  @js.native
   sealed trait IS extends PostalCodeLocale
   
   @js.native
@@ -339,6 +342,9 @@ object expressValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait `de-AT` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait `de-DE`
     extends AlphaLocale
        with AlphanumericLocale
@@ -364,6 +370,9 @@ object expressValidatorStrings {
     extends AlphaLocale
        with AlphanumericLocale
        with MobilePhoneLocale
+  
+  @js.native
+  sealed trait `en-GG` extends MobilePhoneLocale
   
   @js.native
   sealed trait `en-GH` extends MobilePhoneLocale
@@ -438,6 +447,9 @@ object expressValidatorStrings {
   sealed trait `es-CL` extends MobilePhoneLocale
   
   @js.native
+  sealed trait `es-EC` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait `es-ES`
     extends AlphaLocale
        with AlphanumericLocale
@@ -445,6 +457,9 @@ object expressValidatorStrings {
   
   @js.native
   sealed trait `es-MX` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait `es-PA` extends MobilePhoneLocale
   
   @js.native
   sealed trait `es-PY` extends MobilePhoneLocale
@@ -459,7 +474,10 @@ object expressValidatorStrings {
   sealed trait `express-validatorNumbersigncontexts` extends js.Object
   
   @js.native
-  sealed trait `fa-IR` extends MobilePhoneLocale
+  sealed trait `fa-IR`
+    extends AlphaLocale
+       with AlphanumericLocale
+       with MobilePhoneLocale
   
   @js.native
   sealed trait `fi-FI` extends MobilePhoneLocale
@@ -480,7 +498,24 @@ object expressValidatorStrings {
        with MobilePhoneLocale
   
   @js.native
+  sealed trait `fr-GF` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait `fr-GP` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait `fr-MQ` extends MobilePhoneLocale
+  
+  @js.native
+  sealed trait `fr-RE` extends MobilePhoneLocale
+  
+  @js.native
   sealed trait ftp extends URLProtocol
+  
+  @js.native
+  sealed trait he
+    extends AlphaLocale
+       with AlphanumericLocale
   
   @js.native
   sealed trait `he-IL`
@@ -542,6 +577,9 @@ object expressValidatorStrings {
     extends AlphaLocale
        with AlphanumericLocale
        with MobilePhoneLocale
+  
+  @js.native
+  sealed trait `ne-NP` extends MobilePhoneLocale
   
   @js.native
   sealed trait `nl-BE` extends AlphanumericLocale
@@ -732,6 +770,8 @@ object expressValidatorStrings {
   @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
   @scala.inline
+  def IR: IR = "IR".asInstanceOf[IR]
+  @scala.inline
   def IS: IS = "IS".asInstanceOf[IS]
   @scala.inline
   def IT: IT = "IT".asInstanceOf[IT]
@@ -856,6 +896,8 @@ object expressValidatorStrings {
   @scala.inline
   def `da-DK`: `da-DK` = "da-DK".asInstanceOf[`da-DK`]
   @scala.inline
+  def `de-AT`: `de-AT` = "de-AT".asInstanceOf[`de-AT`]
+  @scala.inline
   def `de-DE`: `de-DE` = "de-DE".asInstanceOf[`de-DE`]
   @scala.inline
   def `el-GR`: `el-GR` = "el-GR".asInstanceOf[`el-GR`]
@@ -865,6 +907,8 @@ object expressValidatorStrings {
   def `en-CA`: `en-CA` = "en-CA".asInstanceOf[`en-CA`]
   @scala.inline
   def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
+  @scala.inline
+  def `en-GG`: `en-GG` = "en-GG".asInstanceOf[`en-GG`]
   @scala.inline
   def `en-GH`: `en-GH` = "en-GH".asInstanceOf[`en-GH`]
   @scala.inline
@@ -902,9 +946,13 @@ object expressValidatorStrings {
   @scala.inline
   def `es-CL`: `es-CL` = "es-CL".asInstanceOf[`es-CL`]
   @scala.inline
+  def `es-EC`: `es-EC` = "es-EC".asInstanceOf[`es-EC`]
+  @scala.inline
   def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
   @scala.inline
   def `es-MX`: `es-MX` = "es-MX".asInstanceOf[`es-MX`]
+  @scala.inline
+  def `es-PA`: `es-PA` = "es-PA".asInstanceOf[`es-PA`]
   @scala.inline
   def `es-PY`: `es-PY` = "es-PY".asInstanceOf[`es-PY`]
   @scala.inline
@@ -926,7 +974,17 @@ object expressValidatorStrings {
   @scala.inline
   def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
   @scala.inline
+  def `fr-GF`: `fr-GF` = "fr-GF".asInstanceOf[`fr-GF`]
+  @scala.inline
+  def `fr-GP`: `fr-GP` = "fr-GP".asInstanceOf[`fr-GP`]
+  @scala.inline
+  def `fr-MQ`: `fr-MQ` = "fr-MQ".asInstanceOf[`fr-MQ`]
+  @scala.inline
+  def `fr-RE`: `fr-RE` = "fr-RE".asInstanceOf[`fr-RE`]
+  @scala.inline
   def ftp: ftp = "ftp".asInstanceOf[ftp]
+  @scala.inline
+  def he: he = "he".asInstanceOf[he]
   @scala.inline
   def `he-IL`: `he-IL` = "he-IL".asInstanceOf[`he-IL`]
   @scala.inline
@@ -959,6 +1017,8 @@ object expressValidatorStrings {
   def `ms-MY`: `ms-MY` = "ms-MY".asInstanceOf[`ms-MY`]
   @scala.inline
   def `nb-NO`: `nb-NO` = "nb-NO".asInstanceOf[`nb-NO`]
+  @scala.inline
+  def `ne-NP`: `ne-NP` = "ne-NP".asInstanceOf[`ne-NP`]
   @scala.inline
   def `nl-BE`: `nl-BE` = "nl-BE".asInstanceOf[`nl-BE`]
   @scala.inline

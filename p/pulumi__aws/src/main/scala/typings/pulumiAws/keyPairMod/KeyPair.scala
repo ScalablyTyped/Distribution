@@ -1,5 +1,6 @@
 package typings.pulumiAws.keyPairMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -34,9 +35,17 @@ class KeyPair protected () extends CustomResource {
     */
   val keyNamePrefix: Output_[js.UndefOr[String]] = js.native
   /**
+    * The key pair ID.
+    */
+  val keyPairId: Output_[String] = js.native
+  /**
     * The public key material.
     */
   val publicKey: Output_[String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

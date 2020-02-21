@@ -19,7 +19,7 @@ trait Invitation extends js.Object {
     */
   var InvitedAt: js.UndefOr[Timestamp] = js.native
   /**
-    * The current status of the association between member and master accounts.
+    * The current status of the association between the member and master accounts.
     */
   var MemberStatus: js.UndefOr[NonEmptyString] = js.native
 }

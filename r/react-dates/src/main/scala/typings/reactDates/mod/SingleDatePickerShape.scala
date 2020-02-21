@@ -2,7 +2,7 @@ package typings.reactDates.mod
 
 import typings.react.mod._Global_.JSX.Element
 import typings.reactDates.AnonCurrentMonth
-import typings.reactDates.AnonEndDateStartDate
+import typings.reactDates.AnonDate
 import typings.reactDates.AnonFocused
 import typings.reactDates.mod.momentPropTypes.momentObj
 import scala.scalajs.js
@@ -28,7 +28,7 @@ trait SingleDatePickerShape extends js.Object {
   var displayFormat: js.UndefOr[String | js.Function0[String]] = js.native
   var enableOutsideDays: js.UndefOr[Boolean] = js.native
   var firstDayOfWeek: js.UndefOr[DayOfWeekShape] = js.native
-  var focused: Boolean = js.native
+  var focused: Boolean | Null = js.native
   var hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.native
   var horizontalMargin: js.UndefOr[Double] = js.native
   var id: String = js.native
@@ -46,7 +46,7 @@ trait SingleDatePickerShape extends js.Object {
   var navPrev: js.UndefOr[String | Element] = js.native
   var noBorder: js.UndefOr[Boolean] = js.native
   var numberOfMonths: js.UndefOr[Double] = js.native
-  var onClose: js.UndefOr[js.Function1[/* final */ AnonEndDateStartDate, Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* final */ AnonDate, Unit]] = js.native
   var onNextMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ momentObj, Unit]] = js.native
   var onPrevMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ momentObj, Unit]] = js.native
   var openDirection: js.UndefOr[OpenDirectionShape] = js.native

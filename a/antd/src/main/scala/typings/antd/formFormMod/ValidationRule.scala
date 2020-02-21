@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ValidationRule extends js.Object {
   /** validate the value from a list of possible values */
-  var enum: js.UndefOr[String | js.Array[String]] = js.undefined
+  var enum: js.UndefOr[js.Array[String | Double | Boolean]] = js.undefined
   /** validate the exact length of a field */
   var len: js.UndefOr[Double] = js.undefined
   /** validate the max length of a field */
@@ -24,7 +24,7 @@ trait ValidationRule extends js.Object {
   /** transform a value before validation */
   var transform: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
   /** built-in validation type, available options: https://github.com/yiminghe/async-validator#type */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[ValidationRuleType] = js.undefined
   /** custom validate function (Note: callback must be called) */
   var validator: js.UndefOr[
     js.Function5[
@@ -43,7 +43,7 @@ trait ValidationRule extends js.Object {
 object ValidationRule {
   @scala.inline
   def apply(
-    enum: String | js.Array[String] = null,
+    enum: js.Array[String | Double | Boolean] = null,
     len: Int | Double = null,
     max: Int | Double = null,
     message: ReactNode = null,
@@ -51,7 +51,7 @@ object ValidationRule {
     pattern: RegExp = null,
     required: js.UndefOr[Boolean] = js.undefined,
     transform: /* value */ js.Any => _ = null,
-    `type`: String = null,
+    `type`: ValidationRuleType = null,
     validator: (/* rule */ js.Any, /* value */ js.Any, /* callback */ js.Any, /* source */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => _ = null,
     whitespace: js.UndefOr[Boolean] = js.undefined
   ): ValidationRule = {

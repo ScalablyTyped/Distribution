@@ -15,7 +15,7 @@ trait AnonAllowPickingAppearance extends js.Object {
   var compressVertices: js.UndefOr[Boolean] = js.undefined
   var cull: js.UndefOr[Boolean] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
-  var geometryInstances: js.UndefOr[js.Array[_] | GeometryInstance] = js.undefined
+  var geometryInstances: js.UndefOr[js.Array[GeometryInstance] | GeometryInstance] = js.undefined
   var interleave: js.UndefOr[Boolean] = js.undefined
   var modelMatrix: js.UndefOr[Matrix4] = js.undefined
   var releaseGeometryInstances: js.UndefOr[Boolean] = js.undefined
@@ -33,7 +33,7 @@ object AnonAllowPickingAppearance {
     compressVertices: js.UndefOr[Boolean] = js.undefined,
     cull: js.UndefOr[Boolean] = js.undefined,
     debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined,
-    geometryInstances: js.Array[_] | GeometryInstance = null,
+    geometryInstances: js.Array[GeometryInstance] | GeometryInstance = null,
     interleave: js.UndefOr[Boolean] = js.undefined,
     modelMatrix: Matrix4 = null,
     releaseGeometryInstances: js.UndefOr[Boolean] = js.undefined,

@@ -16,6 +16,7 @@ package object map {
   type Marker = typings.heremaps.H.map.Marker_
   type Object = typings.heremaps.H.map.Object_
   type Overlay = typings.heremaps.H.map.Overlay_
+  type Polygon = typings.heremaps.H.map.Polygon_
   type Polyline = typings.heremaps.H.map.Polyline_
   type Spatial = typings.heremaps.H.map.Spatial_
   type SpatialStyle = typings.heremaps.H.map.SpatialStyle_

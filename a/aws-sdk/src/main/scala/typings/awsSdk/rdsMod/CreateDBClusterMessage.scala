@@ -39,7 +39,7 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.native
   /**
-    * The name for your database of up to 64 alpha-numeric characters. If you do not provide a name, Amazon RDS will not create a database in the DB cluster you are creating.
+    * The name for your database of up to 64 alphanumeric characters. If you do not provide a name, Amazon RDS doesn't create a database in the DB cluster you are creating.
     */
   var DatabaseName: js.UndefOr[String] = js.native
   /**

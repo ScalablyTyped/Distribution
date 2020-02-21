@@ -1,7 +1,7 @@
 
 # Scala.js typings for scc-broker-client
 
-Typings are for version 6.1
+Typings are for version 7.0
 
 ## Library description:
 Client for the SC cluster - For horizontal scalability.

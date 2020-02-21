@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "jest-environment-jsdom"
-version := "24.9.0-974f1a"
-scalaVersion := "2.12.10"
+version := "24.9.0-ad698c"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "callsites" % "3.1.0-e70151",
-  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-de6979",
-  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-bd445c",
-  "org.scalablytyped" %%% "jest-mock" % "24.9.0-60b9b9",
-  "org.scalablytyped" %%% "jest__console" % "24.9.0-868810",
-  "org.scalablytyped" %%% "jest__environment" % "24.9.0-b0e3bb",
-  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-ad2fb5",
-  "org.scalablytyped" %%% "jest__source-map" % "24.9.0-f47ace",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-322d5e",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-558047",
-  "org.scalablytyped" %%% "jsdom" % "12.2-dt-20190626Z-b7ceba",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20180214Z-1b000b",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20191206Z-711cb5",
-  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200108Z-73eb79",
-  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-62354a")
+  "org.scalablytyped" %%% "callsites" % "3.1.0-da9ecd",
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-324a95",
+  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-ed789b",
+  "org.scalablytyped" %%% "jest-mock" % "24.9.0-f6941c",
+  "org.scalablytyped" %%% "jest__console" % "24.9.0-4cdd06",
+  "org.scalablytyped" %%% "jest__environment" % "24.9.0-3e7461",
+  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-435d4e",
+  "org.scalablytyped" %%% "jest__source-map" % "24.9.0-f62bca",
+  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-d3480a",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-19d4ce",
+  "org.scalablytyped" %%% "jsdom" % "16.1-dt-20200214Z-bdfd90",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "parse5" % "5.0-dt-20190719Z-5aa94f",
+  "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20180214Z-8218ec",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20191206Z-5ae06d",
+  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200131Z-03bed8",
+  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-3a25a3")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

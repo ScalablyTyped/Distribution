@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FILTER_LINEAR
+  * @type {number}
   * @description Bilinear filtering.
   */
 @JSGlobal("pc.FILTER_LINEAR")

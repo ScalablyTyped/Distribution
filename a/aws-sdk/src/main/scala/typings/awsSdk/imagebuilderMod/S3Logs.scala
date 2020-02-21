@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait S3Logs extends js.Object {
   /**
-    * The S3 bucket in which to store the logs.
+    * The Amazon S3 bucket in which to store the logs.
     */
   var s3BucketName: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The S3 path in which to store the logs.
+    * The Amazon S3 path in which to store the logs.
     */
   var s3KeyPrefix: js.UndefOr[NonEmptyString] = js.native
 }

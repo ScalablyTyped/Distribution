@@ -21,6 +21,6 @@ class AbstractGeometry () extends js.Object {
     * Returns the bounding rectangle of the geometry.
     * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
     */
-  def getBounds(): Rect = js.native
+  def getBoundingBox(): Rect = js.native
 }
 

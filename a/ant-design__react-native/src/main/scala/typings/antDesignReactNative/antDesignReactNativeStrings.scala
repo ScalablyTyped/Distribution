@@ -264,6 +264,9 @@ object antDesignReactNativeStrings {
   sealed trait `no-hide-descendants` extends js.Object
   
   @js.native
+  sealed trait noExcludeDescendants extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -424,6 +427,9 @@ object antDesignReactNativeStrings {
   
   @js.native
   sealed trait yes extends js.Object
+  
+  @js.native
+  sealed trait yesExcludeDescendants extends js.Object
   
   @scala.inline
   def ActionSheet: ActionSheet = "ActionSheet".asInstanceOf[ActionSheet]
@@ -598,6 +604,8 @@ object antDesignReactNativeStrings {
   @scala.inline
   def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
   @scala.inline
+  def noExcludeDescendants: noExcludeDescendants = "noExcludeDescendants".asInstanceOf[noExcludeDescendants]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
@@ -705,5 +713,7 @@ object antDesignReactNativeStrings {
   def year: year = "year".asInstanceOf[year]
   @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
+  @scala.inline
+  def yesExcludeDescendants: yesExcludeDescendants = "yesExcludeDescendants".asInstanceOf[yesExcludeDescendants]
 }
 

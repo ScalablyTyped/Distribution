@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PROJECTION_PERSPECTIVE
+  * @type {number}
   * @description A perspective camera projection where the frustum shape is essentially pyramidal.
   */
 @JSGlobal("pc.PROJECTION_PERSPECTIVE")

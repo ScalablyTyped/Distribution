@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RaiseAction[TEvent /* <: EventObject */]
-  extends _Action[js.Any, TEvent] {
+trait RaiseAction[TEvent /* <: EventObject */] extends js.Object {
   var event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
   var `type`: Raise
 }

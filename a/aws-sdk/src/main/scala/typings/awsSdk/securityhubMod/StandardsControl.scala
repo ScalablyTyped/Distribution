@@ -27,7 +27,11 @@ trait StandardsControl extends js.Object {
     */
   var DisabledReason: js.UndefOr[NonEmptyString] = js.native
   /**
-    * A link to remediation information for the control in the Security Hub user documentation
+    * The list of requirements that are related to this control.
+    */
+  var RelatedRequirements: js.UndefOr[RelatedRequirementsList] = js.native
+  /**
+    * A link to remediation information for the control in the Security Hub user documentation.
     */
   var RemediationUrl: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -52,6 +56,7 @@ object StandardsControl {
     ControlStatusUpdatedAt: Timestamp = null,
     Description: NonEmptyString = null,
     DisabledReason: NonEmptyString = null,
+    RelatedRequirements: RelatedRequirementsList = null,
     RemediationUrl: NonEmptyString = null,
     SeverityRating: SeverityRating = null,
     StandardsControlArn: NonEmptyString = null,
@@ -63,6 +68,7 @@ object StandardsControl {
     if (ControlStatusUpdatedAt != null) __obj.updateDynamic("ControlStatusUpdatedAt")(ControlStatusUpdatedAt.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DisabledReason != null) __obj.updateDynamic("DisabledReason")(DisabledReason.asInstanceOf[js.Any])
+    if (RelatedRequirements != null) __obj.updateDynamic("RelatedRequirements")(RelatedRequirements.asInstanceOf[js.Any])
     if (RemediationUrl != null) __obj.updateDynamic("RemediationUrl")(RemediationUrl.asInstanceOf[js.Any])
     if (SeverityRating != null) __obj.updateDynamic("SeverityRating")(SeverityRating.asInstanceOf[js.Any])
     if (StandardsControlArn != null) __obj.updateDynamic("StandardsControlArn")(StandardsControlArn.asInstanceOf[js.Any])

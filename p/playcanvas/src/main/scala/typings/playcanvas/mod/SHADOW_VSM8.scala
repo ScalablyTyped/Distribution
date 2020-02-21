@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.SHADOW_VSM8
+  * @type {number}
   * @description Render packed variance shadow map. All shadow receivers must also cast shadows for this mode to work correctly.
   */
 @JSImport("playcanvas", "SHADOW_VSM8")

@@ -23,7 +23,7 @@ trait TaskDefinition extends js.Object {
     */
   var executionRoleArn: js.UndefOr[String] = js.native
   /**
-    * The name of a family that this task definition is registered to. A family groups multiple versions of a task definition. Amazon ECS gives the first task definition that you registered to a family a revision number of 1. Amazon ECS gives sequential revision numbers to each task definition that you add.
+    * The name of a family that this task definition is registered to. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. A family groups multiple versions of a task definition. Amazon ECS gives the first task definition that you registered to a family a revision number of 1. Amazon ECS gives sequential revision numbers to each task definition that you add.
     */
   var family: js.UndefOr[String] = js.native
   /**

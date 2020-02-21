@@ -1,15 +1,14 @@
 organization := "org.scalablytyped"
 name := "zipkin-context-cls"
-version := "0.11-dt-20190225Z-d50a54"
-scalaVersion := "2.12.10"
+version := "0.11-dt-20190225Z-e77044"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "zipkin" % "0.19.1-8b39fe")
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "zipkin" % "0.19.2-4b1f28")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

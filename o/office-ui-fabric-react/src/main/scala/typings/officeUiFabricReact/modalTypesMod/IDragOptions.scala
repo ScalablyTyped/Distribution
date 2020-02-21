@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.modalTypesMod
 
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait IDragOptions extends js.Object {
   /**
     * The Draggable Control Menu so that the draggable zone can be moved via the keyboard
     */
-  var menu: StatelessComponent[IContextualMenuProps]
+  var menu: FunctionComponent[IContextualMenuProps]
   /**
     * The text to use for the modal move menu item
     */
@@ -35,7 +35,7 @@ object IDragOptions {
   @scala.inline
   def apply(
     closeMenuItemText: String,
-    menu: StatelessComponent[IContextualMenuProps],
+    menu: FunctionComponent[IContextualMenuProps],
     moveMenuItemText: String,
     dragHandleSelector: String = null,
     keyboardMoveIconProps: IIconProps = null

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pulumi/kubernetes" : "1.4.3"
+      "@pulumi/kubernetes" : "1.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@pulumi/kubernetes" : "1.4.3"
+      "@pulumi/kubernetes" : "1.5.3"
     }
   ],
   "compile-devDependencies" : [

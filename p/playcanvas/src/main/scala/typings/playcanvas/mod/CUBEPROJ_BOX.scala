@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CUBEPROJ_BOX
+  * @type {number}
   * @description The cube map is box-projected based on a world space axis-aligned bounding box.
   */
 @JSImport("playcanvas", "CUBEPROJ_BOX")

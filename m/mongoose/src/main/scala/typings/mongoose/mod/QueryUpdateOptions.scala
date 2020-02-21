@@ -1,5 +1,6 @@
 package typings.mongoose.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +17,7 @@ trait QueryUpdateOptions extends ModelUpdateOptions {
 object QueryUpdateOptions {
   @scala.inline
   def apply(
+    arrayFilters: js.Array[StringDictionary[_]] = null,
     context: String = null,
     multi: js.UndefOr[Boolean] = js.undefined,
     multipleCastError: js.UndefOr[Boolean] = js.undefined,
@@ -28,6 +30,7 @@ object QueryUpdateOptions {
     upsert: js.UndefOr[Boolean] = js.undefined
   ): QueryUpdateOptions = {
     val __obj = js.Dynamic.literal()
+    if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError.asInstanceOf[js.Any])

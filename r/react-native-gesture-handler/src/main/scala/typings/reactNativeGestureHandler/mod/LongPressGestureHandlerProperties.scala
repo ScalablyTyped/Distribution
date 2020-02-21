@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait LongPressGestureHandlerProperties extends GestureHandlerProperties {
   var maxDist: js.UndefOr[Double] = js.undefined
   var minDurationMs: js.UndefOr[Double] = js.undefined
-  var onGestureEvent: js.UndefOr[js.Function1[/* event */ GestureHandlerGestureEvent, Unit]] = js.undefined
+  var onGestureEvent: js.UndefOr[js.Function1[/* event */ LongPressGestureHandlerGestureEvent, Unit]] = js.undefined
   var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ LongPressGestureHandlerStateChangeEvent, Unit]] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object LongPressGestureHandlerProperties {
     id: String = null,
     maxDist: Int | Double = null,
     minDurationMs: Int | Double = null,
-    onGestureEvent: /* event */ GestureHandlerGestureEvent => Unit = null,
+    onGestureEvent: /* event */ LongPressGestureHandlerGestureEvent => Unit = null,
     onHandlerStateChange: /* event */ LongPressGestureHandlerStateChangeEvent => Unit = null,
     shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined,
     simultaneousHandlers: Ref[_] | js.Array[Ref[_]] = null,

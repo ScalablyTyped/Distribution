@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "make-dir" : "3.0.0"
+      "make-dir" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "make-dir" : "3.0.0"
+      "make-dir" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

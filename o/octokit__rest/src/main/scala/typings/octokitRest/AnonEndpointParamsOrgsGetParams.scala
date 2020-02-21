@@ -1,11 +1,11 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.Endpoint
-import typings.octokitRest.mod.EndpointOptions
-import typings.octokitRest.mod.OrgsGetParams
-import typings.octokitRest.mod.OrgsGetResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.Endpoint
+import typings.octokitRest.mod.Octokit.EndpointOptions
+import typings.octokitRest.mod.Octokit.OrgsGetParams
+import typings.octokitRest.mod.Octokit.OrgsGetResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

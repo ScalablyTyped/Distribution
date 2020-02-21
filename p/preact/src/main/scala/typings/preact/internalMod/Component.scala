@@ -11,7 +11,7 @@ trait Component[P, S]
    // Only class components
   var _context: js.UndefOr[js.Any] = js.native
   var _dirty: Boolean = js.native
-  var _force: js.UndefOr[Boolean | Null] = js.native
+  var _force: js.UndefOr[Boolean] = js.native
   var _nextState: js.UndefOr[S | Null] = js.native
   /**
   	 * Pointer to the parent dom node. This is only needed for top-level Fragment

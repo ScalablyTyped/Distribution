@@ -1,45 +1,46 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.MigrationsCancelImportParams
-import typings.octokitRest.mod.MigrationsDeleteArchiveForAuthenticatedUserParams
-import typings.octokitRest.mod.MigrationsDeleteArchiveForOrgParams
-import typings.octokitRest.mod.MigrationsGetArchiveForAuthenticatedUserParams
-import typings.octokitRest.mod.MigrationsGetArchiveForOrgParams
-import typings.octokitRest.mod.MigrationsGetCommitAuthorsParams
-import typings.octokitRest.mod.MigrationsGetCommitAuthorsResponse
-import typings.octokitRest.mod.MigrationsGetImportProgressParams
-import typings.octokitRest.mod.MigrationsGetImportProgressResponse
-import typings.octokitRest.mod.MigrationsGetLargeFilesParams
-import typings.octokitRest.mod.MigrationsGetLargeFilesResponse
-import typings.octokitRest.mod.MigrationsGetStatusForAuthenticatedUserParams
-import typings.octokitRest.mod.MigrationsGetStatusForAuthenticatedUserResponse
-import typings.octokitRest.mod.MigrationsGetStatusForOrgParams
-import typings.octokitRest.mod.MigrationsGetStatusForOrgResponse
-import typings.octokitRest.mod.MigrationsListForAuthenticatedUserParams
-import typings.octokitRest.mod.MigrationsListForAuthenticatedUserResponse
-import typings.octokitRest.mod.MigrationsListForOrgParams
-import typings.octokitRest.mod.MigrationsListForOrgResponse
-import typings.octokitRest.mod.MigrationsListReposForOrgParams
-import typings.octokitRest.mod.MigrationsListReposForOrgResponse
-import typings.octokitRest.mod.MigrationsListReposForUserParams
-import typings.octokitRest.mod.MigrationsListReposForUserResponse
-import typings.octokitRest.mod.MigrationsMapCommitAuthorParams
-import typings.octokitRest.mod.MigrationsMapCommitAuthorResponse
-import typings.octokitRest.mod.MigrationsSetLfsPreferenceParams
-import typings.octokitRest.mod.MigrationsSetLfsPreferenceResponse
-import typings.octokitRest.mod.MigrationsStartForAuthenticatedUserParams
-import typings.octokitRest.mod.MigrationsStartForAuthenticatedUserResponse
-import typings.octokitRest.mod.MigrationsStartForOrgParams
-import typings.octokitRest.mod.MigrationsStartForOrgResponse
-import typings.octokitRest.mod.MigrationsStartImportParams
-import typings.octokitRest.mod.MigrationsStartImportResponse
-import typings.octokitRest.mod.MigrationsUnlockRepoForAuthenticatedUserParams
-import typings.octokitRest.mod.MigrationsUnlockRepoForOrgParams
-import typings.octokitRest.mod.MigrationsUpdateImportParams
-import typings.octokitRest.mod.MigrationsUpdateImportResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.MigrationsCancelImportParams
+import typings.octokitRest.mod.Octokit.MigrationsDeleteArchiveForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.MigrationsDeleteArchiveForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsDownloadArchiveForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsGetArchiveForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.MigrationsGetArchiveForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsGetCommitAuthorsParams
+import typings.octokitRest.mod.Octokit.MigrationsGetCommitAuthorsResponse
+import typings.octokitRest.mod.Octokit.MigrationsGetImportProgressParams
+import typings.octokitRest.mod.Octokit.MigrationsGetImportProgressResponse
+import typings.octokitRest.mod.Octokit.MigrationsGetLargeFilesParams
+import typings.octokitRest.mod.Octokit.MigrationsGetLargeFilesResponse
+import typings.octokitRest.mod.Octokit.MigrationsGetStatusForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.MigrationsGetStatusForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.MigrationsGetStatusForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsGetStatusForOrgResponse
+import typings.octokitRest.mod.Octokit.MigrationsListForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.MigrationsListForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.MigrationsListForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsListForOrgResponse
+import typings.octokitRest.mod.Octokit.MigrationsListReposForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsListReposForOrgResponse
+import typings.octokitRest.mod.Octokit.MigrationsListReposForUserParams
+import typings.octokitRest.mod.Octokit.MigrationsListReposForUserResponse
+import typings.octokitRest.mod.Octokit.MigrationsMapCommitAuthorParams
+import typings.octokitRest.mod.Octokit.MigrationsMapCommitAuthorResponse
+import typings.octokitRest.mod.Octokit.MigrationsSetLfsPreferenceParams
+import typings.octokitRest.mod.Octokit.MigrationsSetLfsPreferenceResponse
+import typings.octokitRest.mod.Octokit.MigrationsStartForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.MigrationsStartForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.MigrationsStartForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsStartForOrgResponse
+import typings.octokitRest.mod.Octokit.MigrationsStartImportParams
+import typings.octokitRest.mod.Octokit.MigrationsStartImportResponse
+import typings.octokitRest.mod.Octokit.MigrationsUnlockRepoForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.MigrationsUnlockRepoForOrgParams
+import typings.octokitRest.mod.Octokit.MigrationsUpdateImportParams
+import typings.octokitRest.mod.Octokit.MigrationsUpdateImportResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,6 +62,11 @@ trait AnonCancelImport extends js.Object {
     */
   @JSName("deleteArchiveForOrg")
   var deleteArchiveForOrg_Original: AnonEndpointParamsAnyResponseMigrationsDeleteArchiveForOrgParams = js.native
+  /**
+    * Fetches the URL to a migration archive.
+    */
+  @JSName("downloadArchiveForOrg")
+  var downloadArchiveForOrg_Original: AnonEndpointParamsAnyResponseMigrationsDownloadArchiveForOrgParams = js.native
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
     *
@@ -88,6 +94,9 @@ trait AnonCancelImport extends js.Object {
   var getArchiveForAuthenticatedUser_Original: AnonEndpointParamsAnyResponseMigrationsGetArchiveForAuthenticatedUserParams = js.native
   /**
     * Fetches the URL to a migration archive.
+    *
+    *
+    * @deprecated octokit.migrations.getArchiveForOrg() has been renamed to octokit.migrations.downloadArchiveForOrg() (2020-01-27)
     */
   @JSName("getArchiveForOrg")
   var getArchiveForOrg_Original: AnonEndpointParamsAnyResponseMigrationsGetArchiveForOrgParams = js.native
@@ -116,7 +125,7 @@ trait AnonCancelImport extends js.Object {
     * If there are problems, you will see one of these in the `status` field:
     *
     * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
-    * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://github.com/contact) for more information.
+    * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com) for more information.
     * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
     * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://developer.github.com/v3/migrations/source_imports/#cancel-an-import) and [retry](https://developer.github.com/v3/migrations/source_imports/#start-an-import) with the correct URL.
     * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
@@ -247,6 +256,11 @@ trait AnonCancelImport extends js.Object {
   def deleteArchiveForOrg(): js.Promise[AnyResponse] = js.native
   def deleteArchiveForOrg(params: RequestOptions with MigrationsDeleteArchiveForOrgParams): js.Promise[AnyResponse] = js.native
   /**
+    * Fetches the URL to a migration archive.
+    */
+  def downloadArchiveForOrg(): js.Promise[AnyResponse] = js.native
+  def downloadArchiveForOrg(params: RequestOptions with MigrationsDownloadArchiveForOrgParams): js.Promise[AnyResponse] = js.native
+  /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
     *
     * *   attachments
@@ -273,6 +287,9 @@ trait AnonCancelImport extends js.Object {
   def getArchiveForAuthenticatedUser(params: RequestOptions with MigrationsGetArchiveForAuthenticatedUserParams): js.Promise[AnyResponse] = js.native
   /**
     * Fetches the URL to a migration archive.
+    *
+    *
+    * @deprecated octokit.migrations.getArchiveForOrg() has been renamed to octokit.migrations.downloadArchiveForOrg() (2020-01-27)
     */
   def getArchiveForOrg(): js.Promise[AnyResponse] = js.native
   def getArchiveForOrg(params: RequestOptions with MigrationsGetArchiveForOrgParams): js.Promise[AnyResponse] = js.native
@@ -301,7 +318,7 @@ trait AnonCancelImport extends js.Object {
     * If there are problems, you will see one of these in the `status` field:
     *
     * *   `auth_failed` - the import requires authentication in order to connect to the original repository. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
-    * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://github.com/contact) for more information.
+    * *   `error` - the import encountered an error. The import progress response will include the `failed_step` and an error message. Contact [GitHub Support](https://github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com) for more information.
     * *   `detection_needs_auth` - the importer requires authentication for the originating repository to continue detection. To update authentication for the import, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.
     * *   `detection_found_nothing` - the importer didn't recognize any source control at the URL. To resolve, [Cancel the import](https://developer.github.com/v3/migrations/source_imports/#cancel-an-import) and [retry](https://developer.github.com/v3/migrations/source_imports/#start-an-import) with the correct URL.
     * *   `detection_found_multiple` - the importer found several projects or repositories at the provided URL. When this is the case, the Import Progress response will also include a `project_choices` field with the possible project choices as values. To update project choice, please see the [Update Existing Import](https://developer.github.com/v3/migrations/source_imports/#update-existing-import) section.

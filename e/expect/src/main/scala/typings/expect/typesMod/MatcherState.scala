@@ -1,7 +1,6 @@
 package typings.expect.typesMod
 
 import typings.expect.AnonIterableEquality
-import typings.expect.TypeofjestMatcherUtils
 import typings.jestTypes.configMod.Path
 import typings.std.Error
 import scala.scalajs.js
@@ -21,7 +20,7 @@ trait MatcherState extends js.Object {
   var promise: String = js.native
   var suppressedErrors: js.Array[Error] = js.native
   var testPath: js.UndefOr[Path] = js.native
-  var utils: TypeofjestMatcherUtils with AnonIterableEquality = js.native
+  var utils: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jestMatcherUtils */ js.Any) with AnonIterableEquality = js.native
   def equals(a: js.Any, b: js.Any): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester]): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[Tester], strictCheck: Boolean): Boolean = js.native

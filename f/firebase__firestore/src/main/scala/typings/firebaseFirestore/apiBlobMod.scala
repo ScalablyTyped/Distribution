@@ -12,6 +12,7 @@ object apiBlobMod extends js.Object {
   @js.native
   class Blob protected () extends js.Object {
     var _binaryString: js.Any = js.native
+    def _approximateByteSize(): Double = js.native
     /**
       * Actually private to JS consumers of our API, so this function is prefixed
       * with an underscore.

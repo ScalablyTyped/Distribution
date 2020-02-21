@@ -71,6 +71,10 @@ trait ClusterState extends js.Object {
     */
   val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
   /**
+    * Enable HTTP endpoint (data API). Only valid when `engineMode` is set to `serverless`.
+    */
+  val enableHttpEndpoint: js.UndefOr[Input[Boolean]] = js.native
+  /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
     * The following log types are supported: `audit`, `error`, `general`, `slowquery`, `postgresql` (PostgreSQL).
     */
@@ -197,6 +201,7 @@ object ClusterState {
     dbClusterParameterGroupName: Input[String] = null,
     dbSubnetGroupName: Input[String] = null,
     deletionProtection: Input[Boolean] = null,
+    enableHttpEndpoint: Input[Boolean] = null,
     enabledCloudwatchLogsExports: Input[js.Array[Input[String]]] = null,
     endpoint: Input[String] = null,
     engine: Input[EngineType] = null,
@@ -239,6 +244,7 @@ object ClusterState {
     if (dbClusterParameterGroupName != null) __obj.updateDynamic("dbClusterParameterGroupName")(dbClusterParameterGroupName.asInstanceOf[js.Any])
     if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
     if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
+    if (enableHttpEndpoint != null) __obj.updateDynamic("enableHttpEndpoint")(enableHttpEndpoint.asInstanceOf[js.Any])
     if (enabledCloudwatchLogsExports != null) __obj.updateDynamic("enabledCloudwatchLogsExports")(enabledCloudwatchLogsExports.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for node
 
-Typings are for version 13.1
+Typings are for version 13.7
 
 ## Library description:
 node

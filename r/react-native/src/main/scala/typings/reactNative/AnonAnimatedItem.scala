@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAnimatedItem[ItemT] extends js.Object {
-  var animated: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean | Null] = js.undefined
   var item: ItemT
   var viewPosition: js.UndefOr[Double] = js.undefined
 }

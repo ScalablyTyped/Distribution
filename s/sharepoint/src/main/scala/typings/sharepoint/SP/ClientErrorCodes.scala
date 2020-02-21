@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SP.ClientErrorCodes")
 @js.native
-class ClientErrorCodes () extends js.Object {
+class ClientErrorCodes () extends js.Object
+
+/* static members */
+@JSGlobal("SP.ClientErrorCodes")
+@js.native
+object ClientErrorCodes extends js.Object {
   var accessDenied: Double = js.native
   var docAlreadyExists: Double = js.native
   var fieldValueFailedValidation: Double = js.native

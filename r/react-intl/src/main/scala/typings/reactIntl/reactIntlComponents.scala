@@ -1,5 +1,6 @@
 package typings.reactIntl
 
+import typings.formatjsIntlDisplaynames.libMod.DisplayNamesOptions
 import typings.formatjsIntlListformat.mod.IntlListFormatOptions
 import typings.formatjsIntlUnifiedNumberformat.mod.UnifiedNumberFormatOptions
 import typings.intlMessageformat.mod.PrimitiveType
@@ -20,6 +21,9 @@ object reactIntlComponents extends reactIntlProps {
   @scala.inline
   def FormattedDateParts: ComponentType[DateTimeFormatOptions with CustomFormatConfig with AnonChildren] = typings.reactIntl.mod.FormattedDateParts.asInstanceOf[typings.react.mod.ComponentType[
   typings.std.Intl.DateTimeFormatOptions with typings.reactIntl.mod.CustomFormatConfig with typings.reactIntl.AnonChildren]]
+  @scala.inline
+  def FormattedDisplayName: ComponentType[DisplayNamesOptions with AnonValueNumberObject] = typings.reactIntl.mod.FormattedDisplayName.asInstanceOf[typings.react.mod.ComponentType[
+  typings.formatjsIntlDisplaynames.libMod.DisplayNamesOptions with typings.reactIntl.AnonValueNumberObject]]
   @scala.inline
   def FormattedHTMLMessage: ComponentType[FormattedHTMLMessageProps[Record[String, PrimitiveType]]] = js.constructorOf[typings.reactIntl.mod.FormattedHTMLMessage].asInstanceOf[typings.react.mod.ComponentType[
   FormattedHTMLMessageProps[

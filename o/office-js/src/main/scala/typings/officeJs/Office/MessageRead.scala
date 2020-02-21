@@ -513,6 +513,9 @@ trait MessageRead extends Item {
     * 
     * **Errors**:
     * 
+    * - AttachmentTypeNotSupported: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format,
+    *                               or item attachment types other than email or calendar items (such as a contact or task item).
+    *
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param attachmentId - The identifier of the attachment you want to get. 

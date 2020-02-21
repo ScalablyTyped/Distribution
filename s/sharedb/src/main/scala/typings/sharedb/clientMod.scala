@@ -13,6 +13,10 @@ object clientMod extends js.Object {
   class Connection protected () extends js.Object {
     def this(ws: WebSocket) = this()
     def this(ws: ^) = this()
+    // This direct reference from connection to agent is not used internal to
+    // ShareDB, but it is handy for server-side only user code that may cache
+    // state on the agent and read it in middleware
+    var agent: typings.sharedb.agentMod.^  | Null = js.native
     def createFetchQuery(
       collectionName: String,
       query: js.Any,

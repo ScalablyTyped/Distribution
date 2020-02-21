@@ -47,6 +47,10 @@ trait INotifyOption extends js.Object {
     */
   var requireInteraction: js.UndefOr[Boolean] = js.undefined
   /**
+    * whether this notification should be silent or not
+    */
+  var silent: js.UndefOr[Boolean] = js.undefined
+  /**
     * unique identifier to stop duplicate notifications
     */
   var tag: js.UndefOr[String] = js.undefined
@@ -68,6 +72,7 @@ object INotifyOption {
     permissionDenied: js.Function = null,
     permissionGranted: js.Function = null,
     requireInteraction: js.UndefOr[Boolean] = js.undefined,
+    silent: js.UndefOr[Boolean] = js.undefined,
     tag: String = null,
     timeout: Int | Double = null
   ): INotifyOption = {
@@ -81,6 +86,7 @@ object INotifyOption {
     if (permissionDenied != null) __obj.updateDynamic("permissionDenied")(permissionDenied.asInstanceOf[js.Any])
     if (permissionGranted != null) __obj.updateDynamic("permissionGranted")(permissionGranted.asInstanceOf[js.Any])
     if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[INotifyOption]

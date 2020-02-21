@@ -15,19 +15,19 @@ trait ListTypeRegistrationsInput extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
   /**
-    * The current status of the type registration request.
+    * The current status of the type registration request. The default is IN_PROGRESS.
     */
   var RegistrationStatusFilter: js.UndefOr[RegistrationStatus] = js.native
   /**
-    * The kind of type. Currently the only valid value is RESOURCE.
+    * The kind of type. Currently the only valid value is RESOURCE. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var Type: js.UndefOr[RegistryType] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the type. Conditional: You must specify TypeName or Arn.
+    * The Amazon Resource Name (ARN) of the type. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var TypeArn: js.UndefOr[typings.awsSdk.cloudformationMod.TypeArn] = js.native
   /**
-    * The name of the type. Conditional: You must specify TypeName or Arn.
+    * The name of the type. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.native
 }

@@ -5,13 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait AnonIterableEquality extends js.Object {
-  @JSName("iterableEquality")
-  var iterableEquality_Original: Tester = js.native
-  @JSName("subsetEquality")
-  var subsetEquality_Original: Tester = js.native
-  def iterableEquality(a: js.Any, b: js.Any): js.UndefOr[Boolean] = js.native
-  def subsetEquality(a: js.Any, b: js.Any): js.UndefOr[Boolean] = js.native
+  var iterableEquality: Tester
+  var subsetEquality: Tester
+}
+
+object AnonIterableEquality {
+  @scala.inline
+  def apply(
+    iterableEquality: (/* a */ js.Any, /* b */ js.Any) => js.UndefOr[Boolean],
+    subsetEquality: (/* a */ js.Any, /* b */ js.Any) => js.UndefOr[Boolean]
+  ): AnonIterableEquality = {
+    val __obj = js.Dynamic.literal(iterableEquality = js.Any.fromFunction2(iterableEquality), subsetEquality = js.Any.fromFunction2(subsetEquality))
+  
+    __obj.asInstanceOf[AnonIterableEquality]
+  }
 }
 

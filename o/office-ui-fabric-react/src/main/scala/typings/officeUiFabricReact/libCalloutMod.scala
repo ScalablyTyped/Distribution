@@ -15,7 +15,7 @@ import typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +27,7 @@ object libCalloutMod extends js.Object {
   class Callout ()
     extends typings.officeUiFabricReact.calloutCalloutMod.Callout
   
-  val FocusTrapCallout: StatelessComponent[IFocusTrapCalloutProps] = js.native
+  val FocusTrapCallout: FunctionComponent[IFocusTrapCalloutProps] = js.native
   @js.native
   object DirectionalHint extends js.Object {
     /**

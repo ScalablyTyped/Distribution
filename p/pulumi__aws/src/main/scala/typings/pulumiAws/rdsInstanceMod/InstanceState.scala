@@ -84,6 +84,10 @@ trait InstanceState extends js.Object {
     */
   val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
+    * Specifies whether to remove automated backups immediately after the DB instance is deleted. Default is `true`.
+    */
+  val deleteAutomatedBackups: js.UndefOr[Input[Boolean]] = js.native
+  /**
     * If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
     */
   val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
@@ -96,7 +100,7 @@ trait InstanceState extends js.Object {
     */
   val domainIamRoleName: js.UndefOr[Input[String]] = js.native
   /**
-    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`): `alert`, `audit`, `error`, `general`, `listener`, `slowquery`, `trace`, `postgresql` (PostgreSQL), `upgrade` (PostgreSQL).
+    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`): `agent` (MSSQL), `alert`, `audit`, `error`, `general`, `listener`, `slowquery`, `trace`, `postgresql` (PostgreSQL), `upgrade` (PostgreSQL).
     */
   val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
@@ -333,6 +337,7 @@ object InstanceState {
     characterSetName: Input[String] = null,
     copyTagsToSnapshot: Input[Boolean] = null,
     dbSubnetGroupName: Input[String] = null,
+    deleteAutomatedBackups: Input[Boolean] = null,
     deletionProtection: Input[Boolean] = null,
     domain: Input[String] = null,
     domainIamRoleName: Input[String] = null,
@@ -392,6 +397,7 @@ object InstanceState {
     if (characterSetName != null) __obj.updateDynamic("characterSetName")(characterSetName.asInstanceOf[js.Any])
     if (copyTagsToSnapshot != null) __obj.updateDynamic("copyTagsToSnapshot")(copyTagsToSnapshot.asInstanceOf[js.Any])
     if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
+    if (deleteAutomatedBackups != null) __obj.updateDynamic("deleteAutomatedBackups")(deleteAutomatedBackups.asInstanceOf[js.Any])
     if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (domainIamRoleName != null) __obj.updateDynamic("domainIamRoleName")(domainIamRoleName.asInstanceOf[js.Any])

@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Stream ()
   extends internal
-     with StdioNull
+     with StdioNull {
+  def this(opts: ReadableOptions) = this()
+}
 

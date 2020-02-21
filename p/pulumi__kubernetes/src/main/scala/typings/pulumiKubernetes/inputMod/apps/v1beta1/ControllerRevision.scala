@@ -8,9 +8,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated apps/v1beta1/ControllerRevision is deprecated by apps/v1/ControllerRevision and
-  * not supported by Kubernetes v1.16+ clusters.
-  *
   * ControllerRevision implements an immutable snapshot of state data. Clients are responsible
   * for serializing and deserializing the objects that contain their internal state. Once a
   * ControllerRevision has been successfully created, it can not be updated. The API Server will
@@ -19,6 +16,9 @@ import scala.scalajs.js.annotation._
   * controllers for update and rollback, this object is beta. However, it may be subject to name
   * and representation changes in future releases, and clients should not depend on its
   * stability. It is primarily for internal use by controllers.
+  *
+  * @deprecated apps/v1beta1/ControllerRevision is deprecated by apps/v1/ControllerRevision and
+  * not supported by Kubernetes v1.16+ clusters.
   */
 trait ControllerRevision extends js.Object {
   /**

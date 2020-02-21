@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Distribution extends js.Object {
   /**
-    *  
+    *  The specific AMI settings (for example, launch permissions, AMI tags). 
     */
   var amiDistributionConfiguration: js.UndefOr[AmiDistributionConfiguration] = js.native
   /**
-    *  
+    *  The License Manager Configuration to associate with the AMI in the specified Region.
     */
   var licenseConfigurationArns: js.UndefOr[ArnList] = js.native
   /**
-    *  
+    *  The target Region. 
     */
   var region: NonEmptyString = js.native
 }

@@ -17,6 +17,7 @@ import typings.antd.drawerMod.placementType
 import typings.antd.dropdownButtonMod.DropdownButtonType
 import typings.antd.dropdownDropdownMod.Placement
 import typings.antd.formFormMod.FormLayout
+import typings.antd.formFormMod.ValidationRuleType
 import typings.antd.formItemMod.FormLabelAlign
 import typings.antd.iconMod.ThemeType
 import typings.antd.inputNumberMod.OmitAttrs
@@ -156,7 +157,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3Dot26Dot7` extends js.Object
+  sealed trait `3Dot26Dot9` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -240,7 +241,13 @@ object antdStrings {
   sealed trait `ant-click-animating-without-extra-node` extends js.Object
   
   @js.native
+  sealed trait any extends ValidationRuleType
+  
+  @js.native
   sealed trait anywhere extends js.Object
+  
+  @js.native
+  sealed trait array extends ValidationRuleType
   
   @js.native
   sealed trait ascend extends SortOrder
@@ -310,6 +317,9 @@ object antdStrings {
   
   @js.native
   sealed trait bolder extends js.Object
+  
+  @js.native
+  sealed trait boolean extends ValidationRuleType
   
   @js.native
   sealed trait `border-box` extends js.Object
@@ -527,6 +537,7 @@ object antdStrings {
   sealed trait date
     extends DatePickerMode
        with PickerType
+       with ValidationRuleType
   
   @js.native
   sealed trait decade extends DatePickerMode
@@ -595,7 +606,7 @@ object antdStrings {
   sealed trait element extends js.Object
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email extends ValidationRuleType
   
   @js.native
   sealed trait embed extends js.Object
@@ -605,6 +616,9 @@ object antdStrings {
   
   @js.native
   sealed trait end extends js.Object
+  
+  @js.native
+  sealed trait enum extends ValidationRuleType
   
   @js.native
   sealed trait error
@@ -653,6 +667,9 @@ object antdStrings {
   
   @js.native
   sealed trait flex extends js.Object
+  
+  @js.native
+  sealed trait float extends ValidationRuleType
   
   @js.native
   sealed trait focus extends TooltipTrigger
@@ -721,6 +738,9 @@ object antdStrings {
   
   @js.native
   sealed trait header extends js.Object
+  
+  @js.native
+  sealed trait hex extends ValidationRuleType
   
   @js.native
   sealed trait hidden extends js.Object
@@ -805,6 +825,9 @@ object antdStrings {
   
   @js.native
   sealed trait inside extends js.Object
+  
+  @js.native
+  sealed trait integer extends ValidationRuleType
   
   @js.native
   sealed trait `inter-character` extends js.Object
@@ -1059,6 +1082,9 @@ object antdStrings {
   sealed trait meterchunk extends js.Object
   
   @js.native
+  sealed trait method extends ValidationRuleType
+  
+  @js.native
   sealed trait middle extends TableSize
   
   @js.native
@@ -1119,10 +1145,15 @@ object antdStrings {
   sealed trait nowrap extends js.Object
   
   @js.native
-  sealed trait number extends _Formatter
+  sealed trait number
+    extends ValidationRuleType
+       with _Formatter
   
   @js.native
   sealed trait numeric extends js.Object
+  
+  @js.native
+  sealed trait `object` extends ValidationRuleType
   
   @js.native
   sealed trait off extends js.Object
@@ -1311,6 +1342,9 @@ object antdStrings {
   
   @js.native
   sealed trait red extends PresetColorType
+  
+  @js.native
+  sealed trait regexp extends ValidationRuleType
   
   @js.native
   sealed trait region extends js.Object
@@ -1626,6 +1660,9 @@ object antdStrings {
   sealed trait strict extends js.Object
   
   @js.native
+  sealed trait string extends ValidationRuleType
+  
+  @js.native
   sealed trait stroke extends js.Object
   
   @js.native
@@ -1794,7 +1831,7 @@ object antdStrings {
   sealed trait upright extends js.Object
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url extends ValidationRuleType
   
   @js.native
   sealed trait `use-script` extends js.Object
@@ -1962,7 +1999,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3Dot26Dot7`: `3Dot26Dot7` = "3.26.7".asInstanceOf[`3Dot26Dot7`]
+  def `3Dot26Dot9`: `3Dot26Dot9` = "3.26.9".asInstanceOf[`3Dot26Dot9`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2018,7 +2055,11 @@ object antdStrings {
   @scala.inline
   def `ant-click-animating-without-extra-node`: `ant-click-animating-without-extra-node` = "ant-click-animating-without-extra-node".asInstanceOf[`ant-click-animating-without-extra-node`]
   @scala.inline
+  def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
   @scala.inline
   def ascend: ascend = "ascend".asInstanceOf[ascend]
   @scala.inline
@@ -2065,6 +2106,8 @@ object antdStrings {
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
+  @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline
   def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
   @scala.inline
@@ -2238,6 +2281,8 @@ object antdStrings {
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
+  def enum: enum = "enum".asInstanceOf[enum]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
@@ -2267,6 +2312,8 @@ object antdStrings {
   def flat: flat = "flat".asInstanceOf[flat]
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
   @scala.inline
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
@@ -2311,6 +2358,8 @@ object antdStrings {
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
   @scala.inline
   def header: header = "header".asInstanceOf[header]
+  @scala.inline
+  def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
@@ -2361,6 +2410,8 @@ object antdStrings {
   def inset: inset = "inset".asInstanceOf[inset]
   @scala.inline
   def inside: inside = "inside".asInstanceOf[inside]
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
   @scala.inline
   def `inter-character`: `inter-character` = "inter-character".asInstanceOf[`inter-character`]
   @scala.inline
@@ -2518,6 +2569,8 @@ object antdStrings {
   @scala.inline
   def meterchunk: meterchunk = "meterchunk".asInstanceOf[meterchunk]
   @scala.inline
+  def method: method = "method".asInstanceOf[method]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
@@ -2559,6 +2612,8 @@ object antdStrings {
   def number: number = "number".asInstanceOf[number]
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   @scala.inline
@@ -2683,6 +2738,8 @@ object antdStrings {
   def recto: recto = "recto".asInstanceOf[recto]
   @scala.inline
   def red: red = "red".asInstanceOf[red]
+  @scala.inline
+  def regexp: regexp = "regexp".asInstanceOf[regexp]
   @scala.inline
   def region: region = "region".asInstanceOf[region]
   @scala.inline
@@ -2881,6 +2938,8 @@ object antdStrings {
   def `stretch-to-fit`: `stretch-to-fit` = "stretch-to-fit".asInstanceOf[`stretch-to-fit`]
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   @scala.inline

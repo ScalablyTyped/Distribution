@@ -3,6 +3,7 @@ package typings.highland.Highland_
 import org.scalablytyped.runtime.StringDictionary
 import typings.highland.AnonEnd
 import typings.highland.Flattened
+import typings.highland.PConstructor
 import typings.highland.highlandStrings.done
 import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadWriteStream
@@ -11,7 +12,6 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import typings.std.Partial
 import typings.std.Pick
-import typings.std.PromiseConstructor
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -279,6 +279,7 @@ trait Stream[R] extends EventEmitter {
       Unit
     ]
   ): Stream[R] = js.native
+  def filter(f: js.Function1[/* x */ R, Boolean]): Stream[R] = js.native
   /**
   		 * Creates a new Stream including only the values which pass a truth test.
   		 *
@@ -288,7 +289,8 @@ trait Stream[R] extends EventEmitter {
   		 * @param f - the truth test function
   		 * @api public
   		 */
-  def filter(f: js.Function1[/* x */ R, Boolean]): Stream[R] = js.native
+  @JSName("filter")
+  def filter_S_R[S /* <: R */](f: js.Function1[/* x */ R, /* is S */ Boolean]): Stream[S] = js.native
   /**
   		 * A convenient form of filter, which returns the first object from a
   		 * Stream that passes the provided truth test
@@ -344,7 +346,7 @@ trait Stream[R] extends EventEmitter {
   		 * Creates a new Stream of values by applying each item in a Stream to an
   		 * iterator function which must return a (possibly empty) Stream. Each
   		 * item on these result Streams are then emitted on a single output Stream.
-  		 * 
+  		 *
   		 * This transform is functionally equivalent to `.map(f).sequence()`.
   		 *
   		 * @id flatMap
@@ -997,46 +999,46 @@ trait Stream[R] extends EventEmitter {
   def toNodeStream(): ReadableStream = js.native
   def toNodeStream(options: js.Object): ReadableStream = js.native
   /**
-    * Converts the result of a stream to Promise.
-    *
-    * If the stream contains a single value, it will return
-    * with the single item emitted by the stream (if present).
-    * If the stream is empty, `undefined` will be returned.
-    * If an error is encountered in the stream, this function will stop
-    * consumption and call `cb` with the error.
-    * If the stream contains more than one item, it will stop consumption
-    * and reject with an error.
-    *
-    * @id toPromise
-    * @section Consumption
-    * @name Stream.toPromise(PromiseCtor)
-    * @param {Function} PromiseCtor - Promises/A+ compliant constructor
-    * @api public
-    *
-    * _([1, 2, 3, 4]).collect().toPromise(Promise).then(function (result) {
-    *     // parameter result will be [1,2,3,4]
-    * });
-    */
-  def toPromise(PromiseCtor: PromiseConstructor): js.Thenable[R] = js.native
+  		 * Converts the result of a stream to Promise.
+  		 *
+  		 * If the stream contains a single value, it will return
+  		 * with the single item emitted by the stream (if present).
+  		 * If the stream is empty, `undefined` will be returned.
+  		 * If an error is encountered in the stream, this function will stop
+  		 * consumption and call `cb` with the error.
+  		 * If the stream contains more than one item, it will stop consumption
+  		 * and reject with an error.
+  		 *
+  		 * @id toPromise
+  		 * @section Consumption
+  		 * @name Stream.toPromise(PromiseCtor)
+  		 * @param {Function} PromiseCtor - Promises/A+ compliant constructor
+  		 * @api public
+  		 *
+  		 * _([1, 2, 3, 4]).collect().toPromise(Promise).then(function (result) {
+  		 *     // parameter result will be [1,2,3,4]
+  		 * });
+  		 */
+  def toPromise[P /* <: js.Thenable[R] */](PromiseCtor: PConstructor[R, P]): P = js.native
   /**
-    * Filters out all duplicate values from the stream and keeps only the first
-    * occurence of each value, using === to define equality.
-    *
-    * @id uniq
-    * @section Streams
-    * @name Stream.uniq()
-    * @api public
-    */
+  		 * Filters out all duplicate values from the stream and keeps only the first
+  		 * occurence of each value, using === to define equality.
+  		 *
+  		 * @id uniq
+  		 * @section Streams
+  		 * @name Stream.uniq()
+  		 * @api public
+  		 */
   def uniq(): Stream[R] = js.native
   /**
-    * Filters out all duplicate values from the stream and keeps only the first
-    * occurence of each value, using the provided function to define equality.
-    *
-    * @id uniqBy
-    * @section Streams
-    * @name Stream.uniqBy()
-    * @api public
-    */
+  		 * Filters out all duplicate values from the stream and keeps only the first
+  		 * occurence of each value, using the provided function to define equality.
+  		 *
+  		 * @id uniqBy
+  		 * @section Streams
+  		 * @name Stream.uniqBy()
+  		 * @api public
+  		 */
   def uniqBy(f: js.Function2[/* a */ R, /* b */ R, Boolean]): Stream[R] = js.native
   /**
   		 * A convenient form of filter, which returns all objects from a Stream

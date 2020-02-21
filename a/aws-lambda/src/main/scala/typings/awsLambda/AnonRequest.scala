@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.CloudFrontRequest
+import typings.awsLambda.cloudfrontMod.CloudFrontRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

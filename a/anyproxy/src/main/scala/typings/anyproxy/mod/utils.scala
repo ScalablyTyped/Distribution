@@ -22,9 +22,12 @@ object utils extends js.Object {
   object systemProxyMgr extends js.Object {
     /** Disable global system proxy. sudo password may be required. */
     def disableGlobalProxy(): Unit = js.native
+    def disableGlobalProxy(networkType: NetworkType): Unit = js.native
     /** Enable global system proxy with specified params. sudo password may be required. */
     def enableGlobalProxy(host: String, port: String): Unit = js.native
+    def enableGlobalProxy(host: String, port: String, networkType: NetworkType): Unit = js.native
     def enableGlobalProxy(host: String, port: Double): Unit = js.native
+    def enableGlobalProxy(host: String, port: Double, networkType: NetworkType): Unit = js.native
   }
   
 }

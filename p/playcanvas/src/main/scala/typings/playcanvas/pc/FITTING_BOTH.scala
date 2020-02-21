@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.FITTING_BOTH
   * @description Apply both STRETCH and SHRINK fitting logic where applicable.
   */

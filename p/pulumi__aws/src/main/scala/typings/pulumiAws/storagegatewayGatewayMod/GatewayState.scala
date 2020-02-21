@@ -18,6 +18,10 @@ trait GatewayState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group to use to monitor and log events in the gateway.
+    */
+  val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.native
+  /**
     * Identifier of the gateway.
     */
   val gatewayId: js.UndefOr[Input[String]] = js.native
@@ -61,6 +65,7 @@ object GatewayState {
   def apply(
     activationKey: Input[String] = null,
     arn: Input[String] = null,
+    cloudwatchLogGroupArn: Input[String] = null,
     gatewayId: Input[String] = null,
     gatewayIpAddress: Input[String] = null,
     gatewayName: Input[String] = null,
@@ -75,6 +80,7 @@ object GatewayState {
     val __obj = js.Dynamic.literal()
     if (activationKey != null) __obj.updateDynamic("activationKey")(activationKey.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
     if (gatewayId != null) __obj.updateDynamic("gatewayId")(gatewayId.asInstanceOf[js.Any])
     if (gatewayIpAddress != null) __obj.updateDynamic("gatewayIpAddress")(gatewayIpAddress.asInstanceOf[js.Any])
     if (gatewayName != null) __obj.updateDynamic("gatewayName")(gatewayName.asInstanceOf[js.Any])

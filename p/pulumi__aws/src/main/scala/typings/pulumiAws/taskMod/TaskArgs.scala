@@ -33,7 +33,7 @@ trait TaskArgs extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Task.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object TaskArgs {
@@ -44,7 +44,7 @@ object TaskArgs {
     cloudwatchLogGroupArn: Input[ARN] = null,
     name: Input[String] = null,
     options: Input[TaskOptions] = null,
-    tags: Input[StringDictionary[Input[String]]] = null
+    tags: Input[StringDictionary[_]] = null
   ): TaskArgs = {
     val __obj = js.Dynamic.literal(destinationLocationArn = destinationLocationArn.asInstanceOf[js.Any], sourceLocationArn = sourceLocationArn.asInstanceOf[js.Any])
     if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])

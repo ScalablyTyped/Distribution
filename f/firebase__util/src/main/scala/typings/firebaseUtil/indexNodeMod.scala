@@ -54,6 +54,7 @@ object indexNodeMod extends js.Object {
   def getUA(): String = js.native
   def isAdmin(token: String): Boolean = js.native
   def isBrowser(): Boolean = js.native
+  def isBrowserExtension(): Boolean = js.native
   def isElectron(): Boolean = js.native
   def isEmpty(obj: js.Object): Boolean = js.native
   def isIE(): Boolean = js.native

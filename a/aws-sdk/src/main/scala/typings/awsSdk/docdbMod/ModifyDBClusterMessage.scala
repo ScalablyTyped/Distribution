@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ModifyDBClusterMessage extends js.Object {
   /**
-    * A value that specifies whether the changes in this request and any pending changes are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is set to false, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter affects only the NewDBClusterIdentifier and MasterUserPassword values. If you set this parameter value to false, the changes to the NewDBClusterIdentifier and MasterUserPassword values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. Default: false 
+    * A value that specifies whether the changes in this request and any pending changes are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the cluster. If this parameter is set to false, changes to the cluster are applied during the next maintenance window. The ApplyImmediately parameter affects only the NewDBClusterIdentifier and MasterUserPassword values. If you set this parameter value to false, the changes to the NewDBClusterIdentifier and MasterUserPassword values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. Default: false 
     */
   var ApplyImmediately: js.UndefOr[Boolean] = js.native
   /**
@@ -15,15 +15,15 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
   /**
-    * The configuration setting for the log types to be enabled for export to Amazon CloudWatch Logs for a specific DB instance or DB cluster. The EnableLogTypes and DisableLogTypes arrays determine which logs are exported (or not exported) to CloudWatch Logs.
+    * The configuration setting for the log types to be enabled for export to Amazon CloudWatch Logs for a specific instance or cluster. The EnableLogTypes and DisableLogTypes arrays determine which logs are exported (or not exported) to CloudWatch Logs.
     */
   var CloudwatchLogsExportConfiguration: js.UndefOr[typings.awsSdk.docdbMod.CloudwatchLogsExportConfiguration] = js.native
   /**
-    * The DB cluster identifier for the cluster that is being modified. This parameter is not case sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
+    * The cluster identifier for the cluster that is being modified. This parameter is not case sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
     */
   var DBClusterIdentifier: String = js.native
   /**
-    * The name of the DB cluster parameter group to use for the DB cluster.
+    * The name of the cluster parameter group to use for the cluster.
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.native
   /**
@@ -39,11 +39,11 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var MasterUserPassword: js.UndefOr[String] = js.native
   /**
-    * The new DB cluster identifier for the DB cluster when renaming a DB cluster. This value is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: my-cluster2 
+    * The new cluster identifier for the cluster when renaming a cluster. This value is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: my-cluster2 
     */
   var NewDBClusterIdentifier: js.UndefOr[String] = js.native
   /**
-    * The port number on which the DB cluster accepts connections. Constraints: Must be a value from 1150 to 65535.  Default: The same port as the original DB cluster.
+    * The port number on which the cluster accepts connections. Constraints: Must be a value from 1150 to 65535.  Default: The same port as the original cluster.
     */
   var Port: js.UndefOr[IntegerOptional] = js.native
   /**
@@ -55,7 +55,7 @@ trait ModifyDBClusterMessage extends js.Object {
     */
   var PreferredMaintenanceWindow: js.UndefOr[String] = js.native
   /**
-    * A list of virtual private cloud (VPC) security groups that the DB cluster will belong to.
+    * A list of virtual private cloud (VPC) security groups that the cluster will belong to.
     */
   var VpcSecurityGroupIds: js.UndefOr[VpcSecurityGroupIdList] = js.native
 }

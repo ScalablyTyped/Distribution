@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
 import typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object choiceGroupMod extends js.Object {
     def this(props: IChoiceGroupProps) = this()
   }
   
-  val ChoiceGroup: StatelessComponent[IChoiceGroupProps] = js.native
-  val ChoiceGroupOption: StatelessComponent[IChoiceGroupOptionProps] = js.native
+  val ChoiceGroup: FunctionComponent[IChoiceGroupProps] = js.native
+  val ChoiceGroupOption: FunctionComponent[IChoiceGroupOptionProps] = js.native
 }
 

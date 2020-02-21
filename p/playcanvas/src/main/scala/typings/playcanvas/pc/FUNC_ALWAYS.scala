@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FUNC_ALWAYS
+  * @type {number}
   * @description Always pass.
   */
 @JSGlobal("pc.FUNC_ALWAYS")

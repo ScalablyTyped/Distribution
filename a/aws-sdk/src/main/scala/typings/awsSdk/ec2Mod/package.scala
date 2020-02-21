@@ -165,6 +165,7 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.`pending-deprovision`
     - typings.awsSdk.awsSdkStrings.`pending-provision`
     - typings.awsSdk.awsSdkStrings.provisioned_
+    - typings.awsSdk.awsSdkStrings.`provisioned-not-publicly-advertisable`
     - java.lang.String
   */
   type ByoipCidrState = typings.awsSdk.ec2Mod._ByoipCidrState | java.lang.String
@@ -1145,8 +1146,11 @@ package object ec2Mod {
   type IpRanges = js.Array[typings.awsSdk.ec2Mod.String]
   type Ipv6Address = java.lang.String
   type Ipv6AddressList = js.Array[typings.awsSdk.ec2Mod.String]
+  type Ipv6CidrAssociationSet = js.Array[typings.awsSdk.ec2Mod.Ipv6CidrAssociation]
   type Ipv6CidrBlockSet = js.Array[typings.awsSdk.ec2Mod.Ipv6CidrBlock]
   type Ipv6Flag = scala.Boolean
+  type Ipv6PoolMaxResults = scala.Double
+  type Ipv6PoolSet = js.Array[typings.awsSdk.ec2Mod.Ipv6Pool]
   type Ipv6RangeList = js.Array[typings.awsSdk.ec2Mod.Ipv6Range]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.enable_
@@ -1447,6 +1451,7 @@ package object ec2Mod {
   */
   type PlacementStrategy = typings.awsSdk.ec2Mod._PlacementStrategy | java.lang.String
   type PlatformValues = typings.awsSdk.awsSdkStrings.Windows_ | java.lang.String
+  type PoolCidrBlocksSet = js.Array[typings.awsSdk.ec2Mod.PoolCidrBlock]
   type PoolMaxResults = scala.Double
   type PrefixListIdList = js.Array[typings.awsSdk.ec2Mod.PrefixListId]
   type PrefixListIdSet = js.Array[typings.awsSdk.ec2Mod.String]
@@ -2043,7 +2048,7 @@ package object ec2Mod {
   */
   type VolumeAttributeName = typings.awsSdk.ec2Mod._VolumeAttributeName | java.lang.String
   type VolumeId = java.lang.String
-  type VolumeIdStringList = js.Array[typings.awsSdk.ec2Mod.String]
+  type VolumeIdStringList = js.Array[typings.awsSdk.ec2Mod.VolumeId]
   type VolumeList = js.Array[typings.awsSdk.ec2Mod.Volume]
   type VolumeModificationList = js.Array[typings.awsSdk.ec2Mod.VolumeModification]
   /* Rewritten from type alias, can be one of: 
@@ -2065,6 +2070,7 @@ package object ec2Mod {
   */
   type VolumeState = typings.awsSdk.ec2Mod._VolumeState | java.lang.String
   type VolumeStatusActionsList = js.Array[typings.awsSdk.ec2Mod.VolumeStatusAction]
+  type VolumeStatusAttachmentStatusList = js.Array[typings.awsSdk.ec2Mod.VolumeStatusAttachmentStatus]
   type VolumeStatusDetailsList = js.Array[typings.awsSdk.ec2Mod.VolumeStatusDetails]
   type VolumeStatusEventsList = js.Array[typings.awsSdk.ec2Mod.VolumeStatusEvent]
   /* Rewritten from type alias, can be one of: 

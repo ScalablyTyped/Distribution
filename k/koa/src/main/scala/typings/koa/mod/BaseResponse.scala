@@ -23,7 +23,11 @@ trait BaseResponse extends ContextDelegatedResponse {
     */
   var socket: Socket = js.native
   /**
-    * Return response header.
+    * Return response header. If the header is not set, will return an empty
+    * string.
+    *
+    * The `Referrer` header field is special-cased, both `Referrer` and
+    * `Referer` are interchangeable.
     *
     * Examples:
     *
@@ -32,6 +36,9 @@ trait BaseResponse extends ContextDelegatedResponse {
     *
     *     this.get('content-type');
     *     // => "text/plain"
+    *
+    *     this.get('Something');
+    *     // => ''
     */
   def get(field: String): String = js.native
   /**

@@ -16,6 +16,11 @@ trait Options extends js.Object {
     */
   var cssProp: js.UndefOr[String] = js.undefined
   /**
+    * After which distance should we start pulling.
+    * (Default: `0`)
+    */
+  var distIgnore: js.UndefOr[Double] = js.undefined
+  /**
     * Maximum distance possible for the element.
     * (default: `80`)
     */
@@ -30,6 +35,14 @@ trait Options extends js.Object {
     * (default: `60`)
     */
   var distThreshold: js.UndefOr[Double] = js.undefined
+  /**
+    * It returns the default HTML for the widget, __PREFIX__ is replaced.
+    */
+  var getMarkup: js.UndefOr[js.Function0[String]] = js.undefined
+  /**
+    * It returns the default CSS for the widget, __PREFIX__ is replaced.
+    */
+  var getStyles: js.UndefOr[js.Function0[String]] = js.undefined
   /**
     * The icon for both `instructionsPullToRefresh` and `instructionsReleaseToRefresh`
     * (default: `&#8675;`)
@@ -71,13 +84,6 @@ trait Options extends js.Object {
     */
   var onRefresh: js.UndefOr[js.Function0[js.Thenable[Unit] | Unit]] = js.undefined
   /**
-    * This value will be passed as `{ passive: true|false }` to `touchmove`
-    * listeners if passive-handlers are supported.
-    *
-    * Defaults to `false`
-    */
-  var passive: js.UndefOr[Boolean] = js.undefined
-  /**
     * What class will the main element have?
     * (default: `.ptr`)
     */
@@ -111,9 +117,12 @@ object Options {
   def apply(
     classPrefix: String = null,
     cssProp: String = null,
+    distIgnore: Int | Double = null,
     distMax: Int | Double = null,
     distReload: Int | Double = null,
     distThreshold: Int | Double = null,
+    getMarkup: () => String = null,
+    getStyles: () => String = null,
     iconArrow: String = null,
     iconRefreshing: String = null,
     instructionsPullToRefresh: String = null,
@@ -122,7 +131,6 @@ object Options {
     mainElement: String = null,
     onInit: () => Unit = null,
     onRefresh: () => js.Thenable[Unit] | Unit = null,
-    passive: js.UndefOr[Boolean] = js.undefined,
     ptrElement: String = null,
     refreshTimeout: Int | Double = null,
     resistanceFunction: /* input */ Double => Double = null,
@@ -132,9 +140,12 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix.asInstanceOf[js.Any])
     if (cssProp != null) __obj.updateDynamic("cssProp")(cssProp.asInstanceOf[js.Any])
+    if (distIgnore != null) __obj.updateDynamic("distIgnore")(distIgnore.asInstanceOf[js.Any])
     if (distMax != null) __obj.updateDynamic("distMax")(distMax.asInstanceOf[js.Any])
     if (distReload != null) __obj.updateDynamic("distReload")(distReload.asInstanceOf[js.Any])
     if (distThreshold != null) __obj.updateDynamic("distThreshold")(distThreshold.asInstanceOf[js.Any])
+    if (getMarkup != null) __obj.updateDynamic("getMarkup")(js.Any.fromFunction0(getMarkup))
+    if (getStyles != null) __obj.updateDynamic("getStyles")(js.Any.fromFunction0(getStyles))
     if (iconArrow != null) __obj.updateDynamic("iconArrow")(iconArrow.asInstanceOf[js.Any])
     if (iconRefreshing != null) __obj.updateDynamic("iconRefreshing")(iconRefreshing.asInstanceOf[js.Any])
     if (instructionsPullToRefresh != null) __obj.updateDynamic("instructionsPullToRefresh")(instructionsPullToRefresh.asInstanceOf[js.Any])
@@ -143,7 +154,6 @@ object Options {
     if (mainElement != null) __obj.updateDynamic("mainElement")(mainElement.asInstanceOf[js.Any])
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
     if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction0(onRefresh))
-    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive.asInstanceOf[js.Any])
     if (ptrElement != null) __obj.updateDynamic("ptrElement")(ptrElement.asInstanceOf[js.Any])
     if (refreshTimeout != null) __obj.updateDynamic("refreshTimeout")(refreshTimeout.asInstanceOf[js.Any])
     if (resistanceFunction != null) __obj.updateDynamic("resistanceFunction")(js.Any.fromFunction1(resistanceFunction))

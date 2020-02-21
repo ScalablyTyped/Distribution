@@ -16,7 +16,7 @@ trait UserPoolAdminCreateUserConfig extends js.Object {
     */
   var inviteMessageTemplate: js.UndefOr[Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]] = js.native
   /**
-    * The user account expiration limit, in days, after which the account is no longer usable.
+    * **DEPRECATED** Use password_policy.temporary_password_validity_days instead - The user account expiration limit, in days, after which the account is no longer usable.
     */
   var unusedAccountValidityDays: js.UndefOr[Input[Double]] = js.native
 }

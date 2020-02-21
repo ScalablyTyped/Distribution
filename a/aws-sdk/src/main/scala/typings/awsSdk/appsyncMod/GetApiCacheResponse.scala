@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait GetApiCacheResponse extends js.Object {
+  /**
+    * The ApiCache object.
+    */
   var apiCache: js.UndefOr[ApiCache] = js.native
 }
 

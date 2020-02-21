@@ -1,16 +1,15 @@
 organization := "org.scalablytyped"
 name := "xadesjs"
-version := "2.0.16-dcfbd1"
-scalaVersion := "2.12.10"
+version := "2.0.16-da5e11"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "xml-core" % "1.0.20-fd0482",
-  "org.scalablytyped" %%% "xmldsigjs" % "2.0.27-bbb4c3")
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "xml-core" % "1.0.20-d38242",
+  "org.scalablytyped" %%% "xmldsigjs" % "2.0.27-56044e")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

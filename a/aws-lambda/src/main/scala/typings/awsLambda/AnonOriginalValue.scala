@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.LexSlotResolution
+import typings.awsLambda.lexMod.LexSlotResolution
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

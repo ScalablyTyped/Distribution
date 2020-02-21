@@ -31,7 +31,11 @@ object mod extends js.Object {
     def enumerate(): WuIterable[js.Tuple2[T, Double]] = js.native
     def every(fn: Filter_[T]): Boolean = js.native
     def filter(fn: Filter_[T]): WuIterable[T] = js.native
+    @JSName("filter")
+    def filter_S_T[S /* <: T */](fn: TypeGuardFilter[T, S]): WuIterable[S] = js.native
     def find(fn: Filter_[T]): js.UndefOr[T] = js.native
+    @JSName("find")
+    def find_S_T[S /* <: T */](fn: TypeGuardFilter[T, S]): js.UndefOr[S] = js.native
     def flatten(): WuIterable[_] = js.native
     def flatten(shallow: Boolean): WuIterable[_] = js.native
     def forEach(fn: Consumer[T]): Unit = js.native
@@ -96,7 +100,11 @@ object mod extends js.Object {
   def enumerate[T](iter: Iterable[T]): WuIterable[js.Tuple2[T, Double]] = js.native
   def every[T](fn: Filter_[T], iter: Iterable[T]): Boolean = js.native
   def filter[T](fn: Filter_[T], iter: Iterable[T]): WuIterable[T] = js.native
+  @JSName("filter")
+  def filter_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: Iterable[T]): WuIterable[S] = js.native
   def find[T](fn: Filter_[T], iter: Iterable[T]): js.UndefOr[T] = js.native
+  @JSName("find")
+  def find_TS_T[T, S /* <: T */](fn: TypeGuardFilter[T, S], iter: Iterable[T]): js.UndefOr[S] = js.native
   def flatten(iter: Iterable[_]): WuIterable[_] = js.native
   def flatten(shallow: Boolean, iter: Iterable[_]): WuIterable[_] = js.native
   def forEach[T](fn: Consumer[T], iter: Iterable[T]): Unit = js.native
@@ -137,5 +145,6 @@ object mod extends js.Object {
   def zipLongest[T, U](iter2: Iterable[T], iter: Iterable[U]): WuIterable[js.Tuple2[T, U]] = js.native
   type Consumer[T] = js.Function1[/* t */ T, Unit]
   type Filter_[T] = js.Function1[/* t */ T, Boolean]
+  type TypeGuardFilter[T, S /* <: T */] = js.Function1[/* t */ T, /* is S */ Boolean]
 }
 

@@ -13,12 +13,12 @@ trait Imagebuilder extends Service {
   @JSName("config")
   var config_Imagebuilder: ConfigBase with ClientConfiguration = js.native
   /**
-    * CancelImageCreation cancels the creation of Image. This operation may only be used on images in a non-terminal state.
+    * CancelImageCreation cancels the creation of Image. This operation can only be used on images in a non-terminal state.
     */
   def cancelImageCreation(): Request[CancelImageCreationResponse, AWSError] = js.native
   def cancelImageCreation(callback: js.Function2[/* err */ AWSError, /* data */ CancelImageCreationResponse, Unit]): Request[CancelImageCreationResponse, AWSError] = js.native
   /**
-    * CancelImageCreation cancels the creation of Image. This operation may only be used on images in a non-terminal state.
+    * CancelImageCreation cancels the creation of Image. This operation can only be used on images in a non-terminal state.
     */
   def cancelImageCreation(params: CancelImageCreationRequest): Request[CancelImageCreationResponse, AWSError] = js.native
   def cancelImageCreation(
@@ -26,12 +26,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CancelImageCreationResponse, Unit]
   ): Request[CancelImageCreationResponse, AWSError] = js.native
   /**
-    * Creates a new component that can be used to build, validate, test and assess your image.
+    * Creates a new component that can be used to build, validate, test, and assess your image.
     */
   def createComponent(): Request[CreateComponentResponse, AWSError] = js.native
   def createComponent(callback: js.Function2[/* err */ AWSError, /* data */ CreateComponentResponse, Unit]): Request[CreateComponentResponse, AWSError] = js.native
   /**
-    * Creates a new component that can be used to build, validate, test and assess your image.
+    * Creates a new component that can be used to build, validate, test, and assess your image.
     */
   def createComponent(params: CreateComponentRequest): Request[CreateComponentResponse, AWSError] = js.native
   def createComponent(
@@ -39,14 +39,14 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateComponentResponse, Unit]
   ): Request[CreateComponentResponse, AWSError] = js.native
   /**
-    *  Creates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline. 
+    * Creates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline. 
     */
   def createDistributionConfiguration(): Request[CreateDistributionConfigurationResponse, AWSError] = js.native
   def createDistributionConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDistributionConfigurationResponse, Unit]
   ): Request[CreateDistributionConfigurationResponse, AWSError] = js.native
   /**
-    *  Creates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline. 
+    * Creates a new distribution configuration. Distribution configurations define and configure the outputs of your pipeline. 
     */
   def createDistributionConfiguration(params: CreateDistributionConfigurationRequest): Request[CreateDistributionConfigurationResponse, AWSError] = js.native
   def createDistributionConfiguration(
@@ -80,12 +80,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImagePipelineResponse, Unit]
   ): Request[CreateImagePipelineResponse, AWSError] = js.native
   /**
-    *  Creates a new image recipe. Image Recipes defines how images are configured, tested and assessed. 
+    *  Creates a new image recipe. Image recipes define how images are configured, tested, and assessed. 
     */
   def createImageRecipe(): Request[CreateImageRecipeResponse, AWSError] = js.native
   def createImageRecipe(callback: js.Function2[/* err */ AWSError, /* data */ CreateImageRecipeResponse, Unit]): Request[CreateImageRecipeResponse, AWSError] = js.native
   /**
-    *  Creates a new image recipe. Image Recipes defines how images are configured, tested and assessed. 
+    *  Creates a new image recipe. Image recipes define how images are configured, tested, and assessed. 
     */
   def createImageRecipe(params: CreateImageRecipeRequest): Request[CreateImageRecipeResponse, AWSError] = js.native
   def createImageRecipe(
@@ -294,14 +294,14 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetImageRecipePolicyResponse, Unit]
   ): Request[GetImageRecipePolicyResponse, AWSError] = js.native
   /**
-    *  Gets a infrastructure configuration. 
+    *  Gets an infrastructure configuration. 
     */
   def getInfrastructureConfiguration(): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
   def getInfrastructureConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ GetInfrastructureConfigurationResponse, Unit]
   ): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
   /**
-    *  Gets a infrastructure configuration. 
+    *  Gets an infrastructure configuration. 
     */
   def getInfrastructureConfiguration(params: GetInfrastructureConfigurationRequest): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
   def getInfrastructureConfiguration(
@@ -309,12 +309,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetInfrastructureConfigurationResponse, Unit]
   ): Request[GetInfrastructureConfigurationResponse, AWSError] = js.native
   /**
-    *  Imports a component and transforms its data into a component document. 
+    * Imports a component and transforms its data into a component document. 
     */
   def importComponent(): Request[ImportComponentResponse, AWSError] = js.native
   def importComponent(callback: js.Function2[/* err */ AWSError, /* data */ ImportComponentResponse, Unit]): Request[ImportComponentResponse, AWSError] = js.native
   /**
-    *  Imports a component and transforms its data into a component document. 
+    * Imports a component and transforms its data into a component document. 
     */
   def importComponent(params: ImportComponentRequest): Request[ImportComponentResponse, AWSError] = js.native
   def importComponent(
@@ -335,12 +335,12 @@ trait Imagebuilder extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListComponentBuildVersionsResponse, Unit]
   ): Request[ListComponentBuildVersionsResponse, AWSError] = js.native
   /**
-    *  Returns the list of component build versions for the specified semantic version. 
+    * Returns the list of component build versions for the specified semantic version. 
     */
   def listComponents(): Request[ListComponentsResponse, AWSError] = js.native
   def listComponents(callback: js.Function2[/* err */ AWSError, /* data */ ListComponentsResponse, Unit]): Request[ListComponentsResponse, AWSError] = js.native
   /**
-    *  Returns the list of component build versions for the specified semantic version. 
+    * Returns the list of component build versions for the specified semantic version. 
     */
   def listComponents(params: ListComponentsRequest): Request[ListComponentsResponse, AWSError] = js.native
   def listComponents(

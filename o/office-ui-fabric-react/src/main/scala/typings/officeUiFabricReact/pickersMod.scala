@@ -12,7 +12,7 @@ import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,14 +79,14 @@ object pickersMod extends js.Object {
   class TagPickerBase ()
     extends typings.officeUiFabricReact.tagPickerMod.TagPickerBase
   
-  val CompactPeoplePicker: StatelessComponent[IPeoplePickerProps] = js.native
-  val ListPeoplePicker: StatelessComponent[IPeoplePickerProps] = js.native
-  val NormalPeoplePicker: StatelessComponent[IPeoplePickerProps] = js.native
-  val PeoplePickerItem: StatelessComponent[IPeoplePickerItemSelectedProps] = js.native
-  val PeoplePickerItemSuggestion: StatelessComponent[IPeoplePickerItemSuggestionProps] = js.native
-  val TagItem: StatelessComponent[ITagItemProps] = js.native
-  val TagItemSuggestion: StatelessComponent[ITagItemSuggestionProps] = js.native
-  val TagPicker: StatelessComponent[ITagPickerProps] = js.native
+  val CompactPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native
+  val ListPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native
+  val NormalPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native
+  val PeoplePickerItem: FunctionComponent[IPeoplePickerItemSelectedProps] = js.native
+  val PeoplePickerItemSuggestion: FunctionComponent[IPeoplePickerItemSuggestionProps] = js.native
+  val TagItem: FunctionComponent[ITagItemProps] = js.native
+  val TagItemSuggestion: FunctionComponent[ITagItemSuggestionProps] = js.native
+  val TagPicker: FunctionComponent[ITagPickerProps] = js.native
   def PeoplePickerItemBase(props: IPeoplePickerItemSelectedProps): Element = js.native
   def PeoplePickerItemSuggestionBase(props: IPeoplePickerItemSuggestionProps): Element = js.native
   def TagItemBase(props: ITagItemProps): Element = js.native

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FRESNEL_SCHLICK
+  * @type {number}
   * @description Schlick's approximation of Fresnel.
   */
 @JSImport("playcanvas", "FRESNEL_SCHLICK")

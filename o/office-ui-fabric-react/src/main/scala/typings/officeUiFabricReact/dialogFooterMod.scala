@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Dialog/DialogFooter", JSImport.Namespace)
 @js.native
 object dialogFooterMod extends js.Object {
-  val DialogFooter: StatelessComponent[IDialogFooterProps] = js.native
+  val DialogFooter: FunctionComponent[IDialogFooterProps] = js.native
 }
 

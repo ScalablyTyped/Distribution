@@ -43,7 +43,7 @@ trait ImagePipeline extends js.Object {
     */
   var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the infrastruction configuration associated with this image pipeline.
+    * The Amazon Resource Name (ARN) of the infrastructure configuration associated with this image pipeline.
     */
   var infrastructureConfigurationArn: js.UndefOr[Arn] = js.native
   /**

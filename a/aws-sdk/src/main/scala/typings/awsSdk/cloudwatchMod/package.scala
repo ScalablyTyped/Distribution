@@ -16,6 +16,13 @@ package object cloudwatchMod {
   type AmazonResourceName = java.lang.String
   type AnomalyDetectorExcludedTimeRanges = js.Array[typings.awsSdk.cloudwatchMod.Range]
   type AnomalyDetectorMetricTimezone = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PENDING_TRAINING
+    - typings.awsSdk.awsSdkStrings.TRAINED_INSUFFICIENT_DATA
+    - typings.awsSdk.awsSdkStrings.TRAINED
+    - java.lang.String
+  */
+  type AnomalyDetectorStateValue = typings.awsSdk.cloudwatchMod._AnomalyDetectorStateValue | java.lang.String
   type AnomalyDetectors = js.Array[typings.awsSdk.cloudwatchMod.AnomalyDetector]
   type BatchFailures = js.Array[typings.awsSdk.cloudwatchMod.PartialFailure]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.cloudwatchMod.ClientApiVersions

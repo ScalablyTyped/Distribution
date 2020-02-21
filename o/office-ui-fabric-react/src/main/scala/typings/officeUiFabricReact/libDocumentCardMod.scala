@@ -10,7 +10,7 @@ import typings.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPrev
 import typings.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps
 import typings.officeUiFabricReact.documentCardTitleTypesMod.IDocumentCardTitleProps
 import typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,16 +18,16 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/DocumentCard", JSImport.Namespace)
 @js.native
 object libDocumentCardMod extends js.Object {
-  val DocumentCard: StatelessComponent[IDocumentCardProps] = js.native
-  val DocumentCardActions: StatelessComponent[IDocumentCardActionsProps] = js.native
-  val DocumentCardActivity: StatelessComponent[IDocumentCardActivityProps] = js.native
-  val DocumentCardDetails: StatelessComponent[IDocumentCardDetailsProps] = js.native
-  val DocumentCardImage: StatelessComponent[IDocumentCardImageProps] = js.native
-  val DocumentCardLocation: StatelessComponent[IDocumentCardLocationProps] = js.native
-  val DocumentCardLogo: StatelessComponent[IDocumentCardLogoProps] = js.native
-  val DocumentCardPreview: StatelessComponent[IDocumentCardPreviewProps] = js.native
-  val DocumentCardStatus: StatelessComponent[IDocumentCardStatusProps] = js.native
-  val DocumentCardTitle: StatelessComponent[IDocumentCardTitleProps] = js.native
+  val DocumentCard: FunctionComponent[IDocumentCardProps] = js.native
+  val DocumentCardActions: FunctionComponent[IDocumentCardActionsProps] = js.native
+  val DocumentCardActivity: FunctionComponent[IDocumentCardActivityProps] = js.native
+  val DocumentCardDetails: FunctionComponent[IDocumentCardDetailsProps] = js.native
+  val DocumentCardImage: FunctionComponent[IDocumentCardImageProps] = js.native
+  val DocumentCardLocation: FunctionComponent[IDocumentCardLocationProps] = js.native
+  val DocumentCardLogo: FunctionComponent[IDocumentCardLogoProps] = js.native
+  val DocumentCardPreview: FunctionComponent[IDocumentCardPreviewProps] = js.native
+  val DocumentCardStatus: FunctionComponent[IDocumentCardStatusProps] = js.native
+  val DocumentCardTitle: FunctionComponent[IDocumentCardTitleProps] = js.native
   @js.native
   object DocumentCardType extends js.Object {
     /* 1 */ val compact: typings.officeUiFabricReact.documentCardTypesMod.DocumentCardType.compact with Double = js.native

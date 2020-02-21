@@ -38,6 +38,8 @@ import typings.elasticElasticsearch.requestParamsMod.Explain
 import typings.elasticElasticsearch.requestParamsMod.FieldCaps
 import typings.elasticElasticsearch.requestParamsMod.Get
 import typings.elasticElasticsearch.requestParamsMod.GetScript
+import typings.elasticElasticsearch.requestParamsMod.GetScriptContext
+import typings.elasticElasticsearch.requestParamsMod.GetScriptLanguages
 import typings.elasticElasticsearch.requestParamsMod.GetSource
 import typings.elasticElasticsearch.requestParamsMod.Index
 import typings.elasticElasticsearch.requestParamsMod.Info
@@ -117,6 +119,10 @@ class Client () extends EventEmitter {
   var fieldCaps_Original: ApiMethod[FieldCaps, _] = js.native
   @JSName("field_caps")
   var field_caps_Original: ApiMethod[FieldCaps, _] = js.native
+  @JSName("getScriptContext")
+  var getScriptContext_Original: ApiMethod[GetScriptContext, _] = js.native
+  @JSName("getScriptLanguages")
+  var getScriptLanguages_Original: ApiMethod[GetScriptLanguages, _] = js.native
   @JSName("getScript")
   var getScript_Original: ApiMethod[GetScript, _] = js.native
   @JSName("getSource")
@@ -125,6 +131,10 @@ class Client () extends EventEmitter {
   var get_Original: ApiMethod[Get, _] = js.native
   @JSName("get_script")
   var get_script_Original: ApiMethod[GetScript, _] = js.native
+  @JSName("get_script_context")
+  var get_script_context_Original: ApiMethod[GetScriptContext, _] = js.native
+  @JSName("get_script_languages")
+  var get_script_languages_Original: ApiMethod[GetScriptLanguages, _] = js.native
   @JSName("get_source")
   var get_source_Original: ApiMethod[GetSource, _] = js.native
   var graph: AnonExplore = js.native
@@ -383,6 +393,22 @@ class Client () extends EventEmitter {
   def getScript(params: GetScript, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def getScript(params: GetScript, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def getScriptContext(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getScriptContext(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getScriptContext(params: GetScriptContext): js.Promise[ApiResponse[_, _]] = js.native
+  def getScriptContext(params: GetScriptContext, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getScriptContext(params: GetScriptContext, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getScriptContext(params: GetScriptContext, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def getScriptLanguages(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getScriptLanguages(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getScriptLanguages(params: GetScriptLanguages): js.Promise[ApiResponse[_, _]] = js.native
+  def getScriptLanguages(params: GetScriptLanguages, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getScriptLanguages(params: GetScriptLanguages, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getScriptLanguages(params: GetScriptLanguages, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def getSource(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def getSource(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -398,6 +424,22 @@ class Client () extends EventEmitter {
   def get_script(params: GetScript, callback: callbackFn[_]): TransportRequestCallback = js.native
   def get_script(params: GetScript, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def get_script(params: GetScript, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def get_script_context(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_script_context(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_script_context(params: GetScriptContext): js.Promise[ApiResponse[_, _]] = js.native
+  def get_script_context(params: GetScriptContext, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_script_context(params: GetScriptContext, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_script_context(params: GetScriptContext, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def get_script_languages(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_script_languages(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_script_languages(params: GetScriptLanguages): js.Promise[ApiResponse[_, _]] = js.native
+  def get_script_languages(params: GetScriptLanguages, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_script_languages(params: GetScriptLanguages, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_script_languages(params: GetScriptLanguages, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def get_source(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

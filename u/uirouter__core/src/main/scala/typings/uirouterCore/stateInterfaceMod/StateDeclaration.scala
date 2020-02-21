@@ -67,7 +67,7 @@ trait StateDeclaration
     *
     * ```
     * .state('abc', {
-    *   lazyLoad: (transition, state) => System.import('./abcService')
+    *   lazyLoad: (transition, state) => import('./abcService')
     * }
     * ```
     *
@@ -125,7 +125,7 @@ trait StateDeclaration
     * {
     *   name: 'parent.**',
     *   url: '/parent',
-    *   lazyLoad: () => System.import('./lazy.states.js')
+    *   lazyLoad: () => import('./lazy.states.js')
     * }
     * ```
     *

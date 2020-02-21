@@ -1,5 +1,6 @@
 package typings.pino.mod
 
+import typings.pino.pinoBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,6 +32,10 @@ trait PrettyOptions extends js.Object {
     */
   var levelFirst: js.UndefOr[Boolean] = js.undefined
   /**
+    * Format output of message, e.g. {level} - {pid} will output message: INFO - 1123 Default: `false`.
+    */
+  var messageFormat: js.UndefOr[`false` | String] = js.undefined
+  /**
     * The key in the JSON object to use as the highlighted message. Default: "msg".
     */
   var messageKey: js.UndefOr[String] = js.undefined
@@ -60,6 +65,7 @@ object PrettyOptions {
     errorProps: String = null,
     ignore: String = null,
     levelFirst: js.UndefOr[Boolean] = js.undefined,
+    messageFormat: `false` | String = null,
     messageKey: String = null,
     search: String = null,
     timestampKey: String = null,
@@ -72,6 +78,7 @@ object PrettyOptions {
     if (errorProps != null) __obj.updateDynamic("errorProps")(errorProps.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
     if (!js.isUndefined(levelFirst)) __obj.updateDynamic("levelFirst")(levelFirst.asInstanceOf[js.Any])
+    if (messageFormat != null) __obj.updateDynamic("messageFormat")(messageFormat.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
     if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     if (timestampKey != null) __obj.updateDynamic("timestampKey")(timestampKey.asInstanceOf[js.Any])

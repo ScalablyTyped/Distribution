@@ -37,6 +37,7 @@ package object groundstationMod {
     - typings.awsSdk.awsSdkStrings.AVAILABLE
     - typings.awsSdk.awsSdkStrings.AWS_CANCELLED
     - typings.awsSdk.awsSdkStrings.CANCELLED
+    - typings.awsSdk.awsSdkStrings.CANCELLING
     - typings.awsSdk.awsSdkStrings.COMPLETED
     - typings.awsSdk.awsSdkStrings.FAILED
     - typings.awsSdk.awsSdkStrings.FAILED_TO_SCHEDULE
@@ -79,6 +80,7 @@ package object groundstationMod {
     - java.lang.String
   */
   type FrequencyUnits = typings.awsSdk.groundstationMod._FrequencyUnits | java.lang.String
+  type GroundStationIdList = js.Array[typings.awsSdk.groundstationMod.String]
   type GroundStationList = js.Array[typings.awsSdk.groundstationMod.GroundStationData]
   type Integer = scala.Double
   type JsonString = java.lang.String

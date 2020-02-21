@@ -73,12 +73,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStackOutput, Unit]
   ): Request[CreateStackOutput, AWSError] = js.native
   /**
-    * Creates stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region. Accounts and Regions are required parameters—you must specify at least one account and one region. 
+    * Creates stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region. You must specify at least one value for either Accounts or DeploymentTargets, and you must specify at least one value for Regions.
     */
   def createStackInstances(): Request[CreateStackInstancesOutput, AWSError] = js.native
   def createStackInstances(callback: js.Function2[/* err */ AWSError, /* data */ CreateStackInstancesOutput, Unit]): Request[CreateStackInstancesOutput, AWSError] = js.native
   /**
-    * Creates stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region. Accounts and Regions are required parameters—you must specify at least one account and one region. 
+    * Creates stack instances for the specified accounts, within the specified regions. A stack instance refers to a stack in a specific account and region. You must specify at least one value for either Accounts or DeploymentTargets, and you must specify at least one value for Regions.
     */
   def createStackInstances(params: CreateStackInstancesInput): Request[CreateStackInstancesOutput, AWSError] = js.native
   def createStackInstances(
@@ -553,12 +553,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListStacksOutput, Unit]
   ): Request[ListStacksOutput, AWSError] = js.native
   /**
-    * Returns a list of registration tokens for the specified type.
+    * Returns a list of registration tokens for the specified type(s).
     */
   def listTypeRegistrations(): Request[ListTypeRegistrationsOutput, AWSError] = js.native
   def listTypeRegistrations(callback: js.Function2[/* err */ AWSError, /* data */ ListTypeRegistrationsOutput, Unit]): Request[ListTypeRegistrationsOutput, AWSError] = js.native
   /**
-    * Returns a list of registration tokens for the specified type.
+    * Returns a list of registration tokens for the specified type(s).
     */
   def listTypeRegistrations(params: ListTypeRegistrationsInput): Request[ListTypeRegistrationsOutput, AWSError] = js.native
   def listTypeRegistrations(

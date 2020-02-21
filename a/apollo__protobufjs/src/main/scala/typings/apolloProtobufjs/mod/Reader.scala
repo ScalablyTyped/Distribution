@@ -1,6 +1,6 @@
 package typings.apolloProtobufjs.mod
 
-import typings.long.mod.^
+import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,7 +44,7 @@ class Reader protected () extends js.Object {
     * Reads fixed 64 bits.
     * @returns Value read
     */
-  def fixed64(): ^ = js.native
+  def fixed64(): Long = js.native
   /**
     * Reads a float (32 bit) as a number.
     * @returns Value read
@@ -59,7 +59,7 @@ class Reader protected () extends js.Object {
     * Reads a varint as a signed 64 bit value.
     * @returns Value read
     */
-  def int64(): ^ = js.native
+  def int64(): Long = js.native
   /**
     * Reads fixed 32 bits as a signed 32 bit integer.
     * @returns Value read
@@ -69,7 +69,7 @@ class Reader protected () extends js.Object {
     * Reads zig-zag encoded fixed 64 bits.
     * @returns Value read
     */
-  def sfixed64(): ^ = js.native
+  def sfixed64(): Long = js.native
   /**
     * Reads a zig-zag encoded varint as a signed 32 bit value.
     * @returns Value read
@@ -79,7 +79,7 @@ class Reader protected () extends js.Object {
     * Reads a zig-zag encoded varint as a signed 64 bit value.
     * @returns Value read
     */
-  def sint64(): ^ = js.native
+  def sint64(): Long = js.native
   /**
     * Skips the specified number of bytes if specified, otherwise skips a varint.
     * @param [length] Length if known, otherwise a varint is assumed
@@ -107,7 +107,7 @@ class Reader protected () extends js.Object {
     * Reads a varint as an unsigned 64 bit value.
     * @returns Value read
     */
-  def uint64(): ^ = js.native
+  def uint64(): Long = js.native
 }
 
 /* static members */

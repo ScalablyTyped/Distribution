@@ -33,7 +33,7 @@ trait OutputOptions extends js.Object {
   var format: js.UndefOr[ModuleFormat] = js.undefined
   var freeze: js.UndefOr[Boolean] = js.undefined
   var globals: js.UndefOr[GlobalsOption] = js.undefined
-  var importMetaUrl: js.UndefOr[js.Function2[/* chunkId */ String, /* moduleId */ String, String]] = js.undefined
+  var hoistTransitiveImports: js.UndefOr[Boolean] = js.undefined
   var indent: js.UndefOr[Boolean] = js.undefined
   var interop: js.UndefOr[Boolean] = js.undefined
   var intro: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
@@ -71,7 +71,7 @@ object OutputOptions {
     format: ModuleFormat = null,
     freeze: js.UndefOr[Boolean] = js.undefined,
     globals: GlobalsOption = null,
-    importMetaUrl: (/* chunkId */ String, /* moduleId */ String) => String = null,
+    hoistTransitiveImports: js.UndefOr[Boolean] = js.undefined,
     indent: js.UndefOr[Boolean] = js.undefined,
     interop: js.UndefOr[Boolean] = js.undefined,
     intro: String | (js.Function0[String | js.Promise[String]]) = null,
@@ -106,7 +106,7 @@ object OutputOptions {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(freeze)) __obj.updateDynamic("freeze")(freeze.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (importMetaUrl != null) __obj.updateDynamic("importMetaUrl")(js.Any.fromFunction2(importMetaUrl))
+    if (!js.isUndefined(hoistTransitiveImports)) __obj.updateDynamic("hoistTransitiveImports")(hoistTransitiveImports.asInstanceOf[js.Any])
     if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (!js.isUndefined(interop)) __obj.updateDynamic("interop")(interop.asInstanceOf[js.Any])
     if (intro != null) __obj.updateDynamic("intro")(intro.asInstanceOf[js.Any])

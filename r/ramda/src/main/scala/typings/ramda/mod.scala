@@ -407,8 +407,8 @@ object mod extends js.Object {
   def eqProps[T](prop: String, obj1: T): js.Function1[/* obj2 */ js.Any, Boolean] = js.native
   def eqProps[T, U](prop: String, obj1: T, obj2: U): Boolean = js.native
   def equals[T](a: T, b: T): Boolean = js.native
-  def evolve[E /* <: Evolver */](transformations: E): js.Function1[/* obj */ Evolvable[E], Evolve[Evolvable[E], E]] = js.native
-  def evolve[E /* <: Evolver */, V /* <: Evolvable[E] */](transformations: E, obj: V): Evolve[V, E] = js.native
+  def evolve[E /* <: Evolver[_] */](transformations: E): js.Function1[/* obj */ Evolvable[E], Evolve[Evolvable[E], E]] = js.native
+  def evolve[E /* <: Evolver[_] */, V /* <: Evolvable[E] */](transformations: E, obj: V): Evolve[V, E] = js.native
   def find[T](fn: js.Function1[/* a */ T, Boolean]): js.Function1[/* list */ js.Array[T], js.UndefOr[T]] = js.native
   def find[T](fn: js.Function1[/* a */ T, Boolean], list: js.Array[T]): js.UndefOr[T] = js.native
   def findIndex[T](fn: js.Function1[/* a */ T, Boolean]): js.Function1[/* list */ js.Array[T], Double] = js.native

@@ -2,6 +2,7 @@ package typings.victory.mod
 
 import typings.react.mod.ReactElement
 import typings.victory.AnonXY
+import typings.victory.AnonXYBoolean
 import typings.victory.AnonXYD3ScaleScalePropType
 import typings.victory.victoryStrings.all
 import typings.victory.victoryStrings.data
@@ -102,6 +103,7 @@ object VictoryAreaProps {
     padding: PaddingProps = null,
     samples: Int | Double = null,
     scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
+    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     theme: VictoryThemeDefinition = null,
@@ -131,6 +133,7 @@ object VictoryAreaProps {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
     if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])

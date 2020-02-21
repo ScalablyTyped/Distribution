@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PROJECTION_ORTHOGRAPHIC
+  * @type {number}
   * @description An orthographic camera projection where the frustum shape is essentially a cuboid.
   */
 @JSGlobal("pc.PROJECTION_ORTHOGRAPHIC")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MissionProfileIdResponse extends js.Object {
   /**
-    * ID of a mission profile.
+    * UUID of a mission profile.
     */
   var missionProfileId: js.UndefOr[String] = js.native
 }

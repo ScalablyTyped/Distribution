@@ -187,6 +187,13 @@ trait ICanvasOptions extends IStaticCanvasOptions {
   	 */
   var targetFindTolerance: js.UndefOr[Double] = js.undefined
   /**
+  	 * Keep track of the subTargets for Mouse Events
+  	 * @type {Array.<fabric.Object>}
+  	 * @since 3.6.0
+  	 * @default
+  	 */
+  var targets: js.UndefOr[js.Array[Object]] = js.undefined
+  /**
   	 * Indicates which key enable unproportional scaling
   	 * values: 'altKey', 'shiftKey', 'ctrlKey'.
   	 * If `null` or 'none' or any other string that is not a modifier key
@@ -253,6 +260,7 @@ object ICanvasOptions {
     stopContextMenu: js.UndefOr[Boolean] = js.undefined,
     svgViewportTransformation: js.UndefOr[Boolean] = js.undefined,
     targetFindTolerance: Int | Double = null,
+    targets: js.Array[Object] = null,
     uniScaleKey: String = null,
     uniScaleTransform: js.UndefOr[Boolean] = js.undefined,
     viewportTransform: js.Array[Double] = null,
@@ -307,6 +315,7 @@ object ICanvasOptions {
     if (!js.isUndefined(stopContextMenu)) __obj.updateDynamic("stopContextMenu")(stopContextMenu.asInstanceOf[js.Any])
     if (!js.isUndefined(svgViewportTransformation)) __obj.updateDynamic("svgViewportTransformation")(svgViewportTransformation.asInstanceOf[js.Any])
     if (targetFindTolerance != null) __obj.updateDynamic("targetFindTolerance")(targetFindTolerance.asInstanceOf[js.Any])
+    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (uniScaleKey != null) __obj.updateDynamic("uniScaleKey")(uniScaleKey.asInstanceOf[js.Any])
     if (!js.isUndefined(uniScaleTransform)) __obj.updateDynamic("uniScaleTransform")(uniScaleTransform.asInstanceOf[js.Any])
     if (viewportTransform != null) __obj.updateDynamic("viewportTransform")(viewportTransform.asInstanceOf[js.Any])

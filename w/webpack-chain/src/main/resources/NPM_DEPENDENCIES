@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webpack-chain" : "6.3.0"
+      "webpack-chain" : "6.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "webpack-chain" : "6.3.0"
+      "webpack-chain" : "6.4.0"
     }
   ],
   "compile-devDependencies" : [

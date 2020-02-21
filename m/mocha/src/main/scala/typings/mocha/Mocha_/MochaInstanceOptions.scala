@@ -32,7 +32,7 @@ object MochaInstanceOptions {
     reporterOptions: js.Any = null,
     retries: Int | Double = null,
     slow: Int | Double = null,
-    timeout: Int | Double = null,
+    timeout: Double | String = null,
     ui: Interface = null,
     useColors: js.UndefOr[Boolean] = js.undefined
   ): MochaInstanceOptions = {

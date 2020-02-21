@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLEND_ADDITIVEALPHA
+  * @type {number}
   * @description Same as pc.BLEND_ADDITIVE except the source RGB is multiplied by the source alpha.
   */
 @JSGlobal("pc.BLEND_ADDITIVEALPHA")

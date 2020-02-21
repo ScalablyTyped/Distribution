@@ -6,7 +6,6 @@ import typings.reactNative.mod.FlatListProperties
 import typings.reactNative.mod.ScrollViewProperties
 import typings.reactNative.mod.SwitchProperties
 import typings.reactNative.mod.TextInputProperties
-import typings.reactNative.mod.ToolbarAndroidProperties
 import typings.reactNative.mod.TouchableHighlightProperties
 import typings.reactNative.mod.TouchableNativeFeedbackProperties
 import typings.reactNative.mod.TouchableOpacityProperties
@@ -61,9 +60,6 @@ object reactNativeGestureHandlerComponents extends reactNativeGestureHandlerProp
   @scala.inline
   def TextInput: ComponentType[NativeViewGestureHandlerProperties with TextInputProperties] = js.constructorOf[typings.reactNativeGestureHandler.mod.TextInput].asInstanceOf[typings.react.mod.ComponentType[
   typings.reactNativeGestureHandler.mod.NativeViewGestureHandlerProperties with typings.reactNative.mod.TextInputProperties]]
-  @scala.inline
-  def ToolbarAndroid: ComponentType[NativeViewGestureHandlerProperties with ToolbarAndroidProperties] = js.constructorOf[typings.reactNativeGestureHandler.mod.ToolbarAndroid].asInstanceOf[typings.react.mod.ComponentType[
-  typings.reactNativeGestureHandler.mod.NativeViewGestureHandlerProperties with typings.reactNative.mod.ToolbarAndroidProperties]]
   @scala.inline
   def TouchableHighlight: ComponentType[TouchableHighlightProperties | ContainedTouchableProperties] = js.constructorOf[typings.reactNativeGestureHandler.mod.TouchableHighlight].asInstanceOf[typings.react.mod.ComponentType[
   typings.reactNative.mod.TouchableHighlightProperties | typings.reactNativeGestureHandler.mod.ContainedTouchableProperties]]

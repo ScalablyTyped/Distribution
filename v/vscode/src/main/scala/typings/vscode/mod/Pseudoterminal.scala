@@ -58,7 +58,7 @@ trait Pseudoterminal extends js.Object {
   		 */
   var onDidClose: js.UndefOr[Event[Unit | Double]] = js.native
   /**
-  		 * An event that when fired allows overriding the [dimensions](#Terminal.dimensions) of the
+  		 * An event that when fired allows overriding the [dimensions](#Pseudoterminal.setDimensions) of the
   		 * terminal. Note that when set, the overridden dimensions will only take effect when they
   		 * are lower than the actual dimensions of the terminal (ie. there will never be a scroll
   		 * bar). Set to `undefined` for the terminal to go back to the regular dimensions (fit to

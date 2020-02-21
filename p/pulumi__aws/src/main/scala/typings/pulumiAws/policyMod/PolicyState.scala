@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PolicyState extends js.Object {
-  val alarms: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ARN assigned by AWS to the scaling policy.
     */
@@ -47,7 +46,6 @@ trait PolicyState extends js.Object {
 object PolicyState {
   @scala.inline
   def apply(
-    alarms: Input[js.Array[Input[String]]] = null,
     arn: Input[String] = null,
     name: Input[String] = null,
     policyType: Input[String] = null,
@@ -58,7 +56,6 @@ object PolicyState {
     targetTrackingScalingPolicyConfiguration: Input[PolicyTargetTrackingScalingPolicyConfiguration] = null
   ): PolicyState = {
     val __obj = js.Dynamic.literal()
-    if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (policyType != null) __obj.updateDynamic("policyType")(policyType.asInstanceOf[js.Any])

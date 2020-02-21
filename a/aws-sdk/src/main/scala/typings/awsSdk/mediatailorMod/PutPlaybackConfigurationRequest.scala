@@ -27,6 +27,10 @@ trait PutPlaybackConfigurationRequest extends js.Object {
     */
   var Name: js.UndefOr[string] = js.native
   /**
+    * The maximum duration of underfilled ad time (in seconds) allowed in an ad break.
+    */
+  var PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.native
+  /**
     * The URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID configurations. For VPAID, the slate is required because MediaTailor provides it in the slots that are designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video. 
     */
   var SlateAdUrl: js.UndefOr[string] = js.native
@@ -52,6 +56,7 @@ object PutPlaybackConfigurationRequest {
     DashConfiguration: DashConfigurationForPut = null,
     LivePreRollConfiguration: LivePreRollConfiguration = null,
     Name: string = null,
+    PersonalizationThresholdSeconds: Int | Double = null,
     SlateAdUrl: string = null,
     Tags: mapOfString = null,
     TranscodeProfileName: string = null,
@@ -63,6 +68,7 @@ object PutPlaybackConfigurationRequest {
     if (DashConfiguration != null) __obj.updateDynamic("DashConfiguration")(DashConfiguration.asInstanceOf[js.Any])
     if (LivePreRollConfiguration != null) __obj.updateDynamic("LivePreRollConfiguration")(LivePreRollConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (PersonalizationThresholdSeconds != null) __obj.updateDynamic("PersonalizationThresholdSeconds")(PersonalizationThresholdSeconds.asInstanceOf[js.Any])
     if (SlateAdUrl != null) __obj.updateDynamic("SlateAdUrl")(SlateAdUrl.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TranscodeProfileName != null) __obj.updateDynamic("TranscodeProfileName")(TranscodeProfileName.asInstanceOf[js.Any])

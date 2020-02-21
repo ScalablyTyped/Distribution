@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeOrganizationResponse extends js.Object {
   /**
+    * The Amazon Resource Name (ARN) of the organization.
+    */
+  var ARN: js.UndefOr[AmazonResourceName] = js.native
+  /**
     * The alias for an organization.
     */
   var Alias: js.UndefOr[OrganizationName] = js.native
@@ -43,6 +47,7 @@ trait DescribeOrganizationResponse extends js.Object {
 object DescribeOrganizationResponse {
   @scala.inline
   def apply(
+    ARN: AmazonResourceName = null,
     Alias: OrganizationName = null,
     CompletedDate: Timestamp = null,
     DefaultMailDomain: String = null,
@@ -53,6 +58,7 @@ object DescribeOrganizationResponse {
     State: String = null
   ): DescribeOrganizationResponse = {
     val __obj = js.Dynamic.literal()
+    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
     if (Alias != null) __obj.updateDynamic("Alias")(Alias.asInstanceOf[js.Any])
     if (CompletedDate != null) __obj.updateDynamic("CompletedDate")(CompletedDate.asInstanceOf[js.Any])
     if (DefaultMailDomain != null) __obj.updateDynamic("DefaultMailDomain")(DefaultMailDomain.asInstanceOf[js.Any])

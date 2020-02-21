@@ -81,6 +81,10 @@ trait ProjectState extends js.Object {
     */
   val source: js.UndefOr[Input[ProjectSource]] = js.native
   /**
+    * A version of the build input to be built for this project. If not specified, the latest version is used.
+    */
+  val sourceVersion: js.UndefOr[Input[String]] = js.native
+  /**
     * A mapping of tags to assign to the resource.
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
@@ -109,6 +113,7 @@ object ProjectState {
     secondarySources: Input[js.Array[Input[ProjectSecondarySource]]] = null,
     serviceRole: Input[String] = null,
     source: Input[ProjectSource] = null,
+    sourceVersion: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     vpcConfig: Input[ProjectVpcConfig] = null
   ): ProjectState = {
@@ -129,6 +134,7 @@ object ProjectState {
     if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])
     if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectState]

@@ -1,7 +1,7 @@
 package typings.testingLibraryJestDom
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
+import typings.std.Record
 import typings.std.RegExp
 import typings.std.SVGElement
 import scala.scalajs.js
@@ -36,8 +36,9 @@ object jest extends js.Object {
     def toHaveAttribute(attr: String, value: js.Any): R = js.native
     def toHaveClass(classNames: String*): R = js.native
     def toHaveFocus(): R = js.native
-    def toHaveFormValues(expectedValues: StringDictionary[js.Any]): R = js.native
+    def toHaveFormValues(expectedValues: Record[String, _]): R = js.native
     def toHaveStyle(css: String): R = js.native
+    def toHaveStyle(css: Record[String, _]): R = js.native
     def toHaveTextContent(text: String): R = js.native
     def toHaveTextContent(text: String, options: AnonNormalizeWhitespace): R = js.native
     def toHaveTextContent(text: RegExp): R = js.native

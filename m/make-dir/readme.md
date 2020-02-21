@@ -1,7 +1,7 @@
 
 # Scala.js typings for make-dir
 
-Typings are for version 3.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Make a directory and its parents if needed - Think `mkdir -p`

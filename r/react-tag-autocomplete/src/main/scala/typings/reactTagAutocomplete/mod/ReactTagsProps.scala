@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait ReactTagsProps extends js.Object {
   /**
+    * Creates a tag from the current input value when focus on the input is lost. Default: false.
+    */
+  var addOnBlur: js.UndefOr[Boolean] = js.undefined
+  /**
     * Disables ability to delete the selected tags when backspace is pressed while focussed on the text input. Default: true.
     */
   var allowBackspace: js.UndefOr[Boolean] = js.undefined
@@ -24,6 +28,10 @@ trait ReactTagsProps extends js.Object {
     */
   var autoresize: js.UndefOr[Boolean] = js.undefined
   var classNames: js.UndefOr[ClassNames] = js.undefined
+  /**
+    * Clear the text input when a tag is deleted. Default: true.
+    */
+  var clearInputOnDelete: js.UndefOr[Boolean] = js.undefined
   /**
     * Array of characters matching keyboard event key values. This is useful when needing to support a specific character irrespective of the keyboard layout.
     * Note, that this list is separate from the one specified by the delimiters option, so you'll need to set the value there to [],
@@ -63,6 +71,10 @@ trait ReactTagsProps extends js.Object {
     */
   var minQueryLength: js.UndefOr[Double] = js.undefined
   /**
+    * Message shown if there are no matching suggestions. Default: null.
+    */
+  var noSuggestionsText: js.UndefOr[String] = js.undefined
+  /**
     * The placeholder string shown for the input. Default: 'Add new tag'.
     */
   var placeholder: js.UndefOr[String] = js.undefined
@@ -70,6 +82,11 @@ trait ReactTagsProps extends js.Object {
     * An array of suggestions that are used as basis for showing suggestions. Each suggestion must have an id and a name property and an optional disabled property. Default: []
     */
   var suggestions: js.UndefOr[js.Array[Tag]] = js.undefined
+  /**
+    * A callback function to filter suggestion items with. The callback receives two arguments; a suggestion and the current query and must return a boolean value.
+    * If no function is supplied the default filter is applied. Default: null.
+    */
+  var suggestionsFilter: js.UndefOr[js.Function2[/* suggestion */ Tag, /* query */ String, Boolean]] = js.undefined
   /**
     * Provide a custom tag component to render. Default: null.
     */
@@ -93,11 +110,13 @@ object ReactTagsProps {
   def apply(
     handleAddition: Tag => Unit,
     handleDelete: Double => Unit,
+    addOnBlur: js.UndefOr[Boolean] = js.undefined,
     allowBackspace: js.UndefOr[Boolean] = js.undefined,
     allowNew: js.UndefOr[Boolean] = js.undefined,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     autoresize: js.UndefOr[Boolean] = js.undefined,
     classNames: ClassNames = null,
+    clearInputOnDelete: js.UndefOr[Boolean] = js.undefined,
     delimiterChars: js.Array[String] = null,
     delimiters: js.Array[Double] = null,
     handleBlur: () => Unit = null,
@@ -107,17 +126,21 @@ object ReactTagsProps {
     inputAttributes: StringDictionary[js.Any] = null,
     maxSuggestionsLength: Int | Double = null,
     minQueryLength: Int | Double = null,
+    noSuggestionsText: String = null,
     placeholder: String = null,
     suggestions: js.Array[Tag] = null,
+    suggestionsFilter: (/* suggestion */ Tag, /* query */ String) => Boolean = null,
     tagComponent: SFC[TagComponentProps] = null,
     tags: js.Array[Tag] = null
   ): ReactTagsProps = {
     val __obj = js.Dynamic.literal(handleAddition = js.Any.fromFunction1(handleAddition), handleDelete = js.Any.fromFunction1(handleDelete))
+    if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.asInstanceOf[js.Any])
     if (!js.isUndefined(allowBackspace)) __obj.updateDynamic("allowBackspace")(allowBackspace.asInstanceOf[js.Any])
     if (!js.isUndefined(allowNew)) __obj.updateDynamic("allowNew")(allowNew.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
     if (!js.isUndefined(autoresize)) __obj.updateDynamic("autoresize")(autoresize.asInstanceOf[js.Any])
     if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearInputOnDelete)) __obj.updateDynamic("clearInputOnDelete")(clearInputOnDelete.asInstanceOf[js.Any])
     if (delimiterChars != null) __obj.updateDynamic("delimiterChars")(delimiterChars.asInstanceOf[js.Any])
     if (delimiters != null) __obj.updateDynamic("delimiters")(delimiters.asInstanceOf[js.Any])
     if (handleBlur != null) __obj.updateDynamic("handleBlur")(js.Any.fromFunction0(handleBlur))
@@ -127,8 +150,10 @@ object ReactTagsProps {
     if (inputAttributes != null) __obj.updateDynamic("inputAttributes")(inputAttributes.asInstanceOf[js.Any])
     if (maxSuggestionsLength != null) __obj.updateDynamic("maxSuggestionsLength")(maxSuggestionsLength.asInstanceOf[js.Any])
     if (minQueryLength != null) __obj.updateDynamic("minQueryLength")(minQueryLength.asInstanceOf[js.Any])
+    if (noSuggestionsText != null) __obj.updateDynamic("noSuggestionsText")(noSuggestionsText.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
+    if (suggestionsFilter != null) __obj.updateDynamic("suggestionsFilter")(js.Any.fromFunction2(suggestionsFilter))
     if (tagComponent != null) __obj.updateDynamic("tagComponent")(tagComponent.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactTagsProps]

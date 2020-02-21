@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_L_STICK_BUTTON
-  * @description The button when depressing the left analogue stick
+  * @description The button when depressing the left analogue stick.
   */
 @JSImport("playcanvas", "PAD_L_STICK_BUTTON")
 @js.native

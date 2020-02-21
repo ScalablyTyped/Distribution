@@ -1,5 +1,6 @@
 package typings.pulumiAws.clusterEndpointMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -49,6 +50,10 @@ class ClusterEndpoint protected () extends CustomResource {
     * List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excludedMembers`.
     */
   val staticMembers: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-shh
 
-Typings are for version 1.2.4
+Typings are for version 1.2.6
 
 ## Library description:
 Web3 module to interact with the Whisper messaging protocol.

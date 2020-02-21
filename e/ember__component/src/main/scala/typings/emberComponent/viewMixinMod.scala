@@ -211,11 +211,18 @@ object viewMixinMod extends js.Object {
       * as its buffer.
       */
     @JSName("$")
+    def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery_[TElement] = js.native
+    /**
+      * Returns a jQuery object for this view's element. If you pass in a selector
+      * string, this method will return a jQuery object, using the current element
+      * as its buffer.
+      */
+    @JSName("$")
     def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery_[TElement] = js.native
     /**
       * Accepts a string containing a CSS selector which is then used to match a set of elements.
       * @param selector A string containing a selector expression
-      * @param context A DOM Element, Document, or jQuery to use as context
+      * @param context A DOM Element, Document, Selector or jQuery to use as context
       * @see \`{@link https://api.jquery.com/jQuery/ }\`
       * @since 1.0
       * @example ​ ````Find all p elements that are children of a div element and apply a border to them.

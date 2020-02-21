@@ -67,7 +67,7 @@ trait DBCluster extends js.Object {
     */
   var DbClusterResourceId: js.UndefOr[String] = js.native
   /**
-    * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. 
+    * Indicates whether or not the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
   /**

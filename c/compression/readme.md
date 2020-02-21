@@ -1,7 +1,7 @@
 
 # Scala.js typings for compression
 
-Typings are for version 1.0
+Typings are for version 1.7
 
 ## Library description:
 Node.js compression middleware

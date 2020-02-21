@@ -130,7 +130,7 @@ class ChartDataLabels () extends ClientObject {
   var showValue: Boolean = js.native
   /**
     *
-    * Represents the text orientation of data labels. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+    * Represents the angle to which the text is oriented for the data labels. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
     *
     * [Api set: ExcelApi 1.8]
     */

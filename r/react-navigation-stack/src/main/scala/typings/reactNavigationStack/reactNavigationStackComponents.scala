@@ -1,6 +1,8 @@
 package typings.reactNavigationStack
 
 import typings.react.mod.ComponentType
+import typings.reactNative.mod.Animated.AnimatedComponent
+import typings.reactNative.mod.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +17,8 @@ object reactNavigationStackComponents extends reactNavigationStackProps {
   @scala.inline
   def HeaderBackButton: ComponentType[HeaderBackButtonProps] = js.constructorOf[typings.reactNavigationStack.headerBackButtonMod.default].asInstanceOf[typings.react.mod.ComponentType[HeaderBackButtonProps]]
   @scala.inline
-  def HeaderTitle: ComponentType[HeaderTitleProps[js.Any]] = js.constructorOf[typings.reactNavigationStack.headerTitleMod.default].asInstanceOf[typings.react.mod.ComponentType[HeaderTitleProps[js.Any]]]
+  def HeaderTitle: ComponentType[HeaderTitleProps[AnimatedComponent[Text]]] = js.constructorOf[typings.reactNavigationStack.headerTitleMod.default].asInstanceOf[typings.react.mod.ComponentType[
+  HeaderTitleProps[typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.mod.Text]]]]
   @scala.inline
   def ModularHeaderBackButton: ComponentType[ModularHeaderBackButtonProps] = js.constructorOf[typings.reactNavigationStack.modularHeaderBackButtonMod.default].asInstanceOf[typings.react.mod.ComponentType[ModularHeaderBackButtonProps]]
   @scala.inline

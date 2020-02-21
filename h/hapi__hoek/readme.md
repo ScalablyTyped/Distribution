@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__hoek
 
-Typings are for version 9.0.2
+Typings are for version 9.0.3
 
 ## Library description:
 General purpose node utilities

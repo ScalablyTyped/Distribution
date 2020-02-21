@@ -13,7 +13,7 @@ trait PurchasedItem extends js.Object {
    // only Apple/Google
   // iTunes, windows and amazon subscription only
   // Google subscriptions only with google play store api info
-  var expirationDate: js.UndefOr[Double] = js.undefined
+  var expirationDate: js.UndefOr[Double | String] = js.undefined
   var isTrial: js.UndefOr[Boolean] = js.undefined
   var orderId: js.UndefOr[String] = js.undefined
   var originalPurchaseDate: js.UndefOr[String] = js.undefined
@@ -37,7 +37,7 @@ object PurchasedItem {
     appItemId: String = null,
     bundleId: String = null,
     cancellationDate: Int | Double = null,
-    expirationDate: Int | Double = null,
+    expirationDate: Double | String = null,
     isTrial: js.UndefOr[Boolean] = js.undefined,
     orderId: String = null,
     originalPurchaseDate: String = null,

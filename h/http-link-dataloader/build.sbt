@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "http-link-dataloader"
-version := "0.1.6-9a0cc5"
-scalaVersion := "2.12.10"
+version := "0.1.6-373012"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.13-c36848",
-  "org.scalablytyped" %%% "graphql" % "14.5.8-ac6a9e",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-610cde")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.13-aa671f",
+  "org.scalablytyped" %%% "graphql" % "14.6.0-800d77",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.20-17d6b8")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

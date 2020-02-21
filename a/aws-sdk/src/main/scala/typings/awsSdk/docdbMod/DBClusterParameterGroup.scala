@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBClusterParameterGroup extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) for the DB cluster parameter group.
+    * The Amazon Resource Name (ARN) for the cluster parameter group.
     */
   var DBClusterParameterGroupArn: js.UndefOr[String] = js.native
   /**
-    * Provides the name of the DB cluster parameter group.
+    * Provides the name of the cluster parameter group.
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.native
   /**
-    * Provides the name of the DB parameter group family that this DB cluster parameter group is compatible with.
+    * Provides the name of the parameter group family that this cluster parameter group is compatible with.
     */
   var DBParameterGroupFamily: js.UndefOr[String] = js.native
   /**
-    * Provides the customer-specified description for this DB cluster parameter group.
+    * Provides the customer-specified description for this cluster parameter group.
     */
   var Description: js.UndefOr[String] = js.native
 }

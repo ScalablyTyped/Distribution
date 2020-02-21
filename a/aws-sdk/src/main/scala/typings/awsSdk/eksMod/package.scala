@@ -72,10 +72,12 @@ package object eksMod {
   type LogTypes = js.Array[typings.awsSdk.eksMod.LogType]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AutoScalingGroupNotFound
+    - typings.awsSdk.awsSdkStrings.AutoScalingGroupInvalidConfiguration
     - typings.awsSdk.awsSdkStrings.Ec2SecurityGroupNotFound
     - typings.awsSdk.awsSdkStrings.Ec2SecurityGroupDeletionFailure
     - typings.awsSdk.awsSdkStrings.Ec2LaunchTemplateNotFound
     - typings.awsSdk.awsSdkStrings.Ec2LaunchTemplateVersionMismatch
+    - typings.awsSdk.awsSdkStrings.Ec2SubnetNotFound
     - typings.awsSdk.awsSdkStrings.IamInstanceProfileNotFound
     - typings.awsSdk.awsSdkStrings.IamNodeRoleNotFound
     - typings.awsSdk.awsSdkStrings.AsgInstanceLaunchFailures

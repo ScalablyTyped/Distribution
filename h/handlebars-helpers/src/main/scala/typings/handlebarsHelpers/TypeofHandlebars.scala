@@ -24,6 +24,7 @@ trait TypeofHandlebars extends js.Object {
   var Exception: Instantiable1[/* message */ String, typings.handlebars.mod.Exception] = js.native
   var SafeString: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString] = js.native
   val Utils: TypeofUtils = js.native
+  val VERSION: String = js.native
   val VM: TypeofVM = js.native
   var Visitor: Instantiable0[typings.handlebars.mod.Visitor] = js.native
   val decorators: StringDictionary[js.Function] = js.native

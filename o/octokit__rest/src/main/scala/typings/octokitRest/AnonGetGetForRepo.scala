@@ -1,14 +1,14 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.EmptyParams
-import typings.octokitRest.mod.LicensesGetForRepoParams
-import typings.octokitRest.mod.LicensesGetForRepoResponse
-import typings.octokitRest.mod.LicensesGetParams
-import typings.octokitRest.mod.LicensesGetResponse
-import typings.octokitRest.mod.LicensesListCommonlyUsedResponse
-import typings.octokitRest.mod.LicensesListResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.EmptyParams
+import typings.octokitRest.mod.Octokit.LicensesGetForRepoParams
+import typings.octokitRest.mod.Octokit.LicensesGetForRepoResponse
+import typings.octokitRest.mod.Octokit.LicensesGetParams
+import typings.octokitRest.mod.Octokit.LicensesGetResponse
+import typings.octokitRest.mod.Octokit.LicensesListCommonlyUsedResponse
+import typings.octokitRest.mod.Octokit.LicensesListResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

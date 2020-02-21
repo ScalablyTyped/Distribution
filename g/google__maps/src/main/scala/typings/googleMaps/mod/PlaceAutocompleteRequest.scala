@@ -50,7 +50,7 @@ trait PlaceAutocompleteRequest extends js.Object {
     * [session](https://developers.google.com/places/web-service/autocomplete#session_tokens) for billing purposes.
     * If this parameter is omitted from an autocomplete request, the request is billed independently
     */
-  var sessiontoken: String
+  var sessiontoken: js.UndefOr[String] = js.undefined
   /**
     * Returns only those places that are strictly within the region defined by `location` and `radius`.
     * This is a restriction, rather than a bias, meaning that results outside this region
@@ -65,21 +65,22 @@ object PlaceAutocompleteRequest {
   @scala.inline
   def apply(
     input: String,
-    sessiontoken: String,
     components: js.Array[String] = null,
     language: String = null,
     location: LatLng = null,
     offset: Int | Double = null,
     radius: Int | Double = null,
+    sessiontoken: String = null,
     strictbounds: js.UndefOr[Boolean] = js.undefined,
     types: PlaceAutocompleteType = null
   ): PlaceAutocompleteRequest = {
-    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], sessiontoken = sessiontoken.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (sessiontoken != null) __obj.updateDynamic("sessiontoken")(sessiontoken.asInstanceOf[js.Any])
     if (!js.isUndefined(strictbounds)) __obj.updateDynamic("strictbounds")(strictbounds.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceAutocompleteRequest]

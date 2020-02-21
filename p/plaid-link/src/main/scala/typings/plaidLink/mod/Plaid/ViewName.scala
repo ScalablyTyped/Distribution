@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   - typings.plaidLink.plaidLinkStrings.EXIT
   - typings.plaidLink.plaidLinkStrings.LOADING
   - typings.plaidLink.plaidLinkStrings.MFA
+  - typings.plaidLink.plaidLinkStrings.NUMBERS
   - typings.plaidLink.plaidLinkStrings.RECAPTCHA
   - typings.plaidLink.plaidLinkStrings.SELECT_ACCOUNT
   - typings.plaidLink.plaidLinkStrings.SELECT_INSTITUTION
@@ -30,6 +31,8 @@ object ViewName {
   def LOADING: typings.plaidLink.plaidLinkStrings.LOADING = this.cast("LOADING")
   @scala.inline
   def MFA: typings.plaidLink.plaidLinkStrings.MFA = this.cast("MFA")
+  @scala.inline
+  def NUMBERS: typings.plaidLink.plaidLinkStrings.NUMBERS = this.cast("NUMBERS")
   @scala.inline
   def RECAPTCHA: typings.plaidLink.plaidLinkStrings.RECAPTCHA = this.cast("RECAPTCHA")
   @scala.inline

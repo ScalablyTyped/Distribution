@@ -9,9 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jose", "JWK.ECKey")
 @js.native
-class ECKey () extends Key {
+trait ECKey extends Key {
   var crv: ECCurve = js.native
   var d: js.UndefOr[String] = js.native
   @JSName("kty")

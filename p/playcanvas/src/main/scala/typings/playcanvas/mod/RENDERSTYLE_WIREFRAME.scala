@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.RENDERSTYLE_WIREFRAME
+  * @type {number}
   * @description Render mesh instance as wireframe.
   */
 @JSImport("playcanvas", "RENDERSTYLE_WIREFRAME")

@@ -8,6 +8,8 @@ import typings.pulumiAws.getDocumentMod.GetDocumentArgs
 import typings.pulumiAws.getDocumentMod.GetDocumentResult
 import typings.pulumiAws.getParameterMod.GetParameterArgs
 import typings.pulumiAws.getParameterMod.GetParameterResult
+import typings.pulumiAws.getPatchBaselineMod.GetPatchBaselineArgs
+import typings.pulumiAws.getPatchBaselineMod.GetPatchBaselineResult
 import typings.pulumiAws.maintenanceWindowMod.MaintenanceWindowArgs
 import typings.pulumiAws.maintenanceWindowMod.MaintenanceWindowState
 import typings.pulumiAws.maintenanceWindowTargetMod.MaintenanceWindowTargetArgs
@@ -185,6 +187,8 @@ object ssmMod extends js.Object {
   def getDocument(args: GetDocumentArgs, opts: InvokeOptions): js.Promise[GetDocumentResult] with GetDocumentResult = js.native
   def getParameter(args: GetParameterArgs): js.Promise[GetParameterResult] with GetParameterResult = js.native
   def getParameter(args: GetParameterArgs, opts: InvokeOptions): js.Promise[GetParameterResult] with GetParameterResult = js.native
+  def getPatchBaseline(args: GetPatchBaselineArgs): js.Promise[GetPatchBaselineResult] with GetPatchBaselineResult = js.native
+  def getPatchBaseline(args: GetPatchBaselineArgs, opts: InvokeOptions): js.Promise[GetPatchBaselineResult] with GetPatchBaselineResult = js.native
   /* static members */
   @js.native
   object Activation extends js.Object {

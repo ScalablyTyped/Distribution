@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd-multi-backend
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Multi Backend system compatible with React DnD

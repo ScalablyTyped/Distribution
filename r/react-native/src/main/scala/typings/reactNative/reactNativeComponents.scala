@@ -1,6 +1,13 @@
 package typings.reactNative
 
 import typings.react.mod.ComponentType
+import typings.reactNative.mod.Animated.ComponentProps
+import typings.reactNative.mod.FlatList
+import typings.reactNative.mod.Image
+import typings.reactNative.mod.ScrollView
+import typings.reactNative.mod.SectionList
+import typings.reactNative.mod.Text
+import typings.reactNative.mod.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +25,30 @@ object reactNativeComponents extends reactNativeProps {
   def ARTText: ComponentType[ARTTextProps] = js.constructorOf[typings.reactNative.mod.ARTText].asInstanceOf[typings.react.mod.ComponentType[ARTTextProps]]
   @scala.inline
   def ActivityIndicator: ComponentType[ActivityIndicatorProps] = js.constructorOf[typings.reactNative.mod.ActivityIndicator].asInstanceOf[typings.react.mod.ComponentType[ActivityIndicatorProps]]
+  @scala.inline
+  def AnimatedFlatList: ComponentType[AnimatedFlatListProps[ComponentProps[FlatList[js.Any]]]] = typings.reactNative.mod.Animated.FlatList.asInstanceOf[typings.react.mod.ComponentType[
+  AnimatedFlatListProps[
+    typings.reactNative.mod.Animated.ComponentProps[typings.reactNative.mod.FlatList[js.Any]]
+  ]]]
+  @scala.inline
+  def AnimatedImage: ComponentType[AnimatedImageProps[ComponentProps[Image]]] = typings.reactNative.mod.Animated.Image.asInstanceOf[typings.react.mod.ComponentType[
+  AnimatedImageProps[typings.reactNative.mod.Animated.ComponentProps[typings.reactNative.mod.Image]]]]
+  @scala.inline
+  def AnimatedScrollView: ComponentType[AnimatedScrollViewProps[ComponentProps[ScrollView]]] = typings.reactNative.mod.Animated.ScrollView.asInstanceOf[typings.react.mod.ComponentType[
+  AnimatedScrollViewProps[
+    typings.reactNative.mod.Animated.ComponentProps[typings.reactNative.mod.ScrollView]
+  ]]]
+  @scala.inline
+  def AnimatedSectionList: ComponentType[AnimatedSectionListProps[ComponentProps[SectionList[js.Any]]]] = typings.reactNative.mod.Animated.SectionList.asInstanceOf[typings.react.mod.ComponentType[
+  AnimatedSectionListProps[
+    typings.reactNative.mod.Animated.ComponentProps[typings.reactNative.mod.SectionList[js.Any]]
+  ]]]
+  @scala.inline
+  def AnimatedText: ComponentType[AnimatedTextProps[ComponentProps[Text]]] = typings.reactNative.mod.Animated.Text.asInstanceOf[typings.react.mod.ComponentType[
+  AnimatedTextProps[typings.reactNative.mod.Animated.ComponentProps[typings.reactNative.mod.Text]]]]
+  @scala.inline
+  def AnimatedView: ComponentType[AnimatedViewProps[ComponentProps[View]]] = typings.reactNative.mod.Animated.View.asInstanceOf[typings.react.mod.ComponentType[
+  AnimatedViewProps[typings.reactNative.mod.Animated.ComponentProps[typings.reactNative.mod.View]]]]
   @scala.inline
   def Button: ComponentType[ButtonProps] = js.constructorOf[typings.reactNative.mod.Button].asInstanceOf[typings.react.mod.ComponentType[ButtonProps]]
   @scala.inline
@@ -55,7 +86,7 @@ object reactNativeComponents extends reactNativeProps {
   @scala.inline
   def PickerIOSItem: ComponentType[PickerIOSItemProps] = js.constructorOf[typings.reactNative.mod.PickerIOSItem].asInstanceOf[typings.react.mod.ComponentType[PickerIOSItemProps]]
   @scala.inline
-  def PickerItem: ComponentType[PickerItemProps] = js.constructorOf[typings.reactNative.mod.PickerItem].asInstanceOf[typings.react.mod.ComponentType[PickerItemProps]]
+  def PickerItem: ComponentType[PickerItemProps] = typings.reactNative.mod.Picker.Item.asInstanceOf[typings.react.mod.ComponentType[PickerItemProps]]
   @scala.inline
   def ProgressBarAndroid: ComponentType[ProgressBarAndroidProps] = js.constructorOf[typings.reactNative.mod.ProgressBarAndroid].asInstanceOf[typings.react.mod.ComponentType[ProgressBarAndroidProps]]
   @scala.inline

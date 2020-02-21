@@ -27,7 +27,7 @@ trait HlsSettings extends js.Object {
     */
   var IFrameOnlyManifest: js.UndefOr[HlsIFrameOnlyManifest] = js.native
   /**
-    * String concatenated to end of segment filenames. Accepts "Format Identifiers":#format_identifier_parameters.
+    * Use this setting to add an identifying string to the filename of each segment. The service adds this string between the name modifier and segment index number. You can use format identifiers in the string. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/using-variables-in-your-job-settings.html
     */
   var SegmentModifier: js.UndefOr[string] = js.native
 }

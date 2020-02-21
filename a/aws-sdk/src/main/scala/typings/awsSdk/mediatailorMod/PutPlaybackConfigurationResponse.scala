@@ -31,6 +31,10 @@ trait PutPlaybackConfigurationResponse extends js.Object {
     */
   var Name: js.UndefOr[string] = js.native
   /**
+    * The maximum duration of underfilled ad time (in seconds) allowed in an ad break.
+    */
+  var PersonalizationThresholdSeconds: js.UndefOr[integerMin1] = js.native
+  /**
     * The Amazon Resource Name (ARN) for the playback configuration. 
     */
   var PlaybackConfigurationArn: js.UndefOr[string] = js.native
@@ -69,6 +73,7 @@ object PutPlaybackConfigurationResponse {
     HlsConfiguration: HlsConfiguration = null,
     LivePreRollConfiguration: LivePreRollConfiguration = null,
     Name: string = null,
+    PersonalizationThresholdSeconds: Int | Double = null,
     PlaybackConfigurationArn: string = null,
     PlaybackEndpointPrefix: string = null,
     SessionInitializationEndpointPrefix: string = null,
@@ -84,6 +89,7 @@ object PutPlaybackConfigurationResponse {
     if (HlsConfiguration != null) __obj.updateDynamic("HlsConfiguration")(HlsConfiguration.asInstanceOf[js.Any])
     if (LivePreRollConfiguration != null) __obj.updateDynamic("LivePreRollConfiguration")(LivePreRollConfiguration.asInstanceOf[js.Any])
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (PersonalizationThresholdSeconds != null) __obj.updateDynamic("PersonalizationThresholdSeconds")(PersonalizationThresholdSeconds.asInstanceOf[js.Any])
     if (PlaybackConfigurationArn != null) __obj.updateDynamic("PlaybackConfigurationArn")(PlaybackConfigurationArn.asInstanceOf[js.Any])
     if (PlaybackEndpointPrefix != null) __obj.updateDynamic("PlaybackEndpointPrefix")(PlaybackEndpointPrefix.asInstanceOf[js.Any])
     if (SessionInitializationEndpointPrefix != null) __obj.updateDynamic("SessionInitializationEndpointPrefix")(SessionInitializationEndpointPrefix.asInstanceOf[js.Any])

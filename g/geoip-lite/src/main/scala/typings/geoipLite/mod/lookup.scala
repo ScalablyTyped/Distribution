@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("geoip-lite", "lookup")
 @js.native
 object lookup extends js.Object {
-  def apply(ip: String): Lookup_ = js.native
+  def apply(ip: String): Null | Lookup_ = js.native
 }
 

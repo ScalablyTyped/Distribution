@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PolicyDetails extends js.Object {
   /**
-    * A set of optional parameters that can be provided by the policy. 
+    * A set of optional parameters for the policy. 
     */
   var Parameters: js.UndefOr[typings.awsSdk.dlmMod.Parameters] = js.native
   /**
-    * This field determines the valid target resource types and actions a policy can manage. This field defaults to EBS_SNAPSHOT_MANAGEMENT if not present.
+    * The valid target resource types and actions a policy can manage. The default is EBS_SNAPSHOT_MANAGEMENT.
     */
   var PolicyType: js.UndefOr[PolicyTypeValues] = js.native
   /**

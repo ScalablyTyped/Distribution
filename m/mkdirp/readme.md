@@ -1,7 +1,7 @@
 
 # Scala.js typings for mkdirp
 
-Typings are for version 0.5
+Typings are for version 1.0
 
 ## Library description:
 Recursively mkdir, like `mkdir -p`

@@ -8,9 +8,9 @@ trait StockChartNavigatorPane extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var border: js.UndefOr[StockChartNavigatorPaneBorder] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[StockChartNavigatorPaneMargin] = js.undefined
+  var margin: js.UndefOr[Double | StockChartNavigatorPaneMargin] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var padding: js.UndefOr[StockChartNavigatorPanePadding] = js.undefined
+  var padding: js.UndefOr[Double | StockChartNavigatorPanePadding] = js.undefined
   var title: js.UndefOr[String | StockChartNavigatorPaneTitle] = js.undefined
 }
 
@@ -20,9 +20,9 @@ object StockChartNavigatorPane {
     background: String = null,
     border: StockChartNavigatorPaneBorder = null,
     height: Int | Double = null,
-    margin: StockChartNavigatorPaneMargin = null,
+    margin: Double | StockChartNavigatorPaneMargin = null,
     name: String = null,
-    padding: StockChartNavigatorPanePadding = null,
+    padding: Double | StockChartNavigatorPanePadding = null,
     title: String | StockChartNavigatorPaneTitle = null
   ): StockChartNavigatorPane = {
     val __obj = js.Dynamic.literal()

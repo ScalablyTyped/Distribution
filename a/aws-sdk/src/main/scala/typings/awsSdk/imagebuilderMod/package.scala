@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object imagebuilderMod {
   type AccountList = js.Array[typings.awsSdk.imagebuilderMod.NonEmptyString]
   type AmiList = js.Array[typings.awsSdk.imagebuilderMod.Ami]
+  type AmiNameString = java.lang.String
   type Arn = java.lang.String
   type ArnList = js.Array[typings.awsSdk.imagebuilderMod.Arn]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.imagebuilderMod.ClientApiVersions
@@ -23,6 +24,7 @@ package object imagebuilderMod {
   */
   type ComponentType = typings.awsSdk.imagebuilderMod._ComponentType | java.lang.String
   type ComponentVersionArn = java.lang.String
+  type ComponentVersionArnOrBuildVersionArn = java.lang.String
   type ComponentVersionList = js.Array[typings.awsSdk.imagebuilderMod.ComponentVersion]
   type DateTime = java.lang.String
   type DistributionConfigurationArn = java.lang.String
@@ -40,6 +42,7 @@ package object imagebuilderMod {
     - java.lang.String
   */
   type EbsVolumeType = typings.awsSdk.imagebuilderMod._EbsVolumeType | java.lang.String
+  type EmptyString = java.lang.String
   type FilterList = js.Array[typings.awsSdk.imagebuilderMod.Filter]
   type FilterName = java.lang.String
   type FilterValue = java.lang.String
@@ -105,6 +108,7 @@ package object imagebuilderMod {
   type ResourceName = java.lang.String
   type RestrictedInteger = scala.Double
   type SecurityGroupIds = js.Array[typings.awsSdk.imagebuilderMod.NonEmptyString]
+  type SnsTopicArn = java.lang.String
   type StringList = js.Array[typings.awsSdk.imagebuilderMod.NonEmptyString]
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.imagebuilderMod.TagKey]

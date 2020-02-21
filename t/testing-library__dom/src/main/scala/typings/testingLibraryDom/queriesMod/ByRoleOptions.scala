@@ -13,6 +13,11 @@ trait ByRoleOptions extends MatcherOptions {
     * @default false
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Includes every role used in the `role` attribute
+    * For example *ByRole('progressbar', {queryFallbacks: true})` will find <div role="meter progresbar">`.
+    */
+  var queryFallbacks: js.UndefOr[Boolean] = js.undefined
 }
 
 object ByRoleOptions {
@@ -22,6 +27,7 @@ object ByRoleOptions {
     exact: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     normalizer: /* text */ String => String = null,
+    queryFallbacks: js.UndefOr[Boolean] = js.undefined,
     trim: js.UndefOr[Boolean] = js.undefined
   ): ByRoleOptions = {
     val __obj = js.Dynamic.literal()
@@ -29,6 +35,7 @@ object ByRoleOptions {
     if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
+    if (!js.isUndefined(queryFallbacks)) __obj.updateDynamic("queryFallbacks")(queryFallbacks.asInstanceOf[js.Any])
     if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByRoleOptions]
   }

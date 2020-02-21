@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,8 +21,8 @@ object teachingBubbleMod extends js.Object {
     def this(props: ITeachingBubbleProps) = this()
   }
   
-  val TeachingBubble: StatelessComponent[ITeachingBubbleProps] = js.native
-  val TeachingBubbleContent: StatelessComponent[ITeachingBubbleProps] = js.native
+  val TeachingBubble: FunctionComponent[ITeachingBubbleProps] = js.native
+  val TeachingBubbleContent: FunctionComponent[ITeachingBubbleProps] = js.native
   /* static members */
   @js.native
   object TeachingBubbleBase extends js.Object {

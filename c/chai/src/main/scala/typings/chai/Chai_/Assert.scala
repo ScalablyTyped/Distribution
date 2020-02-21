@@ -219,19 +219,6 @@ trait Assert extends js.Object {
   def deepProperty[T](`object`: T, property: String): Unit = js.native
   def deepProperty[T](`object`: T, property: String, message: String): Unit = js.native
   /**
-    * Asserts that object does not have a property named by property, which can be a
-    * string using dot- and bracket-notation for deep reference.
-    *
-    * @type T   Type of object.
-    * @type V   Type of value.
-    * @param object   Container object.
-    * @param property   Potential contained property of object.
-    * @param value   Potential expected property value.
-    * @param message   Message to display on error.
-    */
-  def deepPropertyNotVal[T, V](`object`: T, property: String, value: V): Unit = js.native
-  def deepPropertyNotVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
-  /**
     * Asserts that object has a property named by property, which can be a string
     * using dot- and bracket-notation for deep reference.
     *
@@ -1097,6 +1084,19 @@ trait Assert extends js.Object {
   def notDeepProperty[T](`object`: T, property: String): Unit = js.native
   def notDeepProperty[T](`object`: T, property: String, message: String): Unit = js.native
   /**
+    * Asserts that object does not have a property named by property, which can be a
+    * string using dot- and bracket-notation for deep reference.
+    *
+    * @type T   Type of object.
+    * @type V   Type of value.
+    * @param object   Container object.
+    * @param property   Potential contained property of object.
+    * @param value   Potential expected property value.
+    * @param message   Message to display on error.
+    */
+  def notDeepPropertyVal[T, V](`object`: T, property: String, value: V): Unit = js.native
+  def notDeepPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
+  /**
     * Asserts non-strict inequality (==) of actual and expected.
     *
     * @type T   Type of the objects.
@@ -1286,6 +1286,18 @@ trait Assert extends js.Object {
   def notProperty[T](`object`: T, property: String): Unit = js.native
   def notProperty[T](`object`: T, property: String, message: String): Unit = js.native
   /**
+    * Asserts that object has a property named by property with value given by value.
+    *
+    * @type T   Type of object.
+    * @type V   Type of value.
+    * @param object   Container object.
+    * @param property   Potential contained property of object.
+    * @param value   Potential expected property value.
+    * @param message   Message to display on error.
+    */
+  def notPropertyVal[T, V](`object`: T, property: String, value: V): Unit = js.native
+  def notPropertyVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
+  /**
     * Asserts that set1 and set2 don’t have the same members in the same order.
     * Uses a deep equality check.
     *
@@ -1384,18 +1396,6 @@ trait Assert extends js.Object {
     */
   def property[T](`object`: T, property: String): Unit = js.native
   def property[T](`object`: T, property: String, message: String): Unit = js.native
-  /**
-    * Asserts that object has a property named by property with value given by value.
-    *
-    * @type T   Type of object.
-    * @type V   Type of value.
-    * @param object   Container object.
-    * @param property   Potential contained property of object.
-    * @param value   Potential expected property value.
-    * @param message   Message to display on error.
-    */
-  def propertyNotVal[T, V](`object`: T, property: String, value: V): Unit = js.native
-  def propertyNotVal[T, V](`object`: T, property: String, value: V, message: String): Unit = js.native
   /**
     * Asserts that object has a property named by property with value given by value.
     *

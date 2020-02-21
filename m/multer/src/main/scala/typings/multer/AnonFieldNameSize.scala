@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonFieldNameSize extends js.Object {
-  /** Max field name size (Default: 100 bytes) */
+  /** Maximum size of each form field name in bytes. (Default: 100) */
   var fieldNameSize: js.UndefOr[Double] = js.undefined
-  /** Max field value size (Default: 1MB) */
+  /** Maximum size of each form field value in bytes. (Default: 1048576) */
   var fieldSize: js.UndefOr[Double] = js.undefined
-  /** Max number of non- file fields (Default: Infinity) */
+  /** Maximum number of non-file form fields. (Default: Infinity) */
   var fields: js.UndefOr[Double] = js.undefined
-  /** For multipart forms, the max file size (in bytes)(Default: Infinity) */
+  /** Maximum size of each file in bytes. (Default: Infinity) */
   var fileSize: js.UndefOr[Double] = js.undefined
-  /** For multipart forms, the max number of file fields (Default: Infinity) */
+  /** Maximum number of file fields. (Default: Infinity) */
   var files: js.UndefOr[Double] = js.undefined
-  /** For multipart forms, the max number of header key=> value pairs to parse Default: 2000(same as node's http). */
+  /** Maximum number of headers. (Default: 2000) */
   var headerPairs: js.UndefOr[Double] = js.undefined
-  /** For multipart forms, the max number of parts (fields + files)(Default: Infinity) */
+  /** Maximum number of parts (non-file fields + files). (Default: Infinity) */
   var parts: js.UndefOr[Double] = js.undefined
 }
 

@@ -1,5 +1,6 @@
 package typings.pulumiAws.keyPairMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,9 +21,17 @@ trait KeyPairState extends js.Object {
     */
   val keyNamePrefix: js.UndefOr[Input[String]] = js.native
   /**
+    * The key pair ID.
+    */
+  val keyPairId: js.UndefOr[Input[String]] = js.native
+  /**
     * The public key material.
     */
   val publicKey: js.UndefOr[Input[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object KeyPairState {
@@ -31,13 +40,17 @@ object KeyPairState {
     fingerprint: Input[String] = null,
     keyName: Input[String] = null,
     keyNamePrefix: Input[String] = null,
-    publicKey: Input[String] = null
+    keyPairId: Input[String] = null,
+    publicKey: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null
   ): KeyPairState = {
     val __obj = js.Dynamic.literal()
     if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
     if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
     if (keyNamePrefix != null) __obj.updateDynamic("keyNamePrefix")(keyNamePrefix.asInstanceOf[js.Any])
+    if (keyPairId != null) __obj.updateDynamic("keyPairId")(keyPairId.asInstanceOf[js.Any])
     if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairState]
   }
 }

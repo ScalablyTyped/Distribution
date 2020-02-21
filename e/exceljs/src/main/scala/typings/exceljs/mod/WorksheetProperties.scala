@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait WorksheetProperties extends js.Object {
   /**
+  	 * Default column width (optional)
+  	 */
+  var defaultColWidth: js.UndefOr[Double] = js.undefined
+  /**
   	 * Default row height (default: 15)
   	 */
   var defaultRowHeight: Double
@@ -37,10 +41,11 @@ object WorksheetProperties {
     outlineLevelCol: Double,
     outlineLevelRow: Double,
     showGridLines: Boolean,
-    tabColor: Partial[Color]
+    tabColor: Partial[Color],
+    defaultColWidth: Int | Double = null
   ): WorksheetProperties = {
     val __obj = js.Dynamic.literal(defaultRowHeight = defaultRowHeight.asInstanceOf[js.Any], dyDescent = dyDescent.asInstanceOf[js.Any], outlineLevelCol = outlineLevelCol.asInstanceOf[js.Any], outlineLevelRow = outlineLevelRow.asInstanceOf[js.Any], showGridLines = showGridLines.asInstanceOf[js.Any], tabColor = tabColor.asInstanceOf[js.Any])
-  
+    if (defaultColWidth != null) __obj.updateDynamic("defaultColWidth")(defaultColWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetProperties]
   }
 }

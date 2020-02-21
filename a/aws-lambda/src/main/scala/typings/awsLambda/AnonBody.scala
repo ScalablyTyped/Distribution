@@ -7,8 +7,8 @@ import typings.awsLambda.awsLambdaStrings.method
 import typings.awsLambda.awsLambdaStrings.origin
 import typings.awsLambda.awsLambdaStrings.querystring
 import typings.awsLambda.awsLambdaStrings.uri
-import typings.awsLambda.mod.CloudFrontRequest
-import typings.awsLambda.mod.CloudFrontResponse
+import typings.awsLambda.cloudfrontMod.CloudFrontRequest
+import typings.awsLambda.cloudfrontMod.CloudFrontResponse
 import typings.std.Exclude
 import typings.std.Pick
 import scala.scalajs.js

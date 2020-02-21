@@ -1,7 +1,7 @@
 
 # Scala.js typings for istanbul-lib-report
 
-Typings are for version 1.1
+Typings are for version 3.0
 
 ## Library description:
 Base reporting library for istanbul

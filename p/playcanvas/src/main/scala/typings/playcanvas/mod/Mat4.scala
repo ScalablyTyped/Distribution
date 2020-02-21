@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.Mat4
   * @classdesc A 4x4 matrix.
   * @description Creates a new identity Mat4 object.
@@ -24,8 +24,8 @@ object Mat4 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Mat4
     * @name pc.Mat4.IDENTITY
+    * @type {pc.Mat4}
     * @description A constant matrix set to the identity.
     */
   val IDENTITY: typings.playcanvas.pc.Mat4 = js.native
@@ -33,8 +33,8 @@ object Mat4 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Mat4
     * @name pc.Mat4.ZERO
+    * @type {pc.Mat4}
     * @description A constant matrix with all elements set to 0.
     */
   val ZERO: typings.playcanvas.pc.Mat4 = js.native

@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode", "ThemeIcon")
 @js.native
 class ThemeIcon protected () extends js.Object {
-  protected def this(id: String) = this()
+  /**
+  		 * Creates a reference to a theme icon.
+  		 * @param id id of the icon. The avaiable icons are listed in https://microsoft.github.io/vscode-codicons/dist/codicon.html.
+  		 */
+  def this(id: String) = this()
 }
 
 /* static members */
@@ -15,11 +19,11 @@ class ThemeIcon protected () extends js.Object {
 @js.native
 object ThemeIcon extends js.Object {
   /**
-  		 * Reference to a icon representing a file. The icon is taken from the current file icon theme or a placeholder icon.
+  		 * Reference to an icon representing a file. The icon is taken from the current file icon theme or a placeholder icon is used.
   		 */
   val File: ThemeIcon = js.native
   /**
-  		 * Reference to a icon representing a folder. The icon is taken from the current file icon theme or a placeholder icon.
+  		 * Reference to an icon representing a folder. The icon is taken from the current file icon theme or a placeholder icon is used.
   		 */
   val Folder: ThemeIcon = js.native
 }

@@ -15,6 +15,9 @@ object ganacheCoreStrings {
   sealed trait istanbul extends js.Object
   
   @js.native
+  sealed trait muirGlacier extends js.Object
+  
+  @js.native
   sealed trait petersburg extends js.Object
   
   @scala.inline
@@ -23,6 +26,8 @@ object ganacheCoreStrings {
   def constantinople: constantinople = "constantinople".asInstanceOf[constantinople]
   @scala.inline
   def istanbul: istanbul = "istanbul".asInstanceOf[istanbul]
+  @scala.inline
+  def muirGlacier: muirGlacier = "muirGlacier".asInstanceOf[muirGlacier]
   @scala.inline
   def petersburg: petersburg = "petersburg".asInstanceOf[petersburg]
 }

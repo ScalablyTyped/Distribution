@@ -23,15 +23,6 @@ object rdfJsStrings {
   @js.native
   sealed trait _empty extends js.Object
   
-  @js.native
-  sealed trait map extends js.Object
-  
-  @js.native
-  sealed trait run extends js.Object
-  
-  @js.native
-  sealed trait test extends js.Object
-  
   @scala.inline
   def BlankNode: BlankNode = "BlankNode".asInstanceOf[BlankNode]
   @scala.inline
@@ -44,11 +35,5 @@ object rdfJsStrings {
   def Variable: Variable = "Variable".asInstanceOf[Variable]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
 }
 

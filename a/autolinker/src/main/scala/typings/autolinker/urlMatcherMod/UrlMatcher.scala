@@ -99,8 +99,8 @@ class UrlMatcher protected () extends Matcher {
     */
   /* protected */ def matchHasInvalidCharAfterTld(urlMatch: String, schemeUrlMatch: String): Double = js.native
   /**
-    * Determines if a match found has an unmatched closing parenthesis or
-    * square bracket. If so, the parenthesis or square bracket will be removed
+    * Determines if a match found has an unmatched closing parenthesis,
+    * square bracket or curly bracket. If so, the symbol will be removed
     * from the match itself, and appended after the generated anchor tag.
     *
     * A match may have an extra closing parenthesis at the end of the match

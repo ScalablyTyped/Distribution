@@ -2,7 +2,10 @@ package typings.koaRatelimit.mod
 
 import typings.koa.mod.Context
 import typings.koaRatelimit.koaRatelimitBooleans.`false`
+import typings.koaRatelimit.koaRatelimitStrings.memory
+import typings.koaRatelimit.koaRatelimitStrings.redis
 import typings.redis.mod.RedisClient
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,12 +14,16 @@ trait MiddlewareOptions extends js.Object {
   /**
     * The database powering the backing rate-limiter package.
     */
-  var db: RedisClient
+  var db: RedisClient | (Map[_, _])
   /**
     * Whether or not to disable the usage of rate limit headers. This defaults
     * to **false**.
     */
   var disableHeader: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Driver to use ("redis" or "memory").
+    */
+  var driver: redis | memory
   /**
     * The length of a single limiting period. This value is expressed
     * in milliseconds, defaulting to one hour.
@@ -51,7 +58,8 @@ trait MiddlewareOptions extends js.Object {
 object MiddlewareOptions {
   @scala.inline
   def apply(
-    db: RedisClient,
+    db: RedisClient | (Map[_, _]),
+    driver: redis | memory,
     disableHeader: js.UndefOr[Boolean] = js.undefined,
     duration: Int | Double = null,
     errorMessage: String = null,
@@ -60,7 +68,7 @@ object MiddlewareOptions {
     max: Int | Double = null,
     `throw`: js.UndefOr[Boolean] = js.undefined
   ): MiddlewareOptions = {
-    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
     if (!js.isUndefined(disableHeader)) __obj.updateDynamic("disableHeader")(disableHeader.asInstanceOf[js.Any])
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])

@@ -13,8 +13,8 @@ trait ChartSeriesItemLabels extends js.Object {
   var font: js.UndefOr[String | js.Function] = js.undefined
   var format: js.UndefOr[String | js.Function] = js.undefined
   var from: js.UndefOr[ChartSeriesItemLabelsFrom] = js.undefined
-  var margin: js.UndefOr[ChartSeriesItemLabelsMargin] = js.undefined
-  var padding: js.UndefOr[ChartSeriesItemLabelsPadding] = js.undefined
+  var margin: js.UndefOr[Double | ChartSeriesItemLabelsMargin] = js.undefined
+  var padding: js.UndefOr[Double | ChartSeriesItemLabelsPadding] = js.undefined
   var position: js.UndefOr[String | js.Function] = js.undefined
   var rotation: js.UndefOr[String | Double] = js.undefined
   var template: js.UndefOr[String | js.Function] = js.undefined
@@ -34,8 +34,8 @@ object ChartSeriesItemLabels {
     font: String | js.Function = null,
     format: String | js.Function = null,
     from: ChartSeriesItemLabelsFrom = null,
-    margin: ChartSeriesItemLabelsMargin = null,
-    padding: ChartSeriesItemLabelsPadding = null,
+    margin: Double | ChartSeriesItemLabelsMargin = null,
+    padding: Double | ChartSeriesItemLabelsPadding = null,
     position: String | js.Function = null,
     rotation: String | Double = null,
     template: String | js.Function = null,

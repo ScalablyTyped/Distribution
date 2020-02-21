@@ -38,8 +38,14 @@ trait ConnectionBase extends EventEmitter {
   ] = js.native
   /** The mongodb.Db instance, set when the connection is opened */
   var db: Db = js.native
+  /** Connected host */
+  var host: String = js.native
   /** A hash of models registered with this connection */
   var models: StringDictionary[Model_[_, js.Object]] = js.native
+  /** Connected database name */
+  var name: String = js.native
+  /** Connected port number */
+  var port: Double = js.native
   /**
     * Connection ready state
     * 0 = disconnected

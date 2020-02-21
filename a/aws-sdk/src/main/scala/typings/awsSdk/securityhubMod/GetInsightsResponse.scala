@@ -11,7 +11,7 @@ trait GetInsightsResponse extends js.Object {
     */
   var Insights: InsightList = js.native
   /**
-    * The token that is required for pagination.
+    * The pagination token to use to request the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
 }

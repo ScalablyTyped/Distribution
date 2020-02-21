@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.DISTANCE_LINEAR
-  * @description Linear distance model
+  * @description Linear distance model.
   */
 @JSGlobal("pc.DISTANCE_LINEAR")
 @js.native

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_MOUSEDOWN
-  * @description Name of event fired when a mouse button is pressed
+  * @description Name of event fired when a mouse button is pressed.
   */
 @JSGlobal("pc.EVENT_MOUSEDOWN")
 @js.native

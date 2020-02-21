@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SjclCBCMode extends js.Object {
-  def decrypt(prp: SjclCipher, ciphertext: BitArray_, iv: BitArray_): BitArray_ = js.native
-  def decrypt(prp: SjclCipher, ciphertext: BitArray_, iv: BitArray_, adata: BitArray_): BitArray_ = js.native
-  def encrypt(prp: SjclCipher, plaintext: BitArray_, iv: BitArray_): BitArray_ = js.native
-  def encrypt(prp: SjclCipher, plaintext: BitArray_, iv: BitArray_, adata: BitArray_): BitArray_ = js.native
+  def decrypt(prf: SjclCipher, ciphertext: BitArray_, iv: BitArray_): BitArray_ = js.native
+  def decrypt(prf: SjclCipher, ciphertext: BitArray_, iv: BitArray_, adata: BitArray_): BitArray_ = js.native
+  def encrypt(prf: SjclCipher, plaintext: BitArray_, iv: BitArray_): BitArray_ = js.native
+  def encrypt(prf: SjclCipher, plaintext: BitArray_, iv: BitArray_, adata: BitArray_): BitArray_ = js.native
 }
 

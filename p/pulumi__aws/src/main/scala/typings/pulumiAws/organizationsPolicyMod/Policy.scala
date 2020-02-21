@@ -26,7 +26,7 @@ class Policy protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
-    * The policy content to add to the new policy. For example, if you create a [service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html), this string must be JSON text that specifies the permissions that admins in attached accounts can delegate to their users, groups, and roles. For more information about the SCP syntax, see the [Service Control Policy Syntax documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_scp-syntax.html).
+    * The policy content to add to the new policy. For example, if you create a [service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html), this string must be JSON text that specifies the permissions that admins in attached accounts can delegate to their users, groups, and roles. For more information about the SCP syntax, see the [Service Control Policy Syntax documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_scp-syntax.html) and for more information on the Tag Policy syntax, see the [Tag Policy Syntax documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_example-tag-policies.html).
     */
   val content: Output_[String] = js.native
   /**
@@ -38,7 +38,7 @@ class Policy protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
-    * The type of policy to create. Currently, the only valid value is `SERVICE_CONTROL_POLICY` (SCP).
+    * The type of policy to create. Currently, the only valid values are `SERVICE_CONTROL_POLICY` (SCP) and `TAG_POLICY`. Defaults to `SERVICE_CONTROL_POLICY`.
     */
   val `type`: Output_[js.UndefOr[String]] = js.native
 }

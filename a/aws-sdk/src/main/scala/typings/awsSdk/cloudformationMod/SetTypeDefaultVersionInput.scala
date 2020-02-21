@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SetTypeDefaultVersionInput extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the type for which you want version summary information. Conditional: You must specify TypeName or Arn.
+    * The Amazon Resource Name (ARN) of the type for which you want version summary information. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var Arn: js.UndefOr[PrivateTypeArn] = js.native
   /**
-    * The kind of type.
+    * The kind of type. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var Type: js.UndefOr[RegistryType] = js.native
   /**
-    * The name of the type. Conditional: You must specify TypeName or Arn.
+    * The name of the type. Conditional: You must specify either TypeName and Type, or Arn.
     */
   var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.native
   /**

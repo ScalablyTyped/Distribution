@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait QueryForecastRequest extends js.Object {
   /**
-    * The end date for the forecast. Specify the date using this format: yyyy-MM-dd'T'HH:mm:ss'Z' (ISO 8601 format). For example, "1970-01-01T00:00:00Z." 
+    * The end date for the forecast. Specify the date using this format: yyyy-MM-dd'T'HH:mm:ss (ISO 8601 format). For example, 2015-01-01T20:00:00. 
     */
   var EndDate: js.UndefOr[DateTime] = js.native
   /**
-    * The filtering criteria to apply when retrieving the forecast. For example:   To get a forecast for a specific item specify the following:  {"item_id" : "client_1"}      To get a forecast for a specific item sold in a specific location, specify the following:  {"item_id" : "client_1", "location" : "ny"}      To get a forecast for all blue items sold in a specific location, specify the following:  { "location" : "ny", "color":"blue"}    To get the full forecast, use the operation.
+    * The filtering criteria to apply when retrieving the forecast. For example, to get the forecast for client_21 in the electricity usage dataset, specify the following:  {"item_id" : "client_21"}  To get the full forecast, use the CreateForecastExportJob operation.
     */
   var Filters: typings.awsSdk.forecastqueryserviceMod.Filters = js.native
   /**
@@ -23,7 +23,7 @@ trait QueryForecastRequest extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.forecastqueryserviceMod.NextToken] = js.native
   /**
-    * The start date for the forecast. Specify the date using this format: yyyy-MM-dd'T'HH:mm:ss'Z' (ISO 8601 format) For example, "1970-01-01T00:00:00Z."
+    * The start date for the forecast. Specify the date using this format: yyyy-MM-dd'T'HH:mm:ss (ISO 8601 format). For example, 2015-01-01T08:00:00.
     */
   var StartDate: js.UndefOr[DateTime] = js.native
 }

@@ -29,23 +29,12 @@ trait SCBroker extends EventEmitter {
   var options: SCBrokerOptions = js.native
   var subscriptions: Subscriptions = js.native
   val `type`: broker = js.native
-  def exec(
-    query: js.Function3[
-      /* dataMap */ FlexiMap, 
-      /* dataExpirer */ ExpiryManager, 
-      /* subscriptions */ Subscriptions, 
-      _
-    ]
-  ): js.Any = js.native
-  def exec(
-    query: js.Function3[
-      /* dataMap */ FlexiMap, 
-      /* dataExpirer */ ExpiryManager, 
-      /* subscriptions */ Subscriptions, 
-      _
-    ],
-    baseKey: KeyChain
-  ): js.Any = js.native
+  @JSName("addMiddleware")
+  def addMiddleware_publish(`type`: publish, middleware: PublishMiddleware): Unit = js.native
+  @JSName("addMiddleware")
+  def addMiddleware_subscribe(`type`: subscribe, middleware: SubscribeMiddleware): Unit = js.native
+  def exec(query: QueryFunction): js.Any = js.native
+  def exec(query: QueryFunction, baseKey: KeyChain): js.Any = js.native
   @JSName("on")
   def on_masterMessage(
     event: masterMessage,
@@ -73,6 +62,10 @@ trait SCBroker extends EventEmitter {
   @JSName("on")
   def on_warning(event: warning, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   def publish(channel: String, message: js.Any): Unit = js.native
+  @JSName("removeMiddleware")
+  def removeMiddleware_publish(`type`: publish, middleware: PublishMiddleware): Unit = js.native
+  @JSName("removeMiddleware")
+  def removeMiddleware_subscribe(`type`: subscribe, middleware: SubscribeMiddleware): Unit = js.native
   def run(): Unit = js.native
   def sendToMaster(data: js.Any): Unit = js.native
   def sendToMaster(data: js.Any, callback: js.Function2[/* err */ Error | Null, /* responseData */ js.Any, Unit]): Unit = js.native

@@ -21,10 +21,14 @@ trait AdapterOptions extends js.Object {
   var noNamespace: js.UndefOr[Boolean] = js.undefined
   /** Handler for changes of subscribed objects */
   var objectChange: js.UndefOr[ObjectChangeHandler] = js.undefined
+  /** If true, the adapter will have a property `oObjects` that contains a live cache of the adapter's objects */
+  var objects: js.UndefOr[Boolean] = js.undefined
   /** Will be called when the adapter is intialized */
   var ready: js.UndefOr[ReadyHandler] = js.undefined
   /** Handler for changes of subscribed states */
   var stateChange: js.UndefOr[StateChangeHandler] = js.undefined
+  /** If true, the adapter will have a property `oStates` that contains a live cache of the adapter's states */
+  var states: js.UndefOr[Boolean] = js.undefined
   /** if the global system config should be included in the created object. Default: false */
   var systemConfig: js.UndefOr[Boolean] = js.undefined
   /** Will be called on adapter termination */
@@ -44,8 +48,10 @@ object AdapterOptions {
     message: /* obj */ Message => Unit | js.Promise[Unit] = null,
     noNamespace: js.UndefOr[Boolean] = js.undefined,
     objectChange: (/* id */ String, /* obj */ js.UndefOr[Object | Null]) => Unit | js.Promise[Unit] = null,
+    objects: js.UndefOr[Boolean] = js.undefined,
     ready: () => Unit | js.Promise[Unit] = null,
     stateChange: (/* id */ String, /* obj */ js.UndefOr[State | Null]) => Unit | js.Promise[Unit] = null,
+    states: js.UndefOr[Boolean] = js.undefined,
     systemConfig: js.UndefOr[Boolean] = js.undefined,
     unload: /* callback */ EmptyCallback => Unit | js.Promise[Unit] = null,
     useFormatDate: js.UndefOr[Boolean] = js.undefined
@@ -58,8 +64,10 @@ object AdapterOptions {
     if (message != null) __obj.updateDynamic("message")(js.Any.fromFunction1(message))
     if (!js.isUndefined(noNamespace)) __obj.updateDynamic("noNamespace")(noNamespace.asInstanceOf[js.Any])
     if (objectChange != null) __obj.updateDynamic("objectChange")(js.Any.fromFunction2(objectChange))
+    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
     if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
     if (stateChange != null) __obj.updateDynamic("stateChange")(js.Any.fromFunction2(stateChange))
+    if (!js.isUndefined(states)) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
     if (!js.isUndefined(systemConfig)) __obj.updateDynamic("systemConfig")(systemConfig.asInstanceOf[js.Any])
     if (unload != null) __obj.updateDynamic("unload")(js.Any.fromFunction1(unload))
     if (!js.isUndefined(useFormatDate)) __obj.updateDynamic("useFormatDate")(useFormatDate.asInstanceOf[js.Any])

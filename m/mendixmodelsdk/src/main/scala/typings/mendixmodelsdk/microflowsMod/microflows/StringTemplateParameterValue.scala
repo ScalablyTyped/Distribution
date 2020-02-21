@@ -26,8 +26,16 @@ class StringTemplateParameterValue protected () extends CodeActionParameterValue
   ) = this()
   @JSName("model")
   var model_FStringTemplateParameterValue: IModel = js.native
+  /**
+    * In version 8.6.0: deleted
+    */
   def template(): StringTemplate = js.native
   def template(newValue: StringTemplate): js.Any = js.native
+  /**
+    * In version 8.6.0: introduced
+    */
+  def typedTemplate(): TypedTemplate = js.native
+  def typedTemplate(newValue: TypedTemplate): js.Any = js.native
 }
 
 /* static members */

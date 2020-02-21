@@ -28,7 +28,7 @@ trait NfsLocationState extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   val uri: js.UndefOr[Input[String]] = js.native
 }
 
@@ -39,7 +39,7 @@ object NfsLocationState {
     onPremConfig: Input[NfsLocationOnPremConfig] = null,
     serverHostname: Input[String] = null,
     subdirectory: Input[String] = null,
-    tags: Input[StringDictionary[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     uri: Input[String] = null
   ): NfsLocationState = {
     val __obj = js.Dynamic.literal()

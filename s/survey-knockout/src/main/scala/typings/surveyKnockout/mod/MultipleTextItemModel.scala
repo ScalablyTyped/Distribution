@@ -44,6 +44,7 @@ class MultipleTextItemModel ()
     * The input place holder.
     */
   var placeHolder: String = js.native
+  val question: Question = js.native
   /**
     * The custom text that will be shown on required error. Use this property, if you do not want to show the default text.
     */
@@ -67,17 +68,9 @@ class MultipleTextItemModel ()
   /* CompleteClass */
   override def geSurveyData(): ISurveyData = js.native
   /* CompleteClass */
-  override def getAllValues(): js.Any = js.native
-  /* CompleteClass */
-  override def getComment(name: String): String = js.native
-  /* CompleteClass */
   override def getDataFilteredProperties(): js.Any = js.native
   /* CompleteClass */
   override def getDataFilteredValues(): js.Any = js.native
-  /* CompleteClass */
-  override def getFilteredProperties(): js.Any = js.native
-  /* CompleteClass */
-  override def getFilteredValues(): js.Any = js.native
   def getMaxLength(): js.Any = js.native
   /* CompleteClass */
   override def getSurvey(): ISurvey = js.native
@@ -87,21 +80,11 @@ class MultipleTextItemModel ()
   override def getValidatorTitle(): String = js.native
   /* CompleteClass */
   override def getValidators(): js.Array[SurveyValidator] = js.native
-  /* CompleteClass */
-  override def getValue(name: String): js.Any = js.native
-  /* CompleteClass */
-  override def getVariable(name: String): js.Any = js.native
   def isEmpty(): Boolean = js.native
   def onValueChanged(newValue: js.Any): Unit = js.native
   def setComment(name: String, newValue: String): Unit = js.native
-  /* CompleteClass */
-  override def setComment(name: String, newValue: String, locNotification: js.Any): js.Any = js.native
   def setData(data: IMultipleTextData): Unit = js.native
-  /* CompleteClass */
-  override def setValue(name: String, newValue: js.Any, locNotification: js.Any): js.Any = js.native
   def setValue(name: String, value: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def setVariable(name: String, newValue: js.Any): Unit = js.native
   def valueChangedCallback(newValue: js.Any): Unit = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.CURVE_SMOOTHSTEP
   * @description A smooth step interpolation scheme.
   */

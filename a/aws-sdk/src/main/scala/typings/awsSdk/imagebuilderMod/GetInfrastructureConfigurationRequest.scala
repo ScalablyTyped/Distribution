@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetInfrastructureConfigurationRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the infrastructure configuration that you wish to retrieve. 
+    * The Amazon Resource Name (ARN) of the infrastructure configuration that you want to retrieve. 
     */
   var infrastructureConfigurationArn: InfrastructureConfigurationArn = js.native
 }

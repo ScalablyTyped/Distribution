@@ -2,29 +2,19 @@ package typings.rebassGrid.mod
 
 import typings.csstype.mod.AlignItemsProperty
 import typings.csstype.mod.AlignSelfProperty
-import typings.csstype.mod.BackgroundProperty
-import typings.csstype.mod.ColorProperty
 import typings.csstype.mod.FlexDirectionProperty
 import typings.csstype.mod.FlexProperty
 import typings.csstype.mod.FlexWrapProperty
-import typings.csstype.mod.FontSizeProperty
 import typings.csstype.mod.GlobalsNumber
 import typings.csstype.mod.JustifyContentProperty
-import typings.csstype.mod.MarginBottomProperty
-import typings.csstype.mod.MarginLeftProperty
-import typings.csstype.mod.MarginProperty
-import typings.csstype.mod.MarginRightProperty
-import typings.csstype.mod.MarginTopProperty
-import typings.csstype.mod.PaddingBottomProperty
-import typings.csstype.mod.PaddingLeftProperty
-import typings.csstype.mod.PaddingProperty
-import typings.csstype.mod.PaddingRightProperty
-import typings.csstype.mod.PaddingTopProperty
 import typings.csstype.mod.WidthProperty
 import typings.react.mod.ElementType
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
+import typings.rebassGrid.rebassGridStrings.colors
+import typings.rebassGrid.rebassGridStrings.fontSizes
+import typings.rebassGrid.rebassGridStrings.space
 import typings.styledSystem.mod.AlignItemsProps
 import typings.styledSystem.mod.AlignSelfProps
 import typings.styledSystem.mod.BackgroundColorProps
@@ -34,10 +24,12 @@ import typings.styledSystem.mod.FontSizeProps
 import typings.styledSystem.mod.JustifyContentProps
 import typings.styledSystem.mod.OpacityProps
 import typings.styledSystem.mod.OrderProps
+import typings.styledSystem.mod.RequiredTheme
 import typings.styledSystem.mod.ResponsiveValue
 import typings.styledSystem.mod.SpaceProps
 import typings.styledSystem.mod.TLengthStyledSystem
 import typings.styledSystem.mod.TextColorProps
+import typings.styledSystem.mod.ThemeValue
 import typings.styledSystem.mod.WidthProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,68 +38,71 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, keyof @rebass/grid.@rebass/grid.FlexKnownProps> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait FlexProps
   extends BaseProps
-     with SpaceProps[TLengthStyledSystem]
-     with WidthProps[TLengthStyledSystem]
-     with FontSizeProps[TLengthStyledSystem]
-     with TextColorProps
-     with BackgroundColorProps[TLengthStyledSystem]
-     with OpacityProps
-     with typings.styledSystem.mod.FlexProps[TLengthStyledSystem]
-     with OrderProps
-     with AlignSelfProps
-     with FlexWrapProps
-     with FlexDirectionProps
-     with AlignItemsProps
-     with JustifyContentProps
+     with SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, js.Any]]
+     with WidthProps[RequiredTheme, WidthProperty[TLengthStyledSystem]]
+     with FontSizeProps[RequiredTheme, ThemeValue[fontSizes, RequiredTheme, js.Any]]
+     with TextColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
+     with BackgroundColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
+     with OpacityProps[RequiredTheme]
+     with typings.styledSystem.mod.FlexProps[RequiredTheme, FlexProperty[TLengthStyledSystem]]
+     with OrderProps[RequiredTheme]
+     with AlignSelfProps[RequiredTheme]
+     with FlexWrapProps[RequiredTheme]
+     with FlexDirectionProps[RequiredTheme]
+     with AlignItemsProps[RequiredTheme]
+     with JustifyContentProps[RequiredTheme]
 
 object FlexProps {
   @scala.inline
   def apply(
-    alignItems: ResponsiveValue[AlignItemsProperty] = null,
-    alignSelf: ResponsiveValue[AlignSelfProperty] = null,
+    alignItems: ResponsiveValue[AlignItemsProperty, RequiredTheme] = null,
+    alignSelf: ResponsiveValue[AlignSelfProperty, RequiredTheme] = null,
     as: ElementType[_] = null,
-    backgroundColor: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
-    bg: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
+    backgroundColor: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
+    bg: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
     children: ReactNode = null,
-    color: ResponsiveValue[ColorProperty] = null,
-    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
-    flexDirection: ResponsiveValue[FlexDirectionProperty] = null,
-    flexWrap: ResponsiveValue[FlexWrapProperty] = null,
-    fontSize: ResponsiveValue[FontSizeProperty[TLengthStyledSystem]] = null,
-    justifyContent: ResponsiveValue[JustifyContentProperty] = null,
+    color: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
+    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme] = null,
+    flexDirection: ResponsiveValue[FlexDirectionProperty, RequiredTheme] = null,
+    flexWrap: ResponsiveValue[FlexWrapProperty, RequiredTheme] = null,
+    fontSize: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme] = null,
+    justifyContent: ResponsiveValue[JustifyContentProperty, RequiredTheme] = null,
     key: Key = null,
-    m: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    margin: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    marginBottom: ResponsiveValue[MarginBottomProperty[TLengthStyledSystem]] = null,
-    marginLeft: ResponsiveValue[MarginLeftProperty[TLengthStyledSystem]] = null,
-    marginRight: ResponsiveValue[MarginRightProperty[TLengthStyledSystem]] = null,
-    marginTop: ResponsiveValue[MarginTopProperty[TLengthStyledSystem]] = null,
-    marginX: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    marginY: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    mb: ResponsiveValue[MarginBottomProperty[TLengthStyledSystem]] = null,
-    ml: ResponsiveValue[MarginLeftProperty[TLengthStyledSystem]] = null,
-    mr: ResponsiveValue[MarginRightProperty[TLengthStyledSystem]] = null,
-    mt: ResponsiveValue[MarginTopProperty[TLengthStyledSystem]] = null,
-    mx: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    my: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    opacity: ResponsiveValue[GlobalsNumber] = null,
-    order: ResponsiveValue[GlobalsNumber] = null,
-    p: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    padding: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    paddingBottom: ResponsiveValue[PaddingBottomProperty[TLengthStyledSystem]] = null,
-    paddingLeft: ResponsiveValue[PaddingLeftProperty[TLengthStyledSystem]] = null,
-    paddingRight: ResponsiveValue[PaddingRightProperty[TLengthStyledSystem]] = null,
-    paddingTop: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
-    paddingX: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    paddingY: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    pb: ResponsiveValue[PaddingBottomProperty[TLengthStyledSystem]] = null,
-    pl: ResponsiveValue[PaddingLeftProperty[TLengthStyledSystem]] = null,
-    pr: ResponsiveValue[PaddingRightProperty[TLengthStyledSystem]] = null,
-    pt: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
-    px: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    py: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
+    m: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    margin: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginRight: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginTop: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginX: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginY: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    mb: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    ml: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    mr: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    mt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    mx: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    my: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    opacity: ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OpacityProperty */ _, 
+      RequiredTheme
+    ] = null,
+    order: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
+    p: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    padding: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingRight: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingTop: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingX: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingY: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pb: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pl: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pr: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    px: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    py: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     ref: LegacyRef[js.Any] = null,
-    width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
+    width: ResponsiveValue[WidthProperty[TLengthStyledSystem], RequiredTheme] = null
   ): FlexProps = {
     val __obj = js.Dynamic.literal()
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])

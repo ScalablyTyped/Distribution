@@ -10,9 +10,9 @@ trait ChartValueAxisItemLabels extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartValueAxisItemLabelsMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartValueAxisItemLabelsMargin] = js.undefined
   var mirror: js.UndefOr[Boolean] = js.undefined
-  var padding: js.UndefOr[ChartValueAxisItemLabelsPadding] = js.undefined
+  var padding: js.UndefOr[Double | ChartValueAxisItemLabelsPadding] = js.undefined
   var rotation: js.UndefOr[String | Double | ChartValueAxisItemLabelsRotation] = js.undefined
   var skip: js.UndefOr[Double] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
@@ -29,9 +29,9 @@ object ChartValueAxisItemLabels {
     color: String = null,
     font: String = null,
     format: String = null,
-    margin: ChartValueAxisItemLabelsMargin = null,
+    margin: Double | ChartValueAxisItemLabelsMargin = null,
     mirror: js.UndefOr[Boolean] = js.undefined,
-    padding: ChartValueAxisItemLabelsPadding = null,
+    padding: Double | ChartValueAxisItemLabelsPadding = null,
     rotation: String | Double | ChartValueAxisItemLabelsRotation = null,
     skip: Int | Double = null,
     step: Int | Double = null,

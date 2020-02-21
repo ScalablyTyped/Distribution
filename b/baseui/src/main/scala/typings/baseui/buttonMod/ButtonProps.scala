@@ -4,6 +4,7 @@ import typings.baseui.baseuiStrings.button
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
+import typings.baseui.baseuiStrings.mini
 import typings.baseui.baseuiStrings.minimal
 import typings.baseui.baseuiStrings.pill
 import typings.baseui.baseuiStrings.primary
@@ -34,7 +35,7 @@ trait ButtonProps extends StyletronComponentInjectedProps[ButtonProps] {
   var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], _]] = js.native
   var overrides: js.UndefOr[ButtonOverrides] = js.native
   var shape: js.UndefOr[default_ | pill | round | square] = js.native
-  var size: js.UndefOr[compact | default_ | large_] = js.native
+  var size: js.UndefOr[compact | default_ | large_ | mini] = js.native
   var startEnhancer: js.UndefOr[ReactNode] = js.native
   var target: js.UndefOr[String] = js.native
   var `type`: js.UndefOr[submit | reset | button] = js.native

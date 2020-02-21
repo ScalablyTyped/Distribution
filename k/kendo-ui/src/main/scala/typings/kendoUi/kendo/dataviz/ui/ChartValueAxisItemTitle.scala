@@ -9,8 +9,8 @@ trait ChartValueAxisItemTitle extends js.Object {
   var border: js.UndefOr[ChartValueAxisItemTitleBorder] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartValueAxisItemTitleMargin] = js.undefined
-  var padding: js.UndefOr[ChartValueAxisItemTitlePadding] = js.undefined
+  var margin: js.UndefOr[Double | ChartValueAxisItemTitleMargin] = js.undefined
+  var padding: js.UndefOr[Double | ChartValueAxisItemTitlePadding] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
   var text: js.UndefOr[String] = js.undefined
@@ -25,8 +25,8 @@ object ChartValueAxisItemTitle {
     border: ChartValueAxisItemTitleBorder = null,
     color: String = null,
     font: String = null,
-    margin: ChartValueAxisItemTitleMargin = null,
-    padding: ChartValueAxisItemTitlePadding = null,
+    margin: Double | ChartValueAxisItemTitleMargin = null,
+    padding: Double | ChartValueAxisItemTitlePadding = null,
     position: String = null,
     rotation: Int | Double = null,
     text: String = null,

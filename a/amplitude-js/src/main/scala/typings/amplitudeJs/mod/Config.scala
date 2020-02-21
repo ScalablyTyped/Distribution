@@ -1,6 +1,6 @@
 package typings.amplitudeJs.mod
 
-import typings.amplitudeJs.AnonCity
+import typings.amplitudeJs.AnonCarrier
 import typings.amplitudeJs.amplitudeJsStrings.DISABLE
 import typings.amplitudeJs.amplitudeJsStrings.ERROR
 import typings.amplitudeJs.amplitudeJsStrings.INFO
@@ -25,15 +25,18 @@ trait Config extends js.Object {
   var includeUtm: js.UndefOr[Boolean] = js.undefined
   var language: js.UndefOr[String] = js.undefined
   var logLevel: js.UndefOr[DISABLE | ERROR | WARN | INFO] = js.undefined
+  var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
   var optOut: js.UndefOr[Boolean] = js.undefined
   var platform: js.UndefOr[String] = js.undefined
   var saveEvents: js.UndefOr[Boolean] = js.undefined
   var saveParamsReferrerOncePerSession: js.UndefOr[Boolean] = js.undefined
   var savedMaxCount: js.UndefOr[Double] = js.undefined
+  var secureCookie: js.UndefOr[Boolean] = js.undefined
   var sessionTimeout: js.UndefOr[Double] = js.undefined
-  var trackingOptions: js.UndefOr[AnonCity] = js.undefined
+  var trackingOptions: js.UndefOr[AnonCarrier] = js.undefined
   var unsentIdentifyKey: js.UndefOr[String] = js.undefined
   var unsentKey: js.UndefOr[String] = js.undefined
+  var unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.undefined
   var uploadBatchSize: js.UndefOr[Double] = js.undefined
   var useNativeDeviceInfo: js.UndefOr[Boolean] = js.undefined
   var userId: js.UndefOr[String] = js.undefined
@@ -57,15 +60,18 @@ object Config {
     includeUtm: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
     logLevel: DISABLE | ERROR | WARN | INFO = null,
+    onError: () => Unit = null,
     optOut: js.UndefOr[Boolean] = js.undefined,
     platform: String = null,
     saveEvents: js.UndefOr[Boolean] = js.undefined,
     saveParamsReferrerOncePerSession: js.UndefOr[Boolean] = js.undefined,
     savedMaxCount: Int | Double = null,
+    secureCookie: js.UndefOr[Boolean] = js.undefined,
     sessionTimeout: Int | Double = null,
-    trackingOptions: AnonCity = null,
+    trackingOptions: AnonCarrier = null,
     unsentIdentifyKey: String = null,
     unsentKey: String = null,
+    unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.undefined,
     uploadBatchSize: Int | Double = null,
     useNativeDeviceInfo: js.UndefOr[Boolean] = js.undefined,
     userId: String = null
@@ -86,15 +92,18 @@ object Config {
     if (!js.isUndefined(includeUtm)) __obj.updateDynamic("includeUtm")(includeUtm.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
     if (!js.isUndefined(optOut)) __obj.updateDynamic("optOut")(optOut.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     if (!js.isUndefined(saveEvents)) __obj.updateDynamic("saveEvents")(saveEvents.asInstanceOf[js.Any])
     if (!js.isUndefined(saveParamsReferrerOncePerSession)) __obj.updateDynamic("saveParamsReferrerOncePerSession")(saveParamsReferrerOncePerSession.asInstanceOf[js.Any])
     if (savedMaxCount != null) __obj.updateDynamic("savedMaxCount")(savedMaxCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(secureCookie)) __obj.updateDynamic("secureCookie")(secureCookie.asInstanceOf[js.Any])
     if (sessionTimeout != null) __obj.updateDynamic("sessionTimeout")(sessionTimeout.asInstanceOf[js.Any])
     if (trackingOptions != null) __obj.updateDynamic("trackingOptions")(trackingOptions.asInstanceOf[js.Any])
     if (unsentIdentifyKey != null) __obj.updateDynamic("unsentIdentifyKey")(unsentIdentifyKey.asInstanceOf[js.Any])
     if (unsentKey != null) __obj.updateDynamic("unsentKey")(unsentKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsetParamsReferrerOnNewSession)) __obj.updateDynamic("unsetParamsReferrerOnNewSession")(unsetParamsReferrerOnNewSession.asInstanceOf[js.Any])
     if (uploadBatchSize != null) __obj.updateDynamic("uploadBatchSize")(uploadBatchSize.asInstanceOf[js.Any])
     if (!js.isUndefined(useNativeDeviceInfo)) __obj.updateDynamic("useNativeDeviceInfo")(useNativeDeviceInfo.asInstanceOf[js.Any])
     if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])

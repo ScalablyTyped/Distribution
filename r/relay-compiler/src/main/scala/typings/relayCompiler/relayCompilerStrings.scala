@@ -15,9 +15,6 @@ object relayCompilerStrings {
   sealed trait Condition extends js.Object
   
   @js.native
-  sealed trait ConnectionField extends js.Object
-  
-  @js.native
   sealed trait Defer extends js.Object
   
   @js.native
@@ -104,8 +101,6 @@ object relayCompilerStrings {
   def ClientExtension: ClientExtension = "ClientExtension".asInstanceOf[ClientExtension]
   @scala.inline
   def Condition: Condition = "Condition".asInstanceOf[Condition]
-  @scala.inline
-  def ConnectionField: ConnectionField = "ConnectionField".asInstanceOf[ConnectionField]
   @scala.inline
   def Defer: Defer = "Defer".asInstanceOf[Defer]
   @scala.inline

@@ -51,8 +51,9 @@ object workspace extends js.Object {
   def findFiles(include: GlobPattern, exclude: GlobPattern, maxResults: Double): Thenable[js.Array[Uri]] = js.native
   def findFiles(include: GlobPattern, exclude: GlobPattern, maxResults: Double, token: CancellationToken): Thenable[js.Array[Uri]] = js.native
   def getConfiguration(): WorkspaceConfiguration = js.native
+  def getConfiguration(section: js.UndefOr[scala.Nothing], scope: ConfigurationScope): WorkspaceConfiguration = js.native
   def getConfiguration(section: String): WorkspaceConfiguration = js.native
-  def getConfiguration(section: String, resource: Uri): WorkspaceConfiguration = js.native
+  def getConfiguration(section: String, scope: ConfigurationScope): WorkspaceConfiguration = js.native
   def getWorkspaceFolder(uri: Uri): js.UndefOr[WorkspaceFolder] = js.native
   def openTextDocument(): Thenable[TextDocument] = js.native
   def openTextDocument(fileName: String): Thenable[TextDocument] = js.native

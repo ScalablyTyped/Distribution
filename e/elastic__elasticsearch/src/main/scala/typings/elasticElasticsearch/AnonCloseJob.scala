@@ -13,8 +13,9 @@ import typings.elasticElasticsearch.requestParamsMod.MlDeleteFilter
 import typings.elasticElasticsearch.requestParamsMod.MlDeleteForecast
 import typings.elasticElasticsearch.requestParamsMod.MlDeleteJob
 import typings.elasticElasticsearch.requestParamsMod.MlDeleteModelSnapshot
-import typings.elasticElasticsearch.requestParamsMod.MlEstimateMemoryUsage
+import typings.elasticElasticsearch.requestParamsMod.MlDeleteTrainedModel
 import typings.elasticElasticsearch.requestParamsMod.MlEvaluateDataFrame
+import typings.elasticElasticsearch.requestParamsMod.MlExplainDataFrameAnalytics
 import typings.elasticElasticsearch.requestParamsMod.MlFindFileStructure
 import typings.elasticElasticsearch.requestParamsMod.MlFlushJob
 import typings.elasticElasticsearch.requestParamsMod.MlForecast
@@ -33,6 +34,8 @@ import typings.elasticElasticsearch.requestParamsMod.MlGetJobs
 import typings.elasticElasticsearch.requestParamsMod.MlGetModelSnapshots
 import typings.elasticElasticsearch.requestParamsMod.MlGetOverallBuckets
 import typings.elasticElasticsearch.requestParamsMod.MlGetRecords
+import typings.elasticElasticsearch.requestParamsMod.MlGetTrainedModels
+import typings.elasticElasticsearch.requestParamsMod.MlGetTrainedModelsStats
 import typings.elasticElasticsearch.requestParamsMod.MlInfo
 import typings.elasticElasticsearch.requestParamsMod.MlOpenJob
 import typings.elasticElasticsearch.requestParamsMod.MlPostCalendarEvents
@@ -44,6 +47,7 @@ import typings.elasticElasticsearch.requestParamsMod.MlPutDataFrameAnalytics
 import typings.elasticElasticsearch.requestParamsMod.MlPutDatafeed
 import typings.elasticElasticsearch.requestParamsMod.MlPutFilter
 import typings.elasticElasticsearch.requestParamsMod.MlPutJob
+import typings.elasticElasticsearch.requestParamsMod.MlPutTrainedModel
 import typings.elasticElasticsearch.requestParamsMod.MlRevertModelSnapshot
 import typings.elasticElasticsearch.requestParamsMod.MlSetUpgradeMode
 import typings.elasticElasticsearch.requestParamsMod.MlStartDataFrameAnalytics
@@ -89,6 +93,8 @@ trait AnonCloseJob extends js.Object {
   var deleteJob_Original: ApiMethod[MlDeleteJob, _] = js.native
   @JSName("deleteModelSnapshot")
   var deleteModelSnapshot_Original: ApiMethod[MlDeleteModelSnapshot, _] = js.native
+  @JSName("deleteTrainedModel")
+  var deleteTrainedModel_Original: ApiMethod[MlDeleteTrainedModel, _] = js.native
   @JSName("delete_calendar")
   var delete_calendar_Original: ApiMethod[MlDeleteCalendar, _] = js.native
   @JSName("delete_calendar_event")
@@ -109,14 +115,16 @@ trait AnonCloseJob extends js.Object {
   var delete_job_Original: ApiMethod[MlDeleteJob, _] = js.native
   @JSName("delete_model_snapshot")
   var delete_model_snapshot_Original: ApiMethod[MlDeleteModelSnapshot, _] = js.native
-  @JSName("estimateMemoryUsage")
-  var estimateMemoryUsage_Original: ApiMethod[MlEstimateMemoryUsage[_], _] = js.native
-  @JSName("estimate_memory_usage")
-  var estimate_memory_usage_Original: ApiMethod[MlEstimateMemoryUsage[_], _] = js.native
+  @JSName("delete_trained_model")
+  var delete_trained_model_Original: ApiMethod[MlDeleteTrainedModel, _] = js.native
   @JSName("evaluateDataFrame")
   var evaluateDataFrame_Original: ApiMethod[MlEvaluateDataFrame[_], _] = js.native
   @JSName("evaluate_data_frame")
   var evaluate_data_frame_Original: ApiMethod[MlEvaluateDataFrame[_], _] = js.native
+  @JSName("explainDataFrameAnalytics")
+  var explainDataFrameAnalytics_Original: ApiMethod[MlExplainDataFrameAnalytics[_], _] = js.native
+  @JSName("explain_data_frame_analytics")
+  var explain_data_frame_analytics_Original: ApiMethod[MlExplainDataFrameAnalytics[_], _] = js.native
   @JSName("findFileStructure")
   var findFileStructure_Original: ApiMethod[MlFindFileStructure[_], _] = js.native
   @JSName("find_file_structure")
@@ -157,6 +165,10 @@ trait AnonCloseJob extends js.Object {
   var getOverallBuckets_Original: ApiMethod[MlGetOverallBuckets[_], _] = js.native
   @JSName("getRecords")
   var getRecords_Original: ApiMethod[MlGetRecords[_], _] = js.native
+  @JSName("getTrainedModelsStats")
+  var getTrainedModelsStats_Original: ApiMethod[MlGetTrainedModelsStats, _] = js.native
+  @JSName("getTrainedModels")
+  var getTrainedModels_Original: ApiMethod[MlGetTrainedModels, _] = js.native
   @JSName("get_buckets")
   var get_buckets_Original: ApiMethod[MlGetBuckets[_], _] = js.native
   @JSName("get_calendar_events")
@@ -187,6 +199,10 @@ trait AnonCloseJob extends js.Object {
   var get_overall_buckets_Original: ApiMethod[MlGetOverallBuckets[_], _] = js.native
   @JSName("get_records")
   var get_records_Original: ApiMethod[MlGetRecords[_], _] = js.native
+  @JSName("get_trained_models")
+  var get_trained_models_Original: ApiMethod[MlGetTrainedModels, _] = js.native
+  @JSName("get_trained_models_stats")
+  var get_trained_models_stats_Original: ApiMethod[MlGetTrainedModelsStats, _] = js.native
   @JSName("info")
   var info_Original: ApiMethod[MlInfo, _] = js.native
   @JSName("openJob")
@@ -217,6 +233,8 @@ trait AnonCloseJob extends js.Object {
   var putFilter_Original: ApiMethod[MlPutFilter[_], _] = js.native
   @JSName("putJob")
   var putJob_Original: ApiMethod[MlPutJob[_], _] = js.native
+  @JSName("putTrainedModel")
+  var putTrainedModel_Original: ApiMethod[MlPutTrainedModel[_], _] = js.native
   @JSName("put_calendar")
   var put_calendar_Original: ApiMethod[MlPutCalendar[_], _] = js.native
   @JSName("put_calendar_job")
@@ -229,6 +247,8 @@ trait AnonCloseJob extends js.Object {
   var put_filter_Original: ApiMethod[MlPutFilter[_], _] = js.native
   @JSName("put_job")
   var put_job_Original: ApiMethod[MlPutJob[_], _] = js.native
+  @JSName("put_trained_model")
+  var put_trained_model_Original: ApiMethod[MlPutTrainedModel[_], _] = js.native
   @JSName("revertModelSnapshot")
   var revertModelSnapshot_Original: ApiMethod[MlRevertModelSnapshot[_], _] = js.native
   @JSName("revert_model_snapshot")
@@ -372,6 +392,14 @@ trait AnonCloseJob extends js.Object {
   def deleteModelSnapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def deleteModelSnapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def deleteTrainedModel(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def deleteTrainedModel(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def deleteTrainedModel(params: MlDeleteTrainedModel): js.Promise[ApiResponse[_, _]] = js.native
+  def deleteTrainedModel(params: MlDeleteTrainedModel, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def deleteTrainedModel(params: MlDeleteTrainedModel, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def deleteTrainedModel(params: MlDeleteTrainedModel, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def delete_calendar(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def delete_calendar(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -452,21 +480,13 @@ trait AnonCloseJob extends js.Object {
   def delete_model_snapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def delete_model_snapshot(params: MlDeleteModelSnapshot, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
-  def estimateMemoryUsage(): js.Promise[ApiResponse[_, _]] = js.native
+  def delete_trained_model(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
-  def estimateMemoryUsage(callback: callbackFn[_]): TransportRequestCallback = js.native
-  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_]): js.Promise[ApiResponse[_, _]] = js.native
-  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_], callback: callbackFn[_]): TransportRequestCallback = js.native
-  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
-  def estimateMemoryUsage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
-  // Promise API
-  def estimate_memory_usage(): js.Promise[ApiResponse[_, _]] = js.native
-  // Callback API
-  def estimate_memory_usage(callback: callbackFn[_]): TransportRequestCallback = js.native
-  def estimate_memory_usage(params: MlEstimateMemoryUsage[_]): js.Promise[ApiResponse[_, _]] = js.native
-  def estimate_memory_usage(params: MlEstimateMemoryUsage[_], callback: callbackFn[_]): TransportRequestCallback = js.native
-  def estimate_memory_usage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
-  def estimate_memory_usage(params: MlEstimateMemoryUsage[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def delete_trained_model(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def delete_trained_model(params: MlDeleteTrainedModel): js.Promise[ApiResponse[_, _]] = js.native
+  def delete_trained_model(params: MlDeleteTrainedModel, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def delete_trained_model(params: MlDeleteTrainedModel, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def delete_trained_model(params: MlDeleteTrainedModel, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def evaluateDataFrame(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -483,6 +503,22 @@ trait AnonCloseJob extends js.Object {
   def evaluate_data_frame(params: MlEvaluateDataFrame[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def evaluate_data_frame(params: MlEvaluateDataFrame[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def evaluate_data_frame(params: MlEvaluateDataFrame[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def explainDataFrameAnalytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def explainDataFrameAnalytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def explainDataFrameAnalytics(params: MlExplainDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def explainDataFrameAnalytics(params: MlExplainDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def explainDataFrameAnalytics(params: MlExplainDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def explainDataFrameAnalytics(params: MlExplainDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def explain_data_frame_analytics(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def explain_data_frame_analytics(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def explain_data_frame_analytics(params: MlExplainDataFrameAnalytics[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def explain_data_frame_analytics(params: MlExplainDataFrameAnalytics[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def explain_data_frame_analytics(params: MlExplainDataFrameAnalytics[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def explain_data_frame_analytics(params: MlExplainDataFrameAnalytics[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def findFileStructure(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -644,6 +680,22 @@ trait AnonCloseJob extends js.Object {
   def getRecords(params: MlGetRecords[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def getRecords(params: MlGetRecords[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def getTrainedModels(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getTrainedModels(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getTrainedModels(params: MlGetTrainedModels): js.Promise[ApiResponse[_, _]] = js.native
+  def getTrainedModels(params: MlGetTrainedModels, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getTrainedModels(params: MlGetTrainedModels, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getTrainedModels(params: MlGetTrainedModels, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def getTrainedModelsStats(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getTrainedModelsStats(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getTrainedModelsStats(params: MlGetTrainedModelsStats): js.Promise[ApiResponse[_, _]] = js.native
+  def getTrainedModelsStats(params: MlGetTrainedModelsStats, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getTrainedModelsStats(params: MlGetTrainedModelsStats, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getTrainedModelsStats(params: MlGetTrainedModelsStats, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def get_buckets(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def get_buckets(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -763,6 +815,22 @@ trait AnonCloseJob extends js.Object {
   def get_records(params: MlGetRecords[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def get_records(params: MlGetRecords[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def get_records(params: MlGetRecords[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def get_trained_models(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_trained_models(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_trained_models(params: MlGetTrainedModels): js.Promise[ApiResponse[_, _]] = js.native
+  def get_trained_models(params: MlGetTrainedModels, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_trained_models(params: MlGetTrainedModels, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_trained_models(params: MlGetTrainedModels, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def get_trained_models_stats(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_trained_models_stats(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_trained_models_stats(params: MlGetTrainedModelsStats): js.Promise[ApiResponse[_, _]] = js.native
+  def get_trained_models_stats(params: MlGetTrainedModelsStats, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_trained_models_stats(params: MlGetTrainedModelsStats, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_trained_models_stats(params: MlGetTrainedModelsStats, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def info(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -884,6 +952,14 @@ trait AnonCloseJob extends js.Object {
   def putJob(params: MlPutJob[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def putJob(params: MlPutJob[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def putTrainedModel(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def putTrainedModel(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def putTrainedModel(params: MlPutTrainedModel[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def putTrainedModel(params: MlPutTrainedModel[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def putTrainedModel(params: MlPutTrainedModel[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def putTrainedModel(params: MlPutTrainedModel[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def put_calendar(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def put_calendar(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -931,6 +1007,14 @@ trait AnonCloseJob extends js.Object {
   def put_job(params: MlPutJob[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def put_job(params: MlPutJob[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def put_job(params: MlPutJob[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def put_trained_model(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def put_trained_model(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def put_trained_model(params: MlPutTrainedModel[_]): js.Promise[ApiResponse[_, _]] = js.native
+  def put_trained_model(params: MlPutTrainedModel[_], callback: callbackFn[_]): TransportRequestCallback = js.native
+  def put_trained_model(params: MlPutTrainedModel[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def put_trained_model(params: MlPutTrainedModel[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
   def revertModelSnapshot(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API

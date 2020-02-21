@@ -15,6 +15,10 @@ trait CreateElasticsearchDomainRequest extends js.Object {
     */
   var AdvancedOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedOptions] = js.native
   /**
+    * Specifies advanced security options.
+    */
+  var AdvancedSecurityOptions: js.UndefOr[AdvancedSecurityOptionsInput] = js.native
+  /**
     * Options to specify the Cognito user and identity pools for Kibana authentication. For more information, see Amazon Cognito Authentication for Kibana.
     */
   var CognitoOptions: js.UndefOr[typings.awsSdk.esMod.CognitoOptions] = js.native
@@ -66,6 +70,7 @@ object CreateElasticsearchDomainRequest {
     DomainName: DomainName,
     AccessPolicies: PolicyDocument = null,
     AdvancedOptions: AdvancedOptions = null,
+    AdvancedSecurityOptions: AdvancedSecurityOptionsInput = null,
     CognitoOptions: CognitoOptions = null,
     DomainEndpointOptions: DomainEndpointOptions = null,
     EBSOptions: EBSOptions = null,
@@ -80,6 +85,7 @@ object CreateElasticsearchDomainRequest {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     if (AccessPolicies != null) __obj.updateDynamic("AccessPolicies")(AccessPolicies.asInstanceOf[js.Any])
     if (AdvancedOptions != null) __obj.updateDynamic("AdvancedOptions")(AdvancedOptions.asInstanceOf[js.Any])
+    if (AdvancedSecurityOptions != null) __obj.updateDynamic("AdvancedSecurityOptions")(AdvancedSecurityOptions.asInstanceOf[js.Any])
     if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions.asInstanceOf[js.Any])
     if (DomainEndpointOptions != null) __obj.updateDynamic("DomainEndpointOptions")(DomainEndpointOptions.asInstanceOf[js.Any])
     if (EBSOptions != null) __obj.updateDynamic("EBSOptions")(EBSOptions.asInstanceOf[js.Any])

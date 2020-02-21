@@ -1,7 +1,7 @@
 package typings.seleniumWebdriver.mod
 
 import typings.seleniumWebdriver.chromeMod.ServiceBuilder
-import typings.seleniumWebdriver.mod.logging.Preferences
+import typings.seleniumWebdriver.loggingMod.Preferences
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

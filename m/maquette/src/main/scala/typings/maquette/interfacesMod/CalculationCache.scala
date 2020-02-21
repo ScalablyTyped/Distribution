@@ -17,12 +17,12 @@ trait CalculationCache[Result] extends js.Object {
     * These objects are assumed to be immutable primitive values.
     * @param calculation - Function that takes zero arguments and returns an object (A [[VNode]] presumably) that can be cached.
     */
-  def result(inputs: js.Array[js.Object], calculation: js.Function0[Result]): Result
+  def result(inputs: js.Array[_], calculation: js.Function0[Result]): Result
 }
 
 object CalculationCache {
   @scala.inline
-  def apply[Result](invalidate: () => Unit, result: (js.Array[js.Object], js.Function0[Result]) => Result): CalculationCache[Result] = {
+  def apply[Result](invalidate: () => Unit, result: (js.Array[_], js.Function0[Result]) => Result): CalculationCache[Result] = {
     val __obj = js.Dynamic.literal(invalidate = js.Any.fromFunction0(invalidate), result = js.Any.fromFunction2(result))
   
     __obj.asInstanceOf[CalculationCache[Result]]

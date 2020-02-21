@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.panelTypesMod.IPanelProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Panel", JSImport.Namespace)
 @js.native
 object panelMod extends js.Object {
-  val Panel: StatelessComponent[IPanelProps] = js.native
+  val Panel: FunctionComponent[IPanelProps] = js.native
   @js.native
   object PanelType extends js.Object {
     /* 7 */ val custom: typings.officeUiFabricReact.panelTypesMod.PanelType.custom with Double = js.native

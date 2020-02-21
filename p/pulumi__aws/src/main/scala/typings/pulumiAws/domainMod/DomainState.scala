@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.documentsMod.PolicyDocument
 import typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig
 import typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions
+import typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions
 import typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions
 import typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest
 import typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption
@@ -37,6 +38,10 @@ trait DomainState extends js.Object {
     */
   val clusterConfig: js.UndefOr[Input[DomainClusterConfig]] = js.native
   val cognitoOptions: js.UndefOr[Input[DomainCognitoOptions]] = js.native
+  /**
+    * Domain endpoint HTTP(S) related options. See below.
+    */
+  val domainEndpointOptions: js.UndefOr[Input[DomainDomainEndpointOptions]] = js.native
   /**
     * Unique identifier for the domain.
     */
@@ -97,6 +102,7 @@ object DomainState {
     arn: Input[String] = null,
     clusterConfig: Input[DomainClusterConfig] = null,
     cognitoOptions: Input[DomainCognitoOptions] = null,
+    domainEndpointOptions: Input[DomainDomainEndpointOptions] = null,
     domainId: Input[String] = null,
     domainName: Input[String] = null,
     ebsOptions: Input[DomainEbsOptions] = null,
@@ -116,6 +122,7 @@ object DomainState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (clusterConfig != null) __obj.updateDynamic("clusterConfig")(clusterConfig.asInstanceOf[js.Any])
     if (cognitoOptions != null) __obj.updateDynamic("cognitoOptions")(cognitoOptions.asInstanceOf[js.Any])
+    if (domainEndpointOptions != null) __obj.updateDynamic("domainEndpointOptions")(domainEndpointOptions.asInstanceOf[js.Any])
     if (domainId != null) __obj.updateDynamic("domainId")(domainId.asInstanceOf[js.Any])
     if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
     if (ebsOptions != null) __obj.updateDynamic("ebsOptions")(ebsOptions.asInstanceOf[js.Any])

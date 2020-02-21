@@ -12,6 +12,10 @@ trait IDragDropEvents extends js.Object {
     */
   var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
   /**
+    * Whether drag operation is allowed on groups
+    */
+  var canDragGroups: js.UndefOr[Boolean] = js.undefined
+  /**
     * Whether or not drop action is allowed.
     */
   var canDrop: js.UndefOr[
@@ -63,6 +67,7 @@ object IDragDropEvents {
   @scala.inline
   def apply(
     canDrag: /* item */ js.UndefOr[js.Any] => Boolean = null,
+    canDragGroups: js.UndefOr[Boolean] = js.undefined,
     canDrop: (/* dropContext */ js.UndefOr[IDragDropContext], /* dragContext */ js.UndefOr[IDragDropContext]) => Boolean = null,
     onDragEnd: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit = null,
     onDragEnter: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => String = null,
@@ -72,6 +77,7 @@ object IDragDropEvents {
   ): IDragDropEvents = {
     val __obj = js.Dynamic.literal()
     if (canDrag != null) __obj.updateDynamic("canDrag")(js.Any.fromFunction1(canDrag))
+    if (!js.isUndefined(canDragGroups)) __obj.updateDynamic("canDragGroups")(canDragGroups.asInstanceOf[js.Any])
     if (canDrop != null) __obj.updateDynamic("canDrop")(js.Any.fromFunction2(canDrop))
     if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction2(onDragEnd))
     if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction2(onDragEnter))

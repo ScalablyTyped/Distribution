@@ -12,6 +12,7 @@ trait PartialUploadVideoOptions extends js.Object {
   var forDirectStory: js.UndefOr[Boolean] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var isDirect: js.UndefOr[Boolean] = js.undefined
+  var isDirectVoice: js.UndefOr[Boolean] = js.undefined
   var isIgtvVideo: js.UndefOr[Boolean] = js.undefined
   var isSidecar: js.UndefOr[Boolean] = js.undefined
   var mediaType: js.UndefOr[String] = js.undefined
@@ -31,6 +32,7 @@ object PartialUploadVideoOptions {
     forDirectStory: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
     isDirect: js.UndefOr[Boolean] = js.undefined,
+    isDirectVoice: js.UndefOr[Boolean] = js.undefined,
     isIgtvVideo: js.UndefOr[Boolean] = js.undefined,
     isSidecar: js.UndefOr[Boolean] = js.undefined,
     mediaType: String = null,
@@ -47,6 +49,7 @@ object PartialUploadVideoOptions {
     if (!js.isUndefined(forDirectStory)) __obj.updateDynamic("forDirectStory")(forDirectStory.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(isDirect)) __obj.updateDynamic("isDirect")(isDirect.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDirectVoice)) __obj.updateDynamic("isDirectVoice")(isDirectVoice.asInstanceOf[js.Any])
     if (!js.isUndefined(isIgtvVideo)) __obj.updateDynamic("isIgtvVideo")(isIgtvVideo.asInstanceOf[js.Any])
     if (!js.isUndefined(isSidecar)) __obj.updateDynamic("isSidecar")(isSidecar.asInstanceOf[js.Any])
     if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])

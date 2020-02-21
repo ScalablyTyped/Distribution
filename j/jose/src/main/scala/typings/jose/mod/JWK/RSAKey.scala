@@ -8,9 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jose", "JWK.RSAKey")
 @js.native
-class RSAKey () extends Key {
+trait RSAKey extends Key {
   var d: js.UndefOr[String] = js.native
   var dp: js.UndefOr[String] = js.native
   var dq: js.UndefOr[String] = js.native

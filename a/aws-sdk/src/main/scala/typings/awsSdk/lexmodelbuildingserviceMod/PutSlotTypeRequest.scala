@@ -27,6 +27,14 @@ trait PutSlotTypeRequest extends js.Object {
     */
   var name: SlotTypeName = js.native
   /**
+    * The built-in slot type used as the parent of the slot type. When you define a parent slot type, the new slot type has all of the same configuration as the parent. Only AMAZON.AlphaNumeric is supported.
+    */
+  var parentSlotTypeSignature: js.UndefOr[CustomOrBuiltinSlotTypeName] = js.native
+  /**
+    * Configuration information that extends the parent built-in slot type. The configuration is added to the settings for the parent slot type.
+    */
+  var slotTypeConfigurations: js.UndefOr[SlotTypeConfigurations] = js.native
+  /**
     * Determines the slot resolution strategy that Amazon Lex uses to return slot type values. The field can be set to one of the following values:    ORIGINAL_VALUE - Returns the value entered by the user, if the user value is similar to the slot value.    TOP_RESOLUTION - If there is a resolution list for the slot, return the first value in the resolution list as the slot type value. If there is no resolution list, null is returned.   If you don't specify the valueSelectionStrategy, the default is ORIGINAL_VALUE.
     */
   var valueSelectionStrategy: js.UndefOr[SlotValueSelectionStrategy] = js.native
@@ -40,6 +48,8 @@ object PutSlotTypeRequest {
     createVersion: js.UndefOr[scala.Boolean] = js.undefined,
     description: Description = null,
     enumerationValues: EnumerationValues = null,
+    parentSlotTypeSignature: CustomOrBuiltinSlotTypeName = null,
+    slotTypeConfigurations: SlotTypeConfigurations = null,
     valueSelectionStrategy: SlotValueSelectionStrategy = null
   ): PutSlotTypeRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
@@ -47,6 +57,8 @@ object PutSlotTypeRequest {
     if (!js.isUndefined(createVersion)) __obj.updateDynamic("createVersion")(createVersion.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (enumerationValues != null) __obj.updateDynamic("enumerationValues")(enumerationValues.asInstanceOf[js.Any])
+    if (parentSlotTypeSignature != null) __obj.updateDynamic("parentSlotTypeSignature")(parentSlotTypeSignature.asInstanceOf[js.Any])
+    if (slotTypeConfigurations != null) __obj.updateDynamic("slotTypeConfigurations")(slotTypeConfigurations.asInstanceOf[js.Any])
     if (valueSelectionStrategy != null) __obj.updateDynamic("valueSelectionStrategy")(valueSelectionStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSlotTypeRequest]
   }

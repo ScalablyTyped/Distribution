@@ -3,10 +3,12 @@ package typings.chrome
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Instantiable4
 import typings.chrome.chrome.cast.Volume
 import typings.chrome.chrome.cast.media.EditTracksInfoRequest
 import typings.chrome.chrome.cast.media.GenericMediaMetadata
 import typings.chrome.chrome.cast.media.GetStatusRequest
+import typings.chrome.chrome.cast.media.LiveSeekableRange
 import typings.chrome.chrome.cast.media.LoadRequest
 import typings.chrome.chrome.cast.media.Media
 import typings.chrome.chrome.cast.media.MediaInfo
@@ -41,6 +43,13 @@ trait Typeofmedia extends js.Object {
   ]
   var GenericMediaMetadata: Instantiable0[typings.chrome.chrome.cast.media.GenericMediaMetadata]
   var GetStatusRequest: Instantiable0[typings.chrome.chrome.cast.media.GetStatusRequest]
+  var LiveSeekableRange: Instantiable4[
+    js.UndefOr[/* start */ Double], 
+    js.UndefOr[/* end */ Double], 
+    js.UndefOr[/* isMovingWindow */ Boolean], 
+    js.UndefOr[/* isLiveDone */ Boolean], 
+    typings.chrome.chrome.cast.media.LiveSeekableRange
+  ]
   var LoadRequest: Instantiable1[/* mediaInfo */ MediaInfo, typings.chrome.chrome.cast.media.LoadRequest]
   var Media: Instantiable2[
     /* sessionId */ String, 
@@ -103,6 +112,13 @@ object Typeofmedia {
     ],
     GenericMediaMetadata: Instantiable0[GenericMediaMetadata],
     GetStatusRequest: Instantiable0[GetStatusRequest],
+    LiveSeekableRange: Instantiable4[
+      js.UndefOr[/* start */ Double], 
+      js.UndefOr[/* end */ Double], 
+      js.UndefOr[/* isMovingWindow */ Boolean], 
+      js.UndefOr[/* isLiveDone */ Boolean], 
+      LiveSeekableRange
+    ],
     LoadRequest: Instantiable1[/* mediaInfo */ MediaInfo, LoadRequest],
     Media: Instantiable2[/* sessionId */ String, /* mediaSessionId */ Double, Media],
     MediaInfo: Instantiable2[/* contentId */ String, /* contentType */ String, MediaInfo],
@@ -125,7 +141,7 @@ object Typeofmedia {
     VolumeRequest: Instantiable1[/* volume */ Volume, VolumeRequest],
     timeout: Typeoftimeout
   ): Typeofmedia = {
-    val __obj = js.Dynamic.literal(DEFAULT_MEDIA_RECEIVER_APP_ID = DEFAULT_MEDIA_RECEIVER_APP_ID.asInstanceOf[js.Any], EditTracksInfoRequest = EditTracksInfoRequest.asInstanceOf[js.Any], GenericMediaMetadata = GenericMediaMetadata.asInstanceOf[js.Any], GetStatusRequest = GetStatusRequest.asInstanceOf[js.Any], LoadRequest = LoadRequest.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], MediaInfo = MediaInfo.asInstanceOf[js.Any], MovieMediaMetadata = MovieMediaMetadata.asInstanceOf[js.Any], MusicTrackMediaMetadata = MusicTrackMediaMetadata.asInstanceOf[js.Any], PauseRequest = PauseRequest.asInstanceOf[js.Any], PhotoMediaMetadata = PhotoMediaMetadata.asInstanceOf[js.Any], PlayRequest = PlayRequest.asInstanceOf[js.Any], QueueInsertItemsRequest = QueueInsertItemsRequest.asInstanceOf[js.Any], QueueItem = QueueItem.asInstanceOf[js.Any], QueueLoadRequest = QueueLoadRequest.asInstanceOf[js.Any], QueueRemoveItemsRequest = QueueRemoveItemsRequest.asInstanceOf[js.Any], QueueReorderItemsRequest = QueueReorderItemsRequest.asInstanceOf[js.Any], QueueUpdateItemsRequest = QueueUpdateItemsRequest.asInstanceOf[js.Any], SeekRequest = SeekRequest.asInstanceOf[js.Any], StopRequest = StopRequest.asInstanceOf[js.Any], TextTrackStyle = TextTrackStyle.asInstanceOf[js.Any], Track = Track.asInstanceOf[js.Any], TvShowMediaMetadata = TvShowMediaMetadata.asInstanceOf[js.Any], VolumeRequest = VolumeRequest.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(DEFAULT_MEDIA_RECEIVER_APP_ID = DEFAULT_MEDIA_RECEIVER_APP_ID.asInstanceOf[js.Any], EditTracksInfoRequest = EditTracksInfoRequest.asInstanceOf[js.Any], GenericMediaMetadata = GenericMediaMetadata.asInstanceOf[js.Any], GetStatusRequest = GetStatusRequest.asInstanceOf[js.Any], LiveSeekableRange = LiveSeekableRange.asInstanceOf[js.Any], LoadRequest = LoadRequest.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], MediaInfo = MediaInfo.asInstanceOf[js.Any], MovieMediaMetadata = MovieMediaMetadata.asInstanceOf[js.Any], MusicTrackMediaMetadata = MusicTrackMediaMetadata.asInstanceOf[js.Any], PauseRequest = PauseRequest.asInstanceOf[js.Any], PhotoMediaMetadata = PhotoMediaMetadata.asInstanceOf[js.Any], PlayRequest = PlayRequest.asInstanceOf[js.Any], QueueInsertItemsRequest = QueueInsertItemsRequest.asInstanceOf[js.Any], QueueItem = QueueItem.asInstanceOf[js.Any], QueueLoadRequest = QueueLoadRequest.asInstanceOf[js.Any], QueueRemoveItemsRequest = QueueRemoveItemsRequest.asInstanceOf[js.Any], QueueReorderItemsRequest = QueueReorderItemsRequest.asInstanceOf[js.Any], QueueUpdateItemsRequest = QueueUpdateItemsRequest.asInstanceOf[js.Any], SeekRequest = SeekRequest.asInstanceOf[js.Any], StopRequest = StopRequest.asInstanceOf[js.Any], TextTrackStyle = TextTrackStyle.asInstanceOf[js.Any], Track = Track.asInstanceOf[js.Any], TvShowMediaMetadata = TvShowMediaMetadata.asInstanceOf[js.Any], VolumeRequest = VolumeRequest.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Typeofmedia]
   }

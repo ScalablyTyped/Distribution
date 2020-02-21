@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImportComponentRequest extends js.Object {
   /**
-    *  The change description of the component. Describes what change has been made in this version. In other words what makes this version different from other versions of this component. 
+    *  The change description of the component. Describes what change has been made in this version, or what makes this version different from other versions of this component. 
     */
   var changeDescription: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -15,15 +15,15 @@ trait ImportComponentRequest extends js.Object {
     */
   var clientToken: ClientToken = js.native
   /**
-    *  The data of the component. 
+    * The data of the component. Used to specify the data inline. Either data or uri can be used to specify the data within the component.
     */
   var data: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The description of the component. Describes the contents of the component. 
+    * The description of the component. Describes the contents of the component. 
     */
   var description: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The format of the resource that you wish to import as a component. 
+    *  The format of the resource that you want to import as a component. 
     */
   var format: ComponentFormat = js.native
   /**
@@ -39,7 +39,7 @@ trait ImportComponentRequest extends js.Object {
     */
   var platform: Platform = js.native
   /**
-    *  The semantic version of the component. This version to follow the semantic version syntax. i.e. major.minor.patch. This could be versioned like software 2.0.1 or date like 2019.12.01. 
+    * The semantic version of the component. This version follows the semantic version syntax. For example, major.minor.patch. This could be versioned like software (2.0.1) or like a date (2019.12.01).
     */
   var semanticVersion: VersionNumber = js.native
   /**
@@ -47,11 +47,11 @@ trait ImportComponentRequest extends js.Object {
     */
   var tags: js.UndefOr[TagMap] = js.native
   /**
-    *  The type of the component denotes whether the component is used to build the image or only to test it. 
+    * The type of the component denotes whether the component is used to build the image or only to test it. 
     */
   var `type`: ComponentType = js.native
   /**
-    *  The uri of the component. 
+    * The uri of the component. Must be an S3 URL and the requester must have permission to access the S3 bucket. If you use S3, you can specify component content up to your service quota. Either data or uri can be used to specify the data within the component. 
     */
   var uri: js.UndefOr[Uri] = js.native
 }

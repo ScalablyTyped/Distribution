@@ -5,7 +5,6 @@ import typings.parse.AnonForceSecure
 import typings.parse.AnonName
 import typings.parse.AnonSize
 import typings.parse.AnonUri
-import typings.parse.mod._Global_.Parse.Schema._TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,7 +39,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("Parse.File")
 @js.native
-class File protected () extends _TYPE {
+class File protected () extends js.Object {
   def this(name: String, data: js.Array[Double]) = this()
   def this(name: String, data: AnonBase64) = this()
   def this(name: String, data: AnonSize) = this()

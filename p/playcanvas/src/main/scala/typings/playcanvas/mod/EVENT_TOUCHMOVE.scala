@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_TOUCHMOVE
   * @description Name of event fired when a touch moves.
   */

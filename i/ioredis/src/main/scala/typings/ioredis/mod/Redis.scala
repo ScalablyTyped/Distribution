@@ -1,6 +1,5 @@
 package typings.ioredis.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ioredis.AnonFalse
 import typings.ioredis.ioredisStrings.AFTER
 import typings.ioredis.ioredisStrings.BEFORE
@@ -27,6 +26,7 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import typings.std.Map
 import typings.std.PromiseConstructor
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -150,11 +150,8 @@ trait Redis
   ): Unit = js.native
   def hgetBuffer(key: KeyType, field: String): js.Promise[Buffer] = js.native
   def hgetBuffer(key: KeyType, field: String, callback: js.Function2[/* err */ Error, /* res */ Buffer, Unit]): Unit = js.native
-  def hgetall(key: KeyType): js.Promise[StringDictionary[String | Double]] = js.native
-  def hgetall(
-    key: KeyType,
-    callback: js.Function2[/* err */ Error, /* res */ StringDictionary[String | Double], Unit]
-  ): Unit = js.native
+  def hgetall(key: KeyType): js.Promise[Record[String, String]] = js.native
+  def hgetall(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Record[String, String], Unit]): Unit = js.native
   def hincrby(key: KeyType, field: String, increment: Double): js.Promise[Double] = js.native
   def hincrby(
     key: KeyType,

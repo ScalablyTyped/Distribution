@@ -15,13 +15,15 @@ object mod extends js.Object {
   def createMaterialBottomTabNavigator(
     routes: NavigationRouteConfigMap[
       NavigationMaterialBottomTabOptions, 
-      NavigationTabProp[NavigationRoute[NavigationParams], _]
+      NavigationTabProp[NavigationRoute[NavigationParams], _], 
+      _
     ]
   ): js.Any = js.native
   def createMaterialBottomTabNavigator(
     routes: NavigationRouteConfigMap[
       NavigationMaterialBottomTabOptions, 
-      NavigationTabProp[NavigationRoute[NavigationParams], _]
+      NavigationTabProp[NavigationRoute[NavigationParams], _], 
+      _
     ],
     config: CreateNavigatorConfigNavigationMaterialBottomTabCo
   ): js.Any = js.native

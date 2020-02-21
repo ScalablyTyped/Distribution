@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.ELEMENTTYPE_TEXT
   * @description A {@link pc.ElementComponent} that displays text.
   */

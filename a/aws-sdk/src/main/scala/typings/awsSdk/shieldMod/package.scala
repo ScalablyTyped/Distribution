@@ -39,6 +39,9 @@ package object shieldMod {
   type DurationInSeconds = scala.Double
   type EmailAddress = java.lang.String
   type EmergencyContactList = js.Array[typings.awsSdk.shieldMod.EmergencyContact]
+  type HealthCheckArn = java.lang.String
+  type HealthCheckId = java.lang.String
+  type HealthCheckIds = js.Array[typings.awsSdk.shieldMod.HealthCheckId]
   type Integer = scala.Double
   type Limits = js.Array[typings.awsSdk.shieldMod.Limit]
   type LogBucket = java.lang.String

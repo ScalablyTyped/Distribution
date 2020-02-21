@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "resq" : "1.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "resq" : "1.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

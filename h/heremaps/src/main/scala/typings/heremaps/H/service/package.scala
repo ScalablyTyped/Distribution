@@ -15,5 +15,4 @@ package object service {
     * This type encapsulates URL parameters to be sent to a HERE platform service.
     */
   type ServiceParameters = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type TrafficIncidentsService = typings.heremaps.H.service.TrafficIncidentsService_
 }

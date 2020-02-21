@@ -70,6 +70,7 @@ import typings.reactNative.reactNativeStrings.never
 import typings.reactNative.reactNativeStrings.newPassword
 import typings.reactNative.reactNativeStrings.nickname
 import typings.reactNative.reactNativeStrings.no
+import typings.reactNative.reactNativeStrings.noExcludeDescendants
 import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.off
 import typings.reactNative.reactNativeStrings.oneTimeCode
@@ -90,6 +91,7 @@ import typings.reactNative.reactNativeStrings.top
 import typings.reactNative.reactNativeStrings.username
 import typings.reactNative.reactNativeStrings.words
 import typings.reactNative.reactNativeStrings.yes
+import typings.reactNative.reactNativeStrings.yesExcludeDescendants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -135,6 +137,7 @@ object TextInputProps {
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
+    importantForAutofill: auto | no | noExcludeDescendants | yes | yesExcludeDescendants = null,
     inlineImageLeft: String = null,
     inlineImagePadding: Int | Double = null,
     inputAccessoryViewID: String = null,
@@ -178,9 +181,11 @@ object TextInputProps {
     onTouchEndCapture: /* event */ GestureResponderEvent => Unit = null,
     onTouchMove: /* event */ GestureResponderEvent => Unit = null,
     onTouchStart: /* event */ GestureResponderEvent => Unit = null,
+    passwordRules: String = null,
     placeholder: String = null,
     placeholderTextColor: String = null,
     pointerEvents: `box-none` | none | `box-only` | auto = null,
+    rejectResponderTermination: js.UndefOr[Boolean] = js.undefined,
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     returnKeyLabel: String = null,
@@ -240,6 +245,7 @@ object TextInputProps {
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (importantForAutofill != null) __obj.updateDynamic("importantForAutofill")(importantForAutofill.asInstanceOf[js.Any])
     if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft.asInstanceOf[js.Any])
     if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
     if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID.asInstanceOf[js.Any])
@@ -283,9 +289,11 @@ object TextInputProps {
     if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
+    if (passwordRules != null) __obj.updateDynamic("passwordRules")(passwordRules.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (placeholderTextColor != null) __obj.updateDynamic("placeholderTextColor")(placeholderTextColor.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectResponderTermination)) __obj.updateDynamic("rejectResponderTermination")(rejectResponderTermination.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
     if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel.asInstanceOf[js.Any])

@@ -11,7 +11,7 @@ trait ListConfigurationsRequest extends js.Object {
     */
   var configurationType: ConfigurationItemType = js.native
   /**
-    * You can filter the request using various logical operators and a key-value format. For example:   {"key": "serverType", "value": "webServer"}  For a complete list of filter options and guidance about using them with this action, see Querying Discovered Configuration Items. 
+    * You can filter the request using various logical operators and a key-value format. For example:   {"key": "serverType", "value": "webServer"}  For a complete list of filter options and guidance about using them with this action, see Using the ListConfigurations Action in the AWS Application Discovery Service User Guide.
     */
   var filters: js.UndefOr[Filters] = js.native
   /**
@@ -23,7 +23,7 @@ trait ListConfigurationsRequest extends js.Object {
     */
   var nextToken: js.UndefOr[NextToken] = js.native
   /**
-    * Certain filter criteria return output that can be sorted in ascending or descending order. For a list of output characteristics for each filter, see Using the ListConfigurations Action.
+    * Certain filter criteria return output that can be sorted in ascending or descending order. For a list of output characteristics for each filter, see Using the ListConfigurations Action in the AWS Application Discovery Service User Guide.
     */
   var orderBy: js.UndefOr[OrderByList] = js.native
 }

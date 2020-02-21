@@ -19,6 +19,10 @@ trait ElasticsearchDomainStatus extends js.Object {
     */
   var AdvancedOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedOptions] = js.native
   /**
+    * The current status of the Elasticsearch domain's advanced security options.
+    */
+  var AdvancedSecurityOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedSecurityOptions] = js.native
+  /**
     * The CognitoOptions for the specified domain. For more information, see Amazon Cognito Authentication for Kibana.
     */
   var CognitoOptions: js.UndefOr[typings.awsSdk.esMod.CognitoOptions] = js.native
@@ -102,6 +106,7 @@ object ElasticsearchDomainStatus {
     ElasticsearchClusterConfig: ElasticsearchClusterConfig,
     AccessPolicies: PolicyDocument = null,
     AdvancedOptions: AdvancedOptions = null,
+    AdvancedSecurityOptions: AdvancedSecurityOptions = null,
     CognitoOptions: CognitoOptions = null,
     Created: js.UndefOr[scala.Boolean] = js.undefined,
     Deleted: js.UndefOr[scala.Boolean] = js.undefined,
@@ -122,6 +127,7 @@ object ElasticsearchDomainStatus {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], DomainId = DomainId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], ElasticsearchClusterConfig = ElasticsearchClusterConfig.asInstanceOf[js.Any])
     if (AccessPolicies != null) __obj.updateDynamic("AccessPolicies")(AccessPolicies.asInstanceOf[js.Any])
     if (AdvancedOptions != null) __obj.updateDynamic("AdvancedOptions")(AdvancedOptions.asInstanceOf[js.Any])
+    if (AdvancedSecurityOptions != null) __obj.updateDynamic("AdvancedSecurityOptions")(AdvancedSecurityOptions.asInstanceOf[js.Any])
     if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions.asInstanceOf[js.Any])
     if (!js.isUndefined(Created)) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
     if (!js.isUndefined(Deleted)) __obj.updateDynamic("Deleted")(Deleted.asInstanceOf[js.Any])

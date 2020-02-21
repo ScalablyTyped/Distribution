@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.FILLMODE_NONE
   * @description When resizing the window the size of the canvas will not change.
   */

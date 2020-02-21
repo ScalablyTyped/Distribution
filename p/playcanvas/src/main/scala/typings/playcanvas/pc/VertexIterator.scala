@@ -5,19 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.VertexIterator
   * @classdesc A vertex iterator simplifies the process of writing vertex data to a vertex buffer.
   * @description Returns a new pc.VertexIterator object.
-  * @param {pc.VertexBuffer} vertexBuffer The vertex buffer to be iterated.
-  * @property {Object} element The vertex buffer elements
+  * @param {pc.VertexBuffer} vertexBuffer - The vertex buffer to be iterated.
+  * @property {object} element The vertex buffer elements.
   */
 @JSGlobal("pc.VertexIterator")
 @js.native
 class VertexIterator protected () extends js.Object {
   def this(vertexBuffer: VertexBuffer) = this()
   /**
-    * The vertex buffer elements
+    * The vertex buffer elements.
     */
   var element: js.Any = js.native
   /**
@@ -42,7 +42,7 @@ class VertexIterator protected () extends js.Object {
     * @function
     * @name pc.VertexIterator#next
     * @description Moves the vertex iterator on to the next vertex.
-    * @param {Number} [count] Optional number of steps to move on when calling next, defaults to 1.
+    * @param {number} [count] - Optional number of steps to move on when calling next, defaults to 1.
     * @example
     * var iterator = new pc.VertexIterator(vertexBuffer);
     * iterator.element[pc.SEMANTIC_POSTIION].set(-0.9, -0.9, 0.0);

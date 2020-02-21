@@ -17,16 +17,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /** the default input target when reading from `inputStream`. Default: `0`. */
   var defaultInputTarget: js.UndefOr[Double] = js.undefined
+  /** a Readable stream to read the input from, eg `process.stdin` */
   var inputStream: js.UndefOr[ReadableStream] = js.undefined
+  /** an array of exiting conditions that will cause a process to kill others. Can contain any of success or failure. */
   var killOthers: js.UndefOr[js.Array[success | failure]] = js.undefined
+  /**  a Writable stream to write logs to. Default: `process.stdout` */
   var outputStream: js.UndefOr[WritableStream] = js.undefined
+  /**
+    * the prefix type to use when logging processes output.
+    */
   var prefix: js.UndefOr[index | pid | time | command | name | none | String] = js.undefined
+  /** how many characters to show when prefixing with `command`. Default: `10` */
   var prefixLength: js.UndefOr[Double] = js.undefined
+  /** whether raw mode should be used, meaning strictly process output will be logged, without any prefixes, colouring or extra stuff. */
   var raw: js.UndefOr[Boolean] = js.undefined
+  /** how many milliseconds to wait between process restarts. Default: 0 */
   var restartDelay: js.UndefOr[Double] = js.undefined
+  /** how many attempts to restart a process that dies will be made. Default: `0` */
   var restartTries: js.UndefOr[Double] = js.undefined
+  /** the condition to consider the run was successful. */
   var successCondition: js.UndefOr[first | last] = js.undefined
+  /** a date-fns format to use when prefixing with time. Default: `yyyy-MM-dd HH:mm:ss.ZZZ` */
   var timestampFormat: js.UndefOr[String] = js.undefined
 }
 

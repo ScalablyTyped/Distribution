@@ -5,6 +5,7 @@ import typings.elliptic.AnonX
 import typings.elliptic.ellipticStrings.array
 import typings.elliptic.ellipticStrings.hex
 import typings.elliptic.mod.BNInput
+import typings.elliptic.mod.SignatureInput
 import typings.elliptic.mod.curve.base.BasePoint
 import typings.node.Buffer
 import scala.scalajs.js
@@ -35,9 +36,7 @@ class KeyPair protected () extends js.Object {
   def sign(msg: BNInput, enc: String, options: SignOptions): Signature = js.native
   def sign(msg: BNInput, options: SignOptions): Signature = js.native
   def validate(): AnonReason = js.native
-  def verify(msg: BNInput, signature: String): Boolean = js.native
-  def verify(msg: BNInput, signature: Signature): Boolean = js.native
-  def verify(msg: BNInput, signature: SignatureOptions): Boolean = js.native
+  def verify(msg: BNInput, signature: SignatureInput): Boolean = js.native
 }
 
 /* static members */

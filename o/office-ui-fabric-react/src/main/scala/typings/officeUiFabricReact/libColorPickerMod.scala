@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.colorPickerTypesMod.IColorPickerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ object libColorPickerMod extends js.Object {
     def this(props: IColorPickerProps) = this()
   }
   
-  val ColorPicker: StatelessComponent[IColorPickerProps] = js.native
+  val ColorPicker: FunctionComponent[IColorPickerProps] = js.native
   /* static members */
   @js.native
   object ColorPickerBase extends js.Object {

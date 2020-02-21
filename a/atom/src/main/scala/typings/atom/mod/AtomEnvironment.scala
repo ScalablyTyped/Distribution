@@ -7,6 +7,7 @@ import typings.atom.AnonHeight
 import typings.atom.AnonX
 import typings.atom.atomStrings.beta
 import typings.atom.atomStrings.dev
+import typings.atom.atomStrings.nightly
 import typings.atom.atomStrings.stable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -114,9 +115,9 @@ trait AtomEnvironment extends js.Object {
   def getPosition(): AnonX = js.native
   /**
     *  Gets the release channel of the Atom application.
-    *  Returns the release channel, which can be 'dev', 'beta', or 'stable'.
+    *  Returns the release channel, which can be 'dev', 'nightly', 'beta', or 'stable'.
     */
-  def getReleaseChannel(): dev | beta | stable = js.native
+  def getReleaseChannel(): dev | nightly | beta | stable = js.native
   /** Get the size of current window. */
   def getSize(): AnonHeight = js.native
   /** Get the version of the Atom application. */

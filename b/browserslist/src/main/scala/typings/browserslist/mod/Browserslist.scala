@@ -12,7 +12,8 @@ trait Browserslist extends js.Object {
   def apply(queries: js.Array[String]): js.Array[String] = js.native
   def apply(queries: js.Array[String], opts: Options): js.Array[String] = js.native
   def clearCaches(): Unit = js.native
+  /** Return browsers market coverage */
   def coverage(browsers: js.Array[String]): Double = js.native
-  def coverage(browsers: js.Array[String], stats: Stats): Double = js.native
+  def coverage(browsers: js.Array[String], stats: StatsOptions): Double = js.native
 }
 

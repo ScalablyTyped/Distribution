@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.SPRITETYPE_ANIMATED
   * @description A {@link pc.SpriteComponent} that renders sprite animations.
   */

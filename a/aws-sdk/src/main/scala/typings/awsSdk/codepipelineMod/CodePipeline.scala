@@ -143,12 +143,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Returns information about a job. Used for custom actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
+    * Returns information about a job. Used for custom actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getJobDetails(): Request[GetJobDetailsOutput, AWSError] = js.native
   def getJobDetails(callback: js.Function2[/* err */ AWSError, /* data */ GetJobDetailsOutput, Unit]): Request[GetJobDetailsOutput, AWSError] = js.native
   /**
-    * Returns information about a job. Used for custom actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
+    * Returns information about a job. Used for custom actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getJobDetails(params: GetJobDetailsInput): Request[GetJobDetailsOutput, AWSError] = js.native
   def getJobDetails(
@@ -195,12 +195,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetPipelineStateOutput, Unit]
   ): Request[GetPipelineStateOutput, AWSError] = js.native
   /**
-    * Requests the details of a job for a third party action. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
+    * Requests the details of a job for a third party action. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getThirdPartyJobDetails(): Request[GetThirdPartyJobDetailsOutput, AWSError] = js.native
   def getThirdPartyJobDetails(callback: js.Function2[/* err */ AWSError, /* data */ GetThirdPartyJobDetailsOutput, Unit]): Request[GetThirdPartyJobDetailsOutput, AWSError] = js.native
   /**
-    * Requests the details of a job for a third party action. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
+    * Requests the details of a job for a third party action. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def getThirdPartyJobDetails(params: GetThirdPartyJobDetailsInput): Request[GetThirdPartyJobDetailsOutput, AWSError] = js.native
   def getThirdPartyJobDetails(
@@ -286,12 +286,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListWebhooksOutput, Unit]
   ): Request[ListWebhooksOutput, AWSError] = js.native
   /**
-    * Returns information about any jobs for AWS CodePipeline to act on. PollForJobs is valid only for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
+    * Returns information about any jobs for AWS CodePipeline to act on. PollForJobs is valid only for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def pollForJobs(): Request[PollForJobsOutput, AWSError] = js.native
   def pollForJobs(callback: js.Function2[/* err */ AWSError, /* data */ PollForJobsOutput, Unit]): Request[PollForJobsOutput, AWSError] = js.native
   /**
-    * Returns information about any jobs for AWS CodePipeline to act on. PollForJobs is valid only for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
+    * Returns information about any jobs for AWS CodePipeline to act on. PollForJobs is valid only for action types with "Custom" in the owner field. If the action type contains "AWS" or "ThirdParty" in the owner field, the PollForJobs action returns an error.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. This API also returns any secret values defined for the action. 
     */
   def pollForJobs(params: PollForJobsInput): Request[PollForJobsOutput, AWSError] = js.native
   def pollForJobs(
@@ -299,12 +299,12 @@ trait CodePipeline extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PollForJobsOutput, Unit]
   ): Request[PollForJobsOutput, AWSError] = js.native
   /**
-    * Determines whether there are any third party jobs for a job worker to act on. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
+    * Determines whether there are any third party jobs for a job worker to act on. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. 
     */
   def pollForThirdPartyJobs(): Request[PollForThirdPartyJobsOutput, AWSError] = js.native
   def pollForThirdPartyJobs(callback: js.Function2[/* err */ AWSError, /* data */ PollForThirdPartyJobsOutput, Unit]): Request[PollForThirdPartyJobsOutput, AWSError] = js.native
   /**
-    * Determines whether there are any third party jobs for a job worker to act on. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if the action requires access to that Amazon S3 bucket for input or output artifacts. 
+    * Determines whether there are any third party jobs for a job worker to act on. Used for partner actions only.  When this API is called, AWS CodePipeline returns temporary credentials for the S3 bucket used to store artifacts for the pipeline, if the action requires access to that S3 bucket for input or output artifacts. 
     */
   def pollForThirdPartyJobs(params: PollForThirdPartyJobsInput): Request[PollForThirdPartyJobsOutput, AWSError] = js.native
   def pollForThirdPartyJobs(
@@ -441,6 +441,19 @@ trait CodePipeline extends Service {
     params: StartPipelineExecutionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StartPipelineExecutionOutput, Unit]
   ): Request[StartPipelineExecutionOutput, AWSError] = js.native
+  /**
+    * Stops the specified pipeline execution. You choose to either stop the pipeline execution by completing in-progress actions without starting subsequent actions, or by abandoning in-progress actions. While completing or abandoning in-progress actions, the pipeline execution is in a Stopping state. After all in-progress actions are completed or abandoned, the pipeline execution is in a Stopped state.
+    */
+  def stopPipelineExecution(): Request[StopPipelineExecutionOutput, AWSError] = js.native
+  def stopPipelineExecution(callback: js.Function2[/* err */ AWSError, /* data */ StopPipelineExecutionOutput, Unit]): Request[StopPipelineExecutionOutput, AWSError] = js.native
+  /**
+    * Stops the specified pipeline execution. You choose to either stop the pipeline execution by completing in-progress actions without starting subsequent actions, or by abandoning in-progress actions. While completing or abandoning in-progress actions, the pipeline execution is in a Stopping state. After all in-progress actions are completed or abandoned, the pipeline execution is in a Stopped state.
+    */
+  def stopPipelineExecution(params: StopPipelineExecutionInput): Request[StopPipelineExecutionOutput, AWSError] = js.native
+  def stopPipelineExecution(
+    params: StopPipelineExecutionInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopPipelineExecutionOutput, Unit]
+  ): Request[StopPipelineExecutionOutput, AWSError] = js.native
   /**
     * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource. 
     */

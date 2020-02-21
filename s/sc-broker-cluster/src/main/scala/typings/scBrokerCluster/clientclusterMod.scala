@@ -1,6 +1,7 @@
 package typings.scBrokerCluster
 
 import typings.node.eventsMod.EventEmitter
+import typings.scBroker.mod.SCBrokerClient
 import typings.scBrokerCluster.mod.mapperFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,9 +12,7 @@ import scala.scalajs.js.annotation._
 object clientclusterMod extends js.Object {
   @js.native
   class ClientCluster protected () extends EventEmitter {
-    def this(clients: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCBrokerClient */ _
-          ]) = this()
+    def this(clients: js.Array[SCBrokerClient]) = this()
     def getMapper(): mapperFunction = js.native
     def setMapper(mapper: mapperFunction): Unit = js.native
   }

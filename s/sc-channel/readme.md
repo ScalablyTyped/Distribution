@@ -1,7 +1,7 @@
 
 # Scala.js typings for sc-channel
 
-Typings are for version 1.2
+Typings are for version 2.0
 
 ## Library description:
 Channel object for SocketCluster

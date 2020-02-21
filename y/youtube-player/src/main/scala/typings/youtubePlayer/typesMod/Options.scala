@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var events: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]: (event : std.CustomEvent<any>): void}
+  {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]:? (event : std.CustomEvent<any>): void}
     */ typings.youtubePlayer.youtubePlayerStrings.Options with js.Any
   ] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
@@ -21,7 +21,7 @@ object Options {
   @scala.inline
   def apply(
     events: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]: (event : std.CustomEvent<any>): void}
+  {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]:? (event : std.CustomEvent<any>): void}
     */ typings.youtubePlayer.youtubePlayerStrings.Options with js.Any = null,
     height: Int | Double = null,
     playerVars: Anon0 = null,

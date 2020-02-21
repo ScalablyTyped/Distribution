@@ -7,19 +7,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Registry_ extends js.Object {
+  def bookId(): String
+  def free(id: String): Unit
   def get(id: String): js.UndefOr[Actor[_, AnyEventObject]]
-  def lookup(actor: Actor[_, AnyEventObject]): js.UndefOr[String]
-  def register(actor: Actor[_, AnyEventObject]): String
+  def register(id: String, actor: Actor[_, AnyEventObject]): String
 }
 
 object Registry_ {
   @scala.inline
   def apply(
+    bookId: () => String,
+    free: String => Unit,
     get: String => js.UndefOr[Actor[_, AnyEventObject]],
-    lookup: Actor[_, AnyEventObject] => js.UndefOr[String],
-    register: Actor[_, AnyEventObject] => String
+    register: (String, Actor[_, AnyEventObject]) => String
   ): Registry_ = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), lookup = js.Any.fromFunction1(lookup), register = js.Any.fromFunction1(register))
+    val __obj = js.Dynamic.literal(bookId = js.Any.fromFunction0(bookId), free = js.Any.fromFunction1(free), get = js.Any.fromFunction1(get), register = js.Any.fromFunction2(register))
   
     __obj.asInstanceOf[Registry_]
   }

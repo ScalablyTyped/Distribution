@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.Mesh
   * @classdesc A graphical primitive. The mesh is defined by a {@link pc.VertexBuffer} and an optional
   * {@link pc.IndexBuffer}. It also contains a primitive definition which controls the type of the
@@ -16,21 +16,21 @@ import scala.scalajs.js.annotation._
   * be empty. The first index buffer in the array is used by {@link pc.MeshInstance}s with a renderStyle
   * property set to pc.RENDERSTYLE_SOLID. The second index buffer in the array is used if renderStyle is
   * set to pc.RENDERSTYLE_WIREFRAME.
-  * @property {Object[]} primitive Array of primitive objects defining how vertex (and index) data in the
-  * mesh should be interpreted by the graphics device. For details on the primitive object, see
-  * @property {Number} primitive[].type The type of primitive to render. Can be:
-  * <ul>
-  *     <li>{@link pc.PRIMITIVE_POINTS}</li>
-  *     <li>{@link pc.PRIMITIVE_LINES}</li>
-  *     <li>{@link pc.PRIMITIVE_LINELOOP}</li>
-  *     <li>{@link pc.PRIMITIVE_LINESTRIP}</li>
-  *     <li>{@link pc.PRIMITIVE_TRIANGLES}</li>
-  *     <li>{@link pc.PRIMITIVE_TRISTRIP}</li>
-  *     <li>{@link pc.PRIMITIVE_TRIFAN}</li>
-  * </ul>
-  * @property {Number} primitive[].base The offset of the first index or vertex to dispatch in the draw call.
-  * @property {Number} primitive[].count The number of indices or vertices to dispatch in the draw call.
-  * @property {Boolean} [primitive[].indexed] True to interpret the primitive as indexed, thereby using the currently set index buffer and false otherwise.
+  * @property {object[]} primitive Array of primitive objects defining how vertex (and index) data in the
+  * mesh should be interpreted by the graphics device. For details on the primitive object, see.
+  * @property {number} primitive[].type The type of primitive to render. Can be:
+  *
+  * * {@link pc.PRIMITIVE_POINTS}
+  * * {@link pc.PRIMITIVE_LINES}
+  * * {@link pc.PRIMITIVE_LINELOOP}
+  * * {@link pc.PRIMITIVE_LINESTRIP}
+  * * {@link pc.PRIMITIVE_TRIANGLES}
+  * * {@link pc.PRIMITIVE_TRISTRIP}
+  * * {@link pc.PRIMITIVE_TRIFAN}
+  *
+  * @property {number} primitive[].base The offset of the first index or vertex to dispatch in the draw call.
+  * @property {number} primitive[].count The number of indices or vertices to dispatch in the draw call.
+  * @property {boolean} [primitive[].indexed] True to interpret the primitive as indexed, thereby using the currently set index buffer and false otherwise.
   * {@link pc.GraphicsDevice#draw}. The primitive is ordered based on render style like the indexBuffer property.
   * @property {pc.BoundingBox} aabb The axis-aligned bounding box for the object space vertices of this mesh.
   */
@@ -50,7 +50,7 @@ class Mesh () extends js.Object {
   var indexBuffer: js.Array[IndexBuffer] = js.native
   /**
     * Array of primitive objects defining how vertex (and index) data in the
-    * mesh should be interpreted by the graphics device. For details on the primitive object, see
+    * mesh should be interpreted by the graphics device. For details on the primitive object, see.
     */
   var primitive: js.Array[js.Object] = js.native
   /**

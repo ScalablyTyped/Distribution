@@ -10,8 +10,8 @@ trait ChartTitle extends js.Object {
   var border: js.UndefOr[ChartTitleBorder] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartTitleMargin] = js.undefined
-  var padding: js.UndefOr[ChartTitlePadding] = js.undefined
+  var margin: js.UndefOr[Double | ChartTitleMargin] = js.undefined
+  var padding: js.UndefOr[Double | ChartTitlePadding] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -25,8 +25,8 @@ object ChartTitle {
     border: ChartTitleBorder = null,
     color: String = null,
     font: String = null,
-    margin: ChartTitleMargin = null,
-    padding: ChartTitlePadding = null,
+    margin: Double | ChartTitleMargin = null,
+    padding: Double | ChartTitlePadding = null,
     position: String = null,
     text: String = null,
     visible: js.UndefOr[Boolean] = js.undefined

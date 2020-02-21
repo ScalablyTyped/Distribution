@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.LAYERID_IMMEDIATE
+  * @type {number}
   * @description The immediate layer.
   */
 @JSImport("playcanvas", "LAYERID_IMMEDIATE")

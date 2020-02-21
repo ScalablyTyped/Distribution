@@ -11,24 +11,38 @@ trait GridStack extends js.Object {
     *
     * Widget will be always placed even if result height is more than actual grid height.
     * You need to use willItFit method before calling addWidget for additional check.
-    * See also makeWidget.
+    * See also `makeWidget()`.
+    *
+    * @example
+    * $('.grid-stack').gridstack();
+    * var grid = $('.grid-stack').data('gridstack');
+    * grid.addWidget(el, {width: 3, autoPosition: true});
+    *
+    * @param el widget to add
+    * @param options widget position/size options (optional)
+    */
+  def addWidget(el: GridStackElement): JQuery = js.native
+  def addWidget(el: GridStackElement, options: GridstackWidget): JQuery = js.native
+  /**
+    * Creates new widget and returns it. 
+    * Legacy: Spelled out version of the widgets options, recommend use new version instead.
     *
     * @example
     * $('.grid-stack').gridstack();
     * var grid = $('.grid-stack').data('gridstack');
     * grid.addWidget(el, 0, 0, 3, 2, true);
     *
-    * @param {GridStackElement} el widget to add
-    * @param {number} x widget position x (optional)
-    * @param {number} y widget position y (optional)
-    * @param {number} width  widget dimension width (optional)
-    * @param {number} height widget dimension height (optional)
-    * @param {boolean} autoPosition if true then x, y parameters will be ignored and widget will be places on the first available position (optional)
-    * @param {number} minWidth minimum width allowed during resize/creation (optional)
-    * @param {number} maxWidth maximum width allowed during resize/creation (optional)
-    * @param {number} minHeight minimum height allowed during resize/creation (optional)
-    * @param {number} maxHeight maximum height allowed during resize/creation (optional)
-    * @param {number | string} id value for `data-gs-id` (optional)
+    * @param el widget to add
+    * @param x widget position x (optional)
+    * @param y widget position y (optional)
+    * @param width  widget dimension width (optional)
+    * @param height widget dimension height (optional)
+    * @param autoPosition if true then x, y parameters will be ignored and widget will be places on the first available position (optional)
+    * @param minWidth minimum width allowed during resize/creation (optional)
+    * @param maxWidth maximum width allowed during resize/creation (optional)
+    * @param minHeight minimum height allowed during resize/creation (optional)
+    * @param maxHeight maximum height allowed during resize/creation (optional)
+    * @param id value for `data-gs-id` (optional)
     */
   def addWidget(
     el: GridStackElement,
@@ -58,8 +72,8 @@ trait GridStack extends js.Object {
     * This method rebuilds an internal CSS style sheet.
     * Note: You can expect performance issues if call this method too often.
     *
-    * @param {number | string} val the cell height
-    * @param {boolean} noUpdate (Optional) if true, styles will not be updated
+    * @param val the cell height
+    * @param noUpdate (Optional) if true, styles will not be updated
     *
     * @example
     * grid.cellHeight(grid.cellWidth() * 1.2);
@@ -75,8 +89,12 @@ trait GridStack extends js.Object {
     */
   def commit(): Unit = js.native
   /**
+    * relayout grid items to reclaim any empty space
+    */
+  def compact(): Unit = js.native
+  /**
     * Destroys a grid instance.
-    * @param {boolean} detachGrid if false nodes and grid will not be removed from the DOM (Optional. Default true).
+    * @param detachGrid if false nodes and grid will not be removed from the DOM (Optional. Default true).
     */
   def destroy(): Unit = js.native
   def destroy(detachGrid: Boolean): Unit = js.native
@@ -100,15 +118,15 @@ trait GridStack extends js.Object {
     * @example
     * grid.movable(this.container.children('.' + this.opts.itemClass), doEnable);
     *
-    * @param {boolean} doEnable
-    * @param {boolean} includeNewWidgets will force new widgets to be draggable as per
+    * @param doEnable
+    * @param includeNewWidgets will force new widgets to be draggable as per
     * doEnable`s value by changing the disableDrag grid option.
     */
   def enableMove(doEnable: Boolean, includeNewWidgets: Boolean): Unit = js.native
   /**
     * Enables/disables widget resizing
-    * @param {boolean} doEnable
-    * @param {boolean} includeNewWidgets will force new widgets to be draggable as per
+    * @param doEnable
+    * @param includeNewWidgets will force new widgets to be draggable as per
     * doEnable`s value by changing the disableResize grid option.
     *
     * This is a shortcut for:
@@ -117,10 +135,19 @@ trait GridStack extends js.Object {
     */
   def enableResize(doEnable: Boolean, includeNewWidgets: Boolean): Unit = js.native
   /**
+    * get the current float mode
+    */
+  def float(): Boolean = js.native
+  /**
+    * enable/disable floating widgets (default: `false`) See [example](http://gridstackjs.com/demo/float.html)
+    * @param mode 
+    */
+  def float(mode: Boolean): Unit = js.native
+  /**
     * Get the position of the cell under a pixel on screen.
-    * @param {MousePosition} position the position of the pixel to resolve in
+    * @param position the position of the pixel to resolve in
     * absolute coordinates, as an object with top and left properties
-    * @param {boolean} useOffset if true, value will be based on offset vs position (Optional. Default false).
+    * @param useOffset if true, value will be based on offset vs position (Optional. Default false).
     * Useful when grid is within `position: relative` element
     *
     * Returns an object with properties `x` and `y` i.e. the column and row in the grid.
@@ -129,119 +156,122 @@ trait GridStack extends js.Object {
   def getCellFromPixel(position: MousePosition, useOffset: Boolean): CellPosition = js.native
   /**
     * Checks if specified area is empty.
-    * @param {number} x the position x.
-    * @param {number} y the position y.
-    * @param {number} width the width of to check
-    * @param {number} height the height of to check
+    * @param x the position x.
+    * @param y the position y.
+    * @param width the width of to check
+    * @param height the height of to check
     */
   def isAreaEmpty(x: Double, y: Double, width: Double, height: Double): Unit = js.native
   /**
     * Locks/unlocks widget.
-    * @param {GridStackElement} el widget to modify.
-    * @param {boolean} val if true widget will be locked.
+    * @param el widget to modify.
+    * @param val if true widget will be locked.
     */
   def locked(el: GridStackElement, `val`: Boolean): Unit = js.native
   /**
     * If you add elements to your gridstack container by hand, you have to tell gridstack afterwards to make them widgets.
     * If you want gridstack to add the elements for you, use addWidget instead.
     * Makes the given element a widget and returns it.
-    * @param {GridStackElement} el widget to convert.
+    * @param el widget to convert.
     *
     * @example
     * $('.grid-stack').gridstack();
     * $('.grid-stack').append('<div id="gsi-1" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="2"
-    *                     data-gs-auto-position="1"></div>')
+    *                     data-gs-auto-position="true"></div>')
     * var grid = $('.grid-stack').data('gridstack');
     * grid.makeWidget('gsi-1');
     */
   def makeWidget(el: GridStackElement): JQuery = js.native
   /**
     * Set the maxHeight for a widget.
-    * @param {GridStackElement} el widget to modify.
-    * @param {number} val A numeric value of the number of rows
+    * @param el widget to modify.
+    * @param val A numeric value of the number of rows
     */
   def maxHeight(el: GridStackElement, `val`: Double): Unit = js.native
   /**
     * Set the maxWidth for a widget.
-    * @param {GridStackElement} el widget to modify.
-    * @param {number} val A numeric value of the number of columns
+    * @param el widget to modify.
+    * @param val A numeric value of the number of columns
     */
   def maxWidth(el: GridStackElement, `val`: Double): Unit = js.native
   /**
     * Set the minHeight for a widget.
-    * @param {GridStackElement} el widget to modify.
-    * @param {number} val A numeric value of the number of rows
+    * @param el widget to modify.
+    * @param val A numeric value of the number of rows
     */
   def minHeight(el: GridStackElement, `val`: Double): Unit = js.native
   /**
     * Set the minWidth for a widget.
-    * @param {GridStackElement} el widget to modify.
-    * @param {number} val A numeric value of the number of columns
+    * @param el widget to modify.
+    * @param val A numeric value of the number of columns
     */
   def minWidth(el: GridStackElement, `val`: Double): Unit = js.native
   /**
     * Enables/Disables moving.
-    * @param {GridStackElement} el widget to modify.
-    * @param {number} val if true widget will be draggable.
+    * @param el widget to modify.
+    * @param val if true widget will be draggable.
     */
   def movable(el: GridStackElement, `val`: Boolean): Unit = js.native
   /**
     * Changes widget position
-    * @param {GridStackElement} el  widget to modify
-    * @param {number} x new position x. If value is null or undefined it will be ignored.
-    * @param {number} y new position y. If value is null or undefined it will be ignored.
+    * @param el  widget to modify
+    * @param x new position x. If value is null or undefined it will be ignored.
+    * @param y new position y. If value is null or undefined it will be ignored.
     */
   def move(el: GridStackElement, x: Double, y: Double): Unit = js.native
   /**
     * Removes all widgets from the grid.
-    * @param {boolean} detachNode if false DOM nodes won't be removed from the tree (Default? true).
+    * @param detachNode if false DOM nodes won't be removed from the tree (Default? true).
     */
   def removeAll(): Unit = js.native
   def removeAll(detachNode: Boolean): Unit = js.native
   /**
     * Removes widget from the grid.
-    * @param {GridStackElement} el  widget to modify
-    * @param {boolean} detachNode if false DOM node won't be removed from the tree (Default? true).
+    * @param el  widget to modify
+    * @param detachNode if false DOM node won't be removed from the tree (Default? true).
     */
   def removeWidget(el: GridStackElement): Unit = js.native
   def removeWidget(el: GridStackElement, detachNode: Boolean): Unit = js.native
   /**
     * Enables/Disables resizing.
-    * @param {GridStackElement} el  widget to modify
-    * @param {boolean} val  if true widget will be resizable.
+    * @param el  widget to modify
+    * @param val  if true widget will be resizable.
     */
   def resizable(el: GridStackElement, `val`: Boolean): Unit = js.native
   /**
     * Changes widget size
-    * @param {GridStackElement} el  widget to modify
-    * @param {number} width new dimensions width. If value is null or undefined it will be ignored.
-    * @param {number} height  new dimensions height. If value is null or undefined it will be ignored.
+    * @param el  widget to modify
+    * @param width new dimensions width. If value is null or undefined it will be ignored.
+    * @param height  new dimensions height. If value is null or undefined it will be ignored.
     */
   def resize(el: GridStackElement, width: Double, height: Double): Unit = js.native
   /**
     * Toggle the grid animation state.  Toggles the `grid-stack-animate` class.
-    * @param {boolean} doAnimate if true the grid will animate.
+    * @param doAnimate if true the grid will animate.
     */
   def setAnimation(doAnimate: Boolean): Unit = js.native
   /**
-    * (Experimental) Modify number of columns in the grid. Will attempt to update existing widgets
-    * to conform to new number of columns. Requires `gridstack-extra.css` or `gridstack-extra.min.css`.
-    * @param {number} gridWidth - Integer between 1 and 12.
-    * @param {boolean} doNotPropagate if true existing widgets will not be updated.
+    * Modify number of columns in the grid. Will update existing widgets to conform to new number of columns,
+    * as well as cache the original layout so you can revert back to previous positions without loss.
+    * Requires `gridstack-extra.css` or `gridstack-extra.min.css` for [1-11],
+    * else you will need to generate correct CSS (see https://github.com/gridstack/gridstack.js#change-grid-columns)
+    * @param column - Integer > 0 (default 12).
+    * @param doNotPropagate if true existing widgets will not be updated (optional) 
     */
-  def setGridWidth(gridWidth: Double, doNotPropagate: Boolean): Unit = js.native
+  def setColumn(column: Double): Unit = js.native
+  def setColumn(column: Double, doNotPropagate: Boolean): Unit = js.native
   /**
     * Toggle the grid static state. Also toggle the grid-stack-static class.
-    * @param {boolean} staticValue if true the grid become static.
+    * @param staticValue if true the grid become static.
     */
   def setStatic(staticValue: Boolean): Unit = js.native
   /**
     * Updates widget position/size.
-    * @param {GridStackElement} el widget to modify
-    * @param {number} x new position x. If value is null or undefined it will be ignored.
-    * @param {number} y new position y. If value is null or undefined it will be ignored.
-    * @param {number} width new dimensions width. If value is null or undefined it will be ignored.
-    * @param {number} height  new dimensions height. If value is null or undefined it will be ignored.
+    * @param el widget to modify
+    * @param x new position x. If value is null or undefined it will be ignored.
+    * @param y new position y. If value is null or undefined it will be ignored.
+    * @param width new dimensions width. If value is null or undefined it will be ignored.
+    * @param height  new dimensions height. If value is null or undefined it will be ignored.
     */
   def update(el: GridStackElement, x: Double, y: Double, width: Double, height: Double): Unit = js.native
   /**
@@ -253,19 +283,19 @@ trait GridStack extends js.Object {
   /**
     * Updates the vertical margin - see `GridstackOptions.verticalMargin` for format options.
     *
-    * @param {number | string} value new vertical margin value
-    * @param {boolean} noUpdate (optional) if true, styles will not be updated
+    * @param value new vertical margin value
+    * @param noUpdate (optional) if true, styles will not be updated
     */
   def verticalMargin(value: Double): Unit = js.native
   def verticalMargin(value: Double, noUpdate: Boolean): Unit = js.native
   /**
     * Returns true if the height of the grid will be less the vertical
     * constraint. Always returns true if grid doesn't have height constraint.
-    * @param {number} x new position x. If value is null or undefined it will be ignored.
-    * @param {number} y new position y. If value is null or undefined it will be ignored.
-    * @param {number} width new dimensions width. If value is null or undefined it will be ignored.
-    * @param {number} height new dimensions height. If value is null or undefined it will be ignored.
-    * @param {boolean} autoPosition if true then x, y parameters will be ignored and widget
+    * @param x new position x. If value is null or undefined it will be ignored.
+    * @param y new position y. If value is null or undefined it will be ignored.
+    * @param width new dimensions width. If value is null or undefined it will be ignored.
+    * @param height new dimensions height. If value is null or undefined it will be ignored.
+    * @param autoPosition if true then x, y parameters will be ignored and widget
     * will be places on the first available position
     *
     * @example

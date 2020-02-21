@@ -11,9 +11,9 @@ package object typesMod {
     - typings.xstate.typesMod.ActionFunction[TContext, TEvent]
     - typings.xstate.typesMod.AssignAction[typings.std.Required[TContext], TEvent]
     - typings.xstate.typesMod.SendAction[TContext, TEvent]
-    - typings.xstate.typesMod.RaiseAction[TEvent]
+    - typings.xstate.typesMod.RaiseAction[typings.xstate.typesMod.AnyEventObject]
   */
-  type Action[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.typesMod._Action[TContext, TEvent]) | (typings.xstate.typesMod.AssignAction[typings.std.Required[TContext], TEvent]) | typings.xstate.typesMod.ActionType | (typings.xstate.typesMod.ActionFunction[TContext, TEvent])
+  type Action[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.typesMod._Action[TContext, TEvent]) | (typings.xstate.typesMod.AssignAction[typings.std.Required[TContext], TEvent]) | typings.xstate.typesMod.RaiseAction[typings.xstate.typesMod.AnyEventObject] | typings.xstate.typesMod.ActionType | (typings.xstate.typesMod.ActionFunction[TContext, TEvent])
   type ActionFunction[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function3[
     /* context */ TContext, 
     /* event */ TEvent, 
@@ -84,9 +84,9 @@ package object typesMod {
     js.Any
   ]
   type InvokeConfig[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = (typings.xstate.AnonAutoForwardData[TContext, TEvent]) | (typings.xstate.typesMod.StateMachine[js.Any, js.Any, js.Any, js.Any])
-  type InvokeCreator[TContext, TFinalContext] = js.Function2[
+  type InvokeCreator[TContext, TEvent, TFinalContext] = js.Function2[
     /* context */ TContext, 
-    /* event */ typings.xstate.typesMod.AnyEventObject, 
+    /* event */ TEvent, 
     js.Thenable[TFinalContext] | (typings.xstate.typesMod.StateMachine[TFinalContext, js.Any, js.Any, js.Any]) | typings.xstate.typesMod.Subscribable[js.Any] | typings.xstate.typesMod.InvokeCallback
   ]
   type LogExpr[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.xstate.typesMod.ExprWithMeta[TContext, TEvent, js.Any]
@@ -103,7 +103,7 @@ package object typesMod {
   type Receiver[TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function1[/* listener */ js.Function1[/* event */ TEvent, scala.Unit], scala.Unit]
   type SendExpr[TContext, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.xstate.typesMod.ExprWithMeta[TContext, TEvent, TEvent]
   type Sender[TEvent /* <: typings.xstate.typesMod.EventObject */] = js.Function1[/* event */ typings.xstate.typesMod.Event[TEvent], scala.Unit]
-  type ServiceConfig[TContext] = java.lang.String | (typings.xstate.typesMod.StateMachine[js.Any, js.Any, js.Any, js.Any]) | (typings.xstate.typesMod.InvokeCreator[TContext, js.Any])
+  type ServiceConfig[TContext] = java.lang.String | (typings.xstate.typesMod.StateMachine[js.Any, js.Any, js.Any, js.Any]) | (typings.xstate.typesMod.InvokeCreator[TContext, typings.xstate.typesMod.AnyEventObject, js.Any])
   type SingleOrArray[T] = js.Array[T] | T
   type Spawnable = (typings.xstate.typesMod.StateMachine[js.Any, js.Any, js.Any, js.Any]) | js.Promise[js.Any] | typings.xstate.typesMod.InvokeCallback | typings.xstate.typesMod.Subscribable[js.Any]
   type StandardMachineConfig[TContext, TStateSchema /* <: typings.xstate.typesMod.StateSchema[_] */, TEvent /* <: typings.xstate.typesMod.EventObject */] = typings.xstate.typesMod.StateNodeConfig[TContext, TStateSchema, TEvent]

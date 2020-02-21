@@ -11,11 +11,11 @@ trait ChangedBlock extends js.Object {
     */
   var BlockIndex: js.UndefOr[typings.awsSdk.ebsMod.BlockIndex] = js.native
   /**
-    * The block token for the block index of the first snapshot ID specified in the list changed blocks operation. This value is absent if the first snapshot does not have the changed block that is on the second snapshot.
+    * The block token for the block index of the FirstSnapshotId specified in the ListChangedBlocks operation. This value is absent if the first snapshot does not have the changed block that is on the second snapshot.
     */
   var FirstBlockToken: js.UndefOr[BlockToken] = js.native
   /**
-    * The block token for the block index of the second snapshot ID specified in the list changed blocks operation.
+    * The block token for the block index of the SecondSnapshotId specified in the ListChangedBlocks operation.
     */
   var SecondBlockToken: js.UndefOr[BlockToken] = js.native
 }

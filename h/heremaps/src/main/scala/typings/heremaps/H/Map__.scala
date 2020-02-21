@@ -9,7 +9,7 @@ import typings.heremaps.H.map.Group
 import typings.heremaps.H.map.Imprint
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.map.ViewModel
-import typings.heremaps.H.map.ViewModel.CameraData
+import typings.heremaps.H.map.ViewModel.ILookAtData
 import typings.heremaps.H.map.ViewPort
 import typings.heremaps.H.map.layer.BaseTileLayer
 import typings.heremaps.H.map.layer.Layer
@@ -98,12 +98,6 @@ class Map__ protected () extends EventTarget {
     */
   def getBaseLayer(): Layer = js.native
   /**
-    * Calculates the best CameraModel to show the provided bounding rectangle
-    * @param rect {H.geo.Rect} - The geographical bounding rectangle to use
-    * @returns {H.map.ViewModel.CameraData} - The result, represented by the properties zoom (number) and position (geo.Point)
-    */
-  def getCameraDataForBounds(rect: Rect): CameraData = js.native
-  /**
     * This method returns currently rendered center of the map.
     * @returns {H.geo.Point}
     */
@@ -132,9 +126,10 @@ class Map__ protected () extends EventTarget {
     * Returns the top most z-ordered map object found under the specific screen coordinates. Coordinates are viewport pixel coordinates starting from top left corner as (0, 0) point.
     * @param x {number} - map viewport x-axis pixel coordinate
     * @param y {number} - map viewport y-axis pixel coordinate
+    * @param callback {function}
     * @returns {?H.map.Object} - the encountered top most map object or null if no object found
     */
-  def getObjectAt(x: Double, y: Double): Object = js.native
+  def getObjectAt(x: Double, y: Double, callback: js.Function1[/* obj */ Object, _]): Object = js.native
   /**
     * This method retrieves the list of all objects which have been added to the map.
     * @returns {Array<H.map.Object>} - the list of all use objects which are currently on the map.
@@ -147,11 +142,6 @@ class Map__ protected () extends EventTarget {
     * @returns {Array<!H.map.Object>}
     */
   def getObjectsAt(x: Double, y: Double): js.Array[Object] = js.native
-  /**
-    * This method returns bounding rect for the current map view. Returned bounding rect defines entire currently viewable area on the screen.
-    * @returns {H.geo.Rect}
-    */
-  def getViewBounds(): Rect = js.native
   /**
     * This method returns current view model. View model can be used to modify the current view or camera. H.map.ViewModel
     * @returns {H.map.ViewModel}
@@ -188,19 +178,19 @@ class Map__ protected () extends EventTarget {
   def removeObjects(mapObjects: js.Array[Object]): Map_ = js.native
   def removeObjects(mapObjects: Group): Map_ = js.native
   /**
-    * Returns the camera data according to the given screen coordinates. Method converts screen pixel coordinates to correct camera data object
-    * @param x {number} - map viewport x-axis pixel coordinate
-    * @param y {number} - map viewport y-axis pixel coordinate
-    * @returns {H.map.ViewModel.CameraData}
-    */
-  def screenToCameraData(x: Double, y: Double): CameraData = js.native
-  /**
     * Returns the geographical coordinates according to the given screen coordinates.
     * @param x {number} - map viewport x-axis pixel coordinate
     * @param y {number} - map viewport y-axis pixel coordinate
     * @returns {?H.geo.Point}
     */
   def screenToGeo(x: Double, y: Double): typings.heremaps.H.geo.Point = js.native
+  /**
+    * Returns the camera data according to the given screen coordinates. Method converts screen pixel coordinates to correct camera data object
+    * @param x {number} - map viewport x-axis pixel coordinate
+    * @param y {number} - map viewport y-axis pixel coordinate
+    * @returns {H.map.ViewModel.ILookAtData}
+    */
+  def screenToLookAtData(x: Double, y: Double): ILookAtData = js.native
   /**
     * This method will set provided layer as base map. The layer will be inserted as the bottom most layer in the map.
     * @param layer {H.map.layer.Layer} - The layer to use as base map
@@ -221,14 +211,6 @@ class Map__ protected () extends EventTarget {
     * @returns {H.Map} - the map itself
     */
   def setEngineType(`type`: EngineType): Map_ = js.native
-  /**
-    * This method sets the bounding rect to be displayed by the map. Maps display the bounding rect in a way that it fits entirely in the current viewport.
-    * @param boundingRect {H.geo.Rect} - view bound which should be shown on map
-    * @param opt_animate {boolean=} - parameter indicates if animated transition should be applied, default is false
-    * @returns {H.Map} - the instance itself
-    */
-  def setViewBounds(boundingRect: Rect): Map_ = js.native
-  def setViewBounds(boundingRect: Rect, opt_animate: Boolean): Map_ = js.native
   /**
     * This method sets the zoom level on the map. Every zoom level represents different scale i.e map at zoom level 2 is twice as large as the map at zoom level 1.
     * @param zoom {number} - requested zoom level

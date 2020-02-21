@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__accept
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 HTTP Accept-* headers parsing

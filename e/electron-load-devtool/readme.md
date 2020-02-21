@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-load-devtool
 
-Typings are for version 1.0
+Typings are for version 1.2
 
 ## Library description:
 Easily load dev-tool for electron

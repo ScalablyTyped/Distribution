@@ -9,6 +9,7 @@ import typings.xstate.typesMod.ActionObject
 import typings.xstate.typesMod.ActionType
 import typings.xstate.typesMod.ActivityActionObject
 import typings.xstate.typesMod.ActivityDefinition
+import typings.xstate.typesMod.AnyEventObject
 import typings.xstate.typesMod.AssignAction
 import typings.xstate.typesMod.Assigner
 import typings.xstate.typesMod.CancelAction
@@ -17,6 +18,7 @@ import typings.xstate.typesMod.DoneEvent
 import typings.xstate.typesMod.DoneEventObject
 import typings.xstate.typesMod.ErrorPlatformEvent
 import typings.xstate.typesMod.EventObject
+import typings.xstate.typesMod.ExprWithMeta
 import typings.xstate.typesMod.LogAction
 import typings.xstate.typesMod.LogActionObject
 import typings.xstate.typesMod.LogExpr
@@ -52,8 +54,13 @@ object actionsMod extends js.Object {
   def doneInvoke(id: String, data: js.Any): DoneEvent = js.native
   def error(id: String): ErrorPlatformEvent with String = js.native
   def error(id: String, data: js.Any): ErrorPlatformEvent with String = js.native
-  def escalate[TContext, TEvent /* <: EventObject */](errorData: js.Any): SendAction[TContext, TEvent] = js.native
-  def escalate[TContext, TEvent /* <: EventObject */](errorData: js.Any, options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent] = js.native
+  def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData): SendAction[TContext, TEvent] = js.native
+  def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData, options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent] = js.native
+  def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: ExprWithMeta[TContext, TEvent, TErrorData]): SendAction[TContext, TEvent] = js.native
+  def escalate[TContext, TEvent /* <: EventObject */, TErrorData](
+    errorData: ExprWithMeta[TContext, TEvent, TErrorData],
+    options: SendActionOptions[TContext, TEvent]
+  ): SendAction[TContext, TEvent] = js.native
   @JSName("forwardTo")
   def forwardTo_to[TContext, TEvent /* <: EventObject */](
     target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any
@@ -137,9 +144,9 @@ object actionsMod extends js.Object {
     action: AssignAction[Required[TContext], TEvent],
     actionFunctionMap: Record[String, (ActionFunction[TContext, TEvent]) | (ActionObject[TContext, TEvent])]
   ): js.Array[ActionObject[TContext, TEvent]] = js.native
-  def toActionObjects[TContext, TEvent /* <: EventObject */](action: RaiseAction[TEvent]): js.Array[ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: EventObject */](action: RaiseAction[AnyEventObject]): js.Array[ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: EventObject */](
-    action: RaiseAction[TEvent],
+    action: RaiseAction[AnyEventObject],
     actionFunctionMap: Record[String, (ActionFunction[TContext, TEvent]) | (ActionObject[TContext, TEvent])]
   ): js.Array[ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: EventObject */](action: SendAction[TContext, TEvent]): js.Array[ActionObject[TContext, TEvent]] = js.native

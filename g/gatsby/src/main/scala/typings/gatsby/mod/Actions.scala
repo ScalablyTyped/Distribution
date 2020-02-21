@@ -1,8 +1,8 @@
 package typings.gatsby.mod
 
+import typings.gatsby.AnonArgs
 import typings.gatsby.AnonChild
 import typings.gatsby.AnonComponent
-import typings.gatsby.AnonComponentContext
 import typings.gatsby.AnonFieldName
 import typings.gatsby.AnonForce
 import typings.gatsby.AnonId
@@ -10,6 +10,7 @@ import typings.gatsby.AnonNameOptions
 import typings.gatsby.AnonNode
 import typings.gatsby.AnonNodeIdString
 import typings.gatsby.AnonSchema
+import typings.graphql.definitionMod.GraphQLOutputType
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +28,9 @@ trait Actions extends js.Object {
   /** @see https://www.gatsbyjs.org/docs/actions/#createJob */
   def createJob(job: (Record[String, _]) with AnonId): Unit = js.native
   def createJob(job: (Record[String, _]) with AnonId, plugin: ActionPlugin): Unit = js.native
+  /** @see https://www.gatsbyjs.org/docs/actions/#createJobV2 */
+  def createJobV2(job: AnonArgs): js.Promise[_] = js.native
+  def createJobV2(job: AnonArgs, plugin: ActionPlugin): js.Promise[_] = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createNode */
   def createNode(node: NodeInput): Unit = js.native
   def createNode(node: NodeInput, plugin: ActionPlugin): Unit = js.native
@@ -36,9 +40,9 @@ trait Actions extends js.Object {
   def createNodeField(args: AnonFieldName, plugin: ActionPlugin): Unit = js.native
   def createNodeField(args: AnonFieldName, plugin: ActionPlugin, options: ActionOptions): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createPage */
-  def createPage[TContext](args: AnonComponentContext[TContext]): Unit = js.native
-  def createPage[TContext](args: AnonComponentContext[TContext], plugin: ActionPlugin): Unit = js.native
-  def createPage[TContext](args: AnonComponentContext[TContext], plugin: ActionPlugin, option: ActionOptions): Unit = js.native
+  def createPage[TContext](args: Page[TContext]): Unit = js.native
+  def createPage[TContext](args: Page[TContext], plugin: ActionPlugin): Unit = js.native
+  def createPage[TContext](args: Page[TContext], plugin: ActionPlugin, option: ActionOptions): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#createParentChildLink */
   def createParentChildLink(args: AnonChild): Unit = js.native
   def createParentChildLink(args: AnonChild, plugin: ActionPlugin): Unit = js.native
@@ -49,12 +53,19 @@ trait Actions extends js.Object {
   def createTypes(types: String): Unit = js.native
   def createTypes(types: String, plugin: ActionPlugin): Unit = js.native
   def createTypes(types: String, plugin: ActionPlugin, traceId: String): Unit = js.native
-  def createTypes(types: js.Array[String | js.Object]): Unit = js.native
-  def createTypes(types: js.Array[String | js.Object], plugin: ActionPlugin): Unit = js.native
-  def createTypes(types: js.Array[String | js.Object], plugin: ActionPlugin, traceId: String): Unit = js.native
-  def createTypes(types: js.Object): Unit = js.native
-  def createTypes(types: js.Object, plugin: ActionPlugin): Unit = js.native
-  def createTypes(types: js.Object, plugin: ActionPlugin, traceId: String): Unit = js.native
+  def createTypes(types: js.Array[GatsbyGraphQLType | GraphQLOutputType | String]): Unit = js.native
+  def createTypes(types: js.Array[GatsbyGraphQLType | GraphQLOutputType | String], plugin: ActionPlugin): Unit = js.native
+  def createTypes(
+    types: js.Array[GatsbyGraphQLType | GraphQLOutputType | String],
+    plugin: ActionPlugin,
+    traceId: String
+  ): Unit = js.native
+  def createTypes(types: GatsbyGraphQLType): Unit = js.native
+  def createTypes(types: GatsbyGraphQLType, plugin: ActionPlugin): Unit = js.native
+  def createTypes(types: GatsbyGraphQLType, plugin: ActionPlugin, traceId: String): Unit = js.native
+  def createTypes(types: GraphQLOutputType): Unit = js.native
+  def createTypes(types: GraphQLOutputType, plugin: ActionPlugin): Unit = js.native
+  def createTypes(types: GraphQLOutputType, plugin: ActionPlugin, traceId: String): Unit = js.native
   /** @see https://www.gatsbyjs.org/docs/actions/#deletePage */
   def deleteNode(options: AnonNode): Unit = js.native
   def deleteNode(options: AnonNode, plugin: ActionPlugin): Unit = js.native

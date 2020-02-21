@@ -13,12 +13,12 @@ import typings.react.mod.CompositionEvent
 import typings.react.mod.DragEvent
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
+import typings.react.mod.FunctionComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -85,7 +85,7 @@ trait ILinkProps extends ILinkHTMLAttributes[HTMLAnchorElement | HTMLButtonEleme
     * A component that should be used as the root element of the link returned from the Link component.
     */
   var as: js.UndefOr[
-    String | (ComponentClass[js.Object, ComponentState]) | StatelessComponent[js.Object]
+    String | (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object]
   ] = js.undefined
   /**
     * Optional callback to access the ILink interface. Use this instead of ref for accessing
@@ -159,7 +159,7 @@ object ILinkProps {
     `aria-valuemin`: Int | Double = null,
     `aria-valuenow`: Int | Double = null,
     `aria-valuetext`: String = null,
-    as: String | (ComponentClass[js.Object, ComponentState]) | StatelessComponent[js.Object] = null,
+    as: String | (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] = null,
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,

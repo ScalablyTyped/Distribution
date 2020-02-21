@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SpotFleetTagSpecification extends js.Object {
   /**
-    * The type of resource. Currently, the only resource type that is supported is instance.
+    * The type of resource. Currently, the only resource types that are supported are spot-fleet-request and instance.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.ec2Mod.ResourceType] = js.native
   /**

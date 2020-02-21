@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StackInstance extends js.Object {
   /**
-    * The name of the AWS account that the stack instance is associated with.
+    * [Self-managed permissions] The name of the AWS account that the stack instance is associated with.
     */
   var Account: js.UndefOr[typings.awsSdk.cloudformationMod.Account] = js.native
   /**
@@ -18,6 +18,10 @@ trait StackInstance extends js.Object {
     * Most recent time when CloudFormation performed a drift detection operation on the stack instance. This value will be NULL for any stack instance on which drift detection has not yet been performed.
     */
   var LastDriftCheckTimestamp: js.UndefOr[Timestamp] = js.native
+  /**
+    * [Service-managed permissions] The organization root ID or organizational unit (OU) ID that the stack instance is associated with.
+    */
+  var OrganizationalUnitId: js.UndefOr[typings.awsSdk.cloudformationMod.OrganizationalUnitId] = js.native
   /**
     * A list of parameters from the stack set template whose values have been overridden in this stack instance.
     */
@@ -50,6 +54,7 @@ object StackInstance {
     Account: Account = null,
     DriftStatus: StackDriftStatus = null,
     LastDriftCheckTimestamp: Timestamp = null,
+    OrganizationalUnitId: OrganizationalUnitId = null,
     ParameterOverrides: Parameters = null,
     Region: Region = null,
     StackId: StackId = null,
@@ -61,6 +66,7 @@ object StackInstance {
     if (Account != null) __obj.updateDynamic("Account")(Account.asInstanceOf[js.Any])
     if (DriftStatus != null) __obj.updateDynamic("DriftStatus")(DriftStatus.asInstanceOf[js.Any])
     if (LastDriftCheckTimestamp != null) __obj.updateDynamic("LastDriftCheckTimestamp")(LastDriftCheckTimestamp.asInstanceOf[js.Any])
+    if (OrganizationalUnitId != null) __obj.updateDynamic("OrganizationalUnitId")(OrganizationalUnitId.asInstanceOf[js.Any])
     if (ParameterOverrides != null) __obj.updateDynamic("ParameterOverrides")(ParameterOverrides.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])

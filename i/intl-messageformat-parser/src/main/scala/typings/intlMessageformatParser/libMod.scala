@@ -13,6 +13,7 @@ import typings.intlMessageformatParser.typesMod.NumberElement
 import typings.intlMessageformatParser.typesMod.NumberSkeleton
 import typings.intlMessageformatParser.typesMod.NumberSkeletonToken
 import typings.intlMessageformatParser.typesMod.Options
+import typings.intlMessageformatParser.typesMod.Skeleton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,11 +37,12 @@ object libMod extends js.Object {
   def isDateElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateElement */ Boolean = js.native
   def isDateTimeSkeleton(): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateTimeSkeleton */ Boolean = js.native
   def isDateTimeSkeleton(el: DateTimeSkeleton | String): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateTimeSkeleton */ Boolean = js.native
+  def isDateTimeSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateTimeSkeleton */ Boolean = js.native
   def isLiteralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.LiteralElement */ Boolean = js.native
   def isNumberElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberElement */ Boolean = js.native
   def isNumberSkeleton(): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
-  def isNumberSkeleton(el: String): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
-  def isNumberSkeleton(el: NumberSkeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
+  def isNumberSkeleton(el: String | NumberSkeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
+  def isNumberSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
   def isPluralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.PluralElement */ Boolean = js.native
   def isPoundElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.PoundElement */ Boolean = js.native
   def isSelectElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.SelectElement */ Boolean = js.native

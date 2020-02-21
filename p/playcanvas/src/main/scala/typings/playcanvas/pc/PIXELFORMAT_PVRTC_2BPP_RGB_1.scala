@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PIXELFORMAT_PVRTC_2BPP_RGB_1
+  * @type {number}
   * @description PVRTC (2BPP RGB) compressed format.
   */
 @JSGlobal("pc.PIXELFORMAT_PVRTC_2BPP_RGB_1")

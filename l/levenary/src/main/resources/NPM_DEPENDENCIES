@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "levenary" : "1.1.0"
+      "levenary" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "levenary" : "1.1.0"
+      "levenary" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

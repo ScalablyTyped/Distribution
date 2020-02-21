@@ -36,6 +36,7 @@ object Options {
     httpAgent: Agent | Boolean = null,
     httpsAgent: Agent | Boolean = null,
     localAddress: String = null,
+    maxHeaderSize: Int | Double = null,
     method: String = null,
     path: String = null,
     pathname: String = null,
@@ -62,6 +63,7 @@ object Options {
     if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
     if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (maxHeaderSize != null) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])

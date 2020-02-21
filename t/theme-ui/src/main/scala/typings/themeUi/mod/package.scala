@@ -8,7 +8,6 @@ package object mod {
   type ObjectOrArray[T] = js.Array[T] | (org.scalablytyped.runtime.StringDictionary[
     T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias theme-ui.theme-ui.ObjectOrArray<T> */ js.Object)
   ])
-  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
   type SxComponent[T /* <: typings.themeUi.mod.SxProps */] = typings.react.mod.ComponentClass[T with typings.themeUi.AnonAs, typings.react.mod.ComponentState]
   type SxStyleProp = typings.styledSystemCss.mod.SystemStyleObject
 }

@@ -16,36 +16,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GridProps
-  extends GridGapProps[TLengthStyledSystem]
-     with GridColumnGapProps[TLengthStyledSystem]
-     with GridRowGapProps[TLengthStyledSystem]
-     with GridColumnProps
-     with GridRowProps
-     with GridAutoFlowProps
-     with GridAutoColumnsProps[TLengthStyledSystem]
-     with GridAutoRowsProps[TLengthStyledSystem]
-     with GridTemplateColumnsProps[TLengthStyledSystem]
-     with GridTemplateRowsProps[TLengthStyledSystem]
-     with GridTemplateAreasProps
-     with GridAreaProps
+trait GridProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
+  extends GridGapProps[ThemeType, GridGapProperty[TLengthStyledSystem]]
+     with GridColumnGapProps[ThemeType, GridColumnGapProperty[TLengthStyledSystem]]
+     with GridRowGapProps[ThemeType, GridRowGapProperty[TLengthStyledSystem]]
+     with GridColumnProps[ThemeType]
+     with GridRowProps[ThemeType]
+     with GridAutoFlowProps[ThemeType]
+     with GridAutoColumnsProps[ThemeType, GridAutoColumnsProperty[TLengthStyledSystem]]
+     with GridAutoRowsProps[ThemeType, GridAutoRowsProperty[TLengthStyledSystem]]
+     with GridTemplateColumnsProps[ThemeType, GridTemplateColumnsProperty[TLengthStyledSystem]]
+     with GridTemplateRowsProps[ThemeType, GridTemplateRowsProperty[TLengthStyledSystem]]
+     with GridTemplateAreasProps[ThemeType]
+     with GridAreaProps[ThemeType]
 
 object GridProps {
   @scala.inline
-  def apply(
-    gridArea: ResponsiveValue[GridAreaProperty] = null,
-    gridAutoColumns: ResponsiveValue[GridAutoColumnsProperty[TLengthStyledSystem]] = null,
-    gridAutoFlow: ResponsiveValue[GridAutoFlowProperty] = null,
-    gridAutoRows: ResponsiveValue[GridAutoRowsProperty[TLengthStyledSystem]] = null,
-    gridColumn: ResponsiveValue[GridColumnProperty] = null,
-    gridColumnGap: ResponsiveValue[GridColumnGapProperty[TLengthStyledSystem]] = null,
-    gridGap: ResponsiveValue[GridGapProperty[TLengthStyledSystem]] = null,
-    gridRow: ResponsiveValue[GridRowProperty] = null,
-    gridRowGap: ResponsiveValue[GridRowGapProperty[TLengthStyledSystem]] = null,
-    gridTemplateAreas: ResponsiveValue[GridTemplateAreasProperty] = null,
-    gridTemplateColumns: ResponsiveValue[GridTemplateColumnsProperty[TLengthStyledSystem]] = null,
-    gridTemplateRows: ResponsiveValue[GridTemplateRowsProperty[TLengthStyledSystem]] = null
-  ): GridProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
+    gridArea: ResponsiveValue[GridAreaProperty, ThemeType] = null,
+    gridAutoColumns: ResponsiveValue[GridAutoColumnsProperty[TLengthStyledSystem], ThemeType] = null,
+    gridAutoFlow: ResponsiveValue[GridAutoFlowProperty, ThemeType] = null,
+    gridAutoRows: ResponsiveValue[GridAutoRowsProperty[TLengthStyledSystem], ThemeType] = null,
+    gridColumn: ResponsiveValue[GridColumnProperty, ThemeType] = null,
+    gridColumnGap: ResponsiveValue[GridColumnGapProperty[TLengthStyledSystem], ThemeType] = null,
+    gridGap: ResponsiveValue[GridGapProperty[TLengthStyledSystem], ThemeType] = null,
+    gridRow: ResponsiveValue[GridRowProperty, ThemeType] = null,
+    gridRowGap: ResponsiveValue[GridRowGapProperty[TLengthStyledSystem], ThemeType] = null,
+    gridTemplateAreas: ResponsiveValue[GridTemplateAreasProperty, ThemeType] = null,
+    gridTemplateColumns: ResponsiveValue[GridTemplateColumnsProperty[TLengthStyledSystem], ThemeType] = null,
+    gridTemplateRows: ResponsiveValue[GridTemplateRowsProperty[TLengthStyledSystem], ThemeType] = null
+  ): GridProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
     if (gridAutoColumns != null) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object GridProps {
     if (gridTemplateAreas != null) __obj.updateDynamic("gridTemplateAreas")(gridTemplateAreas.asInstanceOf[js.Any])
     if (gridTemplateColumns != null) __obj.updateDynamic("gridTemplateColumns")(gridTemplateColumns.asInstanceOf[js.Any])
     if (gridTemplateRows != null) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GridProps]
+    __obj.asInstanceOf[GridProps[ThemeType]]
   }
 }
 

@@ -16,7 +16,7 @@ trait CallHierarchyProvider extends js.Object {
   		 * @returns A call hierarchy item or a thenable that resolves to such. The lack of a result can be
   		 * signaled by returning `undefined` or `null`.
   		 */
-  def prepareCallHierarchy(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[CallHierarchyItem]
+  def prepareCallHierarchy(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]]
   /**
   		 * Provide all incoming calls for an item, e.g all callers for a method. In graph terms this describes directed
   		 * and annotated edges inside the call graph, e.g the given item is the starting node and the result is the nodes
@@ -44,7 +44,7 @@ trait CallHierarchyProvider extends js.Object {
 object CallHierarchyProvider {
   @scala.inline
   def apply(
-    prepareCallHierarchy: (TextDocument, Position, CancellationToken) => ProviderResult[CallHierarchyItem],
+    prepareCallHierarchy: (TextDocument, Position, CancellationToken) => ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]],
     provideCallHierarchyIncomingCalls: (CallHierarchyItem, CancellationToken) => ProviderResult[js.Array[CallHierarchyIncomingCall]],
     provideCallHierarchyOutgoingCalls: (CallHierarchyItem, CancellationToken) => ProviderResult[js.Array[CallHierarchyOutgoingCall]]
   ): CallHierarchyProvider = {

@@ -95,6 +95,10 @@ class Project protected () extends CustomResource {
     */
   val source: Output_[ProjectSource] = js.native
   /**
+    * A version of the build input to be built for this project. If not specified, the latest version is used.
+    */
+  val sourceVersion: Output_[js.UndefOr[String]] = js.native
+  /**
     * A mapping of tags to assign to the resource.
     */
   val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native

@@ -49,8 +49,8 @@ trait Dockerode extends js.Object {
   def getContainer(id: String): Container = js.native
   def getEvents(): js.Promise[ReadableStream] = js.native
   def getEvents(callback: Callback[ReadableStream]): Unit = js.native
-  def getEvents(options: js.Object): js.Promise[ReadableStream] = js.native
-  def getEvents(options: js.Object, callback: Callback[ReadableStream]): Unit = js.native
+  def getEvents(options: GetEventsOptions): js.Promise[ReadableStream] = js.native
+  def getEvents(options: GetEventsOptions, callback: Callback[ReadableStream]): Unit = js.native
   def getExec(id: String): Exec = js.native
   def getImage(name: String): Image = js.native
   def getNetwork(id: String): Network = js.native

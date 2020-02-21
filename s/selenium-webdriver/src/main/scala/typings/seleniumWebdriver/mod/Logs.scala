@@ -1,6 +1,6 @@
 package typings.seleniumWebdriver.mod
 
-import typings.seleniumWebdriver.mod.logging.Entry
+import typings.seleniumWebdriver.loggingMod.Entry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

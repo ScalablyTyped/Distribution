@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetEnabledStandardsResponse extends js.Object {
   /**
-    * The token that is required for pagination.
+    * The pagination token to use to request the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
   /**
-    * A list of StandardsSubscriptions objects that include information about the enabled standards.
+    * The list of StandardsSubscriptions objects that include information about the enabled standards.
     */
   var StandardsSubscriptions: js.UndefOr[typings.awsSdk.securityhubMod.StandardsSubscriptions] = js.native
 }

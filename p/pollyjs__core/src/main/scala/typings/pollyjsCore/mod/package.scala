@@ -19,7 +19,7 @@ package object mod {
     /* interceptor */ typings.pollyjsCore.mod.Interceptor, 
     scala.Unit | js.Promise[scala.Unit]
   ]
-  type MatchBy[T, R] = js.Function1[/* input */ T, R]
+  type MatchBy[T, R] = js.Function2[/* input */ T, /* req */ typings.pollyjsCore.mod.Request, R]
   type PollyEventListener = js.Function1[/* poll */ typings.pollyjsCore.mod.Polly, scala.Unit]
   type RecordingEventListener = js.Function3[
     /* req */ typings.pollyjsCore.mod.Request, 

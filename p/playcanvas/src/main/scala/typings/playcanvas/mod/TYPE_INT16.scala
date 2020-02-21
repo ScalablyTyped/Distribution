@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TYPE_INT16
+  * @type {number}
   * @description Signed short vertex element type.
   */
 @JSImport("playcanvas", "TYPE_INT16")

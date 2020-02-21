@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-class-component
 
-Typings are for version 7.2.2
+Typings are for version 7.2.3
 
 ## Library description:
 ES201X/TypeScript class decorator for Vue components

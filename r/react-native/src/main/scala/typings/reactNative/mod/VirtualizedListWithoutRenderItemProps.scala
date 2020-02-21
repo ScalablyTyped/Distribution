@@ -96,11 +96,11 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * always rendered and immediately renders the items starting at this initial index. Requires
     * `getItemLayout` to be implemented.
     */
-  var initialScrollIndex: js.UndefOr[Double] = js.undefined
+  var initialScrollIndex: js.UndefOr[Double | Null] = js.undefined
   /**
     * Reverses the direction of scroll. Uses scale transforms of -1.
     */
-  var inverted: js.UndefOr[Boolean] = js.undefined
+  var inverted: js.UndefOr[Boolean | Null] = js.undefined
   var keyExtractor: js.UndefOr[js.Function2[/* item */ ItemT, /* index */ Double, String]] = js.undefined
   var listKey: js.UndefOr[String] = js.undefined
   /**
@@ -245,6 +245,7 @@ object VirtualizedListWithoutRenderItemProps {
     onScrollBeginDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onScrollEndDrag: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onScrollToIndexFailed: /* info */ AnonAverageItemLength => Unit = null,
+    onScrollToTop: /* event */ NativeSyntheticEvent[NativeScrollEvent] => Unit = null,
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
     onTouchCancel: /* event */ GestureResponderEvent => Unit = null,
@@ -267,6 +268,7 @@ object VirtualizedListWithoutRenderItemProps {
     scrollEventThrottle: Int | Double = null,
     scrollIndicatorInsets: Insets = null,
     scrollPerfTag: String = null,
+    scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined,
     scrollsToTop: js.UndefOr[Boolean] = js.undefined,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
     showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
@@ -376,6 +378,7 @@ object VirtualizedListWithoutRenderItemProps {
     if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction1(onScrollBeginDrag))
     if (onScrollEndDrag != null) __obj.updateDynamic("onScrollEndDrag")(js.Any.fromFunction1(onScrollEndDrag))
     if (onScrollToIndexFailed != null) __obj.updateDynamic("onScrollToIndexFailed")(js.Any.fromFunction1(onScrollToIndexFailed))
+    if (onScrollToTop != null) __obj.updateDynamic("onScrollToTop")(js.Any.fromFunction1(onScrollToTop))
     if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
     if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
     if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
@@ -398,6 +401,7 @@ object VirtualizedListWithoutRenderItemProps {
     if (scrollEventThrottle != null) __obj.updateDynamic("scrollEventThrottle")(scrollEventThrottle.asInstanceOf[js.Any])
     if (scrollIndicatorInsets != null) __obj.updateDynamic("scrollIndicatorInsets")(scrollIndicatorInsets.asInstanceOf[js.Any])
     if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToOverflowEnabled)) __obj.updateDynamic("scrollToOverflowEnabled")(scrollToOverflowEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop.asInstanceOf[js.Any])
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
     if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.asInstanceOf[js.Any])

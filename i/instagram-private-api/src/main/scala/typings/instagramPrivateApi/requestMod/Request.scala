@@ -38,6 +38,7 @@ class Request protected () extends js.Object {
 @JSImport("instagram-private-api/dist/core/request", "Request")
 @js.native
 object Request extends js.Object {
+  var requestDebug: js.Any = js.native
   var requestTransform: js.Any = js.native
 }
 

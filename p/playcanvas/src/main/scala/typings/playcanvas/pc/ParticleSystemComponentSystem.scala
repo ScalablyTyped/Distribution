@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.ParticleSystemComponentSystem
-  * @extends pc.ComponentSystem
-  * @classdesc Allows an Entity to render a particle system
-  * @description Create a new ParticleSystemComponentSystem
-  * @param {pc.Application} app The Application.
+  * @augments pc.ComponentSystem
+  * @classdesc Allows an Entity to render a particle system.
+  * @description Create a new ParticleSystemComponentSystem.
+  * @param {pc.Application} app - The Application.
   */
 @JSGlobal("pc.ParticleSystemComponentSystem")
 @js.native

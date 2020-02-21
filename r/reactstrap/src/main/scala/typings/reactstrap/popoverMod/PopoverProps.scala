@@ -20,6 +20,7 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -83,7 +84,7 @@ trait PopoverProps
   extends HTMLAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
   var boundariesElement: js.UndefOr[Boundary | Element] = js.undefined
-  var container: js.UndefOr[String | HTMLElement] = js.undefined
+  var container: js.UndefOr[String | HTMLElement | RefObject[HTMLElement]] = js.undefined
   var cssModule: js.UndefOr[CSSModule] = js.undefined
   var delay: js.UndefOr[Double | AnonHide] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -96,14 +97,14 @@ trait PopoverProps
   var placement: js.UndefOr[Placement] = js.undefined
   var placementPrefix: js.UndefOr[String] = js.undefined
   var popperClassName: js.UndefOr[String] = js.undefined
-  var target: String | HTMLElement
+  var target: String | HTMLElement | RefObject[HTMLElement]
   var toggle: js.UndefOr[MouseEventHandler[_] | js.Function0[Unit]] = js.undefined
 }
 
 object PopoverProps {
   @scala.inline
   def apply(
-    target: String | HTMLElement,
+    target: String | HTMLElement | RefObject[HTMLElement],
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     about: String = null,
     accessKey: String = null,
@@ -162,7 +163,7 @@ object PopoverProps {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    container: String | HTMLElement = null,
+    container: String | HTMLElement | RefObject[HTMLElement] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     cssModule: CSSModule = null,

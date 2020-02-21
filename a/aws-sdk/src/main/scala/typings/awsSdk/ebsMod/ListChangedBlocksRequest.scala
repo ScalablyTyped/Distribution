@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListChangedBlocksRequest extends js.Object {
   /**
-    * The ID of the first snapshot to use for the comparison.
+    * The ID of the first snapshot to use for the comparison.  The FirstSnapshotID parameter must be specified with a SecondSnapshotId parameter; otherwise, an error occurs. 
     */
   var FirstSnapshotId: js.UndefOr[SnapshotId] = js.native
   /**
@@ -19,7 +19,7 @@ trait ListChangedBlocksRequest extends js.Object {
     */
   var NextToken: js.UndefOr[PageToken] = js.native
   /**
-    * The ID of the second snapshot to use for the comparison.
+    * The ID of the second snapshot to use for the comparison.  The SecondSnapshotId parameter must be specified with a FirstSnapshotID parameter; otherwise, an error occurs. 
     */
   var SecondSnapshotId: SnapshotId = js.native
   /**

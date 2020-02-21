@@ -29,32 +29,16 @@ class Client protected () extends EventEmitter {
   def on_ready(event: ready, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_warning(event: warning, listener: js.Function1[/* warning */ js.UndefOr[Error], Unit]): this.type = js.native
-  def setSCServer(
-    scServer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer */ js.Any
-  ): Unit = js.native
+  def setSCServer(scServer: SCServer): Unit = js.native
   def subscribe(channel: String): Unit = js.native
   def subscribe(channel: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-  def subscribeSocket(
-    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
-    channel: String
-  ): Unit = js.native
-  def subscribeSocket(
-    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
-    channel: String,
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
+  def subscribeSocket(socket: ServerSocket, channel: String): Unit = js.native
+  def subscribeSocket(socket: ServerSocket, channel: String, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   def unsubscribe(channel: String): Unit = js.native
   def unsubscribe(channel: String, callback: js.Function0[Unit]): Unit = js.native
   def unsubscribeAll(): Unit = js.native
   def unsubscribeAll(callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
-  def unsubscribeSocket(
-    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
-    channel: String
-  ): Unit = js.native
-  def unsubscribeSocket(
-    socket: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
-    channel: String,
-    callback: js.Function0[Unit]
-  ): Unit = js.native
+  def unsubscribeSocket(socket: ServerSocket, channel: String): Unit = js.native
+  def unsubscribeSocket(socket: ServerSocket, channel: String, callback: js.Function0[Unit]): Unit = js.native
 }
 

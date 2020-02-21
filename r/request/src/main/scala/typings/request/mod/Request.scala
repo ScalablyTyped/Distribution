@@ -6,7 +6,7 @@ import typings.node.httpMod.Agent
 import typings.node.httpMod.ClientRequest
 import typings.node.netMod.Socket
 import typings.node.streamMod.Readable
-import typings.node.streamMod.internal
+import typings.node.streamMod.Stream
 import typings.node.urlMod.Url
 import typings.request.AnonConnect
 import typings.request.AnonHref
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Request
-  extends internal
+  extends Stream
      with Httpified {
   var agent: `false` | Agent | typings.node.httpsMod.Agent = js.native
   var body: Buffer | (js.Array[Buffer | String]) | String | Readable = js.native

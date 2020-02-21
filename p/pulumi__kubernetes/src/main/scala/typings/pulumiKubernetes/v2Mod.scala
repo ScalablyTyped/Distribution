@@ -28,6 +28,5 @@ object v2Mod extends js.Object {
   
   def fetch(chart: String): Unit = js.native
   def fetch(chart: String, opts: ResolvedFetchOpts): Unit = js.native
-  def helmSort(a: AnonKind, b: AnonKind): Double = js.native
 }
 

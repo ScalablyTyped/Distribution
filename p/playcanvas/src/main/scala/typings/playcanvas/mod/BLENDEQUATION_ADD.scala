@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDEQUATION_ADD
+  * @type {number}
   * @description Add the results of the source and destination fragment multiplies.
   */
 @JSImport("playcanvas", "BLENDEQUATION_ADD")

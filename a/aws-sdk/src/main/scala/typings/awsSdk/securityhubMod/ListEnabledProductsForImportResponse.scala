@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListEnabledProductsForImportResponse extends js.Object {
   /**
-    * The token that is required for pagination.
+    * The pagination token to use to request the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
   /**
-    * A list of ARNs for the resources that represent your subscriptions to products. 
+    * The list of ARNs for the resources that represent your subscriptions to products. 
     */
   var ProductSubscriptions: js.UndefOr[ProductSubscriptionArnList] = js.native
 }

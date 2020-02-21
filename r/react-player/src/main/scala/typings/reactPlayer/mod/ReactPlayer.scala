@@ -19,5 +19,6 @@ trait ReactPlayer
   def seekTo_fraction(amount: Double, `type`: fraction): Unit = js.native
   @JSName("seekTo")
   def seekTo_seconds(amount: Double, `type`: seconds): Unit = js.native
+  def showPreview(): Unit = js.native
 }
 

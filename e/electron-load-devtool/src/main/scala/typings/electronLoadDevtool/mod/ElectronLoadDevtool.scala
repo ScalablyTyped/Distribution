@@ -13,6 +13,7 @@ trait ElectronLoadDevtool extends js.Object {
   var REACT_DEVELOPER_TOOLS: String = js.native
   var REDUX_DEVTOOLS: String = js.native
   var VUEJS_DEVTOOLS: String = js.native
+  var VUEJS_DEVTOOLS_BETA: String = js.native
   def apply(devtoolId: String): Unit = js.native
   def apply(devtoolId: String, options: ElectronLoadDevtoolOptions): Unit = js.native
 }

@@ -9,17 +9,24 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.`nanos Leftparen
 import typings.elasticElasticsearch.elasticElasticsearchStrings.`s LeftparenthesisSecondsRightparenthesis`
 import typings.elasticElasticsearch.elasticElasticsearchStrings.b
 import typings.elasticElasticsearch.elasticElasticsearchStrings.g
+import typings.elasticElasticsearch.elasticElasticsearchStrings.gb
 import typings.elasticElasticsearch.elasticElasticsearchStrings.green
 import typings.elasticElasticsearch.elasticElasticsearchStrings.k
+import typings.elasticElasticsearch.elasticElasticsearchStrings.kb
 import typings.elasticElasticsearch.elasticElasticsearchStrings.m
+import typings.elasticElasticsearch.elasticElasticsearchStrings.mb
+import typings.elasticElasticsearch.elasticElasticsearchStrings.p
+import typings.elasticElasticsearch.elasticElasticsearchStrings.pb
 import typings.elasticElasticsearch.elasticElasticsearchStrings.red
+import typings.elasticElasticsearch.elasticElasticsearchStrings.t
+import typings.elasticElasticsearch.elasticElasticsearchStrings.tb
 import typings.elasticElasticsearch.elasticElasticsearchStrings.yellow
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CatIndices extends Generic {
-  var bytes: js.UndefOr[b | k | m | g] = js.undefined
+  var bytes: js.UndefOr[b | k | kb | m | mb | g | gb | t | tb | p | pb] = js.undefined
   var format: js.UndefOr[String] = js.undefined
   var h: js.UndefOr[String | js.Array[String]] = js.undefined
   var health: js.UndefOr[green | yellow | red] = js.undefined
@@ -39,7 +46,7 @@ trait CatIndices extends Generic {
 object CatIndices {
   @scala.inline
   def apply(
-    bytes: b | k | m | g = null,
+    bytes: b | k | kb | m | mb | g | gb | t | tb | p | pb = null,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     format: String = null,

@@ -33,6 +33,7 @@ object ChartOpts {
   @scala.inline
   def apply(
     chart: Input[String],
+    apiVersions: Input[js.Array[Input[String]]] = null,
     fetchOpts: Input[FetchOpts] = null,
     namespace: Input[String] = null,
     repo: Input[String] = null,
@@ -42,6 +43,7 @@ object ChartOpts {
     version: Input[String] = null
   ): ChartOpts = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any])
+    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions.asInstanceOf[js.Any])
     if (fetchOpts != null) __obj.updateDynamic("fetchOpts")(fetchOpts.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (repo != null) __obj.updateDynamic("repo")(repo.asInstanceOf[js.Any])

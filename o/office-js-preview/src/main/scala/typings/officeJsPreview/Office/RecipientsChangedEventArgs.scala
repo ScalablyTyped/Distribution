@@ -11,7 +11,7 @@ trait RecipientsChangedEventArgs extends js.Object {
     * 
     * [Api set: Mailbox 1.7] 
     */ 
-  var changedRecipientsFields: RecipientsChangedFields
+  var changedRecipientFields: RecipientsChangedFields
   /** 
     * Gets the type of the event. See `Office.EventType` for details. 
     * 
@@ -22,8 +22,8 @@ trait RecipientsChangedEventArgs extends js.Object {
 
 object RecipientsChangedEventArgs {
   @scala.inline
-  def apply(changedRecipientsFields: RecipientsChangedFields, `type`: olkRecipientsChanged): RecipientsChangedEventArgs = {
-    val __obj = js.Dynamic.literal(changedRecipientsFields = changedRecipientsFields.asInstanceOf[js.Any])
+  def apply(changedRecipientFields: RecipientsChangedFields, `type`: olkRecipientsChanged): RecipientsChangedEventArgs = {
+    val __obj = js.Dynamic.literal(changedRecipientFields = changedRecipientFields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientsChangedEventArgs]
   }

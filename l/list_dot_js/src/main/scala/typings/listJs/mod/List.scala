@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait List extends js.Object {
+  var alphabet: String = js.native
   var filtered: Boolean = js.native
   var items: js.Array[js.Object] = js.native
   var list: HTMLElement = js.native

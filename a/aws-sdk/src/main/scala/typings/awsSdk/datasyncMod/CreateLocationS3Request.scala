@@ -18,7 +18,7 @@ trait CreateLocationS3Request extends js.Object {
   /**
     * A subdirectory in the Amazon S3 bucket. This subdirectory in Amazon S3 is used to read data from the S3 source location or write data to the S3 destination.
     */
-  var Subdirectory: js.UndefOr[typings.awsSdk.datasyncMod.Subdirectory] = js.native
+  var Subdirectory: js.UndefOr[S3Subdirectory] = js.native
   /**
     * The key-value pair that represents the tag that you want to add to the location. The value can be an empty string. We recommend using tags to name your resources.
     */
@@ -31,7 +31,7 @@ object CreateLocationS3Request {
     S3BucketArn: S3BucketArn,
     S3Config: S3Config,
     S3StorageClass: S3StorageClass = null,
-    Subdirectory: Subdirectory = null,
+    Subdirectory: S3Subdirectory = null,
     Tags: TagList = null
   ): CreateLocationS3Request = {
     val __obj = js.Dynamic.literal(S3BucketArn = S3BucketArn.asInstanceOf[js.Any], S3Config = S3Config.asInstanceOf[js.Any])

@@ -13,8 +13,6 @@ trait AnonAccesstokenAlt extends js.Object {
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.native
-  /** OAuth bearer token. */
-  var bearer_token: js.UndefOr[String] = js.native
   /** JSONP */
   var callback: js.UndefOr[String] = js.native
   /**
@@ -29,24 +27,6 @@ trait AnonAccesstokenAlt extends js.Object {
   var key: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.native
-  /**
-    * Maximum number of items to return. Zero means no maximum.
-    *
-    * The server may return fewer than the specified number of results.
-    */
-  var pageSize: js.UndefOr[Double] = js.native
-  /**
-    * nextPageToken
-    * value returned from a previous
-    * list call, indicating that
-    * the subsequent page of results should be returned.
-    *
-    * The list request must be
-    * otherwise identical to the one that resulted in this token.
-    */
-  var pageToken: js.UndefOr[String] = js.native
-  /** Pretty-print response. */
-  var pp: js.UndefOr[Boolean] = js.native
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */

@@ -16,7 +16,7 @@ import typings.hexo.hexoStrings.processBefore
 import typings.hexo.hexoStrings.ready
 import typings.hexo.hexoStrings.skip
 import typings.hexo.hexoStrings.update
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

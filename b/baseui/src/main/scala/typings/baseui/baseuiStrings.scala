@@ -59,6 +59,9 @@ object baseuiStrings {
   sealed trait AM extends js.Object
   
   @js.native
+  sealed trait ANCHOR extends js.Object
+  
+  @js.native
   sealed trait AO extends js.Object
   
   @js.native
@@ -396,6 +399,9 @@ object baseuiStrings {
   
   @js.native
   sealed trait `Côte dRightsinglequotationmarkIvoire` extends js.Object
+  
+  @js.native
+  sealed trait DATETIME extends js.Object
   
   @js.native
   sealed trait DE extends js.Object
@@ -2842,6 +2848,9 @@ object baseuiStrings {
   sealed trait meter extends js.Object
   
   @js.native
+  sealed trait mini extends js.Object
+  
+  @js.native
   sealed trait minimal extends js.Object
   
   @js.native
@@ -3346,6 +3355,8 @@ object baseuiStrings {
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
+  def ANCHOR: ANCHOR = "ANCHOR".asInstanceOf[ANCHOR]
+  @scala.inline
   def AO: AO = "AO".asInstanceOf[AO]
   @scala.inline
   def AR: AR = "AR".asInstanceOf[AR]
@@ -3571,6 +3582,8 @@ object baseuiStrings {
   def `Czech Republic LeftparenthesisČeská republikaRightparenthesis`: `Czech Republic LeftparenthesisČeská republikaRightparenthesis` = "Czech Republic (\u010Cesk\u00E1 republika)".asInstanceOf[`Czech Republic LeftparenthesisČeská republikaRightparenthesis`]
   @scala.inline
   def `Côte dRightsinglequotationmarkIvoire`: `Côte dRightsinglequotationmarkIvoire` = "C\u00F4te d\u2019Ivoire".asInstanceOf[`Côte dRightsinglequotationmarkIvoire`]
+  @scala.inline
+  def DATETIME: DATETIME = "DATETIME".asInstanceOf[DATETIME]
   @scala.inline
   def DE: DE = "DE".asInstanceOf[DE]
   @scala.inline
@@ -5155,6 +5168,8 @@ object baseuiStrings {
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
+  @scala.inline
+  def mini: mini = "mini".asInstanceOf[mini]
   @scala.inline
   def minimal: minimal = "minimal".asInstanceOf[minimal]
   @scala.inline

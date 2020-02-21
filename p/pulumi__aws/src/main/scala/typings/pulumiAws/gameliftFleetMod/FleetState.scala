@@ -1,5 +1,6 @@
 package typings.pulumiAws.gameliftFleetMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.gamelift.FleetEc2InboundPermission
 import typings.pulumiAws.inputMod.gamelift.FleetResourceCreationLimitPolicy
 import typings.pulumiAws.inputMod.gamelift.FleetRuntimeConfiguration
@@ -30,6 +31,14 @@ trait FleetState extends js.Object {
     * Name of an EC2 instance type. e.g. `t2.micro`
     */
   val ec2InstanceType: js.UndefOr[Input[String]] = js.native
+  /**
+    * Type of fleet. This value must be `ON_DEMAND` or `SPOT`. Defaults to `ON_DEMAND`.
+    */
+  val fleetType: js.UndefOr[Input[String]] = js.native
+  /**
+    * ARN of an IAM role that instances in the fleet can assume.
+    */
+  val instanceRoleArn: js.UndefOr[Input[String]] = js.native
   val logPaths: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * List of names of metric groups to add this fleet to. A metric group tracks metrics across all fleets in the group. Defaults to `default`.
@@ -55,6 +64,10 @@ trait FleetState extends js.Object {
     * Instructions for launching server processes on each instance in the fleet. See below.
     */
   val runtimeConfiguration: js.UndefOr[Input[FleetRuntimeConfiguration]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object FleetState {
@@ -65,13 +78,16 @@ object FleetState {
     description: Input[String] = null,
     ec2InboundPermissions: Input[js.Array[Input[FleetEc2InboundPermission]]] = null,
     ec2InstanceType: Input[String] = null,
+    fleetType: Input[String] = null,
+    instanceRoleArn: Input[String] = null,
     logPaths: Input[js.Array[Input[String]]] = null,
     metricGroups: Input[js.Array[Input[String]]] = null,
     name: Input[String] = null,
     newGameSessionProtectionPolicy: Input[String] = null,
     operatingSystem: Input[String] = null,
     resourceCreationLimitPolicy: Input[FleetResourceCreationLimitPolicy] = null,
-    runtimeConfiguration: Input[FleetRuntimeConfiguration] = null
+    runtimeConfiguration: Input[FleetRuntimeConfiguration] = null,
+    tags: Input[StringDictionary[_]] = null
   ): FleetState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
@@ -79,6 +95,8 @@ object FleetState {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (ec2InboundPermissions != null) __obj.updateDynamic("ec2InboundPermissions")(ec2InboundPermissions.asInstanceOf[js.Any])
     if (ec2InstanceType != null) __obj.updateDynamic("ec2InstanceType")(ec2InstanceType.asInstanceOf[js.Any])
+    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
+    if (instanceRoleArn != null) __obj.updateDynamic("instanceRoleArn")(instanceRoleArn.asInstanceOf[js.Any])
     if (logPaths != null) __obj.updateDynamic("logPaths")(logPaths.asInstanceOf[js.Any])
     if (metricGroups != null) __obj.updateDynamic("metricGroups")(metricGroups.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
@@ -86,6 +104,7 @@ object FleetState {
     if (operatingSystem != null) __obj.updateDynamic("operatingSystem")(operatingSystem.asInstanceOf[js.Any])
     if (resourceCreationLimitPolicy != null) __obj.updateDynamic("resourceCreationLimitPolicy")(resourceCreationLimitPolicy.asInstanceOf[js.Any])
     if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetState]
   }
 }

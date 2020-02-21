@@ -27,7 +27,6 @@ trait NavigationStackProp[State, Params] extends js.Object {
   var state: State with AnonParamsP[Params] = js.native
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def addListener(event: NavigationStackEventName, callback: NavigationEventCallback): NavigationEventSubscription = js.native
-  def closeDrawer(): js.Any = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
   def dismiss(): Boolean = js.native
   @JSName("emit")
@@ -45,11 +44,10 @@ trait NavigationStackProp[State, Params] extends js.Object {
   def goBack(routeKey: String): Boolean = js.native
   def isFirstRouteInParent(): Boolean = js.native
   def isFocused(): Boolean = js.native
-  def navigate(options: AnonActionKey): Boolean = js.native
-  def navigate(routeNameOrOptions: String): Boolean = js.native
-  def navigate(routeNameOrOptions: String, params: NavigationParams): Boolean = js.native
-  def navigate(routeNameOrOptions: String, params: NavigationParams, action: NavigationAction): Boolean = js.native
-  def openDrawer(): js.Any = js.native
+  def navigate[T /* <: NavigationParams */](options: AnonActionKey[T]): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native
   def pop(): Boolean = js.native
   def pop(n: Double): Boolean = js.native
   def pop(n: Double, params: AnonImmediate): Boolean = js.native
@@ -63,6 +61,5 @@ trait NavigationStackProp[State, Params] extends js.Object {
   def replace(routeName: String, params: NavigationParams, action: NavigationNavigateAction): Boolean = js.native
   def reset(actions: js.Array[NavigationAction], index: Double): Boolean = js.native
   def setParams(newParams: Partial[Params]): Boolean = js.native
-  def toggleDrawer(): js.Any = js.native
 }
 

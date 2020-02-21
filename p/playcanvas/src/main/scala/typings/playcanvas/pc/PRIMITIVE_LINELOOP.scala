@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PRIMITIVE_LINELOOP
+  * @type {number}
   * @description List of points that are linked sequentially by line segments, with a closing line segment between the last and first points.
   */
 @JSGlobal("pc.PRIMITIVE_LINELOOP")

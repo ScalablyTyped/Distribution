@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Filter extends js.Object {
   /**
-    *  
+    *  The name of the filter. Filter names are case-sensitive. 
     */
   var name: js.UndefOr[FilterName] = js.native
   /**
-    *  
+    *  The filter values. Filter values are case-sensitive. 
     */
   var values: js.UndefOr[FilterValues] = js.native
 }

@@ -15,8 +15,7 @@ trait CreateMissionProfileRequest extends js.Object {
     */
   var contactPrePassDurationSeconds: js.UndefOr[DurationInSeconds] = js.native
   /**
-    * A list of lists of ARNs. Each list of ARNs is an edge, with a from Config and a to 
-    Config.
+    * A list of lists of ARNs. Each list of ARNs is an edge, with a from Config and a to Config.
     */
   var dataflowEdges: DataflowEdgeList = js.native
   /**

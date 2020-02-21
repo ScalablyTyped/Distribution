@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BAKE_COLOR
+  * @type {number}
   * @description Single color lightmap.
   */
 @JSImport("playcanvas", "BAKE_COLOR")

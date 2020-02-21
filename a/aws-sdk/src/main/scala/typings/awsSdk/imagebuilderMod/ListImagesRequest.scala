@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListImagesRequest extends js.Object {
   /**
-    *  
+    *  The filters. 
     */
   var filters: js.UndefOr[FilterList] = js.native
   /**
@@ -19,7 +19,7 @@ trait ListImagesRequest extends js.Object {
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The owner defines whose images you wish to list. By default this request will only show images owned by your account. You may use this field to specify if you wish to view images owned by yourself, Amazon, or those images that have been shared with you by other customers. 
+    *  The owner defines which images you want to list. By default, this request will only show images owned by your account. You can use this field to specify if you want to view images owned by yourself, by Amazon, or those images that have been shared with you by other customers. 
     */
   var owner: js.UndefOr[Ownership] = js.native
 }

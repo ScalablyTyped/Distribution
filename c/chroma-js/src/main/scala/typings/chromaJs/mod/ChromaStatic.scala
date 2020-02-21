@@ -284,5 +284,6 @@ trait ChromaStatic extends js.Object {
     */
   def temperature(t: Double): Color = js.native
   def valid(color: js.Any): Boolean = js.native
+  def valid(color: js.Any, mode: String): Boolean = js.native
 }
 

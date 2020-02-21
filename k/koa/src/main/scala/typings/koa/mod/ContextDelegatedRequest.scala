@@ -204,10 +204,11 @@ trait ContextDelegatedRequest extends js.Object {
   def acceptsLanguages(langs: String*): String | Boolean = js.native
   def acceptsLanguages(langs: js.Array[String]): String | Boolean = js.native
   /**
-    * Return request header.
+    * Return request header. If the header is not set, will return an empty
+    * string.
     *
-    * The `Referrer` header field is special-cased,
-    * both `Referrer` and `Referer` are interchangeable.
+    * The `Referrer` header field is special-cased, both `Referrer` and
+    * `Referer` are interchangeable.
     *
     * Examples:
     *
@@ -218,7 +219,7 @@ trait ContextDelegatedRequest extends js.Object {
     *     // => "text/plain"
     *
     *     this.get('Something');
-    *     // => undefined
+    *     // => ''
     */
   def get(field: String): String = js.native
   /**

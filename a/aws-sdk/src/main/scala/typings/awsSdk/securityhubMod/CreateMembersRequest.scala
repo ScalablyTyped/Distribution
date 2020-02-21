@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateMembersRequest extends js.Object {
   /**
-    * A list of account ID and email address pairs of the accounts to associate with the Security Hub master account.
+    * The list of accounts to associate with the Security Hub master account. For each account, the list includes the account ID and the email address.
     */
   var AccountDetails: js.UndefOr[AccountDetailsList] = js.native
 }

@@ -20,7 +20,8 @@ trait Options extends js.Object {
   var level: js.UndefOr[Level] = js.undefined
   var logEvents: js.UndefOr[js.Array[String] | `false` | Null] = js.undefined
   var logPayload: js.UndefOr[Boolean] = js.undefined
-  var logRequestStart: js.UndefOr[Boolean] = js.undefined
+  var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
+  var logRequestStart: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
   var logRouteTags: js.UndefOr[Boolean] = js.undefined
   var mergeHapiLogData: js.UndefOr[Boolean] = js.undefined
   var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
@@ -44,7 +45,8 @@ object Options {
     level: Level = null,
     logEvents: js.Array[String] | `false` = null,
     logPayload: js.UndefOr[Boolean] = js.undefined,
-    logRequestStart: js.UndefOr[Boolean] = js.undefined,
+    logRequestComplete: Boolean | (js.Function1[/* req */ Request, Boolean]) = null,
+    logRequestStart: Boolean | (js.Function1[/* req */ Request, Boolean]) = null,
     logRouteTags: js.UndefOr[Boolean] = js.undefined,
     mergeHapiLogData: js.UndefOr[Boolean] = js.undefined,
     prettyPrint: Boolean | PrettyOptions = null,
@@ -63,7 +65,8 @@ object Options {
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (logEvents != null) __obj.updateDynamic("logEvents")(logEvents.asInstanceOf[js.Any])
     if (!js.isUndefined(logPayload)) __obj.updateDynamic("logPayload")(logPayload.asInstanceOf[js.Any])
-    if (!js.isUndefined(logRequestStart)) __obj.updateDynamic("logRequestStart")(logRequestStart.asInstanceOf[js.Any])
+    if (logRequestComplete != null) __obj.updateDynamic("logRequestComplete")(logRequestComplete.asInstanceOf[js.Any])
+    if (logRequestStart != null) __obj.updateDynamic("logRequestStart")(logRequestStart.asInstanceOf[js.Any])
     if (!js.isUndefined(logRouteTags)) __obj.updateDynamic("logRouteTags")(logRouteTags.asInstanceOf[js.Any])
     if (!js.isUndefined(mergeHapiLogData)) __obj.updateDynamic("mergeHapiLogData")(mergeHapiLogData.asInstanceOf[js.Any])
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])

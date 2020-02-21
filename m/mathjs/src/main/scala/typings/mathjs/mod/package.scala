@@ -20,4 +20,5 @@ package object mod {
     - typings.mathjs.mod.Matrix
   */
   type MathType = typings.mathjs.mod._MathType | scala.Double | typings.mathjs.mod.BigNumber | typings.mathjs.mod.MathArray
+  type NoLiteralType[T] = T | scala.Boolean | java.lang.String | scala.Double
 }

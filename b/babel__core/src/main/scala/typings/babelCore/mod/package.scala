@@ -16,6 +16,11 @@ package object mod {
     /* result */ typings.babelCore.mod.BabelFileResult | scala.Null, 
     js.Any
   ]
+  type MatchPattern = java.lang.String | typings.std.RegExp | (js.Function2[
+    /* filename */ js.UndefOr[java.lang.String], 
+    /* context */ typings.babelCore.mod.MatchPatternContext, 
+    scala.Boolean
+  ])
   type Node = typings.babelTypes.mod.Node
   type ParseResult = typings.babelTypes.mod.File_ | typings.babelTypes.mod.Program_
   type PluginItem = typings.babelCore.mod.ConfigItem | typings.babelCore.mod.PluginObj[js.Any] | typings.babelCore.mod.PluginTarget | (js.Tuple2[typings.babelCore.mod.PluginTarget, typings.babelCore.mod.PluginOptions]) | (js.Tuple3[

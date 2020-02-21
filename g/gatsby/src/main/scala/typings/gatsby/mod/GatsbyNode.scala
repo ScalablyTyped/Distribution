@@ -2,6 +2,7 @@ package typings.gatsby.mod
 
 import typings.gatsby.AnonInitialcreatePages
 import typings.gatsby.AnonInitialcreatePagesStatefully
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -157,7 +158,7 @@ trait GatsbyNode extends js.Object {
     */
   var onCreateNode: js.UndefOr[
     js.Function3[
-      /* args */ CreateNodeArgs, 
+      /* args */ CreateNodeArgs[js.Object], 
       /* options */ js.UndefOr[PluginOptions], 
       /* callback */ js.UndefOr[PluginCallback], 
       Unit
@@ -173,7 +174,7 @@ trait GatsbyNode extends js.Object {
     */
   var onCreatePage: js.UndefOr[
     js.Function3[
-      /* args */ CreatePageArgs, 
+      /* args */ CreatePageArgs[Record[String, _]], 
       /* options */ js.UndefOr[PluginOptions], 
       /* callback */ js.UndefOr[PluginCallback], 
       Unit
@@ -338,8 +339,8 @@ object GatsbyNode {
     ]) = null,
     onCreateBabelConfig: (/* args */ CreateBabelConfigArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
     onCreateDevServer: (/* args */ CreateDevServerArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
-    onCreateNode: (/* args */ CreateNodeArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
-    onCreatePage: (/* args */ CreatePageArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
+    onCreateNode: (/* args */ CreateNodeArgs[js.Object], /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
+    onCreatePage: (/* args */ CreatePageArgs[Record[String, _]], /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
     onCreateWebpackConfig: (/* args */ CreateWebpackConfigArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
     onPostBootstrap: (/* args */ ParentSpanPluginArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,
     onPostBuild: (/* args */ BuildArgs, /* options */ js.UndefOr[PluginOptions], /* callback */ js.UndefOr[PluginCallback]) => Unit = null,

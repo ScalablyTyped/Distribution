@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_4
-  * @description Index for pad 4
+  * @description Index for pad 4.
   */
 @JSGlobal("pc.PAD_4")
 @js.native

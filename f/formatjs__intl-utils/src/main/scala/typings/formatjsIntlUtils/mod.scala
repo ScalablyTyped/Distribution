@@ -85,6 +85,7 @@ object mod extends js.Object {
   def isLiteralPart(patternPart: AnonType): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/polyfill-utils.LiteralPart */ Boolean = js.native
   def isLiteralPart(patternPart: LiteralPart): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/polyfill-utils.LiteralPart */ Boolean = js.native
   def isMissingLocaleDataError(e: Error): /* is @formatjs/intl-utils.@formatjs/intl-utils/dist/resolve-locale.MissingLocaleDataError */ Boolean = js.native
+  def isWellFormedCurrencyCode(currency: String): Boolean = js.native
   def objectIs(x: js.Any, y: js.Any): Boolean = js.native
   def partitionPattern(pattern: String): js.Array[AnonTypeValue | AnonTypeValueString] = js.native
   def removeUnitNamespace(unit: String): String = js.native
@@ -115,6 +116,7 @@ object mod extends js.Object {
   def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String]): js.Array[String] = js.native
   def supportedLocales(availableLocales: js.Array[String], requestedLocales: js.Array[String], options: AnonBestfit): js.Array[String] = js.native
   def toObject[T](arg: T): T = js.native
+  def toString(o: js.Any): String = js.native
   def unpackData[T /* <: Record[String, _] */](locale: String, localeData: LocaleData[T]): T = js.native
   def unpackData[T /* <: Record[String, _] */](
     locale: String,

@@ -17,7 +17,7 @@ trait IParser extends js.Object {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def addCsiHandler(
+  def registerCsiHandler(
     id: IFunctionIdentifier,
     callback: js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]
   ): IDisposable
@@ -38,7 +38,7 @@ trait IParser extends js.Object {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def addDcsHandler(
+  def registerDcsHandler(
     id: IFunctionIdentifier,
     callback: js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]
   ): IDisposable
@@ -53,7 +53,7 @@ trait IParser extends js.Object {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def addEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean]): IDisposable
+  def registerEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean]): IDisposable
   /**
     * Adds a handler for OSC escape sequences.
     * @param ident The number (first parameter) of the sequence.
@@ -70,18 +70,18 @@ trait IParser extends js.Object {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def addOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean]): IDisposable
+  def registerOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean]): IDisposable
 }
 
 object IParser {
   @scala.inline
   def apply(
-    addCsiHandler: (IFunctionIdentifier, js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable,
-    addDcsHandler: (IFunctionIdentifier, js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable,
-    addEscHandler: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable,
-    addOscHandler: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable
+    registerCsiHandler: (IFunctionIdentifier, js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable,
+    registerDcsHandler: (IFunctionIdentifier, js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable,
+    registerEscHandler: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable,
+    registerOscHandler: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable
   ): IParser = {
-    val __obj = js.Dynamic.literal(addCsiHandler = js.Any.fromFunction2(addCsiHandler), addDcsHandler = js.Any.fromFunction2(addDcsHandler), addEscHandler = js.Any.fromFunction2(addEscHandler), addOscHandler = js.Any.fromFunction2(addOscHandler))
+    val __obj = js.Dynamic.literal(registerCsiHandler = js.Any.fromFunction2(registerCsiHandler), registerDcsHandler = js.Any.fromFunction2(registerDcsHandler), registerEscHandler = js.Any.fromFunction2(registerEscHandler), registerOscHandler = js.Any.fromFunction2(registerOscHandler))
   
     __obj.asInstanceOf[IParser]
   }

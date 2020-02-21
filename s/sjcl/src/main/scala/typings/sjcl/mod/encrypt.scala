@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sjcl", "encrypt")
 @js.native
-object encrypt extends TopLevel[SjclConveninceEncryptor]
+object encrypt extends TopLevel[SjclConvenienceEncryptor]
 

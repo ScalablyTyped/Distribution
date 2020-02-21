@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.VIEW_LEFT
+  * @type {number}
   * @description Left of view. Only used in stereo rendering.
   */
 @JSImport("playcanvas", "VIEW_LEFT")

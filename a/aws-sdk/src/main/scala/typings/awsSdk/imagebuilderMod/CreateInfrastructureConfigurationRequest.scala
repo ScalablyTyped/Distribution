@@ -19,11 +19,11 @@ trait CreateInfrastructureConfigurationRequest extends js.Object {
     */
   var instanceProfileName: NonEmptyString = js.native
   /**
-    *  The instance types of the infrastructure configuration. You may specify one or more instance types to use for this build, the service will pick one of these instance types based on availability. 
+    *  The instance types of the infrastructure configuration. You can specify one or more instance types to use for this build. The service will pick one of these instance types based on availability. 
     */
   var instanceTypes: js.UndefOr[InstanceTypeList] = js.native
   /**
-    *  The key pair of the infrastructure configuration. This can be used to log onto and debug the instance used to create your image. 
+    *  The key pair of the infrastructure configuration. This can be used to log on to and debug the instance used to create your image. 
     */
   var keyPair: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -41,9 +41,9 @@ trait CreateInfrastructureConfigurationRequest extends js.Object {
   /**
     *  The SNS topic on which to send image build events. 
     */
-  var snsTopicArn: js.UndefOr[NonEmptyString] = js.native
+  var snsTopicArn: js.UndefOr[SnsTopicArn] = js.native
   /**
-    *  The subnet ID to place the instance used to customize your EC2 AMI in. 
+    *  The subnet ID in which to place the instance used to customize your EC2 AMI. 
     */
   var subnetId: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -51,7 +51,7 @@ trait CreateInfrastructureConfigurationRequest extends js.Object {
     */
   var tags: js.UndefOr[TagMap] = js.native
   /**
-    *  The terminate instance on failure setting of the infrastructure configuration. Set to false if you wish for Image Builder to retain the instance used to configure your AMI in the event that the build or test phase of your workflow failed. 
+    *  The terminate instance on failure setting of the infrastructure configuration. Set to false if you want Image Builder to retain the instance used to configure your AMI if the build or test phase of your workflow fails. 
     */
   var terminateInstanceOnFailure: js.UndefOr[NullableBoolean] = js.native
 }
@@ -67,7 +67,7 @@ object CreateInfrastructureConfigurationRequest {
     keyPair: NonEmptyString = null,
     logging: Logging = null,
     securityGroupIds: SecurityGroupIds = null,
-    snsTopicArn: NonEmptyString = null,
+    snsTopicArn: SnsTopicArn = null,
     subnetId: NonEmptyString = null,
     tags: TagMap = null,
     terminateInstanceOnFailure: js.UndefOr[Boolean] = js.undefined

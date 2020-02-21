@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CULLFACE_NONE
+  * @type {number}
   * @description No triangles are culled.
   */
 @JSGlobal("pc.CULLFACE_NONE")

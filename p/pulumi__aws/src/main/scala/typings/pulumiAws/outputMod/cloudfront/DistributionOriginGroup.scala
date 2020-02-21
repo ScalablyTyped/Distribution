@@ -11,7 +11,7 @@ trait DistributionOriginGroup extends js.Object {
     */
   var failoverCriteria: DistributionOriginGroupFailoverCriteria = js.native
   /**
-    * Ordered member configuration blocks assigned to the origin group, where the first member is the primary origin. Minimum 2.
+    * Ordered member configuration blocks assigned to the origin group, where the first member is the primary origin. You must specify two members.
     */
   var members: js.Array[DistributionOriginGroupMember] = js.native
   /**

@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.shimmerGapTypesMod.IShimmerGapProps
 import typings.officeUiFabricReact.shimmerLineTypesMod.IShimmerLineProps
 import typings.officeUiFabricReact.shimmerTypesMod.IShimmerProps
 import typings.react.mod.FunctionComponent
-import typings.react.mod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,14 +19,14 @@ object libShimmerMod extends js.Object {
     def this(props: IShimmerProps) = this()
   }
   
-  val Shimmer: StatelessComponent[IShimmerProps] = js.native
-  val ShimmerCircle: StatelessComponent[IShimmerCircleProps] = js.native
+  val Shimmer: FunctionComponent[IShimmerProps] = js.native
+  val ShimmerCircle: FunctionComponent[IShimmerCircleProps] = js.native
   val ShimmerCircleBase: FunctionComponent[IShimmerCircleProps] = js.native
-  val ShimmerElementsGroup: StatelessComponent[IShimmerElementsGroupProps] = js.native
+  val ShimmerElementsGroup: FunctionComponent[IShimmerElementsGroupProps] = js.native
   val ShimmerElementsGroupBase: FunctionComponent[IShimmerElementsGroupProps] = js.native
-  val ShimmerGap: StatelessComponent[IShimmerGapProps] = js.native
+  val ShimmerGap: FunctionComponent[IShimmerGapProps] = js.native
   val ShimmerGapBase: FunctionComponent[IShimmerGapProps] = js.native
-  val ShimmerLine: StatelessComponent[IShimmerLineProps] = js.native
+  val ShimmerLine: FunctionComponent[IShimmerLineProps] = js.native
   val ShimmerLineBase: FunctionComponent[IShimmerLineProps] = js.native
   /* static members */
   @js.native

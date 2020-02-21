@@ -1,7 +1,7 @@
 
 # Scala.js typings for clipboardy
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 Access the system clipboard (copy/paste)

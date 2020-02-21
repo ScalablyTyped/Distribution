@@ -11,6 +11,10 @@ trait Options extends js.Object {
     */
   var connTimeout: js.UndefOr[Double] = js.undefined
   /**
+    * Debug function to invoke to enable debug logging.
+    */
+  var debug: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
+  /**
     * The hostname or IP address of the FTP server. Default: 'localhost'
     */
   var host: js.UndefOr[String] = js.undefined
@@ -49,6 +53,7 @@ object Options {
   @scala.inline
   def apply(
     connTimeout: Int | Double = null,
+    debug: /* message */ String => Unit = null,
     host: String = null,
     keepalive: Int | Double = null,
     password: String = null,
@@ -60,6 +65,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])

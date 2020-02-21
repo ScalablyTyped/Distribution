@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RobotSoftwareSuite extends js.Object {
   /**
-    * The name of the robot software suite.
+    * The name of the robot software suite (ROS distribution).
     */
   var name: js.UndefOr[RobotSoftwareSuiteType] = js.native
   /**
-    * The version of the robot software suite.
+    * The version of the robot software suite (ROS distribution).
     */
   var version: js.UndefOr[RobotSoftwareSuiteVersionType] = js.native
 }

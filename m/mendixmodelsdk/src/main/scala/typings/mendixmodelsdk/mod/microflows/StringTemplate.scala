@@ -62,7 +62,7 @@ object StringTemplate extends js.Object {
     * of the parent StringTemplateParameterValue element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  8.4.0 and higher
+    *  8.4.0 to 8.5.0
     */
   def createInStringTemplateParameterValueUnderTemplate(container: typings.mendixmodelsdk.microflowsMod.microflows.StringTemplateParameterValue): typings.mendixmodelsdk.microflowsMod.microflows.StringTemplate = js.native
 }

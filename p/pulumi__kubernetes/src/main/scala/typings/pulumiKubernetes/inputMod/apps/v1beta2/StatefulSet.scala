@@ -8,14 +8,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated apps/v1beta2/StatefulSet is deprecated by apps/v1/StatefulSet and not supported
-  * by Kubernetes v1.16+ clusters.
-  *
   * StatefulSet represents a set of pods with consistent identities. Identities are defined as:
   *  - Network: A single stable DNS and hostname.
   *  - Storage: As many VolumeClaims as requested.
   * The StatefulSet guarantees that a given network identity will always map to the same storage
   * identity.
+  *
+  * @deprecated apps/v1beta2/StatefulSet is deprecated by apps/v1/StatefulSet and not supported
+  * by Kubernetes v1.16+ clusters.
   */
 trait StatefulSet extends js.Object {
   /**

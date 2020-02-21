@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CLEARFLAG_STENCIL
+  * @type {number}
   * @description Clear the stencil buffer.
   */
 @JSGlobal("pc.CLEARFLAG_STENCIL")

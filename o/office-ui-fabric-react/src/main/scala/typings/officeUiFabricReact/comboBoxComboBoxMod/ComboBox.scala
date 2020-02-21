@@ -200,6 +200,7 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
   var _onPointerDown: js.Any = js.native
   var _onRenderContainer: js.Any = js.native
   var _onRenderItem: js.Any = js.native
+  var _onRenderLabel: js.Any = js.native
   var _onRenderList: js.Any = js.native
   var _onRenderLowerContent: js.Any = js.native
   var _onRenderOptionContent: js.Any = js.native

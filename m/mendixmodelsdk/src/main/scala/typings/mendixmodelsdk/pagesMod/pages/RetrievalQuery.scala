@@ -49,6 +49,10 @@ class RetrievalQuery protected () extends Element {
     */
   def pageName(): String = js.native
   def pageName(newValue: String): js.Any = js.native
+  /**
+    * In version 8.6.0: introduced
+    */
+  def parameters(): IList[RetrievalQueryParameter] = js.native
   def queryId(): String = js.native
   def queryId(newValue: String): js.Any = js.native
   /**

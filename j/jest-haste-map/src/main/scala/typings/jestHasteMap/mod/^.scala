@@ -2,6 +2,8 @@ package typings.jestHasteMap.mod
 
 import org.scalablytyped.runtime.Instantiable2
 import typings.jestHasteMap.TypeofClassHasteModuleMap
+import typings.jestHasteMap.moduleMapMod.default
+import typings.jestHasteMap.typesMod.InternalHasteMap
 import typings.jestTypes.configMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -89,6 +91,83 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends HasteMap {
   def this(options: Options) = this()
+  /**
+    * 2. crawl the file system.
+    */
+  /* CompleteClass */
+  override var _buildFileMap: js.Any = js.native
+  /* CompleteClass */
+  override var _buildHasteMap: js.Any = js.native
+  /* CompleteClass */
+  override var _buildPromise: js.Any = js.native
+  /* CompleteClass */
+  override var _cachePath: js.Any = js.native
+  /* CompleteClass */
+  override var _cleanup: js.Any = js.native
+  /* CompleteClass */
+  override var _console: js.Any = js.native
+  /* CompleteClass */
+  override var _crawl: js.Any = js.native
+  /* CompleteClass */
+  override var _createEmptyMap: js.Any = js.native
+  /**
+    * Creates workers or parses files and extracts metadata in-process.
+    */
+  /* CompleteClass */
+  override var _getWorker: js.Any = js.native
+  /**
+    * Helpers
+    */
+  /* CompleteClass */
+  override var _ignore: js.Any = js.native
+  /* CompleteClass */
+  override var _isNodeModulesDir: js.Any = js.native
+  /* CompleteClass */
+  override var _options: js.Any = js.native
+  /**
+    * 4. serialize the new `HasteMap` in a cache file.
+    */
+  /* CompleteClass */
+  override var _persist: js.Any = js.native
+  /**
+    * 3. parse and extract metadata from changed files.
+    */
+  /* CompleteClass */
+  override var _processFile: js.Any = js.native
+  /**
+    * This function should be called when the file under `filePath` is removed
+    * or changed. When that happens, we want to figure out if that file was
+    * part of a group of files that had the same ID. If it was, we want to
+    * remove it from the group. Furthermore, if there is only one file
+    * remaining in the group, then we want to restore that single file as the
+    * correct resolution for its ID, and cleanup the duplicates index.
+    */
+  /* CompleteClass */
+  override var _recoverDuplicates: js.Any = js.native
+  /**
+    * Watch mode
+    */
+  /* CompleteClass */
+  override var _watch: js.Any = js.native
+  /* CompleteClass */
+  override var _watchers: js.Any = js.native
+  /* CompleteClass */
+  override var _whitelist: js.Any = js.native
+  /* CompleteClass */
+  override var _worker: js.Any = js.native
+  /* CompleteClass */
+  override def build(): js.Promise[typings.jestHasteMap.typesMod.HasteMap] = js.native
+  /* CompleteClass */
+  override def end(): js.Promise[Unit] = js.native
+  /* CompleteClass */
+  override def getCacheFilePath(): String = js.native
+  /**
+    * 1. read data from the cache or create an empty structure.
+    */
+  /* CompleteClass */
+  override def read(): InternalHasteMap = js.native
+  /* CompleteClass */
+  override def readModuleMap(): default = js.native
 }
 
 @JSImport("jest-haste-map", JSImport.Namespace)

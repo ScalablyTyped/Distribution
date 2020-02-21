@@ -31,7 +31,7 @@ trait DescribeResourceResponse extends js.Object {
     */
   var ResourceId: js.UndefOr[typings.awsSdk.workmailMod.ResourceId] = js.native
   /**
-    * The state of the resource: enabled (registered to Amazon WorkMail) or disabled (deregistered or never registered to WorkMail).
+    * The state of the resource: enabled (registered to Amazon WorkMail), disabled (deregistered or never registered to WorkMail), or deleted.
     */
   var State: js.UndefOr[EntityState] = js.native
   /**

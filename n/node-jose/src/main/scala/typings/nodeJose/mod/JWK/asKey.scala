@@ -9,6 +9,7 @@ import typings.nodeJose.nodeJoseStrings.pkix
 import typings.nodeJose.nodeJoseStrings.public
 import typings.nodeJose.nodeJoseStrings.spki
 import typings.nodeJose.nodeJoseStrings.x509
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +21,11 @@ object asKey extends js.Object {
   def apply(
     key: String | Buffer | js.Object | RawKey,
     form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem
+  ): js.Promise[Key] = js.native
+  def apply(
+    key: String | Buffer | js.Object | RawKey,
+    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+    extras: Record[String, _]
   ): js.Promise[Key] = js.native
 }
 

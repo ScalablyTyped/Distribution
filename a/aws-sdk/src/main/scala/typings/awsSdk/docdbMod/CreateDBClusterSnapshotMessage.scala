@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateDBClusterSnapshotMessage extends js.Object {
   /**
-    * The identifier of the DB cluster to create a snapshot for. This parameter is not case sensitive. Constraints:   Must match the identifier of an existing DBCluster.   Example: my-cluster 
+    * The identifier of the cluster to create a snapshot for. This parameter is not case sensitive. Constraints:   Must match the identifier of an existing DBCluster.   Example: my-cluster 
     */
   var DBClusterIdentifier: String = js.native
   /**
-    * The identifier of the DB cluster snapshot. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: my-cluster-snapshot1 
+    * The identifier of the cluster snapshot. This parameter is stored as a lowercase string. Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Example: my-cluster-snapshot1 
     */
   var DBClusterSnapshotIdentifier: String = js.native
   /**
-    * The tags to be assigned to the DB cluster snapshot.
+    * The tags to be assigned to the cluster snapshot.
     */
   var Tags: js.UndefOr[TagList] = js.native
 }

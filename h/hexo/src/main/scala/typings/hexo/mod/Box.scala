@@ -8,7 +8,7 @@ import typings.hexo.hexoStrings.update
 import typings.hexo.mod.Box.File
 import typings.hexoUtil.mod.Pattern
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.Stats
 import typings.std.RegExp
 import scala.scalajs.js

@@ -1,6 +1,7 @@
 package typings.web3EthContract.mod
 
 import typings.std.Error
+import typings.web3Core.mod.BlockNumber
 import typings.web3Core.mod.Common
 import typings.web3Core.mod.chain
 import typings.web3Core.mod.hardfork
@@ -18,7 +19,7 @@ class Contract protected () extends js.Object {
   var _address: String = js.native
   var _jsonInterface: js.Array[AbiItem] = js.native
   var defaultAccount: String | Null = js.native
-  var defaultBlock: String | Double = js.native
+  var defaultBlock: BlockNumber = js.native
   var defaultChain: chain = js.native
   var defaultCommon: Common = js.native
   var defaultHardfork: hardfork = js.native

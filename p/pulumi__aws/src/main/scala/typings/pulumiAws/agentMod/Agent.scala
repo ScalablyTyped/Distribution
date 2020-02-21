@@ -42,7 +42,7 @@ class Agent protected () extends CustomResource {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Agent.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

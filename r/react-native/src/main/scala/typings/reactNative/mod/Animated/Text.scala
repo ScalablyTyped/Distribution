@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native", "Animated.Text")
 @js.native
 object Text
-  extends TopLevel[js.Any]
+  extends TopLevel[AnimatedComponent[typings.reactNative.mod.Text]]
 

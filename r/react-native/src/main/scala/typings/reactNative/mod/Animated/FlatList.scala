@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native", "Animated.FlatList")
 @js.native
 object FlatList
-  extends TopLevel[js.Any]
+  extends TopLevel[AnimatedComponent[typings.reactNative.mod.FlatList[js.Any]]]
 

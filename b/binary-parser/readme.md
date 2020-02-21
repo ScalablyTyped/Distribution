@@ -1,7 +1,7 @@
 
 # Scala.js typings for binary-parser
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 Blazing-fast binary parser builder

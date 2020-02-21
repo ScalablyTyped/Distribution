@@ -12,6 +12,7 @@ package object relayStoreTypesMod {
   type FragmentMap = org.scalablytyped.runtime.StringDictionary[typings.relayRuntime.readerNodeMod.ReaderFragment]
   type FragmentReference = js.Any
   type FragmentSpecResults = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type LogFunction = js.Function1[/* logEvent */ typings.relayRuntime.relayStoreTypesMod.LogEvent, scala.Unit]
   type OperationTracker = typings.relayRuntime.relayOperationTrackerMod.RelayOperationTracker
   type Primitive = js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null]
   type Props = org.scalablytyped.runtime.StringDictionary[js.Any]

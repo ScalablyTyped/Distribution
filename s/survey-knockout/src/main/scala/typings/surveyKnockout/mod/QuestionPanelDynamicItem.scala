@@ -15,34 +15,16 @@ class QuestionPanelDynamicItem protected ()
   /* CompleteClass */
   override def geSurveyData(): ISurveyData = js.native
   /* CompleteClass */
-  override def getAllValues(): js.Any = js.native
-  /* CompleteClass */
-  override def getComment(name: String): String = js.native
-  /* CompleteClass */
-  override def getFilteredProperties(): js.Any = js.native
-  /* CompleteClass */
-  override def getFilteredValues(): js.Any = js.native
-  /* CompleteClass */
   override def getSurvey(): ISurvey = js.native
   /* CompleteClass */
   override def getTextProcessor(): ITextProcessor = js.native
-  /* CompleteClass */
-  override def getValue(name: String): js.Any = js.native
-  /* CompleteClass */
-  override def getVariable(name: String): js.Any = js.native
   /* CompleteClass */
   override def processText(text: String, returnDisplayValue: Boolean): String = js.native
   def processTextEx(text: String, returnDisplayValue: Boolean): js.Any = js.native
   /* CompleteClass */
   override def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
-  /* CompleteClass */
-  override def setComment(name: String, newValue: String, locNotification: js.Any): js.Any = js.native
   def setSurveyImpl(): Unit = js.native
   def setValue(name: String, newValue: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def setValue(name: String, newValue: js.Any, locNotification: js.Any): js.Any = js.native
-  /* CompleteClass */
-  override def setVariable(name: String, newValue: js.Any): Unit = js.native
 }
 
 /* static members */

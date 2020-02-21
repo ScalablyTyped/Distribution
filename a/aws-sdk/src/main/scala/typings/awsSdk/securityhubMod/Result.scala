@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Result extends js.Object {
   /**
-    * An AWS account ID of the account that wasn't be processed.
+    * An AWS account ID of the account that was not processed.
     */
   var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.native
   /**
-    * The reason that the account wasn't be processed.
+    * The reason that the account was not processed.
     */
   var ProcessingResult: js.UndefOr[NonEmptyString] = js.native
 }

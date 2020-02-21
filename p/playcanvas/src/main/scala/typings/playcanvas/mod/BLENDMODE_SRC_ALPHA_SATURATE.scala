@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDMODE_SRC_ALPHA_SATURATE
+  * @type {number}
   * @description Multiply all fragment components by the alpha value of the source fragment.
   */
 @JSImport("playcanvas", "BLENDMODE_SRC_ALPHA_SATURATE")

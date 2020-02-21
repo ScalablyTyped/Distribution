@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.pivotItemTypesMod.IPivotItemProps
 import typings.officeUiFabricReact.pivotTypesMod.IPivotProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object libPivotMod extends js.Object {
     def this(props: IPivotItemProps) = this()
   }
   
-  val Pivot: StatelessComponent[IPivotProps] = js.native
+  val Pivot: FunctionComponent[IPivotProps] = js.native
   @js.native
   object PivotLinkFormat extends js.Object {
     /* 0 */ val links: typings.officeUiFabricReact.pivotTypesMod.PivotLinkFormat.links with Double = js.native

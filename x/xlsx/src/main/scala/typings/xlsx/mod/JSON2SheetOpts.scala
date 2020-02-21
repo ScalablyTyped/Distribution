@@ -22,6 +22,8 @@ object JSON2SheetOpts {
     cellStyles: js.UndefOr[Boolean] = js.undefined,
     dateNF: NumberFormat = null,
     header: js.Array[String] = null,
+    password: String = null,
+    sheetStubs: js.UndefOr[Boolean] = js.undefined,
     skipHeader: js.UndefOr[Boolean] = js.undefined
   ): JSON2SheetOpts = {
     val __obj = js.Dynamic.literal()
@@ -31,6 +33,8 @@ object JSON2SheetOpts {
     if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.asInstanceOf[js.Any])
     if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs.asInstanceOf[js.Any])
     if (!js.isUndefined(skipHeader)) __obj.updateDynamic("skipHeader")(skipHeader.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSON2SheetOpts]
   }

@@ -7,12 +7,12 @@ import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
 import typings.react.mod.ClassAttributes
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.StatelessComponent
 import typings.react.mod.TouchEvent
 import typings.std.HTMLElement
 import typings.std.PointerEvent
@@ -36,7 +36,7 @@ trait IContextualMenuItemWrapperProps extends ClassAttributes[IContextualMenuIte
     * @defaultvalue ContextualMenuItem
     */
   var contextualMenuItemAs: js.UndefOr[
-    (ComponentClass[IContextualMenuItemProps, ComponentState]) | StatelessComponent[IContextualMenuItemProps]
+    (ComponentClass[IContextualMenuItemProps, ComponentState]) | FunctionComponent[IContextualMenuItemProps]
   ] = js.undefined
   /**
     * This prop will get set by ContextualMenu and can be called to close the menu this item belongs to.
@@ -179,7 +179,7 @@ object IContextualMenuItemWrapperProps {
     item: IContextualMenuItem,
     totalItemCount: Double,
     componentRef: IRefObject[ContextualMenuItemWrapper] = null,
-    contextualMenuItemAs: (ComponentClass[IContextualMenuItemProps, ComponentState]) | StatelessComponent[IContextualMenuItemProps] = null,
+    contextualMenuItemAs: (ComponentClass[IContextualMenuItemProps, ComponentState]) | FunctionComponent[IContextualMenuItemProps] = null,
     dismissMenu: (/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit = null,
     dismissSubMenu: () => Unit = null,
     executeItemClick: (/* item */ IContextualMenuItem, /* ev */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]) => Unit = null,

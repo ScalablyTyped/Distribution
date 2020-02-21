@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth-ens
 
-Typings are for version 1.2.4
+Typings are for version 1.2.6
 
 ## Library description:
 ENS support for web3.

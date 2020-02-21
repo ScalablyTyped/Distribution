@@ -1,13 +1,12 @@
 package typings.playcanvas.pc
 
 import typings.std.Float32Array
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.Mat3
   * @classdesc A 3x3 matrix.
   * @description Creates a new identity Mat3 object.
@@ -24,8 +23,8 @@ class Mat3 () extends js.Object {
     * @function
     * @name pc.Mat3#copy
     * @description Copies the contents of a source 3x3 matrix to a destination 3x3 matrix.
-    * @param {pc.Mat3} rhs A 3x3 matrix to be copied.
-    * @returns {pc.Mat3} Self for chaining
+    * @param {pc.Mat3} rhs - A 3x3 matrix to be copied.
+    * @returns {pc.Mat3} Self for chaining.
     * @example
     * var src = new pc.Mat3().translate(10, 20, 30);
     * var dst = new pc.Mat3();
@@ -36,9 +35,9 @@ class Mat3 () extends js.Object {
   /**
     * @function
     * @name pc.Mat3#equals
-    * @param {pc.Mat3} rhs The other matrix.
+    * @param {pc.Mat3} rhs - The other matrix.
     * @description Reports whether two matrices are equal.
-    * @returns {Boolean} true if the matrices are equal and false otherwise.
+    * @returns {boolean} True if the matrices are equal and false otherwise.
     * @example
     * var a = new pc.Mat3().translate(10, 20, 30);
     * var b = new pc.Mat3();
@@ -49,7 +48,7 @@ class Mat3 () extends js.Object {
     * @function
     * @name pc.Mat3#isIdentity
     * @description Reports whether the specified matrix is the identity matrix.
-    * @returns {Boolean} true if the matrix is identity and false otherwise.
+    * @returns {boolean} True if the matrix is identity and false otherwise.
     * @example
     * var m = new pc.Mat3();
     * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
@@ -59,13 +58,13 @@ class Mat3 () extends js.Object {
     * @function
     * @name pc.Mat3#set
     * @description Copies the contents of a source array[9] to a destination 3x3 matrix.
-    * @param {Number[]} src An array[9] to be copied.
-    * @returns {pc.Mat3} Self for chaining
+    * @param {number[]} src - An array[9] to be copied.
+    * @returns {pc.Mat3} Self for chaining.
     * @example
     * var dst = new pc.Mat3();
     * dst.set([0, 1, 2, 3, 4, 5, 6, 7, 8]);
     */
-  def set(src: js.Array[Number]): Mat3 = js.native
+  def set(src: js.Array[Double]): Mat3 = js.native
   /**
     * @function
     * @name pc.Mat3#setIdentity
@@ -98,8 +97,8 @@ object Mat3 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Mat3
     * @name pc.Mat3.IDENTITY
+    * @type {pc.Mat3}
     * @description A constant matrix set to the identity.
     */
   val IDENTITY: Mat3 = js.native
@@ -107,8 +106,8 @@ object Mat3 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Mat3
     * @name pc.Mat3.ZERO
+    * @type {pc.Mat3}
     * @description A constant matrix with all elements set to 0.
     */
   val ZERO: Mat3 = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.SCROLL_MODE_BOUNCE
   * @description Content scrolls past its bounds and then gently bounces back.
   */

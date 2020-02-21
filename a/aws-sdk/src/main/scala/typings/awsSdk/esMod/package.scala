@@ -132,6 +132,7 @@ package object esMod {
     - java.lang.String
   */
   type OptionState = typings.awsSdk.esMod._OptionState | java.lang.String
+  type Password = java.lang.String
   type PolicyDocument = java.lang.String
   type RecurringChargeList = js.Array[typings.awsSdk.esMod.RecurringCharge]
   type ReservationToken = java.lang.String
@@ -183,6 +184,7 @@ package object esMod {
   type UpgradeStep = typings.awsSdk.esMod._UpgradeStep | java.lang.String
   type UpgradeStepsList = js.Array[typings.awsSdk.esMod.UpgradeStepItem]
   type UserPoolId = java.lang.String
+  type Username = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.standard__
     - typings.awsSdk.awsSdkStrings.gp2

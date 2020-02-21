@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.KEY_MULTIPLY
   */
 @JSGlobal("pc.KEY_MULTIPLY")

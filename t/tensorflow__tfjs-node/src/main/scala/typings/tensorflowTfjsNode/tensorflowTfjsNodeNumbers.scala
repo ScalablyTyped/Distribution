@@ -24,6 +24,9 @@ object tensorflowTfjsNodeNumbers {
   sealed trait `2` extends js.Object
   
   @js.native
+  sealed trait `30` extends js.Object
+  
+  @js.native
   sealed trait `32` extends js.Object
   
   @scala.inline
@@ -38,6 +41,8 @@ object tensorflowTfjsNodeNumbers {
   def `16`: `16` = 16.asInstanceOf[`16`]
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
+  @scala.inline
+  def `30`: `30` = 30.asInstanceOf[`30`]
   @scala.inline
   def `32`: `32` = 32.asInstanceOf[`32`]
 }

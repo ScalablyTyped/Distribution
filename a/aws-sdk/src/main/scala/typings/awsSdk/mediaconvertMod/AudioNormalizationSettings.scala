@@ -15,7 +15,7 @@ trait AudioNormalizationSettings extends js.Object {
     */
   var AlgorithmControl: js.UndefOr[AudioNormalizationAlgorithmControl] = js.native
   /**
-    * Content measuring above this level will be corrected to the target level. Content measuring below this level will not be corrected. Gating only applies when not using real_time_correction.
+    * Content measuring above this level will be corrected to the target level. Content measuring below this level will not be corrected.
     */
   var CorrectionGateLevel: js.UndefOr[integerMinNegative70Max0] = js.native
   /**

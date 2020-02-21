@@ -1,8 +1,10 @@
 package typings.mochaEach
 
-import typings.mocha.Mocha_.ITest
-import typings.mocha.Mocha_.ITestCallbackContext
-import typings.mocha.Mocha_.ITestDefinition
+import typings.mocha.Mocha_.SuiteFunction
+import typings.mocha.Mocha_.TestFunction
+import typings.mocha.mod.Context
+import typings.mocha.mod.Suite_
+import typings.mocha.mod.Test_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,52 +13,40 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   /**
-    * This interface describes the kind of `it` available from a `forEach` call.
-    * The result is very similar to Mocha's `ITestDefinition` interface.
+    * This interface describes the kind of `describe` available from a `forEach` call.
+    * The result is almost identical to Mocha's `SuiteFunction` interface.
     */
   @js.native
-  trait ForEachITestDefinition extends js.Object {
-    /*
-      * The callback functions in each of these properties take a variable
-      * number of arguments, based on how many values were passed in tuples
-      * in the call of forEach that generated this property.
-      *
-      * This problem is similar to `Function.prototype.apply`, which also
-      * does not have strong typing
-      * (see github.com/Microsoft/Typescript/issues/212).
-      *
-      * These callback functions can all accept an optional callback generated
-      * by mocha, which is used for asynchronous code testing. However,
-      * since rest parameters have to be the final parameter in a function
-      * declaration, this function cannot be explicitly mentioned here.
-      *
-      * A more accurate signature for the callback functions would be
-      *     callback?: (this, ...args, done?: MochaDone)
-      * Additionally, Mocha does not export its MochaDone interface.
-      */
-    def apply(expectation: String): ITest = js.native
-    def apply(
-      expectation: String,
-      callback: js.ThisFunction1[/* this */ ITestCallbackContext, /* repeated */ js.Any, _]
-    ): ITest = js.native
-    def only(expectation: String): ITest = js.native
-    def only(
-      expectation: String,
-      callback: js.ThisFunction1[/* this */ ITestCallbackContext, /* repeated */ js.Any, _]
-    ): ITest = js.native
-    def skip(expectation: String): ITest = js.native
-    def skip(
-      expectation: String,
-      callback: js.ThisFunction1[/* this */ ITestCallbackContext, /* repeated */ js.Any, _]
-    ): ITest = js.native
+  trait ForEachDescribeDefinition extends js.Object {
+    def apply(expectation: String): Suite_ = js.native
+    def apply(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Suite_ = js.native
+    def only(expectation: String): Suite_ = js.native
+    def only(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Suite_ = js.native
+    def skip(expectation: String): Suite_ = js.native
+    def skip(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Suite_ = js.native
+  }
+  
+  /**
+    * This interface describes the kind of `it` available from a `forEach` call.
+    * The result is very similar to Mocha's `TestFunction` interface.
+    */
+  @js.native
+  trait ForEachTestFunction extends js.Object {
+    def apply(expectation: String): Test_ = js.native
+    def apply(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Test_ = js.native
+    def only(expectation: String): Test_ = js.native
+    def only(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Test_ = js.native
+    def skip(expectation: String): Test_ = js.native
+    def skip(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, _]): Test_ = js.native
   }
   
   /**
     * This function takes an array collections of parameters to be used in
-    * a series of mocha tests, defined using the `it` notation common to
+    * a series of mocha tests, defined using the `it` or `describe` notation common to
     * Mocha.
     */
-  def apply(parameters: js.Array[_]): AnonIt = js.native
-  def apply(parameters: js.Array[_], defaultIt: ITestDefinition): AnonIt = js.native
+  def apply(parameters: js.Array[_]): AnonDescribe = js.native
+  def apply(parameters: js.Array[_], dIt: TestFunction): AnonDescribe = js.native
+  def apply(parameters: js.Array[_], dIt: TestFunction, dDescribe: SuiteFunction): AnonDescribe = js.native
 }
 

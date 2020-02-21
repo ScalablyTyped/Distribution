@@ -1,11 +1,11 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.Endpoint
-import typings.octokitRest.mod.EndpointOptions
-import typings.octokitRest.mod.PullsCheckIfMergedParams
-import typings.octokitRest.mod.PullsCheckIfMergedParamsDeprecatedNumber
-import typings.octokitRest.mod.RequestOptions
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.Endpoint
+import typings.octokitRest.mod.Octokit.EndpointOptions
+import typings.octokitRest.mod.Octokit.PullsCheckIfMergedParams
+import typings.octokitRest.mod.Octokit.PullsCheckIfMergedParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

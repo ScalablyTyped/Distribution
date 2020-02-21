@@ -18,6 +18,7 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TransitionEvent
@@ -84,7 +85,7 @@ trait UncontrolledPopoverProps extends PopoverProps {
 object UncontrolledPopoverProps {
   @scala.inline
   def apply(
-    target: String | HTMLElement,
+    target: String | HTMLElement | RefObject[HTMLElement],
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -142,7 +143,7 @@ object UncontrolledPopoverProps {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    container: String | HTMLElement = null,
+    container: String | HTMLElement | RefObject[HTMLElement] = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     cssModule: CSSModule = null,

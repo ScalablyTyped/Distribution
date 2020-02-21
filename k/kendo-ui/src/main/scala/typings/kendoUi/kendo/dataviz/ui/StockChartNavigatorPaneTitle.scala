@@ -9,7 +9,7 @@ trait StockChartNavigatorPaneTitle extends js.Object {
   var border: js.UndefOr[StockChartNavigatorPaneTitleBorder] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[StockChartNavigatorPaneTitleMargin] = js.undefined
+  var margin: js.UndefOr[Double | StockChartNavigatorPaneTitleMargin] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -22,7 +22,7 @@ object StockChartNavigatorPaneTitle {
     border: StockChartNavigatorPaneTitleBorder = null,
     color: String = null,
     font: String = null,
-    margin: StockChartNavigatorPaneTitleMargin = null,
+    margin: Double | StockChartNavigatorPaneTitleMargin = null,
     position: String = null,
     text: String = null,
     visible: js.UndefOr[Boolean] = js.undefined

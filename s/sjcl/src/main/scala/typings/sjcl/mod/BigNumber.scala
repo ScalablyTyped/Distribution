@@ -19,6 +19,8 @@ trait BigNumber extends js.Object {
   var inverseMod: BigNumberBinaryOperator = js.native
   var maxMul: Double = js.native
   var mod: BigNumberBinaryOperator = js.native
+  /// this ^ x mod N with Montomery reduction
+  var montpowermod: BigNumberTrinaryOperator = js.native
   /// this * that.  Normalizes and reduces.
   var mul: BigNumberBinaryOperator = js.native
   /// this * that mod N
@@ -37,25 +39,25 @@ trait BigNumber extends js.Object {
   def copy(): BigNumber = js.native
   /// this *= 2.  Requires normalized; ends up normalized.
   def doubleM(): BigNumber = js.native
+  def equals(that: Double): Boolean = js.native
   /// Returns true if "this" and "that" are equal.  Calls fullReduce().
   /// Equality test is in constant time.
-  def equals(that: Double): Boolean = js.native
   def equals(that: BigNumber): Boolean = js.native
   /// Reduce and normalize.
   def fullReduce(): BigNumber = js.native
   /// Get the i'th limb of this, zero if i is too large.
   def getLimb(index: Double): Double = js.native
+  def greaterEquals(that: Double): Boolean = js.native
   /// Constant time comparison function.
   /// Returns 1 if this >= that, or zero otherwise.
-  def greaterEquals(that: Double): Boolean = js.native
   def greaterEquals(that: BigNumber): Boolean = js.native
   /// this /= 2, rounded down.  Requires normalized; ends up normalized.
   def halveM(): BigNumber = js.native
   /// Propagate carries.
   def normalize(): BigNumber = js.native
-  def power(a: js.Array[Double]): BigNumber = js.native
-  /// this ^ n.  Uses square-and-multiply.  Normalizes and reduces.
+  def power(n: js.Array[Double]): BigNumber = js.native
   def power(n: Double): BigNumber = js.native
+  /// this ^ n.  Uses square-and-multiply.  Normalizes and reduces.
   def power(n: BigNumber): BigNumber = js.native
   /// Reduce mod a modulus.  Stubbed for subclassing.
   def reduce(): BigNumber = js.native

@@ -48,7 +48,7 @@ class TreeItem protected () extends js.Object {
   		 */
   var contextValue: js.UndefOr[String] = js.native
   /**
-  		 * A human readable string which is rendered less prominent.
+  		 * A human-readable string which is rendered less prominent.
   		 * When `true`, it is derived from [resourceUri](#TreeItem.resourceUri) and when `falsy`, it is not shown.
   		 */
   var description: js.UndefOr[String | Boolean] = js.native

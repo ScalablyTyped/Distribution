@@ -11,7 +11,7 @@ trait DescribeDBLogFilesResponse extends js.Object {
     */
   var DescribeDBLogFiles: js.UndefOr[DescribeDBLogFilesList] = js.native
   /**
-    * A pagination token that can be used in a subsequent DescribeDBLogFiles request.
+    * A pagination token that can be used in a later DescribeDBLogFiles request.
     */
   var Marker: js.UndefOr[String] = js.native
 }

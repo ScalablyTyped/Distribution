@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/ui" : "5.3.7"
+      "@storybook/ui" : "5.3.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/ui" : "5.3.7"
+      "@storybook/ui" : "5.3.13"
     }
   ],
   "compile-devDependencies" : [

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
+    * Provide a function to be called with the error and a string representation of the erro
     * Defaults to true.
     *
     * Possible values:

@@ -854,6 +854,7 @@ package object ssmMod {
   type PatchSourceName = java.lang.String
   type PatchSourceProduct = java.lang.String
   type PatchSourceProductList = js.Array[typings.awsSdk.ssmMod.PatchSourceProduct]
+  type PatchStringDate = java.lang.String
   type PatchTitle = java.lang.String
   type PatchUnreportedNotApplicableCount = scala.Double
   type PatchVendor = java.lang.String

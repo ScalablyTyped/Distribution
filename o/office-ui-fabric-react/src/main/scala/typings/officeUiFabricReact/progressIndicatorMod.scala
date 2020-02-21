@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.progressIndicatorTypesMod.IProgressIndicatorProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object progressIndicatorMod extends js.Object {
   class ProgressIndicatorBase ()
     extends typings.officeUiFabricReact.progressIndicatorBaseMod.ProgressIndicatorBase
   
-  val ProgressIndicator: StatelessComponent[IProgressIndicatorProps] = js.native
+  val ProgressIndicator: FunctionComponent[IProgressIndicatorProps] = js.native
   /* static members */
   @js.native
   object ProgressIndicatorBase extends js.Object {

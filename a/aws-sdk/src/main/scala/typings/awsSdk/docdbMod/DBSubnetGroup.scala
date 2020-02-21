@@ -11,23 +11,23 @@ trait DBSubnetGroup extends js.Object {
     */
   var DBSubnetGroupArn: js.UndefOr[String] = js.native
   /**
-    * Provides the description of the DB subnet group.
+    * Provides the description of the subnet group.
     */
   var DBSubnetGroupDescription: js.UndefOr[String] = js.native
   /**
-    * The name of the DB subnet group.
+    * The name of the subnet group.
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.native
   /**
-    * Provides the status of the DB subnet group.
+    * Provides the status of the subnet group.
     */
   var SubnetGroupStatus: js.UndefOr[String] = js.native
   /**
-    * Detailed information about one or more subnets within a DB subnet group.
+    * Detailed information about one or more subnets within a subnet group.
     */
   var Subnets: js.UndefOr[SubnetList] = js.native
   /**
-    * Provides the virtual private cloud (VPC) ID of the DB subnet group.
+    * Provides the virtual private cloud (VPC) ID of the subnet group.
     */
   var VpcId: js.UndefOr[String] = js.native
 }

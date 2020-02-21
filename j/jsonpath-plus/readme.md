@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsonpath-plus
 
-Typings are for version 1.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 A JS implementation of JSONPath with some additional operators

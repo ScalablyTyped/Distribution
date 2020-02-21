@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object Identifier
   extends TopLevel[
       Record[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 320 */ js.Any, 
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 319 */ js.Any, 
         js.Function1[/* value */ String, js.Any]
       ]
     ]

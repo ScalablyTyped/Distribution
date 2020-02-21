@@ -12,8 +12,8 @@ class JsonObjectProperty protected () extends IObject {
   def this(name: String, isRequired: Boolean) = this()
   var alternativeName: String = js.native
   var baseClassName: String = js.native
-  var cagetoryIndex: Double = js.native
   var category: String = js.native
+  var categoryIndex: Double = js.native
   /**
     * Depricated, please use getChoices
     */
@@ -39,8 +39,10 @@ class JsonObjectProperty protected () extends IObject {
   var name: String = js.native
   var readOnly: Boolean = js.native
   var serializationProperty: String = js.native
+  var showMode: String = js.native
   var `type`: String = js.native
   var visible: Boolean = js.native
+  var visibleIndex: Double = js.native
   def addDependedProperty(name: String): Unit = js.native
   def getBaseValue(): String = js.native
   def getChoices(obj: js.Any): js.Array[_] = js.native

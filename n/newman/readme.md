@@ -1,7 +1,7 @@
 
 # Scala.js typings for newman
 
-Typings are for version 3.11
+Typings are for version 4.5
 
 ## Library description:
 Command-line companion utility for Postman

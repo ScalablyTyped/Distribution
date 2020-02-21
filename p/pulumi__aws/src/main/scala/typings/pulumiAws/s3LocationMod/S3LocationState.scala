@@ -29,7 +29,7 @@ trait S3LocationState extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   val uri: js.UndefOr[Input[String]] = js.native
 }
 
@@ -40,7 +40,7 @@ object S3LocationState {
     s3BucketArn: Input[ARN] = null,
     s3Config: Input[S3LocationS3Config] = null,
     subdirectory: Input[String] = null,
-    tags: Input[StringDictionary[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     uri: Input[String] = null
   ): S3LocationState = {
     val __obj = js.Dynamic.literal()

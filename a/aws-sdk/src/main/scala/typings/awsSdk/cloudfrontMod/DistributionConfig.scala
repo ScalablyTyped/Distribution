@@ -67,7 +67,7 @@ trait DistributionConfig extends js.Object {
     */
   var Restrictions: js.UndefOr[typings.awsSdk.cloudfrontMod.Restrictions] = js.native
   /**
-    * A complex type that specifies whether you want viewers to use HTTP or HTTPS to request your objects, whether you're using an alternate domain name with HTTPS, and if so, if you're using AWS Certificate Manager (ACM) or a third-party certificate authority.
+    * A complex type that determines the distribution’s SSL/TLS configuration for communicating with viewers.
     */
   var ViewerCertificate: js.UndefOr[typings.awsSdk.cloudfrontMod.ViewerCertificate] = js.native
   /**

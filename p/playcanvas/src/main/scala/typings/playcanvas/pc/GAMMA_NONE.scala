@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.GAMMA_NONE
+  * @type {number}
   * @description No gamma correction.
   */
 @JSGlobal("pc.GAMMA_NONE")

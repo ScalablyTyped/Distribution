@@ -37,6 +37,7 @@ class Scene () extends js.Object {
   var invertClassification: Boolean = js.native
   var invertClassificationColor: Color = js.native
   val lastRenderTime: JulianDate = js.native
+  var light: Light = js.native
   var logarithmicDepthFarToNearRatio: Double = js.native
   var mapMode2D: Boolean = js.native
   val mapProjection: MapProjection = js.native

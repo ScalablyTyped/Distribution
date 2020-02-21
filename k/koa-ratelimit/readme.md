@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-ratelimit
 
-Typings are for version 4.1
+Typings are for version 4.2
 
 ## Library description:
 Rate limiter middleware for koa

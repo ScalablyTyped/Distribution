@@ -21,7 +21,13 @@ object jasmineStrings {
   sealed trait SpyObjMethodNames extends js.Object
   
   @js.native
+  sealed trait SpyObjPropertyNames extends js.Object
+  
+  @js.native
   sealed trait get extends js.Object
+  
+  @js.native
+  sealed trait objectContaining_ extends js.Object
   
   @js.native
   sealed trait set extends js.Object
@@ -37,7 +43,11 @@ object jasmineStrings {
   @scala.inline
   def SpyObjMethodNames: SpyObjMethodNames = "SpyObjMethodNames".asInstanceOf[SpyObjMethodNames]
   @scala.inline
+  def SpyObjPropertyNames: SpyObjPropertyNames = "SpyObjPropertyNames".asInstanceOf[SpyObjPropertyNames]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
+  def objectContaining_ : objectContaining_ = "objectContaining".asInstanceOf[objectContaining_]
   @scala.inline
   def set: set = "set".asInstanceOf[set]
 }

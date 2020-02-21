@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeDBClusterSnapshotAttributesMessage extends js.Object {
   /**
-    * The identifier for the DB cluster snapshot to describe the attributes for.
+    * The identifier for the cluster snapshot to describe the attributes for.
     */
   var DBClusterSnapshotIdentifier: String = js.native
 }

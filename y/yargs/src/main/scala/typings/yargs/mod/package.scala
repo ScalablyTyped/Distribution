@@ -32,6 +32,7 @@ package object mod {
     /* output */ java.lang.String, 
     scala.Unit
   ]
+  type ParserConfigurationOptions = typings.yargsParser.mod.Configuration with typings.yargs.AnonSortcommands
   type PromiseCompletionFunction = js.Function2[
     /* current */ java.lang.String, 
     /* argv */ js.Any, 

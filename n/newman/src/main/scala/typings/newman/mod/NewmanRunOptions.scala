@@ -1,7 +1,10 @@
 package typings.newman.mod
 
+import typings.newman.newmanStrings.auto
 import typings.newman.newmanStrings.failure
 import typings.newman.newmanStrings.folder
+import typings.newman.newmanStrings.off
+import typings.newman.newmanStrings.on
 import typings.postmanCollection.mod.Collection
 import typings.postmanCollection.mod.CollectionDefinition
 import typings.postmanCollection.mod.VariableScope
@@ -28,9 +31,11 @@ trait NewmanRunOptions extends js.Object {
   /** A JSON / Collection / String representing the collection. */
   var collection: Collection | CollectionDefinition | String
   /**
-    * Forces colored CLI output (for use in CI / non TTY environments).
+    * Enable or Disable colored CLI output.
+    *
+    * Default value: auto
     */
-  var color: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[on | off | auto] = js.undefined
   /**
     * Specify the time (in milliseconds) to wait for between subsequent
     * requests.
@@ -44,7 +49,7 @@ trait NewmanRunOptions extends js.Object {
     * The name or ID of the folder (ItemGroup) in the collection which would
     * be run instead of the entire collection.
     */
-  var folder: js.UndefOr[String] = js.undefined
+  var folder: js.UndefOr[String | js.Array[String]] = js.undefined
   /** A globals JSON / file path for the current collection run. */
   var globals: js.UndefOr[VariableScope | VariableScopeDefinition | String] = js.undefined
   /**
@@ -61,6 +66,10 @@ trait NewmanRunOptions extends js.Object {
     */
   var insecure: js.UndefOr[Boolean] = js.undefined
   /**
+    * Allow reading files outside of working directory.
+    */
+  var insecureFileRead: js.UndefOr[Boolean] = js.undefined
+  /**
     * Specify the number of iterations to run on the collection. This is
     * usually accompanied by providing a data file reference as
     * iterationData
@@ -71,13 +80,6 @@ trait NewmanRunOptions extends js.Object {
     * running multiple iterations on a collection.
     */
   var iterationData: js.UndefOr[js.Any] = js.undefined
-  /**
-    * Newman attempts to automatically turn off color output to terminals when
-    * it detects the lack of color support. With this property, one can
-    * forcibly turn off the usage of color in terminal output for reporters
-    * and other parts of Newman that output to console.
-    */
-  var noColor: js.UndefOr[Boolean] = js.undefined
   /**
     * Specify options for the reporter(s) declared in options.reporters.
     */
@@ -124,6 +126,10 @@ trait NewmanRunOptions extends js.Object {
     * Default value: Infinity
     */
   var timeoutScript: js.UndefOr[Double] = js.undefined
+  /**
+    * The path of the directory to be used as working directory.
+    */
+  var workingDir: js.UndefOr[String] = js.undefined
 }
 
 object NewmanRunOptions {
@@ -131,16 +137,16 @@ object NewmanRunOptions {
   def apply(
     collection: Collection | CollectionDefinition | String,
     bail: Boolean | (js.Array[folder | failure]) = null,
-    color: js.UndefOr[Boolean] = js.undefined,
+    color: on | off | auto = null,
     delayRequest: Int | Double = null,
     environment: VariableScope | VariableScopeDefinition | String = null,
-    folder: String = null,
+    folder: String | js.Array[String] = null,
     globals: VariableScope | VariableScopeDefinition | String = null,
     ignoreRedirects: js.UndefOr[Boolean] = js.undefined,
     insecure: js.UndefOr[Boolean] = js.undefined,
+    insecureFileRead: js.UndefOr[Boolean] = js.undefined,
     iterationCount: Int | Double = null,
     iterationData: js.Any = null,
-    noColor: js.UndefOr[Boolean] = js.undefined,
     reporter: js.Any = null,
     reporters: String | js.Array[String] = null,
     sslClientCert: String = null,
@@ -149,20 +155,21 @@ object NewmanRunOptions {
     suppressExitCode: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
     timeoutRequest: Int | Double = null,
-    timeoutScript: Int | Double = null
+    timeoutScript: Int | Double = null,
+    workingDir: String = null
   ): NewmanRunOptions = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any])
     if (bail != null) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (delayRequest != null) __obj.updateDynamic("delayRequest")(delayRequest.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreRedirects)) __obj.updateDynamic("ignoreRedirects")(ignoreRedirects.asInstanceOf[js.Any])
     if (!js.isUndefined(insecure)) __obj.updateDynamic("insecure")(insecure.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecureFileRead)) __obj.updateDynamic("insecureFileRead")(insecureFileRead.asInstanceOf[js.Any])
     if (iterationCount != null) __obj.updateDynamic("iterationCount")(iterationCount.asInstanceOf[js.Any])
     if (iterationData != null) __obj.updateDynamic("iterationData")(iterationData.asInstanceOf[js.Any])
-    if (!js.isUndefined(noColor)) __obj.updateDynamic("noColor")(noColor.asInstanceOf[js.Any])
     if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     if (sslClientCert != null) __obj.updateDynamic("sslClientCert")(sslClientCert.asInstanceOf[js.Any])
@@ -172,6 +179,7 @@ object NewmanRunOptions {
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (timeoutRequest != null) __obj.updateDynamic("timeoutRequest")(timeoutRequest.asInstanceOf[js.Any])
     if (timeoutScript != null) __obj.updateDynamic("timeoutScript")(timeoutScript.asInstanceOf[js.Any])
+    if (workingDir != null) __obj.updateDynamic("workingDir")(workingDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewmanRunOptions]
   }
 }

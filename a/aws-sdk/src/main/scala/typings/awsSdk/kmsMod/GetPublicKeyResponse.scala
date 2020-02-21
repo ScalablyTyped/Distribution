@@ -23,7 +23,7 @@ trait GetPublicKeyResponse extends js.Object {
     */
   var KeyUsage: js.UndefOr[KeyUsageType] = js.native
   /**
-    * The exported public key.  This value is returned as a binary Distinguished Encoding Rules (DER)-encoded object. To decode it, use an ASN.1 parsing tool, such as OpenSSL asn1parse.
+    * The exported public key.  The value is a DER-encoded X.509 public key, also known as SubjectPublicKeyInfo (SPKI), as defined in RFC 5280. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded. 
     */
   var PublicKey: js.UndefOr[PublicKeyType] = js.native
   /**

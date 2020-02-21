@@ -19,7 +19,7 @@ trait RobotApplicationSummary extends js.Object {
     */
   var name: js.UndefOr[Name] = js.native
   /**
-    * Information about a robot software suite.
+    * Information about a robot software suite (ROS distribution).
     */
   var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.native
   /**

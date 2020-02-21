@@ -15,21 +15,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IGroupHeaderProps extends IGroupDividerProps {
-  /**
-    * GroupedList id for aria-controls
-    */
+  /** Defines an element's number or position in the current set of listitems or treeitems */
+  var ariaPosInSet: js.UndefOr[Double] = js.undefined
+  /** Defines the number of items in the current set of listitems or treeitems */
+  var ariaSetSize: js.UndefOr[Double] = js.undefined
+  /** GroupedList id for aria-controls */
   var groupedListId: js.UndefOr[String] = js.undefined
   /** Native props for the GroupHeader select all button */
   var selectAllButtonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.undefined
-  /**
-    * Style function to be passed in to override the themed or default styles
-    */
+  /** Style function to be passed in to override the themed or default styles */
   var styles: js.UndefOr[IStyleFunctionOrObject[IGroupHeaderStyleProps, IGroupHeaderStyles]] = js.undefined
 }
 
 object IGroupHeaderProps {
   @scala.inline
   def apply(
+    ariaPosInSet: Int | Double = null,
+    ariaSetSize: Int | Double = null,
     className: String = null,
     compact: js.UndefOr[Boolean] = js.undefined,
     componentRef: IRefObject[js.Object] = null,
@@ -59,6 +61,8 @@ object IGroupHeaderProps {
     viewport: IViewport = null
   ): IGroupHeaderProps = {
     val __obj = js.Dynamic.literal()
+    if (ariaPosInSet != null) __obj.updateDynamic("ariaPosInSet")(ariaPosInSet.asInstanceOf[js.Any])
+    if (ariaSetSize != null) __obj.updateDynamic("ariaSetSize")(ariaSetSize.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])

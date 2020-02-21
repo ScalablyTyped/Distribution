@@ -36,6 +36,7 @@ object ApolloServerExpressConfig {
     cacheControl: CacheControlExtensionOptions | Boolean = null,
     context: (ContextFunction[ExpressContext, Context[js.Object]]) | Context[js.Object] = null,
     engine: Boolean | EngineReportingOptions[Context[js.Object]] = null,
+    experimental_approximateDocumentStoreMiB: Int | Double = null,
     extensions: js.Array[js.Function0[typings.graphqlExtensions.mod.GraphQLExtension[_]]] = null,
     gateway: GraphQLService = null,
     introspection: js.UndefOr[Boolean] = js.undefined,
@@ -57,6 +58,7 @@ object ApolloServerExpressConfig {
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (experimental_approximateDocumentStoreMiB != null) __obj.updateDynamic("experimental_approximateDocumentStoreMiB")(experimental_approximateDocumentStoreMiB.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (gateway != null) __obj.updateDynamic("gateway")(gateway.asInstanceOf[js.Any])
     if (!js.isUndefined(introspection)) __obj.updateDynamic("introspection")(introspection.asInstanceOf[js.Any])

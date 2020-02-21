@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.SPRITE_RENDERMODE_SIMPLE
   * @description This mode renders a sprite as a simple quad.
   */

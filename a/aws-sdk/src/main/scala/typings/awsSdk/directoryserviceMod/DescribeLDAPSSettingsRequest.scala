@@ -19,7 +19,7 @@ trait DescribeLDAPSSettingsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
   /**
-    * The type of LDAP security the customer wants to enable, either server or client. Currently supports only Client, (the default).
+    * The type of LDAP security to enable. Currently only the value Client is supported.
     */
   var Type: js.UndefOr[LDAPSType] = js.native
 }

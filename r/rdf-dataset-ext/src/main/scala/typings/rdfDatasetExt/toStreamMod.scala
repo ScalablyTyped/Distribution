@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rdf-dataset-ext/toStream", JSImport.Namespace)
 @js.native
 object toStreamMod extends js.Object {
-  def apply[Q /* <: BaseQuad */](dataset: DatasetCore[Q]): Stream[Q] = js.native
+  def apply[Q /* <: BaseQuad */](dataset: DatasetCore[Q, Q]): Stream[Q] = js.native
 }
 

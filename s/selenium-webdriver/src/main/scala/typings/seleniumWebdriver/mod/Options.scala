@@ -50,7 +50,7 @@ class Options protected () extends js.Object {
     *     named cookie, or {@code null} if there is no such cookie.
     * @see http://code.google.com/p/selenium/wiki/JsonWireProtocol#Cookie_JSON_Object
     */
-  def getCookie(name: String): js.Promise[IWebDriverOptionsCookie] = js.native
+  def getCookie(name: String): js.Promise[IWebDriverCookie] = js.native
   /**
     * Schedules a command to retrieve all cookies visible to the current page.
     * Each cookie will be returned as a JSON object as described by the WebDriver
@@ -59,7 +59,7 @@ class Options protected () extends js.Object {
     *     cookies visible to the current page.
     * @see http://code.google.com/p/selenium/wiki/JsonWireProtocol#Cookie_JSON_Object
     */
-  def getCookies(): js.Promise[js.Array[IWebDriverOptionsCookie]] = js.native
+  def getCookies(): js.Promise[js.Array[IWebDriverCookie]] = js.native
   /**
     * The current timeouts
     */

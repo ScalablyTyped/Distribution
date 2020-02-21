@@ -1,11 +1,10 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.GridColumnGapProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GridColumnGapProps[TLength] extends js.Object {
+trait GridColumnGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
   /**
     * The column-gap CSS property sets the size of the gap (gutter) between an element's columns.
     *
@@ -13,15 +12,15 @@ trait GridColumnGapProps[TLength] extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap)
     */
-  var gridColumnGap: js.UndefOr[ResponsiveValue[GridColumnGapProperty[TLength]]] = js.undefined
+  var gridColumnGap: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 
 object GridColumnGapProps {
   @scala.inline
-  def apply[TLength](gridColumnGap: ResponsiveValue[GridColumnGapProperty[TLength]] = null): GridColumnGapProps[TLength] = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](gridColumnGap: ResponsiveValue[TVal, ThemeType] = null): GridColumnGapProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (gridColumnGap != null) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GridColumnGapProps[TLength]]
+    __obj.asInstanceOf[GridColumnGapProps[ThemeType, TVal]]
   }
 }
 

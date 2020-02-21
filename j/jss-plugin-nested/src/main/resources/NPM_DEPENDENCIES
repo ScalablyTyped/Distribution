@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-nested" : "10.0.3"
+      "jss-plugin-nested" : "10.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-nested" : "10.0.3"
+      "jss-plugin-nested" : "10.0.4"
     }
   ],
   "compile-devDependencies" : [

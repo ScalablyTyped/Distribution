@@ -15,6 +15,7 @@ trait TreeListPageable extends js.Object {
   var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
   var previousNext: js.UndefOr[Boolean] = js.undefined
   var refresh: js.UndefOr[Boolean] = js.undefined
+  var responsive: js.UndefOr[Boolean] = js.undefined
 }
 
 object TreeListPageable {
@@ -29,7 +30,8 @@ object TreeListPageable {
     pageSize: Int | Double = null,
     pageSizes: Boolean | js.Any = null,
     previousNext: js.UndefOr[Boolean] = js.undefined,
-    refresh: js.UndefOr[Boolean] = js.undefined
+    refresh: js.UndefOr[Boolean] = js.undefined,
+    responsive: js.UndefOr[Boolean] = js.undefined
   ): TreeListPageable = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.asInstanceOf[js.Any])
@@ -42,6 +44,7 @@ object TreeListPageable {
     if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
     if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext.asInstanceOf[js.Any])
     if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListPageable]
   }
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CUBEFACE_NEGX
+  * @type {number}
   * @description The negative X face of a cubemap.
   */
 @JSGlobal("pc.CUBEFACE_NEGX")

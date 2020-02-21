@@ -52,6 +52,19 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationEfsResponse, Unit]
   ): Request[CreateLocationEfsResponse, AWSError] = js.native
   /**
+    * Creates an endpoint for an Amazon FSx for Windows file system.
+    */
+  def createLocationFsxWindows(): Request[CreateLocationFsxWindowsResponse, AWSError] = js.native
+  def createLocationFsxWindows(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationFsxWindowsResponse, Unit]): Request[CreateLocationFsxWindowsResponse, AWSError] = js.native
+  /**
+    * Creates an endpoint for an Amazon FSx for Windows file system.
+    */
+  def createLocationFsxWindows(params: CreateLocationFsxWindowsRequest): Request[CreateLocationFsxWindowsResponse, AWSError] = js.native
+  def createLocationFsxWindows(
+    params: CreateLocationFsxWindowsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationFsxWindowsResponse, Unit]
+  ): Request[CreateLocationFsxWindowsResponse, AWSError] = js.native
+  /**
     * Defines a file system on a Network File System (NFS) server that can be read from or written to
     */
   def createLocationNfs(): Request[CreateLocationNfsResponse, AWSError] = js.native
@@ -168,6 +181,19 @@ trait DataSync extends Service {
     params: DescribeLocationEfsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationEfsResponse, Unit]
   ): Request[DescribeLocationEfsResponse, AWSError] = js.native
+  /**
+    * Returns metadata, such as the path information about an Amazon FSx for Windows location.
+    */
+  def describeLocationFsxWindows(): Request[DescribeLocationFsxWindowsResponse, AWSError] = js.native
+  def describeLocationFsxWindows(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationFsxWindowsResponse, Unit]): Request[DescribeLocationFsxWindowsResponse, AWSError] = js.native
+  /**
+    * Returns metadata, such as the path information about an Amazon FSx for Windows location.
+    */
+  def describeLocationFsxWindows(params: DescribeLocationFsxWindowsRequest): Request[DescribeLocationFsxWindowsResponse, AWSError] = js.native
+  def describeLocationFsxWindows(
+    params: DescribeLocationFsxWindowsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationFsxWindowsResponse, Unit]
+  ): Request[DescribeLocationFsxWindowsResponse, AWSError] = js.native
   /**
     * Returns metadata, such as the path information, about a NFS location.
     */

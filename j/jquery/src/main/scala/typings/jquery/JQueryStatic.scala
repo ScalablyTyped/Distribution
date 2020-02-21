@@ -216,6 +216,7 @@ trait JQueryStatic extends js.Object {
     */
   def apply[T](selection: JQuery_[T]): JQuery_[T] = js.native
   def apply[TElement /* <: Element */](selector: Selector, context: JQuery_[HTMLElement]): JQuery_[TElement] = js.native
+  def apply[TElement /* <: Element */](selector: Selector, context: Selector): JQuery_[TElement] = js.native
   def apply[TElement /* <: Element */](selector: Selector, context: Element): JQuery_[TElement] = js.native
   /**
     * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`

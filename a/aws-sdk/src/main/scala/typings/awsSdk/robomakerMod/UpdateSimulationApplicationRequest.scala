@@ -19,7 +19,7 @@ trait UpdateSimulationApplicationRequest extends js.Object {
     */
   var renderingEngine: js.UndefOr[RenderingEngine] = js.native
   /**
-    * Information about the robot software suite.
+    * Information about the robot software suite (ROS distribution).
     */
   var robotSoftwareSuite: RobotSoftwareSuite = js.native
   /**

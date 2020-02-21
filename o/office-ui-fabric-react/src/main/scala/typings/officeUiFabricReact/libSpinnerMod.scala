@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.spinnerTypesMod.ISpinnerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object libSpinnerMod extends js.Object {
   class SpinnerBase ()
     extends typings.officeUiFabricReact.spinnerMod.SpinnerBase
   
-  val Spinner: StatelessComponent[ISpinnerProps] = js.native
+  val Spinner: FunctionComponent[ISpinnerProps] = js.native
   /* static members */
   @js.native
   object SpinnerBase extends js.Object {

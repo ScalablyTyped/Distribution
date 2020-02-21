@@ -1,7 +1,7 @@
 
 # Scala.js typings for iso-3166-2
 
-Typings are for version 0.6
+Typings are for version 1.0
 
 ## Library description:
 Lookup information about ISO-3166-2 subdivisions.

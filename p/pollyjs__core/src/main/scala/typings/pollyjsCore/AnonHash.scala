@@ -1,5 +1,6 @@
 package typings.pollyjsCore
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pollyjsCore.mod.MatchBy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +13,7 @@ trait AnonHash extends js.Object {
   var pathname: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
   var port: js.UndefOr[Boolean | (MatchBy[Double, Double])] = js.undefined
   var protocol: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
-  var query: js.UndefOr[Boolean | (MatchBy[_, _])] = js.undefined
+  var query: js.UndefOr[Boolean | (MatchBy[StringDictionary[_], StringDictionary[_]])] = js.undefined
   var username: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
 }
 
@@ -25,7 +26,7 @@ object AnonHash {
     pathname: Boolean | (MatchBy[String, String]) = null,
     port: Boolean | (MatchBy[Double, Double]) = null,
     protocol: Boolean | (MatchBy[String, String]) = null,
-    query: Boolean | (MatchBy[_, _]) = null,
+    query: Boolean | (MatchBy[StringDictionary[_], StringDictionary[_]]) = null,
     username: Boolean | (MatchBy[String, String]) = null
   ): AnonHash = {
     val __obj = js.Dynamic.literal()

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait DataFactory extends js.Object {
+trait DataFactory[Q /* <: BaseQuad */] extends js.Object {
   /**
     * This method is optional.
     * @param value The variable name
@@ -53,12 +53,12 @@ trait DataFactory extends js.Object {
     * @return A new instance of Quad.
     * @see Quad
     */
-  def quad[Q /* <: BaseQuad */](
+  def quad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
   ): Q = js.native
-  def quad[Q /* <: BaseQuad */](
+  def quad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
@@ -73,7 +73,7 @@ trait DataFactory extends js.Object {
     * @see Triple
     * @see DefaultGraph
     */
-  def triple[Q /* <: BaseQuad */](
+  def triple(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any

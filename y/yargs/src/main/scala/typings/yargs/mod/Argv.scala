@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.Partial
 import typings.yargs.yargsBooleans.`false`
 import typings.yargs.yargsBooleans.`true`
-import typings.yargsParser.mod.Configuration
 import typings.yargsParser.mod.DetailedArguments
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -392,7 +391,7 @@ trait Argv[T] extends js.Object {
     * Method to execute when a failure occurs, rather than printing the failure message.
     * @param func Is called with the failure message that would have been printed, the Error instance originally thrown and yargs state when the failure occurred.
     */
-  def fail(func: js.Function2[/* msg */ String, /* err */ Error, _]): Argv[T] = js.native
+  def fail(func: js.Function3[/* msg */ String, /* err */ Error, /* yargs */ Argv[T], _]): Argv[T] = js.native
   /**
     * Allows to programmatically get completion choices for any line.
     * @param args An array of the words in the command line to complete.
@@ -526,7 +525,7 @@ trait Argv[T] extends js.Object {
   {[ key in keyof yargs.yargs.Arguments<T> ]: yargs.yargs.Arguments<T>[key]}
     */ typings.yargs.yargsStrings.Argv with Arguments[T] = js.native
   /** Allows to configure advanced yargs features. */
-  def parserConfiguration(configuration: Partial[Configuration]): Argv[T] = js.native
+  def parserConfiguration(configuration: Partial[ParserConfigurationOptions]): Argv[T] = js.native
   /**
     * Similar to `config()`, indicates that yargs should interpret the object from the specified key in package.json as a configuration object.
     * @param [cwd] If provided, the package.json will be read from this location

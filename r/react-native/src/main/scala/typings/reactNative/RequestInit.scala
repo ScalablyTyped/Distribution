@@ -13,6 +13,7 @@ trait RequestInit extends js.Object {
   var method: js.UndefOr[String] = js.undefined
   var mode: js.UndefOr[RequestMode] = js.undefined
   var referrer: js.UndefOr[String] = js.undefined
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   var window: js.UndefOr[js.Any] = js.undefined
 }
 
@@ -27,6 +28,7 @@ object RequestInit {
     method: String = null,
     mode: RequestMode = null,
     referrer: String = null,
+    signal: AbortSignal = null,
     window: js.Any = null
   ): RequestInit = {
     val __obj = js.Dynamic.literal()
@@ -38,6 +40,7 @@ object RequestInit {
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
     if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInit]
   }

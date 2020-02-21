@@ -26,14 +26,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ContactIdResponse, Unit]
   ): Request[ContactIdResponse, AWSError] = js.native
   /**
-    * Creates a Config with the specified configData parameters.
-    Only one type of configData can be specified.
+    * Creates a Config with the specified configData parameters. Only one type of configData can be specified.
     */
   def createConfig(): Request[ConfigIdResponse, AWSError] = js.native
   def createConfig(callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]): Request[ConfigIdResponse, AWSError] = js.native
   /**
-    * Creates a Config with the specified configData parameters.
-    Only one type of configData can be specified.
+    * Creates a Config with the specified configData parameters. Only one type of configData can be specified.
     */
   def createConfig(params: CreateConfigRequest): Request[ConfigIdResponse, AWSError] = js.native
   def createConfig(
@@ -41,20 +39,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]
   ): Request[ConfigIdResponse, AWSError] = js.native
   /**
-    * Creates a DataflowEndpoint group containing the specified list of DataflowEndpoint objects.
-    The name field in each endpoint is used in your mission profile DataflowEndpointConfig 
-    to specify which endpoints to use during a contact. 
-    When a contact uses multiple DataflowEndpointConfig objects, each Config 
-    must match a DataflowEndpoint in the same group.
+    * Creates a DataflowEndpoint group containing the specified list of DataflowEndpoint objects. The name field in each endpoint is used in your mission profile DataflowEndpointConfig to specify which endpoints to use during a contact. When a contact uses multiple DataflowEndpointConfig objects, each Config must match a DataflowEndpoint in the same group.
     */
   def createDataflowEndpointGroup(): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
   def createDataflowEndpointGroup(callback: js.Function2[/* err */ AWSError, /* data */ DataflowEndpointGroupIdResponse, Unit]): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
   /**
-    * Creates a DataflowEndpoint group containing the specified list of DataflowEndpoint objects.
-    The name field in each endpoint is used in your mission profile DataflowEndpointConfig 
-    to specify which endpoints to use during a contact. 
-    When a contact uses multiple DataflowEndpointConfig objects, each Config 
-    must match a DataflowEndpoint in the same group.
+    * Creates a DataflowEndpoint group containing the specified list of DataflowEndpoint objects. The name field in each endpoint is used in your mission profile DataflowEndpointConfig to specify which endpoints to use during a contact. When a contact uses multiple DataflowEndpointConfig objects, each Config must match a DataflowEndpoint in the same group.
     */
   def createDataflowEndpointGroup(params: CreateDataflowEndpointGroupRequest): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
   def createDataflowEndpointGroup(
@@ -62,18 +52,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DataflowEndpointGroupIdResponse, Unit]
   ): Request[DataflowEndpointGroupIdResponse, AWSError] = js.native
   /**
-    * Creates a mission profile.
-    
-    dataflowEdges is a list of lists of strings. Each lower level list of strings
-    has two elements: a from ARN and a to ARN.
+    * Creates a mission profile.  dataflowEdges is a list of lists of strings. Each lower level list of strings has two elements: a from ARN and a to ARN.
     */
   def createMissionProfile(): Request[MissionProfileIdResponse, AWSError] = js.native
   def createMissionProfile(callback: js.Function2[/* err */ AWSError, /* data */ MissionProfileIdResponse, Unit]): Request[MissionProfileIdResponse, AWSError] = js.native
   /**
-    * Creates a mission profile.
-    
-    dataflowEdges is a list of lists of strings. Each lower level list of strings
-    has two elements: a from ARN and a to ARN.
+    * Creates a mission profile.  dataflowEdges is a list of lists of strings. Each lower level list of strings has two elements: a from ARN and a to ARN.
     */
   def createMissionProfile(params: CreateMissionProfileRequest): Request[MissionProfileIdResponse, AWSError] = js.native
   def createMissionProfile(
@@ -133,14 +117,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactResponse, Unit]
   ): Request[DescribeContactResponse, AWSError] = js.native
   /**
-    * Returns Config information.
-    Only one Config response can be returned.
+    * Returns Config information. Only one Config response can be returned.
     */
   def getConfig(): Request[GetConfigResponse, AWSError] = js.native
   def getConfig(callback: js.Function2[/* err */ AWSError, /* data */ GetConfigResponse, Unit]): Request[GetConfigResponse, AWSError] = js.native
   /**
-    * Returns Config information.
-    Only one Config response can be returned.
+    * Returns Config information. Only one Config response can be returned.
     */
   def getConfig(params: GetConfigRequest): Request[GetConfigResponse, AWSError] = js.native
   def getConfig(
@@ -213,18 +195,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListConfigsResponse, Unit]
   ): Request[ListConfigsResponse, AWSError] = js.native
   /**
-    * Returns a list of contacts.
-    If statusList contains AVAILABLE, the request must include
-    groundstation, missionprofileArn, and satelliteArn.
-    
+    * Returns a list of contacts. If statusList contains AVAILABLE, the request must include groundStation, missionprofileArn, and satelliteArn. 
     */
   def listContacts(): Request[ListContactsResponse, AWSError] = js.native
   def listContacts(callback: js.Function2[/* err */ AWSError, /* data */ ListContactsResponse, Unit]): Request[ListContactsResponse, AWSError] = js.native
   /**
-    * Returns a list of contacts.
-    If statusList contains AVAILABLE, the request must include
-    groundstation, missionprofileArn, and satelliteArn.
-    
+    * Returns a list of contacts. If statusList contains AVAILABLE, the request must include groundStation, missionprofileArn, and satelliteArn. 
     */
   def listContacts(params: ListContactsRequest): Request[ListContactsResponse, AWSError] = js.native
   def listContacts(
@@ -284,12 +260,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListSatellitesResponse, Unit]
   ): Request[ListSatellitesResponse, AWSError] = js.native
   /**
-    * Returns a list of tags or a specified resource.
+    * Returns a list of tags for a specified resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Returns a list of tags or a specified resource.
+    * Returns a list of tags for a specified resource.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -336,16 +312,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Updates the Config used when scheduling contacts.
-    Updating a Config will not update the execution parameters
-    for existing future contacts scheduled with this Config.
+    * Updates the Config used when scheduling contacts. Updating a Config will not update the execution parameters for existing future contacts scheduled with this Config.
     */
   def updateConfig(): Request[ConfigIdResponse, AWSError] = js.native
   def updateConfig(callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]): Request[ConfigIdResponse, AWSError] = js.native
   /**
-    * Updates the Config used when scheduling contacts.
-    Updating a Config will not update the execution parameters
-    for existing future contacts scheduled with this Config.
+    * Updates the Config used when scheduling contacts. Updating a Config will not update the execution parameters for existing future contacts scheduled with this Config.
     */
   def updateConfig(params: UpdateConfigRequest): Request[ConfigIdResponse, AWSError] = js.native
   def updateConfig(
@@ -353,16 +325,12 @@ trait GroundStation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigIdResponse, Unit]
   ): Request[ConfigIdResponse, AWSError] = js.native
   /**
-    * Updates a mission profile.
-    Updating a mission profile will not update the execution parameters
-    for existing future contacts.
+    * Updates a mission profile. Updating a mission profile will not update the execution parameters for existing future contacts.
     */
   def updateMissionProfile(): Request[MissionProfileIdResponse, AWSError] = js.native
   def updateMissionProfile(callback: js.Function2[/* err */ AWSError, /* data */ MissionProfileIdResponse, Unit]): Request[MissionProfileIdResponse, AWSError] = js.native
   /**
-    * Updates a mission profile.
-    Updating a mission profile will not update the execution parameters
-    for existing future contacts.
+    * Updates a mission profile. Updating a mission profile will not update the execution parameters for existing future contacts.
     */
   def updateMissionProfile(params: UpdateMissionProfileRequest): Request[MissionProfileIdResponse, AWSError] = js.native
   def updateMissionProfile(

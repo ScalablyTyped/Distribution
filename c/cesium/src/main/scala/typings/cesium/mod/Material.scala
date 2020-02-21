@@ -11,7 +11,7 @@ class Material () extends js.Object {
   def this(options: AnonFabric) = this()
   var materials: js.Any = js.native
   var shaderSource: String = js.native
-  var translucent: Boolean = js.native
+  var translucent: Boolean | (js.Function1[/* material */ this.type, Boolean]) = js.native
   var `type`: String = js.native
   var uniforms: js.Any = js.native
   def destroy(): Unit = js.native

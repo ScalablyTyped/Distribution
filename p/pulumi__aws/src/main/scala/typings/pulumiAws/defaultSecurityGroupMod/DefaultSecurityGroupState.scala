@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
 trait DefaultSecurityGroupState extends js.Object {
   val arn: js.UndefOr[Input[String]] = js.native
   /**
+    * The description of the security group
+    */
+  val description: js.UndefOr[Input[String]] = js.native
+  /**
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
     */
@@ -46,6 +50,7 @@ object DefaultSecurityGroupState {
   @scala.inline
   def apply(
     arn: Input[String] = null,
+    description: Input[String] = null,
     egress: Input[js.Array[Input[DefaultSecurityGroupEgress]]] = null,
     ingress: Input[js.Array[Input[DefaultSecurityGroupIngress]]] = null,
     name: Input[String] = null,
@@ -56,6 +61,7 @@ object DefaultSecurityGroupState {
   ): DefaultSecurityGroupState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
     if (ingress != null) __obj.updateDynamic("ingress")(ingress.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

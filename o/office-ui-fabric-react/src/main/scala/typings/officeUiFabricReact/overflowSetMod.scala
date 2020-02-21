@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ object overflowSetMod extends js.Object {
     def this(props: IOverflowSetProps) = this()
   }
   
-  val OverflowSet: StatelessComponent[IOverflowSetProps] = js.native
+  val OverflowSet: FunctionComponent[IOverflowSetProps] = js.native
 }
 

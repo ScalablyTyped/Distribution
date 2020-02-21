@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object execMod extends js.Object {
   def exec(command: String): js.Function0[js.Promise[String]] = js.native
+  def wrapExec(command: String): js.Function0[js.Function0[js.Promise[String]]] = js.native
 }
 

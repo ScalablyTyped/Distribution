@@ -29,6 +29,7 @@ class Polly protected () extends js.Object {
   def disconnectFrom(name: String): Unit = js.native
   def disconnectFrom(name: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Adapter */ js.Any): Unit = js.native
   def flush(): js.Promise[Unit] = js.native
+  def passthrough(): Unit = js.native
   def pause(): Unit = js.native
   def play(): Unit = js.native
   def record(): Unit = js.native

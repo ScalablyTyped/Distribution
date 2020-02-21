@@ -1,8 +1,8 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsGuardianId
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsInvitedEmailAddressKey
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsGuardianId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsInvitedEmailAddressKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,7 +28,7 @@ trait GuardiansResource extends js.Object {
     * the requested `student_id`, but no `Guardian` record exists for that
     * student with the provided `guardian_id`.
     */
-  def delete(request: AnonAccesstokenAltBearertokenCallbackFieldsGuardianId): Request_[js.Object]
+  def delete(request: AnonAccesstokenAltCallbackFieldsGuardianId): Request_[js.Object]
   /**
     * Returns a specific guardian.
     *
@@ -46,7 +46,7 @@ trait GuardiansResource extends js.Object {
     * the requested `student_id`, but no `Guardian` record exists for that
     * student that matches the provided `guardian_id`.
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsGuardianId): Request_[Guardian]
+  def get(request: AnonAccesstokenAltCallbackFieldsGuardianId): Request_[Guardian]
   /**
     * Returns a list of guardians that the requesting user is permitted to
     * view, restricted to those that match the request.
@@ -69,15 +69,15 @@ trait GuardiansResource extends js.Object {
     * &#42; `NOT_FOUND` if a `student_id` is specified, and its format can be
     * recognized, but Classroom has no record of that student.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFieldsInvitedEmailAddressKey): Request_[ListGuardiansResponse]
+  def list(request: AnonAccesstokenAltCallbackFieldsInvitedEmailAddressKey): Request_[ListGuardiansResponse]
 }
 
 object GuardiansResource {
   @scala.inline
   def apply(
-    delete: AnonAccesstokenAltBearertokenCallbackFieldsGuardianId => Request_[js.Object],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsGuardianId => Request_[Guardian],
-    list: AnonAccesstokenAltBearertokenCallbackFieldsInvitedEmailAddressKey => Request_[ListGuardiansResponse]
+    delete: AnonAccesstokenAltCallbackFieldsGuardianId => Request_[js.Object],
+    get: AnonAccesstokenAltCallbackFieldsGuardianId => Request_[Guardian],
+    list: AnonAccesstokenAltCallbackFieldsInvitedEmailAddressKey => Request_[ListGuardiansResponse]
   ): GuardiansResource = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
   

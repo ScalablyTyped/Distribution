@@ -11,6 +11,7 @@ object mod extends js.Object {
   @js.native
   trait ThroughStream extends Transform {
     var autoDestroy: Boolean = js.native
+    def queue(chunk: js.Any): js.Any = js.native
   }
   
   def apply(): ThroughStream = js.native

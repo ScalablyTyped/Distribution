@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UserArgs extends js.Object {
   /**
-    * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
+    * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
     */
   val awsAccountId: js.UndefOr[Input[String]] = js.native
   /**
@@ -20,7 +20,7 @@ trait UserArgs extends js.Object {
     */
   val iamArn: js.UndefOr[Input[String]] = js.native
   /**
-    * Amazon QuickSight supports several ways of managing the identity of users. This parameter accepts two values: `IAM` and `QUICKSIGHT`.
+    * Amazon QuickSight supports several ways of managing the identity of users. This parameter accepts either  `IAM` or `QUICKSIGHT`.
     */
   val identityType: Input[String] = js.native
   /**

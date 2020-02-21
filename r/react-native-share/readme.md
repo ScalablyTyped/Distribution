@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-share
 
-Typings are for version 1.1
+Typings are for version 3.0
 
 ## Library description:
 Social share, sending simple data to other apps.

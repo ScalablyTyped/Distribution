@@ -14,12 +14,16 @@ import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.email
 import typings.reactNative.reactNativeStrings.highQuality
 import typings.reactNative.reactNativeStrings.name
+import typings.reactNative.reactNativeStrings.no
+import typings.reactNative.reactNativeStrings.noExcludeDescendants
 import typings.reactNative.reactNativeStrings.off
 import typings.reactNative.reactNativeStrings.password
 import typings.reactNative.reactNativeStrings.simple
 import typings.reactNative.reactNativeStrings.tel
 import typings.reactNative.reactNativeStrings.top
 import typings.reactNative.reactNativeStrings.username
+import typings.reactNative.reactNativeStrings.yes
+import typings.reactNative.reactNativeStrings.yesExcludeDescendants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -58,6 +62,22 @@ trait TextInputAndroidProps extends js.Object {
     */
   var disableFullscreenUI: js.UndefOr[Boolean] = js.undefined
   /**
+    * Determines whether the individual fields in your app should be included in a
+    * view structure for autofill purposes on Android API Level 26+. Defaults to auto.
+    * To disable auto complete, use `off`.
+    *
+    * *Android Only*
+    *
+    * The following values work on Android only:
+    *
+    * - `auto` - let Android decide
+    * - `no` - not important for autofill
+    * - `noExcludeDescendants` - this view and its children aren't important for autofill
+    * - `yes` - is important for autofill
+    * - `yesExcludeDescendants` - this view is important for autofill but its children aren't
+    */
+  var importantForAutofill: js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants] = js.undefined
+  /**
     * If defined, the provided image resource will be rendered on the left.
     */
   var inlineImageLeft: js.UndefOr[String] = js.undefined
@@ -95,6 +115,7 @@ object TextInputAndroidProps {
   def apply(
     autoCompleteType: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off = null,
     disableFullscreenUI: js.UndefOr[Boolean] = js.undefined,
+    importantForAutofill: auto | no | noExcludeDescendants | yes | yesExcludeDescendants = null,
     inlineImageLeft: String = null,
     inlineImagePadding: Int | Double = null,
     numberOfLines: Int | Double = null,
@@ -106,6 +127,7 @@ object TextInputAndroidProps {
     val __obj = js.Dynamic.literal()
     if (autoCompleteType != null) __obj.updateDynamic("autoCompleteType")(autoCompleteType.asInstanceOf[js.Any])
     if (!js.isUndefined(disableFullscreenUI)) __obj.updateDynamic("disableFullscreenUI")(disableFullscreenUI.asInstanceOf[js.Any])
+    if (importantForAutofill != null) __obj.updateDynamic("importantForAutofill")(importantForAutofill.asInstanceOf[js.Any])
     if (inlineImageLeft != null) __obj.updateDynamic("inlineImageLeft")(inlineImageLeft.asInstanceOf[js.Any])
     if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])

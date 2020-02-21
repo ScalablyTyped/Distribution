@@ -56,11 +56,6 @@ trait ParsingOptions extends CommonOptions {
   /** Override default date format (code 14) */
   var dateNF: js.UndefOr[String] = js.undefined
   var dense: js.UndefOr[Boolean] = js.undefined
-  /**
-    * If defined and file is encrypted, use password
-    * @default ''
-    */
-  var password: js.UndefOr[String] = js.undefined
   /* If true, plaintext parsing will not parse values */
   var raw: js.UndefOr[Boolean] = js.undefined
   /**
@@ -68,11 +63,8 @@ trait ParsingOptions extends CommonOptions {
     * @default 0
     */
   var sheetRows: js.UndefOr[Double] = js.undefined
-  /**
-    * Create cell objects for stub cells
-    * @default false
-    */
-  var sheetStubs: js.UndefOr[Boolean] = js.undefined
+  /** If specified, only parse the specified sheets or sheet names */
+  var sheets: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
   /** Input data encoding */
   var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.undefined
 }
@@ -99,6 +91,7 @@ object ParsingOptions {
     raw: js.UndefOr[Boolean] = js.undefined,
     sheetRows: Int | Double = null,
     sheetStubs: js.UndefOr[Boolean] = js.undefined,
+    sheets: Double | String | (js.Array[Double | String]) = null,
     `type`: base64 | binary | buffer | file | array | string = null
   ): ParsingOptions = {
     val __obj = js.Dynamic.literal()
@@ -121,6 +114,7 @@ object ParsingOptions {
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (sheetRows != null) __obj.updateDynamic("sheetRows")(sheetRows.asInstanceOf[js.Any])
     if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs.asInstanceOf[js.Any])
+    if (sheets != null) __obj.updateDynamic("sheets")(sheets.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsingOptions]
   }

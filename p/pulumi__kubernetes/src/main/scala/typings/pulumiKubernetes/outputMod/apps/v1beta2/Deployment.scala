@@ -7,10 +7,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * Deployment enables declarative updates for Pods and ReplicaSets.
+  *
   * @deprecated apps/v1beta2/Deployment is deprecated by apps/v1/Deployment and not supported by
   * Kubernetes v1.16+ clusters.
-  *
-  * Deployment enables declarative updates for Pods and ReplicaSets.
   */
 trait Deployment extends js.Object {
   /**

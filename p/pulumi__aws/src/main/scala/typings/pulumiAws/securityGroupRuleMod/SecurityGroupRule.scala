@@ -30,7 +30,7 @@ class SecurityGroupRule protected () extends CustomResource {
     */
   val description: Output_[js.UndefOr[String]] = js.native
   /**
-    * The start port (or ICMP type number if protocol is "icmp").
+    * The start port (or ICMP type number if protocol is "icmp" or "icmpv6").
     */
   val fromPort: Output_[Double] = js.native
   /**
@@ -39,10 +39,11 @@ class SecurityGroupRule protected () extends CustomResource {
   val ipv6CidrBlocks: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
     * List of prefix list IDs (for allowing access to VPC endpoints).
+    * Only valid with `egress`.
     */
   val prefixListIds: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * The protocol. If not icmp, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
+    * The protocol. If not icmp, icmpv6, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
     */
   val protocol: Output_[String] = js.native
   /**

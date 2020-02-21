@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InviteMembersRequest extends js.Object {
   /**
-    * A list of IDs of the AWS accounts that you want to invite to Security Hub as members. 
+    * The list of account IDs of the AWS accounts to invite to Security Hub as members. 
     */
   var AccountIds: js.UndefOr[AccountIdList] = js.native
 }

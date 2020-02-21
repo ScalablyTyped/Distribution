@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object environmentMod extends js.Object {
   def getUA(): String = js.native
   def isBrowser(): Boolean = js.native
+  def isBrowserExtension(): Boolean = js.native
   def isElectron(): Boolean = js.native
   def isIE(): Boolean = js.native
   def isMobileCordova(): Boolean = js.native

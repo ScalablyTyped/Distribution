@@ -1,6 +1,6 @@
 package typings.formatjsIntlUtils.numberTypesMod
 
-import typings.formatjsIntlUtils.AnonLong
+import typings.formatjsIntlUtils.AnonLongShort
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait RawNumberData extends js.Object {
   var currency: Record[NumberingSystem, RawCurrencyData]
-  var decimal: Record[NumberingSystem, AnonLong]
+  var decimal: Record[NumberingSystem, AnonLongShort]
   var nu: js.Array[String]
   var percent: Record[NumberingSystem, String]
   var symbols: Record[NumberingSystem, SymbolsData]
@@ -18,7 +18,7 @@ object RawNumberData {
   @scala.inline
   def apply(
     currency: Record[NumberingSystem, RawCurrencyData],
-    decimal: Record[NumberingSystem, AnonLong],
+    decimal: Record[NumberingSystem, AnonLongShort],
     nu: js.Array[String],
     percent: Record[NumberingSystem, String],
     symbols: Record[NumberingSystem, SymbolsData]

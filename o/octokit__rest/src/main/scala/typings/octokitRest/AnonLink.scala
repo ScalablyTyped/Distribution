@@ -1,6 +1,6 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod._Link
+import typings.octokitRest.mod.Octokit._Link
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

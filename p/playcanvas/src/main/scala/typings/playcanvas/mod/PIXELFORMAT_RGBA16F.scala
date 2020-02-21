@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PIXELFORMAT_RGBA16F
+  * @type {number}
   * @description 16-bit floating point RGBA (16-bit float for each red, green, blue and alpha channels).
   */
 @JSImport("playcanvas", "PIXELFORMAT_RGBA16F")

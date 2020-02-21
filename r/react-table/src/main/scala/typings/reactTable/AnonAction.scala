@@ -5,36 +5,22 @@ import typings.reactTable.mod.Column
 import typings.reactTable.mod.IdType
 import typings.reactTable.mod.Meta
 import typings.reactTable.mod.MetaBase
+import typings.reactTable.mod.Row
 import typings.reactTable.mod.TableState
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnonAction[D /* <: js.Object */] extends js.Object {
-  var defaultColumn: Partial[Column[D]]
-  var initialRowStateKey: IdType[D]
-  var initialState: Partial[TableState[D]]
-  def getRowId(originalRow: D, relativeIndex: Double): IdType[D]
-  def getSubRows(originalRow: D, relativeIndex: Double): js.Array[D]
-  def reducer(newState: TableState[D], action: ActionType, previousState: TableState[D]): TableState[D]
-  def useControlledState(state: TableState[D], meta: Meta[D, scala.Nothing, MetaBase[D]]): TableState[D]
-}
-
-object AnonAction {
-  @scala.inline
-  def apply[D /* <: js.Object */](
-    defaultColumn: Partial[Column[D]],
-    getRowId: (D, Double) => IdType[D],
-    getSubRows: (D, Double) => js.Array[D],
-    initialRowStateKey: IdType[D],
-    initialState: Partial[TableState[D]],
-    reducer: (TableState[D], ActionType, TableState[D]) => TableState[D],
-    useControlledState: (TableState[D], Meta[D, scala.Nothing, MetaBase[D]]) => TableState[D]
-  ): AnonAction[D] = {
-    val __obj = js.Dynamic.literal(defaultColumn = defaultColumn.asInstanceOf[js.Any], getRowId = js.Any.fromFunction2(getRowId), getSubRows = js.Any.fromFunction2(getSubRows), initialRowStateKey = initialRowStateKey.asInstanceOf[js.Any], initialState = initialState.asInstanceOf[js.Any], reducer = js.Any.fromFunction3(reducer), useControlledState = js.Any.fromFunction2(useControlledState))
-  
-    __obj.asInstanceOf[AnonAction[D]]
-  }
+  var defaultColumn: Partial[Column[D]] = js.native
+  var initialRowStateKey: IdType[D] = js.native
+  var initialState: Partial[TableState[D]] = js.native
+  def getRowId(originalRow: D, relativeIndex: Double): String = js.native
+  def getRowId(originalRow: D, relativeIndex: Double, parent: Row[D]): String = js.native
+  def getSubRows(originalRow: D, relativeIndex: Double): js.Array[D] = js.native
+  def reducer(newState: TableState[D], action: ActionType, previousState: TableState[D]): TableState[D] = js.native
+  def useControlledState(state: TableState[D], meta: Meta[D, scala.Nothing, MetaBase[D]]): TableState[D] = js.native
 }
 

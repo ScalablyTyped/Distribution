@@ -17,12 +17,11 @@ class Popup protected () extends js.Object {
     * Shows inside a new window the hosted login page (`/authorize`) in order to start a new authN/authZ transaction and post its result using `postMessage`.
     * @see {@link https://auth0.com/docs/api/authentication#authorize-client}
     */
-  def authorize(options: AnonAudience, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def authorize(options: AnonAudience, callback: Auth0Callback[Auth0Result, Auth0Error]): Unit = js.native
   /**
     * Returns a new instance of the popup handler
-    *
     */
-  def buildPopupHandler(): js.Any = js.native
+  /* private */ def buildPopupHandler(): js.Any = js.native
   /**
     * Handles the popup logic for the callback page.
     * @see {@link parseHash}

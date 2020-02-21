@@ -11,7 +11,7 @@ trait BatchImportFindingsResponse extends js.Object {
     */
   var FailedCount: Integer = js.native
   /**
-    * The list of the findings that failed to import.
+    * The list of findings that failed to import.
     */
   var FailedFindings: js.UndefOr[ImportFindingsErrorList] = js.native
   /**

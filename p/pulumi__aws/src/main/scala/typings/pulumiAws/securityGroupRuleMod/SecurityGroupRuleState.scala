@@ -16,7 +16,7 @@ trait SecurityGroupRuleState extends js.Object {
     */
   val description: js.UndefOr[Input[String]] = js.native
   /**
-    * The start port (or ICMP type number if protocol is "icmp").
+    * The start port (or ICMP type number if protocol is "icmp" or "icmpv6").
     */
   val fromPort: js.UndefOr[Input[Double]] = js.native
   /**
@@ -25,10 +25,11 @@ trait SecurityGroupRuleState extends js.Object {
   val ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * List of prefix list IDs (for allowing access to VPC endpoints).
+    * Only valid with `egress`.
     */
   val prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * The protocol. If not icmp, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
+    * The protocol. If not icmp, icmpv6, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
     */
   val protocol: js.UndefOr[Input[String]] = js.native
   /**

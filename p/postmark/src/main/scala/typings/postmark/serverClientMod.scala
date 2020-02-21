@@ -50,6 +50,10 @@ import typings.postmark.statsMod.OutboundStatistics
 import typings.postmark.statsMod.SentCounts
 import typings.postmark.statsMod.SpamCounts
 import typings.postmark.statsMod.TrackedEmailCounts
+import typings.postmark.suppressionMod.CreateSuppressionsRequest
+import typings.postmark.suppressionMod.DeleteSuppressionsRequest
+import typings.postmark.suppressionMod.SuppressionStatuses
+import typings.postmark.suppressionMod.Suppressions
 import typings.postmark.templateMod.Template
 import typings.postmark.templateMod.TemplateValidation
 import typings.postmark.templateMod.Templates
@@ -93,6 +97,16 @@ object serverClientMod extends js.Object {
     def createInboundRuleTrigger(options: CreateInboundRuleRequest): js.Promise[InboundRule] = js.native
     def createInboundRuleTrigger(options: CreateInboundRuleRequest, callback: Callback[InboundRule]): js.Promise[InboundRule] = js.native
     /**
+      * Add email addresses to a suppressions list on a message stream on a server.
+      *
+      * @param messageStream - Select message stream
+      * @param options - Suppressions you wish to add.
+      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def createSuppressions(messageStream: String, options: CreateSuppressionsRequest): js.Promise[SuppressionStatuses] = js.native
+    def createSuppressions(messageStream: String, options: CreateSuppressionsRequest, callback: Callback[SuppressionStatuses]): js.Promise[SuppressionStatuses] = js.native
+    /**
       * Create a new template on the associated server.
       *
       * @param options - Configuration options to be used to create the Template.
@@ -119,6 +133,16 @@ object serverClientMod extends js.Object {
       */
     def deleteInboundRuleTrigger(id: Double): js.Promise[DefaultResponse] = js.native
     def deleteInboundRuleTrigger(id: Double, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
+    /**
+      * Delete email addresses from a suppressions list on a message stream on a server.
+      *
+      * @param messageStream - Select message stream
+      * @param options - Suppressions you wish to delete.
+      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def deleteSuppressions(messageStream: String, options: DeleteSuppressionsRequest): js.Promise[SuppressionStatuses] = js.native
+    def deleteSuppressions(messageStream: String, options: DeleteSuppressionsRequest, callback: Callback[SuppressionStatuses]): js.Promise[SuppressionStatuses] = js.native
     def deleteTemplate(idOrAlias: String): js.Promise[DefaultResponse] = js.native
     def deleteTemplate(idOrAlias: String, callback: Callback[DefaultResponse]): js.Promise[DefaultResponse] = js.native
     /**
@@ -439,6 +463,15 @@ object serverClientMod extends js.Object {
     def getSpamComplaintsCounts(): js.Promise[SpamCounts] = js.native
     def getSpamComplaintsCounts(filter: StatisticsFilteringParameters): js.Promise[SpamCounts] = js.native
     def getSpamComplaintsCounts(filter: StatisticsFilteringParameters, callback: Callback[SpamCounts]): js.Promise[SpamCounts] = js.native
+    /**
+      * Get the list of suppressions for a message stream on a server.
+      *
+      * @param messageStream - Select message stream
+      * @param callback - If the callback is provided, it will be passed to the resulting promise as a continuation.
+      * @returns A promise that will complete when the API responds (or an error occurs).
+      */
+    def getSuppressions(messageStream: String): js.Promise[Suppressions] = js.native
+    def getSuppressions(messageStream: String, callback: Callback[Suppressions]): js.Promise[Suppressions] = js.native
     def getTemplate(idOrAlias: String): js.Promise[Template] = js.native
     def getTemplate(idOrAlias: String, callback: Callback[Template]): js.Promise[Template] = js.native
     /**

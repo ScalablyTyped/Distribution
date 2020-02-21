@@ -13,6 +13,7 @@ import typings.centra.centraStrings.host
 import typings.centra.centraStrings.hostname
 import typings.centra.centraStrings.json
 import typings.centra.centraStrings.localAddress
+import typings.centra.centraStrings.maxHeaderSize
 import typings.centra.centraStrings.method
 import typings.centra.centraStrings.path
 import typings.centra.centraStrings.port
@@ -78,6 +79,8 @@ trait Request extends js.Object {
   def option_hostname(key: hostname, value: String): this.type = js.native
   @JSName("option")
   def option_localAddress(key: localAddress, value: String): this.type = js.native
+  @JSName("option")
+  def option_maxHeaderSize(key: maxHeaderSize, value: Double): this.type = js.native
   @JSName("option")
   def option_method(key: method, value: String): this.type = js.native
   @JSName("option")

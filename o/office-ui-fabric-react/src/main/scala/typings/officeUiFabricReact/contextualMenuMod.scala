@@ -17,7 +17,7 @@ import typings.officeUiFabricReact.officeUiFabricReactNumbers.`6`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,8 +35,8 @@ object contextualMenuMod extends js.Object {
   class ContextualMenuItemBase ()
     extends typings.officeUiFabricReact.contextualMenuItemBaseMod.ContextualMenuItemBase
   
-  val ContextualMenu: StatelessComponent[IContextualMenuProps] = js.native
-  val ContextualMenuItem: StatelessComponent[IContextualMenuItemProps] = js.native
+  val ContextualMenu: FunctionComponent[IContextualMenuProps] = js.native
+  val ContextualMenuItem: FunctionComponent[IContextualMenuItemProps] = js.native
   def canAnyMenuItemsCheck(items: js.Array[IContextualMenuItem]): Boolean = js.native
   def getSubmenuItems(item: IContextualMenuItem): js.UndefOr[js.Array[IContextualMenuItem]] = js.native
   /* static members */

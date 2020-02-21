@@ -19,6 +19,7 @@ package object cloudformationMod {
   type AllowedValue = java.lang.String
   type AllowedValues = js.Array[typings.awsSdk.cloudformationMod.AllowedValue]
   type Arn = java.lang.String
+  type AutoDeploymentNullable = scala.Boolean
   type BoxedInteger = scala.Double
   type BoxedMaxResults = scala.Double
   type Capabilities = js.Array[typings.awsSdk.cloudformationMod.Capability]
@@ -170,6 +171,8 @@ package object cloudformationMod {
   */
   type OperationStatus = typings.awsSdk.cloudformationMod._OperationStatus | java.lang.String
   type OptionalSecureUrl = java.lang.String
+  type OrganizationalUnitId = java.lang.String
+  type OrganizationalUnitIdList = js.Array[typings.awsSdk.cloudformationMod.OrganizationalUnitId]
   type OutputKey = java.lang.String
   type OutputValue = java.lang.String
   type Outputs = js.Array[typings.awsSdk.cloudformationMod.Output]
@@ -178,6 +181,12 @@ package object cloudformationMod {
   type ParameterType = java.lang.String
   type ParameterValue = java.lang.String
   type Parameters = js.Array[typings.awsSdk.cloudformationMod.Parameter]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SERVICE_MANAGED
+    - typings.awsSdk.awsSdkStrings.SELF_MANAGED
+    - java.lang.String
+  */
+  type PermissionModels = typings.awsSdk.cloudformationMod._PermissionModels | java.lang.String
   type PhysicalResourceId = java.lang.String
   type PhysicalResourceIdContext = js.Array[typings.awsSdk.cloudformationMod.PhysicalResourceIdContextKeyValuePair]
   type PrivateTypeArn = java.lang.String
@@ -275,6 +284,7 @@ package object cloudformationMod {
   type RetainResources = js.Array[typings.awsSdk.cloudformationMod.LogicalResourceId]
   type RetainStacks = scala.Boolean
   type RetainStacksNullable = scala.Boolean
+  type RetainStacksOnAccountRemovalNullable = scala.Boolean
   type RoleARN_ = java.lang.String
   type RoleArn = java.lang.String
   type RollbackTriggers = js.Array[typings.awsSdk.cloudformationMod.RollbackTrigger]
@@ -369,6 +379,7 @@ package object cloudformationMod {
     - typings.awsSdk.awsSdkStrings.FAILED
     - typings.awsSdk.awsSdkStrings.STOPPING
     - typings.awsSdk.awsSdkStrings.STOPPED
+    - typings.awsSdk.awsSdkStrings.QUEUED
     - java.lang.String
   */
   type StackSetOperationStatus = typings.awsSdk.cloudformationMod._StackSetOperationStatus | java.lang.String

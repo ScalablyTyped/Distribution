@@ -15,7 +15,7 @@ trait ListChangedBlocksResponse extends js.Object {
     */
   var ChangedBlocks: js.UndefOr[typings.awsSdk.ebsMod.ChangedBlocks] = js.native
   /**
-    * The time when the block token expires.
+    * The time when the BlockToken expires.
     */
   var ExpiryTime: js.UndefOr[TimeStamp] = js.native
   /**

@@ -11,7 +11,7 @@ trait EnableLDAPSRequest extends js.Object {
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
   /**
-    * The type of LDAP security the customer wants to enable. The security can be either server or client, but currently only the default Client is supported.
+    * The type of LDAP security to enable. Currently only the value Client is supported.
     */
   var Type: LDAPSType = js.native
 }

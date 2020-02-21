@@ -1,6 +1,5 @@
 package typings.ftp.mod
 
-import typings.ftp.AnonGroup
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,7 +25,7 @@ trait ListingElement extends js.Object {
   /**
     * The various permissions for this entry **(*NIX only)**
     */
-  var rights: js.UndefOr[AnonGroup] = js.undefined
+  var rights: js.UndefOr[FilePermissions] = js.undefined
   /**
     * The size of the entry in bytes
     */
@@ -54,7 +53,7 @@ object ListingElement {
     `type`: String,
     group: String = null,
     owner: String = null,
-    rights: AnonGroup = null,
+    rights: FilePermissions = null,
     sticky: js.UndefOr[Boolean] = js.undefined,
     target: String = null
   ): ListingElement = {

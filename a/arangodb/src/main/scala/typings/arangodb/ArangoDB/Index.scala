@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait Index[T /* <: js.Object */] extends js.Object {
   var code: Double
   var deduplicate: Boolean
+  var expireAfter: js.UndefOr[Double] = js.undefined
   var fields: js.Array[String]
   var id: String
   var isNewlyCreated: Boolean
@@ -29,10 +30,12 @@ object Index {
     selectivityEstimate: Double,
     sparse: Boolean,
     `type`: IndexType,
-    unique: Boolean
+    unique: Boolean,
+    expireAfter: Int | Double = null
   ): Index[T] = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], deduplicate = deduplicate.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isNewlyCreated = isNewlyCreated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selectivityEstimate = selectivityEstimate.asInstanceOf[js.Any], sparse = sparse.asInstanceOf[js.Any], unique = unique.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (expireAfter != null) __obj.updateDynamic("expireAfter")(expireAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index[T]]
   }
 }

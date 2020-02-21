@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetImageRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the image that you wish to retrieve. 
+    *  The Amazon Resource Name (ARN) of the image that you want to retrieve. 
     */
   var imageBuildVersionArn: ImageBuildVersionArn = js.native
 }

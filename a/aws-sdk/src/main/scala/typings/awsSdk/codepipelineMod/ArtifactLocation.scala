@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ArtifactLocation extends js.Object {
   /**
-    * The Amazon S3 bucket that contains the artifact.
+    * The S3 bucket that contains the artifact.
     */
   var s3Location: js.UndefOr[S3ArtifactLocation] = js.native
   /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UpdateConfigRequest extends js.Object {
   /**
-    * Parameters for a Config.
+    * Parameters of a Config.
     */
   var configData: ConfigTypeData = js.native
   /**

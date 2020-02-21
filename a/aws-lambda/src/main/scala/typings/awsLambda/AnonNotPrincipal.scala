@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.PrincipalValue
+import typings.awsLambda.apiGatewayAuthorizerMod.PrincipalValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

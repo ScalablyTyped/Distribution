@@ -12,9 +12,9 @@ trait StockChartNavigatorCategoryAxisLabels extends js.Object {
   var dateFormats: js.UndefOr[StockChartNavigatorCategoryAxisLabelsDateFormats] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[StockChartNavigatorCategoryAxisLabelsMargin] = js.undefined
+  var margin: js.UndefOr[Double | StockChartNavigatorCategoryAxisLabelsMargin] = js.undefined
   var mirror: js.UndefOr[Boolean] = js.undefined
-  var padding: js.UndefOr[StockChartNavigatorCategoryAxisLabelsPadding] = js.undefined
+  var padding: js.UndefOr[Double | StockChartNavigatorCategoryAxisLabelsPadding] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
   var skip: js.UndefOr[Double] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
@@ -32,9 +32,9 @@ object StockChartNavigatorCategoryAxisLabels {
     dateFormats: StockChartNavigatorCategoryAxisLabelsDateFormats = null,
     font: String = null,
     format: String = null,
-    margin: StockChartNavigatorCategoryAxisLabelsMargin = null,
+    margin: Double | StockChartNavigatorCategoryAxisLabelsMargin = null,
     mirror: js.UndefOr[Boolean] = js.undefined,
-    padding: StockChartNavigatorCategoryAxisLabelsPadding = null,
+    padding: Double | StockChartNavigatorCategoryAxisLabelsPadding = null,
     rotation: Int | Double = null,
     skip: Int | Double = null,
     step: Int | Double = null,

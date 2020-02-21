@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_1
-  * @description Index for pad 1
+  * @description Index for pad 1.
   */
 @JSImport("playcanvas", "PAD_1")
 @js.native

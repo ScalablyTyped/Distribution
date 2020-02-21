@@ -6,6 +6,7 @@ import typings.mendixmodelsdk.structuresMod.IStructure
 import typings.mendixmodelsdk.structuresMod.IStructureConstructor
 import typings.mendixmodelsdk.transportInterfacesMod.IAbstractElementJson
 import typings.mendixmodelsdk.transportInterfacesMod.IAbstractUnitJson
+import typings.mendixmodelsdk.unitsMod.IAbstractUnit
 import typings.mendixmodelsdk.unitsMod.IAbstractUnitConstructor
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import scala.scalajs.js
@@ -54,6 +55,12 @@ object instancehelpers extends js.Object {
     * Creates a new unit for a SDK user.
     */
   def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): js.Any = js.native
+  def createUnitFromJSON(model: typings.mendixmodelsdk.abstractModelMod.AbstractModel, json: IAbstractUnitJson): IAbstractUnit = js.native
+  def createUnitFromJSON(
+    model: typings.mendixmodelsdk.abstractModelMod.AbstractModel,
+    json: IAbstractUnitJson,
+    resolveByIdReferences: Boolean
+  ): IAbstractUnit = js.native
   /**
     * Type -> class (the constructor function, technically) lookup, e.g. "DomainModels$Entity" -> DomainModels.Entity
     */

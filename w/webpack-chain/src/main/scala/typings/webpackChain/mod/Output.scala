@@ -18,6 +18,7 @@ class Output ()
   def devtoolFallbackModuleFilenameTemplate(value: js.Any): this.type = js.native
   def devtoolLineToLine(value: js.Any): this.type = js.native
   def devtoolModuleFilenameTemplate(value: js.Any): this.type = js.native
+  def devtoolNamespace(value: String): this.type = js.native
   /* CompleteClass */
   override def end(): Config = js.native
   def filename(value: String): this.type = js.native

@@ -56,7 +56,7 @@ package object mod {
   // string types can be searched using a regex in mongo
   // array types can be searched using their element type
   type RegExpForString[T] = T | typings.std.RegExp
-  type SetFields[TSchema] = typings.mongodb.mongodbStrings.SetFields with js.Any with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.Array[_]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.AddToSetOperators[_] | js.Any])
+  type SetFields[TSchema] = typings.mongodb.mongodbStrings.SetFields with js.Any with (typings.mongodb.mod.NotAcceptedFields[TSchema, js.UndefOr[js.Array[_]]]) with (org.scalablytyped.runtime.StringDictionary[typings.mongodb.mod.AddToSetOperators[_] | js.Any])
   type Unpacked[Type] = Type
   // this adds _id as a required property
   type WithId[TSchema] = (typings.mongodb.mod.EnhancedOmit[TSchema, typings.mongodb.mongodbStrings._id]) with typings.mongodb.AnonIdExtractIdTypeTSchema[TSchema]

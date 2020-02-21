@@ -9,7 +9,7 @@ package object mod {
     typings.formatjsIntlUnifiedNumberformat.mod.UnifiedNumberFormatInternal, 
     typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.currencySign | typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.unit | typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.unitDisplay | typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.notation | typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.compactDisplay | typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.signDisplay
   ])
-  type UnifiedNumberFormatOptions = typings.std.Intl.NumberFormatOptions with typings.formatjsIntlUtils.numberTypesMod.NumberFormatDigitOptions with typings.formatjsIntlUnifiedNumberformat.AnonAccountingAlways
+  type UnifiedNumberFormatOptions = typings.std.Intl.NumberFormatOptions with typings.formatjsIntlUtils.numberTypesMod.NumberFormatDigitOptions with typings.formatjsIntlUnifiedNumberformat.AnonCompactDisplayCurrencyDisplay
   /* Rewritten from type alias, can be one of: 
     - typings.std.Intl.NumberFormatPartTypes
     - typings.formatjsIntlUnifiedNumberformat.formatjsIntlUnifiedNumberformatStrings.exponentSeparator

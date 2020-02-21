@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RebootDBInstanceMessage extends js.Object {
   /**
-    * The DB instance identifier. This parameter is stored as a lowercase string. Constraints:   Must match the identifier of an existing DBInstance.  
+    * The instance identifier. This parameter is stored as a lowercase string. Constraints:   Must match the identifier of an existing DBInstance.  
     */
   var DBInstanceIdentifier: String = js.native
   /**

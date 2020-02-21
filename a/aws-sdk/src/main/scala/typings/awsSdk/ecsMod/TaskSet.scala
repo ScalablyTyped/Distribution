@@ -83,6 +83,10 @@ trait TaskSet extends js.Object {
     */
   var status: js.UndefOr[String] = js.native
   /**
+    * The metadata that you apply to the task set to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. The following basic restrictions apply to tags:   Maximum number of tags per resource - 50   For each resource, each tag key must be unique, and each tag key can have only one value.   Maximum key length - 128 Unicode characters in UTF-8   Maximum value length - 256 Unicode characters in UTF-8   If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.   Tag keys and values are case-sensitive.   Do not use aws:, AWS:, or any upper or lowercase combination of such as a prefix for either keys or values as it is reserved for AWS use. You cannot edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags per resource limit.  
+    */
+  var tags: js.UndefOr[Tags] = js.native
+  /**
     * The task definition the task set is using.
     */
   var taskDefinition: js.UndefOr[String] = js.native
@@ -118,6 +122,7 @@ object TaskSet {
     stabilityStatusAt: Timestamp = null,
     startedBy: String = null,
     status: String = null,
+    tags: Tags = null,
     taskDefinition: String = null,
     taskSetArn: String = null,
     updatedAt: Timestamp = null
@@ -142,6 +147,7 @@ object TaskSet {
     if (stabilityStatusAt != null) __obj.updateDynamic("stabilityStatusAt")(stabilityStatusAt.asInstanceOf[js.Any])
     if (startedBy != null) __obj.updateDynamic("startedBy")(startedBy.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
     if (taskSetArn != null) __obj.updateDynamic("taskSetArn")(taskSetArn.asInstanceOf[js.Any])
     if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])

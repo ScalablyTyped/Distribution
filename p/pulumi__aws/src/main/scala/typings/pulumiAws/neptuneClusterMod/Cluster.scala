@@ -55,6 +55,11 @@ class Cluster protected () extends CustomResource {
     * The Neptune Cluster Resource ID
     */
   val clusterResourceId: Output_[String] = js.native
+  val deletionProtection: Output_[js.UndefOr[Boolean]] = js.native
+  /**
+    * A list of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports `audit`.
+    */
+  val enableCloudwatchLogsExports: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
     * The DNS address of the Neptune instance
     */

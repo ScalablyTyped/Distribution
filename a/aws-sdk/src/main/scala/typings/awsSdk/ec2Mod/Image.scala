@@ -63,6 +63,10 @@ trait Image extends js.Object {
     */
   var Platform: js.UndefOr[PlatformValues] = js.native
   /**
+    * The platform details associated with the billing code of the AMI. For more information, see Obtaining Billing Information in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var PlatformDetails: js.UndefOr[String] = js.native
+  /**
     * Any product codes associated with the AMI.
     */
   var ProductCodes: js.UndefOr[ProductCodeList] = js.native
@@ -99,6 +103,10 @@ trait Image extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.native
   /**
+    * The operation of the Amazon EC2 instance and the billing code that is associated with the AMI. usageOperation corresponds to the lineitem/Operation column on your AWS Cost and Usage Report and in the AWS Price List API. For the list of UsageOperation codes, see Platform Details and Usage Operation Billing Codes in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var UsageOperation: js.UndefOr[String] = js.native
+  /**
     * The type of virtualization of the AMI.
     */
   var VirtualizationType: js.UndefOr[typings.awsSdk.ec2Mod.VirtualizationType] = js.native
@@ -121,6 +129,7 @@ object Image {
     Name: String = null,
     OwnerId: String = null,
     Platform: PlatformValues = null,
+    PlatformDetails: String = null,
     ProductCodes: ProductCodeList = null,
     Public: js.UndefOr[scala.Boolean] = js.undefined,
     RamdiskId: String = null,
@@ -130,6 +139,7 @@ object Image {
     State: ImageState = null,
     StateReason: StateReason = null,
     Tags: TagList = null,
+    UsageOperation: String = null,
     VirtualizationType: VirtualizationType = null
   ): Image = {
     val __obj = js.Dynamic.literal()
@@ -147,6 +157,7 @@ object Image {
     if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
+    if (PlatformDetails != null) __obj.updateDynamic("PlatformDetails")(PlatformDetails.asInstanceOf[js.Any])
     if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
     if (!js.isUndefined(Public)) __obj.updateDynamic("Public")(Public.asInstanceOf[js.Any])
     if (RamdiskId != null) __obj.updateDynamic("RamdiskId")(RamdiskId.asInstanceOf[js.Any])
@@ -156,6 +167,7 @@ object Image {
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     if (StateReason != null) __obj.updateDynamic("StateReason")(StateReason.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (UsageOperation != null) __obj.updateDynamic("UsageOperation")(UsageOperation.asInstanceOf[js.Any])
     if (VirtualizationType != null) __obj.updateDynamic("VirtualizationType")(VirtualizationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }

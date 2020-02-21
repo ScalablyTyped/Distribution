@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.SCROLLBAR_VISIBILITY_SHOW_ALWAYS
   * @description The scrollbar will be visible all the time.
   */

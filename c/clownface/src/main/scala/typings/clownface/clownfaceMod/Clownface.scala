@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Clownface[D /* <: DatasetCore[Quad] */, T /* <: Term */]
+trait Clownface[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */]
   extends typings.clownface.mod.Clownface[D, T] {
   def blankNode(value: String): SingleContextClownface[D, BlankNode] = js.native
   @JSName("blankNode")

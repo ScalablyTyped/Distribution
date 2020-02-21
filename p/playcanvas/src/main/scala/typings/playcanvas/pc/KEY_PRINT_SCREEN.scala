@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.KEY_PRINT_SCREEN
   */
 @JSGlobal("pc.KEY_PRINT_SCREEN")

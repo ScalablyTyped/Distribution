@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.RENDERSTYLE_SOLID
+  * @type {number}
   * @description Render mesh instance as solid geometry.
   */
 @JSGlobal("pc.RENDERSTYLE_SOLID")

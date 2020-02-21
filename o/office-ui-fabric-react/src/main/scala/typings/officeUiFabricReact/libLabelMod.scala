@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.labelTypesMod.ILabelProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ object libLabelMod extends js.Object {
   class LabelBase ()
     extends typings.officeUiFabricReact.labelBaseMod.LabelBase
   
-  val Label: StatelessComponent[ILabelProps] = js.native
+  val Label: FunctionComponent[ILabelProps] = js.native
 }
 

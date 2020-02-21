@@ -42,6 +42,18 @@ trait Adapter extends js.Object {
   var name: String = js.native
   /** Namespace of adapter objects: "<name>.<instance>" */
   val namespace: String = js.native
+  /**
+    * Contains a live cache of the adapter's objects.
+    *
+    * NOTE: This is only defined if the adapter was initialized with the option `objects: true`.
+    */
+  var oObjects: js.UndefOr[Record[String, js.UndefOr[Object]]] = js.native
+  /**
+    * Contains a live cache of the adapter's states.
+    *
+    * NOTE: This is only defined if the adapter was initialized with the option `states: true`.
+    */
+  var oStates: js.UndefOr[Record[String, js.UndefOr[State]]] = js.native
   /** content of package.json */
   var pack: js.Any = js.native
   /** Stops the adapter. Note: Is not always defined. */
@@ -713,6 +725,7 @@ trait Adapter extends js.Object {
   /** Reads an object from the object db */
   def getObjectAsync(id: String): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
   def getObjectAsync(id: String, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
+  def getObjectList(params: Null, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: Null, options: AnonSorted, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: Null, options: Record[String, _], callback: GetObjectListCallback): Unit = js.native
   /**
@@ -721,18 +734,18 @@ trait Adapter extends js.Object {
     * @param options If the returned list should be sorted. And some internal options.
     * @param callback Is called when the operation has finished (successfully or not)
     */
-  // TODO: options should be optional: https://github.com/ioBroker/ioBroker.js-controller/issues/574
-  // getObjectList(params: GetObjectListParams | null, callback: GetObjectListCallback): void;
+  def getObjectList(params: GetObjectListParams, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: GetObjectListParams, options: AnonSorted, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: GetObjectListParams, options: Record[String, _], callback: GetObjectListCallback): Unit = js.native
+  def getObjectListAsync(): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
   def getObjectListAsync(params: Null, options: AnonSorted): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
   def getObjectListAsync(params: Null, options: Record[String, _]): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
   /**
     * Returns a list of objects with id between params.startkey and params.endkey
     * @param params Parameters determining the objects included in the return list. Null to include all objects
     * @param options If the returned list should be sorted. And some internal options.
-    * @param callback Is called when the operation has finished (successfully or not)
     */
+  def getObjectListAsync(params: GetObjectListParams): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
   def getObjectListAsync(params: GetObjectListParams, options: AnonSorted): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
   def getObjectListAsync(params: GetObjectListParams, options: Record[String, _]): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
   def getObjectView(design: String, search: String, params: js.UndefOr[scala.Nothing], callback: GetObjectViewCallback): Unit = js.native

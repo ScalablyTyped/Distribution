@@ -5,6 +5,7 @@ import typings.tensorflowTfjsCore.convUtilMod.Conv3DInfo
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank.R1
 import typings.tensorflowTfjsCore.tensorMod.Tensor
+import typings.tensorflowTfjsCore.tensorflowTfjsCoreNumbers.`30`
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCDHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NDHWC
@@ -20,6 +21,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-core", "backend_util")
 @js.native
 object backendUtil extends js.Object {
+  val PARALLELIZE_THRESHOLD: `30` = js.native
   def assertAndGetBroadcastShape(shapeA: js.Array[Double], shapeB: js.Array[Double]): js.Array[Double] = js.native
   def assertAxesAreInnerMostDims(msg: String, axes: js.Array[Double], rank: Double): Unit = js.native
   def assertParamsConsistent(shapes: js.Array[js.Array[Double]], axis: Double): Unit = js.native
@@ -103,6 +105,7 @@ object backendUtil extends js.Object {
     stride: Double,
     dilation: Double
   ): Double = js.native
+  def computeOptimalWindowSize(inSize: Double): Double = js.native
   def computeOutAndReduceShapes(aShape: js.Array[Double], axes: js.Array[Double]): js.Tuple2[js.Array[Double], js.Array[Double]] = js.native
   def computeOutShape(shapes: js.Array[js.Array[Double]], axis: Double): js.Array[Double] = js.native
   def computePool2DInfo(

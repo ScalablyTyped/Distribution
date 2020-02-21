@@ -17,8 +17,7 @@ trait GetZoneArgs extends js.Object {
   val privateZone: js.UndefOr[Boolean] = js.native
   val resourceRecordSetCount: js.UndefOr[Double] = js.native
   /**
-    * Used with `name` field. A mapping of tags, each pair of which must exactly match
-    * a pair on the desired Hosted Zone.
+    * Used with `name` field. A mapping of tags, each pair of which must exactly match a pair on the desired Hosted Zone.
     */
   val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
   /**

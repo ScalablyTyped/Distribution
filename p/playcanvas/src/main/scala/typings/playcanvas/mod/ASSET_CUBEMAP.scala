@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.ASSET_CUBEMAP
   * @description Asset type name for cubemap.
   */

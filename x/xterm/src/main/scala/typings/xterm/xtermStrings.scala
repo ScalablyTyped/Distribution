@@ -66,9 +66,6 @@ object xtermStrings {
   sealed trait canvas extends RendererType
   
   @js.native
-  sealed trait colors extends js.Object
-  
-  @js.native
   sealed trait cols extends js.Object
   
   @js.native
@@ -108,9 +105,6 @@ object xtermStrings {
   sealed trait fontWeightBold extends js.Object
   
   @js.native
-  sealed trait handler extends js.Object
-  
-  @js.native
   sealed trait info extends LogLevel
   
   @js.native
@@ -147,9 +141,6 @@ object xtermStrings {
   sealed trait rows extends js.Object
   
   @js.native
-  sealed trait screenKeys extends js.Object
-  
-  @js.native
   sealed trait scrollback extends js.Object
   
   @js.native
@@ -169,9 +160,6 @@ object xtermStrings {
   
   @js.native
   sealed trait underline extends js.Object
-  
-  @js.native
-  sealed trait useFlowControl extends js.Object
   
   @js.native
   sealed trait visual extends js.Object
@@ -227,8 +215,6 @@ object xtermStrings {
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   @scala.inline
-  def colors: colors = "colors".asInstanceOf[colors]
-  @scala.inline
   def cols: cols = "cols".asInstanceOf[cols]
   @scala.inline
   def convertEol: convertEol = "convertEol".asInstanceOf[convertEol]
@@ -255,8 +241,6 @@ object xtermStrings {
   @scala.inline
   def fontWeightBold: fontWeightBold = "fontWeightBold".asInstanceOf[fontWeightBold]
   @scala.inline
-  def handler: handler = "handler".asInstanceOf[handler]
-  @scala.inline
   def info: info = "info".asInstanceOf[info]
   @scala.inline
   def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
@@ -281,8 +265,6 @@ object xtermStrings {
   @scala.inline
   def rows: rows = "rows".asInstanceOf[rows]
   @scala.inline
-  def screenKeys: screenKeys = "screenKeys".asInstanceOf[screenKeys]
-  @scala.inline
   def scrollback: scrollback = "scrollback".asInstanceOf[scrollback]
   @scala.inline
   def shift: shift = "shift".asInstanceOf[shift]
@@ -296,8 +278,6 @@ object xtermStrings {
   def theme: theme = "theme".asInstanceOf[theme]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
-  @scala.inline
-  def useFlowControl: useFlowControl = "useFlowControl".asInstanceOf[useFlowControl]
   @scala.inline
   def visual: visual = "visual".asInstanceOf[visual]
   @scala.inline

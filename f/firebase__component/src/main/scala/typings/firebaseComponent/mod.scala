@@ -17,7 +17,7 @@ object mod extends js.Object {
       *
       * @param name The public service name, e.g. app, auth, firestore, database
       * @param instanceFactory Service factory responsible for creating the public interface
-      * @param type whehter the service provided by the component is public or private
+      * @param type whether the service provided by the component is public or private
       */
     def this(name: T, instanceFactory: InstanceFactory[T], `type`: ComponentType) = this()
   }

@@ -6,12 +6,15 @@ import typings.mendixmodelsdk.elementsMod.AbstractElement
 import typings.mendixmodelsdk.elementsMod.Element
 import typings.mendixmodelsdk.structuresMod.IStructure
 import typings.mendixmodelsdk.structuresMod.IStructureConstructor
+import typings.mendixmodelsdk.structuresMod.Structure
 import typings.mendixmodelsdk.transportInterfacesMod.IAbstractElementJson
 import typings.mendixmodelsdk.transportInterfacesMod.IAbstractUnitJson
 import typings.mendixmodelsdk.unitsMod.AbstractUnit
+import typings.mendixmodelsdk.unitsMod.IAbstractUnit
 import typings.mendixmodelsdk.unitsMod.IAbstractUnitConstructor
 import typings.mendixmodelsdk.unitsMod.IStructuralUnit
 import typings.mendixmodelsdk.unitsMod.ModelUnit
+import typings.mendixmodelsdk.utilsMod.utils.IMap
 import typings.mendixmodelsdk.versionChecksMod.ILifeCycle
 import typings.mendixmodelsdk.versionChecksMod.LifeCycle
 import typings.mendixmodelsdk.versionChecksMod.Version
@@ -52,6 +55,8 @@ object instancesMod extends js.Object {
   trait InstanceConstructor extends js.Object
   
   def createElementFromJSON(model: IAbstractModel, json: IAbstractElementJson): Element = js.native
+  def createElementFromJSON(model: IAbstractModel, json: IAbstractElementJson, idToStructureMap: IMap[Structure]): Element = js.native
+  def createModelUnitFromJSON(containerUnit: IStructuralUnit, containmentName: String, contents: IAbstractElementJson): ModelUnit = js.native
   @js.native
   object instancehelpers extends js.Object {
     /**
@@ -85,6 +90,8 @@ object instancesMod extends js.Object {
       * Creates a new unit for a SDK user.
       */
     def createUnit(container: IStructuralUnit, constructor: IAbstractUnitConstructor): js.Any = js.native
+    def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson): IAbstractUnit = js.native
+    def createUnitFromJSON(model: AbstractModel, json: IAbstractUnitJson, resolveByIdReferences: Boolean): IAbstractUnit = js.native
     /**
       * Type -> class (the constructor function, technically) lookup, e.g. "DomainModels$Entity" -> DomainModels.Entity
       */

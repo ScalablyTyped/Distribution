@@ -14,4 +14,5 @@ package object SchemaTypeOpts {
   type DefaultFn[T] = js.Function1[/* repeated */ js.Any, T]
   type RequiredFn[T] = js.Function2[/* required */ scala.Boolean, /* message */ js.UndefOr[java.lang.String], T]
   type ValidateFn[T] = js.Function1[/* value */ T, scala.Boolean]
+  type ValidatorMessageFn = js.Function1[/* props */ typings.mongoose.mod.SchemaTypeOpts.ValidatorProps, java.lang.String]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addons" : "5.3.7"
+      "@storybook/addons" : "5.3.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addons" : "5.3.7"
+      "@storybook/addons" : "5.3.13"
     }
   ],
   "compile-devDependencies" : [

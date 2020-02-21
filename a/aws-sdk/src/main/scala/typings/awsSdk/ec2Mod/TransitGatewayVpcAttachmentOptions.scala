@@ -11,7 +11,7 @@ trait TransitGatewayVpcAttachmentOptions extends js.Object {
     */
   var DnsSupport: js.UndefOr[DnsSupportValue] = js.native
   /**
-    * Indicates whether IPv6 support is enabled.
+    * Indicates whether IPv6 support is disabled.
     */
   var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.native
 }

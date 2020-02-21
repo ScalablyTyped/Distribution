@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.SPRITETYPE_SIMPLE
   * @description A {@link pc.SpriteComponent} that displays a single frame from a sprite asset.
   */

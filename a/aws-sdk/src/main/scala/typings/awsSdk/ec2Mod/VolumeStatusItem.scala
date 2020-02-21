@@ -11,6 +11,10 @@ trait VolumeStatusItem extends js.Object {
     */
   var Actions: js.UndefOr[VolumeStatusActionsList] = js.native
   /**
+    * Information about the instances to which the volume is attached.
+    */
+  var AttachmentStatuses: js.UndefOr[VolumeStatusAttachmentStatusList] = js.native
+  /**
     * The Availability Zone of the volume.
     */
   var AvailabilityZone: js.UndefOr[String] = js.native
@@ -36,6 +40,7 @@ object VolumeStatusItem {
   @scala.inline
   def apply(
     Actions: VolumeStatusActionsList = null,
+    AttachmentStatuses: VolumeStatusAttachmentStatusList = null,
     AvailabilityZone: String = null,
     Events: VolumeStatusEventsList = null,
     OutpostArn: String = null,
@@ -44,6 +49,7 @@ object VolumeStatusItem {
   ): VolumeStatusItem = {
     val __obj = js.Dynamic.literal()
     if (Actions != null) __obj.updateDynamic("Actions")(Actions.asInstanceOf[js.Any])
+    if (AttachmentStatuses != null) __obj.updateDynamic("AttachmentStatuses")(AttachmentStatuses.asInstanceOf[js.Any])
     if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (Events != null) __obj.updateDynamic("Events")(Events.asInstanceOf[js.Any])
     if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])

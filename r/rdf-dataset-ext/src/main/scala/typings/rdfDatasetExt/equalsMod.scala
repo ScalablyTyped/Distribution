@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rdf-dataset-ext/equals", JSImport.Namespace)
 @js.native
 object equalsMod extends js.Object {
-  def apply(a: DatasetCore[BaseQuad], b: DatasetCore[BaseQuad]): Boolean = js.native
+  def apply(a: DatasetCore[BaseQuad, BaseQuad], b: DatasetCore[BaseQuad, BaseQuad]): Boolean = js.native
 }
 

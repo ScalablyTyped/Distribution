@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-os-utils
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 An operating system utility library.

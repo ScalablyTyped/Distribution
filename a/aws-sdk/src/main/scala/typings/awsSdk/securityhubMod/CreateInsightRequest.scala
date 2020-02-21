@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateInsightRequest extends js.Object {
   /**
-    * One or more attributes used to filter the findings included in the insight. Only findings that match the criteria defined in the filters are included in the insight.
+    * One or more attributes used to filter the findings included in the insight. The insight only includes findings that match the criteria defined in the filters.
     */
   var Filters: AwsSecurityFindingFilters = js.native
   /**

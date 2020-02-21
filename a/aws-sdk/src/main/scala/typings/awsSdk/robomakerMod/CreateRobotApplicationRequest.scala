@@ -11,7 +11,7 @@ trait CreateRobotApplicationRequest extends js.Object {
     */
   var name: Name = js.native
   /**
-    * The robot software suite used by the robot application.
+    * The robot software suite (ROS distribuition) used by the robot application.
     */
   var robotSoftwareSuite: RobotSoftwareSuite = js.native
   /**

@@ -442,6 +442,9 @@ trait MessageCompose extends Item {
     * 
     * **Errors**:
     * 
+    * - AttachmentTypeNotSupported: The attachment type isn't supported. Unsupported types include embedded images in Rich Text Format,
+    *                               or item attachment types other than email or calendar items (such as a contact or task item).
+    *
     * - InvalidAttachmentId: The attachment identifier does not exist.
     * 
     * @param attachmentId - The identifier of the attachment you want to get. 
@@ -751,13 +754,6 @@ trait MessageCompose extends Item {
     * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
     * Until the item is synced, using the itemId will return an error.
     *
-    * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
-    *
-    * - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in compose mode.
-    * See {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API} for a workaround.
-    *
-    * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-    *
     * [Api set: Mailbox 1.3]
     *
     * @remarks
@@ -788,13 +784,6 @@ trait MessageCompose extends Item {
     * **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
     * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
     * Until the item is synced, using the itemId will return an error.
-    *
-    * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
-    *
-    * - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in compose mode.
-    * See {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API} for a workaround.
-    *
-    * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
     *
     * [Api set: Mailbox 1.3]
     *

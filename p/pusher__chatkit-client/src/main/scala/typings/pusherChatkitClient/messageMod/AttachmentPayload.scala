@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AttachmentPayload extends js.Object {
+// This is what a file looks like after it's returned by Chatkit
+trait AttachmentPayload extends MessagePayload {
   var customData: js.UndefOr[js.Any] = js.undefined
   var name: String
   var size: Double

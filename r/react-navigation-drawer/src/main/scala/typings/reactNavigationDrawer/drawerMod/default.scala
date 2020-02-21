@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-navigation-drawer/lib/typescript/src/views/Drawer", JSImport.Default)
 @js.native
-class default () extends DrawerView
+class default () extends Drawer
 
 /* static members */
 @JSImport("react-navigation-drawer/lib/typescript/src/views/Drawer", JSImport.Default)

@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "react-chartjs-2"
-version := "2.8.0-73b78a"
-scalaVersion := "2.12.10"
+version := "2.9.0-064cef"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chart_dot_js" % "2.9-dt-20200117Z-20289d",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-dcd929",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-78233f",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-0e1ae9",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "chart_dot_js" % "2.9-dt-20200212Z-9a24ae",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-ffacbb",
+  "org.scalablytyped" %%% "moment" % "2.24.0-8b2e89",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-05a52c",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-b17eee",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

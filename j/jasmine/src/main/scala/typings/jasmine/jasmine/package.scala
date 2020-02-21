@@ -39,6 +39,8 @@ package object jasmine {
   type SpyObjMethodNames[T] = js.Array[java.lang.String] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends jasmine.jasmine.Func? std.ReturnType<T[P]> : any}
     */ typings.jasmine.jasmineStrings.SpyObjMethodNames with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any]
-  type SpyObjPropertyNames[T] = js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[js.Any]
+  type SpyObjPropertyNames[T] = js.Array[java.lang.String] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? T[P]}
+    */ typings.jasmine.jasmineStrings.SpyObjPropertyNames with T) | org.scalablytyped.runtime.StringDictionary[js.Any]
   type StringPrettyPrinter = typings.jasmine.jasmine.PrettyPrinter
 }

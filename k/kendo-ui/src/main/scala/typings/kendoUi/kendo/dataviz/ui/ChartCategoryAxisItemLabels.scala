@@ -12,9 +12,9 @@ trait ChartCategoryAxisItemLabels extends js.Object {
   var dateFormats: js.UndefOr[ChartCategoryAxisItemLabelsDateFormats] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartCategoryAxisItemLabelsMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartCategoryAxisItemLabelsMargin] = js.undefined
   var mirror: js.UndefOr[Boolean] = js.undefined
-  var padding: js.UndefOr[ChartCategoryAxisItemLabelsPadding] = js.undefined
+  var padding: js.UndefOr[Double | ChartCategoryAxisItemLabelsPadding] = js.undefined
   var rotation: js.UndefOr[String | Double | ChartCategoryAxisItemLabelsRotation] = js.undefined
   var skip: js.UndefOr[Double] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
@@ -33,9 +33,9 @@ object ChartCategoryAxisItemLabels {
     dateFormats: ChartCategoryAxisItemLabelsDateFormats = null,
     font: String = null,
     format: String = null,
-    margin: ChartCategoryAxisItemLabelsMargin = null,
+    margin: Double | ChartCategoryAxisItemLabelsMargin = null,
     mirror: js.UndefOr[Boolean] = js.undefined,
-    padding: ChartCategoryAxisItemLabelsPadding = null,
+    padding: Double | ChartCategoryAxisItemLabelsPadding = null,
     rotation: String | Double | ChartCategoryAxisItemLabelsRotation = null,
     skip: Int | Double = null,
     step: Int | Double = null,

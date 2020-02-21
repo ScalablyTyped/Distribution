@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("H.geo.Point")
 @js.native
-class Point protected () extends IPoint {
+class Point protected ()
+  extends AbstractGeometry
+     with IPoint {
   /**
     * Constructor
     * @property lat {H.geo.Latitude} - The latitude coordinate.

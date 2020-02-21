@@ -15,7 +15,7 @@ trait CreateImageRequest extends js.Object {
     */
   var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested and assessed. 
+    *  The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested, and assessed. 
     */
   var imageRecipeArn: ImageRecipeArn = js.native
   /**

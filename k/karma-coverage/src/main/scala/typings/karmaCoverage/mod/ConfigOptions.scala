@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ConfigOptions extends js.Object {
   /**
-    * See https://github.com/karma-runner/karma-coverage/blob/master/docs/configuration.md
+    * {@link https://github.com/karma-runner/karma-coverage/blob/v1.1.2/docs/configuration.md }
     */
   var coverageReporter: js.UndefOr[KarmaCoverageReporter with AnonReporters] = js.undefined
 }

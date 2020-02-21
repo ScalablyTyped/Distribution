@@ -11,6 +11,8 @@ import typings.tensorflowTfjsCore.modelTypesMod.ModelPredictConfig
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
+import typings.tensorflowTfjsCore.typesMod.SaveConfig
+import typings.tensorflowTfjsCore.typesMod.SaveResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +35,7 @@ object graphModelMod extends js.Object {
     def this(modelUrl: IOHandler) = this()
     def this(modelUrl: String, loadOptions: LoadOptions) = this()
     def this(modelUrl: IOHandler, loadOptions: LoadOptions) = this()
+    var artifacts: js.Any = js.native
     var convertTensorMapToTensorsMap: js.Any = js.native
     var executor: js.Any = js.native
     var findIOHandler: js.Any = js.native
@@ -145,6 +148,55 @@ object graphModelMod extends js.Object {
     def predict(inputs: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
     def predict(inputs: Tensor_[Rank], config: ModelPredictConfig): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
     def predict(inputs: NamedTensorMap): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
+    def save(handlerOrURL: String): js.Promise[SaveResult] = js.native
+    def save(handlerOrURL: String, config: SaveConfig): js.Promise[SaveResult] = js.native
+    /**
+      * Save the configuration and/or weights of the GraphModel.
+      *
+      * An `IOHandler` is an object that has a `save` method of the proper
+      * signature defined. The `save` method manages the storing or
+      * transmission of serialized data ("artifacts") that represent the
+      * model's topology and weights onto or via a specific medium, such as
+      * file downloads, local storage, IndexedDB in the web browser and HTTP
+      * requests to a server. TensorFlow.js provides `IOHandler`
+      * implementations for a number of frequently used saving mediums, such as
+      * `tf.io.browserDownloads` and `tf.io.browserLocalStorage`. See `tf.io`
+      * for more details.
+      *
+      * This method also allows you to refer to certain types of `IOHandler`s
+      * as URL-like string shortcuts, such as 'localstorage://' and
+      * 'indexeddb://'.
+      *
+      * Example 1: Save `model`'s topology and weights to browser [local
+      * storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage);
+      * then load it back.
+      *
+      * ```js
+      * const modelUrl =
+      *    'https://storage.googleapis.com/tfjs-models/savedmodel/mobilenet_v2_1.0_224/model.json';
+      * const model = await tf.loadGraphModel(modelUrl);
+      * const zeros = tf.zeros([1, 224, 224, 3]);
+      * model.predict(zeros).print();
+      *
+      * const saveResults = await model.save('localstorage://my-model-1');
+      *
+      * const loadedModel = await tf.loadGraphModel('localstorage://my-model-1');
+      * console.log('Prediction from loaded model:');
+      * model.predict(zeros).print();
+      * ```
+      *
+      * @param handlerOrURL An instance of `IOHandler` or a URL-like,
+      * scheme-based string shortcut for `IOHandler`.
+      * @param config Options for saving the model.
+      * @returns A `Promise` of `SaveResult`, which summarizes the result of
+      * the saving, such as byte sizes of the saved artifacts for the model's
+      *   topology and weight values.
+      */
+    /**
+      * @doc {heading: 'Models', subheading: 'Classes', ignoreCI: true}
+      */
+    def save(handlerOrURL: IOHandler): js.Promise[SaveResult] = js.native
+    def save(handlerOrURL: IOHandler, config: SaveConfig): js.Promise[SaveResult] = js.native
   }
   
   val DEFAULT_MODEL_NAME: modelDotjson = js.native

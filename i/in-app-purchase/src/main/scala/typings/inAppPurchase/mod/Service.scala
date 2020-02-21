@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - typings.inAppPurchase.inAppPurchaseStrings.google
   - typings.inAppPurchase.inAppPurchaseStrings.windows
   - typings.inAppPurchase.inAppPurchaseStrings.amazon
+  - typings.inAppPurchase.inAppPurchaseStrings.facebook
   - typings.inAppPurchase.inAppPurchaseStrings.roku
 */
 trait Service extends js.Object
@@ -21,6 +22,8 @@ object Service {
   def apple: typings.inAppPurchase.inAppPurchaseStrings.apple = this.cast("apple")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def facebook: typings.inAppPurchase.inAppPurchaseStrings.facebook = this.cast("facebook")
   @scala.inline
   def google: typings.inAppPurchase.inAppPurchaseStrings.google = this.cast("google")
   @scala.inline

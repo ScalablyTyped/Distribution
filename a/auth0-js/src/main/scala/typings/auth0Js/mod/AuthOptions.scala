@@ -15,7 +15,7 @@ trait AuthOptions extends js.Object {
   var leeway: js.UndefOr[Double] = js.undefined
   /**
     * maximum elapsed time in seconds since the last time the user
-    * was actively authenticatedby the authorization server.
+    * was actively authenticated by the authorization server.
     */
   var maxAge: js.UndefOr[Double] = js.undefined
   var plugins: js.UndefOr[js.Array[_]] = js.undefined

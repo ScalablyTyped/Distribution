@@ -10,9 +10,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jose", "JWK.Key")
 @js.native
-class Key () extends _ProduceKeyInput {
+trait Key extends _ProduceKeyInput {
   var alg: js.UndefOr[String] = js.native
   var keyObject: KeyObject = js.native
   var key_ops: js.UndefOr[js.Array[keyOperation]] = js.native

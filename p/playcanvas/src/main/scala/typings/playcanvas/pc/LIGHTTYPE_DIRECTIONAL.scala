@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.LIGHTTYPE_DIRECTIONAL
+  * @type {number}
   * @description Directional (global) light source.
   */
 @JSGlobal("pc.LIGHTTYPE_DIRECTIONAL")

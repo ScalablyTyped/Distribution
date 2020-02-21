@@ -38,10 +38,10 @@ class TargetLocator protected () extends js.Object {
     *     driver has changed focus to the default content.
     */
   def defaultContent(): js.Promise[Unit] = js.native
+  def frame(): js.Promise[Unit] = js.native
   /**
-    * Schedules a command to switch the focus of all future commands to another
-    * frame on the page. The target frame may be specified as one of the
-    * following:
+    * Changes the focus of all future commands to another frame on the page. The
+    * target frame may be specified as one of the following:
     *
     * - A number that specifies a (zero-based) index into [window.frames](
     *   https://developer.mozilla.org/en-US/docs/Web/API/Window.frames).
@@ -57,8 +57,29 @@ class TargetLocator protected () extends js.Object {
     * @return {!Promise<void>} A promise that will be resolved
     *     when the driver has changed focus to the specified frame.
     */
-  def frame(nameOrIndex: Double): js.Promise[Unit] = js.native
-  def frame(nameOrIndex: WebElement): js.Promise[Unit] = js.native
+  def frame(id: Double): js.Promise[Unit] = js.native
+  def frame(id: WebElement): js.Promise[Unit] = js.native
+  /**
+    * Creates a new browser window and switches the focus for future
+    * commands of this driver to the new window.
+    *
+    * @param {string} typeHint 'window' or 'tab'. The created window is not
+    *     guaranteed to be of the requested type; if the driver does not support
+    *     the requested type, a new browser window will be created of whatever type
+    *     the driver does support.
+    * @return {!Promise<void>} A promise that will be resolved
+    *     when the driver has changed focus to the new window.
+    */
+  def newWindow(typeHint: String): js.Promise[Unit] = js.native
+  /**
+    * Changes the focus of all future commands to the parent frame of the
+    * currently selected frame. This command has no effect if the driver is
+    * already focused on the top-level browsing context.
+    *
+    * @return {!Promise<void>} A promise that will be resolved when the command
+    *     has completed.
+    */
+  def parentFrame(): js.Promise[Unit] = js.native
   /**
     * Schedules a command to switch the focus of all future commands to another
     * window. Windows may be specified by their {@code window.name} attribute or

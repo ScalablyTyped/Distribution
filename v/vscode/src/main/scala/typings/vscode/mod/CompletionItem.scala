@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import typings.vscode.AnonInserting
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -81,15 +82,17 @@ class CompletionItem protected () extends js.Object {
   		 */
   var preselect: js.UndefOr[Boolean] = js.native
   /**
-  		 * A range of text that should be replaced by this completion item.
+  		 * A range or a insert and replace range selecting the text that should be replaced by this completion item.
   		 *
-  		 * Defaults to a range from the start of the [current word](#TextDocument.getWordRangeAtPosition) to the
-  		 * current position.
+  		 * When omitted, the range of the [current word](#TextDocument.getWordRangeAtPosition) is used as replace-range
+  		 * and as insert-range the start of the [current word](#TextDocument.getWordRangeAtPosition) to the
+  		 * current position is used.
   		 *
-  		 * *Note:* The range must be a [single line](#Range.isSingleLine) and it must
+  		 * *Note 1:* A range must be a [single line](#Range.isSingleLine) and it must
   		 * [contain](#Range.contains) the position at which completion has been [requested](#CompletionItemProvider.provideCompletionItems).
+  		 * *Note 2:* A insert range must be a prefix of a replace range, that means it must be contained and starting at the same position.
   		 */
-  var range: js.UndefOr[Range] = js.native
+  var range: js.UndefOr[Range | AnonInserting] = js.native
   /**
   		 * A string that should be used when comparing this item
   		 * with other items. When `falsy` the [label](#CompletionItem.label)

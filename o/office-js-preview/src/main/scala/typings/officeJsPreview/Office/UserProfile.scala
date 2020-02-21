@@ -64,7 +64,7 @@ trait UserProfile extends js.Object {
     */
   var displayName: String
   /**
-    * Gets the user's display name.
+    * Gets the user's SMTP email address.
     *
     * @remarks
     * 
@@ -74,7 +74,7 @@ trait UserProfile extends js.Object {
     */
   var emailAddress: String
   /**
-    * Gets the user's SMTP email address.
+    * Gets the user's time zone in Windows format.
     *
     * @remarks
     * 

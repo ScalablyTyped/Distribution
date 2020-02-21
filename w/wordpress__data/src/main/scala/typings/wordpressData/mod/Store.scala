@@ -13,7 +13,11 @@ trait Store[S, A /* <: AnyAction */] extends js.Object {
 
 object Store {
   @scala.inline
-  def apply[S, A /* <: AnyAction */](dispatch: A => A, getState: () => S, subscribe: /* callback */ js.Function0[Unit] => Unit): Store[S, A] = {
+  def apply[S, A /* <: AnyAction */](
+    dispatch: A => A,
+    getState: () => S,
+    subscribe: /* callback */ js.Function0[Unit] => js.Function0[Unit]
+  ): Store[S, A] = {
     val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), getState = js.Any.fromFunction0(getState), subscribe = js.Any.fromFunction1(subscribe))
   
     __obj.asInstanceOf[Store[S, A]]

@@ -11,6 +11,7 @@ package object mod {
     scala.Unit
   ]
   type ClusterNode = java.lang.String | scala.Double | typings.ioredis.mod.NodeConfiguration
+  type Command = typings.ioredis.mod._Command
   type DNSLookupFunction = js.Function2[
     /* hostname */ java.lang.String, 
     /* callback */ js.Function3[

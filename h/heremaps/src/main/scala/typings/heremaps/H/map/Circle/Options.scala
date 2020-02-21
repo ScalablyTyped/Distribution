@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 /**
   * @property style {H.map.SpatialStyle=} - the style to be used when tracing the polyline
   * @property visibility {boolean=} - An optional boolean value indicating whether this map object is visible, default is true
-  * @property precision {number=} - The precision of a circle as a number of segments to be used when rendering the circle. The value is clamped to the range between [4 ... 360], where 60 is
+  * @property precision {number=} - The precision of a circle as a number of segments to be used when rendering the circle.
+  * The value is clamped to the range between [4 ... 360], where 60 is
   * the default. Note that the lower the value the more angular and the less circle-like the shape appears and, conversely, the higher the value the smoother and more rounded the result.
   * Thus, starting at the extreme low end of the possible values, 4 produces a square, 6 a hexagon, while 30 results in a circle-like shape, although it appears increasingly angular as
   * the zoom level increases (as you zoom in), and finally 360 produces a smooth circle.

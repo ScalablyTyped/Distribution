@@ -1,20 +1,19 @@
 organization := "org.scalablytyped"
 name := "babel__standalone"
-version := "7.1-dt-20191216Z-a4adbd"
-scalaVersion := "2.12.10"
+version := "7.1-dt-20191216Z-2a633d"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20190904Z-3b9d82",
-  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20191210Z-6b94b7",
-  "org.scalablytyped" %%% "babel__parser" % "7.8.3-4aa425",
-  "org.scalablytyped" %%% "babel__template" % "7.0-dt-20190213Z-54abd7",
-  "org.scalablytyped" %%% "babel__traverse" % "7.0-dt-20191119Z-1b2d04",
-  "org.scalablytyped" %%% "babel__types" % "7.8.3-b85d7d",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "babel__core" % "7.1-dt-20200214Z-f856eb",
+  "org.scalablytyped" %%% "babel__generator" % "7.6-dt-20191210Z-daf3be",
+  "org.scalablytyped" %%% "babel__parser" % "7.8.4-7717a8",
+  "org.scalablytyped" %%% "babel__template" % "7.0-dt-20190213Z-e96421",
+  "org.scalablytyped" %%% "babel__traverse" % "7.0-dt-20191119Z-082424",
+  "org.scalablytyped" %%% "babel__types" % "7.8.3-09621e",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

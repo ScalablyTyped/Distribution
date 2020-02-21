@@ -1,21 +1,26 @@
 package typings.ioredis.mod
 
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Command extends js.Object {
-  def setArgumentTransformer(name: String, fn: js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]): Unit
-  def setReplyTransformer(name: String, fn: js.Function1[/* result */ js.Any, _]): Unit
+  var args: js.Array[ValueType]
+  var isCustomCommand: Boolean
+  def getKeys(): js.Array[String | Buffer]
+  def getSlot(): Double | Null
 }
 
 object Command {
   @scala.inline
   def apply(
-    setArgumentTransformer: (String, js.Function1[/* args */ js.Array[ValueType], js.Array[ValueType]]) => Unit,
-    setReplyTransformer: (String, js.Function1[/* result */ js.Any, _]) => Unit
+    args: js.Array[ValueType],
+    getKeys: () => js.Array[String | Buffer],
+    getSlot: () => Double | Null,
+    isCustomCommand: Boolean
   ): Command = {
-    val __obj = js.Dynamic.literal(setArgumentTransformer = js.Any.fromFunction2(setArgumentTransformer), setReplyTransformer = js.Any.fromFunction2(setReplyTransformer))
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], getKeys = js.Any.fromFunction0(getKeys), getSlot = js.Any.fromFunction0(getSlot), isCustomCommand = isCustomCommand.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Command]
   }

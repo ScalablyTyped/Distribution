@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.ELEMENTTYPE_GROUP
   * @description A {@link pc.ElementComponent} that contains child {@link pc.ElementComponent}s.
   */

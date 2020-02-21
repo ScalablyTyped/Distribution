@@ -17,6 +17,10 @@ trait MaintenanceWindowArgs extends js.Object {
     */
   val cutoff: Input[Double] = js.native
   /**
+    * A description for the maintenance window.
+    */
+  val description: js.UndefOr[Input[String]] = js.native
+  /**
     * The duration of the Maintenance Window in hours.
     */
   val duration: Input[Double] = js.native
@@ -57,6 +61,7 @@ object MaintenanceWindowArgs {
     duration: Input[Double],
     schedule: Input[String],
     allowUnassociatedTargets: Input[Boolean] = null,
+    description: Input[String] = null,
     enabled: Input[Boolean] = null,
     endDate: Input[String] = null,
     name: Input[String] = null,
@@ -66,6 +71,7 @@ object MaintenanceWindowArgs {
   ): MaintenanceWindowArgs = {
     val __obj = js.Dynamic.literal(cutoff = cutoff.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], schedule = schedule.asInstanceOf[js.Any])
     if (allowUnassociatedTargets != null) __obj.updateDynamic("allowUnassociatedTargets")(allowUnassociatedTargets.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

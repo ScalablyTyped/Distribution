@@ -369,6 +369,9 @@ object pulumiAwsStrings {
   sealed trait awsColonkinesisColonrecord extends js.Object
   
   @js.native
+  sealed trait awsfirelens extends LogDriver
+  
+  @js.native
   sealed trait awslogs extends LogDriver
   
   @js.native
@@ -1551,6 +1554,8 @@ object pulumiAwsStrings {
   def awsColonkinesis: awsColonkinesis = "aws:kinesis".asInstanceOf[awsColonkinesis]
   @scala.inline
   def awsColonkinesisColonrecord: awsColonkinesisColonrecord = "aws:kinesis:record".asInstanceOf[awsColonkinesisColonrecord]
+  @scala.inline
+  def awsfirelens: awsfirelens = "awsfirelens".asInstanceOf[awsfirelens]
   @scala.inline
   def awslogs: awslogs = "awslogs".asInstanceOf[awslogs]
   @scala.inline

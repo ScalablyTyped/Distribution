@@ -1,26 +1,25 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.LeftProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LeftProps[TLength] extends js.Object {
+trait LeftProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
   /**
     * The left CSS property participates in specifying the horizontal position
     * of a positioned element. It has no effect on non-positioned elements.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/left)
     */
-  var left: js.UndefOr[ResponsiveValue[LeftProperty[TLength]]] = js.undefined
+  var left: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 
 object LeftProps {
   @scala.inline
-  def apply[TLength](left: ResponsiveValue[LeftProperty[TLength]] = null): LeftProps[TLength] = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](left: ResponsiveValue[TVal, ThemeType] = null): LeftProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LeftProps[TLength]]
+    __obj.asInstanceOf[LeftProps[ThemeType, TVal]]
   }
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TONEMAP_LINEAR
+  * @type {number}
   * @description Linear tonemapping.
   */
 @JSImport("playcanvas", "TONEMAP_LINEAR")

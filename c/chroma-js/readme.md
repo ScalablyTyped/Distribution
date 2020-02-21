@@ -1,7 +1,7 @@
 
 # Scala.js typings for chroma-js
 
-Typings are for version 1.4
+Typings are for version 2.0
 
 ## Library description:
 JavaScript library for color conversions

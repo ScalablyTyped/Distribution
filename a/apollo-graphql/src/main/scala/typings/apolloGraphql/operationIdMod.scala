@@ -11,5 +11,7 @@ object operationIdMod extends js.Object {
   def defaultEngineReportingSignature(ast: DocumentNode, operationName: String): String = js.native
   def defaultOperationRegistrySignature(ast: DocumentNode, operationName: String): String = js.native
   def operationHash(operation: String): String = js.native
+  def operationRegistrySignature(ast: DocumentNode, operationName: String): String = js.native
+  def operationRegistrySignature(ast: DocumentNode, operationName: String, options: AnonPreserveStringAndNumericLiterals): String = js.native
 }
 

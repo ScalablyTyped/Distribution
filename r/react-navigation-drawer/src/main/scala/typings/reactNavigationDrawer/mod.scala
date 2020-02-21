@@ -47,18 +47,20 @@ object mod extends js.Object {
   val DrawerProgressContext: Context[
     (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any) | Null
   ] = js.native
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _]): AnonAction = js.native
-  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _], config: AnonInitialRouteName): AnonAction = js.native
+  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _]): AnonAction = js.native
+  def DrawerRouter(routeConfigs: NavigationRouteConfigMap[_, _, _], config: AnonInitialRouteName): AnonAction = js.native
   def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], _]
+      NavigationDrawerProp[NavigationRoute[NavigationParams], _], 
+      _
     ]
   ): js.Any = js.native
   def createDrawerNavigator(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], _]
+      NavigationDrawerProp[NavigationRoute[NavigationParams], _], 
+      _
     ],
     config: CreateNavigatorConfigNavigationDrawerConfigNavigat
   ): js.Any = js.native

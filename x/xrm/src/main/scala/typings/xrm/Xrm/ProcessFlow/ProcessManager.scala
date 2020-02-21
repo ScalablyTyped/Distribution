@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProcessManager extends js.Object {
   /**
-    * Use this to add a function as an event handler for the OnProcessStatusChange event so that it will be called when the
+    * Use this to add a function as an event handler for the OnPreProcessStatusChange event so that it will be called before the
     * business process flow status changes.
     * @param handler The function will be added to the bottom of the event
     *                handler pipeline. The execution context is automatically
@@ -23,7 +23,29 @@ trait ProcessManager extends js.Object {
     *                anonymous function if you may later want to remove the
     *                event handler.
     */
-  def addOnProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
+  def addOnPreProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
+  /**
+    * Use this to add a function as an event handler for the OnPreStageChange event so that it will be called before the
+    * business process flow stage changes.
+    * @param handler The function will be added to the bottom of the event
+    *                handler pipeline. The execution context is automatically
+    *                set to be the first parameter passed to the event handler.
+    *                Use a reference to a named function rather than an
+    *                anonymous function if you may later want to remove the
+    *                event handler.
+    */
+  def addOnPreStageChange(handler: ContextSensitiveHandler): Unit = js.native
+  /**
+    * Use this to add a function as an event handler for the OnPreProcessStatusChange event so that it will be called when the
+    * business process flow status changes.
+    * @param handler The function will be added to the bottom of the event
+    *                handler pipeline. The execution context is automatically
+    *                set to be the first parameter passed to the event handler.
+    *                Use a reference to a named function rather than an
+    *                anonymous function if you may later want to remove the
+    *                event handler.
+    */
+  def addOnProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
   /**
     * Use this to add a function as an event handler for the OnStageChange event so that it will be called when the
     * business process flow stage changes.
@@ -117,6 +139,18 @@ trait ProcessManager extends js.Object {
     */
   def movePrevious(): Unit = js.native
   def movePrevious(callbackFunction: ProcessCallbackDelegate): Unit = js.native
+  /**
+    * Use this to remove a function as an event handler for the OnPreProcessStatusChange event.
+    * @param handler If an anonymous function is set using the addOnPreProcessStatusChange method it
+    *                cannot be removed using this method.
+    */
+  def removeOnPreProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
+  /**
+    * Use this to remove a function as an event handler for the OnPreStageChange event.
+    * @param handler If an anonymous function is set using the addOnPreStageChange method it
+    *                cannot be removed using this method.
+    */
+  def removeOnPreStageChange(handler: ProcessStatusChangeHandler): Unit = js.native
   /**
     * Use this to remove a function as an event handler for the OnProcessStatusChange event.
     * @param handler If an anonymous function is set using the addOnProcessStatusChange method it

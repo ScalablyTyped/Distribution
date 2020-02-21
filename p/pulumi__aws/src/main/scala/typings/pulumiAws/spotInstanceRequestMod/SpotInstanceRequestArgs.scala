@@ -73,6 +73,10 @@ trait SpotInstanceRequestArgs extends js.Object {
     */
   val getPasswordData: js.UndefOr[Input[Boolean]] = js.native
   /**
+    * If true, the launched EC2 instance will support hibernation.
+    */
+  val hibernation: js.UndefOr[Input[Boolean]] = js.native
+  /**
     * The Id of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host.
     */
   val hostId: js.UndefOr[Input[String]] = js.native
@@ -211,6 +215,7 @@ object SpotInstanceRequestArgs {
     ebsOptimized: Input[Boolean] = null,
     ephemeralBlockDevices: Input[js.Array[Input[SpotInstanceRequestEphemeralBlockDevice]]] = null,
     getPasswordData: Input[Boolean] = null,
+    hibernation: Input[Boolean] = null,
     hostId: Input[String] = null,
     iamInstanceProfile: Input[String] = null,
     instanceInitiatedShutdownBehavior: Input[String] = null,
@@ -251,6 +256,7 @@ object SpotInstanceRequestArgs {
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
     if (ephemeralBlockDevices != null) __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices.asInstanceOf[js.Any])
     if (getPasswordData != null) __obj.updateDynamic("getPasswordData")(getPasswordData.asInstanceOf[js.Any])
+    if (hibernation != null) __obj.updateDynamic("hibernation")(hibernation.asInstanceOf[js.Any])
     if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
     if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
     if (instanceInitiatedShutdownBehavior != null) __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior.asInstanceOf[js.Any])

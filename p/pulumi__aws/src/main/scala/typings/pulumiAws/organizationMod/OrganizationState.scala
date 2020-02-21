@@ -23,7 +23,7 @@ trait OrganizationState extends js.Object {
     */
   val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+    * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
     */
   val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**

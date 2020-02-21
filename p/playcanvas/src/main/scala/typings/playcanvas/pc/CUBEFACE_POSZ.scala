@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CUBEFACE_POSZ
+  * @type {number}
   * @description The positive Z face of a cubemap.
   */
 @JSGlobal("pc.CUBEFACE_POSZ")

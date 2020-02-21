@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FILTER_NEAREST
+  * @type {number}
   * @description Point sample filtering.
   */
 @JSImport("playcanvas", "FILTER_NEAREST")

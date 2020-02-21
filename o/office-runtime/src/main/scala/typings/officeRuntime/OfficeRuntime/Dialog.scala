@@ -9,7 +9,7 @@ trait Dialog extends js.Object {
   /**
     * Method to close a dialog box. Returns a Promise.
     *
-    * [Api set: CustomFunctionsRuntime 1.1]
+    * [Api set: SharedRuntime 1.1]
     *
     */
   def close(): js.Promise[Unit]

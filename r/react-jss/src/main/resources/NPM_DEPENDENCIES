@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-jss" : "10.0.3"
+      "react-jss" : "10.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-jss" : "10.0.3"
+      "react-jss" : "10.0.4"
     }
   ],
   "compile-devDependencies" : [

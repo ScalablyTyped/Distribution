@@ -1,5 +1,6 @@
 package typings.pulumiAws.clusterEndpointMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +28,10 @@ trait ClusterEndpointArgs extends js.Object {
     * List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excludedMembers`.
     */
   val staticMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ClusterEndpointArgs {
@@ -36,11 +41,13 @@ object ClusterEndpointArgs {
     clusterIdentifier: Input[String],
     customEndpointType: Input[String],
     excludedMembers: Input[js.Array[Input[String]]] = null,
-    staticMembers: Input[js.Array[Input[String]]] = null
+    staticMembers: Input[js.Array[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null
   ): ClusterEndpointArgs = {
     val __obj = js.Dynamic.literal(clusterEndpointIdentifier = clusterEndpointIdentifier.asInstanceOf[js.Any], clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], customEndpointType = customEndpointType.asInstanceOf[js.Any])
     if (excludedMembers != null) __obj.updateDynamic("excludedMembers")(excludedMembers.asInstanceOf[js.Any])
     if (staticMembers != null) __obj.updateDynamic("staticMembers")(staticMembers.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEndpointArgs]
   }
 }

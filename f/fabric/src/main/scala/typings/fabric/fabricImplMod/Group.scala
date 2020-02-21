@@ -20,7 +20,7 @@ class Group ()
   def this(objects: js.Array[Object], options: IGroupOptions) = this()
   def this(objects: js.Array[Object], options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
   /**
-  	 * Indicates if click events should also check for subtargets
+  	 * Indicates if click, mouseover, mouseout events & hoverCursor should also check for subtargets
   	 * @type Boolean
   	 */
   var subTargetCheck: js.UndefOr[Boolean] = js.native

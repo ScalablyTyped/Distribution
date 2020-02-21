@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("events", JSImport.Namespace)
 @js.native
-class ^ ()
-  extends typings.node.NodeJS.EventEmitter
+object ^ extends js.Object {
+  /**
+    * Sets or gets the default captureRejection value for all emitters.
+    */
+  var captureRejections: Boolean = js.native
+}
 

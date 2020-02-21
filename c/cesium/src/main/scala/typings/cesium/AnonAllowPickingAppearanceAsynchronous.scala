@@ -15,7 +15,7 @@ trait AnonAllowPickingAppearanceAsynchronous extends js.Object {
   var compressVertices: js.UndefOr[Boolean] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   var debugShowShadowVolume: js.UndefOr[Boolean] = js.undefined
-  var geometryInstances: js.UndefOr[js.Array[_] | GeometryInstance] = js.undefined
+  var geometryInstances: js.UndefOr[js.Array[GeometryInstance] | GeometryInstance] = js.undefined
   var interleave: js.UndefOr[Boolean] = js.undefined
   var releaseGeometryInstances: js.UndefOr[Boolean] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
@@ -32,7 +32,7 @@ object AnonAllowPickingAppearanceAsynchronous {
     compressVertices: js.UndefOr[Boolean] = js.undefined,
     debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined,
     debugShowShadowVolume: js.UndefOr[Boolean] = js.undefined,
-    geometryInstances: js.Array[_] | GeometryInstance = null,
+    geometryInstances: js.Array[GeometryInstance] | GeometryInstance = null,
     interleave: js.UndefOr[Boolean] = js.undefined,
     releaseGeometryInstances: js.UndefOr[Boolean] = js.undefined,
     show: js.UndefOr[Boolean] = js.undefined,

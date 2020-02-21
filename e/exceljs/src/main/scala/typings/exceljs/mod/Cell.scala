@@ -68,6 +68,7 @@ trait Cell
   def destroy(): Unit = js.native
   def isMergedTo(master: Cell): Boolean = js.native
   def merge(master: Cell): Unit = js.native
+  def merge(master: Cell, ignoreStyle: Boolean): Unit = js.native
   def release(): Unit = js.native
   def releaseMergeRef(): Unit = js.native
   def removeAllNames(): Unit = js.native

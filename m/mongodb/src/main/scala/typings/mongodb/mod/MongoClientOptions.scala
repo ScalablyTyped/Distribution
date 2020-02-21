@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation._
     */
   var appname: js.UndefOr[String] = js.undefined
   /**
-    * Authentifikation credentials
+    * Authentication credentials
     */
   var auth: js.UndefOr[AnonPassword] = js.undefined
   /**

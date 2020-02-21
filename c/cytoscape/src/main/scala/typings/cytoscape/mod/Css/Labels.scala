@@ -110,9 +110,6 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends js.Objec
     */
   var `target-text-rotation`: PropertyValue[SingularType, Double]
   /**
-    * Background:
-    */
-  /**
     * A colour to apply on the text background.
     */
   var `text-background-color`: PropertyValue[SingularType, Colour]
@@ -120,6 +117,13 @@ trait Labels[SingularType /* <: NodeSingular | EdgeSingular */] extends js.Objec
     * The opacity of the label background; the background is disabled for 0 (default value).
     */
   var `text-background-opacity`: PropertyValue[SingularType, Double]
+  /**
+    * Background:
+    */
+  /**
+    * The padding provides visual spacing between the text and the edge of the background.
+    */
+  var `text-background-padding`: PropertyValue[SingularType, String]
   /**
     * The shape to use for the label background.
     */
@@ -269,6 +273,7 @@ object Labels {
     `target-text-rotation`: PropertyValue[SingularType, Double],
     `text-background-color`: PropertyValue[SingularType, Colour],
     `text-background-opacity`: PropertyValue[SingularType, Double],
+    `text-background-padding`: PropertyValue[SingularType, String],
     `text-background-shape`: PropertyValue[SingularType, rectangle | roundrectangle],
     `text-border-color`: PropertyValue[SingularType, Colour],
     `text-border-opacity`: PropertyValue[SingularType, Double],
@@ -311,6 +316,7 @@ object Labels {
     __obj.updateDynamic("target-text-rotation")(`target-text-rotation`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-background-color")(`text-background-color`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-background-opacity")(`text-background-opacity`.asInstanceOf[js.Any])
+    __obj.updateDynamic("text-background-padding")(`text-background-padding`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-background-shape")(`text-background-shape`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-border-color")(`text-border-color`.asInstanceOf[js.Any])
     __obj.updateDynamic("text-border-opacity")(`text-border-opacity`.asInstanceOf[js.Any])

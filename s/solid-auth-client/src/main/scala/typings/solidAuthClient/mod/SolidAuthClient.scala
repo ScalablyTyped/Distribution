@@ -20,6 +20,7 @@ trait SolidAuthClient extends EventEmitter {
   def logout(storage: AsyncStorage): js.Promise[Unit] = js.native
   def popupLogin(): js.Promise[Session] = js.native
   def popupLogin(params: LoginOptions): js.Promise[Session] = js.native
-  def trackSession(callback: js.Function1[/* session */ js.UndefOr[Session], Unit]): Unit = js.native
+  def stopTrackSession(callback: js.Function1[/* session */ js.UndefOr[Session], Unit]): Unit = js.native
+  def trackSession(callback: js.Function1[/* session */ js.UndefOr[Session], Unit]): js.Promise[Unit] = js.native
 }
 

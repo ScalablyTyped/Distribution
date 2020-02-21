@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object interfacesMod {
-  type InputBuffer = typings.std.ArrayLike[scala.Double] | typings.node.Buffer
-  type OutputBuffer = typings.std.ArrayLike[scala.Double] | typings.node.Buffer
+  type InputBuffer = typings.std.ArrayLike[scala.Double]
+  type OutputBuffer = typings.std.ArrayLike[scala.Double]
   type v1 = typings.uuid.interfacesMod.v1Buffer with typings.uuid.interfacesMod.v1String
   type v1Buffer = js.Function3[
     /* options */ js.UndefOr[typings.uuid.interfacesMod.V1Options | scala.Null], 

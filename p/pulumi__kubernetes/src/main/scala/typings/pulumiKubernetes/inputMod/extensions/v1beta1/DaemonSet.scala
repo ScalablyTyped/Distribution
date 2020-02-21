@@ -8,10 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  * DaemonSet represents the configuration of a daemon set.
+  *
   * @deprecated extensions/v1beta1/DaemonSet is deprecated by apps/v1/DaemonSet and not supported
   * by Kubernetes v1.16+ clusters.
-  *
-  * DaemonSet represents the configuration of a daemon set.
   */
 trait DaemonSet extends js.Object {
   /**

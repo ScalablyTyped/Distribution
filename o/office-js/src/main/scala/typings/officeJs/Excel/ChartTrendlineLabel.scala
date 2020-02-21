@@ -95,7 +95,7 @@ class ChartTrendlineLabel () extends ClientObject {
   var text: String = js.native
   /**
     *
-    * Represents the text orientation of chart trendline label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+    * Represents the angle to which the text is oriented for the chart trendline label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
     * [Api set: ExcelApi 1.8]
     */

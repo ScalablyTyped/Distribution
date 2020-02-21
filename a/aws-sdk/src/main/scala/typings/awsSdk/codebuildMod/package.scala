@@ -97,6 +97,7 @@ package object codebuildMod {
   type EnvironmentVariableType = typings.awsSdk.codebuildMod._EnvironmentVariableType | java.lang.String
   type EnvironmentVariables = js.Array[typings.awsSdk.codebuildMod.EnvironmentVariable]
   type ExportedEnvironmentVariables = js.Array[typings.awsSdk.codebuildMod.ExportedEnvironmentVariable]
+  type FileSystemType = typings.awsSdk.awsSdkStrings.EFS | java.lang.String
   type FilterGroup = js.Array[typings.awsSdk.codebuildMod.WebhookFilter]
   type FilterGroups = js.Array[typings.awsSdk.codebuildMod.FilterGroup]
   type GitCloneDepth = scala.Double
@@ -143,6 +144,7 @@ package object codebuildMod {
   type ProjectArtifactsList = js.Array[typings.awsSdk.codebuildMod.ProjectArtifacts]
   type ProjectCacheModes = js.Array[typings.awsSdk.codebuildMod.CacheMode]
   type ProjectDescription = java.lang.String
+  type ProjectFileSystemLocations = js.Array[typings.awsSdk.codebuildMod.ProjectFileSystemLocation]
   type ProjectName = java.lang.String
   type ProjectNames = js.Array[typings.awsSdk.codebuildMod.NonEmptyString]
   type ProjectSecondarySourceVersions = js.Array[typings.awsSdk.codebuildMod.ProjectSourceVersion]

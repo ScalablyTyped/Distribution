@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.EventHandler
   * @classdesc Abstract base class that implements functionality for event handling.
   * @description Create a new event handler.
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * var obj = new EventHandlerSubclass();
   *
   * // subscribe to an event
-  * obj.on('hello', function(str) {
+  * obj.on('hello', function (str) {
   *     console.log('event hello is fired', str);
   * });
   *

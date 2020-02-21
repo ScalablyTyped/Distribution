@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBody extends js.Object {
+  var params: js.UndefOr[js.Object] = js.undefined
   var tokenType: js.UndefOr[String] = js.undefined
   var verb: js.UndefOr[GET | POST] = js.undefined
   var via: js.UndefOr[header | body | query] = js.undefined
@@ -17,8 +18,14 @@ trait AnonBody extends js.Object {
 
 object AnonBody {
   @scala.inline
-  def apply(tokenType: String = null, verb: GET | POST = null, via: header | body | query = null): AnonBody = {
+  def apply(
+    params: js.Object = null,
+    tokenType: String = null,
+    verb: GET | POST = null,
+    via: header | body | query = null
+  ): AnonBody = {
     val __obj = js.Dynamic.literal()
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (tokenType != null) __obj.updateDynamic("tokenType")(tokenType.asInstanceOf[js.Any])
     if (verb != null) __obj.updateDynamic("verb")(verb.asInstanceOf[js.Any])
     if (via != null) __obj.updateDynamic("via")(via.asInstanceOf[js.Any])

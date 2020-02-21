@@ -43,7 +43,7 @@ trait Connection extends EventEmitter {
     boundPort: Double,
     remoteAddr: String,
     remotePort: Double,
-    callback: js.Function2[/* err */ Error, /* channel */ ServerChannel, Unit]
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ServerChannel, Unit]
   ): Boolean = js.native
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
@@ -57,8 +57,8 @@ trait Connection extends EventEmitter {
   def on(
     event: request,
     listener: js.Function4[
-      (/* accept */ js.Function0[Unit]) | (/* accept */ js.Function1[/* chosenPort */ js.UndefOr[Double], Unit]), 
-      /* reject */ js.Function0[Unit], 
+      js.UndefOr[js.Function0[Unit] | (js.Function1[/* chosenPort */ js.UndefOr[Double], Unit])], 
+      js.UndefOr[/* reject */ js.Function0[Unit]], 
       `cancel-streamlocal-forward@opensshDotcom` | `cancel-tcpip-forward` | `streamlocal-forward@opensshDotcom` | `tcpip-forward`, 
       (/* info */ SocketBindInfo) | (/* info */ TcpipBindInfo), 
       Unit
@@ -121,8 +121,8 @@ trait Connection extends EventEmitter {
   def on_request(
     event: request,
     listener: js.Function4[
-      /* accept */ js.Function1[/* chosenPort */ js.UndefOr[Double], Unit], 
-      /* reject */ js.Function0[Unit], 
+      /* accept */ js.UndefOr[js.Function1[/* chosenPort */ js.UndefOr[Double], Unit]], 
+      /* reject */ js.UndefOr[js.Function0[Unit]], 
       /* name */ String, 
       /* info */ TcpipBindInfo | SocketBindInfo, 
       Unit
@@ -164,7 +164,7 @@ trait Connection extends EventEmitter {
     * @param callback An optional callback added as a one-time handler for the `rekey` event.
     */
   def rekey(): Boolean = js.native
-  def rekey(callback: js.Function1[/* err */ Error, Unit]): Boolean = js.native
+  def rekey(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
   /**
     * Alert the client of an incoming X11 client connection from `originAddr` on port `originPort`.
     *
@@ -173,7 +173,7 @@ trait Connection extends EventEmitter {
   def x11(
     originAddr: String,
     originPort: Double,
-    callback: js.Function2[/* err */ Error, /* channel */ ServerChannel, Unit]
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* channel */ ServerChannel, Unit]
   ): Boolean = js.native
 }
 

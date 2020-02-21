@@ -92,10 +92,11 @@ class Platform_ protected () extends js.Object {
   def getRoutingService(): RoutingService = js.native
   def getRoutingService(opt_options: typings.heremaps.H.service.RoutingService.Options): RoutingService = js.native
   /**
-    * This method returns an instance of H.service.TrafficIncidentsService to query the Traffic API Traffic Incident Data
-    * @returns {H.service.TrafficIncidentsService} - a new places service instance
+    * This method returns an instance of {@link H.service.traffic.Service} to query the Traffic API Traffic Incident Data
+    * @returns {H.service.traffic.Service} - a new places service instance
     */
-  def getTrafficIncidentsService(): TrafficIncidentsService = js.native
+  def getTrafficService(): typings.heremaps.H.service.traffic.Service = js.native
+  def getTrafficService(opt_options: typings.heremaps.H.service.traffic.Service.Options): typings.heremaps.H.service.traffic.Service = js.native
   /**
     * This method returns an instance of H.service.venues.Service to query the Venue Maps API
     * @param opt_params {H.service.venues.Service.Options=} - additional service parameters

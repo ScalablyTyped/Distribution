@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.documentsMod.PolicyDocument
 import typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig
 import typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions
+import typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions
 import typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions
 import typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest
 import typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption
@@ -33,6 +34,10 @@ trait DomainArgs extends js.Object {
     */
   val clusterConfig: js.UndefOr[Input[DomainClusterConfig]] = js.native
   val cognitoOptions: js.UndefOr[Input[DomainCognitoOptions]] = js.native
+  /**
+    * Domain endpoint HTTP(S) related options. See below.
+    */
+  val domainEndpointOptions: js.UndefOr[Input[DomainDomainEndpointOptions]] = js.native
   /**
     * Name of the domain.
     */
@@ -78,6 +83,7 @@ object DomainArgs {
     advancedOptions: Input[StringDictionary[_]] = null,
     clusterConfig: Input[DomainClusterConfig] = null,
     cognitoOptions: Input[DomainCognitoOptions] = null,
+    domainEndpointOptions: Input[DomainDomainEndpointOptions] = null,
     domainName: Input[String] = null,
     ebsOptions: Input[DomainEbsOptions] = null,
     elasticsearchVersion: Input[String] = null,
@@ -93,6 +99,7 @@ object DomainArgs {
     if (advancedOptions != null) __obj.updateDynamic("advancedOptions")(advancedOptions.asInstanceOf[js.Any])
     if (clusterConfig != null) __obj.updateDynamic("clusterConfig")(clusterConfig.asInstanceOf[js.Any])
     if (cognitoOptions != null) __obj.updateDynamic("cognitoOptions")(cognitoOptions.asInstanceOf[js.Any])
+    if (domainEndpointOptions != null) __obj.updateDynamic("domainEndpointOptions")(domainEndpointOptions.asInstanceOf[js.Any])
     if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
     if (ebsOptions != null) __obj.updateDynamic("ebsOptions")(ebsOptions.asInstanceOf[js.Any])
     if (elasticsearchVersion != null) __obj.updateDynamic("elasticsearchVersion")(elasticsearchVersion.asInstanceOf[js.Any])

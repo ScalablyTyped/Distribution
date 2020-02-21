@@ -164,6 +164,7 @@ trait Doc extends js.Object {
   /** Set the content of line n. */
   def setLine(n: Double, text: String): Unit = js.native
   /** Set a single selection range. anchor and head should be {line, ch} objects. head defaults to anchor when not given. */
+  def setSelection(anchor: Position): Unit = js.native
   def setSelection(anchor: Position, head: Position): Unit = js.native
   def setSelection(anchor: Position, head: Position, options: AnonBias): Unit = js.native
   /** Sets a new set of selections. There must be at least one selection in the given array. When primary is a

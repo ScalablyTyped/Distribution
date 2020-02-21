@@ -19,6 +19,11 @@ trait IPanelStyleProps extends js.Object {
     */
   var hasCloseButton: js.UndefOr[Boolean] = js.undefined
   /**
+    * Determines where the header is rendered based on whether the user
+    * has passed in a custom onRenderNavigation or onRenderNavigationContent render callback
+    */
+  var hasCustomNavigation: js.UndefOr[Boolean] = js.undefined
+  /**
     * Optional parameter to provider the class name for header text
     */
   var headerClassName: js.UndefOr[String] = js.undefined
@@ -63,6 +68,7 @@ object IPanelStyleProps {
     className: String = null,
     focusTrapZoneClassName: String = null,
     hasCloseButton: js.UndefOr[Boolean] = js.undefined,
+    hasCustomNavigation: js.UndefOr[Boolean] = js.undefined,
     headerClassName: String = null,
     isAnimating: js.UndefOr[Boolean] = js.undefined,
     isFooterAtBottom: js.UndefOr[Boolean] = js.undefined,
@@ -76,6 +82,7 @@ object IPanelStyleProps {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (focusTrapZoneClassName != null) __obj.updateDynamic("focusTrapZoneClassName")(focusTrapZoneClassName.asInstanceOf[js.Any])
     if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasCustomNavigation)) __obj.updateDynamic("hasCustomNavigation")(hasCustomNavigation.asInstanceOf[js.Any])
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName.asInstanceOf[js.Any])
     if (!js.isUndefined(isAnimating)) __obj.updateDynamic("isAnimating")(isAnimating.asInstanceOf[js.Any])
     if (!js.isUndefined(isFooterAtBottom)) __obj.updateDynamic("isFooterAtBottom")(isFooterAtBottom.asInstanceOf[js.Any])

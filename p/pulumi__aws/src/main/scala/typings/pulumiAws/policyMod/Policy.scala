@@ -23,7 +23,6 @@ class Policy protected () extends CustomResource {
     */
   def this(name: String, args: PolicyArgs) = this()
   def this(name: String, args: PolicyArgs, opts: CustomResourceOptions) = this()
-  val alarms: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
     * The ARN assigned by AWS to the scaling policy.
     */

@@ -88,6 +88,7 @@ object savedModelMod extends js.Object {
   def getEnumKeyFromValue(`object`: js.Any, value: Double): String = js.native
   def getInputAndOutputNodeNameFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): js.Array[StringDictionary[String]] = js.native
   def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
+  def getNumOfSavedModels(): Double = js.native
   def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
   def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OptionProfileProps extends js.Object {
+trait OptionProfileProps extends BaseMenuPropsT {
   @JSName("$isHighlighted")
   var $isHighlighted: js.UndefOr[Boolean] = js.native
   var getChildMenu: js.UndefOr[js.Function1[/* item */ js.Any, ReactNode]] = js.native

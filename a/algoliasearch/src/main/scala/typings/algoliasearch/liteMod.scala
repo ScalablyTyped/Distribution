@@ -108,7 +108,7 @@ object liteMod extends js.Object {
     def clearCache(): Unit = js.native
     /**
       * Gets specific attributes from an object
-      * https://github.com/algolia/algoliasearch-client-js#find-by-ids---getobjects
+      * https://algolia.com/doc/api-reference/api-methods/get-objects/#retrieve-only-one-object
       */
     def getObject(
       objectID: String,
@@ -117,9 +117,15 @@ object liteMod extends js.Object {
     ): Unit = js.native
     /**
       * Gets a specific object
-      * https://github.com/algolia/algoliasearch-client-js#find-by-ids---getobjects
+      * https://algolia.com/doc/api-reference/api-methods/get-objects/#retrieve-only-one-object
       */
     def getObject(objectID: String, cb: js.Function2[/* err */ Error, /* res */ js.Object, Unit]): Unit = js.native
+    /**
+      * Gets specific attributes from an object
+      * https://algolia.com/doc/api-reference/api-methods/get-objects/#retrieve-only-one-object
+      */
+    def getObject[T](objectID: String): js.Promise[T] = js.native
+    def getObject[T](objectID: String, attributes: js.Array[String]): js.Promise[T] = js.native
     /**
       * Gets a list of objects
       * https://github.com/algolia/algoliasearch-client-js#find-by-ids---getobjects

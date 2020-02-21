@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.VIEW_RIGHT
+  * @type {number}
   * @description Right of view. Only used in stereo rendering.
   */
 @JSGlobal("pc.VIEW_RIGHT")

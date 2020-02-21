@@ -22,7 +22,7 @@ trait CarouselProps extends js.Object {
   var keepDirectionWhenDragging: js.UndefOr[Boolean] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
-  var slides: js.UndefOr[js.Array[ImgProps]] = js.undefined
+  var slides: js.UndefOr[js.Array[Element]] = js.undefined
   var slidesPerPage: js.UndefOr[Double] = js.undefined
   var slidesPerScroll: js.UndefOr[Double] = js.undefined
   var stopAutoPlayOnHover: js.UndefOr[Boolean] = js.undefined
@@ -48,7 +48,7 @@ object CarouselProps {
     keepDirectionWhenDragging: js.UndefOr[Boolean] = js.undefined,
     offset: Int | Double = null,
     onChange: /* value */ Double => Unit = null,
-    slides: js.Array[ImgProps] = null,
+    slides: js.Array[Element] = null,
     slidesPerPage: Int | Double = null,
     slidesPerScroll: Int | Double = null,
     stopAutoPlayOnHover: js.UndefOr[Boolean] = js.undefined,

@@ -78,7 +78,7 @@ trait Model extends js.Object {
   /** Specifies the parameter settings.
     */
   var parameterSettings: js.UndefOr[ParameterSettings] = js.undefined
-  /** Fires when the dependent parameter value is changing in the parameter block. You can add custom user interface, loading indicator and modify the default progress text, using the
+  /** Fires when the dependent parameter value is the parameter block. You can add custom user interface, loading indicator and modify the default progress text, using the
     * ParameterUpdateStateChange event.
     */
   var parameterUpdateStateChange: js.UndefOr[js.Function1[/* e */ ParameterUpdateStateChangeEventArgs, Unit]] = js.undefined

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDMODE_ZERO
+  * @type {number}
   * @description Multiply all fragment components by zero.
   */
 @JSGlobal("pc.BLENDMODE_ZERO")

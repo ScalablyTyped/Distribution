@@ -23,4 +23,5 @@ package object mod {
   type TypedRule[TLanguageSpec] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof TLanguageSpec ]: (r : parsimmon.parsimmon.TypedLanguage<TLanguageSpec>): parsimmon.parsimmon.Parser<TLanguageSpec[P]>}
     */ typings.parsimmon.parsimmonStrings.TypedRule with TLanguageSpec
+  type UnParser[T] = js.Any
 }

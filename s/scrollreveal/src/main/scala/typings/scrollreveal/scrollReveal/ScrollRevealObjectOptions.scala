@@ -8,18 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ScrollRevealObjectOptions extends js.Object {
-  var afterReset: js.UndefOr[
-    (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit])
-  ] = js.undefined
-  var afterReveal: js.UndefOr[
-    (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit])
-  ] = js.undefined
-  var beforeReset: js.UndefOr[
-    (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit])
-  ] = js.undefined
-  var beforeReveal: js.UndefOr[
-    (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit])
-  ] = js.undefined
+  var afterReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
+  var afterReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
+  var beforeReset: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
+  var beforeReveal: js.UndefOr[js.Function1[/* domEl */ HTMLElement | NodeListOf[Element], Unit]] = js.undefined
   var container: js.UndefOr[js.Any] = js.undefined
   var delay: js.UndefOr[Double] = js.undefined
   var distance: js.UndefOr[String] = js.undefined
@@ -40,10 +32,10 @@ trait ScrollRevealObjectOptions extends js.Object {
 object ScrollRevealObjectOptions {
   @scala.inline
   def apply(
-    afterReset: (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit]) = null,
-    afterReveal: (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit]) = null,
-    beforeReset: (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit]) = null,
-    beforeReveal: (js.Function1[/* domEl */ HTMLElement, Unit]) with (js.Function1[/* domEl */ NodeListOf[Element], Unit]) = null,
+    afterReset: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
+    afterReveal: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
+    beforeReset: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
+    beforeReveal: /* domEl */ HTMLElement | NodeListOf[Element] => Unit = null,
     container: js.Any = null,
     delay: Int | Double = null,
     distance: String = null,
@@ -61,10 +53,10 @@ object ScrollRevealObjectOptions {
     viewOffset: ScrollRevealPositionObject = null
   ): ScrollRevealObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterReset != null) __obj.updateDynamic("afterReset")(afterReset.asInstanceOf[js.Any])
-    if (afterReveal != null) __obj.updateDynamic("afterReveal")(afterReveal.asInstanceOf[js.Any])
-    if (beforeReset != null) __obj.updateDynamic("beforeReset")(beforeReset.asInstanceOf[js.Any])
-    if (beforeReveal != null) __obj.updateDynamic("beforeReveal")(beforeReveal.asInstanceOf[js.Any])
+    if (afterReset != null) __obj.updateDynamic("afterReset")(js.Any.fromFunction1(afterReset))
+    if (afterReveal != null) __obj.updateDynamic("afterReveal")(js.Any.fromFunction1(afterReveal))
+    if (beforeReset != null) __obj.updateDynamic("beforeReset")(js.Any.fromFunction1(beforeReset))
+    if (beforeReveal != null) __obj.updateDynamic("beforeReveal")(js.Any.fromFunction1(beforeReveal))
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])

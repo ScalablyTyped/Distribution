@@ -11,7 +11,7 @@ trait DescribeStandardsControlsRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.native
   /**
-    * For requests to get the next page of results, the pagination token that was returned with the previous set of results. The initial request does not include a pagination token.
+    * The token that is required for pagination. On your first call to the DescribeStandardsControls operation, set the value of this parameter to NULL. For subsequent calls to the operation, to continue listing data, set the value of this parameter to the value returned from the previous response.
     */
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
   /**

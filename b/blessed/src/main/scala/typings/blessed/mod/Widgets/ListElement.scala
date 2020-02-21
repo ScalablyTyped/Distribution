@@ -38,14 +38,20 @@ class ListElement protected () extends BoxElement {
   def fuzzyFind(arg: String): Unit = js.native
   def fuzzyFind(arg: js.Function0[Unit]): Unit = js.native
   def fuzzyFind(arg: RegExp): Unit = js.native
+  def getItem(child: String): BlessedElement = js.native
+  def getItem(child: Double): BlessedElement = js.native
   /**
     * Returns the item element. Child can be an element, index, or string.
     */
   def getItem(child: BlessedElement): BlessedElement = js.native
+  def getItemIndex(child: String): Double = js.native
+  def getItemIndex(child: Double): Double = js.native
   /**
     * Returns the item index from the list. Child can be an element, index, or string.
     */
   def getItemIndex(child: BlessedElement): Double = js.native
+  def insertItem(i: Double, child: String): Unit = js.native
+  def insertItem(i: Double, child: Double): Unit = js.native
   /**
     * Inserts an item to the list. Child can be an element, index, or string.
     */
@@ -72,6 +78,8 @@ class ListElement protected () extends BoxElement {
     * Push an item onto the list.
     */
   def pushItem(child: BlessedElement): Double = js.native
+  def removeItem(child: String): BlessedElement = js.native
+  def removeItem(child: Double): BlessedElement = js.native
   /**
     * Removes an item from the list. Child can be an element, index, or string.
     */

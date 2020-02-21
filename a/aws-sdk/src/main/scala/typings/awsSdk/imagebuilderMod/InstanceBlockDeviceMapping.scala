@@ -11,13 +11,13 @@ trait InstanceBlockDeviceMapping extends js.Object {
     */
   var deviceName: js.UndefOr[NonEmptyString] = js.native
   /**
-    * Use to manage EBS specific configuration for this mapping.
+    * Use to manage Amazon EBS-specific configuration for this mapping.
     */
   var ebs: js.UndefOr[EbsInstanceBlockDeviceSpecification] = js.native
   /**
     * Use to remove a mapping from the parent image.
     */
-  var noDevice: js.UndefOr[NonEmptyString] = js.native
+  var noDevice: js.UndefOr[EmptyString] = js.native
   /**
     * Use to manage instance ephemeral devices.
     */
@@ -29,7 +29,7 @@ object InstanceBlockDeviceMapping {
   def apply(
     deviceName: NonEmptyString = null,
     ebs: EbsInstanceBlockDeviceSpecification = null,
-    noDevice: NonEmptyString = null,
+    noDevice: EmptyString = null,
     virtualName: NonEmptyString = null
   ): InstanceBlockDeviceMapping = {
     val __obj = js.Dynamic.literal()

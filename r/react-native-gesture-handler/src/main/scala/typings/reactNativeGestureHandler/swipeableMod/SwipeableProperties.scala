@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react-native-gesture-handler.react-native-gesture-handler.PanGestureHandlerProperties, 'onGestureEvent' | 'onHandlerStateChange'> ]: react-native-gesture-handler.react-native-gesture-handler.PanGestureHandlerProperties[P]} */ trait SwipeableProperties extends js.Object {
+- Dropped {[ P in react-native-gesture-handler.react-native-gesture-handler/Swipeable.SwipeableExcludes ]: react-native-gesture-handler.react-native-gesture-handler.PanGestureHandlerProperties[P]} */ trait SwipeableProperties extends js.Object {
   var childrenContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var friction: js.UndefOr[Double] = js.undefined

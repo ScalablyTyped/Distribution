@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("react-dnd-multi-backend/lib/HTML5toTouch", JSImport.Namespace)
+@JSImport("react-dnd-multi-backend/dist/cjs/HTML5toTouch", JSImport.Namespace)
 @js.native
 object html5totouchMod extends js.Object {
   /**

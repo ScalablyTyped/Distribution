@@ -218,6 +218,23 @@ trait Kafka extends Service {
   ): Request[ListConfigurationsResponse, AWSError] = js.native
   /**
     * 
+    Returns a list of Kafka versions.
+    
+    */
+  def listKafkaVersions(): Request[ListKafkaVersionsResponse, AWSError] = js.native
+  def listKafkaVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListKafkaVersionsResponse, Unit]): Request[ListKafkaVersionsResponse, AWSError] = js.native
+  /**
+    * 
+    Returns a list of Kafka versions.
+    
+    */
+  def listKafkaVersions(params: ListKafkaVersionsRequest): Request[ListKafkaVersionsResponse, AWSError] = js.native
+  def listKafkaVersions(
+    params: ListKafkaVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListKafkaVersionsResponse, Unit]
+  ): Request[ListKafkaVersionsResponse, AWSError] = js.native
+  /**
+    * 
     Returns a list of the broker nodes in the cluster.
     
     */

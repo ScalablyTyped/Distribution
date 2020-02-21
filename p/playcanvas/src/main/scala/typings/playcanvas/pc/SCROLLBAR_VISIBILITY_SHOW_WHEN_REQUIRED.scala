@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.SCROLLBAR_VISIBILITY_SHOW_WHEN_REQUIRED
   * @description The scrollbar will be visible only when content exceeds the size of the viewport.
   */

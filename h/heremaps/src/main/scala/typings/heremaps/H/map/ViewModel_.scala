@@ -1,6 +1,6 @@
 package typings.heremaps.H.map
 
-import typings.heremaps.H.map.ViewModel.CameraData
+import typings.heremaps.H.map.ViewModel.ILookAtData
 import typings.heremaps.H.util.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,26 +28,21 @@ class ViewModel_ ()
     */
   def control(moveX: Double, moveY: Double, moveZ: Double, angleX: Double, angleY: Double, angleZ: Double): Unit = js.native
   /**
-    * This method returns the camera data, which is currently rendered.
-    * @returns {H.map.ViewModel.CameraData} - the current rendered camera data
+    * {@link https://developer.here.com/documentation/maps/api_reference/H.map.ViewModel.html#getLookAtData}
     */
-  def getCameraData(): CameraData = js.native
-  /**
-    * This method returns the currently requested data.
-    * @returns {H.map.ViewModel.CameraData} - last requested cam/view data
-    */
-  def getRequestedCameraData(): CameraData = js.native
+  def getLookAtData(): ILookAtData = js.native
   /**
     * This method returns the zoom level that is currently rendered.
     * @returns {number} - current zoom level (scale)
     */
   def getZoom(): Double = js.native
   /**
-    * This method sets new camera data to be processed by the renderer.
-    * @param data {H.map.ViewModel.CameraData} - the values to be modified
-    * @returns {H.map.ViewModel} - this view model object
+    * {@link https://developer.here.com/documentation/maps/api_reference/H.map.ViewModel.html#setLookAtData}
+    * @param data - The values to be modified. Here are some of the main possibilities to reposition the camera at give look-at point
+    * @param opt_animate - A value indicating if an animated transition should be applied, default is false.
     */
-  def setCameraData(data: CameraData): ViewModel = js.native
+  def setLookAtData(data: ILookAtData): ViewModel = js.native
+  def setLookAtData(data: ILookAtData, opt_animate: Boolean): ViewModel = js.native
   /**
     * This method sets a new zoom level to be processed by the renderer
     * @param zoom {number} - the new zoom level

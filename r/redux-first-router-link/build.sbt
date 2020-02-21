@@ -1,20 +1,19 @@
 organization := "org.scalablytyped"
 name := "redux-first-router-link"
-version := "1.4-dt-20180806Z-0dfb82"
-scalaVersion := "2.12.10"
+version := "1.4-dt-20180806Z-918f9b"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-dcd929",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20200114Z-d16766",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-78233f",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-0e1ae9",
-  "org.scalablytyped" %%% "redux" % "4.0.5-79fdb5",
-  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20200106Z-567f45",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-ffacbb",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20200131Z-68f6ae",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-05a52c",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-b17eee",
+  "org.scalablytyped" %%% "redux" % "4.0.5-d8211d",
+  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20200125Z-3b2821",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

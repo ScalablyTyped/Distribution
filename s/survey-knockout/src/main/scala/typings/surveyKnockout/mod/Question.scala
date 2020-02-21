@@ -19,6 +19,7 @@ class Question protected ()
      with ISurveyErrorOwner
      with IConditionRunner {
   def this(name: String) = this()
+  var allowNotifyValueChanged: Boolean = js.native
   /**
     * The question comment value.
     */
@@ -155,6 +156,10 @@ class Question protected ()
     * Returns the rendred question title.
     */
   val processedTitle: String = js.native
+  /**
+    * Returns questions count: 1 for the non-matrix questions and all inner visible questions that has input(s) widgets for question of matrix types.
+    * @see getQuizQuestions
+    */
   val quizQuestionCount: Double = js.native
   /**
     * The rendered width of the question.
@@ -262,6 +267,7 @@ class Question protected ()
     */
   @JSName("clearIncorrectValues")
   def clearIncorrectValues_Unit(): Unit = js.native
+  def clearOnDeletingContainer(): Unit = js.native
   def clearUnusedValues(): js.Any = js.native
   @JSName("clearUnusedValues")
   def clearUnusedValues_Unit(): Unit = js.native

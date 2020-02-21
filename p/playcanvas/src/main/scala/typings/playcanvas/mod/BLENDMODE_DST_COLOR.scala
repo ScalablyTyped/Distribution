@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDMODE_DST_COLOR
+  * @type {number}
   * @description Multiply all fragment components by the components of the destination fragment.
   */
 @JSImport("playcanvas", "BLENDMODE_DST_COLOR")

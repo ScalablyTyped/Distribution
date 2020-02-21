@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-utils
 
-Typings are for version 1.2.4
+Typings are for version 1.2.6
 
 ## Library description:
 Collection of utility functions used in web3.js.

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GridColumnProps extends js.Object {
+trait GridColumnProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   /**
     * The grid-column CSS property is a shorthand property for grid-column-start and grid-column-end specifying
     * a grid item's size and location within the grid column by contributing a line, a span, or nothing (automatic)
@@ -13,15 +13,15 @@ trait GridColumnProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)
     */
-  var gridColumn: js.UndefOr[ResponsiveValue[GridColumnProperty]] = js.undefined
+  var gridColumn: js.UndefOr[ResponsiveValue[GridColumnProperty, ThemeType]] = js.undefined
 }
 
 object GridColumnProps {
   @scala.inline
-  def apply(gridColumn: ResponsiveValue[GridColumnProperty] = null): GridColumnProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](gridColumn: ResponsiveValue[GridColumnProperty, ThemeType] = null): GridColumnProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GridColumnProps]
+    __obj.asInstanceOf[GridColumnProps[ThemeType]]
   }
 }
 

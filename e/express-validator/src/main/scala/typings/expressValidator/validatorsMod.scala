@@ -50,6 +50,7 @@ object validatorsMod extends js.Object {
     def isArray(): Return = js.native
     def isArray(options: AnonMax): Return = js.native
     def isAscii(): Return = js.native
+    def isBIC(): Return = js.native
     def isBase32(): Return = js.native
     def isBase64(): Return = js.native
     def isBefore(): Return = js.native
@@ -107,15 +108,19 @@ object validatorsMod extends js.Object {
     def isMD5(): Return = js.native
     def isMagnetURI(): Return = js.native
     def isMimeType(): Return = js.native
+    def isMobilePhone(locale: js.Array[MobilePhoneLocale]): Return = js.native
+    def isMobilePhone(locale: js.Array[MobilePhoneLocale], options: IsMobilePhoneOptions): Return = js.native
     def isMobilePhone(locale: MobilePhoneLocale): Return = js.native
     def isMobilePhone(locale: MobilePhoneLocale, options: IsMobilePhoneOptions): Return = js.native
     def isMongoId(): Return = js.native
     def isMultibyte(): Return = js.native
     def isNumeric(): Return = js.native
     def isNumeric(options: IsNumericOptions): Return = js.native
+    def isOctal(): Return = js.native
     def isPort(): Return = js.native
     def isPostalCode(locale: PostalCodeLocale): Return = js.native
     def isRFC3339(): Return = js.native
+    def isSlug(): Return = js.native
     def isString(): Return = js.native
     def isSurrogatePair(): Return = js.native
     def isURL(): Return = js.native

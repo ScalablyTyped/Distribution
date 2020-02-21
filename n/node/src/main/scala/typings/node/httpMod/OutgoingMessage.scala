@@ -15,6 +15,9 @@ class OutgoingMessage () extends Writable {
     * @deprecate Use `socket` instead.
     */
   var connection: Socket = js.native
+  /**
+    * @deprecated Use `writableEnded` instead.
+    */
   var finished: Boolean = js.native
   var headersSent: Boolean = js.native
   var sendDate: Boolean = js.native

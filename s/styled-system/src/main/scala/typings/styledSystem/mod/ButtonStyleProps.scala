@@ -4,16 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ButtonStyleProps extends js.Object {
-  var variant: js.UndefOr[ResponsiveValue[String]] = js.undefined
+trait ButtonStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
+  var variant: js.UndefOr[ResponsiveValue[String, ThemeType]] = js.undefined
 }
 
 object ButtonStyleProps {
   @scala.inline
-  def apply(variant: ResponsiveValue[String] = null): ButtonStyleProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](variant: ResponsiveValue[String, ThemeType] = null): ButtonStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ButtonStyleProps]
+    __obj.asInstanceOf[ButtonStyleProps[ThemeType]]
   }
 }
 

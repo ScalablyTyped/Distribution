@@ -1,8 +1,8 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.Artifact
-import typings.awsLambda.mod.Credentials
-import typings.awsLambda.mod.EncryptionKey
+import typings.awsLambda.codepipelineMod.Artifact
+import typings.awsLambda.codepipelineMod.Credentials
+import typings.awsLambda.codepipelineMod.EncryptionKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

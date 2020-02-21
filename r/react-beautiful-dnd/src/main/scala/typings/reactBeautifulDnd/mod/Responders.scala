@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait Responders extends js.Object {
   var onBeforeCapture: js.UndefOr[OnBeforeCaptureResponder] = js.undefined
   var onBeforeDragStart: js.UndefOr[OnBeforeDragStartResponder] = js.undefined
+  // always required
   var onDragEnd: OnDragEndResponder
   var onDragStart: js.UndefOr[OnDragStartResponder] = js.undefined
   var onDragUpdate: js.UndefOr[OnDragUpdateResponder] = js.undefined

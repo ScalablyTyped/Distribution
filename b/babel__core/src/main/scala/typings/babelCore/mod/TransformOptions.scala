@@ -105,6 +105,10 @@ trait TransformOptions extends js.Object {
     */
   var envName: js.UndefOr[String] = js.undefined
   /**
+    * If any of patterns match, the current configuration object is considered inactive and is ignored during config processing.
+    */
+  var exclude: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
+  /**
     * A path to a `.babelrc` file to extend
     *
     * Default: `null`
@@ -147,6 +151,10 @@ trait TransformOptions extends js.Object {
     */
   var ignore: js.UndefOr[js.Array[String] | Null] = js.undefined
   /**
+    * This option is a synonym for "test"
+    */
+  var include: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
+  /**
     * A source map object that the output source map will be based on
     *
     * Default: `null`
@@ -183,6 +191,11 @@ trait TransformOptions extends js.Object {
     * Default: `null`
     */
   var only: js.UndefOr[String | RegExp | (js.Array[String | RegExp]) | Null] = js.undefined
+  /**
+    * Allows users to provide an array of options that will be merged into the current configuration one at a time.
+    * This feature is best used alongside the "test"/"include"/"exclude" options to provide conditions for which an override should apply
+    */
+  var overrides: js.UndefOr[js.Array[TransformOptions]] = js.undefined
   /**
     * An object containing the options to be passed down to the babel parser, @babel/parser
     *
@@ -254,6 +267,10 @@ trait TransformOptions extends js.Object {
     */
   var sourceType: js.UndefOr[script | module | unambiguous | Null] = js.undefined
   /**
+    * If all patterns fail to match, the current configuration object is considered inactive and is ignored during config processing.
+    */
+  var test: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
+  /**
     * An optional callback that can be used to wrap visitor methods. **NOTE**: This is useful for things like introspection, and not really needed for implementing anything. Called as
     * `wrapPluginVisitorMethod(pluginAlias, visitorType, callback)`.
     */
@@ -291,6 +308,7 @@ object TransformOptions {
     cwd: String = null,
     env: StringDictionary[js.UndefOr[TransformOptions | Null]] = null,
     envName: String = null,
+    exclude: MatchPattern | js.Array[MatchPattern] = null,
     `extends`: String = null,
     filename: String = null,
     filenameRelative: String = null,
@@ -298,12 +316,14 @@ object TransformOptions {
     getModuleId: /* moduleName */ String => js.UndefOr[String | Null] = null,
     highlightCode: js.UndefOr[Boolean] = js.undefined,
     ignore: js.Array[String] = null,
+    include: MatchPattern | js.Array[MatchPattern] = null,
     inputSourceMap: js.Object = null,
     minified: js.UndefOr[Boolean] = js.undefined,
     moduleId: String = null,
     moduleIds: js.UndefOr[Boolean] = js.undefined,
     moduleRoot: String = null,
     only: String | RegExp | (js.Array[String | RegExp]) = null,
+    overrides: js.Array[TransformOptions] = null,
     parserOpts: ParserOptions = null,
     plugins: js.Array[PluginItem] = null,
     presets: js.Array[PluginItem] = null,
@@ -315,6 +335,7 @@ object TransformOptions {
     sourceMaps: Boolean | `inline` | both = null,
     sourceRoot: String = null,
     sourceType: script | module | unambiguous = null,
+    test: MatchPattern | js.Array[MatchPattern] = null,
     wrapPluginVisitorMethod: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[
       /* path */ typings.babelTraverse.mod.NodePath[typings.babelTraverse.mod.Node], 
       /* state */ js.Any, 
@@ -339,6 +360,7 @@ object TransformOptions {
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (envName != null) __obj.updateDynamic("envName")(envName.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
     if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (filenameRelative != null) __obj.updateDynamic("filenameRelative")(filenameRelative.asInstanceOf[js.Any])
@@ -346,12 +368,14 @@ object TransformOptions {
     if (getModuleId != null) __obj.updateDynamic("getModuleId")(js.Any.fromFunction1(getModuleId))
     if (!js.isUndefined(highlightCode)) __obj.updateDynamic("highlightCode")(highlightCode.asInstanceOf[js.Any])
     if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (inputSourceMap != null) __obj.updateDynamic("inputSourceMap")(inputSourceMap.asInstanceOf[js.Any])
     if (!js.isUndefined(minified)) __obj.updateDynamic("minified")(minified.asInstanceOf[js.Any])
     if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
     if (!js.isUndefined(moduleIds)) __obj.updateDynamic("moduleIds")(moduleIds.asInstanceOf[js.Any])
     if (moduleRoot != null) __obj.updateDynamic("moduleRoot")(moduleRoot.asInstanceOf[js.Any])
     if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (parserOpts != null) __obj.updateDynamic("parserOpts")(parserOpts.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
@@ -363,6 +387,7 @@ object TransformOptions {
     if (sourceMaps != null) __obj.updateDynamic("sourceMaps")(sourceMaps.asInstanceOf[js.Any])
     if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot.asInstanceOf[js.Any])
     if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     if (wrapPluginVisitorMethod != null) __obj.updateDynamic("wrapPluginVisitorMethod")(js.Any.fromFunction3(wrapPluginVisitorMethod))
     __obj.asInstanceOf[TransformOptions]
   }

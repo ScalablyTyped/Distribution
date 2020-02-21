@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 trait DragUpdate extends DragStart {
   // populated when a draggable is dragging over another in combine mode
   var combine: js.UndefOr[Combine] = js.undefined
+  // may not have any destination (drag to nowhere)
   var destination: js.UndefOr[DraggableLocation] = js.undefined
 }
 

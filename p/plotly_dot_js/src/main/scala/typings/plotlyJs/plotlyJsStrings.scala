@@ -152,7 +152,13 @@ object plotlyJsStrings {
   sealed trait `bottom left` extends js.Object
   
   @js.native
+  sealed trait `bottom plot` extends js.Object
+  
+  @js.native
   sealed trait `bottom right` extends js.Object
+  
+  @js.native
+  sealed trait `bottom to top` extends js.Object
   
   @js.native
   sealed trait bounce extends js.Object
@@ -255,6 +261,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait counterclockwise extends js.Object
+  
+  @js.native
+  sealed trait coupled extends js.Object
   
   @js.native
   sealed trait cube extends js.Object
@@ -542,6 +551,9 @@ object plotlyJsStrings {
   sealed trait `implicit` extends js.Object
   
   @js.native
+  sealed trait independent extends js.Object
+  
+  @js.native
   sealed trait indicator extends js.Object
   
   @js.native
@@ -600,6 +612,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait left extends js.Object
+  
+  @js.native
+  sealed trait `left plot` extends js.Object
   
   @js.native
   sealed trait legend extends js.Object
@@ -983,6 +998,9 @@ object plotlyJsStrings {
   sealed trait right extends js.Object
   
   @js.native
+  sealed trait `right plot` extends js.Object
+  
+  @js.native
   sealed trait rms extends js.Object
   
   @js.native
@@ -1002,6 +1020,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait sample extends js.Object
+  
+  @js.native
+  sealed trait scaled extends js.Object
   
   @js.native
   sealed trait scatter extends js.Object
@@ -1208,7 +1229,13 @@ object plotlyJsStrings {
   sealed trait `top left` extends js.Object
   
   @js.native
+  sealed trait `top plot` extends js.Object
+  
+  @js.native
   sealed trait `top right` extends js.Object
+  
+  @js.native
+  sealed trait `top to bottom` extends js.Object
   
   @js.native
   sealed trait toself extends js.Object
@@ -1542,7 +1569,11 @@ object plotlyJsStrings {
   @scala.inline
   def `bottom left`: `bottom left` = "bottom left".asInstanceOf[`bottom left`]
   @scala.inline
+  def `bottom plot`: `bottom plot` = "bottom plot".asInstanceOf[`bottom plot`]
+  @scala.inline
   def `bottom right`: `bottom right` = "bottom right".asInstanceOf[`bottom right`]
+  @scala.inline
+  def `bottom to top`: `bottom to top` = "bottom to top".asInstanceOf[`bottom to top`]
   @scala.inline
   def bounce: bounce = "bounce".asInstanceOf[bounce]
   @scala.inline
@@ -1611,6 +1642,8 @@ object plotlyJsStrings {
   def count: count = "count".asInstanceOf[count]
   @scala.inline
   def counterclockwise: counterclockwise = "counterclockwise".asInstanceOf[counterclockwise]
+  @scala.inline
+  def coupled: coupled = "coupled".asInstanceOf[coupled]
   @scala.inline
   def cube: cube = "cube".asInstanceOf[cube]
   @scala.inline
@@ -1802,6 +1835,8 @@ object plotlyJsStrings {
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   @scala.inline
+  def independent: independent = "independent".asInstanceOf[independent]
+  @scala.inline
   def indicator: indicator = "indicator".asInstanceOf[indicator]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
@@ -1841,6 +1876,8 @@ object plotlyJsStrings {
   def last: last = "last".asInstanceOf[last]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
+  def `left plot`: `left plot` = "left plot".asInstanceOf[`left plot`]
   @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline
@@ -2096,6 +2133,8 @@ object plotlyJsStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
+  def `right plot`: `right plot` = "right plot".asInstanceOf[`right plot`]
+  @scala.inline
   def rms: rms = "rms".asInstanceOf[rms]
   @scala.inline
   def rp: rp = "rp".asInstanceOf[rp]
@@ -2109,6 +2148,8 @@ object plotlyJsStrings {
   def samp: samp = "samp".asInstanceOf[samp]
   @scala.inline
   def sample: sample = "sample".asInstanceOf[sample]
+  @scala.inline
+  def scaled: scaled = "scaled".asInstanceOf[scaled]
   @scala.inline
   def scatter: scatter = "scatter".asInstanceOf[scatter]
   @scala.inline
@@ -2246,7 +2287,11 @@ object plotlyJsStrings {
   @scala.inline
   def `top left`: `top left` = "top left".asInstanceOf[`top left`]
   @scala.inline
+  def `top plot`: `top plot` = "top plot".asInstanceOf[`top plot`]
+  @scala.inline
   def `top right`: `top right` = "top right".asInstanceOf[`top right`]
+  @scala.inline
+  def `top to bottom`: `top to bottom` = "top to bottom".asInstanceOf[`top to bottom`]
   @scala.inline
   def toself: toself = "toself".asInstanceOf[toself]
   @scala.inline

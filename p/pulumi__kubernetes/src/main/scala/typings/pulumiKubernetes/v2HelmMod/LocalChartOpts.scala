@@ -18,12 +18,14 @@ object LocalChartOpts {
   @scala.inline
   def apply(
     path: String,
+    apiVersions: Input[js.Array[Input[String]]] = null,
     namespace: Input[String] = null,
     resourcePrefix: String = null,
     transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]] = null,
     values: Inputs = null
   ): LocalChartOpts = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions.asInstanceOf[js.Any])
     if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
     if (resourcePrefix != null) __obj.updateDynamic("resourcePrefix")(resourcePrefix.asInstanceOf[js.Any])
     if (transformations != null) __obj.updateDynamic("transformations")(transformations.asInstanceOf[js.Any])

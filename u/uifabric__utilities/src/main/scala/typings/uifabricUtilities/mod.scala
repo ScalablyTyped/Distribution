@@ -6,8 +6,8 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.FunctionComponent
 import typings.react.mod.PropsWithoutRef
-import typings.react.mod.StatelessComponent
 import typings.std.Document_
 import typings.std.Element
 import typings.std.Event_
@@ -513,47 +513,47 @@ object mod extends js.Object {
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps,
     pure: Boolean
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: StatelessComponent[TComponentProps],
+    Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: StatelessComponent[TComponentProps],
+    Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: StatelessComponent[TComponentProps],
+    Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def styled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
-    Component: StatelessComponent[TComponentProps],
+    Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
     customizable: ICustomizableProps,
     pure: Boolean
-  ): StatelessComponent[TComponentProps] = js.native
+  ): FunctionComponent[TComponentProps] = js.native
   def toMatrix[T](items: js.Array[T], columnCount: Double): js.Array[js.Array[T]] = js.native
   def unhoistMethods(source: js.Any, methodNames: js.Array[String]): Unit = js.native
   def values[T](obj: js.Any): js.Array[T] = js.native

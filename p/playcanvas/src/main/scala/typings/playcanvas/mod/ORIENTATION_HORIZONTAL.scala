@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.ORIENTATION_HORIZONTAL
+  * @type {number}
   * @description Horizontal orientation.
   */
 @JSImport("playcanvas", "ORIENTATION_HORIZONTAL")

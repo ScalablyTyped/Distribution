@@ -34,6 +34,7 @@ package object codepipelineMod {
   type ActionExecutionId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.InProgress_
+    - typings.awsSdk.awsSdkStrings.Abandoned
     - typings.awsSdk.awsSdkStrings.Succeeded_
     - typings.awsSdk.awsSdkStrings.Failed_
     - java.lang.String
@@ -132,6 +133,8 @@ package object codepipelineMod {
   type PipelineExecutionId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.InProgress_
+    - typings.awsSdk.awsSdkStrings.Stopped_
+    - typings.awsSdk.awsSdkStrings.Stopping_
     - typings.awsSdk.awsSdkStrings.Succeeded_
     - typings.awsSdk.awsSdkStrings.Superseded_
     - typings.awsSdk.awsSdkStrings.Failed_
@@ -162,6 +165,8 @@ package object codepipelineMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.InProgress_
     - typings.awsSdk.awsSdkStrings.Failed_
+    - typings.awsSdk.awsSdkStrings.Stopped_
+    - typings.awsSdk.awsSdkStrings.Stopping_
     - typings.awsSdk.awsSdkStrings.Succeeded_
     - java.lang.String
   */
@@ -175,6 +180,7 @@ package object codepipelineMod {
     - java.lang.String
   */
   type StageTransitionType = typings.awsSdk.codepipelineMod._StageTransitionType | java.lang.String
+  type StopPipelineExecutionReason = java.lang.String
   type String = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.codepipelineMod.TagKey]

@@ -1,7 +1,7 @@
 package typings.awsLambda
 
-import typings.awsLambda.mod.CloudFrontOrigin
-import typings.awsLambda.mod.CloudFrontS3Origin
+import typings.awsLambda.cloudfrontMod.CloudFrontOrigin
+import typings.awsLambda.cloudfrontMod.CloudFrontS3Origin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

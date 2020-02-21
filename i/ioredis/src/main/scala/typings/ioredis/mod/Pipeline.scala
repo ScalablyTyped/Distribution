@@ -1,6 +1,5 @@
 package typings.ioredis.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ioredis.ioredisStrings.AFTER
 import typings.ioredis.ioredisStrings.BEFORE
 import typings.ioredis.ioredisStrings.COUNT
@@ -18,6 +17,7 @@ import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.Map
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -119,10 +119,7 @@ trait Pipeline extends js.Object {
   def hgetBuffer(key: KeyType, field: String): Pipeline = js.native
   def hgetBuffer(key: KeyType, field: String, callback: js.Function2[/* err */ Error, /* res */ Buffer, Unit]): Pipeline = js.native
   def hgetall(key: KeyType): Pipeline = js.native
-  def hgetall(
-    key: KeyType,
-    callback: js.Function2[/* err */ Error, /* res */ StringDictionary[String | Double], Unit]
-  ): Pipeline = js.native
+  def hgetall(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Record[String, String], Unit]): Pipeline = js.native
   def hincrby(key: KeyType, field: String, increment: Double): Pipeline = js.native
   def hincrby(
     key: KeyType,
@@ -526,6 +523,7 @@ trait Pipeline extends js.Object {
   def ttl(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Pipeline = js.native
   def `type`(key: KeyType): Pipeline = js.native
   def `type`(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Pipeline = js.native
+  def unlink(keys: KeyType*): Pipeline = js.native
   def unsubscribe(channels: String*): Pipeline = js.native
   def unwatch(): Pipeline = js.native
   def unwatch(callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Pipeline = js.native

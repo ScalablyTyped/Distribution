@@ -1,7 +1,7 @@
 
 # Scala.js typings for sjcl
 
-Typings are for version v1.0.1
+Typings are for version v1.0.8
 
 ## Library description:
 Stanford Javascript Crypto Library

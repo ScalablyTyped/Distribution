@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object libFacepileMod extends js.Object {
     def this(props: IFacepileProps) = this()
   }
   
-  val Facepile: StatelessComponent[IFacepileProps] = js.native
+  val Facepile: FunctionComponent[IFacepileProps] = js.native
   /* static members */
   @js.native
   object FacepileBase extends js.Object {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for solid-auth-client
 
-Typings are for version 2.3
+Typings are for version 2.4
 
 ## Library description:
 Opaquely authenticates solid clients

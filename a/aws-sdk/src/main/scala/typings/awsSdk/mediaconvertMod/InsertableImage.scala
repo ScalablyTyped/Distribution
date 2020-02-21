@@ -25,7 +25,7 @@ trait InsertableImage extends js.Object {
   /**
     * Specify the HTTP, HTTPS, or Amazon S3 location of the image that you want to overlay on the video. Use a PNG or TGA file.
     */
-  var ImageInserterInput: js.UndefOr[stringMin14PatternHttpHttpsS3BmpBMPPngPNGTgaTGA] = js.native
+  var ImageInserterInput: js.UndefOr[stringMin14PatternS3BmpBMPPngPNGTgaTGAHttpsBmpBMPPngPNGTgaTGA] = js.native
   /**
     * Specify the distance, in pixels, between the inserted image and the left edge of the video frame. Required for any image overlay that you specify.
     */
@@ -59,7 +59,7 @@ object InsertableImage {
     FadeIn: Int | Double = null,
     FadeOut: Int | Double = null,
     Height: Int | Double = null,
-    ImageInserterInput: stringMin14PatternHttpHttpsS3BmpBMPPngPNGTgaTGA = null,
+    ImageInserterInput: stringMin14PatternS3BmpBMPPngPNGTgaTGAHttpsBmpBMPPngPNGTgaTGA = null,
     ImageX: Int | Double = null,
     ImageY: Int | Double = null,
     Layer: Int | Double = null,

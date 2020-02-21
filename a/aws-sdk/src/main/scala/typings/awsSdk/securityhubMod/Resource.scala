@@ -27,7 +27,7 @@ trait Resource extends js.Object {
     */
   var Tags: js.UndefOr[FieldMap] = js.native
   /**
-    * The type of the resource that details are provided for.
+    * The type of the resource that details are provided for. If possible, set Type to one of the supported resource types. For example, if the resource is an EC2 instance, then set Type to AwsEc2Instance. If the resource does not match any of the provided types, then set Type to Other. 
     */
   var Type: NonEmptyString = js.native
 }

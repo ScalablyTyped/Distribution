@@ -1,5 +1,6 @@
 package typings.bytebuffer.mod
 
+import typings.long.mod.Long
 import typings.node.Buffer
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
@@ -96,7 +97,7 @@ object ^ extends js.Object {
     * Calculates the actual number of bytes required to store a 64bit base 128 variable-length integer.
     */
   def calculateVarint64(value: Double): Double = js.native
-  def calculateVarint64(value: typings.long.mod.^): Double = js.native
+  def calculateVarint64(value: Long): Double = js.native
   /**
     * Concatenates multiple ByteBuffers into one.
     */
@@ -208,8 +209,8 @@ object ^ extends js.Object {
   /**
     * Decodes a zigzag encoded signed 64bit integer.
     */
-  def zigZagDecode64(n: Double): typings.long.mod.^ = js.native
-  def zigZagDecode64(n: typings.long.mod.^): typings.long.mod.^ = js.native
+  def zigZagDecode64(n: Double): Long = js.native
+  def zigZagDecode64(n: Long): Long = js.native
   /**
     * Zigzag encodes a signed 32bit integer so that it can be effectively used with varint encoding.
     */
@@ -217,7 +218,7 @@ object ^ extends js.Object {
   /**
     * Zigzag encodes a signed 64bit integer so that it can be effectively used with varint encoding.
     */
-  def zigZagEncode64(n: Double): typings.long.mod.^ = js.native
-  def zigZagEncode64(n: typings.long.mod.^): typings.long.mod.^ = js.native
+  def zigZagEncode64(n: Double): Long = js.native
+  def zigZagEncode64(n: Long): Long = js.native
 }
 

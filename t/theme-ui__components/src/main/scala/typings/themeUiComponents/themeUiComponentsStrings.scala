@@ -21,6 +21,9 @@ object themeUiComponentsStrings {
   sealed trait children extends js.Object
   
   @js.native
+  sealed trait colors extends js.Object
+  
+  @js.native
   sealed trait div extends js.Object
   
   @js.native
@@ -45,6 +48,9 @@ object themeUiComponentsStrings {
   sealed trait select extends js.Object
   
   @js.native
+  sealed trait space extends js.Object
+  
+  @js.native
   sealed trait textarea extends js.Object
   
   @scala.inline
@@ -57,6 +63,8 @@ object themeUiComponentsStrings {
   def button: button = "button".asInstanceOf[button]
   @scala.inline
   def children: children = "children".asInstanceOf[children]
+  @scala.inline
+  def colors: colors = "colors".asInstanceOf[colors]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline
@@ -73,6 +81,8 @@ object themeUiComponentsStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def space: space = "space".asInstanceOf[space]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
 }

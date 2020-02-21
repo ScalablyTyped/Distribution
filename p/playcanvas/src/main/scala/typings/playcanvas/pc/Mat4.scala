@@ -1,13 +1,12 @@
 package typings.playcanvas.pc
 
 import typings.std.Float32Array
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.Mat4
   * @classdesc A 4x4 matrix.
   * @description Creates a new identity Mat4 object.
@@ -24,14 +23,14 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#add
     * @description Adds the specified 4x4 matrix to the current instance.
-    * @param {pc.Mat4} rhs The 4x4 matrix used as the second operand of the addition.
+    * @param {pc.Mat4} rhs - The 4x4 matrix used as the second operand of the addition.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var m = new pc.Mat4();
     *
     * m.add(pc.Mat4.ONE);
     *
-    * console.log("The result of the addition is: " a.toString());
+    * console.log("The result of the addition is: " + m.toString());
     */
   def add(rhs: Mat4): Mat4 = js.native
   /**
@@ -39,22 +38,22 @@ class Mat4 () extends js.Object {
     * @name pc.Mat4#add2
     * @description Adds the specified 4x4 matrices together and stores the result in
     * the current instance.
-    * @param {pc.Mat4} lhs The 4x4 matrix used as the first operand of the addition.
-    * @param {pc.Mat4} rhs The 4x4 matrix used as the second operand of the addition.
+    * @param {pc.Mat4} lhs - The 4x4 matrix used as the first operand of the addition.
+    * @param {pc.Mat4} rhs - The 4x4 matrix used as the second operand of the addition.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var m = new pc.Mat4();
     *
     * m.add2(pc.Mat4.IDENTITY, pc.Mat4.ONE);
     *
-    * console.log("The result of the addition is: " a.toString());
+    * console.log("The result of the addition is: " + m.toString());
     */
   def add2(lhs: Mat4, rhs: Mat4): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#copy
     * @description Copies the contents of a source 4x4 matrix to a destination 4x4 matrix.
-    * @param {pc.Mat4} rhs A 4x4 matrix to be copied.
+    * @param {pc.Mat4} rhs - A 4x4 matrix to be copied.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var src = new pc.Mat4().setFromEulerAngles(10, 20, 30);
@@ -67,8 +66,8 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#equals
     * @description Reports whether two matrices are equal.
-    * @param {pc.Mat4} rhs The other matrix.
-    * @returns {Boolean} true if the matrices are equal and false otherwise.
+    * @param {pc.Mat4} rhs - The other matrix.
+    * @returns {boolean} True if the matrices are equal and false otherwise.
     * @example
     * var a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
     * var b = new pc.Mat4();
@@ -80,7 +79,7 @@ class Mat4 () extends js.Object {
     * @name pc.Mat4#getEulerAngles
     * @description Extracts the Euler angles equivalent to the rotational portion
     * of the specified matrix. The returned Euler angles are in XYZ order an in degrees.
-    * @param {pc.Vec3} [eulers] A 3-d vector to receive the Euler angles.
+    * @param {pc.Vec3} [eulers] - A 3-d vector to receive the Euler angles.
     * @returns {pc.Vec3} A 3-d vector containing the Euler angles.
     * @example
     * // Create a 4x4 rotation matrix of 45 degrees around the y-axis
@@ -94,7 +93,7 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#getScale
     * @description Extracts the scale component from the specified 4x4 matrix.
-    * @param {pc.Vec3} [scale] Vector to receive the scale.
+    * @param {pc.Vec3} [scale] - Vector to receive the scale.
     * @returns {pc.Vec3} The scale in X, Y and Z of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 scale matrix
@@ -109,7 +108,7 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#getTranslation
     * @description Extracts the translational component from the specified 4x4 matrix.
-    * @param {pc.Vec3} [t] The vector to receive the translation of the matrix.
+    * @param {pc.Vec3} [t] - The vector to receive the translation of the matrix.
     * @returns {pc.Vec3} The translation of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
@@ -125,7 +124,7 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#getX
     * @description Extracts the x-axis from the specified 4x4 matrix.
-    * @param {pc.Vec3} [x] The vector to receive the x axis of the matrix.
+    * @param {pc.Vec3} [x] - The vector to receive the x axis of the matrix.
     * @returns {pc.Vec3} The x-axis of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
@@ -141,7 +140,7 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#getY
     * @description Extracts the y-axis from the specified 4x4 matrix.
-    * @param {pc.Vec3} [y] The vector to receive the y axis of the matrix.
+    * @param {pc.Vec3} [y] - The vector to receive the y axis of the matrix.
     * @returns {pc.Vec3} The y-axis of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
@@ -157,7 +156,7 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#getZ
     * @description Extracts the z-axis from the specified 4x4 matrix.
-    * @param {pc.Vec3} [z] The vector to receive the z axis of the matrix.
+    * @param {pc.Vec3} [z] - The vector to receive the z axis of the matrix.
     * @returns {pc.Vec3} The z-axis of the specified 4x4 matrix.
     * @example
     * // Create a 4x4 matrix
@@ -186,7 +185,7 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#isIdentity
     * @description Reports whether the specified matrix is the identity matrix.
-    * @returns {Boolean} true if the matrix is identity and false otherwise.
+    * @returns {boolean} True if the matrix is identity and false otherwise.
     * @example
     * var m = new pc.Mat4();
     * console.log("The matrix is " + (m.isIdentity() ? "identity" : "not identity"));
@@ -196,7 +195,7 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#mul
     * @description Multiplies the current instance by the specified 4x4 matrix.
-    * @param {pc.Mat4} rhs The 4x4 matrix used as the second multiplicand of the operation.
+    * @param {pc.Mat4} rhs - The 4x4 matrix used as the second multiplicand of the operation.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
@@ -205,7 +204,7 @@ class Mat4 () extends js.Object {
     * // a = a * b
     * a.mul(b);
     *
-    * console.log("The result of the multiplication is: " a.toString());
+    * console.log("The result of the multiplication is: " + a.toString());
     */
   def mul(rhs: Mat4): Mat4 = js.native
   /**
@@ -213,8 +212,8 @@ class Mat4 () extends js.Object {
     * @name pc.Mat4#mul2
     * @description Multiplies the specified 4x4 matrices together and stores the result in
     * the current instance.
-    * @param {pc.Mat4} lhs The 4x4 matrix used as the first multiplicand of the operation.
-    * @param {pc.Mat4} rhs The 4x4 matrix used as the second multiplicand of the operation.
+    * @param {pc.Mat4} lhs - The 4x4 matrix used as the first multiplicand of the operation.
+    * @param {pc.Mat4} rhs - The 4x4 matrix used as the second multiplicand of the operation.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var a = new pc.Mat4().setFromEulerAngles(10, 20, 30);
@@ -224,24 +223,24 @@ class Mat4 () extends js.Object {
     * // r = a * b
     * r.mul2(a, b);
     *
-    * console.log("The result of the multiplication is: " r.toString());
+    * console.log("The result of the multiplication is: " + r.toString());
     */
   def mul2(lhs: Mat4, rhs: Mat4): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#set
     * @description Sets matrix data from an array.
-    * @param {Number[]} src Source array. Must have 16 values.
+    * @param {number[]} src - Source array. Must have 16 values.
     * @returns {pc.Mat4} Self for chaining.
     */
-  def set(src: js.Array[Number]): Mat4 = js.native
+  def set(src: js.Array[Double]): Mat4 = js.native
   /**
     * @function
     * @name pc.Mat4#setFromAxisAngle
     * @description Sets the specified matrix to a rotation matrix equivalent to a rotation around
     * an axis. The axis must be normalized (unit length) and the angle must be specified in degrees.
-    * @param {pc.Vec3} axis The normalized axis vector around which to rotate.
-    * @param {Number} angle The angle of rotation in degrees.
+    * @param {pc.Vec3} axis - The normalized axis vector around which to rotate.
+    * @param {number} angle - The angle of rotation in degrees.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * // Create a 4x4 rotation matrix
@@ -253,9 +252,9 @@ class Mat4 () extends js.Object {
     * @name pc.Mat4#setFromEulerAngles
     * @description Sets the specified matrix to a rotation matrix defined by
     * Euler angles. The Euler angles are specified in XYZ order and in degrees.
-    * @param {Number} ex Angle to rotate around X axis in degrees.
-    * @param {Number} ey Angle to rotate around Y axis in degrees.
-    * @param {Number} ez Angle to rotate around Z axis in degrees.
+    * @param {number} ex - Angle to rotate around X axis in degrees.
+    * @param {number} ey - Angle to rotate around Y axis in degrees.
+    * @param {number} ez - Angle to rotate around Z axis in degrees.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var m = new pc.Mat4();
@@ -281,9 +280,9 @@ class Mat4 () extends js.Object {
     * of the viewport. Similarly, the direction described by the up vector projected onto the viewing plane
     * is mapped to the positive y-axis so that it points upward in the viewport. The up vector must not be
     * parallel to the line of sight from the eye to the reference point.
-    * @param {pc.Vec3} position 3-d vector holding view position.
-    * @param {pc.Vec3} target 3-d vector holding reference point.
-    * @param {pc.Vec3} up 3-d vector holding the up direction.
+    * @param {pc.Vec3} position - 3-d vector holding view position.
+    * @param {pc.Vec3} target - 3-d vector holding reference point.
+    * @param {pc.Vec3} up - 3-d vector holding the up direction.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var position = new pc.Vec3(10, 10, 10);
@@ -297,12 +296,12 @@ class Mat4 () extends js.Object {
     * @name pc.Mat4#setOrtho
     * @description Sets the specified matrix to an orthographic projection matrix. The function's parameters
     * define the shape of a cuboid-shaped frustum.
-    * @param {Number} left The x-coordinate for the left edge of the camera's projection plane in eye space.
-    * @param {Number} right The x-coordinate for the right edge of the camera's projection plane in eye space.
-    * @param {Number} bottom The y-coordinate for the bottom edge of the camera's projection plane in eye space.
-    * @param {Number} top The y-coordinate for the top edge of the camera's projection plane in eye space.
-    * @param {Number} near The near clip plane in eye coordinates.
-    * @param {Number} far The far clip plane in eye coordinates.
+    * @param {number} left - The x-coordinate for the left edge of the camera's projection plane in eye space.
+    * @param {number} right - The x-coordinate for the right edge of the camera's projection plane in eye space.
+    * @param {number} bottom - The y-coordinate for the bottom edge of the camera's projection plane in eye space.
+    * @param {number} top - The y-coordinate for the top edge of the camera's projection plane in eye space.
+    * @param {number} near - The near clip plane in eye coordinates.
+    * @param {number} far - The far clip plane in eye coordinates.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * // Create a 4x4 orthographic projection matrix
@@ -314,13 +313,13 @@ class Mat4 () extends js.Object {
     * @name pc.Mat4#setPerspective
     * @description Sets the specified matrix to a perspective projection matrix. The function's
     * parameters define the shape of a frustum.
-    * @param {Number} fov The frustum's field of view in degrees. The fovIsHorizontal parameter
+    * @param {number} fov - The frustum's field of view in degrees. The fovIsHorizontal parameter
     * controls whether this is a vertical or horizontal field of view. By default, it's a vertical
     * field of view.
-    * @param {Number} aspect The aspect ratio of the frustum's projection plane (width / height).
-    * @param {Number} znear The near clip plane in eye coordinates.
-    * @param {Number} zfar The far clip plane in eye coordinates.
-    * @param {Boolean} [fovIsHorizontal=false] Set to true to treat the fov as horizontal (x-axis)
+    * @param {number} aspect - The aspect ratio of the frustum's projection plane (width / height).
+    * @param {number} znear - The near clip plane in eye coordinates.
+    * @param {number} zfar - The far clip plane in eye coordinates.
+    * @param {boolean} [fovIsHorizontal=false] - Set to true to treat the fov as horizontal (x-axis)
     * and false for vertical (y-axis). Defaults to false.
     * @returns {pc.Mat4} Self for chaining.
     * @example
@@ -334,9 +333,9 @@ class Mat4 () extends js.Object {
     * @name pc.Mat4#setTRS
     * @description Sets the specified matrix to the concatenation of a translation, a
     * quaternion rotation and a scale.
-    * @param {pc.Vec3} t A 3-d vector translation.
-    * @param {pc.Quat} r A quaternion rotation.
-    * @param {pc.Vec3} s A 3-d vector scale.
+    * @param {pc.Vec3} t - A 3-d vector translation.
+    * @param {pc.Quat} r - A quaternion rotation.
+    * @param {pc.Vec3} s - A 3-d vector scale.
     * @returns {pc.Mat4} Self for chaining.
     * @example
     * var t = new pc.Vec3(10, 20, 30);
@@ -351,8 +350,8 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#transformPoint
     * @description Transforms a 3-dimensional point by a 4x4 matrix.
-    * @param {pc.Vec3} vec The 3-dimensional point to be transformed.
-    * @param {pc.Vec3} [res] An optional 3-dimensional point to receive the result of the transformation.
+    * @param {pc.Vec3} vec - The 3-dimensional point to be transformed.
+    * @param {pc.Vec3} [res] - An optional 3-dimensional point to receive the result of the transformation.
     * @returns {pc.Vec3} The input point v transformed by the current instance.
     * @example
     * // Create a 3-dimensional point
@@ -369,8 +368,8 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#transformVec4
     * @description Transforms a 4-dimensional vector by a 4x4 matrix.
-    * @param {pc.Vec4} vec The 4-dimensional vector to be transformed.
-    * @param {pc.Vec4} [res] An optional 4-dimensional vector to receive the result of the transformation.
+    * @param {pc.Vec4} vec - The 4-dimensional vector to be transformed.
+    * @param {pc.Vec4} [res] - An optional 4-dimensional vector to receive the result of the transformation.
     * @returns {pc.Vec4} The input vector v transformed by the current instance.
     * @example
     * // Create an input 4-dimensional vector
@@ -390,8 +389,8 @@ class Mat4 () extends js.Object {
     * @function
     * @name pc.Mat4#transformVector
     * @description Transforms a 3-dimensional vector by a 4x4 matrix.
-    * @param {pc.Vec3} vec The 3-dimensional vector to be transformed.
-    * @param {pc.Vec3} [res] An optional 3-dimensional vector to receive the result of the transformation.
+    * @param {pc.Vec3} vec - The 3-dimensional vector to be transformed.
+    * @param {pc.Vec3} [res] - An optional 3-dimensional vector to receive the result of the transformation.
     * @returns {pc.Vec3} The input vector v transformed by the current instance.
     * @example
     * // Create a 3-dimensional vector
@@ -426,8 +425,8 @@ object Mat4 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Mat4
     * @name pc.Mat4.IDENTITY
+    * @type {pc.Mat4}
     * @description A constant matrix set to the identity.
     */
   val IDENTITY: Mat4 = js.native
@@ -435,8 +434,8 @@ object Mat4 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Mat4
     * @name pc.Mat4.ZERO
+    * @type {pc.Mat4}
     * @description A constant matrix with all elements set to 0.
     */
   val ZERO: Mat4 = js.native

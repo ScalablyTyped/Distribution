@@ -61,6 +61,10 @@ trait EdgeLine extends js.Object {
     */
   var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.undefined
   /**
+    * The distance the edge ends from its target.
+    */
+  var `target-distance-from-node`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
+  /**
     * The width of an edge’s line.
     */
   var width: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
@@ -76,6 +80,7 @@ object EdgeLine {
     `line-dash-pattern`: js.Array[PropertyValueEdge[Double]] = null,
     `line-fill`: PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`] = null,
     `line-style`: PropertyValueEdge[LineStyle] = null,
+    `target-distance-from-node`: PropertyValueEdge[Double] = null,
     width: PropertyValueEdge[Double | String] = null
   ): EdgeLine = {
     val __obj = js.Dynamic.literal()
@@ -86,6 +91,7 @@ object EdgeLine {
     if (`line-dash-pattern` != null) __obj.updateDynamic("line-dash-pattern")(`line-dash-pattern`.asInstanceOf[js.Any])
     if (`line-fill` != null) __obj.updateDynamic("line-fill")(`line-fill`.asInstanceOf[js.Any])
     if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`.asInstanceOf[js.Any])
+    if (`target-distance-from-node` != null) __obj.updateDynamic("target-distance-from-node")(`target-distance-from-node`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EdgeLine]
   }

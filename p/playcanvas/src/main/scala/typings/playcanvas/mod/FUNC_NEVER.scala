@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FUNC_NEVER
+  * @type {number}
   * @description Never pass.
   */
 @JSImport("playcanvas", "FUNC_NEVER")

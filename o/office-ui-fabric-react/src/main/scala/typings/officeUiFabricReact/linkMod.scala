@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.linkTypesMod.ILinkProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +13,6 @@ object linkMod extends js.Object {
   class LinkBase ()
     extends typings.officeUiFabricReact.linkBaseMod.LinkBase
   
-  val Link: StatelessComponent[ILinkProps] = js.native
+  val Link: FunctionComponent[ILinkProps] = js.native
 }
 

@@ -75,6 +75,10 @@ trait SpotFleetRequestConfigData extends js.Object {
     */
   var SpotPrice: js.UndefOr[String] = js.native
   /**
+    * The key-value pair for tagging the Spot Fleet request on creation. The value for ResourceType must be spot-fleet-request, otherwise the Spot Fleet request fails. To tag instances at launch, specify the tags in the launch template. For information about tagging after launch, see Tagging Your Resources.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The number of units to request for the Spot Fleet. You can choose to set the target capacity in terms of instances or a performance characteristic that is important to your application workload, such as vCPUs, memory, or I/O. If the request type is maintain, you can specify a target capacity of 0 and add capacity later.
     */
   var TargetCapacity: Integer = js.native
@@ -117,6 +121,7 @@ object SpotFleetRequestConfigData {
     ReplaceUnhealthyInstances: js.UndefOr[scala.Boolean] = js.undefined,
     SpotMaxTotalPrice: String = null,
     SpotPrice: String = null,
+    TagSpecifications: TagSpecificationList = null,
     TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined,
     Type: FleetType = null,
     ValidFrom: DateTime = null,
@@ -139,6 +144,7 @@ object SpotFleetRequestConfigData {
     if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances.asInstanceOf[js.Any])
     if (SpotMaxTotalPrice != null) __obj.updateDynamic("SpotMaxTotalPrice")(SpotMaxTotalPrice.asInstanceOf[js.Any])
     if (SpotPrice != null) __obj.updateDynamic("SpotPrice")(SpotPrice.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     if (!js.isUndefined(TerminateInstancesWithExpiration)) __obj.updateDynamic("TerminateInstancesWithExpiration")(TerminateInstancesWithExpiration.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (ValidFrom != null) __obj.updateDynamic("ValidFrom")(ValidFrom.asInstanceOf[js.Any])

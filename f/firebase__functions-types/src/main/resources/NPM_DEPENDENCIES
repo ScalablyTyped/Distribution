@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/functions-types" : "0.3.13"
+      "@firebase/functions-types" : "0.3.14"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/functions-types" : "0.3.13"
+      "@firebase/functions-types" : "0.3.14"
     }
   ],
   "compile-devDependencies" : [

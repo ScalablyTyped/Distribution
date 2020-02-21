@@ -16,7 +16,7 @@ class CallHierarchyOutgoingCall protected () extends js.Object {
   def this(item: CallHierarchyItem, fromRanges: js.Array[Range]) = this()
   /**
   		 * The range at which this item is called. This is the range relative to the caller, e.g the item
-  		 * passed to [`provideCallHierarchyOutgoingCalls`](#CallHierarchyItemProvider.provideCallHierarchyOutgoingCalls)
+  		 * passed to [`provideCallHierarchyOutgoingCalls`](#CallHierarchyProvider.provideCallHierarchyOutgoingCalls)
   		 * and not [`this.to`](#CallHierarchyOutgoingCall.to).
   		 */
   var fromRanges: js.Array[Range] = js.native

@@ -11,6 +11,15 @@ trait SubscribeOptions extends js.Object {
   /** An array (bind by position) or object (bind by name) containing the bind values to use in the sql property. */
   var binds: js.UndefOr[BindParameters] = js.undefined
   /**
+    * Enables CQN “client initiated” connections which internally use the same approach as normal connections to the database,
+    * and do not require the database to be able to connect back to the application. Since client initiated connections
+    * do not need additional network configuration, they have ease-of-use and security advantages.
+    * 
+    * @default false
+    * @since 4.2
+    */
+  var clientInitiated: js.UndefOr[Boolean] = js.undefined
+  /**
     * An integer mask which currently, if set, can only contain the value SUBSCR_GROUPING_CLASS_TIME.
     * If this value is set then notifications are grouped by time into a single notification.
     */
@@ -63,6 +72,7 @@ object SubscribeOptions {
     callback: SubscriptionMessage => Unit,
     sql: String,
     binds: BindParameters = null,
+    clientInitiated: js.UndefOr[Boolean] = js.undefined,
     groupingClass: Int | Double = null,
     groupingType: Int | Double = null,
     groupingValue: Int | Double = null,
@@ -75,6 +85,7 @@ object SubscribeOptions {
   ): SubscribeOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), sql = sql.asInstanceOf[js.Any])
     if (binds != null) __obj.updateDynamic("binds")(binds.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientInitiated)) __obj.updateDynamic("clientInitiated")(clientInitiated.asInstanceOf[js.Any])
     if (groupingClass != null) __obj.updateDynamic("groupingClass")(groupingClass.asInstanceOf[js.Any])
     if (groupingType != null) __obj.updateDynamic("groupingType")(groupingType.asInstanceOf[js.Any])
     if (groupingValue != null) __obj.updateDynamic("groupingValue")(groupingValue.asInstanceOf[js.Any])

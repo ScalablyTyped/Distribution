@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.ScopeSpace
   * @classdesc The scope for variables and subspaces.
-  * @param {String} name The scope name.
-  * @property {String} name The scope name.
+  * @param {string} name - The scope name.
+  * @property {string} name The scope name.
   */
 @JSGlobal("pc.ScopeSpace")
 @js.native
@@ -23,7 +23,7 @@ class ScopeSpace protected () extends js.Object {
     * @function
     * @name pc.ScopeSpace#getSubSpace
     * @description Get (or create, if it doesn't already exist) a subspace in the scope.
-    * @param {String} name The subspace name.
+    * @param {string} name - The subspace name.
     * @returns {pc.ScopeSpace} The subspace instance.
     */
   def getSubSpace(name: String): ScopeSpace = js.native
@@ -31,7 +31,7 @@ class ScopeSpace protected () extends js.Object {
     * @function
     * @name pc.ScopeSpace#resolve
     * @description Get (or create, if it doesn't already exist) a variable in the scope.
-    * @param {String} name The variable name.
+    * @param {string} name - The variable name.
     * @returns {pc.ScopeId} The variable instance.
     */
   def resolve(name: String): ScopeId = js.native

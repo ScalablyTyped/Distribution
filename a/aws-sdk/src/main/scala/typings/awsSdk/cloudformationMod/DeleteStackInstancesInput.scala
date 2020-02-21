@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteStackInstancesInput extends js.Object {
   /**
-    * The names of the AWS accounts that you want to delete stack instances for.
+    * [Self-managed permissions] The names of the AWS accounts that you want to delete stack instances for. You can specify Accounts or DeploymentTargets, but not both.
     */
-  var Accounts: AccountList = js.native
+  var Accounts: js.UndefOr[AccountList] = js.native
+  /**
+    * [Service-managed permissions] The AWS Organizations accounts from which to delete stack instances. You can specify Accounts or DeploymentTargets, but not both.
+    */
+  var DeploymentTargets: js.UndefOr[typings.awsSdk.cloudformationMod.DeploymentTargets] = js.native
   /**
     * The unique identifier for this stack set operation.  If you don't specify an operation ID, the SDK generates one automatically.  The operation ID also functions as an idempotency token, to ensure that AWS CloudFormation performs the stack set operation only once, even if you retry the request multiple times. You can retry stack set operation requests to ensure that AWS CloudFormation successfully received them. Repeating this stack set operation with a new operation ID retries all stack instances whose status is OUTDATED. 
     */
@@ -35,14 +39,17 @@ trait DeleteStackInstancesInput extends js.Object {
 object DeleteStackInstancesInput {
   @scala.inline
   def apply(
-    Accounts: AccountList,
     Regions: RegionList,
     RetainStacks: RetainStacks,
     StackSetName: StackSetName,
+    Accounts: AccountList = null,
+    DeploymentTargets: DeploymentTargets = null,
     OperationId: ClientRequestToken = null,
     OperationPreferences: StackSetOperationPreferences = null
   ): DeleteStackInstancesInput = {
-    val __obj = js.Dynamic.literal(Accounts = Accounts.asInstanceOf[js.Any], Regions = Regions.asInstanceOf[js.Any], RetainStacks = RetainStacks.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Regions = Regions.asInstanceOf[js.Any], RetainStacks = RetainStacks.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
+    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
+    if (DeploymentTargets != null) __obj.updateDynamic("DeploymentTargets")(DeploymentTargets.asInstanceOf[js.Any])
     if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
     if (OperationPreferences != null) __obj.updateDynamic("OperationPreferences")(OperationPreferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStackInstancesInput]

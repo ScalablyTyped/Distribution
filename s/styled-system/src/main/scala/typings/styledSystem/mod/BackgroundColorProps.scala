@@ -1,12 +1,11 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.BackgroundProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BackgroundColorProps[TLength] extends js.Object {
-  var backgroundColor: js.UndefOr[ResponsiveValue[BackgroundProperty[TLength]]] = js.undefined
+trait BackgroundColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
+  var backgroundColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   /**
     * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
     * By default the raw value of the prop is returned.
@@ -16,19 +15,19 @@ trait BackgroundColorProps[TLength] extends js.Object {
     *
     * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
     */
-  var bg: js.UndefOr[ResponsiveValue[BackgroundProperty[TLength]]] = js.undefined
+  var bg: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 
 object BackgroundColorProps {
   @scala.inline
-  def apply[TLength](
-    backgroundColor: ResponsiveValue[BackgroundProperty[TLength]] = null,
-    bg: ResponsiveValue[BackgroundProperty[TLength]] = null
-  ): BackgroundColorProps[TLength] = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](
+    backgroundColor: ResponsiveValue[TVal, ThemeType] = null,
+    bg: ResponsiveValue[TVal, ThemeType] = null
+  ): BackgroundColorProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BackgroundColorProps[TLength]]
+    __obj.asInstanceOf[BackgroundColorProps[ThemeType, TVal]]
   }
 }
 

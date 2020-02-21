@@ -11,7 +11,7 @@ trait DBClusterRole extends js.Object {
     */
   var RoleArn: js.UndefOr[String] = js.native
   /**
-    * Describes the state of association between the IAM role and the DB cluster. The Status property returns one of the following values:    ACTIVE - The IAM role ARN is associated with the DB cluster and can be used to access other AWS services on your behalf.    PENDING - The IAM role ARN is being associated with the DB cluster.    INVALID - The IAM role ARN is associated with the DB cluster, but the DB cluster cannot assume the IAM role to access other AWS services on your behalf.  
+    * Describes the state of association between the IAM role and the cluster. The Status property returns one of the following values:    ACTIVE - The IAM role ARN is associated with the cluster and can be used to access other AWS services on your behalf.    PENDING - The IAM role ARN is being associated with the DB cluster.    INVALID - The IAM role ARN is associated with the cluster, but the cluster cannot assume the IAM role to access other AWS services on your behalf.  
     */
   var Status: js.UndefOr[String] = js.native
 }

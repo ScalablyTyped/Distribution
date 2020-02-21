@@ -7,7 +7,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
+  /** `Multer.File` object populated by `single()` middleware. */
   var file: File
+  /**
+    * Array or dictionary of `Multer.File` object populated by `array()`,
+    * `fields()`, and `any()` middleware.
+    */
   var files: StringDictionary[js.Array[File]] | js.Array[File]
 }
 

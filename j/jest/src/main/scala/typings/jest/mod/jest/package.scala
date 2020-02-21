@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 package object jest {
   type AndNot[T] = T with typings.jest.AnonNot[T]
   type ArgsType[T] = js.Any
-  type Bytes = scala.Double
-  type ConfigGlobals = js.Object
-  type ConsoleBuffer = js.Array[typings.jest.mod.jest.LogEntry]
+  type ConstructorArgsType[T] = js.Any
+  type ConstructorPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends new (args : ...any): any? K : never}[keyof T] */ js.Any) with java.lang.String
   type CustomAsymmetricMatcher[TMatcher /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Function1[
     /* args */ typings.jest.mod.jest.RemoveFirstFromTuple[typings.jest.mod.jest.Parameters[TMatcher]], 
     typings.jest.mod.jest.AsymmetricMatcher
@@ -29,7 +28,6 @@ package object jest {
     typings.jest.mod.jest.CustomMatcherResult | js.Promise[typings.jest.mod.jest.CustomMatcherResult]
   ]
   type EmptyFunction = js.Function0[scala.Unit]
-  type Environment = typings.jest.mod.jest.JestEnvironment
   type EqualityTester = js.Function2[/* a */ js.Any, /* b */ js.Any, js.UndefOr[scala.Boolean]]
   type ExpectExtendMap = org.scalablytyped.runtime.StringDictionary[typings.jest.mod.jest.CustomMatcher]
   type ExpectProperties = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -43,11 +41,6 @@ package object jest {
   // have added issue https://github.com/microsoft/dtslint/issues/256 - Cannot have type union containing void ( to be used as return type only
   type ExtendedMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */, TMatcherReturn, TActual] = (typings.jest.mod.jest.Matchers[TMatcherReturn, TActual]) with typings.jest.jestStrings.ExtendedMatchers with TMatchers
   type FunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) with java.lang.String
-  type Glob = java.lang.String
-  // Global
-  type Global = js.Object
-  type HasteFS = js.Any
-  type HasteResolver = js.Any
   type JestExtendedMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */, TActual] = typings.jest.mod.jest.JestMatchersShape[
     typings.jest.mod.jest.ExtendedMatchers[TMatchers, scala.Unit, TActual], 
     typings.jest.mod.jest.ExtendedMatchers[TMatchers, js.Promise[scala.Unit], TActual]
@@ -62,26 +55,9 @@ package object jest {
     /* timeout */ js.UndefOr[scala.Double], 
     js.Any
   ]
-  // Console
-  type LogMessage = java.lang.String
   type MatcherColorFn = typings.jest.mod.jest.ChalkFunction with typings.jest.AnonSupportsColor
   type MatcherContext = typings.jest.mod.jest.MatcherUtils with typings.jest.mod.jest.MatcherState
   type MatcherHintColor = js.Function1[/* arg */ java.lang.String, java.lang.String]
-  // types for implementing custom interfaces, from https://github.com/facebook/jest/tree/dd6c5c4/types
-  // https://facebook.github.io/jest/docs/en/configuration.html#transform-object-string-string
-  // const transformer: Transformer;
-  // https://facebook.github.io/jest/docs/en/configuration.html#reporters-array-modulename-modulename-options
-  // const reporter: Reporter;
-  // https://facebook.github.io/jest/docs/en/configuration.html#testrunner-string
-  // const testRunner: TestFramework;
-  // https://facebook.github.io/jest/docs/en/configuration.html#testresultsprocessor-string
-  // const testResultsProcessor: TestResultsProcessor;
-  // leave above declarations for referencing type-dependencies
-  // .vscode/settings.json: "typescript.referencesCodeLens.enabled": true
-  // custom
-  // flow's Maybe type https://flow.org/en/docs/types/primitives/#toc-maybe-types
-  type Maybe[T] = js.UndefOr[scala.Unit | scala.Null | T]
-  type Milliseconds = scala.Double
   /**
     * Wrap an object or a module with mock definitions
     *
@@ -120,8 +96,6 @@ package object jest {
     *  expect(mockMyFunction.mock.calls[0][0]).toBe(42);
     */
   type MockedFunction[T /* <: js.Function1[/* repeated */ js.Any, _] */] = (typings.jest.mod.jest.MockInstance[typings.std.ReturnType[T], typings.jest.mod.jest.ArgsType[T]]) with T
-  type ModuleMap = js.Any
-  type ModuleMocker = js.Any
   type NonAsyncMatchers[TMatchers /* <: typings.jest.mod.jest.ExpectExtendMap */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TMatchers ]: std.ReturnType<TMatchers[K]> extends std.Promise<jest.jest.jest.CustomMatcherResult>? never : K}[keyof TMatchers] */ js.Any
   // see https://github.com/Microsoft/TypeScript/issues/25215
   type NonFunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) with java.lang.String
@@ -134,32 +108,15 @@ package object jest {
     */
   type Omit[T, K /* <: java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
   type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
-  // Config
-  type Path = java.lang.String
   type PrintLabel = js.Function1[/* string */ java.lang.String, java.lang.String]
   type PromiseMatchers[T /* <: typings.jest.mod.jest.JestMatchersShape[js.Object, js.Object] */] = typings.jest.mod.jest.Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: T['resolves'] */ js.Any, 
     typings.jest.jestStrings.not
   ]
   type ProvidesCallback = js.Function1[/* cb */ typings.jest.mod.jest.DoneCallback, js.Any]
-  type RawCoverage = org.scalablytyped.runtime.StringDictionary[typings.jest.mod.jest.RawFileCoverage]
   type RejectedValue[T] = js.Any
   type RemoveFirstFromTuple[T /* <: js.Array[_] */] = js.Array[js.Any]
-  type ReporterConfig = js.Tuple2[java.lang.String, js.Object]
   type ResolvedValue[T] = js.Any | T
-  type Runtime = js.Any
-  type Script = js.Any
+  type SnapshotSerializerPlugin = typings.prettyFormat.mod.Plugin
   type SpyInstance[T, Y /* <: js.Array[_] */] = typings.jest.mod.jest.MockInstance[T, Y]
-  type TestFramework = js.Function5[
-    /* globalConfig */ typings.jest.mod.jest.GlobalConfig, 
-    /* config */ typings.jest.mod.jest.ProjectConfig, 
-    /* environment */ typings.jest.mod.jest.Environment, 
-    /* runtime */ typings.jest.mod.jest.Runtime, 
-    /* testPath */ java.lang.String, 
-    js.Promise[typings.jest.mod.jest.TestResult]
-  ]
-  type TestResultsProcessor = js.Function1[
-    /* testResult */ typings.jest.mod.jest.AggregatedResult, 
-    typings.jest.mod.jest.AggregatedResult
-  ]
 }

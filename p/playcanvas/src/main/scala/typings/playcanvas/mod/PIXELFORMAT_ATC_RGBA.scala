@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PIXELFORMAT_ATC_RGBA
+  * @type {number}
   * @description ATC compressed format with alpha channel.
   */
 @JSImport("playcanvas", "PIXELFORMAT_ATC_RGBA")

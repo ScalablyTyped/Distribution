@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("H.geo.Rect")
 @js.native
-class Rect protected () extends js.Object {
+class Rect protected () extends AbstractGeometry {
   /**
     * Constructor
     * @param top {H.geo.Latitude} - the northern-most latitude

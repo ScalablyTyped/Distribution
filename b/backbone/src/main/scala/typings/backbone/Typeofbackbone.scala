@@ -149,11 +149,13 @@ trait Typeofbackbone extends js.Object {
   @JSName("$")
   def $[TElement /* <: Element */](selector: Selector, context: JQuery_[HTMLElement]): JQuery_[TElement] = js.native
   @JSName("$")
+  def $[TElement /* <: Element */](selector: Selector, context: Selector): JQuery_[TElement] = js.native
+  @JSName("$")
   def $[TElement /* <: Element */](selector: Selector, context: Element): JQuery_[TElement] = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     * @param selector A string containing a selector expression
-    * @param context A DOM Element, Document, or jQuery to use as context
+    * @param context A DOM Element, Document, Selector or jQuery to use as context
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.0
     * @example ​ ````Find all p elements that are children of a div element and apply a border to them.

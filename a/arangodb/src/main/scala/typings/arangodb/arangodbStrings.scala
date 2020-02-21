@@ -1229,6 +1229,9 @@ object arangodbStrings {
   sealed trait traditional extends KeyGeneratorType
   
   @js.native
+  sealed trait ttl extends IndexType
+  
+  @js.native
   sealed trait unauthorized extends HttpStatus
   
   @js.native
@@ -2063,6 +2066,8 @@ object arangodbStrings {
   def `too many requests`: `too many requests` = "too many requests".asInstanceOf[`too many requests`]
   @scala.inline
   def traditional: traditional = "traditional".asInstanceOf[traditional]
+  @scala.inline
+  def ttl: ttl = "ttl".asInstanceOf[ttl]
   @scala.inline
   def unauthorized: unauthorized = "unauthorized".asInstanceOf[unauthorized]
   @scala.inline

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait SourceControlInputBox extends js.Object {
   /**
-  		 * A string to show as place holder in the input box to guide the user.
+  		 * A string to show as placeholder in the input box to guide the user.
   		 */
   var placeholder: String
   /**

@@ -1,6 +1,7 @@
 package typings.pulumiAws.documentMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.outputMod.ssm.DocumentAttachmentsSource
 import typings.pulumiAws.outputMod.ssm.DocumentParameter
 import typings.pulumiAws.outputMod.ssm.DocumentPermissions
 import typings.pulumiPulumi.mod.CustomResource
@@ -26,6 +27,10 @@ class Document protected () extends CustomResource {
   def this(name: String, args: DocumentArgs, opts: CustomResourceOptions) = this()
   val arn: Output_[String] = js.native
   /**
+    * One or more configuration blocks describing attachments sources to a version of a document. Defined below.
+    */
+  val attachmentsSources: Output_[js.UndefOr[js.Array[DocumentAttachmentsSource]]] = js.native
+  /**
     * The JSON or YAML content of the document.
     */
   val content: Output_[String] = js.native
@@ -46,7 +51,7 @@ class Document protected () extends CustomResource {
     */
   val documentFormat: Output_[js.UndefOr[String]] = js.native
   /**
-    * The type of the document. Valid document types include: `Command`, `Policy`, `Automation` and `Session`
+    * The type of the document. Valid document types include: `Automation`, `Command`, `Package`, `Policy`, and `Session`
     */
   val documentType: Output_[String] = js.native
   /**
@@ -93,6 +98,10 @@ class Document protected () extends CustomResource {
     * A mapping of tags to assign to the object.
     */
   val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  /**
+    * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference (http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
+    */
+  val targetType: Output_[js.UndefOr[String]] = js.native
 }
 
 /* static members */

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ object libOverlayMod extends js.Object {
     def this(props: IOverlayProps) = this()
   }
   
-  val Overlay: StatelessComponent[IOverlayProps] = js.native
+  val Overlay: FunctionComponent[IOverlayProps] = js.native
 }
 

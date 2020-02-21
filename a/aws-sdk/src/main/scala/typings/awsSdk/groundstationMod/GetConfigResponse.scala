@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetConfigResponse extends js.Object {
   /**
-    * ARN of a Config
-    
+    * ARN of a Config 
     */
   var configArn: ConfigArn = js.native
   /**

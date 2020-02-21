@@ -8,7 +8,7 @@ trait LinearGaugeGaugeArea extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var border: js.UndefOr[LinearGaugeGaugeAreaBorder] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[LinearGaugeGaugeAreaMargin] = js.undefined
+  var margin: js.UndefOr[Double | LinearGaugeGaugeAreaMargin] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object LinearGaugeGaugeArea {
     background: String = null,
     border: LinearGaugeGaugeAreaBorder = null,
     height: Int | Double = null,
-    margin: LinearGaugeGaugeAreaMargin = null,
+    margin: Double | LinearGaugeGaugeAreaMargin = null,
     width: Int | Double = null
   ): LinearGaugeGaugeArea = {
     val __obj = js.Dynamic.literal()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vscode", "Uri")
 @js.native
-class Uri protected () extends js.Object {
+class Uri protected () extends ConfigurationScope {
   /**
   		 * Use the `file` and `parse` factory functions to create new `Uri` objects.
   		 */

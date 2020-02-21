@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TimelineProps extends js.Object {
+  var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var mode: js.UndefOr[left | alternate | right] = js.undefined
   /** 指定最后一个幽灵节点是否存在或内容 */
@@ -23,6 +24,7 @@ trait TimelineProps extends js.Object {
 object TimelineProps {
   @scala.inline
   def apply(
+    children: ReactNode = null,
     className: String = null,
     mode: left | alternate | right = null,
     pending: ReactNode = null,
@@ -32,6 +34,7 @@ object TimelineProps {
     style: CSSProperties = null
   ): TimelineProps = {
     val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (pending != null) __obj.updateDynamic("pending")(pending.asInstanceOf[js.Any])

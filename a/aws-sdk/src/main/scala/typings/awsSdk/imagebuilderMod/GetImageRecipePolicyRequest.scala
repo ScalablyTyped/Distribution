@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetImageRecipePolicyRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the image recipe whose policy you wish to retrieve. 
+    *  The Amazon Resource Name (ARN) of the image recipe whose policy you want to retrieve. 
     */
   var imageRecipeArn: ImageRecipeArn = js.native
 }

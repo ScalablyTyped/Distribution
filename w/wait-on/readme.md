@@ -1,7 +1,7 @@
 
 # Scala.js typings for wait-on
 
-Typings are for version 3.2
+Typings are for version 4.0
 
 ## Library description:
 wait-on is a cross platform command line utility and Node.js API which will wait for files, ports, sockets, and http(s) resources to become available

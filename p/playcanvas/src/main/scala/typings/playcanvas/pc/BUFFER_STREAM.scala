@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BUFFER_STREAM
+  * @type {number}
   * @description The data store contents will be modified once and used at most a few times.
   */
 @JSGlobal("pc.BUFFER_STREAM")

@@ -2,6 +2,7 @@ package typings.victory.mod
 
 import typings.react.mod.ReactElement
 import typings.victory.AnonXY
+import typings.victory.AnonXYBoolean
 import typings.victory.AnonXYD3ScaleScalePropType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -97,6 +98,20 @@ trait VictoryCommonProps extends js.Object {
     */
   var scale: js.UndefOr[ScalePropType | D3Scale | AnonXYD3ScaleScalePropType] = js.undefined
   /**
+    * By default `domainPadding` is coerced to existing quadrants. This means that if a given domain only
+    * includes positive values, no amount of padding applied by `domainPadding` will result in a domain with
+    * negative values. This is the desired behavior in most cases. For users that need to apply padding without
+    * regard to quadrant, the `singleQuadrantDomainPadding` prop may be used. This prop may be given as a boolean
+    * or an object with boolean values specified for "x" and/or "y". When this prop is false (or false for a given
+    * dimension), padding will be applied without regard to quadrant. If this prop is not specified,
+    * `domainPadding` will be coerced to existing quadrants.
+    *
+    * *note:* The `x` value supplied to the `singleQuadrantDomainPadding` prop refers to the *independent* variable,
+    * and the `y` value refers to the *dependent* variable. This may cause confusion in horizontal charts, as the
+    * independent variable will corresponds to the y axis.
+    */
+  var singleQuadrantDomainPadding: js.UndefOr[Boolean | AnonXYBoolean] = js.undefined
+  /**
     * The standalone prop determines whether the component will render a standalone svg
     * or a <g> tag that will be included in an external svg. Set standalone to false to
     * compose VictoryAxis with other components within an enclosing <svg> tag.
@@ -133,6 +148,7 @@ object VictoryCommonProps {
     name: String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | AnonXYD3ScaleScalePropType = null,
+    singleQuadrantDomainPadding: Boolean | AnonXYBoolean = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     theme: VictoryThemeDefinition = null,
     width: Int | Double = null
@@ -148,6 +164,7 @@ object VictoryCommonProps {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (singleQuadrantDomainPadding != null) __obj.updateDynamic("singleQuadrantDomainPadding")(singleQuadrantDomainPadding.asInstanceOf[js.Any])
     if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

@@ -14,6 +14,10 @@ trait GatewayArgs extends js.Object {
     */
   val activationKey: js.UndefOr[Input[String]] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group to use to monitor and log events in the gateway.
+    */
+  val cloudwatchLogGroupArn: js.UndefOr[Input[String]] = js.native
+  /**
     * Gateway IP address to retrieve activation key during resource creation. Conflicts with `activationKey`. Gateway must be accessible on port 80 from where this provider is running. Additional information is available in the [Storage Gateway User Guide](https://docs.aws.amazon.com/storagegateway/latest/userguide/get-activation-key.html).
     */
   val gatewayIpAddress: js.UndefOr[Input[String]] = js.native
@@ -54,6 +58,7 @@ object GatewayArgs {
     gatewayName: Input[String],
     gatewayTimezone: Input[String],
     activationKey: Input[String] = null,
+    cloudwatchLogGroupArn: Input[String] = null,
     gatewayIpAddress: Input[String] = null,
     gatewayType: Input[String] = null,
     mediumChangerType: Input[String] = null,
@@ -64,6 +69,7 @@ object GatewayArgs {
   ): GatewayArgs = {
     val __obj = js.Dynamic.literal(gatewayName = gatewayName.asInstanceOf[js.Any], gatewayTimezone = gatewayTimezone.asInstanceOf[js.Any])
     if (activationKey != null) __obj.updateDynamic("activationKey")(activationKey.asInstanceOf[js.Any])
+    if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
     if (gatewayIpAddress != null) __obj.updateDynamic("gatewayIpAddress")(gatewayIpAddress.asInstanceOf[js.Any])
     if (gatewayType != null) __obj.updateDynamic("gatewayType")(gatewayType.asInstanceOf[js.Any])
     if (mediumChangerType != null) __obj.updateDynamic("mediumChangerType")(mediumChangerType.asInstanceOf[js.Any])

@@ -11,10 +11,10 @@ trait IonIconProps extends js.Object {
   var ariaLabel: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var flipRtl: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[AnonIos] = js.undefined
-  var ios: js.UndefOr[AnonIos] = js.undefined
+  var icon: js.UndefOr[AnonIos | String] = js.undefined
+  var ios: js.UndefOr[AnonIos | String] = js.undefined
   var `lazy`: js.UndefOr[Boolean] = js.undefined
-  var md: js.UndefOr[AnonIos] = js.undefined
+  var md: js.UndefOr[AnonIos | String] = js.undefined
   var mode: js.UndefOr[ios | md] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[String] = js.undefined
@@ -27,10 +27,10 @@ object IonIconProps {
     ariaLabel: String = null,
     color: String = null,
     flipRtl: js.UndefOr[Boolean] = js.undefined,
-    icon: AnonIos = null,
-    ios: AnonIos = null,
+    icon: AnonIos | String = null,
+    ios: AnonIos | String = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
-    md: AnonIos = null,
+    md: AnonIos | String = null,
     mode: ios | md = null,
     name: String = null,
     size: String = null,

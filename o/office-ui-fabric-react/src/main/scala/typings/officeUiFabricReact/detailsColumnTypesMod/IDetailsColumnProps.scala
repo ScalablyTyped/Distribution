@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.detailsColumnBaseMod.DetailsColumnBase
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
 import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
 import typings.officeUiFabricReact.dragdropInterfacesMod.IDragDropHelper
-import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
@@ -64,7 +63,7 @@ trait IDetailsColumnProps extends ClassAttributes[DetailsColumnBase] {
   /**
     * Render function for providing a column header tooltip.
     */
-  var onRenderColumnHeaderTooltip: js.UndefOr[IRenderFunction[ITooltipHostProps]] = js.undefined
+  var onRenderColumnHeaderTooltip: js.UndefOr[IRenderFunction[IDetailsColumnRenderTooltipProps]] = js.undefined
   /**
     * Parent ID used for accessibility label(s).
     */
@@ -108,7 +107,9 @@ object IDetailsColumnProps {
     key: Key = null,
     onColumnClick: (/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn) => Unit = null,
     onColumnContextMenu: (/* column */ IColumn, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
-    onRenderColumnHeaderTooltip: (/* props */ js.UndefOr[ITooltipHostProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITooltipHostProps], Element | Null]]) => Element | Null = null,
+    onRenderColumnHeaderTooltip: (/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], /* defaultRender */ js.UndefOr[
+      js.Function1[/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], Element | Null]
+    ]) => Element | Null = null,
     parentId: String = null,
     ref: LegacyRef[DetailsColumnBase] = null,
     setDraggedItemIndex: /* itemIndex */ Double => Unit = null,

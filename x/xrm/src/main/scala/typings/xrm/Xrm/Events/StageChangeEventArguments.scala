@@ -20,12 +20,16 @@ trait StageChangeEventArguments extends js.Object {
     * @returns The stage object. For switching between entities, returns the previous stage object
     */
   def getStage(): Stage
+  /**
+    * Prevents the stage or status change operation from being submitted to the server.
+    */
+  def preventDefault(): Unit
 }
 
 object StageChangeEventArguments {
   @scala.inline
-  def apply(getDirection: () => StageChangeDirection, getStage: () => Stage): StageChangeEventArguments = {
-    val __obj = js.Dynamic.literal(getDirection = js.Any.fromFunction0(getDirection), getStage = js.Any.fromFunction0(getStage))
+  def apply(getDirection: () => StageChangeDirection, getStage: () => Stage, preventDefault: () => Unit): StageChangeEventArguments = {
+    val __obj = js.Dynamic.literal(getDirection = js.Any.fromFunction0(getDirection), getStage = js.Any.fromFunction0(getStage), preventDefault = js.Any.fromFunction0(preventDefault))
   
     __obj.asInstanceOf[StageChangeEventArguments]
   }

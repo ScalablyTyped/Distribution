@@ -28,6 +28,11 @@ trait ClusterArgs extends js.Object {
     * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `clusterIdentifier`.
     */
   val clusterIdentifierPrefix: js.UndefOr[Input[String]] = js.native
+  val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * A list of the log types this DB cluster is configured to export to Cloudwatch Logs. Currently only supports `audit`.
+    */
+  val enableCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the database engine to be used for this Neptune cluster. Defaults to `neptune`.
     */
@@ -106,6 +111,8 @@ object ClusterArgs {
     backupRetentionPeriod: Input[Double] = null,
     clusterIdentifier: Input[String] = null,
     clusterIdentifierPrefix: Input[String] = null,
+    deletionProtection: Input[Boolean] = null,
+    enableCloudwatchLogsExports: Input[js.Array[Input[String]]] = null,
     engine: Input[String] = null,
     engineVersion: Input[String] = null,
     finalSnapshotIdentifier: Input[String] = null,
@@ -130,6 +137,8 @@ object ClusterArgs {
     if (backupRetentionPeriod != null) __obj.updateDynamic("backupRetentionPeriod")(backupRetentionPeriod.asInstanceOf[js.Any])
     if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
     if (clusterIdentifierPrefix != null) __obj.updateDynamic("clusterIdentifierPrefix")(clusterIdentifierPrefix.asInstanceOf[js.Any])
+    if (deletionProtection != null) __obj.updateDynamic("deletionProtection")(deletionProtection.asInstanceOf[js.Any])
+    if (enableCloudwatchLogsExports != null) __obj.updateDynamic("enableCloudwatchLogsExports")(enableCloudwatchLogsExports.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
     if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
     if (finalSnapshotIdentifier != null) __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier.asInstanceOf[js.Any])

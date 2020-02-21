@@ -58,7 +58,8 @@ package object cognitoidentityserviceproviderMod {
     - java.lang.String
   */
   type AuthFlowType = typings.awsSdk.cognitoidentityserviceproviderMod._AuthFlowType | java.lang.String
-  type AuthParametersType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+  type AuthParametersType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.AuthParametersValueType]
+  type AuthParametersValueType = java.lang.String
   type BlockedIPRangeListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
   type BooleanType = scala.Boolean
   type CSSType = java.lang.String
@@ -379,6 +380,7 @@ package object cognitoidentityserviceproviderMod {
     - java.lang.String
   */
   type VerifySoftwareTokenResponseType = typings.awsSdk.cognitoidentityserviceproviderMod._VerifySoftwareTokenResponseType | java.lang.String
+  type WrappedBooleanType = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2016-04-18`
     - typings.awsSdk.awsSdkStrings.latest_

@@ -21,6 +21,11 @@ trait WaitOnOptions extends js.Object {
   var headers: js.UndefOr[Record[String, _]] = js.undefined
   var httpSignature: js.UndefOr[HttpSignature] = js.undefined
   /**
+    * http HEAD/GET timeout to wait for request
+    * @default 0
+    */
+  var httpTimeout: js.UndefOr[Double] = js.undefined
+  /**
     * Poll resource interval in ms,
     * @default 250ms
     */
@@ -38,6 +43,11 @@ trait WaitOnOptions extends js.Object {
     * @default false
     */
   var reverse: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Limit of concurrent connections to a resource
+    * @default Infinity
+    */
+  var simultaneous: js.UndefOr[Double] = js.undefined
   var strictSSL: js.UndefOr[Boolean] = js.undefined
   /**
     * Tcp timeout in ms.
@@ -72,9 +82,11 @@ object WaitOnOptions {
     followRedirect: js.UndefOr[Boolean] = js.undefined,
     headers: Record[String, _] = null,
     httpSignature: HttpSignature = null,
+    httpTimeout: Int | Double = null,
     interval: Int | Double = null,
     log: js.UndefOr[Boolean] = js.undefined,
     reverse: js.UndefOr[Boolean] = js.undefined,
+    simultaneous: Int | Double = null,
     strictSSL: js.UndefOr[Boolean] = js.undefined,
     tcpTimeout: Int | Double = null,
     timeout: Int | Double = null,
@@ -88,9 +100,11 @@ object WaitOnOptions {
     if (!js.isUndefined(followRedirect)) __obj.updateDynamic("followRedirect")(followRedirect.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (httpSignature != null) __obj.updateDynamic("httpSignature")(httpSignature.asInstanceOf[js.Any])
+    if (httpTimeout != null) __obj.updateDynamic("httpTimeout")(httpTimeout.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(log)) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (simultaneous != null) __obj.updateDynamic("simultaneous")(simultaneous.asInstanceOf[js.Any])
     if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL.asInstanceOf[js.Any])
     if (tcpTimeout != null) __obj.updateDynamic("tcpTimeout")(tcpTimeout.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])

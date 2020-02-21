@@ -9,7 +9,7 @@ trait ChartCategoryAxisItemTitle extends js.Object {
   var border: js.UndefOr[ChartCategoryAxisItemTitleBorder] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartCategoryAxisItemTitleMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartCategoryAxisItemTitleMargin] = js.undefined
   var padding: js.UndefOr[ChartCategoryAxisItemTitlePadding] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
@@ -25,7 +25,7 @@ object ChartCategoryAxisItemTitle {
     border: ChartCategoryAxisItemTitleBorder = null,
     color: String = null,
     font: String = null,
-    margin: ChartCategoryAxisItemTitleMargin = null,
+    margin: Double | ChartCategoryAxisItemTitleMargin = null,
     padding: ChartCategoryAxisItemTitlePadding = null,
     position: String = null,
     rotation: Int | Double = null,

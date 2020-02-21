@@ -45,6 +45,7 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.never
 import typings.antDesignReactNative.antDesignReactNativeStrings.newPassword
 import typings.antDesignReactNative.antDesignReactNativeStrings.nickname
 import typings.antDesignReactNative.antDesignReactNativeStrings.no
+import typings.antDesignReactNative.antDesignReactNativeStrings.noExcludeDescendants
 import typings.antDesignReactNative.antDesignReactNativeStrings.none
 import typings.antDesignReactNative.antDesignReactNativeStrings.off
 import typings.antDesignReactNative.antDesignReactNativeStrings.oneTimeCode
@@ -65,6 +66,7 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.top
 import typings.antDesignReactNative.antDesignReactNativeStrings.username
 import typings.antDesignReactNative.antDesignReactNativeStrings.words
 import typings.antDesignReactNative.antDesignReactNativeStrings.yes
+import typings.antDesignReactNative.antDesignReactNativeStrings.yesExcludeDescendants
 import typings.antDesignReactNative.textareaItemPropsTypeMod.TextAreaEventHandle
 import typings.react.mod.ReactNode
 import typings.reactNative.AnonEndStart
@@ -139,6 +141,7 @@ trait TextareaItemProps extends js.Object {
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
   var hitSlop: js.UndefOr[Insets] = js.native
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAutofill: js.UndefOr[auto | no | noExcludeDescendants | yes | yesExcludeDescendants] = js.native
   var inlineImageLeft: js.UndefOr[String] = js.native
   var inlineImagePadding: js.UndefOr[Double] = js.native
   var inputAccessoryViewID: js.UndefOr[String] = js.native
@@ -193,9 +196,11 @@ trait TextareaItemProps extends js.Object {
   var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
   var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
   var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var passwordRules: js.UndefOr[String] = js.native
   var placeholder: js.UndefOr[String] = js.native
   var placeholderTextColor: js.UndefOr[String] = js.native
   var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+  var rejectResponderTermination: js.UndefOr[Boolean] = js.native
   var removeClippedSubviews: js.UndefOr[Boolean] = js.native
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
   var returnKeyLabel: js.UndefOr[String] = js.native

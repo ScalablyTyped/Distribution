@@ -1,7 +1,7 @@
 package typings.reactNative.mod
 
-import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
+import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ class Picker ()
 @JSImport("react-native", "Picker")
 @js.native
 object Picker extends js.Object {
-  var Item: Instantiable0[PickerItem] = js.native
+  var Item: ComponentType[PickerItemProps] = js.native
   /**
     * On Android, display the options in a dialog.
     */

@@ -5,12 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LicenseGet extends Generic {
+  var accept_enterprise: js.UndefOr[Boolean] = js.undefined
   var local: js.UndefOr[Boolean] = js.undefined
 }
 
 object LicenseGet {
   @scala.inline
   def apply(
+    accept_enterprise: js.UndefOr[Boolean] = js.undefined,
     error_trace: js.UndefOr[Boolean] = js.undefined,
     filter_path: String | js.Array[String] = null,
     human: js.UndefOr[Boolean] = js.undefined,
@@ -21,6 +23,7 @@ object LicenseGet {
     source: String = null
   ): LicenseGet = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(accept_enterprise)) __obj.updateDynamic("accept_enterprise")(accept_enterprise.asInstanceOf[js.Any])
     if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.asInstanceOf[js.Any])
     if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
     if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])

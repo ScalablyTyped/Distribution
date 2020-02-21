@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SqsAction extends js.Object {
   /**
-    * The URL of the Amazon SQS queue where the data is written.
+    * The URL of the SQS queue where the data is written.
     */
   var queueUrl: QueueUrl = js.native
   /**

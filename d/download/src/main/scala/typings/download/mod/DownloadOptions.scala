@@ -82,6 +82,7 @@ object DownloadOptions {
     key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     localAddress: String = null,
     map: /* file */ File => File = null,
+    maxHeaderSize: Int | Double = null,
     maxVersion: SecureVersion = null,
     method: String = null,
     minVersion: SecureVersion = null,
@@ -142,6 +143,7 @@ object DownloadOptions {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
+    if (maxHeaderSize != null) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.asInstanceOf[js.Any])
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])

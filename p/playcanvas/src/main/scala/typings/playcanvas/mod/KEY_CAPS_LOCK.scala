@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.KEY_CAPS_LOCK
   */
 @JSImport("playcanvas", "KEY_CAPS_LOCK")

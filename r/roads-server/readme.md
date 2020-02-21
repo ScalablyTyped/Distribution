@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads-server
 
-Typings are for version 1.0
+Typings are for version 1.0.1
 
 ## Library description:
 A simple web server for the roads framework
@@ -24,7 +24,7 @@ A simple web server for the roads framework
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

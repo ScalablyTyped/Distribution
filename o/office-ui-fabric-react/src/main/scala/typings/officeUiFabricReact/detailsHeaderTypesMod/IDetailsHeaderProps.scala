@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.detailsHeaderTypesMod
 
+import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnRenderTooltipProps
 import typings.officeUiFabricReact.detailsHeaderBaseMod.DetailsHeaderBase
 import typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility
 import typings.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode
@@ -8,7 +9,6 @@ import typings.officeUiFabricReact.detailsListTypesMod.IColumnReorderOptions
 import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsCheckboxProps
 import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
 import typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility
-import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.officeUiFabricReact.withViewportMod.IViewport
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
@@ -72,7 +72,9 @@ object IDetailsHeaderProps {
     onColumnContextMenu: (/* column */ IColumn, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit = null,
     onColumnIsSizingChanged: (/* column */ IColumn, /* isSizing */ Boolean) => Unit = null,
     onColumnResized: (/* column */ IColumn, /* newWidth */ Double, /* columnIndex */ Double) => Unit = null,
-    onRenderColumnHeaderTooltip: (/* props */ js.UndefOr[ITooltipHostProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITooltipHostProps], Element | Null]]) => Element | Null = null,
+    onRenderColumnHeaderTooltip: (/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], /* defaultRender */ js.UndefOr[
+      js.Function1[/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], Element | Null]
+    ]) => Element | Null = null,
     onRenderDetailsCheckbox: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => Element | Null = null,
     onToggleCollapseAll: /* isAllCollapsed */ Boolean => Unit = null,
     ref: LegacyRef[DetailsHeaderBase] = null,

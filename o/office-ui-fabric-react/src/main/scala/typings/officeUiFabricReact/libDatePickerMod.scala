@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object libDatePickerMod extends js.Object {
     def this(props: IDatePickerProps) = this()
   }
   
-  val DatePicker: StatelessComponent[IDatePickerProps] = js.native
+  val DatePicker: FunctionComponent[IDatePickerProps] = js.native
   /* static members */
   @js.native
   object DatePickerBase extends js.Object {

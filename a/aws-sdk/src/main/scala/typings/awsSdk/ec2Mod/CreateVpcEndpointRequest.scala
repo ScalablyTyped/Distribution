@@ -39,6 +39,10 @@ trait CreateVpcEndpointRequest extends js.Object {
     */
   var SubnetIds: js.UndefOr[ValueStringList] = js.native
   /**
+    * The tags to associate with the endpoint.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The type of endpoint. Default: Gateway
     */
   var VpcEndpointType: js.UndefOr[typings.awsSdk.ec2Mod.VpcEndpointType] = js.native
@@ -60,6 +64,7 @@ object CreateVpcEndpointRequest {
     RouteTableIds: ValueStringList = null,
     SecurityGroupIds: ValueStringList = null,
     SubnetIds: ValueStringList = null,
+    TagSpecifications: TagSpecificationList = null,
     VpcEndpointType: VpcEndpointType = null
   ): CreateVpcEndpointRequest = {
     val __obj = js.Dynamic.literal(ServiceName = ServiceName.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
@@ -70,6 +75,7 @@ object CreateVpcEndpointRequest {
     if (RouteTableIds != null) __obj.updateDynamic("RouteTableIds")(RouteTableIds.asInstanceOf[js.Any])
     if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     if (VpcEndpointType != null) __obj.updateDynamic("VpcEndpointType")(VpcEndpointType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcEndpointRequest]
   }

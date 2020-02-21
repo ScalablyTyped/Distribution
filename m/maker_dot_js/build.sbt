@@ -1,18 +1,17 @@
 organization := "org.scalablytyped"
 name := "maker_dot_js"
-version := "0.9.33-dt-20190322Z-b9e7a4"
-scalaVersion := "2.12.10"
+version := "0.9.33-dt-20190322Z-b8f256"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bezier-js" % "0.0-unknown-dt-20190322Z-d42bed",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "opentype_dot_js" % "0.7-dt-20190212Z-2b28b0",
-  "org.scalablytyped" %%% "pdfkit" % "v0.10.0-dt-20191226Z-afad9c",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "bezier-js" % "0.0-unknown-dt-20190322Z-db6f6b",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "opentype_dot_js" % "0.7-dt-20190212Z-018d67",
+  "org.scalablytyped" %%% "pdfkit" % "v0.10.0-dt-20191226Z-dd9757",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

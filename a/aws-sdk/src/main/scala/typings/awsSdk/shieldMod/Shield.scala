@@ -39,6 +39,19 @@ trait Shield extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateDRTRoleResponse, scala.Unit]
   ): Request[AssociateDRTRoleResponse, AWSError] = js.native
   /**
+    * Adds health-based detection to the Shield Advanced protection for a resource. Shield Advanced health-based detection uses the health of your AWS resource to improve responsiveness and accuracy in attack detection and mitigation.  You define the health check in Route 53 and then associate it with your Shield Advanced protection. For more information, see Shield Advanced Health-Based Detection in the AWS WAF and AWS Shield Developer Guide. 
+    */
+  def associateHealthCheck(): Request[AssociateHealthCheckResponse, AWSError] = js.native
+  def associateHealthCheck(callback: js.Function2[/* err */ AWSError, /* data */ AssociateHealthCheckResponse, scala.Unit]): Request[AssociateHealthCheckResponse, AWSError] = js.native
+  /**
+    * Adds health-based detection to the Shield Advanced protection for a resource. Shield Advanced health-based detection uses the health of your AWS resource to improve responsiveness and accuracy in attack detection and mitigation.  You define the health check in Route 53 and then associate it with your Shield Advanced protection. For more information, see Shield Advanced Health-Based Detection in the AWS WAF and AWS Shield Developer Guide. 
+    */
+  def associateHealthCheck(params: AssociateHealthCheckRequest): Request[AssociateHealthCheckResponse, AWSError] = js.native
+  def associateHealthCheck(
+    params: AssociateHealthCheckRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateHealthCheckResponse, scala.Unit]
+  ): Request[AssociateHealthCheckResponse, AWSError] = js.native
+  /**
     * Enables AWS Shield Advanced for a specific AWS resource. The resource can be an Amazon CloudFront distribution, Elastic Load Balancing load balancer, AWS Global Accelerator accelerator, Elastic IP Address, or an Amazon Route 53 hosted zone. You can add protection to only a single resource with each CreateProtection request. If you want to add protection to multiple resources at once, use the AWS WAF console. For more information see Getting Started with AWS Shield Advanced and Add AWS Shield Advanced Protection to more AWS Resources.
     */
   def createProtection(): Request[CreateProtectionResponse, AWSError] = js.native
@@ -185,6 +198,19 @@ trait Shield extends Service {
     params: DisassociateDRTRoleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateDRTRoleResponse, scala.Unit]
   ): Request[DisassociateDRTRoleResponse, AWSError] = js.native
+  /**
+    * Removes health-based detection from the Shield Advanced protection for a resource. Shield Advanced health-based detection uses the health of your AWS resource to improve responsiveness and accuracy in attack detection and mitigation.  You define the health check in Route 53 and then associate or disassociate it with your Shield Advanced protection. For more information, see Shield Advanced Health-Based Detection in the AWS WAF and AWS Shield Developer Guide. 
+    */
+  def disassociateHealthCheck(): Request[DisassociateHealthCheckResponse, AWSError] = js.native
+  def disassociateHealthCheck(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateHealthCheckResponse, scala.Unit]): Request[DisassociateHealthCheckResponse, AWSError] = js.native
+  /**
+    * Removes health-based detection from the Shield Advanced protection for a resource. Shield Advanced health-based detection uses the health of your AWS resource to improve responsiveness and accuracy in attack detection and mitigation.  You define the health check in Route 53 and then associate or disassociate it with your Shield Advanced protection. For more information, see Shield Advanced Health-Based Detection in the AWS WAF and AWS Shield Developer Guide. 
+    */
+  def disassociateHealthCheck(params: DisassociateHealthCheckRequest): Request[DisassociateHealthCheckResponse, AWSError] = js.native
+  def disassociateHealthCheck(
+    params: DisassociateHealthCheckRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateHealthCheckResponse, scala.Unit]
+  ): Request[DisassociateHealthCheckResponse, AWSError] = js.native
   /**
     * Returns the SubscriptionState, either Active or Inactive.
     */

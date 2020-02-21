@@ -179,7 +179,7 @@ trait Tooltip_ extends js.Object {
     *
     * @default 5
     */
-  var padding: js.UndefOr[Double] = js.undefined
+  var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
   /**
     * The position of the tooltip's floating layer,
     * which would follow the position of mouse by default.
@@ -319,7 +319,7 @@ object Tooltip_ {
     extraCssText: String = null,
     formatter: String | Formatter = null,
     hideDelay: Int | Double = null,
-    padding: Int | Double = null,
+    padding: Double | js.Array[Double] = null,
     position: Type = null,
     renderMode: html = null,
     show: js.UndefOr[Boolean] = js.undefined,

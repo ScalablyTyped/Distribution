@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-fs" : "2.16.2"
+      "react-native-fs" : "2.16.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-fs" : "2.16.2"
+      "react-native-fs" : "2.16.4"
     }
   ],
   "compile-devDependencies" : [

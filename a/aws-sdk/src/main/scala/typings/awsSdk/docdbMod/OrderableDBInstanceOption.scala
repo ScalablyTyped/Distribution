@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait OrderableDBInstanceOption extends js.Object {
   /**
-    * A list of Availability Zones for a DB instance.
+    * A list of Availability Zones for an instance.
     */
   var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.native
   /**
-    * The DB instance class for a DB instance.
+    * The instance class for an instance.
     */
   var DBInstanceClass: js.UndefOr[String] = js.native
   /**
-    * The engine type of a DB instance.
+    * The engine type of an instance.
     */
   var Engine: js.UndefOr[String] = js.native
   /**
-    * The engine version of a DB instance.
+    * The engine version of an instance.
     */
   var EngineVersion: js.UndefOr[String] = js.native
   /**
-    * The license model for a DB instance.
+    * The license model for an instance.
     */
   var LicenseModel: js.UndefOr[String] = js.native
   /**
-    * Indicates whether a DB instance is in a virtual private cloud (VPC).
+    * Indicates whether an instance is in a virtual private cloud (VPC).
     */
   var Vpc: js.UndefOr[Boolean] = js.native
 }

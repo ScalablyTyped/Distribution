@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait WorkbookAutoSaveSettingChangedEventArgs extends js.Object {
   /**
     *
-    * Represents the type of the event. See Excel.EventType for details.
+    * Gets the type of the event. See Excel.EventType for details.
     *
     * [Api set: ExcelApi 1.9]
     */

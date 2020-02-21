@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 object octokitEndpointStrings {
   @js.native
-  sealed trait `5Dot5Dot1` extends js.Object
+  sealed trait `5Dot5Dot2` extends js.Object
   
   @scala.inline
-  def `5Dot5Dot1`: `5Dot5Dot1` = "5.5.1".asInstanceOf[`5Dot5Dot1`]
+  def `5Dot5Dot2`: `5Dot5Dot2` = "5.5.2".asInstanceOf[`5Dot5Dot2`]
 }
 

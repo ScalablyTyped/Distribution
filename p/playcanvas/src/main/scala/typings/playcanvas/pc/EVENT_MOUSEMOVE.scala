@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_MOUSEMOVE
-  * @description Name of event fired when the mouse is moved
+  * @description Name of event fired when the mouse is moved.
   */
 @JSGlobal("pc.EVENT_MOUSEMOVE")
 @js.native

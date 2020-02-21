@@ -12,11 +12,11 @@ trait ChartLegend extends js.Object {
   var inactiveItems: js.UndefOr[ChartLegendInactiveItems] = js.undefined
   var item: js.UndefOr[ChartLegendItem] = js.undefined
   var labels: js.UndefOr[ChartLegendLabels] = js.undefined
-  var margin: js.UndefOr[ChartLegendMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartLegendMargin] = js.undefined
   var offsetX: js.UndefOr[Double] = js.undefined
   var offsetY: js.UndefOr[Double] = js.undefined
   var orientation: js.UndefOr[String] = js.undefined
-  var padding: js.UndefOr[ChartLegendPadding] = js.undefined
+  var padding: js.UndefOr[Double | ChartLegendPadding] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
   var spacing: js.UndefOr[Double] = js.undefined
@@ -34,11 +34,11 @@ object ChartLegend {
     inactiveItems: ChartLegendInactiveItems = null,
     item: ChartLegendItem = null,
     labels: ChartLegendLabels = null,
-    margin: ChartLegendMargin = null,
+    margin: Double | ChartLegendMargin = null,
     offsetX: Int | Double = null,
     offsetY: Int | Double = null,
     orientation: String = null,
-    padding: ChartLegendPadding = null,
+    padding: Double | ChartLegendPadding = null,
     position: String = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
     spacing: Int | Double = null,

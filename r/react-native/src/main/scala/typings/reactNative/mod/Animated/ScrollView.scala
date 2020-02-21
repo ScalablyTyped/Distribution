@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native", "Animated.ScrollView")
 @js.native
 object ScrollView
-  extends TopLevel[js.Any]
+  extends TopLevel[AnimatedComponent[typings.reactNative.mod.ScrollView]]
 

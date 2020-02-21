@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TONEMAP_ACES2
+  * @type {number}
   * @description ACES v2 filmic tonemapping curve.
   */
 @JSImport("playcanvas", "TONEMAP_ACES2")

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * ## Defaults
   *
   *     const defaultOpts = {
+  *       initialFormData: new FormData(),
   *       showLeafArrayIndexes: true,
   *       includeNullValues: false,
   *       mapping: value => {
@@ -41,6 +42,11 @@ trait FormatOptions extends js.Object {
     *
     */
   var includeNullValues: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Existing form data which values will be appended to  (default: `new FormData()`).
+    * This can be used to support environments that do not have a global FormData object.
+    */
+  var initialFormData: js.UndefOr[InitialFormData] = js.undefined
   /**
     * Modify outmost leaf values before calling formData.append. Default behaviour
     * is to output boolean values as '1'/'0' (true/false) and all other values
@@ -90,11 +96,13 @@ object FormatOptions {
   @scala.inline
   def apply(
     includeNullValues: js.UndefOr[Boolean] = js.undefined,
+    initialFormData: InitialFormData = null,
     mapping: /* value */ ValidJSONValue => String | Blob = null,
     showLeafArrayIndexes: js.UndefOr[Boolean] = js.undefined
   ): FormatOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(includeNullValues)) __obj.updateDynamic("includeNullValues")(includeNullValues.asInstanceOf[js.Any])
+    if (initialFormData != null) __obj.updateDynamic("initialFormData")(initialFormData.asInstanceOf[js.Any])
     if (mapping != null) __obj.updateDynamic("mapping")(js.Any.fromFunction1(mapping))
     if (!js.isUndefined(showLeafArrayIndexes)) __obj.updateDynamic("showLeafArrayIndexes")(showLeafArrayIndexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatOptions]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeDBClusterParameterGroupsMessage extends js.Object {
   /**
-    * The name of a specific DB cluster parameter group to return details for. Constraints:   If provided, must match the name of an existing DBClusterParameterGroup.  
+    * The name of a specific cluster parameter group to return details for. Constraints:   If provided, must match the name of an existing DBClusterParameterGroup.  
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.native
   /**

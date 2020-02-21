@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Logging extends js.Object {
   /**
-    * The S3 logging configuration.
+    * The Amazon S3 logging configuration.
     */
   var s3Logs: js.UndefOr[S3Logs] = js.native
 }

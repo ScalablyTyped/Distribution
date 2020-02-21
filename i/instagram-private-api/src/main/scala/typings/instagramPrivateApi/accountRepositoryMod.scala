@@ -25,6 +25,7 @@ object accountRepositoryMod extends js.Object {
     def create(hasUsernamePasswordEmailFirst_name: AnonEmail): js.Promise[_] = js.native
     def currentUser(): js.Promise[AccountRepositoryCurrentUserResponseUser] = js.native
     def editProfile(options: AccountEditProfileOptions): js.Promise[AccountRepositoryCurrentUserResponseUser] = js.native
+    def encryptPassword(password: String): AnonEncrypted = js.native
     def getPrefillCandidates(): js.Promise[_] = js.native
     def login(username: String, password: String): js.Promise[AccountRepositoryLoginResponseLoggedInUser] = js.native
     def logout(): js.Promise[StatusResponse] = js.native
@@ -44,7 +45,8 @@ object accountRepositoryMod extends js.Object {
   /* static members */
   @js.native
   object AccountRepository extends js.Object {
-    var createJazoest: js.Any = js.native
+    var accountDebug: js.Any = js.native
+    def createJazoest(input: String): String = js.native
   }
   
 }

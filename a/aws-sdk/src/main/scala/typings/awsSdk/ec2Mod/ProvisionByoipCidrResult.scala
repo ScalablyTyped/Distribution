@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProvisionByoipCidrResult extends js.Object {
   /**
-    * Information about the address pool.
+    * Information about the address range.
     */
   var ByoipCidr: js.UndefOr[typings.awsSdk.ec2Mod.ByoipCidr] = js.native
 }

@@ -17,6 +17,7 @@ trait DragulaOptions extends js.Object {
   ] = js.undefined
   var containers: js.UndefOr[js.Array[Element]] = js.undefined
   var copy: js.UndefOr[(js.Function2[/* el */ Element, /* source */ Element, Boolean]) | Boolean] = js.undefined
+  var copySortSource: js.UndefOr[Boolean] = js.undefined
   var delay: js.UndefOr[Boolean | Double] = js.undefined
   var direction: js.UndefOr[String] = js.undefined
   var ignoreInputTextSelection: js.UndefOr[Boolean] = js.undefined
@@ -44,6 +45,7 @@ object DragulaOptions {
     accepts: (/* el */ js.UndefOr[Element], /* target */ js.UndefOr[Element], /* source */ js.UndefOr[Element], /* sibling */ js.UndefOr[Element]) => Boolean = null,
     containers: js.Array[Element] = null,
     copy: (js.Function2[/* el */ Element, /* source */ Element, Boolean]) | Boolean = null,
+    copySortSource: js.UndefOr[Boolean] = js.undefined,
     delay: Boolean | Double = null,
     direction: String = null,
     ignoreInputTextSelection: js.UndefOr[Boolean] = js.undefined,
@@ -58,6 +60,7 @@ object DragulaOptions {
     if (accepts != null) __obj.updateDynamic("accepts")(js.Any.fromFunction4(accepts))
     if (containers != null) __obj.updateDynamic("containers")(containers.asInstanceOf[js.Any])
     if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
+    if (!js.isUndefined(copySortSource)) __obj.updateDynamic("copySortSource")(copySortSource.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreInputTextSelection)) __obj.updateDynamic("ignoreInputTextSelection")(ignoreInputTextSelection.asInstanceOf[js.Any])

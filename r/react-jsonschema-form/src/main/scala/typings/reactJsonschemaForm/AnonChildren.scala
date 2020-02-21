@@ -14,6 +14,7 @@ trait AnonChildren extends js.Object {
   var hasRemove: Boolean
   var hasToolbar: Boolean
   var index: Double
+  var key: String
   var readonly: Boolean
   def onDropIndexClick(index: Double): js.Function1[/* event */ js.Any, Unit]
   def onReorderClick(index: Double, newIndex: Double): js.Function1[/* event */ js.Any, Unit]
@@ -30,11 +31,12 @@ object AnonChildren {
     hasRemove: Boolean,
     hasToolbar: Boolean,
     index: Double,
+    key: String,
     onDropIndexClick: Double => js.Function1[/* event */ js.Any, Unit],
     onReorderClick: (Double, Double) => js.Function1[/* event */ js.Any, Unit],
     readonly: Boolean
   ): AnonChildren = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], hasMoveDown = hasMoveDown.asInstanceOf[js.Any], hasMoveUp = hasMoveUp.asInstanceOf[js.Any], hasRemove = hasRemove.asInstanceOf[js.Any], hasToolbar = hasToolbar.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], onDropIndexClick = js.Any.fromFunction1(onDropIndexClick), onReorderClick = js.Any.fromFunction2(onReorderClick), readonly = readonly.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], hasMoveDown = hasMoveDown.asInstanceOf[js.Any], hasMoveUp = hasMoveUp.asInstanceOf[js.Any], hasRemove = hasRemove.asInstanceOf[js.Any], hasToolbar = hasToolbar.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], onDropIndexClick = js.Any.fromFunction1(onDropIndexClick), onReorderClick = js.Any.fromFunction2(onReorderClick), readonly = readonly.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonChildren]
   }

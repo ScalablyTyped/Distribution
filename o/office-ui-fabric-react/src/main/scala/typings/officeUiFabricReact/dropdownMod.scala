@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
 import typings.officeUiFabricReact.selectableOptionTypesMod.SelectableOptionMenuItemType
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object dropdownMod extends js.Object {
     def this(props: IDropdownProps) = this()
   }
   
-  val Dropdown: StatelessComponent[IDropdownProps] = js.native
+  val Dropdown: FunctionComponent[IDropdownProps] = js.native
   /* static members */
   @js.native
   object DropdownBase extends js.Object {

@@ -448,12 +448,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RebootWorkspacesResult, Unit]
   ): Request[RebootWorkspacesResult, AWSError] = js.native
   /**
-    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, or UNHEALTHY. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
+    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, UNHEALTHY, or STOPPED. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
     */
   def rebuildWorkspaces(): Request[RebuildWorkspacesResult, AWSError] = js.native
   def rebuildWorkspaces(callback: js.Function2[/* err */ AWSError, /* data */ RebuildWorkspacesResult, Unit]): Request[RebuildWorkspacesResult, AWSError] = js.native
   /**
-    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, or UNHEALTHY. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
+    * Rebuilds the specified WorkSpace. You cannot rebuild a WorkSpace unless its state is AVAILABLE, ERROR, UNHEALTHY, or STOPPED. Rebuilding a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Rebuild a WorkSpace. This operation is asynchronous and returns before the WorkSpaces have been completely rebuilt.
     */
   def rebuildWorkspaces(params: RebuildWorkspacesRequest): Request[RebuildWorkspacesResult, AWSError] = js.native
   def rebuildWorkspaces(
@@ -474,12 +474,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterWorkspaceDirectoryResult, Unit]
   ): Request[RegisterWorkspaceDirectoryResult, AWSError] = js.native
   /**
-    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
+    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, UNHEALTHY, or STOPPED. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
     */
   def restoreWorkspace(): Request[RestoreWorkspaceResult, AWSError] = js.native
   def restoreWorkspace(callback: js.Function2[/* err */ AWSError, /* data */ RestoreWorkspaceResult, Unit]): Request[RestoreWorkspaceResult, AWSError] = js.native
   /**
-    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
+    * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, UNHEALTHY, or STOPPED. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
     */
   def restoreWorkspace(params: RestoreWorkspaceRequest): Request[RestoreWorkspaceResult, AWSError] = js.native
   def restoreWorkspace(

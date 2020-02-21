@@ -11,6 +11,10 @@ trait StackSet extends js.Object {
     */
   var AdministrationRoleARN: js.UndefOr[RoleARN_] = js.native
   /**
+    * [Service-managed permissions] Describes whether StackSets automatically deploys to AWS Organizations accounts that are added to a target organization or organizational unit (OU).
+    */
+  var AutoDeployment: js.UndefOr[typings.awsSdk.cloudformationMod.AutoDeployment] = js.native
+  /**
     * The capabilities that are allowed in the stack set. Some stack set templates might include resources that can affect permissions in your AWS account—for example, by creating new AWS Identity and Access Management (IAM) users. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates. 
     */
   var Capabilities: js.UndefOr[typings.awsSdk.cloudformationMod.Capabilities] = js.native
@@ -23,9 +27,17 @@ trait StackSet extends js.Object {
     */
   var ExecutionRoleName: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionRoleName] = js.native
   /**
+    * [Service-managed permissions] The organization root ID or organizational unit (OUs) IDs to which stacks in your stack set have been deployed.
+    */
+  var OrganizationalUnitIds: js.UndefOr[OrganizationalUnitIdList] = js.native
+  /**
     * A list of input parameters for a stack set.
     */
   var Parameters: js.UndefOr[typings.awsSdk.cloudformationMod.Parameters] = js.native
+  /**
+    * Describes how the IAM roles required for stack set operations are created.   With self-managed permissions, you must create the administrator and execution roles required to deploy to target accounts. For more information, see Grant Self-Managed Stack Set Permissions.   With service-managed permissions, StackSets automatically creates the IAM roles required to deploy to accounts managed by AWS Organizations. For more information, see Grant Service-Managed Stack Set Permissions.  
+    */
+  var PermissionModel: js.UndefOr[PermissionModels] = js.native
   /**
     * The Amazon Resource Number (ARN) of the stack set.
     */
@@ -60,10 +72,13 @@ object StackSet {
   @scala.inline
   def apply(
     AdministrationRoleARN: RoleARN_ = null,
+    AutoDeployment: AutoDeployment = null,
     Capabilities: Capabilities = null,
     Description: Description = null,
     ExecutionRoleName: ExecutionRoleName = null,
+    OrganizationalUnitIds: OrganizationalUnitIdList = null,
     Parameters: Parameters = null,
+    PermissionModel: PermissionModels = null,
     StackSetARN: StackSetARN = null,
     StackSetDriftDetectionDetails: StackSetDriftDetectionDetails = null,
     StackSetId: StackSetId = null,
@@ -74,10 +89,13 @@ object StackSet {
   ): StackSet = {
     val __obj = js.Dynamic.literal()
     if (AdministrationRoleARN != null) __obj.updateDynamic("AdministrationRoleARN")(AdministrationRoleARN.asInstanceOf[js.Any])
+    if (AutoDeployment != null) __obj.updateDynamic("AutoDeployment")(AutoDeployment.asInstanceOf[js.Any])
     if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (ExecutionRoleName != null) __obj.updateDynamic("ExecutionRoleName")(ExecutionRoleName.asInstanceOf[js.Any])
+    if (OrganizationalUnitIds != null) __obj.updateDynamic("OrganizationalUnitIds")(OrganizationalUnitIds.asInstanceOf[js.Any])
     if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
+    if (PermissionModel != null) __obj.updateDynamic("PermissionModel")(PermissionModel.asInstanceOf[js.Any])
     if (StackSetARN != null) __obj.updateDynamic("StackSetARN")(StackSetARN.asInstanceOf[js.Any])
     if (StackSetDriftDetectionDetails != null) __obj.updateDynamic("StackSetDriftDetectionDetails")(StackSetDriftDetectionDetails.asInstanceOf[js.Any])
     if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])

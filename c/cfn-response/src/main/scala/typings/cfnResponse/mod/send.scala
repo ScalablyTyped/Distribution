@@ -1,7 +1,7 @@
 package typings.cfnResponse.mod
 
-import typings.awsLambda.mod.CloudFormationCustomResourceEvent
-import typings.awsLambda.mod.Context
+import typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomResourceEvent
+import typings.awsLambda.handerMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

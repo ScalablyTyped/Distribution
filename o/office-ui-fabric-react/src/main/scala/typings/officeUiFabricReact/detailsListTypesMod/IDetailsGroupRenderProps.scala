@@ -31,6 +31,7 @@ object IDetailsGroupRenderProps {
     onRenderHeader: (/* props */ js.UndefOr[IDetailsGroupDividerProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsGroupDividerProps], Element | Null]]) => Element | Null = null,
     onRenderShowAll: (/* props */ js.UndefOr[IGroupShowAllProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IGroupShowAllProps], Element | Null]]) => Element | Null = null,
     onToggleCollapseAll: /* isAllCollapsed */ Boolean => Unit = null,
+    role: String = null,
     showAllProps: IGroupShowAllProps = null,
     showEmptyGroups: js.UndefOr[Boolean] = js.undefined
   ): IDetailsGroupRenderProps = {
@@ -44,6 +45,7 @@ object IDetailsGroupRenderProps {
     if (onRenderHeader != null) __obj.updateDynamic("onRenderHeader")(js.Any.fromFunction2(onRenderHeader))
     if (onRenderShowAll != null) __obj.updateDynamic("onRenderShowAll")(js.Any.fromFunction2(onRenderShowAll))
     if (onToggleCollapseAll != null) __obj.updateDynamic("onToggleCollapseAll")(js.Any.fromFunction1(onToggleCollapseAll))
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (showAllProps != null) __obj.updateDynamic("showAllProps")(showAllProps.asInstanceOf[js.Any])
     if (!js.isUndefined(showEmptyGroups)) __obj.updateDynamic("showEmptyGroups")(showEmptyGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsGroupRenderProps]

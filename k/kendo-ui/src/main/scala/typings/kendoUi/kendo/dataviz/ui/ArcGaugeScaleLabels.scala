@@ -10,8 +10,8 @@ trait ArcGaugeScaleLabels extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ArcGaugeScaleLabelsMargin] = js.undefined
-  var padding: js.UndefOr[ArcGaugeScaleLabelsPadding] = js.undefined
+  var margin: js.UndefOr[Double | ArcGaugeScaleLabelsMargin] = js.undefined
+  var padding: js.UndefOr[Double | ArcGaugeScaleLabelsPadding] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var template: js.UndefOr[String | js.Function] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -25,8 +25,8 @@ object ArcGaugeScaleLabels {
     color: String = null,
     font: String = null,
     format: String = null,
-    margin: ArcGaugeScaleLabelsMargin = null,
-    padding: ArcGaugeScaleLabelsPadding = null,
+    margin: Double | ArcGaugeScaleLabelsMargin = null,
+    padding: Double | ArcGaugeScaleLabelsPadding = null,
     position: String = null,
     template: String | js.Function = null,
     visible: js.UndefOr[Boolean] = js.undefined

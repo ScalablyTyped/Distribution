@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation._
   * @property useHTTPS {boolean=} - Indicates whether secure communication should be used, default is false
   */
 trait Options extends js.Object {
-  var app_code: String
-  var app_id: String
+  var apikey: String
   var baseUrl: js.UndefOr[Url] = js.undefined
   var useCIT: js.UndefOr[Boolean] = js.undefined
   var useHTTPS: js.UndefOr[Boolean] = js.undefined
@@ -23,13 +22,12 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    app_code: String,
-    app_id: String,
+    apikey: String,
     baseUrl: Url = null,
     useCIT: js.UndefOr[Boolean] = js.undefined,
     useHTTPS: js.UndefOr[Boolean] = js.undefined
   ): Options = {
-    val __obj = js.Dynamic.literal(app_code = app_code.asInstanceOf[js.Any], app_id = app_id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(apikey = apikey.asInstanceOf[js.Any])
     if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl.asInstanceOf[js.Any])
     if (!js.isUndefined(useCIT)) __obj.updateDynamic("useCIT")(useCIT.asInstanceOf[js.Any])
     if (!js.isUndefined(useHTTPS)) __obj.updateDynamic("useHTTPS")(useHTTPS.asInstanceOf[js.Any])

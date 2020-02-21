@@ -3,7 +3,6 @@ package typings.reactVirtualized.esCellMeasurerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.reactVirtualized.AnonMeasure
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +17,7 @@ trait CellMeasurerProps
   */
 /* key */ StringDictionary[js.Any] {
   var cache: CellMeasurerCacheInterface
-  var children: (js.Function1[/* props */ AnonMeasure, ReactNode]) | ReactNode
+  var children: (js.Function1[/* props */ CellMeasurerChildProps, ReactNode]) | ReactNode
   var columnIndex: js.UndefOr[Double] = js.undefined
   var index: js.UndefOr[Double] = js.undefined
   var parent: MeasuredCellParent
@@ -39,7 +38,7 @@ object CellMeasurerProps {
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
   /* key */ StringDictionary[js.Any] = null,
-    children: (js.Function1[/* props */ AnonMeasure, ReactNode]) | ReactNode = null,
+    children: (js.Function1[/* props */ CellMeasurerChildProps, ReactNode]) | ReactNode = null,
     columnIndex: Int | Double = null,
     index: Int | Double = null,
     rowIndex: Int | Double = null,

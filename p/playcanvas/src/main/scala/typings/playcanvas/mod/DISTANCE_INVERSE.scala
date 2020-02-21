@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.DISTANCE_INVERSE
-  * @description Inverse distance model
+  * @description Inverse distance model.
   */
 @JSImport("playcanvas", "DISTANCE_INVERSE")
 @js.native

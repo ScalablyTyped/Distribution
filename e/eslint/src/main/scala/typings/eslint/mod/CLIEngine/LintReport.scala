@@ -9,6 +9,7 @@ trait LintReport extends js.Object {
   var fixableErrorCount: Double
   var fixableWarningCount: Double
   var results: js.Array[LintResult]
+  var usedDeprecatedRules: js.Array[DeprecatedRuleUse]
   var warningCount: Double
 }
 
@@ -19,9 +20,10 @@ object LintReport {
     fixableErrorCount: Double,
     fixableWarningCount: Double,
     results: js.Array[LintResult],
+    usedDeprecatedRules: js.Array[DeprecatedRuleUse],
     warningCount: Double
   ): LintReport = {
-    val __obj = js.Dynamic.literal(errorCount = errorCount.asInstanceOf[js.Any], fixableErrorCount = fixableErrorCount.asInstanceOf[js.Any], fixableWarningCount = fixableWarningCount.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], warningCount = warningCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(errorCount = errorCount.asInstanceOf[js.Any], fixableErrorCount = fixableErrorCount.asInstanceOf[js.Any], fixableWarningCount = fixableWarningCount.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], usedDeprecatedRules = usedDeprecatedRules.asInstanceOf[js.Any], warningCount = warningCount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[LintReport]
   }

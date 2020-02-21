@@ -31,7 +31,6 @@ import scala.scalajs.js.annotation._
 // #endregion Suite "beforeAll" event
 // #region Suite "afterAll" event
 // #region Suite "beforeAll" event
-// #endregion Runner untyped events
 /**
   * Initialize a new `Suite` with the given `title` and `ctx`.
   *
@@ -458,6 +457,7 @@ class Suite_ protected () extends EventEmitter {
 @JSGlobal("Mocha.Suite")
 @js.native
 object Suite_ extends js.Object {
+  val constants: SuiteConstants = js.native
   /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
   def create(parent: ISuite, title: String): Suite_ = js.native
   /**

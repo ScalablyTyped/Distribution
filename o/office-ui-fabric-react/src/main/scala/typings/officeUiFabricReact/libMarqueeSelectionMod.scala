@@ -4,7 +4,7 @@ import typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionPro
 import typings.officeUiFabricReact.officeUiFabricReactStrings.change
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
 import scala.scalajs.js
@@ -31,7 +31,7 @@ object libMarqueeSelectionMod extends js.Object {
     def this(props: ISelectionZoneProps) = this()
   }
   
-  val MarqueeSelection: StatelessComponent[IMarqueeSelectionProps] = js.native
+  val MarqueeSelection: FunctionComponent[IMarqueeSelectionProps] = js.native
   val SELECTION_CHANGE: change = js.native
   @js.native
   object SelectionDirection extends js.Object {

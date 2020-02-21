@@ -1,16 +1,15 @@
 organization := "org.scalablytyped"
 name := "boxen"
-version := "4.2.0-502016"
-scalaVersion := "2.12.10"
+version := "4.2.0-e17d73"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cli-boxes" % "2.2.0-5165d7",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "type-fest" % "0.3.1-49516d")
+  "org.scalablytyped" %%% "cli-boxes" % "2.2.0-0b02f5",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "type-fest" % "0.3.1-e9874a")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

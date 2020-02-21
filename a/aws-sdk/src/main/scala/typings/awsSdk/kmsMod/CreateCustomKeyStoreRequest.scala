@@ -15,7 +15,7 @@ trait CreateCustomKeyStoreRequest extends js.Object {
     */
   var CustomKeyStoreName: CustomKeyStoreNameType = js.native
   /**
-    * Enter the password of the  kmsuser crypto user (CU) account in the specified AWS CloudHSM cluster. AWS KMS logs into the cluster as this user to manage key material on your behalf. This parameter tells AWS KMS the kmsuser account password; it does not change the password in the AWS CloudHSM cluster.
+    * Enter the password of the  kmsuser crypto user (CU) account in the specified AWS CloudHSM cluster. AWS KMS logs into the cluster as this user to manage key material on your behalf. The password must be a string of 7 to 32 characters. Its value is case sensitive. This parameter tells AWS KMS the kmsuser account password; it does not change the password in the AWS CloudHSM cluster.
     */
   var KeyStorePassword: KeyStorePasswordType = js.native
   /**

@@ -38,6 +38,7 @@ object mod extends js.Object {
     def this(header: js.Array[String]) = this()
     def this(header: String, options: js.Object) = this()
     def this(header: js.Array[String], options: js.Object) = this()
+    def this(header: Null, options: js.Object) = this()
     /**
       * Adds a cookie.
       * @param name Name of the cookie

@@ -1,165 +1,167 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
-import typings.octokitRest.mod.TeamsAddMemberLegacyParams
-import typings.octokitRest.mod.TeamsAddMemberLegacyResponse
-import typings.octokitRest.mod.TeamsAddMemberParams
-import typings.octokitRest.mod.TeamsAddMemberResponse
-import typings.octokitRest.mod.TeamsAddOrUpdateMembershipInOrgParams
-import typings.octokitRest.mod.TeamsAddOrUpdateMembershipInOrgResponse
-import typings.octokitRest.mod.TeamsAddOrUpdateMembershipLegacyParams
-import typings.octokitRest.mod.TeamsAddOrUpdateMembershipLegacyResponse
-import typings.octokitRest.mod.TeamsAddOrUpdateMembershipParams
-import typings.octokitRest.mod.TeamsAddOrUpdateMembershipResponse
-import typings.octokitRest.mod.TeamsAddOrUpdateProjectInOrgParams
-import typings.octokitRest.mod.TeamsAddOrUpdateProjectInOrgResponse
-import typings.octokitRest.mod.TeamsAddOrUpdateProjectLegacyParams
-import typings.octokitRest.mod.TeamsAddOrUpdateProjectLegacyResponse
-import typings.octokitRest.mod.TeamsAddOrUpdateProjectParams
-import typings.octokitRest.mod.TeamsAddOrUpdateProjectResponse
-import typings.octokitRest.mod.TeamsAddOrUpdateRepoInOrgParams
-import typings.octokitRest.mod.TeamsAddOrUpdateRepoLegacyParams
-import typings.octokitRest.mod.TeamsAddOrUpdateRepoParams
-import typings.octokitRest.mod.TeamsCheckManagesRepoInOrgParams
-import typings.octokitRest.mod.TeamsCheckManagesRepoInOrgResponse
-import typings.octokitRest.mod.TeamsCheckManagesRepoLegacyParams
-import typings.octokitRest.mod.TeamsCheckManagesRepoLegacyResponse
-import typings.octokitRest.mod.TeamsCheckManagesRepoParams
-import typings.octokitRest.mod.TeamsCheckManagesRepoResponse
-import typings.octokitRest.mod.TeamsCreateDiscussionCommentInOrgParams
-import typings.octokitRest.mod.TeamsCreateDiscussionCommentInOrgResponse
-import typings.octokitRest.mod.TeamsCreateDiscussionCommentLegacyParams
-import typings.octokitRest.mod.TeamsCreateDiscussionCommentLegacyResponse
-import typings.octokitRest.mod.TeamsCreateDiscussionCommentParams
-import typings.octokitRest.mod.TeamsCreateDiscussionCommentResponse
-import typings.octokitRest.mod.TeamsCreateDiscussionInOrgParams
-import typings.octokitRest.mod.TeamsCreateDiscussionInOrgResponse
-import typings.octokitRest.mod.TeamsCreateDiscussionLegacyParams
-import typings.octokitRest.mod.TeamsCreateDiscussionLegacyResponse
-import typings.octokitRest.mod.TeamsCreateDiscussionParams
-import typings.octokitRest.mod.TeamsCreateDiscussionResponse
-import typings.octokitRest.mod.TeamsCreateParams
-import typings.octokitRest.mod.TeamsCreateParamsDeprecatedPermission
-import typings.octokitRest.mod.TeamsCreateResponse
-import typings.octokitRest.mod.TeamsDeleteDiscussionCommentInOrgParams
-import typings.octokitRest.mod.TeamsDeleteDiscussionCommentLegacyParams
-import typings.octokitRest.mod.TeamsDeleteDiscussionCommentParams
-import typings.octokitRest.mod.TeamsDeleteDiscussionInOrgParams
-import typings.octokitRest.mod.TeamsDeleteDiscussionLegacyParams
-import typings.octokitRest.mod.TeamsDeleteDiscussionParams
-import typings.octokitRest.mod.TeamsDeleteInOrgParams
-import typings.octokitRest.mod.TeamsDeleteLegacyParams
-import typings.octokitRest.mod.TeamsDeleteParams
-import typings.octokitRest.mod.TeamsGetByNameParams
-import typings.octokitRest.mod.TeamsGetByNameResponse
-import typings.octokitRest.mod.TeamsGetDiscussionCommentInOrgParams
-import typings.octokitRest.mod.TeamsGetDiscussionCommentInOrgResponse
-import typings.octokitRest.mod.TeamsGetDiscussionCommentLegacyParams
-import typings.octokitRest.mod.TeamsGetDiscussionCommentLegacyResponse
-import typings.octokitRest.mod.TeamsGetDiscussionCommentParams
-import typings.octokitRest.mod.TeamsGetDiscussionCommentResponse
-import typings.octokitRest.mod.TeamsGetDiscussionInOrgParams
-import typings.octokitRest.mod.TeamsGetDiscussionInOrgResponse
-import typings.octokitRest.mod.TeamsGetDiscussionLegacyParams
-import typings.octokitRest.mod.TeamsGetDiscussionLegacyResponse
-import typings.octokitRest.mod.TeamsGetDiscussionParams
-import typings.octokitRest.mod.TeamsGetDiscussionResponse
-import typings.octokitRest.mod.TeamsGetLegacyParams
-import typings.octokitRest.mod.TeamsGetLegacyResponse
-import typings.octokitRest.mod.TeamsGetMemberLegacyParams
-import typings.octokitRest.mod.TeamsGetMemberParams
-import typings.octokitRest.mod.TeamsGetMembershipInOrgParams
-import typings.octokitRest.mod.TeamsGetMembershipInOrgResponse
-import typings.octokitRest.mod.TeamsGetMembershipLegacyParams
-import typings.octokitRest.mod.TeamsGetMembershipLegacyResponse
-import typings.octokitRest.mod.TeamsGetMembershipParams
-import typings.octokitRest.mod.TeamsGetMembershipResponse
-import typings.octokitRest.mod.TeamsGetParams
-import typings.octokitRest.mod.TeamsGetResponse
-import typings.octokitRest.mod.TeamsListChildInOrgParams
-import typings.octokitRest.mod.TeamsListChildInOrgResponse
-import typings.octokitRest.mod.TeamsListChildLegacyParams
-import typings.octokitRest.mod.TeamsListChildLegacyResponse
-import typings.octokitRest.mod.TeamsListChildParams
-import typings.octokitRest.mod.TeamsListChildResponse
-import typings.octokitRest.mod.TeamsListDiscussionCommentsInOrgParams
-import typings.octokitRest.mod.TeamsListDiscussionCommentsInOrgResponse
-import typings.octokitRest.mod.TeamsListDiscussionCommentsLegacyParams
-import typings.octokitRest.mod.TeamsListDiscussionCommentsLegacyResponse
-import typings.octokitRest.mod.TeamsListDiscussionCommentsParams
-import typings.octokitRest.mod.TeamsListDiscussionCommentsResponse
-import typings.octokitRest.mod.TeamsListDiscussionsInOrgParams
-import typings.octokitRest.mod.TeamsListDiscussionsInOrgResponse
-import typings.octokitRest.mod.TeamsListDiscussionsLegacyParams
-import typings.octokitRest.mod.TeamsListDiscussionsLegacyResponse
-import typings.octokitRest.mod.TeamsListDiscussionsParams
-import typings.octokitRest.mod.TeamsListDiscussionsResponse
-import typings.octokitRest.mod.TeamsListForAuthenticatedUserParams
-import typings.octokitRest.mod.TeamsListForAuthenticatedUserResponse
-import typings.octokitRest.mod.TeamsListMembersInOrgParams
-import typings.octokitRest.mod.TeamsListMembersInOrgResponse
-import typings.octokitRest.mod.TeamsListMembersLegacyParams
-import typings.octokitRest.mod.TeamsListMembersLegacyResponse
-import typings.octokitRest.mod.TeamsListMembersParams
-import typings.octokitRest.mod.TeamsListMembersResponse
-import typings.octokitRest.mod.TeamsListParams
-import typings.octokitRest.mod.TeamsListPendingInvitationsInOrgParams
-import typings.octokitRest.mod.TeamsListPendingInvitationsInOrgResponse
-import typings.octokitRest.mod.TeamsListPendingInvitationsLegacyParams
-import typings.octokitRest.mod.TeamsListPendingInvitationsLegacyResponse
-import typings.octokitRest.mod.TeamsListPendingInvitationsParams
-import typings.octokitRest.mod.TeamsListPendingInvitationsResponse
-import typings.octokitRest.mod.TeamsListProjectsInOrgParams
-import typings.octokitRest.mod.TeamsListProjectsInOrgResponse
-import typings.octokitRest.mod.TeamsListProjectsLegacyParams
-import typings.octokitRest.mod.TeamsListProjectsLegacyResponse
-import typings.octokitRest.mod.TeamsListProjectsParams
-import typings.octokitRest.mod.TeamsListProjectsResponse
-import typings.octokitRest.mod.TeamsListReposInOrgParams
-import typings.octokitRest.mod.TeamsListReposInOrgResponse
-import typings.octokitRest.mod.TeamsListReposLegacyParams
-import typings.octokitRest.mod.TeamsListReposLegacyResponse
-import typings.octokitRest.mod.TeamsListReposParams
-import typings.octokitRest.mod.TeamsListReposResponse
-import typings.octokitRest.mod.TeamsListResponse
-import typings.octokitRest.mod.TeamsRemoveMemberLegacyParams
-import typings.octokitRest.mod.TeamsRemoveMembershipInOrgParams
-import typings.octokitRest.mod.TeamsRemoveMembershipLegacyParams
-import typings.octokitRest.mod.TeamsRemoveProjectInOrgParams
-import typings.octokitRest.mod.TeamsRemoveProjectLegacyParams
-import typings.octokitRest.mod.TeamsRemoveProjectParams
-import typings.octokitRest.mod.TeamsRemoveRepoInOrgParams
-import typings.octokitRest.mod.TeamsRemoveRepoLegacyParams
-import typings.octokitRest.mod.TeamsRemoveRepoParams
-import typings.octokitRest.mod.TeamsReviewProjectInOrgParams
-import typings.octokitRest.mod.TeamsReviewProjectInOrgResponse
-import typings.octokitRest.mod.TeamsReviewProjectLegacyParams
-import typings.octokitRest.mod.TeamsReviewProjectLegacyResponse
-import typings.octokitRest.mod.TeamsReviewProjectParams
-import typings.octokitRest.mod.TeamsReviewProjectResponse
-import typings.octokitRest.mod.TeamsUpdateDiscussionCommentInOrgParams
-import typings.octokitRest.mod.TeamsUpdateDiscussionCommentInOrgResponse
-import typings.octokitRest.mod.TeamsUpdateDiscussionCommentLegacyParams
-import typings.octokitRest.mod.TeamsUpdateDiscussionCommentLegacyResponse
-import typings.octokitRest.mod.TeamsUpdateDiscussionCommentParams
-import typings.octokitRest.mod.TeamsUpdateDiscussionCommentResponse
-import typings.octokitRest.mod.TeamsUpdateDiscussionInOrgParams
-import typings.octokitRest.mod.TeamsUpdateDiscussionInOrgResponse
-import typings.octokitRest.mod.TeamsUpdateDiscussionLegacyParams
-import typings.octokitRest.mod.TeamsUpdateDiscussionLegacyResponse
-import typings.octokitRest.mod.TeamsUpdateDiscussionParams
-import typings.octokitRest.mod.TeamsUpdateDiscussionResponse
-import typings.octokitRest.mod.TeamsUpdateInOrgParams
-import typings.octokitRest.mod.TeamsUpdateInOrgParamsDeprecatedPermission
-import typings.octokitRest.mod.TeamsUpdateInOrgResponse
-import typings.octokitRest.mod.TeamsUpdateLegacyParams
-import typings.octokitRest.mod.TeamsUpdateLegacyParamsDeprecatedPermission
-import typings.octokitRest.mod.TeamsUpdateLegacyResponse
-import typings.octokitRest.mod.TeamsUpdateParams
-import typings.octokitRest.mod.TeamsUpdateParamsDeprecatedPermission
-import typings.octokitRest.mod.TeamsUpdateResponse
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
+import typings.octokitRest.mod.Octokit.TeamsAddMemberLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsAddMemberLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsAddMemberParams
+import typings.octokitRest.mod.Octokit.TeamsAddMemberResponse
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateMembershipInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateMembershipInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateMembershipLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateMembershipLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateMembershipParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateMembershipResponse
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateProjectInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateProjectInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateProjectLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateProjectLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateProjectParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateProjectResponse
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateRepoInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateRepoLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsAddOrUpdateRepoParams
+import typings.octokitRest.mod.Octokit.TeamsCheckManagesRepoInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsCheckManagesRepoInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsCheckManagesRepoLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsCheckManagesRepoLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsCheckManagesRepoParams
+import typings.octokitRest.mod.Octokit.TeamsCheckManagesRepoResponse
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionCommentInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionCommentInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionCommentLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionCommentLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionCommentParams
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionCommentResponse
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionParams
+import typings.octokitRest.mod.Octokit.TeamsCreateDiscussionResponse
+import typings.octokitRest.mod.Octokit.TeamsCreateParams
+import typings.octokitRest.mod.Octokit.TeamsCreateParamsDeprecatedPermission
+import typings.octokitRest.mod.Octokit.TeamsCreateResponse
+import typings.octokitRest.mod.Octokit.TeamsDeleteDiscussionCommentInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteDiscussionCommentLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteDiscussionCommentParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteDiscussionInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteDiscussionLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteDiscussionParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsDeleteParams
+import typings.octokitRest.mod.Octokit.TeamsGetByNameParams
+import typings.octokitRest.mod.Octokit.TeamsGetByNameResponse
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionCommentInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionCommentInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionCommentLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionCommentLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionCommentParams
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionCommentResponse
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionParams
+import typings.octokitRest.mod.Octokit.TeamsGetDiscussionResponse
+import typings.octokitRest.mod.Octokit.TeamsGetLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsGetLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsGetMemberLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsGetMemberParams
+import typings.octokitRest.mod.Octokit.TeamsGetMembershipInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsGetMembershipInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsGetMembershipLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsGetMembershipLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsGetMembershipParams
+import typings.octokitRest.mod.Octokit.TeamsGetMembershipResponse
+import typings.octokitRest.mod.Octokit.TeamsGetParams
+import typings.octokitRest.mod.Octokit.TeamsGetResponse
+import typings.octokitRest.mod.Octokit.TeamsListChildInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsListChildInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsListChildLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsListChildLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsListChildParams
+import typings.octokitRest.mod.Octokit.TeamsListChildResponse
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionCommentsInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionCommentsInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionCommentsLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionCommentsLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionCommentsParams
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionCommentsResponse
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionsInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionsInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionsLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionsLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionsParams
+import typings.octokitRest.mod.Octokit.TeamsListDiscussionsResponse
+import typings.octokitRest.mod.Octokit.TeamsListForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.TeamsListForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.TeamsListMembersInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsListMembersInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsListMembersLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsListMembersLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsListMembersParams
+import typings.octokitRest.mod.Octokit.TeamsListMembersResponse
+import typings.octokitRest.mod.Octokit.TeamsListParams
+import typings.octokitRest.mod.Octokit.TeamsListPendingInvitationsInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsListPendingInvitationsInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsListPendingInvitationsLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsListPendingInvitationsLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsListPendingInvitationsParams
+import typings.octokitRest.mod.Octokit.TeamsListPendingInvitationsResponse
+import typings.octokitRest.mod.Octokit.TeamsListProjectsInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsListProjectsInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsListProjectsLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsListProjectsLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsListProjectsParams
+import typings.octokitRest.mod.Octokit.TeamsListProjectsResponse
+import typings.octokitRest.mod.Octokit.TeamsListReposInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsListReposInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsListReposLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsListReposLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsListReposParams
+import typings.octokitRest.mod.Octokit.TeamsListReposResponse
+import typings.octokitRest.mod.Octokit.TeamsListResponse
+import typings.octokitRest.mod.Octokit.TeamsRemoveMemberLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveMemberParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveMembershipInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveMembershipLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveMembershipParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveProjectInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveProjectLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveProjectParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveRepoInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveRepoLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsRemoveRepoParams
+import typings.octokitRest.mod.Octokit.TeamsReviewProjectInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsReviewProjectInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsReviewProjectLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsReviewProjectLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsReviewProjectParams
+import typings.octokitRest.mod.Octokit.TeamsReviewProjectResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionCommentInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionCommentInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionCommentLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionCommentLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionCommentParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionCommentResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateDiscussionResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateInOrgParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateInOrgParamsDeprecatedPermission
+import typings.octokitRest.mod.Octokit.TeamsUpdateInOrgResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateLegacyParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateLegacyParamsDeprecatedPermission
+import typings.octokitRest.mod.Octokit.TeamsUpdateLegacyResponse
+import typings.octokitRest.mod.Octokit.TeamsUpdateParams
+import typings.octokitRest.mod.Octokit.TeamsUpdateParamsDeprecatedPermission
+import typings.octokitRest.mod.Octokit.TeamsUpdateResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -766,6 +768,20 @@ trait AnonAddMember extends js.Object {
   @JSName("removeMemberLegacy")
   var removeMemberLegacy_Original: AnonEndpointParamsAnyResponsePromiseRequestOptionsTeamsRemoveMemberLegacyParams = js.native
   /**
+    * The "Remove team member" endpoint (described below) is deprecated.
+    *
+    * We recommend using the [Remove team membership](https://developer.github.com/v3/teams/members/#remove-team-membership) endpoint instead. It allows you to remove both active and pending memberships.
+    *
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    *
+    * To remove a team member, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. Removing a team member does not delete the user, it just removes them from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
+    * @deprecated octokit.teams.removeMember() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-member-legacy
+    */
+  @JSName("removeMember")
+  var removeMember_Original: AnonEndpointParamsAnyResponsePromiseRequestOptionsTeamsRemoveMemberParams = js.native
+  /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. Removing team membership does not delete the user, it just removes their membership from the team.
@@ -788,6 +804,18 @@ trait AnonAddMember extends js.Object {
     */
   @JSName("removeMembershipLegacy")
   var removeMembershipLegacy_Original: AnonEndpointParamsAnyResponsePromiseRequestOptionsTeamsRemoveMembershipLegacyParams = js.native
+  /**
+    * **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [`Remove team membership`](https://developer.github.com/v3/teams/members/#remove-team-membership) endpoint.
+    *
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    *
+    * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. Removing team membership does not delete the user, it just removes their membership from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
+    * @deprecated octokit.teams.removeMembership() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-membership-legacy
+    */
+  @JSName("removeMembership")
+  var removeMembership_Original: AnonEndpointParamsAnyResponsePromiseRequestOptionsTeamsRemoveMembershipParams = js.native
   /**
     * Removes an organization project from a team. An organization owner or a team maintainer can remove any project from the team. To remove a project from a team as an organization member, the authenticated user must have `read` access to both the team and project, or `admin` access to the team or project. This endpoint removes the project from the team, but does not delete the project.
     *
@@ -1525,10 +1553,36 @@ trait AnonAddMember extends js.Object {
     * To remove a team member, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. Removing a team member does not delete the user, it just removes them from the team.
     *
     * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
+    * @deprecated octokit.teams.removeMember() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-member-legacy
+    */
+  def removeMember(): js.Promise[AnyResponse] = js.native
+  def removeMember(params: RequestOptions with TeamsRemoveMemberParams): js.Promise[AnyResponse] = js.native
+  /**
+    * The "Remove team member" endpoint (described below) is deprecated.
+    *
+    * We recommend using the [Remove team membership](https://developer.github.com/v3/teams/members/#remove-team-membership) endpoint instead. It allows you to remove both active and pending memberships.
+    *
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    *
+    * To remove a team member, the authenticated user must have 'admin' permissions to the team or be an owner of the org that the team is associated with. Removing a team member does not delete the user, it just removes them from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
     * @deprecated octokit.teams.removeMemberLegacy() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-member-legacy
     */
   def removeMemberLegacy(): js.Promise[AnyResponse] = js.native
   def removeMemberLegacy(params: RequestOptions with TeamsRemoveMemberLegacyParams): js.Promise[AnyResponse] = js.native
+  /**
+    * **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [`Remove team membership`](https://developer.github.com/v3/teams/members/#remove-team-membership) endpoint.
+    *
+    * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    *
+    * To remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. Removing team membership does not delete the user, it just removes their membership from the team.
+    *
+    * **Note:** When you have team synchronization set up for a team with your organization's identity provider (IdP), you will see an error if you attempt to use the API for making changes to the team's membership. If you have access to manage group membership in your IdP, you can manage GitHub team membership through your identity provider, which automatically adds and removes team members in an organization. For more information, see "[Synchronizing teams between your identity provider and GitHub](https://help.github.com/articles/synchronizing-teams-between-your-identity-provider-and-github/)."
+    * @deprecated octokit.teams.removeMembership() is deprecated, see https://developer.github.com/v3/teams/members/#remove-team-membership-legacy
+    */
+  def removeMembership(): js.Promise[AnyResponse] = js.native
+  def removeMembership(params: RequestOptions with TeamsRemoveMembershipParams): js.Promise[AnyResponse] = js.native
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *

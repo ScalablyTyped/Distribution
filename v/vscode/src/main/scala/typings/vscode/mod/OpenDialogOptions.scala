@@ -23,7 +23,7 @@ trait OpenDialogOptions extends js.Object {
   		 */
   var defaultUri: js.UndefOr[Uri] = js.undefined
   /**
-  		 * A set of file filters that are used by the dialog. Each entry is a human readable label,
+  		 * A set of file filters that are used by the dialog. Each entry is a human-readable label,
   		 * like "TypeScript", and an array of extensions, e.g.
   		 * ```ts
   		 * {

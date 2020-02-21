@@ -22,7 +22,13 @@ class Management protected () extends js.Object {
     */
   def linkUser(userId: String, secondaryUserToken: String, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
   /**
-    * Updates the user metdata. It will patch the user metdata with the attributes sent.
+    * Updates the user attributes.
+    * It will patch the root attributes that the server allows it.
+    * {@link https://auth0.com/docs/api/management/v2#!/Users/patch_users_by_id}
+    */
+  def patchUserAttributes(userId: String, user: Auth0UserProfile, callback: Auth0Callback[Auth0UserProfile, Auth0Error]): Unit = js.native
+  /**
+    * Updates the user metadata. It will patch the user metadata with the attributes sent.
     * https://auth0.com/docs/api/management/v2#!/Users/patch_users_by_id
     *
     */

@@ -11,7 +11,7 @@ trait MissionProfileListItem extends js.Object {
     */
   var missionProfileArn: js.UndefOr[MissionProfileArn] = js.native
   /**
-    * ID of a mission profile.
+    * UUID of a mission profile.
     */
   var missionProfileId: js.UndefOr[String] = js.native
   /**

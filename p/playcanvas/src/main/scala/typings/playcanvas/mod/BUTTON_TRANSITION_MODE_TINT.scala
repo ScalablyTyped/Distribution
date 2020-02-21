@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.BUTTON_TRANSITION_MODE_TINT
   * @description Specifies different color tints for the hover, pressed and inactive states.
   */

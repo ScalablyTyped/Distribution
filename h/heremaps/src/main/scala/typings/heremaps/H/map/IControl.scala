@@ -1,6 +1,6 @@
 package typings.heremaps.H.map
 
-import typings.heremaps.H.map.ViewModel.CameraData
+import typings.heremaps.H.map.ViewModel.ILookAtData
 import typings.heremaps.H.util.kinetics.IKinetics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,12 +46,12 @@ trait IControl extends js.Object {
     * This method ends current control, which will stop ongoing animation triggered by the startControl method. This method can prevent kinetics as well as it can adjust the final view if
     * the adjust function is being passed.
     * @param opt_preventKinetics {boolean=} - if set to true will prevent kinetics animation
-    * @param opt_adjustView {function(H.map.ViewModel.CameraData)=} - user defined function which can adjust the final view this function takes last requestedData from the view model and
+    * @param opt_adjustView {function(H.map.ViewModel.ILookAtData)=} - user defined function which can adjust the final view this function takes last requestedData from the view model and
     * should return a modified H.map.ViewModel.CameraData which will be set as the final view
     */
   def endControl(): Unit = js.native
   def endControl(opt_preventKinetics: Boolean): Unit = js.native
-  def endControl(opt_preventKinetics: Boolean, opt_adjustView: js.Function1[/* data */ CameraData, Unit]): Unit = js.native
+  def endControl(opt_preventKinetics: Boolean, opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]): Unit = js.native
   /**
     * This method starts control action for camera. This action allows to control camera animation and movement according to provided values in the H.map.IControl#control function
     * @param opt_kinetics {H.util.kinetics.IKinetics=} - kinetics settings

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.layerTypesMod.ILayerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object layerMod extends js.Object {
   class LayerHost ()
     extends typings.officeUiFabricReact.layerHostMod.LayerHost
   
-  val Layer: StatelessComponent[ILayerProps] = js.native
+  val Layer: FunctionComponent[ILayerProps] = js.native
   /* static members */
   @js.native
   object LayerBase extends js.Object {

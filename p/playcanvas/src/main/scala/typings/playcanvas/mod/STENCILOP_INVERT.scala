@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.STENCILOP_INVERT
+  * @type {number}
   * @description Invert the value bitwise.
   */
 @JSImport("playcanvas", "STENCILOP_INVERT")

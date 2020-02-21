@@ -28,7 +28,7 @@ trait CurrentUser extends js.Object {
   def sendMultipartMessage(params: SendMultipartMessageParams): js.Promise[Double]
   def sendSimpleMessage(params: SendSimpleMessageParams): js.Promise[Double]
   def setReadCursor(params: SetReadCursorParams): js.Promise[Unit]
-  def subscribeToRoomMultipart(params: RoomSubcriptionParams): js.Promise[Unit]
+  def subscribeToRoomMultipart(params: RoomSubcriptionParams): js.Promise[PusherRoom]
   def updateRoom(params: UpdateRoomParams): js.Promise[PusherRoom]
 }
 
@@ -52,7 +52,7 @@ object CurrentUser {
     sendMultipartMessage: SendMultipartMessageParams => js.Promise[Double],
     sendSimpleMessage: SendSimpleMessageParams => js.Promise[Double],
     setReadCursor: SetReadCursorParams => js.Promise[Unit],
-    subscribeToRoomMultipart: RoomSubcriptionParams => js.Promise[Unit],
+    subscribeToRoomMultipart: RoomSubcriptionParams => js.Promise[PusherRoom],
     updateRoom: UpdateRoomParams => js.Promise[PusherRoom],
     users: js.Array[PusherUser]
   ): CurrentUser = {

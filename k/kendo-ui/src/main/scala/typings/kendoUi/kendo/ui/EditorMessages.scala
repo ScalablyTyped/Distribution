@@ -24,6 +24,7 @@ trait EditorMessages extends js.Object {
   var alignRightMiddle: js.UndefOr[String] = js.undefined
   var alignRightTop: js.UndefOr[String] = js.undefined
   var alignment: js.UndefOr[String] = js.undefined
+  var applyFormat: js.UndefOr[String] = js.undefined
   var associateCellsWithHeaders: js.UndefOr[String] = js.undefined
   var backColor: js.UndefOr[String] = js.undefined
   var background: js.UndefOr[String] = js.undefined
@@ -37,6 +38,7 @@ trait EditorMessages extends js.Object {
   var cleanFormatting: js.UndefOr[String] = js.undefined
   var collapseBorders: js.UndefOr[String] = js.undefined
   var columns: js.UndefOr[String] = js.undefined
+  var copyFormat: js.UndefOr[String] = js.undefined
   var createLink: js.UndefOr[String] = js.undefined
   var createTable: js.UndefOr[String] = js.undefined
   var createTableHint: js.UndefOr[String] = js.undefined
@@ -120,6 +122,7 @@ object EditorMessages {
     alignRightMiddle: String = null,
     alignRightTop: String = null,
     alignment: String = null,
+    applyFormat: String = null,
     associateCellsWithHeaders: String = null,
     backColor: String = null,
     background: String = null,
@@ -133,6 +136,7 @@ object EditorMessages {
     cleanFormatting: String = null,
     collapseBorders: String = null,
     columns: String = null,
+    copyFormat: String = null,
     createLink: String = null,
     createTable: String = null,
     createTableHint: String = null,
@@ -213,6 +217,7 @@ object EditorMessages {
     if (alignRightMiddle != null) __obj.updateDynamic("alignRightMiddle")(alignRightMiddle.asInstanceOf[js.Any])
     if (alignRightTop != null) __obj.updateDynamic("alignRightTop")(alignRightTop.asInstanceOf[js.Any])
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (applyFormat != null) __obj.updateDynamic("applyFormat")(applyFormat.asInstanceOf[js.Any])
     if (associateCellsWithHeaders != null) __obj.updateDynamic("associateCellsWithHeaders")(associateCellsWithHeaders.asInstanceOf[js.Any])
     if (backColor != null) __obj.updateDynamic("backColor")(backColor.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
@@ -226,6 +231,7 @@ object EditorMessages {
     if (cleanFormatting != null) __obj.updateDynamic("cleanFormatting")(cleanFormatting.asInstanceOf[js.Any])
     if (collapseBorders != null) __obj.updateDynamic("collapseBorders")(collapseBorders.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (copyFormat != null) __obj.updateDynamic("copyFormat")(copyFormat.asInstanceOf[js.Any])
     if (createLink != null) __obj.updateDynamic("createLink")(createLink.asInstanceOf[js.Any])
     if (createTable != null) __obj.updateDynamic("createTable")(createTable.asInstanceOf[js.Any])
     if (createTableHint != null) __obj.updateDynamic("createTableHint")(createTableHint.asInstanceOf[js.Any])

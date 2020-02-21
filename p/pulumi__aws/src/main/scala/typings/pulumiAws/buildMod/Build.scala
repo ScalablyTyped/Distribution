@@ -1,5 +1,6 @@
 package typings.pulumiAws.buildMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.gamelift.BuildStorageLocation
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -23,6 +24,10 @@ class Build protected () extends CustomResource {
   def this(name: String, args: BuildArgs) = this()
   def this(name: String, args: BuildArgs, opts: CustomResourceOptions) = this()
   /**
+    * Gamelift Build ARN.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * Name of the build
     */
   val name: Output_[String] = js.native
@@ -34,6 +39,10 @@ class Build protected () extends CustomResource {
     * Information indicating where your game build files are stored. See below.
     */
   val storageLocation: Output_[BuildStorageLocation] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Version that is associated with this build.
     */

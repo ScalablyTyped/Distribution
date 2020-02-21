@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait OptionListProps extends js.Object {
+trait OptionListProps extends BaseMenuPropsT {
   @JSName("$isFocused")
   var $isFocused: js.UndefOr[Boolean] = js.native
   @JSName("$isHighlighted")

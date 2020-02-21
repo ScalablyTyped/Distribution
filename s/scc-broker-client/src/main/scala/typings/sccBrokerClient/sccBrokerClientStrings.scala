@@ -29,6 +29,12 @@ object sccBrokerClientStrings {
   @js.native
   sealed trait subscribeFail extends js.Object
   
+  @js.native
+  sealed trait updateBrokers extends js.Object
+  
+  @js.native
+  sealed trait updateWorkers extends js.Object
+  
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
@@ -45,5 +51,9 @@ object sccBrokerClientStrings {
   def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   @scala.inline
   def subscribeFail: subscribeFail = "subscribeFail".asInstanceOf[subscribeFail]
+  @scala.inline
+  def updateBrokers: updateBrokers = "updateBrokers".asInstanceOf[updateBrokers]
+  @scala.inline
+  def updateWorkers: updateWorkers = "updateWorkers".asInstanceOf[updateWorkers]
 }
 

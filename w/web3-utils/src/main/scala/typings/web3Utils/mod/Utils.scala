@@ -67,9 +67,10 @@ trait Utils extends js.Object {
   def rightPad(string: String, characterAmount: Double, sign: String): String = js.native
   def rightPad(string: Double, characterAmount: Double): String = js.native
   def rightPad(string: Double, characterAmount: Double, sign: String): String = js.native
-  def sha3(value: String): String = js.native
-  def sha3(value: ^): String = js.native
-  def soliditySha3(`val`: Mixed*): String = js.native
+  def sha3(value: String): String | Null = js.native
+  def sha3(value: ^): String | Null = js.native
+  def soliditySha3(`val`: Mixed*): String | Null = js.native
+  def soliditySha3Raw(`val`: Mixed*): String = js.native
   def stringToHex(string: String): String = js.native
   def stripHexPrefix(str: String): String = js.native
   def testAddress(bloom: String, address: String): Boolean = js.native

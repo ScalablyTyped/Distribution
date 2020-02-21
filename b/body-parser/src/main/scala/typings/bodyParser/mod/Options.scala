@@ -8,9 +8,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /** When set to true, then deflated (compressed) bodies will be inflated; when false, deflated bodies are rejected. Defaults to true. */
   var inflate: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Controls the maximum request body size. If this is a number,
+    * then the value specifies the number of bytes; if it is a string,
+    * the value is passed to the bytes library for parsing. Defaults to '100kb'.
+    */
   var limit: js.UndefOr[Double | String] = js.undefined
+  /**
+    * The type option is used to determine what media type the middleware will parse
+    */
   var `type`: js.UndefOr[String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, _])] = js.undefined
+  /**
+    * The verify option, if supplied, is called as verify(req, res, buf, encoding),
+    * where buf is a Buffer of the raw request body and encoding is the encoding of the request.
+    */
   var verify: js.UndefOr[
     js.Function4[
       /* req */ IncomingMessage, 

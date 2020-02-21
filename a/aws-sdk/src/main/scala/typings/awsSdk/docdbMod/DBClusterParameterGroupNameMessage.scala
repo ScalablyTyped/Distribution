@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBClusterParameterGroupNameMessage extends js.Object {
   /**
-    * The name of a DB cluster parameter group. Constraints:   Must be from 1 to 255 letters or numbers.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.    This value is stored as a lowercase string. 
+    * The name of a cluster parameter group. Constraints:   Must be from 1 to 255 letters or numbers.   The first character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.    This value is stored as a lowercase string. 
     */
   var DBClusterParameterGroupName: js.UndefOr[String] = js.native
 }

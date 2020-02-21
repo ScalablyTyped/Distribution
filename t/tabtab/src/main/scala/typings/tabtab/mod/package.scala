@@ -5,6 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type CompleteItemOrString = java.lang.String | typings.tabtab.mod.CompleteItem
-  type Json = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type CompleteItemOrString = java.lang.String | typings.tabtab.mod.CompletionItem_
 }

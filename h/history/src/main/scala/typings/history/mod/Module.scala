@@ -1,6 +1,7 @@
 package typings.history.mod
 
 import typings.history.FnCurrentLocation
+import typings.history.FnLocation
 import typings.history.FnLv
 import typings.history.FnOptions
 import typings.history.FnOptionsHashHistoryBuildOptions
@@ -24,7 +25,7 @@ trait Module extends js.Object {
   @JSName("createMemoryHistory")
   var createMemoryHistory_Original: FnOptionsLocationState = js.native
   @JSName("createPath")
-  var createPath_Original: js.Function1[/* location */ LocationDescriptorObject[LocationState], Path] = js.native
+  var createPath_Original: FnLocation = js.native
   @JSName("locationsAreEqual")
   var locationsAreEqual_Original: FnLv = js.native
   @JSName("parsePath")
@@ -39,7 +40,7 @@ trait Module extends js.Object {
   def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = js.native
   def createMemoryHistory[S](): MemoryHistory[S] = js.native
   def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = js.native
-  def createPath(location: LocationDescriptorObject[LocationState]): Path = js.native
+  def createPath[S](location: LocationDescriptorObject[S]): Path = js.native
   def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = js.native
   def parsePath(path: Path): Location[LocationState] = js.native
 }

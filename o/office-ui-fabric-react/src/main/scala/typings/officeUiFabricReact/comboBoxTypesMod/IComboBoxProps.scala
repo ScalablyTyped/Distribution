@@ -208,6 +208,10 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
     ]
   ] = js.undefined
   /**
+    * Custom render function for the label text.
+    */
+  var onRenderLabel: js.UndefOr[IRenderFunction[IOnRenderComboBoxLabelProps]] = js.undefined
+  /**
     * Add additional content below the callout list.
     */
   var onRenderLowerContent: js.UndefOr[IRenderFunction[IComboBoxProps]] = js.undefined
@@ -448,6 +452,9 @@ object IComboBoxProps {
       ]
     ]) => Element | Null = null,
     onRenderItem: (/* props */ js.UndefOr[ISelectableOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ISelectableOption], Element | Null]]) => Element | Null = null,
+    onRenderLabel: (/* props */ js.UndefOr[IOnRenderComboBoxLabelProps], /* defaultRender */ js.UndefOr[
+      js.Function1[/* props */ js.UndefOr[IOnRenderComboBoxLabelProps], Element | Null]
+    ]) => Element | Null = null,
     onRenderList: (/* props */ js.UndefOr[ISelectableDroppableTextProps[IComboBox, IComboBox]], /* defaultRender */ js.UndefOr[
       js.Function1[
         /* props */ js.UndefOr[ISelectableDroppableTextProps[IComboBox, IComboBox]], 
@@ -674,6 +681,7 @@ object IComboBoxProps {
     if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
     if (onRenderContainer != null) __obj.updateDynamic("onRenderContainer")(js.Any.fromFunction2(onRenderContainer))
     if (onRenderItem != null) __obj.updateDynamic("onRenderItem")(js.Any.fromFunction2(onRenderItem))
+    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
     if (onRenderList != null) __obj.updateDynamic("onRenderList")(js.Any.fromFunction2(onRenderList))
     if (onRenderLowerContent != null) __obj.updateDynamic("onRenderLowerContent")(js.Any.fromFunction2(onRenderLowerContent))
     if (onRenderOption != null) __obj.updateDynamic("onRenderOption")(js.Any.fromFunction2(onRenderOption))

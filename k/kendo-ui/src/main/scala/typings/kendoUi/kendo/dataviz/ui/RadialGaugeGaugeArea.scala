@@ -8,7 +8,7 @@ trait RadialGaugeGaugeArea extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var border: js.UndefOr[RadialGaugeGaugeAreaBorder] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[RadialGaugeGaugeAreaMargin] = js.undefined
+  var margin: js.UndefOr[Double | RadialGaugeGaugeAreaMargin] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object RadialGaugeGaugeArea {
     background: String = null,
     border: RadialGaugeGaugeAreaBorder = null,
     height: Int | Double = null,
-    margin: RadialGaugeGaugeAreaMargin = null,
+    margin: Double | RadialGaugeGaugeAreaMargin = null,
     width: Int | Double = null
   ): RadialGaugeGaugeArea = {
     val __obj = js.Dynamic.literal()

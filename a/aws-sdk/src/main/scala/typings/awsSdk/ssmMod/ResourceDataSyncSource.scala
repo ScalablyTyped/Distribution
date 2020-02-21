@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceDataSyncSource extends js.Object {
   /**
-    * The field name in SyncSource for the ResourceDataSyncAwsOrganizationsSource type.
+    * Information about the AwsOrganizationsSource resource data sync source. A sync source of this type can synchronize data from AWS Organizations.
     */
   var AwsOrganizationsSource: js.UndefOr[ResourceDataSyncAwsOrganizationsSource] = js.native
   /**

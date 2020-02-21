@@ -27,6 +27,9 @@ package object kmsMod {
     - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
     - typings.awsSdk.awsSdkStrings.INSUFFICIENT_CLOUDHSM_HSMS
     - typings.awsSdk.awsSdkStrings.USER_LOCKED_OUT
+    - typings.awsSdk.awsSdkStrings.USER_NOT_FOUND
+    - typings.awsSdk.awsSdkStrings.USER_LOGGED_IN
+    - typings.awsSdk.awsSdkStrings.SUBNET_NOT_FOUND
     - java.lang.String
   */
   type ConnectionErrorCodeType = typings.awsSdk.kmsMod._ConnectionErrorCodeType | java.lang.String

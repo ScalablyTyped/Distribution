@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui
 
-Typings are for version 0.2
+Typings are for version 0.3
 
 ## Library description:
 Build consistent, themeable React UIs based on design system constraints

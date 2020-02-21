@@ -13,7 +13,6 @@ import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.StatelessComponent
 import typings.std.HTMLElement
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptions
 import typings.uifabricUtilities.selectionSelectionMod.ISelectionOptionsWithRequiredGetKey
@@ -65,10 +64,10 @@ object detailsListMod extends js.Object {
     def this(props: ISelectionZoneProps) = this()
   }
   
-  val DetailsHeader: StatelessComponent[IDetailsHeaderBaseProps] = js.native
-  val DetailsList: StatelessComponent[IDetailsListProps] = js.native
-  val DetailsRow: StatelessComponent[IDetailsRowBaseProps] = js.native
-  val DetailsRowCheck: StatelessComponent[IDetailsRowCheckProps] = js.native
+  val DetailsHeader: FunctionComponent[IDetailsHeaderBaseProps] = js.native
+  val DetailsList: FunctionComponent[IDetailsListProps] = js.native
+  val DetailsRow: FunctionComponent[IDetailsRowBaseProps] = js.native
+  val DetailsRowCheck: FunctionComponent[IDetailsRowCheckProps] = js.native
   val DetailsRowFields: FunctionComponent[IDetailsRowFieldsProps] = js.native
   val SELECTION_CHANGE: change = js.native
   def buildColumns(

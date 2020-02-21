@@ -13,10 +13,13 @@ import scala.scalajs.js.annotation._
   - typings.pulumiAws.pulumiAwsStrings.fluentd
   - typings.pulumiAws.pulumiAwsStrings.awslogs
   - typings.pulumiAws.pulumiAwsStrings.splunk
+  - typings.pulumiAws.pulumiAwsStrings.awsfirelens
 */
 trait LogDriver extends js.Object
 
 object LogDriver {
+  @scala.inline
+  def awsfirelens: typings.pulumiAws.pulumiAwsStrings.awsfirelens = this.cast("awsfirelens")
   @scala.inline
   def awslogs: typings.pulumiAws.pulumiAwsStrings.awslogs = this.cast("awslogs")
   @scala.inline

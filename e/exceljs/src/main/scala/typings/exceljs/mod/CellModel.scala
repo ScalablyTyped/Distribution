@@ -9,7 +9,7 @@ trait CellModel extends js.Object {
   var comment: Comment
   var formula: js.UndefOr[String] = js.undefined
   var hyperlink: js.UndefOr[String] = js.undefined
-  var master: Cell
+  var master: String
   var result: js.UndefOr[String | Double | js.Any] = js.undefined
   var sharedFormula: js.UndefOr[String] = js.undefined
   var style: Style
@@ -23,7 +23,7 @@ object CellModel {
   def apply(
     address: Address,
     comment: Comment,
-    master: Cell,
+    master: String,
     style: Style,
     `type`: ValueType,
     formula: String = null,

@@ -1,6 +1,6 @@
 package typings.relayCompiler
 
-import typings.relayCompiler.graphQLCompilerContextMod.GraphQLCompilerContext
+import typings.relayCompiler.compilerContextMod.CompilerContext
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +12,6 @@ object relayDirectiveTransformMod extends js.Object {
     * A transform that extracts `@relay(plural: Boolean)` directives and converts
     * them to metadata that can be accessed at runtime.
     */
-  def transform(context: GraphQLCompilerContext): GraphQLCompilerContext = js.native
+  def transform(context: CompilerContext): CompilerContext = js.native
 }
 

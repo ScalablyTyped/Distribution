@@ -17,9 +17,7 @@ trait AnonAccesstokenAltAnnouncementStates extends js.Object {
     * Restriction on the `state` of announcements returned.
     * If this argument is left unspecified, the default value is `PUBLISHED`.
     */
-  var announcementStates: js.UndefOr[String] = js.native
-  /** OAuth bearer token. */
-  var bearer_token: js.UndefOr[String] = js.native
+  var announcementStates: js.UndefOr[String | js.Array[String]] = js.native
   /** JSONP */
   var callback: js.UndefOr[String] = js.native
   /**
@@ -59,8 +57,6 @@ trait AnonAccesstokenAltAnnouncementStates extends js.Object {
     * must be otherwise identical to the one that resulted in this token.
     */
   var pageToken: js.UndefOr[String] = js.native
-  /** Pretty-print response. */
-  var pp: js.UndefOr[Boolean] = js.native
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */

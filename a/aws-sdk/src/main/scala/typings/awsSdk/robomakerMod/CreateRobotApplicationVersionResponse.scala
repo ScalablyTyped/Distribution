@@ -23,7 +23,7 @@ trait CreateRobotApplicationVersionResponse extends js.Object {
     */
   var revisionId: js.UndefOr[RevisionId] = js.native
   /**
-    * The robot software suite used by the robot application.
+    * The robot software suite (ROS distribution) used by the robot application.
     */
   var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.native
   /**

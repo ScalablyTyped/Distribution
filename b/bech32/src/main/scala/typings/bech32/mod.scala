@@ -1,6 +1,6 @@
 package typings.bech32
 
-import typings.node.Buffer
+import typings.std.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def decode(str: String): AnonPrefix = js.native
   def decode(str: String, LIMIT: Double): AnonPrefix = js.native
-  def encode(prefix: String, words: Buffer): String = js.native
-  def encode(prefix: String, words: Buffer, LIMIT: Double): String = js.native
-  def fromWords(words: Buffer): Buffer = js.native
-  def toWords(bytes: Buffer): Buffer = js.native
+  def encode(prefix: String, words: ArrayLike[Double]): String = js.native
+  def encode(prefix: String, words: ArrayLike[Double], LIMIT: Double): String = js.native
+  def fromWords(words: ArrayLike[Double]): js.Array[Double] = js.native
+  def toWords(bytes: ArrayLike[Double]): js.Array[Double] = js.native
 }
 

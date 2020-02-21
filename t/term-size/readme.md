@@ -1,7 +1,7 @@
 
 # Scala.js typings for term-size
 
-Typings are for version 2.1.1
+Typings are for version 2.2.0
 
 ## Library description:
 Reliably get the terminal window size (columns & rows)

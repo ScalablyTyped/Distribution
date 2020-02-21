@@ -1,7 +1,7 @@
 
 # Scala.js typings for body-parser
 
-Typings are for version 1.17
+Typings are for version 1.19
 
 ## Library description:
 Node.js body parsing middleware

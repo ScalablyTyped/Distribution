@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.LAYERID_SKYBOX
+  * @type {number}
   * @description The skybox layer.
   */
 @JSGlobal("pc.LAYERID_SKYBOX")

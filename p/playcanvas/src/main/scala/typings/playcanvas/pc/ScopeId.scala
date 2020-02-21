@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.ScopeId
   * @classdesc The scope for a variable.
-  * @param {String} name The variable name.
-  * @property {String} name The variable name.
+  * @param {string} name - The variable name.
+  * @property {string} name The variable name.
   */
 @JSGlobal("pc.ScopeId")
 @js.native
@@ -30,7 +30,7 @@ class ScopeId protected () extends js.Object {
     * @function
     * @name pc.ScopeId#setValue
     * @description Set variable value.
-    * @param {*} value The value.
+    * @param {*} value - The value.
     */
   def setValue(value: js.Any): Unit = js.native
 }

@@ -19,6 +19,10 @@ trait StackSetOperation extends js.Object {
     */
   var CreationTimestamp: js.UndefOr[Timestamp] = js.native
   /**
+    * [Service-managed permissions] The AWS Organizations accounts affected by the stack operation.
+    */
+  var DeploymentTargets: js.UndefOr[typings.awsSdk.cloudformationMod.DeploymentTargets] = js.native
+  /**
     * The time at which the stack set operation ended, across all accounts and regions specified. Note that this doesn't necessarily mean that the stack set operation was successful, or even attempted, in each account or region.
     */
   var EndTimestamp: js.UndefOr[Timestamp] = js.native
@@ -47,7 +51,7 @@ trait StackSetOperation extends js.Object {
     */
   var StackSetId: js.UndefOr[typings.awsSdk.cloudformationMod.StackSetId] = js.native
   /**
-    * The status of the operation.     FAILED: The operation exceeded the specified failure tolerance. The failure tolerance value that you've set for an operation is applied for each region during stack create and update operations. If the number of failed stacks within a region exceeds the failure tolerance, the status of the operation in the region is set to FAILED. This in turn sets the status of the operation as a whole to FAILED, and AWS CloudFormation cancels the operation in any remaining regions.    RUNNING: The operation is currently being performed.    STOPPED: The user has cancelled the operation.    STOPPING: The operation is in the process of stopping, at user request.     SUCCEEDED: The operation completed creating or updating all the specified stacks without exceeding the failure tolerance for the operation.  
+    * The status of the operation.     FAILED: The operation exceeded the specified failure tolerance. The failure tolerance value that you've set for an operation is applied for each region during stack create and update operations. If the number of failed stacks within a region exceeds the failure tolerance, the status of the operation in the region is set to FAILED. This in turn sets the status of the operation as a whole to FAILED, and AWS CloudFormation cancels the operation in any remaining regions.    QUEUED: [Service-managed permissions] For automatic deployments that require a sequence of operations. The operation is queued to be performed. For more information, see the stack set operation status codes in the AWS CloudFormation User Guide.    RUNNING: The operation is currently being performed.    STOPPED: The user has cancelled the operation.    STOPPING: The operation is in the process of stopping, at user request.     SUCCEEDED: The operation completed creating or updating all the specified stacks without exceeding the failure tolerance for the operation.  
     */
   var Status: js.UndefOr[StackSetOperationStatus] = js.native
 }
@@ -58,6 +62,7 @@ object StackSetOperation {
     Action: StackSetOperationAction = null,
     AdministrationRoleARN: RoleARN_ = null,
     CreationTimestamp: Timestamp = null,
+    DeploymentTargets: DeploymentTargets = null,
     EndTimestamp: Timestamp = null,
     ExecutionRoleName: ExecutionRoleName = null,
     OperationId: ClientRequestToken = null,
@@ -71,6 +76,7 @@ object StackSetOperation {
     if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
     if (AdministrationRoleARN != null) __obj.updateDynamic("AdministrationRoleARN")(AdministrationRoleARN.asInstanceOf[js.Any])
     if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
+    if (DeploymentTargets != null) __obj.updateDynamic("DeploymentTargets")(DeploymentTargets.asInstanceOf[js.Any])
     if (EndTimestamp != null) __obj.updateDynamic("EndTimestamp")(EndTimestamp.asInstanceOf[js.Any])
     if (ExecutionRoleName != null) __obj.updateDynamic("ExecutionRoleName")(ExecutionRoleName.asInstanceOf[js.Any])
     if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])

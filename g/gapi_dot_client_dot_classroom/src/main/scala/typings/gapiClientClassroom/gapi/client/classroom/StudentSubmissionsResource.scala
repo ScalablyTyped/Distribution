@@ -1,13 +1,19 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackCourseId
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackCourseIdCourseWorkId
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackCourseIdCourseWorkIdFields
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkIdFields
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKey
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtoken
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtokenPrettyPrint
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtokenPrettyPrintQuotaUser
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtokenPrettyPrintQuotaUserResource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StudentSubmissionsResource extends js.Object {
   /**
     * Returns a student submission.
@@ -19,7 +25,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackCourseId): Request_[StudentSubmission]
+  def get(request: AnonAccesstokenAltCallbackCourseIdCourseWorkId): Request_[StudentSubmission] = js.native
   /**
     * Returns a list of student submissions that the requester is permitted to
     * view, factoring in the OAuth scopes of the request.
@@ -36,7 +42,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course does not exist.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackCourseIdCourseWorkId): Request_[ListStudentSubmissionsResponse]
+  def list(request: AnonAccesstokenAltCallbackCourseIdCourseWorkIdFields): Request_[ListStudentSubmissionsResponse] = js.native
   /**
     * Modifies attachments of student submission.
     *
@@ -57,7 +63,8 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def modifyAttachments(request: AnonAccesstokenAltBearertokenCallbackCourseId): Request_[StudentSubmission]
+  def modifyAttachments(request: AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsId): Request_[StudentSubmission] = js.native
+  def modifyAttachments(request: AnonAccesstokenAltCallbackCourseIdCourseWorkId, body: ModifyAttachmentsRequest): Request_[StudentSubmission] = js.native
   /**
     * Updates one or more fields of a student submission.
     *
@@ -78,12 +85,16 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackCourseIdCourseWorkIdFields): Request_[StudentSubmission]
+  def patch(request: AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKey): Request_[StudentSubmission] = js.native
+  def patch(
+    request: AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtoken,
+    body: StudentSubmission
+  ): Request_[StudentSubmission] = js.native
   /**
     * Reclaims a student submission on behalf of the student that owns it.
     *
     * Reclaiming a student submission transfers ownership of attached Drive
-    * files to the student and update the submission state.
+    * files to the student and updates the submission state.
     *
     * Only the student that owns the requested student submission may call this
     * method, and only for a student submission that has been turned in.
@@ -102,7 +113,8 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def reclaim(request: AnonAccesstokenAltBearertokenCallbackCourseId): Request_[js.Object]
+  def reclaim(request: AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtokenPrettyPrint): Request_[js.Object] = js.native
+  def reclaim(request: AnonAccesstokenAltCallbackCourseIdCourseWorkId, body: ReclaimStudentSubmissionRequest): Request_[js.Object] = js.native
   /**
     * Returns a student submission.
     *
@@ -127,7 +139,8 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def `return`(request: AnonAccesstokenAltBearertokenCallbackCourseId): Request_[js.Object]
+  def `return`(request: AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtokenPrettyPrintQuotaUser): Request_[js.Object] = js.native
+  def `return`(request: AnonAccesstokenAltCallbackCourseIdCourseWorkId, body: ReturnStudentSubmissionRequest): Request_[js.Object] = js.native
   /**
     * Turns in a student submission.
     *
@@ -150,23 +163,9 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def turnIn(request: AnonAccesstokenAltBearertokenCallbackCourseId): Request_[js.Object]
-}
-
-object StudentSubmissionsResource {
-  @scala.inline
-  def apply(
-    get: AnonAccesstokenAltBearertokenCallbackCourseId => Request_[StudentSubmission],
-    list: AnonAccesstokenAltBearertokenCallbackCourseIdCourseWorkId => Request_[ListStudentSubmissionsResponse],
-    modifyAttachments: AnonAccesstokenAltBearertokenCallbackCourseId => Request_[StudentSubmission],
-    patch: AnonAccesstokenAltBearertokenCallbackCourseIdCourseWorkIdFields => Request_[StudentSubmission],
-    reclaim: AnonAccesstokenAltBearertokenCallbackCourseId => Request_[js.Object],
-    `return`: AnonAccesstokenAltBearertokenCallbackCourseId => Request_[js.Object],
-    turnIn: AnonAccesstokenAltBearertokenCallbackCourseId => Request_[js.Object]
-  ): StudentSubmissionsResource = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), modifyAttachments = js.Any.fromFunction1(modifyAttachments), patch = js.Any.fromFunction1(patch), reclaim = js.Any.fromFunction1(reclaim), turnIn = js.Any.fromFunction1(turnIn))
-    __obj.updateDynamic("return")(js.Any.fromFunction1(`return`))
-    __obj.asInstanceOf[StudentSubmissionsResource]
-  }
+  def turnIn(
+    request: AnonAccesstokenAltCallbackCourseIdCourseWorkIdFieldsIdKeyOauthtokenPrettyPrintQuotaUserResource
+  ): Request_[js.Object] = js.native
+  def turnIn(request: AnonAccesstokenAltCallbackCourseIdCourseWorkId, body: TurnInStudentSubmissionRequest): Request_[js.Object] = js.native
 }
 

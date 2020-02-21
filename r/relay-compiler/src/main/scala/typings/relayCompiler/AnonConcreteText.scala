@@ -1,6 +1,6 @@
 package typings.relayCompiler
 
-import typings.relayCompiler.graphQLIRMod.GeneratedDefinition
+import typings.relayCompiler.iRMod.GeneratedDefinition
 import typings.relayCompiler.relayCompilerStrings.Fragment
 import typings.relayCompiler.relayCompilerStrings.Request
 import typings.relayRuntime.relayConcreteNodeMod.GeneratedNode

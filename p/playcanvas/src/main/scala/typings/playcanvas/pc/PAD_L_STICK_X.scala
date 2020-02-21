@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_L_STICK_X
-  * @description Horizontal axis on the left analogue stick
+  * @description Horizontal axis on the left analogue stick.
   */
 @JSGlobal("pc.PAD_L_STICK_X")
 @js.native

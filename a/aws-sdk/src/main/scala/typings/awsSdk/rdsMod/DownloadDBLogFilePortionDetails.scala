@@ -15,7 +15,7 @@ trait DownloadDBLogFilePortionDetails extends js.Object {
     */
   var LogFileData: js.UndefOr[String] = js.native
   /**
-    * A pagination token that can be used in a subsequent DownloadDBLogFilePortion request.
+    * A pagination token that can be used in a later DownloadDBLogFilePortion request.
     */
   var Marker: js.UndefOr[String] = js.native
 }

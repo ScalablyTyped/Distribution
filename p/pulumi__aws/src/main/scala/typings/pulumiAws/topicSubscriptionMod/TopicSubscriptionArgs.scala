@@ -29,7 +29,7 @@ trait TopicSubscriptionArgs extends js.Object {
     */
   val filterPolicy: js.UndefOr[Input[String]] = js.native
   /**
-    * The protocol to use. The possible values for this are: `sqs`, `sms`, `lambda`, `application`. (`http` or `https` are partially supported, see below) (`email` is option but unsupported, see below).
+    * The protocol to use. The possible values for this are: `sqs`, `sms`, `lambda`, `application`. (`http` or `https` are partially supported, see below) (`email` is an option but is unsupported, see below).
     */
   val protocol: Input[String] = js.native
   /**

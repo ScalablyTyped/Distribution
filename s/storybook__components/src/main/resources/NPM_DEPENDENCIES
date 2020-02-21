@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/components" : "5.3.7"
+      "@storybook/components" : "5.3.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/components" : "5.3.7"
+      "@storybook/components" : "5.3.13"
     }
   ],
   "compile-devDependencies" : [

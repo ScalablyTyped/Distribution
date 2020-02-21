@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateDBClusterParameterGroupMessage extends js.Object {
   /**
-    * The name of the DB cluster parameter group. Constraints:   Must match the name of an existing DBClusterParameterGroup.    This value is stored as a lowercase string. 
+    * The name of the cluster parameter group. Constraints:   Must match the name of an existing DBClusterParameterGroup.    This value is stored as a lowercase string. 
     */
   var DBClusterParameterGroupName: String = js.native
   /**
-    * The DB cluster parameter group family name.
+    * The cluster parameter group family name.
     */
   var DBParameterGroupFamily: String = js.native
   /**
-    * The description for the DB cluster parameter group.
+    * The description for the cluster parameter group.
     */
   var Description: String = js.native
   /**
-    * The tags to be assigned to the DB cluster parameter group.
+    * The tags to be assigned to the cluster parameter group.
     */
   var Tags: js.UndefOr[TagList] = js.native
 }

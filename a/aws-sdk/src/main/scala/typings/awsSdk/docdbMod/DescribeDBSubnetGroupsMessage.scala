@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeDBSubnetGroupsMessage extends js.Object {
   /**
-    * The name of the DB subnet group to return details for.
+    * The name of the subnet group to return details for.
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.native
   /**

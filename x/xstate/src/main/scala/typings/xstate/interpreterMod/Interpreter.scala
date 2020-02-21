@@ -40,11 +40,6 @@ class Interpreter[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: E
     machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
     options: Partial[InterpreterOptions]
   ) = this()
-  def this(
-    machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-    options: Partial[InterpreterOptions],
-    sessionId: String
-  ) = this()
   var _initialState: js.UndefOr[js.Any] = js.native
   /**
     * The current state of the interpreted machine.

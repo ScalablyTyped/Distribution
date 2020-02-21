@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object keytipLayerMod extends js.Object {
     def this(props: IKeytipLayerProps, context: js.Any) = this()
   }
   
-  val KeytipLayer: StatelessComponent[IKeytipLayerProps] = js.native
+  val KeytipLayer: FunctionComponent[IKeytipLayerProps] = js.native
   /* static members */
   @js.native
   object KeytipLayerBase extends js.Object {

@@ -5,5 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type IEvent[T] = js.Function1[/* listener */ js.Function1[/* e */ T, js.Any], typings.xterm.mod.IDisposable]
+  type IEvent[T, U] = js.Function1[
+    /* listener */ js.Function2[/* arg1 */ T, /* arg2 */ U, js.Any], 
+    typings.xterm.mod.IDisposable
+  ]
 }

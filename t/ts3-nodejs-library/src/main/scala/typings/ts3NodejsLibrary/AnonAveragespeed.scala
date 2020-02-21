@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonAveragespeed extends Instantiable0[Command] {
   val Identifier: Record[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 320 */ js.Any, 
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 319 */ js.Any, 
     js.Function1[/* value */ String, _]
   ] = js.native
   /**

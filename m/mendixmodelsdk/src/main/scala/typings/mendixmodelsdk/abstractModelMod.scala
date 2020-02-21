@@ -205,6 +205,7 @@ object abstractModelMod extends js.Object {
     def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Boolean, callback: ICallback[T]): Unit = js.native
     def loadUnitById[T /* <: IAbstractUnit */](id: String, forceRefresh: Boolean, callback: ICallback[T], errorCallback: IErrorCallback): Unit = js.native
     def onEventProcessed(callback: IVoidCallback): Unit = js.native
+    def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit = js.native
     def putFile(inFilePath: String, filePath: String): js.Promise[Unit] = js.native
     /**
       * Uploads the supplied file to the specified filepath.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PendingModifiedValues extends js.Object {
   /**
-    *  Contains the new AllocatedStorage size for the DB instance that will be applied or is currently being applied. 
+    *  Contains the new AllocatedStorage size for then instance that will be applied or is currently being applied. 
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.native
   /**
@@ -19,15 +19,15 @@ trait PendingModifiedValues extends js.Object {
     */
   var CACertificateIdentifier: js.UndefOr[String] = js.native
   /**
-    *  Contains the new DBInstanceClass for the DB instance that will be applied or is currently being applied. 
+    *  Contains the new DBInstanceClass for the instance that will be applied or is currently being applied. 
     */
   var DBInstanceClass: js.UndefOr[String] = js.native
   /**
-    *  Contains the new DBInstanceIdentifier for the DB instance that will be applied or is currently being applied. 
+    *  Contains the new DBInstanceIdentifier for the instance that will be applied or is currently being applied. 
     */
   var DBInstanceIdentifier: js.UndefOr[String] = js.native
   /**
-    * The new DB subnet group for the DB instance. 
+    * The new subnet group for the instance. 
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.native
   /**
@@ -35,19 +35,19 @@ trait PendingModifiedValues extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.native
   /**
-    * Specifies the new Provisioned IOPS value for the DB instance that will be applied or is currently being applied.
+    * Specifies the new Provisioned IOPS value for the instance that will be applied or is currently being applied.
     */
   var Iops: js.UndefOr[IntegerOptional] = js.native
   /**
-    * The license model for the DB instance. Valid values: license-included, bring-your-own-license, general-public-license 
+    * The license model for the instance. Valid values: license-included, bring-your-own-license, general-public-license 
     */
   var LicenseModel: js.UndefOr[String] = js.native
   /**
-    * Contains the pending or currently in-progress change of the master credentials for the DB instance.
+    * Contains the pending or currently in-progress change of the master credentials for the instance.
     */
   var MasterUserPassword: js.UndefOr[String] = js.native
   /**
-    * Indicates that the Single-AZ DB instance is to change to a Multi-AZ deployment.
+    * Indicates that the Single-AZ instance is to change to a Multi-AZ deployment.
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.native
   /**
@@ -55,11 +55,11 @@ trait PendingModifiedValues extends js.Object {
     */
   var PendingCloudwatchLogsExports: js.UndefOr[typings.awsSdk.docdbMod.PendingCloudwatchLogsExports] = js.native
   /**
-    * Specifies the pending port for the DB instance.
+    * Specifies the pending port for the instance.
     */
   var Port: js.UndefOr[IntegerOptional] = js.native
   /**
-    * Specifies the storage type to be associated with the DB instance.
+    * Specifies the storage type to be associated with the instance.
     */
   var StorageType: js.UndefOr[String] = js.native
 }

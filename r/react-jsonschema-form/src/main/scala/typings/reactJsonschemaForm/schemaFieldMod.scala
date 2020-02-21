@@ -3,6 +3,7 @@ package typings.reactJsonschemaForm
 import typings.react.mod.Component
 import typings.reactJsonschemaForm.mod.FieldProps
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.errorSchema
+import typings.reactJsonschemaForm.reactJsonschemaFormStrings.formContext
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.formData
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.idSchema
 import typings.reactJsonschemaForm.reactJsonschemaFormStrings.registry
@@ -21,6 +22,9 @@ object schemaFieldMod extends js.Object {
     extends Component[SchemaFieldProps[js.Any], js.Object, js.Any]
   
   type SchemaField = Component[SchemaFieldProps[js.Any], js.Object, js.Any]
-  type SchemaFieldProps[T] = Pick[FieldProps[T], schema | uiSchema | idSchema | formData | errorSchema | registry]
+  type SchemaFieldProps[T] = Pick[
+    FieldProps[T], 
+    schema | uiSchema | idSchema | formData | errorSchema | registry | formContext
+  ]
 }
 

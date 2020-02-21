@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__router
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 Next generation Routing for React.

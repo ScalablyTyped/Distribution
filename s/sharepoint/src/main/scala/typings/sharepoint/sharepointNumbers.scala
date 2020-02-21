@@ -1,25 +1,39 @@
 package typings.sharepoint
 
+import typings.sharepoint.CUI.Alignment
+import typings.sharepoint.CUI.RowType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object sharepointNumbers {
   @js.native
+  sealed trait `0` extends Alignment
+  
+  @js.native
   sealed trait `1` extends Sods
   
   @js.native
-  sealed trait `2` extends Sods
+  sealed trait `2`
+    extends Alignment
+       with RowType
+       with Sods
   
   @js.native
-  sealed trait `3` extends Sods
+  sealed trait `3`
+    extends RowType
+       with Sods
   
   @js.native
-  sealed trait `4` extends Sods
+  sealed trait `4`
+    extends RowType
+       with Sods
   
   @js.native
   sealed trait `5` extends Sods
   
+  @scala.inline
+  def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline

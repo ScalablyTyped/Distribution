@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeviceData extends js.Object {
   /**
+    * The time (in epoch) when the device data was created.
+    */
+  var CreatedTime: js.UndefOr[DeviceDataCreatedTime] = js.native
+  /**
     * The ARN of a device.
     */
   var DeviceArn: js.UndefOr[Arn] = js.native
@@ -59,6 +63,7 @@ trait DeviceData extends js.Object {
 object DeviceData {
   @scala.inline
   def apply(
+    CreatedTime: DeviceDataCreatedTime = null,
     DeviceArn: Arn = null,
     DeviceName: DeviceName = null,
     DeviceSerialNumber: DeviceSerialNumber = null,
@@ -73,6 +78,7 @@ object DeviceData {
     SoftwareVersion: SoftwareVersion = null
   ): DeviceData = {
     val __obj = js.Dynamic.literal()
+    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
     if (DeviceArn != null) __obj.updateDynamic("DeviceArn")(DeviceArn.asInstanceOf[js.Any])
     if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
     if (DeviceSerialNumber != null) __obj.updateDynamic("DeviceSerialNumber")(DeviceSerialNumber.asInstanceOf[js.Any])

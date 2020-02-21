@@ -351,12 +351,16 @@ import scala.scalajs.js.annotation._
 trait Typeofts extends js.Object {
   var OperationCanceledException: Instantiable0[typings.typescript.mod.OperationCanceledException] = js.native
   val ScriptSnapshot: TypeofScriptSnapshot = js.native
+  /** @deprecated Use `createExpressionStatement` instead.  */
+  val createStatement: js.Function1[/* expression */ Expression, ExpressionStatement] = js.native
   var disableIncrementalParsing: Boolean = js.native
   val server: js.Any = js.native
   /** The version of the language service API */
   val servicesVersion: `0Dot8` = js.native
   var sys: System = js.native
   var unchangedTextChangeRange: TextChangeRange = js.native
+  /** @deprecated Use `updateExpressionStatement` instead.  */
+  val updateStatement: js.Function2[/* node */ ExpressionStatement, /* expression */ Expression, ExpressionStatement] = js.native
   /** The version of the TypeScript compiler release */
   val version: String = js.native
   val versionMajorMinor: `3Dot7` = js.native
@@ -3183,8 +3187,6 @@ trait Typeofts extends js.Object {
   def createSourceMapSource(fileName: String, text: String, skipTrivia: js.Function1[/* pos */ Double, Double]): SourceMapSource = js.native
   def createSpread(expression: Expression): SpreadElement = js.native
   def createSpreadAssignment(expression: Expression): SpreadAssignment = js.native
-  /** @deprecated Use `createExpressionStatement` instead.  */
-  def createStatement(expression: Expression): ExpressionStatement = js.native
   def createStrictEquality(left: Expression, right: Expression): BinaryExpression = js.native
   def createStrictInequality(left: Expression, right: Expression): BinaryExpression = js.native
   def createStringLiteral(text: String): StringLiteral = js.native
@@ -6716,8 +6718,6 @@ trait Typeofts extends js.Object {
   ): SourceFile = js.native
   def updateSpread(node: SpreadElement, expression: Expression): SpreadElement = js.native
   def updateSpreadAssignment(node: SpreadAssignment, expression: Expression): SpreadAssignment = js.native
-  /** @deprecated Use `updateExpressionStatement` instead.  */
-  def updateStatement(node: ExpressionStatement, expression: Expression): ExpressionStatement = js.native
   def updateSwitch(node: SwitchStatement, expression: Expression, caseBlock: CaseBlock): SwitchStatement = js.native
   /** @deprecated */ def updateTaggedTemplate(node: TaggedTemplateExpression, tag: Expression, template: TemplateLiteral): TaggedTemplateExpression = js.native
   def updateTaggedTemplate(

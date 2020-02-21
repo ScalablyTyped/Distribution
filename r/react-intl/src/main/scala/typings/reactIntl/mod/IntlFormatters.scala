@@ -37,6 +37,13 @@ trait IntlFormatters extends js.Object {
     value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.Fn_Date>[0] */ js.Any,
     opts: FormatDateOptions
   ): String = js.native
+  def formatDisplayName(
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DisplayNames * / any['of']>[0] */ js.Any
+  ): js.UndefOr[String] = js.native
+  def formatDisplayName(
+    value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DisplayNames * / any['of']>[0] */ js.Any,
+    opts: FormatDisplayNameOptions
+  ): js.UndefOr[String] = js.native
   def formatHTMLMessage(descriptor: MessageDescriptor): ReactNode = js.native
   def formatHTMLMessage(descriptor: MessageDescriptor, values: Record[String, PrimitiveType]): ReactNode = js.native
   def formatList(values: js.Array[String]): String = js.native

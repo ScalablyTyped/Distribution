@@ -2,6 +2,7 @@ package typings.mocha.mod
 
 import typings.mocha.Mocha_.IContext
 import typings.mocha.Mocha_.ISuite
+import typings.mocha.Mocha_.SuiteConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,7 +28,6 @@ import scala.scalajs.js.annotation._
 // #endregion Suite "beforeAll" event
 // #region Suite "afterAll" event
 // #region Suite "beforeAll" event
-// #endregion Runner untyped events
 /**
   * Initialize a new `Suite` with the given `title` and `ctx`.
   *
@@ -46,6 +46,7 @@ class Suite_ protected ()
 @JSImport("mocha", "Suite")
 @js.native
 object Suite_ extends js.Object {
+  val constants: SuiteConstants = js.native
   /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
   def create(parent: ISuite, title: String): typings.mocha.Mocha_.Suite_ = js.native
   /**

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.SHADOW_PCF3
+  * @type {number}
   * @description Render depth (color-packed on WebGL 1.0), can be used for PCF 3x3 sampling.
   */
 @JSGlobal("pc.SHADOW_PCF3")

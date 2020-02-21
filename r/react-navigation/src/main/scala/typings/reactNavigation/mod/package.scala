@@ -23,9 +23,9 @@ package object mod {
   type NavigationNavigator[Options, NavigationPropType] = (typings.react.mod.ComponentType[typings.reactNavigation.mod.NavigationNavigatorProps[Options, js.Object, _]]) with (typings.reactNavigation.AnonNavigationOptionsRouter[Options, NavigationPropType])
   type NavigationParams = org.scalablytyped.runtime.StringDictionary[js.Any]
   type NavigationPathsConfig = org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  type NavigationRouteConfig[Options, NavigationScreenPropType] = (typings.reactNavigation.mod.NavigationComponent[Options, NavigationScreenPropType]) | (((typings.reactNavigation.AnonScreen[Options, NavigationScreenPropType]) | (typings.reactNavigation.AnonGetScreen[Options, NavigationScreenPropType])) with (typings.reactNavigation.AnonKey[Options, NavigationScreenPropType]))
-  type NavigationRouteConfigMap[Options, NavigationScreenPropType] = org.scalablytyped.runtime.StringDictionary[
-    typings.reactNavigation.mod.NavigationRouteConfig[Options, NavigationScreenPropType]
+  type NavigationRouteConfig[Options, NavigationScreenPropType, ScreenProps] = (typings.reactNavigation.mod.NavigationComponent[Options, NavigationScreenPropType]) | (((typings.reactNavigation.AnonScreen[Options, NavigationScreenPropType]) | (typings.reactNavigation.AnonGetScreen[Options, NavigationScreenPropType])) with (typings.reactNavigation.AnonKey[Options, NavigationScreenPropType, ScreenProps]))
+  type NavigationRouteConfigMap[Options, NavigationScreenPropType, ScreenProps] = org.scalablytyped.runtime.StringDictionary[
+    typings.reactNavigation.mod.NavigationRouteConfig[Options, NavigationScreenPropType, ScreenProps]
   ]
   type NavigationScreenComponent[Options, NavigationScreenPropType] = typings.react.mod.ComponentType[_] with (typings.reactNavigation.AnonNavigationOptions[Options, NavigationScreenPropType])
   type NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps] = Options | (js.Function1[

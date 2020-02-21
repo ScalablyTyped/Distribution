@@ -1,5 +1,6 @@
 package typings.pulumiAws.placementGroupMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.placementStrategyMod.PlacementStrategy
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -27,9 +28,17 @@ class PlacementGroup protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
+    * The ID of the placement group.
+    */
+  val placementGroupId: Output_[String] = js.native
+  /**
     * The placement strategy.
     */
   val strategy: Output_[PlacementStrategy] = js.native
+  /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

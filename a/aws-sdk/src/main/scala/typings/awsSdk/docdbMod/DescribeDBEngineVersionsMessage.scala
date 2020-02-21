@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeDBEngineVersionsMessage extends js.Object {
   /**
-    * The name of a specific DB parameter group family to return details for. Constraints:   If provided, must match an existing DBParameterGroupFamily.  
+    * The name of a specific parameter group family to return details for. Constraints:   If provided, must match an existing DBParameterGroupFamily.  
     */
   var DBParameterGroupFamily: js.UndefOr[String] = js.native
   /**

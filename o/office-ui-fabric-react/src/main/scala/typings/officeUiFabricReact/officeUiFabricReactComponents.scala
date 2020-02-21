@@ -229,21 +229,21 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def ContextualMenuButton: ComponentType[ContextualMenuButtonProps] = js.constructorOf[typings.officeUiFabricReact.contextualMenuItemWrapperMod.ContextualMenuButton].asInstanceOf[typings.react.mod.ComponentType[ContextualMenuButtonProps]]
   @scala.inline
-  def ContextualMenuCheckmarksExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuCheckmarksExampleMod.ContextualMenuCheckmarksExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuCheckmarksExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuCheckmarksExampleMod.ContextualMenuCheckmarksExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuCustomizationExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuCustomizationExampleMod.ContextualMenuCustomizationExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuCustomizationExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuCustomizationExampleMod.ContextualMenuCustomizationExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuCustomizationWithNoWrapExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuCustomizationWithNoWrapExampleMod.ContextualMenuCustomizationWithNoWrapExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuCustomizationWithNoWrapExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuCustomizationWithNoWrapExampleMod.ContextualMenuCustomizationWithNoWrapExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuDefaultExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuDefaultExampleMod.ContextualMenuDefaultExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuDefaultExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuDefaultExampleMod.ContextualMenuDefaultExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuDirectionalExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuDirectionalExampleMod.ContextualMenuDirectionalExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuDirectionalExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuDirectionalExampleMod.ContextualMenuDirectionalExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuHeaderExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuHeaderExampleMod.ContextualMenuHeaderExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuHeaderExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuHeaderExampleMod.ContextualMenuHeaderExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuIconExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuIconExampleMod.ContextualMenuIconExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuIconExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuIconExampleMod.ContextualMenuIconExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuIconSecondaryTextExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuIconSecondaryTextExampleMod.ContextualMenuIconSecondaryTextExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuIconSecondaryTextExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuIconSecondaryTextExampleMod.ContextualMenuIconSecondaryTextExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def ContextualMenuItem: ComponentType[ContextualMenuItemProps] = typings.officeUiFabricReact.mod.ContextualMenuItem.asInstanceOf[typings.react.mod.ComponentType[ContextualMenuItemProps]]
   @scala.inline
@@ -251,19 +251,19 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def ContextualMenuItemWrapper: ComponentType[ContextualMenuItemWrapperProps] = js.constructorOf[typings.officeUiFabricReact.contextualMenuItemWrapperMod.ContextualMenuItemWrapper].asInstanceOf[typings.react.mod.ComponentType[ContextualMenuItemWrapperProps]]
   @scala.inline
-  def ContextualMenuPersistedExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuPersistedExampleMod.ContextualMenuPersistedExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuPersistedExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuPersistedExampleMod.ContextualMenuPersistedExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuSectionExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.contextualMenuSectionExampleMod.ContextualMenuSectionExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ContextualMenuSectionExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuSectionExampleMod.ContextualMenuSectionExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def ContextualMenuSplitButton: ComponentType[ContextualMenuSplitButtonProps] = js.constructorOf[typings.officeUiFabricReact.contextualMenuItemWrapperMod.ContextualMenuSplitButton].asInstanceOf[typings.react.mod.ComponentType[ContextualMenuSplitButtonProps]]
   @scala.inline
-  def ContextualMenuSubmenuExample: ComponentType[js.Any] = js.constructorOf[typings.officeUiFabricReact.contextualMenuSubmenuExampleMod.ContextualMenuSubmenuExample].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ContextualMenuSubmenuExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuSubmenuExampleMod.ContextualMenuSubmenuExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuWithCustomMenuItemExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuCustomMenuItemExampleMod.ContextualMenuWithCustomMenuItemExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuWithCustomMenuItemExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuCustomMenuItemExampleMod.ContextualMenuWithCustomMenuItemExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuWithCustomMenuListExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuCustomMenuListExampleMod.ContextualMenuWithCustomMenuListExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuWithCustomMenuListExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuCustomMenuListExampleMod.ContextualMenuWithCustomMenuListExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def ContextualMenuWithScrollBarExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.contextualMenuScrollBarExampleMod.ContextualMenuWithScrollBarExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def ContextualMenuWithScrollBarExample: ComponentType[js.Object] = typings.officeUiFabricReact.contextualMenuScrollBarExampleMod.ContextualMenuWithScrollBarExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def Customizer: ComponentType[CustomizerProps] = js.constructorOf[typings.officeUiFabricReact.mod.Customizer].asInstanceOf[typings.react.mod.ComponentType[CustomizerProps]]
   @scala.inline
@@ -613,6 +613,8 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   def KeytipsButtonExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.keytipsButtonExampleMod.KeytipsButtonExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def KeytipsCommandBarExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.keytipsCommandBarExampleMod.KeytipsCommandBarExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  @scala.inline
+  def KeytipsDynamicExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.keytipsDynamicExampleMod.KeytipsDynamicExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def KeytipsOverflowExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.keytipsOverflowExampleMod.KeytipsOverflowExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline

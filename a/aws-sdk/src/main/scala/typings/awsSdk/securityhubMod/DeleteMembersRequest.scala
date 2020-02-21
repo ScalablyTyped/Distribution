@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteMembersRequest extends js.Object {
   /**
-    * A list of account IDs of the member accounts to delete.
+    * The list of account IDs for the member accounts to delete.
     */
   var AccountIds: js.UndefOr[AccountIdList] = js.native
 }

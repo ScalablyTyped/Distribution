@@ -14,8 +14,11 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.node.NodeJS.EventEmitter because Already inherited
 - typings.node.eventsMod.EventEmitter because Already inherited
-- typings.node.NodeJS.WritableStream because var conflicts: writable. Inlined 
+- typings.node.NodeJS.EventEmitter because Already inherited
+- typings.node.childProcessMod.StdioNull because Already inherited
 - typings.node.streamMod.internal because Already inherited
+- typings.node.NodeJS.WritableStream because var conflicts: writable. Inlined 
+- typings.node.streamMod.Stream because Already inherited
 - typings.node.streamMod.Writable because Inheritance from two classes. Inlined writable, writableEnded, writableFinished, writableHighWaterMark, writableLength, writableObjectMode, writableCorked, _write, _writev, _destroy, _destroy, _final, write, write, write, write, setDefaultEncoding, end, end, end, end, end, end, cork, uncork, destroy, destroy, addListener_close, addListener_drain, addListener_error, addListener_finish, addListener_pipe, addListener_unpipe, addListener, addListener, emit_close, emit_drain, emit_error, emit_finish, emit_pipe, emit_unpipe, emit, emit, on_close, on_drain, on_error, on_finish, on_pipe, on_unpipe, on, on, once_close, once_drain, once_error, once_finish, once_pipe, once_unpipe, once, once, prependListener_close, prependListener_drain, prependListener_error, prependListener_finish, prependListener_pipe, prependListener_unpipe, prependListener, prependListener, prependOnceListener_close, prependOnceListener_drain, prependOnceListener_error, prependOnceListener_finish, prependOnceListener_pipe, prependOnceListener_unpipe, prependOnceListener, prependOnceListener, removeListener_close, removeListener_drain, removeListener_error, removeListener_finish, removeListener_pipe, removeListener_unpipe, removeListener, removeListener */ @JSImport("stream", "Duplex")
 @js.native
 class Duplex () extends Readable {

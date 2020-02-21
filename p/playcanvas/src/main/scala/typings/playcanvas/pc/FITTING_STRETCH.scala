@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.FITTING_STRETCH
-  * @description Stretch child elements to fit the parent container
+  * @description Stretch child elements to fit the parent container.
   */
 @JSGlobal("pc.FITTING_STRETCH")
 @js.native

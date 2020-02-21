@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
 import typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
 import typings.react.mod.FunctionComponent
-import typings.react.mod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,11 +19,11 @@ object groupedListMod extends js.Object {
     def this(props: IGroupedListProps) = this()
   }
   
-  val GroupFooter: StatelessComponent[IGroupFooterProps] = js.native
-  val GroupHeader: StatelessComponent[IGroupHeaderProps] = js.native
-  val GroupShowAll: StatelessComponent[IGroupShowAllProps] = js.native
+  val GroupFooter: FunctionComponent[IGroupFooterProps] = js.native
+  val GroupHeader: FunctionComponent[IGroupHeaderProps] = js.native
+  val GroupShowAll: FunctionComponent[IGroupShowAllProps] = js.native
   val GroupSpacer: FunctionComponent[IGroupSpacerProps] = js.native
-  val GroupedList: StatelessComponent[IGroupedListProps] = js.native
+  val GroupedList: FunctionComponent[IGroupedListProps] = js.native
   @js.native
   object CollapseAllVisibility extends js.Object {
     /* 0 */ val hidden: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility.hidden with Double = js.native

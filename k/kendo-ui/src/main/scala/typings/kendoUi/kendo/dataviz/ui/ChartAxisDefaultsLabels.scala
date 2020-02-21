@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 trait ChartAxisDefaultsLabels extends js.Object {
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartAxisDefaultsLabelsMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartAxisDefaultsLabelsMargin] = js.undefined
   var mirror: js.UndefOr[Boolean] = js.undefined
-  var padding: js.UndefOr[ChartAxisDefaultsLabelsPadding] = js.undefined
+  var padding: js.UndefOr[Double | ChartAxisDefaultsLabelsPadding] = js.undefined
   var rotation: js.UndefOr[String | Double | ChartAxisDefaultsLabelsRotation] = js.undefined
   var skip: js.UndefOr[Double] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
@@ -23,9 +23,9 @@ object ChartAxisDefaultsLabels {
   def apply(
     font: String = null,
     format: String = null,
-    margin: ChartAxisDefaultsLabelsMargin = null,
+    margin: Double | ChartAxisDefaultsLabelsMargin = null,
     mirror: js.UndefOr[Boolean] = js.undefined,
-    padding: ChartAxisDefaultsLabelsPadding = null,
+    padding: Double | ChartAxisDefaultsLabelsPadding = null,
     rotation: String | Double | ChartAxisDefaultsLabelsRotation = null,
     skip: Int | Double = null,
     step: Int | Double = null,

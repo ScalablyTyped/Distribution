@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gridstack" : "0.6.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gridstack" : "0.6.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

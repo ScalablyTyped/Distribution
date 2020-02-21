@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.SCROLL_MODE_CLAMP
   * @description Content does not scroll any further than its bounds.
   */

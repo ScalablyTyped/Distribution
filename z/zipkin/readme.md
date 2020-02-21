@@ -1,7 +1,7 @@
 
 # Scala.js typings for zipkin
 
-Typings are for version 0.19.1
+Typings are for version 0.19.2
 
 ## Library description:
 The core tracer for Zipkin JS

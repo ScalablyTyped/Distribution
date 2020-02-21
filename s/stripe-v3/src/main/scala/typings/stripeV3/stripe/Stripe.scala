@@ -42,6 +42,7 @@ trait Stripe extends js.Object {
   def createSource(element: Element, options: AnonOwner): js.Promise[SourceResponse] = js.native
   def createSource(options: SourceOptions): js.Promise[SourceResponse] = js.native
   def createToken(element: Element): js.Promise[TokenResponse] = js.native
+  def createToken(element: Element, options: BankAccountTokenOptions): js.Promise[TokenResponse] = js.native
   def createToken(element: Element, options: TokenOptions): js.Promise[TokenResponse] = js.native
   @JSName("createToken")
   def createToken_bankaccount(name: bank_account, options: BankAccountTokenOptions): js.Promise[TokenResponse] = js.native

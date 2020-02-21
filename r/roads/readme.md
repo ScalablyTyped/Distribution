@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads
 
-Typings are for version 5.0
+Typings are for version 6.0.1
 
 ## Library description:
 An isomophic http framework
@@ -24,7 +24,7 @@ An isomophic http framework
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

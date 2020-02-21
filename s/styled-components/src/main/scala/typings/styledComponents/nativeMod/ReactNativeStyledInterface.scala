@@ -26,6 +26,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
   var Button: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.Button], T] = js.native
   var DatePickerIOS: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.DatePickerIOS], T] = js.native
   var DrawerLayoutAndroid: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.DrawerLayoutAndroid], T] = js.native
+  var FlatList: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.FlatList[js.Object]], T] = js.native
   var Image: ReactNativeThemedStyledFunction[TypeofClassImage, T] = js.native
   var ImageBackground: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.ImageBackground], T] = js.native
   var KeyboardAvoidingView: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.KeyboardAvoidingView], T] = js.native
@@ -40,6 +41,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
   var RefreshControl: ReactNativeThemedStyledFunction[TypeofClassRefreshControl, T] = js.native
   var SafeAreaView: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.SafeAreaView], T] = js.native
   var ScrollView: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.ScrollView], T] = js.native
+  var SectionList: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.SectionList[js.Object]], T] = js.native
   var SegmentedControlIOS: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.SegmentedControlIOS], T] = js.native
   var Slider: ReactNativeThemedStyledFunction[Instantiable0[typings.reactNative.mod.Slider], T] = js.native
   var SliderIOS: ReactNativeThemedStyledFunction[Instantiable0[Slider], T] = js.native

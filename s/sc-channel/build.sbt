@@ -1,15 +1,17 @@
 organization := "org.scalablytyped"
 name := "sc-channel"
-version := "1.2-dt-20181130Z-64ec95"
-scalaVersion := "2.12.10"
+version := "2.0-dt-20200205Z-ff6319"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "component-emitter" % "v1.2.1-dt-20190322Z-17c9e3",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "async-iterable-stream" % "3.0-dt-20200205Z-f3fa3b",
+  "org.scalablytyped" %%% "consumable-stream" % "1.0-dt-20200205Z-2871f4",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "stream-demux" % "7.0-dt-20200205Z-dc48ef",
+  "org.scalablytyped" %%% "writable-consumable-stream" % "1.1-dt-20200205Z-7ac140")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

@@ -11,7 +11,7 @@ trait DescribeStandardsControlsResponse extends js.Object {
     */
   var Controls: js.UndefOr[StandardsControls] = js.native
   /**
-    * If there are more compliance standards control remaining in the results, then this is the pagination token to use to request the next page of compliance standard controls.
+    * The pagination token to use to request the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
 }

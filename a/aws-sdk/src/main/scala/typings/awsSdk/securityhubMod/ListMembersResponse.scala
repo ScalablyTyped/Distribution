@@ -11,7 +11,7 @@ trait ListMembersResponse extends js.Object {
     */
   var Members: js.UndefOr[MemberList] = js.native
   /**
-    * The token that is required for pagination.
+    * The pagination token to use to request the next page of results.
     */
   var NextToken: js.UndefOr[NonEmptyString] = js.native
 }

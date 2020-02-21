@@ -76,6 +76,12 @@ class Interface protected () extends EventEmitter {
   def emit_pause(event: pause): Boolean = js.native
   @JSName("emit")
   def emit_resume(event: resume): Boolean = js.native
+  /**
+    * Returns the real position of the cursor in relation to the input
+    * prompt + string.  Long input (wrapping) strings, as well as multiple
+    * line prompts are included in the calculations.
+    */
+  def getCursorPos(): CursorPos = js.native
   @JSName("on")
   def on_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")

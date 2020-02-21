@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "graphql-tag" : "2.10.1"
+      "graphql-tag" : "2.10.3"
     }
   ],
   "test-dependencies" : [
     {
-      "graphql-tag" : "2.10.1"
+      "graphql-tag" : "2.10.3"
     }
   ],
   "compile-devDependencies" : [

@@ -31,6 +31,10 @@ trait CreateProjectInput extends js.Object {
     */
   var environment: ProjectEnvironment = js.native
   /**
+    *  An array of ProjectFileSystemLocation objects for a CodeBuild build project. A ProjectFileSystemLocation object specifies the identifier, location, mountOptions, mountPoint, and type of a file system created using Amazon Elastic File System. 
+    */
+  var fileSystemLocations: js.UndefOr[ProjectFileSystemLocations] = js.native
+  /**
     *  Information about logs for the build project. These can be logs in Amazon CloudWatch Logs, logs uploaded to a specified S3 bucket, or both. 
     */
   var logsConfig: js.UndefOr[LogsConfig] = js.native
@@ -92,6 +96,7 @@ object CreateProjectInput {
     cache: ProjectCache = null,
     description: ProjectDescription = null,
     encryptionKey: NonEmptyString = null,
+    fileSystemLocations: ProjectFileSystemLocations = null,
     logsConfig: LogsConfig = null,
     queuedTimeoutInMinutes: Int | Double = null,
     secondaryArtifacts: ProjectArtifactsList = null,
@@ -107,6 +112,7 @@ object CreateProjectInput {
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
+    if (fileSystemLocations != null) __obj.updateDynamic("fileSystemLocations")(fileSystemLocations.asInstanceOf[js.Any])
     if (logsConfig != null) __obj.updateDynamic("logsConfig")(logsConfig.asInstanceOf[js.Any])
     if (queuedTimeoutInMinutes != null) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.asInstanceOf[js.Any])
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])

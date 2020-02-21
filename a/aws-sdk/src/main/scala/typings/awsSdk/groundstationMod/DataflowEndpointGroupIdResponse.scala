@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DataflowEndpointGroupIdResponse extends js.Object {
   /**
-    * ID of a dataflow endpoint group.
+    * UUID of a dataflow endpoint group.
     */
   var dataflowEndpointGroupId: js.UndefOr[String] = js.native
 }

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 trait Tooltip
   extends Component[TooltipProps, js.Any, js.Any] {
   var tooltip: js.Any = js.native
+  def getOverlay(): js.Object = js.native
   def getPlacements(): js.Any = js.native
   def getPopupDomNode(): js.Any = js.native
   def isNoTitle(): Boolean = js.native

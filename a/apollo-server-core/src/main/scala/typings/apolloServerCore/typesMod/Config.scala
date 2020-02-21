@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   var cacheControl: js.UndefOr[CacheControlExtensionOptions | Boolean] = js.undefined
   var context: js.UndefOr[Context[js.Object] | (ContextFunction[_, js.Object])] = js.undefined
   var engine: js.UndefOr[Boolean | EngineReportingOptions[Context[js.Object]]] = js.undefined
+  var experimental_approximateDocumentStoreMiB: js.UndefOr[Double] = js.undefined
   var extensions: js.UndefOr[js.Array[js.Function0[typings.graphqlExtensions.mod.GraphQLExtension[_]]]] = js.undefined
   var gateway: js.UndefOr[GraphQLService] = js.undefined
   var introspection: js.UndefOr[Boolean] = js.undefined
@@ -47,6 +48,7 @@ object Config {
     cacheControl: CacheControlExtensionOptions | Boolean = null,
     context: Context[js.Object] | (ContextFunction[_, js.Object]) = null,
     engine: Boolean | EngineReportingOptions[Context[js.Object]] = null,
+    experimental_approximateDocumentStoreMiB: Int | Double = null,
     extensions: js.Array[js.Function0[typings.graphqlExtensions.mod.GraphQLExtension[_]]] = null,
     gateway: GraphQLService = null,
     introspection: js.UndefOr[Boolean] = js.undefined,
@@ -68,6 +70,7 @@ object Config {
     if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
+    if (experimental_approximateDocumentStoreMiB != null) __obj.updateDynamic("experimental_approximateDocumentStoreMiB")(experimental_approximateDocumentStoreMiB.asInstanceOf[js.Any])
     if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
     if (gateway != null) __obj.updateDynamic("gateway")(gateway.asInstanceOf[js.Any])
     if (!js.isUndefined(introspection)) __obj.updateDynamic("introspection")(introspection.asInstanceOf[js.Any])

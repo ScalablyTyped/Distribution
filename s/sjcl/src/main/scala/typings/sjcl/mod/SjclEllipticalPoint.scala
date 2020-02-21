@@ -9,6 +9,7 @@ trait SjclEllipticalPoint extends js.Object {
   def mult(k: BigNumber): SjclEllipticalPoint
   def mult2(k: BigNumber, k2: BigNumber, affine2: SjclEllipticalPoint): SjclEllipticalPoint
   def multiples(): js.Array[SjclEllipticalPoint]
+  def negate(): SjclEllipticalPoint
   def toBits(): BitArray_
   def toJac(): SjclPointJacobian
 }
@@ -20,10 +21,11 @@ object SjclEllipticalPoint {
     mult: BigNumber => SjclEllipticalPoint,
     mult2: (BigNumber, BigNumber, SjclEllipticalPoint) => SjclEllipticalPoint,
     multiples: () => js.Array[SjclEllipticalPoint],
+    negate: () => SjclEllipticalPoint,
     toBits: () => BitArray_,
     toJac: () => SjclPointJacobian
   ): SjclEllipticalPoint = {
-    val __obj = js.Dynamic.literal(isValid = js.Any.fromFunction0(isValid), mult = js.Any.fromFunction1(mult), mult2 = js.Any.fromFunction3(mult2), multiples = js.Any.fromFunction0(multiples), toBits = js.Any.fromFunction0(toBits), toJac = js.Any.fromFunction0(toJac))
+    val __obj = js.Dynamic.literal(isValid = js.Any.fromFunction0(isValid), mult = js.Any.fromFunction1(mult), mult2 = js.Any.fromFunction3(mult2), multiples = js.Any.fromFunction0(multiples), negate = js.Any.fromFunction0(negate), toBits = js.Any.fromFunction0(toBits), toJac = js.Any.fromFunction0(toJac))
   
     __obj.asInstanceOf[SjclEllipticalPoint]
   }

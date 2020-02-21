@@ -11,8 +11,8 @@ trait ChartSeriesDefaultsLabels extends js.Object {
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
   var from: js.UndefOr[ChartSeriesDefaultsLabelsFrom] = js.undefined
-  var margin: js.UndefOr[ChartSeriesDefaultsLabelsMargin] = js.undefined
-  var padding: js.UndefOr[ChartSeriesDefaultsLabelsPadding] = js.undefined
+  var margin: js.UndefOr[Double | ChartSeriesDefaultsLabelsMargin] = js.undefined
+  var padding: js.UndefOr[Double | ChartSeriesDefaultsLabelsPadding] = js.undefined
   var rotation: js.UndefOr[String | Double] = js.undefined
   var template: js.UndefOr[String | js.Function] = js.undefined
   var to: js.UndefOr[ChartSeriesDefaultsLabelsTo] = js.undefined
@@ -29,8 +29,8 @@ object ChartSeriesDefaultsLabels {
     font: String = null,
     format: String = null,
     from: ChartSeriesDefaultsLabelsFrom = null,
-    margin: ChartSeriesDefaultsLabelsMargin = null,
-    padding: ChartSeriesDefaultsLabelsPadding = null,
+    margin: Double | ChartSeriesDefaultsLabelsMargin = null,
+    padding: Double | ChartSeriesDefaultsLabelsPadding = null,
     rotation: String | Double = null,
     template: String | js.Function = null,
     to: ChartSeriesDefaultsLabelsTo = null,

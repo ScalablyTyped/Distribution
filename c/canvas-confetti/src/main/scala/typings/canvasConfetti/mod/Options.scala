@@ -29,6 +29,11 @@ trait Options extends js.Object {
     */
   var particleCount: js.UndefOr[Double] = js.undefined
   /**
+    * The possible values are square and circle. The default is to use both shapes in an even mix.
+    * @default ['square','circle']
+    */
+  var shapes: js.UndefOr[js.Array[shape]] = js.undefined
+  /**
     * How far off center the confetti can go, in degrees. 45 means the confetti will launch at the defined angle plus or minus 22.5 degrees.
     * @default 45
     */
@@ -58,6 +63,7 @@ object Options {
     decay: Int | Double = null,
     origin: Origin = null,
     particleCount: Int | Double = null,
+    shapes: js.Array[shape] = null,
     spread: Int | Double = null,
     startVelocity: Int | Double = null,
     ticks: Int | Double = null,
@@ -69,6 +75,7 @@ object Options {
     if (decay != null) __obj.updateDynamic("decay")(decay.asInstanceOf[js.Any])
     if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     if (particleCount != null) __obj.updateDynamic("particleCount")(particleCount.asInstanceOf[js.Any])
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
     if (spread != null) __obj.updateDynamic("spread")(spread.asInstanceOf[js.Any])
     if (startVelocity != null) __obj.updateDynamic("startVelocity")(startVelocity.asInstanceOf[js.Any])
     if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])

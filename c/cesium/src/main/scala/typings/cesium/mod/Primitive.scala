@@ -16,7 +16,7 @@ class Primitive () extends js.Object {
   var cull: Boolean = js.native
   var debugShowBoundingVolume: Boolean = js.native
   var depthFailAppearance: Appearance = js.native
-  val geometryInstances: js.Array[GeometryInstance] | GeometryInstance = js.native
+  val geometryInstances: js.UndefOr[js.Array[GeometryInstance] | GeometryInstance] = js.native
   val interleave: Boolean = js.native
   var modelMatrix: Matrix4 = js.native
   val ready: Boolean = js.native

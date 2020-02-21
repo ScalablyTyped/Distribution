@@ -17,7 +17,7 @@ import typings.officeUiFabricReact.officeUiFabricReactNumbers.`7`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`8`
 import typings.officeUiFabricReact.officeUiFabricReactNumbers.`9`
 import typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,9 +41,9 @@ object hoverCardMod extends js.Object {
   class PlainCardBase ()
     extends typings.officeUiFabricReact.plainCardBaseMod.PlainCardBase
   
-  val ExpandingCard: StatelessComponent[IExpandingCardProps] = js.native
-  val HoverCard: StatelessComponent[IHoverCardProps] = js.native
-  val PlainCard: StatelessComponent[IPlainCardProps] = js.native
+  val ExpandingCard: FunctionComponent[IExpandingCardProps] = js.native
+  val HoverCard: FunctionComponent[IHoverCardProps] = js.native
+  val PlainCard: FunctionComponent[IPlainCardProps] = js.native
   @js.native
   object DirectionalHint extends js.Object {
     /**

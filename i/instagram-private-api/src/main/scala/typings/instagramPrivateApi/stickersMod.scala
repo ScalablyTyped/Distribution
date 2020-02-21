@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object stickersMod extends js.Object {
   @js.native
+  class AttachmentSticker ()
+    extends typings.instagramPrivateApi.attachmentStickerMod.AttachmentSticker
+  
+  @js.native
   class ChatSticker ()
     extends typings.instagramPrivateApi.chatStickerMod.ChatSticker
   

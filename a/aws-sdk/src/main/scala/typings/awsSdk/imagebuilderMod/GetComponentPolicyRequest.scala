@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetComponentPolicyRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the component whose policy you wish to retrieve. 
+    *  The Amazon Resource Name (ARN) of the component whose policy you want to retrieve. 
     */
   var componentArn: ComponentBuildVersionArn = js.native
 }

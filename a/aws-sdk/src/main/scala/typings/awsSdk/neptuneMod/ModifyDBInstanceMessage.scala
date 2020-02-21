@@ -63,7 +63,7 @@ trait ModifyDBInstanceMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.native
   /**
-    * A value that indicates whether the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. 
+    * A value that indicates whether the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. See Deleting a DB Instance.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
   /**

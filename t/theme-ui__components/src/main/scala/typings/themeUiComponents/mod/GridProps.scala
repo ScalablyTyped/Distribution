@@ -1,5 +1,6 @@
 package typings.themeUiComponents.mod
 
+import typings.styledSystem.mod.RequiredTheme
 import typings.styledSystem.mod.ResponsiveValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,23 +11,23 @@ import scala.scalajs.js.annotation._
   /**
     * 	Number of columns to use for the layout (cannot be used in conjunction with the width prop)
     */
-  var columns: js.UndefOr[ResponsiveValue[Double]] = js.undefined
+  var columns: js.UndefOr[ResponsiveValue[Double, RequiredTheme]] = js.undefined
   /**
     * Space between child elements
     */
-  var gap: js.UndefOr[ResponsiveValue[String | Double]] = js.undefined
+  var gap: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.undefined
   /**
     * Minimum width of child elements
     */
-  var width: js.UndefOr[ResponsiveValue[String | Double]] = js.undefined
+  var width: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.undefined
 }
 
 object GridProps {
   @scala.inline
   def apply(
-    columns: ResponsiveValue[Double] = null,
-    gap: ResponsiveValue[String | Double] = null,
-    width: ResponsiveValue[String | Double] = null
+    columns: ResponsiveValue[Double, RequiredTheme] = null,
+    gap: ResponsiveValue[String | Double, RequiredTheme] = null,
+    width: ResponsiveValue[String | Double, RequiredTheme] = null
   ): GridProps = {
     val __obj = js.Dynamic.literal()
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])

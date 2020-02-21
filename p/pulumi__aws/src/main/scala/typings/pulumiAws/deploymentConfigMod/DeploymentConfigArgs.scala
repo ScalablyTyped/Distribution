@@ -18,7 +18,7 @@ trait DeploymentConfigArgs extends js.Object {
     */
   val deploymentConfigName: Input[String] = js.native
   /**
-    * A minimumHealthyHosts block. Minimum Healthy Hosts are documented below.
+    * A minimumHealthyHosts block. Required for `Server` compute platform. Minimum Healthy Hosts are documented below.
     */
   val minimumHealthyHosts: js.UndefOr[Input[DeploymentConfigMinimumHealthyHosts]] = js.native
   /**

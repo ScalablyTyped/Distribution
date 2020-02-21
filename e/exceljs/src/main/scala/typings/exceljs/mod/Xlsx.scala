@@ -1,5 +1,7 @@
 package typings.exceljs.mod
 
+import typings.node.eventsMod.EventEmitter
+import typings.node.streamMod.Stream
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +12,7 @@ trait Xlsx extends js.Object {
   /**
   	 * Create input stream for reading
   	 */
-  def createInputStream(): Writable = js.native
+  def createInputStream(): EventEmitter = js.native
   /**
   	 * load from an array buffer
   	 * @param buffer
@@ -20,7 +22,7 @@ trait Xlsx extends js.Object {
   	 * read from a stream
   	 * @param stream
   	 */
-  def read(stream: Stream_): js.Promise[Workbook] = js.native
+  def read(stream: Stream): js.Promise[Workbook] = js.native
   /**
   	 * read from a file
   	 */
@@ -28,8 +30,8 @@ trait Xlsx extends js.Object {
   /**
   	 * write to a stream
   	 */
-  def write(stream: Stream_): js.Promise[Unit] = js.native
-  def write(stream: Stream_, options: Partial[XlsxWriteOptions]): js.Promise[Unit] = js.native
+  def write(stream: Stream): js.Promise[Unit] = js.native
+  def write(stream: Stream, options: Partial[XlsxWriteOptions]): js.Promise[Unit] = js.native
   /**
   	 * write to a buffer
   	 */

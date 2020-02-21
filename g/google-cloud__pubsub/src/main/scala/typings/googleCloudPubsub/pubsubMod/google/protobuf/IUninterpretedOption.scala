@@ -1,7 +1,7 @@
 package typings.googleCloudPubsub.pubsubMod.google.protobuf
 
 import typings.googleCloudPubsub.pubsubMod.google.protobuf.UninterpretedOption.INamePart
-import typings.long.mod.^
+import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,9 +18,9 @@ trait IUninterpretedOption extends js.Object {
   /** UninterpretedOption name */
   var name: js.UndefOr[js.Array[INamePart] | Null] = js.undefined
   /** UninterpretedOption negativeIntValue */
-  var negativeIntValue: js.UndefOr[Double | ^  | Null] = js.undefined
+  var negativeIntValue: js.UndefOr[Double | Long | Null] = js.undefined
   /** UninterpretedOption positiveIntValue */
-  var positiveIntValue: js.UndefOr[Double | ^  | Null] = js.undefined
+  var positiveIntValue: js.UndefOr[Double | Long | Null] = js.undefined
   /** UninterpretedOption stringValue */
   var stringValue: js.UndefOr[Uint8Array | Null] = js.undefined
 }
@@ -32,8 +32,8 @@ object IUninterpretedOption {
     doubleValue: Int | Double = null,
     identifierValue: String = null,
     name: js.Array[INamePart] = null,
-    negativeIntValue: Double | ^  = null,
-    positiveIntValue: Double | ^  = null,
+    negativeIntValue: Double | Long = null,
+    positiveIntValue: Double | Long = null,
     stringValue: Uint8Array = null
   ): IUninterpretedOption = {
     val __obj = js.Dynamic.literal()

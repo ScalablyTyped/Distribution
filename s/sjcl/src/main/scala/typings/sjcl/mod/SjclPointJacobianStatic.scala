@@ -24,5 +24,7 @@ trait SjclPointJacobianStatic
       /* y */ BigNumber, 
       /* z */ BigNumber, 
       SjclPointJacobian
-    ]
+    ] {
+  def toAffineMultiple(points: js.Array[SjclPointJacobian]): js.Array[SjclEllipticalPoint] = js.native
+}
 

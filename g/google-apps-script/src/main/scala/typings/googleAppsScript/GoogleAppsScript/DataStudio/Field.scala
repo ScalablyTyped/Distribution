@@ -19,14 +19,14 @@ import scala.scalajs.js.annotation._
   *       .setGroup('DATETIME');
   */
 trait Field extends js.Object {
-  def getAggregation(): AggregationType
-  def getDescription(): String
-  def getFormula(): String
-  def getGroup(): String
-  def getId(): String
-  def getIsReaggregatable(): Boolean
-  def getName(): String
-  def getType(): FieldType
+  def getAggregation(): AggregationType | Null
+  def getDescription(): String | Null
+  def getFormula(): String | Null
+  def getGroup(): String | Null
+  def getId(): String | Null
+  def getIsReaggregatable(): Boolean | Null
+  def getName(): String | Null
+  def getType(): FieldType | Null
   def isDefault(): Boolean
   def isDimension(): Boolean
   def isHidden(): Boolean
@@ -45,14 +45,14 @@ trait Field extends js.Object {
 object Field {
   @scala.inline
   def apply(
-    getAggregation: () => AggregationType,
-    getDescription: () => String,
-    getFormula: () => String,
-    getGroup: () => String,
-    getId: () => String,
-    getIsReaggregatable: () => Boolean,
-    getName: () => String,
-    getType: () => FieldType,
+    getAggregation: () => AggregationType | Null,
+    getDescription: () => String | Null,
+    getFormula: () => String | Null,
+    getGroup: () => String | Null,
+    getId: () => String | Null,
+    getIsReaggregatable: () => Boolean | Null,
+    getName: () => String | Null,
+    getType: () => FieldType | Null,
     isDefault: () => Boolean,
     isDimension: () => Boolean,
     isHidden: () => Boolean,

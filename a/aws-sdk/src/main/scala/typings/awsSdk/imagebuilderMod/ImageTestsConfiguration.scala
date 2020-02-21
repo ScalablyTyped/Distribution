@@ -11,7 +11,7 @@ trait ImageTestsConfiguration extends js.Object {
     */
   var imageTestsEnabled: js.UndefOr[NullableBoolean] = js.native
   /**
-    * The maximum time in minutes that tests are permitted to run for.
+    * The maximum time in minutes that tests are permitted to run.
     */
   var timeoutMinutes: js.UndefOr[ImageTestsTimeoutMinutes] = js.native
 }

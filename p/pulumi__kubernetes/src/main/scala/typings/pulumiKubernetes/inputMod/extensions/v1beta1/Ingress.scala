@@ -8,12 +8,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @deprecated extensions/v1beta1/Ingress is deprecated by networking/v1beta1/Ingress and not
-  * supported by Kubernetes v1.20+ clusters.
-  *
   * Ingress is a collection of rules that allow inbound connections to reach the endpoints
   * defined by a backend. An Ingress can be configured to give services externally-reachable
   * urls, load balance traffic, terminate SSL, offer name based virtual hosting etc.
+  *
+  * @deprecated extensions/v1beta1/Ingress is deprecated by networking/v1beta1/Ingress and not
+  * supported by Kubernetes v1.20+ clusters.
   */
 trait Ingress extends js.Object {
   /**

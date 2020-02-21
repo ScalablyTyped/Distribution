@@ -9,5 +9,6 @@ package object mod {
   type Interceptor = js.Function1[/* config */ js.Any, js.Any]
   type Logger_ = typings.camundaExternalTaskClientJs.mod.Middleware with typings.camundaExternalTaskClientJs.AnonError
   type Middleware = js.Function1[/* client */ typings.camundaExternalTaskClientJs.mod.Client, scala.Unit]
+  type SuccessWithTasksEvent = typings.camundaExternalTaskClientJs.camundaExternalTaskClientJsStrings.pollColonsuccess
   type Value = js.Any
 }

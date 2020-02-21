@@ -8,19 +8,19 @@ trait TextDocumentContentChangeEvent extends js.Object {
   /**
   		 * The range that got replaced.
   		 */
-  var range: Range
+  val range: Range
   /**
   		 * The length of the range that got replaced.
   		 */
-  var rangeLength: Double
+  val rangeLength: Double
   /**
   		 * The offset of the range that got replaced.
   		 */
-  var rangeOffset: Double
+  val rangeOffset: Double
   /**
   		 * The new text for the range.
   		 */
-  var text: String
+  val text: String
 }
 
 object TextDocumentContentChangeEvent {

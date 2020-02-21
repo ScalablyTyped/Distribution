@@ -11,7 +11,7 @@ trait UpgradeTarget extends js.Object {
     */
   var AutoUpgrade: js.UndefOr[Boolean] = js.native
   /**
-    * The version of the database engine that a DB instance can be upgraded to.
+    * The version of the database engine that an instance can be upgraded to.
     */
   var Description: js.UndefOr[String] = js.native
   /**

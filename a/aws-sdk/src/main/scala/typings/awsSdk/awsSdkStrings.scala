@@ -67,6 +67,8 @@ import typings.awsSdk.appconfigMod._ValidatorType
 import typings.awsSdk.applicationautoscalingMod._MetricAggregationType
 import typings.awsSdk.applicationautoscalingMod._ScalableDimension
 import typings.awsSdk.applicationautoscalingMod._ServiceNamespace
+import typings.awsSdk.applicationinsightsMod._ConfigurationEventResourceType
+import typings.awsSdk.applicationinsightsMod._ConfigurationEventStatus
 import typings.awsSdk.applicationinsightsMod._FeedbackValue
 import typings.awsSdk.applicationinsightsMod._LogFilter
 import typings.awsSdk.applicationinsightsMod._SeverityLevel
@@ -188,6 +190,7 @@ import typings.awsSdk.cloudformationMod._DeprecatedStatus
 import typings.awsSdk.cloudformationMod._DifferenceType
 import typings.awsSdk.cloudformationMod._HandlerErrorCode
 import typings.awsSdk.cloudformationMod._OnFailure
+import typings.awsSdk.cloudformationMod._PermissionModels
 import typings.awsSdk.cloudformationMod._ProvisioningType
 import typings.awsSdk.cloudformationMod._RegistrationStatus
 import typings.awsSdk.cloudformationMod._ResourceSignalStatus
@@ -228,6 +231,7 @@ import typings.awsSdk.cloudsearchMod._SuggesterFuzzyMatching
 import typings.awsSdk.cloudsearchdomainMod._QueryParser
 import typings.awsSdk.cloudtrailMod._LookupAttributeKey
 import typings.awsSdk.cloudtrailMod._ReadWriteType
+import typings.awsSdk.cloudwatchMod._AnomalyDetectorStateValue
 import typings.awsSdk.cloudwatchMod._HistoryItemType
 import typings.awsSdk.cloudwatchMod._ScanBy
 import typings.awsSdk.cloudwatchMod._StandardUnit
@@ -1047,6 +1051,7 @@ import typings.awsSdk.iotthingsgraphMod._UploadStatus
 import typings.awsSdk.kafkaMod._ClientBroker
 import typings.awsSdk.kafkaMod._ClusterState
 import typings.awsSdk.kafkaMod._EnhancedMonitoring
+import typings.awsSdk.kafkaMod._KafkaVersionStatus
 import typings.awsSdk.kendraMod._DataSourceStatus
 import typings.awsSdk.kendraMod._DataSourceSyncJobStatus
 import typings.awsSdk.kendraMod._DatabaseEngineType
@@ -1760,6 +1765,7 @@ import typings.awsSdk.robomakerMod._RobotDeploymentStep
 import typings.awsSdk.robomakerMod._RobotSoftwareSuiteType
 import typings.awsSdk.robomakerMod._RobotSoftwareSuiteVersionType
 import typings.awsSdk.robomakerMod._RobotStatus
+import typings.awsSdk.robomakerMod._SimulationJobBatchStatus
 import typings.awsSdk.robomakerMod._SimulationJobErrorCode
 import typings.awsSdk.robomakerMod._SimulationJobStatus
 import typings.awsSdk.robomakerMod._SimulationSoftwareSuiteType
@@ -2173,6 +2179,7 @@ import typings.awsSdk.workdocsMod._UserStatusType
 import typings.awsSdk.workdocsMod._UserType
 import typings.awsSdk.worklinkMod._DeviceStatus
 import typings.awsSdk.worklinkMod._DomainStatus
+import typings.awsSdk.workmailMod._AccessControlRuleEffect
 import typings.awsSdk.workmailMod._EntityState
 import typings.awsSdk.workmailMod._PermissionType
 import typings.awsSdk.workspacesMod._AccessPropertyValue
@@ -3361,6 +3368,7 @@ object awsSdkStrings {
        with _InputStatus
        with _InstanceStatus
        with _IpSetStatus
+       with _KafkaVersionStatus
        with _LedgerState
        with _MeshStatusCode
        with _ModelVersionStatus
@@ -3813,7 +3821,8 @@ object awsSdkStrings {
   
   @js.native
   sealed trait ALLOW
-    extends _AccessPropertyValue
+    extends _AccessControlRuleEffect
+       with _AccessPropertyValue
        with _DefaultAction
        with _IAMUserAccessToBilling
        with _Origination
@@ -5140,6 +5149,9 @@ object awsSdkStrings {
        with typings.awsSdk.acmpcaMod._RevocationReason
   
   @js.native
+  sealed trait Abandoned extends _ActionExecutionStatus
+  
+  @js.native
   sealed trait Accept_ extends _HITAccessActions
   
   @js.native
@@ -5570,6 +5582,9 @@ object awsSdkStrings {
   sealed trait AutoScalingGroup extends _RecommendationSourceType
   
   @js.native
+  sealed trait AutoScalingGroupInvalidConfiguration extends _NodegroupIssueCode
+  
+  @js.native
   sealed trait AutoScalingGroupNotFound extends _NodegroupIssueCode
   
   @js.native
@@ -5706,7 +5721,9 @@ object awsSdkStrings {
   sealed trait BASE_REF extends _WebhookFilterType
   
   @js.native
-  sealed trait BASIC extends _DetailType
+  sealed trait BASIC
+    extends _DetailType
+       with typings.awsSdk.datasyncMod._LogLevel
   
   @js.native
   sealed trait BASIC_AUTH extends _AuthType
@@ -6238,7 +6255,13 @@ object awsSdkStrings {
   sealed trait Basic_ extends _License
   
   @js.native
+  sealed trait BatchCanceled extends _SimulationJobErrorCode
+  
+  @js.native
   sealed trait BatchPrediction extends _TaggableResourceType
+  
+  @js.native
+  sealed trait BatchTimedOut extends _SimulationJobErrorCode
   
   @js.native
   sealed trait Bayesian extends _HyperParameterTuningJobStrategyType
@@ -6437,7 +6460,8 @@ object awsSdkStrings {
   
   @js.native
   sealed trait CANCELLING
-    extends typings.awsSdk.amplifyMod._JobStatus
+    extends _ContactStatus
+       with typings.awsSdk.amplifyMod._JobStatus
        with _MaintenanceWindowExecutionStatus
   
   @js.native
@@ -6733,7 +6757,7 @@ object awsSdkStrings {
   sealed trait CLOUD extends _DeploymentTarget
   
   @js.native
-  sealed trait CLOUDFORMATION extends js.Object
+  sealed trait CLOUDFORMATION extends _ConfigurationEventResourceType
   
   @js.native
   sealed trait CLOUDFORMATION_STACK_1_0 extends _QueryType
@@ -6746,6 +6770,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait CLOUDFRONT extends _Scope
+  
+  @js.native
+  sealed trait CLOUDWATCH_ALARM extends _ConfigurationEventResourceType
   
   @js.native
   sealed trait CLOUDWATCH_LOGS extends _Destination
@@ -6941,7 +6968,9 @@ object awsSdkStrings {
   sealed trait COMMON extends _AuthenticationScheme
   
   @js.native
-  sealed trait COMPACT extends _ManifestLayout
+  sealed trait COMPACT
+    extends _ManifestLayout
+       with typings.awsSdk.mediapackagevodMod._ManifestLayout
   
   @js.native
   sealed trait COMPANY extends _ContactType
@@ -7777,7 +7806,11 @@ object awsSdkStrings {
   sealed trait Canceled_
     extends typings.awsSdk.robomakerMod._DeploymentStatus
        with _SigningProfileStatus
+       with _SimulationJobBatchStatus
        with _SimulationJobStatus
+  
+  @js.native
+  sealed trait Canceling_ extends _SimulationJobBatchStatus
   
   @js.native
   sealed trait CancellationFailed extends _FailureType
@@ -7978,6 +8011,7 @@ object awsSdkStrings {
        with _RadiusStatus
        with _SchemaExtensionStatus
        with _SecondaryStatus
+       with _SimulationJobBatchStatus
        with _SimulationJobStatus
        with typings.awsSdk.directoryserviceMod._SnapshotStatus
        with typings.awsSdk.iotMod._Status
@@ -7986,7 +8020,9 @@ object awsSdkStrings {
        with _TrialComponentPrimaryStatus
   
   @js.native
-  sealed trait Completing_ extends _JobStatus
+  sealed trait Completing_
+    extends _JobStatus
+       with _SimulationJobBatchStatus
   
   @js.native
   sealed trait Composite extends _MessageFormatType
@@ -8808,7 +8844,8 @@ object awsSdkStrings {
   
   @js.native
   sealed trait DENY
-    extends _AccessPropertyValue
+    extends _AccessControlRuleEffect
+       with _AccessPropertyValue
        with _DefaultAction
        with _IAMUserAccessToBilling
        with _Origination
@@ -8868,6 +8905,7 @@ object awsSdkStrings {
     extends _DeprecatedStatus
        with _DetectorModelVersionStatus
        with _ImageStatus
+       with _KafkaVersionStatus
        with _ProvisioningArtifactGuidance
        with typings.awsSdk.swfMod._RegistrationStatus
   
@@ -10525,6 +10563,7 @@ object awsSdkStrings {
   @js.native
   sealed trait ERROR
     extends _AssessmentRunState
+       with _ConfigurationEventStatus
        with _ConnectionStatus
        with _ContinuousExportStatus
        with _EventSeverity
@@ -10834,6 +10873,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait Ec2SecurityGroupNotFound extends _NodegroupIssueCode
+  
+  @js.native
+  sealed trait Ec2SubnetNotFound extends _NodegroupIssueCode
   
   @js.native
   sealed trait EcsClusterArn extends _LayerAttributesKeys
@@ -11828,6 +11870,7 @@ object awsSdkStrings {
   sealed trait FULL
     extends _DetailType
        with _ManifestLayout
+       with typings.awsSdk.mediapackagevodMod._ManifestLayout
        with typings.awsSdk.inspectorMod._ReportType
        with _S3OneTimeClassificationType
        with _TrainingMode
@@ -11958,6 +12001,7 @@ object awsSdkStrings {
        with _ServiceState
        with _SessionStatus
        with _SigningStatus
+       with _SimulationJobBatchStatus
        with _SimulationJobStatus
        with typings.awsSdk.directoryserviceMod._SnapshotStatus
        with _StageExecutionStatus
@@ -13545,7 +13589,8 @@ object awsSdkStrings {
   
   @js.native
   sealed trait INFO
-    extends _EventSeverity
+    extends _ConfigurationEventStatus
+       with _EventSeverity
        with _LogFilter
        with typings.awsSdk.kinesisanalyticsv2Mod._LogLevel
        with typings.awsSdk.iotMod._LogLevel
@@ -14264,6 +14309,7 @@ object awsSdkStrings {
        with _ScalingActivityStatusCode
        with typings.awsSdk.applicationautoscalingMod._ScalingActivityStatusCode
        with _SigningStatus
+       with _SimulationJobBatchStatus
        with _StageExecutionStatus
        with typings.awsSdk.iotMod._Status
        with typings.awsSdk.glacierMod._StatusCode
@@ -14557,7 +14603,17 @@ object awsSdkStrings {
   sealed trait InvalidS3Resource extends _SimulationJobErrorCode
   
   @js.native
+  sealed trait InvalidSecurityGroup
+    extends _LastUpdateStatusReasonCode
+       with _StateReasonCode
+  
+  @js.native
   sealed trait InvalidSendingPoolName extends _BulkEmailStatus
+  
+  @js.native
+  sealed trait InvalidSubnet
+    extends _LastUpdateStatusReasonCode
+       with _StateReasonCode
   
   @js.native
   sealed trait Invalid_ extends _FeedbackValueType
@@ -14963,6 +15019,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait KUR extends _LanguageCode
+  
+  @js.native
+  sealed trait KVM extends _HostEnvironment
   
   @js.native
   sealed trait KW
@@ -15704,6 +15763,9 @@ object awsSdkStrings {
   
   @js.native
   sealed trait `Light Utilization` extends _OfferingTypeValues
+  
+  @js.native
+  sealed trait LimitExceeded extends _SimulationJobErrorCode
   
   @js.native
   sealed trait LimitExceededException extends _BatchReadExceptionType
@@ -17515,10 +17577,14 @@ object awsSdkStrings {
   sealed trait NUMBER_COMPARISON extends _RuleType
   
   @js.native
-  sealed trait NUMBER_WITH_DURATION extends _SegmentTemplateFormat
+  sealed trait NUMBER_WITH_DURATION
+    extends _SegmentTemplateFormat
+       with typings.awsSdk.mediapackagevodMod._SegmentTemplateFormat
   
   @js.native
-  sealed trait NUMBER_WITH_TIMELINE extends _SegmentTemplateFormat
+  sealed trait NUMBER_WITH_TIMELINE
+    extends _SegmentTemplateFormat
+       with typings.awsSdk.mediapackagevodMod._SegmentTemplateFormat
   
   @js.native
   sealed trait NYA extends _LanguageCode
@@ -17781,6 +17847,7 @@ object awsSdkStrings {
        with _H265AdaptiveQuantization
        with typings.awsSdk.medialiveMod._H265AdaptiveQuantization
        with _H265SampleAdaptiveOffsetFilterMode
+       with typings.awsSdk.datasyncMod._LogLevel
        with _LogLevel
        with _Mpeg2AdaptiveQuantization
        with _ObjectLockLegalHoldStatus
@@ -18624,6 +18691,9 @@ object awsSdkStrings {
   sealed trait PENDING_NEXT_RUN extends _CampaignStatus
   
   @js.native
+  sealed trait PENDING_TRAINING extends _AnomalyDetectorStateValue
+  
+  @js.native
   sealed trait PENDING_TRANSFER extends _CertificateStatus
   
   @js.native
@@ -19356,6 +19426,7 @@ object awsSdkStrings {
        with typings.awsSdk.applicationautoscalingMod._ScalingActivityStatusCode
        with _ScheduleStatus
        with _ServiceState
+       with _SimulationJobBatchStatus
        with _SimulationJobStatus
        with typings.awsSdk.ec2Mod._State
        with typings.awsSdk.lambdaMod._State
@@ -19633,6 +19704,7 @@ object awsSdkStrings {
        with _MatchmakingConfigurationStatus
        with _QueryExecutionState
        with _RemediationExecutionState
+       with _StackSetOperationStatus
        with _TaskExecutionStatus
        with _TaskStatus
        with _TranscriptionJobStatus
@@ -20897,6 +20969,9 @@ object awsSdkStrings {
        with _InvocationType
   
   @js.native
+  sealed trait RequestThrottled extends _SimulationJobErrorCode
+  
+  @js.native
   sealed trait Requested_ extends _DirectoryStage
   
   @js.native
@@ -21503,6 +21578,9 @@ object awsSdkStrings {
   sealed trait SELF_CONTAINED extends _MovReference
   
   @js.native
+  sealed trait SELF_MANAGED extends _PermissionModels
+  
+  @js.native
   sealed trait SELF_SIGNED
     extends _RtmpOutputCertificateMode
        with _SmoothGroupCertificateMode
@@ -21601,7 +21679,9 @@ object awsSdkStrings {
   sealed trait SERVICE_LOG extends _ArtifactType
   
   @js.native
-  sealed trait SERVICE_MANAGED extends _IdentityProviderType
+  sealed trait SERVICE_MANAGED
+    extends _IdentityProviderType
+       with _PermissionModels
   
   @js.native
   sealed trait SERVICE_NAME extends _ListEventTypesFilterName
@@ -22227,6 +22307,9 @@ object awsSdkStrings {
        with _MessageFormatType
   
   @js.native
+  sealed trait SSM_ASSOCIATION extends _ConfigurationEventResourceType
+  
+  @js.native
   sealed trait SSM_AUTOMATION extends js.Object
   
   @js.native
@@ -22573,7 +22656,9 @@ object awsSdkStrings {
   sealed trait SUBNET_HAS_INSUFFICIENT_IP_ADDRESSES extends _FleetErrorCode
   
   @js.native
-  sealed trait SUBNET_NOT_FOUND extends _FleetErrorCode
+  sealed trait SUBNET_NOT_FOUND
+    extends _ConnectionErrorCodeType
+       with _FleetErrorCode
   
   @js.native
   sealed trait SUBORDINATE extends _CertificateAuthorityType
@@ -23281,10 +23366,12 @@ object awsSdkStrings {
        with _HyperParameterTuningJobStatus
        with _LabelingJobStatus
        with _NotebookInstanceStatus
+       with _PipelineExecutionStatus
        with _ProcessingJobStatus
        with _RuleEvaluationStatus
        with _ScheduleStatus
        with _SecondaryStatus
+       with _StageExecutionStatus
        with _TrainingJobStatus
        with _TransformJobStatus
        with _UserImportJobStatusType
@@ -23300,9 +23387,11 @@ object awsSdkStrings {
        with _HyperParameterTuningJobStatus
        with _LabelingJobStatus
        with _NotebookInstanceStatus
+       with _PipelineExecutionStatus
        with _ProcessingJobStatus
        with _RuleEvaluationStatus
        with _SecondaryStatus
+       with _StageExecutionStatus
        with _TrainingJobStatus
        with _TransformJobStatus
        with _UserImportJobStatusType
@@ -23339,7 +23428,9 @@ object awsSdkStrings {
     extends typings.awsSdk.eksMod._ErrorCode
   
   @js.native
-  sealed trait SubnetOutOfIPAddresses extends _StateReasonCode
+  sealed trait SubnetOutOfIPAddresses
+    extends _LastUpdateStatusReasonCode
+       with _StateReasonCode
   
   @js.native
   sealed trait SucceedStateEntered extends _HistoryEventType
@@ -23846,7 +23937,9 @@ object awsSdkStrings {
   sealed trait TIME_STAMPING extends _ExtendedKeyUsageName
   
   @js.native
-  sealed trait TIME_WITH_TIMELINE extends _SegmentTemplateFormat
+  sealed trait TIME_WITH_TIMELINE
+    extends _SegmentTemplateFormat
+       with typings.awsSdk.mediapackagevodMod._SegmentTemplateFormat
   
   @js.native
   sealed trait TIR extends _LanguageCode
@@ -24017,7 +24110,12 @@ object awsSdkStrings {
     extends typings.awsSdk.rdsMod._TargetType
   
   @js.native
-  sealed trait TRAINED extends _ModelStatus
+  sealed trait TRAINED
+    extends _AnomalyDetectorStateValue
+       with _ModelStatus
+  
+  @js.native
+  sealed trait TRAINED_INSUFFICIENT_DATA extends _AnomalyDetectorStateValue
   
   @js.native
   sealed trait TRAINING extends _ModelStatus
@@ -24042,6 +24140,10 @@ object awsSdkStrings {
   
   @js.native
   sealed trait TRANSCODING extends _JobPhase
+  
+  @js.native
+  sealed trait TRANSFER
+    extends typings.awsSdk.datasyncMod._LogLevel
   
   @js.native
   sealed trait TRANSFERABLE extends _Transferable
@@ -24361,6 +24463,7 @@ object awsSdkStrings {
        with _CommandStatus
        with typings.awsSdk.codepipelineMod._JobStatus
        with _NotificationEvent
+       with _SimulationJobBatchStatus
   
   @js.native
   sealed trait TimerCanceled
@@ -24383,6 +24486,9 @@ object awsSdkStrings {
   sealed trait TimestampDescending
     extends typings.awsSdk.codeguruprofilerMod._OrderBy
        with _ScanBy
+  
+  @js.native
+  sealed trait TimingOut extends _SimulationJobBatchStatus
   
   @js.native
   sealed trait Title_
@@ -24952,10 +25058,16 @@ object awsSdkStrings {
   sealed trait USER_LOCKED_OUT extends _ConnectionErrorCodeType
   
   @js.native
+  sealed trait USER_LOGGED_IN extends _ConnectionErrorCodeType
+  
+  @js.native
   sealed trait USER_NAME extends _UserSortType
   
   @js.native
   sealed trait USER_NAME_NOT_FOUND extends _UserStackAssociationErrorCode
+  
+  @js.native
+  sealed trait USER_NOT_FOUND extends _ConnectionErrorCodeType
   
   @js.native
   sealed trait USER_PASSWORD_AUTH
@@ -25591,7 +25703,8 @@ object awsSdkStrings {
   
   @js.native
   sealed trait WARN
-    extends _EventSeverity
+    extends _ConfigurationEventStatus
+       with _EventSeverity
        with _LogFilter
        with typings.awsSdk.kinesisanalyticsv2Mod._LogLevel
        with typings.awsSdk.iotMod._LogLevel
@@ -31037,6 +31150,9 @@ object awsSdkStrings {
   sealed trait provided extends _Runtime
   
   @js.native
+  sealed trait `provisioned-not-publicly-advertisable` extends _ByoipCidrState
+  
+  @js.native
   sealed trait provisioned_
     extends _ByoipCidrState
        with _ThroughputMode
@@ -34386,6 +34502,8 @@ object awsSdkStrings {
   @scala.inline
   def A_A_COMPROMISE: A_A_COMPROMISE = "A_A_COMPROMISE".asInstanceOf[A_A_COMPROMISE]
   @scala.inline
+  def Abandoned: Abandoned = "Abandoned".asInstanceOf[Abandoned]
+  @scala.inline
   def Accept_ : Accept_ = "Accept".asInstanceOf[Accept_]
   @scala.inline
   def Accepted_ : Accepted_ = "Accepted".asInstanceOf[Accepted_]
@@ -34619,6 +34737,8 @@ object awsSdkStrings {
   def AutoBundleOnDeploy: AutoBundleOnDeploy = "AutoBundleOnDeploy".asInstanceOf[AutoBundleOnDeploy]
   @scala.inline
   def AutoScalingGroup: AutoScalingGroup = "AutoScalingGroup".asInstanceOf[AutoScalingGroup]
+  @scala.inline
+  def AutoScalingGroupInvalidConfiguration: AutoScalingGroupInvalidConfiguration = "AutoScalingGroupInvalidConfiguration".asInstanceOf[AutoScalingGroupInvalidConfiguration]
   @scala.inline
   def AutoScalingGroupNotFound: AutoScalingGroupNotFound = "AutoScalingGroupNotFound".asInstanceOf[AutoScalingGroupNotFound]
   @scala.inline
@@ -34922,7 +35042,11 @@ object awsSdkStrings {
   @scala.inline
   def Basic_ : Basic_ = "Basic".asInstanceOf[Basic_]
   @scala.inline
+  def BatchCanceled: BatchCanceled = "BatchCanceled".asInstanceOf[BatchCanceled]
+  @scala.inline
   def BatchPrediction: BatchPrediction = "BatchPrediction".asInstanceOf[BatchPrediction]
+  @scala.inline
+  def BatchTimedOut: BatchTimedOut = "BatchTimedOut".asInstanceOf[BatchTimedOut]
   @scala.inline
   def Bayesian: Bayesian = "Bayesian".asInstanceOf[Bayesian]
   @scala.inline
@@ -35159,6 +35283,8 @@ object awsSdkStrings {
   def CLOUDFORMATION_STACK_NOT_EXISTING: CLOUDFORMATION_STACK_NOT_EXISTING = "CLOUDFORMATION_STACK_NOT_EXISTING".asInstanceOf[CLOUDFORMATION_STACK_NOT_EXISTING]
   @scala.inline
   def CLOUDFRONT: CLOUDFRONT = "CLOUDFRONT".asInstanceOf[CLOUDFRONT]
+  @scala.inline
+  def CLOUDWATCH_ALARM: CLOUDWATCH_ALARM = "CLOUDWATCH_ALARM".asInstanceOf[CLOUDWATCH_ALARM]
   @scala.inline
   def CLOUDWATCH_LOGS: CLOUDWATCH_LOGS = "CLOUDWATCH_LOGS".asInstanceOf[CLOUDWATCH_LOGS]
   @scala.inline
@@ -35583,6 +35709,8 @@ object awsSdkStrings {
   def Cancel_ : Cancel_ = "Cancel".asInstanceOf[Cancel_]
   @scala.inline
   def Canceled_ : Canceled_ = "Canceled".asInstanceOf[Canceled_]
+  @scala.inline
+  def Canceling_ : Canceling_ = "Canceling".asInstanceOf[Canceling_]
   @scala.inline
   def CancellationFailed: CancellationFailed = "CancellationFailed".asInstanceOf[CancellationFailed]
   @scala.inline
@@ -36849,6 +36977,8 @@ object awsSdkStrings {
   def Ec2SecurityGroupDeletionFailure: Ec2SecurityGroupDeletionFailure = "Ec2SecurityGroupDeletionFailure".asInstanceOf[Ec2SecurityGroupDeletionFailure]
   @scala.inline
   def Ec2SecurityGroupNotFound: Ec2SecurityGroupNotFound = "Ec2SecurityGroupNotFound".asInstanceOf[Ec2SecurityGroupNotFound]
+  @scala.inline
+  def Ec2SubnetNotFound: Ec2SubnetNotFound = "Ec2SubnetNotFound".asInstanceOf[Ec2SubnetNotFound]
   @scala.inline
   def EcsClusterArn: EcsClusterArn = "EcsClusterArn".asInstanceOf[EcsClusterArn]
   @scala.inline
@@ -38484,7 +38614,11 @@ object awsSdkStrings {
   @scala.inline
   def InvalidS3Resource: InvalidS3Resource = "InvalidS3Resource".asInstanceOf[InvalidS3Resource]
   @scala.inline
+  def InvalidSecurityGroup: InvalidSecurityGroup = "InvalidSecurityGroup".asInstanceOf[InvalidSecurityGroup]
+  @scala.inline
   def InvalidSendingPoolName: InvalidSendingPoolName = "InvalidSendingPoolName".asInstanceOf[InvalidSendingPoolName]
+  @scala.inline
+  def InvalidSubnet: InvalidSubnet = "InvalidSubnet".asInstanceOf[InvalidSubnet]
   @scala.inline
   def Invalid_ : Invalid_ = "Invalid".asInstanceOf[Invalid_]
   @scala.inline
@@ -38683,6 +38817,8 @@ object awsSdkStrings {
   def KUA: KUA = "KUA".asInstanceOf[KUA]
   @scala.inline
   def KUR: KUR = "KUR".asInstanceOf[KUR]
+  @scala.inline
+  def KVM: KVM = "KVM".asInstanceOf[KVM]
   @scala.inline
   def KW: KW = "KW".asInstanceOf[KW]
   @scala.inline
@@ -39023,6 +39159,8 @@ object awsSdkStrings {
   def LessThanThreshold: LessThanThreshold = "LessThanThreshold".asInstanceOf[LessThanThreshold]
   @scala.inline
   def `Light Utilization`: `Light Utilization` = "Light Utilization".asInstanceOf[`Light Utilization`]
+  @scala.inline
+  def LimitExceeded: LimitExceeded = "LimitExceeded".asInstanceOf[LimitExceeded]
   @scala.inline
   def LimitExceededException: LimitExceededException = "LimitExceededException".asInstanceOf[LimitExceededException]
   @scala.inline
@@ -40350,6 +40488,8 @@ object awsSdkStrings {
   @scala.inline
   def PENDING_NEXT_RUN: PENDING_NEXT_RUN = "PENDING_NEXT_RUN".asInstanceOf[PENDING_NEXT_RUN]
   @scala.inline
+  def PENDING_TRAINING: PENDING_TRAINING = "PENDING_TRAINING".asInstanceOf[PENDING_TRAINING]
+  @scala.inline
   def PENDING_TRANSFER: PENDING_TRANSFER = "PENDING_TRANSFER".asInstanceOf[PENDING_TRANSFER]
   @scala.inline
   def PENDING_UPDATE: PENDING_UPDATE = "PENDING_UPDATE".asInstanceOf[PENDING_UPDATE]
@@ -41468,6 +41608,8 @@ object awsSdkStrings {
   @scala.inline
   def RequestResponse: RequestResponse = "RequestResponse".asInstanceOf[RequestResponse]
   @scala.inline
+  def RequestThrottled: RequestThrottled = "RequestThrottled".asInstanceOf[RequestThrottled]
+  @scala.inline
   def Requested_ : Requested_ = "Requested".asInstanceOf[Requested_]
   @scala.inline
   def Requester: Requester = "Requester".asInstanceOf[Requester]
@@ -41787,6 +41929,8 @@ object awsSdkStrings {
   def SELF: SELF = "SELF".asInstanceOf[SELF]
   @scala.inline
   def SELF_CONTAINED: SELF_CONTAINED = "SELF_CONTAINED".asInstanceOf[SELF_CONTAINED]
+  @scala.inline
+  def SELF_MANAGED: SELF_MANAGED = "SELF_MANAGED".asInstanceOf[SELF_MANAGED]
   @scala.inline
   def SELF_SIGNED: SELF_SIGNED = "SELF_SIGNED".asInstanceOf[SELF_SIGNED]
   @scala.inline
@@ -42161,6 +42305,8 @@ object awsSdkStrings {
   def SSLv3: SSLv3 = "SSLv3".asInstanceOf[SSLv3]
   @scala.inline
   def SSML: SSML = "SSML".asInstanceOf[SSML]
+  @scala.inline
+  def SSM_ASSOCIATION: SSM_ASSOCIATION = "SSM_ASSOCIATION".asInstanceOf[SSM_ASSOCIATION]
   @scala.inline
   def SSM_AUTOMATION: SSM_AUTOMATION = "SSM_AUTOMATION".asInstanceOf[SSM_AUTOMATION]
   @scala.inline
@@ -42944,6 +43090,8 @@ object awsSdkStrings {
   @scala.inline
   def TRAINED: TRAINED = "TRAINED".asInstanceOf[TRAINED]
   @scala.inline
+  def TRAINED_INSUFFICIENT_DATA: TRAINED_INSUFFICIENT_DATA = "TRAINED_INSUFFICIENT_DATA".asInstanceOf[TRAINED_INSUFFICIENT_DATA]
+  @scala.inline
   def TRAINING: TRAINING = "TRAINING".asInstanceOf[TRAINING]
   @scala.inline
   def TRAINING_COMPLETE: TRAINING_COMPLETE = "TRAINING_COMPLETE".asInstanceOf[TRAINING_COMPLETE]
@@ -42957,6 +43105,8 @@ object awsSdkStrings {
   def TRANSACTIONAL: TRANSACTIONAL = "TRANSACTIONAL".asInstanceOf[TRANSACTIONAL]
   @scala.inline
   def TRANSCODING: TRANSCODING = "TRANSCODING".asInstanceOf[TRANSCODING]
+  @scala.inline
+  def TRANSFER: TRANSFER = "TRANSFER".asInstanceOf[TRANSFER]
   @scala.inline
   def TRANSFERABLE: TRANSFERABLE = "TRANSFERABLE".asInstanceOf[TRANSFERABLE]
   @scala.inline
@@ -43135,6 +43285,8 @@ object awsSdkStrings {
   def TimestampAscending: TimestampAscending = "TimestampAscending".asInstanceOf[TimestampAscending]
   @scala.inline
   def TimestampDescending: TimestampDescending = "TimestampDescending".asInstanceOf[TimestampDescending]
+  @scala.inline
+  def TimingOut: TimingOut = "TimingOut".asInstanceOf[TimingOut]
   @scala.inline
   def Title_ : Title_ = "Title".asInstanceOf[Title_]
   @scala.inline
@@ -43380,9 +43532,13 @@ object awsSdkStrings {
   @scala.inline
   def USER_LOCKED_OUT: USER_LOCKED_OUT = "USER_LOCKED_OUT".asInstanceOf[USER_LOCKED_OUT]
   @scala.inline
+  def USER_LOGGED_IN: USER_LOGGED_IN = "USER_LOGGED_IN".asInstanceOf[USER_LOGGED_IN]
+  @scala.inline
   def USER_NAME: USER_NAME = "USER_NAME".asInstanceOf[USER_NAME]
   @scala.inline
   def USER_NAME_NOT_FOUND: USER_NAME_NOT_FOUND = "USER_NAME_NOT_FOUND".asInstanceOf[USER_NAME_NOT_FOUND]
+  @scala.inline
+  def USER_NOT_FOUND: USER_NOT_FOUND = "USER_NOT_FOUND".asInstanceOf[USER_NOT_FOUND]
   @scala.inline
   def USER_PASSWORD_AUTH: USER_PASSWORD_AUTH = "USER_PASSWORD_AUTH".asInstanceOf[USER_PASSWORD_AUTH]
   @scala.inline
@@ -46233,6 +46389,8 @@ object awsSdkStrings {
   def protocol: protocol = "protocol".asInstanceOf[protocol]
   @scala.inline
   def provided: provided = "provided".asInstanceOf[provided]
+  @scala.inline
+  def `provisioned-not-publicly-advertisable`: `provisioned-not-publicly-advertisable` = "provisioned-not-publicly-advertisable".asInstanceOf[`provisioned-not-publicly-advertisable`]
   @scala.inline
   def provisioned_ : provisioned_ = "provisioned".asInstanceOf[provisioned_]
   @scala.inline

@@ -88,7 +88,7 @@ trait TextFrameData extends js.Object {
   var leftMargin: js.UndefOr[Double] = js.undefined
   /**
     *
-    * Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
+    * Represents the angle to which the text is oriented for the text frame. See Excel.ShapeTextOrientation for details.
     *
     * [Api set: ExcelApi 1.9]
     */

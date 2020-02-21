@@ -30,6 +30,12 @@ package object kafkaMod {
     - java.lang.String
   */
   type EnhancedMonitoring = typings.awsSdk.kafkaMod._EnhancedMonitoring | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ACTIVE
+    - typings.awsSdk.awsSdkStrings.DEPRECATED
+    - java.lang.String
+  */
+  type KafkaVersionStatus = typings.awsSdk.kafkaMod._KafkaVersionStatus | java.lang.String
   type MaxResults = scala.Double
   type NodeType = typings.awsSdk.awsSdkStrings.BROKER | java.lang.String
   type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kafkaMod.Blob | java.lang.String
@@ -49,6 +55,7 @@ package object kafkaMod {
   type listOfClusterOperationInfo = js.Array[typings.awsSdk.kafkaMod.ClusterOperationInfo]
   type listOfConfiguration = js.Array[typings.awsSdk.kafkaMod.Configuration]
   type listOfConfigurationRevision = js.Array[typings.awsSdk.kafkaMod.ConfigurationRevision]
+  type listOfKafkaVersion = js.Array[typings.awsSdk.kafkaMod.KafkaVersion]
   type listOfNodeInfo = js.Array[typings.awsSdk.kafkaMod.NodeInfo]
   type listOfString = js.Array[typings.awsSdk.kafkaMod.string]
   type long = scala.Double

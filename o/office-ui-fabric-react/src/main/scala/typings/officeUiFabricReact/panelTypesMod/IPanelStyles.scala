@@ -35,7 +35,7 @@ trait IPanelStyles extends js.Object {
     */
   var header: IStyle
   /**
-    * Style for the header inner p element.
+    * Style for the header text div element.
     */
   var headerText: IStyle
   /**

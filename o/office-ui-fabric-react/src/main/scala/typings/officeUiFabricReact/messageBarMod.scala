@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.messageBarTypesMod.IMessageBarProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object messageBarMod extends js.Object {
     def this(props: IMessageBarProps) = this()
   }
   
-  val MessageBar: StatelessComponent[IMessageBarProps] = js.native
+  val MessageBar: FunctionComponent[IMessageBarProps] = js.native
   /* static members */
   @js.native
   object MessageBarBase extends js.Object {

@@ -19,9 +19,10 @@ object utilsMod extends js.Object {
   def checkBoundaries(value: Double, min: Double, max: Double): Unit = js.native
   def checkInitialOverlap(values: js.Array[Double]): Unit = js.native
   def getMargin(element: Element): AnonBottom = js.native
-  def getPadding(element: Element): AnonBottom = js.native
+  def getPaddingAndBorder(element: Element): AnonBottom = js.native
   def getStepDecimals(step: Double): Double = js.native
   def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = js.native
+  def isStepDivisible(min: Double, max: Double, step: Double): Boolean = js.native
   def isTouchEvent(event: TouchEvent with MouseEvent): Double = js.native
   def isVertical(direction: Direction): Boolean = js.native
   def normalizeValue(

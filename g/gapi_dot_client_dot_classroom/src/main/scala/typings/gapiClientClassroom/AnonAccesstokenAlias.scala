@@ -18,8 +18,6 @@ trait AnonAccesstokenAlias extends js.Object {
   var alias: String = js.native
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.native
-  /** OAuth bearer token. */
-  var bearer_token: js.UndefOr[String] = js.native
   /** JSONP */
   var callback: js.UndefOr[String] = js.native
   /**
@@ -34,8 +32,6 @@ trait AnonAccesstokenAlias extends js.Object {
   var key: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.native
-  /** Pretty-print response. */
-  var pp: js.UndefOr[Boolean] = js.native
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */

@@ -32,9 +32,11 @@ class ClientTemplate protected () extends Element {
   def containerAsControlBarButton(): ControlBarButton = js.native
   def containerAsCustomWidget(): CustomWidget = js.native
   def containerAsDataGrid(): DataGrid = js.native
+  def containerAsDynamicImageViewer(): DynamicImageViewer = js.native
   def containerAsDynamicText(): DynamicText = js.native
   def containerAsGroupBox(): GroupBox = js.native
   def containerAsInputWidget(): InputWidget = js.native
+  def containerAsStaticImageViewer(): StaticImageViewer = js.native
   def containerAsWidgetObject(): WidgetObject = js.native
   def containerAsWidgetValue(): WidgetValue = js.native
   /**
@@ -91,6 +93,15 @@ object ClientTemplate extends js.Object {
   def createInDataGridUnderCaption(container: DataGrid): ClientTemplate = js.native
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'alternativeText' property
+    * of the parent DynamicImageViewer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.6.0 and higher
+    */
+  def createInDynamicImageViewerUnderAlternativeText(container: DynamicImageViewer): ClientTemplate = js.native
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * The new ClientTemplate will be automatically stored in the 'content' property
     * of the parent DynamicText element passed as argument.
     */
@@ -110,6 +121,15 @@ object ClientTemplate extends js.Object {
     *  7.18.0 and higher
     */
   def createInInputWidgetUnderLabelTemplate(container: InputWidget): ClientTemplate = js.native
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'alternativeText' property
+    * of the parent StaticImageViewer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.6.0 and higher
+    */
+  def createInStaticImageViewerUnderAlternativeText(container: StaticImageViewer): ClientTemplate = js.native
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * The new ClientTemplate will be automatically stored in the 'labelTemplate' property

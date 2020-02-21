@@ -19,6 +19,10 @@ trait Options extends js.Object {
     */
   var Gid: js.UndefOr[typings.awsSdk.datasyncMod.Gid] = js.native
   /**
+    * A value that determines the type of logs DataSync will deliver to your AWS CloudWatch Logs file. If set to OFF, no logs will be delivered. BASIC will deliver a few logs per transfer operation and TRANSFER will deliver a verbose log that contains logs for every file that is transferred.
+    */
+  var LogLevel: js.UndefOr[typings.awsSdk.datasyncMod.LogLevel] = js.native
+  /**
     * A value that indicates the last time that a file was modified (that is, a file was written to) before the PREPARING phase.  Default value: PRESERVE.  PRESERVE: Preserve original Mtime (recommended)  NONE: Ignore Mtime.   If Mtime is set to PRESERVE, Atime must be set to BEST_EFFORT. If Mtime is set to NONE, Atime must also be set to NONE.  
     */
   var Mtime: js.UndefOr[typings.awsSdk.datasyncMod.Mtime] = js.native
@@ -58,6 +62,7 @@ object Options {
     Atime: Atime = null,
     BytesPerSecond: Int | Double = null,
     Gid: Gid = null,
+    LogLevel: LogLevel = null,
     Mtime: Mtime = null,
     OverwriteMode: OverwriteMode = null,
     PosixPermissions: PosixPermissions = null,
@@ -71,6 +76,7 @@ object Options {
     if (Atime != null) __obj.updateDynamic("Atime")(Atime.asInstanceOf[js.Any])
     if (BytesPerSecond != null) __obj.updateDynamic("BytesPerSecond")(BytesPerSecond.asInstanceOf[js.Any])
     if (Gid != null) __obj.updateDynamic("Gid")(Gid.asInstanceOf[js.Any])
+    if (LogLevel != null) __obj.updateDynamic("LogLevel")(LogLevel.asInstanceOf[js.Any])
     if (Mtime != null) __obj.updateDynamic("Mtime")(Mtime.asInstanceOf[js.Any])
     if (OverwriteMode != null) __obj.updateDynamic("OverwriteMode")(OverwriteMode.asInstanceOf[js.Any])
     if (PosixPermissions != null) __obj.updateDynamic("PosixPermissions")(PosixPermissions.asInstanceOf[js.Any])

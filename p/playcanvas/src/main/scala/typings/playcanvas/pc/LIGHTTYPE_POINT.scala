@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.LIGHTTYPE_POINT
+  * @type {number}
   * @description Point (local) light source.
   */
 @JSGlobal("pc.LIGHTTYPE_POINT")

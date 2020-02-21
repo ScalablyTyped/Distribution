@@ -12,6 +12,25 @@ package object applicationinsightsMod {
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.applicationinsightsMod.ClientApiVersions
   type ComponentConfiguration = java.lang.String
   type ComponentName = java.lang.String
+  type ConfigurationEventDetail = java.lang.String
+  type ConfigurationEventList = js.Array[typings.awsSdk.applicationinsightsMod.ConfigurationEvent]
+  type ConfigurationEventMonitoredResourceARN = java.lang.String
+  type ConfigurationEventResourceName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.CLOUDWATCH_ALARM
+    - typings.awsSdk.awsSdkStrings.CLOUDFORMATION
+    - typings.awsSdk.awsSdkStrings.SSM_ASSOCIATION
+    - java.lang.String
+  */
+  type ConfigurationEventResourceType = typings.awsSdk.applicationinsightsMod._ConfigurationEventResourceType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.INFO
+    - typings.awsSdk.awsSdkStrings.WARN
+    - typings.awsSdk.awsSdkStrings.ERROR
+    - java.lang.String
+  */
+  type ConfigurationEventStatus = typings.awsSdk.applicationinsightsMod._ConfigurationEventStatus | java.lang.String
+  type ConfigurationEventTime = typings.std.Date
   type EndTime = typings.std.Date
   type Feedback = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.applicationinsightsMod.FeedbackValue]
   type FeedbackKey = typings.awsSdk.awsSdkStrings.INSIGHTS_FEEDBACK | java.lang.String

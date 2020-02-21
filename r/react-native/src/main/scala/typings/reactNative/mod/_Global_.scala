@@ -19,6 +19,11 @@ object _Global_ extends js.Object {
     def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
     def error(): Unit = js.native
     def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def group(): Unit = js.native
+    def group(label: String): Unit = js.native
+    def groupCollapsed(): Unit = js.native
+    def groupCollapsed(label: String): Unit = js.native
+    def groupEnd(): Unit = js.native
     def info(): Unit = js.native
     def info(message: js.Any, optionalParams: js.Any*): Unit = js.native
     def log(): Unit = js.native

@@ -23,7 +23,7 @@ trait SchemaInternals extends js.Object {
   @JSName("$_addRule")
   def $_addRule(rule: String): Schema = js.native
   @JSName("$_addRule")
-  def $_addRule(rule: ExtensionRule): Schema = js.native
+  def $_addRule(rule: AddRuleOptions): Schema = js.native
   /**
     * Internally compiles schema.
     */

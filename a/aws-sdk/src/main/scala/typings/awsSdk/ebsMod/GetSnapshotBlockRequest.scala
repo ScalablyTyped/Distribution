@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetSnapshotBlockRequest extends js.Object {
   /**
-    * The block index of the block from which to get data. Obtain the block index by running the list changed blocks or list snapshot blocks operations.
+    * The block index of the block from which to get data. Obtain the BlockIndex by running the ListChangedBlocks or ListSnapshotBlocks operations.
     */
   var BlockIndex: typings.awsSdk.ebsMod.BlockIndex = js.native
   /**
-    * The block token of the block from which to get data. Obtain the block token by running the list changed blocks or list snapshot blocks operations.
+    * The block token of the block from which to get data. Obtain the BlockToken by running the ListChangedBlocks or ListSnapshotBlocks operations.
     */
   var BlockToken: typings.awsSdk.ebsMod.BlockToken = js.native
   /**

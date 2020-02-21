@@ -31,6 +31,7 @@ object NimblePickerProps {
     backgroundImageFn: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String = null,
     color: String = null,
     custom: js.Array[CustomEmoji] = null,
+    darkMode: js.UndefOr[Boolean] = js.undefined,
     defaultSkin: EmojiSkin = null,
     emoji: String = null,
     emojiSize: Int | Double = null,
@@ -62,6 +63,7 @@ object NimblePickerProps {
     if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(darkMode)) __obj.updateDynamic("darkMode")(darkMode.asInstanceOf[js.Any])
     if (defaultSkin != null) __obj.updateDynamic("defaultSkin")(defaultSkin.asInstanceOf[js.Any])
     if (emoji != null) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
     if (emojiSize != null) __obj.updateDynamic("emojiSize")(emojiSize.asInstanceOf[js.Any])

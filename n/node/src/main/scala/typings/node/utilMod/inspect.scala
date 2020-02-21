@@ -24,9 +24,5 @@ object inspect extends js.Object {
   object colors
     extends /* color */ StringDictionary[js.UndefOr[js.Tuple2[Double, Double]]]
   
-  @js.native
-  object styles
-    extends /* style */ StringDictionary[js.UndefOr[String]]
-  
 }
 

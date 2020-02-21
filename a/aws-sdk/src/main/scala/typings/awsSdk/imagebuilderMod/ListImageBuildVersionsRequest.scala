@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListImageBuildVersionsRequest extends js.Object {
   /**
-    *  
+    *  The filters. 
     */
   var filters: js.UndefOr[FilterList] = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the image whose build versions you wish to retrieve. 
+    *  The Amazon Resource Name (ARN) of the image whose build versions you want to retrieve. 
     */
   var imageVersionArn: ImageVersionArn = js.native
   /**

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PIXELFORMAT_SRGB
+  * @type {number}
   * @description Color-only sRGB format (WebGL2 only).
   */
 @JSGlobal("pc.PIXELFORMAT_SRGB")

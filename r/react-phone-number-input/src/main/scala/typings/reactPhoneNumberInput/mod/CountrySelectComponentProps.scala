@@ -10,10 +10,16 @@ trait CountrySelectComponentProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
+    * The list of all selectable countries (including "International")
+    */
   var options: js.UndefOr[js.Array[AnonIcon]] = js.undefined
   var tabIndex: js.UndefOr[Double | String] = js.undefined
+  /**
+    * The currently selected country code
+    */
   var value: js.UndefOr[String] = js.undefined
 }
 
@@ -24,7 +30,7 @@ object CountrySelectComponentProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     onBlur: () => Unit = null,
-    onChange: /* value */ String => Unit = null,
+    onChange: /* value */ js.UndefOr[String] => Unit = null,
     onFocus: () => Unit = null,
     options: js.Array[AnonIcon] = null,
     tabIndex: Double | String = null,

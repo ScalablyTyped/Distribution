@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ object libCommandBarMod extends js.Object {
   class CommandBarBase ()
     extends typings.officeUiFabricReact.commandBarMod.CommandBarBase
   
-  val CommandBar: StatelessComponent[ICommandBarProps] = js.native
+  val CommandBar: FunctionComponent[ICommandBarProps] = js.native
   /* static members */
   @js.native
   object CommandBarBase extends js.Object {

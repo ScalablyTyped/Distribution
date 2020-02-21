@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AnonDocumentationurl extends js.Object {
   var documentation_url: js.UndefOr[String] = js.undefined
-  var errors: js.UndefOr[js.Array[AnonCode]] = js.undefined
+  var errors: js.UndefOr[js.Array[AnonCodeField]] = js.undefined
   var headers: StringDictionary[String]
   var status: Double
 }
@@ -18,7 +18,7 @@ object AnonDocumentationurl {
     headers: StringDictionary[String],
     status: Double,
     documentation_url: String = null,
-    errors: js.Array[AnonCode] = null
+    errors: js.Array[AnonCodeField] = null
   ): AnonDocumentationurl = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (documentation_url != null) __obj.updateDynamic("documentation_url")(documentation_url.asInstanceOf[js.Any])

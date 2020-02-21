@@ -1,47 +1,46 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__csvviewer-extension"
-version := "1.2.2-11822e"
-scalaVersion := "2.12.10"
+version := "1.2.2-b9e0af"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20191223Z-800a20",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-dcd929",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200108Z-2743ff",
-  "org.scalablytyped" %%% "jupyterlab__application" % "1.2.1-27a88b",
-  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-9cd56b",
-  "org.scalablytyped" %%% "jupyterlab__attachments" % "1.2.1-5a479e",
-  "org.scalablytyped" %%% "jupyterlab__cells" % "1.2.2-0cad70",
-  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-d93460",
-  "org.scalablytyped" %%% "jupyterlab__codemirror" % "1.2.1-2a84e8",
-  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-cbcfe0",
-  "org.scalablytyped" %%% "jupyterlab__csvviewer" % "1.2.1-d2460f",
-  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-5d9a53",
-  "org.scalablytyped" %%% "jupyterlab__documentsearch" % "1.2.2-e5cd59",
-  "org.scalablytyped" %%% "jupyterlab__fileeditor" % "1.2.1-a7e8fb",
-  "org.scalablytyped" %%% "jupyterlab__notebook" % "1.2.2-c806d9",
-  "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-bada84",
-  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.2-ce4f7b",
-  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-66c6b8",
-  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-500368",
-  "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-bd0114",
-  "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-0c3ac5",
-  "org.scalablytyped" %%% "phosphor__application" % "1.7.3-7b86b2",
-  "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-a97230",
-  "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-559af0",
-  "org.scalablytyped" %%% "phosphor__datagrid" % "0.1.11-9db3bf",
-  "org.scalablytyped" %%% "phosphor__disposable" % "1.3.1-4489da",
-  "org.scalablytyped" %%% "phosphor__messaging" % "1.3.0-d1b800",
-  "org.scalablytyped" %%% "phosphor__signaling" % "1.3.1-e44366",
-  "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-edd744",
-  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-98ef91",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-78233f",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-0e1ae9",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "tern" % "0.23-dt-20191126Z-230b94")
+  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20200214Z-5a0e09",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-ffacbb",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200108Z-f39507",
+  "org.scalablytyped" %%% "jupyterlab__application" % "1.2.1-c0171d",
+  "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-99cdf6",
+  "org.scalablytyped" %%% "jupyterlab__attachments" % "1.2.1-94eb98",
+  "org.scalablytyped" %%% "jupyterlab__cells" % "1.2.2-3de9a4",
+  "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-a3719d",
+  "org.scalablytyped" %%% "jupyterlab__codemirror" % "1.2.1-55077a",
+  "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-3afb42",
+  "org.scalablytyped" %%% "jupyterlab__csvviewer" % "1.2.1-c002a7",
+  "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-486f09",
+  "org.scalablytyped" %%% "jupyterlab__documentsearch" % "1.2.2-7e9978",
+  "org.scalablytyped" %%% "jupyterlab__fileeditor" % "1.2.1-0b7a1e",
+  "org.scalablytyped" %%% "jupyterlab__notebook" % "1.2.2-b7ced6",
+  "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-c60f77",
+  "org.scalablytyped" %%% "jupyterlab__outputarea" % "1.2.2-418296",
+  "org.scalablytyped" %%% "jupyterlab__rendermime" % "1.2.1-115f15",
+  "org.scalablytyped" %%% "jupyterlab__rendermime-interfaces" % "1.5.0-3bb77a",
+  "org.scalablytyped" %%% "jupyterlab__services" % "4.2.0-5360ed",
+  "org.scalablytyped" %%% "phosphor__algorithm" % "1.2.0-f67ca9",
+  "org.scalablytyped" %%% "phosphor__application" % "1.7.3-419463",
+  "org.scalablytyped" %%% "phosphor__commands" % "1.7.2-d9ce1e",
+  "org.scalablytyped" %%% "phosphor__coreutils" % "1.3.1-4620d1",
+  "org.scalablytyped" %%% "phosphor__datagrid" % "0.1.11-335122",
+  "org.scalablytyped" %%% "phosphor__disposable" % "1.3.1-6eae76",
+  "org.scalablytyped" %%% "phosphor__messaging" % "1.3.0-d4f353",
+  "org.scalablytyped" %%% "phosphor__signaling" % "1.3.1-6b2b50",
+  "org.scalablytyped" %%% "phosphor__virtualdom" % "1.2.0-fa6e0d",
+  "org.scalablytyped" %%% "phosphor__widgets" % "1.9.3-9a92aa",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-05a52c",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20200122Z-b17eee",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "tern" % "0.23-dt-20191126Z-4d4d08")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

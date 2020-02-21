@@ -1,11 +1,13 @@
 package typings.reactNative.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
+import typings.react.mod.RefObject
+import typings.react.mod._Global_.JSX.Element
 import typings.reactNative.AnonAnimatedBoolean
 import typings.reactNative.AnonAnimatedIndex
 import typings.reactNative.AnonAnimatedItem
 import typings.reactNative.AnonAnimatedOffset
-import typings.reactNative.AnonContentLength
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +21,14 @@ class FlatList[ItemT] ()
     */
   def flashScrollIndicators(): Unit = js.native
   /**
-    * Exports some data, e.g. for perf investigations or analytics.
+    * Provides a reference to the underlying host component
     */
-  def getMetrics(): AnonContentLength = js.native
+  def getNativeScrollRef(): js.UndefOr[(RefObject[ScrollViewComponent | View]) | Null] = js.native
+  /**
+    * Provides a handle to the underlying scroll responder.
+    */
+  def getScrollResponder(): js.UndefOr[Element | Null] = js.native
+  def getScrollableNode(): js.Any = js.native
   /**
     * Tells the list an interaction has occured, which should trigger viewability calculations,
     * e.g. if waitForInteractions is true and the user has not scrolled. This is typically called
@@ -48,5 +55,7 @@ class FlatList[ItemT] ()
     * Scroll to a specific content pixel offset, like a normal `ScrollView`.
     */
   def scrollToOffset(params: AnonAnimatedOffset): Unit = js.native
+  // TODO: use `unknown` instead of `any` for Typescript >= 3.0
+  def setNativeProps(props: StringDictionary[js.Any]): Unit = js.native
 }
 

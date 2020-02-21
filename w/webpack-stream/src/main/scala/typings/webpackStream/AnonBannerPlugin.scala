@@ -26,7 +26,7 @@ trait AnonBannerPlugin extends js.Object {
   var BannerPlugin: Instantiable1[/* options */ String, typings.webpack.mod.BannerPlugin] = js.native
   var Compiler: Instantiable0[Compiler_] with TypeofCompiler = js.native
   var ContextReplacementPlugin: Instantiable1[/* resourceRegExp */ js.Any, typings.webpack.mod.ContextReplacementPlugin] = js.native
-  var DefinePlugin: Instantiable1[/* definitions */ StringDictionary[js.Any], typings.webpack.mod.DefinePlugin] = js.native
+  var DefinePlugin: TypeofClassDefinePlugin with TypeofDefinePlugin = js.native
   var DllPlugin: Instantiable1[/* options */ typings.webpack.mod.DllPlugin.Options, typings.webpack.mod.DllPlugin] = js.native
   var DllReferencePlugin: Instantiable1[
     /* options */ typings.webpack.mod.DllReferencePlugin.Options, 

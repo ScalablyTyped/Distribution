@@ -92,6 +92,8 @@ object antDesignReactNativeComponents extends antDesignReactNativeProps {
   @scala.inline
   def NativePickerDotios: ComponentType[NativePickerDotiosProps] = js.constructorOf[typings.antDesignReactNative.nativePickerIosMod.default].asInstanceOf[typings.react.mod.ComponentType[NativePickerDotiosProps]]
   @scala.inline
+  def NativePickerDotiosItem: ComponentType[NativePickerDotiosItemProps] = typings.antDesignReactNative.nativePickerIosMod.default.Item.asInstanceOf[typings.react.mod.ComponentType[NativePickerDotiosItemProps]]
+  @scala.inline
   def NoticeBar: ComponentType[NoticeBarProps] = js.constructorOf[typings.antDesignReactNative.noticeBarMod.default].asInstanceOf[typings.react.mod.ComponentType[NoticeBarProps]]
   @scala.inline
   def OperationContainer: ComponentType[OperationContainerProps] = js.constructorOf[typings.antDesignReactNative.operationContainerMod.default].asInstanceOf[typings.react.mod.ComponentType[OperationContainerProps]]

@@ -1,5 +1,6 @@
 package typings.reactNative
 
+import typings.reactNative.mod.Animated.AnimatedProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +24,12 @@ trait reactNativeProps {
   @scala.inline
   def ActivityIndicatorProps: typings.reactNative.mod.ActivityIndicatorProps.type = typings.reactNative.mod.ActivityIndicatorProps
   type ActivityIndicatorProps = typings.reactNative.mod.ActivityIndicatorProps
+  type AnimatedFlatListProps[T] = AnimatedProps[T]
+  type AnimatedImageProps[T] = AnimatedProps[T]
+  type AnimatedScrollViewProps[T] = AnimatedProps[T]
+  type AnimatedSectionListProps[T] = AnimatedProps[T]
+  type AnimatedTextProps[T] = AnimatedProps[T]
+  type AnimatedViewProps[T] = AnimatedProps[T]
   @scala.inline
   def ButtonProps: typings.reactNative.mod.ButtonProps.type = typings.reactNative.mod.ButtonProps
   type ButtonProps = typings.reactNative.mod.ButtonProps

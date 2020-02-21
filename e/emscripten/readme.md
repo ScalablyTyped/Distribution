@@ -1,7 +1,7 @@
 
 # Scala.js typings for emscripten
 
-Typings are for version 1.38.33
+Typings are for version 1.39.5
 
 ## Library description:
 Node API for Emscripten SDK

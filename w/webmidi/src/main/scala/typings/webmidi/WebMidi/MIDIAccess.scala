@@ -1,6 +1,8 @@
 package typings.webmidi.WebMidi
 
+import typings.std.AddEventListenerOptions
 import typings.std.EventTarget
+import typings.webmidi.webmidiStrings.statechange
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,6 +22,23 @@ trait MIDIAccess extends EventTarget {
     * this MIDIAccess.
     */
   var sysexEnabled: Boolean = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* e */ MIDIConnectionEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   /**
     * The handler called when a new port is connected or an existing port changes the
     * state attribute.

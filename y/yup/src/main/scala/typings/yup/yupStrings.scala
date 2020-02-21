@@ -21,6 +21,9 @@ object yupStrings {
   sealed trait floor extends js.Object
   
   @js.native
+  sealed trait ref extends js.Object
+  
+  @js.native
   sealed trait round extends js.Object
   
   @js.native
@@ -36,6 +39,8 @@ object yupStrings {
   def ceil: ceil = "ceil".asInstanceOf[ceil]
   @scala.inline
   def floor: floor = "floor".asInstanceOf[floor]
+  @scala.inline
+  def ref: ref = "ref".asInstanceOf[ref]
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   @scala.inline

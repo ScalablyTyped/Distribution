@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CellAddress extends js.Object {
+trait CellAddress extends _RangeSpec {
   /** Column number */
   var c: Double
   /** Row number */

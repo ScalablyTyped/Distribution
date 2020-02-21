@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TYPE_FLOAT32
+  * @type {number}
   * @description Floating point vertex element type.
   */
 @JSGlobal("pc.TYPE_FLOAT32")

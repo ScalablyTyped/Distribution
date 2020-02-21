@@ -14,6 +14,11 @@ trait IBufferLine extends js.Object {
     */
   val isWrapped: Boolean = js.native
   /**
+    * The length of the line, all call to getCell beyond the length will result
+    * in `undefined`.
+    */
+  val length: Double = js.native
+  /**
     * Gets a cell from the line, or undefined if the line index does not exist.
     *
     * Note that the result of this function should be used immediately after
@@ -21,8 +26,12 @@ trait IBufferLine extends js.Object {
     * behavior.
     *
     * @param x The character index to get.
+    * @param cell Optional cell object to load data into for performance
+    * reasons. This is mainly useful when every cell in the buffer is being
+    * looped over to avoid creating new objects for every cell.
     */
   def getCell(x: Double): js.UndefOr[IBufferCell] = js.native
+  def getCell(x: Double, cell: IBufferCell): js.UndefOr[IBufferCell] = js.native
   /**
     * Gets the line as a string. Note that this is gets only the string for the
     * line, not taking isWrapped into account.

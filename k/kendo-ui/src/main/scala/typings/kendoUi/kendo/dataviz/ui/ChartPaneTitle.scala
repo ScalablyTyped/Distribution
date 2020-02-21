@@ -9,7 +9,7 @@ trait ChartPaneTitle extends js.Object {
   var border: js.UndefOr[ChartPaneTitleBorder] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartPaneTitleMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartPaneTitleMargin] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var text: js.UndefOr[String] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -23,7 +23,7 @@ object ChartPaneTitle {
     border: ChartPaneTitleBorder = null,
     color: String = null,
     font: String = null,
-    margin: ChartPaneTitleMargin = null,
+    margin: Double | ChartPaneTitleMargin = null,
     position: String = null,
     text: String = null,
     visible: js.UndefOr[Boolean] = js.undefined,

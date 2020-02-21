@@ -1,7 +1,7 @@
 
 # Scala.js typings for ganache-core
 
-Typings are for version 2.9.2
+Typings are for version 2.10.2
 
 ## Library description:
 [![npm Version](https://img.shields.io/npm/v/ganache-core.svg)](https://www.npmjs.com/package/ganache-core) [![npm Downloads](https://img.shields.io/npm/dm/ganache-core.svg)](https://www.npmjs.com/package/ganache-core) [![Build Status](https://travis-ci.o

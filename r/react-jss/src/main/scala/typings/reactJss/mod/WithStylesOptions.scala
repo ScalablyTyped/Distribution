@@ -3,17 +3,15 @@ package typings.reactJss.mod
 import typings.jss.mod.Jss
 import typings.jss.mod.Rule
 import typings.jss.mod.StyleSheet
-import typings.jss.mod.StyleSheetFactoryOptions
 import typings.std.HTMLStyleElement
 import typings.theming.mod.Theming
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WithStylesOptions extends StyleSheetFactoryOptions {
+trait WithStylesOptions extends BaseOptions {
   var injectTheme: js.UndefOr[Boolean] = js.undefined
   var jss: js.UndefOr[Jss] = js.undefined
-  var theming: js.UndefOr[Theming[js.Object]] = js.undefined
 }
 
 object WithStylesOptions {

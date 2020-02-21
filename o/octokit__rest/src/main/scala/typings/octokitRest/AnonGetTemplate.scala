@@ -1,11 +1,11 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.EmptyParams
-import typings.octokitRest.mod.GitignoreGetTemplateParams
-import typings.octokitRest.mod.GitignoreGetTemplateResponse
-import typings.octokitRest.mod.GitignoreListTemplatesResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.EmptyParams
+import typings.octokitRest.mod.Octokit.GitignoreGetTemplateParams
+import typings.octokitRest.mod.Octokit.GitignoreGetTemplateResponse
+import typings.octokitRest.mod.Octokit.GitignoreListTemplatesResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

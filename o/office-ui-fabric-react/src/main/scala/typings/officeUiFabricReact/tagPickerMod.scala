@@ -3,7 +3,7 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.basePickerMod.BasePicker
 import typings.officeUiFabricReact.tagPickerTypesMod.ITag
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagPickerProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object tagPickerMod extends js.Object {
   @js.native
   class TagPickerBase () extends BasePicker[ITag, ITagPickerProps]
   
-  val TagPicker: StatelessComponent[ITagPickerProps] = js.native
+  val TagPicker: FunctionComponent[ITagPickerProps] = js.native
   /* static members */
   @js.native
   object TagPickerBase extends js.Object {

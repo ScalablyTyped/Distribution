@@ -11,7 +11,7 @@ trait DBClusterMessage extends js.Object {
     */
   var DBClusters: js.UndefOr[DBClusterList] = js.native
   /**
-    * A pagination token that can be used in a subsequent DescribeDBClusters request.
+    * A pagination token that can be used in a later DescribeDBClusters request.
     */
   var Marker: js.UndefOr[String] = js.native
 }

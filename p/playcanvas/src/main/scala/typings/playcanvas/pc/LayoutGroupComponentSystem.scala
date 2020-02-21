@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.LayoutGroupComponentSystem
-  * @extends pc.ComponentSystem
-  * @description Create a new LayoutGroupComponentSystem
+  * @augments pc.ComponentSystem
+  * @description Create a new LayoutGroupComponentSystem.
   * @classdesc Manages creation of {@link pc.LayoutGroupComponent}s.
-  * @param {pc.Application} app The application
+  * @param {pc.Application} app - The application.
   */
 @JSGlobal("pc.LayoutGroupComponentSystem")
 @js.native

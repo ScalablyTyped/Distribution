@@ -2,6 +2,7 @@ package typings.ssh2SftpClient.mod
 
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
+import typings.node.NodeJS.WritableStream
 import typings.ssh2.mod.ConnectConfig
 import typings.ssh2.mod.SFTPWrapper
 import typings.ssh2SftpClient.ssh2SftpClientBooleans.`false`
@@ -31,11 +32,11 @@ trait sftp extends js.Object {
   def fastGet(remoteFilePath: String, localPath: String, options: TransferOptions): js.Promise[String] = js.native
   def fastPut(localPath: String, remoteFilePath: String): js.Promise[String] = js.native
   def fastPut(localPath: String, remoteFilePath: String, options: TransferOptions): js.Promise[String] = js.native
-  def get(path: String): js.Promise[String | ReadableStream | Buffer] = js.native
-  def get(path: String, dst: String): js.Promise[String | ReadableStream | Buffer] = js.native
-  def get(path: String, dst: String, options: TransferOptions): js.Promise[String | ReadableStream | Buffer] = js.native
-  def get(path: String, dst: ReadableStream): js.Promise[String | ReadableStream | Buffer] = js.native
-  def get(path: String, dst: ReadableStream, options: TransferOptions): js.Promise[String | ReadableStream | Buffer] = js.native
+  def get(path: String): js.Promise[String | WritableStream | Buffer] = js.native
+  def get(path: String, dst: String): js.Promise[String | WritableStream | Buffer] = js.native
+  def get(path: String, dst: String, options: TransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
+  def get(path: String, dst: WritableStream): js.Promise[String | WritableStream | Buffer] = js.native
+  def get(path: String, dst: WritableStream, options: TransferOptions): js.Promise[String | WritableStream | Buffer] = js.native
   def list(remoteFilePath: String): js.Promise[js.Array[FileInfo]] = js.native
   def list(remoteFilePath: String, pattern: String): js.Promise[js.Array[FileInfo]] = js.native
   def list(remoteFilePath: String, pattern: RegExp): js.Promise[js.Array[FileInfo]] = js.native

@@ -1,14 +1,17 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsInvitationId
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsInvitationIdKey
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsInvitationId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsInvitationIdKey
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsInvitationIdKeyOauthtoken
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsInvitedEmailAddress
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResource
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserStudentId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GuardianInvitationsResource extends js.Object {
   /**
     * Creates a guardian invitation, and sends an email to the guardian asking
@@ -42,7 +45,11 @@ trait GuardianInvitationsResource extends js.Object {
     * `invited_email_address` matches the Google account of an existing
     * `Guardian` for this user.
     */
-  def create(request: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): Request_[GuardianInvitation]
+  def create(request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserResource): Request_[GuardianInvitation] = js.native
+  def create(
+    request: AnonAccesstokenAltCallbackFieldsKeyOauthtokenPrettyPrintQuotaUserStudentId,
+    body: GuardianInvitation
+  ): Request_[GuardianInvitation] = js.native
   /**
     * Returns a specific guardian invitation.
     *
@@ -59,7 +66,7 @@ trait GuardianInvitationsResource extends js.Object {
     * `invitation_id`. May also be returned if the student exists, but the
     * requesting user does not have access to see that student.
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsInvitationId): Request_[GuardianInvitation]
+  def get(request: AnonAccesstokenAltCallbackFieldsInvitationId): Request_[GuardianInvitation] = js.native
   /**
     * Returns a list of guardian invitations that the requesting user is
     * permitted to view, filtered by the parameters provided.
@@ -78,7 +85,7 @@ trait GuardianInvitationsResource extends js.Object {
     * &#42; `NOT_FOUND` if a `student_id` is specified, and its format can be
     * recognized, but Classroom has no record of that student.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress): Request_[ListGuardianInvitationsResponse]
+  def list(request: AnonAccesstokenAltCallbackFieldsInvitedEmailAddress): Request_[ListGuardianInvitationsResponse] = js.native
   /**
     * Modifies a guardian invitation.
     *
@@ -99,20 +106,7 @@ trait GuardianInvitationsResource extends js.Object {
     * Classroom has no record of that student, or if the `id` field does not
     * refer to a guardian invitation known to Classroom.
     */
-  def patch(request: AnonAccesstokenAltBearertokenCallbackFieldsInvitationIdKey): Request_[GuardianInvitation]
-}
-
-object GuardianInvitationsResource {
-  @scala.inline
-  def apply(
-    create: AnonAccesstokenAltBearertokenCallbackFieldsKeyOauthtoken => Request_[GuardianInvitation],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsInvitationId => Request_[GuardianInvitation],
-    list: AnonAccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress => Request_[ListGuardianInvitationsResponse],
-    patch: AnonAccesstokenAltBearertokenCallbackFieldsInvitationIdKey => Request_[GuardianInvitation]
-  ): GuardianInvitationsResource = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list), patch = js.Any.fromFunction1(patch))
-  
-    __obj.asInstanceOf[GuardianInvitationsResource]
-  }
+  def patch(request: AnonAccesstokenAltCallbackFieldsInvitationIdKey): Request_[GuardianInvitation] = js.native
+  def patch(request: AnonAccesstokenAltCallbackFieldsInvitationIdKeyOauthtoken, body: GuardianInvitation): Request_[GuardianInvitation] = js.native
 }
 

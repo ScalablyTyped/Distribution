@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ink" : "2.6.0"
+      "ink" : "2.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ink" : "2.6.0"
+      "ink" : "2.7.0"
     }
   ],
   "compile-devDependencies" : [

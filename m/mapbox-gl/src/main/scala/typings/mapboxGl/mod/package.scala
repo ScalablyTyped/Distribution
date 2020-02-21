@@ -43,6 +43,7 @@ package object mod {
   type MapLayerTouchEvent = typings.mapboxGl.mod.MapTouchEvent with typings.mapboxGl.AnonFeatures
   type MapboxGeoJSONFeature = (typings.geojson.mod.Feature[typings.geojson.mod.Geometry, typings.geojson.mod.GeoJsonProperties]) with typings.mapboxGl.AnonKey
   type PointLike = typings.mapboxGl.mod.Point | (js.Tuple2[scala.Double, scala.Double])
+  type PromoteIdSpecification = org.scalablytyped.runtime.StringDictionary[java.lang.String] | java.lang.String
   type RasterLayout = typings.mapboxGl.mod.Layout
   type Sources = org.scalablytyped.runtime.StringDictionary[typings.mapboxGl.mod.AnySourceData]
   type TransformRequestFunction = js.Function2[

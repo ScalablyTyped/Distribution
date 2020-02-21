@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CULLFACE_FRONT
+  * @type {number}
   * @description Triangles facing the view direction are culled.
   */
 @JSGlobal("pc.CULLFACE_FRONT")

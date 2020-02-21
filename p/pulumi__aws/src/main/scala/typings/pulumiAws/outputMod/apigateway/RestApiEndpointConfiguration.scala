@@ -10,13 +10,17 @@ trait RestApiEndpointConfiguration extends js.Object {
     * A list of endpoint types. This resource currently only supports managing a single value. Valid values: `EDGE`, `REGIONAL` or `PRIVATE`. If unspecified, defaults to `EDGE`. Must be declared as `REGIONAL` in non-Commercial partitions. Refer to the [documentation](https://docs.aws.amazon.com/apigateway/latest/developerguide/create-regional-api.html) for more information on the difference between edge-optimized and regional APIs.
     */
   var types: String = js.native
+  /**
+    * A list of VPC Endpoint Ids. It is only supported for PRIVATE endpoint type.
+    */
+  var vpcEndpointIds: js.UndefOr[js.Array[String]] = js.native
 }
 
 object RestApiEndpointConfiguration {
   @scala.inline
-  def apply(types: String): RestApiEndpointConfiguration = {
+  def apply(types: String, vpcEndpointIds: js.Array[String] = null): RestApiEndpointConfiguration = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-  
+    if (vpcEndpointIds != null) __obj.updateDynamic("vpcEndpointIds")(vpcEndpointIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestApiEndpointConfiguration]
   }
 }

@@ -3,29 +3,18 @@ package typings.reflexbox.mod
 import typings.csstype.mod.AlignContentProperty
 import typings.csstype.mod.AlignItemsProperty
 import typings.csstype.mod.AlignSelfProperty
-import typings.csstype.mod.BackgroundProperty
-import typings.csstype.mod.ColorProperty
 import typings.csstype.mod.DisplayProperty
 import typings.csstype.mod.FlexBasisProperty
 import typings.csstype.mod.FlexDirectionProperty
 import typings.csstype.mod.FlexProperty
 import typings.csstype.mod.FlexWrapProperty
 import typings.csstype.mod.FontFamilyProperty
-import typings.csstype.mod.FontSizeProperty
 import typings.csstype.mod.FontStyleProperty
-import typings.csstype.mod.FontWeightProperty
 import typings.csstype.mod.GlobalsNumber
 import typings.csstype.mod.HeightProperty
 import typings.csstype.mod.JustifyContentProperty
 import typings.csstype.mod.JustifyItemsProperty
 import typings.csstype.mod.JustifySelfProperty
-import typings.csstype.mod.LetterSpacingProperty
-import typings.csstype.mod.LineHeightProperty
-import typings.csstype.mod.MarginBottomProperty
-import typings.csstype.mod.MarginLeftProperty
-import typings.csstype.mod.MarginProperty
-import typings.csstype.mod.MarginRightProperty
-import typings.csstype.mod.MarginTopProperty
 import typings.csstype.mod.MaxHeightProperty
 import typings.csstype.mod.MaxWidthProperty
 import typings.csstype.mod.MinHeightProperty
@@ -33,15 +22,16 @@ import typings.csstype.mod.MinWidthProperty
 import typings.csstype.mod.OverflowProperty
 import typings.csstype.mod.OverflowXProperty
 import typings.csstype.mod.OverflowYProperty
-import typings.csstype.mod.PaddingBottomProperty
-import typings.csstype.mod.PaddingLeftProperty
-import typings.csstype.mod.PaddingProperty
-import typings.csstype.mod.PaddingRightProperty
-import typings.csstype.mod.PaddingTopProperty
 import typings.csstype.mod.TextAlignProperty
 import typings.csstype.mod.VerticalAlignProperty
 import typings.csstype.mod.WidthProperty
 import typings.react.mod.ElementType
+import typings.reflexbox.reflexboxStrings.colors
+import typings.reflexbox.reflexboxStrings.fontSizes
+import typings.reflexbox.reflexboxStrings.fontWeights
+import typings.reflexbox.reflexboxStrings.letterSpacings
+import typings.reflexbox.reflexboxStrings.lineHeights
+import typings.reflexbox.reflexboxStrings.space
 import typings.styledSystem.mod.AlignContentProps
 import typings.styledSystem.mod.AlignItemsProps
 import typings.styledSystem.mod.AlignSelfProps
@@ -70,12 +60,14 @@ import typings.styledSystem.mod.MinWidthProps
 import typings.styledSystem.mod.OpacityProps
 import typings.styledSystem.mod.OrderProps
 import typings.styledSystem.mod.OverflowProps
+import typings.styledSystem.mod.RequiredTheme
 import typings.styledSystem.mod.ResponsiveValue
 import typings.styledSystem.mod.SizeProps
 import typings.styledSystem.mod.SpaceProps
 import typings.styledSystem.mod.TLengthStyledSystem
 import typings.styledSystem.mod.TextAlignProps
 import typings.styledSystem.mod.TextColorProps
+import typings.styledSystem.mod.ThemeValue
 import typings.styledSystem.mod.VerticalAlignProps
 import typings.styledSystem.mod.WidthProps
 import scala.scalajs.js
@@ -83,111 +75,114 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BoxProps
-  extends SpaceProps[TLengthStyledSystem]
-     with WidthProps[TLengthStyledSystem]
-     with HeightProps[TLengthStyledSystem]
-     with MinWidthProps[TLengthStyledSystem]
-     with MinHeightProps[TLengthStyledSystem]
-     with MaxWidthProps[TLengthStyledSystem]
-     with MaxHeightProps[TLengthStyledSystem]
-     with DisplayProps
-     with VerticalAlignProps[TLengthStyledSystem]
-     with SizeProps[TLengthStyledSystem]
-     with OverflowProps
-     with FontFamilyProps
-     with FontSizeProps[TLengthStyledSystem]
-     with FontWeightProps
-     with LineHeightProps[TLengthStyledSystem]
-     with LetterSpacingProps[TLengthStyledSystem]
-     with FontStyleProps
-     with TextAlignProps
-     with TextColorProps
-     with BackgroundColorProps[TLengthStyledSystem]
-     with OpacityProps
-     with AlignItemsProps
-     with AlignContentProps
-     with JustifyItemsProps
-     with JustifyContentProps
-     with FlexWrapProps
-     with FlexDirectionProps
-     with FlexProps[TLengthStyledSystem]
-     with FlexGrowProps
-     with FlexShrinkProps
-     with FlexBasisProps[TLengthStyledSystem]
-     with JustifySelfProps
-     with AlignSelfProps
-     with OrderProps {
+  extends SpaceProps[RequiredTheme, ThemeValue[space, RequiredTheme, js.Any]]
+     with WidthProps[RequiredTheme, WidthProperty[TLengthStyledSystem]]
+     with HeightProps[RequiredTheme, HeightProperty[TLengthStyledSystem]]
+     with MinWidthProps[RequiredTheme, MinWidthProperty[TLengthStyledSystem]]
+     with MinHeightProps[RequiredTheme, MinHeightProperty[TLengthStyledSystem]]
+     with MaxWidthProps[RequiredTheme, MaxWidthProperty[TLengthStyledSystem]]
+     with MaxHeightProps[RequiredTheme, MaxHeightProperty[TLengthStyledSystem]]
+     with DisplayProps[RequiredTheme]
+     with VerticalAlignProps[RequiredTheme, VerticalAlignProperty[TLengthStyledSystem]]
+     with SizeProps[RequiredTheme, HeightProperty[TLengthStyledSystem]]
+     with OverflowProps[RequiredTheme]
+     with FontFamilyProps[RequiredTheme]
+     with FontSizeProps[RequiredTheme, ThemeValue[fontSizes, RequiredTheme, js.Any]]
+     with FontWeightProps[RequiredTheme, ThemeValue[fontWeights, RequiredTheme, js.Any]]
+     with LineHeightProps[RequiredTheme, ThemeValue[lineHeights, RequiredTheme, js.Any]]
+     with LetterSpacingProps[RequiredTheme, ThemeValue[letterSpacings, RequiredTheme, js.Any]]
+     with FontStyleProps[RequiredTheme]
+     with TextAlignProps[RequiredTheme]
+     with TextColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
+     with BackgroundColorProps[RequiredTheme, ThemeValue[colors, RequiredTheme, js.Any]]
+     with OpacityProps[RequiredTheme]
+     with AlignItemsProps[RequiredTheme]
+     with AlignContentProps[RequiredTheme]
+     with JustifyItemsProps[RequiredTheme]
+     with JustifyContentProps[RequiredTheme]
+     with FlexWrapProps[RequiredTheme]
+     with FlexDirectionProps[RequiredTheme]
+     with FlexProps[RequiredTheme, FlexProperty[TLengthStyledSystem]]
+     with FlexGrowProps[RequiredTheme]
+     with FlexShrinkProps[RequiredTheme]
+     with FlexBasisProps[RequiredTheme, FlexBasisProperty[TLengthStyledSystem]]
+     with JustifySelfProps[RequiredTheme]
+     with AlignSelfProps[RequiredTheme]
+     with OrderProps[RequiredTheme] {
   var as: js.UndefOr[ElementType[_]] = js.undefined
 }
 
 object BoxProps {
   @scala.inline
   def apply(
-    alignContent: ResponsiveValue[AlignContentProperty] = null,
-    alignItems: ResponsiveValue[AlignItemsProperty] = null,
-    alignSelf: ResponsiveValue[AlignSelfProperty] = null,
+    alignContent: ResponsiveValue[AlignContentProperty, RequiredTheme] = null,
+    alignItems: ResponsiveValue[AlignItemsProperty, RequiredTheme] = null,
+    alignSelf: ResponsiveValue[AlignSelfProperty, RequiredTheme] = null,
     as: ElementType[_] = null,
-    backgroundColor: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
-    bg: ResponsiveValue[BackgroundProperty[TLengthStyledSystem]] = null,
-    color: ResponsiveValue[ColorProperty] = null,
-    display: ResponsiveValue[DisplayProperty] = null,
-    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
-    flexBasis: ResponsiveValue[FlexBasisProperty[TLengthStyledSystem]] = null,
-    flexDirection: ResponsiveValue[FlexDirectionProperty] = null,
-    flexGrow: ResponsiveValue[GlobalsNumber] = null,
-    flexShrink: ResponsiveValue[GlobalsNumber] = null,
-    flexWrap: ResponsiveValue[FlexWrapProperty] = null,
-    fontFamily: ResponsiveValue[FontFamilyProperty] = null,
-    fontSize: ResponsiveValue[FontSizeProperty[TLengthStyledSystem]] = null,
-    fontStyle: ResponsiveValue[FontStyleProperty] = null,
-    fontWeight: ResponsiveValue[FontWeightProperty] = null,
-    height: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
-    justifyContent: ResponsiveValue[JustifyContentProperty] = null,
-    justifyItems: ResponsiveValue[JustifyItemsProperty] = null,
-    justifySelf: ResponsiveValue[JustifySelfProperty] = null,
-    letterSpacing: ResponsiveValue[LetterSpacingProperty[TLengthStyledSystem]] = null,
-    lineHeight: ResponsiveValue[LineHeightProperty[TLengthStyledSystem]] = null,
-    m: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    margin: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    marginBottom: ResponsiveValue[MarginBottomProperty[TLengthStyledSystem]] = null,
-    marginLeft: ResponsiveValue[MarginLeftProperty[TLengthStyledSystem]] = null,
-    marginRight: ResponsiveValue[MarginRightProperty[TLengthStyledSystem]] = null,
-    marginTop: ResponsiveValue[MarginTopProperty[TLengthStyledSystem]] = null,
-    marginX: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    marginY: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    maxHeight: ResponsiveValue[MaxHeightProperty[TLengthStyledSystem]] = null,
-    maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem]] = null,
-    mb: ResponsiveValue[MarginBottomProperty[TLengthStyledSystem]] = null,
-    minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem]] = null,
-    minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem]] = null,
-    ml: ResponsiveValue[MarginLeftProperty[TLengthStyledSystem]] = null,
-    mr: ResponsiveValue[MarginRightProperty[TLengthStyledSystem]] = null,
-    mt: ResponsiveValue[MarginTopProperty[TLengthStyledSystem]] = null,
-    mx: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    my: ResponsiveValue[MarginProperty[TLengthStyledSystem]] = null,
-    opacity: ResponsiveValue[GlobalsNumber] = null,
-    order: ResponsiveValue[GlobalsNumber] = null,
-    overflow: ResponsiveValue[OverflowProperty] = null,
-    overflowX: ResponsiveValue[OverflowXProperty] = null,
-    overflowY: ResponsiveValue[OverflowYProperty] = null,
-    p: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    padding: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    paddingBottom: ResponsiveValue[PaddingBottomProperty[TLengthStyledSystem]] = null,
-    paddingLeft: ResponsiveValue[PaddingLeftProperty[TLengthStyledSystem]] = null,
-    paddingRight: ResponsiveValue[PaddingRightProperty[TLengthStyledSystem]] = null,
-    paddingTop: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
-    paddingX: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    paddingY: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    pb: ResponsiveValue[PaddingBottomProperty[TLengthStyledSystem]] = null,
-    pl: ResponsiveValue[PaddingLeftProperty[TLengthStyledSystem]] = null,
-    pr: ResponsiveValue[PaddingRightProperty[TLengthStyledSystem]] = null,
-    pt: ResponsiveValue[PaddingTopProperty[TLengthStyledSystem]] = null,
-    px: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    py: ResponsiveValue[PaddingProperty[TLengthStyledSystem]] = null,
-    size: ResponsiveValue[HeightProperty[TLengthStyledSystem]] = null,
-    textAlign: ResponsiveValue[TextAlignProperty] = null,
-    verticalAlign: ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem]] = null,
-    width: ResponsiveValue[WidthProperty[TLengthStyledSystem]] = null
+    backgroundColor: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
+    bg: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
+    color: ResponsiveValue[ThemeValue[colors, RequiredTheme, js.Any], RequiredTheme] = null,
+    display: ResponsiveValue[DisplayProperty, RequiredTheme] = null,
+    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], RequiredTheme] = null,
+    flexBasis: ResponsiveValue[FlexBasisProperty[TLengthStyledSystem], RequiredTheme] = null,
+    flexDirection: ResponsiveValue[FlexDirectionProperty, RequiredTheme] = null,
+    flexGrow: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
+    flexShrink: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
+    flexWrap: ResponsiveValue[FlexWrapProperty, RequiredTheme] = null,
+    fontFamily: ResponsiveValue[FontFamilyProperty, RequiredTheme] = null,
+    fontSize: ResponsiveValue[ThemeValue[fontSizes, RequiredTheme, js.Any], RequiredTheme] = null,
+    fontStyle: ResponsiveValue[FontStyleProperty, RequiredTheme] = null,
+    fontWeight: ResponsiveValue[ThemeValue[fontWeights, RequiredTheme, js.Any], RequiredTheme] = null,
+    height: ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme] = null,
+    justifyContent: ResponsiveValue[JustifyContentProperty, RequiredTheme] = null,
+    justifyItems: ResponsiveValue[JustifyItemsProperty, RequiredTheme] = null,
+    justifySelf: ResponsiveValue[JustifySelfProperty, RequiredTheme] = null,
+    letterSpacing: ResponsiveValue[ThemeValue[letterSpacings, RequiredTheme, js.Any], RequiredTheme] = null,
+    lineHeight: ResponsiveValue[ThemeValue[lineHeights, RequiredTheme, js.Any], RequiredTheme] = null,
+    m: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    margin: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginRight: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginTop: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginX: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    marginY: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    maxHeight: ResponsiveValue[MaxHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
+    maxWidth: ResponsiveValue[MaxWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
+    mb: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    minHeight: ResponsiveValue[MinHeightProperty[TLengthStyledSystem], RequiredTheme] = null,
+    minWidth: ResponsiveValue[MinWidthProperty[TLengthStyledSystem], RequiredTheme] = null,
+    ml: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    mr: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    mt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    mx: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    my: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    opacity: ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.OpacityProperty */ _, 
+      RequiredTheme
+    ] = null,
+    order: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
+    overflow: ResponsiveValue[OverflowProperty, RequiredTheme] = null,
+    overflowX: ResponsiveValue[OverflowXProperty, RequiredTheme] = null,
+    overflowY: ResponsiveValue[OverflowYProperty, RequiredTheme] = null,
+    p: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    padding: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingRight: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingTop: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingX: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    paddingY: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pb: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pl: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pr: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    pt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    px: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    py: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
+    size: ResponsiveValue[HeightProperty[TLengthStyledSystem], RequiredTheme] = null,
+    textAlign: ResponsiveValue[TextAlignProperty, RequiredTheme] = null,
+    verticalAlign: ResponsiveValue[VerticalAlignProperty[TLengthStyledSystem], RequiredTheme] = null,
+    width: ResponsiveValue[WidthProperty[TLengthStyledSystem], RequiredTheme] = null
   ): BoxProps = {
     val __obj = js.Dynamic.literal()
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])

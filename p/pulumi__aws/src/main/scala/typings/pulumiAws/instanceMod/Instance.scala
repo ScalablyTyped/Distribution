@@ -86,6 +86,10 @@ class Instance protected () extends CustomResource {
     */
   val getPasswordData: Output_[js.UndefOr[Boolean]] = js.native
   /**
+    * If true, the launched EC2 instance will support hibernation.
+    */
+  val hibernation: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * The Id of a dedicated host that the instance will be assigned to. Use when an instance is to be launched on a specific dedicated host.
     */
   val hostId: Output_[String] = js.native

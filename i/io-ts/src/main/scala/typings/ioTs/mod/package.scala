@@ -14,6 +14,7 @@ package object mod {
     js.Array[typings.ioTs.mod.OutputOf[C]], 
     js.Any
   ]
+  type BigIntC = typings.ioTs.mod.BigIntType
   type BooleanC = typings.ioTs.mod.BooleanType
   type BrandC[C /* <: typings.ioTs.mod.Any_ */, B] = typings.ioTs.mod.RefinementType[
     C, 

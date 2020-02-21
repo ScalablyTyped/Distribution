@@ -235,6 +235,21 @@ trait ApplicationInsights extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListComponentsResponse, scala.Unit]
   ): Request[ListComponentsResponse, AWSError] = js.native
   /**
+    *  Lists the INFO, WARN, and ERROR events for periodic configuration updates performed by Application Insights. Examples of events represented are:    INFO: creating a new alarm or updating an alarm threshold.   WARN: alarm not created due to insufficient data points used to predict thresholds.   ERROR: alarm not created due to permission errors or exceeding quotas.   
+    */
+  def listConfigurationHistory(): Request[ListConfigurationHistoryResponse, AWSError] = js.native
+  def listConfigurationHistory(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListConfigurationHistoryResponse, scala.Unit]
+  ): Request[ListConfigurationHistoryResponse, AWSError] = js.native
+  /**
+    *  Lists the INFO, WARN, and ERROR events for periodic configuration updates performed by Application Insights. Examples of events represented are:    INFO: creating a new alarm or updating an alarm threshold.   WARN: alarm not created due to insufficient data points used to predict thresholds.   ERROR: alarm not created due to permission errors or exceeding quotas.   
+    */
+  def listConfigurationHistory(params: ListConfigurationHistoryRequest): Request[ListConfigurationHistoryResponse, AWSError] = js.native
+  def listConfigurationHistory(
+    params: ListConfigurationHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListConfigurationHistoryResponse, scala.Unit]
+  ): Request[ListConfigurationHistoryResponse, AWSError] = js.native
+  /**
     * Lists the log pattern sets in the specific application.
     */
   def listLogPatternSets(): Request[ListLogPatternSetsResponse, AWSError] = js.native

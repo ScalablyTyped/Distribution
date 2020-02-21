@@ -811,6 +811,10 @@ class Object ()
 @js.native
 object Object extends js.Object {
   /**
+  	 * Defines the number of fraction digits to use when serializing object values.
+  	 */
+  var NUM_FRACTION_DIGITS: js.UndefOr[Double] = js.native
+  /**
   	 * Creates fabric Object instance
   	 * @param {string} Class name
   	 * @param {fabric.Object} Original object

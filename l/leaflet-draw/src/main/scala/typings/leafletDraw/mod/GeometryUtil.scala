@@ -1,6 +1,7 @@
 package typings.leafletDraw.mod
 
 import typings.leaflet.mod.LatLngLiteral
+import typings.leaflet.mod.LatLng_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,6 +9,10 @@ import scala.scalajs.js.annotation._
 @JSImport("leaflet", "GeometryUtil")
 @js.native
 object GeometryUtil extends js.Object {
+  /**
+    * Shortcut function for planar distance between two {L.LatLng} at current zoom.
+    */
+  def distance(map: DrawMap, latlanA: LatLng_, latlngB: LatLng_): Double = js.native
   /**
     * Returns n in specified number format (if defined) and precision
     */

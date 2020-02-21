@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLEND_NORMAL
+  * @type {number}
   * @description Enable simple translucency for materials such as glass. This is
   * equivalent to enabling a source blend mode of pc.BLENDMODE_SRC_ALPHA and a destination
   * blend mode of pc.BLENDMODE_ONE_MINUS_SRC_ALPHA.

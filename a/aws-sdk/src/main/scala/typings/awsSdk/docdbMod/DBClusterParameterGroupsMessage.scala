@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBClusterParameterGroupsMessage extends js.Object {
   /**
-    * A list of DB cluster parameter groups.
+    * A list of cluster parameter groups.
     */
   var DBClusterParameterGroups: js.UndefOr[DBClusterParameterGroupList] = js.native
   /**

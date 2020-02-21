@@ -3,7 +3,7 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps
 import typings.officeUiFabricReact.dialogFooterTypesMod.IDialogFooterProps
 import typings.officeUiFabricReact.dialogTypesMod.IDialogProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,9 +27,9 @@ object dialogMod extends js.Object {
   class DialogFooterBase ()
     extends typings.officeUiFabricReact.dialogFooterBaseMod.DialogFooterBase
   
-  val Dialog: StatelessComponent[IDialogProps] = js.native
-  val DialogContent: StatelessComponent[IDialogContentProps] = js.native
-  val DialogFooter: StatelessComponent[IDialogFooterProps] = js.native
+  val Dialog: FunctionComponent[IDialogProps] = js.native
+  val DialogContent: FunctionComponent[IDialogContentProps] = js.native
+  val DialogFooter: FunctionComponent[IDialogFooterProps] = js.native
   /* static members */
   @js.native
   object DialogBase extends js.Object {

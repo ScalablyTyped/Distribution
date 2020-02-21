@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +15,6 @@ object libShimmeredDetailsListMod extends js.Object {
     def this(props: IShimmeredDetailsListProps) = this()
   }
   
-  val ShimmeredDetailsList: StatelessComponent[IShimmeredDetailsListProps] = js.native
+  val ShimmeredDetailsList: FunctionComponent[IShimmeredDetailsListProps] = js.native
 }
 

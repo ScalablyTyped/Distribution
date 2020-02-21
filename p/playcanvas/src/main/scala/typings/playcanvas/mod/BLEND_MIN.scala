@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLEND_MIN
+  * @type {number}
   * @description Minimum color. Check app.graphicsDevice.extBlendMinmax for support.
   */
 @JSImport("playcanvas", "BLEND_MIN")

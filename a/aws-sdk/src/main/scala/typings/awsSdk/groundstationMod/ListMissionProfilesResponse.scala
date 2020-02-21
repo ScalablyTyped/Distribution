@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListMissionProfilesResponse extends js.Object {
   /**
-    * List of mission profiles
+    * List of mission profiles.
     */
   var missionProfileList: js.UndefOr[MissionProfileList] = js.native
   /**

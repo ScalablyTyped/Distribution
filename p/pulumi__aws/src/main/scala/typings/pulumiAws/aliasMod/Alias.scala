@@ -1,5 +1,6 @@
 package typings.pulumiAws.aliasMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.gamelift.AliasRoutingStrategy
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -38,6 +39,10 @@ class Alias protected () extends CustomResource {
     * Specifies the fleet and/or routing type to use for the alias.
     */
   val routingStrategy: Output_[AliasRoutingStrategy] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

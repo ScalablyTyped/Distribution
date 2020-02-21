@@ -39,7 +39,7 @@ trait CarouselState extends js.Object {
   /**
     * Slides to scroll at once
     */
-  var slidesToScroll: Double
+  var slidesToScroll: CarouselSlidesToScrollProp
   /**
     * Current top value
     */
@@ -63,7 +63,7 @@ object CarouselState {
     resetWrapAroundPosition: Boolean,
     slideCount: Double,
     slideWidth: CarouselSlideWidthProp,
-    slidesToScroll: Double,
+    slidesToScroll: CarouselSlidesToScrollProp,
     top: Double,
     wrapToIndex: Boolean
   ): CarouselState = {

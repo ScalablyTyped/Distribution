@@ -56,6 +56,7 @@ object GotFormOptions {
     json: js.UndefOr[Boolean] = js.undefined,
     key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     localAddress: String = null,
+    maxHeaderSize: Int | Double = null,
     maxVersion: SecureVersion = null,
     method: String = null,
     minVersion: SecureVersion = null,
@@ -110,6 +111,7 @@ object GotFormOptions {
     if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (maxHeaderSize != null) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.asInstanceOf[js.Any])
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])

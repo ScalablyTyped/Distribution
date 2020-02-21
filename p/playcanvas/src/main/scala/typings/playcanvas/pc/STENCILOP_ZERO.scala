@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.STENCILOP_ZERO
+  * @type {number}
   * @description Set value to zero.
   */
 @JSGlobal("pc.STENCILOP_ZERO")

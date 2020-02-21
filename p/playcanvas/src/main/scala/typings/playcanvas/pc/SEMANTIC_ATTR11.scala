@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
   * @name pc.SEMANTIC_ATTR11
+  * @type {string}
   * @description Vertex attribute with a user defined semantic.
   */
 @JSGlobal("pc.SEMANTIC_ATTR11")

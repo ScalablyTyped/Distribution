@@ -36,9 +36,11 @@ object publishServiceMod extends js.Object {
   @js.native
   object PublishService extends js.Object {
     var makeLocationOptions: js.Any = js.native
+    var publishDebug: js.Any = js.native
     var read16: js.Any = js.native
     var read32: js.Any = js.native
     def catchTranscodeError(videoInfo: js.Any, transcodeDelayInMs: Double): js.Function1[/* error */ js.Any, ^[Unit]] = js.native
+    def getMP4Duration(buffer: Buffer): Double = js.native
     def getVideoInfo(buffer: Buffer): AnonDuration = js.native
   }
   

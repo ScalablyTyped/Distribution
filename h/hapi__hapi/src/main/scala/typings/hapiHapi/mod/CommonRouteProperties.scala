@@ -14,6 +14,11 @@ import scala.scalajs.js.annotation._
 
 trait CommonRouteProperties extends js.Object {
   /**
+    * Application-specific route configuration state. Should not be used by plugins which should use options.plugins[name] instead.
+    * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsapp)
+    */
+  var app: js.UndefOr[RouteOptionsApp] = js.undefined
+  /**
     * @default null.
     * An object passed back to the provided handler (via this) when called. Ignored if the method is an arrow function.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsbind)
@@ -209,6 +214,7 @@ trait CommonRouteProperties extends js.Object {
 object CommonRouteProperties {
   @scala.inline
   def apply(
+    app: RouteOptionsApp = null,
     bind: js.Object = null,
     cache: `false` | RouteOptionsCache = null,
     compression: Dictionary[RouteCompressionEncoderSettings] = null,
@@ -236,6 +242,7 @@ object CommonRouteProperties {
     validate: RouteOptionsValidate = null
   ): CommonRouteProperties = {
     val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
     if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])

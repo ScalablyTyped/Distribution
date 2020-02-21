@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListImageRecipesRequest extends js.Object {
   /**
-    *  
+    *  The filters. 
     */
   var filters: js.UndefOr[FilterList] = js.native
   /**
@@ -19,7 +19,7 @@ trait ListImageRecipesRequest extends js.Object {
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.native
   /**
-    *  The owner defines whose image recipes you wish to list. By default this request will only show image recipes owned by your account. You may use this field to specify if you wish to view image recipes owned by yourself, Amazon, or those image recipes that have been shared with you by other customers. 
+    *  The owner defines which image recipes you want to list. By default, this request will only show image recipes owned by your account. You can use this field to specify if you want to view image recipes owned by yourself, by Amazon, or those image recipes that have been shared with you by other customers. 
     */
   var owner: js.UndefOr[Ownership] = js.native
 }

@@ -1,11 +1,10 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.FontWeightProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FontWeightProps extends js.Object {
+trait FontWeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends js.Object {
   /**
     * The font-weight CSS property specifies the weight (or boldness) of the font.
     *
@@ -13,15 +12,15 @@ trait FontWeightProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
     */
-  var fontWeight: js.UndefOr[ResponsiveValue[FontWeightProperty]] = js.undefined
+  var fontWeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 
 object FontWeightProps {
   @scala.inline
-  def apply(fontWeight: ResponsiveValue[FontWeightProperty] = null): FontWeightProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](fontWeight: ResponsiveValue[TVal, ThemeType] = null): FontWeightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FontWeightProps]
+    __obj.asInstanceOf[FontWeightProps[ThemeType, TVal]]
   }
 }
 

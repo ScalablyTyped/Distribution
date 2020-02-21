@@ -1,7 +1,7 @@
 
 # Scala.js typings for levenary
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 > Given a string, A and an array of strings XS, return the string X from XS whose Levenshtein distance from A is minimal.

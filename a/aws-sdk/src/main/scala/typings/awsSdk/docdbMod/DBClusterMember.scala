@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBClusterMember extends js.Object {
   /**
-    * Specifies the status of the DB cluster parameter group for this member of the DB cluster.
+    * Specifies the status of the cluster parameter group for this member of the DB cluster.
     */
   var DBClusterParameterGroupStatus: js.UndefOr[String] = js.native
   /**
-    * Specifies the instance identifier for this member of the DB cluster.
+    * Specifies the instance identifier for this member of the cluster.
     */
   var DBInstanceIdentifier: js.UndefOr[String] = js.native
   /**
-    * A value that is true if the cluster member is the primary instance for the DB cluster and false otherwise.
+    * A value that is true if the cluster member is the primary instance for the cluster and false otherwise.
     */
   var IsClusterWriter: js.UndefOr[Boolean] = js.native
   /**

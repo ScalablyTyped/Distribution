@@ -26,7 +26,6 @@ import typings.xterm.xtermStrings.block
 import typings.xterm.xtermStrings.bold
 import typings.xterm.xtermStrings.both
 import typings.xterm.xtermStrings.cancelEvents
-import typings.xterm.xtermStrings.colors
 import typings.xterm.xtermStrings.convertEol
 import typings.xterm.xtermStrings.cursorBlink
 import typings.xterm.xtermStrings.cursorStyle
@@ -35,7 +34,6 @@ import typings.xterm.xtermStrings.fontFamily
 import typings.xterm.xtermStrings.fontSize
 import typings.xterm.xtermStrings.fontWeight
 import typings.xterm.xtermStrings.fontWeightBold
-import typings.xterm.xtermStrings.handler
 import typings.xterm.xtermStrings.letterSpacing
 import typings.xterm.xtermStrings.lineHeight
 import typings.xterm.xtermStrings.logLevel
@@ -45,14 +43,12 @@ import typings.xterm.xtermStrings.normal
 import typings.xterm.xtermStrings.popOnBell
 import typings.xterm.xtermStrings.rendererType
 import typings.xterm.xtermStrings.rightClickSelectsWord
-import typings.xterm.xtermStrings.screenKeys
 import typings.xterm.xtermStrings.scrollback
 import typings.xterm.xtermStrings.sound
 import typings.xterm.xtermStrings.tabStopWidth
 import typings.xterm.xtermStrings.termName
 import typings.xterm.xtermStrings.theme
 import typings.xterm.xtermStrings.underline
-import typings.xterm.xtermStrings.useFlowControl
 import typings.xterm.xtermStrings.visual
 import typings.xterm.xtermStrings.visualBell
 import typings.xterm.xtermStrings.windowsMode
@@ -97,17 +93,17 @@ class Terminal () extends IDisposable {
     * Currently this is only used for a certain type of mouse reports that
     * happen to be not UTF-8 compatible.
     * The event value is a JS string, pass it to the underlying pty as
-    * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`. 
+    * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`.
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onBinary")
-  var onBinary_Original: IEvent[String] = js.native
+  var onBinary_Original: IEvent[String, Unit] = js.native
   /**
     * Adds an event listener for the cursor moves.
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onCursorMove")
-  var onCursorMove_Original: IEvent[Unit] = js.native
+  var onCursorMove_Original: IEvent[Unit, Unit] = js.native
   /**
     * Adds an event listener for when a data event fires. This happens for
     * example when the user types or pastes into the terminal. The event value
@@ -116,7 +112,7 @@ class Terminal () extends IDisposable {
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onData")
-  var onData_Original: IEvent[String] = js.native
+  var onData_Original: IEvent[String, Unit] = js.native
   /**
     * Adds an event listener for when a key is pressed. The event value contains the
     * string that will be sent in the data event as well as the DOM event that
@@ -124,13 +120,13 @@ class Terminal () extends IDisposable {
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onKey")
-  var onKey_Original: IEvent[AnonDomEvent] = js.native
+  var onKey_Original: IEvent[AnonDomEvent, Unit] = js.native
   /**
     * Adds an event listener for when a line feed is added.
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onLineFeed")
-  var onLineFeed_Original: IEvent[Unit] = js.native
+  var onLineFeed_Original: IEvent[Unit, Unit] = js.native
   /**
     * Adds an event listener for when rows are rendered. The event value
     * contains the start row and end rows of the rendered area (ranges from `0`
@@ -138,34 +134,34 @@ class Terminal () extends IDisposable {
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onRender")
-  var onRender_Original: IEvent[AnonEnd] = js.native
+  var onRender_Original: IEvent[AnonEnd, Unit] = js.native
   /**
     * Adds an event listener for when the terminal is resized. The event value
     * contains the new size.
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onResize")
-  var onResize_Original: IEvent[AnonCols] = js.native
+  var onResize_Original: IEvent[AnonCols, Unit] = js.native
   /**
     * Adds an event listener for when a scroll occurs. The event value is the
     * new position of the viewport.
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onScroll")
-  var onScroll_Original: IEvent[Double] = js.native
+  var onScroll_Original: IEvent[Double, Unit] = js.native
   /**
     * Adds an event listener for when a selection change occurs.
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onSelectionChange")
-  var onSelectionChange_Original: IEvent[Unit] = js.native
+  var onSelectionChange_Original: IEvent[Unit, Unit] = js.native
   /**
     * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
     * The event value is the new title.
     * @returns an `IDisposable` to stop listening.
     */
   @JSName("onTitleChange")
-  var onTitleChange_Original: IEvent[String] = js.native
+  var onTitleChange_Original: IEvent[String, Unit] = js.native
   /**
     * (EXPERIMENTAL) Get the parser interface to register
     * custom escape sequence handlers.
@@ -182,9 +178,12 @@ class Terminal () extends IDisposable {
     */
   val textarea: js.UndefOr[HTMLTextAreaElement] = js.native
   /**
-    * (EXPERIMENTAL) Adds a marker to the normal buffer and returns it. If the
-    * alt buffer is active, undefined is returned.
-    * @param cursorYOffset The y position offset of the marker from the cursor.
+    * (EXPERIMENTAL) Get the Unicode handling interface
+    * to register and switch Unicode version.
+    */
+  val unicode: IUnicodeHandling = js.native
+  /**
+    * @deprecated use `registerMarker` instead.
     */
   def addMarker(cursorYOffset: Double): IMarker = js.native
   /**
@@ -244,14 +243,8 @@ class Terminal () extends IDisposable {
     */
   @JSName("getOption")
   def getOption_Boolean(
-    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | rightClickSelectsWord | popOnBell | screenKeys | useFlowControl | visualBell | windowsMode
+    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | rightClickSelectsWord | popOnBell | visualBell | windowsMode
   ): Boolean = js.native
-  /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  @JSName("getOption")
-  def getOption_colors(key: colors): js.Array[String] = js.native
   /**
     * Retrieves an option's value from the terminal.
     * @param key The option key.
@@ -260,12 +253,6 @@ class Terminal () extends IDisposable {
   def getOption_cols(key: typings.xterm.xtermStrings.cols): Double = js.native
   @JSName("getOption")
   def getOption_fontSize(key: fontSize): Double = js.native
-  /**
-    * Retrieves an option's value from the terminal.
-    * @param key The option key.
-    */
-  @JSName("getOption")
-  def getOption_handler(key: handler): js.Function1[/* data */ String, Unit] = js.native
   @JSName("getOption")
   def getOption_letterSpacing(key: letterSpacing): Double = js.native
   @JSName("getOption")
@@ -300,15 +287,15 @@ class Terminal () extends IDisposable {
     * Currently this is only used for a certain type of mouse reports that
     * happen to be not UTF-8 compatible.
     * The event value is a JS string, pass it to the underlying pty as
-    * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`. 
+    * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`.
     * @returns an `IDisposable` to stop listening.
     */
-  def onBinary(listener: js.Function1[/* e */ String, _]): IDisposable = js.native
+  def onBinary(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for the cursor moves.
     * @returns an `IDisposable` to stop listening.
     */
-  def onCursorMove(listener: js.Function1[/* e */ Unit, _]): IDisposable = js.native
+  def onCursorMove(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when a data event fires. This happens for
     * example when the user types or pastes into the terminal. The event value
@@ -316,49 +303,49 @@ class Terminal () extends IDisposable {
     * on to the backing pty.
     * @returns an `IDisposable` to stop listening.
     */
-  def onData(listener: js.Function1[/* e */ String, _]): IDisposable = js.native
+  def onData(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when a key is pressed. The event value contains the
     * string that will be sent in the data event as well as the DOM event that
     * triggered it.
     * @returns an `IDisposable` to stop listening.
     */
-  def onKey(listener: js.Function1[/* e */ AnonDomEvent, _]): IDisposable = js.native
+  def onKey(listener: js.Function2[/* arg1 */ AnonDomEvent, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when a line feed is added.
     * @returns an `IDisposable` to stop listening.
     */
-  def onLineFeed(listener: js.Function1[/* e */ Unit, _]): IDisposable = js.native
+  def onLineFeed(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when rows are rendered. The event value
     * contains the start row and end rows of the rendered area (ranges from `0`
     * to `Terminal.rows - 1`).
     * @returns an `IDisposable` to stop listening.
     */
-  def onRender(listener: js.Function1[/* e */ AnonEnd, _]): IDisposable = js.native
+  def onRender(listener: js.Function2[/* arg1 */ AnonEnd, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when the terminal is resized. The event value
     * contains the new size.
     * @returns an `IDisposable` to stop listening.
     */
-  def onResize(listener: js.Function1[/* e */ AnonCols, _]): IDisposable = js.native
+  def onResize(listener: js.Function2[/* arg1 */ AnonCols, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when a scroll occurs. The event value is the
     * new position of the viewport.
     * @returns an `IDisposable` to stop listening.
     */
-  def onScroll(listener: js.Function1[/* e */ Double, _]): IDisposable = js.native
+  def onScroll(listener: js.Function2[/* arg1 */ Double, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when a selection change occurs.
     * @returns an `IDisposable` to stop listening.
     */
-  def onSelectionChange(listener: js.Function1[/* e */ Unit, _]): IDisposable = js.native
+  def onSelectionChange(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
     * The event value is the new title.
     * @returns an `IDisposable` to stop listening.
     */
-  def onTitleChange(listener: js.Function1[/* e */ String, _]): IDisposable = js.native
+  def onTitleChange(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
   /**
     * Opens the terminal within an element.
     * @param parent The element to create the terminal within. This element
@@ -425,6 +412,12 @@ class Terminal () extends IDisposable {
     options: ILinkMatcherOptions
   ): Double = js.native
   /**
+    * (EXPERIMENTAL) Adds a marker to the normal buffer and returns it. If the
+    * alt buffer is active, undefined is returned.
+    * @param cursorYOffset The y position offset of the marker from the cursor.
+    */
+  def registerMarker(cursorYOffset: Double): IMarker = js.native
+  /**
     * Perform a full reset (RIS, aka '\x1bc').
     */
   def reset(): Unit = js.native
@@ -482,7 +475,7 @@ class Terminal () extends IDisposable {
     * @param value The option value.
     */
   def setOption(
-    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | popOnBell | rightClickSelectsWord | screenKeys | useFlowControl | visualBell | windowsMode,
+    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | popOnBell | rightClickSelectsWord | visualBell | windowsMode,
     value: Boolean
   ): Unit = js.native
   /**
@@ -521,13 +514,6 @@ class Terminal () extends IDisposable {
     * @param value The option value.
     */
   @JSName("setOption")
-  def setOption_colors(key: colors, value: js.Array[String]): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
   def setOption_cols(key: typings.xterm.xtermStrings.cols, value: Double): Unit = js.native
   /**
     * Sets an option on the terminal.
@@ -559,13 +545,6 @@ class Terminal () extends IDisposable {
   def setOption_fontWeight(key: fontWeight): Unit = js.native
   @JSName("setOption")
   def setOption_fontWeightBold(key: fontWeightBold): Unit = js.native
-  /**
-    * Sets an option on the terminal.
-    * @param key The option key.
-    * @param value The option value.
-    */
-  @JSName("setOption")
-  def setOption_handler(key: handler, value: js.Function1[/* data */ String, Unit]): Unit = js.native
   @JSName("setOption")
   def setOption_letterSpacing(key: letterSpacing, value: Double): Unit = js.native
   @JSName("setOption")

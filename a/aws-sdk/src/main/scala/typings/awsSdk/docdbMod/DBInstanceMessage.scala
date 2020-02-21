@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBInstanceMessage extends js.Object {
   /**
-    * Detailed information about one or more DB instances. 
+    * Detailed information about one or more instances. 
     */
   var DBInstances: js.UndefOr[DBInstanceList] = js.native
   /**

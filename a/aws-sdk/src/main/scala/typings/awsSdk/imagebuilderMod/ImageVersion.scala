@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ImageVersion extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the image semantic verion.
+    * The Amazon Resource Name (ARN) of the image semantic version.
     */
   var arn: js.UndefOr[ImageBuilderArn] = js.native
   /**

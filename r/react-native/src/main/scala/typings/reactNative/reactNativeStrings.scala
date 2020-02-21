@@ -70,6 +70,9 @@ object reactNativeStrings {
        with CameraRollGroupType
   
   @js.native
+  sealed trait AnimatedProps extends js.Object
+  
+  @js.native
   sealed trait Dragging extends js.Object
   
   @js.native
@@ -140,6 +143,9 @@ object reactNativeStrings {
   
   @js.native
   sealed trait Videos extends CameraRollAssetType
+  
+  @js.native
+  sealed trait WithAnimatedValue extends js.Object
   
   @js.native
   sealed trait _empty extends XMLHttpRequestResponseType
@@ -440,7 +446,7 @@ object reactNativeStrings {
   sealed trait day extends js.Object
   
   @js.native
-  sealed trait `decimal-pad` extends KeyboardTypeIOS
+  sealed trait `decimal-pad` extends KeyboardType
   
   @js.native
   sealed trait decrement extends AccessibilityActionName
@@ -872,6 +878,9 @@ object reactNativeStrings {
   sealed trait `no-hide-descendants` extends js.Object
   
   @js.native
+  sealed trait noExcludeDescendants extends js.Object
+  
+  @js.native
   sealed trait none
     extends AccessibilityRole
        with AccessibilityTrait
@@ -890,7 +899,7 @@ object reactNativeStrings {
   sealed trait nowrap extends js.Object
   
   @js.native
-  sealed trait `number-pad` extends KeyboardTypeIOS
+  sealed trait `number-pad` extends KeyboardType
   
   @js.native
   sealed trait `numbers-and-punctuation` extends KeyboardTypeIOS
@@ -1290,6 +1299,9 @@ object reactNativeStrings {
   @js.native
   sealed trait yes extends js.Object
   
+  @js.native
+  sealed trait yesExcludeDescendants extends js.Object
+  
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
   @scala.inline
@@ -1312,6 +1324,8 @@ object reactNativeStrings {
   def Album: Album = "Album".asInstanceOf[Album]
   @scala.inline
   def All: All = "All".asInstanceOf[All]
+  @scala.inline
+  def AnimatedProps: AnimatedProps = "AnimatedProps".asInstanceOf[AnimatedProps]
   @scala.inline
   def Dragging: Dragging = "Dragging".asInstanceOf[Dragging]
   @scala.inline
@@ -1360,6 +1374,8 @@ object reactNativeStrings {
   def URL: URL = "URL".asInstanceOf[URL]
   @scala.inline
   def Videos: Videos = "Videos".asInstanceOf[Videos]
+  @scala.inline
+  def WithAnimatedValue: WithAnimatedValue = "WithAnimatedValue".asInstanceOf[WithAnimatedValue]
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
@@ -1823,6 +1839,8 @@ object reactNativeStrings {
   @scala.inline
   def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
   @scala.inline
+  def noExcludeDescendants: noExcludeDescendants = "noExcludeDescendants".asInstanceOf[noExcludeDescendants]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal_ : normal_ = "normal".asInstanceOf[normal_]
@@ -2082,5 +2100,7 @@ object reactNativeStrings {
   def year: year = "year".asInstanceOf[year]
   @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
+  @scala.inline
+  def yesExcludeDescendants: yesExcludeDescendants = "yesExcludeDescendants".asInstanceOf[yesExcludeDescendants]
 }
 

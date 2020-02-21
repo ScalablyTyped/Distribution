@@ -1,31 +1,20 @@
 package typings.themeUi.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.csstype.mod.BorderProperty
-import typings.csstype.mod.BorderRadiusProperty
-import typings.csstype.mod.BorderWidthProperty
-import typings.csstype.mod.BoxShadowProperty
-import typings.csstype.mod.ColorProperty
-import typings.csstype.mod.FontFamilyProperty
-import typings.csstype.mod.FontSizeProperty
-import typings.csstype.mod.FontWeightProperty
-import typings.csstype.mod.HeightProperty
-import typings.csstype.mod.LetterSpacingProperty
-import typings.csstype.mod.LineHeightProperty
-import typings.csstype.mod.StandardProperties
-import typings.csstype.mod.WidthProperty
-import typings.csstype.mod.ZIndexProperty
-import typings.styledSystem.styledSystemNumbers.`0`
+import typings.themeUi.AnonK
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Theme
-  extends typings.styledSystem.mod.Theme {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof styled-system.styled-system.Theme<styled-system.styled-system.TLengthStyledSystem>, 'colors'> ]: styled-system.styled-system.Theme<styled-system.styled-system.TLengthStyledSystem>[P]} */ trait Theme extends js.Object {
+  /**
+    * Define the colors that are available through this theme
+    */
+  var colors: js.UndefOr[ColorMode with AnonK] = js.undefined
   /**
     * Provide a value here to enable color modes
     */
-  var initialColorMode: js.UndefOr[String] = js.undefined
+  var initialColorModeName: js.UndefOr[String] = js.undefined
   /**
     * Styles for elements rendered in MDX can be added to the theme.styles
     * object. This is the primary, low-level way to control typographic and
@@ -50,54 +39,18 @@ trait Theme
 object Theme {
   @scala.inline
   def apply(
-    borderStyles: typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object]] = null,
-    borderWidths: typings.styledSystem.mod.ObjectOrArray[BorderWidthProperty[js.Object]] = null,
-    borders: typings.styledSystem.mod.ObjectOrArray[BorderProperty[js.Object]] = null,
-    breakpoints: (js.Array[Double | String]) | js.Object = null,
-    buttons: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`]] = null,
-    colorStyles: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`]] = null,
-    colors: typings.styledSystem.mod.ObjectOrArray[ColorProperty] = null,
-    fontSizes: typings.styledSystem.mod.ObjectOrArray[FontSizeProperty[Double]] = null,
-    fontWeights: typings.styledSystem.mod.ObjectOrArray[FontWeightProperty] = null,
-    fonts: typings.styledSystem.mod.ObjectOrArray[FontFamilyProperty] = null,
-    initialColorMode: String = null,
-    letterSpacings: typings.styledSystem.mod.ObjectOrArray[LetterSpacingProperty[js.Object]] = null,
-    lineHeights: typings.styledSystem.mod.ObjectOrArray[LineHeightProperty[js.Object]] = null,
-    mediaQueries: StringDictionary[String] = null,
-    radii: typings.styledSystem.mod.ObjectOrArray[BorderRadiusProperty[js.Object]] = null,
-    shadows: typings.styledSystem.mod.ObjectOrArray[BoxShadowProperty] = null,
-    sizes: typings.styledSystem.mod.ObjectOrArray[HeightProperty[js.Object] | WidthProperty[js.Object]] = null,
-    space: typings.styledSystem.mod.ObjectOrArray[Double | String] = null,
+    colors: ColorMode with AnonK = null,
+    initialColorModeName: String = null,
     styles: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in theme-ui.theme-ui.StyledTags ]:? @styled-system/css.@styled-system/css.SystemStyleObject}
     */ typings.themeUi.themeUiStrings.Theme with js.Any = null,
-    textStyles: typings.styledSystem.mod.ObjectOrArray[StandardProperties[String | `0`]] = null,
-    useCustomProperties: js.UndefOr[Boolean] = js.undefined,
-    zIndices: typings.styledSystem.mod.ObjectOrArray[ZIndexProperty] = null
+    useCustomProperties: js.UndefOr[Boolean] = js.undefined
   ): Theme = {
     val __obj = js.Dynamic.literal()
-    if (borderStyles != null) __obj.updateDynamic("borderStyles")(borderStyles.asInstanceOf[js.Any])
-    if (borderWidths != null) __obj.updateDynamic("borderWidths")(borderWidths.asInstanceOf[js.Any])
-    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (colorStyles != null) __obj.updateDynamic("colorStyles")(colorStyles.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes.asInstanceOf[js.Any])
-    if (fontWeights != null) __obj.updateDynamic("fontWeights")(fontWeights.asInstanceOf[js.Any])
-    if (fonts != null) __obj.updateDynamic("fonts")(fonts.asInstanceOf[js.Any])
-    if (initialColorMode != null) __obj.updateDynamic("initialColorMode")(initialColorMode.asInstanceOf[js.Any])
-    if (letterSpacings != null) __obj.updateDynamic("letterSpacings")(letterSpacings.asInstanceOf[js.Any])
-    if (lineHeights != null) __obj.updateDynamic("lineHeights")(lineHeights.asInstanceOf[js.Any])
-    if (mediaQueries != null) __obj.updateDynamic("mediaQueries")(mediaQueries.asInstanceOf[js.Any])
-    if (radii != null) __obj.updateDynamic("radii")(radii.asInstanceOf[js.Any])
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
+    if (initialColorModeName != null) __obj.updateDynamic("initialColorModeName")(initialColorModeName.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (textStyles != null) __obj.updateDynamic("textStyles")(textStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(useCustomProperties)) __obj.updateDynamic("useCustomProperties")(useCustomProperties.asInstanceOf[js.Any])
-    if (zIndices != null) __obj.updateDynamic("zIndices")(zIndices.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
 }

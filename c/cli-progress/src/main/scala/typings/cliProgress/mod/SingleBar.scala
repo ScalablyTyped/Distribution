@@ -14,6 +14,7 @@ class SingleBar protected () extends js.Object {
   def formatTime(t: js.Any, roundToMultipleOf: js.Any): js.Any = js.native
   def getTotal(): js.Any = js.native
   /** Increases the current progress value by a specified amount (default +1). Update payload optionally */
+  def increment(): Unit = js.native
   def increment(step: Double): Unit = js.native
   def increment(step: Double, payload: js.Object): Unit = js.native
   def render(): Unit = js.native

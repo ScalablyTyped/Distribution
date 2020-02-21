@@ -1,16 +1,15 @@
 organization := "org.scalablytyped"
 name := "xlsx"
-version := "0.15.4-a21180"
-scalaVersion := "2.12.10"
+version := "0.15.5-89eed2"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cfb" % "1.1.3-56e2c0",
-  "org.scalablytyped" %%% "ssf" % "0.10.2-7bb1d4",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "cfb" % "1.1.3-92b31e",
+  "org.scalablytyped" %%% "ssf" % "0.10.2-c2f2a5",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

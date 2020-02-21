@@ -26,6 +26,10 @@ trait UserPoolPasswordPolicy extends js.Object {
     * Whether you have required users to use at least one uppercase letter in their password.
     */
   var requireUppercase: js.UndefOr[Boolean] = js.native
+  /**
+    * In the password policy you have set, refers to the number of days a temporary password is valid. If the user does not sign-in during this time, their password will need to be reset by an administrator.
+    */
+  var temporaryPasswordValidityDays: js.UndefOr[Double] = js.native
 }
 
 object UserPoolPasswordPolicy {
@@ -35,7 +39,8 @@ object UserPoolPasswordPolicy {
     requireLowercase: js.UndefOr[Boolean] = js.undefined,
     requireNumbers: js.UndefOr[Boolean] = js.undefined,
     requireSymbols: js.UndefOr[Boolean] = js.undefined,
-    requireUppercase: js.UndefOr[Boolean] = js.undefined
+    requireUppercase: js.UndefOr[Boolean] = js.undefined,
+    temporaryPasswordValidityDays: Int | Double = null
   ): UserPoolPasswordPolicy = {
     val __obj = js.Dynamic.literal()
     if (minimumLength != null) __obj.updateDynamic("minimumLength")(minimumLength.asInstanceOf[js.Any])
@@ -43,6 +48,7 @@ object UserPoolPasswordPolicy {
     if (!js.isUndefined(requireNumbers)) __obj.updateDynamic("requireNumbers")(requireNumbers.asInstanceOf[js.Any])
     if (!js.isUndefined(requireSymbols)) __obj.updateDynamic("requireSymbols")(requireSymbols.asInstanceOf[js.Any])
     if (!js.isUndefined(requireUppercase)) __obj.updateDynamic("requireUppercase")(requireUppercase.asInstanceOf[js.Any])
+    if (temporaryPasswordValidityDays != null) __obj.updateDynamic("temporaryPasswordValidityDays")(temporaryPasswordValidityDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolPasswordPolicy]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RegistryCredential extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) or name of credentials created using AWS Secrets Manager.    The credential can use the name of the credentials only if they exist in your current region.  
+    *  The Amazon Resource Name (ARN) or name of credentials created using AWS Secrets Manager.    The credential can use the name of the credentials only if they exist in your current AWS Region.  
     */
   var credential: NonEmptyString = js.native
   /**

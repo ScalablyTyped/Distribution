@@ -9,10 +9,10 @@ import typings.officeUiFabricReact.withResponsiveModeMod.IWithResponsiveModeStat
 import typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.StatelessComponent
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Window_
@@ -66,7 +66,7 @@ trait IContextualMenuProps
     * @defaultvalue ContextualMenuItem
     */
   var contextualMenuItemAs: js.UndefOr[
-    (ComponentClass[IContextualMenuItemProps, ComponentState]) | StatelessComponent[IContextualMenuItemProps]
+    (ComponentClass[IContextualMenuItemProps, ComponentState]) | FunctionComponent[IContextualMenuItemProps]
   ] = js.undefined
   /**
     * If true, the menu will be positioned to cover the target.
@@ -254,7 +254,7 @@ object IContextualMenuProps {
     calloutProps: ICalloutProps = null,
     className: String = null,
     componentRef: IRefObject[IContextualMenu] = null,
-    contextualMenuItemAs: (ComponentClass[IContextualMenuItemProps, ComponentState]) | StatelessComponent[IContextualMenuItemProps] = null,
+    contextualMenuItemAs: (ComponentClass[IContextualMenuItemProps, ComponentState]) | FunctionComponent[IContextualMenuItemProps] = null,
     coverTarget: js.UndefOr[Boolean] = js.undefined,
     delayUpdateFocusOnHover: js.UndefOr[Boolean] = js.undefined,
     directionalHint: typings.officeUiFabricReact.directionalHintMod.DirectionalHint = null,

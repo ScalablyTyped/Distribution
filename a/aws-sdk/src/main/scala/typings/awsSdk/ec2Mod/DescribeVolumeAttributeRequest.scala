@@ -17,12 +17,16 @@ trait DescribeVolumeAttributeRequest extends js.Object {
   /**
     * The ID of the volume.
     */
-  var VolumeId: String = js.native
+  var VolumeId: typings.awsSdk.ec2Mod.VolumeId = js.native
 }
 
 object DescribeVolumeAttributeRequest {
   @scala.inline
-  def apply(Attribute: VolumeAttributeName, VolumeId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeVolumeAttributeRequest = {
+  def apply(
+    Attribute: VolumeAttributeName,
+    VolumeId: VolumeId,
+    DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  ): DescribeVolumeAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], VolumeId = VolumeId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVolumeAttributeRequest]

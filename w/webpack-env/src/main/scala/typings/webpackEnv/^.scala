@@ -55,6 +55,13 @@ object ^ extends js.Object {
   @JSName("__webpack_modules__")
   var webpackModules: js.Array[js.Any] = js.native
   /**
+    * Adds nonce to all scripts that webpack loads.
+    *
+    * To activate the feature a __webpack_nonce__ variable needs to be set in your entry script.
+    */
+  @JSName("__webpack_nonce__")
+  var webpackNonce: String = js.native
+  /**
     * Equals the config options output.publicPath.
     */
   @JSName("__webpack_public_path__")

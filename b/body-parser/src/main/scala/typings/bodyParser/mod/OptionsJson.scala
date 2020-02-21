@@ -8,7 +8,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OptionsJson extends Options {
+  /**
+    *
+    * The reviver option is passed directly to JSON.parse as the second argument.
+    */
   var reviver: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.undefined
+  /**
+    * When set to `true`, will only accept arrays and objects;
+    * when `false` will accept anything JSON.parse accepts. Defaults to `true`.
+    */
   var strict: js.UndefOr[Boolean] = js.undefined
 }
 

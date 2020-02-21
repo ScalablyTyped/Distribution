@@ -72,7 +72,7 @@ package object mod {
     /* rowA */ typings.reactTable.mod.Row[D], 
     /* rowB */ typings.reactTable.mod.Row[D], 
     /* columnId */ typings.reactTable.mod.IdType[D], 
-    typings.reactTable.reactTableNumbers.`0` | typings.reactTable.reactTableNumbers.`1` | typings.reactTable.reactTableNumbers.`-1`
+    scala.Double
   ]
   type StringKey[D] = typings.std.Extract[java.lang.String, java.lang.String]
   type TableBodyPropGetter[D /* <: js.Object */] = typings.reactTable.mod.PropGetter[

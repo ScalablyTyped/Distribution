@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetFindingsRequest extends js.Object {
   /**
-    * The findings attributes used to define a condition to filter the findings returned.
+    * The finding attributes used to define a condition to filter the returned findings.
     */
   var Filters: js.UndefOr[AwsSecurityFindingFilters] = js.native
   /**
@@ -15,11 +15,11 @@ trait GetFindingsRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[typings.awsSdk.securityhubMod.MaxResults] = js.native
   /**
-    * Paginates results. On your first call to the GetFindings operation, set the value of this parameter to NULL. For subsequent calls to the operation, fill nextToken in the request with the value of nextToken from the previous response to continue listing data.
+    * The token that is required for pagination. On your first call to the GetFindings operation, set the value of this parameter to NULL. For subsequent calls to the operation, to continue listing data, set the value of this parameter to the value returned from the previous response.
     */
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
   /**
-    * Findings attributes used to sort the list of findings returned.
+    * The finding attributes used to sort the list of returned findings.
     */
   var SortCriteria: js.UndefOr[typings.awsSdk.securityhubMod.SortCriteria] = js.native
 }

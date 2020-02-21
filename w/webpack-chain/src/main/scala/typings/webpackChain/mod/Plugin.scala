@@ -1,5 +1,6 @@
 package typings.webpackChain.mod
 
+import typings.std.ConstructorParameters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,19 +16,16 @@ class Plugin[Parent, PluginType /* <: typings.tapable.mod.Tapable.Plugin */] ()
   override def before(name: String): this.type = js.native
   /* CompleteClass */
   override def end(): Parent = js.native
-  def init(
-    value: js.Function2[
-      /* plugin */ PluginType | PluginClass[PluginType], 
-      /* args */ js.Array[_], 
-      PluginType
-    ]
-  ): this.type = js.native
-  def tap(f: js.Function1[/* args */ js.Array[_], js.Array[_]]): this.type = js.native
-  def use(plugin: PluginType): this.type = js.native
-  def use(plugin: PluginType, args: js.Array[_]): this.type = js.native
+  def init[P /* <: PluginType | PluginClass[PluginType] */](value: js.Function2[/* plugin */ P, /* args */ js.Array[_] | ConstructorParameters[P], PluginType]): this.type = js.native
+  def tap[P /* <: PluginClass[PluginType] */](f: js.Function1[/* args */ ConstructorParameters[P], ConstructorParameters[P]]): this.type = js.native
   def use(plugin: String): this.type = js.native
-  def use(plugin: String, args: js.Array[_]): this.type = js.native
+  def use(plugin: String, args: js.Array[_] | ConstructorParameters[String]): this.type = js.native
   def use(plugin: PluginClass[PluginType]): this.type = js.native
-  def use(plugin: PluginClass[PluginType], args: js.Array[_]): this.type = js.native
+  def use(
+    plugin: PluginClass[PluginType],
+    args: js.Array[_] | ConstructorParameters[PluginClass[PluginType]]
+  ): this.type = js.native
+  def use[P /* <: PluginType */](plugin: P): this.type = js.native
+  def use[P /* <: PluginType */](plugin: P, args: js.Array[_] | ConstructorParameters[P]): this.type = js.native
 }
 

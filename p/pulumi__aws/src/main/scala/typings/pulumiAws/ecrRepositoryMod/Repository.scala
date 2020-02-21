@@ -45,7 +45,7 @@ class Repository protected () extends CustomResource {
     */
   val registryId: Output_[String] = js.native
   /**
-    * The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`
+    * The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`).
     */
   val repositoryUrl: Output_[String] = js.native
   /**

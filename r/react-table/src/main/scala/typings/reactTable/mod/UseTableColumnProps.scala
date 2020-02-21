@@ -16,6 +16,8 @@ trait UseTableColumnProps[D /* <: js.Object */] extends js.Object {
   var index: Double = js.native
   var isVisible: Boolean = js.native
   var parent: ColumnInstance[D] = js.native
+   // not documented
+  var placeholderOf: js.UndefOr[ColumnInstance[js.Object]] = js.native
   var totalLeft: Double = js.native
   var totalWidth: Double = js.native
   def getFooterProps(): TableFooterProps = js.native
@@ -23,7 +25,8 @@ trait UseTableColumnProps[D /* <: js.Object */] extends js.Object {
   def getHeaderProps(): TableHeaderProps = js.native
   def getHeaderProps(propGetter: HeaderPropGetter[D]): TableHeaderProps = js.native
    // not documented
-  def getToggleHideColumnsProps(userProps: js.Any): js.Any = js.native
+  def getToggleHiddenProps(): js.Any = js.native
+  def getToggleHiddenProps(userProps: js.Any): js.Any = js.native
   def render(`type`: String): ReactNode = js.native
   def render(`type`: String, props: js.Object): ReactNode = js.native
   @JSName("render")

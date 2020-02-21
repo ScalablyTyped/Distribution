@@ -72,6 +72,12 @@ trait Configuration extends js.Object {
     */
   var contentBase: js.UndefOr[Boolean | String | js.Array[String] | Double] = js.undefined
   /**
+    * Tell the server at what URL to serve `devServer.contentBase`.
+    * If there was a file `assets/manifest.json`,
+    * it would be served at `/serve-content-base-at-this-url/manifest.json`
+    */
+  var contentBasePublicPath: js.UndefOr[String] = js.undefined
+  /**
     * When set to true this option bypasses host checking.  THIS IS NOT
     * RECOMMENDED as apps that do not check the host are vulnerable to DNS
     * rebinding attacks.
@@ -309,6 +315,7 @@ object Configuration {
     clientLogLevel: silent | trace | debug | info | warn | error | none | warning = null,
     compress: js.UndefOr[Boolean] = js.undefined,
     contentBase: Boolean | String | js.Array[String] | Double = null,
+    contentBasePublicPath: String = null,
     disableHostCheck: js.UndefOr[Boolean] = js.undefined,
     filename: String = null,
     headers: StringDictionary[String] = null,
@@ -359,6 +366,7 @@ object Configuration {
     if (clientLogLevel != null) __obj.updateDynamic("clientLogLevel")(clientLogLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (contentBase != null) __obj.updateDynamic("contentBase")(contentBase.asInstanceOf[js.Any])
+    if (contentBasePublicPath != null) __obj.updateDynamic("contentBasePublicPath")(contentBasePublicPath.asInstanceOf[js.Any])
     if (!js.isUndefined(disableHostCheck)) __obj.updateDynamic("disableHostCheck")(disableHostCheck.asInstanceOf[js.Any])
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

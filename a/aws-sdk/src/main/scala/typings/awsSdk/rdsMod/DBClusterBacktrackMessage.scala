@@ -11,7 +11,7 @@ trait DBClusterBacktrackMessage extends js.Object {
     */
   var DBClusterBacktracks: js.UndefOr[DBClusterBacktrackList] = js.native
   /**
-    * A pagination token that can be used in a subsequent DescribeDBClusterBacktracks request.
+    * A pagination token that can be used in a later DescribeDBClusterBacktracks request.
     */
   var Marker: js.UndefOr[String] = js.native
 }

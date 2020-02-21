@@ -56,11 +56,6 @@ object indexeddbRemoteDocumentCacheMod extends js.Object {
       */
     var updateMetadata: js.Any = js.native
     /**
-      * Returns the last document that has changed, as well as the read time of the
-      * last change. If no document has changed, returns SnapshotVersion.MIN.
-      */
-    def getLastDocumentChange(transaction: PersistenceTransaction): PersistencePromise[AnonChangedDoc] = js.native
-    /**
       * Looks up several entries in the cache.
       *
       * @param documentKeys The set of keys entries to look up.

@@ -207,6 +207,7 @@ object nodejsKernelBackendMod extends js.Object {
     def floorDiv(a: Tensor_[Rank], b: Tensor_[Rank]): Tensor_[Rank] = js.native
     def flushSummaryWriter(resourceHandle: Tensor_[Rank]): Unit = js.native
     def gatherND(x: Tensor_[Rank], indices: Tensor_[Rank]): Tensor_[Rank] = js.native
+    def getNumOfSavedModels(): Double = js.native
     def greater(a: Tensor_[Rank], b: Tensor_[Rank]): Tensor_[Rank] = js.native
     def greaterEqual(a: Tensor_[Rank], b: Tensor_[Rank]): Tensor_[Rank] = js.native
     def less(a: Tensor_[Rank], b: Tensor_[Rank]): Tensor_[Rank] = js.native

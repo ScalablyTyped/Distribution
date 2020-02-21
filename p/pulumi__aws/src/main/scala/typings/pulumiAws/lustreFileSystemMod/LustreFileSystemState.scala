@@ -41,7 +41,7 @@ trait LustreFileSystemState extends js.Object {
     */
   val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * The storage capacity (GiB) of the file system. Minimum of `3600`. Storage capacity is provisioned in increments of 3,600 GiB.
+    * The storage capacity (GiB) of the file system. Minimum of `1200`. Storage capacity is provisioned in increments of 3,600 GiB.
     */
   val storageCapacity: js.UndefOr[Input[Double]] = js.native
   /**

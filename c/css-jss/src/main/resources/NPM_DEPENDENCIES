@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "css-jss" : "10.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "css-jss" : "10.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

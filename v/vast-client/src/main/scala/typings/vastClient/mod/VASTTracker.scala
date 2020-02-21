@@ -189,6 +189,26 @@ class VASTTracker protected () extends EventEmitter {
     */
   def skip(): Unit = js.native
   /**
+    * Calls the tracking URLs for the given eventName and emits the event.
+    */
+  def track(
+    /**
+    * The name of the event. Call the specified event tracking URLs. Emit the specified event when done.
+    */
+  eventName: String
+  ): Unit = js.native
+  def track(
+    /**
+    * The name of the event. Call the specified event tracking URLs. Emit the specified event when done.
+    */
+  eventName: String,
+    /**
+    * Indicate if the event has to be tracked only once.
+    * Default: false
+    */
+  once: Boolean
+  ): Unit = js.native
+  /**
     * Report the impression URI. Can only be called once. Will report the following URI:
     *
     * - All <Impression> URI from the <InLine> and <Wrapper> tracking elements.

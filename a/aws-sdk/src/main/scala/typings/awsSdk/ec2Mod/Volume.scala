@@ -35,6 +35,10 @@ trait Volume extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
+    * Indicates whether Amazon EBS Multi-Attach is enabled.
+    */
+  var MultiAttachEnabled: js.UndefOr[Boolean] = js.native
+  /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
   var OutpostArn: js.UndefOr[String] = js.native
@@ -74,6 +78,7 @@ object Volume {
     FastRestored: js.UndefOr[scala.Boolean] = js.undefined,
     Iops: Int | scala.Double = null,
     KmsKeyId: String = null,
+    MultiAttachEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     OutpostArn: String = null,
     Size: Int | scala.Double = null,
     SnapshotId: String = null,
@@ -90,6 +95,7 @@ object Volume {
     if (!js.isUndefined(FastRestored)) __obj.updateDynamic("FastRestored")(FastRestored.asInstanceOf[js.Any])
     if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAttachEnabled)) __obj.updateDynamic("MultiAttachEnabled")(MultiAttachEnabled.asInstanceOf[js.Any])
     if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
     if (Size != null) __obj.updateDynamic("Size")(Size.asInstanceOf[js.Any])
     if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])

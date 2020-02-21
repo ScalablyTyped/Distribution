@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PRIMITIVE_LINESTRIP
+  * @type {number}
   * @description List of points that are linked sequentially by line segments.
   */
 @JSImport("playcanvas", "PRIMITIVE_LINESTRIP")

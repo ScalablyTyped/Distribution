@@ -18,6 +18,9 @@ object ioTsStrings {
   sealed trait ArrayType extends js.Object
   
   @js.native
+  sealed trait BigIntType extends js.Object
+  
+  @js.native
   sealed trait BooleanType extends js.Object
   
   @js.native
@@ -142,6 +145,8 @@ object ioTsStrings {
   def AnyType: AnyType = "AnyType".asInstanceOf[AnyType]
   @scala.inline
   def ArrayType: ArrayType = "ArrayType".asInstanceOf[ArrayType]
+  @scala.inline
+  def BigIntType: BigIntType = "BigIntType".asInstanceOf[BigIntType]
   @scala.inline
   def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
   @scala.inline

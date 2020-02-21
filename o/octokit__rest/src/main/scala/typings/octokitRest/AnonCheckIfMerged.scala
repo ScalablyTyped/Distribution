@@ -1,85 +1,85 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.PullsCheckIfMergedParams
-import typings.octokitRest.mod.PullsCheckIfMergedParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsCreateCommentParams
-import typings.octokitRest.mod.PullsCreateCommentParamsDeprecatedInReplyTo
-import typings.octokitRest.mod.PullsCreateCommentParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsCreateCommentReplyParams
-import typings.octokitRest.mod.PullsCreateCommentReplyParamsDeprecatedInReplyTo
-import typings.octokitRest.mod.PullsCreateCommentReplyParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsCreateCommentReplyResponse
-import typings.octokitRest.mod.PullsCreateCommentResponse
-import typings.octokitRest.mod.PullsCreateFromIssueParams
-import typings.octokitRest.mod.PullsCreateFromIssueResponse
-import typings.octokitRest.mod.PullsCreateParams
-import typings.octokitRest.mod.PullsCreateResponse
-import typings.octokitRest.mod.PullsCreateReviewCommentReplyParams
-import typings.octokitRest.mod.PullsCreateReviewCommentReplyResponse
-import typings.octokitRest.mod.PullsCreateReviewParams
-import typings.octokitRest.mod.PullsCreateReviewParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsCreateReviewRequestParams
-import typings.octokitRest.mod.PullsCreateReviewRequestParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsCreateReviewRequestResponse
-import typings.octokitRest.mod.PullsCreateReviewResponse
-import typings.octokitRest.mod.PullsDeleteCommentParams
-import typings.octokitRest.mod.PullsDeletePendingReviewParams
-import typings.octokitRest.mod.PullsDeletePendingReviewParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsDeletePendingReviewResponse
-import typings.octokitRest.mod.PullsDeleteReviewRequestParams
-import typings.octokitRest.mod.PullsDeleteReviewRequestParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsDismissReviewParams
-import typings.octokitRest.mod.PullsDismissReviewParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsDismissReviewResponse
-import typings.octokitRest.mod.PullsGetCommentParams
-import typings.octokitRest.mod.PullsGetCommentResponse
-import typings.octokitRest.mod.PullsGetCommentsForReviewParams
-import typings.octokitRest.mod.PullsGetCommentsForReviewParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsGetCommentsForReviewResponse
-import typings.octokitRest.mod.PullsGetParams
-import typings.octokitRest.mod.PullsGetParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsGetResponse
-import typings.octokitRest.mod.PullsGetReviewParams
-import typings.octokitRest.mod.PullsGetReviewParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsGetReviewResponse
-import typings.octokitRest.mod.PullsListCommentsForRepoParams
-import typings.octokitRest.mod.PullsListCommentsForRepoResponse
-import typings.octokitRest.mod.PullsListCommentsParams
-import typings.octokitRest.mod.PullsListCommentsParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsListCommentsResponse
-import typings.octokitRest.mod.PullsListCommitsParams
-import typings.octokitRest.mod.PullsListCommitsParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsListCommitsResponse
-import typings.octokitRest.mod.PullsListFilesParams
-import typings.octokitRest.mod.PullsListFilesParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsListFilesResponse
-import typings.octokitRest.mod.PullsListParams
-import typings.octokitRest.mod.PullsListResponse
-import typings.octokitRest.mod.PullsListReviewRequestsParams
-import typings.octokitRest.mod.PullsListReviewRequestsParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsListReviewRequestsResponse
-import typings.octokitRest.mod.PullsListReviewsParams
-import typings.octokitRest.mod.PullsListReviewsParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsListReviewsResponse
-import typings.octokitRest.mod.PullsMergeParams
-import typings.octokitRest.mod.PullsMergeParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsMergeResponse
-import typings.octokitRest.mod.PullsSubmitReviewParams
-import typings.octokitRest.mod.PullsSubmitReviewParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsSubmitReviewResponse
-import typings.octokitRest.mod.PullsUpdateBranchParams
-import typings.octokitRest.mod.PullsUpdateBranchResponse
-import typings.octokitRest.mod.PullsUpdateCommentParams
-import typings.octokitRest.mod.PullsUpdateCommentResponse
-import typings.octokitRest.mod.PullsUpdateParams
-import typings.octokitRest.mod.PullsUpdateParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsUpdateResponse
-import typings.octokitRest.mod.PullsUpdateReviewParams
-import typings.octokitRest.mod.PullsUpdateReviewParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsUpdateReviewResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.PullsCheckIfMergedParams
+import typings.octokitRest.mod.Octokit.PullsCheckIfMergedParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsCreateCommentParams
+import typings.octokitRest.mod.Octokit.PullsCreateCommentParamsDeprecatedInReplyTo
+import typings.octokitRest.mod.Octokit.PullsCreateCommentParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsCreateCommentReplyParams
+import typings.octokitRest.mod.Octokit.PullsCreateCommentReplyParamsDeprecatedInReplyTo
+import typings.octokitRest.mod.Octokit.PullsCreateCommentReplyParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsCreateCommentReplyResponse
+import typings.octokitRest.mod.Octokit.PullsCreateCommentResponse
+import typings.octokitRest.mod.Octokit.PullsCreateFromIssueParams
+import typings.octokitRest.mod.Octokit.PullsCreateFromIssueResponse
+import typings.octokitRest.mod.Octokit.PullsCreateParams
+import typings.octokitRest.mod.Octokit.PullsCreateResponse
+import typings.octokitRest.mod.Octokit.PullsCreateReviewCommentReplyParams
+import typings.octokitRest.mod.Octokit.PullsCreateReviewCommentReplyResponse
+import typings.octokitRest.mod.Octokit.PullsCreateReviewParams
+import typings.octokitRest.mod.Octokit.PullsCreateReviewParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsCreateReviewRequestParams
+import typings.octokitRest.mod.Octokit.PullsCreateReviewRequestParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsCreateReviewRequestResponse
+import typings.octokitRest.mod.Octokit.PullsCreateReviewResponse
+import typings.octokitRest.mod.Octokit.PullsDeleteCommentParams
+import typings.octokitRest.mod.Octokit.PullsDeletePendingReviewParams
+import typings.octokitRest.mod.Octokit.PullsDeletePendingReviewParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsDeletePendingReviewResponse
+import typings.octokitRest.mod.Octokit.PullsDeleteReviewRequestParams
+import typings.octokitRest.mod.Octokit.PullsDeleteReviewRequestParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsDismissReviewParams
+import typings.octokitRest.mod.Octokit.PullsDismissReviewParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsDismissReviewResponse
+import typings.octokitRest.mod.Octokit.PullsGetCommentParams
+import typings.octokitRest.mod.Octokit.PullsGetCommentResponse
+import typings.octokitRest.mod.Octokit.PullsGetCommentsForReviewParams
+import typings.octokitRest.mod.Octokit.PullsGetCommentsForReviewParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsGetCommentsForReviewResponse
+import typings.octokitRest.mod.Octokit.PullsGetParams
+import typings.octokitRest.mod.Octokit.PullsGetParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsGetResponse
+import typings.octokitRest.mod.Octokit.PullsGetReviewParams
+import typings.octokitRest.mod.Octokit.PullsGetReviewParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsGetReviewResponse
+import typings.octokitRest.mod.Octokit.PullsListCommentsForRepoParams
+import typings.octokitRest.mod.Octokit.PullsListCommentsForRepoResponse
+import typings.octokitRest.mod.Octokit.PullsListCommentsParams
+import typings.octokitRest.mod.Octokit.PullsListCommentsParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsListCommentsResponse
+import typings.octokitRest.mod.Octokit.PullsListCommitsParams
+import typings.octokitRest.mod.Octokit.PullsListCommitsParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsListCommitsResponse
+import typings.octokitRest.mod.Octokit.PullsListFilesParams
+import typings.octokitRest.mod.Octokit.PullsListFilesParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsListFilesResponse
+import typings.octokitRest.mod.Octokit.PullsListParams
+import typings.octokitRest.mod.Octokit.PullsListResponse
+import typings.octokitRest.mod.Octokit.PullsListReviewRequestsParams
+import typings.octokitRest.mod.Octokit.PullsListReviewRequestsParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsListReviewRequestsResponse
+import typings.octokitRest.mod.Octokit.PullsListReviewsParams
+import typings.octokitRest.mod.Octokit.PullsListReviewsParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsListReviewsResponse
+import typings.octokitRest.mod.Octokit.PullsMergeParams
+import typings.octokitRest.mod.Octokit.PullsMergeParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsMergeResponse
+import typings.octokitRest.mod.Octokit.PullsSubmitReviewParams
+import typings.octokitRest.mod.Octokit.PullsSubmitReviewParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsSubmitReviewResponse
+import typings.octokitRest.mod.Octokit.PullsUpdateBranchParams
+import typings.octokitRest.mod.Octokit.PullsUpdateBranchResponse
+import typings.octokitRest.mod.Octokit.PullsUpdateCommentParams
+import typings.octokitRest.mod.Octokit.PullsUpdateCommentResponse
+import typings.octokitRest.mod.Octokit.PullsUpdateParams
+import typings.octokitRest.mod.Octokit.PullsUpdateParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsUpdateResponse
+import typings.octokitRest.mod.Octokit.PullsUpdateReviewParams
+import typings.octokitRest.mod.Octokit.PullsUpdateReviewParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsUpdateReviewResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -299,7 +299,7 @@ trait AnonCheckIfMerged extends js.Object {
   @JSName("listCommits")
   var listCommits_Original: AnonEndpointParamsPromisePullsListCommitsParams = js.native
   /**
-    * **Note:** The response includes a maximum of 300 files.
+    * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
     */
   @JSName("listFiles")
   var listFiles_Original: AnonEndpointParamsPromisePullsListFilesParams = js.native
@@ -592,7 +592,7 @@ trait AnonCheckIfMerged extends js.Object {
   def listCommits(): js.Promise[Response[PullsListCommitsResponse]] = js.native
   def listCommits(params: RequestOptions with PullsListCommitsParamsDeprecatedNumber with PullsListCommitsParams): js.Promise[Response[PullsListCommitsResponse]] = js.native
   /**
-    * **Note:** The response includes a maximum of 300 files.
+    * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
     */
   def listFiles(): js.Promise[Response[PullsListFilesResponse]] = js.native
   def listFiles(params: RequestOptions with PullsListFilesParamsDeprecatedNumber with PullsListFilesParams): js.Promise[Response[PullsListFilesResponse]] = js.native

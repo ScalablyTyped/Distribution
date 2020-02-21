@@ -40,6 +40,12 @@ object chromeStrings {
   sealed trait currentTab extends OnInputEnteredDisposition
   
   @js.native
+  sealed trait dark extends js.Object
+  
+  @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
   sealed trait detect_important_content extends js.Object
   
   @js.native
@@ -194,6 +200,10 @@ object chromeStrings {
   def csp_report: csp_report = "csp_report".asInstanceOf[csp_report]
   @scala.inline
   def currentTab: currentTab = "currentTab".asInstanceOf[currentTab]
+  @scala.inline
+  def dark: dark = "dark".asInstanceOf[dark]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
   @scala.inline
   def detect_important_content: detect_important_content = "detect_important_content".asInstanceOf[detect_important_content]
   @scala.inline

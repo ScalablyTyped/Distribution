@@ -27,6 +27,12 @@ trait Options extends js.Object {
     */
   var keyGenerator: js.UndefOr[js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, String]] = js.undefined
   /**
+    * Maximum value for `delayMs` after many consecutive attempts, that is, after the n-th request,
+    * the delay will be always `maxDelayMs`. Important when your application is running behind a
+    * load balancer or reverse proxy that has a request timeout. Defaults to Infinity.
+    */
+  var maxDelayMs: js.UndefOr[Double] = js.undefined
+  /**
     * Function to execute the first time the limit is reached within `windowMs`.
     * Default: `(req, res, opts) => {}`
     */
@@ -62,6 +68,7 @@ object Options {
     delayAfter: Int | Double = null,
     delayMs: Int | Double = null,
     keyGenerator: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => String = null,
+    maxDelayMs: Int | Double = null,
     onLimitReached: (/* req */ RequestWithSlowDown, /* res */ Response_, Options) => Unit = null,
     skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
@@ -73,6 +80,7 @@ object Options {
     if (delayAfter != null) __obj.updateDynamic("delayAfter")(delayAfter.asInstanceOf[js.Any])
     if (delayMs != null) __obj.updateDynamic("delayMs")(delayMs.asInstanceOf[js.Any])
     if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(js.Any.fromFunction2(keyGenerator))
+    if (maxDelayMs != null) __obj.updateDynamic("maxDelayMs")(maxDelayMs.asInstanceOf[js.Any])
     if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(js.Any.fromFunction3(onLimitReached))
     if (skip != null) __obj.updateDynamic("skip")(js.Any.fromFunction2(skip))
     if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests.asInstanceOf[js.Any])

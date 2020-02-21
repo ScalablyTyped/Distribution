@@ -19,6 +19,10 @@ trait ProjectSource extends js.Object {
     */
   var gitCloneDepth: js.UndefOr[Double] = js.native
   /**
+    * Information about the Git submodules configuration for an AWS CodeBuild build project. Git submodules config blocks are documented below. This option is only valid when the `type` is `CODECOMMIT`.
+    */
+  var gitSubmodulesConfig: js.UndefOr[ProjectSourceGitSubmodulesConfig] = js.native
+  /**
     * Ignore SSL warnings when connecting to source control.
     */
   var insecureSsl: js.UndefOr[Boolean] = js.native
@@ -43,6 +47,7 @@ object ProjectSource {
     auths: js.Array[ProjectSourceAuth] = null,
     buildspec: String = null,
     gitCloneDepth: Int | Double = null,
+    gitSubmodulesConfig: ProjectSourceGitSubmodulesConfig = null,
     insecureSsl: js.UndefOr[Boolean] = js.undefined,
     location: String = null,
     reportBuildStatus: js.UndefOr[Boolean] = js.undefined
@@ -52,6 +57,7 @@ object ProjectSource {
     if (auths != null) __obj.updateDynamic("auths")(auths.asInstanceOf[js.Any])
     if (buildspec != null) __obj.updateDynamic("buildspec")(buildspec.asInstanceOf[js.Any])
     if (gitCloneDepth != null) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.asInstanceOf[js.Any])
+    if (gitSubmodulesConfig != null) __obj.updateDynamic("gitSubmodulesConfig")(gitSubmodulesConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(insecureSsl)) __obj.updateDynamic("insecureSsl")(insecureSsl.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (!js.isUndefined(reportBuildStatus)) __obj.updateDynamic("reportBuildStatus")(reportBuildStatus.asInstanceOf[js.Any])

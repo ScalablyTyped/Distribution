@@ -44,11 +44,11 @@ class Server protected () extends EventEmitter {
     *      server was not open when it was closed.
     */
   def close(): this.type = js.native
-  def close(callback: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def close(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
   /**
     * Asynchronously get the number of concurrent connections on the server.
     */
-  def getConnections(callback: js.Function2[/* err */ Error, /* count */ Double, Unit]): Unit = js.native
+  def getConnections(callback: js.Function2[/* err */ js.UndefOr[Error], /* count */ Double, Unit]): Unit = js.native
   /**
     * Begin accepting connections on a random port.
     *

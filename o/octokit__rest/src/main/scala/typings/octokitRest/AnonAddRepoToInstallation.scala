@@ -1,71 +1,71 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.AppsAddRepoToInstallationParams
-import typings.octokitRest.mod.AppsCheckAccountIsAssociatedWithAnyParams
-import typings.octokitRest.mod.AppsCheckAccountIsAssociatedWithAnyResponse
-import typings.octokitRest.mod.AppsCheckAccountIsAssociatedWithAnyStubbedParams
-import typings.octokitRest.mod.AppsCheckAccountIsAssociatedWithAnyStubbedResponse
-import typings.octokitRest.mod.AppsCheckAuthorizationParams
-import typings.octokitRest.mod.AppsCheckAuthorizationResponse
-import typings.octokitRest.mod.AppsCheckTokenParams
-import typings.octokitRest.mod.AppsCheckTokenResponse
-import typings.octokitRest.mod.AppsCreateContentAttachmentParams
-import typings.octokitRest.mod.AppsCreateContentAttachmentResponse
-import typings.octokitRest.mod.AppsCreateFromManifestParams
-import typings.octokitRest.mod.AppsCreateFromManifestResponse
-import typings.octokitRest.mod.AppsCreateInstallationTokenParams
-import typings.octokitRest.mod.AppsCreateInstallationTokenResponse
-import typings.octokitRest.mod.AppsDeleteAuthorizationParams
-import typings.octokitRest.mod.AppsDeleteInstallationParams
-import typings.octokitRest.mod.AppsDeleteTokenParams
-import typings.octokitRest.mod.AppsFindOrgInstallationParams
-import typings.octokitRest.mod.AppsFindOrgInstallationResponse
-import typings.octokitRest.mod.AppsFindRepoInstallationParams
-import typings.octokitRest.mod.AppsFindRepoInstallationResponse
-import typings.octokitRest.mod.AppsFindUserInstallationParams
-import typings.octokitRest.mod.AppsFindUserInstallationResponse
-import typings.octokitRest.mod.AppsGetAuthenticatedResponse
-import typings.octokitRest.mod.AppsGetBySlugParams
-import typings.octokitRest.mod.AppsGetBySlugResponse
-import typings.octokitRest.mod.AppsGetInstallationParams
-import typings.octokitRest.mod.AppsGetInstallationResponse
-import typings.octokitRest.mod.AppsGetOrgInstallationParams
-import typings.octokitRest.mod.AppsGetOrgInstallationResponse
-import typings.octokitRest.mod.AppsGetRepoInstallationParams
-import typings.octokitRest.mod.AppsGetRepoInstallationResponse
-import typings.octokitRest.mod.AppsGetUserInstallationParams
-import typings.octokitRest.mod.AppsGetUserInstallationResponse
-import typings.octokitRest.mod.AppsListAccountsUserOrOrgOnPlanParams
-import typings.octokitRest.mod.AppsListAccountsUserOrOrgOnPlanResponse
-import typings.octokitRest.mod.AppsListAccountsUserOrOrgOnPlanStubbedParams
-import typings.octokitRest.mod.AppsListAccountsUserOrOrgOnPlanStubbedResponse
-import typings.octokitRest.mod.AppsListInstallationReposForAuthenticatedUserParams
-import typings.octokitRest.mod.AppsListInstallationReposForAuthenticatedUserResponse
-import typings.octokitRest.mod.AppsListInstallationsForAuthenticatedUserParams
-import typings.octokitRest.mod.AppsListInstallationsForAuthenticatedUserResponse
-import typings.octokitRest.mod.AppsListInstallationsParams
-import typings.octokitRest.mod.AppsListInstallationsResponse
-import typings.octokitRest.mod.AppsListMarketplacePurchasesForAuthenticatedUserParams
-import typings.octokitRest.mod.AppsListMarketplacePurchasesForAuthenticatedUserResponse
-import typings.octokitRest.mod.AppsListMarketplacePurchasesForAuthenticatedUserStubbedParams
-import typings.octokitRest.mod.AppsListMarketplacePurchasesForAuthenticatedUserStubbedResponse
-import typings.octokitRest.mod.AppsListPlansParams
-import typings.octokitRest.mod.AppsListPlansResponse
-import typings.octokitRest.mod.AppsListPlansStubbedParams
-import typings.octokitRest.mod.AppsListPlansStubbedResponse
-import typings.octokitRest.mod.AppsListReposParams
-import typings.octokitRest.mod.AppsListReposResponse
-import typings.octokitRest.mod.AppsRemoveRepoFromInstallationParams
-import typings.octokitRest.mod.AppsResetAuthorizationParams
-import typings.octokitRest.mod.AppsResetAuthorizationResponse
-import typings.octokitRest.mod.AppsResetTokenParams
-import typings.octokitRest.mod.AppsResetTokenResponse
-import typings.octokitRest.mod.AppsRevokeAuthorizationForApplicationParams
-import typings.octokitRest.mod.AppsRevokeGrantForApplicationParams
-import typings.octokitRest.mod.EmptyParams
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.AppsAddRepoToInstallationParams
+import typings.octokitRest.mod.Octokit.AppsCheckAccountIsAssociatedWithAnyParams
+import typings.octokitRest.mod.Octokit.AppsCheckAccountIsAssociatedWithAnyResponse
+import typings.octokitRest.mod.Octokit.AppsCheckAccountIsAssociatedWithAnyStubbedParams
+import typings.octokitRest.mod.Octokit.AppsCheckAccountIsAssociatedWithAnyStubbedResponse
+import typings.octokitRest.mod.Octokit.AppsCheckAuthorizationParams
+import typings.octokitRest.mod.Octokit.AppsCheckAuthorizationResponse
+import typings.octokitRest.mod.Octokit.AppsCheckTokenParams
+import typings.octokitRest.mod.Octokit.AppsCheckTokenResponse
+import typings.octokitRest.mod.Octokit.AppsCreateContentAttachmentParams
+import typings.octokitRest.mod.Octokit.AppsCreateContentAttachmentResponse
+import typings.octokitRest.mod.Octokit.AppsCreateFromManifestParams
+import typings.octokitRest.mod.Octokit.AppsCreateFromManifestResponse
+import typings.octokitRest.mod.Octokit.AppsCreateInstallationTokenParams
+import typings.octokitRest.mod.Octokit.AppsCreateInstallationTokenResponse
+import typings.octokitRest.mod.Octokit.AppsDeleteAuthorizationParams
+import typings.octokitRest.mod.Octokit.AppsDeleteInstallationParams
+import typings.octokitRest.mod.Octokit.AppsDeleteTokenParams
+import typings.octokitRest.mod.Octokit.AppsFindOrgInstallationParams
+import typings.octokitRest.mod.Octokit.AppsFindOrgInstallationResponse
+import typings.octokitRest.mod.Octokit.AppsFindRepoInstallationParams
+import typings.octokitRest.mod.Octokit.AppsFindRepoInstallationResponse
+import typings.octokitRest.mod.Octokit.AppsFindUserInstallationParams
+import typings.octokitRest.mod.Octokit.AppsFindUserInstallationResponse
+import typings.octokitRest.mod.Octokit.AppsGetAuthenticatedResponse
+import typings.octokitRest.mod.Octokit.AppsGetBySlugParams
+import typings.octokitRest.mod.Octokit.AppsGetBySlugResponse
+import typings.octokitRest.mod.Octokit.AppsGetInstallationParams
+import typings.octokitRest.mod.Octokit.AppsGetInstallationResponse
+import typings.octokitRest.mod.Octokit.AppsGetOrgInstallationParams
+import typings.octokitRest.mod.Octokit.AppsGetOrgInstallationResponse
+import typings.octokitRest.mod.Octokit.AppsGetRepoInstallationParams
+import typings.octokitRest.mod.Octokit.AppsGetRepoInstallationResponse
+import typings.octokitRest.mod.Octokit.AppsGetUserInstallationParams
+import typings.octokitRest.mod.Octokit.AppsGetUserInstallationResponse
+import typings.octokitRest.mod.Octokit.AppsListAccountsUserOrOrgOnPlanParams
+import typings.octokitRest.mod.Octokit.AppsListAccountsUserOrOrgOnPlanResponse
+import typings.octokitRest.mod.Octokit.AppsListAccountsUserOrOrgOnPlanStubbedParams
+import typings.octokitRest.mod.Octokit.AppsListAccountsUserOrOrgOnPlanStubbedResponse
+import typings.octokitRest.mod.Octokit.AppsListInstallationReposForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.AppsListInstallationReposForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.AppsListInstallationsForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.AppsListInstallationsForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.AppsListInstallationsParams
+import typings.octokitRest.mod.Octokit.AppsListInstallationsResponse
+import typings.octokitRest.mod.Octokit.AppsListMarketplacePurchasesForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.AppsListMarketplacePurchasesForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.AppsListMarketplacePurchasesForAuthenticatedUserStubbedParams
+import typings.octokitRest.mod.Octokit.AppsListMarketplacePurchasesForAuthenticatedUserStubbedResponse
+import typings.octokitRest.mod.Octokit.AppsListPlansParams
+import typings.octokitRest.mod.Octokit.AppsListPlansResponse
+import typings.octokitRest.mod.Octokit.AppsListPlansStubbedParams
+import typings.octokitRest.mod.Octokit.AppsListPlansStubbedResponse
+import typings.octokitRest.mod.Octokit.AppsListReposParams
+import typings.octokitRest.mod.Octokit.AppsListReposResponse
+import typings.octokitRest.mod.Octokit.AppsRemoveRepoFromInstallationParams
+import typings.octokitRest.mod.Octokit.AppsResetAuthorizationParams
+import typings.octokitRest.mod.Octokit.AppsResetAuthorizationResponse
+import typings.octokitRest.mod.Octokit.AppsResetTokenParams
+import typings.octokitRest.mod.Octokit.AppsResetTokenResponse
+import typings.octokitRest.mod.Octokit.AppsRevokeAuthorizationForApplicationParams
+import typings.octokitRest.mod.Octokit.AppsRevokeGrantForApplicationParams
+import typings.octokitRest.mod.Octokit.EmptyParams
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -123,9 +123,7 @@ trait AnonAddRepoToInstallation extends js.Object {
   @JSName("createFromManifest")
   var createFromManifest_Original: AnonEndpointParamsAppsCreateFromManifestParams = js.native
   /**
-    * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token.
-    *
-    * By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
+    * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token. By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     *
@@ -384,9 +382,7 @@ trait AnonAddRepoToInstallation extends js.Object {
   def createFromManifest(): js.Promise[Response[AppsCreateFromManifestResponse]] = js.native
   def createFromManifest(params: RequestOptions with AppsCreateFromManifestParams): js.Promise[Response[AppsCreateFromManifestResponse]] = js.native
   /**
-    * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token.
-    *
-    * By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
+    * Creates an installation access token that enables a GitHub App to make authenticated API requests for the app's installation on an organization or individual account. Installation tokens expire one hour from the time you create them. Using an expired token produces a status code of `401 - Unauthorized`, and requires creating a new installation token. By default the installation token has access to all repositories that the installation can access. To restrict the access to specific repositories, you can provide the `repository_ids` when creating the token. When you omit `repository_ids`, the response does not contain the `repositories` key.
     *
     * You must use a [JWT](https://developer.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     *

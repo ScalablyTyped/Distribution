@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.LAYERID_WORLD
+  * @type {number}
   * @description The world layer.
   */
 @JSGlobal("pc.LAYERID_WORLD")

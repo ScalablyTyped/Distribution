@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BLENDMODE_DST_ALPHA
+  * @type {number}
   * @description Multiply all fragment components by the alpha value of the destination fragment.
   */
 @JSGlobal("pc.BLENDMODE_DST_ALPHA")

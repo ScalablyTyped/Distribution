@@ -18,6 +18,8 @@ object mod extends js.Object {
   val proc: typings.nodeOsUtils.procMod.default = js.native
   val users: typings.nodeOsUtils.usersMod.default = js.native
   def exec(command: String): js.Function0[js.Promise[String]] = js.native
+  def isNotSupported(res: js.Any): Boolean = js.native
+  def wrapExec(command: String): js.Function0[js.Function0[js.Promise[String]]] = js.native
   @js.native
   object options extends js.Object {
     var INTERVAL: Double = js.native

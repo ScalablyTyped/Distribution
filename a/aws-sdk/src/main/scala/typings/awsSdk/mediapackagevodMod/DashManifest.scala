@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DashManifest extends js.Object {
   /**
+    * Determines the position of some tags in the Media Presentation Description (MPD).  When set to FULL, elements like SegmentTemplate and ContentProtection are included in each Representation.  When set to COMPACT, duplicate elements are combined and presented at the AdaptationSet level.
+    */
+  var ManifestLayout: js.UndefOr[typings.awsSdk.mediapackagevodMod.ManifestLayout] = js.native
+  /**
     * An optional string to include in the name of the manifest.
     */
   var ManifestName: js.UndefOr[string] = js.native
@@ -24,12 +28,14 @@ trait DashManifest extends js.Object {
 object DashManifest {
   @scala.inline
   def apply(
+    ManifestLayout: ManifestLayout = null,
     ManifestName: string = null,
     MinBufferTimeSeconds: Int | Double = null,
     Profile: Profile = null,
     StreamSelection: StreamSelection = null
   ): DashManifest = {
     val __obj = js.Dynamic.literal()
+    if (ManifestLayout != null) __obj.updateDynamic("ManifestLayout")(ManifestLayout.asInstanceOf[js.Any])
     if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
     if (MinBufferTimeSeconds != null) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.asInstanceOf[js.Any])
     if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])

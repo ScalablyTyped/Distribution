@@ -1,67 +1,55 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.BorderBottomColorProperty
-import typings.csstype.mod.BorderBottomLeftRadiusProperty
 import typings.csstype.mod.BorderBottomProperty
-import typings.csstype.mod.BorderBottomRightRadiusProperty
 import typings.csstype.mod.BorderBottomStyleProperty
-import typings.csstype.mod.BorderBottomWidthProperty
-import typings.csstype.mod.BorderColorProperty
-import typings.csstype.mod.BorderLeftColorProperty
 import typings.csstype.mod.BorderLeftProperty
 import typings.csstype.mod.BorderLeftStyleProperty
-import typings.csstype.mod.BorderLeftWidthProperty
 import typings.csstype.mod.BorderProperty
-import typings.csstype.mod.BorderRadiusProperty
-import typings.csstype.mod.BorderRightColorProperty
 import typings.csstype.mod.BorderRightProperty
 import typings.csstype.mod.BorderRightStyleProperty
-import typings.csstype.mod.BorderRightWidthProperty
 import typings.csstype.mod.BorderStyleProperty
-import typings.csstype.mod.BorderTopColorProperty
-import typings.csstype.mod.BorderTopLeftRadiusProperty
 import typings.csstype.mod.BorderTopProperty
-import typings.csstype.mod.BorderTopRightRadiusProperty
 import typings.csstype.mod.BorderTopStyleProperty
-import typings.csstype.mod.BorderTopWidthProperty
-import typings.csstype.mod.BorderWidthProperty
+import typings.styledSystem.styledSystemStrings.borderWidths
+import typings.styledSystem.styledSystemStrings.colors
+import typings.styledSystem.styledSystemStrings.radii
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BordersProps extends BorderProps[TLengthStyledSystem]
+trait BordersProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends BorderProps[ThemeType, BorderProperty[TLengthStyledSystem]]
 
 object BordersProps {
   @scala.inline
-  def apply(
-    border: ResponsiveValue[BorderProperty[TLengthStyledSystem]] = null,
-    borderBottom: ResponsiveValue[BorderBottomProperty[TLengthStyledSystem]] = null,
-    borderBottomColor: ResponsiveValue[BorderBottomColorProperty] = null,
-    borderBottomLeftRadius: ResponsiveValue[BorderBottomLeftRadiusProperty[TLengthStyledSystem]] = null,
-    borderBottomRightRadius: ResponsiveValue[BorderBottomRightRadiusProperty[TLengthStyledSystem]] = null,
-    borderBottomStyle: ResponsiveValue[BorderBottomStyleProperty] = null,
-    borderBottomWidth: ResponsiveValue[BorderBottomWidthProperty[TLengthStyledSystem]] = null,
-    borderColor: ResponsiveValue[BorderColorProperty] = null,
-    borderLeft: ResponsiveValue[BorderLeftProperty[TLengthStyledSystem]] = null,
-    borderLeftColor: ResponsiveValue[BorderLeftColorProperty] = null,
-    borderLeftStyle: ResponsiveValue[BorderLeftStyleProperty] = null,
-    borderLeftWidth: ResponsiveValue[BorderLeftWidthProperty[TLengthStyledSystem]] = null,
-    borderRadius: ResponsiveValue[BorderRadiusProperty[TLengthStyledSystem]] = null,
-    borderRight: ResponsiveValue[BorderRightProperty[TLengthStyledSystem]] = null,
-    borderRightColor: ResponsiveValue[BorderRightColorProperty] = null,
-    borderRightStyle: ResponsiveValue[BorderRightStyleProperty] = null,
-    borderRightWidth: ResponsiveValue[BorderRightWidthProperty[TLengthStyledSystem]] = null,
-    borderStyle: ResponsiveValue[BorderStyleProperty] = null,
-    borderTop: ResponsiveValue[BorderTopProperty[TLengthStyledSystem]] = null,
-    borderTopColor: ResponsiveValue[BorderTopColorProperty] = null,
-    borderTopLeftRadius: ResponsiveValue[BorderTopLeftRadiusProperty[TLengthStyledSystem]] = null,
-    borderTopRightRadius: ResponsiveValue[BorderTopRightRadiusProperty[TLengthStyledSystem]] = null,
-    borderTopStyle: ResponsiveValue[BorderTopStyleProperty] = null,
-    borderTopWidth: ResponsiveValue[BorderTopWidthProperty[TLengthStyledSystem]] = null,
-    borderWidth: ResponsiveValue[BorderWidthProperty[TLengthStyledSystem]] = null,
-    borderX: ResponsiveValue[BorderProperty[TLengthStyledSystem]] = null,
-    borderY: ResponsiveValue[BorderProperty[TLengthStyledSystem]] = null
-  ): BordersProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
+    border: ResponsiveValue[BorderProperty[TLengthStyledSystem], ThemeType] = null,
+    borderBottom: ResponsiveValue[BorderBottomProperty[TLengthStyledSystem], ThemeType] = null,
+    borderBottomColor: ResponsiveValue[ThemeValue[colors, ThemeType, js.Any], ThemeType] = null,
+    borderBottomLeftRadius: ResponsiveValue[ThemeValue[radii, ThemeType, js.Any], ThemeType] = null,
+    borderBottomRightRadius: ResponsiveValue[ThemeValue[radii, ThemeType, js.Any], ThemeType] = null,
+    borderBottomStyle: ResponsiveValue[BorderBottomStyleProperty, ThemeType] = null,
+    borderBottomWidth: ResponsiveValue[ThemeValue[borderWidths, ThemeType, js.Any], ThemeType] = null,
+    borderColor: ResponsiveValue[ThemeValue[colors, ThemeType, js.Any], ThemeType] = null,
+    borderLeft: ResponsiveValue[BorderLeftProperty[TLengthStyledSystem], ThemeType] = null,
+    borderLeftColor: ResponsiveValue[ThemeValue[colors, ThemeType, js.Any], ThemeType] = null,
+    borderLeftStyle: ResponsiveValue[BorderLeftStyleProperty, ThemeType] = null,
+    borderLeftWidth: ResponsiveValue[ThemeValue[borderWidths, ThemeType, js.Any], ThemeType] = null,
+    borderRadius: ResponsiveValue[ThemeValue[radii, ThemeType, js.Any], ThemeType] = null,
+    borderRight: ResponsiveValue[BorderRightProperty[TLengthStyledSystem], ThemeType] = null,
+    borderRightColor: ResponsiveValue[ThemeValue[colors, ThemeType, js.Any], ThemeType] = null,
+    borderRightStyle: ResponsiveValue[BorderRightStyleProperty, ThemeType] = null,
+    borderRightWidth: ResponsiveValue[ThemeValue[borderWidths, ThemeType, js.Any], ThemeType] = null,
+    borderStyle: ResponsiveValue[BorderStyleProperty, ThemeType] = null,
+    borderTop: ResponsiveValue[BorderTopProperty[TLengthStyledSystem], ThemeType] = null,
+    borderTopColor: ResponsiveValue[ThemeValue[colors, ThemeType, js.Any], ThemeType] = null,
+    borderTopLeftRadius: ResponsiveValue[ThemeValue[radii, ThemeType, js.Any], ThemeType] = null,
+    borderTopRightRadius: ResponsiveValue[ThemeValue[radii, ThemeType, js.Any], ThemeType] = null,
+    borderTopStyle: ResponsiveValue[BorderTopStyleProperty, ThemeType] = null,
+    borderTopWidth: ResponsiveValue[ThemeValue[borderWidths, ThemeType, js.Any], ThemeType] = null,
+    borderWidth: ResponsiveValue[ThemeValue[borderWidths, ThemeType, js.Any], ThemeType] = null,
+    borderX: ResponsiveValue[BorderProperty[TLengthStyledSystem], ThemeType] = null,
+    borderY: ResponsiveValue[BorderProperty[TLengthStyledSystem], ThemeType] = null
+  ): BordersProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
@@ -90,7 +78,7 @@ object BordersProps {
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (borderX != null) __obj.updateDynamic("borderX")(borderX.asInstanceOf[js.Any])
     if (borderY != null) __obj.updateDynamic("borderY")(borderY.asInstanceOf[js.Any])
-    __obj.asInstanceOf[BordersProps]
+    __obj.asInstanceOf[BordersProps[ThemeType]]
   }
 }
 

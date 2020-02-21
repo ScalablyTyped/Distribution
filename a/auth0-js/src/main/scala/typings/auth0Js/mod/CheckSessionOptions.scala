@@ -22,6 +22,7 @@ object CheckSessionOptions {
     audience: String = null,
     clientID: String = null,
     connection: String = null,
+    connection_scope: String | js.Array[String] = null,
     domain: String = null,
     language: String = null,
     login_hint: String = null,
@@ -42,6 +43,7 @@ object CheckSessionOptions {
     if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
     if (clientID != null) __obj.updateDynamic("clientID")(clientID.asInstanceOf[js.Any])
     if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (connection_scope != null) __obj.updateDynamic("connection_scope")(connection_scope.asInstanceOf[js.Any])
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint.asInstanceOf[js.Any])

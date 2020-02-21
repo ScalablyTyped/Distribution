@@ -1,7 +1,7 @@
 
 # Scala.js typings for humps
 
-Typings are for version v1.1.0
+Typings are for version 1.1
 
 ## Library description:
 Underscore-to-camelCase converter (and vice versa) for strings and object keys in JavaScript.

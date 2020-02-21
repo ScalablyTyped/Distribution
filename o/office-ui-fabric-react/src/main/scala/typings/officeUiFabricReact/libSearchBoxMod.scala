@@ -3,7 +3,7 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.officeUiFabricReactStrings.clearButtonProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.disableAnimation
 import typings.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.std.Pick
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,7 +18,7 @@ object libSearchBoxMod extends js.Object {
     def this(props: ISearchBoxProps) = this()
   }
   
-  val SearchBox: StatelessComponent[ISearchBoxProps] = js.native
+  val SearchBox: FunctionComponent[ISearchBoxProps] = js.native
   /* static members */
   @js.native
   object SearchBoxBase extends js.Object {

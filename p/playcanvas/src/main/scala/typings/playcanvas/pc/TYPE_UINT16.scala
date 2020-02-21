@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TYPE_UINT16
+  * @type {number}
   * @description Unsigned short vertex element type.
   */
 @JSGlobal("pc.TYPE_UINT16")

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.RENDERSTYLE_POINTS
+  * @type {number}
   * @description Render mesh instance as points.
   */
 @JSImport("playcanvas", "RENDERSTYLE_POINTS")

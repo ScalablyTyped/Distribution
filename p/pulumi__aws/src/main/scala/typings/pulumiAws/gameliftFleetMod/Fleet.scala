@@ -1,5 +1,6 @@
 package typings.pulumiAws.gameliftFleetMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.gamelift.FleetEc2InboundPermission
 import typings.pulumiAws.outputMod.gamelift.FleetResourceCreationLimitPolicy
 import typings.pulumiAws.outputMod.gamelift.FleetRuntimeConfiguration
@@ -44,6 +45,14 @@ class Fleet protected () extends CustomResource {
     * Name of an EC2 instance type. e.g. `t2.micro`
     */
   val ec2InstanceType: Output_[String] = js.native
+  /**
+    * Type of fleet. This value must be `ON_DEMAND` or `SPOT`. Defaults to `ON_DEMAND`.
+    */
+  val fleetType: Output_[js.UndefOr[String]] = js.native
+  /**
+    * ARN of an IAM role that instances in the fleet can assume.
+    */
+  val instanceRoleArn: Output_[js.UndefOr[String]] = js.native
   val logPaths: Output_[js.Array[String]] = js.native
   /**
     * List of names of metric groups to add this fleet to. A metric group tracks metrics across all fleets in the group. Defaults to `default`.
@@ -69,6 +78,10 @@ class Fleet protected () extends CustomResource {
     * Instructions for launching server processes on each instance in the fleet. See below.
     */
   val runtimeConfiguration: Output_[js.UndefOr[FleetRuntimeConfiguration]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

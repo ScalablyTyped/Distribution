@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("intersperse", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(items: js.Array[_], separator: js.Any): js.Array[_] = js.native
+  def apply[T, U](items: js.Array[T], separator: U): js.Array[T | U] = js.native
 }
 

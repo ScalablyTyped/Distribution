@@ -26,6 +26,8 @@ trait RadioProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
   var isError: js.UndefOr[Boolean] = js.undefined
+  var isFocusVisible: js.UndefOr[Boolean] = js.undefined
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   var labelPlacement: js.UndefOr[top | right | bottom | left] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
@@ -37,6 +39,7 @@ trait RadioProps extends js.Object {
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
   var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
+  var tabIndex: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
 
@@ -50,6 +53,8 @@ object RadioProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputRef: Ref[HTMLInputElement] = null,
     isError: js.UndefOr[Boolean] = js.undefined,
+    isFocusVisible: js.UndefOr[Boolean] = js.undefined,
+    isFocused: js.UndefOr[Boolean] = js.undefined,
     labelPlacement: top | right | bottom | left = null,
     name: String = null,
     onBlur: FocusEvent[HTMLInputElement] => Unit = null,
@@ -61,6 +66,7 @@ object RadioProps {
     onMouseUp: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
     overrides: RadioOverrides with RadioGroupOverrides = null,
     required: js.UndefOr[Boolean] = js.undefined,
+    tabIndex: String = null,
     value: String = null
   ): RadioProps = {
     val __obj = js.Dynamic.literal()
@@ -71,6 +77,8 @@ object RadioProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocusVisible)) __obj.updateDynamic("isFocusVisible")(isFocusVisible.asInstanceOf[js.Any])
+    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
@@ -82,6 +90,7 @@ object RadioProps {
     if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioProps]
   }

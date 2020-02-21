@@ -10,8 +10,8 @@ trait ChartSeriesDefaultsLabelsTo extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartSeriesDefaultsLabelsToMargin] = js.undefined
-  var padding: js.UndefOr[ChartSeriesDefaultsLabelsToPadding] = js.undefined
+  var margin: js.UndefOr[Double | ChartSeriesDefaultsLabelsToMargin] = js.undefined
+  var padding: js.UndefOr[Double | ChartSeriesDefaultsLabelsToPadding] = js.undefined
   var template: js.UndefOr[String | js.Function] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
@@ -24,8 +24,8 @@ object ChartSeriesDefaultsLabelsTo {
     color: String = null,
     font: String = null,
     format: String = null,
-    margin: ChartSeriesDefaultsLabelsToMargin = null,
-    padding: ChartSeriesDefaultsLabelsToPadding = null,
+    margin: Double | ChartSeriesDefaultsLabelsToMargin = null,
+    padding: Double | ChartSeriesDefaultsLabelsToPadding = null,
     template: String | js.Function = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): ChartSeriesDefaultsLabelsTo = {

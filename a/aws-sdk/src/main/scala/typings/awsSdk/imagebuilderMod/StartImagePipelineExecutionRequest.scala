@@ -11,7 +11,7 @@ trait StartImagePipelineExecutionRequest extends js.Object {
     */
   var clientToken: ClientToken = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the image pipeline that you wish to manually invoke. 
+    *  The Amazon Resource Name (ARN) of the image pipeline that you want to manually invoke. 
     */
   var imagePipelineArn: ImagePipelineArn = js.native
 }

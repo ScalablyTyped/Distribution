@@ -9,7 +9,7 @@ trait ChartPane extends js.Object {
   var border: js.UndefOr[ChartPaneBorder] = js.undefined
   var clip: js.UndefOr[Boolean] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[ChartPaneMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartPaneMargin] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var padding: js.UndefOr[ChartPanePadding] = js.undefined
   var title: js.UndefOr[String | ChartPaneTitle] = js.undefined
@@ -22,7 +22,7 @@ object ChartPane {
     border: ChartPaneBorder = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
-    margin: ChartPaneMargin = null,
+    margin: Double | ChartPaneMargin = null,
     name: String = null,
     padding: ChartPanePadding = null,
     title: String | ChartPaneTitle = null

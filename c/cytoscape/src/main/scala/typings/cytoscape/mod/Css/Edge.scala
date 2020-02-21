@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
 object Edge {
   @scala.inline
   def apply(
+    `arrow-scale`: PropertyValueEdge[Double] = null,
     `curve-style`: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi] = null,
     `line-cap`: PropertyValueEdge[butt | round | square] = null,
     `line-color`: PropertyValueEdge[Colour] = null,
@@ -50,9 +51,11 @@ object Edge {
     `target-arrow-color`: PropertyValueEdge[Colour] = null,
     `target-arrow-fill`: PropertyValueEdge[ArrowFill] = null,
     `target-arrow-shape`: PropertyValueEdge[ArrowShape] = null,
+    `target-distance-from-node`: PropertyValueEdge[Double] = null,
     width: PropertyValueEdge[Double | String] = null
   ): Edge = {
     val __obj = js.Dynamic.literal()
+    if (`arrow-scale` != null) __obj.updateDynamic("arrow-scale")(`arrow-scale`.asInstanceOf[js.Any])
     if (`curve-style` != null) __obj.updateDynamic("curve-style")(`curve-style`.asInstanceOf[js.Any])
     if (`line-cap` != null) __obj.updateDynamic("line-cap")(`line-cap`.asInstanceOf[js.Any])
     if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`.asInstanceOf[js.Any])
@@ -72,6 +75,7 @@ object Edge {
     if (`target-arrow-color` != null) __obj.updateDynamic("target-arrow-color")(`target-arrow-color`.asInstanceOf[js.Any])
     if (`target-arrow-fill` != null) __obj.updateDynamic("target-arrow-fill")(`target-arrow-fill`.asInstanceOf[js.Any])
     if (`target-arrow-shape` != null) __obj.updateDynamic("target-arrow-shape")(`target-arrow-shape`.asInstanceOf[js.Any])
+    if (`target-distance-from-node` != null) __obj.updateDynamic("target-distance-from-node")(`target-distance-from-node`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Edge]
   }

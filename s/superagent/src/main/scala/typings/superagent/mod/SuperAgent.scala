@@ -1,13 +1,13 @@
 package typings.superagent.mod
 
 import typings.cookiejar.mod.CookieJar
-import typings.node.streamMod.internal
+import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SuperAgent[Req /* <: SuperAgentRequest */] extends internal {
+trait SuperAgent[Req /* <: SuperAgentRequest */] extends Stream {
   var jar: CookieJar = js.native
   def attachCookies(req: Req): Unit = js.native
   def checkout(url: String): Req = js.native

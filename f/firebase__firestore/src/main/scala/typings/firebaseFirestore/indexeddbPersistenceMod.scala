@@ -2,7 +2,6 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.databaseInfoMod.DatabaseInfo
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.errorMod.FirestoreError
 import typings.firebaseFirestore.indexManagerMod.IndexManager
 import typings.firebaseFirestore.lruGarbageCollectorMod.ActiveTargets
 import typings.firebaseFirestore.lruGarbageCollectorMod.LruDelegate
@@ -350,7 +349,6 @@ object indexeddbPersistenceMod extends js.Object {
     val simpleDbTransaction: SimpleDbTransaction = js.native
   }
   
-  def ignoreIfPrimaryLeaseLoss(err: FirestoreError): js.Promise[Unit] = js.native
   /* static members */
   @js.native
   object IndexedDbPersistence extends js.Object {

@@ -12,6 +12,12 @@ package object securityhubMod {
   type ArnList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   type AvailabilityZones = js.Array[typings.awsSdk.securityhubMod.AvailabilityZone]
   type AwsCloudFrontDistributionOriginItemList = js.Array[typings.awsSdk.securityhubMod.AwsCloudFrontDistributionOriginItem]
+  type AwsEc2NetworkInterfaceSecurityGroupList = js.Array[typings.awsSdk.securityhubMod.AwsEc2NetworkInterfaceSecurityGroup]
+  type AwsEc2SecurityGroupIpPermissionList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupIpPermission]
+  type AwsEc2SecurityGroupIpRangeList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupIpRange]
+  type AwsEc2SecurityGroupIpv6RangeList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupIpv6Range]
+  type AwsEc2SecurityGroupPrefixListIdList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupPrefixListId]
+  type AwsEc2SecurityGroupUserIdGroupPairList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupUserIdGroupPair]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Active_
     - typings.awsSdk.awsSdkStrings.Inactive_
@@ -20,8 +26,12 @@ package object securityhubMod {
   type AwsIamAccessKeyStatus = typings.awsSdk.securityhubMod._AwsIamAccessKeyStatus | java.lang.String
   type AwsIamRoleAssumeRolePolicyDocument = java.lang.String
   type AwsLambdaFunctionLayerList = js.Array[typings.awsSdk.securityhubMod.AwsLambdaFunctionLayer]
+  type AwsLambdaLayerVersionNumber = scala.Double
+  type AwsRdsDbInstanceAssociatedRoles = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceAssociatedRole]
+  type AwsRdsDbInstanceVpcSecurityGroups = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceVpcSecurityGroup]
   type AwsSecurityFindingList = js.Array[typings.awsSdk.securityhubMod.AwsSecurityFinding]
   type AwsSnsTopicSubscriptionList = js.Array[typings.awsSdk.securityhubMod.AwsSnsTopicSubscription]
+  type AwsWafWebAclRuleList = js.Array[typings.awsSdk.securityhubMod.AwsWafWebAclRule]
   type Boolean = scala.Boolean
   type CategoryList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.securityhubMod.ClientApiVersions
@@ -107,6 +117,7 @@ package object securityhubMod {
   */
   type RecordState = typings.awsSdk.securityhubMod._RecordState | java.lang.String
   type RelatedFindingList = js.Array[typings.awsSdk.securityhubMod.RelatedFinding]
+  type RelatedRequirementsList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   type ResourceArn = java.lang.String
   type ResourceList = js.Array[typings.awsSdk.securityhubMod.Resource]
   type ResultList = js.Array[typings.awsSdk.securityhubMod.Result]
@@ -126,6 +137,7 @@ package object securityhubMod {
     - java.lang.String
   */
   type SortOrder = typings.awsSdk.securityhubMod._SortOrder | java.lang.String
+  type Standards = js.Array[typings.awsSdk.securityhubMod.Standard]
   type StandardsControls = js.Array[typings.awsSdk.securityhubMod.StandardsControl]
   type StandardsInputParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.securityhubMod.NonEmptyString]
   /* Rewritten from type alias, can be one of: 
@@ -188,6 +200,7 @@ package object securityhubMod {
     - java.lang.String
   */
   type VerificationState = typings.awsSdk.securityhubMod._VerificationState | java.lang.String
+  type WafExcludedRuleList = js.Array[typings.awsSdk.securityhubMod.WafExcludedRule]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NEW
     - typings.awsSdk.awsSdkStrings.ASSIGNED

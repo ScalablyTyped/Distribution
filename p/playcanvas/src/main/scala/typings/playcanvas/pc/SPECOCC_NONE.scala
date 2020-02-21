@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.SPECOCC_NONE
+  * @type {number}
   * @description No specular occlusion.
   */
 @JSGlobal("pc.SPECOCC_NONE")

@@ -1,7 +1,7 @@
 package typings.jsdom.mod
 
 import typings.node.Buffer
-import typings.node.vmMod.Script
+import typings.parse5.mod.ElementLocation
 import typings.std.DocumentFragment
 import typings.std.Node
 import scala.scalajs.js
@@ -21,20 +21,26 @@ class JSDOM () extends js.Object {
   val virtualConsole: VirtualConsole = js.native
   val window: DOMWindow = js.native
   /**
-    * The nodeLocation() method will find where a DOM node is within the source document, returning the parse5 location info for the node.
-    */
-  def nodeLocation(node: Node): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkupData.ElementLocation */ js.Any) | Null = js.native
+  		 * The built-in `vm` module of Node.js is what underpins jsdom's script-running magic.
+  		 * Some advanced use cases, like pre-compiling a script and then running it multiple
+  		 * times, benefit from using the `vm` module directly with a jsdom-created `Window`.
+  		 *
+  		 * @throws
+  		 * Note that this method will throw an exception if the `JSDOM` instance was created
+  		 * without `runScripts` set, or if you are using JSDOM in a web browser.
+  		 */
+  def getInternalVMContext(): DOMWindow = js.native
+  /**
+  		 * The nodeLocation() method will find where a DOM node is within the source document, returning the parse5 location info for the node.
+  		 */
+  def nodeLocation(node: Node): ElementLocation | Null = js.native
+  /**
+  		 * The reconfigure method allows changing the `window.top` and url from the outside.
+  		 */
   def reconfigure(settings: ReconfigureSettings): Unit = js.native
   /**
-    * The built-in vm module of Node.js allows you to create Script instances,
-    * which can be compiled ahead of time and then run multiple times on a given "VM context".
-    * Behind the scenes, a jsdom Window is indeed a VM context.
-    * To get access to this ability, use the runVMScript() method.
-    */
-  def runVMScript(script: Script): js.Any = js.native
-  /**
-    * The serialize() method will return the HTML serialization of the document, including the doctype.
-    */
+  		 * The serialize() method will return the HTML serialization of the document, including the doctype.
+  		 */
   def serialize(): String = js.native
 }
 
@@ -44,8 +50,8 @@ class JSDOM () extends js.Object {
 object JSDOM extends js.Object {
   def fragment(html: String): DocumentFragment = js.native
   def fromFile(url: String): js.Promise[JSDOM] = js.native
-  def fromFile(url: String, options: FromFileOptions): js.Promise[JSDOM] = js.native
+  def fromFile(url: String, options: FileOptions): js.Promise[JSDOM] = js.native
   def fromURL(url: String): js.Promise[JSDOM] = js.native
-  def fromURL(url: String, options: FromUrlOptions): js.Promise[JSDOM] = js.native
+  def fromURL(url: String, options: BaseOptions): js.Promise[JSDOM] = js.native
 }
 

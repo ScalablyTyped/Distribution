@@ -3,6 +3,7 @@ package typings.pulumiAws.launchTemplateMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateCapacityReservationSpecification
+import typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification
 import typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator
@@ -29,6 +30,10 @@ trait LaunchTemplateArgs extends js.Object {
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
   val capacityReservationSpecification: js.UndefOr[Input[LaunchTemplateCapacityReservationSpecification]] = js.native
+  /**
+    * The CPU options for the instance. See CPU Options below for more details.
+    */
+  val cpuOptions: js.UndefOr[Input[LaunchTemplateCpuOptions]] = js.native
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
@@ -144,6 +149,7 @@ object LaunchTemplateArgs {
   def apply(
     blockDeviceMappings: Input[js.Array[Input[LaunchTemplateBlockDeviceMapping]]] = null,
     capacityReservationSpecification: Input[LaunchTemplateCapacityReservationSpecification] = null,
+    cpuOptions: Input[LaunchTemplateCpuOptions] = null,
     creditSpecification: Input[LaunchTemplateCreditSpecification] = null,
     description: Input[String] = null,
     disableApiTermination: Input[Boolean] = null,
@@ -173,6 +179,7 @@ object LaunchTemplateArgs {
     val __obj = js.Dynamic.literal()
     if (blockDeviceMappings != null) __obj.updateDynamic("blockDeviceMappings")(blockDeviceMappings.asInstanceOf[js.Any])
     if (capacityReservationSpecification != null) __obj.updateDynamic("capacityReservationSpecification")(capacityReservationSpecification.asInstanceOf[js.Any])
+    if (cpuOptions != null) __obj.updateDynamic("cpuOptions")(cpuOptions.asInstanceOf[js.Any])
     if (creditSpecification != null) __obj.updateDynamic("creditSpecification")(creditSpecification.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (disableApiTermination != null) __obj.updateDynamic("disableApiTermination")(disableApiTermination.asInstanceOf[js.Any])

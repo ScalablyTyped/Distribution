@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CULLFACE_BACK
+  * @type {number}
   * @description Triangles facing away from the view direction are culled.
   */
 @JSImport("playcanvas", "CULLFACE_BACK")

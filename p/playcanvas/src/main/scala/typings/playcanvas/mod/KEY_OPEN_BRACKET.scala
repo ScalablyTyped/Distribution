@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.KEY_OPEN_BRACKET
   */
 @JSImport("playcanvas", "KEY_OPEN_BRACKET")

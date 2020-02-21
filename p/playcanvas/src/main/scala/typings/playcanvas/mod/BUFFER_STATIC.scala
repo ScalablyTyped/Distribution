@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BUFFER_STATIC
+  * @type {number}
   * @description The data store contents will be modified once and used many times.
   */
 @JSImport("playcanvas", "BUFFER_STATIC")

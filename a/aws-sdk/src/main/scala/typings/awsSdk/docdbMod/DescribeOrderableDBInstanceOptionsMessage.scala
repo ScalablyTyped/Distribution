@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeOrderableDBInstanceOptionsMessage extends js.Object {
   /**
-    * The DB instance class filter value. Specify this parameter to show only the available offerings that match the specified DB instance class.
+    * The instance class filter value. Specify this parameter to show only the available offerings that match the specified instance class.
     */
   var DBInstanceClass: js.UndefOr[String] = js.native
   /**
-    * The name of the engine to retrieve DB instance options for.
+    * The name of the engine to retrieve instance options for.
     */
   var Engine: String = js.native
   /**

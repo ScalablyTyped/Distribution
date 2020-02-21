@@ -127,7 +127,8 @@ trait Course extends js.Object {
     * Information about a Drive Folder that is shared with all teachers of the
     * course.
     *
-    * This field will only be set for teachers of the course and domain administrators.
+    * This field will only be set for teachers of the course and domain
+    * administrators.
     *
     * Read-only.
     */

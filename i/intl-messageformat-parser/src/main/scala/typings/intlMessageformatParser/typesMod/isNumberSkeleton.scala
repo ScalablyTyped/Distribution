@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isNumberSkeleton extends js.Object {
   def apply(): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
-  def apply(el: String): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
-  def apply(el: NumberSkeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
+  def apply(el: String | NumberSkeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
+  def apply(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
 }
 

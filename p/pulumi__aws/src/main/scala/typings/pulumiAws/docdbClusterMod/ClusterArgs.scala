@@ -45,7 +45,7 @@ trait ClusterArgs extends js.Object {
   val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * List of log types to export to cloudwatch. If omitted, no logs will be exported.
-    * The following log types are supported: `audit`.
+    * The following log types are supported: `audit`, `profiler`.
     */
   val enabledCloudwatchLogsExports: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**

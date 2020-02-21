@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetInsightResultsRequest extends js.Object {
   /**
-    * The ARN of the insight whose results you want to see.
+    * The ARN of the insight for which to return results.
     */
   var InsightArn: NonEmptyString = js.native
 }

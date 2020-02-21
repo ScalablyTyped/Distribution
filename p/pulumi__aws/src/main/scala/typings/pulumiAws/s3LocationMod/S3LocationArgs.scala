@@ -25,7 +25,7 @@ trait S3LocationArgs extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object S3LocationArgs {
@@ -34,7 +34,7 @@ object S3LocationArgs {
     s3BucketArn: Input[ARN],
     s3Config: Input[S3LocationS3Config],
     subdirectory: Input[String],
-    tags: Input[StringDictionary[Input[String]]] = null
+    tags: Input[StringDictionary[_]] = null
   ): S3LocationArgs = {
     val __obj = js.Dynamic.literal(s3BucketArn = s3BucketArn.asInstanceOf[js.Any], s3Config = s3Config.asInstanceOf[js.Any], subdirectory = subdirectory.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

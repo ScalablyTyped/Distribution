@@ -7,7 +7,6 @@ import typings.elliptic.mod.ec.KeyPair
 import typings.elliptic.mod.ec.KeyPairOptions
 import typings.elliptic.mod.ec.SignOptions
 import typings.elliptic.mod.ec.Signature
-import typings.elliptic.mod.ec.SignatureOptions
 import typings.node.Buffer
 import typings.std.Error
 import typings.std.Uint8Array
@@ -31,45 +30,23 @@ class ec_ protected () extends js.Object {
   def genKeyPair(options: GenKeyPairOptions): KeyPair = js.native
   def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
-    signature: SignatureOptions,
+    signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
     e: js.UndefOr[scala.Nothing],
-    signature: SignatureOptions,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-    enc: String
-  ): Double = js.native
-  def getKeyRecoveryParam(
-    e: js.UndefOr[scala.Nothing],
-    signature: Signature,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-  ): Double = js.native
-  def getKeyRecoveryParam(
-    e: js.UndefOr[scala.Nothing],
-    signature: Signature,
+    signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
   ): Double = js.native
   def getKeyRecoveryParam(
     e: Error,
-    signature: SignatureOptions,
+    signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
     e: Error,
-    signature: SignatureOptions,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
-    enc: String
-  ): Double = js.native
-  def getKeyRecoveryParam(
-    e: Error,
-    signature: Signature,
-    Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-  ): Double = js.native
-  def getKeyRecoveryParam(
-    e: Error,
-    signature: Signature,
+    signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
   ): Double = js.native
@@ -96,10 +73,8 @@ class ec_ protected () extends js.Object {
   def keyFromPublic(pub: Uint8Array): KeyPair = js.native
   def keyFromPublic(pub: Uint8Array, enc: String): KeyPair = js.native
   def keyPair(options: KeyPairOptions): KeyPair = js.native
-  def recoverPubKey(msg: BNInput, signature: SignatureOptions, j: Double): js.Any = js.native
-  def recoverPubKey(msg: BNInput, signature: SignatureOptions, j: Double, enc: String): js.Any = js.native
-  def recoverPubKey(msg: BNInput, signature: Signature, j: Double): js.Any = js.native
-  def recoverPubKey(msg: BNInput, signature: Signature, j: Double, enc: String): js.Any = js.native
+  def recoverPubKey(msg: BNInput, signature: SignatureInput, j: Double): js.Any = js.native
+  def recoverPubKey(msg: BNInput, signature: SignatureInput, j: Double, enc: String): js.Any = js.native
   def sign(msg: BNInput, key: KeyPair): Signature = js.native
   def sign(msg: BNInput, key: KeyPair, enc: String): Signature = js.native
   def sign(msg: BNInput, key: KeyPair, enc: String, options: SignOptions): Signature = js.native
@@ -108,13 +83,9 @@ class ec_ protected () extends js.Object {
   def sign(msg: BNInput, key: Buffer, enc: String): Signature = js.native
   def sign(msg: BNInput, key: Buffer, enc: String, options: SignOptions): Signature = js.native
   def sign(msg: BNInput, key: Buffer, options: SignOptions): Signature = js.native
-  def verify(msg: BNInput, signature: SignatureOptions, key: KeyPair): Boolean = js.native
-  def verify(msg: BNInput, signature: SignatureOptions, key: KeyPair, enc: String): Boolean = js.native
-  def verify(msg: BNInput, signature: SignatureOptions, key: Buffer): Boolean = js.native
-  def verify(msg: BNInput, signature: SignatureOptions, key: Buffer, enc: String): Boolean = js.native
-  def verify(msg: BNInput, signature: Signature, key: KeyPair): Boolean = js.native
-  def verify(msg: BNInput, signature: Signature, key: KeyPair, enc: String): Boolean = js.native
-  def verify(msg: BNInput, signature: Signature, key: Buffer): Boolean = js.native
-  def verify(msg: BNInput, signature: Signature, key: Buffer, enc: String): Boolean = js.native
+  def verify(msg: BNInput, signature: SignatureInput, key: KeyPair): Boolean = js.native
+  def verify(msg: BNInput, signature: SignatureInput, key: KeyPair, enc: String): Boolean = js.native
+  def verify(msg: BNInput, signature: SignatureInput, key: Buffer): Boolean = js.native
+  def verify(msg: BNInput, signature: SignatureInput, key: Buffer, enc: String): Boolean = js.native
 }
 

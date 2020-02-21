@@ -6,7 +6,7 @@ import typings.cesium.AnonDataHeadersOverrideMimeTypeResponseType
 import typings.cesium.AnonHeaders
 import typings.cesium.AnonHeadersOverrideMimeType
 import typings.cesium.AnonHeadersPreferBlob
-import typings.cesium.AnonHeadersPreserveQueryParameters
+import typings.cesium.AnonHeadersPreserveQueryParametersProxy
 import typings.cesium.AnonHeadersProxy
 import typings.std.ArrayBuffer
 import typings.std.Blob
@@ -39,9 +39,9 @@ class Resource () extends js.Object {
   def appendQueryParameters(params: js.Any): Unit = js.native
   def clone(result: Resource): Resource = js.native
   def delete(): js.UndefOr[js.Promise[_]] = js.native
-  def delete(options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
+  def delete(options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
   def fetch(): js.UndefOr[js.Promise[_]] = js.native
-  def fetch(options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
+  def fetch(options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
   def fetchArrayBuffer(): js.UndefOr[js.Promise[ArrayBuffer]] = js.native
   def fetchBlob(): js.UndefOr[js.Promise[Blob]] = js.native
   def fetchImage(preferBlob: Boolean): js.UndefOr[js.Promise[_]] = js.native
@@ -50,18 +50,18 @@ class Resource () extends js.Object {
   def fetchText(): js.UndefOr[js.Promise[String]] = js.native
   def fetchXml(): js.UndefOr[js.Promise[XMLDocument]] = js.native
   def getBaseUri(includeQuery: Boolean): String = js.native
-  def getDerivedResource(options: AnonHeadersPreserveQueryParameters): Resource = js.native
+  def getDerivedResource(options: AnonHeadersPreserveQueryParametersProxy): Resource = js.native
   def getUrlComponent(query: Boolean, proxy: Boolean): String = js.native
   def head(): js.UndefOr[js.Promise[_]] = js.native
-  def head(options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
+  def head(options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
   def options(): js.UndefOr[js.Promise[_]] = js.native
-  def options(options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
+  def options(options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
   def patch(data: js.Any): js.UndefOr[js.Promise[_]] = js.native
-  def patch(data: js.Any, options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
+  def patch(data: js.Any, options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
   def post(data: js.Any): js.UndefOr[js.Promise[_]] = js.native
   def post(data: js.Any, options: AnonDataHeadersOverrideMimeTypeResponseType): js.UndefOr[js.Promise[_]] = js.native
   def put(data: js.Any): js.UndefOr[js.Promise[_]] = js.native
-  def put(data: js.Any, options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
+  def put(data: js.Any, options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
   def retryCallback(): Unit = js.native
   def setQueryParameters(params: js.Any, useAsDefault: Boolean): Unit = js.native
   def setTemplateValues(template: js.Any, useAsDefault: Boolean): Unit = js.native
@@ -76,7 +76,7 @@ object Resource extends js.Object {
   def delete(): js.UndefOr[js.Promise[_]] = js.native
   def delete(options: AnonDataHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
   def fetch(): js.UndefOr[js.Promise[_]] = js.native
-  def fetch(options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
+  def fetch(options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
   def fetchArrayBuffer(): js.UndefOr[js.Promise[ArrayBuffer]] = js.native
   def fetchArrayBuffer(options: AnonHeadersProxy): js.UndefOr[js.Promise[ArrayBuffer]] = js.native
   def fetchBlob(): js.UndefOr[js.Promise[Blob]] = js.native
@@ -92,9 +92,9 @@ object Resource extends js.Object {
   def fetchXml(): js.UndefOr[js.Promise[XMLDocument]] = js.native
   def fetchXml(options: AnonHeadersProxy): js.UndefOr[js.Promise[XMLDocument]] = js.native
   def head(): js.UndefOr[js.Promise[_]] = js.native
-  def head(options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
+  def head(options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
   def options(): js.UndefOr[js.Promise[_]] = js.native
-  def options(options: AnonHeaders): js.UndefOr[js.Promise[_]] = js.native
+  def options(options: AnonHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
   def patch(): js.UndefOr[js.Promise[_]] = js.native
   def patch(options: AnonDataHeadersOverrideMimeType): js.UndefOr[js.Promise[_]] = js.native
   def post(): js.UndefOr[js.Promise[_]] = js.native

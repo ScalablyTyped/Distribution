@@ -1,7 +1,7 @@
 
 # Scala.js typings for object_dot_getownpropertydescriptors
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 ES2017 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5.

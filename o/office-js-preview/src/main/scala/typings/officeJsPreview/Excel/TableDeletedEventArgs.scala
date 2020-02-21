@@ -16,35 +16,35 @@ import scala.scalajs.js.annotation._
 trait TableDeletedEventArgs extends js.Object {
   /**
     *
-    * Specifies the source of the event. See Excel.EventSource for details.
+    * Gets the source of the event. See Excel.EventSource for details.
     *
     * [Api set: ExcelApi 1.9]
     */
   var source: EventSource | Local | Remote
   /**
     *
-    * Specifies the id of the table that is deleted.
+    * Gets the id of the table that is deleted.
     *
     * [Api set: ExcelApi 1.9]
     */
   var tableId: String
   /**
     *
-    * Specifies the name of the table that is deleted.
+    * Gets the name of the table that is deleted.
     *
     * [Api set: ExcelApi 1.9]
     */
   var tableName: String
   /**
     *
-    * Specifies the type of the event. See Excel.EventType for details.
+    * Gets the type of the event. See Excel.EventType for details.
     *
     * [Api set: ExcelApi 1.9]
     */
   var `type`: TableDeleted
   /**
     *
-    * Specifies the id of the worksheet in which the table is deleted.
+    * Gets the id of the worksheet in which the table is deleted.
     *
     * [Api set: ExcelApi 1.9]
     */

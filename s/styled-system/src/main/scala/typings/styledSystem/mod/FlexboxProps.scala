@@ -15,38 +15,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FlexboxProps
-  extends AlignItemsProps
-     with AlignContentProps
-     with JustifyItemsProps
-     with JustifyContentProps
-     with FlexWrapProps
-     with FlexDirectionProps
-     with FlexProps[TLengthStyledSystem]
-     with FlexGrowProps
-     with FlexShrinkProps
-     with FlexBasisProps[TLengthStyledSystem]
-     with JustifySelfProps
-     with AlignSelfProps
-     with OrderProps
+trait FlexboxProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
+  extends AlignItemsProps[ThemeType]
+     with AlignContentProps[ThemeType]
+     with JustifyItemsProps[ThemeType]
+     with JustifyContentProps[ThemeType]
+     with FlexWrapProps[ThemeType]
+     with FlexDirectionProps[ThemeType]
+     with FlexProps[ThemeType, FlexProperty[TLengthStyledSystem]]
+     with FlexGrowProps[ThemeType]
+     with FlexShrinkProps[ThemeType]
+     with FlexBasisProps[ThemeType, FlexBasisProperty[TLengthStyledSystem]]
+     with JustifySelfProps[ThemeType]
+     with AlignSelfProps[ThemeType]
+     with OrderProps[ThemeType]
 
 object FlexboxProps {
   @scala.inline
-  def apply(
-    alignContent: ResponsiveValue[AlignContentProperty] = null,
-    alignItems: ResponsiveValue[AlignItemsProperty] = null,
-    alignSelf: ResponsiveValue[AlignSelfProperty] = null,
-    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem]] = null,
-    flexBasis: ResponsiveValue[FlexBasisProperty[TLengthStyledSystem]] = null,
-    flexDirection: ResponsiveValue[FlexDirectionProperty] = null,
-    flexGrow: ResponsiveValue[GlobalsNumber] = null,
-    flexShrink: ResponsiveValue[GlobalsNumber] = null,
-    flexWrap: ResponsiveValue[FlexWrapProperty] = null,
-    justifyContent: ResponsiveValue[JustifyContentProperty] = null,
-    justifyItems: ResponsiveValue[JustifyItemsProperty] = null,
-    justifySelf: ResponsiveValue[JustifySelfProperty] = null,
-    order: ResponsiveValue[GlobalsNumber] = null
-  ): FlexboxProps = {
+  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](
+    alignContent: ResponsiveValue[AlignContentProperty, ThemeType] = null,
+    alignItems: ResponsiveValue[AlignItemsProperty, ThemeType] = null,
+    alignSelf: ResponsiveValue[AlignSelfProperty, ThemeType] = null,
+    flex: ResponsiveValue[FlexProperty[TLengthStyledSystem], ThemeType] = null,
+    flexBasis: ResponsiveValue[FlexBasisProperty[TLengthStyledSystem], ThemeType] = null,
+    flexDirection: ResponsiveValue[FlexDirectionProperty, ThemeType] = null,
+    flexGrow: ResponsiveValue[GlobalsNumber, ThemeType] = null,
+    flexShrink: ResponsiveValue[GlobalsNumber, ThemeType] = null,
+    flexWrap: ResponsiveValue[FlexWrapProperty, ThemeType] = null,
+    justifyContent: ResponsiveValue[JustifyContentProperty, ThemeType] = null,
+    justifyItems: ResponsiveValue[JustifyItemsProperty, ThemeType] = null,
+    justifySelf: ResponsiveValue[JustifySelfProperty, ThemeType] = null,
+    order: ResponsiveValue[GlobalsNumber, ThemeType] = null
+  ): FlexboxProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object FlexboxProps {
     if (justifyItems != null) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
     if (justifySelf != null) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
     if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlexboxProps]
+    __obj.asInstanceOf[FlexboxProps[ThemeType]]
   }
 }
 

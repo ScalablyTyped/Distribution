@@ -26,7 +26,7 @@ trait QuickPickOptions extends js.Object {
   		 */
   var onDidSelectItem: js.UndefOr[js.Function1[/* item */ QuickPickItem | String, _]] = js.undefined
   /**
-  		 * An optional string to show as place holder in the input box to guide the user what to pick on.
+  		 * An optional string to show as placeholder in the input box to guide the user what to pick on.
   		 */
   var placeHolder: js.UndefOr[String] = js.undefined
 }

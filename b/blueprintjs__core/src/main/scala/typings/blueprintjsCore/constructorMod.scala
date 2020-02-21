@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/common/constructor", JSImport.Namespace)
 @js.native
 object constructorMod extends js.Object {
-  @js.native
-  trait IConstructor[T]
-    extends Instantiable1[/* args (repeated) */ js.Any, T]
-  
+  type IConstructor[T] = Instantiable1[/* args (repeated) */ js.Any, T]
 }
 

@@ -9,6 +9,10 @@ trait ModelUpdateOptions
   extends ModelOptions
      with /** other options */
 /* other */ StringDictionary[js.Any] {
+  /**
+    * Only update elements that match the arrayFilters conditions in the document or documents that match the query conditions.
+    */
+  var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.undefined
   /** whether multiple documents should be updated (false) */
   var multi: js.UndefOr[Boolean] = js.undefined
   /**
@@ -42,6 +46,7 @@ object ModelUpdateOptions {
   def apply(
     StringDictionary: /** other options */
   /* other */ StringDictionary[js.Any] = null,
+    arrayFilters: js.Array[StringDictionary[_]] = null,
     multi: js.UndefOr[Boolean] = js.undefined,
     multipleCastError: js.UndefOr[Boolean] = js.undefined,
     overwrite: js.UndefOr[Boolean] = js.undefined,
@@ -54,6 +59,7 @@ object ModelUpdateOptions {
   ): ModelUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (arrayFilters != null) __obj.updateDynamic("arrayFilters")(arrayFilters.asInstanceOf[js.Any])
     if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError.asInstanceOf[js.Any])
     if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])

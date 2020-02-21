@@ -1,7 +1,7 @@
 
 # Scala.js typings for write-json-file
 
-Typings are for version 4.2.1
+Typings are for version 4.3.0
 
 ## Library description:
 Stringify and write JSON to a file atomically

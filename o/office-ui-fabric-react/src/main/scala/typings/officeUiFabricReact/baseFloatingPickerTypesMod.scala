@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.footerItemsProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.headerItemsProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings.shouldSelectFirstItem
@@ -100,6 +101,10 @@ object baseFloatingPickerTypesMod extends js.Object {
           js.Array[T] | js.Thenable[js.Array[T]] | Null
         ]
       ] = js.native
+    /**
+      * The properties that will get passed to the Callout component.
+      */
+    var pickerCalloutProps: js.UndefOr[ICalloutProps] = js.native
     /**
       * The properties that will get passed to the Suggestions component.
       */

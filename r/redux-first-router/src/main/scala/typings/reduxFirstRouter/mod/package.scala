@@ -37,7 +37,7 @@ package object mod {
   type RoutesMap[TKeys, TState] = org.scalablytyped.runtime.StringDictionary[typings.reduxFirstRouter.mod.Route[TKeys, TState]]
   type ScrollBehavior_ = js.Object
   type ScrollUpdater = js.Function1[/* performedByUser */ scala.Boolean, scala.Unit]
-  type SelectLocationState[TKeys, TState] = js.Function1[/* state */ TState, typings.reduxFirstRouter.mod.LocationState[TKeys, TState]]
+  type SelectLocationState_[TKeys, TState] = js.Function1[/* state */ TState, typings.reduxFirstRouter.mod.LocationState[TKeys, TState]]
   type SelectTitleState[TState] = js.Function1[/* state */ TState, java.lang.String]
   type StateGetter[TState] = js.Function0[TState]
 }

@@ -1,5 +1,7 @@
 package typings.exceljs.mod
 
+import typings.node.eventsMod.EventEmitter
+import typings.node.streamMod.Stream
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,12 +12,12 @@ trait Csv extends js.Object {
   /**
   	 * Create input stream for reading
   	 */
-  def createInputStream(): Writable = js.native
+  def createInputStream(): EventEmitter = js.native
   /**
   	 * read from a stream
   	 */
-  def read(stream: Stream_): js.Promise[Worksheet] = js.native
-  def read(stream: Stream_, options: Partial[CsvReadOptions]): js.Promise[Worksheet] = js.native
+  def read(stream: Stream): js.Promise[Worksheet] = js.native
+  def read(stream: Stream, options: Partial[CsvReadOptions]): js.Promise[Worksheet] = js.native
   /**
   	 * read from a file
   	 */
@@ -24,8 +26,8 @@ trait Csv extends js.Object {
   /**
   	 * write to a stream
   	 */
-  def write(stream: Stream_): js.Promise[Unit] = js.native
-  def write(stream: Stream_, options: Partial[CsvWriteOptions]): js.Promise[Unit] = js.native
+  def write(stream: Stream): js.Promise[Unit] = js.native
+  def write(stream: Stream, options: Partial[CsvWriteOptions]): js.Promise[Unit] = js.native
   /**
   	 * write to a buffer
   	 */

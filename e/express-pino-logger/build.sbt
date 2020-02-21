@@ -1,19 +1,18 @@
 organization := "org.scalablytyped"
 name := "express-pino-logger"
-version := "4.0-dt-20191003Z-32308e"
-scalaVersion := "2.12.10"
+version := "4.0-dt-20191003Z-de3efd"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "pino" % "5.15-dt-20200115Z-19126a",
-  "org.scalablytyped" %%% "pino-http" % "4.3-dt-20191003Z-3ab6fd",
-  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-fb7c6e",
-  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-e1fc40",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "pino" % "5.15-dt-20200206Z-0db322",
+  "org.scalablytyped" %%% "pino-http" % "4.3-dt-20191003Z-5cd036",
+  "org.scalablytyped" %%% "pino-std-serializers" % "2.4-dt-20190701Z-0fc3a8",
+  "org.scalablytyped" %%% "sonic-boom" % "0.7-dt-20190819Z-1aa147",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

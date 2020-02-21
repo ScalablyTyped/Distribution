@@ -1,11 +1,11 @@
 package typings.cassandraDriver.mod.types
 
-import typings.long.mod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("cassandra-driver", "types.Long")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias long.long.Long * / object */ @JSImport("cassandra-driver", "types.Long")
 @js.native
-class Long () extends ^
+class Long () extends js.Object
 

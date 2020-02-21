@@ -10,7 +10,7 @@ package object mod {
     */ typings.yup.yupStrings.Id with T
   type InferType[T] = typings.yup.mod.InnerInferType[js.Any]
   type InferredArrayType[T] = T
-  type InnerInferType[T] = typings.yup.mod.Id[typings.yup.mod.NotRequiredProps[T] with typings.yup.mod.RequiredProps[T]]
+  type InnerInferType[T] = (typings.yup.mod.Id[typings.yup.mod.NotRequiredProps[_] with typings.yup.mod.RequiredProps[_]]) | js.Array[js.Any]
   type KeyOfUndefined[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: -? undefined extends T[P]? P : never}[keyof T] */ js.Any
   type Lazy_ = typings.yup.mod.Schema[js.Any]
   type LocaleValue = java.lang.String | (js.Function1[/* params */ typings.yup.mod.FormatErrorParams, java.lang.String])

@@ -6,7 +6,9 @@ import typings.jose.mod.JSONWebKeySet
 import typings.node.Buffer
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.httpMod.IncomingMessage
+import typings.node.urlMod.URL_
 import typings.openidClient.AnonBody
+import typings.openidClient.AnonBodyDELETE
 import typings.openidClient.AnonBodyGET
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -133,15 +135,26 @@ class Client protected ()
     * determining the algorithms to use.
     */
   def requestObject(payload: RequestObjectPayload): js.Promise[String] = js.native
-  def resource(resourceUrl: String, accessToken: String): GotPromise[Buffer] = js.native
-  def resource(resourceUrl: String, accessToken: String, options: AnonBodyGET): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: String, accessToken: String): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: String, accessToken: String, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
   /**
-    * Fetches an arbitrary resource with the provided Access Token.
+    * Fetches an arbitrary resource with the provided Access Token in an Authorization header.
     *
     * @param resourceUrl Resource URL to request a response from.
     * @param accessToken Access Token value. When TokenSet instance is provided its access_token property
     * will be used automatically.
     * @param options Options for the request.
+    */
+  def requestResource(resourceUrl: String, accessToken: TokenSet): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: String, accessToken: TokenSet, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: String): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: String, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: TokenSet): GotPromise[Buffer] = js.native
+  def requestResource(resourceUrl: URL_, accessToken: TokenSet, options: AnonBodyDELETE): GotPromise[Buffer] = js.native
+  def resource(resourceUrl: String, accessToken: String): GotPromise[Buffer] = js.native
+  def resource(resourceUrl: String, accessToken: String, options: AnonBodyGET): GotPromise[Buffer] = js.native
+  /**
+    * @deprecated in favor of client.requestResource
     */
   def resource(resourceUrl: String, accessToken: TokenSet): GotPromise[Buffer] = js.native
   def resource(resourceUrl: String, accessToken: TokenSet, options: AnonBodyGET): GotPromise[Buffer] = js.native

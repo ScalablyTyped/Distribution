@@ -10,6 +10,10 @@ trait CipherNameAndProtocol extends js.Object {
     */
   var name: String
   /**
+    * IETF name for the cipher suite.
+    */
+  var standardName: String
+  /**
     * SSL/TLS protocol version.
     */
   var version: String
@@ -17,8 +21,8 @@ trait CipherNameAndProtocol extends js.Object {
 
 object CipherNameAndProtocol {
   @scala.inline
-  def apply(name: String, version: String): CipherNameAndProtocol = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(name: String, standardName: String, version: String): CipherNameAndProtocol = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], standardName = standardName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CipherNameAndProtocol]
   }

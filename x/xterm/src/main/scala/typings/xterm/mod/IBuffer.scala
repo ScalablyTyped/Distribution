@@ -43,6 +43,12 @@ trait IBuffer extends js.Object {
     * @param y The line index to get.
     */
   def getLine(y: Double): js.UndefOr[IBufferLine]
+  /**
+    * Creates an empty cell object suitable as a cell reference in
+    * `line.getCell(x, cell)`. Use this to avoid costly recreation of
+    * cell objects when dealing with tons of cells.
+    */
+  def getNullCell(): IBufferCell
 }
 
 object IBuffer {
@@ -52,10 +58,11 @@ object IBuffer {
     cursorX: Double,
     cursorY: Double,
     getLine: Double => js.UndefOr[IBufferLine],
+    getNullCell: () => IBufferCell,
     length: Double,
     viewportY: Double
   ): IBuffer = {
-    val __obj = js.Dynamic.literal(baseY = baseY.asInstanceOf[js.Any], cursorX = cursorX.asInstanceOf[js.Any], cursorY = cursorY.asInstanceOf[js.Any], getLine = js.Any.fromFunction1(getLine), length = length.asInstanceOf[js.Any], viewportY = viewportY.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseY = baseY.asInstanceOf[js.Any], cursorX = cursorX.asInstanceOf[js.Any], cursorY = cursorY.asInstanceOf[js.Any], getLine = js.Any.fromFunction1(getLine), getNullCell = js.Any.fromFunction0(getNullCell), length = length.asInstanceOf[js.Any], viewportY = viewportY.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[IBuffer]
   }

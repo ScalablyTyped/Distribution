@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ByoipCidr extends js.Object {
   /**
-    * The public IPv4 address range, in CIDR notation.
+    * The address range, in CIDR notation.
     */
   var Cidr: js.UndefOr[String] = js.native
   /**

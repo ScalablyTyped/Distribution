@@ -27,6 +27,10 @@ class NotebookInstance protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
+    * Set to `Disabled` to disable internet access to notebook. Requires `securityGroups` and `subnetId` to be set. Supported values: `Enabled` (Default) or `Disabled`. If set to `Disabled`, the notebook instance will be able to access resources only in your VPC, and will not be able to connect to Amazon SageMaker training and endpoint services unless your configure a NAT Gateway in your VPC.
+    */
+  val directInternetAccess: Output_[js.UndefOr[String]] = js.native
+  /**
     * The name of ML compute instance type.
     */
   val instanceType: Output_[String] = js.native

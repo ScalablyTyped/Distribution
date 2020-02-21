@@ -42,6 +42,9 @@ object centraStrings {
   sealed trait localAddress extends js.Object
   
   @js.native
+  sealed trait maxHeaderSize extends js.Object
+  
+  @js.native
   sealed trait method extends js.Object
   
   @js.native
@@ -86,6 +89,8 @@ object centraStrings {
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def localAddress: localAddress = "localAddress".asInstanceOf[localAddress]
+  @scala.inline
+  def maxHeaderSize: maxHeaderSize = "maxHeaderSize".asInstanceOf[maxHeaderSize]
   @scala.inline
   def method: method = "method".asInstanceOf[method]
   @scala.inline

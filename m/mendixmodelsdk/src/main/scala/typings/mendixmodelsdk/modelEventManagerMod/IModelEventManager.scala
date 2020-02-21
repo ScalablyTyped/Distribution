@@ -10,6 +10,7 @@ trait IModelEventManager extends js.Object {
   def loadUnitCompleted(eventId: Double, callback: IVoidCallback, errorCallback: IErrorCallback): Unit
   def loadUnitStarted(): Unit
   def onEventProcessed(callback: IVoidCallback): Unit
+  def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit
   def start(): Unit
   def stop(): Unit
 }
@@ -20,10 +21,11 @@ object IModelEventManager {
     loadUnitCompleted: (Double, IVoidCallback, IErrorCallback) => Unit,
     loadUnitStarted: () => Unit,
     onEventProcessed: IVoidCallback => Unit,
+    onFileChangesReceived: js.Function1[/* files */ js.Array[String], Unit] => Unit,
     start: () => Unit,
     stop: () => Unit
   ): IModelEventManager = {
-    val __obj = js.Dynamic.literal(loadUnitCompleted = js.Any.fromFunction3(loadUnitCompleted), loadUnitStarted = js.Any.fromFunction0(loadUnitStarted), onEventProcessed = js.Any.fromFunction1(onEventProcessed), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
+    val __obj = js.Dynamic.literal(loadUnitCompleted = js.Any.fromFunction3(loadUnitCompleted), loadUnitStarted = js.Any.fromFunction0(loadUnitStarted), onEventProcessed = js.Any.fromFunction1(onEventProcessed), onFileChangesReceived = js.Any.fromFunction1(onFileChangesReceived), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
   
     __obj.asInstanceOf[IModelEventManager]
   }

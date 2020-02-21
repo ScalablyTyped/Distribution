@@ -1,6 +1,6 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.ReposGetContentsResponseLinks
+import typings.octokitRest.mod.Octokit.ReposGetContentsResponseLinks
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CLEARFLAG_COLOR
+  * @type {number}
   * @description Clear the color buffer.
   */
 @JSImport("playcanvas", "CLEARFLAG_COLOR")

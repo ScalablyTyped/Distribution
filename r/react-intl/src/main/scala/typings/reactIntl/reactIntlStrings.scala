@@ -147,6 +147,9 @@ object reactIntlStrings {
   sealed trait formatDate extends js.Object
   
   @js.native
+  sealed trait formatDisplayName extends js.Object
+  
+  @js.native
   sealed trait formatList extends js.Object
   
   @js.native
@@ -525,6 +528,8 @@ object reactIntlStrings {
   def format: format = "format".asInstanceOf[format]
   @scala.inline
   def formatDate: formatDate = "formatDate".asInstanceOf[formatDate]
+  @scala.inline
+  def formatDisplayName: formatDisplayName = "formatDisplayName".asInstanceOf[formatDisplayName]
   @scala.inline
   def formatList: formatList = "formatList".asInstanceOf[formatList]
   @scala.inline

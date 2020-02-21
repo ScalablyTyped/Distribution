@@ -19,7 +19,7 @@ trait UpdateDetectorModelRequest extends js.Object {
     */
   var detectorModelName: DetectorModelName = js.native
   /**
-    * When set to SERIAL, variables are updated and event conditions evaluated in the order that the events are defined. When set to BATCH, variables are updated and events performed only after all event conditions are evaluated.
+    * Information about the order in which events are evaluated and how actions are executed. 
     */
   var evaluationMethod: js.UndefOr[EvaluationMethod] = js.native
   /**

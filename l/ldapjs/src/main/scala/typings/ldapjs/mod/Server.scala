@@ -27,7 +27,7 @@ trait Server extends EventEmitter {
   /**
   	 * Unix Domain Socket
   	 * Start a UNIX socket server listening for connections on the given path.
-  	 * This function is asynchronous. The last parameter callback will be called when the server has been bound. 
+  	 * This function is asynchronous. The last parameter callback will be called when the server has been bound.
   	 */
   def listen(path: String): Unit = js.native
   def listen(path: String, callback: js.Any): Unit = js.native

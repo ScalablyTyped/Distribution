@@ -3,12 +3,14 @@ package typings.officeUiFabricReact.dialogContentTypesMod
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
 import typings.officeUiFabricReact.dialogContentBaseMod.DialogContentBase
 import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLButtonElement
+import typings.std.HTMLDivElement
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -75,8 +77,14 @@ trait IDialogContentProps extends ClassAttributes[DialogContentBase] {
   var title: js.UndefOr[String | Element] = js.undefined
   /**
     * The Id for title container
+    *
+    * @deprecated use the `id` attribute in `titleProps` instead.
     */
   var titleId: js.UndefOr[String] = js.undefined
+  /**
+    * The props for title container.
+    */
+  var titleProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
   /**
     * Other top buttons that will show up next to the close button
     */
@@ -107,6 +115,7 @@ object IDialogContentProps {
     theme: ITheme = null,
     title: String | Element = null,
     titleId: String = null,
+    titleProps: HTMLAttributes[HTMLDivElement] = null,
     topButtonsProps: js.Array[IButtonProps] = null,
     `type`: DialogType = null
   ): IDialogContentProps = {
@@ -127,6 +136,7 @@ object IDialogContentProps {
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (titleId != null) __obj.updateDynamic("titleId")(titleId.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     if (topButtonsProps != null) __obj.updateDynamic("topButtonsProps")(topButtonsProps.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogContentProps]

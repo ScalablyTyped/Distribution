@@ -8,6 +8,8 @@ package object requestParamsMod {
   type CcrStats = typings.elasticElasticsearch.requestParamsMod.Generic
   type ClusterRemoteInfo = typings.elasticElasticsearch.requestParamsMod.Generic
   type EnrichStats = typings.elasticElasticsearch.requestParamsMod.Generic
+  type GetScriptContext = typings.elasticElasticsearch.requestParamsMod.Generic
+  type GetScriptLanguages = typings.elasticElasticsearch.requestParamsMod.Generic
   type IlmGetStatus = typings.elasticElasticsearch.requestParamsMod.Generic
   type IlmStart = typings.elasticElasticsearch.requestParamsMod.Generic
   type IlmStop = typings.elasticElasticsearch.requestParamsMod.Generic
@@ -24,6 +26,9 @@ package object requestParamsMod {
   type SecurityGetUserPrivileges = typings.elasticElasticsearch.requestParamsMod.Generic
   type SlmExecuteRetention = typings.elasticElasticsearch.requestParamsMod.Generic
   type SlmGetStats = typings.elasticElasticsearch.requestParamsMod.Generic
+  type SlmGetStatus = typings.elasticElasticsearch.requestParamsMod.Generic
+  type SlmStart = typings.elasticElasticsearch.requestParamsMod.Generic
+  type SlmStop = typings.elasticElasticsearch.requestParamsMod.Generic
   type SslCertificates = typings.elasticElasticsearch.requestParamsMod.Generic
   type WatcherStart = typings.elasticElasticsearch.requestParamsMod.Generic
   type WatcherStop = typings.elasticElasticsearch.requestParamsMod.Generic

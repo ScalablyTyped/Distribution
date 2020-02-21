@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.BODYTYPE_DYNAMIC
   * @description Rigid body is simulated according to applied forces.
   */

@@ -9,6 +9,10 @@ package object typesMod {
     typings.std.Intl.DateTimeFormatOptions, 
     typings.reactIntl.reactIntlStrings.localeMatcher
   ]) with typings.reactIntl.typesMod.CustomFormatConfig
+  type FormatDisplayNameOptions = typings.std.Exclude[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DisplayNamesOptions */ js.Any, 
+    typings.reactIntl.reactIntlStrings.localeMatcher
+  ]
   type FormatListOptions = typings.std.Exclude[
     typings.formatjsIntlListformat.mod.IntlListFormatOptions, 
     typings.reactIntl.reactIntlStrings.localeMatcher

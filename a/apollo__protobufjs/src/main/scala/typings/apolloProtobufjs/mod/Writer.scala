@@ -1,6 +1,6 @@
 package typings.apolloProtobufjs.mod
 
-import typings.long.mod.^
+import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,7 +56,7 @@ class Writer () extends js.Object {
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def fixed64(value: ^): Writer = js.native
+  def fixed64(value: Long): Writer = js.native
   /**
     * Writes a float (32 bit).
     * @param value Value to write
@@ -83,7 +83,7 @@ class Writer () extends js.Object {
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def int64(value: ^): Writer = js.native
+  def int64(value: Long): Writer = js.native
   /**
     * Resets to the last state and appends the fork state's current write length as a varint followed by its operations.
     * @returns `this`
@@ -108,7 +108,7 @@ class Writer () extends js.Object {
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def sfixed64(value: ^): Writer = js.native
+  def sfixed64(value: Long): Writer = js.native
   /**
     * Writes a 32 bit value as a varint, zig-zag encoded.
     * @param value Value to write
@@ -123,7 +123,7 @@ class Writer () extends js.Object {
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def sint64(value: ^): Writer = js.native
+  def sint64(value: Long): Writer = js.native
   /**
     * Writes a string.
     * @param value Value to write
@@ -144,7 +144,7 @@ class Writer () extends js.Object {
     * @returns `this`
     * @throws {TypeError} If `value` is a string and no long library is present.
     */
-  def uint64(value: ^): Writer = js.native
+  def uint64(value: Long): Writer = js.native
 }
 
 /* static members */

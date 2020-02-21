@@ -70,6 +70,15 @@ object ClientTemplate extends js.Object {
   def createInDataGridUnderCaption(container: typings.mendixmodelsdk.pagesMod.pages.DataGrid): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = js.native
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'alternativeText' property
+    * of the parent DynamicImageViewer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.6.0 and higher
+    */
+  def createInDynamicImageViewerUnderAlternativeText(container: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = js.native
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * The new ClientTemplate will be automatically stored in the 'content' property
     * of the parent DynamicText element passed as argument.
     */
@@ -89,6 +98,15 @@ object ClientTemplate extends js.Object {
     *  7.18.0 and higher
     */
   def createInInputWidgetUnderLabelTemplate(container: typings.mendixmodelsdk.pagesMod.pages.InputWidget): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = js.native
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'alternativeText' property
+    * of the parent StaticImageViewer element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.6.0 and higher
+    */
+  def createInStaticImageViewerUnderAlternativeText(container: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = js.native
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * The new ClientTemplate will be automatically stored in the 'labelTemplate' property

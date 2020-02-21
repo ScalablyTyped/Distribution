@@ -1,7 +1,7 @@
 
 # Scala.js typings for gridstack
 
-Typings are for version 0.5
+Typings are for version 0.6.3
 
 ## Library description:
 gridstack.js is a jQuery plugin for widget layout
@@ -24,7 +24,7 @@ gridstack.js is a jQuery plugin for widget layout
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

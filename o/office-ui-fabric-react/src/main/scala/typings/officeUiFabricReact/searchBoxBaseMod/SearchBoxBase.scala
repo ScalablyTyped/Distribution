@@ -27,10 +27,10 @@ class SearchBoxBase protected ()
   var _onInputChange: js.Any = js.native
   var _onKeyDown: js.Any = js.native
   var _rootElement: js.Any = js.native
-  @JSName("UNSAFE_componentWillMount")
-  def UNSAFE_componentWillMount_MSearchBoxBase(): Unit = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MSearchBoxBase(newProps: ISearchBoxProps): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MSearchBoxBase(): Unit = js.native
   /**
     * Sets focus to the search box input field
     */

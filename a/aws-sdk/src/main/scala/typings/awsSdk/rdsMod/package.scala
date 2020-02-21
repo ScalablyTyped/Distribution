@@ -81,6 +81,7 @@ package object rdsMod {
   type EventCategoriesMapList = js.Array[typings.awsSdk.rdsMod.EventCategoriesMap]
   type EventList = js.Array[typings.awsSdk.rdsMod.Event]
   type EventSubscriptionsList = js.Array[typings.awsSdk.rdsMod.EventSubscription]
+  type ExportTasksList = js.Array[typings.awsSdk.rdsMod.ExportTask]
   type FeatureNameList = js.Array[typings.awsSdk.rdsMod.String]
   type FilterList = js.Array[typings.awsSdk.rdsMod.Filter]
   type FilterValueList = js.Array[typings.awsSdk.rdsMod.String]

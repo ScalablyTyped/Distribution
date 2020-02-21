@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetAuthorizationTokenRequest extends js.Object {
   /**
-    * A list of AWS account IDs that are associated with the registries for which to get authorization tokens. If you do not specify a registry, the default registry is assumed.
+    * A list of AWS account IDs that are associated with the registries for which to get AuthorizationData objects. If you do not specify a registry, the default registry is assumed.
     */
   var registryIds: js.UndefOr[GetAuthorizationTokenRegistryIdList] = js.native
 }

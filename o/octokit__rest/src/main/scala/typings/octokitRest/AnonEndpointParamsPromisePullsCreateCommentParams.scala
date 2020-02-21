@@ -1,13 +1,13 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.Endpoint
-import typings.octokitRest.mod.EndpointOptions
-import typings.octokitRest.mod.PullsCreateCommentParams
-import typings.octokitRest.mod.PullsCreateCommentParamsDeprecatedInReplyTo
-import typings.octokitRest.mod.PullsCreateCommentParamsDeprecatedNumber
-import typings.octokitRest.mod.PullsCreateCommentResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.Endpoint
+import typings.octokitRest.mod.Octokit.EndpointOptions
+import typings.octokitRest.mod.Octokit.PullsCreateCommentParams
+import typings.octokitRest.mod.Octokit.PullsCreateCommentParamsDeprecatedInReplyTo
+import typings.octokitRest.mod.Octokit.PullsCreateCommentParamsDeprecatedNumber
+import typings.octokitRest.mod.Octokit.PullsCreateCommentResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

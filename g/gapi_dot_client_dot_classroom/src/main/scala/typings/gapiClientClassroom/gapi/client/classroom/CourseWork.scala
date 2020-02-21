@@ -59,12 +59,12 @@ trait CourseWork extends js.Object {
     */
   var description: js.UndefOr[String] = js.undefined
   /**
-    * Optional date, in UTC, that submissions for this this course work are due.
+    * Optional date, in UTC, that submissions for this course work are due.
     * This must be specified if `due_time` is specified.
     */
   var dueDate: js.UndefOr[Date] = js.undefined
   /**
-    * Optional time of day, in UTC, that submissions for this this course work
+    * Optional time of day, in UTC, that submissions for this course work
     * are due.
     * This must be specified if `due_date` is specified.
     */
@@ -122,6 +122,11 @@ trait CourseWork extends js.Object {
     */
   var title: js.UndefOr[String] = js.undefined
   /**
+    * Identifier for the topic that this coursework is associated with.
+    * Must match an existing topic in the course.
+    */
+  var topicId: js.UndefOr[String] = js.undefined
+  /**
     * Timestamp of the most recent change to this course work.
     *
     * Read-only.
@@ -157,6 +162,7 @@ object CourseWork {
     state: String = null,
     submissionModificationMode: String = null,
     title: String = null,
+    topicId: String = null,
     updateTime: String = null,
     workType: String = null
   ): CourseWork = {
@@ -180,6 +186,7 @@ object CourseWork {
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     if (submissionModificationMode != null) __obj.updateDynamic("submissionModificationMode")(submissionModificationMode.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (topicId != null) __obj.updateDynamic("topicId")(topicId.asInstanceOf[js.Any])
     if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     if (workType != null) __obj.updateDynamic("workType")(workType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CourseWork]

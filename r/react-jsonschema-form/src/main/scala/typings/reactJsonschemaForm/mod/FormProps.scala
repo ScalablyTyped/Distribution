@@ -27,11 +27,13 @@ trait FormProps[T] extends js.Object {
   // HTML Attributes
   var id: js.UndefOr[String] = js.undefined
   var idPrefix: js.UndefOr[String] = js.undefined
+  var liveOmit: js.UndefOr[Boolean] = js.undefined
   var liveValidate: js.UndefOr[Boolean] = js.undefined
   var method: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var noHtml5Validate: js.UndefOr[Boolean] = js.undefined
   var noValidate: js.UndefOr[Boolean] = js.undefined
+  var omitExtraData: js.UndefOr[Boolean] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[/* id */ String, /* value */ Boolean | Double | String | Null, Unit]
   ] = js.undefined
@@ -41,6 +43,9 @@ trait FormProps[T] extends js.Object {
   var safeRenderCompletion: js.UndefOr[Boolean] = js.undefined
   var schema: JSONSchema6
   var showErrorList: js.UndefOr[Boolean] = js.undefined
+  var tagName: js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+  ] = js.undefined
   var target: js.UndefOr[String] = js.undefined
   var transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]] = js.undefined
   var uiSchema: js.UndefOr[UiSchema] = js.undefined
@@ -69,17 +74,20 @@ object FormProps {
     formData: T = null,
     id: String = null,
     idPrefix: String = null,
+    liveOmit: js.UndefOr[Boolean] = js.undefined,
     liveValidate: js.UndefOr[Boolean] = js.undefined,
     method: String = null,
     name: String = null,
     noHtml5Validate: js.UndefOr[Boolean] = js.undefined,
     noValidate: js.UndefOr[Boolean] = js.undefined,
+    omitExtraData: js.UndefOr[Boolean] = js.undefined,
     onBlur: (/* id */ String, /* value */ Boolean | Double | String | Null) => Unit = null,
     onChange: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => _ = null,
     onError: /* e */ js.Any => _ = null,
     onSubmit: /* e */ ISubmitEvent[T] => _ = null,
     safeRenderCompletion: js.UndefOr[Boolean] = js.undefined,
     showErrorList: js.UndefOr[Boolean] = js.undefined,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
     target: String = null,
     transformErrors: /* errors */ js.Array[AjvError] => js.Array[AjvError] = null,
     uiSchema: UiSchema = null,
@@ -104,17 +112,20 @@ object FormProps {
     if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(liveOmit)) __obj.updateDynamic("liveOmit")(liveOmit.asInstanceOf[js.Any])
     if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(noHtml5Validate)) __obj.updateDynamic("noHtml5Validate")(noHtml5Validate.asInstanceOf[js.Any])
     if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitExtraData)) __obj.updateDynamic("omitExtraData")(omitExtraData.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (!js.isUndefined(safeRenderCompletion)) __obj.updateDynamic("safeRenderCompletion")(safeRenderCompletion.asInstanceOf[js.Any])
     if (!js.isUndefined(showErrorList)) __obj.updateDynamic("showErrorList")(showErrorList.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (transformErrors != null) __obj.updateDynamic("transformErrors")(js.Any.fromFunction1(transformErrors))
     if (uiSchema != null) __obj.updateDynamic("uiSchema")(uiSchema.asInstanceOf[js.Any])

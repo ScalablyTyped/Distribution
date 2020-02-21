@@ -1,5 +1,6 @@
 package typings.reactIntl
 
+import typings.formatjsIntlDisplaynames.libMod.DisplayNamesOptions
 import typings.formatjsIntlListformat.mod.IntlListFormatOptions
 import typings.formatjsIntlUnifiedNumberformat.mod.UnifiedNumberFormatOptions
 import typings.react.mod.ComponentType
@@ -72,6 +73,7 @@ object libMod extends js.Object {
   
   val FormattedDate: FC[DateTimeFormatOptions with CustomFormatConfig with AnonValue] = js.native
   val FormattedDateParts: FC[DateTimeFormatOptions with CustomFormatConfig with AnonChildren] = js.native
+  val FormattedDisplayName: FC[DisplayNamesOptions with AnonValueNumberObject] = js.native
   val FormattedList: FC[IntlListFormatOptions with AnonValueArray] = js.native
   val FormattedNumber: FC[UnifiedNumberFormatOptions with CustomFormatConfig with AnonValueNumber] = js.native
   val FormattedNumberParts: FC[FormatNumberOptions with Anon0] = js.native

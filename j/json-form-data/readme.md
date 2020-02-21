@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-form-data
 
-Typings are for version 1.5
+Typings are for version 1.7
 
 ## Library description:
 A library to convert javascript objects into form data.

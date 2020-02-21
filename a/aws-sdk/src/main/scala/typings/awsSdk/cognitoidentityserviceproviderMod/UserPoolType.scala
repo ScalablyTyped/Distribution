@@ -123,6 +123,10 @@ trait UserPoolType extends js.Object {
     */
   var UsernameAttributes: js.UndefOr[UsernameAttributesListType] = js.native
   /**
+    * You can choose to enable case sensitivity on the username input for the selected sign-in option. For example, when this is set to False, users will be able to sign in using either "username" or "Username". This configuration is immutable once it has been set. For more information, see .
+    */
+  var UsernameConfiguration: js.UndefOr[UsernameConfigurationType] = js.native
+  /**
     * The template for verification messages.
     */
   var VerificationMessageTemplate: js.UndefOr[VerificationMessageTemplateType] = js.native
@@ -160,6 +164,7 @@ object UserPoolType {
     UserPoolAddOns: UserPoolAddOnsType = null,
     UserPoolTags: UserPoolTagsType = null,
     UsernameAttributes: UsernameAttributesListType = null,
+    UsernameConfiguration: UsernameConfigurationType = null,
     VerificationMessageTemplate: VerificationMessageTemplateType = null
   ): UserPoolType = {
     val __obj = js.Dynamic.literal()
@@ -192,6 +197,7 @@ object UserPoolType {
     if (UserPoolAddOns != null) __obj.updateDynamic("UserPoolAddOns")(UserPoolAddOns.asInstanceOf[js.Any])
     if (UserPoolTags != null) __obj.updateDynamic("UserPoolTags")(UserPoolTags.asInstanceOf[js.Any])
     if (UsernameAttributes != null) __obj.updateDynamic("UsernameAttributes")(UsernameAttributes.asInstanceOf[js.Any])
+    if (UsernameConfiguration != null) __obj.updateDynamic("UsernameConfiguration")(UsernameConfiguration.asInstanceOf[js.Any])
     if (VerificationMessageTemplate != null) __obj.updateDynamic("VerificationMessageTemplate")(VerificationMessageTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolType]
   }

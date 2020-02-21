@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-alice-carousel" : "1.17.2"
+      "react-alice-carousel" : "1.17.3"
     }
   ],
   "test-dependencies" : [
     {
-      "react-alice-carousel" : "1.17.2"
+      "react-alice-carousel" : "1.17.3"
     }
   ],
   "compile-devDependencies" : [

@@ -7,7 +7,10 @@ import typings.elasticElasticsearch.requestParamsMod.SlmExecuteLifecycle
 import typings.elasticElasticsearch.requestParamsMod.SlmExecuteRetention
 import typings.elasticElasticsearch.requestParamsMod.SlmGetLifecycle
 import typings.elasticElasticsearch.requestParamsMod.SlmGetStats
+import typings.elasticElasticsearch.requestParamsMod.SlmGetStatus
 import typings.elasticElasticsearch.requestParamsMod.SlmPutLifecycle
+import typings.elasticElasticsearch.requestParamsMod.SlmStart
+import typings.elasticElasticsearch.requestParamsMod.SlmStop
 import typings.elasticElasticsearch.transportMod.ApiResponse
 import typings.elasticElasticsearch.transportMod.TransportRequestCallback
 import typings.elasticElasticsearch.transportMod.TransportRequestOptions
@@ -33,14 +36,22 @@ trait AnonDeleteLifecycleDeletelifecycle extends js.Object {
   var getLifecycle_Original: ApiMethod[SlmGetLifecycle, _] = js.native
   @JSName("getStats")
   var getStats_Original: ApiMethod[SlmGetStats, _] = js.native
+  @JSName("getStatus")
+  var getStatus_Original: ApiMethod[SlmGetStatus, _] = js.native
   @JSName("get_lifecycle")
   var get_lifecycle_Original: ApiMethod[SlmGetLifecycle, _] = js.native
   @JSName("get_stats")
   var get_stats_Original: ApiMethod[SlmGetStats, _] = js.native
+  @JSName("get_status")
+  var get_status_Original: ApiMethod[SlmGetStatus, _] = js.native
   @JSName("putLifecycle")
   var putLifecycle_Original: ApiMethod[SlmPutLifecycle[_], _] = js.native
   @JSName("put_lifecycle")
   var put_lifecycle_Original: ApiMethod[SlmPutLifecycle[_], _] = js.native
+  @JSName("start")
+  var start_Original: ApiMethod[SlmStart, _] = js.native
+  @JSName("stop")
+  var stop_Original: ApiMethod[SlmStop, _] = js.native
   // Promise API
   def deleteLifecycle(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
@@ -106,6 +117,14 @@ trait AnonDeleteLifecycleDeletelifecycle extends js.Object {
   def getStats(params: SlmGetStats, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def getStats(params: SlmGetStats, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def getStatus(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def getStatus(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getStatus(params: SlmGetStatus): js.Promise[ApiResponse[_, _]] = js.native
+  def getStatus(params: SlmGetStatus, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def getStatus(params: SlmGetStatus, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def getStatus(params: SlmGetStatus, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def get_lifecycle(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def get_lifecycle(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -122,6 +141,14 @@ trait AnonDeleteLifecycleDeletelifecycle extends js.Object {
   def get_stats(params: SlmGetStats, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def get_stats(params: SlmGetStats, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
   // Promise API
+  def get_status(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def get_status(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_status(params: SlmGetStatus): js.Promise[ApiResponse[_, _]] = js.native
+  def get_status(params: SlmGetStatus, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def get_status(params: SlmGetStatus, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def get_status(params: SlmGetStatus, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
   def putLifecycle(): js.Promise[ApiResponse[_, _]] = js.native
   // Callback API
   def putLifecycle(callback: callbackFn[_]): TransportRequestCallback = js.native
@@ -137,5 +164,21 @@ trait AnonDeleteLifecycleDeletelifecycle extends js.Object {
   def put_lifecycle(params: SlmPutLifecycle[_], callback: callbackFn[_]): TransportRequestCallback = js.native
   def put_lifecycle(params: SlmPutLifecycle[_], options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def put_lifecycle(params: SlmPutLifecycle[_], options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def start(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def start(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def start(params: SlmStart): js.Promise[ApiResponse[_, _]] = js.native
+  def start(params: SlmStart, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def start(params: SlmStart, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def start(params: SlmStart, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
+  // Promise API
+  def stop(): js.Promise[ApiResponse[_, _]] = js.native
+  // Callback API
+  def stop(callback: callbackFn[_]): TransportRequestCallback = js.native
+  def stop(params: SlmStop): js.Promise[ApiResponse[_, _]] = js.native
+  def stop(params: SlmStop, callback: callbackFn[_]): TransportRequestCallback = js.native
+  def stop(params: SlmStop, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def stop(params: SlmStop, options: TransportRequestOptions, callback: callbackFn[_]): TransportRequestCallback = js.native
 }
 

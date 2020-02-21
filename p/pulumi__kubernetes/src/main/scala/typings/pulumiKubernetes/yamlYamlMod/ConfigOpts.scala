@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ConfigOpts extends js.Object {
   /** JavaScript objects representing Kubernetes resources. */
-  var objs: js.Array[_]
+  var objs: js.Promise[js.Array[_]]
   /**
     * An optional prefix for the auto-generated resource names.
     * Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".
@@ -41,7 +41,7 @@ trait ConfigOpts extends js.Object {
 object ConfigOpts {
   @scala.inline
   def apply(
-    objs: js.Array[_],
+    objs: js.Promise[js.Array[_]],
     resourcePrefix: String = null,
     transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]] = null
   ): ConfigOpts = {

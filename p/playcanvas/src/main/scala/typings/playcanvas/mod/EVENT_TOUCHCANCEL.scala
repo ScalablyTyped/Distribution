@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_TOUCHCANCEL
   * @description Name of event fired when a touch point is interrupted in some way.
   * The exact reasons for cancelling a touch can vary from device to device.

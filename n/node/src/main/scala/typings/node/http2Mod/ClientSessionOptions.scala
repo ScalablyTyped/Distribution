@@ -1,5 +1,7 @@
 package typings.node.http2Mod
 
+import typings.node.nodeStrings.httpColon
+import typings.node.nodeStrings.httpsColon
 import typings.node.streamMod.Duplex
 import typings.node.urlMod.URL_
 import scala.scalajs.js
@@ -10,6 +12,7 @@ trait ClientSessionOptions extends SessionOptions {
   @JSName("createConnection")
   var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ SessionOptions, Duplex]] = js.undefined
   var maxReservedRemoteStreams: js.UndefOr[Double] = js.undefined
+  var protocol: js.UndefOr[httpColon | httpsColon] = js.undefined
 }
 
 object ClientSessionOptions {
@@ -24,6 +27,7 @@ object ClientSessionOptions {
     maxSessionMemory: Int | Double = null,
     paddingStrategy: Int | Double = null,
     peerMaxConcurrentStreams: Int | Double = null,
+    protocol: httpColon | httpsColon = null,
     selectPadding: (/* frameLen */ Double, /* maxFrameLen */ Double) => Double = null,
     settings: Settings = null
   ): ClientSessionOptions = {
@@ -37,6 +41,7 @@ object ClientSessionOptions {
     if (maxSessionMemory != null) __obj.updateDynamic("maxSessionMemory")(maxSessionMemory.asInstanceOf[js.Any])
     if (paddingStrategy != null) __obj.updateDynamic("paddingStrategy")(paddingStrategy.asInstanceOf[js.Any])
     if (peerMaxConcurrentStreams != null) __obj.updateDynamic("peerMaxConcurrentStreams")(peerMaxConcurrentStreams.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (selectPadding != null) __obj.updateDynamic("selectPadding")(js.Any.fromFunction2(selectPadding))
     if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientSessionOptions]

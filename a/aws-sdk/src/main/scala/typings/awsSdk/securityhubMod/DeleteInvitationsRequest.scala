@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeleteInvitationsRequest extends js.Object {
   /**
-    * A list of the account IDs that sent the invitations to delete.
+    * The list of the account IDs that sent the invitations to delete.
     */
   var AccountIds: AccountIdList = js.native
 }

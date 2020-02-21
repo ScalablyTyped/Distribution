@@ -20,9 +20,9 @@ trait Fields extends js.Object {
   def asArray(): js.Array[Field]
   def build(): js.Array[_]
   def forIds(ids: js.Array[String]): Fields
-  def getDefaultDimension(): Field
-  def getDefaultMetric(): Field
-  def getFieldById(fieldId: String): Field
+  def getDefaultDimension(): Field | Null
+  def getDefaultMetric(): Field | Null
+  def getFieldById(fieldId: String): Field | Null
   def newDimension(): Field
   def newMetric(): Field
   def setDefaultDimension(fieldId: String): Unit
@@ -35,9 +35,9 @@ object Fields {
     asArray: () => js.Array[Field],
     build: () => js.Array[_],
     forIds: js.Array[String] => Fields,
-    getDefaultDimension: () => Field,
-    getDefaultMetric: () => Field,
-    getFieldById: String => Field,
+    getDefaultDimension: () => Field | Null,
+    getDefaultMetric: () => Field | Null,
+    getFieldById: String => Field | Null,
     newDimension: () => Field,
     newMetric: () => Field,
     setDefaultDimension: String => Unit,

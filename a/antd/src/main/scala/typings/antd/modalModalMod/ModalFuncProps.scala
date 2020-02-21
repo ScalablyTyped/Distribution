@@ -3,8 +3,8 @@ package typings.antd.modalModalMod
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdStrings.cancel
 import typings.antd.antdStrings.ok
+import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.ButtonType
-import typings.antd.buttonButtonMod.NativeButtonProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 trait ModalFuncProps extends js.Object {
   var autoFocusButton: js.UndefOr[Null | ok | cancel] = js.undefined
-  var cancelButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
+  var cancelButtonProps: js.UndefOr[ButtonProps] = js.undefined
   var cancelText: js.UndefOr[ReactNode] = js.undefined
   var centered: js.UndefOr[Boolean] = js.undefined
   var className: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ trait ModalFuncProps extends js.Object {
   var maskClosable: js.UndefOr[Boolean] = js.undefined
   var maskStyle: js.UndefOr[CSSProperties] = js.undefined
   var maskTransitionName: js.UndefOr[String] = js.undefined
-  var okButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
+  var okButtonProps: js.UndefOr[ButtonProps] = js.undefined
   var okCancel: js.UndefOr[Boolean] = js.undefined
   var okText: js.UndefOr[ReactNode] = js.undefined
   var okType: js.UndefOr[ButtonType] = js.undefined
@@ -48,7 +48,7 @@ object ModalFuncProps {
   @scala.inline
   def apply(
     autoFocusButton: ok | cancel = null,
-    cancelButtonProps: NativeButtonProps = null,
+    cancelButtonProps: ButtonProps = null,
     cancelText: ReactNode = null,
     centered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -62,7 +62,7 @@ object ModalFuncProps {
     maskClosable: js.UndefOr[Boolean] = js.undefined,
     maskStyle: CSSProperties = null,
     maskTransitionName: String = null,
-    okButtonProps: NativeButtonProps = null,
+    okButtonProps: ButtonProps = null,
     okCancel: js.UndefOr[Boolean] = js.undefined,
     okText: ReactNode = null,
     okType: ButtonType = null,

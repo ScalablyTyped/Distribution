@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.Frustum
   * @classdesc A frustum is a shape that defines the viewing space of a camera.
   * @description Creates a new frustum shape.
@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   * var projectionMatrix = entity.camera.projectionMatrix;
   * var viewMatrix = entity.camera.viewMatrix;
   * var frustum = new pc.Frustum(projectionMatrix, viewMatrix);
-  * @param {pc.Mat4} projectionMatrix The projection matrix describing the shape of the frustum.
-  * @param {pc.Mat4} viewMatrix The inverse of the world transformation matrix for the frustum.
+  * @param {pc.Mat4} projectionMatrix - The projection matrix describing the shape of the frustum.
+  * @param {pc.Mat4} viewMatrix - The inverse of the world transformation matrix for the frustum.
   */
 @JSImport("playcanvas", "Frustum")
 @js.native

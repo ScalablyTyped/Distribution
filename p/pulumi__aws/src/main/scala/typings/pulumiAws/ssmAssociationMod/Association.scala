@@ -34,6 +34,10 @@ class Association protected () extends CustomResource {
     */
   val associationName: Output_[js.UndefOr[String]] = js.native
   /**
+    * Specify the target for the association. This target is required for associations that use an `Automation` document and target resources by using rate controls.
+    */
+  val automationTargetParameterName: Output_[js.UndefOr[String]] = js.native
+  /**
     * The compliance severity for the association. Can be one of the following: `UNSPECIFIED`, `LOW`, `MEDIUM`, `HIGH` or `CRITICAL`
     */
   val complianceSeverity: Output_[js.UndefOr[String]] = js.native

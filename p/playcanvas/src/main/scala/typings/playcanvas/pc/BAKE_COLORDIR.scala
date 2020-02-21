@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.BAKE_COLORDIR
+  * @type {number}
   * @description Single color lightmap + dominant light direction (used for bump/specular).
   */
 @JSGlobal("pc.BAKE_COLORDIR")

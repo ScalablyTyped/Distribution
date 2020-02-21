@@ -1,7 +1,17 @@
 package typings.domMediacaptureRecord
 
+import typings.domMediacaptureRecord.domMediacaptureRecordStrings.dataavailable
+import typings.domMediacaptureRecord.domMediacaptureRecordStrings.error
+import typings.domMediacaptureRecord.domMediacaptureRecordStrings.pause
+import typings.domMediacaptureRecord.domMediacaptureRecordStrings.resume
+import typings.domMediacaptureRecord.domMediacaptureRecordStrings.start
+import typings.domMediacaptureRecord.domMediacaptureRecordStrings.stop
+import typings.std.AddEventListenerOptions
+import typings.std.AudioTrackList
 import typings.std.EventListener
+import typings.std.EventListenerOptions
 import typings.std.EventTarget
+import typings.std.Event_
 import typings.std.MediaStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -23,7 +33,187 @@ class MediaRecorder protected () extends EventTarget {
   val state: RecordingState = js.native
   val stream: MediaStream = js.native
   val videoBitsPerSecond: Double = js.native
+  @JSName("addEventListener")
+  def addEventListener_dataavailable(
+    `type`: dataavailable,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ BlobEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dataavailable(
+    `type`: dataavailable,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ BlobEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_dataavailable(
+    `type`: dataavailable,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ BlobEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ MediaRecorderErrorEvent, _]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ MediaRecorderErrorEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ MediaRecorderErrorEvent, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_resume(`type`: resume, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_resume(
+    `type`: resume,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_resume(
+    `type`: resume,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_start(
+    `type`: start,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_start(
+    `type`: start,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_stop(`type`: stop, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_stop(
+    `type`: stop,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_stop(
+    `type`: stop,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: AddEventListenerOptions
+  ): Unit = js.native
   def pause(): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dataavailable(
+    `type`: dataavailable,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ BlobEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dataavailable(
+    `type`: dataavailable,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ BlobEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_dataavailable(
+    `type`: dataavailable,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ BlobEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ MediaRecorderErrorEvent, _]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ MediaRecorderErrorEvent, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ MediaRecorderErrorEvent, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pause(`type`: pause, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pause(
+    `type`: pause,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resume(`type`: resume, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resume(
+    `type`: resume,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_resume(
+    `type`: resume,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_start(
+    `type`: start,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_start(
+    `type`: start,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_stop(`type`: stop, listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_stop(
+    `type`: stop,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_stop(
+    `type`: stop,
+    listener: js.ThisFunction1[/* this */ AudioTrackList, /* ev */ Event_, _],
+    options: EventListenerOptions
+  ): Unit = js.native
   def requestData(): Unit = js.native
   def resume(): Unit = js.native
   def start(): Unit = js.native

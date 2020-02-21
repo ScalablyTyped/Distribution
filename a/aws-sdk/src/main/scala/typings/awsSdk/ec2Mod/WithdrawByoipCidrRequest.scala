@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WithdrawByoipCidrRequest extends js.Object {
   /**
-    * The public IPv4 address range, in CIDR notation.
+    * The address range, in CIDR notation.
     */
   var Cidr: String = js.native
   /**

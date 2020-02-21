@@ -45,6 +45,10 @@ trait CreateTaskSetRequest extends js.Object {
     */
   var serviceRegistries: js.UndefOr[ServiceRegistries] = js.native
   /**
+    * The metadata that you apply to the task set to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. When a service is deleted, the tags are deleted as well. The following basic restrictions apply to tags:   Maximum number of tags per resource - 50   For each resource, each tag key must be unique, and each tag key can have only one value.   Maximum key length - 128 Unicode characters in UTF-8   Maximum value length - 256 Unicode characters in UTF-8   If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.   Tag keys and values are case-sensitive.   Do not use aws:, AWS:, or any upper or lowercase combination of such as a prefix for either keys or values as it is reserved for AWS use. You cannot edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags per resource limit.  
+    */
+  var tags: js.UndefOr[Tags] = js.native
+  /**
     * The task definition for the tasks in the task set to use.
     */
   var taskDefinition: String = js.native
@@ -64,7 +68,8 @@ object CreateTaskSetRequest {
     networkConfiguration: NetworkConfiguration = null,
     platformVersion: String = null,
     scale: Scale = null,
-    serviceRegistries: ServiceRegistries = null
+    serviceRegistries: ServiceRegistries = null,
+    tags: Tags = null
   ): CreateTaskSetRequest = {
     val __obj = js.Dynamic.literal(cluster = cluster.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], taskDefinition = taskDefinition.asInstanceOf[js.Any])
     if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
@@ -76,6 +81,7 @@ object CreateTaskSetRequest {
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (serviceRegistries != null) __obj.updateDynamic("serviceRegistries")(serviceRegistries.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTaskSetRequest]
   }
 }

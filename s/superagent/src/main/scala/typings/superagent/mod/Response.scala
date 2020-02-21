@@ -2,6 +2,7 @@ package typings.superagent.mod
 
 import typings.node.NodeJS.ReadableStream
 import typings.std.XMLHttpRequest
+import typings.superagent.superagentBooleans.`false`
 import typings.superagent.superagentStrings.`Set-Cookie`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait Response extends ReadableStream {
   var body: js.Any = js.native
   var charset: String = js.native
   var clientError: Boolean = js.native
-  var error: ResponseError = js.native
+  var error: `false` | HTTPError = js.native
   var files: js.Any = js.native
   var forbidden: Boolean = js.native
   var header: js.Any = js.native

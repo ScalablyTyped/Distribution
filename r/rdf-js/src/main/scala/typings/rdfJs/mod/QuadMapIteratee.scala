@@ -10,12 +10,12 @@ trait QuadMapIteratee[Q /* <: BaseQuad */] extends js.Object {
     *
     * The returned quad can be the given quad or a new one.
     */
-  def map(quad: Q, dataset: Dataset[Q]): Q
+  def map(quad: Q, dataset: Dataset[Q, Q]): Q
 }
 
 object QuadMapIteratee {
   @scala.inline
-  def apply[Q /* <: BaseQuad */](map: (Q, Dataset[Q]) => Q): QuadMapIteratee[Q] = {
+  def apply[Q /* <: BaseQuad */](map: (Q, Dataset[Q, Q]) => Q): QuadMapIteratee[Q] = {
     val __obj = js.Dynamic.literal(map = js.Any.fromFunction2(map))
   
     __obj.asInstanceOf[QuadMapIteratee[Q]]

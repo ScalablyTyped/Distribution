@@ -1,5 +1,6 @@
 package typings.anyproxy
 
+import typings.anyproxy.mod.NetworkType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,10 +10,10 @@ object anyproxyStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait http extends js.Object
+  sealed trait http extends NetworkType
   
   @js.native
-  sealed trait https extends js.Object
+  sealed trait https extends NetworkType
   
   @js.native
   sealed trait ready extends js.Object

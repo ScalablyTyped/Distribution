@@ -37,6 +37,7 @@ class Table protected () extends AbstractComponent2[ITableProps, ITableState, IT
     */
   var getNormalizedRenderMode: js.Any = js.native
   var grid: Grid = js.native
+  var gridDimensionsMatchProps: js.Any = js.native
   var handleBodyScroll: js.Any = js.native
   var handleColumnResizeGuide: js.Any = js.native
   var handleColumnWidthChanged: js.Any = js.native

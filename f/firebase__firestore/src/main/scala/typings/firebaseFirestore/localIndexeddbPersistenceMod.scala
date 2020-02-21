@@ -23,7 +23,6 @@ import typings.firebaseFirestore.localSimpleDbMod.SimpleDbTransaction
 import typings.firebaseFirestore.localTargetCacheMod.TargetCache
 import typings.firebaseFirestore.localTargetDataMod.TargetData
 import typings.firebaseFirestore.modelDocumentKeyMod.DocumentKey
-import typings.firebaseFirestore.utilErrorMod.FirestoreError
 import typings.std.IDBValidKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -350,7 +349,6 @@ object localIndexeddbPersistenceMod extends js.Object {
     val simpleDbTransaction: SimpleDbTransaction = js.native
   }
   
-  def ignoreIfPrimaryLeaseLoss(err: FirestoreError): js.Promise[Unit] = js.native
   /* static members */
   @js.native
   object IndexedDbPersistence extends js.Object {

@@ -16,6 +16,9 @@ object slonikStrings {
   sealed trait DELETE extends js.Object
   
   @js.native
+  sealed trait DISABLE_TIMEOUT extends js.Object
+  
+  @js.native
   sealed trait EXPLICIT extends ConnectionTypeType
   
   @js.native
@@ -91,6 +94,8 @@ object slonikStrings {
   def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
+  def DISABLE_TIMEOUT: DISABLE_TIMEOUT = "DISABLE_TIMEOUT".asInstanceOf[DISABLE_TIMEOUT]
   @scala.inline
   def EXPLICIT: EXPLICIT = "EXPLICIT".asInstanceOf[EXPLICIT]
   @scala.inline

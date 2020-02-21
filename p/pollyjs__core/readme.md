@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__core
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Record, replay, and stub HTTP Interactions

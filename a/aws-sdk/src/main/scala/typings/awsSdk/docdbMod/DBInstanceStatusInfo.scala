@@ -15,7 +15,7 @@ trait DBInstanceStatusInfo extends js.Object {
     */
   var Normal: js.UndefOr[Boolean] = js.native
   /**
-    * Status of the DB instance. For a StatusType of read replica, the values can be replicating, error, stopped, or terminated.
+    * Status of the instance. For a StatusType of read replica, the values can be replicating, error, stopped, or terminated.
     */
   var Status: js.UndefOr[String] = js.native
   /**

@@ -15,6 +15,7 @@ import typings.instagramPrivateApi.mediaConfigureStoryOptionsMod.StoryQuiz
 import typings.instagramPrivateApi.mediaConfigureStoryOptionsMod.StorySlider
 import typings.instagramPrivateApi.postingOptionsMod.PostingStoryLocationSticker
 import typings.instagramPrivateApi.postingOptionsMod.PostingStoryOptions
+import typings.instagramPrivateApi.stickerBuilderMod.StickerBuilder
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,7 +46,7 @@ object PostingStoryVideoOptions {
     recipientUsers: js.Array[String] = null,
     replyType: story | String = null,
     slider: StorySlider = null,
-    stickerConfig: js.Any with AnonStorystickerids = null,
+    stickerConfig: (js.Any with AnonStorystickerids) | StickerBuilder = null,
     threadIds: js.Array[String] = null,
     toBesties: js.UndefOr[Boolean] = js.undefined,
     transcodeDelay: Int | Double = null,

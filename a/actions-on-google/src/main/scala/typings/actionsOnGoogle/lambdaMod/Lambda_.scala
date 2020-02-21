@@ -16,7 +16,7 @@ class Lambda_ () extends Framework[LambdaHandler] {
   /** @public */
   /* CompleteClass */
   override def handle(base: StandardHandler): LambdaHandler = js.native
-  def isCallback(third: js.Object): /* is aws-lambda.aws-lambda.Callback<any> */ Boolean = js.native
-  def isContext(second: js.Object): /* is aws-lambda.aws-lambda.Context */ Boolean = js.native
+  def isCallback(third: js.Object): /* is aws-lambda.aws-lambda/hander.Callback<any> */ Boolean = js.native
+  def isContext(second: js.Object): /* is aws-lambda.aws-lambda/hander.Context */ Boolean = js.native
 }
 

@@ -62,7 +62,7 @@ class DeploymentGroup protected () extends CustomResource {
   /**
     * Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
     */
-  val deploymentStyle: Output_[DeploymentGroupDeploymentStyle] = js.native
+  val deploymentStyle: Output_[js.UndefOr[DeploymentGroupDeploymentStyle]] = js.native
   /**
     * Tag filters associated with the deployment group. See the AWS docs for details.
     */
@@ -78,7 +78,7 @@ class DeploymentGroup protected () extends CustomResource {
   /**
     * Single configuration block of the load balancer to use in a blue/green deployment (documented below).
     */
-  val loadBalancerInfo: Output_[DeploymentGroupLoadBalancerInfo] = js.native
+  val loadBalancerInfo: Output_[js.UndefOr[DeploymentGroupLoadBalancerInfo]] = js.native
   /**
     * On premise tag filters associated with the group. See the AWS docs for details.
     */

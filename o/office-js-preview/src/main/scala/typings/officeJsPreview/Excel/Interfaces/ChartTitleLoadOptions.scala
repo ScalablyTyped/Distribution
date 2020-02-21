@@ -75,7 +75,7 @@ trait ChartTitleLoadOptions extends js.Object {
   var text: js.UndefOr[Boolean] = js.native
   /**
     *
-    * Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+    * Represents the angle to which the text is oriented for the chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
     *
     * [Api set: ExcelApi 1.7]
     */

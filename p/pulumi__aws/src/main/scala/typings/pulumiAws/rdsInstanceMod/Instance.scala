@@ -96,6 +96,10 @@ class Instance protected () extends CustomResource {
     */
   val dbSubnetGroupName: Output_[String] = js.native
   /**
+    * Specifies whether to remove automated backups immediately after the DB instance is deleted. Default is `true`.
+    */
+  val deleteAutomatedBackups: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
     */
   val deletionProtection: Output_[js.UndefOr[Boolean]] = js.native
@@ -108,7 +112,7 @@ class Instance protected () extends CustomResource {
     */
   val domainIamRoleName: Output_[js.UndefOr[String]] = js.native
   /**
-    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`): `alert`, `audit`, `error`, `general`, `listener`, `slowquery`, `trace`, `postgresql` (PostgreSQL), `upgrade` (PostgreSQL).
+    * List of log types to enable for exporting to CloudWatch logs. If omitted, no logs will be exported. Valid values (depending on `engine`): `agent` (MSSQL), `alert`, `audit`, `error`, `general`, `listener`, `slowquery`, `trace`, `postgresql` (PostgreSQL), `upgrade` (PostgreSQL).
     */
   val enabledCloudwatchLogsExports: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**

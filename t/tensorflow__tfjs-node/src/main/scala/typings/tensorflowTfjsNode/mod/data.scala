@@ -15,7 +15,7 @@ import typings.tensorflowTfjsData.typesMod.MicrophoneConfig
 import typings.tensorflowTfjsData.typesMod.WebcamConfig
 import typings.tensorflowTfjsData.webcamIteratorMod.WebcamIterator
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeNumbers.`10000`
-import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.`1Dot5Dot1`
+import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.`1Dot5Dot2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -109,7 +109,7 @@ object data extends js.Object {
   }
   
   @JSName("version_data")
-  val versionData: `1Dot5Dot1` = js.native
+  val versionData: `1Dot5Dot2` = js.native
   def array[T /* <: TensorContainer */](items: js.Array[T]): typings.tensorflowTfjsData.datasetMod.Dataset[T] = js.native
   def csv(source: RequestInfo): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native
   def csv(source: RequestInfo, csvConfig: CSVConfig): typings.tensorflowTfjsData.csvDatasetMod.CSVDataset = js.native

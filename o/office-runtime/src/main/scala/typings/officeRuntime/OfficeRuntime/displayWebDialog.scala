@@ -10,7 +10,7 @@ object displayWebDialog extends js.Object {
   /**
     * Method that enables a pop up web dialog box.
     *
-    * [Api set: CustomFunctionsRuntime 1.1]
+    * [Api set: SharedRuntime 1.1]
     *
     * @param url Must be a string.
     * @param options Optional parameter. Must be of type DisplayWebDialogOptions.

@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UnifiedNumberFormatInternal extends NumberFormatDigitInternalSlots {
-  var availableLocales: js.Array[String]
+  var boundFormat: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
   var compactDisplay: NonNullable[
     /* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl-unified-numberformat.@formatjs/intl-unified-numberformat.UnifiedNumberFormatOptions['compactDisplay'] */ js.Any
   ]
@@ -32,7 +32,6 @@ trait UnifiedNumberFormatInternal extends NumberFormatDigitInternalSlots {
   var numberingSystem: String
   var patterns: NumberLocalePatternData
   var pl: PluralRules
-  var relevantExtensionKeys: js.Array[String]
   var signDisplay: NonNullable[
     /* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl-unified-numberformat.@formatjs/intl-unified-numberformat.UnifiedNumberFormatOptions['signDisplay'] */ js.Any
   ]
@@ -49,7 +48,6 @@ trait UnifiedNumberFormatInternal extends NumberFormatDigitInternalSlots {
 object UnifiedNumberFormatInternal {
   @scala.inline
   def apply(
-    availableLocales: js.Array[String],
     compactDisplay: NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl-unified-numberformat.@formatjs/intl-unified-numberformat.UnifiedNumberFormatOptions['compactDisplay'] */ js.Any
     ],
@@ -69,7 +67,6 @@ object UnifiedNumberFormatInternal {
     numberingSystem: String,
     patterns: NumberLocalePatternData,
     pl: PluralRules,
-    relevantExtensionKeys: js.Array[String],
     roundingType: NumberFormatRoundingType,
     signDisplay: NonNullable[
       /* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl-unified-numberformat.@formatjs/intl-unified-numberformat.UnifiedNumberFormatOptions['signDisplay'] */ js.Any
@@ -81,6 +78,7 @@ object UnifiedNumberFormatInternal {
       /* import warning: importer.ImportType#apply Failed type conversion: @formatjs/intl-unified-numberformat.@formatjs/intl-unified-numberformat.UnifiedNumberFormatOptions['unitDisplay'] */ js.Any
     ],
     useGrouping: Boolean,
+    boundFormat: /* value */ Double => String = null,
     currency: String = null,
     maximumFractionDigits: Int | Double = null,
     maximumSignificantDigits: Int | Double = null,
@@ -88,7 +86,8 @@ object UnifiedNumberFormatInternal {
     minimumSignificantDigits: Int | Double = null,
     unit: String = null
   ): UnifiedNumberFormatInternal = {
-    val __obj = js.Dynamic.literal(availableLocales = availableLocales.asInstanceOf[js.Any], compactDisplay = compactDisplay.asInstanceOf[js.Any], currencyDisplay = currencyDisplay.asInstanceOf[js.Any], currencySign = currencySign.asInstanceOf[js.Any], dataLocale = dataLocale.asInstanceOf[js.Any], ild = ild.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], pl = pl.asInstanceOf[js.Any], relevantExtensionKeys = relevantExtensionKeys.asInstanceOf[js.Any], roundingType = roundingType.asInstanceOf[js.Any], signDisplay = signDisplay.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unitDisplay = unitDisplay.asInstanceOf[js.Any], useGrouping = useGrouping.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compactDisplay = compactDisplay.asInstanceOf[js.Any], currencyDisplay = currencyDisplay.asInstanceOf[js.Any], currencySign = currencySign.asInstanceOf[js.Any], dataLocale = dataLocale.asInstanceOf[js.Any], ild = ild.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minimumIntegerDigits = minimumIntegerDigits.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], pl = pl.asInstanceOf[js.Any], roundingType = roundingType.asInstanceOf[js.Any], signDisplay = signDisplay.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unitDisplay = unitDisplay.asInstanceOf[js.Any], useGrouping = useGrouping.asInstanceOf[js.Any])
+    if (boundFormat != null) __obj.updateDynamic("boundFormat")(js.Any.fromFunction1(boundFormat))
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (maximumFractionDigits != null) __obj.updateDynamic("maximumFractionDigits")(maximumFractionDigits.asInstanceOf[js.Any])
     if (maximumSignificantDigits != null) __obj.updateDynamic("maximumSignificantDigits")(maximumSignificantDigits.asInstanceOf[js.Any])

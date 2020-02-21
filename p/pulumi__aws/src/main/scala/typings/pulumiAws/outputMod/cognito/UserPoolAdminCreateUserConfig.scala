@@ -15,22 +15,21 @@ trait UserPoolAdminCreateUserConfig extends js.Object {
     */
   var inviteMessageTemplate: js.UndefOr[UserPoolAdminCreateUserConfigInviteMessageTemplate] = js.native
   /**
-    * The user account expiration limit, in days, after which the account is no longer usable.
+    * **DEPRECATED** Use password_policy.temporary_password_validity_days instead - The user account expiration limit, in days, after which the account is no longer usable.
     */
-  var unusedAccountValidityDays: js.UndefOr[Double] = js.native
+  var unusedAccountValidityDays: Double = js.native
 }
 
 object UserPoolAdminCreateUserConfig {
   @scala.inline
   def apply(
+    unusedAccountValidityDays: Double,
     allowAdminCreateUserOnly: js.UndefOr[Boolean] = js.undefined,
-    inviteMessageTemplate: UserPoolAdminCreateUserConfigInviteMessageTemplate = null,
-    unusedAccountValidityDays: Int | Double = null
+    inviteMessageTemplate: UserPoolAdminCreateUserConfigInviteMessageTemplate = null
   ): UserPoolAdminCreateUserConfig = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(unusedAccountValidityDays = unusedAccountValidityDays.asInstanceOf[js.Any])
     if (!js.isUndefined(allowAdminCreateUserOnly)) __obj.updateDynamic("allowAdminCreateUserOnly")(allowAdminCreateUserOnly.asInstanceOf[js.Any])
     if (inviteMessageTemplate != null) __obj.updateDynamic("inviteMessageTemplate")(inviteMessageTemplate.asInstanceOf[js.Any])
-    if (unusedAccountValidityDays != null) __obj.updateDynamic("unusedAccountValidityDays")(unusedAccountValidityDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolAdminCreateUserConfig]
   }
 }

@@ -1,6 +1,6 @@
 package typings.restify.mod.bunyan
 
-import typings.node.streamMod.internal
+import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("restify", "bunyan.RequestCaptureStream")
 @js.native
-class RequestCaptureStream protected () extends internal {
+class RequestCaptureStream protected () extends Stream {
   def this(opts: RequestCaptureOptions) = this()
   /** write to the stream */
   def write(record: js.Any): Unit = js.native

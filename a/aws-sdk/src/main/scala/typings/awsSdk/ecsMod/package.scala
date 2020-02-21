@@ -297,6 +297,8 @@ package object ecsMod {
   type TaskDefinitionStatus = typings.awsSdk.ecsMod._TaskDefinitionStatus | java.lang.String
   type TaskField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
   type TaskFieldList = js.Array[typings.awsSdk.ecsMod.TaskField]
+  type TaskSetField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
+  type TaskSetFieldList = js.Array[typings.awsSdk.ecsMod.TaskSetField]
   type TaskSets = js.Array[typings.awsSdk.ecsMod.TaskSet]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.TaskFailedToStart

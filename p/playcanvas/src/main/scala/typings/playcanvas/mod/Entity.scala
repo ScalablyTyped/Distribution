@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.Entity
-  * @extends pc.GraphNode
+  * @augments pc.GraphNode
   * @classdesc The Entity is the core primitive of a PlayCanvas game. Generally speaking an object in your game will consist of an {@link pc.Entity},
   * and a set of {@link pc.Component}s which are managed by their respective {@link pc.ComponentSystem}s. One of those components maybe a
   * {@link pc.ScriptComponent} which allows you to write custom code to attach to your Entity.
@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation._
   * The Component and ComponentSystem provide the logic to give an Entity a specific type of behavior. e.g. the ability to
   * render a model or play a sound. Components are specific to an instance of an Entity and are attached (e.g. `this.entity.model`)
   * ComponentSystems allow access to all Entities and Components and are attached to the {@link pc.Application}.
-  * @param {String} [name] The non-unique name of the entity, default is "Untitled".
-  * @param {pc.Application} [app] The application the entity belongs to, default is the current application.
+  * @param {string} [name] - The non-unique name of the entity, default is "Untitled".
+  * @param {pc.Application} [app] - The application the entity belongs to, default is the current application.
   * @property {pc.AnimationComponent} [animation] Gets the {@link pc.AnimationComponent} attached to this entity. [read only]
   * @property {pc.AudioListenerComponent} [audiolistener] Gets the {@link pc.AudioSourceComponent} attached to this entity. [read only]
   * @property {pc.ButtonComponent} [button] Gets the {@link pc.ButtonComponent} attached to this entity. [read only]
@@ -37,15 +37,13 @@ import scala.scalajs.js.annotation._
   * @property {pc.SoundComponent} [sound] Gets the {@link pc.SoundComponent} attached to this entity. [read only]
   * @property {pc.SpriteComponent} [sprite] Gets the {@link pc.SpriteComponent} attached to this entity. [read only]
   * @example
-  * var app = ... // Get the pc.Application
-  *
   * var entity = new pc.Entity();
   *
   * // Add a Component to the Entity
   * entity.addComponent("camera", {
-  *   fov: 45,
-  *   nearClip: 1,
-  *   farClip: 10000
+  *     fov: 45,
+  *     nearClip: 1,
+  *     farClip: 10000
   * });
   *
   * // Add the Entity into the scene graph

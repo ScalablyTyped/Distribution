@@ -777,10 +777,12 @@ Instantiable0[T]
   /**
     * Requires a replica set running MongoDB >= 3.6.0. Watches the underlying collection for changes using MongoDB change streams.
     * This function does not trigger any middleware. In particular, it does not trigger aggregate middleware.
-    * @param options See https://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#watch
+    * @param pipeline See http://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#watch
+    * @param options See https://mongodb.github.io/node-mongodb-native/3.3/api/Collection.html#watch
     */
   def watch(): ChangeStream = js.native
-  def watch(options: ChangeStreamOptions with AnonSession): ChangeStream = js.native
+  def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
+  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptions with AnonSession): ChangeStream = js.native
   /** Creates a Query, applies the passed conditions, and returns the Query. */
   def where(path: String): Query[_] with QueryHelpers = js.native
   def where(path: String, `val`: js.Any): Query[_] with QueryHelpers = js.native

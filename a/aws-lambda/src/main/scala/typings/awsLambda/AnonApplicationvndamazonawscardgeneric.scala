@@ -1,7 +1,7 @@
 package typings.awsLambda
 
 import typings.awsLambda.awsLambdaStrings.applicationSlashvndDotamazonawsDotcardDotgeneric
-import typings.awsLambda.mod.LexGenericAttachment
+import typings.awsLambda.lexMod.LexGenericAttachment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

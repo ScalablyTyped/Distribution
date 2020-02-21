@@ -11,7 +11,7 @@ trait ListDistributionConfigurationsResponse extends js.Object {
     */
   var distributionConfigurationSummaryList: js.UndefOr[DistributionConfigurationSummaryList] = js.native
   /**
-    *  The next token used for paginated responses. When this is not empty then there are additional elements that the service that not include in this request. Use this token with the next request to retrieve additional object. 
+    *  The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.native
   /**

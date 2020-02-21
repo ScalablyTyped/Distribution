@@ -1,33 +1,34 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.GitCreateBlobParams
-import typings.octokitRest.mod.GitCreateBlobResponse
-import typings.octokitRest.mod.GitCreateCommitParams
-import typings.octokitRest.mod.GitCreateCommitResponse
-import typings.octokitRest.mod.GitCreateRefParams
-import typings.octokitRest.mod.GitCreateRefResponse
-import typings.octokitRest.mod.GitCreateTagParams
-import typings.octokitRest.mod.GitCreateTagResponse
-import typings.octokitRest.mod.GitCreateTreeParams
-import typings.octokitRest.mod.GitCreateTreeResponse
-import typings.octokitRest.mod.GitDeleteRefParams
-import typings.octokitRest.mod.GitGetBlobParams
-import typings.octokitRest.mod.GitGetBlobResponse
-import typings.octokitRest.mod.GitGetCommitParams
-import typings.octokitRest.mod.GitGetCommitResponse
-import typings.octokitRest.mod.GitGetRefParams
-import typings.octokitRest.mod.GitGetRefResponse
-import typings.octokitRest.mod.GitGetTagParams
-import typings.octokitRest.mod.GitGetTagResponse
-import typings.octokitRest.mod.GitGetTreeParams
-import typings.octokitRest.mod.GitListMatchingRefsParams
-import typings.octokitRest.mod.GitListMatchingRefsResponse
-import typings.octokitRest.mod.GitListRefsParams
-import typings.octokitRest.mod.GitUpdateRefParams
-import typings.octokitRest.mod.GitUpdateRefResponse
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.GitCreateBlobParams
+import typings.octokitRest.mod.Octokit.GitCreateBlobResponse
+import typings.octokitRest.mod.Octokit.GitCreateCommitParams
+import typings.octokitRest.mod.Octokit.GitCreateCommitResponse
+import typings.octokitRest.mod.Octokit.GitCreateRefParams
+import typings.octokitRest.mod.Octokit.GitCreateRefResponse
+import typings.octokitRest.mod.Octokit.GitCreateTagParams
+import typings.octokitRest.mod.Octokit.GitCreateTagResponse
+import typings.octokitRest.mod.Octokit.GitCreateTreeParams
+import typings.octokitRest.mod.Octokit.GitCreateTreeResponse
+import typings.octokitRest.mod.Octokit.GitDeleteRefParams
+import typings.octokitRest.mod.Octokit.GitGetBlobParams
+import typings.octokitRest.mod.Octokit.GitGetBlobResponse
+import typings.octokitRest.mod.Octokit.GitGetCommitParams
+import typings.octokitRest.mod.Octokit.GitGetCommitResponse
+import typings.octokitRest.mod.Octokit.GitGetRefParams
+import typings.octokitRest.mod.Octokit.GitGetRefResponse
+import typings.octokitRest.mod.Octokit.GitGetTagParams
+import typings.octokitRest.mod.Octokit.GitGetTagResponse
+import typings.octokitRest.mod.Octokit.GitGetTreeParams
+import typings.octokitRest.mod.Octokit.GitGetTreeResponse
+import typings.octokitRest.mod.Octokit.GitListMatchingRefsParams
+import typings.octokitRest.mod.Octokit.GitListMatchingRefsResponse
+import typings.octokitRest.mod.Octokit.GitListRefsParams
+import typings.octokitRest.mod.Octokit.GitUpdateRefParams
+import typings.octokitRest.mod.Octokit.GitUpdateRefResponse
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -186,10 +187,12 @@ trait AnonCreateBlob extends js.Object {
   @JSName("getTag")
   var getTag_Original: AnonEndpointParamsGitGetTagParams = js.native
   /**
-    * If `truncated` is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
+    * Returns a single tree using the SHA1 value for that tree.
+    *
+    * If `truncated` is `true` in the response then the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
     */
   @JSName("getTree")
-  var getTree_Original: AnonEndpointParamsAnyResponseGitGetTreeParams = js.native
+  var getTree_Original: AnonEndpointParamsGitGetTreeParams = js.native
   /**
     * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
     *
@@ -360,10 +363,12 @@ trait AnonCreateBlob extends js.Object {
   def getTag(): js.Promise[Response[GitGetTagResponse]] = js.native
   def getTag(params: RequestOptions with GitGetTagParams): js.Promise[Response[GitGetTagResponse]] = js.native
   /**
-    * If `truncated` is `true`, the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
+    * Returns a single tree using the SHA1 value for that tree.
+    *
+    * If `truncated` is `true` in the response then the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
     */
-  def getTree(): js.Promise[AnyResponse] = js.native
-  def getTree(params: RequestOptions with GitGetTreeParams): js.Promise[AnyResponse] = js.native
+  def getTree(): js.Promise[Response[GitGetTreeResponse]] = js.native
+  def getTree(params: RequestOptions with GitGetTreeParams): js.Promise[Response[GitGetTreeResponse]] = js.native
   /**
     * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
     *

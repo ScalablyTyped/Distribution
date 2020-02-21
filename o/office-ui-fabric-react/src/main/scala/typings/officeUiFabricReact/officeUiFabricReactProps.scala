@@ -55,7 +55,7 @@ import typings.officeUiFabricReact.documentCardTypesMod.IDocumentCardProps
 import typings.officeUiFabricReact.draggableZoneTypesMod.IDraggableZoneProps
 import typings.officeUiFabricReact.dropdownBaseMod.IDropdownInternalProps
 import typings.officeUiFabricReact.dropdownTypesMod.IDropdownProps
-import typings.officeUiFabricReact.editingItemMod.IEditingSelectedPeopleItemProps
+import typings.officeUiFabricReact.editingItemTypesMod.IEditingSelectedPeopleItemProps
 import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
 import typings.officeUiFabricReact.extendedPeoplePickerMod.IExtendedPeoplePickerProps
 import typings.officeUiFabricReact.fabricTypesMod.IFabricProps
@@ -486,7 +486,7 @@ trait officeUiFabricReactProps {
   def DropdownBaseProps: IDropdownInternalProps.type = typings.officeUiFabricReact.dropdownBaseMod.IDropdownInternalProps
   type DropdownBaseProps = IDropdownInternalProps
   @scala.inline
-  def EditingItemProps: IEditingSelectedPeopleItemProps.type = typings.officeUiFabricReact.editingItemMod.IEditingSelectedPeopleItemProps
+  def EditingItemProps: IEditingSelectedPeopleItemProps.type = typings.officeUiFabricReact.editingItemTypesMod.IEditingSelectedPeopleItemProps
   type EditingItemProps = IEditingSelectedPeopleItemProps
   @scala.inline
   def ExpandingCardProps: IExpandingCardProps.type = typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps

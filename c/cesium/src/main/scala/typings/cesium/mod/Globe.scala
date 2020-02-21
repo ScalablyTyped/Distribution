@@ -14,6 +14,8 @@ class Globe () extends js.Object {
   var baseColor: Color = js.native
   var cartographicLimitRectangle: Rectangle = js.native
   var depthTestAgainstTerrain: Boolean = js.native
+  var dynamicAtmosphereLighting: Boolean = js.native
+  var dynamicAtmosphereLightingFromSun: Boolean = js.native
   var ellipsoid: Ellipsoid = js.native
   var enableLighting: Boolean = js.native
   var fillHighlightColor: Color = js.native
@@ -31,6 +33,7 @@ class Globe () extends js.Object {
   var preloadAncestors: Boolean = js.native
   var preloadSiblings: Boolean = js.native
   var show: Boolean = js.native
+  var showSkirts: Boolean = js.native
   var showWaterEffect: Boolean = js.native
   var southPoleColor: Cartesian3 = js.native
   var terrainProvider: TerrainProvider = js.native

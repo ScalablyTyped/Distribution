@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "firebase-admin" : "8.9.1"
+      "firebase-admin" : "8.9.2"
     }
   ],
   "test-dependencies" : [
     {
-      "firebase-admin" : "8.9.1"
+      "firebase-admin" : "8.9.2"
     }
   ],
   "compile-devDependencies" : [

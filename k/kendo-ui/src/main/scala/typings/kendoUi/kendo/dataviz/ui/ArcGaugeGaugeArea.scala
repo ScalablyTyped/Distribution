@@ -8,7 +8,7 @@ trait ArcGaugeGaugeArea extends js.Object {
   var background: js.UndefOr[String] = js.undefined
   var border: js.UndefOr[ArcGaugeGaugeAreaBorder] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[ArcGaugeGaugeAreaMargin] = js.undefined
+  var margin: js.UndefOr[Double | ArcGaugeGaugeAreaMargin] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object ArcGaugeGaugeArea {
     background: String = null,
     border: ArcGaugeGaugeAreaBorder = null,
     height: Int | Double = null,
-    margin: ArcGaugeGaugeAreaMargin = null,
+    margin: Double | ArcGaugeGaugeAreaMargin = null,
     width: Int | Double = null
   ): ArcGaugeGaugeArea = {
     val __obj = js.Dynamic.literal()

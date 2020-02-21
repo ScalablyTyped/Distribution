@@ -7,13 +7,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetSatelliteResponse extends js.Object {
   /**
-    * When a satellite was created.
+    * A list of ground stations to which the satellite is on-boarded.
     */
-  var dateCreated: js.UndefOr[Timestamp] = js.native
-  /**
-    * When a satellite was last updated.
-    */
-  var lastUpdated: js.UndefOr[Timestamp] = js.native
+  var groundStations: js.UndefOr[GroundStationIdList] = js.native
   /**
     * NORAD satellite ID number.
     */
@@ -26,29 +22,21 @@ trait GetSatelliteResponse extends js.Object {
     * UUID of a satellite.
     */
   var satelliteId: js.UndefOr[Uuid] = js.native
-  /**
-    * Tags assigned to a satellite.
-    */
-  var tags: js.UndefOr[TagsMap] = js.native
 }
 
 object GetSatelliteResponse {
   @scala.inline
   def apply(
-    dateCreated: Timestamp = null,
-    lastUpdated: Timestamp = null,
+    groundStations: GroundStationIdList = null,
     noradSatelliteID: Int | scala.Double = null,
     satelliteArn: satelliteArn = null,
-    satelliteId: Uuid = null,
-    tags: TagsMap = null
+    satelliteId: Uuid = null
   ): GetSatelliteResponse = {
     val __obj = js.Dynamic.literal()
-    if (dateCreated != null) __obj.updateDynamic("dateCreated")(dateCreated.asInstanceOf[js.Any])
-    if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated.asInstanceOf[js.Any])
+    if (groundStations != null) __obj.updateDynamic("groundStations")(groundStations.asInstanceOf[js.Any])
     if (noradSatelliteID != null) __obj.updateDynamic("noradSatelliteID")(noradSatelliteID.asInstanceOf[js.Any])
     if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn.asInstanceOf[js.Any])
     if (satelliteId != null) __obj.updateDynamic("satelliteId")(satelliteId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSatelliteResponse]
   }
 }

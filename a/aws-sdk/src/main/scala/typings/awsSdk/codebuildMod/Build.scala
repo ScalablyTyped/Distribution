@@ -51,6 +51,10 @@ trait Build extends js.Object {
     */
   var exportedEnvironmentVariables: js.UndefOr[ExportedEnvironmentVariables] = js.native
   /**
+    *  An array of ProjectFileSystemLocation objects for a CodeBuild build project. A ProjectFileSystemLocation object specifies the identifier, location, mountOptions, mountPoint, and type of a file system created using Amazon Elastic File System. 
+    */
+  var fileSystemLocations: js.UndefOr[ProjectFileSystemLocations] = js.native
+  /**
     * The unique ID for the build.
     */
   var id: js.UndefOr[NonEmptyString] = js.native
@@ -138,6 +142,7 @@ object Build {
     endTime: Timestamp = null,
     environment: ProjectEnvironment = null,
     exportedEnvironmentVariables: ExportedEnvironmentVariables = null,
+    fileSystemLocations: ProjectFileSystemLocations = null,
     id: NonEmptyString = null,
     initiator: String = null,
     logs: LogsLocation = null,
@@ -169,6 +174,7 @@ object Build {
     if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
     if (exportedEnvironmentVariables != null) __obj.updateDynamic("exportedEnvironmentVariables")(exportedEnvironmentVariables.asInstanceOf[js.Any])
+    if (fileSystemLocations != null) __obj.updateDynamic("fileSystemLocations")(fileSystemLocations.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (initiator != null) __obj.updateDynamic("initiator")(initiator.asInstanceOf[js.Any])
     if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])

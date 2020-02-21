@@ -29,6 +29,7 @@ package object datasyncMod {
   type Ec2SecurityGroupArnList = js.Array[typings.awsSdk.datasyncMod.Ec2SecurityGroupArn]
   type Ec2SubnetArn = java.lang.String
   type EfsFilesystemArn = java.lang.String
+  type EfsSubdirectory = java.lang.String
   type Endpoint = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PUBLIC
@@ -40,6 +41,8 @@ package object datasyncMod {
   type FilterList = js.Array[typings.awsSdk.datasyncMod.FilterRule]
   type FilterType = typings.awsSdk.awsSdkStrings.SIMPLE_PATTERN | java.lang.String
   type FilterValue = java.lang.String
+  type FsxFilesystemArn = java.lang.String
+  type FsxWindowsSubdirectory = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NONE
     - typings.awsSdk.awsSdkStrings.INT_VALUE
@@ -53,6 +56,13 @@ package object datasyncMod {
   type LocationList = js.Array[typings.awsSdk.datasyncMod.LocationListEntry]
   type LocationUri = java.lang.String
   type LogGroupArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.OFF
+    - typings.awsSdk.awsSdkStrings.BASIC
+    - typings.awsSdk.awsSdkStrings.TRANSFER
+    - java.lang.String
+  */
+  type LogLevel = typings.awsSdk.datasyncMod._LogLevel | java.lang.String
   type MaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NONE
@@ -62,6 +72,7 @@ package object datasyncMod {
   type Mtime = typings.awsSdk.datasyncMod._Mtime | java.lang.String
   type NetworkInterfaceArn = java.lang.String
   type NextToken = java.lang.String
+  type NfsSubdirectory = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AUTOMATIC
     - typings.awsSdk.awsSdkStrings.NFS3
@@ -70,7 +81,6 @@ package object datasyncMod {
     - java.lang.String
   */
   type NfsVersion = typings.awsSdk.datasyncMod._NfsVersion | java.lang.String
-  type NonEmptySubdirectory = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.ALWAYS
     - typings.awsSdk.awsSdkStrings.NEVER
@@ -115,10 +125,12 @@ package object datasyncMod {
     - java.lang.String
   */
   type S3StorageClass = typings.awsSdk.datasyncMod._S3StorageClass | java.lang.String
+  type S3Subdirectory = java.lang.String
   type ScheduleExpressionCron = java.lang.String
   type ServerHostname = java.lang.String
   type SmbDomain = java.lang.String
   type SmbPassword = java.lang.String
+  type SmbSubdirectory = java.lang.String
   type SmbUser = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.AUTOMATIC
@@ -128,7 +140,6 @@ package object datasyncMod {
   */
   type SmbVersion = typings.awsSdk.datasyncMod._SmbVersion | java.lang.String
   type SourceNetworkInterfaceArns = js.Array[typings.awsSdk.datasyncMod.NetworkInterfaceArn]
-  type Subdirectory = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[typings.awsSdk.datasyncMod.TagKey]
   type TagList = js.Array[typings.awsSdk.datasyncMod.TagListEntry]

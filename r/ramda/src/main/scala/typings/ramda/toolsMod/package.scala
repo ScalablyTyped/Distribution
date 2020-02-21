@@ -70,10 +70,10 @@ package object toolsMod {
     js.Function1[/* x */ V0, js.Any]
   ])
   type Dictionary[A] = org.scalablytyped.runtime.StringDictionary[A]
-  type Evolvable[E /* <: typings.ramda.toolsMod.Evolver */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type Evolvable[E /* <: typings.ramda.toolsMod.Evolver[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof E ]:? ramda.ramda/tools.Evolved<E[P]>}
     */ typings.ramda.ramdaStrings.Evolvable with E
-  type Evolve[O /* <: typings.ramda.toolsMod.Evolvable[E] */, E /* <: typings.ramda.toolsMod.Evolver */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type Evolve[O /* <: typings.ramda.toolsMod.Evolvable[E] */, E /* <: typings.ramda.toolsMod.Evolver[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof O ]: P extends keyof E? ramda.ramda/tools.EvolveValue<O[P], E[P]> : O[P]}
     */ typings.ramda.ramdaStrings.Evolve with js.Any
   /**
@@ -81,7 +81,7 @@ package object toolsMod {
     * @param O
     * @param E
     */
-  type EvolveNestedValue[O, E /* <: typings.ramda.toolsMod.Evolver */] = typings.ramda.toolsMod.Evolve[O, E]
+  type EvolveNestedValue[O, E /* <: typings.ramda.toolsMod.Evolver[_] */] = typings.ramda.toolsMod.Evolve[O, E]
   /**
     * <needs description>
     * @param V
@@ -93,6 +93,9 @@ package object toolsMod {
     * @param A
     */
   type Evolved[A] = typings.ramda.toolsMod.Evolvable[A]
+  type Evolver[T /* <: typings.ramda.toolsMod.Evolvable[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof std.Partial<T> ]: (value : T[key]): T[key] | T[key] extends ramda.ramda/tools.Evolvable<any>? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias ramda.ramda/tools.Evolver<T[key]> * / object : never}
+    */ typings.ramda.ramdaStrings.Evolver with js.Any
   /**
     * <needs description>
     * @param A

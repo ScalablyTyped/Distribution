@@ -57,6 +57,12 @@ class Ractive[T /* <: Ractive[T] */] () extends js.Object {
   def attachChild(child: Ractive[Ractive[_]]): js.Promise[Unit] = js.native
   def attachChild(child: Ractive[Ractive[_]], opts: AttachOpts): js.Promise[Unit] = js.native
   /**
+  	 * Create a new computation at the given path. This is the runtime equivalent of adding computed entries during initialization.
+  	 * @param keypath the keypath at which the computation will exist. This can include wildcards.
+  	 * @param computation the computation descriptor to install at the given keypath
+  	 */
+  def compute(keypath: String, computation: Computation[T]): js.Promise[Unit] = js.native
+  /**
   	 * Detach this instance from the DOM.
   	 */
   def detach(): DocumentFragment = js.native
@@ -115,13 +121,14 @@ class Ractive[T /* <: Ractive[T] */] () extends js.Object {
   	 * @param name
   	 */
   def findParent(name: String): Ractive[Ractive[_]] = js.native
-  def fire(name: String, ctx: js.Object, args: js.Any*): Boolean = js.native
   /**
   	 * Fire a Ractive instance event.
   	 * @param name the name of the event
   	 * @param ctx an optional context or object to be merged with a context
   	 * @param args additional args to pass to the event listeners
   	 */
+  def fire(name: String): Boolean = js.native
+  def fire(name: String, ctx: js.Object, args: js.Any*): Boolean = js.native
   def fire(name: String, ctx: ContextHelper, args: js.Any*): Boolean = js.native
   /**
   	 * Retrieve the root object of this instance's data.
@@ -148,6 +155,7 @@ class Ractive[T /* <: Ractive[T] */] () extends js.Object {
   	 * @param target
   	 * @param anchor
   	 */
+  def insert(target: Target): Unit = js.native
   def insert(target: Target, anchor: Target): Unit = js.native
   /**
   	 * Create a link to the given source keypath at the given target keypath, similar to a symlink in filesystems. This allows safely referencing the same data at two places in the same instance or across instances if given a target instance. Cross-instance links are also known as mappings.

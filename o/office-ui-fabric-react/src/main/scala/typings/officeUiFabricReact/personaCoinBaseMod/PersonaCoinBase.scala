@@ -1,14 +1,15 @@
 package typings.officeUiFabricReact.personaCoinBaseMod
 
 import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaCoin/PersonaCoin.base", "PersonaCoinBase")
 @js.native
-class PersonaCoinBase protected () extends BaseComponent[IPersonaCoinProps, IPersonaState] {
+class PersonaCoinBase protected ()
+  extends Component[IPersonaCoinProps, IPersonaState, js.Any] {
   def this(props: IPersonaCoinProps) = this()
   /**
     * Deprecation helper for getting text.

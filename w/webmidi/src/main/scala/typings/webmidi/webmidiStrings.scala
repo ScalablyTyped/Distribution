@@ -21,6 +21,9 @@ object webmidiStrings {
   sealed trait input extends MIDIPortType
   
   @js.native
+  sealed trait midimessage extends js.Object
+  
+  @js.native
   sealed trait open extends MIDIPortConnectionState
   
   @js.native
@@ -28,6 +31,9 @@ object webmidiStrings {
   
   @js.native
   sealed trait pending extends MIDIPortConnectionState
+  
+  @js.native
+  sealed trait statechange extends js.Object
   
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
@@ -38,10 +44,14 @@ object webmidiStrings {
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
+  def midimessage: midimessage = "midimessage".asInstanceOf[midimessage]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline
   def output: output = "output".asInstanceOf[output]
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
+  def statechange: statechange = "statechange".asInstanceOf[statechange]
 }
 

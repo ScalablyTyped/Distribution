@@ -20,6 +20,7 @@ class Options () extends js.Object {
   var configFile: js.UndefOr[String] = js.native
   var cwd: js.UndefOr[String] = js.native
   var envs: js.UndefOr[js.Array[String]] = js.native
+  var errorOnUnmatchedPattern: js.UndefOr[Boolean] = js.native
   var extensions: js.UndefOr[js.Array[String]] = js.native
   var fix: js.UndefOr[Boolean] = js.native
   var globals: js.UndefOr[js.Array[String]] = js.native

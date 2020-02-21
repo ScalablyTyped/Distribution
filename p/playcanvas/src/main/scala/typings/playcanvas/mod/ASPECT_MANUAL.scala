@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.ASPECT_MANUAL
+  * @type {number}
   * @description Use the manual aspect ratio value.
   */
 @JSImport("playcanvas", "ASPECT_MANUAL")

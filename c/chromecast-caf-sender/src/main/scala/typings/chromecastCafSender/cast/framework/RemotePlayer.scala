@@ -1,5 +1,6 @@
 package typings.chromecastCafSender.cast.framework
 
+import typings.chrome.chrome.cast.media.LiveSeekableRange
 import typings.chrome.chrome.cast.media.MediaInfo
 import typings.chrome.chrome.cast.media.PlayerState
 import scala.scalajs.js
@@ -22,6 +23,7 @@ class RemotePlayer () extends js.Object {
   var isMediaLoaded: Boolean = js.native
   var isMuted: Boolean = js.native
   var isPaused: Boolean = js.native
+  var liveSeekableRange: js.UndefOr[LiveSeekableRange] = js.native
   var mediaInfo: js.UndefOr[MediaInfo] = js.native
   var playerState: PlayerState | Null = js.native
   var savedPlayerState: SavedPlayerState | Null = js.native

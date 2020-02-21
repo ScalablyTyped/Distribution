@@ -1,8 +1,14 @@
 package typings.reactPrimitives.mod
 
+import typings.react.mod.Component
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.reactNative.AnonXY
+import typings.reactNative.mod.Animated.AnimatedComponent
 import typings.reactNative.mod.Animated.AnimatedValue
 import typings.reactNative.mod.Animated.AnimatedValueXY
+import typings.reactNative.mod.Animated.ComponentProps
 import typings.reactNative.mod.Animated.CompositeAnimation
 import typings.reactNative.mod.Animated.DecayAnimationConfig
 import typings.reactNative.mod.Animated.EventConfig
@@ -11,6 +17,7 @@ import typings.reactNative.mod.Animated.Mapping
 import typings.reactNative.mod.Animated.ParallelConfig
 import typings.reactNative.mod.Animated.SpringAnimationConfig
 import typings.reactNative.mod.Animated.TimingAnimationConfig
+import typings.std.InstanceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,14 +73,20 @@ object Animated extends js.Object {
     def this(valueIn: AnonXY) = this()
   }
   
-  val FlatList: js.Any = js.native
-  val Image: js.Any = js.native
-  val ScrollView: js.Any = js.native
-  val SectionList: js.Any = js.native
-  val Text: js.Any = js.native
-  val View: js.Any = js.native
+  val FlatList: AnimatedComponent[typings.reactNative.mod.FlatList[js.Any]] = js.native
+  val Image: AnimatedComponent[typings.reactNative.mod.Image] = js.native
+  val ScrollView: AnimatedComponent[typings.reactNative.mod.ScrollView] = js.native
+  val SectionList: AnimatedComponent[typings.reactNative.mod.SectionList[js.Any]] = js.native
+  val Text: AnimatedComponent[typings.reactNative.mod.Text] = js.native
+  val View: AnimatedComponent[typings.reactNative.mod.View] = js.native
   def add(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedAddition = js.native
-  def createAnimatedComponent(component: js.Any): js.Any = js.native
+  def createAnimatedComponent(component: ComponentClass[ComponentProps[_], ComponentState]): AnimatedComponent[
+    (ComponentClass[ComponentProps[_], ComponentState]) | (InstanceType[ComponentClass[ComponentProps[_], ComponentState]])
+  ] = js.native
+  def createAnimatedComponent(component: FunctionComponent[ComponentProps[_]]): AnimatedComponent[
+    FunctionComponent[ComponentProps[_]] | InstanceType[FunctionComponent[ComponentProps[_]]]
+  ] = js.native
+  def createAnimatedComponent[T /* <: Component[ComponentProps[T], js.Object, _] */](component: T): AnimatedComponent[T | InstanceType[T]] = js.native
   def decay(value: AnimatedValueXY, config: DecayAnimationConfig): CompositeAnimation = js.native
   def decay(value: AnimatedValue, config: DecayAnimationConfig): CompositeAnimation = js.native
   def delay(time: Double): CompositeAnimation = js.native

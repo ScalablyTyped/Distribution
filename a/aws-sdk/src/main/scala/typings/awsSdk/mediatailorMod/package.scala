@@ -19,6 +19,7 @@ package object mediatailorMod {
   */
   type apiVersion = typings.awsSdk.mediatailorMod._apiVersion | java.lang.String
   type integer = scala.Double
+  type integerMin1 = scala.Double
   type integerMin1Max100 = scala.Double
   type listOfPlaybackConfigurations = js.Array[typings.awsSdk.mediatailorMod.PlaybackConfiguration]
   type listOfString = js.Array[typings.awsSdk.mediatailorMod.string]

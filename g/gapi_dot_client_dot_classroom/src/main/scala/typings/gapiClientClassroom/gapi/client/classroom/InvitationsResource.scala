@@ -1,13 +1,15 @@
 package typings.gapiClientClassroom.gapi.client.classroom
 
 import typings.gapiClient.gapi.client.Request_
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackCourseIdFieldsKey
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFields
-import typings.gapiClientClassroom.AnonAccesstokenAltBearertokenCallbackFieldsId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackCourseIdFieldsKeyOauthtokenPageSize
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsId
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsKey
+import typings.gapiClientClassroom.AnonAccesstokenAltCallbackFieldsKeyOauthtoken
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvitationsResource extends js.Object {
   /**
     * Accepts an invitation, removing it and adding the invited user to the
@@ -25,7 +27,7 @@ trait InvitationsResource extends js.Object {
     * &#42; UserGroupsMembershipLimitReached
     * &#42; `NOT_FOUND` if no invitation exists with the requested ID.
     */
-  def accept(request: AnonAccesstokenAltBearertokenCallbackFieldsId): Request_[js.Object]
+  def accept(request: AnonAccesstokenAltCallbackFieldsId): Request_[js.Object] = js.native
   /**
     * Creates an invitation. Only one invitation for a user and course may exist
     * at a time. Delete and re-create an invitation to make changes.
@@ -40,7 +42,8 @@ trait InvitationsResource extends js.Object {
     * &#42; `ALREADY_EXISTS` if an invitation for the specified user and course
     * already exists.
     */
-  def create(request: AnonAccesstokenAltBearertokenCallbackFields): Request_[Invitation]
+  def create(request: AnonAccesstokenAltCallbackFieldsKeyOauthtoken): Request_[Invitation] = js.native
+  def create(request: AnonAccesstokenAltCallbackFieldsKey, body: Invitation): Request_[Invitation] = js.native
   /**
     * Deletes an invitation.
     *
@@ -50,7 +53,7 @@ trait InvitationsResource extends js.Object {
     * requested invitation or for access errors.
     * &#42; `NOT_FOUND` if no invitation exists with the requested ID.
     */
-  def delete(request: AnonAccesstokenAltBearertokenCallbackFieldsId): Request_[js.Object]
+  def delete(request: AnonAccesstokenAltCallbackFieldsId): Request_[js.Object] = js.native
   /**
     * Returns an invitation.
     *
@@ -60,7 +63,7 @@ trait InvitationsResource extends js.Object {
     * requested invitation or for access errors.
     * &#42; `NOT_FOUND` if no invitation exists with the requested ID.
     */
-  def get(request: AnonAccesstokenAltBearertokenCallbackFieldsId): Request_[Invitation]
+  def get(request: AnonAccesstokenAltCallbackFieldsId): Request_[Invitation] = js.native
   /**
     * Returns a list of invitations that the requesting user is permitted to
     * view, restricted to those that match the list request.
@@ -72,21 +75,6 @@ trait InvitationsResource extends js.Object {
     *
     * &#42; `PERMISSION_DENIED` for access errors.
     */
-  def list(request: AnonAccesstokenAltBearertokenCallbackCourseIdFieldsKey): Request_[ListInvitationsResponse]
-}
-
-object InvitationsResource {
-  @scala.inline
-  def apply(
-    accept: AnonAccesstokenAltBearertokenCallbackFieldsId => Request_[js.Object],
-    create: AnonAccesstokenAltBearertokenCallbackFields => Request_[Invitation],
-    delete: AnonAccesstokenAltBearertokenCallbackFieldsId => Request_[js.Object],
-    get: AnonAccesstokenAltBearertokenCallbackFieldsId => Request_[Invitation],
-    list: AnonAccesstokenAltBearertokenCallbackCourseIdFieldsKey => Request_[ListInvitationsResponse]
-  ): InvitationsResource = {
-    val __obj = js.Dynamic.literal(accept = js.Any.fromFunction1(accept), create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), list = js.Any.fromFunction1(list))
-  
-    __obj.asInstanceOf[InvitationsResource]
-  }
+  def list(request: AnonAccesstokenAltCallbackCourseIdFieldsKeyOauthtokenPageSize): Request_[ListInvitationsResponse] = js.native
 }
 

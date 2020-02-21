@@ -5,7 +5,7 @@ import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.commonMod.common.IVoidCallback
 import typings.mendixmodelsdk.deltaManagerMod.IDeltaManager
 import typings.mendixmodelsdk.deltasMod.DeltaProcessor
-import typings.mendixmodelsdk.imodeleventMod.IModelEvent
+import typings.mendixmodelsdk.imodeleventMod.IDeltaEvent
 import typings.mendixmodelsdk.modelEventReceiverMod.ModelEventReceiver
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +38,9 @@ class ModelEventManager protected () extends IModelEventManager {
   override def loadUnitStarted(): Unit = js.native
   /* CompleteClass */
   override def onEventProcessed(callback: IVoidCallback): Unit = js.native
-  def scheduleEvent(modelEvent: IModelEvent): Unit = js.native
+  /* CompleteClass */
+  override def onFileChangesReceived(callback: js.Function1[/* files */ js.Array[String], Unit]): Unit = js.native
+  def scheduleEvent(deltaEvent: IDeltaEvent): Unit = js.native
   /* CompleteClass */
   override def start(): Unit = js.native
   /* CompleteClass */

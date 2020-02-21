@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PRIMITIVE_POINTS
+  * @type {number}
   * @description List of distinct points.
   */
 @JSImport("playcanvas", "PRIMITIVE_POINTS")

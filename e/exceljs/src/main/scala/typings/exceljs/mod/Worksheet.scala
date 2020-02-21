@@ -142,11 +142,11 @@ trait Worksheet extends js.Object {
   def getCell(r: Double): Cell = js.native
   def getCell(r: Double, c: String): Cell = js.native
   def getCell(r: Double, c: Double): Cell = js.native
-  def getColumn(indexOrKey: String): Partial[Column] with ColumnExtension = js.native
+  def getColumn(indexOrKey: String): Partial[Column] = js.native
   /**
   	 * Access an individual columns by key, letter and 1-based column number
   	 */
-  def getColumn(indexOrKey: Double): Partial[Column] with ColumnExtension = js.native
+  def getColumn(indexOrKey: Double): Partial[Column] = js.native
   def getColumnKey(key: String): Partial[Column] = js.native
   def getImages(): js.Array[AnonImage] = js.native
   /**
@@ -182,6 +182,18 @@ trait Worksheet extends js.Object {
   def mergeCells(v: js.Tuple5[Double, Double, Double, Double, String]): Unit = js.native
   def mergeCells(v: Location): Unit = js.native
   def mergeCells(v: Range): Unit = js.native
+  def mergeCellsWithoutStyle(): Unit = js.native
+  def mergeCellsWithoutStyle(tl: String, br: String): Unit = js.native
+  def mergeCellsWithoutStyle(tl: String, br: String, sheetName: String): Unit = js.native
+  def mergeCellsWithoutStyle(top: Double, left: Double, bottom: Double, right: Double): Unit = js.native
+  def mergeCellsWithoutStyle(top: Double, left: Double, bottom: Double, right: Double, sheetName: String): Unit = js.native
+  def mergeCellsWithoutStyle(v: String): Unit = js.native
+  def mergeCellsWithoutStyle(v: js.Tuple2[String, String]): Unit = js.native
+  def mergeCellsWithoutStyle(v: js.Tuple3[String, String, String]): Unit = js.native
+  def mergeCellsWithoutStyle(v: js.Tuple4[Double, Double, Double, Double]): Unit = js.native
+  def mergeCellsWithoutStyle(v: js.Tuple5[Double, Double, Double, Double, String]): Unit = js.native
+  def mergeCellsWithoutStyle(v: Location): Unit = js.native
+  def mergeCellsWithoutStyle(v: Range): Unit = js.native
   /**
   	 * Worksheet protection
   	 */

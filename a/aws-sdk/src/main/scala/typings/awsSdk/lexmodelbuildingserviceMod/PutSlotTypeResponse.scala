@@ -35,6 +35,14 @@ trait PutSlotTypeResponse extends js.Object {
     */
   var name: js.UndefOr[SlotTypeName] = js.native
   /**
+    * The built-in slot type used as the parent of the slot type.
+    */
+  var parentSlotTypeSignature: js.UndefOr[CustomOrBuiltinSlotTypeName] = js.native
+  /**
+    * Configuration information that extends the parent built-in slot type.
+    */
+  var slotTypeConfigurations: js.UndefOr[SlotTypeConfigurations] = js.native
+  /**
     * The slot resolution strategy that Amazon Lex uses to determine the value of the slot. For more information, see PutSlotType.
     */
   var valueSelectionStrategy: js.UndefOr[SlotValueSelectionStrategy] = js.native
@@ -54,6 +62,8 @@ object PutSlotTypeResponse {
     enumerationValues: EnumerationValues = null,
     lastUpdatedDate: Timestamp = null,
     name: SlotTypeName = null,
+    parentSlotTypeSignature: CustomOrBuiltinSlotTypeName = null,
+    slotTypeConfigurations: SlotTypeConfigurations = null,
     valueSelectionStrategy: SlotValueSelectionStrategy = null,
     version: Version = null
   ): PutSlotTypeResponse = {
@@ -65,6 +75,8 @@ object PutSlotTypeResponse {
     if (enumerationValues != null) __obj.updateDynamic("enumerationValues")(enumerationValues.asInstanceOf[js.Any])
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parentSlotTypeSignature != null) __obj.updateDynamic("parentSlotTypeSignature")(parentSlotTypeSignature.asInstanceOf[js.Any])
+    if (slotTypeConfigurations != null) __obj.updateDynamic("slotTypeConfigurations")(slotTypeConfigurations.asInstanceOf[js.Any])
     if (valueSelectionStrategy != null) __obj.updateDynamic("valueSelectionStrategy")(valueSelectionStrategy.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSlotTypeResponse]

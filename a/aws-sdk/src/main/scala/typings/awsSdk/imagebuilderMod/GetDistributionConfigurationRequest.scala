@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetDistributionConfigurationRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the distribution configuration that you wish to retrieve. 
+    *  The Amazon Resource Name (ARN) of the distribution configuration that you want to retrieve. 
     */
   var distributionConfigurationArn: DistributionConfigurationArn = js.native
 }

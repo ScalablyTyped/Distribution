@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "semver-regex" : "3.1.0"
+      "semver-regex" : "3.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "semver-regex" : "3.1.0"
+      "semver-regex" : "3.1.1"
     }
   ],
   "compile-devDependencies" : [

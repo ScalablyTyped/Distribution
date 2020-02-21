@@ -11,7 +11,7 @@ trait OrderableDBInstanceOptionsMessage extends js.Object {
     */
   var Marker: js.UndefOr[String] = js.native
   /**
-    * The options that are available for a particular orderable DB instance.
+    * The options that are available for a particular orderable instance.
     */
   var OrderableDBInstanceOptions: js.UndefOr[OrderableDBInstanceOptionsList] = js.native
 }

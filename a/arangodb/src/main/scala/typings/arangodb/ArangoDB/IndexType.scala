@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - typings.arangodb.arangodbStrings.skiplist
   - typings.arangodb.arangodbStrings.fulltext
   - typings.arangodb.arangodbStrings.geo
+  - typings.arangodb.arangodbStrings.ttl
 */
 trait IndexType extends js.Object
 
@@ -23,5 +24,7 @@ object IndexType {
   def hash: typings.arangodb.arangodbStrings.hash = this.cast("hash")
   @scala.inline
   def skiplist: typings.arangodb.arangodbStrings.skiplist = this.cast("skiplist")
+  @scala.inline
+  def ttl: typings.arangodb.arangodbStrings.ttl = this.cast("ttl")
 }
 

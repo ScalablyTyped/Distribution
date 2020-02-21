@@ -1,6 +1,6 @@
 package typings.pythonStruct
 
-import typings.long.mod.^
+import typings.long.mod.Long
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,6 +16,6 @@ object mod extends js.Object {
   def unpack(format: String, data: Buffer, checkBounds: Boolean): js.Array[DataType] = js.native
   def unpackFrom(format: String, data: Buffer, checkBounds: js.UndefOr[scala.Nothing], position: Double): DataType = js.native
   def unpackFrom(format: String, data: Buffer, checkBounds: Boolean, position: Double): DataType = js.native
-  type DataType = Double | ^  | String | Boolean
+  type DataType = Double | Long | String | Boolean
 }
 

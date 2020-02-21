@@ -11,7 +11,7 @@ trait GetSnapshotBlockResponse extends js.Object {
     */
   var BlockData: js.UndefOr[typings.awsSdk.ebsMod.BlockData] = js.native
   /**
-    * The checksum generated for the block.
+    * The checksum generated for the block, which is Base64 encoded.
     */
   var Checksum: js.UndefOr[typings.awsSdk.ebsMod.Checksum] = js.native
   /**

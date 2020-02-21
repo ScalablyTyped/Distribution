@@ -3,6 +3,7 @@ package typings.node.http2Mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable4
 import typings.node.Buffer
+import typings.node.NodeJS.TypedArray
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
@@ -12,8 +13,10 @@ import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
+import typings.node.tlsMod.TLSSocket
 import typings.node.tlsMod.TlsOptions
 import typings.node.urlMod.URL_
+import typings.std.DataView
 import typings.std.Error
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -69,6 +72,8 @@ object SecureServerOptions {
     pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     privateKeyEngine: String = null,
     privateKeyIdentifier: String = null,
+    pskCallback: (/* socket */ TLSSocket, /* identity */ String) => DataView | TypedArray | Null = null,
+    pskIdentityHint: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
@@ -115,6 +120,8 @@ object SecureServerOptions {
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
     if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
+    if (pskCallback != null) __obj.updateDynamic("pskCallback")(js.Any.fromFunction2(pskCallback))
+    if (pskIdentityHint != null) __obj.updateDynamic("pskIdentityHint")(pskIdentityHint.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])

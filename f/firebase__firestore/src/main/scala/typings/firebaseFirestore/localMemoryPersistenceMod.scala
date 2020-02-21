@@ -3,7 +3,6 @@ package typings.firebaseFirestore
 import typings.firebaseFirestore.authUserMod.User
 import typings.firebaseFirestore.coreTypesMod.ListenSequenceNumber
 import typings.firebaseFirestore.localIndexManagerMod.IndexManager
-import typings.firebaseFirestore.localLocalSerializerMod.LocalSerializer
 import typings.firebaseFirestore.localLruGarbageCollectorMod.ActiveTargets
 import typings.firebaseFirestore.localLruGarbageCollectorMod.LruDelegate
 import typings.firebaseFirestore.localLruGarbageCollectorMod.LruGarbageCollector
@@ -22,7 +21,6 @@ import typings.firebaseFirestore.localTargetCacheMod.TargetCache
 import typings.firebaseFirestore.localTargetDataMod.TargetData
 import typings.firebaseFirestore.modelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.modelDocumentMod.MaybeDocument
-import typings.firebaseFirestore.remoteSerializerMod.JsonProtoSerializer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -71,7 +69,7 @@ object localMemoryPersistenceMod extends js.Object {
   class MemoryLruDelegate protected ()
     extends ReferenceDelegate
        with LruDelegate {
-    def this(persistence: MemoryPersistence, serializer: LocalSerializer, lruParams: LruParams) = this()
+    def this(persistence: MemoryPersistence, lruParams: LruParams) = this()
     /* CompleteClass */
     override val garbageCollector: LruGarbageCollector = js.native
     var inMemoryPins: js.Any = js.native
@@ -79,7 +77,6 @@ object localMemoryPersistenceMod extends js.Object {
     var orphanedDocumentCount: js.Any = js.native
     var orphanedSequenceNumbers: js.Any = js.native
     val persistence: js.Any = js.native
-    val serializer: js.Any = js.native
     /** Notify the delegate that the given document was added to a target. */
     /* CompleteClass */
     override def addReference(txn: PersistenceTransaction, doc: DocumentKey): PersistencePromise[Unit] = js.native
@@ -290,7 +287,7 @@ object localMemoryPersistenceMod extends js.Object {
   @js.native
   object MemoryPersistence extends js.Object {
     def createEagerPersistence(clientId: ClientId): MemoryPersistence = js.native
-    def createLruPersistence(clientId: ClientId, serializer: JsonProtoSerializer, params: LruParams): MemoryPersistence = js.native
+    def createLruPersistence(clientId: ClientId, params: LruParams): MemoryPersistence = js.native
   }
   
 }

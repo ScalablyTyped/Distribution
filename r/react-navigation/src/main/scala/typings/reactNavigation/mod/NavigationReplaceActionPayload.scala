@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigationReplaceActionPayload extends js.Object {
-  var action: js.UndefOr[NavigationNavigateAction] = js.undefined
+  var action: js.UndefOr[NavigationAction] = js.undefined
   var key: js.UndefOr[String] = js.undefined
   var newKey: js.UndefOr[String] = js.undefined
   var params: js.UndefOr[NavigationParams] = js.undefined
@@ -16,7 +16,7 @@ object NavigationReplaceActionPayload {
   @scala.inline
   def apply(
     routeName: String,
-    action: NavigationNavigateAction = null,
+    action: NavigationAction = null,
     key: String = null,
     newKey: String = null,
     params: NavigationParams = null

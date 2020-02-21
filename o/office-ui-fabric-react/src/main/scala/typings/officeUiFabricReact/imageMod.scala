@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.imageTypesMod.IImageProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object imageMod extends js.Object {
     def this(props: IImageProps) = this()
   }
   
-  val Image: StatelessComponent[IImageProps] = js.native
+  val Image: FunctionComponent[IImageProps] = js.native
   /* static members */
   @js.native
   object ImageBase extends js.Object {

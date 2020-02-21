@@ -3,7 +3,7 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext
 import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps
 import typings.react.mod.Context
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ object scrollablePaneMod extends js.Object {
     def this(props: IScrollablePaneProps) = this()
   }
   
-  val ScrollablePane: StatelessComponent[IScrollablePaneProps] = js.native
+  val ScrollablePane: FunctionComponent[IScrollablePaneProps] = js.native
   val ScrollablePaneContext: Context[IScrollablePaneContext] = js.native
   @js.native
   object ScrollbarVisibility extends js.Object {

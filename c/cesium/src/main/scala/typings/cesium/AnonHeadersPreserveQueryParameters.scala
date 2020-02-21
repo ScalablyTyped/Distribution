@@ -1,9 +1,6 @@
 package typings.cesium
 
 import typings.cesium.mod.DefaultProxy
-import typings.cesium.mod.Resource
-import typings.cesium.mod.Resource.RetryCallback
-import typings.std.Error
 import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +13,7 @@ trait AnonHeadersPreserveQueryParameters extends js.Object {
   var queryParameters: js.UndefOr[js.Any] = js.undefined
   var request: js.UndefOr[Request] = js.undefined
   var retryAttempts: js.UndefOr[Double] = js.undefined
-  var retryCallback: js.UndefOr[RetryCallback] = js.undefined
+  var retryCallback: js.UndefOr[js.Any] = js.undefined
   var templateValues: js.UndefOr[js.Any] = js.undefined
   var url: js.UndefOr[String] = js.undefined
 }
@@ -30,7 +27,7 @@ object AnonHeadersPreserveQueryParameters {
     queryParameters: js.Any = null,
     request: Request = null,
     retryAttempts: Int | Double = null,
-    retryCallback: (/* resource */ Resource, /* error */ Error) => Unit = null,
+    retryCallback: js.Any = null,
     templateValues: js.Any = null,
     url: String = null
   ): AnonHeadersPreserveQueryParameters = {
@@ -41,7 +38,7 @@ object AnonHeadersPreserveQueryParameters {
     if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters.asInstanceOf[js.Any])
     if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     if (retryAttempts != null) __obj.updateDynamic("retryAttempts")(retryAttempts.asInstanceOf[js.Any])
-    if (retryCallback != null) __obj.updateDynamic("retryCallback")(js.Any.fromFunction2(retryCallback))
+    if (retryCallback != null) __obj.updateDynamic("retryCallback")(retryCallback.asInstanceOf[js.Any])
     if (templateValues != null) __obj.updateDynamic("templateValues")(templateValues.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonHeadersPreserveQueryParameters]

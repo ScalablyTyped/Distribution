@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SP.ClientConstants")
 @js.native
-class ClientConstants () extends js.Object {
+class ClientConstants () extends js.Object
+
+/* static members */
+@JSGlobal("SP.ClientConstants")
+@js.native
+object ClientConstants extends js.Object {
   var Actions: String = js.native
   var AddExpandoFieldTypeSuffix: String = js.native
   var ApplicationName: String = js.native

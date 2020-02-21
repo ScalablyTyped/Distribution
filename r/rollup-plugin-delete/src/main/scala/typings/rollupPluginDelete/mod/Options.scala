@@ -13,6 +13,11 @@ trait Options
     */
   val hook: js.UndefOr[String] = js.undefined
   /**
+    * Delete items once. Useful in watch mode.
+    * @default false
+    */
+  val runOnce: js.UndefOr[Boolean] = js.undefined
+  /**
     * Patterns of files and folders to be deleted.
     * @default []
     */
@@ -33,6 +38,7 @@ object Options {
     force: js.UndefOr[Boolean] = js.undefined,
     gitignore: js.UndefOr[Boolean] = js.undefined,
     hook: String = null,
+    runOnce: js.UndefOr[Boolean] = js.undefined,
     targets: String | js.Array[String] = null,
     verbose: js.UndefOr[Boolean] = js.undefined
   ): Options = {
@@ -43,6 +49,7 @@ object Options {
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
     if (!js.isUndefined(gitignore)) __obj.updateDynamic("gitignore")(gitignore.asInstanceOf[js.Any])
     if (hook != null) __obj.updateDynamic("hook")(hook.asInstanceOf[js.Any])
+    if (!js.isUndefined(runOnce)) __obj.updateDynamic("runOnce")(runOnce.asInstanceOf[js.Any])
     if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

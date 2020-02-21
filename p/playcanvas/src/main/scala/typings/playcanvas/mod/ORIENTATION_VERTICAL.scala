@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.ORIENTATION_VERTICAL
+  * @type {number}
   * @description Vertical orientation.
   */
 @JSImport("playcanvas", "ORIENTATION_VERTICAL")

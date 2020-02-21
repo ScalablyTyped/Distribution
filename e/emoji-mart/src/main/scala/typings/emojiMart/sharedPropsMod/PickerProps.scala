@@ -18,6 +18,7 @@ trait PickerProps extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   /** NOTE: custom emoji are copied into a singleton object on every new mount */
   var custom: js.UndefOr[js.Array[CustomEmoji]] = js.undefined
+  var darkMode: js.UndefOr[Boolean] = js.undefined
   var defaultSkin: js.UndefOr[EmojiSkin] = js.undefined
   var emoji: js.UndefOr[String] = js.undefined
   var emojiSize: js.UndefOr[Double] = js.undefined
@@ -55,6 +56,7 @@ object PickerProps {
     backgroundImageFn: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String = null,
     color: String = null,
     custom: js.Array[CustomEmoji] = null,
+    darkMode: js.UndefOr[Boolean] = js.undefined,
     defaultSkin: EmojiSkin = null,
     emoji: String = null,
     emojiSize: Int | Double = null,
@@ -86,6 +88,7 @@ object PickerProps {
     if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2(backgroundImageFn))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (!js.isUndefined(darkMode)) __obj.updateDynamic("darkMode")(darkMode.asInstanceOf[js.Any])
     if (defaultSkin != null) __obj.updateDynamic("defaultSkin")(defaultSkin.asInstanceOf[js.Any])
     if (emoji != null) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
     if (emojiSize != null) __obj.updateDynamic("emojiSize")(emojiSize.asInstanceOf[js.Any])

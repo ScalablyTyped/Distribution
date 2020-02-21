@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
   * @name pc.SEMANTIC_ATTR0
+  * @type {string}
   * @description Vertex attribute with a user defined semantic.
   */
 @JSImport("playcanvas", "SEMANTIC_ATTR0")

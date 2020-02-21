@@ -1,7 +1,7 @@
 
 # Scala.js typings for dragula
 
-Typings are for version v2.1.2
+Typings are for version 3.7
 
 ## Library description:
 Drag and drop so simple it hurts

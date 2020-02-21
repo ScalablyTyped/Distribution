@@ -27,6 +27,7 @@ trait IPanelRef extends js.Object {
   def removeInterceptor(`type`: String, callback: js.Function0[IPromise[_]]): IPanelRef = js.native
   def show(): IPromise[_] = js.native
   def toggleClass(toggleClass: String): Unit = js.native
+  def updateAnimation(animation: IPanelAnimation): Unit = js.native
   def updatePosition(position: IPanelPosition): Unit = js.native
 }
 

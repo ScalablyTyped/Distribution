@@ -14,6 +14,10 @@ trait StyledCellProps extends js.Object {
   var $gridGaps: js.UndefOr[Responsive[Double]] = js.native
   @JSName("$gridGutters")
   var $gridGutters: js.UndefOr[Responsive[Double]] = js.native
+  @JSName("$gridUnit")
+  var $gridUnit: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
+  ] = js.native
   @JSName("$order")
   var $order: js.UndefOr[Responsive[Double]] = js.native
   @JSName("$skip")

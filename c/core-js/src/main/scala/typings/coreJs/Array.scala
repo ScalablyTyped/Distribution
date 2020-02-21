@@ -5,11 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // #############################################################################################
+// ECMAScript Proposal
+// Modules: esnext.array.last-item, and esnext.array.last-index
+// #############################################################################################
+// #############################################################################################
 // Array - https://github.com/zloirock/core-js/#array
 // Modules: core.array.turn
 // #############################################################################################
 @js.native
 trait Array[T] extends js.Object {
+  val lastIndex: Double = js.native
+  var lastItem: T = js.native
   /**
     * Non-standard.
     */

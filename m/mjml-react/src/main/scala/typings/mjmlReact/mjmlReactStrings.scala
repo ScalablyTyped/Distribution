@@ -1,6 +1,6 @@
 package typings.mjmlReact
 
-import typings.mjmlReact.mod.utils.TextAlignment
+import typings.mjmlReact.utilsMod.TextAlignment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

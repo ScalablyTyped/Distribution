@@ -21,6 +21,12 @@ object mod extends js.Object {
     progressCallback: js.Function0[Unit],
     callback: js.Function2[/* error */ Error, /* result */ String, Unit]
   ): Unit = js.native
+  def hash(
+    data: String,
+    salt: String,
+    progressCallback: Null,
+    callback: js.Function2[/* error */ Error, /* result */ String, Unit]
+  ): Unit = js.native
   def hashSync(data: String): String = js.native
   def hashSync(data: String, salt: String): String = js.native
 }

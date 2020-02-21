@@ -31,6 +31,7 @@ object uploadRepositoryMod extends js.Object {
   @js.native
   object UploadRepository extends js.Object {
     var createPhotoRuploadParams: js.Any = js.native
+    var uploadDebug: js.Any = js.native
     def createVideoRuploadParams(options: UploadVideoOptions, uploadId: String): js.Any = js.native
     def createVideoRuploadParams(options: UploadVideoOptions, uploadId: String, retryContext: UploadRetryContext): js.Any = js.native
     def createVideoRuploadParams(options: UploadVideoOptions, uploadId: Double): js.Any = js.native

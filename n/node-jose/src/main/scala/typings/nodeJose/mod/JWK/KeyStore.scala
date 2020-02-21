@@ -10,6 +10,7 @@ import typings.nodeJose.nodeJoseStrings.public
 import typings.nodeJose.nodeJoseStrings.spki
 import typings.nodeJose.nodeJoseStrings.x509
 import typings.std.Partial
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,6 +36,11 @@ trait KeyStore extends js.Object {
   def add(
     key: String | Buffer | Key | js.Object,
     form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem
+  ): js.Promise[Key] = js.native
+  def add(
+    key: String | Buffer | Key | js.Object,
+    form: json | `private` | pkcs8 | public | spki | pkix | x509 | pem,
+    extras: Record[String, _]
   ): js.Promise[Key] = js.native
   def add(key: RawKey): js.Promise[Key] = js.native
   def all(): js.Array[RawKey] = js.native

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.STENCILOP_REPLACE
+  * @type {number}
   * @description Replace value with the reference value (see {@link pc.GraphicsDevice#setStencilFunc}).
   */
 @JSImport("playcanvas", "STENCILOP_REPLACE")

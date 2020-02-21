@@ -10,15 +10,18 @@ trait QuickPickItem extends js.Object {
   		 */
   var alwaysShow: js.UndefOr[Boolean] = js.undefined
   /**
-  		 * A human readable string which is rendered less prominent.
+  		 * A human-readable string which is rendered less prominent in the same line. Supports rendering of
+  		 * [theme icons](#ThemeIcon) via the `$(<name>)`-syntax.
   		 */
   var description: js.UndefOr[String] = js.undefined
   /**
-  		 * A human readable string which is rendered less prominent.
+  		 * A human-readable string which is rendered less prominent in a separate line. Supports rendering of
+  		 * [theme icons](#ThemeIcon) via the `$(<name>)`-syntax.
   		 */
   var detail: js.UndefOr[String] = js.undefined
   /**
-  		 * A human readable string which is rendered prominent.
+  		 * A human-readable string which is rendered prominent. Supports rendering of [theme icons](#ThemeIcon) via
+  		 * the `$(<name>)`-syntax.
   		 */
   var label: String
   /**

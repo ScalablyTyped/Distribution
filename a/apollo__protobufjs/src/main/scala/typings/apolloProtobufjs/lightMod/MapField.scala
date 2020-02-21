@@ -20,7 +20,7 @@ import typings.apolloProtobufjs.mod.Buffer
 import typings.apolloProtobufjs.mod.Constructor
 import typings.apolloProtobufjs.mod.FieldDecorator
 import typings.apolloProtobufjs.mod.IMapField
-import typings.long.mod.^
+import typings.long.mod.Long
 import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -63,7 +63,7 @@ object MapField extends js.Object {
     * @returns Decorator function
     */
   def d[T /* <: StringDictionary[
-    Double | ^  | String | Boolean | Uint8Array | Buffer | js.Array[Double] | typings.apolloProtobufjs.mod.Message[js.Object]
+    Double | Long | String | Boolean | Uint8Array | Buffer | js.Array[Double] | typings.apolloProtobufjs.mod.Message[js.Object]
   ] */](
     fieldId: Double,
     fieldKeyType: int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | bool | string,

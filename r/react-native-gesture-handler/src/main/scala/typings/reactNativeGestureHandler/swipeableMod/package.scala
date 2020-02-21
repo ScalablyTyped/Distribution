@@ -1,0 +1,12 @@
+package typings.reactNativeGestureHandler
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object swipeableMod {
+  type SwipeableExcludes = typings.std.Exclude[
+    typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDeltaX | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDeltaY | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDeltaX | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxDeltaY | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minOffsetX | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minOffsetY | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetY | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.activeOffsetX | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetY | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.failOffsetX | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minDist | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocity | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityX | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minVelocityY | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.minPointers | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.maxPointers | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.avgTouches, 
+    typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onGestureEvent | typings.reactNativeGestureHandler.reactNativeGestureHandlerStrings.onHandlerStateChange
+  ]
+}

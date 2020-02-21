@@ -1,7 +1,7 @@
 
 # Scala.js typings for relay-compiler
 
-Typings are for version 7.0
+Typings are for version 8.0
 
 ## Library description:
 A compiler tool for building GraphQL-driven applications.

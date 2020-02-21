@@ -1,16 +1,15 @@
 organization := "org.scalablytyped"
 name := "findup-sync"
-version := "2.0-dt-20190619Z-5e0e5d"
-scalaVersion := "2.12.10"
+version := "2.0-dt-20190619Z-10baf4"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "braces" % "3.0-dt-20190422Z-cdfb4f",
-  "org.scalablytyped" %%% "micromatch" % "4.0-dt-20200107Z-497bee",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "braces" % "3.0-dt-20190422Z-7eca32",
+  "org.scalablytyped" %%% "micromatch" % "4.0-dt-20200127Z-1a75cf",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

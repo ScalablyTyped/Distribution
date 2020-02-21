@@ -22,6 +22,7 @@ object MongoUrlOptions {
     host: String = null,
     mongoOptions: ConnectionOptions = null,
     port: String = null,
+    secret: String = null,
     ssl: js.UndefOr[Boolean] = js.undefined,
     stringify: js.UndefOr[Boolean] = js.undefined,
     touchAfter: Int | Double = null,
@@ -37,6 +38,7 @@ object MongoUrlOptions {
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (mongoOptions != null) __obj.updateDynamic("mongoOptions")(mongoOptions.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
     if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
     if (touchAfter != null) __obj.updateDynamic("touchAfter")(touchAfter.asInstanceOf[js.Any])

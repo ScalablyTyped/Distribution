@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.MOUSEBUTTON_NONE
-  * @description No mouse buttons pressed
+  * @description No mouse buttons pressed.
   */
 @JSGlobal("pc.MOUSEBUTTON_NONE")
 @js.native

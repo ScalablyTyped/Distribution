@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object personaCoinMod extends js.Object {
     def this(props: IPersonaCoinProps) = this()
   }
   
-  val PersonaCoin: StatelessComponent[IPersonaCoinProps] = js.native
+  val PersonaCoin: FunctionComponent[IPersonaCoinProps] = js.native
   /* static members */
   @js.native
   object PersonaCoinBase extends js.Object {

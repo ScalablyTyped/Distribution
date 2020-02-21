@@ -24,7 +24,7 @@ class SAXParser () extends js.Object {
   var position: Double = js.native
   var startTagPosition: Double = js.native
   var strict: Boolean = js.native
-  var tag: String = js.native
+  var tag: Tag = js.native
   def close(): SAXParser = js.native
   // Methods
   def end(): Unit = js.native

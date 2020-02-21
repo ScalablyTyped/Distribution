@@ -1,56 +1,56 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.ActivityCheckStarringRepoParams
-import typings.octokitRest.mod.ActivityCheckWatchingRepoLegacyParams
-import typings.octokitRest.mod.ActivityDeleteRepoSubscriptionParams
-import typings.octokitRest.mod.ActivityDeleteThreadSubscriptionParams
-import typings.octokitRest.mod.ActivityGetRepoSubscriptionParams
-import typings.octokitRest.mod.ActivityGetRepoSubscriptionResponse
-import typings.octokitRest.mod.ActivityGetThreadParams
-import typings.octokitRest.mod.ActivityGetThreadResponse
-import typings.octokitRest.mod.ActivityGetThreadSubscriptionParams
-import typings.octokitRest.mod.ActivityGetThreadSubscriptionResponse
-import typings.octokitRest.mod.ActivityListEventsForOrgParams
-import typings.octokitRest.mod.ActivityListEventsForUserParams
-import typings.octokitRest.mod.ActivityListFeedsResponse
-import typings.octokitRest.mod.ActivityListNotificationsForRepoParams
-import typings.octokitRest.mod.ActivityListNotificationsForRepoResponse
-import typings.octokitRest.mod.ActivityListNotificationsParams
-import typings.octokitRest.mod.ActivityListNotificationsResponse
-import typings.octokitRest.mod.ActivityListPublicEventsForOrgParams
-import typings.octokitRest.mod.ActivityListPublicEventsForRepoNetworkParams
-import typings.octokitRest.mod.ActivityListPublicEventsForUserParams
-import typings.octokitRest.mod.ActivityListPublicEventsParams
-import typings.octokitRest.mod.ActivityListReceivedEventsForUserParams
-import typings.octokitRest.mod.ActivityListReceivedPublicEventsForUserParams
-import typings.octokitRest.mod.ActivityListRepoEventsParams
-import typings.octokitRest.mod.ActivityListReposStarredByAuthenticatedUserParams
-import typings.octokitRest.mod.ActivityListReposStarredByAuthenticatedUserResponse
-import typings.octokitRest.mod.ActivityListReposStarredByUserParams
-import typings.octokitRest.mod.ActivityListReposStarredByUserResponse
-import typings.octokitRest.mod.ActivityListReposWatchedByUserParams
-import typings.octokitRest.mod.ActivityListReposWatchedByUserResponse
-import typings.octokitRest.mod.ActivityListStargazersForRepoParams
-import typings.octokitRest.mod.ActivityListStargazersForRepoResponse
-import typings.octokitRest.mod.ActivityListWatchedReposForAuthenticatedUserParams
-import typings.octokitRest.mod.ActivityListWatchedReposForAuthenticatedUserResponse
-import typings.octokitRest.mod.ActivityListWatchersForRepoParams
-import typings.octokitRest.mod.ActivityListWatchersForRepoResponse
-import typings.octokitRest.mod.ActivityMarkAsReadParams
-import typings.octokitRest.mod.ActivityMarkNotificationsAsReadForRepoParams
-import typings.octokitRest.mod.ActivityMarkThreadAsReadParams
-import typings.octokitRest.mod.ActivitySetRepoSubscriptionParams
-import typings.octokitRest.mod.ActivitySetRepoSubscriptionResponse
-import typings.octokitRest.mod.ActivitySetThreadSubscriptionParams
-import typings.octokitRest.mod.ActivitySetThreadSubscriptionResponse
-import typings.octokitRest.mod.ActivityStarRepoParams
-import typings.octokitRest.mod.ActivityStopWatchingRepoLegacyParams
-import typings.octokitRest.mod.ActivityUnstarRepoParams
-import typings.octokitRest.mod.ActivityWatchRepoLegacyParams
-import typings.octokitRest.mod.AnyResponse
-import typings.octokitRest.mod.EmptyParams
-import typings.octokitRest.mod.RequestOptions
-import typings.octokitRest.mod.Response
+import typings.octokitRest.mod.Octokit.ActivityCheckStarringRepoParams
+import typings.octokitRest.mod.Octokit.ActivityCheckWatchingRepoLegacyParams
+import typings.octokitRest.mod.Octokit.ActivityDeleteRepoSubscriptionParams
+import typings.octokitRest.mod.Octokit.ActivityDeleteThreadSubscriptionParams
+import typings.octokitRest.mod.Octokit.ActivityGetRepoSubscriptionParams
+import typings.octokitRest.mod.Octokit.ActivityGetRepoSubscriptionResponse
+import typings.octokitRest.mod.Octokit.ActivityGetThreadParams
+import typings.octokitRest.mod.Octokit.ActivityGetThreadResponse
+import typings.octokitRest.mod.Octokit.ActivityGetThreadSubscriptionParams
+import typings.octokitRest.mod.Octokit.ActivityGetThreadSubscriptionResponse
+import typings.octokitRest.mod.Octokit.ActivityListEventsForOrgParams
+import typings.octokitRest.mod.Octokit.ActivityListEventsForUserParams
+import typings.octokitRest.mod.Octokit.ActivityListFeedsResponse
+import typings.octokitRest.mod.Octokit.ActivityListNotificationsForRepoParams
+import typings.octokitRest.mod.Octokit.ActivityListNotificationsForRepoResponse
+import typings.octokitRest.mod.Octokit.ActivityListNotificationsParams
+import typings.octokitRest.mod.Octokit.ActivityListNotificationsResponse
+import typings.octokitRest.mod.Octokit.ActivityListPublicEventsForOrgParams
+import typings.octokitRest.mod.Octokit.ActivityListPublicEventsForRepoNetworkParams
+import typings.octokitRest.mod.Octokit.ActivityListPublicEventsForUserParams
+import typings.octokitRest.mod.Octokit.ActivityListPublicEventsParams
+import typings.octokitRest.mod.Octokit.ActivityListReceivedEventsForUserParams
+import typings.octokitRest.mod.Octokit.ActivityListReceivedPublicEventsForUserParams
+import typings.octokitRest.mod.Octokit.ActivityListRepoEventsParams
+import typings.octokitRest.mod.Octokit.ActivityListReposStarredByAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.ActivityListReposStarredByAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.ActivityListReposStarredByUserParams
+import typings.octokitRest.mod.Octokit.ActivityListReposStarredByUserResponse
+import typings.octokitRest.mod.Octokit.ActivityListReposWatchedByUserParams
+import typings.octokitRest.mod.Octokit.ActivityListReposWatchedByUserResponse
+import typings.octokitRest.mod.Octokit.ActivityListStargazersForRepoParams
+import typings.octokitRest.mod.Octokit.ActivityListStargazersForRepoResponse
+import typings.octokitRest.mod.Octokit.ActivityListWatchedReposForAuthenticatedUserParams
+import typings.octokitRest.mod.Octokit.ActivityListWatchedReposForAuthenticatedUserResponse
+import typings.octokitRest.mod.Octokit.ActivityListWatchersForRepoParams
+import typings.octokitRest.mod.Octokit.ActivityListWatchersForRepoResponse
+import typings.octokitRest.mod.Octokit.ActivityMarkAsReadParams
+import typings.octokitRest.mod.Octokit.ActivityMarkNotificationsAsReadForRepoParams
+import typings.octokitRest.mod.Octokit.ActivityMarkThreadAsReadParams
+import typings.octokitRest.mod.Octokit.ActivitySetRepoSubscriptionParams
+import typings.octokitRest.mod.Octokit.ActivitySetRepoSubscriptionResponse
+import typings.octokitRest.mod.Octokit.ActivitySetThreadSubscriptionParams
+import typings.octokitRest.mod.Octokit.ActivitySetThreadSubscriptionResponse
+import typings.octokitRest.mod.Octokit.ActivityStarRepoParams
+import typings.octokitRest.mod.Octokit.ActivityStopWatchingRepoLegacyParams
+import typings.octokitRest.mod.Octokit.ActivityUnstarRepoParams
+import typings.octokitRest.mod.Octokit.ActivityWatchRepoLegacyParams
+import typings.octokitRest.mod.Octokit.AnyResponse
+import typings.octokitRest.mod.Octokit.EmptyParams
+import typings.octokitRest.mod.Octokit.RequestOptions
+import typings.octokitRest.mod.Octokit.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -61,12 +61,12 @@ trait AnonCheckStarringRepo extends js.Object {
     * Requires for the user to be authenticated.
     */
   @JSName("checkStarringRepo")
-  var checkStarringRepo_Original: AnonEndpoint = js.native
+  var checkStarringRepo_Original: AnonEndpointParamsActivityCheckStarringRepoParams = js.native
   /**
     * Requires for the user to be authenticated.
     */
   @JSName("checkWatchingRepoLegacy")
-  var checkWatchingRepoLegacy_Original: AnonEndpointParams = js.native
+  var checkWatchingRepoLegacy_Original: AnonEndpointParamsActivityCheckWatchingRepoLegacyParams = js.native
   /**
     * This endpoint should only be used to stop watching a repository. To control whether or not you wish to receive notifications from a repository, [set the repository's subscription manually](https://developer.github.com/v3/activity/watching/#set-a-repository-subscription).
     */

@@ -238,8 +238,8 @@ class Query_[T /* <: Object[Attributes] */] protected () extends js.Object {
     String
   ] */](key: updatedAt, queryKey: X, query: Query[U]): this.type = js.native
   def doesNotMatchQuery[U /* <: Object[Attributes] */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, query: Query[U]): this.type = js.native
-  def each(callback: js.Function): js.Promise[Unit] = js.native
-  def each(callback: js.Function, options: EachOptions): js.Promise[Unit] = js.native
+  def each(callback: js.Function1[/* obj */ T, js.Thenable[Unit] | Unit]): js.Promise[Unit] = js.native
+  def each(callback: js.Function1[/* obj */ T, js.Thenable[Unit] | Unit], options: EachOptions): js.Promise[Unit] = js.native
   def endsWith[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, suffix: String): this.type = js.native
   @JSName("endsWith")
   def endsWith_createdAt(key: createdAt, suffix: String): this.type = js.native

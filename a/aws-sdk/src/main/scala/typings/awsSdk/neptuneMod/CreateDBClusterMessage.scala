@@ -35,7 +35,7 @@ trait CreateDBClusterMessage extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.native
   /**
-    * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. 
+    * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is enabled.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
   /**

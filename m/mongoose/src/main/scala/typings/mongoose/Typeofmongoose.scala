@@ -43,6 +43,7 @@ trait Typeofmongoose extends js.Object {
   def disconnect(): js.Promise[Unit] = js.native
   def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def get(key: String): js.Any = js.native
+  def isValidObjectId(value: js.Any): Boolean = js.native
   def model[T /* <: Document */](name: String): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_]): Model_[T, js.Object] = js.native
   def model[T /* <: Document */](name: String, schema: typings.mongoose.mod.Schema[_], collection: String): Model_[T, js.Object] = js.native

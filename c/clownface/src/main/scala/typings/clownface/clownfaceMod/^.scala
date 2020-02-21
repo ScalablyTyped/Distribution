@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("clownface/lib/Clownface", JSImport.Namespace)
 @js.native
-class ^[D /* <: DatasetCore[Quad] */, T /* <: Term */] protected () extends Clownface[D, T] {
-  def this(options: (ClownfaceInit[DatasetCore[Quad], Term]) with (Partial[WithSingleTerm[T] | WithTerms[T]]) with (Partial[WithSingleValue | WithValues])) = this()
+class ^[D /* <: DatasetCore[Quad, Quad] */, T /* <: Term */] protected () extends Clownface[D, T] {
+  def this(options: (ClownfaceInit[DatasetCore[Quad, Quad], Term]) with (Partial[WithSingleTerm[T] | WithTerms[T]]) with (Partial[WithSingleValue | WithValues])) = this()
 }
 

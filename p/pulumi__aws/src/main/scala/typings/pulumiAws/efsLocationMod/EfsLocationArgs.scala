@@ -25,7 +25,7 @@ trait EfsLocationArgs extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object EfsLocationArgs {
@@ -34,7 +34,7 @@ object EfsLocationArgs {
     ec2Config: Input[EfsLocationEc2Config],
     efsFileSystemArn: Input[ARN],
     subdirectory: Input[String] = null,
-    tags: Input[StringDictionary[Input[String]]] = null
+    tags: Input[StringDictionary[_]] = null
   ): EfsLocationArgs = {
     val __obj = js.Dynamic.literal(ec2Config = ec2Config.asInstanceOf[js.Any], efsFileSystemArn = efsFileSystemArn.asInstanceOf[js.Any])
     if (subdirectory != null) __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])

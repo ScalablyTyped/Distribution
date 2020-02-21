@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.toggleBaseMod.IToggleState
 import typings.officeUiFabricReact.toggleTypesMod.IToggleProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +17,7 @@ object libToggleMod extends js.Object {
     def this(props: IToggleProps) = this()
   }
   
-  val Toggle: StatelessComponent[IToggleProps] = js.native
+  val Toggle: FunctionComponent[IToggleProps] = js.native
   /* static members */
   @js.native
   object ToggleBase extends js.Object {

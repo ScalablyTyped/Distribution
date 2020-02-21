@@ -47,7 +47,7 @@ trait FunctionConfiguration extends js.Object {
     */
   var LastModified: js.UndefOr[Timestamp] = js.native
   /**
-    * The status of the last update that was performed on the function.
+    * The status of the last update that was performed on the function. This is first set to Successful after function creation completes.
     */
   var LastUpdateStatus: js.UndefOr[typings.awsSdk.lambdaMod.LastUpdateStatus] = js.native
   /**

@@ -2,9 +2,9 @@ package typings.heremaps.H.map.provider
 
 import typings.heremaps.H.map.Object
 import typings.heremaps.H.map.provider.TileProvider.Options
-import typings.heremaps.H.net.Request.Priority
 import typings.heremaps.H.util.ICache
 import typings.heremaps.H.util.ICancelable
+import typings.heremaps.H.util.Job.Priority
 import typings.std.ArrayBuffer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement

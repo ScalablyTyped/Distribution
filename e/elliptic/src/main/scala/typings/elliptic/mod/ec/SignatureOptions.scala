@@ -1,11 +1,12 @@
 package typings.elliptic.mod.ec
 
 import typings.elliptic.mod.BNInput
+import typings.elliptic.mod._SignatureInput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SignatureOptions extends js.Object {
+trait SignatureOptions extends _SignatureInput {
   var r: BNInput
   var recoveryParam: js.UndefOr[Double] = js.undefined
   var s: BNInput

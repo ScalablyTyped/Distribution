@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-plain-obj" : "2.0.0"
+      "is-plain-obj" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-plain-obj" : "2.0.0"
+      "is-plain-obj" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

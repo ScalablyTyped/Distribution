@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PARTICLEORIENTATION_EMITTER
+  * @type {number}
   * @description Similar to previous, but the normal is affected by emitter(entity) transformation.
   */
 @JSGlobal("pc.PARTICLEORIENTATION_EMITTER")

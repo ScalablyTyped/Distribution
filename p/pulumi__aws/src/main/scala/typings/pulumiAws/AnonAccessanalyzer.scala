@@ -137,6 +137,7 @@ trait AnonAccessanalyzer extends js.Object {
   var wafregional: js.UndefOr[String] = js.native
   var wafv2: js.UndefOr[String] = js.native
   var worklink: js.UndefOr[String] = js.native
+  var workmail: js.UndefOr[String] = js.native
   var workspaces: js.UndefOr[String] = js.native
   var xray: js.UndefOr[String] = js.native
 }
@@ -275,6 +276,7 @@ object AnonAccessanalyzer {
     wafregional: String = null,
     wafv2: String = null,
     worklink: String = null,
+    workmail: String = null,
     workspaces: String = null,
     xray: String = null
   ): AnonAccessanalyzer = {
@@ -410,6 +412,7 @@ object AnonAccessanalyzer {
     if (wafregional != null) __obj.updateDynamic("wafregional")(wafregional.asInstanceOf[js.Any])
     if (wafv2 != null) __obj.updateDynamic("wafv2")(wafv2.asInstanceOf[js.Any])
     if (worklink != null) __obj.updateDynamic("worklink")(worklink.asInstanceOf[js.Any])
+    if (workmail != null) __obj.updateDynamic("workmail")(workmail.asInstanceOf[js.Any])
     if (workspaces != null) __obj.updateDynamic("workspaces")(workspaces.asInstanceOf[js.Any])
     if (xray != null) __obj.updateDynamic("xray")(xray.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonAccessanalyzer]

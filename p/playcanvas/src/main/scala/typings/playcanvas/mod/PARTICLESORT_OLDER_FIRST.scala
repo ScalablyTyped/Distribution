@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PARTICLESORT_OLDER_FIRST
+  * @type {number}
   * @description Older particles are drawn first. CPU only.
   */
 @JSImport("playcanvas", "PARTICLESORT_OLDER_FIRST")

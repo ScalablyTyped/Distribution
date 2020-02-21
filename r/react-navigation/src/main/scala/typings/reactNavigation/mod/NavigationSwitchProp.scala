@@ -16,7 +16,6 @@ trait NavigationSwitchProp[State, Params] extends js.Object {
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
   var state: State with AnonParamsOptional[Params] = js.native
   def addListener(eventName: String, callback: NavigationEventCallback): NavigationEventSubscription = js.native
-  def closeDrawer(): js.Any = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[State, NavigationParams]] = js.native
   def dismiss(): Boolean = js.native
   @JSName("emit")
@@ -36,12 +35,10 @@ trait NavigationSwitchProp[State, Params] extends js.Object {
   def isFocused(): Boolean = js.native
   def jumpTo(routeName: String): Unit = js.native
   def jumpTo(routeName: String, key: String): Unit = js.native
-  def navigate(options: AnonActionKey): Boolean = js.native
-  def navigate(routeNameOrOptions: String): Boolean = js.native
-  def navigate(routeNameOrOptions: String, params: NavigationParams): Boolean = js.native
-  def navigate(routeNameOrOptions: String, params: NavigationParams, action: NavigationAction): Boolean = js.native
-  def openDrawer(): js.Any = js.native
+  def navigate[T /* <: NavigationParams */](options: AnonActionKey[T]): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T): Boolean = js.native
+  def navigate[T /* <: NavigationParams */](routeNameOrOptions: String, params: T, action: NavigationAction): Boolean = js.native
   def setParams(newParams: Partial[Params]): Boolean = js.native
-  def toggleDrawer(): js.Any = js.native
 }
 

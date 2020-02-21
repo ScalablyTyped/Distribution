@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetComponentRequest extends js.Object {
   /**
-    *  The Amazon Resource Name (ARN) of the component that you wish to retrieve. 
+    *  The Amazon Resource Name (ARN) of the component that you want to retrieve. Regex requires "/\d+$" suffix.
     */
   var componentBuildVersionArn: ComponentBuildVersionArn = js.native
 }

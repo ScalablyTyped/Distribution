@@ -14,8 +14,6 @@ class Collapse ()
   var contents: js.Any = js.native
   var contentsRefHandler: js.Any = js.native
   var onDelayedStateChange: js.Any = js.native
-  @JSName("state")
-  var state_Collapse: AnonAnimationStateHeight = js.native
   @JSName("componentDidMount")
   def componentDidMount_MCollapse(): Unit = js.native
   @JSName("componentDidUpdate")
@@ -28,6 +26,6 @@ class Collapse ()
 object Collapse extends js.Object {
   var defaultProps: ICollapseProps = js.native
   var displayName: String = js.native
-  def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnonAnimationState = js.native
+  def getDerivedStateFromProps(props: ICollapseProps, state: ICollapseState): AnonAnimationState | AnonAnimationStateHeight = js.native
 }
 

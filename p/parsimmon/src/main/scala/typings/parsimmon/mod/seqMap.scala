@@ -74,5 +74,53 @@ object seqMap extends js.Object {
       B
     ]
   ): Parser[B] = js.native
+  def apply[T, U, V, W, X, Y, Z, A, B, C](
+    p1: Parser[T],
+    p2: Parser[U],
+    p3: Parser[V],
+    p4: Parser[W],
+    p5: Parser[X],
+    p6: Parser[Y],
+    p7: Parser[Z],
+    p8: Parser[A],
+    p9: Parser[B],
+    cb: js.Function9[
+      /* a1 */ T, 
+      /* a2 */ U, 
+      /* a3 */ V, 
+      /* a4 */ W, 
+      /* a5 */ X, 
+      /* a6 */ Y, 
+      /* a7 */ Z, 
+      /* a8 */ A, 
+      /* a9 */ B, 
+      C
+    ]
+  ): Parser[C] = js.native
+  def apply[T, U, V, W, X, Y, Z, A, B, C, D](
+    p1: Parser[T],
+    p2: Parser[U],
+    p3: Parser[V],
+    p4: Parser[W],
+    p5: Parser[X],
+    p6: Parser[Y],
+    p7: Parser[Z],
+    p8: Parser[A],
+    p9: Parser[B],
+    p10: Parser[C],
+    cb: js.Function10[
+      /* a1 */ T, 
+      /* a2 */ U, 
+      /* a3 */ V, 
+      /* a4 */ W, 
+      /* a5 */ X, 
+      /* a6 */ Y, 
+      /* a7 */ Z, 
+      /* a8 */ A, 
+      /* a9 */ B, 
+      /* a10 */ C, 
+      D
+    ]
+  ): Parser[D] = js.native
 }
 

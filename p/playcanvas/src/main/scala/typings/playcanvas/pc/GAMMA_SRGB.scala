@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.GAMMA_SRGB
+  * @type {number}
   * @description Apply sRGB gamma correction.
   */
 @JSGlobal("pc.GAMMA_SRGB")

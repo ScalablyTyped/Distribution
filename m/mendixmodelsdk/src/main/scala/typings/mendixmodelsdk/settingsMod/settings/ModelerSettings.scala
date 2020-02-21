@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.settingsMod.settings
 
 import typings.mendixmodelsdk.baseModelMod.IModel
+import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.internalMod.AbstractElement
 import typings.mendixmodelsdk.internalMod.AbstractModel
 import typings.mendixmodelsdk.internalMod.ModelUnit
@@ -22,6 +23,10 @@ class ModelerSettings protected () extends ProjectSettingsPart {
   ) = this()
   @JSName("model")
   var model_FModelerSettings: IModel = js.native
+  /**
+    * In version 8.6.0: introduced
+    */
+  def actionActivityDefaultColors(): IList[ActionActivityDefaultColor] = js.native
   def lowerCaseMicroflowVariables(): Boolean = js.native
   def lowerCaseMicroflowVariables(newValue: Boolean): js.Any = js.native
 }

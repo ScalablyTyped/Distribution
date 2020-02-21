@@ -5,6 +5,8 @@ import typings.queryString.queryStringStrings.bracket
 import typings.queryString.queryStringStrings.comma
 import typings.queryString.queryStringStrings.index
 import typings.queryString.queryStringStrings.none
+import typings.queryString.queryStringStrings.separator
+import typings.queryString.queryStringStrings.string
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,6 +32,12 @@ trait ParseOptions extends js.Object {
   		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
   		//=> {foo: ['1', '2', '3']}
   		```
+  	- `separator`: Parse arrays with elements separated by a custom character:
+  		```
+  		import queryString = require('query-string');
+  		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
+  		//=> {foo: ['1', '2', '3']}
+  		```
   	- `none`: Parse arrays with elements using duplicate keys:
   		```
   		import queryString = require('query-string');
@@ -37,7 +45,12 @@ trait ParseOptions extends js.Object {
   		//=> {foo: ['1', '2', '3']}
   		```
   	*/
-  val arrayFormat: js.UndefOr[bracket | index | comma | none] = js.undefined
+  val arrayFormat: js.UndefOr[bracket | index | comma | separator | none] = js.undefined
+  /**
+  	The character used to separate array elements when using `{arrayFormat: 'separator'}`.
+  	@default ,
+  	*/
+  val arrayFormatSeparator: js.UndefOr[string] = js.undefined
   /**
   	Decode the keys and values. URI components are decoded with [`decode-uri-component`](https://github.com/SamVerschueren/decode-uri-component).
   	@default true
@@ -91,7 +104,8 @@ trait ParseOptions extends js.Object {
 object ParseOptions {
   @scala.inline
   def apply(
-    arrayFormat: bracket | index | comma | none = null,
+    arrayFormat: bracket | index | comma | separator | none = null,
+    arrayFormatSeparator: string = null,
     decode: js.UndefOr[Boolean] = js.undefined,
     parseBooleans: js.UndefOr[Boolean] = js.undefined,
     parseNumbers: js.UndefOr[Boolean] = js.undefined,
@@ -99,6 +113,7 @@ object ParseOptions {
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
+    if (arrayFormatSeparator != null) __obj.updateDynamic("arrayFormatSeparator")(arrayFormatSeparator.asInstanceOf[js.Any])
     if (!js.isUndefined(decode)) __obj.updateDynamic("decode")(decode.asInstanceOf[js.Any])
     if (!js.isUndefined(parseBooleans)) __obj.updateDynamic("parseBooleans")(parseBooleans.asInstanceOf[js.Any])
     if (!js.isUndefined(parseNumbers)) __obj.updateDynamic("parseNumbers")(parseNumbers.asInstanceOf[js.Any])

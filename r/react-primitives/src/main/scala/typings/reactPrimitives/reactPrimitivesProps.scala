@@ -1,11 +1,18 @@
 package typings.reactPrimitives
 
+import typings.reactNative.mod.Animated.AnimatedProps
 import typings.reactNative.mod.TouchableOpacityProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactPrimitivesProps {
+  type AnimatedFlatListProps[T] = AnimatedProps[T]
+  type AnimatedImageProps[T] = AnimatedProps[T]
+  type AnimatedScrollViewProps[T] = AnimatedProps[T]
+  type AnimatedSectionListProps[T] = AnimatedProps[T]
+  type AnimatedTextProps[T] = AnimatedProps[T]
+  type AnimatedViewProps[T] = AnimatedProps[T]
   @scala.inline
   def ImageProps: typings.reactNative.mod.ImageProps.type = typings.reactNative.mod.ImageProps
   type ImageProps = typings.reactNative.mod.ImageProps

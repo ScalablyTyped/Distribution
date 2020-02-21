@@ -23,9 +23,17 @@ trait CreateVpcRequest extends js.Object {
     */
   var InstanceTenancy: js.UndefOr[Tenancy] = js.native
   /**
+    * The IPv6 CIDR block from the IPv6 address pool. You must also specify Ipv6Pool in the request. To let Amazon choose the IPv6 CIDR block for you, omit this parameter.
+    */
+  var Ipv6CidrBlock: js.UndefOr[String] = js.native
+  /**
     * The name of the location from which we advertise the IPV6 CIDR block. Use this parameter to limit the address to this location.  You must set AmazonProvidedIpv6CidrBlock to true to use this parameter.
     */
   var Ipv6CidrBlockNetworkBorderGroup: js.UndefOr[String] = js.native
+  /**
+    * The ID of an IPv6 address pool from which to allocate the IPv6 CIDR block.
+    */
+  var Ipv6Pool: js.UndefOr[String] = js.native
 }
 
 object CreateVpcRequest {
@@ -35,13 +43,17 @@ object CreateVpcRequest {
     AmazonProvidedIpv6CidrBlock: js.UndefOr[scala.Boolean] = js.undefined,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     InstanceTenancy: Tenancy = null,
-    Ipv6CidrBlockNetworkBorderGroup: String = null
+    Ipv6CidrBlock: String = null,
+    Ipv6CidrBlockNetworkBorderGroup: String = null,
+    Ipv6Pool: String = null
   ): CreateVpcRequest = {
     val __obj = js.Dynamic.literal(CidrBlock = CidrBlock.asInstanceOf[js.Any])
     if (!js.isUndefined(AmazonProvidedIpv6CidrBlock)) __obj.updateDynamic("AmazonProvidedIpv6CidrBlock")(AmazonProvidedIpv6CidrBlock.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     if (InstanceTenancy != null) __obj.updateDynamic("InstanceTenancy")(InstanceTenancy.asInstanceOf[js.Any])
+    if (Ipv6CidrBlock != null) __obj.updateDynamic("Ipv6CidrBlock")(Ipv6CidrBlock.asInstanceOf[js.Any])
     if (Ipv6CidrBlockNetworkBorderGroup != null) __obj.updateDynamic("Ipv6CidrBlockNetworkBorderGroup")(Ipv6CidrBlockNetworkBorderGroup.asInstanceOf[js.Any])
+    if (Ipv6Pool != null) __obj.updateDynamic("Ipv6Pool")(Ipv6Pool.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcRequest]
   }
 }

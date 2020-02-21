@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object screenMod extends js.Object {
   val screen: Screen_[Typeofqueries] = js.native
-  type Screen_[Q /* <: Queries */] = BoundFunctions[Q]
+  type Screen_[Q /* <: Queries */] = BoundFunctions[Q] with AnonDebug
 }
 

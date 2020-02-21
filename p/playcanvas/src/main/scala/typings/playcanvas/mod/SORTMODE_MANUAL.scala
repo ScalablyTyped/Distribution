@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.SORTMODE_MANUAL
+  * @type {number}
   * @description Mesh instances are sorted based on {@link pc.MeshInstance#drawOrder}.
   */
 @JSImport("playcanvas", "SORTMODE_MANUAL")

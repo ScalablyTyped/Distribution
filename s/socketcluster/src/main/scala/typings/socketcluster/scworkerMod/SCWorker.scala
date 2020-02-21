@@ -3,6 +3,7 @@ package typings.socketcluster.scworkerMod
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.Server
 import typings.scAuth.mod.SCAuthEngine
+import typings.scBrokerCluster.mod.SCExchange
 import typings.socketcluster.AnonClientCount
 import typings.socketcluster.socketclusterStrings.connection
 import typings.socketcluster.socketclusterStrings.error
@@ -25,7 +26,7 @@ trait SCWorker extends EventEmitter {
   val EVENT_WARNING: warning = js.native
   val MIDDLEWARE_START: start = js.native
   var auth: SCAuthEngine = js.native
-  var exchange: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCExchange */ js.Any = js.native
+  var exchange: SCExchange = js.native
   var httpServer: Server | typings.node.httpsMod.Server = js.native
   var id: Double = js.native
   var isLeader: Boolean = js.native

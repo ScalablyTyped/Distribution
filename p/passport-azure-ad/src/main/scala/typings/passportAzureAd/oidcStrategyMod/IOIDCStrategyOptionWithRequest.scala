@@ -32,6 +32,7 @@ object IOIDCStrategyOptionWithRequest {
     clientSecret: String = null,
     clockSkew: Int | Double = null,
     cookieEncryptionKeys: js.Array[AnonIv] = null,
+    cookieSameSite: js.UndefOr[Boolean] = js.undefined,
     isB2C: js.UndefOr[Boolean] = js.undefined,
     issuer: String | js.Array[String] = null,
     loggingLevel: info | warn | error = null,
@@ -49,6 +50,7 @@ object IOIDCStrategyOptionWithRequest {
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
     if (clockSkew != null) __obj.updateDynamic("clockSkew")(clockSkew.asInstanceOf[js.Any])
     if (cookieEncryptionKeys != null) __obj.updateDynamic("cookieEncryptionKeys")(cookieEncryptionKeys.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookieSameSite)) __obj.updateDynamic("cookieSameSite")(cookieSameSite.asInstanceOf[js.Any])
     if (!js.isUndefined(isB2C)) __obj.updateDynamic("isB2C")(isB2C.asInstanceOf[js.Any])
     if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
     if (loggingLevel != null) __obj.updateDynamic("loggingLevel")(loggingLevel.asInstanceOf[js.Any])

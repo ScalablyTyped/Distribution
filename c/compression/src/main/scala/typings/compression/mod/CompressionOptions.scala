@@ -1,5 +1,6 @@
 package typings.compression.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
 import typings.express.mod.Response_
 import typings.expressServeStaticCore.mod.ParamsDictionary
@@ -7,9 +8,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CompressionOptions extends js.Object {
+/**
+  * compression() accepts these properties in the options object.
+  * In addition to those listed below, `zlib` options may be passed in to the options object.
+  */
+trait CompressionOptions
+  extends /**
+  * In addition , `zlib` options may be passed in to the options object.
+  */
+/* property */ StringDictionary[js.Any] {
   /**
-    * @default zlib.Z_DEFAULT_CHUNK or 16384
+    * @default zlib.constants.Z_DEFAULT_CHUNK or 16384
     * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning| Node.js documentation}
     * @see {@link https://github.com/expressjs/compression#chunksize|chunkSize documentation}
     */
@@ -27,16 +36,6 @@ trait CompressionOptions extends js.Object {
     */
   var filter: js.UndefOr[CompressionFilter] = js.undefined
   /**
-    * @default zlib.Z_FINISH
-    * @see {@link https://nodejs.org/api/zlib.html#zlib_class_options|Zlib class options}
-    */
-  var finishFlush: js.UndefOr[Double] = js.undefined
-  /**
-    * @default zlib.Z_NO_FLUSH
-    * @see {@link https://nodejs.org/api/zlib.html#zlib_class_options|Zlib class options}
-    */
-  var flush: js.UndefOr[Double] = js.undefined
-  /**
     * The level of zlib compression to apply to responses. A higher level will result in better compression, but
     * will take longer to complete. A lower level will result in less compression, but will be much faster.
     *
@@ -44,21 +43,21 @@ trait CompressionOptions extends js.Object {
     * can be used to mean the "default compression level", which is a default compromise between speed and
     * compression (currently equivalent to level 6).
     *
-    * - `-1` Default compression level (also `zlib.Z_DEFAULT_COMPRESSION`).
-    * - `0` No compression (also `zlib.Z_NO_COMPRESSION`).
-    * - `1` Fastest compression (also `zlib.Z_BEST_SPEED`).
+    * - `-1` Default compression level (also `zlib.constants.Z_DEFAULT_COMPRESSION`).
+    * - `0` No compression (also `zlib.constants.Z_NO_COMPRESSION`).
+    * - `1` Fastest compression (also `zlib.constants.Z_BEST_SPEED`).
     * - `2`
     * - `3`
     * - `4`
     * - `5`
-    * - `6` (currently what `zlib.Z_DEFAULT_COMPRESSION` points to).
+    * - `6` (currently what `zlib.constants.Z_DEFAULT_COMPRESSION` points to).
     * - `7`
     * - `8`
-    * - `9` Best compression (also `zlib.Z_BEST_COMPRESSION`).
+    * - `9` Best compression (also `zlib.constants.Z_BEST_COMPRESSION`).
     *
     * **Note** in the list above, `zlib` is from `zlib = require('zlib')`.
     *
-    * @default zlib.DEFAULT_COMPRESSION or -1
+    * @default zlib.constants.DEFAULT_COMPRESSION or -1
     * @see {@link https://github.com/expressjs/compression#level|`level` documentation}
     */
   var level: js.UndefOr[Double] = js.undefined
@@ -66,7 +65,7 @@ trait CompressionOptions extends js.Object {
     * This specifies how much memory should be allocated for the internal compression state and is an integer in
     * the range of `1` (minimum level) and `9` (maximum level).
     *
-    * @default zlib.DEFAULT_MEMLEVEL or 8
+    * @default zlib.constants.DEFAULT_MEMLEVEL or 8
     * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
     * @see {@link https://github.com/expressjs/compression#memlevel|`memLevel` documentation}
     */
@@ -75,15 +74,15 @@ trait CompressionOptions extends js.Object {
     * This is used to tune the compression algorithm. This value only affects the compression ratio, not the
     * correctness of the compressed output, even if it is not set appropriately.
     *
-    * - `zlib.Z_DEFAULT_STRATEGY` Use for normal data.
-    * - `zlib.Z_FILTERED` Use for data produced by a filter (or predictor). Filtered data consists mostly of small
+    * - `zlib.constants.Z_DEFAULT_STRATEGY` Use for normal data.
+    * - `zlib.constants.Z_FILTERED` Use for data produced by a filter (or predictor). Filtered data consists mostly of small
     *   values with a somewhat random distribution. In this case, the compression algorithm is tuned to compress
     *   them better. The effect is to force more Huffman coding and less string matching; it is somewhat intermediate
-    *   between `zlib.Z_DEFAULT_STRATEGY` and `zlib.Z_HUFFMAN_ONLY`.
-    * - `zlib.Z_FIXED` Use to prevent the use of dynamic Huffman codes, allowing for a simpler decoder for special applications.
-    * - `zlib.Z_HUFFMAN_ONLY` Use to force Huffman encoding only (no string match).
-    * - `zlib.Z_RLE` Use to limit match distances to one (run-length encoding). This is designed to be almost as
-    *    fast as `zlib.Z_HUFFMAN_ONLY`, but give better compression for PNG image data.
+    *   between `zlib.constants.Z_DEFAULT_STRATEGY` and `zlib.constants.Z_HUFFMAN_ONLY`.
+    * - `zlib.constants.Z_FIXED` Use to prevent the use of dynamic Huffman codes, allowing for a simpler decoder for special applications.
+    * - `zlib.constants.Z_HUFFMAN_ONLY` Use to force Huffman encoding only (no string match).
+    * - `zlib.constants.Z_RLE` Use to limit match distances to one (run-length encoding). This is designed to be almost as
+    *    fast as `zlib.constants.Z_HUFFMAN_ONLY`, but give better compression for PNG image data.
     *
     * **Note** in the list above, `zlib` is from `zlib = require('zlib')`.
     */
@@ -101,7 +100,7 @@ trait CompressionOptions extends js.Object {
     */
   var threshold: js.UndefOr[Double | String] = js.undefined
   /**
-    * @default zlib.Z_DEFAULT_WINDOWBITS or 15.
+    * @default zlib.constants.Z_DEFAULT_WINDOWBITS or 15.
     * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
     */
   var windowBits: js.UndefOr[Double] = js.undefined
@@ -110,10 +109,12 @@ trait CompressionOptions extends js.Object {
 object CompressionOptions {
   @scala.inline
   def apply(
+    StringDictionary: /**
+    * In addition , `zlib` options may be passed in to the options object.
+    */
+  /* property */ StringDictionary[js.Any] = null,
     chunkSize: Int | Double = null,
     filter: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null,
-    finishFlush: Int | Double = null,
-    flush: Int | Double = null,
     level: Int | Double = null,
     memLevel: Int | Double = null,
     strategy: Int | Double = null,
@@ -121,10 +122,9 @@ object CompressionOptions {
     windowBits: Int | Double = null
   ): CompressionOptions = {
     val __obj = js.Dynamic.literal()
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (finishFlush != null) __obj.updateDynamic("finishFlush")(finishFlush.asInstanceOf[js.Any])
-    if (flush != null) __obj.updateDynamic("flush")(flush.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (memLevel != null) __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
     if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])

@@ -1,24 +1,23 @@
 organization := "org.scalablytyped"
 name := "angular__platform-browser"
-version := "8.2.14-21cd67"
-scalaVersion := "2.12.10"
+version := "8.2.14-239863"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular__animations" % "8.2.14-698476",
-  "org.scalablytyped" %%% "angular__common" % "8.2.14-5928fd",
-  "org.scalablytyped" %%% "angular__compiler" % "8.2.14-f936ad",
-  "org.scalablytyped" %%% "angular__core" % "8.2.14-5e9c54",
-  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20190731Z-9633df",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "rxjs" % "6.5.4-81a9cd",
-  "org.scalablytyped" %%% "rxjs-compat" % "6.5.4-a24188",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-b35991",
-  "org.scalablytyped" %%% "typescript" % "3.7.5-6c2ac7")
+  "org.scalablytyped" %%% "angular__animations" % "8.2.14-bc05e0",
+  "org.scalablytyped" %%% "angular__common" % "8.2.14-fd437b",
+  "org.scalablytyped" %%% "angular__compiler" % "8.2.14-c5a41a",
+  "org.scalablytyped" %%% "angular__core" % "8.2.14-534f48",
+  "org.scalablytyped" %%% "inquirer" % "6.5-dt-20190731Z-16b5a8",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "rxjs" % "6.5.4-9b8c0f",
+  "org.scalablytyped" %%% "rxjs-compat" % "6.5.4-f03c74",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20200121Z-de6228",
+  "org.scalablytyped" %%% "typescript" % "3.7.5-a12244")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

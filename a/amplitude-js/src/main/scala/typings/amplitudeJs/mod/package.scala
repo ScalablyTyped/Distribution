@@ -11,5 +11,5 @@ package object mod {
     /* details */ js.UndefOr[typings.amplitudeJs.AnonReason], 
     scala.Unit
   ]
-  type LogReturn = scala.Double | scala.Unit
+  type LogReturn = js.UndefOr[scala.Double]
 }

@@ -39,7 +39,7 @@ trait InstanceNetworkInterfaceSpecification extends js.Object {
     */
   var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.native
   /**
-    * The ID of the network interface.
+    * The ID of the network interface. If you are creating a Spot Fleet, omit this parameter because you can’t specify a network interface ID in a launch specification.
     */
   var NetworkInterfaceId: js.UndefOr[String] = js.native
   /**

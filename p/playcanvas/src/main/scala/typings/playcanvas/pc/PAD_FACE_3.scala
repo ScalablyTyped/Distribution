@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.PAD_FACE_3
-  * @description The third face button, from bottom going clockwise
+  * @description The third face button, from bottom going clockwise.
   */
 @JSGlobal("pc.PAD_FACE_3")
 @js.native

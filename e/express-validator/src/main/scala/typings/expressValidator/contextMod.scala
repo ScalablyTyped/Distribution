@@ -34,7 +34,6 @@ object contextMod extends js.Object {
     ) = this()
     val _errors: js.Any = js.native
     val dataMap: js.Any = js.native
-    val errors: js.Array[ValidationError] = js.native
     val fields: js.Array[String] = js.native
     val locations: js.Array[Location] = js.native
     val message: js.UndefOr[js.Any] = js.native
@@ -43,6 +42,7 @@ object contextMod extends js.Object {
     def addError(message: js.Any, nestedErrors: js.Array[ValidationError]): Unit = js.native
     def addError(message: js.Any, value: js.Any, meta: Meta): Unit = js.native
     def addFieldInstances(instances: js.Array[FieldInstance]): Unit = js.native
+    def errors(): js.Array[ValidationError] = js.native
     def getData(): js.Array[FieldInstance] = js.native
     def getData(options: AnonRequiredOnly): js.Array[FieldInstance] = js.native
     def setData(path: String, value: js.Any, location: Location): Unit = js.native

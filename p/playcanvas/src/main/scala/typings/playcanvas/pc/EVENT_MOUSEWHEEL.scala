@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.EVENT_MOUSEWHEEL
-  * @description Name of event fired when the mouse wheel is rotated
+  * @description Name of event fired when the mouse wheel is rotated.
   */
 @JSGlobal("pc.EVENT_MOUSEWHEEL")
 @js.native

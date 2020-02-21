@@ -17,6 +17,7 @@ object ActionActivityColor extends js.Object {
   var Default: ActionActivityColor = js.native
   var Gray: ActionActivityColor = js.native
   var Green: ActionActivityColor = js.native
+  var LightBlue: ActionActivityColor = js.native
   var Orange: ActionActivityColor = js.native
   var Purple: ActionActivityColor = js.native
   var Red: ActionActivityColor = js.native

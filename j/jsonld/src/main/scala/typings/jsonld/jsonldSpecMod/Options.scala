@@ -17,14 +17,14 @@ object Options {
   def apply(
     base: DOMString = null,
     compactArrays: js.UndefOr[Boolean] = js.undefined,
-    documentLoader: LoadDocumentCallback = null,
+    documentLoader: /* url */ Url => js.Promise[RemoteDocument] = null,
     expandContext: Context = null,
     processingMode: DOMString = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (!js.isUndefined(compactArrays)) __obj.updateDynamic("compactArrays")(compactArrays.asInstanceOf[js.Any])
-    if (documentLoader != null) __obj.updateDynamic("documentLoader")(documentLoader.asInstanceOf[js.Any])
+    if (documentLoader != null) __obj.updateDynamic("documentLoader")(js.Any.fromFunction1(documentLoader))
     if (expandContext != null) __obj.updateDynamic("expandContext")(expandContext.asInstanceOf[js.Any])
     if (processingMode != null) __obj.updateDynamic("processingMode")(processingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

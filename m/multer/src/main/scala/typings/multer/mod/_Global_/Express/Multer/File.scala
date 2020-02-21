@@ -5,26 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Object containing file metadata and access information. */
 trait File extends js.Object {
-  /** A Buffer of the entire file (MemoryStorage) */
+  /** `MemoryStorage` A Buffer containing the entire file. */
   var buffer: Buffer
-  /** The folder to which the file has been saved (DiskStorage) */
+  /** `DiskStorage` Directory to which this file has been uploaded. */
   var destination: String
-  /** Encoding type of the file */
+  /**
+    * Value of the `Content-Transfer-Encoding` header for this file.
+    * @deprecated since July 2015
+    * @see RFC 7578, Section 4.7
+    */
   var encoding: String
-  /** Field name specified in the form */
+  /** Name of the form field associated with this file. */
   var fieldname: String
-  /** The name of the file within the destination (DiskStorage) */
+  /** `DiskStorage` Name of this file within `destination`. */
   var filename: String
-  /** The url where to get the uploaded file (aws S3 for example) */
-  var location: String
-  /** Mime type of the file */
+  /** Value of the `Content-Type` header for this file. */
   var mimetype: String
-  /** Name of the file on the user's computer */
+  /** Name of the file on the uploader's computer. */
   var originalname: String
-  /** Location of the uploaded file (DiskStorage) */
+  /** `DiskStorage` Full path to the uploaded file. */
   var path: String
-  /** Size of the file in bytes */
+  /** Size of the file in bytes. */
   var size: Double
 }
 
@@ -36,13 +39,12 @@ object File {
     encoding: String,
     fieldname: String,
     filename: String,
-    location: String,
     mimetype: String,
     originalname: String,
     path: String,
     size: Double
   ): File = {
-    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], fieldname = fieldname.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], originalname = originalname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], fieldname = fieldname.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], originalname = originalname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[File]
   }

@@ -41,6 +41,7 @@ trait Typeofui extends js.Object {
     typings.kendoUi.kendo.ui.DropTargetArea
   ] = js.native
   var Editor: TypeofClassEditor = js.native
+  var FileManager: TypeofClassFileManager = js.native
   var Filter: TypeofClassFilter = js.native
   var FilterMenu: TypeofClassFilterMenu = js.native
   var FlatColorPicker: TypeofClassFlatColorPicker = js.native

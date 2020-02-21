@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.ScopeId
   * @classdesc The scope for a variable.
-  * @param {String} name The variable name.
-  * @property {String} name The variable name.
+  * @param {string} name - The variable name.
+  * @property {string} name The variable name.
   */
 @JSImport("playcanvas", "ScopeId")
 @js.native

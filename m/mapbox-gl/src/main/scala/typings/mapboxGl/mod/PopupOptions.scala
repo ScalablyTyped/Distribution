@@ -10,6 +10,10 @@ trait PopupOptions extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var closeButton: js.UndefOr[Boolean] = js.undefined
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @param {boolean} [options.closeOnMove=false] If `true`, the popup will closed when the map moves.
+    */
+  var closeOnMove: js.UndefOr[Boolean] = js.undefined
   var maxWidth: js.UndefOr[String] = js.undefined
   var offset: js.UndefOr[Double | PointLike | StringDictionary[PointLike]] = js.undefined
 }
@@ -21,6 +25,7 @@ object PopupOptions {
     className: String = null,
     closeButton: js.UndefOr[Boolean] = js.undefined,
     closeOnClick: js.UndefOr[Boolean] = js.undefined,
+    closeOnMove: js.UndefOr[Boolean] = js.undefined,
     maxWidth: String = null,
     offset: Double | PointLike | StringDictionary[PointLike] = null
   ): PopupOptions = {
@@ -29,6 +34,7 @@ object PopupOptions {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
     if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
+    if (!js.isUndefined(closeOnMove)) __obj.updateDynamic("closeOnMove")(closeOnMove.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOptions]

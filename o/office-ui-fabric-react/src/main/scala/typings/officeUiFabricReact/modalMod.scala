@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.modalTypesMod.IModalProps
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +15,7 @@ object modalMod extends js.Object {
     def this(props: IModalProps) = this()
   }
   
-  val Modal: StatelessComponent[IModalProps] = js.native
+  val Modal: FunctionComponent[IModalProps] = js.native
   /* static members */
   @js.native
   object ModalBase extends js.Object {

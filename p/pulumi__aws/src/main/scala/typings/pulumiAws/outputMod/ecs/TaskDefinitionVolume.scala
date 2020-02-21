@@ -11,6 +11,10 @@ trait TaskDefinitionVolume extends js.Object {
     */
   var dockerVolumeConfiguration: js.UndefOr[TaskDefinitionVolumeDockerVolumeConfiguration] = js.native
   /**
+    * Used to configure a EFS volume. Can be used only with an EC2 type task.
+    */
+  var efsVolumeConfiguration: js.UndefOr[TaskDefinitionVolumeEfsVolumeConfiguration] = js.native
+  /**
     * The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
     */
   var hostPath: js.UndefOr[String] = js.native
@@ -26,10 +30,12 @@ object TaskDefinitionVolume {
   def apply(
     name: String,
     dockerVolumeConfiguration: TaskDefinitionVolumeDockerVolumeConfiguration = null,
+    efsVolumeConfiguration: TaskDefinitionVolumeEfsVolumeConfiguration = null,
     hostPath: String = null
   ): TaskDefinitionVolume = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (dockerVolumeConfiguration != null) __obj.updateDynamic("dockerVolumeConfiguration")(dockerVolumeConfiguration.asInstanceOf[js.Any])
+    if (efsVolumeConfiguration != null) __obj.updateDynamic("efsVolumeConfiguration")(efsVolumeConfiguration.asInstanceOf[js.Any])
     if (hostPath != null) __obj.updateDynamic("hostPath")(hostPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionVolume]
   }

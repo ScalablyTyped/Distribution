@@ -13,7 +13,7 @@ trait SpotFleetRequestConfig extends js.Object {
   /**
     * The creation date and time of the request.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.native
+  var CreateTime: js.UndefOr[MillisecondDateTime] = js.native
   /**
     * The configuration of the Spot Fleet request.
     */
@@ -26,16 +26,21 @@ trait SpotFleetRequestConfig extends js.Object {
     * The state of the Spot Fleet request.
     */
   var SpotFleetRequestState: js.UndefOr[BatchState] = js.native
+  /**
+    * The tags for a Spot Fleet resource.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object SpotFleetRequestConfig {
   @scala.inline
   def apply(
     ActivityStatus: ActivityStatus = null,
-    CreateTime: DateTime = null,
+    CreateTime: MillisecondDateTime = null,
     SpotFleetRequestConfig: SpotFleetRequestConfigData = null,
     SpotFleetRequestId: String = null,
-    SpotFleetRequestState: BatchState = null
+    SpotFleetRequestState: BatchState = null,
+    Tags: TagList = null
   ): SpotFleetRequestConfig = {
     val __obj = js.Dynamic.literal()
     if (ActivityStatus != null) __obj.updateDynamic("ActivityStatus")(ActivityStatus.asInstanceOf[js.Any])
@@ -43,6 +48,7 @@ object SpotFleetRequestConfig {
     if (SpotFleetRequestConfig != null) __obj.updateDynamic("SpotFleetRequestConfig")(SpotFleetRequestConfig.asInstanceOf[js.Any])
     if (SpotFleetRequestId != null) __obj.updateDynamic("SpotFleetRequestId")(SpotFleetRequestId.asInstanceOf[js.Any])
     if (SpotFleetRequestState != null) __obj.updateDynamic("SpotFleetRequestState")(SpotFleetRequestState.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetRequestConfig]
   }
 }

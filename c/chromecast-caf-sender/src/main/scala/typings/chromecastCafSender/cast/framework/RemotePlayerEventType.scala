@@ -51,6 +51,9 @@ object RemotePlayerEventType extends js.Object {
   sealed trait IS_PAUSED_CHANGED extends RemotePlayerEventType
   
   @js.native
+  sealed trait LIVE_SEEKABLE_RANGE_CHANGED extends RemotePlayerEventType
+  
+  @js.native
   sealed trait MEDIA_INFO_CHANGED extends RemotePlayerEventType
   
   @js.native
@@ -105,6 +108,9 @@ object RemotePlayerEventType extends js.Object {
   
   /* "isPausedChanged" */ @js.native
   object IS_PAUSED_CHANGED extends TopLevel[IS_PAUSED_CHANGED with String]
+  
+  /* "liveSeekableRange" */ @js.native
+  object LIVE_SEEKABLE_RANGE_CHANGED extends TopLevel[LIVE_SEEKABLE_RANGE_CHANGED with String]
   
   /* "mediaInfoChanged" */ @js.native
   object MEDIA_INFO_CHANGED extends TopLevel[MEDIA_INFO_CHANGED with String]

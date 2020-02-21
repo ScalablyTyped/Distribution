@@ -36,7 +36,7 @@ trait ChartSeriesItem extends js.Object {
   var line: js.UndefOr[String | ChartSeriesItemLine] = js.undefined
   var lowField: js.UndefOr[String] = js.undefined
   var lowerField: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[ChartSeriesItemMargin] = js.undefined
+  var margin: js.UndefOr[Double | ChartSeriesItemMargin] = js.undefined
   var markers: js.UndefOr[ChartSeriesItemMarkers] = js.undefined
   var maxSize: js.UndefOr[Double] = js.undefined
   var meanField: js.UndefOr[String] = js.undefined
@@ -121,7 +121,7 @@ object ChartSeriesItem {
     line: String | ChartSeriesItemLine = null,
     lowField: String = null,
     lowerField: String = null,
-    margin: ChartSeriesItemMargin = null,
+    margin: Double | ChartSeriesItemMargin = null,
     markers: ChartSeriesItemMarkers = null,
     maxSize: Int | Double = null,
     meanField: String = null,

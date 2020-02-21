@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.LAYERID_DEPTH
+  * @type {number}
   * @description The depth layer.
   */
 @JSImport("playcanvas", "LAYERID_DEPTH")

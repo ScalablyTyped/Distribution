@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeclineInvitationsResponse extends js.Object {
   /**
-    * A list of account ID and email address pairs of the AWS accounts that weren't processed.
+    * The list of AWS accounts that were not processed. For each account, the list includes the account ID and the email address.
     */
   var UnprocessedAccounts: js.UndefOr[ResultList] = js.native
 }

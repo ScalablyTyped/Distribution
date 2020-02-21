@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * @namespace
   * @name pc.platform
-  * @description Global namespace that stores flags regarding platform environment and features support
+  * @description Global namespace that stores flags regarding platform environment and features support.
   * @example
   * if (pc.platform.touch) {
   *     // touch is supported
@@ -19,73 +19,73 @@ object platform extends js.Object {
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.android
-    * @description if it is Android
+    * @description If it is Android.
     */
   val android: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.desktop
-    * @description is it a desktop or laptop device
+    * @description Is it a desktop or laptop device.
     */
   val desktop: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.gamepads
-    * @description if platform supports gamepads
+    * @description If platform supports gamepads.
     */
   val gamepads: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.ios
-    * @description if it is iOS
+    * @description If it is iOS.
     */
   val ios: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.mobile
-    * @description is it a mobile or tablet device
+    * @description Is it a mobile or tablet device.
     */
   val mobile: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.touch
-    * @description if platform supports touch input
+    * @description If platform supports touch input.
     */
   val touch: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.windows
-    * @description if it is Windows
+    * @description If it is Windows.
     */
   val windows: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.workers
-    * @description if the platform supports Web Workers
+    * @description If the platform supports Web Workers.
     */
   val workers: Boolean = js.native
   /**
     * @static
     * @readonly
-    * @type {Boolean}
+    * @type {boolean}
     * @name pc.platform.xbox
-    * @description if it is Xbox
+    * @description If it is Xbox.
     */
   val xbox: Boolean = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigationReplaceAction extends NavigationStackAction {
-  var action: js.UndefOr[NavigationNavigateAction] = js.undefined
+  var action: js.UndefOr[NavigationAction] = js.undefined
   var key: String
   var params: js.UndefOr[NavigationParams] = js.undefined
   var routeName: String
@@ -19,7 +19,7 @@ object NavigationReplaceAction {
     key: String,
     routeName: String,
     `type`: NavigationSlashREPLACE,
-    action: NavigationNavigateAction = null,
+    action: NavigationAction = null,
     params: NavigationParams = null
   ): NavigationReplaceAction = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any])

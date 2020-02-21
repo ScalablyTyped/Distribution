@@ -15,7 +15,7 @@ trait DBEngineVersion extends js.Object {
     */
   var DBEngineVersionDescription: js.UndefOr[String] = js.native
   /**
-    * The name of the DB parameter group family for the database engine.
+    * The name of the parameter group family for the database engine.
     */
   var DBParameterGroupFamily: js.UndefOr[String] = js.native
   /**

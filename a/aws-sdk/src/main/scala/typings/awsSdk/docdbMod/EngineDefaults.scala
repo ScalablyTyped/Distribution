@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EngineDefaults extends js.Object {
   /**
-    * The name of the DB cluster parameter group family to return the engine parameter information for.
+    * The name of the cluster parameter group family to return the engine parameter information for.
     */
   var DBParameterGroupFamily: js.UndefOr[String] = js.native
   /**
@@ -15,7 +15,7 @@ trait EngineDefaults extends js.Object {
     */
   var Marker: js.UndefOr[String] = js.native
   /**
-    * The parameters of a particular DB cluster parameter group family.
+    * The parameters of a particular cluster parameter group family.
     */
   var Parameters: js.UndefOr[ParametersList] = js.native
 }

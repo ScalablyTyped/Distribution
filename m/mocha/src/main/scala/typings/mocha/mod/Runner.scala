@@ -1,6 +1,7 @@
 package typings.mocha.mod
 
 import typings.mocha.Mocha_.ISuite
+import typings.mocha.Mocha_.RunnerConstants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,6 +49,7 @@ class Runner protected ()
 @JSImport("mocha", "Runner")
 @js.native
 object Runner extends js.Object {
+  val constants: RunnerConstants = js.native
   /**
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */

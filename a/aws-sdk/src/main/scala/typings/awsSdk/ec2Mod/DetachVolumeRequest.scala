@@ -19,7 +19,7 @@ trait DetachVolumeRequest extends js.Object {
     */
   var Force: js.UndefOr[Boolean] = js.native
   /**
-    * The ID of the instance.
+    * The ID of the instance. If you are detaching a Multi-Attach enabled volume, you must specify an instance ID.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ec2Mod.InstanceId] = js.native
   /**

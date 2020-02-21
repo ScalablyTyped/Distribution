@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3-providers-ipc" : "1.2.4"
+      "web3-providers-ipc" : "1.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "web3-providers-ipc" : "1.2.4"
+      "web3-providers-ipc" : "1.2.6"
     }
   ],
   "compile-devDependencies" : [

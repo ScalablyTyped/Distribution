@@ -15,7 +15,7 @@ trait RunOptions extends js.Object {
   var restoreScroll: js.UndefOr[Boolean] = js.undefined
   var resultTypes: js.UndefOr[js.Array[resultGroups]] = js.undefined
   var rules: js.UndefOr[js.Object] = js.undefined
-  var runOnly: js.UndefOr[RunOnly] = js.undefined
+  var runOnly: js.UndefOr[RunOnly | (js.Array[String | TagValue])] = js.undefined
   var selectors: js.UndefOr[Boolean] = js.undefined
   var xpath: js.UndefOr[Boolean] = js.undefined
 }
@@ -33,7 +33,7 @@ object RunOptions {
     restoreScroll: js.UndefOr[Boolean] = js.undefined,
     resultTypes: js.Array[resultGroups] = null,
     rules: js.Object = null,
-    runOnly: RunOnly = null,
+    runOnly: RunOnly | (js.Array[String | TagValue]) = null,
     selectors: js.UndefOr[Boolean] = js.undefined,
     xpath: js.UndefOr[Boolean] = js.undefined
   ): RunOptions = {

@@ -39,9 +39,6 @@ object ts3NodejsLibraryStrings {
   sealed trait channel_codec_quality extends js.Object
   
   @js.native
-  sealed trait channel_cpid extends js.Object
-  
-  @js.native
   sealed trait channel_delete_delay extends js.Object
   
   @js.native
@@ -1035,8 +1032,6 @@ object ts3NodejsLibraryStrings {
   def channel_codec_latency_factor: channel_codec_latency_factor = "channel_codec_latency_factor".asInstanceOf[channel_codec_latency_factor]
   @scala.inline
   def channel_codec_quality: channel_codec_quality = "channel_codec_quality".asInstanceOf[channel_codec_quality]
-  @scala.inline
-  def channel_cpid: channel_cpid = "channel_cpid".asInstanceOf[channel_cpid]
   @scala.inline
   def channel_delete_delay: channel_delete_delay = "channel_delete_delay".asInstanceOf[channel_delete_delay]
   @scala.inline

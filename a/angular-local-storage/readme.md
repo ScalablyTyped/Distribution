@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-local-storage
 
-Typings are for version v0.6.0
+Typings are for version 0.7
 
 ## Library description:
 An Angular module that gives you access to the browsers local storage

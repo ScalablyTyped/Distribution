@@ -2,6 +2,24 @@
 # Scala.js typings for estree-jsx
 
 
+## Library description:
+TypeScript type definitions for JSX
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | estree-jsx |
+| Keywords           | - |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 0 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/larsrh/estree-jsx#readme)
+- [Bugs](https://github.com/larsrh/estree-jsx/issues)
+- [Repository](https://github.com/larsrh/estree-jsx)
+- [Npm](https://www.npmjs.com/package/estree-jsx)
+    
 
 
 ## Note

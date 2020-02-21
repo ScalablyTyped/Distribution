@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListInfrastructureConfigurationsRequest extends js.Object {
   /**
-    *  
+    *  The filters. 
     */
   var filters: js.UndefOr[FilterList] = js.native
   /**

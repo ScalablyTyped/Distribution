@@ -16,7 +16,7 @@ trait ChromeOptions extends js.Object {
   var minidumpPath: js.UndefOr[String] = js.undefined
   var mobileEmulation: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var perfLoggingPrefs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var prefs: js.UndefOr[js.Array[String]] = js.undefined
+  var prefs: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
   var windowTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 
@@ -33,7 +33,7 @@ object ChromeOptions {
     minidumpPath: String = null,
     mobileEmulation: StringDictionary[js.Any] = null,
     perfLoggingPrefs: StringDictionary[js.Any] = null,
-    prefs: js.Array[String] = null,
+    prefs: StringDictionary[String | Double | Boolean] = null,
     windowTypes: js.Array[String] = null
   ): ChromeOptions = {
     val __obj = js.Dynamic.literal()

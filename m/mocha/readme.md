@@ -1,7 +1,7 @@
 
 # Scala.js typings for mocha
 
-Typings are for version 5.2
+Typings are for version 7.0
 
 ## Library description:
 simple, flexible, fun test framework

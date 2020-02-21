@@ -31,6 +31,11 @@ class DynamicImageViewer protected () extends EntityWidget {
   @JSName("model")
   var model_FDynamicImageViewer: IModel = js.native
   /**
+    * In version 8.6.0: introduced
+    */
+  def alternativeText(): ClientTemplate = js.native
+  def alternativeText(newValue: ClientTemplate): js.Any = js.native
+  /**
     * In version 7.18.0: introduced
     */
   def clickAction(): ClientAction = js.native

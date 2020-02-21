@@ -78,6 +78,14 @@ trait Typeoftabs extends js.Object {
   def getZoom(tabId: Double, callback: js.Function1[/* zoomFactor */ Double, Unit]): Unit = js.native
   def getZoomSettings(callback: js.Function1[/* zoomSettings */ ZoomSettings, Unit]): Unit = js.native
   def getZoomSettings(tabId: Double, callback: js.Function1[/* zoomSettings */ ZoomSettings, Unit]): Unit = js.native
+  def goBack(): Unit = js.native
+  def goBack(callback: js.Function0[Unit]): Unit = js.native
+  def goBack(tabId: Double): Unit = js.native
+  def goBack(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  def goForward(): Unit = js.native
+  def goForward(callback: js.Function0[Unit]): Unit = js.native
+  def goForward(tabId: Double): Unit = js.native
+  def goForward(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
   def highlight(highlightInfo: HighlightInfo): Unit = js.native
   def highlight(highlightInfo: HighlightInfo, callback: js.Function1[/* window */ this.type, Unit]): Unit = js.native
   def insertCSS(details: InjectDetails): Unit = js.native

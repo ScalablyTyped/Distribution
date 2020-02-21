@@ -78,6 +78,85 @@ trait JWPlayer extends js.Object {
     event: adClick | adCompanions | adComplete | adSkipped | adError | adRequest | adSchedule | adStarted | adImpression | adPlay | adPause | adTime | cast | meta | audioTracks | audioTrackChanged | firstFrame | buffer | bufferChange | captionsChanged | captionsList | controls | error | fullscreen | idle | levelsChanged | mute | volume | pause | play | playlist | playlistItem | ready | resize | visualQuality | levels | seek | setupError | time
   ): Unit = js.native
   def off(event: NoParamEvent): Unit = js.native
+  def off(event: NoParamEvent, callback: js.Function0[Unit]): Unit = js.native
+  @JSName("off")
+  def off_adClick(event: adClick, callback: EventCallback[AdProgressParam]): Unit = js.native
+  @JSName("off")
+  def off_adCompanions(event: adCompanions, callback: EventCallback[AdCompanionsParam]): Unit = js.native
+  @JSName("off")
+  def off_adComplete(event: adComplete, callback: EventCallback[AdProgressParam]): Unit = js.native
+  @JSName("off")
+  def off_adError(event: adError, callback: EventCallback[AdErrorParam]): Unit = js.native
+  @JSName("off")
+  def off_adImpression(event: adImpression, callback: EventCallback[AdImpressionParam]): Unit = js.native
+  @JSName("off")
+  def off_adPause(event: adPause, callback: EventCallback[AdPlayParam]): Unit = js.native
+  @JSName("off")
+  def off_adPlay(event: adPlay, callback: EventCallback[AdPlayParam]): Unit = js.native
+  @JSName("off")
+  def off_adRequest(event: adRequest, callback: EventCallback[AdRequestParam]): Unit = js.native
+  @JSName("off")
+  def off_adSchedule(event: adSchedule, callback: EventCallback[AdScheduleParam]): Unit = js.native
+  @JSName("off")
+  def off_adSkipped(event: adSkipped, callback: EventCallback[AdProgressParam]): Unit = js.native
+  @JSName("off")
+  def off_adStarted(event: adStarted, callback: EventCallback[AdStartedParam]): Unit = js.native
+  @JSName("off")
+  def off_adTime(event: adTime, callback: EventCallback[AdTimeParam]): Unit = js.native
+  @JSName("off")
+  def off_audioTrackChanged(event: audioTrackChanged, callback: EventCallback[AudioTrackChangedParam]): Unit = js.native
+  @JSName("off")
+  def off_audioTracks(event: audioTracks, callback: EventCallback[AudioTracksParam]): Unit = js.native
+  @JSName("off")
+  def off_buffer(event: buffer, callback: EventCallback[BufferParam]): Unit = js.native
+  @JSName("off")
+  def off_bufferChange(event: bufferChange, callback: EventCallback[BufferChangeParam]): Unit = js.native
+  @JSName("off")
+  def off_captionsChanged(event: captionsChanged, callback: EventCallback[CaptionsChangedParam]): Unit = js.native
+  @JSName("off")
+  def off_captionsList(event: captionsList, callback: EventCallback[CaptionsListParam]): Unit = js.native
+  @JSName("off")
+  def off_cast(event: cast, callback: EventCallback[CastParam]): Unit = js.native
+  @JSName("off")
+  def off_controls(event: controls, callback: EventCallback[ControlsParam]): Unit = js.native
+  @JSName("off")
+  def off_error(event: error, callback: EventCallback[ErrorParam]): Unit = js.native
+  @JSName("off")
+  def off_firstFrame(event: firstFrame, callback: EventCallback[FirstFrameParam]): Unit = js.native
+  @JSName("off")
+  def off_fullscreen(event: fullscreen, callback: EventCallback[FullscreenParam]): Unit = js.native
+  @JSName("off")
+  def off_idle(event: idle, callback: EventCallback[IdleParam]): Unit = js.native
+  @JSName("off")
+  def off_levels(event: levels, callback: EventCallback[LevelsParam]): Unit = js.native
+  @JSName("off")
+  def off_levelsChanged(event: levelsChanged, callback: EventCallback[LevelsChangedParam]): Unit = js.native
+  @JSName("off")
+  def off_meta(event: meta, callback: EventCallback[MetadataParam]): Unit = js.native
+  @JSName("off")
+  def off_mute(event: mute, callback: EventCallback[MuteParam]): Unit = js.native
+  @JSName("off")
+  def off_pause(event: pause, callback: EventCallback[PlayParam]): Unit = js.native
+  @JSName("off")
+  def off_play(event: play, callback: EventCallback[PlayParam]): Unit = js.native
+  @JSName("off")
+  def off_playlist(event: playlist, callback: EventCallback[PlaylistParam]): Unit = js.native
+  @JSName("off")
+  def off_playlistItem(event: playlistItem, callback: EventCallback[PlaylistItemParam]): Unit = js.native
+  @JSName("off")
+  def off_ready(event: ready, callback: EventCallback[ReadyParam]): Unit = js.native
+  @JSName("off")
+  def off_resize(event: resize, callback: EventCallback[ResizeParam]): Unit = js.native
+  @JSName("off")
+  def off_seek(event: seek, callback: EventCallback[SeekParam]): Unit = js.native
+  @JSName("off")
+  def off_setupError(event: setupError, callback: EventCallback[ErrorParam]): Unit = js.native
+  @JSName("off")
+  def off_time(event: time, callback: EventCallback[TimeParam]): Unit = js.native
+  @JSName("off")
+  def off_visualQuality(event: visualQuality, callback: EventCallback[VisualQualityParam]): Unit = js.native
+  @JSName("off")
+  def off_volume(event: volume, callback: EventCallback[VolumeParam]): Unit = js.native
   def on(event: NoParamEvent, callback: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_adClick(event: adClick, callback: EventCallback[AdProgressParam]): Unit = js.native

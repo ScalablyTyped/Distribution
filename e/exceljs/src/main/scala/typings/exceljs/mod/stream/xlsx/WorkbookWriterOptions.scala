@@ -1,6 +1,6 @@
 package typings.exceljs.mod.stream.xlsx
 
-import typings.exceljs.mod.Stream_
+import typings.node.streamMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +13,7 @@ trait WorkbookWriterOptions extends js.Object {
   /**
   			 * Specifies a writable stream to write the XLSX workbook to.
   			 */
-  var stream: Stream_
+  var stream: Stream
   /**
   			 * 	Specifies whether to use shared strings in the workbook. Default is false
   			 */
@@ -27,7 +27,7 @@ trait WorkbookWriterOptions extends js.Object {
 
 object WorkbookWriterOptions {
   @scala.inline
-  def apply(filename: String, stream: Stream_, useSharedStrings: Boolean, useStyles: Boolean): WorkbookWriterOptions = {
+  def apply(filename: String, stream: Stream, useSharedStrings: Boolean, useStyles: Boolean): WorkbookWriterOptions = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], useSharedStrings = useSharedStrings.asInstanceOf[js.Any], useStyles = useStyles.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[WorkbookWriterOptions]

@@ -2,12 +2,15 @@ package typings.smtpServer.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
+import typings.node.NodeJS.TypedArray
 import typings.node.tlsMod.KeyObject
 import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContext
 import typings.node.tlsMod.SecureVersion
+import typings.node.tlsMod.TLSSocket
 import typings.node.tlsMod.TlsOptions
 import typings.nodemailer.sharedMod.Logger
+import typings.std.DataView
 import typings.std.Error
 import typings.std.Map
 import typings.std.Uint8Array
@@ -255,6 +258,8 @@ object SMTPServerOptions {
     pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     privateKeyEngine: String = null,
     privateKeyIdentifier: String = null,
+    pskCallback: (/* socket */ TLSSocket, /* identity */ String) => DataView | TypedArray | Null = null,
+    pskIdentityHint: String = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secure: js.UndefOr[Boolean] = js.undefined,
@@ -315,6 +320,8 @@ object SMTPServerOptions {
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
     if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
+    if (pskCallback != null) __obj.updateDynamic("pskCallback")(js.Any.fromFunction2(pskCallback))
+    if (pskIdentityHint != null) __obj.updateDynamic("pskIdentityHint")(pskIdentityHint.asInstanceOf[js.Any])
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])

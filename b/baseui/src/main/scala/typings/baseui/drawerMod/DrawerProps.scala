@@ -29,6 +29,7 @@ trait DrawerProps extends js.Object {
   var onClose: js.UndefOr[js.Function1[/* args */ AnonBackdrop, _]] = js.undefined
   var onEscapeKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLElement], _]] = js.undefined
   var overrides: js.UndefOr[DrawerOverrides] = js.undefined
+  var renderAll: js.UndefOr[Boolean] = js.undefined
   var showBackdrop: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[default_ | full | auto | String] = js.undefined
 }
@@ -47,6 +48,7 @@ object DrawerProps {
     onClose: /* args */ AnonBackdrop => _ = null,
     onEscapeKeyDown: /* event */ KeyboardEvent[HTMLElement] => _ = null,
     overrides: DrawerOverrides = null,
+    renderAll: js.UndefOr[Boolean] = js.undefined,
     showBackdrop: js.UndefOr[Boolean] = js.undefined,
     size: default_ | full | auto | String = null
   ): DrawerProps = {
@@ -62,6 +64,7 @@ object DrawerProps {
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(js.Any.fromFunction1(onEscapeKeyDown))
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
+    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
     if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProps]

@@ -1,5 +1,6 @@
 package typings.gapiClientClassroom
 
+import typings.gapiClientClassroom.gapi.client.classroom.CourseAlias
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,12 +14,10 @@ trait AnonAccesstoken extends js.Object {
   var access_token: js.UndefOr[String] = js.native
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.native
-  /** OAuth bearer token. */
-  var bearer_token: js.UndefOr[String] = js.native
   /** JSONP */
   var callback: js.UndefOr[String] = js.native
   /**
-    * Identifier of the course.
+    * Identifier of the course to alias.
     * This identifier can be either the Classroom-assigned identifier or an
     * alias.
     */
@@ -29,12 +28,12 @@ trait AnonAccesstoken extends js.Object {
   var key: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.native
-  /** Pretty-print response. */
-  var pp: js.UndefOr[Boolean] = js.native
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.native
+  /** Request body */
+  var resource: CourseAlias = js.native
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.native
   /** Upload protocol for media (e.g. "raw", "multipart"). */

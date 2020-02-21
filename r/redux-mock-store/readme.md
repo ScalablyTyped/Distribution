@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-mock-store
 
-Typings are for version 1.0.0
+Typings are for version 1.0.2
 
 ## Library description:
 A mock store for testing your redux async action creators and middleware

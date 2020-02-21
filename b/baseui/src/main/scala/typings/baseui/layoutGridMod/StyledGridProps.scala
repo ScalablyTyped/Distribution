@@ -16,5 +16,9 @@ trait StyledGridProps extends js.Object {
   var $gridMargins: js.UndefOr[Responsive[Double]] = js.native
   @JSName("$gridMaxWidth")
   var $gridMaxWidth: js.UndefOr[Double] = js.native
+  @JSName("$gridUnit")
+  var $gridUnit: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSLengthUnitT */ js.Any
+  ] = js.native
 }
 

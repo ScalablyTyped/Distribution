@@ -1,6 +1,5 @@
 package typings.playcanvas
 
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,12 +7,12 @@ import scala.scalajs.js.annotation._
 trait AnonExposure extends js.Object {
   var exposure: Double
   var fog: String
-  var fog_color: js.Array[Number]
+  var fog_color: js.Array[Double]
   var fog_density: Double
   var fog_end: Double
   var fog_start: Double
   var gamma_correction: Double
-  var global_ambient: js.Array[Number]
+  var global_ambient: js.Array[Double]
   var lightmapMaxResolution: Double
   var lightmapMode: Double
   var lightmapSizeMultiplier: Double
@@ -28,12 +27,12 @@ object AnonExposure {
   def apply(
     exposure: Double,
     fog: String,
-    fog_color: js.Array[Number],
+    fog_color: js.Array[Double],
     fog_density: Double,
     fog_end: Double,
     fog_start: Double,
     gamma_correction: Double,
-    global_ambient: js.Array[Number],
+    global_ambient: js.Array[Double],
     lightmapMaxResolution: Double,
     lightmapMode: Double,
     lightmapSizeMultiplier: Double,

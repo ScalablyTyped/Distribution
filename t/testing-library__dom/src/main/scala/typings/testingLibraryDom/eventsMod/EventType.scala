@@ -41,6 +41,7 @@ import scala.scalajs.js.annotation._
   - typings.testingLibraryDom.testingLibraryDomStrings.mouseOut
   - typings.testingLibraryDom.testingLibraryDomStrings.mouseOver
   - typings.testingLibraryDom.testingLibraryDomStrings.mouseUp
+  - typings.testingLibraryDom.testingLibraryDomStrings.popState
   - typings.testingLibraryDom.testingLibraryDomStrings.select
   - typings.testingLibraryDom.testingLibraryDomStrings.touchCancel
   - typings.testingLibraryDom.testingLibraryDomStrings.touchEnd
@@ -219,6 +220,8 @@ object EventType {
   def pointerOver: typings.testingLibraryDom.testingLibraryDomStrings.pointerOver = this.cast("pointerOver")
   @scala.inline
   def pointerUp: typings.testingLibraryDom.testingLibraryDomStrings.pointerUp = this.cast("pointerUp")
+  @scala.inline
+  def popState: typings.testingLibraryDom.testingLibraryDomStrings.popState = this.cast("popState")
   @scala.inline
   def progress: typings.testingLibraryDom.testingLibraryDomStrings.progress = this.cast("progress")
   @scala.inline

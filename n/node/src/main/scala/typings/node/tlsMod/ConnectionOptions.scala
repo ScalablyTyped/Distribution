@@ -21,6 +21,24 @@ trait ConnectionOptions
   var minDHSize: js.UndefOr[Double] = js.undefined
   var path: js.UndefOr[String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
+  /**
+    * When negotiating TLS-PSK (pre-shared keys), this function is called
+    * with optional identity `hint` provided by the server or `null`
+    * in case of TLS 1.3 where `hint` was removed.
+    * It will be necessary to provide a custom `tls.checkServerIdentity()`
+    * for the connection as the default one will try to check hostname/IP
+    * of the server against the certificate but that's not applicable for PSK
+    * because there won't be a certificate present.
+    * More information can be found in the RFC 4279.
+    *
+    * @param hint message sent from the server to help client
+    * decide which identity to use during negotiation.
+    * Always `null` if TLS 1.3 is used.
+    * @returns Return `null` to stop the negotiation process. `psk` must be
+    * compatible with the selected cipher's digest.
+    * `identity` must use UTF-8 encoding.
+    */
+  var pskCallback: js.UndefOr[js.Function1[/* hint */ String | Null, PSKCallbackNegotation | Null]] = js.undefined
   var servername: js.UndefOr[String] = js.undefined
    // SNI TLS Extension
   var session: js.UndefOr[Buffer] = js.undefined
@@ -56,6 +74,7 @@ object ConnectionOptions {
     port: Int | Double = null,
     privateKeyEngine: String = null,
     privateKeyIdentifier: String = null,
+    pskCallback: /* hint */ String | Null => PSKCallbackNegotation | Null = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
@@ -93,6 +112,7 @@ object ConnectionOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
     if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
+    if (pskCallback != null) __obj.updateDynamic("pskCallback")(js.Any.fromFunction1(pskCallback))
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])

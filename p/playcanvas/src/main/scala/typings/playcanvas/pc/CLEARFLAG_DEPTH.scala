@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.CLEARFLAG_DEPTH
+  * @type {number}
   * @description Clear the depth buffer.
   */
 @JSGlobal("pc.CLEARFLAG_DEPTH")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DeprovisionByoipCidrRequest extends js.Object {
   /**
-    * The public IPv4 address range, in CIDR notation. The prefix must be the same prefix that you specified when you provisioned the address range.
+    * The address range, in CIDR notation. The prefix must be the same prefix that you specified when you provisioned the address range.
     */
   var Cidr: String = js.native
   /**

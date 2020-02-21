@@ -1,6 +1,6 @@
 package typings.octokitRest
 
-import typings.octokitRest.mod.RequestMethod
+import typings.octokitRest.mod.Octokit.RequestMethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -134,6 +134,9 @@ object octokitRestStrings {
   
   @js.native
   sealed trait completeness extends js.Object
+  
+  @js.native
+  sealed trait conclusion extends js.Object
   
   @js.native
   sealed trait confused extends js.Object
@@ -388,6 +391,9 @@ object octokitRestStrings {
   sealed trait stars extends js.Object
   
   @js.native
+  sealed trait status extends js.Object
+  
+  @js.native
   sealed trait subscribed extends js.Object
   
   @js.native
@@ -512,6 +518,8 @@ object octokitRestStrings {
   def completed: completed = "completed".asInstanceOf[completed]
   @scala.inline
   def completeness: completeness = "completeness".asInstanceOf[completeness]
+  @scala.inline
+  def conclusion: conclusion = "conclusion".asInstanceOf[conclusion]
   @scala.inline
   def confused: confused = "confused".asInstanceOf[confused]
   @scala.inline
@@ -680,6 +688,8 @@ object octokitRestStrings {
   def stargazers: stargazers = "stargazers".asInstanceOf[stargazers]
   @scala.inline
   def stars: stars = "stars".asInstanceOf[stars]
+  @scala.inline
+  def status: status = "status".asInstanceOf[status]
   @scala.inline
   def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
   @scala.inline

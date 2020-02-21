@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.PARTICLEORIENTATION_SCREEN
+  * @type {number}
   * @description Particles are facing camera.
   */
 @JSGlobal("pc.PARTICLEORIENTATION_SCREEN")

@@ -13,14 +13,14 @@ trait TagResourceRequest extends js.Object {
   /**
     * Tags assigned to a resource.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: TagsMap = js.native
 }
 
 object TagResourceRequest {
   @scala.inline
-  def apply(resourceArn: String, tags: TagsMap = null): TagResourceRequest = {
-    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+  def apply(resourceArn: String, tags: TagsMap): TagResourceRequest = {
+    val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[TagResourceRequest]
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DBEngineVersionMessage extends js.Object {
   /**
-    * Detailed information about one or more DB engine versions.
+    * Detailed information about one or more engine versions.
     */
   var DBEngineVersions: js.UndefOr[DBEngineVersionList] = js.native
   /**

@@ -82,6 +82,7 @@ package object storagegatewayMod {
     - typings.awsSdk.awsSdkStrings.VMWARE
     - typings.awsSdk.awsSdkStrings.`HYPER-V`
     - typings.awsSdk.awsSdkStrings.EC2
+    - typings.awsSdk.awsSdkStrings.KVM
     - typings.awsSdk.awsSdkStrings.OTHER
     - java.lang.String
   */

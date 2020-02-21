@@ -1,12 +1,13 @@
 package typings.rdfExt.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.eventsMod.EventEmitter
 import typings.rdfJs.mod.Sink
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SinkMap[InputStream /* <: typings.node.eventsMod.^ */, OutputStream /* <: typings.node.eventsMod.^ */] extends /* mediaType */ StringDictionary[Sink[InputStream, OutputStream]] {
+trait SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] extends /* mediaType */ StringDictionary[Sink[InputStream, OutputStream]] {
   def find(mediaType: String): Sink[InputStream, OutputStream]
   def `import`(mediaType: String, input: js.Any, options: js.Any): js.Any
   def list(): js.Array[String]
@@ -14,7 +15,7 @@ trait SinkMap[InputStream /* <: typings.node.eventsMod.^ */, OutputStream /* <: 
 
 object SinkMap {
   @scala.inline
-  def apply[InputStream /* <: typings.node.eventsMod.^ */, OutputStream /* <: typings.node.eventsMod.^ */](
+  def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](
     find: String => Sink[InputStream, OutputStream],
     `import`: (String, js.Any, js.Any) => js.Any,
     list: () => js.Array[String],

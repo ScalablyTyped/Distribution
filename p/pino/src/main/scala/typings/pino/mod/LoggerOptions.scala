@@ -52,6 +52,10 @@ trait LoggerOptions extends js.Object {
     */
   var name: js.UndefOr[String] = js.undefined
   /**
+    * The string key to place any logged object under.
+    */
+  var nestedKey: js.UndefOr[String] = js.undefined
+  /**
     * This function will be invoked during process shutdown when `extreme` is set to `true`. If you do not specify
     * a function, Pino will invoke `process.exit(0)` when no error has occurred, and `process.exit(1)` otherwise.
     * If you do specify a function, it is up to you to terminate the process; you must perform only synchronous
@@ -117,6 +121,7 @@ object LoggerOptions {
     messageKey: String = null,
     mixin: () => js.Object = null,
     name: String = null,
+    nestedKey: String = null,
     onTerminated: (/* eventName */ String, /* err */ js.Any) => Unit = null,
     prettyPrint: Boolean | PrettyOptions = null,
     redact: js.Array[String] | redactOptions = null,
@@ -137,6 +142,7 @@ object LoggerOptions {
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
     if (mixin != null) __obj.updateDynamic("mixin")(js.Any.fromFunction0(mixin))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (nestedKey != null) __obj.updateDynamic("nestedKey")(nestedKey.asInstanceOf[js.Any])
     if (onTerminated != null) __obj.updateDynamic("onTerminated")(js.Any.fromFunction2(onTerminated))
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
     if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])

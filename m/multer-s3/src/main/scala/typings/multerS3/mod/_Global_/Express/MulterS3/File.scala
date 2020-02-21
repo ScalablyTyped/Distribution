@@ -13,6 +13,7 @@ trait File
   var contentType: String
   var etag: String
   var key: String
+  var location: String
   var metadata: js.Any
   var serverSideEncryption: Null
   var storageClass: String

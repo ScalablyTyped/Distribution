@@ -91,6 +91,19 @@ trait WorkMail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]
   ): Request[CreateUserResponse, AWSError] = js.native
   /**
+    * Deletes an access control rule for the specified WorkMail organization.
+    */
+  def deleteAccessControlRule(): Request[DeleteAccessControlRuleResponse, AWSError] = js.native
+  def deleteAccessControlRule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessControlRuleResponse, Unit]): Request[DeleteAccessControlRuleResponse, AWSError] = js.native
+  /**
+    * Deletes an access control rule for the specified WorkMail organization.
+    */
+  def deleteAccessControlRule(params: DeleteAccessControlRuleRequest): Request[DeleteAccessControlRuleResponse, AWSError] = js.native
+  def deleteAccessControlRule(
+    params: DeleteAccessControlRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessControlRuleResponse, Unit]
+  ): Request[DeleteAccessControlRuleResponse, AWSError] = js.native
+  /**
     * Remove one or more specified aliases from a set of aliases for a given user.
     */
   def deleteAlias(): Request[DeleteAliasResponse, AWSError] = js.native
@@ -249,6 +262,19 @@ trait WorkMail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateMemberFromGroupResponse, Unit]
   ): Request[DisassociateMemberFromGroupResponse, AWSError] = js.native
   /**
+    * Gets the effects of an organization's access control rules as they apply to a specified IPv4 address, access protocol action, or user ID. 
+    */
+  def getAccessControlEffect(): Request[GetAccessControlEffectResponse, AWSError] = js.native
+  def getAccessControlEffect(callback: js.Function2[/* err */ AWSError, /* data */ GetAccessControlEffectResponse, Unit]): Request[GetAccessControlEffectResponse, AWSError] = js.native
+  /**
+    * Gets the effects of an organization's access control rules as they apply to a specified IPv4 address, access protocol action, or user ID. 
+    */
+  def getAccessControlEffect(params: GetAccessControlEffectRequest): Request[GetAccessControlEffectResponse, AWSError] = js.native
+  def getAccessControlEffect(
+    params: GetAccessControlEffectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAccessControlEffectResponse, Unit]
+  ): Request[GetAccessControlEffectResponse, AWSError] = js.native
+  /**
     * Requests a user's mailbox details for a specified organization and user.
     */
   def getMailboxDetails(): Request[GetMailboxDetailsResponse, AWSError] = js.native
@@ -261,6 +287,19 @@ trait WorkMail extends Service {
     params: GetMailboxDetailsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMailboxDetailsResponse, Unit]
   ): Request[GetMailboxDetailsResponse, AWSError] = js.native
+  /**
+    * Lists the access control rules for the specified organization.
+    */
+  def listAccessControlRules(): Request[ListAccessControlRulesResponse, AWSError] = js.native
+  def listAccessControlRules(callback: js.Function2[/* err */ AWSError, /* data */ ListAccessControlRulesResponse, Unit]): Request[ListAccessControlRulesResponse, AWSError] = js.native
+  /**
+    * Lists the access control rules for the specified organization.
+    */
+  def listAccessControlRules(params: ListAccessControlRulesRequest): Request[ListAccessControlRulesResponse, AWSError] = js.native
+  def listAccessControlRules(
+    params: ListAccessControlRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAccessControlRulesResponse, Unit]
+  ): Request[ListAccessControlRulesResponse, AWSError] = js.native
   /**
     * Creates a paginated call to list the aliases associated with a given entity.
     */
@@ -353,6 +392,19 @@ trait WorkMail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesResponse, Unit]
   ): Request[ListResourcesResponse, AWSError] = js.native
   /**
+    * Lists the tags applied to an Amazon WorkMail organization resource.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Lists the tags applied to an Amazon WorkMail organization resource.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
     * Returns summaries of the organization's users.
     */
   def listUsers(): Request[ListUsersResponse, AWSError] = js.native
@@ -365,6 +417,19 @@ trait WorkMail extends Service {
     params: ListUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
+  /**
+    * Adds a new access control rule for the specified organization. The rule allows or denies access to the organization for the specified IPv4 addresses, access protocol actions, and user IDs. Adding a new rule with the same name as an existing rule replaces the older rule.
+    */
+  def putAccessControlRule(): Request[PutAccessControlRuleResponse, AWSError] = js.native
+  def putAccessControlRule(callback: js.Function2[/* err */ AWSError, /* data */ PutAccessControlRuleResponse, Unit]): Request[PutAccessControlRuleResponse, AWSError] = js.native
+  /**
+    * Adds a new access control rule for the specified organization. The rule allows or denies access to the organization for the specified IPv4 addresses, access protocol actions, and user IDs. Adding a new rule with the same name as an existing rule replaces the older rule.
+    */
+  def putAccessControlRule(params: PutAccessControlRuleRequest): Request[PutAccessControlRuleResponse, AWSError] = js.native
+  def putAccessControlRule(
+    params: PutAccessControlRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAccessControlRuleResponse, Unit]
+  ): Request[PutAccessControlRuleResponse, AWSError] = js.native
   /**
     * Sets permissions for a user, group, or resource. This replaces any pre-existing permissions.
     */
@@ -404,6 +469,32 @@ trait WorkMail extends Service {
     params: ResetPasswordRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ResetPasswordResponse, Unit]
   ): Request[ResetPasswordResponse, AWSError] = js.native
+  /**
+    * Applies the specified tags to the specified Amazon WorkMail organization resource.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Applies the specified tags to the specified Amazon WorkMail organization resource.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Untags the specified tags from the specified Amazon WorkMail organization resource.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Untags the specified tags from the specified Amazon WorkMail organization resource.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
   /**
     * Updates a user's current mailbox quota for a specified organization and user.
     */

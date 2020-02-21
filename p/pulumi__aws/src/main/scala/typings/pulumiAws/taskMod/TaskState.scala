@@ -37,7 +37,7 @@ trait TaskState extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Task.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object TaskState {
@@ -49,7 +49,7 @@ object TaskState {
     name: Input[String] = null,
     options: Input[TaskOptions] = null,
     sourceLocationArn: Input[ARN] = null,
-    tags: Input[StringDictionary[Input[String]]] = null
+    tags: Input[StringDictionary[_]] = null
   ): TaskState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

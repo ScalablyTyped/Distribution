@@ -7,13 +7,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StackSetOperationResultSummary extends js.Object {
   /**
-    * The name of the AWS account for this operation result.
+    * [Self-managed permissions] The name of the AWS account for this operation result.
     */
   var Account: js.UndefOr[typings.awsSdk.cloudformationMod.Account] = js.native
   /**
     * The results of the account gate function AWS CloudFormation invokes, if present, before proceeding with stack set operations in an account
     */
   var AccountGateResult: js.UndefOr[typings.awsSdk.cloudformationMod.AccountGateResult] = js.native
+  /**
+    * [Service-managed permissions] The organization root ID or organizational unit (OU) ID for this operation result.
+    */
+  var OrganizationalUnitId: js.UndefOr[typings.awsSdk.cloudformationMod.OrganizationalUnitId] = js.native
   /**
     * The name of the AWS region for this operation result.
     */
@@ -33,6 +37,7 @@ object StackSetOperationResultSummary {
   def apply(
     Account: Account = null,
     AccountGateResult: AccountGateResult = null,
+    OrganizationalUnitId: OrganizationalUnitId = null,
     Region: Region = null,
     Status: StackSetOperationResultStatus = null,
     StatusReason: Reason = null
@@ -40,6 +45,7 @@ object StackSetOperationResultSummary {
     val __obj = js.Dynamic.literal()
     if (Account != null) __obj.updateDynamic("Account")(Account.asInstanceOf[js.Any])
     if (AccountGateResult != null) __obj.updateDynamic("AccountGateResult")(AccountGateResult.asInstanceOf[js.Any])
+    if (OrganizationalUnitId != null) __obj.updateDynamic("OrganizationalUnitId")(OrganizationalUnitId.asInstanceOf[js.Any])
     if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])

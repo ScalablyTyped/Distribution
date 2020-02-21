@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "camelcase-keys" : "6.1.1"
+      "camelcase-keys" : "6.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "camelcase-keys" : "6.1.1"
+      "camelcase-keys" : "6.1.2"
     }
   ],
   "compile-devDependencies" : [

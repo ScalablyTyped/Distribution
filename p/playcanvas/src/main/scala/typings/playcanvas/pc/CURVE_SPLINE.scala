@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
+  * @type {number}
   * @name pc.CURVE_SPLINE
   * @description Cardinal spline interpolation scheme. For Catmull-Rom, specify curve tension 0.5.
   */

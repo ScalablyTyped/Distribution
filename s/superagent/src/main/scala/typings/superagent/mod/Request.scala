@@ -37,6 +37,7 @@ trait Request extends Promise[Response] {
   def cert(cert: js.Array[Buffer | String]): this.type = js.native
   def cert(cert: Buffer): this.type = js.native
   def clearTimeout(): this.type = js.native
+  def disableTLSCerts(): this.type = js.native
   def end(): Unit = js.native
   def end(callback: CallbackHandler): Unit = js.native
   def field(fields: StringDictionary[MultipartValue]): this.type = js.native
@@ -79,6 +80,8 @@ trait Request extends Promise[Response] {
   def set_Cookie(field: Cookie, `val`: js.Array[String]): this.type = js.native
   def timeout(ms: Double): this.type = js.native
   def timeout(ms: AnonDeadline): this.type = js.native
+  def trustLocalhost(): this.type = js.native
+  def trustLocalhost(enabled: Boolean): this.type = js.native
   def `type`(`val`: String): this.type = js.native
   def unset(field: String): this.type = js.native
   def use(fn: Plugin): this.type = js.native

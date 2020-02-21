@@ -2,7 +2,7 @@ package typings.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.long.mod.^
+import typings.long.mod.Long
 import typings.std.Error
 import typings.std.RegExp
 import typings.std.Uint8Array
@@ -54,11 +54,6 @@ object util extends js.Object {
     def on(evt: String, fn: EventEmitterListener, ctx: js.Any): this.type = js.native
   }
   
-  @js.native
-  class Long protected () extends ^ {
-    def this(params: js.Any*) = this()
-  }
-  
   /** Helper class for working with the low and high bits of a 64 bit value. */
   @js.native
   class LongBits protected () extends js.Object {
@@ -87,8 +82,8 @@ object util extends js.Object {
       * @param [unsigned=false] Whether unsigned or not
       * @returns Long
       */
-    def toLong(): ^ = js.native
-    def toLong(unsigned: Boolean): ^ = js.native
+    def toLong(): Long = js.native
+    def toLong(unsigned: Boolean): Long = js.native
     /**
       * Converts this long bits to a possibly unsafe JavaScript number.
       * @param [unsigned=false] Whether unsigned or not
@@ -126,6 +121,8 @@ object util extends js.Object {
     override var name: String = js.native
   }
   
+  /** Long.js's Long class if available. */
+  var Long: Constructor[typings.long.mod.Long] = js.native
   /** Decorator root (TypeScript). */
   var decorateRoot: Root = js.native
   /** An immuable empty array. */
@@ -270,15 +267,15 @@ object util extends js.Object {
     * @param [unsigned=false] Whether unsigned or not
     * @returns Original value
     */
-  def longFromHash(hash: String): ^  | Double = js.native
-  def longFromHash(hash: String, unsigned: Boolean): ^  | Double = js.native
+  def longFromHash(hash: String): Long | Double = js.native
+  def longFromHash(hash: String, unsigned: Boolean): Long | Double = js.native
   def longToHash(value: Double): String = js.native
   /**
     * Converts a number or long to an 8 characters long hash string.
     * @param value Value to convert
     * @returns Hash
     */
-  def longToHash(value: ^): String = js.native
+  def longToHash(value: Long): String = js.native
   /**
     * Merges the properties of the source object into the destination object.
     * @param dst Destination object
@@ -356,10 +353,6 @@ object util extends js.Object {
   object Buffer
     extends TopLevel[Constructor[typings.apolloProtobufjs.mod.Buffer]]
   
-  /** Long.js's Long class if available. */
-  @js.native
-  object Long extends TopLevel[Constructor[^]]
-  
   /* static members */
   @js.native
   object LongBits extends js.Object {
@@ -374,7 +367,7 @@ object util extends js.Object {
       * @param value Value
       * @returns Instance
       */
-    def from(value: ^): LongBits = js.native
+    def from(value: Long): LongBits = js.native
     /**
       * Constructs new long bits from the specified 8 characters long hash.
       * @param hash Hash

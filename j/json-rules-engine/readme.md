@@ -1,7 +1,7 @@
 
 # Scala.js typings for json-rules-engine
 
-Typings are for version 5.0.2
+Typings are for version 5.0.3
 
 ## Library description:
 Rules Engine expressed in simple json

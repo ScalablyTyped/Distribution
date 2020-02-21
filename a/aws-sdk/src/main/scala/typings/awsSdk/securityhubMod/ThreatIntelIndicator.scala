@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ThreatIntelIndicator extends js.Object {
   /**
-    * The category of a threat intel indicator.
+    * The category of a threat intelligence indicator.
     */
   var Category: js.UndefOr[ThreatIntelIndicatorCategory] = js.native
   /**
-    * The date and time when the most recent instance of a threat intel indicator was observed.
+    * The date and time when the most recent instance of a threat intelligence indicator was observed.
     */
   var LastObservedAt: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The source of the threat intel indicator.
+    * The source of the threat intelligence indicator.
     */
   var Source: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The URL to the page or site where you can get more information about the threat intel indicator.
+    * The URL to the page or site where you can get more information about the threat intelligence indicator.
     */
   var SourceUrl: js.UndefOr[NonEmptyString] = js.native
   /**
-    * The type of a threat intel indicator.
+    * The type of threat intelligence indicator.
     */
   var Type: js.UndefOr[ThreatIntelIndicatorType] = js.native
   /**
-    * The value of a threat intel indicator.
+    * The value of a threat intelligence indicator.
     */
   var Value: js.UndefOr[NonEmptyString] = js.native
 }

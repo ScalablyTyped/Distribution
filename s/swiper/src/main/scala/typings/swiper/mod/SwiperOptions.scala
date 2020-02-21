@@ -45,6 +45,8 @@ trait SwiperOptions extends js.Object {
   var centeredSlides: js.UndefOr[Boolean] = js.undefined
   // Namespace
   var containerModifierClass: js.UndefOr[String] = js.undefined
+  // Components
+  var controller: js.UndefOr[ControllerOptions | Boolean] = js.undefined
   var coverflowEffect: js.UndefOr[CoverflowEffectOptions] = js.undefined
   var cubeEffect: js.UndefOr[CubeEffectOptions] = js.undefined
   /**
@@ -126,7 +128,6 @@ trait SwiperOptions extends js.Object {
   var loopFillGroupWithBlank: js.UndefOr[Boolean] = js.undefined
   var loopedSlides: js.UndefOr[Double] = js.undefined
   var mousewheel: js.UndefOr[MousewheelOptions | Boolean] = js.undefined
-  // Components
   var navigation: js.UndefOr[NavigationOptions] = js.undefined
   /**
     * Set to true on  Swiper for correct touch events interception. Use only on
@@ -338,6 +339,7 @@ object SwiperOptions {
     centerInsufficientSlides: js.UndefOr[Boolean] = js.undefined,
     centeredSlides: js.UndefOr[Boolean] = js.undefined,
     containerModifierClass: String = null,
+    controller: ControllerOptions | Boolean = null,
     coverflowEffect: CoverflowEffectOptions = null,
     cubeEffect: CubeEffectOptions = null,
     direction: horizontal | vertical = null,
@@ -448,6 +450,7 @@ object SwiperOptions {
     if (!js.isUndefined(centerInsufficientSlides)) __obj.updateDynamic("centerInsufficientSlides")(centerInsufficientSlides.asInstanceOf[js.Any])
     if (!js.isUndefined(centeredSlides)) __obj.updateDynamic("centeredSlides")(centeredSlides.asInstanceOf[js.Any])
     if (containerModifierClass != null) __obj.updateDynamic("containerModifierClass")(containerModifierClass.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
     if (coverflowEffect != null) __obj.updateDynamic("coverflowEffect")(coverflowEffect.asInstanceOf[js.Any])
     if (cubeEffect != null) __obj.updateDynamic("cubeEffect")(cubeEffect.asInstanceOf[js.Any])
     if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])

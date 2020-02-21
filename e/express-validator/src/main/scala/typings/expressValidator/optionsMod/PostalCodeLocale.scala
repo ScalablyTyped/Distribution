@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   - typings.expressValidator.expressValidatorStrings.IL
   - typings.expressValidator.expressValidatorStrings.IN
   - typings.expressValidator.expressValidatorStrings.IS
+  - typings.expressValidator.expressValidatorStrings.IR
   - typings.expressValidator.expressValidatorStrings.IT
   - typings.expressValidator.expressValidatorStrings.JP
   - typings.expressValidator.expressValidatorStrings.KE
@@ -106,6 +107,8 @@ object PostalCodeLocale {
   def IL: typings.expressValidator.expressValidatorStrings.IL = this.cast("IL")
   @scala.inline
   def IN: typings.expressValidator.expressValidatorStrings.IN = this.cast("IN")
+  @scala.inline
+  def IR: typings.expressValidator.expressValidatorStrings.IR = this.cast("IR")
   @scala.inline
   def IS: typings.expressValidator.expressValidatorStrings.IS = this.cast("IS")
   @scala.inline

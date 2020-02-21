@@ -16,13 +16,15 @@ object default extends js.Object {
   def apply(
     routes: NavigationRouteConfigMap[
       NavigationMaterialBottomTabOptions, 
-      NavigationTabProp[NavigationRoute[NavigationParams], _]
+      NavigationTabProp[NavigationRoute[NavigationParams], _], 
+      _
     ]
   ): js.Any = js.native
   def apply(
     routes: NavigationRouteConfigMap[
       NavigationMaterialBottomTabOptions, 
-      NavigationTabProp[NavigationRoute[NavigationParams], _]
+      NavigationTabProp[NavigationRoute[NavigationParams], _], 
+      _
     ],
     config: CreateNavigatorConfigNavigationMaterialBottomTabCo
   ): js.Any = js.native

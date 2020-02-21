@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "jui-grid"
-version := "2.0-dt-20180214Z-e75cc1"
-scalaVersion := "2.12.10"
+version := "2.0-dt-20180214Z-5e5ba5"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20191126Z-e499a9",
-  "org.scalablytyped" %%% "jui-core" % "2.0-dt-20180822Z-490c9b",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-8d2e4e",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-ce7107",
+  "org.scalablytyped" %%% "jui-core" % "2.0-dt-20180822Z-6a97a5",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a68146",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

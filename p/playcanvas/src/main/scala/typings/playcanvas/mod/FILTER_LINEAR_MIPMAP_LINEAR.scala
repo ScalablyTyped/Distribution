@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FILTER_LINEAR_MIPMAP_LINEAR
+  * @type {number}
   * @description Linearly interpolate both the mipmap levels and between texels.
   */
 @JSImport("playcanvas", "FILTER_LINEAR_MIPMAP_LINEAR")

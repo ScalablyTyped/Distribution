@@ -1,7 +1,7 @@
 
 # Scala.js typings for sc-broker-cluster
 
-Typings are for version 6.1
+Typings are for version 9.0
 
 ## Library description:
 Realtime clustering engine

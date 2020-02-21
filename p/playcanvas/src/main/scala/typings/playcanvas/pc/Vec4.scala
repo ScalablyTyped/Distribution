@@ -1,37 +1,36 @@
 package typings.playcanvas.pc
 
-import typings.std.Number
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * @constructor
+  * @class
   * @name pc.Vec4
   * @classdesc A 4-dimensional vector.
   * @description Creates a new Vec4 object.
-  * @param {Number|Number[]} [x] The x value. If x is an array of length 4, the array will be used to populate all components.
-  * @param {Number} [y] The y value.
-  * @param {Number} [z] The z value.
-  * @param {Number} [w] The w value.
+  * @param {number|number[]} [x] - The x value. If x is an array of length 4, the array will be used to populate all components.
+  * @param {number} [y] - The y value.
+  * @param {number} [z] - The z value.
+  * @param {number} [w] - The w value.
   * @example
   * var v = new pc.Vec4(1, 2, 3, 4);
   */
 @JSGlobal("pc.Vec4")
 @js.native
 class Vec4 () extends js.Object {
-  def this(x: js.Array[Number]) = this()
+  def this(x: js.Array[Double]) = this()
   def this(x: Double) = this()
-  def this(x: js.Array[Number], y: Double) = this()
+  def this(x: js.Array[Double], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  def this(x: js.Array[Number], y: Double, z: Double) = this()
+  def this(x: js.Array[Double], y: Double, z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
-  def this(x: js.Array[Number], y: Double, z: Double, w: Double) = this()
+  def this(x: js.Array[Double], y: Double, z: Double, w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
   /**
     * @field
-    * @type Number
     * @name pc.Vec4#w
+    * @type {number}
     * @description The fourth component of the vector.
     * @example
     * var vec = new pc.Vec4(10, 20, 30, 40);
@@ -45,8 +44,8 @@ class Vec4 () extends js.Object {
   var w: Double = js.native
   /**
     * @field
-    * @type Number
     * @name pc.Vec4#x
+    * @type {number}
     * @description The first component of the vector.
     * @example
     * var vec = new pc.Vec4(10, 20, 30, 40);
@@ -60,8 +59,8 @@ class Vec4 () extends js.Object {
   var x: Double = js.native
   /**
     * @field
-    * @type Number
     * @name pc.Vec4#y
+    * @type {number}
     * @description The second component of the vector.
     * @example
     * var vec = new pc.Vec4(10, 20, 30, 40);
@@ -75,8 +74,8 @@ class Vec4 () extends js.Object {
   var y: Double = js.native
   /**
     * @field
-    * @type Number
     * @name pc.Vec4#z
+    * @type {number}
     * @description The third component of the vector.
     * @example
     * var vec = new pc.Vec4(10, 20, 30, 40);
@@ -92,7 +91,7 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#add
     * @description Adds a 4-dimensional vector to another in place.
-    * @param {pc.Vec4} rhs The vector to add to the specified vector.
+    * @param {pc.Vec4} rhs - The vector to add to the specified vector.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var a = new pc.Vec4(10, 10, 10, 10);
@@ -108,8 +107,8 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#add2
     * @description Adds two 4-dimensional vectors together and returns the result.
-    * @param {pc.Vec4} lhs The first vector operand for the addition.
-    * @param {pc.Vec4} rhs The second vector operand for the addition.
+    * @param {pc.Vec4} lhs - The first vector operand for the addition.
+    * @param {pc.Vec4} rhs - The second vector operand for the addition.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var a = new pc.Vec4(10, 10, 10, 10);
@@ -126,7 +125,7 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#copy
     * @description Copied the contents of a source 4-dimensional vector to a destination 4-dimensional vector.
-    * @param {pc.Vec4} rhs A vector to copy to the specified vector.
+    * @param {pc.Vec4} rhs - A vector to copy to the specified vector.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var src = new pc.Vec4(10, 20, 30, 40);
@@ -141,8 +140,8 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#dot
     * @description Returns the result of a dot product operation performed on the two specified 4-dimensional vectors.
-    * @param {pc.Vec4} rhs The second 4-dimensional vector operand of the dot product.
-    * @returns {Number} The result of the dot product operation.
+    * @param {pc.Vec4} rhs - The second 4-dimensional vector operand of the dot product.
+    * @returns {number} The result of the dot product operation.
     * @example
     * var v1 = new pc.Vec4(5, 10, 20, 40);
     * var v2 = new pc.Vec4(10, 20, 40, 80);
@@ -154,8 +153,8 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#equals
     * @description Reports whether two vectors are equal.
-    * @param {pc.Vec4} rhs The vector to compare to the specified vector.
-    * @returns {Boolean} true if the vectors are equal and false otherwise.
+    * @param {pc.Vec4} rhs - The vector to compare to the specified vector.
+    * @returns {boolean} True if the vectors are equal and false otherwise.
     * @example
     * var a = new pc.Vec4(1, 2, 3, 4);
     * var b = new pc.Vec4(5, 6, 7, 8);
@@ -166,7 +165,7 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#length
     * @description Returns the magnitude of the specified 4-dimensional vector.
-    * @returns {Number} The magnitude of the specified 4-dimensional vector.
+    * @returns {number} The magnitude of the specified 4-dimensional vector.
     * @example
     * var vec = new pc.Vec4(3, 4, 0, 0);
     * var len = vec.length();
@@ -178,7 +177,7 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#lengthSq
     * @description Returns the magnitude squared of the specified 4-dimensional vector.
-    * @returns {Number} The magnitude of the specified 4-dimensional vector.
+    * @returns {number} The magnitude of the specified 4-dimensional vector.
     * @example
     * var vec = new pc.Vec4(3, 4, 0);
     * var len = vec.lengthSq();
@@ -190,9 +189,9 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#lerp
     * @description Returns the result of a linear interpolation between two specified 4-dimensional vectors.
-    * @param {pc.Vec4} lhs The 4-dimensional to interpolate from.
-    * @param {pc.Vec4} rhs The 4-dimensional to interpolate to.
-    * @param {Number} alpha The value controlling the point of interpolation. Between 0 and 1, the linear interpolant
+    * @param {pc.Vec4} lhs - The 4-dimensional to interpolate from.
+    * @param {pc.Vec4} rhs - The 4-dimensional to interpolate to.
+    * @param {number} alpha - The value controlling the point of interpolation. Between 0 and 1, the linear interpolant
     * will occur on a straight line between lhs and rhs. Outside of this range, the linear interpolant will occur on
     * a ray extrapolated from this line.
     * @returns {pc.Vec4} Self for chaining.
@@ -210,7 +209,7 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#mul
     * @description Multiplies a 4-dimensional vector to another in place.
-    * @param {pc.Vec4} rhs The 4-dimensional vector used as the second multiplicand of the operation.
+    * @param {pc.Vec4} rhs - The 4-dimensional vector used as the second multiplicand of the operation.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var a = new pc.Vec4(2, 3, 4, 5);
@@ -226,8 +225,8 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#mul2
     * @description Returns the result of multiplying the specified 4-dimensional vectors together.
-    * @param {pc.Vec4} lhs The 4-dimensional vector used as the first multiplicand of the operation.
-    * @param {pc.Vec4} rhs The 4-dimensional vector used as the second multiplicand of the operation.
+    * @param {pc.Vec4} lhs - The 4-dimensional vector used as the first multiplicand of the operation.
+    * @param {pc.Vec4} rhs - The 4-dimensional vector used as the second multiplicand of the operation.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var a = new pc.Vec4(2, 3, 4, 5);
@@ -243,9 +242,9 @@ class Vec4 () extends js.Object {
   /**
     * @function
     * @name pc.Vec4#normalize
-    * @description Returns the specified 4-dimensional vector copied and converted to a unit vector.
+    * @description Returns this 4-dimensional vector converted to a unit vector in place.
     * If the vector has a length of zero, the vector's elements will be set to zero.
-    * @returns {pc.Vec4} The result of the normalization.
+    * @returns {pc.Vec4} Self for chaining.
     * @example
     * var v = new pc.Vec4(25, 0, 0, 0);
     *
@@ -260,7 +259,7 @@ class Vec4 () extends js.Object {
     * @name pc.Vec4#scale
     * @description Scales each dimension of the specified 4-dimensional vector by the supplied
     * scalar value.
-    * @param {Number} scalar The value by which each vector component is multiplied.
+    * @param {number} scalar - The value by which each vector component is multiplied.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var v = new pc.Vec4(2, 4, 8, 16);
@@ -279,10 +278,10 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#set
     * @description Sets the specified 4-dimensional vector to the supplied numerical values.
-    * @param {Number} x The value to set on the first component of the vector.
-    * @param {Number} y The value to set on the second component of the vector.
-    * @param {Number} z The value to set on the third component of the vector.
-    * @param {Number} w The value to set on the fourth component of the vector.
+    * @param {number} x - The value to set on the first component of the vector.
+    * @param {number} y - The value to set on the second component of the vector.
+    * @param {number} z - The value to set on the third component of the vector.
+    * @param {number} w - The value to set on the fourth component of the vector.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var v = new pc.Vec4();
@@ -296,7 +295,7 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#sub
     * @description Subtracts a 4-dimensional vector from another in place.
-    * @param {pc.Vec4} rhs The vector to add to the specified vector.
+    * @param {pc.Vec4} rhs - The vector to add to the specified vector.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var a = new pc.Vec4(10, 10, 10, 10);
@@ -312,8 +311,8 @@ class Vec4 () extends js.Object {
     * @function
     * @name pc.Vec4#sub2
     * @description Subtracts two 4-dimensional vectors from one another and returns the result.
-    * @param {pc.Vec4} lhs The first vector operand for the subtraction.
-    * @param {pc.Vec4} rhs The second vector operand for the subtraction.
+    * @param {pc.Vec4} lhs - The first vector operand for the subtraction.
+    * @param {pc.Vec4} rhs - The second vector operand for the subtraction.
     * @returns {pc.Vec4} Self for chaining.
     * @example
     * var a = new pc.Vec4(10, 10, 10, 10);
@@ -336,8 +335,8 @@ object Vec4 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Vec4
     * @name pc.Vec4.ONE
+    * @type {pc.Vec4}
     * @description A constant vector set to [1, 1, 1, 1].
     */
   val ONE: Vec4 = js.native
@@ -345,8 +344,8 @@ object Vec4 extends js.Object {
     * @field
     * @static
     * @readonly
-    * @type pc.Vec4
     * @name pc.Vec4.ZERO
+    * @type {pc.Vec4}
     * @description A constant vector set to [0, 0, 0, 0].
     */
   val ZERO: Vec4 = js.native

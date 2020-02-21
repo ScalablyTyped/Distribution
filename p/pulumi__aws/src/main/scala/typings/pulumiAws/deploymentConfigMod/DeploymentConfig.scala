@@ -36,7 +36,7 @@ class DeploymentConfig protected () extends CustomResource {
     */
   val deploymentConfigName: Output_[String] = js.native
   /**
-    * A minimumHealthyHosts block. Minimum Healthy Hosts are documented below.
+    * A minimumHealthyHosts block. Required for `Server` compute platform. Minimum Healthy Hosts are documented below.
     */
   val minimumHealthyHosts: Output_[js.UndefOr[DeploymentConfigMinimumHealthyHosts]] = js.native
   /**

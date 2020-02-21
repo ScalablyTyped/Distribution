@@ -17,6 +17,7 @@ object ActionActivityColor extends js.Object {
   var Default: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivityColor = js.native
   var Gray: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivityColor = js.native
   var Green: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivityColor = js.native
+  var LightBlue: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivityColor = js.native
   var Orange: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivityColor = js.native
   var Purple: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivityColor = js.native
   var Red: typings.mendixmodelsdk.microflowsMod.microflows.ActionActivityColor = js.native

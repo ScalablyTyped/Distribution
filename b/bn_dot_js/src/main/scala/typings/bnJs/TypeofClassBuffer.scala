@@ -1,6 +1,8 @@
 package typings.bnJs
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.node.AnonHint
+import typings.node.AnonValueOf
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.NodeJS.ArrayBufferView
@@ -98,6 +100,17 @@ trait TypeofClassBuffer extends Instantiable1[/* str */ String, Buffer] {
     */
   def from(data: js.Array[Double]): Buffer = js.native
   def from(data: Uint8Array): Buffer = js.native
+  def from(obj: AnonHint): Buffer = js.native
+  def from(obj: AnonHint, byteOffset: Double): Buffer = js.native
+  def from(obj: AnonHint, byteOffset: Double, length: Double): Buffer = js.native
+  /**
+    * Creates a new buffer containing the coerced value of an object
+    * A `TypeError` will be thrown if {obj} has not mentioned methods or is not of other type appropriate for `Buffer.from()` variants.
+    * @param obj An object supporting `Symbol.toPrimitive` or `valueOf()`.
+    */
+  def from(obj: AnonValueOf): Buffer = js.native
+  def from(obj: AnonValueOf, byteOffset: Double): Buffer = js.native
+  def from(obj: AnonValueOf, byteOffset: Double, length: Double): Buffer = js.native
   /**
     * Creates a new Buffer containing the given JavaScript string {str}.
     * If provided, the {encoding} parameter identifies the character encoding.

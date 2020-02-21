@@ -1,5 +1,7 @@
 package typings.micromatch.mod
 
+import typings.micromatch.AnonParts
+import typings.micromatch.AnonTokens
 import typings.std.Partial
 import typings.std.RegExp
 import scala.scalajs.js
@@ -337,11 +339,13 @@ trait Micromatch extends js.Object {
     */
   def parse(glob: String): js.Object = js.native
   def parse(glob: String, options: Options): js.Object = js.native
+  def scan(pattern: String): ScanInfo = js.native
   /**
     * Scan a glob pattern to separate the pattern into segments.
     */
-  def scan(pattern: String): js.Object = js.native
-  def scan(pattern: String, options: Options): js.Object = js.native
+  def scan(pattern: String, options: AnonParts with ScanOptions): ScanInfoWithParts = js.native
+  def scan(pattern: String, options: AnonTokens with ScanOptions): ScanInfoWithTokens = js.native
+  def scan(pattern: String, options: ScanOptions): ScanInfo = js.native
   /**
     * Returns true if some of the strings in the given `list` match any of the given glob `patterns`.
     *

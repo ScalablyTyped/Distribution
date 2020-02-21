@@ -25,28 +25,56 @@ class Chart protected () extends CollectionComponentResource {
   def this(releaseName: String, config: ChartOpts, opts: ComponentResourceOptions) = this()
   def this(releaseName: String, config: LocalChartOpts, opts: ComponentResourceOptions) = this()
   def parseTemplate(
-    yamlStream: String,
+    text: String,
     transformations: js.UndefOr[scala.Nothing],
     resourcePrefix: js.UndefOr[scala.Nothing],
     dependsOn: js.Array[Resource]
   ): Output_[StringDictionary[CustomResource]] = js.native
   def parseTemplate(
-    yamlStream: String,
+    text: String,
+    transformations: js.UndefOr[scala.Nothing],
+    resourcePrefix: js.UndefOr[scala.Nothing],
+    dependsOn: js.Array[Resource],
+    defaultNamespace: String
+  ): Output_[StringDictionary[CustomResource]] = js.native
+  def parseTemplate(
+    text: String,
     transformations: js.UndefOr[scala.Nothing],
     resourcePrefix: String,
     dependsOn: js.Array[Resource]
   ): Output_[StringDictionary[CustomResource]] = js.native
   def parseTemplate(
-    yamlStream: String,
+    text: String,
+    transformations: js.UndefOr[scala.Nothing],
+    resourcePrefix: String,
+    dependsOn: js.Array[Resource],
+    defaultNamespace: String
+  ): Output_[StringDictionary[CustomResource]] = js.native
+  def parseTemplate(
+    text: String,
     transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
     resourcePrefix: js.UndefOr[scala.Nothing],
     dependsOn: js.Array[Resource]
   ): Output_[StringDictionary[CustomResource]] = js.native
   def parseTemplate(
-    yamlStream: String,
+    text: String,
+    transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
+    resourcePrefix: js.UndefOr[scala.Nothing],
+    dependsOn: js.Array[Resource],
+    defaultNamespace: String
+  ): Output_[StringDictionary[CustomResource]] = js.native
+  def parseTemplate(
+    text: String,
     transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
     resourcePrefix: String,
     dependsOn: js.Array[Resource]
+  ): Output_[StringDictionary[CustomResource]] = js.native
+  def parseTemplate(
+    text: String,
+    transformations: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]],
+    resourcePrefix: String,
+    dependsOn: js.Array[Resource],
+    defaultNamespace: String
   ): Output_[StringDictionary[CustomResource]] = js.native
 }
 

@@ -10,8 +10,8 @@ trait LinearGaugeScaleLabels extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var font: js.UndefOr[String] = js.undefined
   var format: js.UndefOr[String] = js.undefined
-  var margin: js.UndefOr[LinearGaugeScaleLabelsMargin] = js.undefined
-  var padding: js.UndefOr[LinearGaugeScaleLabelsPadding] = js.undefined
+  var margin: js.UndefOr[Double | LinearGaugeScaleLabelsMargin] = js.undefined
+  var padding: js.UndefOr[Double | LinearGaugeScaleLabelsPadding] = js.undefined
   var template: js.UndefOr[String | js.Function] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
 }
@@ -24,8 +24,8 @@ object LinearGaugeScaleLabels {
     color: String = null,
     font: String = null,
     format: String = null,
-    margin: LinearGaugeScaleLabelsMargin = null,
-    padding: LinearGaugeScaleLabelsPadding = null,
+    margin: Double | LinearGaugeScaleLabelsMargin = null,
+    padding: Double | LinearGaugeScaleLabelsPadding = null,
     template: String | js.Function = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): LinearGaugeScaleLabels = {

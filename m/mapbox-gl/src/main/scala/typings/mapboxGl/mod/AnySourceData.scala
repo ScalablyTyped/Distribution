@@ -52,6 +52,7 @@ object AnySourceData {
     generateId: js.UndefOr[Boolean] = js.undefined,
     lineMetrics: js.UndefOr[Boolean] = js.undefined,
     maxzoom: Int | Double = null,
+    promoteId: PromoteIdSpecification = null,
     tolerance: Int | Double = null
   ): AnySourceData = {
     val __obj = js.Dynamic.literal()
@@ -65,6 +66,7 @@ object AnySourceData {
     if (!js.isUndefined(generateId)) __obj.updateDynamic("generateId")(generateId.asInstanceOf[js.Any])
     if (!js.isUndefined(lineMetrics)) __obj.updateDynamic("lineMetrics")(lineMetrics.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
+    if (promoteId != null) __obj.updateDynamic("promoteId")(promoteId.asInstanceOf[js.Any])
     if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnySourceData]
   }
@@ -95,6 +97,7 @@ object AnySourceData {
     bounds: js.Array[Double] = null,
     maxzoom: Int | Double = null,
     minzoom: Int | Double = null,
+    promoteId: PromoteIdSpecification = null,
     scheme: xyz | tms = null,
     tiles: js.Array[String] = null,
     url: String = null
@@ -105,6 +108,7 @@ object AnySourceData {
     if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
     if (maxzoom != null) __obj.updateDynamic("maxzoom")(maxzoom.asInstanceOf[js.Any])
     if (minzoom != null) __obj.updateDynamic("minzoom")(minzoom.asInstanceOf[js.Any])
+    if (promoteId != null) __obj.updateDynamic("promoteId")(promoteId.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     if (tiles != null) __obj.updateDynamic("tiles")(tiles.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])

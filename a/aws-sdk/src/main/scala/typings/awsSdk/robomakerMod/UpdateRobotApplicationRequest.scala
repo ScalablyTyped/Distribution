@@ -15,7 +15,7 @@ trait UpdateRobotApplicationRequest extends js.Object {
     */
   var currentRevisionId: js.UndefOr[RevisionId] = js.native
   /**
-    * The robot software suite used by the robot application.
+    * The robot software suite (ROS distribution) used by the robot application.
     */
   var robotSoftwareSuite: RobotSoftwareSuite = js.native
   /**

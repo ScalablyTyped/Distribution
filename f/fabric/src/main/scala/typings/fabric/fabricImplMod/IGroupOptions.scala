@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 trait IGroupOptions extends IObjectOptions {
   /**
-  	 * Indicates if click events should also check for subtargets
+  	 * Indicates if click, mouseover, mouseout events & hoverCursor should also check for subtargets
   	 * @type Boolean
   	 */
   var subTargetCheck: js.UndefOr[Boolean] = js.undefined

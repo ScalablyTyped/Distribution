@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {String}
+  * @type {string}
   * @name pc.SCALEMODE_NONE
   * @description Always use the application's resolution as the resolution for the {@link pc.ScreenComponent}.
   */

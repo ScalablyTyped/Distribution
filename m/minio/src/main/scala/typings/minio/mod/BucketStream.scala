@@ -3,14 +3,14 @@ package typings.minio.mod
 import typings.minio.minioStrings.data
 import typings.minio.minioStrings.end
 import typings.minio.minioStrings.error
-import typings.node.streamMod.internal
+import typings.node.streamMod.Stream
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BucketStream[T] extends internal {
+trait BucketStream[T] extends Stream {
   @JSName("on")
   def on_data(event: data, listener: js.Function1[/* item */ T, Unit]): this.type = js.native
   @JSName("on")

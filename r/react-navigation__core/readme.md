@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation__core
 
-Typings are for version 3.5.1
+Typings are for version 3.5.2
 
 ## Library description:
 Core utilities for the react-navigation framework

@@ -1,16 +1,15 @@
 organization := "org.scalablytyped"
 name := "tensorflow-models__universal-sentence-encoder"
-version := "1.2.0-fce510"
-scalaVersion := "2.12.10"
+version := "1.2.0-33dab6"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-96076c",
-  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "1.5.1-7425e3",
-  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.5.1-4d8ae4")
+  "org.scalablytyped" %%% "std" % "3.7-1b8369",
+  "org.scalablytyped" %%% "tensorflow__tfjs-converter" % "1.5.2-ec440e",
+  "org.scalablytyped" %%% "tensorflow__tfjs-core" % "1.5.2-21d291")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

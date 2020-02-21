@@ -15,13 +15,15 @@ object createDrawerNavigatorMod extends js.Object {
   def default(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], _]
+      NavigationDrawerProp[NavigationRoute[NavigationParams], _], 
+      _
     ]
   ): js.Any = js.native
   def default(
     routeConfigs: NavigationRouteConfigMap[
       NavigationDrawerOptions, 
-      NavigationDrawerProp[NavigationRoute[NavigationParams], _]
+      NavigationDrawerProp[NavigationRoute[NavigationParams], _], 
+      _
     ],
     config: CreateNavigatorConfigNavigationDrawerConfigNavigat
   ): js.Any = js.native

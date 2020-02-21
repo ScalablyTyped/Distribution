@@ -1,8 +1,8 @@
 package typings.relayCompiler.relayLanguagePluginInterfaceMod
 
-import typings.relayCompiler.graphQLCompilerContextMod.IRTransform
-import typings.relayCompiler.graphQLIRMod.Fragment
-import typings.relayCompiler.graphQLIRMod.Root
+import typings.relayCompiler.compilerContextMod.IRTransform
+import typings.relayCompiler.iRMod.Fragment
+import typings.relayCompiler.iRMod.Root
 import typings.relayCompiler.schemaMod.Schema
 import scala.scalajs.js
 import scala.scalajs.js.`|`

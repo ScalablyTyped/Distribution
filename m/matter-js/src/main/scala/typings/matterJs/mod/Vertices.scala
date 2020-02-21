@@ -33,7 +33,7 @@ object Vertices extends js.Object {
     quality: Double,
     qualityMin: Double,
     qualityMax: Double
-  ): Unit = js.native
+  ): js.Array[Vector] = js.native
   /**
     * Chamfers a set of vertices by giving them rounded corners, returns a new set of vertices.
     * The radius parameter is a single number or an array to specify the radius for each vertex.
@@ -43,6 +43,7 @@ object Vertices extends js.Object {
     * @param {number} quality
     * @param {number} qualityMin
     * @param {number} qualityMax
+    * @return {vertices} vertices
     */
   def chamfer(
     vertices: js.Array[Vector],
@@ -50,7 +51,7 @@ object Vertices extends js.Object {
     quality: Double,
     qualityMin: Double,
     qualityMax: Double
-  ): Unit = js.native
+  ): js.Array[Vector] = js.native
   /**
     * Sorts the input vertices into clockwise order in place.
     * @method clockwiseSort
@@ -80,8 +81,9 @@ object Vertices extends js.Object {
     * @method create
     * @param {vector[]} points
     * @param {body} body
+    * @return {vertices} vertices
     */
-  def create(points: js.Array[Vector], body: Body): Unit = js.native
+  def create(points: js.Array[Vector], body: Body): js.Array[Vector] = js.native
   /**
     * Parses a string containing ordered x y pairs separated by spaces (and optionally commas),
     * into a `Matter.Vertices` object for the given `Matter.Body`.
@@ -127,8 +129,9 @@ object Vertices extends js.Object {
     * @param {vertices} vertices
     * @param {number} angle
     * @param {vector} point
+    * @return {vertices} vertices
     */
-  def rotate(vertices: js.Array[Vector], angle: Double, point: Vector): Unit = js.native
+  def rotate(vertices: js.Array[Vector], angle: Double, point: Vector): js.Array[Vector] = js.native
   /**
     * Scales the vertices from a point (default is centre) in-place.
     * @method scale
@@ -136,15 +139,17 @@ object Vertices extends js.Object {
     * @param {number} scaleX
     * @param {number} scaleY
     * @param {vector} point
+    * @return {vertices} vertices
     */
-  def scale(vertices: js.Array[Vector], scaleX: Double, scaleY: Double, point: Vector): Unit = js.native
+  def scale(vertices: js.Array[Vector], scaleX: Double, scaleY: Double, point: Vector): js.Array[Vector] = js.native
   /**
     * Translates the set of vertices in-place.
     * @method translate
     * @param {vertices} vertices
     * @param {vector} vector
     * @param {number} scalar
+    * @return {vertices} vertices
     */
-  def translate(vertices: js.Array[Vector], vector: Vector, scalar: Double): Unit = js.native
+  def translate(vertices: js.Array[Vector], vector: Vector, scalar: Double): js.Array[Vector] = js.native
 }
 

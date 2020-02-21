@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "watson-developer-cloud"
-version := "4.0.1-c12d6f"
-scalaVersion := "2.12.10"
+version := "4.0.1-28f985"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "axios" % "0.19.1-11d227",
-  "org.scalablytyped" %%% "ibm-cloud-sdk-core" % "0.1.2-1f2275",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200117Z-4be21b",
-  "org.scalablytyped" %%% "std" % "3.7-96076c")
+  "org.scalablytyped" %%% "axios" % "0.19.2-dc1577",
+  "org.scalablytyped" %%% "ibm-cloud-sdk-core" % "0.1.2-9bc5a5",
+  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-d6af7e",
+  "org.scalablytyped" %%% "std" % "3.7-1b8369")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

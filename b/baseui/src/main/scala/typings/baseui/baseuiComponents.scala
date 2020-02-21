@@ -346,6 +346,8 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def Tooltip: ComponentType[TooltipProps] = js.constructorOf[typings.baseui.tooltipMod.Tooltip].asInstanceOf[typings.react.mod.ComponentType[TooltipProps]]
   @scala.inline
+  def TreeLabel: ComponentType[TreeLabelProps] = typings.baseui.treeViewMod.TreeLabel.asInstanceOf[typings.react.mod.ComponentType[TreeLabelProps]]
+  @scala.inline
   def TriangleDown: ComponentType[TriangleDownProps] = typings.baseui.iconMod.TriangleDown.asInstanceOf[typings.react.mod.ComponentType[TriangleDownProps]]
   @scala.inline
   def TriangleLeft: ComponentType[TriangleLeftProps] = typings.baseui.iconMod.TriangleLeft.asInstanceOf[typings.react.mod.ComponentType[TriangleLeftProps]]

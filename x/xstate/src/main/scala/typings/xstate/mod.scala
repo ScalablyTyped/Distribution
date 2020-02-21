@@ -16,6 +16,7 @@ import typings.xstate.typesMod.DoneEvent
 import typings.xstate.typesMod.DoneEventObject
 import typings.xstate.typesMod.Event
 import typings.xstate.typesMod.EventObject
+import typings.xstate.typesMod.ExprWithMeta
 import typings.xstate.typesMod.InterpreterOptions
 import typings.xstate.typesMod.LogAction
 import typings.xstate.typesMod.LogExpr
@@ -53,11 +54,6 @@ object mod extends js.Object {
     def this(
       machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
       options: Partial[InterpreterOptions]
-    ) = this()
-    def this(
-      machine: StateMachine[TContext, TStateSchema, TEvent, TTypestate],
-      options: Partial[InterpreterOptions],
-      sessionId: String
     ) = this()
   }
   
@@ -288,8 +284,13 @@ object mod extends js.Object {
     def cancel(sendId: Double): CancelAction = js.native
     def done(id: String): DoneEventObject = js.native
     def done(id: String, data: js.Any): DoneEventObject = js.native
-    def escalate[TContext, TEvent /* <: EventObject */](errorData: js.Any): SendAction[TContext, TEvent] = js.native
-    def escalate[TContext, TEvent /* <: EventObject */](errorData: js.Any, options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent] = js.native
+    def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData): SendAction[TContext, TEvent] = js.native
+    def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData, options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent] = js.native
+    def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: ExprWithMeta[TContext, TEvent, TErrorData]): SendAction[TContext, TEvent] = js.native
+    def escalate[TContext, TEvent /* <: EventObject */, TErrorData](
+      errorData: ExprWithMeta[TContext, TEvent, TErrorData],
+      options: SendActionOptions[TContext, TEvent]
+    ): SendAction[TContext, TEvent] = js.native
     @JSName("forwardTo")
     def forwardTo_to[TContext, TEvent /* <: EventObject */](
       target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any

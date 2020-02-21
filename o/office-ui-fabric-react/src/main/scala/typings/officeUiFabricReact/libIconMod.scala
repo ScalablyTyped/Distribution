@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.officeUiFabricReact.iconTypesMod.IImageIconProps
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
-import typings.react.mod.StatelessComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +20,7 @@ object libIconMod extends js.Object {
   }
   
   val FontIcon: FunctionComponent[IFontIconProps] = js.native
-  val Icon: StatelessComponent[IIconProps] = js.native
+  val Icon: FunctionComponent[IIconProps] = js.native
   val ImageIcon: FunctionComponent[IImageIconProps] = js.native
   def getFontIcon(iconName: String): ReactElement | Null = js.native
   def getFontIcon(iconName: String, className: js.UndefOr[scala.Nothing], ariaLabel: String): ReactElement | Null = js.native

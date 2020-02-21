@@ -43,6 +43,10 @@ trait ContactData extends js.Object {
     */
   var prePassStartTime: js.UndefOr[Timestamp] = js.native
   /**
+    * Region of a contact.
+    */
+  var region: js.UndefOr[String] = js.native
+  /**
     * ARN of a satellite.
     */
   var satelliteArn: js.UndefOr[typings.awsSdk.groundstationMod.satelliteArn] = js.native
@@ -68,6 +72,7 @@ object ContactData {
     missionProfileArn: MissionProfileArn = null,
     postPassEndTime: Timestamp = null,
     prePassStartTime: Timestamp = null,
+    region: String = null,
     satelliteArn: satelliteArn = null,
     startTime: Timestamp = null,
     tags: TagsMap = null
@@ -82,6 +87,7 @@ object ContactData {
     if (missionProfileArn != null) __obj.updateDynamic("missionProfileArn")(missionProfileArn.asInstanceOf[js.Any])
     if (postPassEndTime != null) __obj.updateDynamic("postPassEndTime")(postPassEndTime.asInstanceOf[js.Any])
     if (prePassStartTime != null) __obj.updateDynamic("prePassStartTime")(prePassStartTime.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
     if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn.asInstanceOf[js.Any])
     if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

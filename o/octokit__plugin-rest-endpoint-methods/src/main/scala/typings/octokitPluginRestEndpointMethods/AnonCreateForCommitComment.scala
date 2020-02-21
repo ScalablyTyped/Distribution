@@ -1,0 +1,61 @@
+package typings.octokitPluginRestEndpointMethods
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AnonCreateForCommitComment extends js.Object {
+  var createForCommitComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContent
+  var createForIssue: AnonHeadersMethodParamsUrlAnonAcceptAnonContentIssuenumber
+  var createForIssueComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContent
+  var createForPullRequestReviewComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContent
+  var createForTeamDiscussion: AnonDeprecatedHeadersMethodParamsUrlAnonAccept
+  var createForTeamDiscussionComment: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumber
+  var createForTeamDiscussionCommentInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContent
+  var createForTeamDiscussionCommentLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumber
+  var createForTeamDiscussionInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberOrg
+  var createForTeamDiscussionLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAccept
+  var delete: AnonHeadersMethodParamsUrlAnonAcceptAnonReactionid
+  var listForCommitComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContentOwner
+  var listForIssue: AnonHeadersMethodParamsUrlAnonAcceptAnonContentIssuenumberNumber
+  var listForIssueComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContentOwner
+  var listForPullRequestReviewComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContentOwner
+  var listForTeamDiscussion: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberPage
+  var listForTeamDiscussionComment: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContentDiscussionnumber
+  var listForTeamDiscussionCommentInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContentDiscussionnumberOrg
+  var listForTeamDiscussionCommentLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContentDiscussionnumber
+  var listForTeamDiscussionInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberOrgPage
+  var listForTeamDiscussionLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberPage
+}
+
+object AnonCreateForCommitComment {
+  @scala.inline
+  def apply(
+    createForCommitComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContent,
+    createForIssue: AnonHeadersMethodParamsUrlAnonAcceptAnonContentIssuenumber,
+    createForIssueComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContent,
+    createForPullRequestReviewComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContent,
+    createForTeamDiscussion: AnonDeprecatedHeadersMethodParamsUrlAnonAccept,
+    createForTeamDiscussionComment: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumber,
+    createForTeamDiscussionCommentInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContent,
+    createForTeamDiscussionCommentLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumber,
+    createForTeamDiscussionInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberOrg,
+    createForTeamDiscussionLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAccept,
+    delete: AnonHeadersMethodParamsUrlAnonAcceptAnonReactionid,
+    listForCommitComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContentOwner,
+    listForIssue: AnonHeadersMethodParamsUrlAnonAcceptAnonContentIssuenumberNumber,
+    listForIssueComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContentOwner,
+    listForPullRequestReviewComment: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentidContentOwner,
+    listForTeamDiscussion: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberPage,
+    listForTeamDiscussionComment: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContentDiscussionnumber,
+    listForTeamDiscussionCommentInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContentDiscussionnumberOrg,
+    listForTeamDiscussionCommentLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonCommentnumberContentDiscussionnumber,
+    listForTeamDiscussionInOrg: AnonHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberOrgPage,
+    listForTeamDiscussionLegacy: AnonDeprecatedHeadersMethodParamsUrlAnonAcceptAnonContentDiscussionnumberPage
+  ): AnonCreateForCommitComment = {
+    val __obj = js.Dynamic.literal(createForCommitComment = createForCommitComment.asInstanceOf[js.Any], createForIssue = createForIssue.asInstanceOf[js.Any], createForIssueComment = createForIssueComment.asInstanceOf[js.Any], createForPullRequestReviewComment = createForPullRequestReviewComment.asInstanceOf[js.Any], createForTeamDiscussion = createForTeamDiscussion.asInstanceOf[js.Any], createForTeamDiscussionComment = createForTeamDiscussionComment.asInstanceOf[js.Any], createForTeamDiscussionCommentInOrg = createForTeamDiscussionCommentInOrg.asInstanceOf[js.Any], createForTeamDiscussionCommentLegacy = createForTeamDiscussionCommentLegacy.asInstanceOf[js.Any], createForTeamDiscussionInOrg = createForTeamDiscussionInOrg.asInstanceOf[js.Any], createForTeamDiscussionLegacy = createForTeamDiscussionLegacy.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], listForCommitComment = listForCommitComment.asInstanceOf[js.Any], listForIssue = listForIssue.asInstanceOf[js.Any], listForIssueComment = listForIssueComment.asInstanceOf[js.Any], listForPullRequestReviewComment = listForPullRequestReviewComment.asInstanceOf[js.Any], listForTeamDiscussion = listForTeamDiscussion.asInstanceOf[js.Any], listForTeamDiscussionComment = listForTeamDiscussionComment.asInstanceOf[js.Any], listForTeamDiscussionCommentInOrg = listForTeamDiscussionCommentInOrg.asInstanceOf[js.Any], listForTeamDiscussionCommentLegacy = listForTeamDiscussionCommentLegacy.asInstanceOf[js.Any], listForTeamDiscussionInOrg = listForTeamDiscussionInOrg.asInstanceOf[js.Any], listForTeamDiscussionLegacy = listForTeamDiscussionLegacy.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonCreateForCommitComment]
+  }
+}
+

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StackSetSummary extends js.Object {
   /**
+    * [Service-managed permissions] Describes whether StackSets automatically deploys to AWS Organizations accounts that are added to a target organizational unit (OU).
+    */
+  var AutoDeployment: js.UndefOr[typings.awsSdk.cloudformationMod.AutoDeployment] = js.native
+  /**
     * A description of the stack set that you specify when the stack set is created or updated.
     */
   var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
@@ -18,6 +22,10 @@ trait StackSetSummary extends js.Object {
     * Most recent time when CloudFormation performed a drift detection operation on the stack set. This value will be NULL for any stack set on which drift detection has not yet been performed.
     */
   var LastDriftCheckTimestamp: js.UndefOr[Timestamp] = js.native
+  /**
+    * Describes how the IAM roles required for stack set operations are created.   With self-managed permissions, you must create the administrator and execution roles required to deploy to target accounts. For more information, see Grant Self-Managed Stack Set Permissions.   With service-managed permissions, StackSets automatically creates the IAM roles required to deploy to accounts managed by AWS Organizations. For more information, see Grant Service-Managed Stack Set Permissions.  
+    */
+  var PermissionModel: js.UndefOr[PermissionModels] = js.native
   /**
     * The ID of the stack set.
     */
@@ -35,17 +43,21 @@ trait StackSetSummary extends js.Object {
 object StackSetSummary {
   @scala.inline
   def apply(
+    AutoDeployment: AutoDeployment = null,
     Description: Description = null,
     DriftStatus: StackDriftStatus = null,
     LastDriftCheckTimestamp: Timestamp = null,
+    PermissionModel: PermissionModels = null,
     StackSetId: StackSetId = null,
     StackSetName: StackSetName = null,
     Status: StackSetStatus = null
   ): StackSetSummary = {
     val __obj = js.Dynamic.literal()
+    if (AutoDeployment != null) __obj.updateDynamic("AutoDeployment")(AutoDeployment.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DriftStatus != null) __obj.updateDynamic("DriftStatus")(DriftStatus.asInstanceOf[js.Any])
     if (LastDriftCheckTimestamp != null) __obj.updateDynamic("LastDriftCheckTimestamp")(LastDriftCheckTimestamp.asInstanceOf[js.Any])
+    if (PermissionModel != null) __obj.updateDynamic("PermissionModel")(PermissionModel.asInstanceOf[js.Any])
     if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])
     if (StackSetName != null) __obj.updateDynamic("StackSetName")(StackSetName.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])

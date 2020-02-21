@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.TONEMAP_HEJL
+  * @type {number}
   * @description Hejl filmic tonemapping curve.
   */
 @JSGlobal("pc.TONEMAP_HEJL")

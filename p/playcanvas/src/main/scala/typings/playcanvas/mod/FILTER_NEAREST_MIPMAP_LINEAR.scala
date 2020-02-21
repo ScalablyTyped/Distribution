@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FILTER_NEAREST_MIPMAP_LINEAR
+  * @type {number}
   * @description Linearly interpolate in the nearest mipmap level.
   */
 @JSImport("playcanvas", "FILTER_NEAREST_MIPMAP_LINEAR")

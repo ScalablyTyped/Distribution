@@ -55,7 +55,7 @@ class LustreFileSystem protected () extends CustomResource {
     */
   val securityGroupIds: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * The storage capacity (GiB) of the file system. Minimum of `3600`. Storage capacity is provisioned in increments of 3,600 GiB.
+    * The storage capacity (GiB) of the file system. Minimum of `1200`. Storage capacity is provisioned in increments of 3,600 GiB.
     */
   val storageCapacity: Output_[Double] = js.native
   /**

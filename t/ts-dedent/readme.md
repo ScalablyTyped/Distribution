@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-dedent
 
-Typings are for version 1.1.0
+Typings are for version 1.1.1
 
 ## Library description:
 TypeScript package which smartly trims and strips indentation from multi-line strings

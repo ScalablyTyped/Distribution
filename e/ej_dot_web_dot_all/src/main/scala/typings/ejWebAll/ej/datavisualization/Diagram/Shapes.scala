@@ -25,7 +25,7 @@ object Shapes extends js.Object {
   
   //Used to specify node type as HTML
   @js.native
-  sealed trait HTML extends Shapes
+  sealed trait Html extends Shapes
   
   //Used to specify node type as Image
   @js.native
@@ -59,7 +59,7 @@ object Shapes extends js.Object {
   object Flow extends TopLevel[Flow with Double]
   
   /* 2 */ @js.native
-  object HTML extends TopLevel[HTML with Double]
+  object Html extends TopLevel[Html with Double]
   
   /* 1 */ @js.native
   object Image extends TopLevel[Image with Double]

@@ -15,6 +15,7 @@ trait DrawerView
   var context_DrawerView: ContextType[Context[SupportedThemes]] = js.native
   var drawerGestureRef: js.Any = js.native
   var getDrawerBackgroundColor: js.Any = js.native
+  var getLockMode: js.Any = js.native
   var getOverlayColor: js.Any = js.native
   var handleDrawerClose: js.Any = js.native
   var handleDrawerOpen: js.Any = js.native
@@ -24,6 +25,8 @@ trait DrawerView
   var updateWidth: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MDrawerView(): Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MDrawerView(prevProps: Props): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDrawerView(): Unit = js.native
 }

@@ -1,6 +1,6 @@
 package typings.protractor.mod
 
-import typings.seleniumWebdriver.mod.logging.IType
+import typings.seleniumWebdriver.loggingMod.IType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,9 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor", "logging")
 @js.native
 object logging extends js.Object {
-  /**
-    * A single log entry.
-    */
   @js.native
   class Entry protected ()
     extends typings.seleniumWebdriver.mod.logging.Entry {
@@ -25,33 +22,28 @@ object logging extends js.Object {
       * @param {string=} opt_type The log type, if known.
       * @constructor
       */
-    def this(level: typings.seleniumWebdriver.mod.logging.Level, message: String) = this()
+    def this(level: typings.seleniumWebdriver.loggingMod.Level, message: String) = this()
     def this(level: String, message: String, opt_timestamp: Double) = this()
     def this(level: Double, message: String, opt_timestamp: Double) = this()
-    def this(level: typings.seleniumWebdriver.mod.logging.Level, message: String, opt_timestamp: Double) = this()
+    def this(level: typings.seleniumWebdriver.loggingMod.Level, message: String, opt_timestamp: Double) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: String, message: String, opt_timestamp: Double, opt_type: IType) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: String) = this()
     def this(level: Double, message: String, opt_timestamp: Double, opt_type: IType) = this()
     def this(
-      level: typings.seleniumWebdriver.mod.logging.Level,
+      level: typings.seleniumWebdriver.loggingMod.Level,
       message: String,
       opt_timestamp: Double,
       opt_type: String
     ) = this()
     def this(
-      level: typings.seleniumWebdriver.mod.logging.Level,
+      level: typings.seleniumWebdriver.loggingMod.Level,
       message: String,
       opt_timestamp: Double,
       opt_type: IType
     ) = this()
   }
   
-  /**
-    * Defines a message level that may be used to control logging output.
-    *
-    * @final
-    */
   @js.native
   class Level protected ()
     extends typings.seleniumWebdriver.mod.logging.Level {
@@ -62,31 +54,10 @@ object logging extends js.Object {
     def this(name: String, level: Double) = this()
   }
   
-  /**
-    * Maintains a collection of loggers.
-    *
-    * @final
-    */
   @js.native
   class LogManager ()
-    extends typings.seleniumWebdriver.mod.logging.LogManager
+    extends typings.seleniumWebdriver.loggingMod.LogManager
   
-  /**
-    * An object used to log debugging messages. Loggers use a hierarchical,
-    * dot-separated naming scheme. For instance, 'foo' is considered the parent of
-    * the 'foo.bar' and an ancestor of 'foo.bar.baz'.
-    *
-    * Each logger may be assigned a {@linkplain #setLevel log level}, which
-    * controls which level of messages will be reported to the
-    * {@linkplain #addHandler handlers} attached to this instance. If a log level
-    * is not explicitly set on a logger, it will inherit its parent.
-    *
-    * This class should never be directly instantiated. Instead, users should
-    * obtain logger references using the {@linkplain ./logging.getLogger()
-    * getLogger()} function.
-    *
-    * @final
-    */
   @js.native
   class Logger protected ()
     extends typings.seleniumWebdriver.mod.logging.Logger {
@@ -95,60 +66,23 @@ object logging extends js.Object {
       * @param {Level=} opt_level the initial level for this logger.
       */
     def this(name: String) = this()
-    def this(name: String, opt_level: typings.seleniumWebdriver.mod.logging.Level) = this()
+    def this(name: String, opt_level: typings.seleniumWebdriver.loggingMod.Level) = this()
   }
   
-  /**
-    * A hash describing log preferences.
-    * @typedef {Object.<logging.Type, logging.LevelName>}
-    */
   @js.native
   class Preferences ()
     extends typings.seleniumWebdriver.mod.logging.Preferences
   
-  /**
-    * Common log types.
-    * @enum {string}
-    */
   val Type: IType = js.native
-  /**
-    * Adds the console handler to the given logger. The console handler will log
-    * all messages using the JavaScript Console API.
-    *
-    * @param {Logger=} opt_logger The logger to add the handler to; defaults
-    *     to the root logger.
-    */
   def addConsoleHandler(): Unit = js.native
-  def addConsoleHandler(opt_logger: typings.seleniumWebdriver.mod.logging.Logger): Unit = js.native
-  /**
-    * Converts a level name or value to a {@link logging.Level} value.
-    * If the name/value is not recognized, {@link logging.Level.ALL}
-    * will be returned.
-    * @param {(number|string)} nameOrValue The log level name, or value, to
-    *     convert .
-    * @return {!logging.Level} The converted level.
-    */
-  def getLevel(nameOrValue: String): typings.seleniumWebdriver.mod.logging.Level = js.native
-  def getLevel(nameOrValue: Double): typings.seleniumWebdriver.mod.logging.Level = js.native
-  /**
-    * Retrieves a named logger, creating it in the process. This function will
-    * implicitly create the requested logger, and any of its parents, if they
-    * do not yet exist.
-    *
-    * @param {string} name the logger's name.
-    * @return {!Logger} the requested logger.
-    */
-  def getLogger(): typings.seleniumWebdriver.mod.logging.Logger = js.native
-  def getLogger(name: String): typings.seleniumWebdriver.mod.logging.Logger = js.native
-  /**
-    * Removes the console log handler from the given logger.
-    *
-    * @param {Logger=} opt_logger The logger to remove the handler from; defaults
-    *     to the root logger.
-    * @see exports.addConsoleHandler
-    */
+  def addConsoleHandler(opt_logger: typings.seleniumWebdriver.loggingMod.Logger): Unit = js.native
+  def getLevel(nameOrValue: String): typings.seleniumWebdriver.loggingMod.Level = js.native
+  def getLevel(nameOrValue: Double): typings.seleniumWebdriver.loggingMod.Level = js.native
+  def getLogger(): typings.seleniumWebdriver.loggingMod.Logger = js.native
+  def getLogger(name: String): typings.seleniumWebdriver.loggingMod.Logger = js.native
+  def installConsoleHandler(): Unit = js.native
   def removeConsoleHandler(): Unit = js.native
-  def removeConsoleHandler(opt_logger: typings.seleniumWebdriver.mod.logging.Logger): Unit = js.native
+  def removeConsoleHandler(opt_logger: typings.seleniumWebdriver.loggingMod.Logger): Unit = js.native
   /* static members */
   @js.native
   object Level extends js.Object {
@@ -156,47 +90,47 @@ object logging extends js.Object {
       * Indicates all log messages should be recorded.
       * @const
       */
-    var ALL: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var ALL: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Log messages with a level of `700` or higher.
       * @const
       */
-    var DEBUG: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var DEBUG: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Log messages with a level of `500` or higher.
       * @const
       */
-    var FINE: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var FINE: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Log messages with a level of `400` or higher.
       * @const
       */
-    var FINER: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var FINER: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Log messages with a level of `300` or higher.
       * @const
       */
-    var FINEST: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var FINEST: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Log messages with a level of `800` or higher.
       * @const
       */
-    var INFO: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var INFO: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Indicates no log messages should be recorded.
       * @const
       */
-    var OFF: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var OFF: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Log messages with a level of `1000` or higher.
       * @const
       */
-    var SEVERE: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var SEVERE: typings.seleniumWebdriver.loggingMod.Level = js.native
     /**
       * Log messages with a level of `900` or higher.
       * @const
       */
-    var WARNING: typings.seleniumWebdriver.mod.logging.Level = js.native
+    var WARNING: typings.seleniumWebdriver.loggingMod.Level = js.native
   }
   
 }

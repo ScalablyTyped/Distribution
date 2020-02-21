@@ -19,6 +19,11 @@ trait Formatters extends js.Object {
   def getDateTimeFormat(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.DateTimeFormat> is not an array type */ args: ConstructorParameters[AnonLocales]
   ): DateTimeFormat
+  def getDisplayNames(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof DisplayNames> is not an array type */ args: ConstructorParameters[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DisplayNames */ _
+    ]
+  ): js.Any
   def getListFormat(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof IntlListFormat> is not an array type */ args: ConstructorParameters[TypeofClassIntlListFormat]
   ): default
@@ -40,13 +45,16 @@ object Formatters {
   @scala.inline
   def apply(
     getDateTimeFormat: ConstructorParameters[AnonLocales] => DateTimeFormat,
+    getDisplayNames: ConstructorParameters[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DisplayNames */ _
+    ] => js.Any,
     getListFormat: ConstructorParameters[TypeofClassIntlListFormat] => default,
     getMessageFormat: ConstructorParameters[TypeofClassIntlMessageFormat] => typings.intlMessageformat.mod.default,
     getNumberFormat: ConstructorParameters[AnonLocalesOptions] => NumberFormat,
     getPluralRules: ConstructorParameters[AnonLocalesOptionsSupportedLocalesOf] => PluralRules,
     getRelativeTimeFormat: ConstructorParameters[TypeofClassIntlRelativeTimeFormat] => typings.formatjsIntlRelativetimeformat.mod.default
   ): Formatters = {
-    val __obj = js.Dynamic.literal(getDateTimeFormat = js.Any.fromFunction1(getDateTimeFormat), getListFormat = js.Any.fromFunction1(getListFormat), getMessageFormat = js.Any.fromFunction1(getMessageFormat), getNumberFormat = js.Any.fromFunction1(getNumberFormat), getPluralRules = js.Any.fromFunction1(getPluralRules), getRelativeTimeFormat = js.Any.fromFunction1(getRelativeTimeFormat))
+    val __obj = js.Dynamic.literal(getDateTimeFormat = js.Any.fromFunction1(getDateTimeFormat), getDisplayNames = js.Any.fromFunction1(getDisplayNames), getListFormat = js.Any.fromFunction1(getListFormat), getMessageFormat = js.Any.fromFunction1(getMessageFormat), getNumberFormat = js.Any.fromFunction1(getNumberFormat), getPluralRules = js.Any.fromFunction1(getPluralRules), getRelativeTimeFormat = js.Any.fromFunction1(getRelativeTimeFormat))
   
     __obj.asInstanceOf[Formatters]
   }

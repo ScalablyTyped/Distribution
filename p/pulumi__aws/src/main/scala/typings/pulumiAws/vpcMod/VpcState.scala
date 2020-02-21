@@ -69,7 +69,7 @@ trait VpcState extends js.Object {
   /**
     * The ID of the main route table associated with
     * this VPC. Note that you can change a VPC's main route table by using an
-    * [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_assoc.html).
+    * [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
     */
   val mainRouteTableId: js.UndefOr[Input[String]] = js.native
   /**

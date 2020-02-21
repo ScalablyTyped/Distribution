@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * @constant
-  * @type {Number}
   * @name pc.FILTER_LINEAR_MIPMAP_NEAREST
+  * @type {number}
   * @description Use the nearest neighbor after linearly interpolating between mipmap levels.
   */
 @JSGlobal("pc.FILTER_LINEAR_MIPMAP_NEAREST")
