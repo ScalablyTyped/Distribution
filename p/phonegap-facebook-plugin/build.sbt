@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phonegap-facebook-plugin"
-version := "0.11.0-dt-20190322Z-d27537"
+version := "0.11.0-dt-20200226Z-d27537"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

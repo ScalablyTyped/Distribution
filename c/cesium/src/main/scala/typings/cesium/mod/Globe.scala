@@ -33,6 +33,7 @@ class Globe () extends js.Object {
   var preloadAncestors: Boolean = js.native
   var preloadSiblings: Boolean = js.native
   var show: Boolean = js.native
+  var showGroundAtmosphere: Boolean = js.native
   var showSkirts: Boolean = js.native
   var showWaterEffect: Boolean = js.native
   var southPoleColor: Cartesian3 = js.native

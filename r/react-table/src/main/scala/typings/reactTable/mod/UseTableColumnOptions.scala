@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent react-table.react-table.Accessor<D> */
-/* Inlined parent std.Partial<{  columns  :std.Array<react-table.react-table.Column<D>>,   show  :boolean | (instance : react-table.react-table.TableInstance<D>): boolean,   Header  :react-table.react-table.Renderer<react-table.react-table.HeaderProps<D>>,   Cell  :react-table.react-table.Renderer<react-table.react-table.CellProps<D>>,   width ? :number | string,   minWidth ? :number,   maxWidth ? :number}> */
+/* Inlined parent std.Partial<{  columns  :std.Array<react-table.react-table.Column<D>>,   Header  :react-table.react-table.Renderer<react-table.react-table.HeaderProps<D>>,   Cell  :react-table.react-table.Renderer<react-table.react-table.CellProps<D>>,   width ? :number | string,   minWidth ? :number,   maxWidth ? :number}> */
 trait UseTableColumnOptions[D /* <: js.Object */] extends js.Object {
   var Cell: js.UndefOr[Renderer[CellProps[D]]] = js.undefined
   var Header: js.UndefOr[Renderer[HeaderProps[D]]] = js.undefined
@@ -17,7 +17,6 @@ trait UseTableColumnOptions[D /* <: js.Object */] extends js.Object {
   var id: js.UndefOr[IdType[D]] = js.undefined
   var maxWidth: js.UndefOr[Double] = js.undefined
   var minWidth: js.UndefOr[Double] = js.undefined
-  var show: js.UndefOr[Boolean | (js.Function1[/* instance */ TableInstance[D], Boolean])] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
 }
 
@@ -31,7 +30,6 @@ object UseTableColumnOptions {
     id: IdType[D] = null,
     maxWidth: Int | Double = null,
     minWidth: Int | Double = null,
-    show: Boolean | (js.Function1[/* instance */ TableInstance[D], Boolean]) = null,
     width: Double | String = null
   ): UseTableColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
@@ -42,7 +40,6 @@ object UseTableColumnOptions {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseTableColumnOptions[D]]
   }

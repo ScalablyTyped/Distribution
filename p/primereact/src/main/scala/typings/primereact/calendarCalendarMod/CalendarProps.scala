@@ -1,6 +1,6 @@
 package typings.primereact.calendarCalendarMod
 
-import typings.primereact.AnonOriginalEventEvent
+import typings.primereact.AnonOriginalEventTarget
 import typings.primereact.AnonOriginalEventValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod.ReactNode
@@ -41,7 +41,7 @@ trait CalendarProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var numberOfMonths: js.UndefOr[Double] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventEvent, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonOriginalEventTarget, Unit]] = js.undefined
   var onClearButtonClick: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onInput: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
@@ -113,7 +113,7 @@ object CalendarProps {
     name: String = null,
     numberOfMonths: Int | Double = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonOriginalEventEvent => Unit = null,
+    onChange: /* e */ AnonOriginalEventTarget => Unit = null,
     onClearButtonClick: /* event */ Event_ => Unit = null,
     onFocus: /* event */ Event_ => Unit = null,
     onInput: /* event */ Event_ => Unit = null,

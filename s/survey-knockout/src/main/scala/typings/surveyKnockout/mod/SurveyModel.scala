@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.surveyKnockout.mod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, getCss, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, isUpdateValueTextOnTyping, requiredText, beforeSettingQuestionErrors, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, updatePageCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixAllowRemoveRow, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
+- typings.surveyKnockout.mod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, getCss, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, isUpdateValueTextOnTyping, requiredText, beforeSettingQuestionErrors, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionDescriptionLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, updatePageCssClasses, afterRenderQuestion, afterRenderQuestionInput, afterRenderPanel, afterRenderPage, getQuestionByValueNameFromArray, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixAllowRemoveRow, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
 @js.native
 class SurveyModel ()
   extends Base
@@ -334,6 +334,14 @@ class SurveyModel ()
     */
   var onAfterRenderQuestion: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
+    * The event is fired right after a non-composite question (text, comment, dropdown, radiogroup, checkbox) is rendered in DOM. Use it to modify HTML elements.
+    * This event is not fired for matrices, panels, multiple text and image picker.
+    * <br/> `sender` - the survey object that fires the event.
+    * <br/> `options.question` - a question object for which the event is fired.
+    * <br/> `options.htmlElement` - an HTML element bound to the question object.
+    */
+  var onAfterRenderQuestionInput: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
     * The event is fired right after survey is rendered in DOM.
     * <br/> `sender` - the survey object that fires the event.
     * <br/> `options.htmlElement` - a root HTML element bound to the survey object.
@@ -500,6 +508,14 @@ class SurveyModel ()
     * <br/> `serverResult` - a result that comes from the server as it is.
     */
   var onLoadChoicesFromServer: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
+    * The event is fired after survey is loaded from api.surveyjs.io service.
+    * You can use this event to perform manipulation with the survey model after it was loaded from the web service.
+    * <br/> `sender` - the survey object that fires the event.
+    * @see surveyId
+    * @see loadSurveyFromService
+    */
+  var onLoadedSurveyFromService: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * The event is fired for every cell after is has been rendered in DOM.
     * <br/> `sender` - the survey object that fires the event.
@@ -1097,6 +1113,7 @@ class SurveyModel ()
   /**
     * Gets or sets an identifier of a survey model loaded from the [dxsurvey.com](http://www.dxsurvey.com) service. When specified, the survey JSON is automatically loaded from [dxsurvey.com](http://www.dxsurvey.com) service.
     * @see loadSurveyFromService
+    * @see onLoadedSurveyFromService
     */
   var surveyId: String = js.native
   /**
@@ -1171,6 +1188,9 @@ class SurveyModel ()
   @JSName("afterRenderPanel")
   def afterRenderPanel_Unit(panel: IElement, htmlElement: js.Any): Unit = js.native
   def afterRenderQuestion(question: IQuestion, htmlElement: js.Any): js.Any = js.native
+  def afterRenderQuestionInput(question: IQuestion, htmlElement: js.Any): js.Any = js.native
+  @JSName("afterRenderQuestionInput")
+  def afterRenderQuestionInput_Unit(question: IQuestion, htmlElement: js.Any): Unit = js.native
   @JSName("afterRenderQuestion")
   def afterRenderQuestion_Unit(question: IQuestion, htmlElement: js.Any): Unit = js.native
   /* protected */ def afterRenderSurvey(htmlElement: js.Any): Unit = js.native
@@ -1461,6 +1481,7 @@ class SurveyModel ()
     * @param surveyId [dxsurvey.com](http://www.dxsurvey.com) service surveyId
     * @param clientId users' indentifier, for example an e-mail or a unique customer id in your web application.
     * @see state
+    * @see onLoadedSurveyFromService
     */
   def loadSurveyFromService(): Unit = js.native
   def loadSurveyFromService(surveyId: String): Unit = js.native

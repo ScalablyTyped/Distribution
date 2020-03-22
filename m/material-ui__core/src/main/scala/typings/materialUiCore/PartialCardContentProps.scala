@@ -146,7 +146,7 @@ trait PartialCardContentProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCardContentClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCardCo] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[CardContentProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -327,7 +327,7 @@ object PartialCardContentProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCardContentClassKey = null,
+    classes: PartialClassNameMapCardCo = null,
     color: String = null,
     component: ReactType[CardContentProps] = null,
     contentEditable: Booleanish | inherit = null,

@@ -1,6 +1,5 @@
 package typings.tstl
 
-import org.scalablytyped.runtime.Instantiable1
 import typings.tstl.binaryPredicatorMod.BinaryPredicator
 import typings.tstl.hasherMod.Hasher
 import typings.tstl.iassociativecontainerMod.IAssociativeContainer
@@ -75,22 +74,6 @@ object ihashcontainerMod extends js.Object {
       * @param n The capacity to reserve.
       */
     def reserve(n: Double): Unit = js.native
-  }
-  
-  @js.native
-  object IHashContainer extends js.Object {
-    /**
-      * @internal
-      */
-    @js.native
-    trait Factory[T, Arguments /* <: js.Array[_] */] extends Instantiable1[/* args */ Arguments, T]
-    
-    def construct[Key, T /* <: Elem */, SourceT /* <: IHashContainer[Key, T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem](
-      source: SourceT,
-      Source: Factory[SourceT, js.Array[_]],
-      bucketFactory: js.Function2[/* hasher */ Hasher[Key], /* predicator */ BinaryPredicator[Key, Key], Unit],
-      args: js.Any*
-    ): Unit = js.native
   }
   
 }

@@ -63,7 +63,6 @@ class ConditionalRangeBorderCollection () extends ClientObject {
     */
   val top: ConditionalRangeBorder = js.native
   /**
-    *
     * Gets a border object using its name.
     *
     * [Api set: ExcelApi 1.6]
@@ -72,7 +71,6 @@ class ConditionalRangeBorderCollection () extends ClientObject {
     */
   def getItem(index: ConditionalRangeBorderIndex): ConditionalRangeBorder = js.native
   /**
-    *
     * Gets a border object using its index.
     *
     * [Api set: ExcelApi 1.6]
@@ -87,7 +85,6 @@ class ConditionalRangeBorderCollection () extends ClientObject {
   @JSName("getItem")
   def getItem_EdgeRight(index: EdgeRight): ConditionalRangeBorder = js.native
   /**
-    *
     * Gets a border object using its name.
     *
     * [Api set: ExcelApi 1.6]

@@ -1,7 +1,7 @@
 package typings.materialUiCore.selectSelectMod
 
-import typings.materialUiCore.AnonDense
-import typings.materialUiCore.PartialClassNameMapSelectClassKey
+import typings.materialUiCore.AnonDisabled
+import typings.materialUiCore.PartialClassNameMapSelect
 import typings.materialUiCore.PartialMenuProps
 import typings.materialUiCore.inputBaseInputBaseMod.InputBaseComponentProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -165,7 +165,7 @@ trait SelectProps extends js.Object {
   var autoWidth: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapSelectClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapSelect] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -294,7 +294,7 @@ trait SelectProps extends js.Object {
   var property: js.UndefOr[String] = js.native
   var radioGroup: js.UndefOr[String] = js.native
   var readOnly: js.UndefOr[Boolean] = js.native
-  var renderPrefix: js.UndefOr[js.Function1[/* state */ AnonDense, ReactNode]] = js.native
+  var renderPrefix: js.UndefOr[js.Function1[/* state */ AnonDisabled, ReactNode]] = js.native
   var renderValue: js.UndefOr[
     js.Function1[
       /* value */ js.UndefOr[
@@ -393,7 +393,7 @@ object SelectProps {
     autoWidth: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapSelectClassKey = null,
+    classes: PartialClassNameMapSelect = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -518,7 +518,7 @@ object SelectProps {
     property: String = null,
     radioGroup: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    renderPrefix: /* state */ AnonDense => ReactNode = null,
+    renderPrefix: /* state */ AnonDisabled => ReactNode = null,
     renderValue: /* value */ js.UndefOr[
       (js.Array[String | Double | Boolean | js.Object]) | String | Double | Boolean | js.Object
     ] => ReactNode = null,

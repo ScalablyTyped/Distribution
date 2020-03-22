@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "appletvjs"
-version := "0.0-unknown-dt-20190322Z-6289ac"
+version := "0.0-unknown-dt-20200225Z-6289ac"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

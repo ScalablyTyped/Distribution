@@ -16,7 +16,6 @@ trait Options extends js.Object {
   var sizes: js.UndefOr[js.Array[Size]] = js.undefined
   var tileSize: js.UndefOr[Double | Size] = js.undefined
   var tileSizes: js.UndefOr[js.Array[Size]] = js.undefined
-  var widths: js.UndefOr[js.Array[Double]] = js.undefined
 }
 
 object Options {
@@ -29,8 +28,7 @@ object Options {
     origins: js.Array[Coordinate] = null,
     sizes: js.Array[Size] = null,
     tileSize: Double | Size = null,
-    tileSizes: js.Array[Size] = null,
-    widths: js.Array[Double] = null
+    tileSizes: js.Array[Size] = null
   ): Options = {
     val __obj = js.Dynamic.literal(matrixIds = matrixIds.asInstanceOf[js.Any], resolutions = resolutions.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
@@ -39,7 +37,6 @@ object Options {
     if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (tileSizes != null) __obj.updateDynamic("tileSizes")(tileSizes.asInstanceOf[js.Any])
-    if (widths != null) __obj.updateDynamic("widths")(widths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

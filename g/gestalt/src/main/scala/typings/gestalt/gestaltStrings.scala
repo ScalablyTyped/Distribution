@@ -28,7 +28,16 @@ object gestaltStrings {
   sealed trait `add-circle` extends Icons
   
   @js.native
+  sealed trait `add-layout` extends Icons
+  
+  @js.native
   sealed trait `add-pin` extends Icons
+  
+  @js.native
+  sealed trait `ads-overview` extends Icons
+  
+  @js.native
+  sealed trait `ads-stats` extends Icons
   
   @js.native
   sealed trait alert extends Icons
@@ -124,6 +133,9 @@ object gestaltStrings {
   sealed trait blue extends js.Object
   
   @js.native
+  sealed trait bold extends js.Object
+  
+  @js.native
   sealed trait breakWord extends js.Object
   
   @js.native
@@ -211,6 +223,12 @@ object gestaltStrings {
   sealed trait dialog extends js.Object
   
   @js.native
+  sealed trait `directional-arrow-left` extends Icons
+  
+  @js.native
+  sealed trait `directional-arrow-right` extends Icons
+  
+  @js.native
   sealed trait down extends js.Object
   
   @js.native
@@ -218,6 +236,9 @@ object gestaltStrings {
   
   @js.native
   sealed trait duplicate extends Icons
+  
+  @js.native
+  sealed trait eager extends js.Object
   
   @js.native
   sealed trait edit extends Icons
@@ -241,6 +262,9 @@ object gestaltStrings {
   sealed trait envelope extends Icons
   
   @js.native
+  sealed trait evenly extends js.Object
+  
+  @js.native
   sealed trait eye extends Icons
   
   @js.native
@@ -254,6 +278,9 @@ object gestaltStrings {
   
   @js.native
   sealed trait facebook extends Icons
+  
+  @js.native
+  sealed trait `file-unknown` extends Icons
   
   @js.native
   sealed trait `fill-opaque` extends Icons
@@ -271,6 +298,9 @@ object gestaltStrings {
   sealed trait flag extends Icons
   
   @js.native
+  sealed trait flash extends Icons
+  
+  @js.native
   sealed trait flashlight extends Icons
   
   @js.native
@@ -281,6 +311,9 @@ object gestaltStrings {
   
   @js.native
   sealed trait flipVertical extends Icons
+  
+  @js.native
+  sealed trait folder extends Icons
   
   @js.native
   sealed trait gif extends Icons
@@ -328,10 +361,19 @@ object gestaltStrings {
   sealed trait `heart-broken` extends Icons
   
   @js.native
+  sealed trait `heart-outline` extends Icons
+  
+  @js.native
   sealed trait hidden extends js.Object
   
   @js.native
+  sealed trait high extends js.Object
+  
+  @js.native
   sealed trait impressum extends Icons
+  
+  @js.native
+  sealed trait `info-circle` extends Icons
   
   @js.native
   sealed trait inlineBlock extends js.Object
@@ -344,6 +386,9 @@ object gestaltStrings {
   
   @js.native
   sealed trait knoop extends Icons
+  
+  @js.native
+  sealed trait `lazy` extends js.Object
   
   @js.native
   sealed trait left extends js.Object
@@ -382,6 +427,9 @@ object gestaltStrings {
   sealed trait logout extends Icons
   
   @js.native
+  sealed trait low extends js.Object
+  
+  @js.native
   sealed trait `margins-large` extends Icons
   
   @js.native
@@ -409,6 +457,9 @@ object gestaltStrings {
   sealed trait metadata extends js.Object
   
   @js.native
+  sealed trait middle extends js.Object
+  
+  @js.native
   sealed trait midnight extends js.Object
   
   @js.native
@@ -421,7 +472,13 @@ object gestaltStrings {
   sealed trait mute extends Icons
   
   @js.native
+  sealed trait name extends js.Object
+  
+  @js.native
   sealed trait navy extends js.Object
+  
+  @js.native
+  sealed trait `new-password` extends js.Object
   
   @js.native
   sealed trait noDrop extends js.Object
@@ -487,6 +544,9 @@ object gestaltStrings {
   sealed trait pinterest extends Icons
   
   @js.native
+  sealed trait pintrest extends js.Object
+  
+  @js.native
   sealed trait play extends Icons
   
   @js.native
@@ -514,6 +574,9 @@ object gestaltStrings {
   sealed trait `reorder-images` extends Icons
   
   @js.native
+  sealed trait replace extends Icons
+  
+  @js.native
   sealed trait report extends Icons
   
   @js.native
@@ -523,22 +586,10 @@ object gestaltStrings {
   sealed trait rotate extends Icons
   
   @js.native
-  sealed trait rounded extends js.Object
-  
-  @js.native
-  sealed trait roundedBottom extends js.Object
-  
-  @js.native
-  sealed trait roundedLeft extends js.Object
-  
-  @js.native
-  sealed trait roundedRight extends js.Object
-  
-  @js.native
-  sealed trait roundedTop extends js.Object
-  
-  @js.native
   sealed trait row extends js.Object
+  
+  @js.native
+  sealed trait scale extends Icons
   
   @js.native
   sealed trait scroll extends js.Object
@@ -596,9 +647,6 @@ object gestaltStrings {
   
   @js.native
   sealed trait `speech-ellipsis` extends Icons
-  
-  @js.native
-  sealed trait square extends js.Object
   
   @js.native
   sealed trait star extends Icons
@@ -667,6 +715,9 @@ object gestaltStrings {
   sealed trait `text-spacing` extends Icons
   
   @js.native
+  sealed trait top extends js.Object
+  
+  @js.native
   sealed trait transparent extends js.Object
   
   @js.native
@@ -721,6 +772,27 @@ object gestaltStrings {
   sealed trait white extends js.Object
   
   @js.native
+  sealed trait `workflow-status-all` extends Icons
+  
+  @js.native
+  sealed trait `workflow-status-halted` extends Icons
+  
+  @js.native
+  sealed trait `workflow-status-in-progress` extends Icons
+  
+  @js.native
+  sealed trait `workflow-status-ok` extends Icons
+  
+  @js.native
+  sealed trait `workflow-status-problem` extends Icons
+  
+  @js.native
+  sealed trait `workflow-status-unstarted` extends Icons
+  
+  @js.native
+  sealed trait `workflow-status-warning` extends Icons
+  
+  @js.native
   sealed trait xl extends js.Object
   
   @js.native
@@ -747,7 +819,13 @@ object gestaltStrings {
   @scala.inline
   def `add-circle`: `add-circle` = "add-circle".asInstanceOf[`add-circle`]
   @scala.inline
+  def `add-layout`: `add-layout` = "add-layout".asInstanceOf[`add-layout`]
+  @scala.inline
   def `add-pin`: `add-pin` = "add-pin".asInstanceOf[`add-pin`]
+  @scala.inline
+  def `ads-overview`: `ads-overview` = "ads-overview".asInstanceOf[`ads-overview`]
+  @scala.inline
+  def `ads-stats`: `ads-stats` = "ads-stats".asInstanceOf[`ads-stats`]
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   @scala.inline
@@ -811,6 +889,8 @@ object gestaltStrings {
   @scala.inline
   def blue: blue = "blue".asInstanceOf[blue]
   @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
+  @scala.inline
   def breakWord: breakWord = "breakWord".asInstanceOf[breakWord]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
@@ -869,11 +949,17 @@ object gestaltStrings {
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
+  def `directional-arrow-left`: `directional-arrow-left` = "directional-arrow-left".asInstanceOf[`directional-arrow-left`]
+  @scala.inline
+  def `directional-arrow-right`: `directional-arrow-right` = "directional-arrow-right".asInstanceOf[`directional-arrow-right`]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
   @scala.inline
   def download: download = "download".asInstanceOf[download]
   @scala.inline
   def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
+  @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
   @scala.inline
   def edit: edit = "edit".asInstanceOf[edit]
   @scala.inline
@@ -889,6 +975,8 @@ object gestaltStrings {
   @scala.inline
   def envelope: envelope = "envelope".asInstanceOf[envelope]
   @scala.inline
+  def evenly: evenly = "evenly".asInstanceOf[evenly]
+  @scala.inline
   def eye: eye = "eye".asInstanceOf[eye]
   @scala.inline
   def `face-happy`: `face-happy` = "face-happy".asInstanceOf[`face-happy`]
@@ -898,6 +986,8 @@ object gestaltStrings {
   def `face-smiley`: `face-smiley` = "face-smiley".asInstanceOf[`face-smiley`]
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
+  @scala.inline
+  def `file-unknown`: `file-unknown` = "file-unknown".asInstanceOf[`file-unknown`]
   @scala.inline
   def `fill-opaque`: `fill-opaque` = "fill-opaque".asInstanceOf[`fill-opaque`]
   @scala.inline
@@ -909,6 +999,8 @@ object gestaltStrings {
   @scala.inline
   def flag: flag = "flag".asInstanceOf[flag]
   @scala.inline
+  def flash: flash = "flash".asInstanceOf[flash]
+  @scala.inline
   def flashlight: flashlight = "flashlight".asInstanceOf[flashlight]
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
@@ -916,6 +1008,8 @@ object gestaltStrings {
   def flipHorizontal: flipHorizontal = "flipHorizontal".asInstanceOf[flipHorizontal]
   @scala.inline
   def flipVertical: flipVertical = "flipVertical".asInstanceOf[flipVertical]
+  @scala.inline
+  def folder: folder = "folder".asInstanceOf[folder]
   @scala.inline
   def gif: gif = "gif".asInstanceOf[gif]
   @scala.inline
@@ -947,9 +1041,15 @@ object gestaltStrings {
   @scala.inline
   def `heart-broken`: `heart-broken` = "heart-broken".asInstanceOf[`heart-broken`]
   @scala.inline
+  def `heart-outline`: `heart-outline` = "heart-outline".asInstanceOf[`heart-outline`]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
+  def high: high = "high".asInstanceOf[high]
+  @scala.inline
   def impressum: impressum = "impressum".asInstanceOf[impressum]
+  @scala.inline
+  def `info-circle`: `info-circle` = "info-circle".asInstanceOf[`info-circle`]
   @scala.inline
   def inlineBlock: inlineBlock = "inlineBlock".asInstanceOf[inlineBlock]
   @scala.inline
@@ -958,6 +1058,8 @@ object gestaltStrings {
   def key: key = "key".asInstanceOf[key]
   @scala.inline
   def knoop: knoop = "knoop".asInstanceOf[knoop]
+  @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
@@ -983,6 +1085,8 @@ object gestaltStrings {
   @scala.inline
   def logout: logout = "logout".asInstanceOf[logout]
   @scala.inline
+  def low: low = "low".asInstanceOf[low]
+  @scala.inline
   def `margins-large`: `margins-large` = "margins-large".asInstanceOf[`margins-large`]
   @scala.inline
   def `margins-medium`: `margins-medium` = "margins-medium".asInstanceOf[`margins-medium`]
@@ -1001,6 +1105,8 @@ object gestaltStrings {
   @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def midnight: midnight = "midnight".asInstanceOf[midnight]
   @scala.inline
   def minimize: minimize = "minimize".asInstanceOf[minimize]
@@ -1009,7 +1115,11 @@ object gestaltStrings {
   @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
   @scala.inline
+  def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def navy: navy = "navy".asInstanceOf[navy]
+  @scala.inline
+  def `new-password`: `new-password` = "new-password".asInstanceOf[`new-password`]
   @scala.inline
   def noDrop: noDrop = "noDrop".asInstanceOf[noDrop]
   @scala.inline
@@ -1053,6 +1163,8 @@ object gestaltStrings {
   @scala.inline
   def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   @scala.inline
+  def pintrest: pintrest = "pintrest".asInstanceOf[pintrest]
+  @scala.inline
   def play: play = "play".asInstanceOf[play]
   @scala.inline
   def pointer: pointer = "pointer".asInstanceOf[pointer]
@@ -1071,23 +1183,17 @@ object gestaltStrings {
   @scala.inline
   def `reorder-images`: `reorder-images` = "reorder-images".asInstanceOf[`reorder-images`]
   @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def report: report = "report".asInstanceOf[report]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def rotate: rotate = "rotate".asInstanceOf[rotate]
   @scala.inline
-  def rounded: rounded = "rounded".asInstanceOf[rounded]
-  @scala.inline
-  def roundedBottom: roundedBottom = "roundedBottom".asInstanceOf[roundedBottom]
-  @scala.inline
-  def roundedLeft: roundedLeft = "roundedLeft".asInstanceOf[roundedLeft]
-  @scala.inline
-  def roundedRight: roundedRight = "roundedRight".asInstanceOf[roundedRight]
-  @scala.inline
-  def roundedTop: roundedTop = "roundedTop".asInstanceOf[roundedTop]
-  @scala.inline
   def row: row = "row".asInstanceOf[row]
+  @scala.inline
+  def scale: scale = "scale".asInstanceOf[scale]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline
@@ -1126,8 +1232,6 @@ object gestaltStrings {
   def speech: speech = "speech".asInstanceOf[speech]
   @scala.inline
   def `speech-ellipsis`: `speech-ellipsis` = "speech-ellipsis".asInstanceOf[`speech-ellipsis`]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
   @scala.inline
   def star: star = "star".asInstanceOf[star]
   @scala.inline
@@ -1173,6 +1277,8 @@ object gestaltStrings {
   @scala.inline
   def `text-spacing`: `text-spacing` = "text-spacing".asInstanceOf[`text-spacing`]
   @scala.inline
+  def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
   @scala.inline
   def transparentDarkGray: transparentDarkGray = "transparentDarkGray".asInstanceOf[transparentDarkGray]
@@ -1208,6 +1314,20 @@ object gestaltStrings {
   def watermelon: watermelon = "watermelon".asInstanceOf[watermelon]
   @scala.inline
   def white: white = "white".asInstanceOf[white]
+  @scala.inline
+  def `workflow-status-all`: `workflow-status-all` = "workflow-status-all".asInstanceOf[`workflow-status-all`]
+  @scala.inline
+  def `workflow-status-halted`: `workflow-status-halted` = "workflow-status-halted".asInstanceOf[`workflow-status-halted`]
+  @scala.inline
+  def `workflow-status-in-progress`: `workflow-status-in-progress` = "workflow-status-in-progress".asInstanceOf[`workflow-status-in-progress`]
+  @scala.inline
+  def `workflow-status-ok`: `workflow-status-ok` = "workflow-status-ok".asInstanceOf[`workflow-status-ok`]
+  @scala.inline
+  def `workflow-status-problem`: `workflow-status-problem` = "workflow-status-problem".asInstanceOf[`workflow-status-problem`]
+  @scala.inline
+  def `workflow-status-unstarted`: `workflow-status-unstarted` = "workflow-status-unstarted".asInstanceOf[`workflow-status-unstarted`]
+  @scala.inline
+  def `workflow-status-warning`: `workflow-status-warning` = "workflow-status-warning".asInstanceOf[`workflow-status-warning`]
   @scala.inline
   def xl: xl = "xl".asInstanceOf[xl]
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdown-to-jsx
 
-Typings are for version 6.9
+Typings are for version 6.11
 
 ## Library description:
 Convert markdown to JSX with ease for React and React-like projects. Super lightweight and highly configurable.

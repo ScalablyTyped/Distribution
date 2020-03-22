@@ -22,14 +22,12 @@ class RangeCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Range] = js.native
   /**
-    *
     * Returns the number of ranges in the RangeCollection.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Returns the range object based on its position in the RangeCollection.
     *
     * [Api set: ExcelApi 1.9]

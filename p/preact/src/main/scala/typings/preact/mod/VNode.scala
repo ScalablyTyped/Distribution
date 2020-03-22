@@ -20,7 +20,7 @@ trait VNode[P] extends js.Object {
   /**
   		 * ref is not guaranteed by React.ReactElement, for compatiblity reasons
   		 * with popular react libs we define it as optional too
-  		*/
+  		 */
   var ref: js.UndefOr[Ref[_] | Null] = js.undefined
   /**
   		 * The time this `vnode` started rendering. Will only be set when

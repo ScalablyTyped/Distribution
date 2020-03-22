@@ -23,6 +23,7 @@ trait ViewOptions extends js.Object {
   var resolution: js.UndefOr[Double] = js.undefined
   var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
+  var showFullExtent: js.UndefOr[Boolean] = js.undefined
   var smoothExtentConstraint: js.UndefOr[Boolean] = js.undefined
   var smoothResolutionConstraint: js.UndefOr[Boolean] = js.undefined
   var zoom: js.UndefOr[Double] = js.undefined
@@ -47,6 +48,7 @@ object ViewOptions {
     resolution: Int | Double = null,
     resolutions: js.Array[Double] = null,
     rotation: Int | Double = null,
+    showFullExtent: js.UndefOr[Boolean] = js.undefined,
     smoothExtentConstraint: js.UndefOr[Boolean] = js.undefined,
     smoothResolutionConstraint: js.UndefOr[Boolean] = js.undefined,
     zoom: Int | Double = null,
@@ -68,6 +70,7 @@ object ViewOptions {
     if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(showFullExtent)) __obj.updateDynamic("showFullExtent")(showFullExtent.asInstanceOf[js.Any])
     if (!js.isUndefined(smoothExtentConstraint)) __obj.updateDynamic("smoothExtentConstraint")(smoothExtentConstraint.asInstanceOf[js.Any])
     if (!js.isUndefined(smoothResolutionConstraint)) __obj.updateDynamic("smoothResolutionConstraint")(smoothResolutionConstraint.asInstanceOf[js.Any])
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])

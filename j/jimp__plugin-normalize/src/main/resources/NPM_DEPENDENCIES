@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-normalize" : "0.9.3"
+      "@jimp/plugin-normalize" : "0.9.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-normalize" : "0.9.3"
+      "@jimp/plugin-normalize" : "0.9.6"
     }
   ],
   "compile-devDependencies" : [

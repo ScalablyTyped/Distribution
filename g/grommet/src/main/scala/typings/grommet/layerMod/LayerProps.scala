@@ -37,6 +37,7 @@ trait LayerProps extends js.Object {
     bottom | `bottom-left` | `bottom-right` | center | hidden | left | right | top | `top-left` | `top-right`
   ] = js.undefined
   var responsive: js.UndefOr[Boolean] = js.undefined
+  var target: js.UndefOr[js.Object] = js.undefined
 }
 
 object LayerProps {
@@ -51,7 +52,8 @@ object LayerProps {
     onEsc: /* event */ KeyboardEvent[HTMLElement] => Unit = null,
     plain: js.UndefOr[Boolean] = js.undefined,
     position: bottom | `bottom-left` | `bottom-right` | center | hidden | left | right | top | `top-left` | `top-right` = null,
-    responsive: js.UndefOr[Boolean] = js.undefined
+    responsive: js.UndefOr[Boolean] = js.undefined,
+    target: js.Object = null
   ): LayerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
@@ -64,6 +66,7 @@ object LayerProps {
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerProps]
   }
 }

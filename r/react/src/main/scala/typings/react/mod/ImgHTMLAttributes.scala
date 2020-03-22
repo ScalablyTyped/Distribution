@@ -4,6 +4,8 @@ import typings.react.AnonHtml
 import typings.react.reactStrings._empty
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
+import typings.react.reactStrings.`no-referrer`
+import typings.react.reactStrings.`unsafe-url`
 import typings.react.reactStrings.`use-credentials`
 import typings.react.reactStrings.additions
 import typings.react.reactStrings.all
@@ -18,6 +20,7 @@ import typings.react.reactStrings.date
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.descending
 import typings.react.reactStrings.dialog
+import typings.react.reactStrings.eager
 import typings.react.reactStrings.email
 import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
@@ -36,6 +39,7 @@ import typings.react.reactStrings.none
 import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
 import typings.react.reactStrings.on
+import typings.react.reactStrings.origin
 import typings.react.reactStrings.other
 import typings.react.reactStrings.page
 import typings.react.reactStrings.polite
@@ -62,6 +66,8 @@ trait ImgHTMLAttributes[T] extends HTMLAttributes[T] {
   var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   var decoding: js.UndefOr[async | auto | sync] = js.undefined
   var height: js.UndefOr[Double | String] = js.undefined
+  var loading: js.UndefOr[eager | typings.react.reactStrings.`lazy`] = js.undefined
+  var referrerPolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.undefined
   var sizes: js.UndefOr[String] = js.undefined
   var src: js.UndefOr[String] = js.undefined
   var srcSet: js.UndefOr[String] = js.undefined
@@ -151,6 +157,7 @@ object ImgHTMLAttributes {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
+    loading: eager | typings.react.reactStrings.`lazy` = null,
     onAbort: SyntheticEvent[T, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[T] => Unit = null,
     onAnimationIteration: AnimationEvent[T] => Unit = null,
@@ -234,6 +241,7 @@ object ImgHTMLAttributes {
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
+    referrerPolicy: `no-referrer` | origin | `unsafe-url` = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
@@ -335,6 +343,7 @@ object ImgHTMLAttributes {
     if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -418,6 +427,7 @@ object ImgHTMLAttributes {
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

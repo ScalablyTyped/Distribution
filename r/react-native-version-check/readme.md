@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-version-check
 
-Typings are for version 3.2
+Typings are for version 3.4
 
 ## Library description:
 A version checker for react-native applications

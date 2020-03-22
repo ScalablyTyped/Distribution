@@ -101,7 +101,6 @@ class PivotTable () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Deletes the PivotTable.
     *
     * [Api set: ExcelApi 1.8]
@@ -118,7 +117,6 @@ class PivotTable () extends ClientObject {
   def load(propertyNames: String): PivotTable = js.native
   def load(propertyNames: js.Array[String]): PivotTable = js.native
   /**
-    *
     * Refreshes the PivotTable.
     *
     * [Api set: ExcelApi 1.3]

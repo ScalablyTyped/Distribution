@@ -2,7 +2,6 @@ package typings.rcTable
 
 import typings.rcTable.headerRowMod.RowProps
 import typings.rcTable.panelMod.TitleProps
-import typings.react.mod.ForwardRefExoticComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,6 @@ trait rcTableProps {
   @scala.inline
   def BodyRowProps: typings.rcTable.bodyRowMod.BodyRowProps.type = typings.rcTable.bodyRowMod.BodyRowProps
   type BodyRowProps[RecordType] = typings.rcTable.bodyRowMod.BodyRowProps[RecordType]
-  type CellProps[P] = ForwardRefExoticComponent[P]
   @scala.inline
   def ColGroupProps: typings.rcTable.colGroupMod.ColGroupProps.type = typings.rcTable.colGroupMod.ColGroupProps
   type ColGroupProps[RecordType] = typings.rcTable.colGroupMod.ColGroupProps[RecordType]

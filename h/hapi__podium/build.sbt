@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__podium"
-version := "3.4-dt-20190404Z-739834"
+version := "3.4-dt-20200225Z-739834"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

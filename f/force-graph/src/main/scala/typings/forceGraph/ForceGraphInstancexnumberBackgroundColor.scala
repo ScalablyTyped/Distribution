@@ -54,6 +54,7 @@ trait ForceGraphInstancexnumberBackgroundColor extends js.Object {
   def d3Force_link(force: link): ForceGraphInstance with ForceFn = js.native
   @JSName("d3Force")
   def d3Force_link(force: link, forceFn: ForceFn): ForceGraphInstance with ForceFn = js.native
+  def d3ReheatSimulation(): ForceGraphInstance = js.native
   def d3VelocityDecay(): ForceGraphInstance with Double = js.native
   def d3VelocityDecay(decay: Double): ForceGraphInstance with Double = js.native
   def dagLevelDistance(): ForceGraphInstance with Double = js.native
@@ -61,6 +62,7 @@ trait ForceGraphInstancexnumberBackgroundColor extends js.Object {
   // Force engine configuration
   def dagMode(): ForceGraphInstance with DagMode = js.native
   def dagMode(mode: DagMode): ForceGraphInstance with DagMode = js.native
+  def emitParticle(link: GraphLinkObject): ForceGraphInstance with (String | LinkAccessorFn[String]) = js.native
   def enableNodeDrag(): ForceGraphInstance with Boolean = js.native
   def enableNodeDrag(enable: Boolean): ForceGraphInstance with Boolean = js.native
   def enablePointerInteraction(): ForceGraphInstance with Boolean = js.native

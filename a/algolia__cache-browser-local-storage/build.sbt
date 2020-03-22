@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "algolia__cache-browser-local-storage"
-version := "4.0.3-7f739f"
+version := "4.1.0-dc477f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "algolia__cache-common" % "4.0.3-3abf6d",
+  "org.scalablytyped" %%% "algolia__cache-common" % "4.1.0-e63502",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hubot
 
-Typings are for version 2.19
+Typings are for version 3.3
 
 ## Library description:
 A simple helpful robot for your Company

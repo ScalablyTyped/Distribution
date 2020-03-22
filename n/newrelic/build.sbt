@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "newrelic"
-version := "6.2-dt-20200203Z-58a734"
+version := "6.4-dt-20200302Z-4456a1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

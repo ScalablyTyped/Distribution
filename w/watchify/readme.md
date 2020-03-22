@@ -1,7 +1,7 @@
 
 # Scala.js typings for watchify
 
-Typings are for version v3.7.0
+Typings are for version 3.11
 
 ## Library description:
 watch mode for browserify builds

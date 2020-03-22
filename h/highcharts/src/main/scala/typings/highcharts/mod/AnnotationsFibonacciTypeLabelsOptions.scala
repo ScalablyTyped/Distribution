@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait AnnotationsFibonacciTypeLabelsOptions extends js.Object {
   /**
+    * (Highstock) Accessibility options for an annotation label.
+    */
+  var accessibility: js.UndefOr[AnnotationLabelAccessibilityOptionsObject] = js.undefined
+  /**
     * (Highstock) The alignment of the annotation's label. If right, the right
     * side of the label should be touching the point.
     */
@@ -109,6 +113,7 @@ trait AnnotationsFibonacciTypeLabelsOptions extends js.Object {
 object AnnotationsFibonacciTypeLabelsOptions {
   @scala.inline
   def apply(
+    accessibility: AnnotationLabelAccessibilityOptionsObject = null,
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
@@ -132,6 +137,7 @@ object AnnotationsFibonacciTypeLabelsOptions {
     y: Int | Double = null
   ): AnnotationsFibonacciTypeLabelsOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])

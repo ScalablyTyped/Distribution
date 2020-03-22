@@ -57,3 +57,18 @@ class Color_ protected () extends js.Object {
   def tweenTo(to: Color_, pos: Double): ColorString = js.native
 }
 
+/* static members */
+@JSImport("highcharts", "Color")
+@js.native
+object Color_ extends js.Object {
+  /**
+    * Creates a color instance out of a color string or object.
+    *
+    * @param input
+    *        The input color in either rbga or hex format.
+    *
+    * @return Color instance.
+    */
+  def parse(input: ColorType): Color_ = js.native
+}
+

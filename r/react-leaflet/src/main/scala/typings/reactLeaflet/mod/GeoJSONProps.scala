@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation._
       LatLng_
     ]
   ] = js.undefined
-  var data: GeoJsonObject
+  var data: GeoJsonObject | js.Array[GeoJsonObject]
   /**
     * A Function that will be used to decide whether to show a feature or not.
     *
@@ -106,7 +106,7 @@ import scala.scalajs.js.annotation._
 object GeoJSONProps {
   @scala.inline
   def apply(
-    data: GeoJsonObject,
+    data: GeoJsonObject | js.Array[GeoJsonObject],
     attribution: String = null,
     bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
     children: Children = null,

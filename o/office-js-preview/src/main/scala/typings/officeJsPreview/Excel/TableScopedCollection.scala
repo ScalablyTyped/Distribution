@@ -25,21 +25,18 @@ class TableScopedCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Table] = js.native
   /**
-    *
     * Gets the number of tables in the collection.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets the first table in the collection. The tables in the collection are sorted top to bottom and left to right, such that top left table is the first table in the collection.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getFirst(): Table = js.native
   /**
-    *
     * Gets a table by Name or ID.
     *
     * [Api set: ExcelApi 1.9]

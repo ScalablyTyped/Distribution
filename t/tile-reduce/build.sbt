@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tile-reduce"
-version := "3.1.1-dt-20190322Z-dd496d"
+version := "3.1.1-dt-20200225Z-dd496d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

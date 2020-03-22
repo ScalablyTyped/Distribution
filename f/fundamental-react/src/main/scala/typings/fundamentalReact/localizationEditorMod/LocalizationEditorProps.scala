@@ -1,6 +1,5 @@
 package typings.fundamentalReact.localizationEditorMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.AnonButtonProps
 import typings.fundamentalReact.AnonInputProps
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
@@ -22,7 +21,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -87,7 +86,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  control  :{  buttonProps ? :{[x: string] : any},   inputProps ? :{[x: string] : any},   labelProps ? :{[x: string] : any},   label ? :string,   placeholder ? :string,   language ? :string},   menu  :std.Array<{  inputProps ? :{[x: string] : any},   placeholder ? :string,   language ? :string}>,   className ? :string,   compact ? :boolean,   customStyles ? :{[x: string] : any},   disableStyles ? :boolean,   id ? :string,   listProps ? :{[x: string] : any},   popoverProps ? :{[x: string] : any},   textarea ? :boolean} & react.react.HTMLAttributes<std.HTMLDivElement> */
+/* Inlined {  control  :{  buttonProps ? :{[x: string] : any},   inputProps ? :{[x: string] : any},   labelProps ? :{[x: string] : any},   label ? :string,   placeholder ? :string,   language ? :string},   menu  :std.Array<{  inputProps ? :{[x: string] : any},   placeholder ? :string,   language ? :string}>,   className ? :string,   compact ? :boolean,   disableStyles ? :boolean,   id ? :string,   inputClassName ? :string,   listProps ? :any,   popoverProps ? :any,   textarea ? :boolean} & react.react.HTMLAttributes<std.HTMLDivElement> */
 trait LocalizationEditorProps extends js.Object {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
@@ -101,7 +100,7 @@ trait LocalizationEditorProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   /**
@@ -287,9 +286,7 @@ trait LocalizationEditorProps extends js.Object {
   var compact: js.UndefOr[Boolean] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  /* A collection of properties to apply to the `<label>`, `<input>`/`<textarea>` and `<button>` elements. */
   var control: AnonButtonProps
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
@@ -301,6 +298,7 @@ trait LocalizationEditorProps extends js.Object {
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
+  var inputClassName: js.UndefOr[String] = js.undefined
   // Living Standard
   /**
     * Hints at the type of data that might be entered by the user while editing the element or its contents
@@ -318,8 +316,7 @@ trait LocalizationEditorProps extends js.Object {
   var itemScope: js.UndefOr[Boolean] = js.undefined
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
-  var listProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* An array of objects that represent the values of the elements in the dropdown menu. The shape of the objects in the array is `{ placeholder: string, language: string, inputProps: object }`. */
+  var listProps: js.UndefOr[js.Any] = js.undefined
   var menu: js.Array[AnonInputProps]
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -417,7 +414,7 @@ trait LocalizationEditorProps extends js.Object {
   // Wheel Events
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
-  var popoverProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var popoverProps: js.UndefOr[js.Any] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
   // Unknown
@@ -434,7 +431,6 @@ trait LocalizationEditorProps extends js.Object {
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
-  /* Set to **true** to enable a Localization Editor with a textarea. */
   var textarea: js.UndefOr[Boolean] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var translate: js.UndefOr[yes | no] = js.undefined
@@ -452,7 +448,7 @@ object LocalizationEditorProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -507,7 +503,6 @@ object LocalizationEditorProps {
     compact: js.UndefOr[Boolean] = js.undefined,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -518,6 +513,7 @@ object LocalizationEditorProps {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
+    inputClassName: String = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
@@ -526,7 +522,7 @@ object LocalizationEditorProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
-    listProps: StringDictionary[js.Any] = null,
+    listProps: js.Any = null,
     onAbort: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
@@ -607,7 +603,7 @@ object LocalizationEditorProps {
     onWaiting: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
     placeholder: String = null,
-    popoverProps: StringDictionary[js.Any] = null,
+    popoverProps: js.Any = null,
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
@@ -688,7 +684,6 @@ object LocalizationEditorProps {
     if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
@@ -699,6 +694,7 @@ object LocalizationEditorProps {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])

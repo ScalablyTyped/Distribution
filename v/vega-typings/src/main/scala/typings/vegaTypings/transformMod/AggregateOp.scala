@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   - typings.vegaTypings.vegaTypingsStrings.median
   - typings.vegaTypings.vegaTypingsStrings.min
   - typings.vegaTypings.vegaTypingsStrings.missing
+  - typings.vegaTypings.vegaTypingsStrings.product
   - typings.vegaTypings.vegaTypingsStrings.q1
   - typings.vegaTypings.vegaTypingsStrings.q3
   - typings.vegaTypings.vegaTypingsStrings.ci0
@@ -57,6 +58,8 @@ object AggregateOp {
   def min: typings.vegaTypings.vegaTypingsStrings.min = this.cast("min")
   @scala.inline
   def missing: typings.vegaTypings.vegaTypingsStrings.missing = this.cast("missing")
+  @scala.inline
+  def product: typings.vegaTypings.vegaTypingsStrings.product = this.cast("product")
   @scala.inline
   def q1: typings.vegaTypings.vegaTypingsStrings.q1 = this.cast("q1")
   @scala.inline

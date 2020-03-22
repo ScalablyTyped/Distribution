@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "circular-json"
-version := "0.4-dt-20180214Z-e67b50"
+version := "0.4-dt-20200226Z-e67b50"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kineticjs"
-version := "0.0-unknown-dt-20190322Z-a30415"
+version := "0.0-unknown-dt-20200226Z-a30415"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

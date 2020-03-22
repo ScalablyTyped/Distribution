@@ -14,6 +14,8 @@ class PanelModelBase ()
      with IConditionRunner
      with ISurveyErrorOwner {
   def this(name: String) = this()
+  val _showDescription: Boolean = js.native
+  val _showTitle: Boolean = js.native
   val css: js.Any = js.native
   val cssClasses: js.Any = js.native
   val depth: Double = js.native

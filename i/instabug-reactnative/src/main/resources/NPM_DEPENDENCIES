@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "instabug-reactnative" : "9.0.6"
+      "instabug-reactnative" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "instabug-reactnative" : "9.0.6"
+      "instabug-reactnative" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

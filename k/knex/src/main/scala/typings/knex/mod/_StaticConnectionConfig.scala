@@ -1,7 +1,7 @@
 package typings.knex.mod
 
-import typings.knex.AnonAbortTransactionOnError
-import typings.knex.AnonAcquireTimeoutMillis
+import typings.knex.Readonlyencryptbooleanins
+import typings.knex.Readonlyminnumbermaxnumbe
 import typings.knex.knexBooleans.`false`
 import typings.node.streamMod.Duplex
 import typings.node.tlsMod.ConnectionOptions
@@ -185,10 +185,10 @@ object _StaticConnectionConfig {
     domain: String = null,
     driver: String = null,
     expirationChecker: () => Boolean = null,
-    options: AnonAbortTransactionOnError = null,
+    options: Readonlyencryptbooleanins = null,
     parseJSON: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
-    pool: AnonAcquireTimeoutMillis = null,
+    pool: Readonlyminnumbermaxnumbe = null,
     port: Int | Double = null,
     requestTimeout: Int | Double = null,
     stream: js.UndefOr[Boolean] = js.undefined,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flatbuffers"
-version := "1.10-dt-20200103Z-4bf9d2"
+version := "1.10-dt-20200306Z-4bf9d2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

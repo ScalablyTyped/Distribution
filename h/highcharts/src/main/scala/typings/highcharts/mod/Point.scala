@@ -12,7 +12,7 @@ class Point () extends js.Object {
     * For categorized axes this property holds the category name for the point.
     * For other axes it holds the X value.
     */
-  var category: Double | String = js.native
+  var category: String = js.native
   /**
     * The point's current color.
     */
@@ -47,6 +47,10 @@ class Point () extends js.Object {
     */
   var low: js.UndefOr[Double] = js.native
   /**
+    * Indicates if this is a mock point for an annotation.
+    */
+  var mock: js.UndefOr[Boolean] = js.native
+  /**
     * The name of the point. The name can be given as the first position of the
     * point configuration array, or as a `name` property in the configuration:
     */
@@ -63,7 +67,7 @@ class Point () extends js.Object {
   /**
     * The percentage for points in a stacked series or pies.
     */
-  var percentage: Double = js.native
+  var percentage: js.UndefOr[Double] = js.native
   /**
     * Heatmap series only. Padding between the points in the heatmap.
     */
@@ -89,7 +93,7 @@ class Point () extends js.Object {
     * The total of values in either a stack for stacked series, or a pie in a
     * pie series.
     */
-  var total: Double = js.native
+  var total: js.UndefOr[Double] = js.native
   /**
     * Heatmap series only. The value of the point, resulting in a color
     * controled by options as set in the colorAxis configuration.
@@ -151,13 +155,6 @@ class Point () extends js.Object {
     * @return The path definition.
     */
   def haloPath(size: Double): SVGElement = js.native
-  /**
-    * Utility to check if point has new shape type. Used in column series and
-    * all others that are based on column series.
-    *
-    * @return boolean|undefined
-    */
-  def hasNewShapeType(): Unit = js.native
   /**
     * Initialize the point. Called internally based on the `series.data`
     * option.

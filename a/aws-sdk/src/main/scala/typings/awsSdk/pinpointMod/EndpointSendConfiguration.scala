@@ -11,7 +11,7 @@ trait EndpointSendConfiguration extends js.Object {
     */
   var BodyOverride: js.UndefOr[string] = js.native
   /**
-    * A map of custom attributes to attach to the message for the address. For a push notification, this payload is added to the data.pinpoint object. For an email or text message, this payload is added to email/SMS delivery receipt event attributes.
+    * A map of custom attributes to attach to the message for the address. Attribute names are case sensitive. For a push notification, this payload is added to the data.pinpoint object. For an email or text message, this payload is added to email/SMS delivery receipt event attributes.
     */
   var Context: js.UndefOr[MapOfString] = js.native
   /**

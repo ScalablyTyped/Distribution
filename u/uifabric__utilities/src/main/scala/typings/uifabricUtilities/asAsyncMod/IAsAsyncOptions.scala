@@ -1,6 +1,6 @@
 package typings.uifabricUtilities.asAsyncMod
 
-import typings.react.mod.ReactType
+import typings.react.mod.ElementType
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,13 +18,13 @@ trait IAsAsyncOptions[TProps] extends js.Object {
   /**
     * Callback which returns a promise resolving an object which exports the component.
     */
-  def load(): js.Promise[ReactType[TProps]]
+  def load(): js.Promise[ElementType[TProps]]
 }
 
 object IAsAsyncOptions {
   @scala.inline
   def apply[TProps](
-    load: () => js.Promise[ReactType[TProps]],
+    load: () => js.Promise[ElementType[TProps]],
     onError: /* error */ Error => Unit = null,
     onLoad: () => Unit = null
   ): IAsAsyncOptions[TProps] = {

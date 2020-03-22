@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simplestorage_dot_js"
-version := "v0.2.1-dt-20190322Z-84b1cb"
+version := "v0.2.1-dt-20200227Z-84b1cb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

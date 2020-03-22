@@ -1,6 +1,7 @@
 package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.fridaGum.WrapperAlloc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,11 +14,13 @@ trait ClassSpec extends js.Object {
   /**
     * Interfaces implemented by this class.
     */
-  var implements: js.UndefOr[js.Array[Wrapper]] = js.undefined
+  var implements: js.UndefOr[js.Array[WrapperAlloc]] = js.undefined
   /**
     * Methods to implement. Use the special name `$init` to define one or more constructors.
     */
-  var methods: js.UndefOr[StringDictionary[MethodImplementation | MethodSpec | js.Array[MethodSpec]]] = js.undefined
+  var methods: js.UndefOr[
+    StringDictionary[MethodImplementation[js.Object] | MethodSpec | js.Array[MethodSpec]]
+  ] = js.undefined
   /**
     * Name of the class.
     */
@@ -25,7 +28,7 @@ trait ClassSpec extends js.Object {
   /**
     * Super-class. Omit to inherit from `java.lang.Object`.
     */
-  var superClass: js.UndefOr[Wrapper] = js.undefined
+  var superClass: js.UndefOr[WrapperAlloc] = js.undefined
 }
 
 object ClassSpec {
@@ -33,9 +36,9 @@ object ClassSpec {
   def apply(
     name: String,
     fields: StringDictionary[String] = null,
-    implements: js.Array[Wrapper] = null,
-    methods: StringDictionary[MethodImplementation | MethodSpec | js.Array[MethodSpec]] = null,
-    superClass: Wrapper = null
+    implements: js.Array[WrapperAlloc] = null,
+    methods: StringDictionary[MethodImplementation[js.Object] | MethodSpec | js.Array[MethodSpec]] = null,
+    superClass: WrapperAlloc = null
   ): ClassSpec = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])

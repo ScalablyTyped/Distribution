@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_colorpicker"
-version := "1.4.3-dt-20190322Z-714dfa"
+version := "1.4.3-dt-20200225Z-714dfa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,6 @@
 package typings.antd.checkboxCheckboxMod
 
 import typings.antd.contextMod.ConfigConsumerProps
-import typings.antd.groupMod.CheckboxGroupContext
 import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
@@ -22,7 +21,5 @@ trait Checkbox
   def focus(): Unit = js.native
   def renderCheckbox(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def saveCheckbox(node: js.Any): Unit = js.native
-  @JSName("shouldComponentUpdate")
-  def shouldComponentUpdate_MCheckbox(nextProps: CheckboxProps, nextState: js.Object, nextContext: CheckboxGroupContext): Boolean = js.native
 }
 

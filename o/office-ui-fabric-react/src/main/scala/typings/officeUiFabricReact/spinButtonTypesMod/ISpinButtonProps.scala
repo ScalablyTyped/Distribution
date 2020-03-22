@@ -233,9 +233,9 @@ trait ISpinButtonProps extends HTMLAttributes[HTMLDivElement] {
     ]
   ] = js.undefined
   /**
-    * To how many decimal places the value should be rounded to.
-    * The default value is calculated based on the precision of step.
-    * IE: if step = 1, precision = 0. step = 0.0089, precision = 4. step = 300, precision = 2. step = 23.00, precision = 2.
+    * How many decimal places the value should be rounded to.
+    * The default is calculated based on the precision of `step`: i.e. if step = 1, precision = 0.
+    * step = 0.0089, precision = 4. step = 300, precision = 2. step = 23.00, precision = 2.
     */
   var precision: js.UndefOr[Double] = js.undefined
   /**

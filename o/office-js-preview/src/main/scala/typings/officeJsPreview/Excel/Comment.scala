@@ -6,6 +6,8 @@ import typings.officeJsPreview.Excel.Interfaces.CommentLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.CommentUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.officeJsPreviewStrings.Mention
+import typings.officeJsPreview.officeJsPreviewStrings.Plain
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,6 +43,14 @@ class Comment () extends ClientObject {
     * [Api set: ExcelApi 1.10]
     */
   var content: String = js.native
+  /**
+    *
+    * Gets the content type of the comment.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val contentType: ContentType | Plain | Mention = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Comment: RequestContext = js.native
@@ -88,14 +98,12 @@ class Comment () extends ClientObject {
     */
   val richContent: String = js.native
   /**
-    *
     * Deletes the comment and all the connected replies.
     *
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the cell where this comment is located.
     *
     * [Api set: ExcelApi 1.10]
@@ -132,7 +140,6 @@ class Comment () extends ClientObject {
     */
   def toJSON(): CommentData = js.native
   /**
-    *
     * Updates the comment content with a specially formatted string and a list of mentions.
     *
     * [Api set: ExcelApiOnline 1.1]

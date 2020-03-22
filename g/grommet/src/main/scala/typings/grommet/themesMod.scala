@@ -47,7 +47,7 @@ object themesMod extends js.Object {
     val tab: js.UndefOr[AnonMargin | DeepReadonly[js.UndefOr[AnonMargin]]] = js.native
     val table: js.UndefOr[AnonRow | DeepReadonly[js.UndefOr[AnonRow]]] = js.native
     val tabs: js.UndefOr[AnonPanel | DeepReadonly[js.UndefOr[AnonPanel]]] = js.native
-    val text: js.UndefOr[AnonXlarge | DeepReadonly[js.UndefOr[AnonXlarge]]] = js.native
+    val text: js.UndefOr[AnonSmall | DeepReadonly[js.UndefOr[AnonSmall]]] = js.native
     val textArea: js.UndefOr[AnonDisabledExtend | DeepReadonly[js.UndefOr[AnonDisabledExtend]]] = js.native
     val textInput: js.UndefOr[AnonDisabledExtend | DeepReadonly[js.UndefOr[AnonDisabledExtend]]] = js.native
     val video: js.UndefOr[AnonCaptions | DeepReadonly[js.UndefOr[AnonCaptions]]] = js.native

@@ -16,6 +16,7 @@ object expectAsync extends js.Object {
     * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual - Actual computed value to test expectations against.
     */
+  def apply[T, U](actual: T): AsyncMatchers[T, U] = js.native
   def apply[T, U](actual: js.Thenable[T]): AsyncMatchers[T, U] = js.native
 }
 

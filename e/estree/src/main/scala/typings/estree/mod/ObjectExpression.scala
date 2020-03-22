@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ObjectExpression
   extends BaseNode
      with Expression {
-  var properties: js.Array[Property]
+  var properties: js.Array[Property | SpreadElement]
   @JSName("type")
   var type_ObjectExpression: typings.estree.estreeStrings.ObjectExpression
 }
@@ -15,7 +15,7 @@ trait ObjectExpression
 object ObjectExpression {
   @scala.inline
   def apply(
-    properties: js.Array[Property],
+    properties: js.Array[Property | SpreadElement],
     `type`: typings.estree.estreeStrings.ObjectExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 
 trait IPeoplePickerItemSuggestionProps extends IPeoplePickerItemSharedProps {
   /**
-    * Flag that controls whether each suggested PeoplePicker item (Persona) is rendered with or without secondary text for compact look.
+    * Flag that controls whether each suggested PeoplePicker item (Persona) is rendered with or without secondary text
+    * for compact look.
     * @defaultvalue false
     */
   var compact: js.UndefOr[Boolean] = js.undefined

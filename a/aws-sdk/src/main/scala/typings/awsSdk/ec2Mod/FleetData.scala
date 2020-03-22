@@ -29,7 +29,7 @@ trait FleetData extends js.Object {
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[FleetIdentifier] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
   /**
     * The state of the EC2 Fleet.
     */
@@ -96,7 +96,7 @@ object FleetData {
     CreateTime: DateTime = null,
     Errors: DescribeFleetsErrorSet = null,
     ExcessCapacityTerminationPolicy: FleetExcessCapacityTerminationPolicy = null,
-    FleetId: FleetIdentifier = null,
+    FleetId: FleetId = null,
     FleetState: FleetStateCode = null,
     FulfilledCapacity: Int | scala.Double = null,
     FulfilledOnDemandCapacity: Int | scala.Double = null,

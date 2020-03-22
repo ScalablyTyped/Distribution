@@ -19,11 +19,11 @@ trait RouteSettings extends js.Object {
     */
   var LoggingLevel: js.UndefOr[typings.awsSdk.apigatewayv2Mod.LoggingLevel] = js.native
   /**
-    * Specifies the throttling burst limit. Supported only for WebSocket APIs.
+    * Specifies the throttling burst limit.
     */
   var ThrottlingBurstLimit: js.UndefOr[integer] = js.native
   /**
-    * Specifies the throttling rate limit. Supported only for WebSocket APIs.
+    * Specifies the throttling rate limit.
     */
   var ThrottlingRateLimit: js.UndefOr[double] = js.native
 }

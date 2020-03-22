@@ -38,6 +38,10 @@ trait PutBotAliasResponse extends js.Object {
     * The name of the alias.
     */
   var name: js.UndefOr[AliasName] = js.native
+  /**
+    * A list of tags associated with a bot.
+    */
+  var tags: js.UndefOr[TagList] = js.native
 }
 
 object PutBotAliasResponse {
@@ -50,7 +54,8 @@ object PutBotAliasResponse {
     createdDate: Timestamp = null,
     description: Description = null,
     lastUpdatedDate: Timestamp = null,
-    name: AliasName = null
+    name: AliasName = null,
+    tags: TagList = null
   ): PutBotAliasResponse = {
     val __obj = js.Dynamic.literal()
     if (botName != null) __obj.updateDynamic("botName")(botName.asInstanceOf[js.Any])
@@ -61,6 +66,7 @@ object PutBotAliasResponse {
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotAliasResponse]
   }
 }

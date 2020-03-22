@@ -7,7 +7,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SourceMapOptions extends js.Object {
-  var content: js.UndefOr[RawSourceMap] = js.undefined
+  /** Source map object, 'inline' or source map file content */
+  var content: js.UndefOr[RawSourceMap | String] = js.undefined
   var filename: js.UndefOr[String] = js.undefined
   var includeSources: js.UndefOr[Boolean] = js.undefined
   var root: js.UndefOr[String] = js.undefined
@@ -17,7 +18,7 @@ trait SourceMapOptions extends js.Object {
 object SourceMapOptions {
   @scala.inline
   def apply(
-    content: RawSourceMap = null,
+    content: RawSourceMap | String = null,
     filename: String = null,
     includeSources: js.UndefOr[Boolean] = js.undefined,
     root: String = null,

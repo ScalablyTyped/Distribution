@@ -14,13 +14,13 @@ trait Numbro extends js.Object {
   def divide(value: Double): this.type = js.native
   def format(): String = js.native
   def format(format: String): String = js.native
-  def format(format: js.Object): String = js.native
+  def format(format: Format): String = js.native
   def formatCurrency(): String = js.native
   def formatCurrency(format: String): String = js.native
-  def formatCurrency(format: js.Object): String = js.native
+  def formatCurrency(format: Format): String = js.native
   def formatTime(): String = js.native
   def formatTime(format: String): String = js.native
-  def formatTime(format: js.Object): String = js.native
+  def formatTime(format: Format): String = js.native
   def multiply(value: Double): this.type = js.native
   def set(value: Double): this.type = js.native
   def subtract(value: Double): this.type = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for archiver
 
-Typings are for version 3.0.0
+Typings are for version 3.1
 
 ## Library description:
 a streaming interface for archive generation

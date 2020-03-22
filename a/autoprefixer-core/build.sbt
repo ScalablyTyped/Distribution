@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "autoprefixer-core"
-version := "5.1.11-dt-20190322Z-6be206"
+version := "5.1.11-dt-20200225Z-6be206"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

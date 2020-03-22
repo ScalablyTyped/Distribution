@@ -256,9 +256,218 @@ object routeMod extends js.Object {
     def setupController(controller: typings.emberController.mod.default, model: js.Object): Unit = js.native
     /**
       * Transition the application into another route. The route may
-      * be either a single route or route path
+      * be either a single route or route path:
+      *
+      * ```javascript
+      * this.transitionTo('blogPosts');
+      * this.transitionTo('blogPosts.recentEntries');
+      * ```
+      *
+      * Optionally supply a model for the route in question. The model
+      * will be serialized into the URL using the `serialize` hook of
+      * the route:
+      *
+      * ```javascript
+      * this.transitionTo('blogPost', aPost);
+      * ```
+      *
+      * If a literal is passed (such as a number or a string), it will
+      * be treated as an identifier instead. In this case, the `model`
+      * hook of the route will be triggered:
+      *
+      * ```javascript
+      * this.transitionTo('blogPost', 1);
+      * ```
+      *
+      * Multiple models will be applied last to first recursively up the
+      * route tree.
+      *
+      * ```app/routes.js
+      * // ...
+      *
+      * Router.map(function() {
+      *   this.route('blogPost', { path:':blogPostId' }, function() {
+      *     this.route('blogComment', { path: ':blogCommentId' });
+      *   });
+      * });
+      *
+      * export default Router;
+      * ```
+      *
+      * ```javascript
+      * this.transitionTo('blogComment', aPost, aComment);
+      * this.transitionTo('blogComment', 1, 13);
+      * ```
+      *
+      * It is also possible to pass a URL (a string that starts with a
+      * `/`).
+      *
+      * ```javascript
+      * this.transitionTo('/');
+      * this.transitionTo('/blog/post/1/comment/13');
+      * this.transitionTo('/blog/posts?sort=title');
+      * ```
+      *
+      * An options hash with a `queryParams` property may be provided as
+      * the final argument to add query parameters to the destination URL.
+      *
+      * ```javascript
+      * this.transitionTo('blogPost', 1, {
+      *   queryParams: { showComments: 'true' }
+      * });
+      *
+      * // if you just want to transition the query parameters without changing the route
+      * this.transitionTo({ queryParams: { sort: 'date' } });
+      * ```
+      *
+      * See also [replaceWith](#method_replaceWith).
+      *
+      * Simple Transition Example
+      *
+      * ```app/routes.js
+      * // ...
+      *
+      * Router.map(function() {
+      *   this.route('index');
+      *   this.route('secret');
+      *   this.route('fourOhFour', { path: '*:' });
+      * });
+      *
+      * export default Router;
+      * ```
+      *
+      * ```app/routes/index.js
+      * import Route from '@ember/routing/route';
+      * import { action } from '@ember/object';
+      *
+      * export default class IndexRoute extends Route {
+      *   @action
+      *   moveToSecret(context) {
+      *     if (authorized()) {
+      *       this.transitionTo('secret', context);
+      *     } else {
+      *       this.transitionTo('fourOhFour');
+      *     }
+      *   }
+      * }
+      * ```
+      *
+      * Transition to a nested route
+      *
+      * ```app/router.js
+      * // ...
+      *
+      * Router.map(function() {
+      *   this.route('articles', { path: '/articles' }, function() {
+      *     this.route('new');
+      *   });
+      * });
+      *
+      * export default Router;
+      * ```
+      *
+      * ```app/routes/index.js
+      * import Route from '@ember/routing/route';
+      * import { action } from '@ember/object';
+      *
+      * export default class IndexRoute extends Route {
+      *   @action
+      *   transitionToNewArticle() {
+      *     this.transitionTo('articles.new');
+      *   }
+      * }
+      * ```
+      *
+      * Multiple Models Example
+      *
+      * ```app/router.js
+      * // ...
+      *
+      * Router.map(function() {
+      *   this.route('index');
+      *
+      *   this.route('breakfast', { path: ':breakfastId' }, function() {
+      *     this.route('cereal', { path: ':cerealId' });
+      *   });
+      * });
+      *
+      * export default Router;
+      * ```
+      *
+      * ```app/routes/index.js
+      * import Route from '@ember/routing/route';
+      * import { action } from '@ember/object';
+      *
+      * export default class IndexRoute extends Route {
+      *   @action
+      *   moveToChocolateCereal() {
+      *     let cereal = { cerealId: 'ChocolateYumminess' };
+      *     let breakfast = { breakfastId: 'CerealAndMilk' };
+      *
+      *     this.transitionTo('breakfast.cereal', breakfast, cereal);
+      *   }
+      * }
+      * ```
+      *
+      * Nested Route with Query String Example
+      *
+      * ```app/routes.js
+      * // ...
+      *
+      * Router.map(function() {
+      *   this.route('fruits', function() {
+      *     this.route('apples');
+      *   });
+      * });
+      *
+      * export default Router;
+      * ```
+      *
+      * ```app/routes/index.js
+      * import Route from '@ember/routing/route';
+      *
+      * export default class IndexRoute extends Route {
+      *   @action
+      *   transitionToApples() {
+      *     this.transitionTo('fruits.apples', { queryParams: { color: 'red' } });
+      *   }
+      * }
+      * ```
+      *
+      * @param name    the name of the route or a URL.
+      * @param models  the model(s) or identifier(s) to be used while
+      *                transitioning to the route.
+      * @param options optional hash with a queryParams property
+      *                containing a mapping of query parameters. May be supplied
+      *                as the only parameter to trigger a query-parameter-only
+      *                transition.
+      * @returns       the Transition object associated with this attempted
+      *                transition
       */
-    def transitionTo(name: String, `object`: js.Any*): Transition = js.native
+    def transitionTo(name: String): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, modelsC: RouteModel, modelsD: RouteModel): Transition = js.native
+    def transitionTo(
+      name: String,
+      modelsA: RouteModel,
+      modelsB: RouteModel,
+      modelsC: RouteModel,
+      modelsD: RouteModel,
+      options: AnonQueryParams
+    ): Transition = js.native
+    def transitionTo(
+      name: String,
+      modelsA: RouteModel,
+      modelsB: RouteModel,
+      modelsC: RouteModel,
+      options: AnonQueryParams
+    ): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, modelsB: RouteModel, options: AnonQueryParams): Transition = js.native
+    def transitionTo(name: String, modelsA: RouteModel, options: AnonQueryParams): Transition = js.native
+    def transitionTo(name: String, options: AnonQueryParams): Transition = js.native
+    def transitionTo(options: AnonQueryParams): Transition = js.native
     /**
       * The willTransition action is fired at the beginning of any attempted transition
       * with a Transition object as the sole argument. This action can be used for aborting,
@@ -270,5 +479,7 @@ object routeMod extends js.Object {
   @js.native
   class default () extends Route
   
+  // tslint:disable-next-line:strict-export-declare-modifiers
+  type RouteModel = js.Object | String | Double
 }
 

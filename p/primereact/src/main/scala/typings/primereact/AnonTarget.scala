@@ -6,16 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonTarget extends js.Object {
-  var direction: String
   var originalEvent: Event_
-  var source: js.Array[_]
-  var target: js.Array[_]
+  var target: AnonId
+  var value: js.Any
 }
 
 object AnonTarget {
   @scala.inline
-  def apply(direction: String, originalEvent: Event_, source: js.Array[_], target: js.Array[_]): AnonTarget = {
-    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+  def apply(originalEvent: Event_, target: AnonId, value: js.Any): AnonTarget = {
+    val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonTarget]
   }

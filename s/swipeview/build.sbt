@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swipeview"
-version := "1.0-dt-20190322Z-2f2808"
+version := "1.0-dt-20200225Z-2f2808"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

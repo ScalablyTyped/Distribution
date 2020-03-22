@@ -59,7 +59,6 @@ import typings.electron.electronStrings.`zoom-changed`
 import typings.electron.electronStrings.activateSelection
 import typings.electron.electronStrings.backgroundPage
 import typings.electron.electronStrings.browserView
-import typings.electron.electronStrings.cancelled
 import typings.electron.electronStrings.clearSelection
 import typings.electron.electronStrings.crashed
 import typings.electron.electronStrings.default
@@ -67,7 +66,6 @@ import typings.electron.electronStrings.default_public_and_private_interfaces
 import typings.electron.electronStrings.default_public_interface_only
 import typings.electron.electronStrings.destroyed
 import typings.electron.electronStrings.disable_non_proxied_udp
-import typings.electron.electronStrings.failed
 import typings.electron.electronStrings.in
 import typings.electron.electronStrings.keepSelection
 import typings.electron.electronStrings.login
@@ -1717,7 +1715,7 @@ class WebContents_ () extends EventEmitter {
   def print(options: WebContentsPrintOptions): Unit = js.native
   def print(
     options: WebContentsPrintOptions,
-    callback: js.Function2[/* success */ Boolean, /* failureReason */ cancelled | failed, Unit]
+    callback: js.Function2[/* success */ Boolean, /* failureReason */ String, Unit]
   ): Unit = js.native
   /**
     * Resolves with the generated PDF data.

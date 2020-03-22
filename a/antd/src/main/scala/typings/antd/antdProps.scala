@@ -12,7 +12,6 @@ import typings.antd.headerMod.CalendarHeaderProps
 import typings.antd.layoutLayoutMod.BasicProps
 import typings.antd.libStepsMod.StepProps
 import typings.antd.listItemMod.ListItemMetaProps
-import typings.antd.listItemMod.ListItemProps
 import typings.antd.mentionsMod.MentionProps
 import typings.antd.renderListBodyMod.TransferListBodyProps
 import typings.antd.siderMod.SiderProps
@@ -214,8 +213,8 @@ trait antdProps {
   def InputNumberProps: typings.antd.inputNumberMod.InputNumberProps.type = typings.antd.inputNumberMod.InputNumberProps
   type InputNumberProps = typings.antd.inputNumberMod.InputNumberProps
   @scala.inline
-  def ItemProps: ListItemProps.type = typings.antd.listItemMod.ListItemProps
-  type ItemProps = ListItemProps
+  def ItemProps: typings.antd.listItemMod.ListItemProps.type = typings.antd.listItemMod.ListItemProps
+  type ItemProps = typings.antd.listItemMod.ListItemProps
   @scala.inline
   def ItemMetaProps: ListItemMetaProps.type = typings.antd.listItemMod.ListItemMetaProps
   type ItemMetaProps = /* props */ ListItemMetaProps
@@ -240,6 +239,7 @@ trait antdProps {
   @scala.inline
   def ListProps: typings.antd.listMod.ListProps.type = typings.antd.listMod.ListProps
   type ListProps[T] = typings.antd.listMod.ListProps[T]
+  type ListItemProps[T0, R] = js.Function1[T0, R]
   @scala.inline
   def LocaleProviderProps: typings.antd.localeProviderMod.LocaleProviderProps.type = typings.antd.localeProviderMod.LocaleProviderProps
   type LocaleProviderProps = typings.antd.localeProviderMod.LocaleProviderProps
@@ -295,9 +295,6 @@ trait antdProps {
   @scala.inline
   def RadioProps: AbstractCheckboxProps.type = typings.antd.checkboxCheckboxMod.AbstractCheckboxProps
   type RadioProps = typings.antd.radioInterfaceMod.RadioProps
-  @scala.inline
-  def RadioButtonProps: AbstractCheckboxProps.type = typings.antd.checkboxCheckboxMod.AbstractCheckboxProps
-  type RadioButtonProps = /* props */ typings.antd.radioButtonMod.RadioButtonProps
   type RadioGroupContextProviderProps[T] = ProviderProps[T]
   @scala.inline
   def RangePickerProps: typings.antd.generatePickerMod.RangePickerProps.type = typings.antd.generatePickerMod.RangePickerProps

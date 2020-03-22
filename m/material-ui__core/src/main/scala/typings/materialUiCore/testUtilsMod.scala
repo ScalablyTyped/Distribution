@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/test-utils", JSImport.Namespace)
 @js.native
 object testUtilsMod extends js.Object {
-  def createMount(): NonePSnodeReactElementoptionsMountRendererPropsRea = js.native
-  def createMount(options: PartialMountOptions): NonePSnodeReactElementoptionsMountRendererPropsRea = js.native
-  def createRender(): FnNodeOptions = js.native
-  def createRender(options: PartialRenderOptions): FnNodeOptions = js.native
-  def createShallow(): FnNodeOptionsProps = js.native
-  def createShallow(options: PartialShallowOptions): FnNodeOptionsProps = js.native
+  def createMount(): NonePSnodeReactElementopt = js.native
+  def createMount(options: PartialMountOptions): NonePSnodeReactElementopt = js.native
+  def createRender(): Fn0 = js.native
+  def createRender(options: PartialRenderOptions): Fn0 = js.native
+  def createShallow(): Fn1 = js.native
+  def createShallow(options: PartialShallowOptions): Fn1 = js.native
   def findOutermostIntrinsic(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]] = js.native
   def getClasses[T](element: ReactElement): T = js.native
   def getClasses[T](element: ReactElement, options: PartialwithThemeboolean): T = js.native

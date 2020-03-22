@@ -53,6 +53,9 @@ object stripeV3Strings {
   sealed trait abn_amro extends js.Object
   
   @js.native
+  sealed trait accepted extends js.Object
+  
+  @js.native
   sealed trait ach_credit_transfer extends js.Object
   
   @js.native
@@ -197,6 +200,9 @@ object stripeV3Strings {
   sealed trait elevated_risk_level extends js.Object
   
   @js.native
+  sealed trait email extends js.Object
+  
+  @js.native
   sealed trait en extends js.Object
   
   @js.native
@@ -338,7 +344,16 @@ object stripeV3Strings {
   sealed trait off_session extends js.Object
   
   @js.native
+  sealed trait offline extends js.Object
+  
+  @js.native
   sealed trait on_session extends js.Object
+  
+  @js.native
+  sealed trait one_time extends js.Object
+  
+  @js.native
+  sealed trait online extends js.Object
   
   @js.native
   sealed trait optional extends js.Object
@@ -406,6 +421,9 @@ object stripeV3Strings {
   sealed trait refund extends js.Object
   
   @js.native
+  sealed trait refused extends js.Object
+  
+  @js.native
   sealed trait regiobank extends js.Object
   
   @js.native
@@ -448,6 +466,9 @@ object stripeV3Strings {
   
   @js.native
   sealed trait samsung_pay extends js.Object
+  
+  @js.native
+  sealed trait scheduled extends js.Object
   
   @js.native
   sealed trait sepa_debit extends js.Object
@@ -514,7 +535,13 @@ object stripeV3Strings {
   sealed trait validated extends statusType
   
   @js.native
+  sealed trait validation_error extends ErrorType
+  
+  @js.native
   sealed trait van_lanschot extends js.Object
+  
+  @js.native
+  sealed trait variable extends js.Object
   
   @js.native
   sealed trait verification_failed extends statusType
@@ -554,6 +581,8 @@ object stripeV3Strings {
   def abandoned: abandoned = "abandoned".asInstanceOf[abandoned]
   @scala.inline
   def abn_amro: abn_amro = "abn_amro".asInstanceOf[abn_amro]
+  @scala.inline
+  def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
   def ach_credit_transfer: ach_credit_transfer = "ach_credit_transfer".asInstanceOf[ach_credit_transfer]
   @scala.inline
@@ -646,6 +675,8 @@ object stripeV3Strings {
   def elevated: elevated = "elevated".asInstanceOf[elevated]
   @scala.inline
   def elevated_risk_level: elevated_risk_level = "elevated_risk_level".asInstanceOf[elevated_risk_level]
+  @scala.inline
+  def email: email = "email".asInstanceOf[email]
   @scala.inline
   def en: en = "en".asInstanceOf[en]
   @scala.inline
@@ -741,7 +772,13 @@ object stripeV3Strings {
   @scala.inline
   def off_session: off_session = "off_session".asInstanceOf[off_session]
   @scala.inline
+  def offline: offline = "offline".asInstanceOf[offline]
+  @scala.inline
   def on_session: on_session = "on_session".asInstanceOf[on_session]
+  @scala.inline
+  def one_time: one_time = "one_time".asInstanceOf[one_time]
+  @scala.inline
+  def online: online = "online".asInstanceOf[online]
   @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
   @scala.inline
@@ -785,6 +822,8 @@ object stripeV3Strings {
   @scala.inline
   def refund: refund = "refund".asInstanceOf[refund]
   @scala.inline
+  def refused: refused = "refused".asInstanceOf[refused]
+  @scala.inline
   def regiobank: regiobank = "regiobank".asInstanceOf[regiobank]
   @scala.inline
   def requested_by_customer: requested_by_customer = "requested_by_customer".asInstanceOf[requested_by_customer]
@@ -808,6 +847,8 @@ object stripeV3Strings {
   def safe: safe = "safe".asInstanceOf[safe]
   @scala.inline
   def samsung_pay: samsung_pay = "samsung_pay".asInstanceOf[samsung_pay]
+  @scala.inline
+  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
   @scala.inline
   def sepa_debit: sepa_debit = "sepa_debit".asInstanceOf[sepa_debit]
   @scala.inline
@@ -849,7 +890,11 @@ object stripeV3Strings {
   @scala.inline
   def validated: validated = "validated".asInstanceOf[validated]
   @scala.inline
+  def validation_error: validation_error = "validation_error".asInstanceOf[validation_error]
+  @scala.inline
   def van_lanschot: van_lanschot = "van_lanschot".asInstanceOf[van_lanschot]
+  @scala.inline
+  def variable: variable = "variable".asInstanceOf[variable]
   @scala.inline
   def verification_failed: verification_failed = "verification_failed".asInstanceOf[verification_failed]
   @scala.inline

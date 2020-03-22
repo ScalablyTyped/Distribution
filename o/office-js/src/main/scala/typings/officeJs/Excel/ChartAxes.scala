@@ -50,7 +50,6 @@ class ChartAxes () extends ClientObject {
     */
   val valueAxis: ChartAxis = js.native
   /**
-    *
     * Returns the specific axis identified by type and group.
     *
     * [Api set: ExcelApi 1.7]
@@ -71,7 +70,6 @@ class ChartAxes () extends ClientObject {
   @JSName("getItem")
   def getItem_Category(`type`: Category): ChartAxis = js.native
   /**
-    *
     * Returns the specific axis identified by type and group.
     *
     * [Api set: ExcelApi 1.7]

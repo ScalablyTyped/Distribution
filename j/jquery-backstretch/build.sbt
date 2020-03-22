@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-backstretch"
-version := "2.0.4-dt-20190322Z-21bd08"
+version := "2.0.4-dt-20200226Z-21bd08"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

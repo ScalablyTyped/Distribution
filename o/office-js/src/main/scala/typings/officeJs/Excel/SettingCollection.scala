@@ -36,7 +36,6 @@ class SettingCollection () extends ClientObject {
     */
   val onSettingsChanged: EventHandlers[SettingsChangedEventArgs] = js.native
   /**
-    *
     * Sets or adds the specified setting to the workbook.
     *
     * [Api set: ExcelApi 1.4]
@@ -51,14 +50,12 @@ class SettingCollection () extends ClientObject {
   def add(key: String, value: Double): Setting = js.native
   def add(key: String, value: Date): Setting = js.native
   /**
-    *
     * Gets the number of Settings in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a Setting entry via the key.
     *
     * [Api set: ExcelApi 1.4]
@@ -67,7 +64,6 @@ class SettingCollection () extends ClientObject {
     */
   def getItem(key: String): Setting = js.native
   /**
-    *
     * Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.4]

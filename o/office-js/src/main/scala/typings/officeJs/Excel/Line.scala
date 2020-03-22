@@ -142,7 +142,6 @@ class Line () extends ClientObject {
     */
   val shape: Shape = js.native
   /**
-    *
     * Attaches the beginning of the specified connector to a specified shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -152,7 +151,6 @@ class Line () extends ClientObject {
     */
   def connectBeginShape(shape: Shape, connectionSite: Double): Unit = js.native
   /**
-    *
     * Attaches the end of the specified connector to a specified shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -162,14 +160,12 @@ class Line () extends ClientObject {
     */
   def connectEndShape(shape: Shape, connectionSite: Double): Unit = js.native
   /**
-    *
     * Detaches the beginning of the specified connector from a shape.
     *
     * [Api set: ExcelApi 1.9]
     */
   def disconnectBeginShape(): Unit = js.native
   /**
-    *
     * Detaches the end of the specified connector from a shape.
     *
     * [Api set: ExcelApi 1.9]

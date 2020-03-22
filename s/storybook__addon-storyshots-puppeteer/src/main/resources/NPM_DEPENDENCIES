@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addon-storyshots-puppeteer" : "5.3.14"
+      "@storybook/addon-storyshots-puppeteer" : "5.3.17"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addon-storyshots-puppeteer" : "5.3.14"
+      "@storybook/addon-storyshots-puppeteer" : "5.3.17"
     }
   ],
   "compile-devDependencies" : [

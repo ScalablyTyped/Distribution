@@ -13,7 +13,7 @@ trait IHelmetContentSecurityPolicyConfiguration extends js.Object {
   var disableAndroid: js.UndefOr[Boolean] = js.undefined
   var loose: js.UndefOr[Boolean] = js.undefined
   var reportOnly: js.UndefOr[
-    Boolean | (js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, Boolean])
+    Boolean | (js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean])
   ] = js.undefined
   var setAllHeaders: js.UndefOr[Boolean] = js.undefined
 }
@@ -25,7 +25,7 @@ object IHelmetContentSecurityPolicyConfiguration {
     directives: IHelmetContentSecurityPolicyDirectives = null,
     disableAndroid: js.UndefOr[Boolean] = js.undefined,
     loose: js.UndefOr[Boolean] = js.undefined,
-    reportOnly: Boolean | (js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, Boolean]) = null,
+    reportOnly: Boolean | (js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean]) = null,
     setAllHeaders: js.UndefOr[Boolean] = js.undefined
   ): IHelmetContentSecurityPolicyConfiguration = {
     val __obj = js.Dynamic.literal()

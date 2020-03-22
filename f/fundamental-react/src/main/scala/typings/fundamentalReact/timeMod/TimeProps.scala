@@ -7,53 +7,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  disabled ? :boolean,   hoursDownButtonProps ? :{[x: string] : any},   hoursInputProps ? :{[x: string] : any},   hoursUpButtonProps ? :{[x: string] : any},   id ? :string,   localizedText ? :{  meridiemAM  :string,   meridiemPM  :string},   meridiemDownButtonProps ? :{[x: string] : any},   meridiemInputProps ? :{[x: string] : any},   meridiemUpButtonProps ? :{[x: string] : any},   minutesDownButtonProps ? :{[x: string] : any},   minutesInputProps ? :{[x: string] : any},   minutesUpButtonProps ? :{[x: string] : any},   secondsDownButtonProps ? :{[x: string] : any},   secondsInputProps ? :{[x: string] : any},   secondsUpButtonProps ? :{[x: string] : any}, onChange ? (time : {  hour  :string,   minute  :string,   second  :string,   meridiem  :0 | 1}): void, [x: string] : any} & fundamental-react.fundamental-react/lib/Time/Time.TimeBaseProps */
+/* Inlined {  disabled ? :boolean,   hoursDownButtonProps ? :any,   hoursInputProps ? :any,   hoursUpButtonProps ? :any,   id ? :string,   localizedText ? :{  meridiemAM ? :string,   meridiemPM ? :string},   meridiemDownButtonProps ? :any,   meridiemInputProps ? :any,   meridiemUpButtonProps ? :any,   minutesDownButtonProps ? :any,   minutesInputProps ? :any,   minutesUpButtonProps ? :any,   secondsDownButtonProps ? :any,   secondsInputProps ? :any,   secondsUpButtonProps ? :any, onChange ? (time : {  hour  :string,   minute  :string,   second  :string,   meridiem  :0 | 1}): void, [x: string] : any} & fundamental-react.fundamental-react/lib/Time/Time.TimeBaseProps */
 trait TimeProps
   extends /* x */ StringDictionary[js.Any] {
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var disableStyles: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /* Set to **true** to use the 12-hour clock (hours ranging from 01 to 12) and to display a meridiem control. */
   var format12Hours: js.UndefOr[Boolean] = js.undefined
-  /* Additional props to be spread to the hours down `<button>` element. */
-  var hoursDownButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the hours `<input>` element. */
-  var hoursInputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the hours up `<button>` element. */
-  var hoursUpButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var hoursDownButtonProps: js.UndefOr[js.Any] = js.undefined
+  var hoursInputProps: js.UndefOr[js.Any] = js.undefined
+  var hoursUpButtonProps: js.UndefOr[js.Any] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var localizedText: js.UndefOr[AnonMeridiemAM] = js.undefined
-  /* Additional props to be spread to the meridiem down `<button>` element. */
-  var meridiemDownButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the meridiem `<input>` element. */
-  var meridiemInputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the meridiem up `<button>` element. */
-  var meridiemUpButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the minutes down `<button>` element. */
-  var minutesDownButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the minutes `<input>` element. */
-  var minutesInputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the minutes up `<button>` element. */
-  var minutesUpButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var meridiemDownButtonProps: js.UndefOr[js.Any] = js.undefined
+  var meridiemInputProps: js.UndefOr[js.Any] = js.undefined
+  var meridiemUpButtonProps: js.UndefOr[js.Any] = js.undefined
+  var minutesDownButtonProps: js.UndefOr[js.Any] = js.undefined
+  var minutesInputProps: js.UndefOr[js.Any] = js.undefined
+  var minutesUpButtonProps: js.UndefOr[js.Any] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* time */ AnonHour, Unit]] = js.undefined
-  /* Additional props to be spread to the seconds down `<button>` element. */
-  var secondsDownButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the seconds `<input>` element. */
-  var secondsInputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the seconds up `<button>` element. */
-  var secondsUpButtonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Enables the input for hours. */
+  var secondsDownButtonProps: js.UndefOr[js.Any] = js.undefined
+  var secondsInputProps: js.UndefOr[js.Any] = js.undefined
+  var secondsUpButtonProps: js.UndefOr[js.Any] = js.undefined
   var showHour: js.UndefOr[Boolean] = js.undefined
-  /* Enables the input for minutes. */
   var showMinute: js.UndefOr[Boolean] = js.undefined
-  /* Enables the input for seconds. */
   var showSecond: js.UndefOr[Boolean] = js.undefined
-  /* Set to **true** to show up/down buttons for each input. */
   var spinners: js.UndefOr[Boolean] = js.undefined
-  /* The time component values. Contains four properties:
-    **hour** (with values from 01 to 12 when `format12Hours` is true or 00 to 23 when `format12Hours` is false),
-    **minute** (with values from 00 to 59), **second** (with values from 00 to 59),
-    **meridiem** (with values 0 for AM or 1 for PM). */
   var time: js.UndefOr[AnonHour] = js.undefined
 }
 
@@ -61,25 +39,24 @@ object TimeProps {
   @scala.inline
   def apply(
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    customStyles: StringDictionary[js.Any] = null,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     format12Hours: js.UndefOr[Boolean] = js.undefined,
-    hoursDownButtonProps: StringDictionary[js.Any] = null,
-    hoursInputProps: StringDictionary[js.Any] = null,
-    hoursUpButtonProps: StringDictionary[js.Any] = null,
+    hoursDownButtonProps: js.Any = null,
+    hoursInputProps: js.Any = null,
+    hoursUpButtonProps: js.Any = null,
     id: String = null,
     localizedText: AnonMeridiemAM = null,
-    meridiemDownButtonProps: StringDictionary[js.Any] = null,
-    meridiemInputProps: StringDictionary[js.Any] = null,
-    meridiemUpButtonProps: StringDictionary[js.Any] = null,
-    minutesDownButtonProps: StringDictionary[js.Any] = null,
-    minutesInputProps: StringDictionary[js.Any] = null,
-    minutesUpButtonProps: StringDictionary[js.Any] = null,
+    meridiemDownButtonProps: js.Any = null,
+    meridiemInputProps: js.Any = null,
+    meridiemUpButtonProps: js.Any = null,
+    minutesDownButtonProps: js.Any = null,
+    minutesInputProps: js.Any = null,
+    minutesUpButtonProps: js.Any = null,
     onChange: /* time */ AnonHour => Unit = null,
-    secondsDownButtonProps: StringDictionary[js.Any] = null,
-    secondsInputProps: StringDictionary[js.Any] = null,
-    secondsUpButtonProps: StringDictionary[js.Any] = null,
+    secondsDownButtonProps: js.Any = null,
+    secondsInputProps: js.Any = null,
+    secondsUpButtonProps: js.Any = null,
     showHour: js.UndefOr[Boolean] = js.undefined,
     showMinute: js.UndefOr[Boolean] = js.undefined,
     showSecond: js.UndefOr[Boolean] = js.undefined,
@@ -88,7 +65,6 @@ object TimeProps {
   ): TimeProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(format12Hours)) __obj.updateDynamic("format12Hours")(format12Hours.asInstanceOf[js.Any])

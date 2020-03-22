@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the details about a contact (similar to what's on a physical contact or business card) extracted from the item's body. Read mode only.
   *
-  * The list of contacts extracted from the body of an email message or appointment is returned in the contacts property of the
-  * {@link Office.Entities | Entities} object returned by the getEntities or getEntitiesByType method of the current item.
+  * The list of contacts extracted from the body of an email message or appointment is returned in the `contacts` property of the
+  * {@link Office.Entities | Entities} object returned by the `getEntities` or `getEntitiesByType` method of the current item.
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait Contact extends js.Object {
   /**
@@ -34,7 +34,7 @@ trait Contact extends js.Object {
     */
   var personName: String
   /**
-    * An array containing a PhoneNumber object for each phone number associated with the contact. Nullable.
+    * An array containing a `PhoneNumber` object for each phone number associated with the contact. Nullable.
     */
   var phoneNumbers: js.Array[PhoneNumber]
   /**

@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.keytipManagerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,9 +17,11 @@ class KeytipManager () extends js.Object {
     * @returns {IUniqueKeytip} IUniqueKeytip object
     */
   var _getUniqueKtp: js.Any = js.native
+  var delayUpdatingKeytipChange: Boolean = js.native
   var inKeytipMode: Boolean = js.native
-  var keytips: js.Array[IUniqueKeytip] = js.native
-  var persistedKeytips: js.Array[IUniqueKeytip] = js.native
+  var keytips: StringDictionary[IUniqueKeytip] = js.native
+  var persistedKeytips: StringDictionary[IUniqueKeytip] = js.native
+  var sequenceMapping: StringDictionary[IKeytipProps] = js.native
   var shouldEnterKeytipMode: Boolean = js.native
   /**
     * Adds the overflowSetSequence to the keytipProps if its parent keytip also has it
@@ -41,6 +44,14 @@ class KeytipManager () extends js.Object {
     * @returns {IKeytipProps[]} All keytips stored in the manager
     */
   def getKeytips(): js.Array[IKeytipProps] = js.native
+  /**
+    * Initialization code to set set parameters to define
+    * how the KeytipManager handles keytip data.
+    *
+    * @param delayUpdatingKeytipChange - T/F if we should delay notifiying keytip subscribers
+    * of keytip changes
+    */
+  def init(delayUpdatingKeytipChange: Boolean): Unit = js.native
   /**
     * Public function to bind for overflow items that have a submenu
     *

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "facebook-pixel"
-version := "0.0-unknown-dt-20191213Z-b59ba3"
+version := "0.0-unknown-dt-20200226Z-b59ba3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -35,6 +35,7 @@ import typings.antd.progressProgressMod.ProgressType
 import typings.antd.radioInterfaceMod.RadioGroupButtonStyle
 import typings.antd.renderListBodyMod.OmitProp
 import typings.antd.responsiveObserveMod.Breakpoint
+import typings.antd.resultMod.ExceptionStatusType
 import typings.antd.siderMod.CollapseType
 import typings.antd.siderMod.SiderTheme
 import typings.antd.sizeContextMod._SizeType
@@ -150,7 +151,16 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `4Dot0Dot0` extends js.Object
+  sealed trait `403` extends ExceptionStatusType
+  
+  @js.native
+  sealed trait `404` extends ExceptionStatusType
+  
+  @js.native
+  sealed trait `4Dot0Dot3` extends js.Object
+  
+  @js.native
+  sealed trait `500` extends ExceptionStatusType
   
   @js.native
   sealed trait POST extends js.Object
@@ -2212,7 +2222,13 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `4Dot0Dot0`: `4Dot0Dot0` = "4.0.0".asInstanceOf[`4Dot0Dot0`]
+  def `403`: `403` = "403".asInstanceOf[`403`]
+  @scala.inline
+  def `404`: `404` = "404".asInstanceOf[`404`]
+  @scala.inline
+  def `4Dot0Dot3`: `4Dot0Dot3` = "4.0.3".asInstanceOf[`4Dot0Dot3`]
+  @scala.inline
+  def `500`: `500` = "500".asInstanceOf[`500`]
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline

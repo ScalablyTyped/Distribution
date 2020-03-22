@@ -22,6 +22,9 @@ trait GroupPolicyArgs extends js.Object {
     * prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
+  /**
+    * The policy document attached to the group.
+    */
   val policy: Input[String | PolicyDocument] = js.native
 }
 

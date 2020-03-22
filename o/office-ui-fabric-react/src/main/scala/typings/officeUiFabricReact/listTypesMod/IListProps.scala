@@ -124,7 +124,7 @@ trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
     */
   var getPageStyle: js.UndefOr[js.Function1[/* page */ IPage[T], _]] = js.undefined
   /**
-    * Boolean value to disable scroll state updates. This will cause the isScrolling argument in onRenderCell to always be undefined.
+    * Whether to disable scroll state updates. This causes the isScrolling arg in onRenderCell to always be undefined.
     * This is a performance optimization to let List skip a render cycle by not updating its scrolling state.
     */
   var ignoreScrollingState: js.UndefOr[Boolean] = js.undefined
@@ -147,7 +147,8 @@ trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
     * Method to call when trying to render an item.
     * @param item - The data associated with the cell that is being rendered.
     * @param index - The index of the cell being rendered.
-    * @param isScrolling - True if the list is being scrolled. May be useful for rendering a placeholder if your cells are complex.
+    * @param isScrolling - True if the list is being scrolled. May be useful for rendering a placeholder if your cells
+    * are complex.
     */
   var onRenderCell: js.UndefOr[
     js.Function3[
@@ -171,7 +172,8 @@ trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
   /**
     * Optional callback to determine whether the list should be rendered in full, or virtualized.
     * Virtualization will add and remove pages of items as the user scrolls them into the visible range.
-    * This benefits larger list scenarios by reducing the DOM on the screen, but can negatively affect performance for smaller lists.
+    * This benefits larger list scenarios by reducing the DOM on the screen, but can negatively affect performance for
+    * smaller lists.
     * The default implementation will virtualize when this callback is not provided.
     */
   var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[T], Boolean]] = js.undefined

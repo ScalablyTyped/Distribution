@@ -14,6 +14,15 @@ package object mod {
   type ResponsiveStyleValue[T] = T | (js.Array[T | scala.Null])
   type StandardCSSProperties = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
   /* Rewritten from type alias, can be one of: 
+    - typings.styledSystemCss.mod.SystemCssProperties
+    - typings.styledSystemCss.mod.CSSPseudoSelectorProps
+    - typings.styledSystemCss.mod.CSSSelectorObject
+    - typings.styledSystemCss.mod.VariantProperty
+    - typings.styledSystemCss.mod.UseThemeFunction
+    - scala.Null
+  */
+  type SystemStyleObject = typings.styledSystemCss.mod._SystemStyleObject | scala.Null
+  /* Rewritten from type alias, can be one of: 
     - typings.styledSystemCss.KinkeyofStandardCSSProper
     - typings.styledSystemCss.PartialScaleThemeProperti
     - typings.styledSystemCss.mod.ThemeBreakPoints

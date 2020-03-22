@@ -124,11 +124,13 @@ object SeriesCandlestickOptions {
     connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
+    dashStyle: DashStyleValue = null,
     data: js.Array[
       (js.Tuple4[Double | String, Double, Double, Double]) | (js.Tuple5[Double | String, Double, Double, Double, Double]) | PointOptionsObject
     ] = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotCandlestickDataLabelsOptions | js.Array[PlotCandlestickDataLabelsOptions] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataSorting: DataSortingOptionsObject | PlotCandlestickDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
@@ -218,6 +220,8 @@ object SeriesCandlestickOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])

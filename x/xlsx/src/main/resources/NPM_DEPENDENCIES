@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xlsx" : "0.15.5"
+      "xlsx" : "0.15.6"
     }
   ],
   "test-dependencies" : [
     {
-      "xlsx" : "0.15.5"
+      "xlsx" : "0.15.6"
     }
   ],
   "compile-devDependencies" : [

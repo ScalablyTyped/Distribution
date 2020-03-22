@@ -194,6 +194,7 @@ trait SVGAttributes[T]
   var overlineThickness: js.UndefOr[Double | String] = js.undefined
   var paintOrder: js.UndefOr[Double | String] = js.undefined
   var panose1: js.UndefOr[Double | String] = js.undefined
+  var path: js.UndefOr[String] = js.undefined
   var pathLength: js.UndefOr[Double | String] = js.undefined
   var patternContentUnits: js.UndefOr[String] = js.undefined
   var patternTransform: js.UndefOr[Double | String] = js.undefined
@@ -459,6 +460,7 @@ object SVGAttributes {
     overlineThickness: Double | String = null,
     paintOrder: Double | String = null,
     panose1: Double | String = null,
+    path: String = null,
     pathLength: Double | String = null,
     patternContentUnits: String = null,
     patternTransform: Double | String = null,
@@ -569,8 +571,7 @@ object SVGAttributes {
     xmlLang: String = null,
     xmlSpace: String = null,
     xmlns: String = null,
-    xmlnsXlink: String = null,
-    y: Double | String = null
+    xmlnsXlink: String = null
   ): SVGAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (AriaAttributes != null) js.Dynamic.global.Object.assign(__obj, AriaAttributes)
@@ -715,6 +716,7 @@ object SVGAttributes {
     if (overlineThickness != null) __obj.updateDynamic("overlineThickness")(overlineThickness.asInstanceOf[js.Any])
     if (paintOrder != null) __obj.updateDynamic("paintOrder")(paintOrder.asInstanceOf[js.Any])
     if (panose1 != null) __obj.updateDynamic("panose1")(panose1.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pathLength != null) __obj.updateDynamic("pathLength")(pathLength.asInstanceOf[js.Any])
     if (patternContentUnits != null) __obj.updateDynamic("patternContentUnits")(patternContentUnits.asInstanceOf[js.Any])
     if (patternTransform != null) __obj.updateDynamic("patternTransform")(patternTransform.asInstanceOf[js.Any])
@@ -826,7 +828,6 @@ object SVGAttributes {
     if (xmlSpace != null) __obj.updateDynamic("xmlSpace")(xmlSpace.asInstanceOf[js.Any])
     if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns.asInstanceOf[js.Any])
     if (xmlnsXlink != null) __obj.updateDynamic("xmlnsXlink")(xmlnsXlink.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAttributes[T]]
   }
 }

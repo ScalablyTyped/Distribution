@@ -1,6 +1,7 @@
 package typings.pulumiAws.eksClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.inputMod.eks.ClusterEncryptionConfig
 import typings.pulumiAws.inputMod.eks.ClusterVpcConfig
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
@@ -13,6 +14,10 @@ trait ClusterArgs extends js.Object {
     * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
     */
   val enabledClusterLogTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * Configuration block with encryption configuration for the cluster. Only available on Kubernetes 1.13 and above clusters created after March 6, 2020. Detailed below.
+    */
+  val encryptionConfig: js.UndefOr[Input[ClusterEncryptionConfig]] = js.native
   /**
     * Name of the cluster.
     */
@@ -41,12 +46,14 @@ object ClusterArgs {
     roleArn: Input[String],
     vpcConfig: Input[ClusterVpcConfig],
     enabledClusterLogTypes: Input[js.Array[Input[String]]] = null,
+    encryptionConfig: Input[ClusterEncryptionConfig] = null,
     name: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     version: Input[String] = null
   ): ClusterArgs = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], vpcConfig = vpcConfig.asInstanceOf[js.Any])
     if (enabledClusterLogTypes != null) __obj.updateDynamic("enabledClusterLogTypes")(enabledClusterLogTypes.asInstanceOf[js.Any])
+    if (encryptionConfig != null) __obj.updateDynamic("encryptionConfig")(encryptionConfig.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

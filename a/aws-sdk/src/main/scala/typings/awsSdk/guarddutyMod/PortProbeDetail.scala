@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PortProbeDetail extends js.Object {
   /**
+    * Local IP information of the connection.
+    */
+  var LocalIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalIpDetails] = js.native
+  /**
     * Local port information of the connection.
     */
   var LocalPortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalPortDetails] = js.native
@@ -18,8 +22,13 @@ trait PortProbeDetail extends js.Object {
 
 object PortProbeDetail {
   @scala.inline
-  def apply(LocalPortDetails: LocalPortDetails = null, RemoteIpDetails: RemoteIpDetails = null): PortProbeDetail = {
+  def apply(
+    LocalIpDetails: LocalIpDetails = null,
+    LocalPortDetails: LocalPortDetails = null,
+    RemoteIpDetails: RemoteIpDetails = null
+  ): PortProbeDetail = {
     val __obj = js.Dynamic.literal()
+    if (LocalIpDetails != null) __obj.updateDynamic("LocalIpDetails")(LocalIpDetails.asInstanceOf[js.Any])
     if (LocalPortDetails != null) __obj.updateDynamic("LocalPortDetails")(LocalPortDetails.asInstanceOf[js.Any])
     if (RemoteIpDetails != null) __obj.updateDynamic("RemoteIpDetails")(RemoteIpDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortProbeDetail]

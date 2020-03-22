@@ -13,6 +13,7 @@ class PhoneAuthProviderInstance () extends AuthProvider {
   def this(auth: Auth) = this()
   /* CompleteClass */
   override var providerId: String = js.native
+  def verifyPhoneNumber(phoneInfoOptions: String, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
   /**
     * Starts a phone number authentication flow by sending a verification code to
     * the given phone number. Returns an ID that can be passed to
@@ -36,13 +37,22 @@ class PhoneAuthProviderInstance () extends AuthProvider {
     * <dt>auth/user-disabled</dt>
     * <dd>Thrown if the user corresponding to the given phone number has been
     *     disabled.</dd>
+    * <dt>auth/maximum-second-factor-count-exceeded</dt>
+    * <dd>Thrown if The maximum allowed number of second factors on a user
+    *     has been exceeded.</dd>
+    * <dt>auth/second-factor-already-in-use</dt>
+    * <dd>Thrown if the second factor is already enrolled on this account.</dd>
+    * <dt>auth/unsupported-first-factor</dt>
+    * <dd>Thrown if the first factor being used to sign in is not supported.</dd>
+    * <dt>auth/unverified-email</dt>
+    * <dd>Thrown if the email of the account is not verified.</dd>
     * </dl>
     *
-    * @param phoneNumber The user's phone number in E.164 format (e.g.
-    *     +16505550101).
+    * @param phoneInfoOptions The user's {@link firebase.auth.PhoneInfoOptions}.
+    *     The phone number should be in E.164 format (e.g. +16505550101).
     * @param applicationVerifier
     * @return A Promise for the verification ID.
     */
-  def verifyPhoneNumber(phoneNumber: String, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
+  def verifyPhoneNumber(phoneInfoOptions: PhoneInfoOptions, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
 }
 

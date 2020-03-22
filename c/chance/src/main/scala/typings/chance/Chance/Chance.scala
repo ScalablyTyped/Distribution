@@ -1,5 +1,6 @@
 package typings.chance.Chance
 
+import typings.chance.AnonFormatted
 import typings.chance.AnonLikelihood
 import typings.chance.AnonRegion
 import typings.chance.AnonVersion
@@ -92,6 +93,7 @@ trait Chance extends Seeded {
   def country(): String = js.native
   def country(opts: Options): String = js.native
   def cpf(): String = js.native
+  def cpf(opts: AnonFormatted): String = js.native
   def currency(): Currency = js.native
   def currency_pair(): js.Tuple2[Currency, Currency] = js.native
   def d10(): Double = js.native

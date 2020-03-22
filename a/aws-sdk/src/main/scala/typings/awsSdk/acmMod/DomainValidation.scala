@@ -11,7 +11,7 @@ trait DomainValidation extends js.Object {
     */
   var DomainName: DomainNameString = js.native
   /**
-    * Contains the CNAME record that you add to your DNS database for domain validation. For more information, see Use DNS to Validate Domain Ownership.
+    * Contains the CNAME record that you add to your DNS database for domain validation. For more information, see Use DNS to Validate Domain Ownership. Note: The CNAME information that you need does not include the name of your domain. If you include&#x2028; your domain name in the DNS database CNAME record, validation fails.&#x2028; For example, if the name is "_a79865eb4cd1a6ab990a45779b4e0b96.yourdomain.com", only "_a79865eb4cd1a6ab990a45779b4e0b96" must be used.
     */
   var ResourceRecord: js.UndefOr[typings.awsSdk.acmMod.ResourceRecord] = js.native
   /**

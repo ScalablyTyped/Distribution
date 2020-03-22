@@ -23,6 +23,14 @@ class CultureInfo () extends ClientObject {
   var context_CultureInfo: RequestContext = js.native
   /**
     *
+    * Defines the culturally appropriate format of displaying date and time. This is based on current system culture settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val datetimeFormat: DatetimeFormatInfo = js.native
+  /**
+    *
     * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -36,7 +44,7 @@ class CultureInfo () extends ClientObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val numberFormatInfo: NumberFormatInfo = js.native
+  val numberFormat: NumberFormatInfo = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *

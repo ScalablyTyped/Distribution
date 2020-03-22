@@ -71,6 +71,7 @@ object MKSwitchProperties {
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     offColor: String = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit = null,
     onCheckedChange: /* opts */ AnonChecked => Unit = null,
@@ -119,6 +120,7 @@ object MKSwitchProperties {
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (offColor != null) __obj.updateDynamic("offColor")(offColor.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCheckedChange != null) __obj.updateDynamic("onCheckedChange")(js.Any.fromFunction1(onCheckedChange))

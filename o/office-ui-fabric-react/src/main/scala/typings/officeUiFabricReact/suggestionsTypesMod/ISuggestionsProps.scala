@@ -113,6 +113,8 @@ trait ISuggestionsProps[T]
   var resultsMaximumNumber: js.UndefOr[Double] = js.native
   /**
     * The text that should appear if there is a search error.
+    *
+    * @deprecated Use noResultsFoundText instead.
     */
   var searchErrorText: js.UndefOr[String] = js.native
   /**

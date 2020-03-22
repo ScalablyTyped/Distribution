@@ -48,7 +48,7 @@ trait AuthorizerState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * The type of the authorizer. Possible values are `TOKEN` for a Lambda function using a single authorization token submitted in a custom header, `REQUEST` for a Lambda function using incoming request parameters, or `COGNITO_USER_POOLS` for using an Amazon Cognito user pool.
     * Defaults to `TOKEN`.
@@ -66,7 +66,7 @@ object AuthorizerState {
     identityValidationExpression: Input[String] = null,
     name: Input[String] = null,
     providerArns: Input[js.Array[Input[String]]] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     `type`: Input[String] = null
   ): AuthorizerState = {
     val __obj = js.Dynamic.literal()

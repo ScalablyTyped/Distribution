@@ -31,7 +31,7 @@ package object ec2Mod {
   */
   type Affinity = typings.awsSdk.ec2Mod._Affinity | java.lang.String
   type AllocationId = java.lang.String
-  type AllocationIdList = js.Array[typings.awsSdk.ec2Mod.String]
+  type AllocationIdList = js.Array[typings.awsSdk.ec2Mod.AllocationId]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.available__
     - typings.awsSdk.awsSdkStrings.`under-assessment`
@@ -190,7 +190,7 @@ package object ec2Mod {
   type CancelSpotInstanceRequestState = typings.awsSdk.ec2Mod._CancelSpotInstanceRequestState | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[typings.awsSdk.ec2Mod.CancelledSpotInstanceRequest]
   type CapacityReservationId = java.lang.String
-  type CapacityReservationIdSet = js.Array[typings.awsSdk.ec2Mod.String]
+  type CapacityReservationIdSet = js.Array[typings.awsSdk.ec2Mod.CapacityReservationId]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.LinuxSlashUNIX
     - typings.awsSdk.awsSdkStrings.`Red Hat Enterprise Linux`
@@ -239,6 +239,7 @@ package object ec2Mod {
   */
   type ClientCertificateRevocationListStatusCode = typings.awsSdk.ec2Mod._ClientCertificateRevocationListStatusCode | java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.ec2Mod.ClientApiVersions
+  type ClientVpnAssociationId = java.lang.String
   type ClientVpnAuthenticationList = js.Array[typings.awsSdk.ec2Mod.ClientVpnAuthentication]
   type ClientVpnAuthenticationRequestList = js.Array[typings.awsSdk.ec2Mod.ClientVpnAuthenticationRequest]
   /* Rewritten from type alias, can be one of: 
@@ -283,10 +284,10 @@ package object ec2Mod {
     - java.lang.String
   */
   type ClientVpnRouteStatusCode = typings.awsSdk.ec2Mod._ClientVpnRouteStatusCode | java.lang.String
-  type ClientVpnSecurityGroupIdSet = js.Array[typings.awsSdk.ec2Mod.String]
+  type ClientVpnSecurityGroupIdSet = js.Array[typings.awsSdk.ec2Mod.SecurityGroupId]
   type CoipAddressUsageSet = js.Array[typings.awsSdk.ec2Mod.CoipAddressUsage]
   type CoipPoolId = java.lang.String
-  type CoipPoolIdSet = js.Array[typings.awsSdk.ec2Mod.String]
+  type CoipPoolIdSet = js.Array[typings.awsSdk.ec2Mod.CoipPoolId]
   type CoipPoolMaxResults = scala.Double
   type CoipPoolSet = js.Array[typings.awsSdk.ec2Mod.CoipPool]
   type ConnectionNotificationId = java.lang.String
@@ -549,7 +550,7 @@ package object ec2Mod {
   type ExportImageTaskIdList = js.Array[typings.awsSdk.ec2Mod.ExportImageTaskId]
   type ExportImageTaskList = js.Array[typings.awsSdk.ec2Mod.ExportImageTask]
   type ExportTaskId = java.lang.String
-  type ExportTaskIdStringList = js.Array[typings.awsSdk.ec2Mod.String]
+  type ExportTaskIdStringList = js.Array[typings.awsSdk.ec2Mod.ExportTaskId]
   type ExportTaskList = js.Array[typings.awsSdk.ec2Mod.ExportTask]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.active__
@@ -559,6 +560,7 @@ package object ec2Mod {
     - java.lang.String
   */
   type ExportTaskState = typings.awsSdk.ec2Mod._ExportTaskState | java.lang.String
+  type ExportVmTaskId = java.lang.String
   type FailedQueuedPurchaseDeletionSet = js.Array[typings.awsSdk.ec2Mod.FailedQueuedPurchaseDeletion]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.enabling__
@@ -592,8 +594,8 @@ package object ec2Mod {
     - java.lang.String
   */
   type FleetExcessCapacityTerminationPolicy = typings.awsSdk.ec2Mod._FleetExcessCapacityTerminationPolicy | java.lang.String
-  type FleetIdSet = js.Array[typings.awsSdk.ec2Mod.FleetIdentifier]
-  type FleetIdentifier = java.lang.String
+  type FleetId = java.lang.String
+  type FleetIdSet = js.Array[typings.awsSdk.ec2Mod.FleetId]
   type FleetLaunchTemplateConfigList = js.Array[typings.awsSdk.ec2Mod.FleetLaunchTemplateConfig]
   type FleetLaunchTemplateConfigListRequest = js.Array[typings.awsSdk.ec2Mod.FleetLaunchTemplateConfigRequest]
   type FleetLaunchTemplateOverridesList = js.Array[typings.awsSdk.ec2Mod.FleetLaunchTemplateOverrides]
@@ -1314,6 +1316,12 @@ package object ec2Mod {
   type MemorySize = scala.Double
   type MillisecondDateTime = typings.std.Date
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.`opted-in`
+    - typings.awsSdk.awsSdkStrings.`not-opted-in`
+    - java.lang.String
+  */
+  type ModifyAvailabilityZoneOptInStatus = typings.awsSdk.ec2Mod._ModifyAvailabilityZoneOptInStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.disabled__
     - typings.awsSdk.awsSdkStrings.disabling_
     - typings.awsSdk.awsSdkStrings.enabled__
@@ -1635,6 +1643,7 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.`vpc-peering-connection`
     - typings.awsSdk.awsSdkStrings.`vpn-connection`
     - typings.awsSdk.awsSdkStrings.`vpn-gateway`
+    - typings.awsSdk.awsSdkStrings.`vpc-flow-log`
     - java.lang.String
   */
   type ResourceType = typings.awsSdk.ec2Mod._ResourceType | java.lang.String
@@ -1921,6 +1930,7 @@ package object ec2Mod {
     - java.lang.String
   */
   type TrafficType = typings.awsSdk.ec2Mod._TrafficType | java.lang.String
+  type TransitAssociationGatewayId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.associating__
     - typings.awsSdk.awsSdkStrings.associated__
@@ -1971,7 +1981,7 @@ package object ec2Mod {
   type TransitGatewayMulitcastDomainAssociationState = typings.awsSdk.ec2Mod._TransitGatewayMulitcastDomainAssociationState | java.lang.String
   type TransitGatewayMulticastDomainAssociationList = js.Array[typings.awsSdk.ec2Mod.TransitGatewayMulticastDomainAssociation]
   type TransitGatewayMulticastDomainId = java.lang.String
-  type TransitGatewayMulticastDomainIdStringList = js.Array[typings.awsSdk.ec2Mod.String]
+  type TransitGatewayMulticastDomainIdStringList = js.Array[typings.awsSdk.ec2Mod.TransitGatewayMulticastDomainId]
   type TransitGatewayMulticastDomainList = js.Array[typings.awsSdk.ec2Mod.TransitGatewayMulticastDomain]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.pending__
@@ -2005,7 +2015,7 @@ package object ec2Mod {
   type TransitGatewayRouteState = typings.awsSdk.ec2Mod._TransitGatewayRouteState | java.lang.String
   type TransitGatewayRouteTableAssociationList = js.Array[typings.awsSdk.ec2Mod.TransitGatewayRouteTableAssociation]
   type TransitGatewayRouteTableId = java.lang.String
-  type TransitGatewayRouteTableIdStringList = js.Array[typings.awsSdk.ec2Mod.String]
+  type TransitGatewayRouteTableIdStringList = js.Array[typings.awsSdk.ec2Mod.TransitGatewayRouteTableId]
   type TransitGatewayRouteTableList = js.Array[typings.awsSdk.ec2Mod.TransitGatewayRouteTable]
   type TransitGatewayRouteTablePropagationList = js.Array[typings.awsSdk.ec2Mod.TransitGatewayRouteTablePropagation]
   /* Rewritten from type alias, can be one of: 

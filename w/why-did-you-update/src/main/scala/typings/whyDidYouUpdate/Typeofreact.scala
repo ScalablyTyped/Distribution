@@ -31,6 +31,7 @@ import typings.react.mod.EffectCallback
 import typings.react.mod.ExoticComponent
 import typings.react.mod.Factory
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ForwardRefRenderFunction
 import typings.react.mod.FunctionComponent
 import typings.react.mod.FunctionComponentElement
 import typings.react.mod.FunctionComponentFactory
@@ -56,7 +57,6 @@ import typings.react.mod.ReducerStateWithoutAction
 import typings.react.mod.ReducerWithoutAction
 import typings.react.mod.Ref
 import typings.react.mod.RefAttributes
-import typings.react.mod.RefForwardingComponent
 import typings.react.mod.RefObject
 import typings.react.mod.SFC
 import typings.react.mod.SVGAttributes
@@ -206,7 +206,7 @@ trait Typeofreact extends js.Object {
   @JSName("createFactory")
   def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 115 */ js.Any): HTMLFactory[T] = js.native
   def createRef[T](): RefObject[T] = js.native
-  def forwardRef[T, P](Component: RefForwardingComponent[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
+  def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
   def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native
   def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = js.native
   def `lazy`[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[AnonDefault[T]]]): LazyExoticComponent[T] = js.native

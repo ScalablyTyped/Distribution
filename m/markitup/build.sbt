@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "markitup"
-version := "1.x-dt-20190322Z-70be68"
+version := "1.x-dt-20200225Z-70be68"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

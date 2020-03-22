@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slimerjs"
-version := "0.10-dt-20191014Z-091d26"
+version := "0.10-dt-20200227Z-091d26"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

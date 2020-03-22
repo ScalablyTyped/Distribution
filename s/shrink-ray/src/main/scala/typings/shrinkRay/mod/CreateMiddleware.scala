@@ -14,6 +14,6 @@ trait CreateMiddleware extends js.Object {
   var filter_Original: FilterFunction = js.native
   def apply(): RequestHandler[ParamsDictionary] = js.native
   def apply(options: Options): RequestHandler[ParamsDictionary] = js.native
-  def filter(req: Request_[ParamsDictionary], res: Response_): Boolean = js.native
+  def filter(req: Request_[ParamsDictionary], res: Response_[_]): Boolean = js.native
 }
 

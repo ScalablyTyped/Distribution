@@ -12,6 +12,13 @@ object resolutionconstraintMod extends js.Object {
   def createMinMaxResolution(maxResolution: Double, minResolution: Double): Type = js.native
   def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Boolean): Type = js.native
   def createMinMaxResolution(maxResolution: Double, minResolution: Double, opt_smooth: Boolean, opt_maxExtent: Extent): Type = js.native
+  def createMinMaxResolution(
+    maxResolution: Double,
+    minResolution: Double,
+    opt_smooth: Boolean,
+    opt_maxExtent: Extent,
+    opt_showFullExtent: Boolean
+  ): Type = js.native
   def createSnapToPower(power: Double, maxResolution: Double): Type = js.native
   def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Double): Type = js.native
   def createSnapToPower(power: Double, maxResolution: Double, opt_minResolution: Double, opt_smooth: Boolean): Type = js.native
@@ -22,9 +29,23 @@ object resolutionconstraintMod extends js.Object {
     opt_smooth: Boolean,
     opt_maxExtent: Extent
   ): Type = js.native
+  def createSnapToPower(
+    power: Double,
+    maxResolution: Double,
+    opt_minResolution: Double,
+    opt_smooth: Boolean,
+    opt_maxExtent: Extent,
+    opt_showFullExtent: Boolean
+  ): Type = js.native
   def createSnapToResolutions(resolutions: js.Array[Double]): Type = js.native
   def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Boolean): Type = js.native
   def createSnapToResolutions(resolutions: js.Array[Double], opt_smooth: Boolean, opt_maxExtent: Extent): Type = js.native
+  def createSnapToResolutions(
+    resolutions: js.Array[Double],
+    opt_smooth: Boolean,
+    opt_maxExtent: Extent,
+    opt_showFullExtent: Boolean
+  ): Type = js.native
   type Type = js.Function4[
     /* p0 */ js.UndefOr[Double], 
     /* p1 */ Double, 

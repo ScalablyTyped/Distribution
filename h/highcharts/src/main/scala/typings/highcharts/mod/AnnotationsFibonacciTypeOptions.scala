@@ -17,7 +17,7 @@ trait AnnotationsFibonacciTypeOptions extends js.Object {
   /**
     * (Highstock) An array with options for the labels.
     */
-  var labels: js.UndefOr[AnnotationsFibonacciTypeLabelsOptions | js.Array[js.Object]] = js.undefined
+  var labels: js.UndefOr[js.Array[AnnotationsFibonacciTypeLabelsOptions]] = js.undefined
   /**
     * (Highstock) Line options.
     */
@@ -48,7 +48,7 @@ object AnnotationsFibonacciTypeOptions {
   def apply(
     backgroundColors: js.Object = null,
     height: Int | Double = null,
-    labels: AnnotationsFibonacciTypeLabelsOptions | js.Array[js.Object] = null,
+    labels: js.Array[AnnotationsFibonacciTypeLabelsOptions] = null,
     line: AnnotationsFibonacciTypeLineOptions = null,
     lineColor: String = null,
     lineColors: js.Object = null,

@@ -11,7 +11,7 @@ trait GetDashboardOutput extends js.Object {
     */
   var DashboardArn: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardArn] = js.native
   /**
-    * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. For more information about the DashboardBody syntax, see CloudWatch-Dashboard-Body-Structure. 
+    * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. For more information about the DashboardBody syntax, see Dashboard Body Structure and Syntax. 
     */
   var DashboardBody: js.UndefOr[typings.awsSdk.cloudwatchMod.DashboardBody] = js.native
   /**

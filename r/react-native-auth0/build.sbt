@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-auth0"
-version := "2.0-dt-20191120Z-99fe6d"
+version := "2.0-dt-20200313Z-9385bc"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

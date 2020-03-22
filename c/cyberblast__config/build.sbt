@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cyberblast__config"
-version := "0.0-dt-20191226Z-6ee91e"
+version := "0.0-dt-20200225Z-6ee91e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

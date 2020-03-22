@@ -23,7 +23,7 @@ trait MetricDataQuery extends js.Object {
     */
   var MetricStat: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricStat] = js.native
   /**
-    * The granularity, in seconds, of the returned data points. For metrics with regular resolution, a period can be as short as one minute (60 seconds) and must be a multiple of 60. For high-resolution metrics that are collected at intervals of less than one minute, the period can be 1, 5, 10, 30, 60, or any multiple of 60. High-resolution metrics are those metrics stored by a PutMetricData operation that includes a StorageResolution of 1 second. If you are performing a GetMetricData operation, use this field only if you are specifying an Expression. Do not use this field when you are specifying a MetricStat in a GetMetricData operation.
+    * The granularity, in seconds, of the returned data points. For metrics with regular resolution, a period can be as short as one minute (60 seconds) and must be a multiple of 60. For high-resolution metrics that are collected at intervals of less than one minute, the period can be 1, 5, 10, 30, 60, or any multiple of 60. High-resolution metrics are those metrics stored by a PutMetricData operation that includes a StorageResolution of 1 second.
     */
   var Period: js.UndefOr[typings.awsSdk.cloudwatchMod.Period] = js.native
   /**

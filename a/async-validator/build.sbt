@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "async-validator"
-version := "3.2.3-b563c4"
+version := "3.2.4-4aa4d7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

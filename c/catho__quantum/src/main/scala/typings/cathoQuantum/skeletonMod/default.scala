@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Skeleton", JSImport.Default)
+@JSImport("@catho/quantum/Skeleton", JSImport.Default)
 @js.native
 class default ()
   extends Component[SkeletonProps, js.Object, js.Any]
 
 /* static members */
-@JSImport("@catho/quantum/components/Skeleton", JSImport.Default)
+@JSImport("@catho/quantum/Skeleton", JSImport.Default)
 @js.native
 object default extends js.Object {
   var Button: SkeletonButton = js.native

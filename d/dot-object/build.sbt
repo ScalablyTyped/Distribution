@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dot-object"
-version := "1.7-dt-20190125Z-fe35bf"
+version := "1.7-dt-20200226Z-fe35bf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.normalizationMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.initializersMod.Initializer
 import typings.tensorflowTfjsLayers.initializersMod.InitializerIdentifier
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
@@ -72,7 +72,7 @@ object LayerNormalizationLayerArgs {
     name: String = null,
     scale: js.UndefOr[Boolean] = js.undefined,
     trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor_[Rank]] = null
+    weights: js.Array[Tensor[Rank]] = null
   ): LayerNormalizationLayerArgs = {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])

@@ -19,7 +19,6 @@ sealed trait ChartSeriesDimension extends js.Object
 @js.native
 object ChartSeriesDimension extends js.Object {
   /**
-    *
     * The chart series axis for the categories.
     *
     */
@@ -27,7 +26,6 @@ object ChartSeriesDimension extends js.Object {
   sealed trait categories extends ChartSeriesDimension
   
   /**
-    *
     * The chart series axis for the values.
     *
     */
@@ -35,7 +33,6 @@ object ChartSeriesDimension extends js.Object {
   sealed trait values extends ChartSeriesDimension
   
   /**
-    *
     * The chart series axis for the x-axis values in scatter and bubble charts.
     *
     */
@@ -43,7 +40,6 @@ object ChartSeriesDimension extends js.Object {
   sealed trait xvalues extends ChartSeriesDimension
   
   /**
-    *
     * The chart series axis for the y-axis values in scatter and bubble charts.
     *
     */

@@ -1,5 +1,6 @@
 package typings.chessJs
 
+import typings.chessJs.mod.PieceType
 import typings.chessJs.mod.Square
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +32,7 @@ object chessJsStrings {
   sealed trait a8 extends Square
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b extends PieceType
   
   @js.native
   sealed trait b1 extends Square
@@ -211,22 +212,22 @@ object chessJsStrings {
   sealed trait h8 extends Square
   
   @js.native
-  sealed trait k extends js.Object
+  sealed trait k extends PieceType
   
   @js.native
   sealed trait light extends js.Object
   
   @js.native
-  sealed trait n extends js.Object
+  sealed trait n extends PieceType
   
   @js.native
-  sealed trait p extends js.Object
+  sealed trait p extends PieceType
   
   @js.native
-  sealed trait q extends js.Object
+  sealed trait q extends PieceType
   
   @js.native
-  sealed trait r extends js.Object
+  sealed trait r extends PieceType
   
   @js.native
   sealed trait w extends js.Object

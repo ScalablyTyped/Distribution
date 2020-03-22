@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easy-jsend"
-version := "0.0-unknown-dt-20190819Z-aa5a73"
+version := "0.0-unknown-dt-20200225Z-aa5a73"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

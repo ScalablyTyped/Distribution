@@ -2,6 +2,7 @@ package typings.pulumiAws.bucketMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.s3.BucketCorsRule
+import typings.pulumiAws.outputMod.s3.BucketGrant
 import typings.pulumiAws.outputMod.s3.BucketLifecycleRule
 import typings.pulumiAws.outputMod.s3.BucketLogging
 import typings.pulumiAws.outputMod.s3.BucketObjectLockConfiguration
@@ -42,7 +43,7 @@ class Bucket protected () extends CustomResource {
     */
   val accelerationStatus: Output_[String] = js.native
   /**
-    * The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".
+    * The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".  Conflicts with `grant`.
     */
   val acl: Output_[js.UndefOr[String]] = js.native
   /**
@@ -74,6 +75,10 @@ class Bucket protected () extends CustomResource {
     */
   val forceDestroy: Output_[js.UndefOr[Boolean]] = js.native
   /**
+    * An [ACL policy grant](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#sample-acl) (documented below). Conflicts with `acl`.
+    */
+  val grants: Output_[js.UndefOr[js.Array[BucketGrant]]] = js.native
+  /**
     * The [Route 53 Hosted Zone ID](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints) for this bucket's region.
     */
   val hostedZoneId: Output_[String] = js.native
@@ -90,7 +95,7 @@ class Bucket protected () extends CustomResource {
     */
   val objectLockConfiguration: Output_[js.UndefOr[BucketObjectLockConfiguration]] = js.native
   /**
-    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), this provider may view the policy as constantly changing in a deployment. In this case, please make sure you use the verbose/specific version of the policy.
+    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document.
     */
   val policy: Output_[js.UndefOr[String]] = js.native
   /**

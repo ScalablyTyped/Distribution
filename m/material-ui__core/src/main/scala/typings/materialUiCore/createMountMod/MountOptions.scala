@@ -1,18 +1,18 @@
 package typings.materialUiCore.createMountMod
 
-import typings.materialUiCore.FnNode
+import typings.materialUiCore.FnCall
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait MountOptions extends js.Object {
-  var mount: FnNode = js.native
+  var mount: FnCall = js.native
 }
 
 object MountOptions {
   @scala.inline
-  def apply(mount: FnNode): MountOptions = {
+  def apply(mount: FnCall): MountOptions = {
     val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[MountOptions]

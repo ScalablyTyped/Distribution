@@ -1,10 +1,10 @@
 package typings.tensorflowTfjsLayers.recurrentMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
 import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.topologyMod.InputSpec
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import scala.scalajs.js
@@ -28,16 +28,16 @@ class RNN_ protected () extends Layer {
     * If the state hasn't been set, return an array of `null`s of the correct
     * length.
     */
-  var states: js.Array[Tensor_[Rank]] = js.native
+  var states: js.Array[Tensor[Rank]] = js.native
   var states_ : js.Any = js.native
   val unroll: Boolean = js.native
-  def getInitialState(inputs: Tensor_[Rank]): js.Array[Tensor_[Rank]] = js.native
-  def getStates(): js.Array[Tensor_[Rank]] = js.native
-  def resetStates(states: js.Array[Tensor_[Rank]]): Unit = js.native
-  def resetStates(states: js.Array[Tensor_[Rank]], training: Boolean): Unit = js.native
-  def resetStates(states: Tensor_[Rank]): Unit = js.native
-  def resetStates(states: Tensor_[Rank], training: Boolean): Unit = js.native
-  def setStates(states: js.Array[Tensor_[Rank]]): Unit = js.native
+  def getInitialState(inputs: Tensor[Rank]): js.Array[Tensor[Rank]] = js.native
+  def getStates(): js.Array[Tensor[Rank]] = js.native
+  def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
+  def resetStates(states: js.Array[Tensor[Rank]], training: Boolean): Unit = js.native
+  def resetStates(states: Tensor[Rank]): Unit = js.native
+  def resetStates(states: Tensor[Rank], training: Boolean): Unit = js.native
+  def setStates(states: js.Array[Tensor[Rank]]): Unit = js.native
 }
 
 /* static members */

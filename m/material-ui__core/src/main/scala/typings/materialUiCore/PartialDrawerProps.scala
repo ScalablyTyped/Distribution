@@ -92,12 +92,8 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactTransitionGroup.AnonAppear
-import typings.reactTransitionGroup.transitionMod.EnterHandler
-import typings.reactTransitionGroup.transitionMod.ExitHandler
 import typings.std.Event_
 import typings.std.HTMLDivElement
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -107,7 +103,7 @@ import scala.scalajs.js.annotation._
 trait PartialDrawerProps extends js.Object {
   var BackdropComponent: js.UndefOr[ReactType[BackdropProps]] = js.native
   var BackdropProps: js.UndefOr[PartialBackdropProps] = js.native
-  var ModalProps: js.UndefOr[PartialModalProps] = js.native
+  var ModalProps: js.UndefOr[PartialModalPropsAbout] = js.native
   var PaperProps: js.UndefOr[PartialPaperProps] = js.native
   var SlideProps: js.UndefOr[PartialSlideProps] = js.native
   var about: js.UndefOr[String] = js.native
@@ -166,7 +162,7 @@ trait PartialDrawerProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapDrawerClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapDrawer] = js.native
   var closeAfterTransition: js.UndefOr[Boolean] = js.native
   var color: js.UndefOr[String] = js.native
   var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance]] = js.native
@@ -233,14 +229,14 @@ trait PartialDrawerProps extends js.Object {
   var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
-  var onEnter: js.UndefOr[EnterHandler] = js.native
-  var onEntered: js.UndefOr[EnterHandler] = js.native
-  var onEntering: js.UndefOr[EnterHandler] = js.native
+  var onEnter: js.UndefOr[js.Any] = js.native
+  var onEntered: js.UndefOr[js.Any] = js.native
+  var onEntering: js.UndefOr[js.Any] = js.native
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
   var onEscapeKeyDown: js.UndefOr[ReactEventHandler[js.Object]] = js.native
-  var onExit: js.UndefOr[ExitHandler] = js.native
-  var onExited: js.UndefOr[ExitHandler] = js.native
-  var onExiting: js.UndefOr[ExitHandler] = js.native
+  var onExit: js.UndefOr[js.Any] = js.native
+  var onExited: js.UndefOr[js.Any] = js.native
+  var onExiting: js.UndefOr[js.Any] = js.native
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
   var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
   var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
@@ -307,7 +303,7 @@ trait PartialDrawerProps extends js.Object {
   var tabIndex: js.UndefOr[Double] = js.native
   var theme: js.UndefOr[Theme] = js.native
   var title: js.UndefOr[String] = js.native
-  var transitionDuration: js.UndefOr[Double | AnonAppear] = js.native
+  var transitionDuration: js.UndefOr[js.Any] = js.native
   var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
@@ -320,7 +316,7 @@ object PartialDrawerProps {
   def apply(
     BackdropComponent: ReactType[BackdropProps] = null,
     BackdropProps: PartialBackdropProps = null,
-    ModalProps: PartialModalProps = null,
+    ModalProps: PartialModalPropsAbout = null,
     PaperProps: PartialPaperProps = null,
     SlideProps: PartialSlideProps = null,
     about: String = null,
@@ -379,7 +375,7 @@ object PartialDrawerProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapDrawerClassKey = null,
+    classes: PartialClassNameMapDrawer = null,
     closeAfterTransition: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
     container: ReactInstance | js.Function0[ReactInstance] = null,
@@ -446,14 +442,14 @@ object PartialDrawerProps {
     onEmptied: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onEncrypted: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onEnded: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEnter: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
-    onEntered: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
-    onEntering: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
+    onEnter: js.Any = null,
+    onEntered: js.Any = null,
+    onEntering: js.Any = null,
     onError: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onEscapeKeyDown: SyntheticEvent[js.Object, Event_] => Unit = null,
-    onExit: /* node */ HTMLElement => Unit = null,
-    onExited: /* node */ HTMLElement => Unit = null,
-    onExiting: /* node */ HTMLElement => Unit = null,
+    onExit: js.Any = null,
+    onExited: js.Any = null,
+    onExiting: js.Any = null,
     onFocus: FocusEvent[HTMLDivElement] => Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
@@ -520,7 +516,7 @@ object PartialDrawerProps {
     tabIndex: Int | Double = null,
     theme: Theme = null,
     title: String = null,
-    transitionDuration: Double | AnonAppear = null,
+    transitionDuration: js.Any = null,
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -656,14 +652,14 @@ object PartialDrawerProps {
     if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction2(onEnter))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction2(onEntered))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction2(onEntering))
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
+    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(js.Any.fromFunction1(onEscapeKeyDown))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
+    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))

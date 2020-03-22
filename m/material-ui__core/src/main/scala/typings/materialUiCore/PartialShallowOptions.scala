@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PartialShallowOptions extends js.Object {
   var dive: js.UndefOr[Boolean] = js.native
-  var shallow: js.UndefOr[FnNodeOptionsPropsShallow] = js.native
+  var shallow: js.UndefOr[Fn2] = js.native
   var untilSelector: js.UndefOr[EnzymeSelector] = js.native
 }
 
@@ -17,7 +17,7 @@ object PartialShallowOptions {
   @scala.inline
   def apply(
     dive: js.UndefOr[Boolean] = js.undefined,
-    shallow: FnNodeOptionsPropsShallow = null,
+    shallow: Fn2 = null,
     untilSelector: EnzymeSelector = null
   ): PartialShallowOptions = {
     val __obj = js.Dynamic.literal()

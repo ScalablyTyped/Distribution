@@ -146,7 +146,7 @@ trait PartialCardMediaProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCardMediaClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCardMe] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[CardMediaProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -329,7 +329,7 @@ object PartialCardMediaProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCardMediaClassKey = null,
+    classes: PartialClassNameMapCardMe = null,
     color: String = null,
     component: ReactType[CardMediaProps] = null,
     contentEditable: Booleanish | inherit = null,

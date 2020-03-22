@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 package object mod {
   type CastError = typings.mongoose.mod.Error.CastError
   type ClientSession = typings.mongodb.mod.ClientSession
+  /* Helper type to extract a definition type from a Document type */
+  type DocumentDefinition[T] = typings.mongoose.mod.Omit[
+    T, 
+    typings.std.Exclude[typings.mongoose.mongooseStrings.__v, typings.mongoose.mongooseStrings._id]
+  ]
+  type FilterQuery[T] = typings.mongoose.mod.MongooseFilterQuery[typings.mongoose.mod.DocumentDefinition[T]]
   // Because the mongoose Map type shares a name with the default global interface,
   // this type alias has to exist outside of the namespace
   type GlobalMap[K, V] = typings.std.Map[K, V]
@@ -27,6 +33,7 @@ package object mod {
     /* docs */ js.Array[js.Any], 
     js.Promise[js.Any] | scala.Unit
   ]
+  type MongooseFilterQuery[T] = typings.mongoose.mongooseStrings.MongooseFilterQuery with js.Any with typings.mongodb.mod.RootQuerySelector[T]
   /*
     * Some mongoose classes have the same name as the native JS classes
     * Keep references to native classes using a "Native" prefix
@@ -34,6 +41,8 @@ package object mod {
   type NativeBuffer = typings.node.TypeofBuffer
   type NativeDate = typings.std.DateConstructor
   type NativeError = typings.std.ErrorConstructor
+  // We can use TypeScript Omit once minimum required TypeScript Version is above 3.5
+  type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[java.lang.String, K]]
   /*
     * section query.js
     * http://mongoosejs.com/docs/api.html#query-js

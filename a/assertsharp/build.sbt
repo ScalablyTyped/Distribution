@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "assertsharp"
-version := "0.0-unknown-dt-20190322Z-9c6f99"
+version := "0.0-unknown-dt-20200226Z-9c6f99"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

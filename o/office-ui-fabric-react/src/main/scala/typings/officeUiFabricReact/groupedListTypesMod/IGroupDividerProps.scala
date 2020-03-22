@@ -33,7 +33,10 @@ trait IGroupDividerProps extends js.Object {
   var groupLevel: js.UndefOr[Double] = js.undefined
   /** Stores parent group's children. */
   var groups: js.UndefOr[js.Array[IGroup]] = js.undefined
-  /** Width corresponding to a single level. This is multiplied by the groupLevel to get the full spacer width for the group. */
+  /**
+    * Width corresponding to a single level.
+    * This is multiplied by the groupLevel to get the full spacer width for the group.
+    */
   var indentWidth: js.UndefOr[Double] = js.undefined
   /** Determines if the group selection check box is shown for collapsed groups. */
   var isCollapsedGroupSelectVisible: js.UndefOr[Boolean] = js.undefined

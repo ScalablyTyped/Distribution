@@ -1,19 +1,17 @@
 package typings.rcTable.expandedRowMod
 
 import typings.rcTable.interfaceMod.CustomizeComponent
-import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExpandedRowProps[RecordType] extends js.Object {
-  var cellComponent: CustomizeComponent[HTMLAttributes[HTMLElement]]
+  var cellComponent: CustomizeComponent
   var children: ReactNode
   var className: String
   var colSpan: Double
-  var component: CustomizeComponent[HTMLAttributes[HTMLElement]]
+  var component: CustomizeComponent
   var componentWidth: Double
   var expanded: Boolean
   var fixColumn: Boolean
@@ -24,10 +22,10 @@ trait ExpandedRowProps[RecordType] extends js.Object {
 object ExpandedRowProps {
   @scala.inline
   def apply[RecordType](
-    cellComponent: CustomizeComponent[HTMLAttributes[HTMLElement]],
+    cellComponent: CustomizeComponent,
     className: String,
     colSpan: Double,
-    component: CustomizeComponent[HTMLAttributes[HTMLElement]],
+    component: CustomizeComponent,
     componentWidth: Double,
     expanded: Boolean,
     fixColumn: Boolean,

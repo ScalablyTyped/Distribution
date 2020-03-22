@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 /* Inlined tstl.tstl/internal/container/associative/SetElementList.SetElementList.Iterator</ * import warning: RewrittenClass.unapply cls was tparam Key * / any, / * import warning: RewrittenClass.unapply cls was tparam Unique * / any, / * import warning: RewrittenClass.unapply cls was tparam Source * / any> */
 @js.native
 trait IteratoranyanyanyConstructor extends js.Object {
-  /**
-    * @internal
-    */
-  var erased_ : js.UndefOr[Boolean] = js.native
   var next_ : js.Any = js.native
   var prev_ : js.Any = js.native
   var source_ : js.Any = js.native

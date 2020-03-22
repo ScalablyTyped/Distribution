@@ -16,7 +16,6 @@ import scala.scalajs.js.annotation._
   - typings.recharts.rechartsStrings.direction
   - typings.recharts.rechartsStrings.display
   - typings.recharts.rechartsStrings.dominantBaseline
-  - typings.recharts.rechartsStrings.enableBackground
   - typings.recharts.rechartsStrings.fill
   - typings.recharts.rechartsStrings.fillRule
   - typings.recharts.rechartsStrings.filter
@@ -27,7 +26,6 @@ import scala.scalajs.js.annotation._
   - typings.recharts.rechartsStrings.fontStretch
   - typings.recharts.rechartsStrings.fontStyle
   - typings.recharts.rechartsStrings.fontVariant
-  - typings.recharts.rechartsStrings.glyphOrientationHorizontal
   - typings.recharts.rechartsStrings.glyphOrientationVertical
   - typings.recharts.rechartsStrings.letterSpacing
   - typings.recharts.rechartsStrings.lightingColor
@@ -76,8 +74,6 @@ object PickedCSSStyleDeclarationKeys {
   @scala.inline
   def dominantBaseline: typings.recharts.rechartsStrings.dominantBaseline = this.cast("dominantBaseline")
   @scala.inline
-  def enableBackground: typings.recharts.rechartsStrings.enableBackground = this.cast("enableBackground")
-  @scala.inline
   def fill: typings.recharts.rechartsStrings.fill = this.cast("fill")
   @scala.inline
   def fillRule: typings.recharts.rechartsStrings.fillRule = this.cast("fillRule")
@@ -97,8 +93,6 @@ object PickedCSSStyleDeclarationKeys {
   def fontStyle: typings.recharts.rechartsStrings.fontStyle = this.cast("fontStyle")
   @scala.inline
   def fontVariant: typings.recharts.rechartsStrings.fontVariant = this.cast("fontVariant")
-  @scala.inline
-  def glyphOrientationHorizontal: typings.recharts.rechartsStrings.glyphOrientationHorizontal = this.cast("glyphOrientationHorizontal")
   @scala.inline
   def glyphOrientationVertical: typings.recharts.rechartsStrings.glyphOrientationVertical = this.cast("glyphOrientationVertical")
   @scala.inline

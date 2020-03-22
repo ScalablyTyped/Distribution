@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lockfile"
-version := "1.0-dt-20190212Z-d5e3a4"
+version := "1.0-dt-20200227Z-d5e3a4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -37,7 +37,7 @@ trait VolumeArgs extends js.Object {
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
-    * The type of EBS volume. Can be "standard", "gp2", "io1", "sc1" or "st1" (Default: "standard").
+    * The type of EBS volume. Can be "standard", "gp2", "io1", "sc1" or "st1" (Default: "gp2").
     */
   val `type`: js.UndefOr[Input[String]] = js.native
 }

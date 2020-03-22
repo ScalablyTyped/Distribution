@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strftime"
-version := "0.9.2-dt-20190322Z-234b50"
+version := "0.9.2-dt-20200227Z-234b50"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

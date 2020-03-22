@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slick-carousel"
-version := "1.6.0-dt-20191220Z-4eb278"
+version := "1.6.0-dt-20200225Z-4eb278"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

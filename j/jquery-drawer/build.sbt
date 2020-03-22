@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jquery-drawer"
-version := "3.2-dt-20180409Z-dcfbd0"
+version := "3.2-dt-20180409Z-e087f0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "iscroll" % "5.2-dt-20191119Z-0fee5a",
+  "org.scalablytyped" %%% "iscroll" % "5.2-dt-20200225Z-0fee5a",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

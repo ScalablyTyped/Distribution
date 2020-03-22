@@ -11,7 +11,7 @@ trait RegisterThingRequest extends js.Object {
     */
   var parameters: js.UndefOr[Parameters] = js.native
   /**
-    * The provisioning template. See Programmatic Provisioning for more information.
+    * The provisioning template. See Provisioning Devices That Have Device Certificates for more information.
     */
   var templateBody: TemplateBody = js.native
 }

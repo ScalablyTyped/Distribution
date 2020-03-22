@@ -22,8 +22,8 @@ trait CheckBoxProps extends js.Object {
   var rightTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var rightTextView: js.UndefOr[ReactNode] = js.undefined
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var unCheckedImage: js.UndefOr[ReactElement] = js.undefined
   var uncheckedCheckBoxColor: js.UndefOr[String] = js.undefined
-  var uncheckedImage: js.UndefOr[ReactElement] = js.undefined
   def onClick(): Unit
 }
 
@@ -43,8 +43,8 @@ object CheckBoxProps {
     rightTextStyle: StyleProp[TextStyle] = null,
     rightTextView: ReactNode = null,
     style: StyleProp[ViewStyle] = null,
-    uncheckedCheckBoxColor: String = null,
-    uncheckedImage: ReactElement = null
+    unCheckedImage: ReactElement = null,
+    uncheckedCheckBoxColor: String = null
   ): CheckBoxProps = {
     val __obj = js.Dynamic.literal(isChecked = isChecked.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick))
     if (checkBoxColor != null) __obj.updateDynamic("checkBoxColor")(checkBoxColor.asInstanceOf[js.Any])
@@ -58,8 +58,8 @@ object CheckBoxProps {
     if (rightTextStyle != null) __obj.updateDynamic("rightTextStyle")(rightTextStyle.asInstanceOf[js.Any])
     if (rightTextView != null) __obj.updateDynamic("rightTextView")(rightTextView.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (unCheckedImage != null) __obj.updateDynamic("unCheckedImage")(unCheckedImage.asInstanceOf[js.Any])
     if (uncheckedCheckBoxColor != null) __obj.updateDynamic("uncheckedCheckBoxColor")(uncheckedCheckBoxColor.asInstanceOf[js.Any])
-    if (uncheckedImage != null) __obj.updateDynamic("uncheckedImage")(uncheckedImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckBoxProps]
   }
 }

@@ -152,7 +152,7 @@ trait PartialChipProps extends js.Object {
   var avatar: js.UndefOr[ReactElement] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapChipClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapChipCl] = js.native
   var clickable: js.UndefOr[Boolean] = js.native
   var color: js.UndefOr[Color] = js.native
   var component: js.UndefOr[ReactType[ChipProps]] = js.native
@@ -340,7 +340,7 @@ object PartialChipProps {
     avatar: ReactElement = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapChipClassKey = null,
+    classes: PartialClassNameMapChipCl = null,
     clickable: js.UndefOr[Boolean] = js.undefined,
     color: Color = null,
     component: ReactType[ChipProps] = null,

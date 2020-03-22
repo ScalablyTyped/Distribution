@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "harmony-proxy"
-version := "1.0.0-dt-20190322Z-a36033"
+version := "1.0.0-dt-20200226Z-a36033"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

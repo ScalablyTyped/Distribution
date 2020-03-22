@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 /* Inlined {  type  :string,   port  :number,   protocol  :string,   payloads ? :string} & sdp-transform.sdp-transform.MediaDescription */
 trait typestringportnumberproto extends js.Object {
   // b=AS:4000
-  var bandwidth: js.UndefOr[AnonLimit] = js.undefined
+  var bandwidth: js.UndefOr[js.Array[AnonLimit]] = js.undefined
   // a=candidate
   var candidates: js.UndefOr[js.Array[AnonFoundation]] = js.undefined
   // c=IN IP4 10.47.197.26
@@ -57,9 +57,9 @@ trait typestringportnumberproto extends js.Object {
   var rids: js.UndefOr[js.Array[AnonDirection]] = js.undefined
   var rtcp: js.UndefOr[AnonIpVer] = js.undefined
   // a=rtcp-fb:98 nack rpsi
-  var rtcpFb: js.UndefOr[AnonPayload] = js.undefined
+  var rtcpFb: js.UndefOr[js.Array[AnonPayload]] = js.undefined
   // a=rtcp-fb:98 trr-int 100
-  var rtcpFbTrrInt: js.UndefOr[AnonValue] = js.undefined
+  var rtcpFbTrrInt: js.UndefOr[js.Array[AnonValue]] = js.undefined
   // a=rtcp-mux
   var rtcpMux: js.UndefOr[String] = js.undefined
   // a=rtcp-rsize
@@ -90,7 +90,7 @@ object typestringportnumberproto {
     protocol: String,
     rtp: js.Array[AnonCodec],
     `type`: String,
-    bandwidth: AnonLimit = null,
+    bandwidth: js.Array[AnonLimit] = null,
     candidates: js.Array[AnonFoundation] = null,
     connection: AnonIp = null,
     control: String = null,
@@ -113,8 +113,8 @@ object typestringportnumberproto {
     remoteCandidates: String = null,
     rids: js.Array[AnonDirection] = null,
     rtcp: AnonIpVer = null,
-    rtcpFb: AnonPayload = null,
-    rtcpFbTrrInt: AnonValue = null,
+    rtcpFb: js.Array[AnonPayload] = null,
+    rtcpFbTrrInt: js.Array[AnonValue] = null,
     rtcpMux: String = null,
     rtcpRsize: String = null,
     sctpmap: AnonApp = null,

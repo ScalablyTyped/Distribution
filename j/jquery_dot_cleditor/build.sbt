@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_cleditor"
-version := "1.4.3-dt-20190322Z-8289fd"
+version := "1.4.3-dt-20200226Z-8289fd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

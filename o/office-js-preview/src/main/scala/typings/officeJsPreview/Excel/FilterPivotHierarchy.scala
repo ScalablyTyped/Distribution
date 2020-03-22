@@ -83,7 +83,6 @@ class FilterPivotHierarchy () extends ClientObject {
   def set(properties: FilterPivotHierarchyUpdateData): Unit = js.native
   def set(properties: FilterPivotHierarchyUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Reset the FilterPivotHierarchy back to its default values.
     *
     * [Api set: ExcelApi 1.8]

@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -75,10 +74,11 @@ trait WeakValidationMapMenuItem extends js.Object {
   var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var addon: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var addonProps: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
+  var addonBefore: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var addonProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -233,6 +233,7 @@ trait WeakValidationMapMenuItem extends js.Object {
   var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLLIElement]]]] = js.undefined
   var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLLIElement]]]] = js.undefined
   var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLLIElement]]]] = js.undefined
+  var onclick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]] = js.undefined
   var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -241,7 +242,6 @@ trait WeakValidationMapMenuItem extends js.Object {
   var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var separator: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
@@ -253,7 +253,7 @@ trait WeakValidationMapMenuItem extends js.Object {
   var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.undefined
   var url: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var urlProps: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
+  var urlProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var vocab: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
 }
 
@@ -263,10 +263,11 @@ object WeakValidationMapMenuItem {
     about: Validator[js.UndefOr[Null | String]] = null,
     accessKey: Validator[js.UndefOr[Null | String]] = null,
     addon: Validator[js.UndefOr[Null | String]] = null,
-    addonProps: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
+    addonBefore: Validator[js.UndefOr[Null | String]] = null,
+    addonProps: Validator[js.UndefOr[_ | Null]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
@@ -417,6 +418,7 @@ object WeakValidationMapMenuItem {
     onVolumeChange: Validator[js.UndefOr[Null | ReactEventHandler[HTMLLIElement]]] = null,
     onWaiting: Validator[js.UndefOr[Null | ReactEventHandler[HTMLLIElement]]] = null,
     onWheel: Validator[js.UndefOr[Null | WheelEventHandler[HTMLLIElement]]] = null,
+    onclick: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]] = null,
     placeholder: Validator[js.UndefOr[Null | String]] = null,
     prefix: Validator[js.UndefOr[Null | String]] = null,
     property: Validator[js.UndefOr[Null | String]] = null,
@@ -425,7 +427,6 @@ object WeakValidationMapMenuItem {
     results: Validator[js.UndefOr[Double | Null]] = null,
     role: Validator[js.UndefOr[Null | String]] = null,
     security: Validator[js.UndefOr[Null | String]] = null,
-    separator: Validator[js.UndefOr[Boolean | Null]] = null,
     slot: Validator[js.UndefOr[Null | String]] = null,
     spellCheck: Validator[js.UndefOr[Booleanish | Null]] = null,
     style: Validator[js.UndefOr[CSSProperties | Null]] = null,
@@ -437,13 +438,14 @@ object WeakValidationMapMenuItem {
     typeof: Validator[js.UndefOr[Null | String]] = null,
     unselectable: Validator[js.UndefOr[on | off | Null]] = null,
     url: Validator[js.UndefOr[Null | String]] = null,
-    urlProps: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
+    urlProps: Validator[js.UndefOr[_ | Null]] = null,
     vocab: Validator[js.UndefOr[Null | String]] = null
   ): WeakValidationMapMenuItem = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (addon != null) __obj.updateDynamic("addon")(addon.asInstanceOf[js.Any])
+    if (addonBefore != null) __obj.updateDynamic("addonBefore")(addonBefore.asInstanceOf[js.Any])
     if (addonProps != null) __obj.updateDynamic("addonProps")(addonProps.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (`aria-atomic` != null) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
@@ -598,6 +600,7 @@ object WeakValidationMapMenuItem {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange.asInstanceOf[js.Any])
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(onWaiting.asInstanceOf[js.Any])
     if (onWheel != null) __obj.updateDynamic("onWheel")(onWheel.asInstanceOf[js.Any])
+    if (onclick != null) __obj.updateDynamic("onclick")(onclick.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
@@ -606,7 +609,6 @@ object WeakValidationMapMenuItem {
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (spellCheck != null) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

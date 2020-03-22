@@ -18,9 +18,9 @@ trait ReCaptcha extends js.Object {
     * @param siteKey the key of your site
     * @param action the action
     *
-    * @return a promise containing the token
+    * @return a promise-like object containing the token
     */
-  def execute(siteKey: String, action: Action): js.Promise[String] = js.native
+  def execute(siteKey: String, action: Action): js.Thenable[String] = js.native
   /**
     * Gets the response for the reCAPTCHA widget.
     * @param opt_widget_id Optional widget ID, defaults to the first widget created if unspecified.

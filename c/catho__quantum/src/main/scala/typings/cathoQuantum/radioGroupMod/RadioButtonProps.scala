@@ -2,17 +2,23 @@ package typings.cathoQuantum.radioGroupMod
 
 import typings.cathoQuantum.AnonColorsComponents
 import typings.cathoQuantum.cathoQuantumStrings.error
+import typings.cathoQuantum.cathoQuantumStrings.large
+import typings.cathoQuantum.cathoQuantumStrings.medium
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
+import typings.cathoQuantum.cathoQuantumStrings.small
 import typings.cathoQuantum.cathoQuantumStrings.success
 import typings.cathoQuantum.cathoQuantumStrings.warning
+import typings.cathoQuantum.cathoQuantumStrings.xlarge
+import typings.cathoQuantum.cathoQuantumStrings.xsmall
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RadioButtonProps[T] extends js.Object {
+trait RadioButtonProps extends js.Object {
   var checked: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -21,7 +27,8 @@ trait RadioButtonProps[T] extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var label: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
   var theme: js.UndefOr[AnonColorsComponents] = js.undefined
   var value: String
@@ -29,7 +36,7 @@ trait RadioButtonProps[T] extends js.Object {
 
 object RadioButtonProps {
   @scala.inline
-  def apply[T](
+  def apply(
     value: String,
     checked: js.UndefOr[Boolean] = js.undefined,
     children: String = null,
@@ -39,10 +46,11 @@ object RadioButtonProps {
     id: String = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     label: String = null,
-    onChange: ChangeEvent[T] => Unit = null,
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
+    size: xsmall | small | medium | large | xlarge = null,
     skin: neutral | primary | success | warning | error = null,
     theme: AnonColorsComponents = null
-  ): RadioButtonProps[T] = {
+  ): RadioButtonProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -53,9 +61,10 @@ object RadioButtonProps {
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RadioButtonProps[T]]
+    __obj.asInstanceOf[RadioButtonProps]
   }
 }
 

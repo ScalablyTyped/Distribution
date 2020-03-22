@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   * See https://github.com/pinojs/pino-http#pinohttpopts-stream
   */
 trait Options extends LoggerOptions {
-  var autoLogging: js.UndefOr[Boolean] = js.undefined
+  var autoLogging: js.UndefOr[Boolean | autoLoggingOptions] = js.undefined
   var customLogLevel: js.UndefOr[js.Function2[/* res */ ServerResponse, /* error */ Error, Level]] = js.undefined
   var genReqId: js.UndefOr[GenReqId] = js.undefined
   var logger: js.UndefOr[Logger] = js.undefined
@@ -35,7 +35,7 @@ trait Options extends LoggerOptions {
 object Options {
   @scala.inline
   def apply(
-    autoLogging: js.UndefOr[Boolean] = js.undefined,
+    autoLogging: Boolean | autoLoggingOptions = null,
     base: StringDictionary[js.Any] = null,
     browser: AnonAsObject = null,
     changeLevelName: String = null,
@@ -44,6 +44,7 @@ object Options {
     enabled: js.UndefOr[Boolean] = js.undefined,
     genReqId: /* req */ IncomingMessage => ReqId = null,
     level: LevelWithSilent | String = null,
+    levelKey: String = null,
     levelVal: Int | Double = null,
     logger: Logger = null,
     messageKey: String = null,
@@ -62,7 +63,7 @@ object Options {
     useOnlyCustomLevels: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoLogging)) __obj.updateDynamic("autoLogging")(autoLogging.asInstanceOf[js.Any])
+    if (autoLogging != null) __obj.updateDynamic("autoLogging")(autoLogging.asInstanceOf[js.Any])
     if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
     if (changeLevelName != null) __obj.updateDynamic("changeLevelName")(changeLevelName.asInstanceOf[js.Any])
@@ -71,6 +72,7 @@ object Options {
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (genReqId != null) __obj.updateDynamic("genReqId")(js.Any.fromFunction1(genReqId))
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (levelKey != null) __obj.updateDynamic("levelKey")(levelKey.asInstanceOf[js.Any])
     if (levelVal != null) __obj.updateDynamic("levelVal")(levelVal.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])

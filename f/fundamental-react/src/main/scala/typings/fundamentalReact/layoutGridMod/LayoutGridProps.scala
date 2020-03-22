@@ -1,6 +1,5 @@
 package typings.fundamentalReact.layoutGridMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactNumbers.`1`
 import typings.fundamentalReact.fundamentalReactNumbers.`2`
 import typings.fundamentalReact.fundamentalReactNumbers.`3`
@@ -26,7 +25,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -93,7 +92,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  className ? :string,   cols ? :1 | 2 | 3 | 4 | 5 | 6,   customStyles ? :{[x: string] : any},   disableStyles ? :boolean,   ref ? :react.react.Ref<std.HTMLDivElement>,   nogap ? :boolean} & react.react.HTMLAttributes<std.HTMLAnchorElement> */
+/* Inlined {  className ? :string,   cols ? :1 | 2 | 3 | 4 | 5 | 6,   colSpan ? :any,   disableStyles ? :boolean,   nogap ? :boolean,   ref ? :react.react.Ref<std.HTMLDivElement>} & react.react.HTMLAttributes<std.HTMLAnchorElement> */
 trait LayoutGridProps extends js.Object {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
@@ -107,7 +106,7 @@ trait LayoutGridProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   /**
@@ -289,12 +288,11 @@ trait LayoutGridProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var colSpan: js.UndefOr[js.Any] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  /* The number of columns in the grid. */
   var cols: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
@@ -323,7 +321,6 @@ trait LayoutGridProps extends js.Object {
   var itemScope: js.UndefOr[Boolean] = js.undefined
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
-  /* Set to **true** to remove the margins between the panels. */
   var nogap: js.UndefOr[Boolean] = js.undefined
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLAnchorElement]] = js.undefined
@@ -452,7 +449,7 @@ object LayoutGridProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -503,11 +500,11 @@ object LayoutGridProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
+    colSpan: js.Any = null,
     color: String = null,
     cols: `1` | `2` | `3` | `4` | `5` | `6` = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -683,11 +680,11 @@ object LayoutGridProps {
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])

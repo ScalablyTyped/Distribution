@@ -44,7 +44,7 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object Single extends js.Object {
-    def error(error: Error): typings.rsocketFlowable.singleMod.Single[js.Object] = js.native
+    def error(error: Error): typings.rsocketFlowable.singleMod.Single[scala.Nothing] = js.native
     def of[U](value: U): typings.rsocketFlowable.singleMod.Single[U] = js.native
   }
   

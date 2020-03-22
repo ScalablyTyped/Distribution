@@ -12,7 +12,7 @@ trait UseRowSelectInstanceProps[D /* <: js.Object */] extends js.Object {
   def getToggleAllRowsSelectedProps(): TableToggleAllRowsSelectedProps = js.native
   def getToggleAllRowsSelectedProps(props: PartialTableToggleAllRows): TableToggleAllRowsSelectedProps = js.native
   def toggleAllRowsSelected(): Unit = js.native
-  def toggleAllRowsSelected(set: Boolean): Unit = js.native
+  def toggleAllRowsSelected(value: Boolean): Unit = js.native
   def toggleRowSelected(rowId: IdType[D]): Unit = js.native
   def toggleRowSelected(rowId: IdType[D], set: Boolean): Unit = js.native
 }

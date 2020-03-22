@@ -223,6 +223,14 @@ class Range () extends ClientObject {
   var numberFormat: js.Array[js.Array[_]] = js.native
   /**
     *
+    * Represents the category of number format of each cell. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val numberFormatCategories: js.Array[js.Array[NumberFormatCategory]] = js.native
+  /**
+    *
     * Represents Excel's number format code for the given range, based on the language settings of the user.​
     Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
     Any returned text uses the locally-formatted strings based on the language specified in the system settings.
@@ -320,7 +328,6 @@ class Range () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Fills range from the current range to the destination range using the specified AutoFill logic.
     The destination range can be null, or can extend the source either horizontally or vertically.
     Discontiguous ranges are not supported.
@@ -346,14 +353,12 @@ class Range () extends ClientObject {
   ): Unit = js.native
   def autoFill(destinationRange: Range, autoFillType: AutoFillType): Unit = js.native
   /**
-    *
     * Calculates a range of cells on a worksheet.
     *
     * [Api set: ExcelApi 1.6]
     */
   def calculate(): Unit = js.native
   /**
-    *
     * Clear range values, format, fill, border, etc.
     *
     * [Api set: ExcelApi 1.1]
@@ -373,14 +378,12 @@ class Range () extends ClientObject {
   @JSName("clear")
   def clear_RemoveHyperlinks(applyTo: RemoveHyperlinks): Unit = js.native
   /**
-    *
     * Converts the range cells with datatypes into text.
     *
     * [Api set: ExcelApi 1.9]
     */
   def convertDataTypeToText(): Unit = js.native
   /**
-    *
     * Converts the range cells into linked datatype in the worksheet.
     *
     * [Api set: ExcelApi 1.9]
@@ -394,7 +397,6 @@ class Range () extends ClientObject {
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   /**
-    *
     * Copies cell data or formatting from the source range or RangeAreas to the current range.
     The destination range can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
@@ -486,7 +488,6 @@ class Range () extends ClientObject {
   @JSName("copyFrom")
   def copyFrom_Values(sourceRange: Range, copyType: Values, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   /**
-    *
     * Deletes the cells associated with the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -497,7 +498,6 @@ class Range () extends ClientObject {
   @JSName("delete")
   def delete_Left(shift: Left): Unit = js.native
   /**
-    *
     * Deletes the cells associated with the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -507,7 +507,6 @@ class Range () extends ClientObject {
   @JSName("delete")
   def delete_Up(shift: Up): Unit = js.native
   /**
-    *
     * Finds the given string based on the criteria specified.
     If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
     *
@@ -519,7 +518,6 @@ class Range () extends ClientObject {
     */
   def find(text: String, criteria: SearchCriteria): Range = js.native
   /**
-    *
     * Finds the given string based on the criteria specified.
     If the current range is larger than a single cell, then the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
     If there are no matches, this function will return a null object.
@@ -532,14 +530,12 @@ class Range () extends ClientObject {
     */
   def findOrNullObject(text: String, criteria: SearchCriteria): Range = js.native
   /**
-    *
     * Does FlashFill to current range.Flash Fill will automatically fills data when it senses a pattern, so the range must be single column range and have data around in order to find pattern.
     *
     * [Api set: ExcelApi 1.9]
     */
   def flashFill(): Unit = js.native
   /**
-    *
     * Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of rows and columns.
     *
     * [Api set: ExcelApi 1.7]
@@ -550,7 +546,6 @@ class Range () extends ClientObject {
   def getAbsoluteResizedRange(numRows: Double, numColumns: Double): Range = js.native
   def getBoundingRect(anotherRange: String): Range = js.native
   /**
-    *
     * Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E15".
     *
     * [Api set: ExcelApi 1.1]
@@ -559,7 +554,6 @@ class Range () extends ClientObject {
     */
   def getBoundingRect(anotherRange: Range): Range = js.native
   /**
-    *
     * Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -569,7 +563,6 @@ class Range () extends ClientObject {
     */
   def getCell(row: Double, column: Double): Range = js.native
   /**
-    *
     * Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
     *
     * [Api set: ExcelApi 1.9]
@@ -579,7 +572,6 @@ class Range () extends ClientObject {
     */
   def getCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions): ClientResult[js.Array[js.Array[CellProperties]]] = js.native
   /**
-    *
     * Gets a column contained in the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -588,7 +580,6 @@ class Range () extends ClientObject {
     */
   def getColumn(column: Double): Range = js.native
   /**
-    *
     * Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given column, null will be returned.
     *
     * [Api set: ExcelApi 1.9]
@@ -598,7 +589,6 @@ class Range () extends ClientObject {
     */
   def getColumnProperties(columnPropertiesLoadOptions: ColumnPropertiesLoadOptions): ClientResult[js.Array[ColumnProperties]] = js.native
   /**
-    *
     * Gets a certain number of columns to the right of the current Range object.
     *
     * [Api set: ExcelApi 1.2]
@@ -608,7 +598,6 @@ class Range () extends ClientObject {
   def getColumnsAfter(): Range = js.native
   def getColumnsAfter(count: Double): Range = js.native
   /**
-    *
     * Gets a certain number of columns to the left of the current Range object.
     *
     * [Api set: ExcelApi 1.2]
@@ -618,21 +607,18 @@ class Range () extends ClientObject {
   def getColumnsBefore(): Range = js.native
   def getColumnsBefore(count: Double): Range = js.native
   /**
-    *
     * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
     *
     * [Api set: ExcelApi 1.1]
     */
   def getEntireColumn(): Range = js.native
   /**
-    *
     * Gets an object that represents the entire row of the range (for example, if the current range represents cells "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
     *
     * [Api set: ExcelApi 1.1]
     */
   def getEntireRow(): Range = js.native
   /**
-    *
     * Renders the range as a base64-encoded png image.
     * 
     * **Important**: This API is currently unsupported in Excel for Mac. Visit [OfficeDev/office-js Issue #235](https://github.com/OfficeDev/office-js/issues/235) for the current status.
@@ -642,7 +628,6 @@ class Range () extends ClientObject {
   def getImage(): ClientResult[String] = js.native
   def getIntersection(anotherRange: String): Range = js.native
   /**
-    *
     * Gets the range object that represents the rectangular intersection of the given ranges.
     *
     * [Api set: ExcelApi 1.1]
@@ -652,7 +637,6 @@ class Range () extends ClientObject {
   def getIntersection(anotherRange: Range): Range = js.native
   def getIntersectionOrNullObject(anotherRange: String): Range = js.native
   /**
-    *
     * Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, will return a null object.
     *
     * [Api set: ExcelApi 1.4]
@@ -661,28 +645,24 @@ class Range () extends ClientObject {
     */
   def getIntersectionOrNullObject(anotherRange: Range): Range = js.native
   /**
-    *
     * Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
     *
     * [Api set: ExcelApi 1.1]
     */
   def getLastCell(): Range = js.native
   /**
-    *
     * Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
     *
     * [Api set: ExcelApi 1.1]
     */
   def getLastColumn(): Range = js.native
   /**
-    *
     * Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
     *
     * [Api set: ExcelApi 1.1]
     */
   def getLastRow(): Range = js.native
   /**
-    *
     * Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
     *
     * [Api set: ExcelApi 1.1]
@@ -692,7 +672,17 @@ class Range () extends ClientObject {
     */
   def getOffsetRange(rowOffset: Double, columnOffset: Double): Range = js.native
   /**
+    * Gets a scoped collection of PivotTables that overlap with the range.
     *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param fullyContained If true, returns only PivotTables that are fully contained within the range bounds. The default value is false.
+    * @returns
+    */
+  def getPivotTables(): PivotTableScopedCollection = js.native
+  def getPivotTables(fullyContained: Boolean): PivotTableScopedCollection = js.native
+  /**
     * Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted) by some number of rows and columns.
     *
     * [Api set: ExcelApi 1.2]
@@ -702,7 +692,6 @@ class Range () extends ClientObject {
     */
   def getResizedRange(deltaRows: Double, deltaColumns: Double): Range = js.native
   /**
-    *
     * Gets a row contained in the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -711,7 +700,6 @@ class Range () extends ClientObject {
     */
   def getRow(row: Double): Range = js.native
   /**
-    *
     * Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given row, null will be returned.
     *
     * [Api set: ExcelApi 1.9]
@@ -721,7 +709,6 @@ class Range () extends ClientObject {
     */
   def getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions): ClientResult[js.Array[RowProperties]] = js.native
   /**
-    *
     * Gets a certain number of rows above the current Range object.
     *
     * [Api set: ExcelApi 1.2]
@@ -731,7 +718,6 @@ class Range () extends ClientObject {
   def getRowsAbove(): Range = js.native
   def getRowsAbove(count: Double): Range = js.native
   /**
-    *
     * Gets a certain number of rows below the current Range object.
     *
     * [Api set: ExcelApi 1.2]
@@ -741,7 +727,6 @@ class Range () extends ClientObject {
   def getRowsBelow(): Range = js.native
   def getRowsBelow(count: Double): Range = js.native
   /**
-    *
     * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, an ItemNotFound error will be thrown.
     *
@@ -785,7 +770,6 @@ class Range () extends ClientObject {
     cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
   ): RangeAreas = js.native
   /**
-    *
     * Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, a null object will be returned.
     *
@@ -831,7 +815,6 @@ class Range () extends ClientObject {
   @JSName("getSpecialCellsOrNullObject")
   def getSpecialCellsOrNullObject_Blanks(cellType: Blanks): RangeAreas = js.native
   /**
-    *
     * Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, a null object will be returned.
     *
@@ -857,7 +840,6 @@ class Range () extends ClientObject {
   @JSName("getSpecialCells")
   def getSpecialCells_Blanks(cellType: Blanks): RangeAreas = js.native
   /**
-    *
     * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.
     If no special cells are found, an ItemNotFound error will be thrown.
     *
@@ -881,7 +863,6 @@ class Range () extends ClientObject {
   @JSName("getSpecialCells")
   def getSpecialCells_Visible(cellType: Visible): RangeAreas = js.native
   /**
-    *
     * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -889,7 +870,6 @@ class Range () extends ClientObject {
     */
   def getSpillParent(): Range = js.native
   /**
-    *
     * Gets the range object containing the anchor cell for a cell getting spilled into. Read-only.
     If it is not a spill cell or more than once cells are give, a null object will be returned.
     *
@@ -898,7 +878,6 @@ class Range () extends ClientObject {
     */
   def getSpillParentOrNullObject(): Range = js.native
   /**
-    *
     * Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with more than one cell. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -906,7 +885,6 @@ class Range () extends ClientObject {
     */
   def getSpillingToRange(): Range = js.native
   /**
-    *
     * Gets the range object containing the spill range when called on an anchor cell. Read-only.
     If the range is not an anchor cell or spill range can't be found, a null object will be returned.
     *
@@ -915,14 +893,12 @@ class Range () extends ClientObject {
     */
   def getSpillingToRangeOrNullObject(): Range = js.native
   /**
-    *
     * Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding region is a range bounded by any combination of blank rows and blank columns relative to this range.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getSurroundingRegion(): Range = js.native
   /**
-    *
     * Gets a scoped collection of tables that overlap with the range.
     *
     * [Api set: ExcelApi 1.9]
@@ -932,7 +908,6 @@ class Range () extends ClientObject {
   def getTables(): TableScopedCollection = js.native
   def getTables(fullyContained: Boolean): TableScopedCollection = js.native
   /**
-    *
     * Returns the used range of the given range object. If there are no used cells within the range, this function will throw an ItemNotFound error.
     *
     * [Api set: ExcelApi 1.1]
@@ -942,7 +917,6 @@ class Range () extends ClientObject {
   def getUsedRange(): Range = js.native
   def getUsedRange(valuesOnly: Boolean): Range = js.native
   /**
-    *
     * Returns the used range of the given range object. If there are no used cells within the range, this function will return a null object.
     *
     * [Api set: ExcelApi 1.4]
@@ -952,14 +926,12 @@ class Range () extends ClientObject {
   def getUsedRangeOrNullObject(): Range = js.native
   def getUsedRangeOrNullObject(valuesOnly: Boolean): Range = js.native
   /**
-    *
     * Represents the visible rows of the current range.
     *
     * [Api set: ExcelApi 1.3]
     */
   def getVisibleView(): RangeView = js.native
   /**
-    *
     * Groups columns and rows for an outline.
     *
     * [Api set: ExcelApi 1.10]
@@ -973,7 +945,6 @@ class Range () extends ClientObject {
   @JSName("group")
   def group_ByColumns(groupOption: ByColumns): Unit = js.native
   /**
-    *
     * Groups columns and rows for an outline.
     *
     * [Api set: ExcelApi 1.10]
@@ -986,7 +957,6 @@ class Range () extends ClientObject {
   @JSName("group")
   def group_ByRows(groupOption: ByRows): Unit = js.native
   /**
-    *
     * Hide details of the row or column group.
     *
     * [Api set: ExcelApi 1.10]
@@ -997,7 +967,6 @@ class Range () extends ClientObject {
   @JSName("hideGroupDetails")
   def hideGroupDetails_ByColumns(groupOption: ByColumns): Unit = js.native
   /**
-    *
     * Hide details of the row or column group.
     *
     * [Api set: ExcelApi 1.10]
@@ -1007,7 +976,6 @@ class Range () extends ClientObject {
   @JSName("hideGroupDetails")
   def hideGroupDetails_ByRows(groupOption: ByRows): Unit = js.native
   /**
-    *
     * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
     *
     * [Api set: ExcelApi 1.1]
@@ -1016,7 +984,6 @@ class Range () extends ClientObject {
     */
   def insert(shift: InsertShiftDirection): Range = js.native
   /**
-    *
     * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
     *
     * [Api set: ExcelApi 1.1]
@@ -1038,7 +1005,6 @@ class Range () extends ClientObject {
   def load(propertyNames: String): Range = js.native
   def load(propertyNames: js.Array[String]): Range = js.native
   /**
-    *
     * Merge the range cells into one region in the worksheet.
     *
     * [Api set: ExcelApi 1.2]
@@ -1049,7 +1015,6 @@ class Range () extends ClientObject {
   def merge(across: Boolean): Unit = js.native
   def moveTo(destinationRange: String): Unit = js.native
   /**
-    *
     * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
     The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
     *
@@ -1059,7 +1024,6 @@ class Range () extends ClientObject {
     */
   def moveTo(destinationRange: Range): Unit = js.native
   /**
-    *
     * Removes duplicate values from the range specified by the columns.
     *
     * [Api set: ExcelApi 1.9]
@@ -1070,7 +1034,6 @@ class Range () extends ClientObject {
     */
   def removeDuplicates(columns: js.Array[Double], includesHeader: Boolean): RemoveDuplicatesResult = js.native
   /**
-    *
     * Finds and replaces the given string based on the criteria specified within the current range.
     *
     * [Api set: ExcelApi 1.9]
@@ -1082,7 +1045,6 @@ class Range () extends ClientObject {
     */
   def replaceAll(text: String, replacement: String, criteria: ReplaceCriteria): ClientResult[Double] = js.native
   /**
-    *
     * Selects the specified range in the Excel UI.
     *
     * [Api set: ExcelApi 1.1]
@@ -1104,7 +1066,6 @@ class Range () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Range): Unit = js.native
   /**
-    *
     * Updates the range based on a 2D array of cell properties , encapsulating things like font, fill, borders, alignment, and so forth.
     *
     * [Api set: ExcelApi 1.9]
@@ -1113,7 +1074,6 @@ class Range () extends ClientObject {
     */
   def setCellProperties(cellPropertiesData: js.Array[js.Array[SettableCellProperties]]): Unit = js.native
   /**
-    *
     * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth.
     *
     * [Api set: ExcelApi 1.9]
@@ -1122,14 +1082,12 @@ class Range () extends ClientObject {
     */
   def setColumnProperties(columnPropertiesData: js.Array[SettableColumnProperties]): Unit = js.native
   /**
-    *
     * Set a range to be recalculated when the next recalculation occurs.
     *
     * [Api set: ExcelApi 1.9]
     */
   def setDirty(): Unit = js.native
   /**
-    *
     * Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill, borders, alignment, and so forth.
     *
     * [Api set: ExcelApi 1.9]
@@ -1138,14 +1096,12 @@ class Range () extends ClientObject {
     */
   def setRowProperties(rowPropertiesData: js.Array[SettableRowProperties]): Unit = js.native
   /**
-    *
     * Displays the card for an active cell if it has rich value content.
     *
     * [Api set: ExcelApi 1.7]
     */
   def showCard(): Unit = js.native
   /**
-    *
     * Show details of the row or column group.
     *
     * [Api set: ExcelApi 1.10]
@@ -1156,7 +1112,6 @@ class Range () extends ClientObject {
   @JSName("showGroupDetails")
   def showGroupDetails_ByColumns(groupOption: ByColumns): Unit = js.native
   /**
-    *
     * Show details of the row or column group.
     *
     * [Api set: ExcelApi 1.10]
@@ -1175,7 +1130,6 @@ class Range () extends ClientObject {
     */
   def track(): Range = js.native
   /**
-    *
     * Ungroups columns and rows for an outline.
     *
     * [Api set: ExcelApi 1.10]
@@ -1186,7 +1140,6 @@ class Range () extends ClientObject {
   @JSName("ungroup")
   def ungroup_ByColumns(groupOption: ByColumns): Unit = js.native
   /**
-    *
     * Ungroups columns and rows for an outline.
     *
     * [Api set: ExcelApi 1.10]
@@ -1196,7 +1149,6 @@ class Range () extends ClientObject {
   @JSName("ungroup")
   def ungroup_ByRows(groupOption: ByRows): Unit = js.native
   /**
-    *
     * Unmerge the range cells into separate cells.
     *
     * [Api set: ExcelApi 1.2]

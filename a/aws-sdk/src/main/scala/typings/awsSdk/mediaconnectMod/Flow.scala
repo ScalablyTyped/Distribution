@@ -35,6 +35,8 @@ trait Flow extends js.Object {
     */
   var Outputs: listOfOutput = js.native
   var Source: typings.awsSdk.mediaconnectMod.Source = js.native
+  var SourceFailoverConfig: js.UndefOr[FailoverConfig] = js.native
+  var Sources: js.UndefOr[listOfSource] = js.native
   /**
     * The current status of the flow.
     */
@@ -52,11 +54,15 @@ object Flow {
     Source: Source,
     Status: Status,
     Description: string = null,
-    EgressIp: string = null
+    EgressIp: string = null,
+    SourceFailoverConfig: FailoverConfig = null,
+    Sources: listOfSource = null
   ): Flow = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], Entitlements = Entitlements.asInstanceOf[js.Any], FlowArn = FlowArn.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (EgressIp != null) __obj.updateDynamic("EgressIp")(EgressIp.asInstanceOf[js.Any])
+    if (SourceFailoverConfig != null) __obj.updateDynamic("SourceFailoverConfig")(SourceFailoverConfig.asInstanceOf[js.Any])
+    if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flow]
   }
 }

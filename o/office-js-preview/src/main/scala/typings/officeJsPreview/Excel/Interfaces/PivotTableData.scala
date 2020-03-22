@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 trait PivotTableData extends js.Object {
   /**
     *
+    * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
+  /**
+    *
     * The Column Pivot Hierarchies of the PivotTable.
     *
     * [Api set: ExcelApi 1.8]
@@ -74,6 +82,7 @@ trait PivotTableData extends js.Object {
 object PivotTableData {
   @scala.inline
   def apply(
+    allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined,
     columnHierarchies: js.Array[RowColumnPivotHierarchyData] = null,
     dataHierarchies: js.Array[DataPivotHierarchyData] = null,
     enableDataValueEditing: js.UndefOr[Boolean] = js.undefined,
@@ -85,6 +94,7 @@ object PivotTableData {
     useCustomSortLists: js.UndefOr[Boolean] = js.undefined
   ): PivotTableData = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMultipleFiltersPerField)) __obj.updateDynamic("allowMultipleFiltersPerField")(allowMultipleFiltersPerField.asInstanceOf[js.Any])
     if (columnHierarchies != null) __obj.updateDynamic("columnHierarchies")(columnHierarchies.asInstanceOf[js.Any])
     if (dataHierarchies != null) __obj.updateDynamic("dataHierarchies")(dataHierarchies.asInstanceOf[js.Any])
     if (!js.isUndefined(enableDataValueEditing)) __obj.updateDynamic("enableDataValueEditing")(enableDataValueEditing.asInstanceOf[js.Any])

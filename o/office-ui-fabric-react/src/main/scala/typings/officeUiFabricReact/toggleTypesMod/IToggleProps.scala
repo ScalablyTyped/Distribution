@@ -90,7 +90,8 @@ trait IToggleProps extends HTMLAttributes[HTMLElement] {
     */
   var as: js.UndefOr[IComponentAs[HTMLAttributes[HTMLElement]]] = js.undefined
   /**
-    * Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise refer to `defaultChecked`.
+    * Checked state of the toggle. If you are maintaining state yourself, use this property.
+    * Otherwise use `defaultChecked`.
     */
   var checked: js.UndefOr[Boolean] = js.undefined
   /**

@@ -1,24 +1,31 @@
 package typings.updateNotifier.mod
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Settings extends js.Object {
-  var callback: js.UndefOr[js.Function2[/* error */ Error | Null, /* update */ js.UndefOr[UpdateInfo], _]] = js.undefined
+  /** Which dist-tag to use to find the latest version */
+  var distTag: js.UndefOr[String] = js.undefined
+  /**
+    * @deprecated use `pkg.name`
+    */
   var packageName: js.UndefOr[String] = js.undefined
+  /**
+    * @deprecated use `pkg.version`
+    */
   var packageVersion: js.UndefOr[String] = js.undefined
   var pkg: js.UndefOr[Package] = js.undefined
-   // in milliseconds, default 1000 * 60 * 60 * 24 (1 day)
+  /** Allows notification to be shown when running as an npm script */
   var shouldNotifyInNpmScript: js.UndefOr[Boolean] = js.undefined
+  /** How often to check for updates */
   var updateCheckInterval: js.UndefOr[Double] = js.undefined
 }
 
 object Settings {
   @scala.inline
   def apply(
-    callback: (/* error */ Error | Null, /* update */ js.UndefOr[UpdateInfo]) => _ = null,
+    distTag: String = null,
     packageName: String = null,
     packageVersion: String = null,
     pkg: Package = null,
@@ -26,7 +33,7 @@ object Settings {
     updateCheckInterval: Int | Double = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
+    if (distTag != null) __obj.updateDynamic("distTag")(distTag.asInstanceOf[js.Any])
     if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion.asInstanceOf[js.Any])
     if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])

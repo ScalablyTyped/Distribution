@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.std.Date
-import typings.tstl.ilockableMod.ILockable
 import typings.tstl.sharedLockMod.Closure
 import typings.tstl.sharedLockMod.IMutex
 import scala.scalajs.js
@@ -84,12 +83,7 @@ object threadMod extends js.Object {
     * Default Constructor.
     */
   class SharedTimedMutex ()
-    extends typings.tstl.sharedTimedMutexMod.SharedTimedMutex {
-    /**
-      * @internal
-      */
-    def this(source: ILockable) = this()
-  }
+    extends typings.tstl.sharedTimedMutexMod.SharedTimedMutex
   
   @js.native
   /**
@@ -111,19 +105,6 @@ object threadMod extends js.Object {
   def sleepUntil(at: Date): js.Promise[Unit] = js.native
   @JSName("try_lock")
   def tryLock(items: PickILockabletrylock*): js.Promise[Double] = js.native
-  @js.native
-  object Semaphore extends js.Object {
-    /**
-      * @internal
-      */
-    @js.native
-    class Lockable protected ()
-      extends typings.tstl.semaphoreMod.Semaphore.Lockable {
-      def this(semaphore: typings.tstl.semaphoreMod.Semaphore[Double]) = this()
-    }
-    
-  }
-  
   @js.native
   object SharedLock extends js.Object {
     def lock[Mutex /* <: PickISharedLockablelocksh */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native

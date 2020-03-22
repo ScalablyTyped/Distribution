@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.wrappersMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.BidirectionalMergeMode
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.recurrentMod.RNN_
@@ -38,7 +38,7 @@ object BidirectionalLayerArgs {
     mergeMode: BidirectionalMergeMode = null,
     name: String = null,
     trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor_[Rank]] = null
+    weights: js.Array[Tensor[Rank]] = null
   ): BidirectionalLayerArgs = {
     val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any])
     if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])

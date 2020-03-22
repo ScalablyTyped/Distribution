@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webvr-api"
-version := "0.0-unknown-dt-20190322Z-4045b2"
+version := "0.0-unknown-dt-20200225Z-4045b2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

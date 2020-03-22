@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LinkingStatic extends EventEmitter {
+trait LinkingStatic extends NativeEventEmitter {
   /**
     * Add a handler to Linking changes by listening to the `url` event type
     * and providing the handler

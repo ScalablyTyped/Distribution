@@ -35,6 +35,10 @@ trait CreateClientVpnEndpointRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
+    * The IDs of one or more security groups to apply to the target network. You must also specify the ID of the VPC that contains the security groups.
+    */
+  var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.native
+  /**
     * The ARN of the server certificate. For more information, see the AWS Certificate Manager User Guide.
     */
   var ServerCertificateArn: String = js.native
@@ -50,6 +54,10 @@ trait CreateClientVpnEndpointRequest extends js.Object {
     * The transport protocol to be used by the VPN session. Default value: udp 
     */
   var TransportProtocol: js.UndefOr[typings.awsSdk.ec2Mod.TransportProtocol] = js.native
+  /**
+    * The ID of the VPC to associate with the Client VPN endpoint. If no security group IDs are specified in the request, the default security group for the VPC is applied.
+    */
+  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
   /**
     * The port number to assign to the Client VPN endpoint for TCP and UDP traffic. Valid Values: 443 | 1194  Default Value: 443 
     */
@@ -67,9 +75,11 @@ object CreateClientVpnEndpointRequest {
     Description: String = null,
     DnsServers: ValueStringList = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    SecurityGroupIds: ClientVpnSecurityGroupIdSet = null,
     SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null,
     TransportProtocol: TransportProtocol = null,
+    VpcId: VpcId = null,
     VpnPort: Int | scala.Double = null
   ): CreateClientVpnEndpointRequest = {
     val __obj = js.Dynamic.literal(AuthenticationOptions = AuthenticationOptions.asInstanceOf[js.Any], ClientCidrBlock = ClientCidrBlock.asInstanceOf[js.Any], ConnectionLogOptions = ConnectionLogOptions.asInstanceOf[js.Any], ServerCertificateArn = ServerCertificateArn.asInstanceOf[js.Any])
@@ -77,9 +87,11 @@ object CreateClientVpnEndpointRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.asInstanceOf[js.Any])
     if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     if (TransportProtocol != null) __obj.updateDynamic("TransportProtocol")(TransportProtocol.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     if (VpnPort != null) __obj.updateDynamic("VpnPort")(VpnPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientVpnEndpointRequest]
   }

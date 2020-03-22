@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.stickyStickyMod
 
 import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneContext
 import typings.officeUiFabricReact.stickyTypesMod.IStickyProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod.Context
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/Sticky/Sticky", "Sticky")
 @js.native
-class Sticky protected () extends BaseComponent[IStickyProps, IStickyState] {
+class Sticky protected ()
+  extends Component[IStickyProps, IStickyState, js.Any] {
   def this(props: IStickyProps) = this()
   var _activeElement: js.Any = js.native
   var _getBackground: js.Any = js.native

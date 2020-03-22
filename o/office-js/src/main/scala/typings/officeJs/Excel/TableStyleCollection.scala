@@ -25,7 +25,6 @@ class TableStyleCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[TableStyle] = js.native
   /**
-    *
     * Creates a blank TableStyle with the specified name.
     *
     * [Api set: ExcelApi 1.10]
@@ -37,14 +36,12 @@ class TableStyleCollection () extends ClientObject {
   def add(name: String): TableStyle = js.native
   def add(name: String, makeUniqueName: Boolean): TableStyle = js.native
   /**
-    *
     * Gets the number of table styles in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets the default TableStyle for the parent object's scope.
     *
     * [Api set: ExcelApi 1.10]
@@ -52,7 +49,6 @@ class TableStyleCollection () extends ClientObject {
     */
   def getDefault(): TableStyle = js.native
   /**
-    *
     * Gets a TableStyle by name.
     *
     * [Api set: ExcelApi 1.10]
@@ -62,7 +58,6 @@ class TableStyleCollection () extends ClientObject {
     */
   def getItem(name: String): TableStyle = js.native
   /**
-    *
     * Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.10]
@@ -83,7 +78,6 @@ class TableStyleCollection () extends ClientObject {
   def load(propertyNames: js.Array[String]): TableStyleCollection = js.native
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
-    *
     * Sets the default TableStyle for use in the parent object's scope.
     *
     * [Api set: ExcelApi 1.10]

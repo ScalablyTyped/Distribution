@@ -1,6 +1,6 @@
 package typings.materialUiCore.tableHeadTableHeadMod
 
-import typings.materialUiCore.PartialClassNameMapTableHeadClassKey
+import typings.materialUiCore.PartialClassNameMapTableH
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -146,7 +146,7 @@ trait TableHeadProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTableHeadClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTableH] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[TableHeadBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -327,7 +327,7 @@ object TableHeadProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTableHeadClassKey = null,
+    classes: PartialClassNameMapTableH = null,
     color: String = null,
     component: ReactType[TableHeadBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

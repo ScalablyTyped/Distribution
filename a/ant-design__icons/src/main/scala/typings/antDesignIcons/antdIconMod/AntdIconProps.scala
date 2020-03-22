@@ -6,6 +6,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -18,6 +19,7 @@ trait AntdIconProps extends IconBaseProps {
 object AntdIconProps {
   @scala.inline
   def apply(
+    children: ReactNode = null,
     className: String = null,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLElement] => Unit = null,
@@ -30,6 +32,7 @@ object AntdIconProps {
     twoToneColor: TwoToneColor = null
   ): AntdIconProps = {
     val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))

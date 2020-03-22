@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object mod {
   type BlobPart = typings.std.ArrayBuffer | typings.std.ArrayBufferView | typings.nodeFetch.mod.Blob | java.lang.String
-  type BodyInit = typings.std.ArrayBuffer | typings.std.ArrayBufferView | typings.node.NodeJS.ReadableStream | java.lang.String | typings.node.urlMod.URLSearchParams
+  type BodyInit = typings.std.ArrayBuffer | typings.std.ArrayBufferView | typings.node.NodeJS.ReadableStream | java.lang.String | typings.node.urlMod.URLSearchParams | typings.formData.mod.^ 
   type HeaderInit = typings.nodeFetch.mod.HeadersInit
   type HeadersInit = typings.nodeFetch.mod.Headers | js.Array[js.Array[java.lang.String]] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /* Rewritten from type alias, can be one of: 

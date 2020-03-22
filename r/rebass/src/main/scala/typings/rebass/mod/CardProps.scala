@@ -9,7 +9,6 @@ import typings.csstype.mod.MaxHeightProperty
 import typings.csstype.mod.MaxWidthProperty
 import typings.csstype.mod.MinHeightProperty
 import typings.csstype.mod.MinWidthProperty
-import typings.csstype.mod.OpacityProperty
 import typings.csstype.mod.OverflowProperty
 import typings.csstype.mod.OverflowXProperty
 import typings.csstype.mod.OverflowYProperty
@@ -461,7 +460,7 @@ trait CardProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
     */
-  var opacity: js.UndefOr[ResponsiveValue[OpacityProperty, RequiredTheme]] = js.undefined
+  var opacity: js.UndefOr[ResponsiveValue[GlobalsNumber, RequiredTheme]] = js.undefined
   var open: js.UndefOr[Boolean] = js.undefined
   var optimum: js.UndefOr[Double] = js.undefined
   /**
@@ -848,7 +847,7 @@ object CardProps {
     onVolumeChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onWaiting: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     open: js.UndefOr[Boolean] = js.undefined,
     optimum: Int | Double = null,
     order: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,

@@ -9,6 +9,9 @@ object yupStrings {
   sealed trait Id extends js.Object
   
   @js.native
+  sealed trait ObjectSchema extends js.Object
+  
+  @js.native
   sealed trait ObjectSchemaDefinition extends js.Object
   
   @js.native
@@ -31,6 +34,8 @@ object yupStrings {
   
   @scala.inline
   def Id: Id = "Id".asInstanceOf[Id]
+  @scala.inline
+  def ObjectSchema: ObjectSchema = "ObjectSchema".asInstanceOf[ObjectSchema]
   @scala.inline
   def ObjectSchemaDefinition: ObjectSchemaDefinition = "ObjectSchemaDefinition".asInstanceOf[ObjectSchemaDefinition]
   @scala.inline

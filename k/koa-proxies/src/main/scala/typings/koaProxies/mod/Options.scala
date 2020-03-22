@@ -33,7 +33,7 @@ object Options {
     headers: StringDictionary[String] = null,
     hostRewrite: String = null,
     ignorePath: js.UndefOr[Boolean] = js.undefined,
-    localAddress: js.UndefOr[Boolean] = js.undefined,
+    localAddress: String = null,
     logs: js.UndefOr[Boolean] = js.undefined,
     prependPath: js.UndefOr[Boolean] = js.undefined,
     preserveHeaderKeyCase: js.UndefOr[Boolean] = js.undefined,
@@ -63,7 +63,7 @@ object Options {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hostRewrite != null) __obj.updateDynamic("hostRewrite")(hostRewrite.asInstanceOf[js.Any])
     if (!js.isUndefined(ignorePath)) __obj.updateDynamic("ignorePath")(ignorePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(localAddress)) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (!js.isUndefined(logs)) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
     if (!js.isUndefined(prependPath)) __obj.updateDynamic("prependPath")(prependPath.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveHeaderKeyCase)) __obj.updateDynamic("preserveHeaderKeyCase")(preserveHeaderKeyCase.asInstanceOf[js.Any])

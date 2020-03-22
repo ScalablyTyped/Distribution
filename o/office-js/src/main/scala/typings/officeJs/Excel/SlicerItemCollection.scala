@@ -25,14 +25,12 @@ class SlicerItemCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[SlicerItem] = js.native
   /**
-    *
     * Returns the number of slicer items in the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a slicer item object using its key or name.
     *
     * [Api set: ExcelApi 1.10]
@@ -41,7 +39,6 @@ class SlicerItemCollection () extends ClientObject {
     */
   def getItem(key: String): SlicerItem = js.native
   /**
-    *
     * Gets a slicer item based on its position in the collection.
     *
     * [Api set: ExcelApi 1.10]
@@ -50,7 +47,6 @@ class SlicerItemCollection () extends ClientObject {
     */
   def getItemAt(index: Double): SlicerItem = js.native
   /**
-    *
     * Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.10]

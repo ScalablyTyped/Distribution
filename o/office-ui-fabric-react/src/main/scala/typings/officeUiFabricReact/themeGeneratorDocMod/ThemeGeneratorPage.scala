@@ -1,6 +1,6 @@
 package typings.officeUiFabricReact.themeGeneratorDocMod
 
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/ThemeGenerator/ThemeGenerator.doc", "ThemeGeneratorPage")
 @js.native
 class ThemeGeneratorPage protected ()
-  extends BaseComponent[js.Object, IThemeGeneratorPageState] {
+  extends Component[js.Object, IThemeGeneratorPageState, js.Any] {
   def this(props: js.Object) = this()
   var _accessibilityRow: js.Any = js.native
   var _accessibilityTableBody: js.Any = js.native
+  var _async: js.Any = js.native
   var _baseColorSlotPicker: js.Any = js.native
   var _colorPickerOnDismiss: js.Any = js.native
   var _colorSquareSwatchWidget: js.Any = js.native

@@ -30,6 +30,7 @@ trait TDocumentDefinitions extends js.Object {
   var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
   var pageSize: js.UndefOr[PageSize_ | AnonHeight] = js.undefined
   var styles: js.UndefOr[Style] = js.undefined
+  var watermark: js.UndefOr[Watermark] = js.undefined
 }
 
 object TDocumentDefinitions {
@@ -47,7 +48,8 @@ object TDocumentDefinitions {
     pageMargins: Margins = null,
     pageOrientation: PageOrientation = null,
     pageSize: PageSize_ | AnonHeight = null,
-    styles: Style = null
+    styles: Style = null,
+    watermark: Watermark = null
   ): TDocumentDefinitions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
@@ -62,6 +64,7 @@ object TDocumentDefinitions {
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
     if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    if (watermark != null) __obj.updateDynamic("watermark")(watermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[TDocumentDefinitions]
   }
 }

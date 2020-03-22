@@ -3,9 +3,6 @@ package typings.workboxWebpackPlugin.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import typings.workboxWebpackPlugin.AnonManifest
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.cdn
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.disabled
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.local
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,7 +33,6 @@ object InjectManifestOptions {
     globIgnores: js.Array[String] = null,
     globPatterns: js.Array[String] = null,
     globStrict: js.UndefOr[Boolean] = js.undefined,
-    importWorkboxFrom: cdn | local | disabled = null,
     importsDirectory: String = null,
     include: js.Array[String | RegExp] = null,
     manifestTransforms: js.Array[js.Function1[/* originalManifest */ js.Array[ManifestEntry], AnonManifest]] = null,
@@ -57,7 +53,6 @@ object InjectManifestOptions {
     if (globIgnores != null) __obj.updateDynamic("globIgnores")(globIgnores.asInstanceOf[js.Any])
     if (globPatterns != null) __obj.updateDynamic("globPatterns")(globPatterns.asInstanceOf[js.Any])
     if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.asInstanceOf[js.Any])
-    if (importWorkboxFrom != null) __obj.updateDynamic("importWorkboxFrom")(importWorkboxFrom.asInstanceOf[js.Any])
     if (importsDirectory != null) __obj.updateDynamic("importsDirectory")(importsDirectory.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms.asInstanceOf[js.Any])

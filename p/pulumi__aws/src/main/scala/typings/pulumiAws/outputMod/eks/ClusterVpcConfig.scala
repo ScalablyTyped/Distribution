@@ -18,9 +18,6 @@ trait ClusterVpcConfig extends js.Object {
     * Indicates whether or not the Amazon EKS public API server endpoint is enabled. Default is `true`.
     */
   var endpointPublicAccess: js.UndefOr[Boolean] = js.native
-  /**
-    * <elided>
-    */
   var publicAccessCidrs: js.Array[String] = js.native
   /**
     * List of security group IDs for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.

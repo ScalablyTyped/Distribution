@@ -27,6 +27,10 @@ trait EmailTemplateResponse extends js.Object {
     */
   var LastModifiedDate: string = js.native
   /**
+    * The unique identifier for the recommender model that's used by the message template.
+    */
+  var RecommenderId: js.UndefOr[string] = js.native
+  /**
     * The subject line, or title, that's used in email messages that are based on the message template.
     */
   var Subject: js.UndefOr[string] = js.native
@@ -66,6 +70,7 @@ object EmailTemplateResponse {
     Arn: string = null,
     DefaultSubstitutions: string = null,
     HtmlPart: string = null,
+    RecommenderId: string = null,
     Subject: string = null,
     TemplateDescription: string = null,
     TextPart: string = null,
@@ -76,6 +81,7 @@ object EmailTemplateResponse {
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (DefaultSubstitutions != null) __obj.updateDynamic("DefaultSubstitutions")(DefaultSubstitutions.asInstanceOf[js.Any])
     if (HtmlPart != null) __obj.updateDynamic("HtmlPart")(HtmlPart.asInstanceOf[js.Any])
+    if (RecommenderId != null) __obj.updateDynamic("RecommenderId")(RecommenderId.asInstanceOf[js.Any])
     if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
     if (TemplateDescription != null) __obj.updateDynamic("TemplateDescription")(TemplateDescription.asInstanceOf[js.Any])
     if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart.asInstanceOf[js.Any])

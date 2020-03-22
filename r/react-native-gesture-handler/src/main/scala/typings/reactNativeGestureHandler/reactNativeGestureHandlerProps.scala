@@ -1,5 +1,6 @@
 package typings.reactNativeGestureHandler
 
+import typings.reactNative.mod.ViewProps
 import typings.reactNativeGestureHandler.drawerLayoutMod.DrawerLayoutProperties
 import typings.reactNativeGestureHandler.mod.BaseButtonProperties
 import typings.reactNativeGestureHandler.mod.BorderlessButtonProperties
@@ -34,6 +35,7 @@ trait reactNativeGestureHandlerProps {
   @scala.inline
   def ForceTouchGestureHandlerProps: ForceTouchGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.ForceTouchGestureHandlerProperties
   type ForceTouchGestureHandlerProps = ForceTouchGestureHandlerProperties
+  type GestureHandlerRootViewProps = ViewProps
   @scala.inline
   def LongPressGestureHandlerProps: LongPressGestureHandlerProperties.type = typings.reactNativeGestureHandler.mod.LongPressGestureHandlerProperties
   type LongPressGestureHandlerProps = LongPressGestureHandlerProperties

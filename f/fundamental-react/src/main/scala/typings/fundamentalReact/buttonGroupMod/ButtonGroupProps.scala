@@ -1,6 +1,5 @@
 package typings.fundamentalReact.buttonGroupMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -85,7 +84,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  customStyles ? :{[x: string] : any},   disabled ? :boolean,   disableStyles ? :boolean} & react.react.HTMLAttributes<std.HTMLDivElement> */
+/* Inlined {  disabled ? :boolean,   disableStyles ? :boolean} & react.react.HTMLAttributes<std.HTMLDivElement> */
 trait ButtonGroupProps extends js.Object {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
@@ -99,7 +98,7 @@ trait ButtonGroupProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   /**
@@ -284,7 +283,6 @@ trait ButtonGroupProps extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
@@ -440,7 +438,7 @@ object ButtonGroupProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -494,7 +492,6 @@ object ButtonGroupProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -672,7 +669,6 @@ object ButtonGroupProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])

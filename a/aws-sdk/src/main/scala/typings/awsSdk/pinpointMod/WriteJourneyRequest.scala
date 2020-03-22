@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WriteJourneyRequest extends js.Object {
   /**
-    * A map that contains a set of Activity objects, one object for each activity in the journey. For each Activity object, the key is the unique identifier (string) for an activity and the value is the settings for the activity. An activity identifier can contain a maximum of 128 characters. The characters must be alphanumeric characters.
+    * A map that contains a set of Activity objects, one object for each activity in the journey. For each Activity object, the key is the unique identifier (string) for an activity and the value is the settings for the activity. An activity identifier can contain a maximum of 100 characters. The characters must be alphanumeric characters.
     */
   var Activities: js.UndefOr[MapOfActivity] = js.native
   /**
@@ -43,7 +43,7 @@ trait WriteJourneyRequest extends js.Object {
     */
   var Schedule: js.UndefOr[JourneySchedule] = js.native
   /**
-    * The unique identifier for the first activity in the journey. An activity identifier can contain a maximum of 128 characters. The characters must be alphanumeric characters.
+    * The unique identifier for the first activity in the journey. The identifier for this activity can contain a maximum of 128 characters. The characters must be alphanumeric characters.
     */
   var StartActivity: js.UndefOr[string] = js.native
   /**

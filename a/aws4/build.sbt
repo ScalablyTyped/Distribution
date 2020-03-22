@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws4"
-version := "1.5.0-dt-20190322Z-cd5133"
+version := "1.5.0-dt-20200225Z-cd5133"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

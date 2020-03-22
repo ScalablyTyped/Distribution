@@ -156,7 +156,6 @@ class RangeFormat () extends ClientObject {
     */
   var wrapText: Boolean = js.native
   /**
-    *
     * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
     *
     * [Api set: ExcelApiOnline 1.1]
@@ -167,14 +166,12 @@ class RangeFormat () extends ClientObject {
     */
   def adjustIndent(amount: Double): Unit = js.native
   /**
-    *
     * Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
     *
     * [Api set: ExcelApi 1.2]
     */
   def autofitColumns(): Unit = js.native
   /**
-    *
     * Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
     *
     * [Api set: ExcelApi 1.2]

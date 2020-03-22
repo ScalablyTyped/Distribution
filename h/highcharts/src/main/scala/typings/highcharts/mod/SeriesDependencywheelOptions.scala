@@ -12,14 +12,6 @@ import scala.scalajs.js.annotation._
   extends PlotDependencywheelOptions
      with SeriesOptionsType {
   /**
-    * Not available
-    */
-  var borderRadius: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var crisp: js.UndefOr[scala.Nothing] = js.undefined
-  /**
     * (Highcharts) An array of data points for the series. For the
     * `dependencywheel` series type, points can be given in the following way:
     *
@@ -29,30 +21,6 @@ import scala.scalajs.js.annotation._
     * available. (see online documentation for example)
     */
   var data: js.UndefOr[js.Array[SeriesSankeyPointOptionsObject]] = js.undefined
-  /**
-    * Not available
-    */
-  var depth: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var edgeColor: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var edgeWidth: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var groupPadding: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var groupZPadding: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var grouping: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -77,14 +45,6 @@ import scala.scalajs.js.annotation._
     */
   var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   /**
-    * Not available
-    */
-  var maxPointWidth: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var minPointLength: js.UndefOr[scala.Nothing] = js.undefined
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
@@ -96,14 +56,6 @@ import scala.scalajs.js.annotation._
     * `id`.
     */
   var nodes: js.UndefOr[js.Array[SeriesSankeyNodesOptionsObject]] = js.undefined
-  /**
-    * Not available
-    */
-  var pointPadding: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var pointWidth: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
     * chart. The stack option can be a string or anything else, as long as the
@@ -143,7 +95,6 @@ object SeriesDependencywheelOptions {
     animation: Boolean | AnimationOptionsObject = null,
     boostBlending: OptionsBoostBlendingValue = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderRadius: js.UndefOr[scala.Nothing] = js.undefined,
     borderWidth: Int | Double = null,
     center: js.Array[Double | String | Null] = null,
     className: String = null,
@@ -156,23 +107,17 @@ object SeriesDependencywheelOptions {
     compareBase: `0` | `100` = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: SeriesConnectorsOptionsObject = null,
-    crisp: js.UndefOr[scala.Nothing] = js.undefined,
     cursor: String | CursorValue = null,
     curveFactor: Int | Double = null,
+    custom: Dictionary[_] = null,
+    dashStyle: DashStyleValue = null,
     data: js.Array[SeriesSankeyPointOptionsObject] = null,
     dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject] = null,
-    dataSorting: DataSortingOptionsObject | PlotDependencywheelDataSortingOptions = null,
-    depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    edgeColor: js.UndefOr[scala.Nothing] = js.undefined,
-    edgeWidth: js.UndefOr[scala.Nothing] = js.undefined,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: SeriesEventsOptionsObject = null,
     getExtremesFromAll: js.UndefOr[Boolean] = js.undefined,
-    groupPadding: js.UndefOr[scala.Nothing] = js.undefined,
-    groupZPadding: js.UndefOr[scala.Nothing] = js.undefined,
-    grouping: js.UndefOr[scala.Nothing] = js.undefined,
     id: String = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
@@ -186,9 +131,7 @@ object SeriesDependencywheelOptions {
     linkOpacity: Int | Double = null,
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
-    maxPointWidth: js.UndefOr[scala.Nothing] = js.undefined,
     minLinkWidth: Int | Double = null,
-    minPointLength: js.UndefOr[scala.Nothing] = js.undefined,
     name: String = null,
     navigatorOptions: PlotSeriesOptions = null,
     nodePadding: Int | Double = null,
@@ -197,8 +140,6 @@ object SeriesDependencywheelOptions {
     opacity: Int | Double = null,
     point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
-    pointPadding: js.UndefOr[scala.Nothing] = js.undefined,
-    pointWidth: js.UndefOr[scala.Nothing] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
     showCheckbox: js.UndefOr[Boolean] = js.undefined,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
@@ -223,7 +164,6 @@ object SeriesDependencywheelOptions {
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -236,23 +176,17 @@ object SeriesDependencywheelOptions {
     if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.asInstanceOf[js.Any])
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (curveFactor != null) __obj.updateDynamic("curveFactor")(curveFactor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeColor)) __obj.updateDynamic("edgeColor")(edgeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeWidth)) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (!js.isUndefined(getExtremesFromAll)) __obj.updateDynamic("getExtremesFromAll")(getExtremesFromAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupPadding)) __obj.updateDynamic("groupPadding")(groupPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupZPadding)) __obj.updateDynamic("groupZPadding")(groupZPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(grouping)) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
@@ -266,9 +200,7 @@ object SeriesDependencywheelOptions {
     if (linkOpacity != null) __obj.updateDynamic("linkOpacity")(linkOpacity.asInstanceOf[js.Any])
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
     if (mapData != null) __obj.updateDynamic("mapData")(mapData.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPointWidth)) __obj.updateDynamic("maxPointWidth")(maxPointWidth.asInstanceOf[js.Any])
     if (minLinkWidth != null) __obj.updateDynamic("minLinkWidth")(minLinkWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(minPointLength)) __obj.updateDynamic("minPointLength")(minPointLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions.asInstanceOf[js.Any])
     if (nodePadding != null) __obj.updateDynamic("nodePadding")(nodePadding.asInstanceOf[js.Any])
@@ -277,8 +209,6 @@ object SeriesDependencywheelOptions {
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointPadding)) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointWidth)) __obj.updateDynamic("pointWidth")(pointWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.asInstanceOf[js.Any])
     if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])

@@ -25,7 +25,9 @@ trait Options extends js.Object {
     * Function used to generate keys. By default user IP address (`req.ip`) is used.
     * Default: `(req, res) => req.ip`
     */
-  var keyGenerator: js.UndefOr[js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, String]] = js.undefined
+  var keyGenerator: js.UndefOr[
+    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], String]
+  ] = js.undefined
   /**
     * Maximum value for `delayMs` after many consecutive attempts, that is, after the n-th request,
     * the delay will be always `maxDelayMs`. Important when your application is running behind a
@@ -37,13 +39,20 @@ trait Options extends js.Object {
     * Default: `(req, res, opts) => {}`
     */
   var onLimitReached: js.UndefOr[
-    js.Function3[/* req */ RequestWithSlowDown, /* res */ Response_, /* optionsUsed */ this.type, Unit]
+    js.Function3[
+      /* req */ RequestWithSlowDown, 
+      /* res */ Response_[_], 
+      /* optionsUsed */ this.type, 
+      Unit
+    ]
   ] = js.undefined
   /**
     * Function used to skip requests. Returning `true` from the function will skip delaying for that request.
     * Default: `(req, res) => false`
     */
-  var skip: js.UndefOr[js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, Boolean]] = js.undefined
+  var skip: js.UndefOr[
+    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean]
+  ] = js.undefined
   /**
     * When `true` failed requests (response status >= 400) won't be counted. Defaults to `false`.
     */
@@ -67,10 +76,10 @@ object Options {
   def apply(
     delayAfter: Int | Double = null,
     delayMs: Int | Double = null,
-    keyGenerator: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => String = null,
+    keyGenerator: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => String = null,
     maxDelayMs: Int | Double = null,
-    onLimitReached: (/* req */ RequestWithSlowDown, /* res */ Response_, Options) => Unit = null,
-    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null,
+    onLimitReached: (/* req */ RequestWithSlowDown, /* res */ Response_[_], Options) => Unit = null,
+    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
     store: Store = null,

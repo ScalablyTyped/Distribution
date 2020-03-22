@@ -173,6 +173,12 @@ trait PlotVectorOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
+    * (Highcharts, Highstock) A reserved subspace to store options and values
+    * for customized functionality. Here you can add additional data for your
+    * own event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
     * labels, appearing next to each data point.
     *
@@ -183,7 +189,7 @@ trait PlotVectorOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[PlotVectorDataLabelsOptions | js.Array[PlotVectorDataLabelsOptions]] = js.undefined
   /**
     * (Highcharts, Highstock) Options for the series data sorting.
     */
@@ -496,7 +502,8 @@ object PlotVectorOptions {
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    custom: Dictionary[_] = null,
+    dataLabels: PlotVectorDataLabelsOptions | js.Array[PlotVectorDataLabelsOptions] = null,
     dataSorting: DataSortingOptionsObject | PlotVectorDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -559,6 +566,7 @@ object PlotVectorOptions {
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.asInstanceOf[js.Any])
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])

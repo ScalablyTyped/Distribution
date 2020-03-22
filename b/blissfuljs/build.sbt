@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blissfuljs"
-version := "0.0-unknown-dt-20190322Z-6fa007"
+version := "0.0-unknown-dt-20200225Z-6fa007"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

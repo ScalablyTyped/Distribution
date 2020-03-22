@@ -113,7 +113,7 @@ trait Options extends js.Object {
     * object for adding SVG definitions for reusable elements. See gradients,
     * shadows and patterns for more information and code examples.
     */
-  var defs: js.UndefOr[js.Any] = js.undefined
+  var defs: js.UndefOr[DefsOptions] = js.undefined
   /**
     * (Highcharts, Highmaps) Options for drill down, the concept of inspecting
     * increasingly high resolution data through clicking on chart items like
@@ -303,7 +303,7 @@ object Options {
     connectors: ConnectorsOptions = null,
     credits: CreditsOptions = null,
     data: DataOptions = null,
-    defs: js.Any = null,
+    defs: DefsOptions = null,
     drilldown: DrilldownOptions = null,
     exporting: ExportingOptions = null,
     global: GlobalOptions = null,

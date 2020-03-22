@@ -23,7 +23,7 @@ trait LogSubscriptionFilterArgs extends js.Object {
   /**
     * The name of the log group to associate the subscription filter with
     */
-  val logGroup: Input[LogGroup] = js.native
+  val logGroup: Input[String | LogGroup] = js.native
   /**
     * A name for the subscription filter
     */
@@ -39,7 +39,7 @@ object LogSubscriptionFilterArgs {
   def apply(
     destinationArn: Input[String],
     filterPattern: Input[String],
-    logGroup: Input[LogGroup],
+    logGroup: Input[String | LogGroup],
     distribution: Input[String] = null,
     name: Input[String] = null,
     roleArn: Input[String] = null

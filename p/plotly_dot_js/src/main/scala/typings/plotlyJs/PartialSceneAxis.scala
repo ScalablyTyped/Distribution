@@ -3,6 +3,7 @@ package typings.plotlyJs
 import typings.plotlyJs.mod.AxisType
 import typings.plotlyJs.mod.Calendar
 import typings.plotlyJs.mod.Color
+import typings.plotlyJs.mod.DataTitle
 import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
@@ -12,6 +13,18 @@ import typings.plotlyJs.plotlyJsStrings.SI
 import typings.plotlyJs.plotlyJsStrings._empty
 import typings.plotlyJs.plotlyJsStrings.`category ascending`
 import typings.plotlyJs.plotlyJsStrings.`category descending`
+import typings.plotlyJs.plotlyJsStrings.`max ascending`
+import typings.plotlyJs.plotlyJsStrings.`max descending`
+import typings.plotlyJs.plotlyJsStrings.`mean ascending`
+import typings.plotlyJs.plotlyJsStrings.`mean descending`
+import typings.plotlyJs.plotlyJsStrings.`median ascending`
+import typings.plotlyJs.plotlyJsStrings.`median descending`
+import typings.plotlyJs.plotlyJsStrings.`min ascending`
+import typings.plotlyJs.plotlyJsStrings.`min descending`
+import typings.plotlyJs.plotlyJsStrings.`sum ascending`
+import typings.plotlyJs.plotlyJsStrings.`sum descending`
+import typings.plotlyJs.plotlyJsStrings.`total ascending`
+import typings.plotlyJs.plotlyJsStrings.`total descending`
 import typings.plotlyJs.plotlyJsStrings.all
 import typings.plotlyJs.plotlyJsStrings.allticks
 import typings.plotlyJs.plotlyJsStrings.array
@@ -41,7 +54,9 @@ trait PartialSceneAxis extends js.Object {
   var backgroundcolor: js.UndefOr[Color] = js.undefined
   var calendar: js.UndefOr[Calendar] = js.undefined
   var categoryarray: js.UndefOr[js.Array[_]] = js.undefined
-  var categoryorder: js.UndefOr[trace | (`category ascending`) | (`category descending`) | array] = js.undefined
+  var categoryorder: js.UndefOr[
+    trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
+  ] = js.undefined
   var color: js.UndefOr[Color] = js.undefined
   var dtick: js.UndefOr[Double | String] = js.undefined
   var exponentformat: js.UndefOr[none | e_ | E | power | SI | B] = js.undefined
@@ -80,7 +95,7 @@ trait PartialSceneAxis extends js.Object {
   var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   var tickvals: js.UndefOr[js.Array[_]] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Partial[DataTitle]] = js.undefined
   var titlefont: js.UndefOr[Partial[Font]] = js.undefined
   var `type`: js.UndefOr[AxisType] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -96,7 +111,7 @@ object PartialSceneAxis {
     backgroundcolor: Color = null,
     calendar: Calendar = null,
     categoryarray: js.Array[_] = null,
-    categoryorder: trace | (`category ascending`) | (`category descending`) | array = null,
+    categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`) = null,
     color: Color = null,
     dtick: Double | String = null,
     exponentformat: none | e_ | E | power | SI | B = null,
@@ -135,7 +150,7 @@ object PartialSceneAxis {
     ticktext: js.Array[String] = null,
     tickvals: js.Array[_] = null,
     tickwidth: Int | Double = null,
-    title: String = null,
+    title: String | Partial[DataTitle] = null,
     titlefont: Partial[Font] = null,
     `type`: AxisType = null,
     visible: js.UndefOr[Boolean] = js.undefined,

@@ -17,12 +17,12 @@ object middleware extends js.Object {
     * have caused a crash is logged to stderr.
     */
   def crashProtector(
-    errorHandler: js.Function3[/* err */ Error, /* req */ Request_[ParamsDictionary], /* res */ Response_, Unit]
+    errorHandler: js.Function3[/* err */ Error, /* req */ Request_[ParamsDictionary], /* res */ Response_[_], Unit]
   ): Unit = js.native
   /**
     * Express middleware that translates common errors into HTTP status
     * codes and messages.
     */
-  def errorHandler(err: Error, req: Request_[ParamsDictionary], res: Response_, next: NextFunction): Unit = js.native
+  def errorHandler(err: Error, req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction): Unit = js.native
 }
 

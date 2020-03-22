@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ViewModelFactoryFunction extends js.Object {
+trait ViewModelFactoryFunction extends _ViewModel {
   def createViewModel(params: js.Any, componentInfo: ComponentInfo): js.Any
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "db_dot_js"
-version := "v0.14.0-dt-20190322Z-d709c7"
+version := "v0.14.0-dt-20200225Z-d709c7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

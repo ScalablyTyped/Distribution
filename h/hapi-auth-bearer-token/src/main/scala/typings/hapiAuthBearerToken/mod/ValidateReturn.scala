@@ -1,11 +1,11 @@
 package typings.hapiAuthBearerToken.mod
 
-import typings.hapi.mod.AuthCredentials
+import typings.hapiHapi.mod.AuthCredentials
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined hapi.hapi.AuthenticationData & {  isValid  :boolean} */
+/* Inlined @hapi/hapi.@hapi/hapi.AuthenticationData & {  isValid  :boolean} */
 trait ValidateReturn extends js.Object {
   var artifacts: js.UndefOr[js.Object] = js.undefined
   var credentials: AuthCredentials

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "octokit__plugin-rest-endpoint-methods"
-version := "3.2.0-978172"
+version := "3.3.1-491e9c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

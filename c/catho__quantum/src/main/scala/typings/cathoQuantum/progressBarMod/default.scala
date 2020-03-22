@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/ProgressBar", JSImport.Default)
+@JSImport("@catho/quantum/ProgressBar", JSImport.Default)
 @js.native
 class default ()
   extends Component[ProgressBarProps, js.Object, js.Any]

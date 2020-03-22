@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/messaging-types" : "0.4.3"
+      "@firebase/messaging-types" : "0.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/messaging-types" : "0.4.3"
+      "@firebase/messaging-types" : "0.4.4"
     }
   ],
   "compile-devDependencies" : [

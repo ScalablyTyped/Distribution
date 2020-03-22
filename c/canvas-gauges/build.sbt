@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "canvas-gauges"
-version := "v2.1.3-dt-20200123Z-d46497"
+version := "v2.1.3-dt-20200226Z-d46497"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

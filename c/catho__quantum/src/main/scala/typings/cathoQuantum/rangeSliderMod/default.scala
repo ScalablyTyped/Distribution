@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/RangeSlider", JSImport.Default)
+@JSImport("@catho/quantum/RangeSlider", JSImport.Default)
 @js.native
-class default[T] ()
-  extends Component[RangeSliderProps[T], js.Object, js.Any]
+class default ()
+  extends Component[RangeSliderProps, js.Object, js.Any]
 

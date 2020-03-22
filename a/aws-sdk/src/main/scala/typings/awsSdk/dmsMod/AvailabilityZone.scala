@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AvailabilityZone extends js.Object {
   /**
-    * The name of the availability zone.
+    * The name of the Availability Zone.
     */
   var Name: js.UndefOr[String] = js.native
 }

@@ -98,6 +98,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   /* protected */ def isObject(value: js.Any): Boolean = js.native
   /* protected */ def onBeforeValueChanged(`val`: js.Any): Unit = js.native
   /* protected */ def onCellValueChanged(row: MatrixDropdownRowModelBase, columnName: String, rowValue: js.Any): Unit = js.native
+  def onColumnCellTypeChanged(column: MatrixDropdownColumn): Unit = js.native
   def onColumnPropertiesChanged(column: MatrixDropdownColumn): Unit = js.native
   /* protected */ def onEndRowAdding(): Unit = js.native
   /* protected */ def onEndRowRemoving(index: Double): Unit = js.native

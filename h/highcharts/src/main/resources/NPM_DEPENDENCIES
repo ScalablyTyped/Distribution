@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "highcharts" : "8.0.0"
+      "highcharts" : "8.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "highcharts" : "8.0.0"
+      "highcharts" : "8.0.4"
     }
   ],
   "compile-devDependencies" : [

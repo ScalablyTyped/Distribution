@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hammerjs"
-version := "2.0.8-dt-20190322Z-7cfbeb"
+version := "2.0.8-dt-20200225Z-7cfbeb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

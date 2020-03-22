@@ -39,7 +39,7 @@ trait TopicSubscriptionArgs extends js.Object {
   /**
     * The ARN of the SNS topic to subscribe to
     */
-  val topic: Input[Topic] = js.native
+  val topic: Input[String | Topic] = js.native
 }
 
 object TopicSubscriptionArgs {
@@ -47,7 +47,7 @@ object TopicSubscriptionArgs {
   def apply(
     endpoint: Input[String],
     protocol: Input[String],
-    topic: Input[Topic],
+    topic: Input[String | Topic],
     confirmationTimeoutInMinutes: Input[Double] = null,
     deliveryPolicy: Input[String] = null,
     endpointAutoConfirms: Input[Boolean] = null,

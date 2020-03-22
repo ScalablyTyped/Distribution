@@ -19,7 +19,7 @@ trait BasePathMappingState extends js.Object {
   /**
     * The id of the API to connect.
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * The name of a specific deployment stage to expose at the given path. If omitted, callers may select any stage by including its name as a path element after the base path.
     */
@@ -31,7 +31,7 @@ object BasePathMappingState {
   def apply(
     basePath: Input[String] = null,
     domainName: Input[String] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     stageName: Input[String] = null
   ): BasePathMappingState = {
     val __obj = js.Dynamic.literal()

@@ -20,11 +20,12 @@ import typings.reactPlaidLink.reactPlaidLinkStrings.assets
 import typings.reactPlaidLink.reactPlaidLinkStrings.auth
 import typings.reactPlaidLink.reactPlaidLinkStrings.connect
 import typings.reactPlaidLink.reactPlaidLinkStrings.development
-import typings.reactPlaidLink.reactPlaidLinkStrings.holdings
 import typings.reactPlaidLink.reactPlaidLinkStrings.identity
 import typings.reactPlaidLink.reactPlaidLinkStrings.income
 import typings.reactPlaidLink.reactPlaidLinkStrings.info
+import typings.reactPlaidLink.reactPlaidLinkStrings.investments
 import typings.reactPlaidLink.reactPlaidLinkStrings.liabilities
+import typings.reactPlaidLink.reactPlaidLinkStrings.payment_initiation
 import typings.reactPlaidLink.reactPlaidLinkStrings.production
 import typings.reactPlaidLink.reactPlaidLinkStrings.sandbox
 import typings.reactPlaidLink.reactPlaidLinkStrings.tartan
@@ -65,7 +66,7 @@ trait PlaidLinkProps extends js.Object {
   // The Plaid products you wish to use, an array containing some of connect,
   // auth, identity, income, transactions, assets, liabilities
   var product: js.Array[
-    connect | info | auth | identity | income | transactions | assets | holdings | liabilities
+    connect | info | auth | identity | income | transactions | assets | liabilities | investments | payment_initiation
   ]
   // The public_key associated with your account; available from
   // the Plaid dashboard (https://dashboard.plaid.com)
@@ -98,7 +99,7 @@ object PlaidLinkProps {
     env: tartan | sandbox | development | production,
     onSuccess: (String, AnonAccounts) => Unit,
     product: js.Array[
-      connect | info | auth | identity | income | transactions | assets | holdings | liabilities
+      connect | info | auth | identity | income | transactions | assets | liabilities | investments | payment_initiation
     ],
     publicKey: String,
     apiVersion: String = null,

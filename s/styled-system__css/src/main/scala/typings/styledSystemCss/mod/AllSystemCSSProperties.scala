@@ -404,7 +404,7 @@ import scala.scalajs.js.annotation._
   * Only used internally to map CCS properties to input types (responsive value,
   * theme function or nested) in `SystemCssProperties`.
   */
-/* Inlined parent @styled-system/css.@styled-system/css.Omit<@styled-system/css.@styled-system/css.CSSProperties, 'boxShadow' | 'fontWeight'> */
+/* Inlined parent @styled-system/css.@styled-system/css.Omit<@styled-system/css.@styled-system/css.CSSProperties, 'boxShadow' | 'fontWeight' | 'zIndex'> */
 /* Inlined parent @styled-system/css.@styled-system/css.AliasesCSSProperties */
 /* Inlined parent @styled-system/css.@styled-system/css.OverwriteCSSProperties */
 trait AllSystemCSSProperties extends js.Object {
@@ -1123,7 +1123,18 @@ trait AllSystemCSSProperties extends js.Object {
   var wordSpacing: js.UndefOr[WordSpacingProperty[Double | String]] = js.undefined
   var wordWrap: js.UndefOr[WordWrapProperty] = js.undefined
   var writingMode: js.UndefOr[WritingModeProperty] = js.undefined
-  var zIndex: js.UndefOr[ZIndexProperty] = js.undefined
+  /**
+    * The **`z-index`** CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **1**  |  **1**  | **1**  | **12** | **4** |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/z-index
+    */
+  var zIndex: js.UndefOr[ZIndexProperty | String] = js.undefined
   var zoom: js.UndefOr[ZoomProperty] = js.undefined
 }
 

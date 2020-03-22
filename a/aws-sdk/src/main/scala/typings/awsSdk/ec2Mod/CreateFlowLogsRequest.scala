@@ -47,6 +47,10 @@ trait CreateFlowLogsRequest extends js.Object {
     */
   var ResourceType: FlowLogsResourceType = js.native
   /**
+    * The tags to apply to the flow logs.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The type of traffic to log. You can log traffic that the resource accepts or rejects, or all traffic.
     */
   var TrafficType: typings.awsSdk.ec2Mod.TrafficType = js.native
@@ -65,7 +69,8 @@ object CreateFlowLogsRequest {
     LogDestinationType: LogDestinationType = null,
     LogFormat: String = null,
     LogGroupName: String = null,
-    MaxAggregationInterval: Int | scala.Double = null
+    MaxAggregationInterval: Int | scala.Double = null,
+    TagSpecifications: TagSpecificationList = null
   ): CreateFlowLogsRequest = {
     val __obj = js.Dynamic.literal(ResourceIds = ResourceIds.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], TrafficType = TrafficType.asInstanceOf[js.Any])
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
@@ -76,6 +81,7 @@ object CreateFlowLogsRequest {
     if (LogFormat != null) __obj.updateDynamic("LogFormat")(LogFormat.asInstanceOf[js.Any])
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
     if (MaxAggregationInterval != null) __obj.updateDynamic("MaxAggregationInterval")(MaxAggregationInterval.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowLogsRequest]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "memdown"
-version := "3.0-dt-20180914Z-e0c352"
+version := "3.0-dt-20200225Z-e0c352"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

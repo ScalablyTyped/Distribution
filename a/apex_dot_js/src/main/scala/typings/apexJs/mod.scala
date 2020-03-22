@@ -1,7 +1,7 @@
 package typings.apexJs
 
-import typings.awsLambda.handerMod.Callback
-import typings.awsLambda.handerMod.Context
+import typings.awsLambda.handlerMod.Callback
+import typings.awsLambda.handlerMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

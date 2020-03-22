@@ -45,7 +45,6 @@ class WorksheetProtection () extends ClientObject {
   def load(propertyNames: String): WorksheetProtection = js.native
   def load(propertyNames: js.Array[String]): WorksheetProtection = js.native
   /**
-    *
     * Protects a worksheet. Fails if the worksheet has already been protected.
     *
     * [Api set: ExcelApi 1.2 for options; 1.7 for password]
@@ -62,7 +61,6 @@ class WorksheetProtection () extends ClientObject {
     */
   def toJSON(): WorksheetProtectionData = js.native
   /**
-    *
     * Unprotects a worksheet.
     *
     * [Api set: ExcelApi 1.7 for password]

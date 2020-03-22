@@ -20,9 +20,9 @@ object timeMod extends js.Object {
       * @returns A formatted date.
       */
     def format(value: String): String = js.native
-    def format(value: String, format: String): String = js.native
+    def format(value: String, timeFormat: String): String = js.native
     def format(value: Date): String = js.native
-    def format(value: Date, format: String): String = js.native
+    def format(value: Date, timeFormat: String): String = js.native
     /**
       * Convert a timestring to a human readable string (e.g. 'two minutes ago').
       *

@@ -2,6 +2,7 @@ package typings.reactBurgerMenu.mod
 
 import typings.react.mod.KeyboardEvent
 import typings.react.mod._Global_.JSX.Element
+import typings.reactBurgerMenu.PartialStyles
 import typings.reactBurgerMenu.reactBurgerMenuBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,7 +39,7 @@ trait Props extends js.Object {
   // styles && styles.pageWrap ? PropTypes.string.isRequired : PropTypes.string,
   var pageWrapId: js.UndefOr[String] = js.undefined
   var right: js.UndefOr[Boolean] = js.undefined
-  var styles: js.UndefOr[Styles] = js.undefined
+  var styles: js.UndefOr[PartialStyles] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
 }
 
@@ -71,7 +72,7 @@ object Props {
     overlayClassName: String = null,
     pageWrapId: String = null,
     right: js.UndefOr[Boolean] = js.undefined,
-    styles: Styles = null,
+    styles: PartialStyles = null,
     width: Double | String = null
   ): Props = {
     val __obj = js.Dynamic.literal()

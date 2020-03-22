@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sencha_touch"
-version := "2.3.1-dt-20190322Z-ddc4c3"
+version := "2.3.1-dt-20200227Z-ddc4c3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

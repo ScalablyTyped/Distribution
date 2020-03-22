@@ -10,7 +10,8 @@ trait IPalette extends js.Object {
     */
   var accent: String
   /**
-    * Color code for the strongest color, which is black in the default theme. This is a very light color in inverted themes.
+    * Color code for the strongest color, which is black in the default theme.
+    * This is a very light color in inverted themes.
     */
   var black: String
   /**

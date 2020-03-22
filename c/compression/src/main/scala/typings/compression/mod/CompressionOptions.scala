@@ -114,7 +114,7 @@ object CompressionOptions {
     */
   /* property */ StringDictionary[js.Any] = null,
     chunkSize: Int | Double = null,
-    filter: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null,
+    filter: (/* req */ Request_[ParamsDictionary], /* res */ Response_[js.Any]) => Boolean = null,
     level: Int | Double = null,
     memLevel: Int | Double = null,
     strategy: Int | Double = null,

@@ -1,6 +1,6 @@
 package typings.themeUiComponents.mod
 
-import typings.csstype.mod.OpacityProperty
+import typings.csstype.mod.GlobalsNumber
 import typings.emotionCore.mod.InterpolationWithTheme
 import typings.react.mod.ElementType
 import typings.styledSystem.mod.RequiredTheme
@@ -16,7 +16,7 @@ trait GridProps extends BoxProps {
   /**
     * 	Number of columns to use for the layout (cannot be used in conjunction with the width prop)
     */
-  var columns: js.UndefOr[ResponsiveValue[Double, RequiredTheme]] = js.undefined
+  var columns: js.UndefOr[ResponsiveValue[String | Double, RequiredTheme]] = js.undefined
   /**
     * Space between child elements
     */
@@ -34,7 +34,7 @@ object GridProps {
     backgroundColor: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
     bg: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
     color: ResponsiveValue[ThemeValue[colors, RequiredTheme, _], RequiredTheme] = null,
-    columns: ResponsiveValue[Double, RequiredTheme] = null,
+    columns: ResponsiveValue[String | Double, RequiredTheme] = null,
     css: InterpolationWithTheme[_] = null,
     gap: ResponsiveValue[String | Double, RequiredTheme] = null,
     m: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
@@ -51,7 +51,7 @@ object GridProps {
     mt: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     mx: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     my: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     p: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     padding: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     paddingBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,

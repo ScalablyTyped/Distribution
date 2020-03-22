@@ -9,7 +9,6 @@ import typings.csstype.mod.MaxHeightProperty
 import typings.csstype.mod.MaxWidthProperty
 import typings.csstype.mod.MinHeightProperty
 import typings.csstype.mod.MinWidthProperty
-import typings.csstype.mod.OpacityProperty
 import typings.csstype.mod.OverflowProperty
 import typings.csstype.mod.OverflowXProperty
 import typings.csstype.mod.OverflowYProperty
@@ -109,7 +108,7 @@ object BoxKnownProps {
     mt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     mx: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     my: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     order: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     overflow: ResponsiveValue[OverflowProperty, RequiredTheme] = null,
     overflowX: ResponsiveValue[OverflowXProperty, RequiredTheme] = null,

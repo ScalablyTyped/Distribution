@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss" : "10.0.4"
+      "jss" : "10.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jss" : "10.0.4"
+      "jss" : "10.1.1"
     }
   ],
   "compile-devDependencies" : [

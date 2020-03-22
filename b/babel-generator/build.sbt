@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel-generator"
-version := "6.25-dt-20190212Z-b71d20"
+version := "6.25-dt-20200226Z-b71d20"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

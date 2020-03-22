@@ -18,7 +18,7 @@ object expressApolloMod extends js.Object {
   def graphqlExpress(options: ExpressGraphQLOptionsFunction): Handler = js.native
   type ExpressGraphQLOptionsFunction = js.Function2[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[js.Any], 
     ValueOrPromise[GraphQLServerOptions[Record[String, js.Any], js.Any]]
   ]
 }

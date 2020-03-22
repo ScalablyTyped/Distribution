@@ -1,13 +1,17 @@
 package typings.officeUiFabricReact.contextualMenuSplitButtonMod
 
 import typings.officeUiFabricReact.contextualMenuItemWrapperContextualMenuItemWrapperMod.ContextualMenuItemWrapper
+import typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenuItemWrapper/ContextualMenuSplitButton", "ContextualMenuSplitButton")
 @js.native
-class ContextualMenuSplitButton () extends ContextualMenuItemWrapper {
+class ContextualMenuSplitButton protected () extends ContextualMenuItemWrapper {
+  def this(props: IContextualMenuItemWrapperProps) = this()
+  var _async: js.Any = js.native
+  var _events: js.Any = js.native
   var _executeItemClick: js.Any = js.native
   var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
   var _handleTouchAndPointerEvent: js.Any = js.native
@@ -26,5 +30,7 @@ class ContextualMenuSplitButton () extends ContextualMenuItemWrapper {
   var _splitButton: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MContextualMenuSplitButton(): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MContextualMenuSplitButton(): Unit = js.native
 }
 

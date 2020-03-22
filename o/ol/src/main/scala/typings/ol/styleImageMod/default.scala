@@ -16,6 +16,8 @@ abstract class default protected () extends ImageStyle {
   /* CompleteClass */
   override def getAnchor(): js.Array[Double] = js.native
   /* CompleteClass */
+  override def getDisplacement(): js.Array[Double] = js.native
+  /* CompleteClass */
   override def getHitDetectionImage(pixelRatio: Double): HTMLCanvasElement | HTMLVideoElement | HTMLImageElement = js.native
   /* CompleteClass */
   override def getHitDetectionImageSize(): Size = js.native

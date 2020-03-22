@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sinon-chai"
-version := "3.2.0-dt-20190808Z-9caaa9"
+version := "3.2.0-dt-20200227Z-007055"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chai" % "4.2-dt-20200211Z-2f263c",
-  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-d72a6c",
+  "org.scalablytyped" %%% "chai" % "4.2-dt-20200314Z-8317bf",
+  "org.scalablytyped" %%% "sinon" % "7.5-dt-20200225Z-c633f6",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

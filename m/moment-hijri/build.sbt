@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moment-hijri"
-version := "2.1-dt-20190628Z-37fc3d"
+version := "2.1-dt-20200225Z-37fc3d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

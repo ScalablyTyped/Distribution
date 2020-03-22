@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "rx-lite-async"
-version := "4.0-dt-20181116Z-6eb595"
+version := "4.0-dt-20200225Z-1e6fa1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-0759c8",
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20200225Z-0759c8",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

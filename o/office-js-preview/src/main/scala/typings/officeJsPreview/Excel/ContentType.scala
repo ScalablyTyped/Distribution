@@ -15,7 +15,6 @@ sealed trait ContentType extends js.Object
 @js.native
 object ContentType extends js.Object {
   /**
-    *
     * Comment content containing mentions.
     *
     */
@@ -23,7 +22,6 @@ object ContentType extends js.Object {
   sealed trait mention extends ContentType
   
   /**
-    *
     * Indicates plain format type of the comment content.
     *
     */

@@ -1,7 +1,7 @@
 package typings.awsLambdaMockContext.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.awsLambda.handerMod.Context
+import typings.awsLambda.handlerMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

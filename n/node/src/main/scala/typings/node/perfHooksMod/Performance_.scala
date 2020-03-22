@@ -47,14 +47,14 @@ trait Performance_ extends js.Object {
     * @return list of all PerformanceEntry objects
     */
   def getEntriesByName(name: String): js.Array[PerformanceEntry] = js.native
-  def getEntriesByName(name: String, `type`: String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByName(name: String, `type`: EntryType): js.Array[PerformanceEntry] = js.native
   /**
     * Returns a list of all PerformanceEntry objects in chronological order with respect to performanceEntry.startTime
     * whose performanceEntry.entryType is equal to type.
     * @param type
     * @return list of all PerformanceEntry objects
     */
-  def getEntriesByType(`type`: String): js.Array[PerformanceEntry] = js.native
+  def getEntriesByType(`type`: EntryType): js.Array[PerformanceEntry] = js.native
   /**
     * Creates a new PerformanceMark entry in the Performance Timeline.
     * A PerformanceMark is a subclass of PerformanceEntry whose performanceEntry.entryType is always 'mark',

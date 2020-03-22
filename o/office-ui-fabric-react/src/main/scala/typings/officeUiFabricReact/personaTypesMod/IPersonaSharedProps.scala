@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.personaTypesMod
 
+import typings.officeUiFabricReact.AnonAvailable
 import typings.officeUiFabricReact.imageTypesMod.ImageLoadState
 import typings.officeUiFabricReact.personaBaseMod.PersonaBase
 import typings.officeUiFabricReact.personaCoinBaseMod.PersonaCoinBase
@@ -147,7 +148,7 @@ trait IPersonaSharedProps extends HTMLAttributes[PersonaBase | PersonaCoinBase |
     */
   var onRenderPersonaCoin: js.UndefOr[IRenderFunction[IPersonaSharedProps]] = js.undefined
   /**
-    * Optional text to display, usually a custom message set. The optional text will only be shown when using Size100.
+    * Optional text to display, usually a custom message set. The optional text will only be shown when using size100.
     */
   var optionalText: js.UndefOr[String] = js.undefined
   /**
@@ -155,6 +156,8 @@ trait IPersonaSharedProps extends HTMLAttributes[PersonaBase | PersonaCoinBase |
     * @defaultvalue PersonaPresence.none
     */
   var presence: js.UndefOr[PersonaPresence] = js.undefined
+  /** The colors to be used for the presence-icon and it's background */
+  var presenceColors: js.UndefOr[AnonAvailable] = js.undefined
   /**
     * Presence title to be shown as a tooltip on hover over the presence icon.
     */
@@ -186,7 +189,8 @@ trait IPersonaSharedProps extends HTMLAttributes[PersonaBase | PersonaCoinBase |
     */
   var size: js.UndefOr[PersonaSize] = js.undefined
   /**
-    * Tertiary text to display, usually the status of the user. The tertiary text will only be shown when using Size72 or Size100.
+    * Tertiary text to display, usually the status of the user.
+    * The tertiary text will only be shown when using size72 or size100.
     */
   var tertiaryText: js.UndefOr[String] = js.undefined
   /**
@@ -375,6 +379,7 @@ object IPersonaSharedProps {
     placeholder: String = null,
     prefix: String = null,
     presence: PersonaPresence = null,
+    presenceColors: AnonAvailable = null,
     presenceTitle: String = null,
     primaryText: String = null,
     property: String = null,
@@ -577,6 +582,7 @@ object IPersonaSharedProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
+    if (presenceColors != null) __obj.updateDynamic("presenceColors")(presenceColors.asInstanceOf[js.Any])
     if (presenceTitle != null) __obj.updateDynamic("presenceTitle")(presenceTitle.asInstanceOf[js.Any])
     if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])

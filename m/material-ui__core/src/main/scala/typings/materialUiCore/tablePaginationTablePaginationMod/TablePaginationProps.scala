@@ -1,6 +1,6 @@
 package typings.materialUiCore.tablePaginationTablePaginationMod
 
-import typings.materialUiCore.PartialClassNameMapTablePaginationClassKey
+import typings.materialUiCore.PartialClassNameMapTableP
 import typings.materialUiCore.PartialIconButtonProps
 import typings.materialUiCore.PartialSelectProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -157,7 +157,7 @@ trait TablePaginationProps extends js.Object {
   var backIconButtonProps: js.UndefOr[PartialIconButtonProps] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTablePaginationClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTableP] = js.native
   var colSpan: js.UndefOr[Double] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[TablePaginationBaseProps]] = js.native

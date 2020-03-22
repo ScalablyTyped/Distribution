@@ -20,7 +20,7 @@ trait BucketLifecycleRule extends js.Object {
     */
   var expiration: js.UndefOr[BucketLifecycleRuleExpiration] = js.native
   /**
-    * Unique identifier for the rule.
+    * Canonical user id to grant for. Used only when `type` is `CanonicalUser`.
     */
   var id: String = js.native
   /**

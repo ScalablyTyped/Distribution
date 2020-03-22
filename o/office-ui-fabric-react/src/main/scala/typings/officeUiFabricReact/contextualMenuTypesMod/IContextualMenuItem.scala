@@ -47,7 +47,8 @@ trait IContextualMenuItem
     */
   var className: js.UndefOr[String] = js.undefined
   /**
-    * Optional callback to access the IContextualMenuRenderItem interface. This will get passed down to ContextualMenuItem.
+    * Optional callback to access the IContextualMenuRenderItem interface.
+    * This will get passed down to ContextualMenuItem.
     */
   var componentRef: js.UndefOr[IRefObject[IContextualMenuRenderItem]] = js.undefined
   /**
@@ -173,7 +174,8 @@ trait IContextualMenuItem
     */
   var primaryDisabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * Link relation setting when using `href`. If `target` is `_blank`, `rel` is defaulted to a value to prevent clickjacking.
+    * Link relation setting when using `href`.
+    * If `target` is `_blank`, `rel` is defaulted to a value to prevent clickjacking.
     */
   var rel: js.UndefOr[String] = js.undefined
   /**

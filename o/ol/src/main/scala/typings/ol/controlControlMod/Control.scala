@@ -12,6 +12,7 @@ trait Control
   var element: HTMLElement = js.native
   var listenerKeys: js.Array[EventsKey] = js.native
   def getMap(): typings.ol.pluggableMapMod.default = js.native
+  def render(mapEvent: typings.ol.mapEventMod.default): Unit = js.native
   def setMap(map: typings.ol.pluggableMapMod.default): Unit = js.native
   def setTarget(target: String): Unit = js.native
   def setTarget(target: HTMLElement): Unit = js.native

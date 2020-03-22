@@ -243,12 +243,12 @@ trait EFS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Applies an Amazon EFS FileSystemPolicy to an Amazon EFS file system. A file system policy is an IAM resource-based policy and can contain multiple policy statements. A file system always has exactly one file system policy, which can be the default policy or an explicit policy set or updated using this API operation. When an explicit policy is set, it overrides the default policy. For more information about the default file system policy, see Using Resource-based Policies with EFS.  This operation requires permissions for the elasticfilesystem:PutFileSystemPolicy action.
+    * Applies an Amazon EFS FileSystemPolicy to an Amazon EFS file system. A file system policy is an IAM resource-based policy and can contain multiple policy statements. A file system always has exactly one file system policy, which can be the default policy or an explicit policy set or updated using this API operation. When an explicit policy is set, it overrides the default policy. For more information about the default file system policy, see Default EFS File System Policy.  This operation requires permissions for the elasticfilesystem:PutFileSystemPolicy action.
     */
   def putFileSystemPolicy(): Request[FileSystemPolicyDescription, AWSError] = js.native
   def putFileSystemPolicy(callback: js.Function2[/* err */ AWSError, /* data */ FileSystemPolicyDescription, Unit]): Request[FileSystemPolicyDescription, AWSError] = js.native
   /**
-    * Applies an Amazon EFS FileSystemPolicy to an Amazon EFS file system. A file system policy is an IAM resource-based policy and can contain multiple policy statements. A file system always has exactly one file system policy, which can be the default policy or an explicit policy set or updated using this API operation. When an explicit policy is set, it overrides the default policy. For more information about the default file system policy, see Using Resource-based Policies with EFS.  This operation requires permissions for the elasticfilesystem:PutFileSystemPolicy action.
+    * Applies an Amazon EFS FileSystemPolicy to an Amazon EFS file system. A file system policy is an IAM resource-based policy and can contain multiple policy statements. A file system always has exactly one file system policy, which can be the default policy or an explicit policy set or updated using this API operation. When an explicit policy is set, it overrides the default policy. For more information about the default file system policy, see Default EFS File System Policy.  This operation requires permissions for the elasticfilesystem:PutFileSystemPolicy action.
     */
   def putFileSystemPolicy(params: PutFileSystemPolicyRequest): Request[FileSystemPolicyDescription, AWSError] = js.native
   def putFileSystemPolicy(

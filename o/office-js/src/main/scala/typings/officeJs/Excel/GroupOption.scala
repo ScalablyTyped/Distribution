@@ -15,7 +15,6 @@ sealed trait GroupOption extends js.Object
 @js.native
 object GroupOption extends js.Object {
   /**
-    *
     * Group by columns.
     *
     */
@@ -23,7 +22,6 @@ object GroupOption extends js.Object {
   sealed trait byColumns extends GroupOption
   
   /**
-    *
     * Group by rows.
     *
     */

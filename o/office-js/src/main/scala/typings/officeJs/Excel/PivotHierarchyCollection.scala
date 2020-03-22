@@ -25,14 +25,12 @@ class PivotHierarchyCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[PivotHierarchy] = js.native
   /**
-    *
     * Gets the number of pivot hierarchies in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a PivotHierarchy by its name or id.
     *
     * [Api set: ExcelApi 1.8]
@@ -41,7 +39,6 @@ class PivotHierarchyCollection () extends ClientObject {
     */
   def getItem(name: String): PivotHierarchy = js.native
   /**
-    *
     * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.8]

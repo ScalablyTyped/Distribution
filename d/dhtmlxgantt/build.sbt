@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dhtmlxgantt"
-version := "6.0.0-dt-20190322Z-88ec8d"
+version := "6.0.0-dt-20200304Z-88ec8d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oauth_dot_js"
-version := "0.0-unknown-dt-20190322Z-f4b18a"
+version := "0.0-unknown-dt-20200226Z-f4b18a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

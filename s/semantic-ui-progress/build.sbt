@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-progress"
-version := "2.2-dt-20191126Z-8ffb65"
+version := "2.2-dt-20200225Z-8ffb65"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

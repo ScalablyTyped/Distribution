@@ -1,6 +1,6 @@
 package typings.materialUiCore.cardActionAreaCardActionAreaMod
 
-import typings.materialUiCore.PartialClassNameMapCardActionAreaClassKey
+import typings.materialUiCore.PartialClassNameMapCardAc
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -155,7 +155,7 @@ trait CardActionAreaProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCardActionAreaClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCardAc] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -364,7 +364,7 @@ object CardActionAreaProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCardActionAreaClassKey = null,
+    classes: PartialClassNameMapCardAc = null,
     color: String = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

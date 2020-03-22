@@ -39,6 +39,10 @@ trait ReplicationGroup extends js.Object {
     */
   var Description: js.UndefOr[String] = js.native
   /**
+    * The name of the Global Datastore and role of this replication group in the Global Datastore.
+    */
+  var GlobalReplicationGroupInfo: js.UndefOr[typings.awsSdk.elasticacheMod.GlobalReplicationGroupInfo] = js.native
+  /**
     * The ID of the KMS key used to encrypt the disk in the cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.native
@@ -91,6 +95,7 @@ object ReplicationGroup {
     ClusterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ConfigurationEndpoint: Endpoint = null,
     Description: String = null,
+    GlobalReplicationGroupInfo: GlobalReplicationGroupInfo = null,
     KmsKeyId: String = null,
     MemberClusters: ClusterIdList = null,
     NodeGroups: NodeGroupList = null,
@@ -111,6 +116,7 @@ object ReplicationGroup {
     if (!js.isUndefined(ClusterEnabled)) __obj.updateDynamic("ClusterEnabled")(ClusterEnabled.asInstanceOf[js.Any])
     if (ConfigurationEndpoint != null) __obj.updateDynamic("ConfigurationEndpoint")(ConfigurationEndpoint.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (GlobalReplicationGroupInfo != null) __obj.updateDynamic("GlobalReplicationGroupInfo")(GlobalReplicationGroupInfo.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MemberClusters != null) __obj.updateDynamic("MemberClusters")(MemberClusters.asInstanceOf[js.Any])
     if (NodeGroups != null) __obj.updateDynamic("NodeGroups")(NodeGroups.asInstanceOf[js.Any])

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * The connection statistics of the local stream.
+  *
+  * If the local stream calls {@link getStats} successfully, this interface provides the statistics.
   */
 trait LocalStreamStats extends js.Object {
   /** Delay in accessing the SD-RTN (ms). */

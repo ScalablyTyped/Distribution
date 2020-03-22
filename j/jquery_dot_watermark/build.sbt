@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_watermark"
-version := "3.1-dt-20190322Z-d9b830"
+version := "3.1-dt-20200304Z-d9b830"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

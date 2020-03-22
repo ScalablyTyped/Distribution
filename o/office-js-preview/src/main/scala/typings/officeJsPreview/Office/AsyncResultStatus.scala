@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait AsyncResultStatus extends js.Object
 
-// Enumerations
 /**
   * Specifies the result of an asynchronous call.
   * 

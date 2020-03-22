@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pegjs"
-version := "v0.10.0-dt-20190322Z-6cb9a9"
+version := "v0.10.0-dt-20200225Z-6cb9a9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

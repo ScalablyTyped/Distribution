@@ -145,8 +145,8 @@ object mod extends js.Object {
       def vary(args: js.Any*): js.Any = js.native
     }
     
-    def apply[T /* <: js.Object */](): MockRes with T with Response_ = js.native
-    def apply[T /* <: js.Object */](options: T): MockRes with T with Response_ = js.native
+    def apply[T /* <: js.Object */](): MockRes with T with Response_[_] = js.native
+    def apply[T /* <: js.Object */](options: T): MockRes with T with Response_[_] = js.native
   }
   
 }

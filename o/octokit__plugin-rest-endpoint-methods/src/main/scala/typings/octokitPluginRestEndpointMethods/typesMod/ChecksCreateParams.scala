@@ -28,7 +28,7 @@ trait ChecksCreateParams extends js.Object {
     */
   var conclusion: js.UndefOr[success | failure | neutral | cancelled | timed_out | action_required] = js.undefined
   /**
-    * The URL of the integrator's site that has the full details of the check.
+    * The URL of the integrator's site that has the full details of the check. If the integrator does not provide this, then the homepage of the GitHub app is used.
     */
   var details_url: js.UndefOr[String] = js.undefined
   /**

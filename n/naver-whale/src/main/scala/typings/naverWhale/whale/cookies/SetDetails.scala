@@ -15,6 +15,11 @@ trait SetDetails extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   /** Optional. The path of the cookie. Defaults to the path portion of the url parameter.  */
   var path: js.UndefOr[String] = js.undefined
+  /**
+    * Optional. The cookie's same-site status. Defaults to "unspecified", i.e., if omitted, the cookie is set without specifying a SameSite attribute.
+    * @since Chrome 51.
+    */
+  var sameSite: js.UndefOr[typings.chrome.chrome.cookies.SameSiteStatus] = js.undefined
   /** Optional. Whether the cookie should be marked as Secure. Defaults to false.  */
   var secure: js.UndefOr[Boolean] = js.undefined
   /** Optional. The ID of the cookie store in which to set the cookie. By default, the cookie is set in the current execution context's cookie store.  */
@@ -34,6 +39,7 @@ object SetDetails {
     httpOnly: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     path: String = null,
+    sameSite: typings.chrome.chrome.cookies.SameSiteStatus = null,
     secure: js.UndefOr[Boolean] = js.undefined,
     storeId: String = null,
     value: String = null
@@ -44,6 +50,7 @@ object SetDetails {
     if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite.asInstanceOf[js.Any])
     if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

@@ -129,10 +129,11 @@ object SeriesWaterfallOptions {
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dashStyle: DashStyleValue = null,
     data: js.Array[Double | (js.Tuple2[Double | String, Double | Null]) | Null | PointOptionsObject] = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotWaterfallDataLabelsOptions | js.Array[PlotWaterfallDataLabelsOptions] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataSorting: DataSortingOptionsObject | PlotWaterfallDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
@@ -225,6 +226,7 @@ object SeriesWaterfallOptions {
     if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])

@@ -15,7 +15,7 @@ trait HPOObjective extends js.Object {
     */
   var metricRegex: js.UndefOr[MetricRegex] = js.native
   /**
-    * The data type of the metric.
+    * The type of the metric. Valid values are Maximize and Minimize.
     */
   var `type`: js.UndefOr[HPOObjectiveType] = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for universalify
 
-Typings are for version 0.1
+Typings are for version 1.0
 
 ## Library description:
 Make a callback- or promise-based function support both promises and callbacks.

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gremlin", "process.statics")
 @js.native
-object statics extends TopLevel[Statics_]
+object statics extends TopLevel[Statics_[GraphTraversal]]
 

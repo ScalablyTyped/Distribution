@@ -162,7 +162,7 @@ trait PartialSwitchProps extends js.Object {
   var checkedIcon: js.UndefOr[ReactNode] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapSwitchClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapSwitch] = js.native
   var color: js.UndefOr[primary | secondary | default] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -380,7 +380,7 @@ object PartialSwitchProps {
     checkedIcon: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapSwitchClassKey = null,
+    classes: PartialClassNameMapSwitch = null,
     color: primary | secondary | default = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

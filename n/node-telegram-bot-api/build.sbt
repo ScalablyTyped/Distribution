@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "node-telegram-bot-api"
-version := "0.40-dt-20200131Z-a91a26"
+version := "0.40-dt-20200131Z-f3de84"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-31fe0d",
-  "org.scalablytyped" %%% "form-data" % "3.0.0-cd343e",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-b16f5b",
+  "org.scalablytyped" %%% "form-data" % "3.0.0-78808a",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-22ec1f",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20191206Z-a3036c")
 publishArtifact in packageDoc := false

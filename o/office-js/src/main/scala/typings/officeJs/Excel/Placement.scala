@@ -18,7 +18,6 @@ sealed trait Placement extends js.Object
 @js.native
 object Placement extends js.Object {
   /**
-    *
     * The object is free floating.
     *
     */
@@ -26,7 +25,6 @@ object Placement extends js.Object {
   sealed trait absolute extends Placement
   
   /**
-    *
     * The object is moved and sized with the cells.
     *
     */
@@ -34,7 +32,6 @@ object Placement extends js.Object {
   sealed trait oneCell extends Placement
   
   /**
-    *
     * The object is moved with the cells.
     *
     */

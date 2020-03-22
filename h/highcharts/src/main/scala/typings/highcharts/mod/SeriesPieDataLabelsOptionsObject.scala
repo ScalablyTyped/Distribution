@@ -126,7 +126,7 @@ trait SeriesPieDataLabelsOptionsObject extends js.Object {
     * as a percentage of pie's radius. Connectors are only shown for data
     * labels outside the pie.
     */
-  var distance: js.UndefOr[Double] = js.undefined
+  var distance: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the data
     * labels.
@@ -294,7 +294,7 @@ object SeriesPieDataLabelsOptionsObject {
     crookDistance: String = null,
     crop: js.UndefOr[Boolean] = js.undefined,
     defer: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
+    distance: Double | String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     filter: DataLabelsFilterOptionsObject = null,
     format: String = null,

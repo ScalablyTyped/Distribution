@@ -66,7 +66,7 @@ trait IgRadialGaugeMethods extends js.Object {
   	 * @param x
   	 * @param y
   	 */
-  def needleContainsPoint(x: js.Object, y: js.Object): Unit
+  def needleContainsPoint(x: js.Object, y: js.Object): Boolean
   /**
   	 * Removes a specified range.
   	 *
@@ -111,7 +111,7 @@ object IgRadialGaugeMethods {
     getPointForValue: (js.Object, js.Object) => Unit,
     getRangeNames: () => String,
     getValueForPoint: (js.Object, js.Object) => Double,
-    needleContainsPoint: (js.Object, js.Object) => Unit,
+    needleContainsPoint: (js.Object, js.Object) => Boolean,
     removeRange: js.Object => Unit,
     scaleValue: js.Object => Unit,
     styleUpdated: () => Unit,

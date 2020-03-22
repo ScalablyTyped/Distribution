@@ -62,6 +62,9 @@ object reactLazyLoadImageComponentStrings {
   sealed trait dialog extends js.Object
   
   @js.native
+  sealed trait eager extends js.Object
+  
+  @js.native
   sealed trait email extends js.Object
   
   @js.native
@@ -81,6 +84,9 @@ object reactLazyLoadImageComponentStrings {
   
   @js.native
   sealed trait `inline` extends js.Object
+  
+  @js.native
+  sealed trait `lazy` extends js.Object
   
   @js.native
   sealed trait link extends js.Object
@@ -107,6 +113,9 @@ object reactLazyLoadImageComponentStrings {
   sealed trait no extends js.Object
   
   @js.native
+  sealed trait `no-referrer` extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -120,6 +129,9 @@ object reactLazyLoadImageComponentStrings {
   
   @js.native
   sealed trait opacity extends Effect
+  
+  @js.native
+  sealed trait origin extends js.Object
   
   @js.native
   sealed trait other extends js.Object
@@ -165,6 +177,9 @@ object reactLazyLoadImageComponentStrings {
   
   @js.native
   sealed trait tree extends js.Object
+  
+  @js.native
+  sealed trait `unsafe-url` extends js.Object
   
   @js.native
   sealed trait url extends js.Object
@@ -215,6 +230,8 @@ object reactLazyLoadImageComponentStrings {
   @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  @scala.inline
   def email: email = "email".asInstanceOf[email]
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
@@ -228,6 +245,8 @@ object reactLazyLoadImageComponentStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
@@ -245,6 +264,8 @@ object reactLazyLoadImageComponentStrings {
   @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
+  def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
@@ -254,6 +275,8 @@ object reactLazyLoadImageComponentStrings {
   def on: on = "on".asInstanceOf[on]
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
+  @scala.inline
+  def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
@@ -284,6 +307,8 @@ object reactLazyLoadImageComponentStrings {
   def time: time = "time".asInstanceOf[time]
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
+  def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   @scala.inline

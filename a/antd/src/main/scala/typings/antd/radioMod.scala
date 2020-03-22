@@ -4,7 +4,8 @@ import typings.antd.radioButtonMod.RadioButtonProps
 import typings.antd.radioInterfaceMod.RadioGroupContextProps
 import typings.antd.radioInterfaceMod.RadioGroupProps
 import typings.react.mod.Context
-import typings.react.mod._Global_.JSX.Element
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +23,7 @@ object radioMod extends js.Object {
   class default ()
     extends typings.antd.radioRadioMod.default
   
-  def Button(props: RadioButtonProps): Element = js.native
+  val Button: ForwardRefExoticComponent[RadioButtonProps with RefAttributes[_]] = js.native
   /* static members */
   @js.native
   object Group extends js.Object {
@@ -33,7 +34,7 @@ object radioMod extends js.Object {
   /* static members */
   @js.native
   object default extends js.Object {
-    var Button: js.Function1[/* props */ RadioButtonProps, Element] = js.native
+    var Button: ForwardRefExoticComponent[RadioButtonProps with RefAttributes[_]] = js.native
     var Group: TypeofRadioGroup = js.native
     var contextType: Context[RadioGroupContextProps | Null] = js.native
     var defaultProps: AnonType = js.native

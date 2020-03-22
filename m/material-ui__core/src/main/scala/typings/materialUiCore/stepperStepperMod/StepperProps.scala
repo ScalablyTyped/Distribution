@@ -1,6 +1,6 @@
 package typings.materialUiCore.stepperStepperMod
 
-import typings.materialUiCore.PartialClassNameMapStepperClasskey
+import typings.materialUiCore.PartialClassNameMapSteppe
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -150,7 +150,7 @@ trait StepperProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: ReactNode = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepperClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapSteppe] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[PaperProps]] = js.native
   var connector: js.UndefOr[ReactElement | ReactNode] = js.native
@@ -338,7 +338,7 @@ object StepperProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepperClasskey = null,
+    classes: PartialClassNameMapSteppe = null,
     color: String = null,
     component: ReactType[PaperProps] = null,
     connector: ReactElement | ReactNode = null,

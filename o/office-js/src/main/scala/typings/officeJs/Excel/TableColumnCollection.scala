@@ -32,7 +32,6 @@ class TableColumnCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[TableColumn] = js.native
   /**
-    *
     * Adds a new column to the table.
     *
     * [Api set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.]
@@ -52,7 +51,6 @@ class TableColumnCollection () extends ClientObject {
   def add(index: Double, values: Double): TableColumn = js.native
   def add(index: Double, values: Double, name: String): TableColumn = js.native
   /**
-    *
     * Gets the number of columns in the table.
     *
     * [Api set: ExcelApi 1.4]
@@ -60,7 +58,6 @@ class TableColumnCollection () extends ClientObject {
   def getCount(): ClientResult[Double] = js.native
   def getItem(key: String): TableColumn = js.native
   /**
-    *
     * Gets a column object by Name or ID.
     *
     * [Api set: ExcelApi 1.1]
@@ -69,7 +66,6 @@ class TableColumnCollection () extends ClientObject {
     */
   def getItem(key: Double): TableColumn = js.native
   /**
-    *
     * Gets a column based on its position in the collection.
     *
     * [Api set: ExcelApi 1.1]
@@ -79,7 +75,6 @@ class TableColumnCollection () extends ClientObject {
   def getItemAt(index: Double): TableColumn = js.native
   def getItemOrNullObject(key: String): TableColumn = js.native
   /**
-    *
     * Gets a column object by Name or ID. If the column does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.4]

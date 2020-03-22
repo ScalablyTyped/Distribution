@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵangularPackagesCoreCoreBq extends js.Object {
   def apply(viewOrComponent: js.Object): RootContext = js.native
-  def apply(viewOrComponent: ɵangularPackagesCoreCoreBo): RootContext = js.native
+  def apply(viewOrComponent: ɵangularPackagesCoreCoreBp): RootContext = js.native
 }
 

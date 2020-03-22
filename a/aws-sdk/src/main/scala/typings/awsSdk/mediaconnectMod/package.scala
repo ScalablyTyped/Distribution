@@ -36,6 +36,12 @@ package object mediaconnectMod {
   */
   type SourceType = typings.awsSdk.mediaconnectMod._SourceType | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type State = typings.awsSdk.mediaconnectMod._State | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.STANDBY
     - typings.awsSdk.awsSdkStrings.ACTIVE
     - typings.awsSdk.awsSdkStrings.UPDATING
@@ -59,6 +65,8 @@ package object mediaconnectMod {
   type listOfListedEntitlement = js.Array[typings.awsSdk.mediaconnectMod.ListedEntitlement]
   type listOfListedFlow = js.Array[typings.awsSdk.mediaconnectMod.ListedFlow]
   type listOfOutput = js.Array[typings.awsSdk.mediaconnectMod.Output]
+  type listOfSetSourceRequest = js.Array[typings.awsSdk.mediaconnectMod.SetSourceRequest]
+  type listOfSource = js.Array[typings.awsSdk.mediaconnectMod.Source]
   type listOfString = js.Array[typings.awsSdk.mediaconnectMod.string]
   type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediaconnectMod.string]
   type string = java.lang.String

@@ -13,5 +13,7 @@ object uifabricUtilitiesComponents extends uifabricUtilitiesProps {
   def Customizer: ComponentType[CustomizerProps] = js.constructorOf[typings.uifabricUtilities.mod.Customizer].asInstanceOf[typings.react.mod.ComponentType[CustomizerProps]]
   @scala.inline
   def DelayedRender: ComponentType[DelayedRenderProps] = js.constructorOf[typings.uifabricUtilities.mod.DelayedRender].asInstanceOf[typings.react.mod.ComponentType[DelayedRenderProps]]
+  @scala.inline
+  def FocusRects: ComponentType[FocusRectsProps] = typings.uifabricUtilities.mod.FocusRects.asInstanceOf[typings.react.mod.ComponentType[FocusRectsProps]]
 }
 

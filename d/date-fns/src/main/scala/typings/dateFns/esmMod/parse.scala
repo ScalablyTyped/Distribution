@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @JSImport("date-fns/esm", "parse")
 @js.native
 object parse extends js.Object {
-  def apply(dateString: String, formatString: String, backupDate: Double): Date = js.native
+  def apply(dateString: String, formatString: String, referenceDate: Double): Date = js.native
   def apply(
     dateString: String,
     formatString: String,
-    backupDate: Double,
+    referenceDate: Double,
     options: AnonUseAdditionalWeekYearTokensWeekStartsOn
   ): Date = js.native
-  def apply(dateString: String, formatString: String, backupDate: Date): Date = js.native
+  def apply(dateString: String, formatString: String, referenceDate: Date): Date = js.native
   def apply(
     dateString: String,
     formatString: String,
-    backupDate: Date,
+    referenceDate: Date,
     options: AnonUseAdditionalWeekYearTokensWeekStartsOn
   ): Date = js.native
 }

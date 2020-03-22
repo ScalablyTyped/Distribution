@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-map-gl
 
-Typings are for version 5.1
+Typings are for version 5.2
 
 ## Library description:
 A React wrapper for MapboxGL-js and overlay API.

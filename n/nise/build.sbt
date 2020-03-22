@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nise"
-version := "1.4-dt-20181120Z-ee7adf"
+version := "1.4-dt-20200225Z-ee7adf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

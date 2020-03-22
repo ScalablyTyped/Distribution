@@ -178,6 +178,7 @@ package object mod {
     - typings.babelTypes.mod.Property
     - typings.babelTypes.mod.Pureish
     - typings.babelTypes.mod.QualifiedTypeIdentifier_
+    - typings.babelTypes.mod.RecordExpression_
     - typings.babelTypes.mod.RegExpLiteral_
     - typings.babelTypes.mod.RegexLiteral
     - typings.babelTypes.mod.RestElement_
@@ -194,6 +195,7 @@ package object mod {
     - typings.babelTypes.mod.Super_
     - typings.babelTypes.mod.SwitchCase_
     - typings.babelTypes.mod.SwitchStatement_
+    - typings.babelTypes.mod.SymbolTypeAnnotation_
     - typings.babelTypes.mod.TSAnyKeyword_
     - typings.babelTypes.mod.TSArrayType_
     - typings.babelTypes.mod.TSAsExpression_
@@ -266,6 +268,7 @@ package object mod {
     - typings.babelTypes.mod.ThisTypeAnnotation_
     - typings.babelTypes.mod.ThrowStatement_
     - typings.babelTypes.mod.TryStatement_
+    - typings.babelTypes.mod.TupleExpression_
     - typings.babelTypes.mod.TupleTypeAnnotation_
     - typings.babelTypes.mod.TypeAlias_
     - typings.babelTypes.mod.TypeAnnotation_

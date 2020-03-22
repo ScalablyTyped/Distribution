@@ -56,6 +56,7 @@ trait PartialTextProperties extends js.Object {
   var nativeID: js.UndefOr[String] = js.undefined
   var numberOfLines: js.UndefOr[Double] = js.undefined
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
@@ -95,6 +96,7 @@ object PartialTextProperties {
     nativeID: String = null,
     numberOfLines: Int | Double = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onLayout: /* event */ LayoutChangeEvent => Unit = null,
     onLongPress: /* event */ GestureResponderEvent => Unit = null,
@@ -131,6 +133,7 @@ object PartialTextProperties {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "http-build-query"
-version := "0.7-dt-20191111Z-abe7bf"
+version := "0.7-dt-20200225Z-abe7bf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

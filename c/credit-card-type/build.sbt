@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "credit-card-type"
-version := "v7.0.0-dt-20190322Z-8d7f9d"
+version := "v7.0.0-dt-20200225Z-8d7f9d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

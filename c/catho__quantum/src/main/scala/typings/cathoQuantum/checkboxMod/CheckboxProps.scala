@@ -3,11 +3,12 @@ package typings.cathoQuantum.checkboxMod
 import typings.cathoQuantum.AnonBaseFontSize
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CheckboxProps[T] extends js.Object {
+trait CheckboxProps extends js.Object {
   var checked: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -15,14 +16,14 @@ trait CheckboxProps[T] extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var name: String
-  var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   var theme: js.UndefOr[AnonBaseFontSize] = js.undefined
   var value: js.UndefOr[String] = js.undefined
 }
 
 object CheckboxProps {
   @scala.inline
-  def apply[T](
+  def apply(
     name: String,
     checked: js.UndefOr[Boolean] = js.undefined,
     children: String = null,
@@ -30,10 +31,10 @@ object CheckboxProps {
     error: String = null,
     id: String = null,
     label: String = null,
-    onChange: ChangeEvent[T] => Unit = null,
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
     theme: AnonBaseFontSize = null,
     value: String = null
-  ): CheckboxProps[T] = {
+  ): CheckboxProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -44,7 +45,7 @@ object CheckboxProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CheckboxProps[T]]
+    __obj.asInstanceOf[CheckboxProps]
   }
 }
 

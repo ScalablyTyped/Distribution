@@ -44,13 +44,13 @@ trait CookiesStatic[T /* <: js.Object */] extends js.Object {
     */
   def remove(name: String): Unit = js.native
   def remove(name: String, options: CookieAttributes): Unit = js.native
-  def set(name: String, value: T): Unit = js.native
-  def set(name: String, value: T, options: CookieAttributes): Unit = js.native
+  def set(name: String, value: T): js.UndefOr[String] = js.native
+  def set(name: String, value: T, options: CookieAttributes): js.UndefOr[String] = js.native
   /**
     * Create a cookie
     */
-  def set(name: String, value: String): Unit = js.native
-  def set(name: String, value: String, options: CookieAttributes): Unit = js.native
+  def set(name: String, value: String): js.UndefOr[String] = js.native
+  def set(name: String, value: String, options: CookieAttributes): js.UndefOr[String] = js.native
   def withConverter[TConv /* <: js.Object */](converter: AnonRead[TConv]): CookiesStatic[TConv] = js.native
   /**
     * Create a new instance of the api that overrides the default

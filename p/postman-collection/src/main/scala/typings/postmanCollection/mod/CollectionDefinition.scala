@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CollectionDefinition extends ItemGroupDefinition {
   var info: js.UndefOr[AnonId] = js.undefined
-  var variable: js.UndefOr[VariableDefinition] = js.undefined
+  var variable: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
 }
 
 object CollectionDefinition {
@@ -21,7 +21,7 @@ object CollectionDefinition {
     info: AnonId = null,
     item: js.Array[ItemDefinition | ItemGroupDefinition] = null,
     name: String = null,
-    variable: VariableDefinition = null
+    variable: js.Array[VariableDefinition] = null
   ): CollectionDefinition = {
     val __obj = js.Dynamic.literal()
     if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])

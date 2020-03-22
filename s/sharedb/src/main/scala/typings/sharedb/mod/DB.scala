@@ -38,6 +38,30 @@ abstract class DB () extends js.Object {
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
   ): Unit = js.native
+  def getOps(
+    collection: String,
+    id: String,
+    from: Double,
+    to: Null,
+    options: js.Any,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): Unit = js.native
+  def getOps(
+    collection: String,
+    id: String,
+    from: Null,
+    to: Double,
+    options: js.Any,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): Unit = js.native
+  def getOps(
+    collection: String,
+    id: String,
+    from: Null,
+    to: Null,
+    options: js.Any,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): Unit = js.native
   def getOpsBulk(
     collection: String,
     fromMap: js.Any,
@@ -49,6 +73,14 @@ abstract class DB () extends js.Object {
     collection: String,
     id: String,
     from: Double,
+    snapshot: Double,
+    options: js.Any,
+    callback: js.Function1[/* repeated */ js.Any, _]
+  ): Unit = js.native
+  def getOpsToSnapshot(
+    collection: String,
+    id: String,
+    from: Null,
     snapshot: Double,
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]

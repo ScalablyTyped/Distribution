@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Manages the user layout configuration in the CDN live streaming. */
+/** Manages the user layout configuration in {@link setLiveTranscoding}. */
 trait TranscodingUser extends js.Object {
   /**
     * Transparency of the video frame.

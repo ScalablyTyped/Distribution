@@ -28,7 +28,6 @@ trait ColumnInstance[D /* <: js.Object */] extends js.Object {
   var parent: ColumnInstance[D] = js.native
    // not documented
   var placeholderOf: js.UndefOr[ColumnInstance[js.Object]] = js.native
-  var show: js.UndefOr[Boolean | (js.Function1[/* instance */ TableInstance[D], Boolean])] = js.native
   var totalLeft: Double = js.native
   var totalWidth: Double = js.native
   var width: js.UndefOr[Double | String] = js.native

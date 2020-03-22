@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babylon-walk"
-version := "3.10-dt-20190717Z-5196cd"
+version := "3.10-dt-20200226Z-5196cd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

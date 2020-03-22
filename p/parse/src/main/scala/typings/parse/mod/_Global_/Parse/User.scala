@@ -16,14 +16,25 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait User[T /* <: Attributes */] extends Object[T] {
-  def _linkWith(provider: js.Any, options: AnonAuthData): js.Promise[User[Attributes]] = js.native
-  def _linkWith(provider: js.Any, options: AnonAuthData, saveOpts: FullOptions): js.Promise[User[Attributes]] = js.native
+  def _isLinked(provider: String): Boolean = js.native
+  def _isLinked(provider: AuthProvider): Boolean = js.native
+  def _linkWith(provider: String, options: AnonAuthData): js.Promise[this.type] = js.native
+  def _linkWith(provider: String, options: AnonAuthData, saveOpts: FullOptions): js.Promise[this.type] = js.native
+  def _linkWith(provider: AuthProvider, options: AnonAuthData): js.Promise[this.type] = js.native
+  def _linkWith(provider: AuthProvider, options: AnonAuthData, saveOpts: FullOptions): js.Promise[this.type] = js.native
+  def _unlinkFrom(provider: String): js.Promise[this.type] = js.native
+  def _unlinkFrom(provider: String, options: FullOptions): js.Promise[this.type] = js.native
+  def _unlinkFrom(provider: AuthProvider): js.Promise[this.type] = js.native
+  def _unlinkFrom(provider: AuthProvider, options: FullOptions): js.Promise[this.type] = js.native
   def authenticated(): Boolean = js.native
   def getEmail(): js.UndefOr[String] = js.native
   def getSessionToken(): String = js.native
   def getUsername(): js.UndefOr[String] = js.native
   def isCurrent(): Boolean = js.native
-  def linkWith(user: User[Attributes], authData: AuthData, options: FullOptions): js.Promise[User[Attributes]] = js.native
+  def linkWith(provider: String, options: AnonAuthData): js.Promise[this.type] = js.native
+  def linkWith(provider: String, options: AnonAuthData, saveOpts: FullOptions): js.Promise[this.type] = js.native
+  def linkWith(provider: AuthProvider, options: AnonAuthData): js.Promise[this.type] = js.native
+  def linkWith(provider: AuthProvider, options: AnonAuthData, saveOpts: FullOptions): js.Promise[this.type] = js.native
   def logIn(): js.Promise[this.type] = js.native
   def logIn(options: FullOptions): js.Promise[this.type] = js.native
   def setEmail(email: String): Boolean = js.native

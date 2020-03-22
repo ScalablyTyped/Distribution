@@ -20,7 +20,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -85,7 +85,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  buttonProps ? :{[x: string] : any},   className ? :string} & react.react.HTMLAttributes<std.HTMLDivElement> */
+/* Inlined {  buttonProps ? :{[x: string] : any},   className ? :string,   isExpanded ? :boolean, onExpandAll ? (args : ...any): any} & react.react.HTMLAttributes<std.HTMLDivElement> */
 trait TreeHeadProps extends js.Object {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
@@ -99,7 +99,7 @@ trait TreeHeadProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   /**
@@ -279,7 +279,6 @@ trait TreeHeadProps extends js.Object {
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
-  /* Additional props to be spread to the header expand/collapse `<button>` element. */
   var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
@@ -307,6 +306,7 @@ trait TreeHeadProps extends js.Object {
     * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
     */
   var is: js.UndefOr[String] = js.undefined
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
   var itemRef: js.UndefOr[String] = js.undefined
@@ -350,6 +350,7 @@ trait TreeHeadProps extends js.Object {
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onExpandAll: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   // Focus Events
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -439,7 +440,7 @@ object TreeHeadProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -505,6 +506,7 @@ object TreeHeadProps {
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
+    isExpanded: js.UndefOr[Boolean] = js.undefined,
     itemID: String = null,
     itemProp: String = null,
     itemRef: String = null,
@@ -542,6 +544,7 @@ object TreeHeadProps {
     onEncrypted: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onEnded: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onError: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onExpandAll: /* repeated */ js.Any => _ = null,
     onFocus: FocusEvent[HTMLDivElement] => Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
@@ -681,6 +684,7 @@ object TreeHeadProps {
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
@@ -718,6 +722,7 @@ object TreeHeadProps {
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onExpandAll != null) __obj.updateDynamic("onExpandAll")(js.Any.fromFunction1(onExpandAll))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))

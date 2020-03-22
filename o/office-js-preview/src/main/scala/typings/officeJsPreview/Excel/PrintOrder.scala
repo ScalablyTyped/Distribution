@@ -15,7 +15,6 @@ sealed trait PrintOrder extends js.Object
 @js.native
 object PrintOrder extends js.Object {
   /**
-    *
     * Process down the rows before processing across pages or page fields to the right.
     *
     */
@@ -23,7 +22,6 @@ object PrintOrder extends js.Object {
   sealed trait downThenOver extends PrintOrder
   
   /**
-    *
     * Process across pages or page fields to the right before moving down the rows.
     *
     */

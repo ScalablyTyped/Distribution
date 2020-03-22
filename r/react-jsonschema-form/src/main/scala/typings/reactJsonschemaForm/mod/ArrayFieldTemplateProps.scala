@@ -18,7 +18,7 @@ trait ArrayFieldTemplateProps[T] extends js.Object {
   var disabled: Boolean
   var formContext: js.Any
   var formData: T
-  var idSchema: IdSchema
+  var idSchema: IdSchema[_]
   var items: js.Array[AnonChildren]
   var readonly: Boolean
   var registry: AnonDefinitions
@@ -39,7 +39,7 @@ object ArrayFieldTemplateProps {
     disabled: Boolean,
     formContext: js.Any,
     formData: T,
-    idSchema: IdSchema,
+    idSchema: IdSchema[_],
     items: js.Array[AnonChildren],
     onAddClick: js.Any => js.Function1[/* event */ js.Any, Unit],
     readonly: Boolean,

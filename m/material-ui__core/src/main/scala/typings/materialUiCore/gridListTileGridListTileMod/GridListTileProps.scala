@@ -1,6 +1,6 @@
 package typings.materialUiCore.gridListTileGridListTileMod
 
-import typings.materialUiCore.PartialClassNameMapGridListTileClassKey
+import typings.materialUiCore.PartialClassNameMapGridLiImgFullHeight
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -146,7 +146,7 @@ trait GridListTileProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapGridListTileClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapGridLiImgFullHeight] = js.native
   var color: js.UndefOr[String] = js.native
   var cols: js.UndefOr[Double] = js.native
   var component: js.UndefOr[ReactType[GridListTileProps]] = js.native
@@ -329,7 +329,7 @@ object GridListTileProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapGridListTileClassKey = null,
+    classes: PartialClassNameMapGridLiImgFullHeight = null,
     color: String = null,
     cols: Int | Double = null,
     component: ReactType[GridListTileProps] = null,

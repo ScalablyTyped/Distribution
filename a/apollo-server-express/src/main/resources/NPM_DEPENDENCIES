@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-server-express" : "2.10.1"
+      "apollo-server-express" : "2.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-server-express" : "2.10.1"
+      "apollo-server-express" : "2.11.0"
     }
   ],
   "compile-devDependencies" : [

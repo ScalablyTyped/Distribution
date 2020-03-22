@@ -34,7 +34,8 @@ trait ISemanticColors extends ISemanticTextColors {
   var bodyDivider: String
   /**
     * The color for chrome adjacent to an area with bodyBackground.
-    * This can be used to provide visual separation of zones when using stronger colors, when using a divider line is not desired.
+    * This can be used to provide visual separation of zones when using stronger colors, when using a divider line
+    * is not desired.
     * In most themes, this should match the color of bodyBackground.
     * See also: bodyFrameDivider
     */

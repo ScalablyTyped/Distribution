@@ -2,9 +2,9 @@ package typings.tensorflowTfjsLayers
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
 import typings.tensorflowTfjsCore.mod.Variable_
 import typings.tensorflowTfjsCore.tensorMod.Scalar
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import scala.scalajs.js
@@ -30,11 +30,11 @@ object variablesMod extends js.Object {
       * variable after optimize updates
       * @throws ValueError if `name` is `null` or `undefined`.
       */
-    def this(`val`: Tensor_[Rank]) = this()
-    def this(`val`: Tensor_[Rank], dtype: DataType) = this()
-    def this(`val`: Tensor_[Rank], dtype: DataType, name: String) = this()
-    def this(`val`: Tensor_[Rank], dtype: DataType, name: String, trainable: Boolean) = this()
-    def this(`val`: Tensor_[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
+    def this(`val`: Tensor[Rank]) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: String) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean) = this()
+    def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
     val constraint: Constraint = js.native
     val dtype: DataType = js.native
     val id: Double = js.native
@@ -56,7 +56,7 @@ object variablesMod extends js.Object {
       * the invocation. Future mutations in the value of the tensor will only
       * be reflected by future calls to this method.
       */
-    def read(): Tensor_[Rank] = js.native
+    def read(): Tensor[Rank] = js.native
     /**
       * Update the value of the Variable.
       *
@@ -64,18 +64,18 @@ object variablesMod extends js.Object {
       *   dtype and shape of the Variable.
       * @return This Variable.
       */
-    def write(newVal: Tensor_[Rank]): this.type = js.native
+    def write(newVal: Tensor[Rank]): this.type = js.native
   }
   
-  def batchGetValue(xs: js.Array[LayerVariable]): js.Array[Tensor_[Rank]] = js.native
-  def batchSetValue(variablesAndValues: js.Array[js.Tuple2[LayerVariable, Tensor_[Rank]]]): Unit = js.native
+  def batchGetValue(xs: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = js.native
+  def batchSetValue(variablesAndValues: js.Array[js.Tuple2[LayerVariable, Tensor[Rank]]]): Unit = js.native
   def eyeVariable(size: Double): LayerVariable = js.native
   def eyeVariable(size: Double, dtype: DataType): LayerVariable = js.native
   def eyeVariable(size: Double, dtype: DataType, name: String): LayerVariable = js.native
-  def gradients(lossFn: js.Function0[Scalar], variables: js.Array[LayerVariable]): js.Array[Tensor_[Rank]] = js.native
-  def onesLike(x: Tensor_[Rank]): LayerVariable = js.native
-  def onesLike(x: Tensor_[Rank], dtype: DataType): LayerVariable = js.native
-  def onesLike(x: Tensor_[Rank], dtype: DataType, name: String): LayerVariable = js.native
+  def gradients(lossFn: js.Function0[Scalar], variables: js.Array[LayerVariable]): js.Array[Tensor[Rank]] = js.native
+  def onesLike(x: Tensor[Rank]): LayerVariable = js.native
+  def onesLike(x: Tensor[Rank], dtype: DataType): LayerVariable = js.native
+  def onesLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = js.native
   def onesVariable(shape: Shape): LayerVariable = js.native
   def onesVariable(shape: Shape, dtype: DataType): LayerVariable = js.native
   def onesVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = js.native
@@ -95,16 +95,16 @@ object variablesMod extends js.Object {
   def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double): LayerVariable = js.native
   def truncatedNormalVariable(shape: Shape, mean: Double, stddev: Double, dtype: DataType, seed: Double, name: String): LayerVariable = js.native
-  def update(x: LayerVariable, xNew: Tensor_[Rank]): LayerVariable = js.native
-  def updateAdd(x: LayerVariable, increment: Tensor_[Rank]): LayerVariable = js.native
-  def updateSub(x: LayerVariable, decrement: Tensor_[Rank]): LayerVariable = js.native
-  def variable(x: Tensor_[Rank]): LayerVariable = js.native
-  def variable(x: Tensor_[Rank], dtype: DataType): LayerVariable = js.native
-  def variable(x: Tensor_[Rank], dtype: DataType, name: String): LayerVariable = js.native
-  def variable(x: Tensor_[Rank], dtype: DataType, name: String, constraint: Constraint): LayerVariable = js.native
-  def zerosLike(x: Tensor_[Rank]): LayerVariable = js.native
-  def zerosLike(x: Tensor_[Rank], dtype: DataType): LayerVariable = js.native
-  def zerosLike(x: Tensor_[Rank], dtype: DataType, name: String): LayerVariable = js.native
+  def update(x: LayerVariable, xNew: Tensor[Rank]): LayerVariable = js.native
+  def updateAdd(x: LayerVariable, increment: Tensor[Rank]): LayerVariable = js.native
+  def updateSub(x: LayerVariable, decrement: Tensor[Rank]): LayerVariable = js.native
+  def variable(x: Tensor[Rank]): LayerVariable = js.native
+  def variable(x: Tensor[Rank], dtype: DataType): LayerVariable = js.native
+  def variable(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = js.native
+  def variable(x: Tensor[Rank], dtype: DataType, name: String, constraint: Constraint): LayerVariable = js.native
+  def zerosLike(x: Tensor[Rank]): LayerVariable = js.native
+  def zerosLike(x: Tensor[Rank], dtype: DataType): LayerVariable = js.native
+  def zerosLike(x: Tensor[Rank], dtype: DataType, name: String): LayerVariable = js.native
   def zerosVariable(shape: Shape): LayerVariable = js.native
   def zerosVariable(shape: Shape, dtype: DataType): LayerVariable = js.native
   def zerosVariable(shape: Shape, dtype: DataType, name: String): LayerVariable = js.native

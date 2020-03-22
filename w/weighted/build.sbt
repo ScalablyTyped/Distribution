@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "weighted"
-version := "0.0-unknown-dt-20190322Z-e66118"
+version := "0.0-unknown-dt-20200227Z-e66118"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

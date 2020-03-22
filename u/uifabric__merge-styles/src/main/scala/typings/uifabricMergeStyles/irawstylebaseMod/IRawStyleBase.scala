@@ -138,7 +138,8 @@ trait IRawStyleBase extends IRawFontStyle {
     */
   var animation: js.UndefOr[ICSSRule | String] = js.undefined
   /**
-    * Defines a length of time to elapse before an animation starts, allowing an animation to begin execution some time after it is applied.
+    * Defines a length of time to elapse before an animation starts, allowing an animation to begin execution
+    * some time after it is applied.
     */
   var animationDelay: js.UndefOr[ICSSRule | String] = js.undefined
   /**

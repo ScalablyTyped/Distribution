@@ -41,13 +41,13 @@ object mod extends js.Object {
   ): Unit = js.native
   def validate(schemas: StringDictionary[JSONSchema4]): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native
   def validate(schemas: StringDictionary[JSONSchema4], schemaDependencies: js.Array[JSONSchema4]): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native

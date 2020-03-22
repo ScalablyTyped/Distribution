@@ -1,6 +1,6 @@
 package typings.amqpConnectionManager.mod
 
-import typings.node.tlsMod.ConnectionOptions
+import typings.amqpConnectionManager.ConnectionOptionsnoDelayb
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait AmqpConnectionManagerOptions extends js.Object {
   	 * These are passed through directly to amqplib (http://www.squaremobius.net/amqp.node/channel_api.html#connect),
   	 * which in turn passes them through to tls.connect (https://nodejs.org/api/tls.html#tls_tls_connect_options_callback)
   	 */
-  var connectionOptions: js.UndefOr[ConnectionOptions] = js.undefined
+  var connectionOptions: js.UndefOr[ConnectionOptionsnoDelayb] = js.undefined
   /**
   	 * is a function which returns one or more servers to connect to. This should return either a single URL or an array of URLs.
   	 * This is handy when you're using a service discovery mechanism such as Consul or etcd. Instead of taking a callback, this can also
@@ -34,7 +34,7 @@ trait AmqpConnectionManagerOptions extends js.Object {
 object AmqpConnectionManagerOptions {
   @scala.inline
   def apply(
-    connectionOptions: ConnectionOptions = null,
+    connectionOptions: ConnectionOptionsnoDelayb = null,
     findServers: (js.Function1[/* callback */ js.Function1[/* urls */ String | js.Array[String], Unit], Unit]) | (js.Function0[js.Promise[String | js.Array[String]]]) = null,
     heartbeatIntervalInSeconds: Int | Double = null,
     reconnectTimeInSeconds: Int | Double = null

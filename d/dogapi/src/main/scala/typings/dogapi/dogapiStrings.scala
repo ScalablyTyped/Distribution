@@ -15,6 +15,9 @@ object dogapiStrings {
   sealed trait chef extends js.Object
   
   @js.native
+  sealed trait count extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -22,6 +25,9 @@ object dogapiStrings {
   
   @js.native
   sealed trait feed extends js.Object
+  
+  @js.native
+  sealed trait gauge extends js.Object
   
   @js.native
   sealed trait git extends js.Object
@@ -54,6 +60,9 @@ object dogapiStrings {
   sealed trait puppet extends js.Object
   
   @js.native
+  sealed trait rate extends js.Object
+  
+  @js.native
   sealed trait success extends js.Object
   
   @js.native
@@ -69,11 +78,15 @@ object dogapiStrings {
   @scala.inline
   def chef: chef = "chef".asInstanceOf[chef]
   @scala.inline
+  def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def fabric: fabric = "fabric".asInstanceOf[fabric]
   @scala.inline
   def feed: feed = "feed".asInstanceOf[feed]
+  @scala.inline
+  def gauge: gauge = "gauge".asInstanceOf[gauge]
   @scala.inline
   def git: git = "git".asInstanceOf[git]
   @scala.inline
@@ -94,6 +107,8 @@ object dogapiStrings {
   def ok: ok = "ok".asInstanceOf[ok]
   @scala.inline
   def puppet: puppet = "puppet".asInstanceOf[puppet]
+  @scala.inline
+  def rate: rate = "rate".asInstanceOf[rate]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline

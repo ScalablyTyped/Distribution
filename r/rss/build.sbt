@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rss"
-version := "0.0-unknown-dt-20190322Z-8b266b"
+version := "0.0-unknown-dt-20200227Z-8b266b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

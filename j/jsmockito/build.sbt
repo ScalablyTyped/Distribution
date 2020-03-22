@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsmockito"
-version := "1.0.4-dt-20190322Z-439f5b"
+version := "1.0.4-dt-20200225Z-439f5b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

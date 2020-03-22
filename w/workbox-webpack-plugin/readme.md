@@ -1,7 +1,7 @@
 
 # Scala.js typings for workbox-webpack-plugin
 
-Typings are for version 4.1
+Typings are for version 5.0
 
 ## Library description:
 A plugin for your Webpack build process, helping you generate a manifest of local files that workbox-sw should precache.

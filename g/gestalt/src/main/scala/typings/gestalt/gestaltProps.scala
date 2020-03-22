@@ -10,6 +10,9 @@ trait gestaltProps {
   def AvatarProps: typings.gestalt.mod.AvatarProps.type = typings.gestalt.mod.AvatarProps
   type AvatarProps = typings.gestalt.mod.AvatarProps
   @scala.inline
+  def BadgeProps: typings.gestalt.mod.BadgeProps.type = typings.gestalt.mod.BadgeProps
+  type BadgeProps = typings.gestalt.mod.BadgeProps
+  @scala.inline
   def BoxProps: typings.gestalt.mod.BoxProps.type = typings.gestalt.mod.BoxProps
   type BoxProps = typings.gestalt.mod.BoxProps
   @scala.inline
@@ -21,6 +24,9 @@ trait gestaltProps {
   @scala.inline
   def CheckboxProps: typings.gestalt.mod.CheckboxProps.type = typings.gestalt.mod.CheckboxProps
   type CheckboxProps = typings.gestalt.mod.CheckboxProps
+  @scala.inline
+  def CollageProps: typings.gestalt.mod.CollageProps.type = typings.gestalt.mod.CollageProps
+  type CollageProps = typings.gestalt.mod.CollageProps
   @scala.inline
   def ColumnProps: typings.gestalt.mod.ColumnProps.type = typings.gestalt.mod.ColumnProps
   type ColumnProps = typings.gestalt.mod.ColumnProps
@@ -48,6 +54,9 @@ trait gestaltProps {
   @scala.inline
   def LabelProps: typings.gestalt.mod.LabelProps.type = typings.gestalt.mod.LabelProps
   type LabelProps = typings.gestalt.mod.LabelProps
+  @scala.inline
+  def LayerProps: typings.gestalt.mod.LayerProps.type = typings.gestalt.mod.LayerProps
+  type LayerProps = typings.gestalt.mod.LayerProps
   @scala.inline
   def LetterboxProps: typings.gestalt.mod.LetterboxProps.type = typings.gestalt.mod.LetterboxProps
   type LetterboxProps = typings.gestalt.mod.LetterboxProps

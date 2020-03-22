@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nextgen-events"
-version := "1.1-dt-20190125Z-99f231"
+version := "1.1-dt-20200227Z-99f231"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

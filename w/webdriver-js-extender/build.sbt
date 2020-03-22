@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "webdriver-js-extender"
-version := "2.1.0-dbe280"
+version := "2.1.0-f0c718"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20200214Z-146cad",
+  "org.scalablytyped" %%% "selenium-webdriver" % "4.0-dt-20200302Z-146cad",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

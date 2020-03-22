@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.autofillAutofillMod
 import typings.officeUiFabricReact.AnonEnableAutofillOnKeyPress
 import typings.officeUiFabricReact.autofillTypesMod.IAutofill
 import typings.officeUiFabricReact.autofillTypesMod.IAutofillProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,9 +12,10 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Autofill/Autofill", "Autofill")
 @js.native
 class Autofill protected ()
-  extends BaseComponent[IAutofillProps, IAutofillState]
+  extends Component[IAutofillProps, IAutofillState, js.Any]
      with IAutofill {
   def this(props: IAutofillProps) = this()
+  var _async: js.Any = js.native
   var _autoFillEnabled: js.Any = js.native
   var _doesTextStartWith: js.Any = js.native
   var _getCurrentInputValue: js.Any = js.native
@@ -96,6 +97,8 @@ class Autofill protected ()
   override def clear(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MAutofill(): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MAutofill(): Unit = js.native
   /**
     * Focus the input element.
     */

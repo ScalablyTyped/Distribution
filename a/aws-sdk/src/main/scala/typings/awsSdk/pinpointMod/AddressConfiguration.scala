@@ -15,7 +15,7 @@ trait AddressConfiguration extends js.Object {
     */
   var ChannelType: js.UndefOr[typings.awsSdk.pinpointMod.ChannelType] = js.native
   /**
-    * An object that maps custom attributes to attributes for the address and is attached to the message. For a push notification, this payload is added to the data.pinpoint object. For an email or text message, this payload is added to email/SMS delivery receipt event attributes.
+    * An object that maps custom attributes to attributes for the address and is attached to the message. Attribute names are case sensitive. For a push notification, this payload is added to the data.pinpoint object. For an email or text message, this payload is added to email/SMS delivery receipt event attributes.
     */
   var Context: js.UndefOr[MapOfString] = js.native
   /**

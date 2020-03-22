@@ -1,7 +1,7 @@
 
 # Scala.js typings for matter-js
 
-Typings are for version 0.10.1
+Typings are for version 0.14.2
 
 ## Library description:
 a 2D rigid body physics engine for the web

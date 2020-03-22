@@ -59,6 +59,11 @@ object computedMod extends js.Object {
   def expandProperties(pattern: String, callback: js.Function1[/* expanded */ String, Unit]): Unit = js.native
   def filter(
     dependentKey: String,
+    additionalDependentKeys: js.Array[String],
+    callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
+  ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def filter(
+    dependentKey: String,
     callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
   ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def filterBy(dependentKey: String, propertyKey: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
@@ -84,6 +89,12 @@ object computedMod extends js.Object {
   def readOnly(dependentKey: String): ComputedProperty[_, _] = js.native
   def reads(dependentKey: String): ComputedProperty[_, _] = js.native
   def setDiff(setAProperty: String, setBProperty: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def sort(itemsKey: String, dependentKeys: js.Array[String], sortDefinition: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def sort(
+    itemsKey: String,
+    dependentKeys: js.Array[String],
+    sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]
+  ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def sort(itemsKey: String, sortDefinition: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def sort(itemsKey: String, sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def sum(dependentKey: String): ComputedProperty[Double, Double] = js.native

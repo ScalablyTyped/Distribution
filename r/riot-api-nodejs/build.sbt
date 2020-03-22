@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "riot-api-nodejs"
-version := "0.0-unknown-dt-20190322Z-b355c3"
+version := "0.0-unknown-dt-20200227Z-c5a12c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "riot-games-api" % "0.0-unknown-dt-20190322Z-f6c357",
+  "org.scalablytyped" %%% "riot-games-api" % "0.0-unknown-dt-20200227Z-f6c357",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

@@ -13,25 +13,25 @@ sealed trait AttachmentType extends js.Object
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.AttachmentType")
 @js.native
 object AttachmentType extends js.Object {
   /**
-    * The attachment is stored in a cloud location, such as OneDrive. The id property of the attachment contains a URL to the file.
+    * The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL to the file.
     */
   @js.native
   sealed trait Cloud extends AttachmentType
   
   /**
-    * The attachment is a file
+    * The attachment is a file.
     */
   @js.native
   sealed trait File extends AttachmentType
   
   /**
-    * The attachment is an Exchange item
+    * The attachment is an Exchange item.
     */
   @js.native
   sealed trait Item extends AttachmentType

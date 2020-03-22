@@ -958,7 +958,7 @@ class NodePath[T] protected () extends js.Object {
     *  - Insert the provided nodes after the current node.
     *  - Remove the current node.
     */
-  def replaceWithMultiple(nodes: js.Array[Node]): Unit = js.native
+  def replaceWithMultiple[Nodes /* <: js.Array[Node] */](nodes: Nodes): NodePaths[Nodes] = js.native
   /**
     * Parse a string as an expression and replace the current node with the result.
     *
@@ -979,13 +979,12 @@ class NodePath[T] protected () extends js.Object {
   def stop(): Unit = js.native
   def traverse(visitor: Visitor[js.Object]): Unit = js.native
   def traverse[T](visitor: Visitor[T], state: T): Unit = js.native
-  def unshiftContainer(listKey: String, nodes: js.Array[Node]): Unit = js.native
   /**
     * Insert child nodes at the start of the current node.
     * @param listKey - The key at which the child nodes are stored (usually body).
     * @param nodes - the nodes to insert.
     */
-  def unshiftContainer(listKey: String, nodes: Node): Unit = js.native
+  def unshiftContainer[Nodes /* <: Node | js.Array[Node] */](listKey: String, nodes: Nodes): NodePaths[Nodes] = js.native
   /** Update all sibling node paths after `fromIndex` by `incrementBy`. */
   def updateSiblingKeys(fromIndex: Double, incrementBy: Double): Unit = js.native
   def visit(): Boolean = js.native

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "i18next-ko"
-version := "3.0-dt-20190819Z-a8219f"
+version := "3.0-dt-20190819Z-a74b54"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "i18next" % "19.3.2-d924c8",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190819Z-3dc6f9",
+  "org.scalablytyped" %%% "i18next" % "19.3.3-435676",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20200225Z-a17ae9",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

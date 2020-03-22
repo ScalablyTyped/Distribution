@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object appmeshMod {
+  type AccountId = java.lang.String
   type Arn = java.lang.String
   type AwsCloudMapInstanceAttributeKey = java.lang.String
   type AwsCloudMapInstanceAttributeValue = java.lang.String

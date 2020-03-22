@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -77,7 +76,7 @@ trait WeakValidationMapBreadcru extends js.Object {
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -132,7 +131,6 @@ trait WeakValidationMapBreadcru extends js.Object {
   var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var customStyles: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[AnonHtml | Null]]] = js.undefined
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
@@ -261,7 +259,7 @@ object WeakValidationMapBreadcru {
     accessKey: Validator[js.UndefOr[Null | String]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
@@ -314,7 +312,6 @@ object WeakValidationMapBreadcru {
     color: Validator[js.UndefOr[Null | String]] = null,
     contentEditable: Validator[js.UndefOr[inherit | Booleanish | Null]] = null,
     contextMenu: Validator[js.UndefOr[Null | String]] = null,
-    customStyles: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
     dangerouslySetInnerHTML: Validator[js.UndefOr[AnonHtml | Null]] = null,
     datatype: Validator[js.UndefOr[Null | String]] = null,
     defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
@@ -491,7 +488,6 @@ object WeakValidationMapBreadcru {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (defaultChecked != null) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])

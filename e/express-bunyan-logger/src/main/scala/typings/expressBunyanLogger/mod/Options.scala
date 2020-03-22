@@ -39,7 +39,7 @@ object Options {
     format: String | FormatFunction = null,
     genReqId: /* req */ Request_[ParamsDictionary] => String = null,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    includesFn: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => js.Any = null,
+    includesFn: (/* req */ Request_[ParamsDictionary], /* res */ Response_[js.Any]) => js.Any = null,
     level: LogLevel = null,
     levelFn: (/* status */ Double, /* err */ Error | Null, /* meta */ js.Any) => String = null,
     logger: typings.bunyan.mod.^ = null,

@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IteratoranyanyanyanyConstructor extends js.Object {
   /**
-    * @internal
-    */
-  var erased_ : js.UndefOr[Boolean] = js.native
-  /**
     * The first, key element.
     */
   @JSName("first")

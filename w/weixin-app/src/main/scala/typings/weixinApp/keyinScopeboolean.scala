@@ -20,6 +20,8 @@ trait keyinScopeboolean extends js.Object {
   var scopeDotuserInfo: Boolean
   @JSName("scope.userLocation")
   var scopeDotuserLocation: Boolean
+  @JSName("scope.userLocationBackground")
+  var scopeDotuserLocationBackground: Boolean
   @JSName("scope.werun")
   var scopeDotwerun: Boolean
   @JSName("scope.writePhotosAlbum")
@@ -36,6 +38,7 @@ object keyinScopeboolean {
     scopeDotrecord: Boolean,
     scopeDotuserInfo: Boolean,
     scopeDotuserLocation: Boolean,
+    scopeDotuserLocationBackground: Boolean,
     scopeDotwerun: Boolean,
     scopeDotwritePhotosAlbum: Boolean
   ): keyinScopeboolean = {
@@ -47,6 +50,7 @@ object keyinScopeboolean {
     __obj.updateDynamic("scope.record")(scopeDotrecord.asInstanceOf[js.Any])
     __obj.updateDynamic("scope.userInfo")(scopeDotuserInfo.asInstanceOf[js.Any])
     __obj.updateDynamic("scope.userLocation")(scopeDotuserLocation.asInstanceOf[js.Any])
+    __obj.updateDynamic("scope.userLocationBackground")(scopeDotuserLocationBackground.asInstanceOf[js.Any])
     __obj.updateDynamic("scope.werun")(scopeDotwerun.asInstanceOf[js.Any])
     __obj.updateDynamic("scope.writePhotosAlbum")(scopeDotwritePhotosAlbum.asInstanceOf[js.Any])
     __obj.asInstanceOf[keyinScopeboolean]

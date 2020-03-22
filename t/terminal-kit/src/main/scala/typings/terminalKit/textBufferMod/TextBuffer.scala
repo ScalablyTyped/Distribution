@@ -1,6 +1,6 @@
 package typings.terminalKit.textBufferMod
 
-import typings.terminalKit.Anon1
+import typings.terminalKit.Anon2
 import typings.terminalKit.AnonFinalCall
 import typings.terminalKit.AnonHeight
 import typings.terminalKit.AnonMisc
@@ -22,7 +22,7 @@ trait TextBuffer extends js.Object {
   def draw(): Unit = js.native
   def draw(options: DrawOptions): Unit = js.native
   def drawCursor(): Unit = js.native
-  def drawCursor(options: Anon1): Unit = js.native
+  def drawCursor(options: Anon2): Unit = js.native
   def getContentSize(): AnonHeight = js.native
   def getHidden(): Boolean = js.native
   def getMisc(): js.Any = js.native

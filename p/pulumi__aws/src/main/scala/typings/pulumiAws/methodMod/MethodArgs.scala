@@ -51,7 +51,7 @@ trait MethodArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
 }
 
 object MethodArgs {
@@ -60,7 +60,7 @@ object MethodArgs {
     authorization: Input[String],
     httpMethod: Input[String],
     resourceId: Input[String],
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     apiKeyRequired: Input[Boolean] = null,
     authorizationScopes: Input[js.Array[Input[String]]] = null,
     authorizerId: Input[String] = null,

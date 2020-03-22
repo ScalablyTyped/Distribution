@@ -1,14 +1,15 @@
 package typings.officeUiFabricReact.calendarMonthMod
 
 import typings.officeUiFabricReact.AnonDictkey
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/Calendar/CalendarMonth", "CalendarMonth")
 @js.native
-class CalendarMonth protected () extends BaseComponent[ICalendarMonthProps, ICalendarMonthState] {
+class CalendarMonth protected ()
+  extends Component[ICalendarMonthProps, ICalendarMonthState, js.Any] {
   def this(props: ICalendarMonthProps) = this()
   var _calendarYearRef: js.Any = js.native
   var _focusOnUpdate: js.Any = js.native

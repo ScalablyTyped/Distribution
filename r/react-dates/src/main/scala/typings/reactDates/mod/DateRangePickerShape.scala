@@ -33,6 +33,7 @@ trait DateRangePickerShape extends js.Object {
   var focusedInput: FocusedInputShape | Null = js.native
   var hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.native
   var horizontalMargin: js.UndefOr[Double] = js.native
+  var horizontalMonthPadding: js.UndefOr[Double] = js.native
   var initialVisibleMonth: js.UndefOr[js.Function0[momentObj]] = js.native
   var inputIconPosition: js.UndefOr[IconPositionShape] = js.native
   var isDayBlocked: js.UndefOr[js.Function1[/* day */ js.Any, Boolean]] = js.native

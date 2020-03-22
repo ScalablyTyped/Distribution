@@ -31,6 +31,10 @@ trait UseWaitAPI extends js.Object {
     */
   var Wait: ComponentType[WaitProps]
   /**
+    * Returns an array of waiters.
+    */
+  var waiters: js.Array[String]
+  /**
     * Returns boolean value if any loader exists in context.
     *
     * ```tsx
@@ -39,6 +43,19 @@ trait UseWaitAPI extends js.Object {
     * ```
     */
   def anyWaiting(): Boolean
+  /**
+    * Creates a waiting context.
+    *
+    * ```tsx
+    * const { startWaiting, endWaiting, isWaiting, Wait } = createWaitingContext("creating user");
+    *  return (
+    *   <button disabled={isWaiting()}>
+    *     Disabled while creating user
+    *   </button>
+    * );
+    * ```
+    */
+  def createWaitingContext(waiter: String): WaitingContext
   /**
     * Stops the given waiter.
     *
@@ -77,11 +94,13 @@ object UseWaitAPI {
   def apply(
     Wait: ComponentType[WaitProps],
     anyWaiting: () => Boolean,
+    createWaitingContext: String => WaitingContext,
     endWaiting: String => Unit,
     isWaiting: String => Boolean,
-    startWaiting: String => Unit
+    startWaiting: String => Unit,
+    waiters: js.Array[String]
   ): UseWaitAPI = {
-    val __obj = js.Dynamic.literal(Wait = Wait.asInstanceOf[js.Any], anyWaiting = js.Any.fromFunction0(anyWaiting), endWaiting = js.Any.fromFunction1(endWaiting), isWaiting = js.Any.fromFunction1(isWaiting), startWaiting = js.Any.fromFunction1(startWaiting))
+    val __obj = js.Dynamic.literal(Wait = Wait.asInstanceOf[js.Any], anyWaiting = js.Any.fromFunction0(anyWaiting), createWaitingContext = js.Any.fromFunction1(createWaitingContext), endWaiting = js.Any.fromFunction1(endWaiting), isWaiting = js.Any.fromFunction1(isWaiting), startWaiting = js.Any.fromFunction1(startWaiting), waiters = waiters.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UseWaitAPI]
   }

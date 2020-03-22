@@ -111,7 +111,7 @@ object iabVpaidStrings {
        with SimpleEvents
   
   @js.native
-  sealed trait AdVideoMidPoint
+  sealed trait AdVideoMidpoint
     extends EventsNames
        with SimpleEvents
   
@@ -184,7 +184,7 @@ object iabVpaidStrings {
   @scala.inline
   def AdVideoFirstQuartile: AdVideoFirstQuartile = "AdVideoFirstQuartile".asInstanceOf[AdVideoFirstQuartile]
   @scala.inline
-  def AdVideoMidPoint: AdVideoMidPoint = "AdVideoMidPoint".asInstanceOf[AdVideoMidPoint]
+  def AdVideoMidpoint: AdVideoMidpoint = "AdVideoMidpoint".asInstanceOf[AdVideoMidpoint]
   @scala.inline
   def AdVideoStart: AdVideoStart = "AdVideoStart".asInstanceOf[AdVideoStart]
   @scala.inline

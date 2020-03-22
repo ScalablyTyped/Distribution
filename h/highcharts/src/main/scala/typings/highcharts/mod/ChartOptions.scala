@@ -36,6 +36,10 @@ trait ChartOptions extends js.Object {
     *
     * - **easing**: A string reference to an easing function set on the `Math`
     * object. See the easing demo.
+    *
+    * When zooming on a series with less than 100 points, the chart redraw will
+    * be done with animation, but in case of more data points, it is necessary
+    * to set this option to ensure animation on zoom.
     */
   var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
   /**
@@ -248,6 +252,13 @@ trait ChartOptions extends js.Object {
     */
   var polar: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highmaps) Allows to manually load the proj4 library from Highcharts
+    * options instead of the `window`. In case of loading the library from a
+    * `script` tag, this option is not needed, it will be loaded from there by
+    * default.
+    */
+  var proj4: js.UndefOr[js.Function] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to reflow the chart to
     * fit the width of the container div on resizing the window.
     */
@@ -408,6 +419,7 @@ object ChartOptions {
     plotBorderWidth: Int | Double = null,
     plotShadow: Boolean | CSSObject = null,
     polar: js.UndefOr[Boolean] = js.undefined,
+    proj4: js.Function = null,
     reflow: js.UndefOr[Boolean] = js.undefined,
     renderTo: String | HTMLDOMElement = null,
     resetZoomButton: ChartResetZoomButtonOptions = null,
@@ -461,6 +473,7 @@ object ChartOptions {
     if (plotBorderWidth != null) __obj.updateDynamic("plotBorderWidth")(plotBorderWidth.asInstanceOf[js.Any])
     if (plotShadow != null) __obj.updateDynamic("plotShadow")(plotShadow.asInstanceOf[js.Any])
     if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
+    if (proj4 != null) __obj.updateDynamic("proj4")(proj4.asInstanceOf[js.Any])
     if (!js.isUndefined(reflow)) __obj.updateDynamic("reflow")(reflow.asInstanceOf[js.Any])
     if (renderTo != null) __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
     if (resetZoomButton != null) __obj.updateDynamic("resetZoomButton")(resetZoomButton.asInstanceOf[js.Any])

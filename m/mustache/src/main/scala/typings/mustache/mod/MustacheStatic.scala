@@ -72,8 +72,8 @@ trait MustacheStatic extends js.Object {
     * @param tags
     * The tags to use.
     */
-  def parse(template: String): js.Any = js.native
-  def parse(template: String, tags: OpeningAndClosingTags): js.Any = js.native
+  def parse(template: String): TemplateSpans = js.native
+  def parse(template: String, tags: OpeningAndClosingTags): TemplateSpans = js.native
   /**
     * Renders the `template` with the given `view` and `partials` using the default writer.
     *

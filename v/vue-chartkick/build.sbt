@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-chartkick"
-version := "0.5-dt-20190219Z-68c4d9"
+version := "0.5-dt-20200225Z-68c4d9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

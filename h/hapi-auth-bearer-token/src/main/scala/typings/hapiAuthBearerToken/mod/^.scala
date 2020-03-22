@@ -1,7 +1,7 @@
 package typings.hapiAuthBearerToken.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.hapi.mod.Plugin
+import typings.hapiHapi.mod.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

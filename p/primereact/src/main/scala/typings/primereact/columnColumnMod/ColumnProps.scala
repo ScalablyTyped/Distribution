@@ -22,7 +22,10 @@ trait ColumnProps extends js.Object {
   var field: js.UndefOr[String] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterElement: js.UndefOr[js.Object] = js.undefined
+  var filterField: js.UndefOr[String] = js.undefined
   var filterFunction: js.UndefOr[js.Function2[/* value */ js.Any, /* filter */ js.Any, Unit]] = js.undefined
+  var filterHeaderClassName: js.UndefOr[String] = js.undefined
+  var filterHeaderStyle: js.UndefOr[js.Object] = js.undefined
   var filterMatchMode: js.UndefOr[String] = js.undefined
   var filterMaxLength: js.UndefOr[Double] = js.undefined
   var filterPlaceholder: js.UndefOr[String] = js.undefined
@@ -37,6 +40,7 @@ trait ColumnProps extends js.Object {
   var loadingBody: js.UndefOr[js.Any] = js.undefined
   var onEditorCancel: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
   var onEditorSubmit: js.UndefOr[js.Function1[/* props */ js.Any, Unit]] = js.undefined
+  var reorderable: js.UndefOr[Boolean] = js.undefined
   var rowEditor: js.UndefOr[Boolean] = js.undefined
   var rowReorder: js.UndefOr[Boolean] = js.undefined
   var rowReorderIcon: js.UndefOr[String] = js.undefined
@@ -66,7 +70,10 @@ object ColumnProps {
     field: String = null,
     filter: js.UndefOr[Boolean] = js.undefined,
     filterElement: js.Object = null,
+    filterField: String = null,
     filterFunction: (/* value */ js.Any, /* filter */ js.Any) => Unit = null,
+    filterHeaderClassName: String = null,
+    filterHeaderStyle: js.Object = null,
     filterMatchMode: String = null,
     filterMaxLength: Int | Double = null,
     filterPlaceholder: String = null,
@@ -81,6 +88,7 @@ object ColumnProps {
     loadingBody: js.Any = null,
     onEditorCancel: /* props */ js.Any => Unit = null,
     onEditorSubmit: /* props */ js.Any => Unit = null,
+    reorderable: js.UndefOr[Boolean] = js.undefined,
     rowEditor: js.UndefOr[Boolean] = js.undefined,
     rowReorder: js.UndefOr[Boolean] = js.undefined,
     rowReorderIcon: String = null,
@@ -107,7 +115,10 @@ object ColumnProps {
     if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterElement != null) __obj.updateDynamic("filterElement")(filterElement.asInstanceOf[js.Any])
+    if (filterField != null) __obj.updateDynamic("filterField")(filterField.asInstanceOf[js.Any])
     if (filterFunction != null) __obj.updateDynamic("filterFunction")(js.Any.fromFunction2(filterFunction))
+    if (filterHeaderClassName != null) __obj.updateDynamic("filterHeaderClassName")(filterHeaderClassName.asInstanceOf[js.Any])
+    if (filterHeaderStyle != null) __obj.updateDynamic("filterHeaderStyle")(filterHeaderStyle.asInstanceOf[js.Any])
     if (filterMatchMode != null) __obj.updateDynamic("filterMatchMode")(filterMatchMode.asInstanceOf[js.Any])
     if (filterMaxLength != null) __obj.updateDynamic("filterMaxLength")(filterMaxLength.asInstanceOf[js.Any])
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
@@ -122,6 +133,7 @@ object ColumnProps {
     if (loadingBody != null) __obj.updateDynamic("loadingBody")(loadingBody.asInstanceOf[js.Any])
     if (onEditorCancel != null) __obj.updateDynamic("onEditorCancel")(js.Any.fromFunction1(onEditorCancel))
     if (onEditorSubmit != null) __obj.updateDynamic("onEditorSubmit")(js.Any.fromFunction1(onEditorSubmit))
+    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.asInstanceOf[js.Any])
     if (!js.isUndefined(rowEditor)) __obj.updateDynamic("rowEditor")(rowEditor.asInstanceOf[js.Any])
     if (!js.isUndefined(rowReorder)) __obj.updateDynamic("rowReorder")(rowReorder.asInstanceOf[js.Any])
     if (rowReorderIcon != null) __obj.updateDynamic("rowReorderIcon")(rowReorderIcon.asInstanceOf[js.Any])

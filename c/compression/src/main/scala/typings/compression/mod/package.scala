@@ -10,7 +10,7 @@ package object mod {
     */
   type CompressionFilter = js.Function2[
     /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
-    /* res */ typings.express.mod.Response_, 
+    /* res */ typings.express.mod.Response_[js.Any], 
     scala.Boolean
   ]
 }

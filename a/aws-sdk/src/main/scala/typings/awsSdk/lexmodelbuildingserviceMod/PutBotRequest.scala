@@ -55,6 +55,10 @@ trait PutBotRequest extends js.Object {
     */
   var processBehavior: js.UndefOr[ProcessBehavior] = js.native
   /**
+    * A list of tags to add to the bot. You can only add tags when you create a bot, you can't use the PutBot operation to update the tags on a bot. To update tags, use the TagResource operation.
+    */
+  var tags: js.UndefOr[TagList] = js.native
+  /**
     * The Amazon Polly voice ID that you want Amazon Lex to use for voice interactions with the user. The locale configured for the voice must match the locale of the bot. For more information, see Voices in Amazon Polly in the Amazon Polly Developer Guide.
     */
   var voiceId: js.UndefOr[String] = js.native
@@ -75,6 +79,7 @@ object PutBotRequest {
     idleSessionTTLInSeconds: Int | Double = null,
     intents: IntentList = null,
     processBehavior: ProcessBehavior = null,
+    tags: TagList = null,
     voiceId: String = null
   ): PutBotRequest = {
     val __obj = js.Dynamic.literal(childDirected = childDirected.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
@@ -87,6 +92,7 @@ object PutBotRequest {
     if (idleSessionTTLInSeconds != null) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.asInstanceOf[js.Any])
     if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
     if (processBehavior != null) __obj.updateDynamic("processBehavior")(processBehavior.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (voiceId != null) __obj.updateDynamic("voiceId")(voiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotRequest]
   }

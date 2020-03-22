@@ -182,28 +182,24 @@ class ConditionalFormat () extends ClientObject {
     */
   val `type`: ConditionalFormatType | Custom | DataBar | ColorScale | typings.officeJs.officeJsStrings.IconSet | TopBottom | PresetCriteria | ContainsText | CellValue = js.native
   /**
-    *
     * Deletes this conditional format.
     *
     * [Api set: ExcelApi 1.6]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to multiple ranges. Read-only.
     *
     * [Api set: ExcelApi 1.6]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to multiple ranges. Read-only.
     *
     * [Api set: ExcelApi 1.6]
     */
   def getRangeOrNullObject(): Range = js.native
   /**
-    *
     * Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
     *
     * [Api set: ExcelApi 1.9]

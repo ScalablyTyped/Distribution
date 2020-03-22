@@ -37,7 +37,7 @@ trait GetClusterResult extends js.Object {
     */
   val tags: StringDictionary[js.Any] = js.native
   /**
-    * A comma separated list of one or more IP:port pairs to use to connect to the Apache Zookeeper cluster.
+    * A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
     */
   val zookeeperConnectString: String = js.native
 }

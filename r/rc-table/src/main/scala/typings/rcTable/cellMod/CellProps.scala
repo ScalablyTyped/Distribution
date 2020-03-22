@@ -21,15 +21,17 @@ trait CellProps[RecordType /* <: DefaultRecordType */] extends js.Object {
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var colSpan: js.UndefOr[Double] = js.undefined
-  var component: js.UndefOr[CustomizeComponent[HTMLAttributes[HTMLElement]]] = js.undefined
+  var component: js.UndefOr[CustomizeComponent] = js.undefined
   var dataIndex: js.UndefOr[DataIndex] = js.undefined
   var ellipsis: js.UndefOr[Boolean] = js.undefined
+  var firstFixLeft: js.UndefOr[Boolean] = js.undefined
   var firstFixRight: js.UndefOr[Boolean] = js.undefined
   var fixLeft: js.UndefOr[Double | `false`] = js.undefined
   var fixRight: js.UndefOr[Double | `false`] = js.undefined
   /** `record` index. Not `column` index. */
   var index: js.UndefOr[Double] = js.undefined
   var lastFixLeft: js.UndefOr[Boolean] = js.undefined
+  var lastFixRight: js.UndefOr[Boolean] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var record: js.UndefOr[RecordType] = js.undefined
   var render: js.UndefOr[
@@ -52,14 +54,16 @@ object CellProps {
     children: ReactNode = null,
     className: String = null,
     colSpan: Int | Double = null,
-    component: CustomizeComponent[HTMLAttributes[HTMLElement]] = null,
+    component: CustomizeComponent = null,
     dataIndex: DataIndex = null,
     ellipsis: js.UndefOr[Boolean] = js.undefined,
+    firstFixLeft: js.UndefOr[Boolean] = js.undefined,
     firstFixRight: js.UndefOr[Boolean] = js.undefined,
     fixLeft: Double | `false` = null,
     fixRight: Double | `false` = null,
     index: Int | Double = null,
     lastFixLeft: js.UndefOr[Boolean] = js.undefined,
+    lastFixRight: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
     record: RecordType = null,
     render: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType] = null,
@@ -75,11 +79,13 @@ object CellProps {
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
+    if (!js.isUndefined(firstFixLeft)) __obj.updateDynamic("firstFixLeft")(firstFixLeft.asInstanceOf[js.Any])
     if (!js.isUndefined(firstFixRight)) __obj.updateDynamic("firstFixRight")(firstFixRight.asInstanceOf[js.Any])
     if (fixLeft != null) __obj.updateDynamic("fixLeft")(fixLeft.asInstanceOf[js.Any])
     if (fixRight != null) __obj.updateDynamic("fixRight")(fixRight.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (!js.isUndefined(lastFixLeft)) __obj.updateDynamic("lastFixLeft")(lastFixLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastFixRight)) __obj.updateDynamic("lastFixRight")(lastFixRight.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (record != null) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction3(render))

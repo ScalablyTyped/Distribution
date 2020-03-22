@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bigscreen"
-version := "2.0.4-dt-20190322Z-01579e"
+version := "2.0.4-dt-20200226Z-01579e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,7 +13,7 @@ trait DeleteFleetSuccessItem extends js.Object {
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[FleetIdentifier] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
   /**
     * The previous state of the EC2 Fleet.
     */
@@ -24,7 +24,7 @@ object DeleteFleetSuccessItem {
   @scala.inline
   def apply(
     CurrentFleetState: FleetStateCode = null,
-    FleetId: FleetIdentifier = null,
+    FleetId: FleetId = null,
     PreviousFleetState: FleetStateCode = null
   ): DeleteFleetSuccessItem = {
     val __obj = js.Dynamic.literal()

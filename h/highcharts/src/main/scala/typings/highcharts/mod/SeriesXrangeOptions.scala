@@ -120,10 +120,11 @@ object SeriesXrangeOptions {
     connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[scala.Nothing] = js.undefined,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
+    dashStyle: DashStyleValue = null,
     data: js.Array[XrangePointOptionsObject] = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
-    dataSorting: DataSortingOptionsObject | PlotXrangeDataSortingOptions = null,
+    dataLabels: PlotXrangeDataLabelsOptions | js.Array[PlotXrangeDataLabelsOptions] = null,
     depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
     dragDrop: SeriesDragDropOptionsObject = null,
@@ -199,10 +200,11 @@ object SeriesXrangeOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])

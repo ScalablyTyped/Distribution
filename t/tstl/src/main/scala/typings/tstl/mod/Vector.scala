@@ -5,7 +5,6 @@ import typings.tstl.arrayContainerMod.ArrayContainer
 import typings.tstl.arrayIteratorMod.ArrayIterator
 import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
-import typings.tstl.tstlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,10 +38,6 @@ class Vector[T] ()
     first: IForwardIterator[T, IForwardIterator[T, _]],
     last: IForwardIterator[T, IForwardIterator[T, _]]
   ) = this()
-  /**
-    * @internal
-    */
-  def this(items: js.Array[T], move: `true`) = this()
   /**
     * Fill Constructor.
     *

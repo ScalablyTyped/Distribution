@@ -222,6 +222,20 @@ trait PlotColumnrangeOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
+    * (Highcharts, Highstock) A reserved subspace to store options and values
+    * for customized functionality. Here you can add additional data for your
+    * own event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Name of the dash style to use for the graph, or
+    * for some series types the outline of each shape.
+    *
+    * In styled mode, the stroke dash-array can be set with the same classes as
+    * listed under series.color.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
     * the JavaScript charts. Highstock by default applies data grouping when
@@ -621,6 +635,8 @@ object PlotColumnrangeOptions {
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
+    dashStyle: DashStyleValue = null,
     dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: SeriesAreaRangeDataLabelsOptionsObject | js.Array[SeriesAreaRangeDataLabelsOptionsObject] = null,
     dataSorting: DataSortingOptionsObject | PlotColumnrangeDataSortingOptions = null,
@@ -697,6 +713,8 @@ object PlotColumnrangeOptions {
     if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])

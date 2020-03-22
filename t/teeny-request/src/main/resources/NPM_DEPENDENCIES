@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "teeny-request" : "6.0.2"
+      "teeny-request" : "6.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "teeny-request" : "6.0.2"
+      "teeny-request" : "6.0.3"
     }
   ],
   "compile-devDependencies" : [

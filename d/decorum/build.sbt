@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "decorum"
-version := "v0.2.0-dt-20190322Z-9c784c"
+version := "v0.2.0-dt-20200225Z-9c784c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

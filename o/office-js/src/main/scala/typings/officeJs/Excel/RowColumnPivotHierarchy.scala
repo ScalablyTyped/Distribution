@@ -76,7 +76,6 @@ class RowColumnPivotHierarchy () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: RowColumnPivotHierarchy): Unit = js.native
   /**
-    *
     * Reset the RowColumnPivotHierarchy back to its default values.
     *
     * [Api set: ExcelApi 1.8]

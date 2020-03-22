@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__nbformat"
-version := "2.0.0-6946d1"
+version := "2.0.1-03f5a6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

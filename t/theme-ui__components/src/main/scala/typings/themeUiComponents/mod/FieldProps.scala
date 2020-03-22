@@ -25,6 +25,8 @@ trait FieldProps[T /* <: ElementType[_] */] extends js.Object {
   var marginLeft: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var marginRight: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var marginTop: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
+  var marginX: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
+  var marginY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var mb: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var ml: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var mr: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
@@ -49,6 +51,8 @@ object FieldProps {
     marginLeft: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     marginRight: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     marginTop: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    marginX: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
+    marginY: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     mb: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     ml: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     mr: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
@@ -64,6 +68,8 @@ object FieldProps {
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
     if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])

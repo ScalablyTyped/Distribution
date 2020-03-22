@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/tooltip/placements", "getOverflowOptions")
 @js.native
 object getOverflowOptions extends js.Object {
+  def apply(): AnonAdjustXAdjustY = js.native
   def apply(autoAdjustOverflow: Boolean): AnonAdjustXAdjustY = js.native
   def apply(autoAdjustOverflow: AdjustOverflow): AnonAdjustXAdjustY = js.native
 }

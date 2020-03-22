@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.facepileTypesMod.IFacepileProps
 import typings.officeUiFabricReact.officeUiFabricReactStrings._empty
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object facepileBaseMod extends js.Object {
   @js.native
   class FacepileBase protected ()
-    extends BaseComponent[IFacepileProps, js.Object] {
+    extends Component[IFacepileProps, js.Object, js.Any] {
     def this(props: IFacepileProps) = this()
     var _ariaDescriptionId: js.Any = js.native
     var _classNames: js.Any = js.native

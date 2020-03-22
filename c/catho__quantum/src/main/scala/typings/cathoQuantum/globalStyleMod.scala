@@ -6,14 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/GlobalStyle", JSImport.Namespace)
+@JSImport("@catho/quantum/GlobalStyle", JSImport.Namespace)
 @js.native
 object globalStyleMod extends js.Object {
   @js.native
   class default ()
     extends Component[js.Object, js.Object, js.Any]
   
-  val IconFont: FC[js.Object] = js.native
   val Typography: FC[js.Object] = js.native
   type GlobalStyle = Component[js.Object, js.Object, js.Any]
 }

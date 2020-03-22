@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-default-unit
 
-Typings are for version 10.0.4
+Typings are for version 10.1.1
 
 ## Library description:
 JSS plugin that adds default custom unit to numeric values where needed

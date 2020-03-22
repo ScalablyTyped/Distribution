@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsLayers.trainingTensorsMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallback
 import typings.tensorflowTfjsLayers.baseCallbacksMod.CustomCallbackArgs
 import typings.tensorflowTfjsLayers.baseCallbacksMod.ModelLoggingVerbosity
@@ -45,7 +45,12 @@ trait ModelFitArgs extends js.Object {
     * to weight objects.
     */
   var classWeight: js.UndefOr[ClassWeight | js.Array[ClassWeight] | ClassWeightMap] = js.undefined
-  /** The number of times to iterate over the training data arrays. */
+  /**
+    * The number of times to iterate over the training data arrays.
+    * Note that when used with `initialEpoch`, epochs is the index of the
+    * "final epoch". The model is not trained for a number of iterations
+    * given by epochs, but merely until the epoch of index epochs is reached.
+    */
   var epochs: js.UndefOr[Double] = js.undefined
   /**
     * Epoch at which to start training (useful for resuming a previous training
@@ -60,7 +65,7 @@ trait ModelFitArgs extends js.Object {
     * sample. In this case you should make sure to specify
     * sampleWeightMode="temporal" in compile().
     */
-  var sampleWeight: js.UndefOr[Tensor_[Rank]] = js.undefined
+  var sampleWeight: js.UndefOr[Tensor[Rank]] = js.undefined
   /**
     * Whether to shuffle the training data before each epoch. Has
     * no effect when `stepsPerEpoch` is not `null`.
@@ -82,10 +87,10 @@ trait ModelFitArgs extends js.Object {
     * `validationData` will override `validationSplit`.
     */
   var validationData: js.UndefOr[
-    (js.Tuple2[Tensor_[Rank] | js.Array[Tensor_[Rank]], Tensor_[Rank] | js.Array[Tensor_[Rank]]]) | (js.Tuple3[
-      Tensor_[Rank] | js.Array[Tensor_[Rank]], 
-      Tensor_[Rank] | js.Array[Tensor_[Rank]], 
-      Tensor_[Rank] | js.Array[Tensor_[Rank]]
+    (js.Tuple2[Tensor[Rank] | js.Array[Tensor[Rank]], Tensor[Rank] | js.Array[Tensor[Rank]]]) | (js.Tuple3[
+      Tensor[Rank] | js.Array[Tensor[Rank]], 
+      Tensor[Rank] | js.Array[Tensor[Rank]], 
+      Tensor[Rank] | js.Array[Tensor[Rank]]
     ])
   ] = js.undefined
   /**
@@ -142,13 +147,13 @@ object ModelFitArgs {
     classWeight: ClassWeight | js.Array[ClassWeight] | ClassWeightMap = null,
     epochs: Int | Double = null,
     initialEpoch: Int | Double = null,
-    sampleWeight: Tensor_[Rank] = null,
+    sampleWeight: Tensor[Rank] = null,
     shuffle: js.UndefOr[Boolean] = js.undefined,
     stepsPerEpoch: Int | Double = null,
-    validationData: (js.Tuple2[Tensor_[Rank] | js.Array[Tensor_[Rank]], Tensor_[Rank] | js.Array[Tensor_[Rank]]]) | (js.Tuple3[
-      Tensor_[Rank] | js.Array[Tensor_[Rank]], 
-      Tensor_[Rank] | js.Array[Tensor_[Rank]], 
-      Tensor_[Rank] | js.Array[Tensor_[Rank]]
+    validationData: (js.Tuple2[Tensor[Rank] | js.Array[Tensor[Rank]], Tensor[Rank] | js.Array[Tensor[Rank]]]) | (js.Tuple3[
+      Tensor[Rank] | js.Array[Tensor[Rank]], 
+      Tensor[Rank] | js.Array[Tensor[Rank]], 
+      Tensor[Rank] | js.Array[Tensor[Rank]]
     ]) = null,
     validationSplit: Int | Double = null,
     validationSteps: Int | Double = null,

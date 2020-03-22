@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AxisTickPositionsArray extends Array[Double] {
-  var info: TimeTicksInfoObject = js.native
+  var info: js.UndefOr[TimeTicksInfoObject] = js.native
 }
 

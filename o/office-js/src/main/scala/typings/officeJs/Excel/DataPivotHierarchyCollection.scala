@@ -25,21 +25,18 @@ class DataPivotHierarchyCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[DataPivotHierarchy] = js.native
   /**
-    *
     * Adds the PivotHierarchy to the current axis.
     *
     * [Api set: ExcelApi 1.8]
     */
   def add(pivotHierarchy: PivotHierarchy): DataPivotHierarchy = js.native
   /**
-    *
     * Gets the number of pivot hierarchies in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a DataPivotHierarchy by its name or id.
     *
     * [Api set: ExcelApi 1.8]
@@ -48,7 +45,6 @@ class DataPivotHierarchyCollection () extends ClientObject {
     */
   def getItem(name: String): DataPivotHierarchy = js.native
   /**
-    *
     * Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.8]
@@ -67,7 +63,6 @@ class DataPivotHierarchyCollection () extends ClientObject {
   def load(propertyNames: String): DataPivotHierarchyCollection = js.native
   def load(propertyNames: js.Array[String]): DataPivotHierarchyCollection = js.native
   /**
-    *
     * Removes the PivotHierarchy from the current axis.
     *
     * [Api set: ExcelApi 1.8]

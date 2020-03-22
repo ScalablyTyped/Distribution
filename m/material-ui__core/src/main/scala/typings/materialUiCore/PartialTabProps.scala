@@ -159,7 +159,7 @@ trait PartialTabProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTabClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTabCla] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -373,7 +373,7 @@ object PartialTabProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTabClassKey = null,
+    classes: PartialClassNameMapTabCla = null,
     color: String = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

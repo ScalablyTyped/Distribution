@@ -8,7 +8,7 @@ package object mod {
   type FormatFunction = js.Function1[/* meta */ js.Any, java.lang.String]
   type IncludesFunction = js.Function2[
     /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
-    /* res */ typings.express.mod.Response_, 
+    /* res */ typings.express.mod.Response_[js.Any], 
     js.Any
   ]
   type LevelFunction = js.Function3[

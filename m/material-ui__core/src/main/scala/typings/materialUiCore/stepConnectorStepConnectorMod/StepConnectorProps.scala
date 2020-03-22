@@ -1,6 +1,6 @@
 package typings.materialUiCore.stepConnectorStepConnectorMod
 
-import typings.materialUiCore.PartialClassNameMapStepConnectorClasskey
+import typings.materialUiCore.PartialClassNameMapStepCo
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -148,7 +148,7 @@ trait StepConnectorProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepConnectorClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapStepCo] = js.native
   var color: js.UndefOr[String] = js.native
   var completed: js.UndefOr[Boolean] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -334,7 +334,7 @@ object StepConnectorProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepConnectorClasskey = null,
+    classes: PartialClassNameMapStepCo = null,
     color: String = null,
     completed: js.UndefOr[Boolean] = js.undefined,
     contentEditable: Booleanish | inherit = null,

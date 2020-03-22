@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact.peoplePickerItemTypesMod
 
+import typings.officeUiFabricReact.AnonAvailable
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuItem
 import typings.officeUiFabricReact.imageTypesMod.ImageLoadState
 import typings.officeUiFabricReact.personaBaseMod.PersonaBase
@@ -274,6 +275,7 @@ object IPersonaWithMenu {
     placeholder: String = null,
     prefix: String = null,
     presence: PersonaPresence = null,
+    presenceColors: AnonAvailable = null,
     presenceTitle: String = null,
     primaryText: String = null,
     property: String = null,
@@ -483,6 +485,7 @@ object IPersonaWithMenu {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (presence != null) __obj.updateDynamic("presence")(presence.asInstanceOf[js.Any])
+    if (presenceColors != null) __obj.updateDynamic("presenceColors")(presenceColors.asInstanceOf[js.Any])
     if (presenceTitle != null) __obj.updateDynamic("presenceTitle")(presenceTitle.asInstanceOf[js.Any])
     if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])

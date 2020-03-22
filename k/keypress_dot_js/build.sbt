@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keypress_dot_js"
-version := "2.1-dt-20180214Z-7f7cac"
+version := "2.1-dt-20200226Z-7f7cac"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

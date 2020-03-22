@@ -18,7 +18,12 @@ trait Options extends js.Object {
     * Default: `(req, res, next) => res.status(options.statusCode).send(options.message)`
     */
   var handler: js.UndefOr[
-    js.Function3[/* req */ Request_[ParamsDictionary], /* res */ Response_, /* next */ NextFunction, _]
+    js.Function3[
+      /* req */ Request_[ParamsDictionary], 
+      /* res */ Response_[_], 
+      /* next */ NextFunction, 
+      _
+    ]
   ] = js.undefined
   /**
     * Enable headers for request limit (`X-RateLimit-Limit`) and current usage (`X-RateLimit-Remaining`) on all
@@ -29,7 +34,9 @@ trait Options extends js.Object {
     * Function used to generate keys. Defaults to using `req.ip`.
     * Default: `(req, res) => req.ip`
     */
-  var keyGenerator: js.UndefOr[js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, String]] = js.undefined
+  var keyGenerator: js.UndefOr[
+    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], String]
+  ] = js.undefined
   /**
     * Max number of connections during `windowMs` before sending a 429 response. May be a `number` or
     * a function that returns a `number` or a `Promise<number>`. Defaults to `5`. Set to `0` to disable.
@@ -49,7 +56,7 @@ trait Options extends js.Object {
   var onLimitReached: js.UndefOr[
     js.Function3[
       /* req */ Request_[ParamsDictionary], 
-      /* res */ Response_, 
+      /* res */ Response_[_], 
       /* optionsUsed */ this.type, 
       Unit
     ]
@@ -59,7 +66,9 @@ trait Options extends js.Object {
     * always `false` (count all requests).
     * Default: `(req, res) => false`
     */
-  var skip: js.UndefOr[js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, Boolean]] = js.undefined
+  var skip: js.UndefOr[
+    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean]
+  ] = js.undefined
   /**
     * When set to `true`, failed requests (status >= 400, request canceled or errored) won't be counted. Defaults to `false`.
     */
@@ -85,13 +94,13 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    handler: (/* req */ Request_[ParamsDictionary], /* res */ Response_, /* next */ NextFunction) => _ = null,
+    handler: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_], /* next */ NextFunction) => _ = null,
     headers: js.UndefOr[Boolean] = js.undefined,
-    keyGenerator: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => String = null,
+    keyGenerator: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => String = null,
     max: Double | MaxValueFn = null,
     message: String | Buffer | Message = null,
-    onLimitReached: (/* req */ Request_[ParamsDictionary], /* res */ Response_, Options) => Unit = null,
-    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null,
+    onLimitReached: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Options) => Unit = null,
+    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Boolean = null,
     skipFailedRequests: js.UndefOr[Boolean] = js.undefined,
     skipSuccessfulRequests: js.UndefOr[Boolean] = js.undefined,
     statusCode: Int | Double = null,

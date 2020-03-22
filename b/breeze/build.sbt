@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "breeze"
-version := "1.6.3-dt-20190322Z-5a7204"
+version := "1.6.3-dt-20200225Z-5a7204"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -37,6 +37,14 @@ trait PivotLayoutUpdateData extends js.Object {
   var layoutType: js.UndefOr[PivotLayoutType | Compact | Tabular | Outline] = js.undefined
   /**
     *
+    * The style applied to the PivotTable.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var pivotStyle: js.UndefOr[PivotTableStyleUpdateData] = js.undefined
+  /**
+    *
     * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi 1.9]
@@ -71,6 +79,7 @@ object PivotLayoutUpdateData {
     autoFormat: js.UndefOr[Boolean] = js.undefined,
     enableFieldList: js.UndefOr[Boolean] = js.undefined,
     layoutType: PivotLayoutType | Compact | Tabular | Outline = null,
+    pivotStyle: PivotTableStyleUpdateData = null,
     preserveFormatting: js.UndefOr[Boolean] = js.undefined,
     showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined,
     showRowGrandTotals: js.UndefOr[Boolean] = js.undefined,
@@ -80,6 +89,7 @@ object PivotLayoutUpdateData {
     if (!js.isUndefined(autoFormat)) __obj.updateDynamic("autoFormat")(autoFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(enableFieldList)) __obj.updateDynamic("enableFieldList")(enableFieldList.asInstanceOf[js.Any])
     if (layoutType != null) __obj.updateDynamic("layoutType")(layoutType.asInstanceOf[js.Any])
+    if (pivotStyle != null) __obj.updateDynamic("pivotStyle")(pivotStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveFormatting)) __obj.updateDynamic("preserveFormatting")(preserveFormatting.asInstanceOf[js.Any])
     if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals.asInstanceOf[js.Any])
     if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals.asInstanceOf[js.Any])

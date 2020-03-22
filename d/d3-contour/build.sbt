@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "d3-contour"
-version := "1.3-dt-20190205Z-e9695f"
+version := "1.3-dt-20200225Z-d254ef"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "d3-array" % "2.0-dt-20190221Z-f441a9",
+  "org.scalablytyped" %%% "d3-array" % "2.0-dt-20200225Z-f441a9",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-67022f",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

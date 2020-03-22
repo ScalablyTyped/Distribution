@@ -32,8 +32,8 @@ trait NamedRouter extends js.Object {
   def build(name: String, params: RouteParams): String = js.native
   def build(name: String, params: RouteParams, method: String): String = js.native
   def dispatch(req: Request_[ParamsDictionary]): Unit = js.native
-  def dispatch(req: Request_[ParamsDictionary], res: Response_): Unit = js.native
-  def dispatch(req: Request_[ParamsDictionary], res: Response_, next: NextFunction): Unit = js.native
+  def dispatch(req: Request_[ParamsDictionary], res: Response_[_]): Unit = js.native
+  def dispatch(req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction): Unit = js.native
   def extendExpress(app: Express): NamedRouter = js.native
   def extendExpress(app: Router): NamedRouter = js.native
   def `match`(req: Request_[ParamsDictionary]): Boolean | js.Object = js.native

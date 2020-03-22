@@ -2,6 +2,8 @@ package typings.antd.tableTableMod
 
 import typings.antd.AnonScrollToFirstRowOnChange
 import typings.antd.antdBooleans.`false`
+import typings.antd.antdStrings.ltr
+import typings.antd.antdStrings.rtl
 import typings.antd.paginationPaginationMod.PaginationConfig
 import typings.antd.sizeContextMod.SizeType
 import typings.antd.spinMod.SpinProps
@@ -35,7 +37,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Omit<rc-table.rc-table/lib/Table.TableProps<RecordType>, 'transformColumns' | 'internalHooks' | 'internalRefs' | 'data' | 'columns' | 'expandIconColumnIndex' | 'scroll'> */
+/* Inlined parent std.Omit<rc-table.rc-table/lib/Table.TableProps<RecordType>, 'transformColumns' | 'internalHooks' | 'internalRefs' | 'data' | 'columns' | 'scroll'> */
 trait TableProps[RecordType] extends js.Object {
   var bordered: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -46,9 +48,11 @@ trait TableProps[RecordType] extends js.Object {
   var dataSource: js.UndefOr[js.Array[RecordType]] = js.undefined
   var defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined
   var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   var dropdownPrefixCls: js.UndefOr[String] = js.undefined
   var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
   var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
+  var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
   var expandRowByClick: js.UndefOr[Boolean] = js.undefined
   var expandable: js.UndefOr[ExpandableConfig[RecordType]] = js.undefined
   var expandedRowClassName: js.UndefOr[RowClassName[RecordType]] = js.undefined
@@ -100,9 +104,11 @@ object TableProps {
     dataSource: js.Array[RecordType] = null,
     defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined,
     defaultExpandedRowKeys: js.Array[Key] = null,
+    direction: ltr | rtl = null,
     dropdownPrefixCls: String = null,
     emptyText: ReactNode | js.Function0[ReactNode] = null,
     expandIcon: /* props */ RenderExpandIconProps[RecordType] => ReactNode = null,
+    expandIconColumnIndex: Int | Double = null,
     expandRowByClick: js.UndefOr[Boolean] = js.undefined,
     expandable: ExpandableConfig[RecordType] = null,
     expandedRowClassName: (RecordType, /* index */ Double, /* indent */ Double) => String = null,
@@ -143,9 +149,11 @@ object TableProps {
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.asInstanceOf[js.Any])
     if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (dropdownPrefixCls != null) __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls.asInstanceOf[js.Any])
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
+    if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.asInstanceOf[js.Any])
     if (expandable != null) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
     if (expandedRowClassName != null) __obj.updateDynamic("expandedRowClassName")(js.Any.fromFunction3(expandedRowClassName))

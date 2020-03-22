@@ -6,7 +6,22 @@ import scala.scalajs.js.annotation._
 
 @JSImport("matter-js", "Grid")
 @js.native
-class Grid () extends js.Object
+class Grid () extends js.Object {
+  /**
+    * The height of a single grid bucket.
+    *
+    * @property type
+    * @type number
+    */
+  var bucketHeight: Double = js.native
+  /**
+    * The width of a single grid bucket.
+    *
+    * @property type
+    * @type number
+    */
+  var bucketWidth: Double = js.native
+}
 
 /* static members */
 @JSImport("matter-js", "Grid")

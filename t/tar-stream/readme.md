@@ -1,7 +1,7 @@
 
 # Scala.js typings for tar-stream
 
-Typings are for version 1.6
+Typings are for version 2.1
 
 ## Library description:
 tar-stream is a streaming tar parser and generator and nothing else. It is streams2 and operates purely using streams which means you can easily extract/parse tarballs without ever hitting the file system.

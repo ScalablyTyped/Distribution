@@ -1,6 +1,5 @@
 package typings.pulumiAws.basePathMappingMod
 
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -33,7 +32,7 @@ class BasePathMapping protected () extends CustomResource {
   /**
     * The id of the API to connect.
     */
-  val restApi: Output_[RestApi] = js.native
+  val restApi: Output_[String] = js.native
   /**
     * The name of a specific deployment stage to expose at the given path. If omitted, callers may select any stage by including its name as a path element after the base path.
     */

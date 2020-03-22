@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "libphonenumber-js"
-version := "1.7.44-81f5b4"
+version := "1.7.48-8c1ec0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

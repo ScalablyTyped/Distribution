@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactNumbers.`1`
 import typings.fundamentalReact.fundamentalReactNumbers.`2`
 import typings.fundamentalReact.fundamentalReactNumbers.`3`
@@ -26,7 +25,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -99,7 +98,7 @@ trait PartialLayoutGridProps extends js.Object {
   var accessKey: js.UndefOr[String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
@@ -150,11 +149,11 @@ trait PartialLayoutGridProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.undefined
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var colSpan: js.UndefOr[js.Any] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var cols: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
@@ -282,7 +281,7 @@ object PartialLayoutGridProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -333,11 +332,11 @@ object PartialLayoutGridProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
+    colSpan: js.Any = null,
     color: String = null,
     cols: `1` | `2` | `3` | `4` | `5` | `6` = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -513,11 +512,11 @@ object PartialLayoutGridProps {
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])

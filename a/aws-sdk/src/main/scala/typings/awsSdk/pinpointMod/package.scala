@@ -121,6 +121,7 @@ package object pinpointMod {
   type ListOfJourneyResponse = js.Array[typings.awsSdk.pinpointMod.JourneyResponse]
   type ListOfMultiConditionalBranch = js.Array[typings.awsSdk.pinpointMod.MultiConditionalBranch]
   type ListOfRandomSplitEntry = js.Array[typings.awsSdk.pinpointMod.RandomSplitEntry]
+  type ListOfRecommenderConfigurationResponse = js.Array[typings.awsSdk.pinpointMod.RecommenderConfigurationResponse]
   type ListOfResultRow = js.Array[typings.awsSdk.pinpointMod.ResultRow]
   type ListOfResultRowValue = js.Array[typings.awsSdk.pinpointMod.ResultRowValue]
   type ListOfSegmentDimensions = js.Array[typings.awsSdk.pinpointMod.SegmentDimensions]

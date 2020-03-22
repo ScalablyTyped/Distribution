@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 trait RequestDefinition extends PropertyDefinition {
   var auth: js.UndefOr[RequestAuthDefinition] = js.undefined
-  var body: js.UndefOr[RequestBody] = js.undefined
+  var body: js.UndefOr[RequestBodyDefinition] = js.undefined
   var certificate: js.UndefOr[CertificateDefinition] = js.undefined
-  var header: js.UndefOr[HeaderDefinition] = js.undefined
+  var header: js.UndefOr[js.Array[HeaderDefinition]] = js.undefined
   var method: js.UndefOr[String] = js.undefined
   var proxy: js.UndefOr[ProxyConfigDefinition] = js.undefined
   var url: String | Url
@@ -19,11 +19,11 @@ object RequestDefinition {
   def apply(
     url: String | Url,
     auth: RequestAuthDefinition = null,
-    body: RequestBody = null,
+    body: RequestBodyDefinition = null,
     certificate: CertificateDefinition = null,
     description: String | DescriptionDefinition = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    header: HeaderDefinition = null,
+    header: js.Array[HeaderDefinition] = null,
     id: String = null,
     method: String = null,
     name: String = null,

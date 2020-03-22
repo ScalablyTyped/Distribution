@@ -86,7 +86,5 @@ trait TransferList
   def handleFilter(e: ChangeEvent[HTMLInputElement]): Unit = js.native
   def matchFilter(text: String, item: TransferItem): Boolean = js.native
   def renderItem(item: TransferItem): RenderedItem = js.native
-  @JSName("shouldComponentUpdate")
-  def shouldComponentUpdate_MTransferList(args: js.Any*): js.Any = js.native
 }
 

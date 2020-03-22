@@ -19,7 +19,7 @@ trait TemplateConfiguration extends js.Object {
     */
   var SMSTemplate: js.UndefOr[Template] = js.native
   /**
-    * The voice template to use for the message.
+    * The voice template to use for the message. This object isn't supported for campaigns.
     */
   var VoiceTemplate: js.UndefOr[Template] = js.native
 }

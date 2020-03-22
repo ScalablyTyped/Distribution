@@ -16,6 +16,11 @@ trait UpdateRouteInput extends js.Object {
     */
   var meshName: ResourceName = js.native
   /**
+    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's
+    the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with Shared Meshes.
+    */
+  var meshOwner: js.UndefOr[AccountId] = js.native
+  /**
     * The name of the route to update.
     */
   var routeName: ResourceName = js.native
@@ -36,10 +41,12 @@ object UpdateRouteInput {
     routeName: ResourceName,
     spec: RouteSpec,
     virtualRouterName: ResourceName,
-    clientToken: String = null
+    clientToken: String = null,
+    meshOwner: AccountId = null
   ): UpdateRouteInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
+    if (meshOwner != null) __obj.updateDynamic("meshOwner")(meshOwner.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRouteInput]
   }
 }

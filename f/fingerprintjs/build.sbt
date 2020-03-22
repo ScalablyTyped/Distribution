@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fingerprintjs"
-version := "0.5.4-dt-20190322Z-241ca0"
+version := "0.5.4-dt-20200226Z-241ca0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

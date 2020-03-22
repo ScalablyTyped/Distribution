@@ -1,6 +1,6 @@
 package typings.evernote
 
-import typings.evernote.mod.Evernote.SharedNotebookInstanceRestrictions
+import typings.evernote.mod.Types.SharedNotebookInstanceRestrictions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,11 +17,13 @@ trait AnonExpungeWhichSharedNotebookRestrictions extends js.Object {
   var noPublishToBusinessLibrary: js.UndefOr[Boolean] = js.undefined
   var noPublishToPublic: js.UndefOr[Boolean] = js.undefined
   var noReadNotes: js.UndefOr[Boolean] = js.undefined
+  var noRenameNotebook: js.UndefOr[Boolean] = js.undefined
   var noSendMessageToRecipients: js.UndefOr[Boolean] = js.undefined
   var noSetDefaultNotebook: js.UndefOr[Boolean] = js.undefined
   var noSetNotebookStack: js.UndefOr[Boolean] = js.undefined
   var noSetParentTag: js.UndefOr[Boolean] = js.undefined
   var noShareNotes: js.UndefOr[Boolean] = js.undefined
+  var noShareNotesWithBusiness: js.UndefOr[Boolean] = js.undefined
   var noUpdateNotebook: js.UndefOr[Boolean] = js.undefined
   var noUpdateNotes: js.UndefOr[Boolean] = js.undefined
   var noUpdateTags: js.UndefOr[Boolean] = js.undefined
@@ -42,11 +44,13 @@ object AnonExpungeWhichSharedNotebookRestrictions {
     noPublishToBusinessLibrary: js.UndefOr[Boolean] = js.undefined,
     noPublishToPublic: js.UndefOr[Boolean] = js.undefined,
     noReadNotes: js.UndefOr[Boolean] = js.undefined,
+    noRenameNotebook: js.UndefOr[Boolean] = js.undefined,
     noSendMessageToRecipients: js.UndefOr[Boolean] = js.undefined,
     noSetDefaultNotebook: js.UndefOr[Boolean] = js.undefined,
     noSetNotebookStack: js.UndefOr[Boolean] = js.undefined,
     noSetParentTag: js.UndefOr[Boolean] = js.undefined,
     noShareNotes: js.UndefOr[Boolean] = js.undefined,
+    noShareNotesWithBusiness: js.UndefOr[Boolean] = js.undefined,
     noUpdateNotebook: js.UndefOr[Boolean] = js.undefined,
     noUpdateNotes: js.UndefOr[Boolean] = js.undefined,
     noUpdateTags: js.UndefOr[Boolean] = js.undefined,
@@ -64,11 +68,13 @@ object AnonExpungeWhichSharedNotebookRestrictions {
     if (!js.isUndefined(noPublishToBusinessLibrary)) __obj.updateDynamic("noPublishToBusinessLibrary")(noPublishToBusinessLibrary.asInstanceOf[js.Any])
     if (!js.isUndefined(noPublishToPublic)) __obj.updateDynamic("noPublishToPublic")(noPublishToPublic.asInstanceOf[js.Any])
     if (!js.isUndefined(noReadNotes)) __obj.updateDynamic("noReadNotes")(noReadNotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(noRenameNotebook)) __obj.updateDynamic("noRenameNotebook")(noRenameNotebook.asInstanceOf[js.Any])
     if (!js.isUndefined(noSendMessageToRecipients)) __obj.updateDynamic("noSendMessageToRecipients")(noSendMessageToRecipients.asInstanceOf[js.Any])
     if (!js.isUndefined(noSetDefaultNotebook)) __obj.updateDynamic("noSetDefaultNotebook")(noSetDefaultNotebook.asInstanceOf[js.Any])
     if (!js.isUndefined(noSetNotebookStack)) __obj.updateDynamic("noSetNotebookStack")(noSetNotebookStack.asInstanceOf[js.Any])
     if (!js.isUndefined(noSetParentTag)) __obj.updateDynamic("noSetParentTag")(noSetParentTag.asInstanceOf[js.Any])
     if (!js.isUndefined(noShareNotes)) __obj.updateDynamic("noShareNotes")(noShareNotes.asInstanceOf[js.Any])
+    if (!js.isUndefined(noShareNotesWithBusiness)) __obj.updateDynamic("noShareNotesWithBusiness")(noShareNotesWithBusiness.asInstanceOf[js.Any])
     if (!js.isUndefined(noUpdateNotebook)) __obj.updateDynamic("noUpdateNotebook")(noUpdateNotebook.asInstanceOf[js.Any])
     if (!js.isUndefined(noUpdateNotes)) __obj.updateDynamic("noUpdateNotes")(noUpdateNotes.asInstanceOf[js.Any])
     if (!js.isUndefined(noUpdateTags)) __obj.updateDynamic("noUpdateTags")(noUpdateTags.asInstanceOf[js.Any])

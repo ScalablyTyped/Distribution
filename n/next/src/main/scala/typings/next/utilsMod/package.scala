@@ -20,6 +20,11 @@ package object utilsMod {
     typings.next.utilsMod.DocumentProps
   ]) with typings.next.AnonRenderDocument
   type Enhancer[C] = js.Function1[/* Component */ C, C]
+  type NextApiHandler[T] = js.Function2[
+    /* req */ typings.next.utilsMod.NextApiRequest, 
+    /* res */ typings.next.utilsMod.NextApiResponse[T], 
+    scala.Unit
+  ]
   type NextComponentType[C /* <: typings.next.utilsMod.BaseContext */, IP, P] = typings.react.mod.ComponentType[P] with (typings.next.AnonGetInitialProps[C, IP])
   type RenderPage = js.Function1[
     /* options */ js.UndefOr[typings.next.utilsMod.ComponentsEnhancer], 

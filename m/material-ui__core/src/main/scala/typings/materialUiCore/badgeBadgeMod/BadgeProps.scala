@@ -1,6 +1,6 @@
 package typings.materialUiCore.badgeBadgeMod
 
-import typings.materialUiCore.PartialClassNameMapBadgeClassKey
+import typings.materialUiCore.PartialClassNameMapBadgeC
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -151,7 +151,7 @@ trait BadgeProps extends js.Object {
   var badgeContent: js.UndefOr[ReactNode] = js.native
   var children: ReactNode = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapBadgeClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapBadgeC] = js.native
   var color: js.UndefOr[Color | error] = js.native
   var component: js.UndefOr[ReactType[BadgeProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -337,7 +337,7 @@ object BadgeProps {
     badgeContent: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapBadgeClassKey = null,
+    classes: PartialClassNameMapBadgeC = null,
     color: Color | error = null,
     component: ReactType[BadgeProps] = null,
     contentEditable: Booleanish | inherit = null,

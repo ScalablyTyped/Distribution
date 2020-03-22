@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.datasetFakesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,9 +30,7 @@ trait FakeDatasetArgs extends js.Object {
     *
     * This function is invoked each time a new iterator is created.
     */
-  var xTensorsFunc: js.UndefOr[
-    js.Function0[js.Array[Tensor_[Rank]] | StringDictionary[js.Array[Tensor_[Rank]]]]
-  ] = js.undefined
+  var xTensorsFunc: js.UndefOr[js.Function0[js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]]] = js.undefined
   /**
     * The shape of the target(s) of a single exapmle.
     */
@@ -42,9 +40,7 @@ trait FakeDatasetArgs extends js.Object {
     *
     * This function is invoked each time a new iterator is created.
     */
-  var yTensorsFunc: js.UndefOr[
-    js.Function0[js.Array[Tensor_[Rank]] | StringDictionary[js.Array[Tensor_[Rank]]]]
-  ] = js.undefined
+  var yTensorsFunc: js.UndefOr[js.Function0[js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]]] = js.undefined
 }
 
 object FakeDatasetArgs {
@@ -54,8 +50,8 @@ object FakeDatasetArgs {
     numBatches: Double,
     xShape: Shape | StringDictionary[Shape],
     yShape: Shape | StringDictionary[Shape],
-    xTensorsFunc: () => js.Array[Tensor_[Rank]] | StringDictionary[js.Array[Tensor_[Rank]]] = null,
-    yTensorsFunc: () => js.Array[Tensor_[Rank]] | StringDictionary[js.Array[Tensor_[Rank]]] = null
+    xTensorsFunc: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]] = null,
+    yTensorsFunc: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]] = null
   ): FakeDatasetArgs = {
     val __obj = js.Dynamic.literal(batchSize = batchSize.asInstanceOf[js.Any], numBatches = numBatches.asInstanceOf[js.Any], xShape = xShape.asInstanceOf[js.Any], yShape = yShape.asInstanceOf[js.Any])
     if (xTensorsFunc != null) __obj.updateDynamic("xTensorsFunc")(js.Any.fromFunction0(xTensorsFunc))

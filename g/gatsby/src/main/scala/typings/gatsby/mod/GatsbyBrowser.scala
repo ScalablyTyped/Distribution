@@ -17,6 +17,7 @@ trait GatsbyBrowser extends js.Object {
   var onServiceWorkerInstalled: js.UndefOr[js.Function2[/* args */ ServiceWorkerArgs, /* options */ PluginOptions, _]] = js.undefined
   var onServiceWorkerRedundant: js.UndefOr[js.Function2[/* args */ ServiceWorkerArgs, /* options */ PluginOptions, _]] = js.undefined
   var onServiceWorkerUpdateFound: js.UndefOr[js.Function2[/* args */ ServiceWorkerArgs, /* options */ PluginOptions, _]] = js.undefined
+  var onServiceWorkerUpdateReady: js.UndefOr[js.Function2[/* args */ ServiceWorkerArgs, /* options */ PluginOptions, _]] = js.undefined
   var registerServiceWorker: js.UndefOr[js.Function2[/* args */ BrowserPluginArgs, /* options */ PluginOptions, _]] = js.undefined
   var replaceComponentRenderer: js.UndefOr[
     js.Function2[/* args */ ReplaceComponentRendererArgs, /* options */ PluginOptions, _]
@@ -24,7 +25,11 @@ trait GatsbyBrowser extends js.Object {
   var replaceHydrateFunction: js.UndefOr[js.Function2[/* args */ BrowserPluginArgs, /* options */ PluginOptions, _]] = js.undefined
   var shouldUpdateScroll: js.UndefOr[js.Function2[/* args */ ShouldUpdateScrollArgs, /* options */ PluginOptions, _]] = js.undefined
   var wrapPageElement: js.UndefOr[
-    js.Function2[/* args */ WrapPageElementBrowserArgs, /* options */ PluginOptions, _]
+    js.Function2[
+      /* args */ WrapPageElementBrowserArgs[js.Object, js.Object], 
+      /* options */ PluginOptions, 
+      _
+    ]
   ] = js.undefined
   var wrapRootElement: js.UndefOr[
     js.Function2[/* args */ WrapRootElementBrowserArgs, /* options */ PluginOptions, _]
@@ -46,11 +51,12 @@ object GatsbyBrowser {
     onServiceWorkerInstalled: (/* args */ ServiceWorkerArgs, /* options */ PluginOptions) => _ = null,
     onServiceWorkerRedundant: (/* args */ ServiceWorkerArgs, /* options */ PluginOptions) => _ = null,
     onServiceWorkerUpdateFound: (/* args */ ServiceWorkerArgs, /* options */ PluginOptions) => _ = null,
+    onServiceWorkerUpdateReady: (/* args */ ServiceWorkerArgs, /* options */ PluginOptions) => _ = null,
     registerServiceWorker: (/* args */ BrowserPluginArgs, /* options */ PluginOptions) => _ = null,
     replaceComponentRenderer: (/* args */ ReplaceComponentRendererArgs, /* options */ PluginOptions) => _ = null,
     replaceHydrateFunction: (/* args */ BrowserPluginArgs, /* options */ PluginOptions) => _ = null,
     shouldUpdateScroll: (/* args */ ShouldUpdateScrollArgs, /* options */ PluginOptions) => _ = null,
-    wrapPageElement: (/* args */ WrapPageElementBrowserArgs, /* options */ PluginOptions) => _ = null,
+    wrapPageElement: (/* args */ WrapPageElementBrowserArgs[js.Object, js.Object], /* options */ PluginOptions) => _ = null,
     wrapRootElement: (/* args */ WrapRootElementBrowserArgs, /* options */ PluginOptions) => _ = null
   ): GatsbyBrowser = {
     val __obj = js.Dynamic.literal()
@@ -66,6 +72,7 @@ object GatsbyBrowser {
     if (onServiceWorkerInstalled != null) __obj.updateDynamic("onServiceWorkerInstalled")(js.Any.fromFunction2(onServiceWorkerInstalled))
     if (onServiceWorkerRedundant != null) __obj.updateDynamic("onServiceWorkerRedundant")(js.Any.fromFunction2(onServiceWorkerRedundant))
     if (onServiceWorkerUpdateFound != null) __obj.updateDynamic("onServiceWorkerUpdateFound")(js.Any.fromFunction2(onServiceWorkerUpdateFound))
+    if (onServiceWorkerUpdateReady != null) __obj.updateDynamic("onServiceWorkerUpdateReady")(js.Any.fromFunction2(onServiceWorkerUpdateReady))
     if (registerServiceWorker != null) __obj.updateDynamic("registerServiceWorker")(js.Any.fromFunction2(registerServiceWorker))
     if (replaceComponentRenderer != null) __obj.updateDynamic("replaceComponentRenderer")(js.Any.fromFunction2(replaceComponentRenderer))
     if (replaceHydrateFunction != null) __obj.updateDynamic("replaceHydrateFunction")(js.Any.fromFunction2(replaceHydrateFunction))

@@ -157,49 +157,42 @@ class Table () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Clears all the filters currently applied on the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   def clearFilters(): Unit = js.native
   /**
-    *
     * Converts the table into a normal range of cells. All data is preserved.
     *
     * [Api set: ExcelApi 1.2]
     */
   def convertToRange(): Range = js.native
   /**
-    *
     * Deletes the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the range object associated with the data body of the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getDataBodyRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with header row of the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getHeaderRowRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with the entire table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with totals row of the table.
     *
     * [Api set: ExcelApi 1.1]
@@ -216,7 +209,6 @@ class Table () extends ClientObject {
   def load(propertyNames: String): Table = js.native
   def load(propertyNames: js.Array[String]): Table = js.native
   /**
-    *
     * Reapplies all the filters currently on the table.
     *
     * [Api set: ExcelApi 1.2]

@@ -23,21 +23,21 @@ trait DefaultFrameMixin
      with ConstraintMixin
      with LayoutMixin
      with ExportMixin {
+  var clipsContent: Boolean = js.native
   var counterAxisSizingMode: FIXED | AUTO = js.native
+  var gridStyleId: String = js.native
+  var guides: js.Array[Guide] = js.native
    // applicable only if layoutMode != "NONE"
   var horizontalPadding: Double = js.native
    // applicable only if layoutMode != "NONE"
   var itemSpacing: Double = js.native
-  var layoutMode: NONE | HORIZONTAL | VERTICAL = js.native
-   // PROPOSED API ONLY
-  var numberOfFixedChildren: Double = js.native
    // applicable only if layoutMode != "NONE"
+  var layoutGrids: js.Array[LayoutGrid] = js.native
+  var layoutMode: NONE | HORIZONTAL | VERTICAL = js.native
+  var numberOfFixedChildren: Double = js.native
   var overflowDirection: OverflowDirection = js.native
-   // PROPOSED API ONLY
   val overlayBackground: OverlayBackground = js.native
-   // PROPOSED API ONLY
   val overlayBackgroundInteraction: OverlayBackgroundInteraction = js.native
-   // PROPOSED API ONLY
   val overlayPositionType: OverlayPositionType = js.native
    // applicable only if layoutMode != "NONE"
   var verticalPadding: Double = js.native

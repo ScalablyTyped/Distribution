@@ -2,8 +2,13 @@ package typings.pulumiAws.mod
 
 import typings.pulumiAws.activityMod.ActivityArgs
 import typings.pulumiAws.activityMod.ActivityState
+import typings.pulumiAws.getActivityMod.GetActivityArgs
+import typings.pulumiAws.getActivityMod.GetActivityResult
+import typings.pulumiAws.getStateMachineMod.GetStateMachineArgs
+import typings.pulumiAws.getStateMachineMod.GetStateMachineResult
 import typings.pulumiAws.stateMachineMod.StateMachineArgs
 import typings.pulumiAws.stateMachineMod.StateMachineState
+import typings.pulumiPulumi.invokeMod.InvokeOptions
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
@@ -43,6 +48,11 @@ object sfn extends js.Object {
     def this(name: String, args: StateMachineArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getActivity(): js.Promise[GetActivityResult] with GetActivityResult = js.native
+  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] with GetActivityResult = js.native
+  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] with GetActivityResult = js.native
+  def getStateMachine(args: GetStateMachineArgs): js.Promise[GetStateMachineResult] with GetStateMachineResult = js.native
+  def getStateMachine(args: GetStateMachineArgs, opts: InvokeOptions): js.Promise[GetStateMachineResult] with GetStateMachineResult = js.native
   /* static members */
   @js.native
   object Activity extends js.Object {

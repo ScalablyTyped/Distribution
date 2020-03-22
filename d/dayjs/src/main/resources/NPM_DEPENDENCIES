@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dayjs" : "1.8.21"
+      "dayjs" : "1.8.23"
     }
   ],
   "test-dependencies" : [
     {
-      "dayjs" : "1.8.21"
+      "dayjs" : "1.8.23"
     }
   ],
   "compile-devDependencies" : [

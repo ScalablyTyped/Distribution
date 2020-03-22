@@ -198,8 +198,14 @@ trait PlotArearangeOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
-    * (Highcharts, Highstock) A name for the dash style to use for the graph,
-    * or for some series types the outline of each shape.
+    * (Highcharts, Highstock) A reserved subspace to store options and values
+    * for customized functionality. Here you can add additional data for your
+    * own event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
+    * (Highcharts, Highstock) Name of the dash style to use for the graph, or
+    * for some series types the outline of each shape.
     *
     * In styled mode, the stroke dash-array can be set with the same classes as
     * listed under series.color.
@@ -307,13 +313,13 @@ trait PlotArearangeOptions extends js.Object {
     * (Highstock) Together with gapSize, this option defines where to draw gaps
     * in the graph.
     *
-    * When the `gapUnit` is `relative` (default), a gap size of 5 means that if
-    * the distance between two points is greater than five times that of the
+    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
+    * if the distance between two points is greater than five times that of the
     * two closest points, the graph will be broken.
     *
-    * When the `gapUnit` is `value`, the gap is based on absolute axis values,
-    * which on a datetime axis is milliseconds. This also applies to the
-    * navigator series that inherits gap options from the base series.
+    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
+    * values, which on a datetime axis is milliseconds. This also applies to
+    * the navigator series that inherits gap options from the base series.
     */
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   /**
@@ -597,7 +603,7 @@ trait PlotArearangeOptions extends js.Object {
     * * If `Infinity` or `-Infinity`, the area between the graph and the
     * corresponing Y axis extreme is filled (since v6.1.0).
     */
-  var threshold: js.UndefOr[Double] = js.undefined
+  var threshold: js.UndefOr[Double | Null] = js.undefined
   /**
     * (Highcharts, Highstock) A configuration object for the tooltip rendering
     * of each single series. Properties are inherited from tooltip, but only
@@ -672,6 +678,7 @@ object PlotArearangeOptions {
     connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dashStyle: DashStyleValue = null,
     dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: SeriesAreaRangeDataLabelsOptionsObject | js.Array[SeriesAreaRangeDataLabelsOptionsObject] = null,
@@ -751,6 +758,7 @@ object PlotArearangeOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])

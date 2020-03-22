@@ -15,8 +15,8 @@ trait IKeytipTreeNode extends js.Object {
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether or not this keytip will have children keytips that are dynamically created (DOM is generated on keytip activation)
-    * Common cases are keytips in a menu or modal
+    * Whether or not this keytip will have children keytips that are dynamically created (DOM is generated on
+    * keytip activation). Common cases are keytips in a menu or modal.
     */
   var hasDynamicChildren: js.UndefOr[Boolean] = js.undefined
   /**

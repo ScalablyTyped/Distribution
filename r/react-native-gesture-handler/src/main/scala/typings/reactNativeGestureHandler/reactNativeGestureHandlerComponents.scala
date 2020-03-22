@@ -34,6 +34,8 @@ object reactNativeGestureHandlerComponents extends reactNativeGestureHandlerProp
   @scala.inline
   def ForceTouchGestureHandler: ComponentType[ForceTouchGestureHandlerProps] = js.constructorOf[typings.reactNativeGestureHandler.mod.ForceTouchGestureHandler].asInstanceOf[typings.react.mod.ComponentType[ForceTouchGestureHandlerProps]]
   @scala.inline
+  def GestureHandlerRootView: ComponentType[GestureHandlerRootViewProps] = js.constructorOf[typings.reactNativeGestureHandler.mod.GestureHandlerRootView].asInstanceOf[typings.react.mod.ComponentType[GestureHandlerRootViewProps]]
+  @scala.inline
   def LongPressGestureHandler: ComponentType[LongPressGestureHandlerProps] = js.constructorOf[typings.reactNativeGestureHandler.mod.LongPressGestureHandler].asInstanceOf[typings.react.mod.ComponentType[LongPressGestureHandlerProps]]
   @scala.inline
   def NativeViewGestureHandler: ComponentType[NativeViewGestureHandlerProps] = js.constructorOf[typings.reactNativeGestureHandler.mod.NativeViewGestureHandler].asInstanceOf[typings.react.mod.ComponentType[NativeViewGestureHandlerProps]]

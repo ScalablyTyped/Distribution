@@ -5,31 +5,32 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ModalProps[T] extends js.Object {
+trait ModalProps extends js.Object {
   var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
-  var onClose: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   var theme: js.UndefOr[AnonBreakpointsColors] = js.undefined
 }
 
 object ModalProps {
   @scala.inline
-  def apply[T](
+  def apply(
     children: js.Array[ReactNode] | ReactNode = null,
     closeButtonAriaLabel: String = null,
-    onClose: MouseEvent[T, NativeMouseEvent] => Unit = null,
+    onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     theme: AnonBreakpointsColors = null
-  ): ModalProps[T] = {
+  ): ModalProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModalProps[T]]
+    __obj.asInstanceOf[ModalProps]
   }
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gae_dot_channel_dot_api"
-version := "0.0-unknown-dt-20190322Z-b20aa5"
+version := "0.0-unknown-dt-20200226Z-b20aa5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

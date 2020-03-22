@@ -45,6 +45,10 @@ trait PatternOptionsObject extends js.Object {
     */
   var path: String | SVGAttributes
   /**
+    * SVG `patternTransform` to apply to the entire pattern.
+    */
+  var patternTransform: String
+  /**
     * Width of the pattern. For images this is automatically set to the width
     * of the element bounding box if not supplied. For non-image patterns the
     * default is 32px. Note that automatic resizing of image patterns to fill a
@@ -72,12 +76,13 @@ object PatternOptionsObject {
     image: String,
     opacity: Double,
     path: String | SVGAttributes,
+    patternTransform: String,
     width: Double,
     id: String = null,
     x: Int | Double = null,
     y: Int | Double = null
   ): PatternOptionsObject = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], patternTransform = patternTransform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

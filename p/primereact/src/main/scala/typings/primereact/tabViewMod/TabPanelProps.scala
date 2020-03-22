@@ -8,7 +8,7 @@ trait TabPanelProps extends js.Object {
   var contentClassName: js.UndefOr[String] = js.undefined
   var contentStyle: js.UndefOr[js.Any] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var header: js.UndefOr[String] = js.undefined
+  var header: js.UndefOr[js.Any] = js.undefined
   var headerClassName: js.UndefOr[String] = js.undefined
   var headerStyle: js.UndefOr[js.Any] = js.undefined
   var leftIcon: js.UndefOr[String] = js.undefined
@@ -21,7 +21,7 @@ object TabPanelProps {
     contentClassName: String = null,
     contentStyle: js.Any = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    header: String = null,
+    header: js.Any = null,
     headerClassName: String = null,
     headerStyle: js.Any = null,
     leftIcon: String = null,

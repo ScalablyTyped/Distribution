@@ -5,6 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type ComponentOverride = java.lang.String | (typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState]) | typings.react.mod.SFC[js.Object] | typings.markdownToJsx.AnonComponent
+  type ComponentOverride[P, S] = java.lang.String | (typings.react.mod.ComponentClass[P, S]) | typings.react.mod.SFC[P] | (typings.markdownToJsx.AnonComponent[P, S])
   type Markdown = typings.react.mod.Component[typings.markdownToJsx.mod.MarkdownProps, js.Object, js.Any]
 }

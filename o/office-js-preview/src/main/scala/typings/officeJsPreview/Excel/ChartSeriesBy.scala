@@ -18,7 +18,6 @@ sealed trait ChartSeriesBy extends js.Object
 @js.native
 object ChartSeriesBy extends js.Object {
   /**
-    *
     * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
     *
     */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait CookieDefinition extends js.Object {
   var domain: String
-  var expires: js.UndefOr[String | Date] = js.undefined
+  var expires: js.UndefOr[String | Date | Double] = js.undefined
   var extensions: js.UndefOr[js.Array[AnonKey]] = js.undefined
   var hostOnly: js.UndefOr[Boolean] = js.undefined
   var httpOnly: js.UndefOr[Boolean] = js.undefined
@@ -25,7 +25,7 @@ object CookieDefinition {
   def apply(
     domain: String,
     path: String,
-    expires: String | Date = null,
+    expires: String | Date | Double = null,
     extensions: js.Array[AnonKey] = null,
     hostOnly: js.UndefOr[Boolean] = js.undefined,
     httpOnly: js.UndefOr[Boolean] = js.undefined,

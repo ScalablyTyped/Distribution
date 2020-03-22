@@ -18,7 +18,6 @@ sealed trait PictureFormat extends js.Object
 @js.native
 object PictureFormat extends js.Object {
   /**
-    *
     * Bitmap image.
     *
     */
@@ -26,7 +25,6 @@ object PictureFormat extends js.Object {
   sealed trait bmp extends PictureFormat
   
   /**
-    *
     * Graphics Interchange Format.
     *
     */
@@ -34,7 +32,6 @@ object PictureFormat extends js.Object {
   sealed trait gif extends PictureFormat
   
   /**
-    *
     * Joint Photographic Experts Group.
     *
     */
@@ -42,7 +39,6 @@ object PictureFormat extends js.Object {
   sealed trait jpeg extends PictureFormat
   
   /**
-    *
     * Portable Network Graphics.
     *
     */
@@ -50,7 +46,6 @@ object PictureFormat extends js.Object {
   sealed trait png extends PictureFormat
   
   /**
-    *
     * Scalable Vector Graphic.
     *
     */

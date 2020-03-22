@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵangularPackagesCoreCoreBi extends js.Object {
   def apply(
-    lView: ɵangularPackagesCoreCoreBo,
+    lView: ɵangularPackagesCoreCoreBp,
     bindingRoot: Double,
     slotOffset: Double,
     pureFn: js.Function4[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, /* v4 */ js.Any, _],
@@ -18,7 +18,7 @@ object ɵangularPackagesCoreCoreBi extends js.Object {
     exp4: js.Any
   ): js.Any = js.native
   def apply(
-    lView: ɵangularPackagesCoreCoreBo,
+    lView: ɵangularPackagesCoreCoreBp,
     bindingRoot: Double,
     slotOffset: Double,
     pureFn: js.Function4[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, /* v4 */ js.Any, _],

@@ -25,7 +25,6 @@ class CustomXmlPartCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[CustomXmlPart] = js.native
   /**
-    *
     * Adds a new custom XML part to the workbook.
     *
     * [Api set: ExcelApi 1.5]
@@ -34,7 +33,6 @@ class CustomXmlPartCollection () extends ClientObject {
     */
   def add(xml: String): CustomXmlPart = js.native
   /**
-    *
     * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
     *
     * [Api set: ExcelApi 1.5]
@@ -43,14 +41,12 @@ class CustomXmlPartCollection () extends ClientObject {
     */
   def getByNamespace(namespaceUri: String): CustomXmlPartScopedCollection = js.native
   /**
-    *
     * Gets the number of CustomXml parts in the collection.
     *
     * [Api set: ExcelApi 1.5]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a custom XML part based on its ID.
     *
     * [Api set: ExcelApi 1.5]
@@ -59,7 +55,6 @@ class CustomXmlPartCollection () extends ClientObject {
     */
   def getItem(id: String): CustomXmlPart = js.native
   /**
-    *
     * Gets a custom XML part based on its ID.
     If the CustomXmlPart does not exist, the return object's isNull property will be true.
     *

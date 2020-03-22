@@ -33,6 +33,6 @@ object filter extends js.Object {
     *
     * @see {@link https://github.com/expressjs/compression#filter-1|`.filter` documentation}
     */
-  def apply(req: Request_[ParamsDictionary], res: Response_): Boolean = js.native
+  def apply(req: Request_[ParamsDictionary], res: Response_[_]): Boolean = js.native
 }
 

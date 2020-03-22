@@ -1,22 +1,25 @@
 package typings.grommet
 
+import typings.grommet.utilsMod.BreakpointBorderSize
+import typings.grommet.utilsMod.BreakpointEdgeSize
+import typings.grommet.utilsMod.BreakpointSize
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonBorderSize extends js.Object {
-  var borderSize: js.UndefOr[AnonLarge] = js.undefined
-  var edgeSize: js.UndefOr[AnonHair] = js.undefined
-  var size: js.UndefOr[AnonFull] = js.undefined
+  var borderSize: js.UndefOr[BreakpointBorderSize] = js.undefined
+  var edgeSize: js.UndefOr[BreakpointEdgeSize] = js.undefined
+  var size: js.UndefOr[BreakpointSize] = js.undefined
   var value: js.UndefOr[Double] = js.undefined
 }
 
 object AnonBorderSize {
   @scala.inline
   def apply(
-    borderSize: AnonLarge = null,
-    edgeSize: AnonHair = null,
-    size: AnonFull = null,
+    borderSize: BreakpointBorderSize = null,
+    edgeSize: BreakpointEdgeSize = null,
+    size: BreakpointSize = null,
     value: Int | Double = null
   ): AnonBorderSize = {
     val __obj = js.Dynamic.literal()

@@ -42,7 +42,7 @@ trait IDialogContentProps extends ClassAttributes[DialogContentBase] {
     */
   var isMultiline: js.UndefOr[Boolean] = js.undefined
   /**
-    * A callback function for when the Dialog is dismissed from the close button or light dismiss, before the animation completes.
+    * Callback for when the Dialog is dismissed from the close button or light dismiss, before the animation completes.
     */
   var onDismiss: js.UndefOr[
     js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], _]

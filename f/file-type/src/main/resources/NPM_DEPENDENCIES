@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "file-type" : "14.1.3"
+      "file-type" : "14.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "file-type" : "14.1.3"
+      "file-type" : "14.1.4"
     }
   ],
   "compile-devDependencies" : [

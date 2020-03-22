@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-big-calendar
 
-Typings are for version 0.22
+Typings are for version 0.24
 
 ## Library description:
 Calendar! with events

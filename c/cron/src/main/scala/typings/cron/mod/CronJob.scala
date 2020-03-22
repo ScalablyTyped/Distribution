@@ -29,7 +29,7 @@ class CronJob protected () extends js.Object {
   def this(
     cronTime: String,
     onTick: CronCommand,
-    onComplete: js.UndefOr[CronCommand],
+    onComplete: js.UndefOr[CronCommand | Null],
     start: js.UndefOr[Boolean],
     timeZone: js.UndefOr[String],
     context: js.UndefOr[js.Any],
@@ -40,7 +40,7 @@ class CronJob protected () extends js.Object {
   def this(
     cronTime: Moment,
     onTick: CronCommand,
-    onComplete: js.UndefOr[CronCommand],
+    onComplete: js.UndefOr[CronCommand | Null],
     start: js.UndefOr[Boolean],
     timeZone: js.UndefOr[String],
     context: js.UndefOr[js.Any],
@@ -51,7 +51,7 @@ class CronJob protected () extends js.Object {
   def this(
     cronTime: Date,
     onTick: CronCommand,
-    onComplete: js.UndefOr[CronCommand],
+    onComplete: js.UndefOr[CronCommand | Null],
     start: js.UndefOr[Boolean],
     timeZone: js.UndefOr[String],
     context: js.UndefOr[js.Any],

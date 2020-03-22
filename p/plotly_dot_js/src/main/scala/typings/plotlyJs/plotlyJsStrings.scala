@@ -224,6 +224,9 @@ object plotlyJsStrings {
   sealed trait `circle-out` extends js.Object
   
   @js.native
+  sealed trait circular extends js.Object
+  
+  @js.native
   sealed trait cite extends js.Object
   
   @js.native
@@ -782,10 +785,28 @@ object plotlyJsStrings {
   sealed trait max extends js.Object
   
   @js.native
+  sealed trait `max ascending` extends js.Object
+  
+  @js.native
+  sealed trait `max descending` extends js.Object
+  
+  @js.native
   sealed trait mayan extends Calendar
   
   @js.native
+  sealed trait `mean ascending` extends js.Object
+  
+  @js.native
+  sealed trait `mean descending` extends js.Object
+  
+  @js.native
   sealed trait median extends js.Object
+  
+  @js.native
+  sealed trait `median ascending` extends js.Object
+  
+  @js.native
+  sealed trait `median descending` extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
@@ -816,6 +837,12 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait min extends js.Object
+  
+  @js.native
+  sealed trait `min ascending` extends js.Object
+  
+  @js.native
+  sealed trait `min descending` extends js.Object
   
   @js.native
   sealed trait minute extends js.Object
@@ -1244,6 +1271,12 @@ object plotlyJsStrings {
   sealed trait sum extends js.Object
   
   @js.native
+  sealed trait `sum ascending` extends js.Object
+  
+  @js.native
+  sealed trait `sum descending` extends js.Object
+  
+  @js.native
   sealed trait summary extends js.Object
   
   @js.native
@@ -1368,6 +1401,12 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait toself extends js.Object
+  
+  @js.native
+  sealed trait `total ascending` extends js.Object
+  
+  @js.native
+  sealed trait `total descending` extends js.Object
   
   @js.native
   sealed trait tozero extends js.Object
@@ -1755,6 +1794,8 @@ object plotlyJsStrings {
   @scala.inline
   def `circle-out`: `circle-out` = "circle-out".asInstanceOf[`circle-out`]
   @scala.inline
+  def circular: circular = "circular".asInstanceOf[circular]
+  @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
@@ -2127,9 +2168,21 @@ object plotlyJsStrings {
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
+  def `max ascending`: `max ascending` = "max ascending".asInstanceOf[`max ascending`]
+  @scala.inline
+  def `max descending`: `max descending` = "max descending".asInstanceOf[`max descending`]
+  @scala.inline
   def mayan: mayan = "mayan".asInstanceOf[mayan]
   @scala.inline
+  def `mean ascending`: `mean ascending` = "mean ascending".asInstanceOf[`mean ascending`]
+  @scala.inline
+  def `mean descending`: `mean descending` = "mean descending".asInstanceOf[`mean descending`]
+  @scala.inline
   def median: median = "median".asInstanceOf[median]
+  @scala.inline
+  def `median ascending`: `median ascending` = "median ascending".asInstanceOf[`median ascending`]
+  @scala.inline
+  def `median descending`: `median descending` = "median descending".asInstanceOf[`median descending`]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
@@ -2150,6 +2203,10 @@ object plotlyJsStrings {
   def `middle right`: `middle right` = "middle right".asInstanceOf[`middle right`]
   @scala.inline
   def min: min = "min".asInstanceOf[min]
+  @scala.inline
+  def `min ascending`: `min ascending` = "min ascending".asInstanceOf[`min ascending`]
+  @scala.inline
+  def `min descending`: `min descending` = "min descending".asInstanceOf[`min descending`]
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
@@ -2435,6 +2492,10 @@ object plotlyJsStrings {
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   @scala.inline
+  def `sum ascending`: `sum ascending` = "sum ascending".asInstanceOf[`sum ascending`]
+  @scala.inline
+  def `sum descending`: `sum descending` = "sum descending".asInstanceOf[`sum descending`]
+  @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
@@ -2518,6 +2579,10 @@ object plotlyJsStrings {
   def `top to bottom`: `top to bottom` = "top to bottom".asInstanceOf[`top to bottom`]
   @scala.inline
   def toself: toself = "toself".asInstanceOf[toself]
+  @scala.inline
+  def `total ascending`: `total ascending` = "total ascending".asInstanceOf[`total ascending`]
+  @scala.inline
+  def `total descending`: `total descending` = "total descending".asInstanceOf[`total descending`]
   @scala.inline
   def tozero: tozero = "tozero".asInstanceOf[tozero]
   @scala.inline

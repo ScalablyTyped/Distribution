@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "harmon"
-version := "1.4-dt-20200113Z-2dc1a4"
+version := "1.4-dt-20200225Z-2dc1a4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

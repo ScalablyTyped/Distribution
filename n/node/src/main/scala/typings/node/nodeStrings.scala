@@ -19,6 +19,7 @@ import typings.node.cryptoMod.Utf8AsciiBinaryEncoding
 import typings.node.cryptoMod.Utf8AsciiLatin1Encoding
 import typings.node.dgramMod.SocketType
 import typings.node.fsMod.symlink.Type
+import typings.node.perfHooksMod.EntryType
 import typings.node.tlsMod.SecureVersion
 import typings.node.utilMod.Style
 import scala.scalajs.js
@@ -674,6 +675,12 @@ object nodeStrings {
   sealed trait freebsd extends Platform
   
   @js.native
+  sealed trait function extends EntryType
+  
+  @js.native
+  sealed trait gc extends EntryType
+  
+  @js.native
   sealed trait get extends js.Object
   
   @js.native
@@ -687,6 +694,12 @@ object nodeStrings {
     extends BufferEncoding
        with HexBase64BinaryEncoding
        with HexBase64Latin1Encoding
+  
+  @js.native
+  sealed trait http extends EntryType
+  
+  @js.native
+  sealed trait http2 extends EntryType
   
   @js.native
   sealed trait httpColon extends js.Object
@@ -748,6 +761,12 @@ object nodeStrings {
   sealed trait lookup extends js.Object
   
   @js.native
+  sealed trait mark extends EntryType
+  
+  @js.native
+  sealed trait measure extends EntryType
+  
+  @js.native
   sealed trait message extends js.Object
   
   @js.native
@@ -764,6 +783,9 @@ object nodeStrings {
   
   @js.native
   sealed trait newSession extends js.Object
+  
+  @js.native
+  sealed trait node extends EntryType
   
   @js.native
   sealed trait `null` extends Style
@@ -925,6 +947,9 @@ object nodeStrings {
   
   @js.native
   sealed trait uncaughtException extends js.Object
+  
+  @js.native
+  sealed trait uncaughtExceptionMonitor extends js.Object
   
   @js.native
   sealed trait uncompressed extends ECDHKeyFormat
@@ -1393,6 +1418,10 @@ object nodeStrings {
   @scala.inline
   def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
   @scala.inline
+  def function: function = "function".asInstanceOf[function]
+  @scala.inline
+  def gc: gc = "gc".asInstanceOf[gc]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
   def goaway: goaway = "goaway".asInstanceOf[goaway]
@@ -1400,6 +1429,10 @@ object nodeStrings {
   def headers: headers = "headers".asInstanceOf[headers]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
+  @scala.inline
+  def http: http = "http".asInstanceOf[http]
+  @scala.inline
+  def http2: http2 = "http2".asInstanceOf[http2]
   @scala.inline
   def httpColon: httpColon = "http:".asInstanceOf[httpColon]
   @scala.inline
@@ -1435,6 +1468,10 @@ object nodeStrings {
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
+  def mark: mark = "mark".asInstanceOf[mark]
+  @scala.inline
+  def measure: measure = "measure".asInstanceOf[measure]
+  @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
   def module: module = "module".asInstanceOf[module]
@@ -1446,6 +1483,8 @@ object nodeStrings {
   def newListener: newListener = "newListener".asInstanceOf[newListener]
   @scala.inline
   def newSession: newSession = "newSession".asInstanceOf[newSession]
+  @scala.inline
+  def node: node = "node".asInstanceOf[node]
   @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   @scala.inline
@@ -1552,6 +1591,8 @@ object nodeStrings {
   def udp6: udp6 = "udp6".asInstanceOf[udp6]
   @scala.inline
   def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
+  @scala.inline
+  def uncaughtExceptionMonitor: uncaughtExceptionMonitor = "uncaughtExceptionMonitor".asInstanceOf[uncaughtExceptionMonitor]
   @scala.inline
   def uncompressed: uncompressed = "uncompressed".asInstanceOf[uncompressed]
   @scala.inline

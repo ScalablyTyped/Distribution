@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   */
 class Response () extends js.Object {
   def this(options: StringDictionary[js.Any]) = this()
-  def this(options: Response_) = this()
+  def this(options: Response_[_]) = this()
   var body: js.UndefOr[js.Any] = js.native
   var headers: js.UndefOr[StringDictionary[String]] = js.native
   var status: js.UndefOr[Double] = js.native

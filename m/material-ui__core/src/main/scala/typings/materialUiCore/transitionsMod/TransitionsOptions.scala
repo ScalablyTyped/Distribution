@@ -2,7 +2,7 @@ package typings.materialUiCore.transitionsMod
 
 import typings.materialUiCore.PartialDuration
 import typings.materialUiCore.PartialEasing
-import typings.materialUiCore.Partialdurationnumberstringeasingstringdelaynumber
+import typings.materialUiCore.Partialdurationnumberstri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ trait TransitionsOptions extends js.Object {
   var create: js.UndefOr[
     js.Function2[
       /* props */ String | js.Array[String], 
-      /* options */ js.UndefOr[Partialdurationnumberstringeasingstringdelaynumber], 
+      /* options */ js.UndefOr[Partialdurationnumberstri], 
       String
     ]
   ] = js.native
@@ -24,7 +24,7 @@ trait TransitionsOptions extends js.Object {
 object TransitionsOptions {
   @scala.inline
   def apply(
-    create: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partialdurationnumberstringeasingstringdelaynumber]) => String = null,
+    create: (/* props */ String | js.Array[String], /* options */ js.UndefOr[Partialdurationnumberstri]) => String = null,
     duration: PartialDuration = null,
     easing: PartialEasing = null,
     getAutoHeightDuration: /* height */ Double => Double = null

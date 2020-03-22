@@ -392,13 +392,19 @@ trait YAxisOptions extends AxisOptions {
     */
   var pane: js.UndefOr[Double] = js.undefined
   /**
-    * (Highcharts, Highstock, Gantt) An array of objects defining plot bands on
-    * the Y axis.
+    * (Highcharts, Highstock, Gantt) An array of colored bands stretching
+    * across the plot area marking an interval on the axis.
+    *
+    * In styled mode, the plot bands are styled by the `.highcharts-plot-band`
+    * class in addition to the `className` option.
     */
   var plotBands: js.UndefOr[js.Array[YAxisPlotBandsOptions]] = js.undefined
   /**
-    * (Highcharts, Highstock, Gantt) An array of objects representing plot
-    * lines on the X axis
+    * (Highcharts, Highstock, Gantt) An array of lines stretching across the
+    * plot area, marking a specific value on one of the axes.
+    *
+    * In styled mode, the plot lines are styled by the `.highcharts-plot-line`
+    * class in addition to the `className` option.
     */
   var plotLines: js.UndefOr[js.Array[YAxisPlotLinesOptions]] = js.undefined
   /**

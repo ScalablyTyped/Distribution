@@ -1,6 +1,6 @@
 package typings.materialUiCore.listItemAvatarListItemAvatarMod
 
-import typings.materialUiCore.PartialClassNameMapListItemAvatarClassKey
+import typings.materialUiCore.PartialClassNameMapListItIcon
 import typings.react.mod.CSSProperties
 import typings.react.mod.Ref
 import typings.react.mod.RefObject
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListItemAvatarProps extends js.Object {
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListItemAvatarClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListItIcon] = js.native
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
   var style: js.UndefOr[CSSProperties] = js.native
 }
@@ -21,7 +21,7 @@ object ListItemAvatarProps {
   @scala.inline
   def apply(
     className: String = null,
-    classes: PartialClassNameMapListItemAvatarClassKey = null,
+    classes: PartialClassNameMapListItIcon = null,
     innerRef: Ref[_] | RefObject[_] = null,
     style: CSSProperties = null
   ): ListItemAvatarProps = {

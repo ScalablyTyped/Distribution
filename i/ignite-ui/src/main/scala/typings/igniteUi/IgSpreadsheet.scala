@@ -71,6 +71,10 @@ trait IgSpreadsheet
   	 */
   var brushes: js.UndefOr[IgSpreadsheetBrushes] = js.undefined
   /**
+  	 * Invoked when a contextmenu is being opened for the Spreadsheet.
+  	 */
+  var contextMenuOpening: js.UndefOr[ContextMenuOpeningEvent] = js.undefined
+  /**
   	 * Invoked when the Spreadsheet has started in-place editing of the activeCell.
   	 */
   var editModeEntered: js.UndefOr[EditModeEnteredEvent] = js.undefined
@@ -99,15 +103,14 @@ trait IgSpreadsheet
   	 */
   var editRangePasswordNeeded: js.UndefOr[EditRangePasswordNeededEvent] = js.undefined
   /**
-  	 * Returns or sets an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.This property is only used if the isEnterKeyNavigationEnabled is set to true. Also, the reverse direction is
+  	 * Returns or sets an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.
+  	 * This property is only used if the isEnterKeyNavigationEnabled is set to true. Also, the reverse direction is
   	 * navigated when Shift + Enter are pressed.
+  	 * down  The cell below should be activated.
+  	 * right  The cell to the right should be activated
+  	 * up  The cell above should be activated.
+  	 * left  The cell to the left should be activated
   	 *
-  	 *
-  	 * Valid values:
-  	 * "down" The cell below should be activated.
-  	 * "right" The cell to the right should be activated
-  	 * "up" The cell above should be activated.
-  	 * "left" The cell to the left should be activated
   	 */
   var enterKeyNavigationDirection: js.UndefOr[String] = js.undefined
   /**
@@ -197,12 +200,10 @@ trait IgSpreadsheet
   var selectionChanged: js.UndefOr[IgSpreadsheetSelectionChangedEvent] = js.undefined
   /**
   	 * Returns or sets a value indicating how the selection is updated when interacting with the cells via the mouse or keyboard.
+  	 * normal  The selection is replaced when dragging the mouse to select a cell or range of cells. Similarly when navigating via the keyboard a new selection is created. One may add a new range by holding the Ctrl key and using the mouse and one may alter the selection range containing the active cell by holding the Shift key down while clicking with the mouse or navigating with the keyboard such as with the arrow keys.
+  	 * extendSelection  The selection range in the cellRanges representing the active cell is updated as one uses the mouse to select a cell or navigating via the keyboard.
+  	 * addToSelection  New cell ranges are added to the cellRanges without needing to hold down the ctrl key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing Shift+F8.
   	 *
-  	 *
-  	 * Valid values:
-  	 * "normal" The selection is replaced when dragging the mouse to select a cell or range of cells. Similarly when navigating via the keyboard a new selection is created. One may add a new range by holding the Ctrl key and using the mouse and one may alter the selection range containing the active cell by holding the Shift key down while clicking with the mouse or navigating with the keyboard such as with the arrow keys.
-  	 * "extendSelection" The selection range in the cellRanges representing the active cell is updated as one uses the mouse to select a cell or navigating via the keyboard.
-  	 * "addToSelection" New cell ranges are added to the cellRanges without needing to hold down the ctrl key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing Shift+F8.
   	 */
   var selectionMode: js.UndefOr[String] = js.undefined
   /**
@@ -264,6 +265,7 @@ object IgSpreadsheet {
     areGridlinesVisible: js.UndefOr[Boolean] = js.undefined,
     areHeadersVisible: js.UndefOr[Boolean] = js.undefined,
     brushes: IgSpreadsheetBrushes = null,
+    contextMenuOpening: (/* event */ Event_, /* ui */ ContextMenuOpeningEventUIParam) => Unit = null,
     editModeEntered: (/* event */ Event_, /* ui */ EditModeEnteredEventUIParam) => Unit = null,
     editModeEntering: (/* event */ Event_, /* ui */ EditModeEnteringEventUIParam) => Unit = null,
     editModeExited: (/* event */ Event_, /* ui */ EditModeExitedEventUIParam) => Unit = null,
@@ -309,6 +311,7 @@ object IgSpreadsheet {
     if (!js.isUndefined(areGridlinesVisible)) __obj.updateDynamic("areGridlinesVisible")(areGridlinesVisible.asInstanceOf[js.Any])
     if (!js.isUndefined(areHeadersVisible)) __obj.updateDynamic("areHeadersVisible")(areHeadersVisible.asInstanceOf[js.Any])
     if (brushes != null) __obj.updateDynamic("brushes")(brushes.asInstanceOf[js.Any])
+    if (contextMenuOpening != null) __obj.updateDynamic("contextMenuOpening")(js.Any.fromFunction2(contextMenuOpening))
     if (editModeEntered != null) __obj.updateDynamic("editModeEntered")(js.Any.fromFunction2(editModeEntered))
     if (editModeEntering != null) __obj.updateDynamic("editModeEntering")(js.Any.fromFunction2(editModeEntering))
     if (editModeExited != null) __obj.updateDynamic("editModeExited")(js.Any.fromFunction2(editModeExited))

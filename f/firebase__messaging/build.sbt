@@ -1,16 +1,17 @@
 organization := "org.scalablytyped"
 name := "firebase__messaging"
-version := "0.6.8-217b5d"
+version := "0.6.10-579aae"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.5.2-1e8550",
-  "org.scalablytyped" %%% "firebase__component" % "0.1.6-27b292",
-  "org.scalablytyped" %%% "firebase__installations-types" % "0.3.2-6744f9",
-  "org.scalablytyped" %%% "firebase__messaging-types" % "0.4.3-7c1454",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.41-fc37fa",
-  "org.scalablytyped" %%% "sinon" % "7.5-dt-20191120Z-d72a6c",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.6.0-6658a6",
+  "org.scalablytyped" %%% "firebase__component" % "0.1.8-009bae",
+  "org.scalablytyped" %%% "firebase__installations-types" % "0.3.3-9ec8c7",
+  "org.scalablytyped" %%% "firebase__logger" % "0.2.0-1da808",
+  "org.scalablytyped" %%% "firebase__messaging-types" % "0.4.4-f5e5b3",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.43-c7dc16",
+  "org.scalablytyped" %%% "sinon" % "7.5-dt-20200225Z-c633f6",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

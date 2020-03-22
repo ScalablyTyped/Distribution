@@ -71,7 +71,6 @@ class TableCollection () extends ClientObject {
   val onFiltered: EventHandlers[TableFilteredEventArgs] = js.native
   def add(address: String, hasHeaders: Boolean): Table = js.native
   /**
-    *
     * Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
     *
     * [Api set: ExcelApi 1.1]
@@ -81,14 +80,12 @@ class TableCollection () extends ClientObject {
     */
   def add(address: Range, hasHeaders: Boolean): Table = js.native
   /**
-    *
     * Gets the number of tables in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a table by Name or ID.
     *
     * [Api set: ExcelApi 1.1]
@@ -97,7 +94,6 @@ class TableCollection () extends ClientObject {
     */
   def getItem(key: String): Table = js.native
   /**
-    *
     * Gets a table based on its position in the collection.
     *
     * [Api set: ExcelApi 1.1]
@@ -106,7 +102,6 @@ class TableCollection () extends ClientObject {
     */
   def getItemAt(index: Double): Table = js.native
   /**
-    *
     * Gets a table by Name or ID. If the table does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.4]

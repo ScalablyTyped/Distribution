@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "shopify-buy"
-version := "1.4.0-dt-20190731Z-3ff010"
+version := "1.11-dt-20200226Z-3e5922"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

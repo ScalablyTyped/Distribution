@@ -18,7 +18,7 @@ class Url protected () extends PropertyBase[UrlDefinition] {
   var auth: js.UndefOr[AnonPassword] = js.native
   var hash: js.UndefOr[String] = js.native
   var host: js.UndefOr[js.Array[String] | String] = js.native
-  var path: js.Array[String] | String = js.native
+  var path: js.UndefOr[js.Array[String] | String] = js.native
   var port: js.UndefOr[String] = js.native
   var protocol: js.UndefOr[String] = js.native
   var query: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String] = js.native

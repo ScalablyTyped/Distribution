@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-selection"
-version := "1.4-dt-20190710Z-35059d"
+version := "1.4-dt-20200320Z-35059d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,8 +2,10 @@ package typings.mailgunJs.mod.messages
 
 import typings.mailgunJs.mailgunJsStrings.False
 import typings.mailgunJs.mailgunJsStrings.True
+import typings.mailgunJs.mailgunJsStrings.false_
 import typings.mailgunJs.mailgunJsStrings.htmlonly
 import typings.mailgunJs.mailgunJsStrings.no
+import typings.mailgunJs.mailgunJsStrings.true_
 import typings.mailgunJs.mailgunJsStrings.yes
 import typings.mailgunJs.mod.AttachmentData
 import scala.scalajs.js
@@ -34,6 +36,7 @@ object BatchData {
     `oColonrequire-tls`: yes | no | True | False = null,
     `oColonskip-verification`: yes | no | True | False = null,
     oColontag: String | js.Array[String] = null,
+    oColontestmode: yes | no | true_ | false_ | True | False = null,
     oColontracking: yes | no | Boolean = null,
     `oColontracking-clicks`: yes | no | htmlonly | Boolean = null,
     `oColontracking-opens`: yes | no | Boolean = null,
@@ -58,6 +61,7 @@ object BatchData {
     if (`oColonrequire-tls` != null) __obj.updateDynamic("o:require-tls")(`oColonrequire-tls`.asInstanceOf[js.Any])
     if (`oColonskip-verification` != null) __obj.updateDynamic("o:skip-verification")(`oColonskip-verification`.asInstanceOf[js.Any])
     if (oColontag != null) __obj.updateDynamic("o:tag")(oColontag.asInstanceOf[js.Any])
+    if (oColontestmode != null) __obj.updateDynamic("o:testmode")(oColontestmode.asInstanceOf[js.Any])
     if (oColontracking != null) __obj.updateDynamic("o:tracking")(oColontracking.asInstanceOf[js.Any])
     if (`oColontracking-clicks` != null) __obj.updateDynamic("o:tracking-clicks")(`oColontracking-clicks`.asInstanceOf[js.Any])
     if (`oColontracking-opens` != null) __obj.updateDynamic("o:tracking-opens")(`oColontracking-opens`.asInstanceOf[js.Any])

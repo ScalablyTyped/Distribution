@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sqsMod {
-  type SQSHandler = typings.awsLambda.handerMod.Handler[typings.awsLambda.sqsMod.SQSEvent, scala.Unit]
+  type SQSHandler = typings.awsLambda.handlerMod.Handler[typings.awsLambda.sqsMod.SQSEvent, scala.Unit]
   /* Rewritten from type alias, can be one of: 
     - typings.awsLambda.awsLambdaStrings.String
     - typings.awsLambda.awsLambdaStrings.Number

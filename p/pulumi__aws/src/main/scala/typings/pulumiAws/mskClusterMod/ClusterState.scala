@@ -5,6 +5,7 @@ import typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo
 import typings.pulumiAws.inputMod.msk.ClusterClientAuthentication
 import typings.pulumiAws.inputMod.msk.ClusterConfigurationInfo
 import typings.pulumiAws.inputMod.msk.ClusterEncryptionInfo
+import typings.pulumiAws.inputMod.msk.ClusterOpenMonitoring
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,11 +63,15 @@ trait ClusterState extends js.Object {
     */
   val numberOfBrokerNodes: js.UndefOr[Input[Double]] = js.native
   /**
+    * Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+    */
+  val openMonitoring: js.UndefOr[Input[ClusterOpenMonitoring]] = js.native
+  /**
     * A mapping of tags to assign to the resource
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
-    * A comma separated list of one or more IP:port pairs to use to connect to the Apache Zookeeper cluster.
+    * A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
     */
   val zookeeperConnectString: js.UndefOr[Input[String]] = js.native
 }
@@ -86,6 +91,7 @@ object ClusterState {
     enhancedMonitoring: Input[String] = null,
     kafkaVersion: Input[String] = null,
     numberOfBrokerNodes: Input[Double] = null,
+    openMonitoring: Input[ClusterOpenMonitoring] = null,
     tags: Input[StringDictionary[_]] = null,
     zookeeperConnectString: Input[String] = null
   ): ClusterState = {
@@ -102,6 +108,7 @@ object ClusterState {
     if (enhancedMonitoring != null) __obj.updateDynamic("enhancedMonitoring")(enhancedMonitoring.asInstanceOf[js.Any])
     if (kafkaVersion != null) __obj.updateDynamic("kafkaVersion")(kafkaVersion.asInstanceOf[js.Any])
     if (numberOfBrokerNodes != null) __obj.updateDynamic("numberOfBrokerNodes")(numberOfBrokerNodes.asInstanceOf[js.Any])
+    if (openMonitoring != null) __obj.updateDynamic("openMonitoring")(openMonitoring.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (zookeeperConnectString != null) __obj.updateDynamic("zookeeperConnectString")(zookeeperConnectString.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterState]

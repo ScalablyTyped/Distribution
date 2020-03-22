@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Draw
   extends typings.ol.pointerMod.default {
+  def appendCoordinates(coordinates: LineCoordType): Unit = js.native
   def extend(feature: typings.ol.olFeatureMod.default[typings.ol.lineStringMod.default]): Unit = js.native
   def finishDrawing(): Unit = js.native
   def getOverlay(): typings.ol.vectorMod.default = js.native

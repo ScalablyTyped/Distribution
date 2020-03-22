@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/storage/dist/src/implementation/requestmaker", JSImport.Namespace)
 @js.native
 object requestmakerMod extends js.Object {
-  type requestMaker = js.Function3[
+  type requestMaker = js.Function4[
     /* requestInfo */ RequestInfo[js.Any], 
+    /* appId */ String | Null, 
     /* authToken */ String | Null, 
     /* pool */ XhrIoPool, 
     Request[js.Any]

@@ -19,7 +19,6 @@ class DataConnectionCollection () extends ClientObject {
   @JSName("context")
   var context_DataConnectionCollection: RequestContext = js.native
   /**
-    *
     * Refreshes all the Data Connections in the collection.
     *
     * [Api set: ExcelApi 1.7]

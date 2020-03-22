@@ -118,6 +118,8 @@ object Axis {
     labelFontStyle: FontStyleValue = null,
     labelFontWeight: FontWeightValue = null,
     labelLimit: NumberValue = null,
+    labelLineHeight: NumberValue = null,
+    labelOffset: NumberValue = null,
     labelOpacity: NumberValue = null,
     labelOverlap: LabelOverlap | SignalRef = null,
     labelPadding: NumberValue = null,
@@ -190,6 +192,8 @@ object Axis {
     if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle.asInstanceOf[js.Any])
     if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight.asInstanceOf[js.Any])
     if (labelLimit != null) __obj.updateDynamic("labelLimit")(labelLimit.asInstanceOf[js.Any])
+    if (labelLineHeight != null) __obj.updateDynamic("labelLineHeight")(labelLineHeight.asInstanceOf[js.Any])
+    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
     if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity.asInstanceOf[js.Any])
     if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])

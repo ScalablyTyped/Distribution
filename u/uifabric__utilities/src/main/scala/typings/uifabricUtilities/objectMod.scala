@@ -21,7 +21,7 @@ object objectMod extends js.Object {
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
   def resetIds(): Unit = js.native
   def resetIds(counter: Double): Unit = js.native
-  def shallowCompare[TA, TB](a: TA, b: TB): Boolean = js.native
+  def shallowCompare[TA /* <: js.Any */, TB /* <: js.Any */](a: TA, b: TB): Boolean = js.native
   def values[T](obj: js.Any): js.Array[T] = js.native
 }
 

@@ -2,6 +2,7 @@ package typings.reactTable.mod
 
 import typings.reactTable.PartialTableToggleHideAll
 import typings.std.Partial
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,12 +10,13 @@ import scala.scalajs.js.annotation._
 /* Inlined react-table.react-table.HeaderProps<D> */
 @js.native
 trait FilterProps[D /* <: js.Object */] extends js.Object {
+  var allColumns: js.Array[ColumnInstance[D]] = js.native
+  var allColumnsHidden: Boolean = js.native
   var column: ColumnInstance[D] = js.native
   var columns: js.Array[ColumnInstance[D]] = js.native
   var data: js.Array[D] = js.native
   var defaultColumn: js.UndefOr[Partial[Column[D]]] = js.native
   var dispatch: TableDispatch[_] = js.native
-  var flatColumns: js.Array[ColumnInstance[D]] = js.native
   var flatHeaders: js.Array[ColumnInstance[D]] = js.native
   var flatRows: js.Array[Row[D]] = js.native
   var footerGroups: js.Array[HeaderGroup[D]] = js.native
@@ -29,7 +31,6 @@ trait FilterProps[D /* <: js.Object */] extends js.Object {
   var getSubRows: js.UndefOr[js.Function2[/* originalRow */ D, /* relativeIndex */ Double, js.Array[D]]] = js.native
   var headerGroups: js.Array[HeaderGroup[D]] = js.native
   var headers: js.Array[ColumnInstance[D]] = js.native
-  var hooks: Hooks[D] = js.native
   var initialRowStateKey: js.UndefOr[IdType[D]] = js.native
   var initialState: js.UndefOr[Partial[TableState[D]]] = js.native
   var plugins: js.Array[PluginHook[D]] = js.native
@@ -42,6 +43,7 @@ trait FilterProps[D /* <: js.Object */] extends js.Object {
     ]
   ] = js.native
   var rows: js.Array[Row[D]] = js.native
+  var rowsById: Record[String, Row[D]] = js.native
   var state: TableState[D] = js.native
   var totalColumnsWidth: Double = js.native
   var useControlledState: js.UndefOr[
@@ -51,6 +53,8 @@ trait FilterProps[D /* <: js.Object */] extends js.Object {
       TableState[D]
     ]
   ] = js.native
+  var visibleColumns: js.Array[ColumnInstance[D]] = js.native
+  def getHooks(): Hooks[D] = js.native
   def getTableBodyProps(): TableBodyProps = js.native
   def getTableBodyProps(propGetter: TableBodyPropGetter[D]): TableBodyProps = js.native
   def getTableProps(): TableProps = js.native

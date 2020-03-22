@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait EncodeEntry
   extends /* k */ StringDictionary[js.UndefOr[ProductionRule[ArbitraryValueRef]]] {
+  var blend: js.UndefOr[ProductionRule[ScaledValueRef[Blend]]] = js.undefined
   var cursor: js.UndefOr[ProductionRule[StringValueRef]] = js.undefined
   var fill: js.UndefOr[ProductionRule[ColorValueRef]] = js.undefined
   var fillOpacity: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
@@ -35,6 +36,7 @@ object EncodeEntry {
   @scala.inline
   def apply(
     StringDictionary: /* k */ StringDictionary[js.UndefOr[ProductionRule[ArbitraryValueRef]]] = null,
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
@@ -60,6 +62,7 @@ object EncodeEntry {
   ): EncodeEntry = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

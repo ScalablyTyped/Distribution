@@ -19,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -75,7 +75,7 @@ trait WeakValidationMapBreadcruAbout extends js.Object {
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -259,7 +259,7 @@ object WeakValidationMapBreadcruAbout {
     accessKey: Validator[js.UndefOr[Null | String]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,

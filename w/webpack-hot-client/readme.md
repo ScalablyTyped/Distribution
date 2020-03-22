@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-hot-client
 
-Typings are for version 4.0
+Typings are for version 4.1
 
 ## Library description:
 A client for enabling, and interacting with, webpack Hot Module Replacement

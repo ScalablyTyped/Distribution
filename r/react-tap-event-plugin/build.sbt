@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-tap-event-plugin"
-version := "0.0-unknown-dt-20190322Z-379cc7"
+version := "0.0-unknown-dt-20200227Z-379cc7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

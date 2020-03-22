@@ -25,7 +25,6 @@ class SlicerStyleCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[SlicerStyle] = js.native
   /**
-    *
     * Creates a blank SlicerStyle with the specified name.
     *
     * [Api set: ExcelApi 1.10]
@@ -37,14 +36,12 @@ class SlicerStyleCollection () extends ClientObject {
   def add(name: String): SlicerStyle = js.native
   def add(name: String, makeUniqueName: Boolean): SlicerStyle = js.native
   /**
-    *
     * Gets the number of slicer styles in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets the default SlicerStyle for the parent object's scope.
     *
     * [Api set: ExcelApi 1.10]
@@ -52,7 +49,6 @@ class SlicerStyleCollection () extends ClientObject {
     */
   def getDefault(): SlicerStyle = js.native
   /**
-    *
     * Gets a SlicerStyle by name.
     *
     * [Api set: ExcelApi 1.10]
@@ -62,7 +58,6 @@ class SlicerStyleCollection () extends ClientObject {
     */
   def getItem(name: String): SlicerStyle = js.native
   /**
-    *
     * Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.10]
@@ -83,7 +78,6 @@ class SlicerStyleCollection () extends ClientObject {
   def load(propertyNames: js.Array[String]): SlicerStyleCollection = js.native
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
-    *
     * Sets the default SlicerStyle for use in the parent object's scope.
     *
     * [Api set: ExcelApi 1.10]

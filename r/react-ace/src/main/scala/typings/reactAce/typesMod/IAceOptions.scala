@@ -50,8 +50,8 @@ trait IAceOptions
   var mode: js.UndefOr[String] = js.undefined
   var newLineMode: js.UndefOr[Boolean] = js.undefined
   var overwrite: js.UndefOr[Boolean] = js.undefined
-  var printMargin: js.UndefOr[Boolean] = js.undefined
-  var printMarginColumn: js.UndefOr[Boolean] = js.undefined
+  var printMargin: js.UndefOr[Boolean | Double] = js.undefined
+  var printMarginColumn: js.UndefOr[Double] = js.undefined
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var scrollPastEnd: js.UndefOr[Boolean] = js.undefined
   var scrollSpeed: js.UndefOr[Double] = js.undefined
@@ -107,8 +107,8 @@ object IAceOptions {
     mode: String = null,
     newLineMode: js.UndefOr[Boolean] = js.undefined,
     overwrite: js.UndefOr[Boolean] = js.undefined,
-    printMargin: js.UndefOr[Boolean] = js.undefined,
-    printMarginColumn: js.UndefOr[Boolean] = js.undefined,
+    printMargin: Boolean | Double = null,
+    printMarginColumn: Int | Double = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
     scrollPastEnd: js.UndefOr[Boolean] = js.undefined,
     scrollSpeed: Int | Double = null,
@@ -160,8 +160,8 @@ object IAceOptions {
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (!js.isUndefined(newLineMode)) __obj.updateDynamic("newLineMode")(newLineMode.asInstanceOf[js.Any])
     if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
-    if (!js.isUndefined(printMargin)) __obj.updateDynamic("printMargin")(printMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(printMarginColumn)) __obj.updateDynamic("printMarginColumn")(printMarginColumn.asInstanceOf[js.Any])
+    if (printMargin != null) __obj.updateDynamic("printMargin")(printMargin.asInstanceOf[js.Any])
+    if (printMarginColumn != null) __obj.updateDynamic("printMarginColumn")(printMarginColumn.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd.asInstanceOf[js.Any])
     if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])

@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait AnnotationsLabelsOptions extends js.Object {
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for an
+    * annotation label.
+    */
+  var accessibility: js.UndefOr[AnnotationLabelAccessibilityOptionsObject] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The alignment of the
     * annotation's label. If right, the right side of the label should be
     * touching the point.
@@ -80,7 +85,7 @@ trait AnnotationsLabelsOptions extends js.Object {
     * exists in the series - it is referenced by the point's id - or a new
     * point with defined x, y properties and optionally axes.
     */
-  var point: js.UndefOr[String | AnnotationsLabelsPointOptions | MockPointOptionsObject] = js.undefined
+  var point: js.UndefOr[String | AnnotationMockPointOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The shadow of the box. The
     * shadow can be an object configuration containing `color`, `offsetX`,
@@ -129,6 +134,7 @@ trait AnnotationsLabelsOptions extends js.Object {
 object AnnotationsLabelsOptions {
   @scala.inline
   def apply(
+    accessibility: AnnotationLabelAccessibilityOptionsObject = null,
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
@@ -142,7 +148,7 @@ object AnnotationsLabelsOptions {
     formatter: FormatterCallbackFunction[Point] = null,
     overflow: OptionsOverflowValue = null,
     padding: Int | Double = null,
-    point: String | AnnotationsLabelsPointOptions | MockPointOptionsObject = null,
+    point: String | AnnotationMockPointOptionsObject = null,
     shadow: Boolean | ShadowOptionsObject = null,
     shape: String = null,
     style: CSSObject = null,
@@ -153,6 +159,7 @@ object AnnotationsLabelsOptions {
     y: Int | Double = null
   ): AnnotationsLabelsOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])

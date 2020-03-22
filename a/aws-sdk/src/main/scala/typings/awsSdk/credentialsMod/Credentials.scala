@@ -53,7 +53,7 @@ class Credentials protected () extends js.Object {
     *
     * @param {get} callback - Called when the instance metadata service responds. When called with no error, the credentials information has been loaded into the object.
     */
-  def get(callback: js.Function1[/* err */ AWSError, Unit]): Unit = js.native
+  def get(callback: js.Function1[/* err */ js.UndefOr[AWSError], Unit]): Unit = js.native
   /**
     * Gets the existing credentials, refreshing them if necessary, and returns
     * a promise that will be fulfilled immediately (if no refresh is necessary)
@@ -70,7 +70,7 @@ class Credentials protected () extends js.Object {
     *
     * @param {function} callback - Called when the instance metadata service responds. When called with no error, the credentials information has been loaded into the object.
     */
-  def refresh(callback: js.Function1[/* err */ AWSError, Unit]): Unit = js.native
+  def refresh(callback: js.Function1[/* err */ js.UndefOr[AWSError], Unit]): Unit = js.native
   /**
     * Invokes a credential refresh and returns a promise that will be fulfilled
     * when the refresh has completed or rejected when the refresh has failed.

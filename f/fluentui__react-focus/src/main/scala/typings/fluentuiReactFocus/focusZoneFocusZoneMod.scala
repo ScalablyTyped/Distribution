@@ -64,7 +64,7 @@ object focusZoneFocusZoneMod extends js.Object {
       * Returns true if the element is a descendant of the FocusZone through a React portal.
       */
     var _portalContainsElement: js.Any = js.native
-    /** Used to allow us to move to next focusable element even when we're focusing on a input element when pressing tab */
+    /** Used to allow moving to next focusable element even when we're focusing on a input element when pressing tab */
     var _processingTabKey: js.Any = js.native
     var _root: js.Any = js.native
     var _setActiveElement: js.Any = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vivus"
-version := "0.4.0-dt-20190322Z-0ee388"
+version := "0.4.0-dt-20200225Z-7b0a34"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

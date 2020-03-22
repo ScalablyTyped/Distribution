@@ -119,8 +119,16 @@ trait GatsbySSR extends js.Object {
     * }
     */
   var wrapPageElement: js.UndefOr[
-    (js.Function2[/* args */ WrapPageElementNodeArgs, /* options */ PluginOptions, _]) with (js.Function2[/* args */ WrapPageElementNodeArgs, /* options */ PluginOptions, js.Promise[_]]) with (js.Function3[
-      /* args */ WrapPageElementNodeArgs, 
+    (js.Function2[
+      /* args */ WrapPageElementNodeArgs[js.Object, js.Object], 
+      /* options */ PluginOptions, 
+      _
+    ]) with (js.Function2[
+      /* args */ WrapPageElementNodeArgs[js.Object, js.Object], 
+      /* options */ PluginOptions, 
+      js.Promise[_]
+    ]) with (js.Function3[
+      /* args */ WrapPageElementNodeArgs[js.Object, js.Object], 
       /* options */ PluginOptions, 
       /* callback */ PluginCallback, 
       Unit
@@ -179,8 +187,16 @@ object GatsbySSR {
       /* callback */ PluginCallback, 
       Unit
     ]) = null,
-    wrapPageElement: (js.Function2[/* args */ WrapPageElementNodeArgs, /* options */ PluginOptions, _]) with (js.Function2[/* args */ WrapPageElementNodeArgs, /* options */ PluginOptions, js.Promise[_]]) with (js.Function3[
-      /* args */ WrapPageElementNodeArgs, 
+    wrapPageElement: (js.Function2[
+      /* args */ WrapPageElementNodeArgs[js.Object, js.Object], 
+      /* options */ PluginOptions, 
+      _
+    ]) with (js.Function2[
+      /* args */ WrapPageElementNodeArgs[js.Object, js.Object], 
+      /* options */ PluginOptions, 
+      js.Promise[_]
+    ]) with (js.Function3[
+      /* args */ WrapPageElementNodeArgs[js.Object, js.Object], 
       /* options */ PluginOptions, 
       /* callback */ PluginCallback, 
       Unit

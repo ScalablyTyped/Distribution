@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-session
 
-Typings are for version 1.15
+Typings are for version 1.17
 
 ## Library description:
 Simple session middleware for Express

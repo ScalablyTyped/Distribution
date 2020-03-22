@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsLayers.executorMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,8 +30,8 @@ class FeedDict () extends js.Object {
     * @throws ValueError: If the key `SymbolicTensor` already exists in the
     *   `FeedDict`.
     */
-  def add(key: SymbolicTensor, value: Tensor_[Rank]): FeedDict = js.native
-  def add(key: SymbolicTensor, value: Tensor_[Rank], mask: Tensor_[Rank]): FeedDict = js.native
+  def add(key: SymbolicTensor, value: Tensor[Rank]): FeedDict = js.native
+  def add(key: SymbolicTensor, value: Tensor[Rank], mask: Tensor[Rank]): FeedDict = js.native
   /**
     * Add a Feed to the FeedDict.
     * @param feed The new `Feed` to add.
@@ -40,7 +40,7 @@ class FeedDict () extends js.Object {
   def addFeed(feed: Feed): Unit = js.native
   /** Dispose all mask Tensors held by this object. */
   def disposeMasks(): Unit = js.native
-  def getMask(key: String): Tensor_[Rank] = js.native
+  def getMask(key: String): Tensor[Rank] = js.native
   /**
     * Get the feed mask for given key.
     * @param key The SymbolicTensor, or its name (as a string), of which the
@@ -48,8 +48,8 @@ class FeedDict () extends js.Object {
     * @returns If `key` exists, the corresponding feed mask.
     * @throws ValueError: If `key` does not exist in this `FeedDict`.
     */
-  def getMask(key: SymbolicTensor): Tensor_[Rank] = js.native
-  def getValue(key: String): Tensor_[Rank] = js.native
+  def getMask(key: SymbolicTensor): Tensor[Rank] = js.native
+  def getValue(key: String): Tensor[Rank] = js.native
   /**
     * Get the feed value for given key.
     * @param key The SymbolicTensor, or its name (as a string), of which the
@@ -57,7 +57,7 @@ class FeedDict () extends js.Object {
     * @returns If `key` exists, the corresponding feed value.
     * @throws ValueError: If `key` does not exist in this `FeedDict`.
     */
-  def getValue(key: SymbolicTensor): Tensor_[Rank] = js.native
+  def getValue(key: SymbolicTensor): Tensor[Rank] = js.native
   /**
     * Probe whether a key already exists in the FeedDict.
     * @param key

@@ -1,7 +1,7 @@
 package typings.knex.mod
 
-import typings.knex.AnonAbortTransactionOnError
-import typings.knex.AnonAcquireTimeoutMillis
+import typings.knex.Readonlyencryptbooleanins
+import typings.knex.Readonlyminnumbermaxnumbe
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +13,10 @@ trait MsSqlConnectionConfig extends _StaticConnectionConfig {
   var domain: js.UndefOr[String] = js.undefined
   var driver: js.UndefOr[String] = js.undefined
   var expirationChecker: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var options: js.UndefOr[AnonAbortTransactionOnError] = js.undefined
+  var options: js.UndefOr[Readonlyencryptbooleanins] = js.undefined
   var parseJSON: js.UndefOr[Boolean] = js.undefined
   var password: js.UndefOr[String] = js.undefined
-  var pool: js.UndefOr[AnonAcquireTimeoutMillis] = js.undefined
+  var pool: js.UndefOr[Readonlyminnumbermaxnumbe] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var requestTimeout: js.UndefOr[Double] = js.undefined
   var server: String
@@ -33,10 +33,10 @@ object MsSqlConnectionConfig {
     domain: String = null,
     driver: String = null,
     expirationChecker: () => Boolean = null,
-    options: AnonAbortTransactionOnError = null,
+    options: Readonlyencryptbooleanins = null,
     parseJSON: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
-    pool: AnonAcquireTimeoutMillis = null,
+    pool: Readonlyminnumbermaxnumbe = null,
     port: Int | Double = null,
     requestTimeout: Int | Double = null,
     stream: js.UndefOr[Boolean] = js.undefined,

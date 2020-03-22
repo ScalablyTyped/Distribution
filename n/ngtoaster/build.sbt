@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngtoaster"
-version := "2.2-dt-20190213Z-ec44df"
+version := "2.2-dt-20200225Z-ec44df"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

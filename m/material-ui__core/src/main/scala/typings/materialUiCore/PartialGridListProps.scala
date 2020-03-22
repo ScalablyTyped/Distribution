@@ -148,7 +148,7 @@ trait PartialGridListProps extends js.Object {
   var cellHeight: js.UndefOr[Double | auto] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapGridListClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapGridLi] = js.native
   var color: js.UndefOr[String] = js.native
   var cols: js.UndefOr[Double] = js.native
   var component: js.UndefOr[ReactType[GridListProps]] = js.native
@@ -332,7 +332,7 @@ object PartialGridListProps {
     cellHeight: Double | auto = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapGridListClassKey = null,
+    classes: PartialClassNameMapGridLi = null,
     color: String = null,
     cols: Int | Double = null,
     component: ReactType[GridListProps] = null,

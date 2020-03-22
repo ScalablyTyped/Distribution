@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("redom", "List")
 @js.native
 class List_ protected () extends RedomComponent {
-  def this(parent: RedomQuery, View: RedomComponentConstructor) = this()
-  def this(parent: RedomQuery, View: RedomComponentConstructor, key: String) = this()
-  def this(parent: RedomQuery, View: RedomComponentConstructor, key: String, initData: js.Any) = this()
+  def this(parent: RedomQuery, View: RedomComponentCreator) = this()
+  def this(parent: RedomQuery, View: RedomComponentCreator, key: String) = this()
+  def this(parent: RedomQuery, View: RedomComponentCreator, key: String, initData: js.Any) = this()
   /* CompleteClass */
   override var el: HTMLElement = js.native
   @JSName("update")

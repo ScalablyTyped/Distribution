@@ -12,7 +12,7 @@ trait SwaggerUiOptions extends js.Object {
   var customfavIcon: js.UndefOr[String] = js.undefined
   var explorer: js.UndefOr[Boolean] = js.undefined
   var isExplorer: js.UndefOr[Boolean] = js.undefined
-  var options: js.UndefOr[SwaggerOptions] = js.undefined
+  var swaggerOptions: js.UndefOr[SwaggerOptions] = js.undefined
   var swaggerUrl: js.UndefOr[String] = js.undefined
   var swaggerUrls: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -27,7 +27,7 @@ object SwaggerUiOptions {
     customfavIcon: String = null,
     explorer: js.UndefOr[Boolean] = js.undefined,
     isExplorer: js.UndefOr[Boolean] = js.undefined,
-    options: SwaggerOptions = null,
+    swaggerOptions: SwaggerOptions = null,
     swaggerUrl: String = null,
     swaggerUrls: js.Array[String] = null
   ): SwaggerUiOptions = {
@@ -39,7 +39,7 @@ object SwaggerUiOptions {
     if (customfavIcon != null) __obj.updateDynamic("customfavIcon")(customfavIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(explorer)) __obj.updateDynamic("explorer")(explorer.asInstanceOf[js.Any])
     if (!js.isUndefined(isExplorer)) __obj.updateDynamic("isExplorer")(isExplorer.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (swaggerOptions != null) __obj.updateDynamic("swaggerOptions")(swaggerOptions.asInstanceOf[js.Any])
     if (swaggerUrl != null) __obj.updateDynamic("swaggerUrl")(swaggerUrl.asInstanceOf[js.Any])
     if (swaggerUrls != null) __obj.updateDynamic("swaggerUrls")(swaggerUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwaggerUiOptions]

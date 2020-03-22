@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait NavigationAnnotationsShapesOptions extends js.Object {
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Name of the dash style to use
+    * for the shape's stroke.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the shape's fill.
     */
   var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
@@ -31,15 +36,13 @@ trait NavigationAnnotationsShapesOptions extends js.Object {
     * exists in the series - it is referenced by the point's id - or a new
     * point with defined x, y properties and optionally axes.
     */
-  var point: js.UndefOr[String | MockPointOptionsObject | NavigationAnnotationsShapesPointOptions] = js.undefined
+  var point: js.UndefOr[String | AnnotationMockPointOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array of points for the
     * shape. This option is available for shapes which can use multiple points
     * such as path. A point can be either a point object or a point's id.
     */
-  var points: js.UndefOr[
-    NavigationAnnotationsShapesPointsOptions | (js.Array[String | MockPointOptionsObject])
-  ] = js.undefined
+  var points: js.UndefOr[js.Array[String | AnnotationMockPointOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The radius of the shape.
     */
@@ -49,6 +52,11 @@ trait NavigationAnnotationsShapesOptions extends js.Object {
     * around an annotation making this annotation to focus. Defined in pixels.
     */
   var snap: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The URL for an image to use as
+    * the annotation shape. Note, type has to be set to `'image'`.
+    */
+  var src: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the shape's stroke.
     */
@@ -72,20 +80,23 @@ trait NavigationAnnotationsShapesOptions extends js.Object {
 object NavigationAnnotationsShapesOptions {
   @scala.inline
   def apply(
+    dashStyle: DashStyleValue = null,
     fill: ColorString | GradientColorObject | PatternObject = null,
     height: Int | Double = null,
     markerEnd: String = null,
     markerStart: String = null,
-    point: String | MockPointOptionsObject | NavigationAnnotationsShapesPointOptions = null,
-    points: NavigationAnnotationsShapesPointsOptions | (js.Array[String | MockPointOptionsObject]) = null,
+    point: String | AnnotationMockPointOptionsObject = null,
+    points: js.Array[String | AnnotationMockPointOptionsObject] = null,
     r: Int | Double = null,
     snap: Int | Double = null,
+    src: String = null,
     stroke: ColorString = null,
     strokeWidth: Int | Double = null,
     `type`: String = null,
     width: Int | Double = null
   ): NavigationAnnotationsShapesOptions = {
     val __obj = js.Dynamic.literal()
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
@@ -94,6 +105,7 @@ object NavigationAnnotationsShapesOptions {
     if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

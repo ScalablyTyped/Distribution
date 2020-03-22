@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "tern"
-version := "0.23-dt-20191126Z-6b2da7"
+version := "0.23-dt-20191126Z-3b4222"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200108Z-ca21a3",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200320Z-692182",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

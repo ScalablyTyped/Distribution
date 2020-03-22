@@ -148,7 +148,7 @@ trait PartialCardHeaderProps extends js.Object {
   var avatar: js.UndefOr[ReactNode] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCardHeaderClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCardHe] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[CardHeaderProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -263,12 +263,12 @@ trait PartialCardHeaderProps extends js.Object {
   var spellCheck: js.UndefOr[Booleanish] = js.native
   var style: js.UndefOr[CSSProperties] = js.native
   var subheader: js.UndefOr[ReactNode] = js.native
-  var subheaderTypographyProps: js.UndefOr[PartialTypographyProps] = js.native
+  var subheaderTypographyProps: js.UndefOr[PartialTypographyPropsAbout] = js.native
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   var tabIndex: js.UndefOr[Double] = js.native
   var title: js.UndefOr[ReactNode] = js.native
-  var titleTypographyProps: js.UndefOr[PartialTypographyProps] = js.native
+  var titleTypographyProps: js.UndefOr[PartialTypographyPropsAbout] = js.native
   var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
@@ -335,7 +335,7 @@ object PartialCardHeaderProps {
     avatar: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCardHeaderClassKey = null,
+    classes: PartialClassNameMapCardHe = null,
     color: String = null,
     component: ReactType[CardHeaderProps] = null,
     contentEditable: Booleanish | inherit = null,
@@ -450,12 +450,12 @@ object PartialCardHeaderProps {
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     subheader: ReactNode = null,
-    subheaderTypographyProps: PartialTypographyProps = null,
+    subheaderTypographyProps: PartialTypographyPropsAbout = null,
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: ReactNode = null,
-    titleTypographyProps: PartialTypographyProps = null,
+    titleTypographyProps: PartialTypographyPropsAbout = null,
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,

@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeofimportedVm extends js.Object {
   var Script: Instantiable1[/* code */ String, typings.node.vmMod.Script] = js.native
+  def compileFunction(code: String): js.Function = js.native
+  def compileFunction(code: String, params: js.Array[String]): js.Function = js.native
   def compileFunction(code: String, params: js.Array[String], options: CompileFunctionOptions): js.Function = js.native
   def createContext(): Context = js.native
   def createContext(sandbox: Context): Context = js.native

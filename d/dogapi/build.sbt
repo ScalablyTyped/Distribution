@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dogapi"
-version := "2.8-dt-20190726Z-f83fde"
+version := "2.8-dt-20200305Z-88d67c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

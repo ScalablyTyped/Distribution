@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onesignal-cordova-plugin"
-version := "2.6-dt-20191003Z-037bb5"
+version := "2.6-dt-20200225Z-037bb5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

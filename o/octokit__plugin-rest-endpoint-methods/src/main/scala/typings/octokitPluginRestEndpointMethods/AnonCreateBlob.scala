@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AnonCreateBlob extends js.Object {
   @JSName("createBlob")
-  var createBlob_Original: Anon116 = js.native
+  var createBlob_Original: Anon120 = js.native
   /**
     * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
     *
@@ -52,12 +52,12 @@ trait AnonCreateBlob extends js.Object {
     * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("createCommit")
-  var createCommit_Original: Anon117 = js.native
+  var createCommit_Original: Anon121 = js.native
   /**
     * Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
     */
   @JSName("createRef")
-  var createRef_Original: Anon118 = js.native
+  var createRef_Original: Anon122 = js.native
   /**
     * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.
     *
@@ -84,32 +84,23 @@ trait AnonCreateBlob extends js.Object {
     * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("createTag")
-  var createTag_Original: Anon119 = js.native
+  var createTag_Original: Anon123 = js.native
   /**
     * The tree creation API accepts nested entries. If you specify both a tree and a nested path modifying that tree, this endpoint will overwrite the contents of the tree with the new path contents, and create a new tree structure.
     *
     * If you use this endpoint to add, delete, or modify the file contents in a tree, you will need to commit the tree and then update a branch to point to the commit. For more information see "[Create a commit](https://developer.github.com/v3/git/commits/#create-a-commit)" and "[Update a reference](https://developer.github.com/v3/git/refs/#update-a-reference)."
     */
   @JSName("createTree")
-  var createTree_Original: Anon120 = js.native
-  /**
-    * ```
-    * DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a
-    * ```
-    *
-    * ```
-    * DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
-    * ```
-    */
+  var createTree_Original: Anon124 = js.native
   @JSName("deleteRef")
-  var deleteRef_Original: Anon121 = js.native
+  var deleteRef_Original: Anon125 = js.native
   /**
     * The `content` in the response will always be Base64 encoded.
     *
     * _Note_: This API supports blobs up to 100 megabytes in size.
     */
   @JSName("getBlob")
-  var getBlob_Original: Anon122 = js.native
+  var getBlob_Original: Anon126 = js.native
   /**
     * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
     *
@@ -136,7 +127,7 @@ trait AnonCreateBlob extends js.Object {
     * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("getCommit")
-  var getCommit_Original: Anon123 = js.native
+  var getCommit_Original: Anon127 = js.native
   /**
     * Returns a single reference from your Git database. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't match an existing ref, a `404` is returned.
     *
@@ -145,7 +136,7 @@ trait AnonCreateBlob extends js.Object {
     * To get the reference for a branch named `skunkworkz/featureA`, the endpoint route is:
     */
   @JSName("getRef")
-  var getRef_Original: Anon124 = js.native
+  var getRef_Original: Anon128 = js.native
   /**
     * **Signature verification object**
     *
@@ -170,14 +161,14 @@ trait AnonCreateBlob extends js.Object {
     * | `valid`                  | None of the above errors applied, so the signature is considered to be verified.                                                  |
     */
   @JSName("getTag")
-  var getTag_Original: Anon125 = js.native
+  var getTag_Original: Anon129 = js.native
   /**
     * Returns a single tree using the SHA1 value for that tree.
     *
     * If `truncated` is `true` in the response then the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, you can clone the repository and iterate over the Git data locally.
     */
   @JSName("getTree")
-  var getTree_Original: Anon126 = js.native
+  var getTree_Original: Anon130 = js.native
   /**
     * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
     *
@@ -188,9 +179,9 @@ trait AnonCreateBlob extends js.Object {
     * If you request matching references for a branch named `feature` but the branch `feature` doesn't exist, the response can still include other matching head refs that start with the word `feature`, such as `featureA` and `featureB`.
     */
   @JSName("listMatchingRefs")
-  var listMatchingRefs_Original: Anon127 = js.native
+  var listMatchingRefs_Original: Anon131 = js.native
   @JSName("updateRef")
-  var updateRef_Original: Anon128 = js.native
+  var updateRef_Original: Anon132 = js.native
   def createBlob(): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<GitCreateBlobResponse> */ _
   ] = js.native
@@ -293,15 +284,6 @@ trait AnonCreateBlob extends js.Object {
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<GitCreateTreeResponse> */ _
   ] = js.native
-  /**
-    * ```
-    * DELETE /repos/octocat/Hello-World/git/refs/heads/feature-a
-    * ```
-    *
-    * ```
-    * DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
-    * ```
-    */
   def deleteRef(): js.Promise[AnyResponse] = js.native
   def deleteRef(
     params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with GitDeleteRefParams

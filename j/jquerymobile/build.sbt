@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquerymobile"
-version := "1.4-dt-20190322Z-a556bc"
+version := "1.4-dt-20200226Z-a556bc"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -25,7 +25,6 @@ class StyleCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Style] = js.native
   /**
-    *
     * Adds a new style to the collection.
     *
     * [Api set: ExcelApi 1.7]
@@ -34,14 +33,12 @@ class StyleCollection () extends ClientObject {
     */
   def add(name: String): Unit = js.native
   /**
-    *
     * Gets the number of styles in the collection.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a style by name.
     *
     * [Api set: ExcelApi 1.7]
@@ -50,7 +47,6 @@ class StyleCollection () extends ClientObject {
     */
   def getItem(name: String): Style = js.native
   /**
-    *
     * Gets a style based on its position in the collection.
     *
     * [Api set: ExcelApi 1.9]

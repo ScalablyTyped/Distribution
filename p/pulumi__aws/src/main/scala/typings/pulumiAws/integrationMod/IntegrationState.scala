@@ -66,7 +66,7 @@ trait IntegrationState extends js.Object {
   /**
     * The ID of the associated REST API.
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds.
     */
@@ -98,7 +98,7 @@ object IntegrationState {
     requestParameters: Input[StringDictionary[Input[String]]] = null,
     requestTemplates: Input[StringDictionary[Input[String]]] = null,
     resourceId: Input[String] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     timeoutMilliseconds: Input[Double] = null,
     `type`: Input[String] = null,
     uri: Input[String] = null

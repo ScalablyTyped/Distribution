@@ -12,14 +12,15 @@ import typings.cathoQuantum.cathoQuantumStrings.warning
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TagProps[T] extends js.Object {
+trait TagProps extends js.Object {
   var bold: js.UndefOr[Boolean] = js.undefined
   var inverted: js.UndefOr[Boolean] = js.undefined
-  var onClose: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   var size: js.UndefOr[small | medium | large] = js.undefined
   var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
   var stroked: js.UndefOr[Boolean] = js.undefined
@@ -29,16 +30,16 @@ trait TagProps[T] extends js.Object {
 
 object TagProps {
   @scala.inline
-  def apply[T](
+  def apply(
     bold: js.UndefOr[Boolean] = js.undefined,
     inverted: js.UndefOr[Boolean] = js.undefined,
-    onClose: MouseEvent[T, NativeMouseEvent] => Unit = null,
+    onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
     size: small | medium | large = null,
     skin: neutral | primary | success | warning | error = null,
     stroked: js.UndefOr[Boolean] = js.undefined,
     text: String = null,
     theme: AnonColorsComponentsSpacing = null
-  ): TagProps[T] = {
+  ): TagProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
     if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
@@ -48,7 +49,7 @@ object TagProps {
     if (!js.isUndefined(stroked)) __obj.updateDynamic("stroked")(stroked.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TagProps[T]]
+    __obj.asInstanceOf[TagProps]
   }
 }
 

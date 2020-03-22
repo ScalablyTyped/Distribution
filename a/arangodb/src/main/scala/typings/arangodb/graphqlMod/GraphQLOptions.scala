@@ -1,9 +1,5 @@
 package typings.arangodb.graphqlMod
 
-import typings.graphql.formatErrorMod.GraphQLFormattedError
-import typings.graphql.graphQLErrorMod.GraphQLError
-import typings.graphql.mod.GraphQLSchema
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +20,7 @@ object GraphQLOptions {
   def apply(
     schema: GraphQLSchema,
     context: js.Any = null,
-    formatError: /* error */ GraphQLError => GraphQLFormattedError[Record[String, js.Any]] = null,
+    formatError: /* error */ js.Any => js.Any = null,
     graphiql: js.UndefOr[Boolean] = js.undefined,
     graphql: GraphQLModule = null,
     pretty: js.UndefOr[Boolean] = js.undefined,

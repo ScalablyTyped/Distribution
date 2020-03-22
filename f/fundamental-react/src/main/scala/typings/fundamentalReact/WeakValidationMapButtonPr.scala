@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.buttonMod.ButtonOptions
 import typings.fundamentalReact.buttonMod.ButtonTypes
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
@@ -23,7 +22,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -83,7 +82,7 @@ trait WeakValidationMapButtonPr extends js.Object {
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -140,7 +139,6 @@ trait WeakValidationMapButtonPr extends js.Object {
   var compact: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var customStyles: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[AnonHtml | Null]]] = js.undefined
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
@@ -163,7 +161,6 @@ trait WeakValidationMapButtonPr extends js.Object {
   var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var navbar: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLButtonElement]]]] = js.undefined
   var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLButtonElement] | Null]]] = js.undefined
   var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLButtonElement] | Null]]] = js.undefined
@@ -282,7 +279,7 @@ object WeakValidationMapButtonPr {
     accessKey: Validator[js.UndefOr[Null | String]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
@@ -337,7 +334,6 @@ object WeakValidationMapButtonPr {
     compact: Validator[js.UndefOr[Boolean | Null]] = null,
     contentEditable: Validator[js.UndefOr[inherit | Booleanish | Null]] = null,
     contextMenu: Validator[js.UndefOr[Null | String]] = null,
-    customStyles: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
     dangerouslySetInnerHTML: Validator[js.UndefOr[AnonHtml | Null]] = null,
     datatype: Validator[js.UndefOr[Null | String]] = null,
     defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
@@ -358,7 +354,6 @@ object WeakValidationMapButtonPr {
     itemScope: Validator[js.UndefOr[Boolean | Null]] = null,
     itemType: Validator[js.UndefOr[Null | String]] = null,
     lang: Validator[js.UndefOr[Null | String]] = null,
-    navbar: Validator[js.UndefOr[Boolean | Null]] = null,
     onAbort: Validator[js.UndefOr[Null | ReactEventHandler[HTMLButtonElement]]] = null,
     onAnimationEnd: Validator[js.UndefOr[AnimationEventHandler[HTMLButtonElement] | Null]] = null,
     onAnimationIteration: Validator[js.UndefOr[AnimationEventHandler[HTMLButtonElement] | Null]] = null,
@@ -527,7 +522,6 @@ object WeakValidationMapButtonPr {
     if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (defaultChecked != null) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
@@ -548,7 +542,6 @@ object WeakValidationMapButtonPr {
     if (itemScope != null) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (navbar != null) __obj.updateDynamic("navbar")(navbar.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(onAbort.asInstanceOf[js.Any])
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd.asInstanceOf[js.Any])
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration.asInstanceOf[js.Any])

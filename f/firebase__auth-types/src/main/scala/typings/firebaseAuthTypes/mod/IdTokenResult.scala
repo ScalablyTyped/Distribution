@@ -11,6 +11,7 @@ trait IdTokenResult extends js.Object {
   var expirationTime: String
   var issuedAtTime: String
   var signInProvider: String | Null
+  var signInSecondFactor: String | Null
   var token: String
 }
 
@@ -22,10 +23,12 @@ object IdTokenResult {
     expirationTime: String,
     issuedAtTime: String,
     token: String,
-    signInProvider: String = null
+    signInProvider: String = null,
+    signInSecondFactor: String = null
   ): IdTokenResult = {
     val __obj = js.Dynamic.literal(authTime = authTime.asInstanceOf[js.Any], claims = claims.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], issuedAtTime = issuedAtTime.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     if (signInProvider != null) __obj.updateDynamic("signInProvider")(signInProvider.asInstanceOf[js.Any])
+    if (signInSecondFactor != null) __obj.updateDynamic("signInSecondFactor")(signInSecondFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdTokenResult]
   }
 }

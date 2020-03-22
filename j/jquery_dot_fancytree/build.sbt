@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_fancytree"
-version := "2.28.2-0-dt-20191213Z-73dc1c"
+version := "2.28.2-0-dt-20200226Z-84826b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-2d3992",
-  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20191218Z-f13abb",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200225Z-e64e66",
+  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20200225Z-fc01e3",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

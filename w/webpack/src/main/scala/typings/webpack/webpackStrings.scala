@@ -181,6 +181,9 @@ object webpackStrings {
   sealed trait `electron-main` extends js.Object
   
   @js.native
+  sealed trait `electron-preload` extends js.Object
+  
+  @js.native
   sealed trait `electron-renderer` extends js.Object
   
   @js.native
@@ -528,6 +531,8 @@ object webpackStrings {
   def electron: electron = "electron".asInstanceOf[electron]
   @scala.inline
   def `electron-main`: `electron-main` = "electron-main".asInstanceOf[`electron-main`]
+  @scala.inline
+  def `electron-preload`: `electron-preload` = "electron-preload".asInstanceOf[`electron-preload`]
   @scala.inline
   def `electron-renderer`: `electron-renderer` = "electron-renderer".asInstanceOf[`electron-renderer`]
   @scala.inline

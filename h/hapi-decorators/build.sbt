@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi-decorators"
-version := "v0.4.3-dt-20190322Z-4a5965"
+version := "v0.4.3-dt-20200226Z-4a5965"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

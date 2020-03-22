@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait WorksheetFilteredEventArgs extends js.Object {
   /**
     *
-    * Represents the type of the event. See Excel.EventType for details.
+    * Gets the type of the event. See Excel.EventType for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -23,7 +23,7 @@ trait WorksheetFilteredEventArgs extends js.Object {
   var `type`: WorksheetFiltered
   /**
     *
-    * Represents the id of the worksheet in which the filter is applied.
+    * Gets the id of the worksheet in which the filter is applied.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

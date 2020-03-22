@@ -1,6 +1,6 @@
 package typings.materialUiCore.stepLabelStepLabelMod
 
-import typings.materialUiCore.PartialClassNameMapStepLabelClasskey
+import typings.materialUiCore.PartialClassNameMapStepLa
 import typings.materialUiCore.PartialStepIconProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -153,7 +153,7 @@ trait StepLabelProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: ReactNode = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepLabelClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapStepLa] = js.native
   var color: js.UndefOr[String] = js.native
   var completed: js.UndefOr[Boolean] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -344,7 +344,7 @@ object StepLabelProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepLabelClasskey = null,
+    classes: PartialClassNameMapStepLa = null,
     color: String = null,
     completed: js.UndefOr[Boolean] = js.undefined,
     contentEditable: Booleanish | inherit = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fullpage_dot_js"
-version := "v2.9.5-dt-20191014Z-8b0c0b"
+version := "v2.9.5-dt-20200226Z-8b0c0b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

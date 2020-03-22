@@ -19,11 +19,6 @@ object computed extends js.Object {
   val collect: js.Function1[/* repeated */ String, ComputedProperty[js.Array[js.Any], js.Array[js.Any]]] = js.native
   val empty: js.Function1[/* dependentKey */ String, ComputedProperty[Boolean, Boolean]] = js.native
   val equal: js.Function2[/* dependentKey */ String, /* value */ js.Any, ComputedProperty[Boolean, Boolean]] = js.native
-  val filter: js.Function2[
-    /* dependentKey */ String, 
-    /* callback */ js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[js.Any], Boolean], 
-    ComputedProperty[js.Array[js.Any], js.Array[js.Any]]
-  ] = js.native
   val filterBy: js.Function3[
     /* dependentKey */ String, 
     /* propertyKey */ String, 
@@ -53,11 +48,6 @@ object computed extends js.Object {
   val setDiff: js.Function2[
     /* setAProperty */ String, 
     /* setBProperty */ String, 
-    ComputedProperty[js.Array[js.Any], js.Array[js.Any]]
-  ] = js.native
-  val sort: js.Function2[
-    /* itemsKey */ String, 
-    /* sortDefinition */ String | (js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]), 
     ComputedProperty[js.Array[js.Any], js.Array[js.Any]]
   ] = js.native
   val sum: js.Function1[/* dependentKey */ String, ComputedProperty[Double, Double]] = js.native
@@ -93,11 +83,36 @@ object computed extends js.Object {
   }
   
   @js.native
+  object filter extends js.Object {
+    def apply(
+      dependentKey: String,
+      additionalDependentKeys: js.Array[String],
+      callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
+    ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+    def apply(
+      dependentKey: String,
+      callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
+    ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  }
+  
+  @js.native
   object map extends js.Object {
     def apply[U](
       dependentKey: String,
       callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], U]
     ): ComputedProperty[js.Array[U], js.Array[U]] = js.native
+  }
+  
+  @js.native
+  object sort extends js.Object {
+    def apply(itemsKey: String, dependentKeys: js.Array[String], sortDefinition: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+    def apply(
+      itemsKey: String,
+      dependentKeys: js.Array[String],
+      sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]
+    ): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+    def apply(itemsKey: String, sortDefinition: String): ComputedProperty[js.Array[_], js.Array[_]] = js.native
+    def apply(itemsKey: String, sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]): ComputedProperty[js.Array[_], js.Array[_]] = js.native
   }
   
 }

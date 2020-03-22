@@ -12,8 +12,8 @@ trait Options extends js.Object {
   var checkSyntacticErrors: Boolean
   var compilerOptions: js.Object
   var eslint: Boolean
-  /** Options to supply to eslint https://eslint.org/docs/1.0.0/developer-guide/nodejs-api#cliengine */
-  var eslintOptions: js.Object
+  /** Options to supply to eslint https://eslint.org/docs/developer-guide/nodejs-api#cliengine */
+  var eslintOptions: typings.forkTsCheckerWebpackPlugin.typesEslintMod.Options
   var formatter: FormatterType
   var formatterOptions: FormatterOptions
   var ignoreDiagnostics: js.Array[Double]
@@ -39,7 +39,7 @@ object Options {
     checkSyntacticErrors: Boolean,
     compilerOptions: js.Object,
     eslint: Boolean,
-    eslintOptions: js.Object,
+    eslintOptions: typings.forkTsCheckerWebpackPlugin.typesEslintMod.Options,
     formatterOptions: FormatterOptions,
     ignoreDiagnostics: js.Array[Double],
     ignoreLintWarnings: Boolean,

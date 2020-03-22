@@ -27,7 +27,7 @@ trait WriteTreatmentResource extends js.Object {
     */
   var TreatmentDescription: js.UndefOr[string] = js.native
   /**
-    * The custom name of the treatment. A treatment is a variation of a campaign that's used for A/B testing of a campaign.
+    * A custom name for the treatment. A treatment is a variation of a campaign that's used for A/B testing of a campaign.
     */
   var TreatmentName: js.UndefOr[string] = js.native
 }

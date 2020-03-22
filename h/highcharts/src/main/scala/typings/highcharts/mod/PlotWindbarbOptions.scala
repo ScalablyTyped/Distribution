@@ -195,6 +195,12 @@ trait PlotWindbarbOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
+    * (Highcharts, Highstock) A reserved subspace to store options and values
+    * for customized functionality. Here you can add additional data for your
+    * own event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
     * (Highcharts, Highstock) Data grouping options for the wind barbs. In
     * Highcharts, this requires the `modules/datagrouping.js` module to be
     * loaded. In Highstock, data grouping is included.
@@ -211,7 +217,7 @@ trait PlotWindbarbOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[PlotWindbarbDataLabelsOptions | js.Array[PlotWindbarbDataLabelsOptions]] = js.undefined
   /**
     * (Highcharts, Highstock) Options for the series data sorting.
     */
@@ -536,7 +542,7 @@ trait PlotWindbarbOptions extends js.Object {
     * distinguishing between values above and below a threshold. If `null`, the
     * columns extend from the padding Y axis minimum.
     */
-  var threshold: js.UndefOr[Double] = js.undefined
+  var threshold: js.UndefOr[Double | Null] = js.undefined
   /**
     * (Highcharts, Highstock) A configuration object for the tooltip rendering
     * of each single series. Properties are inherited from tooltip, but only
@@ -623,8 +629,9 @@ object PlotWindbarbOptions {
     connectors: SeriesConnectorsOptionsObject = null,
     crisp: js.UndefOr[Boolean] = js.undefined,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotWindbarbDataLabelsOptions | js.Array[PlotWindbarbDataLabelsOptions] = null,
     dataSorting: DataSortingOptionsObject | PlotWindbarbDataSortingOptions = null,
     depth: Int | Double = null,
     description: String = null,
@@ -703,6 +710,7 @@ object PlotWindbarbOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])

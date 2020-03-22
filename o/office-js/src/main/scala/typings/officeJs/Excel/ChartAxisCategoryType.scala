@@ -18,7 +18,6 @@ sealed trait ChartAxisCategoryType extends js.Object
 @js.native
 object ChartAxisCategoryType extends js.Object {
   /**
-    *
     * Excel controls the axis type.
     *
     */
@@ -26,7 +25,6 @@ object ChartAxisCategoryType extends js.Object {
   sealed trait automatic extends ChartAxisCategoryType
   
   /**
-    *
     * Axis groups data on a time scale.
     *
     */
@@ -34,7 +32,6 @@ object ChartAxisCategoryType extends js.Object {
   sealed trait dateAxis extends ChartAxisCategoryType
   
   /**
-    *
     * Axis groups data by an arbitrary set of categories.
     *
     */

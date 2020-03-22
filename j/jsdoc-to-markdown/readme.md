@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsdoc-to-markdown
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Generates markdown API documentation from jsdoc annotated source code

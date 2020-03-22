@@ -1,6 +1,8 @@
 package typings.officeUiFabricReact.overflowSetTypesMod
 
 import typings.fluentuiReactFocus.focusZoneTypesMod.IFocusZoneProps
+import typings.officeUiFabricReact.officeUiFabricReactStrings.end
+import typings.officeUiFabricReact.officeUiFabricReactStrings.start
 import typings.officeUiFabricReact.overflowSetBaseMod.OverflowSetBase
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Key
@@ -61,6 +63,12 @@ trait IOverflowSetProps extends ClassAttributes[OverflowSetBase] {
     */
   var overflowItems: js.UndefOr[js.Array[IOverflowSetItemProps]] = js.undefined
   /**
+    * Controls wether or not the overflow button is placed at the start or end of the items.
+    * This gives a reveresed visual behavior but maintains correct keyboard navigation.
+    * @defaultValue 'end'
+    */
+  var overflowSide: js.UndefOr[start | end] = js.undefined
+  /**
     * The role for the OverflowSet.
     * @defaultvalue 'group'
     */
@@ -95,6 +103,7 @@ object IOverflowSetProps {
     key: Key = null,
     keytipSequences: js.Array[String] = null,
     overflowItems: js.Array[IOverflowSetItemProps] = null,
+    overflowSide: start | end = null,
     ref: LegacyRef[OverflowSetBase] = null,
     role: String = null,
     styles: IStyleFunctionOrObject[IOverflowSetProps, IOverflowSetStyles] = null,
@@ -110,6 +119,7 @@ object IOverflowSetProps {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (keytipSequences != null) __obj.updateDynamic("keytipSequences")(keytipSequences.asInstanceOf[js.Any])
     if (overflowItems != null) __obj.updateDynamic("overflowItems")(overflowItems.asInstanceOf[js.Any])
+    if (overflowSide != null) __obj.updateDynamic("overflowSide")(overflowSide.asInstanceOf[js.Any])
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])

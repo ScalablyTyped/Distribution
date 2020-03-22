@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lolex"
-version := "5.1-dt-20191115Z-ad11bb"
+version := "5.1-dt-20200226Z-ad11bb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

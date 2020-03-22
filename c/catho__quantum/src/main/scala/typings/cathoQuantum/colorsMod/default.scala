@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Colors", JSImport.Default)
+@JSImport("@catho/quantum/Colors", JSImport.Default)
 @js.native
 object default extends js.Object {
   var error: ColorsTones = js.native

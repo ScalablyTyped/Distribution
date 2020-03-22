@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sketchapp"
-version := "56.0-dt-20200210Z-b032c8"
+version := "56.0-dt-20200227Z-b032c8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

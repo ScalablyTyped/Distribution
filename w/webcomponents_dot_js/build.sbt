@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webcomponents_dot_js"
-version := "0.6-dt-20191210Z-ccdca4"
+version := "0.6-dt-20200225Z-ccdca4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

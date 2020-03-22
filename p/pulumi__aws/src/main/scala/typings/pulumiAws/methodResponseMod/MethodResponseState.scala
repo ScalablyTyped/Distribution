@@ -30,7 +30,7 @@ trait MethodResponseState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * The HTTP status code
     */
@@ -44,7 +44,7 @@ object MethodResponseState {
     resourceId: Input[String] = null,
     responseModels: Input[StringDictionary[Input[String]]] = null,
     responseParameters: Input[StringDictionary[Input[Boolean]]] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     statusCode: Input[String] = null
   ): MethodResponseState = {
     val __obj = js.Dynamic.literal()

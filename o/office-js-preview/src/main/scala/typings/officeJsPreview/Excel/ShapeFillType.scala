@@ -18,7 +18,6 @@ sealed trait ShapeFillType extends js.Object
 @js.native
 object ShapeFillType extends js.Object {
   /**
-    *
     * Gradient fill.
     *
     */
@@ -26,7 +25,6 @@ object ShapeFillType extends js.Object {
   sealed trait gradient extends ShapeFillType
   
   /**
-    *
     * Mixed fill.
     *
     */
@@ -34,7 +32,6 @@ object ShapeFillType extends js.Object {
   sealed trait mixed extends ShapeFillType
   
   /**
-    *
     * No fill.
     *
     */
@@ -42,7 +39,6 @@ object ShapeFillType extends js.Object {
   sealed trait noFill extends ShapeFillType
   
   /**
-    *
     * Pattern fill.
     *
     */
@@ -50,7 +46,6 @@ object ShapeFillType extends js.Object {
   sealed trait pattern extends ShapeFillType
   
   /**
-    *
     * Picture and texture fill.
     *
     */
@@ -58,7 +53,6 @@ object ShapeFillType extends js.Object {
   sealed trait pictureAndTexture extends ShapeFillType
   
   /**
-    *
     * Solid fill.
     *
     */

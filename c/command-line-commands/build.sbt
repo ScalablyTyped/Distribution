@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "command-line-commands"
-version := "2.0.0-dt-20190322Z-a38809"
+version := "2.0.0-dt-20200226Z-a38809"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

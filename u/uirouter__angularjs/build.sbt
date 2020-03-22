@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "uirouter__angularjs"
-version := "1.0.25-192326"
+version := "1.0.25-7774a5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20191126Z-ea4136",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20200225Z-ea4136",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "uirouter__core" % "6.0.4-73556a")
 publishArtifact in packageDoc := false

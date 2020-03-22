@@ -25,7 +25,7 @@ object RenderBodyArgs {
     actions: Actions,
     boundActionCreators: Actions,
     cache: AnonDel,
-    createContentDigest: /* input */ js.Any => String,
+    createContentDigest: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof createContentDigest */ js.Any,
     createNodeId: js.Function,
     emitter: EventEmitter,
     getNode: js.Function,
@@ -47,7 +47,7 @@ object RenderBodyArgs {
     store: Store,
     tracing: Tracing
   ): RenderBodyArgs = {
-    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], boundActionCreators = boundActionCreators.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], createContentDigest = js.Any.fromFunction1(createContentDigest), createNodeId = createNodeId.asInstanceOf[js.Any], emitter = emitter.asInstanceOf[js.Any], getNode = getNode.asInstanceOf[js.Any], getNodeAndSavePathDependency = getNodeAndSavePathDependency.asInstanceOf[js.Any], getNodes = getNodes.asInstanceOf[js.Any], getNodesByType = getNodesByType.asInstanceOf[js.Any], hasNodeChanged = hasNodeChanged.asInstanceOf[js.Any], loadNodeContent = loadNodeContent.asInstanceOf[js.Any], pathPrefix = pathPrefix.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], setBodyAttributes = js.Any.fromFunction1(setBodyAttributes), setBodyProps = setBodyProps.asInstanceOf[js.Any], setHeadComponents = js.Any.fromFunction1(setHeadComponents), setHtmlAttributes = js.Any.fromFunction1(setHtmlAttributes), setPostBodyComponents = js.Any.fromFunction1(setPostBodyComponents), setPreBodyComponents = js.Any.fromFunction1(setPreBodyComponents), store = store.asInstanceOf[js.Any], tracing = tracing.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], boundActionCreators = boundActionCreators.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], createContentDigest = createContentDigest.asInstanceOf[js.Any], createNodeId = createNodeId.asInstanceOf[js.Any], emitter = emitter.asInstanceOf[js.Any], getNode = getNode.asInstanceOf[js.Any], getNodeAndSavePathDependency = getNodeAndSavePathDependency.asInstanceOf[js.Any], getNodes = getNodes.asInstanceOf[js.Any], getNodesByType = getNodesByType.asInstanceOf[js.Any], hasNodeChanged = hasNodeChanged.asInstanceOf[js.Any], loadNodeContent = loadNodeContent.asInstanceOf[js.Any], pathPrefix = pathPrefix.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], setBodyAttributes = js.Any.fromFunction1(setBodyAttributes), setBodyProps = setBodyProps.asInstanceOf[js.Any], setHeadComponents = js.Any.fromFunction1(setHeadComponents), setHtmlAttributes = js.Any.fromFunction1(setHtmlAttributes), setPostBodyComponents = js.Any.fromFunction1(setPostBodyComponents), setPreBodyComponents = js.Any.fromFunction1(setPreBodyComponents), store = store.asInstanceOf[js.Any], tracing = tracing.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RenderBodyArgs]
   }

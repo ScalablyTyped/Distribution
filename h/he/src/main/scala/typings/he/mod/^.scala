@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var decode: Decode_ = js.native
+  var encode: Encode_ = js.native
   var unescape: Decode_ = js.native
   var version: String = js.native
 }

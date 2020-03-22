@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google_dot_picker"
-version := "0.0-unknown-dt-20190903Z-b0fe8e"
+version := "0.0-unknown-dt-20200226Z-b0fe8e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

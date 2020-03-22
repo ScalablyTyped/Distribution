@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 trait CultureInfoData extends js.Object {
   /**
     *
+    * Defines the culturally appropriate format of displaying date and time. This is based on current system culture settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var datetimeFormat: js.UndefOr[DatetimeFormatInfoData] = js.undefined
+  /**
+    *
     * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -21,15 +29,20 @@ trait CultureInfoData extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var numberFormatInfo: js.UndefOr[NumberFormatInfoData] = js.undefined
+  var numberFormat: js.UndefOr[NumberFormatInfoData] = js.undefined
 }
 
 object CultureInfoData {
   @scala.inline
-  def apply(name: String = null, numberFormatInfo: NumberFormatInfoData = null): CultureInfoData = {
+  def apply(
+    datetimeFormat: DatetimeFormatInfoData = null,
+    name: String = null,
+    numberFormat: NumberFormatInfoData = null
+  ): CultureInfoData = {
     val __obj = js.Dynamic.literal()
+    if (datetimeFormat != null) __obj.updateDynamic("datetimeFormat")(datetimeFormat.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numberFormatInfo != null) __obj.updateDynamic("numberFormatInfo")(numberFormatInfo.asInstanceOf[js.Any])
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[CultureInfoData]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fibers"
-version := "3.1-dt-20191126Z-2e741d"
+version := "3.1-dt-20200225Z-2e741d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

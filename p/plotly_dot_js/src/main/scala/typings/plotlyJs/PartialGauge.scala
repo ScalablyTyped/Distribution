@@ -10,26 +10,26 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<plotly.js.plotly.js.Gauge> */
 trait PartialGauge extends js.Object {
   var axis: js.UndefOr[PartialAxis] = js.undefined
-  var bar: js.UndefOr[AnonLine] = js.undefined
+  var bar: js.UndefOr[PartialGaugeBar] = js.undefined
   var bgcolor: js.UndefOr[Color] = js.undefined
   var bordercolor: js.UndefOr[Color] = js.undefined
   var borderwidth: js.UndefOr[Double] = js.undefined
   var shape: js.UndefOr[angular | bullet] = js.undefined
-  var steps: js.UndefOr[js.Array[AnonRange]] = js.undefined
-  var threshold: js.UndefOr[AnonThickness] = js.undefined
+  var steps: js.UndefOr[js.Array[AnonColor]] = js.undefined
+  var threshold: js.UndefOr[PartialThreshold] = js.undefined
 }
 
 object PartialGauge {
   @scala.inline
   def apply(
     axis: PartialAxis = null,
-    bar: AnonLine = null,
+    bar: PartialGaugeBar = null,
     bgcolor: Color = null,
     bordercolor: Color = null,
     borderwidth: Int | Double = null,
     shape: angular | bullet = null,
-    steps: js.Array[AnonRange] = null,
-    threshold: AnonThickness = null
+    steps: js.Array[AnonColor] = null,
+    threshold: PartialThreshold = null
   ): PartialGauge = {
     val __obj = js.Dynamic.literal()
     if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])

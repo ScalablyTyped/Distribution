@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a suggested task identified in an item. Read mode only.
   *
-  * The list of tasks suggested in an email message is returned in the taskSuggestions property of the {@link Office.Entities | Entities} object 
-  * that is returned when the getEntities or getEntitiesByType method is called on the active item.
+  * The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the {@link Office.Entities | Entities} object
+  * that is returned when the `getEntities` or `getEntitiesByType` method is called on the active item.
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait TaskSuggestion extends js.Object {
   /**

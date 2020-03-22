@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "agora-rtc-sdk"
-version := "2.6-dt-20191014Z-c874ec"
+version := "3.0-dt-20200221Z-a1d2d8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

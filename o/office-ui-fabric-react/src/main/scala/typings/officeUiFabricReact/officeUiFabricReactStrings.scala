@@ -536,7 +536,7 @@ object officeUiFabricReactStrings {
   sealed trait inputFocusBorderAlt extends js.Object
   
   @js.native
-  sealed trait inputFocused_ddf45a20 extends js.Object
+  sealed trait inputFocused_7434c332 extends js.Object
   
   @js.native
   sealed trait inputForegroundChecked extends js.Object
@@ -902,7 +902,7 @@ object officeUiFabricReactStrings {
   sealed trait pickerInput_6841a0ca extends js.Object
   
   @js.native
-  sealed trait pickerInput_ddf45a20 extends js.Object
+  sealed trait pickerInput_7434c332 extends js.Object
   
   @js.native
   sealed trait pickerIsFocused_640b6fe8 extends js.Object
@@ -911,13 +911,13 @@ object officeUiFabricReactStrings {
   sealed trait pickerIsOpened_640b6fe8 extends js.Object
   
   @js.native
-  sealed trait pickerItems_ddf45a20 extends js.Object
+  sealed trait pickerItems_7434c332 extends js.Object
   
   @js.native
   sealed trait pickerText_6841a0ca extends js.Object
   
   @js.native
-  sealed trait pickerText_ddf45a20 extends js.Object
+  sealed trait pickerText_7434c332 extends js.Object
   
   @js.native
   sealed trait picker_640b6fe8 extends js.Object
@@ -1049,10 +1049,10 @@ object officeUiFabricReactStrings {
   sealed trait rtl extends js.Object
   
   @js.native
-  sealed trait screenReaderOnly_ac7082eb extends js.Object
+  sealed trait screenReaderOnly_7434c332 extends js.Object
   
   @js.native
-  sealed trait screenReaderOnly_ddf45a20 extends js.Object
+  sealed trait screenReaderOnly_ac7082eb extends js.Object
   
   @js.native
   sealed trait search extends js.Object
@@ -1661,7 +1661,7 @@ object officeUiFabricReactStrings {
   @scala.inline
   def inputFocusBorderAlt: inputFocusBorderAlt = "inputFocusBorderAlt".asInstanceOf[inputFocusBorderAlt]
   @scala.inline
-  def inputFocused_ddf45a20: inputFocused_ddf45a20 = "inputFocused_ddf45a20".asInstanceOf[inputFocused_ddf45a20]
+  def inputFocused_7434c332: inputFocused_7434c332 = "inputFocused_7434c332".asInstanceOf[inputFocused_7434c332]
   @scala.inline
   def inputForegroundChecked: inputForegroundChecked = "inputForegroundChecked".asInstanceOf[inputForegroundChecked]
   @scala.inline
@@ -1905,17 +1905,17 @@ object officeUiFabricReactStrings {
   @scala.inline
   def pickerInput_6841a0ca: pickerInput_6841a0ca = "pickerInput_6841a0ca".asInstanceOf[pickerInput_6841a0ca]
   @scala.inline
-  def pickerInput_ddf45a20: pickerInput_ddf45a20 = "pickerInput_ddf45a20".asInstanceOf[pickerInput_ddf45a20]
+  def pickerInput_7434c332: pickerInput_7434c332 = "pickerInput_7434c332".asInstanceOf[pickerInput_7434c332]
   @scala.inline
   def pickerIsFocused_640b6fe8: pickerIsFocused_640b6fe8 = "pickerIsFocused_640b6fe8".asInstanceOf[pickerIsFocused_640b6fe8]
   @scala.inline
   def pickerIsOpened_640b6fe8: pickerIsOpened_640b6fe8 = "pickerIsOpened_640b6fe8".asInstanceOf[pickerIsOpened_640b6fe8]
   @scala.inline
-  def pickerItems_ddf45a20: pickerItems_ddf45a20 = "pickerItems_ddf45a20".asInstanceOf[pickerItems_ddf45a20]
+  def pickerItems_7434c332: pickerItems_7434c332 = "pickerItems_7434c332".asInstanceOf[pickerItems_7434c332]
   @scala.inline
   def pickerText_6841a0ca: pickerText_6841a0ca = "pickerText_6841a0ca".asInstanceOf[pickerText_6841a0ca]
   @scala.inline
-  def pickerText_ddf45a20: pickerText_ddf45a20 = "pickerText_ddf45a20".asInstanceOf[pickerText_ddf45a20]
+  def pickerText_7434c332: pickerText_7434c332 = "pickerText_7434c332".asInstanceOf[pickerText_7434c332]
   @scala.inline
   def picker_640b6fe8: picker_640b6fe8 = "picker_640b6fe8".asInstanceOf[picker_640b6fe8]
   @scala.inline
@@ -2003,9 +2003,9 @@ object officeUiFabricReactStrings {
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
-  def screenReaderOnly_ac7082eb: screenReaderOnly_ac7082eb = "screenReaderOnly_ac7082eb".asInstanceOf[screenReaderOnly_ac7082eb]
+  def screenReaderOnly_7434c332: screenReaderOnly_7434c332 = "screenReaderOnly_7434c332".asInstanceOf[screenReaderOnly_7434c332]
   @scala.inline
-  def screenReaderOnly_ddf45a20: screenReaderOnly_ddf45a20 = "screenReaderOnly_ddf45a20".asInstanceOf[screenReaderOnly_ddf45a20]
+  def screenReaderOnly_ac7082eb: screenReaderOnly_ac7082eb = "screenReaderOnly_ac7082eb".asInstanceOf[screenReaderOnly_ac7082eb]
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   @scala.inline

@@ -455,11 +455,13 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def FacepileOverflowExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.facepileOverflowExampleMod.FacepileOverflowExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def FlexBoxResizeGroupExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.resizeGroupFlexBoxExampleMod.FlexBoxResizeGroupExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  def FlexBoxResizeGroupExample: ComponentType[js.Object] = typings.officeUiFabricReact.resizeGroupFlexBoxExampleMod.FlexBoxResizeGroupExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def FloatingPeoplePicker: ComponentType[FloatingPeoplePickerProps] = js.constructorOf[typings.officeUiFabricReact.mod.FloatingPeoplePicker].asInstanceOf[typings.react.mod.ComponentType[FloatingPeoplePickerProps]]
   @scala.inline
   def FloatingPeoplePickerTypesExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.floatingPeoplePickerBasicExampleMod.FloatingPeoplePickerTypesExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  @scala.inline
+  def FocusRects: ComponentType[FocusRectsProps] = typings.officeUiFabricReact.mod.FocusRects.asInstanceOf[typings.react.mod.ComponentType[FocusRectsProps]]
   @scala.inline
   def FocusTrapCallout: ComponentType[FocusTrapCalloutProps] = typings.officeUiFabricReact.mod.FocusTrapCallout.asInstanceOf[typings.react.mod.ComponentType[FocusTrapCalloutProps]]
   @scala.inline
@@ -519,7 +521,7 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def GroupedListCustomExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.groupedListCustomExampleMod.GroupedListCustomExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
-  def GroupedListSection: ComponentType[GroupedListSectionProps] = js.constructorOf[typings.officeUiFabricReact.groupedListSectionMod.GroupedListSection].asInstanceOf[typings.react.mod.ComponentType[GroupedListSectionProps]]
+  def GroupedListSection: ComponentType[GroupedListSectionProps] = js.constructorOf[typings.officeUiFabricReact.mod.GroupedListSection].asInstanceOf[typings.react.mod.ComponentType[GroupedListSectionProps]]
   @scala.inline
   def HorizontalStackBasicExample: ComponentType[js.Object] = typings.officeUiFabricReact.stackHorizontalBasicExampleMod.HorizontalStackBasicExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
@@ -706,6 +708,8 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   @scala.inline
   def OverflowSetBasicExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.overflowSetBasicExampleMod.OverflowSetBasicExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
+  def OverflowSetBasicReversedExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.overflowSetBasicReversedExampleMod.OverflowSetBasicReversedExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
+  @scala.inline
   def OverflowSetCustomExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.overflowSetCustomExampleMod.OverflowSetCustomExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def OverflowSetVerticalExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.overflowSetVerticalExampleMod.OverflowSetVerticalExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
@@ -789,6 +793,8 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   def PersonaPresence: ComponentType[PersonaPresenceProps] = typings.officeUiFabricReact.libPersonaPresenceMod.PersonaPresence.asInstanceOf[typings.react.mod.ComponentType[PersonaPresenceProps]]
   @scala.inline
   def PersonaPresenceBase: ComponentType[PersonaPresenceBaseProps] = js.constructorOf[typings.officeUiFabricReact.libPersonaPresenceMod.PersonaPresenceBase].asInstanceOf[typings.react.mod.ComponentType[PersonaPresenceBaseProps]]
+  @scala.inline
+  def PersonaPresenceColorExample: ComponentType[js.Object] = typings.officeUiFabricReact.personaPresenceColorExampleMod.PersonaPresenceColorExample.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def PersonaPresenceExample: ComponentType[js.Object] = js.constructorOf[typings.officeUiFabricReact.personaPresenceExampleMod.PersonaPresenceExample].asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
@@ -877,8 +883,6 @@ object officeUiFabricReactComponents extends officeUiFabricReactProps {
   def SelectedItemDefault: ComponentType[SelectedItemDefaultProps] = typings.officeUiFabricReact.selectedItemDefaultMod.asInstanceOf[js.Dynamic].selectDynamic("SelectedItemDefault").asInstanceOf[typings.react.mod.ComponentType[SelectedItemDefaultProps]]
   @scala.inline
   def SelectedItemWithContextMenu: ComponentType[SelectedItemWithContextMenuProps] = js.constructorOf[typings.officeUiFabricReact.selectedItemWithContextMenuMod.SelectedItemWithContextMenu].asInstanceOf[typings.react.mod.ComponentType[SelectedItemWithContextMenuProps]]
-  @scala.inline
-  def SelectedItemWithMenu: ComponentType[SelectedItemWithMenuProps] = js.constructorOf[typings.officeUiFabricReact.selectedItemWithMenuMod.SelectedItemWithMenu].asInstanceOf[typings.react.mod.ComponentType[SelectedItemWithMenuProps]]
   @scala.inline
   def SelectedPeopleList: ComponentType[SelectedPeopleListProps] = js.constructorOf[typings.officeUiFabricReact.mod.SelectedPeopleList].asInstanceOf[typings.react.mod.ComponentType[SelectedPeopleListProps]]
   @scala.inline

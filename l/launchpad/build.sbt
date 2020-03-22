@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "launchpad"
-version := "0.6.0-dt-20190322Z-fb3647"
+version := "0.6.0-dt-20200225Z-fb3647"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.coreMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import scala.scalajs.js
@@ -38,7 +38,7 @@ object DropoutLayerArgs {
     noiseShape: js.Array[Double] = null,
     seed: Int | Double = null,
     trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor_[Rank]] = null
+    weights: js.Array[Tensor[Rank]] = null
   ): DropoutLayerArgs = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
     if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])

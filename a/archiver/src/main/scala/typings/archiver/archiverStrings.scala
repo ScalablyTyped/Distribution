@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object archiverStrings {
   @js.native
+  sealed trait Partial extends js.Object
+  
+  @js.native
   sealed trait close extends js.Object
   
   @js.native
@@ -42,6 +45,8 @@ object archiverStrings {
   @js.native
   sealed trait zip extends Format
   
+  @scala.inline
+  def Partial: Partial = "Partial".asInstanceOf[Partial]
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline

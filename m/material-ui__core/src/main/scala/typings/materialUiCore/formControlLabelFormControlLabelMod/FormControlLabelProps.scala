@@ -1,6 +1,6 @@
 package typings.materialUiCore.formControlLabelFormControlLabelMod
 
-import typings.materialUiCore.PartialClassNameMapFormControlLabelClassKey
+import typings.materialUiCore.PartialClassNameMapFormCoDisabled
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -152,7 +152,7 @@ trait FormControlLabelProps extends js.Object {
   var checked: js.UndefOr[Boolean | String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapFormControlLabelClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapFormCoDisabled] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -343,7 +343,7 @@ object FormControlLabelProps {
     checked: Boolean | String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapFormControlLabelClassKey = null,
+    classes: PartialClassNameMapFormCoDisabled = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

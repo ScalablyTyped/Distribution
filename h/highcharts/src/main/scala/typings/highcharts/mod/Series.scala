@@ -243,7 +243,7 @@ class Series protected () extends js.Object {
     *        A stripped-down point object
     *
     * @return A Point object as per
-    *         http://api.highcharts.com/highcharts#Point
+    *         https://api.highcharts.com/highcharts#Point
     */
   def getPoint(boostPoint: js.Object): Point = js.native
   def getPoint(boostPoint: Point): Point = js.native
@@ -273,6 +273,29 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#hide
     */
   def hide(): Unit = js.native
+  /**
+    * Check whether the series item is itself or inherits from a certain series
+    * type.
+    *
+    * @param type
+    *        The type of series to check for, can be either featured or custom
+    *        series types. For example `column`, `pie`, `ohlc` etc.
+    *
+    * @return True if this item is or inherits from the given type.
+    */
+  def is(`type`: String): Boolean = js.native
+  /**
+    * Get non-presentational attributes for a point. Used internally for
+    * both styled mode and classic. Set correct position in link with
+    * connector line.
+    *
+    * @param this
+    *        The series of points.
+    *
+    * @return A hash containing those attributes that are not settable from
+    *         CSS.
+    */
+  def markerAttribs(): SVGAttributes = js.native
   /**
     * Get non-presentational attributes for a point. Used internally for both
     * styled mode and classic. Can be overridden for different series types.

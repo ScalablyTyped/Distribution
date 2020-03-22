@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.std.Date
-import typings.tstl.ilockableMod.ILockable
 import typings.tstl.isharedtimedlockableMod.ISharedTimedLockable
 import typings.tstl.itimedlockableMod.ITimedLockable
 import scala.scalajs.js
@@ -18,10 +17,6 @@ object sharedTimedMutexMod extends js.Object {
   class SharedTimedMutex ()
     extends ITimedLockable
        with ISharedTimedLockable {
-    /**
-      * @internal
-      */
-    def this(source: ILockable) = this()
     var _Cancel: js.Any = js.native
     var _Current_access_type: js.Any = js.native
     var _Release: js.Any = js.native

@@ -1054,7 +1054,6 @@ trait PlotOptions extends js.Object {
     * (see online documentation for example)
     */
   var organization: js.UndefOr[PlotOrganizationOptions] = js.undefined
-  var packedBubble: js.UndefOr[PlotPackedBubbleOptions_] = js.undefined
   /**
     * (Highcharts) A packed bubble series is a two dimensional series type,
     * where each point renders a value in X, Y position. Each point is drawn as
@@ -1925,7 +1924,6 @@ object PlotOptions {
     networkgraph: PlotNetworkgraphOptions = null,
     ohlc: PlotOhlcOptions = null,
     organization: PlotOrganizationOptions = null,
-    packedBubble: PlotPackedBubbleOptions_ = null,
     packedbubble: PlotPackedbubbleOptions = null,
     pareto: PlotParetoOptions = null,
     pc: PlotPcOptions = null,
@@ -2030,7 +2028,6 @@ object PlotOptions {
     if (networkgraph != null) __obj.updateDynamic("networkgraph")(networkgraph.asInstanceOf[js.Any])
     if (ohlc != null) __obj.updateDynamic("ohlc")(ohlc.asInstanceOf[js.Any])
     if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (packedBubble != null) __obj.updateDynamic("packedBubble")(packedBubble.asInstanceOf[js.Any])
     if (packedbubble != null) __obj.updateDynamic("packedbubble")(packedbubble.asInstanceOf[js.Any])
     if (pareto != null) __obj.updateDynamic("pareto")(pareto.asInstanceOf[js.Any])
     if (pc != null) __obj.updateDynamic("pc")(pc.asInstanceOf[js.Any])

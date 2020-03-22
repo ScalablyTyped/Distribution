@@ -1,7 +1,7 @@
 
 # Scala.js typings for async-validator
 
-Typings are for version 3.2.3
+Typings are for version 3.2.4
 
 ## Library description:
 validate form asynchronous

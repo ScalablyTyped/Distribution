@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Tag", JSImport.Default)
+@JSImport("@catho/quantum/Tag", JSImport.Default)
 @js.native
-class default[T] ()
-  extends Component[TagProps[T], js.Object, js.Any]
+class default ()
+  extends Component[TagProps, js.Object, js.Any]
 

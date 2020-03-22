@@ -378,14 +378,12 @@ class ChartSeries () extends ClientObject {
     */
   val yErrorBars: ChartErrorBars = js.native
   /**
-    *
     * Deletes the chart series.
     *
     * [Api set: ExcelApi 1.7]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -395,7 +393,6 @@ class ChartSeries () extends ClientObject {
     */
   def getDimensionValues(dimension: ChartSeriesDimension): ClientResult[js.Array[String]] = js.native
   /**
-    *
     * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -436,7 +433,6 @@ class ChartSeries () extends ClientObject {
   def set(properties: ChartSeriesUpdateData): Unit = js.native
   def set(properties: ChartSeriesUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Set bubble sizes for a chart series. Only works for bubble charts.
     *
     * [Api set: ExcelApi 1.7]
@@ -445,7 +441,6 @@ class ChartSeries () extends ClientObject {
     */
   def setBubbleSizes(sourceData: Range): Unit = js.native
   /**
-    *
     * Set values for a chart series. For scatter chart, it means Y axis values.
     *
     * [Api set: ExcelApi 1.7]
@@ -454,7 +449,6 @@ class ChartSeries () extends ClientObject {
     */
   def setValues(sourceData: Range): Unit = js.native
   /**
-    *
     * Set values of X axis for a chart series. Only works for scatter charts.
     *
     * [Api set: ExcelApi 1.7]

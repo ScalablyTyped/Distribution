@@ -109,5 +109,9 @@ package object jest {
   type RemoveFirstFromTuple[T /* <: js.Array[_] */] = js.Array[js.Any]
   type ResolvedValue[T] = js.Any | T
   type SnapshotSerializerPlugin = typings.prettyFormat.mod.Plugin
+  /**
+    * Represents a function that has been spied on.
+    */
+  type SpiedFunction[T /* <: js.Function1[/* repeated */ js.Any, _] */] = typings.jest.mod.jest.SpyInstance[typings.std.ReturnType[T], typings.jest.mod.jest.ArgsType[T]]
   type SpyInstance[T, Y /* <: js.Array[_] */] = typings.jest.mod.jest.MockInstance[T, Y]
 }

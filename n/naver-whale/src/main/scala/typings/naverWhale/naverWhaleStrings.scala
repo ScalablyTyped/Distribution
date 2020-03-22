@@ -1,6 +1,8 @@
 package typings.naverWhale
 
 import typings.naverWhale.whale.contentSettings.ScopeEnum
+import typings.naverWhale.whale.cookies.SameSiteStatus
+import typings.naverWhale.whale.idle.IdleState
 import typings.naverWhale.whale.omnibox.OnInputEnteredDisposition
 import typings.naverWhale.whale.runtime.RequestUpdateCheckStatus
 import typings.naverWhale.whale.webRequest.ResourceType
@@ -9,6 +11,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object naverWhaleStrings {
+  @js.native
+  sealed trait active extends IdleState
+  
   @js.native
   sealed trait allow extends js.Object
   
@@ -46,13 +51,22 @@ object naverWhaleStrings {
   sealed trait font extends ResourceType
   
   @js.native
+  sealed trait idle extends IdleState
+  
+  @js.native
   sealed trait image extends ResourceType
   
   @js.native
   sealed trait incognito_session_only extends ScopeEnum
   
   @js.native
+  sealed trait lax extends SameSiteStatus
+  
+  @js.native
   sealed trait loading extends js.Object
+  
+  @js.native
+  sealed trait locked extends IdleState
   
   @js.native
   sealed trait main_frame extends ResourceType
@@ -65,6 +79,9 @@ object naverWhaleStrings {
   
   @js.native
   sealed trait newForegroundTab extends OnInputEnteredDisposition
+  
+  @js.native
+  sealed trait no_restriction extends SameSiteStatus
   
   @js.native
   sealed trait no_update extends RequestUpdateCheckStatus
@@ -97,6 +114,9 @@ object naverWhaleStrings {
   sealed trait session_only extends js.Object
   
   @js.native
+  sealed trait strict extends SameSiteStatus
+  
+  @js.native
   sealed trait stylesheet extends ResourceType
   
   @js.native
@@ -104,6 +124,9 @@ object naverWhaleStrings {
   
   @js.native
   sealed trait throttled extends RequestUpdateCheckStatus
+  
+  @js.native
+  sealed trait unspecified extends SameSiteStatus
   
   @js.native
   sealed trait update_available extends RequestUpdateCheckStatus
@@ -114,6 +137,8 @@ object naverWhaleStrings {
   @js.native
   sealed trait xmlhttprequest extends ResourceType
   
+  @scala.inline
+  def active: active = "active".asInstanceOf[active]
   @scala.inline
   def allow: allow = "allow".asInstanceOf[allow]
   @scala.inline
@@ -139,11 +164,17 @@ object naverWhaleStrings {
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   @scala.inline
+  def idle: idle = "idle".asInstanceOf[idle]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
   def incognito_session_only: incognito_session_only = "incognito_session_only".asInstanceOf[incognito_session_only]
   @scala.inline
+  def lax: lax = "lax".asInstanceOf[lax]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
+  def locked: locked = "locked".asInstanceOf[locked]
   @scala.inline
   def main_frame: main_frame = "main_frame".asInstanceOf[main_frame]
   @scala.inline
@@ -152,6 +183,8 @@ object naverWhaleStrings {
   def newBackgroundTab: newBackgroundTab = "newBackgroundTab".asInstanceOf[newBackgroundTab]
   @scala.inline
   def newForegroundTab: newForegroundTab = "newForegroundTab".asInstanceOf[newForegroundTab]
+  @scala.inline
+  def no_restriction: no_restriction = "no_restriction".asInstanceOf[no_restriction]
   @scala.inline
   def no_update: no_update = "no_update".asInstanceOf[no_update]
   @scala.inline
@@ -173,11 +206,15 @@ object naverWhaleStrings {
   @scala.inline
   def session_only: session_only = "session_only".asInstanceOf[session_only]
   @scala.inline
+  def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
   def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
   @scala.inline
   def sub_frame: sub_frame = "sub_frame".asInstanceOf[sub_frame]
   @scala.inline
   def throttled: throttled = "throttled".asInstanceOf[throttled]
+  @scala.inline
+  def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
   @scala.inline
   def update_available: update_available = "update_available".asInstanceOf[update_available]
   @scala.inline

@@ -4,7 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Video statistics of the local stream. */
+/**
+  * Video statistics of the local stream.
+  *
+  * If {@link getLocalVideoStats} is called successfully, the {@link LocalVideoStatsMap} interface provides the UID and {@link LocalVideoStats} of the local user.
+  */
 trait LocalVideoStats extends js.Object {
   /** Frame rate of the captured video, in fps. */
   val CaptureFrameRate: js.UndefOr[String] = js.undefined

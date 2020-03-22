@@ -46,6 +46,10 @@ class TargetGroup protected () extends CustomResource {
     */
   val lambdaMultiValueHeadersEnabled: Output_[js.UndefOr[Boolean]] = js.native
   /**
+    * Determines how the load balancer selects targets when routing requests. Only applicable for Application Load Balancer Target Groups. The value is `roundRobin` or `leastOutstandingRequests`. The default is `roundRobin`.
+    */
+  val loadBalancingAlgorithmType: Output_[String] = js.native
+  /**
     * The name of the target group. If omitted, this provider will assign a random, unique name.
     */
   val name: Output_[String] = js.native

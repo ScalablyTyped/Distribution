@@ -9,6 +9,12 @@ object expressSessionStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait destroy extends js.Object
+  
+  @js.native
+  sealed trait keep extends js.Object
+  
+  @js.native
   sealed trait lax extends js.Object
   
   @js.native
@@ -19,6 +25,10 @@ object expressSessionStrings {
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
+  def keep: keep = "keep".asInstanceOf[keep]
   @scala.inline
   def lax: lax = "lax".asInstanceOf[lax]
   @scala.inline

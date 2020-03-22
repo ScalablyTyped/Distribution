@@ -13,8 +13,12 @@ object getDevices extends js.Object {
     * This method enumerates the available media input and output devices, such as microphones, cameras, headsets, and so on.
     *
     * If this method succeeds, the SDK returns a list of media devices in an array of {@link MediaDeviceInfo} objects.
+    *
+    * **Note:**
+    *
+    * On Safari 12.1 or later, call this method after calling {@link createStream} successfully.
     * @example
-    * **Sample Code**
+    * **Sample code**
     *
     * ``` javascript
     * AgoraRTC.getDevices (function(devices) {

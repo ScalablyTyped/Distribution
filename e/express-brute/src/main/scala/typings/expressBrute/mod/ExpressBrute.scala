@@ -25,7 +25,7 @@ trait ExpressBrute extends js.Object {
     * @param {Function}    next        The next middleware.
     * @return {RequestHandler} The Request handler.
     */
-  def prevent(request: Request_[ParamsDictionary], response: Response_, next: js.Function): RequestHandler[ParamsDictionary]
+  def prevent(request: Request_[ParamsDictionary], response: Response_[_], next: js.Function): RequestHandler[ParamsDictionary]
   /**
     * @summary Resets the wait time between requests back to its initial value.
     * @param {string}      ip      The IP address.
@@ -40,7 +40,7 @@ object ExpressBrute {
   @scala.inline
   def apply(
     getMiddleware: Middleware => RequestHandler[ParamsDictionary],
-    prevent: (Request_[ParamsDictionary], Response_, js.Function) => RequestHandler[ParamsDictionary],
+    prevent: (Request_[ParamsDictionary], Response_[_], js.Function) => RequestHandler[ParamsDictionary],
     reset: (String, String, js.Function) => RequestHandler[ParamsDictionary]
   ): ExpressBrute = {
     val __obj = js.Dynamic.literal(getMiddleware = js.Any.fromFunction1(getMiddleware), prevent = js.Any.fromFunction3(prevent), reset = js.Any.fromFunction3(reset))

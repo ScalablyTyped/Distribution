@@ -13,19 +13,19 @@ import scala.scalajs.js.annotation._
 object middleware extends js.Object {
   def apply(): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native
   def apply(limit: Double): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native
   def apply(limit: Double, maxLimit: Double): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native

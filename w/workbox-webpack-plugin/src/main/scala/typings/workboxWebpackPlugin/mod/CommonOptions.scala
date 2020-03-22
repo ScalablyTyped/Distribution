@@ -3,9 +3,6 @@ package typings.workboxWebpackPlugin.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import typings.workboxWebpackPlugin.AnonManifest
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.cdn
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.disabled
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.local
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -98,23 +95,6 @@ trait CommonOptions extends js.Object {
   	 * @example globStrict: false
   	 */
   var globStrict: js.UndefOr[Boolean] = js.undefined
-  /**
-  	 * Valid values are `'cdn'`, `'local'`, and `'disabled'`.
-  	 *
-  	 *  - `'cdn'`, the default, will use a URL for the Workbox runtime libraries hosted on a highly-available Google Cloud Storage instance.
-  	 *
-  	 *  - `'local'` will copy all of the Workbox runtime libraries into a versioned directory alongside your generated service worker, and configure the service worker to use those local copies.
-  	 *    This option is provided for developers who would prefer to host everything themselves and not rely on the Google Cloud Storage CDN.
-  	 *
-  	 *  - `'disabled'` will opt-out automatic behavior. It's up to you to host a local copy of the Workbox libraries at your preferred URL, and to pass in the correct path to `workbox-sw.js`
-  	 *    via the `importScripts` configuration option.
-  	 *
-  	 *  - Note: In webpack, passing in a string corresponding to the webpack chunk name containing a custom Workbox runtime library bundle is also supported.
-  	 *
-  	 * @default 'cdn'
-  	 * @example importWorkboxFrom: 'local'
-  	 */
-  var importWorkboxFrom: js.UndefOr[cdn | local | disabled] = js.undefined
   /**
   	 * Workbox creates assets as part of your webpack build process: a precache manifest file, and potentially a local copy of the Workbox libraries (if `importWorkboxFrom` is set to `'local'`).
   	 *
@@ -211,7 +191,6 @@ object CommonOptions {
     globIgnores: js.Array[String] = null,
     globPatterns: js.Array[String] = null,
     globStrict: js.UndefOr[Boolean] = js.undefined,
-    importWorkboxFrom: cdn | local | disabled = null,
     importsDirectory: String = null,
     include: js.Array[String | RegExp] = null,
     manifestTransforms: js.Array[js.Function1[/* originalManifest */ js.Array[ManifestEntry], AnonManifest]] = null,
@@ -232,7 +211,6 @@ object CommonOptions {
     if (globIgnores != null) __obj.updateDynamic("globIgnores")(globIgnores.asInstanceOf[js.Any])
     if (globPatterns != null) __obj.updateDynamic("globPatterns")(globPatterns.asInstanceOf[js.Any])
     if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.asInstanceOf[js.Any])
-    if (importWorkboxFrom != null) __obj.updateDynamic("importWorkboxFrom")(importWorkboxFrom.asInstanceOf[js.Any])
     if (importsDirectory != null) __obj.updateDynamic("importsDirectory")(importsDirectory.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms.asInstanceOf[js.Any])

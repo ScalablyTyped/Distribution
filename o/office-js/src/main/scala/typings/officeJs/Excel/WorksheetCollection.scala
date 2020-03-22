@@ -127,7 +127,6 @@ class WorksheetCollection () extends ClientObject {
     */
   val onSingleClicked: EventHandlers[WorksheetSingleClickedEventArgs] = js.native
   /**
-    *
     * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.
     *
     * [Api set: ExcelApi 1.1]
@@ -137,14 +136,12 @@ class WorksheetCollection () extends ClientObject {
   def add(): Worksheet = js.native
   def add(name: String): Worksheet = js.native
   /**
-    *
     * Gets the currently active worksheet in the workbook.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getActiveWorksheet(): Worksheet = js.native
   /**
-    *
     * Gets the number of worksheets in the collection.
     *
     * [Api set: ExcelApi 1.4]
@@ -154,7 +151,6 @@ class WorksheetCollection () extends ClientObject {
   def getCount(): ClientResult[Double] = js.native
   def getCount(visibleOnly: Boolean): ClientResult[Double] = js.native
   /**
-    *
     * Gets the first worksheet in the collection.
     *
     * [Api set: ExcelApi 1.5]
@@ -164,7 +160,6 @@ class WorksheetCollection () extends ClientObject {
   def getFirst(): Worksheet = js.native
   def getFirst(visibleOnly: Boolean): Worksheet = js.native
   /**
-    *
     * Gets a worksheet object using its Name or ID.
     *
     * [Api set: ExcelApi 1.1]
@@ -173,7 +168,6 @@ class WorksheetCollection () extends ClientObject {
     */
   def getItem(key: String): Worksheet = js.native
   /**
-    *
     * Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.4]
@@ -182,7 +176,6 @@ class WorksheetCollection () extends ClientObject {
     */
   def getItemOrNullObject(key: String): Worksheet = js.native
   /**
-    *
     * Gets the last worksheet in the collection.
     *
     * [Api set: ExcelApi 1.5]

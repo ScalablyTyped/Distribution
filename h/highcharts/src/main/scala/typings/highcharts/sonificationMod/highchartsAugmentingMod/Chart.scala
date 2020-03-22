@@ -70,6 +70,6 @@ trait Chart extends js.Object {
     * @param options
     *        The options for sonifying this chart.
     */
-  def sonify(options: SonifyChartOptionsObject): Unit = js.native
+  def sonify(options: SonificationOptions): Unit = js.native
 }
 

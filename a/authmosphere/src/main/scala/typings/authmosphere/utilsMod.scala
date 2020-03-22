@@ -77,6 +77,6 @@ object utilsMod extends js.Object {
     * @param res
     * @param status
     */
-  type rejectRequest = js.Function3[/* res */ Response_, /* logger */ Logger, /* status */ Double, Unit]
+  type rejectRequest = js.Function3[/* res */ Response_[js.Any], /* logger */ Logger, /* status */ Double, Unit]
 }
 

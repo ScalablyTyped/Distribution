@@ -1,6 +1,7 @@
 package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.fridaGum.WrapperDictname
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
   * Dynamically generated wrapper for any Java class, instance, or interface.
   */
 @js.native
-trait Wrapper
+trait Wrapper[T /* <: Members[T] */]
   extends /**
   * Methods and fields.
   */
@@ -20,7 +21,7 @@ trait Wrapper
     * Call `$init()` to initialize it.
     */
   @JSName("$alloc")
-  var $alloc_Original: MethodDispatcher = js.native
+  var $alloc_Original: MethodDispatcher[T] = js.native
   /**
     * Canonical name of class being wrapped.
     */
@@ -33,23 +34,23 @@ trait Wrapper
     * Replace the `implementation` property to hook a given constructor.
     */
   @JSName("$init")
-  var $init_Original: MethodDispatcher = js.native
+  var $init_Original: MethodDispatcher[T] = js.native
   /**
     * Allocates and initializes a new instance of the given class.
     *
     * Use this to create a new instance.
     */
   @JSName("$new")
-  var $new_Original: MethodDispatcher = js.native
+  var $new_Original: MethodDispatcher[T] = js.native
   /**
     * Instance used for chaining up to super-class method implementations.
     */
   @JSName("$super")
-  var $super: Wrapper = js.native
+  var $super: WrapperDictname = js.native
   /**
     * Retrieves a `java.lang.Class` wrapper for the current class.
     */
-  var `class`: Wrapper = js.native
+  var `class`: WrapperDictname = js.native
   /**
     * Allocates a new instance without initializing it.
     *

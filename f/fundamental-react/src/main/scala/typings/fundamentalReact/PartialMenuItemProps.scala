@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -90,10 +89,11 @@ trait PartialMenuItemProps extends js.Object {
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
   var addon: js.UndefOr[String] = js.undefined
-  var addonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var addonBefore: js.UndefOr[String] = js.undefined
+  var addonProps: js.UndefOr[js.Any] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
@@ -244,6 +244,7 @@ trait PartialMenuItemProps extends js.Object {
   var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
   var onWheel: js.UndefOr[WheelEventHandler[HTMLLIElement]] = js.undefined
+  var onclick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
@@ -252,7 +253,6 @@ trait PartialMenuItemProps extends js.Object {
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
-  var separator: js.UndefOr[Boolean] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -264,7 +264,7 @@ trait PartialMenuItemProps extends js.Object {
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var url: js.UndefOr[String] = js.undefined
-  var urlProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var urlProps: js.UndefOr[js.Any] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
 }
 
@@ -274,10 +274,11 @@ object PartialMenuItemProps {
     about: String = null,
     accessKey: String = null,
     addon: String = null,
-    addonProps: StringDictionary[js.Any] = null,
+    addonBefore: String = null,
+    addonProps: js.Any = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -428,6 +429,7 @@ object PartialMenuItemProps {
     onVolumeChange: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onWaiting: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLLIElement] => Unit = null,
+    onclick: /* repeated */ js.Any => _ = null,
     placeholder: String = null,
     prefix: String = null,
     property: String = null,
@@ -436,7 +438,6 @@ object PartialMenuItemProps {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
-    separator: js.UndefOr[Boolean] = js.undefined,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -448,13 +449,14 @@ object PartialMenuItemProps {
     typeof: String = null,
     unselectable: on | off = null,
     url: String = null,
-    urlProps: StringDictionary[js.Any] = null,
+    urlProps: js.Any = null,
     vocab: String = null
   ): PartialMenuItemProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (addon != null) __obj.updateDynamic("addon")(addon.asInstanceOf[js.Any])
+    if (addonBefore != null) __obj.updateDynamic("addonBefore")(addonBefore.asInstanceOf[js.Any])
     if (addonProps != null) __obj.updateDynamic("addonProps")(addonProps.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
@@ -609,6 +611,7 @@ object PartialMenuItemProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
@@ -617,7 +620,6 @@ object PartialMenuItemProps {
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

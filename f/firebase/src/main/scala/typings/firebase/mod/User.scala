@@ -1,12 +1,16 @@
 package typings.firebase.mod
 
 import typings.firebase.AnonDisplayName
+import typings.firebase.mod.User.MultiFactorUser
 import typings.firebase.mod.auth.ActionCodeSettings
 import typings.firebase.mod.auth.ApplicationVerifier
 import typings.firebase.mod.auth.AuthCredential
 import typings.firebase.mod.auth.AuthProvider
 import typings.firebase.mod.auth.ConfirmationResult
 import typings.firebase.mod.auth.IdTokenResult
+import typings.firebase.mod.auth.MultiFactorAssertion
+import typings.firebase.mod.auth.MultiFactorInfo
+import typings.firebase.mod.auth.MultiFactorSession
 import typings.firebase.mod.auth.UserCredential
 import typings.firebase.mod.auth.UserMetadata
 import scala.scalajs.js
@@ -21,6 +25,12 @@ trait User extends UserInfo {
   var emailVerified: Boolean = js.native
   var isAnonymous: Boolean = js.native
   var metadata: UserMetadata = js.native
+  /**
+    * The {@link firebase.User.MultiFactor} object corresponding to the current user.
+    * This is used to access all multi-factor properties and operations related to the
+    * current user.
+    */
+  var multiFactor: MultiFactorUser = js.native
   var providerData: js.Array[UserInfo | Null] = js.native
   var refreshToken: String = js.native
   /**
@@ -744,5 +754,209 @@ trait User extends UserInfo {
     *     displayName and photoURL to update.
     */
   def updateProfile(profile: AnonDisplayName): js.Promise[Unit] = js.native
+  /**
+    * Sends a verification email to a new email address. The user's email will be
+    * updated to the new one after being verified.
+    *
+    * If you have a custom email action handler, you can complete the verification
+    * process by calling {@link firebase.auth.Auth.applyActionCode}.
+    *
+    * <h4>Error Codes</h4>
+    * <dl>
+    * <dt>auth/missing-android-pkg-name</dt>
+    * <dd>An Android package name must be provided if the Android app is required
+    *     to be installed.</dd>
+    * <dt>auth/missing-continue-uri</dt>
+    * <dd>A continue URL must be provided in the request.</dd>
+    * <dt>auth/missing-ios-bundle-id</dt>
+    * <dd>An iOS bundle ID must be provided if an App Store ID is provided.</dd>
+    * <dt>auth/invalid-continue-uri</dt>
+    * <dd>The continue URL provided in the request is invalid.</dd>
+    * <dt>auth/unauthorized-continue-uri</dt>
+    * <dd>The domain of the continue URL is not whitelisted. Whitelist
+    *     the domain in the Firebase console.</dd>
+    * </dl>
+    *
+    * @example
+    * ```javascript
+    * var actionCodeSettings = {
+    *   url: 'https://www.example.com/cart?email=user@example.com&cartId=123',
+    *   iOS: {
+    *     bundleId: 'com.example.ios'
+    *   },
+    *   android: {
+    *     packageName: 'com.example.android',
+    *     installApp: true,
+    *     minimumVersion: '12'
+    *   },
+    *   handleCodeInApp: true
+    * };
+    * firebase.auth().currentUser.verifyBeforeUpdateEmail(
+    *   'user@example.com', actionCodeSettings)
+    *   .then(function() {
+    *     // Verification email sent.
+    *   })
+    *   .catch(function(error) {
+    *     // Error occurred. Inspect error.code.
+    *   });
+    * ```
+    *
+    * @param newEmail The email address to be verified and updated to.
+    * @param actionCodeSettings The action
+    *     code settings. If specified, the state/continue URL will be set as the
+    *     "continueUrl" parameter in the email verification link. The default email
+    *     verification landing page will use this to display a link to go back to
+    *     the app if it is installed.
+    *     If the actionCodeSettings is not specified, no URL is appended to the
+    *     action URL.
+    *     The state URL provided must belong to a domain that is whitelisted by the
+    *     developer in the console. Otherwise an error will be thrown.
+    *     Mobile app redirects will only be applicable if the developer configures
+    *     and accepts the Firebase Dynamic Links terms of condition.
+    *     The Android package name and iOS bundle ID will be respected only if they
+    *     are configured in the same Firebase Auth project used.
+    */
+  def verifyBeforeUpdateEmail(newEmail: String): js.Promise[Unit] = js.native
+  def verifyBeforeUpdateEmail(newEmail: String, actionCodeSettings: ActionCodeSettings): js.Promise[Unit] = js.native
+}
+
+@JSImport("firebase", "User")
+@js.native
+object User extends js.Object {
+  /**
+    * This is the interface that defines the multi-factor related properties and
+    * operations pertaining to a {@link firebase.User}.
+    */
+  @js.native
+  trait MultiFactorUser extends js.Object {
+    /**
+      * Returns a list of the user's enrolled second factors.
+      */
+    var enrolledFactors: js.Array[MultiFactorInfo] = js.native
+    /**
+      * Enrolls a second factor as identified by the
+      * {@link firebase.auth.MultiFactorAssertion} for the current user.
+      * On resolution, the user tokens are updated to reflect the change in the
+      * JWT payload.
+      * Accepts an additional display name parameter used to identify the second
+      * factor to the end user.
+      * Recent re-authentication is required for this operation to succeed.
+      * On successful enrollment, existing Firebase sessions (refresh tokens) are
+      * revoked. When a new factor is enrolled, an email notification is sent
+      * to the user’s email.
+      *
+      * <h4>Error Codes</h4>
+      * <dl>
+      * <dt>auth/invalid-verification-code</dt>
+      * <dd>Thrown if the verification code is not valid.</dd>
+      * <dt>auth/missing-verification-code</dt>
+      * <dd>Thrown if the verification code is missing.</dd>
+      * <dt>auth/invalid-verification-id</dt>
+      * <dd>Thrown if the credential is a
+      *     {@link firebase.auth.PhoneAuthProvider.credential} and the verification
+      *     ID of the credential is not valid.</dd>
+      * <dt>auth/missing-verification-id</dt>
+      * <dd>Thrown if the verification ID is missing.</dd>
+      * <dt>auth/code-expired</dt>
+      * <dd>Thrown if the verification code has expired.</dd>
+      * <dt>auth/maximum-second-factor-count-exceeded</dt>
+      * <dd>Thrown if The maximum allowed number of second factors on a user
+      *     has been exceeded.</dd>
+      * <dt>auth/second-factor-already-in-use</dt>
+      * <dd>Thrown if the second factor is already enrolled on this account.</dd>
+      * <dt>auth/unsupported-first-factor</dt>
+      * <dd>Thrown if the first factor being used to sign in is not supported.</dd>
+      * <dt>auth/unverified-email</dt>
+      * <dd>Thrown if the email of the account is not verified.</dd>
+      * <dt>auth/requires-recent-login</dt>
+      * <dd>Thrown if the user's last sign-in time does not meet the security
+      *     threshold. Use {@link firebase.User.reauthenticateWithCredential} to
+      *     resolve.</dd>
+      * </dl>
+      *
+      * @example
+      * ```javascript
+      * firebase.auth().currentUser.multiFactor.getSession()
+      *     .then(function(multiFactorSession) {
+      *       // Send verification code
+      *     var phoneAuthProvider = new firebase.auth.PhoneAuthProvider();
+      *     var phoneInfoOptions = {
+      *       phoneNumber: phoneNumber,
+      *       session: multiFactorSession
+      *     };
+      *     return phoneAuthProvider.verifyPhoneNumber(
+      *         phoneInfoOptions, appVerifier);
+      *     }).then(function(verificationId) {
+      *       // Store verificationID and show UI to let user enter verification code.
+      *     });
+      *
+      * var phoneAuthCredential =
+      *     firebase.auth.PhoneAuthProvider.credential(verificationId, verificationCode);
+      * var multiFactorAssertion =
+      *     firebase.auth.PhoneMultiFactorGenerator.assertion(phoneAuthCredential);
+      * firebase.auth().currentUser.multiFactor.enroll(multiFactorAssertion)
+      *     .then(function() {
+      *       // Second factor enrolled.
+      *     });
+      * ```
+      *
+      * @param assertion The multi-factor assertion to enroll with.
+      * @param displayName The display name of the second factor.
+      */
+    def enroll(assertion: MultiFactorAssertion): js.Promise[Unit] = js.native
+    def enroll(assertion: MultiFactorAssertion, displayName: String): js.Promise[Unit] = js.native
+    /**
+      * Returns the session identifier for a second factor enrollment operation.
+      * This is used to identify the current user trying to enroll a second factor.
+      * @return The promise that resolves with the
+      * {@link firebase.auth.MultiFactorSession}.
+      *
+      * <h4>Error Codes</h4>
+      * <dl>
+      * <dt>auth/user-token-expired</dt>
+      * <dd>Thrown if the token of the user is expired.</dd>
+      * </dl>
+      */
+    def getSession(): js.Promise[MultiFactorSession] = js.native
+    def unenroll(option: String): js.Promise[Unit] = js.native
+    /**
+      * Unenrolls the specified second factor. To specify the factor to remove, pass
+      * a {@link firebase.auth.MultiFactorInfo} object
+      * (retrieved from <code>enrolledFactors()</code>)
+      * or the factor's UID string.
+      * Sessions are not revoked when the account is downgraded. An email
+      * notification is likely to be sent to the user notifying them of the change.
+      * Recent re-authentication is required for this operation to succeed.
+      * When an existing factor is unenrolled, an email notification is sent to the
+      * user’s email.
+      *
+      * <h4>Error Codes</h4>
+      * <dl>
+      * <dt>auth/multi-factor-info-not-found</dt>
+      * <dd>Thrown if the user does not have a second factor matching the
+      *     identifier provided.</dd>
+      * <dt>auth/requires-recent-login</dt>
+      * <dd>Thrown if the user's last sign-in time does not meet the security
+      *     threshold. Use {@link firebase.User.reauthenticateWithCredential} to
+      *     resolve.</dd>
+      * </dl>
+      *
+      * @example
+      * ```javascript
+      * var options = firebase.auth().currentUser.multiFactor.enrolledFactors;
+      * // Present user the option to unenroll.
+      * return firebase.auth().currentUser.multiFactor.unenroll(options[i])
+      *   .then(function() {
+      *     // User successfully unenrolled selected factor.
+      *   }).catch(function(error) {
+      *     // Handler error.
+      *   });
+      * ```
+      *
+      * @param option The multi-factor option to unenroll.
+      */
+    def unenroll(option: MultiFactorInfo): js.Promise[Unit] = js.native
+  }
+  
 }
 

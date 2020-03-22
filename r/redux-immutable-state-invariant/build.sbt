@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-immutable-state-invariant"
-version := "2.1-dt-20190605Z-9c519e"
+version := "2.1-dt-20200227Z-9c519e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

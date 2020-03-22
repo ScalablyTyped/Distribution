@@ -18,7 +18,6 @@ sealed trait SlicerSortType extends js.Object
 @js.native
 object SlicerSortType extends js.Object {
   /**
-    *
     * Sort slicer items in ascending order by item captions.
     *
     */
@@ -26,7 +25,6 @@ object SlicerSortType extends js.Object {
   sealed trait ascending extends SlicerSortType
   
   /**
-    *
     * Sort slicer items in the order provided by the data source.
     *
     */
@@ -34,7 +32,6 @@ object SlicerSortType extends js.Object {
   sealed trait dataSourceOrder extends SlicerSortType
   
   /**
-    *
     * Sort slicer items in descending order by item captions.
     *
     */

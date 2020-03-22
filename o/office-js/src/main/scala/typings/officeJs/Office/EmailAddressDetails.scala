@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait EmailAddressDetails extends js.Object {
   /**
     * Gets the response that an attendee returned for an appointment. 
-    * This property applies to only an attendee of an appointment, as represented by the optionalAttendees or requiredAttendees property. 
+    * This property applies to only an attendee of an appointment, as represented by the `optionalAttendees` or `requiredAttendees` property. 
     * This property returns undefined in other scenarios.
     */
   var appointmentResponse: ResponseType | String

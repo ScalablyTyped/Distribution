@@ -2,6 +2,7 @@ package typings.parse.mod._Global_.Parse
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import typings.parse.AnonAuthData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,7 @@ trait UserConstructor
   extends ObjectStatic
      with Instantiable0[User[Attributes]]
      with Instantiable1[/* attributes */ Attributes, User[Attributes]] {
+  def _registerAuthenticationProvider(provider: AuthProvider): Unit = js.native
   def allowCustomUserClass(isAllowed: Boolean): Unit = js.native
   def become[T /* <: User[Attributes] */](sessionToken: String): js.Promise[T] = js.native
   def become[T /* <: User[Attributes] */](sessionToken: String, options: UseMasterKeyOption): js.Promise[T] = js.native
@@ -23,6 +25,10 @@ trait UserConstructor
   def hydrate[T /* <: User[Attributes] */](userJSON: js.Any): js.Promise[T] = js.native
   def logIn[T /* <: User[Attributes] */](username: String, password: String): js.Promise[T] = js.native
   def logIn[T /* <: User[Attributes] */](username: String, password: String, options: FullOptions): js.Promise[T] = js.native
+  def logInWith(provider: String, options: AnonAuthData): js.Promise[User[Attributes]] = js.native
+  def logInWith(provider: String, options: AnonAuthData, saveOpts: FullOptions): js.Promise[User[Attributes]] = js.native
+  def logInWith(provider: AuthProvider, options: AnonAuthData): js.Promise[User[Attributes]] = js.native
+  def logInWith(provider: AuthProvider, options: AnonAuthData, saveOpts: FullOptions): js.Promise[User[Attributes]] = js.native
   def logOut[T /* <: User[Attributes] */](): js.Promise[T] = js.native
   def requestPasswordReset[T /* <: User[Attributes] */](email: String): js.Promise[T] = js.native
   def requestPasswordReset[T /* <: User[Attributes] */](email: String, options: SuccessFailureOptions): js.Promise[T] = js.native

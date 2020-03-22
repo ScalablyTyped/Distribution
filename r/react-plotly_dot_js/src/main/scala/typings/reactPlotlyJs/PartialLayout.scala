@@ -1,13 +1,14 @@
 package typings.reactPlotlyJs
 
 import typings.plotlyJs.PartialAnnotationsArrowcolor
-import typings.plotlyJs.PartialAxis
+import typings.plotlyJs.PartialAxisCalendar
 import typings.plotlyJs.PartialFont
 import typings.plotlyJs.PartialHoverLabel
 import typings.plotlyJs.PartialImage
-import typings.plotlyJs.PartialLayoutAxisAutomargin
+import typings.plotlyJs.PartialLayoutAxisAngle
 import typings.plotlyJs.PartialLegend
 import typings.plotlyJs.PartialMargin
+import typings.plotlyJs.PartialPolarLayoutBgcolor
 import typings.plotlyJs.PartialSceneAspectmode
 import typings.plotlyJs.PartialShape
 import typings.plotlyJs.PartialSliderActivebgcolor
@@ -70,7 +71,16 @@ trait PartialLayout extends js.Object {
   var orientation: js.UndefOr[Double] = js.undefined
   var paper_bgcolor: js.UndefOr[Color] = js.undefined
   var plot_bgcolor: js.UndefOr[Color] = js.undefined
-  var radialaxis: js.UndefOr[PartialAxis] = js.undefined
+  var polar: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar2: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar3: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar4: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar5: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar6: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar7: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar8: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var polar9: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
+  var radialaxis: js.UndefOr[PartialAxisCalendar] = js.undefined
   var scene: js.UndefOr[PartialSceneAspectmode] = js.undefined
   var selectdirection: js.UndefOr[h | v | d | any] = js.undefined
   var separators: js.UndefOr[String] = js.undefined
@@ -82,15 +92,15 @@ trait PartialLayout extends js.Object {
   var titlefont: js.UndefOr[PartialFont] = js.undefined
   var updatemenus: js.UndefOr[js.Object] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
-  var xaxis: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis2: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis3: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis4: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis5: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis6: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis7: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis8: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var xaxis9: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
+  var xaxis: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis2: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis3: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis4: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis5: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis6: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis7: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis8: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var xaxis9: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   @JSName("xaxis.autorange")
   var xaxisDotautorange: js.UndefOr[Boolean] = js.undefined
   @JSName("xaxis.range")
@@ -103,15 +113,15 @@ trait PartialLayout extends js.Object {
   var xaxisDottitle: js.UndefOr[String] = js.undefined
   @JSName("xaxis.type")
   var xaxisDottype: js.UndefOr[AxisType] = js.undefined
-  var yaxis: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis2: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis3: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis4: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis5: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis6: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis7: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis8: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
-  var yaxis9: js.UndefOr[PartialLayoutAxisAutomargin] = js.undefined
+  var yaxis: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis2: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis3: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis4: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis5: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis6: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis7: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis8: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
+  var yaxis9: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   @JSName("yaxis.autorange")
   var yaxisDotautorange: js.UndefOr[Boolean] = js.undefined
   @JSName("yaxis.range")
@@ -153,7 +163,16 @@ object PartialLayout {
     orientation: Int | Double = null,
     paper_bgcolor: Color = null,
     plot_bgcolor: Color = null,
-    radialaxis: PartialAxis = null,
+    polar: PartialPolarLayoutBgcolor = null,
+    polar2: PartialPolarLayoutBgcolor = null,
+    polar3: PartialPolarLayoutBgcolor = null,
+    polar4: PartialPolarLayoutBgcolor = null,
+    polar5: PartialPolarLayoutBgcolor = null,
+    polar6: PartialPolarLayoutBgcolor = null,
+    polar7: PartialPolarLayoutBgcolor = null,
+    polar8: PartialPolarLayoutBgcolor = null,
+    polar9: PartialPolarLayoutBgcolor = null,
+    radialaxis: PartialAxisCalendar = null,
     scene: PartialSceneAspectmode = null,
     selectdirection: h | v | d | any = null,
     separators: String = null,
@@ -165,30 +184,30 @@ object PartialLayout {
     titlefont: PartialFont = null,
     updatemenus: js.Object = null,
     width: Int | Double = null,
-    xaxis: PartialLayoutAxisAutomargin = null,
-    xaxis2: PartialLayoutAxisAutomargin = null,
-    xaxis3: PartialLayoutAxisAutomargin = null,
-    xaxis4: PartialLayoutAxisAutomargin = null,
-    xaxis5: PartialLayoutAxisAutomargin = null,
-    xaxis6: PartialLayoutAxisAutomargin = null,
-    xaxis7: PartialLayoutAxisAutomargin = null,
-    xaxis8: PartialLayoutAxisAutomargin = null,
-    xaxis9: PartialLayoutAxisAutomargin = null,
+    xaxis: PartialLayoutAxisAngle = null,
+    xaxis2: PartialLayoutAxisAngle = null,
+    xaxis3: PartialLayoutAxisAngle = null,
+    xaxis4: PartialLayoutAxisAngle = null,
+    xaxis5: PartialLayoutAxisAngle = null,
+    xaxis6: PartialLayoutAxisAngle = null,
+    xaxis7: PartialLayoutAxisAngle = null,
+    xaxis8: PartialLayoutAxisAngle = null,
+    xaxis9: PartialLayoutAxisAngle = null,
     xaxisDotautorange: js.UndefOr[Boolean] = js.undefined,
     xaxisDotrange: js.Tuple2[Datum, Datum] = null,
     `xaxisDotrange[0]`: Datum = null,
     `xaxisDotrange[1]`: Datum = null,
     xaxisDottitle: String = null,
     xaxisDottype: AxisType = null,
-    yaxis: PartialLayoutAxisAutomargin = null,
-    yaxis2: PartialLayoutAxisAutomargin = null,
-    yaxis3: PartialLayoutAxisAutomargin = null,
-    yaxis4: PartialLayoutAxisAutomargin = null,
-    yaxis5: PartialLayoutAxisAutomargin = null,
-    yaxis6: PartialLayoutAxisAutomargin = null,
-    yaxis7: PartialLayoutAxisAutomargin = null,
-    yaxis8: PartialLayoutAxisAutomargin = null,
-    yaxis9: PartialLayoutAxisAutomargin = null,
+    yaxis: PartialLayoutAxisAngle = null,
+    yaxis2: PartialLayoutAxisAngle = null,
+    yaxis3: PartialLayoutAxisAngle = null,
+    yaxis4: PartialLayoutAxisAngle = null,
+    yaxis5: PartialLayoutAxisAngle = null,
+    yaxis6: PartialLayoutAxisAngle = null,
+    yaxis7: PartialLayoutAxisAngle = null,
+    yaxis8: PartialLayoutAxisAngle = null,
+    yaxis9: PartialLayoutAxisAngle = null,
     yaxisDotautorange: js.UndefOr[Boolean] = js.undefined,
     yaxisDotrange: js.Tuple2[Datum, Datum] = null,
     `yaxisDotrange[0]`: Datum = null,
@@ -221,6 +240,15 @@ object PartialLayout {
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (paper_bgcolor != null) __obj.updateDynamic("paper_bgcolor")(paper_bgcolor.asInstanceOf[js.Any])
     if (plot_bgcolor != null) __obj.updateDynamic("plot_bgcolor")(plot_bgcolor.asInstanceOf[js.Any])
+    if (polar != null) __obj.updateDynamic("polar")(polar.asInstanceOf[js.Any])
+    if (polar2 != null) __obj.updateDynamic("polar2")(polar2.asInstanceOf[js.Any])
+    if (polar3 != null) __obj.updateDynamic("polar3")(polar3.asInstanceOf[js.Any])
+    if (polar4 != null) __obj.updateDynamic("polar4")(polar4.asInstanceOf[js.Any])
+    if (polar5 != null) __obj.updateDynamic("polar5")(polar5.asInstanceOf[js.Any])
+    if (polar6 != null) __obj.updateDynamic("polar6")(polar6.asInstanceOf[js.Any])
+    if (polar7 != null) __obj.updateDynamic("polar7")(polar7.asInstanceOf[js.Any])
+    if (polar8 != null) __obj.updateDynamic("polar8")(polar8.asInstanceOf[js.Any])
+    if (polar9 != null) __obj.updateDynamic("polar9")(polar9.asInstanceOf[js.Any])
     if (radialaxis != null) __obj.updateDynamic("radialaxis")(radialaxis.asInstanceOf[js.Any])
     if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
     if (selectdirection != null) __obj.updateDynamic("selectdirection")(selectdirection.asInstanceOf[js.Any])

@@ -56,28 +56,24 @@ class Binding () extends ClientObject {
     */
   val `type`: BindingType | typings.officeJsPreview.officeJsPreviewStrings.Range | typings.officeJsPreview.officeJsPreviewStrings.Table | Text = js.native
   /**
-    *
     * Deletes the binding.
     *
     * [Api set: ExcelApi 1.3]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getTable(): Table = js.native
   /**
-    *
     * Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
     *
     * [Api set: ExcelApi 1.1]

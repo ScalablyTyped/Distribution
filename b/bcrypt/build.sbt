@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bcrypt"
-version := "3.0-dt-20190322Z-ef80fb"
+version := "3.0-dt-20200225Z-ef80fb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -23,7 +23,7 @@ trait ModelArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * The schema of the model in a JSON form
     */
@@ -34,7 +34,7 @@ object ModelArgs {
   @scala.inline
   def apply(
     contentType: Input[String],
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     description: Input[String] = null,
     name: Input[String] = null,
     schema: Input[String] = null

@@ -7,7 +7,7 @@ import typings.tensorflowTfjsConverter.operationsTypesMod.Node
 import typings.tensorflowTfjsConverter.operationsTypesMod.ValueType
 import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ object nodeValueImplMod extends js.Object {
       */
     var getInput: js.Any = js.native
     /* CompleteClass */
-    override var inputs: js.Array[Tensor_[Rank]] = js.native
+    override var inputs: js.Array[Tensor[Rank]] = js.native
     var node: js.Any = js.native
     var tensorMap: js.Any = js.native
   }

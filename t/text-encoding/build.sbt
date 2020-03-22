@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "text-encoding"
-version := "0.0-unknown-dt-20190322Z-cda30e"
+version := "0.0-unknown-dt-20200227Z-cda30e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

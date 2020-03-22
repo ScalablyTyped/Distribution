@@ -8,8 +8,11 @@ import typings.xrm.Xrm.Navigation.DialogSizeOptions
 import typings.xrm.Xrm.Navigation.EntityFormOptions
 import typings.xrm.Xrm.Navigation.ErrorDialogOptions
 import typings.xrm.Xrm.Navigation.FileDetails
+import typings.xrm.Xrm.Navigation.NavigationOptions
 import typings.xrm.Xrm.Navigation.OpenFormResult
 import typings.xrm.Xrm.Navigation.OpenWebresourceOptions
+import typings.xrm.Xrm.Navigation.PageInputEntityList
+import typings.xrm.Xrm.Navigation.PageInputHtmlWebResource
 import typings.xrm.Xrm.Utility.OpenParameters
 import typings.xrm.XrmEnum.OpenFileOptions
 import scala.scalajs.js
@@ -21,6 +24,15 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Navigation_ extends js.Object {
+  /**
+    * Navigates to the specified page.
+    * @param pageInput Input about the page to navigate to. The object definition changes depending on the type of page to navigate to: entity list or HTML web resource.
+    * @param navigationOptions Options for navigating to a page: whether to open inline or in a dialog. If you don't specify this parameter, page is opened inline by default.
+    */
+  def navigateTo(pageInput: PageInputEntityList): PromiseLike[_] = js.native
+  def navigateTo(pageInput: PageInputEntityList, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
+  def navigateTo(pageInput: PageInputHtmlWebResource): PromiseLike[_] = js.native
+  def navigateTo(pageInput: PageInputHtmlWebResource, navigationOptions: NavigationOptions): PromiseLike[_] = js.native
   /**
     * Displays an alert dialog containing a message and a button.
     * @param alertStrings The strings to be used in the alert dialog.

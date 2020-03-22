@@ -10,6 +10,13 @@ trait ServerOptions extends js.Object {
   var IncomingMessage: js.UndefOr[Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage]] = js.undefined
   var ServerResponse: js.UndefOr[Instantiable1[/* req */ IncomingMessage, typings.node.httpMod.ServerResponse]] = js.undefined
   /**
+    * Use an insecure HTTP parser that accepts invalid HTTP headers when true.
+    * Using the insecure parser should be avoided.
+    * See --insecure-http-parser for more information.
+    * @default false
+    */
+  var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
+  /**
     * Optionally overrides the value of
     * [`--max-http-header-size`][] for requests received by this server, i.e.
     * the maximum length of request headers in bytes.
@@ -23,11 +30,13 @@ object ServerOptions {
   def apply(
     IncomingMessage: Instantiable1[/* socket */ Socket, IncomingMessage] = null,
     ServerResponse: Instantiable1[/* req */ IncomingMessage, ServerResponse] = null,
+    insecureHTTPParser: js.UndefOr[Boolean] = js.undefined,
     maxHeaderSize: Int | Double = null
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (IncomingMessage != null) __obj.updateDynamic("IncomingMessage")(IncomingMessage.asInstanceOf[js.Any])
     if (ServerResponse != null) __obj.updateDynamic("ServerResponse")(ServerResponse.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecureHTTPParser)) __obj.updateDynamic("insecureHTTPParser")(insecureHTTPParser.asInstanceOf[js.Any])
     if (maxHeaderSize != null) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }

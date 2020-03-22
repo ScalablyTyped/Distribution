@@ -135,6 +135,12 @@ class Mocha__ () extends js.Object {
   /* protected */ def loadFiles(): Unit = js.native
   /* protected */ def loadFiles(fn: js.Function0[Unit]): Unit = js.native
   /**
+    * Loads ESM (and CJS) test files asynchronously.
+    *
+    * @see https://mochajs.org/api/mocha#loadFilesAsync
+    */
+  def loadFilesAsync(): js.Promise[Unit] = js.native
+  /**
     * Disable syntax highlighting (in browser).
     *
     * @see https://mochajs.org/api/mocha#noHighlighting

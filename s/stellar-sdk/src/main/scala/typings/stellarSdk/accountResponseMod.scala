@@ -29,8 +29,9 @@ object accountResponseMod extends js.Object {
     val balances: js.Array[BalanceLine[AssetType]] = js.native
     val data_attr: Record[String, String] = js.native
     val flags: Flags = js.native
+    val home_domain: js.UndefOr[String] = js.native
     val id: String = js.native
-    val inflation_destination: String = js.native
+    val inflation_destination: js.UndefOr[String] = js.native
     val last_modified_ledger: Double = js.native
     val paging_token: String = js.native
     var sequence: String = js.native

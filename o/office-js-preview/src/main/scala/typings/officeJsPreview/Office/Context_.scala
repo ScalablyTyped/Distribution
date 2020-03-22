@@ -108,15 +108,15 @@ trait Context_ extends js.Object {
     */
   var license: String
   /**
-    * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+    * Provides access to the Microsoft Outlook add-in object model.
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
-    * **Namespaces**:
+    * **Key properties**:
     *
     * - `diagnostics`: Provides diagnostic information to an Outlook add-in.
     *
@@ -140,14 +140,14 @@ trait Context_ extends js.Object {
   /**
     * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
     *
-    * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to 
+    * The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox, so it's available to 
     * that add-in when it is running from any host client application used to access that mailbox.
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   var roamingSettings: RoamingSettings
   /**

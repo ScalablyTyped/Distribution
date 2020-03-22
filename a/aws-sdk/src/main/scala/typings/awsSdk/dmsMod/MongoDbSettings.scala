@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MongoDbSettings extends js.Object {
   /**
-    *  The authentication mechanism you use to access the MongoDB source endpoint. Valid values: DEFAULT, MONGODB_CR, SCRAM_SHA_1  DEFAULT – For MongoDB version 2.x, use MONGODB_CR. For MongoDB version 3.x, use SCRAM_SHA_1. This setting is not used when authType=No.
+    *  The authentication mechanism you use to access the MongoDB source endpoint. Valid values: DEFAULT, MONGODB_CR, SCRAM_SHA_1  DEFAULT – For MongoDB version 2.x, use MONGODB_CR. For MongoDB version 3.x, use SCRAM_SHA_1. This setting isn't used when authType=No.
     */
   var AuthMechanism: js.UndefOr[AuthMechanismValue] = js.native
   /**
-    *  The MongoDB database name. This setting is not used when authType=NO.  The default is admin.
+    *  The MongoDB database name. This setting isn't used when authType=NO.  The default is admin.
     */
   var AuthSource: js.UndefOr[String] = js.native
   /**

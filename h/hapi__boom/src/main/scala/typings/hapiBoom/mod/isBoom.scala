@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object isBoom extends js.Object {
   def apply(err: Error): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = js.native
+  def apply(err: Error, statusCode: Double): /* is @hapi/boom.@hapi/boom.Boom<any> */ Boolean = js.native
 }
 

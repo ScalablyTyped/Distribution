@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/RadioGroup", JSImport.Default)
+@JSImport("@catho/quantum/RadioGroup", JSImport.Default)
 @js.native
-class default[T] ()
-  extends Component[RadioGroupProps[T], js.Object, js.Any]
+class default ()
+  extends Component[RadioGroupProps, js.Object, js.Any]
 
 /* static members */
-@JSImport("@catho/quantum/components/RadioGroup", JSImport.Default)
+@JSImport("@catho/quantum/RadioGroup", JSImport.Default)
 @js.native
 object default extends js.Object {
   var Button: RadioButton = js.native

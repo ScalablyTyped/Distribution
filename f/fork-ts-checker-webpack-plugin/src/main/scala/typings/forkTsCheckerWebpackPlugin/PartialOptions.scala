@@ -3,6 +3,7 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.formatterFactoryMod.FormatterOptions
 import typings.forkTsCheckerWebpackPlugin.formatterFactoryMod.FormatterType
 import typings.forkTsCheckerWebpackPlugin.mod.Logger
+import typings.forkTsCheckerWebpackPlugin.typesEslintMod.Options
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ trait PartialOptions extends js.Object {
   var checkSyntacticErrors: js.UndefOr[Boolean] = js.undefined
   var compilerOptions: js.UndefOr[js.Object] = js.undefined
   var eslint: js.UndefOr[Boolean] = js.undefined
-  var eslintOptions: js.UndefOr[js.Object] = js.undefined
+  var eslintOptions: js.UndefOr[Options] = js.undefined
   var formatter: js.UndefOr[FormatterType] = js.undefined
   var formatterOptions: js.UndefOr[FormatterOptions] = js.undefined
   var ignoreDiagnostics: js.UndefOr[js.Array[Double]] = js.undefined
@@ -39,7 +40,7 @@ object PartialOptions {
     checkSyntacticErrors: js.UndefOr[Boolean] = js.undefined,
     compilerOptions: js.Object = null,
     eslint: js.UndefOr[Boolean] = js.undefined,
-    eslintOptions: js.Object = null,
+    eslintOptions: Options = null,
     formatter: FormatterType = null,
     formatterOptions: FormatterOptions = null,
     ignoreDiagnostics: js.Array[Double] = null,

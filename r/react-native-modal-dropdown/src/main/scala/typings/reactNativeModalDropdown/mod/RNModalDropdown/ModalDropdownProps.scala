@@ -18,8 +18,8 @@ trait ModalDropdownProps extends js.Object {
   var dropdownTextHighlightStyle: js.UndefOr[js.Any] = js.undefined
   var dropdownTextStyle: js.UndefOr[js.Any] = js.undefined
   var keyboardShouldPersistTaps: js.UndefOr[always | never | handled] = js.undefined
-  var onDropdownWillHide: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var onDropdownWillShow: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var onDropdownWillHide: js.UndefOr[js.Function0[_]] = js.undefined
+  var onDropdownWillShow: js.UndefOr[js.Function0[_]] = js.undefined
   var onSelect: js.UndefOr[js.Function2[/* index */ Double, /* option */ js.Any, Unit]] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var renderButtonText: js.UndefOr[js.Function1[/* text */ js.Any, _]] = js.undefined
@@ -46,8 +46,8 @@ object ModalDropdownProps {
     dropdownTextHighlightStyle: js.Any = null,
     dropdownTextStyle: js.Any = null,
     keyboardShouldPersistTaps: always | never | handled = null,
-    onDropdownWillHide: () => Boolean = null,
-    onDropdownWillShow: () => Boolean = null,
+    onDropdownWillHide: () => _ = null,
+    onDropdownWillShow: () => _ = null,
     onSelect: (/* index */ Double, /* option */ js.Any) => Unit = null,
     options: js.Array[_] = null,
     renderButtonText: /* text */ js.Any => _ = null,

@@ -2,19 +2,22 @@ package typings.officeUiFabricReact.marqueeSelectionBaseMod
 
 import typings.officeUiFabricReact.AnonIsEnabled
 import typings.officeUiFabricReact.marqueeSelectionTypesMod.IMarqueeSelectionProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/MarqueeSelection/MarqueeSelection.base", "MarqueeSelectionBase")
 @js.native
-class MarqueeSelectionBase protected () extends BaseComponent[IMarqueeSelectionProps, IMarqueeSelectionState] {
+class MarqueeSelectionBase protected ()
+  extends Component[IMarqueeSelectionProps, IMarqueeSelectionState, js.Any] {
   def this(props: IMarqueeSelectionProps) = this()
   var _allSelectedIndices: js.Any = js.native
+  var _async: js.Any = js.native
   var _autoScroll: js.Any = js.native
   var _dragOrigin: js.Any = js.native
   var _evaluateSelection: js.Any = js.native
+  var _events: js.Any = js.native
   var _getRootRect: js.Any = js.native
   /**
     * We do not want to start the marquee if we're trying to marquee

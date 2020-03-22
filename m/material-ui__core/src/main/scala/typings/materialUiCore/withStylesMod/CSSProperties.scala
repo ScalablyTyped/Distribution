@@ -47,7 +47,7 @@ trait CSSProperties
      with // Allow pseudo selectors and media queries
 /* k */ StringDictionary[
       js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 493 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 499 */ js.Any
       ]
     ] {
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.native
@@ -91,7 +91,7 @@ object CSSProperties {
     StringDictionary: // Allow pseudo selectors and media queries
   /* k */ StringDictionary[
       js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 493 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 499 */ js.Any
       ]
     ] = null,
     VendorLonghandProperties: VendorLonghandProperties[Double | String] = null,

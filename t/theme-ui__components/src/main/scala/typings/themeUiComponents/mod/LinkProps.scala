@@ -1,6 +1,6 @@
 package typings.themeUiComponents.mod
 
-import typings.csstype.mod.OpacityProperty
+import typings.csstype.mod.GlobalsNumber
 import typings.emotionCore.mod.InterpolationWithTheme
 import typings.react.mod.ElementType
 import typings.styledSystem.mod.RequiredTheme
@@ -33,7 +33,7 @@ trait LinkProps extends js.Object {
   var mt: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var mx: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var my: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
-  var opacity: js.UndefOr[ResponsiveValue[OpacityProperty, RequiredTheme]] = js.undefined
+  var opacity: js.UndefOr[ResponsiveValue[GlobalsNumber, RequiredTheme]] = js.undefined
   var p: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var padding: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var paddingBottom: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
@@ -76,7 +76,7 @@ object LinkProps {
     mt: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     mx: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     my: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     p: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     padding: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     paddingBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,

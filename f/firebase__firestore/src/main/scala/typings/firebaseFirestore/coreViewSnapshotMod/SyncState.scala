@@ -1,29 +1,23 @@
 package typings.firebaseFirestore.coreViewSnapshotMod
 
-import org.scalablytyped.runtime.TopLevel
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait SyncState extends js.Object
+/* Rewritten from type alias, can be one of: 
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
+*/
+trait SyncState extends js.Object
 
-@JSImport("@firebase/firestore/dist/src/core/view_snapshot", "SyncState")
-@js.native
-object SyncState extends js.Object {
-  @js.native
-  sealed trait Local extends SyncState
-  
-  @js.native
-  sealed trait Synced extends SyncState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SyncState with Double] = js.native
-  /* 0 */ @js.native
-  object Local extends TopLevel[Local with Double]
-  
-  /* 1 */ @js.native
-  object Synced extends TopLevel[Synced with Double]
-  
+object SyncState {
+  @scala.inline
+  def Local: `0` = this.cast(0)
+  @scala.inline
+  def Synced: `1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }
 

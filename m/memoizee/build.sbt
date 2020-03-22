@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "memoizee"
-version := "0.4-dt-20190907Z-369075"
+version := "0.4-dt-20200225Z-369075"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

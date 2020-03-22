@@ -11,17 +11,17 @@ trait AnnotationsOptions extends js.Object {
     * object. Options from the controlPointOptions can be overwritten by
     * options in a specific control point.
     */
-  var controlPointOptions: js.UndefOr[js.Object | AnnotationsControlPointOptions] = js.undefined
+  var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.undefined
   /**
     * (Highstock) A crooked line annotation.
     */
   var crookedLine: js.UndefOr[AnnotationsCrookedLineOptions] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow an annotation to be
-    * draggable by a user. Possible values are `"x"`, `"xy"`, `"y"` and `""`
+    * draggable by a user. Possible values are `'x'`, `'xy'`, `'y'` and `''`
     * (disabled).
     */
-  var draggable: js.UndefOr[OptionsDraggableValue] = js.undefined
+  var draggable: js.UndefOr[AnnotationDraggableValue] = js.undefined
   /**
     * (Highstock) An elliott wave annotation.
     */
@@ -98,9 +98,9 @@ trait AnnotationsOptions extends js.Object {
 object AnnotationsOptions {
   @scala.inline
   def apply(
-    controlPointOptions: js.Object | AnnotationsControlPointOptions = null,
+    controlPointOptions: AnnotationControlPointOptionsObject = null,
     crookedLine: AnnotationsCrookedLineOptions = null,
-    draggable: OptionsDraggableValue = null,
+    draggable: AnnotationDraggableValue = null,
     elliottWave: AnnotationsElliottWaveOptions = null,
     events: AnnotationsEventsOptions = null,
     fibonacci: AnnotationsFibonacciOptions = null,

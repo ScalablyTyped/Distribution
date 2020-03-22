@@ -1,5 +1,12 @@
 package typings.dateFns
 
+import typings.dateFns.dateFnsNumbers.`0`
+import typings.dateFns.dateFnsNumbers.`1`
+import typings.dateFns.dateFnsNumbers.`2`
+import typings.dateFns.dateFnsNumbers.`3`
+import typings.dateFns.dateFnsNumbers.`4`
+import typings.dateFns.dateFnsNumbers.`5`
+import typings.dateFns.dateFnsNumbers.`6`
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -213,8 +220,8 @@ trait dateFns extends js.Object {
   def fromUnixTime(unixTime: Double): Date = js.native
   def getDate(date: Double): Double = js.native
   def getDate(date: Date): Double = js.native
-  def getDay(date: Double): Double = js.native
-  def getDay(date: Date): Double = js.native
+  def getDay(date: Double): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
+  def getDay(date: Date): `0` | `1` | `2` | `3` | `4` | `5` | `6` = js.native
   def getDayOfYear(date: Double): Double = js.native
   def getDayOfYear(date: Date): Double = js.native
   def getDaysInMonth(date: Double): Double = js.native
@@ -399,18 +406,18 @@ trait dateFns extends js.Object {
   def lightFormat(date: Date, format: String): String = js.native
   def max(datesArray: js.Array[Date | Double]): Date = js.native
   def min(datesArray: js.Array[Date | Double]): Date = js.native
-  def parse(dateString: String, formatString: String, backupDate: Double): Date = js.native
+  def parse(dateString: String, formatString: String, referenceDate: Double): Date = js.native
   def parse(
     dateString: String,
     formatString: String,
-    backupDate: Double,
+    referenceDate: Double,
     options: AnonUseAdditionalWeekYearTokensWeekStartsOn
   ): Date = js.native
-  def parse(dateString: String, formatString: String, backupDate: Date): Date = js.native
+  def parse(dateString: String, formatString: String, referenceDate: Date): Date = js.native
   def parse(
     dateString: String,
     formatString: String,
-    backupDate: Date,
+    referenceDate: Date,
     options: AnonUseAdditionalWeekYearTokensWeekStartsOn
   ): Date = js.native
   def parseISO(argument: String): Date = js.native

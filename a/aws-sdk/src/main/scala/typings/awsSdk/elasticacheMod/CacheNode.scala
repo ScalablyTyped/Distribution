@@ -15,7 +15,7 @@ trait CacheNode extends js.Object {
     */
   var CacheNodeId: js.UndefOr[String] = js.native
   /**
-    * The current state of this cache node.
+    * The current state of this cache node, one of the following values: available, creating, rebooting, or deleting.
     */
   var CacheNodeStatus: js.UndefOr[String] = js.native
   /**

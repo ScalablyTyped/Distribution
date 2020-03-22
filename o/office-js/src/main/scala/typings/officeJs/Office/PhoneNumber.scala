@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a phone number identified in an item. Read mode only.
   *
-  * An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the phoneNumbers property of the 
-  * Entities object that is returned when you call the getEntities method on the selected item.
+  * An array of `PhoneNumber` objects containing the phone numbers found in an email message is returned in the `phoneNumbers` property of the
+  * `Entities` object that is returned when you call the `getEntities` method on the selected item.
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait PhoneNumber extends js.Object {
   /**
@@ -22,7 +22,8 @@ trait PhoneNumber extends js.Object {
     */
   var originalPhoneString: String
   /**
-    * Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes characters like parentheses and hyphens, if they exist in the original item.
+    * Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes characters
+    * like parentheses and hyphens, if they exist in the original item.
     */
   var phoneString: String
   /**

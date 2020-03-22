@@ -31,7 +31,7 @@ trait StageArgs extends js.Object {
   /**
     * The ID of the deployment that the stage points to
     */
-  val deployment: Input[Deployment] = js.native
+  val deployment: Input[String | Deployment] = js.native
   /**
     * The description of the stage
     */
@@ -43,7 +43,7 @@ trait StageArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * The name of the stage
     */
@@ -65,8 +65,8 @@ trait StageArgs extends js.Object {
 object StageArgs {
   @scala.inline
   def apply(
-    deployment: Input[Deployment],
-    restApi: Input[RestApi],
+    deployment: Input[String | Deployment],
+    restApi: Input[String | RestApi],
     stageName: Input[String],
     accessLogSettings: Input[StageAccessLogSettings] = null,
     cacheClusterEnabled: Input[Boolean] = null,

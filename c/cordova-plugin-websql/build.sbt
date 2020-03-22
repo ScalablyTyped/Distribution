@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-websql"
-version := "0.0-unknown-dt-20190322Z-e59bd1"
+version := "0.0-unknown-dt-20200304Z-e59bd1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

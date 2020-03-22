@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -76,7 +75,7 @@ trait WeakValidationMapLocaliza extends js.Object {
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -134,7 +133,6 @@ trait WeakValidationMapLocaliza extends js.Object {
   var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var control: js.UndefOr[Validator[js.UndefOr[AnonButtonProps | Null]]] = js.undefined
-  var customStyles: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[AnonHtml | Null]]] = js.undefined
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
@@ -145,6 +143,7 @@ trait WeakValidationMapLocaliza extends js.Object {
   var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var inlist: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
+  var inputClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var inputMode: js.UndefOr[
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
   ] = js.undefined
@@ -155,7 +154,7 @@ trait WeakValidationMapLocaliza extends js.Object {
   var itemScope: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var itemType: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var lang: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var listProps: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
+  var listProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var menu: js.UndefOr[Validator[js.UndefOr[js.Array[AnonInputProps] | Null]]] = js.undefined
   var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.undefined
@@ -237,7 +236,7 @@ trait WeakValidationMapLocaliza extends js.Object {
   var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLDivElement]]]] = js.undefined
   var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var popoverProps: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
+  var popoverProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -266,7 +265,7 @@ object WeakValidationMapLocaliza {
     accessKey: Validator[js.UndefOr[Null | String]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
@@ -322,7 +321,6 @@ object WeakValidationMapLocaliza {
     contentEditable: Validator[js.UndefOr[inherit | Booleanish | Null]] = null,
     contextMenu: Validator[js.UndefOr[Null | String]] = null,
     control: Validator[js.UndefOr[AnonButtonProps | Null]] = null,
-    customStyles: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
     dangerouslySetInnerHTML: Validator[js.UndefOr[AnonHtml | Null]] = null,
     datatype: Validator[js.UndefOr[Null | String]] = null,
     defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
@@ -333,6 +331,7 @@ object WeakValidationMapLocaliza {
     hidden: Validator[js.UndefOr[Boolean | Null]] = null,
     id: Validator[js.UndefOr[Null | String]] = null,
     inlist: Validator[js.UndefOr[_ | Null]] = null,
+    inputClassName: Validator[js.UndefOr[Null | String]] = null,
     inputMode: Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]] = null,
     is: Validator[js.UndefOr[Null | String]] = null,
     itemID: Validator[js.UndefOr[Null | String]] = null,
@@ -341,7 +340,7 @@ object WeakValidationMapLocaliza {
     itemScope: Validator[js.UndefOr[Boolean | Null]] = null,
     itemType: Validator[js.UndefOr[Null | String]] = null,
     lang: Validator[js.UndefOr[Null | String]] = null,
-    listProps: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
+    listProps: Validator[js.UndefOr[_ | Null]] = null,
     menu: Validator[js.UndefOr[js.Array[AnonInputProps] | Null]] = null,
     onAbort: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
     onAnimationEnd: Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]] = null,
@@ -423,7 +422,7 @@ object WeakValidationMapLocaliza {
     onWaiting: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
     onWheel: Validator[js.UndefOr[Null | WheelEventHandler[HTMLDivElement]]] = null,
     placeholder: Validator[js.UndefOr[Null | String]] = null,
-    popoverProps: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
+    popoverProps: Validator[js.UndefOr[_ | Null]] = null,
     prefix: Validator[js.UndefOr[Null | String]] = null,
     property: Validator[js.UndefOr[Null | String]] = null,
     radioGroup: Validator[js.UndefOr[Null | String]] = null,
@@ -505,7 +504,6 @@ object WeakValidationMapLocaliza {
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (defaultChecked != null) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
@@ -516,6 +514,7 @@ object WeakValidationMapLocaliza {
     if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])

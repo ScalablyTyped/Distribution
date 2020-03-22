@@ -78,21 +78,18 @@ class DataValidation () extends ClientObject {
     */
   val valid: Boolean = js.native
   /**
-    *
     * Clears the data validation from the current range.
     *
     * [Api set: ExcelApi 1.8]
     */
   def clear(): Unit = js.native
   /**
-    *
     * Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will throw an ItemNotFound error.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getInvalidCells(): RangeAreas = js.native
   /**
-    *
     * Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are valid, this function will return null.
     *
     * [Api set: ExcelApi 1.9]

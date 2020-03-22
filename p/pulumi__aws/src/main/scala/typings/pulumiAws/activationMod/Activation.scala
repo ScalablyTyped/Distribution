@@ -30,6 +30,9 @@ class Activation protected () extends CustomResource {
     * The description of the resource that you want to register.
     */
   val description: Output_[js.UndefOr[String]] = js.native
+  /**
+    * The date by which this activation request should expire. The default value is 24 hours.
+    */
   val expirationDate: Output_[String] = js.native
   /**
     * If the current activation has expired.

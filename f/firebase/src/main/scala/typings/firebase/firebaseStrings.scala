@@ -100,6 +100,7 @@ object firebaseStrings {
   @js.native
   sealed trait debug
     extends LogLevel
+       with typings.firebase.mod.LogLevel
        with typings.firebase.mod.firestore.LogLevel
   
   @js.native
@@ -111,6 +112,7 @@ object firebaseStrings {
   @js.native
   sealed trait error
     extends LogLevel
+       with typings.firebase.mod.LogLevel
        with typings.firebase.mod.firestore.LogLevel
   
   @js.native
@@ -132,6 +134,10 @@ object firebaseStrings {
   
   @js.native
   sealed trait in extends WhereFilterOp
+  
+  @js.native
+  sealed trait info
+    extends typings.firebase.mod.LogLevel
   
   @js.native
   sealed trait internal
@@ -223,6 +229,7 @@ object firebaseStrings {
   @js.native
   sealed trait silent
     extends LogLevel
+       with typings.firebase.mod.LogLevel
        with typings.firebase.mod.firestore.LogLevel
   
   @js.native
@@ -261,6 +268,10 @@ object firebaseStrings {
   sealed trait value extends EventType
   
   @js.native
+  sealed trait verbose
+    extends typings.firebase.mod.LogLevel
+  
+  @js.native
   sealed trait view_item extends EventNameString
   
   @js.native
@@ -271,6 +282,10 @@ object firebaseStrings {
   
   @js.native
   sealed trait view_search_results extends EventNameString
+  
+  @js.native
+  sealed trait warn
+    extends typings.firebase.mod.LogLevel
   
   @scala.inline
   def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
@@ -340,6 +355,8 @@ object firebaseStrings {
   def generate_lead: generate_lead = "generate_lead".asInstanceOf[generate_lead]
   @scala.inline
   def in: in = "in".asInstanceOf[in]
+  @scala.inline
+  def info: info = "info".asInstanceOf[info]
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline
@@ -411,6 +428,8 @@ object firebaseStrings {
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline
+  def verbose: verbose = "verbose".asInstanceOf[verbose]
+  @scala.inline
   def view_item: view_item = "view_item".asInstanceOf[view_item]
   @scala.inline
   def view_item_list: view_item_list = "view_item_list".asInstanceOf[view_item_list]
@@ -418,5 +437,7 @@ object firebaseStrings {
   def view_promotion: view_promotion = "view_promotion".asInstanceOf[view_promotion]
   @scala.inline
   def view_search_results: view_search_results = "view_search_results".asInstanceOf[view_search_results]
+  @scala.inline
+  def warn: warn = "warn".asInstanceOf[warn]
 }
 

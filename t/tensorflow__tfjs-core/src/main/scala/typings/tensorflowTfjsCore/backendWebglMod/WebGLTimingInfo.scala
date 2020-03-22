@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsCore.backendWebglMod
 
+import typings.tensorflowTfjsCore.AnonError
 import typings.tensorflowTfjsCore.engineMod.TimingInfo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ object WebGLTimingInfo {
   @scala.inline
   def apply(
     downloadWaitMs: Double,
-    kernelMs: Double,
+    kernelMs: Double | AnonError,
     uploadWaitMs: Double,
     wallMs: Double,
     getExtraProfileInfo: () => String = null

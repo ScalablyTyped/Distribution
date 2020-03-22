@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "httperr"
-version := "v1.0.0-dt-20190322Z-a6b9f2"
+version := "v1.0.0-dt-20200226Z-a6b9f2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

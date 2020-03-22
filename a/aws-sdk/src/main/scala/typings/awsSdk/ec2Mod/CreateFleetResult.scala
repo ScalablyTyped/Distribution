@@ -13,7 +13,7 @@ trait CreateFleetResult extends js.Object {
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[FleetIdentifier] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
   /**
     * Information about the instances that were launched by the fleet. Valid only when Type is set to instant.
     */
@@ -24,7 +24,7 @@ object CreateFleetResult {
   @scala.inline
   def apply(
     Errors: CreateFleetErrorsSet = null,
-    FleetId: FleetIdentifier = null,
+    FleetId: FleetId = null,
     Instances: CreateFleetInstancesSet = null
   ): CreateFleetResult = {
     val __obj = js.Dynamic.literal()

@@ -16,6 +16,9 @@ trait ActivationState extends js.Object {
     * The description of the resource that you want to register.
     */
   val description: js.UndefOr[Input[String]] = js.native
+  /**
+    * The date by which this activation request should expire. The default value is 24 hours.
+    */
   val expirationDate: js.UndefOr[Input[String]] = js.native
   /**
     * If the current activation has expired.

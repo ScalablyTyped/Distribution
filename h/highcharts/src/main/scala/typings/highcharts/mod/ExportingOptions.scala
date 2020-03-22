@@ -114,6 +114,9 @@ trait ExportingOptions extends js.Object {
     *
     * - **textKey:** If internationalization is required, the key to a language
     * string
+    *
+    * Custom text for the "exitFullScreen" can be set only in lang options (it
+    * is not a separate button).
     */
   var menuItemDefinitions: js.UndefOr[Dictionary[ExportingMenuObject]] = js.undefined
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__set-version
 
-Typings are for version 7.0.5
+Typings are for version 7.0.7
 
 ## Library description:
 Non-Fabric-specific package version setter

@@ -1,6 +1,6 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.OpacityProperty
+import typings.csstype.mod.GlobalsNumber
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object ColorProps {
     backgroundColor: ResponsiveValue[TVal, ThemeType] = null,
     bg: ResponsiveValue[TVal, ThemeType] = null,
     color: ResponsiveValue[TVal, ThemeType] = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null
   ): ColorProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])

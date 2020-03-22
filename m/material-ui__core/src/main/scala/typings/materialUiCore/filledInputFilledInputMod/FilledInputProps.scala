@@ -1,7 +1,7 @@
 package typings.materialUiCore.filledInputFilledInputMod
 
-import typings.materialUiCore.AnonDense
-import typings.materialUiCore.PartialClassNameMapFilledInputClassKey
+import typings.materialUiCore.AnonDisabled
+import typings.materialUiCore.PartialClassNameMapFilled
 import typings.materialUiCore.inputBaseInputBaseMod.InputBaseComponentProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -155,7 +155,7 @@ trait FilledInputProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapFilledInputClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapFilled] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -275,7 +275,7 @@ trait FilledInputProps extends js.Object {
   var property: js.UndefOr[String] = js.native
   var radioGroup: js.UndefOr[String] = js.native
   var readOnly: js.UndefOr[Boolean] = js.native
-  var renderPrefix: js.UndefOr[js.Function1[/* state */ AnonDense, ReactNode]] = js.native
+  var renderPrefix: js.UndefOr[js.Function1[/* state */ AnonDisabled, ReactNode]] = js.native
   var required: js.UndefOr[Boolean] = js.native
   var resource: js.UndefOr[String] = js.native
   var results: js.UndefOr[Double] = js.native
@@ -361,7 +361,7 @@ object FilledInputProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapFilledInputClassKey = null,
+    classes: PartialClassNameMapFilled = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -479,7 +479,7 @@ object FilledInputProps {
     property: String = null,
     radioGroup: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    renderPrefix: /* state */ AnonDense => ReactNode = null,
+    renderPrefix: /* state */ AnonDisabled => ReactNode = null,
     required: js.UndefOr[Boolean] = js.undefined,
     resource: String = null,
     results: Int | Double = null,

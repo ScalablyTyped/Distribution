@@ -18,6 +18,7 @@ trait DrawerProps extends js.Object {
   var drawerStyle: js.UndefOr[CSSProperties] = js.undefined
   var footer: js.UndefOr[ReactNode] = js.undefined
   var footerStyle: js.UndefOr[CSSProperties] = js.undefined
+  var forceRender: js.UndefOr[Boolean] = js.undefined
   var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
   var handler: js.UndefOr[ReactNode] = js.undefined
   var headerStyle: js.UndefOr[CSSProperties] = js.undefined
@@ -48,6 +49,7 @@ object DrawerProps {
     drawerStyle: CSSProperties = null,
     footer: ReactNode = null,
     footerStyle: CSSProperties = null,
+    forceRender: js.UndefOr[Boolean] = js.undefined,
     getContainer: String | HTMLElement | getContainerFunc | `false` = null,
     handler: ReactNode = null,
     headerStyle: CSSProperties = null,
@@ -75,6 +77,7 @@ object DrawerProps {
     if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle.asInstanceOf[js.Any])
     if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
     if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])

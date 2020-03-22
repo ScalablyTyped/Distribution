@@ -14,6 +14,8 @@ import typings.rcTable.interfaceMod.RenderExpandIconProps
 import typings.rcTable.interfaceMod.RowClassName
 import typings.rcTable.interfaceMod.TableComponents
 import typings.rcTable.interfaceMod.TableLayout
+import typings.rcTable.rcTableStrings.ltr
+import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
@@ -28,6 +30,7 @@ trait TableProps[RecordType] extends LegacyExpandableProps[RecordType] {
   var columns: js.UndefOr[ColumnsType[RecordType]] = js.undefined
   var components: js.UndefOr[TableComponents[RecordType]] = js.undefined
   var data: js.UndefOr[js.Array[RecordType]] = js.undefined
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
   /** Config expand rows */
   var expandable: js.UndefOr[ExpandableConfig[RecordType]] = js.undefined
@@ -75,6 +78,7 @@ object TableProps {
     data: js.Array[RecordType] = null,
     defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined,
     defaultExpandedRowKeys: js.Array[Key] = null,
+    direction: ltr | rtl = null,
     emptyText: ReactNode | js.Function0[ReactNode] = null,
     expandIcon: /* props */ RenderExpandIconProps[RecordType] => ReactNode = null,
     expandIconColumnIndex: Int | Double = null,
@@ -112,6 +116,7 @@ object TableProps {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.asInstanceOf[js.Any])
     if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
     if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])

@@ -6,7 +6,6 @@ import typings.reactTable.mod.Column
 import typings.reactTable.mod.HeaderProps
 import typings.reactTable.mod.IdType
 import typings.reactTable.mod.Renderer
-import typings.reactTable.mod.TableInstance
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +21,6 @@ trait PartialColumn extends js.Object {
   var id: js.UndefOr[IdType[js.Object]] = js.undefined
   var maxWidth: js.UndefOr[Double] = js.undefined
   var minWidth: js.UndefOr[Double] = js.undefined
-  var show: js.UndefOr[Boolean | (js.Function1[/* instance */ TableInstance[js.Object], Boolean])] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
 }
 
@@ -36,7 +34,6 @@ object PartialColumn {
     id: IdType[js.Object] = null,
     maxWidth: Int | Double = null,
     minWidth: Int | Double = null,
-    show: Boolean | (js.Function1[/* instance */ TableInstance[js.Object], Boolean]) = null,
     width: Double | String = null
   ): PartialColumn = {
     val __obj = js.Dynamic.literal()
@@ -47,7 +44,6 @@ object PartialColumn {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialColumn]
   }

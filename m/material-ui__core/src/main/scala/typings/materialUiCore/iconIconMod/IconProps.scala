@@ -1,6 +1,6 @@
 package typings.materialUiCore.iconIconMod
 
-import typings.materialUiCore.PartialClassNameMapIconClassKey
+import typings.materialUiCore.PartialClassNameMapIconCl
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.action
@@ -152,7 +152,7 @@ trait IconProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapIconClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapIconCl] = js.native
   var color: js.UndefOr[Color | action | disabled | error] = js.native
   var component: js.UndefOr[ReactType[IconProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -334,7 +334,7 @@ object IconProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapIconClassKey = null,
+    classes: PartialClassNameMapIconCl = null,
     color: Color | action | disabled | error = null,
     component: ReactType[IconProps] = null,
     contentEditable: Booleanish | inherit = null,

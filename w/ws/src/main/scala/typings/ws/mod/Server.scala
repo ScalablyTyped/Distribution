@@ -46,6 +46,29 @@ class Server () extends EventEmitter {
     upgradeHead: Buffer,
     callback: js.Function1[/* client */ WebSocket, Unit]
   ): Unit = js.native
+  def off(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
+  def off(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
+  @JSName("off")
+  def off_close(event: close, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+  @JSName("off")
+  def off_connection(
+    event: connection,
+    cb: js.ThisFunction2[/* this */ this.type, /* socket */ WebSocket, /* request */ IncomingMessage, Unit]
+  ): this.type = js.native
+  @JSName("off")
+  def off_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
+  @JSName("off")
+  def off_headers(
+    event: headers,
+    cb: js.ThisFunction2[
+      /* this */ this.type, 
+      /* headers */ js.Array[String], 
+      /* request */ IncomingMessage, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
   def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -70,6 +93,40 @@ class Server () extends EventEmitter {
   ): this.type = js.native
   @JSName("on")
   def on_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+  @JSName("once")
+  def once_close(event: close, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+  @JSName("once")
+  def once_connection(
+    event: connection,
+    cb: js.ThisFunction2[/* this */ this.type, /* socket */ WebSocket, /* request */ IncomingMessage, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_error(event: error, cb: js.ThisFunction1[/* this */ this.type, /* error */ Error, Unit]): this.type = js.native
+  @JSName("once")
+  def once_headers(
+    event: headers,
+    cb: js.ThisFunction2[
+      /* this */ this.type, 
+      /* headers */ js.Array[String], 
+      /* request */ IncomingMessage, 
+      Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def once_listening(event: listening, cb: js.ThisFunction0[/* this */ this.type, Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_close(event: close, cb: js.Function0[Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_connection(event: connection, cb: js.Function1[/* client */ WebSocket, Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_error(event: error, cb: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_headers(
+    event: headers,
+    cb: js.Function2[/* headers */ js.Array[String], /* request */ IncomingMessage, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_listening(event: listening, cb: js.Function0[Unit]): this.type = js.native
   def shouldHandle(request: IncomingMessage): Boolean = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tz-format"
-version := "0.0-unknown-dt-20190322Z-7c422f"
+version := "0.0-unknown-dt-20200227Z-7c422f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

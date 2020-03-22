@@ -200,7 +200,15 @@ trait IEnumerable[T] extends Iterable[T] {
   def minBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): T = js.native
   def ofType[TResult](`type`: js.Any): IEnumerable[TResult] = js.native
   def orderBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): IOrderedEnumerable[T] = js.native
+  def orderBy[TKey](
+    keySelector: js.Function1[/* element */ T, TKey],
+    comparer: js.Function2[/* first */ T, /* second */ T, Double]
+  ): IOrderedEnumerable[T] = js.native
   def orderByDescending[TKey](keySelector: js.Function1[/* element */ T, TKey]): IOrderedEnumerable[T] = js.native
+  def orderByDescending[TKey](
+    keySelector: js.Function1[/* element */ T, TKey],
+    comparer: js.Function2[/* first */ T, /* second */ T, Double]
+  ): IOrderedEnumerable[T] = js.native
   def pairwise[TResult](selector: js.Function2[/* prev */ T, /* current */ T, TResult]): IEnumerable[TResult] = js.native
   // :IEnumerable<IGrouping<TKey, T>>
   def partitionBy[TKey](keySelector: js.Function1[/* element */ T, TKey]): IEnumerable[IGrouping[TKey, _]] = js.native

@@ -1,5 +1,7 @@
 package typings.bonjour.mod
 
+import typings.bonjour.bonjourStrings.udp4
+import typings.bonjour.bonjourStrings.udp6
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +14,7 @@ trait BonjourOptions extends js.Object {
   var port: js.UndefOr[Double] = js.undefined
   var reuseAddr: js.UndefOr[Boolean] = js.undefined
   var ttl: js.UndefOr[Double] = js.undefined
+  var `type`: js.UndefOr[udp4 | udp6] = js.undefined
 }
 
 object BonjourOptions {
@@ -23,7 +26,8 @@ object BonjourOptions {
     multicast: js.UndefOr[Boolean] = js.undefined,
     port: Int | Double = null,
     reuseAddr: js.UndefOr[Boolean] = js.undefined,
-    ttl: Int | Double = null
+    ttl: Int | Double = null,
+    `type`: udp4 | udp6 = null
   ): BonjourOptions = {
     val __obj = js.Dynamic.literal()
     if (interface != null) __obj.updateDynamic("interface")(interface.asInstanceOf[js.Any])
@@ -33,6 +37,7 @@ object BonjourOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BonjourOptions]
   }
 }

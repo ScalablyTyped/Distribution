@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gandi-livedns"
-version := "0.0-unknown-dt-20190322Z-d6cc09"
+version := "0.0-unknown-dt-20200226Z-d6cc09"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

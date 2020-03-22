@@ -1,6 +1,7 @@
 package typings.ol.executorMod
 
 import typings.ol.canvasMod.DeclutterGroup
+import typings.ol.canvasMod.Label
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
@@ -14,14 +15,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Executor
-  extends typings.ol.disposableMod.default {
+trait Executor extends js.Object {
   var coordinates: js.Array[Double] = js.native
   var hitDetectionInstructions: js.Array[_] = js.native
   var instructions: js.Array[_] = js.native
   var overlaps: Boolean = js.native
   var pixelRatio: Double = js.native
   var resolution: Double = js.native
+  def createLabel(text: String, textKey: String, fillKey: String, strokeKey: String): Label = js.native
   def execute(
     context: CanvasRenderingContext2D,
     transform: Transform,
@@ -42,13 +43,12 @@ trait Executor
     opt_featureCallback: js.Function0[Unit],
     opt_hitExtent: Extent
   ): T = js.native
-  def getTextImage(text: String, textKey: String, fillKey: String, strokeKey: String): HTMLCanvasElement = js.native
   def renderDeclutter(declutterGroup: DeclutterGroup, feature: FeatureLike, opacity: Double, declutterTree: js.Any): js.Any = js.native
-  def replayImage_(
+  def replayImageOrLabel_(
     context: CanvasRenderingContext2D,
     x: Double,
     y: Double,
-    image: HTMLCanvasElement,
+    imageOrLabel: Label,
     anchorX: Double,
     anchorY: Double,
     declutterGroup: DeclutterGroup,
@@ -64,11 +64,11 @@ trait Executor
     fillInstruction: js.Array[_],
     strokeInstruction: js.Array[_]
   ): Unit = js.native
-  def replayImage_(
+  def replayImageOrLabel_(
     context: CanvasRenderingContext2D,
     x: Double,
     y: Double,
-    image: HTMLImageElement,
+    imageOrLabel: HTMLCanvasElement,
     anchorX: Double,
     anchorY: Double,
     declutterGroup: DeclutterGroup,
@@ -84,11 +84,31 @@ trait Executor
     fillInstruction: js.Array[_],
     strokeInstruction: js.Array[_]
   ): Unit = js.native
-  def replayImage_(
+  def replayImageOrLabel_(
     context: CanvasRenderingContext2D,
     x: Double,
     y: Double,
-    image: HTMLVideoElement,
+    imageOrLabel: HTMLImageElement,
+    anchorX: Double,
+    anchorY: Double,
+    declutterGroup: DeclutterGroup,
+    height: Double,
+    opacity: Double,
+    originX: Double,
+    originY: Double,
+    rotation: Double,
+    scale: Double,
+    snapToPixel: Boolean,
+    width: Double,
+    padding: js.Array[Double],
+    fillInstruction: js.Array[_],
+    strokeInstruction: js.Array[_]
+  ): Unit = js.native
+  def replayImageOrLabel_(
+    context: CanvasRenderingContext2D,
+    x: Double,
+    y: Double,
+    imageOrLabel: HTMLVideoElement,
     anchorX: Double,
     anchorY: Double,
     declutterGroup: DeclutterGroup,

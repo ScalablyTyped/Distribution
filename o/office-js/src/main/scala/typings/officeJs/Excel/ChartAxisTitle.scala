@@ -69,7 +69,6 @@ class ChartAxisTitle () extends ClientObject {
   def set(properties: ChartAxisTitleUpdateData): Unit = js.native
   def set(properties: ChartAxisTitleUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * A string value that represents the formula of chart axis title using A1-style notation.
     *
     * [Api set: ExcelApi 1.8]

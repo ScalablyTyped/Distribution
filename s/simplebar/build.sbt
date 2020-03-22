@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simplebar"
-version := "2.4-dt-20190212Z-b80423"
+version := "5.1-dt-20200320Z-d76da8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

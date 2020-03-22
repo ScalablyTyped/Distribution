@@ -23,6 +23,9 @@ import typings.react.mod.WheelEvent
 import typings.react.reactStrings._empty
 import typings.react.reactStrings.`additions text`
 import typings.react.reactStrings.`inline`
+import typings.react.reactStrings.`lazy`
+import typings.react.reactStrings.`no-referrer`
+import typings.react.reactStrings.`unsafe-url`
 import typings.react.reactStrings.`use-credentials`
 import typings.react.reactStrings.additions
 import typings.react.reactStrings.all
@@ -37,6 +40,7 @@ import typings.react.reactStrings.date
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.descending
 import typings.react.reactStrings.dialog
+import typings.react.reactStrings.eager
 import typings.react.reactStrings.email
 import typings.react.reactStrings.execute
 import typings.react.reactStrings.grammar
@@ -55,6 +59,7 @@ import typings.react.reactStrings.none
 import typings.react.reactStrings.numeric
 import typings.react.reactStrings.off
 import typings.react.reactStrings.on
+import typings.react.reactStrings.origin
 import typings.react.reactStrings.other
 import typings.react.reactStrings.page
 import typings.react.reactStrings.polite
@@ -215,6 +220,7 @@ object IImageProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
+    loading: eager | `lazy` = null,
     maximizeFrame: js.UndefOr[Boolean] = js.undefined,
     onAbort: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLImageElement] => Unit = null,
@@ -300,6 +306,7 @@ object IImageProps {
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
+    referrerPolicy: `no-referrer` | origin | `unsafe-url` = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
@@ -408,6 +415,7 @@ object IImageProps {
     if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (!js.isUndefined(maximizeFrame)) __obj.updateDynamic("maximizeFrame")(maximizeFrame.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
@@ -493,6 +501,7 @@ object IImageProps {
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

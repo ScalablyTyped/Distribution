@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 object libLocaleFrFRMod extends js.Object {
   @js.native
   object default extends js.Object {
-    var Calendar: AnonTimePickerLocale = js.native
-    var DatePicker: AnonTimePickerLocale = js.native
+    var Calendar: AnonLangTimePickerLocale = js.native
+    var DatePicker: AnonLangTimePickerLocale = js.native
     var Empty: AnonDescription = js.native
     var Modal: AnonCancelText = js.native
     var Pagination: js.Any = js.native

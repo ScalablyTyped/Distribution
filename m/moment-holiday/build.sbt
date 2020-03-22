@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moment-holiday"
-version := "1.5-dt-20180214Z-60dbdd"
+version := "1.5-dt-20200225Z-60dbdd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

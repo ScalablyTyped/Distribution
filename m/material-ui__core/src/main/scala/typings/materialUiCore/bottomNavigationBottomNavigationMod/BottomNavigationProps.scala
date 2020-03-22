@@ -1,6 +1,6 @@
 package typings.materialUiCore.bottomNavigationBottomNavigationMod
 
-import typings.materialUiCore.PartialClassNameMapBottomNavigationClassKey
+import typings.materialUiCore.PartialClassNameMapBottom
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -147,7 +147,7 @@ trait BottomNavigationProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: ReactNode = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapBottomNavigationClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapBottom] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[BottomNavigationProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -330,7 +330,7 @@ object BottomNavigationProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapBottomNavigationClassKey = null,
+    classes: PartialClassNameMapBottom = null,
     color: String = null,
     component: ReactType[BottomNavigationProps] = null,
     contentEditable: Booleanish | inherit = null,

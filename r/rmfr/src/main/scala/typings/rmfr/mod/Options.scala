@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var chmod: js.UndefOr[Typeofchmod] = js.undefined
   var chmodSync: js.UndefOr[FnCall] = js.undefined
+  /** @default false */
   var disableGlob: js.UndefOr[Boolean] = js.undefined
   var emfileWait: js.UndefOr[Double] = js.undefined
   var glob: js.UndefOr[(IOptions | `false`) with (js.UndefOr[IOptions | `false` | `true`])] = js.undefined

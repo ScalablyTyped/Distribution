@@ -7,9 +7,37 @@ import scala.scalajs.js.annotation._
 
 trait PageviewParams
   extends /* key */ StringDictionary[js.Any] {
+  /**
+    * Document Host Name
+    *
+    * Specifies the hostname from which content was hosted.
+    *
+    * Max length: 100 Bytes
+    */
   var dh: js.UndefOr[String] = js.undefined
+  /**
+    * Document location URL
+    *
+    * Use this parameter to send the full URL (document location) of the page on which content resides.
+    *
+    * Max length: 2048 Bytes
+    */
   var dl: js.UndefOr[String] = js.undefined
+  /**
+    * Document Path
+    *
+    * The path portion of the page URL. Should begin with '/'.
+    *
+    * Max length: 2048 Bytes
+    */
   var dp: js.UndefOr[String] = js.undefined
+  /**
+    * Document Title
+    *
+    * The title of the page / document.
+    *
+    * Max length: 1500 Bytes
+    */
   var dt: js.UndefOr[String] = js.undefined
 }
 

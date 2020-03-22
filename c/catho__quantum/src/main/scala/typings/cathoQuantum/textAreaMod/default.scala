@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/TextArea", JSImport.Default)
+@JSImport("@catho/quantum/TextArea", JSImport.Default)
 @js.native
-class default[T] ()
-  extends Component[TextAreaProps[T], js.Object, js.Any]
+class default ()
+  extends Component[TextAreaProps, js.Object, js.Any]
 

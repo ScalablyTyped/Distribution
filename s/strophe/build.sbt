@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "strophe"
-version := "v1.2.0-dt-20191126Z-8f6c77"
+version := "v1.2.0-dt-20200225Z-8f6c77"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

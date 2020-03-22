@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dhtmlxscheduler"
-version := "4.3.0-dt-20191014Z-72671b"
+version := "4.3.0-dt-20200225Z-9e9afd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

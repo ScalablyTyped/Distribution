@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/address" : "4.0.0"
+      "@hapi/address" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/address" : "4.0.0"
+      "@hapi/address" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

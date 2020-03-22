@@ -5,9 +5,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonAvg extends js.Object {
+  /**
+    * The average facet value in the result set.
+    */
   val avg: Double
+  /**
+    * The maximum value in the result set.
+    */
   val max: Double
+  /**
+    * The minimum value in the result set.
+    */
   val min: Double
+  /**
+    * The sum of all values in the result set.
+    */
   val sum: Double
 }
 

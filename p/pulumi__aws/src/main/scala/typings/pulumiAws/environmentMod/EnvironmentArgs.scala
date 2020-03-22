@@ -15,7 +15,7 @@ trait EnvironmentArgs extends js.Object {
     * Name of the application that contains the version
     * to be deployed
     */
-  val application: Input[Application] = js.native
+  val application: Input[String | Application] = js.native
   /**
     * Prefix to use for the fully qualified DNS name of
     * the Environment.
@@ -84,7 +84,7 @@ trait EnvironmentArgs extends js.Object {
 object EnvironmentArgs {
   @scala.inline
   def apply(
-    application: Input[Application],
+    application: Input[String | Application],
     cnamePrefix: Input[String] = null,
     description: Input[String] = null,
     name: Input[String] = null,

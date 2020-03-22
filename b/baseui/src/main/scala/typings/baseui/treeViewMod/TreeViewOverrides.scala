@@ -25,6 +25,8 @@ object TreeViewOverrides {
     CollapseIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
     ExpandIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
     IconContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
+    LeafIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
+    LeafIconContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
     Root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
     TreeItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isLeafNode ? :boolean}> */ js.Any = null,
     TreeItemContent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
@@ -35,6 +37,8 @@ object TreeViewOverrides {
     if (CollapseIcon != null) __obj.updateDynamic("CollapseIcon")(CollapseIcon.asInstanceOf[js.Any])
     if (ExpandIcon != null) __obj.updateDynamic("ExpandIcon")(ExpandIcon.asInstanceOf[js.Any])
     if (IconContainer != null) __obj.updateDynamic("IconContainer")(IconContainer.asInstanceOf[js.Any])
+    if (LeafIcon != null) __obj.updateDynamic("LeafIcon")(LeafIcon.asInstanceOf[js.Any])
+    if (LeafIconContainer != null) __obj.updateDynamic("LeafIconContainer")(LeafIconContainer.asInstanceOf[js.Any])
     if (Root != null) __obj.updateDynamic("Root")(Root.asInstanceOf[js.Any])
     if (TreeItem != null) __obj.updateDynamic("TreeItem")(TreeItem.asInstanceOf[js.Any])
     if (TreeItemContent != null) __obj.updateDynamic("TreeItemContent")(TreeItemContent.asInstanceOf[js.Any])

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("epilogue", "UpdateController")
 @js.native
 class UpdateController () extends BaseController {
-  def fetch(req: Request_[ParamsDictionary], res: Response_, context: Context): js.Promise[js.Function0[Unit]] = js.native
-  def write(req: Request_[ParamsDictionary], res: Response_, context: Context): js.Promise[js.Function0[Unit]] = js.native
+  def fetch(req: Request_[ParamsDictionary], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
+  def write(req: Request_[ParamsDictionary], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
 }
 

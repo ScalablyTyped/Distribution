@@ -14,7 +14,7 @@ trait LightSettings extends js.Object {
     */
   var color: String
   /**
-    * Required. Along with `light_on_duration`, defines the blink rate of LED flashes. 
+    * Required. Along with `light_on_duration`, defines the blink rate of LED flashes.
     */
   var lightOffDurationMillis: Double
   /**

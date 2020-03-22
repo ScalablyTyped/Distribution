@@ -11,10 +11,13 @@ import scala.scalajs.js.annotation._
 
 object tensorflowTfjsCoreStrings {
   @js.native
-  sealed trait `1Dot5Dot2` extends js.Object
+  sealed trait `1Dot7Dot0` extends js.Object
   
   @js.native
   sealed trait Engine extends js.Object
+  
+  @js.native
+  sealed trait FromPixels extends js.Object
   
   @js.native
   sealed trait GraphDef extends js.Object
@@ -122,10 +125,19 @@ object tensorflowTfjsCoreStrings {
   sealed trait NWC extends js.Object
   
   @js.native
+  sealed trait NonMaxSuppressionV5 extends js.Object
+  
+  @js.native
   sealed trait POST extends js.Object
   
   @js.native
   sealed trait SAME extends PadType
+  
+  @js.native
+  sealed trait Square extends js.Object
+  
+  @js.native
+  sealed trait SquaredDifference extends js.Object
   
   @js.native
   sealed trait VALID extends PadType
@@ -358,9 +370,11 @@ object tensorflowTfjsCoreStrings {
   sealed trait valid_ extends js.Object
   
   @scala.inline
-  def `1Dot5Dot2`: `1Dot5Dot2` = "1.5.2".asInstanceOf[`1Dot5Dot2`]
+  def `1Dot7Dot0`: `1Dot7Dot0` = "1.7.0".asInstanceOf[`1Dot7Dot0`]
   @scala.inline
   def Engine: Engine = "Engine".asInstanceOf[Engine]
+  @scala.inline
+  def FromPixels: FromPixels = "FromPixels".asInstanceOf[FromPixels]
   @scala.inline
   def GraphDef: GraphDef = "GraphDef".asInstanceOf[GraphDef]
   @scala.inline
@@ -432,9 +446,15 @@ object tensorflowTfjsCoreStrings {
   @scala.inline
   def NWC: NWC = "NWC".asInstanceOf[NWC]
   @scala.inline
+  def NonMaxSuppressionV5: NonMaxSuppressionV5 = "NonMaxSuppressionV5".asInstanceOf[NonMaxSuppressionV5]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def SAME: SAME = "SAME".asInstanceOf[SAME]
+  @scala.inline
+  def Square: Square = "Square".asInstanceOf[Square]
+  @scala.inline
+  def SquaredDifference: SquaredDifference = "SquaredDifference".asInstanceOf[SquaredDifference]
   @scala.inline
   def VALID: VALID = "VALID".asInstanceOf[VALID]
   @scala.inline

@@ -1,5 +1,6 @@
 package typings.evernote
 
+import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,10 @@ trait AnonIncludeExpunged extends js.Object {
   var includeResourceApplicationDataFullMap: js.UndefOr[Boolean] = js.undefined
   var includeResources: js.UndefOr[Boolean] = js.undefined
   var includeSearches: js.UndefOr[Boolean] = js.undefined
+  var includeSharedNotes: js.UndefOr[Boolean] = js.undefined
   var includeTags: js.UndefOr[Boolean] = js.undefined
+  var notebookGuids: js.UndefOr[Set[String]] = js.undefined
+  var omitSharedNotebooks: js.UndefOr[Boolean] = js.undefined
   var requireNoteContentClass: js.UndefOr[String] = js.undefined
 }
 
@@ -34,7 +38,10 @@ object AnonIncludeExpunged {
     includeResourceApplicationDataFullMap: js.UndefOr[Boolean] = js.undefined,
     includeResources: js.UndefOr[Boolean] = js.undefined,
     includeSearches: js.UndefOr[Boolean] = js.undefined,
+    includeSharedNotes: js.UndefOr[Boolean] = js.undefined,
     includeTags: js.UndefOr[Boolean] = js.undefined,
+    notebookGuids: Set[String] = null,
+    omitSharedNotebooks: js.UndefOr[Boolean] = js.undefined,
     requireNoteContentClass: String = null
   ): AnonIncludeExpunged = {
     val __obj = js.Dynamic.literal()
@@ -49,7 +56,10 @@ object AnonIncludeExpunged {
     if (!js.isUndefined(includeResourceApplicationDataFullMap)) __obj.updateDynamic("includeResourceApplicationDataFullMap")(includeResourceApplicationDataFullMap.asInstanceOf[js.Any])
     if (!js.isUndefined(includeResources)) __obj.updateDynamic("includeResources")(includeResources.asInstanceOf[js.Any])
     if (!js.isUndefined(includeSearches)) __obj.updateDynamic("includeSearches")(includeSearches.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeSharedNotes)) __obj.updateDynamic("includeSharedNotes")(includeSharedNotes.asInstanceOf[js.Any])
     if (!js.isUndefined(includeTags)) __obj.updateDynamic("includeTags")(includeTags.asInstanceOf[js.Any])
+    if (notebookGuids != null) __obj.updateDynamic("notebookGuids")(notebookGuids.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitSharedNotebooks)) __obj.updateDynamic("omitSharedNotebooks")(omitSharedNotebooks.asInstanceOf[js.Any])
     if (requireNoteContentClass != null) __obj.updateDynamic("requireNoteContentClass")(requireNoteContentClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonIncludeExpunged]
   }

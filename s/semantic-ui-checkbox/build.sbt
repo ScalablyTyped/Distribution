@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-checkbox"
-version := "2.2-dt-20191126Z-638c7e"
+version := "2.2-dt-20200225Z-638c7e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

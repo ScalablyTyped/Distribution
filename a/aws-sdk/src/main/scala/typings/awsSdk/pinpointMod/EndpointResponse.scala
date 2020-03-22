@@ -15,7 +15,7 @@ trait EndpointResponse extends js.Object {
     */
   var ApplicationId: js.UndefOr[string] = js.native
   /**
-    * One or more custom attributes that describe the endpoint by associating a name with an array of values. For example, the value of a custom attribute named Interests might be: ["science", "music", "travel"]. You can use these attributes as filter criteria when you create segments.
+    * One or more custom attributes that describe the endpoint by associating a name with an array of values. For example, the value of a custom attribute named Interests might be: ["Science", "Music", "Travel"]. You can use these attributes as filter criteria when you create segments.
     */
   var Attributes: js.UndefOr[MapOfListOfString] = js.native
   /**

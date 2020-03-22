@@ -27,6 +27,10 @@ trait ModifyClientVpnEndpointRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.native
   /**
+    * The IDs of one or more security groups to apply to the target network.
+    */
+  var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.native
+  /**
     * The ARN of the server certificate to be used. The server certificate must be provisioned in AWS Certificate Manager (ACM).
     */
   var ServerCertificateArn: js.UndefOr[String] = js.native
@@ -34,6 +38,10 @@ trait ModifyClientVpnEndpointRequest extends js.Object {
     * Indicates whether the VPN is split-tunnel. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
     */
   var SplitTunnel: js.UndefOr[Boolean] = js.native
+  /**
+    * The ID of the VPC to associate with the Client VPN endpoint.
+    */
+  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
   /**
     * The port number to assign to the Client VPN endpoint for TCP and UDP traffic. Valid Values: 443 | 1194  Default Value: 443 
     */
@@ -48,8 +56,10 @@ object ModifyClientVpnEndpointRequest {
     Description: String = null,
     DnsServers: DnsServersOptionsModifyStructure = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    SecurityGroupIds: ClientVpnSecurityGroupIdSet = null,
     ServerCertificateArn: String = null,
     SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined,
+    VpcId: VpcId = null,
     VpnPort: Int | scala.Double = null
   ): ModifyClientVpnEndpointRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
@@ -57,8 +67,10 @@ object ModifyClientVpnEndpointRequest {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (ServerCertificateArn != null) __obj.updateDynamic("ServerCertificateArn")(ServerCertificateArn.asInstanceOf[js.Any])
     if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     if (VpnPort != null) __obj.updateDynamic("VpnPort")(VpnPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClientVpnEndpointRequest]
   }

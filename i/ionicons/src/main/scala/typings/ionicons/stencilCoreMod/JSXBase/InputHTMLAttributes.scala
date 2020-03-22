@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
 
 trait InputHTMLAttributes[T] extends HTMLAttributes[T] {
   var accept: js.UndefOr[String] = js.undefined
+  var allowdirs: js.UndefOr[Boolean] = js.undefined
   var alt: js.UndefOr[String] = js.undefined
   var autoComplete: js.UndefOr[String] = js.undefined
   var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +31,11 @@ trait InputHTMLAttributes[T] extends HTMLAttributes[T] {
   var checked: js.UndefOr[Boolean] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
   var crossorigin: js.UndefOr[String] = js.undefined
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
+  var defaultValue: js.UndefOr[String] = js.undefined
+  var dirName: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
+  var files: js.UndefOr[js.Any] = js.undefined
   var form: js.UndefOr[String] = js.undefined
   var formAction: js.UndefOr[String] = js.undefined
   var formEncType: js.UndefOr[String] = js.undefined
@@ -43,6 +48,7 @@ trait InputHTMLAttributes[T] extends HTMLAttributes[T] {
   var formnovalidate: js.UndefOr[Boolean] = js.undefined
   var formtarget: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[Double | String] = js.undefined
+  var indeterminate: js.UndefOr[Boolean] = js.undefined
   var list: js.UndefOr[String] = js.undefined
   var max: js.UndefOr[Double | String] = js.undefined
   var maxLength: js.UndefOr[Double] = js.undefined
@@ -57,11 +63,18 @@ trait InputHTMLAttributes[T] extends HTMLAttributes[T] {
   var readOnly: js.UndefOr[Boolean] = js.undefined
   var readonly: js.UndefOr[Boolean | String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
+  var selectionDirection: js.UndefOr[String] = js.undefined
+  var selectionEnd: js.UndefOr[Double | String] = js.undefined
+  var selectionStart: js.UndefOr[Double | String] = js.undefined
   var size: js.UndefOr[Double] = js.undefined
   var src: js.UndefOr[String] = js.undefined
   var step: js.UndefOr[Double | String] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+  var valueAsDate: js.UndefOr[js.Any] = js.undefined
+  var valueAsNumber: js.UndefOr[js.Any] = js.undefined
+  var webkitEntries: js.UndefOr[js.Any] = js.undefined
+  var webkitdirectory: js.UndefOr[Boolean] = js.undefined
   var width: js.UndefOr[Double | String] = js.undefined
 }
 
@@ -71,6 +84,7 @@ object InputHTMLAttributes {
     about: String = null,
     accept: String = null,
     accessKey: String = null,
+    allowdirs: js.UndefOr[Boolean] = js.undefined,
     alt: String = null,
     autoCapitalize: String = null,
     autoComplete: String = null,
@@ -93,9 +107,13 @@ object InputHTMLAttributes {
     crossOrigin: String = null,
     crossorigin: String = null,
     datatype: String = null,
+    defaultChecked: js.UndefOr[Boolean] = js.undefined,
+    defaultValue: String = null,
     dir: String = null,
+    dirName: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    files: js.Any = null,
     form: String = null,
     formAction: String = null,
     formEncType: String = null,
@@ -110,6 +128,7 @@ object InputHTMLAttributes {
     height: Double | String = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    indeterminate: js.UndefOr[Boolean] = js.undefined,
     inlist: js.Any = null,
     innerHTML: String = null,
     inputMode: String = null,
@@ -262,6 +281,9 @@ object InputHTMLAttributes {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
+    selectionDirection: String = null,
+    selectionEnd: Double | String = null,
+    selectionStart: Double | String = null,
     size: Int | Double = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
@@ -276,13 +298,18 @@ object InputHTMLAttributes {
     typeof: String = null,
     unselectable: js.UndefOr[Boolean] = js.undefined,
     value: String | js.Array[String] | Double = null,
+    valueAsDate: js.Any = null,
+    valueAsNumber: js.Any = null,
     vocab: String = null,
+    webkitEntries: js.Any = null,
+    webkitdirectory: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null
   ): InputHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowdirs)) __obj.updateDynamic("allowdirs")(allowdirs.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
@@ -305,9 +332,13 @@ object InputHTMLAttributes {
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (crossorigin != null) __obj.updateDynamic("crossorigin")(crossorigin.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    if (dirName != null) __obj.updateDynamic("dirName")(dirName.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
     if (formEncType != null) __obj.updateDynamic("formEncType")(formEncType.asInstanceOf[js.Any])
@@ -322,6 +353,7 @@ object InputHTMLAttributes {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (innerHTML != null) __obj.updateDynamic("innerHTML")(innerHTML.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
@@ -474,6 +506,9 @@ object InputHTMLAttributes {
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (selectionDirection != null) __obj.updateDynamic("selectionDirection")(selectionDirection.asInstanceOf[js.Any])
+    if (selectionEnd != null) __obj.updateDynamic("selectionEnd")(selectionEnd.asInstanceOf[js.Any])
+    if (selectionStart != null) __obj.updateDynamic("selectionStart")(selectionStart.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
@@ -488,7 +523,11 @@ object InputHTMLAttributes {
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueAsDate != null) __obj.updateDynamic("valueAsDate")(valueAsDate.asInstanceOf[js.Any])
+    if (valueAsNumber != null) __obj.updateDynamic("valueAsNumber")(valueAsNumber.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
+    if (webkitEntries != null) __obj.updateDynamic("webkitEntries")(webkitEntries.asInstanceOf[js.Any])
+    if (!js.isUndefined(webkitdirectory)) __obj.updateDynamic("webkitdirectory")(webkitdirectory.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputHTMLAttributes[T]]
   }

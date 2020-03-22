@@ -31,6 +31,7 @@ import scala.scalajs.js.annotation._
   - typings.estree.mod.MetaProperty
   - typings.estree.mod.Identifier
   - typings.estree.mod.AwaitExpression
+  - typings.estree.mod.ImportExpression
 */
 trait Expression extends Node
 
@@ -216,7 +217,7 @@ object Expression {
   }
   @scala.inline
   def ObjectExpression(
-    properties: js.Array[Property],
+    properties: js.Array[Property | SpreadElement],
     `type`: typings.estree.estreeStrings.ObjectExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
@@ -410,6 +411,23 @@ object Expression {
     trailingComments: js.Array[Comment] = null
   ): Expression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Expression]
+  }
+  @scala.inline
+  def ImportExpression(
+    source: Expression,
+    `type`: typings.estree.estreeStrings.ImportExpression,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Expression = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])

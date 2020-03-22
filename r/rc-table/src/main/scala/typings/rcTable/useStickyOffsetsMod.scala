@@ -1,6 +1,8 @@
 package typings.rcTable
 
 import typings.rcTable.interfaceMod.StickyOffsets
+import typings.rcTable.rcTableStrings.ltr
+import typings.rcTable.rcTableStrings.rtl
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +13,9 @@ object useStickyOffsetsMod extends js.Object {
   /**
     * Get sticky column offset width
     */
-  def default(colWidths: js.Array[Double], columCount: Double): StickyOffsets = js.native
+  @JSName("default")
+  def default_ltr(colWidths: js.Array[Double], columCount: Double, direction: ltr): StickyOffsets = js.native
+  @JSName("default")
+  def default_rtl(colWidths: js.Array[Double], columCount: Double, direction: rtl): StickyOffsets = js.native
 }
 

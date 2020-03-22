@@ -1,6 +1,6 @@
 package typings.vscode.mod
 
-import typings.vscode.AnonDark
+import typings.vscode.AnonLight
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -57,7 +57,7 @@ class TreeItem protected () extends js.Object {
   		 * When `falsy`, [Folder Theme Icon](#ThemeIcon.Folder) is assigned, if item is collapsible otherwise [File Theme Icon](#ThemeIcon.File).
   		 * When a [ThemeIcon](#ThemeIcon) is specified, icon is derived from the current file icon theme for the specified theme icon using [resourceUri](#TreeItem.resourceUri) (if provided).
   		 */
-  var iconPath: js.UndefOr[String | Uri | AnonDark | ThemeIcon] = js.native
+  var iconPath: js.UndefOr[String | Uri | AnonLight | ThemeIcon] = js.native
   /**
   		 * Optional id for the tree item that has to be unique across tree. The id is used to preserve the selection and expansion state of the tree item.
   		 *

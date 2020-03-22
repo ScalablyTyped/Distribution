@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "splunk-bunyan-logger"
-version := "0.9-dt-20180705Z-ce9e2c"
+version := "0.9-dt-20180705Z-48dfe3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-e09edc",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20200226Z-746b2c",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-31fe0d",
-  "org.scalablytyped" %%% "form-data" % "3.0.0-cd343e",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-b16f5b",
-  "org.scalablytyped" %%% "splunk-logging" % "0.9-dt-20180705Z-0b379b",
+  "org.scalablytyped" %%% "form-data" % "3.0.0-78808a",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-22ec1f",
+  "org.scalablytyped" %%% "splunk-logging" % "0.9-dt-20180705Z-48fcc5",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20191206Z-a3036c")
 publishArtifact in packageDoc := false

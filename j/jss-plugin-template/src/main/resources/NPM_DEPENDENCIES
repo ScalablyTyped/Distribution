@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-template" : "10.0.4"
+      "jss-plugin-template" : "10.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-template" : "10.0.4"
+      "jss-plugin-template" : "10.1.1"
     }
   ],
   "compile-devDependencies" : [

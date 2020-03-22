@@ -54,15 +54,6 @@ class Deque[T] ()
 @JSImport("tstl/container", "Deque")
 @js.native
 object Deque extends js.Object {
-  /**
-    * @internal
-    */
-  @js.native
-  class ForOfAdaptor[T] protected ()
-    extends typings.tstl.dequeMod.Deque.ForOfAdaptor[T] {
-    def this(matrix: js.Array[js.Array[T]]) = this()
-  }
-  
   val Iterator: Instantiable0[
     ArrayIterator[
       js.Object, 

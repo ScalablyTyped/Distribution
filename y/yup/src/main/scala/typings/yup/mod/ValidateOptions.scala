@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait ValidateOptions extends js.Object {
   /**
-    * Teturn from validation methods on the first error rather than after all validations run. Default - true
+    * Return from validation methods on the first error rather than after all validations run. Default - true
     */
   var abortEarly: js.UndefOr[Boolean] = js.undefined
   /**

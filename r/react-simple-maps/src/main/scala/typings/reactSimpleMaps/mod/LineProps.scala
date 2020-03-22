@@ -391,6 +391,7 @@ trait LineProps extends js.Object {
   var overlineThickness: js.UndefOr[Double | String] = js.undefined
   var paintOrder: js.UndefOr[Double | String] = js.undefined
   var panose1: js.UndefOr[Double | String] = js.undefined
+  var path: js.UndefOr[String] = js.undefined
   var pathLength: js.UndefOr[Double | String] = js.undefined
   var patternContentUnits: js.UndefOr[String] = js.undefined
   var patternTransform: js.UndefOr[Double | String] = js.undefined

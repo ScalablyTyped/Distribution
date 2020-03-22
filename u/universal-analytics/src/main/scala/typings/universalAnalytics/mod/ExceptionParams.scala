@@ -7,7 +7,21 @@ import scala.scalajs.js.annotation._
 
 trait ExceptionParams
   extends /* key */ StringDictionary[js.Any] {
+  /**
+    * Exception Description
+    *
+    * Specifies the description of an exception.
+    *
+    * Max length: 150 Bytes
+    *
+    * Example value: `DatabaseError`
+    */
   var exd: js.UndefOr[String] = js.undefined
+  /**
+    * Is Exception Fatal?
+    *
+    * Specifies whether the exception was fatal.
+    */
   var exf: js.UndefOr[Boolean] = js.undefined
 }
 

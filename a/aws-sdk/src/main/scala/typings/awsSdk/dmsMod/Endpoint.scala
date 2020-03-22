@@ -31,7 +31,7 @@ trait Endpoint extends js.Object {
     */
   var EndpointArn: js.UndefOr[String] = js.native
   /**
-    * The database endpoint identifier. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
+    * The database endpoint identifier. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen or contain two consecutive hyphens.
     */
   var EndpointIdentifier: js.UndefOr[String] = js.native
   /**
@@ -43,7 +43,7 @@ trait Endpoint extends js.Object {
     */
   var EngineDisplayName: js.UndefOr[String] = js.native
   /**
-    * The database engine name. Valid values, depending on the EndpointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
+    * The database engine name. Valid values, depending on the EndpointType, include "mysql", "oracle", "postgres", "mariadb", "aurora", "aurora-postgresql", "redshift", "s3", "db2", "azuredb", "sybase", "dynamodb", "mongodb", "kinesis", "kafka", "elasticsearch", "documentdb", and "sqlserver".
     */
   var EngineName: js.UndefOr[String] = js.native
   /**
@@ -59,7 +59,11 @@ trait Endpoint extends js.Object {
     */
   var ExtraConnectionAttributes: js.UndefOr[String] = js.native
   /**
-    * The settings for the Amazon Kinesis source endpoint. For more information, see the KinesisSettings structure.
+    * The settings for the Apache Kafka target endpoint. For more information, see the KafkaSettings structure.
+    */
+  var KafkaSettings: js.UndefOr[typings.awsSdk.dmsMod.KafkaSettings] = js.native
+  /**
+    * The settings for the Amazon Kinesis target endpoint. For more information, see the KinesisSettings structure.
     */
   var KinesisSettings: js.UndefOr[typings.awsSdk.dmsMod.KinesisSettings] = js.native
   /**
@@ -120,6 +124,7 @@ object Endpoint {
     ExternalId: String = null,
     ExternalTableDefinition: String = null,
     ExtraConnectionAttributes: String = null,
+    KafkaSettings: KafkaSettings = null,
     KinesisSettings: KinesisSettings = null,
     KmsKeyId: String = null,
     MongoDbSettings: MongoDbSettings = null,
@@ -146,6 +151,7 @@ object Endpoint {
     if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
     if (ExternalTableDefinition != null) __obj.updateDynamic("ExternalTableDefinition")(ExternalTableDefinition.asInstanceOf[js.Any])
     if (ExtraConnectionAttributes != null) __obj.updateDynamic("ExtraConnectionAttributes")(ExtraConnectionAttributes.asInstanceOf[js.Any])
+    if (KafkaSettings != null) __obj.updateDynamic("KafkaSettings")(KafkaSettings.asInstanceOf[js.Any])
     if (KinesisSettings != null) __obj.updateDynamic("KinesisSettings")(KinesisSettings.asInstanceOf[js.Any])
     if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     if (MongoDbSettings != null) __obj.updateDynamic("MongoDbSettings")(MongoDbSettings.asInstanceOf[js.Any])

@@ -17,13 +17,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TenantManager extends js.Object {
-  /** 
+  /**
     * @param tenantId The tenant ID whose `TenantAwareAuth` instance is to be returned.
     *
     * @return The `TenantAwareAuth` instance corresponding to this tenant identifier.
     */
   def authForTenant(tenantId: String): TenantAwareAuth = js.native
-  /** 
+  /**
     * Creates a new tenant.
     * When creating new tenants, tenants that use separate billing and quota will require their
     * own project and must be defined as `full_service`.

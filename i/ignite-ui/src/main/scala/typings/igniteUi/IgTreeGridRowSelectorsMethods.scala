@@ -39,6 +39,7 @@ trait IgTreeGridRowSelectorsMethods extends js.Object {
   	 * Gets an array of all the partially checked rows. Every object from the array has the following format { element: , id: , index: }
   	 */
   def partiallyCheckedRows(): js.Array[_]
+  def rsRenderColgroup(): Unit
   /**
   	 * Toggles the check state of a row by index
   	 *
@@ -67,11 +68,12 @@ object IgTreeGridRowSelectorsMethods {
     checkedRows: () => js.Array[_],
     destroy: () => Unit,
     partiallyCheckedRows: () => js.Array[_],
+    rsRenderColgroup: () => Unit,
     toggleCheckState: Double => Unit,
     toggleCheckStateById: js.Object => Unit,
     uncheckedRows: () => js.Array[_]
   ): IgTreeGridRowSelectorsMethods = {
-    val __obj = js.Dynamic.literal(changeCheckState = js.Any.fromFunction2(changeCheckState), changeCheckStateById = js.Any.fromFunction2(changeCheckStateById), changeLocale = js.Any.fromFunction0(changeLocale), checkStateById = js.Any.fromFunction1(checkStateById), checkedRows = js.Any.fromFunction0(checkedRows), destroy = js.Any.fromFunction0(destroy), partiallyCheckedRows = js.Any.fromFunction0(partiallyCheckedRows), toggleCheckState = js.Any.fromFunction1(toggleCheckState), toggleCheckStateById = js.Any.fromFunction1(toggleCheckStateById), uncheckedRows = js.Any.fromFunction0(uncheckedRows))
+    val __obj = js.Dynamic.literal(changeCheckState = js.Any.fromFunction2(changeCheckState), changeCheckStateById = js.Any.fromFunction2(changeCheckStateById), changeLocale = js.Any.fromFunction0(changeLocale), checkStateById = js.Any.fromFunction1(checkStateById), checkedRows = js.Any.fromFunction0(checkedRows), destroy = js.Any.fromFunction0(destroy), partiallyCheckedRows = js.Any.fromFunction0(partiallyCheckedRows), rsRenderColgroup = js.Any.fromFunction0(rsRenderColgroup), toggleCheckState = js.Any.fromFunction1(toggleCheckState), toggleCheckStateById = js.Any.fromFunction1(toggleCheckStateById), uncheckedRows = js.Any.fromFunction0(uncheckedRows))
   
     __obj.asInstanceOf[IgTreeGridRowSelectorsMethods]
   }

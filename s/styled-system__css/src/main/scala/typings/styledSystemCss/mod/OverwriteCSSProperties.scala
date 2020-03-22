@@ -2,6 +2,7 @@ package typings.styledSystemCss.mod
 
 import typings.csstype.mod.BoxShadowProperty
 import typings.csstype.mod.FontWeightProperty
+import typings.csstype.mod.ZIndexProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -34,14 +35,31 @@ trait OverwriteCSSProperties extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/font-weight
     */
   var fontWeight: js.UndefOr[FontWeightProperty | String] = js.undefined
+  /**
+    * The **`z-index`** CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **1**  |  **1**  | **1**  | **12** | **4** |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/z-index
+    */
+  var zIndex: js.UndefOr[ZIndexProperty | String] = js.undefined
 }
 
 object OverwriteCSSProperties {
   @scala.inline
-  def apply(boxShadow: BoxShadowProperty | Double = null, fontWeight: FontWeightProperty | String = null): OverwriteCSSProperties = {
+  def apply(
+    boxShadow: BoxShadowProperty | Double = null,
+    fontWeight: FontWeightProperty | String = null,
+    zIndex: ZIndexProperty | String = null
+  ): OverwriteCSSProperties = {
     val __obj = js.Dynamic.literal()
     if (boxShadow != null) __obj.updateDynamic("boxShadow")(boxShadow.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[OverwriteCSSProperties]
   }
 }

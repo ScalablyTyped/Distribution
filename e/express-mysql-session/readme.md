@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-mysql-session
 
-Typings are for version 1.2
+Typings are for version 2.1
 
 ## Library description:
 A MySQL session store for express.js

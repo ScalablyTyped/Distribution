@@ -90,6 +90,9 @@ object slonikStrings {
   @js.native
   sealed trait timestamptz extends TypeNameIdentifierType
   
+  @js.native
+  sealed trait uuid extends TypeNameIdentifierType
+  
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   @scala.inline
@@ -144,5 +147,7 @@ object slonikStrings {
   def text: text = "text".asInstanceOf[text]
   @scala.inline
   def timestamptz: timestamptz = "timestamptz".asInstanceOf[timestamptz]
+  @scala.inline
+  def uuid: uuid = "uuid".asInstanceOf[uuid]
 }
 

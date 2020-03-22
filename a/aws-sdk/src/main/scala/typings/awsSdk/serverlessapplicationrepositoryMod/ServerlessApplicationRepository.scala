@@ -175,6 +175,19 @@ trait ServerlessApplicationRepository extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutApplicationPolicyResponse, Unit]
   ): Request[PutApplicationPolicyResponse, AWSError] = js.native
   /**
+    * Unshares an application from an AWS Organization.This operation can be called only from the organization's master account.
+    */
+  def unshareApplication(): Request[js.Object, AWSError] = js.native
+  def unshareApplication(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Unshares an application from an AWS Organization.This operation can be called only from the organization's master account.
+    */
+  def unshareApplication(params: UnshareApplicationRequest): Request[js.Object, AWSError] = js.native
+  def unshareApplication(
+    params: UnshareApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Updates the specified application.
     */
   def updateApplication(): Request[UpdateApplicationResponse, AWSError] = js.native

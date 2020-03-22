@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sitemap2"
-version := "1.0-dt-20180214Z-c993d8"
+version := "1.0-dt-20200225Z-c993d8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

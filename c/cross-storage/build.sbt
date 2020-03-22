@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cross-storage"
-version := "v0.8.1-dt-20190322Z-b47e0a"
+version := "v0.8.1-dt-20200226Z-b47e0a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

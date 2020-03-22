@@ -30,7 +30,7 @@ trait MethodResponseArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * The HTTP status code
     */
@@ -42,7 +42,7 @@ object MethodResponseArgs {
   def apply(
     httpMethod: Input[String],
     resourceId: Input[String],
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     statusCode: Input[String],
     responseModels: Input[StringDictionary[Input[String]]] = null,
     responseParameters: Input[StringDictionary[Input[Boolean]]] = null

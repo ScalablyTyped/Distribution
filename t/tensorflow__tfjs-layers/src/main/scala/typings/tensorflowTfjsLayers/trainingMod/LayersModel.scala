@@ -3,7 +3,6 @@ package typings.tensorflowTfjsLayers.trainingMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.mod.Optimizer
-import typings.tensorflowTfjsCore.mod.Tensor_
 import typings.tensorflowTfjsCore.modelTypesMod.ModelPredictConfig
 import typings.tensorflowTfjsCore.tensorMod.Scalar
 import typings.tensorflowTfjsCore.tensorMod.Tensor
@@ -150,12 +149,12 @@ class LayersModel protected () extends Container {
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
   def compile(args: ModelCompileArgs): Unit = js.native
-  def evaluate(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]]): Scalar | js.Array[Scalar] = js.native
-  def evaluate(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
-  def evaluate(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank]): Scalar | js.Array[Scalar] = js.native
-  def evaluate(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
-  def evaluate(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]]): Scalar | js.Array[Scalar] = js.native
-  def evaluate(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: Tensor[Rank], y: js.Array[Tensor[Rank]]): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
   /**
     * Returns the loss value & metrics values for the model in test mode.
     *
@@ -188,8 +187,8 @@ class LayersModel protected () extends Container {
   /**
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
-  def evaluate(x: Tensor_[Rank], y: Tensor_[Rank]): Scalar | js.Array[Scalar] = js.native
-  def evaluate(x: Tensor_[Rank], y: Tensor_[Rank], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: Tensor[Rank], y: Tensor[Rank]): Scalar | js.Array[Scalar] = js.native
+  def evaluate(x: Tensor[Rank], y: Tensor[Rank], args: ModelEvaluateArgs): Scalar | js.Array[Scalar] = js.native
   /**
     * Evaluate model using a dataset object.
     *
@@ -213,8 +212,8 @@ class LayersModel protected () extends Container {
     */
   def evaluateDataset(dataset: Dataset[js.Object]): js.Promise[Scalar | js.Array[Scalar]] = js.native
   def evaluateDataset(dataset: Dataset[js.Object], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = js.native
-  def execute(inputs: js.Array[Tensor[Rank] | Tensor_[Rank]], outputs: String): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def execute(inputs: js.Array[Tensor[Rank] | Tensor_[Rank]], outputs: js.Array[String]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def execute(inputs: js.Array[Tensor[Rank]], outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def execute(inputs: js.Array[Tensor[Rank]], outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Execute internal tensors of the model with input data feed.
     * @param inputs Input data feed. Must match the inputs of the model.
@@ -222,8 +221,6 @@ class LayersModel protected () extends Container {
     *   names of the SymbolicTensors that belong to the graph.
     * @returns Fetched values for `outputs`.
     */
-  def execute(inputs: Tensor_[Rank], outputs: String): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def execute(inputs: Tensor_[Rank], outputs: js.Array[String]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
   /**
     * Single Execute the inference for the input tensors and return activation
     * values for specified output node names without batching.
@@ -243,24 +240,24 @@ class LayersModel protected () extends Container {
     */
   def execute(inputs: Tensor[Rank], outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def execute(inputs: Tensor[Rank], outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
-  def execute(inputs: NamedTensorMap, outputs: String): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def execute(inputs: NamedTensorMap, outputs: js.Array[String]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def fit(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]]): js.Promise[History] = js.native
-  def fit(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  def fit(x: js.Array[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]]): js.Promise[History] = js.native
-  def fit(x: js.Array[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  def fit(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank]): js.Promise[History] = js.native
-  def fit(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank], args: ModelFitArgs): js.Promise[History] = js.native
-  def fit(x: StringDictionary[Tensor_[Rank]], y: js.Array[Tensor_[Rank]]): js.Promise[History] = js.native
-  def fit(x: StringDictionary[Tensor_[Rank]], y: js.Array[Tensor_[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  def fit(x: StringDictionary[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]]): js.Promise[History] = js.native
-  def fit(x: StringDictionary[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  def fit(x: StringDictionary[Tensor_[Rank]], y: Tensor_[Rank]): js.Promise[History] = js.native
-  def fit(x: StringDictionary[Tensor_[Rank]], y: Tensor_[Rank], args: ModelFitArgs): js.Promise[History] = js.native
-  def fit(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]]): js.Promise[History] = js.native
-  def fit(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
-  def fit(x: Tensor_[Rank], y: StringDictionary[Tensor_[Rank]]): js.Promise[History] = js.native
-  def fit(x: Tensor_[Rank], y: StringDictionary[Tensor_[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
+  def execute(inputs: NamedTensorMap, outputs: String): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def execute(inputs: NamedTensorMap, outputs: js.Array[String]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def fit(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
+  def fit(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = js.native
+  def fit(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = js.native
+  def fit(x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
+  def fit(x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = js.native
+  def fit(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = js.native
+  def fit(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[History] = js.native
+  def fit(x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = js.native
+  def fit(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = js.native
   /**
     * Trains the model for a fixed number of epochs (iterations on a
     * dataset).
@@ -296,8 +293,8 @@ class LayersModel protected () extends Container {
   /**
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
-  def fit(x: Tensor_[Rank], y: Tensor_[Rank]): js.Promise[History] = js.native
-  def fit(x: Tensor_[Rank], y: Tensor_[Rank], args: ModelFitArgs): js.Promise[History] = js.native
+  def fit(x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = js.native
+  def fit(x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = js.native
   /**
     * Trains the model using a dataset object.
     *
@@ -357,30 +354,10 @@ class LayersModel protected () extends Container {
     * 4. calculates the metrics
     * 5. returns the values of the losses and metrics.
     */
-  /* protected */ def makeTrainFunction(): js.Function1[/* data */ js.Array[Tensor_[Rank]], js.Array[Scalar]] = js.native
-  /**
-    * Execute the inference for the input tensors.
-    *
-    * @param input The input tensors, when there is single input for the model,
-    * inputs param should be a Tensor. For models with multiple inputs, inputs
-    * params should be in either Tensor[] if the input order is fixed, or
-    * otherwise NamedTensorMap format.
-    * For batch inference execution, the tensors for each input need to be
-    * concatenated together. For example with mobilenet, the required input shape
-    * is [1, 244, 244, 3], which represents the [batch, height, width, channel].
-    * If we are provide a batched data of 100 images, the input tensor should be
-    * in the shape of [100, 244, 244, 3].
-    *
-    * @param config Prediction configuration for specifying the batch size.
-    *
-    * @returns Inference result tensors. The output would be single Tensor if
-    * model has single output node, otherwise Tensor[] or NamedTensorMap[] will
-    * be returned for model with multiple outputs.
-    */
-  def predict(inputs: Tensor[Rank], config: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
+  /* protected */ def makeTrainFunction(): js.Function1[/* data */ js.Array[Tensor[Rank]], js.Array[Scalar]] = js.native
   def predict(inputs: NamedTensorMap, config: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
-  def predict(x: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def predict(x: js.Array[Tensor[Rank] | Tensor_[Rank]], args: ModelPredictConfig): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def predict(x: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def predict(x: js.Array[Tensor[Rank]], args: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Generates output predictions for the input samples.
     *
@@ -409,9 +386,28 @@ class LayersModel protected () extends Container {
   /**
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
-  def predict(x: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def predict(x: Tensor_[Rank], args: ModelPredictConfig): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def predictOnBatch(x: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def predict(x: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  /**
+    * Execute the inference for the input tensors.
+    *
+    * @param input The input tensors, when there is single input for the model,
+    * inputs param should be a Tensor. For models with multiple inputs, inputs
+    * params should be in either Tensor[] if the input order is fixed, or
+    * otherwise NamedTensorMap format.
+    * For batch inference execution, the tensors for each input need to be
+    * concatenated together. For example with mobilenet, the required input shape
+    * is [1, 244, 244, 3], which represents the [batch, height, width, channel].
+    * If we are provide a batched data of 100 images, the input tensor should be
+    * in the shape of [100, 244, 244, 3].
+    *
+    * @param config Prediction configuration for specifying the batch size.
+    *
+    * @returns Inference result tensors. The output would be single Tensor if
+    * model has single output node, otherwise Tensor[] or NamedTensorMap[] will
+    * be returned for model with multiple outputs.
+    */
+  def predict(x: Tensor[Rank], args: ModelPredictConfig): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def predictOnBatch(x: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Returns predictions for a single batch of samples.
     *
@@ -426,7 +422,7 @@ class LayersModel protected () extends Container {
     * @return Tensor(s) of predictions
     */
   /** @doc {heading: 'Models', subheading: 'Classes'} */
-  def predictOnBatch(x: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def predictOnBatch(x: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   def save(handlerOrURL: String): js.Promise[SaveResult] = js.native
   def save(handlerOrURL: String, config: SaveConfig): js.Promise[SaveResult] = js.native
   /**
@@ -523,87 +519,87 @@ class LayersModel protected () extends Container {
     */
   def setUserDefinedMetadata(userDefinedMetadata: js.Object): Unit = js.native
   /* protected */ def standardizeUserData(
-    x: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    y: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]]
+    x: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    y: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]]
   ): js.Promise[
-    js.Tuple3[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]]
+    js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]]
   ] = js.native
   /* protected */ def standardizeUserData(
-    x: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    y: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    sampleWeight: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]]
+    x: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    y: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    sampleWeight: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]]
   ): js.Promise[
-    js.Tuple3[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]]
+    js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]]
   ] = js.native
   /* protected */ def standardizeUserData(
-    x: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    y: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    sampleWeight: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
+    x: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    y: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    sampleWeight: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
     classWeight: ClassWeight | js.Array[ClassWeight] | ClassWeightMap
   ): js.Promise[
-    js.Tuple3[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]]
+    js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]]
   ] = js.native
   /* protected */ def standardizeUserData(
-    x: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    y: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    sampleWeight: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
+    x: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    y: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    sampleWeight: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
     classWeight: ClassWeight | js.Array[ClassWeight] | ClassWeightMap,
     checkBatchAxis: Boolean
   ): js.Promise[
-    js.Tuple3[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]]
+    js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]]
   ] = js.native
   /* protected */ def standardizeUserData(
-    x: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    y: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
-    sampleWeight: Tensor_[Rank] | js.Array[Tensor_[Rank]] | StringDictionary[Tensor_[Rank]],
+    x: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    y: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
+    sampleWeight: Tensor[Rank] | js.Array[Tensor[Rank]] | StringDictionary[Tensor[Rank]],
     classWeight: ClassWeight | js.Array[ClassWeight] | ClassWeightMap,
     checkBatchAxis: Boolean,
     batchSize: Double
   ): js.Promise[
-    js.Tuple3[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]]
+    js.Tuple3[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]]
   ] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
   /* protected */ def standardizeUserDataXY(
-    x: js.Array[Tensor_[Rank]],
-    y: StringDictionary[Tensor_[Rank]],
+    x: js.Array[Tensor[Rank]],
+    y: StringDictionary[Tensor[Rank]],
     checkBatchAxis: Boolean,
     batchSize: Double
-  ): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor_[Rank]], y: js.Array[Tensor_[Rank]]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor_[Rank]], y: js.Array[Tensor_[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
+  ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: js.Array[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
   /* protected */ def standardizeUserDataXY(
-    x: StringDictionary[Tensor_[Rank]],
-    y: js.Array[Tensor_[Rank]],
+    x: StringDictionary[Tensor[Rank]],
+    y: js.Array[Tensor[Rank]],
     checkBatchAxis: Boolean,
     batchSize: Double
-  ): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
+  ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
   /* protected */ def standardizeUserDataXY(
-    x: StringDictionary[Tensor_[Rank]],
-    y: StringDictionary[Tensor_[Rank]],
+    x: StringDictionary[Tensor[Rank]],
+    y: StringDictionary[Tensor[Rank]],
     checkBatchAxis: Boolean,
     batchSize: Double
-  ): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor_[Rank]], y: Tensor_[Rank]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor_[Rank]], y: Tensor_[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor_[Rank]], y: Tensor_[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: StringDictionary[Tensor_[Rank]]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: StringDictionary[Tensor_[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: StringDictionary[Tensor_[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: Tensor_[Rank]): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: Tensor_[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
-  /* protected */ def standardizeUserDataXY(x: Tensor_[Rank], y: Tensor_[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor_[Rank]], js.Array[Tensor_[Rank]]] = js.native
+  ): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: js.Array[Tensor[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank]): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: Boolean): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
+  /* protected */ def standardizeUserDataXY(x: Tensor[Rank], y: Tensor[Rank], checkBatchAxis: Boolean, batchSize: Double): js.Tuple2[js.Array[Tensor[Rank]], js.Array[Tensor[Rank]]] = js.native
   /**
     * Print a text summary of the model's layers.
     *
@@ -646,14 +642,14 @@ class LayersModel protected () extends Container {
     positions: js.Array[Double],
     printFn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
   ): Unit = js.native
-  def trainOnBatch(x: js.Array[Tensor_[Rank]], y: js.Array[Tensor_[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
-  def trainOnBatch(x: js.Array[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
-  def trainOnBatch(x: js.Array[Tensor_[Rank]], y: Tensor_[Rank]): js.Promise[Double | js.Array[Double]] = js.native
-  def trainOnBatch(x: StringDictionary[Tensor_[Rank]], y: js.Array[Tensor_[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
-  def trainOnBatch(x: StringDictionary[Tensor_[Rank]], y: StringDictionary[Tensor_[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
-  def trainOnBatch(x: StringDictionary[Tensor_[Rank]], y: Tensor_[Rank]): js.Promise[Double | js.Array[Double]] = js.native
-  def trainOnBatch(x: Tensor_[Rank], y: js.Array[Tensor_[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
-  def trainOnBatch(x: Tensor_[Rank], y: StringDictionary[Tensor_[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[Double | js.Array[Double]] = js.native
   /**
     * Runs a single gradient update on a single batch of data.
     *
@@ -678,7 +674,7 @@ class LayersModel protected () extends Container {
   /**
     * @doc {heading: 'Models', subheading: 'Classes'}
     */
-  def trainOnBatch(x: Tensor_[Rank], y: Tensor_[Rank]): js.Promise[Double | js.Array[Double]] = js.native
+  def trainOnBatch(x: Tensor[Rank], y: Tensor[Rank]): js.Promise[Double | js.Array[Double]] = js.native
 }
 
 /* static members */

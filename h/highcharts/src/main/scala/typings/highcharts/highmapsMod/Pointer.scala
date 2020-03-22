@@ -14,7 +14,7 @@ class Pointer protected ()
     * Pointer item that can be accessed from the Chart.pointer property.
     *
     * @param chart
-    *        The Chart instance.
+    *        The chart instance.
     *
     * @param options
     *        The root options object. The pointer uses options from the chart

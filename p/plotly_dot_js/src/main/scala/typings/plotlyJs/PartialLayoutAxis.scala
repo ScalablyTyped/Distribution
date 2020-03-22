@@ -14,12 +14,26 @@ import typings.plotlyJs.plotlyJsStrings.`above traces`
 import typings.plotlyJs.plotlyJsStrings.`below traces`
 import typings.plotlyJs.plotlyJsStrings.`category ascending`
 import typings.plotlyJs.plotlyJsStrings.`category descending`
+import typings.plotlyJs.plotlyJsStrings.`max ascending`
+import typings.plotlyJs.plotlyJsStrings.`max descending`
+import typings.plotlyJs.plotlyJsStrings.`mean ascending`
+import typings.plotlyJs.plotlyJsStrings.`mean descending`
+import typings.plotlyJs.plotlyJsStrings.`median ascending`
+import typings.plotlyJs.plotlyJsStrings.`median descending`
+import typings.plotlyJs.plotlyJsStrings.`min ascending`
+import typings.plotlyJs.plotlyJsStrings.`min descending`
+import typings.plotlyJs.plotlyJsStrings.`sum ascending`
+import typings.plotlyJs.plotlyJsStrings.`sum descending`
+import typings.plotlyJs.plotlyJsStrings.`total ascending`
+import typings.plotlyJs.plotlyJsStrings.`total descending`
 import typings.plotlyJs.plotlyJsStrings.all
 import typings.plotlyJs.plotlyJsStrings.allticks
 import typings.plotlyJs.plotlyJsStrings.array
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
 import typings.plotlyJs.plotlyJsStrings.center
+import typings.plotlyJs.plotlyJsStrings.clockwise
+import typings.plotlyJs.plotlyJsStrings.counterclockwise
 import typings.plotlyJs.plotlyJsStrings.domain
 import typings.plotlyJs.plotlyJsStrings.e_
 import typings.plotlyJs.plotlyJsStrings.first
@@ -48,12 +62,15 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<plotly.js.plotly.js.LayoutAxis> */
 trait PartialLayoutAxis extends js.Object {
   var anchor: js.UndefOr[free | AxisName] = js.undefined
+  var angle: js.UndefOr[js.Any] = js.undefined
   var automargin: js.UndefOr[Boolean] = js.undefined
   var autorange: js.UndefOr[`true` | `false` | reversed] = js.undefined
   var autotick: js.UndefOr[Boolean] = js.undefined
   var calendar: js.UndefOr[Calendar] = js.undefined
   var categoryarray: js.UndefOr[js.Array[_]] = js.undefined
-  var categoryorder: js.UndefOr[trace | (`category ascending`) | (`category descending`) | array] = js.undefined
+  var categoryorder: js.UndefOr[
+    trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
+  ] = js.undefined
   var color: js.UndefOr[Color] = js.undefined
   var constrain: js.UndefOr[range | domain] = js.undefined
   var constraintoward: js.UndefOr[left | center | right | top | middle | bottom] = js.undefined
@@ -85,7 +102,7 @@ trait PartialLayoutAxis extends js.Object {
   var showticklabels: js.UndefOr[Boolean] = js.undefined
   var showtickprefix: js.UndefOr[all | first | last | none] = js.undefined
   var showticksuffix: js.UndefOr[all | first | last | none] = js.undefined
-  var side: js.UndefOr[top | bottom | left | right] = js.undefined
+  var side: js.UndefOr[top | bottom | left | right | clockwise | counterclockwise] = js.undefined
   var spikecolor: js.UndefOr[Color] = js.undefined
   var spikedash: js.UndefOr[String] = js.undefined
   var spikemode: js.UndefOr[String] = js.undefined
@@ -103,7 +120,7 @@ trait PartialLayoutAxis extends js.Object {
   var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   var tickvals: js.UndefOr[js.Array[_]] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | PartialDataTitle] = js.undefined
   var titlefont: js.UndefOr[PartialFont] = js.undefined
   var `type`: js.UndefOr[AxisType] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -116,12 +133,13 @@ object PartialLayoutAxis {
   @scala.inline
   def apply(
     anchor: free | AxisName = null,
+    angle: js.Any = null,
     automargin: js.UndefOr[Boolean] = js.undefined,
     autorange: `true` | `false` | reversed = null,
     autotick: js.UndefOr[Boolean] = js.undefined,
     calendar: Calendar = null,
     categoryarray: js.Array[_] = null,
-    categoryorder: trace | (`category ascending`) | (`category descending`) | array = null,
+    categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`) = null,
     color: Color = null,
     constrain: range | domain = null,
     constraintoward: left | center | right | top | middle | bottom = null,
@@ -153,7 +171,7 @@ object PartialLayoutAxis {
     showticklabels: js.UndefOr[Boolean] = js.undefined,
     showtickprefix: all | first | last | none = null,
     showticksuffix: all | first | last | none = null,
-    side: top | bottom | left | right = null,
+    side: top | bottom | left | right | clockwise | counterclockwise = null,
     spikecolor: Color = null,
     spikedash: String = null,
     spikemode: String = null,
@@ -171,7 +189,7 @@ object PartialLayoutAxis {
     ticktext: js.Array[String] = null,
     tickvals: js.Array[_] = null,
     tickwidth: Int | Double = null,
-    title: String = null,
+    title: String | PartialDataTitle = null,
     titlefont: PartialFont = null,
     `type`: AxisType = null,
     visible: js.UndefOr[Boolean] = js.undefined,
@@ -181,6 +199,7 @@ object PartialLayoutAxis {
   ): PartialLayoutAxis = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (!js.isUndefined(automargin)) __obj.updateDynamic("automargin")(automargin.asInstanceOf[js.Any])
     if (autorange != null) __obj.updateDynamic("autorange")(autorange.asInstanceOf[js.Any])
     if (!js.isUndefined(autotick)) __obj.updateDynamic("autotick")(autotick.asInstanceOf[js.Any])

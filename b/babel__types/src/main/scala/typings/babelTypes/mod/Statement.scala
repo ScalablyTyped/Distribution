@@ -19,6 +19,7 @@ import typings.babelTypes.babelTypesStrings.DeclareVariable
 import typings.babelTypes.babelTypesStrings.DoWhileStatement
 import typings.babelTypes.babelTypesStrings.ES
 import typings.babelTypes.babelTypesStrings.EmptyStatement
+import typings.babelTypes.babelTypesStrings.EnumDeclaration
 import typings.babelTypes.babelTypesStrings.ExportAllDeclaration
 import typings.babelTypes.babelTypesStrings.ExportDefaultDeclaration
 import typings.babelTypes.babelTypesStrings.ExportNamedDeclaration
@@ -97,6 +98,7 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.InterfaceDeclaration_
   - typings.babelTypes.mod.OpaqueType_
   - typings.babelTypes.mod.TypeAlias_
+  - typings.babelTypes.mod.EnumDeclaration_
   - typings.babelTypes.mod.TSDeclareFunction_
   - typings.babelTypes.mod.TSInterfaceDeclaration_
   - typings.babelTypes.mod.TSTypeAliasDeclaration_
@@ -815,6 +817,28 @@ object Statement {
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Statement]
+  }
+  @scala.inline
+  def EnumDeclaration_(
+    body: EnumBooleanBody_ | EnumNumberBody_ | EnumStringBody_ | EnumSymbolBody_,
+    id: Identifier_,
+    `type`: EnumDeclaration,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Statement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statement]
   }
   @scala.inline

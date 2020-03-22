@@ -15,7 +15,6 @@ sealed trait PrintMarginUnit extends js.Object
 @js.native
 object PrintMarginUnit extends js.Object {
   /**
-    *
     * Assign the page margins in centimeters.
     *
     */
@@ -23,7 +22,6 @@ object PrintMarginUnit extends js.Object {
   sealed trait centimeters extends PrintMarginUnit
   
   /**
-    *
     * Assign the page margins in inches.
     *
     */
@@ -31,7 +29,6 @@ object PrintMarginUnit extends js.Object {
   sealed trait inches extends PrintMarginUnit
   
   /**
-    *
     * Assign the page margins in points. A point is 1/72 of an inch.
     *
     */

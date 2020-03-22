@@ -30,7 +30,7 @@ object octokitPluginRestEndpointMethodsStrings {
   sealed trait `2fa_disabled` extends js.Object
   
   @js.native
-  sealed trait `3Dot2Dot0` extends js.Object
+  sealed trait `3Dot3Dot1` extends js.Object
   
   @js.native
   sealed trait APPROVE extends js.Object
@@ -208,6 +208,9 @@ object octokitPluginRestEndpointMethodsStrings {
   
   @js.native
   sealed trait `long-running` extends js.Object
+  
+  @js.native
+  sealed trait maintain extends js.Object
   
   @js.native
   sealed trait maintainer extends js.Object
@@ -390,6 +393,9 @@ object octokitPluginRestEndpointMethodsStrings {
   sealed trait tree extends js.Object
   
   @js.native
+  sealed trait triage extends js.Object
+  
+  @js.native
   sealed trait updated extends js.Object
   
   @js.native
@@ -421,7 +427,7 @@ object octokitPluginRestEndpointMethodsStrings {
   @scala.inline
   def `2fa_disabled`: `2fa_disabled` = "2fa_disabled".asInstanceOf[`2fa_disabled`]
   @scala.inline
-  def `3Dot2Dot0`: `3Dot2Dot0` = "3.2.0".asInstanceOf[`3Dot2Dot0`]
+  def `3Dot3Dot1`: `3Dot3Dot1` = "3.3.1".asInstanceOf[`3Dot3Dot1`]
   @scala.inline
   def APPROVE: APPROVE = "APPROVE".asInstanceOf[APPROVE]
   @scala.inline
@@ -540,6 +546,8 @@ object octokitPluginRestEndpointMethodsStrings {
   def laugh: laugh = "laugh".asInstanceOf[laugh]
   @scala.inline
   def `long-running`: `long-running` = "long-running".asInstanceOf[`long-running`]
+  @scala.inline
+  def maintain: maintain = "maintain".asInstanceOf[maintain]
   @scala.inline
   def maintainer: maintainer = "maintainer".asInstanceOf[maintainer]
   @scala.inline
@@ -660,6 +668,8 @@ object octokitPluginRestEndpointMethodsStrings {
   def `too heated`: `too heated` = "too heated".asInstanceOf[`too heated`]
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
+  def triage: triage = "triage".asInstanceOf[triage]
   @scala.inline
   def updated: updated = "updated".asInstanceOf[updated]
   @scala.inline

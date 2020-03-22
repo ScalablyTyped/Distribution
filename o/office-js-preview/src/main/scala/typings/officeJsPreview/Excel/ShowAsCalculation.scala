@@ -18,7 +18,6 @@ sealed trait ShowAsCalculation extends js.Object
 @js.native
 object ShowAsCalculation extends js.Object {
   /**
-    *
     * Difference from the specified Base Field and Base Item.
     *
     */
@@ -26,7 +25,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait differenceFrom extends ShowAsCalculation
   
   /**
-    *
     * Calculates the values as follows:
     ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand Column Total))
     *
@@ -35,7 +33,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait index extends ShowAsCalculation
   
   /**
-    *
     * No calculation is applied.
     *
     */
@@ -43,7 +40,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait none extends ShowAsCalculation
   
   /**
-    *
     * Difference from the specified Base Field and Base Item.
     *
     */
@@ -51,7 +47,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentDifferenceFrom extends ShowAsCalculation
   
   /**
-    *
     * Percent of the specified Base Field and Base Item.
     *
     */
@@ -59,7 +54,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentOf extends ShowAsCalculation
   
   /**
-    *
     * Percent of the column total.
     *
     */
@@ -67,7 +61,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentOfColumnTotal extends ShowAsCalculation
   
   /**
-    *
     * Percent of the grand total.
     *
     */
@@ -75,7 +68,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentOfGrandTotal extends ShowAsCalculation
   
   /**
-    *
     * Percent of the column total for the specified Base Field.
     *
     */
@@ -83,7 +75,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentOfParentColumnTotal extends ShowAsCalculation
   
   /**
-    *
     * Percent of the row total for the specified Base Field.
     *
     */
@@ -91,7 +82,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentOfParentRowTotal extends ShowAsCalculation
   
   /**
-    *
     * Percent of the grand total for the specified Base Field.
     *
     */
@@ -99,7 +89,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentOfParentTotal extends ShowAsCalculation
   
   /**
-    *
     * Percent of the row total.
     *
     */
@@ -107,7 +96,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentOfRowTotal extends ShowAsCalculation
   
   /**
-    *
     * Percent Running Total of the specified Base Field.
     *
     */
@@ -115,7 +103,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait percentRunningTotal extends ShowAsCalculation
   
   /**
-    *
     * Ascending Rank of the specified Base Field.
     *
     */
@@ -123,7 +110,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait rankAscending extends ShowAsCalculation
   
   /**
-    *
     * Descending Rank of the specified Base Field.
     *
     */
@@ -131,7 +117,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait rankDecending extends ShowAsCalculation
   
   /**
-    *
     * Running Total of the specified Base Field.
     *
     */
@@ -139,7 +124,6 @@ object ShowAsCalculation extends js.Object {
   sealed trait runningTotal extends ShowAsCalculation
   
   /**
-    *
     * Calculation is unknown or unsupported.
     *
     */

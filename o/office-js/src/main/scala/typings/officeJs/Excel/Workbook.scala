@@ -236,42 +236,36 @@ class Workbook () extends ClientObject {
     */
   val worksheets: WorksheetCollection = js.native
   /**
-    *
     * Gets the currently active cell from the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getActiveCell(): Range = js.native
   /**
-    *
     * Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is thrown.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getActiveChart(): Chart = js.native
   /**
-    *
     * Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getActiveChartOrNullObject(): Chart = js.native
   /**
-    *
     * Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getActiveSlicer(): Slicer = js.native
   /**
-    *
     * Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getActiveSlicerOrNullObject(): Slicer = js.native
   /**
-    *
     * True if the workbook is being edited by multiple users (co-authoring).
     Please be aware there might be some delay between when the workbook status changes and when the changes are reflected on the result of the method.
     *
@@ -279,14 +273,12 @@ class Workbook () extends ClientObject {
     */
   def getIsActiveCollabSession(): ClientResult[Boolean] = js.native
   /**
-    *
     * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getSelectedRange(): Range = js.native
   /**
-    *
     * Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a RangeAreas object that represents all the selected ranges.
     *
     * [Api set: ExcelApi 1.9]

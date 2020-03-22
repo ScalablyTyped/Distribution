@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cwise-parser"
-version := "1.0-dt-20180301Z-e7754d"
+version := "1.0-dt-20200225Z-e7754d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,6 +5,7 @@ import typings.koaSession.koaSessionStrings.lax
 import typings.koaSession.koaSessionStrings.none
 import typings.koaSession.koaSessionStrings.session
 import typings.koaSession.koaSessionStrings.strict
+import typings.koaSession.mod.ExternalKeys
 import typings.koaSession.mod.Session
 import typings.koaSession.mod.stores
 import typings.std.Date
@@ -20,6 +21,7 @@ trait Partialopts extends js.Object {
   var domain: js.UndefOr[String] = js.undefined
   var encode: js.UndefOr[js.Function1[/* obj */ js.Object, String]] = js.undefined
   var expires: js.UndefOr[Date] = js.undefined
+  var externalKey: js.UndefOr[ExternalKeys] = js.undefined
   var genid: js.UndefOr[js.Function0[String]] = js.undefined
   var httpOnly: js.UndefOr[Boolean] = js.undefined
   var key: js.UndefOr[String] = js.undefined
@@ -46,6 +48,7 @@ object Partialopts {
     domain: String = null,
     encode: /* obj */ js.Object => String = null,
     expires: Date = null,
+    externalKey: ExternalKeys = null,
     genid: () => String = null,
     httpOnly: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
@@ -69,6 +72,7 @@ object Partialopts {
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (encode != null) __obj.updateDynamic("encode")(js.Any.fromFunction1(encode))
     if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (externalKey != null) __obj.updateDynamic("externalKey")(externalKey.asInstanceOf[js.Any])
     if (genid != null) __obj.updateDynamic("genid")(js.Any.fromFunction0(genid))
     if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

@@ -33,7 +33,6 @@ object mapElementListMod extends js.Object {
     def associative(): Source = js.native
   }
   
-  /* static members */
   @js.native
   object MapElementList extends js.Object {
     /**
@@ -132,38 +131,6 @@ object mapElementListMod extends js.Object {
         * @param val The value to set.
         */
       def second(`val`: T): js.Any = js.native
-    }
-    
-    /**
-      * @internal
-      */
-    def _Swap_associative[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
-        Key, 
-        T, 
-        Unique, 
-        Source, 
-        Iterator[Key, T, Unique, Source], 
-        ReverseIterator[Key, T, Unique, Source]
-      ] */](x: MapElementList[Key, T, Unique, Source], y: MapElementList[Key, T, Unique, Source]): Unit = js.native
-    /* static members */
-    @js.native
-    object Iterator extends js.Object {
-      /**
-        * @internal
-        */
-      def create[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
-            Key, 
-            T, 
-            Unique, 
-            Source, 
-            Iterator[Key, T, Unique, Source], 
-            ReverseIterator[Key, T, Unique, Source]
-          ] */](
-        list: MapElementList[Key, T, Unique, Source],
-        prev: Iterator[Key, T, Unique, Source],
-        next: Iterator[Key, T, Unique, Source],
-        `val`: Entry[Key, T]
-      ): Iterator[Key, T, Unique, Source] = js.native
     }
     
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yallist"
-version := "3.0-dt-20180305Z-19eb81"
+version := "3.0-dt-20200225Z-19eb81"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-gamepad"
-version := "0.0-unknown-dt-20190322Z-c409d8"
+version := "0.0-unknown-dt-20200227Z-c409d8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

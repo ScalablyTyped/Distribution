@@ -38,6 +38,14 @@ class ChartAxisTitle () extends ClientObject {
   var text: String = js.native
   /**
     *
+    * Represents the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var textOrientation: Double = js.native
+  /**
+    *
     * A boolean that specifies the visibility of an axis title.
     *
     * [Api set: ExcelApi 1.1]
@@ -69,7 +77,6 @@ class ChartAxisTitle () extends ClientObject {
   def set(properties: ChartAxisTitleUpdateData): Unit = js.native
   def set(properties: ChartAxisTitleUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * A string value that represents the formula of chart axis title using A1-style notation.
     *
     * [Api set: ExcelApi 1.8]

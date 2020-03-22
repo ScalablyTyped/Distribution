@@ -3,9 +3,6 @@ package typings.workboxWebpackPlugin.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import typings.workboxWebpackPlugin.AnonManifest
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.cdn
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.disabled
-import typings.workboxWebpackPlugin.workboxWebpackPluginStrings.local
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,23 +77,23 @@ trait GenerateSWOptions extends CommonOptions {
   	 *
   	 * This is useful if only a subset of your site's URLs should be treated as being part of a Single Page App.
   	 *
-  	 * If both navigateFallbackBlacklist and navigateFallbackWhitelist are configured, the blacklist takes precedent.
+  	 * If both navigateFallbackDenylist and navigateFallbackAllowlist are configured, the blacklist takes precedent.
   	 *
   	 * @default []
-  	 * @example navigateFallbackBlacklist: [/^\/_/, /admin/]
+  	 * @example navigateFallbackAllowlist: [/^\/pages/]
   	 */
-  var navigateFallbackBlacklist: js.UndefOr[js.Array[RegExp]] = js.undefined
+  var navigateFallbackAllowlist: js.UndefOr[js.Array[RegExp]] = js.undefined
   /**
   	 * An optional array of regular expressions that restricts which URLs the configured navigateFallback behavior applies to.
   	 *
   	 * This is useful if only a subset of your site's URLs should be treated as being part of a Single Page App.
   	 *
-  	 * If both navigateFallbackBlacklist and navigateFallbackWhitelist are configured, the blacklist takes precedent.
+  	 * If both navigateFallbackDenylist and navigateFallbackAllowlist are configured, the blacklist takes precedent.
   	 *
   	 * @default []
-  	 * @example navigateFallbackWhitelist: [/^\/pages/]
+  	 * @example navigateFallbackDenylist: [/^\/_/, /admin/]
   	 */
-  var navigateFallbackWhitelist: js.UndefOr[js.Array[RegExp]] = js.undefined
+  var navigateFallbackDenylist: js.UndefOr[js.Array[RegExp]] = js.undefined
   /**
   	 * Controls whether or not to include support for [offline Google Analytics](https://developers.google.com/web/tools/workbox/guides/enable-offline-analytics).
   	 *
@@ -140,15 +137,14 @@ object GenerateSWOptions {
     globStrict: js.UndefOr[Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[RegExp] = null,
     importScripts: js.Array[String] = null,
-    importWorkboxFrom: cdn | local | disabled = null,
     importsDirectory: String = null,
     include: js.Array[String | RegExp] = null,
     manifestTransforms: js.Array[js.Function1[/* originalManifest */ js.Array[ManifestEntry], AnonManifest]] = null,
     maximumFileSizeToCacheInBytes: Int | Double = null,
     modifyUrlPrefix: StringDictionary[String] = null,
     navigateFallback: String = null,
-    navigateFallbackBlacklist: js.Array[RegExp] = null,
-    navigateFallbackWhitelist: js.Array[RegExp] = null,
+    navigateFallbackAllowlist: js.Array[RegExp] = null,
+    navigateFallbackDenylist: js.Array[RegExp] = null,
     offlineGoogleAnalytics: js.UndefOr[Boolean] = js.undefined,
     precacheManifestFilename: String = null,
     runtimeCaching: js.Array[RuntimeCacheRule] = null,
@@ -172,15 +168,14 @@ object GenerateSWOptions {
     if (!js.isUndefined(globStrict)) __obj.updateDynamic("globStrict")(globStrict.asInstanceOf[js.Any])
     if (ignoreUrlParametersMatching != null) __obj.updateDynamic("ignoreUrlParametersMatching")(ignoreUrlParametersMatching.asInstanceOf[js.Any])
     if (importScripts != null) __obj.updateDynamic("importScripts")(importScripts.asInstanceOf[js.Any])
-    if (importWorkboxFrom != null) __obj.updateDynamic("importWorkboxFrom")(importWorkboxFrom.asInstanceOf[js.Any])
     if (importsDirectory != null) __obj.updateDynamic("importsDirectory")(importsDirectory.asInstanceOf[js.Any])
     if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     if (manifestTransforms != null) __obj.updateDynamic("manifestTransforms")(manifestTransforms.asInstanceOf[js.Any])
     if (maximumFileSizeToCacheInBytes != null) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.asInstanceOf[js.Any])
     if (modifyUrlPrefix != null) __obj.updateDynamic("modifyUrlPrefix")(modifyUrlPrefix.asInstanceOf[js.Any])
     if (navigateFallback != null) __obj.updateDynamic("navigateFallback")(navigateFallback.asInstanceOf[js.Any])
-    if (navigateFallbackBlacklist != null) __obj.updateDynamic("navigateFallbackBlacklist")(navigateFallbackBlacklist.asInstanceOf[js.Any])
-    if (navigateFallbackWhitelist != null) __obj.updateDynamic("navigateFallbackWhitelist")(navigateFallbackWhitelist.asInstanceOf[js.Any])
+    if (navigateFallbackAllowlist != null) __obj.updateDynamic("navigateFallbackAllowlist")(navigateFallbackAllowlist.asInstanceOf[js.Any])
+    if (navigateFallbackDenylist != null) __obj.updateDynamic("navigateFallbackDenylist")(navigateFallbackDenylist.asInstanceOf[js.Any])
     if (!js.isUndefined(offlineGoogleAnalytics)) __obj.updateDynamic("offlineGoogleAnalytics")(offlineGoogleAnalytics.asInstanceOf[js.Any])
     if (precacheManifestFilename != null) __obj.updateDynamic("precacheManifestFilename")(precacheManifestFilename.asInstanceOf[js.Any])
     if (runtimeCaching != null) __obj.updateDynamic("runtimeCaching")(runtimeCaching.asInstanceOf[js.Any])

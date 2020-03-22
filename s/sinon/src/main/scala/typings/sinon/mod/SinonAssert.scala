@@ -66,6 +66,13 @@ trait SinonAssert extends js.Object {
     * Passes if spy was called once and only once.
     */
   def calledOnce(spy: SinonSpy): Unit = js.native
+  def calledOnceWithExactly(spyOrSpyCall: SinonSpyCall, args: js.Any*): Unit = js.native
+  /**
+    * Passes if spy was called at exactly once with the provided arguments and no others.
+    * @param spyOrSpyCall
+    * @param args
+    */
+  def calledOnceWithExactly(spyOrSpyCall: SinonSpy, args: js.Any*): Unit = js.native
   /**
     * Passes if spy was called exactly three times.
     */

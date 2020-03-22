@@ -20,6 +20,6 @@ object use extends js.Object {
     *
     * @param className Canonical class name to get a wrapper for.
     */
-  def apply(className: String): Wrapper = js.native
+  def apply[T /* <: Members[T] */](className: String): Wrapper[T] = js.native
 }
 

@@ -12,7 +12,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object tagPickerMod extends js.Object {
   @js.native
-  class TagPickerBase () extends BasePicker[ITag, ITagPickerProps]
+  class TagPickerBase protected () extends BasePicker[ITag, ITagPickerProps] {
+    def this(props: ITagPickerProps) = this()
+  }
   
   val TagPicker: FunctionComponent[ITagPickerProps] = js.native
   /* static members */

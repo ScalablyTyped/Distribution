@@ -18,7 +18,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderOptions & std.Partial<react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionPreset> & {  title ? :string, header ? (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderProps): react.react.ReactNode,   headerShown ? :boolean,   cardShadowEnabled ? :boolean,   cardOverlayEnabled ? :boolean,   cardStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>,   animationEnabled ? :boolean,   animationTypeForReplace ? :'push' | 'pop',   gestureEnabled ? :boolean,   gestureResponseDistance ? :{  vertical ? :number,   horizontal ? :number},   gestureVelocityImpact ? :number,   safeAreaInsets ? :{  top ? :number,   right ? :number,   bottom ? :number,   left ? :number}, onTransitionStart ? (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionCallbackProps): void, onTransitionEnd ? (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionCallbackProps): void} */
+/* Inlined react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderOptions & std.Partial<react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionPreset> & {  title ? :string, header ? (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackHeaderProps): react.react.ReactNode,   headerShown ? :boolean,   cardShadowEnabled ? :boolean,   cardOverlayEnabled ? :boolean, cardOverlay ? (props : {  style  :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>}): react.react.ReactNode,   cardStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>,   animationEnabled ? :boolean,   animationTypeForReplace ? :'push' | 'pop',   gestureEnabled ? :boolean,   gestureResponseDistance ? :{  vertical ? :number,   horizontal ? :number},   gestureVelocityImpact ? :number,   safeAreaInsets ? :{  top ? :number,   right ? :number,   bottom ? :number,   left ? :number}, onTransitionStart ? (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionCallbackProps): void, onTransitionEnd ? (props : react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionCallbackProps): void} */
 trait StackNavigationOptions extends js.Object {
   /**
     * Whether transition animation should be enabled the screen.
@@ -30,6 +30,10 @@ trait StackNavigationOptions extends js.Object {
     * When `pop` is used, the `pop` animation is applied to the screen being replaced.
     */
   var animationTypeForReplace: js.UndefOr[push | pop] = js.undefined
+  /**
+    * Function that returns a React Element to display as a overlay for the card.
+    */
+  var cardOverlay: js.UndefOr[js.Function1[/* props */ AnonStyle, ReactNode]] = js.undefined
   /**
     * Whether to have a semi-transparent dark overlay visible under the card during transitions.
     * Defaults to `true` on Android and `false` on iOS.
@@ -164,7 +168,9 @@ trait StackNavigationOptions extends js.Object {
   /**
     * Style object for the title component.
     */
-  var headerTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var headerTitleStyle: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+  ] = js.undefined
   /**
     * Defaults to `false`. If `true`, the header will not have a background unless you explicitly provide it with `headerBackground`.
     * The header will also float over the screen so that it overlaps the content underneath.
@@ -195,6 +201,7 @@ object StackNavigationOptions {
   def apply(
     animationEnabled: js.UndefOr[Boolean] = js.undefined,
     animationTypeForReplace: push | pop = null,
+    cardOverlay: /* props */ AnonStyle => ReactNode = null,
     cardOverlayEnabled: js.UndefOr[Boolean] = js.undefined,
     cardShadowEnabled: js.UndefOr[Boolean] = js.undefined,
     cardStyle: StyleProp[ViewStyle] = null,
@@ -224,7 +231,7 @@ object StackNavigationOptions {
     headerTitleAlign: left | center = null,
     headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.undefined,
     headerTitleContainerStyle: StyleProp[ViewStyle] = null,
-    headerTitleStyle: StyleProp[TextStyle] = null,
+    headerTitleStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any = null,
     headerTransparent: js.UndefOr[Boolean] = js.undefined,
     headerTruncatedBackTitle: String = null,
     onTransitionEnd: /* props */ TransitionCallbackProps => Unit = null,
@@ -236,6 +243,7 @@ object StackNavigationOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled.asInstanceOf[js.Any])
     if (animationTypeForReplace != null) __obj.updateDynamic("animationTypeForReplace")(animationTypeForReplace.asInstanceOf[js.Any])
+    if (cardOverlay != null) __obj.updateDynamic("cardOverlay")(js.Any.fromFunction1(cardOverlay))
     if (!js.isUndefined(cardOverlayEnabled)) __obj.updateDynamic("cardOverlayEnabled")(cardOverlayEnabled.asInstanceOf[js.Any])
     if (!js.isUndefined(cardShadowEnabled)) __obj.updateDynamic("cardShadowEnabled")(cardShadowEnabled.asInstanceOf[js.Any])
     if (cardStyle != null) __obj.updateDynamic("cardStyle")(cardStyle.asInstanceOf[js.Any])

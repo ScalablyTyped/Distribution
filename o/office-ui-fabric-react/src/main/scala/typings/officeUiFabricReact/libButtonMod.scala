@@ -17,7 +17,7 @@ object libButtonMod extends js.Object {
   @js.native
   class BaseButton protected ()
     extends typings.officeUiFabricReact.buttonMod.BaseButton {
-    def this(props: IBaseButtonProps, rootClassName: String) = this()
+    def this(props: IBaseButtonProps) = this()
   }
   
   @js.native

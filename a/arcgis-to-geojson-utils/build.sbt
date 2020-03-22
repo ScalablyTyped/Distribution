@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "arcgis-to-geojson-utils"
-version := "1.0-dt-20180214Z-f58d38"
+version := "1.0-dt-20200225Z-f58d38"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

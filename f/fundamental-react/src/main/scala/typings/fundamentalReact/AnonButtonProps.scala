@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation._
 trait AnonButtonProps extends js.Object {
   var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Localized text for the `<label>` element. */
   var label: js.UndefOr[String] = js.undefined
   var labelProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Text to display on the `<button>` element. Meant to be the language of the text in the `<input>`/`<textarea>` element. */
   var language: js.UndefOr[String] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
 }

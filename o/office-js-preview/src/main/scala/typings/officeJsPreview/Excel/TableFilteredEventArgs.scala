@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait TableFilteredEventArgs extends js.Object {
   /**
     *
-    * Represents the id of the table in which the filter is applied.
+    * Gets the id of the table in which the filter is applied.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -23,7 +23,7 @@ trait TableFilteredEventArgs extends js.Object {
   var tableId: String
   /**
     *
-    * Represents the type of the event. See Excel.EventType for details.
+    * Gets the type of the event. See Excel.EventType for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -31,7 +31,7 @@ trait TableFilteredEventArgs extends js.Object {
   var `type`: TableFiltered
   /**
     *
-    * Represents the id of the worksheet which contains the table.
+    * Gets the id of the worksheet which contains the table.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

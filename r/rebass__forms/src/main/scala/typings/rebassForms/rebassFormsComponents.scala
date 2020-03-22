@@ -17,6 +17,8 @@ object rebassFormsComponents extends rebassFormsProps {
   @scala.inline
   def Select: ComponentType[SelectProps] = js.constructorOf[typings.rebassForms.mod.Select].asInstanceOf[typings.react.mod.ComponentType[SelectProps]]
   @scala.inline
+  def Slider: ComponentType[SliderProps] = js.constructorOf[typings.rebassForms.mod.Slider].asInstanceOf[typings.react.mod.ComponentType[SliderProps]]
+  @scala.inline
   def Textarea: ComponentType[TextareaProps] = js.constructorOf[typings.rebassForms.mod.Textarea].asInstanceOf[typings.react.mod.ComponentType[TextareaProps]]
 }
 

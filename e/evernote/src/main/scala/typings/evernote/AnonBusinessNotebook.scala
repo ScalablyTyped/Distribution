@@ -1,10 +1,12 @@
 package typings.evernote
 
-import typings.evernote.mod.Evernote.BusinessNotebook
-import typings.evernote.mod.Evernote.NotebookRestrictions
-import typings.evernote.mod.Evernote.Publishing
-import typings.evernote.mod.Evernote.SharedNotebook
-import typings.evernote.mod.Evernote.User
+import typings.evernote.mod.Types.BusinessNotebook
+import typings.evernote.mod.Types.Guid
+import typings.evernote.mod.Types.NotebookRecipientSettings
+import typings.evernote.mod.Types.NotebookRestrictions
+import typings.evernote.mod.Types.Publishing
+import typings.evernote.mod.Types.SharedNotebook
+import typings.evernote.mod.Types.User
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +15,11 @@ trait AnonBusinessNotebook extends js.Object {
   var businessNotebook: js.UndefOr[BusinessNotebook] = js.undefined
   var contact: js.UndefOr[User] = js.undefined
   var defaultNotebook: js.UndefOr[Boolean] = js.undefined
-  var guid: js.UndefOr[String] = js.undefined
+  var guid: js.UndefOr[Guid] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var published: js.UndefOr[Boolean] = js.undefined
   var publishing: js.UndefOr[Publishing] = js.undefined
+  var recipientSettings: js.UndefOr[NotebookRecipientSettings] = js.undefined
   var restrictions: js.UndefOr[NotebookRestrictions] = js.undefined
   var serviceCreated: js.UndefOr[Double] = js.undefined
   var serviceUpdated: js.UndefOr[Double] = js.undefined
@@ -32,10 +35,11 @@ object AnonBusinessNotebook {
     businessNotebook: BusinessNotebook = null,
     contact: User = null,
     defaultNotebook: js.UndefOr[Boolean] = js.undefined,
-    guid: String = null,
+    guid: Guid = null,
     name: String = null,
     published: js.UndefOr[Boolean] = js.undefined,
     publishing: Publishing = null,
+    recipientSettings: NotebookRecipientSettings = null,
     restrictions: NotebookRestrictions = null,
     serviceCreated: Int | Double = null,
     serviceUpdated: Int | Double = null,
@@ -52,6 +56,7 @@ object AnonBusinessNotebook {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (!js.isUndefined(published)) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
     if (publishing != null) __obj.updateDynamic("publishing")(publishing.asInstanceOf[js.Any])
+    if (recipientSettings != null) __obj.updateDynamic("recipientSettings")(recipientSettings.asInstanceOf[js.Any])
     if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
     if (serviceCreated != null) __obj.updateDynamic("serviceCreated")(serviceCreated.asInstanceOf[js.Any])
     if (serviceUpdated != null) __obj.updateDynamic("serviceUpdated")(serviceUpdated.asInstanceOf[js.Any])

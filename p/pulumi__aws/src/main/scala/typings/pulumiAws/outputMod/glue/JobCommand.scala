@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JobCommand extends js.Object {
   /**
-    * The name of the job command. Defaults to `glueetl`
+    * The name of the job command. Defaults to `glueetl`. Use `pythonshell` for Python Shell Job Type, `maxCapacity` needs to be set if `pythonshell` is chosen.
     */
   var name: js.UndefOr[String] = js.native
   /**

@@ -1,22 +1,22 @@
 package typings.hostedGitInfo
 
-import typings.hostedGitInfo.mod.hosts
+import typings.hostedGitInfo.mod.Hosts
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object hostedGitInfoStrings {
   @js.native
-  sealed trait bitbucket extends hosts
+  sealed trait bitbucket extends Hosts
   
   @js.native
-  sealed trait gist extends hosts
+  sealed trait gist extends Hosts
   
   @js.native
-  sealed trait github extends hosts
+  sealed trait github extends Hosts
   
   @js.native
-  sealed trait gitlab extends hosts
+  sealed trait gitlab extends Hosts
   
   @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]

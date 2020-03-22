@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "find-cache-dir"
-version := "2.0-dt-20181231Z-74e2e3"
+version := "3.2-dt-20200226Z-9306f5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

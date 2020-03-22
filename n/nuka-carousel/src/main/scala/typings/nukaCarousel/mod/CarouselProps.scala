@@ -4,6 +4,8 @@ import typings.nukaCarousel.AnonContainerClassName
 import typings.nukaCarousel.nukaCarouselStrings.zoom
 import typings.nukaCarousel.slideActioninCarouselSlid
 import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -105,7 +107,7 @@ trait CarouselProps extends js.Object {
   /**
     * Optional callback to apply styles to the container of a control.
     */
-  var getControlContainerStyle: js.UndefOr[js.Function1[/* key */ CarouselControlContainerProp, CSSProperties]] = js.undefined
+  var getControlsContainerStyle: js.UndefOr[js.Function1[/* key */ CarouselControlContainerProp, CSSProperties]] = js.undefined
   /**
     * Used to hardcode the slider height
     * @example '80%'
@@ -125,6 +127,10 @@ trait CarouselProps extends js.Object {
     * Initial width of the slides (px)
     */
   var initialSlideWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * Ref to pass to carousel element
+    */
+  var innerRef: js.UndefOr[RefObject[HTMLInputElement]] = js.undefined
   /**
     * When enableKeyboardControls is enabled, Configure keyCodes for corresponding slide actions as array of keyCodes
     */
@@ -184,6 +190,11 @@ trait CarouselProps extends js.Object {
     * Function for rendering top right control
     */
   var renderTopRightControls: js.UndefOr[CarouselRenderControl | Null] = js.undefined
+  /**
+    * Supports 'page' and 'remainder' scroll modes.
+    * Defaults to 'remainder'.
+    */
+  var scrollMode: js.UndefOr[CarouselScrollModeProp] = js.undefined
   /**
     * Manually set the index of the slide to be shown
     */
@@ -263,11 +274,12 @@ object CarouselProps {
     enableKeyboardControls: js.UndefOr[Boolean] = js.undefined,
     frameOverflow: String = null,
     framePadding: String = null,
-    getControlContainerStyle: /* key */ CarouselControlContainerProp => CSSProperties = null,
+    getControlsContainerStyle: /* key */ CarouselControlContainerProp => CSSProperties = null,
     height: String = null,
     heightMode: CarouselHeightModeProp = null,
     initialSlideHeight: Int | Double = null,
     initialSlideWidth: Int | Double = null,
+    innerRef: RefObject[HTMLInputElement] = null,
     keyCodeConfig: slideActioninCarouselSlid = null,
     onDragStart: () => Unit = null,
     onResize: () => Unit = null,
@@ -282,6 +294,7 @@ object CarouselProps {
     renderTopCenterControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
     renderTopLeftControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
     renderTopRightControls: /* props */ CarouselSlideRenderControlProps => ReactNode = null,
+    scrollMode: CarouselScrollModeProp = null,
     slideIndex: Int | Double = null,
     slideWidth: CarouselSlideWidthProp = null,
     slidesToScroll: CarouselSlidesToScrollProp = null,
@@ -315,11 +328,12 @@ object CarouselProps {
     if (!js.isUndefined(enableKeyboardControls)) __obj.updateDynamic("enableKeyboardControls")(enableKeyboardControls.asInstanceOf[js.Any])
     if (frameOverflow != null) __obj.updateDynamic("frameOverflow")(frameOverflow.asInstanceOf[js.Any])
     if (framePadding != null) __obj.updateDynamic("framePadding")(framePadding.asInstanceOf[js.Any])
-    if (getControlContainerStyle != null) __obj.updateDynamic("getControlContainerStyle")(js.Any.fromFunction1(getControlContainerStyle))
+    if (getControlsContainerStyle != null) __obj.updateDynamic("getControlsContainerStyle")(js.Any.fromFunction1(getControlsContainerStyle))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (heightMode != null) __obj.updateDynamic("heightMode")(heightMode.asInstanceOf[js.Any])
     if (initialSlideHeight != null) __obj.updateDynamic("initialSlideHeight")(initialSlideHeight.asInstanceOf[js.Any])
     if (initialSlideWidth != null) __obj.updateDynamic("initialSlideWidth")(initialSlideWidth.asInstanceOf[js.Any])
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (keyCodeConfig != null) __obj.updateDynamic("keyCodeConfig")(keyCodeConfig.asInstanceOf[js.Any])
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction0(onResize))
@@ -334,6 +348,7 @@ object CarouselProps {
     if (renderTopCenterControls != null) __obj.updateDynamic("renderTopCenterControls")(js.Any.fromFunction1(renderTopCenterControls))
     if (renderTopLeftControls != null) __obj.updateDynamic("renderTopLeftControls")(js.Any.fromFunction1(renderTopLeftControls))
     if (renderTopRightControls != null) __obj.updateDynamic("renderTopRightControls")(js.Any.fromFunction1(renderTopRightControls))
+    if (scrollMode != null) __obj.updateDynamic("scrollMode")(scrollMode.asInstanceOf[js.Any])
     if (slideIndex != null) __obj.updateDynamic("slideIndex")(slideIndex.asInstanceOf[js.Any])
     if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
     if (slidesToScroll != null) __obj.updateDynamic("slidesToScroll")(slidesToScroll.asInstanceOf[js.Any])

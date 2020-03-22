@@ -144,7 +144,7 @@ trait PartialDialogTitleProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapDialogTitleClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapDialogRoot] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -325,7 +325,7 @@ object PartialDialogTitleProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapDialogTitleClassKey = null,
+    classes: PartialClassNameMapDialogRoot = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

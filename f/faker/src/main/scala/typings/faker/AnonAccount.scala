@@ -16,13 +16,9 @@ trait AnonAccount extends js.Object {
   def amount(min: Double, max: Double, dec: Double, symbol: String): String = js.native
   def bic(): String = js.native
   def bitcoinAddress(): String = js.native
-  def creditCardCVV(): String = js.native
-  def creditCardNumber(): String = js.native
-  def creditCardNumber(provider: String): String = js.native
   def currencyCode(): String = js.native
   def currencyName(): String = js.native
   def currencySymbol(): String = js.native
-  def ethereumAddress(): String = js.native
   def iban(): String = js.native
   def iban(formatted: Boolean): String = js.native
   def mask(): String = js.native

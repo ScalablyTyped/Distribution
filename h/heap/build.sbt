@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "heap"
-version := "0.2.6-dt-20190322Z-6e38e0"
+version := "0.2.6-dt-20200226Z-6e38e0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

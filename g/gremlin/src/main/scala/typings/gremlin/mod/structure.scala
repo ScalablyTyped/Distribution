@@ -1,5 +1,6 @@
 package typings.gremlin.mod
 
+import typings.gremlin.mod.process.GraphTraversal
 import typings.gremlin.mod.process.GraphTraversalSource
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,7 +23,7 @@ object structure extends js.Object {
   
   @js.native
   class Graph () extends js.Object {
-    def traversal(): GraphTraversalSource = js.native
+    def traversal(): GraphTraversalSource[GraphTraversal] = js.native
   }
   
   @js.native

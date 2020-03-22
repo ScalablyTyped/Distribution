@@ -33,7 +33,7 @@ trait ServerOptions extends js.Object {
   /** Specify whether you want to ignore the proxy path of the incoming request. */
   var ignorePath: js.UndefOr[Boolean] = js.undefined
   /** Local interface string to bind for outgoing connections. */
-  var localAddress: js.UndefOr[Boolean] = js.undefined
+  var localAddress: js.UndefOr[String] = js.undefined
   /** Specify whether you want to prepend the target's path to the proxy path. */
   var prependPath: js.UndefOr[Boolean] = js.undefined
   /** specify whether you want to keep letter case of response header key */
@@ -75,7 +75,7 @@ object ServerOptions {
     headers: StringDictionary[String] = null,
     hostRewrite: String = null,
     ignorePath: js.UndefOr[Boolean] = js.undefined,
-    localAddress: js.UndefOr[Boolean] = js.undefined,
+    localAddress: String = null,
     prependPath: js.UndefOr[Boolean] = js.undefined,
     preserveHeaderKeyCase: js.UndefOr[Boolean] = js.undefined,
     protocolRewrite: String = null,
@@ -102,7 +102,7 @@ object ServerOptions {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (hostRewrite != null) __obj.updateDynamic("hostRewrite")(hostRewrite.asInstanceOf[js.Any])
     if (!js.isUndefined(ignorePath)) __obj.updateDynamic("ignorePath")(ignorePath.asInstanceOf[js.Any])
-    if (!js.isUndefined(localAddress)) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
     if (!js.isUndefined(prependPath)) __obj.updateDynamic("prependPath")(prependPath.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveHeaderKeyCase)) __obj.updateDynamic("preserveHeaderKeyCase")(preserveHeaderKeyCase.asInstanceOf[js.Any])
     if (protocolRewrite != null) __obj.updateDynamic("protocolRewrite")(protocolRewrite.asInstanceOf[js.Any])

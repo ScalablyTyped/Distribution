@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Form", "Validations")
+@JSImport("@catho/quantum/Form", "Validations")
 @js.native
 object Validations extends js.Object {
   def CEP(params: AnonValue): String = js.native

@@ -78,7 +78,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IFabricStyleProps extends IFabricProps {
-  var isFocusVisible: Boolean
   @JSName("theme")
   var theme_IFabricStyleProps: ITheme
 }
@@ -86,7 +85,6 @@ trait IFabricStyleProps extends IFabricProps {
 object IFabricStyleProps {
   @scala.inline
   def apply(
-    isFocusVisible: Boolean,
     theme: ITheme,
     about: String = null,
     accessKey: String = null,
@@ -267,7 +265,7 @@ object IFabricStyleProps {
     unselectable: on | off = null,
     vocab: String = null
   ): IFabricStyleProps = {
-    val __obj = js.Dynamic.literal(isFocusVisible = isFocusVisible.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (!js.isUndefined(applyTheme)) __obj.updateDynamic("applyTheme")(applyTheme.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dom-inputevent"
-version := "1.0-dt-20190619Z-f3dcc7"
+version := "1.0-dt-20200225Z-f3dcc7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

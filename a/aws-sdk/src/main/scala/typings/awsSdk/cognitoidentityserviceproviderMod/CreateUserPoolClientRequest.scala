@@ -19,7 +19,7 @@ trait CreateUserPoolClientRequest extends js.Object {
     */
   var AllowedOAuthScopes: js.UndefOr[ScopeListType] = js.native
   /**
-    * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.
+    * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.  Cognito User Pools only supports sending events to Amazon Pinpoint projects in the US East (N. Virginia) us-east-1 Region, regardless of the region in which the user pool resides. 
     */
   var AnalyticsConfiguration: js.UndefOr[AnalyticsConfigurationType] = js.native
   /**

@@ -96,12 +96,10 @@ import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
 import typings.officeUiFabricReact.panelTypesMod.IPanelProps
 import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSelectedProps
 import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps
-import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemWithMenuProps
 import typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps
 import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
 import typings.officeUiFabricReact.personaTypesMod.IPersonaPresenceProps
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
-import typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
 import typings.officeUiFabricReact.pivotItemTypesMod.IPivotItemProps
 import typings.officeUiFabricReact.pivotTypesMod.IPivotProps
 import typings.officeUiFabricReact.plainCardTypesMod.IPlainCardProps
@@ -145,6 +143,7 @@ import typings.officeUiFabricReact.tooltipHostTypesMod.ITooltipHostProps
 import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
 import typings.officeUiFabricReact.verticalDividerTypesMod.IVerticalDividerProps
 import typings.uifabricFoundation.themeProviderMod.IThemeProviderProps
+import typings.uifabricUtilities.AnonRootRef
 import typings.uifabricUtilities.customizerTypesMod.ICustomizerProps
 import typings.uifabricUtilities.delayedRenderMod.IDelayedRenderProps
 import scala.scalajs.js
@@ -512,6 +511,7 @@ trait officeUiFabricReactProps {
   def FacepileButtonProps: IButtonProps.type = typings.officeUiFabricReact.buttonTypesMod.IButtonProps
   type FacepileButtonProps = IButtonProps
   type FloatingPeoplePickerProps = IPeopleFloatingPickerProps
+  type FocusRectsProps = AnonRootRef
   @scala.inline
   def FocusTrapCalloutProps: IFocusTrapCalloutProps.type = typings.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps
   type FocusTrapCalloutProps = IFocusTrapCalloutProps
@@ -767,9 +767,6 @@ trait officeUiFabricReactProps {
   @scala.inline
   def SelectedItemWithContextMenuProps: ISelectedItemWithContextMenuProps.type = typings.officeUiFabricReact.selectedItemWithContextMenuMod.ISelectedItemWithContextMenuProps
   type SelectedItemWithContextMenuProps = ISelectedItemWithContextMenuProps
-  @scala.inline
-  def SelectedItemWithMenuProps: IPickerItemProps.type = typings.officeUiFabricReact.pickerItemTypesMod.IPickerItemProps
-  type SelectedItemWithMenuProps = IPeoplePickerItemWithMenuProps
   @scala.inline
   def SelectedPeopleListProps: ISelectedPeopleProps.type = typings.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleProps
   type SelectedPeopleListProps = ISelectedPeopleProps

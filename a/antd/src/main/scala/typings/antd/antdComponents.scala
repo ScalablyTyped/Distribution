@@ -7,11 +7,13 @@ import typings.antd.formItemInputMod.FormItemInputProps
 import typings.antd.formUtilMod.FormInstance
 import typings.antd.hookModalMod.HookModalProps
 import typings.antd.hookModalMod.HookModalRef
+import typings.antd.radioButtonMod.RadioButtonProps
 import typings.antd.radioInterfaceMod.RadioGroupContextProps
 import typings.antd.selectMod.SelectValue
 import typings.moment.mod.Moment
 import typings.react.mod.ComponentType
 import typings.react.mod.RefAttributes
+import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLSpanElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -186,7 +188,13 @@ object antdComponents extends antdProps {
   @scala.inline
   def List[T]: ComponentType[ListProps[T]] = js.constructorOf[typings.antd.listMod.default[T]].asInstanceOf[typings.react.mod.ComponentType[ListProps[T]]]
   @scala.inline
-  def ListItem: ComponentType[js.Any] = js.constructorOf[typings.antd.transferListItemMod.default].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
+  def ListItem: ComponentType[
+    ListItemProps[/* props */ typings.antd.transferListItemMod.ListItemProps, Element]
+  ] = typings.antd.transferListItemMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  ListItemProps[
+    /* props */ typings.antd.transferListItemMod.ListItemProps, 
+    typings.react.mod._Global_.JSX.Element
+  ]]]
   @scala.inline
   def LocaleProvider: ComponentType[LocaleProviderProps] = js.constructorOf[typings.antd.localeProviderMod.default].asInstanceOf[typings.react.mod.ComponentType[LocaleProviderProps]]
   @scala.inline
@@ -232,7 +240,8 @@ object antdComponents extends antdProps {
   @scala.inline
   def Radio: ComponentType[RadioProps] = js.constructorOf[typings.antd.radioMod.default].asInstanceOf[typings.react.mod.ComponentType[RadioProps]]
   @scala.inline
-  def RadioButton: ComponentType[RadioButtonProps] = typings.antd.mod.Radio.asInstanceOf[js.Dynamic].selectDynamic("Button").asInstanceOf[typings.react.mod.ComponentType[RadioButtonProps]]
+  def RadioButton: ComponentType[RadioButtonProps with RefAttributes[js.Any]] = typings.antd.radioButtonMod.default.asInstanceOf[typings.react.mod.ComponentType[
+  typings.antd.radioButtonMod.RadioButtonProps with typings.react.mod.RefAttributes[js.Any]]]
   @scala.inline
   def RadioGroupContextProvider: ComponentType[RadioGroupContextProviderProps[RadioGroupContextProps | Null]] = typings.antd.radioContextMod.RadioGroupContextProvider.asInstanceOf[typings.react.mod.ComponentType[
   RadioGroupContextProviderProps[typings.antd.radioInterfaceMod.RadioGroupContextProps | scala.Null]]]

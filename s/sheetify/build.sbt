@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sheetify"
-version := "6.0-dt-20180214Z-6a7bdb"
+version := "6.0-dt-20200225Z-6a7bdb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,6 +16,12 @@ trait CreateVirtualServiceInput extends js.Object {
     */
   var meshName: ResourceName = js.native
   /**
+    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then
+    the account that you specify must share the mesh with your account before you can create 
+    the resource in the service mesh. For more information about mesh sharing, see Working with Shared Meshes.
+    */
+  var meshOwner: js.UndefOr[AccountId] = js.native
+  /**
     * The virtual service specification to apply.
     */
   var spec: VirtualServiceSpec = js.native
@@ -39,10 +45,12 @@ object CreateVirtualServiceInput {
     spec: VirtualServiceSpec,
     virtualServiceName: ServiceName,
     clientToken: String = null,
+    meshOwner: AccountId = null,
     tags: TagList = null
   ): CreateVirtualServiceInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], virtualServiceName = virtualServiceName.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
+    if (meshOwner != null) __obj.updateDynamic("meshOwner")(meshOwner.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVirtualServiceInput]
   }

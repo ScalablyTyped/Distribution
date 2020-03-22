@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-earth"
-version := "0.0-unknown-dt-20190322Z-07ce0a"
+version := "0.0-unknown-dt-20200226Z-07ce0a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

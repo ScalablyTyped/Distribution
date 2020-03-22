@@ -17,6 +17,7 @@ trait Options extends js.Object {
   var anchorYUnits: js.UndefOr[IconAnchorUnits] = js.undefined
   var color: js.UndefOr[Color | String] = js.undefined
   var crossOrigin: js.UndefOr[String] = js.undefined
+  var displacement: js.UndefOr[js.Array[Double]] = js.undefined
   var img: js.UndefOr[HTMLImageElement | HTMLCanvasElement] = js.undefined
   var imgSize: js.UndefOr[Size] = js.undefined
   var offset: js.UndefOr[js.Array[Double]] = js.undefined
@@ -38,6 +39,7 @@ object Options {
     anchorYUnits: IconAnchorUnits = null,
     color: Color | String = null,
     crossOrigin: String = null,
+    displacement: js.Array[Double] = null,
     img: HTMLImageElement | HTMLCanvasElement = null,
     imgSize: Size = null,
     offset: js.Array[Double] = null,
@@ -56,6 +58,7 @@ object Options {
     if (anchorYUnits != null) __obj.updateDynamic("anchorYUnits")(anchorYUnits.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (displacement != null) __obj.updateDynamic("displacement")(displacement.asInstanceOf[js.Any])
     if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
     if (imgSize != null) __obj.updateDynamic("imgSize")(imgSize.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])

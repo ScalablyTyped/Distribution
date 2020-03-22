@@ -12,7 +12,7 @@ object localeProviderEsESMod extends js.Object {
     var Calendar: AnonTimePickerLocale = js.native
     var DatePicker: AnonTimePickerLocale = js.native
     var Empty: AnonDescription = js.native
-    var Icon: AnonIconString = js.native
+    var Icon: AnonIcon = js.native
     var Modal: AnonCancelText = js.native
     var PageHeader: AnonBack = js.native
     var Pagination: js.Any = js.native

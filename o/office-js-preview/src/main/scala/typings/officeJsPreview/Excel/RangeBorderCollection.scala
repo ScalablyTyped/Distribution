@@ -47,7 +47,6 @@ class RangeBorderCollection () extends ClientObject {
     */
   var tintAndShade: Double = js.native
   /**
-    *
     * Gets a border object using its name.
     *
     * [Api set: ExcelApi 1.1]
@@ -56,7 +55,6 @@ class RangeBorderCollection () extends ClientObject {
     */
   def getItem(index: BorderIndex): RangeBorder = js.native
   /**
-    *
     * Gets a border object using its index.
     *
     * [Api set: ExcelApi 1.1]
@@ -75,7 +73,6 @@ class RangeBorderCollection () extends ClientObject {
   @JSName("getItem")
   def getItem_EdgeRight(index: EdgeRight): RangeBorder = js.native
   /**
-    *
     * Gets a border object using its name.
     *
     * [Api set: ExcelApi 1.1]

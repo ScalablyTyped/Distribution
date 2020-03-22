@@ -1,5 +1,6 @@
 package typings.lucene.mod
 
+import typings.lucene.AnonEnd
 import typings.lucene.luceneStrings.LessthansignimplicitGreaterthansign
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +15,7 @@ trait Node extends js.Object {
   var regex: Boolean
   var similarity: Null
   var term: String
-  var termLocation: TermLocation
+  var termLocation: AnonEnd
 }
 
 object Node {
@@ -26,7 +27,7 @@ object Node {
     regex: Boolean,
     similarity: Null,
     term: String,
-    termLocation: TermLocation,
+    termLocation: AnonEnd,
     boost: Int | Double = null,
     prefix: String = null
   ): Node = {

@@ -85,7 +85,6 @@ class PivotField () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: PivotField): Unit = js.native
   /**
-    *
     * Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.
     *
     * [Api set: ExcelApi 1.8]
@@ -94,7 +93,6 @@ class PivotField () extends ClientObject {
     */
   def sortByLabels(sortBy: SortBy): Unit = js.native
   /**
-    *
     * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
     there are multiple values from the same DataPivotHierarchy.
     *
@@ -110,7 +108,6 @@ class PivotField () extends ClientObject {
   def sortByValues(sortBy: SortBy, valuesHierarchy: DataPivotHierarchy): Unit = js.native
   def sortByValues(sortBy: SortBy, valuesHierarchy: DataPivotHierarchy, pivotItemScope: js.Array[PivotItem | String]): Unit = js.native
   /**
-    *
     * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
     there are multiple values from the same DataPivotHierarchy.
     *

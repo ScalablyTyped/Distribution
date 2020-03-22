@@ -18,8 +18,8 @@ import typings.octokitPluginRestEndpointMethods.AnonCreate
 import typings.octokitPluginRestEndpointMethods.AnonCreateBlob
 import typings.octokitPluginRestEndpointMethods.AnonCreateForCommitComment
 import typings.octokitPluginRestEndpointMethods.AnonGet
-import typings.octokitPluginRestEndpointMethods.AnonGetAnon30
-import typings.octokitPluginRestEndpointMethods.AnonGetConductCode
+import typings.octokitPluginRestEndpointMethods.AnonGetAllCodesOfConduct
+import typings.octokitPluginRestEndpointMethods.AnonGetAnon29
 import typings.octokitPluginRestEndpointMethods.AnonGetForRepo
 import typings.octokitPluginRestEndpointMethods.AnonGetTemplate
 import typings.octokitPluginRestEndpointMethods.AnonRender
@@ -32,7 +32,7 @@ trait RestEndpointMethods extends js.Object {
   var activity: AnonCheckStarringRepo
   var apps: AnonAddRepoToInstallation
   var checks: AnonCreate
-  var codesOfConduct: AnonGetConductCode
+  var codesOfConduct: AnonGetAllCodesOfConduct
   var emojis: AnonGet
   var gists: AnonCheckIsStarred
   var git: AnonCreateBlob
@@ -41,12 +41,12 @@ trait RestEndpointMethods extends js.Object {
   var issues: AnonAddAssignees
   var licenses: AnonGetForRepo
   var markdown: AnonRender
-  var meta: AnonGetAnon30
+  var meta: AnonGetAnon29
   var migrations: AnonCancelImport
   var orgs: AnonAddOrUpdateMembership
   var projects: AnonAddCollaborator
   var pulls: AnonCheckIfMerged
-  var rateLimit: AnonGetAnon30
+  var rateLimit: AnonGetAnon29
   var reactions: AnonCreateForCommitComment
   var repos: AnonAcceptInvitation
   var search: AnonCode
@@ -61,7 +61,7 @@ object RestEndpointMethods {
     activity: AnonCheckStarringRepo,
     apps: AnonAddRepoToInstallation,
     checks: AnonCreate,
-    codesOfConduct: AnonGetConductCode,
+    codesOfConduct: AnonGetAllCodesOfConduct,
     emojis: AnonGet,
     gists: AnonCheckIsStarred,
     git: AnonCreateBlob,
@@ -70,12 +70,12 @@ object RestEndpointMethods {
     issues: AnonAddAssignees,
     licenses: AnonGetForRepo,
     markdown: AnonRender,
-    meta: AnonGetAnon30,
+    meta: AnonGetAnon29,
     migrations: AnonCancelImport,
     orgs: AnonAddOrUpdateMembership,
     projects: AnonAddCollaborator,
     pulls: AnonCheckIfMerged,
-    rateLimit: AnonGetAnon30,
+    rateLimit: AnonGetAnon29,
     reactions: AnonCreateForCommitComment,
     repos: AnonAcceptInvitation,
     search: AnonCode,

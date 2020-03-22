@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-qrscanner"
-version := "v1.0.1-dt-20190322Z-32ff07"
+version := "v1.0.1-dt-20200226Z-32ff07"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -14,6 +14,11 @@ trait WhenOptions extends js.Object {
     */
   var is: js.UndefOr[SchemaLike] = js.undefined
   /**
+    * the negative version of `is` (`then` and `otherwise` have reverse
+    * roles).
+    */
+  var not: js.UndefOr[SchemaLike] = js.undefined
+  /**
     * the alternative schema type if the condition is false. Required if then or switch are missing.
     */
   var otherwise: js.UndefOr[SchemaLike] = js.undefined
@@ -32,6 +37,7 @@ object WhenOptions {
   def apply(
     break: js.UndefOr[Boolean] = js.undefined,
     is: SchemaLike = null,
+    not: SchemaLike = null,
     otherwise: SchemaLike = null,
     switch: js.Array[SwitchCases | SwitchDefault] = null,
     `then`: SchemaLike = null
@@ -39,6 +45,7 @@ object WhenOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(break)) __obj.updateDynamic("break")(break.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
     if (otherwise != null) __obj.updateDynamic("otherwise")(otherwise.asInstanceOf[js.Any])
     if (switch != null) __obj.updateDynamic("switch")(switch.asInstanceOf[js.Any])
     if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])

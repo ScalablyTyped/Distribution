@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "on-change" : "1.6.4"
+      "on-change" : "1.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "on-change" : "1.6.4"
+      "on-change" : "1.8.1"
     }
   ],
   "compile-devDependencies" : [

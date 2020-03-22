@@ -1,5 +1,6 @@
 package typings.pulumiAws.eventSourceMappingMod
 
+import typings.pulumiAws.outputMod.lambda.EventSourceMappingDestinationConfig
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -25,6 +26,8 @@ class EventSourceMapping protected () extends CustomResource {
     * The largest number of records that Lambda will retrieve from your event source at the time of invocation. Defaults to `100` for DynamoDB and Kinesis, `10` for SQS.
     */
   val batchSize: Output_[js.UndefOr[Double]] = js.native
+  val bisectBatchOnFunctionError: Output_[js.UndefOr[Boolean]] = js.native
+  val destinationConfig: Output_[js.UndefOr[EventSourceMappingDestinationConfig]] = js.native
   /**
     * Determines if the mapping will be enabled on creation. Defaults to `true`.
     */
@@ -53,12 +56,20 @@ class EventSourceMapping protected () extends CustomResource {
     * The maximum amount of time to gather records before invoking the function, in seconds.  Records will continue to buffer until either `maximumBatchingWindowInSeconds` expires or `batchSize` has been met. Defaults to as soon as records are available in the stream. If the batch it reads from the stream only has one record in it, Lambda only sends one record to the function.
     */
   val maximumBatchingWindowInSeconds: Output_[js.UndefOr[Double]] = js.native
+  val maximumRecordAgeInSeconds: Output_[Double] = js.native
+  val maximumRetryAttempts: Output_[Double] = js.native
+  val parallelizationFactor: Output_[Double] = js.native
   /**
     * The position in the stream where AWS Lambda should start reading. Must be one of `AT_TIMESTAMP` (Kinesis only), `LATEST` or `TRIM_HORIZON` if getting events from Kinesis or DynamoDB. Must not be provided if getting events from SQS. More information about these positions can be found in the [AWS DynamoDB Streams API Reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html) and [AWS Kinesis API Reference](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html#Kinesis-GetShardIterator-request-ShardIteratorType).
     */
   val startingPosition: Output_[js.UndefOr[String]] = js.native
   /**
     * A timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of the data record which to start reading when using `startingPosition` set to `AT_TIMESTAMP`. If a record with this exact timestamp does not exist, the next later record is chosen. If the timestamp is older than the current trim horizon, the oldest available record is chosen.
+    * * `parallelizationFactor`: - (Optional) The number of batches to process from each shard concurrently. Only available for stream sources (DynamoDB and Kinesis). Minimum and default of 1, maximum of 10.
+    * * `maximumRetryAttempts`: - (Optional) The maximum number of times to retry when the function returns an error. Only available for stream sources (DynamoDB and Kinesis). Minimum of 0, maximum and default of 10000.
+    * * `maximumRecordAgeInSeconds`: - (Optional) The maximum age of a record that Lambda sends to a function for processing. Only available for stream sources (DynamoDB and Kinesis). Minimum of 60, maximum and default of 604800.
+    * * `bisectBatchOnFunctionError`: - (Optional) If the function returns an error, split the batch in two and retry. Only available for stream sources (DynamoDB and Kinesis). Defaults to `false`.
+    * * `destinationConfig`: - (Optional) An Amazon SQS queue or Amazon SNS topic destination for failed records. Only available for stream sources (DynamoDB and Kinesis). Detailed below.
     */
   val startingPositionTimestamp: Output_[js.UndefOr[String]] = js.native
   /**

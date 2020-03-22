@@ -4,7 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Audio statistics of the remote stream. */
+/**
+  * Audio statistics of the remote stream.
+  *
+  * If {@link getRemoteAudioStats} is called successfully, the {@link RemoteAudioStatsMap} interface provides the UID and {@link RemoteAudioStats} of each remote user.
+  */
 trait RemoteAudioStats extends js.Object {
   /**
     * Decoding type of the received audio.

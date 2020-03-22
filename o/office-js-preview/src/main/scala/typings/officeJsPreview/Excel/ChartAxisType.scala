@@ -15,7 +15,6 @@ sealed trait ChartAxisType extends js.Object
 @js.native
 object ChartAxisType extends js.Object {
   /**
-    *
     * Axis displays categories.
     *
     */
@@ -26,7 +25,6 @@ object ChartAxisType extends js.Object {
   sealed trait invalid extends ChartAxisType
   
   /**
-    *
     * Axis displays data series.
     *
     */
@@ -34,7 +32,6 @@ object ChartAxisType extends js.Object {
   sealed trait series extends ChartAxisType
   
   /**
-    *
     * Axis displays values.
     *
     */

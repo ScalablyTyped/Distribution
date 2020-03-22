@@ -1,7 +1,7 @@
 
 # Scala.js typings for ol
 
-Typings are for version 6.1
+Typings are for version 6.2
 
 ## Library description:
 OpenLayers mapping library

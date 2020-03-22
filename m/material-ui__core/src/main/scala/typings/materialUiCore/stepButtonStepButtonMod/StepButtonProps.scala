@@ -1,6 +1,6 @@
 package typings.materialUiCore.stepButtonStepButtonMod
 
-import typings.materialUiCore.PartialClassNameMapStepButtonClasskey
+import typings.materialUiCore.PartialClassNameMapStepBu
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -158,7 +158,7 @@ trait StepButtonProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepButtonClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapStepBu] = js.native
   var color: js.UndefOr[String] = js.native
   var completed: js.UndefOr[Boolean] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
@@ -374,7 +374,7 @@ object StepButtonProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepButtonClasskey = null,
+    classes: PartialClassNameMapStepBu = null,
     color: String = null,
     completed: js.UndefOr[Boolean] = js.undefined,
     component: ReactType[ButtonBaseProps] = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chess_dot_js"
-version := "0.10-dt-20180902Z-d72f48"
+version := "0.10-dt-20200313Z-9d4dc7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

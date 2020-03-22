@@ -13,7 +13,7 @@ object mod extends js.Object {
     def clear(): Unit = js.native
     def debug(bool: Boolean): Unit = js.native
     def del(key: K): Unit = js.native
-    def get(key: K): V = js.native
+    def get(key: K): V | Null = js.native
     def hits(): Double = js.native
     def keys(): js.Array[K] = js.native
     def memsize(): Double = js.native

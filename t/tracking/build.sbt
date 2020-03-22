@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tracking"
-version := "v1.1.3-dt-20190322Z-ae920e"
+version := "v1.1.3-dt-20200225Z-ae920e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

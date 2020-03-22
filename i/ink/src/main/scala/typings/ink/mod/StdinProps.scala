@@ -14,7 +14,7 @@ trait StdinProps extends js.Object {
   	 * Ink exposes this function via own `<StdinContext>` to be able to handle Ctrl+C, that's why you should use Ink's `setRawMode` instead of `process.stdin.setRawMode`.
   	 * If the `stdin` stream passed to Ink does not support setRawMode, this function does nothing.
   	 */
-  val setRawMode: js.Function1[/* mode */ Boolean, Unit]
+  val setRawMode: js.Function1[/* mode */ Boolean, this.type]
   /**
   	 * Stdin stream passed to `render()` in `options.stdin` or `process.stdin` by default. Useful if your app needs to handle user input.
   	 */
@@ -23,7 +23,7 @@ trait StdinProps extends js.Object {
 
 object StdinProps {
   @scala.inline
-  def apply(isRawModeSupported: Boolean, setRawMode: /* mode */ Boolean => Unit, stdin: ReadStream): StdinProps = {
+  def apply(isRawModeSupported: Boolean, setRawMode: /* mode */ Boolean => StdinProps, stdin: ReadStream): StdinProps = {
     val __obj = js.Dynamic.literal(isRawModeSupported = isRawModeSupported.asInstanceOf[js.Any], setRawMode = js.Any.fromFunction1(setRawMode), stdin = stdin.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[StdinProps]

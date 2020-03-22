@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-server-errors" : "2.3.4"
+      "apollo-server-errors" : "2.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-server-errors" : "2.3.4"
+      "apollo-server-errors" : "2.4.0"
     }
   ],
   "compile-devDependencies" : [

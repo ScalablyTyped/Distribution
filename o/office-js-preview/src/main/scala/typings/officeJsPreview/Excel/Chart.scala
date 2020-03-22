@@ -225,21 +225,18 @@ class Chart () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Activates the chart in the Excel UI.
     *
     * [Api set: ExcelApi 1.9]
     */
   def activate(): Unit = js.native
   /**
-    *
     * Deletes the chart object.
     *
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
     The aspect ratio is preserved as part of the resizing.
     *
@@ -285,7 +282,6 @@ class Chart () extends ClientObject {
   def set(properties: ChartUpdateData): Unit = js.native
   def set(properties: ChartUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Resets the source data for the chart.
     *
     * [Api set: ExcelApi 1.1]
@@ -305,7 +301,6 @@ class Chart () extends ClientObject {
   def setPosition(startCell: String, endCell: String): Unit = js.native
   def setPosition(startCell: String, endCell: Range): Unit = js.native
   /**
-    *
     * Positions the chart relative to cells on the worksheet.
     *
     * [Api set: ExcelApi 1.1]

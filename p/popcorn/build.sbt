@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "popcorn"
-version := "1.3.0-dt-20190322Z-d71b09"
+version := "1.3.0-dt-20200226Z-d71b09"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

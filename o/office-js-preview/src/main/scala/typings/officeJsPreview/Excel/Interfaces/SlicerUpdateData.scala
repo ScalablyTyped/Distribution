@@ -50,6 +50,14 @@ trait SlicerUpdateData extends js.Object {
   var nameInFormula: js.UndefOr[String] = js.undefined
   /**
     *
+    * The style applied to the Slicer.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var slicerStyle: js.UndefOr[SlicerStyleUpdateData] = js.undefined
+  /**
+    *
     * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
     * [Api set: ExcelApi 1.10]
@@ -95,6 +103,7 @@ object SlicerUpdateData {
     left: Int | Double = null,
     name: String = null,
     nameInFormula: String = null,
+    slicerStyle: SlicerStyleUpdateData = null,
     sortBy: SlicerSortType | DataSourceOrder | Ascending | Descending = null,
     style: String = null,
     top: Int | Double = null,
@@ -107,6 +116,7 @@ object SlicerUpdateData {
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (nameInFormula != null) __obj.updateDynamic("nameInFormula")(nameInFormula.asInstanceOf[js.Any])
+    if (slicerStyle != null) __obj.updateDynamic("slicerStyle")(slicerStyle.asInstanceOf[js.Any])
     if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])

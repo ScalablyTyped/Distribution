@@ -15,25 +15,25 @@ sealed trait ItemNotificationMessageType extends js.Object
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.ItemNotificationMessageType")
 @js.native
 object ItemNotificationMessageType extends js.Object {
   /**
-    * The notificationMessage is an error message.
+    * The notification message is an error message.
     */
   @js.native
   sealed trait ErrorMessage extends ItemNotificationMessageType
   
   /**
-    * The notificationMessage is an informational message.
+    * The notification message is an informational message.
     */
   @js.native
   sealed trait InformationalMessage extends ItemNotificationMessageType
   
   /**
-    * The notificationMessage is a progress indicator.
+    * The notification message is a progress indicator.
     */
   @js.native
   sealed trait ProgressIndicator extends ItemNotificationMessageType

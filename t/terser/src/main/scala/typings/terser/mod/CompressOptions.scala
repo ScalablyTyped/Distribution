@@ -58,6 +58,7 @@ trait CompressOptions extends js.Object {
   var unsafe_methods: js.UndefOr[Boolean] = js.undefined
   var unsafe_proto: js.UndefOr[Boolean] = js.undefined
   var unsafe_regexp: js.UndefOr[Boolean] = js.undefined
+  var unsafe_symbols: js.UndefOr[Boolean] = js.undefined
   var unsafe_undefined: js.UndefOr[Boolean] = js.undefined
   var unused: js.UndefOr[Boolean] = js.undefined
   var warnings: js.UndefOr[Boolean] = js.undefined
@@ -117,6 +118,7 @@ object CompressOptions {
     unsafe_methods: js.UndefOr[Boolean] = js.undefined,
     unsafe_proto: js.UndefOr[Boolean] = js.undefined,
     unsafe_regexp: js.UndefOr[Boolean] = js.undefined,
+    unsafe_symbols: js.UndefOr[Boolean] = js.undefined,
     unsafe_undefined: js.UndefOr[Boolean] = js.undefined,
     unused: js.UndefOr[Boolean] = js.undefined,
     warnings: js.UndefOr[Boolean] = js.undefined
@@ -173,6 +175,7 @@ object CompressOptions {
     if (!js.isUndefined(unsafe_methods)) __obj.updateDynamic("unsafe_methods")(unsafe_methods.asInstanceOf[js.Any])
     if (!js.isUndefined(unsafe_proto)) __obj.updateDynamic("unsafe_proto")(unsafe_proto.asInstanceOf[js.Any])
     if (!js.isUndefined(unsafe_regexp)) __obj.updateDynamic("unsafe_regexp")(unsafe_regexp.asInstanceOf[js.Any])
+    if (!js.isUndefined(unsafe_symbols)) __obj.updateDynamic("unsafe_symbols")(unsafe_symbols.asInstanceOf[js.Any])
     if (!js.isUndefined(unsafe_undefined)) __obj.updateDynamic("unsafe_undefined")(unsafe_undefined.asInstanceOf[js.Any])
     if (!js.isUndefined(unused)) __obj.updateDynamic("unused")(unused.asInstanceOf[js.Any])
     if (!js.isUndefined(warnings)) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])

@@ -179,6 +179,20 @@ trait PlotGanttOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
+    * (Gantt) A reserved subspace to store options and values for customized
+    * functionality. Here you can add additional data for your own event
+    * callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
+    * (Gantt) Name of the dash style to use for the graph, or for some series
+    * types the outline of each shape.
+    *
+    * In styled mode, the stroke dash-array can be set with the same classes as
+    * listed under series.color.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
     * the JavaScript charts. Highstock by default applies data grouping when
@@ -204,11 +218,7 @@ trait PlotGanttOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
-  /**
-    * (Highcharts, Highstock) Options for the series data sorting.
-    */
-  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotGanttDataSortingOptions] = js.undefined
+  var dataLabels: js.UndefOr[PlotGanttDataLabelsOptions | js.Array[PlotGanttDataLabelsOptions]] = js.undefined
   /**
     * (Gantt) A description of the series to add to the screen reader
     * information about the series.
@@ -480,9 +490,10 @@ object PlotGanttOptions {
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
+    dashStyle: DashStyleValue = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
-    dataSorting: DataSortingOptionsObject | PlotGanttDataSortingOptions = null,
+    dataLabels: PlotGanttDataLabelsOptions | js.Array[PlotGanttDataLabelsOptions] = null,
     description: String = null,
     dragDrop: SeriesDragDropOptionsObject = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -545,9 +556,10 @@ object PlotGanttOptions {
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.asInstanceOf[js.Any])
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])

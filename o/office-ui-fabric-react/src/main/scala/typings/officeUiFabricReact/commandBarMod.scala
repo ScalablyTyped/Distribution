@@ -10,8 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object commandBarMod extends js.Object {
   @js.native
-  class CommandBarBase ()
-    extends typings.officeUiFabricReact.commandBarBaseMod.CommandBarBase
+  class CommandBarBase protected ()
+    extends typings.officeUiFabricReact.commandBarBaseMod.CommandBarBase {
+    def this(props: ICommandBarProps) = this()
+  }
   
   val CommandBar: FunctionComponent[ICommandBarProps] = js.native
   /* static members */

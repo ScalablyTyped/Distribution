@@ -3,6 +3,7 @@ package typings.nukaCarousel
 import typings.nukaCarousel.mod.CarouselCellAlignProp
 import typings.nukaCarousel.mod.CarouselControlContainerProp
 import typings.nukaCarousel.mod.CarouselHeightModeProp
+import typings.nukaCarousel.mod.CarouselScrollModeProp
 import typings.nukaCarousel.mod.CarouselSlideActions
 import typings.nukaCarousel.mod.CarouselTransitionModeProp
 import scala.scalajs.js
@@ -68,10 +69,16 @@ object nukaCarouselStrings {
   sealed trait nextSlide extends CarouselSlideActions
   
   @js.native
+  sealed trait page extends CarouselScrollModeProp
+  
+  @js.native
   sealed trait pause extends CarouselSlideActions
   
   @js.native
   sealed trait previousSlide extends CarouselSlideActions
+  
+  @js.native
+  sealed trait remainder extends CarouselScrollModeProp
   
   @js.native
   sealed trait right extends CarouselCellAlignProp
@@ -124,9 +131,13 @@ object nukaCarouselStrings {
   @scala.inline
   def nextSlide: nextSlide = "nextSlide".asInstanceOf[nextSlide]
   @scala.inline
+  def page: page = "page".asInstanceOf[page]
+  @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline
   def previousSlide: previousSlide = "previousSlide".asInstanceOf[previousSlide]
+  @scala.inline
+  def remainder: remainder = "remainder".asInstanceOf[remainder]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline

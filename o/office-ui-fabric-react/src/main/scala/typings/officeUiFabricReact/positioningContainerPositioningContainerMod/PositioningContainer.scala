@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact.positioningContainerPositioningContainerMod
 
 import typings.officeUiFabricReact.positioningContainerTypesMod.IPositioningContainerProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.std.Event_
 import typings.std.HTMLElement
@@ -12,12 +12,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer/PositioningContainer", "PositioningContainer")
 @js.native
-class PositioningContainer protected () extends BaseComponent[IPositioningContainerProps, IPositioningContainerState] {
+class PositioningContainer protected ()
+  extends Component[IPositioningContainerProps, IPositioningContainerState, js.Any] {
   def this(props: IPositioningContainerProps) = this()
   var _arePositionsEqual: js.Any = js.native
+  var _async: js.Any = js.native
   var _comparePositions: js.Any = js.native
   var _contentHost: js.Any = js.native
   var _didSetInitialFocus: js.Any = js.native
+  var _events: js.Any = js.native
   var _getBounds: js.Any = js.native
   /**
     * Return the maximum height the container can grow to
@@ -66,6 +69,8 @@ class PositioningContainer protected () extends BaseComponent[IPositioningContai
   def componentDidMount_MPositioningContainer(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MPositioningContainer(): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MPositioningContainer(): Unit = js.native
   /**
     * Deprecated, use `onResize` instead.
     * @deprecated Use `onResize` instead.

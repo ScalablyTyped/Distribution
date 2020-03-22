@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rbush"
-version := "3.0-dt-20191024Z-45ce91"
+version := "3.0-dt-20200225Z-45ce91"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

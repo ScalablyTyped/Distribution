@@ -18,7 +18,6 @@ sealed trait PivotAxis extends js.Object
 @js.native
 object PivotAxis extends js.Object {
   /**
-    *
     * The column axis.
     *
     */
@@ -26,7 +25,6 @@ object PivotAxis extends js.Object {
   sealed trait column extends PivotAxis
   
   /**
-    *
     * The data axis.
     *
     */
@@ -34,7 +32,6 @@ object PivotAxis extends js.Object {
   sealed trait data extends PivotAxis
   
   /**
-    *
     * The filter axis.
     *
     */
@@ -42,7 +39,6 @@ object PivotAxis extends js.Object {
   sealed trait filter extends PivotAxis
   
   /**
-    *
     * The row axis.
     *
     */
@@ -50,7 +46,6 @@ object PivotAxis extends js.Object {
   sealed trait row extends PivotAxis
   
   /**
-    *
     * The axis or region is unknown or unsupported.
     *
     */

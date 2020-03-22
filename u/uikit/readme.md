@@ -1,7 +1,7 @@
 
 # Scala.js typings for uikit
 
-Typings are for version 2.27
+Typings are for version 3.3
 
 ## Library description:
 UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.

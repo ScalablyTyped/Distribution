@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-sanitize"
-version := "1.7-dt-20190628Z-5d40d3"
+version := "1.7-dt-20200225Z-5d40d3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

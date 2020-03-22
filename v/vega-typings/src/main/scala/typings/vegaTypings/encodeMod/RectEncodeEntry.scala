@@ -15,6 +15,7 @@ trait RectEncodeEntry extends EncodeEntry {
 object RectEncodeEntry {
   @scala.inline
   def apply(
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cornerRadius: ProductionRule[NumericValueRef] = null,
     cornerRadiusBottomLeft: ProductionRule[NumericValueRef] = null,
     cornerRadiusBottomRight: ProductionRule[NumericValueRef] = null,
@@ -44,6 +45,7 @@ object RectEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): RectEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])
     if (cornerRadiusBottomRight != null) __obj.updateDynamic("cornerRadiusBottomRight")(cornerRadiusBottomRight.asInstanceOf[js.Any])

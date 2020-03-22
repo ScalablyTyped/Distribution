@@ -14,6 +14,7 @@ trait LineEncodeEntry
 object LineEncodeEntry {
   @scala.inline
   def apply(
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[StringValueRef] = null,
     defined: ProductionRule[BooleanValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
@@ -41,6 +42,7 @@ object LineEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): LineEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (defined != null) __obj.updateDynamic("defined")(defined.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])

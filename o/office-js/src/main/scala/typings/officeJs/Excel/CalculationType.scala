@@ -15,7 +15,6 @@ sealed trait CalculationType extends js.Object
 @js.native
 object CalculationType extends js.Object {
   /**
-    *
     * This will mark all cells as dirty and then recalculate them.
     *
     */
@@ -23,7 +22,6 @@ object CalculationType extends js.Object {
   sealed trait full extends CalculationType
   
   /**
-    *
     * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
     *
     */
@@ -31,7 +29,6 @@ object CalculationType extends js.Object {
   sealed trait fullRebuild extends CalculationType
   
   /**
-    *
     * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
     *
     */

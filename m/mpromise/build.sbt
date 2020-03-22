@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mpromise"
-version := "0.5.4-dt-20190322Z-34fb1c"
+version := "0.5.4-dt-20200225Z-34fb1c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

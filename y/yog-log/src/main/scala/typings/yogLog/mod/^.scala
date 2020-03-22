@@ -11,7 +11,17 @@ import scala.scalajs.js.annotation._
 @JSImport("yog-log", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): js.Function3[/* req */ Request_[ParamsDictionary], /* resp */ Response_, /* next */ NextFunction, _] = js.native
-  def apply(config: LogConfig): js.Function3[/* req */ Request_[ParamsDictionary], /* resp */ Response_, /* next */ NextFunction, _] = js.native
+  def apply(): js.Function3[
+    /* req */ Request_[ParamsDictionary], 
+    /* resp */ Response_[_], 
+    /* next */ NextFunction, 
+    _
+  ] = js.native
+  def apply(config: LogConfig): js.Function3[
+    /* req */ Request_[ParamsDictionary], 
+    /* resp */ Response_[_], 
+    /* next */ NextFunction, 
+    _
+  ] = js.native
 }
 

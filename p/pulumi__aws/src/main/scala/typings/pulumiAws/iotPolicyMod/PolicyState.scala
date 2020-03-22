@@ -19,6 +19,9 @@ trait PolicyState extends js.Object {
     * The name of the policy.
     */
   val name: js.UndefOr[Input[String]] = js.native
+  /**
+    * The policy document.
+    */
   val policy: js.UndefOr[Input[String]] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reveal"
-version := "3.3.0-dt-20190322Z-208baf"
+version := "3.3.0-dt-20200227Z-208baf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

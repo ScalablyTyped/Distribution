@@ -16,7 +16,6 @@ sealed trait RowHiddenChangeType extends js.Object
 @js.native
 object RowHiddenChangeType extends js.Object {
   /**
-    *
     * Hidden indicates the row is hidden.
     *
     */
@@ -24,7 +23,6 @@ object RowHiddenChangeType extends js.Object {
   sealed trait hidden extends RowHiddenChangeType
   
   /**
-    *
     * Unhidden indicates the row is not hidden.
     *
     */

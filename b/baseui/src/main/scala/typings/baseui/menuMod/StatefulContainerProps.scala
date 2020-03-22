@@ -22,6 +22,7 @@ trait StatefulContainerProps extends js.Object {
   var getRequiredItemProps: js.UndefOr[GetRequiredItemProps] = js.undefined
   var initialState: js.UndefOr[StatefulContainerState] = js.undefined
   var items: ItemsT
+  var onActiveDescendantChange: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   var onItemSelect: js.UndefOr[OnItemSelect] = js.undefined
   var removeMenuFromNesting: js.UndefOr[js.Function1[/* ref */ Ref[HTMLElement], Unit]] = js.undefined
   var rootRef: js.UndefOr[Ref[_]] = js.undefined
@@ -38,6 +39,7 @@ object StatefulContainerProps {
     getParentMenu: /* ref */ Ref[HTMLElement] => Unit = null,
     getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,
     initialState: StatefulContainerState = null,
+    onActiveDescendantChange: /* id */ js.UndefOr[String] => Unit = null,
     onItemSelect: /* args */ AnonItem => js.Any = null,
     removeMenuFromNesting: /* ref */ Ref[HTMLElement] => Unit = null,
     rootRef: Ref[_] = null,
@@ -50,6 +52,7 @@ object StatefulContainerProps {
     if (getParentMenu != null) __obj.updateDynamic("getParentMenu")(js.Any.fromFunction1(getParentMenu))
     if (getRequiredItemProps != null) __obj.updateDynamic("getRequiredItemProps")(js.Any.fromFunction2(getRequiredItemProps))
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (onActiveDescendantChange != null) __obj.updateDynamic("onActiveDescendantChange")(js.Any.fromFunction1(onActiveDescendantChange))
     if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction1(onItemSelect))
     if (removeMenuFromNesting != null) __obj.updateDynamic("removeMenuFromNesting")(js.Any.fromFunction1(removeMenuFromNesting))
     if (rootRef != null) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])

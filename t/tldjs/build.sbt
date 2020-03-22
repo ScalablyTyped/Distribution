@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tldjs"
-version := "v2.3.1-dt-20190322Z-23dada"
+version := "v2.3.1-dt-20200227Z-23dada"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

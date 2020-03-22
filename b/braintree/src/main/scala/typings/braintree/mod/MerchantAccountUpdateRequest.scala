@@ -5,12 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MerchantAccountUpdateRequest extends js.Object {
-  var business: js.UndefOr[MerchantBusiness] = js.undefined
+  var business: js.UndefOr[MerchantBusinessRequest] = js.undefined
   var funding: MerchantFunding
   var id: String
-  var individual: MerchantIndividual
+  var individual: MerchantIndividualRequest
   var masterMerchantAccountId: String
-  var status: MerchantAccountStatus
 }
 
 object MerchantAccountUpdateRequest {
@@ -18,12 +17,11 @@ object MerchantAccountUpdateRequest {
   def apply(
     funding: MerchantFunding,
     id: String,
-    individual: MerchantIndividual,
+    individual: MerchantIndividualRequest,
     masterMerchantAccountId: String,
-    status: MerchantAccountStatus,
-    business: MerchantBusiness = null
+    business: MerchantBusinessRequest = null
   ): MerchantAccountUpdateRequest = {
-    val __obj = js.Dynamic.literal(funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], individual = individual.asInstanceOf[js.Any], masterMerchantAccountId = masterMerchantAccountId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], individual = individual.asInstanceOf[js.Any], masterMerchantAccountId = masterMerchantAccountId.asInstanceOf[js.Any])
     if (business != null) __obj.updateDynamic("business")(business.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantAccountUpdateRequest]
   }

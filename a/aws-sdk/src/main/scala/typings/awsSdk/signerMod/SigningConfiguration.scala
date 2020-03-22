@@ -11,7 +11,7 @@ trait SigningConfiguration extends js.Object {
     */
   var encryptionAlgorithmOptions: EncryptionAlgorithmOptions = js.native
   /**
-    * The hash algorithm options that are available for a a code signing job.
+    * The hash algorithm options that are available for a code signing job.
     */
   var hashAlgorithmOptions: HashAlgorithmOptions = js.native
 }

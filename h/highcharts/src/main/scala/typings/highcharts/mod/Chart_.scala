@@ -72,6 +72,7 @@ class Chart_ protected () extends js.Object {
     * The data parser for this chart.
     */
   var data: js.UndefOr[typings.highcharts.dataMod.highchartsAugmentingMod.Data] = js.native
+  var fullscreen: typings.highcharts.exportingMod.highchartsAugmentingMod.Fullscreen with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Fullscreen */ js.Any) = js.native
   /**
     * Flag used in parallel coordinates plot to check if chart has
     * ||-coords (parallel coords).
@@ -316,6 +317,10 @@ class Chart_ protected () extends js.Object {
     * @fires Highcharts.Chart#destroy
     */
   def destroy(): Unit = js.native
+  /**
+    * Dismiss popup content in chart, including export menu and tooltip.
+    */
+  def dismissPopupContent(): Unit = js.native
   /**
     * When the chart is drilled down to a child series, calling
     * `chart.drillUp()` will drill up to the parent series.
@@ -575,16 +580,6 @@ class Chart_ protected () extends js.Object {
   def numberFormatter(number: Double, decimals: Double, decimalPoint: String): String = js.native
   def numberFormatter(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
   /**
-    * Experimental function to send a chart's config to the Cloud for
-    * editing.
-    *
-    * Limitations
-    *
-    * - All functions (formatters and callbacks) are removed since they're
-    * not JSON.
-    */
-  def openInCloud(): Unit = js.native
-  /**
     * Pause the running sonification.
     *
     * @param fadeOut
@@ -769,12 +764,20 @@ class Chart_ protected () extends js.Object {
   def showLoading(): Unit = js.native
   def showLoading(str: String): Unit = js.native
   /**
+    * Display the zoom button, so users can reset zoom to the default view
+    * settings.
+    *
+    * @fires Highcharts.Chart#afterShowResetZoom
+    * @fires Highcharts.Chart#beforeShowResetZoom
+    */
+  def showResetZoom(): Unit = js.native
+  /**
     * Sonify a chart.
     *
     * @param options
     *        The options for sonifying this chart.
     */
-  def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.SonifyChartOptionsObject): Unit = js.native
+  def sonify(options: typings.highcharts.sonificationMod.highchartsAugmentingMod.SonificationOptions): Unit = js.native
   /**
     * Highmaps only. Get point from latitude and longitude using specified
     * transform definition.

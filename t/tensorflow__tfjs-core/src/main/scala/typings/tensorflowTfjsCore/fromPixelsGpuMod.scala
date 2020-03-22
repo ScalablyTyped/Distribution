@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@tensorflow/tfjs-core/dist/backends/webgl/from_pixels_gpu", JSImport.Namespace)
+@JSImport("@tensorflow/tfjs-core/dist/backends/webgl/kernels/FromPixels_utils/from_pixels_gpu", JSImport.Namespace)
 @js.native
 object fromPixelsGpuMod extends js.Object {
   @js.native

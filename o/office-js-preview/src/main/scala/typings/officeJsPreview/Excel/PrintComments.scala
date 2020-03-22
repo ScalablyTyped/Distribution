@@ -15,7 +15,6 @@ sealed trait PrintComments extends js.Object
 @js.native
 object PrintComments extends js.Object {
   /**
-    *
     * Comments will be printed as end notes at the end of the worksheet.
     *
     */
@@ -23,7 +22,6 @@ object PrintComments extends js.Object {
   sealed trait endSheet extends PrintComments
   
   /**
-    *
     * Comments will be printed where they were inserted in the worksheet.
     *
     */
@@ -31,7 +29,6 @@ object PrintComments extends js.Object {
   sealed trait inPlace extends PrintComments
   
   /**
-    *
     * Comments will not be printed.
     *
     */

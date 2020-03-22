@@ -10,7 +10,7 @@ trait IChangeEvent[T] extends js.Object {
   var errorSchema: FormValidation
   var errors: js.Array[AjvError]
   var formData: T
-  var idSchema: IdSchema
+  var idSchema: IdSchema[_]
   var schema: JSONSchema6
   var status: js.UndefOr[String] = js.undefined
   var uiSchema: UiSchema
@@ -23,7 +23,7 @@ object IChangeEvent {
     errorSchema: FormValidation,
     errors: js.Array[AjvError],
     formData: T,
-    idSchema: IdSchema,
+    idSchema: IdSchema[_],
     schema: JSONSchema6,
     uiSchema: UiSchema,
     status: String = null

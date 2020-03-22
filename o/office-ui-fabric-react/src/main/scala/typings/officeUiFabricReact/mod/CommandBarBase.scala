@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react", "CommandBarBase")
 @js.native
-class CommandBarBase ()
-  extends typings.officeUiFabricReact.libCommandBarMod.CommandBarBase
+class CommandBarBase protected ()
+  extends typings.officeUiFabricReact.libCommandBarMod.CommandBarBase {
+  def this(props: ICommandBarProps) = this()
+}
 
 /* static members */
 @JSImport("office-ui-fabric-react", "CommandBarBase")

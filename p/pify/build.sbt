@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pify"
-version := "3.0.0-dt-20190322Z-a742e2"
+version := "3.0.0-dt-20200226Z-a742e2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

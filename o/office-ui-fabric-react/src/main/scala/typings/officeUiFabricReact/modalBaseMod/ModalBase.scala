@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.modalBaseMod
 
 import typings.officeUiFabricReact.modalTypesMod.IModal
 import typings.officeUiFabricReact.modalTypesMod.IModalProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Modal/Modal.base", "ModalBase")
 @js.native
 class ModalBase protected ()
-  extends BaseComponent[IModalProps, IDialogState]
+  extends Component[IModalProps, IDialogState, js.Any]
      with IModal {
   def this(props: IModalProps) = this()
   var _allowScrollOnModal: js.Any = js.native
   var _allowTouchBodyScroll: js.Any = js.native
+  var _async: js.Any = js.native
+  var _events: js.Any = js.native
   var _focusTrapZone: js.Any = js.native
   var _getMoveDelta: js.Any = js.native
   var _hasRegisteredKeyUp: js.Any = js.native
@@ -38,6 +40,8 @@ class ModalBase protected ()
   def componentDidMount_MModalBase(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MModalBase(prevProps: IModalProps, prevState: IDialogState): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MModalBase(): Unit = js.native
   /**
     * Sets focus on the first focusable, or configured, child in focus trap zone
     */

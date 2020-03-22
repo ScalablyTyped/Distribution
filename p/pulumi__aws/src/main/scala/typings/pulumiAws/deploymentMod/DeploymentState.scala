@@ -31,7 +31,7 @@ trait DeploymentState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * The description of the stage
     */
@@ -53,7 +53,7 @@ object DeploymentState {
     description: Input[String] = null,
     executionArn: Input[String] = null,
     invokeUrl: Input[String] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     stageDescription: Input[String] = null,
     stageName: Input[String] = null,
     variables: Input[StringDictionary[Input[String]]] = null

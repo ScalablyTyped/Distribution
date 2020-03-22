@@ -11,6 +11,7 @@ trait ShapeEncodeEntry extends EncodeEntry {
 object ShapeEncodeEntry {
   @scala.inline
   def apply(
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
@@ -36,6 +37,7 @@ object ShapeEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): ShapeEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

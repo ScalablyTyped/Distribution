@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pubsub-js"
-version := "1.5.2-dt-20190322Z-2e02e3"
+version := "1.5.2-dt-20200226Z-2e02e3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 package typings.materialUiCore.listItemSecondaryActionListItemSecondaryActionMod
 
-import typings.materialUiCore.PartialClassNameMapListItemSecondaryActionClassKey
+import typings.materialUiCore.PartialClassNameMapListItRoot
 import typings.react.mod.CSSProperties
 import typings.react.mod.Ref
 import typings.react.mod.RefObject
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListItemSecondaryActionProps extends js.Object {
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListItemSecondaryActionClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListItRoot] = js.native
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
   var style: js.UndefOr[CSSProperties] = js.native
 }
@@ -21,7 +21,7 @@ object ListItemSecondaryActionProps {
   @scala.inline
   def apply(
     className: String = null,
-    classes: PartialClassNameMapListItemSecondaryActionClassKey = null,
+    classes: PartialClassNameMapListItRoot = null,
     innerRef: Ref[_] | RefObject[_] = null,
     style: CSSProperties = null
   ): ListItemSecondaryActionProps = {

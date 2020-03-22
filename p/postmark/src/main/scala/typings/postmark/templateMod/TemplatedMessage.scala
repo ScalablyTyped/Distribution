@@ -45,6 +45,7 @@ class TemplatedMessage protected () extends js.Object {
   var From: String = js.native
   var Headers: js.UndefOr[js.Array[Header]] = js.native
   var InlineCss: js.UndefOr[Boolean] = js.native
+  var MessageStream: js.UndefOr[String] = js.native
   var Metadata: js.UndefOr[Hash[String]] = js.native
   var ReplyTo: js.UndefOr[String] = js.native
   var Tag: js.UndefOr[String] = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_simplepagination"
-version := "v1.4-dt-20190322Z-1a7a2c"
+version := "v1.4-dt-20200226Z-1a7a2c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

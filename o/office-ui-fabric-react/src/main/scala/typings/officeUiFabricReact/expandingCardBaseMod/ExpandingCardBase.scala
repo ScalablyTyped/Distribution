@@ -2,15 +2,17 @@ package typings.officeUiFabricReact.expandingCardBaseMod
 
 import typings.officeUiFabricReact.AnonCompactCardHeight
 import typings.officeUiFabricReact.expandingCardTypesMod.IExpandingCardProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/HoverCard/ExpandingCard.base", "ExpandingCardBase")
 @js.native
-class ExpandingCardBase protected () extends BaseComponent[IExpandingCardProps, IExpandingCardState] {
+class ExpandingCardBase protected ()
+  extends Component[IExpandingCardProps, IExpandingCardState, js.Any] {
   def this(props: IExpandingCardProps) = this()
+  var _async: js.Any = js.native
   var _checkNeedsScroll: js.Any = js.native
   var _classNames: js.Any = js.native
   var _expandedElem: js.Any = js.native

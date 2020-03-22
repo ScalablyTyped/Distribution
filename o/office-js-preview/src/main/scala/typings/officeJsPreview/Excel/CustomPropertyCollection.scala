@@ -25,7 +25,6 @@ class CustomPropertyCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[CustomProperty] = js.native
   /**
-    *
     * Creates a new or sets an existing custom property.
     *
     * [Api set: ExcelApi 1.7]
@@ -35,21 +34,18 @@ class CustomPropertyCollection () extends ClientObject {
     */
   def add(key: String, value: js.Any): CustomProperty = js.native
   /**
-    *
     * Deletes all custom properties in this collection.
     *
     * [Api set: ExcelApi 1.7]
     */
   def deleteAll(): Unit = js.native
   /**
-    *
     * Gets the count of custom properties.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
     *
     * [Api set: ExcelApi 1.7]
@@ -58,7 +54,6 @@ class CustomPropertyCollection () extends ClientObject {
     */
   def getItem(key: String): CustomProperty = js.native
   /**
-    *
     * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
     *
     * [Api set: ExcelApi 1.7]

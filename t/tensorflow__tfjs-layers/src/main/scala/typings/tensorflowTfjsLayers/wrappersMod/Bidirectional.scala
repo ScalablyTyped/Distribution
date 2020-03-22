@@ -1,10 +1,10 @@
 package typings.tensorflowTfjsLayers.wrappersMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
 import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.BidirectionalMergeMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,8 +21,8 @@ class Bidirectional protected () extends Wrapper {
   var numConstants: js.UndefOr[js.Any] = js.native
   var returnSequences: js.Any = js.native
   var returnState: js.Any = js.native
-  def resetStates(states: js.Array[Tensor_[Rank]]): Unit = js.native
-  def resetStates(states: Tensor_[Rank]): Unit = js.native
+  def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
+  def resetStates(states: Tensor[Rank]): Unit = js.native
 }
 
 /* static members */

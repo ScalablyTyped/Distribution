@@ -141,6 +141,7 @@ trait JestMatchers[T] extends js.Object {
   /**
     * Used when you want to check that an item is in a list.
     * For testing the items in the list, this uses `===`, a strict equality check.
+    * It can also check whether a string is a substring of another string.
     *
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.

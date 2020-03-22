@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.baseCallbacksMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class History () extends BaseCallback {
   var epoch: js.Array[Double] = js.native
-  var history: StringDictionary[js.Array[Double | Tensor_[Rank]]] = js.native
+  var history: StringDictionary[js.Array[Double | Tensor[Rank]]] = js.native
   /**
     * Await the values of all losses and metrics.
     */

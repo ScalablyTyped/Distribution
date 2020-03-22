@@ -15,6 +15,7 @@ trait ReadLineOptions extends js.Object {
   var output: js.UndefOr[WritableStream] = js.undefined
   var prompt: js.UndefOr[String] = js.undefined
   var removeHistoryDuplicates: js.UndefOr[Boolean] = js.undefined
+  var tabSize: js.UndefOr[Double] = js.undefined
   var terminal: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -29,6 +30,7 @@ object ReadLineOptions {
     output: WritableStream = null,
     prompt: String = null,
     removeHistoryDuplicates: js.UndefOr[Boolean] = js.undefined,
+    tabSize: Int | Double = null,
     terminal: js.UndefOr[Boolean] = js.undefined
   ): ReadLineOptions = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
@@ -39,6 +41,7 @@ object ReadLineOptions {
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (!js.isUndefined(removeHistoryDuplicates)) __obj.updateDynamic("removeHistoryDuplicates")(removeHistoryDuplicates.asInstanceOf[js.Any])
+    if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLineOptions]
   }

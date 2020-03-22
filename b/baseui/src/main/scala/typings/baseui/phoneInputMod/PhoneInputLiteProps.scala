@@ -44,6 +44,7 @@ object PhoneInputLiteProps {
     endEnhancer: (js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode = null,
     error: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    inputMode: String = null,
     inputRef: Ref[HTMLInputElement] = null,
     mapIsoToLabel: /* iso */ String => String = null,
     max: Int | Double = null,
@@ -68,7 +69,7 @@ object PhoneInputLiteProps {
     startEnhancer: (js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode = null,
     text: String = null,
     `type`: String = null,
-    value: String = null
+    value: String | Double = null
   ): PhoneInputLiteProps = {
     val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any])
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
@@ -84,6 +85,7 @@ object PhoneInputLiteProps {
     if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (mapIsoToLabel != null) __obj.updateDynamic("mapIsoToLabel")(js.Any.fromFunction1(mapIsoToLabel))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

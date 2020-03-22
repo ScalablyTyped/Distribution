@@ -19,6 +19,7 @@ object ImageEncodeEntry {
     align: ProductionRule[ScaledValueRef[Align]] = null,
     aspect: ProductionRule[BooleanValueRef] = null,
     baseline: ProductionRule[ScaledValueRef[Baseline]] = null,
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[StringValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
     fillOpacity: ProductionRule[NumericValueRef] = null,
@@ -48,6 +49,7 @@ object ImageEncodeEntry {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (aspect != null) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

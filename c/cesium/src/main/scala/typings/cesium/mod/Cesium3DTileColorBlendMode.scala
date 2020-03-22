@@ -25,10 +25,10 @@ object Cesium3DTileColorBlendMode extends js.Object {
   /* 0 */ @js.native
   object HIGHLIGHT extends TopLevel[HIGHLIGHT with Double]
   
-  /* 1 */ @js.native
+  /* 2 */ @js.native
   object MIX extends TopLevel[MIX with Double]
   
-  /* 2 */ @js.native
+  /* 1 */ @js.native
   object REPLACE extends TopLevel[REPLACE with Double]
   
 }

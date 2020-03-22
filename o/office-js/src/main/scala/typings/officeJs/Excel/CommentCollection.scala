@@ -33,7 +33,6 @@ class CommentCollection () extends ClientObject {
   def add(cellAddress: Range, content: String): Comment = js.native
   def add(cellAddress: Range, content: String, contentType: ContentType): Comment = js.native
   /**
-    *
     * Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
     *
     * [Api set: ExcelApi 1.10]
@@ -61,14 +60,12 @@ class CommentCollection () extends ClientObject {
   @JSName("add")
   def add_Plain(cellAddress: Range, content: CommentRichContent, contentType: Plain): Comment = js.native
   /**
-    *
     * Gets the number of comments in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a comment from the collection based on its ID. Read-only.
     *
     * [Api set: ExcelApi 1.10]
@@ -77,7 +74,6 @@ class CommentCollection () extends ClientObject {
     */
   def getItem(commentId: String): Comment = js.native
   /**
-    *
     * Gets a comment from the collection based on its position.
     *
     * [Api set: ExcelApi 1.10]
@@ -87,7 +83,6 @@ class CommentCollection () extends ClientObject {
   def getItemAt(index: Double): Comment = js.native
   def getItemByCell(cellAddress: String): Comment = js.native
   /**
-    *
     * Gets the comment from the specified cell.
     *
     * [Api set: ExcelApi 1.10]
@@ -96,7 +91,6 @@ class CommentCollection () extends ClientObject {
     */
   def getItemByCell(cellAddress: Range): Comment = js.native
   /**
-    *
     * Gets the comment to which the given reply is connected.
     *
     * [Api set: ExcelApi 1.10]

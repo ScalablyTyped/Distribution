@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@electron/get" : "1.8.0"
+      "@electron/get" : "1.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@electron/get" : "1.8.0"
+      "@electron/get" : "1.9.0"
     }
   ],
   "compile-devDependencies" : [

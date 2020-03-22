@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__tabmanager-extension
 
-Typings are for version 2.0.0
+Typings are for version 2.0.2
 
 ## Library description:
 JupyterLab - Tab Manager Extension

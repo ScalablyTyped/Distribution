@@ -1,8 +1,8 @@
 package typings.tensorflowTfjsNode.tensorboardMod
 
-import typings.tensorflowTfjs.mod.Tensor_
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorMod.Scalar
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "SummaryFileWriter")
 @js.native
 class SummaryFileWriter_ protected () extends js.Object {
-  def this(resourceHandle: Tensor_[Rank]) = this()
+  def this(resourceHandle: Tensor[Rank]) = this()
   var backend: NodeJSKernelBackend = js.native
   val resourceHandle: js.Any = js.native
   /**

@@ -49,6 +49,12 @@ package object comprehendmedicalMod {
     - typings.awsSdk.awsSdkStrings.DIRECTION
     - typings.awsSdk.awsSdkStrings.QUALITY
     - typings.awsSdk.awsSdkStrings.QUANTITY
+    - typings.awsSdk.awsSdkStrings.TIME_EXPRESSION
+    - typings.awsSdk.awsSdkStrings.TIME_TO_MEDICATION_NAME
+    - typings.awsSdk.awsSdkStrings.TIME_TO_DX_NAME
+    - typings.awsSdk.awsSdkStrings.TIME_TO_TEST_NAME
+    - typings.awsSdk.awsSdkStrings.TIME_TO_PROCEDURE_NAME
+    - typings.awsSdk.awsSdkStrings.TIME_TO_TREATMENT_NAME
     - java.lang.String
   */
   type EntitySubType = typings.awsSdk.comprehendmedicalMod._EntitySubType | java.lang.String
@@ -58,6 +64,7 @@ package object comprehendmedicalMod {
     - typings.awsSdk.awsSdkStrings.PROTECTED_HEALTH_INFORMATION
     - typings.awsSdk.awsSdkStrings.TEST_TREATMENT_PROCEDURE
     - typings.awsSdk.awsSdkStrings.ANATOMY
+    - typings.awsSdk.awsSdkStrings.TIME_EXPRESSION
     - java.lang.String
   */
   type EntityType = typings.awsSdk.comprehendmedicalMod._EntityType | java.lang.String
@@ -106,6 +113,27 @@ package object comprehendmedicalMod {
   type MaxResultsInteger = scala.Double
   type ModelVersion = java.lang.String
   type OntologyLinkingBoundedLengthString = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.EVERY
+    - typings.awsSdk.awsSdkStrings.WITH_DOSAGE
+    - typings.awsSdk.awsSdkStrings.ADMINISTERED_VIA
+    - typings.awsSdk.awsSdkStrings.FOR
+    - typings.awsSdk.awsSdkStrings.NEGATIVE
+    - typings.awsSdk.awsSdkStrings.OVERLAP
+    - typings.awsSdk.awsSdkStrings.DOSAGE
+    - typings.awsSdk.awsSdkStrings.ROUTE_OR_MODE
+    - typings.awsSdk.awsSdkStrings.FORM
+    - typings.awsSdk.awsSdkStrings.FREQUENCY
+    - typings.awsSdk.awsSdkStrings.DURATION
+    - typings.awsSdk.awsSdkStrings.STRENGTH
+    - typings.awsSdk.awsSdkStrings.RATE
+    - typings.awsSdk.awsSdkStrings.ACUITY
+    - typings.awsSdk.awsSdkStrings.TEST_VALUE
+    - typings.awsSdk.awsSdkStrings.TEST_UNITS
+    - typings.awsSdk.awsSdkStrings.DIRECTION
+    - java.lang.String
+  */
+  type RelationshipType = typings.awsSdk.comprehendmedicalMod._RelationshipType | java.lang.String
   type RxNormAttributeList = js.Array[typings.awsSdk.comprehendmedicalMod.RxNormAttribute]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DOSAGE

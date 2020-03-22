@@ -33,6 +33,14 @@ trait ChartAxisTitleLoadOptions extends js.Object {
   var text: js.UndefOr[Boolean] = js.native
   /**
     *
+    * Represents the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var textOrientation: js.UndefOr[Boolean] = js.native
+  /**
+    *
     * A boolean that specifies the visibility of an axis title.
     *
     * [Api set: ExcelApi 1.1]

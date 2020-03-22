@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "winrt-uwp"
-version := "0.0-unknown-dt-20191107Z-705927"
+version := "0.0-unknown-dt-20200227Z-705927"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -9,17 +9,14 @@ package object Object {
   /* Rewritten from type alias, can be one of: 
     - T
     - typings.parse.mod._Global_.Parse.Object.ToJSON[T]
-    - js.Array[
-  / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias parse.parse._Global_.Parse.Object.Encode<R> * / js.Object]
+    - js.Array[js.Any]
     - java.lang.String
     - typings.parse.AnonIso
     - typings.std.ReturnType[
   / * import warning: importer.ImportType#apply Failed type conversion: T['toJSON'] * / js.Any]
     - typings.parse.mod._Global_.Parse.Pointer
   */
-  type Encode[T] = typings.parse.mod._Global_.Parse.Object._Encode[T] | (js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias parse.parse._Global_.Parse.Object.Encode<R> */ js.Object
-  ]) | (typings.std.ReturnType[
+  type Encode[T] = typings.parse.mod._Global_.Parse.Object._Encode[T] | js.Array[js.Any] | (typings.std.ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['toJSON'] */ js.Any
   ]) | T | typings.parse.mod._Global_.Parse.Object.ToJSON[T] | java.lang.String
   type ToJSON[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

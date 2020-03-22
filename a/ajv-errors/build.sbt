@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ajv-errors"
-version := "1.0-dt-20181017Z-bc81b2"
+version := "1.0-dt-20200225Z-bc81b2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

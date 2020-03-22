@@ -29,7 +29,7 @@ object IHelmetHpkpConfiguration {
     includeSubdomains: js.UndefOr[Boolean] = js.undefined,
     reportOnly: js.UndefOr[Boolean] = js.undefined,
     reportUri: String = null,
-    setIf: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null
+    setIf: (/* req */ Request_[ParamsDictionary], /* res */ Response_[js.Any]) => Boolean = null
   ): IHelmetHpkpConfiguration = {
     val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any], sha256s = sha256s.asInstanceOf[js.Any])
     if (!js.isUndefined(includeSubDomains)) __obj.updateDynamic("includeSubDomains")(includeSubDomains.asInstanceOf[js.Any])

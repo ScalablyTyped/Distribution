@@ -67,6 +67,10 @@ trait Schema[T] extends EventEmitter {
     */ typings.mongoose.mongooseStrings.Schema with T = js.native
   /** The original object passed to the schema constructor */
   var obj: js.Any = js.native
+  /**
+    * Lists all paths and their type in the current schema.
+    */
+  var paths: StringDictionary[SchemaType] = js.native
   /** Object of currently defined query helpers on this schema. */
   var query: js.Any = js.native
   /** Object of currently defined statics on this schema. */

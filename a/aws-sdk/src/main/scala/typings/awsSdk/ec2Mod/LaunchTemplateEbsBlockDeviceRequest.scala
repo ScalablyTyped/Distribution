@@ -21,7 +21,7 @@ trait LaunchTemplateEbsBlockDeviceRequest extends js.Object {
   /**
     * The ARN of the symmetric AWS Key Management Service (AWS KMS) CMK used for encryption.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.native
   /**
     * The ID of the snapshot.
     */
@@ -42,7 +42,7 @@ object LaunchTemplateEbsBlockDeviceRequest {
     DeleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined,
     Encrypted: js.UndefOr[scala.Boolean] = js.undefined,
     Iops: Int | scala.Double = null,
-    KmsKeyId: String = null,
+    KmsKeyId: KmsKeyId = null,
     SnapshotId: SnapshotId = null,
     VolumeSize: Int | scala.Double = null,
     VolumeType: VolumeType = null

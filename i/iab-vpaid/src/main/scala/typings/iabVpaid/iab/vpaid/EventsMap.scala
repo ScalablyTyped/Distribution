@@ -44,8 +44,8 @@ trait EventsMap extends js.Object {
   var AdVideoComplete_Original: js.Function0[Unit] = js.native
   @JSName("AdVideoFirstQuartile")
   var AdVideoFirstQuartile_Original: js.Function0[Unit] = js.native
-  @JSName("AdVideoMidPoint")
-  var AdVideoMidPoint_Original: js.Function0[Unit] = js.native
+  @JSName("AdVideoMidpoint")
+  var AdVideoMidpoint_Original: js.Function0[Unit] = js.native
   @JSName("AdVideoStart")
   var AdVideoStart_Original: js.Function0[Unit] = js.native
   @JSName("AdVideoThirdQuartile")
@@ -74,7 +74,7 @@ trait EventsMap extends js.Object {
   def AdUserMinimize(): Unit = js.native
   def AdVideoComplete(): Unit = js.native
   def AdVideoFirstQuartile(): Unit = js.native
-  def AdVideoMidPoint(): Unit = js.native
+  def AdVideoMidpoint(): Unit = js.native
   def AdVideoStart(): Unit = js.native
   def AdVideoThirdQuartile(): Unit = js.native
   def AdVolumeChange(): Unit = js.native

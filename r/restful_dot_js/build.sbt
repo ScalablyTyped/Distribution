@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "restful_dot_js"
-version := "0.6.2-dt-20190322Z-a4a229"
+version := "0.6.2-dt-20200225Z-a4a229"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

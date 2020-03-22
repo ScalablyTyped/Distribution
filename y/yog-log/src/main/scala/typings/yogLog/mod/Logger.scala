@@ -34,7 +34,7 @@ class Logger protected () extends js.Object {
   def parseCustomLog(obj: js.Object): Unit = js.native
   // 解析日志配置，生成相应的模板函数的字符串内容
   def parseFormat(format: String): String = js.native
-  def parseReqParams(req: Request_[ParamsDictionary], res: Response_): Unit | `false` = js.native
+  def parseReqParams(req: Request_[ParamsDictionary], res: Response_[_]): Unit | `false` = js.native
   def parseStackInfo(info: Error): Unit = js.native
   def parseStackInfo(info: LogInfo): Unit = js.native
   def setParams(name: String, value: js.Any): Unit = js.native

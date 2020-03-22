@@ -28,6 +28,11 @@ trait AccessibilityPropsIOS extends js.Object {
     */
   var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   /**
+    * When accessibile is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
+    * @platform ios
+    */
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
     * When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
     * @platform ios
     */
@@ -46,6 +51,7 @@ object AccessibilityPropsIOS {
     accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onMagicTap: () => Unit = null
   ): AccessibilityPropsIOS = {
@@ -54,6 +60,7 @@ object AccessibilityPropsIOS {
     if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     __obj.asInstanceOf[AccessibilityPropsIOS]

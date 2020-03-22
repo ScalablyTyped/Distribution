@@ -51,10 +51,10 @@ class Snapshot[K /* <: String */] () extends js.Object {
     */
   def belongsTo[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L): js.UndefOr[Snapshot[_] | Null] = js.native
+  ] */](keyName: L): js.UndefOr[Snapshot[String] | Null] = js.native
   def belongsTo[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: js.Object): js.UndefOr[Snapshot[_] | Null] = js.native
+  ] */](keyName: L, options: js.Object): js.UndefOr[Snapshot[String] | Null] = js.native
   def belongsTo[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] */](keyName: L, options: AnonId): js.UndefOr[String | Null] = js.native
@@ -89,13 +89,13 @@ class Snapshot[K /* <: String */] () extends js.Object {
     */
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L): js.UndefOr[js.Array[Snapshot[_]]] = js.native
+  ] */](keyName: L): js.UndefOr[js.Array[Snapshot[String]]] = js.native
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
   ] */](keyName: L, options: Anon0): js.UndefOr[js.Array[String]] = js.native
   def hasMany[L /* <: RelationshipsFor[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-  ] */](keyName: L, options: AnonIds): js.UndefOr[js.Array[Snapshot[_]]] = js.native
+  ] */](keyName: L, options: AnonIds): js.UndefOr[js.Array[Snapshot[String]]] = js.native
   /**
     * Serializes the snapshot using the serializer for the model.
     */

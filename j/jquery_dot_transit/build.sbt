@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_transit"
-version := "0.9.9-dt-20190826Z-d0c9eb"
+version := "0.9.9-dt-20200225Z-d0c9eb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,6 @@
 package typings.primereact.dialogMod
 
+import typings.primereact.AnonMaximized
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -23,7 +24,9 @@ trait DialogProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var maskClassName: js.UndefOr[String] = js.undefined
   var maximizable: js.UndefOr[Boolean] = js.undefined
+  var maximized: js.UndefOr[Boolean] = js.undefined
   var modal: js.UndefOr[Boolean] = js.undefined
+  var onMaximize: js.UndefOr[js.Function1[/* e */ AnonMaximized, Unit]] = js.undefined
   var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   var position: js.UndefOr[String] = js.undefined
   var rtl: js.UndefOr[Boolean] = js.undefined
@@ -53,7 +56,9 @@ object DialogProps {
     id: String = null,
     maskClassName: String = null,
     maximizable: js.UndefOr[Boolean] = js.undefined,
+    maximized: js.UndefOr[Boolean] = js.undefined,
     modal: js.UndefOr[Boolean] = js.undefined,
+    onMaximize: /* e */ AnonMaximized => Unit = null,
     onShow: () => Unit = null,
     position: String = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
@@ -78,7 +83,9 @@ object DialogProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (maskClassName != null) __obj.updateDynamic("maskClassName")(maskClassName.asInstanceOf[js.Any])
     if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable.asInstanceOf[js.Any])
+    if (!js.isUndefined(maximized)) __obj.updateDynamic("maximized")(maximized.asInstanceOf[js.Any])
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
+    if (onMaximize != null) __obj.updateDynamic("onMaximize")(js.Any.fromFunction1(onMaximize))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction0(onShow))
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])

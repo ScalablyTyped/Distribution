@@ -21,6 +21,10 @@ trait AppXOptions extends TargetSpecificOptions {
     */
   val backgroundColor: js.UndefOr[String | Null] = js.undefined
   /**
+    * Relative path to custom extensions xml to be included in an `appmanifest.xml`.
+    */
+  val customExtensionsPath: js.UndefOr[String] = js.undefined
+  /**
     * A friendly name that can be displayed to users. Corresponds to [Properties.DisplayName](https://msdn.microsoft.com/en-us/library/windows/apps/br211432.aspx).
     * Defaults to the application product name.
     */
@@ -70,6 +74,7 @@ object AppXOptions {
     applicationId: String = null,
     artifactName: String = null,
     backgroundColor: String = null,
+    customExtensionsPath: String = null,
     displayName: String = null,
     electronUpdaterAware: js.UndefOr[Boolean] = js.undefined,
     identityName: String = null,
@@ -86,6 +91,7 @@ object AppXOptions {
     if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
     if (artifactName != null) __obj.updateDynamic("artifactName")(artifactName.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (customExtensionsPath != null) __obj.updateDynamic("customExtensionsPath")(customExtensionsPath.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (!js.isUndefined(electronUpdaterAware)) __obj.updateDynamic("electronUpdaterAware")(electronUpdaterAware.asInstanceOf[js.Any])
     if (identityName != null) __obj.updateDynamic("identityName")(identityName.asInstanceOf[js.Any])

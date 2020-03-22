@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Form", "Form")
+@JSImport("@catho/quantum/Form", "Form")
 @js.native
 class Form ()
   extends Component[FormProps, js.Object, js.Any]

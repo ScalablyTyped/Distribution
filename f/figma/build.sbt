@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "figma"
-version := "1.0-dt-20191231Z-69cb24"
+version := "1.0-dt-20200306Z-35c777"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

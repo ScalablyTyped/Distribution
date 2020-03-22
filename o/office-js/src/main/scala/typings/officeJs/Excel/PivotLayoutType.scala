@@ -15,7 +15,6 @@ sealed trait PivotLayoutType extends js.Object
 @js.native
 object PivotLayoutType extends js.Object {
   /**
-    *
     * A horizontally compressed form with labels from the next field in the same column.
     *
     */
@@ -23,7 +22,6 @@ object PivotLayoutType extends js.Object {
   sealed trait compact extends PivotLayoutType
   
   /**
-    *
     * Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
     *
     */
@@ -31,7 +29,6 @@ object PivotLayoutType extends js.Object {
   sealed trait outline extends PivotLayoutType
   
   /**
-    *
     * Inner fields' items are always on a new line relative to the outer fields' items.
     *
     */

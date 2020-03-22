@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-moment"
-version := "4.0-dt-20190925Z-23b32a"
+version := "4.0-dt-20200225Z-23b32a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

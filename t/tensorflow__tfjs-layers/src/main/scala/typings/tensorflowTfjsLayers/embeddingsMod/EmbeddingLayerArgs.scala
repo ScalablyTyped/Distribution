@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.embeddingsMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import typings.tensorflowTfjsLayers.constraintsMod.ConstraintIdentifier
 import typings.tensorflowTfjsLayers.initializersMod.Initializer
@@ -79,7 +79,7 @@ object EmbeddingLayerArgs {
     maskZero: js.UndefOr[Boolean] = js.undefined,
     name: String = null,
     trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor_[Rank]] = null
+    weights: js.Array[Tensor[Rank]] = null
   ): EmbeddingLayerArgs = {
     val __obj = js.Dynamic.literal(inputDim = inputDim.asInstanceOf[js.Any], outputDim = outputDim.asInstanceOf[js.Any])
     if (activityRegularizer != null) __obj.updateDynamic("activityRegularizer")(activityRegularizer.asInstanceOf[js.Any])

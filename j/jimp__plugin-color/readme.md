@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-color
 
-Typings are for version 0.9.3
+Typings are for version 0.9.6
 
 ## Library description:
 Bitmap manipulation to adjust the color in an image.

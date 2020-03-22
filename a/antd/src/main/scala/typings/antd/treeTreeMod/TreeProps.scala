@@ -78,7 +78,6 @@ trait TreeProps extends js.Object {
   var showLine: js.UndefOr[Boolean] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var switcherIcon: js.UndefOr[ReactElement] = js.undefined
-  var treeData: js.UndefOr[js.Array[TreeNodeNormal]] = js.undefined
 }
 
 object TreeProps {
@@ -123,8 +122,7 @@ object TreeProps {
     showIcon: js.UndefOr[Boolean] = js.undefined,
     showLine: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    switcherIcon: ReactElement = null,
-    treeData: js.Array[TreeNodeNormal] = null
+    switcherIcon: ReactElement = null
   ): TreeProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent.asInstanceOf[js.Any])
@@ -167,7 +165,6 @@ object TreeProps {
     if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (switcherIcon != null) __obj.updateDynamic("switcherIcon")(switcherIcon.asInstanceOf[js.Any])
-    if (treeData != null) __obj.updateDynamic("treeData")(treeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeProps]
   }
 }

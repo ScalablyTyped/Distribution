@@ -1,6 +1,6 @@
 package typings.materialUiCore.appBarAppBarMod
 
-import typings.materialUiCore.PartialClassNameMapAppBarClassKey
+import typings.materialUiCore.PartialClassNameMapAppBar
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.absolute
@@ -153,7 +153,7 @@ trait AppBarProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapAppBarClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapAppBar] = js.native
   var color: js.UndefOr[Color] = js.native
   var component: js.UndefOr[ReactType[PaperProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -337,7 +337,7 @@ object AppBarProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapAppBarClassKey = null,
+    classes: PartialClassNameMapAppBar = null,
     color: Color = null,
     component: ReactType[PaperProps] = null,
     contentEditable: Booleanish | inherit = null,

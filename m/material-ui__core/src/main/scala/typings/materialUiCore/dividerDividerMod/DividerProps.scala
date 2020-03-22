@@ -1,6 +1,6 @@
 package typings.materialUiCore.dividerDividerMod
 
-import typings.materialUiCore.PartialClassNameMapDividerClassKey
+import typings.materialUiCore.PartialClassNameMapDivide
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -150,7 +150,7 @@ trait DividerProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapDividerClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapDivide] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[DividerProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -335,7 +335,7 @@ object DividerProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapDividerClassKey = null,
+    classes: PartialClassNameMapDivide = null,
     color: String = null,
     component: ReactType[DividerProps] = null,
     contentEditable: Booleanish | inherit = null,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for atom
 
-Typings are for version 1.36
+Typings are for version 1.40
 
 ## Library description:
 shared, synchronous, independent state for javascript apps

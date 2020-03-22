@@ -1,6 +1,6 @@
 package typings.materialUiCore.listItemListItemMod
 
-import typings.materialUiCore.PartialClassNameMapListItemClassKey
+import typings.materialUiCore.PartialClassNameMapListIt
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`flex-start`
@@ -162,7 +162,7 @@ trait ListItemProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListItemClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListIt] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[ListItemProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -379,7 +379,7 @@ object ListItemProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapListItemClassKey = null,
+    classes: PartialClassNameMapListIt = null,
     color: String = null,
     component: ReactType[ListItemProps] = null,
     contentEditable: Booleanish | inherit = null,

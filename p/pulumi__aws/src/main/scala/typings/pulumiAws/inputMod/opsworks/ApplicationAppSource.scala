@@ -7,17 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ApplicationAppSource extends js.Object {
-  /**
-    * <elided>
-    */
   var password: js.UndefOr[Input[String]] = js.native
   /**
     * For sources that are version-aware, the revision to use.
     */
   var revision: js.UndefOr[Input[String]] = js.native
-  /**
-    * <elided>
-    */
   var sshKey: js.UndefOr[Input[String]] = js.native
   /**
     * The type of source to use. For example, "archive".

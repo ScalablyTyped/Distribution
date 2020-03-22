@@ -15,7 +15,7 @@ trait RequestValidatorArgs extends js.Object {
   /**
     * The ID of the associated Rest API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * Boolean whether to validate request body. Defaults to `false`.
     */
@@ -29,7 +29,7 @@ trait RequestValidatorArgs extends js.Object {
 object RequestValidatorArgs {
   @scala.inline
   def apply(
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     name: Input[String] = null,
     validateRequestBody: Input[Boolean] = null,
     validateRequestParameters: Input[Boolean] = null

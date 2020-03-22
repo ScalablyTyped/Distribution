@@ -15,7 +15,6 @@ sealed trait EventSource extends js.Object
 @js.native
 object EventSource extends js.Object {
   /**
-    *
     * Local means event comes from local user session.
     *
     */
@@ -23,7 +22,6 @@ object EventSource extends js.Object {
   sealed trait local extends EventSource
   
   /**
-    *
     * Remote means event comes from remote user session.
     *
     */

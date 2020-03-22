@@ -30,7 +30,8 @@ trait IKeytipLayerProps extends ClassAttributes[IKeytipLayer] {
     */
   var keytipExitSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.undefined
   /**
-    * List of key sequences that execute the return functionality in keytips (going back to the previous level of keytips)
+    * List of key sequences that execute the return functionality in keytips
+    * (going back to the previous level of keytips)
     */
   var keytipReturnSequences: js.UndefOr[js.Array[IKeytipTransitionKey]] = js.undefined
   /**

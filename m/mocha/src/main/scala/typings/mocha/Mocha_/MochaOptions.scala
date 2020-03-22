@@ -13,6 +13,8 @@ trait MochaOptions extends js.Object {
   var asyncOnly: js.UndefOr[Boolean] = js.undefined
   /** bail on the first test failure. */
   var bail: js.UndefOr[Boolean] = js.undefined
+  /** Color TTY output from reporter */
+  var color: js.UndefOr[Boolean] = js.undefined
   var delay: js.UndefOr[Boolean] = js.undefined
   var enableTimeouts: js.UndefOr[Boolean] = js.undefined
   var forbidOnly: js.UndefOr[Boolean] = js.undefined
@@ -47,7 +49,11 @@ trait MochaOptions extends js.Object {
   var timeout: js.UndefOr[Double | String] = js.undefined
   /** Test interfaces ("bdd", "tdd", "exports", etc.). */
   var ui: js.UndefOr[Interface] = js.undefined
-  /** Emit color output. */
+  /**
+    * Emit color output.
+    *
+    * @deprecated use `color` instead.
+    */
   var useColors: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -57,6 +63,7 @@ object MochaOptions {
     allowUncaught: js.UndefOr[Boolean] = js.undefined,
     asyncOnly: js.UndefOr[Boolean] = js.undefined,
     bail: js.UndefOr[Boolean] = js.undefined,
+    color: js.UndefOr[Boolean] = js.undefined,
     delay: js.UndefOr[Boolean] = js.undefined,
     enableTimeouts: js.UndefOr[Boolean] = js.undefined,
     forbidOnly: js.UndefOr[Boolean] = js.undefined,
@@ -81,6 +88,7 @@ object MochaOptions {
     if (!js.isUndefined(allowUncaught)) __obj.updateDynamic("allowUncaught")(allowUncaught.asInstanceOf[js.Any])
     if (!js.isUndefined(asyncOnly)) __obj.updateDynamic("asyncOnly")(asyncOnly.asInstanceOf[js.Any])
     if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (!js.isUndefined(enableTimeouts)) __obj.updateDynamic("enableTimeouts")(enableTimeouts.asInstanceOf[js.Any])
     if (!js.isUndefined(forbidOnly)) __obj.updateDynamic("forbidOnly")(forbidOnly.asInstanceOf[js.Any])

@@ -55,7 +55,7 @@ trait Cluster extends js.Object {
     */
   var ClusterSnapshotCopyStatus: js.UndefOr[typings.awsSdk.redshiftMod.ClusterSnapshotCopyStatus] = js.native
   /**
-    *  The current state of the cluster. Possible values are the following:    available     available, prep-for-resize     available, resize-cleanup     cancelling-resize     creating     deleting     final-snapshot     hardware-failure     incompatible-hsm     incompatible-network     incompatible-parameters     incompatible-restore     modifying     rebooting     renaming     resizing     rotating-keys     storage-full     updating-hsm   
+    *  The current state of the cluster. Possible values are the following:    available     available, prep-for-resize     available, resize-cleanup     cancelling-resize     creating     deleting     final-snapshot     hardware-failure     incompatible-hsm     incompatible-network     incompatible-parameters     incompatible-restore     modifying     paused     rebooting     renaming     resizing     rotating-keys     storage-full     updating-hsm   
     */
   var ClusterStatus: js.UndefOr[String] = js.native
   /**

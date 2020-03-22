@@ -44,7 +44,6 @@ class TableSort () extends ClientObject {
     */
   val method: SortMethod | PinYin | StrokeCount = js.native
   /**
-    *
     * Perform a sort operation.
     *
     * [Api set: ExcelApi 1.2]
@@ -64,7 +63,6 @@ class TableSort () extends ClientObject {
   @JSName("apply")
   def apply_StrokeCount(fields: js.Array[SortField], matchCase: Boolean, method: StrokeCount): Unit = js.native
   /**
-    *
     * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
     *
     * [Api set: ExcelApi 1.2]
@@ -81,7 +79,6 @@ class TableSort () extends ClientObject {
   def load(propertyNames: String): TableSort = js.native
   def load(propertyNames: js.Array[String]): TableSort = js.native
   /**
-    *
     * Reapplies the current sorting parameters to the table.
     *
     * [Api set: ExcelApi 1.2]

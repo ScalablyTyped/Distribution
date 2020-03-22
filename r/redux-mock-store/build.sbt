@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-mock-store"
-version := "1.0.2-dt-20200127Z-715976"
+version := "1.0.2-dt-20200227Z-715976"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

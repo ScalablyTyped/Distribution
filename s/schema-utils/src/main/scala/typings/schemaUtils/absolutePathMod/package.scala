@@ -6,4 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object absolutePathMod {
   type Ajv = typings.ajv.mod.Ajv
+  type ValidateFunction = typings.ajv.mod.ValidateFunction
 }

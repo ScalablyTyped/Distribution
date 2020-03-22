@@ -29,6 +29,7 @@ class HostedPublicVirtualInterface protected () extends CustomResource {
     * The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
     */
   val amazonAddress: Output_[String] = js.native
+  val amazonSideAsn: Output_[String] = js.native
   /**
     * The ARN of the virtual interface.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-google-analytics"
-version := "v1.1.8-dt-20190322Z-e52860"
+version := "v1.1.8-dt-20200226Z-e52860"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

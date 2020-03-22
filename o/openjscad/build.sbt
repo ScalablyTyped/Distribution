@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openjscad"
-version := "0.0-unknown-dt-20191101Z-80ed99"
+version := "0.0-unknown-dt-20200225Z-80ed99"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

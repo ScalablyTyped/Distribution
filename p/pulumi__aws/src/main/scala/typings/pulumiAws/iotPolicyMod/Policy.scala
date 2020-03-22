@@ -33,6 +33,9 @@ class Policy protected () extends CustomResource {
     * The name of the policy.
     */
   val name: Output_[String] = js.native
+  /**
+    * The policy document.
+    */
   val policy: Output_[String] = js.native
 }
 

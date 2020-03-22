@@ -20,7 +20,7 @@ package object mod {
   type RequestHandler[P /* <: typings.expressServeStaticCore.mod.Params */] = typings.expressServeStaticCore.mod.RequestHandler[P, js.Any, js.Any]
   type RequestParamHandler = typings.expressServeStaticCore.mod.RequestParamHandler
   type Request_[P /* <: typings.expressServeStaticCore.mod.Params */] = typings.expressServeStaticCore.mod.Request[P, js.Any, js.Any]
-  type Response_ = typings.expressServeStaticCore.mod.Response[js.Any]
+  type Response_[ResBody] = typings.expressServeStaticCore.mod.Response[ResBody]
   type Router = typings.expressServeStaticCore.mod.Router
   type Send = typings.expressServeStaticCore.mod.Send[js.Any, typings.expressServeStaticCore.mod.Response[js.Any]]
 }

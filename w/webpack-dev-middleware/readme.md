@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-dev-middleware
 
-Typings are for version 2.0
+Typings are for version 3.7
 
 ## Library description:
 A development middleware for webpack

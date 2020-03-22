@@ -8,7 +8,7 @@ package object mod {
   type e = js.Function0[
     js.Function3[
       /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
-      /* res */ typings.express.mod.Response_, 
+      /* res */ typings.express.mod.Response_[js.Any], 
       /* next */ typings.express.mod.NextFunction, 
       scala.Unit
     ]

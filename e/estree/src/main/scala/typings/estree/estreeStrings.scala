@@ -181,6 +181,9 @@ object estreeStrings {
   sealed trait ImportDefaultSpecifier extends js.Object
   
   @js.native
+  sealed trait ImportExpression extends js.Object
+  
+  @js.native
   sealed trait ImportNamespaceSpecifier extends js.Object
   
   @js.native
@@ -492,6 +495,8 @@ object estreeStrings {
   def ImportDeclaration: ImportDeclaration = "ImportDeclaration".asInstanceOf[ImportDeclaration]
   @scala.inline
   def ImportDefaultSpecifier: ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[ImportDefaultSpecifier]
+  @scala.inline
+  def ImportExpression: ImportExpression = "ImportExpression".asInstanceOf[ImportExpression]
   @scala.inline
   def ImportNamespaceSpecifier: ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[ImportNamespaceSpecifier]
   @scala.inline

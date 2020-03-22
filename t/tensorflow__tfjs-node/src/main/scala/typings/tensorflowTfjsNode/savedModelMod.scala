@@ -1,11 +1,10 @@
 package typings.tensorflowTfjsNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.tensorflowTfjs.mod.Tensor_
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.modelTypesMod.InferenceModel
 import typings.tensorflowTfjsCore.modelTypesMod.MetaGraph
-import typings.tensorflowTfjsCore.modelTypesMod.ModelPredictConfig
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
 import scala.scalajs.js
@@ -36,27 +35,7 @@ object savedModelMod extends js.Object {
       */
     /** @doc {heading: 'Models', subheading: 'SavedModel'} */
     def dispose(): Unit = js.native
-    /**
-      * Execute the inference for the input tensors and return activation
-      * values for specified output node names without batching.
-      *
-      * @param input The input tensors, when there is single input for the model,
-      * inputs param should be a Tensor. For models with multiple inputs, inputs
-      * params should be in either Tensor[] if the input order is fixed, or
-      * otherwise NamedTensorMap format.
-      *
-      * @param outputs string|string[]. List of output node names to retrieve
-      * activation from.
-      *
-      * @returns Activation values for the output nodes result tensors. The return
-      * type matches specified parameter outputs type. The output would be single
-      * Tensor if single output is specified, otherwise Tensor[] for multiple
-      * outputs.
-      */
-    /** @doc {heading: 'Models', subheading: 'SavedModel'} */
-    def execute(inputs: Tensor_[Rank], outputs: String): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-    def execute(inputs: Tensor_[Rank], outputs: js.Array[String]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-    def predict(inputs: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
+    def predict(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     /**
       * Execute the inference for the input tensors.
       *
@@ -80,9 +59,8 @@ object savedModelMod extends js.Object {
       * be returned for model with multiple outputs.
       */
     /** @doc {heading: 'Models', subheading: 'SavedModel'} */
-    def predict(inputs: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
-    def predict(inputs: Tensor_[Rank], config: ModelPredictConfig): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
-    def predict(inputs: NamedTensorMap): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
+    def predict(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
+    def predict(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
   }
   
   def getEnumKeyFromValue(`object`: js.Any, value: Double): String = js.native

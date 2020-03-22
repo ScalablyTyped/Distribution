@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   - typings.iabVpaid.iabVpaidStrings.AdImpression
   - typings.iabVpaid.iabVpaidStrings.AdLinearChange
   - typings.iabVpaid.iabVpaidStrings.AdVideoComplete
-  - typings.iabVpaid.iabVpaidStrings.AdVideoMidPoint
   - typings.iabVpaid.iabVpaidStrings.AdRemainingTimeChange
+  - typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint
   - typings.iabVpaid.iabVpaidStrings.AdUserClose
   - typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation
   - typings.iabVpaid.iabVpaidStrings.AdClickThru
@@ -81,7 +81,7 @@ object EventsNames {
   @scala.inline
   def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = this.cast("AdVideoFirstQuartile")
   @scala.inline
-  def AdVideoMidPoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidPoint = this.cast("AdVideoMidPoint")
+  def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = this.cast("AdVideoMidpoint")
   @scala.inline
   def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = this.cast("AdVideoStart")
   @scala.inline

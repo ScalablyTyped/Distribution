@@ -23,11 +23,13 @@ trait PointLabelObject extends js.Object {
     */
   var percentage: Double
   /**
-    * The related point.
+    * The related point. The point name, if defined, is available through
+    * `this.point.name`.
     */
   var point: Point
   /**
-    * The related series.
+    * The related series. The series name is available through
+    * `this.series.name`.
     */
   var series: Series
   /**

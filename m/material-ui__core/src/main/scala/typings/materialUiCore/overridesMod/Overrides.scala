@@ -1,97 +1,95 @@
 package typings.materialUiCore.overridesMod
 
-import typings.materialUiCore.PartialStyleRulesAppBarClassKey
-import typings.materialUiCore.PartialStyleRulesAvatarClassKey
-import typings.materialUiCore.PartialStyleRulesBackdropClassKey
-import typings.materialUiCore.PartialStyleRulesBadgeClassKey
-import typings.materialUiCore.PartialStyleRulesBottomNavigationActionClassKey
-import typings.materialUiCore.PartialStyleRulesBottomNavigationClassKey
-import typings.materialUiCore.PartialStyleRulesButtonBaseClassKey
-import typings.materialUiCore.PartialStyleRulesButtonClassKey
-import typings.materialUiCore.PartialStyleRulesCardActionAreaClassKey
-import typings.materialUiCore.PartialStyleRulesCardActionsClassKey
-import typings.materialUiCore.PartialStyleRulesCardClassKey
-import typings.materialUiCore.PartialStyleRulesCardContentClassKey
-import typings.materialUiCore.PartialStyleRulesCardHeaderClassKey
-import typings.materialUiCore.PartialStyleRulesCardMediaClassKey
-import typings.materialUiCore.PartialStyleRulesCheckboxClassKey
-import typings.materialUiCore.PartialStyleRulesChipClassKey
-import typings.materialUiCore.PartialStyleRulesCircularProgressClassKey
-import typings.materialUiCore.PartialStyleRulesCollapseClassKey
-import typings.materialUiCore.PartialStyleRulesCssBaselineClassKey
-import typings.materialUiCore.PartialStyleRulesDialogActionsClassKey
-import typings.materialUiCore.PartialStyleRulesDialogClassKey
-import typings.materialUiCore.PartialStyleRulesDialogContentClassKey
-import typings.materialUiCore.PartialStyleRulesDialogContentTextClassKey
-import typings.materialUiCore.PartialStyleRulesDialogTitleClassKey
-import typings.materialUiCore.PartialStyleRulesDividerClassKey
-import typings.materialUiCore.PartialStyleRulesDrawerClassKey
-import typings.materialUiCore.PartialStyleRulesExpansionPanelActionsClassKey
-import typings.materialUiCore.PartialStyleRulesExpansionPanelClassKey
-import typings.materialUiCore.PartialStyleRulesExpansionPanelDetailsClassKey
-import typings.materialUiCore.PartialStyleRulesExpansionPanelSummaryClassKey
-import typings.materialUiCore.PartialStyleRulesFabClassKey
-import typings.materialUiCore.PartialStyleRulesFilledInputClassKey
-import typings.materialUiCore.PartialStyleRulesFormControlClassKey
-import typings.materialUiCore.PartialStyleRulesFormControlLabelClassKey
-import typings.materialUiCore.PartialStyleRulesFormGroupClassKey
-import typings.materialUiCore.PartialStyleRulesFormHelperTextClassKey
-import typings.materialUiCore.PartialStyleRulesFormLabelClassKey
-import typings.materialUiCore.PartialStyleRulesGridClassKey
-import typings.materialUiCore.PartialStyleRulesGridListClassKey
-import typings.materialUiCore.PartialStyleRulesGridListTileBarClassKey
-import typings.materialUiCore.PartialStyleRulesGridListTileClassKey
-import typings.materialUiCore.PartialStyleRulesIconButtonClassKey
-import typings.materialUiCore.PartialStyleRulesIconClassKey
-import typings.materialUiCore.PartialStyleRulesInputAdornmentClassKey
-import typings.materialUiCore.PartialStyleRulesInputBaseClassKey
-import typings.materialUiCore.PartialStyleRulesInputClassKey
-import typings.materialUiCore.PartialStyleRulesInputLabelClassKey
-import typings.materialUiCore.PartialStyleRulesLinearProgressClassKey
-import typings.materialUiCore.PartialStyleRulesLinkClassKey
-import typings.materialUiCore.PartialStyleRulesListClassKey
-import typings.materialUiCore.PartialStyleRulesListItemAvatarClassKey
-import typings.materialUiCore.PartialStyleRulesListItemClassKey
-import typings.materialUiCore.PartialStyleRulesListItemIconClassKey
-import typings.materialUiCore.PartialStyleRulesListItemSecondaryActionClassKey
-import typings.materialUiCore.PartialStyleRulesListItemTextClassKey
-import typings.materialUiCore.PartialStyleRulesListSubheaderClassKey
-import typings.materialUiCore.PartialStyleRulesMenuClassKey
-import typings.materialUiCore.PartialStyleRulesMenuItemClassKey
-import typings.materialUiCore.PartialStyleRulesMobileStepperClassKey
-import typings.materialUiCore.PartialStyleRulesModalClassKey
-import typings.materialUiCore.PartialStyleRulesNativeSelectClassKey
-import typings.materialUiCore.PartialStyleRulesOutlinedInputClassKey
-import typings.materialUiCore.PartialStyleRulesPaperClassKey
-import typings.materialUiCore.PartialStyleRulesPopoverClassKey
-import typings.materialUiCore.PartialStyleRulesRadioClassKey
-import typings.materialUiCore.PartialStyleRulesSelectClassKey
-import typings.materialUiCore.PartialStyleRulesSnackbarClassKey
-import typings.materialUiCore.PartialStyleRulesSnackbarContentClassKey
-import typings.materialUiCore.PartialStyleRulesStepButtonClasskey
-import typings.materialUiCore.PartialStyleRulesStepClasskey
-import typings.materialUiCore.PartialStyleRulesStepConnectorClasskey
-import typings.materialUiCore.PartialStyleRulesStepContentClasskey
-import typings.materialUiCore.PartialStyleRulesStepIconClasskey
-import typings.materialUiCore.PartialStyleRulesStepLabelClasskey
-import typings.materialUiCore.PartialStyleRulesStepperClasskey
-import typings.materialUiCore.PartialStyleRulesSvgIconClassKey
-import typings.materialUiCore.PartialStyleRulesSwitchBaseClassKey
-import typings.materialUiCore.PartialStyleRulesSwitchClassKey
-import typings.materialUiCore.PartialStyleRulesTabClassKey
-import typings.materialUiCore.PartialStyleRulesTableBodyClassKey
-import typings.materialUiCore.PartialStyleRulesTableCellClassKey
-import typings.materialUiCore.PartialStyleRulesTableClassKey
-import typings.materialUiCore.PartialStyleRulesTableFooterClassKey
-import typings.materialUiCore.PartialStyleRulesTableHeadClassKey
-import typings.materialUiCore.PartialStyleRulesTablePaginationClassKey
-import typings.materialUiCore.PartialStyleRulesTableRowClassKey
-import typings.materialUiCore.PartialStyleRulesTableSortLabelClassKey
-import typings.materialUiCore.PartialStyleRulesTabsClassKey
-import typings.materialUiCore.PartialStyleRulesToolbarClassKey
-import typings.materialUiCore.PartialStyleRulesTooltipClassKey
-import typings.materialUiCore.PartialStyleRulesTouchRippleClassKey
-import typings.materialUiCore.PartialStyleRulesTypographyClassKey
+import typings.materialUiCore.PartialStyleRulesAppBarCl
+import typings.materialUiCore.PartialStyleRulesAvatarCl
+import typings.materialUiCore.PartialStyleRulesBackdrop
+import typings.materialUiCore.PartialStyleRulesBadgeCla
+import typings.materialUiCore.PartialStyleRulesBottomNa
+import typings.materialUiCore.PartialStyleRulesBottomNaRoot
+import typings.materialUiCore.PartialStyleRulesButtonBa
+import typings.materialUiCore.PartialStyleRulesButtonCl
+import typings.materialUiCore.PartialStyleRulesCardActi
+import typings.materialUiCore.PartialStyleRulesCardActiAction
+import typings.materialUiCore.PartialStyleRulesCardClas
+import typings.materialUiCore.PartialStyleRulesCardCont
+import typings.materialUiCore.PartialStyleRulesCardHead
+import typings.materialUiCore.PartialStyleRulesCardMedi
+import typings.materialUiCore.PartialStyleRulesCheckbox
+import typings.materialUiCore.PartialStyleRulesChipClas
+import typings.materialUiCore.PartialStyleRulesCircular
+import typings.materialUiCore.PartialStyleRulesCollapse
+import typings.materialUiCore.PartialStyleRulesCssBasel
+import typings.materialUiCore.PartialStyleRulesDialogAc
+import typings.materialUiCore.PartialStyleRulesDialogCl
+import typings.materialUiCore.PartialStyleRulesDialogCo
+import typings.materialUiCore.PartialStyleRulesDialogTi
+import typings.materialUiCore.PartialStyleRulesDividerC
+import typings.materialUiCore.PartialStyleRulesDrawerCl
+import typings.materialUiCore.PartialStyleRulesExpansio
+import typings.materialUiCore.PartialStyleRulesExpansioAction
+import typings.materialUiCore.PartialStyleRulesExpansioContent
+import typings.materialUiCore.PartialStyleRulesExpansioRoot
+import typings.materialUiCore.PartialStyleRulesFabClass
+import typings.materialUiCore.PartialStyleRulesFilledIn
+import typings.materialUiCore.PartialStyleRulesFormCont
+import typings.materialUiCore.PartialStyleRulesFormContDisabled
+import typings.materialUiCore.PartialStyleRulesFormGrou
+import typings.materialUiCore.PartialStyleRulesFormHelp
+import typings.materialUiCore.PartialStyleRulesFormLabe
+import typings.materialUiCore.PartialStyleRulesGridClas
+import typings.materialUiCore.PartialStyleRulesGridList
+import typings.materialUiCore.PartialStyleRulesGridListActionIcon
+import typings.materialUiCore.PartialStyleRulesGridListImgFullHeight
+import typings.materialUiCore.PartialStyleRulesIconButt
+import typings.materialUiCore.PartialStyleRulesIconClas
+import typings.materialUiCore.PartialStyleRulesInputAdo
+import typings.materialUiCore.PartialStyleRulesInputBas
+import typings.materialUiCore.PartialStyleRulesInputCla
+import typings.materialUiCore.PartialStyleRulesInputLab
+import typings.materialUiCore.PartialStyleRulesLinearPr
+import typings.materialUiCore.PartialStyleRulesLinkClas
+import typings.materialUiCore.PartialStyleRulesListClas
+import typings.materialUiCore.PartialStyleRulesListItem
+import typings.materialUiCore.PartialStyleRulesListItemButton
+import typings.materialUiCore.PartialStyleRulesListItemDense
+import typings.materialUiCore.PartialStyleRulesListItemIcon
+import typings.materialUiCore.PartialStyleRulesListSubh
+import typings.materialUiCore.PartialStyleRulesMenuClas
+import typings.materialUiCore.PartialStyleRulesMenuItem
+import typings.materialUiCore.PartialStyleRulesMobileSt
+import typings.materialUiCore.PartialStyleRulesModalCla
+import typings.materialUiCore.PartialStyleRulesNativeSe
+import typings.materialUiCore.PartialStyleRulesOutlined
+import typings.materialUiCore.PartialStyleRulesPaperCla
+import typings.materialUiCore.PartialStyleRulesPopoverC
+import typings.materialUiCore.PartialStyleRulesRadioCla
+import typings.materialUiCore.PartialStyleRulesSelectCl
+import typings.materialUiCore.PartialStyleRulesSnackbar
+import typings.materialUiCore.PartialStyleRulesSnackbarAction
+import typings.materialUiCore.PartialStyleRulesStepButt
+import typings.materialUiCore.PartialStyleRulesStepClas
+import typings.materialUiCore.PartialStyleRulesStepConn
+import typings.materialUiCore.PartialStyleRulesStepCont
+import typings.materialUiCore.PartialStyleRulesStepIcon
+import typings.materialUiCore.PartialStyleRulesStepLabe
+import typings.materialUiCore.PartialStyleRulesStepperC
+import typings.materialUiCore.PartialStyleRulesSvgIconC
+import typings.materialUiCore.PartialStyleRulesSwitchBa
+import typings.materialUiCore.PartialStyleRulesSwitchCl
+import typings.materialUiCore.PartialStyleRulesTabClass
+import typings.materialUiCore.PartialStyleRulesTableBod
+import typings.materialUiCore.PartialStyleRulesTableCel
+import typings.materialUiCore.PartialStyleRulesTableCla
+import typings.materialUiCore.PartialStyleRulesTableFoo
+import typings.materialUiCore.PartialStyleRulesTableHea
+import typings.materialUiCore.PartialStyleRulesTablePag
+import typings.materialUiCore.PartialStyleRulesTableRow
+import typings.materialUiCore.PartialStyleRulesTableSor
+import typings.materialUiCore.PartialStyleRulesTabsClas
+import typings.materialUiCore.PartialStyleRulesToolbarC
+import typings.materialUiCore.PartialStyleRulesTooltipC
+import typings.materialUiCore.PartialStyleRulesTouchRip
+import typings.materialUiCore.PartialStyleRulesTypograp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -99,195 +97,195 @@ import scala.scalajs.js.annotation._
 /* Inlined {[ Name in keyof @material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey ]:? std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/styles/overrides.ComponentNameToClassKey[Name]>>} */
 @js.native
 trait Overrides extends js.Object {
-  var MuiAppBar: js.UndefOr[PartialStyleRulesAppBarClassKey] = js.native
-  var MuiAvatar: js.UndefOr[PartialStyleRulesAvatarClassKey] = js.native
-  var MuiBackdrop: js.UndefOr[PartialStyleRulesBackdropClassKey] = js.native
-  var MuiBadge: js.UndefOr[PartialStyleRulesBadgeClassKey] = js.native
-  var MuiBottomNavigation: js.UndefOr[PartialStyleRulesBottomNavigationClassKey] = js.native
-  var MuiBottomNavigationAction: js.UndefOr[PartialStyleRulesBottomNavigationActionClassKey] = js.native
-  var MuiButton: js.UndefOr[PartialStyleRulesButtonClassKey] = js.native
-  var MuiButtonBase: js.UndefOr[PartialStyleRulesButtonBaseClassKey] = js.native
-  var MuiCard: js.UndefOr[PartialStyleRulesCardClassKey] = js.native
-  var MuiCardActionArea: js.UndefOr[PartialStyleRulesCardActionAreaClassKey] = js.native
-  var MuiCardActions: js.UndefOr[PartialStyleRulesCardActionsClassKey] = js.native
-  var MuiCardContent: js.UndefOr[PartialStyleRulesCardContentClassKey] = js.native
-  var MuiCardHeader: js.UndefOr[PartialStyleRulesCardHeaderClassKey] = js.native
-  var MuiCardMedia: js.UndefOr[PartialStyleRulesCardMediaClassKey] = js.native
-  var MuiCheckbox: js.UndefOr[PartialStyleRulesCheckboxClassKey] = js.native
-  var MuiChip: js.UndefOr[PartialStyleRulesChipClassKey] = js.native
-  var MuiCircularProgress: js.UndefOr[PartialStyleRulesCircularProgressClassKey] = js.native
-  var MuiCollapse: js.UndefOr[PartialStyleRulesCollapseClassKey] = js.native
-  var MuiCssBaseline: js.UndefOr[PartialStyleRulesCssBaselineClassKey] = js.native
-  var MuiDialog: js.UndefOr[PartialStyleRulesDialogClassKey] = js.native
-  var MuiDialogActions: js.UndefOr[PartialStyleRulesDialogActionsClassKey] = js.native
-  var MuiDialogContent: js.UndefOr[PartialStyleRulesDialogContentClassKey] = js.native
-  var MuiDialogContentText: js.UndefOr[PartialStyleRulesDialogContentTextClassKey] = js.native
-  var MuiDialogTitle: js.UndefOr[PartialStyleRulesDialogTitleClassKey] = js.native
-  var MuiDivider: js.UndefOr[PartialStyleRulesDividerClassKey] = js.native
-  var MuiDrawer: js.UndefOr[PartialStyleRulesDrawerClassKey] = js.native
-  var MuiExpansionPanel: js.UndefOr[PartialStyleRulesExpansionPanelClassKey] = js.native
-  var MuiExpansionPanelActions: js.UndefOr[PartialStyleRulesExpansionPanelActionsClassKey] = js.native
-  var MuiExpansionPanelDetails: js.UndefOr[PartialStyleRulesExpansionPanelDetailsClassKey] = js.native
-  var MuiExpansionPanelSummary: js.UndefOr[PartialStyleRulesExpansionPanelSummaryClassKey] = js.native
-  var MuiFab: js.UndefOr[PartialStyleRulesFabClassKey] = js.native
-  var MuiFilledInput: js.UndefOr[PartialStyleRulesFilledInputClassKey] = js.native
-  var MuiFormControl: js.UndefOr[PartialStyleRulesFormControlClassKey] = js.native
-  var MuiFormControlLabel: js.UndefOr[PartialStyleRulesFormControlLabelClassKey] = js.native
-  var MuiFormGroup: js.UndefOr[PartialStyleRulesFormGroupClassKey] = js.native
-  var MuiFormHelperText: js.UndefOr[PartialStyleRulesFormHelperTextClassKey] = js.native
-  var MuiFormLabel: js.UndefOr[PartialStyleRulesFormLabelClassKey] = js.native
-  var MuiGrid: js.UndefOr[PartialStyleRulesGridClassKey] = js.native
-  var MuiGridList: js.UndefOr[PartialStyleRulesGridListClassKey] = js.native
-  var MuiGridListTile: js.UndefOr[PartialStyleRulesGridListTileClassKey] = js.native
-  var MuiGridListTileBar: js.UndefOr[PartialStyleRulesGridListTileBarClassKey] = js.native
-  var MuiIcon: js.UndefOr[PartialStyleRulesIconClassKey] = js.native
-  var MuiIconButton: js.UndefOr[PartialStyleRulesIconButtonClassKey] = js.native
-  var MuiInput: js.UndefOr[PartialStyleRulesInputClassKey] = js.native
-  var MuiInputAdornment: js.UndefOr[PartialStyleRulesInputAdornmentClassKey] = js.native
-  var MuiInputBase: js.UndefOr[PartialStyleRulesInputBaseClassKey] = js.native
-  var MuiInputLabel: js.UndefOr[PartialStyleRulesInputLabelClassKey] = js.native
-  var MuiLinearProgress: js.UndefOr[PartialStyleRulesLinearProgressClassKey] = js.native
-  var MuiLink: js.UndefOr[PartialStyleRulesLinkClassKey] = js.native
-  var MuiList: js.UndefOr[PartialStyleRulesListClassKey] = js.native
-  var MuiListItem: js.UndefOr[PartialStyleRulesListItemClassKey] = js.native
-  var MuiListItemAvatar: js.UndefOr[PartialStyleRulesListItemAvatarClassKey] = js.native
-  var MuiListItemIcon: js.UndefOr[PartialStyleRulesListItemIconClassKey] = js.native
-  var MuiListItemSecondaryAction: js.UndefOr[PartialStyleRulesListItemSecondaryActionClassKey] = js.native
-  var MuiListItemText: js.UndefOr[PartialStyleRulesListItemTextClassKey] = js.native
-  var MuiListSubheader: js.UndefOr[PartialStyleRulesListSubheaderClassKey] = js.native
-  var MuiMenu: js.UndefOr[PartialStyleRulesMenuClassKey] = js.native
-  var MuiMenuItem: js.UndefOr[PartialStyleRulesMenuItemClassKey] = js.native
-  var MuiMobileStepper: js.UndefOr[PartialStyleRulesMobileStepperClassKey] = js.native
-  var MuiModal: js.UndefOr[PartialStyleRulesModalClassKey] = js.native
-  var MuiNativeSelect: js.UndefOr[PartialStyleRulesNativeSelectClassKey] = js.native
-  var MuiOutlinedInput: js.UndefOr[PartialStyleRulesOutlinedInputClassKey] = js.native
-  var MuiPaper: js.UndefOr[PartialStyleRulesPaperClassKey] = js.native
-  var MuiPopover: js.UndefOr[PartialStyleRulesPopoverClassKey] = js.native
-  var MuiRadio: js.UndefOr[PartialStyleRulesRadioClassKey] = js.native
-  var MuiSelect: js.UndefOr[PartialStyleRulesSelectClassKey] = js.native
-  var MuiSnackbar: js.UndefOr[PartialStyleRulesSnackbarClassKey] = js.native
-  var MuiSnackbarContent: js.UndefOr[PartialStyleRulesSnackbarContentClassKey] = js.native
-  var MuiStep: js.UndefOr[PartialStyleRulesStepClasskey] = js.native
-  var MuiStepButton: js.UndefOr[PartialStyleRulesStepButtonClasskey] = js.native
-  var MuiStepConnector: js.UndefOr[PartialStyleRulesStepConnectorClasskey] = js.native
-  var MuiStepContent: js.UndefOr[PartialStyleRulesStepContentClasskey] = js.native
-  var MuiStepIcon: js.UndefOr[PartialStyleRulesStepIconClasskey] = js.native
-  var MuiStepLabel: js.UndefOr[PartialStyleRulesStepLabelClasskey] = js.native
-  var MuiStepper: js.UndefOr[PartialStyleRulesStepperClasskey] = js.native
-  var MuiSvgIcon: js.UndefOr[PartialStyleRulesSvgIconClassKey] = js.native
-  var MuiSwitch: js.UndefOr[PartialStyleRulesSwitchClassKey] = js.native
-  var MuiSwitchBase: js.UndefOr[PartialStyleRulesSwitchBaseClassKey] = js.native
-  var MuiTab: js.UndefOr[PartialStyleRulesTabClassKey] = js.native
-  var MuiTable: js.UndefOr[PartialStyleRulesTableClassKey] = js.native
-  var MuiTableBody: js.UndefOr[PartialStyleRulesTableBodyClassKey] = js.native
-  var MuiTableCell: js.UndefOr[PartialStyleRulesTableCellClassKey] = js.native
-  var MuiTableFooter: js.UndefOr[PartialStyleRulesTableFooterClassKey] = js.native
-  var MuiTableHead: js.UndefOr[PartialStyleRulesTableHeadClassKey] = js.native
-  var MuiTablePagination: js.UndefOr[PartialStyleRulesTablePaginationClassKey] = js.native
-  var MuiTableRow: js.UndefOr[PartialStyleRulesTableRowClassKey] = js.native
-  var MuiTableSortLabel: js.UndefOr[PartialStyleRulesTableSortLabelClassKey] = js.native
-  var MuiTabs: js.UndefOr[PartialStyleRulesTabsClassKey] = js.native
-  var MuiToolbar: js.UndefOr[PartialStyleRulesToolbarClassKey] = js.native
-  var MuiTooltip: js.UndefOr[PartialStyleRulesTooltipClassKey] = js.native
-  var MuiTouchRipple: js.UndefOr[PartialStyleRulesTouchRippleClassKey] = js.native
-  var MuiTypography: js.UndefOr[PartialStyleRulesTypographyClassKey] = js.native
+  var MuiAppBar: js.UndefOr[PartialStyleRulesAppBarCl] = js.native
+  var MuiAvatar: js.UndefOr[PartialStyleRulesAvatarCl] = js.native
+  var MuiBackdrop: js.UndefOr[PartialStyleRulesBackdrop] = js.native
+  var MuiBadge: js.UndefOr[PartialStyleRulesBadgeCla] = js.native
+  var MuiBottomNavigation: js.UndefOr[PartialStyleRulesBottomNaRoot] = js.native
+  var MuiBottomNavigationAction: js.UndefOr[PartialStyleRulesBottomNa] = js.native
+  var MuiButton: js.UndefOr[PartialStyleRulesButtonCl] = js.native
+  var MuiButtonBase: js.UndefOr[PartialStyleRulesButtonBa] = js.native
+  var MuiCard: js.UndefOr[PartialStyleRulesCardClas] = js.native
+  var MuiCardActionArea: js.UndefOr[PartialStyleRulesCardActi] = js.native
+  var MuiCardActions: js.UndefOr[PartialStyleRulesCardActiAction] = js.native
+  var MuiCardContent: js.UndefOr[PartialStyleRulesCardCont] = js.native
+  var MuiCardHeader: js.UndefOr[PartialStyleRulesCardHead] = js.native
+  var MuiCardMedia: js.UndefOr[PartialStyleRulesCardMedi] = js.native
+  var MuiCheckbox: js.UndefOr[PartialStyleRulesCheckbox] = js.native
+  var MuiChip: js.UndefOr[PartialStyleRulesChipClas] = js.native
+  var MuiCircularProgress: js.UndefOr[PartialStyleRulesCircular] = js.native
+  var MuiCollapse: js.UndefOr[PartialStyleRulesCollapse] = js.native
+  var MuiCssBaseline: js.UndefOr[PartialStyleRulesCssBasel] = js.native
+  var MuiDialog: js.UndefOr[PartialStyleRulesDialogCl] = js.native
+  var MuiDialogActions: js.UndefOr[PartialStyleRulesDialogAc] = js.native
+  var MuiDialogContent: js.UndefOr[PartialStyleRulesDialogCo] = js.native
+  var MuiDialogContentText: js.UndefOr[PartialStyleRulesDialogCo] = js.native
+  var MuiDialogTitle: js.UndefOr[PartialStyleRulesDialogTi] = js.native
+  var MuiDivider: js.UndefOr[PartialStyleRulesDividerC] = js.native
+  var MuiDrawer: js.UndefOr[PartialStyleRulesDrawerCl] = js.native
+  var MuiExpansionPanel: js.UndefOr[PartialStyleRulesExpansio] = js.native
+  var MuiExpansionPanelActions: js.UndefOr[PartialStyleRulesExpansioAction] = js.native
+  var MuiExpansionPanelDetails: js.UndefOr[PartialStyleRulesExpansioRoot] = js.native
+  var MuiExpansionPanelSummary: js.UndefOr[PartialStyleRulesExpansioContent] = js.native
+  var MuiFab: js.UndefOr[PartialStyleRulesFabClass] = js.native
+  var MuiFilledInput: js.UndefOr[PartialStyleRulesFilledIn] = js.native
+  var MuiFormControl: js.UndefOr[PartialStyleRulesFormCont] = js.native
+  var MuiFormControlLabel: js.UndefOr[PartialStyleRulesFormContDisabled] = js.native
+  var MuiFormGroup: js.UndefOr[PartialStyleRulesFormGrou] = js.native
+  var MuiFormHelperText: js.UndefOr[PartialStyleRulesFormHelp] = js.native
+  var MuiFormLabel: js.UndefOr[PartialStyleRulesFormLabe] = js.native
+  var MuiGrid: js.UndefOr[PartialStyleRulesGridClas] = js.native
+  var MuiGridList: js.UndefOr[PartialStyleRulesGridList] = js.native
+  var MuiGridListTile: js.UndefOr[PartialStyleRulesGridListImgFullHeight] = js.native
+  var MuiGridListTileBar: js.UndefOr[PartialStyleRulesGridListActionIcon] = js.native
+  var MuiIcon: js.UndefOr[PartialStyleRulesIconClas] = js.native
+  var MuiIconButton: js.UndefOr[PartialStyleRulesIconButt] = js.native
+  var MuiInput: js.UndefOr[PartialStyleRulesInputCla] = js.native
+  var MuiInputAdornment: js.UndefOr[PartialStyleRulesInputAdo] = js.native
+  var MuiInputBase: js.UndefOr[PartialStyleRulesInputBas] = js.native
+  var MuiInputLabel: js.UndefOr[PartialStyleRulesInputLab] = js.native
+  var MuiLinearProgress: js.UndefOr[PartialStyleRulesLinearPr] = js.native
+  var MuiLink: js.UndefOr[PartialStyleRulesLinkClas] = js.native
+  var MuiList: js.UndefOr[PartialStyleRulesListClas] = js.native
+  var MuiListItem: js.UndefOr[PartialStyleRulesListItemButton] = js.native
+  var MuiListItemAvatar: js.UndefOr[PartialStyleRulesListItemIcon] = js.native
+  var MuiListItemIcon: js.UndefOr[PartialStyleRulesListItem] = js.native
+  var MuiListItemSecondaryAction: js.UndefOr[PartialStyleRulesListItem] = js.native
+  var MuiListItemText: js.UndefOr[PartialStyleRulesListItemDense] = js.native
+  var MuiListSubheader: js.UndefOr[PartialStyleRulesListSubh] = js.native
+  var MuiMenu: js.UndefOr[PartialStyleRulesMenuClas] = js.native
+  var MuiMenuItem: js.UndefOr[PartialStyleRulesMenuItem] = js.native
+  var MuiMobileStepper: js.UndefOr[PartialStyleRulesMobileSt] = js.native
+  var MuiModal: js.UndefOr[PartialStyleRulesModalCla] = js.native
+  var MuiNativeSelect: js.UndefOr[PartialStyleRulesNativeSe] = js.native
+  var MuiOutlinedInput: js.UndefOr[PartialStyleRulesOutlined] = js.native
+  var MuiPaper: js.UndefOr[PartialStyleRulesPaperCla] = js.native
+  var MuiPopover: js.UndefOr[PartialStyleRulesPopoverC] = js.native
+  var MuiRadio: js.UndefOr[PartialStyleRulesRadioCla] = js.native
+  var MuiSelect: js.UndefOr[PartialStyleRulesSelectCl] = js.native
+  var MuiSnackbar: js.UndefOr[PartialStyleRulesSnackbar] = js.native
+  var MuiSnackbarContent: js.UndefOr[PartialStyleRulesSnackbarAction] = js.native
+  var MuiStep: js.UndefOr[PartialStyleRulesStepClas] = js.native
+  var MuiStepButton: js.UndefOr[PartialStyleRulesStepButt] = js.native
+  var MuiStepConnector: js.UndefOr[PartialStyleRulesStepConn] = js.native
+  var MuiStepContent: js.UndefOr[PartialStyleRulesStepCont] = js.native
+  var MuiStepIcon: js.UndefOr[PartialStyleRulesStepIcon] = js.native
+  var MuiStepLabel: js.UndefOr[PartialStyleRulesStepLabe] = js.native
+  var MuiStepper: js.UndefOr[PartialStyleRulesStepperC] = js.native
+  var MuiSvgIcon: js.UndefOr[PartialStyleRulesSvgIconC] = js.native
+  var MuiSwitch: js.UndefOr[PartialStyleRulesSwitchCl] = js.native
+  var MuiSwitchBase: js.UndefOr[PartialStyleRulesSwitchBa] = js.native
+  var MuiTab: js.UndefOr[PartialStyleRulesTabClass] = js.native
+  var MuiTable: js.UndefOr[PartialStyleRulesTableCla] = js.native
+  var MuiTableBody: js.UndefOr[PartialStyleRulesTableBod] = js.native
+  var MuiTableCell: js.UndefOr[PartialStyleRulesTableCel] = js.native
+  var MuiTableFooter: js.UndefOr[PartialStyleRulesTableFoo] = js.native
+  var MuiTableHead: js.UndefOr[PartialStyleRulesTableHea] = js.native
+  var MuiTablePagination: js.UndefOr[PartialStyleRulesTablePag] = js.native
+  var MuiTableRow: js.UndefOr[PartialStyleRulesTableRow] = js.native
+  var MuiTableSortLabel: js.UndefOr[PartialStyleRulesTableSor] = js.native
+  var MuiTabs: js.UndefOr[PartialStyleRulesTabsClas] = js.native
+  var MuiToolbar: js.UndefOr[PartialStyleRulesToolbarC] = js.native
+  var MuiTooltip: js.UndefOr[PartialStyleRulesTooltipC] = js.native
+  var MuiTouchRipple: js.UndefOr[PartialStyleRulesTouchRip] = js.native
+  var MuiTypography: js.UndefOr[PartialStyleRulesTypograp] = js.native
 }
 
 object Overrides {
   @scala.inline
   def apply(
-    MuiAppBar: PartialStyleRulesAppBarClassKey = null,
-    MuiAvatar: PartialStyleRulesAvatarClassKey = null,
-    MuiBackdrop: PartialStyleRulesBackdropClassKey = null,
-    MuiBadge: PartialStyleRulesBadgeClassKey = null,
-    MuiBottomNavigation: PartialStyleRulesBottomNavigationClassKey = null,
-    MuiBottomNavigationAction: PartialStyleRulesBottomNavigationActionClassKey = null,
-    MuiButton: PartialStyleRulesButtonClassKey = null,
-    MuiButtonBase: PartialStyleRulesButtonBaseClassKey = null,
-    MuiCard: PartialStyleRulesCardClassKey = null,
-    MuiCardActionArea: PartialStyleRulesCardActionAreaClassKey = null,
-    MuiCardActions: PartialStyleRulesCardActionsClassKey = null,
-    MuiCardContent: PartialStyleRulesCardContentClassKey = null,
-    MuiCardHeader: PartialStyleRulesCardHeaderClassKey = null,
-    MuiCardMedia: PartialStyleRulesCardMediaClassKey = null,
-    MuiCheckbox: PartialStyleRulesCheckboxClassKey = null,
-    MuiChip: PartialStyleRulesChipClassKey = null,
-    MuiCircularProgress: PartialStyleRulesCircularProgressClassKey = null,
-    MuiCollapse: PartialStyleRulesCollapseClassKey = null,
-    MuiCssBaseline: PartialStyleRulesCssBaselineClassKey = null,
-    MuiDialog: PartialStyleRulesDialogClassKey = null,
-    MuiDialogActions: PartialStyleRulesDialogActionsClassKey = null,
-    MuiDialogContent: PartialStyleRulesDialogContentClassKey = null,
-    MuiDialogContentText: PartialStyleRulesDialogContentTextClassKey = null,
-    MuiDialogTitle: PartialStyleRulesDialogTitleClassKey = null,
-    MuiDivider: PartialStyleRulesDividerClassKey = null,
-    MuiDrawer: PartialStyleRulesDrawerClassKey = null,
-    MuiExpansionPanel: PartialStyleRulesExpansionPanelClassKey = null,
-    MuiExpansionPanelActions: PartialStyleRulesExpansionPanelActionsClassKey = null,
-    MuiExpansionPanelDetails: PartialStyleRulesExpansionPanelDetailsClassKey = null,
-    MuiExpansionPanelSummary: PartialStyleRulesExpansionPanelSummaryClassKey = null,
-    MuiFab: PartialStyleRulesFabClassKey = null,
-    MuiFilledInput: PartialStyleRulesFilledInputClassKey = null,
-    MuiFormControl: PartialStyleRulesFormControlClassKey = null,
-    MuiFormControlLabel: PartialStyleRulesFormControlLabelClassKey = null,
-    MuiFormGroup: PartialStyleRulesFormGroupClassKey = null,
-    MuiFormHelperText: PartialStyleRulesFormHelperTextClassKey = null,
-    MuiFormLabel: PartialStyleRulesFormLabelClassKey = null,
-    MuiGrid: PartialStyleRulesGridClassKey = null,
-    MuiGridList: PartialStyleRulesGridListClassKey = null,
-    MuiGridListTile: PartialStyleRulesGridListTileClassKey = null,
-    MuiGridListTileBar: PartialStyleRulesGridListTileBarClassKey = null,
-    MuiIcon: PartialStyleRulesIconClassKey = null,
-    MuiIconButton: PartialStyleRulesIconButtonClassKey = null,
-    MuiInput: PartialStyleRulesInputClassKey = null,
-    MuiInputAdornment: PartialStyleRulesInputAdornmentClassKey = null,
-    MuiInputBase: PartialStyleRulesInputBaseClassKey = null,
-    MuiInputLabel: PartialStyleRulesInputLabelClassKey = null,
-    MuiLinearProgress: PartialStyleRulesLinearProgressClassKey = null,
-    MuiLink: PartialStyleRulesLinkClassKey = null,
-    MuiList: PartialStyleRulesListClassKey = null,
-    MuiListItem: PartialStyleRulesListItemClassKey = null,
-    MuiListItemAvatar: PartialStyleRulesListItemAvatarClassKey = null,
-    MuiListItemIcon: PartialStyleRulesListItemIconClassKey = null,
-    MuiListItemSecondaryAction: PartialStyleRulesListItemSecondaryActionClassKey = null,
-    MuiListItemText: PartialStyleRulesListItemTextClassKey = null,
-    MuiListSubheader: PartialStyleRulesListSubheaderClassKey = null,
-    MuiMenu: PartialStyleRulesMenuClassKey = null,
-    MuiMenuItem: PartialStyleRulesMenuItemClassKey = null,
-    MuiMobileStepper: PartialStyleRulesMobileStepperClassKey = null,
-    MuiModal: PartialStyleRulesModalClassKey = null,
-    MuiNativeSelect: PartialStyleRulesNativeSelectClassKey = null,
-    MuiOutlinedInput: PartialStyleRulesOutlinedInputClassKey = null,
-    MuiPaper: PartialStyleRulesPaperClassKey = null,
-    MuiPopover: PartialStyleRulesPopoverClassKey = null,
-    MuiRadio: PartialStyleRulesRadioClassKey = null,
-    MuiSelect: PartialStyleRulesSelectClassKey = null,
-    MuiSnackbar: PartialStyleRulesSnackbarClassKey = null,
-    MuiSnackbarContent: PartialStyleRulesSnackbarContentClassKey = null,
-    MuiStep: PartialStyleRulesStepClasskey = null,
-    MuiStepButton: PartialStyleRulesStepButtonClasskey = null,
-    MuiStepConnector: PartialStyleRulesStepConnectorClasskey = null,
-    MuiStepContent: PartialStyleRulesStepContentClasskey = null,
-    MuiStepIcon: PartialStyleRulesStepIconClasskey = null,
-    MuiStepLabel: PartialStyleRulesStepLabelClasskey = null,
-    MuiStepper: PartialStyleRulesStepperClasskey = null,
-    MuiSvgIcon: PartialStyleRulesSvgIconClassKey = null,
-    MuiSwitch: PartialStyleRulesSwitchClassKey = null,
-    MuiSwitchBase: PartialStyleRulesSwitchBaseClassKey = null,
-    MuiTab: PartialStyleRulesTabClassKey = null,
-    MuiTable: PartialStyleRulesTableClassKey = null,
-    MuiTableBody: PartialStyleRulesTableBodyClassKey = null,
-    MuiTableCell: PartialStyleRulesTableCellClassKey = null,
-    MuiTableFooter: PartialStyleRulesTableFooterClassKey = null,
-    MuiTableHead: PartialStyleRulesTableHeadClassKey = null,
-    MuiTablePagination: PartialStyleRulesTablePaginationClassKey = null,
-    MuiTableRow: PartialStyleRulesTableRowClassKey = null,
-    MuiTableSortLabel: PartialStyleRulesTableSortLabelClassKey = null,
-    MuiTabs: PartialStyleRulesTabsClassKey = null,
-    MuiToolbar: PartialStyleRulesToolbarClassKey = null,
-    MuiTooltip: PartialStyleRulesTooltipClassKey = null,
-    MuiTouchRipple: PartialStyleRulesTouchRippleClassKey = null,
-    MuiTypography: PartialStyleRulesTypographyClassKey = null
+    MuiAppBar: PartialStyleRulesAppBarCl = null,
+    MuiAvatar: PartialStyleRulesAvatarCl = null,
+    MuiBackdrop: PartialStyleRulesBackdrop = null,
+    MuiBadge: PartialStyleRulesBadgeCla = null,
+    MuiBottomNavigation: PartialStyleRulesBottomNaRoot = null,
+    MuiBottomNavigationAction: PartialStyleRulesBottomNa = null,
+    MuiButton: PartialStyleRulesButtonCl = null,
+    MuiButtonBase: PartialStyleRulesButtonBa = null,
+    MuiCard: PartialStyleRulesCardClas = null,
+    MuiCardActionArea: PartialStyleRulesCardActi = null,
+    MuiCardActions: PartialStyleRulesCardActiAction = null,
+    MuiCardContent: PartialStyleRulesCardCont = null,
+    MuiCardHeader: PartialStyleRulesCardHead = null,
+    MuiCardMedia: PartialStyleRulesCardMedi = null,
+    MuiCheckbox: PartialStyleRulesCheckbox = null,
+    MuiChip: PartialStyleRulesChipClas = null,
+    MuiCircularProgress: PartialStyleRulesCircular = null,
+    MuiCollapse: PartialStyleRulesCollapse = null,
+    MuiCssBaseline: PartialStyleRulesCssBasel = null,
+    MuiDialog: PartialStyleRulesDialogCl = null,
+    MuiDialogActions: PartialStyleRulesDialogAc = null,
+    MuiDialogContent: PartialStyleRulesDialogCo = null,
+    MuiDialogContentText: PartialStyleRulesDialogCo = null,
+    MuiDialogTitle: PartialStyleRulesDialogTi = null,
+    MuiDivider: PartialStyleRulesDividerC = null,
+    MuiDrawer: PartialStyleRulesDrawerCl = null,
+    MuiExpansionPanel: PartialStyleRulesExpansio = null,
+    MuiExpansionPanelActions: PartialStyleRulesExpansioAction = null,
+    MuiExpansionPanelDetails: PartialStyleRulesExpansioRoot = null,
+    MuiExpansionPanelSummary: PartialStyleRulesExpansioContent = null,
+    MuiFab: PartialStyleRulesFabClass = null,
+    MuiFilledInput: PartialStyleRulesFilledIn = null,
+    MuiFormControl: PartialStyleRulesFormCont = null,
+    MuiFormControlLabel: PartialStyleRulesFormContDisabled = null,
+    MuiFormGroup: PartialStyleRulesFormGrou = null,
+    MuiFormHelperText: PartialStyleRulesFormHelp = null,
+    MuiFormLabel: PartialStyleRulesFormLabe = null,
+    MuiGrid: PartialStyleRulesGridClas = null,
+    MuiGridList: PartialStyleRulesGridList = null,
+    MuiGridListTile: PartialStyleRulesGridListImgFullHeight = null,
+    MuiGridListTileBar: PartialStyleRulesGridListActionIcon = null,
+    MuiIcon: PartialStyleRulesIconClas = null,
+    MuiIconButton: PartialStyleRulesIconButt = null,
+    MuiInput: PartialStyleRulesInputCla = null,
+    MuiInputAdornment: PartialStyleRulesInputAdo = null,
+    MuiInputBase: PartialStyleRulesInputBas = null,
+    MuiInputLabel: PartialStyleRulesInputLab = null,
+    MuiLinearProgress: PartialStyleRulesLinearPr = null,
+    MuiLink: PartialStyleRulesLinkClas = null,
+    MuiList: PartialStyleRulesListClas = null,
+    MuiListItem: PartialStyleRulesListItemButton = null,
+    MuiListItemAvatar: PartialStyleRulesListItemIcon = null,
+    MuiListItemIcon: PartialStyleRulesListItem = null,
+    MuiListItemSecondaryAction: PartialStyleRulesListItem = null,
+    MuiListItemText: PartialStyleRulesListItemDense = null,
+    MuiListSubheader: PartialStyleRulesListSubh = null,
+    MuiMenu: PartialStyleRulesMenuClas = null,
+    MuiMenuItem: PartialStyleRulesMenuItem = null,
+    MuiMobileStepper: PartialStyleRulesMobileSt = null,
+    MuiModal: PartialStyleRulesModalCla = null,
+    MuiNativeSelect: PartialStyleRulesNativeSe = null,
+    MuiOutlinedInput: PartialStyleRulesOutlined = null,
+    MuiPaper: PartialStyleRulesPaperCla = null,
+    MuiPopover: PartialStyleRulesPopoverC = null,
+    MuiRadio: PartialStyleRulesRadioCla = null,
+    MuiSelect: PartialStyleRulesSelectCl = null,
+    MuiSnackbar: PartialStyleRulesSnackbar = null,
+    MuiSnackbarContent: PartialStyleRulesSnackbarAction = null,
+    MuiStep: PartialStyleRulesStepClas = null,
+    MuiStepButton: PartialStyleRulesStepButt = null,
+    MuiStepConnector: PartialStyleRulesStepConn = null,
+    MuiStepContent: PartialStyleRulesStepCont = null,
+    MuiStepIcon: PartialStyleRulesStepIcon = null,
+    MuiStepLabel: PartialStyleRulesStepLabe = null,
+    MuiStepper: PartialStyleRulesStepperC = null,
+    MuiSvgIcon: PartialStyleRulesSvgIconC = null,
+    MuiSwitch: PartialStyleRulesSwitchCl = null,
+    MuiSwitchBase: PartialStyleRulesSwitchBa = null,
+    MuiTab: PartialStyleRulesTabClass = null,
+    MuiTable: PartialStyleRulesTableCla = null,
+    MuiTableBody: PartialStyleRulesTableBod = null,
+    MuiTableCell: PartialStyleRulesTableCel = null,
+    MuiTableFooter: PartialStyleRulesTableFoo = null,
+    MuiTableHead: PartialStyleRulesTableHea = null,
+    MuiTablePagination: PartialStyleRulesTablePag = null,
+    MuiTableRow: PartialStyleRulesTableRow = null,
+    MuiTableSortLabel: PartialStyleRulesTableSor = null,
+    MuiTabs: PartialStyleRulesTabsClas = null,
+    MuiToolbar: PartialStyleRulesToolbarC = null,
+    MuiTooltip: PartialStyleRulesTooltipC = null,
+    MuiTouchRipple: PartialStyleRulesTouchRip = null,
+    MuiTypography: PartialStyleRulesTypograp = null
   ): Overrides = {
     val __obj = js.Dynamic.literal()
     if (MuiAppBar != null) __obj.updateDynamic("MuiAppBar")(MuiAppBar.asInstanceOf[js.Any])

@@ -83,7 +83,6 @@ class RangeFill () extends ClientObject {
     */
   var tintAndShade: Double = js.native
   /**
-    *
     * Resets the range background.
     *
     * [Api set: ExcelApi 1.1]

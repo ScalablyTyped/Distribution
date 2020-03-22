@@ -420,6 +420,7 @@ package object iotMod {
   type KeyValue = java.lang.String
   type LaserMaxResults = scala.Double
   type LastModifiedDate = typings.std.Date
+  type LogGroupName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.DEBUG
     - typings.awsSdk.awsSdkStrings.INFO

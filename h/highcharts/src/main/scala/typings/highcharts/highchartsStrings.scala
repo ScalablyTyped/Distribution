@@ -1,6 +1,7 @@
 package typings.highcharts
 
 import typings.highcharts.mod.AlignValue
+import typings.highcharts.mod.AnnotationDraggableValue
 import typings.highcharts.mod.AxisExtremesTriggerValue
 import typings.highcharts.mod.AxisTitleAlignValue
 import typings.highcharts.mod.AxisTypeValue
@@ -17,7 +18,6 @@ import typings.highcharts.mod.OptionsApproximationValue
 import typings.highcharts.mod.OptionsBoostBlendingValue
 import typings.highcharts.mod.OptionsDataClassColorValue
 import typings.highcharts.mod.OptionsDateFormatValue
-import typings.highcharts.mod.OptionsDraggableValue
 import typings.highcharts.mod.OptionsFindNearestPointByValue
 import typings.highcharts.mod.OptionsGapUnitValue
 import typings.highcharts.mod.OptionsGridLineInterpolationValue
@@ -58,6 +58,7 @@ import typings.highcharts.mod.SeriesOrganizationNodesLayoutValue
 import typings.highcharts.mod.SeriesStateValue
 import typings.highcharts.mod.SymbolKeyValue
 import typings.highcharts.mod.TilemapShapeValue
+import typings.highcharts.mod.TimeUnitValue
 import typings.highcharts.mod.TooltipShapeValue
 import typings.highcharts.mod.VariablePieSizeByValue
 import typings.highcharts.mod.VerticalAlignValue
@@ -87,6 +88,12 @@ object highchartsStrings {
   sealed trait DashDot extends DashStyleValue
   
   @js.native
+  sealed trait Date extends TimeUnitValue
+  
+  @js.native
+  sealed trait Day extends TimeUnitValue
+  
+  @js.native
   sealed trait Dot extends DashStyleValue
   
   @js.native
@@ -94,6 +101,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait EqualssignEqualssignEqualssign extends OptionsOperatorValue
+  
+  @js.native
+  sealed trait FullYear extends TimeUnitValue
   
   @js.native
   sealed trait GET extends js.Object
@@ -106,6 +116,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait H extends SVGPathCommand
+  
+  @js.native
+  sealed trait Hours extends TimeUnitValue
   
   @js.native
   sealed trait L extends SVGPathCommand
@@ -132,6 +145,15 @@ object highchartsStrings {
   sealed trait Map extends js.Object
   
   @js.native
+  sealed trait Milliseconds extends TimeUnitValue
+  
+  @js.native
+  sealed trait Minutes extends TimeUnitValue
+  
+  @js.native
+  sealed trait Month extends TimeUnitValue
+  
+  @js.native
   sealed trait POST extends js.Object
   
   @js.native
@@ -139,6 +161,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait S extends SVGPathCommand
+  
+  @js.native
+  sealed trait Seconds extends TimeUnitValue
   
   @js.native
   sealed trait ShortDash extends DashStyleValue
@@ -174,7 +199,7 @@ object highchartsStrings {
   sealed trait Z extends SVGPathCommand
   
   @js.native
-  sealed trait _empty extends OptionsDraggableValue
+  sealed trait _empty extends AnnotationDraggableValue
   
   @js.native
   sealed trait a_ extends SVGPathCommand
@@ -350,6 +375,9 @@ object highchartsStrings {
   sealed trait circlepin extends FlagsShapeValue
   
   @js.native
+  sealed trait circular extends OptionsRotationModeValue
+  
+  @js.native
   sealed trait close
     extends DataGroupingApproximationValue
        with OptionsOnKeyValue
@@ -397,7 +425,7 @@ object highchartsStrings {
   sealed trait datetime extends AxisTypeValue
   
   @js.native
-  sealed trait day
+  sealed trait day_
     extends OptionsPointIntervalUnitValue
        with RangeSelectorButtonTypeValue
   
@@ -441,6 +469,9 @@ object highchartsStrings {
   
   @js.native
   sealed trait drop extends js.Object
+  
+  @js.native
+  sealed trait dumbbell extends js.Object
   
   @js.native
   sealed trait `e-resize` extends CursorValue
@@ -605,6 +636,9 @@ object highchartsStrings {
        with ColorAxisTypeValue
   
   @js.native
+  sealed trait lollipop extends js.Object
+  
+  @js.native
   sealed trait low
     extends AxisTitleAlignValue
        with DataGroupingApproximationValue
@@ -664,7 +698,7 @@ object highchartsStrings {
   sealed trait momentum extends js.Object
   
   @js.native
-  sealed trait month
+  sealed trait month_
     extends OptionsPointIntervalUnitValue
        with RangeSelectorButtonTypeValue
   
@@ -1096,7 +1130,7 @@ object highchartsStrings {
   
   @js.native
   sealed trait x
-    extends OptionsDraggableValue
+    extends AnnotationDraggableValue
        with OptionsFindNearestPointByValue
        with OptionsPinchTypeValue
        with OptionsTypeValue
@@ -1110,7 +1144,7 @@ object highchartsStrings {
   
   @js.native
   sealed trait xy
-    extends OptionsDraggableValue
+    extends AnnotationDraggableValue
        with OptionsFindNearestPointByValue
        with OptionsPinchTypeValue
        with OptionsTypeValue
@@ -1118,7 +1152,7 @@ object highchartsStrings {
   
   @js.native
   sealed trait y
-    extends OptionsDraggableValue
+    extends AnnotationDraggableValue
        with OptionsOnKeyValue
        with OptionsPinchTypeValue
        with OptionsTypeValue
@@ -1160,11 +1194,17 @@ object highchartsStrings {
   @scala.inline
   def DashDot: DashDot = "DashDot".asInstanceOf[DashDot]
   @scala.inline
+  def Date: Date = "Date".asInstanceOf[Date]
+  @scala.inline
+  def Day: Day = "Day".asInstanceOf[Day]
+  @scala.inline
   def Dot: Dot = "Dot".asInstanceOf[Dot]
   @scala.inline
   def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   @scala.inline
   def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
+  @scala.inline
+  def FullYear: FullYear = "FullYear".asInstanceOf[FullYear]
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
@@ -1173,6 +1213,8 @@ object highchartsStrings {
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   @scala.inline
   def H: H = "H".asInstanceOf[H]
+  @scala.inline
+  def Hours: Hours = "Hours".asInstanceOf[Hours]
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   @scala.inline
@@ -1190,11 +1232,19 @@ object highchartsStrings {
   @scala.inline
   def Map: Map = "Map".asInstanceOf[Map]
   @scala.inline
+  def Milliseconds: Milliseconds = "Milliseconds".asInstanceOf[Milliseconds]
+  @scala.inline
+  def Minutes: Minutes = "Minutes".asInstanceOf[Minutes]
+  @scala.inline
+  def Month: Month = "Month".asInstanceOf[Month]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   @scala.inline
   def S: S = "S".asInstanceOf[S]
+  @scala.inline
+  def Seconds: Seconds = "Seconds".asInstanceOf[Seconds]
   @scala.inline
   def ShortDash: ShortDash = "ShortDash".asInstanceOf[ShortDash]
   @scala.inline
@@ -1318,6 +1368,8 @@ object highchartsStrings {
   @scala.inline
   def circlepin: circlepin = "circlepin".asInstanceOf[circlepin]
   @scala.inline
+  def circular: circular = "circular".asInstanceOf[circular]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
   @scala.inline
   def cmf: cmf = "cmf".asInstanceOf[cmf]
@@ -1346,7 +1398,7 @@ object highchartsStrings {
   @scala.inline
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   @scala.inline
-  def day: day = "day".asInstanceOf[day]
+  def day_ : day_ = "day".asInstanceOf[day_]
   @scala.inline
   def ddSlashmmSlashYY: ddSlashmmSlashYY = "dd/mm/YY".asInstanceOf[ddSlashmmSlashYY]
   @scala.inline
@@ -1373,6 +1425,8 @@ object highchartsStrings {
   def drillupall: drillupall = "drillupall".asInstanceOf[drillupall]
   @scala.inline
   def drop: drop = "drop".asInstanceOf[drop]
+  @scala.inline
+  def dumbbell: dumbbell = "dumbbell".asInstanceOf[dumbbell]
   @scala.inline
   def `e-resize`: `e-resize` = "e-resize".asInstanceOf[`e-resize`]
   @scala.inline
@@ -1468,6 +1522,8 @@ object highchartsStrings {
   @scala.inline
   def logarithmic: logarithmic = "logarithmic".asInstanceOf[logarithmic]
   @scala.inline
+  def lollipop: lollipop = "lollipop".asInstanceOf[lollipop]
+  @scala.inline
   def low: low = "low".asInstanceOf[low]
   @scala.inline
   def m_ : m_ = "m".asInstanceOf[m_]
@@ -1502,7 +1558,7 @@ object highchartsStrings {
   @scala.inline
   def momentum: momentum = "momentum".asInstanceOf[momentum]
   @scala.inline
-  def month: month = "month".asInstanceOf[month]
+  def month_ : month_ = "month".asInstanceOf[month_]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   @scala.inline

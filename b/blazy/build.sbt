@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blazy"
-version := "v1.5.2-dt-20190322Z-0aec4e"
+version := "v1.5.2-dt-20200226Z-0aec4e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,6 @@
 package typings.pulumiAws.integrationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -80,7 +79,7 @@ class Integration protected () extends CustomResource {
   /**
     * The ID of the associated REST API.
     */
-  val restApi: Output_[RestApi] = js.native
+  val restApi: Output_[String] = js.native
   /**
     * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds.
     */

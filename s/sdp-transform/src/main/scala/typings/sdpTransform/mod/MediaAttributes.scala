@@ -51,9 +51,9 @@ trait MediaAttributes extends SharedAttributes {
   var rids: js.UndefOr[js.Array[AnonDirection]] = js.undefined
   var rtcp: js.UndefOr[AnonIpVer] = js.undefined
   // a=rtcp-fb:98 nack rpsi
-  var rtcpFb: js.UndefOr[AnonPayload] = js.undefined
+  var rtcpFb: js.UndefOr[js.Array[AnonPayload]] = js.undefined
   // a=rtcp-fb:98 trr-int 100
-  var rtcpFbTrrInt: js.UndefOr[AnonValue] = js.undefined
+  var rtcpFbTrrInt: js.UndefOr[js.Array[AnonValue]] = js.undefined
   // a=rtcp-mux
   var rtcpMux: js.UndefOr[String] = js.undefined
   // a=rtcp-rsize
@@ -95,8 +95,8 @@ object MediaAttributes {
     remoteCandidates: String = null,
     rids: js.Array[AnonDirection] = null,
     rtcp: AnonIpVer = null,
-    rtcpFb: AnonPayload = null,
-    rtcpFbTrrInt: AnonValue = null,
+    rtcpFb: js.Array[AnonPayload] = null,
+    rtcpFbTrrInt: js.Array[AnonValue] = null,
     rtcpMux: String = null,
     rtcpRsize: String = null,
     sctpmap: AnonApp = null,

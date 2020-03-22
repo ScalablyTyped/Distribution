@@ -1,7 +1,7 @@
 package typings.reactNativeNavigation.optionsMod
 
 import typings.reactNative.mod.ImageRequireSource
-import typings.reactNativeNavigation.AnonPassProps
+import typings.reactNativeNavigation.AnonId
 import typings.reactNativeNavigation.reactNativeNavigationStrings.always
 import typings.reactNativeNavigation.reactNativeNavigationStrings.ifRoom
 import typings.reactNativeNavigation.reactNativeNavigationStrings.never
@@ -22,7 +22,7 @@ trait OptionsTopBarButton extends js.Object {
   /**
     * Set the button as a custom component
     */
-  var component: js.UndefOr[AnonPassProps] = js.undefined
+  var component: js.UndefOr[AnonId] = js.undefined
   /**
     * Disable icon tinting
     */
@@ -82,7 +82,7 @@ object OptionsTopBarButton {
     id: String,
     accessibilityLabel: String = null,
     color: Color = null,
-    component: AnonPassProps = null,
+    component: AnonId = null,
     disableIconTint: js.UndefOr[Boolean] = js.undefined,
     disabledColor: Color = null,
     enabled: js.UndefOr[Boolean] = js.undefined,

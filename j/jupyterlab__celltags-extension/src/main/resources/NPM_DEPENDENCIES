@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/celltags-extension" : "2.0.0"
+      "@jupyterlab/celltags-extension" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/celltags-extension" : "2.0.0"
+      "@jupyterlab/celltags-extension" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "workbox-webpack-plugin"
-version := "4.1-dt-20190327Z-838640"
+version := "5.0-dt-20200225Z-e1fd82"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

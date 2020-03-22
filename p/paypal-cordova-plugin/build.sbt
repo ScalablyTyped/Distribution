@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "paypal-cordova-plugin"
-version := "3.1.10-dt-20190322Z-e83ff5"
+version := "3.1.10-dt-20200225Z-e83ff5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

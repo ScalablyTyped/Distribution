@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object factoryMod extends js.Object {
   def factory(app: FirebaseApp, installations: FirebaseInstallations): FirebaseAnalytics = js.native
+  def getGlobalVars(): AnonInitializedIdPromisesMap = js.native
   def resetGlobalVars(): Unit = js.native
   def resetGlobalVars(newGlobalInitDone: Boolean): Unit = js.native
   def resetGlobalVars(newGlobalInitDone: Boolean, newGaInitializedPromise: js.Object): Unit = js.native

@@ -11,6 +11,10 @@ trait CreateClusterRequest extends js.Object {
     */
   var clientRequestToken: js.UndefOr[String] = js.native
   /**
+    * The encryption configuration for the cluster.
+    */
+  var encryptionConfig: js.UndefOr[EncryptionConfigList] = js.native
+  /**
     * Enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs aren't exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing. 
     */
   var logging: js.UndefOr[Logging] = js.native
@@ -43,12 +47,14 @@ object CreateClusterRequest {
     resourcesVpcConfig: VpcConfigRequest,
     roleArn: String,
     clientRequestToken: String = null,
+    encryptionConfig: EncryptionConfigList = null,
     logging: Logging = null,
     tags: TagMap = null,
     version: String = null
   ): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourcesVpcConfig = resourcesVpcConfig.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
+    if (encryptionConfig != null) __obj.updateDynamic("encryptionConfig")(encryptionConfig.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])

@@ -11,11 +11,14 @@ import typings.jquery.JQuery_.TypeOrArray
 import typings.jquery.JQuery_.jqXHR
 import typings.jquery.jqueryBooleans.`false`
 import typings.jquery.jqueryBooleans.`true`
+import typings.jquery.jqueryStrings.`applicationSlashx-www-form-urlencoded`
+import typings.jquery.jqueryStrings.`multipartSlashform-data`
 import typings.jquery.jqueryStrings.html
 import typings.jquery.jqueryStrings.json
 import typings.jquery.jqueryStrings.jsonp
 import typings.jquery.jqueryStrings.script
 import typings.jquery.jqueryStrings.text
+import typings.jquery.jqueryStrings.textSlashplain
 import typings.jquery.jqueryStrings.xml
 import typings.std.RegExp
 import typings.std.XMLHttpRequest
@@ -57,6 +60,7 @@ object EventSourceExtendedInput {
     dataType: xml | html | script | json | jsonp | text | String = null,
     durationEditable: js.UndefOr[Boolean] = js.undefined,
     editable: js.UndefOr[Boolean] = js.undefined,
+    enctype: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain = null,
     endParam: String = null,
     error: TypeOrArray[ErrorCallback[js.Any]] = null,
     eventDataTransform: /* eventData */ js.Any => EventObjectInput = null,
@@ -109,6 +113,7 @@ object EventSourceExtendedInput {
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (!js.isUndefined(durationEditable)) __obj.updateDynamic("durationEditable")(durationEditable.asInstanceOf[js.Any])
     if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (endParam != null) __obj.updateDynamic("endParam")(endParam.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (eventDataTransform != null) __obj.updateDynamic("eventDataTransform")(js.Any.fromFunction1(eventDataTransform))

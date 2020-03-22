@@ -7,9 +7,49 @@ import scala.scalajs.js.annotation._
 
 trait TimingParams
   extends /* key */ StringDictionary[js.Any] {
+  /**
+    * User timing category
+    *
+    * **Required for timing hit type.**
+    *
+    * Specifies the user timing category.
+    *
+    * Max length: 150 Bytes
+    *
+    * Example value: `category`
+    */
   var utc: js.UndefOr[String] = js.undefined
+  /**
+    * User timing label
+    *
+    * Specifies the user timing label.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `label`
+    */
   var utl: js.UndefOr[String] = js.undefined
+  /**
+    * User timing time
+    *
+    * **Required for timing hit type.**
+    *
+    * Specifies the user timing value. The value is in milliseconds.
+    *
+    * Example value: `123`
+    */
   var utt: js.UndefOr[String | Double] = js.undefined
+  /**
+    * User timing variable name
+    *
+    * **Required for timing hit type.**
+    *
+    * Specifies the user timing variable.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `lookup`
+    */
   var utv: js.UndefOr[String] = js.undefined
 }
 

@@ -16,6 +16,7 @@ import typings.cesium.mod.PolylineGraphics
 import typings.cesium.mod.PolylineVolumeGraphics
 import typings.cesium.mod.PositionProperty
 import typings.cesium.mod.Property
+import typings.cesium.mod.PropertyBag
 import typings.cesium.mod.RectangleGraphics
 import typings.cesium.mod.TimeIntervalCollection
 import typings.cesium.mod.WallGraphics
@@ -45,6 +46,7 @@ trait AnonAvailability extends js.Object {
   var polyline: js.UndefOr[PolylineGraphics] = js.undefined
   var polylineVolume: js.UndefOr[PolylineVolumeGraphics] = js.undefined
   var position: js.UndefOr[PositionProperty] = js.undefined
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   var rectangle: js.UndefOr[RectangleGraphics] = js.undefined
   var show: js.UndefOr[Boolean] = js.undefined
   var viewFrom: js.UndefOr[Property] = js.undefined
@@ -75,6 +77,7 @@ object AnonAvailability {
     polyline: PolylineGraphics = null,
     polylineVolume: PolylineVolumeGraphics = null,
     position: PositionProperty = null,
+    properties: PropertyBag = null,
     rectangle: RectangleGraphics = null,
     show: js.UndefOr[Boolean] = js.undefined,
     viewFrom: Property = null,
@@ -102,6 +105,7 @@ object AnonAvailability {
     if (polyline != null) __obj.updateDynamic("polyline")(polyline.asInstanceOf[js.Any])
     if (polylineVolume != null) __obj.updateDynamic("polylineVolume")(polylineVolume.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle.asInstanceOf[js.Any])
     if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (viewFrom != null) __obj.updateDynamic("viewFrom")(viewFrom.asInstanceOf[js.Any])

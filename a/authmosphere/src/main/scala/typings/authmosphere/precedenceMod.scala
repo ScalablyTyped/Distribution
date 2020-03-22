@@ -15,7 +15,7 @@ object precedenceMod extends js.Object {
   trait PrecedenceOptions extends js.Object {
     @JSName("precedenceFunction")
     var precedenceFunction_Original: PrecedenceFunction = js.native
-    def precedenceFunction(req: Request_[ParamsDictionary], res: Response_, next: NextFunction): js.Promise[Boolean] = js.native
+    def precedenceFunction(req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction): js.Promise[Boolean] = js.native
   }
   
   /**
@@ -23,7 +23,7 @@ object precedenceMod extends js.Object {
     */
   type PrecedenceFunction = js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
     js.Promise[Boolean]
   ]

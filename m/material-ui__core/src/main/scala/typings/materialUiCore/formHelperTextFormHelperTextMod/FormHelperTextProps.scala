@@ -1,6 +1,6 @@
 package typings.materialUiCore.formHelperTextFormHelperTextMod
 
-import typings.materialUiCore.PartialClassNameMapFormHelperTextClassKey
+import typings.materialUiCore.PartialClassNameMapFormHe
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -150,7 +150,7 @@ trait FormHelperTextProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapFormHelperTextClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapFormHe] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[FormHelperTextProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -338,7 +338,7 @@ object FormHelperTextProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapFormHelperTextClassKey = null,
+    classes: PartialClassNameMapFormHe = null,
     color: String = null,
     component: ReactType[FormHelperTextProps] = null,
     contentEditable: Booleanish | inherit = null,

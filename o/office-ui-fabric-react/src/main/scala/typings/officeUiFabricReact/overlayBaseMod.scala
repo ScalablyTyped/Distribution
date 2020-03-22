@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.overlayTypesMod.IOverlayProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object overlayBaseMod extends js.Object {
   @js.native
   class OverlayBase protected ()
-    extends BaseComponent[IOverlayProps, js.Object] {
+    extends Component[IOverlayProps, js.Object, js.Any] {
     def this(props: IOverlayProps) = this()
     var _allowTouchBodyScroll: js.Any = js.native
     @JSName("componentDidMount")

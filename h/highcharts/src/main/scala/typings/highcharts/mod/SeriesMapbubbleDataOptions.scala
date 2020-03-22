@@ -14,7 +14,7 @@ trait SeriesMapbubbleDataOptions extends js.Object {
     * (Highmaps) Individual data label for each point. The options are the same
     * as the ones for plotOptions.series.dataLabels.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptions] = js.undefined
   /**
     * (Highmaps) The `id` of a series in the drilldown.series array to use for
     * a drilldown for this point.
@@ -46,7 +46,7 @@ object SeriesMapbubbleDataOptions {
   @scala.inline
   def apply(
     color: ColorString | GradientColorObject | PatternObject = null,
-    dataLabels: DataLabelsOptionsObject = null,
+    dataLabels: DataLabelsOptions = null,
     drilldown: String = null,
     events: PointEventsOptionsObject = null,
     id: String = null,

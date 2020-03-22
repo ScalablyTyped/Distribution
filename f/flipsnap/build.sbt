@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flipsnap"
-version := "0.0-unknown-dt-20190322Z-d59048"
+version := "0.0-unknown-dt-20200226Z-d59048"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

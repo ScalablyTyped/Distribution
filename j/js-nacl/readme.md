@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-nacl
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 High-level API to libsodium.

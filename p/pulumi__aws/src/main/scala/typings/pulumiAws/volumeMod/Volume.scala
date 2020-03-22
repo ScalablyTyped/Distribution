@@ -55,7 +55,7 @@ class Volume protected () extends CustomResource {
     */
   val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**
-    * The type of EBS volume. Can be "standard", "gp2", "io1", "sc1" or "st1" (Default: "standard").
+    * The type of EBS volume. Can be "standard", "gp2", "io1", "sc1" or "st1" (Default: "gp2").
     */
   val `type`: Output_[String] = js.native
 }

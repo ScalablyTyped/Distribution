@@ -58,35 +58,30 @@ class TableColumn () extends ClientObject {
     */
   var values: js.Array[js.Array[_]] = js.native
   /**
-    *
     * Deletes the column from the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the range object associated with the data body of the column.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getDataBodyRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with the header row of the column.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getHeaderRowRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with the entire column.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with the totals row of the column.
     *
     * [Api set: ExcelApi 1.1]

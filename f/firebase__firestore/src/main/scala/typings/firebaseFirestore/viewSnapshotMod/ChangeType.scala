@@ -1,41 +1,31 @@
 package typings.firebaseFirestore.viewSnapshotMod
 
-import org.scalablytyped.runtime.TopLevel
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait ChangeType extends js.Object
+/* Rewritten from type alias, can be one of: 
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+*/
+trait ChangeType extends js.Object
 
-@JSImport("@firebase/firestore/dist/lib/src/core/view_snapshot", "ChangeType")
-@js.native
-object ChangeType extends js.Object {
-  @js.native
-  sealed trait Added extends ChangeType
-  
-  @js.native
-  sealed trait Metadata extends ChangeType
-  
-  @js.native
-  sealed trait Modified extends ChangeType
-  
-  @js.native
-  sealed trait Removed extends ChangeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChangeType with Double] = js.native
-  /* 0 */ @js.native
-  object Added extends TopLevel[Added with Double]
-  
-  /* 3 */ @js.native
-  object Metadata extends TopLevel[Metadata with Double]
-  
-  /* 2 */ @js.native
-  object Modified extends TopLevel[Modified with Double]
-  
-  /* 1 */ @js.native
-  object Removed extends TopLevel[Removed with Double]
-  
+object ChangeType {
+  @scala.inline
+  def Added: `0` = this.cast(0)
+  @scala.inline
+  def Metadata: `3` = this.cast(3)
+  @scala.inline
+  def Modified: `2` = this.cast(2)
+  @scala.inline
+  def Removed: `1` = this.cast(1)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }
 

@@ -7,12 +7,12 @@ import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.reactBigCalendar.AnonAction
-import typings.reactBigCalendar.AnonClassName
 import typings.reactBigCalendar.AnonStart
 import typings.reactBigCalendar.AnonX
 import typings.reactBigCalendar.reactBigCalendarStrings.ignoreEvents
 import typings.std.Date
 import typings.std.Event_
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,6 +24,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var components: js.UndefOr[Components_[TEvent]] = js.undefined
   var culture: js.UndefOr[String] = js.undefined
   var date: js.UndefOr[stringOrDate] = js.undefined
+  var dayLayoutAlgorithm: js.UndefOr[DayLayoutAlgorithm] = js.undefined
   var dayPropGetter: js.UndefOr[DayPropGetter] = js.undefined
   var defaultDate: js.UndefOr[Date] = js.undefined
   var defaultView: js.UndefOr[View] = js.undefined
@@ -74,6 +75,7 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
   var selectable: js.UndefOr[Boolean | ignoreEvents] = js.undefined
   var selected: js.UndefOr[js.Any] = js.undefined
   var showMultiDayTimes: js.UndefOr[Boolean] = js.undefined
+  var slotGroupPropGetter: js.UndefOr[SlotGroupPropGetter] = js.undefined
   var slotPropGetter: js.UndefOr[SlotPropGetter] = js.undefined
   var startAccessor: js.UndefOr[String | (js.Function1[/* event */ TEvent, Date])] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
@@ -95,13 +97,14 @@ object CalendarProps {
     components: Components_[TEvent] = null,
     culture: String = null,
     date: stringOrDate = null,
-    dayPropGetter: /* date */ Date => AnonClassName = null,
+    dayLayoutAlgorithm: DayLayoutAlgorithm = null,
+    dayPropGetter: (/* date */ Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement] = null,
     defaultDate: Date = null,
     defaultView: View = null,
     drilldownView: View = null,
     elementProps: HTMLAttributes[HTMLElement] = null,
     endAccessor: String | (js.Function1[/* event */ TEvent, Date]) = null,
-    eventPropGetter: (TEvent, /* start */ stringOrDate, /* end */ stringOrDate, /* isSelected */ Boolean) => AnonClassName = null,
+    eventPropGetter: (TEvent, /* start */ stringOrDate, /* end */ stringOrDate, /* isSelected */ Boolean) => HTMLAttributes[HTMLDivElement] = null,
     events: js.Array[TEvent] = null,
     formats: Formats = null,
     getDrilldownView: (/* targetDate */ Date, /* currentViewName */ View, /* configuredViewNames */ js.Array[View]) => Unit = null,
@@ -133,7 +136,8 @@ object CalendarProps {
     selectable: Boolean | ignoreEvents = null,
     selected: js.Any = null,
     showMultiDayTimes: js.UndefOr[Boolean] = js.undefined,
-    slotPropGetter: /* date */ Date => AnonClassName = null,
+    slotGroupPropGetter: () => HTMLAttributes[HTMLDivElement] = null,
+    slotPropGetter: (/* date */ Date, /* resourceId */ js.UndefOr[Double | String]) => HTMLAttributes[HTMLDivElement] = null,
     startAccessor: String | (js.Function1[/* event */ TEvent, Date]) = null,
     step: Int | Double = null,
     timeslots: Int | Double = null,
@@ -150,7 +154,8 @@ object CalendarProps {
     if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dayPropGetter != null) __obj.updateDynamic("dayPropGetter")(js.Any.fromFunction1(dayPropGetter))
+    if (dayLayoutAlgorithm != null) __obj.updateDynamic("dayLayoutAlgorithm")(dayLayoutAlgorithm.asInstanceOf[js.Any])
+    if (dayPropGetter != null) __obj.updateDynamic("dayPropGetter")(js.Any.fromFunction2(dayPropGetter))
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
     if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView.asInstanceOf[js.Any])
     if (drilldownView != null) __obj.updateDynamic("drilldownView")(drilldownView.asInstanceOf[js.Any])
@@ -188,7 +193,8 @@ object CalendarProps {
     if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (!js.isUndefined(showMultiDayTimes)) __obj.updateDynamic("showMultiDayTimes")(showMultiDayTimes.asInstanceOf[js.Any])
-    if (slotPropGetter != null) __obj.updateDynamic("slotPropGetter")(js.Any.fromFunction1(slotPropGetter))
+    if (slotGroupPropGetter != null) __obj.updateDynamic("slotGroupPropGetter")(js.Any.fromFunction0(slotGroupPropGetter))
+    if (slotPropGetter != null) __obj.updateDynamic("slotPropGetter")(js.Any.fromFunction2(slotPropGetter))
     if (startAccessor != null) __obj.updateDynamic("startAccessor")(startAccessor.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (timeslots != null) __obj.updateDynamic("timeslots")(timeslots.asInstanceOf[js.Any])

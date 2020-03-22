@@ -1,8 +1,6 @@
 package typings.rcTable.interfaceMod
 
 import typings.rcTable.AnonCell
-import typings.react.mod.HTMLAttributes
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TableComponents[RecordType] extends js.Object {
   var body: js.UndefOr[CustomizeScrollBody[RecordType] | AnonCell] = js.undefined
   var header: js.UndefOr[AnonCell] = js.undefined
-  var table: js.UndefOr[CustomizeComponent[HTMLAttributes[HTMLElement]]] = js.undefined
+  var table: js.UndefOr[CustomizeComponent] = js.undefined
 }
 
 object TableComponents {
@@ -18,7 +16,7 @@ object TableComponents {
   def apply[RecordType](
     body: CustomizeScrollBody[RecordType] | AnonCell = null,
     header: AnonCell = null,
-    table: CustomizeComponent[HTMLAttributes[HTMLElement]] = null
+    table: CustomizeComponent = null
   ): TableComponents[RecordType] = {
     val __obj = js.Dynamic.literal()
     if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])

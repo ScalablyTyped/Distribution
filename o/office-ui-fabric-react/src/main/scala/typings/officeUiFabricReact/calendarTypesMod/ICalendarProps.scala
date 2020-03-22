@@ -150,7 +150,8 @@ trait ICalendarProps
   /**
     * Callback issued when a date is selected
     * @param date - The date the user selected
-    * @param selectedDateRangeArray - The resultant list of dates that are selected based on the date range type set for the component.
+    * @param selectedDateRangeArray - The resultant list of dates that are selected based on the date range type set
+    * for the component.
     */
   var onSelectDate: js.UndefOr[
     js.Function2[/* date */ Date, /* selectedDateRangeArray */ js.UndefOr[js.Array[Date]], Unit]
@@ -206,7 +207,8 @@ trait ICalendarProps
     */
   var value: js.UndefOr[Date] = js.undefined
   /**
-    * The days that are selectable when dateRangeType is WorkWeek. If dateRangeType is not WorkWeek this property does nothing.
+    * The days that are selectable when dateRangeType is WorkWeek.
+    * If dateRangeType is not WorkWeek this property does nothing.
     * @defaultvalue [Monday,Tuesday,Wednesday,Thursday,Friday]
     */
   var workWeekDays: js.UndefOr[js.Array[typings.officeUiFabricReact.dateValuesMod.DayOfWeek]] = js.undefined

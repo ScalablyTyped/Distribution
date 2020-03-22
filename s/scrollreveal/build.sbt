@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scrollreveal"
-version := "0.0-unknown-dt-20200121Z-941f29"
+version := "0.0-unknown-dt-20200225Z-941f29"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

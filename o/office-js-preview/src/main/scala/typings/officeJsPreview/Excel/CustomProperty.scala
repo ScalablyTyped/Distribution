@@ -48,7 +48,6 @@ class CustomProperty () extends ClientObject {
     */
   var value: js.Any = js.native
   /**
-    *
     * Deletes the custom property.
     *
     * [Api set: ExcelApi 1.7]

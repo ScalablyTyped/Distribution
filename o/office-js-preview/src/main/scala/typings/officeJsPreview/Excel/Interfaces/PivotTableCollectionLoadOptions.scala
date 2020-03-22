@@ -19,6 +19,14 @@ trait PivotTableCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.native
   /**
     *
+    * For EACH ITEM in the collection: Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.native
+  /**
+    *
     * For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi 1.9]

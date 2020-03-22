@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-gcm"
-version := "1.0.2-dt-20190322Z-21d6aa"
+version := "1.0.2-dt-20200226Z-21d6aa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

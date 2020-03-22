@@ -1,10 +1,12 @@
 package typings.yeomanEnvironment.mod
 
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
 import typings.memFs.mod.Store
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.RegExp
+import typings.yeomanEnvironment.TypeofGenerator
 import typings.yeomanGenerator.mod.Storage
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +41,10 @@ trait Environment[O /* <: Options */] extends EventEmitter {
   def namespaces(): js.Array[String] = js.native
   def register(name: String): String = js.native
   def register(name: String, namespace: String): String = js.native
-  def registerStub(Generator: typings.yeomanGenerator.mod.^, namespace: String): this.type = js.native
+  def registerStub(
+    generator: (Instantiable2[/* args */ String, /* options */ js.Object, typings.yeomanGenerator.mod.^]) with TypeofGenerator,
+    namespace: String
+  ): this.type = js.native
   def resolveModulePath(moduleId: String): String = js.native
   def run(args: String, done: RunDone): Unit = js.native
   def run(args: String, options: js.Object, done: RunDone): Unit = js.native

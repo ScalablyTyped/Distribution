@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-fixture"
-version := "0.2-dt-20181120Z-0b1800"
+version := "0.2-dt-20200226Z-0b1800"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

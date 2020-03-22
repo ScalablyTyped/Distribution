@@ -27,7 +27,13 @@ package object signerMod {
   */
   type HashAlgorithm = typings.awsSdk.signerMod._HashAlgorithm | java.lang.String
   type HashAlgorithms = js.Array[typings.awsSdk.signerMod.HashAlgorithm]
-  type ImageFormat = typings.awsSdk.awsSdkStrings.JSON | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.JSON
+    - typings.awsSdk.awsSdkStrings.JSONEmbedded
+    - typings.awsSdk.awsSdkStrings.JSONDetached
+    - java.lang.String
+  */
+  type ImageFormat = typings.awsSdk.signerMod._ImageFormat | java.lang.String
   type ImageFormats = js.Array[typings.awsSdk.signerMod.ImageFormat]
   type JobId = java.lang.String
   type Key_ = java.lang.String

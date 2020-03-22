@@ -62,6 +62,8 @@ trait TableScopedCollectionLoadOptions extends js.Object {
   /**
     *
     * For EACH ITEM in the collection: Name of the table.
+    
+    The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -122,6 +124,14 @@ trait TableScopedCollectionLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var style: js.UndefOr[Boolean] = js.native
+  /**
+    *
+    * For EACH ITEM in the collection: The style applied to the Table.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var tableStyle: js.UndefOr[TableStyleLoadOptions] = js.native
   /**
     *
     * For EACH ITEM in the collection: The worksheet containing the current table.

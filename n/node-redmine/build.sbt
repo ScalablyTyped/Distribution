@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-redmine"
-version := "0.2-dt-20190809Z-a0791d"
+version := "0.2-dt-20200225Z-a0791d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

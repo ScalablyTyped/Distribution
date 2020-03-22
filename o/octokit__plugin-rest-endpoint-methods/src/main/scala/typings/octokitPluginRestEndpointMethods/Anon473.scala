@@ -1,7 +1,7 @@
 package typings.octokitPluginRestEndpointMethods
 
 import typings.octokitPluginRestEndpointMethods.typesMod.AnyResponse
-import typings.octokitPluginRestEndpointMethods.typesMod.TeamsRemoveMembershipInOrgParams
+import typings.octokitPluginRestEndpointMethods.typesMod.TeamsDeleteDiscussionCommentInOrgParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Anon473 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[AnyResponse] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with TeamsRemoveMembershipInOrgParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with TeamsDeleteDiscussionCommentInOrgParams
   ): js.Promise[AnyResponse] = js.native
 }
 

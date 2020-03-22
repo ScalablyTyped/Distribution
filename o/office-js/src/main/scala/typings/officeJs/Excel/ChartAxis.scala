@@ -357,7 +357,6 @@ class ChartAxis () extends ClientObject {
   def set(properties: ChartAxisUpdateData): Unit = js.native
   def set(properties: ChartAxisUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Sets all the category names for the specified axis.
     *
     * [Api set: ExcelApi 1.7]
@@ -366,7 +365,6 @@ class ChartAxis () extends ClientObject {
     */
   def setCategoryNames(sourceData: Range): Unit = js.native
   /**
-    *
     * Sets the axis display unit to a custom value.
     *
     * [Api set: ExcelApi 1.7]
@@ -375,7 +373,6 @@ class ChartAxis () extends ClientObject {
     */
   def setCustomDisplayUnit(value: Double): Unit = js.native
   /**
-    *
     * Set the specified axis position where the other axis crosses at.
     *
     * [Api set: ExcelApi 1.8]

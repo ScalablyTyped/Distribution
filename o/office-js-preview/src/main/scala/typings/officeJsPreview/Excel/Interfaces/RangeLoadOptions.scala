@@ -164,6 +164,14 @@ trait RangeLoadOptions extends js.Object {
   var numberFormat: js.UndefOr[Boolean] = js.native
   /**
     *
+    * Represents the category of number format of each cell. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var numberFormatCategories: js.UndefOr[Boolean] = js.native
+  /**
+    *
     * Represents Excel's number format code for the given range, based on the language settings of the user.​
     Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
     Any returned text uses the locally-formatted strings based on the language specified in the system settings.

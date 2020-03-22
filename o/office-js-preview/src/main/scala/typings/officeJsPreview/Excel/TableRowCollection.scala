@@ -37,7 +37,6 @@ class TableRowCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[TableRow] = js.native
   /**
-    *
     * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
     
     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
@@ -57,14 +56,12 @@ class TableRowCollection () extends ClientObject {
   def add(index: Double, values: Boolean): TableRow = js.native
   def add(index: Double, values: Double): TableRow = js.native
   /**
-    *
     * Gets the number of rows in the table.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a row based on its position in the collection.
     
     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,

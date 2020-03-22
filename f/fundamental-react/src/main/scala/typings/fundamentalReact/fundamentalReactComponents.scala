@@ -7,23 +7,17 @@ import scala.scalajs.js.annotation._
 
 object fundamentalReactComponents extends fundamentalReactProps {
   @scala.inline
-  def Alert: ComponentType[AlertProps] = js.constructorOf[typings.fundamentalReact.alertMod.default].asInstanceOf[typings.react.mod.ComponentType[AlertProps]]
-  @scala.inline
-  def Badge: ComponentType[BadgeProps] = typings.fundamentalReact.badgeMod.default.asInstanceOf[typings.react.mod.ComponentType[BadgeProps]]
-  @scala.inline
   def Calendar: ComponentType[CalendarProps] = js.constructorOf[typings.fundamentalReact.calendarMod.default].asInstanceOf[typings.react.mod.ComponentType[CalendarProps]]
+  @scala.inline
+  def Checkbox: ComponentType[CheckboxProps] = typings.fundamentalReact.checkboxMod.default.asInstanceOf[typings.react.mod.ComponentType[CheckboxProps]]
   @scala.inline
   def ComboboxInput: ComponentType[ComboboxInputProps] = typings.fundamentalReact.comboboxInputMod.default.asInstanceOf[typings.react.mod.ComponentType[ComboboxInputProps]]
   @scala.inline
-  def Counter: ComponentType[CounterProps] = typings.fundamentalReact.counterMod.default.asInstanceOf[typings.react.mod.ComponentType[CounterProps]]
-  @scala.inline
   def DatePicker: ComponentType[DatePickerProps] = js.constructorOf[typings.fundamentalReact.datePickerMod.default].asInstanceOf[typings.react.mod.ComponentType[DatePickerProps]]
   @scala.inline
-  def Dropdown: ComponentType[DropdownProps] = typings.fundamentalReact.dropdownMod.default.asInstanceOf[typings.react.mod.ComponentType[DropdownProps]]
+  def Dialog: ComponentType[DialogProps] = js.constructorOf[typings.fundamentalReact.dialogMod.default].asInstanceOf[typings.react.mod.ComponentType[DialogProps]]
   @scala.inline
   def FormFieldset: ComponentType[FormFieldsetProps] = typings.fundamentalReact.formFieldsetMod.default.asInstanceOf[typings.react.mod.ComponentType[FormFieldsetProps]]
-  @scala.inline
-  def FormGroup: ComponentType[FormGroupProps[js.Any]] = typings.fundamentalReact.formGroupMod.default.asInstanceOf[typings.react.mod.ComponentType[FormGroupProps[js.Any]]]
   @scala.inline
   def FormInput: ComponentType[FormInputProps] = typings.fundamentalReact.formInputMod.default.asInstanceOf[typings.react.mod.ComponentType[FormInputProps]]
   @scala.inline
@@ -32,8 +26,6 @@ object fundamentalReactComponents extends fundamentalReactProps {
   def FormLabel: ComponentType[FormLabelProps] = typings.fundamentalReact.formLabelMod.default.asInstanceOf[typings.react.mod.ComponentType[FormLabelProps]]
   @scala.inline
   def FormLegend: ComponentType[FormLegendProps] = typings.fundamentalReact.formLegendMod.default.asInstanceOf[typings.react.mod.ComponentType[FormLegendProps]]
-  @scala.inline
-  def FormMessage: ComponentType[FormMessageProps] = typings.fundamentalReact.formMessageMod.default.asInstanceOf[typings.react.mod.ComponentType[FormMessageProps]]
   @scala.inline
   def FormRadioGroup: ComponentType[FormRadioGroupProps] = js.constructorOf[typings.fundamentalReact.formRadioGroupMod.default].asInstanceOf[typings.react.mod.ComponentType[FormRadioGroupProps]]
   @scala.inline
@@ -51,13 +43,11 @@ object fundamentalReactComponents extends fundamentalReactProps {
   @scala.inline
   def Image: ComponentType[ImageProps] = typings.fundamentalReact.imageMod.default.asInstanceOf[typings.react.mod.ComponentType[ImageProps]]
   @scala.inline
+  def InfoLabel: ComponentType[InfoLabelProps] = typings.fundamentalReact.infoLabelMod.default.asInstanceOf[typings.react.mod.ComponentType[InfoLabelProps]]
+  @scala.inline
   def InlineHelp: ComponentType[InlineHelpProps] = typings.fundamentalReact.inlineHelpMod.default.asInstanceOf[typings.react.mod.ComponentType[InlineHelpProps]]
   @scala.inline
   def InputGroup: ComponentType[InputGroupProps] = js.constructorOf[typings.fundamentalReact.inputGroupMod.default].asInstanceOf[typings.react.mod.ComponentType[InputGroupProps]]
-  @scala.inline
-  def Label: ComponentType[LabelProps] = typings.fundamentalReact.labelMod.default.asInstanceOf[typings.react.mod.ComponentType[LabelProps]]
-  @scala.inline
-  def Modal: ComponentType[ModalProps] = js.constructorOf[typings.fundamentalReact.modalMod.default].asInstanceOf[typings.react.mod.ComponentType[ModalProps]]
   @scala.inline
   def MultiInput: ComponentType[MultiInputProps] = js.constructorOf[typings.fundamentalReact.multiInputMod.default].asInstanceOf[typings.react.mod.ComponentType[MultiInputProps]]
   @scala.inline
@@ -71,15 +61,11 @@ object fundamentalReactComponents extends fundamentalReactProps {
   @scala.inline
   def SideNav: ComponentType[SideNavProps] = js.constructorOf[typings.fundamentalReact.sideNavMod.default].asInstanceOf[typings.react.mod.ComponentType[SideNavProps]]
   @scala.inline
-  def Status: ComponentType[StatusProps] = typings.fundamentalReact.statusMod.default.asInstanceOf[typings.react.mod.ComponentType[StatusProps]]
-  @scala.inline
   def TabGroup: ComponentType[TabGroupProps] = js.constructorOf[typings.fundamentalReact.tabGroupMod.default].asInstanceOf[typings.react.mod.ComponentType[TabGroupProps]]
   @scala.inline
   def Time: ComponentType[TimeProps] = js.constructorOf[typings.fundamentalReact.timeMod.default].asInstanceOf[typings.react.mod.ComponentType[TimeProps]]
   @scala.inline
   def TimePicker: ComponentType[TimePickerProps] = js.constructorOf[typings.fundamentalReact.timePickerMod.default].asInstanceOf[typings.react.mod.ComponentType[TimePickerProps]]
-  @scala.inline
-  def Toggle: ComponentType[ToggleProps] = js.constructorOf[typings.fundamentalReact.toggleMod.default].asInstanceOf[typings.react.mod.ComponentType[ToggleProps]]
   @scala.inline
   def Token: ComponentType[TokenProps] = typings.fundamentalReact.tokenMod.default.asInstanceOf[typings.react.mod.ComponentType[TokenProps]]
   @scala.inline

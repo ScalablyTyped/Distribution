@@ -6,6 +6,9 @@ import typings.googleCloudStorage.fileMod.File
 import typings.googleCloudStorage.fileMod.FileOptions
 import typings.googleCloudStorage.iamMod.Iam
 import typings.googleCloudStorage.notificationMod.Notification
+import typings.googleCloudStorage.signerMod.GetSignedUrlCallback
+import typings.googleCloudStorage.signerMod.GetSignedUrlResponse
+import typings.googleCloudStorage.signerMod.URLSigner
 import typings.googleCloudStorage.storageMod.Cors
 import typings.googleCloudStorage.storageMod.Storage
 import scala.scalajs.js
@@ -220,6 +223,7 @@ class Bucket protected ()
     * @type {string}
     */
   var name: String = js.native
+  var signer: js.UndefOr[URLSigner] = js.native
   /**
     * A reference to the {@link Storage} associated with this {@link Bucket}
     * instance.
@@ -321,6 +325,8 @@ class Bucket protected ()
   def getNotifications(callback: GetNotificationsCallback): Unit = js.native
   def getNotifications(options: GetNotificationsOptions): js.Promise[GetNotificationsResponse] = js.native
   def getNotifications(options: GetNotificationsOptions, callback: GetNotificationsCallback): Unit = js.native
+  def getSignedUrl(cfg: GetBucketSignedUrlConfig): js.Promise[GetSignedUrlResponse] = js.native
+  def getSignedUrl(cfg: GetBucketSignedUrlConfig, callback: GetSignedUrlCallback): Unit = js.native
   def lock(metageneration: String): js.Promise[BucketLockResponse] = js.native
   def lock(metageneration: String, callback: BucketLockCallback): Unit = js.native
   def lock(metageneration: Double): js.Promise[BucketLockResponse] = js.native

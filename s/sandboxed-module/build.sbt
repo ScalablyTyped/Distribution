@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sandboxed-module"
-version := "v2.0.3-dt-20190322Z-957b7c"
+version := "v2.0.3-dt-20200227Z-957b7c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

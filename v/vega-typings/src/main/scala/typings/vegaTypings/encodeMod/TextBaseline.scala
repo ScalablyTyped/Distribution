@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.vegaTypingsStrings.alphabetic
+  - typings.vegaTypings.vegaTypingsStrings.`line-top`
+  - typings.vegaTypings.vegaTypingsStrings.`line-bottom`
   - typings.vegaTypings.vegaTypingsStrings.top
   - typings.vegaTypings.vegaTypingsStrings.middle
   - typings.vegaTypings.vegaTypingsStrings.bottom
@@ -19,6 +21,10 @@ object TextBaseline {
   def bottom: typings.vegaTypings.vegaTypingsStrings.bottom = this.cast("bottom")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `line-bottom`: typings.vegaTypings.vegaTypingsStrings.`line-bottom` = this.cast("line-bottom")
+  @scala.inline
+  def `line-top`: typings.vegaTypings.vegaTypingsStrings.`line-top` = this.cast("line-top")
   @scala.inline
   def middle: typings.vegaTypings.vegaTypingsStrings.middle = this.cast("middle")
   @scala.inline

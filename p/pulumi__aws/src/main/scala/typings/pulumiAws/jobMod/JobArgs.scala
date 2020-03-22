@@ -3,6 +3,7 @@ package typings.pulumiAws.jobMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.glue.JobCommand
 import typings.pulumiAws.inputMod.glue.JobExecutionProperty
+import typings.pulumiAws.inputMod.glue.JobNotificationProperty
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,6 +13,8 @@ import scala.scalajs.js.annotation._
 trait JobArgs extends js.Object {
   /**
     * **DEPRECATED** (Optional) The number of AWS Glue data processing units (DPUs) to allocate to this Job. At least 2 DPUs need to be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory.
+    *
+    * @deprecated Please use attribute `max_capacity' instead. This attribute might be removed in future releases.
     */
   val allocatedCapacity: js.UndefOr[Input[Double]] = js.native
   /**
@@ -39,7 +42,7 @@ trait JobArgs extends js.Object {
     */
   val glueVersion: js.UndefOr[Input[String]] = js.native
   /**
-    * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
+    * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. `Required` when `pythonshell` is set, accept either `0.0625` or `1.0`.
     */
   val maxCapacity: js.UndefOr[Input[Double]] = js.native
   /**
@@ -47,9 +50,13 @@ trait JobArgs extends js.Object {
     */
   val maxRetries: js.UndefOr[Input[Double]] = js.native
   /**
-    * The name of the job command. Defaults to `glueetl`
+    * The name of the job command. Defaults to `glueetl`. Use `pythonshell` for Python Shell Job Type, `maxCapacity` needs to be set if `pythonshell` is chosen.
     */
   val name: js.UndefOr[Input[String]] = js.native
+  /**
+    * Notification property of the job. Defined below.
+    */
+  val notificationProperty: js.UndefOr[Input[JobNotificationProperty]] = js.native
   /**
     * The number of workers of a defined workerType that are allocated when a job runs.
     */
@@ -90,6 +97,7 @@ object JobArgs {
     maxCapacity: Input[Double] = null,
     maxRetries: Input[Double] = null,
     name: Input[String] = null,
+    notificationProperty: Input[JobNotificationProperty] = null,
     numberOfWorkers: Input[Double] = null,
     securityConfiguration: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
@@ -106,6 +114,7 @@ object JobArgs {
     if (maxCapacity != null) __obj.updateDynamic("maxCapacity")(maxCapacity.asInstanceOf[js.Any])
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notificationProperty != null) __obj.updateDynamic("notificationProperty")(notificationProperty.asInstanceOf[js.Any])
     if (numberOfWorkers != null) __obj.updateDynamic("numberOfWorkers")(numberOfWorkers.asInstanceOf[js.Any])
     if (securityConfiguration != null) __obj.updateDynamic("securityConfiguration")(securityConfiguration.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

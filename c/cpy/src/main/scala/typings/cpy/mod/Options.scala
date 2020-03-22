@@ -28,6 +28,21 @@ trait Options extends js.Object {
   val dot: js.UndefOr[Boolean] = js.undefined
   val expandDirectories: js.UndefOr[ExpandDirectoriesOption] = js.undefined
   val extglob: js.UndefOr[Boolean] = js.undefined
+  /**
+  		Function to filter files to copy.
+  		Receives a source file object as the first argument.
+  		Return true to include, false to exclude. You can also return a Promise that resolves to true or false.
+  		@example
+  		```
+  		import cpy = require('cpy');
+  		(async () => {
+  			await cpy('foo', 'destination', {
+  				filter: file => file.extension !== '.nocopy'
+  			});
+  		})();
+  		```
+  		*/
+  val filter: js.UndefOr[js.Function1[/* file */ SourceFile, Boolean | js.Promise[Boolean]]] = js.undefined
   val followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
   val fs: js.UndefOr[PartialFileSystemAdapter] = js.undefined
   val gitignore: js.UndefOr[Boolean] = js.undefined
@@ -84,6 +99,7 @@ object Options {
     dot: js.UndefOr[Boolean] = js.undefined,
     expandDirectories: ExpandDirectoriesOption = null,
     extglob: js.UndefOr[Boolean] = js.undefined,
+    filter: /* file */ SourceFile => Boolean | js.Promise[Boolean] = null,
     followSymbolicLinks: js.UndefOr[Boolean] = js.undefined,
     fs: PartialFileSystemAdapter = null,
     gitignore: js.UndefOr[Boolean] = js.undefined,
@@ -113,6 +129,7 @@ object Options {
     if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
     if (expandDirectories != null) __obj.updateDynamic("expandDirectories")(expandDirectories.asInstanceOf[js.Any])
     if (!js.isUndefined(extglob)) __obj.updateDynamic("extglob")(extglob.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
     if (!js.isUndefined(followSymbolicLinks)) __obj.updateDynamic("followSymbolicLinks")(followSymbolicLinks.asInstanceOf[js.Any])
     if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
     if (!js.isUndefined(gitignore)) __obj.updateDynamic("gitignore")(gitignore.asInstanceOf[js.Any])

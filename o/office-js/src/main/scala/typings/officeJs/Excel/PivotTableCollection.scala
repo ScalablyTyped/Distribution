@@ -28,7 +28,6 @@ class PivotTableCollection () extends ClientObject {
   def add(name: String, source: String, destination: Range): PivotTable = js.native
   def add(name: String, source: Range, destination: String): PivotTable = js.native
   /**
-    *
     * Add a PivotTable based on the specified source data and insert it at the top-left cell of the destination range.
     *
     * [Api set: ExcelApi 1.8]
@@ -42,14 +41,12 @@ class PivotTableCollection () extends ClientObject {
   def add(name: String, source: Table, destination: String): PivotTable = js.native
   def add(name: String, source: Table, destination: Range): PivotTable = js.native
   /**
-    *
     * Gets the number of pivot tables in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a PivotTable by name.
     *
     * [Api set: ExcelApi 1.3]
@@ -58,7 +55,6 @@ class PivotTableCollection () extends ClientObject {
     */
   def getItem(name: String): PivotTable = js.native
   /**
-    *
     * Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.4]
@@ -77,7 +73,6 @@ class PivotTableCollection () extends ClientObject {
   def load(propertyNames: String): PivotTableCollection = js.native
   def load(propertyNames: js.Array[String]): PivotTableCollection = js.native
   /**
-    *
     * Refreshes all the pivot tables in the collection.
     *
     * [Api set: ExcelApi 1.3]

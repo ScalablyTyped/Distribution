@@ -19,6 +19,14 @@ trait ConstraintDetail extends js.Object {
     */
   var Owner: js.UndefOr[AccountId] = js.native
   /**
+    * The identifier of the portfolio the product resides in. The constraint applies only to the instance of the product that lives within this portfolio.
+    */
+  var PortfolioId: js.UndefOr[Id] = js.native
+  /**
+    * The identifier of the product the constraint applies to. Note that a constraint applies to a specific instance of a product within a certain portfolio.
+    */
+  var ProductId: js.UndefOr[Id] = js.native
+  /**
     * The type of constraint.    LAUNCH     NOTIFICATION    STACKSET    TEMPLATE   
     */
   var Type: js.UndefOr[ConstraintType] = js.native
@@ -30,12 +38,16 @@ object ConstraintDetail {
     ConstraintId: Id = null,
     Description: ConstraintDescription = null,
     Owner: AccountId = null,
+    PortfolioId: Id = null,
+    ProductId: Id = null,
     Type: ConstraintType = null
   ): ConstraintDetail = {
     val __obj = js.Dynamic.literal()
     if (ConstraintId != null) __obj.updateDynamic("ConstraintId")(ConstraintId.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
+    if (PortfolioId != null) __obj.updateDynamic("PortfolioId")(PortfolioId.asInstanceOf[js.Any])
+    if (ProductId != null) __obj.updateDynamic("ProductId")(ProductId.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstraintDetail]
   }

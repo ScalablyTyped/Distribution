@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {} */
+/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> */
 trait HTMLAttributesidclassName extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined

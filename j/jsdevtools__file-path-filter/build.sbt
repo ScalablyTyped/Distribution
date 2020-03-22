@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsdevtools__file-path-filter"
-version := "3.0.0-ff08ff"
+version := "3.0.1-0e5fbf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -110,7 +110,6 @@ class DataPivotHierarchy () extends ClientObject {
   def set(properties: DataPivotHierarchyUpdateData): Unit = js.native
   def set(properties: DataPivotHierarchyUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Reset the DataPivotHierarchy back to its default values.
     *
     * [Api set: ExcelApi 1.8]

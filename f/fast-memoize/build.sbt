@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-memoize"
-version := "2.5.1-577940"
+version := "2.5.2-47a2f6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

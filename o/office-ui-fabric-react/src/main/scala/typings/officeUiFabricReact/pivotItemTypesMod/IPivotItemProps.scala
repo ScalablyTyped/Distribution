@@ -88,7 +88,8 @@ trait IPivotItemProps extends HTMLAttributes[HTMLDivElement] {
     */
   var componentRef: js.UndefOr[IRefObject[js.Object]] = js.undefined
   /**
-    * Props for the header command button supporting native props - data-* and aria-* - for each pivot header/link element
+    * Props for the header command button. This provides a way to pass in native props, such as data-* and aria-*,
+    * for each pivot header/link element.
     */
   var headerButtonProps: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
   /**

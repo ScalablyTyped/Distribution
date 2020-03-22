@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "alexa-sdk"
-version := "1.1-dt-20190717Z-cd617e"
+version := "1.1-dt-20200226Z-cd617e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

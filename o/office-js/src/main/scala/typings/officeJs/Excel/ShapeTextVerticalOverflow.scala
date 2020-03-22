@@ -18,7 +18,6 @@ sealed trait ShapeTextVerticalOverflow extends js.Object
 @js.native
 object ShapeTextVerticalOverflow extends js.Object {
   /**
-    *
     * Hide text that does not fit vertically within the text frame.
     *
     */
@@ -26,7 +25,6 @@ object ShapeTextVerticalOverflow extends js.Object {
   sealed trait clip extends ShapeTextVerticalOverflow
   
   /**
-    *
     * Hide text that does not fit vertically within the text frame, and add an ellipsis (...) at the end of the visible text.
     *
     */
@@ -34,7 +32,6 @@ object ShapeTextVerticalOverflow extends js.Object {
   sealed trait ellipsis extends ShapeTextVerticalOverflow
   
   /**
-    *
     * Allow text to overflow the text frame vertically (can be from the top, bottom, or both depending on the text alignment).
     *
     */

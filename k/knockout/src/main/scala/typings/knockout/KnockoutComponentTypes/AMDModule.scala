@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // common AMD type
-trait AMDModule extends js.Object {
+trait AMDModule extends _ViewModel {
   var require: String
 }
 

@@ -22,6 +22,9 @@ object jqueryStrings {
        with TextStatus
   
   @js.native
+  sealed trait `applicationSlashx-www-form-urlencoded` extends js.Object
+  
+  @js.native
   sealed trait array extends js.Object
   
   @js.native
@@ -132,6 +135,9 @@ object jqueryStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
+  sealed trait `multipartSlashform-data` extends js.Object
+  
+  @js.native
   sealed trait nocontent
     extends SuccessTextStatus
        with TextStatus
@@ -203,6 +209,9 @@ object jqueryStrings {
   sealed trait text extends js.Object
   
   @js.native
+  sealed trait textSlashplain extends js.Object
+  
+  @js.native
   sealed trait timeout
     extends ErrorTextStatus
        with TextStatus
@@ -231,6 +240,8 @@ object jqueryStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
+  @scala.inline
+  def `applicationSlashx-www-form-urlencoded`: `applicationSlashx-www-form-urlencoded` = "application/x-www-form-urlencoded".asInstanceOf[`applicationSlashx-www-form-urlencoded`]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   @scala.inline
@@ -304,6 +315,8 @@ object jqueryStrings {
   @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
+  def `multipartSlashform-data`: `multipartSlashform-data` = "multipart/form-data".asInstanceOf[`multipartSlashform-data`]
+  @scala.inline
   def nocontent: nocontent = "nocontent".asInstanceOf[nocontent]
   @scala.inline
   def notmodified: notmodified = "notmodified".asInstanceOf[notmodified]
@@ -345,6 +358,8 @@ object jqueryStrings {
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
+  def textSlashplain: textSlashplain = "text/plain".asInstanceOf[textSlashplain]
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline

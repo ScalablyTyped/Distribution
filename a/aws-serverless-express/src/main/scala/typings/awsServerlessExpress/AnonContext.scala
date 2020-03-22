@@ -1,6 +1,6 @@
 package typings.awsServerlessExpress
 
-import typings.awsLambda.handerMod.Context
+import typings.awsLambda.handlerMod.Context
 import typings.awsServerlessExpress.middlewareMod.NonFunctionProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`

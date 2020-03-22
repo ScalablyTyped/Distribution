@@ -15,7 +15,6 @@ sealed trait ChartAxisDisplayUnit extends js.Object
 @js.native
 object ChartAxisDisplayUnit extends js.Object {
   /**
-    *
     * This will set the axis in units of billions.
     *
     */
@@ -23,7 +22,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait billions extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of custom value.
     *
     */
@@ -31,7 +29,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait custom extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of hundreds of millions.
     *
     */
@@ -39,7 +36,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait hundredMillions extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of hundreds of thousands.
     *
     */
@@ -47,7 +43,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait hundredThousands extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of hundreds.
     *
     */
@@ -55,7 +50,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait hundreds extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of millions.
     *
     */
@@ -63,7 +57,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait millions extends ChartAxisDisplayUnit
   
   /**
-    *
     * Default option. This will reset display unit to the axis, and set unit label invisible.
     *
     */
@@ -71,7 +64,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait none extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of tens of millions.
     *
     */
@@ -79,7 +71,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait tenMillions extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of tens of thousands.
     *
     */
@@ -87,7 +78,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait tenThousands extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of thousands.
     *
     */
@@ -95,7 +85,6 @@ object ChartAxisDisplayUnit extends js.Object {
   sealed trait thousands extends ChartAxisDisplayUnit
   
   /**
-    *
     * This will set the axis in units of trillions.
     *
     */

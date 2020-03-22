@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - typings.stripeV3.stripeV3Strings.idempotency_error
   - typings.stripeV3.stripeV3Strings.invalid_request_error
   - typings.stripeV3.stripeV3Strings.rate_limit_error
+  - typings.stripeV3.stripeV3Strings.validation_error
 */
 trait ErrorType extends js.Object
 
@@ -32,5 +33,7 @@ object ErrorType {
   def invalid_request_error: typings.stripeV3.stripeV3Strings.invalid_request_error = this.cast("invalid_request_error")
   @scala.inline
   def rate_limit_error: typings.stripeV3.stripeV3Strings.rate_limit_error = this.cast("rate_limit_error")
+  @scala.inline
+  def validation_error: typings.stripeV3.stripeV3Strings.validation_error = this.cast("validation_error")
 }
 

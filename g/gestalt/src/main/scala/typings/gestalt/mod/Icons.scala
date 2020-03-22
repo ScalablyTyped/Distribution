@@ -9,7 +9,10 @@ import scala.scalajs.js.annotation._
   - typings.gestalt.gestaltStrings.`ad-group`
   - typings.gestalt.gestaltStrings.add
   - typings.gestalt.gestaltStrings.`add-circle`
+  - typings.gestalt.gestaltStrings.`add-layout`
   - typings.gestalt.gestaltStrings.`add-pin`
+  - typings.gestalt.gestaltStrings.`ads-stats`
+  - typings.gestalt.gestaltStrings.`ads-overview`
   - typings.gestalt.gestaltStrings.alert
   - typings.gestalt.gestaltStrings.`align-bottom-center`
   - typings.gestalt.gestaltStrings.`align-bottom-left`
@@ -49,6 +52,8 @@ import scala.scalajs.js.annotation._
   - typings.gestalt.gestaltStrings.compose
   - typings.gestalt.gestaltStrings.crop
   - typings.gestalt.gestaltStrings.dash
+  - typings.gestalt.gestaltStrings.`directional-arrow-left`
+  - typings.gestalt.gestaltStrings.`directional-arrow-right`
   - typings.gestalt.gestaltStrings.download
   - typings.gestalt.gestaltStrings.duplicate
   - typings.gestalt.gestaltStrings.edit
@@ -60,13 +65,16 @@ import scala.scalajs.js.annotation._
   - typings.gestalt.gestaltStrings.`face-happy`
   - typings.gestalt.gestaltStrings.`face-sad`
   - typings.gestalt.gestaltStrings.`face-smiley`
+  - typings.gestalt.gestaltStrings.`file-unknown`
   - typings.gestalt.gestaltStrings.`fill-opaque`
   - typings.gestalt.gestaltStrings.`fill-transparent`
   - typings.gestalt.gestaltStrings.filter
   - typings.gestalt.gestaltStrings.flag
+  - typings.gestalt.gestaltStrings.flash
   - typings.gestalt.gestaltStrings.flashlight
   - typings.gestalt.gestaltStrings.flipHorizontal
   - typings.gestalt.gestaltStrings.flipVertical
+  - typings.gestalt.gestaltStrings.folder
   - typings.gestalt.gestaltStrings.gif
   - typings.gestalt.gestaltStrings.globe
   - typings.gestalt.gestaltStrings.`globe-checked`
@@ -76,8 +84,10 @@ import scala.scalajs.js.annotation._
   - typings.gestalt.gestaltStrings.handle
   - typings.gestalt.gestaltStrings.`hand-pointing`
   - typings.gestalt.gestaltStrings.heart
+  - typings.gestalt.gestaltStrings.`heart-outline`
   - typings.gestalt.gestaltStrings.`heart-broken`
   - typings.gestalt.gestaltStrings.impressum
+  - typings.gestalt.gestaltStrings.`info-circle`
   - typings.gestalt.gestaltStrings.key
   - typings.gestalt.gestaltStrings.knoop
   - typings.gestalt.gestaltStrings.lightbulb
@@ -110,8 +120,10 @@ import scala.scalajs.js.annotation._
   - typings.gestalt.gestaltStrings.`question-mark`
   - typings.gestalt.gestaltStrings.remove
   - typings.gestalt.gestaltStrings.`reorder-images`
+  - typings.gestalt.gestaltStrings.replace
   - typings.gestalt.gestaltStrings.report
   - typings.gestalt.gestaltStrings.rotate
+  - typings.gestalt.gestaltStrings.scale
   - typings.gestalt.gestaltStrings.search
   - typings.gestalt.gestaltStrings.security
   - typings.gestalt.gestaltStrings.`shopping-bag`
@@ -146,6 +158,13 @@ import scala.scalajs.js.annotation._
   - typings.gestalt.gestaltStrings.`view-type-default`
   - typings.gestalt.gestaltStrings.`view-type-dense`
   - typings.gestalt.gestaltStrings.`view-type-list`
+  - typings.gestalt.gestaltStrings.`workflow-status-all`
+  - typings.gestalt.gestaltStrings.`workflow-status-halted`
+  - typings.gestalt.gestaltStrings.`workflow-status-in-progress`
+  - typings.gestalt.gestaltStrings.`workflow-status-ok`
+  - typings.gestalt.gestaltStrings.`workflow-status-problem`
+  - typings.gestalt.gestaltStrings.`workflow-status-unstarted`
+  - typings.gestalt.gestaltStrings.`workflow-status-warning`
 */
 trait Icons extends js.Object
 
@@ -159,7 +178,13 @@ object Icons {
   @scala.inline
   def `add-circle`: typings.gestalt.gestaltStrings.`add-circle` = this.cast("add-circle")
   @scala.inline
+  def `add-layout`: typings.gestalt.gestaltStrings.`add-layout` = this.cast("add-layout")
+  @scala.inline
   def `add-pin`: typings.gestalt.gestaltStrings.`add-pin` = this.cast("add-pin")
+  @scala.inline
+  def `ads-overview`: typings.gestalt.gestaltStrings.`ads-overview` = this.cast("ads-overview")
+  @scala.inline
+  def `ads-stats`: typings.gestalt.gestaltStrings.`ads-stats` = this.cast("ads-stats")
   @scala.inline
   def alert: typings.gestalt.gestaltStrings.alert = this.cast("alert")
   @scala.inline
@@ -241,6 +266,10 @@ object Icons {
   @scala.inline
   def dash: typings.gestalt.gestaltStrings.dash = this.cast("dash")
   @scala.inline
+  def `directional-arrow-left`: typings.gestalt.gestaltStrings.`directional-arrow-left` = this.cast("directional-arrow-left")
+  @scala.inline
+  def `directional-arrow-right`: typings.gestalt.gestaltStrings.`directional-arrow-right` = this.cast("directional-arrow-right")
+  @scala.inline
   def download: typings.gestalt.gestaltStrings.download = this.cast("download")
   @scala.inline
   def duplicate: typings.gestalt.gestaltStrings.duplicate = this.cast("duplicate")
@@ -263,6 +292,8 @@ object Icons {
   @scala.inline
   def facebook: typings.gestalt.gestaltStrings.facebook = this.cast("facebook")
   @scala.inline
+  def `file-unknown`: typings.gestalt.gestaltStrings.`file-unknown` = this.cast("file-unknown")
+  @scala.inline
   def `fill-opaque`: typings.gestalt.gestaltStrings.`fill-opaque` = this.cast("fill-opaque")
   @scala.inline
   def `fill-transparent`: typings.gestalt.gestaltStrings.`fill-transparent` = this.cast("fill-transparent")
@@ -271,11 +302,15 @@ object Icons {
   @scala.inline
   def flag: typings.gestalt.gestaltStrings.flag = this.cast("flag")
   @scala.inline
+  def flash: typings.gestalt.gestaltStrings.flash = this.cast("flash")
+  @scala.inline
   def flashlight: typings.gestalt.gestaltStrings.flashlight = this.cast("flashlight")
   @scala.inline
   def flipHorizontal: typings.gestalt.gestaltStrings.flipHorizontal = this.cast("flipHorizontal")
   @scala.inline
   def flipVertical: typings.gestalt.gestaltStrings.flipVertical = this.cast("flipVertical")
+  @scala.inline
+  def folder: typings.gestalt.gestaltStrings.folder = this.cast("folder")
   @scala.inline
   def gif: typings.gestalt.gestaltStrings.gif = this.cast("gif")
   @scala.inline
@@ -297,7 +332,11 @@ object Icons {
   @scala.inline
   def `heart-broken`: typings.gestalt.gestaltStrings.`heart-broken` = this.cast("heart-broken")
   @scala.inline
+  def `heart-outline`: typings.gestalt.gestaltStrings.`heart-outline` = this.cast("heart-outline")
+  @scala.inline
   def impressum: typings.gestalt.gestaltStrings.impressum = this.cast("impressum")
+  @scala.inline
+  def `info-circle`: typings.gestalt.gestaltStrings.`info-circle` = this.cast("info-circle")
   @scala.inline
   def key: typings.gestalt.gestaltStrings.key = this.cast("key")
   @scala.inline
@@ -363,9 +402,13 @@ object Icons {
   @scala.inline
   def `reorder-images`: typings.gestalt.gestaltStrings.`reorder-images` = this.cast("reorder-images")
   @scala.inline
+  def replace: typings.gestalt.gestaltStrings.replace = this.cast("replace")
+  @scala.inline
   def report: typings.gestalt.gestaltStrings.report = this.cast("report")
   @scala.inline
   def rotate: typings.gestalt.gestaltStrings.rotate = this.cast("rotate")
+  @scala.inline
+  def scale: typings.gestalt.gestaltStrings.scale = this.cast("scale")
   @scala.inline
   def search: typings.gestalt.gestaltStrings.search = this.cast("search")
   @scala.inline
@@ -434,5 +477,19 @@ object Icons {
   def `view-type-dense`: typings.gestalt.gestaltStrings.`view-type-dense` = this.cast("view-type-dense")
   @scala.inline
   def `view-type-list`: typings.gestalt.gestaltStrings.`view-type-list` = this.cast("view-type-list")
+  @scala.inline
+  def `workflow-status-all`: typings.gestalt.gestaltStrings.`workflow-status-all` = this.cast("workflow-status-all")
+  @scala.inline
+  def `workflow-status-halted`: typings.gestalt.gestaltStrings.`workflow-status-halted` = this.cast("workflow-status-halted")
+  @scala.inline
+  def `workflow-status-in-progress`: typings.gestalt.gestaltStrings.`workflow-status-in-progress` = this.cast("workflow-status-in-progress")
+  @scala.inline
+  def `workflow-status-ok`: typings.gestalt.gestaltStrings.`workflow-status-ok` = this.cast("workflow-status-ok")
+  @scala.inline
+  def `workflow-status-problem`: typings.gestalt.gestaltStrings.`workflow-status-problem` = this.cast("workflow-status-problem")
+  @scala.inline
+  def `workflow-status-unstarted`: typings.gestalt.gestaltStrings.`workflow-status-unstarted` = this.cast("workflow-status-unstarted")
+  @scala.inline
+  def `workflow-status-warning`: typings.gestalt.gestaltStrings.`workflow-status-warning` = this.cast("workflow-status-warning")
 }
 

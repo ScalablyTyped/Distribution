@@ -4,7 +4,7 @@ import typings.tensorflowTfjsConverter.operationsTypesMod.Graph
 import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.typesMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -64,7 +64,7 @@ object graphExecutorMod extends js.Object {
       * inspect intermediate nodes of the model by adding them to the outputs
       * array.
       */
-    def execute(inputs: NamedTensorMap, outputs: js.Array[String]): js.Array[Tensor_[Rank]] = js.native
+    def execute(inputs: NamedTensorMap, outputs: js.Array[String]): js.Array[Tensor[Rank]] = js.native
     /**
       * Executes the inference for given input tensors in Async fashion.
       * @param inputs Tensor map for the model inputs, keyed by the input node
@@ -74,7 +74,7 @@ object graphExecutorMod extends js.Object {
       * inspect intermediate nodes of the model by adding them to the outputs
       * array.
       */
-    def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[js.Array[Tensor_[Rank]]] = js.native
+    def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[js.Array[Tensor[Rank]]] = js.native
   }
   
 }

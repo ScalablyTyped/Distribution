@@ -22,6 +22,6 @@ class SnapshotRecordArray[K /* <: String */] () extends js.Object {
   /**
     * Get snapshots of the underlying record array
     */
-  def snapshots(): js.Array[Snapshot[_]] = js.native
+  def snapshots(): js.Array[Snapshot[String]] = js.native
 }
 

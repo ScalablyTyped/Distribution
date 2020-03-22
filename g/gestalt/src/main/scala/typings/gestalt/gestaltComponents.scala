@@ -9,6 +9,8 @@ object gestaltComponents extends gestaltProps {
   @scala.inline
   def Avatar: ComponentType[AvatarProps] = js.constructorOf[typings.gestalt.mod.Avatar].asInstanceOf[typings.react.mod.ComponentType[AvatarProps]]
   @scala.inline
+  def Badge: ComponentType[BadgeProps] = js.constructorOf[typings.gestalt.mod.Badge].asInstanceOf[typings.react.mod.ComponentType[BadgeProps]]
+  @scala.inline
   def Box: ComponentType[BoxProps] = js.constructorOf[typings.gestalt.mod.Box].asInstanceOf[typings.react.mod.ComponentType[BoxProps]]
   @scala.inline
   def Button: ComponentType[ButtonProps] = js.constructorOf[typings.gestalt.mod.Button].asInstanceOf[typings.react.mod.ComponentType[ButtonProps]]
@@ -16,6 +18,8 @@ object gestaltComponents extends gestaltProps {
   def Card: ComponentType[CardProps] = js.constructorOf[typings.gestalt.mod.Card].asInstanceOf[typings.react.mod.ComponentType[CardProps]]
   @scala.inline
   def Checkbox: ComponentType[CheckboxProps] = js.constructorOf[typings.gestalt.mod.Checkbox].asInstanceOf[typings.react.mod.ComponentType[CheckboxProps]]
+  @scala.inline
+  def Collage: ComponentType[CollageProps] = js.constructorOf[typings.gestalt.mod.Collage].asInstanceOf[typings.react.mod.ComponentType[CollageProps]]
   @scala.inline
   def Column: ComponentType[ColumnProps] = js.constructorOf[typings.gestalt.mod.Column].asInstanceOf[typings.react.mod.ComponentType[ColumnProps]]
   @scala.inline
@@ -36,6 +40,8 @@ object gestaltComponents extends gestaltProps {
   def Image: ComponentType[ImageProps] = js.constructorOf[typings.gestalt.mod.Image].asInstanceOf[typings.react.mod.ComponentType[ImageProps]]
   @scala.inline
   def Label: ComponentType[LabelProps] = js.constructorOf[typings.gestalt.mod.Label].asInstanceOf[typings.react.mod.ComponentType[LabelProps]]
+  @scala.inline
+  def Layer: ComponentType[LayerProps] = js.constructorOf[typings.gestalt.mod.Layer].asInstanceOf[typings.react.mod.ComponentType[LayerProps]]
   @scala.inline
   def Letterbox: ComponentType[LetterboxProps] = js.constructorOf[typings.gestalt.mod.Letterbox].asInstanceOf[typings.react.mod.ComponentType[LetterboxProps]]
   @scala.inline

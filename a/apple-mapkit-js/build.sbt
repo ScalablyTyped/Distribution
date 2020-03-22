@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apple-mapkit-js"
-version := "5.18-dt-20190917Z-f2899a"
+version := "5.18-dt-20200225Z-f2899a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

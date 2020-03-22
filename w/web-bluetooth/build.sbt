@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web-bluetooth"
-version := "0.0-unknown-dt-20200103Z-2e738f"
+version := "0.0-unknown-dt-20200225Z-2e738f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

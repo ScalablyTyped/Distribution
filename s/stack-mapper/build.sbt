@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stack-mapper"
-version := "0.2.2-dt-20190322Z-8d623b"
+version := "0.2.2-dt-20200227Z-8d623b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

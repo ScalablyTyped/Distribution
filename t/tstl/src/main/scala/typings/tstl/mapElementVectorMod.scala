@@ -34,7 +34,6 @@ object mapElementVectorMod extends js.Object {
     var associative_ : js.Any = js.native
   }
   
-  /* static members */
   @js.native
   object MapElementVector extends js.Object {
     /**
@@ -139,17 +138,6 @@ object mapElementVectorMod extends js.Object {
       def second(`val`: T): js.Any = js.native
     }
     
-    /**
-      * @internal
-      */
-    def _Swap_associative[Key, T, Unique /* <: Boolean */, Source /* <: ITreeMap[
-        Key, 
-        T, 
-        Unique, 
-        Source, 
-        Iterator[Key, T, Unique, Source], 
-        ReverseIterator[Key, T, Unique, Source]
-      ] */](x: MapElementVector[Key, T, Unique, Source], y: MapElementVector[Key, T, Unique, Source]): Unit = js.native
   }
   
 }

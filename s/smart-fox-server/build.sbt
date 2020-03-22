@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smart-fox-server"
-version := "0.0-unknown-dt-20191014Z-aaae15"
+version := "0.0-unknown-dt-20200227Z-aaae15"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

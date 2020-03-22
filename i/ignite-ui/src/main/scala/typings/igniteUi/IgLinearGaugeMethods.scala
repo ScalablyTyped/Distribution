@@ -55,7 +55,7 @@ trait IgLinearGaugeMethods extends js.Object {
   	 * @param x The x coordinate of the point.
   	 * @param y The y coordinate of the point.
   	 */
-  def needleContainsPoint(x: Double, y: Double): Unit
+  def needleContainsPoint(x: Double, y: Double): Boolean
   /**
   	 * Removes a range from the linear gauge.
   	 *
@@ -86,7 +86,7 @@ object IgLinearGaugeMethods {
     flush: () => Unit,
     getRangeNames: () => String,
     getValueForPoint: (js.Object, js.Object) => Double,
-    needleContainsPoint: (Double, Double) => Unit,
+    needleContainsPoint: (Double, Double) => Boolean,
     removeRange: js.Object => Unit,
     styleUpdated: () => Unit,
     updateRange: js.Object => Unit

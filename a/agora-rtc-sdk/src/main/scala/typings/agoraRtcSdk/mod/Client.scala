@@ -1,15 +1,19 @@
 package typings.agoraRtcSdk.mod
 
+import typings.agoraRtcSdk.Anon0
 import typings.agoraRtcSdk.AnonAttr
 import typings.agoraRtcSdk.AnonBitrate
 import typings.agoraRtcSdk.AnonCode
+import typings.agoraRtcSdk.AnonCodeNumber
 import typings.agoraRtcSdk.AnonCurState
 import typings.agoraRtcSdk.AnonForceturn
 import typings.agoraRtcSdk.AnonReason
 import typings.agoraRtcSdk.AnonRole
+import typings.agoraRtcSdk.AnonState
 import typings.agoraRtcSdk.AnonStreamStream
+import typings.agoraRtcSdk.AnonSuccess
+import typings.agoraRtcSdk.AnonType
 import typings.agoraRtcSdk.AnonUid
-import typings.agoraRtcSdk.AnonUidString
 import typings.agoraRtcSdk.AnonVideo
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`0`
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`1`
@@ -19,9 +23,16 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-ecb`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-128-xts`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`aes-256-xts`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`camera-changed`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`channel-media-relay-event`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`channel-media-relay-state`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`client-banned`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`client-role-changed`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`connection-state-change`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`crypt-error`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`disable-local-video`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`enable-local-video`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`first-audio-frame-decode`
+import typings.agoraRtcSdk.agoraRtcSdkStrings.`first-video-frame-decode`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`mute-audio`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`mute-video`
 import typings.agoraRtcSdk.agoraRtcSdkStrings.`network-quality`
@@ -65,8 +76,19 @@ trait Client extends js.Object {
   /**
     * Injects an Online Media Stream to a Live Broadcast
     *
-    * The `streamInjectedStatus` callback returns the inject status.If this method is called successfully, the server pulls the voice or video stream and injects it into a live channel.
+    * This method call triggers the following callbacks:
+    * - On the local client:
+    *   - `Client.on("streamInjectedStatus")`, with the state of injecting the online stream.
+    *   - `Client.on("stream-added")` and `Client.on("peer-online")`(uid: 666), if the online media stream is injected into the channel.
+    * - On the remote client:
+    *   - `Client.on("stream-added")` and `Client.on("peer-online")`(uid: 666), if the online media stream is injected into the channel.
+    *
+    * If this method is called successfully, the server pulls the voice or video stream and injects it into a live channel.
     * This is applicable to scenarios where all of the audience members in the channel can watch a live show and interact with each other.
+    *
+    * **Note:**
+    *
+    * Ensure that you [enable the RTMP Converter service](../../../cdn_streaming_web#prerequisites) before using this function.
     * @param url URL address of the live streaming. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     * Valid protocols are RTMP, HLS, and FLV.
     * - Supported FLV audio codec type: AAC.
@@ -90,7 +112,7 @@ trait Client extends js.Object {
     *
     * Call {@link configPublisher} before {@link Client.join}.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.configPublisher({
@@ -113,7 +135,7 @@ trait Client extends js.Object {
     * Disables Dual Streams
     *
     * This method disables dual streams.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.disableDualStream(function() {
     *   console.log("Disable dual stream success!")
@@ -122,27 +144,29 @@ trait Client extends js.Object {
     * })
     * ```
     * @param onSuccess The callback when the method succeeds.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "STILL_ON_PUBLISHING": Still publishing the stream. Disable dual streams later.
+    * - "DISABLE_DUALSTREAM_FAILED": Fails to disable dual streams.
     */
   def disableDualStream(): Unit = js.native
   def disableDualStream(onSuccess: js.Function0[Unit]): Unit = js.native
-  def disableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def disableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
     * Enables Volume Indicator
     *
     * This method enables the SDK to report the active remote users who are speaking and their volume regularly.
     *
-    * If this method is enabled, the SDK will return the volumes every two seconds, regardless of whether there are active speakers.
+    * If this method is enabled, the SDK triggers the `"volume-indicator"` callback to report the volumes every two seconds, regardless of whether there are active speakers.
     *
     * **Note:**
     *
     * - If you have multiple web pages running the Web SDK, this function might not work.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.enableAudioVolumeIndicator(); // Triggers the "volume-indicator" callback event every two seconds.
     * client.on("volume-indicator", function(evt){
     *     evt.attr.forEach(function(volume, index){
-    *             console.log(#{index} UID ${volume.uid} Level ${volume.level});
+    *             console.log(`${index} UID ${volume.uid} Level ${volume.level}`);
     *     });
     * });
     * ```
@@ -151,19 +175,21 @@ trait Client extends js.Object {
   /**
     * Enables Dual Stream
     *
-    * This method enables the dual-stream mode on the publisher side.
+    * This method enables the dual-stream mode on the publisher side. We recommend calling this method after joining a channel({@link Client.join}).
     *
     * Dual streams are a hybrid of a high-video stream and a low-video stream:
     *
     * - High-video stream: high bitrate, high resolution
     * - Low-video stream: low bitrate, low resolution
     *
-    * @example **Sample Code**
+    * We do not recommend using the track methods ([[addTrack]]/[[removeTrack]]/[[replaceTrack]]) on dual streams, which might cause different performance in the high-video and low-video streams.
+    *
+    * @example **Sample code**
     * ``` javascript
     * client.enableDualStream(function() {
     *   console.log("Enable dual stream success!")
     * }, function(err) {
-    *   console,log(err)
+    *   console.log(err)
     * })
     * ```
     *
@@ -176,11 +202,15 @@ trait Client extends js.Object {
     * -   Safari browser on iOS
     * -   Screen-sharing scenario
     * @param onSuccess The callback when the method succeeds.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "IOS_NOT_SUPPORT": Does not support iOS.
+    * - "WECHAT_NOT_SUPPORT": Does not support WeChat.
+    * - "STILL_ON_PUBLISHING": Still publishing the stream. Enable dual streams later.
+    * - "ENABLE_DUALSTREAM_FAILED": Fails to enable dual streams.
     */
   def enableDualStream(): Unit = js.native
   def enableDualStream(onSuccess: js.Function0[Unit]): Unit = js.native
-  def enableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def enableDualStream(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
     * Enumerates Video Input Devices
     *
@@ -188,7 +218,7 @@ trait Client extends js.Object {
     *
     * If this method succeeds, the SDK returns a list of video input devices in an array of [[MediaDeviceInfo]] objects.
     */
-  def getCameras(callback: js.Function1[/* devices */ MediaDeviceInfo, Unit]): Unit = js.native
+  def getCameras(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = js.native
   /**
     * Gets the Connection State
     *
@@ -218,7 +248,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the local audio stream.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getLocalAudioStats((localAudioStats) => {
@@ -246,7 +276,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the local video stream.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getLocalVideoStats((localVideoStats) => {
@@ -284,7 +314,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the system network.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getNetworkStats((stats) => {
@@ -299,8 +329,12 @@ trait Client extends js.Object {
     * This method enumerates the available audio output devices, such as speakers.
     *
     * If this method succeeds, the SDK returns a list of audio output devices in an array of [[MediaDeviceInfo]] objects.
+    *
+    * **Note:**
+    *
+    * Only Chrome 49 or later supports this function.
     */
-  def getPlayoutDevices(callback: js.Function1[/* devices */ MediaDeviceInfo, Unit]): Unit = js.native
+  def getPlayoutDevices(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = js.native
   /**
     * Enumerates Audio Input Devices
     *
@@ -308,7 +342,7 @@ trait Client extends js.Object {
     *
     * If this method succeeds, the SDK returns a list of audio input devices in an array of [[MediaDeviceInfo]] objects.
     */
-  def getRecordingDevices(callback: js.Function1[/* devices */ MediaDeviceInfo, Unit]): Unit = js.native
+  def getRecordingDevices(callback: js.Function1[/* devices */ js.Array[MediaDeviceInfo], Unit]): Unit = js.native
   /**
     * Retrieves the Audio Statistics of the Remote Stream
     *
@@ -321,7 +355,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the remote audio stream.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getRemoteAudioStats((remoteAudioStatsMap) => {
@@ -352,7 +386,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the remote video stream.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getRemoteVideoStats((remoteVideoStatsMap) => {
@@ -387,7 +421,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the session connection.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getSessionStats((stats) => {
@@ -414,7 +448,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the system.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getSystemStats((stats) => {
@@ -435,7 +469,7 @@ trait Client extends js.Object {
     *
     * @param callback The callback contains the statistics of the transmission quality.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.getTransportStats((stats) => {
@@ -450,7 +484,7 @@ trait Client extends js.Object {
     * Initializes a Client Object
     *
     * This method initializes the client object.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.init(appId, function() {
     *     console.log("client initialized");
@@ -461,11 +495,10 @@ trait Client extends js.Object {
     *     // Error handling
     * });
     * ```
-    * @param appId Pass in the App ID for your project. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
-    *
-    * To get your App ID, see [Get an App ID](../../../web_prepare?platform=Web#create-an-agora-account-and-get-an-app-id).
+    * @param appId Pass in the [App ID](https://docs.agora.io/en/Agora%20Platform/terms?platform=All%20Platforms#a-name-appid-a-app-id) for your project. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     * @param onSuccess The callback when the method succeeds.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are the common errors:
+    * - `"BAD_ENVIRONMENT"`: Unsupported web browser.
     */
   def init(appId: String): Unit = js.native
   def init(appId: String, onSuccess: js.Function0[Unit]): Unit = js.native
@@ -483,13 +516,18 @@ trait Client extends js.Object {
     channel: String,
     uid: String,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
-    onFailure: js.Function1[/* err */ js.Any, Unit]
+    onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   /**
     * Joins an AgoraRTC Channel
     *
     * This method joins an AgoraRTC channel.
-    * @example **Sample Code**
+    *
+    * When joining the channel, the `Client.on("connected")` and `Client.on("connection-state-change")` callbacks are triggered on the local client.
+    *
+    * After joining the channel, if the user joining the channel is in the Communication profile, or is a host in the Live Broadcast profile, the `Client.on("peer-online")` callback is triggered on the remote client.
+    *
+    * @example **Sample code**
     * ``` javascript
     * client.join(<token>, "1024", null, function(uid) {
     *     console.log("client" + uid + "joined channel");
@@ -505,11 +543,11 @@ trait Client extends js.Object {
     * - High security requirements: Pass the string of the Token or Channel Key as the parameter value. See [Use Security Keys](../../../token) for details.
     * @param channel A string that provides a unique channel name for the Agora session. The length must be within 64 bytes. Supported character scopes:
     *
-    *  - 26 lowercase English letters a-z
-    *  - 26 uppercase English letters A-Z
-    *  - 10 numbers 0-9
-    *  - Space
-    *  - "!", "#", "$", "%", "&", "(", ")", "+", "-", ":", ";", "<", "=", ".", ">", "?", "@", "[", "]", "^", "_", "{", "}", "|", "~", ","
+    * - All lowercase English letters: a to z.
+    * - All uppercase English letters: A to Z.
+    * - All numeric characters: 0 to 9.
+    * - The space character.
+    * - Punctuation characters and other symbols, including: "!", "#", "$", "%", "&", "(", ")", "+", "-", ":", ";", "<", "=", ".", ">", "?", "@", "[", "]", "^", "_", " {", "}", "|", "~", ",".
     * @param uid The user ID, an integer or a string, ASCII characters only. Ensure this ID is unique.
     *            If you set the uid to `null`, the server assigns one and returns it in the `onSuccess` callback.
     *
@@ -518,8 +556,12 @@ trait Client extends js.Object {
     * - All users in the same channel should have the same type (number or string) of `uid`.
     * - If you use a number as the user ID, it should be a 32-bit unsigned integer with a value ranging from 0 to (2<sup>32</sup>-1).
     * - If you use a string as the user ID, the maximum length is 255 characters.
+    * - You can use string UIDs to interoperate with the Native SDK 2.8 or later. Ensure that the Native SDK uses the User Account to join the channel. See [Use String User Accounts](https://docs.agora.io/en/Interactive%20Broadcast/string_web?platform=Web).
     * @param onSuccess The callback when the method succeeds. The server returns the uid which represents the identity of the user.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "INVALID_OPERATION": Unable to join the channel. Usually due to calling `Client.join` repeatedly.
+    * - "UID_CONFLICT": The `uid` of the local client conflicts with other users in the channel.
+    * - "SOCKET_ERROR": The SDK disconnects with the Agora server when joining the channel.
     */
   def join(tokenOrKey: String, channel: String, uid: Double): Unit = js.native
   def join(
@@ -533,7 +575,7 @@ trait Client extends js.Object {
     channel: String,
     uid: Double,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
-    onFailure: js.Function1[/* err */ js.Any, Unit]
+    onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: String,
@@ -546,7 +588,7 @@ trait Client extends js.Object {
     channel: String,
     uid: Null,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
-    onFailure: js.Function1[/* err */ js.Any, Unit]
+    onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(tokenOrKey: Null, channel: String): Unit = js.native
   def join(tokenOrKey: Null, channel: String, uid: String): Unit = js.native
@@ -561,7 +603,7 @@ trait Client extends js.Object {
     channel: String,
     uid: String,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
-    onFailure: js.Function1[/* err */ js.Any, Unit]
+    onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(tokenOrKey: Null, channel: String, uid: Double): Unit = js.native
   def join(
@@ -575,7 +617,7 @@ trait Client extends js.Object {
     channel: String,
     uid: Double,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
-    onFailure: js.Function1[/* err */ js.Any, Unit]
+    onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   def join(
     tokenOrKey: Null,
@@ -588,13 +630,18 @@ trait Client extends js.Object {
     channel: String,
     uid: Null,
     onSuccess: js.Function1[/* uid */ Double | String, Unit],
-    onFailure: js.Function1[/* err */ js.Any, Unit]
+    onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
   /**
     * Leaves an AgoraRTC Channel
     *
     * This method enables a user to leave a channel.
-    * @example **Sample Code**
+    *
+    * When leaving the channel, the `Client.on("connection-state-change")` callback is triggered on the local client.
+    *
+    * After leaving the channel, if the user joining the channel is in the Communication profile, or is a host in the Live Broadcast profile, the `Client.on("peer-leave") callback` is triggered on the remote client.
+    *
+    * @example **Sample code**
     * ``` javascript
     * client.leave(function() {
     *     console.log("client leaves channel");
@@ -605,14 +652,35 @@ trait Client extends js.Object {
     * });
     * ```
     * @param onSuccess The callback when the method succeeds.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "INVALID_OPERATION": Invalid operation. Possible reasons are that this method is already called or the user is not in the channel.
+    * - "SOCKET_ERROR": The SDK disconnects with the Agora server when leaving the channel.
+    * - "LEAVE_MSG_TIMEOUT": The request to leave the channel times out. In this case, the SDK automatically disconnects and leaves the channel.
     */
   def leave(): Unit = js.native
   def leave(onSuccess: js.Function0[Unit]): Unit = js.native
-  def leave(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def leave(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  /**
+    * Unbinds Events
+    *
+    * This method removes the events attached by the `Client.on()` method.
+    *
+    * @param eventType The event to be removed.
+    * @param callback The function to be removed.
+    *
+    * @example **Sample code**
+    * ``` javascript
+    * client.on("stream-published", function processStreamPublished(evt) {
+    *   console.log("Stream Published");
+    *   evt.stream.play("divId");
+    *   client.off("stream-published", processStreamPublished);
+    * })
+    * ```
+    */
+  def off(eventType: String, callback: js.Any): Unit = js.native
   /**
     * This callback notifies the application who is the active speaker in the channel.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("active-speaker", function(evt) {
     *      var uid = evt.uid;
@@ -625,7 +693,7 @@ trait Client extends js.Object {
   def on_activespeaker(event: `active-speaker`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when a camera is added or removed.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("camera-changed", function(evt) {
     *     console.log("Camera Changed", evt.state, evt.device);
@@ -637,8 +705,32 @@ trait Client extends js.Object {
   @JSName("on")
   def on_camerachanged(event: `camera-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
-    * This callback notifies the peer user that they are banned from the channel. Only the banned users receive this callback.
-    * @example **Sample Code**
+    * Reports events during the media stream relay.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    */
+  @JSName("on")
+  def on_channelmediarelayevent(event: `channel-media-relay-event`, callback: js.Function1[/* evt */ AnonCodeNumber, Unit]): Unit = js.native
+  /**
+    * Occurs when the state of the media stream relay changes.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    *
+    * The SDK reports the state and error code of the current media relay in this callback.
+    */
+  @JSName("on")
+  def on_channelmediarelaystate(event: `channel-media-relay-state`, callback: js.Function1[/* evt */ AnonState, Unit]): Unit = js.native
+  /**
+    * This callback notifies the peer user that he/she is banned from the channel. Only the banned users receive this callback.
+    *
+    * Possible reasons include:
+    * - K_CHANNEL_PERMISSION_INVALID: The user has no permission.
+    * - K_UID_BANNED: The UID is banned.
+    * - K_IP_BANNED: The IP is banned.
+    * - K_CHANNEL_BANNED The channel is banned.
+    * @example **Sample code**
     * ``` javascript
     * client.on("client-banned", function (evt) {
     *    var uid = evt.uid;
@@ -654,7 +746,7 @@ trait Client extends js.Object {
   /**
     * Occurs when the user role switches in a live broadcast. For example, from a host to an audience or vice versa.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ```javascript
     * client.on('client-role-changed', function(evt) {
@@ -678,7 +770,7 @@ trait Client extends js.Object {
     * If the connection is lost because, for example, the network is down or switched, the SDK triggers this callback and notifies the app that the state changes from `CONNECTED` to `CONNECTING`.
     * - `DISCONNECTING`: The SDK is disconnecting from Agora's edge server. The SDK enters this state when calling [[Client.leave]].
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.on("connection-state-change", function(evt) {
@@ -689,19 +781,54 @@ trait Client extends js.Object {
   @JSName("on")
   def on_connectionstatechange(event: `connection-state-change`, callback: js.Function1[/* evt */ AnonCurState, Unit]): Unit = js.native
   /**
+    * Occurs when encryption or decryption fails during publishing or subscribing to a stream.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    *
+    * The failure is usually due to a wrong encryption password ({@link setEncryptionSecret}) or an incorrect encryption mode ({@link setEncryptionMode}).
+    *
+    * @example **Sample code**
+    * ```javascript
+    * client.on("crypt-error", function (evt) {
+    *   console.log(evt.cryptType + "error!");
+    * });
+    * ```
+    */
+  @JSName("on")
+  def on_crypterror(event: `crypt-error`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  /**
+    * Occurs when a remote user of the Native SDK calls `enableLocalVideo(false)` to disable video capture.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    */
+  @JSName("on")
+  def on_disablelocalvideo(event: `disable-local-video`, callback: js.Function1[/* evt */ AnonUid, Unit]): Unit = js.native
+  /**
+    * Occurs when a remote user of the Native SDK calls `enableLocalVideo(true)` to enable video capture.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    */
+  @JSName("on")
+  def on_enablelocalvideo(event: `enable-local-video`, callback: js.Function1[/* evt */ AnonUid, Unit]): Unit = js.native
+  /**
     * Occurs when an error message is reported and requires error handling.
-    * @example **Sample Code**
+    *
+    * Possible errors:
+    * - When `reason` is `"SOCKET_DISCONNECTED"`, the SDK disconnects from the Agora server due to network conditions and will automatically try reconnecting.
+    * - If this callback reports other reasons, it means that the error occurs during the reconnecting phase.
+    * @example **Sample code**
     * ``` javascript
     * client.on("error", function(err) {
     *     console.log("Got error msg:", err.reason);
     *   });
     *
     * ```
-    *
-    * For details, see [Error Codes and Warning Codes](../../../the_error_web).
     */
   @JSName("on")
-  def on_error(event: error, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_error(event: error, callback: js.Function1[/* evt */ AnonType, Unit]): Unit = js.native
   /**
     * Reports exception events in the channel.
     *
@@ -716,7 +843,7 @@ trait Client extends js.Object {
     * **Note:**
     *
     * This callback supports only the Chrome browser.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("exception", function(evt) {
     *   console.log(evt.code, evt.msg, evt.uid);
@@ -725,6 +852,39 @@ trait Client extends js.Object {
     */
   @JSName("on")
   def on_exception(event: exception, callback: js.Function1[/* evt */ AnonCode, Unit]): Unit = js.native
+  /**
+    * Occurs when the first remote audio frame is decoded.
+    *
+    * The SDK triggers this callback when the local client successfully subscribes to a remote stream and decodes the first audio frame.
+    *
+    * **Note:** This callback supports only the Google Chrome browser.
+    * @example **Sample code**
+    * ``` javascript
+    * client.on('first-audio-frame-decode', function (evt) {
+    *   console.log('first-audio-frame-decode');
+    *   console.log(evt.stream);
+    * })
+    *
+    * ```
+    */
+  @JSName("on")
+  def on_firstaudioframedecode(event: `first-audio-frame-decode`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  /**
+    * Occurs when the first remote video frame is decoded.
+    *
+    * The SDK triggers this callback when the local client successfully subscribes to a remote stream and decodes the first video frame.
+    *
+    * @example **Sample code**
+    * ``` javascript
+    * client.on('first-video-frame-decode', function (evt) {
+    *   console.log('first-video-frame-decode');
+    *   console.log(evt.stream);
+    * })
+    *
+    * ```
+    */
+  @JSName("on")
+  def on_firstvideoframedecode(event: `first-video-frame-decode`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when the live streaming fails.
     */
@@ -742,12 +902,18 @@ trait Client extends js.Object {
   def on_liveStreamingStopped(event: liveStreamingStopped, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when the live transcoding setting is updated.
+    *
+    * The SDK triggers this callback when the live transcoding setting is updated by calling the {@link setLiveTranscoding} method.
+    *
+    * **Note:**
+    *
+    * The first call of the {@link setLiveTranscoding} method does not trigger this callback.
     */
   @JSName("on")
   def on_liveTranscodingUpdated(event: liveTranscodingUpdated, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when the peer user mutes the audio.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("mute-audio", function(evt) {
     *   var uid = evt.uid;
@@ -761,7 +927,7 @@ trait Client extends js.Object {
   def on_muteaudio(event: `mute-audio`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when the peer user turns off the video.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("mute-video", function (evt) {
     *   var uid = evt.uid;
@@ -782,7 +948,7 @@ trait Client extends js.Object {
     *
     * This is an experimental feature and the network quality rating is for reference only.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.on('network-quality', function(stats) {
@@ -799,7 +965,7 @@ trait Client extends js.Object {
   ): Unit = js.native
   /**
     * Occurs when the network type changes.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("network-type-changed", function(evt) {
     *     console.log("Network Type Changed to", evt.networkType);
@@ -818,7 +984,7 @@ trait Client extends js.Object {
     * Occurs when the Token expires.
     *
     * You should request a new Token from your server and call {@link Client.renewToken}.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("onTokenPrivilegeDidExpire", function(){
     *   //After requesting a new token
@@ -833,7 +999,7 @@ trait Client extends js.Object {
     * Occurs when the Token expires in 30 seconds.
     *
     * You should request a new Token from your server and call {@link Client.renewToken}.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("onTokenPrivilegeWillExpire", function(){
     *   //After requesting a new token
@@ -845,19 +1011,30 @@ trait Client extends js.Object {
   @JSName("on")
   def on_onTokenPrivilegeWillExpire(event: onTokenPrivilegeWillExpire, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
-    * Occurs when the peer user leaves the channel; for example, the peer user calls {@link Client.leave}.
-    * @example **Sample Code**
+    * Occurs when a remote user becomes offline.
+    *
+    * The SDK triggers this callback in the following situations:
+    * - A remote user calls {@link Client.leave} and leaves the channel.
+    * - A remote user drops offline. When no data packet of the user or host is received for 20 seconds, the SDK assumes that the user drops offline.
+    * A poor network connection may lead to false detections, so we recommend using the signaling system for reliable offline detection.
+    * - A remote user switches the client role from host to audience.
+    *
+    * **Note:**
+    * In live-broadcast channels, the SDK triggers this callback only when a host goes offline.
+    *
+    * @example **Sample code**
     * ``` javascript
     * client.on("peer-leave", function(evt) {
     *     var uid = evt.uid;
-    *     console.log("remote user left ", uid);
+    *     var reason = evt.reason;
+    *     console.log("remote user left ", uid, "reason: ", reason);
     *     //……
     * });
     *
     * ```
     */
   @JSName("on")
-  def on_peerleave(event: `peer-leave`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_peerleave(event: `peer-leave`, callback: js.Function1[/* evt */ AnonReason, Unit]): Unit = js.native
   /**
     * Occurs when a remote user or host joins the channel.
     *
@@ -866,7 +1043,13 @@ trait Client extends js.Object {
     * - Live-broadcast channel (live mode): This callback notifies the app that the host joins the channel.
     * If other hosts are already in the channel, the SDK also reports to the app on the existing hosts. Agora recommends limiting the number of hosts to 17.
     *
-    * @example **Sample Code**
+    * The SDK triggers this callback under one of the following circumstances:
+    * - A remote user/host joins the channel by calling the [[Client.join]] method.
+    * - A remote user switches the user role to the host by calling the [[Client.setClientRole]] method after joining the channel.
+    * - A remote user/host rejoins the channel after a network interruption.
+    * - The host injects an online media stream into the channel by calling the [[Client.addInjectStreamUrl]] method.
+    *
+    * @example **Sample code**
     *
     * ```javascript
     * client.on('peer-online', function(evt) {
@@ -876,10 +1059,10 @@ trait Client extends js.Object {
     *
     */
   @JSName("on")
-  def on_peeronline(event: `peer-online`, callback: js.Function1[/* evt */ AnonUidString, Unit]): Unit = js.native
+  def on_peeronline(event: `peer-online`, callback: js.Function1[/* evt */ AnonUid, Unit]): Unit = js.native
   /**
     * Occurs when an audio output device is added or removed.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("playout-device-changed", function(evt) {
     *     console.log("Playout Device Changed", evt.state, evt.device);
@@ -895,7 +1078,7 @@ trait Client extends js.Object {
   def on_playoutdevicechanged(event: `playout-device-changed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when an audio input device is added or removed.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("recording-device-changed", function(evt) {
     *     console.log("Recording Device Changed", evt.state, evt.device);
@@ -913,7 +1096,11 @@ trait Client extends js.Object {
   def on_streamInjectedStatus(event: streamInjectedStatus, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when the remote stream is added.
-    * @example **Sample Code**
+    *
+    * **Note:**
+    *
+    * When the local user joins the channel, if other users are already in the channel, the SDK also reports to the app on the existing remote streams.
+    * @example **Sample code**
     * ``` javascript
     * client.on("stream-added", function(evt) {
     *     var stream = evt.stream;
@@ -942,7 +1129,7 @@ trait Client extends js.Object {
   def on_streamfallback(event: `stream-fallback`, callback: js.Function1[/* evt */ AnonAttr, Unit]): Unit = js.native
   /**
     * Occurs when the local stream is published.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("stream-published", function(evt) {
     *     console.log("local stream published");
@@ -956,7 +1143,7 @@ trait Client extends js.Object {
   /**
     * Occurs when the SDK finishes republishing or re-subscribing to a stream.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.on('stream-reconnect-end', function(evt) {
@@ -965,11 +1152,11 @@ trait Client extends js.Object {
     * ```
     */
   @JSName("on")
-  def on_streamreconnectend(event: `stream-reconnect-end`, callback: js.Function1[/* evt */ AnonReason, Unit]): Unit = js.native
+  def on_streamreconnectend(event: `stream-reconnect-end`, callback: js.Function1[/* evt */ AnonSuccess, Unit]): Unit = js.native
   /**
     * Occurs when the SDK starts republishing or re-subscribing to a stream.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.on("stream-reconnect-start", function(evt) {
@@ -978,10 +1165,10 @@ trait Client extends js.Object {
     * ```
     */
   @JSName("on")
-  def on_streamreconnectstart(event: `stream-reconnect-start`, callback: js.Function1[/* evt */ AnonUid, Unit]): Unit = js.native
+  def on_streamreconnectstart(event: `stream-reconnect-start`, callback: js.Function1[/* evt */ Anon0, Unit]): Unit = js.native
   /**
     * Occurs when the remote stream is removed; for example, a peer user calls {@link Client.unpublish}.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("stream-removed", function(evt) {
     *     var stream = evt.stream;
@@ -995,7 +1182,7 @@ trait Client extends js.Object {
   def on_streamremoved(event: `stream-removed`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when a user subscribes to a remote stream.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("stream-subscribed", function(evt) {
     *     var stream = evt.stream;
@@ -1017,7 +1204,7 @@ trait Client extends js.Object {
     *
     * - 0: High-bitrate, high-resolution video stream.
     * - 1: Low-bitrate, low-resolution video stream.
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
     * client.on("stream-type-changed", function(evt) {
@@ -1038,7 +1225,7 @@ trait Client extends js.Object {
   def on_streamupdated(event: `stream-updated`, callback: js.Function1[/* evt */ AnonStreamStream, Unit]): Unit = js.native
   /**
     * Occurs when the peer user unmutes the audio.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("unmute-audio", function (evt) {
     *   var uid = evt.uid;
@@ -1051,7 +1238,7 @@ trait Client extends js.Object {
   def on_unmuteaudio(event: `unmute-audio`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
   /**
     * Occurs when the peer user turns on the video.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("unmute-video", function (evt) {
     *   var uid = evt.uid;
@@ -1069,11 +1256,11 @@ trait Client extends js.Object {
     * If enabled, it reports the volumes every two seconds regardless of whether there are users speaking.
     *
     * The volume is an integer ranging from 0 to 100. Usually a user with volume above five will be counted as a speaking user.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.on("volume-indicator", function(evt){
     *     evt.attr.forEach(function(volume, index){
-    *     console.log(`#{index} UID ${volume.uid} Level ${volume.level}`);
+    *     console.log(`${index} UID ${volume.uid} Level ${volume.level}`);
     *   });
     * });
     * ```
@@ -1085,10 +1272,14 @@ trait Client extends js.Object {
     *
     * This method publishes a local stream to the SD-RTN.
     *
+    * When the stream is published, the following callbacks are triggered:
+    * - On the local client: `Client.on("stream-published")`
+    * - On the remote client: `Client.on("stream-added")`
+    *
     * **Note:**
     *
     * In a live broadcast, whoever calls this API is the host.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * client.publish(stream, function(err) {
     *     console.log(err);
@@ -1096,10 +1287,15 @@ trait Client extends js.Object {
     * })
     * ```
     * @param stream Stream object, which represents the local stream.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "STREAM_ALREADY_PUBLISHED": This stream object is already published.
+    * - "INVALID_LOCAL_STREAM": The stream object is invalid.
+    * - "INVALID_OPERATION": The user is not in the channel, possibly because the user has not joined the channel or the connection is interrupted.
+    * - "PUBLISH_STREAM_FAILED": Fails to publish the stream, usually because the connection is lost during publishing.
+    * - "PEERCONNECTION_FAILED": Fails to establish the media transport channel.
     */
   def publish(stream: Stream): Unit = js.native
-  def publish(stream: Stream, onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def publish(stream: Stream, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
     * Removes the Injected Stream
     *
@@ -1117,11 +1313,12 @@ trait Client extends js.Object {
     * Not doing so will result in SDK disconnecting with the server.
     * @param key Specifies the renewed Channel Key.
     * @param onSuccess The callback when the method succeeds.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "INVALID_OPERATION": The user is not in the channel. Call this method after the user joins a channel.
     */
   def renewChannelKey(key: String): Unit = js.native
   def renewChannelKey(key: String, onSuccess: js.Function0[Unit]): Unit = js.native
-  def renewChannelKey(key: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def renewChannelKey(key: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
     * Renews the Token
     *
@@ -1140,14 +1337,14 @@ trait Client extends js.Object {
     *
     * Sets the role of the user such as a host or an audience (default), before joining a channel.
     *
-    * This method can be used to switch the user role after the user joins a channel.
+    * This method can be used to switch the user role after the user joins a channel. When a user switches the user role after joining a channel, the following callbacks are triggered:
+    * - On the local client: `Client.on("client-role-changed")`.
+    * - On the remote client: `Client.on("peer-online")` or `Client.on("peer-leave")`.
     *
     * In live mode ([[mode]] is set as `live`):
     *
     * - Before joining the channel, you can call this method to set the role.
-    *
     * - After joining the channel, you can call this method to switch the role:
-    *
     *  - When you call [[publish]], the user role switches to `host`; when you call [[unpublish]], the user role switches to `audience`.
     *  - After calling [[publish]], if you call this method and set the user role as `audience`, [[unpublish]] is called automatically.
     *
@@ -1160,36 +1357,41 @@ trait Client extends js.Object {
     * - `"audience"`: Audience, the default role. An audience can only receive streams.
     * - `"host"`: Host. A host can both send and receive streams.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     *
     * ``` javascript
-    * client.setClientRole('host', function() {
-    *   console.log("setHost success");
-    * }, function(e) {
-    *   console.log("setHost failed", e);
-    * })
+    * client.setClientRole("host", function(e) {
+    *   if (!e) {
+    *     console.log("setHost success");
+    *   } else {
+    *     console.log("setHost error", e);
+    *   }
+    * });
     * ```
-    *
     *
     */
   @JSName("setClientRole")
   def setClientRole_audience(role: audience): Unit = js.native
   @JSName("setClientRole")
-  def setClientRole_audience(role: audience, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def setClientRole_audience(role: audience, callback: js.Function1[/* err */ js.UndefOr[String | Null], Unit]): Unit = js.native
   @JSName("setClientRole")
   def setClientRole_host(role: host): Unit = js.native
   @JSName("setClientRole")
-  def setClientRole_host(role: host, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def setClientRole_host(role: host, callback: js.Function1[/* err */ js.UndefOr[String | Null], Unit]): Unit = js.native
   @JSName("setEncryptionMode")
   def setEncryptionMode_aes128ecb(encryptionMode: `aes-128-ecb`): Unit = js.native
   /**
     * Sets the Encryption Mode
     *
-    * This method sets the encryption mode.
+    * Use this method with [[setEncryptionSecret]] method to enable the built-in encryption before joining a channel.
+    *
+    * All users in a channel must set the same encryption mode.
     *
     * **Note:**
     *
-    * Ensure that you call this API before {@link Client.join}.
+    * - Ensure you call [[setEncryptionSecret]] and [[setEncryptionMode]] before joining the channel, otherwise the encryption is disabled.
+    * - Do not use this method for CDN live streaming.
+    * - If the encryption mode is incorrect, the SDK triggers the `Client.on("crypt-error")` callback when publishing or subscribing to a stream.
     * @example `client.setEncryptionMode(encryptionMode);`
     * @param encryptionMode The encryption mode:
     *
@@ -1204,11 +1406,15 @@ trait Client extends js.Object {
   /**
     * Enables Built-in Encryption
     *
-    * This method enables the built-in encryption.
+    * Use this method with [[setEncryptionMode]] method to enable the built-in encryption before joining a channel.
+    *
+    * All users in a channel must set the same encryption password.
     *
     * **Note:**
     *
-    * Ensure that you call this API before {@link Client.join}.
+    * - Ensure you call [[setEncryptionSecret]] and [[setEncryptionMode]] before joining the channel, otherwise the encryption is disabled.
+    * - Do not use this method for CDN live streaming.
+    * - If the encryption password is incorrect, the SDK triggers the `Client.on("crypt-error")` callback when publishing or subscribing to a stream.
     * @example `client.setEncryptionSecret(password)`
     * @param password The encryption password. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     */
@@ -1217,10 +1423,13 @@ trait Client extends js.Object {
     * Sets Live Transcoding
     *
     * This method sets the video layout and audio for CDN live.
+    * A successful call of this method to update the transcoding settings triggers the `Client.on("liveTranscodingUpdated")` callback.
     *
     * **Note:**
     *
-    * Call {@link setLiveTranscoding} after {@link createStream}. For details, see [Push Streams to the CDN](../../../push_stream_web).
+    * - Ensure that you [enable the RTMP Converter service](../../../cdn_streaming_web#prerequisites) before using this function.
+    * - The first call of this method does not trigger the `Client.on("liveTranscodingUpdated")` callback.
+    * - Call {@link setLiveTranscoding} after {@link createStream}. For details, see [Push Streams to CDN](../../../cdn_streaming_web).
     * @param coding Transcoding settings, see {@link LiveTranscoding} for details.
     */
   def setLiveTranscoding(coding: LiveTranscoding): Unit = js.native
@@ -1243,9 +1452,9 @@ trait Client extends js.Object {
   def setLowStreamParameter(param: AnonBitrate): Unit = js.native
   def setProxyServer(): Unit = js.native
   /**
-    * Deploys the Nginx Server
+    * Deploys a Proxy Server
     *
-    * Use this method to deploy the Nginx server.
+    * Use this method to deploy the Nginx server. See [Deploy the Enterprise Proxy](https://docs.agora.io/en/Interactive%20Broadcast/proxy_web?platform=Web) for details.
     *
     * **Note:**
     *
@@ -1261,7 +1470,7 @@ trait Client extends js.Object {
     *
     * When a remote user sends dual streams, this method decides on which stream to receive on the subscriber side. If this method is not used, the subscriber receives the high-video stream.
     *
-    * @example **Sample Code**
+    * @example **Sample code**
     * ``` javascript
     * switchStream = function (){
     *   if (highOrLow === 0) {
@@ -1294,6 +1503,8 @@ trait Client extends js.Object {
     *
     * Under poor network conditions, the SDK can choose to subscribe to the low-video stream or only the audio stream.
     *
+    * If the auto-fallback option is enabled, the SDK triggers the `Client.on("stream-type-changed")` callback when the remote stream changes from a high-video stream to a low-video stream or vice versa, and triggers the `Client.on("stream-fallback")` callback when the remote stream changes from a video stream to an audio-only stream or vice versa.
+    *
     * **Note:**
     *
     * This method can only be used when the publisher has enabled the dual-stream mode by {@link enableDualStream}.
@@ -1303,7 +1514,7 @@ trait Client extends js.Object {
     * - 1: (Default) Automatically subscribe to the low-video stream under poor network.
     * - 2: Under poor network, the SDK may subscribe to the low-video stream (of lower resolution and lower bitrate) first,
     *      but if the network still does not allow displaying the video, the SDK will receive audio only.
-    * @example **Sample Code**
+    * @example **Sample code**
     * ```javascript
     * // The sender side, after publishing the high stream
     * client.enableDualStream();
@@ -1332,34 +1543,134 @@ trait Client extends js.Object {
     */
   def setTurnServer(turnServer: AnonForceturn): Unit = js.native
   /**
+    * Starts relaying media streams across channels.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    *
+    * After this method call, the SDK triggers the following callbacks:
+    *
+    * - `Client.on("channel-media-relay-state")`, which reports the state and error code of the media stream relay.
+    *   - If the media stream relay starts successfully, this callback returns `state` 2 and `code` 0.
+    *   - If the media stream relay fails, this callback returns `state` 3. Refer to `code` for the error code and call this method again.
+    * - `Client.on("channel-media-relay-event")`, which reports the events of the media stream relay.
+    *   - If the media stream relay starts successfully, this callback returns `code` 4, reporting that the SDK starts relaying the media stream to the destination channel.
+    *
+    * **Note:**
+    *
+    * - We do not support string user IDs in this API.
+    * - Call this method only after joining a channel.
+    * - In a live-broadcast channel, only a host can call this method.
+    * - To call this method again after it succeeds, you must call {@link stopChannelMediaRelay} to quit the current relay.
+    * @param config Configurations of the media stream relay: {@link ChannelMediaRelayConfiguration}.
+    * @param callback The result of starting the media stream relay.
+    *
+    * - null: Success.
+    * - {@link ChannelMediaError}: Failure. This class provides the error details.
+    *
+    * @example **Sample code**
+    * ```javascript
+    * client.startChannelMediaRelay(channelMediaConfig, function(e) {
+    *   if(e) {
+    *     utils.notification(`startChannelMediaRelay failed: ${JSON.stringify(e)}`);
+    *   } else {
+    *     utils.notification(`startChannelMediaRelay success`);
+    *   }
+    * });
+    * ```
+    */
+  def startChannelMediaRelay(
+    config: ChannelMediaRelayConfiguration,
+    callback: js.Function1[/* err */ Null | ChannelMediaError, Unit]
+  ): Unit = js.native
+  /**
     * Starts a Live Stream
     *
-    * This method starts a live stream.
-    * @example **Sample Code**
+    * This method starts a live stream. For details, see [Push Streams to the CDN](../../../cdn_streaming_web).
+    *
+    * When the live stream starts, the SDK triggers the `Client.on("liveStreamingStarted")` callback.
+    * If this method call fails, the SDK triggers the `Client.on("liveStreamingFailed")` callback.
+    *
+    * **Note:**
+    *
+    * - Only hosts in live-broadcast channels can call this method. Ensure that you set the user role as `"host"` in {@link setClientRole}.
+    * - Call this method after {@link Stream.init}.
+    * - Push one live stream at a time. If you need to push several streams, ensure that the current stream starts successfully before pushing the next one.
+    * @example **Sample code**
     * ``` javascript
     * client.setLiveTranscoding(<coding>);
     * client.startLiveStreaming(<url>, true)
     * ```
-    *
-    * **Note:**
-    *
-    * Call {@link startLiveStreaming} after {@link createStream}. For details, see [Push Streams to the CDN](../../../push_stream_web).
     * @param url URL address for the live stream. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     * @param enableTranscoding Marks whether to enable live transcoding. If set as `true`, {@link setLiveTranscoding} must be called before this method.
     */
   def startLiveStreaming(url: String): Unit = js.native
   def startLiveStreaming(url: String, enableTranscoding: Boolean): Unit = js.native
   /**
+    * Enables Cloud Proxy
+    *
+    * This method must be called before joining the channel or after leaving the channel.
+    *
+    * To use the cloud proxy service, some extra settings are needed, see [Use Cloud Proxy](https://docs.agora.io/en/Interactive%20Broadcast/cloud_proxy_web?platform=Web) for details.
+    */
+  def startProxyServer(): Unit = js.native
+  /**
+    * Stops the media stream relay.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    *
+    * Once the relay stops, the user leaves all the destination channels.
+    *
+    * After this method call, the SDK triggers the `Client.on("channel-media-relay-state")` callback.
+    *
+    * - If the relay stops, the callback returns `state` 0.
+    * - If the relay fails to stop, the callback returns `state` 3 and `code` 2 or 8. The failure is usually due to poor network conditions. You can call {@link Client.leave} to leave the channel and stop the relay.
+    *
+    * @param callback The result of stopping the media stream relay.
+    *
+    * - `null`: Success.
+    * - {@link ChannelMediaError}: Failure. This class provides the error details.
+    *
+    * @example **Sample code**
+    *
+    * ```javascript
+    * stopChannelMediaRelay: function() {
+    *   client.stopChannelMediaRelay(function(e) {
+    *     if(e) {
+    *       utils.notification(`stopChannelMediaRelay failed: ${JSON.stringify(e)}`);
+    *     } else {
+    *       utils.notification(`stopChannelMediaRelay success`);
+    *     }
+    *   });
+    * }
+    * ```
+    */
+  def stopChannelMediaRelay(callback: js.Function1[/* err */ Null | ChannelMediaError, Unit]): Unit = js.native
+  /**
     * Stops Live Streaming
     *
     * This method stops and deletes the live streaming.
+    * When the live stream stops, the SDK triggers the `Client.on("liveStreamingStopped")` callback.
     * @param url URL address of the live streaming. ASCII characters only, and the string length must be greater than 0 and less than 256 bytes.
     */
   def stopLiveStreaming(url: String): Unit = js.native
   /**
+    * Disables Cloud Proxy
+    *
+    * This method must be called before joining the channel or after leaving the channel.
+    *
+    * This method disables all proxy settings, including those set by [[setProxyServer]] and [[setTurnServer]].
+    */
+  def stopProxyServer(): Unit = js.native
+  /**
     * Subscribes to a Remote Stream
     *
     * This method enables a user to subscribe to a remote stream.
+    *
+    * After the user subscribes to a remote stream, the SDK triggers the `Client.on("stream-subscribed")` callback.
+    * If the remote stream contains an audio track, the SDK also triggers the `Client.on("first-audio-frame-decode")` callback;
+    * if the remote stream contains a video track, the SDK also triggers the `Client.on("first-video-frame-decode")` callback.
     *
     * @param stream Stream object, which represents the remote stream.
     * @param options Sets whether to receive the video or audio data independently by the `video` and `audio` parameters.
@@ -1368,10 +1679,13 @@ trait Client extends js.Object {
     *
     * - `video` and `audio` cannot be set as `false` at the same time. If you need to stop subscribing to the stream, call [[Client.unsubscribe]] instead.
     * - Safari does not support independent subscription. Set `options` as `null` for Safari, otherwise the`SAFARI_NOT_SUPPORTED_FOR_TRACK_SUBSCRIPTION` error occurs.
-    * @param onFailure The callback when the method fails.
-    *
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "SAFARI_NOT_SUPPORTED_FOR_TRACK_SUBSCRIPTION": Safari does not support independent subscription.
+    * - "INVALID_OPERATION": The user is not in the channel, possibly because the user has not joined the channel or the connection is interrupted.
+    * - "SUBSCRIBE_STREAM_FAILED": The subscription fails, usually because the SDK has disconnected from the Agora server when subscribing to the stream.
+    * - "PEERCONNECTION_FAILED": Fails to establish the media transport channel.
     * @example
-    * **Sample Code**
+    * **Sample code**
     * ```javascript
     * client.subscribe(stream, function(err) {
     *     console.error("stream subscribe failed", err);
@@ -1383,7 +1697,7 @@ trait Client extends js.Object {
     * This method can be called multiple times for a single remote stream, and enables you to switch between receiving/not receiving the video or audio data flexibly.
     *
     * @example
-    * **Sample Code**
+    * **Sample code**
     * ```javascript
     * // Initially, subscribe to the stream and receive only the video data
     * client.subscribe(stream, {video: true, audio: false});
@@ -1394,13 +1708,15 @@ trait Client extends js.Object {
     */
   def subscribe(stream: Stream): Unit = js.native
   def subscribe(stream: Stream, options: AnonVideo): Unit = js.native
-  def subscribe(stream: Stream, options: AnonVideo, onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def subscribe(stream: Stream, options: AnonVideo, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
     * Unpublishes the Local Stream
     *
     * This method unpublishes the local stream.
+    *
+    * When the stream is unpublished, the `Client.on("stream-removed")` callback is triggered on the remote client.
     * @example
-    * **Sample Code**
+    * **Sample code**
     * ``` javascript
     * client.unpublish(stream, function(err) {
     *     console.log(err);
@@ -1409,16 +1725,19 @@ trait Client extends js.Object {
     *
     * ```
     * @param stream Stream object, which represents the local stream.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "STREAM_NOT_YET_PUBLISHED": The specified stream object is not published.
+    * - "INVALID_LOCAL_STREAM": The specified stream object is invalid.
+    * - "INVALID_OPERATION": The user is not in the channel, possibly because the user has not joined the channel or the connection is interrupted.
     */
   def unpublish(stream: Stream): Unit = js.native
-  def unpublish(stream: Stream, onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def unpublish(stream: Stream, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   /**
     * Unsubscribes from the Remote Stream
     *
     * This method enables the user to unsubscribe from the remote stream.
     * @example
-    * **Sample Code**
+    * **Sample code**
     * ``` javascript
     * client.unsubscribe(stream, function(err) {
     *     console.log(err);
@@ -1427,9 +1746,52 @@ trait Client extends js.Object {
     *
     * ```
     * @param stream Stream object, which represents the remote stream.
-    * @param onFailure The callback when the method fails.
+    * @param onFailure The callback when the method fails. The following are common errors:
+    * - "INVALID_REMOTE_STREAM": The specified stream object is invalid.
+    * - "INVALID_OPERATION": The user is not in the channel, possibly because the user has not joined the channel or the connection is interrupted.
+    * - "NO_SUCH_REMOTE_STREAM": The specified stream object is not found.
+    * - "UNSUBSCRIBE_STREAM_FAILED": Fails to unsubscribe from the stream, usually because the SDK has disconnected from the Agora server when unsubscribing from the stream.
     */
   def unsubscribe(stream: Stream): Unit = js.native
-  def unsubscribe(stream: Stream, onFailure: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def unsubscribe(stream: Stream, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
+  /**
+    * Updates the channels for media stream relay.
+    *
+    * **Since**
+    * <br>&emsp;&emsp;&emsp;*3.0.0*
+    *
+    * After the channel media relay starts, if you want to relay the media stream to more channels, or leave the current relay channel, you can call this method.
+    *
+    * After this method call, the SDK triggers the `Client.on("channel-media-relay-event")` callback.
+    *
+    * - If the update succeeds, the callback returns `code` 7.
+    * - If the update fails, the callback returns `code` 8, and the SDK also triggers the `Client.on("channel-media-relay-state")` callback with `state` 3. In this case, the media relay state is reset, and you need to call {@link startChannelMediaRelay} again to restart the relay.
+    *
+    * **Note:**
+    *
+    * - Call this method after {@link startChannelMediaRelay}.
+    * - You can add a maximum of four destination channels to a relay.
+    *
+    * @param config Configurations of the media stream relay: {@link ChannelMediaRelayConfiguration}.
+    * @param callback The result of updating the destination channels.
+    *
+    * - `null`: Success.
+    * - {@link ChannelMediaError}: Failure. This class provides the error details.
+    *
+    * @example **Sample code**
+    * ```javascript
+    * client.updateChannelMediaRelay(channelMediaConfig, function(e) {
+    *   if(e) {
+    *     utils.notification(`updateChannelMediaRelay failed: ${JSON.stringify(e)}`);
+    *   } else {
+    *     utils.notification(`updateChannelMediaRelay success`);
+    *   }
+    * });
+    * ```
+    */
+  def updateChannelMediaRelay(
+    config: ChannelMediaRelayConfiguration,
+    callback: js.Function1[/* err */ Null | ChannelMediaError, Unit]
+  ): Unit = js.native
 }
 

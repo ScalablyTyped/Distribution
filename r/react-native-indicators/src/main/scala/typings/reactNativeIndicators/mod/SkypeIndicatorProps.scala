@@ -42,6 +42,7 @@ object SkypeIndicatorProps {
     animationEasing: /* value */ Double => Double = null,
     color: String = null,
     count: Int | Double = null,
+    hidesWhenStopped: js.UndefOr[Boolean] = js.undefined,
     interaction: js.UndefOr[Boolean] = js.undefined,
     maxScale: Int | Double = null,
     minScale: Int | Double = null,
@@ -54,6 +55,7 @@ object SkypeIndicatorProps {
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(js.Any.fromFunction1(animationEasing))
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidesWhenStopped)) __obj.updateDynamic("hidesWhenStopped")(hidesWhenStopped.asInstanceOf[js.Any])
     if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])

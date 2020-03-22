@@ -1,8 +1,6 @@
 package typings.reactNavigationStack.vendorTypesMod
 
 import typings.reactNative.mod.LayoutChangeEvent
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.TextStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +17,9 @@ trait StackHeaderTitleProps extends js.Object {
   /**
     * Style object for the title element.
     */
-  var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var style: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+  ] = js.undefined
   /**
     * Tint color for the header.
     */
@@ -36,7 +36,7 @@ object StackHeaderTitleProps {
     onLayout: LayoutChangeEvent => Unit,
     allowFontScaling: js.UndefOr[Boolean] = js.undefined,
     children: String = null,
-    style: StyleProp[TextStyle] = null,
+    style: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any = null,
     tintColor: String = null
   ): StackHeaderTitleProps = {
     val __obj = js.Dynamic.literal(onLayout = js.Any.fromFunction1(onLayout))

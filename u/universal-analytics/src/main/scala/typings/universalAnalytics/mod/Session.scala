@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Session extends js.Object {
+  /**
+    * Client ID
+    */
   var cid: js.UndefOr[String] = js.undefined
 }
 

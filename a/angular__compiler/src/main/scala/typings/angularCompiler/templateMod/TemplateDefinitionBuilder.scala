@@ -161,6 +161,7 @@ class TemplateDefinitionBuilder protected ()
   var getUpdateInstructionArguments: js.Any = js.native
   var i18n: js.Any = js.native
   var i18nAppendBindings: js.Any = js.native
+  var i18nAttributesInstruction: js.Any = js.native
   var i18nBindProps: js.Any = js.native
   var i18nContext: js.Any = js.native
   var i18nEnd: js.Any = js.native

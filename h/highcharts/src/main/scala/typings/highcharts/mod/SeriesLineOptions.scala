@@ -33,9 +33,9 @@ import scala.scalajs.js.annotation._
     * not available. (see online documentation for example)
     *
     * **Note:** In TypeScript you have to extend `PointOptionsObject` with an
-    * additional declaration to allow custom data options: ```ts declare module
-    * `highcharts` { interface PointOptionsObject { customProperty: string; } }
-    * ```
+    * additional declaration to allow custom data types: ```ts declare module
+    * `highcharts` { interface PointOptionsObject { custom: Record<string,
+    * (boolean|number|string)>; } } ```
     */
   var data: js.UndefOr[
     js.Array[Double | (js.Tuple2[Double | String, Double | Null]) | Null | PointOptionsObject]
@@ -132,10 +132,11 @@ object SeriesLineOptions {
     connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dashStyle: DashStyleValue = null,
     data: js.Array[Double | (js.Tuple2[Double | String, Double | Null]) | Null | PointOptionsObject] = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotLineDataLabelsOptions | js.Array[PlotLineDataLabelsOptions] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataSorting: DataSortingOptionsObject | PlotLineDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
@@ -220,6 +221,7 @@ object SeriesLineOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])

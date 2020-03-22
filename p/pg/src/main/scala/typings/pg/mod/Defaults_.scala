@@ -22,8 +22,10 @@ object Defaults_ {
     connectionString: String = null,
     database: String = null,
     host: String = null,
+    idle_in_transaction_session_timeout: Int | Double = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveInitialDelayMillis: Int | Double = null,
+    parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined,
     parseInt8: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     poolIdleTimeout: Int | Double = null,
@@ -41,8 +43,10 @@ object Defaults_ {
     if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (idle_in_transaction_session_timeout != null) __obj.updateDynamic("idle_in_transaction_session_timeout")(idle_in_transaction_session_timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseInputDatesAsUTC)) __obj.updateDynamic("parseInputDatesAsUTC")(parseInputDatesAsUTC.asInstanceOf[js.Any])
     if (!js.isUndefined(parseInt8)) __obj.updateDynamic("parseInt8")(parseInt8.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (poolIdleTimeout != null) __obj.updateDynamic("poolIdleTimeout")(poolIdleTimeout.asInstanceOf[js.Any])

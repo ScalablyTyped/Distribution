@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsLayers.topologyMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ trait NodeArgs extends js.Object {
     */
   var inboundLayers: js.Array[Layer]
   /** List of input masks (a mask can be a tensor, or null). */
-  var inputMasks: js.Array[Tensor_[Rank]]
+  var inputMasks: js.Array[Tensor[Rank]]
   /** List of input shape tuples. */
   var inputShapes: Shape | js.Array[Shape]
   /** List of input tensors. */
@@ -32,7 +32,7 @@ trait NodeArgs extends js.Object {
     */
   var outboundLayer: Layer
   /** List of output masks (a mask can be a tensor, or null). */
-  var outputMasks: js.Array[Tensor_[Rank]]
+  var outputMasks: js.Array[Tensor[Rank]]
   /** List of output shape tuples. */
   var outputShapes: Shape | js.Array[Shape]
   /** List of output tensors. */
@@ -50,12 +50,12 @@ object NodeArgs {
   @scala.inline
   def apply(
     inboundLayers: js.Array[Layer],
-    inputMasks: js.Array[Tensor_[Rank]],
+    inputMasks: js.Array[Tensor[Rank]],
     inputShapes: Shape | js.Array[Shape],
     inputTensors: js.Array[SymbolicTensor],
     nodeIndices: js.Array[Double],
     outboundLayer: Layer,
-    outputMasks: js.Array[Tensor_[Rank]],
+    outputMasks: js.Array[Tensor[Rank]],
     outputShapes: Shape | js.Array[Shape],
     outputTensors: js.Array[SymbolicTensor],
     tensorIndices: js.Array[Double]

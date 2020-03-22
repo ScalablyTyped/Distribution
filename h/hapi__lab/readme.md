@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__lab
 
-Typings are for version 22.0.3
+Typings are for version 22.0.4
 
 ## Library description:
 Test utility

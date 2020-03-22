@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "underscore_dot_string"
-version := "0.0-unknown-dt-20190619Z-f718fb"
+version := "0.0-unknown-dt-20200227Z-f718fb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

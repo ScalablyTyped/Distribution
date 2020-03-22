@@ -21,6 +21,9 @@ trait rebassFormsProps {
   def SelectProps: typings.rebassForms.mod.SelectProps.type = typings.rebassForms.mod.SelectProps
   type SelectProps = typings.rebassForms.mod.SelectProps
   @scala.inline
+  def SliderProps: typings.rebassForms.mod.SliderProps.type = typings.rebassForms.mod.SliderProps
+  type SliderProps = typings.rebassForms.mod.SliderProps
+  @scala.inline
   def TextareaProps: typings.rebassForms.mod.TextareaProps.type = typings.rebassForms.mod.TextareaProps
   type TextareaProps = typings.rebassForms.mod.TextareaProps
 }

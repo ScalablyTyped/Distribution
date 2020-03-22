@@ -25,7 +25,6 @@ class RowColumnPivotHierarchyCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[RowColumnPivotHierarchy] = js.native
   /**
-    *
     * Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,
     or filter axis, it will be removed from that location.
     *
@@ -33,14 +32,12 @@ class RowColumnPivotHierarchyCollection () extends ClientObject {
     */
   def add(pivotHierarchy: PivotHierarchy): RowColumnPivotHierarchy = js.native
   /**
-    *
     * Gets the number of pivot hierarchies in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a RowColumnPivotHierarchy by its name or id.
     *
     * [Api set: ExcelApi 1.8]
@@ -49,7 +46,6 @@ class RowColumnPivotHierarchyCollection () extends ClientObject {
     */
   def getItem(name: String): RowColumnPivotHierarchy = js.native
   /**
-    *
     * Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.8]
@@ -68,7 +64,6 @@ class RowColumnPivotHierarchyCollection () extends ClientObject {
   def load(propertyNames: String): RowColumnPivotHierarchyCollection = js.native
   def load(propertyNames: js.Array[String]): RowColumnPivotHierarchyCollection = js.native
   /**
-    *
     * Removes the PivotHierarchy from the current axis.
     *
     * [Api set: ExcelApi 1.8]

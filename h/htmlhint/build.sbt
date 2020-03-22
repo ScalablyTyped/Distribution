@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "htmlhint"
-version := "0.9-dt-20190322Z-234c76"
+version := "0.9-dt-20200225Z-234c76"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

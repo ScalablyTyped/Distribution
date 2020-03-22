@@ -1,5 +1,9 @@
 package typings.electron.Electron
 
+import typings.electron.electronStrings.`spellcheck-dictionary-download-begin`
+import typings.electron.electronStrings.`spellcheck-dictionary-download-failure`
+import typings.electron.electronStrings.`spellcheck-dictionary-download-success`
+import typings.electron.electronStrings.`spellcheck-dictionary-initialized`
 import typings.electron.electronStrings.`will-download`
 import typings.electron.electronStrings.preconnect
 import typings.node.Buffer
@@ -20,6 +24,26 @@ class Session_ () extends EventEmitter {
   def addListener_preconnect(
     event: preconnect,
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_spellcheckdictionarydownloadbegin(
+    event: `spellcheck-dictionary-download-begin`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_spellcheckdictionarydownloadfailure(
+    event: `spellcheck-dictionary-download-failure`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_spellcheckdictionarydownloadsuccess(
+    event: `spellcheck-dictionary-download-success`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_spellcheckdictionaryinitialized(
+    event: `spellcheck-dictionary-initialized`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_willdownload(
@@ -124,6 +148,40 @@ class Session_ () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
   ): this.type = js.native
   /**
+    * Emitted when a hunspell dictionary file starts downloading
+    */
+  @JSName("on")
+  def on_spellcheckdictionarydownloadbegin(
+    event: `spellcheck-dictionary-download-begin`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a hunspell dictionary file download fails.  For details on the
+    * failure you should collect a netlog and inspect the download request.
+    */
+  @JSName("on")
+  def on_spellcheckdictionarydownloadfailure(
+    event: `spellcheck-dictionary-download-failure`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a hunspell dictionary file has been successfully downloaded
+    */
+  @JSName("on")
+  def on_spellcheckdictionarydownloadsuccess(
+    event: `spellcheck-dictionary-download-success`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when a hunspell dictionary file has been successfully initialized. This
+    * occurs after the file has been downloaded.
+    */
+  @JSName("on")
+  def on_spellcheckdictionaryinitialized(
+    event: `spellcheck-dictionary-initialized`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  /**
     * Emitted when Electron is about to download `item` in `webContents`.
     *
     * Calling `event.preventDefault()` will cancel the download and `item` will not be
@@ -140,6 +198,26 @@ class Session_ () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_spellcheckdictionarydownloadbegin(
+    event: `spellcheck-dictionary-download-begin`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_spellcheckdictionarydownloadfailure(
+    event: `spellcheck-dictionary-download-failure`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_spellcheckdictionarydownloadsuccess(
+    event: `spellcheck-dictionary-download-success`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_spellcheckdictionaryinitialized(
+    event: `spellcheck-dictionary-initialized`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_willdownload(
     event: `will-download`,
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
@@ -152,6 +230,26 @@ class Session_ () extends EventEmitter {
   def removeListener_preconnect(
     event: preconnect,
     listener: js.Function3[/* event */ Event, /* preconnectUrl */ String, /* allowCredentials */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_spellcheckdictionarydownloadbegin(
+    event: `spellcheck-dictionary-download-begin`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_spellcheckdictionarydownloadfailure(
+    event: `spellcheck-dictionary-download-failure`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_spellcheckdictionarydownloadsuccess(
+    event: `spellcheck-dictionary-download-success`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_spellcheckdictionaryinitialized(
+    event: `spellcheck-dictionary-initialized`,
+    listener: js.Function2[/* event */ Event, /* languageCode */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_willdownload(
@@ -280,7 +378,16 @@ class Session_ () extends EventEmitter {
     * If you want to override this behavior you can use this API to point the
     * dictionary downloader at your own hosted version of the hunspell dictionaries.
     * We publish a `hunspell_dictionaries.zip` file with each release which contains
-    * the files you need to host here.
+    * the files you need to host here, the file server must be **case insensitive**
+    * you must upload each file twice, once with the case it has in the ZIP file and
+    * once with the filename as all lower case.
+    *
+    * If the files present in `hunspell_dictionaries.zip` are available at
+    * `https://example.com/dictionaries/language-code.bdic` then you should call this
+    * api with
+    * `ses.setSpellCheckerDictionaryDownloadURL('https://example.com/dictionaries/')`.
+    *  Please note the trailing slash.  The URL to the dictionaries is formed as
+    * `${url}${filename}`.
     *
     * **Note:** On macOS the OS spellchecker is used and therefore we do not download
     * any dictionary files.  This API is a no-op on macOS.

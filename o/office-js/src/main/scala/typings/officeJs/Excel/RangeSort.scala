@@ -23,7 +23,6 @@ class RangeSort () extends ClientObject {
   @JSName("context")
   var context_RangeSort: RequestContext = js.native
   /**
-    *
     * Perform a sort operation.
     *
     * [Api set: ExcelApi 1.2]

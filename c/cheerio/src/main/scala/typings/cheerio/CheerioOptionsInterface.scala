@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CheerioOptionsInterface extends js.Object {
+  var _useHtmlParser2: js.UndefOr[Boolean] = js.undefined
   var decodeEntities: js.UndefOr[Boolean] = js.undefined
   var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
   var lowerCaseAttributeNames: js.UndefOr[Boolean] = js.undefined
@@ -22,6 +23,7 @@ trait CheerioOptionsInterface extends js.Object {
 object CheerioOptionsInterface {
   @scala.inline
   def apply(
+    _useHtmlParser2: js.UndefOr[Boolean] = js.undefined,
     decodeEntities: js.UndefOr[Boolean] = js.undefined,
     ignoreWhitespace: js.UndefOr[Boolean] = js.undefined,
     lowerCaseAttributeNames: js.UndefOr[Boolean] = js.undefined,
@@ -32,6 +34,7 @@ object CheerioOptionsInterface {
     xmlMode: js.UndefOr[Boolean] = js.undefined
   ): CheerioOptionsInterface = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(_useHtmlParser2)) __obj.updateDynamic("_useHtmlParser2")(_useHtmlParser2.asInstanceOf[js.Any])
     if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.asInstanceOf[js.Any])
     if (!js.isUndefined(lowerCaseAttributeNames)) __obj.updateDynamic("lowerCaseAttributeNames")(lowerCaseAttributeNames.asInstanceOf[js.Any])

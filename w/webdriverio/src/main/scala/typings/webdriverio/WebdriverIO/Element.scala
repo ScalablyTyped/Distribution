@@ -37,6 +37,8 @@ trait Element extends js.Object {
   def $(selector: String): Element = js.native
   @JSName("$")
   def $(selector: js.Function): Element = js.native
+  @JSName("$")
+  def $(selector: DataMatcher): Element = js.native
   /**
     * The `$` command is a short way to call the [`findElement`](/docs/api/webdriver.html#findelement) command in order
     * to fetch a single element on the page similar to the `$` command from the browser scope. The difference when calling
@@ -48,6 +50,8 @@ trait Element extends js.Object {
   def $_Promise(selector: String): js.Promise[Element] = js.native
   @JSName("$")
   def $_Promise(selector: js.Function): js.Promise[Element] = js.native
+  @JSName("$")
+  def $_Promise(selector: DataMatcher): js.Promise[Element] = js.native
   /**
     * The `$$` command is a short way to call the [`findElements`](/docs/api/webdriver.html#findelements) command in order
     * to fetch multiple elements on the page similar to the `$$` command from the browser scope. The difference when calling
@@ -57,6 +61,8 @@ trait Element extends js.Object {
   def DollarDollar(selector: String): ElementArray = js.native
   @JSName("$$")
   def DollarDollar(selector: js.Function): ElementArray = js.native
+  @JSName("$$")
+  def DollarDollar(selector: DataMatcher): ElementArray = js.native
   /**
     * The `$$` command is a short way to call the [`findElements`](/docs/api/webdriver.html#findelements) command in order
     * to fetch multiple elements on the page similar to the `$$` command from the browser scope. The difference when calling
@@ -66,6 +72,8 @@ trait Element extends js.Object {
   def DollarDollar_Promise(selector: String): js.Promise[ElementArray] = js.native
   @JSName("$$")
   def DollarDollar_Promise(selector: js.Function): js.Promise[ElementArray] = js.native
+  @JSName("$$")
+  def DollarDollar_Promise(selector: DataMatcher): js.Promise[ElementArray] = js.native
   /**
     * add command to `element` scope
     */

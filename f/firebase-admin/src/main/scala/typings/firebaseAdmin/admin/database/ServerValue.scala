@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("admin.database.ServerValue")
 @js.native
 object ServerValue extends js.Object {
-  var TIMESTAMP: Double = js.native
+  val TIMESTAMP: Double = js.native
 }
 

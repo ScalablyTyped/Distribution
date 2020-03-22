@@ -41,6 +41,8 @@ trait ClusterArgs extends js.Object {
   val configurationsJson: js.UndefOr[Input[String]] = js.native
   /**
     * Use the `coreInstanceGroup` configuration block `instanceCount` argument instead. Number of Amazon EC2 instances used to execute the job flow. EMR will use one node as the cluster's master node and use the remainder of the nodes (`coreInstanceCount`-1) as core nodes. Cannot be specified if `coreInstanceGroup` or `instanceGroup` configuration blocks are set. Default `1`
+    *
+    * @deprecated use `core_instance_group` configuration block `instance_count` argument instead
     */
   val coreInstanceCount: js.UndefOr[Input[Double]] = js.native
   /**
@@ -49,6 +51,8 @@ trait ClusterArgs extends js.Object {
   val coreInstanceGroup: js.UndefOr[Input[ClusterCoreInstanceGroup]] = js.native
   /**
     * Use the `coreInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the slave nodes. Cannot be specified if `coreInstanceGroup` or `instanceGroup` configuration blocks are set.
+    *
+    * @deprecated use `core_instance_group` configuration block `instance_type` argument instead
     */
   val coreInstanceType: js.UndefOr[Input[String]] = js.native
   /**
@@ -65,6 +69,8 @@ trait ClusterArgs extends js.Object {
   val ec2Attributes: js.UndefOr[Input[ClusterEc2Attributes]] = js.native
   /**
     * Use the `masterInstanceGroup` configuration block, `coreInstanceGroup` configuration block and [`aws.emr.InstanceGroup` resource(s)](https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html) instead. A list of `instanceGroup` objects for each instance group in the cluster. Exactly one of `masterInstanceType` and `instanceGroup` must be specified. If `instanceGroup` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `masterInstanceGroup` or `coreInstanceGroup` configuration blocks are set. Defined below
+    *
+    * @deprecated use `master_instance_group` configuration block, `core_instance_group` configuration block, and `aws_emr_instance_group` resource(s) instead
     */
   val instanceGroups: js.UndefOr[Input[js.Array[Input[ClusterInstanceGroup]]]] = js.native
   /**
@@ -85,6 +91,8 @@ trait ClusterArgs extends js.Object {
   val masterInstanceGroup: js.UndefOr[Input[ClusterMasterInstanceGroup]] = js.native
   /**
     * Use the `masterInstanceGroup` configuration block `instanceType` argument instead. The EC2 instance type of the master node. Cannot be specified if `masterInstanceGroup` or `instanceGroup` configuration blocks are set.
+    *
+    * @deprecated use `master_instance_group` configuration block `instance_type` argument instead
     */
   val masterInstanceType: js.UndefOr[Input[String]] = js.native
   /**

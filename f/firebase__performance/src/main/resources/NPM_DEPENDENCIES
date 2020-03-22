@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/performance" : "0.2.34"
+      "@firebase/performance" : "0.2.36"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/performance" : "0.2.34"
+      "@firebase/performance" : "0.2.36"
     }
   ],
   "compile-devDependencies" : [

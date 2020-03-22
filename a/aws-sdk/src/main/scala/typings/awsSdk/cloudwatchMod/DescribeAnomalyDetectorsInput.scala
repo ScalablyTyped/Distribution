@@ -11,7 +11,7 @@ trait DescribeAnomalyDetectorsInput extends js.Object {
     */
   var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.native
   /**
-    * The maximum number of results to return in one operation. The maximum value you can specify is 10. To retrieve the remaining results, make another call with the returned NextToken value. 
+    * The maximum number of results to return in one operation. The maximum value that you can specify is 100. To retrieve the remaining results, make another call with the returned NextToken value. 
     */
   var MaxResults: js.UndefOr[MaxReturnedResultsCount] = js.native
   /**

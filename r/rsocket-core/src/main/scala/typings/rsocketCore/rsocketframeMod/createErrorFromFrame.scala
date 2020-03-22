@@ -1,5 +1,6 @@
 package typings.rsocketCore.rsocketframeMod
 
+import typings.rsocketCore.ErrorsourceErrorSource
 import typings.rsocketTypes.reactiveSocketTypesMod.ErrorFrame
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rsocket-core/RSocketFrame", "createErrorFromFrame")
 @js.native
 object createErrorFromFrame extends js.Object {
-  def apply(frame: ErrorFrame): RSocketError = js.native
+  def apply(frame: ErrorFrame): ErrorsourceErrorSource = js.native
 }
 

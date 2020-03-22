@@ -68,9 +68,9 @@ class Table () extends ClientObject {
   val legacyId: String = js.native
   /**
     *
-    * The name of the table.
-    * When setting the name of the table, you must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
-    *
+    * Name of the table.
+    
+    The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -161,20 +161,26 @@ class Table () extends ClientObject {
   var style: String = js.native
   /**
     *
+    * The style applied to the Table.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val tableStyle: TableStyle = js.native
+  /**
+    *
     * The worksheet containing the current table. Read-only.
     *
     * [Api set: ExcelApi 1.2]
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Clears all the filters currently applied on the table.
     *
     * [Api set: ExcelApi 1.2]
     */
   def clearFilters(): Unit = js.native
   /**
-    *
     * Changes the table to use the default table style.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -182,42 +188,36 @@ class Table () extends ClientObject {
     */
   def clearStyle(): Unit = js.native
   /**
-    *
     * Converts the table into a normal range of cells. All data is preserved.
     *
     * [Api set: ExcelApi 1.2]
     */
   def convertToRange(): Range = js.native
   /**
-    *
     * Deletes the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the range object associated with the data body of the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getDataBodyRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with header row of the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getHeaderRowRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with the entire table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Gets the range object associated with totals row of the table.
     *
     * [Api set: ExcelApi 1.1]
@@ -234,7 +234,6 @@ class Table () extends ClientObject {
   def load(propertyNames: String): Table = js.native
   def load(propertyNames: js.Array[String]): Table = js.native
   /**
-    *
     * Reapplies all the filters currently on the table.
     *
     * [Api set: ExcelApi 1.2]
@@ -255,6 +254,17 @@ class Table () extends ClientObject {
   def set(properties: TableUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Table): Unit = js.native
+  /**
+    * Sets the style applied to the slicer.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param style The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
+    */
+  def setStyle(style: String): Unit = js.native
+  def setStyle(style: BuiltInTableStyle): Unit = js.native
+  def setStyle(style: PivotTableStyle): Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.

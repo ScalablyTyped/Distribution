@@ -39,7 +39,9 @@ trait PlotTreemapLevelsOptions extends js.Object {
     * (Highcharts) Can set the options of dataLabels on each point which lies
     * on the level. plotOptions.treemap.dataLabels for possible values.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[
+    PlotTreemapLevelsDataLabelsOptions | js.Array[PlotTreemapLevelsDataLabelsOptions]
+  ] = js.undefined
   /**
     * (Highcharts) Can set the layoutAlgorithm option on a specific level.
     */
@@ -64,7 +66,7 @@ object PlotTreemapLevelsOptions {
     borderWidth: Int | Double = null,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorVariation: PlotTreemapLevelsColorVariationOptions = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotTreemapLevelsDataLabelsOptions | js.Array[PlotTreemapLevelsDataLabelsOptions] = null,
     layoutAlgorithm: OptionsLayoutAlgorithmValue = null,
     layoutStartingDirection: OptionsLayoutStartingDirectionValue = null,
     level: Int | Double = null

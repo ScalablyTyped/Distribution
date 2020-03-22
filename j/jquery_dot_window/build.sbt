@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_window"
-version := "5.0.4-dt-20190322Z-0f8518"
+version := "5.0.4-dt-20200226Z-0f8518"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

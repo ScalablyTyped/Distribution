@@ -8,11 +8,14 @@ import typings.jquery.JQuery_.Ajax.SuccessCallback
 import typings.jquery.JQuery_.Ajax.XHRFields
 import typings.jquery.jqueryBooleans.`false`
 import typings.jquery.jqueryBooleans.`true`
+import typings.jquery.jqueryStrings.`applicationSlashx-www-form-urlencoded`
+import typings.jquery.jqueryStrings.`multipartSlashform-data`
 import typings.jquery.jqueryStrings.html
 import typings.jquery.jqueryStrings.json
 import typings.jquery.jqueryStrings.jsonp
 import typings.jquery.jqueryStrings.script
 import typings.jquery.jqueryStrings.text
+import typings.jquery.jqueryStrings.textSlashplain
 import typings.jquery.jqueryStrings.xml
 import typings.std.RegExp
 import typings.std.XMLHttpRequest
@@ -45,6 +48,7 @@ object AjaxSettings {
     data: PlainObject[_] | String = null,
     dataFilter: (/* data */ String, /* type */ String) => _ = null,
     dataType: xml | html | script | json | jsonp | text | String = null,
+    enctype: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain = null,
     error: TypeOrArray[ErrorCallback[TContext]] = null,
     global: js.UndefOr[Boolean] = js.undefined,
     headers: PlainObject[js.UndefOr[String | Null]] = null,
@@ -81,6 +85,7 @@ object AjaxSettings {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

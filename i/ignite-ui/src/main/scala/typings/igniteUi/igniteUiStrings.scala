@@ -1065,6 +1065,9 @@ object igniteUiStrings {
   sealed trait contentWindow extends js.Object
   
   @js.native
+  sealed trait contextMenuOpening extends js.Object
+  
+  @js.native
   sealed trait contextRowLoadingText extends js.Object
   
   @js.native
@@ -2406,6 +2409,9 @@ object igniteUiStrings {
   sealed trait getItemSpan extends js.Object
   
   @js.native
+  sealed trait getLegend extends js.Object
+  
+  @js.native
   sealed trait getMultiColumnHeaders extends js.Object
   
   @js.native
@@ -3562,18 +3568,6 @@ object igniteUiStrings {
   
   @js.native
   sealed trait legendItemBadgeTemplate extends js.Object
-  
-  @js.native
-  sealed trait legendItemMouseEnter extends js.Object
-  
-  @js.native
-  sealed trait legendItemMouseLeave extends js.Object
-  
-  @js.native
-  sealed trait legendItemMouseLeftButtonDown extends js.Object
-  
-  @js.native
-  sealed trait legendItemMouseLeftButtonUp extends js.Object
   
   @js.native
   sealed trait legendItemTemplate extends js.Object
@@ -5176,6 +5170,9 @@ object igniteUiStrings {
   
   @js.native
   sealed trait rowsRequesting extends js.Object
+  
+  @js.native
+  sealed trait rsRenderColgroup extends js.Object
   
   @js.native
   sealed trait saveChanges extends js.Object
@@ -7667,6 +7664,8 @@ object igniteUiStrings {
   @scala.inline
   def contentWindow: contentWindow = "contentWindow".asInstanceOf[contentWindow]
   @scala.inline
+  def contextMenuOpening: contextMenuOpening = "contextMenuOpening".asInstanceOf[contextMenuOpening]
+  @scala.inline
   def contextRowLoadingText: contextRowLoadingText = "contextRowLoadingText".asInstanceOf[contextRowLoadingText]
   @scala.inline
   def contextRowMode: contextRowMode = "contextRowMode".asInstanceOf[contextRowMode]
@@ -8561,6 +8560,8 @@ object igniteUiStrings {
   @scala.inline
   def getItemSpan: getItemSpan = "getItemSpan".asInstanceOf[getItemSpan]
   @scala.inline
+  def getLegend: getLegend = "getLegend".asInstanceOf[getLegend]
+  @scala.inline
   def getMultiColumnHeaders: getMultiColumnHeaders = "getMultiColumnHeaders".asInstanceOf[getMultiColumnHeaders]
   @scala.inline
   def getPanes: getPanes = "getPanes".asInstanceOf[getPanes]
@@ -9332,14 +9333,6 @@ object igniteUiStrings {
   def legend: legend = "legend".asInstanceOf[legend]
   @scala.inline
   def legendItemBadgeTemplate: legendItemBadgeTemplate = "legendItemBadgeTemplate".asInstanceOf[legendItemBadgeTemplate]
-  @scala.inline
-  def legendItemMouseEnter: legendItemMouseEnter = "legendItemMouseEnter".asInstanceOf[legendItemMouseEnter]
-  @scala.inline
-  def legendItemMouseLeave: legendItemMouseLeave = "legendItemMouseLeave".asInstanceOf[legendItemMouseLeave]
-  @scala.inline
-  def legendItemMouseLeftButtonDown: legendItemMouseLeftButtonDown = "legendItemMouseLeftButtonDown".asInstanceOf[legendItemMouseLeftButtonDown]
-  @scala.inline
-  def legendItemMouseLeftButtonUp: legendItemMouseLeftButtonUp = "legendItemMouseLeftButtonUp".asInstanceOf[legendItemMouseLeftButtonUp]
   @scala.inline
   def legendItemTemplate: legendItemTemplate = "legendItemTemplate".asInstanceOf[legendItemTemplate]
   @scala.inline
@@ -10406,6 +10399,8 @@ object igniteUiStrings {
   def rowsRequested: rowsRequested = "rowsRequested".asInstanceOf[rowsRequested]
   @scala.inline
   def rowsRequesting: rowsRequesting = "rowsRequesting".asInstanceOf[rowsRequesting]
+  @scala.inline
+  def rsRenderColgroup: rsRenderColgroup = "rsRenderColgroup".asInstanceOf[rsRenderColgroup]
   @scala.inline
   def saveChanges: saveChanges = "saveChanges".asInstanceOf[saveChanges]
   @scala.inline

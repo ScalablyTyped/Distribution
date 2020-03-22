@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-memoize
 
-Typings are for version 2.5.1
+Typings are for version 2.5.2
 
 ## Library description:
 Fastest memoization lib that supports N arguments

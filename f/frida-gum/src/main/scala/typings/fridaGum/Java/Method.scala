@@ -7,7 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Method extends js.Object {
+trait Method[Holder /* <: Members[Holder] */] extends js.Object {
   /**
     * Method argument types.
     */
@@ -19,13 +19,13 @@ trait Method extends js.Object {
   /**
     * Class that this method belongs to.
     */
-  var holder: Wrapper = js.native
+  var holder: Wrapper[Holder] = js.native
   /**
     * Implementation. Assign a new implementation to this property to
     * replace the original implementation. Assign `null` at a future point
     * to revert back to the original implementation.
     */
-  var implementation: MethodImplementation | Null = js.native
+  var implementation: MethodImplementation[Holder] | Null = js.native
   /**
     * Name of this method.
     */
@@ -49,6 +49,6 @@ trait Method extends js.Object {
     * Useful for e.g. setting `traps: "all"` to perform execution tracing
     * in conjunction with Stalker.
     */
-  def clone(options: NativeFunctionOptions): Method = js.native
+  def clone(options: NativeFunctionOptions): Method[Holder] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-formatdatetime"
-version := "1.1-dt-20181031Z-55a3c9"
+version := "1.1-dt-20200225Z-55a3c9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

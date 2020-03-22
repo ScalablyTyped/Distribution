@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait AnonChallengeAnswer extends js.Object {
   var challengeAnswer: js.UndefOr[String] = js.undefined
   var challengeName: js.UndefOr[String] = js.undefined
+  var clientMetadata: js.UndefOr[StringDictionary[String]] = js.undefined
   var codeParameter: js.UndefOr[String] = js.undefined
   var linkParameter: js.UndefOr[String] = js.undefined
   var newDeviceUsed: js.UndefOr[Boolean] = js.undefined
@@ -25,6 +26,7 @@ object AnonChallengeAnswer {
     userAttributes: StringDictionary[String],
     challengeAnswer: String = null,
     challengeName: String = null,
+    clientMetadata: StringDictionary[String] = null,
     codeParameter: String = null,
     linkParameter: String = null,
     newDeviceUsed: js.UndefOr[Boolean] = js.undefined,
@@ -37,6 +39,7 @@ object AnonChallengeAnswer {
     val __obj = js.Dynamic.literal(userAttributes = userAttributes.asInstanceOf[js.Any])
     if (challengeAnswer != null) __obj.updateDynamic("challengeAnswer")(challengeAnswer.asInstanceOf[js.Any])
     if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName.asInstanceOf[js.Any])
+    if (clientMetadata != null) __obj.updateDynamic("clientMetadata")(clientMetadata.asInstanceOf[js.Any])
     if (codeParameter != null) __obj.updateDynamic("codeParameter")(codeParameter.asInstanceOf[js.Any])
     if (linkParameter != null) __obj.updateDynamic("linkParameter")(linkParameter.asInstanceOf[js.Any])
     if (!js.isUndefined(newDeviceUsed)) __obj.updateDynamic("newDeviceUsed")(newDeviceUsed.asInstanceOf[js.Any])

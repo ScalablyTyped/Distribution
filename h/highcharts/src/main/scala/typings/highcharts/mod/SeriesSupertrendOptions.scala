@@ -101,10 +101,11 @@ object SeriesSupertrendOptions {
     connectNulls: js.UndefOr[Boolean] = js.undefined,
     connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dashStyle: DashStyleValue = null,
     data: js.UndefOr[scala.Nothing] = js.undefined,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotSupertrendDataLabelsOptions | js.Array[PlotSupertrendDataLabelsOptions] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataSorting: DataSortingOptionsObject | PlotSupertrendDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
@@ -177,6 +178,7 @@ object SeriesSupertrendOptions {
     if (!js.isUndefined(connectNulls)) __obj.updateDynamic("connectNulls")(connectNulls.asInstanceOf[js.Any])
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(data)) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])

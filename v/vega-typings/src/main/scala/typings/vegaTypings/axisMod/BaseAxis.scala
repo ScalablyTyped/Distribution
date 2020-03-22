@@ -151,6 +151,16 @@ trait BaseAxis extends js.Object {
     */
   var labelLimit: js.UndefOr[NumberValue] = js.undefined
   /**
+    * Line height in pixels for multi-line label text.
+    */
+  var labelLineHeight: js.UndefOr[NumberValue] = js.undefined
+  /**
+    * Position offset in pixels to apply to labels, in addition to tickOffset.
+    *
+    * __Default value:__ `0`
+    */
+  var labelOffset: js.UndefOr[NumberValue] = js.undefined
+  /**
     * The opacity of the labels.
     */
   var labelOpacity: js.UndefOr[NumberValue] = js.undefined
@@ -344,6 +354,8 @@ object BaseAxis {
     labelFontStyle: FontStyleValue = null,
     labelFontWeight: FontWeightValue = null,
     labelLimit: NumberValue = null,
+    labelLineHeight: NumberValue = null,
+    labelOffset: NumberValue = null,
     labelOpacity: NumberValue = null,
     labelOverlap: LabelOverlap | SignalRef = null,
     labelPadding: NumberValue = null,
@@ -405,6 +417,8 @@ object BaseAxis {
     if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle.asInstanceOf[js.Any])
     if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight.asInstanceOf[js.Any])
     if (labelLimit != null) __obj.updateDynamic("labelLimit")(labelLimit.asInstanceOf[js.Any])
+    if (labelLineHeight != null) __obj.updateDynamic("labelLineHeight")(labelLineHeight.asInstanceOf[js.Any])
+    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
     if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity.asInstanceOf[js.Any])
     if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])

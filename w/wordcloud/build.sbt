@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordcloud"
-version := "1.1-dt-20190212Z-125390"
+version := "1.1-dt-20200227Z-125390"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

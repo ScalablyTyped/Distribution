@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cal-heatmap"
-version := "v3.5.4-dt-20190322Z-17004a"
+version := "v3.5.4-dt-20200225Z-17004a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

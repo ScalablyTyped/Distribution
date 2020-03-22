@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-template
 
-Typings are for version 10.0.4
+Typings are for version 10.1.1
 
 ## Library description:
 JSS plugin enables string templates

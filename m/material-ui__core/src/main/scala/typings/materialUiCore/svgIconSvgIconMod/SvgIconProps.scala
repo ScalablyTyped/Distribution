@@ -1,6 +1,6 @@
 package typings.materialUiCore.svgIconSvgIconMod
 
-import typings.materialUiCore.PartialClassNameMapSvgIconClassKey
+import typings.materialUiCore.PartialClassNameMapSvgIco
 import typings.materialUiCore.materialUiCoreStrings._empty
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`after-edge`
@@ -193,7 +193,7 @@ trait SvgIconProps extends js.Object {
   var capHeight: js.UndefOr[Double | String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapSvgIconClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapSvgIco] = js.native
   var clip: js.UndefOr[Double | String] = js.native
   var clipPath: js.UndefOr[String] = js.native
   var clipPathUnits: js.UndefOr[Double | String] = js.native
@@ -395,6 +395,7 @@ trait SvgIconProps extends js.Object {
   var overlineThickness: js.UndefOr[Double | String] = js.native
   var paintOrder: js.UndefOr[Double | String] = js.native
   var panose1: js.UndefOr[Double | String] = js.native
+  var path: js.UndefOr[String] = js.native
   var pathLength: js.UndefOr[Double | String] = js.native
   var patternContentUnits: js.UndefOr[String] = js.native
   var patternTransform: js.UndefOr[Double | String] = js.native
@@ -591,7 +592,7 @@ object SvgIconProps {
     capHeight: Double | String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapSvgIconClassKey = null,
+    classes: PartialClassNameMapSvgIco = null,
     clip: Double | String = null,
     clipPath: String = null,
     clipPathUnits: Double | String = null,

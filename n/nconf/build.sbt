@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nconf"
-version := "0.10-dt-20190125Z-73ce1b"
+version := "0.10-dt-20200225Z-73ce1b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

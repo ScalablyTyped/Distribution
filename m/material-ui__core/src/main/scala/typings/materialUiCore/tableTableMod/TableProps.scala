@@ -1,6 +1,6 @@
 package typings.materialUiCore.tableTableMod
 
-import typings.materialUiCore.PartialClassNameMapTableClassKey
+import typings.materialUiCore.PartialClassNameMapTableC
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -148,7 +148,7 @@ trait TableProps extends js.Object {
   var cellSpacing: js.UndefOr[Double | String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTableClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTableC] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[TableBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -333,7 +333,7 @@ object TableProps {
     cellSpacing: Double | String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTableClassKey = null,
+    classes: PartialClassNameMapTableC = null,
     color: String = null,
     component: ReactType[TableBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

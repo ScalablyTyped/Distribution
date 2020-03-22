@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class UpdateNotifier () extends js.Object {
   def this(settings: Settings) = this()
-  var update: js.UndefOr[UpdateInfo] = js.native
+  val config: typings.configstore.mod.^ = js.native
+  val update: js.UndefOr[UpdateInfo] = js.native
   def check(): Unit = js.native
-  def checkNpm(): Unit = js.native
+  /** Check update information */
+  def fetchInfo(): UpdateInfo | js.Promise[UpdateInfo] = js.native
   def notify(customMessage: NotifyOptions): Unit = js.native
 }
 

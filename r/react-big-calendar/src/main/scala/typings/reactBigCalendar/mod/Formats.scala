@@ -68,18 +68,18 @@ object Formats {
   @scala.inline
   def apply(
     agendaDateFormat: DateFormat = null,
-    agendaHeaderFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
+    agendaHeaderFormat: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String = null,
     agendaTimeFormat: DateFormat = null,
-    agendaTimeRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
+    agendaTimeRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String = null,
     dateFormat: DateFormat = null,
     dayFormat: DateFormat = null,
     dayHeaderFormat: DateFormat = null,
-    dayRangeHeaderFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
-    eventTimeRangeEndFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
-    eventTimeRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
-    eventTimeRangeStartFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
+    dayRangeHeaderFormat: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String = null,
+    eventTimeRangeEndFormat: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String = null,
+    eventTimeRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String = null,
+    eventTimeRangeStartFormat: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String = null,
     monthHeaderFormat: DateFormat = null,
-    selectRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[String], /* localizer */ js.UndefOr[js.Object]) => String = null,
+    selectRangeFormat: (/* range */ DateRange, /* culture */ js.UndefOr[Culture], /* localizer */ js.UndefOr[DateLocalizer]) => String = null,
     timeGutterFormat: DateFormat = null,
     weekdayFormat: DateFormat = null
   ): Formats = {

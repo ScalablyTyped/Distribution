@@ -12,6 +12,14 @@ import scala.scalajs.js.annotation._
   extends PlotFlagsOptions
      with SeriesOptionsType {
   /**
+    * Not available
+    */
+  var borderRadius: js.UndefOr[scala.Nothing] = js.undefined
+  /**
+    * Not available
+    */
+  var colorByPoint: js.UndefOr[scala.Nothing] = js.undefined
+  /**
     * (Highstock) An array of data points for the series. For the `flags`
     * series type, points can be given in the following ways:
     *
@@ -58,6 +66,14 @@ import scala.scalajs.js.annotation._
     */
   var name: js.UndefOr[String] = js.undefined
   /**
+    * Not available
+    */
+  var pointPadding: js.UndefOr[scala.Nothing] = js.undefined
+  /**
+    * Not available
+    */
+  var pointWidth: js.UndefOr[scala.Nothing] = js.undefined
+  /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
     * chart. The stack option can be a string or anything else, as long as the
     * grouped series' stack options match each other after conversion into a
@@ -70,6 +86,10 @@ import scala.scalajs.js.annotation._
     * unknown sources.
     */
   var `type`: String | flags
+  /**
+    * Not available
+    */
+  var useOhlcData: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
     * defines which xAxis the particular series is connected to. It refers to
@@ -97,10 +117,12 @@ object SeriesFlagsOptions {
     animationLimit: Int | Double = null,
     boostBlending: OptionsBoostBlendingValue = null,
     boostThreshold: Int | Double = null,
+    borderRadius: js.UndefOr[scala.Nothing] = js.undefined,
     className: String = null,
     clip: js.UndefOr[Boolean] = js.undefined,
     color: ColorString | GradientColorObject | PatternObject = null,
     colorAxis: Boolean | Double | String = null,
+    colorByPoint: js.UndefOr[scala.Nothing] = js.undefined,
     colorIndex: Int | Double = null,
     colorKey: String = null,
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
@@ -111,8 +133,10 @@ object SeriesFlagsOptions {
     crisp: js.UndefOr[Boolean] = js.undefined,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
+    dashStyle: DashStyleValue = null,
     data: js.Array[PointOptionsObject] = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotFlagsDataLabelsOptions | js.Array[PlotFlagsDataLabelsOptions] = null,
     dataParser: js.UndefOr[scala.Nothing] = js.undefined,
     dataSorting: DataSortingOptionsObject | PlotFlagsDataSortingOptions = null,
     dataURL: js.UndefOr[scala.Nothing] = js.undefined,
@@ -155,9 +179,11 @@ object SeriesFlagsOptions {
     pointDescriptionFormatter: js.Function = null,
     pointInterval: Int | Double = null,
     pointIntervalUnit: OptionsPointIntervalUnitValue = null,
+    pointPadding: js.UndefOr[scala.Nothing] = js.undefined,
     pointPlacement: Double | String = null,
     pointRange: Int | Double = null,
     pointStart: Int | Double = null,
+    pointWidth: js.UndefOr[scala.Nothing] = js.undefined,
     selected: js.UndefOr[Boolean] = js.undefined,
     shadow: Boolean | ShadowOptionsObject = null,
     shape: FlagsShapeValue = null,
@@ -177,6 +203,7 @@ object SeriesFlagsOptions {
     title: String = null,
     tooltip: SeriesTooltipOptionsObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
+    useOhlcData: js.UndefOr[scala.Nothing] = js.undefined,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Int | Double = null,
     xAxis: Double | String = null,
@@ -195,10 +222,12 @@ object SeriesFlagsOptions {
     if (animationLimit != null) __obj.updateDynamic("animationLimit")(animationLimit.asInstanceOf[js.Any])
     if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
     if (boostThreshold != null) __obj.updateDynamic("boostThreshold")(boostThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
+    if (!js.isUndefined(colorByPoint)) __obj.updateDynamic("colorByPoint")(colorByPoint.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey.asInstanceOf[js.Any])
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
@@ -209,6 +238,8 @@ object SeriesFlagsOptions {
     if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(dataParser)) __obj.updateDynamic("dataParser")(dataParser.asInstanceOf[js.Any])
@@ -253,9 +284,11 @@ object SeriesFlagsOptions {
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
     if (pointInterval != null) __obj.updateDynamic("pointInterval")(pointInterval.asInstanceOf[js.Any])
     if (pointIntervalUnit != null) __obj.updateDynamic("pointIntervalUnit")(pointIntervalUnit.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointPadding)) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])
     if (pointPlacement != null) __obj.updateDynamic("pointPlacement")(pointPlacement.asInstanceOf[js.Any])
     if (pointRange != null) __obj.updateDynamic("pointRange")(pointRange.asInstanceOf[js.Any])
     if (pointStart != null) __obj.updateDynamic("pointStart")(pointStart.asInstanceOf[js.Any])
+    if (!js.isUndefined(pointWidth)) __obj.updateDynamic("pointWidth")(pointWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
@@ -275,6 +308,7 @@ object SeriesFlagsOptions {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
+    if (!js.isUndefined(useOhlcData)) __obj.updateDynamic("useOhlcData")(useOhlcData.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])

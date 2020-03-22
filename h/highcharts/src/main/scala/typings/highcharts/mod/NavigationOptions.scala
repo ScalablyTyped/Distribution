@@ -25,7 +25,7 @@ trait NavigationOptions extends js.Object {
     *
     * - `end`: last event to be called after last step event
     */
-  var bindings: js.UndefOr[NavigationBindingsOptions | Dictionary[StockToolsBindingsObject]] = js.undefined
+  var bindings: js.UndefOr[NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject]] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name where all
     * bindings will be attached to. Multiple charts on the same page should
@@ -77,7 +77,7 @@ object NavigationOptions {
   @scala.inline
   def apply(
     annotationsOptions: AnnotationsOptions | NavigationAnnotationsOptions = null,
-    bindings: NavigationBindingsOptions | Dictionary[StockToolsBindingsObject] = null,
+    bindings: NavigationBindingsOptions | Dictionary[NavigationBindingsOptionsObject] = null,
     bindingsClassName: String = null,
     buttonOptions: NavigationButtonOptions = null,
     events: NavigationEventsOptions = null,

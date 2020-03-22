@@ -1,12 +1,11 @@
 package typings.angularCore.mod
 
+import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@angular/core", "\u0275angular_packages_core_core_bp")
 @js.native
-object ɵangularPackagesCoreCoreBp extends js.Object {
-  def apply(fn: js.Function0[Unit]): String = js.native
-}
+trait ɵangularPackagesCoreCoreBp
+  extends Array[js.Any]
 

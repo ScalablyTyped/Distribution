@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "cypress-axe"
-version := "0.4-dt-20190304Z-e5e96a"
+version := "0.4-dt-20200225Z-e17a87"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "axe-core" % "3.5.1-5c295a",
+  "org.scalablytyped" %%% "axe-core" % "3.5.2-8cbb7b",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

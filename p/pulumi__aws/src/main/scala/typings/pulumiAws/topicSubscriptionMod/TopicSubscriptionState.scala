@@ -43,7 +43,7 @@ trait TopicSubscriptionState extends js.Object {
   /**
     * The ARN of the SNS topic to subscribe to
     */
-  val topic: js.UndefOr[Input[Topic]] = js.native
+  val topic: js.UndefOr[Input[String | Topic]] = js.native
 }
 
 object TopicSubscriptionState {
@@ -57,7 +57,7 @@ object TopicSubscriptionState {
     filterPolicy: Input[String] = null,
     protocol: Input[String] = null,
     rawMessageDelivery: Input[Boolean] = null,
-    topic: Input[Topic] = null
+    topic: Input[String | Topic] = null
   ): TopicSubscriptionState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

@@ -4,6 +4,7 @@ import typings.officeUiFabricReact.groupFooterTypesMod.IGroupFooterProps
 import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
 import typings.officeUiFabricReact.groupShowAllTypesMod.IGroupShowAllProps
 import typings.officeUiFabricReact.groupSpacerTypesMod.IGroupSpacerProps
+import typings.officeUiFabricReact.groupedListSectionMod.IGroupedListSectionProps
 import typings.officeUiFabricReact.groupedListTypesMod.IGroupedListProps
 import typings.react.mod.FunctionComponent
 import scala.scalajs.js
@@ -17,6 +18,12 @@ object libGroupedListMod extends js.Object {
   class GroupedListBase protected ()
     extends typings.officeUiFabricReact.groupedListMod.GroupedListBase {
     def this(props: IGroupedListProps) = this()
+  }
+  
+  @js.native
+  class GroupedListSection protected ()
+    extends typings.officeUiFabricReact.groupedListMod.GroupedListSection {
+    def this(props: IGroupedListSectionProps) = this()
   }
   
   val GroupFooter: FunctionComponent[IGroupFooterProps] = js.native

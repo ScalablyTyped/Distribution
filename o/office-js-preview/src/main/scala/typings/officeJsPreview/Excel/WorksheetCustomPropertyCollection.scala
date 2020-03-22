@@ -26,7 +26,6 @@ class WorksheetCustomPropertyCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[WorksheetCustomProperty] = js.native
   /**
-    *
     * Gets the number of custom properties on this worksheet.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -34,7 +33,6 @@ class WorksheetCustomPropertyCollection () extends ClientObject {
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -44,7 +42,6 @@ class WorksheetCustomPropertyCollection () extends ClientObject {
     */
   def getItem(key: String): WorksheetCustomProperty = js.native
   /**
-    *
     * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

@@ -7,6 +7,7 @@ import typings.webpack.mod.Options.Performance
 import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackStrings.`async-node`
 import typings.webpack.webpackStrings.`electron-main`
+import typings.webpack.webpackStrings.`electron-preload`
 import typings.webpack.webpackStrings.`electron-renderer`
 import typings.webpack.webpackStrings.`node-webkit`
 import typings.webpack.webpackStrings.atom
@@ -82,12 +83,14 @@ trait Configuration extends js.Object {
     * - "atom" Compile for usage in electron (formerly known as atom-shell), supports require for modules necessary to run Electron.
     * - "electron-renderer" Compile for Electron for renderer process, providing a target using JsonpTemplatePlugin, FunctionModulePlugin for browser
     *   environments and NodeTargetPlugin and ExternalsPlugin for CommonJS and Electron built-in modules.
+    * - "electron-preload" Compile for Electron for renderer process, providing a target using NodeTemplatePlugin with asyncChunkLoading set to true,
+    *   FunctionModulePlugin for browser environments and NodeTargetPlugin and ExternalsPlugin for CommonJS and Electron built-in modules.
     * - "electron-main" Compile for Electron for main process.
     * - "atom" Alias for electron-main.
     * - "electron" Alias for electron-main.
     */
   var target: js.UndefOr[
-    web | webworker | node | `async-node` | `node-webkit` | atom | electron | `electron-renderer` | `electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], Unit])
+    web | webworker | node | `async-node` | `node-webkit` | atom | electron | `electron-renderer` | `electron-preload` | `electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], Unit])
   ] = js.undefined
   /** Enter watch mode, which rebuilds on file change. */
   var watch: js.UndefOr[Boolean] = js.undefined
@@ -120,7 +123,7 @@ object Configuration {
     resolve: Resolve = null,
     resolveLoader: ResolveLoader = null,
     stats: typings.webpack.mod.Options.Stats = null,
-    target: web | webworker | node | `async-node` | `node-webkit` | atom | electron | `electron-renderer` | `electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], Unit]) = null,
+    target: web | webworker | node | `async-node` | `node-webkit` | atom | electron | `electron-renderer` | `electron-preload` | `electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], Unit]) = null,
     watch: js.UndefOr[Boolean] = js.undefined,
     watchOptions: typings.webpack.mod.Options.WatchOptions = null
   ): Configuration = {

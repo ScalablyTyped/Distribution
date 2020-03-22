@@ -43,8 +43,18 @@ trait SignaleDefaultMethods extends js.Object {
   var warn_Original: LoggerFunc = js.native
   @JSName("watch")
   var watch_Original: LoggerFunc = js.native
+  /**
+    * Adds new secrets/sensitive-information to the targeted Signale instance.
+    *
+    * @param secrets Array holding the secrets/sensitive-information to be filtered out.
+    */
+  def addSecrets(secrets: js.Array[Double | String]): Unit = js.native
   def await(): Unit = js.native
   def await(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  /**
+    * Removes all secrets/sensitive-information from the targeted Signale instance.
+    */
+  def clearSecrets(): Unit = js.native
   def complete(): Unit = js.native
   def complete(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
@@ -55,6 +65,14 @@ trait SignaleDefaultMethods extends js.Object {
   def config(configObj: SignaleConfig): Signale[DefaultMethods] = js.native
   def debug(): Unit = js.native
   def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  /**
+    * Disables the logging functionality of all loggers belonging to a specific instance.
+    */
+  def disable(): Unit = js.native
+  /**
+    * Enables the logging functionality of all loggers belonging to a specific instance.
+    */
+  def enable(): Unit = js.native
   def error(): Unit = js.native
   def error(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def fatal(): Unit = js.native
@@ -63,6 +81,12 @@ trait SignaleDefaultMethods extends js.Object {
   def fav(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def info(): Unit = js.native
   def info(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  /**
+    * Checks whether the logging functionality of a specific instance is enabled.
+    *
+    * @returns a boolean that describes whether or not the logger is enabled.
+    */
+  def isEnabled(): Boolean = js.native
   def log(): Unit = js.native
   def log(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def note(): Unit = js.native

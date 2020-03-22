@@ -46,6 +46,8 @@ trait Cluster
   def keys(pattern: String, callback: js.Function2[/* err */ Error, /* res */ js.Array[String], Unit]): Unit = js.native
   def llen(key: KeyType): js.Promise[Double] = js.native
   def llen(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Double, Unit]): Unit = js.native
+  def lpop(key: KeyType): js.Promise[String] = js.native
+  def lpop(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ String, Unit]): Unit = js.native
   def lpopBuffer(key: KeyType): js.Promise[Buffer] = js.native
   def lpopBuffer(key: KeyType, callback: js.Function2[/* err */ Error, /* res */ Buffer, Unit]): Unit = js.native
   def lrangeBuffer(key: KeyType, start: Double, stop: Double): js.Promise[js.Array[Buffer]] = js.native

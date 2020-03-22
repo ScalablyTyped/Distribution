@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jasmine-data_driven_tests"
-version := "1.0-dt-20190301Z-af5d89"
+version := "1.0-dt-20200226Z-af5d89"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

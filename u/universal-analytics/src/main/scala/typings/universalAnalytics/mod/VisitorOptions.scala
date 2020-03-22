@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait VisitorOptions extends js.Object {
   var batchSize: js.UndefOr[Double] = js.undefined
+  /**
+    * Client ID
+    */
   var cid: js.UndefOr[String] = js.undefined
   var debug: js.UndefOr[Boolean] = js.undefined
   var enableBatching: js.UndefOr[Boolean] = js.undefined
@@ -16,7 +19,13 @@ trait VisitorOptions extends js.Object {
   var path: js.UndefOr[String] = js.undefined
   var requestOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var strictCidFormat: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Tracking ID
+    */
   var tid: js.UndefOr[String] = js.undefined
+  /**
+    * User ID
+    */
   var uid: js.UndefOr[String] = js.undefined
 }
 

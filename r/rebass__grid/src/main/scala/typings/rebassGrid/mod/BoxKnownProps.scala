@@ -3,7 +3,6 @@ package typings.rebassGrid.mod
 import typings.csstype.mod.AlignSelfProperty
 import typings.csstype.mod.FlexProperty
 import typings.csstype.mod.GlobalsNumber
-import typings.csstype.mod.OpacityProperty
 import typings.csstype.mod.WidthProperty
 import typings.react.mod.ElementType
 import typings.react.mod.Key
@@ -66,7 +65,7 @@ object BoxKnownProps {
     mt: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     mx: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     my: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     order: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     p: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,
     padding: ResponsiveValue[ThemeValue[space, RequiredTheme, js.Any], RequiredTheme] = null,

@@ -42,8 +42,8 @@ object ImageFit extends js.Object {
   sealed trait contain extends ImageFit
   
   /**
-    * The image is scaled to maintain its aspect ratio while filling the frame. Portions of the image will be cropped from
-    * the top and bottom, or from the sides, depending on the difference in aspect ratio between the image and the frame.
+    * The image is scaled to maintain its aspect ratio while filling the frame. Portions of the image will be cropped
+    * from the top and bottom, or the sides, depending on the difference in aspect ratio between the image and the frame.
     */
   @js.native
   sealed trait cover extends ImageFit

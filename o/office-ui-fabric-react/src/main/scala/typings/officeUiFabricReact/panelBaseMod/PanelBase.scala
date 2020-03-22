@@ -5,7 +5,7 @@ import typings.officeUiFabricReact.ReadonlyIPanelProps
 import typings.officeUiFabricReact.ReadonlyIPanelState
 import typings.officeUiFabricReact.panelTypesMod.IPanel
 import typings.officeUiFabricReact.panelTypesMod.IPanelProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod.SyntheticEvent
 import typings.std.Event_
 import typings.std.HTMLElement
@@ -16,16 +16,18 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Panel/Panel.base", "PanelBase")
 @js.native
 class PanelBase protected ()
-  extends BaseComponent[IPanelProps, IPanelState]
+  extends Component[IPanelProps, IPanelState, js.Any]
      with IPanel {
   def this(props: IPanelProps) = this()
   var _allowScrollOnPanel: js.Any = js.native
   var _allowTouchBodyScroll: js.Any = js.native
   var _animateTo: js.Any = js.native
   var _animationCallback: js.Any = js.native
+  var _async: js.Any = js.native
   var _classNames: js.Any = js.native
   var _clearExistingAnimationTimer: js.Any = js.native
   var _dismissOnOuterClick: js.Any = js.native
+  var _events: js.Any = js.native
   var _hasCustomNavigation: js.Any = js.native
   var _headerTextId: js.Any = js.native
   var _onPanelClick: js.Any = js.native
@@ -46,6 +48,8 @@ class PanelBase protected ()
   def componentDidMount_MPanelBase(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MPanelBase(previousProps: IPanelProps, previousState: IPanelState): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MPanelBase(): Unit = js.native
   def dismiss(ev: SyntheticEvent[HTMLElement, Event_]): Unit = js.native
 }
 

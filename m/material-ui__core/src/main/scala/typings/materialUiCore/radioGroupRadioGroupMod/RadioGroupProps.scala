@@ -1,6 +1,6 @@
 package typings.materialUiCore.radioGroupRadioGroupMod
 
-import typings.materialUiCore.PartialClassNameMapRadioGroupClassKey
+import typings.materialUiCore.PartialClassNameMapRadioG
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -146,7 +146,7 @@ trait RadioGroupProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapRadioGroupClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapRadioG] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -330,7 +330,7 @@ object RadioGroupProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapRadioGroupClassKey = null,
+    classes: PartialClassNameMapRadioG = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

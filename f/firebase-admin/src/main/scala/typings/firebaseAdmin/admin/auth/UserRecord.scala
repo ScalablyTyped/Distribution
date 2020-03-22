@@ -1,5 +1,6 @@
 package typings.firebaseAdmin.admin.auth
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +15,7 @@ trait UserRecord extends js.Object {
     * This is set via
     * {@link https://firebase.google.com/docs/reference/admin/node/admin.auth.Auth#setCustomUserClaims `setCustomUserClaims()`}
     */
-  var customClaims: js.UndefOr[js.Object] = js.undefined
+  var customClaims: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   /**
     * Whether or not the user is disabled: `true` for disabled; `false` for
     * enabled.
@@ -36,6 +37,10 @@ trait UserRecord extends js.Object {
     * Additional metadata about the user.
     */
   var metadata: UserMetadata
+  /**
+    * The multi-factor related properties for the current user, if available.
+    */
+  var multiFactor: js.UndefOr[MultiFactorSettings] = js.undefined
   /**
     * The user's hashed password (base64-encoded), only if Firebase Auth hashing
     * algorithm (SCRYPT) is used. If a different hashing algorithm had been used
@@ -99,9 +104,10 @@ object UserRecord {
     providerData: js.Array[UserInfo],
     toJSON: () => js.Object,
     uid: String,
-    customClaims: js.Object = null,
+    customClaims: StringDictionary[js.Any] = null,
     displayName: String = null,
     email: String = null,
+    multiFactor: MultiFactorSettings = null,
     passwordHash: String = null,
     passwordSalt: String = null,
     phoneNumber: String = null,
@@ -113,6 +119,7 @@ object UserRecord {
     if (customClaims != null) __obj.updateDynamic("customClaims")(customClaims.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (multiFactor != null) __obj.updateDynamic("multiFactor")(multiFactor.asInstanceOf[js.Any])
     if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash.asInstanceOf[js.Any])
     if (passwordSalt != null) __obj.updateDynamic("passwordSalt")(passwordSalt.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])

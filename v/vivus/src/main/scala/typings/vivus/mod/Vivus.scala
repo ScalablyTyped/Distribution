@@ -1,5 +1,6 @@
 package typings.vivus.mod
 
+import typings.std.HTMLElement
 import typings.vivus.vivusStrings.end
 import typings.vivus.vivusStrings.progress
 import typings.vivus.vivusStrings.start
@@ -9,6 +10,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Vivus extends js.Object {
+  /**
+    * for types of HTMLElement
+    */
+  var el: HTMLElement = js.native
   /**
     * Reset the SVG but make the instance out of order.
     */

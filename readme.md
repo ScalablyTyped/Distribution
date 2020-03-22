@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **8505** Javascript libraries,
+This is the home of Scala.js typings for **8612** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               375089     16422031      1568393      3781633     11072005
- Markdown              8707       309991       102998            0       206993
+ Scala               377237     16563026      1580431      3804193     11178402
+ Markdown              8818       313959       104321            0       209638
  JSON                     9           90            0            0           90
  Makefile                 5           69           16            0           53
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               383811     16732187      1671407      3781633     11279147
+ Total               386070     16877150      1684768      3804193     11388189
 --------------------------------------------------------------------------------
 
 ```
@@ -100,7 +100,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202003210711")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202003220941")
   If you're still on 2.12, this is the last distribution release.
   addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202001240947")
 ```

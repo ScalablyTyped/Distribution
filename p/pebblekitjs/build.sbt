@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pebblekitjs"
-version := "v4.0.0-dt-20190322Z-46c7ac"
+version := "v4.0.0-dt-20200225Z-46c7ac"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -640,8 +640,8 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
   def split[T /* <: Tensor[Rank] */](numOrSizeSplits: Double, axis: Double): js.Array[T] = js.native
   def sqrt[T /* <: Tensor[Rank] */](): T = js.native
   def square[T /* <: Tensor[Rank] */](): T = js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
+  def squaredDifference[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
+  def squaredDifference[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
   def squaredDifferenceStrict[T /* <: this.type */](x: T): T = js.native
   def squaredDifferenceStrict[T /* <: this.type */](x: TensorLike): T = js.native
   /**

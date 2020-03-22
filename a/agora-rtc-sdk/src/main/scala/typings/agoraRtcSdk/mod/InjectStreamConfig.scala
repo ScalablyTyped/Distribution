@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * A class for configuring the imported live broadcast voice or video stream.
+  * A class for configuring the imported live broadcast voice or video stream in {@link addInjectStreamUrl}.
   *
-  * @example **Sample Code**
+  * @example **Sample code**
   * ```javascript
   * var InjectStreamConfig = {
   *   width: 0,

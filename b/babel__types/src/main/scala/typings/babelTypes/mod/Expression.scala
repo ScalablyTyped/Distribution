@@ -50,6 +50,7 @@ import typings.babelTypes.babelTypesStrings.PipelinePrimaryTopicReference
 import typings.babelTypes.babelTypesStrings.Plussign
 import typings.babelTypes.babelTypesStrings.PlussignPlussign
 import typings.babelTypes.babelTypesStrings.QuestionmarkQuestionmark
+import typings.babelTypes.babelTypesStrings.RecordExpression
 import typings.babelTypes.babelTypesStrings.RegExpLiteral
 import typings.babelTypes.babelTypesStrings.SequenceExpression
 import typings.babelTypes.babelTypesStrings.Slash
@@ -62,6 +63,7 @@ import typings.babelTypes.babelTypesStrings.TaggedTemplateExpression
 import typings.babelTypes.babelTypesStrings.TemplateLiteral
 import typings.babelTypes.babelTypesStrings.ThisExpression
 import typings.babelTypes.babelTypesStrings.Tilde
+import typings.babelTypes.babelTypesStrings.TupleExpression
 import typings.babelTypes.babelTypesStrings.TypeCastExpression
 import typings.babelTypes.babelTypesStrings.UnaryExpression
 import typings.babelTypes.babelTypesStrings.UpdateExpression
@@ -121,6 +123,8 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.Import_
   - typings.babelTypes.mod.DoExpression_
   - typings.babelTypes.mod.BigIntLiteral_
+  - typings.babelTypes.mod.RecordExpression_
+  - typings.babelTypes.mod.TupleExpression_
   - typings.babelTypes.mod.TSAsExpression_
   - typings.babelTypes.mod.TSTypeAssertion_
   - typings.babelTypes.mod.TSNonNullExpression_
@@ -757,6 +761,27 @@ object Expression {
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
+  def RecordExpression_(
+    properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadElement_],
+    `type`: RecordExpression,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Expression = {
+    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Expression]
+  }
+  @scala.inline
   def AwaitExpression_(
     argument: Expression,
     `type`: AwaitExpression,
@@ -823,6 +848,27 @@ object Expression {
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments.asInstanceOf[js.Any])
     if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Expression]
+  }
+  @scala.inline
+  def TupleExpression_(
+    elements: js.Array[Null | Expression | SpreadElement_],
+    `type`: TupleExpression,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Expression = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline

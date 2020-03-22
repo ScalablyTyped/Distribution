@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "egjs__hammerjs"
-version := "2.0.17-fd4002"
+version := "2.0.17-991afa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20190322Z-7cfbeb",
+  "org.scalablytyped" %%% "hammerjs" % "2.0.8-dt-20200225Z-7cfbeb",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

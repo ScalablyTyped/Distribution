@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/installations" : "0.4.4"
+      "@firebase/installations" : "0.4.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/installations" : "0.4.4"
+      "@firebase/installations" : "0.4.6"
     }
   ],
   "compile-devDependencies" : [

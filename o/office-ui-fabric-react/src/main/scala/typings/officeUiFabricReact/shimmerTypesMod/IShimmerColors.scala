@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation._
 
 trait IShimmerColors extends js.Object {
   /**
-    * Defines the background color of the space in between and around shimmer elements (borders, gaps and rounded corners).
+    * Defines the background color of the space in between and around shimmer elements (borders, gaps and
+    * rounded corners).
     * @defaultvalue theme.palette.white
     */
   var background: js.UndefOr[String] = js.undefined

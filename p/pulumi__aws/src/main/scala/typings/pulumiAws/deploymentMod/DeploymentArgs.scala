@@ -16,7 +16,7 @@ trait DeploymentArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * The description of the stage
     */
@@ -34,7 +34,7 @@ trait DeploymentArgs extends js.Object {
 object DeploymentArgs {
   @scala.inline
   def apply(
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     description: Input[String] = null,
     stageDescription: Input[String] = null,
     stageName: Input[String] = null,

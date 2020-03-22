@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/theme-dark-extension" : "2.0.0"
+      "@jupyterlab/theme-dark-extension" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/theme-dark-extension" : "2.0.0"
+      "@jupyterlab/theme-dark-extension" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

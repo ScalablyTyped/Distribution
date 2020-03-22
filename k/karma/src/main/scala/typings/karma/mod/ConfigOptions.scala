@@ -29,6 +29,15 @@ trait ConfigOptions extends js.Object {
     */
   var basePath: js.UndefOr[String] = js.undefined
   /**
+    * This is the same as middleware except that these middleware will be run before karma's own middleware.
+    * @default []
+    */
+  var beforeMiddleware: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * Configure how the browser console is logged with the following properties, all of which are optional
+    */
+  var browserConsoleLogOptions: js.UndefOr[BrowserConsoleLogOptions] = js.undefined
+  /**
     * @default 2000
     * @description How long does Karma wait for a browser to reconnect (in ms).
     * <p>
@@ -60,6 +69,11 @@ trait ConfigOptions extends js.Object {
     */
   var browserNoActivityTimeout: js.UndefOr[Double] = js.undefined
   /**
+    * Timeout for the client socket connection (in ms)
+    * @default 20000
+    */
+  var browserSocketTimeout: js.UndefOr[Double] = js.undefined
+  /**
     * @default []
     * Possible Values:
     * <ul>
@@ -76,7 +90,7 @@ trait ConfigOptions extends js.Object {
     * You can capture any browser manually by opening the browser and visiting the URL where
     * the Karma web server is listening (by default it is <code>http://localhost:9876/</code>).
     */
-  var browsers: js.UndefOr[js.Array[String]] = js.undefined
+  var browsers: js.UndefOr[js.Array[AutomatedBrowsers | String]] = js.undefined
   /**
     * @default 60000
     * @description Timeout for capturing a browser (in ms).
@@ -101,17 +115,77 @@ trait ConfigOptions extends js.Object {
     * you can specify how many browsers should be running at once at any given point in time.
     */
   var concurrency: js.UndefOr[Double] = js.undefined
+  /**
+    * When true, this will append the crossorigin attribute to generated script tags,
+    * which enables better error reporting for JavaScript files served from a different origin
+    * @default true
+    */
+  var crossOriginAttribute: js.UndefOr[Boolean] = js.undefined
+  /**
+    * If null (default), uses karma's own client_with_context.html file (which is used when client.runInParent set to true).
+    * @default undefined
+    */
+  var customClientContextFile: js.UndefOr[String] = js.undefined
+  /**
+    * If null (default), uses karma's own context.html file.
+    * @default undefined
+    */
+  var customContextFile: js.UndefOr[String] = js.undefined
+  /**
+    * If null (default), uses karma's own debug.html file.
+    * @default undefined
+    */
+  var customDebugFile: js.UndefOr[String] = js.undefined
+  /**
+    * Custom HTTP headers that will be set upon serving files by Karma's web server.
+    * Custom headers are useful, especially with upcoming browser features like Service Workers.
+    * @default undefined
+    */
+  var customHeaders: js.UndefOr[js.Array[CustomHeaders]] = js.undefined
   var customLaunchers: js.UndefOr[StringDictionary[CustomLauncher]] = js.undefined
+  /**
+    * When true, this will start the karma server in another process, writing no output to the console.
+    * The server can be stopped using the karma stop command.
+    * @default false
+    */
+  var detached: js.UndefOr[Boolean] = js.undefined
   /**
     * @default []
     * @description List of files/patterns to exclude from loaded files.
     */
   var exclude: js.UndefOr[js.Array[String]] = js.undefined
   /**
+    * Enable or disable failure on running empty test-suites.
+    * If disabled the program will return exit-code 0 and display a warning.
+    * @default true
+    */
+  var failOnEmptyTestSuite: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Enable or disable failure on failing tests.
+    * @default true
+    */
+  var failOnFailingTestSuite: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Enable or disable failure on tests deliberately disabled, eg fit() or xit() tests in jasmine.
+    * Use this to prevent accidental disabling tests needed to validate production.
+    * @default true
+    */
+  var failOnSkippedTests: js.UndefOr[Boolean] = js.undefined
+  /**
     * @default []
     * @description List of files/patterns to load in the browser.
     */
   var files: js.UndefOr[js.Array[FilePattern | String]] = js.undefined
+  /**
+    * Force socket.io to use JSONP polling instead of XHR polling
+    * @default false
+    */
+  var forceJSONP: js.UndefOr[Boolean] = js.undefined
+  /**
+    * A new error message line
+    * @default undefined
+    */
+  var formatError: js.UndefOr[js.Function1[/* msg */ String, String]] = js.undefined
   /**
     * @default []
     * @description List of test frameworks you want to use. Typically, you will set this to ['jasmine'], ['mocha'] or ['qunit']...
@@ -124,12 +198,22 @@ trait ConfigOptions extends js.Object {
     */
   var hostname: js.UndefOr[String] = js.undefined
   /**
+    * Module used for Karma webserver
+    * @default undefined
+    */
+  var httpModule: js.UndefOr[String] = js.undefined
+  /**
     * @default {}
     * @description Options object to be used by Node's https class.
     * Object description can be found in the
     * [NodeJS.org API docs](https://nodejs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener)
     */
   var httpsServerOptions: js.UndefOr[ServerOptions] = js.undefined
+  /**
+    * Address that the server will listen on. Change to 'localhost' to only listen to the loopback, or '::' to listen on all IPv6 interfaces
+    * @default '0.0.0.0' or `LISTEN_ADDR`
+    */
+  var listenAddress: js.UndefOr[String] = js.undefined
   /**
     * @default config.LOG_INFO
     * Possible values:
@@ -167,13 +251,19 @@ trait ConfigOptions extends js.Object {
     */
   var mime: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   /**
+    * Socket.io pingTimeout in ms, https://socket.io/docs/server-api/#new-Server-httpServer-options.
+    * Very slow networks may need values up to 60000. Larger values delay discovery of deadlock in tests or browser crashes.
+    * @default 5000
+    */
+  var pingTimeout: js.UndefOr[Double] = js.undefined
+  /**
     * @default ['karma-*']
     * @description List of plugins to load. A plugin can be a string (in which case it will be required
     * by Karma) or an inlined plugin - Object.
     * By default, Karma loads all sibling NPM modules which have a name starting with karma-*.
     * Note: Just about all plugins in Karma require an additional library to be installed (via NPM).
     */
-  var plugins: js.UndefOr[js.Array[_]] = js.undefined
+  var plugins: js.UndefOr[js.Array[PluginName | InlinePluginDef]] = js.undefined
   /**
     * @default 9876
     * @description The port where the web server will be listening.
@@ -197,6 +287,11 @@ trait ConfigOptions extends js.Object {
     */
   var preprocessors: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
   /**
+    * How long will Karma wait for browser process to terminate before sending a SIGKILL signal
+    * @default 2000
+    */
+  var processKillTimeout: js.UndefOr[Double] = js.undefined
+  /**
     * @default 'http:'
     * Possible Values:
     * <ul>
@@ -210,9 +305,22 @@ trait ConfigOptions extends js.Object {
   var protocol: js.UndefOr[String] = js.undefined
   /**
     * @default {}
-    * @description A map of path-proxy pairs.
+    * @description A map of path-proxy pairs
+    * The proxy can be specified directly by the target url or path, or with an object to configure more options
     */
-  var proxies: js.UndefOr[StringDictionary[String]] = js.undefined
+  var proxies: js.UndefOr[PathProxyPairs] = js.undefined
+  /**
+    * Called when requesting Proxy
+    * @default undefined
+    */
+  var proxyReq: js.UndefOr[
+    js.Function4[/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object, Unit]
+  ] = js.undefined
+  /**
+    * Called when respnsing Proxy
+    * @default undefined
+    */
+  var proxyRes: js.UndefOr[js.Function3[/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any, Unit]] = js.undefined
   /**
     * @default true
     * @description Whether or not Karma or any browsers should raise an error when an inavlid SSL certificate is found.
@@ -243,6 +351,11 @@ trait ConfigOptions extends js.Object {
     */
   var restartOnFileChange: js.UndefOr[Boolean] = js.undefined
   /**
+    * When a browser crashes, karma will try to relaunch. This defines how many times karma should relaunch a browser before giving up.
+    * @default 2
+    */
+  var retryLimit: js.UndefOr[Double] = js.undefined
+  /**
     * @default false
     * @description Continuous Integration mode.
     * If true, Karma will start and capture all configured browsers, run tests and then exit with an exit code of 0 or 1 depending
@@ -256,6 +369,10 @@ trait ConfigOptions extends js.Object {
     * between browsers and the testing server).
     */
   var transports: js.UndefOr[js.Array[String]] = js.undefined
+  /**
+    * For use when the Karma server needs to be run behind a proxy that changes the base url, etc
+    */
+  var upstreamProxy: js.UndefOr[UpstreamProxy] = js.undefined
   /**
     * @default '/'
     * @description The base url, where Karma runs.
@@ -271,70 +388,114 @@ object ConfigOptions {
     autoWatch: js.UndefOr[Boolean] = js.undefined,
     autoWatchBatchDelay: Int | Double = null,
     basePath: String = null,
+    beforeMiddleware: js.Array[String] = null,
+    browserConsoleLogOptions: BrowserConsoleLogOptions = null,
     browserDisconnectTimeout: Int | Double = null,
     browserDisconnectTolerance: Int | Double = null,
     browserNoActivityTimeout: Int | Double = null,
-    browsers: js.Array[String] = null,
+    browserSocketTimeout: Int | Double = null,
+    browsers: js.Array[AutomatedBrowsers | String] = null,
     captureTimeout: Int | Double = null,
     client: ClientOptions = null,
     colors: js.UndefOr[Boolean] = js.undefined,
     concurrency: Int | Double = null,
+    crossOriginAttribute: js.UndefOr[Boolean] = js.undefined,
+    customClientContextFile: String = null,
+    customContextFile: String = null,
+    customDebugFile: String = null,
+    customHeaders: js.Array[CustomHeaders] = null,
     customLaunchers: StringDictionary[CustomLauncher] = null,
+    detached: js.UndefOr[Boolean] = js.undefined,
     exclude: js.Array[String] = null,
+    failOnEmptyTestSuite: js.UndefOr[Boolean] = js.undefined,
+    failOnFailingTestSuite: js.UndefOr[Boolean] = js.undefined,
+    failOnSkippedTests: js.UndefOr[Boolean] = js.undefined,
     files: js.Array[FilePattern | String] = null,
+    forceJSONP: js.UndefOr[Boolean] = js.undefined,
+    formatError: /* msg */ String => String = null,
     frameworks: js.Array[String] = null,
     hostname: String = null,
+    httpModule: String = null,
     httpsServerOptions: ServerOptions = null,
+    listenAddress: String = null,
     logLevel: String = null,
     loggers: StringDictionary[Appender] | js.Array[Appender] = null,
     middleware: js.Array[String] = null,
     mime: StringDictionary[js.Array[String]] = null,
-    plugins: js.Array[_] = null,
+    pingTimeout: Int | Double = null,
+    plugins: js.Array[PluginName | InlinePluginDef] = null,
     port: Int | Double = null,
     preprocessors: StringDictionary[String | js.Array[String]] = null,
+    processKillTimeout: Int | Double = null,
     protocol: String = null,
-    proxies: StringDictionary[String] = null,
+    proxies: PathProxyPairs = null,
+    proxyReq: (/* proxyReq */ js.Any, /* req */ js.Any, /* res */ js.Any, /* options */ js.Object) => Unit = null,
+    proxyRes: (/* proxyRes */ js.Any, /* req */ js.Any, /* res */ js.Any) => Unit = null,
     proxyValidateSSL: js.UndefOr[Boolean] = js.undefined,
     reportSlowerThan: Int | Double = null,
     reporters: js.Array[String] = null,
     restartOnFileChange: js.UndefOr[Boolean] = js.undefined,
+    retryLimit: Int | Double = null,
     singleRun: js.UndefOr[Boolean] = js.undefined,
     transports: js.Array[String] = null,
+    upstreamProxy: UpstreamProxy = null,
     urlRoot: String = null
   ): ConfigOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoWatch)) __obj.updateDynamic("autoWatch")(autoWatch.asInstanceOf[js.Any])
     if (autoWatchBatchDelay != null) __obj.updateDynamic("autoWatchBatchDelay")(autoWatchBatchDelay.asInstanceOf[js.Any])
     if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (beforeMiddleware != null) __obj.updateDynamic("beforeMiddleware")(beforeMiddleware.asInstanceOf[js.Any])
+    if (browserConsoleLogOptions != null) __obj.updateDynamic("browserConsoleLogOptions")(browserConsoleLogOptions.asInstanceOf[js.Any])
     if (browserDisconnectTimeout != null) __obj.updateDynamic("browserDisconnectTimeout")(browserDisconnectTimeout.asInstanceOf[js.Any])
     if (browserDisconnectTolerance != null) __obj.updateDynamic("browserDisconnectTolerance")(browserDisconnectTolerance.asInstanceOf[js.Any])
     if (browserNoActivityTimeout != null) __obj.updateDynamic("browserNoActivityTimeout")(browserNoActivityTimeout.asInstanceOf[js.Any])
+    if (browserSocketTimeout != null) __obj.updateDynamic("browserSocketTimeout")(browserSocketTimeout.asInstanceOf[js.Any])
     if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
     if (captureTimeout != null) __obj.updateDynamic("captureTimeout")(captureTimeout.asInstanceOf[js.Any])
     if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
     if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (!js.isUndefined(crossOriginAttribute)) __obj.updateDynamic("crossOriginAttribute")(crossOriginAttribute.asInstanceOf[js.Any])
+    if (customClientContextFile != null) __obj.updateDynamic("customClientContextFile")(customClientContextFile.asInstanceOf[js.Any])
+    if (customContextFile != null) __obj.updateDynamic("customContextFile")(customContextFile.asInstanceOf[js.Any])
+    if (customDebugFile != null) __obj.updateDynamic("customDebugFile")(customDebugFile.asInstanceOf[js.Any])
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
     if (customLaunchers != null) __obj.updateDynamic("customLaunchers")(customLaunchers.asInstanceOf[js.Any])
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached.asInstanceOf[js.Any])
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnEmptyTestSuite)) __obj.updateDynamic("failOnEmptyTestSuite")(failOnEmptyTestSuite.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnFailingTestSuite)) __obj.updateDynamic("failOnFailingTestSuite")(failOnFailingTestSuite.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnSkippedTests)) __obj.updateDynamic("failOnSkippedTests")(failOnSkippedTests.asInstanceOf[js.Any])
     if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceJSONP)) __obj.updateDynamic("forceJSONP")(forceJSONP.asInstanceOf[js.Any])
+    if (formatError != null) __obj.updateDynamic("formatError")(js.Any.fromFunction1(formatError))
     if (frameworks != null) __obj.updateDynamic("frameworks")(frameworks.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
+    if (httpModule != null) __obj.updateDynamic("httpModule")(httpModule.asInstanceOf[js.Any])
     if (httpsServerOptions != null) __obj.updateDynamic("httpsServerOptions")(httpsServerOptions.asInstanceOf[js.Any])
+    if (listenAddress != null) __obj.updateDynamic("listenAddress")(listenAddress.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
     if (loggers != null) __obj.updateDynamic("loggers")(loggers.asInstanceOf[js.Any])
     if (middleware != null) __obj.updateDynamic("middleware")(middleware.asInstanceOf[js.Any])
     if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
+    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (preprocessors != null) __obj.updateDynamic("preprocessors")(preprocessors.asInstanceOf[js.Any])
+    if (processKillTimeout != null) __obj.updateDynamic("processKillTimeout")(processKillTimeout.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (proxies != null) __obj.updateDynamic("proxies")(proxies.asInstanceOf[js.Any])
+    if (proxyReq != null) __obj.updateDynamic("proxyReq")(js.Any.fromFunction4(proxyReq))
+    if (proxyRes != null) __obj.updateDynamic("proxyRes")(js.Any.fromFunction3(proxyRes))
     if (!js.isUndefined(proxyValidateSSL)) __obj.updateDynamic("proxyValidateSSL")(proxyValidateSSL.asInstanceOf[js.Any])
     if (reportSlowerThan != null) __obj.updateDynamic("reportSlowerThan")(reportSlowerThan.asInstanceOf[js.Any])
     if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
     if (!js.isUndefined(restartOnFileChange)) __obj.updateDynamic("restartOnFileChange")(restartOnFileChange.asInstanceOf[js.Any])
+    if (retryLimit != null) __obj.updateDynamic("retryLimit")(retryLimit.asInstanceOf[js.Any])
     if (!js.isUndefined(singleRun)) __obj.updateDynamic("singleRun")(singleRun.asInstanceOf[js.Any])
     if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
+    if (upstreamProxy != null) __obj.updateDynamic("upstreamProxy")(upstreamProxy.asInstanceOf[js.Any])
     if (urlRoot != null) __obj.updateDynamic("urlRoot")(urlRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }

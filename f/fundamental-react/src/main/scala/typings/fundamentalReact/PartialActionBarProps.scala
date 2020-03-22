@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -70,7 +69,6 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -90,9 +88,12 @@ import scala.scalajs.js.annotation._
 trait PartialActionBarProps extends js.Object {
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
+  var actionClassName: js.UndefOr[String] = js.undefined
+  var actionProps: js.UndefOr[js.Any] = js.undefined
+  var actions: js.UndefOr[ReactNode] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
@@ -141,19 +142,22 @@ trait PartialActionBarProps extends js.Object {
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var buttonContainerClassName: js.UndefOr[String] = js.undefined
+  var buttonProps: js.UndefOr[js.Any] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
+  var description: js.UndefOr[String] = js.undefined
+  var descriptionProps: js.UndefOr[js.Any] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var disableStyles: js.UndefOr[Boolean] = js.undefined
   var draggable: js.UndefOr[Booleanish] = js.undefined
+  var headingLevel: js.UndefOr[js.Any] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
@@ -170,6 +174,7 @@ trait PartialActionBarProps extends js.Object {
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onBackClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -248,7 +253,6 @@ trait PartialActionBarProps extends js.Object {
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
   var radioGroup: js.UndefOr[String] = js.undefined
-  var ref: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
@@ -260,6 +264,7 @@ trait PartialActionBarProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var titleProps: js.UndefOr[js.Any] = js.undefined
   var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -271,9 +276,12 @@ object PartialActionBarProps {
   def apply(
     about: String = null,
     accessKey: String = null,
+    actionClassName: String = null,
+    actionProps: js.Any = null,
+    actions: ReactNode = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -322,19 +330,22 @@ object PartialActionBarProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
-    children: ReactNode = null,
+    buttonContainerClassName: String = null,
+    buttonProps: js.Any = null,
     className: String = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
+    description: String = null,
+    descriptionProps: js.Any = null,
     dir: String = null,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    headingLevel: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -351,6 +362,7 @@ object PartialActionBarProps {
     onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLDivElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    onBackClick: /* repeated */ js.Any => _ = null,
     onBeforeInput: FormEvent[HTMLDivElement] => Unit = null,
     onBlur: FocusEvent[HTMLDivElement] => Unit = null,
     onCanPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
@@ -429,7 +441,6 @@ object PartialActionBarProps {
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
-    ref: Ref[HTMLDivElement] = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
@@ -441,6 +452,7 @@ object PartialActionBarProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    titleProps: js.Any = null,
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -449,6 +461,9 @@ object PartialActionBarProps {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (actionClassName != null) __obj.updateDynamic("actionClassName")(actionClassName.asInstanceOf[js.Any])
+    if (actionProps != null) __obj.updateDynamic("actionProps")(actionProps.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
@@ -500,19 +515,22 @@ object PartialActionBarProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (buttonContainerClassName != null) __obj.updateDynamic("buttonContainerClassName")(buttonContainerClassName.asInstanceOf[js.Any])
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (descriptionProps != null) __obj.updateDynamic("descriptionProps")(descriptionProps.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -529,6 +547,7 @@ object PartialActionBarProps {
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
     if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
+    if (onBackClick != null) __obj.updateDynamic("onBackClick")(js.Any.fromFunction1(onBackClick))
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
@@ -607,7 +626,6 @@ object PartialActionBarProps {
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
@@ -619,6 +637,7 @@ object PartialActionBarProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

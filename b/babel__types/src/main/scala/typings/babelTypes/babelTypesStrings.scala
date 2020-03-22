@@ -502,6 +502,9 @@ object babelTypesStrings {
   sealed trait QuestionmarkQuestionmark extends js.Object
   
   @js.native
+  sealed trait RecordExpression extends js.Object
+  
+  @js.native
   sealed trait RegExpLiteral extends js.Object
   
   @js.native
@@ -539,6 +542,9 @@ object babelTypesStrings {
   
   @js.native
   sealed trait SwitchStatement extends js.Object
+  
+  @js.native
+  sealed trait SymbolTypeAnnotation extends js.Object
   
   @js.native
   sealed trait TSAnyKeyword extends js.Object
@@ -746,6 +752,9 @@ object babelTypesStrings {
   
   @js.native
   sealed trait TryStatement extends js.Object
+  
+  @js.native
+  sealed trait TupleExpression extends js.Object
   
   @js.native
   sealed trait TupleTypeAnnotation extends js.Object
@@ -1243,6 +1252,8 @@ object babelTypesStrings {
   @scala.inline
   def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
   @scala.inline
+  def RecordExpression: RecordExpression = "RecordExpression".asInstanceOf[RecordExpression]
+  @scala.inline
   def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
   @scala.inline
   def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
@@ -1268,6 +1279,8 @@ object babelTypesStrings {
   def SwitchCase: SwitchCase = "SwitchCase".asInstanceOf[SwitchCase]
   @scala.inline
   def SwitchStatement: SwitchStatement = "SwitchStatement".asInstanceOf[SwitchStatement]
+  @scala.inline
+  def SymbolTypeAnnotation: SymbolTypeAnnotation = "SymbolTypeAnnotation".asInstanceOf[SymbolTypeAnnotation]
   @scala.inline
   def TSAnyKeyword: TSAnyKeyword = "TSAnyKeyword".asInstanceOf[TSAnyKeyword]
   @scala.inline
@@ -1406,6 +1419,8 @@ object babelTypesStrings {
   def Tilde: Tilde = "~".asInstanceOf[Tilde]
   @scala.inline
   def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
+  @scala.inline
+  def TupleExpression: TupleExpression = "TupleExpression".asInstanceOf[TupleExpression]
   @scala.inline
   def TupleTypeAnnotation: TupleTypeAnnotation = "TupleTypeAnnotation".asInstanceOf[TupleTypeAnnotation]
   @scala.inline

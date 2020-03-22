@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__analytics-types
 
-Typings are for version 0.2.7
+Typings are for version 0.2.8
 
 ## Library description:
 @firebase/analytics Types

@@ -1,7 +1,7 @@
 
 # Scala.js typings for postman-collection
 
-Typings are for version 3.0
+Typings are for version 3.5
 
 ## Library description:
 Enables developers to use a unified Postman Collection format Object across projects

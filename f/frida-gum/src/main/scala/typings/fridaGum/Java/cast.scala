@@ -15,7 +15,7 @@ object cast extends js.Object {
     * @param handle An existing wrapper or a JNI handle.
     * @param klass Class wrapper for type to cast to.
     */
-  def apply(handle: Wrapper, klass: Wrapper): Wrapper = js.native
-  def apply(handle: NativePointerValue, klass: Wrapper): Wrapper = js.native
+  def apply[From /* <: Members[From] */, To /* <: Members[To] */](handle: Wrapper[From], klass: Wrapper[To]): Wrapper[To] = js.native
+  def apply[From /* <: Members[From] */, To /* <: Members[To] */](handle: NativePointerValue, klass: Wrapper[To]): Wrapper[To] = js.native
 }
 

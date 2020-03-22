@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object cyclomaticComplexityRuleMod extends js.Object {
   @js.native
   class Rule () extends AbstractRule {
-    val threshold: js.Any = js.native
+    /* private */ def threshold(): js.Any = js.native
   }
   
   /* static members */

@@ -1,6 +1,7 @@
 
 # Scala.js typings for browser-resolve
 
+Typings are for version 1.11
 
 ## Library description:
 resolve which handles browser field support in package.json

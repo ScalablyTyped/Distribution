@@ -28,7 +28,7 @@ trait IconProps extends js.Object {
     blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
   ] = js.undefined
   var dangerouslySetSvgPath: js.UndefOr[AnonPath] = js.undefined
-  var icon: Icons
+  var icon: js.UndefOr[Icons] = js.undefined
   var `inline`: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[Double | String] = js.undefined
 }
@@ -37,15 +37,16 @@ object IconProps {
   @scala.inline
   def apply(
     accessibilityLabel: String,
-    icon: Icons,
     color: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white = null,
     dangerouslySetSvgPath: AnonPath = null,
+    icon: Icons = null,
     `inline`: js.UndefOr[Boolean] = js.undefined,
     size: Double | String = null
   ): IconProps = {
-    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (dangerouslySetSvgPath != null) __obj.updateDynamic("dangerouslySetSvgPath")(dangerouslySetSvgPath.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]

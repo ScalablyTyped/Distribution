@@ -1,6 +1,6 @@
 package typings.materialUiCore.tableFooterTableFooterMod
 
-import typings.materialUiCore.PartialClassNameMapTableFooterClassKey
+import typings.materialUiCore.PartialClassNameMapTableF
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -146,7 +146,7 @@ trait TableFooterProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTableFooterClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTableF] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[TableFooterBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -327,7 +327,7 @@ object TableFooterProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTableFooterClassKey = null,
+    classes: PartialClassNameMapTableF = null,
     color: String = null,
     component: ReactType[TableFooterBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

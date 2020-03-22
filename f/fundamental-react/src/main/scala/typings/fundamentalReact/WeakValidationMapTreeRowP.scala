@@ -19,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -75,7 +75,7 @@ trait WeakValidationMapTreeRowP extends js.Object {
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -144,6 +144,8 @@ trait WeakValidationMapTreeRowP extends js.Object {
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
   ] = js.undefined
   var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var isExpanded: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var isParent: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -181,6 +183,7 @@ trait WeakValidationMapTreeRowP extends js.Object {
   var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
+  var onExpandClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]] = js.undefined
   var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
@@ -236,6 +239,7 @@ trait WeakValidationMapTreeRowP extends js.Object {
   var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var rowId: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var slot: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var spellCheck: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
@@ -257,7 +261,7 @@ object WeakValidationMapTreeRowP {
     accessKey: Validator[js.UndefOr[Null | String]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
@@ -322,6 +326,8 @@ object WeakValidationMapTreeRowP {
     inlist: Validator[js.UndefOr[_ | Null]] = null,
     inputMode: Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]] = null,
     is: Validator[js.UndefOr[Null | String]] = null,
+    isExpanded: Validator[js.UndefOr[Boolean | Null]] = null,
+    isParent: Validator[js.UndefOr[Boolean | Null]] = null,
     itemID: Validator[js.UndefOr[Null | String]] = null,
     itemProp: Validator[js.UndefOr[Null | String]] = null,
     itemRef: Validator[js.UndefOr[Null | String]] = null,
@@ -359,6 +365,7 @@ object WeakValidationMapTreeRowP {
     onEncrypted: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
     onEnded: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
     onError: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
+    onExpandClick: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]] = null,
     onFocus: Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]] = null,
     onInput: Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]] = null,
     onInvalid: Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]] = null,
@@ -414,6 +421,7 @@ object WeakValidationMapTreeRowP {
     resource: Validator[js.UndefOr[Null | String]] = null,
     results: Validator[js.UndefOr[Double | Null]] = null,
     role: Validator[js.UndefOr[Null | String]] = null,
+    rowId: Validator[js.UndefOr[Null | String]] = null,
     security: Validator[js.UndefOr[Null | String]] = null,
     slot: Validator[js.UndefOr[Null | String]] = null,
     spellCheck: Validator[js.UndefOr[Booleanish | Null]] = null,
@@ -497,6 +505,8 @@ object WeakValidationMapTreeRowP {
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (isExpanded != null) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (isParent != null) __obj.updateDynamic("isParent")(isParent.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
@@ -534,6 +544,7 @@ object WeakValidationMapTreeRowP {
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted.asInstanceOf[js.Any])
     if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
+    if (onExpandClick != null) __obj.updateDynamic("onExpandClick")(onExpandClick.asInstanceOf[js.Any])
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
     if (onInput != null) __obj.updateDynamic("onInput")(onInput.asInstanceOf[js.Any])
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid.asInstanceOf[js.Any])
@@ -589,6 +600,7 @@ object WeakValidationMapTreeRowP {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (spellCheck != null) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])

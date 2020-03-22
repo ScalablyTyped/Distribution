@@ -1,7 +1,7 @@
 
 # Scala.js typings for printf
 
-Typings are for version 0.5.2
+Typings are for version 0.5.3
 
 ## Library description:
 Full implementation of the `printf` family in pure JS.

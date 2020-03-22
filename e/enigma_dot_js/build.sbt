@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "enigma_dot_js"
-version := "2.2-dt-20180214Z-a2059a"
+version := "2.2-dt-20200225Z-a2059a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

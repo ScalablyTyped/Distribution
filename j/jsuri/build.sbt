@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsuri"
-version := "1.3-dt-20190322Z-10ea94"
+version := "1.3-dt-20200226Z-10ea94"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

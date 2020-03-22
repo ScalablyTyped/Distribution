@@ -9,6 +9,9 @@ object cryptoRandomStringStrings {
   sealed trait base64 extends js.Object
   
   @js.native
+  sealed trait distinguishable extends js.Object
+  
+  @js.native
   sealed trait hex extends js.Object
   
   @js.native
@@ -19,6 +22,8 @@ object cryptoRandomStringStrings {
   
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
+  def distinguishable: distinguishable = "distinguishable".asInstanceOf[distinguishable]
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline

@@ -36,6 +36,12 @@ trait IRendererOptions extends js.Object {
     */
   var width: js.UndefOr[Double] = js.undefined
   /**
+    * Sets wireframe background if `render.options.wireframes` is enabled
+    * @type string
+    * default undefined
+    */
+  var wireframeBackground: js.UndefOr[String] = js.undefined
+  /**
     * Render wireframes only
     * @type boolean
     * @default true
@@ -50,6 +56,7 @@ object IRendererOptions {
     hasBounds: js.UndefOr[Boolean] = js.undefined,
     height: Int | Double = null,
     width: Int | Double = null,
+    wireframeBackground: String = null,
     wireframes: js.UndefOr[Boolean] = js.undefined
   ): IRendererOptions = {
     val __obj = js.Dynamic.literal()
@@ -57,6 +64,7 @@ object IRendererOptions {
     if (!js.isUndefined(hasBounds)) __obj.updateDynamic("hasBounds")(hasBounds.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wireframeBackground != null) __obj.updateDynamic("wireframeBackground")(wireframeBackground.asInstanceOf[js.Any])
     if (!js.isUndefined(wireframes)) __obj.updateDynamic("wireframes")(wireframes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRendererOptions]
   }

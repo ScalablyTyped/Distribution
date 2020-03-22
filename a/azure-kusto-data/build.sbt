@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure-kusto-data"
-version := "0.2-dt-20191023Z-2638fc"
+version := "0.2-dt-20200225Z-2638fc"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

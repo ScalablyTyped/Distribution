@@ -37,14 +37,12 @@ class SlicerStyle () extends ClientObject {
     */
   val readOnly: Boolean = js.native
   /**
-    *
     * Deletes the SlicerStyle.
     *
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Creates a duplicate of this SlicerStyle with copies of all the style elements.
     *
     * [Api set: ExcelApi 1.10]

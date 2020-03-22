@@ -1,6 +1,6 @@
 package typings.materialUiCore.bottomNavigationActionBottomNavigationActionMod
 
-import typings.materialUiCore.PartialClassNameMapBottomNavigationActionClassKey
+import typings.materialUiCore.PartialClassNameMapBottomIconOnly
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -157,7 +157,7 @@ trait BottomNavigationActionProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapBottomNavigationActionClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapBottomIconOnly] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -370,7 +370,7 @@ object BottomNavigationActionProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapBottomNavigationActionClassKey = null,
+    classes: PartialClassNameMapBottomIconOnly = null,
     color: String = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

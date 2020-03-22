@@ -60,6 +60,7 @@ object NavigationEventsProps {
     nativeID: String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onDidBlur: /* payload */ NavigationEventPayload => Unit = null,
     onDidFocus: /* payload */ NavigationEventPayload => Unit = null,
@@ -118,6 +119,7 @@ object NavigationEventsProps {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onDidBlur != null) __obj.updateDynamic("onDidBlur")(js.Any.fromFunction1(onDidBlur))
     if (onDidFocus != null) __obj.updateDynamic("onDidFocus")(js.Any.fromFunction1(onDidFocus))

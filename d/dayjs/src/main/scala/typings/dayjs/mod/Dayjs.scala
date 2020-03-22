@@ -2,6 +2,7 @@ package typings.dayjs.mod
 
 import typings.dayjs.ILocale
 import typings.dayjs.PartialILocale
+import typings.dayjs.isoWeekMod.ISOUnitType
 import typings.dayjs.toObjectMod.DayjsObject
 import typings.std.Date
 import scala.scalajs.js
@@ -29,6 +30,7 @@ class Dayjs () extends js.Object {
   def diff(date: ConfigType, unit: OpUnitType, float: Boolean): Double = js.native
   def diff(date: ConfigType, unit: QUnitType): Double = js.native
   def diff(date: ConfigType, unit: QUnitType, float: Boolean): Double = js.native
+  def endOf(unit: ISOUnitType): typings.dayjs.isoWeekMod.dayjsAugmentingMod.Dayjs = js.native
   def endOf(unit: OpUnitType): Dayjs = js.native
   def endOf(unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsAugmentingMod.Dayjs = js.native
   def format(): String = js.native
@@ -41,9 +43,11 @@ class Dayjs () extends js.Object {
   def hour(): Double = js.native
   def hour(value: Double): Dayjs = js.native
   def isAfter(date: ConfigType): Boolean = js.native
+  def isAfter(date: ConfigType, unit: ISOUnitType): Boolean = js.native
   def isAfter(date: ConfigType, unit: OpUnitType): Boolean = js.native
   def isAfter(date: ConfigType, unit: QUnitType): Boolean = js.native
   def isBefore(date: ConfigType): Boolean = js.native
+  def isBefore(date: ConfigType, unit: ISOUnitType): Boolean = js.native
   def isBefore(date: ConfigType, unit: OpUnitType): Boolean = js.native
   def isBefore(date: ConfigType, unit: QUnitType): Boolean = js.native
   def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
@@ -52,6 +56,7 @@ class Dayjs () extends js.Object {
   def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String): Boolean = js.native
   def isLeapYear(): Boolean = js.native
   def isSame(date: ConfigType): Boolean = js.native
+  def isSame(date: ConfigType, unit: ISOUnitType): Boolean = js.native
   def isSame(date: ConfigType, unit: OpUnitType): Boolean = js.native
   def isSame(date: ConfigType, unit: QUnitType): Boolean = js.native
   def isSameOrAfter(date: ConfigType): Boolean = js.native
@@ -60,6 +65,11 @@ class Dayjs () extends js.Object {
   def isSameOrBefore(date: ConfigType, unit: OpUnitType): Boolean = js.native
   def isUTC(): Boolean = js.native
   def isValid(): Boolean = js.native
+  def isoWeek(): Double = js.native
+  def isoWeek(value: Double): typings.dayjs.isoWeekMod.dayjsAugmentingMod.Dayjs = js.native
+  def isoWeekYear(): Double = js.native
+  def isoWeekday(): Double = js.native
+  def isoWeekday(value: Double): typings.dayjs.isoWeekMod.dayjsAugmentingMod.Dayjs = js.native
   def isoWeeksInYear(): Double = js.native
   def local(): typings.dayjs.utcMod.dayjsAugmentingMod.Dayjs = js.native
   def locale(): String = js.native
@@ -79,6 +89,7 @@ class Dayjs () extends js.Object {
   def second(): Double = js.native
   def second(value: Double): Dayjs = js.native
   def set(unit: UnitType, value: Double): Dayjs = js.native
+  def startOf(unit: ISOUnitType): typings.dayjs.isoWeekMod.dayjsAugmentingMod.Dayjs = js.native
   def startOf(unit: OpUnitType): Dayjs = js.native
   def startOf(unit: QUnitType): typings.dayjs.quarterOfYearMod.dayjsAugmentingMod.Dayjs = js.native
   def subtract(value: Double, unit: OpUnitType): Dayjs = js.native

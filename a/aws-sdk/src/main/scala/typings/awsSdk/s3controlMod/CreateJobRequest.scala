@@ -42,6 +42,10 @@ trait CreateJobRequest extends js.Object {
     * The Amazon Resource Name (ARN) for the Identity and Access Management (IAM) Role that batch operations will use to execute this job's operation on each object in the manifest.
     */
   var RoleArn: IAMRoleArn = js.native
+  /**
+    * An optional set of tags to associate with the job when it is created.
+    */
+  var Tags: js.UndefOr[S3TagSet] = js.native
 }
 
 object CreateJobRequest {
@@ -55,11 +59,13 @@ object CreateJobRequest {
     Report: JobReport,
     RoleArn: IAMRoleArn,
     ConfirmationRequired: js.UndefOr[scala.Boolean] = js.undefined,
-    Description: NonEmptyMaxLength256String = null
+    Description: NonEmptyMaxLength256String = null,
+    Tags: S3TagSet = null
   ): CreateJobRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], Manifest = Manifest.asInstanceOf[js.Any], Operation = Operation.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], Report = Report.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     if (!js.isUndefined(ConfirmationRequired)) __obj.updateDynamic("ConfirmationRequired")(ConfirmationRequired.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
 }

@@ -40,7 +40,7 @@ object Options {
     finishCondition: Condition = null,
     freehand: js.UndefOr[Boolean] = js.undefined,
     freehandCondition: Condition = null,
-    geometryFunction: (/* p0 */ SketchCoordType, /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default]) => typings.ol.simpleGeometryMod.default = null,
+    geometryFunction: (/* p0 */ SketchCoordType, /* p1 */ js.UndefOr[typings.ol.simpleGeometryMod.default], /* p2 */ typings.ol.projectionMod.default) => typings.ol.simpleGeometryMod.default = null,
     geometryName: String = null,
     maxPoints: Int | Double = null,
     minPoints: Int | Double = null,
@@ -59,7 +59,7 @@ object Options {
     if (finishCondition != null) __obj.updateDynamic("finishCondition")(finishCondition.asInstanceOf[js.Any])
     if (!js.isUndefined(freehand)) __obj.updateDynamic("freehand")(freehand.asInstanceOf[js.Any])
     if (freehandCondition != null) __obj.updateDynamic("freehandCondition")(freehandCondition.asInstanceOf[js.Any])
-    if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction2(geometryFunction))
+    if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction3(geometryFunction))
     if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
     if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
     if (minPoints != null) __obj.updateDynamic("minPoints")(minPoints.asInstanceOf[js.Any])

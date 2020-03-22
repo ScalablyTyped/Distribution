@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 sealed trait EventType extends js.Object
 
 /**
-  * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
+  * Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
   * 
   * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
   * `Office.EventType.ViewSelectionChanged` event types.

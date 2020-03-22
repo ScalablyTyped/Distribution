@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "teechart"
-version := "1.3-dt-20190322Z-0fcc29"
+version := "1.3-dt-20200227Z-0fcc29"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

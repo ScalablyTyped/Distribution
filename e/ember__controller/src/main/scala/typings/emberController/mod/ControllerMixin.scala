@@ -8,12 +8,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ControllerMixin extends ActionHandler {
-  var model: js.Any
-  var queryParams: String | (js.Array[String | StringDictionary[AnonAs]])
-  var target: js.Object
-  def replaceRoute(name: String, args: js.Any*): Unit
-  def transitionToRoute(name: String, args: js.Any*): Unit
+  var model: js.Any = js.native
+  var queryParams: String | (js.Array[String | StringDictionary[AnonAs]]) = js.native
+  var target: js.Object = js.native
+  def replaceRoute(name: String, args: js.Any*): Unit = js.native
+  def transitionToRoute(args: js.Any*): Unit = js.native
+  def transitionToRoute(name: String, args: js.Any*): Unit = js.native
 }
 
 @JSImport("@ember/controller", "ControllerMixin")

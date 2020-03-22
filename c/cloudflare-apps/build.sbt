@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cloudflare-apps"
-version := "0.1-dt-20190213Z-09236f"
+version := "0.1-dt-20200312Z-09236f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

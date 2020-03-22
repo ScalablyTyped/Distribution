@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-cache-dir
 
-Typings are for version 2.0
+Typings are for version 3.2
 
 ## Library description:
 Finds the common standard cache directory

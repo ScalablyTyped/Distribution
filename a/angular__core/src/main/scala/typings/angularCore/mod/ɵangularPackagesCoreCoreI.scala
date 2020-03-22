@@ -16,7 +16,7 @@ object ɵangularPackagesCoreCoreI extends js.Object {
       ElementRef[js.Any]
     ],
     hostTNode: TNode,
-    hostView: ɵangularPackagesCoreCoreBo
+    hostView: ɵangularPackagesCoreCoreBp
   ): TemplateRef[T] | Null = js.native
 }
 

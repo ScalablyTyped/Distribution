@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gsap"
-version := "1.20.6-dt-20190322Z-3f3da0"
+version := "1.20.6-dt-20200225Z-3f3da0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

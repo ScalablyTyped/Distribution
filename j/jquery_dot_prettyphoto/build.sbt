@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_prettyphoto"
-version := "3.1.5-dt-20190322Z-1213aa"
+version := "3.1.5-dt-20200226Z-1213aa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

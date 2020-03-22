@@ -13,6 +13,7 @@ trait GroupEncodeEntry extends RectEncodeEntry {
 object GroupEncodeEntry {
   @scala.inline
   def apply(
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     clip: ProductionRule[BooleanValueRef] = null,
     cornerRadius: ProductionRule[NumericValueRef] = null,
     cornerRadiusBottomLeft: ProductionRule[NumericValueRef] = null,
@@ -45,6 +46,7 @@ object GroupEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): GroupEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])

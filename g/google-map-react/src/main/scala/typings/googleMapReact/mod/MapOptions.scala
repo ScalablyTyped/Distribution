@@ -20,7 +20,6 @@ trait MapOptions extends js.Object {
   var fullscreenControlOptions: js.UndefOr[AnonPosition] = js.undefined
   var gestureHandling: js.UndefOr[String] = js.undefined
   var heading: js.UndefOr[Double] = js.undefined
-  var heatmapLibrary: js.UndefOr[Boolean] = js.undefined
   var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   var mapTypeControl: js.UndefOr[Boolean] = js.undefined
   var mapTypeControlOptions: js.UndefOr[js.Any] = js.undefined
@@ -61,7 +60,6 @@ object MapOptions {
     fullscreenControlOptions: AnonPosition = null,
     gestureHandling: String = null,
     heading: Int | Double = null,
-    heatmapLibrary: js.UndefOr[Boolean] = js.undefined,
     keyboardShortcuts: js.UndefOr[Boolean] = js.undefined,
     mapTypeControl: js.UndefOr[Boolean] = js.undefined,
     mapTypeControlOptions: js.Any = null,
@@ -99,7 +97,6 @@ object MapOptions {
     if (fullscreenControlOptions != null) __obj.updateDynamic("fullscreenControlOptions")(fullscreenControlOptions.asInstanceOf[js.Any])
     if (gestureHandling != null) __obj.updateDynamic("gestureHandling")(gestureHandling.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (!js.isUndefined(heatmapLibrary)) __obj.updateDynamic("heatmapLibrary")(heatmapLibrary.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardShortcuts)) __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts.asInstanceOf[js.Any])
     if (!js.isUndefined(mapTypeControl)) __obj.updateDynamic("mapTypeControl")(mapTypeControl.asInstanceOf[js.Any])
     if (mapTypeControlOptions != null) __obj.updateDynamic("mapTypeControlOptions")(mapTypeControlOptions.asInstanceOf[js.Any])

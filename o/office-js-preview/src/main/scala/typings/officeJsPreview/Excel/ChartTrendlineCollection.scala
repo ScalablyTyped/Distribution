@@ -31,7 +31,6 @@ class ChartTrendlineCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ChartTrendline] = js.native
   /**
-    *
     * Adds a new trendline to trendline collection.
     *
     * [Api set: ExcelApi 1.7]
@@ -53,14 +52,12 @@ class ChartTrendlineCollection () extends ClientObject {
   @JSName("add")
   def add_Power(`type`: Power): ChartTrendline = js.native
   /**
-    *
     * Returns the number of trendlines in the collection.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Get trendline object by index, which is the insertion order in items array.
     *
     * [Api set: ExcelApi 1.7]

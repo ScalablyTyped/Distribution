@@ -96,7 +96,8 @@ trait IPopupProps extends HTMLAttributes[Popup] {
     ]
   ] = js.undefined
   /**
-    * If true, the unmounting of this component will cause focus to be restored to the element that had focus when first mounted.
+    * If true, when this component is unmounted, focus will be restored to the element that had focus when the component
+    * first mounted.
     * @defaultvalue true
     */
   var shouldRestoreFocus: js.UndefOr[Boolean] = js.undefined

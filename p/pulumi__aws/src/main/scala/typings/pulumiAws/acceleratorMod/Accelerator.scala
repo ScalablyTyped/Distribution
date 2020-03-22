@@ -29,9 +29,17 @@ class Accelerator protected () extends CustomResource {
     */
   val attributes: Output_[js.UndefOr[AcceleratorAttributes]] = js.native
   /**
+    * The DNS name of the accelerator. For example, `a5d53ff5ee6bca4ce.awsglobalaccelerator.com`.
+    * * `hostedZoneId` --  The Global Accelerator Route 53 zone ID that can be used to
+    * route an [Alias Resource Record Set][1] to the Global Accelerator. This attribute
+    * is simply an alias for the zone ID `Z2BJ6XQ5FK7U4H`.
+    */
+  val dnsName: Output_[String] = js.native
+  /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
     */
   val enabled: Output_[js.UndefOr[Boolean]] = js.native
+  val hostedZoneId: Output_[String] = js.native
   /**
     * The value for the address type must be `IPV4`.
     */

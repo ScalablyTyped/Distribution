@@ -13,7 +13,7 @@ trait DescribeFleetInstancesResult extends js.Object {
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[FleetIdentifier] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
   /**
     * The token for the next set of results.
     */
@@ -22,11 +22,7 @@ trait DescribeFleetInstancesResult extends js.Object {
 
 object DescribeFleetInstancesResult {
   @scala.inline
-  def apply(
-    ActiveInstances: ActiveInstanceSet = null,
-    FleetId: FleetIdentifier = null,
-    NextToken: String = null
-  ): DescribeFleetInstancesResult = {
+  def apply(ActiveInstances: ActiveInstanceSet = null, FleetId: FleetId = null, NextToken: String = null): DescribeFleetInstancesResult = {
     val __obj = js.Dynamic.literal()
     if (ActiveInstances != null) __obj.updateDynamic("ActiveInstances")(ActiveInstances.asInstanceOf[js.Any])
     if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])

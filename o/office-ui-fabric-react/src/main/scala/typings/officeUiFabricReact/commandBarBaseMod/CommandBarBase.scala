@@ -2,16 +2,17 @@ package typings.officeUiFabricReact.commandBarBaseMod
 
 import typings.officeUiFabricReact.commandBarTypesMod.ICommandBar
 import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/CommandBar/CommandBar.base", "CommandBarBase")
 @js.native
-class CommandBarBase ()
-  extends BaseComponent[ICommandBarProps, js.Object]
+class CommandBarBase protected ()
+  extends Component[ICommandBarProps, js.Object, js.Any]
      with ICommandBar {
+  def this(props: ICommandBarProps) = this()
   var _classNames: js.Any = js.native
   var _commandButton: js.Any = js.native
   var _computeCacheKey: js.Any = js.native

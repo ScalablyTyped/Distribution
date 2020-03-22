@@ -11,7 +11,7 @@ trait ReimportApiRequest extends js.Object {
     */
   var ApiId: string = js.native
   /**
-    * Represents the base path of the imported API. Supported only for HTTP APIs.
+    * Specifies how to interpret the base path of the API during import. Valid values are ignore, prepend, and split. The default value is ignore. To learn more, see Set the OpenAPI basePath Property. Supported only for HTTP APIs.
     */
   var Basepath: js.UndefOr[string] = js.native
   /**

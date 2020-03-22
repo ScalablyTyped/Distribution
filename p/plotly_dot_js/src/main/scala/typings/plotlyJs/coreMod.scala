@@ -116,6 +116,7 @@ import typings.d3Scale.mod.ScalePower
 import typings.d3Scale.mod.ScaleQuantile_
 import typings.d3Scale.mod.ScaleQuantize_
 import typings.d3Scale.mod.ScaleSequential_
+import typings.d3Scale.mod.ScaleSymLog_
 import typings.d3Scale.mod.ScaleThreshold_
 import typings.d3Scale.mod.ScaleTime_
 import typings.d3Selection.mod.BaseEvent
@@ -2553,6 +2554,11 @@ object coreMod extends js.Object {
     def scaleSqrt_Output[Output](): ScalePower[Output, Output] = js.native
     @JSName("scaleSqrt")
     def scaleSqrt_RangeOutput[Range, Output](): ScalePower[Range, Output] = js.native
+    def scaleSymlog(): ScaleSymLog_[Double, Double] = js.native
+    @JSName("scaleSymlog")
+    def scaleSymlog_Output[Output](): ScaleSymLog_[Output, Output] = js.native
+    @JSName("scaleSymlog")
+    def scaleSymlog_RangeOutput[Range, Output](): ScaleSymLog_[Range, Output] = js.native
     def scaleThreshold(): ScaleThreshold_[Double, Double] = js.native
     @JSName("scaleThreshold")
     def scaleThreshold_Domain_UnionDoubleStringDateRange[Domain /* <: Double | String | Date */, Range](): ScaleThreshold_[Domain, Range] = js.native

@@ -146,6 +146,9 @@ object grommetStrings {
   sealed trait article extends _PolymorphicType
   
   @js.native
+  sealed trait asc extends js.Object
+  
+  @js.native
   sealed trait aside extends _PolymorphicType
   
   @js.native
@@ -1159,6 +1162,8 @@ object grommetStrings {
   def arrows: arrows = "arrows".asInstanceOf[arrows]
   @scala.inline
   def article: article = "article".asInstanceOf[article]
+  @scala.inline
+  def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline
   def aside: aside = "aside".asInstanceOf[aside]
   @scala.inline

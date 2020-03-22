@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vegaTypings.AnonBind
 import typings.vegaTypings.autosizeMod.AutoSize
 import typings.vegaTypings.colorMod.Color
+import typings.vegaTypings.paddingMod.Padding
 import typings.vegaTypings.signalMod.InitSignal
 import typings.vegaTypings.signalMod.NewSignal
 import typings.vegaTypings.signalMod.SignalRef
@@ -14,12 +15,17 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof std.Record<vega-typings.vega-typings/types/spec/config.MarkConfigKeys, vega-typings.vega-typings/types/spec/config.MarkConfig> ]:? std.Record<vega-typings.vega-typings/types/spec/config.MarkConfigKeys, vega-typings.vega-typings/types/spec/config.MarkConfig>[P]}
 - Dropped {[ P in keyof vega-typings.RecordAxisConfigKeysAxisC ]:? vega-typings.RecordAxisConfigKeysAxisC[P]} */ trait Config extends js.Object {
-  var autosize: js.UndefOr[AutoSize] = js.undefined
+  var autosize: js.UndefOr[AutoSize | SignalRef] = js.undefined
   var background: js.UndefOr[Null | Color | SignalRef] = js.undefined
    // TODO
   var events: js.UndefOr[AnonBind] = js.undefined
   var group: js.UndefOr[js.Any] = js.undefined
   var legend: js.UndefOr[LegendConfig] = js.undefined
+  /**
+    * A delimiter, such as a newline character, upon which to break text strings into multiple lines. This property provides a global default for text marks, which is overridden by mark or style config settings, and by the "lineBreak" mark encoding channel. If signal-valued, either string or regular expression (regexp) values are valid.
+    */
+  var lineBreak: js.UndefOr[String | SignalRef] = js.undefined
+  var padding: js.UndefOr[Padding | SignalRef] = js.undefined
   var projection: js.UndefOr[ProjectionConfig] = js.undefined
   var range: js.UndefOr[RangeConfig] = js.undefined
   var signals: js.UndefOr[js.Array[InitSignal | NewSignal]] = js.undefined
@@ -30,11 +36,13 @@ import scala.scalajs.js.annotation._
 object Config {
   @scala.inline
   def apply(
-    autosize: AutoSize = null,
+    autosize: AutoSize | SignalRef = null,
     background: Color | SignalRef = null,
     events: AnonBind = null,
     group: js.Any = null,
     legend: LegendConfig = null,
+    lineBreak: String | SignalRef = null,
+    padding: Padding | SignalRef = null,
     projection: ProjectionConfig = null,
     range: RangeConfig = null,
     signals: js.Array[InitSignal | NewSignal] = null,
@@ -47,6 +55,8 @@ object Config {
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
     if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (signals != null) __obj.updateDynamic("signals")(signals.asInstanceOf[js.Any])

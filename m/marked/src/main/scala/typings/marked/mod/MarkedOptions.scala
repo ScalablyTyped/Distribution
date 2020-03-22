@@ -26,14 +26,19 @@ trait MarkedOptions extends js.Object {
     */
   var headerPrefix: js.UndefOr[String] = js.undefined
   /**
-    * A function to highlight code blocks. The function takes three arguments: code, lang, and callback.
+    * A function to highlight code blocks. The function can either be
+    * synchronous (returning a string) or asynchronous (callback invoked
+    * with an error if any occurred during highlighting and a string
+    * if highlighting was successful)
     */
   var highlight: js.UndefOr[
     js.Function3[
       /* code */ String, 
       /* lang */ String, 
-      /* callback */ js.UndefOr[js.Function2[/* error */ js.UndefOr[js.Any], /* code */ String, Unit]], 
-      String
+      /* callback */ js.UndefOr[
+        js.Function2[/* error */ js.UndefOr[js.Any], /* code */ js.UndefOr[String], Unit]
+      ], 
+      String | Unit
     ]
   ] = js.undefined
   /**
@@ -88,7 +93,9 @@ object MarkedOptions {
     gfm: js.UndefOr[Boolean] = js.undefined,
     headerIds: js.UndefOr[Boolean] = js.undefined,
     headerPrefix: String = null,
-    highlight: (/* code */ String, /* lang */ String, /* callback */ js.UndefOr[js.Function2[/* error */ js.UndefOr[js.Any], /* code */ String, Unit]]) => String = null,
+    highlight: (/* code */ String, /* lang */ String, /* callback */ js.UndefOr[
+      js.Function2[/* error */ js.UndefOr[js.Any], /* code */ js.UndefOr[String], Unit]
+    ]) => String | Unit = null,
     langPrefix: String = null,
     mangle: js.UndefOr[Boolean] = js.undefined,
     pedantic: js.UndefOr[Boolean] = js.undefined,

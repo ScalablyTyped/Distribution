@@ -26,13 +26,24 @@ trait AnonDisabledreason extends js.Object {
     * "legal_entity.first_name").
     */
   var fields_needed: js.Array[String]
+  /**
+    * The set of capabilities you want to unlock for this account (US only).
+    * Each capability will be inactive until you have provided its specific requirements and Stripe has verified them.
+    * An account may have some of its requested capabilities be active and some be inactive.
+    */
+  var requested_capabilities: js.UndefOr[js.Array[String]] = js.undefined
 }
 
 object AnonDisabledreason {
   @scala.inline
-  def apply(disabled_reason: String, due_by: Double, fields_needed: js.Array[String]): AnonDisabledreason = {
+  def apply(
+    disabled_reason: String,
+    due_by: Double,
+    fields_needed: js.Array[String],
+    requested_capabilities: js.Array[String] = null
+  ): AnonDisabledreason = {
     val __obj = js.Dynamic.literal(disabled_reason = disabled_reason.asInstanceOf[js.Any], due_by = due_by.asInstanceOf[js.Any], fields_needed = fields_needed.asInstanceOf[js.Any])
-  
+    if (requested_capabilities != null) __obj.updateDynamic("requested_capabilities")(requested_capabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonDisabledreason]
   }
 }

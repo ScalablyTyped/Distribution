@@ -16,7 +16,7 @@ object userResourceMod extends js.Object {
     def createRoleModel(): Unit = js.native
     def ensureBaseUserModel(model: js.Any): Unit = js.native
     def isSelf(req: Request_[ParamsDictionary]): Boolean = js.native
-    def login(req: Request_[ParamsDictionary], res: Response_): Unit = js.native
+    def login(req: Request_[ParamsDictionary], res: Response_[_]): Unit = js.native
   }
   
   @js.native

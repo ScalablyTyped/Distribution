@@ -25,14 +25,12 @@ class ChartLegendEntryCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ChartLegendEntry] = js.native
   /**
-    *
     * Returns the number of legendEntry in the collection.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Returns a legendEntry at the given index.
     *
     * [Api set: ExcelApi 1.7]

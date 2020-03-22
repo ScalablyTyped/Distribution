@@ -1,6 +1,5 @@
 package typings.tstl.mod
 
-import typings.tstl.ilockableMod.ILockable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,10 +10,5 @@ import scala.scalajs.js.annotation._
   * Default Constructor.
   */
 class SharedTimedMutex ()
-  extends typings.tstl.threadMod.SharedTimedMutex {
-  /**
-    * @internal
-    */
-  def this(source: ILockable) = this()
-}
+  extends typings.tstl.threadMod.SharedTimedMutex
 

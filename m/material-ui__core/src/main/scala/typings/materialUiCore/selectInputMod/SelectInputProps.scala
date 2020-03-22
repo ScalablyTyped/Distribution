@@ -1,6 +1,6 @@
 package typings.materialUiCore.selectInputMod
 
-import typings.materialUiCore.AnonNodeValue
+import typings.materialUiCore.AnonValue
 import typings.materialUiCore.PartialMenuProps
 import typings.materialUiCore.materialUiCoreStrings.filled
 import typings.materialUiCore.materialUiCoreStrings.outlined
@@ -25,7 +25,7 @@ trait SelectInputProps extends js.Object {
   var autoFocus: js.UndefOr[Boolean] = js.native
   var autoWidth: Boolean = js.native
   var disabled: js.UndefOr[Boolean] = js.native
-  var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | AnonNodeValue, Unit]] = js.native
+  var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | AnonValue, Unit]] = js.native
   var multiple: Boolean = js.native
   var name: js.UndefOr[String] = js.native
   var native: Boolean = js.native
@@ -61,7 +61,7 @@ object SelectInputProps {
     SelectDisplayProps: HTMLAttributes[HTMLDivElement] = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
-    inputRef: /* ref */ HTMLSelectElement | AnonNodeValue => Unit = null,
+    inputRef: /* ref */ HTMLSelectElement | AnonValue => Unit = null,
     name: String = null,
     onBlur: FocusEvent[_] => Unit = null,
     onChange: (/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode) => Unit = null,

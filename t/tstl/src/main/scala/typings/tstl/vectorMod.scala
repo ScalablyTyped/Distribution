@@ -6,7 +6,6 @@ import typings.tstl.arrayIteratorMod.ArrayIterator
 import typings.tstl.arrayReverseIteratorMod.ArrayReverseIterator
 import typings.tstl.iforwarditeratorMod.IForwardIterator
 import typings.tstl.ifrontMod.IFront
-import typings.tstl.tstlBooleans.`true`
 import typings.tstl.vectorContainerMod.VectorContainer
 import typings.tstl.vectorMod.Vector.Iterator
 import typings.tstl.vectorMod.Vector.ReverseIterator
@@ -57,10 +56,6 @@ object vectorMod extends js.Object {
       first: IForwardIterator[T, IForwardIterator[T, _]],
       last: IForwardIterator[T, IForwardIterator[T, _]]
     ) = this()
-    /**
-      * @internal
-      */
-    def this(items: js.Array[T], move: `true`) = this()
     /**
       * Fill Constructor.
       *

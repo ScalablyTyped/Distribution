@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iab-vpaid"
-version := "2.0-dt-20191101Z-60119f"
+version := "2.0-dt-20200305Z-7e5aa4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

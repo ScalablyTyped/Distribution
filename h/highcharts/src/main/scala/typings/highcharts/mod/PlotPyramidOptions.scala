@@ -155,6 +155,12 @@ trait PlotPyramidOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
+    * (Highcharts) A reserved subspace to store options and values for
+    * customized functionality. Here you can add additional data for your own
+    * event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
     * the JavaScript charts. Highstock by default applies data grouping when
@@ -233,13 +239,13 @@ trait PlotPyramidOptions extends js.Object {
     * (Highstock) Together with gapSize, this option defines where to draw gaps
     * in the graph.
     *
-    * When the `gapUnit` is `relative` (default), a gap size of 5 means that if
-    * the distance between two points is greater than five times that of the
+    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
+    * if the distance between two points is greater than five times that of the
     * two closest points, the graph will be broken.
     *
-    * When the `gapUnit` is `value`, the gap is based on absolute axis values,
-    * which on a datetime axis is milliseconds. This also applies to the
-    * navigator series that inherits gap options from the base series.
+    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
+    * values, which on a datetime axis is milliseconds. This also applies to
+    * the navigator series that inherits gap options from the base series.
     */
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   /**
@@ -470,6 +476,7 @@ object PlotPyramidOptions {
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: SeriesConnectorsOptionsObject = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dataGrouping: DataGroupingOptionsObject = null,
     dataLabels: SeriesPieDataLabelsOptionsObject | js.Array[SeriesPieDataLabelsOptionsObject] = null,
     depth: Int | Double = null,
@@ -535,6 +542,7 @@ object PlotPyramidOptions {
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.asInstanceOf[js.Any])
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])

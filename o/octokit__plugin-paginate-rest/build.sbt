@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "octokit__plugin-paginate-rest"
-version := "2.0.1-524f17"
+version := "2.0.2-1057ba"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

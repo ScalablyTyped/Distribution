@@ -74,7 +74,7 @@ trait ReposCreateForAuthenticatedUserParams extends js.Object {
     */
   var team_id: js.UndefOr[Double] = js.undefined
   /**
-    * Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `visibility` can also be `internal`. For more information, see "[Creating an internal repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility#about-internal-repositories)" in the GitHub Help documentation.
+    * Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `visibility` can also be `internal`. For more information, see "[Creating an internal repository](https://help.github.com/github/creating-cloning-and-archiving-repositories/creating-an-internal-repository)" in the GitHub Help documentation.
     * The `visibility` parameter overrides the `private` parameter when you use both parameters with the `nebula-preview` preview header.
     */
   var visibility: js.UndefOr[

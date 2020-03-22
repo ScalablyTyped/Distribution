@@ -31,6 +31,7 @@ trait SingleDatePickerShape extends js.Object {
   var focused: Boolean | Null = js.native
   var hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.native
   var horizontalMargin: js.UndefOr[Double] = js.native
+  var horizontalMonthPadding: js.UndefOr[Double] = js.native
   var id: String = js.native
   var initialVisibleMonth: js.UndefOr[js.Function0[momentObj]] = js.native
   var inputIconPosition: js.UndefOr[IconPositionShape] = js.native

@@ -11,7 +11,7 @@ trait PutSigningProfileRequest extends js.Object {
     */
   var overrides: js.UndefOr[SigningPlatformOverrides] = js.native
   /**
-    * The ID of the signing profile to be created.
+    * The ID of the signing platform to be created.
     */
   var platformId: PlatformId = js.native
   /**
@@ -27,7 +27,7 @@ trait PutSigningProfileRequest extends js.Object {
     */
   var signingParameters: js.UndefOr[SigningParameters] = js.native
   /**
-    * Tags to be associated with the signing profile being created.
+    * Tags to be associated with the signing profile that is being created.
     */
   var tags: js.UndefOr[TagMap] = js.native
 }

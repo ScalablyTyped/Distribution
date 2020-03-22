@@ -81,13 +81,8 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactTransitionGroup.AnonAppear
-import typings.reactTransitionGroup.transitionMod.EndHandler
-import typings.reactTransitionGroup.transitionMod.EnterHandler
-import typings.reactTransitionGroup.transitionMod.ExitHandler
 import typings.std.Event_
 import typings.std.HTMLDivElement
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,7 +92,7 @@ import scala.scalajs.js.annotation._
 trait PartialBackdropProps extends js.Object {
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
-  var addEndListener: js.UndefOr[EndHandler] = js.native
+  var addEndListener: js.UndefOr[js.Any] = js.native
   var appear: js.UndefOr[Boolean] = js.native
   var `aria-activedescendant`: js.UndefOr[String] = js.native
   var `aria-atomic`: js.UndefOr[Boolean] = js.native
@@ -152,7 +147,7 @@ trait PartialBackdropProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapBackdropClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapBackdr] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -166,7 +161,7 @@ trait PartialBackdropProps extends js.Object {
   var exit: js.UndefOr[Boolean] = js.native
   var hidden: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
-  var in: js.UndefOr[Boolean] = js.native
+  var in: js.UndefOr[js.Any] = js.native
   var inlist: js.UndefOr[js.Any] = js.native
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
@@ -178,7 +173,7 @@ trait PartialBackdropProps extends js.Object {
   var itemScope: js.UndefOr[Boolean] = js.native
   var itemType: js.UndefOr[String] = js.native
   var lang: js.UndefOr[String] = js.native
-  var mountOnEnter: js.UndefOr[Boolean] = js.native
+  var mountOnEnter: js.UndefOr[js.Any] = js.native
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
@@ -209,13 +204,13 @@ trait PartialBackdropProps extends js.Object {
   var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
-  var onEnter: js.UndefOr[EnterHandler] = js.native
-  var onEntered: js.UndefOr[EnterHandler] = js.native
-  var onEntering: js.UndefOr[EnterHandler] = js.native
+  var onEnter: js.UndefOr[js.Any] = js.native
+  var onEntered: js.UndefOr[js.Any] = js.native
+  var onEntering: js.UndefOr[js.Any] = js.native
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
-  var onExit: js.UndefOr[ExitHandler] = js.native
-  var onExited: js.UndefOr[ExitHandler] = js.native
-  var onExiting: js.UndefOr[ExitHandler] = js.native
+  var onExit: js.UndefOr[js.Any] = js.native
+  var onExited: js.UndefOr[js.Any] = js.native
+  var onExiting: js.UndefOr[js.Any] = js.native
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
   var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
   var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
@@ -280,12 +275,12 @@ trait PartialBackdropProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   var tabIndex: js.UndefOr[Double] = js.native
   var theme: js.UndefOr[Theme] = js.native
-  var timeout: js.UndefOr[Double | AnonAppear] = js.native
+  var timeout: js.UndefOr[js.Any] = js.native
   var title: js.UndefOr[String] = js.native
-  var transitionDuration: js.UndefOr[Double | AnonAppear] = js.native
+  var transitionDuration: js.UndefOr[js.Any] = js.native
   var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
-  var unmountOnExit: js.UndefOr[Boolean] = js.native
+  var unmountOnExit: js.UndefOr[js.Any] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
   var vocab: js.UndefOr[String] = js.native
 }
@@ -295,7 +290,7 @@ object PartialBackdropProps {
   def apply(
     about: String = null,
     accessKey: String = null,
-    addEndListener: (/* node */ HTMLElement, /* done */ js.Function0[Unit]) => Unit = null,
+    addEndListener: js.Any = null,
     appear: js.UndefOr[Boolean] = js.undefined,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
@@ -350,7 +345,7 @@ object PartialBackdropProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapBackdropClassKey = null,
+    classes: PartialClassNameMapBackdr = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -364,7 +359,7 @@ object PartialBackdropProps {
     exit: js.UndefOr[Boolean] = js.undefined,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
-    in: js.UndefOr[Boolean] = js.undefined,
+    in: js.Any = null,
     inlist: js.Any = null,
     innerRef: Ref[_] | RefObject[_] = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
@@ -376,7 +371,7 @@ object PartialBackdropProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
-    mountOnEnter: js.UndefOr[Boolean] = js.undefined,
+    mountOnEnter: js.Any = null,
     onAbort: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
@@ -407,13 +402,13 @@ object PartialBackdropProps {
     onEmptied: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onEncrypted: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onEnded: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onEnter: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
-    onEntered: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
-    onEntering: (/* node */ HTMLElement, /* isAppearing */ Boolean) => Unit = null,
+    onEnter: js.Any = null,
+    onEntered: js.Any = null,
+    onEntering: js.Any = null,
     onError: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
-    onExit: /* node */ HTMLElement => Unit = null,
-    onExited: /* node */ HTMLElement => Unit = null,
-    onExiting: /* node */ HTMLElement => Unit = null,
+    onExit: js.Any = null,
+    onExited: js.Any = null,
+    onExiting: js.Any = null,
     onFocus: FocusEvent[HTMLDivElement] => Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
@@ -478,19 +473,19 @@ object PartialBackdropProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     theme: Theme = null,
-    timeout: Double | AnonAppear = null,
+    timeout: js.Any = null,
     title: String = null,
-    transitionDuration: Double | AnonAppear = null,
+    transitionDuration: js.Any = null,
     translate: yes | no = null,
     typeof: String = null,
-    unmountOnExit: js.UndefOr[Boolean] = js.undefined,
+    unmountOnExit: js.Any = null,
     unselectable: on | off = null,
     vocab: String = null
   ): PartialBackdropProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (addEndListener != null) __obj.updateDynamic("addEndListener")(js.Any.fromFunction2(addEndListener))
+    if (addEndListener != null) __obj.updateDynamic("addEndListener")(addEndListener.asInstanceOf[js.Any])
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
@@ -559,7 +554,7 @@ object PartialBackdropProps {
     if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
+    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
@@ -571,7 +566,7 @@ object PartialBackdropProps {
     if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter.asInstanceOf[js.Any])
+    if (mountOnEnter != null) __obj.updateDynamic("mountOnEnter")(mountOnEnter.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -602,13 +597,13 @@ object PartialBackdropProps {
     if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction2(onEnter))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction2(onEntered))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction2(onEntering))
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
+    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1(onExit))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1(onExited))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1(onExiting))
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
+    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
@@ -678,7 +673,7 @@ object PartialBackdropProps {
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
+    if (unmountOnExit != null) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialBackdropProps]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mysql-import"
-version := "2.0-dt-20191002Z-2c5e73"
+version := "2.0-dt-20200225Z-2c5e73"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

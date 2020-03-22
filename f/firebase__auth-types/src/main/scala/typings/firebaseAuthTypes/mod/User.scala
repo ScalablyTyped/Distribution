@@ -10,6 +10,7 @@ trait User extends UserInfo {
   var emailVerified: Boolean = js.native
   var isAnonymous: Boolean = js.native
   var metadata: UserMetadata = js.native
+  var multiFactor: MultiFactorUser = js.native
   var providerData: js.Array[UserInfo | Null] = js.native
   var refreshToken: String = js.native
   val tenantId: String | Null = js.native
@@ -37,5 +38,7 @@ trait User extends UserInfo {
   def updatePassword(newPassword: String): js.Promise[Unit] = js.native
   def updatePhoneNumber(phoneCredential: AuthCredential): js.Promise[Unit] = js.native
   def updateProfile(profile: AnonDisplayName): js.Promise[Unit] = js.native
+  def verifyBeforeUpdateEmail(newEmail: String): js.Promise[Unit] = js.native
+  def verifyBeforeUpdateEmail(newEmail: String, actionCodeSettings: ActionCodeSettings): js.Promise[Unit] = js.native
 }
 

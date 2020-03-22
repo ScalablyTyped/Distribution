@@ -1,19 +1,22 @@
 package typings.officeUiFabricReact.contextualMenuBaseMod
 
 import typings.officeUiFabricReact.contextualMenuTypesMod.IContextualMenuProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.base", "ContextualMenuBase")
 @js.native
-class ContextualMenuBase protected () extends BaseComponent[IContextualMenuProps, IContextualMenuState] {
+class ContextualMenuBase protected ()
+  extends Component[IContextualMenuProps, IContextualMenuState, js.Any] {
   def this(props: IContextualMenuProps) = this()
   var _adjustedFocusZoneProps: js.Any = js.native
+  var _async: js.Any = js.native
   var _cancelSubMenuTimer: js.Any = js.native
   var _classNames: js.Any = js.native
   var _enterTimerId: js.Any = js.native
+  var _events: js.Any = js.native
   var _executeItemClick: js.Any = js.native
   var _findItemByKey: js.Any = js.native
   /**

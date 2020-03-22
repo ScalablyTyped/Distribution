@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 - typings.babelTypes.mod._Node because Already inherited */ trait RegExpLiteral_
   extends Expression
      with BaseNode
-     with Literal {
+     with Literal
+     with Pureish {
   var flags: js.Any
   var pattern: String
   @JSName("type")

@@ -48,5 +48,9 @@ class RecursiveAstVisitor () extends AstVisitor {
   override def visitSafeMethodCall(ast: SafeMethodCall, context: js.Any): js.Any = js.native
   /* CompleteClass */
   override def visitSafePropertyRead(ast: SafePropertyRead, context: js.Any): js.Any = js.native
+  @JSName("visit")
+  def visit_MRecursiveAstVisitor(ast: AST): js.Any = js.native
+  @JSName("visit")
+  def visit_MRecursiveAstVisitor(ast: AST, context: js.Any): js.Any = js.native
 }
 

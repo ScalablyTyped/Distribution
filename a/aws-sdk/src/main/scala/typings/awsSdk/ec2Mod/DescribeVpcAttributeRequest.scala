@@ -17,12 +17,12 @@ trait DescribeVpcAttributeRequest extends js.Object {
   /**
     * The ID of the VPC.
     */
-  var VpcId: String = js.native
+  var VpcId: typings.awsSdk.ec2Mod.VpcId = js.native
 }
 
 object DescribeVpcAttributeRequest {
   @scala.inline
-  def apply(Attribute: VpcAttributeName, VpcId: String, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeVpcAttributeRequest = {
+  def apply(Attribute: VpcAttributeName, VpcId: VpcId, DryRun: js.UndefOr[scala.Boolean] = js.undefined): DescribeVpcAttributeRequest = {
     val __obj = js.Dynamic.literal(Attribute = Attribute.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVpcAttributeRequest]

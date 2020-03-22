@@ -1,6 +1,6 @@
 package typings.materialUiCore.listItemTextListItemTextMod
 
-import typings.materialUiCore.PartialClassNameMapListItemTextClassKey
+import typings.materialUiCore.PartialClassNameMapListItDense
 import typings.materialUiCore.PartialTypographyProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -146,7 +146,7 @@ trait ListItemTextProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListItemTextClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListItDense] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -332,7 +332,7 @@ object ListItemTextProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapListItemTextClassKey = null,
+    classes: PartialClassNameMapListItDense = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

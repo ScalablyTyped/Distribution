@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_timepicker"
-version := "0.3-dt-20190322Z-ae30aa"
+version := "0.3-dt-20200304Z-ae30aa"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

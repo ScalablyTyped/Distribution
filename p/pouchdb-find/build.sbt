@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pouchdb-find"
-version := "6.3-dt-20200206Z-fd0d95"
+version := "6.3-dt-20200225Z-fd0d95"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

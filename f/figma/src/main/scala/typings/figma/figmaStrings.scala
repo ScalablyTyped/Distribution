@@ -23,6 +23,9 @@ object figmaStrings {
   sealed trait `1Dot0Dot0` extends js.Object
   
   @js.native
+  sealed trait AFTER extends js.Object
+  
+  @js.native
   sealed trait AFTER_TIMEOUT extends js.Object
   
   @js.native
@@ -45,6 +48,9 @@ object figmaStrings {
   
   @js.native
   sealed trait BACKGROUND_BLUR extends js.Object
+  
+  @js.native
+  sealed trait BEFORE extends js.Object
   
   @js.native
   sealed trait BEVEL extends StrokeJoin
@@ -461,6 +467,8 @@ object figmaStrings {
   @scala.inline
   def `1Dot0Dot0`: `1Dot0Dot0` = "1.0.0".asInstanceOf[`1Dot0Dot0`]
   @scala.inline
+  def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
+  @scala.inline
   def AFTER_TIMEOUT: AFTER_TIMEOUT = "AFTER_TIMEOUT".asInstanceOf[AFTER_TIMEOUT]
   @scala.inline
   def ANGLE: ANGLE = "ANGLE".asInstanceOf[ANGLE]
@@ -476,6 +484,8 @@ object figmaStrings {
   def BACK: BACK = "BACK".asInstanceOf[BACK]
   @scala.inline
   def BACKGROUND_BLUR: BACKGROUND_BLUR = "BACKGROUND_BLUR".asInstanceOf[BACKGROUND_BLUR]
+  @scala.inline
+  def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
   @scala.inline
   def BEVEL: BEVEL = "BEVEL".asInstanceOf[BEVEL]
   @scala.inline

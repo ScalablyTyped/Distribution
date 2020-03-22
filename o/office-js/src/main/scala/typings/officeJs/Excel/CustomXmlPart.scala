@@ -36,14 +36,12 @@ class CustomXmlPart () extends ClientObject {
     */
   val namespaceUri: String = js.native
   /**
-    *
     * Deletes the custom XML part.
     *
     * [Api set: ExcelApi 1.5]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the custom XML part's full XML content.
     *
     * [Api set: ExcelApi 1.5]
@@ -60,7 +58,6 @@ class CustomXmlPart () extends ClientObject {
   def load(propertyNames: String): CustomXmlPart = js.native
   def load(propertyNames: js.Array[String]): CustomXmlPart = js.native
   /**
-    *
     * Sets the custom XML part's full XML content.
     *
     * [Api set: ExcelApi 1.5]

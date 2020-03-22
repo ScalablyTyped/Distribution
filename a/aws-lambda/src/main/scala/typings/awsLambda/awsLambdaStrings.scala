@@ -214,6 +214,9 @@ object awsLambdaStrings {
   sealed trait REMOVE extends js.Object
   
   @js.native
+  sealed trait REQUEST extends js.Object
+  
+  @js.native
   sealed trait RESET_REQUIRED extends js.Object
   
   @js.native
@@ -262,6 +265,9 @@ object awsLambdaStrings {
   
   @js.native
   sealed trait Succeeded_ extends S3BatchResultResultCode
+  
+  @js.native
+  sealed trait TOKEN extends js.Object
   
   @js.native
   sealed trait TemporaryFailure extends S3BatchResultResultCode
@@ -478,6 +484,8 @@ object awsLambdaStrings {
   @scala.inline
   def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
   @scala.inline
+  def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
+  @scala.inline
   def RESET_REQUIRED: RESET_REQUIRED = "RESET_REQUIRED".asInstanceOf[RESET_REQUIRED]
   @scala.inline
   def RESUMED: RESUMED = "RESUMED".asInstanceOf[RESUMED]
@@ -505,6 +513,8 @@ object awsLambdaStrings {
   def String: String = "String".asInstanceOf[String]
   @scala.inline
   def Succeeded_ : Succeeded_ = "Succeeded".asInstanceOf[Succeeded_]
+  @scala.inline
+  def TOKEN: TOKEN = "TOKEN".asInstanceOf[TOKEN]
   @scala.inline
   def TemporaryFailure: TemporaryFailure = "TemporaryFailure".asInstanceOf[TemporaryFailure]
   @scala.inline

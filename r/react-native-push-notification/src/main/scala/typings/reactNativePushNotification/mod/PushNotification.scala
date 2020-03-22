@@ -34,6 +34,7 @@ trait PushNotification extends js.Object {
   def requestPermissions(permissions: js.Array[alert | badge | sound]): js.Promise[PushNotificationPermissions] = js.native
   def scheduleLocalNotification(details: PushNotificationScheduleObject): Unit = js.native
   def setApplicationIconBadgeNumber(badgeCount: Double): Unit = js.native
+  def subscribeToTopic(topic: String): Unit = js.native
   def unregister(): Unit = js.native
 }
 

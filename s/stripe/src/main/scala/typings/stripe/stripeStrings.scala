@@ -536,6 +536,21 @@ object stripeStrings {
   sealed trait disputed extends js.Object
   
   @js.native
+  sealed trait document_address_mismatch extends js.Object
+  
+  @js.native
+  sealed trait document_dob_mismatch extends js.Object
+  
+  @js.native
+  sealed trait document_duplicate_type extends js.Object
+  
+  @js.native
+  sealed trait document_id_number_mismatch extends js.Object
+  
+  @js.native
+  sealed trait document_name_mismatch extends js.Object
+  
+  @js.native
   sealed trait donate extends js.Object
   
   @js.native
@@ -600,6 +615,12 @@ object stripeStrings {
   
   @js.native
   sealed trait failed_invoice extends PaymentIntentStripeProvidedCancellationReason
+  
+  @js.native
+  sealed trait failed_keyed_identity extends js.Object
+  
+  @js.native
+  sealed trait failed_other extends js.Object
   
   @js.native
   sealed trait failure extends js.Object
@@ -2020,6 +2041,16 @@ object stripeStrings {
   @scala.inline
   def disputed: disputed = "disputed".asInstanceOf[disputed]
   @scala.inline
+  def document_address_mismatch: document_address_mismatch = "document_address_mismatch".asInstanceOf[document_address_mismatch]
+  @scala.inline
+  def document_dob_mismatch: document_dob_mismatch = "document_dob_mismatch".asInstanceOf[document_dob_mismatch]
+  @scala.inline
+  def document_duplicate_type: document_duplicate_type = "document_duplicate_type".asInstanceOf[document_duplicate_type]
+  @scala.inline
+  def document_id_number_mismatch: document_id_number_mismatch = "document_id_number_mismatch".asInstanceOf[document_id_number_mismatch]
+  @scala.inline
+  def document_name_mismatch: document_name_mismatch = "document_name_mismatch".asInstanceOf[document_name_mismatch]
+  @scala.inline
   def donate: donate = "donate".asInstanceOf[donate]
   @scala.inline
   def down: down = "down".asInstanceOf[down]
@@ -2061,6 +2092,10 @@ object stripeStrings {
   def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
   def failed_invoice: failed_invoice = "failed_invoice".asInstanceOf[failed_invoice]
+  @scala.inline
+  def failed_keyed_identity: failed_keyed_identity = "failed_keyed_identity".asInstanceOf[failed_keyed_identity]
+  @scala.inline
+  def failed_other: failed_other = "failed_other".asInstanceOf[failed_other]
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
   @scala.inline

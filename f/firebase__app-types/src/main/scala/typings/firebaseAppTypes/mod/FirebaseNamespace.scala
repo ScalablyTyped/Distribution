@@ -1,6 +1,9 @@
 package typings.firebaseAppTypes.mod
 
 import typings.firebaseAppTypes.AnonCall
+import typings.firebaseLogger.loggerMod.LogCallback
+import typings.firebaseLogger.loggerMod.LogLevelString
+import typings.firebaseLogger.loggerMod.LogOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +36,9 @@ trait FirebaseNamespace extends js.Object {
   def initializeApp(options: FirebaseOptions): FirebaseApp = js.native
   def initializeApp(options: FirebaseOptions, config: FirebaseAppConfig): FirebaseApp = js.native
   def initializeApp(options: FirebaseOptions, name: String): FirebaseApp = js.native
+  // Sets log handler for all Firebase components.
+  def onLog(logCallback: LogCallback): Unit = js.native
+  def onLog(logCallback: LogCallback, options: LogOptions): Unit = js.native
   /**
     * Registers a library's name and version for platform logging purposes.
     * @param library Name of 1p or 3p library (e.g. firestore, angularfire)
@@ -40,5 +46,7 @@ trait FirebaseNamespace extends js.Object {
     */
   def registerVersion(library: String, version: String): Unit = js.native
   def registerVersion(library: String, version: String, variant: String): Unit = js.native
+  // Sets log level for all Firebase components.
+  def setLogLevel(logLevel: LogLevelString): Unit = js.native
 }
 

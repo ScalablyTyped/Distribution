@@ -16,6 +16,7 @@ trait ArcEncodeEntry extends EncodeEntry {
 object ArcEncodeEntry {
   @scala.inline
   def apply(
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cornerRadius: ProductionRule[NumericValueRef] = null,
     cursor: ProductionRule[StringValueRef] = null,
     endAngle: ProductionRule[NumericValueRef] = null,
@@ -46,6 +47,7 @@ object ArcEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): ArcEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])

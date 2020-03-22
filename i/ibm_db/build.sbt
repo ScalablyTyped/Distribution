@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ibm_db"
-version := "2.0-dt-20181026Z-5b7413"
+version := "2.0-dt-20200225Z-5b7413"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

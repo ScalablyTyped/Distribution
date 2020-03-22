@@ -31,6 +31,10 @@ trait PushNotificationTemplateRequest extends js.Object {
     */
   var GCM: js.UndefOr[AndroidPushNotificationTemplate] = js.native
   /**
+    * The unique identifier for the recommender model to use for the message template. Amazon Pinpoint uses this value to determine how to retrieve and process data from a recommender model when it sends messages that use the template, if the template contains message variables for recommendation data.
+    */
+  var RecommenderId: js.UndefOr[string] = js.native
+  /**
     * A custom description of the message template.
     */
   var TemplateDescription: js.UndefOr[string] = js.native
@@ -49,6 +53,7 @@ object PushNotificationTemplateRequest {
     Default: DefaultPushNotificationTemplate = null,
     DefaultSubstitutions: string = null,
     GCM: AndroidPushNotificationTemplate = null,
+    RecommenderId: string = null,
     TemplateDescription: string = null,
     tags: MapOfString = null
   ): PushNotificationTemplateRequest = {
@@ -59,6 +64,7 @@ object PushNotificationTemplateRequest {
     if (Default != null) __obj.updateDynamic("Default")(Default.asInstanceOf[js.Any])
     if (DefaultSubstitutions != null) __obj.updateDynamic("DefaultSubstitutions")(DefaultSubstitutions.asInstanceOf[js.Any])
     if (GCM != null) __obj.updateDynamic("GCM")(GCM.asInstanceOf[js.Any])
+    if (RecommenderId != null) __obj.updateDynamic("RecommenderId")(RecommenderId.asInstanceOf[js.Any])
     if (TemplateDescription != null) __obj.updateDynamic("TemplateDescription")(TemplateDescription.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationTemplateRequest]

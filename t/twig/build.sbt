@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twig"
-version := "1.12-dt-20190107Z-d05f1c"
+version := "1.12-dt-20200227Z-7501dc"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

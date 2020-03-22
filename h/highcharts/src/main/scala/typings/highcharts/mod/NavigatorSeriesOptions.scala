@@ -24,7 +24,7 @@ trait NavigatorSeriesOptions extends js.Object {
     * navigator series. Data labels are disabled by default on the navigator
     * series.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[NavigatorSeriesDataLabelsOptions | js.Array[NavigatorSeriesDataLabelsOptions]] = js.undefined
   /**
     * (Highstock, Gantt) The fill opacity of the navigator series.
     */
@@ -69,7 +69,7 @@ object NavigatorSeriesOptions {
     color: ColorString | GradientColorObject | PatternObject = null,
     data: js.Array[Double | (js.Array[Double | String | Null]) | js.Object | Null] = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: NavigatorSeriesDataLabelsOptions | js.Array[NavigatorSeriesDataLabelsOptions] = null,
     fillOpacity: Int | Double = null,
     id: String = null,
     lineColor: ColorString = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "polylabel"
-version := "1.0-dt-20180214Z-793e2d"
+version := "1.0-dt-20200226Z-793e2d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

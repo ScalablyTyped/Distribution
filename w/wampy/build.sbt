@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wampy"
-version := "v6.x.x-dt-20190322Z-295a9b"
+version := "v6.x.x-dt-20200225Z-295a9b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

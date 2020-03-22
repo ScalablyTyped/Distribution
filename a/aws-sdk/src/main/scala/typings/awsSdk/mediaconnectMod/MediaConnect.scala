@@ -13,12 +13,12 @@ trait MediaConnect extends Service {
   @JSName("config")
   var config_MediaConnect: ConfigBase with ClientConfiguration = js.native
   /**
-    * Adds outputs to an existing flow. You can create up to 20 outputs per flow.
+    * Adds outputs to an existing flow. You can create up to 50 outputs per flow.
     */
   def addFlowOutputs(): Request[AddFlowOutputsResponse, AWSError] = js.native
   def addFlowOutputs(callback: js.Function2[/* err */ AWSError, /* data */ AddFlowOutputsResponse, Unit]): Request[AddFlowOutputsResponse, AWSError] = js.native
   /**
-    * Adds outputs to an existing flow. You can create up to 20 outputs per flow.
+    * Adds outputs to an existing flow. You can create up to 50 outputs per flow.
     */
   def addFlowOutputs(params: AddFlowOutputsRequest): Request[AddFlowOutputsResponse, AWSError] = js.native
   def addFlowOutputs(
@@ -26,12 +26,25 @@ trait MediaConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AddFlowOutputsResponse, Unit]
   ): Request[AddFlowOutputsResponse, AWSError] = js.native
   /**
-    * Creates a new flow. The request must include one source. The request optionally can include outputs (up to 20) and entitlements (up to 50).
+    * Adds Sources to flow
+    */
+  def addFlowSources(): Request[AddFlowSourcesResponse, AWSError] = js.native
+  def addFlowSources(callback: js.Function2[/* err */ AWSError, /* data */ AddFlowSourcesResponse, Unit]): Request[AddFlowSourcesResponse, AWSError] = js.native
+  /**
+    * Adds Sources to flow
+    */
+  def addFlowSources(params: AddFlowSourcesRequest): Request[AddFlowSourcesResponse, AWSError] = js.native
+  def addFlowSources(
+    params: AddFlowSourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddFlowSourcesResponse, Unit]
+  ): Request[AddFlowSourcesResponse, AWSError] = js.native
+  /**
+    * Creates a new flow. The request must include one source. The request optionally can include outputs (up to 50) and entitlements (up to 50).
     */
   def createFlow(): Request[CreateFlowResponse, AWSError] = js.native
   def createFlow(callback: js.Function2[/* err */ AWSError, /* data */ CreateFlowResponse, Unit]): Request[CreateFlowResponse, AWSError] = js.native
   /**
-    * Creates a new flow. The request must include one source. The request optionally can include outputs (up to 20) and entitlements (up to 50).
+    * Creates a new flow. The request must include one source. The request optionally can include outputs (up to 50) and entitlements (up to 50).
     */
   def createFlow(params: CreateFlowRequest): Request[CreateFlowResponse, AWSError] = js.native
   def createFlow(
@@ -130,6 +143,19 @@ trait MediaConnect extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowOutputResponse, Unit]
   ): Request[RemoveFlowOutputResponse, AWSError] = js.native
   /**
+    * Removes a source from an existing flow. This request can be made only if there is more than one source on the flow.
+    */
+  def removeFlowSource(): Request[RemoveFlowSourceResponse, AWSError] = js.native
+  def removeFlowSource(callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowSourceResponse, Unit]): Request[RemoveFlowSourceResponse, AWSError] = js.native
+  /**
+    * Removes a source from an existing flow. This request can be made only if there is more than one source on the flow.
+    */
+  def removeFlowSource(params: RemoveFlowSourceRequest): Request[RemoveFlowSourceResponse, AWSError] = js.native
+  def removeFlowSource(
+    params: RemoveFlowSourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowSourceResponse, Unit]
+  ): Request[RemoveFlowSourceResponse, AWSError] = js.native
+  /**
     * Revokes an entitlement from a flow. Once an entitlement is revoked, the content becomes unavailable to the subscriber and the associated output is removed.
     */
   def revokeFlowEntitlement(): Request[RevokeFlowEntitlementResponse, AWSError] = js.native
@@ -191,6 +217,19 @@ trait MediaConnect extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates flow
+    */
+  def updateFlow(): Request[UpdateFlowResponse, AWSError] = js.native
+  def updateFlow(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlowResponse, Unit]): Request[UpdateFlowResponse, AWSError] = js.native
+  /**
+    * Updates flow
+    */
+  def updateFlow(params: UpdateFlowRequest): Request[UpdateFlowResponse, AWSError] = js.native
+  def updateFlow(
+    params: UpdateFlowRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlowResponse, Unit]
+  ): Request[UpdateFlowResponse, AWSError] = js.native
   /**
     * You can change an entitlement's description, subscribers, and encryption. If you change the subscribers, the service will remove the outputs that are are used by the subscribers that are removed.
     */

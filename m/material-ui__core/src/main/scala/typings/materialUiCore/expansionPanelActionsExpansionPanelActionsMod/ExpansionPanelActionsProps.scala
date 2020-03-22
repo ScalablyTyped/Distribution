@@ -1,6 +1,6 @@
 package typings.materialUiCore.expansionPanelActionsExpansionPanelActionsMod
 
-import typings.materialUiCore.PartialClassNameMapExpansionPanelActionsClassKey
+import typings.materialUiCore.PartialClassNameMapExpansAction
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -145,7 +145,7 @@ trait ExpansionPanelActionsProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapExpansionPanelActionsClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapExpansAction] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -325,7 +325,7 @@ object ExpansionPanelActionsProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapExpansionPanelActionsClassKey = null,
+    classes: PartialClassNameMapExpansAction = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

@@ -1,7 +1,8 @@
 package typings.primereact.selectButtonMod
 
-import typings.primereact.AnonValue
+import typings.primereact.AnonTarget
 import typings.primereact.tooltipOptionsMod.TooltipOptions
+import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,9 +13,11 @@ trait SelectButtonProps extends js.Object {
   var dataKey: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
+  var itemTemplate: js.UndefOr[js.Function1[/* option */ js.Any, ReactNode]] = js.undefined
   var multiple: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
+  var optionValue: js.UndefOr[String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tabIndex: js.UndefOr[String] = js.undefined
@@ -31,9 +34,11 @@ object SelectButtonProps {
     dataKey: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    itemTemplate: /* option */ js.Any => ReactNode = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* e */ AnonValue => Unit = null,
+    onChange: /* e */ AnonTarget => Unit = null,
     optionLabel: String = null,
+    optionValue: String = null,
     options: js.Array[_] = null,
     style: js.Object = null,
     tabIndex: String = null,
@@ -47,9 +52,11 @@ object SelectButtonProps {
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (optionLabel != null) __obj.updateDynamic("optionLabel")(optionLabel.asInstanceOf[js.Any])
+    if (optionValue != null) __obj.updateDynamic("optionValue")(optionValue.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

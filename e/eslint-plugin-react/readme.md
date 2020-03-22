@@ -1,7 +1,7 @@
 
 # Scala.js typings for eslint-plugin-react
 
-Typings are for version 7.18.3
+Typings are for version 7.19.0
 
 ## Library description:
 React specific linting rules for ESLint

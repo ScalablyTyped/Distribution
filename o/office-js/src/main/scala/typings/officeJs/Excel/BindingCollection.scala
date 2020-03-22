@@ -34,7 +34,6 @@ class BindingCollection () extends ClientObject {
   val items: js.Array[Binding] = js.native
   def add(range: String, bindingType: BindingType, id: String): Binding = js.native
   /**
-    *
     * Add a new binding to a particular Range.
     *
     * [Api set: ExcelApi 1.3]
@@ -45,7 +44,6 @@ class BindingCollection () extends ClientObject {
     */
   def add(range: Range, bindingType: BindingType, id: String): Binding = js.native
   /**
-    *
     * Add a new binding based on a named item in the workbook.
     If the named item references to multiple areas, the "InvalidReference" error will be returned.
     *
@@ -57,7 +55,6 @@ class BindingCollection () extends ClientObject {
     */
   def addFromNamedItem(name: String, bindingType: BindingType, id: String): Binding = js.native
   /**
-    *
     * Add a new binding based on a named item in the workbook.
     If the named item references to multiple areas, the "InvalidReference" error will be returned.
     *
@@ -74,7 +71,6 @@ class BindingCollection () extends ClientObject {
   @JSName("addFromNamedItem")
   def addFromNamedItem_Text(name: String, bindingType: Text, id: String): Binding = js.native
   /**
-    *
     * Add a new binding based on the current selection.
     If the selection has multiple areas, the "InvalidReference" error will be returned.
     *
@@ -85,7 +81,6 @@ class BindingCollection () extends ClientObject {
     */
   def addFromSelection(bindingType: BindingType, id: String): Binding = js.native
   /**
-    *
     * Add a new binding based on the current selection.
     If the selection has multiple areas, the "InvalidReference" error will be returned.
     *
@@ -103,7 +98,6 @@ class BindingCollection () extends ClientObject {
   @JSName("add")
   def add_Range(range: String, bindingType: typings.officeJs.officeJsStrings.Range, id: String): Binding = js.native
   /**
-    *
     * Add a new binding to a particular Range.
     *
     * [Api set: ExcelApi 1.3]
@@ -123,14 +117,12 @@ class BindingCollection () extends ClientObject {
   @JSName("add")
   def add_Text(range: Range, bindingType: Text, id: String): Binding = js.native
   /**
-    *
     * Gets the number of bindings in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a binding object by ID.
     *
     * [Api set: ExcelApi 1.1]
@@ -139,7 +131,6 @@ class BindingCollection () extends ClientObject {
     */
   def getItem(id: String): Binding = js.native
   /**
-    *
     * Gets a binding object based on its position in the items array.
     *
     * [Api set: ExcelApi 1.1]
@@ -148,7 +139,6 @@ class BindingCollection () extends ClientObject {
     */
   def getItemAt(index: Double): Binding = js.native
   /**
-    *
     * Gets a binding object by ID. If the binding object does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.4]

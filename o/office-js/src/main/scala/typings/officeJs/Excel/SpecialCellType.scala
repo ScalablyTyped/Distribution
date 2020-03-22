@@ -15,7 +15,6 @@ sealed trait SpecialCellType extends js.Object
 @js.native
 object SpecialCellType extends js.Object {
   /**
-    *
     * Cells with no content.
     *
     */
@@ -23,7 +22,6 @@ object SpecialCellType extends js.Object {
   sealed trait blanks extends SpecialCellType
   
   /**
-    *
     * All cells with conditional formats
     *
     */
@@ -31,7 +29,6 @@ object SpecialCellType extends js.Object {
   sealed trait conditionalFormats extends SpecialCellType
   
   /**
-    *
     * Cells containing constants.
     *
     */
@@ -39,7 +36,6 @@ object SpecialCellType extends js.Object {
   sealed trait constants extends SpecialCellType
   
   /**
-    *
     * Cells having validation criteria.
     *
     */
@@ -47,7 +43,6 @@ object SpecialCellType extends js.Object {
   sealed trait dataValidations extends SpecialCellType
   
   /**
-    *
     * Cells containing formulas.
     *
     */
@@ -55,7 +50,6 @@ object SpecialCellType extends js.Object {
   sealed trait formulas extends SpecialCellType
   
   /**
-    *
     * Cells having the same conditional format as the first cell in the range.
     *
     */
@@ -63,7 +57,6 @@ object SpecialCellType extends js.Object {
   sealed trait sameConditionalFormat extends SpecialCellType
   
   /**
-    *
     * Cells having the same data validation criteria as the first cell in the range.
     *
     */
@@ -71,7 +64,6 @@ object SpecialCellType extends js.Object {
   sealed trait sameDataValidation extends SpecialCellType
   
   /**
-    *
     * Cells that are visible.
     *
     */

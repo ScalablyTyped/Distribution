@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cryptojs"
-version := "3.1.2-dt-20190322Z-aec900"
+version := "3.1.2-dt-20200225Z-aec900"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

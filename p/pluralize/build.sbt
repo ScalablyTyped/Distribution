@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pluralize"
-version := "0.0-unknown-dt-20190322Z-d48430"
+version := "0.0-unknown-dt-20200226Z-d48430"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__gif
 
-Typings are for version 0.9.3
+Typings are for version 0.9.6
 
 ## Library description:
 Default Jimp gif encoder/decoder.

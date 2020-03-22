@@ -19,7 +19,7 @@ trait Options extends js.Object {
   var autoConfigure: js.UndefOr[Boolean] = js.undefined
   /** Enable hot module reloading */
   var hmr: js.UndefOr[Boolean] = js.undefined
-  /** Level of information for webpack-hot-client to output */
+  /** Host that the WebSocket listens on */
   var host: js.UndefOr[WebpackHotHost | String] = js.undefined
   /** Enable HTTPS */
   var https: js.UndefOr[Boolean] = js.undefined

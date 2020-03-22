@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expand-tilde"
-version := "2.0-dt-20181121Z-40c011"
+version := "2.0-dt-20200225Z-40c011"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

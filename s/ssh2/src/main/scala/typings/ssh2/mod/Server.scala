@@ -48,7 +48,7 @@ class Server protected () extends EventEmitter {
   /**
     * Asynchronously get the number of concurrent connections on the server.
     */
-  def getConnections(callback: js.Function2[/* err */ js.UndefOr[Error], /* count */ Double, Unit]): Unit = js.native
+  def getConnections(callback: js.Function2[/* err */ Error | Null, /* count */ Double, Unit]): Unit = js.native
   /**
     * Begin accepting connections on a random port.
     *

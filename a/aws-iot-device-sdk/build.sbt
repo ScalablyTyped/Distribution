@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "aws-iot-device-sdk"
-version := "2.2.0-dt-20191223Z-5b5085"
+version := "2.2.0-dt-20200225Z-9b0925"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mqtt" % "3.0.0-81b698",
-  "org.scalablytyped" %%% "mqtt-packet" % "6.3.1-6962a3",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "mqtt" % "3.0.0-e94864",
+  "org.scalablytyped" %%% "mqtt-packet" % "6.3.1-ceddd6",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "ws" % "7.2-dt-20200129Z-9e5eae")
+  "org.scalablytyped" %%% "ws" % "7.2-dt-20200318Z-620d0e")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

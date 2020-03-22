@@ -26,7 +26,8 @@ import scala.scalajs.js.annotation._
 - typings.mongodb.mod.MongosOptions because var conflicts: checkServerIdentity, ciphers, domainsEnabled, ecdhCurve, haInterval, minSize, poolSize, readPreference, servername, socketOptions, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate. Inlined acceptableLatencyMS */ trait MongoClientOptions
   extends DbCreateOptions
      with ServerOptions
-     with SocketOptions {
+     with SocketOptions
+     with TLSOptions {
   /**
     * Default: 15; Cutoff latency point in MS for MongoS proxy selection
     */
@@ -64,7 +65,7 @@ import scala.scalajs.js.annotation._
   var maxStalenessSeconds: js.UndefOr[scala.Double] = js.undefined
   /**
     * number of retries for a tailable cursor
-    * Default: 5
+    * @default 5
     */
   var numberOfRetries: js.UndefOr[scala.Double] = js.undefined
   /** An object representing read preference tags, see: http://mongodb.github.io/node-mongodb-native/3.1/api/ReadPreference.html */
@@ -154,6 +155,13 @@ object MongoClientOptions {
     sslKey: Buffer | String = null,
     sslPass: Buffer | String = null,
     sslValidate: js.UndefOr[Boolean] = js.undefined,
+    tls: js.UndefOr[Boolean] = js.undefined,
+    tlsAllowInvalidCertificates: js.UndefOr[Boolean] = js.undefined,
+    tlsAllowInvalidHostnames: js.UndefOr[Boolean] = js.undefined,
+    tlsCAFile: String = null,
+    tlsCertificateKeyFile: String = null,
+    tlsCertificateKeyFilePassword: String = null,
+    tlsInsecure: js.UndefOr[Boolean] = js.undefined,
     useNewUrlParser: js.UndefOr[Boolean] = js.undefined,
     useUnifiedTopology: js.UndefOr[Boolean] = js.undefined,
     validateOptions: js.Object | Boolean = null,
@@ -218,6 +226,13 @@ object MongoClientOptions {
     if (sslKey != null) __obj.updateDynamic("sslKey")(sslKey.asInstanceOf[js.Any])
     if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
     if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsAllowInvalidCertificates)) __obj.updateDynamic("tlsAllowInvalidCertificates")(tlsAllowInvalidCertificates.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsAllowInvalidHostnames)) __obj.updateDynamic("tlsAllowInvalidHostnames")(tlsAllowInvalidHostnames.asInstanceOf[js.Any])
+    if (tlsCAFile != null) __obj.updateDynamic("tlsCAFile")(tlsCAFile.asInstanceOf[js.Any])
+    if (tlsCertificateKeyFile != null) __obj.updateDynamic("tlsCertificateKeyFile")(tlsCertificateKeyFile.asInstanceOf[js.Any])
+    if (tlsCertificateKeyFilePassword != null) __obj.updateDynamic("tlsCertificateKeyFilePassword")(tlsCertificateKeyFilePassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsInsecure)) __obj.updateDynamic("tlsInsecure")(tlsInsecure.asInstanceOf[js.Any])
     if (!js.isUndefined(useNewUrlParser)) __obj.updateDynamic("useNewUrlParser")(useNewUrlParser.asInstanceOf[js.Any])
     if (!js.isUndefined(useUnifiedTopology)) __obj.updateDynamic("useUnifiedTopology")(useUnifiedTopology.asInstanceOf[js.Any])
     if (validateOptions != null) __obj.updateDynamic("validateOptions")(validateOptions.asInstanceOf[js.Any])

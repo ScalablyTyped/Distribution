@@ -1,6 +1,6 @@
 package typings.materialUiCore.expansionPanelDetailsExpansionPanelDetailsMod
 
-import typings.materialUiCore.PartialClassNameMapExpansionPanelDetailsClassKey
+import typings.materialUiCore.PartialClassNameMapExpansRoot
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -145,7 +145,7 @@ trait ExpansionPanelDetailsProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapExpansionPanelDetailsClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapExpansRoot] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -325,7 +325,7 @@ object ExpansionPanelDetailsProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapExpansionPanelDetailsClassKey = null,
+    classes: PartialClassNameMapExpansRoot = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

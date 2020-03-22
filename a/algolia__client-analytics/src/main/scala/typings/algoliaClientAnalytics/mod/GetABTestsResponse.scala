@@ -8,7 +8,7 @@ trait GetABTestsResponse extends js.Object {
   /**
     * The list of ab tests.
     */
-  val abtests: js.Array[GetABTestResponse]
+  val abtests: js.Array[GetABTestResponse] | Null
   /**
     * The number of ab tests within this response.
     */
@@ -21,9 +21,9 @@ trait GetABTestsResponse extends js.Object {
 
 object GetABTestsResponse {
   @scala.inline
-  def apply(abtests: js.Array[GetABTestResponse], count: Double, total: Double): GetABTestsResponse = {
-    val __obj = js.Dynamic.literal(abtests = abtests.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
-  
+  def apply(count: Double, total: Double, abtests: js.Array[GetABTestResponse] = null): GetABTestsResponse = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+    if (abtests != null) __obj.updateDynamic("abtests")(abtests.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetABTestsResponse]
   }
 }

@@ -23,7 +23,7 @@ trait ResourceState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
 }
 
 object ResourceState {
@@ -32,7 +32,7 @@ object ResourceState {
     parentId: Input[String] = null,
     path: Input[String] = null,
     pathPart: Input[String] = null,
-    restApi: Input[RestApi] = null
+    restApi: Input[String | RestApi] = null
   ): ResourceState = {
     val __obj = js.Dynamic.literal()
     if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])

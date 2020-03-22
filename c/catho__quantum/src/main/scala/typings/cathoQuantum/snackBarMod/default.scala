@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/SnackBar", JSImport.Default)
+@JSImport("@catho/quantum/SnackBar", JSImport.Default)
 @js.native
-class default[T] ()
-  extends Component[SnackBarProps[T], js.Object, js.Any]
+class default ()
+  extends Component[SnackBarProps, js.Object, js.Any]
 

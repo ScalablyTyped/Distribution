@@ -8,8 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait LRUCache[T]
-  extends typings.ol.targetMod.default {
+trait LRUCache[T] extends js.Object {
   def canExpireCache(): Boolean = js.native
   def clear(): Unit = js.native
   def containsKey(key: String): Boolean = js.native

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
   */
 trait AsyncContextOptions extends js.Object {
   /**
-    * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
+    * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
+    * that is passed to a callback.
     */
   var asyncContext: js.UndefOr[js.Any] = js.undefined
 }

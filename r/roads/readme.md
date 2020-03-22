@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads
 
-Typings are for version 6.1.0
+Typings are for version 6.1.2
 
 ## Library description:
 An isomophic http framework

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "merge-descriptors"
-version := "1.0-dt-20180214Z-39959f"
+version := "1.0-dt-20200225Z-39959f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

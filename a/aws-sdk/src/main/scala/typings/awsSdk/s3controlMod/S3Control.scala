@@ -65,6 +65,19 @@ trait S3Control extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Delete the tags on a Amazon S3 batch operations job, if any.
+    */
+  def deleteJobTagging(): Request[DeleteJobTaggingResult, AWSError] = js.native
+  def deleteJobTagging(callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobTaggingResult, Unit]): Request[DeleteJobTaggingResult, AWSError] = js.native
+  /**
+    * Delete the tags on a Amazon S3 batch operations job, if any.
+    */
+  def deleteJobTagging(params: DeleteJobTaggingRequest): Request[DeleteJobTaggingResult, AWSError] = js.native
+  def deleteJobTagging(
+    params: DeleteJobTaggingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobTaggingResult, Unit]
+  ): Request[DeleteJobTaggingResult, AWSError] = js.native
+  /**
     * Removes the PublicAccessBlock configuration for an Amazon Web Services account.
     */
   def deletePublicAccessBlock(): Request[js.Object, AWSError] = js.native
@@ -130,6 +143,19 @@ trait S3Control extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetAccessPointPolicyStatusResult, Unit]
   ): Request[GetAccessPointPolicyStatusResult, AWSError] = js.native
   /**
+    * Retrieve the tags on a Amazon S3 batch operations job.
+    */
+  def getJobTagging(): Request[GetJobTaggingResult, AWSError] = js.native
+  def getJobTagging(callback: js.Function2[/* err */ AWSError, /* data */ GetJobTaggingResult, Unit]): Request[GetJobTaggingResult, AWSError] = js.native
+  /**
+    * Retrieve the tags on a Amazon S3 batch operations job.
+    */
+  def getJobTagging(params: GetJobTaggingRequest): Request[GetJobTaggingResult, AWSError] = js.native
+  def getJobTagging(
+    params: GetJobTaggingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJobTaggingResult, Unit]
+  ): Request[GetJobTaggingResult, AWSError] = js.native
+  /**
     * Retrieves the PublicAccessBlock configuration for an Amazon Web Services account.
     */
   def getPublicAccessBlock(): Request[GetPublicAccessBlockOutput, AWSError] = js.native
@@ -181,6 +207,19 @@ trait S3Control extends Service {
     params: PutAccessPointPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Replace the set of tags on a Amazon S3 batch operations job.
+    */
+  def putJobTagging(): Request[PutJobTaggingResult, AWSError] = js.native
+  def putJobTagging(callback: js.Function2[/* err */ AWSError, /* data */ PutJobTaggingResult, Unit]): Request[PutJobTaggingResult, AWSError] = js.native
+  /**
+    * Replace the set of tags on a Amazon S3 batch operations job.
+    */
+  def putJobTagging(params: PutJobTaggingRequest): Request[PutJobTaggingResult, AWSError] = js.native
+  def putJobTagging(
+    params: PutJobTaggingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutJobTaggingResult, Unit]
+  ): Request[PutJobTaggingResult, AWSError] = js.native
   /**
     * Creates or modifies the PublicAccessBlock configuration for an Amazon Web Services account.
     */

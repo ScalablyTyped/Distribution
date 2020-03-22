@@ -9,7 +9,7 @@ trait DescribeFleetHistoryResult extends js.Object {
   /**
     * The ID of the EC Fleet.
     */
-  var FleetId: js.UndefOr[FleetIdentifier] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.native
   /**
     * Information about the events in the history of the EC2 Fleet.
     */
@@ -31,7 +31,7 @@ trait DescribeFleetHistoryResult extends js.Object {
 object DescribeFleetHistoryResult {
   @scala.inline
   def apply(
-    FleetId: FleetIdentifier = null,
+    FleetId: FleetId = null,
     HistoryRecords: HistoryRecordSet = null,
     LastEvaluatedTime: DateTime = null,
     NextToken: String = null,

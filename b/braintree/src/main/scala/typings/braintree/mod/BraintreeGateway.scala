@@ -17,7 +17,7 @@ class BraintreeGateway protected () extends js.Object {
   var customer: CustomerGateway = js.native
   var discount: DiscountGateway = js.native
   var dispute: DisputeGateway = js.native
-  var merchantAccountGateway: MerchantAccountGateway = js.native
+  var merchantAccount: MerchantAccountGateway = js.native
   var paymentMethod: PaymentMethodGateway = js.native
   var paymentMethodNonce: PaymentMethodNonceGateway = js.native
   var plan: PlanGateway = js.native

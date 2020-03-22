@@ -156,6 +156,32 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStageResponse, Unit]
   ): Request[CreateStageResponse, AWSError] = js.native
   /**
+    * Creates a VPC link.
+    */
+  def createVpcLink(): Request[CreateVpcLinkResponse, AWSError] = js.native
+  def createVpcLink(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcLinkResponse, Unit]): Request[CreateVpcLinkResponse, AWSError] = js.native
+  /**
+    * Creates a VPC link.
+    */
+  def createVpcLink(params: CreateVpcLinkRequest): Request[CreateVpcLinkResponse, AWSError] = js.native
+  def createVpcLink(
+    params: CreateVpcLinkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcLinkResponse, Unit]
+  ): Request[CreateVpcLinkResponse, AWSError] = js.native
+  /**
+    * Deletes the AccessLogSettings for a Stage. To disable access logging for a Stage, delete its AccessLogSettings.
+    */
+  def deleteAccessLogSettings(): Request[js.Object, AWSError] = js.native
+  def deleteAccessLogSettings(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the AccessLogSettings for a Stage. To disable access logging for a Stage, delete its AccessLogSettings.
+    */
+  def deleteAccessLogSettings(params: DeleteAccessLogSettingsRequest): Request[js.Object, AWSError] = js.native
+  def deleteAccessLogSettings(
+    params: DeleteAccessLogSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Deletes an Api resource.
     */
   def deleteApi(): Request[js.Object, AWSError] = js.native
@@ -277,6 +303,19 @@ trait ApiGatewayV2 extends Service {
   def deleteRoute(params: DeleteRouteRequest): Request[js.Object, AWSError] = js.native
   def deleteRoute(params: DeleteRouteRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
+    * Deletes a route request parameter.
+    */
+  def deleteRouteRequestParameter(): Request[js.Object, AWSError] = js.native
+  def deleteRouteRequestParameter(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a route request parameter.
+    */
+  def deleteRouteRequestParameter(params: DeleteRouteRequestParameterRequest): Request[js.Object, AWSError] = js.native
+  def deleteRouteRequestParameter(
+    params: DeleteRouteRequestParameterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Deletes a RouteResponse.
     */
   def deleteRouteResponse(): Request[js.Object, AWSError] = js.native
@@ -312,6 +351,19 @@ trait ApiGatewayV2 extends Service {
     */
   def deleteStage(params: DeleteStageRequest): Request[js.Object, AWSError] = js.native
   def deleteStage(params: DeleteStageRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a VPC link.
+    */
+  def deleteVpcLink(): Request[DeleteVpcLinkResponse, AWSError] = js.native
+  def deleteVpcLink(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcLinkResponse, Unit]): Request[DeleteVpcLinkResponse, AWSError] = js.native
+  /**
+    * Deletes a VPC link.
+    */
+  def deleteVpcLink(params: DeleteVpcLinkRequest): Request[DeleteVpcLinkResponse, AWSError] = js.native
+  def deleteVpcLink(
+    params: DeleteVpcLinkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcLinkResponse, Unit]
+  ): Request[DeleteVpcLinkResponse, AWSError] = js.native
   /**
     * Gets an Api resource.
     */
@@ -622,6 +674,32 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetTagsResponse, Unit]
   ): Request[GetTagsResponse, AWSError] = js.native
   /**
+    * Gets a VPC link.
+    */
+  def getVpcLink(): Request[GetVpcLinkResponse, AWSError] = js.native
+  def getVpcLink(callback: js.Function2[/* err */ AWSError, /* data */ GetVpcLinkResponse, Unit]): Request[GetVpcLinkResponse, AWSError] = js.native
+  /**
+    * Gets a VPC link.
+    */
+  def getVpcLink(params: GetVpcLinkRequest): Request[GetVpcLinkResponse, AWSError] = js.native
+  def getVpcLink(
+    params: GetVpcLinkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVpcLinkResponse, Unit]
+  ): Request[GetVpcLinkResponse, AWSError] = js.native
+  /**
+    * Gets a collection of VPC links.
+    */
+  def getVpcLinks(): Request[GetVpcLinksResponse, AWSError] = js.native
+  def getVpcLinks(callback: js.Function2[/* err */ AWSError, /* data */ GetVpcLinksResponse, Unit]): Request[GetVpcLinksResponse, AWSError] = js.native
+  /**
+    * Gets a collection of VPC links.
+    */
+  def getVpcLinks(params: GetVpcLinksRequest): Request[GetVpcLinksResponse, AWSError] = js.native
+  def getVpcLinks(
+    params: GetVpcLinksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVpcLinksResponse, Unit]
+  ): Request[GetVpcLinksResponse, AWSError] = js.native
+  /**
     * Imports an API.
     */
   def importApi(): Request[ImportApiResponse, AWSError] = js.native
@@ -816,5 +894,18 @@ trait ApiGatewayV2 extends Service {
     params: UpdateStageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateStageResponse, Unit]
   ): Request[UpdateStageResponse, AWSError] = js.native
+  /**
+    * Updates a VPC link.
+    */
+  def updateVpcLink(): Request[UpdateVpcLinkResponse, AWSError] = js.native
+  def updateVpcLink(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcLinkResponse, Unit]): Request[UpdateVpcLinkResponse, AWSError] = js.native
+  /**
+    * Updates a VPC link.
+    */
+  def updateVpcLink(params: UpdateVpcLinkRequest): Request[UpdateVpcLinkResponse, AWSError] = js.native
+  def updateVpcLink(
+    params: UpdateVpcLinkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVpcLinkResponse, Unit]
+  ): Request[UpdateVpcLinkResponse, AWSError] = js.native
 }
 

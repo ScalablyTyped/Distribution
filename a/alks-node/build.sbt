@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "alks-node"
-version := "0.9-dt-20190711Z-8efa54"
+version := "0.9-dt-20200225Z-8efa54"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

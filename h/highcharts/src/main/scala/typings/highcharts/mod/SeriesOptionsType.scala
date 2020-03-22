@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
   - typings.highcharts.mod.SeriesDemaOptions
   - typings.highcharts.mod.SeriesDependencywheelOptions
   - typings.highcharts.mod.SeriesDpoOptions
+  - typings.highcharts.mod.SeriesDumbbellOptions
   - typings.highcharts.mod.SeriesEmaOptions
   - typings.highcharts.mod.SeriesErrorbarOptions
   - typings.highcharts.mod.SeriesFlagsOptions
@@ -50,6 +51,7 @@ import scala.scalajs.js.annotation._
   - typings.highcharts.mod.SeriesLinearregressionOptions
   - typings.highcharts.mod.SeriesLinearregressionslopeOptions
   - typings.highcharts.mod.SeriesLineOptions
+  - typings.highcharts.mod.SeriesLollipopOptions
   - typings.highcharts.mod.SeriesMacdOptions
   - typings.highcharts.mod.SeriesMapbubbleOptions
   - typings.highcharts.mod.SeriesMaplineOptions

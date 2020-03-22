@@ -23,8 +23,14 @@ trait PaneOptions extends js.Object {
     */
   var endAngle: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts) The inner size of the pane, either as a number defining
+    * pixels, or a percentage defining a percentage of the pane's size.
+    */
+  var innerSize: js.UndefOr[Double | String] = js.undefined
+  /**
     * (Highcharts) The size of the pane, either as a number defining pixels, or
-    * a percentage defining a percentage of the plot are.
+    * a percentage defining a percentage of the available plot area (the
+    * smallest of the plot height or plot width).
     */
   var size: js.UndefOr[Double | String] = js.undefined
   /**
@@ -40,6 +46,7 @@ object PaneOptions {
     background: js.Array[PaneBackgroundOptions] = null,
     center: js.Array[String | Double] = null,
     endAngle: Int | Double = null,
+    innerSize: Double | String = null,
     size: Double | String = null,
     startAngle: Int | Double = null
   ): PaneOptions = {
@@ -47,6 +54,7 @@ object PaneOptions {
     if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (innerSize != null) __obj.updateDynamic("innerSize")(innerSize.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneOptions]

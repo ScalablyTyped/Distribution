@@ -18,6 +18,10 @@ trait CacheParameterGroup extends js.Object {
     * The description for this cache parameter group.
     */
   var Description: js.UndefOr[String] = js.native
+  /**
+    * Indicates whether the parameter group is associated with a Global Datastore
+    */
+  var IsGlobal: js.UndefOr[Boolean] = js.native
 }
 
 object CacheParameterGroup {
@@ -25,12 +29,14 @@ object CacheParameterGroup {
   def apply(
     CacheParameterGroupFamily: String = null,
     CacheParameterGroupName: String = null,
-    Description: String = null
+    Description: String = null,
+    IsGlobal: js.UndefOr[scala.Boolean] = js.undefined
   ): CacheParameterGroup = {
     val __obj = js.Dynamic.literal()
     if (CacheParameterGroupFamily != null) __obj.updateDynamic("CacheParameterGroupFamily")(CacheParameterGroupFamily.asInstanceOf[js.Any])
     if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsGlobal)) __obj.updateDynamic("IsGlobal")(IsGlobal.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheParameterGroup]
   }
 }

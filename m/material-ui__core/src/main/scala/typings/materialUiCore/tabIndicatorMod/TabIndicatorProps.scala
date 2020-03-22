@@ -1,7 +1,7 @@
 package typings.materialUiCore.tabIndicatorMod
 
 import typings.materialUiCore.AnonLeft
-import typings.materialUiCore.PartialClassNameMapTabIndicatorClassKey
+import typings.materialUiCore.PartialClassNameMapTabInd
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -147,7 +147,7 @@ trait TabIndicatorProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTabIndicatorClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTabInd] = js.native
   var color: secondary | primary | String = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -329,7 +329,7 @@ object TabIndicatorProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTabIndicatorClassKey = null,
+    classes: PartialClassNameMapTabInd = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: AnonHtml = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deku"
-version := "v2.0-dt-20190322Z-8fc5fb"
+version := "v2.0-dt-20200225Z-8fc5fb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

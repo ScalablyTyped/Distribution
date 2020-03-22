@@ -27,7 +27,6 @@ class NamedItemCollection () extends ClientObject {
   def add(name: String, reference: String): NamedItem = js.native
   def add(name: String, reference: String, comment: String): NamedItem = js.native
   /**
-    *
     * Adds a new name to the collection of the given scope.
     *
     * [Api set: ExcelApi 1.4]
@@ -40,7 +39,6 @@ class NamedItemCollection () extends ClientObject {
   def add(name: String, reference: Range): NamedItem = js.native
   def add(name: String, reference: Range, comment: String): NamedItem = js.native
   /**
-    *
     * Adds a new name to the collection of the given scope using the user's locale for the formula.
     *
     * [Api set: ExcelApi 1.4]
@@ -53,14 +51,12 @@ class NamedItemCollection () extends ClientObject {
   def addFormulaLocal(name: String, formula: String): NamedItem = js.native
   def addFormulaLocal(name: String, formula: String, comment: String): NamedItem = js.native
   /**
-    *
     * Gets the number of named items in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a NamedItem object using its name.
     *
     * [Api set: ExcelApi 1.1]
@@ -69,7 +65,6 @@ class NamedItemCollection () extends ClientObject {
     */
   def getItem(name: String): NamedItem = js.native
   /**
-    *
     * Gets a NamedItem object using its name. If the nameditem object does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.4]

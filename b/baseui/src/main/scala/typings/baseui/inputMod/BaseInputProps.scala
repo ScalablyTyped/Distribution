@@ -31,6 +31,7 @@ trait BaseInputProps[T] extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
+  var inputMode: js.UndefOr[String] = js.undefined
   var inputRef: js.UndefOr[Ref[T]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
@@ -48,7 +49,7 @@ trait BaseInputProps[T] extends js.Object {
   var rows: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 
 object BaseInputProps {
@@ -65,6 +66,7 @@ object BaseInputProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    inputMode: String = null,
     inputRef: Ref[T] = null,
     max: Int | Double = null,
     min: Int | Double = null,
@@ -82,7 +84,7 @@ object BaseInputProps {
     rows: Int | Double = null,
     size: mini | default_ | compact | large_ = null,
     `type`: String = null,
-    value: String = null
+    value: String | Double = null
   ): BaseInputProps[T] = {
     val __obj = js.Dynamic.literal()
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
@@ -96,6 +98,7 @@ object BaseInputProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

@@ -5,6 +5,7 @@ import typings.pulumiAws.inputMod.msk.ClusterBrokerNodeGroupInfo
 import typings.pulumiAws.inputMod.msk.ClusterClientAuthentication
 import typings.pulumiAws.inputMod.msk.ClusterConfigurationInfo
 import typings.pulumiAws.inputMod.msk.ClusterEncryptionInfo
+import typings.pulumiAws.inputMod.msk.ClusterOpenMonitoring
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,6 +46,10 @@ trait ClusterArgs extends js.Object {
     */
   val numberOfBrokerNodes: Input[Double] = js.native
   /**
+    * Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+    */
+  val openMonitoring: js.UndefOr[Input[ClusterOpenMonitoring]] = js.native
+  /**
     * A mapping of tags to assign to the resource
     */
   val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
@@ -61,6 +66,7 @@ object ClusterArgs {
     configurationInfo: Input[ClusterConfigurationInfo] = null,
     encryptionInfo: Input[ClusterEncryptionInfo] = null,
     enhancedMonitoring: Input[String] = null,
+    openMonitoring: Input[ClusterOpenMonitoring] = null,
     tags: Input[StringDictionary[_]] = null
   ): ClusterArgs = {
     val __obj = js.Dynamic.literal(brokerNodeGroupInfo = brokerNodeGroupInfo.asInstanceOf[js.Any], clusterName = clusterName.asInstanceOf[js.Any], kafkaVersion = kafkaVersion.asInstanceOf[js.Any], numberOfBrokerNodes = numberOfBrokerNodes.asInstanceOf[js.Any])
@@ -68,6 +74,7 @@ object ClusterArgs {
     if (configurationInfo != null) __obj.updateDynamic("configurationInfo")(configurationInfo.asInstanceOf[js.Any])
     if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo.asInstanceOf[js.Any])
     if (enhancedMonitoring != null) __obj.updateDynamic("enhancedMonitoring")(enhancedMonitoring.asInstanceOf[js.Any])
+    if (openMonitoring != null) __obj.updateDynamic("openMonitoring")(openMonitoring.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterArgs]
   }

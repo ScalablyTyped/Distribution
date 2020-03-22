@@ -32,14 +32,12 @@ class ChartPointsCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ChartPoint] = js.native
   /**
-    *
     * Returns the number of chart points in the series.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Retrieve a point based on its position within the series.
     *
     * [Api set: ExcelApi 1.1]

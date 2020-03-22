@@ -10,6 +10,7 @@ trait PointerInteraction
   extends typings.ol.interactionInteractionMod.default {
   var handlingDownUpSequence: Boolean = js.native
   var targetPointers: js.Array[PointerEvent] = js.native
+  def getPointerCount(): Double = js.native
   /* protected */ def handleDownEvent(mapBrowserEvent: typings.ol.mapBrowserPointerEventMod.default): Boolean = js.native
   /* protected */ def handleDragEvent(mapBrowserEvent: typings.ol.mapBrowserPointerEventMod.default): Unit = js.native
   /* protected */ def handleMoveEvent(mapBrowserEvent: typings.ol.mapBrowserPointerEventMod.default): Unit = js.native

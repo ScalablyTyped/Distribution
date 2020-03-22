@@ -12,7 +12,7 @@ object job extends js.Object {
   def apply(
     cronTime: String,
     onTick: js.Function0[Unit],
-    onComplete: js.UndefOr[CronCommand],
+    onComplete: js.UndefOr[CronCommand | Null],
     start: js.UndefOr[Boolean],
     timeZone: js.UndefOr[String],
     context: js.UndefOr[js.Any],
@@ -23,7 +23,7 @@ object job extends js.Object {
   def apply(
     cronTime: Moment,
     onTick: js.Function0[Unit],
-    onComplete: js.UndefOr[CronCommand],
+    onComplete: js.UndefOr[CronCommand | Null],
     start: js.UndefOr[Boolean],
     timeZone: js.UndefOr[String],
     context: js.UndefOr[js.Any],
@@ -34,7 +34,7 @@ object job extends js.Object {
   def apply(
     cronTime: Date,
     onTick: js.Function0[Unit],
-    onComplete: js.UndefOr[CronCommand],
+    onComplete: js.UndefOr[CronCommand | Null],
     start: js.UndefOr[Boolean],
     timeZone: js.UndefOr[String],
     context: js.UndefOr[js.Any],

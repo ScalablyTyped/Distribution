@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * skin vertices from object space to world space.
   * @param {pc.Skin} skin - The skin that will provide the inverse bind pose matrices to
   * generate the final matrix palette.
+  * @property {pc.GraphNode[]} bones An array of nodes representing each bone in this skin instance.
   */
 @JSImport("playcanvas", "SkinInstance")
 @js.native

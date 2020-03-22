@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "empower"
-version := "1.2.1-dt-20190322Z-8b6f9e"
+version := "1.2.1-dt-20200226Z-8b6f9e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

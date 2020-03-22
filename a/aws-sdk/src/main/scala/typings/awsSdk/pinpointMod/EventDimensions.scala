@@ -11,7 +11,7 @@ trait EventDimensions extends js.Object {
     */
   var Attributes: js.UndefOr[MapOfAttributeDimension] = js.native
   /**
-    * The name of the event that causes the campaign to be sent or the journey activity to be performed. This can be a standard type of event that Amazon Pinpoint generates, such as _email.delivered, or a custom event that's specific to your application.
+    * The name of the event that causes the campaign to be sent or the journey activity to be performed. This can be a standard event that Amazon Pinpoint generates, such as _email.delivered. For campaigns, this can also be a custom event that's specific to your application. For information about standard events, see Streaming Amazon Pinpoint Events in the Amazon Pinpoint Developer Guide.
     */
   var EventType: js.UndefOr[SetDimension] = js.native
   /**

@@ -11,9 +11,9 @@ trait PatchRule extends js.Object {
     */
   var ApproveAfterDays: js.UndefOr[typings.awsSdk.ssmMod.ApproveAfterDays] = js.native
   /**
-    * The cutoff date for auto approval of released patches. Any patches released on or before this date will be installed automatically
+    * Example API
     */
-  var ApproveUntilDate: js.UndefOr[PatchStringDate] = js.native
+  var ApproveUntilDate: js.UndefOr[PatchStringDateTime] = js.native
   /**
     * A compliance severity level for all approved patches in a patch baseline. Valid compliance severity levels include the following: Unspecified, Critical, High, Medium, Low, and Informational.
     */
@@ -33,7 +33,7 @@ object PatchRule {
   def apply(
     PatchFilterGroup: PatchFilterGroup,
     ApproveAfterDays: Int | Double = null,
-    ApproveUntilDate: PatchStringDate = null,
+    ApproveUntilDate: PatchStringDateTime = null,
     ComplianceLevel: PatchComplianceLevel = null,
     EnableNonSecurity: js.UndefOr[scala.Boolean] = js.undefined
   ): PatchRule = {

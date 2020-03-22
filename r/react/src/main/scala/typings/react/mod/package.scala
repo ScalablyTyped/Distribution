@@ -60,6 +60,24 @@ package object mod {
   // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
   // The destructor is itself only allowed to return void.
   type EffectCallback = js.Function0[scala.Unit | js.Function0[js.UndefOr[scala.Unit]]]
+  /**
+    * Gets the instance type for a React element. The instance will be different for various component types:
+    *
+    * - React class components will be the class instance. So if you had `class Foo extends React.Component<{}> {}`
+    *   and used `React.ElementRef<typeof Foo>` then the type would be the instance of `Foo`.
+    * - React stateless functional components do not have a backing instance and so `React.ElementRef<typeof Bar>`
+    *   (when `Bar` is `function Bar() {}`) will give you the `undefined` type.
+    * - JSX intrinsics like `div` will give you their DOM instance. For `React.ElementRef<'div'>` that would be
+    *   `HTMLDivElement`. For `React.ElementRef<'input'>` that would be `HTMLInputElement`.
+    * - React stateless functional components that forward a `ref` will give you the `ElementRef` of the forwarded
+    *   to component.
+    *
+    * `C` must be the type _of_ a React component so you need to use typeof as in React.ElementRef<typeof MyComponent>.
+    *
+    * @todo In Flow, this works a little different with forwarded refs and the `AbstractComponent` that
+    *       `React.forwardRef()` returns.
+    */
+  type ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any */] = js.UndefOr[js.Any | typings.std.InstanceType[C]]
   //
   // React Elements
   // ----------------------------------------------------------------------
@@ -188,7 +206,13 @@ package object mod {
   type ReducerStateWithoutAction[R /* <: typings.react.mod.ReducerWithoutAction[_] */] = js.Any
   // If useReducer accepts a reducer without action, dispatch may be called without any parameters.
   type ReducerWithoutAction[S] = js.Function1[/* prevState */ S, S]
-  type Ref[T] = (js.Function1[/* instance */ T | scala.Null, scala.Unit]) | typings.react.mod.RefObject[T] | scala.Null
+  type Ref[T] = typings.react.mod.RefCallback[T] | typings.react.mod.RefObject[T] | scala.Null
+  type RefCallback[T] = js.Function1[/* instance */ T | scala.Null, scala.Unit]
+  /**
+    * @deprecated Use ForwardRefRenderingFunction. forwardRef doesn't accept a
+    *             "real" component.
+    */
+  type RefForwardingComponent[T, P] = typings.react.mod.ForwardRefRenderFunction[T, P]
   type Requireable[T] = typings.propTypes.mod.Requireable[T]
   //
   // Class Interfaces

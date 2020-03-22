@@ -23,7 +23,6 @@ class PageBreakCollection () extends ClientObject {
   val items: js.Array[PageBreak] = js.native
   def add(pageBreakRange: String): PageBreak = js.native
   /**
-    *
     * Adds a page break before the top-left cell of the range specified.
     *
     * [Api set: ExcelApi 1.9]
@@ -32,14 +31,12 @@ class PageBreakCollection () extends ClientObject {
     */
   def add(pageBreakRange: Range): PageBreak = js.native
   /**
-    *
     * Gets the number of page breaks in the collection.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a page break object via the index.
     *
     * [Api set: ExcelApi 1.9]
@@ -58,7 +55,6 @@ class PageBreakCollection () extends ClientObject {
   def load(propertyNames: String): PageBreakCollection = js.native
   def load(propertyNames: js.Array[String]): PageBreakCollection = js.native
   /**
-    *
     * Resets all manual page breaks in the collection.
     *
     * [Api set: ExcelApi 1.9]

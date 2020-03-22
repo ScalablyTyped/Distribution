@@ -11,6 +11,7 @@ trait TrailEncodeEntry
 object TrailEncodeEntry {
   @scala.inline
   def apply(
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[StringValueRef] = null,
     defined: ProductionRule[BooleanValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
@@ -36,6 +37,7 @@ object TrailEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): TrailEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (defined != null) __obj.updateDynamic("defined")(defined.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])

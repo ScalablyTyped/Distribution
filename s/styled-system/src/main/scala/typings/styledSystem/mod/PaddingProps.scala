@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'p' | 'padding' | 'pt' | 'paddingTop' | 'pb' | 'paddingBottom' | 'pl' | 'paddingLeft' | 'pr' | 'paddingRight' | 'py' | 'px'> */
+/* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'p' | 'padding' | 'pt' | 'paddingTop' | 'pb' | 'paddingBottom' | 'pl' | 'paddingLeft' | 'pr' | 'paddingRight' | 'py' | 'paddingY' | 'px' | 'paddingX'> */
 trait PaddingProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   var p: js.UndefOr[
     ResponsiveValue[
@@ -37,6 +37,18 @@ trait PaddingProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obj
     ]
   ] = js.undefined
   var paddingTop: js.UndefOr[
+    ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ]
+  ] = js.undefined
+  var paddingX: js.UndefOr[
+    ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ]
+  ] = js.undefined
+  var paddingY: js.UndefOr[
     ResponsiveValue[
       ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
       ThemeType
@@ -107,6 +119,14 @@ object PaddingProps {
       ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
       ThemeType
     ] = null,
+    paddingX: ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ] = null,
+    paddingY: ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ] = null,
     pb: ResponsiveValue[
       ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
       ThemeType
@@ -139,6 +159,8 @@ object PaddingProps {
     if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
     if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
     if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
+    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
+    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
     if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
     if (pl != null) __obj.updateDynamic("pl")(pl.asInstanceOf[js.Any])
     if (pr != null) __obj.updateDynamic("pr")(pr.asInstanceOf[js.Any])

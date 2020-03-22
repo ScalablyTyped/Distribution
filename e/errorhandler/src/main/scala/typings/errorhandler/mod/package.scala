@@ -9,7 +9,7 @@ package object mod {
     /* err */ typings.std.Error, 
     /* str */ java.lang.String, 
     /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
-    /* res */ typings.express.mod.Response_, 
+    /* res */ typings.express.mod.Response_[js.Any], 
     scala.Unit
   ]
 }

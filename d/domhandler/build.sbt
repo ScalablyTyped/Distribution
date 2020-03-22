@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "domhandler"
-version := "2.4-dt-20190326Z-364f71"
+version := "2.4-dt-20200225Z-364f71"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

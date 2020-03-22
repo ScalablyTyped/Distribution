@@ -9,9 +9,7 @@ package object typesMod {
     typings.octokitPluginRestEndpointMethods.typesMod.ActionsListDownloadsForSelfHostedRunnerApplicationResponseItem
   ]
   type ActionsListSelfHostedRunnersForRepoResponse = js.Array[
-    js.Array[
-      typings.octokitPluginRestEndpointMethods.typesMod.ActionsListSelfHostedRunnersForRepoResponseItemItem
-    ]
+    typings.octokitPluginRestEndpointMethods.typesMod.ActionsListSelfHostedRunnersForRepoResponseItem
   ]
   type ActivityListNotificationsForRepoResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.ActivityListNotificationsForRepoResponseItem
@@ -39,6 +37,12 @@ package object typesMod {
   ]
   type AnyResponse = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<any> */ js.Any
   type AppsCreateInstallationTokenParamsPermissions = js.Object
+  type AppsListAccountsForPlanResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.AppsListAccountsForPlanResponseItem
+  ]
+  type AppsListAccountsForPlanStubbedResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.AppsListAccountsForPlanStubbedResponseItem
+  ]
   type AppsListAccountsUserOrOrgOnPlanResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.AppsListAccountsUserOrOrgOnPlanResponseItem
   ]
@@ -58,8 +62,17 @@ package object typesMod {
   type AppsListPlansStubbedResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.AppsListPlansStubbedResponseItem
   ]
+  type AppsListSubscriptionsForAuthenticatedUserResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.AppsListSubscriptionsForAuthenticatedUserResponseItem
+  ]
+  type AppsListSubscriptionsForAuthenticatedUserStubbedResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.AppsListSubscriptionsForAuthenticatedUserStubbedResponseItem
+  ]
   type ChecksListAnnotationsResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.ChecksListAnnotationsResponseItem
+  ]
+  type CodesOfConductGetAllCodesOfConductResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.CodesOfConductGetAllCodesOfConductResponseItem
   ]
   type CodesOfConductListConductCodesResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.CodesOfConductListConductCodesResponseItem
@@ -67,6 +80,7 @@ package object typesMod {
   type EmptyParams = js.Object
   type GistsListCommentsResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.GistsListCommentsResponseItem]
   type GistsListCommitsResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.GistsListCommitsResponseItem]
+  type GistsListForUserResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.GistsListForUserResponseItem]
   type GistsListForksResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.GistsListForksResponseItem]
   type GistsListPublicForUserResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.GistsListPublicForUserResponseItem
@@ -112,6 +126,9 @@ package object typesMod {
   ]
   type IssuesListResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.IssuesListResponseItem]
   type IssuesRemoveLabelResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.IssuesRemoveLabelResponseItem]
+  type IssuesReplaceAllLabelsResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.IssuesReplaceAllLabelsResponseItem
+  ]
   type IssuesReplaceLabelsResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.IssuesReplaceLabelsResponseItem
   ]
@@ -338,6 +355,9 @@ package object typesMod {
   type UsersAddEmailsResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.UsersAddEmailsResponseItem]
   type UsersListBlockedResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.UsersListBlockedResponseItem]
   type UsersListEmailsResponse = js.Array[typings.octokitPluginRestEndpointMethods.typesMod.UsersListEmailsResponseItem]
+  type UsersListFollowedByAuthenticatedResponse = js.Array[
+    typings.octokitPluginRestEndpointMethods.typesMod.UsersListFollowedByAuthenticatedResponseItem
+  ]
   type UsersListFollowersForAuthenticatedUserResponse = js.Array[
     typings.octokitPluginRestEndpointMethods.typesMod.UsersListFollowersForAuthenticatedUserResponseItem
   ]

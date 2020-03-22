@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait AnonColor extends js.Object {
   var color: Color
-  var width: Double
+  var range: js.Array[Double]
 }
 
 object AnonColor {
   @scala.inline
-  def apply(color: Color, width: Double): AnonColor = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  def apply(color: Color, range: js.Array[Double]): AnonColor = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AnonColor]
   }

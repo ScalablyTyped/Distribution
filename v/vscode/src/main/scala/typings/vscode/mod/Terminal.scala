@@ -14,6 +14,20 @@ trait Terminal extends js.Object {
   		 */
   val creationOptions: TerminalOptions | ExtensionTerminalOptions = js.native
   /**
+  		 * The exit status of the terminal, this will be undefined while the terminal is active.
+  		 *
+  		 * **Example:** Show a notification with the exit code when the terminal exits with a
+  		 * non-zero exit code.
+  		 * ```typescript
+  		 * window.onDidCloseTerminal(t => {
+  		 *   if (t.exitStatus && t.exitStatus.code) {
+  		 *   	vscode.window.showInformationMessage(`Exit code: ${t.exitStatus.code}`);
+  		 *   }
+  		 * });
+  		 * ```
+  		 */
+  val exitStatus: js.UndefOr[TerminalExitStatus] = js.native
+  /**
   		 * The name of the terminal.
   		 */
   val name: String = js.native

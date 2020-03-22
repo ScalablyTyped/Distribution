@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_pm"
-version := "0.13-dt-20190212Z-8b338f"
+version := "0.13-dt-20190212Z-e60727"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-67022f",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20200117Z-7d3a14",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20200320Z-525e0d",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

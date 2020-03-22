@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mailcheck"
-version := "1.1-dt-20190322Z-36b301"
+version := "1.1-dt-20200317Z-5af5d9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

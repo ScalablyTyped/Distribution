@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object cognitoUserPoolTriggerMod {
   type CognitoUserPoolEvent = typings.awsLambda.cognitoUserPoolTriggerMod.CognitoUserPoolTriggerEvent
-  type CognitoUserPoolTriggerHandler = typings.awsLambda.handerMod.Handler[typings.awsLambda.cognitoUserPoolTriggerMod.CognitoUserPoolTriggerEvent, js.Any]
+  type CognitoUserPoolTriggerHandler = typings.awsLambda.handlerMod.Handler[typings.awsLambda.cognitoUserPoolTriggerMod.CognitoUserPoolTriggerEvent, js.Any]
 }

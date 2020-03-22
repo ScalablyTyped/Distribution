@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-env" : "0.6.1"
+      "apollo-env" : "0.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-env" : "0.6.1"
+      "apollo-env" : "0.6.2"
     }
   ],
   "compile-devDependencies" : [

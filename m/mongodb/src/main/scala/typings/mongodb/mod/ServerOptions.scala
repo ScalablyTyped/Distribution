@@ -9,30 +9,31 @@ import scala.scalajs.js.annotation._
 
 trait ServerOptions extends SSLOptions {
   /**
-    * Default: false;
+    * @default false
     */
   var domainsEnabled: js.UndefOr[Boolean] = js.undefined
   /**
     * Specify a file sync write concern
-    * Default: false
+    * @default false
     */
   var fsync: js.UndefOr[Boolean] = js.undefined
   /**
-    * Default: 10000; The High availability period for replicaset inquiry
+    * The High availability period for replicaset inquiry
+    * @default 10000
     */
   var haInterval: js.UndefOr[scala.Double] = js.undefined
   /**
     * Enable command monitoring for this client
-    * Default: false
+    * @default false
     */
   var monitorCommands: js.UndefOr[Boolean] = js.undefined
   /**
-    * Default: true;
+    * @default true
     */
   var monitoring: js.UndefOr[Boolean] = js.undefined
   /**
     * Will wait # milliseconds between retries
-    * Default: 1000;
+    * @default 1000
     */
   var reconnectInterval: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -40,7 +41,7 @@ trait ServerOptions extends SSLOptions {
     * the MongoDB driver will try to reconnect every reconnectInterval milliseconds for reconnectTries
     * times, and give up afterward. When the driver gives up, the mongoose connection emits a
     * reconnectFailed event.
-    * Default: 30
+    * @default 30
     */
   var reconnectTries: js.UndefOr[scala.Double] = js.undefined
   /**

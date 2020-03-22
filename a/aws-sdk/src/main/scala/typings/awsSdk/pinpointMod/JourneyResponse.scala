@@ -63,7 +63,7 @@ trait JourneyResponse extends js.Object {
     */
   var State: js.UndefOr[typings.awsSdk.pinpointMod.State] = js.native
   /**
-    * A string-to-string map of key-value pairs that identifies the tags that are associated with the journey. Each tag consists of a required tag key and an associated tag value.
+    * This object is not used or supported.
     */
   var tags: js.UndefOr[MapOfString] = js.native
 }

@@ -1,6 +1,7 @@
 package typings.babelStandalone
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babelCore.mod.BabelFileResult
 import typings.babelCore.mod.FileResultCallback
 import typings.babelCore.mod.TransformOptions
 import typings.babelTypes.mod.Node
@@ -22,7 +23,7 @@ object mod extends js.Object {
   def registerPreset(name: String, preset: js.Function0[Unit]): Unit = js.native
   def registerPreset(name: String, preset: js.Object): Unit = js.native
   def registerPresets(newPresets: StringDictionary[js.Object | js.Function0[Unit]]): Unit = js.native
-  def transform(code: String, options: TransformOptions): String = js.native
+  def transform(code: String, options: TransformOptions): BabelFileResult = js.native
   def transformFromAst(ast: Node): Unit = js.native
   def transformFromAst(
     ast: Node,

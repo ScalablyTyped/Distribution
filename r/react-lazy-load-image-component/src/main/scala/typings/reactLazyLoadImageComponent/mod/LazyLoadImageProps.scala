@@ -37,6 +37,9 @@ import typings.react.mod.WheelEventHandler
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings._empty
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`additions text`
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`inline`
+import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`lazy`
+import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`no-referrer`
+import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`unsafe-url`
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.`use-credentials`
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.additions
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.all
@@ -51,6 +54,7 @@ import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.da
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.decimal
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.descending
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.dialog
+import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.eager
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.email
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.execute
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.grammar
@@ -69,6 +73,7 @@ import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.no
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.numeric
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.off
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.on
+import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.origin
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.other
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.page
 import typings.reactLazyLoadImageComponent.reactLazyLoadImageComponentStrings.polite
@@ -183,6 +188,7 @@ trait LazyLoadImageProps extends js.Object {
   var itemScope: js.UndefOr[Boolean] = js.undefined
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
+  var loading: js.UndefOr[eager | `lazy`] = js.undefined
   var onAbort: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.undefined
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.undefined
@@ -269,6 +275,7 @@ trait LazyLoadImageProps extends js.Object {
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
   var radioGroup: js.UndefOr[String] = js.undefined
+  var referrerPolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
@@ -388,6 +395,7 @@ object LazyLoadImageProps {
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
     lang: String = null,
+    loading: eager | `lazy` = null,
     onAbort: SyntheticEvent[HTMLImageElement, Event_] => Unit = null,
     onAnimationEnd: AnimationEvent[HTMLImageElement] => Unit = null,
     onAnimationIteration: AnimationEvent[HTMLImageElement] => Unit = null,
@@ -472,6 +480,7 @@ object LazyLoadImageProps {
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
+    referrerPolicy: `no-referrer` | origin | `unsafe-url` = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
@@ -583,6 +592,7 @@ object LazyLoadImageProps {
     if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
@@ -667,6 +677,7 @@ object LazyLoadImageProps {
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])

@@ -71,6 +71,14 @@ trait SlicerCollectionLoadOptions extends js.Object {
   var nameInFormula: js.UndefOr[Boolean] = js.native
   /**
     *
+    * For EACH ITEM in the collection: The style applied to the Slicer.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var slicerStyle: js.UndefOr[SlicerStyleLoadOptions] = js.native
+  /**
+    *
     * For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
     * [Api set: ExcelApi 1.10]

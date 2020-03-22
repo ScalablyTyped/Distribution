@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "prosemirror-markdown"
-version := "1.0-dt-20190822Z-f5903f"
+version := "1.0-dt-20190822Z-b3f3fe"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "linkify-it" % "2.1.0-dt-20190326Z-189a94",
-  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20190925Z-9bdc4a",
+  "org.scalablytyped" %%% "linkify-it" % "2.1.0-dt-20200225Z-189a94",
+  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20200226Z-478fc4",
   "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-1c1d85",
   "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190628Z-89b336",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")

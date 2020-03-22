@@ -57,7 +57,6 @@ class ShapeGroup () extends ClientObject {
     */
   def toJSON(): ShapeGroupData = js.native
   /**
-    *
     * Ungroups any grouped shapes in the specified shape group.
     *
     * [Api set: ExcelApi 1.9]

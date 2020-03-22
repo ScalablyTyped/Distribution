@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-scale
 
-Typings are for version 2.1
+Typings are for version 2.2
 
 ## Library description:
 Encodings that map abstract data to visual representation.

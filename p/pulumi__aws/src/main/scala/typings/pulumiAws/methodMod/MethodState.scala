@@ -51,7 +51,7 @@ trait MethodState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
 }
 
 object MethodState {
@@ -66,7 +66,7 @@ object MethodState {
     requestParameters: Input[StringDictionary[Input[Boolean]]] = null,
     requestValidatorId: Input[String] = null,
     resourceId: Input[String] = null,
-    restApi: Input[RestApi] = null
+    restApi: Input[String | RestApi] = null
   ): MethodState = {
     val __obj = js.Dynamic.literal()
     if (apiKeyRequired != null) __obj.updateDynamic("apiKeyRequired")(apiKeyRequired.asInstanceOf[js.Any])

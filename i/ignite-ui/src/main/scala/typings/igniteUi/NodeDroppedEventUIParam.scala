@@ -30,6 +30,10 @@ trait NodeDroppedEventUIParam extends js.Object {
   	 */
   var offset: js.UndefOr[js.Any] = js.undefined
   /**
+  	 * Gets a reference to the tree.
+  	 */
+  var owner: js.UndefOr[js.Any] = js.undefined
+  /**
   	 * Gets the target node data-path attribute.
   	 */
   var path: js.UndefOr[String] = js.undefined
@@ -37,6 +41,10 @@ trait NodeDroppedEventUIParam extends js.Object {
   	 * Gets a reference to the current position of the draggable element.
   	 */
   var position: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets a reference to the dropped source node object.
+  	 */
+  var sourceNode: js.UndefOr[js.Any] = js.undefined
 }
 
 object NodeDroppedEventUIParam {
@@ -48,8 +56,10 @@ object NodeDroppedEventUIParam {
     element: String = null,
     helper: String = null,
     offset: js.Any = null,
+    owner: js.Any = null,
     path: String = null,
-    position: js.Any = null
+    position: js.Any = null,
+    sourceNode: js.Any = null
   ): NodeDroppedEventUIParam = {
     val __obj = js.Dynamic.literal()
     if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
@@ -58,8 +68,10 @@ object NodeDroppedEventUIParam {
     if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
     if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeDroppedEventUIParam]
   }
 }

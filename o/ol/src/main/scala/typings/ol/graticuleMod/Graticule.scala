@@ -27,6 +27,7 @@ trait Graticule
   def once_precompose(`type`: precompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
   @JSName("once")
   def once_rendercomplete(`type`: rendercomplete, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): EventsKey = js.native
+  def strategyFunction(extent: Extent, resolution: Double): js.Array[Extent] = js.native
   @JSName("un")
   def un_postcompose(`type`: postcompose, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): Unit = js.native
   @JSName("un")

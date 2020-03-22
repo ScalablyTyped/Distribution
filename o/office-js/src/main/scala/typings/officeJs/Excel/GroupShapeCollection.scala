@@ -25,14 +25,12 @@ class GroupShapeCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Shape] = js.native
   /**
-    *
     * Returns the number of shapes in the shape group. Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a shape using its Name or ID.
     *
     * [Api set: ExcelApi 1.9]
@@ -41,7 +39,6 @@ class GroupShapeCollection () extends ClientObject {
     */
   def getItem(key: String): Shape = js.native
   /**
-    *
     * Gets a shape based on its position in the collection.
     *
     * [Api set: ExcelApi 1.9]

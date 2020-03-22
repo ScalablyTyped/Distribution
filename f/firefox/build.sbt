@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firefox"
-version := "0.0-unknown-dt-20190322Z-cc7075"
+version := "0.0-unknown-dt-20200226Z-cc7075"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

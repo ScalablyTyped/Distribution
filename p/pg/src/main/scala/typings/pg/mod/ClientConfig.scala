@@ -11,8 +11,10 @@ trait ClientConfig extends js.Object {
   var connectionString: js.UndefOr[String] = js.undefined
   var database: js.UndefOr[String] = js.undefined
   var host: js.UndefOr[String] = js.undefined
+  var idle_in_transaction_session_timeout: js.UndefOr[Double] = js.undefined
   var keepAlive: js.UndefOr[Boolean] = js.undefined
   var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined
+  var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
   var password: js.UndefOr[String] = js.undefined
   var port: js.UndefOr[Double] = js.undefined
   var query_timeout: js.UndefOr[Double] = js.undefined
@@ -28,8 +30,10 @@ object ClientConfig {
     connectionString: String = null,
     database: String = null,
     host: String = null,
+    idle_in_transaction_session_timeout: Int | Double = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveInitialDelayMillis: Int | Double = null,
+    parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     port: Int | Double = null,
     query_timeout: Int | Double = null,
@@ -42,8 +46,10 @@ object ClientConfig {
     if (connectionString != null) __obj.updateDynamic("connectionString")(connectionString.asInstanceOf[js.Any])
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
+    if (idle_in_transaction_session_timeout != null) __obj.updateDynamic("idle_in_transaction_session_timeout")(idle_in_transaction_session_timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseInputDatesAsUTC)) __obj.updateDynamic("parseInputDatesAsUTC")(parseInputDatesAsUTC.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (query_timeout != null) __obj.updateDynamic("query_timeout")(query_timeout.asInstanceOf[js.Any])

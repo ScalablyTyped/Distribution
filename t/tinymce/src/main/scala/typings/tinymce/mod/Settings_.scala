@@ -25,6 +25,7 @@ trait Settings_ extends js.Object {
   var autosave_prefix: js.UndefOr[String] = js.undefined
   var autosave_restore_when_empty: js.UndefOr[Boolean] = js.undefined
   var autosave_retention: js.UndefOr[String] = js.undefined
+  var base_url: js.UndefOr[String] = js.undefined
   var block_formats: js.UndefOr[String] = js.undefined
   var body_class: js.UndefOr[String] = js.undefined
   var body_id: js.UndefOr[String] = js.undefined
@@ -190,6 +191,7 @@ object Settings_ {
     autosave_prefix: String = null,
     autosave_restore_when_empty: js.UndefOr[Boolean] = js.undefined,
     autosave_retention: String = null,
+    base_url: String = null,
     block_formats: String = null,
     body_class: String = null,
     body_id: String = null,
@@ -332,6 +334,7 @@ object Settings_ {
     if (autosave_prefix != null) __obj.updateDynamic("autosave_prefix")(autosave_prefix.asInstanceOf[js.Any])
     if (!js.isUndefined(autosave_restore_when_empty)) __obj.updateDynamic("autosave_restore_when_empty")(autosave_restore_when_empty.asInstanceOf[js.Any])
     if (autosave_retention != null) __obj.updateDynamic("autosave_retention")(autosave_retention.asInstanceOf[js.Any])
+    if (base_url != null) __obj.updateDynamic("base_url")(base_url.asInstanceOf[js.Any])
     if (block_formats != null) __obj.updateDynamic("block_formats")(block_formats.asInstanceOf[js.Any])
     if (body_class != null) __obj.updateDynamic("body_class")(body_class.asInstanceOf[js.Any])
     if (body_id != null) __obj.updateDynamic("body_id")(body_id.asInstanceOf[js.Any])

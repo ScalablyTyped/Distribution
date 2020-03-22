@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object prepareDestination extends js.Object {
   def apply(destination: String, params: Params): AnonNewUrl = js.native
+  def apply(destination: String, params: Params, isRedirect: Boolean): AnonNewUrl = js.native
 }
 

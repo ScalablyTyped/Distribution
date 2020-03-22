@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ArchiverError protected () extends Error {
   def this(code: String, data: js.Any) = this()
   var code: String = js.native
-         // Since archiver format support is modular, we cannot enumerate all possible error codes, as the modules can throw arbitrary ones.
+   // Since archiver format support is modular, we cannot enumerate all possible error codes, as the modules can throw arbitrary ones.
   var data: js.Any = js.native
   /* CompleteClass */
   override var message: String = js.native

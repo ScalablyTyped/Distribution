@@ -2,7 +2,7 @@ package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.stripe.AnonDay
-import typings.stripe.AnonDocument
+import typings.stripe.AnonDetails
 import typings.stripe.mod.IAddress
 import typings.stripe.mod.IAddressKana
 import typings.stripe.mod.IAddressKanji
@@ -43,7 +43,7 @@ object IIndividual {
     maiden_name: String = null,
     metadata: StringDictionary[String] = null,
     phone: String = null,
-    verification: AnonDocument = null
+    verification: AnonDetails = null
   ): IIndividual = {
     val __obj = js.Dynamic.literal(id_number_provided = id_number_provided.asInstanceOf[js.Any], ssn_last_4_provided = ssn_last_4_provided.asInstanceOf[js.Any])
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])

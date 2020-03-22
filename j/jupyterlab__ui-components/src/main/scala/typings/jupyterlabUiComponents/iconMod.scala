@@ -184,8 +184,8 @@ object iconMod extends js.Object {
       * @param iconClass - optional, if the icon arg is not set, the iconClass arg
       * should be a CSS class associated with an existing CSS background-image
       *
-      * @param fallback - optional, a LabIcon instance that will be used if
-      * neither icon nor iconClass are defined
+      * @deprecated fallback - don't use, optional, a LabIcon instance that will
+      * be used if neither icon nor iconClass are defined
       *
       * @param props - any additional args are passed though to the element method
       * of the resolved icon on render
@@ -206,8 +206,8 @@ object iconMod extends js.Object {
       * @param iconClass - optional, if the icon arg is not set, the iconClass arg
       * should be a CSS class associated with an existing CSS background-image
       *
-      * @param fallback - optional, a LabIcon instance that will be used if
-      * neither icon nor iconClass are defined
+      * @deprecated fallback - don't use, optional, a LabIcon instance that will
+      * be used if neither icon nor iconClass are defined
       *
       * @param props - any additional args are passed though to the React component
       * of the resolved icon on render

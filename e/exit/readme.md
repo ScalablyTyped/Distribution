@@ -1,7 +1,7 @@
 
 # Scala.js typings for exit
 
-Typings are for version 0.1.2
+Typings are for version 0.1
 
 ## Library description:
 A replacement for process.exit that ensures stdio are fully drained before exiting.

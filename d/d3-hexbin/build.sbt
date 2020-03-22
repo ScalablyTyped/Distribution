@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-hexbin"
-version := "0.2-dt-20180912Z-5e93cf"
+version := "0.2-dt-20200225Z-5e93cf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

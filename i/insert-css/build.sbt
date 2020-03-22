@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "insert-css"
-version := "2.0-dt-20181217Z-9e9e5e"
+version := "2.0-dt-20200225Z-9e9e5e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

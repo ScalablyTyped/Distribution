@@ -15,7 +15,7 @@ trait Grant extends js.Object {
   var refresh_token: Token
   var token_type: String
   def isExpired(): Boolean
-  def store(request: Request_[ParamsDictionary], response: Response_): Unit
+  def store(request: Request_[ParamsDictionary], response: Response_[_]): Unit
   def update(grant: Grant): Unit
 }
 
@@ -28,7 +28,7 @@ object Grant {
     id_token: Token,
     isExpired: () => Boolean,
     refresh_token: Token,
-    store: (Request_[ParamsDictionary], Response_) => Unit,
+    store: (Request_[ParamsDictionary], Response_[_]) => Unit,
     token_type: String,
     update: Grant => Unit
   ): Grant = {

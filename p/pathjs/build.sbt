@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pathjs"
-version := "v0.8.4-dt-20191115Z-f65b65"
+version := "v0.8.4-dt-20200226Z-f65b65"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

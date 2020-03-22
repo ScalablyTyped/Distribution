@@ -10,7 +10,19 @@ object googleCloudStorageStrings {
   sealed trait ACTIVE extends js.Object
   
   @js.native
+  sealed trait DELETE extends js.Object
+  
+  @js.native
+  sealed trait GET extends js.Object
+  
+  @js.native
   sealed trait INACTIVE extends js.Object
+  
+  @js.native
+  sealed trait POST extends js.Object
+  
+  @js.native
+  sealed trait PUT extends js.Object
   
   @js.native
   sealed trait authenticatedRead extends PredefinedAcl
@@ -25,7 +37,13 @@ object googleCloudStorageStrings {
   sealed trait crc32c extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete_ extends js.Object
+  
+  @js.native
+  sealed trait httpsColonSlashSlashstorageDotgoogleapisDotcom extends js.Object
+  
+  @js.native
+  sealed trait list extends js.Object
   
   @js.native
   sealed trait md5 extends js.Object
@@ -57,7 +75,15 @@ object googleCloudStorageStrings {
   @scala.inline
   def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
   @scala.inline
+  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
+  def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
+  @scala.inline
+  def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
+  def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
   def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
   @scala.inline
@@ -67,7 +93,11 @@ object googleCloudStorageStrings {
   @scala.inline
   def crc32c: crc32c = "crc32c".asInstanceOf[crc32c]
   @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  def delete_ : delete_ = "delete".asInstanceOf[delete_]
+  @scala.inline
+  def httpsColonSlashSlashstorageDotgoogleapisDotcom: httpsColonSlashSlashstorageDotgoogleapisDotcom = "https://storage.googleapis.com".asInstanceOf[httpsColonSlashSlashstorageDotgoogleapisDotcom]
+  @scala.inline
+  def list: list = "list".asInstanceOf[list]
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
   @scala.inline

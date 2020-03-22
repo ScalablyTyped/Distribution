@@ -1,6 +1,7 @@
 package typings.fundamentalReact.tabMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.fundamentalReact.iconMod.IconGlyph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,17 +9,14 @@ import scala.scalajs.js.annotation._
 trait TabProps
   extends /* x */ StringDictionary[js.Any] {
   var className: js.UndefOr[String] = js.undefined
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var disableStyles: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  /* Icon to display on the tab. */
-  var glyph: js.UndefOr[String] = js.undefined
+  var glyph: js.UndefOr[IconGlyph] = js.undefined
   var id: js.UndefOr[String] = js.undefined
-  /* Additional props to be spread to the tab\'s <a> element. */
-  var linkProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Additional props to be spread to the tab content's <div> element. */
-  var tabContentProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  /* Localized text to display on the tab. */
+  var index: js.UndefOr[Double] = js.undefined
+  var linkProps: js.UndefOr[js.Any] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var selected: js.UndefOr[Boolean] = js.undefined
+  var tabContentProps: js.UndefOr[js.Any] = js.undefined
   var title: js.UndefOr[String] = js.undefined
 }
 
@@ -27,24 +25,26 @@ object TabProps {
   def apply(
     StringDictionary: /* x */ StringDictionary[js.Any] = null,
     className: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    glyph: String = null,
+    glyph: IconGlyph = null,
     id: String = null,
-    linkProps: StringDictionary[js.Any] = null,
-    tabContentProps: StringDictionary[js.Any] = null,
+    index: Int | Double = null,
+    linkProps: js.Any = null,
+    onClick: /* repeated */ js.Any => _ = null,
+    selected: js.UndefOr[Boolean] = js.undefined,
+    tabContentProps: js.Any = null,
     title: String = null
   ): TabProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (tabContentProps != null) __obj.updateDynamic("tabContentProps")(tabContentProps.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]

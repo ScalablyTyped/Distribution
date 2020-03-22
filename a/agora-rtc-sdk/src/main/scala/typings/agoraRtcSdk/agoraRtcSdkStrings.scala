@@ -51,6 +51,9 @@ object agoraRtcSdkStrings {
   sealed trait audioMixingPlayed extends js.Object
   
   @js.native
+  sealed trait audioTrackEnded extends js.Object
+  
+  @js.native
   sealed trait bluetooth extends js.Object
   
   @js.native
@@ -58,6 +61,12 @@ object agoraRtcSdkStrings {
   
   @js.native
   sealed trait cellular extends js.Object
+  
+  @js.native
+  sealed trait `channel-media-relay-event` extends js.Object
+  
+  @js.native
+  sealed trait `channel-media-relay-state` extends js.Object
   
   @js.native
   sealed trait `client-banned` extends js.Object
@@ -75,6 +84,15 @@ object agoraRtcSdkStrings {
   sealed trait cover extends js.Object
   
   @js.native
+  sealed trait `crypt-error` extends js.Object
+  
+  @js.native
+  sealed trait `disable-local-video` extends js.Object
+  
+  @js.native
+  sealed trait `enable-local-video` extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -82,6 +100,12 @@ object agoraRtcSdkStrings {
   
   @js.native
   sealed trait exception extends js.Object
+  
+  @js.native
+  sealed trait `first-audio-frame-decode` extends js.Object
+  
+  @js.native
+  sealed trait `first-video-frame-decode` extends js.Object
   
   @js.native
   sealed trait h264_ extends js.Object
@@ -142,6 +166,9 @@ object agoraRtcSdkStrings {
   
   @js.native
   sealed trait `peer-online` extends js.Object
+  
+  @js.native
+  sealed trait `player-status-change` extends js.Object
   
   @js.native
   sealed trait `playout-device-changed` extends js.Object
@@ -213,10 +240,16 @@ object agoraRtcSdkStrings {
   sealed trait video extends js.Object
   
   @js.native
+  sealed trait videoTrackEnded extends js.Object
+  
+  @js.native
   sealed trait `volume-indicator` extends js.Object
   
   @js.native
   sealed trait vp8_ extends js.Object
+  
+  @js.native
+  sealed trait warning extends js.Object
   
   @js.native
   sealed trait wifi extends js.Object
@@ -258,11 +291,17 @@ object agoraRtcSdkStrings {
   @scala.inline
   def audioMixingPlayed: audioMixingPlayed = "audioMixingPlayed".asInstanceOf[audioMixingPlayed]
   @scala.inline
+  def audioTrackEnded: audioTrackEnded = "audioTrackEnded".asInstanceOf[audioTrackEnded]
+  @scala.inline
   def bluetooth: bluetooth = "bluetooth".asInstanceOf[bluetooth]
   @scala.inline
   def `camera-changed`: `camera-changed` = "camera-changed".asInstanceOf[`camera-changed`]
   @scala.inline
   def cellular: cellular = "cellular".asInstanceOf[cellular]
+  @scala.inline
+  def `channel-media-relay-event`: `channel-media-relay-event` = "channel-media-relay-event".asInstanceOf[`channel-media-relay-event`]
+  @scala.inline
+  def `channel-media-relay-state`: `channel-media-relay-state` = "channel-media-relay-state".asInstanceOf[`channel-media-relay-state`]
   @scala.inline
   def `client-banned`: `client-banned` = "client-banned".asInstanceOf[`client-banned`]
   @scala.inline
@@ -274,11 +313,21 @@ object agoraRtcSdkStrings {
   @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
   @scala.inline
+  def `crypt-error`: `crypt-error` = "crypt-error".asInstanceOf[`crypt-error`]
+  @scala.inline
+  def `disable-local-video`: `disable-local-video` = "disable-local-video".asInstanceOf[`disable-local-video`]
+  @scala.inline
+  def `enable-local-video`: `enable-local-video` = "enable-local-video".asInstanceOf[`enable-local-video`]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def ethernet: ethernet = "ethernet".asInstanceOf[ethernet]
   @scala.inline
   def exception: exception = "exception".asInstanceOf[exception]
+  @scala.inline
+  def `first-audio-frame-decode`: `first-audio-frame-decode` = "first-audio-frame-decode".asInstanceOf[`first-audio-frame-decode`]
+  @scala.inline
+  def `first-video-frame-decode`: `first-video-frame-decode` = "first-video-frame-decode".asInstanceOf[`first-video-frame-decode`]
   @scala.inline
   def h264_ : h264_ = "h264".asInstanceOf[h264_]
   @scala.inline
@@ -319,6 +368,8 @@ object agoraRtcSdkStrings {
   def `peer-leave`: `peer-leave` = "peer-leave".asInstanceOf[`peer-leave`]
   @scala.inline
   def `peer-online`: `peer-online` = "peer-online".asInstanceOf[`peer-online`]
+  @scala.inline
+  def `player-status-change`: `player-status-change` = "player-status-change".asInstanceOf[`player-status-change`]
   @scala.inline
   def `playout-device-changed`: `playout-device-changed` = "playout-device-changed".asInstanceOf[`playout-device-changed`]
   @scala.inline
@@ -366,9 +417,13 @@ object agoraRtcSdkStrings {
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline
+  def videoTrackEnded: videoTrackEnded = "videoTrackEnded".asInstanceOf[videoTrackEnded]
+  @scala.inline
   def `volume-indicator`: `volume-indicator` = "volume-indicator".asInstanceOf[`volume-indicator`]
   @scala.inline
   def vp8_ : vp8_ = "vp8".asInstanceOf[vp8_]
+  @scala.inline
+  def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline
   def wifi: wifi = "wifi".asInstanceOf[wifi]
   @scala.inline

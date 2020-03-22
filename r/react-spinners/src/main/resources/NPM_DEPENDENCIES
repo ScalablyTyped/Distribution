@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-spinners" : "0.8.0"
+      "react-spinners" : "0.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-spinners" : "0.8.0"
+      "react-spinners" : "0.8.1"
     }
   ],
   "compile-devDependencies" : [

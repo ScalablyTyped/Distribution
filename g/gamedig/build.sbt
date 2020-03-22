@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gamedig"
-version := "1.0-dt-20180828Z-d24fb6"
+version := "1.0-dt-20200225Z-d24fb6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

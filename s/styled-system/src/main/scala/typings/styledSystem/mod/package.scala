@@ -8,7 +8,7 @@ package object mod {
   type Config = /** Property name exposed for use in components */
   org.scalablytyped.runtime.StringDictionary[typings.styledSystem.mod.ConfigStyle | scala.Boolean]
   type ObjectOrArray[T, K /* <: java.lang.String */] = js.Array[T] | (typings.std.Record[K, T | (typings.std.Record[K, T]) | js.Array[T]])
-  type ResponsiveValue[T, ThemeType /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */] = T | (js.Array[T | scala.Null]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type ResponsiveValue[T, ThemeType /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */] = T | scala.Null | (js.Array[T | scala.Null]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in styled-system.styled-system.ThemeValue<'breakpoints', ThemeType, any> & string | number ]:? T}
     */ typings.styledSystem.styledSystemStrings.ResponsiveValue with js.Any)
   type Scale = typings.styledSystem.mod.ObjectOrArray[scala.Double | java.lang.String, java.lang.String]

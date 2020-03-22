@@ -19,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -90,7 +90,7 @@ trait PartialTreeRowProps extends js.Object {
   var accessKey: js.UndefOr[String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
@@ -155,6 +155,8 @@ trait PartialTreeRowProps extends js.Object {
   var inlist: js.UndefOr[js.Any] = js.undefined
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   var is: js.UndefOr[String] = js.undefined
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
+  var isParent: js.UndefOr[Boolean] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
   var itemRef: js.UndefOr[String] = js.undefined
@@ -192,6 +194,7 @@ trait PartialTreeRowProps extends js.Object {
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
+  var onExpandClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -247,6 +250,7 @@ trait PartialTreeRowProps extends js.Object {
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
   var role: js.UndefOr[String] = js.undefined
+  var rowId: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
@@ -268,7 +272,7 @@ object PartialTreeRowProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -333,6 +337,8 @@ object PartialTreeRowProps {
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
+    isExpanded: js.UndefOr[Boolean] = js.undefined,
+    isParent: js.UndefOr[Boolean] = js.undefined,
     itemID: String = null,
     itemProp: String = null,
     itemRef: String = null,
@@ -370,6 +376,7 @@ object PartialTreeRowProps {
     onEncrypted: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onEnded: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onError: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
+    onExpandClick: /* repeated */ js.Any => _ = null,
     onFocus: FocusEvent[HTMLDivElement] => Unit = null,
     onInput: FormEvent[HTMLDivElement] => Unit = null,
     onInvalid: FormEvent[HTMLDivElement] => Unit = null,
@@ -425,6 +432,7 @@ object PartialTreeRowProps {
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
+    rowId: String = null,
     security: String = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
@@ -508,6 +516,8 @@ object PartialTreeRowProps {
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
+    if (!js.isUndefined(isParent)) __obj.updateDynamic("isParent")(isParent.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
@@ -545,6 +555,7 @@ object PartialTreeRowProps {
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onExpandClick != null) __obj.updateDynamic("onExpandClick")(js.Any.fromFunction1(onExpandClick))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
@@ -600,6 +611,7 @@ object PartialTreeRowProps {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])

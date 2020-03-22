@@ -1,7 +1,7 @@
 
 # Scala.js typings for pino
 
-Typings are for version 5.15
+Typings are for version 5.17
 
 ## Library description:
 super fast, all natural json logger

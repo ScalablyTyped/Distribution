@@ -11,6 +11,7 @@ import typings.vegaTypings.utilMod.Vector5
 import typings.vegaTypings.utilMod.Vector6
 import typings.vegaTypings.utilMod.Vector7
 import typings.vegaTypings.vegaTypingsStrings.aggregate
+import typings.vegaTypings.vegaTypingsStrings.begin
 import typings.vegaTypings.vegaTypingsStrings.bin
 import typings.vegaTypings.vegaTypingsStrings.collect
 import typings.vegaTypings.vegaTypingsStrings.countpattern
@@ -18,6 +19,7 @@ import typings.vegaTypings.vegaTypingsStrings.cross
 import typings.vegaTypings.vegaTypingsStrings.crossfilter
 import typings.vegaTypings.vegaTypingsStrings.density
 import typings.vegaTypings.vegaTypingsStrings.dotbin
+import typings.vegaTypings.vegaTypingsStrings.end
 import typings.vegaTypings.vegaTypingsStrings.extent
 import typings.vegaTypings.vegaTypingsStrings.filter
 import typings.vegaTypings.vegaTypingsStrings.flatten
@@ -37,6 +39,7 @@ import typings.vegaTypings.vegaTypingsStrings.isocontour
 import typings.vegaTypings.vegaTypingsStrings.joinaggregate
 import typings.vegaTypings.vegaTypingsStrings.kde
 import typings.vegaTypings.vegaTypingsStrings.kde2d
+import typings.vegaTypings.vegaTypingsStrings.label
 import typings.vegaTypings.vegaTypingsStrings.linkpath
 import typings.vegaTypings.vegaTypingsStrings.loess
 import typings.vegaTypings.vegaTypingsStrings.lookup
@@ -791,6 +794,33 @@ object _Transforms {
     if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Transforms]
+  }
+  @scala.inline
+  def LabelTransform(
+    size: (Vector2[Double | SignalRef]) | SignalRef,
+    `type`: label,
+    anchor: js.Array[String] | String | SignalRef = null,
+    as: (Vector7[String | SignalRef]) | SignalRef = null,
+    avoidBaseMark: Boolean | SignalRef = null,
+    avoidMarks: js.Array[String] = null,
+    lineAnchor: begin | end | SignalRef = null,
+    markIndex: Int | Double = null,
+    offset: js.Array[Double] | Double | SignalRef = null,
+    padding: Double | SignalRef = null,
+    sort: Compare = null
+  ): _Transforms = {
+    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (avoidBaseMark != null) __obj.updateDynamic("avoidBaseMark")(avoidBaseMark.asInstanceOf[js.Any])
+    if (avoidMarks != null) __obj.updateDynamic("avoidMarks")(avoidMarks.asInstanceOf[js.Any])
+    if (lineAnchor != null) __obj.updateDynamic("lineAnchor")(lineAnchor.asInstanceOf[js.Any])
+    if (markIndex != null) __obj.updateDynamic("markIndex")(markIndex.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Transforms]
   }
   @scala.inline

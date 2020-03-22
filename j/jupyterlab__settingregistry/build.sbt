@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__settingregistry"
-version := "2.0.0-a03456"
+version := "2.0.1-063374"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "jupyterlab__statedb" % "2.0.0-88e5e3",
+  "org.scalablytyped" %%% "jupyterlab__statedb" % "2.0.1-eadf5c",
   "org.scalablytyped" %%% "lumino__algorithm" % "1.2.3-935244",
   "org.scalablytyped" %%% "lumino__commands" % "1.10.1-857d11",
   "org.scalablytyped" %%% "lumino__coreutils" % "1.4.2-dc12c7",

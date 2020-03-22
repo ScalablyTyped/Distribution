@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google_dot_visualization"
-version := "0.0-unknown-dt-20191207Z-773314"
+version := "0.0-unknown-dt-20200225Z-773314"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

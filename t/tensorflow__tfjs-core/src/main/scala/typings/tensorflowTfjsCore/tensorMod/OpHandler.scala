@@ -413,8 +413,6 @@ trait OpHandler extends js.Object {
   def split[T /* <: Tensor[Rank] */](x: T, numOrSizeSplits: Double, axis: Double): js.Array[T] = js.native
   def sqrt[T /* <: Tensor[Rank] */](x: T): T = js.native
   def square[T /* <: Tensor[Rank] */](x: T): T = js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
   def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
   def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
   def squeeze[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native

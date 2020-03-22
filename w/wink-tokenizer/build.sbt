@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wink-tokenizer"
-version := "4.0-dt-20180826Z-b3e82d"
+version := "4.0-dt-20200320Z-70b9ee"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

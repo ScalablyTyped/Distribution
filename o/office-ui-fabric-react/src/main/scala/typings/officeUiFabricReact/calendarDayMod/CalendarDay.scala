@@ -1,13 +1,14 @@
 package typings.officeUiFabricReact.calendarDayMod
 
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/Calendar/CalendarDay", "CalendarDay")
 @js.native
-class CalendarDay protected () extends BaseComponent[ICalendarDayProps, ICalendarDayState] {
+class CalendarDay protected ()
+  extends Component[ICalendarDayProps, ICalendarDayState, js.Any] {
   def this(props: ICalendarDayProps) = this()
   var _applyFunctionToDayRefs: js.Any = js.native
   /**

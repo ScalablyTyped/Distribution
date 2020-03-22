@@ -40,6 +40,7 @@ trait StatefulTextareaProps extends js.Object {
   var error: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var initialState: js.UndefOr[State] = js.undefined
+  var inputMode: js.UndefOr[String] = js.undefined
   var inputRef: js.UndefOr[Ref[HTMLTextAreaElement]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
@@ -58,7 +59,7 @@ trait StatefulTextareaProps extends js.Object {
   var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 
 object StatefulTextareaProps {
@@ -77,6 +78,7 @@ object StatefulTextareaProps {
     error: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     initialState: State = null,
+    inputMode: String = null,
     inputRef: Ref[HTMLTextAreaElement] = null,
     max: Int | Double = null,
     min: Int | Double = null,
@@ -95,7 +97,7 @@ object StatefulTextareaProps {
     size: mini | default_ | compact | large_ = null,
     stateReducer: (change_, /* nextState */ State, /* currentState */ State) => State = null,
     `type`: String = null,
-    value: String = null
+    value: String | Double = null
   ): StatefulTextareaProps = {
     val __obj = js.Dynamic.literal()
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
@@ -111,6 +113,7 @@ object StatefulTextareaProps {
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

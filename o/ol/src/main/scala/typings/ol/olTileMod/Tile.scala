@@ -20,6 +20,7 @@ trait Tile
   def inTransition(id: String): Boolean = js.native
   def load(): Unit = js.native
   def refreshInterimChain(): Unit = js.native
+  def release(): Unit = js.native
   def setState(state: TileState): Unit = js.native
 }
 

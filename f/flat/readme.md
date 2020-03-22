@@ -1,6 +1,7 @@
 
 # Scala.js typings for flat
 
+Typings are for version 5.0.0
 
 ## Library description:
 Take a nested Javascript object and flatten it, or unflatten an object with delimited keys

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.chessJs.Anon0
 import typings.chessJs.Anon1
 import typings.chessJs.AnonBIGPAWN
+import typings.chessJs.AnonColor
 import typings.chessJs.AnonError
 import typings.chessJs.AnonMaxwidth
 import typings.chessJs.AnonNewlinechar
@@ -52,6 +53,7 @@ trait ChessInstance extends js.Object {
     * @returns A string containing an ASCII diagram of the current position.
     */
   def ascii(): String = js.native
+  def board(): js.Array[js.Array[AnonColor | Null]] = js.native
   /**
     * Clears the board of all pieces.
     */

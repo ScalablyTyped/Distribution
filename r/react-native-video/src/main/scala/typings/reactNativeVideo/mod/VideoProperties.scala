@@ -63,7 +63,7 @@ trait VideoProperties extends ViewProps {
   var onAudioBecomingNoisy: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onAudioFocusChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onBandwidthUpdate: js.UndefOr[js.Function1[/* data */ OnBandwidthUpdateData, Unit]] = js.undefined
-  var onBuffer: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onBuffer: js.UndefOr[js.Function1[/* data */ OnBufferData, Unit]] = js.undefined
   var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* error */ LoadError, Unit]] = js.undefined
   var onExternalPlaybackChange: js.UndefOr[js.Function1[/* data */ OnExternalPlaybackChangeData, Unit]] = js.undefined
@@ -169,11 +169,12 @@ object VideoProperties {
     nativeID: String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onAudioBecomingNoisy: () => Unit = null,
     onAudioFocusChanged: () => Unit = null,
     onBandwidthUpdate: /* data */ OnBandwidthUpdateData => Unit = null,
-    onBuffer: () => Unit = null,
+    onBuffer: /* data */ OnBufferData => Unit = null,
     onEnd: () => Unit = null,
     onError: /* error */ LoadError => Unit = null,
     onExternalPlaybackChange: /* data */ OnExternalPlaybackChangeData => Unit = null,
@@ -298,11 +299,12 @@ object VideoProperties {
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onAudioBecomingNoisy != null) __obj.updateDynamic("onAudioBecomingNoisy")(js.Any.fromFunction0(onAudioBecomingNoisy))
     if (onAudioFocusChanged != null) __obj.updateDynamic("onAudioFocusChanged")(js.Any.fromFunction0(onAudioFocusChanged))
     if (onBandwidthUpdate != null) __obj.updateDynamic("onBandwidthUpdate")(js.Any.fromFunction1(onBandwidthUpdate))
-    if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction0(onBuffer))
+    if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction1(onBuffer))
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onExternalPlaybackChange != null) __obj.updateDynamic("onExternalPlaybackChange")(js.Any.fromFunction1(onExternalPlaybackChange))

@@ -47,7 +47,6 @@ trait PolarGridProps extends js.Object {
   var dominantBaseline: js.UndefOr[String] = js.undefined
   var dx: js.UndefOr[Double] = js.undefined
   var dy: js.UndefOr[Double] = js.undefined
-  var enableBackground: js.UndefOr[String] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double | String] = js.undefined
   var fillRule: js.UndefOr[String] = js.undefined
@@ -64,7 +63,6 @@ trait PolarGridProps extends js.Object {
   var fontWeight: js.UndefOr[
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
-  var glyphOrientationHorizontal: js.UndefOr[String] = js.undefined
   var glyphOrientationVertical: js.UndefOr[String] = js.undefined
   var gridType: js.UndefOr[polygon | circle] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
@@ -131,7 +129,6 @@ object PolarGridProps {
     dominantBaseline: String = null,
     dx: Int | Double = null,
     dy: Int | Double = null,
-    enableBackground: String = null,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: String = null,
@@ -146,7 +143,6 @@ object PolarGridProps {
     fontStyle: String = null,
     fontVariant: String = null,
     fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
-    glyphOrientationHorizontal: String = null,
     glyphOrientationVertical: String = null,
     gridType: polygon | circle = null,
     height: Int | Double = null,
@@ -210,7 +206,6 @@ object PolarGridProps {
     if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -225,7 +220,6 @@ object PolarGridProps {
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (glyphOrientationHorizontal != null) __obj.updateDynamic("glyphOrientationHorizontal")(glyphOrientationHorizontal.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
     if (gridType != null) __obj.updateDynamic("gridType")(gridType.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

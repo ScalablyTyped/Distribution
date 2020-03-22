@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-dialog-service"
-version := "5.2.8-dt-20190322Z-ff518e"
+version := "5.2.8-dt-20200225Z-ff518e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

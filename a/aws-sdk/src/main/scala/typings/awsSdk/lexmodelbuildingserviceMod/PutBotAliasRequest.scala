@@ -30,6 +30,10 @@ trait PutBotAliasRequest extends js.Object {
     * The name of the alias. The name is not case sensitive.
     */
   var name: AliasName = js.native
+  /**
+    * A list of tags to add to the bot alias. You can only add tags when you create an alias, you can't use the PutBotAlias operation to update the tags on a bot alias. To update tags, use the TagResource operation.
+    */
+  var tags: js.UndefOr[TagList] = js.native
 }
 
 object PutBotAliasRequest {
@@ -40,12 +44,14 @@ object PutBotAliasRequest {
     name: AliasName,
     checksum: String = null,
     conversationLogs: ConversationLogsRequest = null,
-    description: Description = null
+    description: Description = null,
+    tags: TagList = null
   ): PutBotAliasRequest = {
     val __obj = js.Dynamic.literal(botName = botName.asInstanceOf[js.Any], botVersion = botVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     if (conversationLogs != null) __obj.updateDynamic("conversationLogs")(conversationLogs.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotAliasRequest]
   }
 }

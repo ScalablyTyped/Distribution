@@ -1,6 +1,7 @@
 package typings.fecha.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.fecha.PartialI18nSettings
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,10 +20,10 @@ object default extends js.Object {
   ] = js.native
   def format(dateObj: Date): String = js.native
   def format(dateObj: Date, mask: String): String = js.native
-  def format(dateObj: Date, mask: String, i18n: I18nSettingsOptional): String = js.native
+  def format(dateObj: Date, mask: String, i18n: PartialI18nSettings): String = js.native
   def parse(dateStr: String, format: String): Date | Null = js.native
   def parse(dateStr: String, format: String, i18n: I18nSettingsOptional): Date | Null = js.native
-  def setGlobalDateI18n(i18n: I18nSettingsOptional): I18nSettings = js.native
+  def setGlobalDateI18n(i18n: PartialI18nSettings): I18nSettings = js.native
   def setGlobalDateMasks(masks: StringDictionary[String]): StringDictionary[String] = js.native
 }
 

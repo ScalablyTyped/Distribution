@@ -53,6 +53,12 @@ trait NotificationOptions extends js.Object {
     * @since Chrome 50
     */
   var requireInteraction: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Optional.
+    * Indicates that no sounds or vibrations should be made when the notification is being shown. This defaults to false.
+    * @since Chrome 70
+    */
+  var silent: js.UndefOr[Boolean] = js.undefined
   /** Optional. Title of the notification (e.g. sender name for email). Required for notifications.create method. */
   var title: js.UndefOr[String] = js.undefined
   /** Optional. Which type of notification to display. Required for notifications.create method. */
@@ -74,6 +80,7 @@ object NotificationOptions {
     priority: Int | Double = null,
     progress: Int | Double = null,
     requireInteraction: js.UndefOr[Boolean] = js.undefined,
+    silent: js.UndefOr[Boolean] = js.undefined,
     title: String = null,
     `type`: String = null
   ): NotificationOptions = {
@@ -90,6 +97,7 @@ object NotificationOptions {
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
     if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationOptions]

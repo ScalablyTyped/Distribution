@@ -20,6 +20,14 @@ trait CultureInfoLoadOptions extends js.Object {
   var $all: js.UndefOr[Boolean] = js.native
   /**
     *
+    * Defines the culturally appropriate format of displaying date and time. This is based on current system culture settings.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var datetimeFormat: js.UndefOr[DatetimeFormatInfoLoadOptions] = js.native
+  /**
+    *
     * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -33,6 +41,6 @@ trait CultureInfoLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var numberFormatInfo: js.UndefOr[NumberFormatInfoLoadOptions] = js.native
+  var numberFormat: js.UndefOr[NumberFormatInfoLoadOptions] = js.native
 }
 

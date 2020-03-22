@@ -9,34 +9,34 @@ trait NavigationBindingsOptions extends js.Object {
     * (Highstock) A line with arrow annotation. Includes `start` and one event
     * in `steps` array.
     */
-  var arrowInfinityLine: js.UndefOr[NavigationBindingsArrowInfinityLineOptions | StockToolsBindingsObject] = js.undefined
+  var arrowInfinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A ray with an arrow annotation bindings. Includes `start` and
     * one event in `steps` array.
     */
-  var arrowRay: js.UndefOr[NavigationBindingsArrowRayOptions | StockToolsBindingsObject] = js.undefined
+  var arrowRay: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A segment with an arrow annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var arrowSegment: js.UndefOr[NavigationBindingsArrowSegmentOptions | StockToolsBindingsObject] = js.undefined
+  var arrowSegment: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) A circle annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var circleAnnotation: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var circleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Crooked line (three points) annotation bindings. Includes
     * `start` and two events in `steps` (for second and third points in crooked
     * line) array.
     */
-  var crooked3: js.UndefOr[NavigationBindingsCrooked3Options | StockToolsBindingsObject] = js.undefined
+  var crooked3: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Crooked line (five points) annotation bindings. Includes
     * `start` and four events in `steps` (for all consequent points in crooked
     * line) array.
     */
-  var crooked5: js.UndefOr[NavigationBindingsCrooked5Options | StockToolsBindingsObject] = js.undefined
+  var crooked5: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Hides/shows two price indicators:
     *
@@ -44,107 +44,107 @@ trait NavigationBindingsOptions extends js.Object {
     *
     * - last price in the selected range
     */
-  var currentPriceIndicator: js.UndefOr[NavigationBindingsCurrentPriceIndicatorOptions | StockToolsBindingsObject] = js.undefined
+  var currentPriceIndicator: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Elliott wave (three points) annotation bindings. Includes
     * `start` and two events in `steps` (for second and third points) array.
     */
-  var elliott3: js.UndefOr[NavigationBindingsElliott3Options | StockToolsBindingsObject] = js.undefined
+  var elliott3: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Elliott wave (five points) annotation bindings. Includes
     * `start` and four event in `steps` (for all consequent points in Elliott
     * wave) array.
     */
-  var elliott5: js.UndefOr[NavigationBindingsElliott5Options | StockToolsBindingsObject] = js.undefined
+  var elliott5: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A fibonacci annotation bindings. Includes `start` and two
     * events in `steps` array (updates second point, then height).
     */
-  var fibonacci: js.UndefOr[NavigationBindingsFibonacciOptions | StockToolsBindingsObject] = js.undefined
+  var fibonacci: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'circlepin'`
     * shape.
     */
-  var flagCirclepin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagCirclepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'diamondpin'`
     * shape.
     */
-  var flagDiamondpin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagDiamondpin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag without pin shape.
     */
-  var flagSimplepin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagSimplepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'squarepin'`
     * shape.
     */
-  var flagSquarepin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagSquarepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Displays chart in fullscreen.
     */
-  var fullScreen: js.UndefOr[NavigationBindingsFullScreenOptions | StockToolsBindingsObject] = js.undefined
+  var fullScreen: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A horizontal line annotation. Includes `start` event.
     */
-  var horizontalLine: js.UndefOr[NavigationBindingsHorizontalLineOptions | StockToolsBindingsObject] = js.undefined
+  var horizontalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Indicators bindings. Includes `init` event to show a popup.
     *
     * Note: In order to show base series from the chart in the popup's dropdown
     * each series requires series.id to be defined.
     */
-  var indicators: js.UndefOr[NavigationBindingsIndicatorsOptions | StockToolsBindingsObject] = js.undefined
+  var indicators: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A line annotation. Includes `start` and one event in `steps`
     * array.
     */
-  var infinityLine: js.UndefOr[NavigationBindingsInfinityLineOptions | StockToolsBindingsObject] = js.undefined
+  var infinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) A label annotation bindings. Includes `start`
     * event only.
     */
-  var labelAnnotation: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var labelAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A measure (x-dimension) annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var measureX: js.UndefOr[NavigationBindingsMeasureXOptions | StockToolsBindingsObject] = js.undefined
+  var measureX: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A measure (xy-dimension) annotation bindings. Includes
     * `start` and one event in `steps` array.
     */
-  var measureXY: js.UndefOr[NavigationBindingsMeasureXYOptions | StockToolsBindingsObject] = js.undefined
+  var measureXY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A measure (y-dimension) annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var measureY: js.UndefOr[NavigationBindingsMeasureYOptions | StockToolsBindingsObject] = js.undefined
+  var measureY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A parallel channel (tunnel) annotation bindings. Includes
     * `start` and two events in `steps` array (updates second point, then
     * height).
     */
-  var parallelChannel: js.UndefOr[NavigationBindingsParallelChannelOptions | StockToolsBindingsObject] = js.undefined
+  var parallelChannel: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) An Andrew's pitchfork annotation bindings. Includes `start`
     * and two events in `steps` array (sets second and third control points).
     */
-  var pitchfork: js.UndefOr[NavigationBindingsPitchforkOptions | StockToolsBindingsObject] = js.undefined
+  var pitchfork: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A ray annotation bindings. Includes `start` and one event in
     * `steps` array.
     */
-  var ray: js.UndefOr[NavigationBindingsRayOptions | StockToolsBindingsObject] = js.undefined
+  var ray: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock) A rectangle annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var rectangleAnnotation: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var rectangleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Save a chart in localStorage under `highcharts-chart` key.
     * Stored items:
@@ -155,109 +155,109 @@ trait NavigationBindingsOptions extends js.Object {
     *
     * - flags
     */
-  var saveChart: js.UndefOr[NavigationBindingsSaveChartOptions | StockToolsBindingsObject] = js.undefined
+  var saveChart: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A segment annotation bindings. Includes `start` and one event
     * in `steps` array.
     */
-  var segment: js.UndefOr[NavigationBindingsSegmentOptions | StockToolsBindingsObject] = js.undefined
+  var segment: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Changes main series to `'candlestick'` type.
     */
-  var seriesTypeCandlestick: js.UndefOr[NavigationBindingsSeriesTypeCandlestickOptions | StockToolsBindingsObject] = js.undefined
+  var seriesTypeCandlestick: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Changes main series to `'line'` type.
     */
-  var seriesTypeLine: js.UndefOr[NavigationBindingsSeriesTypeLineOptions | StockToolsBindingsObject] = js.undefined
+  var seriesTypeLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Changes main series to `'ohlc'` type.
     */
-  var seriesTypeOhlc: js.UndefOr[NavigationBindingsSeriesTypeOhlcOptions | StockToolsBindingsObject] = js.undefined
+  var seriesTypeOhlc: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Hides/shows all annotations on a chart.
     */
-  var toggleAnnotations: js.UndefOr[NavigationBindingsToggleAnnotationsOptions | StockToolsBindingsObject] = js.undefined
+  var toggleAnnotations: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
     * On click, finds the closest point and marks it with an arrow. Green arrow
     * when pointing from above, red when pointing from below the point.
     */
-  var verticalArrow: js.UndefOr[NavigationBindingsVerticalArrowOptions | StockToolsBindingsObject] = js.undefined
+  var verticalArrow: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A vertical counter annotation bindings. Includes `start`
     * event. On click, finds the closest point and marks it with a numeric
     * annotation - incrementing counter on each add.
     */
-  var verticalCounter: js.UndefOr[NavigationBindingsVerticalCounterOptions | StockToolsBindingsObject] = js.undefined
+  var verticalCounter: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
     * On click, finds the closest point and marks it with an arrow and a label
     * with value.
     */
-  var verticalLabel: js.UndefOr[NavigationBindingsVerticalLabelOptions | StockToolsBindingsObject] = js.undefined
+  var verticalLabel: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) A vertical line annotation. Includes `start` event.
     */
-  var verticalLine: js.UndefOr[NavigationBindingsVerticalLineOptions | StockToolsBindingsObject] = js.undefined
+  var verticalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Enables zooming in xAxis on a chart. Includes `start` event
     * which changes chart.zoomType.
     */
-  var zoomX: js.UndefOr[NavigationBindingsZoomXOptions | StockToolsBindingsObject] = js.undefined
+  var zoomX: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Enables zooming in xAxis and yAxis on a chart. Includes
     * `start` event which changes chart.zoomType.
     */
-  var zoomXY: js.UndefOr[NavigationBindingsZoomXYOptions | StockToolsBindingsObject] = js.undefined
+  var zoomXY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
   /**
     * (Highstock) Enables zooming in yAxis on a chart. Includes `start` event
     * which changes chart.zoomType.
     */
-  var zoomY: js.UndefOr[NavigationBindingsZoomYOptions | StockToolsBindingsObject] = js.undefined
+  var zoomY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
 }
 
 object NavigationBindingsOptions {
   @scala.inline
   def apply(
-    arrowInfinityLine: NavigationBindingsArrowInfinityLineOptions | StockToolsBindingsObject = null,
-    arrowRay: NavigationBindingsArrowRayOptions | StockToolsBindingsObject = null,
-    arrowSegment: NavigationBindingsArrowSegmentOptions | StockToolsBindingsObject = null,
-    circleAnnotation: StockToolsBindingsObject = null,
-    crooked3: NavigationBindingsCrooked3Options | StockToolsBindingsObject = null,
-    crooked5: NavigationBindingsCrooked5Options | StockToolsBindingsObject = null,
-    currentPriceIndicator: NavigationBindingsCurrentPriceIndicatorOptions | StockToolsBindingsObject = null,
-    elliott3: NavigationBindingsElliott3Options | StockToolsBindingsObject = null,
-    elliott5: NavigationBindingsElliott5Options | StockToolsBindingsObject = null,
-    fibonacci: NavigationBindingsFibonacciOptions | StockToolsBindingsObject = null,
-    flagCirclepin: StockToolsBindingsObject = null,
-    flagDiamondpin: StockToolsBindingsObject = null,
-    flagSimplepin: StockToolsBindingsObject = null,
-    flagSquarepin: StockToolsBindingsObject = null,
-    fullScreen: NavigationBindingsFullScreenOptions | StockToolsBindingsObject = null,
-    horizontalLine: NavigationBindingsHorizontalLineOptions | StockToolsBindingsObject = null,
-    indicators: NavigationBindingsIndicatorsOptions | StockToolsBindingsObject = null,
-    infinityLine: NavigationBindingsInfinityLineOptions | StockToolsBindingsObject = null,
-    labelAnnotation: StockToolsBindingsObject = null,
-    measureX: NavigationBindingsMeasureXOptions | StockToolsBindingsObject = null,
-    measureXY: NavigationBindingsMeasureXYOptions | StockToolsBindingsObject = null,
-    measureY: NavigationBindingsMeasureYOptions | StockToolsBindingsObject = null,
-    parallelChannel: NavigationBindingsParallelChannelOptions | StockToolsBindingsObject = null,
-    pitchfork: NavigationBindingsPitchforkOptions | StockToolsBindingsObject = null,
-    ray: NavigationBindingsRayOptions | StockToolsBindingsObject = null,
-    rectangleAnnotation: StockToolsBindingsObject = null,
-    saveChart: NavigationBindingsSaveChartOptions | StockToolsBindingsObject = null,
-    segment: NavigationBindingsSegmentOptions | StockToolsBindingsObject = null,
-    seriesTypeCandlestick: NavigationBindingsSeriesTypeCandlestickOptions | StockToolsBindingsObject = null,
-    seriesTypeLine: NavigationBindingsSeriesTypeLineOptions | StockToolsBindingsObject = null,
-    seriesTypeOhlc: NavigationBindingsSeriesTypeOhlcOptions | StockToolsBindingsObject = null,
-    toggleAnnotations: NavigationBindingsToggleAnnotationsOptions | StockToolsBindingsObject = null,
-    verticalArrow: NavigationBindingsVerticalArrowOptions | StockToolsBindingsObject = null,
-    verticalCounter: NavigationBindingsVerticalCounterOptions | StockToolsBindingsObject = null,
-    verticalLabel: NavigationBindingsVerticalLabelOptions | StockToolsBindingsObject = null,
-    verticalLine: NavigationBindingsVerticalLineOptions | StockToolsBindingsObject = null,
-    zoomX: NavigationBindingsZoomXOptions | StockToolsBindingsObject = null,
-    zoomXY: NavigationBindingsZoomXYOptions | StockToolsBindingsObject = null,
-    zoomY: NavigationBindingsZoomYOptions | StockToolsBindingsObject = null
+    arrowInfinityLine: NavigationBindingsOptionsObject = null,
+    arrowRay: NavigationBindingsOptionsObject = null,
+    arrowSegment: NavigationBindingsOptionsObject = null,
+    circleAnnotation: NavigationBindingsOptionsObject = null,
+    crooked3: NavigationBindingsOptionsObject = null,
+    crooked5: NavigationBindingsOptionsObject = null,
+    currentPriceIndicator: NavigationBindingsOptionsObject = null,
+    elliott3: NavigationBindingsOptionsObject = null,
+    elliott5: NavigationBindingsOptionsObject = null,
+    fibonacci: NavigationBindingsOptionsObject = null,
+    flagCirclepin: NavigationBindingsOptionsObject = null,
+    flagDiamondpin: NavigationBindingsOptionsObject = null,
+    flagSimplepin: NavigationBindingsOptionsObject = null,
+    flagSquarepin: NavigationBindingsOptionsObject = null,
+    fullScreen: NavigationBindingsOptionsObject = null,
+    horizontalLine: NavigationBindingsOptionsObject = null,
+    indicators: NavigationBindingsOptionsObject = null,
+    infinityLine: NavigationBindingsOptionsObject = null,
+    labelAnnotation: NavigationBindingsOptionsObject = null,
+    measureX: NavigationBindingsOptionsObject = null,
+    measureXY: NavigationBindingsOptionsObject = null,
+    measureY: NavigationBindingsOptionsObject = null,
+    parallelChannel: NavigationBindingsOptionsObject = null,
+    pitchfork: NavigationBindingsOptionsObject = null,
+    ray: NavigationBindingsOptionsObject = null,
+    rectangleAnnotation: NavigationBindingsOptionsObject = null,
+    saveChart: NavigationBindingsOptionsObject = null,
+    segment: NavigationBindingsOptionsObject = null,
+    seriesTypeCandlestick: NavigationBindingsOptionsObject = null,
+    seriesTypeLine: NavigationBindingsOptionsObject = null,
+    seriesTypeOhlc: NavigationBindingsOptionsObject = null,
+    toggleAnnotations: NavigationBindingsOptionsObject = null,
+    verticalArrow: NavigationBindingsOptionsObject = null,
+    verticalCounter: NavigationBindingsOptionsObject = null,
+    verticalLabel: NavigationBindingsOptionsObject = null,
+    verticalLine: NavigationBindingsOptionsObject = null,
+    zoomX: NavigationBindingsOptionsObject = null,
+    zoomXY: NavigationBindingsOptionsObject = null,
+    zoomY: NavigationBindingsOptionsObject = null
   ): NavigationBindingsOptions = {
     val __obj = js.Dynamic.literal()
     if (arrowInfinityLine != null) __obj.updateDynamic("arrowInfinityLine")(arrowInfinityLine.asInstanceOf[js.Any])

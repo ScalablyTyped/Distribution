@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pako"
-version := "1.0-dt-20200128Z-87bab1"
+version := "1.0-dt-20200225Z-87bab1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Grid", "Row")
+@JSImport("@catho/quantum/Grid", "Row")
 @js.native
 class Row ()
   extends Component[RowProps, js.Object, js.Any]

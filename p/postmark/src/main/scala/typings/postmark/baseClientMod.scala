@@ -1,5 +1,8 @@
 package typings.postmark
 
+import typings.axios.mod.AxiosInstance
+import typings.axios.mod.AxiosPromise
+import typings.axios.mod.AxiosRequestConfig
 import typings.postmark.callbackMod.Callback
 import typings.postmark.clientOptionsMod.ClientOptions.HttpMethod
 import typings.postmark.errorHandlerMod.ErrorHandler
@@ -15,11 +18,19 @@ object baseClientMod extends js.Object {
   @js.native
   trait BaseClient extends js.Object {
     val authHeader: js.Any = js.native
+    /**
+      * Create http client instance with default settings.
+      *
+      * @return {AxiosInstance}
+      */
+    var buildDefaultHttpClient: js.Any = js.native
     var clientOptions: Configuration = js.native
     var clientVersion: String = js.native
     var errorHandler: ErrorHandler = js.native
-    var getHttpRequestURL: js.Any = js.native
+    var getBaseHttpRequestURL: js.Any = js.native
     var getRequestTimeoutInSeconds: js.Any = js.native
+    @JSName("httpClient")
+    val httpClient_Original: AxiosInstance = js.native
     /**
       * Process http request.
       *
@@ -59,17 +70,6 @@ object baseClientMod extends js.Object {
       * @returns A promise that will complete when the API responds (or an error occurs).
       */
     var processRequest: js.Any = js.native
-    /**
-      * Handle http request to return it as Promise.
-      *
-      * @param method - Which type of http request will be executed.
-      * @param path - API URL endpoint.
-      * @param queryParameters - Querystring parameters used for http request.
-      * @param body - Data sent with http request.
-      *
-      * @returns A promise that will complete when the API responds.
-      */
-    var promisifiedHttpRequest: js.Any = js.native
     val token: js.Any = js.native
     /**
       * Token can't be empty.
@@ -81,6 +81,9 @@ object baseClientMod extends js.Object {
       * JSON object with default headers sent by HTTP request.
       */
     def getComposedHttpRequestHeaders(): js.Object = js.native
+    def httpClient(config: AxiosRequestConfig): AxiosPromise[_] = js.native
+    def httpClient(url: String): AxiosPromise[_] = js.native
+    def httpClient(url: String, config: AxiosRequestConfig): AxiosPromise[_] = js.native
     /**
       * Process http request with sending body - data.
       *

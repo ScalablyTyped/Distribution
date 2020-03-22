@@ -11,6 +11,10 @@ trait Action extends js.Object {
     */
   var cloudwatchAlarm: js.UndefOr[CloudwatchAlarmAction] = js.native
   /**
+    * Send data to CloudWatch logs.
+    */
+  var cloudwatchLogs: js.UndefOr[CloudwatchLogsAction] = js.native
+  /**
     * Capture a CloudWatch metric.
     */
   var cloudwatchMetric: js.UndefOr[CloudwatchMetricAction] = js.native
@@ -84,6 +88,7 @@ object Action {
   @scala.inline
   def apply(
     cloudwatchAlarm: CloudwatchAlarmAction = null,
+    cloudwatchLogs: CloudwatchLogsAction = null,
     cloudwatchMetric: CloudwatchMetricAction = null,
     dynamoDB: DynamoDBAction = null,
     dynamoDBv2: DynamoDBv2Action = null,
@@ -104,6 +109,7 @@ object Action {
   ): Action = {
     val __obj = js.Dynamic.literal()
     if (cloudwatchAlarm != null) __obj.updateDynamic("cloudwatchAlarm")(cloudwatchAlarm.asInstanceOf[js.Any])
+    if (cloudwatchLogs != null) __obj.updateDynamic("cloudwatchLogs")(cloudwatchLogs.asInstanceOf[js.Any])
     if (cloudwatchMetric != null) __obj.updateDynamic("cloudwatchMetric")(cloudwatchMetric.asInstanceOf[js.Any])
     if (dynamoDB != null) __obj.updateDynamic("dynamoDB")(dynamoDB.asInstanceOf[js.Any])
     if (dynamoDBv2 != null) __obj.updateDynamic("dynamoDBv2")(dynamoDBv2.asInstanceOf[js.Any])

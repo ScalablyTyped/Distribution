@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gl-matrix"
-version := "2.4-dt-20190322Z-0d9ae4"
+version := "2.4-dt-20200225Z-0d9ae4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

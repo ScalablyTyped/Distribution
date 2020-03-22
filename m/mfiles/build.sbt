@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mfiles"
-version := "11.3-dt-20190213Z-2604d2"
+version := "11.3-dt-20200225Z-2604d2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

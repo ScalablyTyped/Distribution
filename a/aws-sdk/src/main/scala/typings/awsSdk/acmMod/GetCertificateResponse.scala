@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetCertificateResponse extends js.Object {
   /**
-    * String that contains the ACM certificate represented by the ARN specified at input.
+    * The ACM-issued certificate corresponding to the ARN specified as input.
     */
   var Certificate: js.UndefOr[CertificateBody] = js.native
   /**
-    * The certificate chain that contains the root certificate issued by the certificate authority (CA).
+    * Certificates forming the requested certificate's chain of trust. The chain consists of the certificate of the issuing CA and the intermediate certificates of any other subordinate CAs. 
     */
   var CertificateChain: js.UndefOr[typings.awsSdk.acmMod.CertificateChain] = js.native
 }

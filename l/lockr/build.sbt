@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lockr"
-version := "0.8.3-dt-20190322Z-e059e5"
+version := "0.8.3-dt-20200226Z-e059e5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

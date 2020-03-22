@@ -68,8 +68,8 @@ class Query[T] protected () extends js.Object {
     */
   def isEqual(other: Query[T]): Boolean = js.native
   /**
-    * Creates and returns a new Query that's additionally limited to only
-    * return up to the specified number of documents.
+    * Creates and returns a new Query that only returns the first matching 
+    * documents.
     *
     * This function returns a new (immutable) instance of the Query (rather
     * than modify the existing instance) to impose the limit.
@@ -78,6 +78,20 @@ class Query[T] protected () extends js.Object {
     * @return The created Query.
     */
   def limit(limit: Double): Query[T] = js.native
+  /**
+    * Creates and returns a new Query that only returns the last matching
+    * documents.
+    *
+    * You must specify at least one orderBy clause for limitToLast queries, 
+    * otherwise an exception will be thrown during execution.
+    * 
+    * Results for limitToLast queries cannot be streamed via the `stream()`
+    * API.
+    *
+    * @param limit The maximum number of items to return.
+    * @return The created Query.
+    */
+  def limitToLast(limit: Double): Query[T] = js.native
   /**
     * Specifies the offset of the returned results.
     *

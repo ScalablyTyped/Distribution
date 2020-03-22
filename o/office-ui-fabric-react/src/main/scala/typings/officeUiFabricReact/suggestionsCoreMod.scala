@@ -2,7 +2,8 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.suggestionsDottypesMod.ISuggestionsCoreProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
+import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,12 +14,12 @@ import scala.scalajs.js.annotation._
 object suggestionsCoreMod extends js.Object {
   @js.native
   class SuggestionsCore[T] protected ()
-    extends BaseComponent[ISuggestionsCoreProps[T], js.Object] {
+    extends Component[ISuggestionsCoreProps[T], js.Object, js.Any] {
     def this(suggestionsProps: ISuggestionsCoreProps[T]) = this()
     var SuggestionsItemOfProperType: js.Any = js.native
     var _onClickTypedSuggestionsItem: js.Any = js.native
     var _onRemoveTypedSuggestionsItem: js.Any = js.native
-    var _selectedElement: HTMLDivElement = js.native
+    var _selectedElement: RefObject[HTMLDivElement] = js.native
     var currentIndex: Double = js.native
     var currentSuggestion: js.UndefOr[ISuggestionModel[T]] = js.native
     val selectedElement: js.UndefOr[HTMLDivElement] = js.native

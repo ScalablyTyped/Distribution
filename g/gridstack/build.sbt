@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gridstack"
-version := "1.1.0-9c6b8a"
+version := "1.1.1-8d2e97"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

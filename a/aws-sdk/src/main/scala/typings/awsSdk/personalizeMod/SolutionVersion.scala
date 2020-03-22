@@ -62,6 +62,10 @@ trait SolutionVersion extends js.Object {
     * The scope of training used to create the solution version. The FULL option trains the solution version based on the entirety of the input solution's training data, while the UPDATE option processes only the training data that has changed since the creation of the last solution version. Choose UPDATE when you want to start recommending items added to the dataset without retraining the model.  The UPDATE option can only be used after you've created a solution version with the FULL option and the training solution uses the native-recipe-hrnn-coldstart. 
     */
   var trainingMode: js.UndefOr[TrainingMode] = js.native
+  /**
+    * If hyperparameter optimization was performed, contains the hyperparameter values of the best performing model.
+    */
+  var tunedHPOParams: js.UndefOr[TunedHPOParams] = js.native
 }
 
 object SolutionVersion {
@@ -80,7 +84,8 @@ object SolutionVersion {
     solutionVersionArn: Arn = null,
     status: Status = null,
     trainingHours: Int | Double = null,
-    trainingMode: TrainingMode = null
+    trainingMode: TrainingMode = null,
+    tunedHPOParams: TunedHPOParams = null
   ): SolutionVersion = {
     val __obj = js.Dynamic.literal()
     if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
@@ -97,6 +102,7 @@ object SolutionVersion {
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     if (trainingHours != null) __obj.updateDynamic("trainingHours")(trainingHours.asInstanceOf[js.Any])
     if (trainingMode != null) __obj.updateDynamic("trainingMode")(trainingMode.asInstanceOf[js.Any])
+    if (tunedHPOParams != null) __obj.updateDynamic("tunedHPOParams")(tunedHPOParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[SolutionVersion]
   }
 }

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.pivotItemTypesMod.IPivotItemProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object pivotItemMod extends js.Object {
   @js.native
   class PivotItem protected ()
-    extends BaseComponent[IPivotItemProps, js.Object] {
+    extends Component[IPivotItemProps, js.Object, js.Any] {
     def this(props: IPivotItemProps) = this()
   }
   

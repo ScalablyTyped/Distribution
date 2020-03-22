@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_payment"
-version := "0.0-unknown-dt-20190322Z-b3a47b"
+version := "0.0-unknown-dt-20200226Z-b3a47b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

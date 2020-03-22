@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "owlcarousel"
-version := "1.3-dt-20190322Z-75c3ff"
+version := "1.3-dt-20200226Z-75c3ff"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

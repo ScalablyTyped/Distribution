@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "feather-icons"
-version := "4.7-dt-20180503Z-43bf4f"
+version := "4.7-dt-20200225Z-43bf4f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

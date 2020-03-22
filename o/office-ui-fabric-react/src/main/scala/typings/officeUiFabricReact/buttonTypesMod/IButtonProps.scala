@@ -131,12 +131,14 @@ trait IButtonProps extends AllHTMLAttributes[
   var menuIconProps: js.UndefOr[IIconProps] = js.undefined
   /**
     * Props for button menu. Providing this will default to showing the menu icon. See menuIconProps for overriding
-    * how the default icon looks. Providing this in addition of onClick and setting the split property to true will render a SplitButton.
+    * how the default icon looks. Providing this in addition of onClick and setting the split property to true will
+    * render a SplitButton.
     */
   var menuProps: js.UndefOr[IContextualMenuProps] = js.undefined
   /**
     * Provides a custom KeyCode that can be used to open the button menu.
-    * The default KeyCode is the down arrow. A value of null can be provided to disable the key codes for opening the button menu.
+    * The default KeyCode is the down arrow.
+    * A value of null can be provided to disable the key codes for opening the button menu.
     */
   var menuTriggerKeyCode: js.UndefOr[KeyCodes | Null] = js.undefined
   /**
@@ -196,7 +198,8 @@ trait IButtonProps extends AllHTMLAttributes[
     */
   var primary: js.UndefOr[Boolean] = js.undefined
   /**
-    * Optional props to be applied only to the primary action button of SplitButton and not to the overall SplitButton container
+    * Optional props to be applied only to the primary action button of SplitButton and not to the
+    * overall SplitButton container
     */
   var primaryActionButtonProps: js.UndefOr[IButtonProps] = js.undefined
   /**
@@ -234,7 +237,8 @@ trait IButtonProps extends AllHTMLAttributes[
     */
   var secondaryText: js.UndefOr[String] = js.undefined
   /**
-    * If set to true, and if menuProps and onClick are provided, the button will render as a SplitButton. Defaults to false.
+    * If set to true, and if menuProps and onClick are provided, the button will render as a SplitButton.
+    * @defaultvalue false
     */
   var split: js.UndefOr[Boolean] = js.undefined
   /**

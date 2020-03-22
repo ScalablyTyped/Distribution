@@ -124,6 +124,8 @@ trait View
   def setResolution(): Unit = js.native
   def setResolution(resolution: Double): Unit = js.native
   def setRotation(rotation: Double): Unit = js.native
+  def setViewportSize(): Unit = js.native
+  def setViewportSize(opt_size: Size): Unit = js.native
   def setZoom(zoom: Double): Unit = js.native
   @JSName("un")
   def un_changecenter(`type`: changeColoncenter, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native

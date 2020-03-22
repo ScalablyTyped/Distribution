@@ -55,14 +55,19 @@ trait Jimp extends JimpConstructors {
   // Properties
   var bitmap: Bitmap = js.native
   // Functions
-  def appendConstructorOption[T /* <: js.Array[_] */](
+  /**
+    * I'd like to make `Args` generic and used in `run` and `test` but alas,
+    * it's not possible RN:
+    * https://github.com/microsoft/TypeScript/issues/26113
+    */
+  def appendConstructorOption[Args /* <: js.Array[_] */, J /* <: Jimp */](
     name: String,
-    test: js.Function1[/* repeated */ T, Boolean],
+    test: js.Function1[/* repeated */ js.Any, Boolean],
     run: js.ThisFunction3[
-      /* this */ this.type, 
-      /* resolve */ js.Function1[/* jimp */ this.type, _], 
+      /* this */ J, 
+      /* resolve */ js.Function1[/* jimp */ js.UndefOr[J], _], 
       /* reject */ js.Function1[/* reason */ Error, _], 
-      /* repeated */ T, 
+      /* repeated */ js.Any, 
       _
     ]
   ): Unit = js.native

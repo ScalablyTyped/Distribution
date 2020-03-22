@@ -162,7 +162,7 @@ trait PartialCheckboxProps extends js.Object {
   var checkedIcon: js.UndefOr[ReactNode] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCheckboxClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCheckb] = js.native
   var color: js.UndefOr[primary | secondary | default] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -382,7 +382,7 @@ object PartialCheckboxProps {
     checkedIcon: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCheckboxClassKey = null,
+    classes: PartialClassNameMapCheckb = null,
     color: primary | secondary | default = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

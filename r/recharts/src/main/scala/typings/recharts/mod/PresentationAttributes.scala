@@ -43,7 +43,6 @@ trait PresentationAttributes[X, Y] extends js.Object {
   var dominantBaseline: String
   var dx: Double
   var dy: Double
-  var enableBackground: js.UndefOr[String] = js.undefined
   var fill: String
   var fillOpacity: Double | String
   var fillRule: String
@@ -58,7 +57,6 @@ trait PresentationAttributes[X, Y] extends js.Object {
   var fontStyle: String
   var fontVariant: String
   var fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
-  var glyphOrientationHorizontal: js.UndefOr[String] = js.undefined
   var glyphOrientationVertical: String
   var height: Double
   var imageRendering: auto | optimizeSpeed | optimizeQuality | inherit
@@ -168,13 +166,9 @@ object PresentationAttributes {
     writingMode: String,
     x: X,
     y: Y,
-    enableBackground: String = null,
-    glyphOrientationHorizontal: String = null,
     pointerEvents: String = null
   ): PresentationAttributes[X, Y] = {
     val __obj = js.Dynamic.literal(alignmentBaseline = alignmentBaseline.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], baselineShift = baselineShift.asInstanceOf[js.Any], clip = clip.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], clipRule = clipRule.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], colorInterpolation = colorInterpolation.asInstanceOf[js.Any], colorInterpolationFilters = colorInterpolationFilters.asInstanceOf[js.Any], colorProfile = colorProfile.asInstanceOf[js.Any], colorRendering = colorRendering.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], dominantBaseline = dominantBaseline.asInstanceOf[js.Any], dx = dx.asInstanceOf[js.Any], dy = dy.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], fillOpacity = fillOpacity.asInstanceOf[js.Any], fillRule = fillRule.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], floodColor = floodColor.asInstanceOf[js.Any], floodOpacity = floodOpacity.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontSizeAdjust = fontSizeAdjust.asInstanceOf[js.Any], fontStretch = fontStretch.asInstanceOf[js.Any], fontStyle = fontStyle.asInstanceOf[js.Any], fontVariant = fontVariant.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], glyphOrientationVertical = glyphOrientationVertical.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], imageRendering = imageRendering.asInstanceOf[js.Any], kerning = kerning.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lightingColor = lightingColor.asInstanceOf[js.Any], markerEnd = markerEnd.asInstanceOf[js.Any], markerMid = markerMid.asInstanceOf[js.Any], markerStart = markerStart.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], shapeRendering = shapeRendering.asInstanceOf[js.Any], stopColor = stopColor.asInstanceOf[js.Any], stopOpacity = stopOpacity.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any], strokeDasharray = strokeDasharray.asInstanceOf[js.Any], strokeDashoffset = strokeDashoffset.asInstanceOf[js.Any], strokeLinecap = strokeLinecap.asInstanceOf[js.Any], strokeLinejoin = strokeLinejoin.asInstanceOf[js.Any], strokeMiterlimit = strokeMiterlimit.asInstanceOf[js.Any], strokeOpacity = strokeOpacity.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], textAnchor = textAnchor.asInstanceOf[js.Any], textDecoration = textDecoration.asInstanceOf[js.Any], textRendering = textRendering.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any], unicodeBidi = unicodeBidi.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], wordSpacing = wordSpacing.asInstanceOf[js.Any], writingMode = writingMode.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
-    if (glyphOrientationHorizontal != null) __obj.updateDynamic("glyphOrientationHorizontal")(glyphOrientationHorizontal.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[PresentationAttributes[X, Y]]
   }

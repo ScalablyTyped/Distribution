@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait AnnotationsFibonacciShapeOptions extends js.Object {
   /**
+    * (Highstock) Name of the dash style to use for the shape's stroke.
+    */
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  /**
     * (Highstock) The color of the shape's fill.
     */
   var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
@@ -22,6 +26,11 @@ trait AnnotationsFibonacciShapeOptions extends js.Object {
     * this annotation to focus. Defined in pixels.
     */
   var snap: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highstock) The URL for an image to use as the annotation shape. Note,
+    * type has to be set to `'image'`.
+    */
+  var src: js.UndefOr[String] = js.undefined
   /**
     * (Highstock) The color of the shape's stroke.
     */
@@ -43,20 +52,24 @@ trait AnnotationsFibonacciShapeOptions extends js.Object {
 object AnnotationsFibonacciShapeOptions {
   @scala.inline
   def apply(
+    dashStyle: DashStyleValue = null,
     fill: ColorString | GradientColorObject | PatternObject = null,
     height: Int | Double = null,
     r: Int | Double = null,
     snap: Int | Double = null,
+    src: String = null,
     stroke: ColorString = null,
     strokeWidth: Int | Double = null,
     `type`: String = null,
     width: Int | Double = null
   ): AnnotationsFibonacciShapeOptions = {
     val __obj = js.Dynamic.literal()
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
+    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

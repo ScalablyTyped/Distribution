@@ -309,6 +309,9 @@ object reactNativeStrings {
   sealed trait blob extends XMLHttpRequestResponseType
   
   @js.native
+  sealed trait blur extends AppStateEvent
+  
+  @js.native
   sealed trait bold extends js.Object
   
   @js.native
@@ -570,6 +573,9 @@ object reactNativeStrings {
   
   @js.native
   sealed trait `flex-start` extends FlexAlignType
+  
+  @js.native
+  sealed trait focus extends AppStateEvent
   
   @js.native
   sealed trait `force-cache` extends js.Object
@@ -1486,6 +1492,8 @@ object reactNativeStrings {
   @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
   @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   @scala.inline
   def boldTextChanged: boldTextChanged = "boldTextChanged".asInstanceOf[boldTextChanged]
@@ -1647,6 +1655,8 @@ object reactNativeStrings {
   def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   @scala.inline
   def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
+  @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def `force-cache`: `force-cache` = "force-cache".asInstanceOf[`force-cache`]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ftdomdelegate"
-version := "0.0-unknown-dt-20190322Z-2fb7c8"
+version := "0.0-unknown-dt-20200226Z-2fb7c8"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

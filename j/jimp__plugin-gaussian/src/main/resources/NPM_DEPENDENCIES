@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-gaussian" : "0.9.3"
+      "@jimp/plugin-gaussian" : "0.9.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-gaussian" : "0.9.3"
+      "@jimp/plugin-gaussian" : "0.9.6"
     }
   ],
   "compile-devDependencies" : [

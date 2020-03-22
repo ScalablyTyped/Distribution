@@ -1,8 +1,6 @@
 package typings.urijs.uritemplateMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.urijs.uri.URITemplate
-import typings.urijs.uri.URITemplateStatic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

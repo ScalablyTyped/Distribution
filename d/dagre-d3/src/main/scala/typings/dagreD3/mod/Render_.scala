@@ -4,8 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.d3Selection.mod.BaseType
 import typings.d3Selection.mod.Selection_
 import typings.dagre.mod.Edge
-import typings.dagre.mod.Node
 import typings.dagre.mod.graphlib.Graph
+import typings.dagreD3.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ trait Render_ extends js.Object {
       BaseType, 
       /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
     ],
-    g: Graph
+    g: Graph[js.Object]
   ): Unit = js.native
   // see http://cpettitt.github.io/project/dagre-d3/latest/demo/user-defined.html for example usage
   def arrows(): StringDictionary[

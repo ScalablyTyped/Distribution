@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StackSetInstanceArgs extends js.Object {
   /**
-    * Target AWS Account ID to create a Stack based on the Stack Set. Defaults to current account.
+    * Target AWS Account ID to create a Stack based on the StackSet. Defaults to current account.
     */
   val accountId: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value map of input parameters to override from the Stack Set for this Instance.
+    * Key-value map of input parameters to override from the StackSet for this Instance.
     */
   val parameterOverrides: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
-    * Target AWS Region to create a Stack based on the Stack Set. Defaults to current region.
+    * Target AWS Region to create a Stack based on the StackSet. Defaults to current region.
     */
   val region: js.UndefOr[Input[String]] = js.native
   /**
-    * During resource destroy, remove Instance from Stack Set while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new Stack Set. Defaults to `false`.
+    * During resource destroy, remove Instance from StackSet while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new StackSet. Defaults to `false`.
     */
   val retainStack: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Name of the Stack Set.
+    * Name of the StackSet.
     */
   val stackSetName: Input[String] = js.native
 }

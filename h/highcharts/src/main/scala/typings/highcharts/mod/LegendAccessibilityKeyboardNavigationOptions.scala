@@ -9,14 +9,14 @@ trait LegendAccessibilityKeyboardNavigationOptions extends js.Object {
     * (Highcharts, Highstock, Highmaps, Gantt) Enable keyboard navigation for
     * the legend.
     */
-  var enabled: js.UndefOr[js.Object] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 
 object LegendAccessibilityKeyboardNavigationOptions {
   @scala.inline
-  def apply(enabled: js.Object = null): LegendAccessibilityKeyboardNavigationOptions = {
+  def apply(enabled: js.UndefOr[Boolean] = js.undefined): LegendAccessibilityKeyboardNavigationOptions = {
     val __obj = js.Dynamic.literal()
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendAccessibilityKeyboardNavigationOptions]
   }
 }

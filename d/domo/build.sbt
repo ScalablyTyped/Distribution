@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "domo"
-version := "0.5-dt-20190322Z-a194ed"
+version := "0.5-dt-20200226Z-a194ed"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

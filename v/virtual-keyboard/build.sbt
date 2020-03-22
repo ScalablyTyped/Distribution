@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "virtual-keyboard"
-version := "1.26-dt-20190212Z-e77f2f"
+version := "1.26-dt-20200225Z-e77f2f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

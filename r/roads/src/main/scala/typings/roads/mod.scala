@@ -3,7 +3,7 @@ package typings.roads
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.roads.clientBuildMod.RoadsBuildOptions
+import typings.roads.buildMod.RoadsBuildOptions
 import typings.roads.requestMod.default
 import typings.roads.roadMod.ResponseMiddleware
 import typings.std.HTMLElement

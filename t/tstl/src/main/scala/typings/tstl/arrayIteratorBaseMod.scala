@@ -24,10 +24,6 @@ object arrayIteratorBaseMod extends js.Object {
     var array_ : js.Any = js.native
     var index_ : js.Any = js.native
     /**
-      * @internal
-      */
-    def _Get_array(): ArrayT = js.native
-    /**
       * @inheritDoc
       */
     /**

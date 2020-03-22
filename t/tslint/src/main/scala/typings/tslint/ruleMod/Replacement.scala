@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Replacement protected () extends js.Object {
   def this(start: Double, length: Double, text: String) = this()
-  val end: Double = js.native
   val length: Double = js.native
   val start: Double = js.native
   val text: String = js.native
   @JSName("apply")
   def apply(content: String): String = js.native
+  def end(): Double = js.native
   def toJson(): ReplacementJson = js.native
 }
 

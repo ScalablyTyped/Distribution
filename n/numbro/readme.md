@@ -1,7 +1,7 @@
 
 # Scala.js typings for numbro
 
-Typings are for version 2.1.2
+Typings are for version 2.2.0
 
 ## Library description:
 Format and manipulate numbers.

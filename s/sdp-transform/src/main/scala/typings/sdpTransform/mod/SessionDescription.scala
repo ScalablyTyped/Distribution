@@ -47,7 +47,7 @@ object SessionDescription {
   @scala.inline
   def apply(
     media: js.Array[typestringportnumberproto],
-    bandwidth: AnonLimit = null,
+    bandwidth: js.Array[AnonLimit] = null,
     connection: AnonIp = null,
     control: String = null,
     description: String = null,

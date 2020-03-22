@@ -18,7 +18,6 @@ sealed trait SaveBehavior extends js.Object
 @js.native
 object SaveBehavior extends js.Object {
   /**
-    *
     * Prompts the saveas experience to the user if the workbook has not been saved,
     Ignored if the workbook was previously saved.
     *
@@ -27,7 +26,6 @@ object SaveBehavior extends js.Object {
   sealed trait prompt extends SaveBehavior
   
   /**
-    *
     * Save the workbook without prompting the user. If file is not saved,
     it will save it with default name under default location.
     *

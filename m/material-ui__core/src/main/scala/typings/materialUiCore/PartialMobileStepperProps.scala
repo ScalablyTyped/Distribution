@@ -97,7 +97,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/MobileStepper.MobileStepperProps> */
 @js.native
 trait PartialMobileStepperProps extends js.Object {
-  var LinearProgressProps: js.UndefOr[PartialLinearProgressProps] = js.native
+  var LinearProgressProps: js.UndefOr[PartialLinearProgressProp] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var activeStep: js.UndefOr[Double] = js.native
@@ -155,7 +155,7 @@ trait PartialMobileStepperProps extends js.Object {
   var backButton: js.UndefOr[ReactElement] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapMobileStepperClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapMobile] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[PaperProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -287,7 +287,7 @@ trait PartialMobileStepperProps extends js.Object {
 object PartialMobileStepperProps {
   @scala.inline
   def apply(
-    LinearProgressProps: PartialLinearProgressProps = null,
+    LinearProgressProps: PartialLinearProgressProp = null,
     about: String = null,
     accessKey: String = null,
     activeStep: Int | Double = null,
@@ -345,7 +345,7 @@ object PartialMobileStepperProps {
     backButton: ReactElement = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapMobileStepperClassKey = null,
+    classes: PartialClassNameMapMobile = null,
     color: String = null,
     component: ReactType[PaperProps] = null,
     contentEditable: Booleanish | inherit = null,

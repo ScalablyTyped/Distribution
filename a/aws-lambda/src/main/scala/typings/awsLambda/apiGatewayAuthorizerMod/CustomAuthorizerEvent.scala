@@ -1,7 +1,8 @@
 package typings.awsLambda.apiGatewayAuthorizerMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.apiGatewayMod.APIGatewayEventRequestContext
+import typings.awsLambda.apiGatewayMod.APIGatewayEventDefaultAuthorizerContext
+import typings.awsLambda.apiGatewayMod.APIGatewayEventRequestContextWithAuthorizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +19,9 @@ trait CustomAuthorizerEvent extends js.Object {
   var path: js.UndefOr[String] = js.undefined
   var pathParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   var queryStringParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
-  var requestContext: js.UndefOr[APIGatewayEventRequestContext] = js.undefined
+  var requestContext: js.UndefOr[
+    APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]
+  ] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var stageVariables: js.UndefOr[StringDictionary[String]] = js.undefined
   var `type`: String
@@ -39,7 +42,7 @@ object CustomAuthorizerEvent {
     path: String = null,
     pathParameters: StringDictionary[String] = null,
     queryStringParameters: StringDictionary[String] = null,
-    requestContext: APIGatewayEventRequestContext = null,
+    requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext] = null,
     resource: String = null,
     stageVariables: StringDictionary[String] = null
   ): CustomAuthorizerEvent = {

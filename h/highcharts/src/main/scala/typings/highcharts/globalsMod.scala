@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("highcharts/globals", JSImport.Namespace)
 @js.native
 object globalsMod extends js.Object {
-  def init(): Unit = js.native
   type GlobalSVGElement = SVGElement
 }
 

@@ -4272,17 +4272,48 @@ trait Chainable[Subject] extends js.Object {
     * @param {string} [key] - name of a particular item to remove (optional).
     * @example
     ```
-    // removes all local storage keys
+    // Removes all local storage keys
     cy.clearLocalStorage()
     .should(ls => {
     expect(ls.getItem('prop1')).to.be.null
     })
-    // removes item "todos"
+    // Removes item "todos"
     cy.clearLocalStorage("todos")
     ```
     */
   def clearLocalStorage(): Chainable[Storage] = js.native
   def clearLocalStorage(key: String): Chainable[Storage] = js.native
+  /**
+    * Clear data in local storage.
+    * Cypress automatically runs this command before each test to prevent state from being
+    * shared across tests. You shouldn’t need to use this command unless you’re using it
+    * to clear localStorage inside a single test. Yields `localStorage` object.
+    *
+    * @see https://on.cypress.io/clearlocalstorage
+    * @param {string} [key] - name of a particular item to remove (optional).
+    * @param {options} [object] - options object
+    * @example
+    ```
+    // Removes item "todos" without logging
+    cy.clearLocalStorage("todos", { log: false })
+    ```
+    */
+  def clearLocalStorage(key: String, options: PartialLoggable): Chainable[Storage] = js.native
+  /**
+    * Clear data in local storage.
+    * Cypress automatically runs this command before each test to prevent state from being
+    * shared across tests. You shouldn’t need to use this command unless you’re using it
+    * to clear localStorage inside a single test. Yields `localStorage` object.
+    *
+    * @see https://on.cypress.io/clearlocalstorage
+    * @param {options} [object] - options object
+    * @example
+    ```
+    // Removes all local storage items, without logging
+    cy.clearLocalStorage({ log: false })
+    ```
+    */
+  def clearLocalStorage(options: PartialLoggable): Chainable[Storage] = js.native
   /**
     * Clear keys in local storage that match given regular expression.
     *
@@ -4290,7 +4321,7 @@ trait Chainable[Subject] extends js.Object {
     * @param {RegExp} re - regular expression to match.
     * @example
     ```
-    // Clear all local storage matching /app-/
+    // Clears all local storage matching /app-/
     cy.clearLocalStorage(/app-/)
     ```
     */
@@ -4309,14 +4340,14 @@ trait Chainable[Subject] extends js.Object {
   /**
     * Click a DOM element at specific corner / side.
     *
-    * @param {String} position - The position where the click should be issued.
+    * @param {PositionType} position - The position where the click should be issued.
     * The `center` position is the default position.
     * @see https://on.cypress.io/click
     * @example
     *    cy.get('button').click('topRight')
     */
-  def click(position: String): Chainable[Subject] = js.native
-  def click(position: String, options: PartialClickOptions): Chainable[Subject] = js.native
+  def click(position: PositionType): Chainable[Subject] = js.native
+  def click(position: PositionType, options: PartialClickOptions): Chainable[Subject] = js.native
   /**
     * Click a DOM element at specific coordinates
     *
@@ -6368,14 +6399,14 @@ trait Chainable[Subject] extends js.Object {
   /**
     * Double-click a DOM element at specific corner / side.
     *
-    * @param {String} position - The position where the click should be issued.
+    * @param {PositionType} position - The position where the click should be issued.
     * The `center` position is the default position.
     * @see https://on.cypress.io/dblclick
     * @example
     *    cy.get('button').dblclick('topRight')
     */
-  def dblclick(position: String): Chainable[Subject] = js.native
-  def dblclick(position: String, options: PartialClickOptions): Chainable[Subject] = js.native
+  def dblclick(position: PositionType): Chainable[Subject] = js.native
+  def dblclick(position: PositionType, options: PartialClickOptions): Chainable[Subject] = js.native
   /**
     * Double-click a DOM element at specific coordinates
     *
@@ -8018,23 +8049,28 @@ trait Chainable[Subject] extends js.Object {
   def hash(): Chainable[String] = js.native
   def hash(options: PartialLoggableTimeoutabl): Chainable[String] = js.native
   /**
-    * Invoke a function on the previously yielded subject.
-    * This isn't possible to strongly type without generic override yet.
-    * If called on an object you can do this instead: `.then(s => s.show())`.
-    * If called on an array you can do this instead: `.each(s => s.show())`.
-    * From there the subject will be properly typed.
+    * Invoke a function on the previously yielded subject by a property path.
+    * Property path invocation cannot be strongly-typed.
+    * Invoking by a property path will always result in any.
     *
     * @see https://on.cypress.io/invoke
     */
-  def invoke(functionName: String, args: js.Any*): Chainable[Subject] = js.native
-  // don't have a way to express return types yet
-  def invoke(options: Loggable, functionName: String, args: js.Any*): Chainable[Subject] = js.native
+  def invoke(propertyPath: String, args: js.Any*): Chainable[_] = js.native
   /**
     * Invoke a function in an array of functions.
     * @see https://on.cypress.io/invoke
     */
   def invoke[T /* <: js.Function1[/* repeated */ js.Any, _] */, Subject /* <: js.Array[T] */](index: Double): Chainable[ReturnType[T]] = js.native
   def invoke[T /* <: js.Function1[/* repeated */ js.Any, _] */, Subject /* <: js.Array[T] */](options: Loggable, index: Double): Chainable[ReturnType[T]] = js.native
+  /**
+    * Invoke a function on the previously yielded subject.
+    *
+    * @see https://on.cypress.io/invoke
+    */
+  def invoke[K /* <: String */, F /* <: (js.Function1[/* repeated */ js.Any, _]) with (/* import warning: importer.ImportType#apply Failed type conversion: Subject[K] */ js.Any) */, R](functionName: K, args: js.Any*): Chainable[R] = js.native
+  def invoke[K /* <: String */, F /* <: (js.Function1[/* repeated */ js.Any, _]) with (/* import warning: importer.ImportType#apply Failed type conversion: Subject[K] */ js.Any) */, R](options: Loggable, functionName: K, args: js.Any*): Chainable[R] = js.native
+  def its(propertyPath: String): Chainable[_] = js.native
+  def its(propertyPath: String, options: Loggable): Chainable[_] = js.native
   /**
     * Get a property’s value on the previously yielded subject.
     *
@@ -13943,14 +13979,14 @@ trait Chainable[Subject] extends js.Object {
   /**
     * Right-click a DOM element at specific corner / side.
     *
-    * @param {String} position - The position where the click should be issued.
+    * @param {PositionType} position - The position where the click should be issued.
     * The `center` position is the default position.
     * @see https://on.cypress.io/click
     * @example
     *    cy.get('button').rightclick('topRight')
     */
-  def rightclick(position: String): Chainable[Subject] = js.native
-  def rightclick(position: String, options: PartialClickOptions): Chainable[Subject] = js.native
+  def rightclick(position: PositionType): Chainable[Subject] = js.native
+  def rightclick(position: PositionType, options: PartialClickOptions): Chainable[Subject] = js.native
   /**
     * Right-click a DOM element at specific coordinates
     *

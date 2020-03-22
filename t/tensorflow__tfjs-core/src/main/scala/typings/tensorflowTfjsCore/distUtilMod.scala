@@ -78,6 +78,7 @@ object distUtilMod extends js.Object {
   def getArrayFromDType_string(dtype: string, size: Double): js.Array[String] = js.native
   def getTypedArrayFromDType[D /* <: NumericDataType */](dtype: D, size: Double): /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any = js.native
   def hasEncodingLoss(oldType: DataType, newType: DataType): Boolean = js.native
+  def indexToLoc(index: Double, rank: Double, strides: js.Array[Double]): js.Array[Double] = js.native
   def inferDtype(values: TensorLike): DataType = js.native
   def inferFromImplicitShape(shape: js.Array[Double], size: Double): js.Array[Double] = js.native
   def isBoolean(value: js.Object): Boolean = js.native
@@ -88,6 +89,7 @@ object distUtilMod extends js.Object {
   def isString(value: js.Object): /* is string */ Boolean = js.native
   def isTypedArray(a: js.Object): Boolean = js.native
   def isValidDtype(dtype: DataType): Boolean = js.native
+  def locToIndex(locs: js.Array[Double], rank: Double, strides: js.Array[Double]): Double = js.native
   @JSName("makeOnesTypedArray")
   def makeOnesTypedArray_bool(size: Double, dtype: bool): Uint8Array = js.native
   @JSName("makeOnesTypedArray")

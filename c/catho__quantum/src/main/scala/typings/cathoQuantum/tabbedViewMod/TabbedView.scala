@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/TabbedView", "TabbedView")
+@JSImport("@catho/quantum/TabbedView", "TabbedView")
 @js.native
 class TabbedView ()
   extends Component[TabbedViewProps, js.Object, js.Any]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pdfobject"
-version := "v2.0.201604172-dt-20190322Z-7d27ce"
+version := "v2.0.201604172-dt-20200226Z-7d27ce"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

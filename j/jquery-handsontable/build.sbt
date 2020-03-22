@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-handsontable"
-version := "0.0-unknown-dt-20190322Z-db8d6f"
+version := "0.0-unknown-dt-20200226Z-db8d6f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

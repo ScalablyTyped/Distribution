@@ -202,6 +202,35 @@ package object mediaconvertMod {
   */
   type AudioTypeControl = typings.awsSdk.mediaconvertMod._AudioTypeControl | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.OFF
+    - typings.awsSdk.awsSdkStrings.LOW
+    - typings.awsSdk.awsSdkStrings.MEDIUM
+    - typings.awsSdk.awsSdkStrings.HIGH
+    - typings.awsSdk.awsSdkStrings.HIGHER
+    - typings.awsSdk.awsSdkStrings.MAX
+    - java.lang.String
+  */
+  type Av1AdaptiveQuantization = typings.awsSdk.mediaconvertMod._Av1AdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
+    - typings.awsSdk.awsSdkStrings.SPECIFIED
+    - java.lang.String
+  */
+  type Av1FramerateControl = typings.awsSdk.mediaconvertMod._Av1FramerateControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
+    - typings.awsSdk.awsSdkStrings.INTERPOLATE
+    - java.lang.String
+  */
+  type Av1FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._Av1FramerateConversionAlgorithm | java.lang.String
+  type Av1RateControlMode = typings.awsSdk.awsSdkStrings.QVBR | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type Av1SpatialAdaptiveQuantization = typings.awsSdk.mediaconvertMod._Av1SpatialAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.QUEUE
     - typings.awsSdk.awsSdkStrings.PRESET
     - typings.awsSdk.awsSdkStrings.JOB_TEMPLATE
@@ -2000,6 +2029,7 @@ package object mediaconvertMod {
   type Type = typings.awsSdk.mediaconvertMod._Type | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.FRAME_CAPTURE
+    - typings.awsSdk.awsSdkStrings.AV1
     - typings.awsSdk.awsSdkStrings.H_264
     - typings.awsSdk.awsSdkStrings.H_265
     - typings.awsSdk.awsSdkStrings.MPEG2
@@ -2096,6 +2126,7 @@ package object mediaconvertMod {
   type integerMin48000Max48000 = scala.Double
   type integerMin6000Max1024000 = scala.Double
   type integerMin64000Max640000 = scala.Double
+  type integerMin7Max15 = scala.Double
   type integerMin8000Max192000 = scala.Double
   type integerMin8000Max96000 = scala.Double
   type integerMin96Max600 = scala.Double

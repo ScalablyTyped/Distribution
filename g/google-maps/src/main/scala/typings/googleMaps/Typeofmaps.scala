@@ -27,7 +27,6 @@ import typings.googlemaps.google.maps.MapCanvasProjection
 import typings.googlemaps.google.maps.MapTypeRegistry
 import typings.googlemaps.google.maps.MapTypeStyle
 import typings.googlemaps.google.maps.MaxZoomService
-import typings.googlemaps.google.maps.OverlayView
 import typings.googlemaps.google.maps.Point
 import typings.googlemaps.google.maps.Polygon
 import typings.googlemaps.google.maps.Polyline
@@ -118,7 +117,7 @@ trait Typeofmaps extends js.Object {
     */
   var Marker: TypeofMarker
   var MaxZoomService: Instantiable0[typings.googlemaps.google.maps.MaxZoomService]
-  var OverlayView: Instantiable0[typings.googlemaps.google.maps.OverlayView]
+  var OverlayView: TypeofOverlayView
   var Point: Instantiable2[/* x */ Double, /* y */ Double, typings.googlemaps.google.maps.Point]
   var Polygon: Instantiable0[typings.googlemaps.google.maps.Polygon]
   var Polyline: Instantiable0[typings.googlemaps.google.maps.Polyline]
@@ -179,7 +178,7 @@ object Typeofmaps {
     MapTypeRegistry: Instantiable0[MapTypeRegistry],
     Marker: TypeofMarker,
     MaxZoomService: Instantiable0[MaxZoomService],
-    OverlayView: Instantiable0[OverlayView],
+    OverlayView: TypeofOverlayView,
     Point: Instantiable2[/* x */ Double, /* y */ Double, Point],
     Polygon: Instantiable0[Polygon],
     Polyline: Instantiable0[Polyline],

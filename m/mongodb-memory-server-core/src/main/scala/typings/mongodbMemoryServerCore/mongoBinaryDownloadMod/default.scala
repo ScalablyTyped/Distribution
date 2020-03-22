@@ -35,6 +35,22 @@ class default protected () extends MongoBinaryDownload {
   /* CompleteClass */
   override def extract(mongoDBArchive: String): js.Promise[String] = js.native
   /**
+    * Extract a .tar.gz archive
+    * @param mongoDBArchive Archive location
+    * @param extractDir Directory to extract to
+    * @param filter Method to determine which files to extract
+    */
+  /* CompleteClass */
+  override def extractTarGz(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit] = js.native
+  /**
+    * Extract a .zip archive
+    * @param mongoDBArchive Archive location
+    * @param extractDir Directory to extract to
+    * @param filter Method to determine which files to extract
+    */
+  /* CompleteClass */
+  override def extractZip(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit] = js.native
+  /**
     * Get the path of the already downloaded "mongod" file
     * otherwise download it and then return the path
     */

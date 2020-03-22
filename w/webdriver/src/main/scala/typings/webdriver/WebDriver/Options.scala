@@ -2,6 +2,8 @@ package typings.webdriver.WebDriver
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.WritableStream
+import typings.webdriver.HTTPRequestOptions
+import typings.webdriver.HTTPResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,6 +21,10 @@ trait Options extends js.Object {
   var port: js.UndefOr[Double] = js.undefined
   var protocol: js.UndefOr[String] = js.undefined
   var queryParams: js.UndefOr[StringDictionary[String]] = js.undefined
+  var transformRequest: js.UndefOr[js.Function1[/* requestOptions */ HTTPRequestOptions, HTTPRequestOptions]] = js.undefined
+  var transformResponse: js.UndefOr[
+    js.Function2[/* response */ HTTPResponse, /* requestOptions */ HTTPRequestOptions, HTTPResponse]
+  ] = js.undefined
   var user: js.UndefOr[String] = js.undefined
 }
 
@@ -37,6 +43,8 @@ object Options {
     port: Int | Double = null,
     protocol: String = null,
     queryParams: StringDictionary[String] = null,
+    transformRequest: /* requestOptions */ HTTPRequestOptions => HTTPRequestOptions = null,
+    transformResponse: (/* response */ HTTPResponse, /* requestOptions */ HTTPRequestOptions) => HTTPResponse = null,
     user: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
@@ -52,6 +60,8 @@ object Options {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
+    if (transformResponse != null) __obj.updateDynamic("transformResponse")(js.Any.fromFunction2(transformResponse))
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }

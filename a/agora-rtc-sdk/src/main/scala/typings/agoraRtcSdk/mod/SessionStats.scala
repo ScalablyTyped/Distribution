@@ -4,7 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Statistics of the session connection. */
+/**
+  * Statistics of the session connection.
+  *
+  * If {@link getSessionStats} is called successfully, this interface provides the statistics.
+  */
 trait SessionStats extends js.Object {
   /** Call duration in seconds, represented by an aggregate value. */
   val Duration: js.UndefOr[String] = js.undefined

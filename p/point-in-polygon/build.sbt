@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "point-in-polygon"
-version := "1.0-dt-20180214Z-570e2b"
+version := "1.0-dt-20200226Z-570e2b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

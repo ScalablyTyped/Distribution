@@ -129,7 +129,7 @@ trait Argv[T] extends js.Object {
     * Note that when `void` is returned, the handler `argv` object type will not include command-specific arguments.
     * @param [handler] Function, which will be executed with the parsed `argv` object.
     */
-  def command[U](command: String, description: String): Argv[T] = js.native
+  def command[U](command: String, description: String): Argv[U] = js.native
   def command[O /* <: StringDictionary[Options] */](command: String, description: String, builder: O): Argv[T] = js.native
   def command[O /* <: StringDictionary[Options] */](
     command: String,
@@ -137,15 +137,15 @@ trait Argv[T] extends js.Object {
     builder: O,
     handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], Unit]
   ): Argv[T] = js.native
-  def command[U](command: String, description: String, builder: BuilderCallback[T, U]): Argv[T] = js.native
+  def command[U](command: String, description: String, builder: BuilderCallback[T, U]): Argv[U] = js.native
   def command[U](
     command: String,
     description: String,
     builder: BuilderCallback[T, U],
     handler: js.Function1[/* args */ Arguments[U], Unit]
-  ): Argv[T] = js.native
+  ): Argv[U] = js.native
   def command[U](command: String, description: String, module: CommandModule[T, U]): Argv[U] = js.native
-  def command[U](command: js.Array[String], description: String): Argv[T] = js.native
+  def command[U](command: js.Array[String], description: String): Argv[U] = js.native
   def command[O /* <: StringDictionary[Options] */](command: js.Array[String], description: String, builder: O): Argv[T] = js.native
   def command[O /* <: StringDictionary[Options] */](
     command: js.Array[String],
@@ -153,13 +153,13 @@ trait Argv[T] extends js.Object {
     builder: O,
     handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], Unit]
   ): Argv[T] = js.native
-  def command[U](command: js.Array[String], description: String, builder: BuilderCallback[T, U]): Argv[T] = js.native
+  def command[U](command: js.Array[String], description: String, builder: BuilderCallback[T, U]): Argv[U] = js.native
   def command[U](
     command: js.Array[String],
     description: String,
     builder: BuilderCallback[T, U],
     handler: js.Function1[/* args */ Arguments[U], Unit]
-  ): Argv[T] = js.native
+  ): Argv[U] = js.native
   def command[U](command: js.Array[String], description: String, module: CommandModule[T, U]): Argv[U] = js.native
   def command[U](module: CommandModule[T, U]): Argv[U] = js.native
   // Advanced API

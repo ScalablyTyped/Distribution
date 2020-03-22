@@ -18,7 +18,6 @@ sealed trait CalculationState extends js.Object
 @js.native
 object CalculationState extends js.Object {
   /**
-    *
     * Calculations in progress.
     *
     */
@@ -26,7 +25,6 @@ object CalculationState extends js.Object {
   sealed trait calculating extends CalculationState
   
   /**
-    *
     * Calculations complete.
     *
     */
@@ -34,7 +32,6 @@ object CalculationState extends js.Object {
   sealed trait done extends CalculationState
   
   /**
-    *
     * Changes that trigger calculation have been made, but a recalculation has not yet been performed.
     *
     */

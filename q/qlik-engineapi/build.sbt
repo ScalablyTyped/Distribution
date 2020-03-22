@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qlik-engineapi"
-version := "12.67-dt-20190213Z-6de236"
+version := "12.67-dt-20200225Z-6de236"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

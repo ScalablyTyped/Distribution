@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zeroclipboard"
-version := "2.0-dt-20190322Z-88ba04"
+version := "2.0-dt-20200225Z-88ba04"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

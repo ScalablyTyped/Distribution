@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.mod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -26,10 +26,10 @@ class LayerVariable protected ()
     * variable after optimize updates
     * @throws ValueError if `name` is `null` or `undefined`.
     */
-  def this(`val`: Tensor_[Rank]) = this()
-  def this(`val`: Tensor_[Rank], dtype: DataType) = this()
-  def this(`val`: Tensor_[Rank], dtype: DataType, name: String) = this()
-  def this(`val`: Tensor_[Rank], dtype: DataType, name: String, trainable: Boolean) = this()
-  def this(`val`: Tensor_[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
+  def this(`val`: Tensor[Rank]) = this()
+  def this(`val`: Tensor[Rank], dtype: DataType) = this()
+  def this(`val`: Tensor[Rank], dtype: DataType, name: String) = this()
+  def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean) = this()
+  def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
 }
 

@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object documentCardActivityBaseMod extends js.Object {
   @js.native
-  class DocumentCardActivityBase ()
-    extends BaseComponent[IDocumentCardActivityProps, js.Any] {
+  class DocumentCardActivityBase protected ()
+    extends Component[IDocumentCardActivityProps, js.Any, js.Any] {
+    def this(props: IDocumentCardActivityProps) = this()
     var _classNames: js.Any = js.native
     var _getNameString: js.Any = js.native
     var _renderAvatar: js.Any = js.native

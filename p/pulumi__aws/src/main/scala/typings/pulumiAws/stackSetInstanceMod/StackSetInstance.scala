@@ -23,19 +23,19 @@ class StackSetInstance protected () extends CustomResource {
   def this(name: String, args: StackSetInstanceArgs) = this()
   def this(name: String, args: StackSetInstanceArgs, opts: CustomResourceOptions) = this()
   /**
-    * Target AWS Account ID to create a Stack based on the Stack Set. Defaults to current account.
+    * Target AWS Account ID to create a Stack based on the StackSet. Defaults to current account.
     */
   val accountId: Output_[String] = js.native
   /**
-    * Key-value map of input parameters to override from the Stack Set for this Instance.
+    * Key-value map of input parameters to override from the StackSet for this Instance.
     */
   val parameterOverrides: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
-    * Target AWS Region to create a Stack based on the Stack Set. Defaults to current region.
+    * Target AWS Region to create a Stack based on the StackSet. Defaults to current region.
     */
   val region: Output_[String] = js.native
   /**
-    * During resource destroy, remove Instance from Stack Set while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new Stack Set. Defaults to `false`.
+    * During resource destroy, remove Instance from StackSet while keeping the Stack and its associated resources. Must be enabled in the state _before_ destroy operation to take effect. You cannot reassociate a retained Stack or add an existing, saved Stack to a new StackSet. Defaults to `false`.
     */
   val retainStack: Output_[js.UndefOr[Boolean]] = js.native
   /**
@@ -43,7 +43,7 @@ class StackSetInstance protected () extends CustomResource {
     */
   val stackId: Output_[String] = js.native
   /**
-    * Name of the Stack Set.
+    * Name of the StackSet.
     */
   val stackSetName: Output_[String] = js.native
 }

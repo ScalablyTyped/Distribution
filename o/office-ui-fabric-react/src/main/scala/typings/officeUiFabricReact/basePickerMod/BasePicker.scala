@@ -12,7 +12,7 @@ import typings.officeUiFabricReact.suggestionsControllerMod.SuggestionsControlle
 import typings.officeUiFabricReact.suggestionsMod.Suggestions
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestions
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker", "BasePicker")
 @js.native
 class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
-  extends BaseComponent[P, IBasePickerState]
+  extends Component[P, IBasePickerState, js.Any]
      with IBasePicker[T] {
   def this(basePickerProps: P) = this()
   /**
@@ -37,6 +37,7 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
     */
   var SuggestionOfProperType: Instantiable1[/* props */ ISuggestionsProps[T], Suggestions[T]] = js.native
   var _ariaMap: IPickerAriaIds = js.native
+  var _async: js.Any = js.native
   var _completeGenericSuggestion: js.Any = js.native
   /**
     * Suggestions are normally shown after the user updates text and the text
@@ -57,7 +58,7 @@ class BasePicker[T, P /* <: IBasePickerProps[T] */] protected ()
   var _updateAndResolveValue: js.Any = js.native
   /**
     * Controls what happens whenever there is an action that impacts the selected items.
-    * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
+    * If `selectedItems` is provided, this will act as a controlled component and it will not update its own state.
     */
   var _updateSelectedItems: js.Any = js.native
   var currentPromise: js.UndefOr[js.Thenable[_]] = js.native

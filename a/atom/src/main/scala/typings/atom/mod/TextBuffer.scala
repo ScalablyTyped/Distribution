@@ -152,7 +152,10 @@ class TextBuffer () extends js.Object {
     *  ::onDidStopChanging observers are invoked following a change.
     */
   def getStoppedChangingDelay(): Double = js.native
-  /** Get the entire text of the buffer. */
+  /**
+    *  Get the entire text of the buffer. Avoid using this unless you know that
+    *  the buffer's text is reasonably short.
+    */
   def getText(): String = js.native
   /** Get the text in a range. */
   def getTextInRange(range: RangeCompatible): String = js.native

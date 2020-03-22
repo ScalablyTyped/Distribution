@@ -20,6 +20,8 @@ trait ToJsonOptionsObject extends _ToJsonOptions {
   var cachedAssets: js.UndefOr[Boolean] = js.undefined
   /** Add children information */
   var children: js.UndefOr[Boolean] = js.undefined
+  /** Add information about the `namedChunkGroups` */
+  var chunkGroups: js.UndefOr[Boolean] = js.undefined
   /** Add built modules information to chunk information */
   var chunkModules: js.UndefOr[Boolean] = js.undefined
   /** Add the origins of chunks and chunk merging info */
@@ -90,6 +92,7 @@ object ToJsonOptionsObject {
     cached: js.UndefOr[Boolean] = js.undefined,
     cachedAssets: js.UndefOr[Boolean] = js.undefined,
     children: js.UndefOr[Boolean] = js.undefined,
+    chunkGroups: js.UndefOr[Boolean] = js.undefined,
     chunkModules: js.UndefOr[Boolean] = js.undefined,
     chunkOrigins: js.UndefOr[Boolean] = js.undefined,
     chunks: js.UndefOr[Boolean] = js.undefined,
@@ -127,6 +130,7 @@ object ToJsonOptionsObject {
     if (!js.isUndefined(cached)) __obj.updateDynamic("cached")(cached.asInstanceOf[js.Any])
     if (!js.isUndefined(cachedAssets)) __obj.updateDynamic("cachedAssets")(cachedAssets.asInstanceOf[js.Any])
     if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkGroups)) __obj.updateDynamic("chunkGroups")(chunkGroups.asInstanceOf[js.Any])
     if (!js.isUndefined(chunkModules)) __obj.updateDynamic("chunkModules")(chunkModules.asInstanceOf[js.Any])
     if (!js.isUndefined(chunkOrigins)) __obj.updateDynamic("chunkOrigins")(chunkOrigins.asInstanceOf[js.Any])
     if (!js.isUndefined(chunks)) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])

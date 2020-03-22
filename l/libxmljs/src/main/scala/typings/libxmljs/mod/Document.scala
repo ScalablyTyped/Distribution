@@ -23,6 +23,8 @@ class Document () extends js.Object {
   def encoding(): String = js.native
   def encoding(enc: String): this.type = js.native
   def find(xpath: String): js.Array[Element] = js.native
+  def find(xpath: String, namespaces: StringMap): js.Array[Element] = js.native
+  def find(xpath: String, ns_uri: String): js.Array[Element] = js.native
   def get(xpath: String): Element | Null = js.native
   def get(xpath: String, namespaces: StringMap): Element | Null = js.native
   def getDtd(): AnonExternalId = js.native

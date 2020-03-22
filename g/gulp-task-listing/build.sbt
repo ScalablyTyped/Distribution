@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-task-listing"
-version := "0.0-unknown-dt-20190322Z-ed529b"
+version := "0.0-unknown-dt-20200225Z-ed529b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

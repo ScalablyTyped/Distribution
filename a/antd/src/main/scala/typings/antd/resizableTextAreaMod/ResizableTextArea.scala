@@ -21,6 +21,7 @@ trait ResizableTextArea
   def componentDidUpdate_MResizableTextArea(prevProps: TextAreaProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MResizableTextArea(): Unit = js.native
+  def fixFirefoxAutoScroll(): Unit = js.native
   def handleResize(size: AnonHeight): Unit = js.native
   def renderTextArea(): Element = js.native
   def resizeOnNextFrame(): Unit = js.native

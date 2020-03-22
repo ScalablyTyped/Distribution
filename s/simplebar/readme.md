@@ -1,7 +1,7 @@
 
 # Scala.js typings for simplebar
 
-Typings are for version 2.4
+Typings are for version 5.1
 
 ## Library description:
 Scrollbars, simpler.

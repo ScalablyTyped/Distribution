@@ -32,7 +32,6 @@ class ChartSeriesCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ChartSeries] = js.native
   /**
-    *
     * Add a new series to the collection. The new added series is not visible until set values/x axis values/bubble sizes for it (depending on chart type).
     *
     * [Api set: ExcelApi 1.7]
@@ -44,14 +43,12 @@ class ChartSeriesCollection () extends ClientObject {
   def add(name: String): ChartSeries = js.native
   def add(name: String, index: Double): ChartSeries = js.native
   /**
-    *
     * Returns the number of series in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Retrieves a series based on its position in the collection.
     *
     * [Api set: ExcelApi 1.1]

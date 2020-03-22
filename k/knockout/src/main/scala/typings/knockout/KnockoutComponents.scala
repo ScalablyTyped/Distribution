@@ -39,8 +39,8 @@ trait KnockoutComponents extends js.Object {
     * @param componentName Component name. Will be used for your custom HTML tag name.
     * @param config Component configuration.
     */
-  def register(componentName: String, config: Config): Unit = js.native
-  def register(componentName: String, config: EmptyConfig): Unit = js.native
+  def register[T](componentName: String, config: Config[T]): Unit = js.native
+  def register[T](componentName: String, config: EmptyConfig): Unit = js.native
   /**
     * Removes the named component from the default component loader registry. Or if no such component was registered, does nothing.
     * @param componentName Component name.

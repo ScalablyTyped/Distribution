@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 object reactJsonschemaFormStrings {
   @js.native
+  sealed trait IdSchema extends js.Object
+  
+  @js.native
+  sealed trait PathSchema extends js.Object
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -647,6 +653,10 @@ object reactJsonschemaFormStrings {
   @js.native
   sealed trait yes extends js.Object
   
+  @scala.inline
+  def IdSchema: IdSchema = "IdSchema".asInstanceOf[IdSchema]
+  @scala.inline
+  def PathSchema: PathSchema = "PathSchema".asInstanceOf[PathSchema]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

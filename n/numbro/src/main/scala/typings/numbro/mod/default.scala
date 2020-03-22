@@ -1,6 +1,7 @@
 package typings.numbro.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.numbro.mod.numbro.Format
 import typings.numbro.mod.numbro.Numbro
 import typings.numbro.mod.numbro.NumbroLanguage
 import scala.scalajs.js
@@ -23,13 +24,15 @@ object default extends js.Object {
   def loadLanguagesInNode(): Unit = js.native
   def registerLanguage(tag: NumbroLanguage): String = js.native
   def registerLanguage(tag: NumbroLanguage, useLanguage: Boolean): String = js.native
+  def setDefaults(format: String): Unit = js.native
+  def setDefaults(format: Format): Unit = js.native
   def setLanguage(tag: String): Unit = js.native
   def setLanguage(tag: String, fallbackTag: String): Unit = js.native
   def unformat(input: String): Double = js.native
   def unformat(input: String, format: String): Double = js.native
-  def unformat(input: String, format: js.Object): Double = js.native
+  def unformat(input: String, format: Format): Double = js.native
   def validate(value: String, format: String): Boolean = js.native
-  def validate(value: String, format: js.Object): Boolean = js.native
+  def validate(value: String, format: Format): Boolean = js.native
   def zeroFormat(newFormat: String): Unit = js.native
 }
 

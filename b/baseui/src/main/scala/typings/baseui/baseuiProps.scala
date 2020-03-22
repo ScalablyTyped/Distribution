@@ -7,7 +7,6 @@ import typings.baseui.listMod.MenuAdapterPropsT
 import typings.baseui.listMod.PropsT
 import typings.baseui.menuMod.NestedMenuProps
 import typings.baseui.selectMod.DropdownProps
-import typings.baseui.treeViewMod.TreeViewProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -360,6 +359,9 @@ trait baseuiProps {
   def StatefulTooltipProps: typings.baseui.tooltipMod.StatefulTooltipProps.type = typings.baseui.tooltipMod.StatefulTooltipProps
   type StatefulTooltipProps = typings.baseui.tooltipMod.StatefulTooltipProps
   @scala.inline
+  def StatefulTreeViewProps: typings.baseui.treeViewMod.TreeViewProps.type = typings.baseui.treeViewMod.TreeViewProps
+  type StatefulTreeViewProps = typings.baseui.treeViewMod.TreeViewProps
+  @scala.inline
   def StepProps: typings.baseui.progressStepsMod.StepProps.type = typings.baseui.progressStepsMod.StepProps
   type StepProps = typings.baseui.progressStepsMod.StepProps
   type TabProps = typings.baseui.tabsMod.TabProps
@@ -404,6 +406,9 @@ trait baseuiProps {
   def TreeLabelProps: typings.baseui.treeViewMod.TreeLabelProps.type = typings.baseui.treeViewMod.TreeLabelProps
   type TreeLabelProps = typings.baseui.treeViewMod.TreeLabelProps
   @scala.inline
+  def TreeViewProps: typings.baseui.treeViewMod.TreeViewProps.type = typings.baseui.treeViewMod.TreeViewProps
+  type TreeViewProps = typings.baseui.treeViewMod.TreeViewProps
+  @scala.inline
   def TriangleDownProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type TriangleDownProps = typings.baseui.iconMod.IconProps
   @scala.inline
@@ -415,12 +420,6 @@ trait baseuiProps {
   @scala.inline
   def TriangleUpProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type TriangleUpProps = typings.baseui.iconMod.IconProps
-  @scala.inline
-  def UnstableStatefulTreeViewProps: TreeViewProps.type = typings.baseui.treeViewMod.TreeViewProps
-  type UnstableStatefulTreeViewProps = TreeViewProps
-  @scala.inline
-  def UnstableTreeViewProps: TreeViewProps.type = typings.baseui.treeViewMod.TreeViewProps
-  type UnstableTreeViewProps = TreeViewProps
   @scala.inline
   def UploadProps: typings.baseui.iconMod.IconProps.type = typings.baseui.iconMod.IconProps
   type UploadProps = typings.baseui.iconMod.IconProps

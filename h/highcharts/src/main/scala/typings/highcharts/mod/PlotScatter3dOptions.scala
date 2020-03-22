@@ -197,7 +197,13 @@ trait PlotScatter3dOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
-    * (Highcharts) A name for the dash style to use for the graph, or for some
+    * (Highcharts) A reserved subspace to store options and values for
+    * customized functionality. Here you can add additional data for your own
+    * event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
+    * (Highcharts) Name of the dash style to use for the graph, or for some
     * series types the outline of each shape.
     *
     * In styled mode, the stroke dash-array can be set with the same classes as
@@ -230,7 +236,7 @@ trait PlotScatter3dOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[PlotScatter3dDataLabelsOptions | js.Array[PlotScatter3dDataLabelsOptions]] = js.undefined
   /**
     * (Highcharts, Highstock) Options for the series data sorting.
     */
@@ -283,13 +289,13 @@ trait PlotScatter3dOptions extends js.Object {
     * (Highstock) Together with gapSize, this option defines where to draw gaps
     * in the graph.
     *
-    * When the `gapUnit` is `relative` (default), a gap size of 5 means that if
-    * the distance between two points is greater than five times that of the
+    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
+    * if the distance between two points is greater than five times that of the
     * two closest points, the graph will be broken.
     *
-    * When the `gapUnit` is `value`, the gap is based on absolute axis values,
-    * which on a datetime axis is milliseconds. This also applies to the
-    * navigator series that inherits gap options from the base series.
+    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
+    * values, which on a datetime axis is milliseconds. This also applies to
+    * the navigator series that inherits gap options from the base series.
     */
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   /**
@@ -608,9 +614,10 @@ object PlotScatter3dOptions {
     connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dashStyle: DashStyleValue = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    dataLabels: PlotScatter3dDataLabelsOptions | js.Array[PlotScatter3dDataLabelsOptions] = null,
     dataSorting: DataSortingOptionsObject | PlotScatter3dDataSortingOptions = null,
     description: String = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -681,6 +688,7 @@ object PlotScatter3dOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])

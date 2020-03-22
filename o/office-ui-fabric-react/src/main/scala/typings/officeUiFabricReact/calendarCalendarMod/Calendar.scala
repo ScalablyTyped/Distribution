@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.calendarCalendarMod
 
 import typings.officeUiFabricReact.calendarTypesMod.ICalendar
 import typings.officeUiFabricReact.calendarTypesMod.ICalendarProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Calendar/Calendar", "Calendar")
 @js.native
 class Calendar protected ()
-  extends BaseComponent[ICalendarProps, ICalendarState]
+  extends Component[ICalendarProps, ICalendarState, js.Any]
      with ICalendar {
   def this(props: ICalendarProps) = this()
   var _dayPicker: js.Any = js.native

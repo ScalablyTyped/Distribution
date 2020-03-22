@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/source", "IIIF")
 @js.native
-class IIIF protected () extends default {
+class IIIF () extends default {
   def this(opt_options: Options) = this()
 }
 

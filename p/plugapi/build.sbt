@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plugapi"
-version := "4.2-dt-20190212Z-5df19f"
+version := "4.2-dt-20200226Z-5df19f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.sliderBaseMod
 
 import typings.officeUiFabricReact.sliderTypesMod.ISlider
 import typings.officeUiFabricReact.sliderTypesMod.ISliderProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,10 +10,12 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Slider/Slider.base", "SliderBase")
 @js.native
 class SliderBase protected ()
-  extends BaseComponent[ISliderProps, ISliderState]
+  extends Component[ISliderProps, ISliderState, js.Any]
      with ISlider {
   def this(props: ISliderProps) = this()
+  var _async: js.Any = js.native
   var _clearOnKeyDownTimer: js.Any = js.native
+  var _events: js.Any = js.native
   var _getAriaValueText: js.Any = js.native
   var _getPosition: js.Any = js.native
   var _getStyleUsingOffsetPercent: js.Any = js.native
@@ -28,6 +30,8 @@ class SliderBase protected ()
   var _thumb: js.Any = js.native
   var _updateValue: js.Any = js.native
   val renderedValue: js.Any = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MSliderBase(): Unit = js.native
   /* CompleteClass */
   override def focus(): Unit = js.native
 }

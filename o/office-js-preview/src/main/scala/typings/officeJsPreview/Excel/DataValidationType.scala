@@ -18,7 +18,6 @@ sealed trait DataValidationType extends js.Object
 @js.native
 object DataValidationType extends js.Object {
   /**
-    *
     * Custom data validation type
     *
     */
@@ -26,7 +25,6 @@ object DataValidationType extends js.Object {
   sealed trait custom extends DataValidationType
   
   /**
-    *
     * Date data validation type
     *
     */
@@ -34,7 +32,6 @@ object DataValidationType extends js.Object {
   sealed trait date extends DataValidationType
   
   /**
-    *
     * Decimal data validation type
     *
     */
@@ -42,7 +39,6 @@ object DataValidationType extends js.Object {
   sealed trait decimal extends DataValidationType
   
   /**
-    *
     * Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
     *
     */
@@ -50,7 +46,6 @@ object DataValidationType extends js.Object {
   sealed trait inconsistent extends DataValidationType
   
   /**
-    *
     * List data validation type
     *
     */
@@ -58,7 +53,6 @@ object DataValidationType extends js.Object {
   sealed trait list extends DataValidationType
   
   /**
-    *
     * MixedCriteria means that the range has data validation present on some but not all cells
     *
     */
@@ -66,7 +60,6 @@ object DataValidationType extends js.Object {
   sealed trait mixedCriteria extends DataValidationType
   
   /**
-    *
     * None means allow any value and so there is no data validation in the range.
     *
     */
@@ -74,7 +67,6 @@ object DataValidationType extends js.Object {
   sealed trait none extends DataValidationType
   
   /**
-    *
     * Text length data validation type
     *
     */
@@ -82,7 +74,6 @@ object DataValidationType extends js.Object {
   sealed trait textLength extends DataValidationType
   
   /**
-    *
     * Time data validation type
     *
     */
@@ -90,7 +81,6 @@ object DataValidationType extends js.Object {
   sealed trait time extends DataValidationType
   
   /**
-    *
     * Whole number data validation type
     *
     */

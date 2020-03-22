@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "domdiff" : "2.2.1"
+      "domdiff" : "2.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "domdiff" : "2.2.1"
+      "domdiff" : "2.2.2"
     }
   ],
   "compile-devDependencies" : [

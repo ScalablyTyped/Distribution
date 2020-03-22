@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kik-browser"
-version := "v2.3.6-dt-20190322Z-2e0801"
+version := "v2.3.6-dt-20200225Z-2e0801"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

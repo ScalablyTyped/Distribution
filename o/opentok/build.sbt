@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "opentok"
-version := "v2.3.2-dt-20190322Z-22ea67"
+version := "v2.3.2-dt-20200225Z-22ea67"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

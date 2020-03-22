@@ -1,7 +1,7 @@
 package typings.actionsOnGoogle.lambdaMod
 
 import typings.actionsOnGoogle.commonMod.JsonObject
-import typings.awsLambda.handerMod.Context
+import typings.awsLambda.handlerMod.Context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

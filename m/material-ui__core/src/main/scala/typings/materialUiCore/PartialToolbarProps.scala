@@ -146,7 +146,7 @@ trait PartialToolbarProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapToolbarClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapToolba] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -328,7 +328,7 @@ object PartialToolbarProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapToolbarClassKey = null,
+    classes: PartialClassNameMapToolba = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

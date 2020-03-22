@@ -15,7 +15,7 @@ trait SetAlarmStateInput extends js.Object {
     */
   var StateReason: typings.awsSdk.cloudwatchMod.StateReason = js.native
   /**
-    * The reason that this alarm is set to this specific state, in JSON format.
+    * The reason that this alarm is set to this specific state, in JSON format. For SNS or EC2 alarm actions, this is just informational. But for EC2 Auto Scaling or application Auto Scaling alarm actions, the Auto Scaling policy uses the information in this field to take the correct action.
     */
   var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.native
   /**

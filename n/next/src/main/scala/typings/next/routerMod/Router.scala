@@ -40,7 +40,7 @@ trait Router extends BaseRouter {
   def change(method: HistoryMethod, _url: Url, _as: Url, options: js.Any): js.Promise[Boolean] = js.native
   def changeState(method: HistoryMethod, url: String, as: String): Unit = js.native
   def changeState(method: HistoryMethod, url: String, as: String, options: js.Object): Unit = js.native
-  def fetchComponent(route: String): js.Promise[ComponentType[js.Object]] = js.native
+  def fetchComponent(route: String): js.Promise[ComponentRes] = js.native
   def getInitialProps(Component: ComponentType[js.Object], ctx: NextPageContext): js.Promise[_] = js.native
   def getRouteInfo(route: String, pathname: String, query: js.Any, as: String): js.Promise[RouteInfo] = js.native
   def getRouteInfo(route: String, pathname: String, query: js.Any, as: String, shallow: Boolean): js.Promise[RouteInfo] = js.native

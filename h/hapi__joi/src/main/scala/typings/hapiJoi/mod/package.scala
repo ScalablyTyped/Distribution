@@ -38,7 +38,7 @@ package object mod {
   {[ key in keyof TSchema ]:? @hapi/joi.@hapi/joi.SchemaLike | std.Array<@hapi/joi.@hapi/joi.SchemaLike>}
     */ typings.hapiJoi.hapiJoiStrings.SchemaMap with js.Any
   type ValidationErrorFunction = js.Function1[
-    /* errors */ js.Array[typings.hapiJoi.mod.ValidationErrorItem], 
+    /* errors */ js.Array[typings.hapiJoi.mod.ErrorReport], 
     java.lang.String | typings.hapiJoi.mod.ValidationErrorItem | typings.std.Error
   ]
 }

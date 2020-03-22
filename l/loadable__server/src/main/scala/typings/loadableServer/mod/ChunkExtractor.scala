@@ -19,6 +19,22 @@ class ChunkExtractor protected () extends js.Object {
   		 */
   element: Element): Element = js.native
   /**
+  	 * Get css as a raw string for using directly within app (e.g. in custom AMP style tag)
+  	 */
+  def getCssString(): js.Promise[String] = js.native
+  /**
+  	 * Get inline style links as an array of React <link> elements (returns a promise).
+  	 */
+  def getInlineStyleElements(): js.Promise[js.Array[ReactElement]] = js.native
+  def getInlineStyleElements(attr: js.Object): js.Promise[js.Array[ReactElement]] = js.native
+  def getInlineStyleElements(attr: AttrFn): js.Promise[js.Array[ReactElement]] = js.native
+  /**
+  	 * Get inline style links as a string of <link> tags (returns a promise)
+  	 */
+  def getInlineStyleTags(): js.Promise[String] = js.native
+  def getInlineStyleTags(attr: js.Object): js.Promise[String] = js.native
+  def getInlineStyleTags(attr: AttrFn): js.Promise[String] = js.native
+  /**
   	 * Get "prefetch" and "preload" links as an array of React `<link>` elements
   	 */
   def getLinkElements(): js.Array[ReactElement] = js.native

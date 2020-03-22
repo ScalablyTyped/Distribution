@@ -12,9 +12,19 @@ object mixpanelBrowserStrings {
   @js.native
   sealed trait localStorage extends Persistence
   
+  @js.native
+  sealed trait sendBeacon extends js.Object
+  
+  @js.native
+  sealed trait xhr extends js.Object
+  
   @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]
   @scala.inline
   def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  @scala.inline
+  def sendBeacon: sendBeacon = "sendBeacon".asInstanceOf[sendBeacon]
+  @scala.inline
+  def xhr: xhr = "xhr".asInstanceOf[xhr]
 }
 

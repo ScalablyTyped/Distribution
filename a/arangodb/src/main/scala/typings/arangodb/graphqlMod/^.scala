@@ -1,7 +1,6 @@
 package typings.arangodb.graphqlMod
 
 import typings.arangodb.Foxx.Router
-import typings.graphql.mod.GraphQLSchema
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -7,6 +7,7 @@ import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSel
 import typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSuggestionProps
 import typings.officeUiFabricReact.peoplePickerMod.IPeoplePickerProps
 import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
+import typings.officeUiFabricReact.suggestionsItemTypesMod.ISuggestionItemProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemProps
 import typings.officeUiFabricReact.tagPickerTypesMod.ITagItemSuggestionProps
@@ -71,12 +72,16 @@ object pickersMod extends js.Object {
     extends typings.officeUiFabricReact.suggestionsControllerMod.SuggestionsController[T]
   
   @js.native
-  class SuggestionsItem[T] ()
-    extends typings.officeUiFabricReact.suggestionsItemMod.SuggestionsItem[T]
+  class SuggestionsItem[T] protected ()
+    extends typings.officeUiFabricReact.suggestionsItemMod.SuggestionsItem[T] {
+    def this(props: ISuggestionItemProps[T]) = this()
+  }
   
   @js.native
-  class TagPickerBase ()
-    extends typings.officeUiFabricReact.tagPickerMod.TagPickerBase
+  class TagPickerBase protected ()
+    extends typings.officeUiFabricReact.tagPickerMod.TagPickerBase {
+    def this(props: ITagPickerProps) = this()
+  }
   
   val CompactPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native
   val ListPeoplePicker: FunctionComponent[IPeoplePickerProps] = js.native

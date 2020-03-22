@@ -8,6 +8,7 @@ import typings.meteor.AnonLimit
 import typings.meteor.AnonMulti
 import typings.meteor.AnonMultiBoolean
 import typings.meteor.AnonSkip
+import typings.mongodb.mod.Db
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,8 +39,8 @@ trait Collection[T] extends js.Object {
   def findOne(selector: Selector[T], options: AnonSkip): js.UndefOr[T] = js.native
   def insert(doc: OptionalId[T]): String = js.native
   def insert(doc: OptionalId[T], callback: js.Function): String = js.native
-  def rawCollection(): js.Any = js.native
-  def rawDatabase(): js.Any = js.native
+  def rawCollection(): typings.mongodb.mod.Collection[T] = js.native
+  def rawDatabase(): Db = js.native
   def remove(selector: String): Double = js.native
   def remove(selector: String, callback: js.Function): Double = js.native
   def remove(selector: ObjectID): Double = js.native

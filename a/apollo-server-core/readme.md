@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-server-core
 
-Typings are for version 2.10.1
+Typings are for version 2.11.0
 
 ## Library description:
 Core engine for Apollo GraphQL server

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CommonAxe extends js.Object {
-  var afterBuildTicks: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var afterBuildTicks: js.UndefOr[js.Function2[/* scale */ js.Any, /* ticks */ js.Array[Double], js.Array[Double]]] = js.undefined
   var afterCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var afterDataLimits: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
   var afterFit: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], Unit]] = js.undefined
@@ -35,7 +35,7 @@ trait CommonAxe extends js.Object {
 object CommonAxe {
   @scala.inline
   def apply(
-    afterBuildTicks: /* scale */ js.UndefOr[js.Any] => Unit = null,
+    afterBuildTicks: (/* scale */ js.Any, /* ticks */ js.Array[Double]) => js.Array[Double] = null,
     afterCalculateTickRotation: /* scale */ js.UndefOr[js.Any] => Unit = null,
     afterDataLimits: /* scale */ js.UndefOr[js.Any] => Unit = null,
     afterFit: /* scale */ js.UndefOr[js.Any] => Unit = null,
@@ -62,7 +62,7 @@ object CommonAxe {
     `type`: ScaleType | String = null
   ): CommonAxe = {
     val __obj = js.Dynamic.literal()
-    if (afterBuildTicks != null) __obj.updateDynamic("afterBuildTicks")(js.Any.fromFunction1(afterBuildTicks))
+    if (afterBuildTicks != null) __obj.updateDynamic("afterBuildTicks")(js.Any.fromFunction2(afterBuildTicks))
     if (afterCalculateTickRotation != null) __obj.updateDynamic("afterCalculateTickRotation")(js.Any.fromFunction1(afterCalculateTickRotation))
     if (afterDataLimits != null) __obj.updateDynamic("afterDataLimits")(js.Any.fromFunction1(afterDataLimits))
     if (afterFit != null) __obj.updateDynamic("afterFit")(js.Any.fromFunction1(afterFit))

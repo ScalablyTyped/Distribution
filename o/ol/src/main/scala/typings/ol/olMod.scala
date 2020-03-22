@@ -21,6 +21,7 @@ object olMod extends js.Object {
     dx2: Double,
     dy2: Double
   ): Transform = js.native
+  def composeCssTransform(dx1: Double, dy1: Double, sx: Double, sy: Double, angle: Double, dx2: Double, dy2: Double): String = js.native
   def create(): Transform = js.native
   def determinant(mat: Transform): Double = js.native
   def invert(source: Transform): Transform = js.native

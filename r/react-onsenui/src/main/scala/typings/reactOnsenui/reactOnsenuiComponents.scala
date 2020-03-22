@@ -13,6 +13,8 @@ object reactOnsenuiComponents extends reactOnsenuiProps {
   @scala.inline
   def AlertDialog: ComponentType[AlertDialogProps] = js.constructorOf[typings.reactOnsenui.mod.AlertDialog].asInstanceOf[typings.react.mod.ComponentType[AlertDialogProps]]
   @scala.inline
+  def AlertDialogButton: ComponentType[AlertDialogButtonProps] = js.constructorOf[typings.reactOnsenui.mod.AlertDialogButton].asInstanceOf[typings.react.mod.ComponentType[AlertDialogButtonProps]]
+  @scala.inline
   def BackButton: ComponentType[BackButtonProps] = js.constructorOf[typings.reactOnsenui.mod.BackButton].asInstanceOf[typings.react.mod.ComponentType[BackButtonProps]]
   @scala.inline
   def BottomToolbar: ComponentType[BottomToolbarProps] = js.constructorOf[typings.reactOnsenui.mod.BottomToolbar].asInstanceOf[typings.react.mod.ComponentType[BottomToolbarProps]]
@@ -41,7 +43,8 @@ object reactOnsenuiComponents extends reactOnsenuiProps {
   @scala.inline
   def LazyList: ComponentType[LazyListProps] = js.constructorOf[typings.reactOnsenui.mod.LazyList].asInstanceOf[typings.react.mod.ComponentType[LazyListProps]]
   @scala.inline
-  def List: ComponentType[ListProps] = js.constructorOf[typings.reactOnsenui.mod.List].asInstanceOf[typings.react.mod.ComponentType[ListProps]]
+  def List[T]: ComponentType[HTMLAttributesidclassName with AnonDataSource[T]] = js.constructorOf[typings.reactOnsenui.mod.List[T]].asInstanceOf[typings.react.mod.ComponentType[
+  typings.reactOnsenui.HTMLAttributesidclassName with typings.reactOnsenui.AnonDataSource[T]]]
   @scala.inline
   def ListHeader: ComponentType[ListHeaderProps] = js.constructorOf[typings.reactOnsenui.mod.ListHeader].asInstanceOf[typings.react.mod.ComponentType[ListHeaderProps]]
   @scala.inline

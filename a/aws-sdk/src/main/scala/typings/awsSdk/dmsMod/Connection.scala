@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Connection extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
+    * The ARN string that uniquely identifies the endpoint.
     */
   var EndpointArn: js.UndefOr[String] = js.native
   /**
-    * The identifier of the endpoint. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
+    * The identifier of the endpoint. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen or contain two consecutive hyphens.
     */
   var EndpointIdentifier: js.UndefOr[String] = js.native
   /**
@@ -19,7 +19,7 @@ trait Connection extends js.Object {
     */
   var LastFailureMessage: js.UndefOr[String] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the replication instance.
+    * The ARN of the replication instance.
     */
   var ReplicationInstanceArn: js.UndefOr[String] = js.native
   /**

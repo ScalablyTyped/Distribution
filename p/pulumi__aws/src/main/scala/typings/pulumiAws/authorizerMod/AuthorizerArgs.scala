@@ -48,7 +48,7 @@ trait AuthorizerArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * The type of the authorizer. Possible values are `TOKEN` for a Lambda function using a single authorization token submitted in a custom header, `REQUEST` for a Lambda function using incoming request parameters, or `COGNITO_USER_POOLS` for using an Amazon Cognito user pool.
     * Defaults to `TOKEN`.
@@ -59,7 +59,7 @@ trait AuthorizerArgs extends js.Object {
 object AuthorizerArgs {
   @scala.inline
   def apply(
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     authorizerCredentials: Input[String] = null,
     authorizerResultTtlInSeconds: Input[Double] = null,
     authorizerUri: Input[String] = null,

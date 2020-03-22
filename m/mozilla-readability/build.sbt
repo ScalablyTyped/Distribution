@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mozilla-readability"
-version := "0.1-dt-20200214Z-c90c87"
+version := "0.1-dt-20200227Z-c90c87"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

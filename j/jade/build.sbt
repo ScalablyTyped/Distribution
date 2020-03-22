@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jade"
-version := "0.0-unknown-dt-20190322Z-ebc679"
+version := "0.0-unknown-dt-20200226Z-ebc679"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -13,10 +13,8 @@ import scala.scalajs.js.annotation._
 trait PanelHeadProps
   extends /* x */ StringDictionary[js.Any] {
   var className: js.UndefOr[String] = js.undefined
-  /* Localized text for the description of the panel. */
   var description: js.UndefOr[String] = js.undefined
   var headingLevel: js.UndefOr[`2` | `3` | `4` | `5` | `6`] = js.undefined
-  /* Localized text for the title of the panel. */
   var title: js.UndefOr[String] = js.undefined
 }
 

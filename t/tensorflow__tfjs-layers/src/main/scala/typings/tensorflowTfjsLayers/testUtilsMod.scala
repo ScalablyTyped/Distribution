@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsLayers
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +15,12 @@ object testUtilsMod extends js.Object {
   def expectNoLeakedTensors(testFunc: js.Function0[_], numNewTensors: Double): Unit = js.native
   def expectTensorsClose(actual: js.Array[Double], expected: js.Array[Double]): Unit = js.native
   def expectTensorsClose(actual: js.Array[Double], expected: js.Array[Double], epsilon: Double): Unit = js.native
-  def expectTensorsClose(actual: js.Array[Double], expected: Tensor_[Rank]): Unit = js.native
-  def expectTensorsClose(actual: js.Array[Double], expected: Tensor_[Rank], epsilon: Double): Unit = js.native
-  def expectTensorsClose(actual: Tensor_[Rank], expected: js.Array[Double]): Unit = js.native
-  def expectTensorsClose(actual: Tensor_[Rank], expected: js.Array[Double], epsilon: Double): Unit = js.native
-  def expectTensorsClose(actual: Tensor_[Rank], expected: Tensor_[Rank]): Unit = js.native
-  def expectTensorsClose(actual: Tensor_[Rank], expected: Tensor_[Rank], epsilon: Double): Unit = js.native
-  def expectTensorsValuesInRange(actual: Tensor_[Rank], low: Double, high: Double): Unit = js.native
+  def expectTensorsClose(actual: js.Array[Double], expected: Tensor[Rank]): Unit = js.native
+  def expectTensorsClose(actual: js.Array[Double], expected: Tensor[Rank], epsilon: Double): Unit = js.native
+  def expectTensorsClose(actual: Tensor[Rank], expected: js.Array[Double]): Unit = js.native
+  def expectTensorsClose(actual: Tensor[Rank], expected: js.Array[Double], epsilon: Double): Unit = js.native
+  def expectTensorsClose(actual: Tensor[Rank], expected: Tensor[Rank]): Unit = js.native
+  def expectTensorsClose(actual: Tensor[Rank], expected: Tensor[Rank], epsilon: Double): Unit = js.native
+  def expectTensorsValuesInRange(actual: Tensor[Rank], low: Double, high: Double): Unit = js.native
 }
 

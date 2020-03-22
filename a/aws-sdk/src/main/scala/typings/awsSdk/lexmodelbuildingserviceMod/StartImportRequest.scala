@@ -18,13 +18,17 @@ trait StartImportRequest extends js.Object {
     * Specifies the type of resource to export. Each resource also exports any resources that it depends on.    A bot exports dependent intents.   An intent exports dependent slot types.  
     */
   var resourceType: ResourceType = js.native
+  /**
+    * A list of tags to add to the imported bot. You can only add tags when you import a bot, you can't add tags to an intent or slot type.
+    */
+  var tags: js.UndefOr[TagList] = js.native
 }
 
 object StartImportRequest {
   @scala.inline
-  def apply(mergeStrategy: MergeStrategy, payload: _Blob, resourceType: ResourceType): StartImportRequest = {
+  def apply(mergeStrategy: MergeStrategy, payload: _Blob, resourceType: ResourceType, tags: TagList = null): StartImportRequest = {
     val __obj = js.Dynamic.literal(mergeStrategy = mergeStrategy.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
-  
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImportRequest]
   }
 }

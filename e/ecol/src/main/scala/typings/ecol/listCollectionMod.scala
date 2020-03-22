@@ -7,7 +7,6 @@ import typings.ecol.collectionEventMod.CollectionEvent.Type
 import typings.ecol.ieventdispatcherMod.IEventDispatcher
 import typings.tstl.icontainerMod.IContainer
 import typings.tstl.iforwarditeratorMod.IForwardIterator
-import typings.tstl.ipointerMod.IPointer
 import typings.tstl.listIteratorMod.ListIterator
 import typings.tstl.listMod.List
 import typings.tstl.listMod.List.Iterator
@@ -245,24 +244,6 @@ object listCollectionMod extends js.Object {
           ]
         ]
       ] = js.native
-    /* static members */
-    @js.native
-    object Iterator extends js.Object {
-      /**
-        * @internal
-        */
-      def _Set_source_ptr[T](it: typings.tstl.listMod.List.Iterator[T], ptr: IPointer[List[T]]): Unit = js.native
-      /**
-        * @internal
-        */
-      def create[T](
-        sourcePtr: IPointer[List[T]],
-        prev: typings.tstl.listMod.List.Iterator[T],
-        next: typings.tstl.listMod.List.Iterator[T],
-        value: T
-      ): typings.tstl.listMod.List.Iterator[T] = js.native
-    }
-    
     type Event[T] = CollectionEvent[
         T, 
         List[T], 

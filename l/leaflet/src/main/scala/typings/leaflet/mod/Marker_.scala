@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class Marker_[P] protected () extends Layer {
   def this(latlng: LatLngExpression) = this()
   def this(latlng: LatLngExpression, options: MarkerOptions) = this()
+  var _shadow: js.UndefOr[HTMLElement] = js.native
   var dragging: js.UndefOr[Handler] = js.native
   var feature: js.UndefOr[Feature[Point, P]] = js.native
   // Properties

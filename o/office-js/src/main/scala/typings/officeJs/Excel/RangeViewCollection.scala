@@ -25,14 +25,12 @@ class RangeViewCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[RangeView] = js.native
   /**
-    *
     * Gets the number of RangeView objects in the collection.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a RangeView Row via its index. Zero-Indexed.
     *
     * [Api set: ExcelApi 1.3]

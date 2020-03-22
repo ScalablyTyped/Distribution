@@ -1,6 +1,6 @@
 package typings.materialUiCore.notchedOutlineMod
 
-import typings.materialUiCore.PartialClassNameMapNotchedOutlineClassKey
+import typings.materialUiCore.PartialClassNameMapNotche
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -145,7 +145,7 @@ trait NotchedOutlineProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapNotchedOutlineClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapNotche] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -334,7 +334,7 @@ object NotchedOutlineProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapNotchedOutlineClassKey = null,
+    classes: PartialClassNameMapNotche = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

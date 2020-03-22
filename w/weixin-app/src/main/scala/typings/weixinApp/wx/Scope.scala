@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typings.weixinApp.weixinAppStrings.scopeDotuserInfo
   - typings.weixinApp.weixinAppStrings.scopeDotuserLocation
+  - typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground
   - typings.weixinApp.weixinAppStrings.scopeDotaddress
   - typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle
   - typings.weixinApp.weixinAppStrings.scopeDotinvoice
@@ -35,6 +36,8 @@ object Scope {
   def scopeDotuserInfo: typings.weixinApp.weixinAppStrings.scopeDotuserInfo = this.cast("scope.userInfo")
   @scala.inline
   def scopeDotuserLocation: typings.weixinApp.weixinAppStrings.scopeDotuserLocation = this.cast("scope.userLocation")
+  @scala.inline
+  def scopeDotuserLocationBackground: typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground = this.cast("scope.userLocationBackground")
   @scala.inline
   def scopeDotwerun: typings.weixinApp.weixinAppStrings.scopeDotwerun = this.cast("scope.werun")
   @scala.inline

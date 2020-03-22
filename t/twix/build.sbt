@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twix"
-version := "0.6.3-dt-20190322Z-c27108"
+version := "0.6.3-dt-20200225Z-c27108"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pure-render-decorator"
-version := "v0.2.0-dt-20190322Z-0c814a"
+version := "v0.2.0-dt-20200226Z-0c814a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "css-modules-require-hook"
-version := "4.0.3-dt-20190322Z-b92096"
+version := "4.0.3-dt-20200226Z-b92096"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

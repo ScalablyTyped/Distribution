@@ -8,6 +8,6 @@ package object formItemMod {
   type ChildrenType = typings.react.mod.ReactElement | typings.antd.formItemMod.RenderChildren | js.Array[typings.react.mod.ReactElement] | scala.Null
   type RenderChildren = js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FormInstance */ /* form */ js.Any, 
-    typings.react.mod.ReactElement
+    typings.react.mod.ReactNode
   ]
 }

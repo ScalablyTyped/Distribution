@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clmtrackr"
-version := "1.1-dt-20180409Z-7b2e53"
+version := "1.1-dt-20200225Z-7b2e53"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

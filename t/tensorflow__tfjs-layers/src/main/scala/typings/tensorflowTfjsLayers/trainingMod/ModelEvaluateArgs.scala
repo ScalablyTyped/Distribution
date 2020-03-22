@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsLayers.trainingMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.baseCallbacksMod.ModelLoggingVerbosity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,7 +16,7 @@ trait ModelEvaluateArgs extends js.Object {
     * Tensor of weights to weight the contribution of different samples to the
     * loss and metrics.
     */
-  var sampleWeight: js.UndefOr[Tensor_[Rank]] = js.undefined
+  var sampleWeight: js.UndefOr[Tensor[Rank]] = js.undefined
   /**
     * integer: total number of steps (batches of samples)
     * before declaring the evaluation round finished. Ignored with the default
@@ -33,7 +33,7 @@ object ModelEvaluateArgs {
   @scala.inline
   def apply(
     batchSize: Int | Double = null,
-    sampleWeight: Tensor_[Rank] = null,
+    sampleWeight: Tensor[Rank] = null,
     steps: Int | Double = null,
     verbose: ModelLoggingVerbosity = null
   ): ModelEvaluateArgs = {

@@ -43,9 +43,15 @@ object requestMod extends js.Object {
   def addAuthHeader(headers: Headers): Unit = js.native
   @JSName("addAuthHeader_")
   def addAuthHeader(headers: Headers, authToken: String): Unit = js.native
+  @JSName("addGmpidHeader_")
+  def addGmpidHeader(headers: Headers): Unit = js.native
+  @JSName("addGmpidHeader_")
+  def addGmpidHeader(headers: Headers, appId: String): Unit = js.native
   @JSName("addVersionHeader_")
   def addVersionHeader(headers: Headers): Unit = js.native
-  def makeRequest[T](requestInfo: RequestInfo[T], authToken: String, pool: XhrIoPool): Request[T] = js.native
-  def makeRequest[T](requestInfo: RequestInfo[T], authToken: Null, pool: XhrIoPool): Request[T] = js.native
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: String, pool: XhrIoPool): Request[T] = js.native
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: String, authToken: Null, pool: XhrIoPool): Request[T] = js.native
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: String, pool: XhrIoPool): Request[T] = js.native
+  def makeRequest[T](requestInfo: RequestInfo[T], appId: Null, authToken: Null, pool: XhrIoPool): Request[T] = js.native
 }
 

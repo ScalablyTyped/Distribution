@@ -18,13 +18,13 @@ sealed trait CategoryColor extends js.Object
   * 
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.CategoryColor")
 @js.native
 object CategoryColor extends js.Object {
   /**
-    * Default color or no color mapped
+    * Default color or no color mapped.
     */
   @js.native
   sealed trait None extends CategoryColor

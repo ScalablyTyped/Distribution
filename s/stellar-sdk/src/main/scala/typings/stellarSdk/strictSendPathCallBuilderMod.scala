@@ -4,7 +4,6 @@ import typings.stellarBase.mod.Asset
 import typings.stellarSdk.callBuilderMod.CallBuilder
 import typings.stellarSdk.serverApiMod.ServerApi.CollectionPage
 import typings.stellarSdk.serverApiMod.ServerApi.PaymentPathRecord
-import typings.urijs.uri.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,8 +13,18 @@ import scala.scalajs.js.annotation._
 object strictSendPathCallBuilderMod extends js.Object {
   @js.native
   class StrictSendPathCallBuilder protected () extends CallBuilder[CollectionPage[PaymentPathRecord]] {
-    def this(serverUrl: URI, sourceAsset: Asset, sourceAmount: String, destination: String) = this()
-    def this(serverUrl: URI, sourceAsset: Asset, sourceAmount: String, destination: js.Array[Asset]) = this()
+    def this(
+      serverUrl: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URI */ js.Any,
+      sourceAsset: Asset,
+      sourceAmount: String,
+      destination: String
+    ) = this()
+    def this(
+      serverUrl: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URI */ js.Any,
+      sourceAsset: Asset,
+      sourceAmount: String,
+      destination: js.Array[Asset]
+    ) = this()
   }
   
 }

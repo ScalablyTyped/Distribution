@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "javascript-astar"
-version := "0.0-unknown-dt-20190322Z-b62cf4"
+version := "0.0-unknown-dt-20200226Z-b62cf4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -20,6 +20,8 @@ trait DataViewProps extends js.Object {
   var itemTemplate: js.UndefOr[js.Function2[/* item */ js.Any, /* layout */ grid | list, js.UndefOr[Element]]] = js.undefined
   var layout: js.UndefOr[String] = js.undefined
   var `lazy`: js.UndefOr[Boolean] = js.undefined
+  var loading: js.UndefOr[Boolean] = js.undefined
+  var loadingIcon: js.UndefOr[String] = js.undefined
   var onPage: js.UndefOr[js.Function1[/* e */ AnonRows, Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[Double] = js.undefined
   var paginator: js.UndefOr[Boolean] = js.undefined
@@ -50,6 +52,8 @@ object DataViewProps {
     itemTemplate: (/* item */ js.Any, /* layout */ grid | list) => js.UndefOr[Element] = null,
     layout: String = null,
     `lazy`: js.UndefOr[Boolean] = js.undefined,
+    loading: js.UndefOr[Boolean] = js.undefined,
+    loadingIcon: String = null,
     onPage: /* e */ AnonRows => Unit = null,
     pageLinkSize: Int | Double = null,
     paginator: js.UndefOr[Boolean] = js.undefined,
@@ -77,6 +81,8 @@ object DataViewProps {
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction2(itemTemplate))
     if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
     if (onPage != null) __obj.updateDynamic("onPage")(js.Any.fromFunction1(onPage))
     if (pageLinkSize != null) __obj.updateDynamic("pageLinkSize")(pageLinkSize.asInstanceOf[js.Any])
     if (!js.isUndefined(paginator)) __obj.updateDynamic("paginator")(paginator.asInstanceOf[js.Any])

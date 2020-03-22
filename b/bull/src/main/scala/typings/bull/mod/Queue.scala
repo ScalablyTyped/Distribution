@@ -14,6 +14,7 @@ import typings.bull.bullStrings.removed
 import typings.bull.bullStrings.resumed
 import typings.bull.bullStrings.stalled
 import typings.bull.bullStrings.waiting
+import typings.ioredis.mod.Pipeline
 import typings.ioredis.mod.Redis
 import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
@@ -189,6 +190,10 @@ trait Queue[T] extends EventEmitter {
     * This replaces the `ready` event emitted on Queue in previous verisons.
     */
   def isReady(): js.Promise[this.type] = js.native
+  /**
+    * Returns a promise that marks the start of a transaction block.
+    */
+  def multi(): Pipeline = js.native
   /**
     * ???
     */
@@ -397,6 +402,10 @@ trait Queue[T] extends EventEmitter {
     * Set clientName to Redis.client
     */
   def setWorkerName(): js.Promise[_] = js.native
+  /**
+    * Returns the queue specific key.
+    */
+  def toKey(queueType: String): String = js.native
   /**
     * Returns a promise that resolves when active jobs are finished
     */

@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait reactTransitionGroupProps {
-  @scala.inline
-  def CSSTransitionProps: typings.reactTransitionGroup.csstransitionMod.CSSTransitionProps.type = typings.reactTransitionGroup.csstransitionMod.CSSTransitionProps
   type CSSTransitionProps = typings.reactTransitionGroup.csstransitionMod.CSSTransitionProps
   @scala.inline
   def SwitchTransitionProps: typings.reactTransitionGroup.switchTransitionMod.SwitchTransitionProps.type = typings.reactTransitionGroup.switchTransitionMod.SwitchTransitionProps

@@ -1,6 +1,6 @@
 package typings.themeUiComponents.mod
 
-import typings.csstype.mod.OpacityProperty
+import typings.csstype.mod.GlobalsNumber
 import typings.emotionCore.mod.InterpolationWithTheme
 import typings.react.mod.ElementType
 import typings.styledSystem.mod.RequiredTheme
@@ -45,7 +45,7 @@ object EmbedProps {
     mt: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     mx: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     my: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     p: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     padding: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,
     paddingBottom: ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme] = null,

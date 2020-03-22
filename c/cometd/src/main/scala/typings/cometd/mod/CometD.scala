@@ -119,7 +119,7 @@ class CometD () extends js.Object {
     *
     * @return the status of the Bayeux communication
     */
-  def getStatus(): String = js.native
+  def getStatus(): Status = js.native
   /**
     * Returns the URL of the Bayeux server.
     *
@@ -159,9 +159,9 @@ class CometD () extends js.Object {
   def init(configuration: Configuration): Unit = js.native
   def init(configuration: Configuration, handshakeProps: js.Object): Unit = js.native
   /**
-    * Returns whether this instance has been disconnected.
+    * Returns true if this instance is disconnected or disconnecting.
     *
-    * @return whether this instance has been disconnected.
+    * @return whether this instance disconnected or disconnecting.
     */
   def isDisconnected(): Boolean = js.native
   /**

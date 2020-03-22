@@ -37,7 +37,6 @@ class Setting () extends ClientObject {
     */
   var value: js.Any = js.native
   /**
-    *
     * Deletes the setting.
     *
     * [Api set: ExcelApi 1.4]
@@ -73,14 +72,5 @@ class Setting () extends ClientObject {
     * Whereas the original Excel.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): SettingData = js.native
-}
-
-/* static members */
-@JSGlobal("Excel.Setting")
-@js.native
-object Setting extends js.Object {
-  var DateJSONPrefix: js.Any = js.native
-  var DateJSONSuffix: js.Any = js.native
-  var replaceStringDateWithDate: js.Any = js.native
 }
 

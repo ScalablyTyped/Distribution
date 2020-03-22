@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typedarray-pool"
-version := "v1.1.0-dt-20190322Z-de8574"
+version := "v1.1.0-dt-20200227Z-de8574"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

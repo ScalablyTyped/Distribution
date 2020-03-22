@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-orientation"
-version := "5.0-dt-20190322Z-cecc30"
+version := "5.0-dt-20200225Z-cecc30"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

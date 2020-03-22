@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait PartialConfig extends js.Object {
   var api_host: js.UndefOr[String] = js.undefined
   var app_host: js.UndefOr[String] = js.undefined
-  var autrotrack: js.UndefOr[Boolean] = js.undefined
+  var autotrack: js.UndefOr[Boolean] = js.undefined
   var cdn: js.UndefOr[String] = js.undefined
   var cookie_expiration: js.UndefOr[Double] = js.undefined
   var cookie_name: js.UndefOr[String] = js.undefined
@@ -44,7 +44,7 @@ object PartialConfig {
   def apply(
     api_host: String = null,
     app_host: String = null,
-    autrotrack: js.UndefOr[Boolean] = js.undefined,
+    autotrack: js.UndefOr[Boolean] = js.undefined,
     cdn: String = null,
     cookie_expiration: Int | Double = null,
     cookie_name: String = null,
@@ -75,7 +75,7 @@ object PartialConfig {
     val __obj = js.Dynamic.literal()
     if (api_host != null) __obj.updateDynamic("api_host")(api_host.asInstanceOf[js.Any])
     if (app_host != null) __obj.updateDynamic("app_host")(app_host.asInstanceOf[js.Any])
-    if (!js.isUndefined(autrotrack)) __obj.updateDynamic("autrotrack")(autrotrack.asInstanceOf[js.Any])
+    if (!js.isUndefined(autotrack)) __obj.updateDynamic("autotrack")(autotrack.asInstanceOf[js.Any])
     if (cdn != null) __obj.updateDynamic("cdn")(cdn.asInstanceOf[js.Any])
     if (cookie_expiration != null) __obj.updateDynamic("cookie_expiration")(cookie_expiration.asInstanceOf[js.Any])
     if (cookie_name != null) __obj.updateDynamic("cookie_name")(cookie_name.asInstanceOf[js.Any])

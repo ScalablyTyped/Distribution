@@ -114,6 +114,9 @@ object materialUiCoreStrings {
   sealed trait ConsistentWith extends js.Object
   
   @js.native
+  sealed trait PartialTypographyPropsAbout extends js.Object
+  
+  @js.native
   sealed trait _empty extends js.Object
   
   @js.native
@@ -383,9 +386,6 @@ object materialUiCoreStrings {
   
   @js.native
   sealed trait central extends js.Object
-  
-  @js.native
-  sealed trait char extends js.Object
   
   @js.native
   sealed trait checkbox
@@ -2116,6 +2116,8 @@ object materialUiCoreStrings {
   @scala.inline
   def ConsistentWith: ConsistentWith = "ConsistentWith".asInstanceOf[ConsistentWith]
   @scala.inline
+  def PartialTypographyPropsAbout: PartialTypographyPropsAbout = "PartialTypographyPropsAbout".asInstanceOf[PartialTypographyPropsAbout]
+  @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
@@ -2269,8 +2271,6 @@ object materialUiCoreStrings {
   def centered: centered = "centered".asInstanceOf[centered]
   @scala.inline
   def central: central = "central".asInstanceOf[central]
-  @scala.inline
-  def char: char = "char".asInstanceOf[char]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline

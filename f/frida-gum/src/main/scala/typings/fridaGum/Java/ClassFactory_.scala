@@ -1,6 +1,7 @@
 package typings.fridaGum.Java
 
 import typings.fridaGum.NativePointerValue
+import typings.fridaGum.WrapperAlloc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ class ClassFactory_ () extends js.Object {
     * Class loader currently being used. For the default class factory this
     * is updated by the first call to `Java.perform()`.
     */
-  val loader: Wrapper | Null = js.native
+  val loader: WrapperAlloc | Null = js.native
   /**
     * Naming convention to use for temporary files.
     *
@@ -42,8 +43,8 @@ class ClassFactory_ () extends js.Object {
     * @param handle An existing wrapper or a JNI handle.
     * @param klass Class wrapper for type to cast to.
     */
-  def cast(handle: Wrapper, klass: Wrapper): Wrapper = js.native
-  def cast(handle: NativePointerValue, klass: Wrapper): Wrapper = js.native
+  def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: Wrapper[From], klass: Wrapper[To]): Wrapper[To] = js.native
+  def cast[From /* <: Members[From] */, To /* <: Members[To] */](handle: NativePointerValue, klass: Wrapper[To]): Wrapper[To] = js.native
   /**
     * Enumerates live instances of the `className` class by scanning the Java
     * VM's heap.
@@ -63,13 +64,13 @@ class ClassFactory_ () extends js.Object {
     *
     * @param spec Object describing the class to be created.
     */
-  def registerClass(spec: ClassSpec): Wrapper = js.native
+  def registerClass(spec: ClassSpec): WrapperAlloc = js.native
   /**
     * Duplicates a JavaScript wrapper for later use outside replacement method.
     *
-    * @param handle An existing wrapper retrieved from `this` in replacement method.
+    * @param obj An existing wrapper retrieved from `this` in replacement method.
     */
-  def retain(obj: Wrapper): Wrapper = js.native
+  def retain[T /* <: Members[T] */](obj: Wrapper[T]): Wrapper[T] = js.native
   /**
     * Dynamically generates a JavaScript wrapper for `className` that you can
     * instantiate objects from by calling `$new()` on to invoke a constructor.
@@ -80,7 +81,7 @@ class ClassFactory_ () extends js.Object {
     *
     * @param className Canonical class name to get a wrapper for.
     */
-  def use(className: String): Wrapper = js.native
+  def use[T /* <: Members[T] */](className: String): Wrapper[T] = js.native
 }
 
 /* static members */
@@ -95,6 +96,6 @@ object ClassFactory_ extends js.Object {
     * can be discovered through `Java.enumerateClassLoaders()` and
     * interacted with through this API.
     */
-  def get(classLoader: Wrapper): ClassFactory_ = js.native
+  def get(classLoader: WrapperAlloc): ClassFactory_ = js.native
 }
 

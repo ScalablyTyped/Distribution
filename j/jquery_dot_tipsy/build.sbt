@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_tipsy"
-version := "0.0-unknown-dt-20190322Z-39fba5"
+version := "0.0-unknown-dt-20200226Z-39fba5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

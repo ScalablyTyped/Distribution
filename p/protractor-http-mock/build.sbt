@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protractor-http-mock"
-version := "0.10-dt-20191107Z-a33294"
+version := "0.10-dt-20200226Z-a33294"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

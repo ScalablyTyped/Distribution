@@ -1,7 +1,7 @@
 
 # Scala.js typings for zone_dot_js
 
-Typings are for version 0.10.2
+Typings are for version 0.10.3
 
 ## Library description:
 Zones for JavaScript

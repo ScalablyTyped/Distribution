@@ -1,6 +1,6 @@
 package typings.materialUiCore.buttonButtonMod
 
-import typings.materialUiCore.PartialClassNameMapButtonClassKey
+import typings.materialUiCore.PartialClassNameMapButton
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -167,7 +167,7 @@ trait ButtonProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapButtonClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapButton] = js.native
   var color: js.UndefOr[Color] = js.native
   var component: js.UndefOr[ReactType[ButtonProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -381,7 +381,7 @@ object ButtonProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapButtonClassKey = null,
+    classes: PartialClassNameMapButton = null,
     color: Color = null,
     component: ReactType[ButtonProps] = null,
     contentEditable: Booleanish | inherit = null,

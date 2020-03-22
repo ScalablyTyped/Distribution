@@ -29,6 +29,8 @@ trait FlowLogArgs extends js.Object {
   val logFormat: js.UndefOr[Input[String]] = js.native
   /**
     * *Deprecated:* Use `logDestination` instead. The name of the CloudWatch log group.
+    *
+    * @deprecated use 'log_destination' argument instead
     */
   val logGroupName: js.UndefOr[Input[String]] = js.native
   /**

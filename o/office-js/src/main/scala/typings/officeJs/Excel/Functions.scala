@@ -19,7 +19,6 @@ class Functions () extends ClientObject {
   @JSName("context")
   var context_Functions: RequestContext = js.native
   /**
-    *
     * Returns the absolute value of a number, a number without its sign.
     *
     * [Api set: ExcelApi 1.2]
@@ -31,7 +30,6 @@ class Functions () extends ClientObject {
   def abs(number: Range): FunctionResult[Double] = js.native
   def abs(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the accrued interest for a security that pays periodic interest.
     *
     * [Api set: ExcelApi 1.2]
@@ -73,7 +71,6 @@ class Functions () extends ClientObject {
     calcMethod: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the accrued interest for a security that pays interest at maturity.
     *
     * [Api set: ExcelApi 1.2]
@@ -98,7 +95,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the arccosine of a number, in radians in the range 0 to Pi. The arccosine is the angle whose cosine is Number.
     *
     * [Api set: ExcelApi 1.2]
@@ -110,7 +106,6 @@ class Functions () extends ClientObject {
   def acos(number: Range): FunctionResult[Double] = js.native
   def acos(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse hyperbolic cosine of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -122,7 +117,6 @@ class Functions () extends ClientObject {
   def acosh(number: Range): FunctionResult[Double] = js.native
   def acosh(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the arccotangent of a number, in radians in the range 0 to Pi.
     *
     * [Api set: ExcelApi 1.2]
@@ -134,7 +128,6 @@ class Functions () extends ClientObject {
   def acot(number: Range): FunctionResult[Double] = js.native
   def acot(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse hyperbolic cotangent of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -146,7 +139,6 @@ class Functions () extends ClientObject {
   def acoth(number: Range): FunctionResult[Double] = js.native
   def acoth(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the prorated linear depreciation of an asset for each accounting period.
     *
     * [Api set: ExcelApi 1.2]
@@ -177,7 +169,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the prorated linear depreciation of an asset for each accounting period.
     *
     * [Api set: ExcelApi 1.2]
@@ -208,7 +199,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.
     *
     * [Api set: ExcelApi 1.2]
@@ -217,7 +207,6 @@ class Functions () extends ClientObject {
     */
   def and(values: (Boolean | Range | RangeReference | FunctionResult[_])*): FunctionResult[Boolean] = js.native
   /**
-    *
     * Converts a Roman numeral to Arabic.
     *
     * [Api set: ExcelApi 1.2]
@@ -230,7 +219,6 @@ class Functions () extends ClientObject {
   def arabic(text: RangeReference): FunctionResult[Double] = js.native
   def areas(reference: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell.
     *
     * [Api set: ExcelApi 1.2]
@@ -240,7 +228,6 @@ class Functions () extends ClientObject {
   def areas(reference: Range): FunctionResult[Double] = js.native
   def areas(reference: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Changes full-width (double-byte) characters to half-width (single-byte) characters. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -252,7 +239,6 @@ class Functions () extends ClientObject {
   def asc(text: Range): FunctionResult[String] = js.native
   def asc(text: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2.
     *
     * [Api set: ExcelApi 1.2]
@@ -264,7 +250,6 @@ class Functions () extends ClientObject {
   def asin(number: Range): FunctionResult[Double] = js.native
   def asin(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse hyperbolic sine of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -276,7 +261,6 @@ class Functions () extends ClientObject {
   def asinh(number: Range): FunctionResult[Double] = js.native
   def asinh(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2.
     *
     * [Api set: ExcelApi 1.2]
@@ -288,7 +272,6 @@ class Functions () extends ClientObject {
   def atan(number: Range): FunctionResult[Double] = js.native
   def atan(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi.
     *
     * [Api set: ExcelApi 1.2]
@@ -313,7 +296,6 @@ class Functions () extends ClientObject {
   def atan2(xNum: Range, yNum: Range): FunctionResult[Double] = js.native
   def atan2(xNum: Range, yNum: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse hyperbolic tangent of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -325,7 +307,6 @@ class Functions () extends ClientObject {
   def atanh(number: Range): FunctionResult[Double] = js.native
   def atanh(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the average of the absolute deviations of data points from their mean. Arguments can be numbers or names, arrays, or references that contain numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -334,7 +315,6 @@ class Functions () extends ClientObject {
     */
   def aveDev(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that contain numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -343,7 +323,6 @@ class Functions () extends ClientObject {
     */
   def average(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the average (arithmetic mean) of its arguments, evaluating text and FALSE in arguments as 0; TRUE evaluates as 1. Arguments can be numbers, names, arrays, or references.
     *
     * [Api set: ExcelApi 1.2]
@@ -352,7 +331,6 @@ class Functions () extends ClientObject {
     */
   def averageA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Finds average(arithmetic mean) for the cells specified by a given condition or criteria.
     *
     * [Api set: ExcelApi 1.2]
@@ -379,7 +357,6 @@ class Functions () extends ClientObject {
     values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria.
     *
     * [Api set: ExcelApi 1.2]
@@ -392,7 +369,6 @@ class Functions () extends ClientObject {
     values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a number to text (baht).
     *
     * [Api set: ExcelApi 1.2]
@@ -404,7 +380,6 @@ class Functions () extends ClientObject {
   def bahtText(number: Range): FunctionResult[String] = js.native
   def bahtText(number: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Converts a number into a text representation with the given radix (base).
     *
     * [Api set: ExcelApi 1.2]
@@ -423,7 +398,6 @@ class Functions () extends ClientObject {
     minLength: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Returns the modified Bessel function In(x).
     *
     * [Api set: ExcelApi 1.2]
@@ -436,7 +410,6 @@ class Functions () extends ClientObject {
     n: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Bessel function Jn(x).
     *
     * [Api set: ExcelApi 1.2]
@@ -449,7 +422,6 @@ class Functions () extends ClientObject {
     n: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the modified Bessel function Kn(x).
     *
     * [Api set: ExcelApi 1.2]
@@ -462,7 +434,6 @@ class Functions () extends ClientObject {
     n: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Bessel function Yn(x).
     *
     * [Api set: ExcelApi 1.2]
@@ -475,7 +446,6 @@ class Functions () extends ClientObject {
     n: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the beta probability distribution function.
     *
     * [Api set: ExcelApi 1.2]
@@ -509,7 +479,6 @@ class Functions () extends ClientObject {
     B: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the cumulative beta probability density function (BETA.DIST).
     *
     * [Api set: ExcelApi 1.2]
@@ -541,7 +510,6 @@ class Functions () extends ClientObject {
   def bin2Dec(number: String): FunctionResult[Double] = js.native
   def bin2Dec(number: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a binary number to decimal.
     *
     * [Api set: ExcelApi 1.2]
@@ -553,7 +521,6 @@ class Functions () extends ClientObject {
   def bin2Dec(number: Range): FunctionResult[Double] = js.native
   def bin2Dec(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a binary number to hexadecimal.
     *
     * [Api set: ExcelApi 1.2]
@@ -567,7 +534,6 @@ class Functions () extends ClientObject {
     places: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a binary number to octal.
     *
     * [Api set: ExcelApi 1.2]
@@ -581,7 +547,6 @@ class Functions () extends ClientObject {
     places: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the individual term binomial distribution probability.
     *
     * [Api set: ExcelApi 1.2]
@@ -598,7 +563,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the probability of a trial result using a binomial distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -620,7 +584,6 @@ class Functions () extends ClientObject {
     numberS2: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
     *
     * [Api set: ExcelApi 1.2]
@@ -635,7 +598,6 @@ class Functions () extends ClientObject {
     alpha: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a bitwise 'And' of two numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -660,7 +622,6 @@ class Functions () extends ClientObject {
   def bitand(number1: Range, number2: Range): FunctionResult[Double] = js.native
   def bitand(number1: Range, number2: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a number shifted left by shift_amount bits.
     *
     * [Api set: ExcelApi 1.2]
@@ -685,7 +646,6 @@ class Functions () extends ClientObject {
   def bitlshift(number: Range, shiftAmount: Range): FunctionResult[Double] = js.native
   def bitlshift(number: Range, shiftAmount: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a bitwise 'Or' of two numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -710,7 +670,6 @@ class Functions () extends ClientObject {
   def bitor(number1: Range, number2: Range): FunctionResult[Double] = js.native
   def bitor(number1: Range, number2: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a number shifted right by shift_amount bits.
     *
     * [Api set: ExcelApi 1.2]
@@ -735,7 +694,6 @@ class Functions () extends ClientObject {
   def bitrshift(number: Range, shiftAmount: Range): FunctionResult[Double] = js.native
   def bitrshift(number: Range, shiftAmount: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a bitwise 'Exclusive Or' of two numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -760,7 +718,6 @@ class Functions () extends ClientObject {
   def bitxor(number1: Range, number2: Range): FunctionResult[Double] = js.native
   def bitxor(number1: Range, number2: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
     * [Api set: ExcelApi 1.2]
@@ -780,7 +737,6 @@ class Functions () extends ClientObject {
     mode: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
     * [Api set: ExcelApi 1.2]
@@ -809,7 +765,6 @@ class Functions () extends ClientObject {
   def ceiling_Precise(number: Range, significance: Range): FunctionResult[Double] = js.native
   def ceiling_Precise(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the character specified by the code number from the character set for your computer.
     *
     * [Api set: ExcelApi 1.2]
@@ -821,7 +776,6 @@ class Functions () extends ClientObject {
   def char(number: Range): FunctionResult[String] = js.native
   def char(number: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the left-tailed probability of the chi-squared distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -836,7 +790,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the right-tailed probability of the chi-squared distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -861,7 +814,6 @@ class Functions () extends ClientObject {
   def chiSq_Dist_RT(x: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def chiSq_Dist_RT(x: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the left-tailed probability of the chi-squared distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -886,7 +838,6 @@ class Functions () extends ClientObject {
   def chiSq_Inv(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def chiSq_Inv(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the right-tailed probability of the chi-squared distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -911,7 +862,6 @@ class Functions () extends ClientObject {
   def chiSq_Inv_RT(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def chiSq_Inv_RT(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Chooses a value or action to perform from a list of values, based on an index number.
     *
     * [Api set: ExcelApi 1.2]
@@ -933,7 +883,6 @@ class Functions () extends ClientObject {
   ): FunctionResult[Double | String | Boolean] = js.native
   def choose(indexNum: Range, values: (Range | Double | String | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double | String | Boolean] = js.native
   /**
-    *
     * Removes all nonprintable characters from text.
     *
     * [Api set: ExcelApi 1.2]
@@ -945,7 +894,6 @@ class Functions () extends ClientObject {
   def clean(text: Range): FunctionResult[String] = js.native
   def clean(text: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns a numeric code for the first character in a text string, in the character set used by your computer.
     *
     * [Api set: ExcelApi 1.2]
@@ -958,7 +906,6 @@ class Functions () extends ClientObject {
   def code(text: RangeReference): FunctionResult[Double] = js.native
   def columns(array: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of columns in an array or reference.
     *
     * [Api set: ExcelApi 1.2]
@@ -968,7 +915,6 @@ class Functions () extends ClientObject {
   def columns(array: Range): FunctionResult[Double] = js.native
   def columns(array: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of combinations for a given number of items.
     *
     * [Api set: ExcelApi 1.2]
@@ -993,7 +939,6 @@ class Functions () extends ClientObject {
   def combin(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def combin(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of combinations with repetitions for a given number of items.
     *
     * [Api set: ExcelApi 1.2]
@@ -1018,7 +963,6 @@ class Functions () extends ClientObject {
   def combina(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def combina(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Converts real and imaginary coefficients into a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -1037,7 +981,6 @@ class Functions () extends ClientObject {
     suffix: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Joins several text strings into one text string.
     *
     * [Api set: ExcelApi 1.2]
@@ -1046,7 +989,6 @@ class Functions () extends ClientObject {
     */
   def concatenate(values: (String | Range | RangeReference | FunctionResult[_])*): FunctionResult[String] = js.native
   /**
-    *
     * Returns the confidence interval for a population mean, using a normal distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -1061,7 +1003,6 @@ class Functions () extends ClientObject {
     size: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the confidence interval for a population mean, using a Student's T distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -1076,7 +1017,6 @@ class Functions () extends ClientObject {
     size: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a number from one measurement system to another.
     *
     * [Api set: ExcelApi 1.2]
@@ -1091,7 +1031,6 @@ class Functions () extends ClientObject {
     toUnit: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cosine of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -1103,7 +1042,6 @@ class Functions () extends ClientObject {
   def cos(number: Range): FunctionResult[Double] = js.native
   def cos(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic cosine of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -1115,7 +1053,6 @@ class Functions () extends ClientObject {
   def cosh(number: Range): FunctionResult[Double] = js.native
   def cosh(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cotangent of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -1127,7 +1064,6 @@ class Functions () extends ClientObject {
   def cot(number: Range): FunctionResult[Double] = js.native
   def cot(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic cotangent of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -1139,7 +1075,6 @@ class Functions () extends ClientObject {
   def coth(number: Range): FunctionResult[Double] = js.native
   def coth(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Counts the number of cells in a range that contain numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -1148,7 +1083,6 @@ class Functions () extends ClientObject {
     */
   def count(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Counts the number of cells in a range that are not empty.
     *
     * [Api set: ExcelApi 1.2]
@@ -1158,7 +1092,6 @@ class Functions () extends ClientObject {
   def countA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   def countBlank(range: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
-    *
     * Counts the number of empty cells in a specified range of cells.
     *
     * [Api set: ExcelApi 1.2]
@@ -1182,7 +1115,6 @@ class Functions () extends ClientObject {
   def countIf(range: Range, criteria: String): FunctionResult[Double] = js.native
   def countIf(range: Range, criteria: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Counts the number of cells within a range that meet the given condition.
     *
     * [Api set: ExcelApi 1.2]
@@ -1195,7 +1127,6 @@ class Functions () extends ClientObject {
   def countIf(range: Range, criteria: Range): FunctionResult[Double] = js.native
   def countIf(range: Range, criteria: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Counts the number of cells specified by a given set of conditions or criteria.
     *
     * [Api set: ExcelApi 1.2]
@@ -1204,7 +1135,6 @@ class Functions () extends ClientObject {
     */
   def countIfs(values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of days from the beginning of the coupon period to the settlement date.
     *
     * [Api set: ExcelApi 1.2]
@@ -1226,7 +1156,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of days in the coupon period that contains the settlement date.
     *
     * [Api set: ExcelApi 1.2]
@@ -1248,7 +1177,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of days from the settlement date to the next coupon date.
     *
     * [Api set: ExcelApi 1.2]
@@ -1270,7 +1198,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the next coupon date after the settlement date.
     *
     * [Api set: ExcelApi 1.2]
@@ -1292,7 +1219,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of coupons payable between the settlement date and maturity date.
     *
     * [Api set: ExcelApi 1.2]
@@ -1314,7 +1240,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the previous coupon date before the settlement date.
     *
     * [Api set: ExcelApi 1.2]
@@ -1336,7 +1261,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cosecant of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -1348,7 +1272,6 @@ class Functions () extends ClientObject {
   def csc(number: Range): FunctionResult[Double] = js.native
   def csc(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic cosecant of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -1360,7 +1283,6 @@ class Functions () extends ClientObject {
   def csch(number: Range): FunctionResult[Double] = js.native
   def csch(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cumulative interest paid between two periods.
     *
     * [Api set: ExcelApi 1.2]
@@ -1381,7 +1303,6 @@ class Functions () extends ClientObject {
     `type`: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cumulative principal paid on a loan between two periods.
     *
     * [Api set: ExcelApi 1.2]
@@ -1402,7 +1323,6 @@ class Functions () extends ClientObject {
     `type`: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number that represents the date in Microsoft Excel date-time code.
     *
     * [Api set: ExcelApi 1.2]
@@ -1417,7 +1337,6 @@ class Functions () extends ClientObject {
     day: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code.
     *
     * [Api set: ExcelApi 1.2]
@@ -1430,7 +1349,6 @@ class Functions () extends ClientObject {
   def datevalue(dateText: Range): FunctionResult[Double] = js.native
   def datevalue(dateText: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Averages the values in a column in a list or database that match conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1445,7 +1363,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the day of the month, a number from 1 to 31.
     *
     * [Api set: ExcelApi 1.2]
@@ -1457,7 +1374,6 @@ class Functions () extends ClientObject {
   def day(serialNumber: Range): FunctionResult[Double] = js.native
   def day(serialNumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of days between the two dates.
     *
     * [Api set: ExcelApi 1.2]
@@ -1470,7 +1386,6 @@ class Functions () extends ClientObject {
     startDate: String | Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of days between two dates based on a 360-day year (twelve 30-day months).
     *
     * [Api set: ExcelApi 1.2]
@@ -1489,7 +1404,6 @@ class Functions () extends ClientObject {
     method: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
     *
     * [Api set: ExcelApi 1.2]
@@ -1514,7 +1428,6 @@ class Functions () extends ClientObject {
     month: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Changes half-width (single-byte) characters within a character string to full-width (double-byte) characters. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -1526,7 +1439,6 @@ class Functions () extends ClientObject {
   def dbcs(text: Range): FunctionResult[String] = js.native
   def dbcs(text: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Counts the cells containing numbers in the field (column) of records in the database that match the conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1541,7 +1453,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1556,7 +1467,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the depreciation of an asset for a specified period using the double-declining balance method or some other method you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1581,7 +1491,6 @@ class Functions () extends ClientObject {
     factor: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a decimal number to binary.
     *
     * [Api set: ExcelApi 1.2]
@@ -1595,7 +1504,6 @@ class Functions () extends ClientObject {
     places: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a decimal number to hexadecimal.
     *
     * [Api set: ExcelApi 1.2]
@@ -1609,7 +1517,6 @@ class Functions () extends ClientObject {
     places: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a decimal number to octal.
     *
     * [Api set: ExcelApi 1.2]
@@ -1623,7 +1530,6 @@ class Functions () extends ClientObject {
     places: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a text representation of a number in a given base into a decimal number.
     *
     * [Api set: ExcelApi 1.2]
@@ -1648,7 +1554,6 @@ class Functions () extends ClientObject {
   def decimal(number: Range, radix: Range): FunctionResult[Double] = js.native
   def decimal(number: Range, radix: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Converts radians to degrees.
     *
     * [Api set: ExcelApi 1.2]
@@ -1660,7 +1565,6 @@ class Functions () extends ClientObject {
   def degrees(angle: Range): FunctionResult[Double] = js.native
   def degrees(angle: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Tests whether two numbers are equal.
     *
     * [Api set: ExcelApi 1.2]
@@ -1674,7 +1578,6 @@ class Functions () extends ClientObject {
     number2: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sum of squares of deviations of data points from their sample mean.
     *
     * [Api set: ExcelApi 1.2]
@@ -1683,7 +1586,6 @@ class Functions () extends ClientObject {
     */
   def devSq(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Extracts from a database a single record that matches the conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1698,7 +1600,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double | Boolean | String] = js.native
   /**
-    *
     * Returns the discount rate for a security.
     *
     * [Api set: ExcelApi 1.2]
@@ -1723,7 +1624,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the largest number in the field (column) of records in the database that match the conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1738,7 +1638,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the smallest number in the field (column) of records in the database that match the conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1753,7 +1652,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a number to text, using currency format.
     *
     * [Api set: ExcelApi 1.2]
@@ -1782,7 +1680,6 @@ class Functions () extends ClientObject {
   def dollar(number: Range, decimals: Range): FunctionResult[String] = js.native
   def dollar(number: Range, decimals: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number.
     *
     * [Api set: ExcelApi 1.2]
@@ -1795,7 +1692,6 @@ class Functions () extends ClientObject {
     fraction: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction.
     *
     * [Api set: ExcelApi 1.2]
@@ -1808,7 +1704,6 @@ class Functions () extends ClientObject {
     fraction: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Multiplies the values in the field (column) of records in the database that match the conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1823,7 +1718,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Estimates the standard deviation based on a sample from selected database entries.
     *
     * [Api set: ExcelApi 1.2]
@@ -1838,7 +1732,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Calculates the standard deviation based on the entire population of selected database entries.
     *
     * [Api set: ExcelApi 1.2]
@@ -1853,7 +1746,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Adds the numbers in the field (column) of records in the database that match the conditions you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -1868,7 +1760,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the annual duration of a security with periodic interest payments.
     *
     * [Api set: ExcelApi 1.2]
@@ -1896,7 +1787,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Estimates variance based on a sample from selected database entries.
     *
     * [Api set: ExcelApi 1.2]
@@ -1911,7 +1801,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Calculates variance based on the entire population of selected database entries.
     *
     * [Api set: ExcelApi 1.2]
@@ -1926,7 +1815,6 @@ class Functions () extends ClientObject {
     criteria: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
     * [Api set: ExcelApi 1.2]
@@ -1951,7 +1839,6 @@ class Functions () extends ClientObject {
   def ecma_Ceiling(number: Range, significance: Range): FunctionResult[Double] = js.native
   def ecma_Ceiling(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the serial number of the date that is the indicated number of months before or after the start date.
     *
     * [Api set: ExcelApi 1.2]
@@ -1964,7 +1851,6 @@ class Functions () extends ClientObject {
     months: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the effective annual interest rate.
     *
     * [Api set: ExcelApi 1.2]
@@ -1977,7 +1863,6 @@ class Functions () extends ClientObject {
     npery: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the serial number of the last day of the month before or after a specified number of months.
     *
     * [Api set: ExcelApi 1.2]
@@ -1990,7 +1875,6 @@ class Functions () extends ClientObject {
     months: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the error function.
     *
     * [Api set: ExcelApi 1.2]
@@ -2006,7 +1890,6 @@ class Functions () extends ClientObject {
   def erfC(x: String): FunctionResult[Double] = js.native
   def erfC(x: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the complementary error function.
     *
     * [Api set: ExcelApi 1.2]
@@ -2020,7 +1903,6 @@ class Functions () extends ClientObject {
   def erfC_Precise(X: String): FunctionResult[Double] = js.native
   def erfC_Precise(X: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the complementary error function.
     *
     * [Api set: ExcelApi 1.2]
@@ -2034,7 +1916,6 @@ class Functions () extends ClientObject {
   def erf_Precise(X: String): FunctionResult[Double] = js.native
   def erf_Precise(X: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the error function.
     *
     * [Api set: ExcelApi 1.2]
@@ -2046,7 +1927,6 @@ class Functions () extends ClientObject {
   def erf_Precise(X: Range): FunctionResult[Double] = js.native
   def erf_Precise(X: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a number matching an error value.
     *
     * [Api set: ExcelApi 1.2]
@@ -2060,7 +1940,6 @@ class Functions () extends ClientObject {
   def error_Type(errorVal: Range): FunctionResult[Double] = js.native
   def error_Type(errorVal: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a positive number up and negative number down to the nearest even integer.
     *
     * [Api set: ExcelApi 1.2]
@@ -2072,7 +1951,6 @@ class Functions () extends ClientObject {
   def even(number: Range): FunctionResult[Double] = js.native
   def even(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive.
     *
     * [Api set: ExcelApi 1.2]
@@ -2097,7 +1975,6 @@ class Functions () extends ClientObject {
   def exact(text1: Range, text2: Range): FunctionResult[Boolean] = js.native
   def exact(text1: Range, text2: RangeReference): FunctionResult[Boolean] = js.native
   /**
-    *
     * Returns e raised to the power of a given number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2109,7 +1986,6 @@ class Functions () extends ClientObject {
   def exp(number: Range): FunctionResult[Double] = js.native
   def exp(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the exponential distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -2124,7 +2000,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
     *
     * [Api set: ExcelApi 1.2]
@@ -2141,7 +2016,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
     *
     * [Api set: ExcelApi 1.2]
@@ -2156,7 +2030,6 @@ class Functions () extends ClientObject {
     degFreedom2: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
     *
     * [Api set: ExcelApi 1.2]
@@ -2171,7 +2044,6 @@ class Functions () extends ClientObject {
     degFreedom2: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then F.INV.RT(p,...) = x.
     *
     * [Api set: ExcelApi 1.2]
@@ -2186,7 +2058,6 @@ class Functions () extends ClientObject {
     degFreedom2: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the factorial of a number, equal to 1*2*3*...* Number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2200,7 +2071,6 @@ class Functions () extends ClientObject {
   def factDouble(number: String): FunctionResult[Double] = js.native
   def factDouble(number: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the double factorial of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2212,14 +2082,12 @@ class Functions () extends ClientObject {
   def factDouble(number: Range): FunctionResult[Double] = js.native
   def factDouble(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the logical value FALSE.
     *
     * [Api set: ExcelApi 1.2]
     */
   def `false`(): FunctionResult[Boolean] = js.native
   /**
-    *
     * Returns the starting position of one text string within another text string. FIND is case-sensitive.
     *
     * [Api set: ExcelApi 1.2]
@@ -2238,7 +2106,6 @@ class Functions () extends ClientObject {
     startNum: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Finds the starting position of one text string within another text string. FINDB is case-sensitive. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -2257,7 +2124,6 @@ class Functions () extends ClientObject {
     startNum: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Fisher transformation.
     *
     * [Api set: ExcelApi 1.2]
@@ -2269,7 +2135,6 @@ class Functions () extends ClientObject {
   def fisher(x: Range): FunctionResult[Double] = js.native
   def fisher(x: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x.
     *
     * [Api set: ExcelApi 1.2]
@@ -2281,7 +2146,6 @@ class Functions () extends ClientObject {
   def fisherInv(y: Range): FunctionResult[Double] = js.native
   def fisherInv(y: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number to the specified number of decimals and returns the result as text with or without commas.
     *
     * [Api set: ExcelApi 1.2]
@@ -2301,7 +2165,6 @@ class Functions () extends ClientObject {
     noCommas: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Rounds a number down, to the nearest integer or to the nearest multiple of significance.
     *
     * [Api set: ExcelApi 1.2]
@@ -2321,7 +2184,6 @@ class Functions () extends ClientObject {
     mode: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number down, to the nearest integer or to the nearest multiple of significance.
     *
     * [Api set: ExcelApi 1.2]
@@ -2350,7 +2212,6 @@ class Functions () extends ClientObject {
   def floor_Precise(number: Range, significance: Range): FunctionResult[Double] = js.native
   def floor_Precise(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
     *
     * [Api set: ExcelApi 1.2]
@@ -2380,7 +2241,6 @@ class Functions () extends ClientObject {
     `type`: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the future value of an initial principal after applying a series of compound interest rates.
     *
     * [Api set: ExcelApi 1.2]
@@ -2393,7 +2253,6 @@ class Functions () extends ClientObject {
     schedule: Double | String | Range | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Gamma function value.
     *
     * [Api set: ExcelApi 1.2]
@@ -2405,7 +2264,6 @@ class Functions () extends ClientObject {
   def gamma(x: Range): FunctionResult[Double] = js.native
   def gamma(x: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the natural logarithm of the gamma function.
     *
     * [Api set: ExcelApi 1.2]
@@ -2417,7 +2275,6 @@ class Functions () extends ClientObject {
   def gammaLn(x: Range): FunctionResult[Double] = js.native
   def gammaLn(x: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the natural logarithm of the gamma function.
     *
     * [Api set: ExcelApi 1.2]
@@ -2429,7 +2286,6 @@ class Functions () extends ClientObject {
   def gammaLn_Precise(x: Range): FunctionResult[Double] = js.native
   def gammaLn_Precise(x: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the gamma distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -2446,7 +2302,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.
     *
     * [Api set: ExcelApi 1.2]
@@ -2461,7 +2316,6 @@ class Functions () extends ClientObject {
     beta: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns 0.5 less than the standard normal cumulative distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -2473,7 +2327,6 @@ class Functions () extends ClientObject {
   def gauss(x: Range): FunctionResult[Double] = js.native
   def gauss(x: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the greatest common divisor.
     *
     * [Api set: ExcelApi 1.2]
@@ -2482,7 +2335,6 @@ class Functions () extends ClientObject {
     */
   def gcd(values: (Double | String | Range | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Tests whether a number is greater than a threshold value.
     *
     * [Api set: ExcelApi 1.2]
@@ -2496,7 +2348,6 @@ class Functions () extends ClientObject {
     step: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the geometric mean of an array or range of positive numeric data.
     *
     * [Api set: ExcelApi 1.2]
@@ -2505,7 +2356,6 @@ class Functions () extends ClientObject {
     */
   def geoMean(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.
     *
     * [Api set: ExcelApi 1.2]
@@ -2514,7 +2364,6 @@ class Functions () extends ClientObject {
     */
   def harMean(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a Hexadecimal number to binary.
     *
     * [Api set: ExcelApi 1.2]
@@ -2530,7 +2379,6 @@ class Functions () extends ClientObject {
   def hex2Dec(number: String): FunctionResult[Double] = js.native
   def hex2Dec(number: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a hexadecimal number to decimal.
     *
     * [Api set: ExcelApi 1.2]
@@ -2542,7 +2390,6 @@ class Functions () extends ClientObject {
   def hex2Dec(number: Range): FunctionResult[Double] = js.native
   def hex2Dec(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a hexadecimal number to octal.
     *
     * [Api set: ExcelApi 1.2]
@@ -2556,7 +2403,6 @@ class Functions () extends ClientObject {
     places: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Looks for a value in the top row of a table or array of values and returns the value in the same column from a row you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -2578,7 +2424,6 @@ class Functions () extends ClientObject {
     rangeLookup: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double | String | Boolean] = js.native
   /**
-    *
     * Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
     *
     * [Api set: ExcelApi 1.2]
@@ -2590,7 +2435,6 @@ class Functions () extends ClientObject {
   def hour(serialNumber: Range): FunctionResult[Double] = js.native
   def hour(serialNumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hypergeometric distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -2609,7 +2453,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.
     *
     * [Api set: ExcelApi 1.2]
@@ -2623,7 +2466,6 @@ class Functions () extends ClientObject {
     friendlyName: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double | String | Boolean] = js.native
   /**
-    *
     * Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -2645,7 +2487,6 @@ class Functions () extends ClientObject {
   def imAbs(inumber: String): FunctionResult[Double] = js.native
   def imAbs(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the absolute value (modulus) of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2659,7 +2500,6 @@ class Functions () extends ClientObject {
   def imArgument(inumber: String): FunctionResult[Double] = js.native
   def imArgument(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the argument q, an angle expressed in radians.
     *
     * [Api set: ExcelApi 1.2]
@@ -2673,7 +2513,6 @@ class Functions () extends ClientObject {
   def imConjugate(inumber: String): FunctionResult[Double] = js.native
   def imConjugate(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the complex conjugate of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2687,7 +2526,6 @@ class Functions () extends ClientObject {
   def imCos(inumber: String): FunctionResult[Double] = js.native
   def imCos(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cosine of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2701,7 +2539,6 @@ class Functions () extends ClientObject {
   def imCosh(inumber: String): FunctionResult[Double] = js.native
   def imCosh(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic cosine of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2715,7 +2552,6 @@ class Functions () extends ClientObject {
   def imCot(inumber: String): FunctionResult[Double] = js.native
   def imCot(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cotangent of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2729,7 +2565,6 @@ class Functions () extends ClientObject {
   def imCsc(inumber: String): FunctionResult[Double] = js.native
   def imCsc(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the cosecant of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2743,7 +2578,6 @@ class Functions () extends ClientObject {
   def imCsch(inumber: String): FunctionResult[Double] = js.native
   def imCsch(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic cosecant of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2755,7 +2589,6 @@ class Functions () extends ClientObject {
   def imCsch(inumber: Range): FunctionResult[Double] = js.native
   def imCsch(inumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the quotient of two complex numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -2770,7 +2603,6 @@ class Functions () extends ClientObject {
   def imExp(inumber: String): FunctionResult[Double] = js.native
   def imExp(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the exponential of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2784,7 +2616,6 @@ class Functions () extends ClientObject {
   def imLn(inumber: String): FunctionResult[Double] = js.native
   def imLn(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the natural logarithm of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2798,7 +2629,6 @@ class Functions () extends ClientObject {
   def imLog10(inumber: String): FunctionResult[Double] = js.native
   def imLog10(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the base-10 logarithm of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2812,7 +2642,6 @@ class Functions () extends ClientObject {
   def imLog2(inumber: String): FunctionResult[Double] = js.native
   def imLog2(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the base-2 logarithm of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2824,7 +2653,6 @@ class Functions () extends ClientObject {
   def imLog2(inumber: Range): FunctionResult[Double] = js.native
   def imLog2(inumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a complex number raised to an integer power.
     *
     * [Api set: ExcelApi 1.2]
@@ -2837,7 +2665,6 @@ class Functions () extends ClientObject {
     number: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the product of 1 to 255 complex numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -2848,7 +2675,6 @@ class Functions () extends ClientObject {
   def imReal(inumber: String): FunctionResult[Double] = js.native
   def imReal(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the real coefficient of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2862,7 +2688,6 @@ class Functions () extends ClientObject {
   def imSec(inumber: String): FunctionResult[Double] = js.native
   def imSec(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the secant of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2876,7 +2701,6 @@ class Functions () extends ClientObject {
   def imSech(inumber: String): FunctionResult[Double] = js.native
   def imSech(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic secant of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2890,7 +2714,6 @@ class Functions () extends ClientObject {
   def imSin(inumber: String): FunctionResult[Double] = js.native
   def imSin(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sine of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2904,7 +2727,6 @@ class Functions () extends ClientObject {
   def imSinh(inumber: String): FunctionResult[Double] = js.native
   def imSinh(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic sine of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2918,7 +2740,6 @@ class Functions () extends ClientObject {
   def imSqrt(inumber: String): FunctionResult[Double] = js.native
   def imSqrt(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the square root of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2930,7 +2751,6 @@ class Functions () extends ClientObject {
   def imSqrt(inumber: Range): FunctionResult[Double] = js.native
   def imSqrt(inumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the difference of two complex numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -2943,7 +2763,6 @@ class Functions () extends ClientObject {
     inumber2: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sum of complex numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -2954,7 +2773,6 @@ class Functions () extends ClientObject {
   def imTan(inumber: String): FunctionResult[Double] = js.native
   def imTan(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the tangent of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2968,7 +2786,6 @@ class Functions () extends ClientObject {
   def imaginary(inumber: String): FunctionResult[Double] = js.native
   def imaginary(inumber: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the imaginary coefficient of a complex number.
     *
     * [Api set: ExcelApi 1.2]
@@ -2980,7 +2797,6 @@ class Functions () extends ClientObject {
   def imaginary(inumber: Range): FunctionResult[Double] = js.native
   def imaginary(inumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number down to the nearest integer.
     *
     * [Api set: ExcelApi 1.2]
@@ -2992,7 +2808,6 @@ class Functions () extends ClientObject {
   def int(number: Range): FunctionResult[Double] = js.native
   def int(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the interest rate for a fully invested security.
     *
     * [Api set: ExcelApi 1.2]
@@ -3017,7 +2832,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the interest payment for a given period for an investment, based on periodic, constant payments and a constant interest rate.
     *
     * [Api set: ExcelApi 1.2]
@@ -3056,7 +2870,6 @@ class Functions () extends ClientObject {
   def irr(values: FunctionResult[_], guess: Range): FunctionResult[Double] = js.native
   def irr(values: FunctionResult[_], guess: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the internal rate of return for a series of cash flows.
     *
     * [Api set: ExcelApi 1.2]
@@ -3077,7 +2890,6 @@ class Functions () extends ClientObject {
   def isErr(value: String): FunctionResult[Boolean] = js.native
   def isErr(value: Boolean): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is an error (#VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!) excluding #N/A, and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3091,7 +2903,6 @@ class Functions () extends ClientObject {
   def isError(value: String): FunctionResult[Boolean] = js.native
   def isError(value: Boolean): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is an error (#N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, or #NULL!), and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3105,7 +2916,6 @@ class Functions () extends ClientObject {
   def isEven(number: String): FunctionResult[Double] = js.native
   def isEven(number: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns TRUE if the number is even.
     *
     * [Api set: ExcelApi 1.2]
@@ -3118,7 +2928,6 @@ class Functions () extends ClientObject {
   def isEven(number: RangeReference): FunctionResult[Double] = js.native
   def isFormula(reference: FunctionResult[_]): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3130,7 +2939,6 @@ class Functions () extends ClientObject {
   def isLogical(value: String): FunctionResult[Boolean] = js.native
   def isLogical(value: Boolean): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3144,7 +2952,6 @@ class Functions () extends ClientObject {
   def isNA(value: String): FunctionResult[Boolean] = js.native
   def isNA(value: Boolean): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is #N/A, and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3158,7 +2965,6 @@ class Functions () extends ClientObject {
   def isNonText(value: String): FunctionResult[Boolean] = js.native
   def isNonText(value: Boolean): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3172,7 +2978,6 @@ class Functions () extends ClientObject {
   def isNumber(value: String): FunctionResult[Boolean] = js.native
   def isNumber(value: Boolean): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is a number, and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3186,7 +2991,6 @@ class Functions () extends ClientObject {
   def isOdd(number: String): FunctionResult[Double] = js.native
   def isOdd(number: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns TRUE if the number is odd.
     *
     * [Api set: ExcelApi 1.2]
@@ -3200,7 +3004,6 @@ class Functions () extends ClientObject {
   def isText(value: String): FunctionResult[Boolean] = js.native
   def isText(value: Boolean): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is text, and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3212,7 +3015,6 @@ class Functions () extends ClientObject {
   def isText(value: Range): FunctionResult[Boolean] = js.native
   def isText(value: RangeReference): FunctionResult[Boolean] = js.native
   /**
-    *
     * Returns the ISO week number in the year for a given date.
     *
     * [Api set: ExcelApi 1.2]
@@ -3224,7 +3026,6 @@ class Functions () extends ClientObject {
   def isoWeekNum(date: Range): FunctionResult[Double] = js.native
   def isoWeekNum(date: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number up, to the nearest integer or to the nearest multiple of significance.
     *
     * [Api set: ExcelApi 1.2]
@@ -3253,7 +3054,6 @@ class Functions () extends ClientObject {
   def iso_Ceiling(number: Range, significance: Range): FunctionResult[Double] = js.native
   def iso_Ceiling(number: Range, significance: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the interest paid during a specific period of an investment.
     *
     * [Api set: ExcelApi 1.2]
@@ -3274,7 +3074,6 @@ class Functions () extends ClientObject {
   def isref(value: Double): FunctionResult[Boolean] = js.native
   def isref(value: FunctionResult[_]): FunctionResult[Boolean] = js.native
   /**
-    *
     * Checks whether a value is a reference, and returns TRUE or FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3284,7 +3083,6 @@ class Functions () extends ClientObject {
   def isref(value: Range): FunctionResult[Boolean] = js.native
   def isref(value: RangeReference): FunctionResult[Boolean] = js.native
   /**
-    *
     * Returns the kurtosis of a data set.
     *
     * [Api set: ExcelApi 1.2]
@@ -3293,7 +3091,6 @@ class Functions () extends ClientObject {
     */
   def kurt(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the k-th largest value in a data set. For example, the fifth largest number.
     *
     * [Api set: ExcelApi 1.2]
@@ -3318,7 +3115,6 @@ class Functions () extends ClientObject {
   def large(array: Range, k: Range): FunctionResult[Double] = js.native
   def large(array: Range, k: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the least common multiple.
     *
     * [Api set: ExcelApi 1.2]
@@ -3327,7 +3123,6 @@ class Functions () extends ClientObject {
     */
   def lcm(values: (Double | String | Range | Boolean | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the specified number of characters from the start of a text string.
     *
     * [Api set: ExcelApi 1.2]
@@ -3356,7 +3151,6 @@ class Functions () extends ClientObject {
   def left(text: Range, numChars: Range): FunctionResult[String] = js.native
   def left(text: Range, numChars: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the specified number of characters from the start of a text string. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -3385,7 +3179,6 @@ class Functions () extends ClientObject {
   def leftb(text: Range, numBytes: Range): FunctionResult[String] = js.native
   def leftb(text: Range, numBytes: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the number of characters in a text string.
     *
     * [Api set: ExcelApi 1.2]
@@ -3397,7 +3190,6 @@ class Functions () extends ClientObject {
   def len(text: Range): FunctionResult[Double] = js.native
   def len(text: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of characters in a text string. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -3409,7 +3201,6 @@ class Functions () extends ClientObject {
   def lenb(text: Range): FunctionResult[Double] = js.native
   def lenb(text: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the natural logarithm of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -3421,7 +3212,6 @@ class Functions () extends ClientObject {
   def ln(number: Range): FunctionResult[Double] = js.native
   def ln(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the logarithm of a number to the base you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -3450,7 +3240,6 @@ class Functions () extends ClientObject {
   def log(number: Range, base: Range): FunctionResult[Double] = js.native
   def log(number: Range, base: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the base-10 logarithm of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -3462,7 +3251,6 @@ class Functions () extends ClientObject {
   def log10(number: Range): FunctionResult[Double] = js.native
   def log10(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the lognormal distribution of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.
     *
     * [Api set: ExcelApi 1.2]
@@ -3479,7 +3267,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed with parameters Mean and Standard_dev.
     *
     * [Api set: ExcelApi 1.2]
@@ -3494,7 +3281,6 @@ class Functions () extends ClientObject {
     standardDev: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.
     *
     * [Api set: ExcelApi 1.2]
@@ -3513,7 +3299,6 @@ class Functions () extends ClientObject {
     resultVector: Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double | String | Boolean] = js.native
   /**
-    *
     * Converts all letters in a text string to lowercase.
     *
     * [Api set: ExcelApi 1.2]
@@ -3525,7 +3310,6 @@ class Functions () extends ClientObject {
   def lower(text: Range): FunctionResult[String] = js.native
   def lower(text: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the relative position of an item in an array that matches a specified value in a specified order.
     *
     * [Api set: ExcelApi 1.2]
@@ -3544,7 +3328,6 @@ class Functions () extends ClientObject {
     matchType: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the largest value in a set of values. Ignores logical values and text.
     *
     * [Api set: ExcelApi 1.2]
@@ -3553,7 +3336,6 @@ class Functions () extends ClientObject {
     */
   def max(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the largest value in a set of values. Does not ignore logical values and text.
     *
     * [Api set: ExcelApi 1.2]
@@ -3562,7 +3344,6 @@ class Functions () extends ClientObject {
     */
   def maxA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Macauley modified duration for a security with an assumed par value of $100.
     *
     * [Api set: ExcelApi 1.2]
@@ -3590,7 +3371,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the median, or the number in the middle of the set of given numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -3599,7 +3379,6 @@ class Functions () extends ClientObject {
     */
   def median(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the characters from the middle of a text string, given a starting position and length.
     *
     * [Api set: ExcelApi 1.2]
@@ -3614,7 +3393,6 @@ class Functions () extends ClientObject {
     numChars: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Returns characters from the middle of a text string, given a starting position and length. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -3629,7 +3407,6 @@ class Functions () extends ClientObject {
     numBytes: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Returns the smallest number in a set of values. Ignores logical values and text.
     *
     * [Api set: ExcelApi 1.2]
@@ -3638,7 +3415,6 @@ class Functions () extends ClientObject {
     */
   def min(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the smallest value in a set of values. Does not ignore logical values and text.
     *
     * [Api set: ExcelApi 1.2]
@@ -3647,7 +3423,6 @@ class Functions () extends ClientObject {
     */
   def minA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the minute, a number from 0 to 59.
     *
     * [Api set: ExcelApi 1.2]
@@ -3659,7 +3434,6 @@ class Functions () extends ClientObject {
   def minute(serialNumber: Range): FunctionResult[Double] = js.native
   def minute(serialNumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the internal rate of return for a series of periodic cash flows, considering both cost of investment and interest on reinvestment of cash.
     *
     * [Api set: ExcelApi 1.2]
@@ -3674,7 +3448,6 @@ class Functions () extends ClientObject {
     reinvestRate: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the remainder after a number is divided by a divisor.
     *
     * [Api set: ExcelApi 1.2]
@@ -3699,7 +3472,6 @@ class Functions () extends ClientObject {
   def mod(number: Range, divisor: Range): FunctionResult[Double] = js.native
   def mod(number: Range, divisor: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the month, a number from 1 (January) to 12 (December).
     *
     * [Api set: ExcelApi 1.2]
@@ -3711,7 +3483,6 @@ class Functions () extends ClientObject {
   def month(serialNumber: Range): FunctionResult[Double] = js.native
   def month(serialNumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a number rounded to the desired multiple.
     *
     * [Api set: ExcelApi 1.2]
@@ -3724,7 +3495,6 @@ class Functions () extends ClientObject {
     multiple: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the multinomial of a set of numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -3735,7 +3505,6 @@ class Functions () extends ClientObject {
   def n(value: String): FunctionResult[Double] = js.native
   def n(value: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero).
     *
     * [Api set: ExcelApi 1.2]
@@ -3747,14 +3516,12 @@ class Functions () extends ClientObject {
   def n(value: Range): FunctionResult[Double] = js.native
   def n(value: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the error value #N/A (value not available).
     *
     * [Api set: ExcelApi 1.2]
     */
   def na(): FunctionResult[Double | String] = js.native
   /**
-    *
     * Returns the negative binomial distribution, the probability that there will be Number_f failures before the Number_s-th success, with Probability_s probability of a success.
     *
     * [Api set: ExcelApi 1.2]
@@ -3771,7 +3538,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of whole workdays between two dates.
     *
     * [Api set: ExcelApi 1.2]
@@ -3790,7 +3556,6 @@ class Functions () extends ClientObject {
     holidays: Double | String | Range | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of whole workdays between two dates with custom weekend parameters.
     *
     * [Api set: ExcelApi 1.2]
@@ -3816,7 +3581,6 @@ class Functions () extends ClientObject {
     holidays: Double | String | Range | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the annual nominal interest rate.
     *
     * [Api set: ExcelApi 1.2]
@@ -3829,7 +3593,6 @@ class Functions () extends ClientObject {
     npery: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the normal distribution for the specified mean and standard deviation.
     *
     * [Api set: ExcelApi 1.2]
@@ -3846,7 +3609,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
     *
     * [Api set: ExcelApi 1.2]
@@ -3861,7 +3623,6 @@ class Functions () extends ClientObject {
     standardDev: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
     *
     * [Api set: ExcelApi 1.2]
@@ -3886,7 +3647,6 @@ class Functions () extends ClientObject {
   def norm_S_Dist(z: Range, cumulative: Range): FunctionResult[Double] = js.native
   def norm_S_Dist(z: Range, cumulative: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of one).
     *
     * [Api set: ExcelApi 1.2]
@@ -3898,7 +3658,6 @@ class Functions () extends ClientObject {
   def norm_S_Inv(probability: Range): FunctionResult[Double] = js.native
   def norm_S_Inv(probability: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Changes FALSE to TRUE, or TRUE to FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -3910,14 +3669,12 @@ class Functions () extends ClientObject {
   def not(logical: Range): FunctionResult[Boolean] = js.native
   def not(logical: RangeReference): FunctionResult[Boolean] = js.native
   /**
-    *
     * Returns the current date and time formatted as a date and time.
     *
     * [Api set: ExcelApi 1.2]
     */
   def now(): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
     *
     * [Api set: ExcelApi 1.2]
@@ -3947,7 +3704,6 @@ class Functions () extends ClientObject {
     `type`: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the net present value of an investment based on a discount rate and a series of future payments (negative values) and income (positive values).
     *
     * [Api set: ExcelApi 1.2]
@@ -3960,7 +3716,6 @@ class Functions () extends ClientObject {
   def npv(rate: RangeReference, values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   def npv(rate: Range, values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Converts text to number in a locale-independent manner.
     *
     * [Api set: ExcelApi 1.2]
@@ -3980,7 +3735,6 @@ class Functions () extends ClientObject {
     groupSeparator: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts an octal number to binary.
     *
     * [Api set: ExcelApi 1.2]
@@ -3996,7 +3750,6 @@ class Functions () extends ClientObject {
   def oct2Dec(number: String): FunctionResult[Double] = js.native
   def oct2Dec(number: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Converts an octal number to decimal.
     *
     * [Api set: ExcelApi 1.2]
@@ -4008,7 +3761,6 @@ class Functions () extends ClientObject {
   def oct2Dec(number: Range): FunctionResult[Double] = js.native
   def oct2Dec(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Converts an octal number to hexadecimal.
     *
     * [Api set: ExcelApi 1.2]
@@ -4022,7 +3774,6 @@ class Functions () extends ClientObject {
     places: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a positive number up and negative number down to the nearest odd integer.
     *
     * [Api set: ExcelApi 1.2]
@@ -4034,7 +3785,6 @@ class Functions () extends ClientObject {
   def odd(number: Range): FunctionResult[Double] = js.native
   def odd(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the price per $100 face value of a security with an odd first period.
     *
     * [Api set: ExcelApi 1.2]
@@ -4071,7 +3821,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the yield of a security with an odd first period.
     *
     * [Api set: ExcelApi 1.2]
@@ -4108,7 +3857,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the price per $100 face value of a security with an odd last period.
     *
     * [Api set: ExcelApi 1.2]
@@ -4142,7 +3890,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the yield of a security with an odd last period.
     *
     * [Api set: ExcelApi 1.2]
@@ -4176,7 +3923,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are FALSE.
     *
     * [Api set: ExcelApi 1.2]
@@ -4185,7 +3931,6 @@ class Functions () extends ClientObject {
     */
   def or(values: (Boolean | Range | RangeReference | FunctionResult[_])*): FunctionResult[Boolean] = js.native
   /**
-    *
     * Returns the number of periods required by an investment to reach a specified value.
     *
     * [Api set: ExcelApi 1.2]
@@ -4200,7 +3945,6 @@ class Functions () extends ClientObject {
     fv: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the data set.
     *
     * [Api set: ExcelApi 1.2]
@@ -4219,7 +3963,6 @@ class Functions () extends ClientObject {
     significance: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the data set.
     *
     * [Api set: ExcelApi 1.2]
@@ -4238,7 +3981,6 @@ class Functions () extends ClientObject {
     significance: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.
     *
     * [Api set: ExcelApi 1.2]
@@ -4263,7 +4005,6 @@ class Functions () extends ClientObject {
   def percentile_Exc(array: Range, k: Range): FunctionResult[Double] = js.native
   def percentile_Exc(array: Range, k: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.
     *
     * [Api set: ExcelApi 1.2]
@@ -4288,7 +4029,6 @@ class Functions () extends ClientObject {
   def percentile_Inc(array: Range, k: Range): FunctionResult[Double] = js.native
   def percentile_Inc(array: Range, k: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of permutations for a given number of objects that can be selected from the total objects.
     *
     * [Api set: ExcelApi 1.2]
@@ -4313,7 +4053,6 @@ class Functions () extends ClientObject {
   def permut(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def permut(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of permutations for a given number of objects (with repetitions) that can be selected from the total objects.
     *
     * [Api set: ExcelApi 1.2]
@@ -4338,7 +4077,6 @@ class Functions () extends ClientObject {
   def permutationa(number: Range, numberChosen: Range): FunctionResult[Double] = js.native
   def permutationa(number: Range, numberChosen: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the value of the density function for a standard normal distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -4350,14 +4088,12 @@ class Functions () extends ClientObject {
   def phi(x: Range): FunctionResult[Double] = js.native
   def phi(x: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
     *
     * [Api set: ExcelApi 1.2]
     */
   def pi(): FunctionResult[Double] = js.native
   /**
-    *
     * Calculates the payment for a loan based on constant payments and a constant interest rate.
     *
     * [Api set: ExcelApi 1.2]
@@ -4387,7 +4123,6 @@ class Functions () extends ClientObject {
     `type`: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Poisson distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -4402,7 +4137,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the result of a number raised to a power.
     *
     * [Api set: ExcelApi 1.2]
@@ -4427,7 +4161,6 @@ class Functions () extends ClientObject {
   def power(number: Range, power: Range): FunctionResult[Double] = js.native
   def power(number: Range, power: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the payment on the principal for a given investment based on periodic, constant payments and a constant interest rate.
     *
     * [Api set: ExcelApi 1.2]
@@ -4461,7 +4194,6 @@ class Functions () extends ClientObject {
     `type`: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the price per $100 face value of a security that pays periodic interest.
     *
     * [Api set: ExcelApi 1.2]
@@ -4492,7 +4224,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the price per $100 face value of a discounted security.
     *
     * [Api set: ExcelApi 1.2]
@@ -4517,7 +4248,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the price per $100 face value of a security that pays interest at maturity.
     *
     * [Api set: ExcelApi 1.2]
@@ -4545,7 +4275,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Multiplies all the numbers given as arguments.
     *
     * [Api set: ExcelApi 1.2]
@@ -4554,7 +4283,6 @@ class Functions () extends ClientObject {
     */
   def product(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a text string to proper case; the first letter in each word to uppercase, and all other letters to lowercase.
     *
     * [Api set: ExcelApi 1.2]
@@ -4566,7 +4294,6 @@ class Functions () extends ClientObject {
   def proper(text: Range): FunctionResult[String] = js.native
   def proper(text: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the present value of an investment: the total amount that a series of future payments is worth now.
     *
     * [Api set: ExcelApi 1.2]
@@ -4596,7 +4323,6 @@ class Functions () extends ClientObject {
     `type`: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the quartile of a data set, based on percentile values from 0..1, exclusive.
     *
     * [Api set: ExcelApi 1.2]
@@ -4621,7 +4347,6 @@ class Functions () extends ClientObject {
   def quartile_Exc(array: Range, quart: Range): FunctionResult[Double] = js.native
   def quartile_Exc(array: Range, quart: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the quartile of a data set, based on percentile values from 0..1, inclusive.
     *
     * [Api set: ExcelApi 1.2]
@@ -4646,7 +4371,6 @@ class Functions () extends ClientObject {
   def quartile_Inc(array: Range, quart: Range): FunctionResult[Double] = js.native
   def quartile_Inc(array: Range, quart: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the integer portion of a division.
     *
     * [Api set: ExcelApi 1.2]
@@ -4659,7 +4383,6 @@ class Functions () extends ClientObject {
     denominator: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts degrees to radians.
     *
     * [Api set: ExcelApi 1.2]
@@ -4671,14 +4394,12 @@ class Functions () extends ClientObject {
   def radians(angle: Range): FunctionResult[Double] = js.native
   def radians(angle: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).
     *
     * [Api set: ExcelApi 1.2]
     */
   def rand(): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a random number between the numbers you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -4691,7 +4412,6 @@ class Functions () extends ClientObject {
     top: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the average rank is returned.
     *
     * [Api set: ExcelApi 1.2]
@@ -4710,7 +4430,6 @@ class Functions () extends ClientObject {
     order: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one value has the same rank, the top rank of that set of values is returned.
     *
     * [Api set: ExcelApi 1.2]
@@ -4729,7 +4448,6 @@ class Functions () extends ClientObject {
     order: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at 6% APR.
     *
     * [Api set: ExcelApi 1.2]
@@ -4768,7 +4486,6 @@ class Functions () extends ClientObject {
     guess: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the amount received at maturity for a fully invested security.
     *
     * [Api set: ExcelApi 1.2]
@@ -4793,7 +4510,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Replaces part of a text string with a different text string.
     *
     * [Api set: ExcelApi 1.2]
@@ -4810,7 +4526,6 @@ class Functions () extends ClientObject {
     newText: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -4827,7 +4542,6 @@ class Functions () extends ClientObject {
     newText: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.
     *
     * [Api set: ExcelApi 1.2]
@@ -4852,7 +4566,6 @@ class Functions () extends ClientObject {
   def rept(text: Range, numberTimes: Range): FunctionResult[String] = js.native
   def rept(text: Range, numberTimes: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the specified number of characters from the end of a text string.
     *
     * [Api set: ExcelApi 1.2]
@@ -4881,7 +4594,6 @@ class Functions () extends ClientObject {
   def right(text: Range, numChars: Range): FunctionResult[String] = js.native
   def right(text: Range, numChars: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the specified number of characters from the end of a text string. Use with double-byte character sets (DBCS).
     *
     * [Api set: ExcelApi 1.2]
@@ -4910,7 +4622,6 @@ class Functions () extends ClientObject {
   def rightb(text: Range, numBytes: Range): FunctionResult[String] = js.native
   def rightb(text: Range, numBytes: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Converts an Arabic numeral to Roman, as text.
     *
     * [Api set: ExcelApi 1.2]
@@ -4943,7 +4654,6 @@ class Functions () extends ClientObject {
   def roman(number: Range, form: Range): FunctionResult[String] = js.native
   def roman(number: Range, form: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Rounds a number to a specified number of digits.
     *
     * [Api set: ExcelApi 1.2]
@@ -4968,7 +4678,6 @@ class Functions () extends ClientObject {
   def round(number: Range, numDigits: Range): FunctionResult[Double] = js.native
   def round(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number down, toward zero.
     *
     * [Api set: ExcelApi 1.2]
@@ -4993,7 +4702,6 @@ class Functions () extends ClientObject {
   def roundDown(number: Range, numDigits: Range): FunctionResult[Double] = js.native
   def roundDown(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Rounds a number up, away from zero.
     *
     * [Api set: ExcelApi 1.2]
@@ -5019,7 +4727,6 @@ class Functions () extends ClientObject {
   def roundUp(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
   def rows(array: FunctionResult[_]): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of rows in a reference or array.
     *
     * [Api set: ExcelApi 1.2]
@@ -5029,7 +4736,6 @@ class Functions () extends ClientObject {
   def rows(array: Range): FunctionResult[Double] = js.native
   def rows(array: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns an equivalent interest rate for the growth of an investment.
     *
     * [Api set: ExcelApi 1.2]
@@ -5044,7 +4750,6 @@ class Functions () extends ClientObject {
     fv: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the secant of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -5056,7 +4761,6 @@ class Functions () extends ClientObject {
   def sec(number: Range): FunctionResult[Double] = js.native
   def sec(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic secant of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -5068,7 +4772,6 @@ class Functions () extends ClientObject {
   def sech(number: Range): FunctionResult[Double] = js.native
   def sech(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the second, a number from 0 to 59.
     *
     * [Api set: ExcelApi 1.2]
@@ -5080,7 +4783,6 @@ class Functions () extends ClientObject {
   def second(serialNumber: Range): FunctionResult[Double] = js.native
   def second(serialNumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sum of a power series based on the formula.
     *
     * [Api set: ExcelApi 1.2]
@@ -5097,7 +4799,6 @@ class Functions () extends ClientObject {
     coefficients: Range | String | Double | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sheet number of the referenced sheet.
     *
     * [Api set: ExcelApi 1.2]
@@ -5110,7 +4811,6 @@ class Functions () extends ClientObject {
   def sheet(value: Range): FunctionResult[Double] = js.native
   def sheet(value: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the number of sheets in a reference.
     *
     * [Api set: ExcelApi 1.2]
@@ -5122,7 +4822,6 @@ class Functions () extends ClientObject {
   def sheets(reference: Range): FunctionResult[Double] = js.native
   def sheets(reference: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sign of a number: 1 if the number is positive, zero if the number is zero, or -1 if the number is negative.
     *
     * [Api set: ExcelApi 1.2]
@@ -5134,7 +4833,6 @@ class Functions () extends ClientObject {
   def sign(number: Range): FunctionResult[Double] = js.native
   def sign(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sine of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -5146,7 +4844,6 @@ class Functions () extends ClientObject {
   def sin(number: Range): FunctionResult[Double] = js.native
   def sin(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic sine of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -5158,7 +4855,6 @@ class Functions () extends ClientObject {
   def sinh(number: Range): FunctionResult[Double] = js.native
   def sinh(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its mean.
     *
     * [Api set: ExcelApi 1.2]
@@ -5167,7 +4863,6 @@ class Functions () extends ClientObject {
     */
   def skew(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a distribution around its mean.
     *
     * [Api set: ExcelApi 1.2]
@@ -5176,7 +4871,6 @@ class Functions () extends ClientObject {
     */
   def skew_p(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the straight-line depreciation of an asset for one period.
     *
     * [Api set: ExcelApi 1.2]
@@ -5191,7 +4885,6 @@ class Functions () extends ClientObject {
     life: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the k-th smallest value in a data set. For example, the fifth smallest number.
     *
     * [Api set: ExcelApi 1.2]
@@ -5216,7 +4909,6 @@ class Functions () extends ClientObject {
   def small(array: Range, k: Range): FunctionResult[Double] = js.native
   def small(array: Range, k: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the square root of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -5230,7 +4922,6 @@ class Functions () extends ClientObject {
   def sqrtPi(number: String): FunctionResult[Double] = js.native
   def sqrtPi(number: Boolean): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the square root of (number * Pi).
     *
     * [Api set: ExcelApi 1.2]
@@ -5242,7 +4933,6 @@ class Functions () extends ClientObject {
   def sqrtPi(number: Range): FunctionResult[Double] = js.native
   def sqrtPi(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Estimates standard deviation based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
     * [Api set: ExcelApi 1.2]
@@ -5251,7 +4941,6 @@ class Functions () extends ClientObject {
     */
   def stDevA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Calculates standard deviation based on an entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
     * [Api set: ExcelApi 1.2]
@@ -5260,7 +4949,6 @@ class Functions () extends ClientObject {
     */
   def stDevPA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).
     *
     * [Api set: ExcelApi 1.2]
@@ -5269,7 +4957,6 @@ class Functions () extends ClientObject {
     */
   def stDev_P(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Estimates standard deviation based on a sample (ignores logical values and text in the sample).
     *
     * [Api set: ExcelApi 1.2]
@@ -5278,7 +4965,6 @@ class Functions () extends ClientObject {
     */
   def stDev_S(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a normalized value from a distribution characterized by a mean and standard deviation.
     *
     * [Api set: ExcelApi 1.2]
@@ -5293,7 +4979,6 @@ class Functions () extends ClientObject {
     standardDev: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Replaces existing text with new text in a text string.
     *
     * [Api set: ExcelApi 1.2]
@@ -5315,7 +5000,6 @@ class Functions () extends ClientObject {
     instanceNum: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Returns a subtotal in a list or database.
     *
     * [Api set: ExcelApi 1.2]
@@ -5328,7 +5012,6 @@ class Functions () extends ClientObject {
   def subtotal(functionNum: RangeReference, values: (Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   def subtotal(functionNum: Range, values: (Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Adds all the numbers in a range of cells.
     *
     * [Api set: ExcelApi 1.2]
@@ -5337,7 +5020,6 @@ class Functions () extends ClientObject {
     */
   def sum(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Adds the cells specified by a given condition or criteria.
     *
     * [Api set: ExcelApi 1.2]
@@ -5364,7 +5046,6 @@ class Functions () extends ClientObject {
     values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Adds the cells specified by a given set of conditions or criteria.
     *
     * [Api set: ExcelApi 1.2]
@@ -5374,7 +5055,6 @@ class Functions () extends ClientObject {
     */
   def sumIfs(sumRange: Range, values: (Range | RangeReference | FunctionResult[_] | Double | String | Boolean)*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sum of the squares of the arguments. The arguments can be numbers, arrays, names, or references to cells that contain numbers.
     *
     * [Api set: ExcelApi 1.2]
@@ -5383,7 +5063,6 @@ class Functions () extends ClientObject {
     */
   def sumSq(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the sum-of-years' digits depreciation of an asset for a specified period.
     *
     * [Api set: ExcelApi 1.2]
@@ -5402,7 +5081,6 @@ class Functions () extends ClientObject {
   def t(value: String): FunctionResult[String] = js.native
   def t(value: Boolean): FunctionResult[String] = js.native
   /**
-    *
     * Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.
     *
     * [Api set: ExcelApi 1.2]
@@ -5414,7 +5092,6 @@ class Functions () extends ClientObject {
   def t(value: Range): FunctionResult[String] = js.native
   def t(value: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the left-tailed Student's t-distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -5429,7 +5106,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the two-tailed Student's t-distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -5454,7 +5130,6 @@ class Functions () extends ClientObject {
   def t_Dist_2T(x: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Dist_2T(x: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the right-tailed Student's t-distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -5479,7 +5154,6 @@ class Functions () extends ClientObject {
   def t_Dist_RT(x: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Dist_RT(x: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the left-tailed inverse of the Student's t-distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -5504,7 +5178,6 @@ class Functions () extends ClientObject {
   def t_Inv(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Inv(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the two-tailed inverse of the Student's t-distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -5529,7 +5202,6 @@ class Functions () extends ClientObject {
   def t_Inv_2T(probability: Range, degFreedom: Range): FunctionResult[Double] = js.native
   def t_Inv_2T(probability: Range, degFreedom: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the tangent of an angle.
     *
     * [Api set: ExcelApi 1.2]
@@ -5541,7 +5213,6 @@ class Functions () extends ClientObject {
   def tan(number: Range): FunctionResult[Double] = js.native
   def tan(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the hyperbolic tangent of a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -5553,7 +5224,6 @@ class Functions () extends ClientObject {
   def tanh(number: Range): FunctionResult[Double] = js.native
   def tanh(number: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the bond-equivalent yield for a treasury bill.
     *
     * [Api set: ExcelApi 1.2]
@@ -5568,7 +5238,6 @@ class Functions () extends ClientObject {
     discount: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the price per $100 face value for a treasury bill.
     *
     * [Api set: ExcelApi 1.2]
@@ -5583,7 +5252,6 @@ class Functions () extends ClientObject {
     discount: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the yield for a treasury bill.
     *
     * [Api set: ExcelApi 1.2]
@@ -5598,7 +5266,6 @@ class Functions () extends ClientObject {
     pr: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a value to text in a specific number format.
     *
     * [Api set: ExcelApi 1.2]
@@ -5611,7 +5278,6 @@ class Functions () extends ClientObject {
     formatText: String | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[String] = js.native
   /**
-    *
     * Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format.
     *
     * [Api set: ExcelApi 1.2]
@@ -5626,7 +5292,6 @@ class Functions () extends ClientObject {
     second: Double | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a text time to an Excel serial number for a time, a number from 0 (12:00:00 AM) to 0.999988426 (11:59:59 PM). Format the number with a time format after entering the formula.
     *
     * [Api set: ExcelApi 1.2]
@@ -5644,14 +5309,12 @@ class Functions () extends ClientObject {
     */
   def toJSON(): StringDictionary[String] = js.native
   /**
-    *
     * Returns the current date formatted as a date.
     *
     * [Api set: ExcelApi 1.2]
     */
   def today(): FunctionResult[Double] = js.native
   /**
-    *
     * Removes all spaces from a text string except for single spaces between words.
     *
     * [Api set: ExcelApi 1.2]
@@ -5663,7 +5326,6 @@ class Functions () extends ClientObject {
   def trim(text: Range): FunctionResult[String] = js.native
   def trim(text: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the mean of the interior portion of a set of data values.
     *
     * [Api set: ExcelApi 1.2]
@@ -5688,14 +5350,12 @@ class Functions () extends ClientObject {
   def trimMean(array: Range, percent: Range): FunctionResult[Double] = js.native
   def trimMean(array: Range, percent: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the logical value TRUE.
     *
     * [Api set: ExcelApi 1.2]
     */
   def `true`(): FunctionResult[Boolean] = js.native
   /**
-    *
     * Truncates a number to an integer by removing the decimal, or fractional, part of the number.
     *
     * [Api set: ExcelApi 1.2]
@@ -5725,7 +5385,6 @@ class Functions () extends ClientObject {
   def trunc(number: Range, numDigits: RangeReference): FunctionResult[Double] = js.native
   def `type`(value: String): FunctionResult[Double] = js.native
   /**
-    *
     * Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value = 16; array = 64.
     *
     * [Api set: ExcelApi 1.2]
@@ -5738,7 +5397,6 @@ class Functions () extends ClientObject {
   def `type`(value: Range): FunctionResult[Double] = js.native
   def `type`(value: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Unicode character referenced by the given numeric value.
     *
     * [Api set: ExcelApi 1.2]
@@ -5750,7 +5408,6 @@ class Functions () extends ClientObject {
   def unichar(number: Range): FunctionResult[String] = js.native
   def unichar(number: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Returns the number (code point) corresponding to the first character of the text.
     *
     * [Api set: ExcelApi 1.2]
@@ -5762,7 +5419,6 @@ class Functions () extends ClientObject {
   def unicode(text: Range): FunctionResult[Double] = js.native
   def unicode(text: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Converts a text string to all uppercase letters.
     *
     * [Api set: ExcelApi 1.2]
@@ -5774,7 +5430,6 @@ class Functions () extends ClientObject {
   def upper(text: Range): FunctionResult[String] = js.native
   def upper(text: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Converts a number to text, using currency format.
     *
     * [Api set: ExcelApi 1.2]
@@ -5803,7 +5458,6 @@ class Functions () extends ClientObject {
   def usdollar(number: Range, decimals: Range): FunctionResult[String] = js.native
   def usdollar(number: Range, decimals: RangeReference): FunctionResult[String] = js.native
   /**
-    *
     * Converts a text string that represents a number to a number.
     *
     * [Api set: ExcelApi 1.2]
@@ -5817,7 +5471,6 @@ class Functions () extends ClientObject {
   def value(text: Range): FunctionResult[Double] = js.native
   def value(text: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Estimates variance based on a sample, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
     * [Api set: ExcelApi 1.2]
@@ -5826,7 +5479,6 @@ class Functions () extends ClientObject {
     */
   def varA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Calculates variance based on the entire population, including logical values and text. Text and the logical value FALSE have the value 0; the logical value TRUE has the value 1.
     *
     * [Api set: ExcelApi 1.2]
@@ -5835,7 +5487,6 @@ class Functions () extends ClientObject {
     */
   def varPA(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Calculates variance based on the entire population (ignores logical values and text in the population).
     *
     * [Api set: ExcelApi 1.2]
@@ -5844,7 +5495,6 @@ class Functions () extends ClientObject {
     */
   def var_P(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Estimates variance based on a sample (ignores logical values and text in the sample).
     *
     * [Api set: ExcelApi 1.2]
@@ -5853,7 +5503,6 @@ class Functions () extends ClientObject {
     */
   def var_S(values: (Double | Range | RangeReference | FunctionResult[_])*): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the depreciation of an asset for any period you specify, including partial periods, using the double-declining balance method or some other method you specify.
     *
     * [Api set: ExcelApi 1.2]
@@ -5891,7 +5540,6 @@ class Functions () extends ClientObject {
     noSwitch: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Looks for a value in the leftmost column of a table, and then returns a value in the same row from a column you specify. By default, the table must be sorted in an ascending order.
     *
     * [Api set: ExcelApi 1.2]
@@ -5913,7 +5561,6 @@ class Functions () extends ClientObject {
     rangeLookup: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double | String | Boolean] = js.native
   /**
-    *
     * Returns the week number in the year.
     *
     * [Api set: ExcelApi 1.2]
@@ -5927,7 +5574,6 @@ class Functions () extends ClientObject {
     returnType: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a number from 1 to 7 identifying the day of the week of a date.
     *
     * [Api set: ExcelApi 1.2]
@@ -5956,7 +5602,6 @@ class Functions () extends ClientObject {
   def weekday(serialNumber: Range, returnType: Range): FunctionResult[Double] = js.native
   def weekday(serialNumber: Range, returnType: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the Weibull distribution.
     *
     * [Api set: ExcelApi 1.2]
@@ -5973,7 +5618,6 @@ class Functions () extends ClientObject {
     cumulative: Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the serial number of the date before or after a specified number of workdays.
     *
     * [Api set: ExcelApi 1.2]
@@ -5992,7 +5636,6 @@ class Functions () extends ClientObject {
     holidays: Double | String | Range | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the serial number of the date before or after a specified number of workdays with custom weekend parameters.
     *
     * [Api set: ExcelApi 1.2]
@@ -6018,7 +5661,6 @@ class Functions () extends ClientObject {
     holidays: Double | String | Range | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the internal rate of return for a schedule of cash flows.
     *
     * [Api set: ExcelApi 1.2]
@@ -6037,7 +5679,6 @@ class Functions () extends ClientObject {
     guess: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the net present value for a schedule of cash flows.
     *
     * [Api set: ExcelApi 1.2]
@@ -6052,7 +5693,6 @@ class Functions () extends ClientObject {
     dates: Double | String | Range | Boolean | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns a logical 'Exclusive Or' of all arguments.
     *
     * [Api set: ExcelApi 1.2]
@@ -6061,7 +5701,6 @@ class Functions () extends ClientObject {
     */
   def xor(values: (Boolean | Range | RangeReference | FunctionResult[_])*): FunctionResult[Boolean] = js.native
   /**
-    *
     * Returns the year of a date, an integer in the range 1900 - 9999.
     *
     * [Api set: ExcelApi 1.2]
@@ -6073,7 +5712,6 @@ class Functions () extends ClientObject {
   def year(serialNumber: Range): FunctionResult[Double] = js.native
   def year(serialNumber: RangeReference): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the year fraction representing the number of whole days between start_date and end_date.
     *
     * [Api set: ExcelApi 1.2]
@@ -6092,7 +5730,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the yield on a security that pays periodic interest.
     *
     * [Api set: ExcelApi 1.2]
@@ -6123,7 +5760,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the annual yield for a discounted security. For example, a treasury bill.
     *
     * [Api set: ExcelApi 1.2]
@@ -6148,7 +5784,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the annual yield of a security that pays interest at maturity.
     *
     * [Api set: ExcelApi 1.2]
@@ -6176,7 +5811,6 @@ class Functions () extends ClientObject {
     basis: Double | String | Boolean | Range | RangeReference | FunctionResult[_]
   ): FunctionResult[Double] = js.native
   /**
-    *
     * Returns the one-tailed P-value of a z-test.
     *
     * [Api set: ExcelApi 1.2]

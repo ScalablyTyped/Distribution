@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  var cdn: js.UndefOr[String] = js.undefined
   var d: js.UndefOr[String] = js.undefined
   var default: js.UndefOr[String] = js.undefined
   var f: js.UndefOr[String] = js.undefined
@@ -20,6 +21,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    cdn: String = null,
     d: String = null,
     default: String = null,
     f: String = null,
@@ -32,6 +34,7 @@ object Options {
     size: String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (cdn != null) __obj.updateDynamic("cdn")(cdn.asInstanceOf[js.Any])
     if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
     if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])

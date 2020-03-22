@@ -26,6 +26,10 @@ trait UpdateRequest extends js.Object {
     */
   var emailVerified: js.UndefOr[Boolean] = js.undefined
   /**
+    * The user's updated multi-factor related properties.
+    */
+  var multiFactor: js.UndefOr[MultiFactorUpdateSettings] = js.undefined
+  /**
     * The user's unhashed password.
     */
   var password: js.UndefOr[String] = js.undefined
@@ -46,6 +50,7 @@ object UpdateRequest {
     displayName: String = null,
     email: String = null,
     emailVerified: js.UndefOr[Boolean] = js.undefined,
+    multiFactor: MultiFactorUpdateSettings = null,
     password: String = null,
     phoneNumber: String = null,
     photoURL: String = null
@@ -55,6 +60,7 @@ object UpdateRequest {
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
     if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.asInstanceOf[js.Any])
+    if (multiFactor != null) __obj.updateDynamic("multiFactor")(multiFactor.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     if (photoURL != null) __obj.updateDynamic("photoURL")(photoURL.asInstanceOf[js.Any])

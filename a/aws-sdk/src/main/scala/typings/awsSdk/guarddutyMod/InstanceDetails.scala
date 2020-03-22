@@ -43,6 +43,10 @@ trait InstanceDetails extends js.Object {
     */
   var NetworkInterfaces: js.UndefOr[typings.awsSdk.guarddutyMod.NetworkInterfaces] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the AWS Outpost. Only applicable to AWS Outposts instances.
+    */
+  var OutpostArn: js.UndefOr[String] = js.native
+  /**
     * The platform of the EC2 instance.
     */
   var Platform: js.UndefOr[String] = js.native
@@ -68,6 +72,7 @@ object InstanceDetails {
     InstanceType: String = null,
     LaunchTime: String = null,
     NetworkInterfaces: NetworkInterfaces = null,
+    OutpostArn: String = null,
     Platform: String = null,
     ProductCodes: ProductCodes = null,
     Tags: Tags = null
@@ -82,6 +87,7 @@ object InstanceDetails {
     if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (LaunchTime != null) __obj.updateDynamic("LaunchTime")(LaunchTime.asInstanceOf[js.Any])
     if (NetworkInterfaces != null) __obj.updateDynamic("NetworkInterfaces")(NetworkInterfaces.asInstanceOf[js.Any])
+    if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
     if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
     if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])

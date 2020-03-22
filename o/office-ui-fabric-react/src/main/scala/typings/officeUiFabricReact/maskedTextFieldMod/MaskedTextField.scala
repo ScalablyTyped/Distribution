@@ -41,10 +41,6 @@ class MaskedTextField protected ()
   var _onMouseDown: js.Any = js.native
   var _onMouseUp: js.Any = js.native
   var _onPaste: js.Any = js.native
-  /**
-    * Tell BaseComponent to bypass resolution of componentRef.
-    */
-  var _skipComponentRefResolution: Boolean = js.native
   var _textField: js.Any = js.native
   /** Gets the selection end of the text field. Returns -1 if there is no selection. */
   /* CompleteClass */

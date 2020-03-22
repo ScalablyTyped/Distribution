@@ -13,7 +13,7 @@ trait TerminateClientVpnConnectionsRequest extends js.Object {
   /**
     * The ID of the client connection to be terminated.
     */
-  var ConnectionId: js.UndefOr[String] = js.native
+  var ConnectionId: js.UndefOr[VpnConnectionId] = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
@@ -28,7 +28,7 @@ object TerminateClientVpnConnectionsRequest {
   @scala.inline
   def apply(
     ClientVpnEndpointId: ClientVpnEndpointId,
-    ConnectionId: String = null,
+    ConnectionId: VpnConnectionId = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     Username: String = null
   ): TerminateClientVpnConnectionsRequest = {

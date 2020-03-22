@@ -23,6 +23,10 @@ trait Cluster extends js.Object {
     */
   var createdAt: js.UndefOr[Timestamp] = js.native
   /**
+    * The encryption configuration for the cluster.
+    */
+  var encryptionConfig: js.UndefOr[EncryptionConfigList] = js.native
+  /**
     * The endpoint for your Kubernetes API server.
     */
   var endpoint: js.UndefOr[String] = js.native
@@ -71,6 +75,7 @@ object Cluster {
     certificateAuthority: Certificate = null,
     clientRequestToken: String = null,
     createdAt: Timestamp = null,
+    encryptionConfig: EncryptionConfigList = null,
     endpoint: String = null,
     identity: Identity = null,
     logging: Logging = null,
@@ -87,6 +92,7 @@ object Cluster {
     if (certificateAuthority != null) __obj.updateDynamic("certificateAuthority")(certificateAuthority.asInstanceOf[js.Any])
     if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (encryptionConfig != null) __obj.updateDynamic("encryptionConfig")(encryptionConfig.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
     if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])

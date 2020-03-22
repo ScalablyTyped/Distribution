@@ -8,11 +8,35 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SignaleBase[TTypes /* <: String */] extends js.Object {
   /**
+    * Adds new secrets/sensitive-information to the targeted Signale instance.
+    *
+    * @param secrets Array holding the secrets/sensitive-information to be filtered out.
+    */
+  def addSecrets(secrets: js.Array[Double | String]): Unit = js.native
+  /**
+    * Removes all secrets/sensitive-information from the targeted Signale instance.
+    */
+  def clearSecrets(): Unit = js.native
+  /**
     * Sets the configuration of an instance overriding any existing global or local configuration.
     *
     * @param configObj Can hold any of the documented options.
     */
   def config(configObj: SignaleConfig): Signale[TTypes] = js.native
+  /**
+    * Disables the logging functionality of all loggers belonging to a specific instance.
+    */
+  def disable(): Unit = js.native
+  /**
+    * Enables the logging functionality of all loggers belonging to a specific instance.
+    */
+  def enable(): Unit = js.native
+  /**
+    * Checks whether the logging functionality of a specific instance is enabled.
+    *
+    * @returns a boolean that describes whether or not the logger is enabled.
+    */
+  def isEnabled(): Boolean = js.native
   /**
     * Defines the scope name of the logger.
     *

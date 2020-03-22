@@ -29,13 +29,12 @@ class CommentReplyCollection () extends ClientObject {
   def add(content: String): CommentReply = js.native
   def add(content: String, contentType: ContentType): CommentReply = js.native
   /**
-    *
     * Creates a comment reply for comment.
     *
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.10]
     *
-    * @param content The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with mentions). 
-    * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`.
+    * @param content The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with mentions). [Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object]
+    * @param contentType Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for Enum ContentType.Mention]
     */
   def add(content: CommentRichContent): CommentReply = js.native
   def add(content: CommentRichContent, contentType: ContentType): CommentReply = js.native
@@ -48,14 +47,12 @@ class CommentReplyCollection () extends ClientObject {
   @JSName("add")
   def add_Plain(content: CommentRichContent, contentType: Plain): CommentReply = js.native
   /**
-    *
     * Gets the number of comment replies in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Returns a comment reply identified by its ID. Read-only.
     *
     * [Api set: ExcelApi 1.10]
@@ -64,7 +61,6 @@ class CommentReplyCollection () extends ClientObject {
     */
   def getItem(commentReplyId: String): CommentReply = js.native
   /**
-    *
     * Gets a comment reply based on its position in the collection.
     *
     * [Api set: ExcelApi 1.10]

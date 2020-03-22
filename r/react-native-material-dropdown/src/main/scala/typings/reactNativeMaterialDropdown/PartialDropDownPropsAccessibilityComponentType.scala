@@ -74,7 +74,9 @@ trait PartialDropDownPropsAccessibilityComponentType extends js.Object {
   var label: js.UndefOr[String] = js.undefined
   var labelExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, String]] = js.undefined
   var labelFontSize: js.UndefOr[Double] = js.undefined
+  var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onChangeText: js.UndefOr[
@@ -152,7 +154,9 @@ object PartialDropDownPropsAccessibilityComponentType {
     label: String = null,
     labelExtractor: (PartialDropDownPropsAccessibilityComponentType, /* index */ Double) => String = null,
     labelFontSize: Int | Double = null,
+    labelTextStyle: StyleProp[TextStyle] = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: () => Unit = null,
     onChangeText: (/* value */ String, /* index */ Double, /* data */ js.Array[PartialDropDownPropsAccessibilityComponentType]) => Unit = null,
@@ -225,7 +229,9 @@ object PartialDropDownPropsAccessibilityComponentType {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelExtractor != null) __obj.updateDynamic("labelExtractor")(js.Any.fromFunction2(labelExtractor))
     if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
+    if (labelTextStyle != null) __obj.updateDynamic("labelTextStyle")(labelTextStyle.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction3(onChangeText))

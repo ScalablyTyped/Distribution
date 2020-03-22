@@ -20,7 +20,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -76,7 +76,7 @@ trait WeakValidationMapTreeHead extends js.Object {
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -146,6 +146,7 @@ trait WeakValidationMapTreeHead extends js.Object {
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
   ] = js.undefined
   var is: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var isExpanded: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var itemID: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var itemProp: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var itemRef: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -183,6 +184,7 @@ trait WeakValidationMapTreeHead extends js.Object {
   var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
   var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
+  var onExpandAll: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]] = js.undefined
   var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
@@ -259,7 +261,7 @@ object WeakValidationMapTreeHead {
     accessKey: Validator[js.UndefOr[Null | String]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
@@ -325,6 +327,7 @@ object WeakValidationMapTreeHead {
     inlist: Validator[js.UndefOr[_ | Null]] = null,
     inputMode: Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]] = null,
     is: Validator[js.UndefOr[Null | String]] = null,
+    isExpanded: Validator[js.UndefOr[Boolean | Null]] = null,
     itemID: Validator[js.UndefOr[Null | String]] = null,
     itemProp: Validator[js.UndefOr[Null | String]] = null,
     itemRef: Validator[js.UndefOr[Null | String]] = null,
@@ -362,6 +365,7 @@ object WeakValidationMapTreeHead {
     onEncrypted: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
     onEnded: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
     onError: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
+    onExpandAll: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]] = null,
     onFocus: Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]] = null,
     onInput: Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]] = null,
     onInvalid: Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]] = null,
@@ -501,6 +505,7 @@ object WeakValidationMapTreeHead {
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (isExpanded != null) __obj.updateDynamic("isExpanded")(isExpanded.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
     if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
@@ -538,6 +543,7 @@ object WeakValidationMapTreeHead {
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(onEncrypted.asInstanceOf[js.Any])
     if (onEnded != null) __obj.updateDynamic("onEnded")(onEnded.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
+    if (onExpandAll != null) __obj.updateDynamic("onExpandAll")(onExpandAll.asInstanceOf[js.Any])
     if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
     if (onInput != null) __obj.updateDynamic("onInput")(onInput.asInstanceOf[js.Any])
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(onInvalid.asInstanceOf[js.Any])

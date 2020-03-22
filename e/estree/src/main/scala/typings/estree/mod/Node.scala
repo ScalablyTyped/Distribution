@@ -388,7 +388,7 @@ object Node {
   }
   @scala.inline
   def ObjectExpression(
-    properties: js.Array[Property],
+    properties: js.Array[Property | SpreadElement],
     `type`: typings.estree.estreeStrings.ObjectExpression,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
@@ -632,7 +632,7 @@ object Node {
   }
   @scala.inline
   def ObjectPattern(
-    properties: js.Array[AssignmentProperty],
+    properties: js.Array[AssignmentProperty | RestElement],
     `type`: typings.estree.estreeStrings.ObjectPattern,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
@@ -950,6 +950,23 @@ object Node {
     __obj.asInstanceOf[Node]
   }
   @scala.inline
+  def ImportExpression(
+    source: Expression,
+    `type`: typings.estree.estreeStrings.ImportExpression,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[Double, Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): Node = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Node]
+  }
+  @scala.inline
   def ImportSpecifier(
     imported: Identifier,
     local: Identifier,
@@ -1108,6 +1125,7 @@ object Node {
   }
   @scala.inline
   def ForOfStatement(
+    await: Boolean,
     body: Statement,
     left: VariableDeclaration | Pattern,
     right: Expression,
@@ -1117,7 +1135,7 @@ object Node {
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Node = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])

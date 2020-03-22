@@ -5,9 +5,8 @@ import typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.modelDotjs
 import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.typesMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
 import typings.tensorflowTfjsCore.modelTypesMod.InferenceModel
-import typings.tensorflowTfjsCore.modelTypesMod.ModelPredictConfig
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
@@ -58,7 +57,7 @@ object graphModelMod extends js.Object {
       */
     /** @doc {heading: 'Models', subheading: 'Classes'} */
     def dispose(): Unit = js.native
-    def execute(inputs: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+    def execute(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
     /**
       * Executes inference for the model for given input tensors.
       * @param inputs tensor, tensor array or tensor map of the inputs for the
@@ -74,13 +73,11 @@ object graphModelMod extends js.Object {
       * if provided, otherwise the order of outputNodes attribute of the model.
       */
     /** @doc {heading: 'Models', subheading: 'Classes'} */
-    def execute(inputs: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-    def execute(inputs: Tensor_[Rank], outputs: String): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-    def execute(inputs: Tensor_[Rank], outputs: js.Array[String]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-    def execute(inputs: NamedTensorMap): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-    def executeAsync(inputs: js.Array[Tensor_[Rank]]): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
-    def executeAsync(inputs: js.Array[Tensor_[Rank]], outputs: String): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
-    def executeAsync(inputs: js.Array[Tensor_[Rank]], outputs: js.Array[String]): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
+    def execute(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+    def execute(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+    def executeAsync(inputs: js.Array[Tensor[Rank]]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: js.Array[Tensor[Rank]], outputs: String): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: js.Array[Tensor[Rank]], outputs: js.Array[String]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
     /**
       * Executes inference for the model for given input tensors in async
       * fashion, use this method when your model contains control flow ops.
@@ -96,18 +93,18 @@ object graphModelMod extends js.Object {
       * return a tensor map.
       */
     /** @doc {heading: 'Models', subheading: 'Classes'} */
-    def executeAsync(inputs: Tensor_[Rank]): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
-    def executeAsync(inputs: Tensor_[Rank], outputs: String): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
-    def executeAsync(inputs: Tensor_[Rank], outputs: js.Array[String]): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
-    def executeAsync(inputs: NamedTensorMap): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
-    def executeAsync(inputs: NamedTensorMap, outputs: String): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
-    def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[Tensor_[Rank] | js.Array[Tensor_[Rank]]] = js.native
+    def executeAsync(inputs: Tensor[Rank]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: Tensor[Rank], outputs: String): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: Tensor[Rank], outputs: js.Array[String]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: NamedTensorMap): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: NamedTensorMap, outputs: String): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
+    def executeAsync(inputs: NamedTensorMap, outputs: js.Array[String]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]] = js.native
     /**
       * Loads the model and weight files, construct the in memory weight map and
       * compile the inference graph.
       */
     def load(): js.Promise[Boolean] = js.native
-    def predict(inputs: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
+    def predict(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     /**
       * Execute the inference for the input tensors.
       *
@@ -145,9 +142,8 @@ object graphModelMod extends js.Object {
       * will be returned for model with multiple outputs.
       */
     /** @doc {heading: 'Models', subheading: 'Classes'} */
-    def predict(inputs: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
-    def predict(inputs: Tensor_[Rank], config: ModelPredictConfig): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
-    def predict(inputs: NamedTensorMap): Tensor_[Rank] | js.Array[Tensor_[Rank]] | NamedTensorMap = js.native
+    def predict(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
+    def predict(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     def save(handlerOrURL: String): js.Promise[SaveResult] = js.native
     def save(handlerOrURL: String, config: SaveConfig): js.Promise[SaveResult] = js.native
     /**

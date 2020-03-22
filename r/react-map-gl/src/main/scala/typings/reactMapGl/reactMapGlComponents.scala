@@ -36,6 +36,8 @@ object reactMapGlComponents extends reactMapGlProps {
   @scala.inline
   def SVGOverlay: ComponentType[SVGOverlayProps] = js.constructorOf[typings.reactMapGl.mod.SVGOverlay].asInstanceOf[typings.react.mod.ComponentType[SVGOverlayProps]]
   @scala.inline
+  def ScaleControl: ComponentType[ScaleControlProps] = js.constructorOf[typings.reactMapGl.mod.ScaleControl].asInstanceOf[typings.react.mod.ComponentType[ScaleControlProps]]
+  @scala.inline
   def Source: ComponentType[SourceProps] = js.constructorOf[typings.reactMapGl.mod.Source].asInstanceOf[typings.react.mod.ComponentType[SourceProps]]
   @scala.inline
   def StaticMap: ComponentType[StaticMapProps] = js.constructorOf[typings.reactMapGl.mod.StaticMap].asInstanceOf[typings.react.mod.ComponentType[StaticMapProps]]

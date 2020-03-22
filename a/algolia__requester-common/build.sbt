@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "algolia__requester-common"
-version := "4.0.3-aa83c9"
+version := "4.1.0-6f63dd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

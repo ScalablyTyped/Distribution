@@ -1,6 +1,6 @@
 package typings.materialUiCore.cardHeaderCardHeaderMod
 
-import typings.materialUiCore.PartialClassNameMapCardHeaderClassKey
+import typings.materialUiCore.PartialClassNameMapCardHe
 import typings.materialUiCore.PartialTypographyProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -149,7 +149,7 @@ trait CardHeaderProps extends js.Object {
   var avatar: js.UndefOr[ReactNode] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCardHeaderClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCardHe] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[CardHeaderProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -336,7 +336,7 @@ object CardHeaderProps {
     avatar: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCardHeaderClassKey = null,
+    classes: PartialClassNameMapCardHe = null,
     color: String = null,
     component: ReactType[CardHeaderProps] = null,
     contentEditable: Booleanish | inherit = null,

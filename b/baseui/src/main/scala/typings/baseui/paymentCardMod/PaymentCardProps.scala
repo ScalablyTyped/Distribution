@@ -37,6 +37,7 @@ trait PaymentCardProps extends js.Object {
   var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
+  var inputMode: js.UndefOr[String] = js.undefined
   var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
@@ -55,7 +56,7 @@ trait PaymentCardProps extends js.Object {
   var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 
 object PaymentCardProps {
@@ -73,6 +74,7 @@ object PaymentCardProps {
     endEnhancer: (js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode = null,
     error: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    inputMode: String = null,
     inputRef: Ref[HTMLInputElement] = null,
     max: Int | Double = null,
     min: Int | Double = null,
@@ -91,7 +93,7 @@ object PaymentCardProps {
     size: mini | default_ | compact | large_ = null,
     startEnhancer: (js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode = null,
     `type`: String = null,
-    value: String = null
+    value: String | Double = null
   ): PaymentCardProps = {
     val __obj = js.Dynamic.literal()
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
@@ -106,6 +108,7 @@ object PaymentCardProps {
     if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

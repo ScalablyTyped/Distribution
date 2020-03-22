@@ -1,6 +1,6 @@
 package typings.materialUiCore.switchBaseMod
 
-import typings.materialUiCore.PartialClassNameMapSwitchBaseClassKey
+import typings.materialUiCore.PartialClassNameMapSwitchChecked
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -161,7 +161,7 @@ trait SwitchBaseProps extends js.Object {
   var checkedIcon: ReactNode = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapSwitchBaseClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapSwitchChecked] = js.native
   var color: js.UndefOr[Color] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -379,7 +379,7 @@ object SwitchBaseProps {
     checkedIcon: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapSwitchBaseClassKey = null,
+    classes: PartialClassNameMapSwitchChecked = null,
     color: Color = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

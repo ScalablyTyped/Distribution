@@ -32,9 +32,6 @@ package object styledComponentsMod {
   // If declared props have indexed properties, ignore default props entirely as keyof gets widened
   // Wrap in an outer-level conditional type to allow distribution over props that are unions
   type Defaultize[P, D] = ((typings.std.Pick[P, typings.std.Exclude[java.lang.String, java.lang.String]]) with (typings.std.Partial[typings.std.Pick[P, typings.std.Extract[java.lang.String, java.lang.String]]]) with (typings.std.Partial[typings.std.Pick[D, typings.std.Exclude[java.lang.String, java.lang.String]]])) | P
-  type DeprecatedAttrs[P, A /* <: typings.std.Partial[P] */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof A ]: (props : styled-components.styled-components.ThemedStyledProps<P, T>): A[K] | A[K]}
-    */ typings.styledComponents.styledComponentsStrings.DeprecatedAttrs with js.Any
   type FalseyValue = js.UndefOr[scala.Null | typings.styledComponents.styledComponentsBooleans.`false`]
   type GlobalStyleComponent[P, T] = typings.react.mod.ComponentClass[
     typings.styledComponents.styledComponentsMod.ThemedGlobalStyledClassProps[P, T], 
@@ -90,6 +87,16 @@ package object styledComponentsMod {
   type StyledProps[P] = typings.styledComponents.styledComponentsMod.ThemedStyledProps[
     P, 
     typings.styledComponents.styledComponentsMod.AnyIfEmpty[typings.styledComponents.styledComponentsMod.DefaultTheme]
+  ]
+  type StylisPlugin = js.Function7[
+    /* context */ scala.Double, 
+    /* selector */ js.Array[java.lang.String], 
+    /* parent */ js.Array[java.lang.String], 
+    /* content */ java.lang.String, 
+    /* line */ scala.Double, 
+    /* column */ scala.Double, 
+    /* length */ scala.Double, 
+    java.lang.String | scala.Unit
   ]
   type ThemeProviderComponent[T /* <: js.Object */, U /* <: js.Object */] = typings.styledComponents.styledComponentsMod.BaseThemeProviderComponent[
     typings.styledComponents.styledComponentsMod.AnyIfEmpty[T], 

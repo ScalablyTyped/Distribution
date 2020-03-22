@@ -26,6 +26,8 @@ trait FlyoutProps extends js.Object {
   var color: js.UndefOr[blue | orange | red | white | darkGray] = js.undefined
   var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
   var positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined
+  var shouldFocus: js.UndefOr[Boolean] = js.undefined
+  var showCaret: js.UndefOr[Boolean] = js.undefined
   var size: js.UndefOr[xs | sm | md | lg | xl | Double] = js.undefined
   def onDismiss(): Unit
 }
@@ -39,6 +41,8 @@ object FlyoutProps {
     color: blue | orange | red | white | darkGray = null,
     idealDirection: up | right | down | left = null,
     positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined,
+    shouldFocus: js.UndefOr[Boolean] = js.undefined,
+    showCaret: js.UndefOr[Boolean] = js.undefined,
     size: xs | sm | md | lg | xl | Double = null
   ): FlyoutProps = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
@@ -46,6 +50,8 @@ object FlyoutProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])
     if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldFocus)) __obj.updateDynamic("shouldFocus")(shouldFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCaret)) __obj.updateDynamic("showCaret")(showCaret.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlyoutProps]
   }

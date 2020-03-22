@@ -1,12 +1,13 @@
 package typings.evernote
 
+import typings.evernote.mod.Types.Guid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonContactName extends js.Object {
   var contactName: js.UndefOr[String] = js.undefined
-  var guid: js.UndefOr[String] = js.undefined
+  var guid: js.UndefOr[Guid] = js.undefined
   var hasSharedNotebook: js.UndefOr[Boolean] = js.undefined
   var joinedUserCount: js.UndefOr[Double] = js.undefined
   var notebookDisplayName: js.UndefOr[String] = js.undefined
@@ -16,7 +17,7 @@ object AnonContactName {
   @scala.inline
   def apply(
     contactName: String = null,
-    guid: String = null,
+    guid: Guid = null,
     hasSharedNotebook: js.UndefOr[Boolean] = js.undefined,
     joinedUserCount: Int | Double = null,
     notebookDisplayName: String = null

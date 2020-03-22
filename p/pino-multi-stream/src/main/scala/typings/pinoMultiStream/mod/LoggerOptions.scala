@@ -25,6 +25,7 @@ object LoggerOptions {
     customLevels: StringDictionary[Double] = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     level: LevelWithSilent | String = null,
+    levelKey: String = null,
     levelVal: Int | Double = null,
     messageKey: String = null,
     mixin: () => js.Object = null,
@@ -47,6 +48,7 @@ object LoggerOptions {
     if (customLevels != null) __obj.updateDynamic("customLevels")(customLevels.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (levelKey != null) __obj.updateDynamic("levelKey")(levelKey.asInstanceOf[js.Any])
     if (levelVal != null) __obj.updateDynamic("levelVal")(levelVal.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
     if (mixin != null) __obj.updateDynamic("mixin")(js.Any.fromFunction0(mixin))

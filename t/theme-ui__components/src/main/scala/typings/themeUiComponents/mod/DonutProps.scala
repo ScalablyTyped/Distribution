@@ -1,6 +1,6 @@
 package typings.themeUiComponents.mod
 
-import typings.csstype.mod.OpacityProperty
+import typings.csstype.mod.GlobalsNumber
 import typings.emotionCore.mod.InterpolationWithTheme
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
@@ -433,7 +433,7 @@ trait DonutProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
     */
-  var opacity: js.UndefOr[ResponsiveValue[OpacityProperty, RequiredTheme]] = js.undefined
+  var opacity: js.UndefOr[ResponsiveValue[GlobalsNumber, RequiredTheme]] = js.undefined
   var operator: js.UndefOr[Double | String] = js.undefined
   var order: js.UndefOr[Double | String] = js.undefined
   var orient: js.UndefOr[Double | String] = js.undefined
@@ -460,6 +460,7 @@ trait DonutProps extends js.Object {
   var paddingY: js.UndefOr[ResponsiveValue[ThemeValue[space, RequiredTheme, _], RequiredTheme]] = js.undefined
   var paintOrder: js.UndefOr[Double | String] = js.undefined
   var panose1: js.UndefOr[Double | String] = js.undefined
+  var path: js.UndefOr[String] = js.undefined
   var pathLength: js.UndefOr[Double | String] = js.undefined
   var patternContentUnits: js.UndefOr[String] = js.undefined
   var patternTransform: js.UndefOr[Double | String] = js.undefined

@@ -38,7 +38,7 @@ trait DeepReadonlyThemeType extends js.Object {
   val tab: js.UndefOr[AnonMargin | DeepReadonly[js.UndefOr[AnonMargin]]] = js.undefined
   val table: js.UndefOr[AnonRow | DeepReadonly[js.UndefOr[AnonRow]]] = js.undefined
   val tabs: js.UndefOr[AnonPanel | DeepReadonly[js.UndefOr[AnonPanel]]] = js.undefined
-  val text: js.UndefOr[AnonXlarge | DeepReadonly[js.UndefOr[AnonXlarge]]] = js.undefined
+  val text: js.UndefOr[AnonSmall | DeepReadonly[js.UndefOr[AnonSmall]]] = js.undefined
   val textArea: js.UndefOr[AnonDisabledExtend | DeepReadonly[js.UndefOr[AnonDisabledExtend]]] = js.undefined
   val textInput: js.UndefOr[AnonDisabledExtend | DeepReadonly[js.UndefOr[AnonDisabledExtend]]] = js.undefined
   val video: js.UndefOr[AnonCaptions | DeepReadonly[js.UndefOr[AnonCaptions]]] = js.undefined
@@ -79,7 +79,7 @@ object DeepReadonlyThemeType {
     tab: AnonMargin | DeepReadonly[js.UndefOr[AnonMargin]] = null,
     table: AnonRow | DeepReadonly[js.UndefOr[AnonRow]] = null,
     tabs: AnonPanel | DeepReadonly[js.UndefOr[AnonPanel]] = null,
-    text: AnonXlarge | DeepReadonly[js.UndefOr[AnonXlarge]] = null,
+    text: AnonSmall | DeepReadonly[js.UndefOr[AnonSmall]] = null,
     textArea: AnonDisabledExtend | DeepReadonly[js.UndefOr[AnonDisabledExtend]] = null,
     textInput: AnonDisabledExtend | DeepReadonly[js.UndefOr[AnonDisabledExtend]] = null,
     video: AnonCaptions | DeepReadonly[js.UndefOr[AnonCaptions]] = null,

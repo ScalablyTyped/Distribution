@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi-spine
 
-Typings are for version 2.1.7
+Typings are for version 2.1.8
 
 ## Library description:
 Spine implementation for pixi v^5

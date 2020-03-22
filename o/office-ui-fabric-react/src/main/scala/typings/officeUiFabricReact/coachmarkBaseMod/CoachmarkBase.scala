@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.coachmarkBaseMod
 import typings.officeUiFabricReact.PartialICoachmarkProps
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmark
 import typings.officeUiFabricReact.coachmarkTypesMod.ICoachmarkProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod.KeyboardEvent
 import typings.std.Event_
 import typings.std.HTMLElement
@@ -15,12 +15,13 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.base", "CoachmarkBase")
 @js.native
 class CoachmarkBase protected ()
-  extends BaseComponent[ICoachmarkProps, ICoachmarkState]
+  extends Component[ICoachmarkProps, ICoachmarkState, js.Any]
      with ICoachmark {
   def this(props: ICoachmarkProps) = this()
   var _addListeners: js.Any = js.native
   var _addProximityHandler: js.Any = js.native
   var _ariaAlertContainer: js.Any = js.native
+  var _async: js.Any = js.native
   val _beakDirection: js.Any = js.native
   var _childrenContainer: js.Any = js.native
   var _dismissOnLostFocus: js.Any = js.native
@@ -30,6 +31,7 @@ class CoachmarkBase protected ()
     */
   var _entityHost: js.Any = js.native
   var _entityInnerHostElement: js.Any = js.native
+  var _events: js.Any = js.native
   var _getBounds: js.Any = js.native
   var _isInsideElement: js.Any = js.native
   var _onFocusHandler: js.Any = js.native
@@ -51,6 +53,8 @@ class CoachmarkBase protected ()
   def componentDidMount_MCoachmarkBase(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MCoachmarkBase(prevProps: ICoachmarkProps, prevState: ICoachmarkState): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MCoachmarkBase(): Unit = js.native
   @JSName("dismiss")
   def dismiss_MCoachmarkBase(): Unit = js.native
   @JSName("dismiss")

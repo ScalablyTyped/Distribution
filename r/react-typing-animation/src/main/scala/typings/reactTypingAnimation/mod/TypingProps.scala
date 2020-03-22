@@ -12,10 +12,10 @@ trait TypingProps extends js.Object {
   var cursorClassName: js.UndefOr[String] = js.undefined
   var hideCursor: js.UndefOr[Boolean] = js.undefined
   var loop: js.UndefOr[Boolean] = js.undefined
-  var onAfterType: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var onBeforeType: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var onFinishedType: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var onStartedTyping: js.UndefOr[js.Function0[js.Object]] = js.undefined
+  var onAfterType: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onBeforeType: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onFinishedTyping: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onStartedTyping: js.UndefOr[js.Function0[Unit]] = js.undefined
   var speed: js.UndefOr[Double] = js.undefined
   var startDelay: js.UndefOr[Double] = js.undefined
 }
@@ -29,10 +29,10 @@ object TypingProps {
     cursorClassName: String = null,
     hideCursor: js.UndefOr[Boolean] = js.undefined,
     loop: js.UndefOr[Boolean] = js.undefined,
-    onAfterType: () => js.Object = null,
-    onBeforeType: () => js.Object = null,
-    onFinishedType: () => js.Object = null,
-    onStartedTyping: () => js.Object = null,
+    onAfterType: () => Unit = null,
+    onBeforeType: () => Unit = null,
+    onFinishedTyping: () => Unit = null,
+    onStartedTyping: () => Unit = null,
     speed: Int | Double = null,
     startDelay: Int | Double = null
   ): TypingProps = {
@@ -45,7 +45,7 @@ object TypingProps {
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
     if (onAfterType != null) __obj.updateDynamic("onAfterType")(js.Any.fromFunction0(onAfterType))
     if (onBeforeType != null) __obj.updateDynamic("onBeforeType")(js.Any.fromFunction0(onBeforeType))
-    if (onFinishedType != null) __obj.updateDynamic("onFinishedType")(js.Any.fromFunction0(onFinishedType))
+    if (onFinishedTyping != null) __obj.updateDynamic("onFinishedTyping")(js.Any.fromFunction0(onFinishedTyping))
     if (onStartedTyping != null) __obj.updateDynamic("onStartedTyping")(js.Any.fromFunction0(onStartedTyping))
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (startDelay != null) __obj.updateDynamic("startDelay")(startDelay.asInstanceOf[js.Any])

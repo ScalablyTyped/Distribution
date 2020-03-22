@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("express-domain-middleware", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(req: Request_[ParamsDictionary], res: Response_, next: NextFunction): js.Any = js.native
+  def apply(req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction): js.Any = js.native
 }
 

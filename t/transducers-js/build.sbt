@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "transducers-js"
-version := "0.4-dt-20190225Z-2f2407"
+version := "0.4-dt-20200225Z-2f2407"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

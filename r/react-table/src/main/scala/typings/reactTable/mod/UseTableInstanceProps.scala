@@ -1,25 +1,29 @@
 package typings.reactTable.mod
 
 import typings.reactTable.PartialTableToggleHideAll
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait UseTableInstanceProps[D /* <: js.Object */] extends js.Object {
+  var allColumns: js.Array[ColumnInstance[D]] = js.native
+  var allColumnsHidden: Boolean = js.native
   var columns: js.Array[ColumnInstance[D]] = js.native
   var dispatch: TableDispatch[_] = js.native
-  var flatColumns: js.Array[ColumnInstance[D]] = js.native
   var flatHeaders: js.Array[ColumnInstance[D]] = js.native
   var flatRows: js.Array[Row[D]] = js.native
   var footerGroups: js.Array[HeaderGroup[D]] = js.native
   var headerGroups: js.Array[HeaderGroup[D]] = js.native
   var headers: js.Array[ColumnInstance[D]] = js.native
-  var hooks: Hooks[D] = js.native
   var plugins: js.Array[PluginHook[D]] = js.native
   var rows: js.Array[Row[D]] = js.native
+  var rowsById: Record[String, Row[D]] = js.native
   var state: TableState[D] = js.native
   var totalColumnsWidth: Double = js.native
+  var visibleColumns: js.Array[ColumnInstance[D]] = js.native
+  def getHooks(): Hooks[D] = js.native
   def getTableBodyProps(): TableBodyProps = js.native
   def getTableBodyProps(propGetter: TableBodyPropGetter[D]): TableBodyProps = js.native
   def getTableProps(): TableProps = js.native

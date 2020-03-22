@@ -26,7 +26,6 @@ package object GoogleAppsScript {
   type Docs = typings.googleAppsScript.GoogleAppsScript.Docs_
   type Drive = typings.googleAppsScript.GoogleAppsScript.Drive_
   type DriveActivity = typings.googleAppsScript.GoogleAppsScript.DriveActivity_
-  type FusionTables = typings.googleAppsScript.GoogleAppsScript.FusionTables_
   type Gmail = typings.googleAppsScript.GoogleAppsScript.Gmail_
   type Integer = scala.Double
   type JdbcSQLXML = js.Any
@@ -36,7 +35,6 @@ package object GoogleAppsScript {
   type Slides = typings.googleAppsScript.GoogleAppsScript.Slides_
   type TagManager = typings.googleAppsScript.GoogleAppsScript.TagManager_
   type Tasks = typings.googleAppsScript.GoogleAppsScript.Tasks_
-  type UrlShortener = typings.googleAppsScript.GoogleAppsScript.UrlShortener_
   type YouTube = typings.googleAppsScript.GoogleAppsScript.YouTube_
   type YouTubeAnalytics = typings.googleAppsScript.GoogleAppsScript.YouTubeAnalytics_
   type YoutubePartner = typings.googleAppsScript.GoogleAppsScript.YoutubePartner_

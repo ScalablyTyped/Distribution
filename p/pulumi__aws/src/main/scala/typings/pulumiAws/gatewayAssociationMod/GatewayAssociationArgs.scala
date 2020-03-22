@@ -33,6 +33,8 @@ trait GatewayAssociationArgs extends js.Object {
   /**
     * *Deprecated:* Use `associatedGatewayId` instead. The ID of the VGW with which to associate the gateway.
     * Used for single account Direct Connect gateway associations.
+    *
+    * @deprecated use 'associated_gateway_id' argument instead
     */
   val vpnGatewayId: js.UndefOr[Input[String]] = js.native
 }

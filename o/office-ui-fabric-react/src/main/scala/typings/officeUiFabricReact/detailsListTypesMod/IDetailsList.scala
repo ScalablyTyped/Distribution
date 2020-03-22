@@ -15,7 +15,8 @@ trait IDetailsList extends IList {
     * @param forceIntoFirstElement - If true, focus will be set to the first focusable child element of the item rather
     *  than the item itself.
     * @param measureItem - Optional callback to measure the height of an individual item
-    * @param scrollToMode - Optional setting to determine where in the window the item should be scrolled to when focused.
+    * @param scrollToMode - Optional setting to determine where in the window the item should be scrolled to
+    * when focused.
     */
   def focusIndex(index: Double): Unit = js.native
   def focusIndex(index: Double, forceIntoFirstElement: Boolean): Unit = js.native

@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BodyRowProps[RecordType] extends js.Object {
-  var cellComponent: CustomizeComponent[HTMLAttributes[HTMLElement]]
+  var cellComponent: CustomizeComponent
   var childrenColumnName: String
   var className: js.UndefOr[String] = js.undefined
   var expandedKeys: Set[Key]
@@ -24,7 +24,7 @@ trait BodyRowProps[RecordType] extends js.Object {
   var onRow: GetComponentProps[RecordType]
   var record: RecordType
   var recordKey: Key
-  var rowComponent: CustomizeComponent[HTMLAttributes[HTMLElement]]
+  var rowComponent: CustomizeComponent
   var rowKey: typings.react.mod.Key
   var stickyOffsets: StickyOffsets
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -34,7 +34,7 @@ trait BodyRowProps[RecordType] extends js.Object {
 object BodyRowProps {
   @scala.inline
   def apply[RecordType](
-    cellComponent: CustomizeComponent[HTMLAttributes[HTMLElement]],
+    cellComponent: CustomizeComponent,
     childrenColumnName: String,
     expandedKeys: Set[Key],
     getRowKey: (RecordType, /* index */ js.UndefOr[Double]) => Key,
@@ -42,7 +42,7 @@ object BodyRowProps {
     onRow: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement],
     record: RecordType,
     recordKey: Key,
-    rowComponent: CustomizeComponent[HTMLAttributes[HTMLElement]],
+    rowComponent: CustomizeComponent,
     rowExpandable: RecordType => Boolean,
     rowKey: typings.react.mod.Key,
     stickyOffsets: StickyOffsets,

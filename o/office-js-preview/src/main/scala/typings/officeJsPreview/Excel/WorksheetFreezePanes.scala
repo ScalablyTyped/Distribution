@@ -17,7 +17,6 @@ class WorksheetFreezePanes () extends ClientObject {
   var context_WorksheetFreezePanes: RequestContext = js.native
   def freezeAt(frozenRange: String): Unit = js.native
   /**
-    *
     * Sets the frozen cells in the active worksheet view.
     The range provided corresponds to cells that will be frozen in the top- and left-most pane.
     *
@@ -27,7 +26,6 @@ class WorksheetFreezePanes () extends ClientObject {
     */
   def freezeAt(frozenRange: Range): Unit = js.native
   /**
-    *
     * Freeze the first column(s) of the worksheet in place.
     *
     * [Api set: ExcelApi 1.7]
@@ -37,7 +35,6 @@ class WorksheetFreezePanes () extends ClientObject {
   def freezeColumns(): Unit = js.native
   def freezeColumns(count: Double): Unit = js.native
   /**
-    *
     * Freeze the top row(s) of the worksheet in place.
     *
     * [Api set: ExcelApi 1.7]
@@ -47,7 +44,6 @@ class WorksheetFreezePanes () extends ClientObject {
   def freezeRows(): Unit = js.native
   def freezeRows(count: Double): Unit = js.native
   /**
-    *
     * Gets a range that describes the frozen cells in the active worksheet view.
     The frozen range is corresponds to cells that are frozen in the top- and left-most pane.
     *
@@ -55,7 +51,6 @@ class WorksheetFreezePanes () extends ClientObject {
     */
   def getLocation(): Range = js.native
   /**
-    *
     * Gets a range that describes the frozen cells in the active worksheet view.
     The frozen range is corresponds to cells that are frozen in the top- and left-most pane.
     If there is no frozen pane, returns a null object.
@@ -69,7 +64,6 @@ class WorksheetFreezePanes () extends ClientObject {
     */
   def toJSON(): StringDictionary[String] = js.native
   /**
-    *
     * Removes all frozen panes in the worksheet.
     *
     * [Api set: ExcelApi 1.7]

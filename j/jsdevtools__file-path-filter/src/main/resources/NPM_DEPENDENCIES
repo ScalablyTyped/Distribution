@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jsdevtools/file-path-filter" : "3.0.0"
+      "@jsdevtools/file-path-filter" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@jsdevtools/file-path-filter" : "3.0.0"
+      "@jsdevtools/file-path-filter" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

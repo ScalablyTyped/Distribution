@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-editor"
-version := "0.0-unknown-dt-20190322Z-7aab68"
+version := "0.0-unknown-dt-20200225Z-7aab68"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

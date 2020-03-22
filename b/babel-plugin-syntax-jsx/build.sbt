@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel-plugin-syntax-jsx"
-version := "6.18-dt-20180214Z-e1f063"
+version := "6.18-dt-20200226Z-e1f063"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -153,5 +153,9 @@ trait ChannelWrapper extends EventEmitter {
     options: Publish,
     callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
   ): js.Promise[Unit] = js.native
+  /**
+  	 * Returns a Promise which resolves when this channel next connects.
+  	 */
+  def waitForConnect(): js.Promise[Unit] = js.native
 }
 

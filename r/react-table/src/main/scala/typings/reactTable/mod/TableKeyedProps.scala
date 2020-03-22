@@ -12,8 +12,9 @@ trait TableKeyedProps extends TableCommonProps {
 
 object TableKeyedProps {
   @scala.inline
-  def apply(key: Key, style: CSSProperties = null): TableKeyedProps = {
+  def apply(key: Key, className: String = null, style: CSSProperties = null): TableKeyedProps = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableKeyedProps]
   }

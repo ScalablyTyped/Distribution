@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object documentCardLogoBaseMod extends js.Object {
   @js.native
-  class DocumentCardLogoBase ()
-    extends BaseComponent[IDocumentCardLogoProps, js.Any] {
+  class DocumentCardLogoBase protected ()
+    extends Component[IDocumentCardLogoProps, js.Any, js.Any] {
+    def this(props: IDocumentCardLogoProps) = this()
     var _classNames: js.Any = js.native
   }
   

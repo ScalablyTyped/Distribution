@@ -94,7 +94,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/InputLabel.InputLabelProps> */
 @js.native
 trait PartialInputLabelProps extends js.Object {
-  var FormLabelClasses: js.UndefOr[PartialClassNameMapFormLabelClassKey] = js.native
+  var FormLabelClasses: js.UndefOr[PartialClassNameMapFormLa] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var `aria-activedescendant`: js.UndefOr[String] = js.native
@@ -150,7 +150,7 @@ trait PartialInputLabelProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapInputLabelClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapInputL] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[FormLabelBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -286,7 +286,7 @@ trait PartialInputLabelProps extends js.Object {
 object PartialInputLabelProps {
   @scala.inline
   def apply(
-    FormLabelClasses: PartialClassNameMapFormLabelClassKey = null,
+    FormLabelClasses: PartialClassNameMapFormLa = null,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -342,7 +342,7 @@ object PartialInputLabelProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapInputLabelClassKey = null,
+    classes: PartialClassNameMapInputL = null,
     color: String = null,
     component: ReactType[FormLabelBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

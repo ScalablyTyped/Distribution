@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@microsoft/load-themed-styles" : "1.10.37"
+      "@microsoft/load-themed-styles" : "1.10.39"
     }
   ],
   "test-dependencies" : [
     {
-      "@microsoft/load-themed-styles" : "1.10.37"
+      "@microsoft/load-themed-styles" : "1.10.39"
     }
   ],
   "compile-devDependencies" : [

@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.hoverCardBaseMod
 import typings.officeUiFabricReact.AnonCardDismissDelay
 import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCard
 import typings.officeUiFabricReact.hoverCardTypesMod.IHoverCardProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,9 +11,10 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/HoverCard/HoverCard.base", "HoverCardBase")
 @js.native
 class HoverCardBase protected ()
-  extends BaseComponent[IHoverCardProps, IHoverCardState]
+  extends Component[IHoverCardProps, IHoverCardState, js.Any]
      with IHoverCard {
   def this(props: IHoverCardProps) = this()
+  var _async: js.Any = js.native
   /**
     * Hide HoverCard
     * How we dismiss the card depends on where the callback is coming from.
@@ -27,6 +28,7 @@ class HoverCardBase protected ()
   var _classNames: js.Any = js.native
   var _currentMouseTarget: js.Any = js.native
   var _dismissTimerId: js.Any = js.native
+  var _events: js.Any = js.native
   var _executeCardOpen: js.Any = js.native
   var _getTargetElement: js.Any = js.native
   var _hoverCard: js.Any = js.native
@@ -40,6 +42,8 @@ class HoverCardBase protected ()
   def componentDidMount_MHoverCardBase(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MHoverCardBase(prevProps: IHoverCardProps, prevState: IHoverCardState): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MHoverCardBase(): Unit = js.native
 }
 
 /* static members */

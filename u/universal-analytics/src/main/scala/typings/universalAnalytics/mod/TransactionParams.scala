@@ -8,10 +8,54 @@ import scala.scalajs.js.annotation._
 trait TransactionParams
   extends /* key */ StringDictionary[js.Any] {
   var p: js.UndefOr[String] = js.undefined
+  /**
+    * Transaction Affiliation
+    *
+    * Specifies the affiliation or store name.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `Member`
+    */
   var ta: js.UndefOr[String] = js.undefined
+  /**
+    * Transaction ID
+    *
+    * **Required for transaction hit type.**
+    *
+    *
+    * A unique identifier for the transaction. This value should be the same for both the Transaction
+    * hit and Items hits associated to the particular transaction.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `OD564`
+    */
   var ti: js.UndefOr[String] = js.undefined
+  /**
+    * Transaction Revenue
+    *
+    * Specifies the total revenue associated with the transaction. This value should include any
+    * shipping or tax costs.
+    *
+    * Example value: `15.47`
+    */
   var tr: js.UndefOr[String | Double] = js.undefined
+  /**
+    * Transaction Shipping
+    *
+    * Specifies the total shipping cost of the transaction.
+    *
+    * Example value: `3.50`
+    */
   var ts: js.UndefOr[String | Double] = js.undefined
+  /**
+    * Transaction Tax
+    *
+    * Specifies the total tax of the transaction.
+    *
+    * Example value: `11.20`
+    */
   var tt: js.UndefOr[String | Double] = js.undefined
 }
 

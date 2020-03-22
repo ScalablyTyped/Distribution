@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pusher__chatkit-client"
-version := "1.13-dt-20200210Z-c778df"
+version := "1.13-dt-20200225Z-c778df"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

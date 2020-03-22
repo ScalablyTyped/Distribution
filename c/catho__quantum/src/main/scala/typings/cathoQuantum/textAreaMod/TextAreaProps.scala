@@ -2,17 +2,18 @@ package typings.cathoQuantum.textAreaMod
 
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TextAreaProps[T] extends js.Object {
+trait TextAreaProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var error: js.UndefOr[String] = js.undefined
   var helperText: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String | Double] = js.undefined
   var label: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
   var value: js.UndefOr[String] = js.undefined
@@ -20,17 +21,17 @@ trait TextAreaProps[T] extends js.Object {
 
 object TextAreaProps {
   @scala.inline
-  def apply[T](
+  def apply(
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: String = null,
     helperText: String = null,
     id: String | Double = null,
     label: String = null,
-    onChange: ChangeEvent[T] => Unit = null,
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
     placeholder: String = null,
     required: js.UndefOr[Boolean] = js.undefined,
     value: String = null
-  ): TextAreaProps[T] = {
+  ): TextAreaProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
@@ -41,7 +42,7 @@ object TextAreaProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TextAreaProps[T]]
+    __obj.asInstanceOf[TextAreaProps]
   }
 }
 

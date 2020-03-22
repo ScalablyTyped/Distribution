@@ -54,6 +54,7 @@ trait GridProps extends js.Object {
   var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
   var margin: js.UndefOr[MarginType] = js.undefined
   var pad: js.UndefOr[PadType] = js.undefined
+  var responsive: js.UndefOr[Boolean] = js.undefined
   var rows: js.UndefOr[
     (js.Array[
       xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
@@ -81,6 +82,7 @@ object GridProps {
     justifyContent: JustifyContentType = null,
     margin: MarginType = null,
     pad: PadType = null,
+    responsive: js.UndefOr[Boolean] = js.undefined,
     rows: (js.Array[
       xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
     ]) | xsmall | small | medium | large | xlarge | String = null,
@@ -101,6 +103,7 @@ object GridProps {
     if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]

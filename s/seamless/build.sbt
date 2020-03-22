@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "seamless"
-version := "0.0.6-dt-20190322Z-8ec41e"
+version := "0.0.6-dt-20200225Z-8ec41e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -31,7 +31,31 @@ class Parser protected () extends js.Object {
   def parseInterpolation(input: String, location: js.Any, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource | Null = js.native
   def parseSimpleBinding(input: String, location: String, absoluteOffset: Double): ASTWithSource = js.native
   def parseSimpleBinding(input: String, location: String, absoluteOffset: Double, interpolationConfig: InterpolationConfig): ASTWithSource = js.native
-  def parseTemplateBindings(tplKey: String, tplValue: String, location: js.Any, absoluteOffset: Double): TemplateBindingParseResult = js.native
+  /**
+    * Parse microsyntax template expression and return a list of bindings or
+    * parsing errors in case the given expression is invalid.
+    *
+    * For example,
+    * ```
+    *   <div *ngFor="let item of items">
+    *                ^ `absoluteOffset` for `tplValue`
+    * ```
+    * contains three bindings:
+    * 1. ngFor -> null
+    * 2. item -> NgForOfContext.$implicit
+    * 3. ngForOf -> items
+    *
+    * This is apparent from the de-sugared template:
+    * ```
+    *   <ng-template ngFor let-item [ngForOf]="items">
+    * ```
+    *
+    * @param templateKey name of directive, without the * prefix. For example: ngIf, ngFor
+    * @param templateValue RHS of the microsyntax attribute
+    * @param templateUrl template filename if it's external, component filename if it's inline
+    * @param absoluteOffset absolute offset of the `tplValue`
+    */
+  def parseTemplateBindings(templateKey: String, templateValue: String, templateUrl: String, absoluteOffset: Double): TemplateBindingParseResult = js.native
   def splitInterpolation(input: String, location: String): SplitInterpolation | Null = js.native
   def splitInterpolation(input: String, location: String, interpolationConfig: InterpolationConfig): SplitInterpolation | Null = js.native
   def wrapLiteralPrimitive(input: String, location: js.Any, absoluteOffset: Double): ASTWithSource = js.native

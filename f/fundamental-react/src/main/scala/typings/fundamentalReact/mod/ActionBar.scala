@@ -1,8 +1,5 @@
 package typings.fundamentalReact.mod
 
-import typings.fundamentalReact.FunctionComponentActionBa
-import typings.fundamentalReact.FunctionComponentActionBaCall
-import typings.fundamentalReact.FunctionComponentActionBaContextTypes
 import typings.fundamentalReact.PartialActionBarProps
 import typings.fundamentalReact.WeakValidationMapActionBa
 import typings.fundamentalReact.actionBarMod.ActionBarProps
@@ -16,9 +13,6 @@ import scala.scalajs.js.annotation._
 @JSImport("fundamental-react", "ActionBar")
 @js.native
 object ActionBar extends js.Object {
-  var Actions: FunctionComponentActionBa = js.native
-  var Back: FunctionComponentActionBaCall = js.native
-  var Header: FunctionComponentActionBaContextTypes = js.native
   var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
   var defaultProps: js.UndefOr[PartialActionBarProps] = js.native
   var displayName: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.ActionBar | String] = js.native

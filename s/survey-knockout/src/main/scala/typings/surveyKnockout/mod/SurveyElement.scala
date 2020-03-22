@@ -86,6 +86,7 @@ class SurveyElement protected ()
 object SurveyElement extends js.Object {
   def FocusElement(elementId: String): Boolean = js.native
   def GetFirstNonTextElement(elements: js.Any): js.Any = js.native
+  def GetFirstNonTextElement(elements: js.Any, removeSpaces: Boolean): js.Any = js.native
   def ScrollElementToTop(elementId: String): Boolean = js.native
 }
 

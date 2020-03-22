@@ -1,7 +1,7 @@
 
 # Scala.js typings for hosted-git-info
 
-Typings are for version 2.7
+Typings are for version 3.0
 
 ## Library description:
 Provides metadata and conversions from repository urls for Github, Bitbucket and Gitlab

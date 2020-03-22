@@ -150,7 +150,7 @@ trait PartialAvatarProps extends js.Object {
   var children: js.UndefOr[ReactNode] = js.native
   var childrenClassName: js.UndefOr[String] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapAvatarClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapAvatar] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[AvatarProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -337,7 +337,7 @@ object PartialAvatarProps {
     children: ReactNode = null,
     childrenClassName: String = null,
     className: String = null,
-    classes: PartialClassNameMapAvatarClassKey = null,
+    classes: PartialClassNameMapAvatar = null,
     color: String = null,
     component: ReactType[AvatarProps] = null,
     contentEditable: Booleanish | inherit = null,

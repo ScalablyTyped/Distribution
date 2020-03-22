@@ -51,7 +51,7 @@ object Pattern {
   }
   @scala.inline
   def ObjectPattern(
-    properties: js.Array[AssignmentProperty],
+    properties: js.Array[AssignmentProperty | RestElement],
     `type`: typings.estree.estreeStrings.ObjectPattern,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

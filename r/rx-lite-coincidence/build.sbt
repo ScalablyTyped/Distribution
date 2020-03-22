@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rx-lite-coincidence"
-version := "4.0-dt-20190322Z-dab2d6"
+version := "4.0-dt-20200225Z-dab2d6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

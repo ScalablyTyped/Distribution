@@ -1,9 +1,11 @@
 package typings.javascriptTimeAgo
 
+import typings.javascriptTimeAgo.gradationMod.Unit
 import typings.javascriptTimeAgo.localeMod.DefaultFormats
 import typings.javascriptTimeAgo.localeMod.ExtendedFormats
 import typings.javascriptTimeAgo.localeMod.Formats
 import typings.javascriptTimeAgo.localeMod.TimeUnit
+import typings.javascriptTimeAgo.styleMod.Flavour
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -70,7 +72,9 @@ object javascriptTimeAgoStrings {
   sealed trait da extends js.Object
   
   @js.native
-  sealed trait day extends TimeUnit
+  sealed trait day
+    extends TimeUnit
+       with Unit
   
   @js.native
   sealed trait de extends js.Object
@@ -157,7 +161,9 @@ object javascriptTimeAgoStrings {
   sealed trait hi extends js.Object
   
   @js.native
-  sealed trait hour extends TimeUnit
+  sealed trait hour
+    extends TimeUnit
+       with Unit
   
   @js.native
   sealed trait hr extends js.Object
@@ -237,6 +243,7 @@ object javascriptTimeAgoStrings {
   @js.native
   sealed trait long
     extends DefaultFormats
+       with Flavour
        with Formats
   
   @js.native
@@ -256,7 +263,9 @@ object javascriptTimeAgoStrings {
   sealed trait lv extends js.Object
   
   @js.native
-  sealed trait minute extends TimeUnit
+  sealed trait minute
+    extends TimeUnit
+       with Unit
   
   @js.native
   sealed trait mk extends js.Object
@@ -268,7 +277,9 @@ object javascriptTimeAgoStrings {
   sealed trait mn extends js.Object
   
   @js.native
-  sealed trait month extends TimeUnit
+  sealed trait month
+    extends TimeUnit
+       with Unit
   
   @js.native
   sealed trait mr extends js.Object
@@ -288,6 +299,7 @@ object javascriptTimeAgoStrings {
   @js.native
   sealed trait narrow
     extends DefaultFormats
+       with Flavour
        with Formats
   
   @js.native
@@ -303,7 +315,9 @@ object javascriptTimeAgoStrings {
   sealed trait nn extends js.Object
   
   @js.native
-  sealed trait now extends TimeUnit
+  sealed trait now
+    extends TimeUnit
+       with Unit
   
   @js.native
   sealed trait one extends js.Object
@@ -351,11 +365,14 @@ object javascriptTimeAgoStrings {
   sealed trait `se-FI` extends js.Object
   
   @js.native
-  sealed trait second extends TimeUnit
+  sealed trait second
+    extends TimeUnit
+       with Unit
   
   @js.native
   sealed trait short
     extends DefaultFormats
+       with Flavour
        with Formats
   
   @js.native
@@ -366,6 +383,7 @@ object javascriptTimeAgoStrings {
   @js.native
   sealed trait `short-time`
     extends ExtendedFormats
+       with Flavour
        with Formats
   
   @js.native
@@ -410,6 +428,7 @@ object javascriptTimeAgoStrings {
   @js.native
   sealed trait tiny
     extends ExtendedFormats
+       with Flavour
        with Formats
   
   @js.native
@@ -449,10 +468,14 @@ object javascriptTimeAgoStrings {
   sealed trait wae extends js.Object
   
   @js.native
-  sealed trait week extends TimeUnit
+  sealed trait week
+    extends TimeUnit
+       with Unit
   
   @js.native
-  sealed trait year extends TimeUnit
+  sealed trait year
+    extends TimeUnit
+       with Unit
   
   @js.native
   sealed trait yi extends js.Object

@@ -53,21 +53,21 @@ trait AndroidNotification extends js.Object {
     */
   var color: js.UndefOr[String] = js.undefined
   /**
-    * If set to `true`, use the Android framework's default LED light settings 
-    * for the notification. Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml). 
-    * If `default_light_settings` is set to `true` and `light_settings` is also set, 
+    * If set to `true`, use the Android framework's default LED light settings
+    * for the notification. Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml).
+    * If `default_light_settings` is set to `true` and `light_settings` is also set,
     * the user-specified `light_settings` is used instead of the default value.
     */
   var defaultLightSettings: js.UndefOr[Boolean] = js.undefined
   /**
-    * If set to `true`, use the Android framework's default sound for the notification. 
+    * If set to `true`, use the Android framework's default sound for the notification.
     * Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml).
     */
   var defaultSound: js.UndefOr[Boolean] = js.undefined
   /**
-    * If set to `true`, use the Android framework's default vibrate pattern for the 
-    * notification. Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml). 
-    * If `default_vibrate_timings` is set to `true` and `vibrate_timings` is also set, 
+    * If set to `true`, use the Android framework's default vibrate pattern for the
+    * notification. Default values are specified in [`config.xml`](https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/config.xml).
+    * If `default_vibrate_timings` is set to `true` and `vibrate_timings` is also set,
     * the default value is used instead of the user-specified `vibrate_timings`.
     */
   var defaultVibrateTimings: js.UndefOr[Boolean] = js.undefined
@@ -86,32 +86,32 @@ trait AndroidNotification extends js.Object {
     */
   var imageUrl: js.UndefOr[String] = js.undefined
   /**
-    * Settings to control the notification's LED blinking rate and color if LED is 
+    * Settings to control the notification's LED blinking rate and color if LED is
     * available on the device. The total blinking time is controlled by the OS.
     */
   var lightSettings: js.UndefOr[LightSettings] = js.undefined
   /**
-    * Sets whether or not this notification is relevant only to the current device. 
-    * Some notifications can be bridged to other devices for remote display, such as 
-    * a Wear OS watch. This hint can be set to recommend this notification not be bridged. 
+    * Sets whether or not this notification is relevant only to the current device.
+    * Some notifications can be bridged to other devices for remote display, such as
+    * a Wear OS watch. This hint can be set to recommend this notification not be bridged.
     * See [Wear OS guides](https://developer.android.com/training/wearables/notifications/bridger#existing-method-of-preventing-bridging)
     */
   var localOnly: js.UndefOr[Boolean] = js.undefined
   /**
-    * Sets the number of items this notification represents. May be displayed as a 
-    * badge count for Launchers that support badging. See [`NotificationBadge`(https://developer.android.com/training/notify-user/badges). 
+    * Sets the number of items this notification represents. May be displayed as a
+    * badge count for Launchers that support badging. See [`NotificationBadge`(https://developer.android.com/training/notify-user/badges).
     * For example, this might be useful if you're using just one notification to
     * represent multiple new messages but you want the count here to represent
-    * the number of total new messages. If zero or unspecified, systems 
-    * that support badging use the default, which is to increment a number 
+    * the number of total new messages. If zero or unspecified, systems
+    * that support badging use the default, which is to increment a number
     * displayed on the long-press menu each time a new notification arrives.
     */
   var notificationCount: js.UndefOr[Double] = js.undefined
   /**
-    * Sets the relative priority for this notification. Low-priority notifications 
-    * may be hidden from the user in certain situations. Note this priority differs 
-    * from `AndroidMessagePriority`. This priority is processed by the client after 
-    * the message has been delivered. Whereas `AndroidMessagePriority` is an FCM concept 
+    * Sets the relative priority for this notification. Low-priority notifications
+    * may be hidden from the user in certain situations. Note this priority differs
+    * from `AndroidMessagePriority`. This priority is processed by the client after
+    * the message has been delivered. Whereas `AndroidMessagePriority` is an FCM concept
     * that controls when the message is delivered.
     */
   var priority: js.UndefOr[min | low | default | high | max] = js.undefined
@@ -121,8 +121,8 @@ trait AndroidNotification extends js.Object {
     */
   var sound: js.UndefOr[String] = js.undefined
   /**
-    * When set to `false` or unset, the notification is automatically dismissed when 
-    * the user clicks it in the panel. When set to `true`, the notification persists 
+    * When set to `false` or unset, the notification is automatically dismissed when
+    * the user clicks it in the panel. When set to `true`, the notification persists
     * even when the user clicks it.
     */
   var sticky: js.UndefOr[Boolean] = js.undefined
@@ -133,8 +133,8 @@ trait AndroidNotification extends js.Object {
     */
   var tag: js.UndefOr[String] = js.undefined
   /**
-    * Sets the "ticker" text, which is sent to accessibility services. Prior to 
-    * API level 21 (Lollipop), sets the text that is displayed in the status bar 
+    * Sets the "ticker" text, which is sent to accessibility services. Prior to
+    * API level 21 (Lollipop), sets the text that is displayed in the status bar
     * when the notification first arrives.
     */
   var ticker: js.UndefOr[String] = js.undefined
@@ -154,16 +154,16 @@ trait AndroidNotification extends js.Object {
     */
   var titleLocKey: js.UndefOr[String] = js.undefined
   /**
-    * Sets the vibration pattern to use. Pass in an array of milliseconds to 
-    * turn the vibrator on or off. The first value indicates the duration to wait before 
-    * turning the vibrator on. The next value indicates the duration to keep the 
-    * vibrator on. Subsequent values alternate between duration to turn the vibrator 
-    * off and to turn the vibrator on. If `vibrate_timings` is set and `default_vibrate_timings` 
+    * Sets the vibration pattern to use. Pass in an array of milliseconds to
+    * turn the vibrator on or off. The first value indicates the duration to wait before
+    * turning the vibrator on. The next value indicates the duration to keep the
+    * vibrator on. Subsequent values alternate between duration to turn the vibrator
+    * off and to turn the vibrator on. If `vibrate_timings` is set and `default_vibrate_timings`
     * is set to `true`, the default value is used instead of the user-specified `vibrate_timings`.
     */
   var vibrateTimingsMillis: js.UndefOr[js.Array[Double]] = js.undefined
   /**
-    * Sets the visibility of the notification. Must be either `private`, `public`, 
+    * Sets the visibility of the notification. Must be either `private`, `public`,
     * or `secret`. If unspecified, defaults to `private`.
     */
   var visibility: js.UndefOr[`private` | public | secret] = js.undefined

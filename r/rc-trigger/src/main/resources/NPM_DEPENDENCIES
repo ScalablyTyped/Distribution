@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-trigger" : "4.0.0"
+      "rc-trigger" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-trigger" : "4.0.0"
+      "rc-trigger" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

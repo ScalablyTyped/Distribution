@@ -18,10 +18,19 @@ object reactMapGlStrings {
   sealed trait `bottom-right` extends js.Object
   
   @js.native
+  sealed trait imperial extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
   sealed trait mapbox extends js.Object
+  
+  @js.native
+  sealed trait metric extends js.Object
+  
+  @js.native
+  sealed trait nautical extends js.Object
   
   @js.native
   sealed trait right extends js.Object
@@ -53,9 +62,15 @@ object reactMapGlStrings {
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   @scala.inline
+  def imperial: imperial = "imperial".asInstanceOf[imperial]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def mapbox: mapbox = "mapbox".asInstanceOf[mapbox]
+  @scala.inline
+  def metric: metric = "metric".asInstanceOf[metric]
+  @scala.inline
+  def nautical: nautical = "nautical".asInstanceOf[nautical]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline

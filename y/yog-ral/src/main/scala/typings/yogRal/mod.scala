@@ -39,13 +39,13 @@ object mod extends js.Object {
   val Logger: LoggerFactory = js.native
   def Middleware(): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* resp */ Response_, 
+    /* resp */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native
   def Middleware(options: Service): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* resp */ Response_, 
+    /* resp */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native

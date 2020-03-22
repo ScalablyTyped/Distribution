@@ -41,6 +41,7 @@ trait AgentConfigOptions extends js.Object {
   var kubernetesPodName: js.UndefOr[String] = js.undefined
   var kubernetesPodUID: js.UndefOr[String] = js.undefined
   var logLevel: js.UndefOr[LogLevel] = js.undefined
+  var logUncaughtExceptions: js.UndefOr[Boolean] = js.undefined
   var logger: js.UndefOr[Logger] = js.undefined
   var metricsInterval: js.UndefOr[String] = js.undefined
    // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
@@ -97,6 +98,7 @@ object AgentConfigOptions {
     kubernetesPodName: String = null,
     kubernetesPodUID: String = null,
     logLevel: LogLevel = null,
+    logUncaughtExceptions: js.UndefOr[Boolean] = js.undefined,
     logger: Logger = null,
     metricsInterval: String = null,
     payloadLogFile: String = null,
@@ -148,6 +150,7 @@ object AgentConfigOptions {
     if (kubernetesPodName != null) __obj.updateDynamic("kubernetesPodName")(kubernetesPodName.asInstanceOf[js.Any])
     if (kubernetesPodUID != null) __obj.updateDynamic("kubernetesPodUID")(kubernetesPodUID.asInstanceOf[js.Any])
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(logUncaughtExceptions)) __obj.updateDynamic("logUncaughtExceptions")(logUncaughtExceptions.asInstanceOf[js.Any])
     if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
     if (metricsInterval != null) __obj.updateDynamic("metricsInterval")(metricsInterval.asInstanceOf[js.Any])
     if (payloadLogFile != null) __obj.updateDynamic("payloadLogFile")(payloadLogFile.asInstanceOf[js.Any])

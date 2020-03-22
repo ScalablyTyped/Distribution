@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dynatable"
-version := "v0.3.1-dt-20190322Z-090bc0"
+version := "v0.3.1-dt-20200225Z-090bc0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -148,7 +148,7 @@ trait PartialListSubheaderProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListSubheaderClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListSu] = js.native
   var color: js.UndefOr[default | primary | inherit] = js.native
   var component: js.UndefOr[ReactType[ListSubheaderProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -332,7 +332,7 @@ object PartialListSubheaderProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapListSubheaderClassKey = null,
+    classes: PartialClassNameMapListSu = null,
     color: default | primary | inherit = null,
     component: ReactType[ListSubheaderProps] = null,
     contentEditable: Booleanish | inherit = null,

@@ -38,6 +38,7 @@ trait StatefulPinCodeProps extends js.Object {
   var error: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
   var initialState: js.UndefOr[State] = js.native
+  var inputMode: js.UndefOr[String] = js.native
   var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
   var manageFocus: js.UndefOr[Boolean] = js.native
   var max: js.UndefOr[Double] = js.native

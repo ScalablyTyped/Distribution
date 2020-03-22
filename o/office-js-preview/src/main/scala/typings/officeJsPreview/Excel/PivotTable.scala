@@ -22,6 +22,14 @@ import scala.scalajs.js.annotation._
 class PivotTable () extends ClientObject {
   /**
     *
+    * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var allowMultipleFiltersPerField: Boolean = js.native
+  /**
+    *
     * The Column Pivot Hierarchies of the PivotTable.
     *
     * [Api set: ExcelApi 1.8]
@@ -101,7 +109,6 @@ class PivotTable () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Deletes the PivotTable.
     *
     * [Api set: ExcelApi 1.8]
@@ -118,7 +125,6 @@ class PivotTable () extends ClientObject {
   def load(propertyNames: String): PivotTable = js.native
   def load(propertyNames: js.Array[String]): PivotTable = js.native
   /**
-    *
     * Refreshes the PivotTable.
     *
     * [Api set: ExcelApi 1.3]

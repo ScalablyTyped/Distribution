@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/png" : "0.9.3"
+      "@jimp/png" : "0.9.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/png" : "0.9.3"
+      "@jimp/png" : "0.9.6"
     }
   ],
   "compile-devDependencies" : [

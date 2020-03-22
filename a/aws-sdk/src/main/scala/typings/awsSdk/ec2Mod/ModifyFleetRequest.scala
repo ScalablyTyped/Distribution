@@ -17,7 +17,7 @@ trait ModifyFleetRequest extends js.Object {
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: FleetIdentifier = js.native
+  var FleetId: typings.awsSdk.ec2Mod.FleetId = js.native
   /**
     * The size of the EC2 Fleet.
     */
@@ -27,7 +27,7 @@ trait ModifyFleetRequest extends js.Object {
 object ModifyFleetRequest {
   @scala.inline
   def apply(
-    FleetId: FleetIdentifier,
+    FleetId: FleetId,
     TargetCapacitySpecification: TargetCapacitySpecificationRequest,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     ExcessCapacityTerminationPolicy: FleetExcessCapacityTerminationPolicy = null

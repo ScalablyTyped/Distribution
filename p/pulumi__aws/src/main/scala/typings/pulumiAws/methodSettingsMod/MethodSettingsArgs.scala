@@ -16,7 +16,7 @@ trait MethodSettingsArgs extends js.Object {
   /**
     * The ID of the REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * The settings block, see below.
     */
@@ -31,7 +31,7 @@ object MethodSettingsArgs {
   @scala.inline
   def apply(
     methodPath: Input[String],
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     settings: Input[MethodSettingsSettings],
     stageName: Input[String]
   ): MethodSettingsArgs = {

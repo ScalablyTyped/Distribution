@@ -1,7 +1,7 @@
 
 # Scala.js typings for loadable__server
 
-Typings are for version 5.9
+Typings are for version 5.12
 
 ## Library description:
 Server utilities for loadable.

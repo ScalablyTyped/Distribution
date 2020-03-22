@@ -25,8 +25,6 @@ trait AnonBetween extends js.Object {
   def past(years: Double, refDate: Date): Date = js.native
   def recent(): Date = js.native
   def recent(days: Double): Date = js.native
-  def soon(): Date = js.native
-  def soon(days: Double): Date = js.native
   def weekday(): String = js.native
   def weekday(options: AnonAbbr): String = js.native
 }

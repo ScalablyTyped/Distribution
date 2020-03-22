@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-embed"
-version := "2.2-dt-20191126Z-e5c5be"
+version := "2.2-dt-20200225Z-e5c5be"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

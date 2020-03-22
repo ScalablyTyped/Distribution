@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "contract-proxy-kit"
-version := "1.0-dt-20200123Z-caaccd"
+version := "1.0-dt-20200225Z-d96f6b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

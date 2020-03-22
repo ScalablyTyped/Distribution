@@ -25,14 +25,12 @@ class PivotItemCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[PivotItem] = js.native
   /**
-    *
     * Gets the number of PivotItems in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a PivotItem by its name or id.
     *
     * [Api set: ExcelApi 1.8]
@@ -41,7 +39,6 @@ class PivotItemCollection () extends ClientObject {
     */
   def getItem(name: String): PivotItem = js.native
   /**
-    *
     * Gets a PivotItem by name. If the PivotItem does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.8]

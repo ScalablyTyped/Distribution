@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-countup
 
-Typings are for version 4.0
+Typings are for version 4.3
 
 ## Library description:
 A React component wrapper around CountUp.js

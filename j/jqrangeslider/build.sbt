@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jqrangeslider"
-version := "5.7.2-dt-20190322Z-e44daf"
+version := "5.7.2-dt-20200225Z-e44daf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

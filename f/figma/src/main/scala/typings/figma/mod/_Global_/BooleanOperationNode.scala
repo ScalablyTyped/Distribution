@@ -22,6 +22,7 @@ trait BooleanOperationNode
      with ChildrenMixin
      with CornerMixin {
   var booleanOperation: UNION | INTERSECT | SUBTRACT | EXCLUDE = js.native
+  var expanded: Boolean = js.native
   val `type`: BOOLEAN_OPERATION = js.native
 }
 

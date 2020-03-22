@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jstree"
-version := "3.3-dt-20190912Z-7ef2af"
+version := "3.3-dt-20200225Z-7ef2af"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

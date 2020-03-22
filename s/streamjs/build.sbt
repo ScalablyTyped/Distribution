@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "streamjs"
-version := "1.5.0-dt-20190322Z-ac9bc2"
+version := "1.5.0-dt-20200225Z-ac9bc2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

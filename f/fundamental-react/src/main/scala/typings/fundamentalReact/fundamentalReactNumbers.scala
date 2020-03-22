@@ -12,6 +12,9 @@ object fundamentalReactNumbers {
   sealed trait `1` extends js.Object
   
   @js.native
+  sealed trait `10` extends js.Object
+  
+  @js.native
   sealed trait `2` extends js.Object
   
   @js.native
@@ -39,6 +42,8 @@ object fundamentalReactNumbers {
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
+  def `10`: `10` = 10.asInstanceOf[`10`]
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
   @scala.inline

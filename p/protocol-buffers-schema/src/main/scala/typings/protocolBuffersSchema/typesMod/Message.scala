@@ -11,6 +11,7 @@ trait Message extends js.Object {
   var fields: js.Array[Field]
   var messages: js.Array[Message]
   var name: String
+  var options: Options
 }
 
 object Message {
@@ -21,9 +22,10 @@ object Message {
     extensions: js.Array[Extension],
     fields: js.Array[Field],
     messages: js.Array[Message],
-    name: String
+    name: String,
+    options: Options
   ): Message = {
-    val __obj = js.Dynamic.literal(enums = enums.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enums = enums.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }

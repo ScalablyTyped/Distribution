@@ -13,8 +13,20 @@ object computeDefaults extends js.Object {
   def apply[T](
     schema: JSONSchema6,
     parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
+    definitions: StringDictionary[js.Any]
+  ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
+  def apply[T](
+    schema: JSONSchema6,
+    parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
     definitions: StringDictionary[js.Any],
     rawFormData: T
+  ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
+  def apply[T](
+    schema: JSONSchema6,
+    parentDefaults: js.Array[js.UndefOr[JSONSchema6Type]],
+    definitions: StringDictionary[js.Any],
+    rawFormData: T,
+    includeUndefinedValues: Boolean
   ): js.Array[js.UndefOr[JSONSchema6Type]] = js.native
 }
 

@@ -13,7 +13,10 @@ import scala.scalajs.js.annotation._
 
 trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends js.Object {
   var activities: js.Array[ActivityDefinition[TContext, TEvent]]
+  var context: TContext
   var data: js.UndefOr[(Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent]) | js.Any] = js.undefined
+  var entry: js.Array[ActionObject[TContext, TEvent]]
+  var exit: js.Array[ActionObject[TContext, TEvent]]
   var history: js.UndefOr[Boolean | shallow | deep] = js.undefined
   var id: String
   var initial: js.UndefOr[
@@ -23,8 +26,6 @@ trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema[_] */, TEvent
   var key: String
   var meta: js.Any
   var on: TransitionDefinitionMap[TContext, TEvent]
-  var onEntry: js.Array[ActionObject[TContext, TEvent]]
-  var onExit: js.Array[ActionObject[TContext, TEvent]]
   var order: Double
   var states: StatesDefinition[TContext, TStateSchema, TEvent]
   var transitions: js.Array[TransitionDefinition[TContext, TEvent]]
@@ -36,13 +37,14 @@ object StateNodeDefinition {
   @scala.inline
   def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](
     activities: js.Array[ActivityDefinition[TContext, TEvent]],
+    context: TContext,
+    entry: js.Array[ActionObject[TContext, TEvent]],
+    exit: js.Array[ActionObject[TContext, TEvent]],
     id: String,
     invoke: js.Array[InvokeDefinition[TContext, TEvent]],
     key: String,
     meta: js.Any,
     on: TransitionDefinitionMap[TContext, TEvent],
-    onEntry: js.Array[ActionObject[TContext, TEvent]],
-    onExit: js.Array[ActionObject[TContext, TEvent]],
     order: Double,
     states: StatesDefinition[TContext, TStateSchema, TEvent],
     transitions: js.Array[TransitionDefinition[TContext, TEvent]],
@@ -52,7 +54,7 @@ object StateNodeDefinition {
     initial: /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any = null,
     version: String = null
   ): StateNodeDefinition[TContext, TStateSchema, TEvent] = {
-    val __obj = js.Dynamic.literal(activities = activities.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invoke = invoke.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], onEntry = onEntry.asInstanceOf[js.Any], onExit = onExit.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activities = activities.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], entry = entry.asInstanceOf[js.Any], exit = exit.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], invoke = invoke.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])

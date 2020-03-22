@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object codepipelineMod {
   type ArtifactLocation = typings.awsLambda.codepipelineMod.S3ArtifactStore
-  type CodePipelineHandler = typings.awsLambda.handerMod.Handler[typings.awsLambda.codepipelineMod.CodePipelineEvent, scala.Unit]
+  type CodePipelineHandler = typings.awsLambda.handlerMod.Handler[typings.awsLambda.codepipelineMod.CodePipelineEvent, scala.Unit]
 }

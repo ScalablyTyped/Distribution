@@ -448,6 +448,11 @@ trait AsyncClient extends js.Object {
     /* args */ Parameters[js.Function1[/* elementId */ String, String | Null]], 
     js.Promise[ReturnType[js.Function1[/* elementId */ String, String | Null]]]
   ] = js.native
+  @JSName("getEvents")
+  var getEvents_Original: js.Function1[
+    /* args */ Parameters[js.Function1[/* type */ js.Array[String], ProtocolCommandResponse]], 
+    js.Promise[ReturnType[js.Function1[/* type */ js.Array[String], ProtocolCommandResponse]]]
+  ] = js.native
   @JSName("getGeoLocation")
   var getGeoLocation_Original: js.Function1[
     /* args */ Parameters[js.Function0[ProtocolCommandResponse]], 
@@ -767,6 +772,11 @@ trait AsyncClient extends js.Object {
   var lock_Original: js.Function1[
     /* args */ Parameters[js.Function1[/* seconds */ js.UndefOr[Double], Unit]], 
     js.Promise[ReturnType[js.Function1[/* seconds */ js.UndefOr[Double], Unit]]]
+  ] = js.native
+  @JSName("logEvent")
+  var logEvent_Original: js.Function1[
+    /* args */ Parameters[js.Function2[/* vendor */ String, /* event */ String, Unit]], 
+    js.Promise[ReturnType[js.Function2[/* vendor */ String, /* event */ String, Unit]]]
   ] = js.native
   @JSName("longPressKeyCode")
   var longPressKeyCode_Original: js.Function1[
@@ -1230,8 +1240,8 @@ trait AsyncClient extends js.Object {
   ] = js.native
   @JSName("switchToFrame")
   var switchToFrame_Original: js.Function1[
-    /* args */ Parameters[js.Function1[/* id */ Double | String | js.Object | Null, Unit]], 
-    js.Promise[ReturnType[js.Function1[/* id */ Double | String | js.Object | Null, Unit]]]
+    /* args */ Parameters[js.Function1[/* id */ Double | js.Object | Null, Unit]], 
+    js.Promise[ReturnType[js.Function1[/* id */ Double | js.Object | Null, Unit]]]
   ] = js.native
   @JSName("switchToParentFrame")
   var switchToParentFrame_Original: js.Function1[
@@ -1298,6 +1308,11 @@ trait AsyncClient extends js.Object {
   ] = js.native
   @JSName("toggleLocationServices")
   var toggleLocationServices_Original: js.Function1[
+    /* args */ Parameters[js.Function0[Unit]], 
+    js.Promise[ReturnType[js.Function0[Unit]]]
+  ] = js.native
+  @JSName("toggleNetworkSpeed")
+  var toggleNetworkSpeed_Original: js.Function1[
     /* args */ Parameters[js.Function0[Unit]], 
     js.Promise[ReturnType[js.Function0[Unit]]]
   ] = js.native
@@ -1700,6 +1715,9 @@ trait AsyncClient extends js.Object {
   def getElementValue(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* elementId */ String, String | Null]]
   ): js.Promise[ReturnType[js.Function1[/* elementId */ String, String | Null]]] = js.native
+  def getEvents(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* type */ js.Array[String], ProtocolCommandResponse]]
+  ): js.Promise[ReturnType[js.Function1[/* type */ js.Array[String], ProtocolCommandResponse]]] = js.native
   def getGeoLocation(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[ProtocolCommandResponse]]
   ): js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]] = js.native
@@ -1916,6 +1934,9 @@ trait AsyncClient extends js.Object {
   def lock(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* seconds */ js.UndefOr[Double], Unit]]
   ): js.Promise[ReturnType[js.Function1[/* seconds */ js.UndefOr[Double], Unit]]] = js.native
+  def logEvent(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function2[/* vendor */ String, /* event */ String, Unit]]
+  ): js.Promise[ReturnType[js.Function2[/* vendor */ String, /* event */ String, Unit]]] = js.native
   def longPressKeyCode(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[
       js.Function3[
@@ -2269,8 +2290,8 @@ trait AsyncClient extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* name */ String, Unit]]
   ): js.Promise[ReturnType[js.Function1[/* name */ String, Unit]]] = js.native
   def switchToFrame(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* id */ Double | String | js.Object | Null, Unit]]
-  ): js.Promise[ReturnType[js.Function1[/* id */ Double | String | js.Object | Null, Unit]]] = js.native
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* id */ Double | js.Object | Null, Unit]]
+  ): js.Promise[ReturnType[js.Function1[/* id */ Double | js.Object | Null, Unit]]] = js.native
   def switchToParentFrame(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
@@ -2313,6 +2334,9 @@ trait AsyncClient extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]]
   ): js.Promise[ReturnType[js.Function1[/* enabled */ js.UndefOr[Boolean], Unit]]] = js.native
   def toggleLocationServices(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
+  ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
+  def toggleNetworkSpeed(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
   def toggleWiFi(

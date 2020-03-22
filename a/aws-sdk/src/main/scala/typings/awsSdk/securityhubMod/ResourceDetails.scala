@@ -63,6 +63,10 @@ trait ResourceDetails extends js.Object {
     */
   var AwsS3Bucket: js.UndefOr[AwsS3BucketDetails] = js.native
   /**
+    * Details about an Amazon S3 object related to a finding.
+    */
+  var AwsS3Object: js.UndefOr[AwsS3ObjectDetails] = js.native
+  /**
     * Details about an SNS topic.
     */
   var AwsSnsTopic: js.UndefOr[AwsSnsTopicDetails] = js.native
@@ -101,6 +105,7 @@ object ResourceDetails {
     AwsLambdaLayerVersion: AwsLambdaLayerVersionDetails = null,
     AwsRdsDbInstance: AwsRdsDbInstanceDetails = null,
     AwsS3Bucket: AwsS3BucketDetails = null,
+    AwsS3Object: AwsS3ObjectDetails = null,
     AwsSnsTopic: AwsSnsTopicDetails = null,
     AwsSqsQueue: AwsSqsQueueDetails = null,
     AwsWafWebAcl: AwsWafWebAclDetails = null,
@@ -122,6 +127,7 @@ object ResourceDetails {
     if (AwsLambdaLayerVersion != null) __obj.updateDynamic("AwsLambdaLayerVersion")(AwsLambdaLayerVersion.asInstanceOf[js.Any])
     if (AwsRdsDbInstance != null) __obj.updateDynamic("AwsRdsDbInstance")(AwsRdsDbInstance.asInstanceOf[js.Any])
     if (AwsS3Bucket != null) __obj.updateDynamic("AwsS3Bucket")(AwsS3Bucket.asInstanceOf[js.Any])
+    if (AwsS3Object != null) __obj.updateDynamic("AwsS3Object")(AwsS3Object.asInstanceOf[js.Any])
     if (AwsSnsTopic != null) __obj.updateDynamic("AwsSnsTopic")(AwsSnsTopic.asInstanceOf[js.Any])
     if (AwsSqsQueue != null) __obj.updateDynamic("AwsSqsQueue")(AwsSqsQueue.asInstanceOf[js.Any])
     if (AwsWafWebAcl != null) __obj.updateDynamic("AwsWafWebAcl")(AwsWafWebAcl.asInstanceOf[js.Any])

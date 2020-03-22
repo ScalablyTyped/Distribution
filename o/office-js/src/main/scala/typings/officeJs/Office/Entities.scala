@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a collection of entities found in an email message or appointment. Read mode only.
   *
-  * The Entities object is a container for the entity arrays returned by the getEntities and getEntitiesByType methods when the item 
+  * The `Entities` object is a container for the entity arrays returned by the `getEntities` and `getEntitiesByType` methods when the item 
   * (either an email message or an appointment) contains one or more entities that have been found by the server. 
   * You can use these entities in your code to provide additional context information to the viewer, such as a map to an address found in the item, 
   * or to open a dialer for a phone number found in the item.
@@ -24,14 +24,14 @@ import scala.scalajs.js.annotation._
   * Entity recognition relies on natural language recognition that is based on machine learning of large amounts of data. 
   * The recognition of an entity is non-deterministic and success sometimes relies on the particular context in the item.
   *
-  * When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity contains data; 
+  * When the property arrays are returned by the `getEntitiesByType` method, only the property for the specified entity contains data; 
   * all other properties are null.
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait Entities extends js.Object {
   /**

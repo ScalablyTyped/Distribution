@@ -157,6 +157,12 @@ trait PlotTilemapOptions extends js.Object {
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
   /**
+    * (Highcharts, Highmaps) A reserved subspace to store options and values
+    * for customized functionality. Here you can add additional data for your
+    * own event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
     * the JavaScript charts. Highstock by default applies data grouping when
@@ -182,11 +188,7 @@ trait PlotTilemapOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
-  /**
-    * (Highcharts, Highstock) Options for the series data sorting.
-    */
-  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotTilemapDataSortingOptions] = js.undefined
+  var dataLabels: js.UndefOr[PlotTilemapDataLabelsOptions | js.Array[PlotTilemapDataLabelsOptions]] = js.undefined
   /**
     * (Highcharts, Highmaps) A description of the series to add to the screen
     * reader information about the series.
@@ -231,13 +233,13 @@ trait PlotTilemapOptions extends js.Object {
     * (Highstock) Together with gapSize, this option defines where to draw gaps
     * in the graph.
     *
-    * When the `gapUnit` is `relative` (default), a gap size of 5 means that if
-    * the distance between two points is greater than five times that of the
+    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
+    * if the distance between two points is greater than five times that of the
     * two closest points, the graph will be broken.
     *
-    * When the `gapUnit` is `value`, the gap is based on absolute axis values,
-    * which on a datetime axis is milliseconds. This also applies to the
-    * navigator series that inherits gap options from the base series.
+    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
+    * values, which on a datetime axis is milliseconds. This also applies to
+    * the navigator series that inherits gap options from the base series.
     */
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   /**
@@ -441,9 +443,9 @@ object PlotTilemapOptions {
     connectors: SeriesConnectorsOptionsObject = null,
     cropThreshold: Int | Double = null,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
     dataGrouping: DataGroupingOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
-    dataSorting: DataSortingOptionsObject | PlotTilemapDataSortingOptions = null,
+    dataLabels: PlotTilemapDataLabelsOptions | js.Array[PlotTilemapDataLabelsOptions] = null,
     description: String = null,
     dragDrop: SeriesDragDropOptionsObject = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
@@ -500,9 +502,9 @@ object PlotTilemapOptions {
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])

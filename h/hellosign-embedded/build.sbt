@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hellosign-embedded"
-version := "v1.2.0-dt-20190322Z-df51ab"
+version := "v1.2.0-dt-20200225Z-df51ab"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

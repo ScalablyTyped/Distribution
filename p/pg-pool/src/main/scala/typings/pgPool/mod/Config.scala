@@ -25,11 +25,13 @@ object Config {
     database: String = null,
     host: String = null,
     idleTimeoutMillis: Int | Double = null,
+    idle_in_transaction_session_timeout: Int | Double = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveInitialDelayMillis: Int | Double = null,
     log: /* repeated */ js.Any => Unit = null,
     max: Int | Double = null,
     min: Int | Double = null,
+    parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined,
     password: String = null,
     port: Int | Double = null,
     query_timeout: Int | Double = null,
@@ -47,11 +49,13 @@ object Config {
     if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
     if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (idleTimeoutMillis != null) __obj.updateDynamic("idleTimeoutMillis")(idleTimeoutMillis.asInstanceOf[js.Any])
+    if (idle_in_transaction_session_timeout != null) __obj.updateDynamic("idle_in_transaction_session_timeout")(idle_in_transaction_session_timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.asInstanceOf[js.Any])
     if (keepAliveInitialDelayMillis != null) __obj.updateDynamic("keepAliveInitialDelayMillis")(keepAliveInitialDelayMillis.asInstanceOf[js.Any])
     if (log != null) __obj.updateDynamic("log")(js.Any.fromFunction1(log))
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(parseInputDatesAsUTC)) __obj.updateDynamic("parseInputDatesAsUTC")(parseInputDatesAsUTC.asInstanceOf[js.Any])
     if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (query_timeout != null) __obj.updateDynamic("query_timeout")(query_timeout.asInstanceOf[js.Any])

@@ -16,6 +16,7 @@ trait PrivateVirtualInterfaceState extends js.Object {
     * The IPv4 CIDR address to use to send traffic to Amazon. Required for IPv4 BGP peers.
     */
   val amazonAddress: js.UndefOr[Input[String]] = js.native
+  val amazonSideAsn: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the virtual interface.
     */
@@ -76,6 +77,7 @@ object PrivateVirtualInterfaceState {
   def apply(
     addressFamily: Input[String] = null,
     amazonAddress: Input[String] = null,
+    amazonSideAsn: Input[String] = null,
     arn: Input[String] = null,
     awsDevice: Input[String] = null,
     bgpAsn: Input[Double] = null,
@@ -93,6 +95,7 @@ object PrivateVirtualInterfaceState {
     val __obj = js.Dynamic.literal()
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
     if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])

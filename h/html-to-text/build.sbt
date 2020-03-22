@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html-to-text"
-version := "v1.4.0-dt-20190322Z-400d6d"
+version := "v1.4.0-dt-20200226Z-400d6d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

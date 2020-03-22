@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mimos"
-version := "3.0-dt-20190322Z-327e15"
+version := "3.0-dt-20200225Z-327e15"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

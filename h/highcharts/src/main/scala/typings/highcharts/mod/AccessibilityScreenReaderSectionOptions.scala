@@ -27,10 +27,11 @@ trait AccessibilityScreenReaderSectionOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for the screen reader
     * information region before the chart. Supported HTML tags are `<h1-7>`,
-    * `<p>`, `<div>`, `<a>`, and `<button>`. Attributes are not supported,
-    * except for id on `<div>`, `<a>`, and `<button>`. Id is required on `<a>`
-    * and `<button>` in the format `<tag id="abcd">`. Numbers, lower- and
-    * uppercase letters, "-" and "#" are valid characters in IDs.
+    * `<p>`, `<div>`, `<a>`, `<ul>`, `<ol>`, `<li>`, and `<button>`. Attributes
+    * are not supported, except for id on `<div>`, `<a>`, and `<button>`. Id is
+    * required on `<a>` and `<button>` in the format `<tag id="abcd">`.
+    * Numbers, lower- and uppercase letters, "-" and "#" are valid characters
+    * in IDs.
     */
   var beforeChartFormat: js.UndefOr[String] = js.undefined
   /**
@@ -42,6 +43,13 @@ trait AccessibilityScreenReaderSectionOptions extends js.Object {
     * beforeChartFormat.
     */
   var beforeChartFormatter: js.UndefOr[ScreenReaderFormatterCallbackFunction[Chart_]] = js.undefined
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Function to run upon clicking
+    * the "Play as sound" button in the screen reader region.
+    *
+    * By default Highcharts will call the `chart.sonify` function.
+    */
+  var onPlayAsSoundClick: js.UndefOr[ScreenReaderClickCallbackFunction] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Function to run upon clicking
     * the "View as Data Table" link in the screen reader region.
@@ -60,6 +68,7 @@ object AccessibilityScreenReaderSectionOptions {
     axisRangeDateFormat: String = null,
     beforeChartFormat: String = null,
     beforeChartFormatter: Chart_ => String = null,
+    onPlayAsSoundClick: /* evt */ MouseEvent => Unit = null,
     onViewDataTableClick: /* evt */ MouseEvent => Unit = null
   ): AccessibilityScreenReaderSectionOptions = {
     val __obj = js.Dynamic.literal()
@@ -68,6 +77,7 @@ object AccessibilityScreenReaderSectionOptions {
     if (axisRangeDateFormat != null) __obj.updateDynamic("axisRangeDateFormat")(axisRangeDateFormat.asInstanceOf[js.Any])
     if (beforeChartFormat != null) __obj.updateDynamic("beforeChartFormat")(beforeChartFormat.asInstanceOf[js.Any])
     if (beforeChartFormatter != null) __obj.updateDynamic("beforeChartFormatter")(js.Any.fromFunction1(beforeChartFormatter))
+    if (onPlayAsSoundClick != null) __obj.updateDynamic("onPlayAsSoundClick")(js.Any.fromFunction1(onPlayAsSoundClick))
     if (onViewDataTableClick != null) __obj.updateDynamic("onViewDataTableClick")(js.Any.fromFunction1(onViewDataTableClick))
     __obj.asInstanceOf[AccessibilityScreenReaderSectionOptions]
   }

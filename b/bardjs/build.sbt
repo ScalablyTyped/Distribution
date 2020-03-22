@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bardjs"
-version := "0.1.4-dt-20190808Z-ab6504"
+version := "0.1.4-dt-20200226Z-9ca27e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "chai" % "4.2-dt-20200211Z-2f263c",
-  "org.scalablytyped" %%% "mocha" % "7.0-dt-20200129Z-97ea6b",
+  "org.scalablytyped" %%% "chai" % "4.2-dt-20200314Z-8317bf",
+  "org.scalablytyped" %%% "mocha" % "7.0-dt-20200303Z-eab6e1",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

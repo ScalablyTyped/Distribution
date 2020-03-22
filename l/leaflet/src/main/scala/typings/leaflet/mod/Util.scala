@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object Util extends js.Object {
   var emptyImageUrl: String = js.native
   var lastId: Double = js.native
-  def bind(fn: js.Function0[Unit], obj: js.Any*): js.Function0[Unit] = js.native
+  def bind(fn: js.Function1[/* repeated */ js.Any, Unit], obj: js.Any*): js.Function0[Unit] = js.native
   def cancelAnimFrame(id: Double): Unit = js.native
   def create(): js.Any = js.native
   def create(proto: js.Object): js.Any = js.native

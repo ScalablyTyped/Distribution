@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/auth-types" : "0.9.6"
+      "@firebase/auth-types" : "0.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/auth-types" : "0.9.6"
+      "@firebase/auth-types" : "0.10.0"
     }
   ],
   "compile-devDependencies" : [

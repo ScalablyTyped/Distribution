@@ -27,6 +27,10 @@ trait BatchInferenceJobSummary extends js.Object {
     */
   var lastUpdatedDateTime: js.UndefOr[Date] = js.native
   /**
+    * The ARN of the solution version used by the batch inference job.
+    */
+  var solutionVersionArn: js.UndefOr[Arn] = js.native
+  /**
     * The status of the batch inference job. The status is one of the following values:   PENDING   IN PROGRESS   ACTIVE   CREATE FAILED  
     */
   var status: js.UndefOr[Status] = js.native
@@ -40,6 +44,7 @@ object BatchInferenceJobSummary {
     failureReason: FailureReason = null,
     jobName: Name = null,
     lastUpdatedDateTime: Date = null,
+    solutionVersionArn: Arn = null,
     status: Status = null
   ): BatchInferenceJobSummary = {
     val __obj = js.Dynamic.literal()
@@ -48,6 +53,7 @@ object BatchInferenceJobSummary {
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
     if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
     if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
+    if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchInferenceJobSummary]
   }

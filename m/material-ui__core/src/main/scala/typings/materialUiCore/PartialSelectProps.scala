@@ -101,7 +101,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PartialSelectProps extends js.Object {
   var IconComponent: js.UndefOr[ReactType[_]] = js.native
-  var MenuProps: js.UndefOr[PartialMenuProps] = js.native
+  var MenuProps: js.UndefOr[PartialMenuPropsAbout] = js.native
   var SelectDisplayProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
@@ -161,7 +161,7 @@ trait PartialSelectProps extends js.Object {
   var autoWidth: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapSelectClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapSelect] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -290,7 +290,7 @@ trait PartialSelectProps extends js.Object {
   var property: js.UndefOr[String] = js.native
   var radioGroup: js.UndefOr[String] = js.native
   var readOnly: js.UndefOr[Boolean] = js.native
-  var renderPrefix: js.UndefOr[js.Function1[/* state */ AnonDense, ReactNode]] = js.native
+  var renderPrefix: js.UndefOr[js.Function1[/* state */ AnonDisabled, ReactNode]] = js.native
   var renderValue: js.UndefOr[
     js.Function1[
       /* value */ js.UndefOr[
@@ -329,7 +329,7 @@ object PartialSelectProps {
   @scala.inline
   def apply(
     IconComponent: ReactType[_] = null,
-    MenuProps: PartialMenuProps = null,
+    MenuProps: PartialMenuPropsAbout = null,
     SelectDisplayProps: HTMLAttributes[HTMLDivElement] = null,
     about: String = null,
     accessKey: String = null,
@@ -389,7 +389,7 @@ object PartialSelectProps {
     autoWidth: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapSelectClassKey = null,
+    classes: PartialClassNameMapSelect = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
@@ -514,7 +514,7 @@ object PartialSelectProps {
     property: String = null,
     radioGroup: String = null,
     readOnly: js.UndefOr[Boolean] = js.undefined,
-    renderPrefix: /* state */ AnonDense => ReactNode = null,
+    renderPrefix: /* state */ AnonDisabled => ReactNode = null,
     renderValue: /* value */ js.UndefOr[
       (js.Array[String | Double | Boolean | js.Object]) | String | Double | Boolean | js.Object
     ] => ReactNode = null,

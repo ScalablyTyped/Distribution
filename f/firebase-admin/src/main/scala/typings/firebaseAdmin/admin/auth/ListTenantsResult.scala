@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Interface representing the object returned from a
   * {@link https://firebase.google.com/docs/reference/admin/node/admin.auth.Auth#listTenants `listTenants()`}
-  * operation. 
+  * operation.
   * Contains the list of tenants for the current batch and the next page token if available.
   */
 trait ListTenantsResult extends js.Object {

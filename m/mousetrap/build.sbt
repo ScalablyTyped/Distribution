@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mousetrap"
-version := "1.6.x-dt-20190701Z-48aea4"
+version := "1.6.x-dt-20200225Z-48aea4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

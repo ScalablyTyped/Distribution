@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ng-grid"
-version := "0.0-unknown-dt-20190322Z-f8513d"
+version := "0.0-unknown-dt-20200226Z-f8513d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

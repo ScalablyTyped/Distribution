@@ -14,7 +14,7 @@ trait LocationDetails extends js.Object {
     */
   var emailAddress: String
   /**
-    * The LocationIdentifier of the location.
+    * The `LocationIdentifier` of the location.
     */
   var locationIdentifier: LocationIdentifier
 }

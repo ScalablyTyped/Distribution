@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Excel.Interfaces
 
 import typings.officeJsPreview.Excel.LinkedDataTypeState
+import typings.officeJsPreview.Excel.NumberFormatCategory
 import typings.officeJsPreview.Excel.RangeHyperlink
 import typings.officeJsPreview.Excel.RangeValueType
 import scala.scalajs.js
@@ -161,6 +162,14 @@ trait RangeData extends js.Object {
   var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
   /**
     *
+    * Represents the category of number format of each cell. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var numberFormatCategories: js.UndefOr[js.Array[js.Array[NumberFormatCategory]]] = js.undefined
+  /**
+    *
     * Represents Excel's number format code for the given range, based on the language settings of the user.​
     Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
     Any returned text uses the locally-formatted strings based on the language specified in the system settings.
@@ -269,6 +278,7 @@ object RangeData {
     left: Int | Double = null,
     linkedDataTypeState: js.Array[js.Array[LinkedDataTypeState]] = null,
     numberFormat: js.Array[js.Array[_]] = null,
+    numberFormatCategories: js.Array[js.Array[NumberFormatCategory]] = null,
     numberFormatLocal: js.Array[js.Array[_]] = null,
     rowCount: Int | Double = null,
     rowHidden: js.UndefOr[Boolean] = js.undefined,
@@ -303,6 +313,7 @@ object RangeData {
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (linkedDataTypeState != null) __obj.updateDynamic("linkedDataTypeState")(linkedDataTypeState.asInstanceOf[js.Any])
     if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
+    if (numberFormatCategories != null) __obj.updateDynamic("numberFormatCategories")(numberFormatCategories.asInstanceOf[js.Any])
     if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal.asInstanceOf[js.Any])
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
     if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])

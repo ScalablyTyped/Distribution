@@ -18,7 +18,6 @@ sealed trait SearchDirection extends js.Object
 @js.native
 object SearchDirection extends js.Object {
   /**
-    *
     * Search in reverse order.
     *
     */
@@ -26,7 +25,6 @@ object SearchDirection extends js.Object {
   sealed trait backwards extends SearchDirection
   
   /**
-    *
     * Search in forward order.
     *
     */

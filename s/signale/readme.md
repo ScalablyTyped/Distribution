@@ -1,7 +1,7 @@
 
 # Scala.js typings for signale
 
-Typings are for version 1.2
+Typings are for version 1.4
 
 ## Library description:
 👋 Hackable console logger

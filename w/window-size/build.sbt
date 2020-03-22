@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "window-size"
-version := "0.2.0-dt-20190322Z-999108"
+version := "0.2.0-dt-20200227Z-999108"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__logger-console
 
-Typings are for version 4.0.3
+Typings are for version 4.1.0
 
 ## Library description:
 Promise-based log library using console log.

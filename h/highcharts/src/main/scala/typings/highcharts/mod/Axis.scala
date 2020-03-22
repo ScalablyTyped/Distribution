@@ -113,7 +113,7 @@ class Axis protected () extends js.Object {
     * https://api.highcharts.com/highcharts/xAxis.tickPositions) option
     * instead.
     */
-  var tickPositions: js.UndefOr[js.Array[Double]] = js.native
+  var tickPositions: js.UndefOr[AxisTickPositionsArray] = js.native
   /**
     * List of major ticks mapped by postition on axis.
     */

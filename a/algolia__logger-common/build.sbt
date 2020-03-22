@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "algolia__logger-common"
-version := "4.0.3-5461f7"
+version := "4.1.0-aa946e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

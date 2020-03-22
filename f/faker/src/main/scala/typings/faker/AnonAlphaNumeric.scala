@@ -13,11 +13,6 @@ trait AnonAlphaNumeric extends js.Object {
   def arrayElement(): String = js.native
   def arrayElement[T](array: js.Array[T]): T = js.native
   def boolean(): Boolean = js.native
-  def float(): Double = js.native
-  def float(options: AnonMax): Double = js.native
-  def float(precision: Double): Double = js.native
-  def hexaDecimal(): String = js.native
-  def hexaDecimal(count: Double): String = js.native
   def image(): String = js.native
   def locale(): String = js.native
   def number(): Double = js.native

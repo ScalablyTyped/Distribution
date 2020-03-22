@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-indicators
 
-Typings are for version 0.13
+Typings are for version 0.16
 
 ## Library description:
 Activity indicator collection

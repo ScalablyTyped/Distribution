@@ -67,6 +67,10 @@ trait PutBotResponse extends js.Object {
     */
   var status: js.UndefOr[Status] = js.native
   /**
+    * A list of tags associated with the bot.
+    */
+  var tags: js.UndefOr[TagList] = js.native
+  /**
     * The version of the bot. For a new bot, the version is always $LATEST.
     */
   var version: js.UndefOr[Version] = js.native
@@ -94,6 +98,7 @@ object PutBotResponse {
     locale: Locale = null,
     name: BotName = null,
     status: Status = null,
+    tags: TagList = null,
     version: Version = null,
     voiceId: String = null
   ): PutBotResponse = {
@@ -113,6 +118,7 @@ object PutBotResponse {
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     if (voiceId != null) __obj.updateDynamic("voiceId")(voiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotResponse]

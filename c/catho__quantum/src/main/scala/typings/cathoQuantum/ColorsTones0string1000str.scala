@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @catho/quantum.@catho/quantum/components/Colors.ColorsTones & {  0  :string,   1000  :string} */
+/* Inlined @catho/quantum.@catho/quantum/Colors.ColorsTones & {  0  :string,   1000  :string} */
 trait ColorsTones0string1000str extends js.Object {
   var `0`: String
   var `100`: String

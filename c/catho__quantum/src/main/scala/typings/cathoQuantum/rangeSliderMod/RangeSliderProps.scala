@@ -11,19 +11,20 @@ import typings.cathoQuantum.cathoQuantumStrings.off
 import typings.cathoQuantum.cathoQuantumStrings.on
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
+import typings.std.HTMLInputElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RangeSliderProps[T] extends js.Object {
+trait RangeSliderProps extends js.Object {
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
   var defaultValue: js.UndefOr[Double | AnonFrom] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var marks: js.UndefOr[js.Array[AnonLabelValue]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
-  var onChange: js.UndefOr[ChangeEventHandler[T]] = js.undefined
-  var onChangeCommitted: js.UndefOr[ChangeEventHandler[T]] = js.undefined
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
+  var onChangeCommitted: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
   var theme: js.UndefOr[AnonBaseFontSizeColors] = js.undefined
   var tipFormatter: js.UndefOr[
@@ -36,22 +37,22 @@ trait RangeSliderProps[T] extends js.Object {
 
 object RangeSliderProps {
   @scala.inline
-  def apply[T](
+  def apply(
     `aria-labelledby`: String = null,
     defaultValue: Double | AnonFrom = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     marks: js.Array[AnonLabelValue] = null,
     max: Int | Double = null,
     min: Int | Double = null,
-    onChange: ChangeEvent[T] => Unit = null,
-    onChangeCommitted: ChangeEvent[T] => Unit = null,
+    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
+    onChangeCommitted: ChangeEvent[HTMLInputElement] => Unit = null,
     step: Int | Double = null,
     theme: AnonBaseFontSizeColors = null,
     tipFormatter: (/* value */ js.UndefOr[Double], /* index */ js.UndefOr[Double]) => String = null,
     track: normal | `false` | inverted = null,
     value: Double | AnonFrom = null,
     valueLabelDisplay: auto | on | off = null
-  ): RangeSliderProps[T] = {
+  ): RangeSliderProps = {
     val __obj = js.Dynamic.literal()
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
@@ -67,7 +68,7 @@ object RangeSliderProps {
     if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (valueLabelDisplay != null) __obj.updateDynamic("valueLabelDisplay")(valueLabelDisplay.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RangeSliderProps[T]]
+    __obj.asInstanceOf[RangeSliderProps]
   }
 }
 

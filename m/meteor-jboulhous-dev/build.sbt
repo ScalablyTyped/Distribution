@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor-jboulhous-dev"
-version := "0.0-unknown-dt-20200108Z-36bf95"
+version := "0.0-unknown-dt-20200226Z-36bf95"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * The connection statistics of the remote stream.
+  *
+  * If the remote stream calls {@link getStats} successfully, this interface provides the statistics.
   */
 trait RemoteStreamStats extends js.Object {
   /** Delay in accessing the SD-RTN (ms). */
@@ -45,9 +47,9 @@ trait RemoteStreamStats extends js.Object {
   /** Number of lost packets of the received video. */
   var videoReceivePacketsLost: String
   /** Resolution height of the received video. */
-  var videoReceivedResolutionHeight: js.UndefOr[String] = js.undefined
+  var videoReceiveResolutionHeight: js.UndefOr[String] = js.undefined
   /** Resolution width of the received video. */
-  var videoReceivedResolutionWidth: js.UndefOr[String] = js.undefined
+  var videoReceiveResolutionWidth: js.UndefOr[String] = js.undefined
 }
 
 object RemoteStreamStats {
@@ -65,12 +67,12 @@ object RemoteStreamStats {
     videoReceiveFrameRate: String,
     videoReceivePackets: String,
     videoReceivePacketsLost: String,
-    videoReceivedResolutionHeight: String = null,
-    videoReceivedResolutionWidth: String = null
+    videoReceiveResolutionHeight: String = null,
+    videoReceiveResolutionWidth: String = null
   ): RemoteStreamStats = {
     val __obj = js.Dynamic.literal(accessDelay = accessDelay.asInstanceOf[js.Any], audioReceiveBytes = audioReceiveBytes.asInstanceOf[js.Any], audioReceiveDelay = audioReceiveDelay.asInstanceOf[js.Any], audioReceivePackets = audioReceivePackets.asInstanceOf[js.Any], audioReceivePacketsLost = audioReceivePacketsLost.asInstanceOf[js.Any], endToEndDelay = endToEndDelay.asInstanceOf[js.Any], videoReceiveBytes = videoReceiveBytes.asInstanceOf[js.Any], videoReceiveDecodeFrameRate = videoReceiveDecodeFrameRate.asInstanceOf[js.Any], videoReceiveDelay = videoReceiveDelay.asInstanceOf[js.Any], videoReceiveFrameRate = videoReceiveFrameRate.asInstanceOf[js.Any], videoReceivePackets = videoReceivePackets.asInstanceOf[js.Any], videoReceivePacketsLost = videoReceivePacketsLost.asInstanceOf[js.Any])
-    if (videoReceivedResolutionHeight != null) __obj.updateDynamic("videoReceivedResolutionHeight")(videoReceivedResolutionHeight.asInstanceOf[js.Any])
-    if (videoReceivedResolutionWidth != null) __obj.updateDynamic("videoReceivedResolutionWidth")(videoReceivedResolutionWidth.asInstanceOf[js.Any])
+    if (videoReceiveResolutionHeight != null) __obj.updateDynamic("videoReceiveResolutionHeight")(videoReceiveResolutionHeight.asInstanceOf[js.Any])
+    if (videoReceiveResolutionWidth != null) __obj.updateDynamic("videoReceiveResolutionWidth")(videoReceiveResolutionWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteStreamStats]
   }
 }

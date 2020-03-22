@@ -21,7 +21,7 @@ class TemplateBinding protected ()
     key: String,
     keyIsVar: Boolean,
     name: String,
-    expression: typings.angularCompiler.astMod.ASTWithSource
+    value: typings.angularCompiler.astMod.ASTWithSource
   ) = this()
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "builder-util-runtime" : "8.6.0"
+      "builder-util-runtime" : "8.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "builder-util-runtime" : "8.6.0"
+      "builder-util-runtime" : "8.6.2"
     }
   ],
   "compile-devDependencies" : [

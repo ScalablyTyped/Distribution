@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object babelTraverseStrings {
   @js.native
+  sealed trait NodePaths extends js.Object
+  
+  @js.native
   sealed trait Visitor extends js.Object
   
   @js.native
@@ -20,6 +23,8 @@ object babelTraverseStrings {
   @js.native
   sealed trait `var` extends js.Object
   
+  @scala.inline
+  def NodePaths: NodePaths = "NodePaths".asInstanceOf[NodePaths]
   @scala.inline
   def Visitor: Visitor = "Visitor".asInstanceOf[Visitor]
   @scala.inline

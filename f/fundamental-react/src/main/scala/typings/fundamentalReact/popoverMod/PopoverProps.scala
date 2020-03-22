@@ -1,6 +1,5 @@
 package typings.fundamentalReact.popoverMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -85,7 +84,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  body  :react.react.ReactNode,   control  :react.react.ReactNode,   className ? :string,   customStyles ? :{[x: string] : any},   disabled ? :boolean,   disableEdgeDetection ? :boolean,   disableKeyPressHandler ? :boolean,   disableStyles ? :boolean,   noArrow ? :boolean,   placement ? :fundamental-react.fundamental-react/lib/Popover/Popover.PopperPlacement,   popperProps ? :{[x: string] : any},   type ? :fundamental-react.fundamental-react/lib/Popover/Popover.PopoverTypes, onClickOutside ? (event : std.MouseEvent | std.TouchEvent | std.FocusEvent): void, onEscapeKey ? (): void,   useArrowKeyNavigation ? :boolean,   widthSizingType ? :fundamental-react.fundamental-react/lib/Popover/Popover.PopperSizingTypes} & react.react.HTMLAttributes<std.HTMLDivElement> */
+/* Inlined {  body  :react.react.ReactNode,   control  :react.react.ReactNode,   className ? :string,   disabled ? :boolean,   disableEdgeDetection ? :boolean,   disableKeyPressHandler ? :boolean,   disableStyles ? :boolean,   noArrow ? :boolean,   placement ? :fundamental-react.fundamental-react/lib/Popover/Popover.PopperPlacement,   popperClassName ? :string,   popperProps ? :any,   type ? :fundamental-react.fundamental-react/lib/Popover/Popover.PopoverTypes,   useArrowKeyNavigation ? :boolean,   widthSizingType ? :fundamental-react.fundamental-react/lib/Popover/Popover.PopperSizingTypes, onClickOutside ? (event : std.MouseEvent | std.TouchEvent | std.FocusEvent): void, onEscapeKey ? (): void} & react.react.HTMLAttributes<std.HTMLDivElement> */
 trait PopoverProps extends js.Object {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
@@ -99,7 +98,7 @@ trait PopoverProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   /**
@@ -279,25 +278,20 @@ trait PopoverProps extends js.Object {
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
-  /* Node(s) to render in the overlay. */
   var body: ReactNode
   var children: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  /* Node to render as the reference element (that the `body` will be placed in relation to). */
   var control: ReactNode
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
-  /* Set to **true** to render popover without edge detection so popover will not flip from top to bottom with scroll. */
   var disableEdgeDetection: js.UndefOr[Boolean] = js.undefined
-  /* Set to **true** to remove onKeyPress handler and aria-* roles. Only do so if the control is a complex component such as a FormInput with Button. */
   var disableKeyPressHandler: js.UndefOr[Boolean] = js.undefined
   var disableStyles: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -322,7 +316,6 @@ trait PopoverProps extends js.Object {
   var itemScope: js.UndefOr[Boolean] = js.undefined
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
-  /* Set to **true** to render a popover without an arrow. */
   var noArrow: js.UndefOr[Boolean] = js.undefined
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -339,7 +332,6 @@ trait PopoverProps extends js.Object {
   // Form Events
   var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  /* Callback for consumer clicking outside of popover body. */
   var onClickOutside: js.UndefOr[js.Function1[/* event */ MouseEvent | TouchEvent | FocusEvent, Unit]] = js.undefined
   // Composition Events
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -363,7 +355,6 @@ trait PopoverProps extends js.Object {
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  /* Callback when escape key is pressed when popover body is visible. */
   var onEscapeKey: js.UndefOr[js.Function0[Unit]] = js.undefined
   // Focus Events
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
@@ -424,10 +415,9 @@ trait PopoverProps extends js.Object {
   // Wheel Events
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
-  /* Initial position of the `body` (overlay) related to the `control`. */
   var placement: js.UndefOr[PopperPlacement] = js.undefined
-  /* Additional props to be spread to the overlay element. */
-  var popperProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var popperClassName: js.UndefOr[String] = js.undefined
+  var popperProps: js.UndefOr[js.Any] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
   // Unknown
@@ -446,7 +436,6 @@ trait PopoverProps extends js.Object {
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var translate: js.UndefOr[yes | no] = js.undefined
-  /* Indicates the type of popup - "dialog", "grid", "listbox", "menu", or "tree". This value is attached to aria-haspopup and is useful to assistive tech. Defaulted to boolean true. */
   var `type`: js.UndefOr[PopoverTypes] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -462,7 +451,7 @@ object PopoverProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -518,7 +507,6 @@ object PopoverProps {
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     control: ReactNode = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -624,7 +612,8 @@ object PopoverProps {
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
     placeholder: String = null,
     placement: PopperPlacement = null,
-    popperProps: StringDictionary[js.Any] = null,
+    popperClassName: String = null,
+    popperProps: js.Any = null,
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
@@ -708,7 +697,6 @@ object PopoverProps {
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
@@ -814,6 +802,7 @@ object PopoverProps {
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (popperClassName != null) __obj.updateDynamic("popperClassName")(popperClassName.asInstanceOf[js.Any])
     if (popperProps != null) __obj.updateDynamic("popperProps")(popperProps.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])

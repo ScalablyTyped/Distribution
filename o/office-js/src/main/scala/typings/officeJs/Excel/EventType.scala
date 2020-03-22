@@ -15,7 +15,6 @@ sealed trait EventType extends js.Object
 @js.native
 object EventType extends js.Object {
   /**
-    *
     * AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data view following a data change
     *
     */
@@ -23,7 +22,6 @@ object EventType extends js.Object {
   sealed trait agaveVisualUpdate extends EventType
   
   /**
-    *
     * ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart activates.
     *
     */
@@ -31,7 +29,6 @@ object EventType extends js.Object {
   sealed trait chartActivated extends EventType
   
   /**
-    *
     * ChartAdded represents the type of event registered on ChartCollection, and occurs when a new chart is added to the worksheet.
     *
     */
@@ -39,7 +36,6 @@ object EventType extends js.Object {
   sealed trait chartAdded extends EventType
   
   /**
-    *
     * ChartDeactivated represents the type of event registered on Chart or ChartCollection, and occurs when chart deactivates.
     *
     */
@@ -47,7 +43,6 @@ object EventType extends js.Object {
   sealed trait chartDeactivated extends EventType
   
   /**
-    *
     * ChartDeleted represents the type of event registered on ChartCollection, and occurs when a chart is deleted from the worksheet.
     *
     */
@@ -55,7 +50,6 @@ object EventType extends js.Object {
   sealed trait chartDeleted extends EventType
   
   /**
-    *
     * RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon
     *
     */
@@ -63,7 +57,6 @@ object EventType extends js.Object {
   sealed trait ribbonCommandExecuted extends EventType
   
   /**
-    *
     * ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.
     *
     */
@@ -71,7 +64,6 @@ object EventType extends js.Object {
   sealed trait shapeActivated extends EventType
   
   /**
-    *
     * ShapeDeactivated represents the type of event that is registered on Shape, and occurs when shape deactivates.
     *
     */
@@ -79,7 +71,6 @@ object EventType extends js.Object {
   sealed trait shapeDeactivated extends EventType
   
   /**
-    *
     * TableAdded represents the type of event registered on TableCollection, and occurs when a table is added.
     *
     */
@@ -87,7 +78,6 @@ object EventType extends js.Object {
   sealed trait tableAdded extends EventType
   
   /**
-    *
     * TableChanged represents the type of event registered on Table, and occurs when data changes.
     *
     */
@@ -95,7 +85,6 @@ object EventType extends js.Object {
   sealed trait tableChanged extends EventType
   
   /**
-    *
     * TableDeleted represents the type of event that is registered on TableCollection, and occurs when a table is deleted.
     *
     */
@@ -103,7 +92,6 @@ object EventType extends js.Object {
   sealed trait tableDeleted extends EventType
   
   /**
-    *
     * TableFiltered represents the type of event registered on table or TableCollection, and occurs when data of table is filtered.
     *
     */
@@ -111,7 +99,6 @@ object EventType extends js.Object {
   sealed trait tableFiltered extends EventType
   
   /**
-    *
     * TableSelectionChanged represents the type of event registered on Table, and occurs when selection changes.
     *
     */
@@ -119,7 +106,6 @@ object EventType extends js.Object {
   sealed trait tableSelectionChanged extends EventType
   
   /**
-    *
     * VisualChange represents the type of event registered on Visual, and occurs when there is a visual change.
     *
     */
@@ -127,7 +113,6 @@ object EventType extends js.Object {
   sealed trait visualChange extends EventType
   
   /**
-    *
     * VisualSelectionChanged represents the type of event registered on VisualCollection, and occurs when visual selection changes.
     *
     */
@@ -138,7 +123,6 @@ object EventType extends js.Object {
   sealed trait wacoperationEvent extends EventType
   
   /**
-    *
     * WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an auto save setting change.
     *
     */
@@ -146,7 +130,6 @@ object EventType extends js.Object {
   sealed trait workbookAutoSaveSettingChanged extends EventType
   
   /**
-    *
     * WorksheetActivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when worksheet activates.
     *
     */
@@ -154,7 +137,6 @@ object EventType extends js.Object {
   sealed trait worksheetActivated extends EventType
   
   /**
-    *
     * WorksheetAdded represents the type of event registered on WorksheetCollection, and occurs when a new worksheet is added to the workbook.
     *
     */
@@ -162,7 +144,6 @@ object EventType extends js.Object {
   sealed trait worksheetAdded extends EventType
   
   /**
-    *
     * WorksheetCalculated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when a worksheet is calculated.
     *
     */
@@ -170,7 +151,6 @@ object EventType extends js.Object {
   sealed trait worksheetCalculated extends EventType
   
   /**
-    *
     * WorksheetChanged represents the type of event registered on Worksheet or WorksheetCollection, and occurs when data changes.
     *
     */
@@ -178,7 +158,6 @@ object EventType extends js.Object {
   sealed trait worksheetChanged extends EventType
   
   /**
-    *
     * WorksheetColumnSorted represents the type of event registered on worksheet, and occurs when there is a sorting on columns happened.
     *
     */
@@ -186,7 +165,6 @@ object EventType extends js.Object {
   sealed trait worksheetColumnSorted extends EventType
   
   /**
-    *
     * WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when worksheet deactivates.
     *
     */
@@ -194,7 +172,6 @@ object EventType extends js.Object {
   sealed trait worksheetDeactivated extends EventType
   
   /**
-    *
     * WorksheetDeleted represents the type of event registered on WorksheetCollection, and occurs when a worksheet is deleted from the workbook.
     *
     */
@@ -202,7 +179,6 @@ object EventType extends js.Object {
   sealed trait worksheetDeleted extends EventType
   
   /**
-    *
     * WorksheetFiltered represents the type of event registered on worksheet or WorksheetCollection, and occurs when data of autofilter in the worksheet is filtered.
     *
     */
@@ -210,7 +186,6 @@ object EventType extends js.Object {
   sealed trait worksheetFiltered extends EventType
   
   /**
-    *
     * WorksheetFormatChanged represents the type of event registered on worksheet, and occurs when there is a format changed.
     *
     */
@@ -218,7 +193,6 @@ object EventType extends js.Object {
   sealed trait worksheetFormatChanged extends EventType
   
   /**
-    *
     * WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden state is changed.
     *
     */
@@ -226,7 +200,6 @@ object EventType extends js.Object {
   sealed trait worksheetRowHiddenChanged extends EventType
   
   /**
-    *
     * WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on rows happened.
     *
     */
@@ -234,7 +207,6 @@ object EventType extends js.Object {
   sealed trait worksheetRowSorted extends EventType
   
   /**
-    *
     * WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.
     *
     */
@@ -242,7 +214,6 @@ object EventType extends js.Object {
   sealed trait worksheetSelectionChanged extends EventType
   
   /**
-    *
     * WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is left-clicked/tapped.
     *
     */

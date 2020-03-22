@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "isomorphic-unfetch" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "isomorphic-unfetch" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

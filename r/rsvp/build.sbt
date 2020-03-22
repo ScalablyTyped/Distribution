@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rsvp"
-version := "4.0-dt-20190717Z-c58757"
+version := "4.0-dt-20200225Z-c58757"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

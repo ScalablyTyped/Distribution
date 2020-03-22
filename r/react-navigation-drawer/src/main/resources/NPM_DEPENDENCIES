@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-navigation-drawer" : "2.4.2"
+      "react-navigation-drawer" : "2.4.6"
     }
   ],
   "test-dependencies" : [
     {
-      "react-navigation-drawer" : "2.4.2"
+      "react-navigation-drawer" : "2.4.6"
     }
   ],
   "compile-devDependencies" : [

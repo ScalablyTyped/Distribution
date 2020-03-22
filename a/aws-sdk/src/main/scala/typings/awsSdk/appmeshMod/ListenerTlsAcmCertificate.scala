@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListenerTlsAcmCertificate extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) for the certificate. The certificate must meet specific requirements and you must have proxy authorization enabled. For more information, see TLS Encryption.
+    * The Amazon Resource Name (ARN) for the certificate. The certificate must meet specific requirements and you must have proxy authorization enabled. For more information, see Transport Layer Security (TLS).
     */
   var certificateArn: Arn = js.native
 }

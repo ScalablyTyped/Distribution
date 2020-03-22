@@ -85,6 +85,9 @@ object xrmStrings {
        with typings.xrm.Xrm.Client
   
   @js.native
+  sealed trait Percentsign extends js.Object
+  
+  @js.native
   sealed trait Previous
     extends StageChangeDirection
        with typings.xrm.Xrm.ProcessFlow.StageChangeDirection
@@ -189,6 +192,9 @@ object xrmStrings {
   sealed trait entity
     extends NavBarDisplay
        with typings.xrm.Xrm.Url.NavBarDisplay
+  
+  @js.native
+  sealed trait entitylist extends js.Object
   
   @js.native
   sealed trait expanded
@@ -308,6 +314,9 @@ object xrmStrings {
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
+  sealed trait px extends js.Object
+  
+  @js.native
   sealed trait quickform extends StandardControlType
   
   @js.native
@@ -334,6 +343,9 @@ object xrmStrings {
   sealed trait saveandnew
     extends EntitySaveMode
        with typings.xrm.Xrm.EntitySaveMode
+  
+  @js.native
+  sealed trait savedquery extends js.Object
   
   @js.native
   sealed trait standard
@@ -396,6 +408,9 @@ object xrmStrings {
        with typings.xrm.Xrm.Attributes.StringAttributeFormat
   
   @js.native
+  sealed trait userquery extends js.Object
+  
+  @js.native
   sealed trait video
     extends DevicePickFileType
        with PickFileTypes
@@ -427,6 +442,8 @@ object xrmStrings {
   def Online: Online = "Online".asInstanceOf[Online]
   @scala.inline
   def Outlook: Outlook = "Outlook".asInstanceOf[Outlook]
+  @scala.inline
+  def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   @scala.inline
   def Previous: Previous = "Previous".asInstanceOf[Previous]
   @scala.inline
@@ -467,6 +484,8 @@ object xrmStrings {
   def email: email = "email".asInstanceOf[email]
   @scala.inline
   def entity: entity = "entity".asInstanceOf[entity]
+  @scala.inline
+  def entitylist: entitylist = "entitylist".asInstanceOf[entitylist]
   @scala.inline
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   @scala.inline
@@ -512,6 +531,8 @@ object xrmStrings {
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   @scala.inline
+  def px: px = "px".asInstanceOf[px]
+  @scala.inline
   def quickform: quickform = "quickform".asInstanceOf[quickform]
   @scala.inline
   def recommended: recommended = "recommended".asInstanceOf[recommended]
@@ -523,6 +544,8 @@ object xrmStrings {
   def saveandclose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
   @scala.inline
   def saveandnew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
+  @scala.inline
+  def savedquery: savedquery = "savedquery".asInstanceOf[savedquery]
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
@@ -545,6 +568,8 @@ object xrmStrings {
   def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def url: url = "url".asInstanceOf[url]
+  @scala.inline
+  def userquery: userquery = "userquery".asInstanceOf[userquery]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline

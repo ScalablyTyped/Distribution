@@ -27,7 +27,7 @@ class StackSet protected () extends CustomResource {
     */
   val administrationRoleArn: Output_[String] = js.native
   /**
-    * Amazon Resource Name (ARN) of the Stack Set.
+    * Amazon Resource Name (ARN) of the StackSet.
     */
   val arn: Output_[String] = js.native
   /**
@@ -35,27 +35,27 @@ class StackSet protected () extends CustomResource {
     */
   val capabilities: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * Description of the Stack Set.
+    * Description of the StackSet.
     */
   val description: Output_[js.UndefOr[String]] = js.native
   /**
-    * Name of the IAM Role in all target accounts for Stack Set operations. Defaults to `AWSCloudFormationStackSetExecutionRole`.
+    * Name of the IAM Role in all target accounts for StackSet operations. Defaults to `AWSCloudFormationStackSetExecutionRole`.
     */
   val executionRoleName: Output_[js.UndefOr[String]] = js.native
   /**
-    * Name of the Stack Set. The name must be unique in the region where you create your Stack Set. The name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphabetic character and cannot be longer than 128 characters.
+    * Name of the StackSet. The name must be unique in the region where you create your StackSet. The name can contain only alphanumeric characters (case-sensitive) and hyphens. It must start with an alphabetic character and cannot be longer than 128 characters.
     */
   val name: Output_[String] = js.native
   /**
-    * Key-value map of input parameters for the Stack Set template. All template parameters, including those with a `Default`, must be configured or ignored with `lifecycle` configuration block `ignoreChanges` argument. All `NoEcho` template parameters must be ignored with the `lifecycle` configuration block `ignoreChanges` argument.
+    * Key-value map of input parameters for the StackSet template. All template parameters, including those with a `Default`, must be configured or ignored with `lifecycle` configuration block `ignoreChanges` argument. All `NoEcho` template parameters must be ignored with the `lifecycle` configuration block `ignoreChanges` argument.
     */
   val parameters: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
-    * Unique identifier of the Stack Set.
+    * Unique identifier of the StackSet.
     */
   val stackSetId: Output_[String] = js.native
   /**
-    * Key-value map of tags to associate with this Stack Set and the Stacks created from it. AWS CloudFormation also propagates these tags to supported resources that are created in the Stacks. A maximum number of 50 tags can be specified.
+    * Key-value map of tags to associate with this StackSet and the Stacks created from it. AWS CloudFormation also propagates these tags to supported resources that are created in the Stacks. A maximum number of 50 tags can be specified.
     */
   val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
   /**

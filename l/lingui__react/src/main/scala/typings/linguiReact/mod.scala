@@ -5,6 +5,7 @@ import typings.linguiReact.createFormatMod.FormatPropsWithoutI18n
 import typings.linguiReact.i18nMod.I18nComponentProps
 import typings.linguiReact.i18nProviderMod.I18nProviderProps
 import typings.linguiReact.linguiReactStrings.i18n
+import typings.linguiReact.linguiReactStrings.i18nHash
 import typings.linguiReact.selectMod.PluralPropsWithoutI18n
 import typings.linguiReact.selectMod.SelectPropsWithoutI18n
 import typings.linguiReact.transMod.TransPropsWithoutI18n
@@ -66,11 +67,11 @@ object mod extends js.Object {
   def i18nMark(id: String): String = js.native
   def withI18n(): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[String, i18n]], ComponentState]
+    ComponentClass[Pick[_, Exclude[String, i18n | i18nHash]], ComponentState]
   ] = js.native
   def withI18n(options: withI18nOptions): js.Function1[
     /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClass[Pick[_, Exclude[String, i18n]], ComponentState]
+    ComponentClass[Pick[_, Exclude[String, i18n | i18nHash]], ComponentState]
   ] = js.native
   @js.native
   object DateFormat extends TopLevel[

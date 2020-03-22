@@ -13,6 +13,14 @@ package object cloudwatchMod {
   type AlarmName = java.lang.String
   type AlarmNamePrefix = java.lang.String
   type AlarmNames = js.Array[typings.awsSdk.cloudwatchMod.AlarmName]
+  type AlarmRule = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.CompositeAlarm
+    - typings.awsSdk.awsSdkStrings.MetricAlarm
+    - java.lang.String
+  */
+  type AlarmType = typings.awsSdk.cloudwatchMod._AlarmType | java.lang.String
+  type AlarmTypes = js.Array[typings.awsSdk.cloudwatchMod.AlarmType]
   type AmazonResourceName = java.lang.String
   type AnomalyDetectorExcludedTimeRanges = js.Array[typings.awsSdk.cloudwatchMod.Range]
   type AnomalyDetectorMetricTimezone = java.lang.String
@@ -37,6 +45,7 @@ package object cloudwatchMod {
     - java.lang.String
   */
   type ComparisonOperator = typings.awsSdk.cloudwatchMod._ComparisonOperator | java.lang.String
+  type CompositeAlarms = js.Array[typings.awsSdk.cloudwatchMod.CompositeAlarm]
   type Counts = js.Array[typings.awsSdk.cloudwatchMod.DatapointValue]
   type DashboardArn = java.lang.String
   type DashboardBody = java.lang.String

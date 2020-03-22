@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "restify-cookies"
-version := "0.2-dt-20180214Z-0064ad"
+version := "0.2-dt-20200218Z-fcdd0f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

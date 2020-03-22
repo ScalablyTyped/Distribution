@@ -33,6 +33,7 @@ trait IDragDropEvents extends js.Object {
   ] = js.undefined
   /**
     * On drag enter region event callback.
+    * Returned string is the css classes that will be added to the entering element.
     */
   var onDragEnter: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], String]

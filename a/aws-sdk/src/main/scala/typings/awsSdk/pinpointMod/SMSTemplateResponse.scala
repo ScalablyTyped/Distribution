@@ -27,6 +27,10 @@ trait SMSTemplateResponse extends js.Object {
     */
   var LastModifiedDate: string = js.native
   /**
+    * The unique identifier for the recommender model that's used by the message template.
+    */
+  var RecommenderId: js.UndefOr[string] = js.native
+  /**
     * The custom description of the message template.
     */
   var TemplateDescription: js.UndefOr[string] = js.native
@@ -58,6 +62,7 @@ object SMSTemplateResponse {
     Arn: string = null,
     Body: string = null,
     DefaultSubstitutions: string = null,
+    RecommenderId: string = null,
     TemplateDescription: string = null,
     Version: string = null,
     tags: MapOfString = null
@@ -66,6 +71,7 @@ object SMSTemplateResponse {
     if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
     if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
     if (DefaultSubstitutions != null) __obj.updateDynamic("DefaultSubstitutions")(DefaultSubstitutions.asInstanceOf[js.Any])
+    if (RecommenderId != null) __obj.updateDynamic("RecommenderId")(RecommenderId.asInstanceOf[js.Any])
     if (TemplateDescription != null) __obj.updateDynamic("TemplateDescription")(TemplateDescription.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.officeJsPreview.OfficeExtension.ClientObject
-import typings.officeJsPreview.OfficeExtension.LoadOption
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,21 +19,12 @@ class ChartFill () extends ClientObject {
   @JSName("context")
   var context_ChartFill: RequestContext = js.native
   /**
-    *
     * Clear the fill color of a chart element.
     *
     * [Api set: ExcelApi 1.1]
     */
   def clear(): Unit = js.native
   /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-    */
-  def load(): ChartFill = js.native
-  def load(option: String): ChartFill = js.native
-  def load(option: js.Array[String]): ChartFill = js.native
-  def load(option: LoadOption): ChartFill = js.native
-  /**
-    *
     * Sets the fill formatting of a chart element to a uniform color.
     *
     * [Api set: ExcelApi 1.1]

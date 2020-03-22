@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "argv"
-version := "0.0-unknown-dt-20190322Z-acbcad"
+version := "0.0-unknown-dt-20200226Z-acbcad"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

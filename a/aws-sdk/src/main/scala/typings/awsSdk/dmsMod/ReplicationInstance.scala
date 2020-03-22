@@ -39,7 +39,7 @@ trait ReplicationInstance extends js.Object {
     */
   var KmsKeyId: js.UndefOr[String] = js.native
   /**
-    *  Specifies whether the replication instance is a Multi-AZ deployment. You cannot set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
+    *  Specifies whether the replication instance is a Multi-AZ deployment. You can't set the AvailabilityZone parameter if the Multi-AZ parameter is set to true. 
     */
   var MultiAZ: js.UndefOr[Boolean] = js.native
   /**
@@ -91,7 +91,7 @@ trait ReplicationInstance extends js.Object {
     */
   var ReplicationSubnetGroup: js.UndefOr[typings.awsSdk.dmsMod.ReplicationSubnetGroup] = js.native
   /**
-    * The availability zone of the standby replication instance in a Multi-AZ deployment.
+    * The Availability Zone of the standby replication instance in a Multi-AZ deployment.
     */
   var SecondaryAvailabilityZone: js.UndefOr[String] = js.native
   /**

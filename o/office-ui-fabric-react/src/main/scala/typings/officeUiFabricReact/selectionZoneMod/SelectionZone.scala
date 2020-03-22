@@ -1,16 +1,19 @@
 package typings.officeUiFabricReact.selectionZoneMod
 
 import typings.officeUiFabricReact.AnonIsSelectedOnFocus
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/utilities/selection/SelectionZone", "SelectionZone")
 @js.native
-class SelectionZone protected () extends BaseComponent[ISelectionZoneProps, ISelectionZoneState] {
+class SelectionZone protected ()
+  extends Component[ISelectionZoneProps, ISelectionZoneState, js.Any] {
   def this(props: ISelectionZoneProps) = this()
+  var _async: js.Any = js.native
   var _clearAndSelectIndex: js.Any = js.native
+  var _events: js.Any = js.native
   var _findItemRoot: js.Any = js.native
   /**
     * To avoid high startup cost of traversing the DOM on component mount,
@@ -36,8 +39,8 @@ class SelectionZone protected () extends BaseComponent[ISelectionZoneProps, ISel
   var _onClick: js.Any = js.native
   var _onContextMenu: js.Any = js.native
   /**
-    * In multi selection, if you double click within an item's root (but not within the invoke element or input elements),
-    * we should execute the invoke handler.
+    * In multi selection, if you double click within an item's root (but not within the invoke element or
+    * input elements), we should execute the invoke handler.
     */
   var _onDoubleClick: js.Any = js.native
   /**
@@ -72,6 +75,8 @@ class SelectionZone protected () extends BaseComponent[ISelectionZoneProps, ISel
   def componentDidMount_MSelectionZone(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSelectionZone(previousProps: ISelectionZoneProps): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MSelectionZone(): Unit = js.native
   /**
     * In some cases, the consuming scenario requires to set focus on a row without having SelectionZone
     * react to the event. Note that focus events in IE \<= 11 will occur asynchronously after .focus() has

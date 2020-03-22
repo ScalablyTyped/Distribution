@@ -1,7 +1,7 @@
 
 # Scala.js typings for gravatar
 
-Typings are for version v1.8.0
+Typings are for version 1.8
 
 ## Library description:
 Gravatar Node.js library

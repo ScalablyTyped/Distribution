@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object lambdaMod {
   type LambdaHandler = js.Function3[
     /* event */ typings.actionsOnGoogle.commonMod.JsonObject, 
-    /* context */ typings.awsLambda.handerMod.Context, 
-    /* callback */ typings.awsLambda.handerMod.Callback[js.Any], 
+    /* context */ typings.awsLambda.handlerMod.Context, 
+    /* callback */ typings.awsLambda.handlerMod.Callback[js.Any], 
     js.Promise[scala.Unit]
   ]
 }

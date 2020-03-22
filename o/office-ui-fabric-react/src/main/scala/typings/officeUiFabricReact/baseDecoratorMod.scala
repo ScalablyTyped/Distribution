@@ -1,6 +1,5 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
 import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object baseDecoratorMod extends js.Object {
   @js.native
-  class BaseDecorator[TProps, TState] protected () extends BaseComponent[TProps, TState] {
+  class BaseDecorator[TProps, TState] protected ()
+    extends Component[TProps, TState, js.Any] {
     def this(props: TProps) = this()
     var _composedComponentInstance: Component[TProps, TState, _] = js.native
     var _hoisted: js.Any = js.native

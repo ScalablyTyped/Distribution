@@ -1,13 +1,14 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.PartialAnnotationsArrowcolor
-import typings.plotlyJs.PartialAxis
+import typings.plotlyJs.PartialAxisCalendar
 import typings.plotlyJs.PartialFont
 import typings.plotlyJs.PartialHoverLabel
 import typings.plotlyJs.PartialImage
-import typings.plotlyJs.PartialLayoutAxisAutomargin
+import typings.plotlyJs.PartialLayoutAxisAngle
 import typings.plotlyJs.PartialLegend
 import typings.plotlyJs.PartialMargin
+import typings.plotlyJs.PartialPolarLayoutBgcolor
 import typings.plotlyJs.PartialSceneAspectmode
 import typings.plotlyJs.PartialShape
 import typings.plotlyJs.PartialSliderActivebgcolor
@@ -63,8 +64,17 @@ trait Layout extends js.Object {
   var orientation: Double
   var paper_bgcolor: Color
   var plot_bgcolor: Color
+  var polar: PartialPolarLayoutBgcolor
+  var polar2: PartialPolarLayoutBgcolor
+  var polar3: PartialPolarLayoutBgcolor
+  var polar4: PartialPolarLayoutBgcolor
+  var polar5: PartialPolarLayoutBgcolor
+  var polar6: PartialPolarLayoutBgcolor
+  var polar7: PartialPolarLayoutBgcolor
+  var polar8: PartialPolarLayoutBgcolor
+  var polar9: PartialPolarLayoutBgcolor
    // TODO
-  var radialaxis: PartialAxis
+  var radialaxis: PartialAxisCalendar
   var scene: PartialSceneAspectmode
   var selectdirection: h | v | d | any
   var separators: String
@@ -75,15 +85,15 @@ trait Layout extends js.Object {
   var title: String | PartialtextstringfontPart
   var titlefont: PartialFont
   var width: Double
-  var xaxis: PartialLayoutAxisAutomargin
-  var xaxis2: PartialLayoutAxisAutomargin
-  var xaxis3: PartialLayoutAxisAutomargin
-  var xaxis4: PartialLayoutAxisAutomargin
-  var xaxis5: PartialLayoutAxisAutomargin
-  var xaxis6: PartialLayoutAxisAutomargin
-  var xaxis7: PartialLayoutAxisAutomargin
-  var xaxis8: PartialLayoutAxisAutomargin
-  var xaxis9: PartialLayoutAxisAutomargin
+  var xaxis: PartialLayoutAxisAngle
+  var xaxis2: PartialLayoutAxisAngle
+  var xaxis3: PartialLayoutAxisAngle
+  var xaxis4: PartialLayoutAxisAngle
+  var xaxis5: PartialLayoutAxisAngle
+  var xaxis6: PartialLayoutAxisAngle
+  var xaxis7: PartialLayoutAxisAngle
+  var xaxis8: PartialLayoutAxisAngle
+  var xaxis9: PartialLayoutAxisAngle
   @JSName("xaxis.autorange")
   var xaxisDotautorange: Boolean
   @JSName("xaxis.range")
@@ -96,15 +106,15 @@ trait Layout extends js.Object {
   var xaxisDottitle: String
   @JSName("xaxis.type")
   var xaxisDottype: AxisType
-  var yaxis: PartialLayoutAxisAutomargin
-  var yaxis2: PartialLayoutAxisAutomargin
-  var yaxis3: PartialLayoutAxisAutomargin
-  var yaxis4: PartialLayoutAxisAutomargin
-  var yaxis5: PartialLayoutAxisAutomargin
-  var yaxis6: PartialLayoutAxisAutomargin
-  var yaxis7: PartialLayoutAxisAutomargin
-  var yaxis8: PartialLayoutAxisAutomargin
-  var yaxis9: PartialLayoutAxisAutomargin
+  var yaxis: PartialLayoutAxisAngle
+  var yaxis2: PartialLayoutAxisAngle
+  var yaxis3: PartialLayoutAxisAngle
+  var yaxis4: PartialLayoutAxisAngle
+  var yaxis5: PartialLayoutAxisAngle
+  var yaxis6: PartialLayoutAxisAngle
+  var yaxis7: PartialLayoutAxisAngle
+  var yaxis8: PartialLayoutAxisAngle
+  var yaxis9: PartialLayoutAxisAngle
   @JSName("yaxis.autorange")
   var yaxisDotautorange: Boolean
   @JSName("yaxis.range")
@@ -143,7 +153,16 @@ object Layout {
     orientation: Double,
     paper_bgcolor: Color,
     plot_bgcolor: Color,
-    radialaxis: PartialAxis,
+    polar: PartialPolarLayoutBgcolor,
+    polar2: PartialPolarLayoutBgcolor,
+    polar3: PartialPolarLayoutBgcolor,
+    polar4: PartialPolarLayoutBgcolor,
+    polar5: PartialPolarLayoutBgcolor,
+    polar6: PartialPolarLayoutBgcolor,
+    polar7: PartialPolarLayoutBgcolor,
+    polar8: PartialPolarLayoutBgcolor,
+    polar9: PartialPolarLayoutBgcolor,
+    radialaxis: PartialAxisCalendar,
     scene: PartialSceneAspectmode,
     selectdirection: h | v | d | any,
     separators: String,
@@ -153,28 +172,28 @@ object Layout {
     title: String | PartialtextstringfontPart,
     titlefont: PartialFont,
     width: Double,
-    xaxis: PartialLayoutAxisAutomargin,
-    xaxis2: PartialLayoutAxisAutomargin,
-    xaxis3: PartialLayoutAxisAutomargin,
-    xaxis4: PartialLayoutAxisAutomargin,
-    xaxis5: PartialLayoutAxisAutomargin,
-    xaxis6: PartialLayoutAxisAutomargin,
-    xaxis7: PartialLayoutAxisAutomargin,
-    xaxis8: PartialLayoutAxisAutomargin,
-    xaxis9: PartialLayoutAxisAutomargin,
+    xaxis: PartialLayoutAxisAngle,
+    xaxis2: PartialLayoutAxisAngle,
+    xaxis3: PartialLayoutAxisAngle,
+    xaxis4: PartialLayoutAxisAngle,
+    xaxis5: PartialLayoutAxisAngle,
+    xaxis6: PartialLayoutAxisAngle,
+    xaxis7: PartialLayoutAxisAngle,
+    xaxis8: PartialLayoutAxisAngle,
+    xaxis9: PartialLayoutAxisAngle,
     xaxisDotautorange: Boolean,
     xaxisDotrange: js.Tuple2[Datum, Datum],
     xaxisDottitle: String,
     xaxisDottype: AxisType,
-    yaxis: PartialLayoutAxisAutomargin,
-    yaxis2: PartialLayoutAxisAutomargin,
-    yaxis3: PartialLayoutAxisAutomargin,
-    yaxis4: PartialLayoutAxisAutomargin,
-    yaxis5: PartialLayoutAxisAutomargin,
-    yaxis6: PartialLayoutAxisAutomargin,
-    yaxis7: PartialLayoutAxisAutomargin,
-    yaxis8: PartialLayoutAxisAutomargin,
-    yaxis9: PartialLayoutAxisAutomargin,
+    yaxis: PartialLayoutAxisAngle,
+    yaxis2: PartialLayoutAxisAngle,
+    yaxis3: PartialLayoutAxisAngle,
+    yaxis4: PartialLayoutAxisAngle,
+    yaxis5: PartialLayoutAxisAngle,
+    yaxis6: PartialLayoutAxisAngle,
+    yaxis7: PartialLayoutAxisAngle,
+    yaxis8: PartialLayoutAxisAngle,
+    yaxis9: PartialLayoutAxisAngle,
     yaxisDotautorange: Boolean,
     yaxisDotrange: js.Tuple2[Datum, Datum],
     yaxisDottitle: String,
@@ -184,7 +203,7 @@ object Layout {
     `yaxisDotrange[0]`: Datum = null,
     `yaxisDotrange[1]`: Datum = null
   ): Layout = {
-    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], bargap = bargap.asInstanceOf[js.Any], bargroupgap = bargroupgap.asInstanceOf[js.Any], barmode = barmode.asInstanceOf[js.Any], barnorm = barnorm.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hiddenlabels = hiddenlabels.asInstanceOf[js.Any], hidesources = hidesources.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], radialaxis = radialaxis.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], selectdirection = selectdirection.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlefont = titlefont.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xaxis2 = xaxis2.asInstanceOf[js.Any], xaxis3 = xaxis3.asInstanceOf[js.Any], xaxis4 = xaxis4.asInstanceOf[js.Any], xaxis5 = xaxis5.asInstanceOf[js.Any], xaxis6 = xaxis6.asInstanceOf[js.Any], xaxis7 = xaxis7.asInstanceOf[js.Any], xaxis8 = xaxis8.asInstanceOf[js.Any], xaxis9 = xaxis9.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], yaxis2 = yaxis2.asInstanceOf[js.Any], yaxis3 = yaxis3.asInstanceOf[js.Any], yaxis4 = yaxis4.asInstanceOf[js.Any], yaxis5 = yaxis5.asInstanceOf[js.Any], yaxis6 = yaxis6.asInstanceOf[js.Any], yaxis7 = yaxis7.asInstanceOf[js.Any], yaxis8 = yaxis8.asInstanceOf[js.Any], yaxis9 = yaxis9.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], autosize = autosize.asInstanceOf[js.Any], bargap = bargap.asInstanceOf[js.Any], bargroupgap = bargroupgap.asInstanceOf[js.Any], barmode = barmode.asInstanceOf[js.Any], barnorm = barnorm.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], hiddenlabels = hiddenlabels.asInstanceOf[js.Any], hidesources = hidesources.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], polar = polar.asInstanceOf[js.Any], polar2 = polar2.asInstanceOf[js.Any], polar3 = polar3.asInstanceOf[js.Any], polar4 = polar4.asInstanceOf[js.Any], polar5 = polar5.asInstanceOf[js.Any], polar6 = polar6.asInstanceOf[js.Any], polar7 = polar7.asInstanceOf[js.Any], polar8 = polar8.asInstanceOf[js.Any], polar9 = polar9.asInstanceOf[js.Any], radialaxis = radialaxis.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], selectdirection = selectdirection.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any], shapes = shapes.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], sliders = sliders.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titlefont = titlefont.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xaxis2 = xaxis2.asInstanceOf[js.Any], xaxis3 = xaxis3.asInstanceOf[js.Any], xaxis4 = xaxis4.asInstanceOf[js.Any], xaxis5 = xaxis5.asInstanceOf[js.Any], xaxis6 = xaxis6.asInstanceOf[js.Any], xaxis7 = xaxis7.asInstanceOf[js.Any], xaxis8 = xaxis8.asInstanceOf[js.Any], xaxis9 = xaxis9.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], yaxis2 = yaxis2.asInstanceOf[js.Any], yaxis3 = yaxis3.asInstanceOf[js.Any], yaxis4 = yaxis4.asInstanceOf[js.Any], yaxis5 = yaxis5.asInstanceOf[js.Any], yaxis6 = yaxis6.asInstanceOf[js.Any], yaxis7 = yaxis7.asInstanceOf[js.Any], yaxis8 = yaxis8.asInstanceOf[js.Any], yaxis9 = yaxis9.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.autorange")(xaxisDotautorange.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.range")(xaxisDotrange.asInstanceOf[js.Any])
     __obj.updateDynamic("xaxis.title")(xaxisDottitle.asInstanceOf[js.Any])

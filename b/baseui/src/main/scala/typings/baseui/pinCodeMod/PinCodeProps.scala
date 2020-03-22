@@ -36,6 +36,7 @@ trait PinCodeProps extends js.Object {
   var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
   var error: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
+  var inputMode: js.UndefOr[String] = js.undefined
   var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
   var manageFocus: js.UndefOr[Boolean] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
@@ -75,6 +76,7 @@ object PinCodeProps {
     endEnhancer: (js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode = null,
     error: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    inputMode: String = null,
     inputRef: Ref[HTMLInputElement] = null,
     manageFocus: js.UndefOr[Boolean] = js.undefined,
     max: Int | Double = null,
@@ -107,6 +109,7 @@ object PinCodeProps {
     if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (!js.isUndefined(manageFocus)) __obj.updateDynamic("manageFocus")(manageFocus.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])

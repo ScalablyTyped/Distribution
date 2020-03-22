@@ -149,7 +149,7 @@ trait PartialFormControlProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapFormControlClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapFormCo] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[FormControlProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -337,7 +337,7 @@ object PartialFormControlProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapFormControlClassKey = null,
+    classes: PartialClassNameMapFormCo = null,
     color: String = null,
     component: ReactType[FormControlProps] = null,
     contentEditable: Booleanish | inherit = null,

@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialDataTitleFont
 import typings.plotlyJs.PartialFont
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
@@ -9,6 +10,18 @@ import typings.plotlyJs.plotlyJsStrings.SI
 import typings.plotlyJs.plotlyJsStrings._empty
 import typings.plotlyJs.plotlyJsStrings.`category ascending`
 import typings.plotlyJs.plotlyJsStrings.`category descending`
+import typings.plotlyJs.plotlyJsStrings.`max ascending`
+import typings.plotlyJs.plotlyJsStrings.`max descending`
+import typings.plotlyJs.plotlyJsStrings.`mean ascending`
+import typings.plotlyJs.plotlyJsStrings.`mean descending`
+import typings.plotlyJs.plotlyJsStrings.`median ascending`
+import typings.plotlyJs.plotlyJsStrings.`median descending`
+import typings.plotlyJs.plotlyJsStrings.`min ascending`
+import typings.plotlyJs.plotlyJsStrings.`min descending`
+import typings.plotlyJs.plotlyJsStrings.`sum ascending`
+import typings.plotlyJs.plotlyJsStrings.`sum descending`
+import typings.plotlyJs.plotlyJsStrings.`total ascending`
+import typings.plotlyJs.plotlyJsStrings.`total descending`
 import typings.plotlyJs.plotlyJsStrings.all
 import typings.plotlyJs.plotlyJsStrings.allticks
 import typings.plotlyJs.plotlyJsStrings.array
@@ -35,7 +48,7 @@ trait Axis extends js.Object {
   var autorange: `true` | `false` | reversed
   var calendar: Calendar
   var categoryarray: js.Array[_]
-  var categoryorder: trace | (`category ascending`) | (`category descending`) | array
+  var categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
   var color: Color
   var dtick: Double | String
   var exponentformat: none | e_ | E | power | SI | B
@@ -71,7 +84,7 @@ trait Axis extends js.Object {
   var ticktext: js.Array[String]
   var tickvals: js.Array[_]
   var tickwidth: Double
-  var title: String
+  var title: String | PartialDataTitleFont
   var titlefont: PartialFont
   var `type`: AxisType
   var visible: Boolean
@@ -86,7 +99,7 @@ object Axis {
     autorange: `true` | `false` | reversed,
     calendar: Calendar,
     categoryarray: js.Array[_],
-    categoryorder: trace | (`category ascending`) | (`category descending`) | array,
+    categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`),
     color: Color,
     dtick: Double | String,
     exponentformat: none | e_ | E | power | SI | B,
@@ -122,7 +135,7 @@ object Axis {
     ticktext: js.Array[String],
     tickvals: js.Array[_],
     tickwidth: Double,
-    title: String,
+    title: String | PartialDataTitleFont,
     titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,

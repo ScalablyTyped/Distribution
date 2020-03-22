@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ember__component"
-version := "3.0-dt-20191126Z-fbe6f5"
+version := "3.0-dt-20191126Z-bfa4c7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20191126Z-c78d90",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-2d3992",
-  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20190717Z-c58757",
+  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20200225Z-2bba69",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200225Z-e64e66",
+  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20200225Z-c58757",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

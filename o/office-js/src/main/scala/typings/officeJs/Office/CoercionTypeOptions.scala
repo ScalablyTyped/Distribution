@@ -4,7 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Provides an option for the data format.
+  */
 trait CoercionTypeOptions extends js.Object {
+  /**
+    * The desired data format.
+    */
   var coercionType: js.UndefOr[CoercionType | String] = js.undefined
 }
 

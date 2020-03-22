@@ -18,12 +18,14 @@ import scala.scalajs.js.annotation._
 trait DropdownProps extends js.Object {
   var error: js.UndefOr[Boolean] = js.undefined
   var getOptionLabel: js.UndefOr[js.Function1[/* args */ AnonOptionState, ReactNode]] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
   var innerRef: js.UndefOr[Ref[_]] = js.undefined
   var isLoading: js.UndefOr[Boolean] = js.undefined
   var labelKey: js.UndefOr[String] = js.undefined
   var maxDropdownHeight: js.UndefOr[String] = js.undefined
   var multi: js.UndefOr[Boolean] = js.undefined
   var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
+  var onActiveDescendantChange: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   var onItemSelect: js.UndefOr[OnItemSelect] = js.undefined
   var options: js.UndefOr[Value] = js.undefined
   var overrides: js.UndefOr[DropdownOverrides] = js.undefined
@@ -41,12 +43,14 @@ object DropdownProps {
   def apply(
     error: js.UndefOr[Boolean] = js.undefined,
     getOptionLabel: /* args */ AnonOptionState => ReactNode = null,
+    id: String = null,
     innerRef: Ref[_] = null,
     isLoading: js.UndefOr[Boolean] = js.undefined,
     labelKey: String = null,
     maxDropdownHeight: String = null,
     multi: js.UndefOr[Boolean] = js.undefined,
     noResultsMsg: ReactNode = null,
+    onActiveDescendantChange: /* id */ js.UndefOr[String] => Unit = null,
     onItemSelect: /* args */ AnonItem => js.Any = null,
     options: Value = null,
     overrides: DropdownOverrides = null,
@@ -61,12 +65,14 @@ object DropdownProps {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (getOptionLabel != null) __obj.updateDynamic("getOptionLabel")(js.Any.fromFunction1(getOptionLabel))
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
     if (!js.isUndefined(isLoading)) __obj.updateDynamic("isLoading")(isLoading.asInstanceOf[js.Any])
     if (labelKey != null) __obj.updateDynamic("labelKey")(labelKey.asInstanceOf[js.Any])
     if (maxDropdownHeight != null) __obj.updateDynamic("maxDropdownHeight")(maxDropdownHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
     if (noResultsMsg != null) __obj.updateDynamic("noResultsMsg")(noResultsMsg.asInstanceOf[js.Any])
+    if (onActiveDescendantChange != null) __obj.updateDynamic("onActiveDescendantChange")(js.Any.fromFunction1(onActiveDescendantChange))
     if (onItemSelect != null) __obj.updateDynamic("onItemSelect")(js.Any.fromFunction1(onItemSelect))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])

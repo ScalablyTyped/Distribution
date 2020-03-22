@@ -107,6 +107,8 @@ trait Options extends js.Object {
   	 * @default ejs.openDelimiter
   	 */
   var openDelimiter: js.UndefOr[String] = js.undefined
+  /** Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags. */
+  var outputFunctionName: js.UndefOr[String] = js.undefined
   /**
   	 * Remove all safe-to-remove whitespace, including leading and trailing
   	 * whitespace. It also enables a safer version of `-%>` line slurping for all
@@ -149,6 +151,7 @@ object Options {
     filename: String = null,
     localsName: String = null,
     openDelimiter: String = null,
+    outputFunctionName: String = null,
     rmWhitespace: js.UndefOr[Boolean] = js.undefined,
     root: String = null,
     strict: js.UndefOr[Boolean] = js.undefined
@@ -168,6 +171,7 @@ object Options {
     if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
     if (localsName != null) __obj.updateDynamic("localsName")(localsName.asInstanceOf[js.Any])
     if (openDelimiter != null) __obj.updateDynamic("openDelimiter")(openDelimiter.asInstanceOf[js.Any])
+    if (outputFunctionName != null) __obj.updateDynamic("outputFunctionName")(outputFunctionName.asInstanceOf[js.Any])
     if (!js.isUndefined(rmWhitespace)) __obj.updateDynamic("rmWhitespace")(rmWhitespace.asInstanceOf[js.Any])
     if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])

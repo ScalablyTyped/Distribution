@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wrench"
-version := "0.0-unknown-dt-20190322Z-de811e"
+version := "0.0-unknown-dt-20200225Z-de811e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

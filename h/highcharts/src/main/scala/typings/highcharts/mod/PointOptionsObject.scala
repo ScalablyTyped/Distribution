@@ -59,6 +59,22 @@ trait PointOptionsObject extends js.Object {
     */
   var colorValue: js.UndefOr[Double] = js.undefined
   /**
+    * (Highcharts, Highstock) Color of the line that connects the dumbbell
+    * point's values. By default it is the series' color.
+    */
+  var connectorColor: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts, Highstock) Pixel width of the line that connects the
+    * dumbbell point's values.
+    */
+  var connectorWidth: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts) A reserved subspace to store options and values for
+    * customized functionality. Here you can add additional data for your own
+    * event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
     * (Highcharts) A name for the dash style to use for the column or bar.
     * Overrides dashStyle on the series.
     *
@@ -71,8 +87,8 @@ trait PointOptionsObject extends js.Object {
     * options are the same as the ones for plotOptions.series.dataLabels.
     */
   var dataLabels: js.UndefOr[
-    DataLabelsOptionsObject | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | (js.Array[
-      DataLabelsOptionsObject | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject
+    DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | (js.Array[
+      DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject
     ])
   ] = js.undefined
   /**
@@ -163,6 +179,10 @@ trait PointOptionsObject extends js.Object {
     * (Highcharts, Highstock) The low or minimum value for each data point.
     */
   var low: js.UndefOr[Double] = js.undefined
+  /**
+    * (Highcharts, Highstock) Color of the start markers in a dumbbell graph.
+    */
+  var lowColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   /**
     * (Highcharts, Highstock) Options for the point markers of line-like
     * series.
@@ -298,9 +318,12 @@ object PointOptionsObject {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
     colorValue: Int | Double = null,
+    connectorColor: String = null,
+    connectorWidth: Int | Double = null,
+    custom: Dictionary[_] = null,
     dashStyle: DashStyleValue = null,
-    dataLabels: DataLabelsOptionsObject | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | (js.Array[
-      DataLabelsOptionsObject | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject
+    dataLabels: DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesPieDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject | (js.Array[
+      DataLabelsOptions | SeriesNetworkgraphDataLabelsOptionsObject | SeriesPackedBubbleDataLabelsOptionsObject | SeriesSunburstDataLabelsOptionsObject
     ]) = null,
     description: String = null,
     direction: Int | Double = null,
@@ -320,6 +343,7 @@ object PointOptionsObject {
     legendIndex: Int | Double = null,
     length: Int | Double = null,
     low: Int | Double = null,
+    lowColor: ColorString | GradientColorObject | PatternObject = null,
     marker: PointMarkerOptionsObject = null,
     median: Int | Double = null,
     name: Double | String = null,
@@ -354,6 +378,9 @@ object PointOptionsObject {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (colorValue != null) __obj.updateDynamic("colorValue")(colorValue.asInstanceOf[js.Any])
+    if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor.asInstanceOf[js.Any])
+    if (connectorWidth != null) __obj.updateDynamic("connectorWidth")(connectorWidth.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
@@ -374,6 +401,7 @@ object PointOptionsObject {
     if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (lowColor != null) __obj.updateDynamic("lowColor")(lowColor.asInstanceOf[js.Any])
     if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
     if (median != null) __obj.updateDynamic("median")(median.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

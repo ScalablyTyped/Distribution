@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "saml2-js"
-version := "1.6.0-dt-20190819Z-5a3d49"
+version := "1.6.0-dt-20200227Z-5a3d49"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

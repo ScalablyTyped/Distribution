@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   extends Class
      with BaseNode
      with Expression
-     with Pureish
      with Scopable {
   var body: ClassBody_
   var decorators: js.Array[Decorator_] | Null

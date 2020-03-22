@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.datePickerBaseMod
 
 import typings.officeUiFabricReact.datePickerTypesMod.IDatePicker
 import typings.officeUiFabricReact.datePickerTypesMod.IDatePickerProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/DatePicker/DatePicker.base", "DatePickerBase")
 @js.native
 class DatePickerBase protected ()
-  extends BaseComponent[IDatePickerProps, IDatePickerState]
+  extends Component[IDatePickerProps, IDatePickerState, js.Any]
      with IDatePicker {
   def this(props: IDatePickerProps) = this()
   var _calendar: js.Any = js.native

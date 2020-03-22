@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rsocket-types"
-version := "0.0-dt-20191126Z-4b1898"
+version := "0.0-dt-20200225Z-e6d638"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
-  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20191126Z-e6d339",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "rsocket-flowable" % "0.0-dt-20200226Z-5935c4",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

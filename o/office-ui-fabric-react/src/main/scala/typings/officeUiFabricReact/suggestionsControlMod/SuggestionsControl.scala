@@ -4,7 +4,8 @@ import typings.officeUiFabricReact.buttonTypesMod.IButton
 import typings.officeUiFabricReact.suggestionsCoreMod.SuggestionsCore
 import typings.officeUiFabricReact.suggestionsDottypesMod.ISuggestionsControlProps
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionModel
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
+import typings.react.mod.RefObject
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -13,7 +14,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl", "SuggestionsControl")
 @js.native
-class SuggestionsControl[T] protected () extends BaseComponent[ISuggestionsControlProps[T], ISuggestionsControlState[T]] {
+class SuggestionsControl[T] protected ()
+  extends Component[ISuggestionsControlProps[T], ISuggestionsControlState[T], js.Any] {
   def this(suggestionsProps: ISuggestionsControlProps[T]) = this()
   var SuggestionsOfProperType: js.Any = js.native
   var _forceResolveButton: IButton = js.native
@@ -35,9 +37,9 @@ class SuggestionsControl[T] protected () extends BaseComponent[ISuggestionsContr
     * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
     */
   var _selectPreviousItemOfItemType: js.Any = js.native
-  var _selectedElement: HTMLDivElement = js.native
-  var _suggestions: SuggestionsCore[T] = js.native
-  val currentSuggestion: ISuggestionModel[T] = js.native
+  var _selectedElement: RefObject[HTMLDivElement] = js.native
+  var _suggestions: RefObject[SuggestionsCore[T]] = js.native
+  val currentSuggestion: js.UndefOr[ISuggestionModel[T]] = js.native
   val currentSuggestionIndex: Double = js.native
   val selectedElement: js.UndefOr[HTMLDivElement] = js.native
   @JSName("UNSAFE_componentWillReceiveProps")

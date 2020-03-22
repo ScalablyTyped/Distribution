@@ -36,6 +36,7 @@ object TextareaProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     error: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    inputMode: String = null,
     inputRef: Ref[HTMLTextAreaElement] = null,
     max: Int | Double = null,
     min: Int | Double = null,
@@ -53,7 +54,7 @@ object TextareaProps {
     rows: Int | Double = null,
     size: mini | default_ | compact | large_ = null,
     `type`: String = null,
-    value: String = null
+    value: String | Double = null
   ): TextareaProps = {
     val __obj = js.Dynamic.literal()
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
@@ -67,6 +68,7 @@ object TextareaProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

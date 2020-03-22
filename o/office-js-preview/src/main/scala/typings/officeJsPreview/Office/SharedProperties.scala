@@ -8,13 +8,16 @@ import scala.scalajs.js.annotation._
 /**
   * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
   *
+  * For more information on how this object is used, see the
+  * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
+  *
   * [Api set: Mailbox 1.8]
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait SharedProperties extends js.Object {
   /**
@@ -26,14 +29,14 @@ trait SharedProperties extends js.Object {
     */
   var owner: String
   /**
-    * The target/owner's mailbox. Use with targetRestUrl to construct REST operation's URL.
+    * The target/owner's mailbox. Use with `targetRestUrl` to construct REST operation's URL.
     * 
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     */
   var targetMailbox: String
   /**
     * The REST API's base URL (currently https://outlook.office.com/api).
-    * Use with targetMailbox to construct REST operation's URL.
+    * Use with `targetMailbox` to construct REST operation's URL.
     * 
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     */

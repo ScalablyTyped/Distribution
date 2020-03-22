@@ -36,6 +36,9 @@ object codemirrorStrings {
   sealed trait autoCloseTags extends js.Object
   
   @js.native
+  sealed trait autoRefresh extends js.Object
+  
+  @js.native
   sealed trait autofocus extends js.Object
   
   @js.native
@@ -542,6 +545,8 @@ object codemirrorStrings {
   def autoCloseBrackets: autoCloseBrackets = "autoCloseBrackets".asInstanceOf[autoCloseBrackets]
   @scala.inline
   def autoCloseTags: autoCloseTags = "autoCloseTags".asInstanceOf[autoCloseTags]
+  @scala.inline
+  def autoRefresh: autoRefresh = "autoRefresh".asInstanceOf[autoRefresh]
   @scala.inline
   def autofocus: autofocus = "autofocus".asInstanceOf[autofocus]
   @scala.inline

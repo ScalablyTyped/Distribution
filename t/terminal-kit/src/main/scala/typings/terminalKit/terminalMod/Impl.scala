@@ -1,6 +1,7 @@
 package typings.terminalKit.terminalMod
 
 import typings.terminalKit.Anon0
+import typings.terminalKit.Anon1
 import typings.terminalKit.AnonAbort
 import typings.terminalKit.AnonB
 import typings.terminalKit.AnonBarStyle
@@ -425,9 +426,9 @@ trait Impl extends js.Object {
   def grey(): Terminal = js.native
   def grey(args: js.Any*): Terminal = js.native
   def grey(str: String): Terminal = js.native
-  def gridMenu(menuItems: js.Array[String]): Anon0 = js.native
+  def gridMenu(menuItems: js.Array[String]): Anon1 = js.native
   def gridMenu(menuItems: js.Array[String], callback: Callback[GridMenuResponse]): Unit = js.native
-  def gridMenu(menuItems: js.Array[String], options: GridMenuOptions): Anon0 = js.native
+  def gridMenu(menuItems: js.Array[String], options: GridMenuOptions): Anon1 = js.native
   def gridMenu(menuItems: js.Array[String], options: GridMenuOptions, callback: Callback[GridMenuResponse]): Unit = js.native
   def hidden(): Terminal = js.native
   def hidden(args: js.Any*): Terminal = js.native
@@ -436,10 +437,9 @@ trait Impl extends js.Object {
   def hideCursor(args: js.Any*): Terminal = js.native
   def hideCursor(str: String): Terminal = js.native
   def iconName(str: String): Terminal = js.native
-  def inputField(): AnonAbort = js.native
-  def inputField(callback: Callback[String]): Unit = js.native
-  def inputField(options: InputFieldOptions): AnonAbort = js.native
-  def inputField(options: InputFieldOptions, callback: Callback[String]): Unit = js.native
+  def inputField(callback: Callback[js.UndefOr[String]]): AnonPromise = js.native
+  def inputField(options: InputFieldOptions): AnonPromise = js.native
+  def inputField(options: InputFieldOptions, callback: Callback[js.UndefOr[String]]): AnonPromise = js.native
   def insert(n: Double): Terminal = js.native
   def insertLine(n: Double): Terminal = js.native
   def inverse(): Terminal = js.native
@@ -529,25 +529,25 @@ trait Impl extends js.Object {
   def setHighlightBgColorRgb(r: Double, g: Double, b: Double): Terminal = js.native
   def setPalette(palette: String): Unit = js.native
   def setPalette(palette: Palette): Unit = js.native
-  def singleColumnMenu(menuItems: js.Array[String]): AnonPromisePromise = js.native
+  def singleColumnMenu(menuItems: js.Array[String]): Anon0 = js.native
   def singleColumnMenu(menuItems: js.Array[String], callback: Callback[SingleColumnMenuResponse]): Unit = js.native
-  def singleColumnMenu(menuItems: js.Array[String], options: SingleColumnMenuOptions): AnonPromisePromise = js.native
+  def singleColumnMenu(menuItems: js.Array[String], options: SingleColumnMenuOptions): Anon0 = js.native
   def singleColumnMenu(
     menuItems: js.Array[String],
     options: SingleColumnMenuOptions,
     callback: Callback[SingleColumnMenuResponse]
   ): Unit = js.native
-  def singleLineMenu(menuItems: js.Array[String]): AnonPromise = js.native
+  def singleLineMenu(menuItems: js.Array[String]): AnonPromisePromise = js.native
   def singleLineMenu(menuItems: js.Array[String], callback: Callback[SingleLineMenuResponse]): Unit = js.native
-  def singleLineMenu(menuItems: js.Array[String], options: SingleLineMenuOptions): AnonPromise = js.native
+  def singleLineMenu(menuItems: js.Array[String], options: SingleLineMenuOptions): AnonPromisePromise = js.native
   def singleLineMenu(
     menuItems: js.Array[String],
     options: SingleLineMenuOptions,
     callback: Callback[SingleLineMenuResponse]
   ): Unit = js.native
-  def singleRowMenu(menuItems: js.Array[String]): AnonPromise = js.native
+  def singleRowMenu(menuItems: js.Array[String]): AnonPromisePromise = js.native
   def singleRowMenu(menuItems: js.Array[String], callback: Callback[SingleLineMenuResponse]): Unit = js.native
-  def singleRowMenu(menuItems: js.Array[String], options: SingleLineMenuOptions): AnonPromise = js.native
+  def singleRowMenu(menuItems: js.Array[String], options: SingleLineMenuOptions): AnonPromisePromise = js.native
   def singleRowMenu(
     menuItems: js.Array[String],
     options: SingleLineMenuOptions,

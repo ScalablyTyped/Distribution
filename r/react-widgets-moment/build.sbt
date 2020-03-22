@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-widgets-moment"
-version := "4.0-dt-20180214Z-b3e94c"
+version := "4.0-dt-20200225Z-b3e94c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

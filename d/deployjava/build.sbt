@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deployjava"
-version := "0.0-unknown-dt-20190322Z-f562af"
+version := "0.0-unknown-dt-20200226Z-f562af"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

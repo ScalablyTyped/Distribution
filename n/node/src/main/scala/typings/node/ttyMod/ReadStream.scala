@@ -13,6 +13,6 @@ class ReadStream protected () extends Socket {
   def this(fd: Double, options: SocketConstructorOpts) = this()
   var isRaw: Boolean = js.native
   var isTTY: Boolean = js.native
-  def setRawMode(mode: Boolean): Unit = js.native
+  def setRawMode(mode: Boolean): this.type = js.native
 }
 

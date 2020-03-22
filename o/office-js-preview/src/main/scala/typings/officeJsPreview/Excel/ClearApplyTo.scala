@@ -18,7 +18,6 @@ object ClearApplyTo extends js.Object {
   sealed trait all extends ClearApplyTo
   
   /**
-    *
     * Clears the contents of the range.
     *
     */
@@ -26,7 +25,6 @@ object ClearApplyTo extends js.Object {
   sealed trait contents extends ClearApplyTo
   
   /**
-    *
     * Clears all formatting for the range.
     *
     */
@@ -34,7 +32,6 @@ object ClearApplyTo extends js.Object {
   sealed trait formats extends ClearApplyTo
   
   /**
-    *
     * Clears all hyperlinks, but leaves all content and formatting intact.
     *
     */
@@ -42,7 +39,6 @@ object ClearApplyTo extends js.Object {
   sealed trait hyperlinks extends ClearApplyTo
   
   /**
-    *
     * Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
     *
     */

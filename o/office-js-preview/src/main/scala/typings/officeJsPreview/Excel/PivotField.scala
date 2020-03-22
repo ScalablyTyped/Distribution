@@ -5,9 +5,15 @@ import typings.officeJsPreview.Excel.Interfaces.PivotFieldData
 import typings.officeJsPreview.Excel.Interfaces.PivotFieldLoadOptions
 import typings.officeJsPreview.Excel.Interfaces.PivotFieldUpdateData
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
 import typings.officeJsPreview.officeJsPreviewStrings.Ascending
+import typings.officeJsPreview.officeJsPreviewStrings.Date
 import typings.officeJsPreview.officeJsPreviewStrings.Descending
+import typings.officeJsPreview.officeJsPreviewStrings.Label
+import typings.officeJsPreview.officeJsPreviewStrings.Manual
+import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
+import typings.officeJsPreview.officeJsPreviewStrings.Value
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -59,6 +65,82 @@ class PivotField () extends ClientObject {
     * [Api set: ExcelApi 1.8]
     */
   var subtotals: Subtotals = js.native
+  def applyFilter(filter: PivotDateFilter): Unit = js.native
+  def applyFilter(filter: PivotFilters): Unit = js.native
+  def applyFilter(filter: PivotLabelFilter): Unit = js.native
+  def applyFilter(filter: PivotManualFilter): Unit = js.native
+  /**
+    * Sets one or multiple of the field's current PivotFilters and applies them to the field.
+    If the provided filter(s) are invalid or cannot be applied, an exception is thrown.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param filter A configured specific PivotFilter or a PivotFilters interface containing multiple configured filters.
+    */
+  def applyFilter(filter: PivotValueFilter): Unit = js.native
+  /**
+    * Clears all criteria from all of the field's filters. This removes any active filtering on the field.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def clearAllFilters(): Unit = js.native
+  /**
+    * Clears all existing criteria from the field's filter of the given type (if one is currently applied).
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param filterType The type of filter on the field of which to clear all criteria.
+    */
+  def clearFilter(filterType: PivotFilterType): Unit = js.native
+  @JSName("clearFilter")
+  def clearFilter_Date(filterType: Date): Unit = js.native
+  @JSName("clearFilter")
+  def clearFilter_Label(filterType: Label): Unit = js.native
+  @JSName("clearFilter")
+  def clearFilter_Manual(filterType: Manual): Unit = js.native
+  /**
+    * Clears all existing criteria from the field's filter of the given type (if one is currently applied).
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    *
+    * @param filterType The type of filter on the field of which to clear all criteria.
+    */
+  @JSName("clearFilter")
+  def clearFilter_Unknown(filterType: Unknown_): Unit = js.native
+  @JSName("clearFilter")
+  def clearFilter_Value(filterType: Value): Unit = js.native
+  /**
+    * Gets all filters currently applied on the field.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    * @returns A PivotFilters interface with all active filters.
+    */
+  def getFilters(): ClientResult[PivotFilters] = js.native
+  /**
+    * Checks if there are any applied filters on the field.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param filterType The filter type to check. If no type is provided, this method will check if any filter is applied.
+    * @returns True if the field has a filter of type `filterType` applied. If filterType is not specified, true is returned if the field has any applied filters.
+    */
+  def isFiltered(): ClientResult[Boolean] = js.native
+  def isFiltered(filterType: PivotFilterType): ClientResult[Boolean] = js.native
+  @JSName("isFiltered")
+  def isFiltered_Date(filterType: Date): ClientResult[Boolean] = js.native
+  @JSName("isFiltered")
+  def isFiltered_Label(filterType: Label): ClientResult[Boolean] = js.native
+  @JSName("isFiltered")
+  def isFiltered_Manual(filterType: Manual): ClientResult[Boolean] = js.native
+  @JSName("isFiltered")
+  def isFiltered_Unknown(filterType: Unknown_): ClientResult[Boolean] = js.native
+  @JSName("isFiltered")
+  def isFiltered_Value(filterType: Value): ClientResult[Boolean] = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -85,7 +167,6 @@ class PivotField () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: PivotField): Unit = js.native
   /**
-    *
     * Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort will be based on the PivotField itself.
     *
     * [Api set: ExcelApi 1.8]
@@ -94,7 +175,6 @@ class PivotField () extends ClientObject {
     */
   def sortByLabels(sortBy: SortBy): Unit = js.native
   /**
-    *
     * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
     there are multiple values from the same DataPivotHierarchy.
     *
@@ -110,7 +190,6 @@ class PivotField () extends ClientObject {
   def sortByValues(sortBy: SortBy, valuesHierarchy: DataPivotHierarchy): Unit = js.native
   def sortByValues(sortBy: SortBy, valuesHierarchy: DataPivotHierarchy, pivotItemScope: js.Array[PivotItem | String]): Unit = js.native
   /**
-    *
     * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
     there are multiple values from the same DataPivotHierarchy.
     *

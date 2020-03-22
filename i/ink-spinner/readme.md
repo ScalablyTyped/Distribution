@@ -1,7 +1,7 @@
 
 # Scala.js typings for ink-spinner
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Spinner component for Ink

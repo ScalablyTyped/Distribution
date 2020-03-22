@@ -44,8 +44,6 @@ trait rechartsProps {
   @scala.inline
   def LabelProps: typings.recharts.mod.LabelProps.type = typings.recharts.mod.LabelProps
   type LabelProps = typings.recharts.mod.LabelProps
-  @scala.inline
-  def LabelListProps: typings.recharts.mod.LabelListProps.type = typings.recharts.mod.LabelListProps
   type LabelListProps = typings.recharts.mod.LabelListProps
   @scala.inline
   def LegendProps: typings.recharts.mod.LegendProps.type = typings.recharts.mod.LegendProps

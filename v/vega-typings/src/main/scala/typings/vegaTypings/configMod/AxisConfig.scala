@@ -45,6 +45,8 @@ trait AxisConfig extends js.Object {
   var labelFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]]
   var labelFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]]
   var labelLimit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
+  var labelLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
+  var labelOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
   var labelOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
   var labelOverlap: ExcludeValueRefKeepSignal[js.UndefOr[LabelOverlap | SignalRef]]
   var labelPadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]]
@@ -109,6 +111,8 @@ object AxisConfig {
     labelFontStyle: ExcludeValueRefKeepSignal[js.UndefOr[FontStyleValue]] = null,
     labelFontWeight: ExcludeValueRefKeepSignal[js.UndefOr[FontWeightValue]] = null,
     labelLimit: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
+    labelLineHeight: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
+    labelOffset: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
     labelOpacity: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
     labelOverlap: ExcludeValueRefKeepSignal[js.UndefOr[LabelOverlap | SignalRef]] = null,
     labelPadding: ExcludeValueRefKeepSignal[js.UndefOr[NumberValue]] = null,
@@ -170,6 +174,8 @@ object AxisConfig {
     if (labelFontStyle != null) __obj.updateDynamic("labelFontStyle")(labelFontStyle.asInstanceOf[js.Any])
     if (labelFontWeight != null) __obj.updateDynamic("labelFontWeight")(labelFontWeight.asInstanceOf[js.Any])
     if (labelLimit != null) __obj.updateDynamic("labelLimit")(labelLimit.asInstanceOf[js.Any])
+    if (labelLineHeight != null) __obj.updateDynamic("labelLineHeight")(labelLineHeight.asInstanceOf[js.Any])
+    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
     if (labelOpacity != null) __obj.updateDynamic("labelOpacity")(labelOpacity.asInstanceOf[js.Any])
     if (labelOverlap != null) __obj.updateDynamic("labelOverlap")(labelOverlap.asInstanceOf[js.Any])
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])

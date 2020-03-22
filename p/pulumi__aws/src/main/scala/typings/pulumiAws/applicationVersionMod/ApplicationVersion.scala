@@ -1,7 +1,6 @@
 package typings.pulumiAws.applicationVersionMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.elasticbeanstalkApplicationMod.Application
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -26,7 +25,7 @@ class ApplicationVersion protected () extends CustomResource {
   /**
     * Name of the Beanstalk Application the version is associated with.
     */
-  val application: Output_[Application] = js.native
+  val application: Output_[String] = js.native
   /**
     * The ARN assigned by AWS for this Elastic Beanstalk Application.
     */

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - typings.babelTypes.mod._Node because Already inherited */ trait EnumDeclaration_
   extends Declaration
-     with BaseNode {
+     with BaseNode
+     with Statement {
   var body: EnumBooleanBody_ | EnumNumberBody_ | EnumStringBody_ | EnumSymbolBody_
   var id: Identifier_
   @JSName("type")

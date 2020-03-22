@@ -15,7 +15,6 @@ sealed trait HeaderFooterState extends js.Object
 @js.native
 object HeaderFooterState extends js.Object {
   /**
-    *
     * Only one general header/footer is used for all pages printed.
     *
     */
@@ -23,7 +22,6 @@ object HeaderFooterState extends js.Object {
   sealed trait default extends HeaderFooterState
   
   /**
-    *
     * There is a separate first page header/footer, and a general header/footer used for all other pages.
     *
     */
@@ -31,7 +29,6 @@ object HeaderFooterState extends js.Object {
   sealed trait firstAndDefault extends HeaderFooterState
   
   /**
-    *
     * There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.
     *
     */
@@ -39,7 +36,6 @@ object HeaderFooterState extends js.Object {
   sealed trait firstOddAndEven extends HeaderFooterState
   
   /**
-    *
     * There is a different header/footer for odd and even pages.
     *
     */

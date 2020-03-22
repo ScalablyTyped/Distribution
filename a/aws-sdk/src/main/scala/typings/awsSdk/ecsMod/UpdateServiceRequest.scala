@@ -32,6 +32,14 @@ trait UpdateServiceRequest extends js.Object {
   var healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.native
   var networkConfiguration: js.UndefOr[NetworkConfiguration] = js.native
   /**
+    * An array of task placement constraint objects to update the service to use. If no value is specified, the existing placement constraints for the service will remain unchanged. If this value is specified, it will override any existing placement constraints defined for the service. To remove all existing placement constraints, specify an empty array. You can specify a maximum of 10 constraints per task (this limit includes constraints in the task definition and those specified at runtime).
+    */
+  var placementConstraints: js.UndefOr[PlacementConstraints] = js.native
+  /**
+    * The task placement strategy objects to update the service to use. If no value is specified, the existing placement strategy for the service will remain unchanged. If this value is specified, it will override the existing placement strategy defined for the service. To remove an existing placement strategy, specify an empty object. You can specify a maximum of five strategy rules per service.
+    */
+  var placementStrategy: js.UndefOr[PlacementStrategies] = js.native
+  /**
     * The platform version on which your tasks in the service are running. A platform version is only specified for tasks using the Fargate launch type. If a platform version is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
     */
   var platformVersion: js.UndefOr[String] = js.native
@@ -56,6 +64,8 @@ object UpdateServiceRequest {
     forceNewDeployment: js.UndefOr[scala.Boolean] = js.undefined,
     healthCheckGracePeriodSeconds: Int | scala.Double = null,
     networkConfiguration: NetworkConfiguration = null,
+    placementConstraints: PlacementConstraints = null,
+    placementStrategy: PlacementStrategies = null,
     platformVersion: String = null,
     taskDefinition: String = null
   ): UpdateServiceRequest = {
@@ -67,6 +77,8 @@ object UpdateServiceRequest {
     if (!js.isUndefined(forceNewDeployment)) __obj.updateDynamic("forceNewDeployment")(forceNewDeployment.asInstanceOf[js.Any])
     if (healthCheckGracePeriodSeconds != null) __obj.updateDynamic("healthCheckGracePeriodSeconds")(healthCheckGracePeriodSeconds.asInstanceOf[js.Any])
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
+    if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
+    if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy.asInstanceOf[js.Any])
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
     if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServiceRequest]

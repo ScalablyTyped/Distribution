@@ -11,6 +11,7 @@ trait AreaEncodeEntry extends LineEncodeEntry {
 object AreaEncodeEntry {
   @scala.inline
   def apply(
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[StringValueRef] = null,
     defined: ProductionRule[BooleanValueRef] = null,
     fill: ProductionRule[ColorValueRef] = null,
@@ -39,6 +40,7 @@ object AreaEncodeEntry {
     zindex: ProductionRule[NumericValueRef] = null
   ): AreaEncodeEntry = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (defined != null) __obj.updateDynamic("defined")(defined.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])

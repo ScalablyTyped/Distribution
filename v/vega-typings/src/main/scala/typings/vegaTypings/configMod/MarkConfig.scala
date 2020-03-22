@@ -2,6 +2,7 @@ package typings.vegaTypings.configMod
 
 import typings.vegaTypings.colorMod.Color
 import typings.vegaTypings.encodeMod.Align
+import typings.vegaTypings.encodeMod.Blend
 import typings.vegaTypings.encodeMod.FontStyle
 import typings.vegaTypings.encodeMod.FontWeight
 import typings.vegaTypings.encodeMod.Gradient
@@ -40,6 +41,12 @@ trait MarkConfig extends js.Object {
     *
     */
   var baseline: js.UndefOr[TextBaseline | SignalRef] = js.undefined
+  /**
+    * The color blend mode for drawing an item on its current background. Any valid [CSS mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode) value can be used.
+    *
+    * __Default value: `"source-over"`
+    */
+  var blend: js.UndefOr[Blend] = js.undefined
   // ---------- Corner Radius: Bar, Tick, Rect ----------
   /**
     * The radius in pixels of rounded rectangle corners.
@@ -80,7 +87,7 @@ trait MarkConfig extends js.Object {
     *
     * __Default value:__ `"ltr"`
     */
-  var dir: js.UndefOr[TextDirection] = js.undefined
+  var dir: js.UndefOr[TextDirection | SignalRef] = js.undefined
   /**
     * The horizontal offset, in pixels, between the text label and its anchor point. The offset is applied after rotation by the _angle_ property.
     */
@@ -292,13 +299,14 @@ object MarkConfig {
     angle: Double | SignalRef = null,
     aspect: js.UndefOr[Boolean] = js.undefined,
     baseline: TextBaseline | SignalRef = null,
+    blend: Blend = null,
     cornerRadius: Int | Double = null,
     cornerRadiusBottomLeft: Int | Double = null,
     cornerRadiusBottomRight: Int | Double = null,
     cornerRadiusTopLeft: Int | Double = null,
     cornerRadiusTopRight: Int | Double = null,
     cursor: Cursor | SignalRef = null,
-    dir: TextDirection = null,
+    dir: TextDirection | SignalRef = null,
     dx: Double | SignalRef = null,
     dy: Double | SignalRef = null,
     ellipsis: String = null,
@@ -339,6 +347,7 @@ object MarkConfig {
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
     if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])
     if (cornerRadiusBottomRight != null) __obj.updateDynamic("cornerRadiusBottomRight")(cornerRadiusBottomRight.asInstanceOf[js.Any])

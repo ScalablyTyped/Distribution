@@ -1,6 +1,6 @@
 package typings.evernote
 
-import typings.evernote.mod.Evernote.NoteSortOrder
+import typings.evernote.mod.Types.NoteSortOrder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

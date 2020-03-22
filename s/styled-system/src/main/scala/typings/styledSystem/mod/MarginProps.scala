@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'm' | 'margin' | 'mt' | 'marginTop' | 'mb' | 'marginBottom' | 'ml' | 'marginLeft' | 'mr' | 'marginRight' | 'my' | 'mx'> */
+/* Inlined parent std.Pick<styled-system.styled-system.SpaceProps<ThemeType, styled-system.styled-system.ThemeValue<'space', ThemeType, any>>, 'm' | 'margin' | 'mt' | 'marginTop' | 'mb' | 'marginBottom' | 'ml' | 'marginLeft' | 'mr' | 'marginRight' | 'my' | 'marginY' | 'mx' | 'marginX'> */
 trait MarginProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   var m: js.UndefOr[
     ResponsiveValue[
@@ -37,6 +37,18 @@ trait MarginProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Obje
     ]
   ] = js.undefined
   var marginTop: js.UndefOr[
+    ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ]
+  ] = js.undefined
+  var marginX: js.UndefOr[
+    ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ]
+  ] = js.undefined
+  var marginY: js.UndefOr[
     ResponsiveValue[
       ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
       ThemeType
@@ -107,6 +119,14 @@ object MarginProps {
       ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
       ThemeType
     ] = null,
+    marginX: ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ] = null,
+    marginY: ResponsiveValue[
+      ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
+      ThemeType
+    ] = null,
     mb: ResponsiveValue[
       ThemeValue[typings.styledSystem.styledSystemStrings.space, ThemeType, _], 
       ThemeType
@@ -139,6 +159,8 @@ object MarginProps {
     if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
     if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
     if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
     if (mb != null) __obj.updateDynamic("mb")(mb.asInstanceOf[js.Any])
     if (ml != null) __obj.updateDynamic("ml")(ml.asInstanceOf[js.Any])
     if (mr != null) __obj.updateDynamic("mr")(mr.asInstanceOf[js.Any])

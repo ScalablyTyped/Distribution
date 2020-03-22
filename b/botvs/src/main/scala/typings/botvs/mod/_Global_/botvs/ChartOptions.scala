@@ -9,6 +9,7 @@ import typings.highcharts.mod.ColorString
 import typings.highcharts.mod.ConnectorsOptions
 import typings.highcharts.mod.CreditsOptions
 import typings.highcharts.mod.DataOptions
+import typings.highcharts.mod.DefsOptions
 import typings.highcharts.mod.DrilldownOptions
 import typings.highcharts.mod.ExportingOptions
 import typings.highcharts.mod.GlobalOptions
@@ -56,7 +57,7 @@ object ChartOptions {
     connectors: ConnectorsOptions = null,
     credits: CreditsOptions = null,
     data: DataOptions = null,
-    defs: js.Any = null,
+    defs: DefsOptions = null,
     drilldown: DrilldownOptions = null,
     exporting: ExportingOptions = null,
     global: GlobalOptions = null,

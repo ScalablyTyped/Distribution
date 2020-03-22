@@ -1,0 +1,12 @@
+package typings.tensorflowTfjsCore.kernelNamesMod
+
+import org.scalablytyped.runtime.TopLevel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@tensorflow/tfjs-core/dist/kernel_names", "Square")
+@js.native
+object Square
+  extends TopLevel[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.Square]
+

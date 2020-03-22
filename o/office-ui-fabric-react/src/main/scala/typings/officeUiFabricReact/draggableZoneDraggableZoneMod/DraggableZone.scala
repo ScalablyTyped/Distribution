@@ -18,7 +18,7 @@ class DraggableZone protected ()
   var _createDragDataFromPosition: js.Any = js.native
   /**
     * Creates an updated DragData based off the current position and given baseDragData
-    * @param baseDragData The base DragData (gotten from _createDragDataFromPosition) used to calculate the updated positions
+    * @param baseDragData The base DragData (from _createDragDataFromPosition) used to calculate the updated positions
     */
   var _createUpdatedDragData: js.Any = js.native
   var _currentEventType: js.Any = js.native

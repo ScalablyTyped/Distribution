@@ -17,6 +17,11 @@ trait Cookie extends js.Object {
   var name: String
   /** The path of the cookie. */
   var path: String
+  /**
+    * The cookie's same-site status (i.e. whether the cookie is sent with cross-site requests).
+    * @since Chrome 51.
+    */
+  var sameSite: SameSiteStatus
   /** True if the cookie is marked as Secure (i.e. its scope is limited to secure channels, typically HTTPS). */
   var secure: Boolean
   /** True if the cookie is a session cookie, as opposed to a persistent cookie with an expiration date. */
@@ -35,13 +40,14 @@ object Cookie {
     httpOnly: Boolean,
     name: String,
     path: String,
+    sameSite: SameSiteStatus,
     secure: Boolean,
     session: Boolean,
     storeId: String,
     value: String,
     expirationDate: Int | Double = null
   ): Cookie = {
-    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], hostOnly = hostOnly.asInstanceOf[js.Any], httpOnly = httpOnly.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], storeId = storeId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], hostOnly = hostOnly.asInstanceOf[js.Any], httpOnly = httpOnly.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sameSite = sameSite.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], storeId = storeId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cookie]
   }

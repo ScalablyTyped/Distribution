@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "toposort"
-version := "2.0-dt-20190812Z-bdd14c"
+version := "2.0-dt-20200227Z-bdd14c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

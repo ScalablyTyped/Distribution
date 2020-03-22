@@ -14,6 +14,7 @@ trait Options extends js.Object {
   /***
     * Buffer duration before writing logs to the stream, defaults to false.
     * When set to true, defaults to 1000 ms.
+    * @deprecated
     */
   var buffer: js.UndefOr[Boolean] = js.undefined
   /***
@@ -26,7 +27,9 @@ trait Options extends js.Object {
     * Function to determine if logging is skipped, defaults to false. This
     * function will be called as skip(req, res).
     */
-  var skip: js.UndefOr[js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_, Boolean]] = js.undefined
+  var skip: js.UndefOr[
+    js.Function2[/* req */ Request_[ParamsDictionary], /* res */ Response_[_], Boolean]
+  ] = js.undefined
   /***
     * Output stream for writing log lines, defaults to process.stdout.
     * @param str
@@ -39,7 +42,7 @@ object Options {
   def apply(
     buffer: js.UndefOr[Boolean] = js.undefined,
     immediate: js.UndefOr[Boolean] = js.undefined,
-    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null,
+    skip: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Boolean = null,
     stream: StreamOptions = null
   ): Options = {
     val __obj = js.Dynamic.literal()

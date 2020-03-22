@@ -11,6 +11,18 @@ import typings.plotlyJs.plotlyJsStrings.SI
 import typings.plotlyJs.plotlyJsStrings._empty
 import typings.plotlyJs.plotlyJsStrings.`category ascending`
 import typings.plotlyJs.plotlyJsStrings.`category descending`
+import typings.plotlyJs.plotlyJsStrings.`max ascending`
+import typings.plotlyJs.plotlyJsStrings.`max descending`
+import typings.plotlyJs.plotlyJsStrings.`mean ascending`
+import typings.plotlyJs.plotlyJsStrings.`mean descending`
+import typings.plotlyJs.plotlyJsStrings.`median ascending`
+import typings.plotlyJs.plotlyJsStrings.`median descending`
+import typings.plotlyJs.plotlyJsStrings.`min ascending`
+import typings.plotlyJs.plotlyJsStrings.`min descending`
+import typings.plotlyJs.plotlyJsStrings.`sum ascending`
+import typings.plotlyJs.plotlyJsStrings.`sum descending`
+import typings.plotlyJs.plotlyJsStrings.`total ascending`
+import typings.plotlyJs.plotlyJsStrings.`total descending`
 import typings.plotlyJs.plotlyJsStrings.all
 import typings.plotlyJs.plotlyJsStrings.allticks
 import typings.plotlyJs.plotlyJsStrings.array
@@ -38,7 +50,9 @@ trait PartialAxis extends js.Object {
   var autorange: js.UndefOr[`true` | `false` | reversed] = js.undefined
   var calendar: js.UndefOr[Calendar] = js.undefined
   var categoryarray: js.UndefOr[js.Array[_]] = js.undefined
-  var categoryorder: js.UndefOr[trace | (`category ascending`) | (`category descending`) | array] = js.undefined
+  var categoryorder: js.UndefOr[
+    trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
+  ] = js.undefined
   var color: js.UndefOr[Color] = js.undefined
   var dtick: js.UndefOr[Double | String] = js.undefined
   var exponentformat: js.UndefOr[none | e_ | E | power | SI | B] = js.undefined
@@ -74,7 +88,7 @@ trait PartialAxis extends js.Object {
   var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   var tickvals: js.UndefOr[js.Array[_]] = js.undefined
   var tickwidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | PartialDataTitle] = js.undefined
   var titlefont: js.UndefOr[PartialFont] = js.undefined
   var `type`: js.UndefOr[AxisType] = js.undefined
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -89,7 +103,7 @@ object PartialAxis {
     autorange: `true` | `false` | reversed = null,
     calendar: Calendar = null,
     categoryarray: js.Array[_] = null,
-    categoryorder: trace | (`category ascending`) | (`category descending`) | array = null,
+    categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`) = null,
     color: Color = null,
     dtick: Double | String = null,
     exponentformat: none | e_ | E | power | SI | B = null,
@@ -125,7 +139,7 @@ object PartialAxis {
     ticktext: js.Array[String] = null,
     tickvals: js.Array[_] = null,
     tickwidth: Int | Double = null,
-    title: String = null,
+    title: String | PartialDataTitle = null,
     titlefont: PartialFont = null,
     `type`: AxisType = null,
     visible: js.UndefOr[Boolean] = js.undefined,

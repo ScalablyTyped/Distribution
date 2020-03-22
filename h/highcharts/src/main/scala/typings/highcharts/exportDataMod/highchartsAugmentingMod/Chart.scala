@@ -50,16 +50,6 @@ trait Chart extends js.Object {
   def getTable(): String = js.native
   def getTable(useLocalDecimalPoint: Boolean): String = js.native
   /**
-    * Experimental function to send a chart's config to the Cloud for
-    * editing.
-    *
-    * Limitations
-    *
-    * - All functions (formatters and callbacks) are removed since they're
-    * not JSON.
-    */
-  def openInCloud(): Unit = js.native
-  /**
     * Export-data module required. View the data in a table below the
     * chart.
     *

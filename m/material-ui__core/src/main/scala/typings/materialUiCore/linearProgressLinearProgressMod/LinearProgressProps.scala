@@ -1,6 +1,6 @@
 package typings.materialUiCore.linearProgressLinearProgressMod
 
-import typings.materialUiCore.PartialClassNameMapLinearProgressClassKey
+import typings.materialUiCore.PartialClassNameMapLinear
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -151,7 +151,7 @@ trait LinearProgressProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapLinearProgressClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapLinear] = js.native
   var color: js.UndefOr[primary | secondary] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -334,7 +334,7 @@ object LinearProgressProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapLinearProgressClassKey = null,
+    classes: PartialClassNameMapLinear = null,
     color: primary | secondary = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

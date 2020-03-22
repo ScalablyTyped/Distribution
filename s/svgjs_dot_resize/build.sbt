@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svgjs_dot_resize"
-version := "0.0-unknown-dt-20190322Z-c2c84e"
+version := "0.0-unknown-dt-20200227Z-c2c84e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

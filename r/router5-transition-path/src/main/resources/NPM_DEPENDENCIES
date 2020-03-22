@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "router5-transition-path" : "8.0.0"
+      "router5-transition-path" : "8.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "router5-transition-path" : "8.0.0"
+      "router5-transition-path" : "8.0.1"
     }
   ],
   "compile-devDependencies" : [

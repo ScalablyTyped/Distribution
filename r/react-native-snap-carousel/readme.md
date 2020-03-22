@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-snap-carousel
 
-Typings are for version 3.7
+Typings are for version 3.8
 
 ## Library description:
 Swiper/carousel component for React Native with previews, multiple layouts, parallax images, performant handling of huge numbers of items, and RTL support. Compatible with Android & iOS.

@@ -33,6 +33,7 @@ object languages extends js.Object {
     provider: DocumentSymbolProvider,
     metaData: DocumentSymbolProviderMetadata
   ): Disposable = js.native
+  def registerEvaluatableExpressionProvider(selector: DocumentSelector, provider: EvaluatableExpressionProvider): Disposable = js.native
   def registerFoldingRangeProvider(selector: DocumentSelector, provider: FoldingRangeProvider): Disposable = js.native
   def registerHoverProvider(selector: DocumentSelector, provider: HoverProvider): Disposable = js.native
   def registerImplementationProvider(selector: DocumentSelector, provider: ImplementationProvider): Disposable = js.native

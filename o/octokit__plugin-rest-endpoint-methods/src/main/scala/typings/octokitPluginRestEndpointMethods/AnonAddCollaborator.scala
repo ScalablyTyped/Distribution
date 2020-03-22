@@ -36,92 +36,92 @@ trait AnonAddCollaborator extends js.Object {
     * Adds a collaborator to a an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
     */
   @JSName("addCollaborator")
-  var addCollaborator_Original: Anon236 = js.native
+  var addCollaborator_Original: Anon242 = js.native
   /**
     * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by the `pull_request` key.
     *
     * Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
     */
   @JSName("createCard")
-  var createCard_Original: Anon237 = js.native
+  var createCard_Original: Anon243 = js.native
   @JSName("createColumn")
-  var createColumn_Original: Anon238 = js.native
+  var createColumn_Original: Anon244 = js.native
   @JSName("createForAuthenticatedUser")
-  var createForAuthenticatedUser_Original: Anon239 = js.native
+  var createForAuthenticatedUser_Original: Anon245 = js.native
   /**
     * Creates an organization project board. Returns a `404 Not Found` status if projects are disabled in the organization. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("createForOrg")
-  var createForOrg_Original: Anon240 = js.native
+  var createForOrg_Original: Anon246 = js.native
   /**
     * Creates a repository project board. Returns a `404 Not Found` status if projects are disabled in the repository. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("createForRepo")
-  var createForRepo_Original: Anon241 = js.native
+  var createForRepo_Original: Anon247 = js.native
   @JSName("deleteCard")
-  var deleteCard_Original: Anon243 = js.native
+  var deleteCard_Original: Anon249 = js.native
   @JSName("deleteColumn")
-  var deleteColumn_Original: Anon244 = js.native
+  var deleteColumn_Original: Anon250 = js.native
   /**
     * Deletes a project board. Returns a `404 Not Found` status if projects are disabled.
     */
   @JSName("delete")
-  var delete_Original: Anon242 = js.native
+  var delete_Original: Anon248 = js.native
   @JSName("getCard")
-  var getCard_Original: Anon246 = js.native
+  var getCard_Original: Anon252 = js.native
   @JSName("getColumn")
-  var getColumn_Original: Anon247 = js.native
+  var getColumn_Original: Anon253 = js.native
   /**
     * Gets a project by its `id`. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("get")
-  var get_Original: Anon245 = js.native
+  var get_Original: Anon251 = js.native
   @JSName("listCards")
-  var listCards_Original: Anon248 = js.native
+  var listCards_Original: Anon254 = js.native
   /**
     * Lists the collaborators for an organization project. For a project, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners. You must be an organization owner or a project `admin` to list collaborators.
     */
   @JSName("listCollaborators")
-  var listCollaborators_Original: Anon249 = js.native
+  var listCollaborators_Original: Anon255 = js.native
   @JSName("listColumns")
-  var listColumns_Original: Anon250 = js.native
+  var listColumns_Original: Anon256 = js.native
   /**
     * Lists the projects in an organization. Returns a `404 Not Found` status if projects are disabled in the organization. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     *
     * s
     */
   @JSName("listForOrg")
-  var listForOrg_Original: Anon251 = js.native
+  var listForOrg_Original: Anon257 = js.native
   /**
     * Lists the projects in a repository. Returns a `404 Not Found` status if projects are disabled in the repository. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("listForRepo")
-  var listForRepo_Original: Anon252 = js.native
+  var listForRepo_Original: Anon258 = js.native
   @JSName("listForUser")
-  var listForUser_Original: Anon253 = js.native
+  var listForUser_Original: Anon259 = js.native
   @JSName("moveCard")
-  var moveCard_Original: Anon254 = js.native
+  var moveCard_Original: Anon260 = js.native
   @JSName("moveColumn")
-  var moveColumn_Original: Anon255 = js.native
+  var moveColumn_Original: Anon261 = js.native
   /**
     * Removes a collaborator from an organization project. You must be an organization owner or a project `admin` to remove a collaborator.
     */
   @JSName("removeCollaborator")
-  var removeCollaborator_Original: Anon256 = js.native
+  var removeCollaborator_Original: Anon262 = js.native
   /**
     * Returns the collaborator's permission level for an organization project. Possible values for the `permission` key: `admin`, `write`, `read`, `none`. You must be an organization owner or a project `admin` to review a user's permission level.
     */
   @JSName("reviewUserPermissionLevel")
-  var reviewUserPermissionLevel_Original: Anon257 = js.native
+  var reviewUserPermissionLevel_Original: Anon263 = js.native
   @JSName("updateCard")
-  var updateCard_Original: Anon259 = js.native
+  var updateCard_Original: Anon265 = js.native
   @JSName("updateColumn")
-  var updateColumn_Original: Anon260 = js.native
+  var updateColumn_Original: Anon266 = js.native
   /**
     * Updates a project board's information. Returns a `404 Not Found` status if projects are disabled. If you do not have sufficient privileges to perform this action, a `401 Unauthorized` or `410 Gone` status is returned.
     */
   @JSName("update")
-  var update_Original: Anon258 = js.native
+  var update_Original: Anon264 = js.native
   /**
     * Adds a collaborator to a an organization project and sets their permission level. You must be an organization owner or a project `admin` to add a collaborator.
     */

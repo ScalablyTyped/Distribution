@@ -15,6 +15,10 @@ trait ResourceDataSyncS3Destination extends js.Object {
     */
   var BucketName: ResourceDataSyncS3BucketName = js.native
   /**
+    * Enables destination data sharing. By default, this field is null.
+    */
+  var DestinationDataSharing: js.UndefOr[ResourceDataSyncDestinationDataSharing] = js.native
+  /**
     * An Amazon S3 prefix for the bucket.
     */
   var Prefix: js.UndefOr[ResourceDataSyncS3Prefix] = js.native
@@ -35,10 +39,12 @@ object ResourceDataSyncS3Destination {
     Region: ResourceDataSyncS3Region,
     SyncFormat: ResourceDataSyncS3Format,
     AWSKMSKeyARN: ResourceDataSyncAWSKMSKeyARN = null,
+    DestinationDataSharing: ResourceDataSyncDestinationDataSharing = null,
     Prefix: ResourceDataSyncS3Prefix = null
   ): ResourceDataSyncS3Destination = {
     val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any], SyncFormat = SyncFormat.asInstanceOf[js.Any])
     if (AWSKMSKeyARN != null) __obj.updateDynamic("AWSKMSKeyARN")(AWSKMSKeyARN.asInstanceOf[js.Any])
+    if (DestinationDataSharing != null) __obj.updateDynamic("DestinationDataSharing")(DestinationDataSharing.asInstanceOf[js.Any])
     if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncS3Destination]
   }

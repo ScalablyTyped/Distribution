@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.comboBoxTypesMod.IComboBox
 import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,9 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object virtualizedComboBoxMod extends js.Object {
   @js.native
-  class VirtualizedComboBox ()
-    extends BaseComponent[IComboBoxProps, js.Object]
+  class VirtualizedComboBox protected ()
+    extends Component[IComboBoxProps, js.Object, js.Any]
        with IComboBox {
+    def this(props: IComboBoxProps) = this()
     /** The combo box element */
     var _comboBox: js.Any = js.native
     /** The virtualized list element */

@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   - typings.iabVpaid.iabVpaidStrings.AdVolumeChange
   - typings.iabVpaid.iabVpaidStrings.AdVideoStart
   - typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile
-  - typings.iabVpaid.iabVpaidStrings.AdVideoMidPoint
+  - typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint
   - typings.iabVpaid.iabVpaidStrings.AdVideoThirdQuartile
   - typings.iabVpaid.iabVpaidStrings.AdVideoComplete
   - typings.iabVpaid.iabVpaidStrings.AdUserAcceptInvitation
@@ -68,7 +68,7 @@ object SimpleEvents {
   @scala.inline
   def AdVideoFirstQuartile: typings.iabVpaid.iabVpaidStrings.AdVideoFirstQuartile = this.cast("AdVideoFirstQuartile")
   @scala.inline
-  def AdVideoMidPoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidPoint = this.cast("AdVideoMidPoint")
+  def AdVideoMidpoint: typings.iabVpaid.iabVpaidStrings.AdVideoMidpoint = this.cast("AdVideoMidpoint")
   @scala.inline
   def AdVideoStart: typings.iabVpaid.iabVpaidStrings.AdVideoStart = this.cast("AdVideoStart")
   @scala.inline

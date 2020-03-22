@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("async", "filterLimit")
 @js.native
 object filterLimit extends js.Object {
-  def apply[T, E](arr: IterableCollection[T], limit: Double, iterator: AsyncBooleanIterator[T, E]): Unit = js.native
+  def apply[T, E](arr: IterableCollection[T], limit: Double, iterator: AsyncBooleanIterator[T, E]): js.Promise[js.Array[T]] = js.native
   def apply[T, E](
     arr: IterableCollection[T],
     limit: Double,

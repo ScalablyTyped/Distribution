@@ -243,6 +243,9 @@ object weixinAppStrings {
   sealed trait scopeDotuserLocation extends Scope
   
   @js.native
+  sealed trait scopeDotuserLocationBackground extends Scope
+  
+  @js.native
   sealed trait scopeDotwerun extends Scope
   
   @js.native
@@ -459,6 +462,8 @@ object weixinAppStrings {
   def scopeDotuserInfo: scopeDotuserInfo = "scope.userInfo".asInstanceOf[scopeDotuserInfo]
   @scala.inline
   def scopeDotuserLocation: scopeDotuserLocation = "scope.userLocation".asInstanceOf[scopeDotuserLocation]
+  @scala.inline
+  def scopeDotuserLocationBackground: scopeDotuserLocationBackground = "scope.userLocationBackground".asInstanceOf[scopeDotuserLocationBackground]
   @scala.inline
   def scopeDotwerun: scopeDotwerun = "scope.werun".asInstanceOf[scopeDotwerun]
   @scala.inline

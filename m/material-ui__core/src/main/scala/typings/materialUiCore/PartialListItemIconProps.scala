@@ -144,7 +144,7 @@ trait PartialListItemIconProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactElement] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListItemIconClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListItRoot] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -324,7 +324,7 @@ object PartialListItemIconProps {
     autoSave: String = null,
     children: ReactElement = null,
     className: String = null,
-    classes: PartialClassNameMapListItemIconClassKey = null,
+    classes: PartialClassNameMapListItRoot = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

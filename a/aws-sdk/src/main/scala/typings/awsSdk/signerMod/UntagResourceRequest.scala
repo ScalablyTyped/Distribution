@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UntagResourceRequest extends js.Object {
   /**
-    * Amazon Resource Name (ARN) for the signing profile .
+    * The Amazon Resource Name (ARN) for the signing profile.
     */
   var resourceArn: String = js.native
   /**
-    * A list of tag keys to be removed from the signing profile .
+    * A list of tag keys to be removed from the signing profile.
     */
   var tagKeys: TagKeyList = js.native
 }

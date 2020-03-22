@@ -284,14 +284,12 @@ class Worksheet () extends ClientObject {
     */
   var visibility: SheetVisibility | Visible | Hidden | VeryHidden = js.native
   /**
-    *
     * Activate the worksheet in the Excel UI.
     *
     * [Api set: ExcelApi 1.1]
     */
   def activate(): Unit = js.native
   /**
-    *
     * Calculates all cells on a worksheet.
     *
     * [Api set: ExcelApi 1.6]
@@ -300,7 +298,6 @@ class Worksheet () extends ClientObject {
     */
   def calculate(markAllDirty: Boolean): Unit = js.native
   /**
-    *
     * Copies a worksheet and places it at the specified position.
     *
     * [Api set: ExcelApi 1.7]
@@ -333,14 +330,12 @@ class Worksheet () extends ClientObject {
   @JSName("copy")
   def copy_None(positionType: None, relativeTo: Worksheet): Worksheet = js.native
   /**
-    *
     * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
     *
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object, comprising one or more rectangular ranges.
     *
     * [Api set: ExcelApi 1.9]
@@ -351,7 +346,6 @@ class Worksheet () extends ClientObject {
     */
   def findAll(text: String, criteria: WorksheetSearchCriteria): RangeAreas = js.native
   /**
-    *
     * Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object, comprising one or more rectangular ranges.
     *
     * [Api set: ExcelApi 1.9]
@@ -362,7 +356,6 @@ class Worksheet () extends ClientObject {
     */
   def findAllOrNullObject(text: String, criteria: WorksheetSearchCriteria): RangeAreas = js.native
   /**
-    *
     * Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid.
     *
     * [Api set: ExcelApi 1.1]
@@ -372,7 +365,6 @@ class Worksheet () extends ClientObject {
     */
   def getCell(row: Double, column: Double): Range = js.native
   /**
-    *
     * Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an error.
     *
     * [Api set: ExcelApi 1.5]
@@ -382,7 +374,6 @@ class Worksheet () extends ClientObject {
   def getNext(): Worksheet = js.native
   def getNext(visibleOnly: Boolean): Worksheet = js.native
   /**
-    *
     * Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a null object.
     *
     * [Api set: ExcelApi 1.5]
@@ -392,7 +383,6 @@ class Worksheet () extends ClientObject {
   def getNextOrNullObject(): Worksheet = js.native
   def getNextOrNullObject(visibleOnly: Boolean): Worksheet = js.native
   /**
-    *
     * Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.
     *
     * [Api set: ExcelApi 1.5]
@@ -402,7 +392,6 @@ class Worksheet () extends ClientObject {
   def getPrevious(): Worksheet = js.native
   def getPrevious(visibleOnly: Boolean): Worksheet = js.native
   /**
-    *
     * Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null objet.
     *
     * [Api set: ExcelApi 1.5]
@@ -412,7 +401,6 @@ class Worksheet () extends ClientObject {
   def getPreviousOrNullObject(): Worksheet = js.native
   def getPreviousOrNullObject(visibleOnly: Boolean): Worksheet = js.native
   /**
-    *
     * Gets the range object, representing a single rectangular block of cells, specified by the address or name.
     *
     * [Api set: ExcelApi 1.1]
@@ -422,7 +410,6 @@ class Worksheet () extends ClientObject {
   def getRange(): Range = js.native
   def getRange(address: String): Range = js.native
   /**
-    *
     * Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows and columns.
     *
     * [Api set: ExcelApi 1.7]
@@ -434,7 +421,6 @@ class Worksheet () extends ClientObject {
     */
   def getRangeByIndexes(startRow: Double, startColumn: Double, rowCount: Double, columnCount: Double): Range = js.native
   /**
-    *
     * Gets the RangeAreas object, representing one or more blocks of rectangular ranges, specified by the address or name.
     *
     * [Api set: ExcelApi 1.9]
@@ -444,7 +430,6 @@ class Worksheet () extends ClientObject {
   def getRanges(): RangeAreas = js.native
   def getRanges(address: String): RangeAreas = js.native
   /**
-    *
     * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
     *
     * [Api set: ExcelApi 1.1]
@@ -454,7 +439,6 @@ class Worksheet () extends ClientObject {
   def getUsedRange(): Range = js.native
   def getUsedRange(valuesOnly: Boolean): Range = js.native
   /**
-    *
     * The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.
     *
     * [Api set: ExcelApi 1.4]
@@ -474,7 +458,6 @@ class Worksheet () extends ClientObject {
   def load(propertyNames: String): Worksheet = js.native
   def load(propertyNames: js.Array[String]): Worksheet = js.native
   /**
-    *
     * Finds and replaces the given string based on the criteria specified within the current worksheet.
     *
     * [Api set: ExcelApi 1.9]
@@ -501,7 +484,6 @@ class Worksheet () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Worksheet): Unit = js.native
   /**
-    *
     * Shows row or column groups by their outline levels.
     Outlines group and summarize a list of data in the worksheet.
     The `rowLevels` and `columnLevels` parameters specify how many levels of the outline will be displayed.

@@ -3,7 +3,7 @@ package typings.officeUiFabricReact.scrollablePaneBaseMod
 import typings.officeUiFabricReact.libStickyMod.Sticky
 import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePane
 import typings.officeUiFabricReact.scrollablePaneTypesMod.IScrollablePaneProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.std.HTMLDivElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,12 +12,14 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/ScrollablePane/ScrollablePane.base", "ScrollablePaneBase")
 @js.native
 class ScrollablePaneBase protected ()
-  extends BaseComponent[IScrollablePaneProps, IScrollablePaneState]
+  extends Component[IScrollablePaneProps, IScrollablePaneState, js.Any]
      with IScrollablePane {
   def this(props: IScrollablePaneProps) = this()
   var _addToStickyContainer: js.Any = js.native
+  var _async: js.Any = js.native
   var _checkStickyStatus: js.Any = js.native
   var _contentContainer: js.Any = js.native
+  var _events: js.Any = js.native
   var _getScrollablePaneContext: js.Any = js.native
   var _getScrollbarHeight: js.Any = js.native
   var _getScrollbarWidth: js.Any = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dymo-label-framework"
-version := "v1.2.6-dt-20190322Z-852134"
+version := "v1.2.6-dt-20200226Z-852134"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

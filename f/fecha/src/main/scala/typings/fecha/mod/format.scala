@@ -1,5 +1,6 @@
 package typings.fecha.mod
 
+import typings.fecha.PartialI18nSettings
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +18,6 @@ object format extends js.Object {
     */
   def apply(dateObj: Date): String = js.native
   def apply(dateObj: Date, mask: String): String = js.native
-  def apply(dateObj: Date, mask: String, i18n: I18nSettingsOptional): String = js.native
+  def apply(dateObj: Date, mask: String, i18n: PartialI18nSettings): String = js.native
 }
 

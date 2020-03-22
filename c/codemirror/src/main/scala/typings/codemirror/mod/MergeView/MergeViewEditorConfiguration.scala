@@ -1,5 +1,6 @@
 package typings.codemirror.mod.MergeView
 
+import typings.codemirror.AnonDelay
 import typings.codemirror.mod.AutoCloseBrackets
 import typings.codemirror.mod.AutoCloseTags
 import typings.codemirror.mod.Editor
@@ -80,6 +81,7 @@ object MergeViewEditorConfiguration {
     allowEditingOriginals: js.UndefOr[Boolean] = js.undefined,
     autoCloseBrackets: AutoCloseBrackets | Boolean | String = null,
     autoCloseTags: AutoCloseTags | Boolean = null,
+    autoRefresh: Boolean | AnonDelay = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     collapseIdentical: Boolean | Double = null,
     connect: String = null,
@@ -141,6 +143,7 @@ object MergeViewEditorConfiguration {
     if (!js.isUndefined(allowEditingOriginals)) __obj.updateDynamic("allowEditingOriginals")(allowEditingOriginals.asInstanceOf[js.Any])
     if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
     if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
+    if (autoRefresh != null) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
     if (collapseIdentical != null) __obj.updateDynamic("collapseIdentical")(collapseIdentical.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])

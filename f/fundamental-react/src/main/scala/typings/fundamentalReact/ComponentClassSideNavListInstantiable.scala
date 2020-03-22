@@ -33,6 +33,6 @@ trait ComponentClassSideNavListInstantiable
   var displayName: js.UndefOr[String with SideNavDotListItem] = js.native
   var getDerivedStateFromError: js.UndefOr[GetDerivedStateFromError[SideNavListItemProps, ComponentState]] = js.native
   var getDerivedStateFromProps: js.UndefOr[GetDerivedStateFromProps[SideNavListItemProps, ComponentState]] = js.native
-  var propTypes: js.UndefOr[WeakValidationMapSideNavLExpanded] = js.native
+  var propTypes: js.UndefOr[WeakValidationMapSideNavLAbout] = js.native
 }
 

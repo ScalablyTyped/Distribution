@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("postman-collection", "Collection")
 @js.native
-class Collection () extends ItemGroup[Request] {
+class Collection () extends ItemGroup[Item] {
   def this(definition: CollectionDefinition) = this()
   def this(definition: CollectionDefinition, environments: js.Array[_]) = this()
   var variables: VariableList = js.native

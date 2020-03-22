@@ -1,7 +1,6 @@
 package typings.reactNativeAppIntroSlider.mod
 
 import typings.react.mod.ReactElement
-import typings.reactNative.mod.ButtonProps
 import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.ViewStyle
 import scala.scalajs.js
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait AppIntroProps extends js.Object {
   var activeDotStyle: js.UndefOr[ViewStyle] = js.undefined
   var bottomButton: js.UndefOr[Boolean] = js.undefined
-  var buttonStyle: js.UndefOr[ButtonProps] = js.undefined
+  var buttonStyle: js.UndefOr[ViewStyle] = js.undefined
   var buttonTextStyle: js.UndefOr[TextProps] = js.undefined
   var doneLabel: js.UndefOr[String] = js.undefined
   var dotStyle: js.UndefOr[ViewStyle] = js.undefined
@@ -20,7 +19,7 @@ trait AppIntroProps extends js.Object {
   var onDone: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onSkip: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onSlideChange: js.UndefOr[js.Function2[/* index */ Double, /* lastIndex */ Double, Unit]] = js.undefined
-  var paginationStyle: js.UndefOr[TextProps] = js.undefined
+  var paginationStyle: js.UndefOr[ViewStyle] = js.undefined
   var prevLabel: js.UndefOr[String] = js.undefined
   var renderDoneButton: js.UndefOr[js.Function0[Unit]] = js.undefined
   var renderItem: js.UndefOr[js.Function1[/* item */ js.Any, ReactElement]] = js.undefined
@@ -41,7 +40,7 @@ object AppIntroProps {
     slides: js.Array[_],
     activeDotStyle: ViewStyle = null,
     bottomButton: js.UndefOr[Boolean] = js.undefined,
-    buttonStyle: ButtonProps = null,
+    buttonStyle: ViewStyle = null,
     buttonTextStyle: TextProps = null,
     doneLabel: String = null,
     dotStyle: ViewStyle = null,
@@ -50,7 +49,7 @@ object AppIntroProps {
     onDone: () => Unit = null,
     onSkip: () => Unit = null,
     onSlideChange: (/* index */ Double, /* lastIndex */ Double) => Unit = null,
-    paginationStyle: TextProps = null,
+    paginationStyle: ViewStyle = null,
     prevLabel: String = null,
     renderDoneButton: () => Unit = null,
     renderItem: /* item */ js.Any => ReactElement = null,

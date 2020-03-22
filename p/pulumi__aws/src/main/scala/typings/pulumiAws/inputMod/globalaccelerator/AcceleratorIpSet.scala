@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AcceleratorIpSet extends js.Object {
   /**
-    * The array of IP addresses in the IP address set.
+    * A list of IP addresses in the IP address set.
     */
   var ipAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**

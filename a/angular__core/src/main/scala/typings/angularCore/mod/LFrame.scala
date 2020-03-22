@@ -30,7 +30,7 @@ trait LFrame extends js.Object {
     *
     * e.g. const inner = x().$implicit; const outer = x().$implicit;
     */
-  var contextLView: ɵangularPackagesCoreCoreBo
+  var contextLView: ɵangularPackagesCoreCoreBp
   /**
     * When host binding is executing this points to the directive index.
     * `TView.data[currentDirectiveIndex]` is `DirectiveDef`
@@ -69,7 +69,7 @@ trait LFrame extends js.Object {
     * An array of nodes (text, element, container, etc), pipes, their bindings, and
     * any local variables that need to be stored between invocations.
     */
-  var lView: ɵangularPackagesCoreCoreBo
+  var lView: ɵangularPackagesCoreCoreBp
   /**
     * Parent LFrame.
     *
@@ -102,12 +102,12 @@ object LFrame {
   def apply(
     bindingIndex: Double,
     bindingRootIndex: Double,
-    contextLView: ɵangularPackagesCoreCoreBo,
+    contextLView: ɵangularPackagesCoreCoreBp,
     currentDirectiveIndex: Double,
     currentQueryIndex: Double,
     elementDepthCount: Double,
     isParent: Boolean,
-    lView: ɵangularPackagesCoreCoreBo,
+    lView: ɵangularPackagesCoreCoreBp,
     parent: LFrame,
     previousOrParentTNode: TNode,
     selectedIndex: Double,

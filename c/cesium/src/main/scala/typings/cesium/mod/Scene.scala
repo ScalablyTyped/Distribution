@@ -38,6 +38,7 @@ class Scene () extends js.Object {
   var invertClassificationColor: Color = js.native
   val lastRenderTime: JulianDate = js.native
   var light: Light = js.native
+  var logarithmicDepthBuffer: Boolean = js.native
   var logarithmicDepthFarToNearRatio: Double = js.native
   var mapMode2D: Boolean = js.native
   val mapProjection: MapProjection = js.native
@@ -56,6 +57,7 @@ class Scene () extends js.Object {
   var pickTranslucentDepth: Boolean = js.native
   var postProcessStages: PostProcessStageCollection = js.native
   val postRender: Event[js.Array[_]] = js.native
+  val postUpdate: Event[js.Array[_]] = js.native
   val preRender: Event[js.Array[_]] = js.native
   val preUpdate: Event[js.Array[_]] = js.native
   val primitives: PrimitiveCollection = js.native

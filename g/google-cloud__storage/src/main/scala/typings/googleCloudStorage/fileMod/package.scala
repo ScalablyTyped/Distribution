@@ -72,12 +72,6 @@ package object fileMod {
     scala.Unit
   ]
   type GetSignedPolicyResponse = js.Array[typings.googleCloudStorage.fileMod.PolicyDocument]
-  type GetSignedUrlCallback = js.Function2[
-    /* err */ typings.std.Error | scala.Null, 
-    /* url */ js.UndefOr[java.lang.String], 
-    scala.Unit
-  ]
-  type GetSignedUrlResponse = js.Array[java.lang.String]
   type IsPublicCallback = js.Function2[
     /* err */ typings.std.Error | scala.Null, 
     /* resp */ js.UndefOr[scala.Boolean], 

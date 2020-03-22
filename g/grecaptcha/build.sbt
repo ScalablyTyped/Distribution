@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grecaptcha"
-version := "3.0-dt-20191009Z-c01a92"
+version := "3.0-dt-20200226Z-4dc903"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

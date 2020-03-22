@@ -243,7 +243,6 @@ class Shape () extends ClientObject {
     */
   val zOrderPosition: Double = js.native
   /**
-    *
     * Copies and pastes a Shape object.
     The pasted shape is copied to the same pixel location as this shape.
     *
@@ -255,14 +254,12 @@ class Shape () extends ClientObject {
   def copyTo(destinationSheet: String): Shape = js.native
   def copyTo(destinationSheet: Worksheet): Shape = js.native
   /**
-    *
     * Removes the shape from the worksheet.
     *
     * [Api set: ExcelApi 1.9]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
     *
     * [Api set: ExcelApi 1.9]
@@ -281,7 +278,6 @@ class Shape () extends ClientObject {
   @JSName("getAsImage")
   def getAsImage_SVG(format: SVG): ClientResult[String] = js.native
   /**
-    *
     * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
     *
     * [Api set: ExcelApi 1.9]
@@ -291,7 +287,6 @@ class Shape () extends ClientObject {
   @JSName("getAsImage")
   def getAsImage_UNKNOWN(format: UNKNOWN): ClientResult[String] = js.native
   /**
-    *
     * Moves the shape horizontally by the specified number of points.
     *
     * [Api set: ExcelApi 1.9]
@@ -300,7 +295,6 @@ class Shape () extends ClientObject {
     */
   def incrementLeft(increment: Double): Unit = js.native
   /**
-    *
     * Rotates the shape clockwise around the z-axis by the specified number of degrees.
     Use the `rotation` property to set the absolute rotation of the shape.
     *
@@ -310,7 +304,6 @@ class Shape () extends ClientObject {
     */
   def incrementRotation(increment: Double): Unit = js.native
   /**
-    *
     * Moves the shape vertically by the specified number of points.
     *
     * [Api set: ExcelApi 1.9]
@@ -329,7 +322,6 @@ class Shape () extends ClientObject {
   def load(propertyNames: String): Shape = js.native
   def load(propertyNames: js.Array[String]): Shape = js.native
   /**
-    *
     * Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.
     *
     * [Api set: ExcelApi 1.9]
@@ -347,7 +339,6 @@ class Shape () extends ClientObject {
   def scaleHeight(scaleFactor: Double, scaleType: OriginalSize, scaleFrom: ScaleFromMiddle): Unit = js.native
   def scaleHeight(scaleFactor: Double, scaleType: OriginalSize, scaleFrom: ScaleFromTopLeft): Unit = js.native
   /**
-    *
     * Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.
     *
     * [Api set: ExcelApi 1.9]
@@ -361,7 +352,6 @@ class Shape () extends ClientObject {
   @JSName("scaleHeight")
   def scaleHeight_OriginalSize(scaleFactor: Double, scaleType: OriginalSize): Unit = js.native
   /**
-    *
     * Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current width.
     *
     * [Api set: ExcelApi 1.9]
@@ -379,7 +369,6 @@ class Shape () extends ClientObject {
   def scaleWidth(scaleFactor: Double, scaleType: OriginalSize, scaleFrom: ScaleFromMiddle): Unit = js.native
   def scaleWidth(scaleFactor: Double, scaleType: OriginalSize, scaleFrom: ScaleFromTopLeft): Unit = js.native
   /**
-    *
     * Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current width.
     *
     * [Api set: ExcelApi 1.9]
@@ -408,7 +397,6 @@ class Shape () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Shape): Unit = js.native
   /**
-    *
     * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
     *
     * [Api set: ExcelApi 1.9]
@@ -419,7 +407,6 @@ class Shape () extends ClientObject {
   @JSName("setZOrder")
   def setZOrder_BringForward(position: BringForward): Unit = js.native
   /**
-    *
     * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
     *
     * [Api set: ExcelApi 1.9]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plupload"
-version := "2.0-dt-20200204Z-339c7b"
+version := "2.0-dt-20200225Z-339c7b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -272,6 +272,9 @@ object rcTableStrings {
     extends _Component[js.Any]
   
   @js.native
+  sealed trait ltr extends js.Object
+  
+  @js.native
   sealed trait main
     extends _Component[js.Any]
   
@@ -372,6 +375,9 @@ object rcTableStrings {
   @js.native
   sealed trait rt
     extends _Component[js.Any]
+  
+  @js.native
+  sealed trait rtl extends js.Object
   
   @js.native
   sealed trait ruby
@@ -634,6 +640,8 @@ object rcTableStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def main: main = "main".asInstanceOf[main]
   @scala.inline
   def map: map = "map".asInstanceOf[map]
@@ -685,6 +693,8 @@ object rcTableStrings {
   def rp: rp = "rp".asInstanceOf[rp]
   @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
   @scala.inline

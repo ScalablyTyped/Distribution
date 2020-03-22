@@ -8,9 +8,47 @@ import scala.scalajs.js.annotation._
 trait EventParams
   extends /* key */ StringDictionary[js.Any] {
   var dp: js.UndefOr[String] = js.undefined
+  /**
+    * Event Action
+    *
+    * **Required for event hit type.**
+    *
+    * Specifies the event action. Must not be empty.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `Action`
+    */
   var ea: js.UndefOr[String] = js.undefined
+  /**
+    * Event Category
+    *
+    * **Required for event hit type.**
+    *
+    * Specifies the event category. Must not be empty.
+    *
+    * Max length: 150 Bytes
+    *
+    * Example value: `Category`
+    */
   var ec: js.UndefOr[String] = js.undefined
+  /**
+    * Event Label
+    *
+    * Specifies the event label.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `Label`
+    */
   var el: js.UndefOr[String] = js.undefined
+  /**
+    * Event Value
+    *
+    * Specifies the event value. Values must be non-negative.
+    *
+    * Example value: `55`
+    */
   var ev: js.UndefOr[String | Double] = js.undefined
   var p: js.UndefOr[String] = js.undefined
 }

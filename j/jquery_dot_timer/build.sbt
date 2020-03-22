@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_timer"
-version := "1.0-dt-20190322Z-5b642a"
+version := "1.0-dt-20200226Z-5b642a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

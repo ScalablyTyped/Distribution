@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gldatepicker"
-version := "2.0-dt-20190322Z-15228e"
+version := "2.0-dt-20200226Z-15228e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -104,6 +104,21 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePushTemplateResponse, Unit]
   ): Request[CreatePushTemplateResponse, AWSError] = js.native
   /**
+    * Creates an Amazon Pinpoint configuration for a recommender model.
+    */
+  def createRecommenderConfiguration(): Request[CreateRecommenderConfigurationResponse, AWSError] = js.native
+  def createRecommenderConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRecommenderConfigurationResponse, Unit]
+  ): Request[CreateRecommenderConfigurationResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon Pinpoint configuration for a recommender model.
+    */
+  def createRecommenderConfiguration(params: CreateRecommenderConfigurationRequest): Request[CreateRecommenderConfigurationResponse, AWSError] = js.native
+  def createRecommenderConfiguration(
+    params: CreateRecommenderConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRecommenderConfigurationResponse, Unit]
+  ): Request[CreateRecommenderConfigurationResponse, AWSError] = js.native
+  /**
     * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */
   def createSegment(): Request[CreateSegmentResponse, AWSError] = js.native
@@ -337,6 +352,21 @@ trait Pinpoint extends Service {
     params: DeletePushTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePushTemplateResponse, Unit]
   ): Request[DeletePushTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes an Amazon Pinpoint configuration for a recommender model.
+    */
+  def deleteRecommenderConfiguration(): Request[DeleteRecommenderConfigurationResponse, AWSError] = js.native
+  def deleteRecommenderConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRecommenderConfigurationResponse, Unit]
+  ): Request[DeleteRecommenderConfigurationResponse, AWSError] = js.native
+  /**
+    * Deletes an Amazon Pinpoint configuration for a recommender model.
+    */
+  def deleteRecommenderConfiguration(params: DeleteRecommenderConfigurationRequest): Request[DeleteRecommenderConfigurationResponse, AWSError] = js.native
+  def deleteRecommenderConfiguration(
+    params: DeleteRecommenderConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRecommenderConfigurationResponse, Unit]
+  ): Request[DeleteRecommenderConfigurationResponse, AWSError] = js.native
   /**
     * Deletes a segment from an application.
     */
@@ -818,6 +848,32 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetPushTemplateResponse, Unit]
   ): Request[GetPushTemplateResponse, AWSError] = js.native
   /**
+    * Retrieves information about an Amazon Pinpoint configuration for a recommender model.
+    */
+  def getRecommenderConfiguration(): Request[GetRecommenderConfigurationResponse, AWSError] = js.native
+  def getRecommenderConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetRecommenderConfigurationResponse, Unit]): Request[GetRecommenderConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves information about an Amazon Pinpoint configuration for a recommender model.
+    */
+  def getRecommenderConfiguration(params: GetRecommenderConfigurationRequest): Request[GetRecommenderConfigurationResponse, AWSError] = js.native
+  def getRecommenderConfiguration(
+    params: GetRecommenderConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRecommenderConfigurationResponse, Unit]
+  ): Request[GetRecommenderConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves information about all the recommender model configurations that are associated with your Amazon Pinpoint account.
+    */
+  def getRecommenderConfigurations(): Request[GetRecommenderConfigurationsResponse, AWSError] = js.native
+  def getRecommenderConfigurations(callback: js.Function2[/* err */ AWSError, /* data */ GetRecommenderConfigurationsResponse, Unit]): Request[GetRecommenderConfigurationsResponse, AWSError] = js.native
+  /**
+    * Retrieves information about all the recommender model configurations that are associated with your Amazon Pinpoint account.
+    */
+  def getRecommenderConfigurations(params: GetRecommenderConfigurationsRequest): Request[GetRecommenderConfigurationsResponse, AWSError] = js.native
+  def getRecommenderConfigurations(
+    params: GetRecommenderConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRecommenderConfigurationsResponse, Unit]
+  ): Request[GetRecommenderConfigurationsResponse, AWSError] = js.native
+  /**
     * Retrieves information about the configuration, dimension, and other settings for a specific segment that's associated with an application.
     */
   def getSegment(): Request[GetSegmentResponse, AWSError] = js.native
@@ -974,12 +1030,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListJourneysResponse, Unit]
   ): Request[ListJourneysResponse, AWSError] = js.native
   /**
-    * Retrieves all the tags (keys and values) that are associated with an application, campaign, journey, message template, or segment.
+    * Retrieves all the tags (keys and values) that are associated with an application, campaign, message template, or segment.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Retrieves all the tags (keys and values) that are associated with an application, campaign, journey, message template, or segment.
+    * Retrieves all the tags (keys and values) that are associated with an application, campaign, message template, or segment.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -1091,22 +1147,22 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SendUsersMessagesResponse, Unit]
   ): Request[SendUsersMessagesResponse, AWSError] = js.native
   /**
-    * Adds one or more tags (keys and values) to an application, campaign, journey, message template, or segment.
+    * Adds one or more tags (keys and values) to an application, campaign, message template, or segment.
     */
   def tagResource(): Request[js.Object, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Adds one or more tags (keys and values) to an application, campaign, journey, message template, or segment.
+    * Adds one or more tags (keys and values) to an application, campaign, message template, or segment.
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes one or more tags (keys and values) from an application, campaign, journey, message template, or segment.
+    * Removes one or more tags (keys and values) from an application, campaign, message template, or segment.
     */
   def untagResource(): Request[js.Object, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes one or more tags (keys and values) from an application, campaign, journey, message template, or segment.
+    * Removes one or more tags (keys and values) from an application, campaign, message template, or segment.
     */
   def untagResource(params: UntagResourceRequest): Request[js.Object, AWSError] = js.native
   def untagResource(
@@ -1321,6 +1377,21 @@ trait Pinpoint extends Service {
     params: UpdatePushTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePushTemplateResponse, Unit]
   ): Request[UpdatePushTemplateResponse, AWSError] = js.native
+  /**
+    * Updates an Amazon Pinpoint configuration for a recommender model.
+    */
+  def updateRecommenderConfiguration(): Request[UpdateRecommenderConfigurationResponse, AWSError] = js.native
+  def updateRecommenderConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecommenderConfigurationResponse, Unit]
+  ): Request[UpdateRecommenderConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates an Amazon Pinpoint configuration for a recommender model.
+    */
+  def updateRecommenderConfiguration(params: UpdateRecommenderConfigurationRequest): Request[UpdateRecommenderConfigurationResponse, AWSError] = js.native
+  def updateRecommenderConfiguration(
+    params: UpdateRecommenderConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRecommenderConfigurationResponse, Unit]
+  ): Request[UpdateRecommenderConfigurationResponse, AWSError] = js.native
   /**
     * Creates a new segment for an application or updates the configuration, dimension, and other settings for an existing segment that's associated with an application.
     */

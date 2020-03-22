@@ -21,7 +21,7 @@ class Agent protected () extends js.Object {
   def koaMiddleware(): js.Function2[/* context */ Context, /* next */ js.Function0[js.Promise[_]], Unit] = js.native
   def middleware(): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ js.UndefOr[js.Any], 
     Unit
   ] = js.native

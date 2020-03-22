@@ -2,8 +2,6 @@ package typings.samchon.mod.collections
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.tstl.icontainerMod.IContainer
-import typings.tstl.ipointerMod.IPointer
-import typings.tstl.listMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -63,23 +61,5 @@ object ListCollection extends js.Object {
       ]
     ]
   ] = js.native
-  /* static members */
-  @js.native
-  object Iterator extends js.Object {
-    /**
-      * @internal
-      */
-    def _Set_source_ptr[T](it: typings.tstl.listMod.List.Iterator[T], ptr: IPointer[List[T]]): Unit = js.native
-    /**
-      * @internal
-      */
-    def create[T](
-      sourcePtr: IPointer[List[T]],
-      prev: typings.tstl.listMod.List.Iterator[T],
-      next: typings.tstl.listMod.List.Iterator[T],
-      value: T
-    ): typings.tstl.listMod.List.Iterator[T] = js.native
-  }
-  
 }
 

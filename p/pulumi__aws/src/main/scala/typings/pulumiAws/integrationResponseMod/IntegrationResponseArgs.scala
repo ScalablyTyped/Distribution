@@ -33,7 +33,7 @@ trait IntegrationResponseArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * Specifies the regular expression pattern used to choose
     * an integration response based on the response from the backend. Setting this to `-` makes the integration the default one.
@@ -52,7 +52,7 @@ object IntegrationResponseArgs {
   def apply(
     httpMethod: Input[String],
     resourceId: Input[String],
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     statusCode: Input[String],
     contentHandling: Input[String] = null,
     responseParameters: Input[StringDictionary[Input[String]]] = null,

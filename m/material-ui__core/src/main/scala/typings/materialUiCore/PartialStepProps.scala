@@ -148,7 +148,7 @@ trait PartialStepProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapStepCl] = js.native
   var color: js.UndefOr[String] = js.native
   var completed: js.UndefOr[Boolean] = js.native
   var connector: js.UndefOr[ReactElement] = js.native
@@ -336,7 +336,7 @@ object PartialStepProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepClasskey = null,
+    classes: PartialClassNameMapStepCl = null,
     color: String = null,
     completed: js.UndefOr[Boolean] = js.undefined,
     connector: ReactElement = null,

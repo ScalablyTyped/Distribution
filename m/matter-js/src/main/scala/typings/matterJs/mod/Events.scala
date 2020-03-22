@@ -201,7 +201,11 @@ object Events extends js.Object {
     * @param callback
     */
   @JSName("on")
-  def on_mousedown(obj: MouseConstraint, name: mousedown, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  def on_mousedown(
+    obj: MouseConstraint,
+    name: mousedown,
+    callback: js.Function1[/* e */ IMouseEvent[MouseConstraint], Unit]
+  ): Unit = js.native
   /**
     * Fired when the mouse has moved (or a touch moves) during the last step
     * @param obj
@@ -209,7 +213,11 @@ object Events extends js.Object {
     * @param callback
     */
   @JSName("on")
-  def on_mousemove(obj: MouseConstraint, name: mousemove, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  def on_mousemove(
+    obj: MouseConstraint,
+    name: mousemove,
+    callback: js.Function1[/* e */ IMouseEvent[MouseConstraint], Unit]
+  ): Unit = js.native
   /**
     * Fired when the mouse is up (or a touch has ended) during the last step
     * @param obj
@@ -217,7 +225,11 @@ object Events extends js.Object {
     * @param callback
     */
   @JSName("on")
-  def on_mouseup(obj: MouseConstraint, name: mouseup, callback: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
+  def on_mouseup(
+    obj: MouseConstraint,
+    name: mouseup,
+    callback: js.Function1[/* e */ IMouseEvent[MouseConstraint], Unit]
+  ): Unit = js.native
   /**
     * Fired when a body ends sleeping (where `this` is the body).
     *

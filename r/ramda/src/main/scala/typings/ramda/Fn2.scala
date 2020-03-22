@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Fn2 extends js.Object {
-  def apply(xs: String): String = js.native
-  def apply[T](xs: js.Array[T]): js.Array[T] = js.native
+  def apply(list: String): js.Array[String] = js.native
+  def apply[T](list: js.Array[T]): js.Array[js.Array[T]] = js.native
 }
 

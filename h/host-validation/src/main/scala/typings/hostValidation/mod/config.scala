@@ -15,7 +15,7 @@ trait config extends js.Object {
   var fail: js.UndefOr[
     js.Function3[
       /* req */ Request_[ParamsDictionary], 
-      /* res */ Response_, 
+      /* res */ Response_[_], 
       /* next */ NextFunction, 
       Unit
     ]
@@ -28,7 +28,7 @@ trait config extends js.Object {
 object config {
   @scala.inline
   def apply(
-    fail: (/* req */ Request_[ParamsDictionary], /* res */ Response_, /* next */ NextFunction) => Unit = null,
+    fail: (/* req */ Request_[ParamsDictionary], /* res */ Response_[_], /* next */ NextFunction) => Unit = null,
     hosts: js.Array[String | RegExp] = null,
     mode: both | either = null,
     referers: js.Array[String | RegExp] = null

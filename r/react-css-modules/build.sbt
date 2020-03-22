@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-css-modules"
-version := "4.6.0-dt-20190322Z-8ea8c6"
+version := "4.6.0-dt-20200225Z-8ea8c6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "javascript-time-ago"
-version := "2.0-dt-20191126Z-c1b654"
+version := "2.0-dt-20200219Z-2b1023"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

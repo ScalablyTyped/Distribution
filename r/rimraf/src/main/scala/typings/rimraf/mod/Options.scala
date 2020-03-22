@@ -17,9 +17,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * see {@link https://github.com/isaacs/rimraf/blob/79b933fb362b2c51bedfa448be848e1d7ed32d7e/README.md#options}
+  */
 trait Options extends js.Object {
   var chmod: js.UndefOr[Typeofchmod] = js.undefined
   var chmodSync: js.UndefOr[FnCall] = js.undefined
+  /** @default false */
   var disableGlob: js.UndefOr[Boolean] = js.undefined
   var emfileWait: js.UndefOr[Double] = js.undefined
   var glob: js.UndefOr[IOptions | `false`] = js.undefined

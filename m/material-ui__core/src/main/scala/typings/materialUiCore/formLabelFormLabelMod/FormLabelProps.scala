@@ -1,6 +1,6 @@
 package typings.materialUiCore.formLabelFormLabelMod
 
-import typings.materialUiCore.PartialClassNameMapFormLabelClassKey
+import typings.materialUiCore.PartialClassNameMapFormLa
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -146,7 +146,7 @@ trait FormLabelProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapFormLabelClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapFormLa] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[FormLabelBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -334,7 +334,7 @@ object FormLabelProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapFormLabelClassKey = null,
+    classes: PartialClassNameMapFormLa = null,
     color: String = null,
     component: ReactType[FormLabelBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

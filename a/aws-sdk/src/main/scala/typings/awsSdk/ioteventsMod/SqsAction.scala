@@ -11,7 +11,7 @@ trait SqsAction extends js.Object {
     */
   var queueUrl: QueueUrl = js.native
   /**
-    * Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue. Otherwise, set this to FALSE.
+    * Set this to TRUE if you want the data to be base-64 encoded before it is written to the queue.
     */
   var useBase64: js.UndefOr[UseBase64] = js.native
 }

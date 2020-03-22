@@ -23,8 +23,8 @@ trait IKeytipProps extends js.Object {
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether or not this keytip will have children keytips that are dynamically created (DOM is generated on keytip activation)
-    * Common cases are a Pivot or Modal
+    * Whether or not this keytip will have children keytips that are dynamically created (DOM is generated on
+    * keytip activation). Common cases are a Pivot or Modal.
     */
   var hasDynamicChildren: js.UndefOr[Boolean] = js.undefined
   /**

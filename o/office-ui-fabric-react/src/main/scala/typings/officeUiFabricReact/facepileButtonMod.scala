@@ -1,7 +1,7 @@
 package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 object facepileButtonMod extends js.Object {
   @js.native
   class FacepileButton ()
-    extends BaseComponent[IButtonProps, js.Object]
+    extends Component[IButtonProps, js.Object, js.Any]
   
 }
 

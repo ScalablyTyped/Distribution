@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-account
 
-Typings are for version 4.0.3
+Typings are for version 4.1.0
 
 
 

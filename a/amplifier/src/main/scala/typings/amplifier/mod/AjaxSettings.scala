@@ -10,11 +10,14 @@ import typings.jquery.JQuery_.TypeOrArray
 import typings.jquery.JQuery_.jqXHR
 import typings.jquery.jqueryBooleans.`false`
 import typings.jquery.jqueryBooleans.`true`
+import typings.jquery.jqueryStrings.`applicationSlashx-www-form-urlencoded`
+import typings.jquery.jqueryStrings.`multipartSlashform-data`
 import typings.jquery.jqueryStrings.html
 import typings.jquery.jqueryStrings.json
 import typings.jquery.jqueryStrings.jsonp
 import typings.jquery.jqueryStrings.script
 import typings.jquery.jqueryStrings.text
+import typings.jquery.jqueryStrings.textSlashplain
 import typings.jquery.jqueryStrings.xml
 import typings.std.RegExp
 import typings.std.XMLHttpRequest
@@ -46,6 +49,7 @@ object AjaxSettings {
     dataMap: js.Object | (js.Function1[/* data */ js.Any, js.Object]) = null,
     dataType: xml | html | script | json | jsonp | text | String = null,
     decoder: js.Any = null,
+    enctype: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain = null,
     error: TypeOrArray[ErrorCallback[js.Any]] = null,
     global: js.UndefOr[Boolean] = js.undefined,
     headers: PlainObject[js.UndefOr[String | Null]] = null,
@@ -84,6 +88,7 @@ object AjaxSettings {
     if (dataMap != null) __obj.updateDynamic("dataMap")(dataMap.asInstanceOf[js.Any])
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
     if (decoder != null) __obj.updateDynamic("decoder")(decoder.asInstanceOf[js.Any])
+    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

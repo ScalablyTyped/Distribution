@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Cache extends js.Object {
+  var store: Store = js.native
   def del(key: String): js.Promise[_] = js.native
   def del(key: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
   def get[T](key: String): js.Promise[_] = js.native

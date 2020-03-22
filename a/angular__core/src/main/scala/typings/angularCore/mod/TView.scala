@@ -24,7 +24,7 @@ trait TView extends js.Object {
     * This is a blueprint used to generate LView instances for this TView. Copying this
     * blueprint is faster than creating a new LView from scratch.
     */
-  var blueprint: ɵangularPackagesCoreCoreBo
+  var blueprint: ɵangularPackagesCoreCoreBp
   /**
     * When a view is destroyed, listeners need to be released and outputs need to be
     * unsubscribed. This cleanup array stores both listener data (in chunks of 4)
@@ -248,7 +248,7 @@ object TView {
   @scala.inline
   def apply(
     bindingStartIndex: Double,
-    blueprint: ɵangularPackagesCoreCoreBo,
+    blueprint: ɵangularPackagesCoreCoreBp,
     data: TData,
     expandoStartIndex: Double,
     firstCreatePass: Boolean,

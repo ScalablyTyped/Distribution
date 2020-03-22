@@ -4,52 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined std.Partial<{  offsetX  :number,   offsetY  :number,   id  :string,   styleId  :string,   theme  :string,   disableDefaultStyle  :boolean,   sanitize  :typeof escapeHTML,   maxDepth  :number}> */
 trait Options extends js.Object {
-  /**
-    * Do not use the default styles provided by Vega Tooltip. If you enable this option, you need to use your own styles. It is not necessary to disable the default style when using a custom theme.
-    */
-  var disableDefaultStyle: Boolean
-  /**
-    * ID of the tooltip element.
-    */
-  var id: String
-  /**
-    * The maximum recursion depth when printing objects in the tooltip.
-    */
-  var maxDepth: Double
-  /**
-    * X offset.
-    */
-  var offsetX: Double
-  /**
-    * Y offset.
-    */
-  var offsetY: Double
-  /**
-    * ID of the tooltip CSS style.
-    */
-  var styleId: String
-  /**
-    * The name of the theme. You can use the CSS class called [THEME]-theme to style the tooltips.
-    *
-    * There are two predefined themes: "light" (default) and "dark".
-    */
-  var theme: String
+  var disableDefaultStyle: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[String] = js.undefined
+  var maxDepth: js.UndefOr[Double] = js.undefined
+  var offsetX: js.UndefOr[Double] = js.undefined
+  var offsetY: js.UndefOr[Double] = js.undefined
+  var styleId: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[String] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    disableDefaultStyle: Boolean,
-    id: String,
-    maxDepth: Double,
-    offsetX: Double,
-    offsetY: Double,
-    styleId: String,
-    theme: String
+    disableDefaultStyle: js.UndefOr[Boolean] = js.undefined,
+    id: String = null,
+    maxDepth: Int | Double = null,
+    offsetX: Int | Double = null,
+    offsetY: Int | Double = null,
+    styleId: String = null,
+    theme: String = null
   ): Options = {
-    val __obj = js.Dynamic.literal(disableDefaultStyle = disableDefaultStyle.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maxDepth = maxDepth.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disableDefaultStyle)) __obj.updateDynamic("disableDefaultStyle")(disableDefaultStyle.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
+    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (styleId != null) __obj.updateDynamic("styleId")(styleId.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

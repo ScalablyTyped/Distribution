@@ -28,7 +28,7 @@ trait Series extends js.Object {
     *        A stripped-down point object
     *
     * @return A Point object as per
-    *         http://api.highcharts.com/highcharts#Point
+    *         https://api.highcharts.com/highcharts#Point
     */
   def getPoint(boostPoint: js.Object): Point = js.native
   def getPoint(boostPoint: Point): Point = js.native

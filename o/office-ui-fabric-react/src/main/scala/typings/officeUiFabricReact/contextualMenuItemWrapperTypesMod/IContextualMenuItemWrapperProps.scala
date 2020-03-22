@@ -98,7 +98,8 @@ trait IContextualMenuItemWrapperProps extends ClassAttributes[IContextualMenuIte
     ]
   ] = js.undefined
   /**
-    * Callback for when the click event on the icon button which also takes in a specific HTMLElement that will be focused.
+    * Callback for when the click event on the icon button which also takes in a specific HTMLElement
+    * that will be focused.
     */
   var onItemClickBase: js.UndefOr[
     js.Function3[

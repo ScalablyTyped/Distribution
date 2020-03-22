@@ -1,6 +1,5 @@
 package typings.pulumiAws.authorizerMod
 
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -62,7 +61,7 @@ class Authorizer protected () extends CustomResource {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Output_[RestApi] = js.native
+  val restApi: Output_[String] = js.native
   /**
     * The type of the authorizer. Possible values are `TOKEN` for a Lambda function using a single authorization token submitted in a custom header, `REQUEST` for a Lambda function using incoming request parameters, or `COGNITO_USER_POOLS` for using an Amazon Cognito user pool.
     * Defaults to `TOKEN`.

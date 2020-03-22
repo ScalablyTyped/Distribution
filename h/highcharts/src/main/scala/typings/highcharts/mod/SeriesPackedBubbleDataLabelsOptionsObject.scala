@@ -20,6 +20,11 @@ trait SeriesPackedBubbleDataLabelsOptionsObject extends js.Object {
     */
   var allowOverlap: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Presentation attributes for the
+    * text path.
+    */
+  var attributes: js.UndefOr[SVGAttributes] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the data label.
     */
@@ -83,8 +88,9 @@ trait SeriesPackedBubbleDataLabelsOptionsObject extends js.Object {
     */
   var filter: js.UndefOr[DataLabelsFilterOptionsObject] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) A format string for the data
-    * label. Available variables are the same as for `formatter`.
+    * (Highcharts, Highstock, Highmaps, Gantt) The format string specifying
+    * what to show for _node_ in the networkgraph. In v7.0 defaults to `{key}`,
+    * since v7.1 defaults to `undefined` and `formatter` is used instead.
     */
   var format: js.UndefOr[String] = js.undefined
   /**
@@ -126,6 +132,7 @@ trait SeriesPackedBubbleDataLabelsOptionsObject extends js.Object {
     * the `backgroundColor` is set, this is the padding within the box.
     */
   var padding: js.UndefOr[Double] = js.undefined
+  var parentNodeFormat: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback to format data labels
     * for _parentNodes_. The `parentNodeFormat` option takes precedence over
@@ -187,12 +194,10 @@ trait SeriesPackedBubbleDataLabelsOptionsObject extends js.Object {
     */
   var style: js.UndefOr[CSSObject] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Options for a label text which
-    * should follow marker's shape. Border and background are disabled for a
-    * label that follows a path.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for a _node_ label text
+    * which should follow marker's shape.
     *
-    * **Note:** Only SVG-based renderer supports this option. Setting `useHTML`
-    * to true will disable this option.
+    * **Note:** Only SVG-based renderer supports this option.
     */
   var textPath: js.UndefOr[DataLabelsTextPathOptionsObject] = js.undefined
   /**
@@ -230,6 +235,7 @@ object SeriesPackedBubbleDataLabelsOptionsObject {
   def apply(
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
+    attributes: SVGAttributes = null,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
     borderColor: ColorString | GradientColorObject | PatternObject = null,
     borderRadius: Int | Double = null,
@@ -247,6 +253,7 @@ object SeriesPackedBubbleDataLabelsOptionsObject {
     nullFormatter: DataLabelsFormatterCallbackFunction = null,
     overflow: DataLabelsOverflowValue = null,
     padding: Int | Double = null,
+    parentNodeFormat: String = null,
     parentNodeFormatter: SeriesPackedBubbleDataLabelsFormatterCallbackFunction = null,
     parentNodeTextPath: SeriesPackedBubbleDataLabelsTextPathOptionsObject = null,
     position: AlignValue = null,
@@ -264,6 +271,7 @@ object SeriesPackedBubbleDataLabelsOptionsObject {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
@@ -281,6 +289,7 @@ object SeriesPackedBubbleDataLabelsOptionsObject {
     if (nullFormatter != null) __obj.updateDynamic("nullFormatter")(nullFormatter.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (parentNodeFormat != null) __obj.updateDynamic("parentNodeFormat")(parentNodeFormat.asInstanceOf[js.Any])
     if (parentNodeFormatter != null) __obj.updateDynamic("parentNodeFormatter")(parentNodeFormatter.asInstanceOf[js.Any])
     if (parentNodeTextPath != null) __obj.updateDynamic("parentNodeTextPath")(parentNodeTextPath.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])

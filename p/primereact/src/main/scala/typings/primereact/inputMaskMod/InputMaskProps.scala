@@ -1,8 +1,8 @@
 package typings.primereact.inputMaskMod
 
+import typings.primereact.AnonTarget
 import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
-import typings.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,8 +16,8 @@ trait InputMaskProps extends js.Object {
   var mask: js.UndefOr[String] = js.undefined
   var maxlength: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
-  var onComplete: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
+  var onComplete: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var readonly: js.UndefOr[Boolean] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
@@ -43,8 +43,8 @@ object InputMaskProps {
     mask: String = null,
     maxlength: Int | Double = null,
     name: String = null,
-    onChange: /* e */ AnonValue => Unit = null,
-    onComplete: /* e */ Event_ => Unit = null,
+    onChange: /* e */ AnonTarget => Unit = null,
+    onComplete: /* e */ AnonValue => Unit = null,
     placeholder: String = null,
     readonly: js.UndefOr[Boolean] = js.undefined,
     required: js.UndefOr[Boolean] = js.undefined,

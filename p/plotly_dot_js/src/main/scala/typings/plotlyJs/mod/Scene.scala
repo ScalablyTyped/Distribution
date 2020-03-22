@@ -4,7 +4,7 @@ import typings.plotlyJs.PartialAnnotationsArrowcolor
 import typings.plotlyJs.PartialCameraCenter
 import typings.plotlyJs.PartialDomain
 import typings.plotlyJs.PartialPoint
-import typings.plotlyJs.PartialSceneAxisAutorange
+import typings.plotlyJs.PartialSceneAxisBackgroundcolor
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.closest
@@ -29,9 +29,9 @@ trait Scene extends js.Object {
   var domain: PartialDomain
   var dragmode: orbit | turntable | zoom | pan | `false`
   var hovermode: closest | `false`
-  var xaxis: PartialSceneAxisAutorange
-  var yaxis: PartialSceneAxisAutorange
-  var zaxis: PartialSceneAxisAutorange
+  var xaxis: PartialSceneAxisBackgroundcolor
+  var yaxis: PartialSceneAxisBackgroundcolor
+  var zaxis: PartialSceneAxisBackgroundcolor
 }
 
 object Scene {
@@ -46,9 +46,9 @@ object Scene {
     domain: PartialDomain,
     dragmode: orbit | turntable | zoom | pan | `false`,
     hovermode: closest | `false`,
-    xaxis: PartialSceneAxisAutorange,
-    yaxis: PartialSceneAxisAutorange,
-    zaxis: PartialSceneAxisAutorange
+    xaxis: PartialSceneAxisBackgroundcolor,
+    yaxis: PartialSceneAxisBackgroundcolor,
+    zaxis: PartialSceneAxisBackgroundcolor
   ): Scene = {
     val __obj = js.Dynamic.literal(annotations = annotations.asInstanceOf[js.Any], aspectmode = aspectmode.asInstanceOf[js.Any], aspectratio = aspectratio.asInstanceOf[js.Any], bgcolor = bgcolor.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], captureevents = captureevents.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], hovermode = hovermode.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], zaxis = zaxis.asInstanceOf[js.Any])
   

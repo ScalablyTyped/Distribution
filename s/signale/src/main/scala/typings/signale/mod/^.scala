@@ -1,7 +1,7 @@
 package typings.signale.mod
 
 import typings.signale.AnonLabel
-import typings.signale.SignaleDefaultMethodsAwait
+import typings.signale.SignaleDefaultMethodsAddSecrets
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +45,18 @@ object ^ extends js.Object {
   var warn_Original: LoggerFunc = js.native
   @JSName("watch")
   var watch_Original: LoggerFunc = js.native
+  /**
+    * Adds new secrets/sensitive-information to the targeted Signale instance.
+    *
+    * @param secrets Array holding the secrets/sensitive-information to be filtered out.
+    */
+  def addSecrets(secrets: js.Array[Double | String]): Unit = js.native
   def await(): Unit = js.native
   def await(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  /**
+    * Removes all secrets/sensitive-information from the targeted Signale instance.
+    */
+  def clearSecrets(): Unit = js.native
   def complete(): Unit = js.native
   def complete(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   /**
@@ -54,9 +64,17 @@ object ^ extends js.Object {
     *
     * @param configObj Can hold any of the documented options.
     */
-  def config(configObj: SignaleConfig): SignaleDefaultMethodsAwait = js.native
+  def config(configObj: SignaleConfig): SignaleDefaultMethodsAddSecrets = js.native
   def debug(): Unit = js.native
   def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  /**
+    * Disables the logging functionality of all loggers belonging to a specific instance.
+    */
+  def disable(): Unit = js.native
+  /**
+    * Enables the logging functionality of all loggers belonging to a specific instance.
+    */
+  def enable(): Unit = js.native
   def error(): Unit = js.native
   def error(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def fatal(): Unit = js.native
@@ -65,6 +83,12 @@ object ^ extends js.Object {
   def fav(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def info(): Unit = js.native
   def info(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+  /**
+    * Checks whether the logging functionality of a specific instance is enabled.
+    *
+    * @returns a boolean that describes whether or not the logger is enabled.
+    */
+  def isEnabled(): Boolean = js.native
   def log(): Unit = js.native
   def log(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def note(): Unit = js.native
@@ -78,7 +102,7 @@ object ^ extends js.Object {
     *
     * @param name Can be one or more comma delimited strings.
     */
-  def scope(name: String*): SignaleDefaultMethodsAwait = js.native
+  def scope(name: String*): SignaleDefaultMethodsAddSecrets = js.native
   def star(): Unit = js.native
   def star(message: js.Any, optionalArgs: js.Any*): Unit = js.native
   def start(): Unit = js.native

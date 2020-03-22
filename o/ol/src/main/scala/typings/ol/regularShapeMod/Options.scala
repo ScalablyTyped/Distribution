@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var angle: js.UndefOr[Double] = js.undefined
+  var displacement: js.UndefOr[js.Array[Double]] = js.undefined
   var fill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
   var points: Double
   var radius: js.UndefOr[Double] = js.undefined
@@ -21,6 +22,7 @@ object Options {
   def apply(
     points: Double,
     angle: Int | Double = null,
+    displacement: js.Array[Double] = null,
     fill: typings.ol.fillMod.default = null,
     radius: Int | Double = null,
     radius1: Int | Double = null,
@@ -31,6 +33,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (displacement != null) __obj.updateDynamic("displacement")(displacement.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (radius1 != null) __obj.updateDynamic("radius1")(radius1.asInstanceOf[js.Any])

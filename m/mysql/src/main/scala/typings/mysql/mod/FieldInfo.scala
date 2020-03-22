@@ -4,21 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FieldInfo extends js.Object {
-  var catalog: String
-  var charsetNr: Double
-  var db: String
-  var decimals: Double
-  var default: js.UndefOr[String] = js.undefined
-  var flags: Double
-  var length: Double
-  var name: String
-  var orgName: String
-  var orgTable: String
-  var protocol41: Boolean
-  var table: String
+trait FieldInfo extends UntypedFieldInfo {
   var `type`: Types
-  var zeroFill: Boolean
 }
 
 object FieldInfo {

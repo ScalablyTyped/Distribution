@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "ember__test-helpers"
-version := "0.7-dt-20191003Z-66274d"
+version := "0.7-dt-20200227Z-8f2648"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20200106Z-b7e0fe",
-  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20191126Z-fbe6f5",
-  "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20190503Z-a7aa14",
-  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20191126Z-d25263",
+  "org.scalablytyped" %%% "ember__application" % "3.0-dt-20200106Z-4c7783",
+  "org.scalablytyped" %%% "ember__component" % "3.0-dt-20191126Z-bfa4c7",
+  "org.scalablytyped" %%% "ember__controller" % "3.0-dt-20200315Z-22cb9a",
+  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20191126Z-29f802",
   "org.scalablytyped" %%% "ember__error" % "3.0-dt-20190213Z-d80471",
-  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20191126Z-c78d90",
-  "org.scalablytyped" %%% "ember__routing" % "3.0-dt-20191126Z-f55501",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200204Z-2d3992",
-  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20190717Z-c58757",
+  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20200225Z-2bba69",
+  "org.scalablytyped" %%% "ember__routing" % "3.0-dt-20200225Z-3433dd",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20200225Z-e64e66",
+  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20200225Z-c58757",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3d9ead",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false

@@ -22,7 +22,7 @@ trait EnvironmentState extends js.Object {
     * Name of the application that contains the version
     * to be deployed
     */
-  val application: js.UndefOr[Input[Application]] = js.native
+  val application: js.UndefOr[Input[String | Application]] = js.native
   val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The autoscaling groups used by this Environment.
@@ -125,7 +125,7 @@ object EnvironmentState {
   @scala.inline
   def apply(
     allSettings: Input[js.Array[Input[EnvironmentAllSetting]]] = null,
-    application: Input[Application] = null,
+    application: Input[String | Application] = null,
     arn: Input[String] = null,
     autoscalingGroups: Input[js.Array[Input[String]]] = null,
     cname: Input[String] = null,

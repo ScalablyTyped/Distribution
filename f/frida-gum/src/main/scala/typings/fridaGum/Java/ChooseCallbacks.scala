@@ -1,6 +1,7 @@
 package typings.fridaGum.Java
 
 import typings.fridaGum.EnumerateAction
+import typings.fridaGum.WrapperAlloc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,12 +18,12 @@ trait ChooseCallbacks extends js.Object {
     *
     * May return `EnumerateAction.Stop` to stop the enumeration early.
     */
-  def onMatch(instance: Wrapper): Unit | EnumerateAction
+  def onMatch(instance: WrapperAlloc): Unit | EnumerateAction
 }
 
 object ChooseCallbacks {
   @scala.inline
-  def apply(onComplete: () => Unit, onMatch: Wrapper => Unit | EnumerateAction): ChooseCallbacks = {
+  def apply(onComplete: () => Unit, onMatch: WrapperAlloc => Unit | EnumerateAction): ChooseCallbacks = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onMatch = js.Any.fromFunction1(onMatch))
   
     __obj.asInstanceOf[ChooseCallbacks]

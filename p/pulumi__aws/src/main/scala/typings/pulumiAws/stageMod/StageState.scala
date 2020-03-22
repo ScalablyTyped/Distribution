@@ -35,7 +35,7 @@ trait StageState extends js.Object {
   /**
     * The ID of the deployment that the stage points to
     */
-  val deployment: js.UndefOr[Input[Deployment]] = js.native
+  val deployment: js.UndefOr[Input[String | Deployment]] = js.native
   /**
     * The description of the stage
     */
@@ -58,7 +58,7 @@ trait StageState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * The name of the stage
     */
@@ -85,12 +85,12 @@ object StageState {
     cacheClusterEnabled: Input[Boolean] = null,
     cacheClusterSize: Input[String] = null,
     clientCertificateId: Input[String] = null,
-    deployment: Input[Deployment] = null,
+    deployment: Input[String | Deployment] = null,
     description: Input[String] = null,
     documentationVersion: Input[String] = null,
     executionArn: Input[String] = null,
     invokeUrl: Input[String] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     stageName: Input[String] = null,
     tags: Input[StringDictionary[_]] = null,
     variables: Input[StringDictionary[_]] = null,

@@ -1,5 +1,6 @@
 package typings.reactBigCalendar
 
+import typings.reactBigCalendar.mod.DayLayoutAlgorithm
 import typings.reactBigCalendar.mod.NavigateAction
 import typings.reactBigCalendar.mod.View
 import typings.reactBigCalendar.mod.ViewKey
@@ -69,6 +70,12 @@ object reactBigCalendarStrings {
   sealed trait move extends js.Object
   
   @js.native
+  sealed trait `no-overlap` extends DayLayoutAlgorithm
+  
+  @js.native
+  sealed trait overlap extends DayLayoutAlgorithm
+  
+  @js.native
   sealed trait resize extends js.Object
   
   @js.native
@@ -120,6 +127,10 @@ object reactBigCalendarStrings {
   def month_ : month_ = "month".asInstanceOf[month_]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
+  @scala.inline
+  def `no-overlap`: `no-overlap` = "no-overlap".asInstanceOf[`no-overlap`]
+  @scala.inline
+  def overlap: overlap = "overlap".asInstanceOf[overlap]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
   @scala.inline

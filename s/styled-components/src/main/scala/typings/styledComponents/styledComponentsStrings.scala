@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation._
 
 object styledComponentsStrings {
   @js.native
-  sealed trait DeprecatedAttrs extends js.Object
-  
-  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -545,8 +542,6 @@ object styledComponentsStrings {
   @js.native
   sealed trait webview extends js.Object
   
-  @scala.inline
-  def DeprecatedAttrs: DeprecatedAttrs = "DeprecatedAttrs".asInstanceOf[DeprecatedAttrs]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

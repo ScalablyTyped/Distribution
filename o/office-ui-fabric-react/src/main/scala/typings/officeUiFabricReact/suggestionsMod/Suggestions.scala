@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.suggestionsMod
 
 import typings.officeUiFabricReact.buttonTypesMod.IButton
 import typings.officeUiFabricReact.suggestionsTypesMod.ISuggestionsProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions", "Suggestions")
 @js.native
-class Suggestions[T] protected () extends BaseComponent[ISuggestionsProps[T], ISuggestionsState] {
+class Suggestions[T] protected ()
+  extends Component[ISuggestionsProps[T], ISuggestionsState, js.Any] {
   def this(suggestionsProps: ISuggestionsProps[T]) = this()
   var _classNames: js.Any = js.native
   var _forceResolve: js.Any = js.native

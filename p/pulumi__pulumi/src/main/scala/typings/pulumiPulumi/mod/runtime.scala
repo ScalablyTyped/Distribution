@@ -5,6 +5,7 @@ import typings.pulumiPulumi.assetMod.Archive
 import typings.pulumiPulumi.assetMod.Asset
 import typings.pulumiPulumi.codePathsMod.CodePathOptions
 import typings.pulumiPulumi.invokeMod.InvokeOptions
+import typings.pulumiPulumi.mocksMod.Mocks
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Inputs
 import typings.pulumiPulumi.pulumiPulumiStrings.`04da6b54-80e4-46f7-96ec-b56ff0331ba9`
@@ -124,6 +125,14 @@ object runtime extends js.Object {
     js.Tuple2[Record[String, _], Map[String, Set[typings.pulumiPulumi.resourceMod.Resource]]]
   ] = js.native
   def setConfig(k: String, v: String): Unit = js.native
+  def setMockOptions(mockMonitor: js.Any): Unit = js.native
+  def setMockOptions(mockMonitor: js.Any, project: String): Unit = js.native
+  def setMockOptions(mockMonitor: js.Any, project: String, stack: String): Unit = js.native
+  def setMockOptions(mockMonitor: js.Any, project: String, stack: String, preview: Boolean): Unit = js.native
+  def setMocks(mocks: Mocks): Unit = js.native
+  def setMocks(mocks: Mocks, project: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: String, stack: String): Unit = js.native
+  def setMocks(mocks: Mocks, project: String, stack: String, preview: Boolean): Unit = js.native
   def setRootResource(res: typings.pulumiPulumi.resourceMod.ComponentResource[_]): js.Promise[Unit] = js.native
   def streamInvoke(tok: String, props: Inputs): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native
   def streamInvoke(tok: String, props: Inputs, opts: InvokeOptions): js.Promise[typings.pulumiPulumi.runtimeInvokeMod.StreamInvokeResponse[_]] = js.native

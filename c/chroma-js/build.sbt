@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chroma-js"
-version := "2.0-dt-20200205Z-45bf26"
+version := "2.0-dt-20200226Z-45bf26"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for antd
 
-Typings are for version 4.0.0
+Typings are for version 4.0.3
 
 ## Library description:
 An enterprise-class UI design language and React components implementation

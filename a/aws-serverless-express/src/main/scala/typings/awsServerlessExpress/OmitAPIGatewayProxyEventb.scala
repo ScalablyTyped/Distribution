@@ -1,7 +1,8 @@
 package typings.awsServerlessExpress
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsLambda.apiGatewayMod.APIGatewayEventRequestContext
+import typings.awsLambda.apiGatewayMod.APIGatewayEventDefaultAuthorizerContext
+import typings.awsLambda.apiGatewayMod.APIGatewayEventRequestContextWithAuthorizer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ trait OmitAPIGatewayProxyEventb extends js.Object {
   var path: String
   var pathParameters: js.UndefOr[StringDictionary[String]] = js.undefined
   var queryStringParameters: js.UndefOr[StringDictionary[String]] = js.undefined
-  var requestContext: APIGatewayEventRequestContext
+  var requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]
   var resource: String
   var stageVariables: js.UndefOr[StringDictionary[String]] = js.undefined
 }
@@ -29,7 +30,7 @@ object OmitAPIGatewayProxyEventb {
     isBase64Encoded: Boolean,
     multiValueHeaders: StringDictionary[js.Array[String]],
     path: String,
-    requestContext: APIGatewayEventRequestContext,
+    requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext],
     resource: String,
     multiValueQueryStringParameters: StringDictionary[js.Array[String]] = null,
     pathParameters: StringDictionary[String] = null,

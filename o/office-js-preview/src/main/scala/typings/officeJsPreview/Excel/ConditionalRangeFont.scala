@@ -61,7 +61,6 @@ class ConditionalRangeFont () extends ClientObject {
     */
   var underline: ConditionalRangeFontUnderlineStyle | None | Single | Double = js.native
   /**
-    *
     * Resets the font formats.
     *
     * [Api set: ExcelApi 1.6]

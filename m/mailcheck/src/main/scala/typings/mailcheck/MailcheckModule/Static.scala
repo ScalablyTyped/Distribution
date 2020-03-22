@@ -17,7 +17,8 @@ trait Static extends js.Object {
   def findClosestDomain(domain: String, domains: js.Array[String]): Boolean | String = js.native
   def findClosestDomain(domain: String, domains: js.Array[String], distanceFunction: IDistanceFunction): Boolean | String = js.native
   def findClosestDomain(domain: String, domains: js.Array[String], distanceFunction: IDistanceFunction, threshold: Double): Boolean | String = js.native
-  def run(opts: IOptions): Unit = js.native
+  def run(opts: IAsynchronousOptions): Unit = js.native
+  def run(opts: ISynchronousOptions): js.UndefOr[ISuggestion] = js.native
   def sift3Distance(s1: String, s2: String): Double = js.native
   def splitEmail(email: String): ISplitEmail = js.native
   def suggest(email: String): Unit = js.native

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redux-localstorage-debounce"
-version := "0.1-dt-20180214Z-f63041"
+version := "0.1-dt-20180214Z-2ecf95"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "redux" % "4.0.5-c5ba7d",
-  "org.scalablytyped" %%% "redux-localstorage" % "1.0-dt-20191126Z-106710",
+  "org.scalablytyped" %%% "redux-localstorage" % "1.0-dt-20200225Z-106710",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

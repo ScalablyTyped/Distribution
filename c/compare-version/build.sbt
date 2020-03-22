@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "compare-version"
-version := "v0.1.2-dt-20190322Z-672669"
+version := "v0.1.2-dt-20200226Z-672669"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

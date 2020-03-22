@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sipml"
-version := "0.0-unknown-dt-20190322Z-c9503c"
+version := "0.0-unknown-dt-20200225Z-c9503c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

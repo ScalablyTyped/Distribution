@@ -45,7 +45,7 @@ trait ImportInstanceLaunchSpecification extends js.Object {
   /**
     * [EC2-VPC] The ID of the subnet in which to launch the instance.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
   /**
     * The Base64-encoded user data to make available to the instance.
     */
@@ -64,7 +64,7 @@ object ImportInstanceLaunchSpecification {
     Monitoring: js.UndefOr[scala.Boolean] = js.undefined,
     Placement: Placement = null,
     PrivateIpAddress: String = null,
-    SubnetId: String = null,
+    SubnetId: SubnetId = null,
     UserData: UserData = null
   ): ImportInstanceLaunchSpecification = {
     val __obj = js.Dynamic.literal()

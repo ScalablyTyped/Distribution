@@ -9,7 +9,7 @@ package object Office {
     * The subclass of {@link Office.Item | Item} dealing with appointments.
     * 
     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-    * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+    * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
     * 
     * Child interfaces:
@@ -22,8 +22,8 @@ package object Office {
   /**
     * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
     * 
-    * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-    * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+    * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
+    * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
     * 
     * Child interfaces:
@@ -36,8 +36,8 @@ package object Office {
   /**
     * The read mode of {@link Office.Item | Office.context.mailbox.item}.
     * 
-    * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-    * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+    * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces.
+    * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
     * 
     * Child interfaces:
@@ -51,7 +51,7 @@ package object Office {
     * A subclass of {@link Office.Item | Item} for messages.
     * 
     * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
-    * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+    * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the
     * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item | Object Model} page for more information.
     * 
     * Child interfaces:

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fhir"
-version := "0.0-unknown-dt-20191014Z-b0ae89"
+version := "0.0-unknown-dt-20200226Z-b0ae89"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

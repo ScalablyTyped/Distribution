@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "autosuggest-highlight"
-version := "3.1-dt-20191126Z-aeadef"
+version := "3.1-dt-20200225Z-aeadef"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

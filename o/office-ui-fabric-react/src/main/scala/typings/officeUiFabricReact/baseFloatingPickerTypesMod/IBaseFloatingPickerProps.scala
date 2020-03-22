@@ -93,8 +93,8 @@ trait IBaseFloatingPickerProps[T]
     */
   var searchingText: js.UndefOr[(js.Function1[/* props */ AnonInput, String]) | String] = js.native
   /**
-    * The items that the base picker should currently display as selected. If this is provided then the picker will act as a controlled
-    * component.
+    * The items that the base picker should currently display as selected.
+    * If this is provided then the picker will act as a controlled component.
     */
   var selectedItems: js.UndefOr[js.Array[T]] = js.native
   /**

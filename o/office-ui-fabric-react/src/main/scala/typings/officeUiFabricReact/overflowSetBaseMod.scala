@@ -2,7 +2,7 @@ package typings.officeUiFabricReact
 
 import typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSet
 import typings.officeUiFabricReact.overflowSetTypesMod.IOverflowSetProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object overflowSetBaseMod extends js.Object {
   @js.native
   class OverflowSetBase protected ()
-    extends BaseComponent[IOverflowSetProps, js.Object]
+    extends Component[IOverflowSetProps, js.Object, js.Any]
        with IOverflowSet {
     def this(props: IOverflowSetProps) = this()
     var _classNames: js.Any = js.native

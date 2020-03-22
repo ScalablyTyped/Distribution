@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "polymer-ts"
-version := "0.1.25-dt-20190927Z-805c8b"
+version := "0.1.25-dt-20200226Z-805c8b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

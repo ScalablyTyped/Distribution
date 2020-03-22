@@ -854,7 +854,7 @@ package object ssmMod {
   type PatchSourceName = java.lang.String
   type PatchSourceProduct = java.lang.String
   type PatchSourceProductList = js.Array[typings.awsSdk.ssmMod.PatchSourceProduct]
-  type PatchStringDate = java.lang.String
+  type PatchStringDateTime = java.lang.String
   type PatchTitle = java.lang.String
   type PatchUnreportedNotApplicableCount = scala.Double
   type PatchVendor = java.lang.String
@@ -891,6 +891,7 @@ package object ssmMod {
   type ResourceCountByStatus = java.lang.String
   type ResourceDataSyncAWSKMSKeyARN = java.lang.String
   type ResourceDataSyncCreatedTime = typings.std.Date
+  type ResourceDataSyncDestinationDataSharingType = java.lang.String
   type ResourceDataSyncIncludeFutureRegions = scala.Boolean
   type ResourceDataSyncItemList = js.Array[typings.awsSdk.ssmMod.ResourceDataSyncItem]
   type ResourceDataSyncLastModifiedTime = typings.std.Date

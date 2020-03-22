@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-wit"
-version := "4.2-dt-20180214Z-89ea46"
+version := "4.2-dt-20200225Z-89ea46"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

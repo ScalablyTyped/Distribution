@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "schema-utils"
-version := "2.6.4-aad045"
+version := "2.6.5-3efa30"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "ajv" % "6.12.0-eabe0e",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20191223Z-c70582",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20200225Z-c70582",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

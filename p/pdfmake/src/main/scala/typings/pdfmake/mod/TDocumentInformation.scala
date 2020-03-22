@@ -5,9 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TDocumentInformation extends js.Object {
+  /** the name of the author */
   var author: js.UndefOr[String] = js.undefined
+  /** keywords associated with the document */
   var keywords: js.UndefOr[String] = js.undefined
+  /** the subject of the document */
   var subject: js.UndefOr[String] = js.undefined
+  /** the title of the document */
   var title: js.UndefOr[String] = js.undefined
 }
 

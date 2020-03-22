@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WaitProps extends js.Object {
-  var fallback: Element
+trait WaitProps extends WaitingContextWaitProps {
   var on: String
 }
 

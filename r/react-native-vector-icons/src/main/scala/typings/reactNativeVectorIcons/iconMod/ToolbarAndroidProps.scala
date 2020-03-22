@@ -98,6 +98,7 @@ object ToolbarAndroidProps {
     navIcon: ImageURISource = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onActionSelected: /* position */ Double => Unit = null,
     onIconClicked: () => Unit = null,
@@ -165,6 +166,7 @@ object ToolbarAndroidProps {
     if (navIcon != null) __obj.updateDynamic("navIcon")(navIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onActionSelected != null) __obj.updateDynamic("onActionSelected")(js.Any.fromFunction1(onActionSelected))
     if (onIconClicked != null) __obj.updateDynamic("onIconClicked")(js.Any.fromFunction0(onIconClicked))

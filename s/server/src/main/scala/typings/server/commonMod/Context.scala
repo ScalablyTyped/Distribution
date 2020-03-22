@@ -27,7 +27,7 @@ trait Context extends js.Object {
   var path: String
   var query: StringDictionary[String | js.Array[String]]
   var req: Request_[ParamsDictionary]
-  var res: Response_
+  var res: Response_[_]
   var secure: Boolean
   var session: js.Object
   var url: String
@@ -50,7 +50,7 @@ object Context {
     path: String,
     query: StringDictionary[String | js.Array[String]],
     req: Request_[ParamsDictionary],
-    res: Response_,
+    res: Response_[_],
     secure: Boolean,
     session: js.Object,
     url: String,

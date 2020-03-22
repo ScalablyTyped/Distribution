@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-brush
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Select a one- or two-dimensional region using the mouse or touch.

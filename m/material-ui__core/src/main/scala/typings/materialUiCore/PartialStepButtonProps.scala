@@ -158,7 +158,7 @@ trait PartialStepButtonProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepButtonClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapStepBu] = js.native
   var color: js.UndefOr[String] = js.native
   var completed: js.UndefOr[Boolean] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
@@ -374,7 +374,7 @@ object PartialStepButtonProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepButtonClasskey = null,
+    classes: PartialClassNameMapStepBu = null,
     color: String = null,
     completed: js.UndefOr[Boolean] = js.undefined,
     component: ReactType[ButtonBaseProps] = null,

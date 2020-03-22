@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait ObjectPattern
   extends BaseNode
      with Pattern {
-  var properties: js.Array[AssignmentProperty]
+  var properties: js.Array[AssignmentProperty | RestElement]
   @JSName("type")
   var type_ObjectPattern: typings.estree.estreeStrings.ObjectPattern
 }
@@ -15,7 +15,7 @@ trait ObjectPattern
 object ObjectPattern {
   @scala.inline
   def apply(
-    properties: js.Array[AssignmentProperty],
+    properties: js.Array[AssignmentProperty | RestElement],
     `type`: typings.estree.estreeStrings.ObjectPattern,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,

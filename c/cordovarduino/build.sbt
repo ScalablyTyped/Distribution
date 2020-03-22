@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordovarduino"
-version := "0.0-unknown-dt-20190322Z-1068e4"
+version := "0.0-unknown-dt-20200226Z-1068e4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

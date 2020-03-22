@@ -19,7 +19,7 @@ trait BasePathMappingArgs extends js.Object {
   /**
     * The id of the API to connect.
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * The name of a specific deployment stage to expose at the given path. If omitted, callers may select any stage by including its name as a path element after the base path.
     */
@@ -30,7 +30,7 @@ object BasePathMappingArgs {
   @scala.inline
   def apply(
     domainName: Input[String],
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     basePath: Input[String] = null,
     stageName: Input[String] = null
   ): BasePathMappingArgs = {

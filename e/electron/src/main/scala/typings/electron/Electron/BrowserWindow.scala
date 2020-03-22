@@ -315,6 +315,13 @@ class BrowserWindow () extends EventEmitter {
     */
   def getTitle(): String = js.native
   /**
+    * The current position for the traffic light buttons. Can only be used with
+    * `titleBarStyle` set to `hidden`.
+    *
+    * @platform darwin
+    */
+  def getTrafficLightPosition(): Point = js.native
+  /**
     * Whether the window has a shadow.
     */
   def hasShadow(): Boolean = js.native
@@ -1335,6 +1342,13 @@ class BrowserWindow () extends EventEmitter {
     * @platform darwin
     */
   def setTouchBar(touchBar: TouchBar): Unit = js.native
+  /**
+    * Set a custom position for the traffic light buttons. Can only be used with
+    * `titleBarStyle` set to `hidden`.
+    *
+    * @platform darwin
+    */
+  def setTrafficLightPosition(position: Point): Unit = js.native
   /**
     * Adds a vibrancy effect to the browser window. Passing `null` or an empty string
     * will remove the vibrancy effect on the window.

@@ -14,7 +14,7 @@ trait SchemaFieldProps[T] extends js.Object {
   var errorSchema: ErrorSchema
   var formContext: js.Any
   var formData: T
-  var idSchema: IdSchema
+  var idSchema: IdSchema[_]
   var registry: AnonDefinitions
   var schema: JSONSchema6
   var uiSchema: UiSchema
@@ -26,7 +26,7 @@ object SchemaFieldProps {
     errorSchema: ErrorSchema,
     formContext: js.Any,
     formData: T,
-    idSchema: IdSchema,
+    idSchema: IdSchema[_],
     registry: AnonDefinitions,
     schema: JSONSchema6,
     uiSchema: UiSchema

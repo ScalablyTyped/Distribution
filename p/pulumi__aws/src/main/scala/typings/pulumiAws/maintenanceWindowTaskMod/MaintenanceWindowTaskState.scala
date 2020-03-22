@@ -17,6 +17,8 @@ trait MaintenanceWindowTaskState extends js.Object {
   val description: js.UndefOr[Input[String]] = js.native
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `taskInvocationParameters` configuration block `runCommandParameters` configuration block `output_s3_*` arguments instead. Conflicts with `taskInvocationParameters`. Documented below.
+    *
+    * @deprecated use 'task_invocation_parameters' argument instead
     */
   val loggingInfo: js.UndefOr[Input[MaintenanceWindowTaskLoggingInfo]] = js.native
   /**
@@ -53,6 +55,8 @@ trait MaintenanceWindowTaskState extends js.Object {
   val taskInvocationParameters: js.UndefOr[Input[MaintenanceWindowTaskTaskInvocationParameters]] = js.native
   /**
     * A structure containing information about parameters required by the particular `taskArn`. Use `parameter` configuration blocks under the `taskInvocationParameters` configuration block instead. Conflicts with `taskInvocationParameters`. Documented below.
+    *
+    * @deprecated use 'task_invocation_parameters' argument instead
     */
   val taskParameters: js.UndefOr[Input[js.Array[Input[MaintenanceWindowTaskTaskParameter]]]] = js.native
   /**

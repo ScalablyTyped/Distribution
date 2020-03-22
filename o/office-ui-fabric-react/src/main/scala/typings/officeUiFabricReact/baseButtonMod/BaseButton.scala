@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.baseButtonMod
 
 import typings.officeUiFabricReact.PartialIBaseButtonProps
 import typings.officeUiFabricReact.buttonTypesMod.IButton
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,14 +10,16 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton", "BaseButton")
 @js.native
 class BaseButton protected ()
-  extends BaseComponent[IBaseButtonProps, IBaseButtonState]
+  extends Component[IBaseButtonProps, IBaseButtonState, js.Any]
      with IButton {
-  def this(props: IBaseButtonProps, rootClassName: String) = this()
+  def this(props: IBaseButtonProps) = this()
   var _ariaDescriptionId: js.Any = js.native
+  var _async: js.Any = js.native
   var _buttonElement: js.Any = js.native
   var _classNames: js.Any = js.native
   var _descriptionId: js.Any = js.native
   var _dismissMenu: js.Any = js.native
+  var _events: js.Any = js.native
   var _getMemoizedMenuButtonKeytipProps: js.Any = js.native
   var _handleTouchAndPointerEvent: js.Any = js.native
   var _hasText: js.Any = js.native
@@ -73,6 +75,8 @@ class BaseButton protected ()
   def componentDidMount_MBaseButton(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MBaseButton(prevProps: IBaseButtonProps, prevState: IBaseButtonState): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MBaseButton(): Unit = js.native
 }
 
 /* static members */

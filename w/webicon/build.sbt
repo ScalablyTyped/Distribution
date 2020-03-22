@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webicon"
-version := "0.10-dt-20190520Z-b1c54c"
+version := "0.10-dt-20200225Z-b1c54c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

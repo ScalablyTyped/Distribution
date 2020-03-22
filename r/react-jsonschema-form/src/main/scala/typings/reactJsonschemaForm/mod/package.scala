@@ -11,5 +11,7 @@ package object mod {
   ])
   type FieldError = java.lang.String
   type ISubmitEvent[T] = typings.reactJsonschemaForm.mod.IChangeEvent[T]
+  type IdSchema[T] = typings.reactJsonschemaForm.reactJsonschemaFormStrings.IdSchema with js.Any with typings.reactJsonschemaForm.mod.FieldId
+  type PathSchema[T] = typings.reactJsonschemaForm.reactJsonschemaFormStrings.PathSchema with js.Any with typings.reactJsonschemaForm.mod.FieldPath
   type Widget = typings.react.mod.StatelessComponent[typings.reactJsonschemaForm.mod.WidgetProps] | (typings.react.mod.ComponentClass[typings.reactJsonschemaForm.mod.WidgetProps, typings.react.mod.ComponentState])
 }

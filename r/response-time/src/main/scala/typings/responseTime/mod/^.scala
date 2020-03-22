@@ -26,7 +26,7 @@ object ^ extends js.Object {
   def apply(
     fn: js.Function3[
       /* request */ Request_[ParamsDictionary], 
-      /* response */ Response_, 
+      /* response */ Response_[_], 
       /* time */ Double, 
       _
     ]

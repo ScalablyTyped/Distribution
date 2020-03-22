@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "refresh-fetch"
-version := "0.6-dt-20200212Z-15028c"
+version := "0.6-dt-20200318Z-ca198f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

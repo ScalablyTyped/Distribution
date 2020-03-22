@@ -39,7 +39,7 @@ trait DescribeSigningJobResponse extends js.Object {
     */
   var signedObject: js.UndefOr[SignedObject] = js.native
   /**
-    * Amazon Resource Name (ARN) of your code signing certificate.
+    * The Amazon Resource Name (ARN) of your code signing certificate.
     */
   var signingMaterial: js.UndefOr[SigningMaterial] = js.native
   /**

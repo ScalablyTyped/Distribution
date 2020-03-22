@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-node" : "8.5.4"
+      "ts-node" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-node" : "8.5.4"
+      "ts-node" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

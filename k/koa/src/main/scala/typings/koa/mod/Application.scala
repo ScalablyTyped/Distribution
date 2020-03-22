@@ -33,7 +33,7 @@ trait Application[StateT, CustomT] extends EventEmitter {
   def callback(): js.Function2[
     /* req */ IncomingMessage | Http2ServerRequest, 
     /* res */ ServerResponse | Http2ServerResponse, 
-    Unit
+    js.Promise[Unit]
   ] = js.native
   /**
     * Initialize a new context.

@@ -126,7 +126,7 @@ trait SeriesSunburstDataLabelsOptionsObject extends js.Object {
     * as a percentage of pie's radius. Connectors are only shown for data
     * labels outside the pie.
     */
-  var distance: js.UndefOr[Double] = js.undefined
+  var distance: js.UndefOr[Double | String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the data
     * labels.
@@ -199,8 +199,11 @@ trait SeriesSunburstDataLabelsOptionsObject extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Decides how the data label will
     * be rotated relative to the perimeter of the sunburst. Valid values are
-    * `auto`, `parallel` and `perpendicular`. When `auto`, the best fit will be
-    * computed for the point.
+    * `auto`, `circular`, `parallel` and `perpendicular`. When `auto`, the best
+    * fit will be computed for the point. The `circular` option works similiar
+    * to `auto`, but uses the `textPath` feature - labels are curved, resulting
+    * in a better layout, however multiple lines and `textOutline` are not
+    * supported.
     *
     * The `series.rotation` option takes precedence over `rotationMode`.
     */
@@ -303,7 +306,7 @@ object SeriesSunburstDataLabelsOptionsObject {
     crookDistance: String = null,
     crop: js.UndefOr[Boolean] = js.undefined,
     defer: js.UndefOr[Boolean] = js.undefined,
-    distance: Int | Double = null,
+    distance: Double | String = null,
     enabled: js.UndefOr[Boolean] = js.undefined,
     filter: DataLabelsFilterOptionsObject = null,
     format: String = null,

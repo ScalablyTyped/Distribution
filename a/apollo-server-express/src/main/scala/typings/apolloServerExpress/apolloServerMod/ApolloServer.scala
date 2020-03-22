@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 class ApolloServer protected () extends ApolloServerBase {
   def this(config: ApolloServerExpressConfig) = this()
   def applyMiddleware(hasAppRest: ServerRegistration): Unit = js.native
-  def createGraphQLServerOptions(req: Request_[ParamsDictionary], res: Response_): js.Promise[GraphQLServerOptions[Record[String, _], _]] = js.native
+  def createGraphQLServerOptions(req: Request_[ParamsDictionary], res: Response_[_]): js.Promise[GraphQLServerOptions[Record[String, _], _]] = js.native
   def getMiddleware(): Router = js.native
   def getMiddleware(hasPathCorsBodyParserConfigDisableHealthCheckOnHealthCheck: GetMiddlewareOptions): Router = js.native
 }

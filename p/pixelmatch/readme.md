@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixelmatch
 
-Typings are for version 5.0
+Typings are for version 5.1
 
 ## Library description:
 The smallest and fastest pixel-level image comparison library.

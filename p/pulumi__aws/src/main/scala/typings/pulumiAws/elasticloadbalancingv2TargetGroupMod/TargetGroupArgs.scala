@@ -23,6 +23,10 @@ trait TargetGroupArgs extends js.Object {
     */
   val lambdaMultiValueHeadersEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
+    * Determines how the load balancer selects targets when routing requests. Only applicable for Application Load Balancer Target Groups. The value is `roundRobin` or `leastOutstandingRequests`. The default is `roundRobin`.
+    */
+  val loadBalancingAlgorithmType: js.UndefOr[Input[String]] = js.native
+  /**
     * The name of the target group. If omitted, this provider will assign a random, unique name.
     */
   val name: js.UndefOr[Input[String]] = js.native
@@ -75,6 +79,7 @@ object TargetGroupArgs {
     deregistrationDelay: Input[Double] = null,
     healthCheck: Input[TargetGroupHealthCheck] = null,
     lambdaMultiValueHeadersEnabled: Input[Boolean] = null,
+    loadBalancingAlgorithmType: Input[String] = null,
     name: Input[String] = null,
     namePrefix: Input[String] = null,
     port: Input[Double] = null,
@@ -90,6 +95,7 @@ object TargetGroupArgs {
     if (deregistrationDelay != null) __obj.updateDynamic("deregistrationDelay")(deregistrationDelay.asInstanceOf[js.Any])
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
     if (lambdaMultiValueHeadersEnabled != null) __obj.updateDynamic("lambdaMultiValueHeadersEnabled")(lambdaMultiValueHeadersEnabled.asInstanceOf[js.Any])
+    if (loadBalancingAlgorithmType != null) __obj.updateDynamic("loadBalancingAlgorithmType")(loadBalancingAlgorithmType.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

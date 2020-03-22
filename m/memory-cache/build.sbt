@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "memory-cache"
-version := "0.2-dt-20180214Z-2e4b6f"
+version := "0.2-dt-20200302Z-b227ec"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * The InternetHeaders object represents custom internet headers that are preserved after the message item leaves Exchange and is converted to a MIME message. 
-  * These headers are stored as x-headers in the MIME message.
+  * The `InternetHeaders` object represents custom internet headers that are preserved after the message item leaves Exchange
+  * and is converted to a MIME message. These headers are stored as x-headers in the MIME message.
   * 
-  * InternetHeaders are stored as key/value pairs on a per-item basis.
+  * Internet headers are stored as key/value pairs on a per-item basis.
   * 
   * **Note**: This object is intended for you to set and get your custom headers on a message item.
   *
@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation._
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
   */
 @js.native
 trait InternetHeaders extends js.Object {
@@ -32,15 +32,15 @@ trait InternetHeaders extends js.Object {
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     * 
     * @param names - The names of the internet headers to be returned.
     * @param options - Optional. An object literal that contains one or more of the following properties:
-    *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                asyncResult, which is an Office.AsyncResult object.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def getAsync(names: js.Array[String]): Unit = js.native
   def getAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
@@ -59,15 +59,15 @@ trait InternetHeaders extends js.Object {
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     * 
     * @param names - The names of the internet headers to be removed.
     * @param options - Optional. An object literal that contains one or more of the following properties:
-    *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                asyncResult, which is an Office.AsyncResult object.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
+    *                `asyncResult`, which is an `Office.AsyncResult` object.
     */
   def removeAsync(names: js.Array[String]): Unit = js.native
   def removeAsync(names: js.Array[String], callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
@@ -80,7 +80,7 @@ trait InternetHeaders extends js.Object {
   /**
     * Sets the specified internet headers to the specified values.
     * 
-    * The setAsync method creates a new header if the specified header doesn't already exist; otherwise, the existing value is replaced with 
+    * The `setAsync` method creates a new header if the specified header doesn't already exist; otherwise, the existing value is replaced with 
     * the new value.
     *
     * **Note**: This method is intended to set the values of your custom headers.
@@ -89,16 +89,16 @@ trait InternetHeaders extends js.Object {
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
     * 
-    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
+    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
     * @param headers - The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the 
     *                internet headers and values being the values of the internet headers.
     * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
-    *                  Any errors encountered will be provided in the asyncResult.error property.
+    *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type Office.AsyncResult. Any errors encountered will be provided in the `asyncResult.error` property.
     */
   def setAsync(headers: js.Object): Unit = js.native
   def setAsync(headers: js.Object, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native

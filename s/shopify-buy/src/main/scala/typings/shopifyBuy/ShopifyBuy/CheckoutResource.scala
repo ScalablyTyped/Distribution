@@ -32,6 +32,11 @@ trait CheckoutResource extends js.Object {
   ): js.Promise[Cart] = js.native
   def fetch(id: String): js.Promise[Cart] = js.native
   /**
+    * Remove discounts from cart
+    */
+  def removeDiscount(checkoutId: String): js.Promise[Cart] = js.native
+  def removeDiscount(checkoutId: Double): js.Promise[Cart] = js.native
+  /**
     * Remove a line item from cart based on line item id
     */
   def removeLineItems(checkoutId: String, lineItemIds: js.Array[String]): js.Promise[Cart] = js.native

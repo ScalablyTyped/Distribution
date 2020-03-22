@@ -1,7 +1,7 @@
 
 # Scala.js typings for tstl
 
-Typings are for version 2.4.1
+Typings are for version 2.4.2
 
 ## Library description:
 TypeScript-STL (Standard Template Library, migrated from C++)

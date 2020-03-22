@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babyparse"
-version := "0.0-unknown-dt-20190322Z-e720ae"
+version := "0.0-unknown-dt-20200225Z-e720ae"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sql-bricks"
-version := "2.0-dt-20180815Z-e58b32"
+version := "2.0-dt-20200225Z-e58b32"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

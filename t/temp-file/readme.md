@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp-file
 
-Typings are for version 3.3.6
+Typings are for version 3.3.7
 
 ## Library description:
 ```typescript export function getTempName(prefix?: string | null | undefined): string;

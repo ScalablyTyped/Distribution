@@ -2,8 +2,8 @@ package typings.tensorflowTfjsLayers.initializersMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,9 +19,9 @@ abstract class Initializer () extends Serializable {
     * @return The init value.
     */
   @JSName("apply")
-  def apply(shape: Shape): Tensor_[Rank] = js.native
+  def apply(shape: Shape): Tensor[Rank] = js.native
   @JSName("apply")
-  def apply(shape: Shape, dtype: DataType): Tensor_[Rank] = js.native
+  def apply(shape: Shape, dtype: DataType): Tensor[Rank] = js.native
   def fromConfigUsesCustomObjects(): Boolean = js.native
 }
 

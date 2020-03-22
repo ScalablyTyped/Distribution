@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 object tensorflowTfjsConverterStrings {
   @js.native
-  sealed trait `1Dot5Dot2` extends js.Object
+  sealed trait `1Dot7Dot0` extends js.Object
   
   @js.native
   sealed trait `Questionmarktfjs-formatEqualssignfile` extends js.Object
@@ -104,7 +104,7 @@ object tensorflowTfjsConverterStrings {
   sealed trait transformation extends Category
   
   @scala.inline
-  def `1Dot5Dot2`: `1Dot5Dot2` = "1.5.2".asInstanceOf[`1Dot5Dot2`]
+  def `1Dot7Dot0`: `1Dot7Dot0` = "1.7.0".asInstanceOf[`1Dot7Dot0`]
   @scala.inline
   def `Questionmarktfjs-formatEqualssignfile`: `Questionmarktfjs-formatEqualssignfile` = "?tfjs-format=file".asInstanceOf[`Questionmarktfjs-formatEqualssignfile`]
   @scala.inline

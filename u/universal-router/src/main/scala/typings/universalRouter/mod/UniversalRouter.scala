@@ -14,7 +14,7 @@ trait UniversalRouter[R, C /* <: RouterContext */] extends js.Object {
     * the first route that matches provided URL path string and whose action function
     * returns anything other than `null` or `undefined`.
     */
-  def resolve(pathnameOrContext: String): RouteResult[R] = js.native
-  def resolve(pathnameOrContext: ResolveContext): RouteResult[R] = js.native
+  def resolve(pathnameOrContext: String): js.Promise[RouteResult[R]] = js.native
+  def resolve(pathnameOrContext: ResolveContext): js.Promise[RouteResult[R]] = js.native
 }
 

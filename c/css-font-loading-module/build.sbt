@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "css-font-loading-module"
-version := "3-dt-20200123Z-a22e24"
+version := "3-dt-20200225Z-a22e24"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

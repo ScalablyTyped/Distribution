@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mockery"
-version := "1.4.0-dt-20190322Z-a32c2e"
+version := "1.4.0-dt-20200226Z-a32c2e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

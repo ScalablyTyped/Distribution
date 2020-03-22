@@ -1,16 +1,19 @@
 package typings.officeUiFabricReact.resizeGroupBaseMod
 
 import typings.officeUiFabricReact.resizeGroupTypesMod.IResizeGroupProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/ResizeGroup/ResizeGroup.base", "ResizeGroupBase")
 @js.native
-class ResizeGroupBase protected () extends BaseComponent[IResizeGroupProps, IResizeGroupState] {
+class ResizeGroupBase protected ()
+  extends Component[IResizeGroupProps, IResizeGroupState, js.Any] {
   def this(props: IResizeGroupProps) = this()
   var _afterComponentRendered: js.Any = js.native
+  var _async: js.Any = js.native
+  var _events: js.Any = js.native
   var _hasRenderedContent: js.Any = js.native
   var _initialHiddenDiv: js.Any = js.native
   var _nextResizeGroupStateProvider: js.Any = js.native
@@ -23,6 +26,8 @@ class ResizeGroupBase protected () extends BaseComponent[IResizeGroupProps, IRes
   def componentDidMount_MResizeGroupBase(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MResizeGroupBase(prevProps: IResizeGroupProps): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MResizeGroupBase(): Unit = js.native
   def remeasure(): Unit = js.native
 }
 

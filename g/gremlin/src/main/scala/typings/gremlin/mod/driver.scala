@@ -29,6 +29,10 @@ object driver extends js.Object {
   class DriverRemoteConnection protected () extends RemoteConnection {
     def this(url: String) = this()
     def this(url: String, options: js.Any) = this()
+    def addListener(event: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def addListener(event: js.Symbol, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def removeListener(event: String, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def removeListener(event: js.Symbol, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   }
   
   @js.native

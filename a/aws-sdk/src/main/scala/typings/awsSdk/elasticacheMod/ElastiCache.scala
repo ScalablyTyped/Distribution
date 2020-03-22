@@ -151,12 +151,25 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCacheSubnetGroupResult, Unit]
   ): Request[CreateCacheSubnetGroupResult, AWSError] = js.native
   /**
-    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis (cluster mode enabled) replication group is a collection of 1 to 90 node groups (shards). Each node group (shard) has one read/write primary node and up to 5 read-only replica nodes. Writes to the primary are asynchronously propagated to the replicas. Redis (cluster mode enabled) replication groups partition the data across node groups (shards). When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. You cannot alter a Redis (cluster mode enabled) replication group after it has been created. However, if you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' enhanced backup and restore. For more information, see Restoring From a Backup with Cluster Resizing in the ElastiCache User Guide.  This operation is valid for Redis only. 
+    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupId is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
+    */
+  def createGlobalReplicationGroup(): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
+  def createGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalReplicationGroupResult, Unit]): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Global Datastore for Redis offers fully managed, fast, reliable and secure cross-region replication. Using Global Datastore for Redis, you can create cross-region read replica clusters for ElastiCache for Redis to enable low-latency reads and disaster recovery across regions. For more information, see Replication Across Regions Using Global Datastore.    The GlobalReplicationGroupId is the name of the Global Datastore.   The PrimaryReplicationGroupId represents the name of the primary cluster that accepts writes and will replicate updates to the secondary cluster.  
+    */
+  def createGlobalReplicationGroup(params: CreateGlobalReplicationGroupMessage): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
+  def createGlobalReplicationGroup(
+    params: CreateGlobalReplicationGroupMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalReplicationGroupResult, Unit]
+  ): Request[CreateGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. This API can be used to create a standalone regional replication group or a secondary replication group associated with a Global Datastore. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis (cluster mode enabled) replication group is a collection of 1 to 90 node groups (shards). Each node group (shard) has one read/write primary node and up to 5 read-only replica nodes. Writes to the primary are asynchronously propagated to the replicas. Redis (cluster mode enabled) replication groups partition the data across node groups (shards). When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. You cannot alter a Redis (cluster mode enabled) replication group after it has been created. However, if you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' enhanced backup and restore. For more information, see Restoring From a Backup with Cluster Resizing in the ElastiCache User Guide.  This operation is valid for Redis only. 
     */
   def createReplicationGroup(): Request[CreateReplicationGroupResult, AWSError] = js.native
   def createReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationGroupResult, Unit]): Request[CreateReplicationGroupResult, AWSError] = js.native
   /**
-    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis (cluster mode enabled) replication group is a collection of 1 to 90 node groups (shards). Each node group (shard) has one read/write primary node and up to 5 read-only replica nodes. Writes to the primary are asynchronously propagated to the replicas. Redis (cluster mode enabled) replication groups partition the data across node groups (shards). When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. You cannot alter a Redis (cluster mode enabled) replication group after it has been created. However, if you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' enhanced backup and restore. For more information, see Restoring From a Backup with Cluster Resizing in the ElastiCache User Guide.  This operation is valid for Redis only. 
+    * Creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. This API can be used to create a standalone regional replication group or a secondary replication group associated with a Global Datastore. A Redis (cluster mode disabled) replication group is a collection of clusters, where one of the clusters is a read/write primary and the others are read-only replicas. Writes to the primary are asynchronously propagated to the replicas. A Redis (cluster mode enabled) replication group is a collection of 1 to 90 node groups (shards). Each node group (shard) has one read/write primary node and up to 5 read-only replica nodes. Writes to the primary are asynchronously propagated to the replicas. Redis (cluster mode enabled) replication groups partition the data across node groups (shards). When a Redis (cluster mode disabled) replication group has been successfully created, you can add one or more read replicas to it, up to a total of 5 read replicas. You cannot alter a Redis (cluster mode enabled) replication group after it has been created. However, if you need to increase or decrease the number of node groups (console: shards), you can avail yourself of ElastiCache for Redis' enhanced backup and restore. For more information, see Restoring From a Backup with Cluster Resizing in the ElastiCache User Guide.  This operation is valid for Redis only. 
     */
   def createReplicationGroup(params: CreateReplicationGroupMessage): Request[CreateReplicationGroupResult, AWSError] = js.native
   def createReplicationGroup(
@@ -177,12 +190,35 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotResult, Unit]
   ): Request[CreateSnapshotResult, AWSError] = js.native
   /**
-    * Dynamically decreases the number of replics in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
+    * Decreases the number of node groups in a Global Datastore
+    */
+  def decreaseNodeGroupsInGlobalReplicationGroup(): Request[DecreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
+  def decreaseNodeGroupsInGlobalReplicationGroup(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DecreaseNodeGroupsInGlobalReplicationGroupResult, 
+      Unit
+    ]
+  ): Request[DecreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Decreases the number of node groups in a Global Datastore
+    */
+  def decreaseNodeGroupsInGlobalReplicationGroup(params: DecreaseNodeGroupsInGlobalReplicationGroupMessage): Request[DecreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
+  def decreaseNodeGroupsInGlobalReplicationGroup(
+    params: DecreaseNodeGroupsInGlobalReplicationGroupMessage,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DecreaseNodeGroupsInGlobalReplicationGroupResult, 
+      Unit
+    ]
+  ): Request[DecreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Dynamically decreases the number of replicas in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
     */
   def decreaseReplicaCount(): Request[DecreaseReplicaCountResult, AWSError] = js.native
   def decreaseReplicaCount(callback: js.Function2[/* err */ AWSError, /* data */ DecreaseReplicaCountResult, Unit]): Request[DecreaseReplicaCountResult, AWSError] = js.native
   /**
-    * Dynamically decreases the number of replics in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
+    * Dynamically decreases the number of replicas in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
     */
   def decreaseReplicaCount(params: DecreaseReplicaCountMessage): Request[DecreaseReplicaCountResult, AWSError] = js.native
   def decreaseReplicaCount(
@@ -241,6 +277,19 @@ trait ElastiCache extends Service {
     params: DeleteCacheSubnetGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.  This operation is valid for Redis only. 
+    */
+  def deleteGlobalReplicationGroup(): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
+  def deleteGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalReplicationGroupResult, Unit]): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Deleting a Global Datastore is a two-step process:    First, you must DisassociateGlobalReplicationGroup to remove the secondary clusters in the Global Datastore.   Once the Global Datastore contains only the primary cluster, you can use DeleteGlobalReplicationGroup API to delete the Global Datastore while retainining the primary cluster using Retain…= true.   Since the Global Datastore has only a primary cluster, you can delete the Global Datastore while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.  This operation is valid for Redis only. 
+    */
+  def deleteGlobalReplicationGroup(params: DeleteGlobalReplicationGroupMessage): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
+  def deleteGlobalReplicationGroup(
+    params: DeleteGlobalReplicationGroupMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalReplicationGroupResult, Unit]
+  ): Request[DeleteGlobalReplicationGroupResult, AWSError] = js.native
   /**
     * Deletes an existing replication group. By default, this operation deletes the entire replication group, including the primary/primaries and all of the read replicas. If the replication group has only one primary, you can optionally delete only the read replicas, while retaining the primary by setting RetainPrimaryCluster=true. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the selected resources; you cannot cancel or revert this operation.  This operation is valid for Redis only. 
     */
@@ -372,6 +421,19 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EventsMessage, Unit]
   ): Request[EventsMessage, AWSError] = js.native
   /**
+    * Returns information about a particular global replication group. If no identifier is specified, returns information about all Global Datastores. 
+    */
+  def describeGlobalReplicationGroups(): Request[DescribeGlobalReplicationGroupsResult, AWSError] = js.native
+  def describeGlobalReplicationGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalReplicationGroupsResult, Unit]): Request[DescribeGlobalReplicationGroupsResult, AWSError] = js.native
+  /**
+    * Returns information about a particular global replication group. If no identifier is specified, returns information about all Global Datastores. 
+    */
+  def describeGlobalReplicationGroups(params: DescribeGlobalReplicationGroupsMessage): Request[DescribeGlobalReplicationGroupsResult, AWSError] = js.native
+  def describeGlobalReplicationGroups(
+    params: DescribeGlobalReplicationGroupsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalReplicationGroupsResult, Unit]
+  ): Request[DescribeGlobalReplicationGroupsResult, AWSError] = js.native
+  /**
     * Returns information about a particular replication group. If no identifier is specified, DescribeReplicationGroups returns information about all replication groups.  This operation is valid for Redis only. 
     */
   def describeReplicationGroups(): Request[ReplicationGroupMessage, AWSError] = js.native
@@ -449,6 +511,57 @@ trait ElastiCache extends Service {
     params: DescribeUpdateActionsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateActionsMessage, Unit]
   ): Request[UpdateActionsMessage, AWSError] = js.native
+  /**
+    * Remove a secondary cluster from the Global Datastore using the Global Datastore name. The secondary cluster will no longer receive updates from the primary cluster, but will remain as a standalone cluster in that AWS region.
+    */
+  def disassociateGlobalReplicationGroup(): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
+  def disassociateGlobalReplicationGroup(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateGlobalReplicationGroupResult, Unit]
+  ): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Remove a secondary cluster from the Global Datastore using the Global Datastore name. The secondary cluster will no longer receive updates from the primary cluster, but will remain as a standalone cluster in that AWS region.
+    */
+  def disassociateGlobalReplicationGroup(params: DisassociateGlobalReplicationGroupMessage): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
+  def disassociateGlobalReplicationGroup(
+    params: DisassociateGlobalReplicationGroupMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateGlobalReplicationGroupResult, Unit]
+  ): Request[DisassociateGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Used to failover the primary region to a selected secondary region.
+    */
+  def failoverGlobalReplicationGroup(): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
+  def failoverGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ FailoverGlobalReplicationGroupResult, Unit]): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Used to failover the primary region to a selected secondary region.
+    */
+  def failoverGlobalReplicationGroup(params: FailoverGlobalReplicationGroupMessage): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
+  def failoverGlobalReplicationGroup(
+    params: FailoverGlobalReplicationGroupMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ FailoverGlobalReplicationGroupResult, Unit]
+  ): Request[FailoverGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Increase the number of node groups in the Global Datastore
+    */
+  def increaseNodeGroupsInGlobalReplicationGroup(): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
+  def increaseNodeGroupsInGlobalReplicationGroup(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ IncreaseNodeGroupsInGlobalReplicationGroupResult, 
+      Unit
+    ]
+  ): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Increase the number of node groups in the Global Datastore
+    */
+  def increaseNodeGroupsInGlobalReplicationGroup(params: IncreaseNodeGroupsInGlobalReplicationGroupMessage): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
+  def increaseNodeGroupsInGlobalReplicationGroup(
+    params: IncreaseNodeGroupsInGlobalReplicationGroupMessage,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ IncreaseNodeGroupsInGlobalReplicationGroupResult, 
+      Unit
+    ]
+  ): Request[IncreaseNodeGroupsInGlobalReplicationGroupResult, AWSError] = js.native
   /**
     * Dynamically increases the number of replics in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
     */
@@ -528,6 +641,19 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyCacheSubnetGroupResult, Unit]
   ): Request[ModifyCacheSubnetGroupResult, AWSError] = js.native
   /**
+    * Modifies the settings for a Global Datastore.
+    */
+  def modifyGlobalReplicationGroup(): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
+  def modifyGlobalReplicationGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalReplicationGroupResult, Unit]): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Modifies the settings for a Global Datastore.
+    */
+  def modifyGlobalReplicationGroup(params: ModifyGlobalReplicationGroupMessage): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
+  def modifyGlobalReplicationGroup(
+    params: ModifyGlobalReplicationGroupMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyGlobalReplicationGroupResult, Unit]
+  ): Request[ModifyGlobalReplicationGroupResult, AWSError] = js.native
+  /**
     * Modifies the settings for a replication group. For Redis (cluster mode enabled) clusters, this operation cannot be used to change a cluster's node type or engine version. For more information, see:    Scaling for Amazon ElastiCache for Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
     */
   def modifyReplicationGroup(): Request[ModifyReplicationGroupResult, AWSError] = js.native
@@ -570,6 +696,21 @@ trait ElastiCache extends Service {
     params: PurchaseReservedCacheNodesOfferingMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedCacheNodesOfferingResult, Unit]
   ): Request[PurchaseReservedCacheNodesOfferingResult, AWSError] = js.native
+  /**
+    * Redistribute slots to ensure unifirom distribution across existing shards in the cluster.
+    */
+  def rebalanceSlotsInGlobalReplicationGroup(): Request[RebalanceSlotsInGlobalReplicationGroupResult, AWSError] = js.native
+  def rebalanceSlotsInGlobalReplicationGroup(
+    callback: js.Function2[/* err */ AWSError, /* data */ RebalanceSlotsInGlobalReplicationGroupResult, Unit]
+  ): Request[RebalanceSlotsInGlobalReplicationGroupResult, AWSError] = js.native
+  /**
+    * Redistribute slots to ensure unifirom distribution across existing shards in the cluster.
+    */
+  def rebalanceSlotsInGlobalReplicationGroup(params: RebalanceSlotsInGlobalReplicationGroupMessage): Request[RebalanceSlotsInGlobalReplicationGroupResult, AWSError] = js.native
+  def rebalanceSlotsInGlobalReplicationGroup(
+    params: RebalanceSlotsInGlobalReplicationGroupMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ RebalanceSlotsInGlobalReplicationGroupResult, Unit]
+  ): Request[RebalanceSlotsInGlobalReplicationGroupResult, AWSError] = js.native
   /**
     * Reboots some, or all, of the cache nodes within a provisioned cluster. This operation applies any modified cache parameter groups to the cluster. The reboot operation takes place as soon as possible, and results in a momentary outage to the cluster. During the reboot, the cluster status is set to REBOOTING. The reboot causes the contents of the cache (for each cache node being rebooted) to be lost. When the reboot is complete, a cluster event is created. Rebooting a cluster is currently supported on Memcached and Redis (cluster mode disabled) clusters. Rebooting is not supported on Redis (cluster mode enabled) clusters. If you make changes to parameters that require a Redis (cluster mode enabled) cluster reboot for the changes to be applied, see Rebooting a Cluster for an alternate process.
     */

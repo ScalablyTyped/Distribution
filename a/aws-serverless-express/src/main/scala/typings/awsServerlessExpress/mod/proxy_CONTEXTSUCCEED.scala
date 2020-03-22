@@ -1,7 +1,7 @@
 package typings.awsServerlessExpress.mod
 
 import typings.awsLambda.apiGatewayProxyMod.APIGatewayProxyEvent
-import typings.awsLambda.handerMod.Context
+import typings.awsLambda.handlerMod.Context
 import typings.awsServerlessExpress.awsServerlessExpressStrings.CONTEXT_SUCCEED
 import typings.node.httpMod.Server
 import scala.scalajs.js

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mocha-prepare"
-version := "0.1-dt-20191002Z-bf22ee"
+version := "0.1-dt-20191002Z-802adf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mocha" % "7.0-dt-20200129Z-97ea6b",
+  "org.scalablytyped" %%% "mocha" % "7.0-dt-20200303Z-eab6e1",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

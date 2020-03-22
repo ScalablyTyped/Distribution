@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.cannedAclMod.CannedAcl
 import typings.pulumiAws.documentsMod.PolicyDocument
 import typings.pulumiAws.inputMod.s3.BucketCorsRule
+import typings.pulumiAws.inputMod.s3.BucketGrant
 import typings.pulumiAws.inputMod.s3.BucketLifecycleRule
 import typings.pulumiAws.inputMod.s3.BucketLogging
 import typings.pulumiAws.inputMod.s3.BucketObjectLockConfiguration
@@ -23,7 +24,7 @@ trait BucketState extends js.Object {
     */
   val accelerationStatus: js.UndefOr[Input[String]] = js.native
   /**
-    * The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".
+    * The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".  Conflicts with `grant`.
     */
   val acl: js.UndefOr[Input[String | CannedAcl]] = js.native
   /**
@@ -55,6 +56,10 @@ trait BucketState extends js.Object {
     */
   val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
   /**
+    * An [ACL policy grant](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#sample-acl) (documented below). Conflicts with `acl`.
+    */
+  val grants: js.UndefOr[Input[js.Array[Input[BucketGrant]]]] = js.native
+  /**
     * The [Route 53 Hosted Zone ID](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints) for this bucket's region.
     */
   val hostedZoneId: js.UndefOr[Input[String]] = js.native
@@ -71,7 +76,7 @@ trait BucketState extends js.Object {
     */
   val objectLockConfiguration: js.UndefOr[Input[BucketObjectLockConfiguration]] = js.native
   /**
-    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), this provider may view the policy as constantly changing in a deployment. In this case, please make sure you use the verbose/specific version of the policy.
+    * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document.
     */
   val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
@@ -128,6 +133,7 @@ object BucketState {
     bucketRegionalDomainName: Input[String] = null,
     corsRules: Input[js.Array[Input[BucketCorsRule]]] = null,
     forceDestroy: Input[Boolean] = null,
+    grants: Input[js.Array[Input[BucketGrant]]] = null,
     hostedZoneId: Input[String] = null,
     lifecycleRules: Input[js.Array[Input[BucketLifecycleRule]]] = null,
     loggings: Input[js.Array[Input[BucketLogging]]] = null,
@@ -153,6 +159,7 @@ object BucketState {
     if (bucketRegionalDomainName != null) __obj.updateDynamic("bucketRegionalDomainName")(bucketRegionalDomainName.asInstanceOf[js.Any])
     if (corsRules != null) __obj.updateDynamic("corsRules")(corsRules.asInstanceOf[js.Any])
     if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (grants != null) __obj.updateDynamic("grants")(grants.asInstanceOf[js.Any])
     if (hostedZoneId != null) __obj.updateDynamic("hostedZoneId")(hostedZoneId.asInstanceOf[js.Any])
     if (lifecycleRules != null) __obj.updateDynamic("lifecycleRules")(lifecycleRules.asInstanceOf[js.Any])
     if (loggings != null) __obj.updateDynamic("loggings")(loggings.asInstanceOf[js.Any])

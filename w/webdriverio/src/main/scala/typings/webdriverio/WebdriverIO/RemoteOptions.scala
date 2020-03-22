@@ -2,6 +2,8 @@ package typings.webdriverio.WebdriverIO
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.WritableStream
+import typings.webdriver.HTTPRequestOptions
+import typings.webdriver.HTTPResponse
 import typings.webdriver.WebDriver.DesiredCapabilities
 import typings.webdriver.WebDriver.WebDriverLogTypes
 import typings.webdriverio.AnonSpecFiltering
@@ -42,6 +44,10 @@ trait RemoteOptions extends js.Object {
   var specFileRetryAttempts: js.UndefOr[Double] = js.undefined
   var specs: js.UndefOr[js.Array[String]] = js.undefined
   var suites: js.UndefOr[js.Object] = js.undefined
+  var transformRequest: js.UndefOr[js.Function1[/* requestOptions */ HTTPRequestOptions, HTTPRequestOptions]] = js.undefined
+  var transformResponse: js.UndefOr[
+    js.Function2[/* response */ HTTPResponse, /* requestOptions */ HTTPRequestOptions, HTTPResponse]
+  ] = js.undefined
   var user: js.UndefOr[String] = js.undefined
   var waitforInterval: js.UndefOr[Double] = js.undefined
   var waitforTimeout: js.UndefOr[Double] = js.undefined
@@ -80,6 +86,8 @@ object RemoteOptions {
     specFileRetryAttempts: Int | Double = null,
     specs: js.Array[String] = null,
     suites: js.Object = null,
+    transformRequest: /* requestOptions */ HTTPRequestOptions => HTTPRequestOptions = null,
+    transformResponse: (/* response */ HTTPResponse, /* requestOptions */ HTTPRequestOptions) => HTTPResponse = null,
     user: String = null,
     waitforInterval: Int | Double = null,
     waitforTimeout: Int | Double = null
@@ -115,6 +123,8 @@ object RemoteOptions {
     if (specFileRetryAttempts != null) __obj.updateDynamic("specFileRetryAttempts")(specFileRetryAttempts.asInstanceOf[js.Any])
     if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
     if (suites != null) __obj.updateDynamic("suites")(suites.asInstanceOf[js.Any])
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
+    if (transformResponse != null) __obj.updateDynamic("transformResponse")(js.Any.fromFunction2(transformResponse))
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     if (waitforInterval != null) __obj.updateDynamic("waitforInterval")(waitforInterval.asInstanceOf[js.Any])
     if (waitforTimeout != null) __obj.updateDynamic("waitforTimeout")(waitforTimeout.asInstanceOf[js.Any])

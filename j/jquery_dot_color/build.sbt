@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_color"
-version := "v2.1.2-dt-20190322Z-b609c0"
+version := "v2.1.2-dt-20200226Z-b609c0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

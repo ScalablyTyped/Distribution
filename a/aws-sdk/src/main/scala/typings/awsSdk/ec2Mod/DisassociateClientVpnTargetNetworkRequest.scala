@@ -9,7 +9,7 @@ trait DisassociateClientVpnTargetNetworkRequest extends js.Object {
   /**
     * The ID of the target network association.
     */
-  var AssociationId: String = js.native
+  var AssociationId: ClientVpnAssociationId = js.native
   /**
     * The ID of the Client VPN endpoint from which to disassociate the target network.
     */
@@ -23,7 +23,7 @@ trait DisassociateClientVpnTargetNetworkRequest extends js.Object {
 object DisassociateClientVpnTargetNetworkRequest {
   @scala.inline
   def apply(
-    AssociationId: String,
+    AssociationId: ClientVpnAssociationId,
     ClientVpnEndpointId: ClientVpnEndpointId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): DisassociateClientVpnTargetNetworkRequest = {

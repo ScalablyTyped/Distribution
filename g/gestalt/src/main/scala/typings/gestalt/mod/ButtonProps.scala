@@ -3,6 +3,7 @@ package typings.gestalt.mod
 import typings.gestalt.AnonEvent
 import typings.gestalt.gestaltStrings.blue
 import typings.gestalt.gestaltStrings.button
+import typings.gestalt.gestaltStrings.darkGray
 import typings.gestalt.gestaltStrings.gray
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
@@ -26,6 +27,7 @@ trait ButtonProps extends js.Object {
   var onClick: js.UndefOr[js.Function1[/* args */ AnonEvent, Unit]] = js.undefined
   var size: js.UndefOr[sm | md | lg] = js.undefined
   var text: String
+  var textColor: js.UndefOr[blue | red | darkGray | white] = js.undefined
   var `type`: js.UndefOr[submit | button] = js.undefined
 }
 
@@ -42,6 +44,7 @@ object ButtonProps {
     name: String = null,
     onClick: /* args */ AnonEvent => Unit = null,
     size: sm | md | lg = null,
+    textColor: blue | red | darkGray | white = null,
     `type`: submit | button = null
   ): ButtonProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
@@ -54,6 +57,7 @@ object ButtonProps {
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }

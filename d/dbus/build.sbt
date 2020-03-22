@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dbus"
-version := "1.0-dt-20190515Z-ff94eb"
+version := "1.0-dt-20200225Z-ff94eb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

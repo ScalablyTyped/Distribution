@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-quadtree"
-version := "1.0-dt-20190212Z-7c08a5"
+version := "1.0-dt-20200225Z-7c08a5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

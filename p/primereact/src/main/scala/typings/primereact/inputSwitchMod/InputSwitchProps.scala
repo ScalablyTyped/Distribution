@@ -1,6 +1,6 @@
 package typings.primereact.inputSwitchMod
 
-import typings.primereact.AnonValueBoolean
+import typings.primereact.AnonTargetValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.std.Event_
 import scala.scalajs.js
@@ -15,7 +15,7 @@ trait InputSwitchProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var offLabel: js.UndefOr[String] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValueBoolean, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonTargetValue, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onLabel: js.UndefOr[String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
@@ -33,7 +33,7 @@ object InputSwitchProps {
     id: String = null,
     offLabel: String = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonValueBoolean => Unit = null,
+    onChange: /* e */ AnonTargetValue => Unit = null,
     onFocus: /* event */ Event_ => Unit = null,
     onLabel: String = null,
     style: js.Object = null,

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetBucketObjectArgs extends js.Object {
   /**
-    * The name of the bucket to read the object from
+    * The name of the bucket to read the object from. Alternatively, an [S3 access point](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-access-points.html) ARN can be specified
     */
   val bucket: String = js.native
   /**

@@ -1,5 +1,6 @@
 package typings.officeUiFabricReact
 
+import typings.officeUiFabricReact.contextualMenuItemWrapperTypesMod.IContextualMenuItemWrapperProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,12 +17,16 @@ object contextualMenuItemWrapperMod extends js.Object {
     extends typings.officeUiFabricReact.contextualMenuButtonMod.ContextualMenuButton
   
   @js.native
-  class ContextualMenuItemWrapper ()
-    extends typings.officeUiFabricReact.contextualMenuItemWrapperContextualMenuItemWrapperMod.ContextualMenuItemWrapper
+  class ContextualMenuItemWrapper protected ()
+    extends typings.officeUiFabricReact.contextualMenuItemWrapperContextualMenuItemWrapperMod.ContextualMenuItemWrapper {
+    def this(props: IContextualMenuItemWrapperProps) = this()
+  }
   
   @js.native
-  class ContextualMenuSplitButton ()
-    extends typings.officeUiFabricReact.contextualMenuSplitButtonMod.ContextualMenuSplitButton
+  class ContextualMenuSplitButton protected ()
+    extends typings.officeUiFabricReact.contextualMenuSplitButtonMod.ContextualMenuSplitButton {
+    def this(props: IContextualMenuItemWrapperProps) = this()
+  }
   
 }
 

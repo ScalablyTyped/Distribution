@@ -65,10 +65,11 @@ package object mod {
     typings.reactTable.AnonRow[D], 
     typings.reactTable.PartialTableRowProps
   ]
-  type SortByFn[D /* <: js.Object */] = js.Function3[
+  type SortByFn[D /* <: js.Object */] = js.Function4[
     /* rowA */ typings.reactTable.mod.Row[D], 
     /* rowB */ typings.reactTable.mod.Row[D], 
     /* columnId */ typings.reactTable.mod.IdType[D], 
+    /* desc */ js.UndefOr[scala.Boolean], 
     scala.Double
   ]
   type StringKey[D] = typings.std.Extract[java.lang.String, java.lang.String]

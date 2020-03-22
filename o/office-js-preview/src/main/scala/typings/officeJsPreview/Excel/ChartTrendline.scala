@@ -106,7 +106,6 @@ class ChartTrendline () extends ClientObject {
     */
   var `type`: ChartTrendlineType | Linear | Exponential | Logarithmic | MovingAverage | Polynomial | Power = js.native
   /**
-    *
     * Delete the trendline object.
     *
     * [Api set: ExcelApi 1.7]

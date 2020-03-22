@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jump_dot_js"
-version := "1.0-dt-20191105Z-8c6402"
+version := "1.0-dt-20200225Z-8c6402"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

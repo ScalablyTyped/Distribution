@@ -36,7 +36,7 @@ class ^ protected () extends ExpressBrute {
     * @return {RequestHandler} The Request handler.
     */
   /* CompleteClass */
-  override def prevent(request: Request_[ParamsDictionary], response: Response_, next: js.Function): RequestHandler[ParamsDictionary] = js.native
+  override def prevent(request: Request_[ParamsDictionary], response: Response_[_], next: js.Function): RequestHandler[ParamsDictionary] = js.native
   /**
     * @summary Resets the wait time between requests back to its initial value.
     * @param {string}      ip      The IP address.

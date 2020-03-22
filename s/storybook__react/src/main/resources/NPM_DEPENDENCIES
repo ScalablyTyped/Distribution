@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/react" : "5.3.14"
+      "@storybook/react" : "5.3.17"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/react" : "5.3.14"
+      "@storybook/react" : "5.3.17"
     }
   ],
   "compile-devDependencies" : [

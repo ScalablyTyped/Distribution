@@ -47,7 +47,6 @@ trait ReferenceLineProps extends js.Object {
   var dominantBaseline: js.UndefOr[String] = js.undefined
   var dx: js.UndefOr[Double] = js.undefined
   var dy: js.UndefOr[Double] = js.undefined
-  var enableBackground: js.UndefOr[String] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double | String] = js.undefined
   var fillRule: js.UndefOr[String] = js.undefined
@@ -64,7 +63,6 @@ trait ReferenceLineProps extends js.Object {
   var fontWeight: js.UndefOr[
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
-  var glyphOrientationHorizontal: js.UndefOr[String] = js.undefined
   var glyphOrientationVertical: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
@@ -83,6 +81,7 @@ trait ReferenceLineProps extends js.Object {
   var pointerEvents: js.UndefOr[String] = js.undefined
   var position: js.UndefOr[ReferenceLinePosition] = js.undefined
   var r: js.UndefOr[Double] = js.undefined
+  var segment: js.UndefOr[js.Tuple2[SegmentItem, SegmentItem]] = js.undefined
   var shape: js.UndefOr[ContentRenderer[EventAttributesPartialPreAlignmentBaseline] | ReactElement] = js.undefined
   var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.undefined
   var stopColor: js.UndefOr[String] = js.undefined
@@ -136,7 +135,6 @@ object ReferenceLineProps {
     dominantBaseline: String = null,
     dx: Int | Double = null,
     dy: Int | Double = null,
-    enableBackground: String = null,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: String = null,
@@ -151,7 +149,6 @@ object ReferenceLineProps {
     fontStyle: String = null,
     fontVariant: String = null,
     fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
-    glyphOrientationHorizontal: String = null,
     glyphOrientationVertical: String = null,
     height: Int | Double = null,
     ifOverflow: IfOverflowType = null,
@@ -170,6 +167,7 @@ object ReferenceLineProps {
     pointerEvents: String = null,
     position: ReferenceLinePosition = null,
     r: Int | Double = null,
+    segment: js.Tuple2[SegmentItem, SegmentItem] = null,
     shape: ContentRenderer[EventAttributesPartialPreAlignmentBaseline] | ReactElement = null,
     shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit = null,
     stopColor: String = null,
@@ -220,7 +218,6 @@ object ReferenceLineProps {
     if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -235,7 +232,6 @@ object ReferenceLineProps {
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (glyphOrientationHorizontal != null) __obj.updateDynamic("glyphOrientationHorizontal")(glyphOrientationHorizontal.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (ifOverflow != null) __obj.updateDynamic("ifOverflow")(ifOverflow.asInstanceOf[js.Any])
@@ -254,6 +250,7 @@ object ReferenceLineProps {
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
     if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
     if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])

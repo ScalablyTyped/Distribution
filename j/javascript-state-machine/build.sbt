@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "javascript-state-machine"
-version := "2.4-dt-20180214Z-d0b3da"
+version := "2.4-dt-20200226Z-d0b3da"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

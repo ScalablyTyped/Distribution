@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pg-promise"
-version := "10.4.4-2d2ecb"
+version := "10.4.4-9195fd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "pg-minify" % "1.5.2-fba905",
   "org.scalablytyped" %%% "spex" % "3.0.1-c42c67",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")

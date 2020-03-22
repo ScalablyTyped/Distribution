@@ -383,6 +383,7 @@ trait GeographyProps extends js.Object {
   var overlineThickness: js.UndefOr[Double | String] = js.native
   var paintOrder: js.UndefOr[Double | String] = js.native
   var panose1: js.UndefOr[Double | String] = js.native
+  var path: js.UndefOr[String] = js.native
   var pathLength: js.UndefOr[Double | String] = js.native
   var patternContentUnits: js.UndefOr[String] = js.native
   var patternTransform: js.UndefOr[Double | String] = js.native

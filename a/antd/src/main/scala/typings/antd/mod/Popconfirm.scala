@@ -1,6 +1,6 @@
 package typings.antd.mod
 
-import typings.antd.AnonIcon
+import typings.antd.AnonDisabled
 import typings.antd.AnonVisible
 import typings.antd.popconfirmMod.PopconfirmProps
 import typings.antd.popconfirmMod.default
@@ -18,7 +18,7 @@ class Popconfirm protected () extends default {
 @JSImport("antd", "Popconfirm")
 @js.native
 object Popconfirm extends js.Object {
-  var defaultProps: AnonIcon = js.native
+  var defaultProps: AnonDisabled = js.native
   def getDerivedStateFromProps(nextProps: PopconfirmProps): AnonVisible | Null = js.native
 }
 

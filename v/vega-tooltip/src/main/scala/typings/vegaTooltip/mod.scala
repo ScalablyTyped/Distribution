@@ -1,6 +1,7 @@
 package typings.vegaTooltip
 
 import typings.std.MouseEvent
+import typings.vegaTooltip.defaultsMod.Options
 import typings.vegaTypings.mod.View
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,14 +18,14 @@ object mod extends js.Object {
     */
   class Handler ()
     extends typings.vegaTooltip.handlerMod.Handler {
-    def this(options: PartialOptions) = this()
+    def this(options: Options) = this()
   }
   
   val version: String = js.native
   def calculatePosition(event: MouseEvent, tooltipBox: AnonHeight, offsetX: Double, offsetY: Double): AnonX = js.native
   def createDefaultStyle(id: String): String = js.native
   def default(view: View): typings.vegaTooltip.handlerMod.Handler = js.native
-  def default(view: View, opt: PartialOptions): typings.vegaTooltip.handlerMod.Handler = js.native
+  def default(view: View, opt: Options): typings.vegaTooltip.handlerMod.Handler = js.native
   def escapeHTML(value: js.Any): String = js.native
   def formatValue(value: js.Any, valueToHtml: js.Function1[/* value */ js.Any, String], maxDepth: Double): String = js.native
   def replacer(maxDepth: Double): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _] = js.native

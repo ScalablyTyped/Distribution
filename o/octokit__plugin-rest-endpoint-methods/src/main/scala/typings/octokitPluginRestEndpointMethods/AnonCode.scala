@@ -33,7 +33,7 @@ trait AnonCode extends js.Object {
     * Here, we're searching for the keyword `addClass` within a file's contents. We're making sure that we're only looking in files where the language is JavaScript. And we're scoping the search to the `repo:jquery/jquery` repository.
     */
   @JSName("code")
-  var code_Original: Anon443 = js.native
+  var code_Original: Anon459 = js.native
   /**
     * Find commits via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -46,7 +46,7 @@ trait AnonCode extends js.Object {
     * Suppose you want to find commits related to CSS in the [octocat/Spoon-Knife](https://github.com/octocat/Spoon-Knife) repository. Your query would look something like this:
     */
   @JSName("commits")
-  var commits_Original: Anon444 = js.native
+  var commits_Original: Anon460 = js.native
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -57,7 +57,7 @@ trait AnonCode extends js.Object {
     * In this query, we're searching for the keyword `windows`, within any open issue that's labeled as `bug`. The search runs across repositories whose primary language is Python. We’re sorting by creation date in ascending order, so that the oldest issues appear first in the search results.
     */
   @JSName("issuesAndPullRequests")
-  var issuesAndPullRequests_Original: Anon445 = js.native
+  var issuesAndPullRequests_Original: Anon461 = js.native
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -68,7 +68,7 @@ trait AnonCode extends js.Object {
     * The labels that best match for the query appear first in the search results.
     */
   @JSName("labels")
-  var labels_Original: Anon446 = js.native
+  var labels_Original: Anon462 = js.native
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -81,7 +81,7 @@ trait AnonCode extends js.Object {
     * In this request, we're searching for repositories with the word `tetris` in the name, the description, or the README. We're limiting the results to only find repositories where the primary language is Assembly. We're sorting by stars in descending order, so that the most popular repositories appear first in the search results.
     */
   @JSName("repos")
-  var repos_Original: Anon447 = js.native
+  var repos_Original: Anon463 = js.native
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -96,7 +96,7 @@ trait AnonCode extends js.Object {
     * **Note:** A search for featured Ruby topics only has 6 total results, so a [Link header](https://developer.github.com/v3/#link-header) indicating pagination is not included in the response.
     */
   @JSName("topics")
-  var topics_Original: Anon448 = js.native
+  var topics_Original: Anon464 = js.native
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *
@@ -107,7 +107,7 @@ trait AnonCode extends js.Object {
     * Here, we're looking at users with the name Tom. We're only interested in those with more than 42 repositories, and only if they have over 1,000 followers.
     */
   @JSName("users")
-  var users_Original: Anon449 = js.native
+  var users_Original: Anon465 = js.native
   /**
     * Find file contents via various criteria. This method returns up to 100 results [per page](https://developer.github.com/v3/#pagination).
     *

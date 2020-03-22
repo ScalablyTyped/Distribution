@@ -38,7 +38,6 @@ class WorkbookProtection () extends ClientObject {
   def load(propertyNames: String): WorkbookProtection = js.native
   def load(propertyNames: js.Array[String]): WorkbookProtection = js.native
   /**
-    *
     * Protects a workbook. Fails if the workbook has been protected.
     *
     * [Api set: ExcelApi 1.7]
@@ -53,7 +52,6 @@ class WorkbookProtection () extends ClientObject {
     */
   def toJSON(): WorkbookProtectionData = js.native
   /**
-    *
     * Unprotects a workbook.
     *
     * [Api set: ExcelApi 1.7]

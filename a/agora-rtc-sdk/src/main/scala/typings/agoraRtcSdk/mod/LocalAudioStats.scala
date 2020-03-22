@@ -4,7 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Audio statistics of the local stream. */
+/**
+  * Audio statistics of the local stream.
+  *
+  * If {@link getLocalAudioStats} is called successfully, the {@link LocalAudioStatsMap} provides the UID and {@link LocalAudioStats} of the local user.
+  */
 trait LocalAudioStats extends js.Object {
   /**
     * Encoding type of the sent audio.

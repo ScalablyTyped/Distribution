@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parsimmon"
-version := "1.10-dt-20200122Z-1fa6f3"
+version := "1.10-dt-20200225Z-1fa6f3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

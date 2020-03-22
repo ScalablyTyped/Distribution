@@ -18,6 +18,7 @@ trait IOptions extends js.Object {
   var allowedSchemesByTag: js.UndefOr[StringDictionary[js.Array[String]] | Boolean] = js.undefined
   var allowedStyles: js.UndefOr[StringDictionary[StringDictionary[js.Array[RegExp]]]] = js.undefined
   var allowedTags: js.UndefOr[js.Array[String] | Boolean] = js.undefined
+  var disallowedTagsMode: js.UndefOr[DisallowedTagsModes] = js.undefined
   var exclusiveFilter: js.UndefOr[js.Function1[/* frame */ IFrame, Boolean]] = js.undefined
   var nonTextTags: js.UndefOr[js.Array[String]] = js.undefined
   var parser: js.UndefOr[Options] = js.undefined
@@ -39,6 +40,7 @@ object IOptions {
     allowedSchemesByTag: StringDictionary[js.Array[String]] | Boolean = null,
     allowedStyles: StringDictionary[StringDictionary[js.Array[RegExp]]] = null,
     allowedTags: js.Array[String] | Boolean = null,
+    disallowedTagsMode: DisallowedTagsModes = null,
     exclusiveFilter: /* frame */ IFrame => Boolean = null,
     nonTextTags: js.Array[String] = null,
     parser: Options = null,
@@ -57,6 +59,7 @@ object IOptions {
     if (allowedSchemesByTag != null) __obj.updateDynamic("allowedSchemesByTag")(allowedSchemesByTag.asInstanceOf[js.Any])
     if (allowedStyles != null) __obj.updateDynamic("allowedStyles")(allowedStyles.asInstanceOf[js.Any])
     if (allowedTags != null) __obj.updateDynamic("allowedTags")(allowedTags.asInstanceOf[js.Any])
+    if (disallowedTagsMode != null) __obj.updateDynamic("disallowedTagsMode")(disallowedTagsMode.asInstanceOf[js.Any])
     if (exclusiveFilter != null) __obj.updateDynamic("exclusiveFilter")(js.Any.fromFunction1(exclusiveFilter))
     if (nonTextTags != null) __obj.updateDynamic("nonTextTags")(nonTextTags.asInstanceOf[js.Any])
     if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])

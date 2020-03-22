@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "clipboardy" : "2.2.0"
+      "clipboardy" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "clipboardy" : "2.2.0"
+      "clipboardy" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

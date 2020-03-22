@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "copy-paste"
-version := "v1.1.3-dt-20190322Z-ccb4eb"
+version := "v1.1.3-dt-20200226Z-ccb4eb"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -49,7 +49,6 @@ class AutoFilter () extends ClientObject {
   @JSName("apply")
   def apply(range: String, columnIndex: Double, criteria: FilterCriteria): Unit = js.native
   /**
-    *
     * Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
     *
     * [Api set: ExcelApi 1.9]
@@ -65,21 +64,18 @@ class AutoFilter () extends ClientObject {
   @JSName("apply")
   def apply(range: Range, columnIndex: Double, criteria: FilterCriteria): Unit = js.native
   /**
-    *
     * Clears the filter criteria of the AutoFilter.
     *
     * [Api set: ExcelApi 1.9]
     */
   def clearCriteria(): Unit = js.native
   /**
-    *
     * Returns the Range object that represents the range to which the AutoFilter applies.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Returns the Range object that represents the range to which the AutoFilter applies.
     If there is no Range object associated with the AutoFilter, this method returns a null object.
     *
@@ -97,14 +93,12 @@ class AutoFilter () extends ClientObject {
   def load(propertyNames: String): AutoFilter = js.native
   def load(propertyNames: js.Array[String]): AutoFilter = js.native
   /**
-    *
     * Applies the specified Autofilter object currently on the range.
     *
     * [Api set: ExcelApi 1.9]
     */
   def reapply(): Unit = js.native
   /**
-    *
     * Removes the AutoFilter for the range.
     *
     * [Api set: ExcelApi 1.9]

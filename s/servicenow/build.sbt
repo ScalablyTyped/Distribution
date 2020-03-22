@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "servicenow"
-version := "10.x-dt-20190717Z-1743c0"
+version := "10.x-dt-20200225Z-1743c0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

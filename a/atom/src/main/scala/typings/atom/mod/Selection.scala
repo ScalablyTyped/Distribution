@@ -2,6 +2,7 @@ package typings.atom.mod
 
 import typings.atom.AnonAutoscroll
 import typings.atom.AnonAutoscrollPreserveFolds
+import typings.atom.AnonPreserveFoldsReversed
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -265,7 +266,7 @@ trait Selection extends js.Object {
   def selectWord(): Unit = js.native
   /** Modifies the buffer Range for the selection. */
   def setBufferRange(bufferRange: RangeCompatible): Unit = js.native
-  def setBufferRange(bufferRange: RangeCompatible, options: AnonAutoscrollPreserveFolds): Unit = js.native
+  def setBufferRange(bufferRange: RangeCompatible, options: AnonPreserveFoldsReversed): Unit = js.native
   /** Modifies the screen range for the selection. */
   def setScreenRange(screenRange: RangeCompatible): Unit = js.native
   def setScreenRange(screenRange: RangeCompatible, options: AnonAutoscrollPreserveFolds): Unit = js.native

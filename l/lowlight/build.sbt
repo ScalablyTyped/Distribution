@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lowlight"
-version := "0.0-unknown-dt-20190322Z-466f4e"
+version := "0.0-unknown-dt-20200225Z-466f4e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

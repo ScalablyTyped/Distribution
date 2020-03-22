@@ -1,7 +1,7 @@
 
 # Scala.js typings for cytoscape
 
-Typings are for version 3.8
+Typings are for version 3.14
 
 ## Library description:
 Graph theory (a.k.a. network) library for analysis and visualisation

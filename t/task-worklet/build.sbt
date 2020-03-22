@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "task-worklet"
-version := "0.1-dt-20190312Z-98ae7e"
+version := "0.1-dt-20200225Z-98ae7e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

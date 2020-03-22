@@ -38,6 +38,7 @@ trait StatefulInputProps extends js.Object {
   var error: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var initialState: js.UndefOr[State] = js.undefined
+  var inputMode: js.UndefOr[String] = js.undefined
   var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
   var max: js.UndefOr[Double] = js.undefined
   var min: js.UndefOr[Double] = js.undefined
@@ -57,7 +58,7 @@ trait StatefulInputProps extends js.Object {
   var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
   var stateReducer: js.UndefOr[js.Function3[change_, /* nextState */ State, /* currentState */ State, State]] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Double] = js.undefined
 }
 
 object StatefulInputProps {
@@ -77,6 +78,7 @@ object StatefulInputProps {
     error: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     initialState: State = null,
+    inputMode: String = null,
     inputRef: Ref[HTMLInputElement] = null,
     max: Int | Double = null,
     min: Int | Double = null,
@@ -96,7 +98,7 @@ object StatefulInputProps {
     startEnhancer: (js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode = null,
     stateReducer: (change_, /* nextState */ State, /* currentState */ State) => State = null,
     `type`: String = null,
-    value: String = null
+    value: String | Double = null
   ): StatefulInputProps = {
     val __obj = js.Dynamic.literal()
     if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
@@ -113,6 +115,7 @@ object StatefulInputProps {
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])

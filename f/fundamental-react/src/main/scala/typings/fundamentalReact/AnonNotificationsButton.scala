@@ -5,9 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonNotificationsButton extends js.Object {
-  /* Aria-label for <span> element within the <button> element. */
   var counterLabel: String
-  /* Aria-label for <button> element. */
   var notificationsButton: String
 }
 

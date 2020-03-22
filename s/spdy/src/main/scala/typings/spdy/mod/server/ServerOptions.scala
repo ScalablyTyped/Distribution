@@ -44,6 +44,7 @@ object ServerOptions {
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     handshakeTimeout: Int | Double = null,
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
+    insecureHTTPParser: js.UndefOr[Boolean] = js.undefined,
     key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
     maxHeaderSize: Int | Double = null,
     maxVersion: SecureVersion = null,
@@ -80,6 +81,7 @@ object ServerOptions {
     if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace.asInstanceOf[js.Any])
     if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(insecureHTTPParser)) __obj.updateDynamic("insecureHTTPParser")(insecureHTTPParser.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxHeaderSize != null) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.asInstanceOf[js.Any])
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])

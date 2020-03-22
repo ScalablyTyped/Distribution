@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RdfFetchResponse[Q /* <: BaseQuad */] extends Response {
-  def quadStream(): Stream[Q]
+  def quadStream(): js.Promise[Stream[Q]]
 }
 
 object RdfFetchResponse {
@@ -28,7 +28,7 @@ object RdfFetchResponse {
     headers: Headers,
     json: () => js.Promise[_],
     ok: Boolean,
-    quadStream: () => Stream[Q],
+    quadStream: () => js.Promise[Stream[Q]],
     redirected: Boolean,
     status: Double,
     statusText: String,

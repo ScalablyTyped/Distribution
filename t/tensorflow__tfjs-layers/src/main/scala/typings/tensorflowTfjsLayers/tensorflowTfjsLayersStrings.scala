@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 
 object tensorflowTfjsLayersStrings {
   @js.native
-  sealed trait `1Dot5Dot2` extends js.Object
+  sealed trait `1Dot7Dot0` extends js.Object
   
   @js.native
   sealed trait Activation extends js.Object
@@ -512,7 +512,7 @@ object tensorflowTfjsLayersStrings {
   sealed trait zeros_ extends _InitializerIdentifier
   
   @scala.inline
-  def `1Dot5Dot2`: `1Dot5Dot2` = "1.5.2".asInstanceOf[`1Dot5Dot2`]
+  def `1Dot7Dot0`: `1Dot7Dot0` = "1.7.0".asInstanceOf[`1Dot7Dot0`]
   @scala.inline
   def Activation: Activation = "Activation".asInstanceOf[Activation]
   @scala.inline

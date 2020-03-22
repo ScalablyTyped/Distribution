@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "async-validator" : "3.2.3"
+      "async-validator" : "3.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "async-validator" : "3.2.3"
+      "async-validator" : "3.2.4"
     }
   ],
   "compile-devDependencies" : [

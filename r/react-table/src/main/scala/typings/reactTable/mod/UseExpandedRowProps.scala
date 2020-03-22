@@ -10,9 +10,9 @@ trait UseExpandedRowProps[D /* <: js.Object */] extends js.Object {
   var canExpand: Boolean = js.native
   var isExpanded: Boolean = js.native
   var subRows: js.Array[Row[D]] = js.native
-  def getExpandedToggleProps(): TableExpandedToggleProps = js.native
-  def getExpandedToggleProps(props: PartialTableExpandedToggl): TableExpandedToggleProps = js.native
-  def toggleExpanded(): Unit = js.native
-  def toggleExpanded(isExpanded: Boolean): Unit = js.native
+  def getToggleRowExpandedProps(): TableExpandedToggleProps = js.native
+  def getToggleRowExpandedProps(props: PartialTableExpandedToggl): TableExpandedToggleProps = js.native
+  def toggleRowExpanded(): Unit = js.native
+  def toggleRowExpanded(value: Boolean): Unit = js.native
 }
 

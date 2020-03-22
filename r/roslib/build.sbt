@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "roslib"
-version := "1.0.1-dt-20191023Z-7ce885"
+version := "1.0.1-dt-20200227Z-7ce885"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

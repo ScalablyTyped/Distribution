@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "tweenjs"
-version := "1.0.2-dt-20190322Z-1a8b9b"
+version := "1.0.2-dt-20200227Z-9898a7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20190322Z-4b8cb4",
+  "org.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20200226Z-4b8cb4",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

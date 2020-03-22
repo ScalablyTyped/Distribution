@@ -1,5 +1,6 @@
 package typings.plotlyJs
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsStrings.`bottom center`
 import typings.plotlyJs.plotlyJsStrings.`bottom left`
 import typings.plotlyJs.plotlyJsStrings.`bottom right`
@@ -7,13 +8,14 @@ import typings.plotlyJs.plotlyJsStrings.`middle center`
 import typings.plotlyJs.plotlyJsStrings.`top center`
 import typings.plotlyJs.plotlyJsStrings.`top left`
 import typings.plotlyJs.plotlyJsStrings.`top right`
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.DataTitle> */
 trait PartialDataTitle extends js.Object {
-  var font: js.UndefOr[PartialFont] = js.undefined
+  var font: js.UndefOr[Partial[Font]] = js.undefined
   var position: js.UndefOr[
     (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
   ] = js.undefined
@@ -23,7 +25,7 @@ trait PartialDataTitle extends js.Object {
 object PartialDataTitle {
   @scala.inline
   def apply(
-    font: PartialFont = null,
+    font: Partial[Font] = null,
     position: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`) = null,
     text: String = null
   ): PartialDataTitle = {

@@ -2,9 +2,9 @@ package typings.tensorflowTfjsLayers.topologyMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
 import typings.tensorflowTfjsCore.mod.serialization.Serializable
 import typings.tensorflowTfjsCore.tensorMod.Scalar
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
 import typings.tensorflowTfjsLayers.distTypesMod.RegularizerFn
@@ -57,7 +57,7 @@ abstract class Layer protected () extends Serializable {
   var getNodeAtIndex: js.Any = js.native
   val id: Double = js.native
   var inboundNodes: js.Array[Node] = js.native
-  var initialWeights: js.Array[Tensor_[Rank]] = js.native
+  var initialWeights: js.Array[Tensor[Rank]] = js.native
   /**
     * Retrieves the input tensor(s) of a layer.
     *
@@ -114,7 +114,7 @@ abstract class Layer protected () extends Serializable {
   var trainableWeights: js.Array[LayerVariable] = js.native
   /** Whether the layer weights will be updated during training. */
   var trainable_ : Boolean = js.native
-  val updates: js.Array[Tensor_[Rank]] = js.native
+  val updates: js.Array[Tensor[Rank]] = js.native
   /**
     * The concatenation of the lists trainableWeights and nonTrainableWeights
     * (in this order).
@@ -165,9 +165,9 @@ abstract class Layer protected () extends Serializable {
     constraint: Constraint
   ): LayerVariable = js.native
   @JSName("apply")
-  def apply(inputs: js.Array[SymbolicTensor | Tensor_[Rank]]): Tensor_[Rank] | (js.Array[SymbolicTensor | Tensor_[Rank]]) | SymbolicTensor = js.native
+  def apply(inputs: js.Array[SymbolicTensor | Tensor[Rank]]): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   @JSName("apply")
-  def apply(inputs: js.Array[SymbolicTensor | Tensor_[Rank]], kwargs: Kwargs): Tensor_[Rank] | (js.Array[SymbolicTensor | Tensor_[Rank]]) | SymbolicTensor = js.native
+  def apply(inputs: js.Array[SymbolicTensor | Tensor[Rank]], kwargs: Kwargs): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   /**
     * Builds or executes a `Layer's logic.
     *
@@ -236,14 +236,14 @@ abstract class Layer protected () extends Serializable {
     */
   /** @doc {heading: 'Models', 'subheading': 'Classes'} */
   @JSName("apply")
-  def apply(inputs: Tensor_[Rank]): Tensor_[Rank] | (js.Array[SymbolicTensor | Tensor_[Rank]]) | SymbolicTensor = js.native
+  def apply(inputs: Tensor[Rank]): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   @JSName("apply")
-  def apply(inputs: Tensor_[Rank], kwargs: Kwargs): Tensor_[Rank] | (js.Array[SymbolicTensor | Tensor_[Rank]]) | SymbolicTensor = js.native
+  def apply(inputs: Tensor[Rank], kwargs: Kwargs): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   @JSName("apply")
-  def apply(inputs: SymbolicTensor): Tensor_[Rank] | (js.Array[SymbolicTensor | Tensor_[Rank]]) | SymbolicTensor = js.native
+  def apply(inputs: SymbolicTensor): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
   @JSName("apply")
-  def apply(inputs: SymbolicTensor, kwargs: Kwargs): Tensor_[Rank] | (js.Array[SymbolicTensor | Tensor_[Rank]]) | SymbolicTensor = js.native
-  /* protected */ def assertInputCompatibility(inputs: js.Array[SymbolicTensor | Tensor_[Rank]]): Unit = js.native
+  def apply(inputs: SymbolicTensor, kwargs: Kwargs): Tensor[Rank] | (js.Array[SymbolicTensor | Tensor[Rank]]) | SymbolicTensor = js.native
+  /* protected */ def assertInputCompatibility(inputs: js.Array[SymbolicTensor | Tensor[Rank]]): Unit = js.native
   /**
     * Checks compatibility between the layer and provided inputs.
     *
@@ -256,7 +256,7 @@ abstract class Layer protected () extends Serializable {
     * @exception ValueError in case of mismatch between
     *   the provided inputs and the expectations of the layer.
     */
-  /* protected */ def assertInputCompatibility(inputs: Tensor_[Rank]): Unit = js.native
+  /* protected */ def assertInputCompatibility(inputs: Tensor[Rank]): Unit = js.native
   /* protected */ def assertInputCompatibility(inputs: SymbolicTensor): Unit = js.native
   /* protected */ def assertNotDisposed(): Unit = js.native
   /**
@@ -276,7 +276,7 @@ abstract class Layer protected () extends Serializable {
     * Used for regularizers during training.
     */
   def calculateLosses(): js.Array[Scalar] = js.native
-  def call(inputs: js.Array[Tensor_[Rank]], kwargs: Kwargs): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def call(inputs: js.Array[Tensor[Rank]], kwargs: Kwargs): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * This is where the layer's logic lives.
     *
@@ -285,15 +285,15 @@ abstract class Layer protected () extends Serializable {
     *
     * @return A tensor or list/tuple of tensors.
     */
-  def call(inputs: Tensor_[Rank], kwargs: Kwargs): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def call(inputs: Tensor[Rank], kwargs: Kwargs): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Clear call hook.
     * This is currently used for testing only.
     */
   def clearCallHook(): Unit = js.native
-  def computeMask(inputs: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def computeMask(inputs: js.Array[Tensor_[Rank]], mask: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def computeMask(inputs: js.Array[Tensor_[Rank]], mask: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def computeMask(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def computeMask(inputs: js.Array[Tensor[Rank]], mask: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def computeMask(inputs: js.Array[Tensor[Rank]], mask: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Computes an output mask tensor.
     *
@@ -303,9 +303,9 @@ abstract class Layer protected () extends Serializable {
     * @return null or a tensor (or list of tensors, one per output tensor of the
     * layer).
     */
-  def computeMask(inputs: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def computeMask(inputs: Tensor_[Rank], mask: js.Array[Tensor_[Rank]]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
-  def computeMask(inputs: Tensor_[Rank], mask: Tensor_[Rank]): Tensor_[Rank] | js.Array[Tensor_[Rank]] = js.native
+  def computeMask(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def computeMask(inputs: Tensor[Rank], mask: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
+  def computeMask(inputs: Tensor[Rank], mask: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] = js.native
   /**
     * Computes the output shape of the layer.
     *
@@ -390,10 +390,10 @@ abstract class Layer protected () extends Serializable {
     * @returns Weight values as an `Array` of `tf.Tensor`s.
     */
   /** @doc {heading: 'Models', 'subheading': 'Classes'} */
-  def getWeights(): js.Array[Tensor_[Rank]] = js.native
-  def getWeights(trainableOnly: Boolean): js.Array[Tensor_[Rank]] = js.native
-  /* protected */ def invokeCallHook(inputs: js.Array[Tensor_[Rank]], kwargs: Kwargs): Unit = js.native
-  /* protected */ def invokeCallHook(inputs: Tensor_[Rank], kwargs: Kwargs): Unit = js.native
+  def getWeights(): js.Array[Tensor[Rank]] = js.native
+  def getWeights(trainableOnly: Boolean): js.Array[Tensor[Rank]] = js.native
+  /* protected */ def invokeCallHook(inputs: js.Array[Tensor[Rank]], kwargs: Kwargs): Unit = js.native
+  /* protected */ def invokeCallHook(inputs: Tensor[Rank], kwargs: Kwargs): Unit = js.native
   /**
     * Reset the states of the layer.
     *
@@ -430,7 +430,7 @@ abstract class Layer protected () extends Serializable {
     *   layer's specifications.
     */
   /** @doc {heading: 'Models', 'subheading': 'Classes'} */
-  def setWeights(weights: js.Array[Tensor_[Rank]]): Unit = js.native
+  def setWeights(weights: js.Array[Tensor[Rank]]): Unit = js.native
   /**
     * Check compatibility between input shape and this layer's batchInputShape.
     *

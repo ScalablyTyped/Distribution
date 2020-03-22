@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 object dateFnsParseMod extends js.Object {
   @js.native
   object default extends js.Object {
-    def apply(dateString: String, formatString: String, backupDate: Double): Date = js.native
+    def apply(dateString: String, formatString: String, referenceDate: Double): Date = js.native
     def apply(
       dateString: String,
       formatString: String,
-      backupDate: Double,
+      referenceDate: Double,
       options: AnonUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
     ): Date = js.native
-    def apply(dateString: String, formatString: String, backupDate: Date): Date = js.native
+    def apply(dateString: String, formatString: String, referenceDate: Date): Date = js.native
     def apply(
       dateString: String,
       formatString: String,
-      backupDate: Date,
+      referenceDate: Date,
       options: AnonUseAdditionalDayOfYearTokensUseAdditionalWeekYearTokens
     ): Date = js.native
   }

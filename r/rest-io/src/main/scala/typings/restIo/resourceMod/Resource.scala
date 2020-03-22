@@ -46,18 +46,18 @@ class Resource protected () extends js.Object {
   def buildParentSearch(req: Request_[ParamsDictionary], query: js.Any): js.Any = js.native
   def buildPopulateQuery(req: Request_[ParamsDictionary]): js.Any = js.native
   def buildSearchQuery(req: Request_[ParamsDictionary]): js.Object = js.native
-  def create(req: Request_[ParamsDictionary], res: Response_): Unit = js.native
+  def create(req: Request_[ParamsDictionary], res: Response_[_]): Unit = js.native
   def createModel(resDef: IResource): Model_[Document, js.Object] = js.native
   def createQuery(query: String): js.Any = js.native
   def createRegex(query: String): RegExp = js.native
-  def del(req: Request_[ParamsDictionary], res: Response_): Unit = js.native
-  def errorHandler(err: Error, res: Response_): Unit = js.native
-  def getAll(req: Request_[ParamsDictionary], res: Response_): Unit = js.native
-  def getById(req: Request_[ParamsDictionary], res: Response_): Unit = js.native
+  def del(req: Request_[ParamsDictionary], res: Response_[_]): Unit = js.native
+  def errorHandler(err: Error, res: Response_[_]): Unit = js.native
+  def getAll(req: Request_[ParamsDictionary], res: Response_[_]): Unit = js.native
+  def getById(req: Request_[ParamsDictionary], res: Response_[_]): Unit = js.native
   def setupRecursiveRoutes(): Unit = js.native
   def setupRoutes(): Unit = js.native
   def toClassName(name: String): String = js.native
-  def update(req: Request_[ParamsDictionary], res: Response_): Unit = js.native
+  def update(req: Request_[ParamsDictionary], res: Response_[_]): Unit = js.native
 }
 
 /* static members */

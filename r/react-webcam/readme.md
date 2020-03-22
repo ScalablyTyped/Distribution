@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-webcam
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 React webcam component

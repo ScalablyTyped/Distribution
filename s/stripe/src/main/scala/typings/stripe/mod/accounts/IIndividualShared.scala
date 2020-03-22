@@ -2,7 +2,7 @@ package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.stripe.AnonDay
-import typings.stripe.AnonDocument
+import typings.stripe.AnonDetails
 import typings.stripe.mod.IAddress
 import typings.stripe.mod.IAddressKana
 import typings.stripe.mod.IAddressKanji
@@ -87,7 +87,7 @@ trait IIndividualShared extends js.Object {
   /**
     * The individual’s verification document information.
     */
-  var verification: js.UndefOr[AnonDocument] = js.undefined
+  var verification: js.UndefOr[AnonDetails] = js.undefined
 }
 
 object IIndividualShared {
@@ -108,7 +108,7 @@ object IIndividualShared {
     maiden_name: String = null,
     metadata: StringDictionary[String] = null,
     phone: String = null,
-    verification: AnonDocument = null
+    verification: AnonDetails = null
   ): IIndividualShared = {
     val __obj = js.Dynamic.literal()
     if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])

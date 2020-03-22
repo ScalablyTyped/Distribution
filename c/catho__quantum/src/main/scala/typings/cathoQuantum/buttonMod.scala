@@ -19,15 +19,16 @@ import typings.react.mod.Component
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod._Global_.JSX.Element
+import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Button", JSImport.Namespace)
+@JSImport("@catho/quantum/Button", JSImport.Namespace)
 @js.native
 object buttonMod extends js.Object {
   @js.native
-  trait ButtonProps[T] extends js.Object {
+  trait ButtonProps extends js.Object {
     @JSName("$as")
     var $as: js.UndefOr[Element | String] = js.native
     var center: js.UndefOr[Boolean] = js.native
@@ -36,7 +37,7 @@ object buttonMod extends js.Object {
     var full: js.UndefOr[Boolean] = js.native
     var icon: js.UndefOr[String] = js.native
     var id: js.UndefOr[String] = js.native
-    var onClick: js.UndefOr[MouseEventHandler[T]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
     var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
     var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.native
     var stroked: js.UndefOr[Boolean] = js.native
@@ -45,8 +46,8 @@ object buttonMod extends js.Object {
   }
   
   @js.native
-  class default[T] ()
-    extends Component[ButtonProps[T], js.Object, js.Any]
+  class default ()
+    extends Component[ButtonProps, js.Object, js.Any]
   
   /* static members */
   @js.native
@@ -54,6 +55,6 @@ object buttonMod extends js.Object {
     var Icon: IconButton = js.native
   }
   
-  type Button[T] = Component[ButtonProps[T], js.Object, js.Any]
+  type Button = Component[ButtonProps, js.Object, js.Any]
 }
 

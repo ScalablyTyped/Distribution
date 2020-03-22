@@ -14,12 +14,12 @@ class TemplateBinding protected () extends js.Object {
     key: String,
     keyIsVar: Boolean,
     name: String,
-    expression: ASTWithSource
+    value: ASTWithSource
   ) = this()
-  var expression: ASTWithSource | Null = js.native
   var key: String = js.native
   var keyIsVar: Boolean = js.native
   var name: String = js.native
   var span: ParseSpan = js.native
+  var value: ASTWithSource | Null = js.native
 }
 

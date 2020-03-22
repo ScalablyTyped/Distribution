@@ -2,7 +2,7 @@ package typings.officeUiFabricReact.teachingBubbleBaseMod
 
 import typings.officeUiFabricReact.AnonCalloutProps
 import typings.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import typings.react.mod.RefObject
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.base", "TeachingBubbleBase")
 @js.native
-class TeachingBubbleBase protected () extends BaseComponent[ITeachingBubbleProps, ITeachingBubbleState] {
+class TeachingBubbleBase protected ()
+  extends Component[ITeachingBubbleProps, ITeachingBubbleState, js.Any] {
   def this(props: ITeachingBubbleProps) = this()
   var _defaultCalloutProps: js.Any = js.native
   var rootElement: RefObject[HTMLDivElement] = js.native

@@ -18,7 +18,7 @@ object baseMiddlewareMod extends js.Object {
   abstract class BaseMiddleware () extends js.Object {
     val httpContext: HttpContext = js.native
     /* protected */ def bind[T](serviceIdentifier: ServiceIdentifier[T]): BindingToSyntax[T] = js.native
-    def handler(req: Request_[ParamsDictionary], res: Response_, next: NextFunction): Unit = js.native
+    def handler(req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction): Unit = js.native
   }
   
 }

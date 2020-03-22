@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsdoc-to-markdown"
-version := "4.0-dt-20190214Z-b6b828"
+version := "5.0-dt-20200305Z-e995ec"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

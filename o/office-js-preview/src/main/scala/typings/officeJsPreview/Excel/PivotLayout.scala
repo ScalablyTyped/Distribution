@@ -58,6 +58,14 @@ class PivotLayout () extends ClientObject {
   var layoutType: PivotLayoutType | Compact | Tabular | Outline = js.native
   /**
     *
+    * The style applied to the PivotTable.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val pivotStyle: PivotTableStyle = js.native
+  /**
+    *
     * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi 1.9]
@@ -90,7 +98,6 @@ class PivotLayout () extends ClientObject {
     columnItems: js.Array[PivotItem | String]
   ): Range = js.native
   /**
-    *
     * Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies. The returned cell is the intersection of the given row and column that contains the data from the given hierarchy. This method is the inverse of calling getPivotItems and getDataHierarchy on a particular cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -107,14 +114,12 @@ class PivotLayout () extends ClientObject {
     columnItems: js.Array[PivotItem | String]
   ): Range = js.native
   /**
-    *
     * Returns the range where the PivotTable's column labels reside.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getColumnLabelRange(): Range = js.native
   /**
-    *
     * Returns the range where the PivotTable's data values reside.
     *
     * [Api set: ExcelApi 1.8]
@@ -122,7 +127,6 @@ class PivotLayout () extends ClientObject {
   def getDataBodyRange(): Range = js.native
   def getDataHierarchy(cell: String): DataPivotHierarchy = js.native
   /**
-    *
     * Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable.
     *
     * [Api set: ExcelApi 1.9]
@@ -132,7 +136,6 @@ class PivotLayout () extends ClientObject {
     */
   def getDataHierarchy(cell: Range): DataPivotHierarchy = js.native
   /**
-    *
     * Returns the range of the PivotTable's filter area.
     *
     * [Api set: ExcelApi 1.8]
@@ -140,7 +143,6 @@ class PivotLayout () extends ClientObject {
   def getFilterAxisRange(): Range = js.native
   def getPivotItems(axis: PivotAxis, cell: String): ClientResult[js.Array[PivotItem]] = js.native
   /**
-    *
     * Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
     *
     * [Api set: ExcelApi 1.9]
@@ -169,7 +171,6 @@ class PivotLayout () extends ClientObject {
   @JSName("getPivotItems")
   def getPivotItems_Unknown(axis: Unknown_, cell: String): ClientResult[js.Array[PivotItem]] = js.native
   /**
-    *
     * Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
     *
     * [Api set: ExcelApi 1.9]
@@ -181,14 +182,12 @@ class PivotLayout () extends ClientObject {
   @JSName("getPivotItems")
   def getPivotItems_Unknown(axis: Unknown_, cell: Range): ClientResult[js.Array[PivotItem]] = js.native
   /**
-    *
     * Returns the range the PivotTable exists on, excluding the filter area.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Returns the range where the PivotTable's row labels reside.
     *
     * [Api set: ExcelApi 1.8]
@@ -221,7 +220,6 @@ class PivotLayout () extends ClientObject {
   def set(properties: PivotLayout): Unit = js.native
   def setAutoSortOnCell(cell: String, sortBy: SortBy): Unit = js.native
   /**
-    *
     * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
     *
     * [Api set: ExcelApi 1.9]
@@ -233,7 +231,6 @@ class PivotLayout () extends ClientObject {
   @JSName("setAutoSortOnCell")
   def setAutoSortOnCell_Ascending(cell: String, sortBy: Ascending): Unit = js.native
   /**
-    *
     * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
     *
     * [Api set: ExcelApi 1.9]
@@ -247,6 +244,17 @@ class PivotLayout () extends ClientObject {
   def setAutoSortOnCell_Descending(cell: String, sortBy: Descending): Unit = js.native
   @JSName("setAutoSortOnCell")
   def setAutoSortOnCell_Descending(cell: Range, sortBy: Descending): Unit = js.native
+  /**
+    * Sets the style applied to the PivotTable.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param style The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
+    */
+  def setStyle(style: String): Unit = js.native
+  def setStyle(style: BuiltInPivotTableStyle): Unit = js.native
+  def setStyle(style: PivotTableStyle): Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.PivotLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`) that contains shallow copies of any loaded child properties from the original object.

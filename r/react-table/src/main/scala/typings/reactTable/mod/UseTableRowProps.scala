@@ -11,7 +11,6 @@ trait UseTableRowProps[D /* <: js.Object */] extends js.Object {
   var id: String = js.native
   var index: Double = js.native
   var original: D = js.native
-  var state: js.Object = js.native
   var subRows: js.Array[Row[D]] = js.native
   var values: Record[IdType[D], CellValue] = js.native
   def getRowProps(): TableRowProps = js.native

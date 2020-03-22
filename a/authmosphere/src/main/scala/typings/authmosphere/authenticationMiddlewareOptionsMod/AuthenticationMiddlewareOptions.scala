@@ -27,7 +27,7 @@ object AuthenticationMiddlewareOptions {
     tokenInfoEndpoint: String,
     getTokenInfo: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[js.Object]] = null,
     logger: Logger = null,
-    onNotAuthenticatedHandler: (/* request */ Request_[ParamsDictionary], /* resonse */ Response_, /* next */ NextFunction, /* logger */ Logger) => Unit = null,
+    onNotAuthenticatedHandler: (/* request */ Request_[ParamsDictionary], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* logger */ Logger) => Unit = null,
     publicEndpoints: js.Array[String] = null
   ): AuthenticationMiddlewareOptions = {
     val __obj = js.Dynamic.literal(tokenInfoEndpoint = tokenInfoEndpoint.asInstanceOf[js.Any])

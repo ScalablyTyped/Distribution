@@ -29,6 +29,13 @@ trait ClientOptions extends js.Object {
   var clearContext: js.UndefOr[Boolean] = js.undefined
   /**
     * @default false
+    * @description Set style display none on client elements.
+    * If true, Karma does not display the banner and browser list.
+    * Useful when using karma on component tests with screenshots
+    */
+  var clientDisplayNone: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default false
     * @description Run the tests on the same window as the client, without using iframe or a new window
     */
   var runInParent: js.UndefOr[Boolean] = js.undefined
@@ -47,6 +54,7 @@ object ClientOptions {
     args: js.Array[String] = null,
     captureConsole: js.UndefOr[Boolean] = js.undefined,
     clearContext: js.UndefOr[Boolean] = js.undefined,
+    clientDisplayNone: js.UndefOr[Boolean] = js.undefined,
     runInParent: js.UndefOr[Boolean] = js.undefined,
     useIframe: js.UndefOr[Boolean] = js.undefined
   ): ClientOptions = {
@@ -54,6 +62,7 @@ object ClientOptions {
     if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
     if (!js.isUndefined(captureConsole)) __obj.updateDynamic("captureConsole")(captureConsole.asInstanceOf[js.Any])
     if (!js.isUndefined(clearContext)) __obj.updateDynamic("clearContext")(clearContext.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientDisplayNone)) __obj.updateDynamic("clientDisplayNone")(clientDisplayNone.asInstanceOf[js.Any])
     if (!js.isUndefined(runInParent)) __obj.updateDynamic("runInParent")(runInParent.asInstanceOf[js.Any])
     if (!js.isUndefined(useIframe)) __obj.updateDynamic("useIframe")(useIframe.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]

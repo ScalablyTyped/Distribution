@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_joyride"
-version := "2.1-dt-20190322Z-04feda"
+version := "2.1-dt-20200225Z-04feda"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

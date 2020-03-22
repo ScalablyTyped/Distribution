@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ajv-merge-patch"
-version := "4.1-dt-20190212Z-90bce7"
+version := "4.1-dt-20200225Z-90bce7"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

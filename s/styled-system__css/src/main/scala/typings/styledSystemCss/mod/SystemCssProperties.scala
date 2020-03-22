@@ -400,7 +400,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ K in keyof @styled-system/css.@styled-system/css.AllSystemCSSProperties ]: @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | (theme : any): @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | @styled-system/css.@styled-system/css.SystemStyleObject} */
-trait SystemCssProperties extends SystemStyleObject {
+trait SystemCssProperties extends _SystemStyleObject {
   var alignContent: ResponsiveStyleValue[js.UndefOr[AlignContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignContentProperty]]]) | SystemStyleObject
   var alignItems: ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]]]) | SystemStyleObject
   var alignSelf: ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]]]) | SystemStyleObject
@@ -1524,7 +1524,7 @@ trait SystemCssProperties extends SystemStyleObject {
   ]) | SystemStyleObject
   var wordWrap: ResponsiveStyleValue[js.UndefOr[WordWrapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WordWrapProperty]]]) | SystemStyleObject
   var writingMode: ResponsiveStyleValue[js.UndefOr[WritingModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WritingModeProperty]]]) | SystemStyleObject
-  var zIndex: ResponsiveStyleValue[js.UndefOr[ZIndexProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ZIndexProperty]]]) | SystemStyleObject
+  var zIndex: (ResponsiveStyleValue[js.UndefOr[ZIndexProperty | String]]) | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ZIndexProperty | String]]]) | SystemStyleObject
   var zoom: ResponsiveStyleValue[js.UndefOr[ZoomProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ZoomProperty]]]) | SystemStyleObject
 }
 

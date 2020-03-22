@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsLayers
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object exportsMetricsMod extends js.Object {
   @JSName("MAPE")
-  def MAPE_(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
+  def MAPE_(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
   @JSName("MSE")
-  def MSE_(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def binaryAccuracy(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def binaryCrossentropy(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def categoricalAccuracy(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def categoricalCrossentropy(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def cosineProximity(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def mape(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def meanAbsoluteError(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def meanAbsolutePercentageError(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def meanSquaredError(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def mse(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def precision(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def recall(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
-  def sparseCategoricalAccuracy(yTrue: Tensor_[Rank], yPred: Tensor_[Rank]): Tensor_[Rank] = js.native
+  def MSE_(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def binaryAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def categoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def categoricalCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def cosineProximity(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def mape(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def meanAbsoluteError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def meanAbsolutePercentageError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def meanSquaredError(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def mse(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def precision(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def recall(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
+  def sparseCategoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
 }
 

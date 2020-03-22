@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__boom
 
-Typings are for version 9.0.0
+Typings are for version 9.1.0
 
 ## Library description:
 HTTP-friendly error objects

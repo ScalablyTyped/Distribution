@@ -31,9 +31,13 @@ trait AnonCurrentVersion extends js.Object {
     */
   var latestVersion: js.UndefOr[String] = js.undefined
   /**
+    * app's Package Name
+    */
+  var packageName: js.UndefOr[String] = js.undefined
+  /**
     * provider name or function that returns promise or value of the latest version
     */
-  var provider: js.UndefOr[js.Function0[String]] = js.undefined
+  var provider: js.UndefOr[js.Function0[String] | String] = js.undefined
 }
 
 object AnonCurrentVersion {
@@ -45,7 +49,8 @@ object AnonCurrentVersion {
     forceUpdate: js.UndefOr[Boolean] = js.undefined,
     ignoreErrors: js.UndefOr[Boolean] = js.undefined,
     latestVersion: String = null,
-    provider: () => String = null
+    packageName: String = null,
+    provider: js.Function0[String] | String = null
   ): AnonCurrentVersion = {
     val __obj = js.Dynamic.literal()
     if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
@@ -54,7 +59,8 @@ object AnonCurrentVersion {
     if (!js.isUndefined(forceUpdate)) __obj.updateDynamic("forceUpdate")(forceUpdate.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreErrors)) __obj.updateDynamic("ignoreErrors")(ignoreErrors.asInstanceOf[js.Any])
     if (latestVersion != null) __obj.updateDynamic("latestVersion")(latestVersion.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(js.Any.fromFunction0(provider))
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
+    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonCurrentVersion]
   }
 }

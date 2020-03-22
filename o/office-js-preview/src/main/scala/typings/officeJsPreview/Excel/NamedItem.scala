@@ -98,21 +98,18 @@ class NamedItem () extends ClientObject {
     */
   val worksheetOrNullObject: Worksheet = js.native
   /**
-    *
     * Deletes the given name.
     *
     * [Api set: ExcelApi 1.4]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Returns the range object that is associated with the name. Throws an error if the named item's type is not a range.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
   /**
-    *
     * Returns the range object that is associated with the name. Returns a null object if the named item's type is not a range.
     *
     * [Api set: ExcelApi 1.4]

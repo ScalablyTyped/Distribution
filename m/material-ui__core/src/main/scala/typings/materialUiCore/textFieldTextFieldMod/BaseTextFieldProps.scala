@@ -1,7 +1,7 @@
 package typings.materialUiCore.textFieldTextFieldMod
 
-import typings.materialUiCore.PartialClassNameMapTextFieldClassKey
-import typings.materialUiCore.PartialFormHelperTextProps
+import typings.materialUiCore.PartialClassNameMapTextFi
+import typings.materialUiCore.PartialFormHelperTextProp
 import typings.materialUiCore.PartialInputLabelProps
 import typings.materialUiCore.PartialSelectProps
 import typings.materialUiCore.formControlFormControlMod.FormControlProps
@@ -103,7 +103,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormControl.FormControlProps, @material-ui/core.@material-ui/core/TextField/TextField.TextFieldClassKey, 'onChange' | 'defaultValue'> */
 @js.native
 trait BaseTextFieldProps extends js.Object {
-  var FormHelperTextProps: js.UndefOr[PartialFormHelperTextProps] = js.native
+  var FormHelperTextProps: js.UndefOr[PartialFormHelperTextProp] = js.native
   var InputLabelProps: js.UndefOr[PartialInputLabelProps] = js.native
   var SelectProps: js.UndefOr[PartialSelectProps] = js.native
   var about: js.UndefOr[String] = js.native
@@ -163,7 +163,7 @@ trait BaseTextFieldProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTextFieldClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTextFi] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[FormControlProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -306,7 +306,7 @@ trait BaseTextFieldProps extends js.Object {
 object BaseTextFieldProps {
   @scala.inline
   def apply(
-    FormHelperTextProps: PartialFormHelperTextProps = null,
+    FormHelperTextProps: PartialFormHelperTextProp = null,
     InputLabelProps: PartialInputLabelProps = null,
     SelectProps: PartialSelectProps = null,
     about: String = null,
@@ -366,7 +366,7 @@ object BaseTextFieldProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTextFieldClassKey = null,
+    classes: PartialClassNameMapTextFi = null,
     color: String = null,
     component: ReactType[FormControlProps] = null,
     contentEditable: Booleanish | inherit = null,

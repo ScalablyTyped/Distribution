@@ -150,7 +150,7 @@ trait ProcessManager extends js.Object {
     * @param handler If an anonymous function is set using the addOnPreStageChange method it
     *                cannot be removed using this method.
     */
-  def removeOnPreStageChange(handler: ProcessStatusChangeHandler): Unit = js.native
+  def removeOnPreStageChange(handler: ContextSensitiveHandler): Unit = js.native
   /**
     * Use this to remove a function as an event handler for the OnProcessStatusChange event.
     * @param handler If an anonymous function is set using the addOnProcessStatusChange method it

@@ -1,14 +1,22 @@
 package typings.numbro.mod.numbro
 
+import typings.numbro.AnonBillion
 import typings.numbro.numbroStrings.billion
+import typings.numbro.numbroStrings.binary
 import typings.numbro.numbroStrings.byte
 import typings.numbro.numbroStrings.currency
+import typings.numbro.numbroStrings.decimal
+import typings.numbro.numbroStrings.general
+import typings.numbro.numbroStrings.infix
 import typings.numbro.numbroStrings.million
 import typings.numbro.numbroStrings.number
 import typings.numbro.numbroStrings.ordinal
 import typings.numbro.numbroStrings.parenthesis
 import typings.numbro.numbroStrings.percent
+import typings.numbro.numbroStrings.postfix
+import typings.numbro.numbroStrings.prefix
 import typings.numbro.numbroStrings.sign
+import typings.numbro.numbroStrings.string
 import typings.numbro.numbroStrings.thousand
 import typings.numbro.numbroStrings.time
 import typings.numbro.numbroStrings.trillion
@@ -17,17 +25,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Format extends js.Object {
+  var abbreviations: js.UndefOr[AnonBillion] = js.undefined
   var average: js.UndefOr[Boolean] = js.undefined
+  var base: js.UndefOr[decimal | binary | general] = js.undefined
   var characteristic: js.UndefOr[Double] = js.undefined
+  var currencyPosition: js.UndefOr[prefix | infix | postfix] = js.undefined
+  var currencySymbol: js.UndefOr[string] = js.undefined
+  var exponential: js.UndefOr[Boolean] = js.undefined
   var forceAverage: js.UndefOr[trillion | billion | million | thousand] = js.undefined
   var forceSign: js.UndefOr[Boolean] = js.undefined
   var mantissa: js.UndefOr[Double] = js.undefined
   var negative: js.UndefOr[sign | parenthesis] = js.undefined
+  var optionalCharacteristic: js.UndefOr[Boolean] = js.undefined
   var optionalMantissa: js.UndefOr[Boolean] = js.undefined
   var output: js.UndefOr[currency | percent | byte | time | ordinal | number] = js.undefined
-  var postfix: js.UndefOr[Double] = js.undefined
-  var prefix: js.UndefOr[Double] = js.undefined
+  var postfix: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[String] = js.undefined
+  var prefixSymbol: js.UndefOr[Boolean] = js.undefined
   var spaceSeparated: js.UndefOr[Boolean] = js.undefined
+  var spaceSeparatedCurrency: js.UndefOr[Boolean] = js.undefined
   var thousandSeparated: js.UndefOr[Boolean] = js.undefined
   var totalLength: js.UndefOr[Double] = js.undefined
   var trimMantissa: js.UndefOr[Boolean] = js.undefined
@@ -36,33 +52,49 @@ trait Format extends js.Object {
 object Format {
   @scala.inline
   def apply(
+    abbreviations: AnonBillion = null,
     average: js.UndefOr[Boolean] = js.undefined,
+    base: decimal | binary | general = null,
     characteristic: Int | Double = null,
+    currencyPosition: prefix | infix | postfix = null,
+    currencySymbol: string = null,
+    exponential: js.UndefOr[Boolean] = js.undefined,
     forceAverage: trillion | billion | million | thousand = null,
     forceSign: js.UndefOr[Boolean] = js.undefined,
     mantissa: Int | Double = null,
     negative: sign | parenthesis = null,
+    optionalCharacteristic: js.UndefOr[Boolean] = js.undefined,
     optionalMantissa: js.UndefOr[Boolean] = js.undefined,
     output: currency | percent | byte | time | ordinal | number = null,
-    postfix: Int | Double = null,
-    prefix: Int | Double = null,
+    postfix: String = null,
+    prefix: String = null,
+    prefixSymbol: js.UndefOr[Boolean] = js.undefined,
     spaceSeparated: js.UndefOr[Boolean] = js.undefined,
+    spaceSeparatedCurrency: js.UndefOr[Boolean] = js.undefined,
     thousandSeparated: js.UndefOr[Boolean] = js.undefined,
     totalLength: Int | Double = null,
     trimMantissa: js.UndefOr[Boolean] = js.undefined
   ): Format = {
     val __obj = js.Dynamic.literal()
+    if (abbreviations != null) __obj.updateDynamic("abbreviations")(abbreviations.asInstanceOf[js.Any])
     if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
     if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic.asInstanceOf[js.Any])
+    if (currencyPosition != null) __obj.updateDynamic("currencyPosition")(currencyPosition.asInstanceOf[js.Any])
+    if (currencySymbol != null) __obj.updateDynamic("currencySymbol")(currencySymbol.asInstanceOf[js.Any])
+    if (!js.isUndefined(exponential)) __obj.updateDynamic("exponential")(exponential.asInstanceOf[js.Any])
     if (forceAverage != null) __obj.updateDynamic("forceAverage")(forceAverage.asInstanceOf[js.Any])
     if (!js.isUndefined(forceSign)) __obj.updateDynamic("forceSign")(forceSign.asInstanceOf[js.Any])
     if (mantissa != null) __obj.updateDynamic("mantissa")(mantissa.asInstanceOf[js.Any])
     if (negative != null) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
+    if (!js.isUndefined(optionalCharacteristic)) __obj.updateDynamic("optionalCharacteristic")(optionalCharacteristic.asInstanceOf[js.Any])
     if (!js.isUndefined(optionalMantissa)) __obj.updateDynamic("optionalMantissa")(optionalMantissa.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
     if (postfix != null) __obj.updateDynamic("postfix")(postfix.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (!js.isUndefined(prefixSymbol)) __obj.updateDynamic("prefixSymbol")(prefixSymbol.asInstanceOf[js.Any])
     if (!js.isUndefined(spaceSeparated)) __obj.updateDynamic("spaceSeparated")(spaceSeparated.asInstanceOf[js.Any])
+    if (!js.isUndefined(spaceSeparatedCurrency)) __obj.updateDynamic("spaceSeparatedCurrency")(spaceSeparatedCurrency.asInstanceOf[js.Any])
     if (!js.isUndefined(thousandSeparated)) __obj.updateDynamic("thousandSeparated")(thousandSeparated.asInstanceOf[js.Any])
     if (totalLength != null) __obj.updateDynamic("totalLength")(totalLength.asInstanceOf[js.Any])
     if (!js.isUndefined(trimMantissa)) __obj.updateDynamic("trimMantissa")(trimMantissa.asInstanceOf[js.Any])

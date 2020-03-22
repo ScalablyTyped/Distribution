@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "greasemonkey"
-version := "4.x-dt-20190717Z-ad79e3"
+version := "4.x-dt-20200225Z-ad79e3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

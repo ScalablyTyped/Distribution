@@ -16,6 +16,6 @@ object sizeMod extends js.Object {
   def toSize(size: Double, opt_size: Size): Size = js.native
   def toSize(size: Size): Size = js.native
   def toSize(size: Size, opt_size: Size): Size = js.native
-  type Size = js.Array[Double]
+  type Size = js.Tuple2[Double, Double]
 }
 

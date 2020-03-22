@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object inputMod {
   type CustomValidate = (js.Function1[/* param */ js.UndefOr[typings.cathoQuantum.AnonValueString], java.lang.String]) | typings.cathoQuantum.AnonError
-  type Input[T] = typings.react.mod.Component[typings.cathoQuantum.inputMod.InputProps[T], js.Object, js.Any]
+  type Input = typings.react.mod.Component[typings.cathoQuantum.inputMod.InputProps, js.Object, js.Any]
   type Mask = scala.Boolean | typings.std.RegExp | java.lang.String | typings.cathoQuantum.inputMod.MaskFunction
   type MaskFunction = js.Function1[/* rawValue */ java.lang.String, js.Array[java.lang.String]]
   type Validate = (js.Function1[

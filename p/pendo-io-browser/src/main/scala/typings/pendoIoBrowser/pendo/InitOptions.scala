@@ -17,16 +17,16 @@ trait InitOptions extends Identity {
 object InitOptions {
   @scala.inline
   def apply(
-    visitor: Visitor,
-    account: Account = null,
+    account: IdentityMetadata = null,
     apiKey: String = null,
     disablePersistence: js.UndefOr[Boolean] = js.undefined,
     events: EventCallbacks = null,
     excludeAllText: js.UndefOr[Boolean] = js.undefined,
     excludeTitle: js.UndefOr[Boolean] = js.undefined,
-    guides: AnonDelay = null
+    guides: AnonDelay = null,
+    visitor: IdentityMetadata = null
   ): InitOptions = {
-    val __obj = js.Dynamic.literal(visitor = visitor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
     if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey.asInstanceOf[js.Any])
     if (!js.isUndefined(disablePersistence)) __obj.updateDynamic("disablePersistence")(disablePersistence.asInstanceOf[js.Any])
@@ -34,6 +34,7 @@ object InitOptions {
     if (!js.isUndefined(excludeAllText)) __obj.updateDynamic("excludeAllText")(excludeAllText.asInstanceOf[js.Any])
     if (!js.isUndefined(excludeTitle)) __obj.updateDynamic("excludeTitle")(excludeTitle.asInstanceOf[js.Any])
     if (guides != null) __obj.updateDynamic("guides")(guides.asInstanceOf[js.Any])
+    if (visitor != null) __obj.updateDynamic("visitor")(visitor.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitOptions]
   }
 }

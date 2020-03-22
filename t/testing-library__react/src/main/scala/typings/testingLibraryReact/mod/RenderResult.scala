@@ -1,5 +1,6 @@
 package typings.testingLibraryReact.mod
 
+import typings.prettyFormat.mod.OptionsReceived
 import typings.react.mod.ReactElement
 import typings.std.DocumentFragment
 import typings.std.HTMLElement
@@ -15,8 +16,14 @@ trait RenderResult[Q /* <: Queries */] extends js.Object {
   def asFragment(): DocumentFragment = js.native
   def debug(): Unit = js.native
   def debug(baseElement: js.Array[HTMLElement | DocumentFragment]): Unit = js.native
+  def debug(baseElement: js.Array[HTMLElement | DocumentFragment], maxLength: Double): Unit = js.native
+  def debug(baseElement: js.Array[HTMLElement | DocumentFragment], maxLength: Double, options: OptionsReceived): Unit = js.native
   def debug(baseElement: DocumentFragment): Unit = js.native
+  def debug(baseElement: DocumentFragment, maxLength: Double): Unit = js.native
+  def debug(baseElement: DocumentFragment, maxLength: Double, options: OptionsReceived): Unit = js.native
   def debug(baseElement: HTMLElement): Unit = js.native
+  def debug(baseElement: HTMLElement, maxLength: Double): Unit = js.native
+  def debug(baseElement: HTMLElement, maxLength: Double, options: OptionsReceived): Unit = js.native
   def rerender(ui: ReactElement): Unit = js.native
   def unmount(): Boolean = js.native
 }

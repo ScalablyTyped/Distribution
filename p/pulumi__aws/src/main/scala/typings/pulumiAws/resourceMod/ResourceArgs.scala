@@ -19,12 +19,12 @@ trait ResourceArgs extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
 }
 
 object ResourceArgs {
   @scala.inline
-  def apply(parentId: Input[String], pathPart: Input[String], restApi: Input[RestApi]): ResourceArgs = {
+  def apply(parentId: Input[String], pathPart: Input[String], restApi: Input[String | RestApi]): ResourceArgs = {
     val __obj = js.Dynamic.literal(parentId = parentId.asInstanceOf[js.Any], pathPart = pathPart.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceArgs]

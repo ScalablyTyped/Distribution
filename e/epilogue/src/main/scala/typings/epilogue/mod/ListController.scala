@@ -44,6 +44,6 @@ class ListController () extends BaseController {
     `type`: DataTypeAbstract | DataTypeString | DataTypeChar | DataTypeText | DataTypeNumber | DataTypeInteger | DataTypeBigInt | DataTypeFloat | DataTypeTime | DataTypeDate | DataTypeDateOnly | DataTypeBoolean | DataTypeNow | DataTypeBlob | DataTypeDecimal | DataTypeUUID | DataTypeUUIDv1 | DataTypeUUIDv4 | DataTypeHStore | DataTypeJSONType | DataTypeJSONB | DataTypeVirtual | DataTypeArray | DataTypeEnum | DataTypeRange | DataTypeReal | DataTypeDouble | DataTypeGeometry,
     sequelize: Sequelize
   ): js.Any = js.native
-  def fetch(req: Request_[ParamsDictionary], res: Response_, context: Context): js.Promise[js.Function0[Unit]] = js.native
+  def fetch(req: Request_[ParamsDictionary], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
 }
 

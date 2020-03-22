@@ -1,19 +1,12 @@
 package typings.localtunnel.mod
 
+import typings.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TunnelCluster extends js.Object {
-  var domain: String
-}
-
-object TunnelCluster {
-  @scala.inline
-  def apply(domain: String): TunnelCluster = {
-    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[TunnelCluster]
-  }
+@js.native
+trait TunnelCluster extends EventEmitter {
+  def open(): Unit = js.native
 }
 

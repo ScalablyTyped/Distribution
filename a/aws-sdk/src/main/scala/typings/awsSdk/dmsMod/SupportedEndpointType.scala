@@ -15,7 +15,7 @@ trait SupportedEndpointType extends js.Object {
     */
   var EngineDisplayName: js.UndefOr[String] = js.native
   /**
-    * The database engine name. Valid values, depending on the EndpointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
+    * The database engine name. Valid values, depending on the EndpointType, include "mysql", "oracle", "postgres", "mariadb", "aurora", "aurora-postgresql", "redshift", "s3", "db2", "azuredb", "sybase", "dynamodb", "mongodb", "kinesis", "kafka", "elasticsearch", "documentdb", and "sqlserver".
     */
   var EngineName: js.UndefOr[String] = js.native
   /**

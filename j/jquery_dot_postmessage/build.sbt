@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_postmessage"
-version := "0.0-unknown-dt-20190322Z-d74c7a"
+version := "0.0-unknown-dt-20200226Z-d74c7a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "micromatch"
-version := "4.0-dt-20200127Z-f2aeb4"
+version := "4.0-dt-20200226Z-f2aeb4"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

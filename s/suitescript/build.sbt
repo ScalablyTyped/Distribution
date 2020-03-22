@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "suitescript"
-version := "0.0-unknown-dt-20190322Z-5abc81"
+version := "0.0-unknown-dt-20200227Z-5abc81"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

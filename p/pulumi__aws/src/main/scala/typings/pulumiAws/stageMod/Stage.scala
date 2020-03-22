@@ -1,9 +1,7 @@
 package typings.pulumiAws.stageMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.deploymentMod.Deployment
 import typings.pulumiAws.outputMod.apigateway.StageAccessLogSettings
-import typings.pulumiAws.restApiMod.RestApi
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -49,7 +47,7 @@ class Stage protected () extends CustomResource {
   /**
     * The ID of the deployment that the stage points to
     */
-  val deployment: Output_[Deployment] = js.native
+  val deployment: Output_[String] = js.native
   /**
     * The description of the stage
     */
@@ -72,7 +70,7 @@ class Stage protected () extends CustomResource {
   /**
     * The ID of the associated REST API
     */
-  val restApi: Output_[RestApi] = js.native
+  val restApi: Output_[String] = js.native
   /**
     * The name of the stage
     */

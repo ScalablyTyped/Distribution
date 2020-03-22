@@ -10,6 +10,7 @@ trait InstanceNode
   extends DefaultFrameMixin
      with SceneNode {
   var masterComponent: ComponentNode = js.native
+  var scaleFactor: Double = js.native
   val `type`: INSTANCE = js.native
 }
 

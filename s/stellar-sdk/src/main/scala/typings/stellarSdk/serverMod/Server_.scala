@@ -23,7 +23,7 @@ import typings.stellarSdk.serverMod.Server.Timebounds
 import typings.stellarSdk.tradeAggregationCallBuilderMod.TradeAggregationCallBuilder
 import typings.stellarSdk.tradesCallBuilderMod.TradesCallBuilder
 import typings.stellarSdk.transactionCallBuilderMod.TransactionCallBuilder
-import typings.urijs.uri.URI
+import typings.urijs.mod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

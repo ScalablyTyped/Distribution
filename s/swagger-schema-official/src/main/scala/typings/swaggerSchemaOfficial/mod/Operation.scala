@@ -15,7 +15,7 @@ trait Operation extends js.Object {
   var produces: js.UndefOr[js.Array[String]] = js.undefined
   var responses: StringDictionary[Response | Reference]
   var schemes: js.UndefOr[js.Array[String]] = js.undefined
-  var security: js.UndefOr[js.Array[Security]] = js.undefined
+  var security: js.UndefOr[js.Array[StringDictionary[js.Array[String]]]] = js.undefined
   var summary: js.UndefOr[String] = js.undefined
   var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -32,7 +32,7 @@ object Operation {
     parameters: js.Array[Parameter | Reference] = null,
     produces: js.Array[String] = null,
     schemes: js.Array[String] = null,
-    security: js.Array[Security] = null,
+    security: js.Array[StringDictionary[js.Array[String]]] = null,
     summary: String = null,
     tags: js.Array[String] = null
   ): Operation = {

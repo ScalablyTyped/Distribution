@@ -33,6 +33,8 @@ import scala.scalajs.js.annotation._
   * @property {boolean} [primitive[].indexed] True to interpret the primitive as indexed, thereby using the currently set index buffer and false otherwise.
   * {@link pc.GraphicsDevice#draw}. The primitive is ordered based on render style like the indexBuffer property.
   * @property {pc.BoundingBox} aabb The axis-aligned bounding box for the object space vertices of this mesh.
+  * @property {pc.Skin} [skin] The skin data (if any) that drives skinned mesh animations for this mesh.
+  * @property {pc.Morph} [morph] The morph data (if any) that drives morph target animations for this mesh.
   */
 @JSImport("playcanvas", "Mesh")
 @js.native

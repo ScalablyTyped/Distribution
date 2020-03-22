@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "finch"
-version := "0.5.13-dt-20190322Z-a0a09c"
+version := "0.5.13-dt-20200225Z-a0a09c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

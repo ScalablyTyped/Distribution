@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetConfigurationRequest extends js.Object {
   /**
-    * The application to get.
+    * The application to get. Specify either the application name or the application ID.
     */
   var Application: StringWithLengthBetween1And64 = js.native
   /**
@@ -19,11 +19,11 @@ trait GetConfigurationRequest extends js.Object {
     */
   var ClientId: StringWithLengthBetween1And64 = js.native
   /**
-    * The configuration to get.
+    * The configuration to get. Specify either the configuration name or the configuration ID.
     */
   var Configuration: StringWithLengthBetween1And64 = js.native
   /**
-    * The environment to get.
+    * The environment to get. Specify either the environment name or the environment ID.
     */
   var Environment: StringWithLengthBetween1And64 = js.native
 }

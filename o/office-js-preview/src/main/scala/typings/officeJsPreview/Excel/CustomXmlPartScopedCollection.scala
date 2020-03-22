@@ -27,14 +27,12 @@ class CustomXmlPartScopedCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[CustomXmlPart] = js.native
   /**
-    *
     * Gets the number of CustomXML parts in this collection.
     *
     * [Api set: ExcelApi 1.5]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a custom XML part based on its ID.
     *
     * [Api set: ExcelApi 1.5]
@@ -43,7 +41,6 @@ class CustomXmlPartScopedCollection () extends ClientObject {
     */
   def getItem(id: String): CustomXmlPart = js.native
   /**
-    *
     * Gets a custom XML part based on its ID.
     If the CustomXmlPart does not exist, the return object's isNull property will be true.
     *
@@ -53,7 +50,6 @@ class CustomXmlPartScopedCollection () extends ClientObject {
     */
   def getItemOrNullObject(id: String): CustomXmlPart = js.native
   /**
-    *
     * If the collection contains exactly one item, this method returns it.
     Otherwise, this method produces an error.
     *
@@ -61,7 +57,6 @@ class CustomXmlPartScopedCollection () extends ClientObject {
     */
   def getOnlyItem(): CustomXmlPart = js.native
   /**
-    *
     * If the collection contains exactly one item, this method returns it.
     Otherwise, this method returns Null.
     *

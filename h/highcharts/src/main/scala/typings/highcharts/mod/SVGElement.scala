@@ -124,10 +124,22 @@ class SVGElement () extends js.Object {
   def attr(hash: String, `val`: String): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Double): SVGElement = js.native
+  def attr(hash: String, `val`: Double, complete: js.Function): SVGElement = js.native
+  def attr(hash: String, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: SVGAttributes): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String, complete: js.Function): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double, complete: js.Function): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
   /**
     * Apply a clipping rectangle to this element.
     *

@@ -1,21 +1,22 @@
 package typings.evernote
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.evernote.mod.Types.Guid
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonNotebookCounts extends js.Object {
-  var notebookCounts: js.UndefOr[StringDictionary[Double]] = js.undefined
-  var tagCounts: js.UndefOr[StringDictionary[Double]] = js.undefined
+  var notebookCounts: js.UndefOr[Map[Guid, Double]] = js.undefined
+  var tagCounts: js.UndefOr[Map[Guid, Double]] = js.undefined
   var trashCount: js.UndefOr[Double] = js.undefined
 }
 
 object AnonNotebookCounts {
   @scala.inline
   def apply(
-    notebookCounts: StringDictionary[Double] = null,
-    tagCounts: StringDictionary[Double] = null,
+    notebookCounts: Map[Guid, Double] = null,
+    tagCounts: Map[Guid, Double] = null,
     trashCount: Int | Double = null
   ): AnonNotebookCounts = {
     val __obj = js.Dynamic.literal()

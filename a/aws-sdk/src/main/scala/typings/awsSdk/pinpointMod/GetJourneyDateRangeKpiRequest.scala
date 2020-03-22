@@ -11,7 +11,7 @@ trait GetJourneyDateRangeKpiRequest extends js.Object {
     */
   var ApplicationId: string = js.native
   /**
-    * The last date and time to retrieve data for, as part of an inclusive date range that filters the query results. This value should be in extended ISO 8601 format, for example: 2019-07-19T00:00:00Z for July 19, 2019 and 2019-07-19T20:00:00Z for 8:00 PM July 19, 2019.
+    * The last date and time to retrieve data for, as part of an inclusive date range that filters the query results. This value should be in extended ISO 8601 format and use Coordinated Universal Time (UTC), for example: 2019-07-26T20:00:00Z for 8:00 PM UTC July 26, 2019.
     */
   var EndTime: js.UndefOr[timestampIso8601] = js.native
   /**
@@ -31,7 +31,7 @@ trait GetJourneyDateRangeKpiRequest extends js.Object {
     */
   var PageSize: js.UndefOr[string] = js.native
   /**
-    * The first date and time to retrieve data for, as part of an inclusive date range that filters the query results. This value should be in extended ISO 8601 format, for example: 2019-07-15T00:00:00Z for July 15, 2019 and 2019-07-15T16:00:00Z for 4:00 PM July 15, 2019.
+    * The first date and time to retrieve data for, as part of an inclusive date range that filters the query results. This value should be in extended ISO 8601 format and use Coordinated Universal Time (UTC), for example: 2019-07-19T20:00:00Z for 8:00 PM UTC July 19, 2019. This value should also be fewer than 90 days from the current day.
     */
   var StartTime: js.UndefOr[timestampIso8601] = js.native
 }

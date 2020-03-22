@@ -37,6 +37,10 @@ trait UserImportRecord extends js.Object {
     */
   var metadata: UserMetadata
   /**
+    * The multi-factor related properties for the imported user if available.
+    */
+  var multiFactor: js.UndefOr[MultiFactorSettings] = js.undefined
+  /**
     * The buffer of bytes representing the user's hashed password.
     * When a user is to be imported with a password hash,
     * {@link admin.auth.UserImportOptions `UserImportOptions`} are required to be
@@ -83,6 +87,7 @@ object UserImportRecord {
     customClaims: js.Object = null,
     displayName: String = null,
     email: String = null,
+    multiFactor: MultiFactorSettings = null,
     passwordHash: Buffer = null,
     passwordSalt: Buffer = null,
     phoneNumber: String = null,
@@ -94,6 +99,7 @@ object UserImportRecord {
     if (customClaims != null) __obj.updateDynamic("customClaims")(customClaims.asInstanceOf[js.Any])
     if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
+    if (multiFactor != null) __obj.updateDynamic("multiFactor")(multiFactor.asInstanceOf[js.Any])
     if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash.asInstanceOf[js.Any])
     if (passwordSalt != null) __obj.updateDynamic("passwordSalt")(passwordSalt.asInstanceOf[js.Any])
     if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])

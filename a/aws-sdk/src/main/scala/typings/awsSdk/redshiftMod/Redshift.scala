@@ -1020,6 +1020,19 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SnapshotSchedule, Unit]
   ): Request[SnapshotSchedule, AWSError] = js.native
   /**
+    * Pauses a cluster.
+    */
+  def pauseCluster(): Request[PauseClusterResult, AWSError] = js.native
+  def pauseCluster(callback: js.Function2[/* err */ AWSError, /* data */ PauseClusterResult, Unit]): Request[PauseClusterResult, AWSError] = js.native
+  /**
+    * Pauses a cluster.
+    */
+  def pauseCluster(params: PauseClusterMessage): Request[PauseClusterResult, AWSError] = js.native
+  def pauseCluster(
+    params: PauseClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ PauseClusterResult, Unit]
+  ): Request[PauseClusterResult, AWSError] = js.native
+  /**
     * Allows you to purchase reserved nodes. Amazon Redshift offers a predefined set of reserved node offerings. You can purchase one or more of the offerings. You can call the DescribeReservedNodeOfferings API to obtain the available reserved node offerings. You can call this API by providing a specific reserved node offering and the number of nodes you want to reserve.   For more information about reserved node offerings, go to Purchasing Reserved Nodes in the Amazon Redshift Cluster Management Guide.
     */
   def purchaseReservedNodeOffering(): Request[PurchaseReservedNodeOfferingResult, AWSError] = js.native
@@ -1097,6 +1110,19 @@ trait Redshift extends Service {
     params: RestoreTableFromClusterSnapshotMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RestoreTableFromClusterSnapshotResult, Unit]
   ): Request[RestoreTableFromClusterSnapshotResult, AWSError] = js.native
+  /**
+    * Resumes a paused cluster.
+    */
+  def resumeCluster(): Request[ResumeClusterResult, AWSError] = js.native
+  def resumeCluster(callback: js.Function2[/* err */ AWSError, /* data */ ResumeClusterResult, Unit]): Request[ResumeClusterResult, AWSError] = js.native
+  /**
+    * Resumes a paused cluster.
+    */
+  def resumeCluster(params: ResumeClusterMessage): Request[ResumeClusterResult, AWSError] = js.native
+  def resumeCluster(
+    params: ResumeClusterMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResumeClusterResult, Unit]
+  ): Request[ResumeClusterResult, AWSError] = js.native
   /**
     * Revokes an ingress rule in an Amazon Redshift security group for a previously authorized IP range or Amazon EC2 security group. To add an ingress rule, see AuthorizeClusterSecurityGroupIngress. For information about managing security groups, go to Amazon Redshift Cluster Security Groups in the Amazon Redshift Cluster Management Guide. 
     */

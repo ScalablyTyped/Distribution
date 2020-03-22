@@ -53,21 +53,21 @@ trait AnonAddOrUpdateMembershipInOrg extends js.Object {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/:org_id/team/:team_id/memberships/:username`.
     */
   @JSName("addOrUpdateMembershipInOrg")
-  var addOrUpdateMembershipInOrg_Original: Anon450 = js.native
+  var addOrUpdateMembershipInOrg_Original: Anon466 = js.native
   /**
     * Adds an organization project to a team. To add a project to a team or update the team's permission on a project, the authenticated user must have `admin` permissions for the project. The project and team must be part of the same organization.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/:org_id/team/:team_id/projects/:project_id`.
     */
   @JSName("addOrUpdateProjectInOrg")
-  var addOrUpdateProjectInOrg_Original: Anon451 = js.native
+  var addOrUpdateProjectInOrg_Original: Anon467 = js.native
   /**
     * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization. Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PUT /organizations/:org_id/team/:team_id/repos/:owner/:repo`.
     */
   @JSName("addOrUpdateRepoInOrg")
-  var addOrUpdateRepoInOrg_Original: Anon452 = js.native
+  var addOrUpdateRepoInOrg_Original: Anon468 = js.native
   /**
     * Checks whether a team has `admin`, `push`, or `pull` permission for a repository. Repositories inherited through a parent team will also be checked.
     *
@@ -76,7 +76,7 @@ trait AnonAddOrUpdateMembershipInOrg extends js.Object {
     * You can also get information about the specified repository, including what permissions the team grants on it, by passing the following custom [media type](https://developer.github.com/v3/media/) via the `Accept` header:
     */
   @JSName("checkManagesRepoInOrg")
-  var checkManagesRepoInOrg_Original: Anon453 = js.native
+  var checkManagesRepoInOrg_Original: Anon469 = js.native
   /**
     * Creates a new comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
@@ -85,7 +85,7 @@ trait AnonAddOrUpdateMembershipInOrg extends js.Object {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/:org_id/team/:team_id/discussions/:discussion_number/comments`.
     */
   @JSName("createDiscussionCommentInOrg")
-  var createDiscussionCommentInOrg_Original: Anon455 = js.native
+  var createDiscussionCommentInOrg_Original: Anon471 = js.native
   /**
     * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
@@ -94,28 +94,28 @@ trait AnonAddOrUpdateMembershipInOrg extends js.Object {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `POST /organizations/:org_id/team/:team_id/discussions`.
     */
   @JSName("createDiscussionInOrg")
-  var createDiscussionInOrg_Original: Anon456 = js.native
+  var createDiscussionInOrg_Original: Anon472 = js.native
   /**
     * To create a team, the authenticated user must be a member or owner of `:org`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
     *
     * When you create a new team, you automatically become a team maintainer without explicitly adding yourself to the optional array of `maintainers`. For more information, see "[About teams](https://help.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-teams)" in the GitHub Help documentation.
     */
   @JSName("create")
-  var create_Original: Anon454 = js.native
+  var create_Original: Anon470 = js.native
   /**
     * Deletes a comment on a team discussion. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/:org_id/team/:team_id/discussions/:discussion_number/comments/:comment_number`.
     */
   @JSName("deleteDiscussionCommentInOrg")
-  var deleteDiscussionCommentInOrg_Original: Anon457 = js.native
+  var deleteDiscussionCommentInOrg_Original: Anon473 = js.native
   /**
     * Delete a discussion from a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/:org_id/team/:team_id/discussions/:discussion_number`.
     */
   @JSName("deleteDiscussionInOrg")
-  var deleteDiscussionInOrg_Original: Anon458 = js.native
+  var deleteDiscussionInOrg_Original: Anon474 = js.native
   /**
     * To delete a team, the authenticated user must be an organization owner or team maintainer.
     *
@@ -124,28 +124,28 @@ trait AnonAddOrUpdateMembershipInOrg extends js.Object {
     * If you are an organization owner, deleting a parent team will delete all of its child teams as well.
     */
   @JSName("deleteInOrg")
-  var deleteInOrg_Original: Anon459 = js.native
+  var deleteInOrg_Original: Anon475 = js.native
   /**
     * Gets a team using the team's `slug`. GitHub generates the `slug` from the team `name`.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id`.
     */
   @JSName("getByName")
-  var getByName_Original: Anon460 = js.native
+  var getByName_Original: Anon476 = js.native
   /**
     * Get a specific comment on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/discussions/:discussion_number/comments/:comment_number`.
     */
   @JSName("getDiscussionCommentInOrg")
-  var getDiscussionCommentInOrg_Original: Anon461 = js.native
+  var getDiscussionCommentInOrg_Original: Anon477 = js.native
   /**
     * Get a specific discussion on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/discussions/:discussion_number`.
     */
   @JSName("getDiscussionInOrg")
-  var getDiscussionInOrg_Original: Anon462 = js.native
+  var getDiscussionInOrg_Original: Anon478 = js.native
   /**
     * Team members will include the members of child teams.
     *
@@ -156,66 +156,66 @@ trait AnonAddOrUpdateMembershipInOrg extends js.Object {
     * **Note:** The `role` for organization owners returns as `maintainer`. For more information about `maintainer` roles, see [Create team](https://developer.github.com/v3/teams#create-team).
     */
   @JSName("getMembershipInOrg")
-  var getMembershipInOrg_Original: Anon463 = js.native
+  var getMembershipInOrg_Original: Anon479 = js.native
   /**
     * Lists the child teams of the team requested by `:team_slug`.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/teams`.
     */
   @JSName("listChildInOrg")
-  var listChildInOrg_Original: Anon465 = js.native
+  var listChildInOrg_Original: Anon481 = js.native
   /**
     * List all comments on a team discussion. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/discussions/:discussion_number/comments`.
     */
   @JSName("listDiscussionCommentsInOrg")
-  var listDiscussionCommentsInOrg_Original: Anon466 = js.native
+  var listDiscussionCommentsInOrg_Original: Anon482 = js.native
   /**
     * List all discussions on a team's page. OAuth access tokens require the `read:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/discussions`.
     */
   @JSName("listDiscussionsInOrg")
-  var listDiscussionsInOrg_Original: Anon467 = js.native
+  var listDiscussionsInOrg_Original: Anon483 = js.native
   /**
     * List all of the teams across all of the organizations to which the authenticated user belongs. This method requires `user`, `repo`, or `read:org` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/) when authenticating via [OAuth](https://developer.github.com/apps/building-oauth-apps/).
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: Anon468 = js.native
+  var listForAuthenticatedUser_Original: Anon484 = js.native
   /**
     * Team members will include the members of child teams.
     *
     * To list members in a team, the team must be visible to the authenticated user.
     */
   @JSName("listMembersInOrg")
-  var listMembersInOrg_Original: Anon469 = js.native
+  var listMembersInOrg_Original: Anon485 = js.native
   /**
     * The return hash contains a `role` field which refers to the Organization Invitation role and will be one of the following values: `direct_member`, `admin`, `billing_manager`, `hiring_manager`, or `reinstate`. If the invitee is not a GitHub member, the `login` field in the return hash will be `null`.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/invitations`.
     */
   @JSName("listPendingInvitationsInOrg")
-  var listPendingInvitationsInOrg_Original: Anon470 = js.native
+  var listPendingInvitationsInOrg_Original: Anon486 = js.native
   /**
     * Lists the organization projects for a team.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/projects`.
     */
   @JSName("listProjectsInOrg")
-  var listProjectsInOrg_Original: Anon471 = js.native
+  var listProjectsInOrg_Original: Anon487 = js.native
   /**
     * Lists a team's repositories visible to the authenticated user.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/repos`.
     */
   @JSName("listReposInOrg")
-  var listReposInOrg_Original: Anon472 = js.native
+  var listReposInOrg_Original: Anon488 = js.native
   /**
     * Lists all teams in an organization that are visible to the authenticated user.
     */
   @JSName("list")
-  var list_Original: Anon464 = js.native
+  var list_Original: Anon480 = js.native
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
@@ -226,49 +226,49 @@ trait AnonAddOrUpdateMembershipInOrg extends js.Object {
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/:org_id/team/:team_id/memberships/:username`.
     */
   @JSName("removeMembershipInOrg")
-  var removeMembershipInOrg_Original: Anon473 = js.native
+  var removeMembershipInOrg_Original: Anon489 = js.native
   /**
     * Removes an organization project from a team. An organization owner or a team maintainer can remove any project from the team. To remove a project from a team as an organization member, the authenticated user must have `read` access to both the team and project, or `admin` access to the team or project. This endpoint removes the project from the team, but does not delete the project.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/:org_id/team/:team_id/projects/:project_id`.
     */
   @JSName("removeProjectInOrg")
-  var removeProjectInOrg_Original: Anon474 = js.native
+  var removeProjectInOrg_Original: Anon490 = js.native
   /**
     * If the authenticated user is an organization owner or a team maintainer, they can remove any repositories from the team. To remove a repository from a team as an organization member, the authenticated user must have admin access to the repository and must be able to see the team. This does not delete the repository, it just removes it from the team.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `DELETE /organizations/:org_id/team/:team_id/repos/:owner/:repo`.
     */
   @JSName("removeRepoInOrg")
-  var removeRepoInOrg_Original: Anon475 = js.native
+  var removeRepoInOrg_Original: Anon491 = js.native
   /**
     * Checks whether a team has `read`, `write`, or `admin` permissions for an organization project. The response includes projects inherited from a parent team.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `GET /organizations/:org_id/team/:team_id/projects/:project_id`.
     */
   @JSName("reviewProjectInOrg")
-  var reviewProjectInOrg_Original: Anon476 = js.native
+  var reviewProjectInOrg_Original: Anon492 = js.native
   /**
     * Edits the body text of a discussion comment. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/:org_id/team/:team_id/discussions/:discussion_number/comments/:comment_number`.
     */
   @JSName("updateDiscussionCommentInOrg")
-  var updateDiscussionCommentInOrg_Original: Anon477 = js.native
+  var updateDiscussionCommentInOrg_Original: Anon493 = js.native
   /**
     * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/:org_id/team/:team_id/discussions/:discussion_number`.
     */
   @JSName("updateDiscussionInOrg")
-  var updateDiscussionInOrg_Original: Anon478 = js.native
+  var updateDiscussionInOrg_Original: Anon494 = js.native
   /**
     * To edit a team, the authenticated user must either be an organization owner or a team maintainer.
     *
     * **Note:** You can also specify a team by `org_id` and `team_id` using the route `PATCH /organizations/:org_id/team/:team_id`.
     */
   @JSName("updateInOrg")
-  var updateInOrg_Original: Anon479 = js.native
+  var updateInOrg_Original: Anon495 = js.native
   /**
     * Team synchronization is available for organizations using GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *

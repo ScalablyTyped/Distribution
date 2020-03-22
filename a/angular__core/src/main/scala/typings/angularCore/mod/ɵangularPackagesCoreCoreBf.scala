@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵangularPackagesCoreCoreBf extends js.Object {
   def apply(
-    lView: ɵangularPackagesCoreCoreBo,
+    lView: ɵangularPackagesCoreCoreBp,
     bindingRoot: Double,
     slotOffset: Double,
     pureFn: js.Function1[/* v */ js.Any, _],
     exp: js.Any
   ): js.Any = js.native
   def apply(
-    lView: ɵangularPackagesCoreCoreBo,
+    lView: ɵangularPackagesCoreCoreBp,
     bindingRoot: Double,
     slotOffset: Double,
     pureFn: js.Function1[/* v */ js.Any, _],

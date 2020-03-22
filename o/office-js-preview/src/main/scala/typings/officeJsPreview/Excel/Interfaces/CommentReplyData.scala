@@ -1,6 +1,9 @@
 package typings.officeJsPreview.Excel.Interfaces
 
 import typings.officeJsPreview.Excel.CommentMention
+import typings.officeJsPreview.Excel.ContentType
+import typings.officeJsPreview.officeJsPreviewStrings.Mention
+import typings.officeJsPreview.officeJsPreviewStrings.Plain
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,6 +32,14 @@ trait CommentReplyData extends js.Object {
     * [Api set: ExcelApi 1.10]
     */
   var content: js.UndefOr[String] = js.undefined
+  /**
+    *
+    * Gets the content type of the comment.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var contentType: js.UndefOr[ContentType | Plain | Mention] = js.undefined
   /**
     *
     * Gets the creation time of the comment reply.
@@ -73,6 +84,7 @@ object CommentReplyData {
     authorEmail: String = null,
     authorName: String = null,
     content: String = null,
+    contentType: ContentType | Plain | Mention = null,
     creationDate: Date = null,
     id: String = null,
     mentions: js.Array[CommentMention] = null,
@@ -83,6 +95,7 @@ object CommentReplyData {
     if (authorEmail != null) __obj.updateDynamic("authorEmail")(authorEmail.asInstanceOf[js.Any])
     if (authorName != null) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
     if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])

@@ -70,7 +70,7 @@ trait IDetailsListProps
   var columnReorderOptions: js.UndefOr[IColumnReorderOptions] = js.undefined
   /** Given column defitions. If none are provided, default columns will be created based on the item's properties. */
   var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
-  /** Boolean value to indicate if the component should render in compact mode. Set to false by default */
+  /** Whether the component should render in compact mode. Set to false by default */
   var compact: js.UndefOr[Boolean] = js.undefined
   /** Controls how the list contrains overflow. */
   var constrainMode: js.UndefOr[ConstrainMode] = js.undefined
@@ -104,15 +104,15 @@ trait IDetailsListProps
     */
   var getGroupHeight: js.UndefOr[js.Function2[/* group */ IGroup, /* groupIndex */ Double, Double]] = js.undefined
   /**
-    * Optional callback to get the item key, to be used in the selection and on render.
+    * Callback to get the item key, to be used in the selection and on render.
     * Must be provided if sorting or filtering is enabled.
     */
   var getKey: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]] = js.undefined
-  /** Optional callback to get the aria-describedby IDs (space separated strings) of the elements that describe the item. */
+  /** Callback to get the aria-describedby IDs (space separated strings) of the elements that describe the item. */
   var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
-  /** Optional callback to get the aria-label string for a given item. */
+  /** Callback to get the aria-label string for a given item. */
   var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
-  /** Optional override properties to render groups. The definition for IGroupRenderProps can be found under the GroupedList component. */
+  /** Optional override properties to render groups. */
   var groupProps: js.UndefOr[IDetailsGroupRenderProps] = js.undefined
   /** Optional grouping instructions. The definition for IGroup can be found under the GroupedList component. */
   var groups: js.UndefOr[js.Array[IGroup]] = js.undefined
@@ -140,7 +140,10 @@ trait IDetailsListProps
     * @defaultvalue 5
     */
   var minimumPixelsForDrag: js.UndefOr[Double] = js.undefined
-  /** Callback for when an item in the list becomes active by clicking anywhere inside the row or navigating to it with keyboard. */
+  /**
+    * Callback for when an item in the list becomes active by clicking anywhere inside the row or navigating to it
+    * with the keyboard.
+    */
   var onActiveItemChanged: js.UndefOr[
     js.Function3[
       /* item */ js.UndefOr[js.Any], 
@@ -210,7 +213,8 @@ trait IDetailsListProps
     */
   var onRenderDetailsHeader: js.UndefOr[IRenderFunction[IDetailsHeaderProps]] = js.undefined
   /**
-    * If provided, will be the "default" item column renderer method. This affects cells within the rows; not the rows themselves.
+    * If provided, will be the "default" item column renderer method.
+    * This affects cells within the rows, not the rows themselves.
     * If a column definition provides its own onRender method, that will be used instead of this.
     */
   var onRenderItemColumn: js.UndefOr[
@@ -233,18 +237,24 @@ trait IDetailsListProps
     *  If provided, will allow the caller to override the default row rendering.
     */
   var onRenderRow: js.UndefOr[IRenderFunction[IDetailsRowProps]] = js.undefined
-  /** Callback for when a given row has been mounted. Useful for identifying when a row has been rendered on the page. */
+  /**
+    * Callback for when a given row has been mounted. Useful for identifying when a row has been rendered on the page.
+    */
   var onRowDidMount: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], Unit]
   ] = js.undefined
-  /** Callback for when a given row has been unmounted. Useful for identifying when a row has been removed from the page. */
+  /**
+    * Callback for when a given row has been unmounted.
+    * Useful for identifying when a row has been removed from the page.
+    */
   var onRowWillUnmount: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], Unit]
   ] = js.undefined
   /**
     * Optional callback to determine whether the list should be rendered in full, or virtualized.
     * Virtualization will add and remove pages of items as the user scrolls them into the visible range.
-    * This benefits larger list scenarios by reducing the DOM on the screen, but can negatively affect performance for smaller lists.
+    * This benefits larger list scenarios by reducing the DOM on the screen, but can negatively affect performance
+    * for smaller lists.
     * The default implementation will virtualize when this callback is not provided.
     */
   var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[_], Boolean]] = js.undefined
@@ -255,8 +265,8 @@ trait IDetailsListProps
   /** Controls how/if the details list manages selection. Options include none, single, multiple */
   var selectionMode: js.UndefOr[SelectionMode] = js.undefined
   /**
-    * By default, selection is cleared when clicking on an empty (non-focusable) section of the screen. Setting this value to true
-    * overrides that behavior and maintains selection.
+    * By default, selection is cleared when clicking on an empty (non-focusable) section of the screen.
+    * Setting this value to true overrides that behavior and maintains selection.
     * @defaultvalue false
     **/
   var selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.undefined
@@ -283,8 +293,7 @@ trait IDetailsListProps
     */
   var useFastIcons: js.UndefOr[Boolean] = js.undefined
   /**
-    * Boolean value to enable render page caching. This is an experimental performance optimization
-    * that is off by default.
+    * Whether to enable render page caching. This is an experimental performance optimization that is off by default.
     * @defaultvalue false
     */
   var usePageCache: js.UndefOr[Boolean] = js.undefined

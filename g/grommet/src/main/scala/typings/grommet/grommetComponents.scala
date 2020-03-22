@@ -30,6 +30,7 @@ import typings.grommet.grommetStrings.name
 import typings.grommet.grommetStrings.onSelect
 import typings.grommet.grommetStrings.placeholder
 import typings.grommet.grommetStrings.plain
+import typings.grommet.grommetStrings.reverse
 import typings.grommet.grommetStrings.size
 import typings.grommet.grommetStrings.title
 import typings.grommet.grommetStrings.value
@@ -326,7 +327,7 @@ object grommetComponents extends grommetProps {
   def MaskedInput: ComponentType[
     MaskedInputProps with (typings.std.Omit[
       DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement], 
-      id | mask | name | plain | size | value
+      icon | id | mask | name | plain | reverse | size | value
     ])
   ] = js.constructorOf[typings.grommet.mod.MaskedInput].asInstanceOf[typings.react.mod.ComponentType[
   typings.grommet.maskedInputMod.MaskedInputProps with (typings.std.Omit[
@@ -334,7 +335,7 @@ object grommetComponents extends grommetProps {
       typings.react.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
       typings.std.HTMLInputElement
     ], 
-    typings.grommet.grommetStrings.id | typings.grommet.grommetStrings.mask | typings.grommet.grommetStrings.name | typings.grommet.grommetStrings.plain | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.value
+    typings.grommet.grommetStrings.icon | typings.grommet.grommetStrings.id | typings.grommet.grommetStrings.mask | typings.grommet.grommetStrings.name | typings.grommet.grommetStrings.plain | typings.grommet.grommetStrings.reverse | typings.grommet.grommetStrings.size | typings.grommet.grommetStrings.value
   ])]]
   @scala.inline
   def Menu: ComponentType[MenuProps with (Omit[ButtonType, icon])] = typings.grommet.mod.Menu.asInstanceOf[typings.react.mod.ComponentType[

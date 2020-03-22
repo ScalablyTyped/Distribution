@@ -29,7 +29,7 @@ trait RouteContext[R, C /* <: RouterContext */] extends ResolveContext {
   /**
     * Middleware style function which can continue resolving.
     */
-  def next(): R = js.native
-  def next(resume: Boolean): R = js.native
+  def next(): RouteResultSync[R] = js.native
+  def next(resume: Boolean): RouteResultSync[R] = js.native
 }
 

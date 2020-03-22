@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ K in csstype.csstype.Pseudos ]:? @styled-system/css.@styled-system/css.SystemStyleObject} */
-trait CSSPseudoSelectorProps extends SystemStyleObject {
+trait CSSPseudoSelectorProps extends _SystemStyleObject {
   @JSName(":-khtml-any-link")
   var `Colon-khtml-any-link`: js.UndefOr[SystemStyleObject] = js.undefined
   @JSName(":-moz-any-link")

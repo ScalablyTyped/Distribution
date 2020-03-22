@@ -145,7 +145,7 @@ trait PartialStepIconProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepIconClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapStepIc] = js.native
   var color: js.UndefOr[String] = js.native
   var completed: js.UndefOr[Boolean] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -329,7 +329,7 @@ object PartialStepIconProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepIconClasskey = null,
+    classes: PartialClassNameMapStepIc = null,
     color: String = null,
     completed: js.UndefOr[Boolean] = js.undefined,
     contentEditable: Booleanish | inherit = null,

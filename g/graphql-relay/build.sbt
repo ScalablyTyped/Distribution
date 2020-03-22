@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-relay"
-version := "0.4-dt-20190826Z-2ceb45"
+version := "0.4-dt-20200225Z-2ceb45"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

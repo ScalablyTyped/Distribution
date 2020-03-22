@@ -18,7 +18,6 @@ sealed trait AggregationFunction extends js.Object
 @js.native
 object AggregationFunction extends js.Object {
   /**
-    *
     * Excel will automatically select the aggregation based on the data items.
     *
     */
@@ -26,7 +25,6 @@ object AggregationFunction extends js.Object {
   sealed trait automatic extends AggregationFunction
   
   /**
-    *
     * Aggregate using the average of the data, equivalent to the AVERAGE function.
     *
     */
@@ -34,7 +32,6 @@ object AggregationFunction extends js.Object {
   sealed trait average extends AggregationFunction
   
   /**
-    *
     * Aggregate using the count of items in the data, equivalent to the COUNTA function.
     *
     */
@@ -42,7 +39,6 @@ object AggregationFunction extends js.Object {
   sealed trait count extends AggregationFunction
   
   /**
-    *
     * Aggregate using the count of numbers in the data, equivalent to the COUNT function.
     *
     */
@@ -50,7 +46,6 @@ object AggregationFunction extends js.Object {
   sealed trait countNumbers extends AggregationFunction
   
   /**
-    *
     * Aggregate using the maximum value of the data, equivalent to the MAX function.
     *
     */
@@ -58,7 +53,6 @@ object AggregationFunction extends js.Object {
   sealed trait max extends AggregationFunction
   
   /**
-    *
     * Aggregate using the minimum value of the data, equivalent to the MIN function.
     *
     */
@@ -66,7 +60,6 @@ object AggregationFunction extends js.Object {
   sealed trait min extends AggregationFunction
   
   /**
-    *
     * Aggregate using the product of the data, equivalent to the PRODUCT function.
     *
     */
@@ -74,7 +67,6 @@ object AggregationFunction extends js.Object {
   sealed trait product extends AggregationFunction
   
   /**
-    *
     * Aggregate using the standard deviation of the data, equivalent to the STDEV function.
     *
     */
@@ -82,7 +74,6 @@ object AggregationFunction extends js.Object {
   sealed trait standardDeviation extends AggregationFunction
   
   /**
-    *
     * Aggregate using the standard deviation of the data, equivalent to the STDEVP function.
     *
     */
@@ -90,7 +81,6 @@ object AggregationFunction extends js.Object {
   sealed trait standardDeviationP extends AggregationFunction
   
   /**
-    *
     * Aggregate using the sum of the data, equivalent to the SUM function.
     *
     */
@@ -98,7 +88,6 @@ object AggregationFunction extends js.Object {
   sealed trait sum extends AggregationFunction
   
   /**
-    *
     * Aggregation function is unknown or unsupported.
     *
     */
@@ -106,7 +95,6 @@ object AggregationFunction extends js.Object {
   sealed trait unknown extends AggregationFunction
   
   /**
-    *
     * Aggregate using the variance of the data, equivalent to the VAR function.
     *
     */
@@ -114,7 +102,6 @@ object AggregationFunction extends js.Object {
   sealed trait variance extends AggregationFunction
   
   /**
-    *
     * Aggregate using the variance of the data, equivalent to the VARP function.
     *
     */

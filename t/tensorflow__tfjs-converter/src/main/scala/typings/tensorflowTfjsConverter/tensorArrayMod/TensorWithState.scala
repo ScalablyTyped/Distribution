@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsConverter.tensorArrayMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TensorWithState extends js.Object {
   var cleared: js.UndefOr[Boolean] = js.undefined
   var read: js.UndefOr[Boolean] = js.undefined
-  var tensor: js.UndefOr[Tensor_[Rank]] = js.undefined
+  var tensor: js.UndefOr[Tensor[Rank]] = js.undefined
   var written: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object TensorWithState {
   def apply(
     cleared: js.UndefOr[Boolean] = js.undefined,
     read: js.UndefOr[Boolean] = js.undefined,
-    tensor: Tensor_[Rank] = null,
+    tensor: Tensor[Rank] = null,
     written: js.UndefOr[Boolean] = js.undefined
   ): TensorWithState = {
     val __obj = js.Dynamic.literal()

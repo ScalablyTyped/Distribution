@@ -146,7 +146,7 @@ trait PartialTableRowProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTableRowClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTableR] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[TableRowBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -329,7 +329,7 @@ object PartialTableRowProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTableRowClassKey = null,
+    classes: PartialClassNameMapTableR = null,
     color: String = null,
     component: ReactType[TableRowBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

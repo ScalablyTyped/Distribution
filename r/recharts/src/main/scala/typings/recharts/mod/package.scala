@@ -45,6 +45,7 @@ package object mod {
   ]
   type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
   type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, typings.react.mod.ReactNode]
+  type LabelListProps = typings.recharts.AnonAngle with (typings.recharts.AnonDataKey | typings.recharts.AnonValueAccessor)
   type LegendValueFormatter = js.Function3[
     /* value */ js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any

@@ -31,6 +31,9 @@ class RolePolicy protected () extends CustomResource {
     * prefix. Conflicts with `name`.
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
+  /**
+    * The policy document attached to the role.
+    */
   val policy: Output_[String] = js.native
   /**
     * The IAM role to attach to the policy.

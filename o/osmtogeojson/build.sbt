@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "osmtogeojson"
-version := "2.2.5-dt-20190322Z-01ad07"
+version := "2.2.5-dt-20200226Z-01ad07"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

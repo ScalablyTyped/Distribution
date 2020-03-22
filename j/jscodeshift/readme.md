@@ -1,7 +1,7 @@
 
 # Scala.js typings for jscodeshift
 
-Typings are for version 0.6
+Typings are for version 0.7
 
 ## Library description:
 A toolkit for JavaScript codemods

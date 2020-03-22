@@ -85,6 +85,31 @@ trait MacConfiguration extends PlatformSpecificBuildOptions {
     */
   val helperBundleId: js.UndefOr[String | Null] = js.undefined
   /**
+    * The bundle identifier to use in the EH helper's plist.
+    * @default ${appBundleIdentifier}.helper.EH
+    */
+  val helperEHBundleId: js.UndefOr[String | Null] = js.undefined
+  /**
+    * The bundle identifier to use in the GPU helper's plist.
+    * @default ${appBundleIdentifier}.helper.GPU
+    */
+  val helperGPUBundleId: js.UndefOr[String | Null] = js.undefined
+  /**
+    * The bundle identifier to use in the NP helper's plist.
+    * @default ${appBundleIdentifier}.helper.NP
+    */
+  val helperNPBundleId: js.UndefOr[String | Null] = js.undefined
+  /**
+    * The bundle identifier to use in the Plugin helper's plist.
+    * @default ${appBundleIdentifier}.helper.Plugin
+    */
+  val helperPluginBundleId: js.UndefOr[String | Null] = js.undefined
+  /**
+    * The bundle identifier to use in the Renderer helper's plist.
+    * @default ${appBundleIdentifier}.helper.Renderer
+    */
+  val helperRendererBundleId: js.UndefOr[String | Null] = js.undefined
+  /**
     * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
     * MAS installer identity is specified in the [mas](/configuration/mas).
     */
@@ -148,6 +173,11 @@ object MacConfiguration {
     generateUpdatesFilesForAllChannels: js.UndefOr[Boolean] = js.undefined,
     hardenedRuntime: js.UndefOr[Boolean] = js.undefined,
     helperBundleId: String = null,
+    helperEHBundleId: String = null,
+    helperGPUBundleId: String = null,
+    helperNPBundleId: String = null,
+    helperPluginBundleId: String = null,
+    helperRendererBundleId: String = null,
     icon: String = null,
     identity: String = null,
     minimumSystemVersion: String = null,
@@ -190,6 +220,11 @@ object MacConfiguration {
     if (!js.isUndefined(generateUpdatesFilesForAllChannels)) __obj.updateDynamic("generateUpdatesFilesForAllChannels")(generateUpdatesFilesForAllChannels.asInstanceOf[js.Any])
     if (!js.isUndefined(hardenedRuntime)) __obj.updateDynamic("hardenedRuntime")(hardenedRuntime.asInstanceOf[js.Any])
     if (helperBundleId != null) __obj.updateDynamic("helperBundleId")(helperBundleId.asInstanceOf[js.Any])
+    if (helperEHBundleId != null) __obj.updateDynamic("helperEHBundleId")(helperEHBundleId.asInstanceOf[js.Any])
+    if (helperGPUBundleId != null) __obj.updateDynamic("helperGPUBundleId")(helperGPUBundleId.asInstanceOf[js.Any])
+    if (helperNPBundleId != null) __obj.updateDynamic("helperNPBundleId")(helperNPBundleId.asInstanceOf[js.Any])
+    if (helperPluginBundleId != null) __obj.updateDynamic("helperPluginBundleId")(helperPluginBundleId.asInstanceOf[js.Any])
+    if (helperRendererBundleId != null) __obj.updateDynamic("helperRendererBundleId")(helperRendererBundleId.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
     if (minimumSystemVersion != null) __obj.updateDynamic("minimumSystemVersion")(minimumSystemVersion.asInstanceOf[js.Any])

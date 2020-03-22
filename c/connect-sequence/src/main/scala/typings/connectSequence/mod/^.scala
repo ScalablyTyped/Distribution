@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("connect-sequence", JSImport.Namespace)
 @js.native
 class ^ protected () extends ConnectSequence {
-  def this(req: Request_[ParamsDictionary], res: Response_, next: NextFunction) = this()
+  def this(req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction) = this()
   /* CompleteClass */
   override def append(middleware: RequestHandler[ParamsDictionary]*): this.type = js.native
   /* CompleteClass */

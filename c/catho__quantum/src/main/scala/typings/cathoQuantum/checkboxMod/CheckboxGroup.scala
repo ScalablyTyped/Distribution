@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@catho/quantum/components/Checkbox", "CheckboxGroup")
+@JSImport("@catho/quantum/Checkbox", "CheckboxGroup")
 @js.native
-class CheckboxGroup[T] ()
-  extends Component[CheckboxGroupProps[T], js.Object, js.Any]
+class CheckboxGroup ()
+  extends Component[CheckboxGroupProps, js.Object, js.Any]
 
 /* static members */
-@JSImport("@catho/quantum/components/Checkbox", "CheckboxGroup")
+@JSImport("@catho/quantum/Checkbox", "CheckboxGroup")
 @js.native
 object CheckboxGroup extends js.Object {
   var Button: CheckboxButton = js.native

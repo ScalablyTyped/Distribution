@@ -45,6 +45,9 @@ object matterJsStrings {
   sealed trait collisionStart extends js.Object
   
   @js.native
+  sealed trait line extends js.Object
+  
+  @js.native
   sealed trait mousedown extends js.Object
   
   @js.native
@@ -54,10 +57,16 @@ object matterJsStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
+  sealed trait pin extends js.Object
+  
+  @js.native
   sealed trait sleepEnd extends js.Object
   
   @js.native
   sealed trait sleepStart extends js.Object
+  
+  @js.native
+  sealed trait spring extends js.Object
   
   @js.native
   sealed trait tick extends js.Object
@@ -89,15 +98,21 @@ object matterJsStrings {
   @scala.inline
   def collisionStart: collisionStart = "collisionStart".asInstanceOf[collisionStart]
   @scala.inline
+  def line: line = "line".asInstanceOf[line]
+  @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
   def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   @scala.inline
+  def pin: pin = "pin".asInstanceOf[pin]
+  @scala.inline
   def sleepEnd: sleepEnd = "sleepEnd".asInstanceOf[sleepEnd]
   @scala.inline
   def sleepStart: sleepStart = "sleepStart".asInstanceOf[sleepStart]
+  @scala.inline
+  def spring: spring = "spring".asInstanceOf[spring]
   @scala.inline
   def tick: tick = "tick".asInstanceOf[tick]
 }

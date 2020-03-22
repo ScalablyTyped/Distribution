@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Chart extends js.Object {
   /**
+    * Dismiss popup content in chart, including export menu and tooltip.
+    */
+  def dismissPopupContent(): Unit
+  /**
     * Apply context to a format string from lang options of the chart.
     *
     * @param langKey
@@ -22,8 +26,8 @@ trait Chart extends js.Object {
 
 object Chart {
   @scala.inline
-  def apply(langFormat: (String, Dictionary[_]) => String): Chart = {
-    val __obj = js.Dynamic.literal(langFormat = js.Any.fromFunction2(langFormat))
+  def apply(dismissPopupContent: () => Unit, langFormat: (String, Dictionary[_]) => String): Chart = {
+    val __obj = js.Dynamic.literal(dismissPopupContent = js.Any.fromFunction0(dismissPopupContent), langFormat = js.Any.fromFunction2(langFormat))
   
     __obj.asInstanceOf[Chart]
   }

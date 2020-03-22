@@ -84,6 +84,11 @@ trait GridstackOptions extends js.Object {
     * maximum rows amount. Default? is 0 which means no maximum rows
     */
   var maxRow: js.UndefOr[Double] = js.undefined
+  /** 
+    * minimum rows amount. Default is `0`. You can also do this with `min-height` CSS attribute
+    * on the grid div in pixels, which will round to the closest row.
+    */
+  var minRow: js.UndefOr[Double] = js.undefined
   /**
     * minimal width. If window width is less, grid will be shown in one column mode (default?: 768)
     */
@@ -113,6 +118,11 @@ trait GridstackOptions extends js.Object {
     * allows to override UI resizable options. (default?: { autoHide?: true, handles?: 'se' })
     */
   var resizable: js.UndefOr[js.Object] = js.undefined
+  /**
+    * fix grid number of rows. This is a shortcut of writing `minRow:N, maxRow:N`.
+    * (default `0` no constrain)
+    */
+  var row: js.UndefOr[Double] = js.undefined
   /**
     * if true turns grid to RTL. Possible values are true, false, 'auto' (default?: 'auto')
     * See [example](http://gridstack.github.io/gridstack.js/demo/rtl.html)
@@ -157,6 +167,7 @@ object GridstackOptions {
     handleClass: String = null,
     itemClass: String = null,
     maxRow: Int | Double = null,
+    minRow: Int | Double = null,
     minWidth: Int | Double = null,
     oneColumnModeDomSort: js.UndefOr[Boolean] = js.undefined,
     placeholderClass: String = null,
@@ -164,6 +175,7 @@ object GridstackOptions {
     removable: Boolean | String = null,
     removeTimeout: Int | Double = null,
     resizable: js.Object = null,
+    row: Int | Double = null,
     rtl: Boolean | auto = null,
     staticGrid: js.UndefOr[Boolean] = js.undefined,
     verticalMargin: Double | String = null,
@@ -188,6 +200,7 @@ object GridstackOptions {
     if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass.asInstanceOf[js.Any])
     if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass.asInstanceOf[js.Any])
     if (maxRow != null) __obj.updateDynamic("maxRow")(maxRow.asInstanceOf[js.Any])
+    if (minRow != null) __obj.updateDynamic("minRow")(minRow.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(oneColumnModeDomSort)) __obj.updateDynamic("oneColumnModeDomSort")(oneColumnModeDomSort.asInstanceOf[js.Any])
     if (placeholderClass != null) __obj.updateDynamic("placeholderClass")(placeholderClass.asInstanceOf[js.Any])
@@ -195,6 +208,7 @@ object GridstackOptions {
     if (removable != null) __obj.updateDynamic("removable")(removable.asInstanceOf[js.Any])
     if (removeTimeout != null) __obj.updateDynamic("removeTimeout")(removeTimeout.asInstanceOf[js.Any])
     if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
     if (rtl != null) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
     if (!js.isUndefined(staticGrid)) __obj.updateDynamic("staticGrid")(staticGrid.asInstanceOf[js.Any])
     if (verticalMargin != null) __obj.updateDynamic("verticalMargin")(verticalMargin.asInstanceOf[js.Any])

@@ -316,6 +316,8 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def StatefulTooltip: ComponentType[StatefulTooltipProps] = typings.baseui.tooltipMod.StatefulTooltip.asInstanceOf[typings.react.mod.ComponentType[StatefulTooltipProps]]
   @scala.inline
+  def StatefulTreeView: ComponentType[StatefulTreeViewProps] = typings.baseui.treeViewMod.StatefulTreeView.asInstanceOf[typings.react.mod.ComponentType[StatefulTreeViewProps]]
+  @scala.inline
   def Step: ComponentType[StepProps] = typings.baseui.progressStepsMod.Step.asInstanceOf[typings.react.mod.ComponentType[StepProps]]
   @scala.inline
   def StyledLink: ComponentType[js.Any] = typings.baseui.linkMod.StyledLink.asInstanceOf[typings.react.mod.ComponentType[js.Any]]
@@ -350,6 +352,8 @@ object baseuiComponents extends baseuiProps {
   @scala.inline
   def TreeLabel: ComponentType[TreeLabelProps] = typings.baseui.treeViewMod.TreeLabel.asInstanceOf[typings.react.mod.ComponentType[TreeLabelProps]]
   @scala.inline
+  def TreeView: ComponentType[TreeViewProps] = typings.baseui.treeViewMod.TreeView.asInstanceOf[typings.react.mod.ComponentType[TreeViewProps]]
+  @scala.inline
   def TriangleDown: ComponentType[TriangleDownProps] = typings.baseui.iconMod.TriangleDown.asInstanceOf[typings.react.mod.ComponentType[TriangleDownProps]]
   @scala.inline
   def TriangleLeft: ComponentType[TriangleLeftProps] = typings.baseui.iconMod.TriangleLeft.asInstanceOf[typings.react.mod.ComponentType[TriangleLeftProps]]
@@ -361,10 +365,6 @@ object baseuiComponents extends baseuiProps {
   def UnstableA11y: ComponentType[js.Object] = typings.baseui.a11yMod.UnstableA11y.asInstanceOf[typings.react.mod.ComponentType[js.Object]]
   @scala.inline
   def UnstableStatefulDataTable: ComponentType[js.Any] = js.constructorOf[typings.baseui.dataTableMod.UnstableStatefulDataTable].asInstanceOf[typings.react.mod.ComponentType[js.Any]]
-  @scala.inline
-  def UnstableStatefulTreeView: ComponentType[UnstableStatefulTreeViewProps] = typings.baseui.treeViewMod.UnstableStatefulTreeView.asInstanceOf[typings.react.mod.ComponentType[UnstableStatefulTreeViewProps]]
-  @scala.inline
-  def UnstableTreeView: ComponentType[UnstableTreeViewProps] = typings.baseui.treeViewMod.UnstableTreeView.asInstanceOf[typings.react.mod.ComponentType[UnstableTreeViewProps]]
   @scala.inline
   def Upload: ComponentType[UploadProps] = typings.baseui.iconMod.Upload.asInstanceOf[typings.react.mod.ComponentType[UploadProps]]
 }

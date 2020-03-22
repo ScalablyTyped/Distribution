@@ -10,57 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ValidationOptions extends js.Object {
-  /**
-    * when true, stops validation on the first error, otherwise returns all the errors found.
-    *
-    * @default true
-    */
-  var abortEarly: js.UndefOr[Boolean] = js.undefined
-  /**
-    * when true, allows object to contain unknown keys which are ignored.
-    *
-    * @default false
-    */
-  var allowUnknown: js.UndefOr[Boolean] = js.undefined
-  /**
-    * when true, schema caching is enabled (for schemas with explicit caching rules).
-    *
-    * @default false
-    */
-  var cache: js.UndefOr[Boolean] = js.undefined
-  /**
-    * provides an external data set to be used in references
-    */
-  var context: js.UndefOr[Context] = js.undefined
-  /**
-    * when true, attempts to cast values to the required types (e.g. a string to a number).
-    *
-    * @default true
-    */
-  var convert: js.UndefOr[Boolean] = js.undefined
-  /**
-    * sets the string format used when converting dates to strings in error messages and casting.
-    *
-    * @default 'iso'
-    */
-  var dateFormat: js.UndefOr[date | iso | string | time | utc] = js.undefined
-  /**
-    * when true, valid results and throw errors are decorated with a debug property which includes an array of the validation steps used to generate the returned result.
-    *
-    * @default false
-    */
-  var debug: js.UndefOr[Boolean] = js.undefined
-  /**
-    * error formatting settings.
-    */
-  var errors: js.UndefOr[ErrorFormattingOptions] = js.undefined
-  /**
-    * if false, the external rules set with `any.external()` are ignored, which is required to ignore any external validations in synchronous mode (or an exception is thrown).
-    *
-    * @default true
-    */
-  var externals: js.UndefOr[Boolean] = js.undefined
+trait ValidationOptions extends BaseValidationOptions {
   /**
     * overrides individual error messages. Defaults to no override (`{}`).
     * Messages use the same rules as templates.
@@ -69,39 +19,6 @@ trait ValidationOptions extends js.Object {
     * @default {}
     */
   var messages: js.UndefOr[LanguageMessages] = js.undefined
-  /**
-    * when true, do not apply default values.
-    *
-    * @default false
-    */
-  var noDefaults: js.UndefOr[Boolean] = js.undefined
-  /**
-    * when true, inputs are shallow cloned to include non-enumerables properties.
-    *
-    * @default false
-    */
-  var nonEnumerables: js.UndefOr[Boolean] = js.undefined
-  /**
-    * sets the default presence requirements. Supported modes: 'optional', 'required', and 'forbidden'.
-    *
-    * @default 'optional'
-    */
-  var presence: js.UndefOr[PresenceMode] = js.undefined
-  /**
-    * when true, ignores unknown keys with a function value.
-    *
-    * @default false
-    */
-  var skipFunctions: js.UndefOr[Boolean] = js.undefined
-  /**
-    * remove unknown elements from objects and arrays.
-    * - when true, all unknown elements will be removed
-    * - when an object:
-    *      - objects - set to true to remove unknown keys from objects
-    *
-    * @default false
-    */
-  var stripUnknown: js.UndefOr[Boolean | AnonArrays] = js.undefined
 }
 
 object ValidationOptions {

@@ -353,3 +353,10 @@ class Diva protected () extends js.Object {
   def zoomOut(): Boolean = js.native
 }
 
+/* static members */
+@JSImport("diva.js", "Diva")
+@js.native
+object Diva extends js.Object {
+  var Events: DivaEvent = js.native
+}
+

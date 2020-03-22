@@ -2,6 +2,7 @@ package typings.reactOnsenui
 
 import typings.react.mod.CSSProperties
 import typings.reactOnsenui.mod.AnimationOptions
+import typings.reactOnsenui.mod.Tabbar
 import typings.reactOnsenui.mod.TabbarRenderTab
 import typings.reactOnsenui.reactOnsenuiStrings.auto
 import typings.reactOnsenui.reactOnsenuiStrings.bottom
@@ -12,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  index  :number, renderTabs (): std.Array<react-onsenui.react-onsenui.TabbarRenderTab>,   position ? :'bottom' | 'top' | 'auto',   swipeable ? :boolean,   ignoreEdgeWidth ? :number,   animation ? :'none' | 'slide',   animationOptions ? :react-onsenui.react-onsenui.AnimationOptions,   tabBorder ? :boolean,   onPreChange ? :(): void,   onPostChange ? :(): void,   onReactive ? :(): void,   onSwipe ? :(index : number, animationOptions : react-onsenui.react-onsenui.AnimationOptions): void} */
+/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  index  :number, renderTabs (index : number, tabbar : react-onsenui.react-onsenui.Tabbar): std.Array<react-onsenui.react-onsenui.TabbarRenderTab>,   position ? :'bottom' | 'top' | 'auto',   swipeable ? :boolean,   ignoreEdgeWidth ? :number,   animation ? :'none' | 'slide',   animationOptions ? :react-onsenui.react-onsenui.AnimationOptions,   tabBorder ? :boolean,   onPreChange ? :(): void,   onPostChange ? :(): void,   onReactive ? :(): void,   onSwipe ? :(index : number, animationOptions : react-onsenui.react-onsenui.AnimationOptions): void} */
 trait HTMLAttributesidclassNameIgnoreEdgeWidth extends js.Object {
   var animation: js.UndefOr[none | slide] = js.undefined
   var animationOptions: js.UndefOr[AnimationOptions] = js.undefined
@@ -28,14 +29,14 @@ trait HTMLAttributesidclassNameIgnoreEdgeWidth extends js.Object {
   var style: js.UndefOr[CSSProperties] = js.undefined
   var swipeable: js.UndefOr[Boolean] = js.undefined
   var tabBorder: js.UndefOr[Boolean] = js.undefined
-  def renderTabs(): js.Array[TabbarRenderTab]
+  def renderTabs(index: Double, tabbar: Tabbar): js.Array[TabbarRenderTab]
 }
 
 object HTMLAttributesidclassNameIgnoreEdgeWidth {
   @scala.inline
   def apply(
     index: Double,
-    renderTabs: () => js.Array[TabbarRenderTab],
+    renderTabs: (Double, Tabbar) => js.Array[TabbarRenderTab],
     animation: none | slide = null,
     animationOptions: AnimationOptions = null,
     className: String = null,
@@ -50,7 +51,7 @@ object HTMLAttributesidclassNameIgnoreEdgeWidth {
     swipeable: js.UndefOr[Boolean] = js.undefined,
     tabBorder: js.UndefOr[Boolean] = js.undefined
   ): HTMLAttributesidclassNameIgnoreEdgeWidth = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], renderTabs = js.Any.fromFunction0(renderTabs))
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], renderTabs = js.Any.fromFunction2(renderTabs))
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])

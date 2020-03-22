@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__icons-vue"
-version := "4.0.1-alpha.1-c2a455"
+version := "4.0.2-e67c12"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

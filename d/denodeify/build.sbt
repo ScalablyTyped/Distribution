@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "denodeify"
-version := "1.2.1-dt-20190322Z-2a4f51"
+version := "1.2.1-dt-20200225Z-2a4f51"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

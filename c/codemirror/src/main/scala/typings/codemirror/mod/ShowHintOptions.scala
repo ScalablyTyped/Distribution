@@ -14,8 +14,12 @@ trait ShowHintOptions extends js.Object {
   var completeOnSingleClick: js.UndefOr[Boolean] = js.undefined
   var completeSingle: js.UndefOr[Boolean] = js.undefined
   var container: js.UndefOr[HTMLElement | Null] = js.undefined
-  var customKeys: js.UndefOr[StringDictionary[js.Function0[Unit]] | Null] = js.undefined
-  var extraKeys: js.UndefOr[StringDictionary[js.Function0[Unit]] | Null] = js.undefined
+  var customKeys: js.UndefOr[
+    (StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]) | Null
+  ] = js.undefined
+  var extraKeys: js.UndefOr[
+    (StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String]) | Null
+  ] = js.undefined
   var hint: HintFunction | AsyncHintFunction
 }
 
@@ -29,8 +33,8 @@ object ShowHintOptions {
     completeOnSingleClick: js.UndefOr[Boolean] = js.undefined,
     completeSingle: js.UndefOr[Boolean] = js.undefined,
     container: HTMLElement = null,
-    customKeys: StringDictionary[js.Function0[Unit]] = null,
-    extraKeys: StringDictionary[js.Function0[Unit]] = null
+    customKeys: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String] = null,
+    extraKeys: StringDictionary[(js.Function2[/* editor */ Editor, /* handle */ Handle, Unit]) | String] = null
   ): ShowHintOptions = {
     val __obj = js.Dynamic.literal(hint = hint.asInstanceOf[js.Any])
     if (!js.isUndefined(alignWithWord)) __obj.updateDynamic("alignWithWord")(alignWithWord.asInstanceOf[js.Any])

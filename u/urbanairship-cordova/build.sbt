@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "urbanairship-cordova"
-version := "3.4.1-dt-20190322Z-d8552c"
+version := "3.4.1-dt-20200227Z-d8552c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

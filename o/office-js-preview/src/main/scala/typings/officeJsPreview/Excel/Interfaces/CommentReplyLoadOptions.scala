@@ -40,6 +40,14 @@ trait CommentReplyLoadOptions extends js.Object {
   var content: js.UndefOr[Boolean] = js.native
   /**
     *
+    * Gets the content type of the comment.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var contentType: js.UndefOr[Boolean] = js.native
+  /**
+    *
     * Gets the creation time of the comment reply.
     *
     * [Api set: ExcelApi 1.10]

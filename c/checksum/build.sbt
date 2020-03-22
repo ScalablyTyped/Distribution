@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "checksum"
-version := "0.1.1-dt-20190322Z-c84ec1"
+version := "0.1.1-dt-20200226Z-c84ec1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

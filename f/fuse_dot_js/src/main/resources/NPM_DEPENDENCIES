@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fuse.js" : "3.4.6"
+      "fuse.js" : "3.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fuse.js" : "3.4.6"
+      "fuse.js" : "3.6.1"
     }
   ],
   "compile-devDependencies" : [

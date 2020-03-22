@@ -32,6 +32,7 @@ class ShaderBuilder () extends js.Object {
   def getTextureCoordinateExpression(): String = js.native
   def setColorExpression(expression: String): ShaderBuilder = js.native
   def setFragmentDiscardExpression(expression: String): ShaderBuilder = js.native
+  def setRotationExpression(expression: String): ShaderBuilder = js.native
   def setSizeExpression(expression: String): ShaderBuilder = js.native
   def setSymbolOffsetExpression(expression: String): ShaderBuilder = js.native
   def setSymbolRotateWithView(rotateWithView: Boolean): ShaderBuilder = js.native

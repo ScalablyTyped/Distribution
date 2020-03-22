@@ -129,7 +129,7 @@ package object interfaceMod {
     - typings.rcTable.rcTableStrings.webview
   */
   type Component[P] = typings.rcTable.interfaceMod._Component[P] | typings.react.mod.ComponentType[P] | typings.react.mod.ForwardRefExoticComponent[P] | typings.react.mod.FC[P]
-  type CustomizeComponent[P /* <: typings.react.mod.HTMLAttributes[typings.std.HTMLElement] */] = typings.rcTable.interfaceMod.Component[P]
+  type CustomizeComponent = typings.rcTable.interfaceMod.Component[js.Any]
   type CustomizeScrollBody[RecordType] = js.Function2[
     /* data */ js.Array[RecordType], 
     /* info */ typings.rcTable.AnonOnScroll, 
@@ -152,10 +152,8 @@ package object interfaceMod {
   type FixedType = typings.rcTable.interfaceMod._FixedType | scala.Boolean
   type GetComponent = js.Function2[
     /* path */ js.Array[java.lang.String], 
-    /* defaultComponent */ js.UndefOr[
-      typings.rcTable.interfaceMod.CustomizeComponent[typings.react.mod.HTMLAttributes[typings.std.HTMLElement]]
-    ], 
-    typings.rcTable.interfaceMod.CustomizeComponent[typings.react.mod.HTMLAttributes[typings.std.HTMLElement]]
+    /* defaultComponent */ js.UndefOr[typings.rcTable.interfaceMod.CustomizeComponent], 
+    typings.rcTable.interfaceMod.CustomizeComponent
   ]
   type GetComponentProps[DataType] = js.Function2[
     /* data */ DataType, 

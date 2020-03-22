@@ -31,6 +31,7 @@ object TextEncodeEntry {
     align: ProductionRule[ScaledValueRef[Align]] = null,
     angle: ProductionRule[NumericValueRef] = null,
     baseline: ProductionRule[TextBaselineValueRef] = null,
+    blend: ProductionRule[ScaledValueRef[Blend]] = null,
     cursor: ProductionRule[StringValueRef] = null,
     dir: ProductionRule[ScaledValueRef[TextDirection]] = null,
     dx: ProductionRule[NumericValueRef] = null,
@@ -72,6 +73,7 @@ object TextEncodeEntry {
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
+    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])

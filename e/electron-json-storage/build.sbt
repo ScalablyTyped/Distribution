@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-json-storage"
-version := "4.0-dt-20180214Z-3a5d25"
+version := "4.0-dt-20200226Z-3a5d25"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

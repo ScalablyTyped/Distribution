@@ -17,7 +17,7 @@ trait PlotScatterClusterOptions extends js.Object {
   /**
     * (Highcharts, Highmaps) Options for the cluster data labels.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptions] = js.undefined
   /**
     * (Highcharts, Highmaps) Zoom the plot area to the cluster points range
     * when a cluster is clicked.
@@ -59,7 +59,7 @@ object PlotScatterClusterOptions {
   def apply(
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     animation: Boolean | AnimationOptionsObject = null,
-    dataLabels: DataLabelsOptionsObject = null,
+    dataLabels: DataLabelsOptions = null,
     drillToCluster: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     events: PlotScatterClusterEventsOptions = null,

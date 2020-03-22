@@ -15,9 +15,9 @@ class Request protected () extends Property[RequestDefinition] {
   def this(options: String) = this()
   def this(options: RequestDefinition) = this()
   var auth: js.UndefOr[RequestAuth | RequestAuthDefinition] = js.native
-  var body: js.UndefOr[RequestBody] = js.native
+  var body: js.UndefOr[RequestBody | RequestBodyDefinition] = js.native
   var certificate: js.UndefOr[Certificate | CertificateDefinition] = js.native
-  var header: js.UndefOr[HeaderDefinition] = js.native
+  var header: js.UndefOr[js.Array[HeaderDefinition]] = js.native
   var headers: HeaderList = js.native
   var method: js.UndefOr[String] = js.native
   var proxy: js.UndefOr[ProxyConfig | ProxyConfigDefinition] = js.native

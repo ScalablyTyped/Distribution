@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-default-unit" : "10.0.4"
+      "jss-plugin-default-unit" : "10.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-default-unit" : "10.0.4"
+      "jss-plugin-default-unit" : "10.1.1"
     }
   ],
   "compile-devDependencies" : [

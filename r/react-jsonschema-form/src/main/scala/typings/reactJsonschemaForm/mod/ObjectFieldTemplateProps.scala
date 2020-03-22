@@ -15,7 +15,7 @@ trait ObjectFieldTemplateProps[T] extends js.Object {
   var description: String
   var formContext: js.Any
   var formData: T
-  var idSchema: IdSchema
+  var idSchema: IdSchema[_]
   var properties: js.Array[AnonContent]
   var required: Boolean
   var schema: JSONSchema6
@@ -31,7 +31,7 @@ object ObjectFieldTemplateProps {
     description: String,
     formContext: js.Any,
     formData: T,
-    idSchema: IdSchema,
+    idSchema: IdSchema[_],
     properties: js.Array[AnonContent],
     required: Boolean,
     schema: JSONSchema6,

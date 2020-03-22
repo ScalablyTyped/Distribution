@@ -31,7 +31,8 @@ object libCalloutMod extends js.Object {
   @js.native
   object DirectionalHint extends js.Object {
     /**
-      * Appear below the target element, aligning with the target element such that the callout tends toward the center of the screen.
+      * Appear below the target element, aligning with the target element such that the callout tends toward
+      * the center of the screen.
       */
     var bottomAutoEdge: `7` = js.native
     /**
@@ -71,7 +72,8 @@ object libCalloutMod extends js.Object {
       */
     var rightTopEdge: `11` = js.native
     /**
-      * Appear above the target element, aligning with the target element such that the callout tends toward the center of the screen.
+      * Appear above the target element, aligning with the target element such that the callout tends toward
+      * the center of the screen.
       */
     var topAutoEdge: `3` = js.native
     /**

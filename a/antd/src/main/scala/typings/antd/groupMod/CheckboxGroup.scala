@@ -13,7 +13,7 @@ trait CheckboxGroup
   def cancelValue(value: String): Unit = js.native
   def getOptions(): js.Array[CheckboxOptionType] = js.native
   def registerValue(value: String): Unit = js.native
-  def renderGroup(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+  def renderGroup(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   def toggleOption(option: CheckboxOptionType): Unit = js.native
 }
 

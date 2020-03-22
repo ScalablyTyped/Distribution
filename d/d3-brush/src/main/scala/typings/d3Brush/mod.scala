@@ -86,6 +86,19 @@ object mod extends js.Object {
       */
     def handleSize(size: Double): this.type = js.native
     /**
+      * Returns the current key modifiers flag.
+      */
+    def keyModifiers(): Boolean = js.native
+    /**
+      * Sets the key modifiers flag and returns the brush.
+      *
+      * The key modifiers flag determines whether the brush listens to key events during brushing.
+      * The default value is true.
+      *
+      * @param keyModifiers New value for key modifiers flag.
+      */
+    def keyModifiers(modifiers: Boolean): this.type = js.native
+    /**
       * Clear the active selection of the brush on the specified SVG G element(s) selection.
       *
       * @param group A D3 selection of SVG G elements.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for open
 
-Typings are for version 7.0.2
+Typings are for version 7.0.3
 
 ## Library description:
 Open stuff like URLs, files, executables. Cross-platform.

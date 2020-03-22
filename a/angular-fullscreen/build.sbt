@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-fullscreen"
-version := "v1.0.1-dt-20190322Z-ff706b"
+version := "v1.0.1-dt-20200225Z-ff706b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jscrollpane"
-version := "v2.0.14-dt-20190322Z-f791bf"
+version := "v2.0.14-dt-20200226Z-f791bf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

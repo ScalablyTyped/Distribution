@@ -39,10 +39,16 @@ trait XrangePointOptionsObject extends js.Object {
     String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject])
   ] = js.undefined
   /**
+    * (Highcharts, Highstock, Gantt) A reserved subspace to store options and
+    * values for customized functionality. Here you can add additional data for
+    * your own event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
     * (Highcharts, Highstock, Gantt) Individual data label for each point. The
     * options are the same as the ones for plotOptions.series.dataLabels.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptions | js.Array[DataLabelsOptions]] = js.undefined
   /**
     * (Highcharts, Highstock, Gantt) A description of the point to add to the
     * screen reader information about the point.
@@ -117,7 +123,8 @@ object XrangePointOptionsObject {
     color: ColorString | GradientColorObject | PatternObject = null,
     colorIndex: Int | Double = null,
     connect: String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject]) = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
+    custom: Dictionary[_] = null,
+    dataLabels: DataLabelsOptions | js.Array[DataLabelsOptions] = null,
     description: String = null,
     dragDrop: SeriesLineDataDragDropOptions = null,
     drilldown: String = null,
@@ -138,6 +145,7 @@ object XrangePointOptionsObject {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])

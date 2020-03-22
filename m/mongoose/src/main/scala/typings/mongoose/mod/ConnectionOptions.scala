@@ -144,6 +144,13 @@ object ConnectionOptions {
     sslKey: Buffer | String = null,
     sslPass: Buffer | String = null,
     sslValidate: js.UndefOr[Boolean] = js.undefined,
+    tls: js.UndefOr[Boolean] = js.undefined,
+    tlsAllowInvalidCertificates: js.UndefOr[Boolean] = js.undefined,
+    tlsAllowInvalidHostnames: js.UndefOr[Boolean] = js.undefined,
+    tlsCAFile: String = null,
+    tlsCertificateKeyFile: String = null,
+    tlsCertificateKeyFilePassword: String = null,
+    tlsInsecure: js.UndefOr[Boolean] = js.undefined,
     useCreateIndex: js.UndefOr[Boolean] = js.undefined,
     useFindAndModify: js.UndefOr[Boolean] = js.undefined,
     useMongoClient: js.UndefOr[Boolean] = js.undefined,
@@ -226,6 +233,13 @@ object ConnectionOptions {
     if (sslKey != null) __obj.updateDynamic("sslKey")(sslKey.asInstanceOf[js.Any])
     if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
     if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsAllowInvalidCertificates)) __obj.updateDynamic("tlsAllowInvalidCertificates")(tlsAllowInvalidCertificates.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsAllowInvalidHostnames)) __obj.updateDynamic("tlsAllowInvalidHostnames")(tlsAllowInvalidHostnames.asInstanceOf[js.Any])
+    if (tlsCAFile != null) __obj.updateDynamic("tlsCAFile")(tlsCAFile.asInstanceOf[js.Any])
+    if (tlsCertificateKeyFile != null) __obj.updateDynamic("tlsCertificateKeyFile")(tlsCertificateKeyFile.asInstanceOf[js.Any])
+    if (tlsCertificateKeyFilePassword != null) __obj.updateDynamic("tlsCertificateKeyFilePassword")(tlsCertificateKeyFilePassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(tlsInsecure)) __obj.updateDynamic("tlsInsecure")(tlsInsecure.asInstanceOf[js.Any])
     if (!js.isUndefined(useCreateIndex)) __obj.updateDynamic("useCreateIndex")(useCreateIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(useFindAndModify)) __obj.updateDynamic("useFindAndModify")(useFindAndModify.asInstanceOf[js.Any])
     if (!js.isUndefined(useMongoClient)) __obj.updateDynamic("useMongoClient")(useMongoClient.asInstanceOf[js.Any])

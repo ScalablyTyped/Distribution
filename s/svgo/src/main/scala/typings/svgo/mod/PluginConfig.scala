@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   - typings.svgo.mod.PluginMinifyStyles
   - typings.svgo.mod.PluginConvertStyleToAttrs
   - typings.svgo.mod.PluginConvertColors
+  - typings.svgo.mod.PluginConvertEllipseToCircle
   - typings.svgo.mod.PluginConvertPathData
   - typings.svgo.mod.PluginConvertTransform
   - typings.svgo.mod.PluginRemoveUnknownsAndDefaults
@@ -42,6 +43,7 @@ import scala.scalajs.js.annotation._
   - typings.svgo.mod.PluginMergePaths
   - typings.svgo.mod.PluginConvertShapeToPath
   - typings.svgo.mod.PluginSortAttrs
+  - typings.svgo.mod.PluginSortDefsChildren
   - typings.svgo.mod.PluginRemoveDimensions
   - typings.svgo.mod.PluginRemoveAttrs
   - typings.svgo.mod.PluginRemoveAttributesBySelector
@@ -237,14 +239,20 @@ object PluginConfig {
     __obj.asInstanceOf[PluginConfig]
   }
   @scala.inline
-  def PluginPrefixIds(removeUnusedNS: Boolean | js.Object): PluginConfig = {
-    val __obj = js.Dynamic.literal(removeUnusedNS = removeUnusedNS.asInstanceOf[js.Any])
+  def PluginPrefixIds(prefixIds: Boolean | js.Object): PluginConfig = {
+    val __obj = js.Dynamic.literal(prefixIds = prefixIds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginConfig]
   }
   @scala.inline
   def PluginRemoveDoctype(removeDoctype: Boolean | js.Object): PluginConfig = {
     val __obj = js.Dynamic.literal(removeDoctype = removeDoctype.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[PluginConfig]
+  }
+  @scala.inline
+  def PluginConvertEllipseToCircle(convertEllipseToCircle: Boolean | js.Object): PluginConfig = {
+    val __obj = js.Dynamic.literal(convertEllipseToCircle = convertEllipseToCircle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginConfig]
   }
@@ -263,6 +271,12 @@ object PluginConfig {
   @scala.inline
   def PluginCleanupIDs(cleanupIDs: Boolean | js.Object): PluginConfig = {
     val __obj = js.Dynamic.literal(cleanupIDs = cleanupIDs.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[PluginConfig]
+  }
+  @scala.inline
+  def PluginSortDefsChildren(sortDefsChildren: Boolean | js.Object): PluginConfig = {
+    val __obj = js.Dynamic.literal(sortDefsChildren = sortDefsChildren.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PluginConfig]
   }

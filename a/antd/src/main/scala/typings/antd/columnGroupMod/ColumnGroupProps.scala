@@ -36,6 +36,7 @@ trait ColumnGroupProps[RecordType] extends js.Object {
   var filterDropdownVisible: js.UndefOr[Boolean] = js.undefined
   var filterIcon: js.UndefOr[ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode])] = js.undefined
   var filterMultiple: js.UndefOr[Boolean] = js.undefined
+  var filtered: js.UndefOr[Boolean] = js.undefined
   var filteredValue: js.UndefOr[js.Array[Key]] = js.undefined
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var fixed: js.UndefOr[FixedType] = js.undefined
@@ -82,6 +83,7 @@ object ColumnGroupProps {
     filterDropdownVisible: js.UndefOr[Boolean] = js.undefined,
     filterIcon: ReactNode | (js.Function1[/* filtered */ Boolean, ReactNode]) = null,
     filterMultiple: js.UndefOr[Boolean] = js.undefined,
+    filtered: js.UndefOr[Boolean] = js.undefined,
     filteredValue: js.Array[Key] = null,
     filters: js.Array[ColumnFilterItem] = null,
     fixed: FixedType = null,
@@ -111,6 +113,7 @@ object ColumnGroupProps {
     if (!js.isUndefined(filterDropdownVisible)) __obj.updateDynamic("filterDropdownVisible")(filterDropdownVisible.asInstanceOf[js.Any])
     if (filterIcon != null) __obj.updateDynamic("filterIcon")(filterIcon.asInstanceOf[js.Any])
     if (!js.isUndefined(filterMultiple)) __obj.updateDynamic("filterMultiple")(filterMultiple.asInstanceOf[js.Any])
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.asInstanceOf[js.Any])
     if (filteredValue != null) __obj.updateDynamic("filteredValue")(filteredValue.asInstanceOf[js.Any])
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])

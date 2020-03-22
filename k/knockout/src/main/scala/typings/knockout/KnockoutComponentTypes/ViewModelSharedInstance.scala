@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ViewModelSharedInstance extends js.Object {
+trait ViewModelSharedInstance extends _ViewModel {
   var instance: js.Any
 }
 

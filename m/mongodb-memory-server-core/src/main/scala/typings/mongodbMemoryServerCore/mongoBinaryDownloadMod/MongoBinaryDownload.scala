@@ -25,6 +25,20 @@ trait MongoBinaryDownload extends js.Object {
     */
   def extract(mongoDBArchive: String): js.Promise[String]
   /**
+    * Extract a .tar.gz archive
+    * @param mongoDBArchive Archive location
+    * @param extractDir Directory to extract to
+    * @param filter Method to determine which files to extract
+    */
+  def extractTarGz(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit]
+  /**
+    * Extract a .zip archive
+    * @param mongoDBArchive Archive location
+    * @param extractDir Directory to extract to
+    * @param filter Method to determine which files to extract
+    */
+  def extractZip(mongoDBArchive: String, extractDir: String, filter: js.Function1[/* file */ String, Boolean]): js.Promise[Unit]
+  /**
     * Get the path of the already downloaded "mongod" file
     * otherwise download it and then return the path
     */
@@ -69,6 +83,8 @@ object MongoBinaryDownload {
     download: String => js.Promise[String],
     downloadDir: String,
     extract: String => js.Promise[String],
+    extractTarGz: (String, String, js.Function1[/* file */ String, Boolean]) => js.Promise[Unit],
+    extractZip: (String, String, js.Function1[/* file */ String, Boolean]) => js.Promise[Unit],
     getMongodPath: () => js.Promise[String],
     httpDownload: (HttpDownloadOptions, String, String) => js.Promise[String],
     locationExists: String => js.Promise[Boolean],
@@ -79,7 +95,7 @@ object MongoBinaryDownload {
     version: String,
     _downloadingUrl: String = null
   ): MongoBinaryDownload = {
-    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], checkMD5 = checkMD5.asInstanceOf[js.Any], dlProgress = dlProgress.asInstanceOf[js.Any], download = js.Any.fromFunction1(download), downloadDir = downloadDir.asInstanceOf[js.Any], extract = js.Any.fromFunction1(extract), getMongodPath = js.Any.fromFunction0(getMongodPath), httpDownload = js.Any.fromFunction3(httpDownload), locationExists = js.Any.fromFunction1(locationExists), makeMD5check = js.Any.fromFunction2(makeMD5check), platform = platform.asInstanceOf[js.Any], printDownloadProgress = js.Any.fromFunction1(printDownloadProgress), startDownload = js.Any.fromFunction0(startDownload), version = version.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], checkMD5 = checkMD5.asInstanceOf[js.Any], dlProgress = dlProgress.asInstanceOf[js.Any], download = js.Any.fromFunction1(download), downloadDir = downloadDir.asInstanceOf[js.Any], extract = js.Any.fromFunction1(extract), extractTarGz = js.Any.fromFunction3(extractTarGz), extractZip = js.Any.fromFunction3(extractZip), getMongodPath = js.Any.fromFunction0(getMongodPath), httpDownload = js.Any.fromFunction3(httpDownload), locationExists = js.Any.fromFunction1(locationExists), makeMD5check = js.Any.fromFunction2(makeMD5check), platform = platform.asInstanceOf[js.Any], printDownloadProgress = js.Any.fromFunction1(printDownloadProgress), startDownload = js.Any.fromFunction0(startDownload), version = version.asInstanceOf[js.Any])
     if (_downloadingUrl != null) __obj.updateDynamic("_downloadingUrl")(_downloadingUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoBinaryDownload]
   }

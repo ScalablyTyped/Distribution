@@ -20,7 +20,7 @@ object ScopeMiddlewareOptions {
   @scala.inline
   def apply(
     logger: Logger = null,
-    onAuthorizationFailedHandler: (/* request */ Request_[ParamsDictionary], /* resonse */ Response_, /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit = null,
+    onAuthorizationFailedHandler: (/* request */ Request_[ParamsDictionary], /* resonse */ Response_[js.Any], /* next */ NextFunction, /* scopes */ js.Array[String], /* logger */ Logger) => Unit = null,
     precedenceOptions: PrecedenceOptions = null
   ): ScopeMiddlewareOptions = {
     val __obj = js.Dynamic.literal()

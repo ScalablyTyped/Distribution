@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-jss
 
-Typings are for version 10.0.4
+Typings are for version 10.1.1
 
 ## Library description:
 Implements css() interface on top of JSS

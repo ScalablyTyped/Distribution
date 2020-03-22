@@ -104,7 +104,9 @@ trait StackHeaderOptions extends js.Object {
   /**
     * Style object for the title component.
     */
-  var headerTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var headerTitleStyle: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+  ] = js.undefined
   /**
     * Defaults to `false`. If `true`, the header will not have a background unless you explicitly provide it with `headerBackground`.
     * The header will also float over the screen so that it overlaps the content underneath.
@@ -138,7 +140,7 @@ object StackHeaderOptions {
     headerTitleAlign: left | center = null,
     headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.undefined,
     headerTitleContainerStyle: StyleProp[ViewStyle] = null,
-    headerTitleStyle: StyleProp[TextStyle] = null,
+    headerTitleStyle: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any = null,
     headerTransparent: js.UndefOr[Boolean] = js.undefined,
     headerTruncatedBackTitle: String = null
   ): StackHeaderOptions = {

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vec3"
-version := "0.0-unknown-dt-20190322Z-cd0219"
+version := "0.0-unknown-dt-20200227Z-cd0219"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

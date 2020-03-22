@@ -18,7 +18,6 @@ sealed trait SortBy extends js.Object
 @js.native
 object SortBy extends js.Object {
   /**
-    *
     * Ascending sort. Smallest to largest or A to Z.
     *
     */
@@ -26,7 +25,6 @@ object SortBy extends js.Object {
   sealed trait ascending extends SortBy
   
   /**
-    *
     * Descending sort. Largest to smallest or Z to A.
     *
     */

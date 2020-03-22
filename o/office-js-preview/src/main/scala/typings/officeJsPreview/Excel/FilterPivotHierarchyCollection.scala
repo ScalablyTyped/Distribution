@@ -25,7 +25,6 @@ class FilterPivotHierarchyCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[FilterPivotHierarchy] = js.native
   /**
-    *
     * Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column,
     or filter axis, it will be removed from that location.
     *
@@ -33,14 +32,12 @@ class FilterPivotHierarchyCollection () extends ClientObject {
     */
   def add(pivotHierarchy: PivotHierarchy): FilterPivotHierarchy = js.native
   /**
-    *
     * Gets the number of pivot hierarchies in the collection.
     *
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a FilterPivotHierarchy by its name or id.
     *
     * [Api set: ExcelApi 1.8]
@@ -49,7 +46,6 @@ class FilterPivotHierarchyCollection () extends ClientObject {
     */
   def getItem(name: String): FilterPivotHierarchy = js.native
   /**
-    *
     * Gets a FilterPivotHierarchy by name. If the FilterPivotHierarchy does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.8]
@@ -68,7 +64,6 @@ class FilterPivotHierarchyCollection () extends ClientObject {
   def load(propertyNames: String): FilterPivotHierarchyCollection = js.native
   def load(propertyNames: js.Array[String]): FilterPivotHierarchyCollection = js.native
   /**
-    *
     * Removes the PivotHierarchy from the current axis.
     *
     * [Api set: ExcelApi 1.8]

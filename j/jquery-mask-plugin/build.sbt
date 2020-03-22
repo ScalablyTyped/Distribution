@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-mask-plugin"
-version := "1.14-dt-20190326Z-0d3f06"
+version := "1.14-dt-20200225Z-0d3f06"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

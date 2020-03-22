@@ -29,7 +29,7 @@ class BucketObject protected () extends CustomResource {
     */
   val acl: Output_[js.UndefOr[String]] = js.native
   /**
-    * The name of the bucket to put the file in.
+    * The name of the bucket to put the file in. Alternatively, an [S3 access point](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-access-points.html) ARN can be specified.
     */
   val bucket: Output_[String] = js.native
   /**

@@ -35,7 +35,7 @@ trait WriteCampaignRequest extends js.Object {
     */
   var MessageConfiguration: js.UndefOr[typings.awsSdk.pinpointMod.MessageConfiguration] = js.native
   /**
-    * The custom name of the campaign.
+    * A custom name for the campaign.
     */
   var Name: js.UndefOr[string] = js.native
   /**
@@ -59,7 +59,7 @@ trait WriteCampaignRequest extends js.Object {
     */
   var TreatmentDescription: js.UndefOr[string] = js.native
   /**
-    * The custom name of a variation of the campaign to use for A/B testing.
+    * A custom name for a variation of the campaign to use for A/B testing.
     */
   var TreatmentName: js.UndefOr[string] = js.native
   /**

@@ -23,7 +23,7 @@ trait LogSubscriptionFilterState extends js.Object {
   /**
     * The name of the log group to associate the subscription filter with
     */
-  val logGroup: js.UndefOr[Input[LogGroup]] = js.native
+  val logGroup: js.UndefOr[Input[String | LogGroup]] = js.native
   /**
     * A name for the subscription filter
     */
@@ -40,7 +40,7 @@ object LogSubscriptionFilterState {
     destinationArn: Input[String] = null,
     distribution: Input[String] = null,
     filterPattern: Input[String] = null,
-    logGroup: Input[LogGroup] = null,
+    logGroup: Input[String | LogGroup] = null,
     name: Input[String] = null,
     roleArn: Input[String] = null
   ): LogSubscriptionFilterState = {

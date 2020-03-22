@@ -11,9 +11,5 @@ trait ThemedStyledFunction[C /* <: /* import warning: LimitUnionLength.leaveType
   // Fun thing: 'attrs' can also provide a polymorphic 'as' prop
   // My head already hurts enough so maybe later...
   def attrs[U, NewA /* <: (Partial[StyledComponentPropsWithRef[C] with U]) with StringDictionary[js.Any] */](attrs: Attrs[StyledComponentPropsWithRef[C] with U, NewA, T]): ThemedStyledFunction[C, T, O with NewA, A | String] = js.native
-  // Only this overload is deprecated
-  // tslint:disable:unified-signatures
-  /** @deprecated Prefer using the new single function style, to be removed in v5 */
-  def attrs[U, NewA /* <: (Partial[StyledComponentPropsWithRef[C] with U]) with StringDictionary[js.Any] */](attrs: DeprecatedAttrs[StyledComponentPropsWithRef[C] with U, NewA, T]): ThemedStyledFunction[C, T, O with NewA, A | String] = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for router5-transition-path
 
-Typings are for version 8.0.0
+Typings are for version 8.0.1
 
 ## Library description:
 Router5 transition path helper function

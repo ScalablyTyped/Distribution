@@ -1,7 +1,7 @@
 
 # Scala.js typings for weixin-app
 
-Typings are for version 2.2
+Typings are for version 2.9
 
 
 

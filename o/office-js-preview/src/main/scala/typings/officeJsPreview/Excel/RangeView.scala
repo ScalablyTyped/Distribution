@@ -107,7 +107,6 @@ class RangeView () extends ClientObject {
     */
   var values: js.Array[js.Array[_]] = js.native
   /**
-    *
     * Gets the parent range associated with the current RangeView.
     *
     * [Api set: ExcelApi 1.3]

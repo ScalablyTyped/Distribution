@@ -162,7 +162,7 @@ trait PartialMenuItemProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapMenuItemClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapMenuIt] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[MenuItemProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -379,7 +379,7 @@ object PartialMenuItemProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapMenuItemClassKey = null,
+    classes: PartialClassNameMapMenuIt = null,
     color: String = null,
     component: ReactType[MenuItemProps] = null,
     contentEditable: Booleanish | inherit = null,

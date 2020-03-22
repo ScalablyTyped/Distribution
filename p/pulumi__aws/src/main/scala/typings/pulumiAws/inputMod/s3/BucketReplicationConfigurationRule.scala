@@ -16,7 +16,7 @@ trait BucketReplicationConfigurationRule extends js.Object {
     */
   var filter: js.UndefOr[Input[BucketReplicationConfigurationRuleFilter]] = js.native
   /**
-    * Unique identifier for the rule.
+    * Canonical user id to grant for. Used only when `type` is `CanonicalUser`.
     */
   var id: js.UndefOr[Input[String]] = js.native
   /**

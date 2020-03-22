@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "regression"
-version := "2.0-dt-20181231Z-cf57ad"
+version := "2.0-dt-20200227Z-cf57ad"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

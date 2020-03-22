@@ -35,7 +35,7 @@ trait ImportJobRequest extends js.Object {
     */
   var SegmentId: js.UndefOr[string] = js.native
   /**
-    * The custom name for the segment that's created by the import job, if the value of the DefineSegment property is true.
+    * A custom name for the segment that's created by the import job, if the value of the DefineSegment property is true.
     */
   var SegmentName: js.UndefOr[string] = js.native
 }

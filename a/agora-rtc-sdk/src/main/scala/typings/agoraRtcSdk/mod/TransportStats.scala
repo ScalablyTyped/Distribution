@@ -13,7 +13,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Statistics of the network connection. */
+/**
+  * Statistics of the network connection.
+  *
+  * If {@link getTransportStats} is called successfully, this interface provides the statistics.
+  */
 trait TransportStats extends js.Object {
   /**
     * Network type.
@@ -30,7 +34,7 @@ trait TransportStats extends js.Object {
     *
     * **Note:**
     *
-    * Chrome 61+ is required for this function, and the compatibility is not guaranteed.
+    * Chrome 61 or later is required for this function, and the compatibility is not guaranteed.
     * See [Network Information API](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API) for details.
     */
   val NetworkType: js.UndefOr[

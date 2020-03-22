@@ -55,7 +55,6 @@ class ChartBorder () extends ClientObject {
     */
   var weight: Double = js.native
   /**
-    *
     * Clear the border format of a chart element.
     *
     * [Api set: ExcelApi 1.8]

@@ -9,7 +9,7 @@ trait FlowLog extends js.Object {
   /**
     * The date and time the flow log was created.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[MillisecondDateTime] = js.native
   /**
     * Information about the error that occurred. Rate limited indicates that CloudWatch Logs throttling has been applied for one or more network interfaces, or that you've reached the limit on the number of log groups that you can create. Access error indicates that the IAM role associated with the flow log does not have sufficient permissions to publish to CloudWatch Logs. Unknown error indicates an internal error.
     */
@@ -55,6 +55,10 @@ trait FlowLog extends js.Object {
     */
   var ResourceId: js.UndefOr[String] = js.native
   /**
+    * The tags for the flow log.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
+  /**
     * The type of traffic captured for the flow log.
     */
   var TrafficType: js.UndefOr[typings.awsSdk.ec2Mod.TrafficType] = js.native
@@ -63,7 +67,7 @@ trait FlowLog extends js.Object {
 object FlowLog {
   @scala.inline
   def apply(
-    CreationTime: DateTime = null,
+    CreationTime: MillisecondDateTime = null,
     DeliverLogsErrorMessage: String = null,
     DeliverLogsPermissionArn: String = null,
     DeliverLogsStatus: String = null,
@@ -75,6 +79,7 @@ object FlowLog {
     LogGroupName: String = null,
     MaxAggregationInterval: Int | scala.Double = null,
     ResourceId: String = null,
+    Tags: TagList = null,
     TrafficType: TrafficType = null
   ): FlowLog = {
     val __obj = js.Dynamic.literal()
@@ -90,6 +95,7 @@ object FlowLog {
     if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
     if (MaxAggregationInterval != null) __obj.updateDynamic("MaxAggregationInterval")(MaxAggregationInterval.asInstanceOf[js.Any])
     if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TrafficType != null) __obj.updateDynamic("TrafficType")(TrafficType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowLog]
   }

@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object executorGroupMod extends js.Object {
   @js.native
-  trait ExecutorGroup
-    extends typings.ol.disposableMod.default {
+  trait ExecutorGroup extends js.Object {
     def clip(context: CanvasRenderingContext2D, transform: Transform): Unit = js.native
     def execute(
       context: CanvasRenderingContext2D,

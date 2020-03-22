@@ -15,7 +15,6 @@ sealed trait ReadingOrder extends js.Object
 @js.native
 object ReadingOrder extends js.Object {
   /**
-    *
     * Reading order is determined by the language of the first character entered.
     If a right-to-left language character is entered first, reading order is right to left.
     If a left-to-right language character is entered first, reading order is left to right.
@@ -25,7 +24,6 @@ object ReadingOrder extends js.Object {
   sealed trait context extends ReadingOrder
   
   /**
-    *
     * Left to right reading order
     *
     */
@@ -33,7 +31,6 @@ object ReadingOrder extends js.Object {
   sealed trait leftToRight extends ReadingOrder
   
   /**
-    *
     * Right to left reading order
     *
     */

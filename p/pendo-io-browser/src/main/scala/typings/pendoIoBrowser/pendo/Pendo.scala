@@ -32,6 +32,7 @@ trait Pendo extends js.Object {
   def identify(visitorId: String): Unit = js.native
   def identify(visitorId: String, accountId: String): Unit = js.native
   // Initialization and Identification
+  def initialize(): Unit = js.native
   def initialize(options: InitOptions): Unit = js.native
   def isDebuggingEnabled(): Yes | No = js.native
   @JSName("isDebuggingEnabled")

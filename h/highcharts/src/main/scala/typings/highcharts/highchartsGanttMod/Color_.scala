@@ -18,3 +18,18 @@ class Color_ protected ()
   def this(input: ColorType) = this()
 }
 
+/* static members */
+@JSImport("highcharts/highcharts-gantt", "Color")
+@js.native
+object Color_ extends js.Object {
+  /**
+    * Creates a color instance out of a color string or object.
+    *
+    * @param input
+    *        The input color in either rbga or hex format.
+    *
+    * @return Color instance.
+    */
+  def parse(input: ColorType): typings.highcharts.mod.Color_ = js.native
+}
+

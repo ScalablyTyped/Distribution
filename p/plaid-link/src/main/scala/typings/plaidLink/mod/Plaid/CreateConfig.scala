@@ -12,6 +12,7 @@ trait CreateConfig extends js.Object {
   var isWebView: js.UndefOr[Boolean] = js.native
   var key: String = js.native
   var language: js.UndefOr[Language] = js.native
+  var linkCustomizationName: js.UndefOr[String] = js.native
   var oauthNonce: js.UndefOr[String] = js.native
   var oauthRedirectUri: js.UndefOr[String] = js.native
   var oauthStateId: js.UndefOr[String] = js.native

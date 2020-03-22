@@ -1,6 +1,6 @@
 package typings.materialUiCore.tableSortLabelTableSortLabelMod
 
-import typings.materialUiCore.PartialClassNameMapTableSortLabelClassKey
+import typings.materialUiCore.PartialClassNameMapTableS
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -161,7 +161,7 @@ trait TableSortLabelProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTableSortLabelClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTableS] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -374,7 +374,7 @@ object TableSortLabelProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTableSortLabelClassKey = null,
+    classes: PartialClassNameMapTableS = null,
     color: String = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

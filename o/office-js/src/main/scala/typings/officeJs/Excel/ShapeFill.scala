@@ -50,7 +50,6 @@ class ShapeFill () extends ClientObject {
     */
   val `type`: ShapeFillType | NoFill | Solid | Gradient | Pattern | PictureAndTexture | Mixed = js.native
   /**
-    *
     * Clears the fill formatting of this shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -82,7 +81,6 @@ class ShapeFill () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ShapeFill): Unit = js.native
   /**
-    *
     * Sets the fill formatting of the shape to a uniform color. This changes the fill type to "Solid".
     *
     * [Api set: ExcelApi 1.9]

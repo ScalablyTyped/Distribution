@@ -22,6 +22,10 @@ trait LaunchConfig extends js.Object {
     * The port forwarding configuration.
     */
   var portForwardingConfig: js.UndefOr[PortForwardingConfig] = js.native
+  /**
+    * Boolean indicating whether a streaming session will be configured for the application. If True, AWS RoboMaker will configure a connection so you can interact with your application as it is running in the simulation. You must configure and luanch the component. It must have a graphical user interface. 
+    */
+  var streamUI: js.UndefOr[Boolean] = js.native
 }
 
 object LaunchConfig {
@@ -30,11 +34,13 @@ object LaunchConfig {
     launchFile: Command,
     packageName: Command,
     environmentVariables: EnvironmentVariableMap = null,
-    portForwardingConfig: PortForwardingConfig = null
+    portForwardingConfig: PortForwardingConfig = null,
+    streamUI: js.UndefOr[scala.Boolean] = js.undefined
   ): LaunchConfig = {
     val __obj = js.Dynamic.literal(launchFile = launchFile.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
     if (portForwardingConfig != null) __obj.updateDynamic("portForwardingConfig")(portForwardingConfig.asInstanceOf[js.Any])
+    if (!js.isUndefined(streamUI)) __obj.updateDynamic("streamUI")(streamUI.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchConfig]
   }
 }

@@ -354,6 +354,7 @@ import typings.igniteUi.igniteUiStrings.contentEditable
 import typings.igniteUi.igniteUiStrings.contentHitTestMode
 import typings.igniteUi.igniteUiStrings.contentTemplate
 import typings.igniteUi.igniteUiStrings.contentWindow
+import typings.igniteUi.igniteUiStrings.contextMenuOpening
 import typings.igniteUi.igniteUiStrings.contextRowLoadingText
 import typings.igniteUi.igniteUiStrings.contextRowMode
 import typings.igniteUi.igniteUiStrings.contextRowRendered
@@ -801,6 +802,7 @@ import typings.igniteUi.igniteUiStrings.getItemFromSeriesPixel
 import typings.igniteUi.igniteUiStrings.getItemIndex
 import typings.igniteUi.igniteUiStrings.getItemIndexFromSeriesPixel
 import typings.igniteUi.igniteUiStrings.getItemSpan
+import typings.igniteUi.igniteUiStrings.getLegend
 import typings.igniteUi.igniteUiStrings.getMultiColumnHeaders
 import typings.igniteUi.igniteUiStrings.getPanes
 import typings.igniteUi.igniteUiStrings.getPointForValue
@@ -1187,10 +1189,6 @@ import typings.igniteUi.igniteUiStrings.leafNodeImageUrl
 import typings.igniteUi.igniteUiStrings.leftMargin
 import typings.igniteUi.igniteUiStrings.legend
 import typings.igniteUi.igniteUiStrings.legendItemBadgeTemplate
-import typings.igniteUi.igniteUiStrings.legendItemMouseEnter
-import typings.igniteUi.igniteUiStrings.legendItemMouseLeave
-import typings.igniteUi.igniteUiStrings.legendItemMouseLeftButtonDown
-import typings.igniteUi.igniteUiStrings.legendItemMouseLeftButtonUp
 import typings.igniteUi.igniteUiStrings.legendItemTemplate
 import typings.igniteUi.igniteUiStrings.legendLabelMemberPath
 import typings.igniteUi.igniteUiStrings.lengthRange
@@ -1725,6 +1723,7 @@ import typings.igniteUi.igniteUiStrings.rowsRendered
 import typings.igniteUi.igniteUiStrings.rowsRendering
 import typings.igniteUi.igniteUiStrings.rowsRequested
 import typings.igniteUi.igniteUiStrings.rowsRequesting
+import typings.igniteUi.igniteUiStrings.rsRenderColgroup
 import typings.igniteUi.igniteUiStrings.saveChanges
 import typings.igniteUi.igniteUiStrings.saveChangesErrorHandler
 import typings.igniteUi.igniteUiStrings.saveChangesSuccessHandler
@@ -5844,189 +5843,26 @@ trait JQuery extends js.Object {
   	 */
   def igChartLegend(optionLiteral: option, optionName: `type`, optionValue: String): Unit = js.native
   /**
-  	 * The height of the legend. It can be set as a number in pixels, string (px) or percentage (%).
+  	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.null will stretch vertically to fit data, no other height are defined
+  	 *
   	 */
   def igChartLegend(optionLiteral: option, optionName: height): String | Double = js.native
   /**
-  	 * The height of the legend. It can be set as a number in pixels, string (px) or percentage (%).
+  	 * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.null will stretch vertically to fit data, no other height are defined
+  	 *
   	 *
   	 * @optionValue New value to be set.
   	 */
   def igChartLegend(optionLiteral: option, optionName: height, optionValue: String): Unit = js.native
   def igChartLegend(optionLiteral: option, optionName: height, optionValue: Double): Unit = js.native
-  /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: language): String = js.native
-  /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: language, optionValue: String): Unit = js.native
-  /**
-  	 * Occurs when the left mouse pointer enters an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: legendItemMouseEnter): LegendItemMouseEnterEvent = js.native
-  /**
-  	 * Occurs when the left mouse pointer enters an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: legendItemMouseEnter, optionValue: LegendItemMouseEnterEvent): Unit = js.native
-  /**
-  	 * Occurs when the left mouse pointer leaves an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: legendItemMouseLeave): LegendItemMouseLeaveEvent = js.native
-  /**
-  	 * Occurs when the left mouse pointer leaves an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: legendItemMouseLeave, optionValue: LegendItemMouseLeaveEvent): Unit = js.native
-  /**
-  	 * Occurs when the left mouse button is pressed while the mouse pointer is over an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: legendItemMouseLeftButtonDown): LegendItemMouseLeftButtonDownEvent = js.native
-  /**
-  	 * Occurs when the left mouse button is pressed while the mouse pointer is over an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(
-    optionLiteral: option,
-    optionName: legendItemMouseLeftButtonDown,
-    optionValue: LegendItemMouseLeftButtonDownEvent
-  ): Unit = js.native
-  /**
-  	 * Occurs when the left mouse button is released while the mouse pointer is over an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: legendItemMouseLeftButtonUp): LegendItemMouseLeftButtonUpEvent = js.native
-  /**
-  	 * Occurs when the left mouse button is released while the mouse pointer is over an element of this legend.
-  	 * Function takes arguments evt and ui.
-  	 * Use ui.legend to get reference to current legend object.
-  	 * Use ui.chart to get reference to chart owner object.
-  	 * Use ui.series to get reference to current series owner object.
-  	 * Use ui.actualItemBrush to get legend item brush.
-  	 * Use ui.actualSeriesBrush to get series owner brush.
-  	 * Use ui.item to get reference to chart item related to event.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(
-    optionLiteral: option,
-    optionName: legendItemMouseLeftButtonUp,
-    optionValue: LegendItemMouseLeftButtonUpEvent
-  ): Unit = js.native
-  /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: locale): js.Any = js.native
-  /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: locale, optionValue: js.Any): Unit = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: regional): String | js.Object = js.native
-  /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: regional, optionValue: String): Unit = js.native
-  def igChartLegend(optionLiteral: option, optionName: regional, optionValue: js.Object): Unit = js.native
-  /**
-  	 * The swatch used to style this widget
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: theme): String = js.native
-  /**
-  	 * The swatch used to style this widget
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igChartLegend(optionLiteral: option, optionName: theme, optionValue: String): Unit = js.native
-  /**
-  	 * The width of the legend. It can be set as a number in pixels, string (px) or percentage (%).
-  	 */
   def igChartLegend(optionLiteral: option, optionName: width): String | Double = js.native
-  /**
-  	 * The width of the legend. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
   def igChartLegend(optionLiteral: option, optionName: width, optionValue: String): Unit = js.native
   def igChartLegend(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
   def igChartLegend(options: IgChartLegend): JQuery = js.native
   @JSName("igChartLegend")
-  def igChartLegend_changeGlobalLanguage(methodName: changeGlobalLanguage): Unit = js.native
-  @JSName("igChartLegend")
-  def igChartLegend_changeGlobalRegional(methodName: changeGlobalRegional): Unit = js.native
-  @JSName("igChartLegend")
-  def igChartLegend_changeLocale(methodName: changeLocale, $container: js.Object): Unit = js.native
-  @JSName("igChartLegend")
   def igChartLegend_destroy(methodName: destroy): Unit = js.native
   @JSName("igChartLegend")
-  def igChartLegend_exportVisualData(methodName: exportVisualData): Unit = js.native
+  def igChartLegend_getLegend(methodName: getLegend): Unit = js.native
   @JSName("igChartLegend")
   def igChartLegend_id(methodName: id): String = js.native
   @JSName("igChartLegend")
@@ -6035,8 +5871,6 @@ trait JQuery extends js.Object {
   def igChartLegend_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
   @JSName("igChartLegend")
   def igChartLegend_option(optionLiteral: option, options: IgChartLegend): JQuery = js.native
-  @JSName("igChartLegend")
-  def igChartLegend_widget(methodName: widget): Unit = js.native
   def igCheckboxEditor(methodName: String, methodParams: js.Any*): js.Any = js.native
   def igCheckboxEditor(optionLiteral: option, optionName: allowNullValue): Boolean = js.native
   def igCheckboxEditor(optionLiteral: option, optionName: allowNullValue, optionValue: Boolean): Unit = js.native
@@ -12690,76 +12524,6 @@ trait JQuery extends js.Object {
   	 */
   def igDoughnutChart(optionLiteral: option, optionName: browserNotSupported, optionValue: BrowserNotSupportedEvent): Unit = js.native
   /**
-  	 * Event which is raised before data binding.
-  	 * Return false in order to cancel data binding.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataBinding): DataBindingEvent = js.native
-  /**
-  	 * Event which is raised before data binding.
-  	 * Return false in order to cancel data binding.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
-  	 *
-  	 * @optionValue Define event handler function.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataBinding, optionValue: DataBindingEvent): Unit = js.native
-  /**
-  	 * Event which is raised after data binding.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.data to obtain reference to array actual data which is displayed by chart.
-  	 * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataBound): DataBoundEvent = js.native
-  /**
-  	 * Event which is raised after data binding.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.data to obtain reference to array actual data which is displayed by chart.
-  	 * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
-  	 *
-  	 * @optionValue Define event handler function.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataBound, optionValue: DataBoundEvent): Unit = js.native
-  /**
-  	 * Gets  a valid data source.
-  	 * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
-  	 * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataSource): js.Any = js.native
-  /**
-  	 * Gets  data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataSourceType): String = js.native
-  /**
-  	 * Sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataSourceType, optionValue: String): Unit = js.native
-  /**
-  	 * Gets  url which is used for sending JSON on request for remote data.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataSourceUrl): String = js.native
-  /**
-  	 * Sets url which is used for sending JSON on request for remote data.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataSourceUrl, optionValue: String): Unit = js.native
-  /**
-  	 * Sets a valid data source.
-  	 * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
-  	 * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: dataSource, optionValue: js.Any): Unit = js.native
-  /**
   	 * The height of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
   def igDoughnutChart(optionLiteral: option, optionName: height): String | Double = js.native
@@ -12770,26 +12534,6 @@ trait JQuery extends js.Object {
   	 */
   def igDoughnutChart(optionLiteral: option, optionName: height, optionValue: String): Unit = js.native
   def igDoughnutChart(optionLiteral: option, optionName: height, optionValue: Double): Unit = js.native
-  /**
-  	 * Event which is raised before tooltip is hidden.
-  	 * Return false in order to cancel hiding and keep tooltip visible.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.item to obtain reference to item.
-  	 * Use ui.element to obtain reference to jquery object which represents tooltip or value of ui.element from last updateTooltip event. Value of that member can be replaced by custom element.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: hideTooltip): HideTooltipEvent = js.native
-  /**
-  	 * Event which is raised before tooltip is hidden.
-  	 * Return false in order to cancel hiding and keep tooltip visible.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.item to obtain reference to item.
-  	 * Use ui.element to obtain reference to jquery object which represents tooltip or value of ui.element from last updateTooltip event. Value of that member can be replaced by custom element.
-  	 *
-  	 * @optionValue Define event handler function.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: hideTooltip, optionValue: HideTooltipEvent): Unit = js.native
   /**
   	 * Raised when the dimensions (center point or radius) of the doughnut hole change.
   	 */
@@ -12821,16 +12565,6 @@ trait JQuery extends js.Object {
   	 */
   def igDoughnutChart(optionLiteral: option, optionName: isSurfaceInteractionDisabled, optionValue: Boolean): Unit = js.native
   /**
-  	 * Gets  maximum number of displayed records in chart.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: maxRecCount): Double = js.native
-  /**
-  	 * Sets maximum number of displayed records in chart.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: maxRecCount, optionValue: Double): Unit = js.native
-  /**
   	 * Gets  the scaling value used to affect the pixel density of the control.
   	 * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
   	 * to appear blurry.
@@ -12844,26 +12578,6 @@ trait JQuery extends js.Object {
   	 * @optionValue New value to be set.
   	 */
   def igDoughnutChart(optionLiteral: option, optionName: pixelScalingRatio, optionValue: Double): Unit = js.native
-  /**
-  	 * See $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: responseDataKey): String = js.native
-  /**
-  	 * See $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: responseDataKey, optionValue: String): Unit = js.native
-  /**
-  	 * See $.ig.DataSource. property in the response specifying the total number of records on the server.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: responseTotalRecCountKey): String = js.native
-  /**
-  	 * See $.ig.DataSource. property in the response specifying the total number of records on the server.
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: responseTotalRecCountKey, optionValue: String): Unit = js.native
   /**
   	 * Gets  the style used when a slice is selected.
   	 */
@@ -12991,44 +12705,6 @@ trait JQuery extends js.Object {
   	 */
   def igDoughnutChart(optionLiteral: option, optionName: tooltipShown, optionValue: TooltipShownEvent): Unit = js.native
   /**
-  	 * Gets  template for tooltip associated with chart item.
-  	 * Example: "Value: $(ValueMemberPathInDataSource)"
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: tooltipTemplate): String = js.native
-  /**
-  	 * Sets template for tooltip associated with chart item.
-  	 * Example: "Value: $(ValueMemberPathInDataSource)"
-  	 *
-  	 * @optionValue New value to be set.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: tooltipTemplate, optionValue: String): Unit = js.native
-  /**
-  	 * Event which is raised before tooltip is updated.
-  	 * Return false in order to cancel updating and hide tooltip.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.text to obtain html of tooltip. Value of that member can be modified. If modified value is null or empty string, then current content of tooltip keeps old value.
-  	 * Use ui.item to obtain reference to item. Value of that member can be modified or replaced by custom item.
-  	 * Use ui.x to obtain left position of tooltip in pixels relative to widget. Value of that member can be modified.
-  	 * Use ui.y to obtain top position of tooltip in pixels relative to widget. Value of that member can be modified.
-  	 * Use ui.element to obtain reference to jquery object which represents tooltip. Value of that member can be replaced by custom element.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: updateTooltip): UpdateTooltipEvent = js.native
-  /**
-  	 * Event which is raised before tooltip is updated.
-  	 * Return false in order to cancel updating and hide tooltip.
-  	 * Function takes first argument null and second argument ui.
-  	 * Use ui.owner to obtain reference to chart widget.
-  	 * Use ui.text to obtain html of tooltip. Value of that member can be modified. If modified value is null or empty string, then current content of tooltip keeps old value.
-  	 * Use ui.item to obtain reference to item. Value of that member can be modified or replaced by custom item.
-  	 * Use ui.x to obtain left position of tooltip in pixels relative to widget. Value of that member can be modified.
-  	 * Use ui.y to obtain top position of tooltip in pixels relative to widget. Value of that member can be modified.
-  	 * Use ui.element to obtain reference to jquery object which represents tooltip. Value of that member can be replaced by custom element.
-  	 *
-  	 * @optionValue Define event handler function.
-  	 */
-  def igDoughnutChart(optionLiteral: option, optionName: updateTooltip, optionValue: UpdateTooltipEvent): Unit = js.native
-  /**
   	 * The width of the chart. It can be set as a number in pixels, string (px) or percentage (%).
   	 */
   def igDoughnutChart(optionLiteral: option, optionName: width): String | Double = js.native
@@ -13041,19 +12717,11 @@ trait JQuery extends js.Object {
   def igDoughnutChart(optionLiteral: option, optionName: width, optionValue: Double): Unit = js.native
   def igDoughnutChart(options: IgDoughnutChart): JQuery = js.native
   @JSName("igDoughnutChart")
-  def igDoughnutChart_addItem(methodName: addItem, item: js.Object): js.Object = js.native
-  @JSName("igDoughnutChart")
   def igDoughnutChart_addSeries(methodName: addSeries, seriesObj: js.Object): Unit = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_chart(methodName: chart): js.Object = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_dataBind(methodName: dataBind): Unit = js.native
   @JSName("igDoughnutChart")
   def igDoughnutChart_destroy(methodName: destroy): Unit = js.native
   @JSName("igDoughnutChart")
   def igDoughnutChart_exportVisualData(methodName: exportVisualData): js.Object = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_findIndexOfItem(methodName: findIndexOfItem, item: js.Object): Double = js.native
   @JSName("igDoughnutChart")
   def igDoughnutChart_flush(methodName: flush): Unit = js.native
   @JSName("igDoughnutChart")
@@ -13061,25 +12729,7 @@ trait JQuery extends js.Object {
   @JSName("igDoughnutChart")
   def igDoughnutChart_getData(methodName: getData, series: String): js.Object = js.native
   @JSName("igDoughnutChart")
-  def igDoughnutChart_getDataItem(methodName: getDataItem, index: js.Object): js.Object = js.native
-  @JSName("igDoughnutChart")
   def igDoughnutChart_getHoleRadius(methodName: getHoleRadius): Double = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_insertItem(methodName: insertItem, item: js.Object, index: Double): js.Object = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_notifyClearItems(methodName: notifyClearItems, dataSource: js.Object): js.Object = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_notifyInsertItem(methodName: notifyInsertItem, dataSource: js.Object, index: Double, newItem: js.Object): js.Object = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_notifyRemoveItem(methodName: notifyRemoveItem, dataSource: js.Object, index: Double, oldItem: js.Object): js.Object = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_notifySetItem(
-    methodName: notifySetItem,
-    dataSource: js.Object,
-    index: Double,
-    newItem: js.Object,
-    oldItem: js.Object
-  ): js.Object = js.native
   @JSName("igDoughnutChart")
   def igDoughnutChart_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igDoughnutChart")
@@ -13087,11 +12737,7 @@ trait JQuery extends js.Object {
   @JSName("igDoughnutChart")
   def igDoughnutChart_option(optionLiteral: option, options: IgDoughnutChart): JQuery = js.native
   @JSName("igDoughnutChart")
-  def igDoughnutChart_removeItem(methodName: removeItem, index: Double): js.Object = js.native
-  @JSName("igDoughnutChart")
   def igDoughnutChart_removeSeries(methodName: removeSeries, seriesObj: js.Object): Unit = js.native
-  @JSName("igDoughnutChart")
-  def igDoughnutChart_setItem(methodName: setItem, index: Double, item: js.Object): js.Object = js.native
   @JSName("igDoughnutChart")
   def igDoughnutChart_updateSeries(methodName: updateSeries, value: js.Object): Unit = js.native
   def igEditorFilter(methodName: String, methodParams: js.Any*): js.Any = js.native
@@ -21811,6 +21457,8 @@ trait JQuery extends js.Object {
   def igGridRowSelectors_option(optionLiteral: option, optionName: String, optionValue: js.Any): JQuery = js.native
   @JSName("igGridRowSelectors")
   def igGridRowSelectors_option(optionLiteral: option, options: IgGridRowSelectors): JQuery = js.native
+  @JSName("igGridRowSelectors")
+  def igGridRowSelectors_rsRenderColgroup(methodName: rsRenderColgroup): Unit = js.native
   def igGridSelection(methodName: String, methodParams: js.Any*): js.Any = js.native
   /**
   	 * Enables / disables activation of rows and cells. Activation implies ability to perform navigating through cells and rows via the keyboard, and selecting rows and cells using CTRL / SHIFT - in the way cells/rows are selected in Ms Excel
@@ -26779,7 +26427,7 @@ trait JQuery extends js.Object {
   @JSName("igLinearGauge")
   def igLinearGauge_getValueForPoint(methodName: getValueForPoint, x: js.Object, y: js.Object): Double = js.native
   @JSName("igLinearGauge")
-  def igLinearGauge_needleContainsPoint(methodName: needleContainsPoint, x: Double, y: Double): Unit = js.native
+  def igLinearGauge_needleContainsPoint(methodName: needleContainsPoint, x: Double, y: Double): Boolean = js.native
   @JSName("igLinearGauge")
   def igLinearGauge_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igLinearGauge")
@@ -34016,7 +33664,7 @@ trait JQuery extends js.Object {
   @JSName("igRadialGauge")
   def igRadialGauge_getValueForPoint(methodName: getValueForPoint, x: js.Object, y: js.Object): Double = js.native
   @JSName("igRadialGauge")
-  def igRadialGauge_needleContainsPoint(methodName: needleContainsPoint, x: js.Object, y: js.Object): Unit = js.native
+  def igRadialGauge_needleContainsPoint(methodName: needleContainsPoint, x: js.Object, y: js.Object): Boolean = js.native
   @JSName("igRadialGauge")
   def igRadialGauge_option(optionLiteral: option, optionName: String): js.Any = js.native
   @JSName("igRadialGauge")
@@ -38947,6 +38595,16 @@ trait JQuery extends js.Object {
   	 */
   def igSpreadsheet(optionLiteral: option, optionName: brushes, optionValue: IgSpreadsheetBrushes): Unit = js.native
   /**
+  	 * Invoked when a contextmenu is being opened for the Spreadsheet.
+  	 */
+  def igSpreadsheet(optionLiteral: option, optionName: contextMenuOpening): ContextMenuOpeningEvent = js.native
+  /**
+  	 * Invoked when a contextmenu is being opened for the Spreadsheet.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igSpreadsheet(optionLiteral: option, optionName: contextMenuOpening, optionValue: ContextMenuOpeningEvent): Unit = js.native
+  /**
   	 * Invoked when the Spreadsheet has started in-place editing of the activeCell.
   	 */
   def igSpreadsheet(optionLiteral: option, optionName: editModeEntered): EditModeEnteredEvent = js.native
@@ -39023,14 +38681,24 @@ trait JQuery extends js.Object {
     optionValue: EditRangePasswordNeededEvent
   ): Unit = js.native
   /**
-  	 * Returns  an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.This property is only used if the isEnterKeyNavigationEnabled is set to true. Also, the reverse direction is
+  	 * Returns  an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.
+  	 * This property is only used if the isEnterKeyNavigationEnabled is set to true. Also, the reverse direction is
   	 * navigated when Shift + Enter are pressed.
+  	 * down  The cell below should be activated.
+  	 * right  The cell to the right should be activated
+  	 * up  The cell above should be activated.
+  	 * left  The cell to the left should be activated
   	 *
   	 */
   def igSpreadsheet(optionLiteral: option, optionName: enterKeyNavigationDirection): String = js.native
   /**
-  	 * Returns or sets an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.This property is only used if the isEnterKeyNavigationEnabled is set to true. Also, the reverse direction is
+  	 * Returns or sets an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.
+  	 * This property is only used if the isEnterKeyNavigationEnabled is set to true. Also, the reverse direction is
   	 * navigated when Shift + Enter are pressed.
+  	 * down  The cell below should be activated.
+  	 * right  The cell to the right should be activated
+  	 * up  The cell above should be activated.
+  	 * left  The cell to the left should be activated
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -39236,11 +38904,17 @@ trait JQuery extends js.Object {
   ): Unit = js.native
   /**
   	 * Returns  a value indicating how the selection is updated when interacting with the cells via the mouse or keyboard.
+  	 * normal  The selection is replaced when dragging the mouse to select a cell or range of cells. Similarly when navigating via the keyboard a new selection is created. One may add a new range by holding the Ctrl key and using the mouse and one may alter the selection range containing the active cell by holding the Shift key down while clicking with the mouse or navigating with the keyboard such as with the arrow keys.
+  	 * extendSelection  The selection range in the cellRanges representing the active cell is updated as one uses the mouse to select a cell or navigating via the keyboard.
+  	 * addToSelection  New cell ranges are added to the cellRanges without needing to hold down the ctrl key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing Shift+F8.
   	 *
   	 */
   def igSpreadsheet(optionLiteral: option, optionName: selectionMode): String = js.native
   /**
   	 * Returns or sets a value indicating how the selection is updated when interacting with the cells via the mouse or keyboard.
+  	 * normal  The selection is replaced when dragging the mouse to select a cell or range of cells. Similarly when navigating via the keyboard a new selection is created. One may add a new range by holding the Ctrl key and using the mouse and one may alter the selection range containing the active cell by holding the Shift key down while clicking with the mouse or navigating with the keyboard such as with the arrow keys.
+  	 * extendSelection  The selection range in the cellRanges representing the active cell is updated as one uses the mouse to select a cell or navigating via the keyboard.
+  	 * addToSelection  New cell ranges are added to the cellRanges without needing to hold down the ctrl key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing Shift+F8.
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -46953,6 +46627,8 @@ trait JQuery extends js.Object {
   def igTreeGridRowSelectors_option(optionLiteral: option, options: IgTreeGridRowSelectors): JQuery = js.native
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_partiallyCheckedRows(methodName: partiallyCheckedRows): js.Array[_] = js.native
+  @JSName("igTreeGridRowSelectors")
+  def igTreeGridRowSelectors_rsRenderColgroup(methodName: rsRenderColgroup): Unit = js.native
   @JSName("igTreeGridRowSelectors")
   def igTreeGridRowSelectors_toggleCheckState(methodName: toggleCheckState, index: Double): Unit = js.native
   @JSName("igTreeGridRowSelectors")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mocha-phantomjs"
-version := "v3.5.0-dt-20190322Z-261500"
+version := "v3.5.0-dt-20200226Z-261500"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

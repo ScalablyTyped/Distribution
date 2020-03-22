@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apostrophe"
-version := "2.67-dt-20181024Z-d1091d"
+version := "2.67-dt-20200225Z-d1091d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

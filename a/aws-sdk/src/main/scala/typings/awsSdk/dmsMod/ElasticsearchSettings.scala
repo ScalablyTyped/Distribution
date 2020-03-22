@@ -11,7 +11,7 @@ trait ElasticsearchSettings extends js.Object {
     */
   var EndpointUri: String = js.native
   /**
-    * The maximum number of seconds that DMS retries failed API requests to the Elasticsearch cluster.
+    * The maximum number of seconds for which DMS retries failed API requests to the Elasticsearch cluster.
     */
   var ErrorRetryDuration: js.UndefOr[IntegerOptional] = js.native
   /**

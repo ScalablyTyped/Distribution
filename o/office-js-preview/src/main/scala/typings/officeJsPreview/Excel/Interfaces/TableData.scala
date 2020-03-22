@@ -51,6 +51,8 @@ trait TableData extends js.Object {
   /**
     *
     * Name of the table.
+    
+    The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
     *
     * [Api set: ExcelApi 1.1]
     */
@@ -111,6 +113,14 @@ trait TableData extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var style: js.UndefOr[String] = js.undefined
+  /**
+    *
+    * The style applied to the Table.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var tableStyle: js.UndefOr[TableStyleData] = js.undefined
 }
 
 object TableData {
@@ -130,7 +140,8 @@ object TableData {
     showHeaders: js.UndefOr[Boolean] = js.undefined,
     showTotals: js.UndefOr[Boolean] = js.undefined,
     sort: TableSortData = null,
-    style: String = null
+    style: String = null,
+    tableStyle: TableStyleData = null
   ): TableData = {
     val __obj = js.Dynamic.literal()
     if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter.asInstanceOf[js.Any])
@@ -148,6 +159,7 @@ object TableData {
     if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.asInstanceOf[js.Any])
     if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableData]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "canvasjs"
-version := "1.9-dt-20190717Z-9943df"
+version := "1.9-dt-20200226Z-9943df"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

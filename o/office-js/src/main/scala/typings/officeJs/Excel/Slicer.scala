@@ -115,21 +115,18 @@ class Slicer () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Clears all the filters currently applied on the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
   def clearFilters(): Unit = js.native
   /**
-    *
     * Deletes the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Returns an array of selected items' keys. Read-only.
     *
     * [Api set: ExcelApi 1.10]
@@ -146,7 +143,6 @@ class Slicer () extends ClientObject {
   def load(propertyNames: String): Slicer = js.native
   def load(propertyNames: js.Array[String]): Slicer = js.native
   /**
-    *
     * Selects slicer items based on their keys. The previous selections are cleared.
     All items will be selected by default if the array is empty.
     *

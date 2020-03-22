@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bunnymq"
-version := "2.3-dt-20180214Z-cb3b98"
+version := "2.3-dt-20200226Z-cb3b98"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

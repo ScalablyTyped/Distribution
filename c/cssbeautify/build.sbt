@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cssbeautify"
-version := "v0.3.1-dt-20191115Z-4700be"
+version := "v0.3.1-dt-20200225Z-4700be"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

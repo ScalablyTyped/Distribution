@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 /**
   * Interface representing a tenant configuration.
-  * 
+  *
   * Multi-tenancy support requires Google Cloud's Identity Platform
   * (GCIP). To learn more about GCIP, including pricing and features,
   * see the [GCIP documentation](https://cloud.google.com/identity-platform)
-  * 
+  *
   * Before multi-tenancy can be used on a Google Cloud Identity Platform project,
   * tenants must be allowed on that project via the Cloud Console UI.
-  * 
+  *
   * A tenant configuration provides information such as the display name, tenant
   * identifier and email authentication configuration.
   * For OIDC/SAML provider configuration management, `TenantAwareAuth` instances should

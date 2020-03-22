@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "timelinejs3"
-version := "v3.4.1-dt-20190322Z-1c80ab"
+version := "v3.4.1-dt-20200225Z-1c80ab"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

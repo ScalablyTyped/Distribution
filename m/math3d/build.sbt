@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "math3d"
-version := "0.2-dt-20180214Z-83ea95"
+version := "0.2-dt-20200226Z-83ea95"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

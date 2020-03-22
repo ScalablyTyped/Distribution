@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-latex-next
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 Render LaTeX in React apps

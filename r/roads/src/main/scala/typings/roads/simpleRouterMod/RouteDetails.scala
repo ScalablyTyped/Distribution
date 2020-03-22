@@ -12,6 +12,6 @@ trait RouteDetails extends js.Object {
   var path: String = js.native
   @JSName("route")
   var route_Original: Route = js.native
-  def route(path: String, body: String, headers: StringDictionary[js.Any], next: ResponseMiddleware): js.Promise[typings.roads.responseMod.default] = js.native
+  def route(path: SimpleRouterURL, body: String, headers: StringDictionary[js.Any], next: ResponseMiddleware): js.Promise[typings.roads.responseMod.default] = js.native
 }
 

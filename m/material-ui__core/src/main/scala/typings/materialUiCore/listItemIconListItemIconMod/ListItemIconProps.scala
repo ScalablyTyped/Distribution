@@ -1,6 +1,6 @@
 package typings.materialUiCore.listItemIconListItemIconMod
 
-import typings.materialUiCore.PartialClassNameMapListItemIconClassKey
+import typings.materialUiCore.PartialClassNameMapListItRoot
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -145,7 +145,7 @@ trait ListItemIconProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: ReactElement = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListItemIconClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListItRoot] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -325,7 +325,7 @@ object ListItemIconProps {
     autoCorrect: String = null,
     autoSave: String = null,
     className: String = null,
-    classes: PartialClassNameMapListItemIconClassKey = null,
+    classes: PartialClassNameMapListItRoot = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

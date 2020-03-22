@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "siesta"
-version := "0.0-unknown-dt-20190322Z-53578e"
+version := "0.0-unknown-dt-20200227Z-53578e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

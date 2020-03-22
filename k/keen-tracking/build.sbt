@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keen-tracking"
-version := "2.0-dt-20190212Z-f15b4a"
+version := "2.0-dt-20200225Z-f15b4a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

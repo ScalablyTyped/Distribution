@@ -27,7 +27,7 @@ object IHelmetHstsConfiguration {
     includeSubdomains: js.UndefOr[Boolean] = js.undefined,
     maxAge: Int | Double = null,
     preload: js.UndefOr[Boolean] = js.undefined,
-    setIf: (/* req */ Request_[ParamsDictionary], /* res */ Response_) => Boolean = null
+    setIf: (/* req */ Request_[ParamsDictionary], /* res */ Response_[js.Any]) => Boolean = null
   ): IHelmetHstsConfiguration = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])

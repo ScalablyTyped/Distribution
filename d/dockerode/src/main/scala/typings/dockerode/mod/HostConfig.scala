@@ -26,6 +26,8 @@ trait HostConfig extends js.Object {
   var CpuShares: js.UndefOr[Double] = js.undefined
   var CpusetCpus: js.UndefOr[String] = js.undefined
   var CpusetMems: js.UndefOr[String] = js.undefined
+  var DeviceCgroupRules: js.UndefOr[js.Array[String]] = js.undefined
+  var DeviceRequests: js.UndefOr[js.Array[DeviceRequest]] = js.undefined
   var Devices: js.UndefOr[js.Any] = js.undefined
   var DiskQuota: js.UndefOr[Double] = js.undefined
   var Dns: js.UndefOr[js.Array[_]] = js.undefined
@@ -90,6 +92,8 @@ object HostConfig {
     CpuShares: Int | Double = null,
     CpusetCpus: String = null,
     CpusetMems: String = null,
+    DeviceCgroupRules: js.Array[String] = null,
+    DeviceRequests: js.Array[DeviceRequest] = null,
     Devices: js.Any = null,
     DiskQuota: Int | Double = null,
     Dns: js.Array[_] = null,
@@ -151,6 +155,8 @@ object HostConfig {
     if (CpuShares != null) __obj.updateDynamic("CpuShares")(CpuShares.asInstanceOf[js.Any])
     if (CpusetCpus != null) __obj.updateDynamic("CpusetCpus")(CpusetCpus.asInstanceOf[js.Any])
     if (CpusetMems != null) __obj.updateDynamic("CpusetMems")(CpusetMems.asInstanceOf[js.Any])
+    if (DeviceCgroupRules != null) __obj.updateDynamic("DeviceCgroupRules")(DeviceCgroupRules.asInstanceOf[js.Any])
+    if (DeviceRequests != null) __obj.updateDynamic("DeviceRequests")(DeviceRequests.asInstanceOf[js.Any])
     if (Devices != null) __obj.updateDynamic("Devices")(Devices.asInstanceOf[js.Any])
     if (DiskQuota != null) __obj.updateDynamic("DiskQuota")(DiskQuota.asInstanceOf[js.Any])
     if (Dns != null) __obj.updateDynamic("Dns")(Dns.asInstanceOf[js.Any])

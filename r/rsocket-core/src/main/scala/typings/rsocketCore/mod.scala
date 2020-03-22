@@ -12,7 +12,6 @@ import typings.rsocketCore.rsocketclientMod.ClientConfig
 import typings.rsocketCore.rsocketclientMod.default
 import typings.rsocketCore.rsocketencodingMod.Encoder
 import typings.rsocketCore.rsocketencodingMod.Encoders
-import typings.rsocketCore.rsocketframeMod.RSocketError
 import typings.rsocketCore.rsocketleaseMod.LeaseStats
 import typings.rsocketCore.rsocketresumabletransportMod.Options
 import typings.rsocketCore.rsocketserializationMod.Serializer
@@ -151,7 +150,7 @@ object mod extends js.Object {
   val VIDEO_VP8: typings.rsocketCore.wellKnownMimeTypeMod.WellKnownMimeType = js.native
   def byteLength(data: js.Any, encoding: Encoding): Double = js.native
   def createBuffer(args: js.Any*): Buffer = js.native
-  def createErrorFromFrame(frame: ErrorFrame): RSocketError = js.native
+  def createErrorFromFrame(frame: ErrorFrame): ErrorsourceErrorSource = js.native
   def deserializeFrame(buffer: Buffer): Frame = js.native
   def deserializeFrame(buffer: Buffer, encoders: Encoders[_]): Frame = js.native
   def deserializeFrameWithLength(buffer: Buffer): Frame = js.native

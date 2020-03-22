@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "boom"
-version := "7.3-dt-20190805Z-efa725"
+version := "7.3-dt-20200226Z-efa725"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

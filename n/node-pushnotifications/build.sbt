@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "node-pushnotifications"
-version := "1.0-dt-20190819Z-6a3c17"
+version := "1.0-dt-20190819Z-5ad214"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "std" % "3.8-a0108c",
-  "org.scalablytyped" %%% "web-push" % "3.3-dt-20180917Z-f10285")
+  "org.scalablytyped" %%% "web-push" % "3.3-dt-20180917Z-620b06")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

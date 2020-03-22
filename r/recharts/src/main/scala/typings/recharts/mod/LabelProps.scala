@@ -48,7 +48,6 @@ trait LabelProps extends js.Object {
   var dominantBaseline: js.UndefOr[String] = js.undefined
   var dx: js.UndefOr[Double] = js.undefined
   var dy: js.UndefOr[Double] = js.undefined
-  var enableBackground: js.UndefOr[String] = js.undefined
   var fill: js.UndefOr[String] = js.undefined
   var fillOpacity: js.UndefOr[Double | String] = js.undefined
   var fillRule: js.UndefOr[String] = js.undefined
@@ -66,7 +65,6 @@ trait LabelProps extends js.Object {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   var formatter: js.UndefOr[LabelFormatter] = js.undefined
-  var glyphOrientationHorizontal: js.UndefOr[String] = js.undefined
   var glyphOrientationVertical: js.UndefOr[String] = js.undefined
   var height: js.UndefOr[Double] = js.undefined
   var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
@@ -133,7 +131,6 @@ object LabelProps {
     dominantBaseline: String = null,
     dx: Int | Double = null,
     dy: Int | Double = null,
-    enableBackground: String = null,
     fill: String = null,
     fillOpacity: Double | String = null,
     fillRule: String = null,
@@ -149,7 +146,6 @@ object LabelProps {
     fontVariant: String = null,
     fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
     formatter: /* label */ String | Double => ReactNode = null,
-    glyphOrientationHorizontal: String = null,
     glyphOrientationVertical: String = null,
     height: Int | Double = null,
     imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = null,
@@ -213,7 +209,6 @@ object LabelProps {
     if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
     if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
     if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
@@ -229,7 +224,6 @@ object LabelProps {
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (glyphOrientationHorizontal != null) __obj.updateDynamic("glyphOrientationHorizontal")(glyphOrientationHorizontal.asInstanceOf[js.Any])
     if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])

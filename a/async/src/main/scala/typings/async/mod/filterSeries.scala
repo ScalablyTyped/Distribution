@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("async", "filterSeries")
 @js.native
 object filterSeries extends js.Object {
-  def apply[T, E](arr: IterableCollection[T], iterator: AsyncBooleanIterator[T, E]): Unit = js.native
+  def apply[T, E](arr: IterableCollection[T], iterator: AsyncBooleanIterator[T, E]): js.Promise[js.Array[T]] = js.native
   def apply[T, E](
     arr: IterableCollection[T],
     iterator: AsyncBooleanIterator[T, E],

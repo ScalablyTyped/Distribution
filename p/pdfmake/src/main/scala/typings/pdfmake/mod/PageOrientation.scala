@@ -1,29 +1,21 @@
 package typings.pdfmake.mod
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait PageOrientation extends js.Object
+/* Rewritten from type alias, can be one of: 
+  - typings.pdfmake.pdfmakeStrings.portrait
+  - typings.pdfmake.pdfmakeStrings.landscape
+*/
+trait PageOrientation extends js.Object
 
-@JSImport("pdfmake/build/pdfmake", "PageOrientation")
-@js.native
-object PageOrientation extends js.Object {
-  @js.native
-  sealed trait LANDSCAPE extends PageOrientation
-  
-  @js.native
-  sealed trait PORTRAIT extends PageOrientation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PageOrientation with String] = js.native
-  /* "LANDSCAPE" */ @js.native
-  object LANDSCAPE extends TopLevel[LANDSCAPE with String]
-  
-  /* "PORTRAIT" */ @js.native
-  object PORTRAIT extends TopLevel[PORTRAIT with String]
-  
+object PageOrientation {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def landscape: typings.pdfmake.pdfmakeStrings.landscape = this.cast("landscape")
+  @scala.inline
+  def portrait: typings.pdfmake.pdfmakeStrings.portrait = this.cast("portrait")
 }
 

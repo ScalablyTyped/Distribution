@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bip21"
-version := "v1.1.2-dt-20190322Z-cd451a"
+version := "v1.1.2-dt-20200226Z-cd451a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

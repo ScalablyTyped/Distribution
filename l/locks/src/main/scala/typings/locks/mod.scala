@@ -30,7 +30,7 @@ object mod extends js.Object {
     /** Clear any waiting lock callbacks. */
     def resetQueue(): Unit = js.native
     /** Wait the specified number of milliseconds to take the lock. If error is set, the lock wasn't taken. */
-    def timedlock(ttl: Double, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def timedLock(ttl: Double, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
     /** Try taking the lock. If false, the lock wasn't taken. */
     def tryLock(): Boolean = js.native
     /** Release the current lock. */
@@ -70,5 +70,9 @@ object mod extends js.Object {
     def wait(callback: js.Function0[Unit]): Unit = js.native
   }
   
+  def createCondVariable(initialValue: js.Any): CondVariable = js.native
+  def createMutex(): Mutex = js.native
+  def createReadWriteLock(): ReadWriteLock = js.native
+  def createSemaphore(initialValue: Double): Semaphore = js.native
 }
 

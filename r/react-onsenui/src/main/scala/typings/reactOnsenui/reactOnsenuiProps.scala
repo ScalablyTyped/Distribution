@@ -15,14 +15,17 @@ trait reactOnsenuiProps {
   def AlertDialogProps: HTMLAttributesidclassNameIsCancelable.type = typings.reactOnsenui.HTMLAttributesidclassNameIsCancelable
   type AlertDialogProps = HTMLAttributesidclassNameIsCancelable
   @scala.inline
+  def AlertDialogButtonProps: HTMLAttributesidclassNameOnClick.type = typings.reactOnsenui.HTMLAttributesidclassNameOnClick
+  type AlertDialogButtonProps = HTMLAttributesidclassNameOnClick
+  @scala.inline
   def BackButtonProps: HTMLAttributesidclassNameModifier.type = typings.reactOnsenui.HTMLAttributesidclassNameModifier
   type BackButtonProps = HTMLAttributesidclassNameModifier
   @scala.inline
   def BottomToolbarProps: HTMLAttributesidclassNameClassName.type = typings.reactOnsenui.HTMLAttributesidclassNameClassName
   type BottomToolbarProps = HTMLAttributesidclassNameClassName
   @scala.inline
-  def ButtonProps: HTMLAttributesidclassNameOnClick.type = typings.reactOnsenui.HTMLAttributesidclassNameOnClick
-  type ButtonProps = HTMLAttributesidclassNameOnClick
+  def ButtonProps: HTMLAttributesidclassNameRipple.type = typings.reactOnsenui.HTMLAttributesidclassNameRipple
+  type ButtonProps = HTMLAttributesidclassNameRipple
   @scala.inline
   def CardProps: HTMLAttributesidclassNameClassName.type = typings.reactOnsenui.HTMLAttributesidclassNameClassName
   type CardProps = HTMLAttributesidclassNameClassName
@@ -53,9 +56,6 @@ trait reactOnsenuiProps {
   @scala.inline
   def LazyListProps: HTMLAttributesidclassNameCalculateItemHeight.type = typings.reactOnsenui.HTMLAttributesidclassNameCalculateItemHeight
   type LazyListProps = HTMLAttributesidclassNameCalculateItemHeight
-  @scala.inline
-  def ListProps: HTMLAttributesidclassNameDataSource.type = typings.reactOnsenui.HTMLAttributesidclassNameDataSource
-  type ListProps = HTMLAttributesidclassNameDataSource
   @scala.inline
   def ListHeaderProps: HTMLAttributesidclassNameClassName.type = typings.reactOnsenui.HTMLAttributesidclassNameClassName
   type ListHeaderProps = HTMLAttributesidclassNameClassName

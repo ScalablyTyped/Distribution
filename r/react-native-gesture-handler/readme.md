@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-gesture-handler
 
-Typings are for version 1.6.0
+Typings are for version 1.6.1
 
 ## Library description:
 Experimental implementation of a new declarative API for gesture handling in react-native

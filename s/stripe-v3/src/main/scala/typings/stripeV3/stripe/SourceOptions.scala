@@ -18,6 +18,7 @@ trait SourceOptions extends js.Object {
   var amount: js.UndefOr[Double] = js.undefined
   var currency: js.UndefOr[String] = js.undefined
   var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.undefined
+  var mandate: js.UndefOr[SourceMandate] = js.undefined
   var metadata: js.UndefOr[js.Object] = js.undefined
   var owner: js.UndefOr[OwnerInfo] = js.undefined
   var redirect: js.UndefOr[AnonReturnurl] = js.undefined
@@ -37,6 +38,7 @@ object SourceOptions {
     amount: Int | Double = null,
     currency: String = null,
     flow: redirect | receiver | code_verification | none = null,
+    mandate: SourceMandate = null,
     metadata: js.Object = null,
     owner: OwnerInfo = null,
     redirect: AnonReturnurl = null,
@@ -52,6 +54,7 @@ object SourceOptions {
     if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
     if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
+    if (mandate != null) __obj.updateDynamic("mandate")(mandate.asInstanceOf[js.Any])
     if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])

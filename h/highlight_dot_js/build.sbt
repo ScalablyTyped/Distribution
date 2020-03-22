@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "highlight_dot_js"
-version := "v9.12-dt-20190322Z-fe5fbd"
+version := "v9.12-dt-20200226Z-fe5fbd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

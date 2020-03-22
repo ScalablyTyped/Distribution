@@ -1,6 +1,6 @@
 package typings.materialUiCore.circularProgressCircularProgressMod
 
-import typings.materialUiCore.PartialClassNameMapCircularProgressClassKey
+import typings.materialUiCore.PartialClassNameMapCircul
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -150,7 +150,7 @@ trait CircularProgressProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCircularProgressClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCircul] = js.native
   var color: js.UndefOr[primary | secondary | inherit] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -335,7 +335,7 @@ object CircularProgressProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCircularProgressClassKey = null,
+    classes: PartialClassNameMapCircul = null,
     color: primary | secondary | inherit = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

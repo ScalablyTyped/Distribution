@@ -20,7 +20,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -85,7 +85,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  customStyles ? :{[x: string] : any},   disableStyles ? :boolean,   expandData ? :{[rowId: string] : boolean},   isExpandAll ? :boolean, onExpandChange ? (expandData : {[rowId: string] : boolean}): void} & react.react.HTMLAttributes<std.HTMLDivElement> */
+/* Inlined {  disableStyles ? :boolean,   expandData ? :{[rowId: string] : boolean},   isExpandAll ? :boolean, onExpandChange ? (expandData : {[rowId: string] : boolean}): void} & react.react.HTMLAttributes<std.HTMLDivElement> */
 trait TreeViewProps extends js.Object {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
@@ -99,7 +99,7 @@ trait TreeViewProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   /**
@@ -284,7 +284,6 @@ trait TreeViewProps extends js.Object {
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   // React-specific Attributes
@@ -293,7 +292,6 @@ trait TreeViewProps extends js.Object {
   var dir: js.UndefOr[String] = js.undefined
   var disableStyles: js.UndefOr[Boolean] = js.undefined
   var draggable: js.UndefOr[Booleanish] = js.undefined
-  /* Object with rowId keys and boolean values representing whether that row is expanded. This variable is handled internally, but can be overridden by the consumer through this prop. */
   var expandData: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -309,7 +307,6 @@ trait TreeViewProps extends js.Object {
     * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
     */
   var is: js.UndefOr[String] = js.undefined
-  /* Set to *true* for an expanded tree. This variable is handled internally, but can be overridden by the consumer through this prop */
   var isExpandAll: js.UndefOr[Boolean] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -354,7 +351,6 @@ trait TreeViewProps extends js.Object {
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  /* Callback that is called whenever the internal expand/collapse state changes. The argument is an an object with rowId keys and boolean values representing whether that row is expanded. */
   var onExpandChange: js.UndefOr[js.Function1[/* expandData */ StringDictionary[Boolean], Unit]] = js.undefined
   // Focus Events
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
@@ -445,7 +441,7 @@ object TreeViewProps {
     accessKey: String = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -499,7 +495,6 @@ object TreeViewProps {
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -679,7 +674,6 @@ object TreeViewProps {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])

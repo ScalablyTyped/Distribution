@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cucumber"
-version := "6.0-dt-20200131Z-bce6ba"
+version := "6.0-dt-20200225Z-bce6ba"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,11 +16,13 @@ trait IButton extends js.Object {
   def focus(): Unit = js.native
   /**
     * If there is a menu associated with this button and it is visible, this will open the menu.
-    * Params are optional overrides to the ones defined in 'menuProps' to apply to just this instance of opening the menu.
+    * Params are optional overrides to the ones defined in `menuProps` to apply to just this instance of
+    * opening the menu.
     *
     * @param shouldFocusOnContainer - override to the ContextualMenu shouldFocusOnContainer prop.
     * BaseButton implementation defaults to 'undefined'.
-    * @param shouldFocusOnMount - override to the ContextualMenu shouldFocusOnMount prop. BaseButton implementation defaults to 'true'.
+    * @param shouldFocusOnMount - override to the ContextualMenu shouldFocusOnMount prop. BaseButton implementation
+    * defaults to `true`.
     */
   def openMenu(): Unit = js.native
   def openMenu(shouldFocusOnContainer: Boolean): Unit = js.native

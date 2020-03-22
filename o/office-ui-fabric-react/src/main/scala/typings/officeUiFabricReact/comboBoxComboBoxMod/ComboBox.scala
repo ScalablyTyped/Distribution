@@ -2,15 +2,17 @@ package typings.officeUiFabricReact.comboBoxComboBoxMod
 
 import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxOption
 import typings.officeUiFabricReact.comboBoxTypesMod.IComboBoxProps
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
+import typings.react.mod.Component
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox", "ComboBox")
 @js.native
-class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState] {
+class ComboBox protected ()
+  extends Component[IComboBoxProps, IComboBoxState, js.Any] {
   def this(props: IComboBoxProps) = this()
+  var _async: js.Any = js.native
   /** The input aspect of the comboBox */
   var _autofill: js.Any = js.native
   /**
@@ -35,6 +37,7 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
   var _currentPromise: js.Any = js.native
   /** The current visible value sent to the auto fill on render */
   var _currentVisibleValue: js.Any = js.native
+  var _events: js.Any = js.native
   /**
     * Determines if we should be setting focus back to the input when the menu closes.
     * The general rule of thumb is if the menu was launched via the keyboard focus should go back
@@ -43,13 +46,14 @@ class ComboBox protected () extends BaseComponent[IComboBoxProps, IComboBoxState
   var _focusInputAfterClose: js.Any = js.native
   /**
     * Get the aria-activedescendant value for the comboxbox.
-    * @returns the id of the current focused combo item, otherwise the id of the currently selected element, null otherwise
+    * @returns the id of the current focused combo item, otherwise the id of the currently selected element,
+    * null otherwise
     */
   var _getAriaActiveDescentValue: js.Any = js.native
   /**
     * Get the aria autocomplete value for the Combobox
-    * @returns 'inline' if auto-complete automatically dynamic, 'both' if we have a list of possible values to pick from and can
-    * dynamically populate input, and 'none' if auto-complete is not enabled as we can't give user inputs.
+    * @returns 'inline' if auto-complete automatically dynamic, 'both' if we have a list of possible values to pick from
+    * and can dynamically populate input, and 'none' if auto-complete is not enabled as we can't give user inputs.
     */
   var _getAriaAutoCompleteValue: js.Any = js.native
   /**

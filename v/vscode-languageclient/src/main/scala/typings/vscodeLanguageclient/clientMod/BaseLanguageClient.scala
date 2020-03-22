@@ -128,6 +128,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   def diagnostics(): js.UndefOr[DiagnosticCollection] = js.native
   def error(message: String): Unit = js.native
   def error(message: String, data: js.Any): Unit = js.native
+  def error(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
   @JSName("getFeature")
   def getFeature_textDocumentcodeAction(request: textDocumentSlashcodeAction): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with TextDocumentProviderFeature[CodeActionProvider] = js.native
   @JSName("getFeature")
@@ -188,6 +189,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   /* protected */ def handleConnectionClosed(): Unit = js.native
   def info(message: String): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native
+  def info(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
   def initializeResult(): js.UndefOr[InitializeResult[_]] = js.native
   def logFailedRequest(`type`: typings.vscodeJsonrpc.messagesMod.MessageType, error: js.Any): Unit = js.native
   def needsStart(): Boolean = js.native
@@ -259,5 +261,6 @@ abstract class BaseLanguageClient protected () extends js.Object {
   def traceOutputChannel(): OutputChannel = js.native
   def warn(message: String): Unit = js.native
   def warn(message: String, data: js.Any): Unit = js.native
+  def warn(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
 }
 

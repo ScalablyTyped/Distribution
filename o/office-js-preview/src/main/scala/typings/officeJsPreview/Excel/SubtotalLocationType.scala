@@ -15,7 +15,6 @@ sealed trait SubtotalLocationType extends js.Object
 @js.native
 object SubtotalLocationType extends js.Object {
   /**
-    *
     * Subtotals are at the bottom.
     *
     */
@@ -23,7 +22,6 @@ object SubtotalLocationType extends js.Object {
   sealed trait atBottom extends SubtotalLocationType
   
   /**
-    *
     * Subtotals are at the top.
     *
     */
@@ -31,7 +29,6 @@ object SubtotalLocationType extends js.Object {
   sealed trait atTop extends SubtotalLocationType
   
   /**
-    *
     * Subtotals are off.
     *
     */

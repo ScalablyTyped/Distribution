@@ -15,7 +15,6 @@ sealed trait ProtectionSelectionMode extends js.Object
 @js.native
 object ProtectionSelectionMode extends js.Object {
   /**
-    *
     * Selection is not allowed for all cells.
     *
     */
@@ -23,7 +22,6 @@ object ProtectionSelectionMode extends js.Object {
   sealed trait none extends ProtectionSelectionMode
   
   /**
-    *
     * Selection is allowed for all cells.
     *
     */
@@ -31,7 +29,6 @@ object ProtectionSelectionMode extends js.Object {
   sealed trait normal extends ProtectionSelectionMode
   
   /**
-    *
     * Selection is allowed only for cells that are not locked.
     *
     */

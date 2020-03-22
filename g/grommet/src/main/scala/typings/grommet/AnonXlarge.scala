@@ -5,23 +5,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonXlarge extends js.Object {
-  var large: js.UndefOr[AnonMaxWidth] = js.undefined
-  var medium: js.UndefOr[AnonMaxWidth] = js.undefined
-  var small: js.UndefOr[AnonMaxWidth] = js.undefined
-  var xlarge: js.UndefOr[AnonMaxWidth] = js.undefined
-  var xsmall: js.UndefOr[AnonMaxWidth] = js.undefined
-  var xxlarge: js.UndefOr[AnonMaxWidth] = js.undefined
+  var large: js.UndefOr[AnonHeightSize] = js.undefined
+  var medium: js.UndefOr[AnonHeightSize] = js.undefined
+  var small: js.UndefOr[AnonHeightSize] = js.undefined
+  var xlarge: js.UndefOr[AnonHeightSize] = js.undefined
+  var xsmall: js.UndefOr[AnonHeightSize] = js.undefined
+  var xxlarge: js.UndefOr[AnonHeightSize] = js.undefined
 }
 
 object AnonXlarge {
   @scala.inline
   def apply(
-    large: AnonMaxWidth = null,
-    medium: AnonMaxWidth = null,
-    small: AnonMaxWidth = null,
-    xlarge: AnonMaxWidth = null,
-    xsmall: AnonMaxWidth = null,
-    xxlarge: AnonMaxWidth = null
+    large: AnonHeightSize = null,
+    medium: AnonHeightSize = null,
+    small: AnonHeightSize = null,
+    xlarge: AnonHeightSize = null,
+    xsmall: AnonHeightSize = null,
+    xxlarge: AnonHeightSize = null
   ): AnonXlarge = {
     val __obj = js.Dynamic.literal()
     if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])

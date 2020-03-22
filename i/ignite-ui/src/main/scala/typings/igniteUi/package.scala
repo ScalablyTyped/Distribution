@@ -490,6 +490,11 @@ package object igniteUi {
     /* ui */ typings.igniteUi.ColumnsCollectionModifiedEventUIParam, 
     scala.Unit
   ]
+  type ContextMenuOpeningEvent = js.Function2[
+    /* event */ typings.std.Event_, 
+    /* ui */ typings.igniteUi.ContextMenuOpeningEventUIParam, 
+    scala.Unit
+  ]
   type ContextRowRenderedEvent = js.Function2[
     /* event */ typings.std.Event_, 
     /* ui */ typings.igniteUi.ContextRowRenderedEventUIParam, 
@@ -1241,26 +1246,6 @@ package object igniteUi {
   type LayoutRefreshingEvent = js.Function2[
     /* event */ typings.std.Event_, 
     /* ui */ typings.igniteUi.LayoutRefreshingEventUIParam, 
-    scala.Unit
-  ]
-  type LegendItemMouseEnterEvent = js.Function2[
-    /* event */ typings.std.Event_, 
-    /* ui */ typings.igniteUi.LegendItemMouseEnterEventUIParam, 
-    scala.Unit
-  ]
-  type LegendItemMouseLeaveEvent = js.Function2[
-    /* event */ typings.std.Event_, 
-    /* ui */ typings.igniteUi.LegendItemMouseLeaveEventUIParam, 
-    scala.Unit
-  ]
-  type LegendItemMouseLeftButtonDownEvent = js.Function2[
-    /* event */ typings.std.Event_, 
-    /* ui */ typings.igniteUi.LegendItemMouseLeftButtonDownEventUIParam, 
-    scala.Unit
-  ]
-  type LegendItemMouseLeftButtonUpEvent = js.Function2[
-    /* event */ typings.std.Event_, 
-    /* ui */ typings.igniteUi.LegendItemMouseLeftButtonUpEventUIParam, 
     scala.Unit
   ]
   type MenuTogglingEvent = js.Function2[

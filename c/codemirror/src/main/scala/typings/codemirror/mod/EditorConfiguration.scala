@@ -1,5 +1,6 @@
 package typings.codemirror.mod
 
+import typings.codemirror.AnonDelay
 import typings.std.DragEvent
 import typings.std.KeyboardEvent
 import scala.scalajs.js
@@ -18,6 +19,9 @@ trait EditorConfiguration extends js.Object {
     * Depends on the fold/xml-fold.js addon.
     */
   var autoCloseTags: js.UndefOr[AutoCloseTags | Boolean] = js.undefined
+  // if true, it will be refreshed the first time the editor becomes visible.
+  // you can pass delay (msec) time as polling duration
+  var autoRefresh: js.UndefOr[Boolean | AnonDelay] = js.undefined
   /** Can be used to make CodeMirror focus itself on initialization. Defaults to off.
     When fromTextArea is used, and no explicit value is given for this option, it will be set to true when either the source textarea is focused,
     or it has an autofocus attribute and no other element is focused. */
@@ -186,6 +190,7 @@ object EditorConfiguration {
   def apply(
     autoCloseBrackets: AutoCloseBrackets | Boolean | String = null,
     autoCloseTags: AutoCloseTags | Boolean = null,
+    autoRefresh: Boolean | AnonDelay = null,
     autofocus: js.UndefOr[Boolean] = js.undefined,
     coverGutterNextToScrollbar: js.UndefOr[Boolean] = js.undefined,
     cursorBlinkRate: Int | Double = null,
@@ -239,6 +244,7 @@ object EditorConfiguration {
     val __obj = js.Dynamic.literal()
     if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
     if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
+    if (autoRefresh != null) __obj.updateDynamic("autoRefresh")(autoRefresh.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
     if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar.asInstanceOf[js.Any])
     if (cursorBlinkRate != null) __obj.updateDynamic("cursorBlinkRate")(cursorBlinkRate.asInstanceOf[js.Any])

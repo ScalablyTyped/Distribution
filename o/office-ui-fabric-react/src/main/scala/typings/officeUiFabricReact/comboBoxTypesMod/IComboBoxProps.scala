@@ -95,8 +95,9 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
     */
   var ariaDescribedBy: js.UndefOr[String] = js.undefined
   /**
-    * Whether the ComboBox auto completes. As the user is inputing text, it will be suggested potential matches from the list of options. If
-    * the combo box is expanded, this will also scroll to the suggested option, and give it a selected style.
+    * Whether the ComboBox auto completes. As the user is inputing text, it will be suggested potential matches from
+    * the list of options. If the combo box is expanded, this will also scroll to the suggested option, and give it a
+    * selected style.
     *
     * @defaultvalue "on"
     */
@@ -148,9 +149,9 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
     */
   var iconButtonProps: js.UndefOr[IButtonProps] = js.undefined
   /**
-    * Sets the 'aria-hidden' attribute on the ComboBox's button element instructing screen readers how to handle the element.
-    * This element is hidden by default because all functionality is handled by the input element and the arrow button is
-    * only meant to be decorative.
+    * Sets the 'aria-hidden' attribute on the ComboBox's button element instructing screen readers how to handle
+    * the element. This element is hidden by default because all functionality is handled by the input element and
+    * the arrow button is only meant to be decorative.
     * @defaultvalue true
     */
   var isButtonAriaHidden: js.UndefOr[Boolean] = js.undefined
@@ -161,8 +162,8 @@ trait IComboBoxProps extends ISelectableDroppableTextProps[IComboBox, IComboBox]
   /**
     * Callback issued when either:
     * 1) the selected option changes
-    * 2) a manually edited value is submitted. In this case there may not be a matched option if allowFreeform is also true
-    *    (and hence only value would be true, the other parameter would be null in this case)
+    * 2) a manually edited value is submitted. In this case there may not be a matched option if allowFreeform
+    *    is also true (and hence only value would be true, the other parameter would be null in this case)
     */
   @JSName("onChange")
   var onChange_IComboBoxProps: js.UndefOr[

@@ -1,5 +1,6 @@
 package typings.knex.mod
 
+import typings.knex.ReadonlyObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +17,7 @@ trait Where[TRecord, TResult]
   def apply(columnName: String, value: Value): QueryBuilder[TRecord, TResult] = js.native
   def apply(left: Raw[_], operator: String): QueryBuilder[TRecord, TResult] = js.native
   def apply(left: Raw[_], operator: String, right: Value): QueryBuilder[TRecord, TResult] = js.native
-  def apply(`object`: js.Object): QueryBuilder[TRecord, TResult] = js.native
+  def apply(`object`: ReadonlyObject): QueryBuilder[TRecord, TResult] = js.native
   def apply(`object`: SafePartial[TRecord]): QueryBuilder[TRecord, TResult] = js.native
   def apply[T /* <: String */](columnName: T): QueryBuilder[TRecord, TResult] = js.native
   def apply[T /* <: String */](columnName: T, operator: ComparisonOperator): QueryBuilder[TRecord, TResult] = js.native

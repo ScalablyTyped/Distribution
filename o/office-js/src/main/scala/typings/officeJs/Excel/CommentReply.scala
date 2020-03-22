@@ -73,21 +73,18 @@ class CommentReply () extends ClientObject {
     */
   val richContent: String = js.native
   /**
-    *
     * Deletes the comment reply.
     *
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the cell where this comment reply is located.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getLocation(): Range = js.native
   /**
-    *
     * Gets the parent comment of this reply.
     *
     * [Api set: ExcelApi 1.10]
@@ -124,7 +121,6 @@ class CommentReply () extends ClientObject {
     */
   def toJSON(): CommentReplyData = js.native
   /**
-    *
     * Updates the comment content with a specially formatted string and a list of mentions.
     *
     * [Api set: ExcelApiOnline 1.1]

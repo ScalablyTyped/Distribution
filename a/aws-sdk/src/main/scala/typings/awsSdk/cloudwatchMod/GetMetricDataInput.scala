@@ -15,7 +15,7 @@ trait GetMetricDataInput extends js.Object {
     */
   var MaxDatapoints: js.UndefOr[GetMetricDataMaxDatapoints] = js.native
   /**
-    * The metric queries to be returned. A single GetMetricData call can include as many as 100 MetricDataQuery structures. Each of these structures can specify either a metric to retrieve, or a math expression to perform on retrieved data. 
+    * The metric queries to be returned. A single GetMetricData call can include as many as 500 MetricDataQuery structures. Each of these structures can specify either a metric to retrieve, or a math expression to perform on retrieved data. 
     */
   var MetricDataQueries: typings.awsSdk.cloudwatchMod.MetricDataQueries = js.native
   /**

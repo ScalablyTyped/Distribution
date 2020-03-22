@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twitter-for-web"
-version := "0.0-unknown-dt-20190521Z-2bee34"
+version := "0.0-unknown-dt-20200225Z-2bee34"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

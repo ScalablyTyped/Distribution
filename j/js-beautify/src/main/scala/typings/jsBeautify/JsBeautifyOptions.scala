@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 trait JsBeautifyOptions extends js.Object {
   var brace_style: js.UndefOr[`collapse-preserve-inline` | collapse | expand | `end-expand` | none] = js.undefined
   var break_chained_methods: js.UndefOr[Boolean] = js.undefined
+  var e4x: js.UndefOr[Boolean] = js.undefined
   var end_with_newline: js.UndefOr[Boolean] = js.undefined
   var eol: js.UndefOr[String] = js.undefined
   var eval_code: js.UndefOr[Boolean] = js.undefined
@@ -40,6 +41,7 @@ object JsBeautifyOptions {
   def apply(
     brace_style: `collapse-preserve-inline` | collapse | expand | `end-expand` | none = null,
     break_chained_methods: js.UndefOr[Boolean] = js.undefined,
+    e4x: js.UndefOr[Boolean] = js.undefined,
     end_with_newline: js.UndefOr[Boolean] = js.undefined,
     eol: String = null,
     eval_code: js.UndefOr[Boolean] = js.undefined,
@@ -63,6 +65,7 @@ object JsBeautifyOptions {
     val __obj = js.Dynamic.literal()
     if (brace_style != null) __obj.updateDynamic("brace_style")(brace_style.asInstanceOf[js.Any])
     if (!js.isUndefined(break_chained_methods)) __obj.updateDynamic("break_chained_methods")(break_chained_methods.asInstanceOf[js.Any])
+    if (!js.isUndefined(e4x)) __obj.updateDynamic("e4x")(e4x.asInstanceOf[js.Any])
     if (!js.isUndefined(end_with_newline)) __obj.updateDynamic("end_with_newline")(end_with_newline.asInstanceOf[js.Any])
     if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
     if (!js.isUndefined(eval_code)) __obj.updateDynamic("eval_code")(eval_code.asInstanceOf[js.Any])

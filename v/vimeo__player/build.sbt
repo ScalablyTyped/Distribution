@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vimeo__player"
-version := "2.9.1-dt-20190626Z-a52844"
+version := "2.9.1-dt-20200225Z-a52844"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

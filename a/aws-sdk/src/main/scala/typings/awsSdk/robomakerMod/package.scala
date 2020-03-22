@@ -35,10 +35,12 @@ package object robomakerMod {
     - typings.awsSdk.awsSdkStrings.RobotDeploymentNoResponse
     - typings.awsSdk.awsSdkStrings.RobotAgentConnectionTimeout
     - typings.awsSdk.awsSdkStrings.GreengrassDeploymentFailed
+    - typings.awsSdk.awsSdkStrings.InvalidGreengrassGroup
     - typings.awsSdk.awsSdkStrings.MissingRobotArchitecture
     - typings.awsSdk.awsSdkStrings.MissingRobotApplicationArchitecture
     - typings.awsSdk.awsSdkStrings.MissingRobotDeploymentResource
     - typings.awsSdk.awsSdkStrings.GreengrassGroupVersionDoesNotExist
+    - typings.awsSdk.awsSdkStrings.LambdaDeleted
     - typings.awsSdk.awsSdkStrings.ExtractingBundleFailure
     - typings.awsSdk.awsSdkStrings.PreLaunchFileFailure
     - typings.awsSdk.awsSdkStrings.PostLaunchFileFailure

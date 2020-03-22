@@ -18,6 +18,7 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNavigationStack.AnonClose
 import typings.reactNavigationStack.AnonClosing
 import typings.reactNavigationStack.AnonHorizontal
+import typings.reactNavigationStack.AnonStyle
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-none`
 import typings.reactNavigationStack.reactNavigationStackStrings.`box-only`
 import typings.reactNavigationStack.reactNavigationStackStrings.`no-hide-descendants`
@@ -39,7 +40,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-native.react-native.ViewProps & {  index  :number,   closing  :boolean,   next ? :react-native.react-native.Animated.AnimatedInterpolation,   current  :react-native.react-native.Animated.AnimatedInterpolation,   gesture  :react-native.react-native.Animated.Value,   layout  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   insets  :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EdgeInsets * / any,   gestureDirection  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.GestureDirection, onOpen (): void, onClose (): void, onTransitionStart ? (props : {  closing  :boolean}): void, onGestureBegin ? (): void, onGestureCanceled ? (): void, onGestureEnd ? (): void,   children  :react.react.ReactNode,   overlayEnabled  :boolean,   shadowEnabled  :boolean,   gestureEnabled  :boolean,   gestureResponseDistance ? :{  vertical ? :number,   horizontal ? :number},   gestureVelocityImpact  :number,   transitionSpec  :{  open  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec,   close  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec},   styleInterpolator  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackCardStyleInterpolator,   containerStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>,   contentStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>} */
+/* Inlined react-native.react-native.ViewProps & {  index  :number,   closing  :boolean,   next ? :react-native.react-native.Animated.AnimatedInterpolation,   current  :react-native.react-native.Animated.AnimatedInterpolation,   gesture  :react-native.react-native.Animated.Value,   layout  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.Layout,   insets  :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EdgeInsets * / any,   gestureDirection  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.GestureDirection, onOpen (): void, onClose (): void, onTransitionStart ? (props : {  closing  :boolean}): void, onGestureBegin ? (): void, onGestureCanceled ? (): void, onGestureEnd ? (): void,   children  :react.react.ReactNode, overlay (props : {  style  :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>}): react.react.ReactNode,   overlayEnabled  :boolean,   shadowEnabled  :boolean,   gestureEnabled  :boolean,   gestureResponseDistance ? :{  vertical ? :number,   horizontal ? :number},   gestureVelocityImpact  :number,   transitionSpec  :{  open  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec,   close  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.TransitionSpec},   styleInterpolator  :react-navigation-stack.react-navigation-stack/lib/typescript/src/vendor/types.StackCardStyleInterpolator,   containerStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>,   contentStyle ? :react-native.react-native.StyleProp<react-native.react-native.ViewStyle>} */
 trait Props extends js.Object {
   /**
     * Provides an array of custom actions available for accessibility.
@@ -188,6 +189,11 @@ trait Props extends js.Object {
     * When `accessible` is true, the system will try to invoke this function when the user performs an accessibility custom action.
     */
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
+  /**
+    * When accessibile is true, the system will invoke this function when the user performs the escape gesture (scrub with two fingers).
+    * @platform ios
+    */
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   /**
     * When `accessible` is true, the system will try to invoke this function when the user performs accessibility tap gesture.
     * @platform ios
@@ -380,6 +386,7 @@ trait Props extends js.Object {
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
   def onClose(): Unit
   def onOpen(): Unit
+  def overlay(props: AnonStyle): ReactNode
 }
 
 object Props {
@@ -396,6 +403,7 @@ object Props {
     layout: Layout,
     onClose: () => Unit,
     onOpen: () => Unit,
+    overlay: AnonStyle => ReactNode,
     overlayEnabled: Boolean,
     shadowEnabled: Boolean,
     styleInterpolator: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle,
@@ -426,6 +434,7 @@ object Props {
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
     next: AnimatedInterpolation = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onGestureBegin: () => Unit = null,
     onGestureCanceled: () => Unit = null,
@@ -462,7 +471,7 @@ object Props {
     tvParallaxShiftDistanceY: Int | Double = null,
     tvParallaxTiltAngle: Int | Double = null
   ): Props = {
-    val __obj = js.Dynamic.literal(closing = closing.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], gesture = gesture.asInstanceOf[js.Any], gestureDirection = gestureDirection.asInstanceOf[js.Any], gestureEnabled = gestureEnabled.asInstanceOf[js.Any], gestureVelocityImpact = gestureVelocityImpact.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], insets = insets.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen), overlayEnabled = overlayEnabled.asInstanceOf[js.Any], shadowEnabled = shadowEnabled.asInstanceOf[js.Any], styleInterpolator = js.Any.fromFunction1(styleInterpolator), transitionSpec = transitionSpec.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(closing = closing.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], gesture = gesture.asInstanceOf[js.Any], gestureDirection = gestureDirection.asInstanceOf[js.Any], gestureEnabled = gestureEnabled.asInstanceOf[js.Any], gestureVelocityImpact = gestureVelocityImpact.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], insets = insets.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose), onOpen = js.Any.fromFunction0(onOpen), overlay = js.Any.fromFunction1(overlay), overlayEnabled = overlayEnabled.asInstanceOf[js.Any], shadowEnabled = shadowEnabled.asInstanceOf[js.Any], styleInterpolator = js.Any.fromFunction1(styleInterpolator), transitionSpec = transitionSpec.asInstanceOf[js.Any])
     if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
     if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
@@ -489,6 +498,7 @@ object Props {
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
     if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onGestureBegin != null) __obj.updateDynamic("onGestureBegin")(js.Any.fromFunction0(onGestureBegin))
     if (onGestureCanceled != null) __obj.updateDynamic("onGestureCanceled")(js.Any.fromFunction0(onGestureCanceled))

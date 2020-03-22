@@ -1,5 +1,6 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.coreQueryMod.LimitType
 import typings.firebaseFirestore.credentialsMod.TokenType
 import typings.firebaseFirestore.firestoreProtoApiMod.CompositeFilterOp
 import typings.firebaseFirestore.firestoreProtoApiMod.FieldFilterOp
@@ -20,6 +21,7 @@ import typings.firebaseFirestore.simpleDbMod.SimpleDbTransactionMode
 import typings.firebaseFirestore.specTestRunnerMod.SpecLimitType
 import typings.firebaseFirestore.typesMod.MutationBatchState
 import typings.firebaseFirestore.typesMod.OnlineState
+import typings.firebaseFirestore.utilAsyncQueueMod.TimerId
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -73,6 +75,11 @@ object firebaseFirestoreStrings {
   sealed trait ERROR extends IndexState
   
   @js.native
+  sealed trait F
+    extends LimitType
+       with typings.firebaseFirestore.queryMod.LimitType
+  
+  @js.native
   sealed trait FirstParty
     extends TokenType
        with typings.firebaseFirestore.apiCredentialsMod.TokenType
@@ -91,6 +98,11 @@ object firebaseFirestoreStrings {
   
   @js.native
   sealed trait IS_NULL extends UnaryFilterOp
+  
+  @js.native
+  sealed trait L
+    extends LimitType
+       with typings.firebaseFirestore.queryMod.LimitType
   
   @js.native
   sealed trait LESS_THAN extends FieldFilterOp
@@ -173,9 +185,19 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.coreTypesMod.MutationBatchState
   
   @js.native
+  sealed trait all
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
+  
+  @js.native
   sealed trait boolean
     extends ValidationType
        with typings.firebaseFirestore.utilInputValidationMod.ValidationType
+  
+  @js.native
+  sealed trait client_metadata_refresh
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
   
   @js.native
   sealed trait current_
@@ -211,6 +233,21 @@ object firebaseFirestoreStrings {
        with ProjectsDatabasesIndexesApiClientAlt
   
   @js.native
+  sealed trait listen_stream_connection_backoff
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
+  
+  @js.native
+  sealed trait listen_stream_idle
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
+  
+  @js.native
+  sealed trait lru_garbage_collection
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
+  
+  @js.native
   sealed trait media
     extends ProjectsDatabasesDocumentsApiClientAlt
        with ProjectsDatabasesIndexesApiClientAlt
@@ -237,6 +274,11 @@ object firebaseFirestoreStrings {
   sealed trait `object`
     extends ValidationType
        with typings.firebaseFirestore.utilInputValidationMod.ValidationType
+  
+  @js.native
+  sealed trait online_state_timeout
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
   
   @js.native
   sealed trait pending
@@ -297,6 +339,11 @@ object firebaseFirestoreStrings {
        with typings.firebaseFirestore.sharedClientStateSyncerMod.QueryTargetState
   
   @js.native
+  sealed trait retry_transaction
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
+  
+  @js.native
   sealed trait string
     extends ValidationType
        with typings.firebaseFirestore.utilInputValidationMod.ValidationType
@@ -308,6 +355,16 @@ object firebaseFirestoreStrings {
   sealed trait undefined
     extends ValidationType
        with typings.firebaseFirestore.utilInputValidationMod.ValidationType
+  
+  @js.native
+  sealed trait write_stream_connection_backoff
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
+  
+  @js.native
+  sealed trait write_stream_idle
+    extends TimerId
+       with typings.firebaseFirestore.asyncQueueMod.TimerId
   
   @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
@@ -336,6 +393,8 @@ object firebaseFirestoreStrings {
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   @scala.inline
+  def F: F = "F".asInstanceOf[F]
+  @scala.inline
   def FirstParty: FirstParty = "FirstParty".asInstanceOf[FirstParty]
   @scala.inline
   def GREATER_THAN: GREATER_THAN = "GREATER_THAN".asInstanceOf[GREATER_THAN]
@@ -347,6 +406,8 @@ object firebaseFirestoreStrings {
   def IS_NAN: IS_NAN = "IS_NAN".asInstanceOf[IS_NAN]
   @scala.inline
   def IS_NULL: IS_NULL = "IS_NULL".asInstanceOf[IS_NULL]
+  @scala.inline
+  def L: L = "L".asInstanceOf[L]
   @scala.inline
   def LESS_THAN: LESS_THAN = "LESS_THAN".asInstanceOf[LESS_THAN]
   @scala.inline
@@ -390,7 +451,11 @@ object firebaseFirestoreStrings {
   @scala.inline
   def acknowledged: acknowledged = "acknowledged".asInstanceOf[acknowledged]
   @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
+  def client_metadata_refresh: client_metadata_refresh = "client_metadata_refresh".asInstanceOf[client_metadata_refresh]
   @scala.inline
   def current_ : current_ = "current".asInstanceOf[current_]
   @scala.inline
@@ -410,6 +475,12 @@ object firebaseFirestoreStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
+  def listen_stream_connection_backoff: listen_stream_connection_backoff = "listen_stream_connection_backoff".asInstanceOf[listen_stream_connection_backoff]
+  @scala.inline
+  def listen_stream_idle: listen_stream_idle = "listen_stream_idle".asInstanceOf[listen_stream_idle]
+  @scala.inline
+  def lru_garbage_collection: lru_garbage_collection = "lru_garbage_collection".asInstanceOf[lru_garbage_collection]
+  @scala.inline
   def media: media = "media".asInstanceOf[media]
   @scala.inline
   def `multi-client`: `multi-client` = "multi-client".asInstanceOf[`multi-client`]
@@ -421,6 +492,8 @@ object firebaseFirestoreStrings {
   def number: number = "number".asInstanceOf[number]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
+  def online_state_timeout: online_state_timeout = "online_state_timeout".asInstanceOf[online_state_timeout]
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
@@ -442,10 +515,16 @@ object firebaseFirestoreStrings {
   @scala.inline
   def rejected: rejected = "rejected".asInstanceOf[rejected]
   @scala.inline
+  def retry_transaction: retry_transaction = "retry_transaction".asInstanceOf[retry_transaction]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
   def `test-db2`: `test-db2` = "test-db2".asInstanceOf[`test-db2`]
   @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
+  @scala.inline
+  def write_stream_connection_backoff: write_stream_connection_backoff = "write_stream_connection_backoff".asInstanceOf[write_stream_connection_backoff]
+  @scala.inline
+  def write_stream_idle: write_stream_idle = "write_stream_idle".asInstanceOf[write_stream_idle]
 }
 

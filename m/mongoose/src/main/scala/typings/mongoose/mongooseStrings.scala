@@ -21,6 +21,9 @@ object mongooseStrings {
   sealed trait MongooseError extends js.Object
   
   @js.native
+  sealed trait MongooseFilterQuery extends js.Object
+  
+  @js.native
   sealed trait OverwriteModelError extends js.Object
   
   @js.native
@@ -37,6 +40,9 @@ object mongooseStrings {
   
   @js.native
   sealed trait VersionError extends js.Object
+  
+  @js.native
+  sealed trait __v extends js.Object
   
   @js.native
   sealed trait _id extends js.Object
@@ -205,6 +211,8 @@ object mongooseStrings {
   @scala.inline
   def MongooseError: MongooseError = "MongooseError".asInstanceOf[MongooseError]
   @scala.inline
+  def MongooseFilterQuery: MongooseFilterQuery = "MongooseFilterQuery".asInstanceOf[MongooseFilterQuery]
+  @scala.inline
   def OverwriteModelError: OverwriteModelError = "OverwriteModelError".asInstanceOf[OverwriteModelError]
   @scala.inline
   def ParallelSaveError: ParallelSaveError = "ParallelSaveError".asInstanceOf[ParallelSaveError]
@@ -216,6 +224,8 @@ object mongooseStrings {
   def ValidatorError: ValidatorError = "ValidatorError".asInstanceOf[ValidatorError]
   @scala.inline
   def VersionError: VersionError = "VersionError".asInstanceOf[VersionError]
+  @scala.inline
+  def __v: __v = "__v".asInstanceOf[__v]
   @scala.inline
   def _id: _id = "_id".asInstanceOf[_id]
   @scala.inline

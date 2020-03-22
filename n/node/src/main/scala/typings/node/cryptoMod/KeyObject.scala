@@ -16,7 +16,7 @@ class KeyObject protected () extends _KeyLike {
     */
   var asymmetricKeySize: js.UndefOr[Double] = js.native
   var asymmetricKeyType: js.UndefOr[KeyType] = js.native
-  var symmetricSize: js.UndefOr[Double] = js.native
+  var symmetricKeySize: js.UndefOr[Double] = js.native
   var `type`: KeyObjectType = js.native
   def export(): Buffer = js.native
   @JSName("export")

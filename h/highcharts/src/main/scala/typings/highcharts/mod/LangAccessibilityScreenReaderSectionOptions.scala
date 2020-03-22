@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait LangAccessibilityScreenReaderSectionOptions extends js.Object {
   var afterRegionLabel: js.UndefOr[String] = js.undefined
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Language options for annotation
+    * descriptions.
+    */
+  var annotations: js.UndefOr[LangAccessibilityScreenReaderSectionAnnotationsOptions] = js.undefined
   var beforeRegionLabel: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Label for the end of the chart.
@@ -16,9 +21,15 @@ trait LangAccessibilityScreenReaderSectionOptions extends js.Object {
 
 object LangAccessibilityScreenReaderSectionOptions {
   @scala.inline
-  def apply(afterRegionLabel: String = null, beforeRegionLabel: String = null, endOfChartMarker: String = null): LangAccessibilityScreenReaderSectionOptions = {
+  def apply(
+    afterRegionLabel: String = null,
+    annotations: LangAccessibilityScreenReaderSectionAnnotationsOptions = null,
+    beforeRegionLabel: String = null,
+    endOfChartMarker: String = null
+  ): LangAccessibilityScreenReaderSectionOptions = {
     val __obj = js.Dynamic.literal()
     if (afterRegionLabel != null) __obj.updateDynamic("afterRegionLabel")(afterRegionLabel.asInstanceOf[js.Any])
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
     if (beforeRegionLabel != null) __obj.updateDynamic("beforeRegionLabel")(beforeRegionLabel.asInstanceOf[js.Any])
     if (endOfChartMarker != null) __obj.updateDynamic("endOfChartMarker")(endOfChartMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilityScreenReaderSectionOptions]

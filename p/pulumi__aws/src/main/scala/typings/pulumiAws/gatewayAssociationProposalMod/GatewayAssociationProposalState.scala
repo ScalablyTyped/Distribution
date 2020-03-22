@@ -33,6 +33,8 @@ trait GatewayAssociationProposalState extends js.Object {
   val dxGatewayOwnerAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * *Deprecated:* Use `associatedGatewayId` instead. Virtual Gateway identifier to associate with the Direct Connect Gateway.
+    *
+    * @deprecated use 'associated_gateway_id' argument instead
     */
   val vpnGatewayId: js.UndefOr[Input[String]] = js.native
 }

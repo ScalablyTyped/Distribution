@@ -87,6 +87,14 @@ class Slicer () extends ClientObject {
   val slicerItems: SlicerItemCollection = js.native
   /**
     *
+    * The style applied to the Slicer.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val slicerStyle: SlicerStyle = js.native
+  /**
+    *
     * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
     * [Api set: ExcelApi 1.10]
@@ -123,21 +131,18 @@ class Slicer () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Clears all the filters currently applied on the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
   def clearFilters(): Unit = js.native
   /**
-    *
     * Deletes the slicer.
     *
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Returns an array of selected items' keys. Read-only.
     *
     * [Api set: ExcelApi 1.10]
@@ -154,7 +159,6 @@ class Slicer () extends ClientObject {
   def load(propertyNames: String): Slicer = js.native
   def load(propertyNames: js.Array[String]): Slicer = js.native
   /**
-    *
     * Selects slicer items based on their keys. The previous selections are cleared.
     All items will be selected by default if the array is empty.
     *
@@ -179,6 +183,17 @@ class Slicer () extends ClientObject {
   def set(properties: SlicerUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Slicer): Unit = js.native
+  /**
+    * Sets the style applied to the slicer.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param style The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
+    */
+  def setStyle(style: String): Unit = js.native
+  def setStyle(style: BuiltInSlicerStyle): Unit = js.native
+  def setStyle(style: PivotTableStyle): Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Slicer object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerData`) that contains shallow copies of any loaded child properties from the original object.

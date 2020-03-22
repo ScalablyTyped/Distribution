@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "closure-compiler"
-version := "0.0-unknown-dt-20190322Z-443201"
+version := "0.0-unknown-dt-20200225Z-443201"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

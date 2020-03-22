@@ -98,7 +98,7 @@ object CodeActionKind extends js.Object {
   		 * Base kind for source actions: `source`
   		 *
   		 * Source code actions apply to the entire file. They must be explicitly requested and will not show in the
-  		 * normal [light bulb](https://code.visualstudio.com/docs/editor/editingevolved#_code-action) menu. Source actions
+  		 * normal [lightbulb](https://code.visualstudio.com/docs/editor/editingevolved#_code-action) menu. Source actions
   		 * can be run on save using `editor.codeActionsOnSave` and are also shown in the `source` context menu.
   		 */
   val Source: CodeActionKind = js.native

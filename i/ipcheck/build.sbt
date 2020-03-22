@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ipcheck"
-version := "0.1-dt-20180226Z-efff6c"
+version := "0.1-dt-20200225Z-efff6c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

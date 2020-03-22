@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ssf" : "0.10.2"
+      "ssf" : "0.10.3"
     }
   ],
   "test-dependencies" : [
     {
-      "ssf" : "0.10.2"
+      "ssf" : "0.10.3"
     }
   ],
   "compile-devDependencies" : [

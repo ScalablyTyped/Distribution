@@ -10,7 +10,8 @@ trait PackOptions extends Options {
   var entries: js.UndefOr[js.Array[String]] = js.undefined
   @JSName("finalize")
   var finalize_FPackOptions: js.UndefOr[Boolean] = js.undefined
-  var finish: js.UndefOr[js.Function1[/* pack */ js.Any, Unit]] = js.undefined
+  var finish: js.UndefOr[js.Function1[/* pack */ typings.tarStream.mod.Pack_, Unit]] = js.undefined
+  var pack: js.UndefOr[typings.tarStream.mod.Pack_] = js.undefined
 }
 
 object PackOptions {
@@ -21,11 +22,12 @@ object PackOptions {
     entries: js.Array[String] = null,
     filter: /* name */ String => Boolean = null,
     finalize: js.UndefOr[Boolean] = js.undefined,
-    finish: /* pack */ js.Any => Unit = null,
+    finish: /* pack */ typings.tarStream.mod.Pack_ => Unit = null,
     fmode: Int | Double = null,
     ignore: /* name */ String => Boolean = null,
     map: /* header */ Headers => Headers = null,
     mapStream: (/* fileStream */ ReadStream, /* header */ Headers) => ReadStream = null,
+    pack: typings.tarStream.mod.Pack_ = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     strict: js.UndefOr[Boolean] = js.undefined,
     writable: js.UndefOr[Boolean] = js.undefined
@@ -41,6 +43,7 @@ object PackOptions {
     if (ignore != null) __obj.updateDynamic("ignore")(js.Any.fromFunction1(ignore))
     if (map != null) __obj.updateDynamic("map")(js.Any.fromFunction1(map))
     if (mapStream != null) __obj.updateDynamic("mapStream")(js.Any.fromFunction2(mapStream))
+    if (pack != null) __obj.updateDynamic("pack")(pack.asInstanceOf[js.Any])
     if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
     if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])

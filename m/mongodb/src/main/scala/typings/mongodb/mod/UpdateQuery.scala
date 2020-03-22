@@ -23,13 +23,13 @@ trait UpdateQuery[TSchema] extends js.Object {
   @JSName("$currentDate")
   var $currentDate: js.UndefOr[OnlyFieldsOfType[TSchema, Date, `true` | AnonType]] = js.native
   @JSName("$inc")
-  var $inc: js.UndefOr[OnlyFieldsOfType[TSchema, scala.Double, scala.Double]] = js.native
+  var $inc: js.UndefOr[OnlyFieldsOfType[TSchema, js.UndefOr[scala.Double], js.UndefOr[scala.Double]]] = js.native
   @JSName("$max")
   var $max: js.UndefOr[MatchKeysAndValues[TSchema]] = js.native
   @JSName("$min")
   var $min: js.UndefOr[MatchKeysAndValues[TSchema]] = js.native
   @JSName("$mul")
-  var $mul: js.UndefOr[OnlyFieldsOfType[TSchema, scala.Double, scala.Double]] = js.native
+  var $mul: js.UndefOr[OnlyFieldsOfType[TSchema, js.UndefOr[scala.Double], js.UndefOr[scala.Double]]] = js.native
   @JSName("$pop")
   var $pop: js.UndefOr[OnlyFieldsOfType[TSchema, js.Array[_], `1` | `-1`]] = js.native
   @JSName("$pull")

@@ -70,6 +70,8 @@ trait DropDownProps extends TouchableWithoutFeedbackProps {
   var labelExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, String]] = js.undefined
   /** Set font size of label (default: 12) */
   var labelFontSize: js.UndefOr[Double] = js.undefined
+  /** Set the label styles */
+  var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   /** Event: When focus lost from dropdown */
   @JSName("onBlur")
   var onBlur_DropDownProps: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -165,7 +167,9 @@ object DropDownProps {
     label: String = null,
     labelExtractor: (/* item */ DropDownData, /* index */ Double) => String = null,
     labelFontSize: Int | Double = null,
+    labelTextStyle: StyleProp[TextStyle] = null,
     onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
+    onAccessibilityEscape: () => Unit = null,
     onAccessibilityTap: () => Unit = null,
     onBlur: () => Unit = null,
     onChangeText: (/* value */ String, /* index */ Double, /* data */ js.Array[DropDownData]) => Unit = null,
@@ -237,7 +241,9 @@ object DropDownProps {
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelExtractor != null) __obj.updateDynamic("labelExtractor")(js.Any.fromFunction2(labelExtractor))
     if (labelFontSize != null) __obj.updateDynamic("labelFontSize")(labelFontSize.asInstanceOf[js.Any])
+    if (labelTextStyle != null) __obj.updateDynamic("labelTextStyle")(labelTextStyle.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
+    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
     if (onChangeText != null) __obj.updateDynamic("onChangeText")(js.Any.fromFunction3(onChangeText))

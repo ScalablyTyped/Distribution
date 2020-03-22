@@ -1,5 +1,6 @@
 package typings.primereact.chipsChipsMod
 
+import typings.primereact.AnonTarget
 import typings.primereact.AnonValue
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod._Global_.JSX.Element
@@ -18,7 +19,7 @@ trait ChipsProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var onAdd: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var onRemove: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
@@ -40,7 +41,7 @@ object ChipsProps {
     name: String = null,
     onAdd: /* e */ AnonValue => Unit = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonValue => Unit = null,
+    onChange: /* e */ AnonTarget => Unit = null,
     onFocus: /* event */ Event_ => Unit = null,
     onRemove: /* e */ AnonValue => Unit = null,
     placeholder: String = null,

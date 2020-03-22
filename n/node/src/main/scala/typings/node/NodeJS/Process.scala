@@ -12,6 +12,7 @@ import typings.node.nodeStrings.newListener
 import typings.node.nodeStrings.rejectionHandled
 import typings.node.nodeStrings.removeListener
 import typings.node.nodeStrings.uncaughtException
+import typings.node.nodeStrings.uncaughtExceptionMonitor
 import typings.node.nodeStrings.unhandledRejection
 import typings.node.nodeStrings.warning
 import typings.node.processMod._Global_.NodeJS.ReadStream
@@ -77,20 +78,7 @@ trait Process extends EventEmitter {
   var versions: ProcessVersions = js.native
   def abort(): Unit = js.native
   def addListener(event: Signals, listener: SignalsListener): this.type = js.native
-  /**
-    * EventEmitter
-    *   1. beforeExit
-    *   2. disconnect
-    *   3. exit
-    *   4. message
-    *   5. rejectionHandled
-    *   6. uncaughtException
-    *   7. unhandledRejection
-    *   8. warning
-    *   9. message
-    *  10. <All OS Signals>
-    *  11. newListener/removeListener inherited from EventEmitter
-    */
+  /* EventEmitter */
   @JSName("addListener")
   def addListener_beforeExit(event: beforeExit, listener: BeforeExitListener): this.type = js.native
   @JSName("addListener")
@@ -109,6 +97,8 @@ trait Process extends EventEmitter {
   def addListener_removeListener(event: removeListener, listener: RemoveListenerListener): this.type = js.native
   @JSName("addListener")
   def addListener_uncaughtException(event: uncaughtException, listener: UncaughtExceptionListener): this.type = js.native
+  @JSName("addListener")
+  def addListener_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor, listener: UncaughtExceptionListener): this.type = js.native
   @JSName("addListener")
   def addListener_unhandledRejection(event: unhandledRejection, listener: UnhandledRejectionListener): this.type = js.native
   @JSName("addListener")
@@ -146,6 +136,8 @@ trait Process extends EventEmitter {
   @JSName("emit")
   def emit_uncaughtException(event: uncaughtException, error: Error): Boolean = js.native
   @JSName("emit")
+  def emit_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor, error: Error): Boolean = js.native
+  @JSName("emit")
   def emit_unhandledRejection(event: unhandledRejection, reason: js.Any, promise: js.Promise[_]): Boolean = js.native
   @JSName("emit")
   def emit_warning(event: warning, warning: Error): Boolean = js.native
@@ -182,6 +174,8 @@ trait Process extends EventEmitter {
   @JSName("listeners")
   def listeners_uncaughtException(event: uncaughtException): js.Array[UncaughtExceptionListener] = js.native
   @JSName("listeners")
+  def listeners_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor): js.Array[UncaughtExceptionListener] = js.native
+  @JSName("listeners")
   def listeners_unhandledRejection(event: unhandledRejection): js.Array[UnhandledRejectionListener] = js.native
   @JSName("listeners")
   def listeners_warning(event: warning): js.Array[WarningListener] = js.native
@@ -207,6 +201,8 @@ trait Process extends EventEmitter {
   @JSName("on")
   def on_uncaughtException(event: uncaughtException, listener: UncaughtExceptionListener): this.type = js.native
   @JSName("on")
+  def on_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor, listener: UncaughtExceptionListener): this.type = js.native
+  @JSName("on")
   def on_unhandledRejection(event: unhandledRejection, listener: UnhandledRejectionListener): this.type = js.native
   @JSName("on")
   def on_warning(event: warning, listener: WarningListener): this.type = js.native
@@ -229,6 +225,8 @@ trait Process extends EventEmitter {
   def once_removeListener(event: removeListener, listener: RemoveListenerListener): this.type = js.native
   @JSName("once")
   def once_uncaughtException(event: uncaughtException, listener: UncaughtExceptionListener): this.type = js.native
+  @JSName("once")
+  def once_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor, listener: UncaughtExceptionListener): this.type = js.native
   @JSName("once")
   def once_unhandledRejection(event: unhandledRejection, listener: UnhandledRejectionListener): this.type = js.native
   @JSName("once")
@@ -254,6 +252,8 @@ trait Process extends EventEmitter {
   @JSName("prependListener")
   def prependListener_uncaughtException(event: uncaughtException, listener: UncaughtExceptionListener): this.type = js.native
   @JSName("prependListener")
+  def prependListener_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor, listener: UncaughtExceptionListener): this.type = js.native
+  @JSName("prependListener")
   def prependListener_unhandledRejection(event: unhandledRejection, listener: UnhandledRejectionListener): this.type = js.native
   @JSName("prependListener")
   def prependListener_warning(event: warning, listener: WarningListener): this.type = js.native
@@ -276,6 +276,8 @@ trait Process extends EventEmitter {
   def prependOnceListener_removeListener(event: removeListener, listener: RemoveListenerListener): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_uncaughtException(event: uncaughtException, listener: UncaughtExceptionListener): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor, listener: UncaughtExceptionListener): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_unhandledRejection(event: unhandledRejection, listener: UnhandledRejectionListener): this.type = js.native
   @JSName("prependOnceListener")

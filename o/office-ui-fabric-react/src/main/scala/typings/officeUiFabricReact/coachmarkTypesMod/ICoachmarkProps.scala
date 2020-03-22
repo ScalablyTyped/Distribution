@@ -121,7 +121,8 @@ trait ICoachmarkProps extends ClassAttributes[CoachmarkBase] {
     */
   var onMouseMove: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
   /**
-    * If true then the Coachmark beak (arrow pointing towards target) will always be visible as long as Coachmark is visible
+    * If true then the Coachmark beak (arrow pointing towards target) will always be visible as long as
+    * Coachmark is visible
     * @defaultvalue false
     */
   var persistentBeak: js.UndefOr[Boolean] = js.undefined

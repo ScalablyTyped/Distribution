@@ -1,5 +1,6 @@
 package typings.jupyterlabStatusbar
 
+import typings.csstype.mod.WhiteSpaceProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,6 +22,8 @@ object variablesMod extends js.Object {
     var statusBarPadding: String = js.native
     var textClickColor: String = js.native
     var textColor: String = js.native
+    var textOverflow: String = js.native
+    var whiteSpace: WhiteSpaceProperty = js.native
   }
   
 }

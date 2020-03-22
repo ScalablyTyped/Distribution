@@ -18,7 +18,6 @@ sealed trait ShapeLineStyle extends js.Object
 @js.native
 object ShapeLineStyle extends js.Object {
   /**
-    *
     * Single line.
     *
     */
@@ -26,7 +25,6 @@ object ShapeLineStyle extends js.Object {
   sealed trait single extends ShapeLineStyle
   
   /**
-    *
     * Thick line with a thin line on each side.
     *
     */
@@ -34,7 +32,6 @@ object ShapeLineStyle extends js.Object {
   sealed trait thickBetweenThin extends ShapeLineStyle
   
   /**
-    *
     * Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the thick line is to the left of the thin line.
     *
     */
@@ -42,7 +39,6 @@ object ShapeLineStyle extends js.Object {
   sealed trait thickThin extends ShapeLineStyle
   
   /**
-    *
     * Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the thick line is to the right of the thin line.
     *
     */
@@ -50,7 +46,6 @@ object ShapeLineStyle extends js.Object {
   sealed trait thinThick extends ShapeLineStyle
   
   /**
-    *
     * Two thin lines.
     *
     */

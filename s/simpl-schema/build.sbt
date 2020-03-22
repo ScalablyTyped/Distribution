@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simpl-schema"
-version := "0.2-dt-20190927Z-d4b13c"
+version := "0.2-dt-20200226Z-fc25d3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

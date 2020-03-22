@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fpsmeter"
-version := "v0.3.0-dt-20190322Z-6fb67b"
+version := "v0.3.0-dt-20200226Z-6fb67b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

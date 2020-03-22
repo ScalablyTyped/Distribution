@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArrayOperand protected () extends Operand {
   def this(values: js.Array[Operand]) = this()
+  var values: js.Array[Operand] = js.native
 }
 

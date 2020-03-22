@@ -43,6 +43,10 @@ trait PushNotificationTemplateResponse extends js.Object {
     */
   var LastModifiedDate: string = js.native
   /**
+    * The unique identifier for the recommender model that's used by the message template.
+    */
+  var RecommenderId: js.UndefOr[string] = js.native
+  /**
     * The custom description of the message template.
     */
   var TemplateDescription: js.UndefOr[string] = js.native
@@ -78,6 +82,7 @@ object PushNotificationTemplateResponse {
     Default: DefaultPushNotificationTemplate = null,
     DefaultSubstitutions: string = null,
     GCM: AndroidPushNotificationTemplate = null,
+    RecommenderId: string = null,
     TemplateDescription: string = null,
     Version: string = null,
     tags: MapOfString = null
@@ -90,6 +95,7 @@ object PushNotificationTemplateResponse {
     if (Default != null) __obj.updateDynamic("Default")(Default.asInstanceOf[js.Any])
     if (DefaultSubstitutions != null) __obj.updateDynamic("DefaultSubstitutions")(DefaultSubstitutions.asInstanceOf[js.Any])
     if (GCM != null) __obj.updateDynamic("GCM")(GCM.asInstanceOf[js.Any])
+    if (RecommenderId != null) __obj.updateDynamic("RecommenderId")(RecommenderId.asInstanceOf[js.Any])
     if (TemplateDescription != null) __obj.updateDynamic("TemplateDescription")(TemplateDescription.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

@@ -9,7 +9,7 @@ package object mod {
   type I18next = typings.i18next.mod.i18n
   type IgnoreRoutesFunction = js.Function4[
     /* req */ typings.express.mod.Request_[typings.expressServeStaticCore.mod.ParamsDictionary], 
-    /* res */ typings.express.mod.Response_, 
+    /* res */ typings.express.mod.Response_[js.Any], 
     /* options */ typings.i18nextExpressMiddleware.mod.HandleOptions, 
     /* i18next */ typings.i18nextExpressMiddleware.mod.I18next, 
     scala.Boolean

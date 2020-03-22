@@ -1,6 +1,6 @@
 package typings.gestalt.mod
 
-import typings.gestalt.AnonChecked
+import typings.gestalt.AnonCheckedBoolean
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
 import scala.scalajs.js
@@ -14,14 +14,14 @@ trait RadioButtonProps extends js.Object {
   var name: js.UndefOr[String] = js.undefined
   var size: js.UndefOr[sm | md] = js.undefined
   var value: js.UndefOr[String] = js.undefined
-  def onChange(args: AnonChecked): Unit
+  def onChange(args: AnonCheckedBoolean): Unit
 }
 
 object RadioButtonProps {
   @scala.inline
   def apply(
     id: String,
-    onChange: AnonChecked => Unit,
+    onChange: AnonCheckedBoolean => Unit,
     checked: js.UndefOr[Boolean] = js.undefined,
     disabled: js.UndefOr[Boolean] = js.undefined,
     name: String = null,

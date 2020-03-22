@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def apply(bodyParser: js.Any): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ NextFunction, 
     Unit
   ] = js.native

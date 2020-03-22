@@ -32,7 +32,6 @@ class ConditionalFormatCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ConditionalFormat] = js.native
   /**
-    *
     * Adds a new conditional format to the collection at the first/top priority.
     *
     * [Api set: ExcelApi 1.6]
@@ -47,7 +46,6 @@ class ConditionalFormatCollection () extends ClientObject {
   @JSName("add")
   def add_ContainsText(`type`: ContainsText): ConditionalFormat = js.native
   /**
-    *
     * Adds a new conditional format to the collection at the first/top priority.
     *
     * [Api set: ExcelApi 1.6]
@@ -65,21 +63,18 @@ class ConditionalFormatCollection () extends ClientObject {
   @JSName("add")
   def add_TopBottom(`type`: TopBottom): ConditionalFormat = js.native
   /**
-    *
     * Clears all conditional formats active on the current specified range.
     *
     * [Api set: ExcelApi 1.6]
     */
   def clearAll(): Unit = js.native
   /**
-    *
     * Returns the number of conditional formats in the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.6]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Returns a conditional format for the given ID.
     *
     * [Api set: ExcelApi 1.6]
@@ -89,7 +84,6 @@ class ConditionalFormatCollection () extends ClientObject {
     */
   def getItem(id: String): ConditionalFormat = js.native
   /**
-    *
     * Returns a conditional format at the given index.
     *
     * [Api set: ExcelApi 1.6]

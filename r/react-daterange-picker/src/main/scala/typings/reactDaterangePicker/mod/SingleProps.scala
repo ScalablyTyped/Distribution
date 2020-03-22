@@ -28,6 +28,7 @@ object SingleProps {
     bemBlock: String = null,
     bemNamespace: String = null,
     children: ReactNode = null,
+    className: String = null,
     dateStates: js.Array[DateState] = null,
     defaultState: String = null,
     disableNavigation: js.UndefOr[Boolean] = js.undefined,
@@ -39,6 +40,7 @@ object SingleProps {
     initialRange: js.Object = null,
     initialYear: Int | Double = null,
     key: Key = null,
+    locale: String = null,
     maximumDate: Date = null,
     minimumDate: Date = null,
     numberOfCalendars: Int | Double = null,
@@ -59,6 +61,7 @@ object SingleProps {
     if (bemBlock != null) __obj.updateDynamic("bemBlock")(bemBlock.asInstanceOf[js.Any])
     if (bemNamespace != null) __obj.updateDynamic("bemNamespace")(bemNamespace.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (dateStates != null) __obj.updateDynamic("dateStates")(dateStates.asInstanceOf[js.Any])
     if (defaultState != null) __obj.updateDynamic("defaultState")(defaultState.asInstanceOf[js.Any])
     if (!js.isUndefined(disableNavigation)) __obj.updateDynamic("disableNavigation")(disableNavigation.asInstanceOf[js.Any])
@@ -70,6 +73,7 @@ object SingleProps {
     if (initialRange != null) __obj.updateDynamic("initialRange")(initialRange.asInstanceOf[js.Any])
     if (initialYear != null) __obj.updateDynamic("initialYear")(initialYear.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (maximumDate != null) __obj.updateDynamic("maximumDate")(maximumDate.asInstanceOf[js.Any])
     if (minimumDate != null) __obj.updateDynamic("minimumDate")(minimumDate.asInstanceOf[js.Any])
     if (numberOfCalendars != null) __obj.updateDynamic("numberOfCalendars")(numberOfCalendars.asInstanceOf[js.Any])

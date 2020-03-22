@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jss-plugin-camel-case"
-version := "10.0.4-0d7d18"
+version := "10.1.1-14c21f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.9-2d2033",
-  "org.scalablytyped" %%% "jss" % "10.0.4-d017cb",
+  "org.scalablytyped" %%% "jss" % "10.1.1-4f8d63",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

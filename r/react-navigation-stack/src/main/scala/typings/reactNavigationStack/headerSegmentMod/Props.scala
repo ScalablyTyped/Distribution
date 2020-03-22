@@ -113,7 +113,9 @@ trait Props extends js.Object {
   /**
     * Style object for the title component.
     */
-  var headerTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var headerTitleStyle: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react-native.react-native.Animated.AnimatedComponent<react-native.react-native.Text>>['style'] */ js.Any
+  ] = js.native
   /**
     * Defaults to `false`. If `true`, the header will not have a background unless you explicitly provide it with `headerBackground`.
     * The header will also float over the screen so that it overlaps the content underneath.

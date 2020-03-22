@@ -3,7 +3,6 @@ package typings.antd.directoryTreeMod
 import typings.antd.AnonChecked
 import typings.antd.treeTreeMod.AntTreeNode
 import typings.antd.treeTreeMod.AntdTreeNodeAttribute
-import typings.antd.treeTreeMod.TreeNodeNormal
 import typings.antd.treeTreeMod.TreeProps
 import typings.rcTree.mod.CheckData
 import typings.rcTree.mod.ExpandData
@@ -72,8 +71,7 @@ object DirectoryTreeProps {
     showIcon: js.UndefOr[Boolean] = js.undefined,
     showLine: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
-    switcherIcon: ReactElement = null,
-    treeData: js.Array[TreeNodeNormal] = null
+    switcherIcon: ReactElement = null
   ): DirectoryTreeProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent.asInstanceOf[js.Any])
@@ -117,7 +115,6 @@ object DirectoryTreeProps {
     if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (switcherIcon != null) __obj.updateDynamic("switcherIcon")(switcherIcon.asInstanceOf[js.Any])
-    if (treeData != null) __obj.updateDynamic("treeData")(treeData.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryTreeProps]
   }
 }

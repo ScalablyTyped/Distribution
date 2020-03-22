@@ -12,7 +12,7 @@ sealed trait PersonaInitialsColor extends js.Object
 @js.native
 object PersonaInitialsColor extends js.Object {
   /**
-    * `black` is a color that can result in offensive persona coins with some initials combinations, so it can only be set with overrides.
+    * Black can result in offensive persona coins with some initials combinations, so it can only be set with overrides.
     * @deprecated will be removed in a future major release.
     */
   @js.native
@@ -43,7 +43,7 @@ object PersonaInitialsColor extends js.Object {
   sealed trait gold extends PersonaInitialsColor
   
   /**
-    * `gray` is a color that can result in offensive persona coins with some initials combinations, so it can only be set with overrides
+    * Gray can result in offensive persona coins with some initials combinations, so it can only be set with overrides.
     */
   @js.native
   sealed trait gray extends PersonaInitialsColor
@@ -76,7 +76,7 @@ object PersonaInitialsColor extends js.Object {
   sealed trait purple extends PersonaInitialsColor
   
   /**
-    * `red` is a color that often has a special meaning, so it is considered a reserved color and can only be set with overrides
+    * Red often has a special meaning, so it is considered a reserved color and can only be set with overrides.
     * @deprecated will be removed in a future major release.
     */
   @js.native

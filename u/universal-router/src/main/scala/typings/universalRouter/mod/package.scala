@@ -16,7 +16,7 @@ package object mod {
     typings.universalRouter.mod.RouteResult[R]
   ]
   type RouteParams = org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
-  type RouteResult[T] = js.UndefOr[T | (js.Promise[js.UndefOr[T | scala.Null]]) | scala.Null]
+  type RouteResult[T] = js.UndefOr[T | scala.Null | (js.Promise[js.UndefOr[T | scala.Null]])]
   type RouterContext = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Routes[R, C /* <: typings.universalRouter.mod.RouterContext */] = js.Array[typings.universalRouter.mod.Route[R, C]]
 }

@@ -4,7 +4,9 @@ import typings.atom.AnonButtons
 import typings.atom.AnonDetailedMessage
 import typings.atom.AnonDevMode
 import typings.atom.AnonHeight
+import typings.atom.AnonWidth
 import typings.atom.AnonX
+import typings.atom.AnonY
 import typings.atom.atomStrings.beta
 import typings.atom.atomStrings.dev
 import typings.atom.atomStrings.nightly
@@ -101,10 +103,17 @@ trait AtomEnvironment extends js.Object {
     options: ConfirmationOptions,
     callback: js.Function2[/* response */ Double, /* checkboxChecked */ Boolean, Unit]
   ): Unit = js.native
+  /**
+    * Restores the full screen and maximized state after the window has resized to prevent resize
+    * glitches.
+    */
+  def displayWindow(): js.Promise[js.UndefOr[scala.Nothing]] = js.native
   /** Execute code in dev tools. */
   def executeJavaScriptInDevTools(code: String): Unit = js.native
   /** Focus the current window. */
   def focus(): Unit = js.native
+  /** Get the full name of this Atom release (e.g. "Atom", "Atom Beta") */
+  def getAppName(): String = js.native
   /** Undocumented: get Atom config directory path */
   def getConfigDirPath(): String = js.native
   /** Get the current window. */
@@ -120,8 +129,12 @@ trait AtomEnvironment extends js.Object {
   def getReleaseChannel(): dev | nightly | beta | stable = js.native
   /** Get the size of current window. */
   def getSize(): AnonHeight = js.native
+  /** Get the all the markers with the information about startup time. */
+  def getStartupMarkers(): js.Array[TimingMarker] = js.native
   /** Get the version of the Atom application. */
   def getVersion(): String = js.native
+  /** Get the dimensions of this window. */
+  def getWindowDimensions(): AnonWidth = js.native
   /** Get the time taken to completely load the current window. */
   def getWindowLoadTime(): Double = js.native
   /** Hide the current window. */
@@ -168,6 +181,8 @@ trait AtomEnvironment extends js.Object {
   def setPosition(x: Double, y: Double): Unit = js.native
   /** Set the size of current window. */
   def setSize(width: Double, height: Double): Unit = js.native
+  /** Set the dimensions of the window. */
+  def setWindowDimensions(dimensions: AnonY): js.Promise[js.Object] = js.native
   /** Show the current window. */
   def show(): Unit = js.native
   /** Toggle the visibility of the dev tools for the current window. */

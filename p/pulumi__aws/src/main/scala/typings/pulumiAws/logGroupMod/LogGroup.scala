@@ -49,7 +49,7 @@ class LogGroup protected () extends CustomResource {
   val namePrefix: Output_[js.UndefOr[String]] = js.native
   /**
     * Specifies the number of days
-    * you want to retain log events in the specified log group.
+    * you want to retain log events in the specified log group.  Possible values are: 1, 3, 5, 7, 14, 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1827, and 3653.
     */
   val retentionInDays: Output_[js.UndefOr[Double]] = js.native
   /**

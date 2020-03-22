@@ -4,6 +4,7 @@ import typings.forkTsCheckerWebpackPlugin.AnonGetReport
 import typings.forkTsCheckerWebpackPlugin.Typeofts
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveModuleName
 import typings.forkTsCheckerWebpackPlugin.resolutionMod.ResolveTypeReferenceDirective
+import typings.forkTsCheckerWebpackPlugin.typesEslintMod.Options
 import typings.forkTsCheckerWebpackPlugin.vueOptionsMod.VueOptions
 import typings.std.ReturnType
 import typings.typescript.mod.CompilerOptions
@@ -18,7 +19,7 @@ trait IncrementalCheckerParams extends js.Object {
   var checkSyntacticErrors: Boolean
   var compilerOptions: CompilerOptions
   var context: String
-  var eslinter: js.UndefOr[ReturnType[js.Function1[/* eslintOptions */ js.Object, AnonGetReport]]] = js.undefined
+  var eslinter: js.UndefOr[ReturnType[js.Function1[/* eslintOptions */ Options, AnonGetReport]]] = js.undefined
   var programConfigFile: String
   var resolveModuleName: js.UndefOr[ResolveModuleName] = js.undefined
   var resolveTypeReferenceDirective: js.UndefOr[ResolveTypeReferenceDirective] = js.undefined
@@ -35,7 +36,7 @@ object IncrementalCheckerParams {
     programConfigFile: String,
     typescript: Typeofts,
     vue: VueOptions,
-    eslinter: ReturnType[js.Function1[/* eslintOptions */ js.Object, AnonGetReport]] = null,
+    eslinter: ReturnType[js.Function1[/* eslintOptions */ Options, AnonGetReport]] = null,
     resolveModuleName: (/* typescript */ Typeofts, /* moduleName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost) => ResolvedModuleWithFailedLookupLocations = null,
     resolveTypeReferenceDirective: (/* typescript */ Typeofts, /* typeDirectiveName */ String, /* containingFile */ String, /* compilerOptions */ CompilerOptions, /* moduleResolutionHost */ ModuleResolutionHost) => ResolvedTypeReferenceDirectiveWithFailedLookupLocations = null
   ): IncrementalCheckerParams = {

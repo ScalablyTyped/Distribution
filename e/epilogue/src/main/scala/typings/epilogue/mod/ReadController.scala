@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("epilogue", "ReadController")
 @js.native
 class ReadController () extends BaseController {
-  def fetch(req: Request_[ParamsDictionary], res: Response_, context: Context): js.Promise[js.Function0[Unit]] = js.native
+  def fetch(req: Request_[ParamsDictionary], res: Response_[_], context: Context): js.Promise[js.Function0[Unit]] = js.native
 }
 

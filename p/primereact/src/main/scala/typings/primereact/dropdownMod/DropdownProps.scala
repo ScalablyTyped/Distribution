@@ -1,6 +1,6 @@
 package typings.primereact.dropdownMod
 
-import typings.primereact.AnonValue
+import typings.primereact.AnonTarget
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod.ReactNode
 import typings.std.Event_
@@ -21,6 +21,7 @@ trait DropdownProps extends js.Object {
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterBy: js.UndefOr[String] = js.undefined
   var filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined
+  var filterMatchMode: js.UndefOr[String] = js.undefined
   var filterPlaceholder: js.UndefOr[String] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
@@ -28,10 +29,13 @@ trait DropdownProps extends js.Object {
   var `lazy`: js.UndefOr[Boolean] = js.undefined
   var maxLength: js.UndefOr[Double] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
+  var optionValue: js.UndefOr[String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var panelClassName: js.UndefOr[String] = js.undefined
   var panelStyle: js.UndefOr[js.Object] = js.undefined
@@ -61,6 +65,7 @@ object DropdownProps {
     filter: js.UndefOr[Boolean] = js.undefined,
     filterBy: String = null,
     filterInputAutoFocus: js.UndefOr[Boolean] = js.undefined,
+    filterMatchMode: String = null,
     filterPlaceholder: String = null,
     id: String = null,
     inputId: String = null,
@@ -68,10 +73,13 @@ object DropdownProps {
     `lazy`: js.UndefOr[Boolean] = js.undefined,
     maxLength: Int | Double = null,
     name: String = null,
-    onChange: /* e */ AnonValue => Unit = null,
+    onBlur: /* e */ Event_ => Unit = null,
+    onChange: /* e */ AnonTarget => Unit = null,
     onContextMenu: /* event */ Event_ => Unit = null,
+    onFocus: /* e */ Event_ => Unit = null,
     onMouseDown: /* event */ Event_ => Unit = null,
     optionLabel: String = null,
+    optionValue: String = null,
     options: js.Array[_] = null,
     panelClassName: String = null,
     panelStyle: js.Object = null,
@@ -98,6 +106,7 @@ object DropdownProps {
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
     if (!js.isUndefined(filterInputAutoFocus)) __obj.updateDynamic("filterInputAutoFocus")(filterInputAutoFocus.asInstanceOf[js.Any])
+    if (filterMatchMode != null) __obj.updateDynamic("filterMatchMode")(filterMatchMode.asInstanceOf[js.Any])
     if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
@@ -105,10 +114,13 @@ object DropdownProps {
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
     if (optionLabel != null) __obj.updateDynamic("optionLabel")(optionLabel.asInstanceOf[js.Any])
+    if (optionValue != null) __obj.updateDynamic("optionValue")(optionValue.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (panelClassName != null) __obj.updateDynamic("panelClassName")(panelClassName.asInstanceOf[js.Any])
     if (panelStyle != null) __obj.updateDynamic("panelStyle")(panelStyle.asInstanceOf[js.Any])

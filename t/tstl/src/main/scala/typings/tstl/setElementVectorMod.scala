@@ -25,7 +25,6 @@ object setElementVectorMod extends js.Object {
     var associative_ : js.Any = js.native
   }
   
-  /* static members */
   @js.native
   object SetElementVector extends js.Object {
     /**
@@ -68,10 +67,6 @@ object setElementVectorMod extends js.Object {
               Key
             ]
     
-    /**
-      * @internal
-      */
-    def _Swap_associative[Key, Unique /* <: Boolean */, Source /* <: ITreeSet[Key, Unique, Source, Iterator[Key, Unique, Source], ReverseIterator[Key, Unique, Source]] */](x: SetElementVector[Key, Unique, Source], y: SetElementVector[Key, Unique, Source]): Unit = js.native
   }
   
 }

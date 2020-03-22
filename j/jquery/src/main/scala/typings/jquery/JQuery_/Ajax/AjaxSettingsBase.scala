@@ -5,11 +5,14 @@ import typings.jquery.JQuery_.TypeOrArray
 import typings.jquery.JQuery_.jqXHR
 import typings.jquery.jqueryBooleans.`false`
 import typings.jquery.jqueryBooleans.`true`
+import typings.jquery.jqueryStrings.`applicationSlashx-www-form-urlencoded`
+import typings.jquery.jqueryStrings.`multipartSlashform-data`
 import typings.jquery.jqueryStrings.html
 import typings.jquery.jqueryStrings.json
 import typings.jquery.jqueryStrings.jsonp
 import typings.jquery.jqueryStrings.script
 import typings.jquery.jqueryStrings.text
+import typings.jquery.jqueryStrings.textSlashplain
 import typings.jquery.jqueryStrings.xml
 import typings.std.RegExp
 import typings.std.XMLHttpRequest
@@ -89,6 +92,18 @@ trait AjaxSettingsBase[TContext] extends js.Object {
     * multiple, space-separated values: As of jQuery 1.5, jQuery can convert a dataType from what it received in the Content-Type header to what you require. For example, if you want a text response to be treated as XML, use "text xml" for the dataType. You can also make a JSONP request, have it received as text, and interpreted by jQuery as XML: "jsonp text xml". Similarly, a shorthand string such as "jsonp xml" will first attempt to convert from jsonp to xml, and, failing that, convert from jsonp to text, and then from text to xml.
     */
   var dataType: js.UndefOr[xml | html | script | json | jsonp | text | String] = js.undefined
+  /**
+    * The MIME type of content that is used to submit the form to the server. Possible values are:
+    *
+    * "application/x-www-form-urlencoded": The initial default type.
+    *
+    * "multipart/form-data": The type that allows file <input> element(s) to upload file data.
+    *
+    * "text/plain": A type introduced in HTML5.
+    */
+  var enctype: js.UndefOr[
+    `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain
+  ] = js.undefined
   /**
     * A function to be called if the request fails. The function receives three arguments: The jqXHR (in jQuery 1.4.x, XMLHttpRequest) object, a string describing the type of error that occurred and an optional exception object, if one occurred. Possible values for the second argument (besides null) are "timeout", "error", "abort", and "parsererror". When an HTTP error occurs, errorThrown receives the textual portion of the HTTP status, such as "Not Found" or "Internal Server Error." As of jQuery 1.5, the error setting can accept an array of functions. Each function will be called in turn. Note: This handler is not called for cross-domain script and cross-domain JSONP requests. This is an Ajax Event.
     */
@@ -192,6 +207,7 @@ object AjaxSettingsBase {
     data: PlainObject[_] | String = null,
     dataFilter: (/* data */ String, /* type */ String) => _ = null,
     dataType: xml | html | script | json | jsonp | text | String = null,
+    enctype: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain = null,
     error: TypeOrArray[ErrorCallback[TContext]] = null,
     global: js.UndefOr[Boolean] = js.undefined,
     headers: PlainObject[js.UndefOr[String | Null]] = null,
@@ -227,6 +243,7 @@ object AjaxSettingsBase {
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (dataFilter != null) __obj.updateDynamic("dataFilter")(js.Any.fromFunction2(dataFilter))
     if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (!js.isUndefined(global)) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])

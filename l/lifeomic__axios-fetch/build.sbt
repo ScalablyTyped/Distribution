@@ -1,13 +1,14 @@
 organization := "org.scalablytyped"
 name := "lifeomic__axios-fetch"
-version := "1.4-dt-20191022Z-80e150"
+version := "1.4-dt-20191022Z-b28f9b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "axios" % "0.19.2-f077fd",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
-  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20191126Z-fb1ccd",
+  "org.scalablytyped" %%% "form-data" % "3.0.0-78808a",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
+  "org.scalablytyped" %%% "node-fetch" % "2.5-dt-20200225Z-16e6ca",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

@@ -12,6 +12,11 @@ package object mod {
     typings.highcharts.highchartsBooleans.`false` | java.lang.String
   ]
   type AnimationStepCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.SVGElement, scala.Unit]
+  type AnnotationControlPointPositionerFunction = js.ThisFunction1[
+    /* this */ typings.highcharts.mod.AnnotationControlPoint, 
+    /* target */ typings.highcharts.mod.AnnotationControllable, 
+    typings.highcharts.mod.PositionObject
+  ]
   type AxisEventCallbackFunction = js.ThisFunction0[/* this */ typings.highcharts.mod.Axis, scala.Unit]
   type AxisPointBreakEventCallbackFunction = js.ThisFunction1[
     /* this */ typings.highcharts.mod.Axis, 
@@ -57,8 +62,9 @@ package object mod {
     * Callback function that returns the correspondig Date object to a match.
     */
   type DataDateFormatCallbackFunction = js.Function1[/* match */ js.Array[scala.Double], scala.Double]
-  type DataLabelsFormatterCallbackFunction = js.ThisFunction0[
-    /* this */ typings.highcharts.mod.DataLabelsFormatterContextObject, 
+  type DataLabelsFormatterCallbackFunction = js.ThisFunction1[
+    /* this */ typings.highcharts.mod.PointLabelObject, 
+    /* options */ typings.highcharts.mod.DataLabelsOptions, 
     js.UndefOr[scala.Double | java.lang.String | scala.Null]
   ]
   type DataParseDateCallbackFunction = js.Function1[/* dateValue */ java.lang.String, scala.Double]
@@ -229,7 +235,7 @@ package object mod {
     scala.Unit
   ]
   type SeriesNetworkgraphDataLabelsFormatterCallbackFunction = js.ThisFunction0[
-    /* this */ typings.highcharts.mod.DataLabelsFormatterContextObject | typings.highcharts.mod.SeriesNetworkgraphDataLabelsFormatterContextObject, 
+    /* this */ typings.highcharts.mod.PointLabelObject | typings.highcharts.mod.SeriesNetworkgraphDataLabelsFormatterContextObject, 
     java.lang.String
   ]
   type SeriesPackedBubbleDataLabelsFormatterCallbackFunction = js.ThisFunction0[
@@ -237,15 +243,16 @@ package object mod {
     java.lang.String
   ]
   type SeriesSankeyDataLabelsFormatterCallbackFunction = js.ThisFunction0[
-    /* this */ typings.highcharts.mod.DataLabelsFormatterContextObject | typings.highcharts.mod.SeriesSankeyDataLabelsFormatterContextObject, 
+    /* this */ typings.highcharts.mod.PointLabelObject | typings.highcharts.mod.SeriesSankeyDataLabelsFormatterContextObject, 
     js.UndefOr[java.lang.String]
   ]
   type SeriesShowCallbackFunction = js.ThisFunction1[/* this */ typings.highcharts.mod.Series, /* event */ typings.std.Event_, scala.Unit]
   type TimeFormatCallbackFunction = js.Function1[/* timestamp */ scala.Double, java.lang.String]
   type TimelineDataLabelsFormatterCallbackFunction = js.ThisFunction0[
-    /* this */ typings.highcharts.mod.DataLabelsFormatterContextObject | typings.highcharts.mod.TimelineDataLabelsFormatterContextObject, 
+    /* this */ typings.highcharts.mod.PointLabelObject | typings.highcharts.mod.TimelineDataLabelsFormatterContextObject, 
     js.UndefOr[scala.Double | java.lang.String | scala.Null]
   ]
+  type TimezoneOffsetCallbackFunction = js.Function1[/* timestamp */ scala.Double, scala.Double]
   type TooltipFormatterCallbackFunction = js.ThisFunction1[
     /* this */ typings.highcharts.mod.TooltipFormatterContextObject, 
     /* tooltip */ typings.highcharts.mod.Tooltip, 
@@ -256,7 +263,7 @@ package object mod {
   type TooltipPositionerCallbackFunction = js.Function3[
     /* labelWidth */ scala.Double, 
     /* labelHeight */ scala.Double, 
-    /* point */ typings.highcharts.mod.TooltipPositionerPointObject, 
+    /* point */ typings.highcharts.mod.Point, 
     typings.highcharts.mod.PositionObject
   ]
   type WrapProceedFunction = js.Function3[

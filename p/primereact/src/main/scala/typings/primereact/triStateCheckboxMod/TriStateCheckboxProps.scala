@@ -1,6 +1,6 @@
 package typings.primereact.triStateCheckboxMod
 
-import typings.primereact.AnonValueBoolean
+import typings.primereact.AnonTarget
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +12,7 @@ trait TriStateCheckboxProps extends js.Object {
   var id: js.UndefOr[String] = js.undefined
   var inputId: js.UndefOr[String] = js.undefined
   var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValueBoolean, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
@@ -27,7 +27,7 @@ object TriStateCheckboxProps {
     id: String = null,
     inputId: String = null,
     name: String = null,
-    onChange: /* e */ AnonValueBoolean => Unit = null,
+    onChange: /* e */ AnonTarget => Unit = null,
     style: js.Object = null,
     tooltip: js.Any = null,
     tooltipOptions: TooltipOptions = null,

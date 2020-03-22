@@ -283,6 +283,11 @@ trait TooltipOptions extends js.Object {
     */
   var split: js.UndefOr[Boolean] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Prevents the tooltip from
+    * switching or closing, when touched or pointed.
+    */
+  var stickOnContact: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the tooltip. The
     * tooltip can also be styled through the CSS class `.highcharts-tooltip`.
     *
@@ -349,12 +354,13 @@ object TooltipOptions {
     padding: Int | Double = null,
     pointFormat: String = null,
     pointFormatter: FormatterCallbackFunction[Point] = null,
-    positioner: (/* labelWidth */ Double, /* labelHeight */ Double, /* point */ TooltipPositionerPointObject) => PositionObject = null,
+    positioner: (/* labelWidth */ Double, /* labelHeight */ Double, /* point */ Point) => PositionObject = null,
     shadow: Boolean | ShadowOptionsObject = null,
     shape: TooltipShapeValue = null,
     shared: js.UndefOr[Boolean] = js.undefined,
     snap: Int | Double = null,
     split: js.UndefOr[Boolean] = js.undefined,
+    stickOnContact: js.UndefOr[Boolean] = js.undefined,
     style: CSSObject = null,
     useHTML: js.UndefOr[Boolean] = js.undefined,
     valueDecimals: Int | Double = null,
@@ -393,6 +399,7 @@ object TooltipOptions {
     if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
     if (snap != null) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
     if (!js.isUndefined(split)) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickOnContact)) __obj.updateDynamic("stickOnContact")(stickOnContact.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
     if (valueDecimals != null) __obj.updateDynamic("valueDecimals")(valueDecimals.asInstanceOf[js.Any])

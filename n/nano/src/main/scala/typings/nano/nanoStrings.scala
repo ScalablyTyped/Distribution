@@ -67,6 +67,9 @@ object nanoStrings {
   sealed trait $type extends MangoOperator
   
   @js.native
+  sealed trait MangoSelector extends js.Object
+  
+  @js.native
   sealed trait asc extends js.Object
   
   @js.native
@@ -133,6 +136,8 @@ object nanoStrings {
   def $size: $size = "$size".asInstanceOf[$size]
   @scala.inline
   def $type: $type = "$type".asInstanceOf[$type]
+  @scala.inline
+  def MangoSelector: MangoSelector = "MangoSelector".asInstanceOf[MangoSelector]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   @scala.inline

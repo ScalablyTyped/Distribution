@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "common-tags"
-version := "1.8-dt-20181205Z-3e4524"
+version := "1.8-dt-20200226Z-3e4524"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

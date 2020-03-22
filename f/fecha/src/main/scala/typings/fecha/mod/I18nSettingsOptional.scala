@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Inlined std.Partial<fecha.fecha.I18nSettings> */
 trait I18nSettingsOptional extends js.Object {
   var DoFn: js.UndefOr[js.Function1[/* dayOfMonth */ Double, String]] = js.undefined
   var amPm: js.UndefOr[js.Tuple2[String, String]] = js.undefined

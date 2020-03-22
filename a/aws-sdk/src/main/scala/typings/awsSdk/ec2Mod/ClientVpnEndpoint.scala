@@ -47,6 +47,10 @@ trait ClientVpnEndpoint extends js.Object {
     */
   var DnsServers: js.UndefOr[ValueStringList] = js.native
   /**
+    * The IDs of the security groups for the target network.
+    */
+  var SecurityGroupIds: js.UndefOr[ClientVpnSecurityGroupIdSet] = js.native
+  /**
     * The ARN of the server certificate.
     */
   var ServerCertificateArn: js.UndefOr[String] = js.native
@@ -66,6 +70,10 @@ trait ClientVpnEndpoint extends js.Object {
     * The transport protocol used by the Client VPN endpoint.
     */
   var TransportProtocol: js.UndefOr[typings.awsSdk.ec2Mod.TransportProtocol] = js.native
+  /**
+    * The ID of the VPC.
+    */
+  var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
   /**
     * The port number for the Client VPN endpoint.
     */
@@ -89,11 +97,13 @@ object ClientVpnEndpoint {
     Description: String = null,
     DnsName: String = null,
     DnsServers: ValueStringList = null,
+    SecurityGroupIds: ClientVpnSecurityGroupIdSet = null,
     ServerCertificateArn: String = null,
     SplitTunnel: js.UndefOr[scala.Boolean] = js.undefined,
     Status: ClientVpnEndpointStatus = null,
     Tags: TagList = null,
     TransportProtocol: TransportProtocol = null,
+    VpcId: VpcId = null,
     VpnPort: Int | scala.Double = null,
     VpnProtocol: VpnProtocol = null
   ): ClientVpnEndpoint = {
@@ -108,11 +118,13 @@ object ClientVpnEndpoint {
     if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName.asInstanceOf[js.Any])
     if (DnsServers != null) __obj.updateDynamic("DnsServers")(DnsServers.asInstanceOf[js.Any])
+    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
     if (ServerCertificateArn != null) __obj.updateDynamic("ServerCertificateArn")(ServerCertificateArn.asInstanceOf[js.Any])
     if (!js.isUndefined(SplitTunnel)) __obj.updateDynamic("SplitTunnel")(SplitTunnel.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (TransportProtocol != null) __obj.updateDynamic("TransportProtocol")(TransportProtocol.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     if (VpnPort != null) __obj.updateDynamic("VpnPort")(VpnPort.asInstanceOf[js.Any])
     if (VpnProtocol != null) __obj.updateDynamic("VpnProtocol")(VpnProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientVpnEndpoint]

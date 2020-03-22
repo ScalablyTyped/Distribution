@@ -9,12 +9,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AuthProvider extends js.Object {
-  def getUser(req: Request_[ParamsDictionary], res: Response_, next: NextFunction): js.Promise[Principal]
+  def getUser(req: Request_[ParamsDictionary], res: Response_[_], next: NextFunction): js.Promise[Principal]
 }
 
 object AuthProvider {
   @scala.inline
-  def apply(getUser: (Request_[ParamsDictionary], Response_, NextFunction) => js.Promise[Principal]): AuthProvider = {
+  def apply(getUser: (Request_[ParamsDictionary], Response_[_], NextFunction) => js.Promise[Principal]): AuthProvider = {
     val __obj = js.Dynamic.literal(getUser = js.Any.fromFunction3(getUser))
   
     __obj.asInstanceOf[AuthProvider]

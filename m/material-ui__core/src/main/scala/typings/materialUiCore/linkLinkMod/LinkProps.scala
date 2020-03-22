@@ -1,7 +1,7 @@
 package typings.materialUiCore.linkLinkMod
 
-import typings.materialUiCore.PartialClassNameMapLinkClassKey
-import typings.materialUiCore.PartialClassNameMapTypographyClassKey
+import typings.materialUiCore.PartialClassNameMapLinkCl
+import typings.materialUiCore.PartialClassNameMapTypogr
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -98,7 +98,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement> & @material-ui/core.@material-ui/core/Typography.TypographyProps, @material-ui/core.@material-ui/core/Link/Link.LinkClassKey, 'component'> */
 @js.native
 trait LinkProps extends js.Object {
-  var TypographyClasses: js.UndefOr[PartialClassNameMapTypographyClassKey] = js.native
+  var TypographyClasses: js.UndefOr[PartialClassNameMapTypogr] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var align: js.UndefOr[Alignment] = js.native
@@ -156,7 +156,7 @@ trait LinkProps extends js.Object {
   var block: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapLinkClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapLinkCl] = js.native
   var color: js.UndefOr[Color] = js.native
   var component: js.UndefOr[ReactType[LinkProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -298,7 +298,7 @@ trait LinkProps extends js.Object {
 object LinkProps {
   @scala.inline
   def apply(
-    TypographyClasses: PartialClassNameMapTypographyClassKey = null,
+    TypographyClasses: PartialClassNameMapTypogr = null,
     about: String = null,
     accessKey: String = null,
     align: Alignment = null,
@@ -356,7 +356,7 @@ object LinkProps {
     block: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapLinkClassKey = null,
+    classes: PartialClassNameMapLinkCl = null,
     color: Color = null,
     component: ReactType[LinkProps] = null,
     contentEditable: Booleanish | inherit = null,

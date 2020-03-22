@@ -21,7 +21,7 @@ trait CreateTransitGatewayPeeringAttachmentRequest extends js.Object {
   /**
     * The ID of the peer transit gateway with which to create the peering attachment.
     */
-  var PeerTransitGatewayId: String = js.native
+  var PeerTransitGatewayId: TransitAssociationGatewayId = js.native
   /**
     * The tags to apply to the transit gateway peering attachment.
     */
@@ -37,7 +37,7 @@ object CreateTransitGatewayPeeringAttachmentRequest {
   def apply(
     PeerAccountId: String,
     PeerRegion: String,
-    PeerTransitGatewayId: String,
+    PeerTransitGatewayId: TransitAssociationGatewayId,
     TransitGatewayId: TransitGatewayId,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     TagSpecifications: TagSpecificationList = null

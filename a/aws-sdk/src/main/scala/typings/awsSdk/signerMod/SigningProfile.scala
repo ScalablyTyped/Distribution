@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SigningProfile extends js.Object {
   /**
-    * Amazon Resource Name (ARN) for the signing profile.
+    * The Amazon Resource Name (ARN) for the signing profile.
     */
   var arn: js.UndefOr[java.lang.String] = js.native
   /**

@@ -6,6 +6,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,6 +20,7 @@ object IconComponentProps {
   @scala.inline
   def apply(
     icon: IconDefinition,
+    children: ReactNode = null,
     className: String = null,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
     onKeyUp: KeyboardEvent[HTMLElement] => Unit = null,
@@ -31,6 +33,7 @@ object IconComponentProps {
     twoToneColor: TwoToneColor = null
   ): IconComponentProps = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))

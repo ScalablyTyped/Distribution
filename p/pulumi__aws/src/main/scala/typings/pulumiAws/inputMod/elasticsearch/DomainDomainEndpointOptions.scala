@@ -11,9 +11,6 @@ trait DomainDomainEndpointOptions extends js.Object {
     * Whether or not to require HTTPS
     */
   var enforceHttps: Input[Boolean] = js.native
-  /**
-    * <elided>
-    */
   var tlsSecurityPolicy: js.UndefOr[Input[String]] = js.native
 }
 

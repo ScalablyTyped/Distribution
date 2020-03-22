@@ -19,6 +19,18 @@ trait PaginationProps extends js.Object {
     */
   var activeOpacity: js.UndefOr[Double] = js.undefined
   /**
+    * Length of dot animation (milliseconds)
+    */
+  var animatedDuration: js.UndefOr[Double] = js.undefined
+  /**
+    * Controls "bounciness"/overshoot on dot animation
+    */
+  var animatedFriction: js.UndefOr[Double] = js.undefined
+  /**
+    * Controls speed dot animation
+    */
+  var animatedTension: js.UndefOr[Double] = js.undefined
+  /**
     * Reference to the Carousel component to which pagination is linked.
     * Needed only when setting tappableDots to true
     */
@@ -27,6 +39,10 @@ trait PaginationProps extends js.Object {
     * Style for dots' container that will be merged with the default one
     */
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * Delay in ms, from the start of the touch, before onPressIn is called on dot
+    */
+  var delayPressInDot: js.UndefOr[Double] = js.undefined
   /**
     * Background color of the active dot.
     * Use this if you want to animate the change between active and inactive colors,
@@ -98,8 +114,12 @@ object PaginationProps {
     activeDotIndex: Double,
     dotsLength: Double,
     activeOpacity: Int | Double = null,
+    animatedDuration: Int | Double = null,
+    animatedFriction: Int | Double = null,
+    animatedTension: Int | Double = null,
     carouselRef: Component[FlatListProps[_], js.Object, _] = null,
     containerStyle: StyleProp[ViewStyle] = null,
+    delayPressInDot: Int | Double = null,
     dotColor: String = null,
     dotContainerStyle: StyleProp[ViewStyle] = null,
     dotElement: ReactNode = null,
@@ -115,8 +135,12 @@ object PaginationProps {
   ): PaginationProps = {
     val __obj = js.Dynamic.literal(activeDotIndex = activeDotIndex.asInstanceOf[js.Any], dotsLength = dotsLength.asInstanceOf[js.Any])
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (animatedDuration != null) __obj.updateDynamic("animatedDuration")(animatedDuration.asInstanceOf[js.Any])
+    if (animatedFriction != null) __obj.updateDynamic("animatedFriction")(animatedFriction.asInstanceOf[js.Any])
+    if (animatedTension != null) __obj.updateDynamic("animatedTension")(animatedTension.asInstanceOf[js.Any])
     if (carouselRef != null) __obj.updateDynamic("carouselRef")(carouselRef.asInstanceOf[js.Any])
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (delayPressInDot != null) __obj.updateDynamic("delayPressInDot")(delayPressInDot.asInstanceOf[js.Any])
     if (dotColor != null) __obj.updateDynamic("dotColor")(dotColor.asInstanceOf[js.Any])
     if (dotContainerStyle != null) __obj.updateDynamic("dotContainerStyle")(dotContainerStyle.asInstanceOf[js.Any])
     if (dotElement != null) __obj.updateDynamic("dotElement")(dotElement.asInstanceOf[js.Any])

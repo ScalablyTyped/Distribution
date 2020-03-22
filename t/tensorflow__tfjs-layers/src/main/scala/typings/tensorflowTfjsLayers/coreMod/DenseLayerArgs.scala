@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.coreMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
 import typings.tensorflowTfjsLayers.constraintsMod.Constraint
 import typings.tensorflowTfjsLayers.constraintsMod.ConstraintIdentifier
@@ -82,7 +82,7 @@ object DenseLayerArgs {
     name: String = null,
     trainable: js.UndefOr[Boolean] = js.undefined,
     useBias: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor_[Rank]] = null
+    weights: js.Array[Tensor[Rank]] = null
   ): DenseLayerArgs = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
     if (activation != null) __obj.updateDynamic("activation")(activation.asInstanceOf[js.Any])

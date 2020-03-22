@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-cover
 
-Typings are for version 0.9.3
+Typings are for version 0.9.6
 
 ## Library description:
 cover an image.

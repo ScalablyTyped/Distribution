@@ -2,6 +2,7 @@ package typings.pulumiAws.eksClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.outputMod.eks.ClusterCertificateAuthority
+import typings.pulumiAws.outputMod.eks.ClusterEncryptionConfig
 import typings.pulumiAws.outputMod.eks.ClusterIdentity
 import typings.pulumiAws.outputMod.eks.ClusterVpcConfig
 import typings.pulumiPulumi.mod.CustomResource
@@ -38,6 +39,10 @@ class Cluster protected () extends CustomResource {
     * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
     */
   val enabledClusterLogTypes: Output_[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * Configuration block with encryption configuration for the cluster. Only available on Kubernetes 1.13 and above clusters created after March 6, 2020. Detailed below.
+    */
+  val encryptionConfig: Output_[js.UndefOr[ClusterEncryptionConfig]] = js.native
   /**
     * The endpoint for your Kubernetes API server.
     */

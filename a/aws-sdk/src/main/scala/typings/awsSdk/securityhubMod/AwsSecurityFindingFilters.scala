@@ -338,6 +338,10 @@ trait AwsSecurityFindingFilters extends js.Object {
     * The workflow state of a finding.
     */
   var WorkflowState: js.UndefOr[StringFilterList] = js.native
+  /**
+    * The status of the investigation into a finding. Allowed values are the following.    NEW - The initial state of a finding, before it is reviewed.    NOTIFIED - Indicates that the resource owner has been notified about the security issue. Used when the initial reviewer is not the resource owner, and needs intervention from the resource owner.    SUPPRESSED - The finding will not be reviewed again and will not be acted upon.    RESOLVED - The finding was reviewed and remediated and is now considered resolved.   
+    */
+  var WorkflowStatus: js.UndefOr[StringFilterList] = js.native
 }
 
 object AwsSecurityFindingFilters {
@@ -425,7 +429,8 @@ object AwsSecurityFindingFilters {
     UpdatedAt: DateFilterList = null,
     UserDefinedFields: MapFilterList = null,
     VerificationState: StringFilterList = null,
-    WorkflowState: StringFilterList = null
+    WorkflowState: StringFilterList = null,
+    WorkflowStatus: StringFilterList = null
   ): AwsSecurityFindingFilters = {
     val __obj = js.Dynamic.literal()
     if (AwsAccountId != null) __obj.updateDynamic("AwsAccountId")(AwsAccountId.asInstanceOf[js.Any])
@@ -511,6 +516,7 @@ object AwsSecurityFindingFilters {
     if (UserDefinedFields != null) __obj.updateDynamic("UserDefinedFields")(UserDefinedFields.asInstanceOf[js.Any])
     if (VerificationState != null) __obj.updateDynamic("VerificationState")(VerificationState.asInstanceOf[js.Any])
     if (WorkflowState != null) __obj.updateDynamic("WorkflowState")(WorkflowState.asInstanceOf[js.Any])
+    if (WorkflowStatus != null) __obj.updateDynamic("WorkflowStatus")(WorkflowStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSecurityFindingFilters]
   }
 }

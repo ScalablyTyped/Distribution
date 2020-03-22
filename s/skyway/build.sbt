@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "skyway"
-version := "0.0-unknown-dt-20190322Z-e58ff5"
+version := "0.0-unknown-dt-20200227Z-e58ff5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

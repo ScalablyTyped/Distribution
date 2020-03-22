@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 /**
   * Represents an attachment on an item from the server. Read mode only.
   *
-  * An array of **AttachmentDetails** objects is returned as the attachments property of an appointment or message item.
+  * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait AttachmentDetails extends js.Object {
   /**
@@ -23,6 +23,8 @@ trait AttachmentDetails extends js.Object {
   var attachmentType: AttachmentType | String
   /**
     * Gets the MIME content type of the attachment.
+    * 
+    * This property is only available in Read mode.
     */
   var contentType: String
   /**
@@ -35,6 +37,9 @@ trait AttachmentDetails extends js.Object {
   var isInline: Boolean
   /**
     * Gets the name of the attachment.
+    * 
+    * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
+    * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
     */
   var name: String
   /**

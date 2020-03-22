@@ -39,7 +39,7 @@ trait AndroidPushNotificationTemplate extends js.Object {
     */
   var Title: js.UndefOr[string] = js.native
   /**
-    * The URL to open in a recipient's default mobile browser, if a recipient taps a a push notification that's based on the message template and the value of the Action property is URL.
+    * The URL to open in a recipient's default mobile browser, if a recipient taps a push notification that's based on the message template and the value of the Action property is URL.
     */
   var Url: js.UndefOr[string] = js.native
 }

@@ -61,9 +61,9 @@ trait ChildProcess extends EventEmitter {
   def emit_exit(event: exit, code: Null, signal: Signals): Boolean = js.native
   @JSName("emit")
   def emit_message(event: message, message: Serializable, sendHandle: SendHandle): Boolean = js.native
-  def kill(): Unit = js.native
-  def kill(signal: Double): Unit = js.native
-  def kill(signal: Signals): Unit = js.native
+  def kill(): Boolean = js.native
+  def kill(signal: Double): Boolean = js.native
+  def kill(signal: Signals): Boolean = js.native
   @JSName("on")
   def on_close(event: close, listener: js.Function2[/* code */ Double, /* signal */ Signals, Unit]): this.type = js.native
   @JSName("on")

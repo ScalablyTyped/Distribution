@@ -12,9 +12,15 @@ package object mod {
     /* done */ js.Function1[/* completion */ js.Array[java.lang.String], scala.Unit], 
     scala.Unit
   ]
-  type BuilderCallback[T, R] = js.Function1[/* args */ typings.yargs.mod.Argv[T], typings.yargs.mod.Argv[R] | scala.Unit]
+  type BuilderCallback[T, R] = js.Function1[
+    /* args */ typings.yargs.mod.Argv[T], 
+    typings.yargs.mod.Argv[R] | js.Thenable[typings.yargs.mod.Argv[R]] | scala.Unit
+  ]
   type Choices = js.Array[js.UndefOr[java.lang.String | scala.Double | typings.yargs.yargsBooleans.`true`]]
-  type CommandBuilder[T, U] = org.scalablytyped.runtime.StringDictionary[typings.yargs.mod.Options] | (js.Function1[/* args */ typings.yargs.mod.Argv[T], typings.yargs.mod.Argv[U]])
+  type CommandBuilder[T, U] = org.scalablytyped.runtime.StringDictionary[typings.yargs.mod.Options] | (js.Function1[
+    /* args */ typings.yargs.mod.Argv[T], 
+    typings.yargs.mod.Argv[U] | js.Thenable[typings.yargs.mod.Argv[U]]
+  ])
   /** Remove undefined as a possible value for keys K in T */
   type Defined[T, K /* <: java.lang.String */] = (typings.yargs.mod.Omit[T, K]) with typings.yargs.yargsStrings.Defined with T
   type InferredOptionType[O /* <: typings.yargs.mod.Options | typings.yargs.mod.PositionalOptions */] = js.UndefOr[typings.yargs.mod.RequiredOptionType[O] | scala.Double]

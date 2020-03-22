@@ -1,6 +1,6 @@
 package typings.materialUiCore.tableBodyTableBodyMod
 
-import typings.materialUiCore.PartialClassNameMapTableBodyClassKey
+import typings.materialUiCore.PartialClassNameMapTableB
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -146,7 +146,7 @@ trait TableBodyProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTableBodyClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTableB] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[TableBodyBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -327,7 +327,7 @@ object TableBodyProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTableBodyClassKey = null,
+    classes: PartialClassNameMapTableB = null,
     color: String = null,
     component: ReactType[TableBodyBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

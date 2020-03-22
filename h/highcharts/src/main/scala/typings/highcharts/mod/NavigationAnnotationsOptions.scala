@@ -11,13 +11,13 @@ trait NavigationAnnotationsOptions extends js.Object {
     * object. Options from the controlPointOptions can be overwritten by
     * options in a specific control point.
     */
-  var controlPointOptions: js.UndefOr[js.Object | NavigationAnnotationsControlPointOptions] = js.undefined
+  var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow an annotation to be
-    * draggable by a user. Possible values are `"x"`, `"xy"`, `"y"` and `""`
+    * draggable by a user. Possible values are `'x'`, `'xy'`, `'y'` and `''`
     * (disabled).
     */
-  var draggable: js.UndefOr[OptionsDraggableValue] = js.undefined
+  var draggable: js.UndefOr[AnnotationDraggableValue] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Events available in annotations.
     */
@@ -66,8 +66,8 @@ trait NavigationAnnotationsOptions extends js.Object {
 object NavigationAnnotationsOptions {
   @scala.inline
   def apply(
-    controlPointOptions: js.Object | NavigationAnnotationsControlPointOptions = null,
-    draggable: OptionsDraggableValue = null,
+    controlPointOptions: AnnotationControlPointOptionsObject = null,
+    draggable: AnnotationDraggableValue = null,
     events: NavigationAnnotationsEventsOptions = null,
     id: Double | String = null,
     labelOptions: NavigationAnnotationsLabelOptions = null,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for karma
 
-Typings are for version 3.0
+Typings are for version 4.4
 
 ## Library description:
 Spectacular Test Runner for JavaScript.

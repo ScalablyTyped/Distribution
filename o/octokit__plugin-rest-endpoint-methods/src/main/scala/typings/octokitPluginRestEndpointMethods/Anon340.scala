@@ -1,7 +1,7 @@
 package typings.octokitPluginRestEndpointMethods
 
 import typings.octokitPluginRestEndpointMethods.typesMod.AnyResponse
-import typings.octokitPluginRestEndpointMethods.typesMod.ReposEnableVulnerabilityAlertsParams
+import typings.octokitPluginRestEndpointMethods.typesMod.ReposDeleteCommitCommentParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait Anon340 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[AnyResponse] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ReposEnableVulnerabilityAlertsParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ReposDeleteCommitCommentParams
   ): js.Promise[AnyResponse] = js.native
 }
 

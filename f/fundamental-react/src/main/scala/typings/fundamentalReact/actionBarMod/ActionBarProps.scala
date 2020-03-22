@@ -1,6 +1,5 @@
 package typings.fundamentalReact.actionBarMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -70,7 +69,6 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -86,227 +84,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  className ? :string,   customStyles ? :{[x: string] : any},   disableStyles ? :boolean,   ref ? :react.react.Ref<std.HTMLDivElement>} & react.react.HTMLAttributes<std.HTMLDivElement> */
+/* Inlined {  title  :string,   actionClassName ? :string,   actionProps ? :any,   actions ? :react.react.ReactNode,   buttonContainerClassName ? :string,   buttonProps ? :any,   className ? :string,   description ? :string,   descriptionProps ? :any,   disableStyles ? :boolean,   headingLevel ? :any,   titleProps ? :any, onBackClick ? (args : ...any): any} & std.Pick<react.react.HTMLAttributes<std.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'children'>> */
 trait ActionBarProps extends js.Object {
-  // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
-  // Standard HTML Attributes
   var accessKey: js.UndefOr[String] = js.undefined
-  /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
+  var actionClassName: js.UndefOr[String] = js.undefined
+  var actionProps: js.UndefOr[js.Any] = js.undefined
+  var actions: js.UndefOr[ReactNode] = js.undefined
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
-  /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
-    * presented if they are made.
-    */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
-  /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
-    * @see aria-pressed @see aria-selected.
-    */
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
-  /**
-    * Defines the total number of columns in a table, grid, or treegrid.
-    * @see aria-colindex.
-    */
   var `aria-colcount`: js.UndefOr[Double] = js.undefined
-  /**
-    * Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.
-    * @see aria-colcount @see aria-colspan.
-    */
   var `aria-colindex`: js.UndefOr[Double] = js.undefined
-  /**
-    * Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
-    * @see aria-colindex @see aria-rowspan.
-    */
   var `aria-colspan`: js.UndefOr[Double] = js.undefined
-  /**
-    * Identifies the element (or elements) whose contents or presence are controlled by the current element.
-    * @see aria-owns.
-    */
   var `aria-controls`: js.UndefOr[String] = js.undefined
-  /** Indicates the element that represents the current item within a container or set of related elements. */
   var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time_] = js.undefined
-  /**
-    * Identifies the element (or elements) that describes the object.
-    * @see aria-labelledby
-    */
   var `aria-describedby`: js.UndefOr[String] = js.undefined
-  /**
-    * Identifies the element that provides a detailed, extended description for the object.
-    * @see aria-describedby.
-    */
   var `aria-details`: js.UndefOr[String] = js.undefined
-  /**
-    * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
-    * @see aria-hidden @see aria-readonly.
-    */
   var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Indicates what functions can be performed when a dragged object is released on the drop target.
-    * @deprecated in ARIA 1.1
-    */
   var `aria-dropeffect`: js.UndefOr[none | copy | execute | link_ | move | popup] = js.undefined
-  /**
-    * Identifies the element that provides an error message for the object.
-    * @see aria-invalid @see aria-describedby.
-    */
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
-  /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
   var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
-    * allows assistive technology to override the general default of reading in document source order.
-    */
   var `aria-flowto`: js.UndefOr[String] = js.undefined
-  /**
-    * Indicates an element's "grabbed" state in a drag-and-drop operation.
-    * @deprecated in ARIA 1.1
-    */
   var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
-  /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
   var `aria-haspopup`: js.UndefOr[Boolean | menu_ | listbox | tree | grid | dialog] = js.undefined
-  /**
-    * Indicates whether the element is exposed to an accessibility API.
-    * @see aria-disabled.
-    */
   var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Indicates the entered value does not conform to the format expected by the application.
-    * @see aria-errormessage.
-    */
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
-  /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
   var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
-  /**
-    * Defines a string value that labels the current element.
-    * @see aria-labelledby.
-    */
   var `aria-label`: js.UndefOr[String] = js.undefined
-  /**
-    * Identifies the element (or elements) that labels the current element.
-    * @see aria-describedby.
-    */
   var `aria-labelledby`: js.UndefOr[String] = js.undefined
-  /** Defines the hierarchical level of an element within a structure. */
   var `aria-level`: js.UndefOr[Double] = js.undefined
-  /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
-  /** Indicates whether an element is modal when displayed. */
   var `aria-modal`: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether a text box accepts multiple lines of input or only a single line. */
   var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
-  /** Indicates that the user may select more than one item from the current selectable descendants. */
   var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
-  /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
-  /**
-    * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
-    * between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
-    * @see aria-controls.
-    */
   var `aria-owns`: js.UndefOr[String] = js.undefined
-  /**
-    * Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.
-    * A hint could be a sample value or a brief description of the expected format.
-    */
   var `aria-placeholder`: js.UndefOr[String] = js.undefined
-  /**
-    * Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
-    * @see aria-setsize.
-    */
   var `aria-posinset`: js.UndefOr[Double] = js.undefined
-  /**
-    * Indicates the current "pressed" state of toggle buttons.
-    * @see aria-checked @see aria-selected.
-    */
   var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
-  /**
-    * Indicates that the element is not editable, but is otherwise operable.
-    * @see aria-disabled.
-    */
   var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
-    * @see aria-atomic.
-    */
   var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.undefined
-  /** Indicates that user input is required on the element before a form may be submitted. */
   var `aria-required`: js.UndefOr[Boolean] = js.undefined
-  /** Defines a human-readable, author-localized description for the role of an element. */
   var `aria-roledescription`: js.UndefOr[String] = js.undefined
-  /**
-    * Defines the total number of rows in a table, grid, or treegrid.
-    * @see aria-rowindex.
-    */
   var `aria-rowcount`: js.UndefOr[Double] = js.undefined
-  /**
-    * Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.
-    * @see aria-rowcount @see aria-rowspan.
-    */
   var `aria-rowindex`: js.UndefOr[Double] = js.undefined
-  /**
-    * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
-    * @see aria-rowindex @see aria-colspan.
-    */
   var `aria-rowspan`: js.UndefOr[Double] = js.undefined
-  /**
-    * Indicates the current "selected" state of various widgets.
-    * @see aria-checked @see aria-pressed.
-    */
   var `aria-selected`: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
-    * @see aria-posinset.
-    */
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
-  /** Indicates if items in a table or grid are sorted in ascending or descending order. */
   var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
-  /** Defines the maximum allowed value for a range widget. */
   var `aria-valuemax`: js.UndefOr[Double] = js.undefined
-  /** Defines the minimum allowed value for a range widget. */
   var `aria-valuemin`: js.UndefOr[Double] = js.undefined
-  /**
-    * Defines the current value for a range widget.
-    * @see aria-valuetext.
-    */
   var `aria-valuenow`: js.UndefOr[Double] = js.undefined
-  /** Defines the human readable text alternative of aria-valuenow for a range widget. */
   var `aria-valuetext`: js.UndefOr[String] = js.undefined
-  // Non-standard Attributes
   var autoCapitalize: js.UndefOr[String] = js.undefined
   var autoCorrect: js.UndefOr[String] = js.undefined
   var autoSave: js.UndefOr[String] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var buttonContainerClassName: js.UndefOr[String] = js.undefined
+  var buttonProps: js.UndefOr[js.Any] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
-  // React-specific Attributes
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
+  var description: js.UndefOr[String] = js.undefined
+  var descriptionProps: js.UndefOr[js.Any] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
   var disableStyles: js.UndefOr[Boolean] = js.undefined
   var draggable: js.UndefOr[Booleanish] = js.undefined
+  var headingLevel: js.UndefOr[js.Any] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var inlist: js.UndefOr[js.Any] = js.undefined
-  // Living Standard
-  /**
-    * Hints at the type of data that might be entered by the user while editing the element or its contents
-    * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
-    */
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
-  /**
-    * Specify that a standard HTML element should behave like a defined custom built-in element
-    * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
-    */
   var is: js.UndefOr[String] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -314,27 +169,22 @@ trait ActionBarProps extends js.Object {
   var itemScope: js.UndefOr[Boolean] = js.undefined
   var itemType: js.UndefOr[String] = js.undefined
   var lang: js.UndefOr[String] = js.undefined
-  // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
   var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
-  // Animation Events
   var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
-  // MouseEvents
   var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
+  var onBackClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  // Form Events
   var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  // Composition Events
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
   var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  // Clipboard Events
   var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   var onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
@@ -351,16 +201,12 @@ trait ActionBarProps extends js.Object {
   var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  // Focus Events
   var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
   var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
-   // also a Media Event
-  // Keyboard Events
   var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
-  // Image Events
   var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -377,7 +223,6 @@ trait ActionBarProps extends js.Object {
   var onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
-  // Pointer Events
   var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
   var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.undefined
@@ -388,37 +233,28 @@ trait ActionBarProps extends js.Object {
   var onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
-  // UI Events
   var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
   var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  // Selection Events
   var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
   var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  // Touch Events
   var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
   var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
-  // Transition Events
   var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.undefined
   var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
-  // Wheel Events
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
-  // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
-  var ref: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
   var resource: js.UndefOr[String] = js.undefined
   var results: js.UndefOr[Double] = js.undefined
-   // <command>, <menuitem>
-  // WAI-ARIA
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
@@ -428,6 +264,7 @@ trait ActionBarProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var titleProps: js.UndefOr[js.Any] = js.undefined
   var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -439,9 +276,12 @@ object ActionBarProps {
   def apply(
     about: String = null,
     accessKey: String = null,
+    actionClassName: String = null,
+    actionProps: js.Any = null,
+    actions: ReactNode = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -490,19 +330,22 @@ object ActionBarProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
-    children: ReactNode = null,
+    buttonContainerClassName: String = null,
+    buttonProps: js.Any = null,
     className: String = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    customStyles: StringDictionary[js.Any] = null,
     dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
+    description: String = null,
+    descriptionProps: js.Any = null,
     dir: String = null,
     disableStyles: js.UndefOr[Boolean] = js.undefined,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    headingLevel: js.Any = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -519,6 +362,7 @@ object ActionBarProps {
     onAnimationIteration: AnimationEvent[HTMLDivElement] => Unit = null,
     onAnimationStart: AnimationEvent[HTMLDivElement] => Unit = null,
     onAuxClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
+    onBackClick: /* repeated */ js.Any => _ = null,
     onBeforeInput: FormEvent[HTMLDivElement] => Unit = null,
     onBlur: FocusEvent[HTMLDivElement] => Unit = null,
     onCanPlay: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
@@ -597,7 +441,6 @@ object ActionBarProps {
     prefix: String = null,
     property: String = null,
     radioGroup: String = null,
-    ref: Ref[HTMLDivElement] = null,
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
@@ -609,6 +452,7 @@ object ActionBarProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    titleProps: js.Any = null,
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -617,6 +461,9 @@ object ActionBarProps {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (actionClassName != null) __obj.updateDynamic("actionClassName")(actionClassName.asInstanceOf[js.Any])
+    if (actionProps != null) __obj.updateDynamic("actionProps")(actionProps.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
@@ -668,19 +515,22 @@ object ActionBarProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (buttonContainerClassName != null) __obj.updateDynamic("buttonContainerClassName")(buttonContainerClassName.asInstanceOf[js.Any])
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (descriptionProps != null) __obj.updateDynamic("descriptionProps")(descriptionProps.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -697,6 +547,7 @@ object ActionBarProps {
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
     if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
+    if (onBackClick != null) __obj.updateDynamic("onBackClick")(js.Any.fromFunction1(onBackClick))
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
@@ -775,7 +626,6 @@ object ActionBarProps {
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
@@ -787,6 +637,7 @@ object ActionBarProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

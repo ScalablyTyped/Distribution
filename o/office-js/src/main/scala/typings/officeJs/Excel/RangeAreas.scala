@@ -138,14 +138,12 @@ class RangeAreas () extends ClientObject {
     */
   val worksheet: Worksheet = js.native
   /**
-    *
     * Calculates all cells in the RangeAreas.
     *
     * [Api set: ExcelApi 1.9]
     */
   def calculate(): Unit = js.native
   /**
-    *
     * Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
@@ -165,14 +163,12 @@ class RangeAreas () extends ClientObject {
   @JSName("clear")
   def clear_RemoveHyperlinks(applyTo: RemoveHyperlinks): Unit = js.native
   /**
-    *
     * Converts all cells in the RangeAreas with datatypes into text.
     *
     * [Api set: ExcelApi 1.9]
     */
   def convertDataTypeToText(): Unit = js.native
   /**
-    *
     * Converts all cells in the RangeAreas into linked datatype.
     *
     * [Api set: ExcelApi 1.9]
@@ -186,7 +182,6 @@ class RangeAreas () extends ClientObject {
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean): Unit = js.native
   def copyFrom(sourceRange: String, copyType: RangeCopyType, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   /**
-    *
     * Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas.
     The destination rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is smaller than the source.
     *
@@ -278,14 +273,12 @@ class RangeAreas () extends ClientObject {
   @JSName("copyFrom")
   def copyFrom_Values(sourceRange: Range, copyType: Values, skipBlanks: Boolean, transpose: Boolean): Unit = js.native
   /**
-    *
     * Returns a RangeAreas object that represents the entire columns of the RangeAreas (for example, if the current RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
     *
     * [Api set: ExcelApi 1.9]
     */
   def getEntireColumn(): RangeAreas = js.native
   /**
-    *
     * Returns a RangeAreas object that represents the entire rows of the RangeAreas (for example, if the current RangeAreas represents cells "B4:E11", it returns a RangeAreas that represents rows "4:11").
     *
     * [Api set: ExcelApi 1.9]
@@ -293,7 +286,6 @@ class RangeAreas () extends ClientObject {
   def getEntireRow(): RangeAreas = js.native
   def getIntersection(anotherRange: String): RangeAreas = js.native
   /**
-    *
     * Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no intersection is found, an ItemNotFound error will be thrown.
     *
     * [Api set: ExcelApi 1.9]
@@ -304,7 +296,6 @@ class RangeAreas () extends ClientObject {
   def getIntersection(anotherRange: RangeAreas): RangeAreas = js.native
   def getIntersectionOrNullObject(anotherRange: String): RangeAreas = js.native
   /**
-    *
     * Returns the RangeAreas object that represents the intersection of the given ranges or RangeAreas. If no intersection is found, a null object is returned.
     *
     * [Api set: ExcelApi 1.9]
@@ -314,7 +305,6 @@ class RangeAreas () extends ClientObject {
   def getIntersectionOrNullObject(anotherRange: Range): RangeAreas = js.native
   def getIntersectionOrNullObject(anotherRange: RangeAreas): RangeAreas = js.native
   /**
-    *
     * Returns an RangeAreas object that is shifted by the specific row and column offset. The dimension of the returned RangeAreas will match the original object. If the resulting RangeAreas is forced outside the bounds of the worksheet grid, an error will be thrown.
     *
     * [Api set: ExcelApi 1.9]
@@ -324,7 +314,6 @@ class RangeAreas () extends ClientObject {
     */
   def getOffsetRangeAreas(rowOffset: Double, columnOffset: Double): RangeAreas = js.native
   /**
-    *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error if no special cells are found that match the criteria.
     *
     * [Api set: ExcelApi 1.9]
@@ -367,7 +356,6 @@ class RangeAreas () extends ClientObject {
     cellValueType: All | Errors | ErrorsLogical | ErrorsNumbers | ErrorsText | ErrorsLogicalNumber | ErrorsLogicalText | ErrorsNumberText | Logical | LogicalNumbers | LogicalText | LogicalNumbersText | Numbers | NumbersText | Text
   ): RangeAreas = js.native
   /**
-    *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null object if no special cells are found that match the criteria.
     *
     * [Api set: ExcelApi 1.9]
@@ -412,7 +400,6 @@ class RangeAreas () extends ClientObject {
   @JSName("getSpecialCellsOrNullObject")
   def getSpecialCellsOrNullObject_Blanks(cellType: Blanks): RangeAreas = js.native
   /**
-    *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Returns a null object if no special cells are found that match the criteria.
     *
     * [Api set: ExcelApi 1.9]
@@ -437,7 +424,6 @@ class RangeAreas () extends ClientObject {
   @JSName("getSpecialCells")
   def getSpecialCells_Blanks(cellType: Blanks): RangeAreas = js.native
   /**
-    *
     * Returns a RangeAreas object that represents all the cells that match the specified type and value. Throws an error if no special cells are found that match the criteria.
     *
     * [Api set: ExcelApi 1.9]
@@ -460,7 +446,6 @@ class RangeAreas () extends ClientObject {
   @JSName("getSpecialCells")
   def getSpecialCells_Visible(cellType: Visible): RangeAreas = js.native
   /**
-    *
     * Returns a scoped collection of tables that overlap with any range in this RangeAreas object.
     *
     * [Api set: ExcelApi 1.9]
@@ -470,7 +455,6 @@ class RangeAreas () extends ClientObject {
   def getTables(): TableScopedCollection = js.native
   def getTables(fullyContained: Boolean): TableScopedCollection = js.native
   /**
-    *
     * Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas object.
     If there are no used cells within the RangeAreas, the ItemNotFound error will be thrown.
     *
@@ -481,7 +465,6 @@ class RangeAreas () extends ClientObject {
   def getUsedRangeAreas(): RangeAreas = js.native
   def getUsedRangeAreas(valuesOnly: Boolean): RangeAreas = js.native
   /**
-    *
     * Returns the used RangeAreas that comprises all the used areas of individual rectangular ranges in the RangeAreas object.
     If there are no used cells within the RangeAreas, a null object will be returned.
     *
@@ -517,7 +500,6 @@ class RangeAreas () extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: RangeAreas): Unit = js.native
   /**
-    *
     * Sets the RangeAreas to be recalculated when the next recalculation occurs.
     *
     * [Api set: ExcelApi 1.9]

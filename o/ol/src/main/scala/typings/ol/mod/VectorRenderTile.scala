@@ -14,12 +14,10 @@ class VectorRenderTile protected () extends default {
     tileCoord: TileCoord,
     state: TileState,
     urlTileCoord: TileCoord,
-    sourceTileGrid: typings.ol.tilegridTileGridMod.default,
     getSourceTiles: js.Function1[
         /* p0 */ typings.ol.vectorRenderTileMod.VectorRenderTile, 
         js.Array[typings.ol.olVectorTileMod.default]
-      ],
-    removeSourceTiles: js.Function1[/* p0 */ typings.ol.vectorRenderTileMod.VectorRenderTile, Unit]
+      ]
   ) = this()
 }
 

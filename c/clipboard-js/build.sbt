@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clipboard-js"
-version := "0.3.1-dt-20190322Z-b130ec"
+version := "0.3.1-dt-20200225Z-b130ec"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

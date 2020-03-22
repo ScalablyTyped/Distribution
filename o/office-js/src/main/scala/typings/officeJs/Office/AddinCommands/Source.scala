@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   */
 trait Source extends js.Object {
   /**
-    * The id of the control that triggered calling this function. The id comes from the manifest and is the unique ID of your Office Add-in 
+    * The ID of the control that triggered calling this function. The ID comes from the manifest and is the unique ID of your Office Add-in 
     * as a GUID.
     */
   var id: String

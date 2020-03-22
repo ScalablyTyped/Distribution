@@ -19,7 +19,7 @@ trait CreatePagesArgstraceIdiniDictkey
   var actions: Actions = js.native
   var boundActionCreators: Actions = js.native
   var cache: AnonDel = js.native
-  var createContentDigest: js.Function1[/* input */ js.Any, String] = js.native
+  var createContentDigest: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof createContentDigest */ js.Any = js.native
   var createNodeId: js.Function = js.native
   var emitter: EventEmitter = js.native
   var getNode: js.Function = js.native

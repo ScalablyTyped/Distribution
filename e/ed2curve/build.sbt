@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ed2curve"
-version := "0.2-dt-20180214Z-e8cc40"
+version := "0.2-dt-20200225Z-e8cc40"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

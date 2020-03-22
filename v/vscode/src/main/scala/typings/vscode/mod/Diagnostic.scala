@@ -1,5 +1,6 @@
 package typings.vscode.mod
 
+import typings.vscode.AnonTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +21,7 @@ class Diagnostic protected () extends js.Object {
   		 * A code or identifier for this diagnostic.
   		 * Should be used for later processing, e.g. when providing [code actions](#CodeActionContext).
   		 */
-  var code: js.UndefOr[String | Double] = js.native
+  var code: js.UndefOr[String | Double | AnonTarget] = js.native
   /**
   		 * The human-readable message.
   		 */

@@ -31,6 +31,8 @@ trait Props extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /* String className to be applied to the document.html (must be a constant string). Defaults to null. */
   var htmlOpenClassName: js.UndefOr[String | Null] = js.undefined
+  /* String value of an id attribute to be applied to the modal content */
+  var id: js.UndefOr[String] = js.undefined
   /* Boolean describing if the modal should be shown or not. Defaults to false. */
   var isOpen: Boolean
   /* Function that will be run after the modal has closed. */
@@ -79,6 +81,7 @@ object Props {
     contentRef: /* instance */ HTMLDivElement => Unit = null,
     data: js.Any = null,
     htmlOpenClassName: String = null,
+    id: String = null,
     onAfterClose: () => Unit = null,
     onAfterOpen: /* obj */ js.UndefOr[OnAfterOpenCallbackOptions] => Unit = null,
     onRequestClose: /* event */ (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element] => Unit = null,
@@ -105,6 +108,7 @@ object Props {
     if (contentRef != null) __obj.updateDynamic("contentRef")(js.Any.fromFunction1(contentRef))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (htmlOpenClassName != null) __obj.updateDynamic("htmlOpenClassName")(htmlOpenClassName.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (onAfterClose != null) __obj.updateDynamic("onAfterClose")(js.Any.fromFunction0(onAfterClose))
     if (onAfterOpen != null) __obj.updateDynamic("onAfterOpen")(js.Any.fromFunction1(onAfterOpen))
     if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction1(onRequestClose))

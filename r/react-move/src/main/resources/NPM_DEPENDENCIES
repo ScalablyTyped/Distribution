@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-move" : "5.2.1"
+      "react-move" : "6.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-move" : "5.2.1"
+      "react-move" : "6.1.0"
     }
   ],
   "compile-devDependencies" : [

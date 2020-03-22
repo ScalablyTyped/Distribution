@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   - typings.slonik.slonikStrings.json
   - typings.slonik.slonikStrings.text
   - typings.slonik.slonikStrings.timestamptz
+  - typings.slonik.slonikStrings.uuid
 */
 trait TypeNameIdentifierType extends js.Object
 
@@ -38,5 +39,7 @@ object TypeNameIdentifierType {
   def text: typings.slonik.slonikStrings.text = this.cast("text")
   @scala.inline
   def timestamptz: typings.slonik.slonikStrings.timestamptz = this.cast("timestamptz")
+  @scala.inline
+  def uuid: typings.slonik.slonikStrings.uuid = this.cast("uuid")
 }
 

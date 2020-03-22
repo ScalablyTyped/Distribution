@@ -33,7 +33,7 @@ trait IntegrationResponseState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * Specifies the regular expression pattern used to choose
     * an integration response based on the response from the backend. Setting this to `-` makes the integration the default one.
@@ -55,7 +55,7 @@ object IntegrationResponseState {
     resourceId: Input[String] = null,
     responseParameters: Input[StringDictionary[Input[String]]] = null,
     responseTemplates: Input[StringDictionary[Input[String]]] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     selectionPattern: Input[String] = null,
     statusCode: Input[String] = null
   ): IntegrationResponseState = {

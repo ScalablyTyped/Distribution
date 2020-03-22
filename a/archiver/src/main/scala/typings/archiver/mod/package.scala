@@ -11,4 +11,8 @@ package object mod {
     /* entry */ typings.archiver.mod.EntryData, 
     typings.archiver.archiverBooleans.`false` | typings.archiver.mod.EntryData
   ]
+  type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? T[P]}
+    */ typings.archiver.archiverStrings.Partial with T
+  type TarEntryData = typings.archiver.mod.EntryData
 }

@@ -15,7 +15,6 @@ sealed trait DataChangeType extends js.Object
 @js.native
 object DataChangeType extends js.Object {
   /**
-    *
     * CellDeleted represents the data change event is triggered by deleting cells.
     *
     */
@@ -23,7 +22,6 @@ object DataChangeType extends js.Object {
   sealed trait cellDeleted extends DataChangeType
   
   /**
-    *
     * CellInserted represents the data change event is triggered by inserting new cells.
     *
     */
@@ -31,7 +29,6 @@ object DataChangeType extends js.Object {
   sealed trait cellInserted extends DataChangeType
   
   /**
-    *
     * ColumnDeleted represents the data change event is triggered by deleting columns.
     *
     */
@@ -39,7 +36,6 @@ object DataChangeType extends js.Object {
   sealed trait columnDeleted extends DataChangeType
   
   /**
-    *
     * ColumnInserted represents the data change event is triggered by inserting new columns.
     *
     */
@@ -47,7 +43,6 @@ object DataChangeType extends js.Object {
   sealed trait columnInserted extends DataChangeType
   
   /**
-    *
     * RangeEdited represents the data change event is triggered by range being edited.
     *
     */
@@ -55,7 +50,6 @@ object DataChangeType extends js.Object {
   sealed trait rangeEdited extends DataChangeType
   
   /**
-    *
     * RowDeleted represents the data change event is triggered by deleting rows.
     *
     */
@@ -63,7 +57,6 @@ object DataChangeType extends js.Object {
   sealed trait rowDeleted extends DataChangeType
   
   /**
-    *
     * RowInserted represents the data change event is triggered by inserting new rows.
     *
     */
@@ -71,7 +64,6 @@ object DataChangeType extends js.Object {
   sealed trait rowInserted extends DataChangeType
   
   /**
-    *
     * Unknown represents the type of data change is not the listed types.
     *
     */

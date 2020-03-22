@@ -26,7 +26,7 @@ trait ClientOpts extends js.Object {
   var retry_strategy: js.UndefOr[RetryStrategy] = js.undefined
   var retry_unfulfilled_commands: js.UndefOr[Boolean] = js.undefined
   var return_buffers: js.UndefOr[Boolean] = js.undefined
-  var socket_initialdelay: js.UndefOr[Double] = js.undefined
+  var socket_initial_delay: js.UndefOr[Double] = js.undefined
   var socket_keepalive: js.UndefOr[Boolean] = js.undefined
   var string_numbers: js.UndefOr[Boolean] = js.undefined
   var tls: js.UndefOr[js.Any] = js.undefined
@@ -55,7 +55,7 @@ object ClientOpts {
     retry_strategy: /* options */ RetryStrategyOptions => Double | Error = null,
     retry_unfulfilled_commands: js.UndefOr[Boolean] = js.undefined,
     return_buffers: js.UndefOr[Boolean] = js.undefined,
-    socket_initialdelay: Int | Double = null,
+    socket_initial_delay: Int | Double = null,
     socket_keepalive: js.UndefOr[Boolean] = js.undefined,
     string_numbers: js.UndefOr[Boolean] = js.undefined,
     tls: js.Any = null,
@@ -81,7 +81,7 @@ object ClientOpts {
     if (retry_strategy != null) __obj.updateDynamic("retry_strategy")(js.Any.fromFunction1(retry_strategy))
     if (!js.isUndefined(retry_unfulfilled_commands)) __obj.updateDynamic("retry_unfulfilled_commands")(retry_unfulfilled_commands.asInstanceOf[js.Any])
     if (!js.isUndefined(return_buffers)) __obj.updateDynamic("return_buffers")(return_buffers.asInstanceOf[js.Any])
-    if (socket_initialdelay != null) __obj.updateDynamic("socket_initialdelay")(socket_initialdelay.asInstanceOf[js.Any])
+    if (socket_initial_delay != null) __obj.updateDynamic("socket_initial_delay")(socket_initial_delay.asInstanceOf[js.Any])
     if (!js.isUndefined(socket_keepalive)) __obj.updateDynamic("socket_keepalive")(socket_keepalive.asInstanceOf[js.Any])
     if (!js.isUndefined(string_numbers)) __obj.updateDynamic("string_numbers")(string_numbers.asInstanceOf[js.Any])
     if (tls != null) __obj.updateDynamic("tls")(tls.asInstanceOf[js.Any])

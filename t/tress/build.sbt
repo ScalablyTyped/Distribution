@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tress"
-version := "1.0-dt-20180214Z-e7ff7f"
+version := "1.0-dt-20200225Z-e7ff7f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

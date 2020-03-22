@@ -135,7 +135,7 @@ trait AnonCancelWorkflowRun extends js.Object {
   @JSName("listDownloadsForSelfHostedRunnerApplication")
   var listDownloadsForSelfHostedRunnerApplication_Original: Anon9 = js.native
   /**
-    * Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+    * Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
     */
   @JSName("listJobsForWorkflowRun")
   var listJobsForWorkflowRun_Original: Anon10 = js.native
@@ -374,7 +374,7 @@ trait AnonCancelWorkflowRun extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ActionsListDownloadsForSelfHostedRunnerApplicationResponse> */ _
   ] = js.native
   /**
-    * Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint.
+    * Lists jobs for a workflow run. Anyone with read access to the repository can use this endpoint. GitHub Apps must have the `actions` permission to use this endpoint. You can use parameters to narrow the list of results. For more information about using parameters, see [Parameters](https://developer.github.com/v3/#parameters).
     */
   def listJobsForWorkflowRun(): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<ActionsListJobsForWorkflowRunResponse> */ _

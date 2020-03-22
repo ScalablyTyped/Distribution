@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DatasetResponse[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends RdfFetchResponse[OutQuad] {
-  def dataset(): D
+  def dataset(): js.Promise[D]
 }
 
 object DatasetResponse {
@@ -24,12 +24,12 @@ object DatasetResponse {
     arrayBuffer: () => js.Promise[ArrayBuffer],
     blob: () => js.Promise[Blob],
     bodyUsed: Boolean,
-    dataset: () => D,
+    dataset: () => js.Promise[D],
     formData: () => js.Promise[FormData],
     headers: Headers,
     json: () => js.Promise[_],
     ok: Boolean,
-    quadStream: () => Stream[OutQuad],
+    quadStream: () => js.Promise[Stream[OutQuad]],
     redirected: Boolean,
     status: Double,
     statusText: String,

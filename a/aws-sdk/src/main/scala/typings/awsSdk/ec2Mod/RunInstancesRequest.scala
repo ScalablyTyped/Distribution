@@ -85,7 +85,7 @@ trait RunInstancesRequest extends js.Object {
   /**
     * The ID of the kernel.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see  PV-GRUB in the Amazon Elastic Compute Cloud User Guide. 
     */
-  var KernelId: js.UndefOr[String] = js.native
+  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.native
   /**
     * The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.  If you do not specify a key pair, you can't connect to the instance unless you choose an AMI that is configured to allow users another way to log in. 
     */
@@ -129,7 +129,7 @@ trait RunInstancesRequest extends js.Object {
   /**
     * The ID of the RAM disk to select. Some kernels require additional drivers at launch. Check the kernel requirements for information about whether you need to specify a RAM disk. To find kernel requirements, go to the AWS Resource Center and search for the kernel ID.  We recommend that you use PV-GRUB instead of kernels and RAM disks. For more information, see  PV-GRUB in the Amazon Elastic Compute Cloud User Guide. 
     */
-  var RamdiskId: js.UndefOr[String] = js.native
+  var RamdiskId: js.UndefOr[typings.awsSdk.ec2Mod.RamdiskId] = js.native
   /**
     * The IDs of the security groups. You can create a security group using CreateSecurityGroup. If you specify a network interface, you must specify any security groups as part of the network interface.
     */
@@ -141,7 +141,7 @@ trait RunInstancesRequest extends js.Object {
   /**
     * [EC2-VPC] The ID of the subnet to launch the instance into. If you specify a network interface, you must specify any subnets as part of the network interface.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
   /**
     * The tags to apply to the resources during launch. You can only tag instances and volumes on launch. The specified tags are applied to all instances or volumes that are created during launch. To tag a resource after it has been created, see CreateTags.
     */
@@ -176,7 +176,7 @@ object RunInstancesRequest {
     InstanceType: InstanceType = null,
     Ipv6AddressCount: Int | scala.Double = null,
     Ipv6Addresses: InstanceIpv6AddressList = null,
-    KernelId: String = null,
+    KernelId: KernelId = null,
     KeyName: KeyPairName = null,
     LaunchTemplate: LaunchTemplateSpecification = null,
     LicenseSpecifications: LicenseSpecificationListRequest = null,
@@ -185,10 +185,10 @@ object RunInstancesRequest {
     NetworkInterfaces: InstanceNetworkInterfaceSpecificationList = null,
     Placement: Placement = null,
     PrivateIpAddress: String = null,
-    RamdiskId: String = null,
+    RamdiskId: RamdiskId = null,
     SecurityGroupIds: SecurityGroupIdStringList = null,
     SecurityGroups: SecurityGroupStringList = null,
-    SubnetId: String = null,
+    SubnetId: SubnetId = null,
     TagSpecifications: TagSpecificationList = null,
     UserData: String = null
   ): RunInstancesRequest = {

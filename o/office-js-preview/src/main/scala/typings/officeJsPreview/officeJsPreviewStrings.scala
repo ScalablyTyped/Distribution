@@ -123,6 +123,9 @@ object officeJsPreviewStrings {
   sealed trait After extends js.Object
   
   @js.native
+  sealed trait AfterOrEqualTo extends js.Object
+  
+  @js.native
   sealed trait Aiueo extends js.Object
   
   @js.native
@@ -139,6 +142,9 @@ object officeJsPreviewStrings {
   
   @js.native
   sealed trait AllDatesInPeriodDecember extends js.Object
+  
+  @js.native
+  sealed trait AllDatesInPeriodFebruary extends js.Object
   
   @js.native
   sealed trait AllDatesInPeriodFebruray extends js.Object
@@ -288,6 +294,9 @@ object officeJsPreviewStrings {
   sealed trait Before extends js.Object
   
   @js.native
+  sealed trait BeforeOrEqualTo extends js.Object
+  
+  @js.native
   sealed trait Beginning extends js.Object
   
   @js.native
@@ -358,6 +367,9 @@ object officeJsPreviewStrings {
   
   @js.native
   sealed trait BottomItems extends js.Object
+  
+  @js.native
+  sealed trait BottomN extends js.Object
   
   @js.native
   sealed trait BottomPercent extends js.Object
@@ -1044,6 +1056,9 @@ object officeJsPreviewStrings {
   sealed trait EqualTo extends js.Object
   
   @js.native
+  sealed trait Equals extends js.Object
+  
+  @js.native
   sealed trait Error extends js.Object
   
   @js.native
@@ -1728,6 +1743,9 @@ object officeJsPreviewStrings {
   sealed trait IrregularSeal2 extends js.Object
   
   @js.native
+  sealed trait Items extends js.Object
+  
+  @js.native
   sealed trait JPEG extends js.Object
   
   @js.native
@@ -1765,6 +1783,9 @@ object officeJsPreviewStrings {
   
   @js.native
   sealed trait LCRus extends js.Object
+  
+  @js.native
+  sealed trait Label extends js.Object
   
   @js.native
   sealed trait Landscape extends js.Object
@@ -3186,6 +3207,9 @@ object officeJsPreviewStrings {
   sealed trait TopItems extends js.Object
   
   @js.native
+  sealed trait TopN extends js.Object
+  
+  @js.native
   sealed trait TopPercent extends js.Object
   
   @js.native
@@ -3582,6 +3606,8 @@ object officeJsPreviewStrings {
   @scala.inline
   def After: After = "After".asInstanceOf[After]
   @scala.inline
+  def AfterOrEqualTo: AfterOrEqualTo = "AfterOrEqualTo".asInstanceOf[AfterOrEqualTo]
+  @scala.inline
   def Aiueo: Aiueo = "Aiueo".asInstanceOf[Aiueo]
   @scala.inline
   def Albers: Albers = "Albers".asInstanceOf[Albers]
@@ -3593,6 +3619,8 @@ object officeJsPreviewStrings {
   def AllDatesInPeriodAugust: AllDatesInPeriodAugust = "AllDatesInPeriodAugust".asInstanceOf[AllDatesInPeriodAugust]
   @scala.inline
   def AllDatesInPeriodDecember: AllDatesInPeriodDecember = "AllDatesInPeriodDecember".asInstanceOf[AllDatesInPeriodDecember]
+  @scala.inline
+  def AllDatesInPeriodFebruary: AllDatesInPeriodFebruary = "AllDatesInPeriodFebruary".asInstanceOf[AllDatesInPeriodFebruary]
   @scala.inline
   def AllDatesInPeriodFebruray: AllDatesInPeriodFebruray = "AllDatesInPeriodFebruray".asInstanceOf[AllDatesInPeriodFebruray]
   @scala.inline
@@ -3692,6 +3720,8 @@ object officeJsPreviewStrings {
   @scala.inline
   def Before: Before = "Before".asInstanceOf[Before]
   @scala.inline
+  def BeforeOrEqualTo: BeforeOrEqualTo = "BeforeOrEqualTo".asInstanceOf[BeforeOrEqualTo]
+  @scala.inline
   def Beginning: Beginning = "Beginning".asInstanceOf[Beginning]
   @scala.inline
   def BeginsWith: BeginsWith = "BeginsWith".asInstanceOf[BeginsWith]
@@ -3739,6 +3769,8 @@ object officeJsPreviewStrings {
   def Bottom: Bottom = "Bottom".asInstanceOf[Bottom]
   @scala.inline
   def BottomItems: BottomItems = "BottomItems".asInstanceOf[BottomItems]
+  @scala.inline
+  def BottomN: BottomN = "BottomN".asInstanceOf[BottomN]
   @scala.inline
   def BottomPercent: BottomPercent = "BottomPercent".asInstanceOf[BottomPercent]
   @scala.inline
@@ -4196,6 +4228,8 @@ object officeJsPreviewStrings {
   @scala.inline
   def EqualTo: EqualTo = "EqualTo".asInstanceOf[EqualTo]
   @scala.inline
+  def Equals: Equals = "Equals".asInstanceOf[Equals]
+  @scala.inline
   def Error: Error = "Error".asInstanceOf[Error]
   @scala.inline
   def Errors: Errors = "Errors".asInstanceOf[Errors]
@@ -4652,6 +4686,8 @@ object officeJsPreviewStrings {
   @scala.inline
   def IrregularSeal2: IrregularSeal2 = "IrregularSeal2".asInstanceOf[IrregularSeal2]
   @scala.inline
+  def Items: Items = "Items".asInstanceOf[Items]
+  @scala.inline
   def JPEG: JPEG = "JPEG".asInstanceOf[JPEG]
   @scala.inline
   def Jpeg_ : Jpeg_ = "Jpeg".asInstanceOf[Jpeg_]
@@ -4677,6 +4713,8 @@ object officeJsPreviewStrings {
   def LCRoman: LCRoman = "LCRoman".asInstanceOf[LCRoman]
   @scala.inline
   def LCRus: LCRus = "LCRus".asInstanceOf[LCRus]
+  @scala.inline
+  def Label: Label = "Label".asInstanceOf[Label]
   @scala.inline
   def Landscape: Landscape = "Landscape".asInstanceOf[Landscape]
   @scala.inline
@@ -5623,6 +5661,8 @@ object officeJsPreviewStrings {
   def TopBottom: TopBottom = "TopBottom".asInstanceOf[TopBottom]
   @scala.inline
   def TopItems: TopItems = "TopItems".asInstanceOf[TopItems]
+  @scala.inline
+  def TopN: TopN = "TopN".asInstanceOf[TopN]
   @scala.inline
   def TopPercent: TopPercent = "TopPercent".asInstanceOf[TopPercent]
   @scala.inline

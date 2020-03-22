@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsLayers.noiseMod
 
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import scala.scalajs.js
@@ -14,8 +14,8 @@ class AlphaDropout protected () extends Layer {
   def this(args: AlphaDropoutArgs) = this()
   val noiseShape: Shape = js.native
   val rate: Double = js.native
-  def _getNoiseShape(inputs: js.Array[Tensor_[Rank]]): js.Array[Double] = js.native
-  def _getNoiseShape(inputs: Tensor_[Rank]): js.Array[Double] = js.native
+  def _getNoiseShape(inputs: js.Array[Tensor[Rank]]): js.Array[Double] = js.native
+  def _getNoiseShape(inputs: Tensor[Rank]): js.Array[Double] = js.native
 }
 
 /* static members */

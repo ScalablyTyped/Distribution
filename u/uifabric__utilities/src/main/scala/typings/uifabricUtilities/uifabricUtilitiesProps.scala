@@ -13,5 +13,8 @@ trait uifabricUtilitiesProps {
   @scala.inline
   def DelayedRenderProps: IDelayedRenderProps.type = typings.uifabricUtilities.delayedRenderMod.IDelayedRenderProps
   type DelayedRenderProps = IDelayedRenderProps
+  @scala.inline
+  def FocusRectsProps: AnonRootRef.type = typings.uifabricUtilities.AnonRootRef
+  type FocusRectsProps = AnonRootRef
 }
 

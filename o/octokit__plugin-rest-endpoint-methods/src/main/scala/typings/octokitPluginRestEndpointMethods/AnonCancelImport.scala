@@ -33,22 +33,22 @@ trait AnonCancelImport extends js.Object {
     * Stop an import for a repository.
     */
   @JSName("cancelImport")
-  var cancelImport_Original: Anon179 = js.native
+  var cancelImport_Original: Anon185 = js.native
   /**
     * Deletes a previous migration archive. Downloadable migration archives are automatically deleted after seven days. Migration metadata, which is returned in the [List user migrations](https://developer.github.com/v3/migrations/users/#list-user-migrations) and [Get the status of a user migration](https://developer.github.com/v3/migrations/users/#get-the-status-of-a-user-migration) endpoints, will continue to be available even after an archive is deleted.
     */
   @JSName("deleteArchiveForAuthenticatedUser")
-  var deleteArchiveForAuthenticatedUser_Original: Anon180 = js.native
+  var deleteArchiveForAuthenticatedUser_Original: Anon186 = js.native
   /**
     * Deletes a previous migration archive. Migration archives are automatically deleted after seven days.
     */
   @JSName("deleteArchiveForOrg")
-  var deleteArchiveForOrg_Original: Anon181 = js.native
+  var deleteArchiveForOrg_Original: Anon187 = js.native
   /**
     * Fetches the URL to a migration archive.
     */
   @JSName("downloadArchiveForOrg")
-  var downloadArchiveForOrg_Original: Anon182 = js.native
+  var downloadArchiveForOrg_Original: Anon188 = js.native
   /**
     * Fetches the URL to download the migration archive as a `tar.gz` file. Depending on the resources your repository uses, the migration archive can contain JSON files with data for these objects:
     *
@@ -73,14 +73,14 @@ trait AnonCancelImport extends js.Object {
     * The archive will also contain an `attachments` directory that includes all attachment files uploaded to GitHub.com and a `repositories` directory that contains the repository's Git data.
     */
   @JSName("getArchiveForAuthenticatedUser")
-  var getArchiveForAuthenticatedUser_Original: Anon183 = js.native
+  var getArchiveForAuthenticatedUser_Original: Anon189 = js.native
   /**
     * Each type of source control system represents authors in a different way. For example, a Git commit author has a display name and an email address, but a Subversion commit author just has a username. The GitHub Importer will make the author information valid, but the author might not be correct. For example, it will change the bare Subversion username `hubot` into something like `hubot <hubot@12341234-abab-fefe-8787-fedcba987654>`.
     *
     * This API method and the "Map a commit author" method allow you to provide correct Git author information.
     */
   @JSName("getCommitAuthors")
-  var getCommitAuthors_Original: Anon184 = js.native
+  var getCommitAuthors_Original: Anon190 = js.native
   /**
     * View the progress of an import.
     *
@@ -118,12 +118,12 @@ trait AnonCancelImport extends js.Object {
     * *   `large_files_count` - the total number of files larger than 100MB found in the originating repository. To see a list of these files, make a "Get Large Files" request.
     */
   @JSName("getImportProgress")
-  var getImportProgress_Original: Anon185 = js.native
+  var getImportProgress_Original: Anon191 = js.native
   /**
     * List files larger than 100MB found during the import
     */
   @JSName("getLargeFiles")
-  var getLargeFiles_Original: Anon186 = js.native
+  var getLargeFiles_Original: Anon192 = js.native
   /**
     * Fetches a single user migration. The response includes the `state` of the migration, which can be one of the following values:
     *
@@ -135,7 +135,7 @@ trait AnonCancelImport extends js.Object {
     * Once the migration has been `exported` you can [download the migration archive](https://developer.github.com/v3/migrations/users/#download-a-user-migration-archive).
     */
   @JSName("getStatusForAuthenticatedUser")
-  var getStatusForAuthenticatedUser_Original: Anon187 = js.native
+  var getStatusForAuthenticatedUser_Original: Anon193 = js.native
   /**
     * Fetches the status of a migration.
     *
@@ -147,62 +147,62 @@ trait AnonCancelImport extends js.Object {
     * *   `failed`, which means the migration failed.
     */
   @JSName("getStatusForOrg")
-  var getStatusForOrg_Original: Anon188 = js.native
+  var getStatusForOrg_Original: Anon194 = js.native
   /**
     * Lists all migrations a user has started.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: Anon189 = js.native
+  var listForAuthenticatedUser_Original: Anon195 = js.native
   /**
     * Lists the most recent migrations.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: Anon190 = js.native
+  var listForOrg_Original: Anon196 = js.native
   /**
     * List all the repositories for this organization migration.
     */
   @JSName("listReposForOrg")
-  var listReposForOrg_Original: Anon191 = js.native
+  var listReposForOrg_Original: Anon197 = js.native
   /**
     * Lists all the repositories for this user migration.
     */
   @JSName("listReposForUser")
-  var listReposForUser_Original: Anon192 = js.native
+  var listReposForUser_Original: Anon198 = js.native
   /**
     * Update an author's identity for the import. Your application can continue updating authors any time before you push new commits to the repository.
     */
   @JSName("mapCommitAuthor")
-  var mapCommitAuthor_Original: Anon193 = js.native
+  var mapCommitAuthor_Original: Anon199 = js.native
   /**
     * You can import repositories from Subversion, Mercurial, and TFS that include files larger than 100MB. This ability is powered by [Git LFS](https://git-lfs.github.com). You can learn more about our LFS feature and working with large files [on our help site](https://help.github.com/articles/versioning-large-files/).
     */
   @JSName("setLfsPreference")
-  var setLfsPreference_Original: Anon194 = js.native
+  var setLfsPreference_Original: Anon200 = js.native
   /**
     * Initiates the generation of a user migration archive.
     */
   @JSName("startForAuthenticatedUser")
-  var startForAuthenticatedUser_Original: Anon195 = js.native
+  var startForAuthenticatedUser_Original: Anon201 = js.native
   /**
     * Initiates the generation of a migration archive.
     */
   @JSName("startForOrg")
-  var startForOrg_Original: Anon196 = js.native
+  var startForOrg_Original: Anon202 = js.native
   /**
     * Start a source import to a GitHub repository using GitHub Importer.
     */
   @JSName("startImport")
-  var startImport_Original: Anon197 = js.native
+  var startImport_Original: Anon203 = js.native
   /**
     * Unlocks a repository. You can lock repositories when you [start a user migration](https://developer.github.com/v3/migrations/users/#start-a-user-migration). Once the migration is complete you can unlock each repository to begin using it again or [delete the repository](https://developer.github.com/v3/repos/#delete-a-repository) if you no longer need the source data. Returns a status of `404 Not Found` if the repository is not locked.
     */
   @JSName("unlockRepoForAuthenticatedUser")
-  var unlockRepoForAuthenticatedUser_Original: Anon198 = js.native
+  var unlockRepoForAuthenticatedUser_Original: Anon204 = js.native
   /**
     * Unlocks a repository that was locked for migration. You should unlock each migrated repository and [delete them](https://developer.github.com/v3/repos/#delete-a-repository) when the migration is complete and you no longer need the source data.
     */
   @JSName("unlockRepoForOrg")
-  var unlockRepoForOrg_Original: Anon199 = js.native
+  var unlockRepoForOrg_Original: Anon205 = js.native
   /**
     * An import can be updated with credentials or a project choice by passing in the appropriate parameters in this API request. If no parameters are provided, the import will be restarted.
     *
@@ -213,7 +213,7 @@ trait AnonCancelImport extends js.Object {
     * To restart an import, no parameters are provided in the update request.
     */
   @JSName("updateImport")
-  var updateImport_Original: Anon200 = js.native
+  var updateImport_Original: Anon206 = js.native
   /**
     * Stop an import for a repository.
     */

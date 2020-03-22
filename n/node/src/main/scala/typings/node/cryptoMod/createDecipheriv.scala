@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("crypto", "createDecipheriv")
 @js.native
 object createDecipheriv extends js.Object {
-  def apply(algorithm: String, key: BinaryLike): Decipher = js.native
-  def apply(algorithm: String, key: BinaryLike, iv: Null, options: TransformOptions): Decipher = js.native
-  def apply(algorithm: String, key: BinaryLike, iv: BinaryLike): Decipher = js.native
-  def apply(algorithm: String, key: BinaryLike, iv: BinaryLike, options: TransformOptions): Decipher = js.native
-  def apply(algorithm: CipherCCMTypes, key: BinaryLike, iv: Null, options: CipherCCMOptions): DecipherCCM = js.native
-  def apply(algorithm: CipherCCMTypes, key: BinaryLike, iv: BinaryLike, options: CipherCCMOptions): DecipherCCM = js.native
-  def apply(algorithm: CipherGCMTypes, key: BinaryLike): DecipherGCM = js.native
-  def apply(algorithm: CipherGCMTypes, key: BinaryLike, iv: Null, options: CipherGCMOptions): DecipherGCM = js.native
-  def apply(algorithm: CipherGCMTypes, key: BinaryLike, iv: BinaryLike): DecipherGCM = js.native
-  def apply(algorithm: CipherGCMTypes, key: BinaryLike, iv: BinaryLike, options: CipherGCMOptions): DecipherGCM = js.native
+  def apply(algorithm: String, key: CipherKey): Decipher = js.native
+  def apply(algorithm: String, key: CipherKey, iv: Null, options: TransformOptions): Decipher = js.native
+  def apply(algorithm: String, key: CipherKey, iv: BinaryLike): Decipher = js.native
+  def apply(algorithm: String, key: CipherKey, iv: BinaryLike, options: TransformOptions): Decipher = js.native
+  def apply(algorithm: CipherCCMTypes, key: CipherKey, iv: Null, options: CipherCCMOptions): DecipherCCM = js.native
+  def apply(algorithm: CipherCCMTypes, key: CipherKey, iv: BinaryLike, options: CipherCCMOptions): DecipherCCM = js.native
+  def apply(algorithm: CipherGCMTypes, key: CipherKey): DecipherGCM = js.native
+  def apply(algorithm: CipherGCMTypes, key: CipherKey, iv: Null, options: CipherGCMOptions): DecipherGCM = js.native
+  def apply(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike): DecipherGCM = js.native
+  def apply(algorithm: CipherGCMTypes, key: CipherKey, iv: BinaryLike, options: CipherGCMOptions): DecipherGCM = js.native
 }
 

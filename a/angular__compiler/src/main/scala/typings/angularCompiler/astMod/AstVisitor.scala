@@ -5,6 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AstVisitor extends js.Object {
+  /**
+    * This function is optionally defined to allow classes that implement this
+    * interface to selectively decide if the specified `ast` should be visited.
+    * @param ast node to visit
+    * @param context context that gets passed to the node and all its children
+    */
   var visit: js.UndefOr[js.Function2[/* ast */ AST, /* context */ js.UndefOr[js.Any], _]] = js.undefined
   var visitASTWithSource: js.UndefOr[js.Function2[/* ast */ ASTWithSource, /* context */ js.Any, _]] = js.undefined
   def visitBinary(ast: Binary, context: js.Any): js.Any

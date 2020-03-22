@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ajv-keywords"
-version := "3.4-dt-20191101Z-c81c3d"
+version := "3.4-dt-20200225Z-c81c3d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

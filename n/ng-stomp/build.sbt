@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ng-stomp"
-version := "0.2-dt-20180214Z-8bc006"
+version := "0.2-dt-20200226Z-8bc006"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

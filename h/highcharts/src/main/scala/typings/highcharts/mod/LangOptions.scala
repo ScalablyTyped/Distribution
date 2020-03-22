@@ -63,6 +63,11 @@ trait LangOptions extends js.Object {
     */
   var drillUpText: js.UndefOr[String] = js.undefined
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
+    * for the menu item to exit the chart from full screen.
+    */
+  var exitFullscreen: js.UndefOr[String] = js.undefined
+  /**
     * (Highcharts, Highstock) What to show in a date field for invalid dates.
     * Defaults to an empty string.
     */
@@ -83,7 +88,7 @@ trait LangOptions extends js.Object {
     * Requires the `annotations.js` or `annotations-advanced.src.js` module to
     * be loaded.
     */
-  var navigation: js.UndefOr[js.Object | LangNavigationOptions] = js.undefined
+  var navigation: js.UndefOr[LangNavigationOptions] = js.undefined
   /**
     * (Highcharts, Highstock) The text to display when the chart contains no
     * data.
@@ -102,10 +107,6 @@ trait LangOptions extends js.Object {
     * disables shortening altogether.
     */
   var numericSymbols: js.UndefOr[js.Array[String]] = js.undefined
-  /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The text for the menu item.
-    */
-  var openInCloud: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
     * for the menu item to print the chart.
@@ -165,8 +166,8 @@ trait LangOptions extends js.Object {
     */
   var viewData: js.UndefOr[String] = js.undefined
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. View the
-    * chart in full screen.
+    * (Highcharts, Highstock, Highmaps, Gantt) Exporting module only. The text
+    * for the menu item to view the chart in full screen.
     */
   var viewFullscreen: js.UndefOr[String] = js.undefined
   /**
@@ -199,14 +200,14 @@ object LangOptions {
     downloadSVG: String = null,
     downloadXLS: String = null,
     drillUpText: String = null,
+    exitFullscreen: String = null,
     invalidDate: String = null,
     loading: String = null,
     months: js.Array[String] = null,
-    navigation: js.Object | LangNavigationOptions = null,
+    navigation: LangNavigationOptions = null,
     noData: String = null,
     numericSymbolMagnitude: Int | Double = null,
     numericSymbols: js.Array[String] = null,
-    openInCloud: String = null,
     printChart: String = null,
     rangeSelectorFrom: String = null,
     rangeSelectorTo: String = null,
@@ -234,6 +235,7 @@ object LangOptions {
     if (downloadSVG != null) __obj.updateDynamic("downloadSVG")(downloadSVG.asInstanceOf[js.Any])
     if (downloadXLS != null) __obj.updateDynamic("downloadXLS")(downloadXLS.asInstanceOf[js.Any])
     if (drillUpText != null) __obj.updateDynamic("drillUpText")(drillUpText.asInstanceOf[js.Any])
+    if (exitFullscreen != null) __obj.updateDynamic("exitFullscreen")(exitFullscreen.asInstanceOf[js.Any])
     if (invalidDate != null) __obj.updateDynamic("invalidDate")(invalidDate.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
@@ -241,7 +243,6 @@ object LangOptions {
     if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
     if (numericSymbolMagnitude != null) __obj.updateDynamic("numericSymbolMagnitude")(numericSymbolMagnitude.asInstanceOf[js.Any])
     if (numericSymbols != null) __obj.updateDynamic("numericSymbols")(numericSymbols.asInstanceOf[js.Any])
-    if (openInCloud != null) __obj.updateDynamic("openInCloud")(openInCloud.asInstanceOf[js.Any])
     if (printChart != null) __obj.updateDynamic("printChart")(printChart.asInstanceOf[js.Any])
     if (rangeSelectorFrom != null) __obj.updateDynamic("rangeSelectorFrom")(rangeSelectorFrom.asInstanceOf[js.Any])
     if (rangeSelectorTo != null) __obj.updateDynamic("rangeSelectorTo")(rangeSelectorTo.asInstanceOf[js.Any])

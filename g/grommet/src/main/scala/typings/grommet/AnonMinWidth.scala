@@ -14,6 +14,7 @@ trait AnonMinWidth extends js.Object {
   var padding: js.UndefOr[AnonVertical] = js.undefined
   var primary: js.UndefOr[Anon0] = js.undefined
   var size: js.UndefOr[AnonLargeMedium] = js.undefined
+  var transition: js.UndefOr[AnonProperties] = js.undefined
 }
 
 object AnonMinWidth {
@@ -26,7 +27,8 @@ object AnonMinWidth {
     minWidth: String = null,
     padding: AnonVertical = null,
     primary: Anon0 = null,
-    size: AnonLargeMedium = null
+    size: AnonLargeMedium = null,
+    transition: AnonProperties = null
   ): AnonMinWidth = {
     val __obj = js.Dynamic.literal()
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
@@ -37,6 +39,7 @@ object AnonMinWidth {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonMinWidth]
   }
 }

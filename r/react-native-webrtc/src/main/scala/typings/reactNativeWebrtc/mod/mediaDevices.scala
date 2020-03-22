@@ -15,6 +15,6 @@ class mediaDevices () extends js.Object {
 @js.native
 object mediaDevices extends js.Object {
   def enumerateDevices(): js.Promise[_] = js.native
-  def getUserMedia(constraints: MediaStreamConstraints): MediaStream = js.native
+  def getUserMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream | Boolean] = js.native
 }
 

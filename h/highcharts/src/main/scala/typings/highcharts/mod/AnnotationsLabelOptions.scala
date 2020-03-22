@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait AnnotationsLabelOptions extends js.Object {
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for an
+    * annotation label.
+    */
+  var accessibility: js.UndefOr[AnnotationLabelAccessibilityOptionsObject] = js.undefined
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The alignment of the
     * annotation's label. If right, the right side of the label should be
     * touching the point.
@@ -122,6 +127,7 @@ trait AnnotationsLabelOptions extends js.Object {
 object AnnotationsLabelOptions {
   @scala.inline
   def apply(
+    accessibility: AnnotationLabelAccessibilityOptionsObject = null,
     align: AlignValue = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: ColorString | GradientColorObject | PatternObject = null,
@@ -145,6 +151,7 @@ object AnnotationsLabelOptions {
     y: Int | Double = null
   ): AnnotationsLabelOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])

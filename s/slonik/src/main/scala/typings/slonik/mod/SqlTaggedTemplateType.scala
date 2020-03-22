@@ -14,8 +14,6 @@ trait SqlTaggedTemplateType extends js.Object {
   def identifier(names: js.Array[String]): IdentifierSqlTokenType = js.native
   def join(members: js.Array[ValueExpressionType], glue: SqlTokenType): ListSqlTokenType = js.native
   def json(value: SerializableValueType): JsonSqlTokenType = js.native
-  def raw(rawSql: String): SqlTokenType = js.native
-  def raw(rawSql: String, values: js.Array[PrimitiveValueExpressionType]): SqlTokenType = js.native
   def unnest(
     // Value might be ReadonlyArray<ReadonlyArray<PrimitiveValueExpressionType>>,
   // or it can be infinitely nested array, e.g.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeParametersResult extends js.Object {
   /**
-    * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
+    * The token to use when requesting the next set of items.
     */
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
   /**

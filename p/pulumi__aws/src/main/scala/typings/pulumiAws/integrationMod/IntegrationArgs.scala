@@ -66,7 +66,7 @@ trait IntegrationArgs extends js.Object {
   /**
     * The ID of the associated REST API.
     */
-  val restApi: Input[RestApi] = js.native
+  val restApi: Input[String | RestApi] = js.native
   /**
     * Custom timeout between 50 and 29,000 milliseconds. The default value is 29,000 milliseconds.
     */
@@ -88,7 +88,7 @@ object IntegrationArgs {
   def apply(
     httpMethod: Input[String],
     resourceId: Input[String],
-    restApi: Input[RestApi],
+    restApi: Input[String | RestApi],
     `type`: Input[String],
     cacheKeyParameters: Input[js.Array[Input[String]]] = null,
     cacheNamespace: Input[String] = null,

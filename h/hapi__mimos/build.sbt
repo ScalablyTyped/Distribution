@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi__mimos"
-version := "4.1-dt-20190404Z-0aa4d1"
+version := "4.1-dt-20200225Z-0aa4d1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

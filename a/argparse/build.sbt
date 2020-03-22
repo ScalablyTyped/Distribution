@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "argparse"
-version := "1.0-dt-20191231Z-f232e5"
+version := "1.0-dt-20200226Z-f232e5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

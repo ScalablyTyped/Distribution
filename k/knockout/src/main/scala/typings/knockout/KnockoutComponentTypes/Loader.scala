@@ -13,7 +13,7 @@ trait Loader extends js.Object {
   var getConfig: js.UndefOr[
     js.Function2[
       /* componentName */ String, 
-      /* callback */ js.Function1[/* result */ ComponentConfig | Null, Unit], 
+      /* callback */ js.Function1[/* result */ ComponentConfig[ViewModel] | Null, Unit], 
       Unit
     ]
   ] = js.undefined
@@ -24,7 +24,7 @@ trait Loader extends js.Object {
   var loadComponent: js.UndefOr[
     js.Function3[
       /* componentName */ String, 
-      /* config */ ComponentConfig, 
+      /* config */ ComponentConfig[ViewModel], 
       /* callback */ js.Function1[/* result */ Definition | Null, Unit], 
       Unit
     ]
@@ -59,8 +59,8 @@ trait Loader extends js.Object {
 object Loader {
   @scala.inline
   def apply(
-    getConfig: (/* componentName */ String, /* callback */ js.Function1[/* result */ ComponentConfig | Null, Unit]) => Unit = null,
-    loadComponent: (/* componentName */ String, /* config */ ComponentConfig, /* callback */ js.Function1[/* result */ Definition | Null, Unit]) => Unit = null,
+    getConfig: (/* componentName */ String, /* callback */ js.Function1[/* result */ ComponentConfig[ViewModel] | Null, Unit]) => Unit = null,
+    loadComponent: (/* componentName */ String, /* config */ ComponentConfig[ViewModel], /* callback */ js.Function1[/* result */ Definition | Null, Unit]) => Unit = null,
     loadTemplate: (/* componentName */ String, /* templateConfig */ js.Any, /* callback */ js.Function1[/* result */ js.Array[Node] | Null, Unit]) => Unit = null,
     loadViewModel: (/* componentName */ String, /* viewModelConfig */ js.Any, /* callback */ js.Function1[/* result */ js.Any, Unit]) => Unit = null,
     suppressLoaderExceptions: js.UndefOr[Boolean] = js.undefined

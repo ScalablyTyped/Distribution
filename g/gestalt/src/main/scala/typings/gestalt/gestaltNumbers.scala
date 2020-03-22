@@ -49,6 +49,33 @@ object gestaltNumbers {
        with UnsignedUpTo12
   
   @js.native
+  sealed trait `0.1` extends js.Object
+  
+  @js.native
+  sealed trait `0.2` extends js.Object
+  
+  @js.native
+  sealed trait `0.3` extends js.Object
+  
+  @js.native
+  sealed trait `0.4` extends js.Object
+  
+  @js.native
+  sealed trait `0.5` extends js.Object
+  
+  @js.native
+  sealed trait `0.6` extends js.Object
+  
+  @js.native
+  sealed trait `0.7` extends js.Object
+  
+  @js.native
+  sealed trait `0.8` extends js.Object
+  
+  @js.native
+  sealed trait `0.9` extends js.Object
+  
+  @js.native
   sealed trait `1`
     extends SignedUpTo12
        with UnsignedUpTo12
@@ -134,6 +161,24 @@ object gestaltNumbers {
   def `-9`: `-9` = -9.asInstanceOf[`-9`]
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
+  @scala.inline
+  def `0.1`: `0.1` = 0.1.asInstanceOf[`0.1`]
+  @scala.inline
+  def `0.2`: `0.2` = 0.2.asInstanceOf[`0.2`]
+  @scala.inline
+  def `0.3`: `0.3` = 0.3.asInstanceOf[`0.3`]
+  @scala.inline
+  def `0.4`: `0.4` = 0.4.asInstanceOf[`0.4`]
+  @scala.inline
+  def `0.5`: `0.5` = 0.5.asInstanceOf[`0.5`]
+  @scala.inline
+  def `0.6`: `0.6` = 0.6.asInstanceOf[`0.6`]
+  @scala.inline
+  def `0.7`: `0.7` = 0.7.asInstanceOf[`0.7`]
+  @scala.inline
+  def `0.8`: `0.8` = 0.8.asInstanceOf[`0.8`]
+  @scala.inline
+  def `0.9`: `0.9` = 0.9.asInstanceOf[`0.9`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline

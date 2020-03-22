@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fastclick"
-version := "v1.0.3-dt-20190322Z-0bf389"
+version := "v1.0.3-dt-20200225Z-0bf389"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

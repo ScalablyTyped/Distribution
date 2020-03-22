@@ -13,6 +13,7 @@ package object mod {
     typings.atom.atomStrings.created | typings.atom.atomStrings.modified | typings.atom.atomStrings.deleted
   ]) | typings.atom.mod.FilesystemChangeRename
   type FilesystemChangeEvent = js.Array[typings.atom.mod.FilesystemChange]
+  type FocusableHTMLElement = typings.std.HTMLElement | java.lang.String | js.Function0[typings.std.HTMLElement]
   type PointCompatible = typings.atom.mod.PointLike | (js.Tuple2[scala.Double, scala.Double])
   type RangeCompatible = typings.atom.mod.RangeLike | (js.Tuple2[
     typings.atom.mod.PointLike | (js.Tuple2[scala.Double, scala.Double]), 

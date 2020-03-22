@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-dither
 
-Typings are for version 0.9.3
+Typings are for version 0.9.6
 
 ## Library description:
 Dither an image.

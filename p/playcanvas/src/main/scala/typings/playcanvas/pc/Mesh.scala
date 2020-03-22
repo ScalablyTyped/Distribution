@@ -33,6 +33,8 @@ import scala.scalajs.js.annotation._
   * @property {boolean} [primitive[].indexed] True to interpret the primitive as indexed, thereby using the currently set index buffer and false otherwise.
   * {@link pc.GraphicsDevice#draw}. The primitive is ordered based on render style like the indexBuffer property.
   * @property {pc.BoundingBox} aabb The axis-aligned bounding box for the object space vertices of this mesh.
+  * @property {pc.Skin} [skin] The skin data (if any) that drives skinned mesh animations for this mesh.
+  * @property {pc.Morph} [morph] The morph data (if any) that drives morph target animations for this mesh.
   */
 @JSGlobal("pc.Mesh")
 @js.native
@@ -49,10 +51,18 @@ class Mesh () extends js.Object {
     */
   var indexBuffer: js.Array[IndexBuffer] = js.native
   /**
+    * The morph data (if any) that drives morph target animations for this mesh.
+    */
+  var morph: js.UndefOr[Morph] = js.native
+  /**
     * Array of primitive objects defining how vertex (and index) data in the
     * mesh should be interpreted by the graphics device. For details on the primitive object, see.
     */
   var primitive: js.Array[js.Object] = js.native
+  /**
+    * The skin data (if any) that drives skinned mesh animations for this mesh.
+    */
+  var skin: js.UndefOr[Skin] = js.native
   /**
     * The vertex buffer holding the vertex data of the mesh.
     */

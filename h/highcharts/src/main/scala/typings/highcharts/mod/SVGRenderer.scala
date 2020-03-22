@@ -432,8 +432,8 @@ class SVGRenderer protected () extends js.Object {
   /**
     * Draw a path, wraps the SVG `path` element.
     *
-    * @param attribs
-    *        The initial attributes.
+    * @param path
+    *        An SVG path definition in array form.
     *
     * @return The generated wrapper element.
     */

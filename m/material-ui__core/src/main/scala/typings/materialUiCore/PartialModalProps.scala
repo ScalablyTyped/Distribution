@@ -150,7 +150,7 @@ trait PartialModalProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapModalClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapModalC] = js.native
   var closeAfterTransition: js.UndefOr[Boolean] = js.native
   var color: js.UndefOr[String] = js.native
   var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.native
@@ -349,7 +349,7 @@ object PartialModalProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapModalClassKey = null,
+    classes: PartialClassNameMapModalC = null,
     closeAfterTransition: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
     container: ReactInstance | js.Function0[ReactInstance] = null,

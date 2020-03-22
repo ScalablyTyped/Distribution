@@ -106,6 +106,11 @@ trait SeriesTooltipOptionsObject extends js.Object {
     */
   var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.undefined
   /**
+    * (Highstock) Prevents the tooltip from switching or closing, when touched
+    * or pointed.
+    */
+  var stickOnContact: js.UndefOr[Boolean] = js.undefined
+  /**
     * (Highstock) Number of decimals in indicator series.
     */
   var valueDecimals: js.UndefOr[Double] = js.undefined
@@ -144,6 +149,7 @@ object SeriesTooltipOptionsObject {
     nullFormatter: TooltipFormatterCallbackFunction = null,
     pointFormat: String = null,
     pointFormatter: FormatterCallbackFunction[Point] = null,
+    stickOnContact: js.UndefOr[Boolean] = js.undefined,
     valueDecimals: Int | Double = null,
     valuePrefix: String = null,
     valueSuffix: String = null,
@@ -164,6 +170,7 @@ object SeriesTooltipOptionsObject {
     if (nullFormatter != null) __obj.updateDynamic("nullFormatter")(nullFormatter.asInstanceOf[js.Any])
     if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat.asInstanceOf[js.Any])
     if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter.asInstanceOf[js.Any])
+    if (!js.isUndefined(stickOnContact)) __obj.updateDynamic("stickOnContact")(stickOnContact.asInstanceOf[js.Any])
     if (valueDecimals != null) __obj.updateDynamic("valueDecimals")(valueDecimals.asInstanceOf[js.Any])
     if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix.asInstanceOf[js.Any])
     if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix.asInstanceOf[js.Any])

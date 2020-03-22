@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object express extends js.Object {
   def apply(): js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[_], 
     /* next */ js.UndefOr[NextFunction], 
     Unit
   ] = js.native

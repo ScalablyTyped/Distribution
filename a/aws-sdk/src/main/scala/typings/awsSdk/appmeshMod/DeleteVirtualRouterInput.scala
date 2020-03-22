@@ -11,6 +11,11 @@ trait DeleteVirtualRouterInput extends js.Object {
     */
   var meshName: ResourceName = js.native
   /**
+    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's
+    the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with Shared Meshes.
+    */
+  var meshOwner: js.UndefOr[AccountId] = js.native
+  /**
     * The name of the virtual router to delete.
     */
   var virtualRouterName: ResourceName = js.native
@@ -18,9 +23,9 @@ trait DeleteVirtualRouterInput extends js.Object {
 
 object DeleteVirtualRouterInput {
   @scala.inline
-  def apply(meshName: ResourceName, virtualRouterName: ResourceName): DeleteVirtualRouterInput = {
+  def apply(meshName: ResourceName, virtualRouterName: ResourceName, meshOwner: AccountId = null): DeleteVirtualRouterInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
-  
+    if (meshOwner != null) __obj.updateDynamic("meshOwner")(meshOwner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualRouterInput]
   }
 }

@@ -1,89 +1,55 @@
 package typings.firebaseFirestore.modelFieldValueMod
 
-import org.scalablytyped.runtime.TopLevel
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`4`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`5`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`6`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`7`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`8`
+import typings.firebaseFirestore.firebaseFirestoreNumbers.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait TypeOrder extends js.Object
+/* Rewritten from type alias, can be one of: 
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`0`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`1`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`2`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`3`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`4`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`5`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`6`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`7`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`8`
+  - typings.firebaseFirestore.firebaseFirestoreNumbers.`9`
+*/
+trait TypeOrder extends js.Object
 
-@JSImport("@firebase/firestore/dist/lib/src/model/field_value", "TypeOrder")
-@js.native
-object TypeOrder extends js.Object {
-  @js.native
-  sealed trait ArrayValue extends TypeOrder
-  
-  @js.native
-  sealed trait BlobValue extends TypeOrder
-  
-  @js.native
-  sealed trait BooleanValue extends TypeOrder
-  
-  @js.native
-  sealed trait GeoPointValue extends TypeOrder
-  
-  @js.native
-  sealed trait NullValue extends TypeOrder
-  
-  @js.native
-  sealed trait NumberValue extends TypeOrder
-  
-  @js.native
-  sealed trait ObjectValue extends TypeOrder
-  
-  @js.native
-  sealed trait RefValue extends TypeOrder
-  
-  @js.native
-  sealed trait StringValue extends TypeOrder
-  
-  @js.native
-  sealed trait TimestampValue extends TypeOrder
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TypeOrder with Double] = js.native
-  /* 8 */ @js.native
-  object ArrayValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.ArrayValue with Double]
-  
-  /* 5 */ @js.native
-  object BlobValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.BlobValue with Double]
-  
-  /* 1 */ @js.native
-  object BooleanValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.BooleanValue with Double]
-  
-  /* 7 */ @js.native
-  object GeoPointValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.GeoPointValue with Double]
-  
-  /* 0 */ @js.native
-  object NullValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.NullValue with Double]
-  
-  /* 2 */ @js.native
-  object NumberValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.NumberValue with Double]
-  
-  /* 9 */ @js.native
-  object ObjectValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.ObjectValue with Double]
-  
-  /* 6 */ @js.native
-  object RefValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.RefValue with Double]
-  
-  /* 4 */ @js.native
-  object StringValue
-    extends TopLevel[typings.firebaseFirestore.modelFieldValueMod.TypeOrder.StringValue with Double]
-  
-  /* 3 */ @js.native
-  object TimestampValue
-    extends TopLevel[
-          typings.firebaseFirestore.modelFieldValueMod.TypeOrder.TimestampValue with Double
-        ]
-  
+object TypeOrder {
+  @scala.inline
+  def ArrayValue: `8` = this.cast(8)
+  @scala.inline
+  def BlobValue: `5` = this.cast(5)
+  @scala.inline
+  def BooleanValue: `1` = this.cast(1)
+  @scala.inline
+  def GeoPointValue: `7` = this.cast(7)
+  @scala.inline
+  def NullValue: `0` = this.cast(0)
+  @scala.inline
+  def NumberValue: `2` = this.cast(2)
+  @scala.inline
+  def ObjectValue: `9` = this.cast(9)
+  @scala.inline
+  def RefValue: `6` = this.cast(6)
+  @scala.inline
+  def StringValue: `4` = this.cast(4)
+  @scala.inline
+  def TimestampValue: `3` = this.cast(3)
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }
 

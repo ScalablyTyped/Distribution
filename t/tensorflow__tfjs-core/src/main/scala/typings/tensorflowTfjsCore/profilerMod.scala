@@ -31,6 +31,15 @@ object profilerMod extends js.Object {
       inputs: NamedTensorMap,
       extraInfo: String
     ): Unit = js.native
+    def logKernelProfile(name: String, result: Tensor[Rank], vals: TypedArray, timeMs: AnonError, inputs: NamedTensorMap): Unit = js.native
+    def logKernelProfile(
+      name: String,
+      result: Tensor[Rank],
+      vals: TypedArray,
+      timeMs: AnonError,
+      inputs: NamedTensorMap,
+      extraInfo: String
+    ): Unit = js.native
   }
   
   @js.native

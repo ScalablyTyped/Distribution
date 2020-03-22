@@ -17,7 +17,7 @@ class Ray () extends js.Object {
 @JSImport("cesium", "Ray")
 @js.native
 object Ray extends js.Object {
-  def getPoint(t: Double): Cartesian3 = js.native
-  def getPoint(t: Double, result: Cartesian3): Cartesian3 = js.native
+  def getPoint(ray: Ray, t: Double): Cartesian3 = js.native
+  def getPoint(ray: Ray, t: Double, result: Cartesian3): Cartesian3 = js.native
 }
 

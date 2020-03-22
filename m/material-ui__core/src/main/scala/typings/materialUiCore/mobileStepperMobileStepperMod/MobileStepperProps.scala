@@ -1,7 +1,7 @@
 package typings.materialUiCore.mobileStepperMobileStepperMod
 
-import typings.materialUiCore.PartialClassNameMapMobileStepperClassKey
-import typings.materialUiCore.PartialLinearProgressProps
+import typings.materialUiCore.PartialClassNameMapMobile
+import typings.materialUiCore.PartialLinearProgressProp
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -99,7 +99,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Paper.PaperProps, @material-ui/core.@material-ui/core/MobileStepper/MobileStepper.MobileStepperClassKey, never> */
 @js.native
 trait MobileStepperProps extends js.Object {
-  var LinearProgressProps: js.UndefOr[PartialLinearProgressProps] = js.native
+  var LinearProgressProps: js.UndefOr[PartialLinearProgressProp] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var activeStep: js.UndefOr[Double] = js.native
@@ -157,7 +157,7 @@ trait MobileStepperProps extends js.Object {
   var backButton: ReactElement = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapMobileStepperClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapMobile] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[PaperProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -292,7 +292,7 @@ object MobileStepperProps {
     backButton: ReactElement,
     nextButton: ReactElement,
     steps: Double,
-    LinearProgressProps: PartialLinearProgressProps = null,
+    LinearProgressProps: PartialLinearProgressProp = null,
     about: String = null,
     accessKey: String = null,
     activeStep: Int | Double = null,
@@ -349,7 +349,7 @@ object MobileStepperProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapMobileStepperClassKey = null,
+    classes: PartialClassNameMapMobile = null,
     color: String = null,
     component: ReactType[PaperProps] = null,
     contentEditable: Booleanish | inherit = null,

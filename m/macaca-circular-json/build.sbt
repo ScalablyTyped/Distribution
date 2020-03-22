@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "macaca-circular-json"
-version := "0.4-dt-20190717Z-0bc45d"
+version := "0.4-dt-20200226Z-0bc45d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

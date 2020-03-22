@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dompurify"
-version := "2.0-dt-20191226Z-1bdaca"
+version := "2.0-dt-20200225Z-1bdaca"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

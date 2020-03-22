@@ -9,14 +9,14 @@ trait AnonActive extends js.Object {
   var active: js.UndefOr[AnonBackgroundColor] = js.undefined
   var animation: js.UndefOr[AnonJiggle] = js.undefined
   var borderSize: js.UndefOr[AnonLarge] = js.undefined
-  var breakpoints: js.UndefOr[AnonMedium] = js.undefined
+  var breakpoints: js.UndefOr[AnonDictx] = js.undefined
   var colors: js.UndefOr[Colors] = js.undefined
   var control: js.UndefOr[AnonBorderDisabled] = js.undefined
   var debounceDelay: js.UndefOr[Double] = js.undefined
   var deviceBreakpoints: js.UndefOr[AnonComputer] = js.undefined
   var drop: js.UndefOr[AnonShadowSize] = js.undefined
-  var edgeSize: js.UndefOr[AnonNone] = js.undefined
-  var elevation: js.UndefOr[AnonDarkAnonSmall] = js.undefined
+  var edgeSize: js.UndefOr[AnonHair] = js.undefined
+  var elevation: js.UndefOr[AnonDarkAnonMedium] = js.undefined
   var focus: js.UndefOr[AnonBorderAnon0] = js.undefined
   var font: js.UndefOr[AnonFace] = js.undefined
   var graph: js.UndefOr[AnonColors] = js.undefined
@@ -24,7 +24,7 @@ trait AnonActive extends js.Object {
   var input: js.UndefOr[AnonPadding] = js.undefined
   var opacity: js.UndefOr[AnonStrong] = js.undefined
   var selected: js.UndefOr[AnonBackgroundBackgroundType] = js.undefined
-  var size: js.UndefOr[AnonDictx] = js.undefined
+  var size: js.UndefOr[AnonFull] = js.undefined
   var spacing: js.UndefOr[String] = js.undefined
 }
 
@@ -34,14 +34,14 @@ object AnonActive {
     active: AnonBackgroundColor = null,
     animation: AnonJiggle = null,
     borderSize: AnonLarge = null,
-    breakpoints: AnonMedium = null,
+    breakpoints: AnonDictx = null,
     colors: Colors = null,
     control: AnonBorderDisabled = null,
     debounceDelay: Int | Double = null,
     deviceBreakpoints: AnonComputer = null,
     drop: AnonShadowSize = null,
-    edgeSize: AnonNone = null,
-    elevation: AnonDarkAnonSmall = null,
+    edgeSize: AnonHair = null,
+    elevation: AnonDarkAnonMedium = null,
     focus: AnonBorderAnon0 = null,
     font: AnonFace = null,
     graph: AnonColors = null,
@@ -49,7 +49,7 @@ object AnonActive {
     input: AnonPadding = null,
     opacity: AnonStrong = null,
     selected: AnonBackgroundBackgroundType = null,
-    size: AnonDictx = null,
+    size: AnonFull = null,
     spacing: String = null
   ): AnonActive = {
     val __obj = js.Dynamic.literal()

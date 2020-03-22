@@ -1,12 +1,15 @@
 package typings.reactHighlightWords.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HighlighterProps extends js.Object {
+trait HighlighterProps
+  extends /** Allows to pass through any parameter to wrapped component */
+/* index */ StringDictionary[js.Any] {
   /** The class name to be applied to an active match. Use along with activeIndex */
   var activeClassName: js.UndefOr[String] = js.undefined
   /** Specify the match index that should be actively highlighted. Use along with activeClassName */
@@ -54,6 +57,8 @@ object HighlighterProps {
   def apply(
     searchWords: js.Array[String],
     textToHighlight: String,
+    StringDictionary: /** Allows to pass through any parameter to wrapped component */
+  /* index */ StringDictionary[js.Any] = null,
     activeClassName: String = null,
     activeIndex: Int | Double = null,
     activeStyle: CSSProperties = null,
@@ -69,6 +74,7 @@ object HighlighterProps {
     unhighlightStyle: CSSProperties = null
   ): HighlighterProps = {
     val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
     if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
     if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])

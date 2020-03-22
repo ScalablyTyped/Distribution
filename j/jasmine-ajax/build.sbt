@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jasmine-ajax"
-version := "3.3-dt-20190903Z-4b8593"
+version := "3.3-dt-20200225Z-4b8593"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

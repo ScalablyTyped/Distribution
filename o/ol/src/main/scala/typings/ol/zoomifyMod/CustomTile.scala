@@ -1,6 +1,7 @@
 package typings.ol.zoomifyMod
 
 import typings.ol.olTileMod.LoadFunction
+import typings.ol.sizeMod.Size
 import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import scala.scalajs.js
@@ -12,8 +13,7 @@ import scala.scalajs.js.annotation._
 class CustomTile protected ()
   extends typings.ol.imageTileMod.default {
   def this(
-    tilePixelRatio: Double,
-    tileGrid: typings.ol.tilegridTileGridMod.default,
+    tileSize: Size,
     tileCoord: TileCoord,
     state: TileState,
     src: String,
@@ -21,8 +21,7 @@ class CustomTile protected ()
     tileLoadFunction: LoadFunction
   ) = this()
   def this(
-    tilePixelRatio: Double,
-    tileGrid: typings.ol.tilegridTileGridMod.default,
+    tileSize: Size,
     tileCoord: TileCoord,
     state: TileState,
     src: String,

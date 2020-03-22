@@ -5,14 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  /* Rewritten from type alias, can be one of: 
-    - typings.pdfmake.pdfmakeStrings.left
-    - typings.pdfmake.pdfmakeStrings.right
-    - typings.pdfmake.pdfmakeStrings.justify
-    - typings.pdfmake.pdfmakeStrings.center
-    - java.lang.String
-  */
-  type Alignment = typings.pdfmake.mod._Alignment | java.lang.String
   type CreatedPdfBufferParams = js.Function2[
     /* cb */ js.Function2[/* result */ js.Any, /* pages */ js.Array[typings.pdfmake.mod.Page], scala.Unit], 
     /* options */ js.UndefOr[typings.pdfmake.mod.BufferOptions], 

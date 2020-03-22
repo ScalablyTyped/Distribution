@@ -17,7 +17,7 @@ trait CopyMarkerOptions extends js.Object {
   var exclusive: js.UndefOr[Boolean] = js.undefined
   /** Determines the rules by which changes to the buffer invalidate the marker. */
   var invalidate: js.UndefOr[never | surround | overlap | inside | touch] = js.undefined
-  /** -DEPRECATED- Custom properties to be associated with the marker. */
+  /** Custom properties to be associated with the marker. */
   var properties: js.UndefOr[js.Object] = js.undefined
   /** Creates the marker in a reversed orientation. */
   var reversed: js.UndefOr[Boolean] = js.undefined

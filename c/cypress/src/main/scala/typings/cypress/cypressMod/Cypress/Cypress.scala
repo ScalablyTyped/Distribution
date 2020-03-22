@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.cypress.Anon2
 import typings.cypress.AnonDebug
 import typings.cypress.AnonDefaults
-import typings.cypress.AnonIsHidden
+import typings.cypress.AnonGetContainsSelector
 import typings.cypress.AnonName
 import typings.cypress.AnonOpenMode
 import typings.cypress.AnonOverwrite
@@ -81,6 +81,7 @@ import typings.cypress.cypressStrings.windowColonload
 import typings.cypress.cypressStrings.windowColonunload
 import typings.cypress.lodashMod.LoDashImplicitWrapper
 import typings.cypress.lodashMod.LoDashStatic
+import typings.cypress.sinonMod.SinonApi
 import typings.cypress.sinonMod.SinonSpy
 import typings.cypress.sinonMod.SinonStub
 import typings.moment.mod.Moment
@@ -182,7 +183,7 @@ trait Cypress extends js.Object {
   /**
     * @see https://on.cypress.io/dom
     */
-  var dom: AnonIsHidden = js.native
+  var dom: AnonGetContainsSelector = js.native
   /**
     * Cypress automatically includes minimatch and exposes it as Cypress.minimatch.
     *
@@ -231,6 +232,14 @@ trait Cypress extends js.Object {
     *    Cypress.platform // "darwin"
     */
   var platform: String = js.native
+  /**
+    * Cypress includes Sinon.js library used in `cy.spy` and `cy.stub`.
+    *
+    * @see https://sinonjs.org/
+    * @see https://on.cypress.io/stubs-spies-and-clocks
+    * @see https://example.cypress.io/commands/spies-stubs-clocks
+    */
+  var sinon: SinonApi = js.native
   /**
     * Currently executing spec file.
     * @example

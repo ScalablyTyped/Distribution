@@ -1,6 +1,6 @@
 package typings.materialUiCore.checkboxCheckboxMod
 
-import typings.materialUiCore.PartialClassNameMapCheckboxClassKey
+import typings.materialUiCore.PartialClassNameMapCheckb
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
@@ -162,7 +162,7 @@ trait CheckboxProps extends js.Object {
   var checkedIcon: js.UndefOr[ReactNode] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapCheckboxClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapCheckb] = js.native
   var color: js.UndefOr[primary | secondary | typings.materialUiCore.materialUiCoreStrings.default] = js.native
   var component: js.UndefOr[ReactType[ButtonBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -382,7 +382,7 @@ object CheckboxProps {
     checkedIcon: ReactNode = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapCheckboxClassKey = null,
+    classes: PartialClassNameMapCheckb = null,
     color: primary | secondary | typings.materialUiCore.materialUiCoreStrings.default = null,
     component: ReactType[ButtonBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

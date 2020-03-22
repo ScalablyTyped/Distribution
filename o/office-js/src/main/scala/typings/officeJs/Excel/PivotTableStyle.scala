@@ -37,14 +37,12 @@ class PivotTableStyle () extends ClientObject {
     */
   val readOnly: Boolean = js.native
   /**
-    *
     * Deletes the PivotTableStyle.
     *
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Creates a duplicate of this PivotTableStyle with copies of all the style elements.
     *
     * [Api set: ExcelApi 1.10]

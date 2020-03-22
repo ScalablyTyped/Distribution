@@ -13,6 +13,7 @@ trait Token extends js.Object {
   var signed: js.UndefOr[String] = js.undefined
   var token: String
   def hasApplicationRole(appName: String, roleName: String): Boolean
+  def hasPermission(resource: String, scope: String): Boolean
   def hasRealmRole(roleName: String): Boolean
   def hasRole(roleName: String): Boolean
   def isExpired(): Boolean
@@ -24,6 +25,7 @@ object Token {
     clientId: String,
     content: TokenContent,
     hasApplicationRole: (String, String) => Boolean,
+    hasPermission: (String, String) => Boolean,
     hasRealmRole: String => Boolean,
     hasRole: String => Boolean,
     isExpired: () => Boolean,
@@ -32,7 +34,7 @@ object Token {
     signature: Buffer = null,
     signed: String = null
   ): Token = {
-    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], hasApplicationRole = js.Any.fromFunction2(hasApplicationRole), hasRealmRole = js.Any.fromFunction1(hasRealmRole), hasRole = js.Any.fromFunction1(hasRole), isExpired = js.Any.fromFunction0(isExpired), token = token.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], hasApplicationRole = js.Any.fromFunction2(hasApplicationRole), hasPermission = js.Any.fromFunction2(hasPermission), hasRealmRole = js.Any.fromFunction1(hasRealmRole), hasRole = js.Any.fromFunction1(hasRole), isExpired = js.Any.fromFunction0(isExpired), token = token.asInstanceOf[js.Any])
     if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
     if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
     if (signed != null) __obj.updateDynamic("signed")(signed.asInstanceOf[js.Any])

@@ -40,6 +40,14 @@ trait PivotLayoutLoadOptions extends js.Object {
   var layoutType: js.UndefOr[Boolean] = js.native
   /**
     *
+    * The style applied to the PivotTable.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var pivotStyle: js.UndefOr[PivotTableStyleLoadOptions] = js.native
+  /**
+    *
     * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi 1.9]

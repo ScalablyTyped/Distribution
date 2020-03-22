@@ -1,7 +1,7 @@
 
 # Scala.js typings for redux-state-sync
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 A middleware for redux to sync state in different tabs

@@ -1,5 +1,6 @@
 package typings.simplebar.mod
 
+import typings.simplebar.PickWeakMapHTMLElementSim
 import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -22,6 +23,7 @@ class ^ protected () extends SimpleBar {
 @JSImport("simplebar", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var instances: PickWeakMapHTMLElementSim = js.native
   def removeObserver(): Unit = js.native
 }
 

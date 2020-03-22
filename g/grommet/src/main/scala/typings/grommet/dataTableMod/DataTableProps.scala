@@ -5,6 +5,7 @@ import typings.grommet.AnonAlign
 import typings.grommet.AnonBackground
 import typings.grommet.AnonBody
 import typings.grommet.AnonDatum
+import typings.grommet.AnonDirection
 import typings.grommet.AnonExpand
 import typings.grommet.AnonFooter
 import typings.grommet.AnonHeader
@@ -51,12 +52,14 @@ trait DataTableProps extends js.Object {
   ] = js.undefined
   var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
+  var onSort: js.UndefOr[js.Function1[/* sort */ AnonDirection, Unit]] = js.undefined
   var pad: js.UndefOr[none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String] = js.undefined
   var primaryKey: js.UndefOr[String] = js.undefined
   var replace: js.UndefOr[Boolean] = js.undefined
   var resizeable: js.UndefOr[Boolean] = js.undefined
   var rowProps: js.UndefOr[StringDictionary[AnonBackground]] = js.undefined
   var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
+  var sort: js.UndefOr[AnonDirection] = js.undefined
   var sortable: js.UndefOr[Boolean] = js.undefined
   var step: js.UndefOr[Double] = js.undefined
 }
@@ -76,12 +79,14 @@ object DataTableProps {
     onClickRow: (/* event */ AnonDatum) | (/* event */ MouseEvent[Element, NativeMouseEvent]) => Unit = null,
     onMore: /* repeated */ js.Any => _ = null,
     onSearch: /* search */ String => Unit = null,
+    onSort: /* sort */ AnonDirection => Unit = null,
     pad: none | xxsmall | xsmall | small | medium | large | xlarge | AnonHeader | String = null,
     primaryKey: String = null,
     replace: js.UndefOr[Boolean] = js.undefined,
     resizeable: js.UndefOr[Boolean] = js.undefined,
     rowProps: StringDictionary[AnonBackground] = null,
     size: small | medium | large | xlarge | String = null,
+    sort: AnonDirection = null,
     sortable: js.UndefOr[Boolean] = js.undefined,
     step: Int | Double = null
   ): DataTableProps = {
@@ -98,12 +103,14 @@ object DataTableProps {
     if (onClickRow != null) __obj.updateDynamic("onClickRow")(js.Any.fromFunction1(onClickRow))
     if (onMore != null) __obj.updateDynamic("onMore")(js.Any.fromFunction1(onMore))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
+    if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1(onSort))
     if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
     if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
     if (!js.isUndefined(resizeable)) __obj.updateDynamic("resizeable")(resizeable.asInstanceOf[js.Any])
     if (rowProps != null) __obj.updateDynamic("rowProps")(rowProps.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableProps]

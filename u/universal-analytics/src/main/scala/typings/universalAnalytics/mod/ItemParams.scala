@@ -7,12 +7,67 @@ import scala.scalajs.js.annotation._
 
 trait ItemParams
   extends /* key */ StringDictionary[js.Any] {
+  /**
+    * Item Code
+    *
+    * Specifies the SKU or item code.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `SKU47`
+    */
   var ic: js.UndefOr[String] = js.undefined
+  /**
+    * Item Name
+    *
+    * **Required for item hit type.**
+    *
+    * Specifies the item name.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `Shoe`
+    */
   var in: js.UndefOr[String] = js.undefined
+  /**
+    * Item Price
+    *
+    * Specifies the price for a single item / unit.
+    *
+    * Example value: `3.50`
+    */
   var ip: js.UndefOr[String | Double] = js.undefined
+  /**
+    * Item Quantity
+    *
+    * Specifies the number of items purchased.
+    *
+    * Example value: `4`
+    */
   var iq: js.UndefOr[String | Double] = js.undefined
+  /**
+    * Item Category
+    *
+    * Specifies the category that the item belongs to.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `Blue`
+    */
   var iv: js.UndefOr[String] = js.undefined
   var p: js.UndefOr[String] = js.undefined
+  /**
+    * Transaction ID
+    *
+    * **Required for item hit type.**
+    *
+    * A unique identifier for the transaction. This value should be the same for both the Transaction
+    * hit and Items hits associated to the particular transaction.
+    *
+    * Max length: 500 Bytes
+    *
+    * Example value: `OD564`
+    */
   var ti: js.UndefOr[String] = js.undefined
 }
 

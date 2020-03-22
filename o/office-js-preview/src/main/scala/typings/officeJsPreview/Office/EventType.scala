@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 sealed trait EventType extends js.Object
 
 /**
-  * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
+  * Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
   * 
   * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
   * `Office.EventType.ViewSelectionChanged` event types.
@@ -84,10 +84,18 @@ object EventType extends js.Object {
   sealed trait DialogEventReceived extends EventType
   
   /**
-    * Triggers when Dialog sends a message via MessageParent.
+    * Triggers when a dialog sends a message via `messageParent`.
     */
   @js.native
   sealed trait DialogMessageReceived extends EventType
+  
+  /**
+    * Triggers when a host page sends a message to a child dialog box with `messageChild`.
+    * 
+    * @beta 
+    */
+  @js.native
+  sealed trait DialogParentMessageReceived extends EventType
   
   /**
     * Triggers when a document-level selection happens.
@@ -219,42 +227,45 @@ object EventType extends js.Object {
   object DialogMessageReceived extends TopLevel[DialogMessageReceived with Double]
   
   /* 7 */ @js.native
-  object DocumentSelectionChanged extends TopLevel[DocumentSelectionChanged with Double]
+  object DialogParentMessageReceived extends TopLevel[DialogParentMessageReceived with Double]
   
   /* 8 */ @js.native
-  object EnhancedLocationsChanged extends TopLevel[EnhancedLocationsChanged with Double]
+  object DocumentSelectionChanged extends TopLevel[DocumentSelectionChanged with Double]
   
   /* 9 */ @js.native
-  object ItemChanged extends TopLevel[ItemChanged with Double]
+  object EnhancedLocationsChanged extends TopLevel[EnhancedLocationsChanged with Double]
   
   /* 10 */ @js.native
-  object NodeDeleted extends TopLevel[NodeDeleted with Double]
+  object ItemChanged extends TopLevel[ItemChanged with Double]
   
   /* 11 */ @js.native
-  object NodeInserted extends TopLevel[NodeInserted with Double]
+  object NodeDeleted extends TopLevel[NodeDeleted with Double]
   
   /* 12 */ @js.native
-  object NodeReplaced extends TopLevel[NodeReplaced with Double]
+  object NodeInserted extends TopLevel[NodeInserted with Double]
   
   /* 13 */ @js.native
-  object OfficeThemeChanged extends TopLevel[OfficeThemeChanged with Double]
+  object NodeReplaced extends TopLevel[NodeReplaced with Double]
   
   /* 14 */ @js.native
-  object RecipientsChanged extends TopLevel[RecipientsChanged with Double]
+  object OfficeThemeChanged extends TopLevel[OfficeThemeChanged with Double]
   
   /* 15 */ @js.native
-  object RecurrenceChanged extends TopLevel[RecurrenceChanged with Double]
+  object RecipientsChanged extends TopLevel[RecipientsChanged with Double]
   
   /* 16 */ @js.native
-  object ResourceSelectionChanged extends TopLevel[ResourceSelectionChanged with Double]
+  object RecurrenceChanged extends TopLevel[RecurrenceChanged with Double]
   
   /* 17 */ @js.native
-  object SettingsChanged extends TopLevel[SettingsChanged with Double]
+  object ResourceSelectionChanged extends TopLevel[ResourceSelectionChanged with Double]
   
   /* 18 */ @js.native
-  object TaskSelectionChanged extends TopLevel[TaskSelectionChanged with Double]
+  object SettingsChanged extends TopLevel[SettingsChanged with Double]
   
   /* 19 */ @js.native
+  object TaskSelectionChanged extends TopLevel[TaskSelectionChanged with Double]
+  
+  /* 20 */ @js.native
   object ViewSelectionChanged extends TopLevel[ViewSelectionChanged with Double]
   
 }

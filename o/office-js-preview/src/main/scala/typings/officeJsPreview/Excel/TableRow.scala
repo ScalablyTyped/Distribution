@@ -42,14 +42,12 @@ class TableRow () extends ClientObject {
     */
   var values: js.Array[js.Array[_]] = js.native
   /**
-    *
     * Deletes the row from the table.
     *
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Returns the range object associated with the entire row.
     *
     * [Api set: ExcelApi 1.1]

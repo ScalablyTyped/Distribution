@@ -8,6 +8,7 @@ import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
 import typings.react.mod.PropsWithoutRef
+import typings.react.mod.RefObject
 import typings.std.Document_
 import typings.std.Element
 import typings.std.Event_
@@ -233,6 +234,7 @@ object mod extends js.Object {
   val CustomizerContext: Context[ICustomizerContext] = js.native
   val DATA_IS_SCROLLABLE_ATTRIBUTE: `data-is-scrollable` = js.native
   val DATA_PORTAL_ATTRIBUTE: `data-portal-element` = js.native
+  val FocusRects: FunctionComponent[AnonRootRef] = js.native
   val IsFocusVisibleClassName: `ms-Fabric--isFocusVisible` = js.native
   val SELECTION_CHANGE: change = js.native
   val anchorProperties: js.Array[String] = js.native
@@ -505,7 +507,7 @@ object mod extends js.Object {
   def setVirtualParent(child: HTMLElement, parent: HTMLElement): Unit = js.native
   def setWarningCallback(): Unit = js.native
   def setWarningCallback(warningCallback: js.Function1[/* message */ String, Unit]): Unit = js.native
-  def shallowCompare[TA, TB](a: TA, b: TB): Boolean = js.native
+  def shallowCompare[TA /* <: js.Any */, TB /* <: js.Any */](a: TA, b: TB): Boolean = js.native
   @JSName("shouldWrapFocus")
   def shouldWrapFocus_datanohorizontalwrap(element: HTMLElement, noWrapDataAttribute: `data-no-horizontal-wrap`): Boolean = js.native
   @JSName("shouldWrapFocus")
@@ -556,6 +558,8 @@ object mod extends js.Object {
   ): FunctionComponent[TComponentProps] = js.native
   def toMatrix[T](items: js.Array[T], columnCount: Double): js.Array[js.Array[T]] = js.native
   def unhoistMethods(source: js.Any, methodNames: js.Array[String]): Unit = js.native
+  def useFocusRects(): Unit = js.native
+  def useFocusRects(rootRef: RefObject[HTMLElement]): Unit = js.native
   def values[T](obj: js.Any): js.Array[T] = js.native
   def warn(message: String): Unit = js.native
   def warnConditionallyRequiredProps[P](

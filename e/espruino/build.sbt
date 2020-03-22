@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "espruino"
-version := "1.94-dt-20190717Z-535686"
+version := "1.94-dt-20200225Z-535686"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

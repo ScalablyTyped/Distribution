@@ -14,12 +14,12 @@ trait AnonGetTemplate extends js.Object {
     * Use the raw [media type](https://developer.github.com/v3/media/) to get the raw contents.
     */
   @JSName("getTemplate")
-  var getTemplate_Original: Anon129 = js.native
+  var getTemplate_Original: Anon133 = js.native
   /**
-    * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create).
+    * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create-a-repository-for-the-authenticated-user).
     */
   @JSName("listTemplates")
-  var listTemplates_Original: Anon30 = js.native
+  var listTemplates_Original: Anon29 = js.native
   /**
     * The API also allows fetching the source of a single template.
     *
@@ -34,7 +34,7 @@ trait AnonGetTemplate extends js.Object {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<GitignoreGetTemplateResponse> */ _
   ] = js.native
   /**
-    * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create).
+    * List all templates available to pass as an option when [creating a repository](https://developer.github.com/v3/repos/#create-a-repository-for-the-authenticated-user).
     */
   def listTemplates(): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OctokitResponse<UsersListBlockedResponse> */ _

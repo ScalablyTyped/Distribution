@@ -37,7 +37,6 @@ class TextRange () extends ClientObject {
     */
   var text: String = js.native
   /**
-    *
     * Returns a TextRange object for the substring in the given range.
     *
     * [Api set: ExcelApi 1.9]

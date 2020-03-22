@@ -11,9 +11,7 @@ trait UntagResourceRequest extends js.Object {
     */
   var ResourceArn: string = js.native
   /**
-    * 
-    The Tag keys to delete.
-    
+    * The Tag keys to delete
     */
   var TagKeys: listOfString = js.native
 }

@@ -70,7 +70,12 @@ package object dmsMod {
   type IntegerOptional = scala.Double
   type KeyList = js.Array[typings.awsSdk.dmsMod.String]
   type Long = scala.Double
-  type MessageFormatValue = typings.awsSdk.awsSdkStrings.json_ | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.json_
+    - typings.awsSdk.awsSdkStrings.`json-unformatted`
+    - java.lang.String
+  */
+  type MessageFormatValue = typings.awsSdk.dmsMod._MessageFormatValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`full-load`
     - typings.awsSdk.awsSdkStrings.cdc

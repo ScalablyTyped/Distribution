@@ -2,13 +2,9 @@ package typings.samchonFramework.mod.collections
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.tstl.IteratoranyanyanyanyConstructor
-import typings.tstl.IteratoranyanyanyanyCreate
-import typings.tstl.entryMod.Entry
+import typings.tstl.IteratoranyanyanyanyEquals
 import typings.tstl.icontainerMod.IContainer
-import typings.tstl.icontainerMod.IContainer.Iterator
 import typings.tstl.mapContainerMod.MapContainer
-import typings.tstl.mapElementListMod.MapElementList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,22 +17,6 @@ class HashMultiMapCollection[Key, T] ()
 @JSImport("samchon-framework", "collections.HashMultiMapCollection")
 @js.native
 object HashMultiMapCollection extends js.Object {
-  @js.native
-  class IteratorCls[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
-    /* import warning: RewrittenClass.unapply cls was tparam Key */ _, 
-    /* import warning: RewrittenClass.unapply cls was tparam T */ _, 
-    /* import warning: RewrittenClass.unapply cls was tparam Unique */ _, 
-    /* import warning: RewrittenClass.unapply cls was tparam Source */ _, 
-    IteratoranyanyanyanyConstructor, 
-    typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
-      /* import warning: RewrittenClass.unapply cls was tparam Key */ _, 
-      /* import warning: RewrittenClass.unapply cls was tparam T */ _, 
-      /* import warning: RewrittenClass.unapply cls was tparam Unique */ _, 
-      /* import warning: RewrittenClass.unapply cls was tparam Source */ _
-    ]
-  ] */] ()
-    extends typings.samchon.mod.collections.HashMultiMapCollection.IteratorCls[Key, T, Unique, Source]
-  
   val Event: Instantiable3[
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
@@ -50,7 +30,7 @@ object HashMultiMapCollection extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
       ], 
-      Iterator[
+      typings.tstl.icontainerMod.IContainer.Iterator[
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
@@ -66,6 +46,26 @@ object HashMultiMapCollection extends js.Object {
       ]
     ]
   ] = js.native
+  val Iterator: Instantiable0[
+    typings.tstl.mapElementListMod.MapElementList.Iterator[
+      js.Object, 
+      js.Object, 
+      Boolean, 
+      MapContainer[
+        /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
+        IteratoranyanyanyanyEquals, 
+        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
+          /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
+        ]
+      ]
+    ]
+  ] = js.native
   val ReverseIterator: Instantiable0[
     typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
       js.Object, 
@@ -76,7 +76,7 @@ object HashMultiMapCollection extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-        IteratoranyanyanyanyCreate, 
+        IteratoranyanyanyanyEquals, 
         typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
           /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
@@ -86,45 +86,5 @@ object HashMultiMapCollection extends js.Object {
       ]
     ]
   ] = js.native
-  @js.native
-  object Iterator
-    extends Instantiable0[
-          typings.tstl.mapElementListMod.MapElementList.Iterator[
-            js.Object, 
-            js.Object, 
-            Boolean, 
-            MapContainer[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-              IteratoranyanyanyanyConstructor, 
-              typings.tstl.mapElementListMod.MapElementList.ReverseIterator[
-                /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-                /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-                /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-                /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-              ]
-            ]
-          ]
-        ] {
-    /**
-      * @internal
-      */
-    def create[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[
-        Key, 
-        T, 
-        Unique, 
-        Source, 
-        typings.tstl.mapElementListMod.MapElementList.Iterator[Key, T, Unique, Source], 
-        typings.tstl.mapElementListMod.MapElementList.ReverseIterator[Key, T, Unique, Source]
-      ] */](
-      list: MapElementList[Key, T, Unique, Source],
-      prev: typings.tstl.mapElementListMod.MapElementList.Iterator[Key, T, Unique, Source],
-      next: typings.tstl.mapElementListMod.MapElementList.Iterator[Key, T, Unique, Source],
-      `val`: Entry[Key, T]
-    ): typings.tstl.mapElementListMod.MapElementList.Iterator[Key, T, Unique, Source] = js.native
-  }
-  
 }
 

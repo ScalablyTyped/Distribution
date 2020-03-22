@@ -4,6 +4,7 @@ import typings.codemirror.AnonAnchor
 import typings.codemirror.AnonBgClass
 import typings.codemirror.AnonBottom
 import typings.codemirror.AnonCh
+import typings.codemirror.AnonDelay
 import typings.codemirror.AnonFrom
 import typings.codemirror.AnonLeft
 import typings.codemirror.AnonLine
@@ -12,6 +13,7 @@ import typings.codemirror.AnonTo
 import typings.codemirror.AnonTop
 import typings.codemirror.codemirrorStrings.autoCloseBrackets
 import typings.codemirror.codemirrorStrings.autoCloseTags
+import typings.codemirror.codemirrorStrings.autoRefresh
 import typings.codemirror.codemirrorStrings.autofocus
 import typings.codemirror.codemirrorStrings.beforeChange
 import typings.codemirror.codemirrorStrings.beforeSelectionChange
@@ -190,6 +192,8 @@ trait Editor extends Doc {
   def getOption_autoCloseBrackets(option: autoCloseBrackets): AutoCloseBrackets | Boolean | String = js.native
   @JSName("getOption")
   def getOption_autoCloseTags(option: autoCloseTags): AutoCloseTags | Boolean = js.native
+  @JSName("getOption")
+  def getOption_autoRefresh(option: autoRefresh): Boolean | AnonDelay = js.native
   @JSName("getOption")
   def getOption_autofocus(option: autofocus): Boolean = js.native
   @JSName("getOption")
@@ -632,6 +636,10 @@ trait Editor extends Doc {
   def setOption_autoCloseTags(option: autoCloseTags, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_autoCloseTags(option: autoCloseTags, value: AutoCloseTags): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoRefresh(option: autoRefresh, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_autoRefresh(option: autoRefresh, value: AnonDelay): Unit = js.native
   @JSName("setOption")
   def setOption_autofocus(option: autofocus, value: Boolean): Unit = js.native
   @JSName("setOption")

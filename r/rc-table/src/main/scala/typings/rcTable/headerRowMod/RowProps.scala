@@ -12,24 +12,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RowProps[RecordType] extends js.Object {
-  var cellComponent: CustomizeComponent[HTMLAttributes[HTMLElement]]
+  var cellComponent: CustomizeComponent
   var cells: js.Array[CellType[RecordType]]
   var flattenColumns: js.Array[ColumnType[RecordType]]
   var index: Double
   var onHeaderRow: GetComponentProps[js.Array[ColumnType[RecordType]]]
-  var rowComponent: CustomizeComponent[HTMLAttributes[HTMLElement]]
+  var rowComponent: CustomizeComponent
   var stickyOffsets: StickyOffsets
 }
 
 object RowProps {
   @scala.inline
   def apply[RecordType](
-    cellComponent: CustomizeComponent[HTMLAttributes[HTMLElement]],
+    cellComponent: CustomizeComponent,
     cells: js.Array[CellType[RecordType]],
     flattenColumns: js.Array[ColumnType[RecordType]],
     index: Double,
     onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement],
-    rowComponent: CustomizeComponent[HTMLAttributes[HTMLElement]],
+    rowComponent: CustomizeComponent,
     stickyOffsets: StickyOffsets
   ): RowProps[RecordType] = {
     val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], cells = cells.asInstanceOf[js.Any], flattenColumns = flattenColumns.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], onHeaderRow = js.Any.fromFunction2(onHeaderRow), rowComponent = rowComponent.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any])

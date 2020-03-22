@@ -4,6 +4,9 @@ import typings.googleCloudCommon.mod.ServiceObject
 import typings.googleCloudCommon.utilMod.Duplexify
 import typings.googleCloudStorage.aclMod.Acl
 import typings.googleCloudStorage.bucketMod.Bucket
+import typings.googleCloudStorage.signerMod.GetSignedUrlCallback
+import typings.googleCloudStorage.signerMod.GetSignedUrlResponse
+import typings.googleCloudStorage.signerMod.URLSigner
 import typings.googleCloudStorage.storageMod.Storage
 import typings.node.Buffer
 import typings.node.streamMod.Readable
@@ -97,26 +100,11 @@ class File protected () extends ServiceObject[File] {
   var encryptionKeyHash: js.UndefOr[js.Any] = js.native
   var encryptionKeyInterceptor: js.UndefOr[js.Any] = js.native
   var generation: js.UndefOr[Double] = js.native
-  /**
-    * Create canonical headers for signing v4 url.
-    *
-    * The canonical headers for v4-signing a request demands header names are
-    * first lowercased, followed by sorting the header names.
-    * Then, construct the canonical headers part of the request:
-    *  <lowercasedHeaderName> + ":" + Trim(<value>) + "\n"
-    *  ..
-    *  <lowercasedHeaderName> + ":" + Trim(<value>) + "\n"
-    *
-    * @param headers
-    * @private
-    */
-  var getCanonicalHeaders: js.Any = js.native
-  var getSignedUrlV2: js.Any = js.native
-  var getSignedUrlV4: js.Any = js.native
   var kmsKeyName: js.UndefOr[String] = js.native
   var name: String = js.native
   @JSName("parent")
   var parent_File: Bucket = js.native
+  var signer: js.UndefOr[URLSigner] = js.native
   var storage: Storage = js.native
   var userProject: js.UndefOr[String] = js.native
   def copy(destination: String): js.Promise[CopyResponse] = js.native

@@ -10,6 +10,7 @@ trait LiteralSymbolStyle extends js.Object {
   var offset: js.UndefOr[js.Array[ExpressionValue]] = js.undefined
   var opacity: js.UndefOr[ExpressionValue] = js.undefined
   var rotateWithView: js.UndefOr[Boolean] = js.undefined
+  var rotation: js.UndefOr[ExpressionValue] = js.undefined
   var size: ExpressionValue | js.Array[ExpressionValue]
   var src: js.UndefOr[String] = js.undefined
   var symbolType: SymbolType
@@ -25,6 +26,7 @@ object LiteralSymbolStyle {
     offset: js.Array[ExpressionValue] = null,
     opacity: ExpressionValue = null,
     rotateWithView: js.UndefOr[Boolean] = js.undefined,
+    rotation: ExpressionValue = null,
     src: String = null,
     textureCoord: js.Array[ExpressionValue] = null
   ): LiteralSymbolStyle = {
@@ -33,6 +35,7 @@ object LiteralSymbolStyle {
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (!js.isUndefined(rotateWithView)) __obj.updateDynamic("rotateWithView")(rotateWithView.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
     if (textureCoord != null) __obj.updateDynamic("textureCoord")(textureCoord.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiteralSymbolStyle]

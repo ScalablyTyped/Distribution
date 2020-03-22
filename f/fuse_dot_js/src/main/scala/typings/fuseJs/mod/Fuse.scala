@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Fuse[T, O /* <: FuseOptions[T] */] extends js.Object {
+  var list: js.Array[T] = js.native
   def search[/** Type of item of return */
   R, /** include score (boolean) */
   S, /** include matches (boolean) */

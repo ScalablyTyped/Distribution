@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ts-node", "DEFAULTS")
 @js.native
-object DEFAULTS extends TopLevel[RegisterOptions]
+object DEFAULTS extends TopLevel[Options]
 

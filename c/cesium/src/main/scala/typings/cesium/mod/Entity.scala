@@ -33,7 +33,7 @@ class Entity () extends js.Object {
   var polyline: PolylineGraphics = js.native
   var polylineVolume: PolylineVolumeGraphics = js.native
   var position: PositionProperty = js.native
-  var properties: js.Any = js.native
+  var properties: PropertyBag = js.native
   var propertyNames: js.Array[_] = js.native
   var rectangle: RectangleGraphics = js.native
   var show: Boolean = js.native

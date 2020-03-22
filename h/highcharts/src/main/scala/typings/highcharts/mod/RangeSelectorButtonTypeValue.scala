@@ -1,16 +1,18 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsStrings.day_
+import typings.highcharts.highchartsStrings.month_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.highcharts.highchartsStrings.all
-  - typings.highcharts.highchartsStrings.day
+  - typings.highcharts.highchartsStrings.day_
   - typings.highcharts.highchartsStrings.hour
   - typings.highcharts.highchartsStrings.millisecond
   - typings.highcharts.highchartsStrings.minute
-  - typings.highcharts.highchartsStrings.month
+  - typings.highcharts.highchartsStrings.month_
   - typings.highcharts.highchartsStrings.second
   - typings.highcharts.highchartsStrings.week
   - typings.highcharts.highchartsStrings.year
@@ -24,7 +26,7 @@ object RangeSelectorButtonTypeValue {
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline
-  def day: typings.highcharts.highchartsStrings.day = this.cast("day")
+  def day: day_ = this.cast("day")
   @scala.inline
   def hour: typings.highcharts.highchartsStrings.hour = this.cast("hour")
   @scala.inline
@@ -32,7 +34,7 @@ object RangeSelectorButtonTypeValue {
   @scala.inline
   def minute: typings.highcharts.highchartsStrings.minute = this.cast("minute")
   @scala.inline
-  def month: typings.highcharts.highchartsStrings.month = this.cast("month")
+  def month: month_ = this.cast("month")
   @scala.inline
   def second: typings.highcharts.highchartsStrings.second = this.cast("second")
   @scala.inline

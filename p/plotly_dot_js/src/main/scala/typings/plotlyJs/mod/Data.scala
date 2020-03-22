@@ -1,7 +1,7 @@
 package typings.plotlyJs.mod
 
 import typings.plotlyJs.AnonEnd
-import typings.plotlyJs.PartialDataTitle
+import typings.plotlyJs.PartialDataTitleFont
 import typings.plotlyJs.PartialDelta
 import typings.plotlyJs.PartialGauge
 import typings.plotlyJs.PartialHoverLabel
@@ -215,6 +215,7 @@ trait Data extends js.Object {
   ] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var number: js.UndefOr[PartialPlotNumber] = js.undefined
+  var opacity: js.UndefOr[Double] = js.undefined
   var orientation: js.UndefOr[v | h] = js.undefined
   var parents: js.UndefOr[js.Array[String]] = js.undefined
   var r: js.UndefOr[js.Array[Datum]] = js.undefined
@@ -229,7 +230,7 @@ trait Data extends js.Object {
     (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside
   ] = js.undefined
   var theta: js.UndefOr[js.Array[Datum]] = js.undefined
-  var title: js.UndefOr[PartialDataTitle] = js.undefined
+  var title: js.UndefOr[PartialDataTitleFont] = js.undefined
   var transforms: js.UndefOr[js.Array[DataTransform]] = js.undefined
   var transpose: js.UndefOr[Boolean] = js.undefined
   var `type`: js.UndefOr[
@@ -304,6 +305,7 @@ object Data {
     mode: lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta = null,
     name: String = null,
     number: PartialPlotNumber = null,
+    opacity: Int | Double = null,
     orientation: v | h = null,
     parents: js.Array[String] = null,
     r: js.Array[Datum] = null,
@@ -314,7 +316,7 @@ object Data {
     textinfo: label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none = null,
     textposition: (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside = null,
     theta: js.Array[Datum] = null,
-    title: PartialDataTitle = null,
+    title: PartialDataTitleFont = null,
     transforms: js.Array[DataTransform] = null,
     transpose: js.UndefOr[Boolean] = js.undefined,
     `type`: bar | box | candlestick | choropleth | contour | heatmap | histogram | indicator | mesh3d | ohlc | parcoords | pie | pointcloud | scatter | scatter3d | scattergeo | scattergl | scatterpolar | scatterternary | surface | treemap | waterfall | funnel | funnelarea = null,
@@ -384,6 +386,7 @@ object Data {
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
     if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])

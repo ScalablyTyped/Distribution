@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "glidejs"
-version := "v1.0.6-dt-20190322Z-63d14a"
+version := "v1.0.6-dt-20200226Z-63d14a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

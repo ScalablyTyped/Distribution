@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hyperscript"
-version := "0.0-unknown-dt-20190322Z-6fed2c"
+version := "0.0-unknown-dt-20200226Z-6fed2c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

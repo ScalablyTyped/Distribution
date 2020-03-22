@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "algolia__cache-common"
-version := "4.0.3-3abf6d"
+version := "4.1.0-e63502"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

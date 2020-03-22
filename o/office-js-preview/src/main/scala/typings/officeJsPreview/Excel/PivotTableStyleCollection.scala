@@ -25,7 +25,6 @@ class PivotTableStyleCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[PivotTableStyle] = js.native
   /**
-    *
     * Creates a blank PivotTableStyle with the specified name.
     *
     * [Api set: ExcelApi 1.10]
@@ -37,14 +36,12 @@ class PivotTableStyleCollection () extends ClientObject {
   def add(name: String): PivotTableStyle = js.native
   def add(name: String, makeUniqueName: Boolean): PivotTableStyle = js.native
   /**
-    *
     * Gets the number of PivotTable styles in the collection.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets the default PivotTableStyle for the parent object's scope.
     *
     * [Api set: ExcelApi 1.10]
@@ -52,7 +49,6 @@ class PivotTableStyleCollection () extends ClientObject {
     */
   def getDefault(): PivotTableStyle = js.native
   /**
-    *
     * Gets a PivotTableStyle by name.
     *
     * [Api set: ExcelApi 1.10]
@@ -62,7 +58,6 @@ class PivotTableStyleCollection () extends ClientObject {
     */
   def getItem(name: String): PivotTableStyle = js.native
   /**
-    *
     * Gets a PivotTableStyle by name. If the PivotTableStyle does not exist, will return a null object.
     *
     * [Api set: ExcelApi 1.10]
@@ -83,7 +78,6 @@ class PivotTableStyleCollection () extends ClientObject {
   def load(propertyNames: js.Array[String]): PivotTableStyleCollection = js.native
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
-    *
     * Sets the default PivotTableStyle for use in the parent object's scope.
     *
     * [Api set: ExcelApi 1.10]

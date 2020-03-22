@@ -1,6 +1,5 @@
 package typings.fundamentalReact
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -60,7 +59,6 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
 import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
@@ -75,9 +73,12 @@ import scala.scalajs.js.annotation._
 trait WeakValidationMapActionBa extends js.Object {
   var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var accessKey: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var actionClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var actionProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
+  var actions: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   var `aria-colcount`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
@@ -128,19 +129,22 @@ trait WeakValidationMapActionBa extends js.Object {
   var autoCapitalize: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var autoCorrect: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var autoSave: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var children: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
+  var buttonContainerClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var buttonProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var color: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var contentEditable: js.UndefOr[Validator[js.UndefOr[inherit | Booleanish | Null]]] = js.undefined
   var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var customStyles: js.UndefOr[Validator[js.UndefOr[Null | StringDictionary[_]]]] = js.undefined
   var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[AnonHtml | Null]]] = js.undefined
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var defaultChecked: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String] | Double | Null | String]]] = js.undefined
+  var description: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var descriptionProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var dir: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var draggable: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
+  var headingLevel: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var hidden: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var inlist: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
@@ -159,6 +163,7 @@ trait WeakValidationMapActionBa extends js.Object {
   var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]]] = js.undefined
+  var onBackClick: js.UndefOr[Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]]] = js.undefined
   var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]]] = js.undefined
   var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]]] = js.undefined
@@ -237,7 +242,6 @@ trait WeakValidationMapActionBa extends js.Object {
   var prefix: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var property: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var radioGroup: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var ref: js.UndefOr[Validator[js.UndefOr[Null | Ref[HTMLDivElement]]]] = js.undefined
   var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -249,6 +253,7 @@ trait WeakValidationMapActionBa extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
   var tabIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var titleProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
   var translate: js.UndefOr[Validator[js.UndefOr[yes | no | Null]]] = js.undefined
   var typeof: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var unselectable: js.UndefOr[Validator[js.UndefOr[on | off | Null]]] = js.undefined
@@ -260,9 +265,12 @@ object WeakValidationMapActionBa {
   def apply(
     about: Validator[js.UndefOr[Null | String]] = null,
     accessKey: Validator[js.UndefOr[Null | String]] = null,
+    actionClassName: Validator[js.UndefOr[Null | String]] = null,
+    actionProps: Validator[js.UndefOr[_ | Null]] = null,
+    actions: Validator[js.UndefOr[Null | ReactNode]] = null,
     `aria-activedescendant`: Validator[js.UndefOr[Null | String]] = null,
     `aria-atomic`: Validator[js.UndefOr[Boolean | Null]] = null,
-    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list | both | Null]] = null,
+    `aria-autocomplete`: Validator[js.UndefOr[none | `inline` | list_ | both | Null]] = null,
     `aria-busy`: Validator[js.UndefOr[Boolean | Null]] = null,
     `aria-checked`: Validator[js.UndefOr[mixed | Boolean | Null]] = null,
     `aria-colcount`: Validator[js.UndefOr[Double | Null]] = null,
@@ -311,19 +319,22 @@ object WeakValidationMapActionBa {
     autoCapitalize: Validator[js.UndefOr[Null | String]] = null,
     autoCorrect: Validator[js.UndefOr[Null | String]] = null,
     autoSave: Validator[js.UndefOr[Null | String]] = null,
-    children: Validator[js.UndefOr[Null | ReactNode]] = null,
+    buttonContainerClassName: Validator[js.UndefOr[Null | String]] = null,
+    buttonProps: Validator[js.UndefOr[_ | Null]] = null,
     className: Validator[js.UndefOr[Null | String]] = null,
     color: Validator[js.UndefOr[Null | String]] = null,
     contentEditable: Validator[js.UndefOr[inherit | Booleanish | Null]] = null,
     contextMenu: Validator[js.UndefOr[Null | String]] = null,
-    customStyles: Validator[js.UndefOr[Null | StringDictionary[_]]] = null,
     dangerouslySetInnerHTML: Validator[js.UndefOr[AnonHtml | Null]] = null,
     datatype: Validator[js.UndefOr[Null | String]] = null,
     defaultChecked: Validator[js.UndefOr[Boolean | Null]] = null,
     defaultValue: Validator[js.UndefOr[js.Array[String] | Double | Null | String]] = null,
+    description: Validator[js.UndefOr[Null | String]] = null,
+    descriptionProps: Validator[js.UndefOr[_ | Null]] = null,
     dir: Validator[js.UndefOr[Null | String]] = null,
     disableStyles: Validator[js.UndefOr[Boolean | Null]] = null,
     draggable: Validator[js.UndefOr[Booleanish | Null]] = null,
+    headingLevel: Validator[js.UndefOr[_ | Null]] = null,
     hidden: Validator[js.UndefOr[Boolean | Null]] = null,
     id: Validator[js.UndefOr[Null | String]] = null,
     inlist: Validator[js.UndefOr[_ | Null]] = null,
@@ -340,6 +351,7 @@ object WeakValidationMapActionBa {
     onAnimationIteration: Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]] = null,
     onAnimationStart: Validator[js.UndefOr[AnimationEventHandler[HTMLDivElement] | Null]] = null,
     onAuxClick: Validator[js.UndefOr[MouseEventHandler[HTMLDivElement] | Null]] = null,
+    onBackClick: Validator[js.UndefOr[(js.Function1[/* repeated */ _, _]) | Null]] = null,
     onBeforeInput: Validator[js.UndefOr[FormEventHandler[HTMLDivElement] | Null]] = null,
     onBlur: Validator[js.UndefOr[FocusEventHandler[HTMLDivElement] | Null]] = null,
     onCanPlay: Validator[js.UndefOr[Null | ReactEventHandler[HTMLDivElement]]] = null,
@@ -418,7 +430,6 @@ object WeakValidationMapActionBa {
     prefix: Validator[js.UndefOr[Null | String]] = null,
     property: Validator[js.UndefOr[Null | String]] = null,
     radioGroup: Validator[js.UndefOr[Null | String]] = null,
-    ref: Validator[js.UndefOr[Null | Ref[HTMLDivElement]]] = null,
     resource: Validator[js.UndefOr[Null | String]] = null,
     results: Validator[js.UndefOr[Double | Null]] = null,
     role: Validator[js.UndefOr[Null | String]] = null,
@@ -430,6 +441,7 @@ object WeakValidationMapActionBa {
     suppressHydrationWarning: Validator[js.UndefOr[Boolean | Null]] = null,
     tabIndex: Validator[js.UndefOr[Double | Null]] = null,
     title: Validator[js.UndefOr[Null | String]] = null,
+    titleProps: Validator[js.UndefOr[_ | Null]] = null,
     translate: Validator[js.UndefOr[yes | no | Null]] = null,
     typeof: Validator[js.UndefOr[Null | String]] = null,
     unselectable: Validator[js.UndefOr[on | off | Null]] = null,
@@ -438,6 +450,9 @@ object WeakValidationMapActionBa {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (actionClassName != null) __obj.updateDynamic("actionClassName")(actionClassName.asInstanceOf[js.Any])
+    if (actionProps != null) __obj.updateDynamic("actionProps")(actionProps.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (`aria-atomic` != null) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
@@ -489,19 +504,22 @@ object WeakValidationMapActionBa {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (buttonContainerClassName != null) __obj.updateDynamic("buttonContainerClassName")(buttonContainerClassName.asInstanceOf[js.Any])
+    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
     if (defaultChecked != null) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (descriptionProps != null) __obj.updateDynamic("descriptionProps")(descriptionProps.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (disableStyles != null) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
     if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (headingLevel != null) __obj.updateDynamic("headingLevel")(headingLevel.asInstanceOf[js.Any])
     if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -518,6 +536,7 @@ object WeakValidationMapActionBa {
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(onAnimationIteration.asInstanceOf[js.Any])
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart.asInstanceOf[js.Any])
     if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick.asInstanceOf[js.Any])
+    if (onBackClick != null) __obj.updateDynamic("onBackClick")(onBackClick.asInstanceOf[js.Any])
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput.asInstanceOf[js.Any])
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(onCanPlay.asInstanceOf[js.Any])
@@ -596,7 +615,6 @@ object WeakValidationMapActionBa {
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
@@ -608,6 +626,7 @@ object WeakValidationMapActionBa {
     if (suppressHydrationWarning != null) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (titleProps != null) __obj.updateDynamic("titleProps")(titleProps.asInstanceOf[js.Any])
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

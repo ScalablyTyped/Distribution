@@ -20,12 +20,15 @@ import scala.scalajs.js.annotation._
 object fsMod extends js.Object {
   @js.native
   object default extends js.Object {
+    @JSName("existsSync")
+    var existsSync_Original: js.Function1[/* path */ PathLike, Boolean] = js.native
     @JSName("readFileSync")
     var readFileSync_Original: FnCallPathOptions = js.native
     @JSName("readFile")
     var readFile_Original: FnCall = js.native
     @JSName("watch")
     var watch_Original: FnCallFilenameOptionsListener = js.native
+    def existsSync(path: PathLike): Boolean = js.native
     def readFile(path: Double): js.Promise[String | Buffer] = js.native
     def readFile(path: Double, options: String): js.Promise[String | Buffer] = js.native
     def readFile(path: Double, options: AnonEncodingFlag): js.Promise[String] = js.native

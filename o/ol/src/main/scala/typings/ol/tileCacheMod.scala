@@ -16,9 +16,7 @@ object tileCacheMod extends js.Object {
   }
   
   @js.native
-  class default () extends TileCache {
-    def this(opt_highWaterMark: Double) = this()
-  }
+  class default () extends TileCache
   
 }
 

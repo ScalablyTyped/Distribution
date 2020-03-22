@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ejs-locals"
-version := "0.0-unknown-dt-20190819Z-1fb6d3"
+version := "0.0-unknown-dt-20200226Z-1fb6d3"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,7 +15,7 @@ trait Moment extends js.Object {
   def nextWorkingDay(): Moment = js.native
   def nextWorkingTime(): Moment = js.native
   def subtractWorkingTime(args: (Double | Base)*): Moment = js.native
-  def workingDiff(moment: Moment, unit: Base): Moment = js.native
-  def workingDiff(moment: Moment, unit: Base, fractions: Boolean): Moment = js.native
+  def workingDiff(moment: Moment, unit: Base): Double = js.native
+  def workingDiff(moment: Moment, unit: Base, fractions: Boolean): Double = js.native
 }
 

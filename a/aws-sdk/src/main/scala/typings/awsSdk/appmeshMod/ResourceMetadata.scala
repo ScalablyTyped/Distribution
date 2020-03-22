@@ -19,6 +19,16 @@ trait ResourceMetadata extends js.Object {
     */
   var lastUpdatedAt: Timestamp = js.native
   /**
+    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's
+    the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with Shared Meshes.
+    */
+  var meshOwner: AccountId = js.native
+  /**
+    * The AWS IAM account ID of the resource owner. If the account ID is not your own, then it's
+    the ID of the mesh owner, or another account that the mesh is shared with. For more information about mesh sharing, see Working with Shared Meshes.
+    */
+  var resourceOwner: AccountId = js.native
+  /**
     * The unique identifier for the resource.
     */
   var uid: String = js.native
@@ -31,8 +41,16 @@ trait ResourceMetadata extends js.Object {
 
 object ResourceMetadata {
   @scala.inline
-  def apply(arn: Arn, createdAt: Timestamp, lastUpdatedAt: Timestamp, uid: String, version: Long): ResourceMetadata = {
-    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], lastUpdatedAt = lastUpdatedAt.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(
+    arn: Arn,
+    createdAt: Timestamp,
+    lastUpdatedAt: Timestamp,
+    meshOwner: AccountId,
+    resourceOwner: AccountId,
+    uid: String,
+    version: Long
+  ): ResourceMetadata = {
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], lastUpdatedAt = lastUpdatedAt.asInstanceOf[js.Any], meshOwner = meshOwner.asInstanceOf[js.Any], resourceOwner = resourceOwner.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResourceMetadata]
   }

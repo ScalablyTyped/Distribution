@@ -40,7 +40,8 @@ trait ITeachingBubbleProps
     */
   var componentRef: js.UndefOr[IRefObject[ITeachingBubble]] = js.undefined
   /**
-    * Text that will be rendered in the footer of the TeachingBubble. May be rendered alongside primary and secondary buttons.
+    * Text that will be rendered in the footer of the TeachingBubble.
+    * May be rendered alongside primary and secondary buttons.
     */
   var footerContent: js.UndefOr[String | Element] = js.undefined
   /**
@@ -56,7 +57,8 @@ trait ITeachingBubbleProps
     */
   var hasCondensedHeadline: js.UndefOr[Boolean] = js.undefined
   /**
-    * A variation with smaller bold headline and margins to the body (hasCondensedHeadline takes precedence if it is also set to true).
+    * A variation with smaller bold headline and margins to the body.
+    * (`hasCondensedHeadline` takes precedence if it is also set to true.)
     */
   var hasSmallHeadline: js.UndefOr[Boolean] = js.undefined
   /**

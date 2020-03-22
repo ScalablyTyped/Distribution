@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "d3-brush"
-version := "1.0-dt-20190212Z-1342fd"
+version := "1.1-dt-20200302Z-d3c952"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20190710Z-35059d",
+  "org.scalablytyped" %%% "d3-selection" % "1.4-dt-20200320Z-35059d",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

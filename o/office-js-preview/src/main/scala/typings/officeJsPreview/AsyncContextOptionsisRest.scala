@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 /* Inlined office-js-preview.Office.AsyncContextOptions & {  isRest ? :boolean} */
 trait AsyncContextOptionsisRest extends js.Object {
   /**
-    * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
+    * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
+    * that is passed to a callback.
     */
   var asyncContext: js.UndefOr[js.Any] = js.undefined
   var isRest: js.UndefOr[Boolean] = js.undefined

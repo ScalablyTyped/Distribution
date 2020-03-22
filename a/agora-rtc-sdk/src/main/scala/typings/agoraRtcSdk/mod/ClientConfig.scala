@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   *
   * [[include:ClientConfig-example.md]]
   * @example
-  * **Sample Code**
+  * **Sample code**
   * ``` javascript
   * var config = {
   *      mode: "live",
@@ -38,13 +38,14 @@ import scala.scalajs.js.annotation._
   */
 trait ClientConfig extends js.Object {
   /**
-    * The codec the Web browser uses for encoding and decoding.
-    * - `"vp8"`: Sets the browser to use VP8 for encoding and decoding.
-    * - `"h264"`: Sets the browser to use H264 for encoding and decoding.
+    * The codec the Web browser uses for encoding.
+    * - `"vp8"`: Sets the browser to use VP8 for encoding.
+    * - `"h264"`: Sets the browser to use H.264 for encoding.
     *
     * **Note:**
     *
-    * Set {@link codec} as `"h264"` as long as Safari is involved in the session.
+    * - Safari 12.1 or earlier does not support the VP8 codec.
+    * - Codec support on mobile devices is a bit complex, see [Use Agora Web SDK on Mobile Devices](https://docs.agora.io/en/faq/web_on_mobile) for details.
     */
   var codec: vp8_ | h264_
   /**
@@ -63,11 +64,11 @@ trait ClientConfig extends js.Object {
     * - For Native SDK v2.3.2 and later:
     *  * Set {@link mode} as `"rtc"` or `"live"` if the Native SDK uses the communication channel profile.
     *  * Set {@link mode} as `"live"` if the Native SDK uses the live broadcast channel profile.
-    * - For Native SDK before v2.3.2, set  mode as "live" regardless of which channel profile the Native SDK uses.
+    * - For Native SDK before v2.3.2, set mode as "live" regardless of which channel profile the Native SDK uses.
     *
     * **Note:**
     *
-    * If you set {@link mode} as `"rtc"`, the Agora Recording SDK is not supported.
+    * The `"rtc"` mode supports the Agora Recording SDK 2.3.3 or later.
     */
   var mode: live | rtc
   /**

@@ -1,6 +1,6 @@
 package typings.materialUiCore.gridListTileBarGridListTileBarMod
 
-import typings.materialUiCore.PartialClassNameMapGridListTileBarClassKey
+import typings.materialUiCore.PartialClassNameMapGridLiActionIcon
 import typings.materialUiCore.materialUiCoreStrings.bottom
 import typings.materialUiCore.materialUiCoreStrings.left
 import typings.materialUiCore.materialUiCoreStrings.right
@@ -19,7 +19,7 @@ trait GridListTileBarProps extends js.Object {
   var actionIcon: js.UndefOr[ReactNode] = js.native
   var actionPosition: js.UndefOr[left | right] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapGridListTileBarClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapGridLiActionIcon] = js.native
   var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
   var style: js.UndefOr[CSSProperties] = js.native
   var subtitle: js.UndefOr[ReactNode] = js.native
@@ -33,7 +33,7 @@ object GridListTileBarProps {
     actionIcon: ReactNode = null,
     actionPosition: left | right = null,
     className: String = null,
-    classes: PartialClassNameMapGridListTileBarClassKey = null,
+    classes: PartialClassNameMapGridLiActionIcon = null,
     innerRef: Ref[_] | RefObject[_] = null,
     style: CSSProperties = null,
     subtitle: ReactNode = null,

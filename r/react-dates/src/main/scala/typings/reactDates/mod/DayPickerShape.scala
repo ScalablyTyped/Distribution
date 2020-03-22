@@ -22,6 +22,7 @@ trait DayPickerShape extends js.Object {
   var enableOutsideDays: js.UndefOr[Boolean] = js.undefined
   var firstDayOfWeek: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
   var hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.undefined
+  var horizontalMonthPadding: js.UndefOr[Double] = js.undefined
   var initialVisibleMonth: js.UndefOr[js.Function0[momentObj]] = js.undefined
   var isFocused: js.UndefOr[Boolean] = js.undefined
   var isRTL: js.UndefOr[Boolean] = js.undefined
@@ -59,6 +60,7 @@ object DayPickerShape {
     enableOutsideDays: js.UndefOr[Boolean] = js.undefined,
     firstDayOfWeek: `0` | `1` | `2` | `3` | `4` | `5` | `6` = null,
     hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.undefined,
+    horizontalMonthPadding: Int | Double = null,
     initialVisibleMonth: () => momentObj = null,
     isFocused: js.UndefOr[Boolean] = js.undefined,
     isRTL: js.UndefOr[Boolean] = js.undefined,
@@ -91,6 +93,7 @@ object DayPickerShape {
     if (!js.isUndefined(enableOutsideDays)) __obj.updateDynamic("enableOutsideDays")(enableOutsideDays.asInstanceOf[js.Any])
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (!js.isUndefined(hideKeyboardShortcutsPanel)) __obj.updateDynamic("hideKeyboardShortcutsPanel")(hideKeyboardShortcutsPanel.asInstanceOf[js.Any])
+    if (horizontalMonthPadding != null) __obj.updateDynamic("horizontalMonthPadding")(horizontalMonthPadding.asInstanceOf[js.Any])
     if (initialVisibleMonth != null) __obj.updateDynamic("initialVisibleMonth")(js.Any.fromFunction0(initialVisibleMonth))
     if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
     if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_sortelements"
-version := "0.0-unknown-dt-20190322Z-0f3d5f"
+version := "0.0-unknown-dt-20200226Z-0f3d5f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

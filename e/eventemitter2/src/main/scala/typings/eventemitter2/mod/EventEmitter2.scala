@@ -40,5 +40,8 @@ class EventEmitter2 () extends js.Object {
   def removeListener(event: String, listener: Listener): this.type = js.native
   def removeListener(event: js.Array[String], listener: Listener): this.type = js.native
   def setMaxListeners(n: Double): Unit = js.native
+  // TODO: not in documentation by Willian
+  def waitFor(event: String): WaitForThenable[_] = js.native
+  def waitFor(event: String, options: WaitForOptions): WaitForThenable[_] = js.native
 }
 

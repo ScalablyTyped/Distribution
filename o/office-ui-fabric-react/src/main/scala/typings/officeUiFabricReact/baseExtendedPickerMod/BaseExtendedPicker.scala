@@ -8,8 +8,8 @@ import typings.officeUiFabricReact.libAutofillMod.Autofill
 import typings.officeUiFabricReact.libFloatingPickerMod.BaseFloatingPicker
 import typings.officeUiFabricReact.libSelectedItemsListMod.BaseSelectedItemsList
 import typings.officeUiFabricReact.libSelectionMod.Selection
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
 import typings.react.mod.ClipboardEvent
+import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/ExtendedPicker/BaseExtendedPicker", "BaseExtendedPicker")
 @js.native
 class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
-  extends BaseComponent[P, IBaseExtendedPickerState[T]]
+  extends Component[P, IBaseExtendedPickerState[T], js.Any]
      with IBaseExtendedPicker[T] {
   def this(basePickerProps: P) = this()
   var _addProcessedItem: js.Any = js.native

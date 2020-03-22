@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "async-polling"
-version := "0.0-unknown-dt-20190322Z-065d07"
+version := "0.0-unknown-dt-20200225Z-065d07"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

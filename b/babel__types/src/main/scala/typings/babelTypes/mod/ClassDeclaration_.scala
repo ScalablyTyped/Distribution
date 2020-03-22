@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   extends Class
      with BaseNode
      with Declaration
-     with Pureish
      with Scopable
      with Statement {
   var `abstract`: Boolean | Null

@@ -3,7 +3,6 @@ package typings.stellarSdk
 import typings.stellarBase.mod.Asset
 import typings.stellarSdk.callBuilderMod.CallBuilder
 import typings.stellarSdk.serverApiMod.ServerApi.OrderbookRecord
-import typings.urijs.uri.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +12,11 @@ import scala.scalajs.js.annotation._
 object orderbookCallBuilderMod extends js.Object {
   @js.native
   class OrderbookCallBuilder protected () extends CallBuilder[OrderbookRecord] {
-    def this(serverUrl: URI, selling: Asset, buying: Asset) = this()
+    def this(
+      serverUrl: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URI */ js.Any,
+      selling: Asset,
+      buying: Asset
+    ) = this()
   }
   
 }

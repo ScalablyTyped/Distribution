@@ -30,6 +30,10 @@ trait StartImportResponse extends js.Object {
     * The type of resource to import.
     */
   var resourceType: js.UndefOr[ResourceType] = js.native
+  /**
+    * A list of tags added to the imported bot.
+    */
+  var tags: js.UndefOr[TagList] = js.native
 }
 
 object StartImportResponse {
@@ -40,7 +44,8 @@ object StartImportResponse {
     importStatus: ImportStatus = null,
     mergeStrategy: MergeStrategy = null,
     name: Name = null,
-    resourceType: ResourceType = null
+    resourceType: ResourceType = null,
+    tags: TagList = null
   ): StartImportResponse = {
     val __obj = js.Dynamic.literal()
     if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
@@ -49,6 +54,7 @@ object StartImportResponse {
     if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartImportResponse]
   }
 }

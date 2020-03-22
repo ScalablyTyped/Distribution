@@ -90,9 +90,6 @@ object reactPlaidLinkStrings {
   sealed trait development extends js.Object
   
   @js.native
-  sealed trait holdings extends js.Object
-  
-  @js.native
   sealed trait identity extends js.Object
   
   @js.native
@@ -105,10 +102,16 @@ object reactPlaidLinkStrings {
   sealed trait institution_not_found extends js.Object
   
   @js.native
+  sealed trait investments extends js.Object
+  
+  @js.native
   sealed trait liabilities extends js.Object
   
   @js.native
   sealed trait manually_verified extends js.Object
+  
+  @js.native
+  sealed trait payment_initiation extends js.Object
   
   @js.native
   sealed trait pending_automatic_verification extends js.Object
@@ -197,8 +200,6 @@ object reactPlaidLinkStrings {
   @scala.inline
   def development: development = "development".asInstanceOf[development]
   @scala.inline
-  def holdings: holdings = "holdings".asInstanceOf[holdings]
-  @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
   @scala.inline
   def income: income = "income".asInstanceOf[income]
@@ -207,9 +208,13 @@ object reactPlaidLinkStrings {
   @scala.inline
   def institution_not_found: institution_not_found = "institution_not_found".asInstanceOf[institution_not_found]
   @scala.inline
+  def investments: investments = "investments".asInstanceOf[investments]
+  @scala.inline
   def liabilities: liabilities = "liabilities".asInstanceOf[liabilities]
   @scala.inline
   def manually_verified: manually_verified = "manually_verified".asInstanceOf[manually_verified]
+  @scala.inline
+  def payment_initiation: payment_initiation = "payment_initiation".asInstanceOf[payment_initiation]
   @scala.inline
   def pending_automatic_verification: pending_automatic_verification = "pending_automatic_verification".asInstanceOf[pending_automatic_verification]
   @scala.inline

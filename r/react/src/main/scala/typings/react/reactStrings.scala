@@ -222,6 +222,9 @@ object reactStrings {
   sealed trait dt extends js.Object
   
   @js.native
+  sealed trait eager extends js.Object
+  
+  @js.native
   sealed trait ellipse extends js.Object
   
   @js.native
@@ -439,6 +442,9 @@ object reactStrings {
   sealed trait label extends js.Object
   
   @js.native
+  sealed trait `lazy` extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -532,6 +538,9 @@ object reactStrings {
   sealed trait no extends js.Object
   
   @js.native
+  sealed trait `no-referrer` extends js.Object
+  
+  @js.native
   sealed trait noindex extends js.Object
   
   @js.native
@@ -563,6 +572,9 @@ object reactStrings {
   
   @js.native
   sealed trait option extends js.Object
+  
+  @js.native
+  sealed trait origin extends js.Object
   
   @js.native
   sealed trait other extends js.Object
@@ -798,6 +810,9 @@ object reactStrings {
   sealed trait ul extends js.Object
   
   @js.native
+  sealed trait `unsafe-url` extends js.Object
+  
+  @js.native
   sealed trait update extends js.Object
   
   @js.native
@@ -971,6 +986,8 @@ object reactStrings {
   @scala.inline
   def dt: dt = "dt".asInstanceOf[dt]
   @scala.inline
+  def eager: eager = "eager".asInstanceOf[eager]
+  @scala.inline
   def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   @scala.inline
   def em: em = "em".asInstanceOf[em]
@@ -1113,6 +1130,8 @@ object reactStrings {
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
+  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def legend: legend = "legend".asInstanceOf[legend]
@@ -1175,6 +1194,8 @@ object reactStrings {
   @scala.inline
   def no: no = "no".asInstanceOf[no]
   @scala.inline
+  def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  @scala.inline
   def noindex: noindex = "noindex".asInstanceOf[noindex]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -1196,6 +1217,8 @@ object reactStrings {
   def optgroup: optgroup = "optgroup".asInstanceOf[optgroup]
   @scala.inline
   def option: option = "option".asInstanceOf[option]
+  @scala.inline
+  def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
@@ -1350,6 +1373,8 @@ object reactStrings {
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
+  @scala.inline
+  def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline

@@ -32,7 +32,7 @@ trait ValidationMapIAceEditorPr extends js.Object {
   var markers: js.UndefOr[Validator[js.UndefOr[js.Array[IMarker]]]] = js.undefined
   var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
   var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
-  var mode: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
+  var mode: js.UndefOr[Validator[js.UndefOr[String | js.Object]]] = js.undefined
   var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
   var navigateToFileEnd: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
   var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]]] = js.undefined
@@ -103,7 +103,7 @@ object ValidationMapIAceEditorPr {
     markers: Validator[js.UndefOr[js.Array[IMarker]]] = null,
     maxLines: Validator[js.UndefOr[Double]] = null,
     minLines: Validator[js.UndefOr[Double]] = null,
-    mode: Validator[js.UndefOr[String]] = null,
+    mode: Validator[js.UndefOr[String | js.Object]] = null,
     name: Validator[js.UndefOr[String]] = null,
     navigateToFileEnd: Validator[js.UndefOr[Boolean]] = null,
     onBeforeLoad: Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]] = null,

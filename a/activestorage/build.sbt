@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activestorage"
-version := "5.2-dt-20190327Z-8c7ee6"
+version := "5.2-dt-20200225Z-8c7ee6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

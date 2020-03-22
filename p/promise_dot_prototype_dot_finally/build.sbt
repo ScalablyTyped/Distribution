@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "promise_dot_prototype_dot_finally"
-version := "2.0-dt-20200207Z-180364"
+version := "2.0-dt-20200226Z-180364"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

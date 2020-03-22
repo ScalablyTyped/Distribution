@@ -23,7 +23,7 @@ trait ExpressMiddlewareOptions extends js.Object {
       /* client */ StatsdClient, 
       /* startTime */ Date, 
       /* req */ Request_[ParamsDictionary], 
-      /* res */ Response_, 
+      /* res */ Response_[_], 
       Unit
     ]
   ] = js.undefined
@@ -38,7 +38,7 @@ object ExpressMiddlewareOptions {
   @scala.inline
   def apply(
     notFoundRouteName: String = null,
-    onResponseEnd: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary], /* res */ Response_) => Unit = null,
+    onResponseEnd: (/* client */ StatsdClient, /* startTime */ Date, /* req */ Request_[ParamsDictionary], /* res */ Response_[_]) => Unit = null,
     timeByUrl: js.UndefOr[Boolean] = js.undefined
   ): ExpressMiddlewareOptions = {
     val __obj = js.Dynamic.literal()

@@ -37,6 +37,11 @@ trait opts extends js.Object {
   @JSName("encode")
   var encode_Original: js.Function1[/* obj */ js.Object, String] = js.native
   var expires: js.UndefOr[Date] = js.native
+  /**
+    * External key is used the cookie by default,
+    * but you can use options.externalKey to customize your own external key methods.
+    */
+  var externalKey: js.UndefOr[ExternalKeys] = js.native
   var httpOnly: js.UndefOr[Boolean] = js.native
   /**
     * cookie key (default is koa:sess)

@@ -2,6 +2,7 @@ package typings.pulumiAws.eksClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.eks.ClusterCertificateAuthority
+import typings.pulumiAws.inputMod.eks.ClusterEncryptionConfig
 import typings.pulumiAws.inputMod.eks.ClusterIdentity
 import typings.pulumiAws.inputMod.eks.ClusterVpcConfig
 import typings.pulumiPulumi.outputMod.Input
@@ -24,6 +25,10 @@ trait ClusterState extends js.Object {
     * A list of the desired control plane logging to enable. For more information, see [Amazon EKS Control Plane Logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html)
     */
   val enabledClusterLogTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * Configuration block with encryption configuration for the cluster. Only available on Kubernetes 1.13 and above clusters created after March 6, 2020. Detailed below.
+    */
+  val encryptionConfig: js.UndefOr[Input[ClusterEncryptionConfig]] = js.native
   /**
     * The endpoint for your Kubernetes API server.
     */
@@ -69,6 +74,7 @@ object ClusterState {
     certificateAuthority: Input[ClusterCertificateAuthority] = null,
     createdAt: Input[String] = null,
     enabledClusterLogTypes: Input[js.Array[Input[String]]] = null,
+    encryptionConfig: Input[ClusterEncryptionConfig] = null,
     endpoint: Input[String] = null,
     identities: Input[js.Array[Input[ClusterIdentity]]] = null,
     name: Input[String] = null,
@@ -84,6 +90,7 @@ object ClusterState {
     if (certificateAuthority != null) __obj.updateDynamic("certificateAuthority")(certificateAuthority.asInstanceOf[js.Any])
     if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
     if (enabledClusterLogTypes != null) __obj.updateDynamic("enabledClusterLogTypes")(enabledClusterLogTypes.asInstanceOf[js.Any])
+    if (encryptionConfig != null) __obj.updateDynamic("encryptionConfig")(encryptionConfig.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (identities != null) __obj.updateDynamic("identities")(identities.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

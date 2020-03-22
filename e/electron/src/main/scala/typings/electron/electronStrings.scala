@@ -1446,6 +1446,18 @@ object electronStrings {
   sealed trait `small-square` extends js.Object
   
   @js.native
+  sealed trait `spellcheck-dictionary-download-begin` extends js.Object
+  
+  @js.native
+  sealed trait `spellcheck-dictionary-download-failure` extends js.Object
+  
+  @js.native
+  sealed trait `spellcheck-dictionary-download-success` extends js.Object
+  
+  @js.native
+  sealed trait `spellcheck-dictionary-initialized` extends js.Object
+  
+  @js.native
   sealed trait stalled extends js.Object
   
   @js.native
@@ -2702,6 +2714,14 @@ object electronStrings {
   def small: small = "small".asInstanceOf[small]
   @scala.inline
   def `small-square`: `small-square` = "small-square".asInstanceOf[`small-square`]
+  @scala.inline
+  def `spellcheck-dictionary-download-begin`: `spellcheck-dictionary-download-begin` = "spellcheck-dictionary-download-begin".asInstanceOf[`spellcheck-dictionary-download-begin`]
+  @scala.inline
+  def `spellcheck-dictionary-download-failure`: `spellcheck-dictionary-download-failure` = "spellcheck-dictionary-download-failure".asInstanceOf[`spellcheck-dictionary-download-failure`]
+  @scala.inline
+  def `spellcheck-dictionary-download-success`: `spellcheck-dictionary-download-success` = "spellcheck-dictionary-download-success".asInstanceOf[`spellcheck-dictionary-download-success`]
+  @scala.inline
+  def `spellcheck-dictionary-initialized`: `spellcheck-dictionary-initialized` = "spellcheck-dictionary-initialized".asInstanceOf[`spellcheck-dictionary-initialized`]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline

@@ -59,7 +59,7 @@ trait JWT extends js.Object {
     * @param res The response in which to store the JWT.
     * @return this
     */
-  def store(res: Response_): JWT
+  def store(res: Response_[_]): JWT
   /**
     * This function is called when the jwt is passed through JSON.stringify.
     * We don't want the secret or options to be stringified.
@@ -87,7 +87,7 @@ object JWT {
     secret: String,
     sign: js.Any => JWT,
     stale: Boolean,
-    store: Response_ => JWT,
+    store: Response_[_] => JWT,
     toJSON: () => js.Any,
     token: String,
     valid: Boolean,

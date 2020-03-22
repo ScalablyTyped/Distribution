@@ -32,5 +32,6 @@ trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] e
   // unfortunately keyframes can't interpolate props from the theme
   def keyframes(strings: TemplateStringsArray, interpolations: SimpleInterpolation*): Keyframes_ = js.native
   def keyframes(strings: CSSKeyframes, interpolations: SimpleInterpolation*): Keyframes_ = js.native
+  def useTheme(): T = js.native
 }
 

@@ -3,7 +3,6 @@ package typings.stellarSdk.tradeAggregationCallBuilderMod
 import typings.stellarBase.mod.Asset
 import typings.stellarSdk.callBuilderMod.CallBuilder
 import typings.stellarSdk.serverApiMod.ServerApi.CollectionPage
-import typings.urijs.uri.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TradeAggregationCallBuilder protected () extends CallBuilder[CollectionPage[TradeAggregationRecord]] {
   def this(
-    serverUrl: URI,
+    serverUrl: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URI */ js.Any,
     base: Asset,
     counter: Asset,
     start_time: Double,

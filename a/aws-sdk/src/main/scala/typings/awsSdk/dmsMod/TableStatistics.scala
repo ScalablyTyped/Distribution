@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TableStatistics extends js.Object {
   /**
-    * The Data Definition Language (DDL) used to build and modify the structure of your tables.
+    * The data definition language (DDL) used to build and modify the structure of your tables.
     */
   var Ddls: js.UndefOr[Long] = js.native
   /**
@@ -15,23 +15,35 @@ trait TableStatistics extends js.Object {
     */
   var Deletes: js.UndefOr[Long] = js.native
   /**
-    * The number of rows that failed conditional checks during the Full Load operation (valid only for DynamoDB as a target migrations).
+    * The number of rows that failed conditional checks during the full load operation (valid only for migrations where DynamoDB is the target).
     */
   var FullLoadCondtnlChkFailedRows: js.UndefOr[Long] = js.native
   /**
-    * The number of rows that failed to load during the Full Load operation (valid only for DynamoDB as a target migrations).
+    * The time when the full load operation completed.
+    */
+  var FullLoadEndTime: js.UndefOr[TStamp] = js.native
+  /**
+    * The number of rows that failed to load during the full load operation (valid only for migrations where DynamoDB is the target).
     */
   var FullLoadErrorRows: js.UndefOr[Long] = js.native
   /**
-    * The number of rows added during the Full Load operation.
+    * A value that indicates if the table was reloaded (true) or loaded as part of a new full load operation (false).
+    */
+  var FullLoadReloaded: js.UndefOr[BooleanOptional] = js.native
+  /**
+    * The number of rows added during the full load operation.
     */
   var FullLoadRows: js.UndefOr[Long] = js.native
+  /**
+    * The time when the full load operation started.
+    */
+  var FullLoadStartTime: js.UndefOr[TStamp] = js.native
   /**
     * The number of insert actions performed on a table.
     */
   var Inserts: js.UndefOr[Long] = js.native
   /**
-    * The last time the table was updated.
+    * The last time a table was updated.
     */
   var LastUpdateTime: js.UndefOr[TStamp] = js.native
   /**
@@ -59,7 +71,7 @@ trait TableStatistics extends js.Object {
     */
   var ValidationPendingRecords: js.UndefOr[Long] = js.native
   /**
-    * The validation state of the table. The parameter can have the following values   Not enabled—Validation is not enabled for the table in the migration task.   Pending records—Some records in the table are waiting for validation.   Mismatched records—Some records in the table do not match between the source and target.   Suspended records—Some records in the table could not be validated.   No primary key—The table could not be validated because it had no primary key.   Table error—The table was not validated because it was in an error state and some data was not migrated.   Validated—All rows in the table were validated. If the table is updated, the status can change from Validated.   Error—The table could not be validated because of an unexpected error.  
+    * The validation state of the table. This parameter can have the following values:   Not enabled - Validation isn't enabled for the table in the migration task.   Pending records - Some records in the table are waiting for validation.   Mismatched records - Some records in the table don't match between the source and target.   Suspended records - Some records in the table couldn't be validated.   No primary key - The table couldn't be validated because it has no primary key.   Table error - The table wasn't validated because it's in an error state and some data wasn't migrated.   Validated - All rows in the table are validated. If the table is updated, the status can change from Validated.   Error - The table couldn't be validated because of an unexpected error.  
     */
   var ValidationState: js.UndefOr[String] = js.native
   /**
@@ -67,7 +79,7 @@ trait TableStatistics extends js.Object {
     */
   var ValidationStateDetails: js.UndefOr[String] = js.native
   /**
-    * The number of records that could not be validated.
+    * The number of records that couldn't be validated.
     */
   var ValidationSuspendedRecords: js.UndefOr[Long] = js.native
 }
@@ -78,8 +90,11 @@ object TableStatistics {
     Ddls: Int | Double = null,
     Deletes: Int | Double = null,
     FullLoadCondtnlChkFailedRows: Int | Double = null,
+    FullLoadEndTime: TStamp = null,
     FullLoadErrorRows: Int | Double = null,
+    FullLoadReloaded: js.UndefOr[scala.Boolean] = js.undefined,
     FullLoadRows: Int | Double = null,
+    FullLoadStartTime: TStamp = null,
     Inserts: Int | Double = null,
     LastUpdateTime: TStamp = null,
     SchemaName: String = null,
@@ -96,8 +111,11 @@ object TableStatistics {
     if (Ddls != null) __obj.updateDynamic("Ddls")(Ddls.asInstanceOf[js.Any])
     if (Deletes != null) __obj.updateDynamic("Deletes")(Deletes.asInstanceOf[js.Any])
     if (FullLoadCondtnlChkFailedRows != null) __obj.updateDynamic("FullLoadCondtnlChkFailedRows")(FullLoadCondtnlChkFailedRows.asInstanceOf[js.Any])
+    if (FullLoadEndTime != null) __obj.updateDynamic("FullLoadEndTime")(FullLoadEndTime.asInstanceOf[js.Any])
     if (FullLoadErrorRows != null) __obj.updateDynamic("FullLoadErrorRows")(FullLoadErrorRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(FullLoadReloaded)) __obj.updateDynamic("FullLoadReloaded")(FullLoadReloaded.asInstanceOf[js.Any])
     if (FullLoadRows != null) __obj.updateDynamic("FullLoadRows")(FullLoadRows.asInstanceOf[js.Any])
+    if (FullLoadStartTime != null) __obj.updateDynamic("FullLoadStartTime")(FullLoadStartTime.asInstanceOf[js.Any])
     if (Inserts != null) __obj.updateDynamic("Inserts")(Inserts.asInstanceOf[js.Any])
     if (LastUpdateTime != null) __obj.updateDynamic("LastUpdateTime")(LastUpdateTime.asInstanceOf[js.Any])
     if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName.asInstanceOf[js.Any])

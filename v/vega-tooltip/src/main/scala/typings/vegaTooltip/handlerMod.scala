@@ -1,6 +1,7 @@
 package typings.vegaTooltip
 
 import typings.std.MouseEvent
+import typings.vegaTooltip.defaultsMod.Options
 import typings.vegaTypings.runtimeMod.Item
 import typings.vegaTypings.runtimeMod.TooltipHandler
 import scala.scalajs.js
@@ -17,7 +18,7 @@ object handlerMod extends js.Object {
     * @param options Tooltip Options
     */
   class Handler () extends js.Object {
-    def this(options: PartialOptions) = this()
+    def this(options: Options) = this()
     /**
       * The handler function. We bind this to this function in the constructor.
       */

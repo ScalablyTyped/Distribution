@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "pkijs"
-version := "0.0-unknown-dt-20190322Z-f1239c"
+version := "0.0-unknown-dt-20200225Z-78b8d9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20190322Z-34ad17",
+  "org.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20200225Z-34ad17",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

@@ -2,6 +2,7 @@ package typings.primereact.dataTableMod
 
 import typings.primereact.AnonColumns
 import typings.primereact.AnonData
+import typings.primereact.AnonDataArray
 import typings.primereact.AnonDataField
 import typings.primereact.AnonDataIndex
 import typings.primereact.AnonDataOriginalEvent
@@ -29,7 +30,7 @@ trait DataTableProps extends js.Object {
   var dataKey: js.UndefOr[String] = js.undefined
   var defaultSortOrder: js.UndefOr[Double] = js.undefined
   var editMode: js.UndefOr[String] = js.undefined
-  var emptyMessage: js.UndefOr[String] = js.undefined
+  var emptyMessage: js.UndefOr[js.Any] = js.undefined
   var expandableRowGroups: js.UndefOr[Boolean] = js.undefined
   var expandedRows: js.UndefOr[js.Array[_]] = js.undefined
   var exportFilename: js.UndefOr[String] = js.undefined
@@ -67,7 +68,7 @@ trait DataTableProps extends js.Object {
   var onRowExpand: js.UndefOr[js.Function1[/* e */ AnonDataOriginalEvent, Unit]] = js.undefined
   var onRowReorder: js.UndefOr[js.Function1[/* e */ AnonDragIndex, Unit]] = js.undefined
   var onRowSelect: js.UndefOr[js.Function1[/* e */ AnonType, Unit]] = js.undefined
-  var onRowToggle: js.UndefOr[js.Function1[/* e */ AnonData, Unit]] = js.undefined
+  var onRowToggle: js.UndefOr[js.Function1[/* e */ AnonDataArray, Unit]] = js.undefined
   var onRowUnselect: js.UndefOr[js.Function1[/* e */ AnonType, Unit]] = js.undefined
   var onSelectionChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
   var onSort: js.UndefOr[js.Function1[/* e */ AnonMultiSortMeta, Unit]] = js.undefined
@@ -89,12 +90,15 @@ trait DataTableProps extends js.Object {
   var rowGroupFooterTemplate: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.UndefOr[ReactNode]]] = js.undefined
   var rowGroupHeaderTemplate: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.UndefOr[ReactNode]]] = js.undefined
   var rowGroupMode: js.UndefOr[String] = js.undefined
+  var rowHover: js.UndefOr[Boolean] = js.undefined
   var rows: js.UndefOr[Double] = js.undefined
   var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
   var scrollHeight: js.UndefOr[String] = js.undefined
   var scrollable: js.UndefOr[Boolean] = js.undefined
   var selection: js.UndefOr[js.Any] = js.undefined
   var selectionMode: js.UndefOr[String] = js.undefined
+  var showReorderElement: js.UndefOr[js.Function1[/* e */ AnonData, Boolean]] = js.undefined
+  var showSelectionElement: js.UndefOr[js.Function1[/* e */ AnonData, Boolean]] = js.undefined
   var sortField: js.UndefOr[String] = js.undefined
   var sortMode: js.UndefOr[String] = js.undefined
   var sortOrder: js.UndefOr[Double] = js.undefined
@@ -125,7 +129,7 @@ object DataTableProps {
     dataKey: String = null,
     defaultSortOrder: Int | Double = null,
     editMode: String = null,
-    emptyMessage: String = null,
+    emptyMessage: js.Any = null,
     expandableRowGroups: js.UndefOr[Boolean] = js.undefined,
     expandedRows: js.Array[_] = null,
     exportFilename: String = null,
@@ -163,7 +167,7 @@ object DataTableProps {
     onRowExpand: /* e */ AnonDataOriginalEvent => Unit = null,
     onRowReorder: /* e */ AnonDragIndex => Unit = null,
     onRowSelect: /* e */ AnonType => Unit = null,
-    onRowToggle: /* e */ AnonData => Unit = null,
+    onRowToggle: /* e */ AnonDataArray => Unit = null,
     onRowUnselect: /* e */ AnonType => Unit = null,
     onSelectionChange: /* e */ AnonValue => Unit = null,
     onSort: /* e */ AnonMultiSortMeta => Unit = null,
@@ -185,12 +189,15 @@ object DataTableProps {
     rowGroupFooterTemplate: (/* data */ js.Any, /* index */ Double) => js.UndefOr[ReactNode] = null,
     rowGroupHeaderTemplate: (/* data */ js.Any, /* index */ Double) => js.UndefOr[ReactNode] = null,
     rowGroupMode: String = null,
+    rowHover: js.UndefOr[Boolean] = js.undefined,
     rows: Int | Double = null,
     rowsPerPageOptions: js.Array[Double] = null,
     scrollHeight: String = null,
     scrollable: js.UndefOr[Boolean] = js.undefined,
     selection: js.Any = null,
     selectionMode: String = null,
+    showReorderElement: /* e */ AnonData => Boolean = null,
+    showSelectionElement: /* e */ AnonData => Boolean = null,
     sortField: String = null,
     sortMode: String = null,
     sortOrder: Int | Double = null,
@@ -278,12 +285,15 @@ object DataTableProps {
     if (rowGroupFooterTemplate != null) __obj.updateDynamic("rowGroupFooterTemplate")(js.Any.fromFunction2(rowGroupFooterTemplate))
     if (rowGroupHeaderTemplate != null) __obj.updateDynamic("rowGroupHeaderTemplate")(js.Any.fromFunction2(rowGroupHeaderTemplate))
     if (rowGroupMode != null) __obj.updateDynamic("rowGroupMode")(rowGroupMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions.asInstanceOf[js.Any])
     if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
     if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
     if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    if (showReorderElement != null) __obj.updateDynamic("showReorderElement")(js.Any.fromFunction1(showReorderElement))
+    if (showSelectionElement != null) __obj.updateDynamic("showSelectionElement")(js.Any.fromFunction1(showSelectionElement))
     if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
     if (sortMode != null) __obj.updateDynamic("sortMode")(sortMode.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])

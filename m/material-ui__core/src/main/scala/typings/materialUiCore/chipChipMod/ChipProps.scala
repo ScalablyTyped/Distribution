@@ -1,6 +1,6 @@
 package typings.materialUiCore.chipChipMod
 
-import typings.materialUiCore.PartialClassNameMapChipClassKey
+import typings.materialUiCore.PartialClassNameMapChipCl
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -151,7 +151,7 @@ trait ChipProps extends js.Object {
   var avatar: js.UndefOr[ReactElement] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapChipClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapChipCl] = js.native
   var clickable: js.UndefOr[Boolean] = js.native
   var color: js.UndefOr[Color] = js.native
   var component: js.UndefOr[ReactType[ChipProps]] = js.native
@@ -339,7 +339,7 @@ object ChipProps {
     avatar: ReactElement = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapChipClassKey = null,
+    classes: PartialClassNameMapChipCl = null,
     clickable: js.UndefOr[Boolean] = js.undefined,
     color: Color = null,
     component: ReactType[ChipProps] = null,

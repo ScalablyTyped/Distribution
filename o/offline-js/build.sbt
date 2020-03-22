@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "offline-js"
-version := "0.7.14-dt-20190322Z-a6de91"
+version := "0.7.14-dt-20200226Z-a6de91"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

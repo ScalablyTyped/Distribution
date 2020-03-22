@@ -1,7 +1,7 @@
 
 # Scala.js typings for protocol-buffers-schema
 
-Typings are for version 3.3
+Typings are for version 3.4
 
 ## Library description:
 No nonsense protocol buffers schema parser written in Javascript

@@ -1,14 +1,15 @@
 package typings.evernote
 
-import typings.evernote.mod.Evernote.QueryFormat
-import typings.evernote.mod.Evernote.SavedSearchScope
+import typings.evernote.mod.Types.Guid
+import typings.evernote.mod.Types.QueryFormat
+import typings.evernote.mod.Types.SavedSearchScope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AnonFormat extends js.Object {
   var format: js.UndefOr[QueryFormat] = js.undefined
-  var guid: js.UndefOr[String] = js.undefined
+  var guid: js.UndefOr[Guid] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var query: js.UndefOr[String] = js.undefined
   var scope: js.UndefOr[SavedSearchScope] = js.undefined
@@ -19,7 +20,7 @@ object AnonFormat {
   @scala.inline
   def apply(
     format: QueryFormat = null,
-    guid: String = null,
+    guid: Guid = null,
     name: String = null,
     query: String = null,
     scope: SavedSearchScope = null,

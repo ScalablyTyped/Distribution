@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "knex" : "0.20.10"
+      "knex" : "0.20.12"
     }
   ],
   "test-dependencies" : [
     {
-      "knex" : "0.20.10"
+      "knex" : "0.20.12"
     }
   ],
   "compile-devDependencies" : [

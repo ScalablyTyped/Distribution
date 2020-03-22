@@ -10,14 +10,6 @@ import scala.scalajs.js.annotation._
   extends PlotWordcloudOptions
      with SeriesOptionsType {
   /**
-    * Not available
-    */
-  var crisp: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var cropTreshold: js.UndefOr[scala.Nothing] = js.undefined
-  /**
     * (Highcharts) An array of data points for the series. For the `wordcloud`
     * series type, points can be given in the following ways:
     *
@@ -30,26 +22,6 @@ import scala.scalajs.js.annotation._
     * not available. (see online documentation for example)
     */
   var data: js.UndefOr[js.Array[(js.Tuple2[String, Double]) | PointOptionsObject]] = js.undefined
-  /**
-    * Not available
-    */
-  var depth: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var edgeColor: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var groupPadding: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var groupZPadding: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var grouping: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
@@ -74,26 +46,10 @@ import scala.scalajs.js.annotation._
     */
   var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   /**
-    * Not available
-    */
-  var maxPointWidth: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var minPointLength: js.UndefOr[scala.Nothing] = js.undefined
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
   var name: js.UndefOr[String] = js.undefined
-  /**
-    * Not available
-    */
-  var pointPadding: js.UndefOr[scala.Nothing] = js.undefined
-  /**
-    * Not available
-    */
-  var pointWidth: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
     * chart. The stack option can be a string or anything else, as long as the
@@ -145,21 +101,15 @@ object SeriesWordcloudOptions {
     colors: js.Array[ColorString | GradientColorObject | PatternObject] = null,
     compareStart: js.UndefOr[Boolean] = js.undefined,
     connectors: SeriesConnectorsOptionsObject = null,
-    crisp: js.UndefOr[scala.Nothing] = js.undefined,
     cropThreshold: Int | Double = null,
-    cropTreshold: js.UndefOr[scala.Nothing] = js.undefined,
     cursor: String | CursorValue = null,
+    custom: Dictionary[_] = null,
+    dashStyle: DashStyleValue = null,
     data: js.Array[(js.Tuple2[String, Double]) | PointOptionsObject] = null,
-    dataSorting: DataSortingOptionsObject | PlotWordcloudDataSortingOptions = null,
-    depth: js.UndefOr[scala.Nothing] = js.undefined,
     description: String = null,
-    edgeColor: js.UndefOr[scala.Nothing] = js.undefined,
     edgeWidth: Int | Double = null,
     enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
     events: SeriesEventsOptionsObject = null,
-    groupPadding: js.UndefOr[scala.Nothing] = js.undefined,
-    groupZPadding: js.UndefOr[scala.Nothing] = js.undefined,
-    grouping: js.UndefOr[scala.Nothing] = js.undefined,
     id: String = null,
     includeInDataExport: js.UndefOr[Boolean] = js.undefined,
     index: Int | Double = null,
@@ -171,16 +121,12 @@ object SeriesWordcloudOptions {
     linkedTo: String = null,
     mapData: js.Array[SeriesMapDataOptions] | js.Any = null,
     maxFontSize: Int | Double = null,
-    maxPointWidth: js.UndefOr[scala.Nothing] = js.undefined,
     minFontSize: Int | Double = null,
-    minPointLength: js.UndefOr[scala.Nothing] = js.undefined,
     name: String = null,
     opacity: Int | Double = null,
     placementStrategy: String = null,
     point: PlotSeriesPointOptions = null,
     pointDescriptionFormatter: js.Function = null,
-    pointPadding: js.UndefOr[scala.Nothing] = js.undefined,
-    pointWidth: js.UndefOr[scala.Nothing] = js.undefined,
     rotation: PlotWordcloudRotationOptions = null,
     selected: js.UndefOr[Boolean] = js.undefined,
     showInLegend: js.UndefOr[Boolean] = js.undefined,
@@ -217,21 +163,15 @@ object SeriesWordcloudOptions {
     if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.asInstanceOf[js.Any])
     if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp.asInstanceOf[js.Any])
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(cropTreshold)) __obj.updateDynamic("cropTreshold")(cropTreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataSorting != null) __obj.updateDynamic("dataSorting")(dataSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeColor)) __obj.updateDynamic("edgeColor")(edgeColor.asInstanceOf[js.Any])
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupPadding)) __obj.updateDynamic("groupPadding")(groupPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupZPadding)) __obj.updateDynamic("groupZPadding")(groupZPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(grouping)) __obj.updateDynamic("grouping")(grouping.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
@@ -243,16 +183,12 @@ object SeriesWordcloudOptions {
     if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
     if (mapData != null) __obj.updateDynamic("mapData")(mapData.asInstanceOf[js.Any])
     if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPointWidth)) __obj.updateDynamic("maxPointWidth")(maxPointWidth.asInstanceOf[js.Any])
     if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(minPointLength)) __obj.updateDynamic("minPointLength")(minPointLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (placementStrategy != null) __obj.updateDynamic("placementStrategy")(placementStrategy.asInstanceOf[js.Any])
     if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
     if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointPadding)) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointWidth)) __obj.updateDynamic("pointWidth")(pointWidth.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])

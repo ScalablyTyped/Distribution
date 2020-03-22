@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ink-spinner", JSImport.Namespace)
 @js.native
 class ^ ()
-  extends Component[SpinnerProps with ChalkProps, js.Object, js.Any]
+  extends Component[SpinnerProps, js.Object, js.Any]
 

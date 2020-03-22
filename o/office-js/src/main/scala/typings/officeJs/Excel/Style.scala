@@ -197,7 +197,6 @@ class Style () extends ClientObject {
     */
   var wrapText: Boolean = js.native
   /**
-    *
     * Deletes this style.
     *
     * [Api set: ExcelApi 1.7]

@@ -62,7 +62,6 @@ class Application () extends ClientObject {
     */
   val iterativeCalculation: IterativeCalculation = js.native
   /**
-    *
     * Recalculate all currently opened workbooks in Excel.
     *
     * [Api set: ExcelApi 1.1]
@@ -75,7 +74,6 @@ class Application () extends ClientObject {
   @JSName("calculate")
   def calculate_FullRebuild(calculationType: FullRebuild): Unit = js.native
   /**
-    *
     * Recalculate all currently opened workbooks in Excel.
     *
     * [Api set: ExcelApi 1.1]
@@ -110,14 +108,12 @@ class Application () extends ClientObject {
   def set(properties: ApplicationUpdateData): Unit = js.native
   def set(properties: ApplicationUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
     *
     * [Api set: ExcelApi 1.6]
     */
   def suspendApiCalculationUntilNextSync(): Unit = js.native
   /**
-    *
     * Suspends sceen updating until the next "context.sync()" is called.
     *
     * [Api set: ExcelApi 1.9]

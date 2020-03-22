@@ -31,8 +31,8 @@ import typings.grommet.AnonPanel
 import typings.grommet.AnonResponsiveBreakpoint
 import typings.grommet.AnonRow
 import typings.grommet.AnonSizeAnonDictxLarge
+import typings.grommet.AnonSmall
 import typings.grommet.AnonThumb
-import typings.grommet.AnonXlarge
 import typings.grommet.AnonXxlarge
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -70,7 +70,7 @@ trait ThemeType extends js.Object {
   var tab: js.UndefOr[AnonMargin] = js.undefined
   var table: js.UndefOr[AnonRow] = js.undefined
   var tabs: js.UndefOr[AnonPanel] = js.undefined
-  var text: js.UndefOr[AnonXlarge] = js.undefined
+  var text: js.UndefOr[AnonSmall] = js.undefined
   var textArea: js.UndefOr[AnonDisabledExtend] = js.undefined
   var textInput: js.UndefOr[AnonDisabledExtend] = js.undefined
   var video: js.UndefOr[AnonCaptions] = js.undefined
@@ -111,7 +111,7 @@ object ThemeType {
     tab: AnonMargin = null,
     table: AnonRow = null,
     tabs: AnonPanel = null,
-    text: AnonXlarge = null,
+    text: AnonSmall = null,
     textArea: AnonDisabledExtend = null,
     textInput: AnonDisabledExtend = null,
     video: AnonCaptions = null,

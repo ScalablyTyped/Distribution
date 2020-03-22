@@ -70,6 +70,11 @@ trait LangAccessibilityOptions extends js.Object {
     * information region when these series types are used.
     */
   var seriesTypeDescriptions: js.UndefOr[LangAccessibilitySeriesTypeDescriptionsOptions] = js.undefined
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Language options for
+    * sonification.
+    */
+  var sonification: js.UndefOr[LangAccessibilitySonificationOptions] = js.undefined
   var svgContainerLabel: js.UndefOr[String] = js.undefined
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Title element text for the chart
@@ -116,6 +121,7 @@ object LangAccessibilityOptions {
     screenReaderSection: LangAccessibilityScreenReaderSectionOptions = null,
     series: LangAccessibilitySeriesOptions = null,
     seriesTypeDescriptions: LangAccessibilitySeriesTypeDescriptionsOptions = null,
+    sonification: LangAccessibilitySonificationOptions = null,
     svgContainerLabel: String = null,
     svgContainerTitle: String = null,
     table: LangAccessibilityTableOptions = null,
@@ -137,6 +143,7 @@ object LangAccessibilityOptions {
     if (screenReaderSection != null) __obj.updateDynamic("screenReaderSection")(screenReaderSection.asInstanceOf[js.Any])
     if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     if (seriesTypeDescriptions != null) __obj.updateDynamic("seriesTypeDescriptions")(seriesTypeDescriptions.asInstanceOf[js.Any])
+    if (sonification != null) __obj.updateDynamic("sonification")(sonification.asInstanceOf[js.Any])
     if (svgContainerLabel != null) __obj.updateDynamic("svgContainerLabel")(svgContainerLabel.asInstanceOf[js.Any])
     if (svgContainerTitle != null) __obj.updateDynamic("svgContainerTitle")(svgContainerTitle.asInstanceOf[js.Any])
     if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])

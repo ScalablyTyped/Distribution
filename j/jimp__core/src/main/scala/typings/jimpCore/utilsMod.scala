@@ -19,6 +19,6 @@ object utilsMod extends js.Object {
   type GetPluginVal[Q] = Q | WellFormedValues[Q]
   type Omit[T, K] = Pick[T, Exclude[String, K]]
   type UnionToIntersection[U] = js.Any
-  type WellFormedValues[T /* <: js.Any */] = /* import warning: importer.ImportType#apply Failed type conversion: T['class'] */ js.Any
+  type WellFormedValues[T /* <: js.Any */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: T['class'] */ js.Any)
 }
 

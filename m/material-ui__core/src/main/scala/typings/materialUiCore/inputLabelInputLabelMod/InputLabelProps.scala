@@ -1,7 +1,7 @@
 package typings.materialUiCore.inputLabelInputLabelMod
 
-import typings.materialUiCore.PartialClassNameMapFormLabelClassKey
-import typings.materialUiCore.PartialClassNameMapInputLabelClassKey
+import typings.materialUiCore.PartialClassNameMapFormLa
+import typings.materialUiCore.PartialClassNameMapInputL
 import typings.materialUiCore.formLabelFormLabelMod.FormLabelBaseProps
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -96,7 +96,7 @@ import scala.scalajs.js.annotation._
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormLabel.FormLabelProps, @material-ui/core.@material-ui/core/InputLabel/InputLabel.InputLabelClassKey, never> */
 @js.native
 trait InputLabelProps extends js.Object {
-  var FormLabelClasses: js.UndefOr[PartialClassNameMapFormLabelClassKey] = js.native
+  var FormLabelClasses: js.UndefOr[PartialClassNameMapFormLa] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var `aria-activedescendant`: js.UndefOr[String] = js.native
@@ -152,7 +152,7 @@ trait InputLabelProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapInputLabelClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapInputL] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[FormLabelBaseProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -288,7 +288,7 @@ trait InputLabelProps extends js.Object {
 object InputLabelProps {
   @scala.inline
   def apply(
-    FormLabelClasses: PartialClassNameMapFormLabelClassKey = null,
+    FormLabelClasses: PartialClassNameMapFormLa = null,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -344,7 +344,7 @@ object InputLabelProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapInputLabelClassKey = null,
+    classes: PartialClassNameMapInputL = null,
     color: String = null,
     component: ReactType[FormLabelBaseProps] = null,
     contentEditable: Booleanish | inherit = null,

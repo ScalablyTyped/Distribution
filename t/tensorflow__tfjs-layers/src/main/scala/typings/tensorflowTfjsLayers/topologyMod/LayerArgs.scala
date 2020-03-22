@@ -2,7 +2,7 @@ package typings.tensorflowTfjsLayers.topologyMod
 
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.mod.Tensor_
+import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -47,7 +47,7 @@ trait LayerArgs extends js.Object {
   /**
     * Initial weight values of the layer.
     */
-  var weights: js.UndefOr[js.Array[Tensor_[Rank]]] = js.undefined
+  var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.undefined
 }
 
 object LayerArgs {
@@ -60,7 +60,7 @@ object LayerArgs {
     inputShape: Shape = null,
     name: String = null,
     trainable: js.UndefOr[Boolean] = js.undefined,
-    weights: js.Array[Tensor_[Rank]] = null
+    weights: js.Array[Tensor[Rank]] = null
   ): LayerArgs = {
     val __obj = js.Dynamic.literal()
     if (batchInputShape != null) __obj.updateDynamic("batchInputShape")(batchInputShape.asInstanceOf[js.Any])

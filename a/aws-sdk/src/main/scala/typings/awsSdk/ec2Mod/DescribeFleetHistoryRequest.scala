@@ -17,7 +17,7 @@ trait DescribeFleetHistoryRequest extends js.Object {
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: FleetIdentifier = js.native
+  var FleetId: typings.awsSdk.ec2Mod.FleetId = js.native
   /**
     * The maximum number of results to return in a single call. Specify a value between 1 and 1000. The default value is 1000. To retrieve the remaining results, make another call with the returned NextToken value.
     */
@@ -35,7 +35,7 @@ trait DescribeFleetHistoryRequest extends js.Object {
 object DescribeFleetHistoryRequest {
   @scala.inline
   def apply(
-    FleetId: FleetIdentifier,
+    FleetId: FleetId,
     StartTime: DateTime,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
     EventType: FleetEventType = null,

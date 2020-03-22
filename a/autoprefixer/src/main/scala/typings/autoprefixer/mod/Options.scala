@@ -12,8 +12,15 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /** should Autoprefixer add prefixes. */
   var add: js.UndefOr[Boolean] = js.undefined
-  /** @deprecated Replace Autoprefixer `browsers` option to `Browserslist` config */
+  /** @deprecated 'Change `browser` option to `overrideBrowserslist` in Autoprefixer */
+  var browser: js.UndefOr[String] = js.undefined
+  /**
+    * @deprecated Replace Autoprefixer `browsers` option to Browserslist config.
+    * Use `browserslist` key in `package.json` or `.browserslistrc` file.
+    */
   var browsers: js.UndefOr[js.Array[String] | String] = js.undefined
+  /** @deprecated Change `browserslist` option to `overrideBrowserslist` in Autoprefixer */
+  var browserslist: js.UndefOr[js.Array[String] | String] = js.undefined
   /** should Autoprefixer use Visual Cascade, if CSS is uncompressed */
   var cascade: js.UndefOr[Boolean] = js.undefined
   /** environment for `Browserslist` */
@@ -24,7 +31,12 @@ trait Options extends js.Object {
   var grid: js.UndefOr[`false` | autoplace | `no-autoplace`] = js.undefined
   /** do not raise error on unknown browser version in `Browserslist` config. */
   var ignoreUnknownVersions: js.UndefOr[Boolean] = js.undefined
-  /** list of queries for target browsers */
+  /**
+    * list of queries for target browsers.
+    * Try to not use it.
+    * The best practice is to use `.browserslistrc` config or `browserslist` key in `package.json`
+    * to share target browsers with Babel, ESLint and Stylelint
+    */
   var overrideBrowserslist: js.UndefOr[BrowserslistTarget] = js.undefined
   /** should Autoprefixer [remove outdated] prefixes */
   var remove: js.UndefOr[Boolean] = js.undefined
@@ -38,7 +50,9 @@ object Options {
   @scala.inline
   def apply(
     add: js.UndefOr[Boolean] = js.undefined,
+    browser: String = null,
     browsers: js.Array[String] | String = null,
+    browserslist: js.Array[String] | String = null,
     cascade: js.UndefOr[Boolean] = js.undefined,
     env: String = null,
     flexbox: Boolean | `no-2009` = null,
@@ -51,7 +65,9 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
+    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
     if (browsers != null) __obj.updateDynamic("browsers")(browsers.asInstanceOf[js.Any])
+    if (browserslist != null) __obj.updateDynamic("browserslist")(browserslist.asInstanceOf[js.Any])
     if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
     if (flexbox != null) __obj.updateDynamic("flexbox")(flexbox.asInstanceOf[js.Any])

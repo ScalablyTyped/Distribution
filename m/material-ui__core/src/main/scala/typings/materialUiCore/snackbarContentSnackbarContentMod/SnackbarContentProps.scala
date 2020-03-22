@@ -1,6 +1,6 @@
 package typings.materialUiCore.snackbarContentSnackbarContentMod
 
-import typings.materialUiCore.PartialClassNameMapSnackbarContentClassKey
+import typings.materialUiCore.PartialClassNameMapSnackb
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -148,7 +148,7 @@ trait SnackbarContentProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapSnackbarContentClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapSnackb] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[PaperProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -333,7 +333,7 @@ object SnackbarContentProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapSnackbarContentClassKey = null,
+    classes: PartialClassNameMapSnackb = null,
     color: String = null,
     component: ReactType[PaperProps] = null,
     contentEditable: Booleanish | inherit = null,

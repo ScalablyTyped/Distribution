@@ -38,7 +38,7 @@ class Rnd protected ()
   def getParent(): js.Any = js.native
   def getParentSize(): AnonHeight = js.native
   def getSelfElement(): HTMLDivElement | Null = js.native
-  def onDrag(e: RndDragEvent, data: DraggableData): Unit = js.native
+  def onDrag(e: RndDragEvent, data: DraggableData): `false` | Unit = js.native
   def onDragStart(e: RndDragEvent, data: DraggableData): Unit = js.native
   def onDragStop(e: RndDragEvent, data: DraggableData): `false` | Unit = js.native
   def onResize(e: MouseEvent, direction: ResizeDirection, elementRef: HTMLDivElement, delta: AnonWidth): Unit = js.native

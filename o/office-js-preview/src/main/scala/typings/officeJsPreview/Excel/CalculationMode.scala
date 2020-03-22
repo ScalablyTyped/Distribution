@@ -15,7 +15,6 @@ sealed trait CalculationMode extends js.Object
 @js.native
 object CalculationMode extends js.Object {
   /**
-    *
     * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
     *
     */
@@ -23,7 +22,6 @@ object CalculationMode extends js.Object {
   sealed trait automatic extends CalculationMode
   
   /**
-    *
     * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
     *
     */
@@ -31,7 +29,6 @@ object CalculationMode extends js.Object {
   sealed trait automaticExceptTables extends CalculationMode
   
   /**
-    *
     * Calculations only occur when the user or add-in requests them.
     *
     */

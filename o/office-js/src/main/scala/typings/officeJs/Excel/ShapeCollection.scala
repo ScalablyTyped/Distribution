@@ -28,7 +28,6 @@ class ShapeCollection () extends ClientObject {
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Shape] = js.native
   /**
-    *
     * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -39,7 +38,6 @@ class ShapeCollection () extends ClientObject {
     geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177 */ js.Any
   ): Shape = js.native
   /**
-    *
     * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
     *
     * [Api set: ExcelApi 1.9]
@@ -48,7 +46,6 @@ class ShapeCollection () extends ClientObject {
     */
   def addGeometricShape(geometricShapeType: GeometricShapeType): Shape = js.native
   /**
-    *
     * Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of shapes.
     *
     * [Api set: ExcelApi 1.9]
@@ -57,7 +54,6 @@ class ShapeCollection () extends ClientObject {
     */
   def addGroup(values: js.Array[String | Shape]): Shape = js.native
   /**
-    *
     * Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that represents the new image.
     *
     * [Api set: ExcelApi 1.9]
@@ -66,7 +62,6 @@ class ShapeCollection () extends ClientObject {
     */
   def addImage(base64ImageString: String): Shape = js.native
   /**
-    *
     * Adds a line to worksheet. Returns a Shape object that represents the new line.
     *
     * [Api set: ExcelApi 1.9]
@@ -86,7 +81,6 @@ class ShapeCollection () extends ClientObject {
   @JSName("addLine")
   def addLine_Straight(startLeft: Double, startTop: Double, endLeft: Double, endTop: Double, connectorType: Straight): Shape = js.native
   /**
-    *
     * Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the new text box.
     *
     * [Api set: ExcelApi 1.9]
@@ -96,14 +90,12 @@ class ShapeCollection () extends ClientObject {
   def addTextBox(): Shape = js.native
   def addTextBox(text: String): Shape = js.native
   /**
-    *
     * Returns the number of shapes in the worksheet. Read-only.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a shape using its Name or ID.
     *
     * [Api set: ExcelApi 1.9]
@@ -112,7 +104,6 @@ class ShapeCollection () extends ClientObject {
     */
   def getItem(key: String): Shape = js.native
   /**
-    *
     * Gets a shape using its position in the collection.
     *
     * [Api set: ExcelApi 1.9]

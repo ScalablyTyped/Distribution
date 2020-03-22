@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "phonon"
-version := "1.4-dt-20180214Z-4f490a"
+version := "1.4-dt-20180214Z-46562a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "awesomplete" % "1.1-dt-20191022Z-bca72d",
+  "org.scalablytyped" %%% "awesomplete" % "1.1-dt-20200225Z-bca72d",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "s3-uploader"
-version := "0.0-unknown-dt-20190322Z-34ab53"
+version := "0.0-unknown-dt-20200227Z-34ab53"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

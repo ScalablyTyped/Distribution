@@ -10,8 +10,8 @@ trait ErrorReport extends Error {
   var code: String
   var flags: Record[String, ExtensionFlag]
   var messages: LanguageMessages
-  var path: String
-  var prefs: ValidationOptions
+  var path: js.Array[String]
+  var prefs: ErrorValidationOptions
   var state: State
   var value: js.Any
 }
@@ -24,8 +24,8 @@ object ErrorReport {
     message: String,
     messages: LanguageMessages,
     name: String,
-    path: String,
-    prefs: ValidationOptions,
+    path: js.Array[String],
+    prefs: ErrorValidationOptions,
     state: State,
     value: js.Any,
     stack: String = null

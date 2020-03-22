@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-easy-loading"
-version := "1.2.0-dt-20190322Z-a1aebd"
+version := "1.2.0-dt-20200226Z-a1aebd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

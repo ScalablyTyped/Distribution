@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moonjs"
-version := "0.11-dt-20180921Z-5142b0"
+version := "0.11-dt-20200225Z-5142b0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

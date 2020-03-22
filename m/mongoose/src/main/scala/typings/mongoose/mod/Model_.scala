@@ -49,9 +49,9 @@ Instantiable0[T]
     * @param argument is a javascript string or anonymous function
     */
   @JSName("$where")
-  def $where(argument: String): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def $where(argument: String): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   @JSName("$where")
-  def $where(argument: js.Function): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def $where(argument: js.Function): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   /**
     * Performs aggregations on the models collection.
     * If a callback is passed, the aggregate is executed and a Promise is returned.
@@ -79,8 +79,8 @@ Instantiable0[T]
     cb: js.Function2[/* err */ js.Any, /* res */ BulkWriteOpResultObject, Unit]
   ): Unit = js.native
   /** Counts number of matching documents in a database collection. */
-  def count(conditions: js.Any): Query[Double] with QueryHelpers = js.native
-  def count(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
+  def count(conditions: FilterQuery[T]): Query[Double] with QueryHelpers = js.native
+  def count(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
   /**
     * Counts number of documents matching `criteria` in a database collection.
     *
@@ -95,8 +95,8 @@ Instantiable0[T]
     */
   def countDocuments(): Query[Double] with QueryHelpers = js.native
   def countDocuments(callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
-  def countDocuments(criteria: js.Any): Query[Double] with QueryHelpers = js.native
-  def countDocuments(criteria: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
+  def countDocuments(criteria: FilterQuery[T]): Query[Double] with QueryHelpers = js.native
+  def countDocuments(criteria: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* count */ Double, Unit]): Query[Double] with QueryHelpers = js.native
   def create(docs: js.Any*): js.Promise[T] = js.native
   /**
     * Shortcut for saving one or more documents to the database. MyModel.create(docs)
@@ -124,12 +124,14 @@ Instantiable0[T]
     */
   def createIndexes(): js.Promise[Unit] = js.native
   def createIndexes(cb: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
-  def deleteMany(conditions: js.Any): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
-  def deleteMany(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any, options: ModelOptions): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any, options: ModelOptions, callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteMany(conditions: FilterQuery[T]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteMany(conditions: FilterQuery[T], callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteMany(conditions: FilterQuery[T], options: ModelOptions): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteMany(conditions: FilterQuery[T], options: ModelOptions, callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: FilterQuery[T]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: FilterQuery[T], callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: FilterQuery[T], options: ModelOptions): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: FilterQuery[T], options: ModelOptions, callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
   /**
     * Adds a discriminator type.
     * @param name discriminator model name
@@ -184,92 +186,92 @@ Instantiable0[T]
     * Returns true if at least one document exists in the database that matches
     * the given `filter`, and false otherwise.
     */
-  def exists(filter: js.Any): js.Promise[Boolean] = js.native
-  def exists(filter: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ Boolean, Unit]): js.Promise[Boolean] = js.native
+  def exists(filter: FilterQuery[T]): js.Promise[Boolean] = js.native
+  def exists(filter: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ Boolean, Unit]): js.Promise[Boolean] = js.native
   /**
     * Finds documents.
     * @param projection optional fields to return
     */
-  def find(): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
-  def find(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
-  def find(conditions: js.Any): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
-  def find(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
-  def find(conditions: js.Any, projection: js.Any): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  def find(): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(conditions: FilterQuery[T]): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(conditions: FilterQuery[T], projection: js.Any): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
-  def find(conditions: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(conditions: FilterQuery[T], projection: js.Any, options: js.Any): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: js.Any,
     options: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
-  def find(conditions: js.Any, projection: Null, options: js.Any): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def find(conditions: FilterQuery[T], projection: Null, options: js.Any): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: Null,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def find(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: Null,
     options: Null,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
-  def findById(id: String): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: String, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: String, projection: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: String, projection: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: String, projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: String): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: String, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: String, projection: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: String, projection: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: String, projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findById(
     id: String,
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   /**
     * Finds a single document by its _id field. findById(id) is almost*
     * equivalent to findOne({ _id: id }). findById() triggers findOne hooks.
     * @param id value of _id to query by
     * @param projection optional fields to return
     */
-  def findById(id: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: js.Any, projection: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: js.Any, projection: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findById(id: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: js.Any, projection: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: js.Any, projection: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findById(
     id: js.Any,
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: Double): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: Double, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: Double, projection: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: Double, projection: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findById(id: Double, projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: Double): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: Double, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: Double, projection: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: Double, projection: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findById(id: Double, projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findById(
     id: Double,
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   /**
     * Issue a mongodb findOneAndDelete command by a document's _id field.
     * findByIdAndDelete(id, ...) is equivalent to findByIdAndDelete({ _id: id }, ...).
@@ -280,9 +282,9 @@ Instantiable0[T]
     *
     * @param id value of _id to query by
     */
-  def findByIdAndDelete(): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: String): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: String, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: String): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: String, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndDelete(id: String, options: QueryFindOneAndRemoveOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: String,
@@ -293,8 +295,8 @@ Instantiable0[T]
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndDelete(id: js.Any, options: QueryFindOneAndRemoveOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: js.Any,
@@ -305,8 +307,8 @@ Instantiable0[T]
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: Double): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: Double, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: Double): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: Double, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndDelete(id: Double, options: QueryFindOneAndRemoveOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: Double,
@@ -330,9 +332,9 @@ Instantiable0[T]
     *
     * @param id value of _id to query by
     */
-  def findByIdAndRemove(): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: String): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: String, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: String): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: String, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndRemove(id: String, options: QueryFindOneAndRemoveOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: String,
@@ -343,8 +345,8 @@ Instantiable0[T]
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndRemove(id: js.Any, options: QueryFindOneAndRemoveOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: js.Any,
@@ -355,8 +357,8 @@ Instantiable0[T]
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: Double): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: Double, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: Double): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: Double, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndRemove(id: Double, options: QueryFindOneAndRemoveOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: Double,
@@ -376,16 +378,16 @@ Instantiable0[T]
     *
     * @param id value of _id to query by
     */
-  def findByIdAndUpdate(): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: String, update: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: String, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: String, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: String, update: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: String, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: String, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: String,
     update: js.Any,
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: String, update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: String,
@@ -393,13 +395,13 @@ Instantiable0[T]
     options: rawResulttrueQueryFindOneContext,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: String, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: String, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: String,
     update: js.Any,
     options: rawResulttrueupserttruene,
     callback: js.Function2[/* err */ js.Any, /* res */ T, Unit]
-  ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: String, update: js.Any, options: upserttruenewtrueQueryFin): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: String,
@@ -407,15 +409,15 @@ Instantiable0[T]
     options: upserttruenewtrueQueryFin,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T], Unit]
   ): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
@@ -423,13 +425,13 @@ Instantiable0[T]
     options: rawResulttrueQueryFindOneContext,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
     options: rawResulttrueupserttruene,
     callback: js.Function2[/* err */ js.Any, /* res */ T, Unit]
-  ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any, options: upserttruenewtrueQueryFin): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
@@ -437,15 +439,15 @@ Instantiable0[T]
     options: upserttruenewtrueQueryFin,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T], Unit]
   ): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
-  def findByIdAndUpdate(id: Double, update: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: Double, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: Double, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: Double, update: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: Double, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: Double, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: Double,
     update: js.Any,
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: Double, update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: Double,
@@ -453,13 +455,13 @@ Instantiable0[T]
     options: rawResulttrueQueryFindOneContext,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: Double, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: Double, update: js.Any, options: rawResulttrueupserttruene): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: Double,
     update: js.Any,
     options: rawResulttrueupserttruene,
     callback: js.Function2[/* err */ js.Any, /* res */ T, Unit]
-  ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: Double, update: js.Any, options: upserttruenewtrueQueryFin): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: Double,
@@ -472,22 +474,22 @@ Instantiable0[T]
     * The conditions are cast to their respective SchemaTypes before the command is sent.
     * @param projection optional fields to return
     */
-  def findOne(): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOne(conditions: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOne(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOne(conditions: js.Any, projection: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findOne(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOne(conditions: FilterQuery[T]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOne(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOne(conditions: FilterQuery[T], projection: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOne(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOne(conditions: js.Any, projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOne(conditions: FilterQuery[T], projection: js.Any, options: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOne(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     projection: js.Any,
     options: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   /**
     * Issues a mongodb findOneAndDelete command.
     * Finds a matching document, removes it, passing the found document (if any) to the
@@ -496,18 +498,18 @@ Instantiable0[T]
     * Note: same signatures as findOneAndRemove
     *
     */
-  def findOneAndDelete(): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndDelete(conditions: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndDelete(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndDelete(conditions: js.Any, options: QueryFindOneAndRemoveOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndDelete(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: FilterQuery[T]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: FilterQuery[T], options: QueryFindOneAndRemoveOptions): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndDelete(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     options: QueryFindOneAndRemoveOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndDelete(conditions: js.Any, options: rawResulttrueQueryFindOne): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: FilterQuery[T], options: rawResulttrueQueryFindOne): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findOneAndDelete(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     options: rawResulttrueQueryFindOne,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -527,18 +529,18 @@ Instantiable0[T]
     * Note: same signatures as findOneAndDelete
     *
     */
-  def findOneAndRemove(): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndRemove(conditions: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndRemove(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndRemove(conditions: js.Any, options: QueryFindOneAndRemoveOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndRemove(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: FilterQuery[T]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: FilterQuery[T], callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: FilterQuery[T], options: QueryFindOneAndRemoveOptions): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndRemove(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     options: QueryFindOneAndRemoveOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndRemove(conditions: js.Any, options: rawResulttrueQueryFindOne): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: FilterQuery[T], options: rawResulttrueQueryFindOne): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findOneAndRemove(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     options: rawResulttrueQueryFindOne,
     callback: js.Function3[
       /* err */ js.Any, 
@@ -556,23 +558,23 @@ Instantiable0[T]
   +    * If mongoose option 'useFindAndModify': set to false it uses native findOneAndUpdate() rather than the deprecated findAndModify().
   +    * https://mongoosejs.com/docs/api.html#mongoose_Mongoose-set
     */
-  def findOneAndUpdate(): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndUpdate(): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: FilterQuery[T], update: js.Any): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     update: js.Any,
     callback: js.Function3[/* err */ js.Any, /* doc */ T | Null, /* res */ js.Any, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: FilterQuery[T], update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     update: js.Any,
     options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ T | Null, /* res */ js.Any, Unit]
-  ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  ): (DocumentQuery[T | Null, T, QueryHelpers]) with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: FilterQuery[T], update: js.Any, options: rawResulttrueQueryFindOneContext): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     update: js.Any,
     options: rawResulttrueQueryFindOneContext,
     callback: js.Function3[
@@ -582,9 +584,9 @@ Instantiable0[T]
       Unit
     ]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: rawResulttrueupserttruene): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: FilterQuery[T], update: js.Any, options: rawResulttrueupserttruene): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
   def findOneAndUpdate(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     update: js.Any,
     options: rawResulttrueupserttruene,
     callback: js.Function3[
@@ -594,25 +596,25 @@ Instantiable0[T]
       Unit
     ]
   ): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: upserttruenewtrueQueryFin): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: FilterQuery[T], update: js.Any, options: upserttruenewtrueQueryFin): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   def findOneAndUpdate(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     update: js.Any,
     options: upserttruenewtrueQueryFin,
     callback: js.Function3[/* err */ js.Any, /* doc */ T, /* res */ js.Any, Unit]
-  ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[T, T, QueryHelpers]) with QueryHelpers = js.native
   /**
     * Implements $geoSearch functionality for Mongoose
     * @param conditions an object that specifies the match condition (required)
     * @param options for the geoSearch, some (near, maxDistance) are required
     * @param callback optional callback
     */
-  def geoSearch(conditions: js.Any, options: AnonLean): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  def geoSearch(conditions: js.Any, options: AnonLean): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   def geoSearch(
     conditions: js.Any,
     options: AnonLean,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], Unit]
-  ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[js.Array[T], T, QueryHelpers]) with QueryHelpers = js.native
   /**
     * Shortcut for creating a new Document from existing raw data,
     * pre-saved in the DB. The document returned has no paths marked
@@ -711,15 +713,15 @@ Instantiable0[T]
     callback: js.Function2[/* err */ js.Any, /* res */ T, Unit]
   ): js.Promise[T] = js.native
   /** Removes documents from the collection. */
-  def remove(conditions: js.Any): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
-  def remove(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def remove(conditions: FilterQuery[T]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
+  def remove(conditions: FilterQuery[T], callback: js.Function1[/* err */ js.Any, Unit]): (Query[AnonN with AnonDeletedCount]) with QueryHelpers = js.native
   /**
     * Same as update(), except MongoDB replace the existing document with the given document (no atomic operators like $set).
     * This function triggers the following middleware: replaceOne
     */
-  def replaceOne(conditions: js.Any, replacement: js.Any): Query[_] with QueryHelpers = js.native
+  def replaceOne(conditions: FilterQuery[T], replacement: js.Any): Query[_] with QueryHelpers = js.native
   def replaceOne(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
     replacement: js.Any,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
@@ -747,29 +749,41 @@ Instantiable0[T]
     * Updates documents in the database without returning them.
     * All update values are cast to their appropriate SchemaTypes before being sent.
     */
-  def update(conditions: js.Any, doc: js.Any): Query[_] with QueryHelpers = js.native
-  def update(conditions: js.Any, doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]): Query[_] with QueryHelpers = js.native
-  def update(conditions: js.Any, doc: js.Any, options: ModelUpdateOptions): Query[_] with QueryHelpers = js.native
+  def update(conditions: FilterQuery[T], doc: js.Any): Query[_] with QueryHelpers = js.native
   def update(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
+    doc: js.Any,
+    callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
+  ): Query[_] with QueryHelpers = js.native
+  def update(conditions: FilterQuery[T], doc: js.Any, options: ModelUpdateOptions): Query[_] with QueryHelpers = js.native
+  def update(
+    conditions: FilterQuery[T],
     doc: js.Any,
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
-  def updateMany(conditions: js.Any, doc: js.Any): Query[_] with QueryHelpers = js.native
-  def updateMany(conditions: js.Any, doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]): Query[_] with QueryHelpers = js.native
-  def updateMany(conditions: js.Any, doc: js.Any, options: ModelUpdateOptions): Query[_] with QueryHelpers = js.native
+  def updateMany(conditions: FilterQuery[T], doc: js.Any): Query[_] with QueryHelpers = js.native
   def updateMany(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
+    doc: js.Any,
+    callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
+  ): Query[_] with QueryHelpers = js.native
+  def updateMany(conditions: FilterQuery[T], doc: js.Any, options: ModelUpdateOptions): Query[_] with QueryHelpers = js.native
+  def updateMany(
+    conditions: FilterQuery[T],
     doc: js.Any,
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
   ): Query[_] with QueryHelpers = js.native
-  def updateOne(conditions: js.Any, doc: js.Any): Query[_] with QueryHelpers = js.native
-  def updateOne(conditions: js.Any, doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]): Query[_] with QueryHelpers = js.native
-  def updateOne(conditions: js.Any, doc: js.Any, options: ModelUpdateOptions): Query[_] with QueryHelpers = js.native
+  def updateOne(conditions: FilterQuery[T], doc: js.Any): Query[_] with QueryHelpers = js.native
   def updateOne(
-    conditions: js.Any,
+    conditions: FilterQuery[T],
+    doc: js.Any,
+    callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]
+  ): Query[_] with QueryHelpers = js.native
+  def updateOne(conditions: FilterQuery[T], doc: js.Any, options: ModelUpdateOptions): Query[_] with QueryHelpers = js.native
+  def updateOne(
+    conditions: FilterQuery[T],
     doc: js.Any,
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, Unit]

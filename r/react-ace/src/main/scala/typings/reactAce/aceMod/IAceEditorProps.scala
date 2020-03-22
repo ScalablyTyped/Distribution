@@ -31,7 +31,7 @@ trait IAceEditorProps extends js.Object {
   var maxLines: js.UndefOr[Double] = js.undefined
   var minLines: js.UndefOr[Double] = js.undefined
   /** For available modes see https://github.com/thlorenz/brace/tree/master/mode */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[String | js.Object] = js.undefined
   var name: js.UndefOr[String] = js.undefined
   var navigateToFileEnd: js.UndefOr[Boolean] = js.undefined
   var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ js.Any, Unit]] = js.undefined
@@ -83,7 +83,7 @@ object IAceEditorProps {
     markers: js.Array[IMarker] = null,
     maxLines: Int | Double = null,
     minLines: Int | Double = null,
-    mode: String = null,
+    mode: String | js.Object = null,
     name: String = null,
     navigateToFileEnd: js.UndefOr[Boolean] = js.undefined,
     onBeforeLoad: /* ace */ js.Any => Unit = null,

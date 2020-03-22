@@ -61,8 +61,8 @@ trait IBaseSelectedItemsListProps[T]
     */
   var removeButtonAriaLabel: js.UndefOr[String] = js.undefined
   /**
-    * The items that the base picker should currently display as selected. If this is provided then the picker will act as a
-    * controlled component.
+    * The items that the base picker should currently display as selected.
+    * If this is provided then the picker will act as a controlled component.
     */
   var selectedItems: js.UndefOr[js.Array[T]] = js.undefined
   /**

@@ -10,8 +10,8 @@ object retain extends js.Object {
   /**
     * Duplicates a JavaScript wrapper for later use outside replacement method.
     *
-    * @param handle An existing wrapper retrieved from `this` in replacement method.
+    * @param obj An existing wrapper retrieved from `this` in replacement method.
     */
-  def apply(obj: Wrapper): Wrapper = js.native
+  def apply[T /* <: Members[T] */](obj: Wrapper[T]): Wrapper[T] = js.native
 }
 

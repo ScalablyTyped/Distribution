@@ -1,5 +1,6 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.PartialDataTitleFont
 import typings.plotlyJs.PartialFont
 import typings.plotlyJs.plotlyJsBooleans.`false`
 import typings.plotlyJs.plotlyJsBooleans.`true`
@@ -9,6 +10,18 @@ import typings.plotlyJs.plotlyJsStrings.SI
 import typings.plotlyJs.plotlyJsStrings._empty
 import typings.plotlyJs.plotlyJsStrings.`category ascending`
 import typings.plotlyJs.plotlyJsStrings.`category descending`
+import typings.plotlyJs.plotlyJsStrings.`max ascending`
+import typings.plotlyJs.plotlyJsStrings.`max descending`
+import typings.plotlyJs.plotlyJsStrings.`mean ascending`
+import typings.plotlyJs.plotlyJsStrings.`mean descending`
+import typings.plotlyJs.plotlyJsStrings.`median ascending`
+import typings.plotlyJs.plotlyJsStrings.`median descending`
+import typings.plotlyJs.plotlyJsStrings.`min ascending`
+import typings.plotlyJs.plotlyJsStrings.`min descending`
+import typings.plotlyJs.plotlyJsStrings.`sum ascending`
+import typings.plotlyJs.plotlyJsStrings.`sum descending`
+import typings.plotlyJs.plotlyJsStrings.`total ascending`
+import typings.plotlyJs.plotlyJsStrings.`total descending`
 import typings.plotlyJs.plotlyJsStrings.all
 import typings.plotlyJs.plotlyJsStrings.allticks
 import typings.plotlyJs.plotlyJsStrings.array
@@ -45,7 +58,7 @@ object SceneAxis {
     backgroundcolor: Color,
     calendar: Calendar,
     categoryarray: js.Array[_],
-    categoryorder: trace | (`category ascending`) | (`category descending`) | array,
+    categoryorder: trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`),
     color: Color,
     dtick: Double | String,
     exponentformat: none | e_ | E | power | SI | B,
@@ -84,7 +97,7 @@ object SceneAxis {
     ticktext: js.Array[String],
     tickvals: js.Array[_],
     tickwidth: Double,
-    title: String,
+    title: String | PartialDataTitleFont,
     titlefont: PartialFont,
     `type`: AxisType,
     visible: Boolean,

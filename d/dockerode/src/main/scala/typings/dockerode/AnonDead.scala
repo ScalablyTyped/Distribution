@@ -9,6 +9,7 @@ trait AnonDead extends js.Object {
   var Error: String
   var ExitCode: Double
   var FinishedAt: String
+  var Health: js.UndefOr[AnonFailingStreak] = js.undefined
   var OOMKilled: Boolean
   var Paused: Boolean
   var Pid: Double
@@ -31,10 +32,11 @@ object AnonDead {
     Restarting: Boolean,
     Running: Boolean,
     StartedAt: String,
-    Status: String
+    Status: String,
+    Health: AnonFailingStreak = null
   ): AnonDead = {
     val __obj = js.Dynamic.literal(Dead = Dead.asInstanceOf[js.Any], Error = Error.asInstanceOf[js.Any], ExitCode = ExitCode.asInstanceOf[js.Any], FinishedAt = FinishedAt.asInstanceOf[js.Any], OOMKilled = OOMKilled.asInstanceOf[js.Any], Paused = Paused.asInstanceOf[js.Any], Pid = Pid.asInstanceOf[js.Any], Restarting = Restarting.asInstanceOf[js.Any], Running = Running.asInstanceOf[js.Any], StartedAt = StartedAt.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-  
+    if (Health != null) __obj.updateDynamic("Health")(Health.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnonDead]
   }
 }

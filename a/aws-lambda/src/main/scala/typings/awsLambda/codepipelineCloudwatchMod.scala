@@ -1,6 +1,6 @@
 package typings.awsLambda
 
-import typings.awsLambda.handerMod.Handler
+import typings.awsLambda.handlerMod.Handler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

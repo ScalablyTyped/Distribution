@@ -6,7 +6,7 @@ import typings.stellarSdk.serverApiMod.ServerApi.CollectionPage
 import typings.stellarSdk.stellarSdkStrings.asc
 import typings.stellarSdk.stellarSdkStrings.desc
 import typings.stellarSdk.stellarSdkStrings.transactions
-import typings.urijs.uri.URI
+import typings.urijs.mod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -142,9 +142,6 @@ object rechartsStrings {
   sealed trait `ease-out` extends AnimationEasingType
   
   @js.native
-  sealed trait enableBackground extends PickedCSSStyleDeclarationKeys
-  
-  @js.native
   sealed trait end
     extends PositionType
        with ReferenceLinePosition
@@ -190,9 +187,6 @@ object rechartsStrings {
   
   @js.native
   sealed trait geometricPrecision extends js.Object
-  
-  @js.native
-  sealed trait glyphOrientationHorizontal extends PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait glyphOrientationVertical extends PickedCSSStyleDeclarationKeys
@@ -545,8 +539,6 @@ object rechartsStrings {
   @scala.inline
   def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
   @scala.inline
-  def enableBackground: enableBackground = "enableBackground".asInstanceOf[enableBackground]
-  @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def expand: expand = "expand".asInstanceOf[expand]
@@ -576,8 +568,6 @@ object rechartsStrings {
   def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
   @scala.inline
   def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
-  @scala.inline
-  def glyphOrientationHorizontal: glyphOrientationHorizontal = "glyphOrientationHorizontal".asInstanceOf[glyphOrientationHorizontal]
   @scala.inline
   def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chocolatechipjs"
-version := "4.0-dt-20190322Z-b63435"
+version := "4.0-dt-20200226Z-b63435"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

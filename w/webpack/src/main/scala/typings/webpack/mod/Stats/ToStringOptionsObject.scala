@@ -26,6 +26,7 @@ object ToStringOptionsObject {
     cached: js.UndefOr[Boolean] = js.undefined,
     cachedAssets: js.UndefOr[Boolean] = js.undefined,
     children: js.UndefOr[Boolean] = js.undefined,
+    chunkGroups: js.UndefOr[Boolean] = js.undefined,
     chunkModules: js.UndefOr[Boolean] = js.undefined,
     chunkOrigins: js.UndefOr[Boolean] = js.undefined,
     chunks: js.UndefOr[Boolean] = js.undefined,
@@ -65,6 +66,7 @@ object ToStringOptionsObject {
     if (!js.isUndefined(cached)) __obj.updateDynamic("cached")(cached.asInstanceOf[js.Any])
     if (!js.isUndefined(cachedAssets)) __obj.updateDynamic("cachedAssets")(cachedAssets.asInstanceOf[js.Any])
     if (!js.isUndefined(children)) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(chunkGroups)) __obj.updateDynamic("chunkGroups")(chunkGroups.asInstanceOf[js.Any])
     if (!js.isUndefined(chunkModules)) __obj.updateDynamic("chunkModules")(chunkModules.asInstanceOf[js.Any])
     if (!js.isUndefined(chunkOrigins)) __obj.updateDynamic("chunkOrigins")(chunkOrigins.asInstanceOf[js.Any])
     if (!js.isUndefined(chunks)) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])

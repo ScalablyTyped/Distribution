@@ -16,6 +16,12 @@ trait CreateRouteInput extends js.Object {
     */
   var meshName: ResourceName = js.native
   /**
+    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then
+    the account that you specify must share the mesh with your account before you can create 
+    the resource in the service mesh. For more information about mesh sharing, see Working with Shared Meshes.
+    */
+  var meshOwner: js.UndefOr[AccountId] = js.native
+  /**
     * The name to use for the route.
     */
   var routeName: ResourceName = js.native
@@ -31,7 +37,8 @@ trait CreateRouteInput extends js.Object {
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
-    * The name of the virtual router in which to create the route.
+    * The name of the virtual router in which to create the route. If the virtual router is in a shared mesh,
+    then you must be the owner of the virtual router resource.
     */
   var virtualRouterName: ResourceName = js.native
 }
@@ -44,10 +51,12 @@ object CreateRouteInput {
     spec: RouteSpec,
     virtualRouterName: ResourceName,
     clientToken: String = null,
+    meshOwner: AccountId = null,
     tags: TagList = null
   ): CreateRouteInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], routeName = routeName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], virtualRouterName = virtualRouterName.asInstanceOf[js.Any])
     if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
+    if (meshOwner != null) __obj.updateDynamic("meshOwner")(meshOwner.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRouteInput]
   }

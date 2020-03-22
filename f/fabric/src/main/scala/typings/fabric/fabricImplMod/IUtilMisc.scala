@@ -13,6 +13,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IUtilMisc extends js.Object {
   /**
+  	 * Clear char widths cache for the given font family or all the cache if no
+  	 * fontFamily is specified.
+  	 * Use it if you know you are loading fonts in a lazy way and you are not waiting
+  	 * for custom fonts to load properly when adding text objects to the canvas.
+  	 * If a text object is added when its own font is not loaded yet, you will get wrong
+  	 * measurement and so wrong bounding boxes.
+  	 * After the font cache is cleared, either change the textObject text content or call
+  	 * initDimensions() to trigger a recalculation
+  	 * @memberOf fabric.util
+  	 * @param {String} [fontFamily] font family to clear
+  	 */
+  def clearFabricFontCache(): Unit = js.native
+  def clearFabricFontCache(fontFamily: String): Unit = js.native
+  /**
   	 * @param receiver Object implementing `clipTo` method
   	 * @param ctx Context to clip
   	 */

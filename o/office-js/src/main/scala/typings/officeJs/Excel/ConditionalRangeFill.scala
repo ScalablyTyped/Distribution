@@ -30,7 +30,6 @@ class ConditionalRangeFill () extends ClientObject {
   @JSName("context")
   var context_ConditionalRangeFill: RequestContext = js.native
   /**
-    *
     * Resets the fill.
     *
     * [Api set: ExcelApi 1.6]

@@ -13,7 +13,7 @@ trait ApplicationVersionState extends js.Object {
   /**
     * Name of the Beanstalk Application the version is associated with.
     */
-  val application: js.UndefOr[Input[Application]] = js.native
+  val application: js.UndefOr[Input[String | Application]] = js.native
   /**
     * The ARN assigned by AWS for this Elastic Beanstalk Application.
     */
@@ -48,7 +48,7 @@ trait ApplicationVersionState extends js.Object {
 object ApplicationVersionState {
   @scala.inline
   def apply(
-    application: Input[Application] = null,
+    application: Input[String | Application] = null,
     arn: Input[String] = null,
     bucket: Input[String | Bucket] = null,
     description: Input[String] = null,

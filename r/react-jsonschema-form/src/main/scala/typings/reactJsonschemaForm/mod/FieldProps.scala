@@ -146,7 +146,7 @@ trait FieldProps[T]
   var formData: T = js.native
   var hidden: js.UndefOr[Boolean] = js.native
   var id: js.UndefOr[String] = js.native
-  var idSchema: IdSchema = js.native
+  var idSchema: IdSchema[_] = js.native
   var inlist: js.UndefOr[js.Any] = js.native
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
   var is: js.UndefOr[String] = js.native

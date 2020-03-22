@@ -7,7 +7,6 @@ import typings.csstype.mod.FlexProperty
 import typings.csstype.mod.FlexWrapProperty
 import typings.csstype.mod.GlobalsNumber
 import typings.csstype.mod.JustifyContentProperty
-import typings.csstype.mod.OpacityProperty
 import typings.csstype.mod.WidthProperty
 import typings.react.AnonHtml
 import typings.react.mod.AnimationEvent
@@ -454,7 +453,7 @@ trait FlexProps extends js.Object {
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
     */
-  var opacity: js.UndefOr[ResponsiveValue[OpacityProperty, RequiredTheme]] = js.undefined
+  var opacity: js.UndefOr[ResponsiveValue[GlobalsNumber, RequiredTheme]] = js.undefined
   var open: js.UndefOr[Boolean] = js.undefined
   var optimum: js.UndefOr[Double] = js.undefined
   /**
@@ -806,7 +805,7 @@ object FlexProps {
     onVolumeChange: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onWaiting: SyntheticEvent[HTMLDivElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLDivElement] => Unit = null,
-    opacity: ResponsiveValue[OpacityProperty, RequiredTheme] = null,
+    opacity: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,
     open: js.UndefOr[Boolean] = js.undefined,
     optimum: Int | Double = null,
     order: ResponsiveValue[GlobalsNumber, RequiredTheme] = null,

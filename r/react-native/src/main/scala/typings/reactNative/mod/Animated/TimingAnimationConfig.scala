@@ -9,13 +9,13 @@ trait TimingAnimationConfig extends AnimationConfig {
   var delay: js.UndefOr[Double] = js.undefined
   var duration: js.UndefOr[Double] = js.undefined
   var easing: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
-  var toValue: Double | AnimatedValue | AnonX | AnimatedValueXY
+  var toValue: Double | AnimatedValue | AnonX | AnimatedValueXY | AnimatedInterpolation
 }
 
 object TimingAnimationConfig {
   @scala.inline
   def apply(
-    toValue: Double | AnimatedValue | AnonX | AnimatedValueXY,
+    toValue: Double | AnimatedValue | AnonX | AnimatedValueXY | AnimatedInterpolation,
     delay: Int | Double = null,
     duration: Int | Double = null,
     easing: /* value */ Double => Double = null,

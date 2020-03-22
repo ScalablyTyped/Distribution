@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html5plus"
-version := "1.0-dt-20190306Z-9515e1"
+version := "1.0-dt-20200226Z-9515e1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

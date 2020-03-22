@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google_dot_analytics"
-version := "0.0-unknown-dt-20190605Z-8709e2"
+version := "0.0-unknown-dt-20200225Z-8709e2"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

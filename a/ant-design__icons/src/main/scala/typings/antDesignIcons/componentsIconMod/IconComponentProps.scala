@@ -5,6 +5,7 @@ import typings.react.mod.ComponentType
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
 import typings.react.mod.SVGProps
 import typings.std.HTMLElement
 import typings.std.SVGSVGElement
@@ -22,6 +23,7 @@ object IconComponentProps {
   @scala.inline
   def apply(
     ariaLabel: String = null,
+    children: ReactNode = null,
     className: String = null,
     component: ComponentType[CustomIconComponentProps | SVGProps[SVGSVGElement]] = null,
     onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
@@ -36,6 +38,7 @@ object IconComponentProps {
   ): IconComponentProps = {
     val __obj = js.Dynamic.literal()
     if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))

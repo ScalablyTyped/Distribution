@@ -20,6 +20,12 @@ trait GanttPointOptionsObject extends js.Object {
     */
   var completed: js.UndefOr[Double | XrangePointPartialFillOptionsObject] = js.undefined
   /**
+    * (Gantt) A reserved subspace to store options and values for customized
+    * functionality. Here you can add additional data for your own event
+    * callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[_]] = js.undefined
+  /**
     * (Gantt) The ID of the point (task) that this point depends on in Gantt
     * charts. Aliases connect. Can also be an object, specifying further
     * connecting options between the points. Multiple connections can be
@@ -89,6 +95,7 @@ object GanttPointOptionsObject {
     accessibility: PointAccessibilityOptionsObject = null,
     collapsed: js.UndefOr[Boolean] = js.undefined,
     completed: Double | XrangePointPartialFillOptionsObject = null,
+    custom: Dictionary[_] = null,
     dependency: String | XrangePointConnectorsOptionsObject | (js.Array[String | XrangePointConnectorsOptionsObject]) = null,
     description: String = null,
     dragDrop: SeriesLineDataDragDropOptions = null,
@@ -106,6 +113,7 @@ object GanttPointOptionsObject {
     if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
     if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
     if (dependency != null) __obj.updateDynamic("dependency")(dependency.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])

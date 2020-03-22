@@ -1,6 +1,6 @@
 package typings.materialUiCore.dialogContentDialogContentMod
 
-import typings.materialUiCore.PartialClassNameMapDialogContentClassKey
+import typings.materialUiCore.PartialClassNameMapDialogRoot
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -145,7 +145,7 @@ trait DialogContentProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapDialogContentClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapDialogRoot] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -325,7 +325,7 @@ object DialogContentProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapDialogContentClassKey = null,
+    classes: PartialClassNameMapDialogRoot = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

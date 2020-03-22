@@ -23,7 +23,7 @@ trait ReplicationTaskStats extends js.Object {
     */
   var FullLoadProgressPercent: js.UndefOr[Integer] = js.native
   /**
-    * The date the the replication task full load was started.
+    * The date the replication task full load was started.
     */
   var FullLoadStartDate: js.UndefOr[TStamp] = js.native
   /**

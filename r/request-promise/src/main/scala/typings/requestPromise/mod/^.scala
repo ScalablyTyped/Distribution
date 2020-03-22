@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("request-promise", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[RequestPromiseAPI]
+object ^
+  extends TopLevel[RequestPromiseAPI[js.Any]]
 

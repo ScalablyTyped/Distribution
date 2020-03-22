@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ObjectSchema[T /* <: js.UndefOr[js.Object | Null] */] extends Schema[T] {
+  var fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in keyof T ]: yup.yup.Schema<T[k]>}
+    */ typings.yup.yupStrings.ObjectSchema with T = js.native
   def camelCase(): ObjectSchema[T] = js.native
   def concat[U /* <: js.Object */](schema: ObjectSchema[U]): ObjectSchema[T with U] = js.native
   def constantCase(): ObjectSchema[T] = js.native

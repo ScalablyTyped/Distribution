@@ -5,6 +5,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import typings.highcharts.mod.AnimationOptionsObject
+import typings.highcharts.mod.AnnotationControlPointOptionsObject
+import typings.highcharts.mod.AnnotationControllable
 import typings.highcharts.mod.AnnotationsOptions
 import typings.highcharts.mod.Axis
 import typings.highcharts.mod.AxisOptions
@@ -34,8 +36,9 @@ import typings.highcharts.mod.TimeFormatCallbackFunction
 import typings.highcharts.mod.TimeOptions
 import typings.highcharts.mod.Time_
 import typings.highcharts.mod.TooltipOptions
-import typings.highcharts.mod.WrapProceedFunction
+import typings.std.Element
 import typings.std.Event_
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,9 +50,15 @@ trait TypeofHighcharts extends js.Object {
     /* userOptions */ AnnotationsOptions, 
     typings.highcharts.mod.Annotation
   ] = js.native
+  var AnnotationControlPoint: Instantiable3[
+    /* chart */ Chart_, 
+    /* target */ AnnotationControllable, 
+    /* options */ AnnotationControlPointOptionsObject, 
+    typings.highcharts.mod.AnnotationControlPoint
+  ] = js.native
   var Axis: Instantiable2[/* chart */ Chart_, /* options */ AxisOptions, typings.highcharts.mod.Axis] = js.native
   var Chart: Instantiable1[/* options */ Options, Chart_] = js.native
-  var Color: Instantiable1[/* input */ ColorType, Color_] = js.native
+  var Color: TypeofColor = js.native
   var ColorAxis: Instantiable2[
     /* chart */ Chart_, 
     /* userOptions */ ColorAxisOptions, 
@@ -74,6 +83,7 @@ trait TypeofHighcharts extends js.Object {
   var dateFormats: Dictionary[TimeFormatCallbackFunction] = js.native
   var defaultOptions: Options = js.native
   var time: Time_ = js.native
+  var wrap: js.Any = js.native
   def addEvent[T](el: T, `type`: String, fn: js.Function): js.Function = js.native
   def addEvent[T](el: T, `type`: String, fn: js.Function, options: EventOptionsObject): js.Function = js.native
   def addEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): js.Function = js.native
@@ -160,10 +170,8 @@ trait TypeofHighcharts extends js.Object {
   def fireEvent[T](el: T, `type`: String, eventArguments: Event_): Unit = js.native
   def fireEvent[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: js.Function): Unit = js.native
   def fireEvent[T](el: T, `type`: String, eventArguments: Event_, defaultFunction: EventCallbackFunction[T]): Unit = js.native
-  def format(str: String, ctx: js.Any): String = js.native
-  def format(str: String, ctx: js.Any, chart: Chart_): String = js.native
-  def formatSingle(format: String, `val`: js.Any): String = js.native
-  def formatSingle(format: String, `val`: js.Any, chart: Chart_): String = js.native
+  def format(str: String, ctx: Record[String, _]): String = js.native
+  def format(str: String, ctx: Record[String, _], chart: Chart_): String = js.native
   def getMagnitude(num: Double): Double = js.native
   def getOptions(): Options = js.native
   def getStyle(el: HTMLDOMElement, prop: String): Double | String = js.native
@@ -201,7 +209,7 @@ trait TypeofHighcharts extends js.Object {
   def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
   def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = js.native
   def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = js.native
-  def offset(el: HTMLDOMElement): OffsetObject = js.native
+  def offset(el: Element): OffsetObject = js.native
   def pad(number: Double): String = js.native
   def pad(number: Double, length: Double): String = js.native
   def pad(number: Double, length: Double, padder: String): String = js.native
@@ -245,6 +253,5 @@ trait TypeofHighcharts extends js.Object {
   def syncTimeout(fn: js.Function, delay: Double): Double = js.native
   def syncTimeout(fn: js.Function, delay: Double, context: js.Any): Double = js.native
   def uniqueKey(): String = js.native
-  def wrap(obj: js.Any, method: String, func: WrapProceedFunction): Unit = js.native
 }
 

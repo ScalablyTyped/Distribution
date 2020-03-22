@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "incremental-dom"
-version := "0.5-dt-20190322Z-d1e8a5"
+version := "0.5-dt-20200225Z-d1e8a5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

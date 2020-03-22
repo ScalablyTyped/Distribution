@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ion-rangeslider"
-version := "2.3-dt-20190716Z-cb0ade"
+version := "2.3-dt-20200225Z-cb0ade"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

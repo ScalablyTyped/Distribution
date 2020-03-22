@@ -25,6 +25,7 @@ trait ContainerCreateOptions extends js.Object {
   var OpenStdin: js.UndefOr[Boolean] = js.undefined
   var StdinOnce: js.UndefOr[Boolean] = js.undefined
   var StopSignal: js.UndefOr[String] = js.undefined
+  var StopTimeout: js.UndefOr[Double] = js.undefined
   var Tty: js.UndefOr[Boolean] = js.undefined
   var User: js.UndefOr[String] = js.undefined
   var Volumes: js.UndefOr[StringDictionary[js.Object]] = js.undefined
@@ -53,6 +54,7 @@ object ContainerCreateOptions {
     OpenStdin: js.UndefOr[Boolean] = js.undefined,
     StdinOnce: js.UndefOr[Boolean] = js.undefined,
     StopSignal: String = null,
+    StopTimeout: Int | Double = null,
     Tty: js.UndefOr[Boolean] = js.undefined,
     User: String = null,
     Volumes: StringDictionary[js.Object] = null,
@@ -78,6 +80,7 @@ object ContainerCreateOptions {
     if (!js.isUndefined(OpenStdin)) __obj.updateDynamic("OpenStdin")(OpenStdin.asInstanceOf[js.Any])
     if (!js.isUndefined(StdinOnce)) __obj.updateDynamic("StdinOnce")(StdinOnce.asInstanceOf[js.Any])
     if (StopSignal != null) __obj.updateDynamic("StopSignal")(StopSignal.asInstanceOf[js.Any])
+    if (StopTimeout != null) __obj.updateDynamic("StopTimeout")(StopTimeout.asInstanceOf[js.Any])
     if (!js.isUndefined(Tty)) __obj.updateDynamic("Tty")(Tty.asInstanceOf[js.Any])
     if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
     if (Volumes != null) __obj.updateDynamic("Volumes")(Volumes.asInstanceOf[js.Any])

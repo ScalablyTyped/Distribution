@@ -11,7 +11,7 @@ trait InputBoxOptions extends js.Object {
   		 */
   var ignoreFocusOut: js.UndefOr[Boolean] = js.undefined
   /**
-  		 * Set to `true` to show a password prompt that will not show the typed value.
+  		 * Controls if a password input is shown. Password input hides the typed text.
   		 */
   var password: js.UndefOr[Boolean] = js.undefined
   /**

@@ -167,6 +167,12 @@ trait PhoneInputProps extends js.Object {
     */
   var countries: js.UndefOr[js.Array[String]] = js.undefined
   /**
+    * If country is specified then the phone number can only be input in "national"
+    * (not "international") format, and will be parsed as a phone number belonging
+    * to the country. Example: country="US"
+    */
+  var country: js.UndefOr[String] = js.undefined
+  /**
     * Can be used to place some countries on top of the list of country <select/> options.
     *  - "|" — inserts a separator.
     *  - "..." — means "the rest of the countries" (can be omitted, in which case it will
@@ -243,6 +249,17 @@ trait PhoneInputProps extends js.Object {
     ForwardRefExoticComponent[InputHTMLAttributes[HTMLInputElement] with RefAttributes[_]]
   ] = js.undefined
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
+  /**
+    * If country is specified and international property is true then the phone number can only be input
+    * in "international" format for that country, but without "country calling code" part.
+    * For example, if country is "US" and international property is not passed then the phone number can
+    * only be input in the "national" format for US ((213) 373-4253). But if country is "US" and
+    * international property is true then the phone number will be input in the "international" format
+    * for US (213 373 4253) without "country calling code" part (+1). This could be used for implementing
+    * phone number input components that show "country calling code" part before the input field and then
+    * the user can fill in the rest of their phone number in the input field.
+    */
+  var international: js.UndefOr[Boolean] = js.undefined
   /**
     * If `country` property is passed along with `international={true}` property
     * then the phone number will be input in "international" format for that `country`
@@ -484,6 +501,7 @@ object PhoneInputProps {
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     countries: js.Array[String] = null,
+    country: String = null,
     countryOptionsOrder: js.Array[String] = null,
     countrySelectComponent: ComponentType[CountrySelectComponentProps] = null,
     countrySelectProps: Int | Double = null,
@@ -514,6 +532,7 @@ object PhoneInputProps {
     inputClassName: String = null,
     inputComponent: ForwardRefExoticComponent[InputHTMLAttributes[HTMLInputElement] with RefAttributes[_]] = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
+    international: js.UndefOr[Boolean] = js.undefined,
     internationalIcon: ComponentType[js.Object] = null,
     is: String = null,
     itemID: String = null,
@@ -710,6 +729,7 @@ object PhoneInputProps {
     if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (countries != null) __obj.updateDynamic("countries")(countries.asInstanceOf[js.Any])
+    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     if (countryOptionsOrder != null) __obj.updateDynamic("countryOptionsOrder")(countryOptionsOrder.asInstanceOf[js.Any])
     if (countrySelectComponent != null) __obj.updateDynamic("countrySelectComponent")(countrySelectComponent.asInstanceOf[js.Any])
     if (countrySelectProps != null) __obj.updateDynamic("countrySelectProps")(countrySelectProps.asInstanceOf[js.Any])
@@ -740,6 +760,7 @@ object PhoneInputProps {
     if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
     if (inputComponent != null) __obj.updateDynamic("inputComponent")(inputComponent.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(international)) __obj.updateDynamic("international")(international.asInstanceOf[js.Any])
     if (internationalIcon != null) __obj.updateDynamic("internationalIcon")(internationalIcon.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
     if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])

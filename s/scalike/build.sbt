@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scalike"
-version := "0.0-unknown-dt-20190322Z-a68e41"
+version := "0.0-unknown-dt-20200225Z-a68e41"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

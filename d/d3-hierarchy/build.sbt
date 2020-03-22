@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-hierarchy"
-version := "1.1-dt-20190212Z-edb7b1"
+version := "1.1-dt-20200225Z-edb7b1"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

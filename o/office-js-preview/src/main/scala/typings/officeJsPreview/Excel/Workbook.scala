@@ -247,7 +247,6 @@ class Workbook () extends ClientObject {
     */
   val worksheets: WorksheetCollection = js.native
   /**
-    *
     * Close current workbook.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -262,42 +261,36 @@ class Workbook () extends ClientObject {
   @JSName("close")
   def close_SkipSave(closeBehavior: SkipSave): Unit = js.native
   /**
-    *
     * Gets the currently active cell from the workbook.
     *
     * [Api set: ExcelApi 1.7]
     */
   def getActiveCell(): Range = js.native
   /**
-    *
     * Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is thrown.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getActiveChart(): Chart = js.native
   /**
-    *
     * Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getActiveChartOrNullObject(): Chart = js.native
   /**
-    *
     * Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getActiveSlicer(): Slicer = js.native
   /**
-    *
     * Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
     *
     * [Api set: ExcelApi 1.10]
     */
   def getActiveSlicerOrNullObject(): Slicer = js.native
   /**
-    *
     * True if the workbook is being edited by multiple users (co-authoring).
     Please be aware there might be some delay between when the workbook status changes and when the changes are reflected on the result of the method.
     *
@@ -305,14 +298,12 @@ class Workbook () extends ClientObject {
     */
   def getIsActiveCollabSession(): ClientResult[Boolean] = js.native
   /**
-    *
     * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
     *
     * [Api set: ExcelApi 1.1]
     */
   def getSelectedRange(): Range = js.native
   /**
-    *
     * Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a RangeAreas object that represents all the selected ranges.
     *
     * [Api set: ExcelApi 1.9]
@@ -329,7 +320,6 @@ class Workbook () extends ClientObject {
   def load(propertyNames: String): Workbook = js.native
   def load(propertyNames: js.Array[String]): Workbook = js.native
   /**
-    *
     * Save current workbook.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -358,15 +348,6 @@ class Workbook () extends ClientObject {
   def set(properties: WorkbookUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Workbook): Unit = js.native
-  /**
-    *
-    * Occurs when a WAC operation occurs.
-    *
-    * [Api set: WACOperationEvents 1.1]
-    *
-    * @eventproperty
-    * @beta
-    */
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.

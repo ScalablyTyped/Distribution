@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webcrypto"
-version := "0.0-unknown-dt-20190322Z-ad0a92"
+version := "0.0-unknown-dt-20200227Z-ad0a92"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

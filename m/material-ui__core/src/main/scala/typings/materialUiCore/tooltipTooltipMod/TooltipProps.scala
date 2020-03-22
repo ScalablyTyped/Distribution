@@ -1,6 +1,6 @@
 package typings.materialUiCore.tooltipTooltipMod
 
-import typings.materialUiCore.PartialClassNameMapTooltipClassKey
+import typings.materialUiCore.PartialClassNameMapToolti
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`bottom-end`
 import typings.materialUiCore.materialUiCoreStrings.`bottom-start`
@@ -164,7 +164,7 @@ trait TooltipProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: ReactElement = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTooltipClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapToolti] = js.native
   var color: js.UndefOr[String] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -361,7 +361,7 @@ object TooltipProps {
     autoCorrect: String = null,
     autoSave: String = null,
     className: String = null,
-    classes: PartialClassNameMapTooltipClassKey = null,
+    classes: PartialClassNameMapToolti = null,
     color: String = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

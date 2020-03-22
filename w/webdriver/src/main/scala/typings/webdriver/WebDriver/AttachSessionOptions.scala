@@ -2,6 +2,8 @@ package typings.webdriver.WebDriver
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.WritableStream
+import typings.webdriver.HTTPRequestOptions
+import typings.webdriver.HTTPResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,6 +30,8 @@ object AttachSessionOptions {
     port: Int | Double = null,
     protocol: String = null,
     queryParams: StringDictionary[String] = null,
+    transformRequest: /* requestOptions */ HTTPRequestOptions => HTTPRequestOptions = null,
+    transformResponse: (/* response */ HTTPResponse, /* requestOptions */ HTTPRequestOptions) => HTTPResponse = null,
     user: String = null
   ): AttachSessionOptions = {
     val __obj = js.Dynamic.literal(sessionId = sessionId.asInstanceOf[js.Any])
@@ -44,6 +48,8 @@ object AttachSessionOptions {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
+    if (transformResponse != null) __obj.updateDynamic("transformResponse")(js.Any.fromFunction2(transformResponse))
     if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachSessionOptions]
   }

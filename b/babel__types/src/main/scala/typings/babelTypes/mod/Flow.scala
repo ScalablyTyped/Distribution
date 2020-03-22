@@ -43,6 +43,7 @@ import typings.babelTypes.babelTypesStrings.OpaqueType
 import typings.babelTypes.babelTypesStrings.QualifiedTypeIdentifier
 import typings.babelTypes.babelTypesStrings.StringLiteralTypeAnnotation
 import typings.babelTypes.babelTypesStrings.StringTypeAnnotation
+import typings.babelTypes.babelTypesStrings.SymbolTypeAnnotation
 import typings.babelTypes.babelTypesStrings.ThisTypeAnnotation
 import typings.babelTypes.babelTypesStrings.TupleTypeAnnotation
 import typings.babelTypes.babelTypesStrings.TypeAlias
@@ -108,6 +109,7 @@ import scala.scalajs.js.annotation._
   - typings.babelTypes.mod.QualifiedTypeIdentifier_
   - typings.babelTypes.mod.StringLiteralTypeAnnotation_
   - typings.babelTypes.mod.StringTypeAnnotation_
+  - typings.babelTypes.mod.SymbolTypeAnnotation_
   - typings.babelTypes.mod.ThisTypeAnnotation_
   - typings.babelTypes.mod.TupleTypeAnnotation_
   - typings.babelTypes.mod.TypeofTypeAnnotation_
@@ -605,6 +607,26 @@ object Flow {
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (specifiers != null) __obj.updateDynamic("specifiers")(specifiers.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Flow]
+  }
+  @scala.inline
+  def SymbolTypeAnnotation_(
+    `type`: SymbolTypeAnnotation,
+    end: Int | Double = null,
+    innerComments: js.Array[Comment] = null,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    start: Int | Double = null,
+    trailingComments: js.Array[Comment] = null
+  ): Flow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flow]

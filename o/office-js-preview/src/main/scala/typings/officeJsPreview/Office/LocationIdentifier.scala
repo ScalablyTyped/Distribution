@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Represents the id of a location.
+  * Represents the ID of a location.
   * 
   * [Api set: Mailbox 1.8]
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait LocationIdentifier extends js.Object {
   /**
-    * The location's unique id.
+    * The location's unique ID.
     * 
-    * For **Room** type, it's the room's email address.
+    * For `Room` type, it's the room's email address.
     * 
-    * For **Custom** type, it's the displayName.
+    * For `Custom` type, it's the `displayName`.
     */
   var id: String
   /**

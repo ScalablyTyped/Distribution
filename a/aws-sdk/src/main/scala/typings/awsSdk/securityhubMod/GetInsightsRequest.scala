@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetInsightsRequest extends js.Object {
   /**
-    * The ARNs of the insights to describe.
+    * The ARNs of the insights to describe. If you do not provide any insight ARNs, then GetInsights returns all of your custom insights. It does not return any managed insights.
     */
   var InsightArns: js.UndefOr[ArnList] = js.native
   /**

@@ -32,14 +32,12 @@ class PageBreak () extends ClientObject {
     */
   val rowIndex: Double = js.native
   /**
-    *
     * Deletes a page break object.
     *
     * [Api set: ExcelApi 1.9]
     */
   def delete(): Unit = js.native
   /**
-    *
     * Gets the first cell after the page break.
     *
     * [Api set: ExcelApi 1.9]

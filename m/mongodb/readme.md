@@ -1,7 +1,7 @@
 
 # Scala.js typings for mongodb
 
-Typings are for version 3.3
+Typings are for version 3.5
 
 ## Library description:
 The official MongoDB driver for Node.js

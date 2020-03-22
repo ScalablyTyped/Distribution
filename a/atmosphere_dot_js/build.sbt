@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atmosphere_dot_js"
-version := "v2.1.5-dt-20191206Z-8a5b37"
+version := "v2.1.5-dt-20200225Z-8a5b37"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

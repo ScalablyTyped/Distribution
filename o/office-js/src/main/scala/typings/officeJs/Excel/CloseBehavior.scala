@@ -18,7 +18,6 @@ sealed trait CloseBehavior extends js.Object
 @js.native
 object CloseBehavior extends js.Object {
   /**
-    *
     * Save the possible changes before closing the workbook.
     *
     */
@@ -26,7 +25,6 @@ object CloseBehavior extends js.Object {
   sealed trait save extends CloseBehavior
   
   /**
-    *
     * Discard the possible changes when closing the workbook.
     *
     */

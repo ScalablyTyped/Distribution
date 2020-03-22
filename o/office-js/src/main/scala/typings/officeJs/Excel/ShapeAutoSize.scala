@@ -18,7 +18,6 @@ sealed trait ShapeAutoSize extends js.Object
 @js.native
 object ShapeAutoSize extends js.Object {
   /**
-    *
     * A combination of automatic sizing schemes are used.
     *
     */
@@ -26,7 +25,6 @@ object ShapeAutoSize extends js.Object {
   sealed trait autoSizeMixed extends ShapeAutoSize
   
   /**
-    *
     * No autosizing.
     *
     */
@@ -34,7 +32,6 @@ object ShapeAutoSize extends js.Object {
   sealed trait autoSizeNone extends ShapeAutoSize
   
   /**
-    *
     * The shape is adjusted to fit the text.
     *
     */
@@ -42,7 +39,6 @@ object ShapeAutoSize extends js.Object {
   sealed trait autoSizeShapeToFitText extends ShapeAutoSize
   
   /**
-    *
     * The text is adjusted to fit the shape.
     *
     */

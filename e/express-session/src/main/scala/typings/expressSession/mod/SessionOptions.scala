@@ -3,6 +3,8 @@ package typings.expressSession.mod
 import typings.express.mod.Request_
 import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressSession.AnonDomain
+import typings.expressSession.expressSessionStrings.destroy
+import typings.expressSession.expressSessionStrings.keep
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +19,13 @@ trait SessionOptions extends js.Object {
   var saveUninitialized: js.UndefOr[Boolean] = js.undefined
   var secret: String | js.Array[String]
   var store: js.UndefOr[Store | MemoryStore] = js.undefined
-  var unset: js.UndefOr[String] = js.undefined
+  /**
+    * Control the result of unsetting req.session (through delete, setting to null, etc.).
+    * - 'destroy' The session will be destroyed (deleted) when the response ends.
+    * - 'keep' The session in the store will be kept, but modifications made during the request are ignored and not saved.
+    * @default 'keep'
+    */
+  var unset: js.UndefOr[destroy | keep] = js.undefined
 }
 
 object SessionOptions {
@@ -32,7 +40,7 @@ object SessionOptions {
     rolling: js.UndefOr[Boolean] = js.undefined,
     saveUninitialized: js.UndefOr[Boolean] = js.undefined,
     store: Store | MemoryStore = null,
-    unset: String = null
+    unset: destroy | keep = null
   ): SessionOptions = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
     if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])

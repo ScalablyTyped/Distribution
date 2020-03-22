@@ -1,7 +1,7 @@
 
 # Scala.js typings for dayzed
 
-Typings are for version 2.2
+Typings are for version 3.1
 
 ## Library description:
 Primitives to build simple, flexible, WAI-ARIA compliant React datepicker components.

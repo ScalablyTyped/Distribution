@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-wizard"
-version := "1.1.1-dt-20200102Z-e7f3ea"
+version := "1.1.1-dt-20200225Z-e7f3ea"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

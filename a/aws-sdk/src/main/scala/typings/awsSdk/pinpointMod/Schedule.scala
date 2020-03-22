@@ -27,7 +27,7 @@ trait Schedule extends js.Object {
     */
   var QuietTime: js.UndefOr[typings.awsSdk.pinpointMod.QuietTime] = js.native
   /**
-    * The scheduled time, in ISO 8601 format, when the campaign began or will begin.
+    * The scheduled time when the campaign began or will begin. Valid values are: IMMEDIATE, to start the campaign immediately; or, a specific time in ISO 8601 format.
     */
   var StartTime: string = js.native
   /**

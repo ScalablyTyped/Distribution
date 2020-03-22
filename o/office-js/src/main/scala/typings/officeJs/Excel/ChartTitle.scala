@@ -122,7 +122,6 @@ class ChartTitle () extends ClientObject {
     */
   val width: Double = js.native
   /**
-    *
     * Get the substring of a chart title. Line break '\n' also counts one character.
     *
     * [Api set: ExcelApi 1.7]
@@ -157,7 +156,6 @@ class ChartTitle () extends ClientObject {
   def set(properties: ChartTitleUpdateData): Unit = js.native
   def set(properties: ChartTitleUpdateData, options: UpdateOptions): Unit = js.native
   /**
-    *
     * Sets a string value that represents the formula of chart title using A1-style notation.
     *
     * [Api set: ExcelApi 1.7]

@@ -9,6 +9,25 @@ package object encodeMod {
   type AnchorValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.titleMod.TitleAnchor]
   type ArbitraryValueRef = typings.vegaTypings.encodeMod.NumericValueRef | typings.vegaTypings.encodeMod.ColorValueRef | typings.vegaTypings.encodeMod.ScaledValueRef[js.Any]
   type ArrayValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[js.Array[js.Any]]
+  /* Rewritten from type alias, can be one of: 
+    - scala.Null
+    - typings.vegaTypings.vegaTypingsStrings.multiply
+    - typings.vegaTypings.vegaTypingsStrings.screen
+    - typings.vegaTypings.vegaTypingsStrings.overlay
+    - typings.vegaTypings.vegaTypingsStrings.darken
+    - typings.vegaTypings.vegaTypingsStrings.lighten
+    - typings.vegaTypings.vegaTypingsStrings.`color-dodge`
+    - typings.vegaTypings.vegaTypingsStrings.`color-burn`
+    - typings.vegaTypings.vegaTypingsStrings.`hard-light`
+    - typings.vegaTypings.vegaTypingsStrings.`soft-light`
+    - typings.vegaTypings.vegaTypingsStrings.difference
+    - typings.vegaTypings.vegaTypingsStrings.exclusion
+    - typings.vegaTypings.vegaTypingsStrings.hue
+    - typings.vegaTypings.vegaTypingsStrings.saturation
+    - typings.vegaTypings.vegaTypingsStrings.color
+    - typings.vegaTypings.vegaTypingsStrings.luminosity
+  */
+  type Blend = typings.vegaTypings.encodeMod._Blend | scala.Null
   type BooleanValueRef = typings.vegaTypings.encodeMod.ScaledValueRef[scala.Boolean]
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.encodeMod.ScaledValueRef[typings.vegaTypings.colorMod.Color]

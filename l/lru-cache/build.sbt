@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lru-cache"
-version := "5.1-dt-20190222Z-4427f5"
+version := "5.1-dt-20200225Z-4427f5"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

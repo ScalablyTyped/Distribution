@@ -256,7 +256,7 @@ trait ConfigValues
   /** Use detected proxy settings when calling the `apm` command-line tool. */
   @JSName("core.useProxySettingsWhenCallingApm")
   var coreDotuseProxySettingsWhenCallingApm: Boolean
-  /** Experimental: Use the new Tree-sitter parsing system for supported languages. */
+  /** Use the new Tree-sitter parsing system for supported languages. */
   @JSName("core.useTreeSitterParsers")
   var coreDotuseTreeSitterParsers: Boolean
   /** List of names of installed packages which are not automatically updated. */

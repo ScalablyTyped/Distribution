@@ -1,6 +1,6 @@
 package typings.materialUiCore.fabFabMod
 
-import typings.materialUiCore.PartialClassNameMapFabClassKey
+import typings.materialUiCore.PartialClassNameMapFabCla
 import typings.materialUiCore.buttonBaseButtonBaseMod.ButtonBaseActions
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -163,7 +163,7 @@ trait FabProps extends js.Object {
   var centerRipple: js.UndefOr[Boolean] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapFabClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapFabCla] = js.native
   var color: js.UndefOr[Color] = js.native
   var component: js.UndefOr[ReactType[FabProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -375,7 +375,7 @@ object FabProps {
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapFabClassKey = null,
+    classes: PartialClassNameMapFabCla = null,
     color: Color = null,
     component: ReactType[FabProps] = null,
     contentEditable: Booleanish | inherit = null,

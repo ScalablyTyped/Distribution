@@ -7,22 +7,38 @@ import scala.scalajs.js.annotation._
 
 trait Style
   extends /* additionalProperty */ StringDictionary[js.Any] {
+  /** the alignment of the text */
   var alignment: js.UndefOr[Alignment] = js.undefined
+  /** the background color of the text */
   var background: js.UndefOr[js.Any] = js.undefined
+  /** whether to use bold text (default: false) */
   var bold: js.UndefOr[Boolean] = js.undefined
   var characterSpacing: js.UndefOr[Double] = js.undefined
+  /** the color of the text (color name e.g., ‘blue’ or hexadecimal color e.g., ‘#ff5500’) */
   var color: js.UndefOr[String] = js.undefined
+  /** optional space between columns */
   var columnGap: js.UndefOr[js.Any] = js.undefined
-  var decoration: js.UndefOr[js.Any] = js.undefined
+  /** the text decoration to applu (‘underline’ or ‘lineThrough’ or ‘overline’) */
+  var decoration: js.UndefOr[Decoration] = js.undefined
+  /** the color of the text decoration, see color */
   var decorationColor: js.UndefOr[String] = js.undefined
-  var decorationany: js.UndefOr[js.Any] = js.undefined
+  /** (‘dashed’ or ‘dotted’ or ‘double’ or ‘wavy’) */
+  var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
+  /** the background color of a table cell */
   var fillColor: js.UndefOr[String] = js.undefined
+  /** the background opacity of a table cell */
+  var fillOpacity: js.UndefOr[String] = js.undefined
+  /** name of the font */
   var font: js.UndefOr[js.Any] = js.undefined
   var fontFeatures: js.UndefOr[js.Any] = js.undefined
+  /** size of the font in pt */
   var fontSize: js.UndefOr[Double] = js.undefined
+  /** whether to use italic text (default: false) */
   var italics: js.UndefOr[Boolean] = js.undefined
   var leadingIndent: js.UndefOr[js.Any] = js.undefined
+  /** the line height (default: 1) */
   var lineHeight: js.UndefOr[Double] = js.undefined
+  /** the color of the bullets in a buletted list */
   var markerColor: js.UndefOr[String] = js.undefined
   var noWrap: js.UndefOr[Boolean] = js.undefined
 }
@@ -37,10 +53,11 @@ object Style {
     characterSpacing: Int | Double = null,
     color: String = null,
     columnGap: js.Any = null,
-    decoration: js.Any = null,
+    decoration: Decoration = null,
     decorationColor: String = null,
-    decorationany: js.Any = null,
+    decorationStyle: DecorationStyle = null,
     fillColor: String = null,
+    fillOpacity: String = null,
     font: js.Any = null,
     fontFeatures: js.Any = null,
     fontSize: Int | Double = null,
@@ -60,8 +77,9 @@ object Style {
     if (columnGap != null) __obj.updateDynamic("columnGap")(columnGap.asInstanceOf[js.Any])
     if (decoration != null) __obj.updateDynamic("decoration")(decoration.asInstanceOf[js.Any])
     if (decorationColor != null) __obj.updateDynamic("decorationColor")(decorationColor.asInstanceOf[js.Any])
-    if (decorationany != null) __obj.updateDynamic("decorationany")(decorationany.asInstanceOf[js.Any])
+    if (decorationStyle != null) __obj.updateDynamic("decorationStyle")(decorationStyle.asInstanceOf[js.Any])
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
     if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     if (fontFeatures != null) __obj.updateDynamic("fontFeatures")(fontFeatures.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])

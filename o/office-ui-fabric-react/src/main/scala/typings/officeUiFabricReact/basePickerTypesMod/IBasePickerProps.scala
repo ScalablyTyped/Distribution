@@ -45,9 +45,9 @@ trait IBasePickerProps[T]
     */
   var disabled: js.UndefOr[Boolean] = js.native
   /**
-    * Adds an additional alert for the currently selected suggestion. This prop should be set to true for IE11 and below, as it
-    * enables proper screen reader behavior for each suggestion (since aria-activedescendant does not work with IE11).
-    * It should not be set for modern browsers (Edge, Chrome).
+    * Adds an additional alert for the currently selected suggestion. This prop should be set to true for IE11 and below,
+    * as it enables proper screen reader behavior for each suggestion (since aria-activedescendant does not work
+    * with IE11). It should not be set for modern browsers (Edge, Chrome).
     * @defaultvalue false
     */
   var enableSelectedSuggestionAlert: js.UndefOr[Boolean] = js.native

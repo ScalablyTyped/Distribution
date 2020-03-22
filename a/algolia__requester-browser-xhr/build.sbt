@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "algolia__requester-browser-xhr"
-version := "4.0.3-241bfd"
+version := "4.1.0-67fd75"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "algolia__requester-common" % "4.0.3-aa83c9",
+  "org.scalablytyped" %%% "algolia__requester-common" % "4.1.0-6f63dd",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

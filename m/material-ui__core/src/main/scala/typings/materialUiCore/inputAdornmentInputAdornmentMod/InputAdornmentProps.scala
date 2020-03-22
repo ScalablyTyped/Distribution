@@ -1,6 +1,6 @@
 package typings.materialUiCore.inputAdornmentInputAdornmentMod
 
-import typings.materialUiCore.PartialClassNameMapInputAdornmentClassKey
+import typings.materialUiCore.PartialClassNameMapInputA
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -151,7 +151,7 @@ trait InputAdornmentProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapInputAdornmentClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapInputA] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[InputAdornmentProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -337,7 +337,7 @@ object InputAdornmentProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapInputAdornmentClassKey = null,
+    classes: PartialClassNameMapInputA = null,
     color: String = null,
     component: ReactType[InputAdornmentProps] = null,
     contentEditable: Booleanish | inherit = null,

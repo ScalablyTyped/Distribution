@@ -84,7 +84,6 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.reactTransitionGroup.AnonAppear
 import typings.std.Event_
 import typings.std.HTMLDivElement
 import scala.scalajs.js
@@ -153,7 +152,7 @@ trait PartialStepContentProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapStepContentClasskey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapStepCoLast] = js.native
   var color: js.UndefOr[String] = js.native
   var completed: js.UndefOr[Boolean] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -273,7 +272,7 @@ trait PartialStepContentProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   var tabIndex: js.UndefOr[Double] = js.native
   var title: js.UndefOr[String] = js.native
-  var transitionDuration: js.UndefOr[Double | AnonAppear | auto] = js.native
+  var transitionDuration: js.UndefOr[js.Any | auto] = js.native
   var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
@@ -342,7 +341,7 @@ object PartialStepContentProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapStepContentClasskey = null,
+    classes: PartialClassNameMapStepCoLast = null,
     color: String = null,
     completed: js.UndefOr[Boolean] = js.undefined,
     contentEditable: Booleanish | inherit = null,
@@ -462,7 +461,7 @@ object PartialStepContentProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
-    transitionDuration: Double | AnonAppear | auto = null,
+    transitionDuration: js.Any | auto = null,
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,

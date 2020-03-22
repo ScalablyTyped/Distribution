@@ -11,8 +11,12 @@ class Auth () extends js.Object {
   /* tslint:disable-next-line no-unnecessary-generics */
   def createUser[T](user: CreateUserParams[T]): js.Promise[CreateUserResponse] = js.native
   def exchange(params: ExchangeParams): js.Promise[String] = js.native
+  def loginWithEmail(params: LoginWithEmailParams): js.Promise[_] = js.native
+  def loginWithSMS(params: LoginWithSMSParams): js.Promise[_] = js.native
   def logoutUrl(params: LogoutParams): String = js.native
   def passwordRealm(params: PasswordRealmParams): js.Promise[PasswordRealmResponse] = js.native
+  def passwordlessWithEmail(params: PasswordlessWithEmailParams): js.Promise[_] = js.native
+  def passwordlessWithSMS(params: PasswordlessWithSMSParams): js.Promise[_] = js.native
   def refreshToken(params: RefreshTokenParams): js.Promise[_] = js.native
   def resetPassword(params: ResetPasswordParams): js.Promise[_] = js.native
   def revoke(params: RevokeParams): js.Promise[_] = js.native

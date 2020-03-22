@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_filtertable"
-version := "v1.5.7-dt-20190322Z-1fd894"
+version := "v1.5.7-dt-20200225Z-1fd894"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

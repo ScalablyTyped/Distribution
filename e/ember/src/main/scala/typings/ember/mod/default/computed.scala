@@ -62,6 +62,11 @@ object computed extends js.Object {
   def equal(dependentKey: java.lang.String, value: js.Any): typings.emberObject.computedMod.ComputedProperty[Boolean, Boolean] = js.native
   def filter(
     dependentKey: java.lang.String,
+    additionalDependentKeys: js.Array[java.lang.String],
+    callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
+  ): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def filter(
+    dependentKey: java.lang.String,
     callback: js.Function3[/* value */ js.Any, /* index */ Double, /* array */ js.Array[_], Boolean]
   ): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def filterBy(dependentKey: java.lang.String, propertyKey: java.lang.String): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
@@ -87,6 +92,16 @@ object computed extends js.Object {
   def readOnly(dependentKey: java.lang.String): typings.emberObject.computedMod.ComputedProperty[_, _] = js.native
   def reads(dependentKey: java.lang.String): typings.emberObject.computedMod.ComputedProperty[_, _] = js.native
   def setDiff(setAProperty: java.lang.String, setBProperty: java.lang.String): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def sort(
+    itemsKey: java.lang.String,
+    dependentKeys: js.Array[java.lang.String],
+    sortDefinition: java.lang.String
+  ): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
+  def sort(
+    itemsKey: java.lang.String,
+    dependentKeys: js.Array[java.lang.String],
+    sortDefinition: js.Function2[/* itemA */ js.Any, /* itemB */ js.Any, Double]
+  ): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def sort(itemsKey: java.lang.String, sortDefinition: java.lang.String): typings.emberObject.computedMod.ComputedProperty[js.Array[_], js.Array[_]] = js.native
   def sort(
     itemsKey: java.lang.String,

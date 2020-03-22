@@ -13,7 +13,7 @@ trait ApplicationVersionArgs extends js.Object {
   /**
     * Name of the Beanstalk Application the version is associated with.
     */
-  val application: Input[Application] = js.native
+  val application: Input[String | Application] = js.native
   /**
     * S3 bucket that contains the Application Version source bundle.
     */
@@ -44,7 +44,7 @@ trait ApplicationVersionArgs extends js.Object {
 object ApplicationVersionArgs {
   @scala.inline
   def apply(
-    application: Input[Application],
+    application: Input[String | Application],
     bucket: Input[String | Bucket],
     key: Input[String],
     description: Input[String] = null,

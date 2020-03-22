@@ -1,6 +1,6 @@
 package typings.materialUiCore.textareaMod
 
-import typings.materialUiCore.PartialClassNameMapTextareaClassKey
+import typings.materialUiCore.PartialClassNameMapTextar
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -149,7 +149,7 @@ trait TextareaProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTextareaClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTextar] = js.native
   var color: js.UndefOr[String] = js.native
   var cols: js.UndefOr[Double] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -345,7 +345,7 @@ object TextareaProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTextareaClassKey = null,
+    classes: PartialClassNameMapTextar = null,
     color: String = null,
     cols: Int | Double = null,
     contentEditable: Booleanish | inherit = null,

@@ -11,6 +11,14 @@ trait OptionsTopBarBackButton extends js.Object {
     */
   var color: js.UndefOr[Color] = js.undefined
   /**
+    * Set subtitle font family
+    */
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
+  /**
+    * Set subtitle font size
+    */
+  var fontSize: js.UndefOr[Double] = js.undefined
+  /**
     * Image to show as the back button
     */
   var icon: js.UndefOr[ImageRequireSource] = js.undefined
@@ -19,6 +27,10 @@ trait OptionsTopBarBackButton extends js.Object {
     * #### (iOS specific)
     */
   var showTitle: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Set testID for reference in E2E tests
+    */
+  var testID: js.UndefOr[String] = js.undefined
   /**
     * Set the back button title
     * #### (iOS specific)
@@ -35,15 +47,21 @@ object OptionsTopBarBackButton {
   @scala.inline
   def apply(
     color: Color = null,
+    fontFamily: FontFamily = null,
+    fontSize: Int | Double = null,
     icon: Int | Double = null,
     showTitle: js.UndefOr[Boolean] = js.undefined,
+    testID: String = null,
     title: String = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): OptionsTopBarBackButton = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarBackButton]

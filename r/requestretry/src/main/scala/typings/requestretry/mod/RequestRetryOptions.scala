@@ -25,6 +25,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestRetryOptions extends CoreOptions {
+  var delayStrategy: js.UndefOr[DelayStrategy] = js.undefined
   var fullResponse: js.UndefOr[Boolean] = js.undefined
   var maxAttempts: js.UndefOr[Double] = js.undefined
   var promiseFactory: js.UndefOr[js.Function1[/* resolver */ js.Any, _]] = js.undefined
@@ -45,6 +46,7 @@ object RequestRetryOptions {
     ca: String | Buffer | (js.Array[Buffer | String]) = null,
     callback: (/* error */ js.Any, /* response */ Response, /* body */ js.Any) => Unit = null,
     cert: Buffer = null,
+    delayStrategy: (/* err */ Error, /* response */ IncomingMessage, /* body */ js.Any) => Double = null,
     encoding: String = null,
     family: `4` | `6` = null,
     followAllRedirects: js.UndefOr[Boolean] = js.undefined,
@@ -102,6 +104,7 @@ object RequestRetryOptions {
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
+    if (delayStrategy != null) __obj.updateDynamic("delayStrategy")(js.Any.fromFunction3(delayStrategy))
     if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
     if (!js.isUndefined(followAllRedirects)) __obj.updateDynamic("followAllRedirects")(followAllRedirects.asInstanceOf[js.Any])

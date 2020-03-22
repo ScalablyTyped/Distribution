@@ -4,7 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Video statistics of the remote stream. */
+/**
+  * Video statistics of the remote stream.
+  *
+  * If {@link getRemoteVideoStats} is called successfully, the {@link RemoteVideoStatsMap} interface provides the UID and {@link RemoteVideoStats} of each remote user.
+  */
 trait RemoteVideoStats extends js.Object {
   /**
     * End-to-end delay in ms.

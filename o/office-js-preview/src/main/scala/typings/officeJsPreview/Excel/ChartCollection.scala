@@ -72,7 +72,6 @@ class ChartCollection () extends ClientObject {
     */
   val onDeleted: EventHandlers[ChartDeletedEventArgs] = js.native
   /**
-    *
     * Creates a new chart.
     *
     * [Api set: ExcelApi 1.1]
@@ -101,7 +100,6 @@ class ChartCollection () extends ClientObject {
     seriesBy: Rows
   ): Chart = js.native
   /**
-    *
     * Creates a new chart.
     *
     * [Api set: ExcelApi 1.1]
@@ -113,14 +111,12 @@ class ChartCollection () extends ClientObject {
   def add(`type`: ChartType, sourceData: Range): Chart = js.native
   def add(`type`: ChartType, sourceData: Range, seriesBy: ChartSeriesBy): Chart = js.native
   /**
-    *
     * Returns the number of charts in the worksheet.
     *
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   /**
-    *
     * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
     *
     * [Api set: ExcelApi 1.1]
@@ -129,7 +125,6 @@ class ChartCollection () extends ClientObject {
     */
   def getItem(name: String): Chart = js.native
   /**
-    *
     * Gets a chart based on its position in the collection.
     *
     * [Api set: ExcelApi 1.1]
@@ -138,7 +133,6 @@ class ChartCollection () extends ClientObject {
     */
   def getItemAt(index: Double): Chart = js.native
   /**
-    *
     * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
     If the chart does not exist, will return a null object.
     *

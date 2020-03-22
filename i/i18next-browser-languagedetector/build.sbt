@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "i18next-browser-languagedetector"
-version := "4.0.2-62af18"
+version := "4.0.2-e5ad50"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "i18next" % "19.3.2-d924c8",
+  "org.scalablytyped" %%% "i18next" % "19.3.3-435676",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

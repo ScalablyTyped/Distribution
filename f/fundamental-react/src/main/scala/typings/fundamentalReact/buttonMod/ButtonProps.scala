@@ -1,6 +1,5 @@
 package typings.fundamentalReact.buttonMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -21,7 +20,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -74,7 +73,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  className ? :string,   compact ? :boolean,   customStyles ? :{[x: string] : any},   disabled ? :boolean,   disableStyles ? :boolean,   glyph ? :string,   navbar ? :boolean,   option ? :fundamental-react.fundamental-react/lib/Button/Button.ButtonOptions,   ref ? :react.react.RefObject<std.HTMLButtonElement>,   selected ? :boolean,   type ? :fundamental-react.fundamental-react/lib/Button/Button.ButtonTypes,   typeAttr ? :'submit' | 'reset' | 'button', onClick ? (event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void} & react.react.HTMLAttributes<std.HTMLButtonElement> */
+/* Inlined {  className ? :string,   compact ? :boolean,   disabled ? :boolean,   disableStyles ? :boolean,   glyph ? :string,   option ? :fundamental-react.fundamental-react/lib/Button/Button.ButtonOptions,   ref ? :react.react.RefObject<std.HTMLButtonElement>,   selected ? :boolean,   type ? :fundamental-react.fundamental-react/lib/Button/Button.ButtonTypes,   typeAttr ? :'submit' | 'reset' | 'button', onClick ? (event : react.react.MouseEvent<std.HTMLButtonElement, std.MouseEvent>): void} & react.react.HTMLAttributes<std.HTMLButtonElement> */
 @js.native
 trait ButtonProps extends js.Object {
   // RDFa Attributes
@@ -89,7 +88,7 @@ trait ButtonProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.native
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.native
   /**
@@ -275,7 +274,6 @@ trait ButtonProps extends js.Object {
   var compact: js.UndefOr[Boolean] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
-  var customStyles: js.UndefOr[StringDictionary[js.Any]] = js.native
   var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.native
   var datatype: js.UndefOr[String] = js.native
   // React-specific Attributes
@@ -306,8 +304,6 @@ trait ButtonProps extends js.Object {
   var itemScope: js.UndefOr[Boolean] = js.native
   var itemType: js.UndefOr[String] = js.native
   var lang: js.UndefOr[String] = js.native
-  /* Set to **true** if button is part of global navbar. */
-  var navbar: js.UndefOr[Boolean] = js.native
   // Media Events
   var onAbort: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.native
   var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLButtonElement]] = js.native
@@ -405,7 +401,6 @@ trait ButtonProps extends js.Object {
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLButtonElement]] = js.native
   // Wheel Events
   var onWheel: js.UndefOr[WheelEventHandler[HTMLButtonElement]] = js.native
-  /* Indicates the importance of the button. */
   var option: js.UndefOr[ButtonOptions] = js.native
   var placeholder: js.UndefOr[String] = js.native
   var prefix: js.UndefOr[String] = js.native
@@ -419,7 +414,6 @@ trait ButtonProps extends js.Object {
   // WAI-ARIA
   var role: js.UndefOr[String] = js.native
   var security: js.UndefOr[String] = js.native
-  /* Set to **true** to set state of the button to "selected". */
   var selected: js.UndefOr[Boolean] = js.native
   var slot: js.UndefOr[String] = js.native
   var spellCheck: js.UndefOr[Booleanish] = js.native
@@ -430,7 +424,6 @@ trait ButtonProps extends js.Object {
   var title: js.UndefOr[String] = js.native
   var translate: js.UndefOr[yes | no] = js.native
   var `type`: js.UndefOr[ButtonTypes] = js.native
-  /* Value for the `type` attribute on the `<button>` element. */
   var typeAttr: js.UndefOr[submit | reset | button_] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native

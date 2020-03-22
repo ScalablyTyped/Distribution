@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation._
 
 trait AnnotationsElliottWaveLabelOptions extends js.Object {
   /**
+    * (Highstock) Accessibility options for an annotation label.
+    */
+  var accessibility: js.UndefOr[AnnotationLabelAccessibilityOptionsObject] = js.undefined
+  /**
     * (Highstock) The alignment of the annotation's label. If right, the right
     * side of the label should be touching the point.
     */
@@ -110,6 +114,7 @@ trait AnnotationsElliottWaveLabelOptions extends js.Object {
 object AnnotationsElliottWaveLabelOptions {
   @scala.inline
   def apply(
+    accessibility: AnnotationLabelAccessibilityOptionsObject = null,
     align: String = null,
     allowOverlap: js.UndefOr[Boolean] = js.undefined,
     backgroundColor: String = null,
@@ -134,6 +139,7 @@ object AnnotationsElliottWaveLabelOptions {
     y: Int | Double = null
   ): AnnotationsElliottWaveLabelOptions = {
     val __obj = js.Dynamic.literal()
+    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.asInstanceOf[js.Any])
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])

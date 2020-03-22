@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "listr"
-version := "0.14-dt-20190730Z-d7d1e0"
+version := "0.14-dt-20190730Z-a9f24c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.7-dt-20200211Z-b30bde",
+  "org.scalablytyped" %%% "node" % "13.9-dt-20200318Z-96a265",
   "org.scalablytyped" %%% "rxjs" % "6.5.4-b9e2d2",
   "org.scalablytyped" %%% "rxjs-compat" % "6.5.4-d90dcd",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")

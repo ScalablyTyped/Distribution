@@ -18,7 +18,6 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
     * @throws {Error} If `clusterId` does not exist.
     */
   def getChildren(clusterId: Double): js.Array[ClusterFeature[C] | PointFeature[P]] = js.native
-   // Cluster[];
   /**
     * Returns the zoom level on which the cluster expands into several
     * children (useful for "click to zoom" feature).
@@ -41,9 +40,9 @@ trait Supercluster[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] e
     * @param limit The number of points to return (set to `Infinity` for all points).
     * @param offset The amount of points to skip (for pagination).
     */
-  def getLeaves(clusterId: Double): js.Array[ClusterFeature[C] | PointFeature[P]] = js.native
-  def getLeaves(clusterId: Double, limit: Double): js.Array[ClusterFeature[C] | PointFeature[P]] = js.native
-  def getLeaves(clusterId: Double, limit: Double, offset: Double): js.Array[ClusterFeature[C] | PointFeature[P]] = js.native
+  def getLeaves(clusterId: Double): js.Array[PointFeature[P]] = js.native
+  def getLeaves(clusterId: Double, limit: Double): js.Array[PointFeature[P]] = js.native
+  def getLeaves(clusterId: Double, limit: Double, offset: Double): js.Array[PointFeature[P]] = js.native
   /**
     * For a given zoom and x/y coordinates, returns a
     * [geojson-vt](https://github.com/mapbox/geojson-vt)-compatible JSON

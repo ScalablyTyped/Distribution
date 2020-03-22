@@ -17,9 +17,5 @@ package object mod {
     /* signingKey */ js.UndefOr[typings.jsonwebtoken.mod.Secret], 
     scala.Unit
   ]
-  type VerifyCallback = js.Function2[
-    /* err */ typings.jsonwebtoken.mod.VerifyErrors, 
-    /* decoded */ js.Object | java.lang.String, 
-    scala.Unit
-  ]
+  type VerifyCallback = js.Function2[/* err */ typings.jsonwebtoken.mod.VerifyErrors, /* decoded */ js.Object, scala.Unit]
 }

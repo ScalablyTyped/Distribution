@@ -219,6 +219,7 @@ import typings.babelTypes.mod.PrivateName_
 import typings.babelTypes.mod.Program_
 import typings.babelTypes.mod.Property
 import typings.babelTypes.mod.QualifiedTypeIdentifier_
+import typings.babelTypes.mod.RecordExpression_
 import typings.babelTypes.mod.RegExpLiteral_
 import typings.babelTypes.mod.RestElement_
 import typings.babelTypes.mod.ReturnStatement_
@@ -231,6 +232,7 @@ import typings.babelTypes.mod.StringTypeAnnotation_
 import typings.babelTypes.mod.Super_
 import typings.babelTypes.mod.SwitchCase_
 import typings.babelTypes.mod.SwitchStatement_
+import typings.babelTypes.mod.SymbolTypeAnnotation_
 import typings.babelTypes.mod.TSAnyKeyword_
 import typings.babelTypes.mod.TSArrayType_
 import typings.babelTypes.mod.TSAsExpression_
@@ -304,6 +306,7 @@ import typings.babelTypes.mod.ThrowStatement_
 import typings.babelTypes.mod.TraversalHandler
 import typings.babelTypes.mod.TraversalHandlers
 import typings.babelTypes.mod.TryStatement_
+import typings.babelTypes.mod.TupleExpression_
 import typings.babelTypes.mod.TupleTypeAnnotation_
 import typings.babelTypes.mod.TypeAlias_
 import typings.babelTypes.mod.TypeAnnotation_
@@ -1674,8 +1677,10 @@ trait Typeoftypes extends js.Object {
   ): ClassProperty_ = js.native
   def clone[T /* <: Node */](n: T): T = js.native
   def cloneDeep[T /* <: Node */](n: T): T = js.native
+  def cloneDeepWithoutLoc[T /* <: Node */](n: T): T = js.native
   def cloneNode[T /* <: Node */](n: T): T = js.native
   def cloneNode[T /* <: Node */](n: T, deep: Boolean): T = js.native
+  def cloneNode[T /* <: Node */](n: T, deep: Boolean, withoutLoc: Boolean): T = js.native
   def cloneWithoutLoc[T /* <: Node */](n: T): T = js.native
   def conditionalExpression(test: Expression, consequent: Expression, alternate: Expression): ConditionalExpression_ = js.native
   def continueStatement(): ContinueStatement_ = js.native
@@ -3037,6 +3042,11 @@ trait Typeoftypes extends js.Object {
   def isQualifiedTypeIdentifier(node: js.Object): /* is @babel/types.@babel/types.QualifiedTypeIdentifier */ Boolean = js.native
   def isQualifiedTypeIdentifier(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.QualifiedTypeIdentifier */ Boolean = js.native
   def isQualifiedTypeIdentifier(node: Null, opts: js.Object): /* is @babel/types.@babel/types.QualifiedTypeIdentifier */ Boolean = js.native
+  def isRecordExpression(): /* is @babel/types.@babel/types.RecordExpression */ Boolean = js.native
+  def isRecordExpression(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.RecordExpression */ Boolean = js.native
+  def isRecordExpression(node: js.Object): /* is @babel/types.@babel/types.RecordExpression */ Boolean = js.native
+  def isRecordExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.RecordExpression */ Boolean = js.native
+  def isRecordExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.RecordExpression */ Boolean = js.native
   def isReferenced(node: Node, parent: Node): Boolean = js.native
   def isReferenced(node: Node, parent: Node, grandparent: Node): Boolean = js.native
   def isRegExpLiteral(): /* is @babel/types.@babel/types.RegExpLiteral */ Boolean = js.native
@@ -3121,6 +3131,11 @@ trait Typeoftypes extends js.Object {
   def isSwitchStatement(node: js.Object): /* is @babel/types.@babel/types.SwitchStatement */ Boolean = js.native
   def isSwitchStatement(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.SwitchStatement */ Boolean = js.native
   def isSwitchStatement(node: Null, opts: js.Object): /* is @babel/types.@babel/types.SwitchStatement */ Boolean = js.native
+  def isSymbolTypeAnnotation(): /* is @babel/types.@babel/types.SymbolTypeAnnotation */ Boolean = js.native
+  def isSymbolTypeAnnotation(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.SymbolTypeAnnotation */ Boolean = js.native
+  def isSymbolTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.SymbolTypeAnnotation */ Boolean = js.native
+  def isSymbolTypeAnnotation(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.SymbolTypeAnnotation */ Boolean = js.native
+  def isSymbolTypeAnnotation(node: Null, opts: js.Object): /* is @babel/types.@babel/types.SymbolTypeAnnotation */ Boolean = js.native
   def isTSAnyKeyword(): /* is @babel/types.@babel/types.TSAnyKeyword */ Boolean = js.native
   def isTSAnyKeyword(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.TSAnyKeyword */ Boolean = js.native
   def isTSAnyKeyword(node: js.Object): /* is @babel/types.@babel/types.TSAnyKeyword */ Boolean = js.native
@@ -3481,6 +3496,11 @@ trait Typeoftypes extends js.Object {
   def isTryStatement(node: js.Object): /* is @babel/types.@babel/types.TryStatement */ Boolean = js.native
   def isTryStatement(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TryStatement */ Boolean = js.native
   def isTryStatement(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TryStatement */ Boolean = js.native
+  def isTupleExpression(): /* is @babel/types.@babel/types.TupleExpression */ Boolean = js.native
+  def isTupleExpression(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.TupleExpression */ Boolean = js.native
+  def isTupleExpression(node: js.Object): /* is @babel/types.@babel/types.TupleExpression */ Boolean = js.native
+  def isTupleExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TupleExpression */ Boolean = js.native
+  def isTupleExpression(node: Null, opts: js.Object): /* is @babel/types.@babel/types.TupleExpression */ Boolean = js.native
   def isTupleTypeAnnotation(): /* is @babel/types.@babel/types.TupleTypeAnnotation */ Boolean = js.native
   def isTupleTypeAnnotation(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.TupleTypeAnnotation */ Boolean = js.native
   def isTupleTypeAnnotation(node: js.Object): /* is @babel/types.@babel/types.TupleTypeAnnotation */ Boolean = js.native
@@ -4053,6 +4073,7 @@ trait Typeoftypes extends js.Object {
   ): Program_ = js.native
   def qualifiedTypeIdentifier(id: Identifier_, qualification: Identifier_): QualifiedTypeIdentifier_ = js.native
   def qualifiedTypeIdentifier(id: Identifier_, qualification: QualifiedTypeIdentifier_): QualifiedTypeIdentifier_ = js.native
+  def recordExpression(properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadElement_]): RecordExpression_ = js.native
   def regExpLiteral(pattern: String): RegExpLiteral_ = js.native
   def regExpLiteral(pattern: String, flags: js.Any): RegExpLiteral_ = js.native
   def removeComments[T /* <: Node */](node: T): T = js.native
@@ -4076,6 +4097,7 @@ trait Typeoftypes extends js.Object {
   def switchCase(test: Null, consequent: js.Array[Statement]): SwitchCase_ = js.native
   def switchCase(test: Expression, consequent: js.Array[Statement]): SwitchCase_ = js.native
   def switchStatement(discriminant: Expression, cases: js.Array[SwitchCase_]): SwitchStatement_ = js.native
+  def symbolTypeAnnotation(): SymbolTypeAnnotation_ = js.native
   def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral_): TaggedTemplateExpression_ = js.native
   def templateElement(value: AnonCooked): TemplateElement_ = js.native
   def templateElement(value: AnonCooked, tail: Boolean): TemplateElement_ = js.native
@@ -4455,6 +4477,8 @@ trait Typeoftypes extends js.Object {
   def tsUnionType(types: js.Array[TSType]): TSUnionType_ = js.native
   def tsUnknownKeyword(): TSUnknownKeyword_ = js.native
   def tsVoidKeyword(): TSVoidKeyword_ = js.native
+  def tupleExpression(): TupleExpression_ = js.native
+  def tupleExpression(elements: js.Array[Null | Expression | SpreadElement_]): TupleExpression_ = js.native
   def tupleTypeAnnotation(types: js.Array[FlowType]): TupleTypeAnnotation_ = js.native
   def typeAlias(id: Identifier_, typeParameters: js.UndefOr[scala.Nothing], right: FlowType): TypeAlias_ = js.native
   def typeAlias(id: Identifier_, typeParameters: Null, right: FlowType): TypeAlias_ = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for morgan
 
-Typings are for version 1.7
+Typings are for version 1.9
 
 ## Library description:
 HTTP request logger middleware for node.js

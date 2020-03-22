@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "voronoi-diagram"
-version := "1.0.1-dt-20190322Z-41bd6c"
+version := "1.0.1-dt-20200225Z-41bd6c"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

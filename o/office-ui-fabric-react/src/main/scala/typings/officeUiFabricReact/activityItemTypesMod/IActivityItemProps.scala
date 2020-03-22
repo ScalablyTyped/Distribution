@@ -27,7 +27,7 @@ trait IActivityItemProps extends AllHTMLAttributes[HTMLElement] {
     */
   var activityIcon: js.UndefOr[ReactNode] = js.undefined
   /**
-    * If activityIcon is not set, then the persona props in this array will be used as the icon for the this activity item.
+    * If activityIcon is not set, then the persona props in this array will be used as the icon for this activity item.
     */
   var activityPersonas: js.UndefOr[js.Array[IPersonaSharedProps]] = js.undefined
   /**

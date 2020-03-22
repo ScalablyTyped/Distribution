@@ -83,6 +83,10 @@ class Query[T] ()
   def toSOQL(callback: js.Function2[/* err */ Error, /* soql */ String, Unit]): js.Promise[String] = js.native
   def update(
     mapping: js.Any,
+    callback: js.Function2[/* err */ Error, /* records */ js.Array[RecordResult], Unit]
+  ): js.Promise[js.Array[RecordResult]] = js.native
+  def update(
+    mapping: js.Any,
     `type`: String,
     callback: js.Function2[/* err */ Error, /* records */ js.Array[RecordResult], Unit]
   ): js.Promise[js.Array[RecordResult]] = js.native

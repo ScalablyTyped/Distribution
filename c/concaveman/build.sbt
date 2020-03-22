@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "concaveman"
-version := "1.1.0-dt-20190322Z-d17833"
+version := "1.1.0-dt-20200226Z-d17833"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

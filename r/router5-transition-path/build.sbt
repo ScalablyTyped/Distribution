@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "router5-transition-path"
-version := "8.0.0-ce89d4"
+version := "8.0.1-3c2331"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redux-seamless-immutable"
-version := "0.4-dt-20190319Z-59c709"
+version := "0.4-dt-20190319Z-d8b76d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "redux" % "4.0.5-c5ba7d",
-  "org.scalablytyped" %%% "seamless-immutable" % "7.1-dt-20190916Z-1cea74",
+  "org.scalablytyped" %%% "seamless-immutable" % "7.1-dt-20200225Z-1cea74",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

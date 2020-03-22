@@ -18,6 +18,7 @@ trait Props extends js.Object {
   ] = js.undefined
   var draggable: js.UndefOr[Boolean] = js.undefined
   var googleMapLoader: js.UndefOr[js.Function1[/* bootstrapURLKeys */ js.Any, Unit]] = js.undefined
+  var heatmapLibrary: js.UndefOr[Boolean] = js.undefined
   var hoverDistance: js.UndefOr[Double] = js.undefined
   var layerTypes: js.UndefOr[js.Array[String]] = js.undefined
   var margin: js.UndefOr[js.Array[_]] = js.undefined
@@ -61,6 +62,7 @@ object Props {
     distanceToMouse: (/* pt */ Point, /* mousePos */ Point, /* markerProps */ js.UndefOr[js.Object]) => Double = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     googleMapLoader: /* bootstrapURLKeys */ js.Any => Unit = null,
+    heatmapLibrary: js.UndefOr[Boolean] = js.undefined,
     hoverDistance: Int | Double = null,
     layerTypes: js.Array[String] = null,
     margin: js.Array[_] = null,
@@ -95,6 +97,7 @@ object Props {
     if (distanceToMouse != null) __obj.updateDynamic("distanceToMouse")(js.Any.fromFunction3(distanceToMouse))
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (googleMapLoader != null) __obj.updateDynamic("googleMapLoader")(js.Any.fromFunction1(googleMapLoader))
+    if (!js.isUndefined(heatmapLibrary)) __obj.updateDynamic("heatmapLibrary")(heatmapLibrary.asInstanceOf[js.Any])
     if (hoverDistance != null) __obj.updateDynamic("hoverDistance")(hoverDistance.asInstanceOf[js.Any])
     if (layerTypes != null) __obj.updateDynamic("layerTypes")(layerTypes.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])

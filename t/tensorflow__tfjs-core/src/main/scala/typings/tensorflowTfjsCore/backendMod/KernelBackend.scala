@@ -236,6 +236,7 @@ class KernelBackend ()
   def sin[T /* <: Tensor[Rank] */](x: T): T = js.native
   def sinh[T /* <: Tensor[Rank] */](x: T): T = js.native
   def slice[T /* <: Tensor[Rank] */](x: T, begin: js.Array[Double], size: js.Array[Double]): T = js.native
+  def softmax[T /* <: Tensor[Rank] */](x: T, dim: Double): T = js.native
   def softplus[T /* <: Tensor[Rank] */](x: T): T = js.native
   def spaceToBatchND[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = js.native
   def sparseToDense[R /* <: Rank */](

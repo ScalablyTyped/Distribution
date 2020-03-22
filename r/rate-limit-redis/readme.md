@@ -1,7 +1,7 @@
 
 # Scala.js typings for rate-limit-redis
 
-Typings are for version 1.6
+Typings are for version 1.7
 
 ## Library description:
 Provides a Redis store for the express-rate-limit RateLimit middleware.

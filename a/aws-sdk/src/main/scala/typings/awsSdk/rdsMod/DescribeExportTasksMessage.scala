@@ -21,7 +21,7 @@ trait DescribeExportTasksMessage extends js.Object {
   /**
     *  The maximum number of records to include in the response. If more records exist than the specified value, a pagination token called a marker is included in the response. You can use the marker in a later DescribeExportTasks request to retrieve the remaining results.  Default: 100 Constraints: Minimum 20, maximum 100.
     */
-  var MaxRecords: js.UndefOr[String] = js.native
+  var MaxRecords: js.UndefOr[typings.awsSdk.rdsMod.MaxRecords] = js.native
   /**
     * The Amazon Resource Name (ARN) of the snapshot exported to Amazon S3.
     */
@@ -34,7 +34,7 @@ object DescribeExportTasksMessage {
     ExportTaskIdentifier: String = null,
     Filters: FilterList = null,
     Marker: String = null,
-    MaxRecords: String = null,
+    MaxRecords: Int | scala.Double = null,
     SourceArn: String = null
   ): DescribeExportTasksMessage = {
     val __obj = js.Dynamic.literal()

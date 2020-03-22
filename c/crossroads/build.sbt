@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "crossroads"
-version := "0.0-unknown-dt-20190322Z-c35b55"
+version := "0.0-unknown-dt-20200225Z-b9aa5d"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "signals" % "1.0-dt-20180214Z-dadc76",
+  "org.scalablytyped" %%% "signals" % "1.0-dt-20200227Z-dadc76",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

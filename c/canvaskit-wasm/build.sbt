@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "canvaskit-wasm"
-version := "0.9-dt-20191216Z-90738a"
+version := "0.9-dt-20200225Z-90738a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intl-tel-input"
-version := "14.0-dt-20181224Z-04155a"
+version := "14.0-dt-20200226Z-04155a"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

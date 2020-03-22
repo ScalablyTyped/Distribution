@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "diff2html"
-version := "0.0-unknown-dt-20190708Z-f0842f"
+version := "0.0-unknown-dt-20200226Z-f0842f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -29,6 +29,7 @@ package object securityhubMod {
   type AwsLambdaLayerVersionNumber = scala.Double
   type AwsRdsDbInstanceAssociatedRoles = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceAssociatedRole]
   type AwsRdsDbInstanceVpcSecurityGroups = js.Array[typings.awsSdk.securityhubMod.AwsRdsDbInstanceVpcSecurityGroup]
+  type AwsS3BucketServerSideEncryptionRules = js.Array[typings.awsSdk.securityhubMod.AwsS3BucketServerSideEncryptionRule]
   type AwsSecurityFindingList = js.Array[typings.awsSdk.securityhubMod.AwsSecurityFinding]
   type AwsSnsTopicSubscriptionList = js.Array[typings.awsSdk.securityhubMod.AwsSnsTopicSubscription]
   type AwsWafWebAclRuleList = js.Array[typings.awsSdk.securityhubMod.AwsWafWebAclRule]
@@ -130,6 +131,15 @@ package object securityhubMod {
   type ResultList = js.Array[typings.awsSdk.securityhubMod.Result]
   type SecurityGroups = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.INFORMATIONAL
+    - typings.awsSdk.awsSdkStrings.LOW
+    - typings.awsSdk.awsSdkStrings.MEDIUM
+    - typings.awsSdk.awsSdkStrings.HIGH
+    - typings.awsSdk.awsSdkStrings.CRITICAL
+    - java.lang.String
+  */
+  type SeverityLabel = typings.awsSdk.securityhubMod._SeverityLabel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.LOW
     - typings.awsSdk.awsSdkStrings.MEDIUM
     - typings.awsSdk.awsSdkStrings.HIGH
@@ -217,6 +227,14 @@ package object securityhubMod {
     - java.lang.String
   */
   type WorkflowState = typings.awsSdk.securityhubMod._WorkflowState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.NEW
+    - typings.awsSdk.awsSdkStrings.NOTIFIED
+    - typings.awsSdk.awsSdkStrings.RESOLVED
+    - typings.awsSdk.awsSdkStrings.SUPPRESSED
+    - java.lang.String
+  */
+  type WorkflowStatus = typings.awsSdk.securityhubMod._WorkflowStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2018-10-26`
     - typings.awsSdk.awsSdkStrings.latest_

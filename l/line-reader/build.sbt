@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "line-reader"
-version := "0.0-unknown-dt-20190322Z-36979e"
+version := "0.0-unknown-dt-20200225Z-36979e"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

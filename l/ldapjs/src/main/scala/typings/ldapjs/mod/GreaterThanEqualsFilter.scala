@@ -1,6 +1,6 @@
 package typings.ldapjs.mod
 
-import typings.ldapjs.AnonAttribute
+import typings.ldapjs.AnonValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ldapjs", "GreaterThanEqualsFilter")
 @js.native
 class GreaterThanEqualsFilter protected () extends Filter {
-  def this(options: AnonAttribute) = this()
+  def this(options: AnonValue) = this()
   /* CompleteClass */
   override var `type`: String = js.native
   /* CompleteClass */

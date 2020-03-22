@@ -30,6 +30,7 @@ trait AnonCall extends js.Object {
   var OAuthProvider: Instantiable1[/* providerId */ String, typings.firebaseAuthTypes.mod.OAuthProvider] = js.native
   var PhoneAuthProvider: TypeofPhoneAuthProvider = js.native
   var PhoneAuthProvider_Instance: Instantiable1[js.UndefOr[FirebaseAuth | Null], PhoneAuthProviderInstance] = js.native
+  var PhoneMultiFactorGenerator: TypeofPhoneMultiFactorGen = js.native
   var RecaptchaVerifier: Instantiable0[typings.firebaseAuthTypes.mod.RecaptchaVerifier] = js.native
   var RecaptchaVerifier_Instance: Instantiable3[
     /* container */ js.Any | String, 

@@ -23,7 +23,7 @@ trait ModelState extends js.Object {
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.native
+  val restApi: js.UndefOr[Input[String | RestApi]] = js.native
   /**
     * The schema of the model in a JSON form
     */
@@ -36,7 +36,7 @@ object ModelState {
     contentType: Input[String] = null,
     description: Input[String] = null,
     name: Input[String] = null,
-    restApi: Input[RestApi] = null,
+    restApi: Input[String | RestApi] = null,
     schema: Input[String] = null
   ): ModelState = {
     val __obj = js.Dynamic.literal()

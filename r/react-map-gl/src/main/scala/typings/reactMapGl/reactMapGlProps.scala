@@ -39,6 +39,9 @@ trait reactMapGlProps {
   def SVGOverlayProps: typings.reactMapGl.mod.SVGOverlayProps.type = typings.reactMapGl.mod.SVGOverlayProps
   type SVGOverlayProps = typings.reactMapGl.mod.SVGOverlayProps
   @scala.inline
+  def ScaleControlProps: typings.reactMapGl.mod.ScaleControlProps.type = typings.reactMapGl.mod.ScaleControlProps
+  type ScaleControlProps = typings.reactMapGl.mod.ScaleControlProps
+  @scala.inline
   def SourceProps: typings.reactMapGl.mod.SourceProps.type = typings.reactMapGl.mod.SourceProps
   type SourceProps = typings.reactMapGl.mod.SourceProps
   @scala.inline

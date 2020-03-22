@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "hystrixjs"
-version := "0.2-dt-20191002Z-f0eb0d"
+version := "0.2-dt-20200226Z-582888"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-0759c8",
-  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20190322Z-32f9a9",
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20200225Z-0759c8",
+  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20200225Z-3dd54b",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

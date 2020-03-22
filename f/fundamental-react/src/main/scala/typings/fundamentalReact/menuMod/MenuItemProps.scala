@@ -1,6 +1,5 @@
 package typings.fundamentalReact.menuMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fundamentalReact.fundamentalReactStrings.`additions text`
 import typings.fundamentalReact.fundamentalReactStrings.`inline`
 import typings.fundamentalReact.fundamentalReactStrings.additions
@@ -20,7 +19,7 @@ import typings.fundamentalReact.fundamentalReactStrings.grid
 import typings.fundamentalReact.fundamentalReactStrings.horizontal
 import typings.fundamentalReact.fundamentalReactStrings.inherit
 import typings.fundamentalReact.fundamentalReactStrings.link_
-import typings.fundamentalReact.fundamentalReactStrings.list
+import typings.fundamentalReact.fundamentalReactStrings.list_
 import typings.fundamentalReact.fundamentalReactStrings.listbox
 import typings.fundamentalReact.fundamentalReactStrings.location
 import typings.fundamentalReact.fundamentalReactStrings.menu_
@@ -85,16 +84,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  addon ? :string,   addonProps ? :{[x: string] : any},   className ? :string,   isLink ? :boolean,   separator ? :boolean,   url ? :string,   urlProps ? :{[x: string] : any}} & react.react.HTMLAttributes<std.HTMLLIElement> */
+/* Inlined {  addon ? :string,   addonBefore ? :string,   addonProps ? :any,   className ? :string,   isLink ? :boolean, onclick ? (args : ...any): any,   url ? :string,   urlProps ? :any} & react.react.HTMLAttributes<std.HTMLLIElement> */
 trait MenuItemProps extends js.Object {
   // RDFa Attributes
   var about: js.UndefOr[String] = js.undefined
   // Standard HTML Attributes
   var accessKey: js.UndefOr[String] = js.undefined
-  /* Name of the SAP icon to be applied as an add-on before. */
   var addon: js.UndefOr[String] = js.undefined
-  /* Additional props to be spread to the add-on section. */
-  var addonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var addonBefore: js.UndefOr[String] = js.undefined
+  var addonProps: js.UndefOr[js.Any] = js.undefined
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
@@ -103,7 +101,7 @@ trait MenuItemProps extends js.Object {
     * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
     * presented if they are made.
     */
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list_ | both] = js.undefined
   /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   /**
@@ -309,7 +307,6 @@ trait MenuItemProps extends js.Object {
     * @see https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is
     */
   var is: js.UndefOr[String] = js.undefined
-  /* Set to **true** to style as a link. */
   var isLink: js.UndefOr[Boolean] = js.undefined
   var itemID: js.UndefOr[String] = js.undefined
   var itemProp: js.UndefOr[String] = js.undefined
@@ -412,6 +409,7 @@ trait MenuItemProps extends js.Object {
   var onWaiting: js.UndefOr[ReactEventHandler[HTMLLIElement]] = js.undefined
   // Wheel Events
   var onWheel: js.UndefOr[WheelEventHandler[HTMLLIElement]] = js.undefined
+  var onclick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var prefix: js.UndefOr[String] = js.undefined
   var property: js.UndefOr[String] = js.undefined
@@ -423,8 +421,6 @@ trait MenuItemProps extends js.Object {
   // WAI-ARIA
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
-  /* Set to **true** to add a horizontal line (separator). */
-  var separator: js.UndefOr[Boolean] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
   var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -435,10 +431,8 @@ trait MenuItemProps extends js.Object {
   var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
-  /* Enables use of `<a>` element. Value to be applied to the anchor's `href` attribute. Should use either `link` or `url`, but not both. */
   var url: js.UndefOr[String] = js.undefined
-  /* Additional props to be spread to the Menu Item links (when using `url`). */
-  var urlProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var urlProps: js.UndefOr[js.Any] = js.undefined
   var vocab: js.UndefOr[String] = js.undefined
 }
 
@@ -448,10 +442,11 @@ object MenuItemProps {
     about: String = null,
     accessKey: String = null,
     addon: String = null,
-    addonProps: StringDictionary[js.Any] = null,
+    addonBefore: String = null,
+    addonProps: js.Any = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
+    `aria-autocomplete`: none | `inline` | list_ | both = null,
     `aria-busy`: js.UndefOr[Boolean] = js.undefined,
     `aria-checked`: Boolean | mixed = null,
     `aria-colcount`: Int | Double = null,
@@ -602,6 +597,7 @@ object MenuItemProps {
     onVolumeChange: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onWaiting: SyntheticEvent[HTMLLIElement, Event_] => Unit = null,
     onWheel: WheelEvent[HTMLLIElement] => Unit = null,
+    onclick: /* repeated */ js.Any => _ = null,
     placeholder: String = null,
     prefix: String = null,
     property: String = null,
@@ -610,7 +606,6 @@ object MenuItemProps {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
-    separator: js.UndefOr[Boolean] = js.undefined,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -622,13 +617,14 @@ object MenuItemProps {
     typeof: String = null,
     unselectable: on | off = null,
     url: String = null,
-    urlProps: StringDictionary[js.Any] = null,
+    urlProps: js.Any = null,
     vocab: String = null
   ): MenuItemProps = {
     val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (addon != null) __obj.updateDynamic("addon")(addon.asInstanceOf[js.Any])
+    if (addonBefore != null) __obj.updateDynamic("addonBefore")(addonBefore.asInstanceOf[js.Any])
     if (addonProps != null) __obj.updateDynamic("addonProps")(addonProps.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
@@ -783,6 +779,7 @@ object MenuItemProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
+    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1(onclick))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
@@ -791,7 +788,6 @@ object MenuItemProps {
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (!js.isUndefined(separator)) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])

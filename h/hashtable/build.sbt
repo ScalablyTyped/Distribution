@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hashtable"
-version := "3.0-dt-20190322Z-4364ff"
+version := "3.0-dt-20200226Z-4364ff"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

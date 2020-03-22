@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vfile-message"
-version := "2.0.2-97cbef"
+version := "2.0.3-9dd8b6"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -40,6 +40,14 @@ trait CommentCollectionLoadOptions extends js.Object {
   var content: js.UndefOr[Boolean] = js.native
   /**
     *
+    * For EACH ITEM in the collection: Gets the content type of the comment.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var contentType: js.UndefOr[Boolean] = js.native
+  /**
+    *
     * For EACH ITEM in the collection: Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
     *
     * [Api set: ExcelApi 1.10]

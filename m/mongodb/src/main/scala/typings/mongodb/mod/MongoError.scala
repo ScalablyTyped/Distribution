@@ -32,12 +32,19 @@ class MongoError protected () extends Error {
   override var message: String = js.native
   /* CompleteClass */
   override var name: String = js.native
+  /**
+    * Checks the error to see if it has an error label
+    */
+  def hasErrorLabel(label: String): Boolean = js.native
 }
 
 /* static members */
 @JSImport("mongodb", "MongoError")
 @js.native
 object MongoError extends js.Object {
-  def create(options: js.Object): MongoError = js.native
+  /**
+    * @deprecated
+    */
+  def create(options: String): MongoError = js.native
 }
 

@@ -46,7 +46,7 @@ object Logger extends js.Object {
     *
     * The log level follows the sequence of NONE, ERROR, WARNING, INFO, and DEBUG.
     * For example, if you set the log level as `AgoraRTC.Logger.setLogLevel(AgoraRTC.Logger.INFO);`, then you can see logs in levels INFO, ERROR, and WARNING.
-    * @param level The output log level.
+    * @param level The output log level. The default value is {@link DEBUG}.
     */
   def setLogLevel(level: DEBUG): Unit = js.native
   def setLogLevel(level: ERROR): Unit = js.native

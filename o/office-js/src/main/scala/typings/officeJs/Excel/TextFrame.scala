@@ -141,7 +141,6 @@ class TextFrame () extends ClientObject {
     */
   var verticalOverflow: ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip = js.native
   /**
-    *
     * Deletes all the text in the text frame.
     *
     * [Api set: ExcelApi 1.9]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pug"
-version := "2.0-dt-20190322Z-626ffc"
+version := "2.0-dt-20200225Z-626ffc"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

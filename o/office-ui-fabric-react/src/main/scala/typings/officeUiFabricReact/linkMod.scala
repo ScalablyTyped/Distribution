@@ -10,8 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object linkMod extends js.Object {
   @js.native
-  class LinkBase ()
-    extends typings.officeUiFabricReact.linkBaseMod.LinkBase
+  class LinkBase protected ()
+    extends typings.officeUiFabricReact.linkBaseMod.LinkBase {
+    def this(props: ILinkProps) = this()
+  }
   
   val Link: FunctionComponent[ILinkProps] = js.native
 }

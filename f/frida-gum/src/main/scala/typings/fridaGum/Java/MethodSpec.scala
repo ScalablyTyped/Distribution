@@ -14,7 +14,7 @@ trait MethodSpec extends js.Object {
     * Implementation.
     */
   @JSName("implementation")
-  var implementation_Original: MethodImplementation = js.native
+  var implementation_Original: MethodImplementation[js.Object] = js.native
   /**
     * Return type. Defaults to `void` if omitted.
     */

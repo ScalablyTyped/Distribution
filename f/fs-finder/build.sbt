@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fs-finder"
-version := "v1.8.0-dt-20190322Z-b521d9"
+version := "v1.8.0-dt-20200226Z-b521d9"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

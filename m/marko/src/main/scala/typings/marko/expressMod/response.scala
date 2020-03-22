@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("marko/express", "response")
 @js.native
-object response extends TopLevel[Response_]
+object response
+  extends TopLevel[Response_[js.Any]]
 

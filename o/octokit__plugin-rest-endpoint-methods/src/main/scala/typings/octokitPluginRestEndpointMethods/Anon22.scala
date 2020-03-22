@@ -1,6 +1,6 @@
 package typings.octokitPluginRestEndpointMethods
 
-import typings.octokitPluginRestEndpointMethods.typesMod.ActivityCheckWatchingRepoLegacyParams
+import typings.octokitPluginRestEndpointMethods.typesMod.ActivityDeleteRepoSubscriptionParams
 import typings.octokitPluginRestEndpointMethods.typesMod.AnyResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,7 +11,7 @@ trait Anon22 extends js.Object {
   var endpoint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndpointInterface */ js.Any = js.native
   def apply(): js.Promise[AnyResponse] = js.native
   def apply(
-    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ActivityCheckWatchingRepoLegacyParams
+    params: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestParameters */ js.Any) with ActivityDeleteRepoSubscriptionParams
   ): js.Promise[AnyResponse] = js.native
 }
 

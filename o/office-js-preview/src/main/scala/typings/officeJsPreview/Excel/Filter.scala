@@ -65,7 +65,6 @@ class Filter () extends ClientObject {
     */
   val criteria: FilterCriteria = js.native
   /**
-    *
     * Apply the given filter criteria on the given column.
     *
     * [Api set: ExcelApi 1.2]
@@ -75,7 +74,6 @@ class Filter () extends ClientObject {
   @JSName("apply")
   def apply(criteria: FilterCriteria): Unit = js.native
   /**
-    *
     * Apply a "Bottom Item" filter to the column for the given number of elements.
     *
     * [Api set: ExcelApi 1.2]
@@ -84,7 +82,6 @@ class Filter () extends ClientObject {
     */
   def applyBottomItemsFilter(count: Double): Unit = js.native
   /**
-    *
     * Apply a "Bottom Percent" filter to the column for the given percentage of elements.
     *
     * [Api set: ExcelApi 1.2]
@@ -93,7 +90,6 @@ class Filter () extends ClientObject {
     */
   def applyBottomPercentFilter(percent: Double): Unit = js.native
   /**
-    *
     * Apply a "Cell Color" filter to the column for the given color.
     *
     * [Api set: ExcelApi 1.2]
@@ -102,7 +98,6 @@ class Filter () extends ClientObject {
     */
   def applyCellColorFilter(color: String): Unit = js.native
   /**
-    *
     * Apply an "Icon" filter to the column for the given criteria strings.
     *
     * [Api set: ExcelApi 1.2]
@@ -119,7 +114,6 @@ class Filter () extends ClientObject {
   @JSName("applyCustomFilter")
   def applyCustomFilter_Or(criteria1: String, criteria2: String, oper: Or): Unit = js.native
   /**
-    *
     * Apply a "Dynamic" filter to the column.
     *
     * [Api set: ExcelApi 1.2]
@@ -130,7 +124,6 @@ class Filter () extends ClientObject {
     criteria: Unknown_ | AboveAverage | AllDatesInPeriodApril | AllDatesInPeriodAugust | AllDatesInPeriodDecember | AllDatesInPeriodFebruray | AllDatesInPeriodJanuary | AllDatesInPeriodJuly | AllDatesInPeriodJune | AllDatesInPeriodMarch | AllDatesInPeriodMay | AllDatesInPeriodNovember | AllDatesInPeriodOctober | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodSeptember | BelowAverage | LastMonth | LastQuarter | LastWeek | LastYear | NextMonth | NextQuarter | NextWeek | NextYear | ThisMonth | ThisQuarter | ThisWeek | ThisYear | Today | Tomorrow | YearToDate | Yesterday
   ): Unit = js.native
   /**
-    *
     * Apply a "Dynamic" filter to the column.
     *
     * [Api set: ExcelApi 1.2]
@@ -139,7 +132,6 @@ class Filter () extends ClientObject {
     */
   def applyDynamicFilter(criteria: DynamicFilterCriteria): Unit = js.native
   /**
-    *
     * Apply a "Font Color" filter to the column for the given color.
     *
     * [Api set: ExcelApi 1.2]
@@ -148,7 +140,6 @@ class Filter () extends ClientObject {
     */
   def applyFontColorFilter(color: String): Unit = js.native
   /**
-    *
     * Apply an "Icon" filter to the column for the given icon.
     *
     * [Api set: ExcelApi 1.2]
@@ -157,7 +148,6 @@ class Filter () extends ClientObject {
     */
   def applyIconFilter(icon: Icon): Unit = js.native
   /**
-    *
     * Apply a "Top Item" filter to the column for the given number of elements.
     *
     * [Api set: ExcelApi 1.2]
@@ -166,7 +156,6 @@ class Filter () extends ClientObject {
     */
   def applyTopItemsFilter(count: Double): Unit = js.native
   /**
-    *
     * Apply a "Top Percent" filter to the column for the given percentage of elements.
     *
     * [Api set: ExcelApi 1.2]
@@ -175,7 +164,6 @@ class Filter () extends ClientObject {
     */
   def applyTopPercentFilter(percent: Double): Unit = js.native
   /**
-    *
     * Apply a "Values" filter to the column for the given values.
     *
     * [Api set: ExcelApi 1.2]
@@ -184,7 +172,6 @@ class Filter () extends ClientObject {
     */
   def applyValuesFilter(values: js.Array[String | FilterDatetime]): Unit = js.native
   /**
-    *
     * Clear the filter on the given column.
     *
     * [Api set: ExcelApi 1.2]

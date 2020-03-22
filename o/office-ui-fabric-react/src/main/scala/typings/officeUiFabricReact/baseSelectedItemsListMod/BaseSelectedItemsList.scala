@@ -3,8 +3,8 @@ package typings.officeUiFabricReact.baseSelectedItemsListMod
 import typings.officeUiFabricReact.baseSelectedItemsListTypesMod.IBaseSelectedItemsList
 import typings.officeUiFabricReact.baseSelectedItemsListTypesMod.IBaseSelectedItemsListProps
 import typings.officeUiFabricReact.libSelectionMod.Selection
-import typings.officeUiFabricReact.utilitiesMod.BaseComponent
 import typings.react.mod.ClipboardEvent
+import typings.react.mod.Component
 import typings.react.mod._Global_.JSX.Element
 import typings.std.HTMLElement
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/BaseSelectedItemsList", "BaseSelectedItemsList")
 @js.native
 class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
-  extends BaseComponent[P, IBaseSelectedItemsListState[T]]
+  extends Component[P, IBaseSelectedItemsListState[T], js.Any]
      with IBaseSelectedItemsList[T] {
   def this(basePickerProps: P) = this()
   var _canRemoveItem: js.Any = js.native
@@ -49,7 +49,7 @@ class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protec
   def unselectAll(): Unit = js.native
   /**
     * Controls what happens whenever there is an action that impacts the selected items.
-    * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
+    * If selectedItems is provided, this will act as a controlled component and will not update its own state.
     */
   def updateItems(items: js.Array[T]): Unit = js.native
   def updateItems(items: js.Array[T], focusIndex: Double): Unit = js.native

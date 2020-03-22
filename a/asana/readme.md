@@ -1,7 +1,7 @@
 
 # Scala.js typings for asana
 
-Typings are for version 0.14.0
+Typings are for version 0.17.3
 
 ## Library description:
 Official NodeJS and BrowserJS client for the Asana API

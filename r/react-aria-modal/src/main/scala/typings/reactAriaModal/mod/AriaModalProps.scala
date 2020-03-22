@@ -1,6 +1,7 @@
 package typings.reactAriaModal.mod
 
 import typings.react.mod.CSSProperties
+import typings.reactAriaModal.reactAriaModalBooleans.`false`
 import typings.std.Element
 import typings.std.Node
 import scala.scalajs.js
@@ -148,7 +149,7 @@ trait AriaModalProps extends js.Object {
     *
     * Default: rgba(0,0,0,0.5)
     */
-  var underlayColor: js.UndefOr[String] = js.undefined
+  var underlayColor: js.UndefOr[String | `false`] = js.undefined
   /**
     * Customize properties of the `style` prop that is passed to the underlay.
     * The best way to add some vertical displacement to the dialog is to add
@@ -185,7 +186,7 @@ object AriaModalProps {
     titleText: String = null,
     underlayClass: String = null,
     underlayClickExits: js.UndefOr[Boolean] = js.undefined,
-    underlayColor: String = null,
+    underlayColor: String | `false` = null,
     underlayStyle: CSSProperties = null,
     verticallyCenter: js.UndefOr[Boolean] = js.undefined
   ): AriaModalProps = {

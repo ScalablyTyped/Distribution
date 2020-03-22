@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "universalify"
-version := "0.1-dt-20200117Z-503540"
+version := "1.0-dt-20200320Z-503540"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

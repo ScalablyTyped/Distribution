@@ -933,6 +933,7 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def CloseWorkingProcess(): Boolean = js.native
+  def ConvertToBW(sImageIndex: Double): Boolean = js.native
   /**
     * Converts the images specified by the indices to base64 synchronously.
     * @method WebTwain#ConvertToBase64
@@ -1110,30 +1111,6 @@ trait WebTwain extends js.Object {
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
   /**
-    * Directly download a file from the FTP server to local disk without loading it into Dynamic Web TWAIN.
-    * @method WebTwain#FTPDownloadDirectly
-    * @param {string} FTPServer the name of the FTP server.
-    * @param {string} FTPRemoteFile the name of the file to be downloaded. It should be the relative path of the file on the FTP server.
-    * @param {string} localFile specify a full path to store the file.
-    * @param {function} optionalAsyncSuccessFunc optional. The function to call when the download succeeds. Please refer to the function prototype OnSuccess.
-    * @param {function} optionalAsyncFailureFunc optional. The function to call when the download fails. Please refer to the function prototype OnFailure.
-    * @return {boolean}
-    */
-  def FTPDownloadDirectly(FTPServer: String, FTPRemoteFile: String, localFile: String): Boolean = js.native
-  def FTPDownloadDirectly(
-    FTPServer: String,
-    FTPRemoteFile: String,
-    localFile: String,
-    optionalAsyncSuccessFunc: js.Function0[Unit]
-  ): Boolean = js.native
-  def FTPDownloadDirectly(
-    FTPServer: String,
-    FTPRemoteFile: String,
-    localFile: String,
-    optionalAsyncSuccessFunc: js.Function0[Unit],
-    optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-  ): Boolean = js.native
-  /**
     * Downloads an image from the FTP server.
     * @method WebTwain#FTPDownloadEx
     * @param {string} FTPServer the name of the FTP server.
@@ -1250,30 +1227,6 @@ trait WebTwain extends js.Object {
     optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
   ): Boolean = js.native
   /**
-    * Directly upload a specific file to the FTP server without loading it into Dynamic Web TWAIN.
-    * @method WebTwain#FTPUploadDirectly
-    * @param {string} FTPServer the name of the FTP server.
-    * @param {string} localFile specify the the full path of a local file.
-    * @param {string} FTPRemoteFile the name of the file to be created on the FTP server. It should be a relative path on the FTP server.
-    * @param {function} optionalAsyncSuccessFunc optional. The function to call when the upload succeeds. Please refer to the function prototype OnSuccess.
-    * @param {function} optionalAsyncFailureFunc optional. The function to call when the upload fails. Please refer to the function prototype OnFailure.
-    * @return {boolean}
-    */
-  def FTPUploadDirectly(FTPServer: String, localFile: String, FTPRemoteFile: String): Boolean = js.native
-  def FTPUploadDirectly(
-    FTPServer: String,
-    localFile: String,
-    FTPRemoteFile: String,
-    optionalAsyncSuccessFunc: js.Function0[Unit]
-  ): Boolean = js.native
-  def FTPUploadDirectly(
-    FTPServer: String,
-    localFile: String,
-    FTPRemoteFile: String,
-    optionalAsyncSuccessFunc: js.Function0[Unit],
-    optionalAsyncFailureFunc: js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]
-  ): Boolean = js.native
-  /**
     * Uploads the image of a specified index in the buffer to the FTP server as a specified image format.
     * @method WebTwain#FTPUploadEx
     * @param {string} FTPServer the name of the FTP server.
@@ -1306,13 +1259,6 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def FeedPage(): Boolean = js.native
-  /**
-    * Check whether a certain file exists on the local disk.
-    * @method WebTwain#FileExists
-    * @param {string} localFile specifies the absolute path of the local file.
-    * @return {boolean}
-    */
-  def FileExists(localFile: String): Boolean = js.native
   def FilterImagesByTag(tagName: String): Boolean = js.native
   /**
     * Flips the image of a specified index in buffer.
@@ -2000,6 +1946,7 @@ trait WebTwain extends js.Object {
     * @return {number}
     */
   def IndexToImageID(sImageIndex: Double): Double = js.native
+  def Invert(sImageIndex: Double): Boolean = js.native
   /**
     * [Deprecated.] Detects whether an image is blank.
     * @method WebTwain#IsBlankImage
@@ -2392,6 +2339,7 @@ trait WebTwain extends js.Object {
     * @return {number}
     */
   def SaveSelectedImagesToBytes(bufferSize: Double, buffer: js.Array[Double]): Double = js.native
+  def SelectAllImages(): Boolean = js.native
   /**
     * Brings up the TWAIN Data Source Manager's Source Selection User Interface (UI)
     * so that user can choose which Data Source to be the current Source.

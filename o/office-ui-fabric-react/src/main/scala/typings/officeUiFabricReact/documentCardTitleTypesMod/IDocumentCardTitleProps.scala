@@ -39,7 +39,8 @@ trait IDocumentCardTitleProps extends ClassAttributes[DocumentCardTitleBase] {
     */
   var theme: js.UndefOr[ITheme] = js.undefined
   /**
-    * Title text. If the card represents more than one document, this should be the title of one document and a "+X" string.
+    * Title text.
+    * If the card represents more than one document, this should be the title of one document and a "+X" string.
     * For example, a collection of four documents would have a string of "Document.docx +3".
     */
   var title: String

@@ -14,7 +14,7 @@ object mod extends js.Object {
   val default: Register = js.native
   type ExpressPlaygroundMiddleware = js.Function3[
     /* req */ Request_[ParamsDictionary], 
-    /* res */ Response_, 
+    /* res */ Response_[js.Any], 
     /* next */ js.Function0[Unit], 
     Unit
   ]

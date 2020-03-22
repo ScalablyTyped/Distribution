@@ -1,6 +1,6 @@
 package typings.primereact.multiSelectMod
 
-import typings.primereact.AnonValue
+import typings.primereact.AnonTarget
 import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod._Global_.JSX.Element
 import typings.std.Event_
@@ -16,14 +16,18 @@ trait MultiSelectProps extends js.Object {
   var dataKey: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var filter: js.UndefOr[Boolean] = js.undefined
+  var filterBy: js.UndefOr[String] = js.undefined
+  var filterMatchMode: js.UndefOr[String] = js.undefined
+  var filterPlaceholder: js.UndefOr[String] = js.undefined
   var fixedPlaceholder: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
   var maxSelectedLabels: js.UndefOr[Double] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ AnonValue, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ AnonTarget, Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ Event_, Unit]] = js.undefined
   var optionLabel: js.UndefOr[String] = js.undefined
+  var optionValue: js.UndefOr[String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var placeholder: js.UndefOr[String] = js.undefined
   var scrollHeight: js.UndefOr[String] = js.undefined
@@ -45,14 +49,18 @@ object MultiSelectProps {
     dataKey: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     filter: js.UndefOr[Boolean] = js.undefined,
+    filterBy: String = null,
+    filterMatchMode: String = null,
+    filterPlaceholder: String = null,
     fixedPlaceholder: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     itemTemplate: /* item */ js.Any => js.UndefOr[Element] = null,
     maxSelectedLabels: Int | Double = null,
     onBlur: /* event */ Event_ => Unit = null,
-    onChange: /* e */ AnonValue => Unit = null,
+    onChange: /* e */ AnonTarget => Unit = null,
     onFocus: /* event */ Event_ => Unit = null,
     optionLabel: String = null,
+    optionValue: String = null,
     options: js.Array[_] = null,
     placeholder: String = null,
     scrollHeight: String = null,
@@ -71,6 +79,9 @@ object MultiSelectProps {
     if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
+    if (filterMatchMode != null) __obj.updateDynamic("filterMatchMode")(filterMatchMode.asInstanceOf[js.Any])
+    if (filterPlaceholder != null) __obj.updateDynamic("filterPlaceholder")(filterPlaceholder.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedPlaceholder)) __obj.updateDynamic("fixedPlaceholder")(fixedPlaceholder.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
@@ -79,6 +90,7 @@ object MultiSelectProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     if (optionLabel != null) __obj.updateDynamic("optionLabel")(optionLabel.asInstanceOf[js.Any])
+    if (optionValue != null) __obj.updateDynamic("optionValue")(optionValue.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])

@@ -153,7 +153,7 @@ trait PartialTypographyProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapTypographyClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapTypogr] = js.native
   var color: js.UndefOr[Color | textPrimary | textSecondary | error] = js.native
   var component: js.UndefOr[ReactType[TypographyProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -341,7 +341,7 @@ object PartialTypographyProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapTypographyClassKey = null,
+    classes: PartialClassNameMapTypogr = null,
     color: Color | textPrimary | textSecondary | error = null,
     component: ReactType[TypographyProps] = null,
     contentEditable: Booleanish | inherit = null,

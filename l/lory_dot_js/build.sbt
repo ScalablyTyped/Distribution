@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lory_dot_js"
-version := "2.5.3-dt-20190322Z-5cd68f"
+version := "2.5.3-dt-20200225Z-5cd68f"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

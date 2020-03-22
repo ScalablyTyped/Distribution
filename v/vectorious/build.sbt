@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vectorious"
-version := "4.3.2-dt-20190322Z-8aaf0b"
+version := "4.3.2-dt-20200225Z-8aaf0b"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

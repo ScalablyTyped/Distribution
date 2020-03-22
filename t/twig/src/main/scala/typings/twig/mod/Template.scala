@@ -1,5 +1,6 @@
 package typings.twig.mod
 
+import typings.twig.twigBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,13 +13,21 @@ trait Template extends js.Object {
   def importBlocks(file: String, `override`: Boolean): Unit = js.native
   def importFile(file: String): Template = js.native
   def importMacros(file: String): Template = js.native
-  def render(): String | js.Promise[String] = js.native
-  def render(context: js.Any): String | js.Promise[String] = js.native
-  def render(context: js.Any, params: js.Any): String | js.Promise[String] = js.native
+  def render(): String = js.native
+  def render(context: js.Any): String = js.native
+  def render(context: js.Any, params: js.Any): String = js.native
   def render(context: js.Any, params: js.Any, allow_async: Boolean): String | js.Promise[String] = js.native
   def renderAsync(): js.Promise[String] = js.native
   def renderAsync(context: js.Any): js.Promise[String] = js.native
   def renderAsync(context: js.Any, params: js.Any): js.Promise[String] = js.native
+  @JSName("render")
+  def render_Union(): String | js.Promise[String] = js.native
+  @JSName("render")
+  def render_Union(context: js.Any): String | js.Promise[String] = js.native
+  @JSName("render")
+  def render_Union(context: js.Any, params: js.Any): String | js.Promise[String] = js.native
+  @JSName("render")
+  def render_false(context: js.Any, params: js.Any, allow_async: `false`): String = js.native
   def reset(blocks: js.Any): Unit = js.native
 }
 

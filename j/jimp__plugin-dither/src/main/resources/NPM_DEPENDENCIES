@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/plugin-dither" : "0.9.3"
+      "@jimp/plugin-dither" : "0.9.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/plugin-dither" : "0.9.3"
+      "@jimp/plugin-dither" : "0.9.6"
     }
   ],
   "compile-devDependencies" : [

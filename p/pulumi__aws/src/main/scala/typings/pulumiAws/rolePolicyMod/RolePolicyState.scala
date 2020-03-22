@@ -19,6 +19,9 @@ trait RolePolicyState extends js.Object {
     * prefix. Conflicts with `name`.
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
+  /**
+    * The policy document attached to the role.
+    */
   val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
     * The IAM role to attach to the policy.

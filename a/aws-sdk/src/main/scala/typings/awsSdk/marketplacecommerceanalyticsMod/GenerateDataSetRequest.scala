@@ -11,7 +11,7 @@ trait GenerateDataSetRequest extends js.Object {
     */
   var customerDefinedValues: js.UndefOr[CustomerDefinedValues] = js.native
   /**
-    * The date a data set was published. For daily data sets, provide a date with day-level granularity for the desired day. For weekly data sets, provide a date with day-level granularity within the desired week (the day value will be ignored). For monthly data sets, provide a date with month-level granularity for the desired month (the day value will be ignored).
+    * The date a data set was published. For daily data sets, provide a date with day-level granularity for the desired day. For monthly data sets except those with prefix disbursed_amount, provide a date with month-level granularity for the desired month (the day value will be ignored). For data sets with prefix disbursed_amount, provide a date with day-level granularity for the desired day. For these data sets we will look backwards in time over the range of 31 days until the first data set is found (the latest one).
     */
   var dataSetPublicationDate: DataSetPublicationDate = js.native
   /**

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait IComponentOptions[TComponentProps, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TStatics] extends js.Object {
   /**
-    * Display name to identify component in React hierarchy. This parameter is required for targeted component styling via theming.
+    * Display name to identify component in React hierarchy. This parameter is required for targeted component styling
+    * via theming.
     */
   var displayName: js.UndefOr[String] = js.undefined
   /**

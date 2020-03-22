@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait Consequence extends js.Object {
   /**
+    * Whether the Query Rule should promote or not promoted items.
+    */
+  val filterPromotes: js.UndefOr[Boolean] = js.undefined
+  /**
     * Objects to hide from hits.
     */
   val hide: js.UndefOr[js.Array[AnonObjectID]] = js.undefined
@@ -29,12 +33,14 @@ trait Consequence extends js.Object {
 object Consequence {
   @scala.inline
   def apply(
+    filterPromotes: js.UndefOr[Boolean] = js.undefined,
     hide: js.Array[AnonObjectID] = null,
     params: ConsequenceParamsPickSear = null,
     promote: js.Array[ConsequencePromote] = null,
     userData: js.Any = null
   ): Consequence = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(filterPromotes)) __obj.updateDynamic("filterPromotes")(filterPromotes.asInstanceOf[js.Any])
     if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     if (promote != null) __obj.updateDynamic("promote")(promote.asInstanceOf[js.Any])

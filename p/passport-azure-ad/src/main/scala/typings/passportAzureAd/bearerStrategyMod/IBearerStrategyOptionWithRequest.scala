@@ -1,6 +1,5 @@
 package typings.passportAzureAd.bearerStrategyMod
 
-import typings.passportAzureAd.passportAzureAdBooleans.`true`
 import typings.passportAzureAd.passportAzureAdStrings.error
 import typings.passportAzureAd.passportAzureAdStrings.info
 import typings.passportAzureAd.passportAzureAdStrings.warn
@@ -9,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IBearerStrategyOptionWithRequest extends IBearerStrategyOption {
-  var passReqToCallback: `true`
+  var passReqToCallback: Boolean
 }
 
 object IBearerStrategyOptionWithRequest {
@@ -17,7 +16,7 @@ object IBearerStrategyOptionWithRequest {
   def apply(
     clientID: String,
     identityMetadata: String,
-    passReqToCallback: `true`,
+    passReqToCallback: Boolean,
     allowMultiAudiencesInToken: js.UndefOr[Boolean] = js.undefined,
     audience: String | js.Array[String] = null,
     clockSkew: Int | Double = null,

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "hapi__code"
-version := "8.0.1-2b1966"
+version := "8.0.1-d0e6fd"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "hapi__hoek" % "9.0.3-9b376b",
+  "org.scalablytyped" %%% "hapi__hoek" % "9.0.4-e29b62",
   "org.scalablytyped" %%% "std" % "3.8-a0108c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")

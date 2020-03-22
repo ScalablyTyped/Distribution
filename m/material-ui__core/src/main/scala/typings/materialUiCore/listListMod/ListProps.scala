@@ -1,6 +1,6 @@
 package typings.materialUiCore.listListMod
 
-import typings.materialUiCore.PartialClassNameMapListClassKey
+import typings.materialUiCore.PartialClassNameMapListCl
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
 import typings.materialUiCore.materialUiCoreStrings.additions
@@ -147,7 +147,7 @@ trait ListProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapListClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListCl] = js.native
   var color: js.UndefOr[String] = js.native
   var component: js.UndefOr[ReactType[ListProps]] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
@@ -331,7 +331,7 @@ object ListProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapListClassKey = null,
+    classes: PartialClassNameMapListCl = null,
     color: String = null,
     component: ReactType[ListProps] = null,
     contentEditable: Booleanish | inherit = null,

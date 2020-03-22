@@ -441,6 +441,12 @@ trait Client extends js.Object {
     */
   def getElementValue(elementId: String): String | Null = js.native
   /**
+    * [appium]
+    * Get events stored in appium server.
+    * https://github.com/appium/appium/blob/master/docs/en/commands/session/events/get-events.md
+    */
+  def getEvents(`type`: js.Array[String]): ProtocolCommandResponse = js.native
+  /**
     * [jsonwp]
     * Get the current geo location.
     * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidlocation
@@ -769,6 +775,12 @@ trait Client extends js.Object {
     */
   def lock(): Unit = js.native
   def lock(seconds: Double): Unit = js.native
+  /**
+    * [appium]
+    * Store a custom event.
+    * https://github.com/appium/appium/blob/master/docs/en/commands/session/events/log-event.md
+    */
+  def logEvent(vendor: String, event: String): Unit = js.native
   /**
     * [appium]
     * Press and hold a particular key code on the device.
@@ -1198,6 +1210,11 @@ trait Client extends js.Object {
     */
   def switchContext(name: String): Unit = js.native
   def switchToFrame(): Unit = js.native
+  /**
+    * [jsonwp]
+    * Change focus to another frame on the page. If the frame `id` is `null`, the server should switch to the page's default content.
+    * https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframe
+    */
   def switchToFrame(id: String): Unit = js.native
   def switchToFrame(id: js.Object): Unit = js.native
   /**
@@ -1283,6 +1300,12 @@ trait Client extends js.Object {
     * http://appium.io/docs/en/commands/device/network/toggle-location-services/
     */
   def toggleLocationServices(): Unit = js.native
+  /**
+    * [appium]
+    * Set network speed (Emulator only)
+    * http://appium.io/docs/en/commands/device/network/network-speed/
+    */
+  def toggleNetworkSpeed(): Unit = js.native
   /**
     * [appium]
     * Switch the state of the wifi service.

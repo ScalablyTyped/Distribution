@@ -220,42 +220,36 @@ class PageLayout () extends ClientObject {
     */
   var zoom: PageLayoutZoomOptions = js.native
   /**
-    *
     * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, an ItemNotFound error will be thrown.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getPrintArea(): RangeAreas = js.native
   /**
-    *
     * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the worksheet. If there is no print area, a null object will be returned.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getPrintAreaOrNullObject(): RangeAreas = js.native
   /**
-    *
     * Gets the range object representing the title columns.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getPrintTitleColumns(): Range = js.native
   /**
-    *
     * Gets the range object representing the title columns. If not set, this will return a null object.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getPrintTitleColumnsOrNullObject(): Range = js.native
   /**
-    *
     * Gets the range object representing the title rows.
     *
     * [Api set: ExcelApi 1.9]
     */
   def getPrintTitleRows(): Range = js.native
   /**
-    *
     * Gets the range object representing the title rows. If not set, this will return a null object.
     *
     * [Api set: ExcelApi 1.9]
@@ -288,7 +282,6 @@ class PageLayout () extends ClientObject {
   def set(properties: PageLayout): Unit = js.native
   def setPrintArea(printArea: String): Unit = js.native
   /**
-    *
     * Sets the worksheet's print area.
     *
     * [Api set: ExcelApi 1.9]
@@ -298,7 +291,6 @@ class PageLayout () extends ClientObject {
   def setPrintArea(printArea: Range): Unit = js.native
   def setPrintArea(printArea: RangeAreas): Unit = js.native
   /**
-    *
     * Sets the worksheet's page margins with units.
     *
     * [Api set: ExcelApi 1.9]
@@ -312,7 +304,6 @@ class PageLayout () extends ClientObject {
   @JSName("setPrintMargins")
   def setPrintMargins_Inches(unit: Inches, marginOptions: PageLayoutMarginOptions): Unit = js.native
   /**
-    *
     * Sets the worksheet's page margins with units.
     *
     * [Api set: ExcelApi 1.9]
@@ -324,7 +315,6 @@ class PageLayout () extends ClientObject {
   def setPrintMargins_Points(unit: Points, marginOptions: PageLayoutMarginOptions): Unit = js.native
   def setPrintTitleColumns(printTitleColumns: String): Unit = js.native
   /**
-    *
     * Sets the columns that contain the cells to be repeated at the left of each page of the worksheet for printing.
     *
     * [Api set: ExcelApi 1.9]
@@ -334,7 +324,6 @@ class PageLayout () extends ClientObject {
   def setPrintTitleColumns(printTitleColumns: Range): Unit = js.native
   def setPrintTitleRows(printTitleRows: String): Unit = js.native
   /**
-    *
     * Sets the rows that contain the cells to be repeated at the top of each page of the worksheet for printing.
     *
     * [Api set: ExcelApi 1.9]

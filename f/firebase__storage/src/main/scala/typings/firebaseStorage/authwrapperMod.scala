@@ -35,6 +35,7 @@ object authwrapperMod extends js.Object {
       service: Service,
       pool: XhrIoPool
     ) = this()
+    var appId_ : js.Any = js.native
     var app_ : js.Any = js.native
     var authProvider_ : js.Any = js.native
     var bucket_ : js.Any = js.native

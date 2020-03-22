@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object lexmodelbuildingserviceMod {
   type AliasName = java.lang.String
   type AliasNameOrListAll = java.lang.String
+  type AmazonResourceName = java.lang.String
   type Boolean = scala.Boolean
   type BotAliasMetadataList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.BotAliasMetadata]
   type BotChannelAssociationList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.BotChannelAssociation]
@@ -180,6 +181,10 @@ package object lexmodelbuildingserviceMod {
   type String = java.lang.String
   type StringList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.String]
   type SynonymList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.Value]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.TagKey]
+  type TagList = js.Array[typings.awsSdk.lexmodelbuildingserviceMod.Tag]
+  type TagValue = java.lang.String
   type Timestamp = typings.std.Date
   type UserId = java.lang.String
   type Utterance = java.lang.String

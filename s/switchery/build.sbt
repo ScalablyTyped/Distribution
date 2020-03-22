@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "switchery"
-version := "0.8.1-dt-20190322Z-eea5e0"
+version := "0.8.1-dt-20200225Z-eea5e0"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -22,6 +22,11 @@ trait ListVirtualNodesInput extends js.Object {
     */
   var meshName: ResourceName = js.native
   /**
+    * The AWS IAM account ID of the service mesh owner. If the account ID is not your own, then it's
+    the ID of the account that shared the mesh with your account. For more information about mesh sharing, see Working with Shared Meshes.
+    */
+  var meshOwner: js.UndefOr[AccountId] = js.native
+  /**
     * The nextToken value returned from a previous paginated
     ListVirtualNodes request where limit was used and the results
     exceeded the value of that parameter. Pagination continues from the end of the previous
@@ -32,9 +37,15 @@ trait ListVirtualNodesInput extends js.Object {
 
 object ListVirtualNodesInput {
   @scala.inline
-  def apply(meshName: ResourceName, limit: Int | Double = null, nextToken: String = null): ListVirtualNodesInput = {
+  def apply(
+    meshName: ResourceName,
+    limit: Int | Double = null,
+    meshOwner: AccountId = null,
+    nextToken: String = null
+  ): ListVirtualNodesInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any])
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (meshOwner != null) __obj.updateDynamic("meshOwner")(meshOwner.asInstanceOf[js.Any])
     if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVirtualNodesInput]
   }

@@ -154,9 +154,9 @@ trait PartialGridProps extends js.Object {
   var autoSave: js.UndefOr[String] = js.native
   var children: js.UndefOr[ReactNode] = js.native
   var className: js.UndefOr[String] = js.native
-  var classes: js.UndefOr[PartialClassNameMapGridClassKey] = js.native
+  var classes: js.UndefOr[PartialClassNameMapGridCl] = js.native
   var color: js.UndefOr[String] = js.native
-  var component: js.UndefOr[String | ComponentType[OmitGridPropsStrippedProps]] = js.native
+  var component: js.UndefOr[String | ComponentType[OmitGridPropsStrippedProp]] = js.native
   var container: js.UndefOr[Boolean] = js.native
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   var contextMenu: js.UndefOr[String] = js.native
@@ -349,9 +349,9 @@ object PartialGridProps {
     autoSave: String = null,
     children: ReactNode = null,
     className: String = null,
-    classes: PartialClassNameMapGridClassKey = null,
+    classes: PartialClassNameMapGridCl = null,
     color: String = null,
-    component: String | ComponentType[OmitGridPropsStrippedProps] = null,
+    component: String | ComponentType[OmitGridPropsStrippedProp] = null,
     container: js.UndefOr[Boolean] = js.undefined,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browser-report"
-version := "v2.2.9-dt-20190322Z-56c0bf"
+version := "v2.2.9-dt-20200226Z-56c0bf"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

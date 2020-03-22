@@ -113,6 +113,7 @@ class Question protected ()
     */
   val isAllowTitleLeft: Boolean = js.native
   var isAnswered: Boolean = js.native
+  val isCompositeQuestion: Boolean = js.native
   val isFlowLayout: Boolean = js.native
   val isInputTextUpdate: Boolean = js.native
   val isReady: Boolean = js.native
@@ -250,6 +251,7 @@ class Question protected ()
     */
   def addError(error: SurveyError): Unit = js.native
   /* protected */ def addSupportedValidators(supportedValidators: js.Array[String]): Unit = js.native
+  def afterRenderInput(el: js.Any): Unit = js.native
   /**
     * Get is question ready to use
     */

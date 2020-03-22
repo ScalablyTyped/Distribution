@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scrypt-async"
-version := "v1.3.1-dt-20190322Z-6d6302"
+version := "v1.3.1-dt-20200227Z-6d6302"
 scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
